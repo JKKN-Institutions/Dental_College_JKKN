@@ -1,6 +1,14 @@
+import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+import { Phone } from 'lucide-react';
+
+export const metadata: Metadata = {
+  title: 'Institution\'s Innovation Council (IIC) | JKKN Dental College',
+  description: 'MIC-AICTE supported innovation council fostering entrepreneurship, IPR, and startup culture in dental education at JKKN Dental College.',
+  keywords: 'Innovation Council, IIC, dental entrepreneurship, startup culture, IPR, AICTE innovation, Ministry of Education, dental innovation'
+};
 
 export default function InstitutionsInnovationCouncilIIC() {
   return (
@@ -40,7 +48,7 @@ export default function InstitutionsInnovationCouncilIIC() {
           </h2>
 
           <p className="text-gray-700 mb-4 leading-relaxed text-justify">
-            In the academic year 2021-22, JKKN Dental College and Hospital established the Institution's Innovation Council (IIC) under the guidance of the Ministry of Education's Innovation Cell (MIC) in collaboration with AICTE. The IIC at JKKN aims to systematically foster a culture of innovation and entrepreneurship within the institution by engaging faculty, students, and staff in various activities such as ideation, problem-solving, Proof of Concept development, Design
+            In the academic year 2021-22, JKKN Dental College & Hospital established the Institution's Innovation Council (IIC) under the guidance of the Ministry of Education's Innovation Cell (MIC) in collaboration with AICTE. The IIC at JKKN aims to systematically foster a culture of innovation and entrepreneurship within the institution by engaging faculty, students, and staff in various activities such as ideation, problem-solving, Proof of Concept development, Design
           </p>
 
           <p className="text-gray-700 mb-4 leading-relaxed text-justify">
@@ -48,7 +56,7 @@ export default function InstitutionsInnovationCouncilIIC() {
           </p>
 
           <p className="text-gray-700 mb-8 leading-relaxed text-justify">
-            College and Hospital strives to create a robust innovation ecosystem, addressing challenges in dental education and research while promoting start-up culture among students and faculty.
+            College & Hospital strives to create a robust innovation ecosystem, addressing challenges in dental education and research while promoting start-up culture among students and faculty.
           </p>
 
           {/* Vision of IIC */}
@@ -137,11 +145,11 @@ export default function InstitutionsInnovationCouncilIIC() {
           </h3>
 
           <div className="text-gray-700 mb-2 leading-relaxed">
-            📍 <span className="font-semibold">Location:</span> JKKN Dental College & Hospital, Natarajapuram, NH-544 (Salem to Coimbatore National Highway), Kumarapalayam (TK), Namakkal (DT), Tamil Nadu – 638183.
+            📍 <span className="font-semibold">Location:</span> JKKN Dental College & Hospital, Nattrajapuram, NH-544 (Salem to Coimbatore National Highway), Komarapalayam (TK), Namakkal (DT), Tamil Nadu – 638183.
           </div>
 
           <div className="text-gray-700 mb-2 leading-relaxed">
-            📞 <span className="font-semibold">Contact:</span> Dr.Radhika, 7708611112
+            <Phone className="w-5 h-5 inline-block mr-1" /> <span className="font-semibold">Contact:</span> Dr.Radhika, 7708611112
           </div>
 
           <div className="text-gray-700 mb-6 leading-relaxed">

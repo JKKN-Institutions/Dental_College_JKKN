@@ -1,6 +1,13 @@
+import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+
+export const metadata: Metadata = {
+  title: 'Physical Education & Extra Curricular Activities Committee | JKKN Dental College',
+  description: 'Fostering sports, fitness, and extracurricular excellence. View committee members promoting holistic student development beyond academics.',
+  keywords: 'physical education, sports committee, extracurricular activities, student fitness, sports programs, JKKN dental college, athletics',
+};
 
 export default function PhysicalEducationExtraCurrucularActivitiesCommittee() {
   return (

@@ -1,6 +1,13 @@
+import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+
+export const metadata: Metadata = {
+  title: 'Hostel Advisory & Welfare Committee | JKKN Dental College',
+  description: 'Ensuring safe and conducive living environment for hostel students. View boys and girls hostel staff in-charge and welfare initiatives.',
+  keywords: 'hostel advisory committee, hostel welfare, student accommodation, hostel staff, student safety, JKKN dental college, hostel facilities',
+};
 
 export default function HostelAdvisoryWelfareCommittee() {
   return (

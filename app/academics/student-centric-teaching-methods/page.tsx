@@ -1,6 +1,13 @@
+import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+
+export const metadata: Metadata = {
+  title: 'Student-Centric Teaching Methods - JKKN Dental College',
+  description: 'Innovative student-centric teaching methods at JKKN Dental College. Active learning, AI integration, and personalized instruction for excellence. Learn more.',
+  keywords: 'student-centric teaching, active learning, AI integrated education, experiential learning, problem-based learning, personalized instruction, dental education',
+};
 
 export default function StudentCentricTeachingMethods() {
   return (
@@ -17,7 +24,7 @@ export default function StudentCentricTeachingMethods() {
 
           {/* Introduction */}
           <p className="text-gray-700 mb-8 leading-relaxed">
-            JKKN Dental College and Hospital has embraced a progressive approach to education by implementing student-centric teaching methods. This transformative approach places students at the center of the learning experience, fostering engagement, critical thinking, and skill development.
+            JKKN Dental College & Hospital has embraced a progressive approach to education by implementing student-centric teaching methods. This transformative approach places students at the center of the learning experience, fostering engagement, critical thinking, and skill development.
           </p>
 
           {/* Teaching Methods List */}
@@ -26,7 +33,7 @@ export default function StudentCentricTeachingMethods() {
             <div>
               <h3 className="text-lg font-bold text-gray-700 mb-2">1. Active Learning Strategies:</h3>
               <p className="text-gray-700 leading-relaxed pl-6">
-                At JKKN Dental College and Hospital, passive lectures are complemented with active learning strategies such as problem-based learning (PBL) . These methods encourage students to apply theoretical knowledge to practical scenarios, enhancing their problem-solving abilities and critical reasoning skills. An innovative teaching method DESIGN THINKING which is a Problem solving methodology is implemented in lecture classes which enables the students to enhance critical thinking and innovation skills. The programs in JKKN Dental College and Hospital is Conducted on following categories -DISE ( Driven by Innovation solutions and Experiences),Student led conference and Unconference which helps the students take ownership and improves the communication skills of the students.
+                At JKKN Dental College & Hospital, passive lectures are complemented with active learning strategies such as problem-based learning (PBL) . These methods encourage students to apply theoretical knowledge to practical scenarios, enhancing their problem-solving abilities and critical reasoning skills. An innovative teaching method DESIGN THINKING which is a Problem solving methodology is implemented in lecture classes which enables the students to enhance critical thinking and innovation skills. The programs in JKKN Dental College & Hospital is Conducted on following categories -DISE ( Driven by Innovation solutions and Experiences),Student led conference and Unconference which helps the students take ownership and improves the communication skills of the students.
               </p>
             </div>
 
@@ -34,7 +41,7 @@ export default function StudentCentricTeachingMethods() {
             <div>
               <h3 className="text-lg font-bold text-gray-700 mb-2">2. Experiential Learning:</h3>
               <p className="text-gray-700 leading-relaxed pl-6">
-                Hands-on experiences are central to the curriculum at JKK N Dental College and Hospital. Students have opportunities to engage in clinical rotations, internships, and community outreach programs, gaining practical skills and real-world exposure.
+                Hands-on experiences are central to the curriculum at JKK N Dental College & Hospital. Students have opportunities to engage in clinical rotations, internships, and community outreach programs, gaining practical skills and real-world exposure.
               </p>
             </div>
 
@@ -42,7 +49,7 @@ export default function StudentCentricTeachingMethods() {
             <div>
               <h3 className="text-lg font-bold text-gray-700 mb-2">3. Interdisciplinary Education:</h3>
               <p className="text-gray-700 leading-relaxed pl-6">
-                To prepare students for multidisciplinary collaboration in healthcare, JKKN Dental College and Hospital promotes interdisciplinary education. Interactions with students and faculty from other departments enrich the learning environment and broaden students' perspectives.
+                To prepare students for multidisciplinary collaboration in healthcare, JKKN Dental College & Hospital promotes interdisciplinary education. Interactions with students and faculty from other departments enrich the learning environment and broaden students' perspectives.
               </p>
             </div>
 
@@ -66,7 +73,7 @@ export default function StudentCentricTeachingMethods() {
             <div>
               <h3 className="text-lg font-bold text-gray-700 mb-2">6. Technology Integration:</h3>
               <p className="text-gray-700 leading-relaxed pl-6">
-                JKKN Dental College and Hospital leverages technology to facilitate student learning. Virtual simulations, advanced instruments for patient care and research , and online resources are integrated into the curriculum to make learning more interactive, accessible, and engaging for students.AI tools are frequently used to enhance learning experience.
+                JKKN Dental College & Hospital leverages technology to facilitate student learning. Virtual simulations, advanced instruments for patient care and research , and online resources are integrated into the curriculum to make learning more interactive, accessible, and engaging for students.AI tools are frequently used to enhance learning experience.
               </p>
             </div>
 
@@ -74,7 +81,7 @@ export default function StudentCentricTeachingMethods() {
             <div>
               <h3 className="text-lg font-bold text-gray-700 mb-2">7. Personalized Instruction:</h3>
               <p className="text-gray-700 leading-relaxed pl-6">
-                Recognizing the unique learning needs of each student, faculty members at JKKN Dental College and Hospital provide personalized instruction and mentoring. This tailored approach supports individual student growth and allows for targeted interventions when needed.
+                Recognizing the unique learning needs of each student, faculty members at JKKN Dental College & Hospital provide personalized instruction and mentoring. This tailored approach supports individual student growth and allows for targeted interventions when needed.
               </p>
             </div>
 
@@ -82,7 +89,7 @@ export default function StudentCentricTeachingMethods() {
             <div>
               <h3 className="text-lg font-bold text-gray-700 mb-2">8. Student Feedback and Reflection:</h3>
               <p className="text-gray-700 leading-relaxed pl-6">
-                Student feedback is valued and utilized to enhance teaching methodologies continuously. Regular assessments, feedback surveys, and reflection exercises empower students to participate in the improvement of their learning experiences. JKKN Dental College and Hospital exemplifies a commitment to student-centric teaching methods that prioritize active engagement, personalized learning, and holistic development. By nurturing a culture of innovation and collaboration, the institution equips students with the skills and competencies needed to excel in the dynamic field of dentistry. This student-focused approach not only enhances academic performance but also cultivates a passion for lifelong learning and excellence among future dental professionals.
+                Student feedback is valued and utilized to enhance teaching methodologies continuously. Regular assessments, feedback surveys, and reflection exercises empower students to participate in the improvement of their learning experiences. JKKN Dental College & Hospital exemplifies a commitment to student-centric teaching methods that prioritize active engagement, personalized learning, and holistic development. By nurturing a culture of innovation and collaboration, the institution equips students with the skills and competencies needed to excel in the dynamic field of dentistry. This student-focused approach not only enhances academic performance but also cultivates a passion for lifelong learning and excellence among future dental professionals.
               </p>
             </div>
 
@@ -90,7 +97,7 @@ export default function StudentCentricTeachingMethods() {
             <div>
               <h3 className="text-lg font-bold text-gray-700 mb-2">9. INTERACTIVE MODELS:</h3>
               <p className="text-gray-700 leading-relaxed pl-6">
-                At JKKN Dental College and Hospital, interactive teaching models revolutionize the learning experience by seamlessly integrating advanced technology with collaborative approaches. Virtual simulations bring complex dental procedures to life, while gamified learning platforms foster engagement and motivation. Smart classrooms equipped with AI-driven systems enable personalized learning pathways, ensuring each student&#39;s unique needs are met. Case-based discussions and peer-led teaching encourage critical thinking, teamwork, and communication skills. Interactive models bridge theoretical knowledge with real-world practice. These innovative methods cultivate a dynamic, student-centered environment, shaping future-ready dental professionals equipped with expertise and confidence.
+                At JKKN Dental College & Hospital, interactive teaching models revolutionize the learning experience by seamlessly integrating advanced technology with collaborative approaches. Virtual simulations bring complex dental procedures to life, while gamified learning platforms foster engagement and motivation. Smart classrooms equipped with AI-driven systems enable personalized learning pathways, ensuring each student&#39;s unique needs are met. Case-based discussions and peer-led teaching encourage critical thinking, teamwork, and communication skills. Interactive models bridge theoretical knowledge with real-world practice. These innovative methods cultivate a dynamic, student-centered environment, shaping future-ready dental professionals equipped with expertise and confidence.
               </p>
             </div>
 
@@ -98,7 +105,7 @@ export default function StudentCentricTeachingMethods() {
             <div>
               <h3 className="text-lg font-bold text-gray-700 mb-2">10. AI Integrated teaching and learning methodology:</h3>
               <p className="text-gray-700 leading-relaxed pl-6">
-                AI-integrated teaching and learning methods at JKKN Dental College and Hospital revolutionize dental education through advanced technology and personalized approaches. AI-driven analytics provide real-time insights into student performance, enabling targeted interventions and support. Virtual simulations enhances hands-on training, enhancing clinical skills and bridging theory with practice. AI-powered chatbots streamline learning by delivering instant feedback and addressing student queries effectively. AI tools for research has Streamlined research process, improved academic quality, enhanced clinical insights, and efficient data management for innovative projects . These innovative methods foster ,learning outcome ,active engagement, critical thinking, and skill development, creating a dynamic, future-ready learning environment tailored to producing competent and confident dental professionals.
+                AI-integrated teaching and learning methods at JKKN Dental College & Hospital revolutionize dental education through advanced technology and personalized approaches. AI-driven analytics provide real-time insights into student performance, enabling targeted interventions and support. Virtual simulations enhances hands-on training, enhancing clinical skills and bridging theory with practice. AI-powered chatbots streamline learning by delivering instant feedback and addressing student queries effectively. AI tools for research has Streamlined research process, improved academic quality, enhanced clinical insights, and efficient data management for innovative projects . These innovative methods foster ,learning outcome ,active engagement, critical thinking, and skill development, creating a dynamic, future-ready learning environment tailored to producing competent and confident dental professionals.
               </p>
             </div>
           </div>

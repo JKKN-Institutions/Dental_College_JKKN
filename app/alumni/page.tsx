@@ -2,6 +2,13 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import Image from 'next/image';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Alumni Network | JKKN Dental College Alumni Association',
+  description: 'Join JKKN Dental College Alumni Network. Connect with fellow graduates, attend alumni events, contribute to college development, and stay engaged with your alma mater.',
+  keywords: 'alumni network, dental alumni, JKKN alumni, alumni association, dental college alumni',
+};
 
 export default function Alumni() {
   return (
@@ -9,7 +16,7 @@ export default function Alumni() {
       <Header />
 
       {/* Page Content */}
-      <div className="bg-white py-12 px-4">
+      <div className="bg-[#FBFBEE] py-12 px-4">
         <div className="max-w-6xl mx-auto">
           {/* Main Heading */}
           <h1 className="text-4xl md:text-5xl font-bold text-black mb-8">
@@ -28,7 +35,7 @@ export default function Alumni() {
               />
               <p className="mt-4 text-sm text-gray-600">
                 The Alumni Association of<br />
-                J.K.K.Nattraja Dental College
+                J.K.K. Nattraja Dental College
               </p>
             </div>
           </div>
@@ -44,7 +51,7 @@ export default function Alumni() {
               INTRODUCTION:
             </h3>
             <p className="text-base leading-relaxed text-black mb-4">
-              Alumni cell of JKKN Dental college and hospital nurtures a mutually beneficial relationship with the alumni and leverage their expertise and experience for the growth of institution.
+              Alumni cell of JKKN Dental College & Hospital nurtures a mutually beneficial relationship with the alumni and leverage their expertise and experience for the growth of institution.
             </p>
             <p className="text-base leading-relaxed text-black">
               Alumni association was officially inaugurated in the name "NAMASKARA" by our chairperson and managing director. The association was officially registered as registration act of Tamil Nadu in the name of "NAMASKARA" old students' association in march 2022.
@@ -378,10 +385,10 @@ export default function Alumni() {
       <div className="bg-[#1B5E20] text-white py-12 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Column 1: JKKN Dental College and Hospital */}
+            {/* Column 1: JKKN Dental College & Hospital */}
             <div>
               <h3 className="text-xl font-bold mb-4 border-b-2 border-secondary pb-2">
-                JKKN Dental College and Hospital
+                JKKN Dental College & Hospital
               </h3>
               <div className="mt-6">
                 {/* Map placeholder */}
@@ -399,7 +406,7 @@ export default function Alumni() {
               <ul className="space-y-2 text-sm">
                 <li>
                   <a href="#" className="hover:text-secondary transition-colors">
-                    JKKN Dental College and Hospital
+                    JKKN Dental College & Hospital
                   </a>
                 </li>
                 <li>

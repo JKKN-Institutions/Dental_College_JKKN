@@ -1,6 +1,13 @@
+import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+
+export const metadata: Metadata = {
+  title: "Principal's Message | JKKN Dental College",
+  description: 'Read the inspiring message from Dr. Dhanasekar Balakrishnan, Principal of JKKN Dental College, on our vision for dental education excellence.',
+  keywords: "Principal's Message, Dr. Dhanasekar Balakrishnan, JKKN Dental College, dental education vision, academic leadership, dental college principal",
+};
 
 export default function PrincipalsMessage() {
   return (
@@ -30,7 +37,7 @@ export default function PrincipalsMessage() {
               BDS, MDS, FDS RCS (England), MDTFEd (Edinburgh), MFDS RCPS (Glasgow), MFDS RCS (Edinburgh)
             </p>
             <p className="text-base md:text-lg font-bold text-gray-700">
-              Principal- JKKN Dental College and Hospital
+              Principal- JKKN Dental College & Hospital
             </p>
           </div>
 
@@ -46,11 +53,11 @@ export default function PrincipalsMessage() {
             </p>
 
             <p>
-              It is a profound responsibility and a true privilege to serve as the Principal of JKKN Dental College and Hospital, an institution devoted to shaping the future of dental education, healthcare, and research. Guided by a vision to empower individuals through education and a mission to nurture skilled, compassionate, and innovative dental professionals, JKKN stands as a beacon of excellence and inspiration in the field
+              It is a profound responsibility and a true privilege to serve as the Principal of JKKN Dental College & Hospital, an institution devoted to shaping the future of dental education, healthcare, and research. Guided by a vision to empower individuals through education and a mission to nurture skilled, compassionate, and innovative dental professionals, JKKN stands as a beacon of excellence and inspiration in the field
             </p>
 
             <p>
-              At JKKN Dental College and Hospital, we believe in providing a holistic education that balances academic rigor with real-world application. By integrating cutting-edge technology, advanced clinical training, and a curriculum rooted in design thinking, we prepare our students to address the evolving needs of the dental profession with creativity, empathy, and a solutions-oriented mindset.
+              At JKKN Dental College & Hospital, we believe in providing a holistic education that balances academic rigor with real-world application. By integrating cutting-edge technology, advanced clinical training, and a curriculum rooted in design thinking, we prepare our students to address the evolving needs of the dental profession with creativity, empathy, and a solutions-oriented mindset.
             </p>
 
             <p>

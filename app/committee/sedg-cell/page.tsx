@@ -1,6 +1,13 @@
+import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+
+export const metadata: Metadata = {
+  title: 'SEDG Cell - Socio-Economically Disadvantaged Groups | JKKN Dental College',
+  description: 'Supporting marginalized and economically weaker students with scholarships, mentoring, and inclusive academic opportunities as per NEP 2020.',
+  keywords: 'SEDG cell, socio-economic support, disadvantaged groups, scholarships, inclusive education, NEP 2020, UGC guidelines, JKKN dental',
+};
 
 export default function SEDGCell() {
   return (
@@ -27,7 +34,7 @@ export default function SEDGCell() {
           </h3>
 
           <p className="text-base text-black mb-8 leading-relaxed text-justify">
-            The Socio-Economically Disadvantaged Groups (SEDG) Cell at JKK N Dental College and Hospital is committed to fostering an inclusive academic and social environment for students from marginalized, underprivileged, and economically weaker sections. Guided by the principles of equity and inclusion under NEP 2020 and UGC Guidelines, the Cell strives to ensure that every student has equal access to academic resources, support services, and growth opportunities.
+            The Socio-Economically Disadvantaged Groups (SEDG) Cell at JKK N Dental College & Hospital is committed to fostering an inclusive academic and social environment for students from marginalized, underprivileged, and economically weaker sections. Guided by the principles of equity and inclusion under NEP 2020 and UGC Guidelines, the Cell strives to ensure that every student has equal access to academic resources, support services, and growth opportunities.
           </p>
 
           {/* Objectives */}
@@ -203,14 +210,14 @@ export default function SEDGCell() {
             SEDG Cell,
           </p>
           <p className="text-base text-black mb-4 font-bold">
-            JKKN Dental College and Hospital, Natarajapuram, NH-544 (Salem To Coimbatore National Highway), Kumarapalayam (TK), Namakkal (DT), Tamil Nadu. 638183.
+            JKKN Dental College & Hospital, Nattrajapuram, NH-544 (Salem To Coimbatore National Highway), Komarapalayam (TK), Namakkal (DT), Tamil Nadu. 638183.
           </p>
 
           <p className="text-base text-black mb-2">
             Email: dental@jkkn.ac.in
           </p>
           <p className="text-base text-black mb-2">
-            Phone: <span className="font-bold">+(91) 93458 55001</span>
+            Phone: <span className="font-bold">+91 93458 55001</span>
           </p>
           <p className="text-base text-black mb-12">
             Website: https://dental.jkkn.ac.in/sedg-cell/

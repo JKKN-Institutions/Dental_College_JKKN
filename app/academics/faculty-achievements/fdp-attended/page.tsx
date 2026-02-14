@@ -1,6 +1,13 @@
+import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+
+export const metadata: Metadata = {
+  title: 'Faculty Development Programs Attended - JKKN Dental College',
+  description: 'View FDP attended by JKKN Dental College faculty members. Committed to continuous professional development and educational excellence. Learn more.',
+  keywords: 'faculty development program, FDP attended, faculty training, professional development, dental faculty achievements, JKKN faculty, academic excellence',
+};
 
 export default function FdpAttended() {
   return (

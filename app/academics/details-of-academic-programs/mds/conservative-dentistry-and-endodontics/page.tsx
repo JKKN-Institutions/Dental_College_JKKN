@@ -5,11 +5,106 @@ import Image from 'next/image';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+import StructuredData from '@/components/StructuredData';
+import Breadcrumb from '@/components/Breadcrumb';
 
 export default function MDSConservativeDentistry() {
+  // Course Schema for MDS Conservative Dentistry & Endodontics
+  const courseSchema = {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    "name": "MDS Conservative Dentistry & Endodontics",
+    "description": "Transform your dental career with our advanced 3-year postgraduate program. Master root canal therapy, restorative dentistry, and dental trauma management at one of Tamil Nadu's premier dental institutions.",
+    "provider": {
+      "@type": "CollegeOrUniversity",
+      "name": "JKKN Dental College & Hospital",
+      "url": "https://dental.jkkn.ac.in"
+    },
+    "courseCode": "MDS-CONS",
+    "educationalCredentialAwarded": "Master of Dental Surgery in Conservative Dentistry & Endodontics",
+    "timeRequired": "P3Y",
+    "hasCourseInstance": {
+      "@type": "CourseInstance",
+      "courseMode": "Full-time",
+      "duration": "P3Y"
+    }
+  };
+
+  // FAQ Schema for MDS Conservative Dentistry & Endodontics
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the duration of the MDS Conservative Dentistry & Endodontics program?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The MDS in Conservative Dentistry and Endodontics is a 3-year full-time postgraduate program. It includes theoretical coursework, clinical training, and a mandatory dissertation that Learners must complete before graduation."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the admission process for MDS?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Admission is based on NEET MDS scores. Candidates must qualify the national entrance exam and participate in state/institutional counseling. The selection is merit-based according to the marks obtained and seat availability."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is hostel accommodation available for postgraduate Learners?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, we provide separate hostel facilities for male and female postgraduate Learners. The hostels are equipped with modern amenities including Wi-Fi, 24/7 security, mess facility, and recreational areas."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What are the career prospects after completing MDS Conservative Dentistry & Endodontics?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Graduates can pursue private practice, academic positions in dental colleges, hospital consultancy, research careers, or join the armed forces dental corps. International practice opportunities are also available with proper licensing."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does the college provide placement assistance?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, our dedicated placement cell provides comprehensive career guidance and placement assistance. We maintain strong relationships with dental hospitals, corporate chains, and academic institutions for employment opportunities."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are there any scholarships available for MDS Learners?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Merit-based scholarships and government scholarships for SC/ST/OBC categories are available. Additionally, we assist Learners in obtaining education loans from nationalized banks with competitive interest rates."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What clinical exposure will I get during the program?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Our 150-bed dental hospital provides extensive clinical exposure. You'll handle diverse cases including routine to complex endodontic procedures, microsurgery, traumatic injuries, and geriatric dental care under expert supervision."
+        }
+      }
+    ]
+  };
+
   return (
     <main className="overflow-x-hidden">
+      <StructuredData data={courseSchema} />
+      <StructuredData data={faqSchema} />
       <Header />
+      <Breadcrumb items={[
+        { name: 'Home', url: 'https://dental.jkkn.ac.in' },
+        { name: 'Academics', url: 'https://dental.jkkn.ac.in/academics' },
+        { name: 'MDS Programs', url: 'https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds' },
+        { name: 'Conservative Dentistry & Endodontics', url: 'https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/conservative-dentistry-and-endodontics' },
+      ]} />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-[#006837] to-[#7cb983] py-20 px-4 overflow-hidden">
@@ -61,10 +156,13 @@ export default function MDSConservativeDentistry() {
             <div className="relative">
               <div className="bg-gradient-to-br from-[#006837] to-[#002309] rounded-2xl border-4 border-white/20 overflow-hidden relative min-h-[400px] md:min-h-[450px]">
                 <Image
-                  src="/images/MDS-Conservative-Dentistry-&-Endodontics-benner-Image.png"
+                  src="/images/MDS-Conservative-Dentistry-&-Endodontics-benner-Image.webp"
                   alt="Dental Lab"
                   fill
                   className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  quality={85}
+                  priority
                 />
 
                 {/* Stats Badges */}
@@ -140,7 +238,7 @@ export default function MDSConservativeDentistry() {
               </div>
               <div>
                 <div className="text-xs text-gray-500 uppercase font-semibold mb-1">Location</div>
-                <div className="text-lg font-bold text-gray-800">Kumarapalayam, Tamil Nadu</div>
+                <div className="text-lg font-bold text-gray-800">Komarapalayam, Tamil Nadu</div>
               </div>
             </div>
           </div>
@@ -221,10 +319,12 @@ export default function MDSConservativeDentistry() {
             {/* Right Content - Clinical Training Card */}
             <div className="relative bg-[#7cb983] rounded-2xl overflow-hidden h-full min-h-[400px]">
               <Image
-                src="/images/MDS-Conservative-Dentistry-&-Endodontics-Clinical-training.png"
+                src="/images/MDS-Conservative-Dentistry-&-Endodontics-Clinical-training.webp"
                 alt="Clinical Training"
                 fill
                 className="object-cover"
+                sizes="(max-width: 768px) 100vw, 50vw"
+                quality={80}
               />
             </div>
           </div>

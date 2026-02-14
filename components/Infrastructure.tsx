@@ -1,49 +1,56 @@
+import { Building2, Laptop, Microscope, Cog, BookOpen, Home, Activity, LucideIcon } from 'lucide-react';
+
 export default function Infrastructure() {
-  const facilities = [
+  const facilities: Array<{
+    icon: LucideIcon;
+    title: string;
+    description: string;
+    bgColor: string;
+  }> = [
     {
-      icon: '🏥',
-      title: '200+ Chair Hospital',
+      icon: Building2,
+      title: '200+ Dental Chairs & 100+ Hospital Beds',
       description: 'Treating 500+ patients daily',
       bgColor: 'bg-orange-100'
     },
     {
-      icon: '💻',
+      icon: Laptop,
       title: 'Simulation Labs',
       description: 'Pre-clinical training',
       bgColor: 'bg-blue-100'
     },
     {
-      icon: '🔬',
+      icon: Microscope,
       title: 'Advanced Imaging',
       description: 'CBCT, OPG, RVG systems',
       bgColor: 'bg-purple-100'
     },
     {
-      icon: '⚙️',
+      icon: Cog,
       title: 'CAD/CAM Lab',
       description: 'Digital prosthetics',
       bgColor: 'bg-pink-100'
     },
     {
-      icon: '📚',
+      icon: BookOpen,
       title: 'Digital Library',
       description: '10,000+ resources',
       bgColor: 'bg-green-100'
     },
     {
-      icon: '🔬',
+      icon: Microscope,
       title: 'Research Labs',
       description: 'Dedicated research facilities',
       bgColor: 'bg-yellow-100'
     },
     {
-      icon: '🏠',
+      icon: Home,
       title: 'Hostels',
       description: 'Separate for men & women',
       bgColor: 'bg-indigo-100'
     },
     {
-      icon: '🏃',
+      icon: Activity,
       title: 'Sports Complex',
       description: 'Indoor & outdoor facilities',
       bgColor: 'bg-red-100'
@@ -72,7 +79,7 @@ export default function Infrastructure() {
               className="bg-white rounded-xl sm:rounded-2xl p-5 sm:p-6 shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 text-center"
             >
               <div className={`w-14 h-14 sm:w-16 sm:h-16 ${facility.bgColor} rounded-xl sm:rounded-2xl flex items-center justify-center mx-auto mb-3 sm:mb-4`}>
-                <span className="text-2xl sm:text-3xl">{facility.icon}</span>
+                <facility.icon className="w-7 h-7 sm:w-8 sm:h-8" />
               </div>
               <h4 className="text-base sm:text-lg font-bold text-[#006837] mb-1 sm:mb-2">{facility.title}</h4>
               <p className="text-xs sm:text-sm text-gray-600">{facility.description}</p>

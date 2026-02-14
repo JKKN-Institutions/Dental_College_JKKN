@@ -1,6 +1,14 @@
+import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+import { Check } from 'lucide-react';
+
+export const metadata: Metadata = {
+  title: 'Accessibility & Inclusion at JKKNDCH - Barrier-Free Environment',
+  description: 'JKKN Dental College ensures accessibility for all with wheelchair access, Braille signage, priority services, and inclusive facilities for patients and visitors.',
+  keywords: 'accessibility JKKN dental college, inclusive dental hospital, barrier-free environment, RPWD Act 2016, UGC accessibility guidelines, disability accommodations, wheelchair access dental college',
+};
 
 export default function AccessibilityInclusion() {
   return (
@@ -49,7 +57,7 @@ export default function AccessibilityInclusion() {
           {/* Accessibility Measures Heading with Green Checkbox */}
           <div className="flex items-start mb-6">
             <div className="flex-shrink-0 w-8 h-8 bg-[#5CB85C] rounded flex items-center justify-center mr-3 mt-1">
-              <span className="text-white text-xl font-bold">✓</span>
+              <Check className="w-5 h-5 text-white font-bold" />
             </div>
             <h3 className="text-2xl md:text-3xl font-bold text-gray-800">
               Accessibility Measures in Place (For Patients and Visitors)

@@ -7,12 +7,12 @@ export default function FAQSection() {
 
   const faqs = [
     {
-      question: "What courses are offered at J.K.K. Nattraja Dental College?",
-      answer: "J.K.K. Nattraja Dental College offers BDS (Bachelor of Dental Surgery) - a 5-year undergraduate program, and MDS (Master of Dental Surgery) postgraduate programs in 9 specializations including Oral Surgery, Orthodontics, Periodontics, Prosthodontics, Endodontics, Pedodontics, Oral Medicine, Oral Pathology, and Public Health Dentistry."
+      question: "What courses are offered at JKKN Dental College & Hospital?",
+      answer: "JKKN Dental College & Hospital offers BDS (Bachelor of Dental Surgery) - a 5-year undergraduate program with comprehensive training across 9 departments including Oral Surgery, Orthodontics, Periodontics, Prosthodontics, Conservative Dentistry, Pedodontics, Oral Medicine, Oral Pathology, and Public Health Dentistry. We also offer MDS (Master of Dental Surgery) postgraduate programs in 5 specializations: Conservative Dentistry & Endodontics, Prosthodontics, Periodontics, Oral Medicine & Radiology, and Orthodontics & Dentofacial Orthopedics."
     },
     {
-      question: "Is J.K.K. Nattraja Dental College DCI approved?",
-      answer: "Yes, J.K.K. Nattraja Dental College is fully approved by the Dental Council of India (DCI) and National Medical Commission (NMC). The college is affiliated with The Tamil Nadu Dr. M.G.R. Medical University and NAAC accredited."
+      question: "Is JKKN Dental College & Hospital DCI approved?",
+      answer: "Yes, JKKN Dental College & Hospital is fully approved by the Dental Council of India (DCI) and National Medical Commission (NMC). The college is affiliated with The Tamil Nadu Dr. M.G.R. Medical University and NAAC accredited."
     },
     {
       question: "What is the admission process for BDS?",
@@ -24,11 +24,11 @@ export default function FAQSection() {
     },
     {
       question: "What is the placement record?",
-      answer: "J.K.K. Nattraja Dental College provides 100% placement assistance. Alumni work at Apollo Dental, Clove Dental, Sabka Dentist, government hospitals, and private practices. Many pursue higher studies abroad or establish their own clinics."
+      answer: "JKKN Dental College & Hospital provides 100% placement assistance. Alumni work at Apollo Dental, Clove Dental, Sabka Dentist, government hospitals, and private practices. Many pursue higher studies abroad or establish their own clinics."
     },
     {
       question: "What makes JKKN different from other dental colleges?",
-      answer: "JKKN stands out with its 100-year educational legacy, learner-centric philosophy, exceptional clinical exposure (500+ daily patients), distinguished Learning Facilitators, state-of-the-art infrastructure, research culture, and comprehensive placement support."
+      answer: "JKKN stands out with its 57+ years of educational legacy (JKKN Group founded 1969), learner-centric philosophy, exceptional clinical exposure (500+ daily patients), distinguished Learning Facilitators, state-of-the-art infrastructure, research culture, and comprehensive placement support."
     }
   ];
 
@@ -36,8 +36,28 @@ export default function FAQSection() {
     setOpenIndex(openIndex === index ? null : index);
   };
 
+  // FAQ Schema for SEO
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqs.map(faq => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.answer
+      }
+    }))
+  };
+
   return (
     <section className="py-12 sm:py-16 md:py-20 lg:py-24 px-4 sm:px-6 bg-[#FBFBEE]">
+      {/* FAQ Schema for Google/SEO */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+
       <div className="max-w-4xl mx-auto">
         {/* Header */}
         <div className="text-center mb-8 sm:mb-10 md:mb-12 lg:mb-16">

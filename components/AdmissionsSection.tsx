@@ -1,3 +1,5 @@
+import { Check, Phone, Mail } from 'lucide-react';
+
 export default function AdmissionsSection() {
   return (
     <section className="py-12 sm:py-16 md:py-20 lg:py-24 px-4 sm:px-6 bg-[#FBFBEE]">
@@ -18,19 +20,19 @@ export default function AdmissionsSection() {
               <h4 className="text-lg sm:text-xl font-bold text-[#006837] mb-3 sm:mb-4">BDS Eligibility</h4>
               <div className="space-y-2 sm:space-y-3">
                 <div className="flex items-start gap-2 sm:gap-3">
-                  <div className="text-[#7cb983] text-lg sm:text-xl flex-shrink-0">✓</div>
+                  <Check className="w-5 h-5 sm:w-6 sm:h-6 text-[#7cb983] flex-shrink-0" />
                   <div className="text-gray-700 text-sm sm:text-base">10+2 with Physics, Chemistry, Biology</div>
                 </div>
                 <div className="flex items-start gap-2 sm:gap-3">
-                  <div className="text-[#7cb983] text-lg sm:text-xl flex-shrink-0">✓</div>
+                  <Check className="w-5 h-5 sm:w-6 sm:h-6 text-[#7cb983] flex-shrink-0" />
                   <div className="text-gray-700 text-sm sm:text-base">Minimum 50% marks (40% reserved)</div>
                 </div>
                 <div className="flex items-start gap-2 sm:gap-3">
-                  <div className="text-[#7cb983] text-lg sm:text-xl flex-shrink-0">✓</div>
+                  <Check className="w-5 h-5 sm:w-6 sm:h-6 text-[#7cb983] flex-shrink-0" />
                   <div className="text-gray-700 text-sm sm:text-base">Valid NEET-UG score</div>
                 </div>
                 <div className="flex items-start gap-2 sm:gap-3">
-                  <div className="text-[#7cb983] text-lg sm:text-xl flex-shrink-0">✓</div>
+                  <Check className="w-5 h-5 sm:w-6 sm:h-6 text-[#7cb983] flex-shrink-0" />
                   <div className="text-gray-700 text-sm sm:text-base">Age: 17 years by Dec 31</div>
                 </div>
               </div>
@@ -41,19 +43,19 @@ export default function AdmissionsSection() {
               <h4 className="text-lg sm:text-xl font-bold text-[#006837] mb-3 sm:mb-4">MDS Eligibility</h4>
               <div className="space-y-2 sm:space-y-3">
                 <div className="flex items-start gap-2 sm:gap-3">
-                  <div className="text-[#7cb983] text-lg sm:text-xl flex-shrink-0">✓</div>
+                  <Check className="w-5 h-5 sm:w-6 sm:h-6 text-[#7cb983] flex-shrink-0" />
                   <div className="text-gray-700 text-sm sm:text-base">BDS from DCI-recognized institution</div>
                 </div>
                 <div className="flex items-start gap-2 sm:gap-3">
-                  <div className="text-[#7cb983] text-lg sm:text-xl flex-shrink-0">✓</div>
+                  <Check className="w-5 h-5 sm:w-6 sm:h-6 text-[#7cb983] flex-shrink-0" />
                   <div className="text-gray-700 text-sm sm:text-base">Completed rotating internship</div>
                 </div>
                 <div className="flex items-start gap-2 sm:gap-3">
-                  <div className="text-[#7cb983] text-lg sm:text-xl flex-shrink-0">✓</div>
+                  <Check className="w-5 h-5 sm:w-6 sm:h-6 text-[#7cb983] flex-shrink-0" />
                   <div className="text-gray-700 text-sm sm:text-base">Valid NEET-MDS score</div>
                 </div>
                 <div className="flex items-start gap-2 sm:gap-3">
-                  <div className="text-[#7cb983] text-lg sm:text-xl flex-shrink-0">✓</div>
+                  <Check className="w-5 h-5 sm:w-6 sm:h-6 text-[#7cb983] flex-shrink-0" />
                   <div className="text-gray-700 text-sm sm:text-base">State Dental Council registration</div>
                 </div>
               </div>
@@ -65,14 +67,14 @@ export default function AdmissionsSection() {
                 href="tel:+919345855001"
                 className="bg-[#7cb983] hover:bg-[#6ba872] active:bg-[#5a9761] text-white font-bold py-3 sm:py-3.5 px-6 sm:px-8 rounded-full transition-all duration-300 text-center inline-flex items-center justify-center gap-2 min-h-[44px] touch-manipulation text-sm sm:text-base"
               >
-                <span>📞</span>
+                <Phone className="w-5 h-5" />
                 <span>Talk to Admissions</span>
               </a>
               <a
                 href="mailto:dental@jkkn.ac.in"
                 className="border-2 border-[#006837] hover:bg-[#006837] hover:text-white active:bg-[#0d3d13] text-[#006837] font-bold py-3 sm:py-3.5 px-6 sm:px-8 rounded-full transition-all duration-300 text-center inline-flex items-center justify-center gap-2 min-h-[44px] touch-manipulation text-sm sm:text-base"
               >
-                <span>✉️</span>
+                <Mail className="w-5 h-5" />
                 <span>Email Us</span>
               </a>
             </div>

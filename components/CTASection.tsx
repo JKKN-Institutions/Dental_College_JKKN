@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { Phone } from 'lucide-react';
 
 export default function CTASection() {
   return (
@@ -11,7 +12,7 @@ export default function CTASection() {
 
         {/* Description */}
         <p className="text-white text-sm sm:text-base md:text-lg mb-6 sm:mb-8 md:mb-10 max-w-3xl mx-auto leading-relaxed">
-          Join J.K.K. Nattraja Dental College and become part of a century-long legacy of excellence. Applications for 2025-26 are now open.
+          Join JKKN Dental College & Hospital and become part of over five decades of educational excellence. Applications for 2026-27 are now open.
         </p>
 
         {/* Buttons */}
@@ -26,7 +27,7 @@ export default function CTASection() {
             href="tel:+919345855001"
             className="w-full sm:w-auto border-2 border-white hover:bg-white hover:text-[#7cb983] active:bg-gray-100 text-white font-bold py-3 sm:py-3.5 px-6 sm:px-8 rounded-full transition-all duration-300 text-center inline-flex items-center justify-center gap-2 min-h-[44px] touch-manipulation text-sm sm:text-base"
           >
-            <span>📞</span>
+            <Phone className="w-5 h-5" />
             <span>Call Us</span>
           </a>
         </div>

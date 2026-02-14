@@ -1,6 +1,13 @@
+import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+
+export const metadata: Metadata = {
+  title: 'Scholarship Policy - JKKN Dental College Admission & Financial Aid',
+  description: 'Explore JKKN Dental College scholarship programs for academic excellence, sports achievements, and special circumstances. Apply for financial aid.',
+  keywords: 'dental college scholarship, JKKN scholarship policy, academic scholarship, sports quota scholarship, single parent scholarship, NEET scholarship, financial aid',
+};
 
 export default function ScholarshipPolicy() {
   return (

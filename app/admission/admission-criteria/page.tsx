@@ -1,6 +1,13 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Admission Criteria | BDS & MDS Eligibility | JKKN Dental',
+  description: 'JKKN Dental College admission criteria for BDS and MDS programs. Learn about NEET eligibility, qualifying marks, age limits, and selection process for dental courses.',
+  keywords: 'admission criteria, eligibility, NEET requirements, BDS eligibility, MDS eligibility, admission requirements',
+};
 
 export default function AdmissionCriteria() {
   return (

@@ -1,7 +1,14 @@
+import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import Image from 'next/image';
+
+export const metadata: Metadata = {
+  title: 'Transport Services - Safe Bus Facility at JKKN Dental College',
+  description: 'JKKN transport features air-conditioned buses, GPS tracking, CCTV monitoring, trained drivers, wheelchair accessibility, and affordable distance-based pricing.',
+  keywords: 'college bus transport JKKN, student bus service, campus transportation, GPS tracked buses, safe college bus, wheelchair accessible transport, AC buses',
+};
 
 export default function Transport() {
   return (

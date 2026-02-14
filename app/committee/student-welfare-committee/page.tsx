@@ -1,6 +1,13 @@
+import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+
+export const metadata: Metadata = {
+  title: 'Student Welfare Committee | JKKN Dental College',
+  description: 'Dedicated to student well-being, academic support, and overall welfare. View committee members committed to student success.',
+  keywords: 'student welfare committee, student wellbeing, academic support, student care, welfare programs, JKKN dental college, student services',
+};
 
 export default function StudentWelfareCommittee() {
   return (

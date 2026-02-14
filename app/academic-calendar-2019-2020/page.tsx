@@ -1,3 +1,11 @@
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Academic Calendar 2019-20 | JKKN Dental College Schedule',
+  description: 'View JKKN Dental College academic calendar 2019-20. Check past exam dates, holidays and academic events. Access archived academic schedule PDF.',
+  keywords: 'academic calendar 2019-20, college calendar, exam schedule, academic year, archived calendar',
+};
+
 export default function AcademicCalendar20192020() {
   return (
     <div className="fixed inset-0 w-full h-full">

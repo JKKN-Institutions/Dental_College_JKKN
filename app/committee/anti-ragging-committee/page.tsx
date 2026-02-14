@@ -1,6 +1,14 @@
+import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+import { BookOpen, Phone } from 'lucide-react';
+
+export const metadata: Metadata = {
+  title: 'Anti Ragging Committee | JKKN Dental College',
+  description: 'JKKN Dental College maintains zero-tolerance towards ragging. View committee members, UGC guidelines, and helpline for a safe campus.',
+  keywords: 'anti ragging committee, ragging free campus, student safety, UGC guidelines, zero tolerance policy, JKKN dental college, anti ragging helpline',
+};
 
 export default function AntiRaggingCommittee() {
   return (
@@ -26,7 +34,7 @@ export default function AntiRaggingCommittee() {
           </h3>
 
           <p className="text-base text-black mb-4 leading-relaxed">
-            At <span className="font-bold">JKKN Dental College and Hospital</span>, we uphold the highest standards of student welfare, dignity, and discipline. In line with the directives of the University Grants Commission (UGC) and Dental Council of India, our college maintains a strict zero-tolerance policy towards ragging in any form.
+            At <span className="font-bold">JKKN Dental College & Hospital</span>, we uphold the highest standards of student welfare, dignity, and discipline. In line with the directives of the University Grants Commission (UGC) and Dental Council of India, our college maintains a strict zero-tolerance policy towards ragging in any form.
           </p>
 
           <p className="text-base text-black mb-12 leading-relaxed">
@@ -89,7 +97,7 @@ export default function AntiRaggingCommittee() {
 
           {/* UGC Guidelines on Ragging */}
           <h3 className="text-xl md:text-2xl font-bold text-[#0D7C66] mb-4 flex items-center">
-            <span className="text-2xl mr-3">📚</span> UGC Guidelines on Ragging
+            <BookOpen className="w-6 h-6 mr-3 inline-block" /> UGC Guidelines on Ragging
           </h3>
 
           <p className="text-base text-black mb-6 leading-relaxed">
@@ -125,7 +133,7 @@ export default function AntiRaggingCommittee() {
 
           {/* Anti-Ragging Helpline */}
           <h3 className="text-xl md:text-2xl font-bold text-[#0D7C66] mb-4 flex items-center">
-            <span className="text-2xl mr-3">📞</span> Anti-Ragging Helpline
+            <Phone className="w-6 h-6 mr-3 inline-block" /> Anti-Ragging Helpline
           </h3>
 
           <ul className="list-disc list-inside mb-12 space-y-3 text-gray-700 ml-4">

@@ -3,6 +3,39 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   images: {
     remotePatterns: [],
+    formats: ['image/webp', 'image/avif'],
+    deviceSizes: [640, 750, 828, 1080, 1200, 1920],
+    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
+    minimumCacheTTL: 60 * 60 * 24 * 365, // 1 year
+  },
+  async redirects() {
+    return [
+      // Old WordPress URLs → New Next.js URLs
+      { source: '/contact-us/', destination: '/contact', permanent: true },
+      { source: '/contact-us', destination: '/contact', permanent: true },
+      { source: '/principal-message/', destination: '/our-management', permanent: true },
+      { source: '/principal-message', destination: '/our-management', permanent: true },
+
+      // Trailing slash redirects (WordPress used trailing slashes)
+      { source: '/bds/', destination: '/academics/details-of-academic-programs/bds', permanent: true },
+      { source: '/mds/', destination: '/academics/details-of-academic-programs/mds', permanent: true },
+      { source: '/gallery/', destination: '/gallery', permanent: true },
+      { source: '/contact/', destination: '/contact', permanent: true },
+      { source: '/iqac/', destination: '/iqac', permanent: true },
+      { source: '/alumni/', destination: '/alumni', permanent: true },
+
+      // Misspelled URLs & Common Shortcuts
+      { source: '/carrer', destination: '/information-center/careers', permanent: true },
+      { source: '/carrer/', destination: '/information-center/careers', permanent: true },
+      { source: '/naac', destination: '/accreditation/naac', permanent: true },
+      { source: '/naac/', destination: '/accreditation/naac', permanent: true },
+      { source: '/nacc', destination: '/accreditation/naac', permanent: true },
+      { source: '/nacc/', destination: '/accreditation/naac', permanent: true },
+
+      // Campus typo redirect
+      { source: '/camu', destination: '/facilities/wi-fi-campus', permanent: true },
+      { source: '/camu/', destination: '/facilities/wi-fi-campus', permanent: true },
+    ];
   },
   async rewrites() {
     return [
@@ -103,7 +136,7 @@ const nextConfig: NextConfig = {
       // Admission section
       { source: '/admission', destination: '/admission' },
       { source: '/prospectus', destination: '/admission/prospectus' },
-      { source: '/admission-process-guidelines', destination: '/admission/admission-process-guidelines' },
+      { source: '/admission-process-guidelines', destination: '/admission-process' },
       { source: '/admission-criterion-in-others', destination: '/admission/admission-process-guidelines/admission-criterion-in-others' },
       { source: '/fee-refund-policy', destination: '/admission/fee-refund-policy' },
       { source: '/ugc-fee-refund-policy', destination: '/admission/fee-refund-policy/ugc-fee-refund-policy' },
@@ -112,6 +145,7 @@ const nextConfig: NextConfig = {
       { source: '/equitable-opportunity-for-sedg-group', destination: '/admission/equitable-opportunity-for-sedg-group' },
       { source: '/equitable-opportunity-for-sedgs', destination: '/admission/equitable-opportunity-for-sedg-group/equitable-opportunity-for-sedgs' },
       { source: '/ugc-guidelines', destination: '/admission/equitable-opportunity-for-sedg-group/ugc-guidelines' },
+      { source: '/fees-structure', destination: '/fees-structure' },
 
       // Research section
       { source: '/research', destination: '/research' },

@@ -1,6 +1,8 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
+import { Trophy } from 'lucide-react';
 
 export default function Hero() {
   const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>) => {
@@ -18,7 +20,7 @@ export default function Hero() {
           <div className="space-y-6 sm:space-y-8">
             {/* Badge */}
             <div className="inline-flex items-center gap-2 sm:gap-2.5 bg-[#002309] px-3 sm:px-4 py-2 sm:py-2.5 rounded-full">
-              <span className="text-yellow-400 text-lg sm:text-xl">🏆</span>
+              <Trophy className="w-5 h-5 sm:w-6 sm:h-6 text-yellow-400" />
               <span className="text-white text-xs sm:text-sm font-semibold">DCI Approved | NAAC Accredited</span>
             </div>
 
@@ -30,7 +32,7 @@ export default function Hero() {
 
             {/* Description */}
             <p className="text-gray-200 text-sm sm:text-base md:text-lg leading-relaxed">
-              Join JKKN Dental College and Hospital — where world-class dental education meets compassionate patient care. Our DCI-approved programs prepare Learners for exceptional careers in dentistry.
+              Join JKKN Dental College & Hospital — where world-class dental education meets compassionate patient care. Our DCI-approved programs prepare Learners for exceptional careers in dentistry.
             </p>
 
             {/* Stats */}
@@ -70,10 +72,15 @@ export default function Hero() {
           {/* Right Image */}
           <div className="relative order-first md:order-last">
             <div className="rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl bg-gray-100 aspect-[4/3] md:aspect-auto">
-              <img
-                src="/images/JKKN-Dental-Main-Banner-Image.png"
+              <Image
+                src="/images/JKKN-Dental-Main-Banner-Image.webp"
                 alt="Dental Professional"
+                width={1920}
+                height={1440}
                 className="w-full h-full object-cover"
+                priority
+                sizes="(max-width: 768px) 100vw, 50vw"
+                quality={85}
               />
             </div>
           </div>
@@ -85,25 +92,41 @@ export default function Hero() {
             <h3 className="text-xs sm:text-sm md:text-base text-gray-400 uppercase tracking-wider">Recognized & Approved By</h3>
           </div>
           <div className="flex flex-wrap justify-center items-center gap-6 sm:gap-8 md:gap-10 lg:gap-12 opacity-70">
-            <img
-              src="/images/Dental_Council_of_India_logo.png"
+            <Image
+              src="/images/Dental_Council_of_India_logo.webp"
               alt="Dental Council of India"
+              width={120}
+              height={64}
               className="h-10 xs:h-12 sm:h-14 md:h-16 w-auto grayscale hover:grayscale-0 transition-all duration-300"
+              loading="lazy"
+              sizes="(max-width: 768px) 64px, 80px"
             />
-            <img
+            <Image
               src="/images/National_Medical_Commission_logo.jpg"
               alt="National Medical Commission"
+              width={120}
+              height={64}
               className="h-10 xs:h-12 sm:h-14 md:h-16 w-auto grayscale hover:grayscale-0 transition-all duration-300"
+              loading="lazy"
+              sizes="(max-width: 768px) 64px, 80px"
             />
-            <img
-              src="/images/NAAC_LOGO.png"
+            <Image
+              src="/images/NAAC_LOGO.webp"
               alt="NAAC Accreditation"
+              width={120}
+              height={64}
               className="h-10 xs:h-12 sm:h-14 md:h-16 w-auto grayscale hover:grayscale-0 transition-all duration-300"
+              loading="lazy"
+              sizes="(max-width: 768px) 64px, 80px"
             />
-            <img
+            <Image
               src="/images/Dr.M.G.R.Medical-University-logo.webp"
               alt="Tamil Nadu Dr. MGR Medical University"
+              width={120}
+              height={64}
               className="h-10 xs:h-12 sm:h-14 md:h-16 w-auto grayscale hover:grayscale-0 transition-all duration-300"
+              loading="lazy"
+              sizes="(max-width: 768px) 64px, 80px"
             />
           </div>
         </div>

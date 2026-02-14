@@ -1,6 +1,14 @@
+import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+import { Check } from 'lucide-react';
+
+export const metadata: Metadata = {
+  title: 'Add-On Courses - JKKN Dental College',
+  description: 'Explore specialized add-on courses in implantology, laser aesthetics, and composite restoration at JKKN Dental College. Enhance your expertise today.',
+  keywords: 'add-on courses, dental specialization courses, implantology course, laser aesthetics, composite restoration, dental certification, advanced dental training',
+};
 
 export default function AddOnCourses() {
   return (
@@ -32,7 +40,7 @@ export default function AddOnCourses() {
               Completed Course
             </h3>
             <div className="flex items-start gap-2 mb-3">
-              <span className="text-green-600 text-xl">✓</span>
+              <Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-1" />
               <p className="text-base text-black">
                 Workshop on Laser Aesthetics (Successfully Conducted – December 2024)
               </p>
@@ -157,31 +165,31 @@ export default function AddOnCourses() {
             </p>
 
             <div className="flex items-start gap-2 mb-3">
-              <span className="text-green-600 text-xl">✓</span>
+              <Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-1" />
               <p className="text-base font-bold text-black">
                 Overall Expected Outcomes:
               </p>
             </div>
             <div className="flex items-start gap-2 mb-2">
-              <span className="text-black">✓</span>
+              <Check className="w-4 h-4 text-black inline-block" />
               <p className="text-base text-black">
                 Enhanced knowledge of composite materials and their applications.
               </p>
             </div>
             <div className="flex items-start gap-2 mb-2">
-              <span className="text-black">✓</span>
+              <Check className="w-4 h-4 text-black inline-block" />
               <p className="text-base text-black">
                 Improved problem-solving and critical thinking skills.
               </p>
             </div>
             <div className="flex items-start gap-2 mb-2">
-              <span className="text-black">✓</span>
+              <Check className="w-4 h-4 text-black inline-block" />
               <p className="text-base text-black">
                 Practical application of layering and finishing techniques.
               </p>
             </div>
             <div className="flex items-start gap-2 mb-4">
-              <span className="text-black">✓</span>
+              <Check className="w-4 h-4 text-black inline-block" />
               <p className="text-base text-black">
                 Increased confidence in clinical decision-making and communication.
               </p>
@@ -198,25 +206,25 @@ export default function AddOnCourses() {
               Why Choose Our Add-On Courses?
             </p>
             <div className="flex items-start gap-2 mb-2">
-              <span className="text-black">✓</span>
+              <Check className="w-4 h-4 text-black inline-block" />
               <p className="text-base text-black">
                 Hands-on Training with Experts
               </p>
             </div>
             <div className="flex items-start gap-2 mb-2">
-              <span className="text-black">✓</span>
+              <Check className="w-4 h-4 text-black inline-block" />
               <p className="text-base text-black">
                 Certification upon Completion
               </p>
             </div>
             <div className="flex items-start gap-2 mb-2">
-              <span className="text-black">✓</span>
+              <Check className="w-4 h-4 text-black inline-block" />
               <p className="text-base text-black">
                 Access to Advanced Equipment &amp; Technology
               </p>
             </div>
             <div className="flex items-start gap-2 mb-6">
-              <span className="text-black">✓</span>
+              <Check className="w-4 h-4 text-black inline-block" />
               <p className="text-base text-black">
                 Enhances Career Prospects
               </p>

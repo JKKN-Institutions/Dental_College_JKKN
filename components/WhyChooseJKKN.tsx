@@ -19,9 +19,9 @@ export default function WhyChooseJKKN() {
                   </div>
                 </div>
                 <div>
-                  <h4 className="text-lg sm:text-xl font-bold mb-1 sm:mb-2">70+ Years Legacy</h4>
+                  <h4 className="text-lg sm:text-xl font-bold mb-1 sm:mb-2">JKKN Group: 57+ Years of Educational Legacy</h4>
                   <p className="text-gray-300 leading-relaxed text-sm sm:text-base">
-                    Part of JKKN Institutions with a century-long commitment to progressive education. #JKKN100
+                    Part of JKKN Institutions, founded in 1969, with a commitment to progressive education. #JKKN100
                   </p>
                 </div>
               </div>
@@ -79,7 +79,7 @@ export default function WhyChooseJKKN() {
               {/* Stat 1 */}
               <div className="bg-[#002309] rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 text-center">
                 <div className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-bold text-[#7cb983] mb-1 sm:mb-2">39+</div>
-                <div className="text-gray-300 text-xs sm:text-sm">Years of Excellence</div>
+                <div className="text-gray-300 text-xs sm:text-sm">Dental College Est. 1987</div>
               </div>
 
               {/* Stat 2 */}

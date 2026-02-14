@@ -1,6 +1,13 @@
+import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+
+export const metadata: Metadata = {
+  title: 'Research Collaboration | JKKN Dental College',
+  description: 'Strategic partnerships with industry leaders, academic institutions, and research organizations for cutting-edge dental research.',
+  keywords: 'dental research collaboration, academic partnerships, research organizations, dental innovation, JKKN Dental College, healthcare collaboration'
+};
 
 export default function Collaboration() {
   return (

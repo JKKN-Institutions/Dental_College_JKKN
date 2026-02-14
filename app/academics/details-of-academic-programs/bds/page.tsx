@@ -5,14 +5,102 @@ import Image from 'next/image';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+import StructuredData from '@/components/StructuredData';
+import Breadcrumb from '@/components/Breadcrumb';
 import { useState } from 'react';
 
 export default function BDSProgram() {
   const [activeYear, setActiveYear] = useState('first');
 
+  // Course Schema for BDS
+  const courseSchema = {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    "name": "Bachelor of Dental Surgery (BDS)",
+    "description": "Comprehensive 5-year undergraduate dental program approved by DCI, offering hands-on clinical training and world-class infrastructure.",
+    "provider": {
+      "@type": "CollegeOrUniversity",
+      "name": "JKKN Dental College & Hospital",
+      "url": "https://dental.jkkn.ac.in"
+    },
+    "courseCode": "BDS",
+    "educationalCredentialAwarded": "Bachelor of Dental Surgery",
+    "timeRequired": "P5Y",
+    "occupationalCredentialAwarded": "Dental Surgeon",
+    "hasCourseInstance": {
+      "@type": "CourseInstance",
+      "courseMode": "Full-time",
+      "duration": "P5Y"
+    }
+  };
+
+  // FAQ Schema for BDS
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the duration of the BDS course?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The Bachelor of Dental Surgery (BDS) program is a 5-year course. This includes 4 years of academic study covering pre-clinical, para-clinical, and clinical subjects, followed by 1 year of compulsory rotating internship where Learners gain hands-on experience in various departments."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the eligibility criteria for BDS admission?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Candidates must have completed 10+2 with Physics, Chemistry, and Biology as mandatory subjects with a minimum of 50% aggregate marks (40% for reserved categories). Additionally, candidates must qualify NEET-UG and be at least 17 years old as on 31st December of the admission year."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is the BDS program at JKKN Dental College & Hospital DCI approved?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, our BDS program is fully approved by the Dental Council of India (DCI). The college is also recognized by the Government of Tamil Nadu and is affiliated with the Tamil Nadu Dr. M.G.R. Medical University. Our institution maintains all standards required by regulatory bodies."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What are the career opportunities after completing BDS?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "BDS graduates have numerous career options including private practice, government dental hospitals, corporate dental chains, research institutions, and academic positions. Graduates can also pursue MDS for specialization in Orthodontics, Oral Surgery, Prosthodontics, Periodontics, and more."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What facilities are available for BDS Learners?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Our campus offers comprehensive facilities including a 100+ bedded attached dental hospital, advanced simulation laboratories, digital radiology department with OPG and CBCT, well-equipped Learning Studios, central library with digital resources, separate hostel accommodation, sports facilities, and Wi-Fi enabled campus."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I pursue MDS after BDS from this college?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, after completing BDS, graduates can pursue MDS by qualifying NEET-MDS examination. JKKN Dental College & Hospital also offers MDS programs in various specializations. Our BDS curriculum is designed to provide a strong foundation for postgraduate studies."
+        }
+      }
+    ]
+  };
+
   return (
     <main className="overflow-x-hidden">
+      <StructuredData data={courseSchema} />
+      <StructuredData data={faqSchema} />
       <Header />
+      <Breadcrumb items={[
+        { name: 'Home', url: 'https://dental.jkkn.ac.in' },
+        { name: 'Academics', url: 'https://dental.jkkn.ac.in/academics' },
+        { name: 'Academic Programs', url: 'https://dental.jkkn.ac.in/academics/details-of-academic-programs' },
+        { name: 'BDS', url: 'https://dental.jkkn.ac.in/academics/details-of-academic-programs/bds' },
+      ]} />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-[#006837] to-[#002309] py-16 px-4 overflow-hidden">
@@ -67,9 +155,15 @@ export default function BDSProgram() {
                 <Link href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8" className="bg-[#7cb983] hover:bg-[#6ba872] text-white font-semibold px-8 py-3 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl inline-block">
                   Apply Now
                 </Link>
-                <a href="#curriculum" className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#006837] font-semibold px-8 py-3 rounded-lg transition-all duration-300 inline-block">
+                <button
+                  onClick={(e) => {
+                    e.preventDefault();
+                    document.getElementById('curriculum')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                  }}
+                  className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#006837] font-semibold px-8 py-3 rounded-lg transition-all duration-300 inline-block"
+                >
                   Explore Curriculum
-                </a>
+                </button>
               </div>
             </div>
 
@@ -77,10 +171,13 @@ export default function BDSProgram() {
             <div className="relative">
               <div className="relative rounded-2xl border-4 border-white/20 overflow-hidden aspect-video">
                 <Image
-                  src="/images/BDS-hero-image.png"
+                  src="/images/BDS-hero-image.webp"
                   alt="Dental Education"
                   fill
                   className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  quality={85}
+                  priority
                 />
               </div>
 
@@ -139,7 +236,7 @@ export default function BDSProgram() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-bold text-[#006837] mb-1">DCI Approved</h3>
+                    <h3 className="font-bold text-[#006837] mb-1 text-base">DCI Approved</h3>
                     <p className="text-sm text-gray-600">Fully recognized by the Dental Council of India</p>
                   </div>
                 </div>
@@ -152,8 +249,8 @@ export default function BDSProgram() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-bold text-[#006837] mb-1">100+ Bedded Hospital</h3>
-                    <p className="text-sm text-gray-600">Attached dental hospital for clinical training</p>
+                    <h3 className="font-bold text-[#006837] mb-1 text-base">200+ Dental Chairs & 100+ Hospital Beds</h3>
+                    <p className="text-sm text-gray-600">Comprehensive hospital facility for clinical training</p>
                   </div>
                 </div>
 
@@ -164,7 +261,7 @@ export default function BDSProgram() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-bold text-[#006837] mb-1">Expert Learning Facilitators</h3>
+                    <h3 className="font-bold text-[#006837] mb-1 text-base">Expert Learning Facilitators</h3>
                     <p className="text-sm text-gray-600">Highly qualified and experienced faculty</p>
                   </div>
                 </div>
@@ -176,7 +273,7 @@ export default function BDSProgram() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-bold text-[#006837] mb-1">Modern Curriculum</h3>
+                    <h3 className="font-bold text-[#006837] mb-1 text-base">Modern Curriculum</h3>
                     <p className="text-sm text-gray-600">Updated syllabus aligned with DCI guidelines</p>
                   </div>
                 </div>
@@ -187,10 +284,12 @@ export default function BDSProgram() {
             <div className="grid grid-cols-2 gap-4">
               <div className="col-span-2 relative rounded-2xl h-64 overflow-hidden shadow-lg">
                 <Image
-                  src="/images/BDS-Modern-Dental-Lab.png"
+                  src="/images/BDS-Modern-Dental-Lab.webp"
                   alt="Modern Dental Lab"
                   fill
                   className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  quality={80}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end justify-center pb-6">
                   <h3 className="text-2xl md:text-4xl font-bold text-white">Modern Dental Lab</h3>
@@ -198,10 +297,12 @@ export default function BDSProgram() {
               </div>
               <div className="relative rounded-2xl h-48 overflow-hidden shadow-lg">
                 <Image
-                  src="/images/BDS-Clinical-Training.png"
+                  src="/images/BDS-Clinical-Training.webp"
                   alt="Clinical Training"
                   fill
                   className="object-cover"
+                  sizes="(max-width: 768px) 50vw, 25vw"
+                  quality={80}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end justify-center pb-4">
                   <h3 className="text-2xl font-bold text-white text-center">Clinical Training</h3>
@@ -209,10 +310,12 @@ export default function BDSProgram() {
               </div>
               <div className="relative rounded-2xl h-48 overflow-hidden shadow-lg">
                 <Image
-                  src="/images/BDS-Campus-Life.png"
+                  src="/images/BDS-Campus-Life.webp"
                   alt="Campus Life"
                   fill
                   className="object-cover"
+                  sizes="(max-width: 768px) 50vw, 25vw"
+                  quality={80}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end justify-center pb-4">
                   <h3 className="text-2xl font-bold text-white text-center">Campus Life</h3>
@@ -254,7 +357,7 @@ export default function BDSProgram() {
                 </svg>
               </div>
               <h3 className="font-bold text-gray-800 mb-3">Program Duration</h3>
-              <div className="text-4xl font-bold text-[#7cb983] mb-2">5 Years</div>
+              <div className="text-3xl font-bold text-[#7cb983] mb-2">5 Years</div>
               <p className="text-sm text-gray-600">Including 1-year Internship</p>
             </div>
 
@@ -266,7 +369,7 @@ export default function BDSProgram() {
                 </svg>
               </div>
               <h3 className="font-bold text-gray-800 mb-3">Annual Intake</h3>
-              <div className="text-4xl font-bold text-[#7cb983] mb-2">100 Seats</div>
+              <div className="text-3xl font-bold text-[#7cb983] mb-2">100 Seats</div>
               <p className="text-sm text-gray-600">As per DCI Norms</p>
             </div>
 
@@ -278,7 +381,7 @@ export default function BDSProgram() {
                 </svg>
               </div>
               <h3 className="font-bold text-gray-800 mb-3">Fee Structure</h3>
-              <div className="text-4xl font-bold text-[#7cb983] mb-2">Affordable</div>
+              <div className="text-3xl font-bold text-[#7cb983] mb-2">Affordable</div>
               <p className="text-sm text-gray-600">Contact Admissions</p>
             </div>
 
@@ -290,7 +393,7 @@ export default function BDSProgram() {
                 </svg>
               </div>
               <h3 className="font-bold text-gray-800 mb-3">Accreditation</h3>
-              <div className="text-4xl font-bold text-[#7cb983] mb-2">DCI & NAAC</div>
+              <div className="text-3xl font-bold text-[#7cb983] mb-2">DCI & NAAC</div>
               <p className="text-sm text-gray-600">Nationally Recognized</p>
             </div>
           </div>
@@ -1225,7 +1328,7 @@ export default function BDSProgram() {
             {/* FAQ 3 */}
             <details className="group border-2 border-gray-200 rounded-xl overflow-hidden">
               <summary className="flex items-center justify-between cursor-pointer p-6 font-bold text-[#006837] text-lg hover:bg-green-50 transition-colors duration-300">
-                Is the BDS program at J.K.K. Nattraja Dental College DCI approved?
+                Is the BDS program at JKKN Dental College & Hospital DCI approved?
                 <svg className="w-5 h-5 text-[#7cb983] transition-transform duration-300 group-open:rotate-180" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                 </svg>
@@ -1270,7 +1373,7 @@ export default function BDSProgram() {
                 </svg>
               </summary>
               <div className="px-6 pb-6 text-gray-600 leading-relaxed border-t-2 border-green-200 pt-4">
-                Yes, after completing BDS, graduates can pursue MDS by qualifying NEET-MDS examination. J.K.K. Nattraja Dental College also offers MDS programs in various specializations. Our BDS curriculum is designed to provide a strong foundation for postgraduate studies.
+                Yes, after completing BDS, graduates can pursue MDS by qualifying NEET-MDS examination. JKKN Dental College & Hospital also offers MDS programs in various specializations. Our BDS curriculum is designed to provide a strong foundation for postgraduate studies.
               </div>
             </details>
           </div>
@@ -1284,13 +1387,13 @@ export default function BDSProgram() {
             Begin Your Journey in Dental Excellence
           </h2>
           <p className="text-lg text-gray-200 mb-10 leading-relaxed max-w-3xl mx-auto">
-            Join J.K.K. Nattraja Dental College and transform your passion for dentistry into a fulfilling career. Our comprehensive BDS program prepares you for success in the healthcare industry.
+            Join JKKN Dental College & Hospital and transform your passion for dentistry into a fulfilling career. Our comprehensive BDS program prepares you for success in the healthcare industry.
           </p>
 
           <div className="flex flex-wrap justify-center gap-6">
-            <button className="bg-[#7cb983] hover:bg-[#6ba872] text-white font-semibold px-10 py-4 rounded-lg text-lg transition-all duration-300 shadow-lg hover:shadow-xl">
+            <Link href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8" className="bg-[#7cb983] hover:bg-[#6ba872] text-white font-semibold px-10 py-4 rounded-lg text-lg transition-all duration-300 shadow-lg hover:shadow-xl inline-block">
               Apply for Admission
-            </button>
+            </Link>
             <button className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#006837] font-semibold px-10 py-4 rounded-lg text-lg transition-all duration-300">
               Download Brochure
             </button>

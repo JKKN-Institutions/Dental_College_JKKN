@@ -1,6 +1,14 @@
+import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+import { Check } from 'lucide-react';
+
+export const metadata: Metadata = {
+  title: 'Governing Body | JKKN Dental College',
+  description: 'Explore the Governing Body of JKKN Dental College, guiding excellence in dental education, healthcare, and institutional governance.',
+  keywords: 'Governing Body, JKKN Dental College, governance, institutional policies, dental education governance, academic excellence, healthcare leadership',
+};
 
 export default function GoverningBody() {
   return (
@@ -38,31 +46,31 @@ export default function GoverningBody() {
           {/* List of Responsibilities */}
           <div className="mb-6 sm:mb-8 space-y-2 sm:space-y-3">
             <div className="flex items-start gap-2">
-              <span className="text-black font-bold flex-shrink-0">✓</span>
+              <Check className="w-5 h-5 text-black font-bold flex-shrink-0 mt-1" />
               <p className="text-sm sm:text-base text-black">
                 <span className="font-bold">Setting Institutional Policies</span> – Defining governance frameworks to enhance academic and operational efficiency.
               </p>
             </div>
             <div className="flex items-start gap-2">
-              <span className="text-black font-bold flex-shrink-0">✓</span>
+              <Check className="w-5 h-5 text-black font-bold flex-shrink-0 mt-1" />
               <p className="text-sm sm:text-base text-black">
                 <span className="font-bold">Ensuring Quality Education</span> – Overseeing curriculum development, faculty recruitment, and student welfare initiatives.
               </p>
             </div>
             <div className="flex items-start gap-2">
-              <span className="text-black font-bold flex-shrink-0">✓</span>
+              <Check className="w-5 h-5 text-black font-bold flex-shrink-0 mt-1" />
               <p className="text-sm sm:text-base text-black">
                 <span className="font-bold">Advancing Research & Innovation</span> – Supporting scientific research, collaborations, and technological advancements.
               </p>
             </div>
             <div className="flex items-start gap-2">
-              <span className="text-black font-bold flex-shrink-0">✓</span>
+              <Check className="w-5 h-5 text-black font-bold flex-shrink-0 mt-1" />
               <p className="text-sm sm:text-base text-black">
                 <span className="font-bold">Upholding Ethical Standards</span> – Ensuring compliance with regulatory authorities, accreditation bodies, and ethical guidelines.
               </p>
             </div>
             <div className="flex items-start gap-2">
-              <span className="text-black font-bold flex-shrink-0">✓</span>
+              <Check className="w-5 h-5 text-black font-bold flex-shrink-0 mt-1" />
               <p className="text-sm sm:text-base text-black">
                 <span className="font-bold">Strengthening Community Engagement</span> – Promoting outreach programs, public health initiatives, and social responsibility.
               </p>

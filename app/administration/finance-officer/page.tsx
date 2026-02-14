@@ -1,6 +1,13 @@
+import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+
+export const metadata: Metadata = {
+  title: 'Finance Officer | JKKN Dental College',
+  description: 'Meet Mr. K. Velayutham, MBA, Finance Officer at JKKN Dental College, managing financial planning, budgeting, and institutional growth.',
+  keywords: 'Finance Officer, JKKN Dental College, K. Velayutham, financial management, budgeting, financial planning, institutional finance',
+};
 
 export default function FinanceOfficer() {
   return (
@@ -35,7 +42,7 @@ export default function FinanceOfficer() {
               Mr. K. Velayutham, MBA
             </p>
             <p className="text-base md:text-lg font-bold text-black">
-              JKKN Institutions, Kumarapalayam
+              JKKN Institutions, Komarapalayam
             </p>
           </div>
 

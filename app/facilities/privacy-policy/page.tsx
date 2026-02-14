@@ -1,6 +1,13 @@
+import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+
+export const metadata: Metadata = {
+  title: 'Privacy Policy - JKKN Dental College Data Protection & Security',
+  description: 'JKKN Dental College privacy policy outlines personal data collection, usage, protection, and your rights regarding information security and confidentiality.',
+  keywords: 'privacy policy JKKN, data protection dental college, personal information security, JKKN privacy statement, data confidentiality, user privacy rights',
+};
 
 export default function PrivacyPolicy() {
   return (
@@ -17,7 +24,7 @@ export default function PrivacyPolicy() {
 
           {/* Introduction Paragraph */}
           <p className="text-base md:text-lg leading-relaxed text-gray-600 mb-8">
-            At JKKN Dental College and Hospital, we respect the privacy of our website visitors and are committed to protecting the personal information you share with us. This Privacy Policy outlines our practices with respect to the collection, use, and disclosure of personal information on our website.
+            At JKKN Dental College & Hospital, we respect the privacy of our website visitors and are committed to protecting the personal information you share with us. This Privacy Policy outlines our practices with respect to the collection, use, and disclosure of personal information on our website.
           </p>
 
           {/* Personal Information We Collect */}
@@ -46,7 +53,7 @@ export default function PrivacyPolicy() {
             <ul className="list-disc pl-8 space-y-2 text-base text-gray-600">
               <li>To respond to your inquiries and provide you with information about our programs, services, and events</li>
               <li>To process and evaluate your application for admission to our college or for employment</li>
-              <li>To communicate with you about news, events, and other updates related to JKK Nataraja Dental College and Hospital</li>
+              <li>To communicate with you about news, events, and other updates related to JKK Nattraja Dental College & Hospital</li>
               <li>To improve the content and functionality of our website and to better understand our website visitors' interests and preferences</li>
             </ul>
           </div>
@@ -61,7 +68,7 @@ export default function PrivacyPolicy() {
             </p>
             <ul className="list-disc pl-8 space-y-2 text-base text-gray-600">
               <li>When required by law or legal process</li>
-              <li>To protect the rights or property of JKK Nataraja Dental College and Hospital or our website users</li>
+              <li>To protect the rights or property of JKK Nattraja Dental College & Hospital or our website users</li>
               <li>To contractors or service providers who assist us in the operation of our website or in the provision of our programs, services, or events</li>
             </ul>
           </div>
@@ -112,12 +119,12 @@ export default function PrivacyPolicy() {
               Contact Us
             </h2>
             <p className="text-base leading-relaxed text-gray-600 mb-4">
-              If you have any questions or concerns about this Privacy Policy, please contact us at JKKN Dental College and Hospital
+              If you have any questions or concerns about this Privacy Policy, please contact us at JKKN Dental College & Hospital
             </p>
             <div className="text-base leading-relaxed text-gray-600">
-              <p className="mb-2">Call: +919345855001</p>
+              <p className="mb-2">Call: +91 93458 55001</p>
               <p className="mb-2">Email: info@jkkn.ac.in</p>
-              <p>Address: JKKN Dental College and Hospital , Natarajapuram, NH-544 (Salem To Coimbatore National Highway), Kumarapalayam (TK), Namakkal (DT). Tamil Nadu. 638183.</p>
+              <p>Address: JKKN Dental College & Hospital , Nattrajapuram, NH-544 (Salem To Coimbatore National Highway), Komarapalayam (TK), Namakkal (DT). Tamil Nadu. 638183.</p>
             </div>
           </div>
         </div>

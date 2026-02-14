@@ -1,6 +1,14 @@
+import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+import { Phone, Mail } from 'lucide-react';
+
+export const metadata: Metadata = {
+  title: 'Startup Hub & Entrepreneurship | JKKN Dental College',
+  description: 'Empowering dental entrepreneurs with incubation support, mentorship, and funding for innovative healthcare solutions and startups.',
+  keywords: 'dental startups, healthcare entrepreneurship, incubation hub, digital dentistry, AI diagnostics, dental innovation, JKKN startup'
+};
 
 export default function StartUp() {
   return (
@@ -139,15 +147,15 @@ export default function StartUp() {
           </h2>
 
           <div className="text-gray-700 mb-2 leading-relaxed">
-            📍 <span className="font-bold">Location:</span> JKKN Dental College & Hospital, Natarajapuram, NH-544 (Salem to Coimbatore National Highway), Kumarapalayam (TK), Namakkal (DT), Tamil Nadu - 638183.
+            📍 <span className="font-bold">Location:</span> JKKN Dental College & Hospital, Nattrajapuram, NH-544 (Salem to Coimbatore National Highway), Komarapalayam (TK), Namakkal (DT), Tamil Nadu - 638183.
           </div>
 
           <div className="text-gray-700 mb-2 leading-relaxed">
-            📞 <span className="font-bold">Contact:</span> Dr Nivethitha, 9080063924
+            <Phone className="w-5 h-5 inline-block mr-1" /> <span className="font-bold">Contact:</span> Dr Nivethitha, 9080063924
           </div>
 
           <div className="text-gray-700 mb-6 leading-relaxed">
-            ✉️ <span className="font-bold">E mail:</span> dental@jkkn.ac.in
+            <Mail className="w-5 h-5 inline-block mr-1" /> <span className="font-bold">E mail:</span> dental@jkkn.ac.in
           </div>
 
           <p className="text-gray-700 mb-8 leading-relaxed">

@@ -1,6 +1,13 @@
+import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+
+export const metadata: Metadata = {
+  title: 'Disciplinary Committee | JKKN Dental College',
+  description: 'Maintaining discipline and enforcing codes of conduct to create a safe and respectful learning environment at JKKN Dental College.',
+  keywords: 'disciplinary committee, student discipline, code of conduct, institutional rules, student accountability, JKKN dental college',
+};
 
 export default function DisciplinaryCommittee() {
   return (

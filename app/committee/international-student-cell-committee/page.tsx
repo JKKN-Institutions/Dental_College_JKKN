@@ -1,6 +1,13 @@
+import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+
+export const metadata: Metadata = {
+  title: 'International Student Cell Committee | JKKN Dental College',
+  description: 'Supporting NRI and international students with admission, orientation, and academic guidance. Globally acclaimed dental education.',
+  keywords: 'international student cell, NRI admissions, foreign students, international education, student support, JKKN dental college',
+};
 
 export default function InternationalStudentCellCommittee() {
   return (

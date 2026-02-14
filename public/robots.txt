@@ -1,0 +1,18 @@
+# Allow all search engines to crawl the site
+User-agent: *
+Allow: /
+
+# Point search engines to the sitemap
+Sitemap: https://dental.jkkn.ac.in/sitemap.xml
+
+# Block spam URLs
+Disallow: /7-greatest-free-ai-chatbots-ive-tried-and-loved-for-2025
+
+# Block WordPress legacy URLs if they still exist
+Disallow: /wp-admin/
+Disallow: /wp-content/
+Disallow: /wp-includes/
+
+# Block internal/admin pages
+Disallow: /api/
+Disallow: /_next/

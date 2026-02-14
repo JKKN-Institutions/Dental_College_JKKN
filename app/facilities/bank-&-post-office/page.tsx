@@ -1,7 +1,14 @@
+import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import Image from 'next/image';
+
+export const metadata: Metadata = {
+  title: 'Bank & Post Office - On-Campus Banking Services at JKKN Dental College',
+  description: 'JKKN campus features 24/7 ATM, on-campus post office, and complete banking services including domestic/international mail and savings schemes for students.',
+  keywords: 'on-campus banking JKKN, ATM facility dental college, campus post office, Indian Bank ATM, postal services, student banking, on-campus financial services',
+};
 
 export default function BankPostOffice() {
   return (

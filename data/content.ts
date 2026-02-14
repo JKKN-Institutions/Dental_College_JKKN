@@ -427,13 +427,13 @@ Our curriculum emphasizes clinical excellence, research, and community service, 
   // Footer
   footer: {
     about: {
-      title: "JKKN Dental College and Hospital",
+      title: "JKKN Dental College & Hospital",
       description: "Best Innovative Provided",
     },
     institutions: {
       title: "OUR INSTITUTIONS",
       links: [
-        { name: "JKKN Dental College and Hospital", url: "https://dental.jkkn.ac.in" },
+        { name: "JKKN Dental College & Hospital", url: "https://dental.jkkn.ac.in" },
         { name: "JKKN College of Allied Health Sciences", url: "https://ahs.jkkn.ac.in/" },
         { name: "JKKN College of Pharmacy", url: "https://pharmacy.jkkn.ac.in/" },
         { name: "Sresakthimayeil Institute of Nursing and Research", url: "https://nursing.sresakthimayeil.jkkn.ac.in/" },
@@ -441,15 +441,15 @@ Our curriculum emphasizes clinical excellence, research, and community service, 
         { name: "JKKN College of Arts and Science (Autonomous)", url: "https://cas.jkkn.ac.in/" },
         { name: "JKKN College of Engineering and Technology", url: "https://engg.jkkn.ac.in/" },
         { name: "JKKN Matriculation Higher Secondary School", url: "https://school.jkkn.ac.in/" },
-        { name: "Nattraja Vidhyalya", url: "https://nv.jkkn.ac.in/" },
+        { name: "Nattraja Vidhyalaya", url: "https://nv.jkkn.ac.in/" },
       ],
     },
     contact: {
       title: "CONTACT US",
-      phone: " +91 9345855001",
+      phone: "+91 93458 55001",
       email: "dental@jkkn.ac.in",
-      address: `JKKN Dental College and Hospital
-NH-544 Salem to Kochi Highway, Kumarapalayam, Namakkal District, Tamil Nadu - 638183`,
+      address: `JKKN Dental College & Hospital
+NH-544 (Salem To Coimbatore National Highway), Komarapalayam, Namakkal District, Tamil Nadu - 638183`,
     },
     social: {
       title: "FOLLOW US",

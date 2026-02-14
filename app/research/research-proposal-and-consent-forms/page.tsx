@@ -1,6 +1,13 @@
+import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+
+export const metadata: Metadata = {
+  title: 'Research Proposal & Consent Forms | JKKN Dental College',
+  description: 'Download research proposal templates, informed consent documents, and ethical committee forms for PG dissertation submissions at JKKN.',
+  keywords: 'research proposal forms, informed consent, IEC forms, dissertation proposal, clinical research forms, ethics committee, JKKN research'
+};
 
 export default function ResearchProposalAndConsentForms() {
   return (

@@ -72,7 +72,7 @@ export default function Footer() {
                     key={index}
                     href={social.url}
                     className="w-10 h-10 bg-white text-primary rounded flex items-center justify-center hover:bg-gray-200 transition-colors"
-                    aria-label={social.platform}
+                    aria-label={`Follow JKKN Dental on ${social.platform}`}
                   >
                     {social.platform === 'Facebook' && (
                       <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -108,7 +108,7 @@ export default function Footer() {
 
         {/* Copyright */}
         <div className="mt-10 pt-6 border-t border-white/30 text-center pb-20 lg:pb-0">
-          <p className="text-sm">&copy; 2025 JKKN Dental College and Hospital. All rights reserved.</p>
+          <p className="text-sm">&copy; 2025 JKKN Dental College & Hospital. All rights reserved.</p>
         </div>
       </div>
     </footer>

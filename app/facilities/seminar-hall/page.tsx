@@ -1,7 +1,14 @@
+import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import Image from 'next/image';
+
+export const metadata: Metadata = {
+  title: 'Seminar Hall - Modern Conference Facility at JKKN Dental College',
+  description: 'JKKN seminar hall features high-tech AV equipment, air conditioning, ergonomic seating, high-speed WiFi, and expert technical support for presentations.',
+  keywords: 'seminar hall JKKN, conference facility dental college, presentation hall, academic seminars, workshop venue, AV equipment, event space',
+};
 
 export default function SeminarHall() {
   return (

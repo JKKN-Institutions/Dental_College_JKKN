@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Circle, GraduationCap, Check, Leaf, Wrench, Pill, Microscope } from 'lucide-react';
 
 export default function AcademicPrograms() {
   return (
@@ -22,7 +23,7 @@ export default function AcademicPrograms() {
             {/* Card Header */}
             <div className="bg-[#006837] text-white p-6 sm:p-8">
               <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#002309] rounded-xl flex items-center justify-center mb-3 sm:mb-4">
-                <span className="text-xl sm:text-2xl">🦷</span>
+                <Circle className="w-6 h-6 sm:w-7 sm:h-7 text-white" />
               </div>
               <h3 className="text-xl xs:text-2xl sm:text-3xl font-bold mb-2">Bachelor of Dental Surgery (BDS)</h3>
               <p className="text-gray-300 text-xs sm:text-sm">5 Years (incl. 1-year internship)</p>
@@ -36,19 +37,19 @@ export default function AcademicPrograms() {
 
               <div className="space-y-3 mb-8">
                 <div className="flex items-start gap-3">
-                  <div className="text-[#7cb983] text-lg sm:text-xl flex-shrink-0">✓</div>
+                  <Check className="w-5 h-5 sm:w-6 sm:h-6 text-[#7cb983] flex-shrink-0" />
                   <div className="text-gray-700 text-sm sm:text-base">Complete curriculum covering oral biology, pathology, surgery, and restorative dentistry</div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <div className="text-[#7cb983] text-lg sm:text-xl flex-shrink-0">✓</div>
+                  <Check className="w-5 h-5 sm:w-6 sm:h-6 text-[#7cb983] flex-shrink-0" />
                   <div className="text-gray-700 text-sm sm:text-base">Hands-on clinical training from second year</div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <div className="text-[#7cb983] text-lg sm:text-xl flex-shrink-0">✓</div>
+                  <Check className="w-5 h-5 sm:w-6 sm:h-6 text-[#7cb983] flex-shrink-0" />
                   <div className="text-gray-700 text-sm sm:text-base">Modern simulation labs for pre-clinical practice</div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <div className="text-[#7cb983] text-lg sm:text-xl flex-shrink-0">✓</div>
+                  <Check className="w-5 h-5 sm:w-6 sm:h-6 text-[#7cb983] flex-shrink-0" />
                   <div className="text-gray-700 text-sm sm:text-base">Community dentistry camps and rural exposure</div>
                 </div>
               </div>
@@ -73,7 +74,7 @@ export default function AcademicPrograms() {
             {/* Card Header */}
             <div className="bg-[#006837] text-white p-6 sm:p-8">
               <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#002309] rounded-xl flex items-center justify-center mb-3 sm:mb-4">
-                <span className="text-xl sm:text-2xl">🎓</span>
+                <GraduationCap className="w-6 h-6 sm:w-7 sm:h-7 text-white" />
               </div>
               <h3 className="text-xl xs:text-2xl sm:text-3xl font-bold mb-2">Master of Dental Surgery (MDS)</h3>
               <p className="text-gray-300 text-xs sm:text-sm">3 Years Postgraduate</p>
@@ -87,19 +88,19 @@ export default function AcademicPrograms() {
 
               <div className="space-y-3 mb-8">
                 <div className="flex items-start gap-3">
-                  <div className="text-[#7cb983] text-lg sm:text-xl flex-shrink-0">✓</div>
+                  <Check className="w-5 h-5 sm:w-6 sm:h-6 text-[#7cb983] flex-shrink-0" />
                   <div className="text-gray-700 text-sm sm:text-base">5 specialized branches including Orthodontics, Oral Surgery, Prosthodontics</div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <div className="text-[#7cb983] text-lg sm:text-xl flex-shrink-0">✓</div>
+                  <Check className="w-5 h-5 sm:w-6 sm:h-6 text-[#7cb983] flex-shrink-0" />
                   <div className="text-gray-700 text-sm sm:text-base">Research-oriented curriculum with publication support</div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <div className="text-[#7cb983] text-lg sm:text-xl flex-shrink-0">✓</div>
+                  <Check className="w-5 h-5 sm:w-6 sm:h-6 text-[#7cb983] flex-shrink-0" />
                   <div className="text-gray-700 text-sm sm:text-base">Advanced CBCT and CAD/CAM systems</div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <div className="text-[#7cb983] text-lg sm:text-xl flex-shrink-0">✓</div>
+                  <Check className="w-5 h-5 sm:w-6 sm:h-6 text-[#7cb983] flex-shrink-0" />
                   <div className="text-gray-700 text-sm sm:text-base">Conference presentations and international exposure</div>
                 </div>
               </div>
@@ -129,7 +130,7 @@ export default function AcademicPrograms() {
             <Link href="/academics/details-of-academic-programs/mds/periodontics" className="bg-white rounded-lg sm:rounded-xl p-4 sm:p-5 md:p-6 shadow-md hover:shadow-lg transition-shadow duration-300 cursor-pointer">
               <div className="flex items-start gap-3 sm:gap-4">
                 <div className="w-10 h-10 sm:w-12 sm:h-12 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <span className="text-xl sm:text-2xl">🌿</span>
+                  <Leaf className="w-5 h-5 sm:w-6 sm:h-6 text-green-600" />
                 </div>
                 <div>
                   <h4 className="text-base sm:text-lg font-bold text-[#006837] mb-1">Periodontics</h4>
@@ -142,7 +143,7 @@ export default function AcademicPrograms() {
             <Link href="/academics/details-of-academic-programs/mds/orthodontics-and-dentofacial-orthopedics" className="bg-white rounded-lg sm:rounded-xl p-4 sm:p-5 md:p-6 shadow-md hover:shadow-lg transition-shadow duration-300 cursor-pointer">
               <div className="flex items-start gap-3 sm:gap-4">
                 <div className="w-10 h-10 sm:w-12 sm:h-12 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <span className="text-xl sm:text-2xl">🦷</span>
+                  <Circle className="w-5 h-5 sm:w-6 sm:h-6 text-purple-600" />
                 </div>
                 <div>
                   <h4 className="text-base sm:text-lg font-bold text-[#006837] mb-1">Orthodontics</h4>
@@ -155,7 +156,7 @@ export default function AcademicPrograms() {
             <Link href="/academics/details-of-academic-programs/mds/prosthodontics-crown-and-bridge" className="bg-white rounded-lg sm:rounded-xl p-4 sm:p-5 md:p-6 shadow-md hover:shadow-lg transition-shadow duration-300 cursor-pointer">
               <div className="flex items-start gap-3 sm:gap-4">
                 <div className="w-10 h-10 sm:w-12 sm:h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <span className="text-xl sm:text-2xl">🔧</span>
+                  <Wrench className="w-5 h-5 sm:w-6 sm:h-6 text-blue-600" />
                 </div>
                 <div>
                   <h4 className="text-base sm:text-lg font-bold text-[#006837] mb-1">Prosthodontics</h4>
@@ -168,7 +169,7 @@ export default function AcademicPrograms() {
             <Link href="/academics/details-of-academic-programs/mds/conservative-dentistry-and-endodontics" className="bg-white rounded-lg sm:rounded-xl p-4 sm:p-5 md:p-6 shadow-md hover:shadow-lg transition-shadow duration-300 cursor-pointer">
               <div className="flex items-start gap-3 sm:gap-4">
                 <div className="w-10 h-10 sm:w-12 sm:h-12 bg-red-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <span className="text-xl sm:text-2xl">💊</span>
+                  <Pill className="w-5 h-5 sm:w-6 sm:h-6 text-red-600" />
                 </div>
                 <div>
                   <h4 className="text-base sm:text-lg font-bold text-[#006837] mb-1">Endodontics</h4>
@@ -181,7 +182,7 @@ export default function AcademicPrograms() {
             <Link href="/academics/details-of-academic-programs/mds/oral-medicine" className="bg-white rounded-lg sm:rounded-xl p-4 sm:p-5 md:p-6 shadow-md hover:shadow-lg transition-shadow duration-300 cursor-pointer">
               <div className="flex items-start gap-3 sm:gap-4">
                 <div className="w-10 h-10 sm:w-12 sm:h-12 bg-indigo-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <span className="text-xl sm:text-2xl">🔬</span>
+                  <Microscope className="w-5 h-5 sm:w-6 sm:h-6 text-indigo-600" />
                 </div>
                 <div>
                   <h4 className="text-base sm:text-lg font-bold text-[#006837] mb-1">Oral Medicine</h4>

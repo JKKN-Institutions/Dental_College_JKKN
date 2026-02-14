@@ -1,6 +1,13 @@
+import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+
+export const metadata: Metadata = {
+  title: 'Mentoring Committee | JKKN Dental College',
+  description: 'Providing guidance, support, and mentorship to students and faculty. Fostering personal development and academic excellence.',
+  keywords: 'mentoring committee, student mentorship, faculty guidance, personal development, academic support, JKKN dental college, mentor program',
+};
 
 export default function MentoringCommittee() {
   return (

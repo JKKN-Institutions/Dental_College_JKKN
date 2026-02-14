@@ -1,6 +1,13 @@
+import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+
+export const metadata: Metadata = {
+  title: 'Nattraja Incubation Forum (NIF) | JKKN Dental College',
+  description: 'India\'s pioneering bioconvergence incubation center fostering healthcare innovation, startups, and research excellence at JKKN.',
+  keywords: 'Nattraja Incubation Forum, NIF, bioconvergence incubation, healthcare innovation, startup incubation, dental technology, JKKN research'
+};
 
 export default function IncubationCenter() {
   return (

@@ -1,6 +1,13 @@
+import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+
+export const metadata: Metadata = {
+  title: 'Physical Infrastructure and Purchase & Maintenance Committee | JKKN Dental College',
+  description: 'Managing campus infrastructure, maintenance, and upgrades. Ensuring modern, safe, and functional facilities for quality education.',
+  keywords: 'infrastructure committee, campus maintenance, facility management, building upgrades, JKKN dental college, campus facilities',
+};
 
 export default function PhysicalInfrastructureCommittee() {
   return (

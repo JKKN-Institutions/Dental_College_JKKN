@@ -1,7 +1,14 @@
+import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import Image from 'next/image';
+
+export const metadata: Metadata = {
+  title: 'Digital Classrooms - Smart Technology at JKKN Dental College',
+  description: 'JKKN digital classrooms feature smart TVs, AI tools, design thinking integration, high-speed connectivity, and interactive learning for enhanced dental education.',
+  keywords: 'digital classroom JKKN, smart classroom dental college, AI-powered education, interactive learning, multimedia projectors, educational technology, modern classroom facilities',
+};
 
 export default function DigitalClassRoom() {
   return (

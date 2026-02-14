@@ -1,6 +1,13 @@
+import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+
+export const metadata: Metadata = {
+  title: 'Student Council | JKKN Dental College',
+  description: 'Student representatives fostering campus life, organizing events, and bridging students with administration at JKKN Dental College.',
+  keywords: 'student council, student representatives, campus events, student leadership, student activities, JKKN dental college, student body',
+};
 
 export default function StudentCouncil() {
   return (

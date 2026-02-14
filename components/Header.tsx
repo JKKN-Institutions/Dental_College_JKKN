@@ -49,7 +49,7 @@ export default function Header() {
     >
       {item.submenu ? (
         <button
-          className="text-black hover:text-primary font-semibold text-[11px] lg:text-[12px] xl:text-[13px] px-2 lg:px-2.5 xl:px-3 py-2 transition-colors whitespace-nowrap flex items-center gap-1"
+          className="text-black hover:text-primary font-semibold text-[11px] xl:text-[12px] 2xl:text-[13px] px-1.5 xl:px-2.5 2xl:px-3 py-2 transition-colors whitespace-nowrap flex items-center gap-1"
         >
           {item.label}
           <svg className="w-2.5 h-2.5 lg:w-3 lg:h-3 fill-current" viewBox="0 0 12 12">
@@ -59,7 +59,7 @@ export default function Header() {
       ) : (
         <Link
           href={item.href}
-          className="text-black hover:text-primary font-semibold text-[11px] lg:text-[12px] xl:text-[13px] px-2 lg:px-2.5 xl:px-3 py-2 transition-colors whitespace-nowrap flex items-center gap-1"
+          className="text-black hover:text-primary font-semibold text-[11px] xl:text-[12px] 2xl:text-[13px] px-1.5 xl:px-2.5 2xl:px-3 py-2 transition-colors whitespace-nowrap flex items-center gap-1"
         >
           {item.label}
         </Link>
@@ -159,7 +159,7 @@ export default function Header() {
       <div className="hidden lg:block">
         <div className="w-full">
           <div className="max-w-[1600px] mx-auto px-4 lg:px-6 xl:px-8 py-2">
-            <div className="flex items-center gap-1 xl:gap-2">
+            <div className="flex items-center gap-0.5 xl:gap-1 2xl:gap-2">
               {/* Logo - Left Side (spans both rows) */}
               <Link href="/" className="flex items-center gap-2 flex-shrink-0">
                 <Image
@@ -175,12 +175,12 @@ export default function Header() {
               {/* Navigation Rows Container */}
               <div className="flex-1 flex flex-col gap-0">
                 {/* Top Navigation Row */}
-                <div className="flex items-center justify-center gap-0.5 xl:gap-1">
+                <div className="flex items-center justify-center gap-0 xl:gap-0.5 2xl:gap-1">
                   {topMenuItems.map((item) => renderMenuItem(item))}
                 </div>
 
                 {/* Bottom Navigation Row */}
-                <div className="flex items-center justify-center gap-0.5 xl:gap-1">
+                <div className="flex items-center justify-center gap-0 xl:gap-0.5 2xl:gap-1">
                   {bottomMenuItems.map((item) => renderMenuItem(item))}
                 </div>
               </div>
@@ -189,7 +189,7 @@ export default function Header() {
               <div className="flex items-center flex-shrink-0">
                 <Link
                   href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8"
-                  className="bg-primary text-white px-6 py-2.5 rounded-md font-semibold hover:opacity-90 transition-opacity min-h-[44px] flex items-center justify-center"
+                  className="bg-primary text-white px-3 xl:px-4 2xl:px-6 py-1.5 xl:py-2 2xl:py-2.5 rounded-md font-semibold hover:opacity-90 transition-opacity min-h-[44px] flex items-center justify-center text-sm xl:text-sm 2xl:text-base whitespace-nowrap"
                 >
                   Apply Now
                 </Link>

@@ -1,7 +1,14 @@
+import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import Image from 'next/image';
+
+export const metadata: Metadata = {
+  title: 'Campus Food Court - Diverse Cuisine at JKKN Dental College',
+  description: 'JKKN food court offers diverse, healthy, affordable meals with sustainable practices, quality ingredients, and a vibrant social hub for students and faculty.',
+  keywords: 'JKKN food court, campus cafeteria, student dining, healthy food options, affordable meals, sustainable dining, college canteen, nutritious food',
+};
 
 export default function FoodCourt() {
   return (

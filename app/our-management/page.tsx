@@ -13,16 +13,19 @@ export default function OurManagement() {
       {/* Management Section */}
       <section className="bg-[#FBF8F3] pt-16 pb-16 px-4">
         <div className="max-w-7xl mx-auto">
+      
+
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
             {/* Chairperson */}
             <div className="flex flex-col items-center">
               {/* Framed Portrait */}
-              <div className="relative w-[280px] h-[280px] md:w-[320px] md:h-[320px] mb-8">
+              <div className="w-[280px] h-[280px] md:w-[320px] md:h-[320px] mb-8">
                 <Image
                   src="/images/Our_Management-1.webp"
                   alt="Smt.N.Sendamaraai"
-                  fill
-                  className="object-contain"
+                  width={320}
+                  height={320}
+                  className="w-full h-full object-contain"
                   priority
                 />
               </div>
@@ -51,12 +54,13 @@ export default function OurManagement() {
             {/* Director */}
             <div className="flex flex-col items-center">
               {/* Framed Portrait */}
-              <div className="relative w-[280px] h-[280px] md:w-[320px] md:h-[320px] mb-8">
+              <div className="w-[280px] h-[280px] md:w-[320px] md:h-[320px] mb-8">
                 <Image
                   src="/images/Our_Management-2.webp"
                   alt="Mr.S.Ommsharravana"
-                  fill
-                  className="object-contain"
+                  width={320}
+                  height={320}
+                  className="w-full h-full object-contain"
                   priority
                 />
               </div>

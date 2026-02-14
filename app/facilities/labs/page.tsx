@@ -2,6 +2,13 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import Image from 'next/image';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Laboratory Facilities | Modern Dental Labs | JKKN Dental',
+  description: 'State-of-the-art dental laboratories at JKKN Dental College with advanced equipment for preclinical training, research, and hands-on learning in all dental specialties.',
+  keywords: 'dental labs, laboratory facilities, preclinical labs, dental equipment, dental training labs',
+};
 
 export default function Labs() {
   return (

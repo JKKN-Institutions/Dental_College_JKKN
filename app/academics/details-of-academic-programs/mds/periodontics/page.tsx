@@ -5,11 +5,106 @@ import Image from 'next/image';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+import StructuredData from '@/components/StructuredData';
+import Breadcrumb from '@/components/Breadcrumb';
 
 export default function MDSPeriodontics() {
+  // Course Schema for MDS Periodontics
+  const courseSchema = {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    "name": "MDS Periodontics",
+    "description": "Advance your dental career with our comprehensive 3-year postgraduate program. Master periodontal surgery, dental implantology, regenerative therapy, and gum disease management at one of Tamil Nadu's premier dental institutions.",
+    "provider": {
+      "@type": "CollegeOrUniversity",
+      "name": "JKKN Dental College & Hospital",
+      "url": "https://dental.jkkn.ac.in"
+    },
+    "courseCode": "MDS-PERIO",
+    "educationalCredentialAwarded": "Master of Dental Surgery in Periodontics",
+    "timeRequired": "P3Y",
+    "hasCourseInstance": {
+      "@type": "CourseInstance",
+      "courseMode": "Full-time",
+      "duration": "P3Y"
+    }
+  };
+
+  // FAQ Schema for MDS Periodontics
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the duration of the MDS Periodontics program?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The MDS in Periodontics is a 3-year full-time postgraduate program. It includes theoretical coursework, clinical training in periodontal surgeries and implant placement, and a mandatory dissertation that Learners must complete before graduation."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the admission process for MDS Periodontics?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Admission is based on NEET MDS scores. Candidates must qualify the national entrance exam and participate in state/institutional counseling. The selection is merit-based according to the marks obtained and seat availability."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does the program include dental implant training?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, comprehensive dental implant training is a core component of the MDS Periodontics curriculum. Learners receive hands-on training in implant planning, surgical placement, bone grafting, and prosthetic integration under expert supervision."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is hostel accommodation available for postgraduate Learners?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, we provide separate hostel facilities for male and female postgraduate Learners. The hostels are equipped with modern amenities including Wi-Fi, 24/7 security, mess facility, and recreational areas."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What are the career prospects after completing MDS Periodontics?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Graduates can pursue private practice specializing in periodontics and implants, academic positions in dental colleges, hospital consultancy, research careers, or join the armed forces dental corps. The growing demand for implant dentistry offers excellent career opportunities."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does the college provide placement assistance?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, our dedicated placement cell provides comprehensive career guidance and placement assistance. We maintain strong relationships with dental hospitals, implant companies, corporate chains, and academic institutions for employment opportunities."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What clinical exposure will I get during the program?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Our 150-bed dental hospital provides extensive clinical exposure. You'll handle diverse cases including scaling and root planing, flap surgeries, bone grafting, implant placement, periodontal plastic surgeries, and management of peri-implant diseases under expert supervision."
+        }
+      }
+    ]
+  };
+
   return (
     <main className="overflow-x-hidden">
+      <StructuredData data={courseSchema} />
+      <StructuredData data={faqSchema} />
       <Header />
+      <Breadcrumb items={[
+        { name: 'Home', url: 'https://dental.jkkn.ac.in' },
+        { name: 'Academics', url: 'https://dental.jkkn.ac.in/academics' },
+        { name: 'MDS Programs', url: 'https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds' },
+        { name: 'Periodontics', url: 'https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/periodontics' },
+      ]} />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-[#006837] to-[#7cb983] py-20 px-4 overflow-hidden">
@@ -61,11 +156,14 @@ export default function MDSPeriodontics() {
             <div className="relative">
               <div className="relative rounded-2xl border-4 border-white/20 overflow-hidden">
                 <Image
-                  src="/images/MDS-Periodontics-hero.png"
+                  src="/images/MDS-Periodontics-hero.webp"
                   alt="Periodontics Lab"
                   width={600}
                   height={400}
                   className="w-full h-auto object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  quality={85}
+                  priority
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex flex-col justify-end p-4 sm:p-6">
                   <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white text-center mb-4">Periodontics Lab</h2>
@@ -142,7 +240,7 @@ export default function MDSPeriodontics() {
               </div>
               <div>
                 <div className="text-xs text-gray-500 uppercase font-semibold mb-1">Location</div>
-                <div className="text-lg font-bold text-gray-800">Kumarapalayam, Tamil Nadu</div>
+                <div className="text-lg font-bold text-gray-800">Komarapalayam, Tamil Nadu</div>
               </div>
             </div>
           </div>
@@ -230,10 +328,12 @@ export default function MDSPeriodontics() {
             <div className="relative">
               <div className="relative rounded-3xl overflow-hidden min-h-[400px]">
                 <Image
-                  src="/images/MDS-Periodontics-surgery-image.png"
+                  src="/images/MDS-Periodontics-surgery-image.webp"
                   alt="Periodontal Surgery"
                   fill
                   className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  quality={80}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end justify-center pb-12">
                   <h3 className="text-2xl md:text-4xl font-bold text-white text-center">Periodontal Surgery</h3>

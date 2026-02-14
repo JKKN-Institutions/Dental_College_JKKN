@@ -1,10 +1,43 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+import StructuredData from '@/components/StructuredData';
+import {
+  generatePageMetadata,
+  generateBreadcrumbSchema,
+  generateWebPageSchema,
+  generateAboutPageSchema
+} from '@/lib/metadata';
+
+export const metadata = generatePageMetadata({
+  title: 'Vision & Mission | JKKN Dental College Strategic Goals',
+  description: 'Discover JKKN Dental College vision and mission. Leading global innovator in dental education, research, and clinical skill development. Learn about our commitment to excellence.',
+  keywords: 'vision mission, dental college goals, JKKN vision, dental education mission, strategic goals',
+  canonicalPath: '/about/vision-and-mission',
+  datePublished: '2024-01-15',
+  dateModified: '2025-02-13'
+});
 
 export default function VisionAndMission() {
+  // Generate structured data for this page
+  const breadcrumbSchema = generateBreadcrumbSchema('/about/vision-and-mission');
+  const webPageSchema = generateWebPageSchema({
+    title: 'Vision & Mission - JKKN Dental College',
+    description: 'Our vision to be a leading global innovative solution provider and mission to help learners become great dentists through top-quality education, research, and clinical skill development.',
+    url: 'https://dental.jkkn.ac.in/about/vision-and-mission',
+    datePublished: '2024-01-15',
+    dateModified: '2025-02-13'
+  });
+  const aboutPageSchema = generateAboutPageSchema({
+    title: 'Vision & Mission - JKKN Dental College',
+    description: 'Our vision and mission statement outlining our commitment to innovation, education, and dental healthcare excellence.'
+  });
+
   return (
     <main className="overflow-x-hidden w-full">
+      <StructuredData data={breadcrumbSchema} />
+      <StructuredData data={webPageSchema} />
+      <StructuredData data={aboutPageSchema} />
       <Header />
 
       {/* Page Content */}

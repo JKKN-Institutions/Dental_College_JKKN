@@ -1,6 +1,13 @@
+import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+
+export const metadata: Metadata = {
+  title: 'Webinars and Conferences Attended - JKKN Dental College',
+  description: 'Explore webinars and conferences attended by JKKN faculty. Staying updated with latest dental research and innovations for quality education. View list.',
+  keywords: 'webinars attended, dental conferences, faculty achievements, continuing education, dental research, professional development, academic conferences',
+};
 
 export default function WebinarConferencesAttended() {
   return (

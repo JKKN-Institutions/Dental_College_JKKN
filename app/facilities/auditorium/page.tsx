@@ -1,7 +1,14 @@
+import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import Image from 'next/image';
+
+export const metadata: Metadata = {
+  title: 'State-of-the-Art Auditorium - JKKN Dental College Campus Facility',
+  description: 'JKKN auditorium features advanced AV technology, superior acoustics, unobstructed seating, and customized lighting for lectures and cultural performances.',
+  keywords: 'JKKN auditorium, dental college auditorium, campus auditorium facility, state-of-the-art auditorium, event venue JKKN, cultural performances, academic lectures',
+};
 
 export default function Auditorium() {
   return (

@@ -1,6 +1,13 @@
+import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+
+export const metadata: Metadata = {
+  title: 'Finance Committee | JKKN Dental College',
+  description: 'Managing financial operations and oversight at JKKN Dental College. View committee members and their responsibilities.',
+  keywords: 'finance committee, financial management, budget oversight, college finance, committee members, JKKN dental college, financial operations',
+};
 
 export default function FinanceCommittee() {
   return (

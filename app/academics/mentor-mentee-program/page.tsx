@@ -1,6 +1,13 @@
+import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+
+export const metadata: Metadata = {
+  title: 'Mentor-Mentee Program - JKKN Dental College',
+  description: 'Discover our supportive mentor-mentee program at JKKN Dental College. Personalized guidance for academic and professional excellence. Join now.',
+  keywords: 'mentor-mentee program, student mentorship, academic guidance, professional development, student support, JKKN mentoring, faculty-student relationship',
+};
 
 export default function MentorMenteeProgram() {
   return (

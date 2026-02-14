@@ -1,6 +1,13 @@
+import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+
+export const metadata: Metadata = {
+  title: 'Examination Committee | JKKN Dental College',
+  description: 'Overseeing fair and smooth conduct of examinations. Formulating policies, designing question papers, and ensuring credible assessments.',
+  keywords: 'examination committee, exam policies, question papers, fair examination, result evaluation, JKKN dental college, academic assessment',
+};
 
 export default function ExaminationCommittee() {
   return (
@@ -8,7 +15,7 @@ export default function ExaminationCommittee() {
       <Header />
 
       {/* Page Content */}
-      <div className="bg-white py-12 px-4">
+      <div className="bg-[#FBFBEE] py-12 px-4">
         <div className="max-w-6xl mx-auto">
 
           {/* Page Title */}

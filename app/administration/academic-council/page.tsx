@@ -1,6 +1,13 @@
+import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+
+export const metadata: Metadata = {
+  title: 'Academic Council | JKKN Dental College',
+  description: 'Learn about the Academic Council at JKKN Dental College, dedicated to shaping curriculum, promoting research, and enhancing dental education.',
+  keywords: 'Academic Council, JKKN Dental College, dental curriculum, dental education, faculty development, DCI guidelines, teaching methodology',
+};
 
 export default function AcademicCouncil() {
   return (

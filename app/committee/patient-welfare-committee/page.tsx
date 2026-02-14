@@ -1,6 +1,13 @@
+import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+
+export const metadata: Metadata = {
+  title: 'Patient Welfare Committee | JKKN Dental College',
+  description: 'Ensuring quality patient care and welfare at JKKN Dental Hospital. View committee members dedicated to patient rights and safety.',
+  keywords: 'patient welfare committee, patient care, patient rights, hospital welfare, dental hospital, JKKN dental college, healthcare quality',
+};
 
 export default function PatientWelfareCommittee() {
   return (

@@ -1,7 +1,14 @@
+import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import Image from 'next/image';
+
+export const metadata: Metadata = {
+  title: 'Boys Hostel - Comfortable Accommodation at JKKN Dental College',
+  description: 'JKKN boys hostel offers spacious rooms, high-speed internet, 24/7 security, study-focused ambiance, and modern amenities just 5 minutes from campus.',
+  keywords: 'boys hostel JKKN, dental college hostel, student accommodation, hostel facilities, on-campus housing, AC rooms, safe hostel, boys dormitory',
+};
 
 export default function BoysHostel() {
   return (
@@ -11,6 +18,10 @@ export default function BoysHostel() {
       {/* Page Content */}
       <div className="bg-[#FBF8F3] py-12 px-4">
         <div className="max-w-6xl mx-auto">
+           {/* Main Heading */}
+           <h1 className="text-4xl md:text-5xl font-bold text-[#1B5E20] mb-8">
+            Boys Hostel
+          </h1>
           {/* Image Gallery - 3 Images */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
             {/* Image 1 */}

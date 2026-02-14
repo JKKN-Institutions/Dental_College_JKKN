@@ -1,6 +1,14 @@
+import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+import { Check } from 'lucide-react';
+
+export const metadata: Metadata = {
+  title: 'Right to Information (RTI) - JKKN Dental College',
+  description: 'Access RTI information at JKKN Dental College & Hospital. Learn how to file RTI applications and contact CPIO for transparency and accountability.',
+  keywords: 'RTI JKKN dental, right to information, RTI Act 2005, CPIO contact, RTI application, transparency, public information officer, UGC guidelines, RTI online, information access',
+};
 
 export default function RightToInformation() {
   return (
@@ -49,12 +57,12 @@ export default function RightToInformation() {
               As per UGC guidelines, the following information is accessible under RTI:
             </p>
             <div className="text-base leading-relaxed text-black space-y-2 ml-4">
-              <p>✓ Institutional Details – Vision, mission, organizational structure, and accreditation status.</p>
-              <p>✓ Academic Information – Courses offered, faculty details, admission procedures, and academic regulations.</p>
-              <p>✓ Financial Transparency – Fees structure, scholarships, grants, and financial statements.</p>
-              <p>✓ Administrative Policies – Rules, regulations, recruitment policies, and decision-making processes.</p>
-              <p>✓ Research &amp; Development – Ongoing projects, publications, and collaborations.</p>
-              <p>✓ Hospital Services – Healthcare facilities, patient services, and public health initiatives.</p>
+              <p className="flex items-start gap-2"><Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-1" />Institutional Details – Vision, mission, organizational structure, and accreditation status.</p>
+              <p className="flex items-start gap-2"><Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-1" />Academic Information – Courses offered, faculty details, admission procedures, and academic regulations.</p>
+              <p className="flex items-start gap-2"><Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-1" />Financial Transparency – Fees structure, scholarships, grants, and financial statements.</p>
+              <p className="flex items-start gap-2"><Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-1" />Administrative Policies – Rules, regulations, recruitment policies, and decision-making processes.</p>
+              <p className="flex items-start gap-2"><Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-1" />Research &amp; Development – Ongoing projects, publications, and collaborations.</p>
+              <p className="flex items-start gap-2"><Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-1" />Hospital Services – Healthcare facilities, patient services, and public health initiatives.</p>
             </div>
           </div>
 

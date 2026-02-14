@@ -2,6 +2,13 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import Image from 'next/image';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Library Facilities | Digital Library | JKKN Dental College',
+  description: 'JKKN Dental College library offers extensive collection of dental textbooks, journals, research papers, e-resources, and digital library facilities for students and faculty.',
+  keywords: 'dental library, digital library, dental textbooks, research journals, e-library, dental resources',
+};
 
 export default function Library() {
   return (

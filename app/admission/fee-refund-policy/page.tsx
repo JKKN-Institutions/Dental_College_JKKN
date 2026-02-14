@@ -1,6 +1,13 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Fee Refund Policy | JKKN Dental College Admission Fee Refund',
+  description: 'JKKN Dental College fee refund policy for BDS and MDS admissions. Understand refund rules, timelines, and procedures as per UGC guidelines.',
+  keywords: 'fee refund policy, admission refund, fee structure, refund rules, UGC refund policy',
+};
 
 export default function FeeRefundPolicy() {
   return (
@@ -138,7 +145,7 @@ export default function FeeRefundPolicy() {
 
           {/* Contact Information */}
           <div className="text-gray-700 mb-6 space-y-1">
-            <p><strong>Phone: +(91) 93458 55001</strong></p>
+            <p><strong>Phone: +91 93458 55001</strong></p>
             <p><strong>Email: [dental@jkkn.ac.in]</strong></p>
           </div>
 

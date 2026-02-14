@@ -5,6 +5,7 @@ import { useRouter } from 'next/navigation';
 
 interface PdfRedirectProps {
   pdfUrl: string;
+  heading?: string;
 }
 
 /**
@@ -17,7 +18,7 @@ interface PdfRedirectProps {
  * Solution: This component uses sessionStorage to detect if the user is returning from a PDF.
  * If so, it navigates them back to the previous page in their history instead of redirecting again.
  */
-export function PdfRedirect({ pdfUrl }: PdfRedirectProps) {
+export function PdfRedirect({ pdfUrl, heading }: PdfRedirectProps) {
   const router = useRouter();
 
   useEffect(() => {
@@ -47,6 +48,13 @@ export function PdfRedirect({ pdfUrl }: PdfRedirectProps) {
     window.location.replace(pdfUrl);
   }, [pdfUrl, router]);
 
-  // Return null while redirecting - this is only briefly visible
-  return null;
+  // Return a loading page with H1 for SEO while redirecting
+  return (
+    <div className="min-h-screen flex items-center justify-center bg-[#FBF8F3]">
+      <div className="text-center">
+        {heading && <h1 className="text-3xl md:text-4xl font-bold text-black mb-4">{heading}</h1>}
+        <p className="text-gray-600">Loading document...</p>
+      </div>
+    </div>
+  );
 }

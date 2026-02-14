@@ -1,7 +1,14 @@
+import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import Image from 'next/image';
+
+export const metadata: Metadata = {
+  title: 'Wi-Fi Campus - High-Speed Internet at JKKN Dental College',
+  description: 'JKKN campus offers high-speed WiFi coverage in lecture halls, libraries, labs, and outdoor spaces with multi-layered security and reliable connectivity.',
+  keywords: 'WiFi campus JKKN, high-speed internet dental college, campus connectivity, wireless network, secure WiFi, free campus internet, student WiFi access',
+};
 
 export default function WiFiCampus() {
   return (

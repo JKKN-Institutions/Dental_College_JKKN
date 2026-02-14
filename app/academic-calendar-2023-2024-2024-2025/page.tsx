@@ -1,3 +1,11 @@
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Academic Calendar 2023-24 & 2024-25 | JKKN Dental College',
+  description: 'View JKKN Dental College academic calendar 2023-24 & 2024-25. Check exam dates, holidays, events & important academic schedules. Plan your academic year effectively.',
+  keywords: 'academic calendar, college calendar 2023-24, exam schedule, academic year, important dates',
+};
+
 export default function AcademicCalendar() {
   return (
     <div className="fixed inset-0 w-full h-full">

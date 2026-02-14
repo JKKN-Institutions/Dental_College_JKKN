@@ -1,6 +1,13 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Institutional Development Plan | JKKN Dental College IDP',
+  description: 'View JKKN Dental College IDP aligned with NEP 2020, UGC guidelines & SDGs. Strategic goals for academic excellence, research & community health. Download IDP document.',
+  keywords: 'institutional development plan, IDP, NEP 2020, UGC guidelines, strategic planning',
+};
 
 export default function InstitutionalDevelopmentPlan() {
   return (
@@ -26,7 +33,7 @@ export default function InstitutionalDevelopmentPlan() {
           </h3>
 
           <p className="text-gray-700 mb-6 leading-relaxed text-justify">
-            At <strong>JKKN Dental College and Hospital</strong>, we are deeply committed to holistic institutional growth guided by the University Grants Commission (UGC) framework for Institutional Development Plans (IDPs). Our IDP is designed to reflect the principles of NEP 2020, ensuring academic innovation, community engagement, digital transformation, and sustainable development.
+            At <strong>JKKN Dental College & Hospital</strong>, we are deeply committed to holistic institutional growth guided by the University Grants Commission (UGC) framework for Institutional Development Plans (IDPs). Our IDP is designed to reflect the principles of NEP 2020, ensuring academic innovation, community engagement, digital transformation, and sustainable development.
           </p>
 
           <p className="text-gray-700 font-bold mb-4">
@@ -111,7 +118,7 @@ export default function InstitutionalDevelopmentPlan() {
           <div className="text-gray-700 space-y-1 mb-6">
             <p><strong>Email:</strong> dental@jkkn.ac.in</p>
             <p><strong>Phone:</strong> +91 93458 55001</p>
-            <p><strong>Office:</strong> Principal's Office, JKKN Dental College and Hospital</p>
+            <p><strong>Office:</strong> Principal's Office, JKKN Dental College & Hospital</p>
           </div>
         </div>
       </div>

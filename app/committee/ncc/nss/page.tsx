@@ -1,6 +1,13 @@
+import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+
+export const metadata: Metadata = {
+  title: 'NCC/NSS - National Service Scheme | JKKN Dental College',
+  description: 'NSS unit instilling social responsibility through community service, dental camps, health awareness drives, and sustainability projects.',
+  keywords: 'NSS, national service scheme, community service, social responsibility, dental camps, health awareness, JKKN dental college',
+};
 
 export default function NCCNSSPage() {
   return (

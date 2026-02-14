@@ -5,11 +5,98 @@ import Image from 'next/image';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+import StructuredData from '@/components/StructuredData';
+import Breadcrumb from '@/components/Breadcrumb';
 
 export default function MDSOralMedicine() {
+  // Course Schema for MDS Oral Medicine & Radiology
+  const courseSchema = {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    "name": "MDS Oral Medicine & Radiology",
+    "description": "Become a diagnostic expert with our advanced 3-year postgraduate program. Master oral diagnosis, dental imaging, CBCT interpretation, and management of oral manifestations of systemic diseases at one of Tamil Nadu's premier dental institutions.",
+    "provider": {
+      "@type": "CollegeOrUniversity",
+      "name": "JKKN Dental College & Hospital",
+      "url": "https://dental.jkkn.ac.in"
+    },
+    "courseCode": "MDS-OMR",
+    "educationalCredentialAwarded": "Master of Dental Surgery in Oral Medicine & Radiology",
+    "timeRequired": "P3Y",
+    "hasCourseInstance": {
+      "@type": "CourseInstance",
+      "courseMode": "Full-time",
+      "duration": "P3Y"
+    }
+  };
+
+  // FAQ Schema for MDS Oral Medicine & Radiology
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the duration of the MDS Oral Medicine & Radiology program?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The MDS in Oral Medicine and Radiology is a 3-year full-time postgraduate program that includes theoretical coursework, extensive clinical training in diagnosis and imaging, and a mandatory dissertation."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What imaging modalities will I learn during the program?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The program covers comprehensive training in intraoral radiography, panoramic imaging, cephalometry, CBCT (Cone Beam CT), MRI interpretation for TMJ and head & neck, digital imaging, and emerging AI-assisted diagnostic tools."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the admission process for MDS?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Admission is based on NEET MDS scores. Candidates must qualify the national entrance exam and participate in state/institutional counseling. Tamil Nadu state counseling is conducted by the Selection Committee for admission to government and self-financing colleges."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What career opportunities are available after completing MDS Oral Medicine & Radiology?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Graduates can pursue private practice, academic positions, hospital consultancy, diagnostic center roles, forensic odontology, research careers, or join armed forces dental corps. The specialty is in high demand with growing imaging centers and cancer screening programs."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is there stipend provided during the MDS program?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, postgraduate Learners receive a monthly stipend as per university and institutional norms. The stipend amount varies based on the year of study and is revised periodically. Contact the admissions office for current stipend details."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What makes JKKN's Oral Medicine & Radiology department unique?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Our department features state-of-the-art CBCT and digital imaging equipment, experienced Learning Facilitators with international exposure, strong research culture with publications in indexed journals, hospital attachments for comprehensive clinical experience, and excellent placement record."
+        }
+      }
+    ]
+  };
+
   return (
     <main className="overflow-x-hidden">
+      <StructuredData data={courseSchema} />
+      <StructuredData data={faqSchema} />
       <Header />
+      <Breadcrumb items={[
+        { name: 'Home', url: 'https://dental.jkkn.ac.in' },
+        { name: 'Academics', url: 'https://dental.jkkn.ac.in/academics' },
+        { name: 'MDS Programs', url: 'https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds' },
+        { name: 'Oral Medicine & Radiology', url: 'https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/oral-medicine' },
+      ]} />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-[#006837] to-[#7cb983] py-20 px-4 overflow-hidden">
@@ -35,7 +122,7 @@ export default function MDSOralMedicine() {
 
               {/* Heading */}
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-                MDS Oral Medicine &<br />
+                MDS Oral Medicine & <br />
                 <span className="text-[#7cb983]">Radiology</span>
               </h1>
 
@@ -62,10 +149,13 @@ export default function MDSOralMedicine() {
             <div className="relative">
               <div className="bg-gradient-to-br from-[#006837] to-[#002309] rounded-2xl border-4 border-white/20 overflow-hidden relative min-h-[400px] md:min-h-[450px]">
                 <Image
-                  src="/images/MDS-Oral-Medicine-&-Radiology-banner-Image.png"
+                  src="/images/MDS-Oral-Medicine-&-Radiology-banner-Image.webp"
                   alt="Radiology Lab"
                   fill
                   className="object-cover object-right"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  quality={85}
+                  priority
                 />
 
                 {/* Stats Badges */}
@@ -141,7 +231,7 @@ export default function MDSOralMedicine() {
               </div>
               <div>
                 <div className="text-xs text-gray-500 uppercase font-semibold mb-1">Location</div>
-                <div className="text-lg font-bold text-gray-800">Kumarapalayam,<br />Tamil Nadu</div>
+                <div className="text-lg font-bold text-gray-800">Komarapalayam,<br />Tamil Nadu</div>
               </div>
             </div>
           </div>
@@ -215,10 +305,12 @@ export default function MDSOralMedicine() {
             <div className="relative">
               <div className="bg-gradient-to-br from-[#7cb983] to-[#6ba872] rounded-3xl overflow-hidden h-full min-h-[400px]">
                 <Image
-                  src="/images/MDS-Oral-Medicine-&-Radiology-diagonic-lab.png"
+                  src="/images/MDS-Oral-Medicine-&-Radiology-diagonic-lab.webp"
                   alt="Diagnostic Center"
                   fill
                   className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  quality={80}
                 />
               </div>
             </div>

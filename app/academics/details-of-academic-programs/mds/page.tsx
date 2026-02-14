@@ -689,7 +689,7 @@ export default function MDSProgram() {
                 </svg>
               </summary>
               <div className="px-6 pb-6 text-gray-600 leading-relaxed">
-                JKKN Dental College offers 5 DCI-approved MDS specializations: Endodontics (Conservative Dentistry), Prosthodontics (Crown & Bridge), Periodontics (Oral Implantology), Oral Medicine & Radiology, and Orthodontics (Dentofacial Orthopedics). Each program has a total of 23 seats available annually.
+                JKKN Dental College offers 5 DCI-approved MDS specializations: Endodontics (Conservative Dentistry), Prosthodontics (Crown & Bridge), Periodontics (Oral Implantology), Oral Medicine & Radiology, and Orthodontics (Dentofacial Orthopedics). A total of 18 seats are available annually across all specializations.
               </div>
             </details>
 

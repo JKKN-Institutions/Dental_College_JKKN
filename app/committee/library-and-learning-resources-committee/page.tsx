@@ -1,6 +1,13 @@
+import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+
+export const metadata: Metadata = {
+  title: 'Library and Learning Resources Committee | JKKN Dental College',
+  description: 'Managing library resources and learning facilities. View committee members responsible for academic resources and student learning support.',
+  keywords: 'library committee, learning resources, academic library, library management, student resources, JKKN dental college, educational materials',
+};
 
 export default function LibraryAndLearningResourcesCommittee() {
   return (

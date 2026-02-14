@@ -1,6 +1,13 @@
+import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+
+export const metadata: Metadata = {
+  title: 'Research & Development (R&D) Cell | JKKN Dental College',
+  description: 'Promoting innovation, interdisciplinary research, and scientific advancement in dentistry, biomedical sciences, and healthcare excellence.',
+  keywords: 'R&D cell, research development, dental research, scientific innovation, biomedical research, research funding, JKKN Dental College'
+};
 
 export default function ResearchDevelopmentRDCell() {
   return (
@@ -18,7 +25,7 @@ export default function ResearchDevelopmentRDCell() {
 
           {/* Subtitle */}
           <h2 className="text-xl md:text-2xl font-bold text-black mb-4">
-            JKKN Dental College and Hospital
+            JKKN Dental College & Hospital
           </h2>
 
           {/* Second Subtitle */}
@@ -28,7 +35,7 @@ export default function ResearchDevelopmentRDCell() {
 
           {/* Introduction */}
           <p className="text-gray-700 mb-8 leading-relaxed text-justify">
-            At JKKN Dental College and Hospital, research is the driving force behind academic excellence and scientific advancement. Our Research and Development (R&D) Cell is committed to promoting a culture of innovation, interdisciplinary collaboration, and impactful research in dentistry, biomedical sciences, and healthcare. By supporting faculty and student-led research initiatives, the R&D Cell plays a vital role in advancing knowledge, improving patient care, and contributing to global scientific progress.
+            At JKKN Dental College & Hospital, research is the driving force behind academic excellence and scientific advancement. Our Research and Development (R&D) Cell is committed to promoting a culture of innovation, interdisciplinary collaboration, and impactful research in dentistry, biomedical sciences, and healthcare. By supporting faculty and student-led research initiatives, the R&D Cell plays a vital role in advancing knowledge, improving patient care, and contributing to global scientific progress.
           </p>
 
           {/* Objectives Section */}

@@ -5,11 +5,98 @@ import Image from 'next/image';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+import StructuredData from '@/components/StructuredData';
+import Breadcrumb from '@/components/Breadcrumb';
 
 export default function MDSProsthodontics() {
+  // Course Schema for MDS Prosthodontics
+  const courseSchema = {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    "name": "MDS Prosthodontics & Crown and Bridge",
+    "description": "Transform your dental career with our advanced 3-year postgraduate program. Master complete dentures, fixed prosthodontics, implantology, and maxillofacial prosthetics at one of Tamil Nadu's premier dental institutions.",
+    "provider": {
+      "@type": "CollegeOrUniversity",
+      "name": "JKKN Dental College & Hospital",
+      "url": "https://dental.jkkn.ac.in"
+    },
+    "courseCode": "MDS-PROS",
+    "educationalCredentialAwarded": "Master of Dental Surgery in Prosthodontics & Crown and Bridge",
+    "timeRequired": "P3Y",
+    "hasCourseInstance": {
+      "@type": "CourseInstance",
+      "courseMode": "Full-time",
+      "duration": "P3Y"
+    }
+  };
+
+  // FAQ Schema for MDS Prosthodontics
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the duration of the MDS Prosthodontics program?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The MDS in Prosthodontics and Crown and Bridge is a 3-year full-time postgraduate program that includes theoretical coursework, extensive clinical training, laboratory work, and a mandatory dissertation on an approved research topic."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the admission process for MDS Prosthodontics?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Admission is based on NEET MDS scores. Candidates must qualify the national entrance exam and participate in state/institutional counseling. Selection is based on merit ranking, choice of specialty, and availability of seats."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is implant training included in the curriculum?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, comprehensive implant training is an integral part of our MDS Prosthodontics program. Learners receive hands-on training in implant planning, placement, and prosthetic rehabilitation with exposure to the latest implant systems and guided surgery techniques."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What are the career prospects after completing MDS Prosthodontics?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Graduates can pursue private practice specializing in implants and complex rehabilitations, academic positions in dental colleges, hospital consultancy, research careers in dental materials and digital dentistry, or join armed forces dental corps. International practice opportunities are also available."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does the college provide hostel accommodation?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, separate hostel facilities are available for both male and female postgraduate Learners. The hostels are equipped with modern amenities, Wi-Fi connectivity, mess facilities, and 24/7 security. The campus also includes recreational facilities and a gymnasium."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What CAD/CAM and digital technologies are available?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Our department features the latest digital dentistry equipment including intraoral scanners, desktop 3D scanners, CAD software, milling machines, 3D printers, and CBCT imaging. Learners gain comprehensive training in digital workflow from scanning to final prosthesis fabrication."
+        }
+      }
+    ]
+  };
+
   return (
     <main className="overflow-x-hidden">
+      <StructuredData data={courseSchema} />
+      <StructuredData data={faqSchema} />
       <Header />
+      <Breadcrumb items={[
+        { name: 'Home', url: 'https://dental.jkkn.ac.in' },
+        { name: 'Academics', url: 'https://dental.jkkn.ac.in/academics' },
+        { name: 'MDS Programs', url: 'https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds' },
+        { name: 'Prosthodontics & Crown and Bridge', url: 'https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/prosthodontics-crown-and-bridge' },
+      ]} />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-[#006837] to-[#7cb983] py-20 px-4 overflow-hidden">
@@ -61,10 +148,13 @@ export default function MDSProsthodontics() {
             <div className="relative">
               <div className="bg-gradient-to-br from-[#006837] to-[#002309] rounded-2xl border-4 border-white/20 overflow-hidden relative min-h-[400px] md:min-h-[450px]">
                 <Image
-                  src="/images/MDS-Prosthodontics-&-Crown-and-Bridge-banner-image.png"
+                  src="/images/MDS-Prosthodontics-&-Crown-and-Bridge-banner-image.webp"
                   alt="Prosthodontics Lab"
                   fill
                   className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  quality={85}
+                  priority
                 />
 
                 {/* Stats Badges */}
@@ -139,7 +229,7 @@ export default function MDSProsthodontics() {
               </div>
               <div>
                 <div className="text-xs text-gray-500 uppercase font-semibold mb-1">Location</div>
-                <div className="text-lg font-bold text-gray-800">Kumarapalayam, Tamil Nadu</div>
+                <div className="text-lg font-bold text-gray-800">Komarapalayam, Tamil Nadu</div>
               </div>
             </div>
           </div>
@@ -230,10 +320,12 @@ export default function MDSProsthodontics() {
             <div className="relative">
               <div className="bg-gradient-to-br from-[#7cb983] to-[#6ba872] rounded-2xl overflow-hidden h-full min-h-[500px]">
                 <Image
-                  src="/images/MDS-Prosthodontics-&-Crown-and-Bridge-clinical training.png"
+                  src="/images/MDS-Prosthodontics-&-Crown-and-Bridge-clinical training.webp"
                   alt="Clinical Training"
                   fill
                   className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  quality={80}
                 />
               </div>
             </div>

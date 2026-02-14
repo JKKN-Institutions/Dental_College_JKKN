@@ -1,7 +1,14 @@
+import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import Image from 'next/image';
+
+export const metadata: Metadata = {
+  title: 'Sports Club - World-Class Athletic Facilities at JKKN Dental College',
+  description: 'JKKN sports club features 100m track, multipurpose indoor stadium, basketball, tennis, football, wrestling, kabaddi arenas, and state-of-the-art gym equipment.',
+  keywords: 'sports club JKKN, campus sports facilities, athletic center, gym facilities, indoor stadium, basketball court, wrestling arena, kabaddi, student sports',
+};
 
 export default function SportsClub() {
   return (

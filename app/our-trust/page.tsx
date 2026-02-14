@@ -15,19 +15,20 @@ export default function OurTrust() {
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col items-center py-12">
             {/* Framed Portrait */}
-            <div className="relative w-[280px] h-[280px] md:w-[350px] md:h-[350px] mb-8">
+            <div className="w-[280px] h-[280px] md:w-[350px] md:h-[350px] mb-8">
               <Image
                 src="/images/Our_Trust.webp"
-                alt="Shri. J.K.K.Nattarajah"
-                fill
-                className="object-contain"
+                alt="Shri. J.K.K. Nattraja"
+                width={350}
+                height={350}
+                className="w-full h-full object-contain"
                 priority
               />
             </div>
 
             {/* Title */}
             <h1 className="text-3xl md:text-4xl font-bold text-center mb-4 text-gray-900">
-              SHRI. J.K.K.NATTARAJAH
+              SHRI. J.K.K. NATTRAJA
             </h1>
 
             {/* Subtitle */}
@@ -44,7 +45,7 @@ export default function OurTrust() {
           <div className="space-y-6">
             {/* Paragraph 1 */}
             <p className="text-base md:text-lg text-gray-700 leading-relaxed text-justify">
-              In the 1960s, female children in Kumarapalayam had to walk 2.5 km to the nearby town of Bhavani for schooling. Some parents hesitated to send their daughters, while others ceased their children's education altogether, resulting in them staying at home or working in handlooms and dyeing industries. Recognizing the need for women's education, Shri J.K.K. Natarajah, a visionary philanthropist of the area, initiated a girls' school in the town in 1965, four years before the inception of the trust.
+              In the 1960s, female children in Komarapalayam had to walk 2.5 km to the nearby town of Bhavani for schooling. Some parents hesitated to send their daughters, while others ceased their children's education altogether, resulting in them staying at home or working in handlooms and dyeing industries. Recognizing the need for women's education, Shri J.K.K. Nattraja, a visionary philanthropist of the area, initiated a girls' school in the town in 1965, four years before the inception of the trust.
             </p>
 
             {/* Paragraph 2 */}

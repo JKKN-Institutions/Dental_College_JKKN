@@ -1,7 +1,14 @@
+import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import Image from 'next/image';
+
+export const metadata: Metadata = {
+  title: 'Free Ambulance Services - JKKN Dental College 24/7 Emergency Care',
+  description: 'JKKN Institutions offers round-the-clock free ambulance services with expert EMTs and advanced medical equipment for emergency medical transportation.',
+  keywords: 'free ambulance service JKKN, 24/7 emergency ambulance, dental college ambulance, medical emergency transportation, JKKN institutions ambulance, emergency medical care',
+};
 
 export default function AmbulanceServices() {
   return (

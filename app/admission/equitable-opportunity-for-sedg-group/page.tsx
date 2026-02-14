@@ -1,6 +1,13 @@
+import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+
+export const metadata: Metadata = {
+  title: 'Equitable Opportunity for SEDG Group - JKKN Dental College',
+  description: 'JKKN Dental College\'s commitment to inclusive education through equitable access for Socio-Economically Disadvantaged Groups per UGC 2024.',
+  keywords: 'SEDG group, inclusive education, UGC guidelines, reservation policy, SC ST OBC EWS, JKKN Dental College admission, equitable access, NEP 2020',
+};
 
 export default function EquitableOpportunityForSEDGGroup() {
   return (

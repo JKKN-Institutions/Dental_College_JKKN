@@ -1,6 +1,13 @@
+import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+
+export const metadata: Metadata = {
+  title: 'Learning Outcomes - BDS & MDS Programs - JKKN Dental College',
+  description: 'Explore comprehensive learning outcomes for BDS and MDS programs at JKKN Dental College. Quality-focused dental education objectives. Discover more.',
+  keywords: 'learning outcomes, BDS program outcomes, MDS program outcomes, dental education objectives, curriculum outcomes, JKKN academics, program goals',
+};
 
 export default function LearningOutcomes() {
   return (

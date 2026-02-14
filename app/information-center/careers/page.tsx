@@ -1,6 +1,14 @@
+import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+import { Check } from 'lucide-react';
+
+export const metadata: Metadata = {
+  title: 'Careers - Join JKKN Dental College & Hospital',
+  description: 'Explore career opportunities at JKKN Dental College & Hospital. Join our team of excellence in dental education, research, and healthcare.',
+  keywords: 'JKKN dental careers, dental college jobs, faculty positions, dental teaching jobs, healthcare careers, research positions, Namakkal jobs, dental education careers, hospital jobs, academic positions',
+};
 
 export default function Careers() {
   return (
@@ -36,11 +44,11 @@ export default function Careers() {
               Why Work with Us?
             </h3>
             <div className="text-base leading-relaxed text-black space-y-2">
-              <p>✓ Opportunities for Career Growth – Be part of a leading dental institution with access to cutting- edge research and academic excellence.</p>
-              <p>✓ State-of-the-Art Facilities – Work in a technologically advanced environment that supports innovation and excellence in dental healthcare.</p>
-              <p>✓ Collaborative Work Culture – Engage in a vibrant community of educators, researchers, and healthcare professionals.</p>
-              <p>✓ Commitment to Research &amp; Innovation – Contribute to groundbreaking dental research and clinical advancements.</p>
-              <p>✓ Competitive Benefits &amp; Professional Development – Enjoy a rewarding career with ongoing learning opportunities.</p>
+              <p className="flex items-start gap-2"><Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-1" />Opportunities for Career Growth – Be part of a leading dental institution with access to cutting- edge research and academic excellence.</p>
+              <p className="flex items-start gap-2"><Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-1" />State-of-the-Art Facilities – Work in a technologically advanced environment that supports innovation and excellence in dental healthcare.</p>
+              <p className="flex items-start gap-2"><Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-1" />Collaborative Work Culture – Engage in a vibrant community of educators, researchers, and healthcare professionals.</p>
+              <p className="flex items-start gap-2"><Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-1" />Commitment to Research &amp; Innovation – Contribute to groundbreaking dental research and clinical advancements.</p>
+              <p className="flex items-start gap-2"><Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-1" />Competitive Benefits &amp; Professional Development – Enjoy a rewarding career with ongoing learning opportunities.</p>
             </div>
           </div>
 

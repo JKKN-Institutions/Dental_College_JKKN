@@ -1,6 +1,13 @@
+import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+
+export const metadata: Metadata = {
+  title: 'Institutional Ethics Committee (IEC) | JKKN Dental College',
+  description: 'JKKN IEC ensures ethical research standards, protecting participant rights and promoting responsible biomedical research practices.',
+  keywords: 'institutional ethics committee, IEC, research ethics, biomedical research, participant protection, DHR registration, JKKN Dental College'
+};
 
 export default function InstitutionalEthicalCommittee() {
   return (

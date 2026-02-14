@@ -1,6 +1,13 @@
+import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+
+export const metadata: Metadata = {
+  title: 'Health Facilities - Medical Care at JKKN Dental College Campus',
+  description: 'JKKN offers comprehensive health facilities including on-duty doctors, multidisciplinary dental hospital, and upcoming 100-bed multi-specialty hospital.',
+  keywords: 'health facilities JKKN, campus medical care, dental emergency services, multi-specialty hospital, on-campus healthcare, student health services, medical emergency preparedness',
+};
 
 export default function HealthFacilities() {
   return (

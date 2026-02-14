@@ -1,6 +1,13 @@
+import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+
+export const metadata: Metadata = {
+  title: 'Placement Cell / CDC - Career Development Center | JKKN Dental College',
+  description: 'Bridging education and employment through training, internships, and placements. Empowering students for successful careers worldwide.',
+  keywords: 'placement cell, CDC, career development, campus placements, internships, aptitude training, soft skills, JKKN dental college',
+};
 
 export default function PlacementCellCDC() {
   return (
@@ -333,7 +340,7 @@ export default function PlacementCellCDC() {
           </p>
 
           <p className="text-base text-black mb-8">
-            Website: <a href="https://placements.jkkn.ac.in/yuva-utsav/#" className="text-blue-600 hover:underline">https://placements.jkkn.ac.in/yuva-utsav/#</a>
+            Website: <a href="https://placements.jkkn.ac.in/" className="text-blue-600 hover:underline">https://placements.jkkn.ac.in/</a>
           </p>
 
           {/* List of Events Button */}

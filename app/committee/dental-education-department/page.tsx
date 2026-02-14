@@ -1,6 +1,13 @@
+import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+
+export const metadata: Metadata = {
+  title: 'Dental Education Department | JKKN Dental College',
+  description: 'Enhancing quality dental education through curriculum development, research integration, and modern teaching methodologies at JKKN.',
+  keywords: 'dental education department, curriculum development, dental faculty, educational quality, teaching methodology, JKKN dental college',
+};
 
 export default function DentalEducationDepartment() {
   return (

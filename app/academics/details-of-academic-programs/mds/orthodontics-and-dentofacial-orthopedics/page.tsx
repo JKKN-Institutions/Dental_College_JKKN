@@ -5,11 +5,98 @@ import Image from 'next/image';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+import StructuredData from '@/components/StructuredData';
+import Breadcrumb from '@/components/Breadcrumb';
 
 export default function MDSOrthodontics() {
+  // Course Schema for MDS Orthodontics
+  const courseSchema = {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    "name": "MDS Orthodontics and Dentofacial Orthopaedics",
+    "description": "Comprehensive 3-year postgraduate program in Orthodontics and Dentofacial Orthopaedics. Master the art and science of teeth alignment, malocclusion correction, and facial aesthetics.",
+    "provider": {
+      "@type": "CollegeOrUniversity",
+      "name": "JKKN Dental College & Hospital",
+      "url": "https://dental.jkkn.ac.in"
+    },
+    "courseCode": "MDS-ORTHO",
+    "educationalCredentialAwarded": "Master of Dental Surgery in Orthodontics and Dentofacial Orthopaedics",
+    "timeRequired": "P3Y",
+    "hasCourseInstance": {
+      "@type": "CourseInstance",
+      "courseMode": "Full-time",
+      "duration": "P3Y"
+    }
+  };
+
+  // FAQ Schema for MDS Orthodontics
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the duration of the MDS Orthodontics program?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The MDS in Orthodontics and Dentofacial Orthopaedics is a 3-year full-time postgraduate program that includes theoretical coursework, extensive clinical training with live patients, and a mandatory dissertation that contributes to orthodontic research."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the admission process for MDS Orthodontics?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Admission is based on NEET MDS scores conducted by the National Board of Examinations. Candidates must qualify the national entrance examination and participate in state-level or institutional counseling. Seats are allocated based on merit ranking."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What clinical exposure will I receive during the program?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Learners receive extensive hands-on clinical training with a high patient volume. You will manage complete orthodontic cases from diagnosis to retention, work with various appliance systems including fixed braces, clear aligners, and functional appliances, and participate in interdisciplinary treatment planning."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What are the career prospects after completing MDS Orthodontics?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Graduates can establish private practice, join academic institutions as Learning Facilitators, work as hospital consultants, pursue research careers, or join armed forces dental corps. The specialty offers excellent earning potential with high demand for qualified orthodontists both in India and internationally."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is clear aligner training included in the curriculum?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, our curriculum includes comprehensive training in clear aligner therapy including Invisalign and JKKN Align Studio. Learners gain hands-on experience in digital treatment planning, aligner case selection, and managing aligner patients from start to finish."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What research opportunities are available?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Learners are encouraged to publish research papers in indexed journals and present at national and international conferences. Our department provides mentorship for dissertation work, access to research facilities, and support for innovative research projects in orthodontics."
+        }
+      }
+    ]
+  };
+
   return (
     <main className="overflow-x-hidden">
+      <StructuredData data={courseSchema} />
+      <StructuredData data={faqSchema} />
       <Header />
+      <Breadcrumb items={[
+        { name: 'Home', url: 'https://dental.jkkn.ac.in' },
+        { name: 'Academics', url: 'https://dental.jkkn.ac.in/academics' },
+        { name: 'MDS Programs', url: 'https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds' },
+        { name: 'Orthodontics & Dentofacial Orthopedics', url: 'https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/orthodontics-and-dentofacial-orthopedics' },
+      ]} />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-[#006837] to-[#7cb983] py-20 px-4 overflow-hidden">
@@ -61,11 +148,14 @@ export default function MDSOrthodontics() {
             <div className="relative">
               <div className="relative rounded-2xl border-4 border-white/20 overflow-hidden">
                 <Image
-                  src="/images/MDS-Othodontics-hero.png"
+                  src="/images/MDS-Othodontics-hero.webp"
                   alt="Orthodontics Excellence"
                   width={600}
                   height={400}
                   className="w-full h-auto object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  quality={85}
+                  priority
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex flex-col justify-end p-4 sm:p-6">
                   <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white text-center mb-4">Orthodontics Excellence</h2>
@@ -230,10 +320,12 @@ export default function MDSOrthodontics() {
             <div className="relative">
               <div className="relative rounded-2xl overflow-hidden aspect-square shadow-lg">
                 <Image
-                  src="/images/MDS-Othodontics-clinical-image.png"
+                  src="/images/MDS-Othodontics-clinical-image.webp"
                   alt="Clinical Training"
                   fill
                   className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  quality={80}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end justify-center pb-8">
                   <h3 className="text-4xl md:text-5xl font-bold text-white text-center">Clinical Training</h3>

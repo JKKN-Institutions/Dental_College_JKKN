@@ -13,12 +13,17 @@ export default function OurInstitutions() {
       {/* Hero Image Section */}
       <section className="bg-[#FBF8F3] pt-16 px-4">
         <div className="max-w-7xl mx-auto">
-          <div className="w-full h-[300px] md:h-[350px] relative">
+               {/* Page Heading */}
+               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-8">
+            Our Institutions
+          </h1>
+          <div className="w-full h-[300px] md:h-[350px] overflow-hidden">
             <Image
               src="/images/Our_Institution.webp"
               alt="Our Institution Campus"
-              fill
-              className="object-cover"
+              width={1400}
+              height={350}
+              className="w-full h-full object-cover"
               priority
             />
           </div>
@@ -28,6 +33,8 @@ export default function OurInstitutions() {
       {/* Content Section */}
       <section className="bg-[#FBF8F3] pb-16 pt-6 px-4">
         <div className="max-w-7xl mx-auto">
+     
+
           <div className="space-y-6">
             {/* Paragraph 1 */}
             <p className="text-lg text-gray-700 leading-relaxed text-justify">

@@ -2,6 +2,13 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import Image from 'next/image';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Campus Gallery | JKKN Dental College & Hospital Photos',
+  description: 'Explore JKKN Dental College campus through our photo gallery. View our modern infrastructure, clinical facilities, laboratories, classrooms, library, and student activities.',
+  keywords: 'JKKN campus photos, dental college gallery, campus facilities, infrastructure photos',
+};
 
 export default function Gallery() {
   return (
