@@ -1,15 +1,15 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'MDS Prosthodontics | Dental Crown & Bridge Specialist | JKKN',
-  description: 'MDS in Prosthodontics Crown and Bridge at JKKN Dental College. Master dentures, crowns, bridges, and dental prosthetics. 3-year DCI-approved program with comprehensive clinical exposure.',
-  keywords: 'MDS Prosthodontics, crown and bridge course, dental prosthetics, denture specialist, prosthodontics training',
+  title: 'Best College for Prosthodontics in India | JKKN Dental',
+  description: 'Looking for the best college for prosthodontics in India? JKKN Dental offers MDS Prosthodontics with expert faculty, prosthetic labs & hospital training.',
+  keywords: 'best college for prosthodontics in india',
   alternates: {
-    canonical: './',
+    canonical: '/academics/details-of-academic-programs/mds/prosthodontics-crown-and-bridge',
   },
   openGraph: {
-    title: 'MDS Prosthodontics | Dental Crown & Bridge Specialist | JKKN',
-    description: 'MDS in Prosthodontics Crown and Bridge at JKKN Dental College. Master dentures, crowns, bridges, and dental prosthetics. 3-year DCI-approved program with comprehensive clinical exposure.',
+    title: 'Best College for Prosthodontics in India | JKKN Dental',
+    description: 'Looking for the best college for prosthodontics in India? JKKN Dental offers MDS Prosthodontics with expert faculty, prosthetic labs & hospital training.',
     url: 'https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/prosthodontics-crown-and-bridge',
     siteName: 'JKKN Dental College & Hospital',
     images: [
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
         url: '/images/BDS-hero-image.png',
         width: 1200,
         height: 630,
-        alt: 'MDS Prosthodontics at JKKN Dental College'
+        alt: 'Best College for Prosthodontics in India - JKKN Dental'
       }
     ],
     type: 'website',
@@ -25,8 +25,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'MDS Prosthodontics | JKKN',
-    description: 'MDS in Prosthodontics Crown and Bridge. 3-year DCI-approved program with comprehensive clinical exposure.',
+    title: 'Best College for Prosthodontics in India | JKKN Dental',
+    description: 'Looking for the best college for prosthodontics in India? JKKN Dental offers MDS Prosthodontics with expert faculty, prosthetic labs & hospital training.',
     images: ['/images/BDS-hero-image.png'],
   },
 };

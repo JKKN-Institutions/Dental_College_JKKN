@@ -14,9 +14,34 @@ import StructuredData from '@/components/StructuredData';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'JKKN Dental College & Hospital | Top Dental College Tamil Nadu',
-  description: 'Premier dental college in Komarapalayam, Tamil Nadu offering BDS & MDS programs. NAAC A+ accredited, DCI approved with 100 BDS seats. Established 1987, affiliated with Dr. MGR Medical University.',
-  keywords: 'JKKN Dental College, dental college Tamil Nadu, BDS course, MDS specializations, dental education Komarapalayam, NAAC accredited dental college, DCI approved',
+  title: 'Best Dental College in Tamilnadu | JKKN Dental College',
+  description: 'JKKN Dental College & Hospital is one of the best dental colleges in Tamilnadu. DCI approved with excellent placements, modern labs & attached hospital.',
+  keywords: 'best dental college in tamilnadu, private dental colleges in tamilnadu, top 10 dental colleges in tamilnadu, top dental colleges in tamilnadu, list of dental colleges in tamilnadu, self financing dental colleges in tamilnadu, list of private dental colleges in tamilnadu',
+  openGraph: {
+    title: 'Best Dental College in Tamilnadu | JKKN Dental College',
+    description: 'JKKN Dental College & Hospital is one of the best dental colleges in Tamilnadu. DCI approved with excellent placements, modern labs & attached hospital.',
+    url: 'https://dental.jkkn.ac.in',
+    siteName: 'JKKN Dental College & Hospital',
+    images: [
+      {
+        url: '/images/dental-logo.png',
+        width: 1200,
+        height: 630,
+        alt: 'Best Dental College in Tamilnadu - JKKN Dental College'
+      }
+    ],
+    type: 'website',
+    locale: 'en_IN',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Best Dental College in Tamilnadu | JKKN Dental College',
+    description: 'JKKN Dental College & Hospital is one of the best dental colleges in Tamilnadu. DCI approved with excellent placements, modern labs & attached hospital.',
+    images: ['/images/dental-logo.png'],
+  },
+  alternates: {
+    canonical: '/',
+  },
 };
 
 export default function Home() {
