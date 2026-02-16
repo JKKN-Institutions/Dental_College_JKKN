@@ -15,11 +15,11 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Best Dental College in Tamilnadu | JKKN Dental College',
-  description: 'JKKN Dental College & Hospital is one of the best dental colleges in Tamilnadu. DCI approved with excellent placements, modern labs & attached hospital.',
+  description: 'JKKN Dental College & Hospital is one of the best dental college in Tamilnadu. DCI approved with excellent placements, modern labs & attached hospital.',
   keywords: 'best dental college in tamilnadu, private dental colleges in tamilnadu, top 10 dental colleges in tamilnadu, top dental colleges in tamilnadu, list of dental colleges in tamilnadu, self financing dental colleges in tamilnadu, list of private dental colleges in tamilnadu',
   openGraph: {
     title: 'Best Dental College in Tamilnadu | JKKN Dental College',
-    description: 'JKKN Dental College & Hospital is one of the best dental colleges in Tamilnadu. DCI approved with excellent placements, modern labs & attached hospital.',
+    description: 'JKKN Dental College & Hospital is one of the best dental college in Tamilnadu. DCI approved with excellent placements, modern labs & attached hospital.',
     url: 'https://dental.jkkn.ac.in',
     siteName: 'JKKN Dental College & Hospital',
     images: [
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Best Dental College in Tamilnadu | JKKN Dental College',
-    description: 'JKKN Dental College & Hospital is one of the best dental colleges in Tamilnadu. DCI approved with excellent placements, modern labs & attached hospital.',
+    description: 'JKKN Dental College & Hospital is one of the best dental college in Tamilnadu. DCI approved with excellent placements, modern labs & attached hospital.',
     images: ['/images/dental-logo.png'],
   },
   alternates: {
