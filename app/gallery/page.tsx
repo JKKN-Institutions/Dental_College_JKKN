@@ -1,8 +1,11 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
-import Image from 'next/image';
 import { Metadata } from 'next';
+import { createClient } from '@/lib/supabase/server';
+import GalleryCarousel, { GalleryImage } from '@/components/GalleryCarousel';
+
+export const revalidate = 60;
 
 export const metadata: Metadata = {
   title: 'Campus Gallery | JKKN Dental College & Hospital Photos',
@@ -10,276 +13,86 @@ export const metadata: Metadata = {
   keywords: 'JKKN campus photos, dental college gallery, campus facilities, infrastructure photos',
 };
 
-export default function Gallery() {
+// ── Hardcoded images (used when no admin albums exist) ──────────────────────
+const HARDCODED_IMAGES: GalleryImage[] = [
+  { src: '/images/Pongal-Celebration-gallery.jpg',           alt: 'Pongal Celebration',           caption: 'Pongal Celebration' },
+  { src: '/images/Farewell-Day-gallery.webp',                alt: 'Farewell Day',                 caption: 'Farewell Day' },
+  { src: '/images/Founders-Day-2022-gallery.jpg',            alt: 'Founders Day 2022',            caption: 'Founders Day 2022' },
+  { src: '/images/Blood-Camp-gallery.webp',                  alt: 'Blood Camp',                   caption: 'Blood Camp' },
+  { src: '/images/World-Hemophilia-Day-gallery.jpg',         alt: 'World Hemophilia Day',         caption: 'World Hemophilia Day' },
+  { src: '/images/World-No-Tobacco-Day-gallery.webp',        alt: 'World No Tobacco Day',         caption: 'World No Tobacco Day' },
+  { src: '/images/World-Oral-Health-Day-gallery.webp',       alt: 'World Oral Health Day',        caption: 'World Oral Health Day' },
+  { src: '/images/Stem-cell-gallery.webp',                   alt: 'Stem Cell',                    caption: 'Stem Cell' },
+  { src: '/images/35th-College-Day-gallery.webp',            alt: '35th College Day',             caption: '35th College Day' },
+  { src: '/images/ANTI-RAGGING-SEMINAR-gallery.webp',        alt: 'ANTI RAGGING SEMINAR',         caption: 'ANTI RAGGING SEMINAR' },
+  { src: '/images/26th-Graduation-Day-gallery.webp',         alt: '26th Graduation Day',          caption: '26th Graduation Day' },
+  { src: '/images/Basic-Of-Cancer-and-Awareness-gallery.webp', alt: 'Basic Of Cancer and Awareness', caption: 'Basic Of Cancer and Awareness' },
+  { src: '/images/Fire-and-safety-gallery.webp',             alt: 'Fire and safety',              caption: 'Fire and safety' },
+  { src: '/images/Prosthodontist-Day-gallery.webp',          alt: 'Prosthodontist Day',           caption: 'Prosthodontist Day' },
+  { src: '/images/Yoga-day-gallery.webp',                    alt: 'Yoga day',                     caption: 'Yoga day' },
+];
+
+export default async function Gallery() {
+  const supabase = await createClient();
+  const collegeId = process.env.NEXT_PUBLIC_COLLEGE_ID!;
+
+  const { data: albums } = await supabase
+    .from('gallery_albums')
+    .select('id, name, cover_image_url')
+    .eq('college_id', collegeId)
+    .order('created_at', { ascending: false });
+
+  const hasAdminAlbums = albums && albums.length > 0;
+
+  type AlbumImage = { image_url: string; caption: string | null; album_id: string };
+  let albumImages: AlbumImage[] = [];
+
+  if (hasAdminAlbums) {
+    const albumIds = (albums ?? []).map((a) => a.id);
+    const { data: imgs } = await supabase
+      .from('gallery_images')
+      .select('album_id, image_url, caption, display_order')
+      .in('album_id', albumIds)
+      .eq('college_id', collegeId)
+      .order('display_order', { ascending: true });
+    albumImages = (imgs ?? []) as AlbumImage[];
+  }
+
   return (
     <main className="overflow-x-hidden">
       <Header />
 
-      {/* Page Content */}
       <div className="bg-[#FBF8F3] py-8 sm:py-10 md:py-12 lg:py-16 px-4 sm:px-6">
         <div className="max-w-7xl mx-auto">
-          {/* Main Heading */}
           <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-bold text-[#1B5E20] mb-8 sm:mb-10 md:mb-12">
             GALLERY
           </h1>
 
-          {/* Gallery Grid */}
-          <div className="space-y-8 sm:space-y-10 md:space-y-12">
-            {/* Row 1 */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
-              {/* Pongal Celebration */}
-              <div>
-                <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-[#1B5E20] mb-3 sm:mb-4">
-                  Pongal Celebration
-                </h2>
-                <div className="w-full aspect-[4/3] bg-gray-200 rounded-lg overflow-hidden">
-                  <Image
-                    src="/images/Pongal-Celebration-gallery.jpg"
-                    alt="Pongal Celebration"
-                    width={400}
-                    height={300}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              </div>
+          {/* ── Admin albums ── */}
+          {hasAdminAlbums && (
+            <div className="space-y-10 sm:space-y-12">
+              {(albums ?? []).map((album) => {
+                const photos = albumImages.filter((img) => img.album_id === album.id);
+                const images: GalleryImage[] =
+                  photos.length > 0
+                    ? photos.map((p) => ({ src: p.image_url, alt: p.caption ?? album.name }))
+                    : album.cover_image_url
+                    ? [{ src: album.cover_image_url, alt: album.name }]
+                    : [];
 
-              {/* Farewell Day */}
-              <div>
-                <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-[#1B5E20] mb-3 sm:mb-4">
-                  Farewell Day
-                </h2>
-                <div className="w-full aspect-[4/3] bg-gray-200 rounded-lg overflow-hidden">
-                  <Image
-                    src="/images/Farewell-Day-gallery.webp"
-                    alt="Farewell Day"
-                    width={400}
-                    height={300}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              </div>
+                if (images.length === 0) return null;
 
-              {/* Founders Day 2022 */}
-              <div>
-                <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-[#1B5E20] mb-3 sm:mb-4">
-                  Founders Day 2022
-                </h2>
-                <div className="w-full aspect-[4/3] bg-gray-200 rounded-lg overflow-hidden">
-                  <Image
-                    src="/images/Founders-Day-2022-gallery.jpg"
-                    alt="Founders Day 2022"
-                    width={400}
-                    height={300}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              </div>
+                return (
+                  <GalleryCarousel key={album.id} title={album.name} images={images} />
+                );
+              })}
             </div>
+          )}
 
-            {/* Row 2 */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
-              {/* Blood Camp */}
-              <div>
-                <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-[#1B5E20] mb-3 sm:mb-4">
-                  Blood Camp
-                </h2>
-                <div className="w-full aspect-[4/3] bg-gray-200 rounded-lg overflow-hidden">
-                  <Image
-                    src="/images/Blood-Camp-gallery.webp"
-                    alt="Blood Camp"
-                    width={400}
-                    height={300}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              </div>
-
-              {/* World Hemophilia Day */}
-              <div>
-                <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-[#1B5E20] mb-3 sm:mb-4">
-                  World Hemophilia Day
-                </h2>
-                <div className="w-full aspect-[4/3] bg-gray-200 rounded-lg overflow-hidden">
-                  <Image
-                    src="/images/World-Hemophilia-Day-gallery.jpg"
-                    alt="World Hemophilia Day"
-                    width={400}
-                    height={300}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              </div>
-
-              {/* World No Tobacco Day */}
-              <div>
-                <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-[#1B5E20] mb-3 sm:mb-4">
-                  World No Tobacco Day
-                </h2>
-                <div className="w-full aspect-[4/3] bg-gray-200 rounded-lg overflow-hidden">
-                  <Image
-                    src="/images/World-No-Tobacco-Day-gallery.webp"
-                    alt="World No Tobacco Day"
-                    width={400}
-                    height={300}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              </div>
-            </div>
-
-            {/* Row 3 */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
-              {/* World Oral Health Day */}
-              <div>
-                <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-[#1B5E20] mb-3 sm:mb-4">
-                  World Oral Health Day
-                </h2>
-                <div className="w-full aspect-[4/3] bg-gray-200 rounded-lg overflow-hidden">
-                  <Image
-                    src="/images/World-Oral-Health-Day-gallery.webp"
-                    alt="World Oral Health Day"
-                    width={400}
-                    height={300}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              </div>
-
-              {/* Stem Cell */}
-              <div>
-                <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-[#1B5E20] mb-3 sm:mb-4">
-                  Stem Cell
-                </h2>
-                <div className="w-full aspect-[4/3] bg-gray-200 rounded-lg overflow-hidden">
-                  <Image
-                    src="/images/Stem-cell-gallery.webp"
-                    alt="Stem Cell"
-                    width={400}
-                    height={300}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              </div>
-
-              {/* 35th College Day */}
-              <div>
-                <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-[#1B5E20] mb-3 sm:mb-4">
-                  35th College Day
-                </h2>
-                <div className="w-full aspect-[4/3] bg-gray-200 rounded-lg overflow-hidden">
-                  <Image
-                    src="/images/35th-College-Day-gallery.webp"
-                    alt="35th College Day"
-                    width={400}
-                    height={300}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              </div>
-            </div>
-
-            {/* Row 4 */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
-              {/* ANTI RAGGING SEMINAR */}
-              <div>
-                <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-[#1B5E20] mb-3 sm:mb-4">
-                  ANTI RAGGING SEMINAR
-                </h2>
-                <div className="w-full aspect-[4/3] bg-gray-200 rounded-lg overflow-hidden">
-                  <Image
-                    src="/images/ANTI-RAGGING-SEMINAR-gallery.webp"
-                    alt="ANTI RAGGING SEMINAR"
-                    width={400}
-                    height={300}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              </div>
-
-              {/* 26th Graduation Day */}
-              <div>
-                <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-[#1B5E20] mb-3 sm:mb-4">
-                  26th Graduation Day
-                </h2>
-                <div className="w-full aspect-[4/3] bg-gray-200 rounded-lg overflow-hidden">
-                  <Image
-                    src="/images/26th-Graduation-Day-gallery.webp"
-                    alt="26th Graduation Day"
-                    width={400}
-                    height={300}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              </div>
-
-              {/* Basic Of Cancer and Awareness */}
-              <div>
-                <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-[#1B5E20] mb-3 sm:mb-4">
-                  Basic Of Cancer and Awareness
-                </h2>
-                <div className="w-full aspect-[4/3] bg-gray-200 rounded-lg overflow-hidden">
-                  <Image
-                    src="/images/Basic-Of-Cancer-and-Awareness-gallery.webp"
-                    alt="Basic Of Cancer and Awareness"
-                    width={400}
-                    height={300}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              </div>
-            </div>
-
-            {/* Row 5 */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
-              {/* Fire and safety */}
-              <div>
-                <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-[#1B5E20] mb-3 sm:mb-4">
-                  Fire and safety
-                </h2>
-                <div className="w-full aspect-[4/3] bg-gray-200 rounded-lg overflow-hidden">
-                  <Image
-                    src="/images/Fire-and-safety-gallery.webp"
-                    alt="Fire and safety"
-                    width={400}
-                    height={300}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              </div>
-
-              {/* Prosthodontist Day */}
-              <div>
-                <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-[#1B5E20] mb-3 sm:mb-4">
-                  Prosthodontist Day
-                </h2>
-                <div className="w-full aspect-[4/3] bg-gray-200 rounded-lg overflow-hidden">
-                  <Image
-                    src="/images/Prosthodontist-Day-gallery.webp"
-                    alt="Prosthodontist Day"
-                    width={400}
-                    height={300}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              </div>
-
-              {/* Yoga day */}
-              <div>
-                <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-[#1B5E20] mb-3 sm:mb-4">
-                  Yoga day
-                </h2>
-                <div className="w-full aspect-[4/3] bg-gray-200 rounded-lg overflow-hidden">
-                  <Image
-                    src="/images/Yoga-day-gallery.webp"
-                    alt="Yoga day"
-                    width={400}
-                    height={300}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
+          {/* ── Hardcoded gallery (shown only when no admin albums exist) ── */}
+          {!hasAdminAlbums && (
+            <GalleryCarousel images={HARDCODED_IMAGES} />
+          )}
         </div>
       </div>
 
