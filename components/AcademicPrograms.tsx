@@ -121,6 +121,52 @@ export default function AcademicPrograms() {
           </div>
         </div>
 
+        {/* BDS vs MDS Program Comparison Table */}
+        <div className="mb-12 sm:mb-16 md:mb-20 overflow-x-auto">
+          <h2 className="text-xl sm:text-2xl font-bold text-[#006837] text-center mb-6">BDS vs MDS – Program Comparison</h2>
+          <table className="w-full border-collapse bg-white rounded-xl shadow-md overflow-hidden">
+            <thead>
+              <tr className="bg-[#006837] text-white">
+                <th className="px-4 py-3 text-left text-sm sm:text-base font-semibold">Criteria</th>
+                <th className="px-4 py-3 text-left text-sm sm:text-base font-semibold">BDS</th>
+                <th className="px-4 py-3 text-left text-sm sm:text-base font-semibold">MDS</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr className="border-b border-gray-100">
+                <td className="px-4 py-3 text-sm text-gray-700 font-medium">Duration</td>
+                <td className="px-4 py-3 text-sm text-gray-600">5 years (incl. 1-year internship)</td>
+                <td className="px-4 py-3 text-sm text-gray-600">3 years</td>
+              </tr>
+              <tr className="border-b border-gray-100 bg-gray-50">
+                <td className="px-4 py-3 text-sm text-gray-700 font-medium">Eligibility</td>
+                <td className="px-4 py-3 text-sm text-gray-600">10+2 with PCB, NEET-UG</td>
+                <td className="px-4 py-3 text-sm text-gray-600">BDS degree, NEET-MDS</td>
+              </tr>
+              <tr className="border-b border-gray-100">
+                <td className="px-4 py-3 text-sm text-gray-700 font-medium">Seat Intake</td>
+                <td className="px-4 py-3 text-sm text-gray-600">100 seats</td>
+                <td className="px-4 py-3 text-sm text-gray-600">18+ seats</td>
+              </tr>
+              <tr className="border-b border-gray-100 bg-gray-50">
+                <td className="px-4 py-3 text-sm text-gray-700 font-medium">Specializations</td>
+                <td className="px-4 py-3 text-sm text-gray-600">General Dentistry</td>
+                <td className="px-4 py-3 text-sm text-gray-600">5 specializations available</td>
+              </tr>
+              <tr className="border-b border-gray-100">
+                <td className="px-4 py-3 text-sm text-gray-700 font-medium">Degree Awarded</td>
+                <td className="px-4 py-3 text-sm text-gray-600">BDS (Tamil Nadu Dr. MGR Medical University)</td>
+                <td className="px-4 py-3 text-sm text-gray-600">MDS (Tamil Nadu Dr. MGR Medical University)</td>
+              </tr>
+              <tr className="bg-gray-50">
+                <td className="px-4 py-3 text-sm text-gray-700 font-medium">Admission</td>
+                <td className="px-4 py-3 text-sm text-gray-600">State counseling + management quota</td>
+                <td className="px-4 py-3 text-sm text-gray-600">State counseling + management quota</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
         {/* MDS Specializations Section */}
         <div>
           <h3 className="text-xl xs:text-2xl sm:text-3xl font-bold text-[#006837] text-center mb-8 sm:mb-10 md:mb-12">MDS Specializations Offered</h3>

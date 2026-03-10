@@ -4,10 +4,35 @@ import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+import StructuredData from '@/components/StructuredData';
 
 export default function MDSProgram() {
+  const mdsSchema = {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    "name": "Master of Dental Surgery (MDS)",
+    "description": "3-year postgraduate dental program with specializations in Periodontics, Orthodontics, Prosthodontics, Conservative Dentistry & Endodontics, and Oral Medicine at JKKN Dental College & Hospital.",
+    "provider": {
+      "@type": "CollegeOrUniversity",
+      "name": "JKKN Dental College & Hospital",
+      "url": "https://dental.jkkn.ac.in/"
+    },
+    "educationalCredentialAwarded": "MDS (Master of Dental Surgery)",
+    "timeRequired": "P3Y",
+    "occupationalCategory": "Dental Specialist",
+    "coursePrerequisites": "BDS degree from a recognized university; NEET-MDS qualification required",
+    "hasCourseInstance": [
+      { "@type": "CourseInstance", "name": "MDS Periodontics", "courseMode": "Full-time" },
+      { "@type": "CourseInstance", "name": "MDS Orthodontics & Dentofacial Orthopedics", "courseMode": "Full-time" },
+      { "@type": "CourseInstance", "name": "MDS Prosthodontics Crown & Bridge", "courseMode": "Full-time" },
+      { "@type": "CourseInstance", "name": "MDS Conservative Dentistry & Endodontics", "courseMode": "Full-time" },
+      { "@type": "CourseInstance", "name": "MDS Oral Medicine", "courseMode": "Full-time" }
+    ]
+  };
+
   return (
     <main className="overflow-x-hidden">
+      <StructuredData data={mdsSchema} />
       <Header />
 
       {/* Hero Section */}

@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   keywords: "JKKN Dental College, AI dental campus, dental college Tamil Nadu, BDS course, MDS specializations, AI in dentistry, ChatGPT dental education, DCI approved dental college, NAAC accredited, digital dentistry, CAD/CAM dentistry, Komarapalayam dental college",
   authors: [{ name: "JKKN Dental College Editorial Team" }],
   alternates: {
-    canonical: './',
+    canonical: 'https://dental.jkkn.ac.in/',
   },
   icons: {
     icon: "/images/dental-logo.png",
@@ -71,8 +71,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${poppins.className} antialiased pt-16 xs:pt-18 sm:pt-20 lg:pt-24 xl:pt-28`} suppressHydrationWarning>
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[200] focus:bg-white focus:px-4 focus:py-2 focus:rounded-md focus:shadow-lg focus:text-primary focus:font-semibold focus:outline-none"
+        >
+          Skip to main content
+        </a>
         <ClientLayoutWrapper>
-          {children}
+          <div id="main-content" tabIndex={-1}>
+            {children}
+          </div>
         </ClientLayoutWrapper>
       </body>
     </html>

@@ -3,7 +3,7 @@ import { siteContent } from '@/data/content';
 
 export default function Footer() {
   return (
-    <footer className="bg-primary text-white">
+    <footer role="contentinfo" className="bg-primary text-white">
       <div className="container-custom py-10 sm:py-12 lg:py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
           {/* Left Column - College Name, Map & Tagline */}
@@ -15,6 +15,7 @@ export default function Footer() {
               <div className="relative w-full aspect-video sm:aspect-[16/10] max-h-[200px] sm:max-h-[220px]">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d62567.82001557531!2d77.730985!3d11.444606!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba9681d0e14f271%3A0x811ca6d2df6b69f9!2sJKKN%20Dental%20College%20and%20Hospital!5e0!3m2!1sen!2sin!4v1769697898203!5m2!1sen!2sin"
+                  title="JKKN Dental College & Hospital Location"
                   className="absolute inset-0 w-full h-full rounded-md"
                   style={{ border: 0 }}
                   allowFullScreen
@@ -71,6 +72,8 @@ export default function Footer() {
                   <Link
                     key={index}
                     href={social.url}
+                    target="_blank"
+                    rel="nofollow noopener noreferrer"
                     className="w-10 h-10 bg-white text-primary rounded flex items-center justify-center hover:bg-gray-200 transition-colors"
                     aria-label={`Follow JKKN Dental on ${social.platform}`}
                   >

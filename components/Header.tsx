@@ -49,10 +49,12 @@ export default function Header() {
     >
       {item.submenu ? (
         <button
+          aria-haspopup="true"
+          aria-expanded={activeSubmenu === item.label}
           className="text-black hover:text-primary font-semibold text-[11px] xl:text-[12px] 2xl:text-[13px] px-1.5 xl:px-2.5 2xl:px-3 py-2 transition-colors whitespace-nowrap flex items-center gap-1"
         >
           {item.label}
-          <svg className="w-2.5 h-2.5 lg:w-3 lg:h-3 fill-current" viewBox="0 0 12 12">
+          <svg aria-hidden="true" className="w-2.5 h-2.5 lg:w-3 lg:h-3 fill-current" viewBox="0 0 12 12">
             <path d="M6 9L1 4h10z" />
           </svg>
         </button>
@@ -83,10 +85,12 @@ export default function Header() {
               >
                 {subitem.submenu ? (
                   <button
+                    aria-haspopup="true"
+                    aria-expanded={activeNestedSubmenu === subitem.label}
                     className="w-full block px-4 py-2.5 text-sm text-gray-600 hover:bg-primary hover:text-white transition-colors flex items-center justify-between text-left"
                   >
                     <span>{subitem.label}</span>
-                    <svg className={`w-3 h-3 fill-current ml-2 ${['OTHERS', 'COMMITTEE', 'RESEARCH'].includes(item.label) ? 'rotate-180' : ''}`} viewBox="0 0 12 12">
+                    <svg aria-hidden="true" className={`w-3 h-3 fill-current ml-2 ${['OTHERS', 'COMMITTEE', 'RESEARCH'].includes(item.label) ? 'rotate-180' : ''}`} viewBox="0 0 12 12">
                       <path d="M4 1l5 5-5 5z" />
                     </svg>
                   </button>
@@ -111,10 +115,12 @@ export default function Header() {
                     >
                       {nestedItem.submenu ? (
                         <button
+                          aria-haspopup="true"
+                          aria-expanded={activeThirdLevelSubmenu === nestedItem.label}
                           className="w-full block px-4 py-2.5 text-sm text-gray-600 hover:bg-primary hover:text-white transition-colors flex items-center justify-between text-left"
                         >
                           <span>{nestedItem.label}</span>
-                          <svg className={`w-3 h-3 fill-current ml-2 ${['OTHERS', 'COMMITTEE', 'RESEARCH'].includes(item.label) ? 'rotate-180' : ''}`} viewBox="0 0 12 12">
+                          <svg aria-hidden="true" className={`w-3 h-3 fill-current ml-2 ${['OTHERS', 'COMMITTEE', 'RESEARCH'].includes(item.label) ? 'rotate-180' : ''}`} viewBox="0 0 12 12">
                             <path d="M4 1l5 5-5 5z" />
                           </svg>
                         </button>
@@ -154,7 +160,7 @@ export default function Header() {
   );
 
   return (
-    <header className="bg-white fixed top-0 left-0 right-0 z-50 shadow-sm">
+    <header role="banner" className="bg-white fixed top-0 left-0 right-0 z-50 shadow-sm">
       {/* Desktop Header - 2 Row Layout */}
       <div className="hidden lg:block">
         <div className="w-full">
@@ -173,7 +179,7 @@ export default function Header() {
               </Link>
 
               {/* Navigation Rows Container */}
-              <div className="flex-1 flex flex-col gap-0">
+              <nav aria-label="Main navigation" className="flex-1 flex flex-col gap-0">
                 {/* Top Navigation Row */}
                 <div className="flex items-center justify-center gap-0 xl:gap-0.5 2xl:gap-1">
                   {topMenuItems.map((item) => renderMenuItem(item))}
@@ -183,7 +189,7 @@ export default function Header() {
                 <div className="flex items-center justify-center gap-0 xl:gap-0.5 2xl:gap-1">
                   {bottomMenuItems.map((item) => renderMenuItem(item))}
                 </div>
-              </div>
+              </nav>
 
               {/* Apply Now Button - Right Side (spans both rows) */}
               <div className="flex items-center flex-shrink-0">
@@ -200,7 +206,7 @@ export default function Header() {
       </div>
 
       {/* Tablet & Mobile Header */}
-      <nav className="lg:hidden w-full py-2 sm:py-3 px-3 sm:px-4">
+      <nav aria-label="Mobile navigation" className="lg:hidden w-full py-2 sm:py-3 px-3 sm:px-4">
         <div className={`flex items-center ${isMenuOpen ? 'justify-center' : 'justify-between'}`}>
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 flex-shrink-0">
@@ -233,10 +239,13 @@ export default function Header() {
                   {item.submenu ? (
                     <button
                       onClick={() => toggleMobileMenu(item.label)}
+                      aria-expanded={mobileOpenMenus.has(item.label)}
+                      aria-haspopup="true"
                       className="flex-1 py-3 px-3 xs:px-4 text-black hover:bg-gray-50 active:bg-gray-100 hover:text-primary font-semibold rounded-lg text-left flex items-center justify-between min-h-[44px] touch-manipulation transition-colors text-sm xs:text-base"
                     >
                       <span>{item.label}</span>
                       <svg
+                        aria-hidden="true"
                         className={`w-4 h-4 fill-current transition-transform duration-300 ${mobileOpenMenus.has(item.label) ? 'rotate-180' : ''}`}
                         viewBox="0 0 12 12"
                       >
@@ -261,10 +270,13 @@ export default function Header() {
                           {subitem.submenu ? (
                             <button
                               onClick={() => toggleMobileMenu(subitem.label)}
+                              aria-expanded={mobileOpenMenus.has(subitem.label)}
+                              aria-haspopup="true"
                               className="flex-1 py-2.5 px-3 xs:px-4 text-xs xs:text-sm text-gray-600 hover:bg-gray-50 active:bg-gray-100 hover:text-primary rounded-lg text-left flex items-center justify-between min-h-[40px] touch-manipulation transition-colors"
                             >
                               <span>{subitem.label}</span>
                               <svg
+                                aria-hidden="true"
                                 className={`w-3 h-3 fill-current transition-transform duration-300 ${mobileOpenMenus.has(subitem.label) ? 'rotate-180' : ''}`}
                                 viewBox="0 0 12 12"
                               >
@@ -289,10 +301,13 @@ export default function Header() {
                                   {nestedItem.submenu ? (
                                     <button
                                       onClick={() => toggleMobileMenu(nestedItem.label)}
+                                      aria-expanded={mobileOpenMenus.has(nestedItem.label)}
+                                      aria-haspopup="true"
                                       className="flex-1 py-2 px-3 xs:px-4 text-xs text-gray-600 hover:bg-gray-50 active:bg-gray-100 hover:text-primary rounded-lg text-left flex items-center justify-between min-h-[40px] touch-manipulation transition-colors"
                                     >
                                       <span>{nestedItem.label}</span>
                                       <svg
+                                        aria-hidden="true"
                                         className={`w-3 h-3 fill-current transition-transform duration-300 ${mobileOpenMenus.has(nestedItem.label) ? 'rotate-180' : ''}`}
                                         viewBox="0 0 12 12"
                                       >

@@ -1,16 +1,19 @@
+import dynamic from 'next/dynamic';
 import Header from '@/components/Header';
-import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import Hero from '@/components/Hero';
-import AboutInstitution from '@/components/AboutInstitution';
-import AIIntegration from '@/components/AIIntegration';
-import AcademicPrograms from '@/components/AcademicPrograms';
-import Infrastructure from '@/components/Infrastructure';
-import WhyChooseJKKN from '@/components/WhyChooseJKKN';
-import AdmissionsSection from '@/components/AdmissionsSection';
-import FAQSection from '@/components/FAQSection';
-import CTASection from '@/components/CTASection';
-import Footer from '@/components/Footer';
 import StructuredData from '@/components/StructuredData';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
+
+import FloatingWhatsApp from '@/components/FloatingWhatsAppClient';
+const AboutInstitution = dynamic(() => import('@/components/AboutInstitution'));
+const AcademicPrograms = dynamic(() => import('@/components/AcademicPrograms'));
+const Infrastructure = dynamic(() => import('@/components/Infrastructure'));
+const WhyChooseJKKN = dynamic(() => import('@/components/WhyChooseJKKN'));
+const AdmissionsSection = dynamic(() => import('@/components/AdmissionsSection'));
+const FAQSection = dynamic(() => import('@/components/FAQSection'));
+const CTASection = dynamic(() => import('@/components/CTASection'));
+const Footer = dynamic(() => import('@/components/Footer'));
+const FacultySection = dynamic(() => import('@/components/FacultySection'));
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -45,6 +48,73 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
+  // BDS Course Schema
+  const bdsSchema = {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    "name": "Bachelor of Dental Surgery (BDS)",
+    "description": "5-year undergraduate dental program including 1-year compulsory rotatory internship at JKKN Dental College & Hospital, approved by DCI with hands-on clinical training and world-class infrastructure.",
+    "provider": {
+      "@type": "CollegeOrUniversity",
+      "name": "JKKN Dental College & Hospital",
+      "url": "https://dental.jkkn.ac.in/",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Natarajapuram, NH-544, Salem-Coimbatore Highway",
+        "addressLocality": "Komarapalayam",
+        "addressRegion": "Tamil Nadu",
+        "postalCode": "638183",
+        "addressCountry": "IN"
+      }
+    },
+    "educationalCredentialAwarded": "BDS (Bachelor of Dental Surgery)",
+    "timeRequired": "P5Y",
+    "occupationalCategory": "Dentist",
+    "coursePrerequisites": "10+2 with Physics, Chemistry, Biology (PCB) with minimum 50% aggregate; NEET-UG qualification required",
+    "numberOfCredits": "240",
+    "hasCourseInstance": {
+      "@type": "CourseInstance",
+      "courseMode": "Full-time",
+      "courseWorkload": "PT5Y",
+      "startDate": "2026-09",
+      "endDate": "2031-08",
+      "instructor": {
+        "@type": "Person",
+        "name": "Department of Dental Sciences Faculty"
+      }
+    },
+    "offers": {
+      "@type": "Offer",
+      "category": "Government Quota / Management Quota",
+      "availability": "https://schema.org/InStock",
+      "url": "https://admission.jkkn.ac.in/"
+    }
+  };
+
+  // MDS Course Schema
+  const mdsSchema = {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    "name": "Master of Dental Surgery (MDS)",
+    "description": "3-year postgraduate dental program with specializations in Periodontics, Orthodontics, Prosthodontics, Conservative Dentistry & Endodontics, and Oral Medicine at JKKN Dental College & Hospital.",
+    "provider": {
+      "@type": "CollegeOrUniversity",
+      "name": "JKKN Dental College & Hospital",
+      "url": "https://dental.jkkn.ac.in/"
+    },
+    "educationalCredentialAwarded": "MDS (Master of Dental Surgery)",
+    "timeRequired": "P3Y",
+    "occupationalCategory": "Dental Specialist",
+    "coursePrerequisites": "BDS degree from a recognized university; NEET-MDS qualification required",
+    "hasCourseInstance": [
+      { "@type": "CourseInstance", "name": "MDS Periodontics", "courseMode": "Full-time" },
+      { "@type": "CourseInstance", "name": "MDS Orthodontics & Dentofacial Orthopedics", "courseMode": "Full-time" },
+      { "@type": "CourseInstance", "name": "MDS Prosthodontics Crown & Bridge", "courseMode": "Full-time" },
+      { "@type": "CourseInstance", "name": "MDS Conservative Dentistry & Endodontics", "courseMode": "Full-time" },
+      { "@type": "CourseInstance", "name": "MDS Oral Medicine", "courseMode": "Full-time" }
+    ]
+  };
+
   // College/University Schema
   const collegeSchema = {
     "@context": "https://schema.org",
@@ -152,10 +222,83 @@ export default function Home() {
     ]
   };
 
+  // Principal/Dean Person Schema
+  const principalSchema = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Dr. [Principal Name]",
+    "jobTitle": "Principal & Dean",
+    "worksFor": {
+      "@type": "CollegeOrUniversity",
+      "name": "JKKN Dental College & Hospital",
+      "url": "https://dental.jkkn.ac.in/"
+    },
+    "alumniOf": "Tamil Nadu Dr. MGR Medical University",
+    "hasCredential": {
+      "@type": "EducationalOccupationalCredential",
+      "credentialCategory": "MDS, PhD"
+    }
+  };
+
+  const localBusinessSchema = {
+    "@context": "https://schema.org",
+    "@type": "Dentist",
+    "name": "JKKN Dental College & Hospital",
+    "alternateName": "JKKN Dental Hospital",
+    "description": "Multi-specialty dental teaching hospital with 200+ dental chairs, 100+ hospital beds, serving 500+ patients daily. Part of JKKN Dental College & Hospital.",
+    "url": "https://dental.jkkn.ac.in/",
+    "telephone": "+919345855001",
+    "email": "info@jkkn.ac.in",
+    "image": "https://dental.jkkn.ac.in/images/dental-logo.png",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Natarajapuram, NH-544, Salem-Coimbatore Highway",
+      "addressLocality": "Komarapalayam",
+      "addressRegion": "Tamil Nadu",
+      "postalCode": "638183",
+      "addressCountry": "IN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 11.4333,
+      "longitude": 77.7167
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "opens": "09:00",
+        "closes": "17:00"
+      }
+    ],
+    "priceRange": "$$",
+    "medicalSpecialty": [
+      "Periodontics",
+      "Orthodontics",
+      "Prosthodontics",
+      "Conservative Dentistry & Endodontics",
+      "Oral Medicine & Radiology",
+      "Oral & Maxillofacial Surgery",
+      "Pedodontics",
+      "Community Dentistry"
+    ],
+    "sameAs": [
+      "https://maps.app.goo.gl/mXx6rFRqpS9U76BK6"
+    ]
+  };
+
   return (
     <main className="overflow-x-hidden w-full">
+      <StructuredData data={localBusinessSchema} />
+      <StructuredData data={principalSchema} />
+      <StructuredData data={bdsSchema} />
+      <StructuredData data={mdsSchema} />
       <StructuredData data={collegeSchema} />
       <StructuredData data={faqSchema} />
+      <BreadcrumbSchema items={[
+        { name: 'JKKN Institutions', url: 'https://jkkn.ac.in/' },
+        { name: 'JKKN Dental College & Hospital', url: 'https://dental.jkkn.ac.in/' },
+      ]} />
       <Header />
       <Hero />
       <AboutInstitution />
@@ -163,6 +306,7 @@ export default function Home() {
       <AcademicPrograms />
       <Infrastructure />
       <WhyChooseJKKN />
+      <FacultySection />
       <AdmissionsSection />
       <FAQSection />
       <CTASection />

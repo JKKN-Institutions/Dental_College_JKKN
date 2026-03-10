@@ -6,6 +6,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import StructuredData from '@/components/StructuredData';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 import Breadcrumb from '@/components/Breadcrumb';
 import { useState } from 'react';
 
@@ -17,20 +18,41 @@ export default function BDSProgram() {
     "@context": "https://schema.org",
     "@type": "Course",
     "name": "Bachelor of Dental Surgery (BDS)",
-    "description": "Comprehensive 5-year undergraduate dental program approved by DCI, offering hands-on clinical training and world-class infrastructure.",
+    "description": "5-year undergraduate dental program including 1-year compulsory rotatory internship at JKKN Dental College & Hospital, approved by DCI with hands-on clinical training and world-class infrastructure.",
     "provider": {
       "@type": "CollegeOrUniversity",
       "name": "JKKN Dental College & Hospital",
-      "url": "https://dental.jkkn.ac.in"
+      "url": "https://dental.jkkn.ac.in/",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Natarajapuram, NH-544, Salem-Coimbatore Highway",
+        "addressLocality": "Komarapalayam",
+        "addressRegion": "Tamil Nadu",
+        "postalCode": "638183",
+        "addressCountry": "IN"
+      }
     },
-    "courseCode": "BDS",
-    "educationalCredentialAwarded": "Bachelor of Dental Surgery",
+    "educationalCredentialAwarded": "BDS (Bachelor of Dental Surgery)",
     "timeRequired": "P5Y",
-    "occupationalCredentialAwarded": "Dental Surgeon",
+    "occupationalCategory": "Dentist",
+    "coursePrerequisites": "10+2 with Physics, Chemistry, Biology (PCB) with minimum 50% aggregate; NEET-UG qualification required",
+    "numberOfCredits": "240",
     "hasCourseInstance": {
       "@type": "CourseInstance",
       "courseMode": "Full-time",
-      "duration": "P5Y"
+      "courseWorkload": "PT5Y",
+      "startDate": "2026-09",
+      "endDate": "2031-08",
+      "instructor": {
+        "@type": "Person",
+        "name": "Department of Dental Sciences Faculty"
+      }
+    },
+    "offers": {
+      "@type": "Offer",
+      "category": "Government Quota / Management Quota",
+      "availability": "https://schema.org/InStock",
+      "url": "https://admission.jkkn.ac.in/"
     }
   };
 
@@ -94,6 +116,11 @@ export default function BDSProgram() {
     <main className="overflow-x-hidden">
       <StructuredData data={courseSchema} />
       <StructuredData data={faqSchema} />
+      <BreadcrumbSchema items={[
+        { name: 'JKKN Institutions', url: 'https://jkkn.ac.in/' },
+        { name: 'Dental College', url: 'https://dental.jkkn.ac.in/' },
+        { name: 'BDS Program', url: 'https://dental.jkkn.ac.in/academics/details-of-academic-programs/bds/' },
+      ]} />
       <Header />
       <Breadcrumb items={[
         { name: 'Home', url: 'https://dental.jkkn.ac.in' },

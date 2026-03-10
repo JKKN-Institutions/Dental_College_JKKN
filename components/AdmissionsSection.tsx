@@ -61,6 +61,42 @@ export default function AdmissionsSection() {
               </div>
             </div>
 
+            {/* Eligibility Comparison Table */}
+            <div className="overflow-x-auto mb-6 sm:mb-8">
+              <h3 className="text-lg sm:text-xl font-bold text-[#006837] mb-4">Eligibility Criteria at a Glance</h3>
+              <table className="w-full border-collapse bg-white rounded-xl shadow-md overflow-hidden text-sm">
+                <thead>
+                  <tr className="bg-[#006837] text-white">
+                    <th className="px-3 py-2.5 text-left font-semibold">Criteria</th>
+                    <th className="px-3 py-2.5 text-left font-semibold">BDS</th>
+                    <th className="px-3 py-2.5 text-left font-semibold">MDS</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="border-b border-gray-100">
+                    <td className="px-3 py-2.5 text-gray-700 font-medium">Qualification</td>
+                    <td className="px-3 py-2.5 text-gray-600">10+2 with PCB</td>
+                    <td className="px-3 py-2.5 text-gray-600">BDS from DCI-recognized college</td>
+                  </tr>
+                  <tr className="border-b border-gray-100 bg-gray-50">
+                    <td className="px-3 py-2.5 text-gray-700 font-medium">Min. Marks</td>
+                    <td className="px-3 py-2.5 text-gray-600">50% (40% reserved)</td>
+                    <td className="px-3 py-2.5 text-gray-600">Pass in BDS</td>
+                  </tr>
+                  <tr className="border-b border-gray-100">
+                    <td className="px-3 py-2.5 text-gray-700 font-medium">Entrance Exam</td>
+                    <td className="px-3 py-2.5 text-gray-600">NEET-UG</td>
+                    <td className="px-3 py-2.5 text-gray-600">NEET-MDS</td>
+                  </tr>
+                  <tr className="bg-gray-50">
+                    <td className="px-3 py-2.5 text-gray-700 font-medium">Internship Required</td>
+                    <td className="px-3 py-2.5 text-gray-600">Not required</td>
+                    <td className="px-3 py-2.5 text-gray-600">Compulsory rotating internship</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
             {/* Buttons */}
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
               <a
