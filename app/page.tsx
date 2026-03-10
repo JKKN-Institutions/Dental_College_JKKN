@@ -240,6 +240,257 @@ export default function Home() {
     }
   };
 
+  // Schema #1: MedicalOrganization + Dentist
+  const medicalOrgSchema = {
+    "@context": "https://schema.org",
+    "@type": ["MedicalOrganization", "Dentist"],
+    "@id": "https://dental.jkkn.ac.in/#organization",
+    "name": "JKKN Dental College & Hospital",
+    "alternateName": "JKKN Dental College",
+    "url": "https://dental.jkkn.ac.in/",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://dental.jkkn.ac.in/logo.png",
+      "width": 300,
+      "height": 100
+    },
+    "image": [
+      "https://dental.jkkn.ac.in/images/campus-aerial.jpg",
+      "https://dental.jkkn.ac.in/images/dental-hospital.jpg",
+      "https://dental.jkkn.ac.in/images/simulation-lab.jpg"
+    ],
+    "description": "JKKN Dental College & Hospital, established in 1987, is a DCI-approved and NAAC A Grade accredited dental institution offering BDS and MDS programs. Located on India's first AI-integrated campus, the college features 200+ dental chairs, a 100+ bed multi-specialty dental hospital, and treats 500+ patients daily. Affiliated to Tamil Nadu Dr. M.G.R. Medical University with 92% placement rate and 3000+ alumni worldwide.",
+    "foundingDate": "1987",
+    "telephone": "+919345855001",
+    "email": "dental@jkkn.ac.in",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "NH-544 (Salem to Coimbatore Highway), Natarajapuram",
+      "addressLocality": "Komarapalayam",
+      "addressRegion": "Tamil Nadu",
+      "postalCode": "638183",
+      "addressCountry": "IN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 11.4087,
+      "longitude": 77.7192
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "opens": "09:00",
+        "closes": "17:00"
+      }
+    ],
+    "medicalSpecialty": [
+      "Dentistry",
+      "Periodontics",
+      "Orthodontics",
+      "Prosthodontics",
+      "Endodontics",
+      "Oral Medicine",
+      "Oral Radiology",
+      "Oral and Maxillofacial Surgery",
+      "Pediatric Dentistry",
+      "Public Health Dentistry"
+    ],
+    "numberOfBeds": "100+",
+    "areaServed": [
+      { "@type": "State", "name": "Tamil Nadu" },
+      { "@type": "Country", "name": "India" }
+    ],
+    "parentOrganization": {
+      "@type": "EducationalOrganization",
+      "@id": "https://jkkn.ac.in/#organization",
+      "name": "JKKN Institutions",
+      "url": "https://jkkn.ac.in/"
+    },
+    "hasCredential": [
+      {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "Accreditation",
+        "recognizedBy": { "@type": "Organization", "name": "Dental Council of India", "alternateName": "DCI" }
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "Accreditation",
+        "recognizedBy": { "@type": "Organization", "name": "National Medical Commission", "alternateName": "NMC" }
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "Accreditation",
+        "recognizedBy": { "@type": "Organization", "name": "National Assessment and Accreditation Council", "alternateName": "NAAC" },
+        "description": "NAAC A Grade Accredited"
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "Affiliation",
+        "recognizedBy": { "@type": "CollegeOrUniversity", "name": "Tamil Nadu Dr. M.G.R. Medical University", "url": "https://www.tnmgrmu.ac.in/" }
+      }
+    ],
+    "knowsAbout": [
+      "Dental Surgery",
+      "Orthodontic Treatment",
+      "Periodontal Therapy",
+      "Prosthodontic Rehabilitation",
+      "Endodontic Treatment",
+      "Oral Radiology and Diagnostics",
+      "Preventive Dentistry",
+      "Dental Implantology",
+      "Cosmetic Dentistry",
+      "Oral and Maxillofacial Surgery"
+    ],
+    "sameAs": [
+      "https://www.facebook.com/jkkndentalcollege",
+      "https://www.instagram.com/jkkndentalcollege",
+      "https://www.youtube.com/@jkkndentalcollege",
+      "https://www.linkedin.com/company/jkkndentalcollege",
+      "https://twitter.com/jkkndentalcollege",
+      "https://maps.app.goo.gl/mXx6rFRqpS9U76BK6"
+    ]
+  };
+
+  // Schema #2: Dentist (LocalBusiness) with AggregateRating
+  const dentistLocalSchema = {
+    "@context": "https://schema.org",
+    "@type": "Dentist",
+    "@id": "https://dental.jkkn.ac.in/#localbusiness",
+    "name": "JKKN Dental College & Hospital",
+    "url": "https://dental.jkkn.ac.in/",
+    "image": "https://dental.jkkn.ac.in/images/dental-hospital-exterior.jpg",
+    "telephone": "+919345855001",
+    "email": "dental@jkkn.ac.in",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "NH-544 (Salem to Coimbatore Highway), Natarajapuram",
+      "addressLocality": "Komarapalayam",
+      "addressRegion": "Tamil Nadu",
+      "postalCode": "638183",
+      "addressCountry": "IN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 11.4087,
+      "longitude": 77.7192
+    },
+    "hasMap": "https://maps.app.goo.gl/mXx6rFRqpS9U76BK6",
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Monday", "opens": "09:00", "closes": "17:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Tuesday", "opens": "09:00", "closes": "17:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Wednesday", "opens": "09:00", "closes": "17:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Thursday", "opens": "09:00", "closes": "17:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "09:00", "closes": "17:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "17:00" }
+    ],
+    "areaServed": [
+      { "@type": "City", "name": "Namakkal" },
+      { "@type": "City", "name": "Salem" },
+      { "@type": "City", "name": "Erode" },
+      { "@type": "City", "name": "Tiruchengode" },
+      { "@type": "City", "name": "Komarapalayam" },
+      { "@type": "State", "name": "Tamil Nadu" }
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.5",
+      "bestRating": "5",
+      "worstRating": "1",
+      "ratingCount": "350",
+      "reviewCount": "280"
+    }
+  };
+
+  // Schema #5: WebSite + SearchAction
+  const websiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "https://dental.jkkn.ac.in/#website",
+    "name": "JKKN Dental College & Hospital",
+    "alternateName": "JKKN Dental College",
+    "url": "https://dental.jkkn.ac.in/",
+    "description": "Official website of JKKN Dental College & Hospital – DCI approved, NAAC A Grade accredited dental institution offering BDS and MDS programs in Komarapalayam, Tamil Nadu.",
+    "publisher": {
+      "@type": "CollegeOrUniversity",
+      "@id": "https://dental.jkkn.ac.in/#organization",
+      "name": "JKKN Dental College & Hospital"
+    },
+    "inLanguage": "en",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://dental.jkkn.ac.in/search?q={search_term_string}"
+      },
+      "query-input": "required name=search_term_string"
+    }
+  };
+
+  // Schema #8a: WebPage with Speakable
+  const webPageSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://dental.jkkn.ac.in/#webpage",
+    "name": "JKKN Dental College & Hospital – DCI Approved Dental College in Tamil Nadu",
+    "url": "https://dental.jkkn.ac.in/",
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": [
+        ".hero-description",
+        ".institution-highlights",
+        ".admission-cta"
+      ],
+      "xpath": [
+        "/html/head/meta[@name='description']/@content"
+      ]
+    },
+    "description": "JKKN Dental College & Hospital, established in 1987, is a DCI approved and NAAC A Grade accredited dental college offering BDS and MDS programs. Located on India's first AI-integrated campus in Komarapalayam, Tamil Nadu, with 200+ dental chairs, 100+ bed hospital, and 92% placement rate. Apply now for 2026-27 admissions."
+  };
+
+  // Schema #10: Organization sameAs Enhancement
+  const orgSameAsSchema = {
+    "@context": "https://schema.org",
+    "@type": "CollegeOrUniversity",
+    "@id": "https://dental.jkkn.ac.in/#college",
+    "name": "JKKN Dental College & Hospital",
+    "url": "https://dental.jkkn.ac.in/",
+    "sameAs": [
+      "https://www.facebook.com/jkkndentalcollege",
+      "https://www.instagram.com/jkkndentalcollege",
+      "https://www.youtube.com/@jkkndentalcollege",
+      "https://www.linkedin.com/company/jkkndentalcollege",
+      "https://twitter.com/jkkndentalcollege",
+      "https://en.wikipedia.org/wiki/JKKN_Dental_College",
+      "https://maps.app.goo.gl/mXx6rFRqpS9U76BK6",
+      "https://admission.jkkn.ac.in/",
+      "https://placements.jkkn.ac.in/",
+      "https://jkkn.ac.in/"
+    ],
+    "parentOrganization": {
+      "@type": "EducationalOrganization",
+      "@id": "https://jkkn.ac.in/#organization",
+      "name": "JKKN Institutions",
+      "url": "https://jkkn.ac.in/"
+    }
+  };
+
+  // Schema #4a: BreadcrumbList – Homepage
+  const homeBreadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://dental.jkkn.ac.in/"
+      }
+    ]
+  };
+
   const localBusinessSchema = {
     "@context": "https://schema.org",
     "@type": "Dentist",
@@ -289,6 +540,12 @@ export default function Home() {
 
   return (
     <main className="overflow-x-hidden w-full">
+      <StructuredData data={medicalOrgSchema} />
+      <StructuredData data={dentistLocalSchema} />
+      <StructuredData data={websiteSchema} />
+      <StructuredData data={webPageSchema} />
+      <StructuredData data={orgSameAsSchema} />
+      <StructuredData data={homeBreadcrumbSchema} />
       <StructuredData data={localBusinessSchema} />
       <StructuredData data={principalSchema} />
       <StructuredData data={bdsSchema} />

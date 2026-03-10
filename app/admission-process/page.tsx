@@ -3,6 +3,7 @@ import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import Link from 'next/link';
 import { Metadata } from 'next';
+import StructuredData from '@/components/StructuredData';
 
 export const metadata: Metadata = {
   title: 'Admission Process 2025 | Step-by-Step Guide | JKKN Dental College',
@@ -11,8 +12,89 @@ export const metadata: Metadata = {
 };
 
 export default function AdmissionProcess() {
+  // Schema #6: HowTo – How to Apply for BDS
+  const howToSchema = {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "How to Apply for BDS at JKKN Dental College & Hospital",
+    "description": "Step-by-step guide for admission to the Bachelor of Dental Surgery (BDS) program at JKKN Dental College & Hospital, Komarapalayam. Covers eligibility verification, NEET-UG, counselling registration, seat allotment, and campus reporting.",
+    "image": "https://dental.jkkn.ac.in/images/admission-process.jpg",
+    "totalTime": "P90D",
+    "estimatedCost": {
+      "@type": "MonetaryAmount",
+      "currency": "INR",
+      "value": "[PLACEHOLDER – Contact admissions for current fee structure]"
+    },
+    "supply": [
+      { "@type": "HowToSupply", "name": "10+2 Mark Sheet (with Physics, Chemistry, Biology)" },
+      { "@type": "HowToSupply", "name": "NEET-UG Scorecard" },
+      { "@type": "HowToSupply", "name": "Community Certificate (if applicable)" },
+      { "@type": "HowToSupply", "name": "Transfer Certificate from last institution attended" },
+      { "@type": "HowToSupply", "name": "Passport-size photographs (6 copies)" },
+      { "@type": "HowToSupply", "name": "Aadhaar Card" },
+      { "@type": "HowToSupply", "name": "Income Certificate (for fee concession, if applicable)" }
+    ],
+    "tool": [
+      { "@type": "HowToTool", "name": "NEET-UG Registration Portal (neet.nta.nic.in)" },
+      { "@type": "HowToTool", "name": "State Counselling Portal (Tamil Nadu Health Department)" },
+      { "@type": "HowToTool", "name": "JKKN Admissions Portal (admission.jkkn.ac.in)" }
+    ],
+    "step": [
+      {
+        "@type": "HowToStep",
+        "position": 1,
+        "name": "Check Eligibility Criteria",
+        "text": "Verify that you meet the BDS eligibility requirements: completion of 10+2 (or equivalent) with Physics, Chemistry, and Biology, minimum 50% aggregate marks (40% for reserved categories), and minimum age of 17 years at the time of admission.",
+        "url": "https://dental.jkkn.ac.in/bds/#eligibility"
+      },
+      {
+        "@type": "HowToStep",
+        "position": 2,
+        "name": "Appear for NEET-UG Examination",
+        "text": "Register for and appear in the National Eligibility cum Entrance Test – Undergraduate (NEET-UG) conducted by the National Testing Agency (NTA). NEET-UG qualification is mandatory for BDS admission at all dental colleges in India.",
+        "url": "https://neet.nta.nic.in/"
+      },
+      {
+        "@type": "HowToStep",
+        "position": 3,
+        "name": "Register for State Counselling",
+        "text": "After NEET-UG results are declared, register on the Tamil Nadu State Health Department counselling portal for state-level BDS seat allotment. Complete the registration with required documents and counselling fee payment.",
+        "url": "https://dental.jkkn.ac.in/admissions/#counselling"
+      },
+      {
+        "@type": "HowToStep",
+        "position": 4,
+        "name": "Fill College Choices and Preferences",
+        "text": "During the counselling process, select JKKN Dental College & Hospital as your preferred college. You can list multiple colleges in order of preference. Ensure JKKN Dental College is ranked high in your choice list for the best chance of allotment.",
+        "url": "https://dental.jkkn.ac.in/admissions/"
+      },
+      {
+        "@type": "HowToStep",
+        "position": 5,
+        "name": "Receive Seat Allotment",
+        "text": "Wait for the counselling authority to publish the seat allotment results. If allotted a seat at JKKN Dental College, download the provisional allotment letter. If not allotted in the first round, participate in subsequent counselling rounds.",
+        "url": "https://dental.jkkn.ac.in/admissions/"
+      },
+      {
+        "@type": "HowToStep",
+        "position": 6,
+        "name": "Report to Campus with Documents",
+        "text": "Visit JKKN Dental College & Hospital campus in Komarapalayam within the reporting deadline. Bring all original documents: 10+2 mark sheet, NEET scorecard, allotment letter, community certificate, transfer certificate, Aadhaar card, passport-size photos, and income certificate if applicable.",
+        "url": "https://dental.jkkn.ac.in/contact/"
+      },
+      {
+        "@type": "HowToStep",
+        "position": 7,
+        "name": "Pay Fees and Confirm Admission",
+        "text": "Complete the fee payment as per the fee structure prescribed by the Tamil Nadu state fee committee. Submit the signed admission form, collect your student ID, and confirm your enrollment in the BDS program at JKKN Dental College & Hospital.",
+        "url": "https://admission.jkkn.ac.in/"
+      }
+    ]
+  };
+
   return (
     <main className="overflow-x-hidden">
+      <StructuredData data={howToSchema} />
       <Header />
 
       {/* Hero Section */}

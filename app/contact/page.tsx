@@ -26,11 +26,22 @@ export default function Contact() {
     dateModified: '2025-02-13'
   });
 
+  // Schema #4e: BreadcrumbList – /contact Page
+  const contactBreadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://dental.jkkn.ac.in/" },
+      { "@type": "ListItem", "position": 2, "name": "Contact Us", "item": "https://dental.jkkn.ac.in/contact/" }
+    ]
+  };
+
   return (
     <main className="overflow-x-hidden">
       <StructuredData data={breadcrumbSchema} />
       <StructuredData data={contactPageSchema} />
       <StructuredData data={webPageSchema} />
+      <StructuredData data={contactBreadcrumbSchema} />
       <Header />
 
       {/* Page Content */}

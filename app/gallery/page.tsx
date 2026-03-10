@@ -4,6 +4,7 @@ import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import { Metadata } from 'next';
 import { createClient } from '@/lib/supabase/server';
 import GalleryCarousel, { GalleryImage } from '@/components/GalleryCarousel';
+import StructuredData from '@/components/StructuredData';
 
 export const revalidate = 60;
 
@@ -58,8 +59,19 @@ export default async function Gallery() {
     albumImages = (imgs ?? []) as AlbumImage[];
   }
 
+  // Schema #4g: BreadcrumbList – /gallery Page
+  const galleryBreadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://dental.jkkn.ac.in/" },
+      { "@type": "ListItem", "position": 2, "name": "Gallery", "item": "https://dental.jkkn.ac.in/gallery/" }
+    ]
+  };
+
   return (
     <main className="overflow-x-hidden">
+      <StructuredData data={galleryBreadcrumbSchema} />
       <Header />
 
       <div className="bg-[#FBF8F3] py-8 sm:py-10 md:py-12 lg:py-16 px-4 sm:px-6">
