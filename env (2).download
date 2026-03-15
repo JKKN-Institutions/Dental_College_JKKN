@@ -1,0 +1,57 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# Supabase (shared across all college sites — same project)
+# ─────────────────────────────────────────────────────────────────────────────
+NEXT_PUBLIC_SUPABASE_URL=https://czjzizrzmqcdwgtxwuks.supabase.co
+NEXT_PUBLIC_SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImN6anppenJ6bXFjZHdndHh3dWtzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzIwMTY1OTMsImV4cCI6MjA4NzU5MjU5M30.Kv-nlx7-F7KFIQWr5NNj9OIELkD1iKhgTB_QLm1sIVU
+
+# ─────────────────────────────────────────────────────────────────────────────
+# College identity  (change these per-site deployment)
+# ─────────────────────────────────────────────────────────────────────────────
+
+# Unique identifier — must match the `id` column in the `colleges` table
+# Options: education | ahs | arts | dental | nursing | pharmacy
+NEXT_PUBLIC_COLLEGE_ID=dental
+
+# Full institution name (used in metadata, header, footer, login page)
+NEXT_PUBLIC_COLLEGE_NAME=JKKN DENTAL COLLEGE AND HOSPITAL
+
+# Short name (used in admin sidebar, compact UI)
+NEXT_PUBLIC_COLLEGE_SHORT_NAME=JKKN Dental College
+
+# Tagline shown on the hero / homepage
+NEXT_PUBLIC_COLLEGE_TAGLINE=Transform Your Future at Tamil Nadu's Premier Dental College
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Branding / colors  (hex values, no quotes needed)
+# ─────────────────────────────────────────────────────────────────────────────
+NEXT_PUBLIC_PRIMARY_COLOR=#006837
+NEXT_PUBLIC_PRIMARY_DARK=#002309
+NEXT_PUBLIC_PRIMARY_MID=#004d28
+NEXT_PUBLIC_PRIMARY_HOVER=#005a2e
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Contact details
+# ─────────────────────────────────────────────────────────────────────────────
+NEXT_PUBLIC_COLLEGE_PHONE=+919345855001
+NEXT_PUBLIC_COLLEGE_EMAIL=dental@jkkn.ac.in
+NEXT_PUBLIC_COLLEGE_ADDRESS=JKKN Dental College & Hospital NH-544 (Salem To Coimbatore National Highway), Komarapalayam, Namakkal District, Tamil Nadu - 638183
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Google Maps embed URL (from Google Maps > Share > Embed a map)
+# ─────────────────────────────────────────────────────────────────────────────
+NEXT_PUBLIC_MAPS_EMBED_URL=https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d250271.28006230123!2d77.730985!3d11.444606!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba9681d0e14f271%3A0x811ca6d2df6b69f9!2sJKKN%20Dental%20College%20and%20Hospital!5e0!3m2!1sen!2sin!4v1772257340710!5m2!1sen!2sin
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Admission form URL (can differ per college)
+# ─────────────────────────────────────────────────────────────────────────────
+NEXT_PUBLIC_ADMISSION_FORM_URL=https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Site domain (used for canonical URLs)
+# ─────────────────────────────────────────────────────────────────────────────
+NEXT_PUBLIC_SITE_DOMAIN=dental.jkkn.ac.in
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Logo path (relative to /public directory)
+# ─────────────────────────────────────────────────────────────────────────────
+NEXT_PUBLIC_LOGO_PATH=/images/dental-logo.png
