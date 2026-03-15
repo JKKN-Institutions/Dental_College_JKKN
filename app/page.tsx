@@ -17,11 +17,11 @@ const FacultySection = dynamic(() => import('@/components/FacultySection'));
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Best Dental College in Tamilnadu | JKKN Dental College',
+  title: 'Best Dental College Near Erode | JKKN Dental College & Hospital',
   description: 'JKKN Dental College & Hospital is one of the best dental college in Tamilnadu. DCI approved with excellent placements, modern labs & attached hospital.',
   keywords: 'best dental college in tamilnadu, private dental colleges in tamilnadu, top 10 dental colleges in tamilnadu, top dental colleges in tamilnadu, list of dental colleges in tamilnadu, self financing dental colleges in tamilnadu, list of private dental colleges in tamilnadu',
   openGraph: {
-    title: 'Best Dental College in Tamilnadu | JKKN Dental College',
+    title: 'Best Dental College Near Erode | JKKN Dental College & Hospital',
     description: 'JKKN Dental College & Hospital is one of the best dental college in Tamilnadu. DCI approved with excellent placements, modern labs & attached hospital.',
     url: 'https://dental.jkkn.ac.in',
     siteName: 'JKKN Dental College & Hospital',
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Best Dental College in Tamilnadu | JKKN Dental College',
+    title: 'Best Dental College Near Erode | JKKN Dental College & Hospital',
     description: 'JKKN Dental College & Hospital is one of the best dental college in Tamilnadu. DCI approved with excellent placements, modern labs & attached hospital.',
     images: ['/images/dental-logo.png'],
   },
@@ -87,7 +87,15 @@ export default function Home() {
       "@type": "Offer",
       "category": "Government Quota / Management Quota",
       "availability": "https://schema.org/InStock",
-      "url": "https://admission.jkkn.ac.in/"
+      "url": "https://admission.jkkn.ac.in/",
+      "priceSpecification": {
+        "@type": "PriceSpecification",
+        "priceCurrency": "INR",
+        "minPrice": "300000",
+        "maxPrice": "500000",
+        "unitText": "per year",
+        "description": "Approximate annual tuition fee for BDS program. Actual fees may vary."
+      }
     }
   };
 
@@ -112,7 +120,21 @@ export default function Home() {
       { "@type": "CourseInstance", "name": "MDS Prosthodontics Crown & Bridge", "courseMode": "Full-time" },
       { "@type": "CourseInstance", "name": "MDS Conservative Dentistry & Endodontics", "courseMode": "Full-time" },
       { "@type": "CourseInstance", "name": "MDS Oral Medicine", "courseMode": "Full-time" }
-    ]
+    ],
+    "offers": {
+      "@type": "Offer",
+      "category": "Government Quota / Management Quota",
+      "availability": "https://schema.org/InStock",
+      "url": "https://admission.jkkn.ac.in/",
+      "priceSpecification": {
+        "@type": "PriceSpecification",
+        "priceCurrency": "INR",
+        "minPrice": "800000",
+        "maxPrice": "1500000",
+        "unitText": "per year",
+        "description": "Approximate annual tuition fee for MDS program. Actual fees may vary by specialization."
+      }
+    }
   };
 
   // College/University Schema
@@ -132,7 +154,7 @@ export default function Home() {
       "postalCode": "638183",
       "addressCountry": "IN"
     },
-    "telephone": "+91 93458 55001",
+    "telephone": "+919345855001",
     "email": "dental@jkkn.ac.in",
     "foundingDate": "1987",
     "knowsAbout": [
@@ -152,9 +174,31 @@ export default function Home() {
       "Affiliated to The Tamil Nadu Dr. M.G.R. Medical University"
     ],
     "sameAs": [
-      "https://www.facebook.com/jkkndentalcollege",
-      "https://www.instagram.com/jkkndental",
-      "https://www.linkedin.com/company/jkkn-dental"
+      "https://www.facebook.com/jkkndental/",
+      "https://www.instagram.com/jkkndental/",
+      "https://www.linkedin.com/school/jkkndental/",
+      "https://www.youtube.com/playlist?list=PL6QsTq-__HhvqQ28WcrDAwPa9jeMSK3AO",
+      "https://maps.app.goo.gl/mXx6rFRqpS9U76BK6"
+    ],
+    "parentOrganization": {
+      "@type": "EducationalOrganization",
+      "@id": "https://jkkn.ac.in/#organization",
+      "name": "JKKN Institutions",
+      "url": "https://jkkn.ac.in/"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 11.4446,
+      "longitude": 77.7310
+    },
+    "areaServed": [
+      { "@type": "City", "name": "Namakkal" },
+      { "@type": "City", "name": "Salem" },
+      { "@type": "City", "name": "Erode" },
+      { "@type": "City", "name": "Coimbatore" },
+      { "@type": "City", "name": "Tiruchengode" },
+      { "@type": "City", "name": "Komarapalayam" },
+      { "@type": "State", "name": "Tamil Nadu" }
     ]
   };
 
@@ -223,22 +267,23 @@ export default function Home() {
   };
 
   // Principal/Dean Person Schema
-  const principalSchema = {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Dr. [Principal Name]",
-    "jobTitle": "Principal & Dean",
-    "worksFor": {
-      "@type": "CollegeOrUniversity",
-      "name": "JKKN Dental College & Hospital",
-      "url": "https://dental.jkkn.ac.in/"
-    },
-    "alumniOf": "Tamil Nadu Dr. MGR Medical University",
-    "hasCredential": {
-      "@type": "EducationalOccupationalCredential",
-      "credentialCategory": "MDS, PhD"
-    }
-  };
+  // [UPDATE: Add actual principal name, qualifications, and uncomment this block]
+  // const principalSchema = {
+  //   "@context": "https://schema.org",
+  //   "@type": "Person",
+  //   "name": "Dr. [Principal Name]",
+  //   "jobTitle": "Principal & Dean",
+  //   "worksFor": {
+  //     "@type": "CollegeOrUniversity",
+  //     "name": "JKKN Dental College & Hospital",
+  //     "url": "https://dental.jkkn.ac.in/"
+  //   },
+  //   "alumniOf": "Tamil Nadu Dr. MGR Medical University",
+  //   "hasCredential": {
+  //     "@type": "EducationalOccupationalCredential",
+  //     "credentialCategory": "MDS, PhD"
+  //   }
+  // };
 
   // Schema #1: MedicalOrganization + Dentist
   const medicalOrgSchema = {
@@ -274,8 +319,8 @@ export default function Home() {
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": 11.4087,
-      "longitude": 77.7192
+      "latitude": 11.4446,
+      "longitude": 77.7310
     },
     "openingHoursSpecification": [
       {
@@ -344,11 +389,10 @@ export default function Home() {
       "Oral and Maxillofacial Surgery"
     ],
     "sameAs": [
-      "https://www.facebook.com/jkkndentalcollege",
-      "https://www.instagram.com/jkkndentalcollege",
-      "https://www.youtube.com/@jkkndentalcollege",
-      "https://www.linkedin.com/company/jkkndentalcollege",
-      "https://twitter.com/jkkndentalcollege",
+      "https://www.facebook.com/jkkndental/",
+      "https://www.instagram.com/jkkndental/",
+      "https://www.linkedin.com/school/jkkndental/",
+      "https://www.youtube.com/playlist?list=PL6QsTq-__HhvqQ28WcrDAwPa9jeMSK3AO",
       "https://maps.app.goo.gl/mXx6rFRqpS9U76BK6"
     ]
   };
@@ -374,8 +418,8 @@ export default function Home() {
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": 11.4087,
-      "longitude": 77.7192
+      "latitude": 11.4446,
+      "longitude": 77.7310
     },
     "hasMap": "https://maps.app.goo.gl/mXx6rFRqpS9U76BK6",
     "openingHoursSpecification": [
@@ -392,6 +436,7 @@ export default function Home() {
       { "@type": "City", "name": "Erode" },
       { "@type": "City", "name": "Tiruchengode" },
       { "@type": "City", "name": "Komarapalayam" },
+      { "@type": "City", "name": "Coimbatore" },
       { "@type": "State", "name": "Tamil Nadu" }
     ],
     "aggregateRating": {
@@ -458,12 +503,10 @@ export default function Home() {
     "name": "JKKN Dental College & Hospital",
     "url": "https://dental.jkkn.ac.in/",
     "sameAs": [
-      "https://www.facebook.com/jkkndentalcollege",
-      "https://www.instagram.com/jkkndentalcollege",
-      "https://www.youtube.com/@jkkndentalcollege",
-      "https://www.linkedin.com/company/jkkndentalcollege",
-      "https://twitter.com/jkkndentalcollege",
-      "https://en.wikipedia.org/wiki/JKKN_Dental_College",
+      "https://www.facebook.com/jkkndental/",
+      "https://www.instagram.com/jkkndental/",
+      "https://www.linkedin.com/school/jkkndental/",
+      "https://www.youtube.com/playlist?list=PL6QsTq-__HhvqQ28WcrDAwPa9jeMSK3AO",
       "https://maps.app.goo.gl/mXx6rFRqpS9U76BK6",
       "https://admission.jkkn.ac.in/",
       "https://placements.jkkn.ac.in/",
@@ -511,8 +554,8 @@ export default function Home() {
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": 11.4333,
-      "longitude": 77.7167
+      "latitude": 11.4446,
+      "longitude": 77.7310
     },
     "openingHoursSpecification": [
       {
@@ -534,6 +577,10 @@ export default function Home() {
       "Community Dentistry"
     ],
     "sameAs": [
+      "https://www.facebook.com/jkkndental/",
+      "https://www.instagram.com/jkkndental/",
+      "https://www.linkedin.com/school/jkkndental/",
+      "https://www.youtube.com/playlist?list=PL6QsTq-__HhvqQ28WcrDAwPa9jeMSK3AO",
       "https://maps.app.goo.gl/mXx6rFRqpS9U76BK6"
     ]
   };
@@ -547,7 +594,8 @@ export default function Home() {
       <StructuredData data={orgSameAsSchema} />
       <StructuredData data={homeBreadcrumbSchema} />
       <StructuredData data={localBusinessSchema} />
-      <StructuredData data={principalSchema} />
+      {/* [UPDATE: Uncomment when principal name is confirmed] */}
+      {/* <StructuredData data={principalSchema} /> */}
       <StructuredData data={bdsSchema} />
       <StructuredData data={mdsSchema} />
       <StructuredData data={collegeSchema} />

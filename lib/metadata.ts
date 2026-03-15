@@ -17,7 +17,7 @@ export const organizationInfo = {
     addressCountry: "IN"
   },
   contactPoint: {
-    telephone: "+91-93458-55001",
+    telephone: "+919345855001",
     email: "dental@jkkn.ac.in",
     contactType: "Admissions"
   },

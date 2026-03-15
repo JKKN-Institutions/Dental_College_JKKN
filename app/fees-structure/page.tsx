@@ -21,7 +21,7 @@ const structuredData = {
     {
       "@type": "Course",
       "name": "Bachelor of Dental Surgery (BDS)",
-      "description": "4-year undergraduate dental program plus 1-year internship",
+      "description": "4-year undergraduate dental program plus 1-year internship at JKKN Dental College & Hospital, DCI approved",
       "provider": {
         "@type": "EducationalOrganization",
         "name": "JKKN Dental College & Hospital"
@@ -32,16 +32,23 @@ const structuredData = {
         "duration": "P5Y",
         "offers": {
           "@type": "Offer",
-          "price": "To be verified with college",
           "priceCurrency": "INR",
-          "category": "Tuition Fee per year"
+          "category": "Tuition Fee per year",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "priceCurrency": "INR",
+            "minPrice": "300000",
+            "maxPrice": "500000",
+            "unitText": "per year",
+            "description": "Approximate annual tuition fee. Actual fees may vary."
+          }
         }
       }
     },
     {
       "@type": "Course",
       "name": "Master of Dental Surgery (MDS)",
-      "description": "3-year postgraduate dental specialization programs",
+      "description": "3-year postgraduate dental specialization programs at JKKN Dental College & Hospital, DCI approved",
       "provider": {
         "@type": "EducationalOrganization",
         "name": "JKKN Dental College & Hospital"
@@ -52,9 +59,16 @@ const structuredData = {
         "duration": "P3Y",
         "offers": {
           "@type": "Offer",
-          "price": "To be verified with college",
           "priceCurrency": "INR",
-          "category": "Tuition Fee per year"
+          "category": "Tuition Fee per year",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "priceCurrency": "INR",
+            "minPrice": "800000",
+            "maxPrice": "1500000",
+            "unitText": "per year",
+            "description": "Approximate annual tuition fee. Actual fees may vary by specialization."
+          }
         }
       }
     }
@@ -106,9 +120,8 @@ export default function FeesStructure() {
                 <AlertTriangle className="w-5 h-5 inline-block mr-2" /> Important: Fee Verification Required
               </p>
               <p className="text-sm text-gray-700">
-                The fee amounts listed below are indicative and need to be verified with the college admission office.
-                Actual fees may vary based on regulations, government policies, and annual revisions. For accurate and current fee information,
-                please contact the admission office directly at <a href="tel:+919345855001" className="text-[#006837] font-semibold hover:underline">+91 93458 55001</a> or
+                *Fee amounts shown are approximate ranges and subject to change based on government regulations, fee fixation committee decisions, and annual revisions.
+                Contact the admissions office for exact, current fee details at <a href="tel:+919345855001" className="text-[#006837] font-semibold hover:underline">+91 93458 55001</a> or
                 email <a href="mailto:dental@jkkn.ac.in" className="text-[#006837] font-semibold hover:underline">dental@jkkn.ac.in</a>.
               </p>
             </div>
@@ -141,7 +154,7 @@ export default function FeesStructure() {
               <tbody className="divide-y divide-gray-300">
                 <tr className="hover:bg-white transition-colors">
                   <td className="px-6 py-4 font-semibold text-gray-800">Tuition Fee</td>
-                  <td className="px-6 py-4 text-right text-gray-800">Contact College</td>
+                  <td className="px-6 py-4 text-right text-gray-800">&#8377;3,00,000 - &#8377;5,00,000*</td>
                   <td className="px-6 py-4 text-gray-600">Per Year</td>
                 </tr>
                 <tr className="hover:bg-white transition-colors">
@@ -171,7 +184,7 @@ export default function FeesStructure() {
                 </tr>
                 <tr className="bg-[#006837] text-white font-bold">
                   <td className="px-6 py-4">Total Approximate Annual Fee</td>
-                  <td className="px-6 py-4 text-right">Contact for Details</td>
+                  <td className="px-6 py-4 text-right">&#8377;3,00,000 - &#8377;5,00,000*</td>
                   <td className="px-6 py-4">Per Year</td>
                 </tr>
               </tbody>
@@ -225,27 +238,27 @@ export default function FeesStructure() {
                 <tr className="hover:bg-[#FBFBEE] transition-colors">
                   <td className="px-6 py-4 font-semibold text-gray-800">Periodontics</td>
                   <td className="px-6 py-4 text-center text-gray-800">4</td>
-                  <td className="px-6 py-4 text-right text-gray-800">Contact College</td>
+                  <td className="px-6 py-4 text-right text-gray-800">&#8377;8,00,000 - &#8377;15,00,000*</td>
                 </tr>
                 <tr className="hover:bg-[#FBFBEE] transition-colors">
                   <td className="px-6 py-4 font-semibold text-gray-800">Orthodontics and Dentofacial Orthopedics</td>
                   <td className="px-6 py-4 text-center text-gray-800">4</td>
-                  <td className="px-6 py-4 text-right text-gray-800">Contact College</td>
+                  <td className="px-6 py-4 text-right text-gray-800">&#8377;8,00,000 - &#8377;15,00,000*</td>
                 </tr>
                 <tr className="hover:bg-[#FBFBEE] transition-colors">
                   <td className="px-6 py-4 font-semibold text-gray-800">Prosthodontics Crown and Bridge</td>
                   <td className="px-6 py-4 text-center text-gray-800">4</td>
-                  <td className="px-6 py-4 text-right text-gray-800">Contact College</td>
+                  <td className="px-6 py-4 text-right text-gray-800">&#8377;8,00,000 - &#8377;15,00,000*</td>
                 </tr>
                 <tr className="hover:bg-[#FBFBEE] transition-colors">
                   <td className="px-6 py-4 font-semibold text-gray-800">Conservative Dentistry and Endodontics</td>
                   <td className="px-6 py-4 text-center text-gray-800">3</td>
-                  <td className="px-6 py-4 text-right text-gray-800">Contact College</td>
+                  <td className="px-6 py-4 text-right text-gray-800">&#8377;8,00,000 - &#8377;15,00,000*</td>
                 </tr>
                 <tr className="hover:bg-[#FBFBEE] transition-colors">
                   <td className="px-6 py-4 font-semibold text-gray-800">Oral Medicine and Radiology</td>
                   <td className="px-6 py-4 text-center text-gray-800">3</td>
-                  <td className="px-6 py-4 text-right text-gray-800">Contact College</td>
+                  <td className="px-6 py-4 text-right text-gray-800">&#8377;8,00,000 - &#8377;15,00,000*</td>
                 </tr>
                 <tr className="bg-[#006837] text-white font-bold">
                   <td className="px-6 py-4">Total MDS Seats</td>

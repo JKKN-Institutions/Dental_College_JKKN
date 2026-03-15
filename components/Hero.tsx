@@ -26,8 +26,8 @@ export default function Hero() {
 
             {/* Main Heading */}
             <h1 className="text-2xl xs:text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight">
-              Transform Your Future at{' '}
-              <span className="text-[#7cb983]">Tamil Nadu's Premier Dental College</span>
+              JKKN Dental College & Hospital{' '}
+              <span className="text-[#7cb983]">BDS & MDS Programs Near Erode, Tamil Nadu</span>
             </h1>
 
             {/* Description */}
