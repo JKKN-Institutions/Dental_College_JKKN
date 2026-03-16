@@ -142,7 +142,7 @@ export default function Home() {
     "@context": "https://schema.org",
     "@type": "CollegeOrUniversity",
     "name": "JKKN Dental College & Hospital",
-    "alternateName": "J.K.K. Nattraja Dental College & Hospital",
+    "alternateName": ["J.K.K. Nattraja Dental College & Hospital", "ஜே.கே.கே. நட்ராஜா பல் மருத்துவக் கல்லூரி மற்றும் மருத்துவமனை"],
     "url": "https://dental.jkkn.ac.in",
     "logo": "https://dental.jkkn.ac.in/images/dental-logo.png",
     "description": "India's 1st Human-AI AGI Dental Campus - DCI approved & NAAC A grade accredited dental college offering BDS & MDS programmes with advanced AI integration",
@@ -291,7 +291,7 @@ export default function Home() {
     "@type": ["MedicalOrganization", "Dentist"],
     "@id": "https://dental.jkkn.ac.in/#organization",
     "name": "JKKN Dental College & Hospital",
-    "alternateName": "JKKN Dental College",
+    "alternateName": ["JKKN Dental College", "ஜே.கே.கே.என் பல் மருத்துவக் கல்லூரி"],
     "url": "https://dental.jkkn.ac.in/",
     "logo": {
       "@type": "ImageObject",
@@ -342,7 +342,7 @@ export default function Home() {
       "Pediatric Dentistry",
       "Public Health Dentistry"
     ],
-    "numberOfBeds": "100+",
+    "numberOfBeds": 100,
     "areaServed": [
       { "@type": "State", "name": "Tamil Nadu" },
       { "@type": "Country", "name": "India" }
@@ -444,8 +444,8 @@ export default function Home() {
       "ratingValue": "4.5",
       "bestRating": "5",
       "worstRating": "1",
-      "ratingCount": "350",
-      "reviewCount": "280"
+      "ratingCount": "400",
+      "reviewCount": "400"
     }
   };
 
@@ -463,15 +463,7 @@ export default function Home() {
       "@id": "https://dental.jkkn.ac.in/#organization",
       "name": "JKKN Dental College & Hospital"
     },
-    "inLanguage": "en",
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": {
-        "@type": "EntryPoint",
-        "urlTemplate": "https://dental.jkkn.ac.in/search?q={search_term_string}"
-      },
-      "query-input": "required name=search_term_string"
-    }
+    "inLanguage": "en"
   };
 
   // Schema #8a: WebPage with Speakable
@@ -492,7 +484,9 @@ export default function Home() {
         "/html/head/meta[@name='description']/@content"
       ]
     },
-    "description": "JKKN Dental College & Hospital, established in 1987, is a DCI approved and NAAC A Grade accredited dental college offering BDS and MDS programs. Located on India's first AI-integrated campus in Komarapalayam, Tamil Nadu, with 200+ dental chairs, 100+ bed hospital, and 92% placement rate. Apply now for 2026-27 admissions."
+    "description": "JKKN Dental College & Hospital, established in 1987, is a DCI approved and NAAC A Grade accredited dental college offering BDS and MDS programs. Located on India's first AI-integrated campus in Komarapalayam, Tamil Nadu, with 200+ dental chairs, 100+ bed hospital, and 92% placement rate. Apply now for 2026-27 admissions.",
+    "datePublished": "2025-01-01",
+    "dateModified": "2026-03-16"
   };
 
   // Schema #10: Organization sameAs Enhancement
@@ -520,71 +514,6 @@ export default function Home() {
     }
   };
 
-  // Schema #4a: BreadcrumbList – Homepage
-  const homeBreadcrumbSchema = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://dental.jkkn.ac.in/"
-      }
-    ]
-  };
-
-  const localBusinessSchema = {
-    "@context": "https://schema.org",
-    "@type": "Dentist",
-    "name": "JKKN Dental College & Hospital",
-    "alternateName": "JKKN Dental Hospital",
-    "description": "Multi-specialty dental teaching hospital with 200+ dental chairs, 100+ hospital beds, serving 500+ patients daily. Part of JKKN Dental College & Hospital.",
-    "url": "https://dental.jkkn.ac.in/",
-    "telephone": "+919345855001",
-    "email": "info@jkkn.ac.in",
-    "image": "https://dental.jkkn.ac.in/images/dental-logo.png",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Natarajapuram, NH-544, Salem-Coimbatore Highway",
-      "addressLocality": "Komarapalayam",
-      "addressRegion": "Tamil Nadu",
-      "postalCode": "638183",
-      "addressCountry": "IN"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 11.4446,
-      "longitude": 77.7310
-    },
-    "openingHoursSpecification": [
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-        "opens": "09:00",
-        "closes": "17:00"
-      }
-    ],
-    "priceRange": "$$",
-    "medicalSpecialty": [
-      "Periodontics",
-      "Orthodontics",
-      "Prosthodontics",
-      "Conservative Dentistry & Endodontics",
-      "Oral Medicine & Radiology",
-      "Oral & Maxillofacial Surgery",
-      "Pedodontics",
-      "Community Dentistry"
-    ],
-    "sameAs": [
-      "https://www.facebook.com/jkkndental/",
-      "https://www.instagram.com/jkkndental/",
-      "https://www.linkedin.com/school/jkkndental/",
-      "https://www.youtube.com/playlist?list=PL6QsTq-__HhvqQ28WcrDAwPa9jeMSK3AO",
-      "https://maps.app.goo.gl/mXx6rFRqpS9U76BK6"
-    ]
-  };
-
   return (
     <main className="overflow-x-hidden w-full">
       <StructuredData data={medicalOrgSchema} />
@@ -592,8 +521,6 @@ export default function Home() {
       <StructuredData data={websiteSchema} />
       <StructuredData data={webPageSchema} />
       <StructuredData data={orgSameAsSchema} />
-      <StructuredData data={homeBreadcrumbSchema} />
-      <StructuredData data={localBusinessSchema} />
       {/* [UPDATE: Uncomment when principal name is confirmed] */}
       {/* <StructuredData data={principalSchema} /> */}
       <StructuredData data={bdsSchema} />

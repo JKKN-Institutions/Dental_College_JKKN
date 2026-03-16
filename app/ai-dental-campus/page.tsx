@@ -19,7 +19,7 @@ import {
 
 export const metadata: Metadata = {
   title: "India's 1st Human-AI AGI Dental Campus | JKKN Dental College",
-  description: "Discover how JKKN Dental College leads as India's first Human-AI AGI Dental Campus, integrating advanced AI tools, ChatGPT, and cutting-edge technology in dental education for enhanced learning and clinical excellence.",
+  description: "JKKN Dental College — India's 1st AI-integrated dental campus. ChatGPT, AI diagnostics & digital dentistry tools integrated into BDS & MDS curriculum.",
   keywords: "AI dental campus India, artificial intelligence dental education, AI-powered dental college, ChatGPT dental training, digital dentistry AI, smart dental education, AI diagnostic tools dentistry, JKKN AI integration"
 };
 

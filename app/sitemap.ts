@@ -116,6 +116,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/committee/dental-education-department`, lastModified: now, changeFrequency: 'yearly', priority: 0.4 },
     { url: `${baseUrl}/committee/library-and-learning-resources-committee`, lastModified: now, changeFrequency: 'yearly', priority: 0.4 },
 
+    // Comparison page
+    { url: `${baseUrl}/best-dental-college-tamil-nadu`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
+
     // City SEO pages
     { url: `${baseUrl}/coimbatore`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${baseUrl}/erode`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
