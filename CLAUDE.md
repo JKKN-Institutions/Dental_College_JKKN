@@ -285,6 +285,91 @@ npm run lint     # ESLint check
 
 ---
 
+## ENVIRONMENT VARIABLES
+
+Required in `.env.local` (never committed to git):
+
+| Variable | Purpose | Used In |
+|----------|---------|---------|
+| `NEXT_PUBLIC_SUPABASE_URL` | Supabase project URL | `lib/supabase/client.ts`, `lib/supabase/server.ts` |
+| `NEXT_PUBLIC_SUPABASE_ANON_KEY` | Supabase anonymous key | `lib/supabase/client.ts`, `lib/supabase/server.ts` |
+| `NEXT_PUBLIC_COLLEGE_ID` | College identifier for Supabase queries | `app/blog/page.tsx`, `app/gallery/page.tsx` |
+
+### Setup
+```bash
+# Create .env.local in project root
+cp .env.example .env.local  # if example exists, otherwise create manually
+```
+
+### Rules
+- Never commit `.env.local` or any file with actual keys
+- All env vars use `NEXT_PUBLIC_` prefix (client-accessible)
+- Missing env vars will cause build failures in blog and gallery pages
+
+---
+
+## DEPLOYMENT
+
+| Setting | Value |
+|---------|-------|
+| Hosting | DigitalOcean |
+| Build command | `npm run build` |
+| Start command | `npm start` |
+| Node version | 18+ |
+| Image optimizer | `sharp` (installed as devDependency) |
+
+### Pre-Deployment Checklist
+1. `npm run lint` — no ESLint errors
+2. `npm run build` — successful production build (catches TypeScript errors)
+3. Verify all env vars are set on the server
+4. Check redirects/rewrites in `next.config.ts` if URLs changed
+
+---
+
+## SECURITY HEADERS
+
+Configured in `next.config.ts` → `headers()` for all routes `/(.*)`):
+
+| Header | Value |
+|--------|-------|
+| `X-Content-Type-Options` | `nosniff` |
+| `X-Frame-Options` | `SAMEORIGIN` |
+| `Content-Security-Policy` | `default-src 'self'` + GTM, GA, Google Fonts allowed |
+| `Referrer-Policy` | `strict-origin-when-cross-origin` |
+| `Permissions-Policy` | Camera/mic blocked, geolocation self-only |
+
+### CSP Allowed Sources
+- **Scripts:** self, GTM, Google Analytics, unsafe-inline/eval (Next.js requirement)
+- **Styles:** self, Google Fonts, unsafe-inline
+- **Fonts:** self, Google Fonts (gstatic)
+- **Images:** self, data URIs, all HTTPS
+- **Frames:** self only
+- **Objects:** none
+
+---
+
+## TESTING
+
+> **No test framework configured.** No Jest, Vitest, or Playwright setup exists.
+
+### Current Validation Methods
+- `npm run build` — TypeScript type checking + Next.js build validation
+- `npm run lint` — ESLint rules (next/core-web-vitals)
+- Manual browser testing across breakpoints
+
+### Recommended Breakpoints for Manual Testing
+| Device | Width | Tailwind |
+|--------|-------|----------|
+| Mobile S | 320px | default |
+| Mobile M | 375px | xs |
+| Mobile L | 425px | xs-sm |
+| Tablet | 768px | md |
+| Laptop | 1024px | lg |
+| Desktop | 1280px | xl |
+| Large | 1536px | 2xl |
+
+---
+
 ## GIT WORKFLOW
 
 - **Branch:** `main` (single branch)
