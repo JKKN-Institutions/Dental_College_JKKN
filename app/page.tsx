@@ -17,11 +17,11 @@ const FacultySection = dynamic(() => import('@/components/FacultySection'));
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Best Dental College Near Erode | JKKN Dental College & Hospital',
+  title: 'Best Dental College Near Erode | JKKN Dental College',
   description: 'JKKN Dental College & Hospital is one of the best dental college in Tamilnadu. DCI approved with excellent placements, modern labs & attached hospital.',
   keywords: 'best dental college in tamilnadu, private dental colleges in tamilnadu, top 10 dental colleges in tamilnadu, top dental colleges in tamilnadu, list of dental colleges in tamilnadu, self financing dental colleges in tamilnadu, list of private dental colleges in tamilnadu',
   openGraph: {
-    title: 'Best Dental College Near Erode | JKKN Dental College & Hospital',
+    title: 'Best Dental College Near Erode | JKKN Dental College',
     description: 'JKKN Dental College & Hospital is one of the best dental college in Tamilnadu. DCI approved with excellent placements, modern labs & attached hospital.',
     url: 'https://dental.jkkn.ac.in',
     siteName: 'JKKN Dental College & Hospital',
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Best Dental College Near Erode | JKKN Dental College & Hospital',
+    title: 'Best Dental College Near Erode | JKKN Dental College',
     description: 'JKKN Dental College & Hospital is one of the best dental college in Tamilnadu. DCI approved with excellent placements, modern labs & attached hospital.',
     images: ['/images/dental-logo.png'],
   },
@@ -178,7 +178,9 @@ export default function Home() {
       "https://www.instagram.com/jkkndental/",
       "https://www.linkedin.com/school/jkkndental/",
       "https://www.youtube.com/playlist?list=PL6QsTq-__HhvqQ28WcrDAwPa9jeMSK3AO",
-      "https://maps.app.goo.gl/mXx6rFRqpS9U76BK6"
+      "https://maps.app.goo.gl/mXx6rFRqpS9U76BK6",
+      "https://jkkn.ac.in/",
+      "https://dciindia.gov.in/"
     ],
     "parentOrganization": {
       "@type": "EducationalOrganization",
@@ -188,8 +190,8 @@ export default function Home() {
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": 11.4446,
-      "longitude": 77.7310
+      "latitude": 11.445180,
+      "longitude": 77.726549
     },
     "areaServed": [
       { "@type": "City", "name": "Namakkal" },
@@ -319,8 +321,8 @@ export default function Home() {
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": 11.4446,
-      "longitude": 77.7310
+      "latitude": 11.445180,
+      "longitude": 77.726549
     },
     "openingHoursSpecification": [
       {
@@ -353,6 +355,15 @@ export default function Home() {
       "name": "JKKN Institutions",
       "url": "https://jkkn.ac.in/"
     },
+    "sameAs": [
+      "https://www.facebook.com/jkkndental/",
+      "https://www.instagram.com/jkkndental/",
+      "https://www.linkedin.com/school/jkkndental/",
+      "https://www.youtube.com/playlist?list=PL6QsTq-__HhvqQ28WcrDAwPa9jeMSK3AO",
+      "https://maps.app.goo.gl/mXx6rFRqpS9U76BK6",
+      "https://jkkn.ac.in/",
+      "https://dciindia.gov.in/"
+    ],
     "hasCredential": [
       {
         "@type": "EducationalOccupationalCredential",
@@ -388,13 +399,6 @@ export default function Home() {
       "Cosmetic Dentistry",
       "Oral and Maxillofacial Surgery"
     ],
-    "sameAs": [
-      "https://www.facebook.com/jkkndental/",
-      "https://www.instagram.com/jkkndental/",
-      "https://www.linkedin.com/school/jkkndental/",
-      "https://www.youtube.com/playlist?list=PL6QsTq-__HhvqQ28WcrDAwPa9jeMSK3AO",
-      "https://maps.app.goo.gl/mXx6rFRqpS9U76BK6"
-    ]
   };
 
   // Schema #2: Dentist (LocalBusiness) with AggregateRating
@@ -418,8 +422,8 @@ export default function Home() {
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": 11.4446,
-      "longitude": 77.7310
+      "latitude": 11.445180,
+      "longitude": 77.726549
     },
     "hasMap": "https://maps.app.goo.gl/mXx6rFRqpS9U76BK6",
     "openingHoursSpecification": [
@@ -504,7 +508,8 @@ export default function Home() {
       "https://maps.app.goo.gl/mXx6rFRqpS9U76BK6",
       "https://admission.jkkn.ac.in/",
       "https://placements.jkkn.ac.in/",
-      "https://jkkn.ac.in/"
+      "https://jkkn.ac.in/",
+      "https://dciindia.gov.in/"
     ],
     "parentOrganization": {
       "@type": "EducationalOrganization",

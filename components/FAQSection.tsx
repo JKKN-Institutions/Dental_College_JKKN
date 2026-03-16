@@ -28,7 +28,11 @@ export default function FAQSection() {
     },
     {
       question: "What makes JKKN different from other dental colleges?",
-      answer: "JKKN stands out with its 57+ years of educational legacy (JKKN Group founded 1969), learner-centric philosophy, exceptional clinical exposure (500+ daily patients), distinguished Learning Facilitators, state-of-the-art infrastructure, research culture, and comprehensive placement support."
+      answer: "JKKN stands out as India's 1st Human-AI AGI Dental Campus, integrating advanced AI tools like ChatGPT, AI-powered diagnostic imaging, and CAD/CAM technology into dental education. Combined with 57+ years of educational legacy (JKKN Group founded 1969), exceptional clinical exposure (500+ daily patients), state-of-the-art infrastructure, and comprehensive placement support, JKKN prepares future-ready dental professionals with expertise in both clinical excellence and AI technology."
+    },
+    {
+      question: "How does JKKN integrate AI in dental education?",
+      answer: "JKKN Dental College is India's 1st Human-AI AGI Dental Campus. Students use ChatGPT and AI tools for research, case studies, and personalized learning. The campus features AI-powered diagnostic imaging (CBCT, OPG), CAD/CAM technology for precision dental restorations, AI-enhanced clinical training, and data analytics for research. AI courses are integrated into both BDS and MDS curriculum, ensuring graduates are equipped with cutting-edge technological expertise alongside clinical skills."
     }
   ];
 
