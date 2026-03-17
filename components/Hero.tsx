@@ -73,8 +73,8 @@ export default function Hero() {
           <div className="relative order-first md:order-last">
             <div className="rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl bg-gray-100 aspect-[4/3] md:aspect-auto">
               <Image
-                src="/images/JKKN-Dental-Main-Banner-Image.webp"
-                alt="Dental Professional"
+                src="/images/JKKN-Dental-Clinical-Training.jpg"
+                alt="JKKN Dental College clinical training with dental chairs and faculty treating patients"
                 width={1920}
                 height={1440}
                 className="w-full h-full object-cover"
