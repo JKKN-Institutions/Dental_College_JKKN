@@ -111,7 +111,7 @@ export default function Contact() {
                   <div>
                     <h3 className="text-lg font-bold text-gray-800 mb-2">JKKN Dental College & Hospital</h3>
                     <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
-                      Nattrajapuram,<br />
+                      Natarajapuram,<br />
                       NH-544 (Salem to Coimbatore National Highway),<br />
                       Komarapalayam (TK), Namakkal (DT),<br />
                       Tamil Nadu - 638183, India

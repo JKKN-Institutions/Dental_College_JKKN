@@ -147,7 +147,7 @@ export default function StartUp() {
           </h2>
 
           <div className="text-gray-700 mb-2 leading-relaxed">
-            📍 <span className="font-bold">Location:</span> JKKN Dental College & Hospital, Nattrajapuram, NH-544 (Salem to Coimbatore National Highway), Komarapalayam (TK), Namakkal (DT), Tamil Nadu - 638183.
+            📍 <span className="font-bold">Location:</span> JKKN Dental College & Hospital, Natarajapuram, NH-544 (Salem to Coimbatore National Highway), Komarapalayam (TK), Namakkal (DT), Tamil Nadu - 638183.
           </div>
 
           <div className="text-gray-700 mb-2 leading-relaxed">

@@ -148,7 +148,7 @@ export default function Home() {
     "description": "India's 1st Human-AI AGI Dental Campus - DCI approved & NAAC A grade accredited dental college offering BDS & MDS programmes with advanced AI integration",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Nattrajapuram, NH-544 (Salem To Coimbatore National Highway)",
+      "streetAddress": "Natarajapuram, NH-544 (Salem To Coimbatore National Highway)",
       "addressLocality": "Komarapalayam",
       "addressRegion": "Tamil Nadu",
       "postalCode": "638183",

@@ -10,7 +10,7 @@ export const organizationInfo = {
   logo: "https://dental.jkkn.ac.in/images/dental-logo.png",
   description: "India's 1st Human-AI AGI Dental Campus - DCI approved & NAAC A grade accredited dental college",
   address: {
-    streetAddress: "Nattrajapuram, NH-544 (Salem To Coimbatore National Highway)",
+    streetAddress: "Natarajapuram, NH-544 (Salem To Coimbatore National Highway)",
     addressLocality: "Komarapalayam",
     addressRegion: "Tamil Nadu",
     postalCode: "638183",
