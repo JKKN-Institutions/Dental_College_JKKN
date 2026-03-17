@@ -29,7 +29,7 @@ export default function Labs() {
             <div className="w-full h-[280px] md:h-[240px] bg-gray-200 rounded-lg overflow-hidden">
               <Image
                 src="/images/lab-1.jpg"
-                alt="Dental lab equipment"
+                alt="JKKN Dental College preclinical lab with students practicing dental procedures at workbenches"
                 width={400}
                 height={240}
                 className="w-full h-full object-cover"
@@ -40,7 +40,7 @@ export default function Labs() {
             <div className="w-full h-[280px] md:h-[240px] bg-gray-200 rounded-lg overflow-hidden">
               <Image
                 src="/images/lab-2.jpg"
-                alt="Student working in lab"
+                alt="Dental students working with dental materials and impression trays in JKKN preclinical laboratory"
                 width={400}
                 height={240}
                 className="w-full h-full object-cover"
@@ -51,7 +51,7 @@ export default function Labs() {
             <div className="w-full h-[280px] md:h-[240px] bg-gray-200 rounded-lg overflow-hidden">
               <Image
                 src="/images/lab-3.jpg"
-                alt="Lab work in progress"
+                alt="Faculty demonstrating clinical dental procedure to students at JKKN Dental College lab"
                 width={400}
                 height={240}
                 className="w-full h-full object-cover"
