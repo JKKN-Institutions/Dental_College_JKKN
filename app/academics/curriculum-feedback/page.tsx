@@ -14,6 +14,8 @@ export const metadata: Metadata = {
   },
 };
 
+// Note: SpeakableSpecification schema not added — this page immediately redirects
+// to the external JotForm URL and never renders HTML content.
 export default function CurriculumFeedback() {
   redirect('https://form.jotform.com/240432334247045');
 }

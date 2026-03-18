@@ -14,6 +14,8 @@ export const metadata: Metadata = {
   },
 };
 
+// Note: SpeakableSpecification schema not added — this page calls notFound() and
+// renders no HTML content. Add speakable schema when this page gets real content.
 export default function ResearchAndDissertation() {
   notFound();
 }

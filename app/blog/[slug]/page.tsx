@@ -197,6 +197,17 @@ export default function BlogDetailPage() {
 
   return (
     <div className="min-h-screen bg-white">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "B.Ed Admission 2026 in Tamil Nadu: Eligibility, Process & Key Dates",
+        "description": "Complete guide to B.Ed admission 2026 in Tamil Nadu — eligibility, TNTEU counseling process, key dates, fee structure and career prospects after B.Ed.",
+        "url": "https://dental.jkkn.ac.in/blog/bed-admission-2026-tamil-nadu/",
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": ["h1", ".hero-description", "article p"]
+        }
+      }) }} />
       <Header />
 
       {/* ── Article Header ── */}

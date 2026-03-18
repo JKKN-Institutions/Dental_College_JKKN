@@ -190,6 +190,17 @@ export default function BlogDetailPage() {
 
   return (
     <div className="min-h-screen bg-white">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Top 10 Career Options After B.Ed in India [2026 Updated]",
+        "description": "Discover the top 10 career paths after B.Ed in 2026 — from government school teaching and TNTET to ed-tech, higher education, school administration and more.",
+        "url": "https://dental.jkkn.ac.in/blog/top-10-career-options-after-bed-2026/",
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": ["h1", ".hero-description", "article p"]
+        }
+      }) }} />
       <BreadcrumbSchema items={[
         { name: 'Home', url: 'https://dental.jkkn.ac.in/' },
         { name: 'Blog', url: 'https://dental.jkkn.ac.in/blog/' },

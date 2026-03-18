@@ -4,6 +4,8 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { ScrollToTop } from '@/components/ScrollToTop';
 import CampusBlogContent from './CampusBlogContent';
+import StructuredData from '@/components/StructuredData';
+import { generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const revalidate = 300;
 
@@ -69,6 +71,24 @@ export default async function CampusBlogPost({
 
   if (!post) notFound();
 
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://dental.jkkn.ac.in/" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://dental.jkkn.ac.in/blog/" },
+      { "@type": "ListItem", "position": 3, "name": "Campus", "item": "https://dental.jkkn.ac.in/blog/campus/" },
+      { "@type": "ListItem", "position": 4, "name": post.title, "item": `https://dental.jkkn.ac.in/blog/campus/${post.slug}/` },
+    ],
+  };
+
+  const speakableSchema = generateSpeakableWebPageSchema({
+    title: post.title,
+    description: post.excerpt ?? post.title,
+    url: `https://dental.jkkn.ac.in/blog/campus/${post.slug}/`,
+    speakableCssSelectors: ['h1', '.hero-description', 'article p'],
+  });
+
   const [{ data: popularPosts }, { data: relatedPosts }, { data: initialComments }] = await Promise.all([
     // Popular: other recent published blogs
     supabase
@@ -123,6 +143,8 @@ export default async function CampusBlogPost({
 
   return (
     <div className="min-h-screen bg-white">
+      <StructuredData data={breadcrumbSchema} />
+      <StructuredData data={speakableSchema} />
       <Header />
       <CampusBlogContent
         post={post}

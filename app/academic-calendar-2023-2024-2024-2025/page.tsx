@@ -1,5 +1,7 @@
 import { Metadata } from 'next';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
+import StructuredData from '@/components/StructuredData';
+import { generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: 'Academic Calendar 2023-24 & 2024-25 | JKKN Dental College',
@@ -15,8 +17,16 @@ export const metadata: Metadata = {
 };
 
 export default function AcademicCalendar() {
+  const speakableSchema = generateSpeakableWebPageSchema({
+    title: 'Academic Calendar 2023-24 & 2024-25 | JKKN Dental College',
+    description: 'View JKKN Dental College academic calendar 2023-24 & 2024-25. Check exam dates, holidays, events & important academic schedules. Plan your academic year effectively.',
+    url: 'https://dental.jkkn.ac.in/academic-calendar-2023-2024-2024-2025/',
+    speakableCssSelectors: ['h1', '.hero-description', 'article p'],
+  });
+
   return (
     <>
+      <StructuredData data={speakableSchema} />
       <BreadcrumbSchema items={[
         { name: 'Home', url: 'https://dental.jkkn.ac.in/' },
         { name: 'Academic Calendar 2023-2025', url: 'https://dental.jkkn.ac.in/academic-calendar-2023-2024-2024-2025/' },

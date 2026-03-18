@@ -29,6 +29,17 @@ export default function NAAC() {
 
   return (
     <main className="overflow-x-hidden w-full">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "NAAC Accreditation | JKKN Dental College & Hospital",
+        "description": "NAAC assessment and accreditation details for JKKN Dental College & Hospital. View criterion-wise reports, SSR, DVV, extended profile and institutional excellence data.",
+        "url": "https://dental.jkkn.ac.in/accreditation/naac/",
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": ["h1", ".hero-description", "article p"]
+        }
+      }) }} />
       <BreadcrumbSchema items={[
         { name: 'Home', url: 'https://dental.jkkn.ac.in/' },
         { name: 'Accreditation', url: 'https://dental.jkkn.ac.in/accreditation/' },

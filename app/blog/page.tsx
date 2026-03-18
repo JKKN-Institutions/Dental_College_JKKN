@@ -4,7 +4,7 @@ import { Calendar, Clock } from 'lucide-react';
 import { createClient } from '@/lib/supabase/server';
 import { Metadata } from 'next';
 import StructuredData from '@/components/StructuredData';
-import { generateWebPageSchema } from '@/lib/metadata';
+import { generateWebPageSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: 'Blog | JKKN Dental College & Hospital',
@@ -41,6 +41,13 @@ const blogWebPageSchema = generateWebPageSchema({
   dateModified: '2026-03-18',
 });
 
+const blogSpeakableSchema = generateSpeakableWebPageSchema({
+  title: 'Blog | JKKN Dental College & Hospital',
+  description: 'Latest articles, news & insights from JKKN Dental College & Hospital. Dental education tips, admission guides, campus updates & career advice.',
+  url: 'https://dental.jkkn.ac.in/blog/',
+  speakableCssSelectors: ['h1', '.hero-description', 'article p'],
+});
+
 export default async function BlogPage() {
   // Fetch admin-created posts from Supabase
   const supabase = await createClient();
@@ -67,6 +74,7 @@ export default async function BlogPage() {
     <div className="min-h-screen bg-[#FBFBEE]">
       <StructuredData data={blogBreadcrumbSchema} />
       <StructuredData data={blogWebPageSchema} />
+      <StructuredData data={blogSpeakableSchema} />
       <Header />
 
       {/* Blog Page H1 */}

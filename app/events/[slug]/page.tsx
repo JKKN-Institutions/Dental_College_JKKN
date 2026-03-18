@@ -7,6 +7,8 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Metadata } from 'next';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
+import StructuredData from '@/components/StructuredData';
+import { generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -48,8 +50,16 @@ export default async function EventDetailPage({ params }: Props) {
 
   if (!event) notFound();
 
+  const speakableSchema = generateSpeakableWebPageSchema({
+    title: `${event.title} | JKKN Dental College & Hospital`,
+    description: event.description?.slice(0, 155) ?? `Event details for ${event.title} at JKKN Dental College & Hospital.`,
+    url: `https://dental.jkkn.ac.in/events/${event.slug}/`,
+    speakableCssSelectors: ['h1', '.hero-description', 'article p'],
+  });
+
   return (
     <main className="overflow-x-hidden w-full">
+      <StructuredData data={speakableSchema} />
       <BreadcrumbSchema items={[
         { name: 'Home', url: 'https://dental.jkkn.ac.in/' },
         { name: 'Events', url: 'https://dental.jkkn.ac.in/events/' },
