@@ -22,7 +22,6 @@ export const metadata: Metadata = {
     canonical: 'https://dental.jkkn.ac.in/',
     languages: {
       'en-IN': 'https://dental.jkkn.ac.in/',
-      'ta': 'https://dental.jkkn.ac.in/',
     },
   },
   icons: {
@@ -32,7 +31,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "JKKN Dental College & Hospital | DCI Approved",
     description: "JKKN Dental College & Hospital, Komarapalayam — DCI approved, NAAC A accredited. BDS & MDS programs with 200+ chair hospital training. Since 1987.",
-    url: "https://dental.jkkn.ac.in",
+    url: "https://dental.jkkn.ac.in/",
     siteName: "JKKN Dental College & Hospital",
     images: [
       {

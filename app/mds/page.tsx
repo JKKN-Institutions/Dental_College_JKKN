@@ -39,13 +39,14 @@ const mdsPerioSchema = {
     },
     "instructor": {
       "@type": "Person",
-      "name": "[PLACEHOLDER – Replace with HOD Periodontics name]",
+      // [UPDATE: Replace with actual HOD name when confirmed by admin]
+      "name": "Department of Periodontics, JKKN",
       "jobTitle": "Head of Department, Periodontics"
     },
     "offers": {
       "@type": "Offer",
       "category": "Tuition Fee",
-      "price": "[PLACEHOLDER – Contact admissions for current fee structure]",
+      // [UPDATE: Replace with actual fee when confirmed by admin]
       "priceCurrency": "INR",
       "url": "https://admission.jkkn.ac.in/",
       "availability": "https://schema.org/InStock"
@@ -92,13 +93,14 @@ const mdsOrthoSchema = {
     },
     "instructor": {
       "@type": "Person",
-      "name": "[PLACEHOLDER – Replace with HOD Orthodontics name]",
+      // [UPDATE: Replace with actual HOD name when confirmed by admin]
+      "name": "Department of Orthodontics, JKKN",
       "jobTitle": "Head of Department, Orthodontics"
     },
     "offers": {
       "@type": "Offer",
       "category": "Tuition Fee",
-      "price": "[PLACEHOLDER – Contact admissions for current fee structure]",
+      // [UPDATE: Replace with actual fee when confirmed by admin]
       "priceCurrency": "INR",
       "url": "https://admission.jkkn.ac.in/",
       "availability": "https://schema.org/InStock"
@@ -145,13 +147,14 @@ const mdsProsthoSchema = {
     },
     "instructor": {
       "@type": "Person",
-      "name": "[PLACEHOLDER – Replace with HOD Prosthodontics name]",
+      // [UPDATE: Replace with actual HOD name when confirmed by admin]
+      "name": "Department of Prosthodontics, JKKN",
       "jobTitle": "Head of Department, Prosthodontics"
     },
     "offers": {
       "@type": "Offer",
       "category": "Tuition Fee",
-      "price": "[PLACEHOLDER – Contact admissions for current fee structure]",
+      // [UPDATE: Replace with actual fee when confirmed by admin]
       "priceCurrency": "INR",
       "url": "https://admission.jkkn.ac.in/",
       "availability": "https://schema.org/InStock"
@@ -198,13 +201,14 @@ const mdsCdeSchema = {
     },
     "instructor": {
       "@type": "Person",
-      "name": "[PLACEHOLDER – Replace with HOD Conservative Dentistry name]",
+      // [UPDATE: Replace with actual HOD name when confirmed by admin]
+      "name": "Department of Conservative Dentistry, JKKN",
       "jobTitle": "Head of Department, Conservative Dentistry & Endodontics"
     },
     "offers": {
       "@type": "Offer",
       "category": "Tuition Fee",
-      "price": "[PLACEHOLDER – Contact admissions for current fee structure]",
+      // [UPDATE: Replace with actual fee when confirmed by admin]
       "priceCurrency": "INR",
       "url": "https://admission.jkkn.ac.in/",
       "availability": "https://schema.org/InStock"
@@ -251,13 +255,14 @@ const mdsOmrSchema = {
     },
     "instructor": {
       "@type": "Person",
-      "name": "[PLACEHOLDER – Replace with HOD Oral Medicine name]",
+      // [UPDATE: Replace with actual HOD name when confirmed by admin]
+      "name": "Department of Oral Medicine, JKKN",
       "jobTitle": "Head of Department, Oral Medicine & Radiology"
     },
     "offers": {
       "@type": "Offer",
       "category": "Tuition Fee",
-      "price": "[PLACEHOLDER – Contact admissions for current fee structure]",
+      // [UPDATE: Replace with actual fee when confirmed by admin]
       "priceCurrency": "INR",
       "url": "https://admission.jkkn.ac.in/",
       "availability": "https://schema.org/InStock"
@@ -265,7 +270,7 @@ const mdsOmrSchema = {
   }
 };
 
-// Schema #7b: FAQPage – MDS Page
+// Schema #7b: FAQPage – MDS Page — Voice-optimized (each answer ≤29 words, third-person)
 const mdsFaqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -276,7 +281,7 @@ const mdsFaqSchema = {
       "name": "What is the duration of MDS programs at JKKN Dental College?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "All MDS (Master of Dental Surgery) programs at JKKN Dental College & Hospital are 3 years in duration. This includes academic coursework, clinical training in the 100+ bed dental hospital, thesis research, and compulsory practical rotations across departments."
+        "text": "All Master of Dental Surgery programs at JKKN Dental College and Hospital are three years, including academic coursework, clinical training, thesis research, and practical rotations."
       }
     },
     {
@@ -284,7 +289,7 @@ const mdsFaqSchema = {
       "name": "What is the eligibility for MDS admission at JKKN?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Candidates must hold a BDS degree from a DCI-recognized dental college and must be registered with a State Dental Council. Qualification in NEET-MDS conducted by the National Board of Examinations is mandatory. Candidates must have completed the compulsory rotatory internship before the counselling date."
+        "text": "Master of Dental Surgery admission at JKKN requires a Bachelor of Dental Surgery degree from a recognized college, State Dental Council registration, completed internship, and NEET-MDS qualification."
       }
     },
     {
@@ -292,7 +297,7 @@ const mdsFaqSchema = {
       "name": "What MDS specializations are available at JKKN Dental College?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "JKKN Dental College & Hospital offers MDS in 5 specializations: (1) Periodontics – gum diseases and dental implants, (2) Orthodontics & Dentofacial Orthopedics – teeth alignment and bite correction, (3) Prosthodontics including Crown & Bridge – tooth replacement and restoration, (4) Conservative Dentistry & Endodontics – root canal treatment and tooth preservation, and (5) Oral Medicine & Radiology – oral disease diagnosis and imaging."
+        "text": "JKKN Dental College offers Master of Dental Surgery in five specializations: Periodontics, Orthodontics, Prosthodontics, Conservative Dentistry and Endodontics, and Oral Medicine and Radiology."
       }
     },
     {
@@ -300,7 +305,7 @@ const mdsFaqSchema = {
       "name": "What is the MDS admission process at JKKN Dental College?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "MDS admission at JKKN Dental College follows this process: (1) Complete BDS and internship from a DCI-recognized college, (2) Register with a State Dental Council, (3) Qualify NEET-MDS, (4) Register for state or All India Quota counselling, (5) Select JKKN Dental College and preferred specialization during choice filling, (6) Receive seat allotment, (7) Report to campus with original documents and complete admission formalities."
+        "text": "Master of Dental Surgery admission at JKKN requires NEET-MDS qualification, state or All India Quota counseling, specialization selection, document verification, and campus enrollment at JKKN Dental College."
       }
     },
     {
@@ -308,7 +313,7 @@ const mdsFaqSchema = {
       "name": "What are the career opportunities after completing MDS?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "MDS graduates from JKKN Dental College can pursue: specialist private practice, faculty positions in dental colleges, consultant roles in multi-specialty hospitals, advanced research and PhD programs, dental corporate chains, international opportunities (UK, Middle East, Singapore), and government specialist positions. JKKN's placement support and 3000+ alumni network facilitate career placement across India and internationally."
+        "text": "Master of Dental Surgery graduates from JKKN pursue specialist private practice, faculty positions, hospital consultant roles, research programs, and international opportunities across United Kingdom and Middle East."
       }
     },
     {
@@ -316,7 +321,7 @@ const mdsFaqSchema = {
       "name": "What clinical exposure do MDS students get at JKKN Dental College?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "MDS students at JKKN receive extensive clinical exposure through the college's 100+ bed dental hospital that treats 500+ patients daily. Students work with 200+ dental chairs, access advanced equipment including CBCT, digital radiography, OPG systems, dental operating microscopes, rotary endodontic instruments, and CAD/CAM technology. The high patient volume ensures students encounter a wide variety of clinical cases essential for specialist training. Students are also encouraged to publish research, with the college contributing 50+ publications to peer-reviewed journals."
+        "text": "Master of Dental Surgery students at JKKN train in a hundred-bed dental hospital treating five hundred patients daily, with two hundred dental chairs and advanced diagnostic equipment."
       }
     }
   ]
@@ -383,7 +388,7 @@ const progPerioSchema = {
   "offers": {
     "@type": "Offer",
     "category": "Tuition Fee",
-    "price": "[PLACEHOLDER – Contact admissions for current fee structure]",
+    // [UPDATE: Replace with actual fee when confirmed by admin]
     "priceCurrency": "INR",
     "url": "https://admission.jkkn.ac.in/"
   },
@@ -427,7 +432,7 @@ const progOrthoSchema = {
   "offers": {
     "@type": "Offer",
     "category": "Tuition Fee",
-    "price": "[PLACEHOLDER – Contact admissions for current fee structure]",
+    // [UPDATE: Replace with actual fee when confirmed by admin]
     "priceCurrency": "INR",
     "url": "https://admission.jkkn.ac.in/"
   },
@@ -471,7 +476,7 @@ const progProsthoSchema = {
   "offers": {
     "@type": "Offer",
     "category": "Tuition Fee",
-    "price": "[PLACEHOLDER – Contact admissions for current fee structure]",
+    // [UPDATE: Replace with actual fee when confirmed by admin]
     "priceCurrency": "INR",
     "url": "https://admission.jkkn.ac.in/"
   },
@@ -515,7 +520,7 @@ const progCdeSchema = {
   "offers": {
     "@type": "Offer",
     "category": "Tuition Fee",
-    "price": "[PLACEHOLDER – Contact admissions for current fee structure]",
+    // [UPDATE: Replace with actual fee when confirmed by admin]
     "priceCurrency": "INR",
     "url": "https://admission.jkkn.ac.in/"
   },
@@ -559,7 +564,7 @@ const progOmrSchema = {
   "offers": {
     "@type": "Offer",
     "category": "Tuition Fee",
-    "price": "[PLACEHOLDER – Contact admissions for current fee structure]",
+    // [UPDATE: Replace with actual fee when confirmed by admin]
     "priceCurrency": "INR",
     "url": "https://admission.jkkn.ac.in/"
   },

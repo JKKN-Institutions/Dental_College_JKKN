@@ -31,7 +31,7 @@ export default function Hero() {
             </h1>
 
             {/* Description */}
-            <p className="text-gray-200 text-sm sm:text-base md:text-lg leading-relaxed">
+            <p className="hero-description text-gray-200 text-sm sm:text-base md:text-lg leading-relaxed">
               Join JKKN Dental College & Hospital — where world-class dental education meets compassionate patient care. Our DCI-approved programs prepare Learners for exceptional careers in dentistry.
             </p>
 

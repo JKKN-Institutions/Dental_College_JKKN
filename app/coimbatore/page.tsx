@@ -113,7 +113,7 @@ export default function CoimbatorePage() {
           <a href="tel:+919345855001" className="bg-[#2a4080] hover:bg-[#324b99] text-white text-sm font-semibold px-4 py-1.5 rounded-full border border-white/20 transition-colors">
             Call Now
           </a>
-          <a href="https://wa.me/919345855001" className="bg-green-500 hover:bg-green-600 text-white text-sm font-semibold px-4 py-1.5 rounded-full transition-colors">
+          <a href="https://wa.me/919345855001" target="_blank" rel="nofollow noopener noreferrer" className="bg-green-500 hover:bg-green-600 text-white text-sm font-semibold px-4 py-1.5 rounded-full transition-colors">
             WhatsApp
           </a>
         </div>
@@ -149,10 +149,10 @@ export default function CoimbatorePage() {
           ))}
         </div>
         <div className="flex flex-col sm:flex-row gap-4 items-center">
-          <a href="https://wa.me/919345855001" className="bg-orange-500 hover:bg-orange-600 text-white font-bold px-8 py-4 rounded-full transition-all transform hover:scale-105 shadow-lg text-base">
+          <a href="https://wa.me/919345855001" target="_blank" rel="nofollow noopener noreferrer" className="bg-orange-500 hover:bg-orange-600 text-white font-bold px-8 py-4 rounded-full transition-all transform hover:scale-105 shadow-lg text-base">
             Apply Now — 2026-27
           </a>
-          <a href="https://wa.me/919345855001" className="bg-green-500 hover:bg-green-600 text-white font-bold px-8 py-4 rounded-full flex items-center gap-2 transition-all transform hover:scale-105 shadow-lg text-base">
+          <a href="https://wa.me/919345855001" target="_blank" rel="nofollow noopener noreferrer" className="bg-green-500 hover:bg-green-600 text-white font-bold px-8 py-4 rounded-full flex items-center gap-2 transition-all transform hover:scale-105 shadow-lg text-base">
             {WA_ICON} WhatsApp Us
           </a>
         </div>
@@ -185,7 +185,7 @@ export default function CoimbatorePage() {
             </div>
             <a
               href="https://maps.google.com/?q=JKKN+Dental+College+Komarapalayam"
-              target="_blank" rel="noopener noreferrer"
+              target="_blank" rel="nofollow noopener noreferrer"
               className="flex-shrink-0 bg-blue-700 hover:bg-blue-800 text-white font-semibold px-5 py-3 rounded-xl flex flex-col items-center gap-1 transition-colors min-w-[110px] text-center"
             >
               <span className="text-xl">📍</span>
@@ -243,7 +243,7 @@ export default function CoimbatorePage() {
                   ))}
                 </div>
                 <p className="text-gray-400 text-sm mb-6">{prog.eligibility}</p>
-                <a href="https://wa.me/919345855001" className="block text-center bg-blue-50 hover:bg-blue-100 text-blue-700 font-semibold py-3 rounded-xl transition-colors text-sm">
+                <a href="https://wa.me/919345855001" target="_blank" rel="nofollow noopener noreferrer" className="block text-center bg-blue-50 hover:bg-blue-100 text-blue-700 font-semibold py-3 rounded-xl transition-colors text-sm">
                   Enquire About This Course
                 </a>
               </div>
@@ -481,7 +481,7 @@ export default function CoimbatorePage() {
               Or call us directly:{' '}
               <a href="tel:+919345855001" className="text-white underline hover:text-white/90">+91-XXXXXXXXXX</a>
               {' '}•{' '}
-              <a href="https://wa.me/919345855001" className="text-white underline hover:text-white/90">WhatsApp</a>
+              <a href="https://wa.me/919345855001" target="_blank" rel="nofollow noopener noreferrer" className="text-white underline hover:text-white/90">WhatsApp</a>
             </p>
           </form>
         </div>
@@ -569,7 +569,7 @@ export default function CoimbatorePage() {
       {/* ── Floating WhatsApp Button ── */}
       <a
         href="https://wa.me/919345855001"
-        target="_blank" rel="noopener noreferrer"
+        target="_blank" rel="nofollow noopener noreferrer"
         className="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white font-semibold px-5 py-3 rounded-full flex items-center gap-2 shadow-xl transition-all transform hover:scale-105"
         aria-label="Chat with us on WhatsApp"
       >
