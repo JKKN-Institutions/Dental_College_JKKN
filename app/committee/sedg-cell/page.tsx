@@ -210,7 +210,7 @@ export default function SEDGCell() {
             SEDG Cell,
           </p>
           <p className="text-base text-black mb-4 font-bold">
-            JKKN Dental College & Hospital, Nattrajapuram, NH-544 (Salem To Coimbatore National Highway), Komarapalayam (TK), Namakkal (DT), Tamil Nadu. 638183.
+            JKKN Dental College & Hospital, Natarajapuram, NH-544 (Salem To Coimbatore National Highway), Komarapalayam (TK), Namakkal (DT), Tamil Nadu. 638183.
           </p>
 
           <p className="text-base text-black mb-2">

@@ -349,7 +349,7 @@ Our curriculum emphasizes clinical excellence, research, and community service, 
         image: "/images/news/placement-day.jpg",
       },
       {
-        title: "KUMARAPALAYAM BYPASS MARATHON",
+        title: "KOMARAPALAYAM BYPASS MARATHON",
         date: "March 04, 2025",
         image: "/images/news/marathon.jpg",
       },
@@ -454,7 +454,7 @@ NH-544 (Salem To Coimbatore National Highway), Komarapalayam, Namakkal District,
     social: {
       title: "FOLLOW US",
       links: [
-        { platform: "Facebook", url: "https://www.facebook.com/jkkndental" },
+        { platform: "Facebook", url: "https://www.facebook.com/jkkndental/" },
         { platform: "Instagram", url: "https://www.instagram.com/jkkndental/" },
         { platform: "LinkedIn", url: "https://www.linkedin.com/school/jkkndental/" },
         { platform: "YouTube", url: "https://www.youtube.com/playlist?list=PL6QsTq-__HhvqQ28WcrDAwPa9jeMSK3AO" },

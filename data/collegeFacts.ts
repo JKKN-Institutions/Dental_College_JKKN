@@ -67,7 +67,7 @@ export const collegeFacts = {
   email: 'dental@jkkn.ac.in',
   website: 'https://dental.jkkn.ac.in',
   address: {
-    full: 'Nattrajapuram, NH-544 (Salem To Coimbatore National Highway), Komarapalayam, Namakkal District, Tamil Nadu - 638183',
+    full: 'Natarajapuram, NH-544 (Salem To Coimbatore National Highway), Komarapalayam, Namakkal District, Tamil Nadu - 638183',
     shortAddress: 'Komarapalayam, Namakkal District',
     state: 'Tamil Nadu',
     pincode: '638183',

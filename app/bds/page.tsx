@@ -38,23 +38,24 @@ const bdsCourseSchema = {
         "addressCountry": "IN"
       }
     },
+    // [UPDATE: Replace with actual Dean/HOD name when confirmed by admin]
     "instructor": {
       "@type": "Person",
-      "name": "[PLACEHOLDER – Replace with Dean/HOD name]",
+      "name": "Faculty of Dental Sciences, JKKN",
       "jobTitle": "Dean, Faculty of Dentistry"
     },
     "offers": {
       "@type": "Offer",
       "category": "Tuition Fee",
-      "price": "[PLACEHOLDER – Contact admissions for current fee structure]",
       "priceCurrency": "INR",
       "url": "https://admission.jkkn.ac.in/",
-      "availability": "https://schema.org/InStock"
+      "availability": "https://schema.org/InStock",
+      "description": "Contact admissions office for current fee structure: +91 93458 55001"
     }
   }
 };
 
-// Schema #7a: FAQPage – BDS Page
+// Schema #7a: FAQPage – BDS Page — Voice-optimized (each answer ≤29 words, third-person)
 const bdsFaqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -65,7 +66,7 @@ const bdsFaqSchema = {
       "name": "What is the duration of BDS at JKKN Dental College?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The BDS (Bachelor of Dental Surgery) program at JKKN Dental College & Hospital is 5 years in duration, consisting of 4 years of academic study and 1 year of compulsory rotating internship in the college's 100+ bed dental hospital."
+        "text": "The Bachelor of Dental Surgery program at JKKN Dental College and Hospital is five years, consisting of four years of academic study and one year of compulsory rotating internship."
       }
     },
     {
@@ -73,7 +74,7 @@ const bdsFaqSchema = {
       "name": "What is the eligibility for BDS admission at JKKN?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Candidates must have completed 10+2 (or equivalent) with Physics, Chemistry, and Biology, securing a minimum of 50% aggregate marks. Qualification in NEET-UG is mandatory. The candidate must be at least 17 years of age at the time of admission."
+        "text": "Bachelor of Dental Surgery admission at JKKN requires higher secondary with Physics, Chemistry, and Biology, minimum fifty percent marks, and NEET qualification. Candidates must be seventeen years old."
       }
     },
     {
@@ -81,7 +82,7 @@ const bdsFaqSchema = {
       "name": "Is JKKN Dental College DCI approved?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, JKKN Dental College & Hospital is fully approved by the Dental Council of India (DCI) and is also approved by the National Medical Commission (NMC). The college holds NAAC A Grade accreditation and is affiliated to Tamil Nadu Dr. M.G.R. Medical University."
+        "text": "JKKN Dental College and Hospital holds Dental Council of India and National Medical Commission approvals, National Assessment and Accreditation Council A Grade, and Tamil Nadu Dr. M.G.R. Medical University affiliation."
       }
     },
     {
@@ -89,7 +90,7 @@ const bdsFaqSchema = {
       "name": "What are the career options after completing BDS?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "After completing BDS from JKKN Dental College, graduates can pursue: private dental practice, government dentist positions, MDS specialization in 5 branches offered at JKKN, dental research, dental surgeon roles in hospitals, dental public health careers, and opportunities in dental product companies. JKKN's 92% placement rate ensures strong career support."
+        "text": "Bachelor of Dental Surgery graduates from JKKN pursue private practice, government positions, Master of Dental Surgery specialization, dental research, hospital roles, and public health careers with ninety-two percent placement support."
       }
     },
     {
@@ -97,7 +98,7 @@ const bdsFaqSchema = {
       "name": "What campus facilities are available at JKKN Dental College?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "JKKN Dental College & Hospital offers comprehensive facilities including 200+ dental chairs, a 100+ bed multi-specialty dental hospital, digital simulation labs, CBCT and OPG imaging centre, CAD/CAM dental laboratory, digital library with journal access, separate hostels for boys and girls, sports complex, cafeteria, and India's first AI-integrated campus infrastructure."
+        "text": "JKKN Dental College offers two hundred dental chairs, a hundred-bed hospital, digital simulation labs, imaging centre, computer-aided manufacturing lab, library, hostels, sports complex, and AI-integrated campus."
       }
     },
     {
@@ -105,7 +106,7 @@ const bdsFaqSchema = {
       "name": "Can I pursue MDS after BDS at JKKN Dental College?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, JKKN Dental College & Hospital offers MDS (Master of Dental Surgery) in 5 specializations: Periodontics, Orthodontics & Dentofacial Orthopedics, Prosthodontics (Crown & Bridge), Conservative Dentistry & Endodontics, and Oral Medicine & Radiology. Admission is through NEET-MDS counselling."
+        "text": "JKKN Dental College offers Master of Dental Surgery in five specializations: Periodontics, Orthodontics, Prosthodontics, Conservative Dentistry and Endodontics, and Oral Medicine and Radiology."
       }
     }
   ]

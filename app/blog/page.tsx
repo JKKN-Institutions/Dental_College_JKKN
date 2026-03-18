@@ -2,6 +2,23 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Calendar, Clock } from 'lucide-react';
 import { createClient } from '@/lib/supabase/server';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Blog | JKKN Dental College & Hospital',
+  description: 'Latest articles, news & insights from JKKN Dental College & Hospital. Dental education tips, admission guides, campus updates & career advice.',
+  alternates: {
+    canonical: '/blog',
+  },
+  openGraph: {
+    title: 'Blog | JKKN Dental College & Hospital',
+    description: 'Latest articles, news & insights from JKKN Dental College & Hospital. Dental education tips, admission guides, campus updates & career advice.',
+    url: 'https://dental.jkkn.ac.in/blog',
+    siteName: 'JKKN Dental College & Hospital',
+    type: 'website',
+    locale: 'en_IN',
+  },
+};
 
 export const revalidate = 60;
 
@@ -31,6 +48,18 @@ export default async function BlogPage() {
     <div className="min-h-screen bg-[#FBFBEE]">
       <Header />
 
+      {/* Blog Page H1 */}
+      <section className="bg-[#FBFBEE] px-4 sm:px-6 lg:px-8 pt-10 pb-4">
+        <div className="max-w-7xl mx-auto">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#006837]">
+            JKKN Dental College Blog
+          </h1>
+          <p className="text-gray-600 text-sm sm:text-base mt-2">
+            Latest news, insights & guides from JKKN Dental College & Hospital
+          </p>
+        </div>
+      </section>
+
       {/* ── Campus News (Admin Posts) Section — shown only when posts exist ── */}
       {hasCampusPosts && (
         <section className="bg-[#FBFBEE] border-b border-gray-100 px-4 sm:px-6 lg:px-8 py-10">
@@ -40,7 +69,7 @@ export default async function BlogPage() {
                 Latest Articles
               </h2>
               <p className="text-gray-500 text-sm mt-1.5">
-                Expert insights on teacher education and careers
+                Expert insights on dental education and careers
               </p>
             </div>
 

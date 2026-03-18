@@ -124,7 +124,7 @@ export default function PrivacyPolicy() {
             <div className="text-base leading-relaxed text-gray-600">
               <p className="mb-2">Call: +91 93458 55001</p>
               <p className="mb-2">Email: info@jkkn.ac.in</p>
-              <p>Address: JKKN Dental College & Hospital , Nattrajapuram, NH-544 (Salem To Coimbatore National Highway), Komarapalayam (TK), Namakkal (DT). Tamil Nadu. 638183.</p>
+              <p>Address: JKKN Dental College & Hospital , Natarajapuram, NH-544 (Salem To Coimbatore National Highway), Komarapalayam (TK), Namakkal (DT). Tamil Nadu. 638183.</p>
             </div>
           </div>
         </div>

@@ -28,8 +28,8 @@ export default function Library() {
             {/* Image 1 */}
             <div className="w-full h-[300px] md:h-[350px] bg-gray-200 rounded-lg overflow-hidden">
               <Image
-                src="/images/library-1.png"
-                alt="Dental students in library"
+                src="/images/library-1.jpg"
+                alt="JKKN Dental College library study area with students reading at study desks"
                 width={400}
                 height={350}
                 className="w-full h-full object-cover"
@@ -39,8 +39,8 @@ export default function Library() {
             {/* Image 2 */}
             <div className="w-full h-[300px] md:h-[350px] bg-gray-200 rounded-lg overflow-hidden">
               <Image
-                src="/images/library-2.png"
-                alt="Student reading in library"
+                src="/images/library-2.jpg"
+                alt="Dental students browsing textbooks at JKKN library bookshelves"
                 width={400}
                 height={350}
                 className="w-full h-full object-cover"
@@ -50,8 +50,8 @@ export default function Library() {
             {/* Image 3 */}
             <div className="w-full h-[300px] md:h-[350px] bg-gray-200 rounded-lg overflow-hidden">
               <Image
-                src="/images/library-3.webp"
-                alt="Library interior"
+                src="/images/library-3.jpg"
+                alt="Students exploring journals and periodicals section at JKKN Dental College library"
                 width={400}
                 height={350}
                 className="w-full h-full object-cover"

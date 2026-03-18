@@ -18,20 +18,20 @@ const FacultySection = dynamic(() => import('@/components/FacultySection'));
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Best Dental College in Tamilnadu | JKKN Dental College',
-  description: 'JKKN Dental College & Hospital is one of the best dental college in Tamilnadu. DCI approved with excellent placements, modern labs & attached hospital.',
-  keywords: 'best dental college in tamilnadu, private dental colleges in tamilnadu, top 10 dental colleges in tamilnadu, top dental colleges in tamilnadu, list of dental colleges in tamilnadu, self financing dental colleges in tamilnadu, list of private dental colleges in tamilnadu',
+  title: 'JKKN Dental College & Hospital | DCI Approved, Tamil Nadu',
+  description: 'JKKN Dental College, Komarapalayam — DCI approved, NAAC A accredited. BDS (100 seats) & MDS (5 specializations). 200+ dental chairs, 92%+ placement rate.',
+  keywords: 'JKKN dental college, dental college Tamil Nadu, dental college Namakkal, BDS Tamil Nadu, MDS Tamil Nadu, dental college near Salem, dental college near Erode, DCI approved dental college, NAAC accredited dental college, dental college Komarapalayam',
   openGraph: {
-    title: 'Best Dental College in Tamilnadu | JKKN Dental College',
-    description: 'JKKN Dental College & Hospital is one of the best dental college in Tamilnadu. DCI approved with excellent placements, modern labs & attached hospital.',
-    url: 'https://dental.jkkn.ac.in',
+    title: 'JKKN Dental College & Hospital | DCI Approved, Tamil Nadu',
+    description: 'JKKN Dental College, Komarapalayam — DCI approved, NAAC A accredited. BDS (100 seats) & MDS (5 specializations). 200+ dental chairs, 92%+ placement rate.',
+    url: 'https://dental.jkkn.ac.in/',
     siteName: 'JKKN Dental College & Hospital',
     images: [
       {
-        url: '/images/dental-logo.png',
+        url: '/images/BDS-hero-image.png',
         width: 1200,
         height: 630,
-        alt: 'Best Dental College in Tamilnadu - JKKN Dental College'
+        alt: 'JKKN Dental College & Hospital campus at Komarapalayam, Namakkal District, Tamil Nadu'
       }
     ],
     type: 'website',
@@ -39,12 +39,12 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Best Dental College in Tamilnadu | JKKN Dental College',
-    description: 'JKKN Dental College & Hospital is one of the best dental college in Tamilnadu. DCI approved with excellent placements, modern labs & attached hospital.',
-    images: ['/images/dental-logo.png'],
+    title: 'JKKN Dental College & Hospital | DCI Approved, Tamil Nadu',
+    description: 'JKKN Dental College, Komarapalayam — DCI approved, NAAC A accredited. BDS (100 seats) & MDS (5 specializations). 200+ dental chairs, 92%+ placement rate.',
+    images: ['/images/BDS-hero-image.png'],
   },
   alternates: {
-    canonical: '/',
+    canonical: 'https://dental.jkkn.ac.in/',
   },
 };
 
@@ -88,7 +88,15 @@ export default function Home() {
       "@type": "Offer",
       "category": "Government Quota / Management Quota",
       "availability": "https://schema.org/InStock",
-      "url": "https://admission.jkkn.ac.in/"
+      "url": "https://admission.jkkn.ac.in/",
+      "priceSpecification": {
+        "@type": "PriceSpecification",
+        "priceCurrency": "INR",
+        "minPrice": "300000",
+        "maxPrice": "500000",
+        "unitText": "per year",
+        "description": "Approximate annual tuition fee for BDS program. Actual fees may vary."
+      }
     }
   };
 
@@ -113,7 +121,21 @@ export default function Home() {
       { "@type": "CourseInstance", "name": "MDS Prosthodontics Crown & Bridge", "courseMode": "Full-time" },
       { "@type": "CourseInstance", "name": "MDS Conservative Dentistry & Endodontics", "courseMode": "Full-time" },
       { "@type": "CourseInstance", "name": "MDS Oral Medicine", "courseMode": "Full-time" }
-    ]
+    ],
+    "offers": {
+      "@type": "Offer",
+      "category": "Government Quota / Management Quota",
+      "availability": "https://schema.org/InStock",
+      "url": "https://admission.jkkn.ac.in/",
+      "priceSpecification": {
+        "@type": "PriceSpecification",
+        "priceCurrency": "INR",
+        "minPrice": "800000",
+        "maxPrice": "1500000",
+        "unitText": "per year",
+        "description": "Approximate annual tuition fee for MDS program. Actual fees may vary by specialization."
+      }
+    }
   };
 
   // College/University Schema
@@ -121,19 +143,19 @@ export default function Home() {
     "@context": "https://schema.org",
     "@type": "CollegeOrUniversity",
     "name": "JKKN Dental College & Hospital",
-    "alternateName": "J.K.K. Nattraja Dental College & Hospital",
+    "alternateName": ["J.K.K. Nattraja Dental College & Hospital", "ஜே.கே.கே. நட்ராஜா பல் மருத்துவக் கல்லூரி மற்றும் மருத்துவமனை"],
     "url": "https://dental.jkkn.ac.in",
     "logo": "https://dental.jkkn.ac.in/images/dental-logo.png",
     "description": "India's 1st Human-AI AGI Dental Campus - DCI approved & NAAC A grade accredited dental college offering BDS & MDS programmes with advanced AI integration",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Nattrajapuram, NH-544 (Salem To Coimbatore National Highway)",
+      "streetAddress": "Natarajapuram, NH-544 (Salem To Coimbatore National Highway)",
       "addressLocality": "Komarapalayam",
       "addressRegion": "Tamil Nadu",
       "postalCode": "638183",
       "addressCountry": "IN"
     },
-    "telephone": "+91 93458 55001",
+    "telephone": "+919345855001",
     "email": "dental@jkkn.ac.in",
     "foundingDate": "1987",
     "knowsAbout": [
@@ -153,13 +175,37 @@ export default function Home() {
       "Affiliated to The Tamil Nadu Dr. M.G.R. Medical University"
     ],
     "sameAs": [
-      "https://www.facebook.com/jkkndentalcollege",
-      "https://www.instagram.com/jkkndental",
-      "https://www.linkedin.com/company/jkkn-dental"
+      "https://www.facebook.com/jkkndental/",
+      "https://www.instagram.com/jkkndental/",
+      "https://www.linkedin.com/school/jkkndental/",
+      "https://www.youtube.com/playlist?list=PL6QsTq-__HhvqQ28WcrDAwPa9jeMSK3AO",
+      "https://maps.app.goo.gl/mXx6rFRqpS9U76BK6",
+      "https://jkkn.ac.in/",
+      "https://dciindia.gov.in/"
+    ],
+    "parentOrganization": {
+      "@type": "EducationalOrganization",
+      "@id": "https://jkkn.ac.in/#organization",
+      "name": "JKKN Institutions",
+      "url": "https://jkkn.ac.in/"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 11.445180,
+      "longitude": 77.726549
+    },
+    "areaServed": [
+      { "@type": "City", "name": "Namakkal" },
+      { "@type": "City", "name": "Salem" },
+      { "@type": "City", "name": "Erode" },
+      { "@type": "City", "name": "Coimbatore" },
+      { "@type": "City", "name": "Tiruchengode" },
+      { "@type": "City", "name": "Komarapalayam" },
+      { "@type": "State", "name": "Tamil Nadu" }
     ]
   };
 
-  // FAQ Schema
+  // FAQ Schema — Voice-optimized (each answer ≤29 words, third-person, no abbreviations)
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -169,7 +215,7 @@ export default function Home() {
         "name": "What courses are offered at JKKN Dental College & Hospital?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "JKKN Dental College & Hospital offers BDS (Bachelor of Dental Surgery) - a 5-year undergraduate program with comprehensive training across 9 departments including Oral Surgery, Orthodontics, Periodontics, Prosthodontics, Conservative Dentistry, Pedodontics, Oral Medicine, Oral Pathology, and Public Health Dentistry. We also offer MDS (Master of Dental Surgery) postgraduate programs in 5 specializations: Conservative Dentistry & Endodontics, Prosthodontics, Periodontics, Oral Medicine & Radiology, and Orthodontics & Dentofacial Orthopedics."
+          "text": "JKKN Dental College and Hospital offers Bachelor of Dental Surgery, a five-year program, and Master of Dental Surgery with five postgraduate specializations across nine departments."
         }
       },
       {
@@ -177,7 +223,7 @@ export default function Home() {
         "name": "Is JKKN Dental College & Hospital DCI approved?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes, JKKN Dental College & Hospital is fully approved by the Dental Council of India (DCI) and National Medical Commission (NMC). The college is affiliated with The Tamil Nadu Dr. M.G.R. Medical University and NAAC accredited."
+          "text": "JKKN Dental College and Hospital holds Dental Council of India approval, National Assessment and Accreditation Council A Grade accreditation, and Tamil Nadu Dr. M.G.R. Medical University affiliation."
         }
       },
       {
@@ -185,7 +231,7 @@ export default function Home() {
         "name": "What is the admission process for BDS?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "BDS admission is based on NEET-UG scores through state or All India Quota counseling. Candidates need 10+2 with Physics, Chemistry, and Biology with minimum 50% marks (40% for reserved categories). After counseling allocation, complete document verification and fee payment."
+          "text": "Bachelor of Dental Surgery admission requires NEET qualification, higher secondary with Physics, Chemistry, and Biology at fifty percent minimum, through state or All India Quota counseling."
         }
       },
       {
@@ -193,7 +239,7 @@ export default function Home() {
         "name": "What facilities does JKKN Dental College offer?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Our campus features a 200+ chair dental hospital treating 500+ patients daily, digital simulation labs, CBCT and OPG imaging, CAD/CAM laboratory, library with e-resources, research labs, separate hostels, cafeteria, sports facilities, and 24/7 Wi-Fi."
+          "text": "JKKN Dental College features over two hundred dental chairs, a hundred-bed hospital treating five hundred patients daily, digital simulation labs, and advanced imaging facilities."
         }
       },
       {
@@ -201,7 +247,7 @@ export default function Home() {
         "name": "What is the placement record?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "JKKN Dental College & Hospital provides 100% placement assistance. Alumni work at Apollo Dental, Clove Dental, Sabka Dentist, government hospitals, and private practices. Many pursue higher studies abroad or establish their own clinics."
+          "text": "JKKN Dental College provides full placement assistance with alumni at Apollo Dental, Clove Dental, government hospitals, private practices, and international healthcare institutions."
         }
       },
       {
@@ -209,7 +255,7 @@ export default function Home() {
         "name": "What makes JKKN different from other dental colleges?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "JKKN stands out as India's 1st Human-AI AGI Dental Campus, integrating advanced AI tools like ChatGPT, AI-powered diagnostic imaging, and CAD/CAM technology into dental education. Combined with 57+ years of educational legacy (JKKN Group founded 1969), exceptional clinical exposure (500+ daily patients), state-of-the-art infrastructure, and comprehensive placement support, JKKN prepares future-ready dental professionals with expertise in both clinical excellence and AI technology."
+          "text": "JKKN Dental College is India's first Human-AI Dental Campus, combining artificial intelligence tools with clinical training, two hundred dental chairs, and five hundred daily patients."
         }
       },
       {
@@ -217,29 +263,72 @@ export default function Home() {
         "name": "How does JKKN integrate AI in dental education?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "JKKN Dental College is India's 1st Human-AI AGI Dental Campus. Students use ChatGPT and AI tools for research, case studies, and personalized learning. The campus features AI-powered diagnostic imaging (CBCT, OPG), CAD/CAM technology for precision dental restorations, AI-enhanced clinical training, and data analytics for research. AI courses are integrated into both BDS and MDS curriculum, ensuring graduates are equipped with cutting-edge technological expertise alongside clinical skills."
+          "text": "JKKN Dental College integrates artificial intelligence across its curriculum, including AI-powered diagnostic imaging, computer-aided design and manufacturing technology, and research tools."
         }
       }
     ]
   };
 
-  // Principal/Dean Person Schema
-  const principalSchema = {
+  // Admissions 2026-27 Event Schema
+  const admissionEventSchema = {
     "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Dr. [Principal Name]",
-    "jobTitle": "Principal & Dean",
-    "worksFor": {
+    "@type": "Event",
+    "name": "JKKN Dental College Admissions 2026-27 — BDS & MDS",
+    "description": "Admissions open for BDS and MDS programs at JKKN Dental College & Hospital, Komarapalayam. DCI approved, NAAC A accredited. Apply via NEET counseling or management quota.",
+    "startDate": "2026-03-01",
+    "endDate": "2026-08-31",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/MixedEventAttendanceMode",
+    "location": [
+      {
+        "@type": "Place",
+        "name": "JKKN Dental College & Hospital",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "NH-544, Natarajapuram",
+          "addressLocality": "Komarapalayam",
+          "addressRegion": "Tamil Nadu",
+          "postalCode": "638183",
+          "addressCountry": "IN"
+        }
+      },
+      {
+        "@type": "VirtualLocation",
+        "url": "https://admission.jkkn.ac.in/"
+      }
+    ],
+    "organizer": {
       "@type": "CollegeOrUniversity",
       "name": "JKKN Dental College & Hospital",
       "url": "https://dental.jkkn.ac.in/"
     },
-    "alumniOf": "Tamil Nadu Dr. MGR Medical University",
-    "hasCredential": {
-      "@type": "EducationalOccupationalCredential",
-      "credentialCategory": "MDS, PhD"
-    }
+    "offers": {
+      "@type": "Offer",
+      "url": "https://admission.jkkn.ac.in/",
+      "availability": "https://schema.org/InStock",
+      "validFrom": "2026-03-01"
+    },
+    "image": "https://dental.jkkn.ac.in/images/BDS-hero-image.png"
   };
+
+  // Principal/Dean Person Schema
+  // [UPDATE: Add actual principal name, qualifications, and uncomment this block]
+  // const principalSchema = {
+  //   "@context": "https://schema.org",
+  //   "@type": "Person",
+  //   "name": "Dr. [Principal Name]",
+  //   "jobTitle": "Principal & Dean",
+  //   "worksFor": {
+  //     "@type": "CollegeOrUniversity",
+  //     "name": "JKKN Dental College & Hospital",
+  //     "url": "https://dental.jkkn.ac.in/"
+  //   },
+  //   "alumniOf": "Tamil Nadu Dr. MGR Medical University",
+  //   "hasCredential": {
+  //     "@type": "EducationalOccupationalCredential",
+  //     "credentialCategory": "MDS, PhD"
+  //   }
+  // };
 
   // Schema #1: MedicalOrganization + Dentist
   const medicalOrgSchema = {
@@ -247,7 +336,7 @@ export default function Home() {
     "@type": ["MedicalOrganization", "Dentist"],
     "@id": "https://dental.jkkn.ac.in/#organization",
     "name": "JKKN Dental College & Hospital",
-    "alternateName": "JKKN Dental College",
+    "alternateName": ["JKKN Dental College", "ஜே.கே.கே.என் பல் மருத்துவக் கல்லூரி"],
     "url": "https://dental.jkkn.ac.in/",
     "logo": {
       "@type": "ImageObject",
@@ -275,8 +364,8 @@ export default function Home() {
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": 11.4087,
-      "longitude": 77.7192
+      "latitude": 11.445180,
+      "longitude": 77.726549
     },
     "openingHoursSpecification": [
       {
@@ -298,7 +387,7 @@ export default function Home() {
       "Pediatric Dentistry",
       "Public Health Dentistry"
     ],
-    "numberOfBeds": "100+",
+    "numberOfBeds": 100,
     "areaServed": [
       { "@type": "State", "name": "Tamil Nadu" },
       { "@type": "Country", "name": "India" }
@@ -309,6 +398,15 @@ export default function Home() {
       "name": "JKKN Institutions",
       "url": "https://jkkn.ac.in/"
     },
+    "sameAs": [
+      "https://www.facebook.com/jkkndental/",
+      "https://www.instagram.com/jkkndental/",
+      "https://www.linkedin.com/school/jkkndental/",
+      "https://www.youtube.com/playlist?list=PL6QsTq-__HhvqQ28WcrDAwPa9jeMSK3AO",
+      "https://maps.app.goo.gl/mXx6rFRqpS9U76BK6",
+      "https://jkkn.ac.in/",
+      "https://dciindia.gov.in/"
+    ],
     "hasCredential": [
       {
         "@type": "EducationalOccupationalCredential",
@@ -344,14 +442,6 @@ export default function Home() {
       "Cosmetic Dentistry",
       "Oral and Maxillofacial Surgery"
     ],
-    "sameAs": [
-      "https://www.facebook.com/jkkndentalcollege",
-      "https://www.instagram.com/jkkndentalcollege",
-      "https://www.youtube.com/@jkkndentalcollege",
-      "https://www.linkedin.com/company/jkkndentalcollege",
-      "https://twitter.com/jkkndentalcollege",
-      "https://maps.app.goo.gl/mXx6rFRqpS9U76BK6"
-    ]
   };
 
   // Schema #2: Dentist (LocalBusiness) with AggregateRating
@@ -375,8 +465,8 @@ export default function Home() {
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": 11.4087,
-      "longitude": 77.7192
+      "latitude": 11.445180,
+      "longitude": 77.726549
     },
     "hasMap": "https://maps.app.goo.gl/mXx6rFRqpS9U76BK6",
     "openingHoursSpecification": [
@@ -393,15 +483,17 @@ export default function Home() {
       { "@type": "City", "name": "Erode" },
       { "@type": "City", "name": "Tiruchengode" },
       { "@type": "City", "name": "Komarapalayam" },
+      { "@type": "City", "name": "Coimbatore" },
       { "@type": "State", "name": "Tamil Nadu" }
     ],
+    // [UPDATE: Verify ratingValue and reviewCount from Google Business Profile before publishing]
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": "4.5",
       "bestRating": "5",
       "worstRating": "1",
-      "ratingCount": "350",
-      "reviewCount": "280"
+      "ratingCount": "400",
+      "reviewCount": "400"
     }
   };
 
@@ -419,15 +511,7 @@ export default function Home() {
       "@id": "https://dental.jkkn.ac.in/#organization",
       "name": "JKKN Dental College & Hospital"
     },
-    "inLanguage": "en",
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": {
-        "@type": "EntryPoint",
-        "urlTemplate": "https://dental.jkkn.ac.in/search?q={search_term_string}"
-      },
-      "query-input": "required name=search_term_string"
-    }
+    "inLanguage": "en"
   };
 
   // Schema #8a: WebPage with Speakable
@@ -448,7 +532,9 @@ export default function Home() {
         "/html/head/meta[@name='description']/@content"
       ]
     },
-    "description": "JKKN Dental College & Hospital, established in 1987, is a DCI approved and NAAC A Grade accredited dental college offering BDS and MDS programs. Located on India's first AI-integrated campus in Komarapalayam, Tamil Nadu, with 200+ dental chairs, 100+ bed hospital, and 92% placement rate. Apply now for 2026-27 admissions."
+    "description": "JKKN Dental College & Hospital, established in 1987, is a DCI approved and NAAC A Grade accredited dental college offering BDS and MDS programs. Located on India's first AI-integrated campus in Komarapalayam, Tamil Nadu, with 200+ dental chairs, 100+ bed hospital, and 92% placement rate. Apply now for 2026-27 admissions.",
+    "datePublished": "2025-01-01",
+    "dateModified": "2026-03-16"
   };
 
   // Schema #10: Organization sameAs Enhancement
@@ -459,16 +545,15 @@ export default function Home() {
     "name": "JKKN Dental College & Hospital",
     "url": "https://dental.jkkn.ac.in/",
     "sameAs": [
-      "https://www.facebook.com/jkkndentalcollege",
-      "https://www.instagram.com/jkkndentalcollege",
-      "https://www.youtube.com/@jkkndentalcollege",
-      "https://www.linkedin.com/company/jkkndentalcollege",
-      "https://twitter.com/jkkndentalcollege",
-      "https://en.wikipedia.org/wiki/JKKN_Dental_College",
+      "https://www.facebook.com/jkkndental/",
+      "https://www.instagram.com/jkkndental/",
+      "https://www.linkedin.com/school/jkkndental/",
+      "https://www.youtube.com/playlist?list=PL6QsTq-__HhvqQ28WcrDAwPa9jeMSK3AO",
       "https://maps.app.goo.gl/mXx6rFRqpS9U76BK6",
       "https://admission.jkkn.ac.in/",
       "https://placements.jkkn.ac.in/",
-      "https://jkkn.ac.in/"
+      "https://jkkn.ac.in/",
+      "https://dciindia.gov.in/"
     ],
     "parentOrganization": {
       "@type": "EducationalOrganization",
@@ -478,67 +563,6 @@ export default function Home() {
     }
   };
 
-  // Schema #4a: BreadcrumbList – Homepage
-  const homeBreadcrumbSchema = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://dental.jkkn.ac.in/"
-      }
-    ]
-  };
-
-  const localBusinessSchema = {
-    "@context": "https://schema.org",
-    "@type": "Dentist",
-    "name": "JKKN Dental College & Hospital",
-    "alternateName": "JKKN Dental Hospital",
-    "description": "Multi-specialty dental teaching hospital with 200+ dental chairs, 100+ hospital beds, serving 500+ patients daily. Part of JKKN Dental College & Hospital.",
-    "url": "https://dental.jkkn.ac.in/",
-    "telephone": "+919345855001",
-    "email": "info@jkkn.ac.in",
-    "image": "https://dental.jkkn.ac.in/images/dental-logo.png",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Natarajapuram, NH-544, Salem-Coimbatore Highway",
-      "addressLocality": "Komarapalayam",
-      "addressRegion": "Tamil Nadu",
-      "postalCode": "638183",
-      "addressCountry": "IN"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 11.4333,
-      "longitude": 77.7167
-    },
-    "openingHoursSpecification": [
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-        "opens": "09:00",
-        "closes": "17:00"
-      }
-    ],
-    "priceRange": "$$",
-    "medicalSpecialty": [
-      "Periodontics",
-      "Orthodontics",
-      "Prosthodontics",
-      "Conservative Dentistry & Endodontics",
-      "Oral Medicine & Radiology",
-      "Oral & Maxillofacial Surgery",
-      "Pedodontics",
-      "Community Dentistry"
-    ],
-    "sameAs": [
-      "https://maps.app.goo.gl/mXx6rFRqpS9U76BK6"
-    ]
-  };
-
   return (
     <main className="overflow-x-hidden w-full">
       <StructuredData data={medicalOrgSchema} />
@@ -546,13 +570,13 @@ export default function Home() {
       <StructuredData data={websiteSchema} />
       <StructuredData data={webPageSchema} />
       <StructuredData data={orgSameAsSchema} />
-      <StructuredData data={homeBreadcrumbSchema} />
-      <StructuredData data={localBusinessSchema} />
-      <StructuredData data={principalSchema} />
+      {/* [UPDATE: Uncomment when principal name is confirmed] */}
+      {/* <StructuredData data={principalSchema} /> */}
       <StructuredData data={bdsSchema} />
       <StructuredData data={mdsSchema} />
       <StructuredData data={collegeSchema} />
       <StructuredData data={faqSchema} />
+      <StructuredData data={admissionEventSchema} />
       <BreadcrumbSchema items={[
         { name: 'JKKN Institutions', url: 'https://jkkn.ac.in/' },
         { name: 'JKKN Dental College & Hospital', url: 'https://dental.jkkn.ac.in/' },

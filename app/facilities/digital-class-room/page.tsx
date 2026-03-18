@@ -23,14 +23,14 @@ export default function DigitalClassRoom() {
             DIGITAL CLASS ROOM
           </h1>
 
-          {/* Image Gallery - 3 Images */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+          {/* Image Gallery - 2 Images */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
             {/* Image 1 */}
             <div className="w-full h-[280px] md:h-[320px] bg-gray-200 rounded-lg overflow-hidden">
               <Image
-                src="/images/digital-class-room-1.webp"
-                alt="Digital classroom with projector"
-                width={400}
+                src="/images/digital-class-room-1.jpg"
+                alt="JKKN Dental College classroom session with students attentively listening to faculty"
+                width={600}
                 height={320}
                 className="w-full h-full object-cover"
               />
@@ -39,20 +39,9 @@ export default function DigitalClassRoom() {
             {/* Image 2 */}
             <div className="w-full h-[280px] md:h-[320px] bg-gray-200 rounded-lg overflow-hidden">
               <Image
-                src="/images/digital-class-room-2.webp"
-                alt="Interactive classroom session"
-                width={400}
-                height={320}
-                className="w-full h-full object-cover"
-              />
-            </div>
-
-            {/* Image 3 */}
-            <div className="w-full h-[280px] md:h-[320px] bg-gray-200 rounded-lg overflow-hidden">
-              <Image
-                src="/images/digital-class-room-3.png"
-                alt="Students in digital classroom"
-                width={400}
+                src="/images/digital-class-room-2.jpg"
+                alt="Wide view of JKKN Dental College classroom with students during a lecture"
+                width={600}
                 height={320}
                 className="w-full h-full object-cover"
               />

@@ -20,8 +20,8 @@ export default function AboutInstitution() {
           <div className="relative">
             <div className="relative rounded-xl sm:rounded-2xl overflow-hidden shadow-xl">
               <Image
-                src="/images/Home-About-Our-Institution.webp"
-                alt="JKKN Dental College Building"
+                src="/images/JKKN-Dental-College-Building.jpg"
+                alt="JKKN Dental College & Hospital building exterior with signboard at Komarapalayam campus"
                 width={1920}
                 height={1280}
                 className="w-full h-auto object-cover"

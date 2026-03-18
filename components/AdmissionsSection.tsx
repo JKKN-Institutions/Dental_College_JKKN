@@ -2,7 +2,7 @@ import { Check, Phone, Mail } from 'lucide-react';
 
 export default function AdmissionsSection() {
   return (
-    <section className="py-12 sm:py-16 md:py-20 lg:py-24 px-4 sm:px-6 bg-[#FBFBEE]">
+    <section className="admission-cta py-12 sm:py-16 md:py-20 lg:py-24 px-4 sm:px-6 bg-[#FBFBEE]">
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-2 gap-8 sm:gap-10 md:gap-12 lg:gap-16">
           {/* Left - Eligibility */}

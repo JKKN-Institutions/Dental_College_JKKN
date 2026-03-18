@@ -26,12 +26,12 @@ export default function Hero() {
 
             {/* Main Heading */}
             <h1 className="text-2xl xs:text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight">
-              Transform Your Future at{' '}
-              <span className="text-[#7cb983]">Tamil Nadu's Premier Dental College</span>
+              JKKN Dental College & Hospital{' '}
+              <span className="text-[#7cb983]">BDS & MDS Programs Near Erode, Tamil Nadu</span>
             </h1>
 
             {/* Description */}
-            <p className="text-gray-200 text-sm sm:text-base md:text-lg leading-relaxed">
+            <p className="hero-description text-gray-200 text-sm sm:text-base md:text-lg leading-relaxed">
               Join JKKN Dental College & Hospital — where world-class dental education meets compassionate patient care. Our DCI-approved programs prepare Learners for exceptional careers in dentistry.
             </p>
 
@@ -73,8 +73,8 @@ export default function Hero() {
           <div className="relative order-first md:order-last">
             <div className="rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl bg-gray-100 aspect-[4/3] md:aspect-auto">
               <Image
-                src="/images/JKKN-Dental-Main-Banner-Image.webp"
-                alt="Dental Professional"
+                src="/images/JKKN-Dental-Clinical-Training.jpg"
+                alt="JKKN Dental College clinical training with dental chairs and faculty treating patients"
                 width={1920}
                 height={1440}
                 className="w-full h-full object-cover"
