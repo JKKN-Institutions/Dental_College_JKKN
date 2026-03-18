@@ -9,6 +9,7 @@ const AboutInstitution = dynamic(() => import('@/components/AboutInstitution'));
 const AcademicPrograms = dynamic(() => import('@/components/AcademicPrograms'));
 const Infrastructure = dynamic(() => import('@/components/Infrastructure'));
 const WhyChooseJKKN = dynamic(() => import('@/components/WhyChooseJKKN'));
+import EventsStories from '@/components/EventsStories';
 const AdmissionsSection = dynamic(() => import('@/components/AdmissionsSection'));
 const FAQSection = dynamic(() => import('@/components/FAQSection'));
 const CTASection = dynamic(() => import('@/components/CTASection'));
@@ -563,6 +564,9 @@ export default function Home() {
       <AcademicPrograms />
       <Infrastructure />
       <WhyChooseJKKN />
+      <div id="events">
+        <EventsStories />
+      </div>
       <FacultySection />
       <AdmissionsSection />
       <FAQSection />
