@@ -24,6 +24,16 @@ export function proxy(request: NextRequest) {
     return new NextResponse(null, { status: 410 });
   }
 
+  // Protect /admin routes — redirect unauthenticated users to login
+  if (pathname.startsWith('/admin') && !pathname.startsWith('/admin/login')) {
+    const hasSession = request.cookies.getAll().some(
+      (cookie) => cookie.name.startsWith('sb-') && cookie.name.endsWith('-auth-token')
+    );
+    if (!hasSession) {
+      return NextResponse.redirect(new URL('/admin/login', request.url));
+    }
+  }
+
   const response = NextResponse.next();
   setSecurityHeaders(response);
   return response;
