@@ -8,6 +8,7 @@ import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import StructuredData from '@/components/StructuredData';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 import Breadcrumb from '@/components/Breadcrumb';
+import { generateSpeakableWebPageSchema } from '@/lib/metadata';
 import { useState } from 'react';
 
 export default function BDSProgram() {
@@ -112,10 +113,18 @@ export default function BDSProgram() {
     ]
   };
 
+  const speakableSchema = generateSpeakableWebPageSchema({
+    title: 'Best BDS Colleges in Tamilnadu | JKKN Dental College',
+    description: 'Searching for the best BDS colleges in Tamilnadu? JKKN Dental, Namakkal offers DCI-approved BDS with advanced labs, clinical rotations & expert faculty.',
+    url: 'https://dental.jkkn.ac.in/academics/details-of-academic-programs/bds/',
+    speakableCssSelectors: ['h1', '.hero-description', 'article p'],
+  });
+
   return (
     <main className="overflow-x-hidden">
       <StructuredData data={courseSchema} />
       <StructuredData data={faqSchema} />
+      <StructuredData data={speakableSchema} />
       <BreadcrumbSchema items={[
         { name: 'JKKN Institutions', url: 'https://jkkn.ac.in/' },
         { name: 'Dental College', url: 'https://dental.jkkn.ac.in/' },

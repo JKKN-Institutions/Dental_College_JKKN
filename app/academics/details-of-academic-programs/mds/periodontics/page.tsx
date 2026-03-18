@@ -6,7 +6,9 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import StructuredData from '@/components/StructuredData';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 import Breadcrumb from '@/components/Breadcrumb';
+import { generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export default function MDSPeriodontics() {
   // Course Schema for MDS Periodontics
@@ -94,10 +96,24 @@ export default function MDSPeriodontics() {
     ]
   };
 
+  const speakableSchema = generateSpeakableWebPageSchema({
+    title: 'MDS Periodontics | Gum Disease Specialist Course | JKKN Dental',
+    description: 'MDS in Periodontics at JKKN Dental College. 3-year postgraduate program in gum disease treatment, dental implants, and periodontal surgery. DCI approved, expert faculty, modern facilities.',
+    url: 'https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/periodontics/',
+    speakableCssSelectors: ['h1', '.hero-description', 'article p'],
+  });
+
   return (
     <main className="overflow-x-hidden">
       <StructuredData data={courseSchema} />
       <StructuredData data={faqSchema} />
+      <BreadcrumbSchema items={[
+        { name: 'Home', url: 'https://dental.jkkn.ac.in/' },
+        { name: 'Academics', url: 'https://dental.jkkn.ac.in/academics/' },
+        { name: 'MDS Programs', url: 'https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/' },
+        { name: 'Periodontics', url: 'https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/periodontics/' },
+      ]} />
+      <StructuredData data={speakableSchema} />
       <Header />
       <Breadcrumb items={[
         { name: 'Home', url: 'https://dental.jkkn.ac.in' },

@@ -4,6 +4,7 @@ import { useState, useEffect, useRef } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { ScrollToTop } from '@/components/ScrollToTop';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 import {
   Clock,
   Briefcase,
@@ -189,6 +190,11 @@ export default function BlogDetailPage() {
 
   return (
     <div className="min-h-screen bg-white">
+      <BreadcrumbSchema items={[
+        { name: 'Home', url: 'https://dental.jkkn.ac.in/' },
+        { name: 'Blog', url: 'https://dental.jkkn.ac.in/blog/' },
+        { name: 'Top 10 Career Options After BEd 2026', url: 'https://dental.jkkn.ac.in/blog/top-10-career-options-after-bed-2026/' },
+      ]} />
       <Header />
 
       {/* ── Article Header ── */}

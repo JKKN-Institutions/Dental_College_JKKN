@@ -2,15 +2,35 @@ import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+import StructuredData from '@/components/StructuredData';
+import { generateBreadcrumbSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: 'Academic Council | JKKN Dental College',
   description: 'Learn about the Academic Council at JKKN Dental College, dedicated to shaping curriculum, promoting research, and enhancing dental education.',
   keywords: 'Academic Council, JKKN Dental College, dental curriculum, dental education, faculty development, DCI guidelines, teaching methodology',
+  openGraph: {
+    title: 'Academic Council | JKKN Dental College',
+    description: 'Learn about the Academic Council at JKKN Dental College, dedicated to shaping curriculum, promoting research, and enhancing dental education.',
+    url: 'https://dental.jkkn.ac.in/administration/academic-council/',
+    type: 'website',
+    siteName: 'JKKN Dental College & Hospital',
+  },
 };
+
+const breadcrumbSchema = generateBreadcrumbSchema('/administration/academic-council/');
+const speakableSchema = generateSpeakableWebPageSchema({
+  title: 'Academic Council | JKKN Dental College',
+  description: 'Learn about the Academic Council at JKKN Dental College, dedicated to shaping curriculum, promoting research, and enhancing dental education.',
+  url: 'https://dental.jkkn.ac.in/administration/academic-council/',
+  speakableCssSelectors: ['h1', '.hero-description', 'article p'],
+});
 
 export default function AcademicCouncil() {
   return (
+    <>
+      <StructuredData data={breadcrumbSchema} />
+      <StructuredData data={speakableSchema} />
     <main>
       <Header />
 
@@ -495,5 +515,6 @@ export default function AcademicCouncil() {
       <Footer />
       <FloatingWhatsApp />
     </main>
+    </>
   );
 }

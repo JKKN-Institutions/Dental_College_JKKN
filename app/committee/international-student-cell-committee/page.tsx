@@ -2,16 +2,42 @@ import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+import StructuredData from '@/components/StructuredData';
+import { generateBreadcrumbSchema, generateWebPageSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: 'International Student Cell Committee | JKKN Dental College',
   description: 'Supporting NRI and international students with admission, orientation, and academic guidance. Globally acclaimed dental education.',
   keywords: 'international student cell, NRI admissions, foreign students, international education, student support, JKKN dental college',
+  openGraph: {
+    title: 'International Student Cell Committee | JKKN Dental College',
+    description: 'Supporting NRI and international students with admission, orientation, and academic guidance. Globally acclaimed dental education.',
+    url: 'https://dental.jkkn.ac.in/committee/international-student-cell-committee/',
+    type: 'website',
+    siteName: 'JKKN Dental College & Hospital',
+  },
 };
 
 export default function InternationalStudentCellCommittee() {
+  const breadcrumbSchema = generateBreadcrumbSchema('/committee/international-student-cell-committee');
+  const webPageSchema = generateWebPageSchema({
+    title: 'International Student Cell Committee - JKKN Dental College',
+    description: 'Supporting NRI and international students with admission, orientation, and academic guidance. Globally acclaimed dental education.',
+    url: 'https://dental.jkkn.ac.in/committee/international-student-cell-committee/',
+    dateModified: '2026-03-18',
+  });
+  const speakableSchema = generateSpeakableWebPageSchema({
+    title: 'International Student Cell Committee | JKKN Dental College',
+    description: 'Supporting NRI and international students with admission, orientation, and academic guidance. Globally acclaimed dental education.',
+    url: 'https://dental.jkkn.ac.in/committee/international-student-cell-committee/',
+    speakableCssSelectors: ['h1', '.hero-description', 'article p'],
+  });
+
   return (
     <main>
+      <StructuredData data={breadcrumbSchema} />
+      <StructuredData data={webPageSchema} />
+      <StructuredData data={speakableSchema} />
       <Header />
 
       {/* Page Content */}

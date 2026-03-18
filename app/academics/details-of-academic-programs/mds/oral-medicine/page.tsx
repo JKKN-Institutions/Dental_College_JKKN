@@ -6,7 +6,9 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import StructuredData from '@/components/StructuredData';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 import Breadcrumb from '@/components/Breadcrumb';
+import { generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export default function MDSOralMedicine() {
   // Course Schema for MDS Oral Medicine & Radiology
@@ -86,10 +88,24 @@ export default function MDSOralMedicine() {
     ]
   };
 
+  const speakableSchema = generateSpeakableWebPageSchema({
+    title: 'Fellowship After MDS Oral Medicine & Radiology | JKKN',
+    description: 'Explore fellowship courses after MDS in Oral Medicine and Radiology at JKKN Dental College. Advanced training in oral diagnostics, radiology & patient care.',
+    url: 'https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/oral-medicine/',
+    speakableCssSelectors: ['h1', '.hero-description', 'article p'],
+  });
+
   return (
     <main className="overflow-x-hidden">
       <StructuredData data={courseSchema} />
       <StructuredData data={faqSchema} />
+      <BreadcrumbSchema items={[
+        { name: 'Home', url: 'https://dental.jkkn.ac.in/' },
+        { name: 'Academics', url: 'https://dental.jkkn.ac.in/academics/' },
+        { name: 'MDS Programs', url: 'https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/' },
+        { name: 'Oral Medicine & Radiology', url: 'https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/oral-medicine/' },
+      ]} />
+      <StructuredData data={speakableSchema} />
       <Header />
       <Breadcrumb items={[
         { name: 'Home', url: 'https://dental.jkkn.ac.in' },

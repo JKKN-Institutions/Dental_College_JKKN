@@ -14,15 +14,21 @@ interface Event {
 }
 
 export default async function EventsStories() {
-  const supabase = await createClient();
+  let events: Event[] | null = null;
 
-  const { data: events } = await supabase
-    .from('events')
-    .select('id, title, slug, description, event_date, venue, image_url')
-    .eq('college_id', siteConfig.id)
-    .eq('is_published', true)
-    .order('event_date', { ascending: false })
-    .limit(6);
+  try {
+    const supabase = await createClient();
+    const { data } = await supabase
+      .from('events')
+      .select('id, title, slug, description, event_date, venue, image_url')
+      .eq('college_id', siteConfig.id)
+      .eq('is_published', true)
+      .order('event_date', { ascending: false })
+      .limit(6);
+    events = data;
+  } catch {
+    return null;
+  }
 
   if (!events || events.length === 0) return null;
 

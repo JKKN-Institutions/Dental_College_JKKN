@@ -2,16 +2,42 @@ import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+import StructuredData from '@/components/StructuredData';
+import { generateBreadcrumbSchema, generateWebPageSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: 'Disciplinary Committee | JKKN Dental College',
   description: 'Maintaining discipline and enforcing codes of conduct to create a safe and respectful learning environment at JKKN Dental College.',
   keywords: 'disciplinary committee, student discipline, code of conduct, institutional rules, student accountability, JKKN dental college',
+  openGraph: {
+    title: 'Disciplinary Committee | JKKN Dental College',
+    description: 'Maintaining discipline and enforcing codes of conduct to create a safe and respectful learning environment at JKKN Dental College.',
+    url: 'https://dental.jkkn.ac.in/committee/disciplinary-committee/',
+    type: 'website',
+    siteName: 'JKKN Dental College & Hospital',
+  },
 };
 
 export default function DisciplinaryCommittee() {
+  const breadcrumbSchema = generateBreadcrumbSchema('/committee/disciplinary-committee');
+  const webPageSchema = generateWebPageSchema({
+    title: 'Disciplinary Committee - JKKN Dental College',
+    description: 'Maintaining discipline and enforcing codes of conduct to create a safe and respectful learning environment at JKKN Dental College.',
+    url: 'https://dental.jkkn.ac.in/committee/disciplinary-committee/',
+    dateModified: '2026-03-18',
+  });
+  const speakableSchema = generateSpeakableWebPageSchema({
+    title: 'Disciplinary Committee | JKKN Dental College',
+    description: 'Maintaining discipline and enforcing codes of conduct to create a safe and respectful learning environment at JKKN Dental College.',
+    url: 'https://dental.jkkn.ac.in/committee/disciplinary-committee/',
+    speakableCssSelectors: ['h1', '.hero-description', 'article p'],
+  });
+
   return (
     <main>
+      <StructuredData data={breadcrumbSchema} />
+      <StructuredData data={webPageSchema} />
+      <StructuredData data={speakableSchema} />
       <Header />
 
       {/* Page Content */}

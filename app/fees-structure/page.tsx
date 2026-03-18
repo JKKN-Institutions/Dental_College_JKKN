@@ -4,11 +4,20 @@ import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import { AlertTriangle } from 'lucide-react';
 import Link from 'next/link';
+import StructuredData from '@/components/StructuredData';
+import { generateBreadcrumbSchema, generateWebPageSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: 'Fee Structure 2026-27 | BDS & MDS Fees | JKKN Dental College',
   description: 'Complete fee structure for BDS and MDS programs at JKKN Dental College for 2026-27. Detailed breakdown of tuition fees, hostel charges, and all payment information.',
   keywords: 'fee structure, BDS fees, MDS fees, dental college fees, JKKN fees, tuition fees, hostel fees, admission fees, course fees 2026',
+  openGraph: {
+    title: 'Fee Structure 2026-27 | BDS & MDS Fees | JKKN Dental College',
+    description: 'Complete fee structure for BDS and MDS programs at JKKN Dental College for 2026-27. Detailed breakdown of tuition fees, hostel charges, and all payment information.',
+    url: 'https://dental.jkkn.ac.in/fees-structure/',
+    type: 'website',
+    siteName: 'JKKN Dental College & Hospital',
+  },
 };
 
 // Structured Data for AI Extraction (JSON-LD)
@@ -76,8 +85,25 @@ const structuredData = {
 };
 
 export default function FeesStructure() {
+  const breadcrumbSchema = generateBreadcrumbSchema('/fees-structure');
+  const webPageSchema = generateWebPageSchema({
+    title: 'Fee Structure 2026-27 | BDS & MDS Fees | JKKN Dental College',
+    description: 'Complete fee structure for BDS and MDS programs at JKKN Dental College for 2026-27. Detailed breakdown of tuition fees, hostel charges, and all payment information.',
+    url: 'https://dental.jkkn.ac.in/fees-structure/',
+    dateModified: '2026-03-18',
+  });
+  const speakableSchema = generateSpeakableWebPageSchema({
+    title: 'Fee Structure 2026-27 | BDS & MDS Fees | JKKN Dental College',
+    description: 'Complete fee structure for BDS and MDS programs at JKKN Dental College for 2026-27. Detailed breakdown of tuition fees, hostel charges, and all payment information.',
+    url: 'https://dental.jkkn.ac.in/fees-structure/',
+    speakableCssSelectors: ['h1', '.hero-description', 'article p'],
+  });
+
   return (
     <main className="overflow-x-hidden">
+      <StructuredData data={breadcrumbSchema} />
+      <StructuredData data={webPageSchema} />
+      <StructuredData data={speakableSchema} />
       {/* Add JSON-LD Structured Data */}
       <script
         type="application/ld+json"

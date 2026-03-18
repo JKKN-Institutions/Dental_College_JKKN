@@ -2,16 +2,41 @@ import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+import { generateBreadcrumbSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
+import StructuredData from '@/components/StructuredData';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
 export const metadata: Metadata = {
   title: 'Learning Outcomes - BDS & MDS Programs - JKKN Dental College',
   description: 'Explore comprehensive learning outcomes for BDS and MDS programs at JKKN Dental College. Quality-focused dental education objectives. Discover more.',
   keywords: 'learning outcomes, BDS program outcomes, MDS program outcomes, dental education objectives, curriculum outcomes, JKKN academics, program goals',
+  openGraph: {
+    title: 'Learning Outcomes - BDS & MDS Programs - JKKN Dental College',
+    description: 'Explore comprehensive learning outcomes for BDS and MDS programs at JKKN Dental College. Quality-focused dental education objectives. Discover more.',
+    url: 'https://dental.jkkn.ac.in/academics/learning-outcomes/',
+    type: 'website',
+    siteName: 'JKKN Dental College & Hospital',
+  },
 };
 
 export default function LearningOutcomes() {
+  const breadcrumbSchema = generateBreadcrumbSchema('/academics/learning-outcomes/');
+  const speakableSchema = generateSpeakableWebPageSchema({
+    title: 'Learning Outcomes - BDS & MDS Programs - JKKN Dental College',
+    description: 'Explore comprehensive learning outcomes for BDS and MDS programs at JKKN Dental College. Quality-focused dental education objectives. Discover more.',
+    url: 'https://dental.jkkn.ac.in/academics/learning-outcomes/',
+    speakableCssSelectors: ['h1', '.hero-description', 'article p'],
+  });
+
   return (
     <main>
+      <BreadcrumbSchema items={[
+        { name: 'Home', url: 'https://dental.jkkn.ac.in/' },
+        { name: 'Academics', url: 'https://dental.jkkn.ac.in/academics/' },
+        { name: 'Learning Outcomes', url: 'https://dental.jkkn.ac.in/academics/learning-outcomes/' },
+      ]} />
+      <StructuredData data={breadcrumbSchema} />
+      <StructuredData data={speakableSchema} />
       <Header />
 
       {/* Page Content */}

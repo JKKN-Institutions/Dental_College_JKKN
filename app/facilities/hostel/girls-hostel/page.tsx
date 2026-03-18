@@ -3,16 +3,42 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import Image from 'next/image';
+import StructuredData from '@/components/StructuredData';
+import { generateBreadcrumbSchema, generateWebPageSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: 'Girls Hostel - Safe & Secure Accommodation at JKKN Dental College',
   description: 'JKKN girls hostel features 24/7 security, CCTV surveillance, attached bathrooms, gym, yoga room, and on-campus convenience for female dental students.',
   keywords: 'girls hostel JKKN, safe hostel for girls, women hostel dental college, secure accommodation, female students housing, on-campus girls hostel, CCTV hostel',
+  openGraph: {
+    title: 'Girls Hostel - Safe & Secure Accommodation at JKKN Dental College',
+    description: 'JKKN girls hostel features 24/7 security, CCTV surveillance, attached bathrooms, gym, yoga room, and on-campus convenience for female dental students.',
+    url: 'https://dental.jkkn.ac.in/facilities/hostel/girls-hostel/',
+    type: 'website',
+    siteName: 'JKKN Dental College & Hospital',
+  },
 };
 
 export default function GirlsHostel() {
+  const breadcrumbSchema = generateBreadcrumbSchema('/facilities/hostel/girls-hostel');
+  const webPageSchema = generateWebPageSchema({
+    title: 'Girls Hostel - Safe & Secure Accommodation at JKKN Dental College',
+    description: 'JKKN girls hostel features 24/7 security, CCTV surveillance, attached bathrooms, gym, yoga room, and on-campus convenience for female dental students.',
+    url: 'https://dental.jkkn.ac.in/facilities/hostel/girls-hostel/',
+    dateModified: '2026-03-18',
+  });
+  const speakableSchema = generateSpeakableWebPageSchema({
+    title: 'Girls Hostel - Safe & Secure Accommodation at JKKN Dental College',
+    description: 'JKKN girls hostel features 24/7 security, CCTV surveillance, attached bathrooms, gym, yoga room, and on-campus convenience for female dental students.',
+    url: 'https://dental.jkkn.ac.in/facilities/hostel/girls-hostel/',
+    speakableCssSelectors: ['h1', '.hero-description', 'article p'],
+  });
+
   return (
     <main>
+      <StructuredData data={breadcrumbSchema} />
+      <StructuredData data={webPageSchema} />
+      <StructuredData data={speakableSchema} />
       <Header />
 
       {/* Page Content */}

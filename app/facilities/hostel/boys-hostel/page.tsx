@@ -3,16 +3,42 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import Image from 'next/image';
+import StructuredData from '@/components/StructuredData';
+import { generateBreadcrumbSchema, generateWebPageSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: 'Boys Hostel - Comfortable Accommodation at JKKN Dental College',
   description: 'JKKN boys hostel offers spacious rooms, high-speed internet, 24/7 security, study-focused ambiance, and modern amenities just 5 minutes from campus.',
   keywords: 'boys hostel JKKN, dental college hostel, student accommodation, hostel facilities, on-campus housing, AC rooms, safe hostel, boys dormitory',
+  openGraph: {
+    title: 'Boys Hostel - Comfortable Accommodation at JKKN Dental College',
+    description: 'JKKN boys hostel offers spacious rooms, high-speed internet, 24/7 security, study-focused ambiance, and modern amenities just 5 minutes from campus.',
+    url: 'https://dental.jkkn.ac.in/facilities/hostel/boys-hostel/',
+    type: 'website',
+    siteName: 'JKKN Dental College & Hospital',
+  },
 };
 
 export default function BoysHostel() {
+  const breadcrumbSchema = generateBreadcrumbSchema('/facilities/hostel/boys-hostel');
+  const webPageSchema = generateWebPageSchema({
+    title: 'Boys Hostel - Comfortable Accommodation at JKKN Dental College',
+    description: 'JKKN boys hostel offers spacious rooms, high-speed internet, 24/7 security, study-focused ambiance, and modern amenities just 5 minutes from campus.',
+    url: 'https://dental.jkkn.ac.in/facilities/hostel/boys-hostel/',
+    dateModified: '2026-03-18',
+  });
+  const speakableSchema = generateSpeakableWebPageSchema({
+    title: 'Boys Hostel - Comfortable Accommodation at JKKN Dental College',
+    description: 'JKKN boys hostel offers spacious rooms, high-speed internet, 24/7 security, study-focused ambiance, and modern amenities just 5 minutes from campus.',
+    url: 'https://dental.jkkn.ac.in/facilities/hostel/boys-hostel/',
+    speakableCssSelectors: ['h1', '.hero-description', 'article p'],
+  });
+
   return (
     <main>
+      <StructuredData data={breadcrumbSchema} />
+      <StructuredData data={webPageSchema} />
+      <StructuredData data={speakableSchema} />
       <Header />
 
       {/* Page Content */}

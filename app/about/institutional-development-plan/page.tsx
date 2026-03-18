@@ -2,16 +2,35 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import { Metadata } from 'next';
+import StructuredData from '@/components/StructuredData';
+import { generateBreadcrumbSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: 'Institutional Development Plan | JKKN Dental College IDP',
   description: 'View JKKN Dental College IDP aligned with NEP 2020, UGC guidelines & SDGs. Strategic goals for academic excellence, research & community health. Download IDP document.',
   keywords: 'institutional development plan, IDP, NEP 2020, UGC guidelines, strategic planning',
+  openGraph: {
+    title: 'Institutional Development Plan | JKKN Dental College IDP',
+    description: 'View JKKN Dental College IDP aligned with NEP 2020, UGC guidelines & SDGs. Strategic goals for academic excellence, research & community health. Download IDP document.',
+    url: 'https://dental.jkkn.ac.in/about/institutional-development-plan/',
+    type: 'website',
+    siteName: 'JKKN Dental College & Hospital',
+  },
 };
 
 export default function InstitutionalDevelopmentPlan() {
+  const breadcrumbSchema = generateBreadcrumbSchema('/about/institutional-development-plan');
+  const speakableSchema = generateSpeakableWebPageSchema({
+    title: 'Institutional Development Plan | JKKN Dental College IDP',
+    description: 'View JKKN Dental College IDP aligned with NEP 2020, UGC guidelines & SDGs. Strategic goals for academic excellence, research & community health. Download IDP document.',
+    url: 'https://dental.jkkn.ac.in/about/institutional-development-plan/',
+    speakableCssSelectors: ['h1', '.hero-description', 'article p'],
+  });
+
   return (
     <main className="overflow-x-hidden w-full">
+      <StructuredData data={breadcrumbSchema} />
+      <StructuredData data={speakableSchema} />
       <Header />
 
       {/* Page Content */}

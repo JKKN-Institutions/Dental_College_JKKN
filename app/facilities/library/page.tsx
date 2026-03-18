@@ -3,16 +3,42 @@ import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import Image from 'next/image';
 import { Metadata } from 'next';
+import StructuredData from '@/components/StructuredData';
+import { generateBreadcrumbSchema, generateWebPageSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: 'Library Facilities | Digital Library | JKKN Dental College',
   description: 'JKKN Dental College library offers extensive collection of dental textbooks, journals, research papers, e-resources, and digital library facilities for students and faculty.',
   keywords: 'dental library, digital library, dental textbooks, research journals, e-library, dental resources',
+  openGraph: {
+    title: 'Library Facilities | Digital Library | JKKN Dental College',
+    description: 'JKKN Dental College library offers extensive collection of dental textbooks, journals, research papers, e-resources, and digital library facilities for students and faculty.',
+    url: 'https://dental.jkkn.ac.in/facilities/library/',
+    type: 'website',
+    siteName: 'JKKN Dental College & Hospital',
+  },
 };
 
 export default function Library() {
+  const breadcrumbSchema = generateBreadcrumbSchema('/facilities/library');
+  const webPageSchema = generateWebPageSchema({
+    title: 'Library Facilities | Digital Library | JKKN Dental College',
+    description: 'JKKN Dental College library offers extensive collection of dental textbooks, journals, research papers, e-resources, and digital library facilities for students and faculty.',
+    url: 'https://dental.jkkn.ac.in/facilities/library/',
+    dateModified: '2026-03-18',
+  });
+  const speakableSchema = generateSpeakableWebPageSchema({
+    title: 'Library Facilities | Digital Library | JKKN Dental College',
+    description: 'JKKN Dental College library offers extensive collection of dental textbooks, journals, research papers, e-resources, and digital library facilities for students and faculty.',
+    url: 'https://dental.jkkn.ac.in/facilities/library/',
+    speakableCssSelectors: ['h1', '.hero-description', 'article p'],
+  });
+
   return (
     <main>
+      <StructuredData data={breadcrumbSchema} />
+      <StructuredData data={webPageSchema} />
+      <StructuredData data={speakableSchema} />
       <Header />
 
       {/* Page Content */}

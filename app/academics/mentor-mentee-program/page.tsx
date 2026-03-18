@@ -2,16 +2,41 @@ import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+import { generateBreadcrumbSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
+import StructuredData from '@/components/StructuredData';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
 export const metadata: Metadata = {
   title: 'Mentor-Mentee Program - JKKN Dental College',
   description: 'Discover our supportive mentor-mentee program at JKKN Dental College. Personalized guidance for academic and professional excellence. Join now.',
   keywords: 'mentor-mentee program, student mentorship, academic guidance, professional development, student support, JKKN mentoring, faculty-student relationship',
+  openGraph: {
+    title: 'Mentor-Mentee Program - JKKN Dental College',
+    description: 'Discover our supportive mentor-mentee program at JKKN Dental College. Personalized guidance for academic and professional excellence. Join now.',
+    url: 'https://dental.jkkn.ac.in/academics/mentor-mentee-program/',
+    type: 'website',
+    siteName: 'JKKN Dental College & Hospital',
+  },
 };
 
 export default function MentorMenteeProgram() {
+  const breadcrumbSchema = generateBreadcrumbSchema('/academics/mentor-mentee-program/');
+  const speakableSchema = generateSpeakableWebPageSchema({
+    title: 'Mentor-Mentee Program - JKKN Dental College',
+    description: 'Discover our supportive mentor-mentee program at JKKN Dental College. Personalized guidance for academic and professional excellence. Join now.',
+    url: 'https://dental.jkkn.ac.in/academics/mentor-mentee-program/',
+    speakableCssSelectors: ['h1', '.hero-description', 'article p'],
+  });
+
   return (
     <main>
+      <BreadcrumbSchema items={[
+        { name: 'Home', url: 'https://dental.jkkn.ac.in/' },
+        { name: 'Academics', url: 'https://dental.jkkn.ac.in/academics/' },
+        { name: 'Mentor Mentee Program', url: 'https://dental.jkkn.ac.in/academics/mentor-mentee-program/' },
+      ]} />
+      <StructuredData data={breadcrumbSchema} />
+      <StructuredData data={speakableSchema} />
       <Header />
 
       {/* Page Content */}

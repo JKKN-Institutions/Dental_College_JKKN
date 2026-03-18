@@ -6,7 +6,8 @@ import {
   generatePageMetadata,
   generateBreadcrumbSchema,
   generateWebPageSchema,
-  generateAboutPageSchema
+  generateAboutPageSchema,
+  generateSpeakableWebPageSchema
 } from '@/lib/metadata';
 
 export const metadata = generatePageMetadata({
@@ -32,12 +33,19 @@ export default function VisionAndMission() {
     title: 'Vision & Mission - JKKN Dental College',
     description: 'Our vision and mission statement outlining our commitment to innovation, education, and dental healthcare excellence.'
   });
+  const speakableSchema = generateSpeakableWebPageSchema({
+    title: 'Vision & Mission | JKKN Dental College Strategic Goals',
+    description: 'Discover JKKN Dental College vision and mission. Leading global innovator in dental education, research, and clinical skill development. Learn about our commitment to excellence.',
+    url: 'https://dental.jkkn.ac.in/about/vision-and-mission/',
+    speakableCssSelectors: ['h1', '.hero-description', 'article p'],
+  });
 
   return (
     <main className="overflow-x-hidden w-full">
       <StructuredData data={breadcrumbSchema} />
       <StructuredData data={webPageSchema} />
       <StructuredData data={aboutPageSchema} />
+      <StructuredData data={speakableSchema} />
       <Header />
 
       {/* Page Content */}

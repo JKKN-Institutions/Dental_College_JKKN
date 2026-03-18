@@ -5,6 +5,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import StructuredData from '@/components/StructuredData';
+import { generateBreadcrumbSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export default function MDSProgram() {
   const mdsSchema = {
@@ -30,9 +31,19 @@ export default function MDSProgram() {
     ]
   };
 
+  const breadcrumbSchema = generateBreadcrumbSchema('/academics/details-of-academic-programs/mds');
+  const speakableSchema = generateSpeakableWebPageSchema({
+    title: 'MDS Program | Master of Dental Surgery - JKKN Dental College',
+    description: '3-year postgraduate dental program with specializations in Periodontics, Orthodontics, Prosthodontics, Conservative Dentistry & Endodontics, and Oral Medicine at JKKN Dental College.',
+    url: 'https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/',
+    speakableCssSelectors: ['h1', '.hero-description', 'article p'],
+  });
+
   return (
     <main className="overflow-x-hidden">
       <StructuredData data={mdsSchema} />
+      <StructuredData data={breadcrumbSchema} />
+      <StructuredData data={speakableSchema} />
       <Header />
 
       {/* Hero Section */}

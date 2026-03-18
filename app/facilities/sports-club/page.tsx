@@ -3,16 +3,42 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import Image from 'next/image';
+import StructuredData from '@/components/StructuredData';
+import { generateBreadcrumbSchema, generateWebPageSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: 'Sports Club - World-Class Athletic Facilities at JKKN Dental College',
   description: 'JKKN sports club features 100m track, multipurpose indoor stadium, basketball, tennis, football, wrestling, kabaddi arenas, and state-of-the-art gym equipment.',
   keywords: 'sports club JKKN, campus sports facilities, athletic center, gym facilities, indoor stadium, basketball court, wrestling arena, kabaddi, student sports',
+  openGraph: {
+    title: 'Sports Club - World-Class Athletic Facilities at JKKN Dental College',
+    description: 'JKKN sports club features 100m track, multipurpose indoor stadium, basketball, tennis, football, wrestling, kabaddi arenas, and state-of-the-art gym equipment.',
+    url: 'https://dental.jkkn.ac.in/facilities/sports-club/',
+    type: 'website',
+    siteName: 'JKKN Dental College & Hospital',
+  },
 };
 
 export default function SportsClub() {
+  const breadcrumbSchema = generateBreadcrumbSchema('/facilities/sports-club');
+  const webPageSchema = generateWebPageSchema({
+    title: 'Sports Club - World-Class Athletic Facilities at JKKN Dental College',
+    description: 'JKKN sports club features 100m track, multipurpose indoor stadium, basketball, tennis, football, wrestling, kabaddi arenas, and state-of-the-art gym equipment.',
+    url: 'https://dental.jkkn.ac.in/facilities/sports-club/',
+    dateModified: '2026-03-18',
+  });
+  const speakableSchema = generateSpeakableWebPageSchema({
+    title: 'Sports Club - World-Class Athletic Facilities at JKKN Dental College',
+    description: 'JKKN sports club features 100m track, multipurpose indoor stadium, basketball, tennis, football, wrestling, kabaddi arenas, and state-of-the-art gym equipment.',
+    url: 'https://dental.jkkn.ac.in/facilities/sports-club/',
+    speakableCssSelectors: ['h1', '.hero-description', 'article p'],
+  });
+
   return (
     <main>
+      <StructuredData data={breadcrumbSchema} />
+      <StructuredData data={webPageSchema} />
+      <StructuredData data={speakableSchema} />
       <Header />
 
       {/* Page Content */}

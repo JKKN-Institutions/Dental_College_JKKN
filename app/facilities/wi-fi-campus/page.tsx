@@ -3,16 +3,42 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import Image from 'next/image';
+import StructuredData from '@/components/StructuredData';
+import { generateBreadcrumbSchema, generateWebPageSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: 'Wi-Fi Campus - High-Speed Internet at JKKN Dental College',
   description: 'JKKN campus offers high-speed WiFi coverage in lecture halls, libraries, labs, and outdoor spaces with multi-layered security and reliable connectivity.',
   keywords: 'WiFi campus JKKN, high-speed internet dental college, campus connectivity, wireless network, secure WiFi, free campus internet, student WiFi access',
+  openGraph: {
+    title: 'Wi-Fi Campus - High-Speed Internet at JKKN Dental College',
+    description: 'JKKN campus offers high-speed WiFi coverage in lecture halls, libraries, labs, and outdoor spaces with multi-layered security and reliable connectivity.',
+    url: 'https://dental.jkkn.ac.in/facilities/wi-fi-campus/',
+    type: 'website',
+    siteName: 'JKKN Dental College & Hospital',
+  },
 };
 
 export default function WiFiCampus() {
+  const breadcrumbSchema = generateBreadcrumbSchema('/facilities/wi-fi-campus');
+  const webPageSchema = generateWebPageSchema({
+    title: 'Wi-Fi Campus - High-Speed Internet at JKKN Dental College',
+    description: 'JKKN campus offers high-speed WiFi coverage in lecture halls, libraries, labs, and outdoor spaces with multi-layered security and reliable connectivity.',
+    url: 'https://dental.jkkn.ac.in/facilities/wi-fi-campus/',
+    dateModified: '2026-03-18',
+  });
+  const speakableSchema = generateSpeakableWebPageSchema({
+    title: 'Wi-Fi Campus - High-Speed Internet at JKKN Dental College',
+    description: 'JKKN campus offers high-speed WiFi coverage in lecture halls, libraries, labs, and outdoor spaces with multi-layered security and reliable connectivity.',
+    url: 'https://dental.jkkn.ac.in/facilities/wi-fi-campus/',
+    speakableCssSelectors: ['h1', '.hero-description', 'article p'],
+  });
+
   return (
     <main>
+      <StructuredData data={breadcrumbSchema} />
+      <StructuredData data={webPageSchema} />
+      <StructuredData data={speakableSchema} />
       <Header />
 
       {/* Page Content */}

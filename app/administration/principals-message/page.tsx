@@ -2,15 +2,35 @@ import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+import StructuredData from '@/components/StructuredData';
+import { generateBreadcrumbSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: "Principal's Message | JKKN Dental College",
   description: 'Read the inspiring message from Dr. Dhanasekar Balakrishnan, Principal of JKKN Dental College, on our vision for dental education excellence.',
   keywords: "Principal's Message, Dr. Dhanasekar Balakrishnan, JKKN Dental College, dental education vision, academic leadership, dental college principal",
+  openGraph: {
+    title: "Principal's Message | JKKN Dental College",
+    description: 'Read the inspiring message from Dr. Dhanasekar Balakrishnan, Principal of JKKN Dental College, on our vision for dental education excellence.',
+    url: 'https://dental.jkkn.ac.in/administration/principals-message/',
+    type: 'website',
+    siteName: 'JKKN Dental College & Hospital',
+  },
 };
+
+const breadcrumbSchema = generateBreadcrumbSchema('/administration/principals-message/');
+const speakableSchema = generateSpeakableWebPageSchema({
+  title: "Principal's Message | JKKN Dental College",
+  description: 'Read the inspiring message from Dr. Dhanasekar Balakrishnan, Principal of JKKN Dental College, on our vision for dental education excellence.',
+  url: 'https://dental.jkkn.ac.in/administration/principals-message/',
+  speakableCssSelectors: ['h1', '.hero-description', 'article p'],
+});
 
 export default function PrincipalsMessage() {
   return (
+    <>
+      <StructuredData data={breadcrumbSchema} />
+      <StructuredData data={speakableSchema} />
     <main className="overflow-x-hidden w-full">
       <Header />
 
@@ -90,5 +110,6 @@ export default function PrincipalsMessage() {
       <Footer />
       <FloatingWhatsApp />
     </main>
+    </>
   );
 }

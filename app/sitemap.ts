@@ -134,5 +134,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/information-center/right-to-information-rti`, lastModified: now, changeFrequency: 'yearly', priority: 0.4 },
     { url: `${baseUrl}/mandatory-disclosures/guidelines-on-public-disclosure-by-heis`, lastModified: now, changeFrequency: 'yearly', priority: 0.4 },
     { url: `${baseUrl}/mandatory-disclosures/letter-of-undertaking`, lastModified: now, changeFrequency: 'yearly', priority: 0.4 },
-  ]
+  ].map(entry => ({
+    ...entry,
+    url: entry.url.endsWith('/') ? entry.url : `${entry.url}/`,
+  }))
 }

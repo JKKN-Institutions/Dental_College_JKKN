@@ -2,16 +2,39 @@ import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
+import StructuredData from '@/components/StructuredData';
+import { generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: 'Research Collaboration | JKKN Dental College',
   description: 'Strategic partnerships with industry leaders, academic institutions, and research organizations for cutting-edge dental research.',
-  keywords: 'dental research collaboration, academic partnerships, research organizations, dental innovation, JKKN Dental College, healthcare collaboration'
+  keywords: 'dental research collaboration, academic partnerships, research organizations, dental innovation, JKKN Dental College, healthcare collaboration',
+  openGraph: {
+    title: 'Research Collaboration | JKKN Dental College',
+    description: 'Strategic partnerships with industry leaders, academic institutions, and research organizations for cutting-edge dental research.',
+    url: 'https://dental.jkkn.ac.in/research/collaboration/',
+    type: 'website',
+    siteName: 'JKKN Dental College & Hospital',
+  },
 };
 
 export default function Collaboration() {
+  const speakableSchema = generateSpeakableWebPageSchema({
+    title: 'Research Collaboration | JKKN Dental College',
+    description: 'Strategic partnerships with industry leaders, academic institutions, and research organizations for cutting-edge dental research.',
+    url: 'https://dental.jkkn.ac.in/research/collaboration/',
+    speakableCssSelectors: ['h1', '.hero-description', 'article p'],
+  });
+
   return (
     <main>
+      <StructuredData data={speakableSchema} />
+      <BreadcrumbSchema items={[
+        { name: 'Home', url: 'https://dental.jkkn.ac.in/' },
+        { name: 'Research', url: 'https://dental.jkkn.ac.in/research/' },
+        { name: 'Collaboration', url: 'https://dental.jkkn.ac.in/research/collaboration/' },
+      ]} />
       <Header />
 
       {/* Page Content */}

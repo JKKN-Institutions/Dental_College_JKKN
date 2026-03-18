@@ -2,16 +2,42 @@ import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+import StructuredData from '@/components/StructuredData';
+import { generateBreadcrumbSchema, generateWebPageSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: 'Finance Committee | JKKN Dental College',
   description: 'Managing financial operations and oversight at JKKN Dental College. View committee members and their responsibilities.',
   keywords: 'finance committee, financial management, budget oversight, college finance, committee members, JKKN dental college, financial operations',
+  openGraph: {
+    title: 'Finance Committee | JKKN Dental College',
+    description: 'Managing financial operations and oversight at JKKN Dental College. View committee members and their responsibilities.',
+    url: 'https://dental.jkkn.ac.in/committee/finance-committee/',
+    type: 'website',
+    siteName: 'JKKN Dental College & Hospital',
+  },
 };
 
 export default function FinanceCommittee() {
+  const breadcrumbSchema = generateBreadcrumbSchema('/committee/finance-committee');
+  const webPageSchema = generateWebPageSchema({
+    title: 'Finance Committee - JKKN Dental College',
+    description: 'Managing financial operations and oversight at JKKN Dental College. View committee members and their responsibilities.',
+    url: 'https://dental.jkkn.ac.in/committee/finance-committee/',
+    dateModified: '2026-03-18',
+  });
+  const speakableSchema = generateSpeakableWebPageSchema({
+    title: 'Finance Committee | JKKN Dental College',
+    description: 'Managing financial operations and oversight at JKKN Dental College. View committee members and their responsibilities.',
+    url: 'https://dental.jkkn.ac.in/committee/finance-committee/',
+    speakableCssSelectors: ['h1', '.hero-description', 'article p'],
+  });
+
   return (
     <main>
+      <StructuredData data={breadcrumbSchema} />
+      <StructuredData data={webPageSchema} />
+      <StructuredData data={speakableSchema} />
       <Header />
 
       {/* Page Content */}

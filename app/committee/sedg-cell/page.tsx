@@ -2,16 +2,42 @@ import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+import StructuredData from '@/components/StructuredData';
+import { generateBreadcrumbSchema, generateWebPageSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: 'SEDG Cell - Socio-Economically Disadvantaged Groups | JKKN Dental College',
   description: 'Supporting marginalized and economically weaker students with scholarships, mentoring, and inclusive academic opportunities as per NEP 2020.',
   keywords: 'SEDG cell, socio-economic support, disadvantaged groups, scholarships, inclusive education, NEP 2020, UGC guidelines, JKKN dental',
+  openGraph: {
+    title: 'SEDG Cell - Socio-Economically Disadvantaged Groups | JKKN Dental College',
+    description: 'Supporting marginalized and economically weaker students with scholarships, mentoring, and inclusive academic opportunities as per NEP 2020.',
+    url: 'https://dental.jkkn.ac.in/committee/sedg-cell/',
+    type: 'website',
+    siteName: 'JKKN Dental College & Hospital',
+  },
 };
 
 export default function SEDGCell() {
+  const breadcrumbSchema = generateBreadcrumbSchema('/committee/sedg-cell');
+  const webPageSchema = generateWebPageSchema({
+    title: 'SEDG Cell - Socio-Economically Disadvantaged Groups - JKKN Dental College',
+    description: 'Supporting marginalized and economically weaker students with scholarships, mentoring, and inclusive academic opportunities as per NEP 2020.',
+    url: 'https://dental.jkkn.ac.in/committee/sedg-cell/',
+    dateModified: '2026-03-18',
+  });
+  const speakableSchema = generateSpeakableWebPageSchema({
+    title: 'SEDG Cell - Socio-Economically Disadvantaged Groups | JKKN Dental College',
+    description: 'Supporting marginalized and economically weaker students with scholarships, mentoring, and inclusive academic opportunities as per NEP 2020.',
+    url: 'https://dental.jkkn.ac.in/committee/sedg-cell/',
+    speakableCssSelectors: ['h1', '.hero-description', 'article p'],
+  });
+
   return (
     <main>
+      <StructuredData data={breadcrumbSchema} />
+      <StructuredData data={webPageSchema} />
+      <StructuredData data={speakableSchema} />
       <Header />
 
       {/* Page Content */}
@@ -34,7 +60,7 @@ export default function SEDGCell() {
           </h3>
 
           <p className="text-base text-black mb-8 leading-relaxed text-justify">
-            The Socio-Economically Disadvantaged Groups (SEDG) Cell at JKK N Dental College & Hospital is committed to fostering an inclusive academic and social environment for students from marginalized, underprivileged, and economically weaker sections. Guided by the principles of equity and inclusion under NEP 2020 and UGC Guidelines, the Cell strives to ensure that every student has equal access to academic resources, support services, and growth opportunities.
+            The Socio-Economically Disadvantaged Groups (SEDG) Cell at JKK N Dental College &amp; Hospital is committed to fostering an inclusive academic and social environment for students from marginalized, underprivileged, and economically weaker sections. Guided by the principles of equity and inclusion under NEP 2020 and UGC Guidelines, the Cell strives to ensure that every student has equal access to academic resources, support services, and growth opportunities.
           </p>
 
           {/* Objectives */}
@@ -170,7 +196,7 @@ export default function SEDGCell() {
               Act as a nodal point for addressing concerns and feedback from SEDG students.
             </li>
             <li className="font-semibold">
-              Collaborate with other institutional bodies like Equal Opportunity Cell, SC/ST Cell, and Women's Cell.
+              Collaborate with other institutional bodies like Equal Opportunity Cell, SC/ST Cell, and Women&apos;s Cell.
             </li>
           </ul>
 
@@ -210,7 +236,7 @@ export default function SEDGCell() {
             SEDG Cell,
           </p>
           <p className="text-base text-black mb-4 font-bold">
-            JKKN Dental College & Hospital, Natarajapuram, NH-544 (Salem To Coimbatore National Highway), Komarapalayam (TK), Namakkal (DT), Tamil Nadu. 638183.
+            JKKN Dental College &amp; Hospital, Natarajapuram, NH-544 (Salem To Coimbatore National Highway), Komarapalayam (TK), Namakkal (DT), Tamil Nadu. 638183.
           </p>
 
           <p className="text-base text-black mb-2">

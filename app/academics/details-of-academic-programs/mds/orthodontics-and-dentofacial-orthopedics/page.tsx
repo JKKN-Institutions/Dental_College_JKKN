@@ -6,7 +6,9 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import StructuredData from '@/components/StructuredData';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 import Breadcrumb from '@/components/Breadcrumb';
+import { generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export default function MDSOrthodontics() {
   // Course Schema for MDS Orthodontics
@@ -86,10 +88,24 @@ export default function MDSOrthodontics() {
     ]
   };
 
+  const speakableSchema = generateSpeakableWebPageSchema({
+    title: 'Orthodontic Courses in India | JKKN Dental College',
+    description: 'JKKN Dental College offers top orthodontic courses in India. DCI-approved MDS in Orthodontics & Dentofacial Orthopaedics with advanced clinical training.',
+    url: 'https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/orthodontics-and-dentofacial-orthopedics/',
+    speakableCssSelectors: ['h1', '.hero-description', 'article p'],
+  });
+
   return (
     <main className="overflow-x-hidden">
       <StructuredData data={courseSchema} />
       <StructuredData data={faqSchema} />
+      <BreadcrumbSchema items={[
+        { name: 'Home', url: 'https://dental.jkkn.ac.in/' },
+        { name: 'Academics', url: 'https://dental.jkkn.ac.in/academics/' },
+        { name: 'MDS Programs', url: 'https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/' },
+        { name: 'Orthodontics & Dentofacial Orthopaedics', url: 'https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/orthodontics-and-dentofacial-orthopedics/' },
+      ]} />
+      <StructuredData data={speakableSchema} />
       <Header />
       <Breadcrumb items={[
         { name: 'Home', url: 'https://dental.jkkn.ac.in' },

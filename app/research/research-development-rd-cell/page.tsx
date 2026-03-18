@@ -2,16 +2,39 @@ import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
+import StructuredData from '@/components/StructuredData';
+import { generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: 'Research & Development (R&D) Cell | JKKN Dental College',
   description: 'Promoting innovation, interdisciplinary research, and scientific advancement in dentistry, biomedical sciences, and healthcare excellence.',
-  keywords: 'R&D cell, research development, dental research, scientific innovation, biomedical research, research funding, JKKN Dental College'
+  keywords: 'R&D cell, research development, dental research, scientific innovation, biomedical research, research funding, JKKN Dental College',
+  openGraph: {
+    title: 'Research & Development (R&D) Cell | JKKN Dental College',
+    description: 'Promoting innovation, interdisciplinary research, and scientific advancement in dentistry, biomedical sciences, and healthcare excellence.',
+    url: 'https://dental.jkkn.ac.in/research/research-development-rd-cell/',
+    type: 'website',
+    siteName: 'JKKN Dental College & Hospital',
+  },
 };
 
 export default function ResearchDevelopmentRDCell() {
+  const speakableSchema = generateSpeakableWebPageSchema({
+    title: 'Research & Development (R&D) Cell | JKKN Dental College',
+    description: 'Promoting innovation, interdisciplinary research, and scientific advancement in dentistry, biomedical sciences, and healthcare excellence.',
+    url: 'https://dental.jkkn.ac.in/research/research-development-rd-cell/',
+    speakableCssSelectors: ['h1', '.hero-description', 'article p'],
+  });
+
   return (
     <main>
+      <StructuredData data={speakableSchema} />
+      <BreadcrumbSchema items={[
+        { name: 'Home', url: 'https://dental.jkkn.ac.in/' },
+        { name: 'Research', url: 'https://dental.jkkn.ac.in/research/' },
+        { name: 'R&D Cell', url: 'https://dental.jkkn.ac.in/research/research-development-rd-cell/' },
+      ]} />
       <Header />
 
       {/* Page Content */}

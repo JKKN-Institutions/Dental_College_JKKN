@@ -3,16 +3,39 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import { Phone, Mail } from 'lucide-react';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
+import StructuredData from '@/components/StructuredData';
+import { generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: 'Startup Hub & Entrepreneurship | JKKN Dental College',
   description: 'Empowering dental entrepreneurs with incubation support, mentorship, and funding for innovative healthcare solutions and startups.',
-  keywords: 'dental startups, healthcare entrepreneurship, incubation hub, digital dentistry, AI diagnostics, dental innovation, JKKN startup'
+  keywords: 'dental startups, healthcare entrepreneurship, incubation hub, digital dentistry, AI diagnostics, dental innovation, JKKN startup',
+  openGraph: {
+    title: 'Startup Hub & Entrepreneurship | JKKN Dental College',
+    description: 'Empowering dental entrepreneurs with incubation support, mentorship, and funding for innovative healthcare solutions and startups.',
+    url: 'https://dental.jkkn.ac.in/research/start-up/',
+    type: 'website',
+    siteName: 'JKKN Dental College & Hospital',
+  },
 };
 
 export default function StartUp() {
+  const speakableSchema = generateSpeakableWebPageSchema({
+    title: 'Startup Hub & Entrepreneurship | JKKN Dental College',
+    description: 'Empowering dental entrepreneurs with incubation support, mentorship, and funding for innovative healthcare solutions and startups.',
+    url: 'https://dental.jkkn.ac.in/research/start-up/',
+    speakableCssSelectors: ['h1', '.hero-description', 'article p'],
+  });
+
   return (
     <main>
+      <StructuredData data={speakableSchema} />
+      <BreadcrumbSchema items={[
+        { name: 'Home', url: 'https://dental.jkkn.ac.in/' },
+        { name: 'Research', url: 'https://dental.jkkn.ac.in/research/' },
+        { name: 'Start-Up', url: 'https://dental.jkkn.ac.in/research/start-up/' },
+      ]} />
       <Header />
 
       {/* Page Content */}

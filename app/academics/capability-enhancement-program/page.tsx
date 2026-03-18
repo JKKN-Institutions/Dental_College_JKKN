@@ -2,16 +2,35 @@ import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+import { generateBreadcrumbSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
+import StructuredData from '@/components/StructuredData';
 
 export const metadata: Metadata = {
   title: 'Capability Enhancement Program - JKKN Dental College',
   description: 'Comprehensive capability enhancement programs at JKKN Dental College. Soft skills, analytical thinking, and professional development for students. Explore now.',
   keywords: 'capability enhancement, soft skill development, dental student training, professional development, analytical skills, communication skills, employability skills',
+  openGraph: {
+    title: 'Capability Enhancement Program - JKKN Dental College',
+    description: 'Comprehensive capability enhancement programs at JKKN Dental College. Soft skills, analytical thinking, and professional development for students. Explore now.',
+    url: 'https://dental.jkkn.ac.in/academics/capability-enhancement-program/',
+    type: 'website',
+    siteName: 'JKKN Dental College & Hospital',
+  },
 };
 
 export default function CapabilityEnhancementProgram() {
+  const breadcrumbSchema = generateBreadcrumbSchema('/academics/capability-enhancement-program/');
+  const speakableSchema = generateSpeakableWebPageSchema({
+    title: 'Capability Enhancement Program - JKKN Dental College',
+    description: 'Comprehensive capability enhancement programs at JKKN Dental College. Soft skills, analytical thinking, and professional development for students. Explore now.',
+    url: 'https://dental.jkkn.ac.in/academics/capability-enhancement-program/',
+    speakableCssSelectors: ['h1', '.hero-description', 'article p'],
+  });
+
   return (
     <main>
+      <StructuredData data={breadcrumbSchema} />
+      <StructuredData data={speakableSchema} />
       <Header />
 
       {/* Page Content */}

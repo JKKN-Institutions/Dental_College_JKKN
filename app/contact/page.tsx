@@ -2,7 +2,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import StructuredData from '@/components/StructuredData';
-import { generatePageMetadata, generateBreadcrumbSchema, generateContactPageSchema, generateWebPageSchema } from '@/lib/metadata';
+import { generatePageMetadata, generateBreadcrumbSchema, generateContactPageSchema, generateWebPageSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
 import { MessageCircle } from 'lucide-react';
 
 export const metadata = generatePageMetadata({
@@ -35,6 +35,12 @@ export default function Contact() {
       { "@type": "ListItem", "position": 2, "name": "Contact Us", "item": "https://dental.jkkn.ac.in/contact/" }
     ]
   };
+  const speakableSchema = generateSpeakableWebPageSchema({
+    title: 'Contact Us | JKKN Dental College & Hospital, Komarapalayam',
+    description: 'Contact JKKN Dental College & Hospital in Komarapalayam. Phone: +91 93458 55001, Email: dental@jkkn.ac.in. Get admission details, visit campus, or schedule a consultation.',
+    url: 'https://dental.jkkn.ac.in/contact/',
+    speakableCssSelectors: ['h1', '.hero-description', 'article p'],
+  });
 
   return (
     <main className="overflow-x-hidden">
@@ -42,6 +48,7 @@ export default function Contact() {
       <StructuredData data={contactPageSchema} />
       <StructuredData data={webPageSchema} />
       <StructuredData data={contactBreadcrumbSchema} />
+      <StructuredData data={speakableSchema} />
       <Header />
 
       {/* Page Content */}

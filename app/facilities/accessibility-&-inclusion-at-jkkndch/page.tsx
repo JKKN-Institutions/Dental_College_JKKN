@@ -3,16 +3,42 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import { Check } from 'lucide-react';
+import StructuredData from '@/components/StructuredData';
+import { generateBreadcrumbSchema, generateWebPageSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: 'Accessibility & Inclusion at JKKNDCH - Barrier-Free Environment',
   description: 'JKKN Dental College ensures accessibility for all with wheelchair access, Braille signage, priority services, and inclusive facilities for patients and visitors.',
   keywords: 'accessibility JKKN dental college, inclusive dental hospital, barrier-free environment, RPWD Act 2016, UGC accessibility guidelines, disability accommodations, wheelchair access dental college',
+  openGraph: {
+    title: 'Accessibility & Inclusion at JKKNDCH - Barrier-Free Environment',
+    description: 'JKKN Dental College ensures accessibility for all with wheelchair access, Braille signage, priority services, and inclusive facilities for patients and visitors.',
+    url: 'https://dental.jkkn.ac.in/facilities/accessibility-&-inclusion-at-jkkndch/',
+    type: 'website',
+    siteName: 'JKKN Dental College & Hospital',
+  },
 };
 
 export default function AccessibilityInclusion() {
+  const breadcrumbSchema = generateBreadcrumbSchema('/facilities/accessibility-&-inclusion-at-jkkndch');
+  const webPageSchema = generateWebPageSchema({
+    title: 'Accessibility & Inclusion at JKKNDCH - Barrier-Free Environment',
+    description: 'JKKN Dental College ensures accessibility for all with wheelchair access, Braille signage, priority services, and inclusive facilities for patients and visitors.',
+    url: 'https://dental.jkkn.ac.in/facilities/accessibility-&-inclusion-at-jkkndch/',
+    dateModified: '2026-03-18',
+  });
+  const speakableSchema = generateSpeakableWebPageSchema({
+    title: 'Accessibility & Inclusion at JKKNDCH - Barrier-Free Environment',
+    description: 'JKKN Dental College ensures accessibility for all with wheelchair access, Braille signage, priority services, and inclusive facilities for patients and visitors.',
+    url: 'https://dental.jkkn.ac.in/facilities/accessibility-&-inclusion-at-jkkndch/',
+    speakableCssSelectors: ['h1', '.hero-description', 'article p'],
+  });
+
   return (
     <main>
+      <StructuredData data={breadcrumbSchema} />
+      <StructuredData data={webPageSchema} />
+      <StructuredData data={speakableSchema} />
       <Header />
 
       {/* Page Content */}

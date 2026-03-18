@@ -4,16 +4,40 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import { BookOpen, Target, Calendar, Trophy, Handshake, Plus, Gem, MessageCircle, LucideIcon } from 'lucide-react';
+import { generateBreadcrumbSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
+import StructuredData from '@/components/StructuredData';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
 export const metadata: Metadata = {
   title: 'Academics - JKKN Dental College & Hospital',
   description: 'Explore academic programs at JKKN Dental College. BDS undergraduate program, 5 MDS postgraduate specializations, comprehensive curriculum, and excellence in dental education.',
   keywords: 'JKKN academics, BDS program, MDS specializations, dental education, curriculum, postgraduate dental courses, undergraduate dentistry, DCI approved programs',
+  openGraph: {
+    title: 'Academics - JKKN Dental College & Hospital',
+    description: 'Explore academic programs at JKKN Dental College. BDS undergraduate program, 5 MDS postgraduate specializations, comprehensive curriculum, and excellence in dental education.',
+    url: 'https://dental.jkkn.ac.in/academics/',
+    type: 'website',
+    siteName: 'JKKN Dental College & Hospital',
+  },
 };
 
 export default function Academics() {
+  const breadcrumbSchema = generateBreadcrumbSchema('/academics/');
+  const speakableSchema = generateSpeakableWebPageSchema({
+    title: 'Academics - JKKN Dental College & Hospital',
+    description: 'Explore academic programs at JKKN Dental College. BDS undergraduate program, 5 MDS postgraduate specializations, comprehensive curriculum, and excellence in dental education.',
+    url: 'https://dental.jkkn.ac.in/academics/',
+    speakableCssSelectors: ['h1', '.hero-description', 'article p'],
+  });
+
   return (
     <main>
+      <BreadcrumbSchema items={[
+        { name: 'Home', url: 'https://dental.jkkn.ac.in/' },
+        { name: 'Academics', url: 'https://dental.jkkn.ac.in/academics/' },
+      ]} />
+      <StructuredData data={breadcrumbSchema} />
+      <StructuredData data={speakableSchema} />
       <Header />
 
       {/* Hero Section */}

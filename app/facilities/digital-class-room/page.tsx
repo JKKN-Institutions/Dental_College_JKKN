@@ -3,16 +3,42 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import Image from 'next/image';
+import StructuredData from '@/components/StructuredData';
+import { generateBreadcrumbSchema, generateWebPageSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: 'Digital Classrooms - Smart Technology at JKKN Dental College',
   description: 'JKKN digital classrooms feature smart TVs, AI tools, design thinking integration, high-speed connectivity, and interactive learning for enhanced dental education.',
   keywords: 'digital classroom JKKN, smart classroom dental college, AI-powered education, interactive learning, multimedia projectors, educational technology, modern classroom facilities',
+  openGraph: {
+    title: 'Digital Classrooms - Smart Technology at JKKN Dental College',
+    description: 'JKKN digital classrooms feature smart TVs, AI tools, design thinking integration, high-speed connectivity, and interactive learning for enhanced dental education.',
+    url: 'https://dental.jkkn.ac.in/facilities/digital-class-room/',
+    type: 'website',
+    siteName: 'JKKN Dental College & Hospital',
+  },
 };
 
 export default function DigitalClassRoom() {
+  const breadcrumbSchema = generateBreadcrumbSchema('/facilities/digital-class-room');
+  const webPageSchema = generateWebPageSchema({
+    title: 'Digital Classrooms - Smart Technology at JKKN Dental College',
+    description: 'JKKN digital classrooms feature smart TVs, AI tools, design thinking integration, high-speed connectivity, and interactive learning for enhanced dental education.',
+    url: 'https://dental.jkkn.ac.in/facilities/digital-class-room/',
+    dateModified: '2026-03-18',
+  });
+  const speakableSchema = generateSpeakableWebPageSchema({
+    title: 'Digital Classrooms - Smart Technology at JKKN Dental College',
+    description: 'JKKN digital classrooms feature smart TVs, AI tools, design thinking integration, high-speed connectivity, and interactive learning for enhanced dental education.',
+    url: 'https://dental.jkkn.ac.in/facilities/digital-class-room/',
+    speakableCssSelectors: ['h1', '.hero-description', 'article p'],
+  });
+
   return (
     <main>
+      <StructuredData data={breadcrumbSchema} />
+      <StructuredData data={webPageSchema} />
+      <StructuredData data={speakableSchema} />
       <Header />
 
       {/* Page Content */}

@@ -2,16 +2,39 @@ import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
+import StructuredData from '@/components/StructuredData';
+import { generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: 'Nattraja Incubation Forum (NIF) | JKKN Dental College',
   description: 'India\'s pioneering bioconvergence incubation center fostering healthcare innovation, startups, and research excellence at JKKN.',
-  keywords: 'Nattraja Incubation Forum, NIF, bioconvergence incubation, healthcare innovation, startup incubation, dental technology, JKKN research'
+  keywords: 'Nattraja Incubation Forum, NIF, bioconvergence incubation, healthcare innovation, startup incubation, dental technology, JKKN research',
+  openGraph: {
+    title: 'Nattraja Incubation Forum (NIF) | JKKN Dental College',
+    description: 'India\'s pioneering bioconvergence incubation center fostering healthcare innovation, startups, and research excellence at JKKN.',
+    url: 'https://dental.jkkn.ac.in/research/incubation-center/',
+    type: 'website',
+    siteName: 'JKKN Dental College & Hospital',
+  },
 };
 
 export default function IncubationCenter() {
+  const speakableSchema = generateSpeakableWebPageSchema({
+    title: "Nattraja Incubation Forum (NIF) | JKKN Dental College",
+    description: "India's pioneering bioconvergence incubation center fostering healthcare innovation, startups, and research excellence at JKKN.",
+    url: 'https://dental.jkkn.ac.in/research/incubation-center/',
+    speakableCssSelectors: ['h1', '.hero-description', 'article p'],
+  });
+
   return (
     <main>
+      <StructuredData data={speakableSchema} />
+      <BreadcrumbSchema items={[
+        { name: 'Home', url: 'https://dental.jkkn.ac.in/' },
+        { name: 'Research', url: 'https://dental.jkkn.ac.in/research/' },
+        { name: 'Incubation Center', url: 'https://dental.jkkn.ac.in/research/incubation-center/' },
+      ]} />
       <Header />
 
       {/* Page Content */}

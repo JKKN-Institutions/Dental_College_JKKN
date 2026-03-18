@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
 export default function NAAC() {
   const [activeSection, setActiveSection] = useState('overview');
@@ -28,6 +29,11 @@ export default function NAAC() {
 
   return (
     <main className="overflow-x-hidden w-full">
+      <BreadcrumbSchema items={[
+        { name: 'Home', url: 'https://dental.jkkn.ac.in/' },
+        { name: 'Accreditation', url: 'https://dental.jkkn.ac.in/accreditation/' },
+        { name: 'NAAC', url: 'https://dental.jkkn.ac.in/accreditation/naac/' },
+      ]} />
       <Header />
 
       <div className="bg-white py-8 px-4">

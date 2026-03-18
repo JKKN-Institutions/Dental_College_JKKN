@@ -3,16 +3,42 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import { BookOpen, Phone } from 'lucide-react';
+import StructuredData from '@/components/StructuredData';
+import { generateBreadcrumbSchema, generateWebPageSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: 'Anti Ragging Committee | JKKN Dental College',
   description: 'JKKN Dental College maintains zero-tolerance towards ragging. View committee members, UGC guidelines, and helpline for a safe campus.',
   keywords: 'anti ragging committee, ragging free campus, student safety, UGC guidelines, zero tolerance policy, JKKN dental college, anti ragging helpline',
+  openGraph: {
+    title: 'Anti Ragging Committee | JKKN Dental College',
+    description: 'JKKN Dental College maintains zero-tolerance towards ragging. View committee members, UGC guidelines, and helpline for a safe campus.',
+    url: 'https://dental.jkkn.ac.in/committee/anti-ragging-committee/',
+    type: 'website',
+    siteName: 'JKKN Dental College & Hospital',
+  },
 };
 
 export default function AntiRaggingCommittee() {
+  const breadcrumbSchema = generateBreadcrumbSchema('/committee/anti-ragging-committee');
+  const webPageSchema = generateWebPageSchema({
+    title: 'Anti Ragging Committee - JKKN Dental College',
+    description: 'JKKN Dental College maintains zero-tolerance towards ragging. View committee members, UGC guidelines, and helpline for a safe campus.',
+    url: 'https://dental.jkkn.ac.in/committee/anti-ragging-committee/',
+    dateModified: '2026-03-18',
+  });
+  const speakableSchema = generateSpeakableWebPageSchema({
+    title: 'Anti Ragging Committee | JKKN Dental College',
+    description: 'JKKN Dental College maintains zero-tolerance towards ragging. View committee members, UGC guidelines, and helpline for a safe campus.',
+    url: 'https://dental.jkkn.ac.in/committee/anti-ragging-committee/',
+    speakableCssSelectors: ['h1', '.hero-description', 'article p'],
+  });
+
   return (
     <main>
+      <StructuredData data={breadcrumbSchema} />
+      <StructuredData data={webPageSchema} />
+      <StructuredData data={speakableSchema} />
       <Header />
 
       {/* Page Content */}

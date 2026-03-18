@@ -3,6 +3,8 @@ import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
+import StructuredData from "@/components/StructuredData";
+import { generateSpeakableWebPageSchema } from "@/lib/metadata";
 import FloatingWhatsAppClient from "@/components/FloatingWhatsAppClient";
 import {
   DSAStyles,
@@ -296,10 +298,18 @@ const localBusinessSchema = {
 
 // ===== PAGE COMPONENT =====
 export default function DSACoursePage() {
+  const speakableSchema = generateSpeakableWebPageSchema({
+    title: 'Dental Surgery Assistant Course | 6-Month Certificate | JKKN Dental College',
+    description: 'Become a Certified Dental Surgery Assistant in 6 months at JKKN Dental College, Namakkal. Hands-on training in 250+ chair hospital. ₹25,000 fee. Apply before April 28, 2026.',
+    url: 'https://dental.jkkn.ac.in/dental-surgery-assistant-course/',
+    speakableCssSelectors: ['h1', '.hero-description', 'article p'],
+  });
+
   return (
     <>
       <DSAStyles />
       <ScrollProgress />
+      <StructuredData data={speakableSchema} />
       <Header />
       <BreadcrumbSchema
         items={[

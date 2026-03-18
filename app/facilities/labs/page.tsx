@@ -3,16 +3,42 @@ import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import Image from 'next/image';
 import { Metadata } from 'next';
+import StructuredData from '@/components/StructuredData';
+import { generateBreadcrumbSchema, generateWebPageSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: 'Laboratory Facilities | Modern Dental Labs | JKKN Dental',
   description: 'State-of-the-art dental laboratories at JKKN Dental College with advanced equipment for preclinical training, research, and hands-on learning in all dental specialties.',
   keywords: 'dental labs, laboratory facilities, preclinical labs, dental equipment, dental training labs',
+  openGraph: {
+    title: 'Laboratory Facilities | Modern Dental Labs | JKKN Dental',
+    description: 'State-of-the-art dental laboratories at JKKN Dental College with advanced equipment for preclinical training, research, and hands-on learning in all dental specialties.',
+    url: 'https://dental.jkkn.ac.in/facilities/labs/',
+    type: 'website',
+    siteName: 'JKKN Dental College & Hospital',
+  },
 };
 
 export default function Labs() {
+  const breadcrumbSchema = generateBreadcrumbSchema('/facilities/labs');
+  const webPageSchema = generateWebPageSchema({
+    title: 'Laboratory Facilities | Modern Dental Labs | JKKN Dental',
+    description: 'State-of-the-art dental laboratories at JKKN Dental College with advanced equipment for preclinical training, research, and hands-on learning in all dental specialties.',
+    url: 'https://dental.jkkn.ac.in/facilities/labs/',
+    dateModified: '2026-03-18',
+  });
+  const speakableSchema = generateSpeakableWebPageSchema({
+    title: 'Laboratory Facilities | Modern Dental Labs | JKKN Dental',
+    description: 'State-of-the-art dental laboratories at JKKN Dental College with advanced equipment for preclinical training, research, and hands-on learning in all dental specialties.',
+    url: 'https://dental.jkkn.ac.in/facilities/labs/',
+    speakableCssSelectors: ['h1', '.hero-description', 'article p'],
+  });
+
   return (
     <main>
+      <StructuredData data={breadcrumbSchema} />
+      <StructuredData data={webPageSchema} />
+      <StructuredData data={speakableSchema} />
       <Header />
 
       {/* Page Content */}

@@ -2,16 +2,42 @@ import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+import StructuredData from '@/components/StructuredData';
+import { generateBreadcrumbSchema, generateWebPageSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: 'Mentoring Committee | JKKN Dental College',
   description: 'Providing guidance, support, and mentorship to students and faculty. Fostering personal development and academic excellence.',
   keywords: 'mentoring committee, student mentorship, faculty guidance, personal development, academic support, JKKN dental college, mentor program',
+  openGraph: {
+    title: 'Mentoring Committee | JKKN Dental College',
+    description: 'Providing guidance, support, and mentorship to students and faculty. Fostering personal development and academic excellence.',
+    url: 'https://dental.jkkn.ac.in/committee/mentoring-committee/',
+    type: 'website',
+    siteName: 'JKKN Dental College & Hospital',
+  },
 };
 
 export default function MentoringCommittee() {
+  const breadcrumbSchema = generateBreadcrumbSchema('/committee/mentoring-committee');
+  const webPageSchema = generateWebPageSchema({
+    title: 'Mentoring Committee - JKKN Dental College',
+    description: 'Providing guidance, support, and mentorship to students and faculty. Fostering personal development and academic excellence.',
+    url: 'https://dental.jkkn.ac.in/committee/mentoring-committee/',
+    dateModified: '2026-03-18',
+  });
+  const speakableSchema = generateSpeakableWebPageSchema({
+    title: 'Mentoring Committee | JKKN Dental College',
+    description: 'Providing guidance, support, and mentorship to students and faculty. Fostering personal development and academic excellence.',
+    url: 'https://dental.jkkn.ac.in/committee/mentoring-committee/',
+    speakableCssSelectors: ['h1', '.hero-description', 'article p'],
+  });
+
   return (
     <main>
+      <StructuredData data={breadcrumbSchema} />
+      <StructuredData data={webPageSchema} />
+      <StructuredData data={speakableSchema} />
       <Header />
 
       {/* Page Content */}

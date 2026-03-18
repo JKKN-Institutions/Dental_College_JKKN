@@ -3,16 +3,48 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import { Check } from 'lucide-react';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
+import StructuredData from '@/components/StructuredData';
+import { generateBreadcrumbSchema, generateWebPageSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: 'Right to Information (RTI) - JKKN Dental College',
   description: 'Access RTI information at JKKN Dental College & Hospital. Learn how to file RTI applications and contact CPIO for transparency and accountability.',
   keywords: 'RTI JKKN dental, right to information, RTI Act 2005, CPIO contact, RTI application, transparency, public information officer, UGC guidelines, RTI online, information access',
+  openGraph: {
+    title: 'Right to Information (RTI) - JKKN Dental College',
+    description: 'Access RTI information at JKKN Dental College & Hospital. Learn how to file RTI applications and contact CPIO for transparency and accountability.',
+    url: 'https://dental.jkkn.ac.in/information-center/right-to-information-rti/',
+    type: 'website',
+    siteName: 'JKKN Dental College & Hospital',
+  },
 };
 
 export default function RightToInformation() {
+  const breadcrumbSchema = generateBreadcrumbSchema('/information-center/right-to-information-rti');
+  const webPageSchema = generateWebPageSchema({
+    title: 'Right to Information (RTI) - JKKN Dental College',
+    description: 'Access RTI information at JKKN Dental College & Hospital. Learn how to file RTI applications and contact CPIO for transparency and accountability.',
+    url: 'https://dental.jkkn.ac.in/information-center/right-to-information-rti/',
+    dateModified: '2026-03-18',
+  });
+  const speakableSchema = generateSpeakableWebPageSchema({
+    title: 'Right to Information (RTI) - JKKN Dental College',
+    description: 'Access RTI information at JKKN Dental College & Hospital. Learn how to file RTI applications and contact CPIO for transparency and accountability.',
+    url: 'https://dental.jkkn.ac.in/information-center/right-to-information-rti/',
+    speakableCssSelectors: ['h1', '.hero-description', 'article p'],
+  });
+
   return (
     <main>
+      <StructuredData data={breadcrumbSchema} />
+      <StructuredData data={webPageSchema} />
+      <StructuredData data={speakableSchema} />
+      <BreadcrumbSchema items={[
+        { name: 'Home', url: 'https://dental.jkkn.ac.in/' },
+        { name: 'Information Center', url: 'https://dental.jkkn.ac.in/information-center/' },
+        { name: 'Right to Information', url: 'https://dental.jkkn.ac.in/information-center/right-to-information-rti/' },
+      ]} />
       <Header />
 
       {/* Page Content */}

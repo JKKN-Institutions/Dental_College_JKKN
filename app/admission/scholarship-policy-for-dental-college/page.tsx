@@ -2,16 +2,35 @@ import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+import StructuredData from '@/components/StructuredData';
+import { generateBreadcrumbSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: 'Scholarship Policy - JKKN Dental College Admission & Financial Aid',
   description: 'Explore JKKN Dental College scholarship programs for academic excellence, sports achievements, and special circumstances. Apply for financial aid.',
   keywords: 'dental college scholarship, JKKN scholarship policy, academic scholarship, sports quota scholarship, single parent scholarship, NEET scholarship, financial aid',
+  openGraph: {
+    title: 'Scholarship Policy - JKKN Dental College Admission & Financial Aid',
+    description: 'Explore JKKN Dental College scholarship programs for academic excellence, sports achievements, and special circumstances. Apply for financial aid.',
+    url: 'https://dental.jkkn.ac.in/admission/scholarship-policy-for-dental-college/',
+    type: 'website',
+    siteName: 'JKKN Dental College & Hospital',
+  },
 };
 
 export default function ScholarshipPolicy() {
+  const breadcrumbSchema = generateBreadcrumbSchema('/admission/scholarship-policy-for-dental-college');
+  const speakableSchema = generateSpeakableWebPageSchema({
+    title: 'Scholarship Policy - JKKN Dental College Admission & Financial Aid',
+    description: 'Explore JKKN Dental College scholarship programs for academic excellence, sports achievements, and special circumstances. Apply for financial aid.',
+    url: 'https://dental.jkkn.ac.in/admission/scholarship-policy-for-dental-college/',
+    speakableCssSelectors: ['h1', '.hero-description', 'article p'],
+  });
+
   return (
     <main>
+      <StructuredData data={breadcrumbSchema} />
+      <StructuredData data={speakableSchema} />
       <Header />
 
       {/* Page Content */}

@@ -6,7 +6,9 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import StructuredData from '@/components/StructuredData';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 import Breadcrumb from '@/components/Breadcrumb';
+import { generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export default function MDSProsthodontics() {
   // Course Schema for MDS Prosthodontics
@@ -86,10 +88,24 @@ export default function MDSProsthodontics() {
     ]
   };
 
+  const speakableSchema = generateSpeakableWebPageSchema({
+    title: 'Best College for Prosthodontics in India | JKKN Dental',
+    description: 'Looking for the best college for prosthodontics in India? JKKN Dental offers MDS Prosthodontics with expert faculty, prosthetic labs & hospital training.',
+    url: 'https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/prosthodontics-crown-and-bridge/',
+    speakableCssSelectors: ['h1', '.hero-description', 'article p'],
+  });
+
   return (
     <main className="overflow-x-hidden">
       <StructuredData data={courseSchema} />
       <StructuredData data={faqSchema} />
+      <BreadcrumbSchema items={[
+        { name: 'Home', url: 'https://dental.jkkn.ac.in/' },
+        { name: 'Academics', url: 'https://dental.jkkn.ac.in/academics/' },
+        { name: 'MDS Programs', url: 'https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/' },
+        { name: 'Prosthodontics & Crown and Bridge', url: 'https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/prosthodontics-crown-and-bridge/' },
+      ]} />
+      <StructuredData data={speakableSchema} />
       <Header />
       <Breadcrumb items={[
         { name: 'Home', url: 'https://dental.jkkn.ac.in' },

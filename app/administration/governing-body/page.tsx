@@ -3,15 +3,35 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import { Check } from 'lucide-react';
+import StructuredData from '@/components/StructuredData';
+import { generateBreadcrumbSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: 'Governing Body | JKKN Dental College',
   description: 'Explore the Governing Body of JKKN Dental College, guiding excellence in dental education, healthcare, and institutional governance.',
   keywords: 'Governing Body, JKKN Dental College, governance, institutional policies, dental education governance, academic excellence, healthcare leadership',
+  openGraph: {
+    title: 'Governing Body | JKKN Dental College',
+    description: 'Explore the Governing Body of JKKN Dental College, guiding excellence in dental education, healthcare, and institutional governance.',
+    url: 'https://dental.jkkn.ac.in/administration/governing-body/',
+    type: 'website',
+    siteName: 'JKKN Dental College & Hospital',
+  },
 };
+
+const breadcrumbSchema = generateBreadcrumbSchema('/administration/governing-body/');
+const speakableSchema = generateSpeakableWebPageSchema({
+  title: 'Governing Body | JKKN Dental College',
+  description: 'Explore the Governing Body of JKKN Dental College, guiding excellence in dental education, healthcare, and institutional governance.',
+  url: 'https://dental.jkkn.ac.in/administration/governing-body/',
+  speakableCssSelectors: ['h1', '.hero-description', 'article p'],
+});
 
 export default function GoverningBody() {
   return (
+    <>
+      <StructuredData data={breadcrumbSchema} />
+      <StructuredData data={speakableSchema} />
     <main className="overflow-x-hidden">
       <Header />
 
@@ -215,5 +235,6 @@ export default function GoverningBody() {
       <Footer />
       <FloatingWhatsApp />
     </main>
+    </>
   );
 }
