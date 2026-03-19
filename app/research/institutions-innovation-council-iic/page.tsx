@@ -3,16 +3,39 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import { Phone } from 'lucide-react';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
+import StructuredData from '@/components/StructuredData';
+import { generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: 'Institution\'s Innovation Council (IIC) | JKKN Dental College',
   description: 'MIC-AICTE supported innovation council fostering entrepreneurship, IPR, and startup culture in dental education at JKKN Dental College.',
-  keywords: 'Innovation Council, IIC, dental entrepreneurship, startup culture, IPR, AICTE innovation, Ministry of Education, dental innovation'
+  keywords: 'Innovation Council, IIC, dental entrepreneurship, startup culture, IPR, AICTE innovation, Ministry of Education, dental innovation',
+  openGraph: {
+    title: 'Institution\'s Innovation Council (IIC) | JKKN Dental College',
+    description: 'MIC-AICTE supported innovation council fostering entrepreneurship, IPR, and startup culture in dental education at JKKN Dental College.',
+    url: 'https://dental.jkkn.ac.in/research/institutions-innovation-council-iic/',
+    type: 'website',
+    siteName: 'JKKN Dental College & Hospital',
+  },
 };
 
 export default function InstitutionsInnovationCouncilIIC() {
+  const speakableSchema = generateSpeakableWebPageSchema({
+    title: "Institution's Innovation Council (IIC) | JKKN Dental College",
+    description: 'MIC-AICTE supported innovation council fostering entrepreneurship, IPR, and startup culture in dental education at JKKN Dental College.',
+    url: 'https://dental.jkkn.ac.in/research/institutions-innovation-council-iic/',
+    speakableCssSelectors: ['h1', '.hero-description', 'article p'],
+  });
+
   return (
     <main>
+      <StructuredData data={speakableSchema} />
+      <BreadcrumbSchema items={[
+        { name: 'Home', url: 'https://dental.jkkn.ac.in/' },
+        { name: 'Research', url: 'https://dental.jkkn.ac.in/research/' },
+        { name: 'IIC', url: 'https://dental.jkkn.ac.in/research/institutions-innovation-council-iic/' },
+      ]} />
       <Header />
 
       {/* Page Content */}

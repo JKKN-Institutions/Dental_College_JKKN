@@ -2,15 +2,84 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import { Metadata } from 'next';
+import StructuredData from '@/components/StructuredData';
+import { generateBreadcrumbSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: 'Admission Criteria | BDS & MDS Eligibility | JKKN Dental',
   description: 'JKKN Dental College admission criteria for BDS and MDS programs. Learn about NEET eligibility, qualifying marks, age limits, and selection process for dental courses.',
   keywords: 'admission criteria, eligibility, NEET requirements, BDS eligibility, MDS eligibility, admission requirements',
+  openGraph: {
+    title: 'Admission Criteria | BDS & MDS Eligibility | JKKN Dental',
+    description: 'JKKN Dental College admission criteria for BDS and MDS programs. Learn about NEET eligibility, qualifying marks, age limits, and selection process for dental courses.',
+    url: 'https://dental.jkkn.ac.in/admission/admission-criteria/',
+    type: 'website',
+    siteName: 'JKKN Dental College & Hospital',
+  },
 };
+
+const breadcrumbSchema = generateBreadcrumbSchema('/admission/admission-criteria/');
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the eligibility criteria for BDS admission at JKKN Dental College?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "To be eligible for BDS admission at JKKN Dental College, candidates must have passed 10+2 (Class 12) with Physics, Chemistry, and Biology, securing a minimum of 50% marks in these subjects taken together. Candidates must also have qualified in the NEET-UG examination. The BDS program is a 5-year course (4 years academic + 1 year CRRI internship) with 100 seats affiliated to TN Dr. MGR Medical University and approved by the Dental Council of India (DCI)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the NEET cutoff for JKKN Dental College?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "JKKN Dental College admission for BDS is based on NEET-UG scores. The exact cutoff varies each year depending on the number of applicants, seat availability (35 government quota + 65 management quota), and state counseling rank lists. For the most current cutoff information, contact the admissions office at +91 9345855001 or visit the Tamil Nadu state dental counseling authority."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is there management quota admission at JKKN Dental College?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, JKKN Dental College has both government quota (35 seats) and management quota (65 seats) for BDS admissions. Management quota admissions are conducted by the college through the official admission portal after NEET-UG qualification. Candidates must still qualify in NEET-UG to be eligible for management quota seats."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What documents are required for BDS admission at JKKN Dental College?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Candidates seeking BDS admission at JKKN Dental College typically need to submit the following documents: NEET-UG scorecard and rank letter, Class 10 and Class 12 mark sheets and pass certificates, transfer certificate from last institution, community/caste certificate (if applicable), nativity certificate, conduct and character certificate, passport-size photographs, Aadhaar card or government-issued photo ID, and medical fitness certificate. Contact the admissions office for the complete and most current document checklist."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How to apply for MDS admission at JKKN Dental College?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For MDS admission at JKKN Dental College, candidates must hold a BDS degree from a DCI-recognized dental college and have completed a 1-year mandatory internship. Admission is based on NEET-MDS (NEET-PG) scores. JKKN Dental College offers MDS in specializations including Prosthodontics & Oral Implantology, Conservative Dentistry & Endodontics, Orthodontics & Dentofacial Orthopedics, Periodontics, and Oral Medicine & Radiology. Apply through the state counseling process or contact the admissions office at +91 9345855001."
+      }
+    }
+  ]
+};
+
+const speakableSchema = generateSpeakableWebPageSchema({
+  title: 'Admission Criteria | BDS & MDS Eligibility | JKKN Dental',
+  description: 'JKKN Dental College admission criteria for BDS and MDS programs. Learn about NEET eligibility, qualifying marks, age limits, and selection process for dental courses.',
+  url: 'https://dental.jkkn.ac.in/admission/admission-criteria/',
+  speakableCssSelectors: ['h1', '.hero-description', 'article p'],
+});
 
 export default function AdmissionCriteria() {
   return (
+    <>
+      <StructuredData data={breadcrumbSchema} />
+      <StructuredData data={speakableSchema} />
+      <StructuredData data={faqSchema} />
     <main>
       <Header />
 
@@ -100,5 +169,6 @@ export default function AdmissionCriteria() {
       <Footer />
       <FloatingWhatsApp />
     </main>
+    </>
   );
 }

@@ -3,16 +3,42 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import Image from 'next/image';
+import StructuredData from '@/components/StructuredData';
+import { generateBreadcrumbSchema, generateWebPageSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
-  title: 'Free Ambulance Services - JKKN Dental College 24/7 Emergency Care',
+  title: 'Ambulance Service | JKKN Dental College',
   description: 'JKKN Institutions offers round-the-clock free ambulance services with expert EMTs and advanced medical equipment for emergency medical transportation.',
   keywords: 'free ambulance service JKKN, 24/7 emergency ambulance, dental college ambulance, medical emergency transportation, JKKN institutions ambulance, emergency medical care',
+  openGraph: {
+    title: 'Ambulance Service | JKKN Dental College',
+    description: 'JKKN Institutions offers round-the-clock free ambulance services with expert EMTs and advanced medical equipment for emergency medical transportation.',
+    url: 'https://dental.jkkn.ac.in/facilities/ambulance-services/',
+    type: 'website',
+    siteName: 'JKKN Dental College & Hospital',
+  },
 };
 
 export default function AmbulanceServices() {
+  const breadcrumbSchema = generateBreadcrumbSchema('/facilities/ambulance-services');
+  const webPageSchema = generateWebPageSchema({
+    title: 'Ambulance Service | JKKN Dental College',
+    description: 'JKKN Institutions offers round-the-clock free ambulance services with expert EMTs and advanced medical equipment for emergency medical transportation.',
+    url: 'https://dental.jkkn.ac.in/facilities/ambulance-services/',
+    dateModified: '2026-03-18',
+  });
+  const speakableSchema = generateSpeakableWebPageSchema({
+    title: 'Ambulance Service | JKKN Dental College',
+    description: 'JKKN Institutions offers round-the-clock free ambulance services with expert EMTs and advanced medical equipment for emergency medical transportation.',
+    url: 'https://dental.jkkn.ac.in/facilities/ambulance-services/',
+    speakableCssSelectors: ['h1', '.hero-description', 'article p'],
+  });
+
   return (
     <main>
+      <StructuredData data={breadcrumbSchema} />
+      <StructuredData data={webPageSchema} />
+      <StructuredData data={speakableSchema} />
       <Header />
 
       {/* Page Content */}

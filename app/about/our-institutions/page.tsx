@@ -4,10 +4,22 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import Image from 'next/image';
+import StructuredData from '@/components/StructuredData';
+import { generateBreadcrumbSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export default function OurInstitutions() {
+  const breadcrumbSchema = generateBreadcrumbSchema('/about/our-institutions');
+  const speakableSchema = generateSpeakableWebPageSchema({
+    title: 'Our Institutions | JKKN Group of Institutions',
+    description: 'Explore JKKN Group of Institutions at Komarapalayam, Namakkal. State-of-the-art campus with advanced labs, hospitals, hostels and placement support for holistic education.',
+    url: 'https://dental.jkkn.ac.in/about/our-institutions/',
+    speakableCssSelectors: ['h1', '.hero-description', 'article p'],
+  });
+
   return (
     <main>
+      <StructuredData data={breadcrumbSchema} />
+      <StructuredData data={speakableSchema} />
       <Header />
 
       {/* Hero Image Section */}

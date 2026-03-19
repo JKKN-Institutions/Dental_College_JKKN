@@ -2,16 +2,42 @@ import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+import StructuredData from '@/components/StructuredData';
+import { generateBreadcrumbSchema, generateWebPageSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
-  title: 'Physical Infrastructure and Purchase & Maintenance Committee | JKKN Dental College',
+  title: 'Physical Infrastructure & Maintenance | JKKN Dental',
   description: 'Managing campus infrastructure, maintenance, and upgrades. Ensuring modern, safe, and functional facilities for quality education.',
   keywords: 'infrastructure committee, campus maintenance, facility management, building upgrades, JKKN dental college, campus facilities',
+  openGraph: {
+    title: 'Physical Infrastructure & Maintenance | JKKN Dental',
+    description: 'Managing campus infrastructure, maintenance, and upgrades. Ensuring modern, safe, and functional facilities for quality education.',
+    url: 'https://dental.jkkn.ac.in/committee/physical-infrastructure-and-purchase-maintenance-committee/',
+    type: 'website',
+    siteName: 'JKKN Dental College & Hospital',
+  },
 };
 
 export default function PhysicalInfrastructureCommittee() {
+  const breadcrumbSchema = generateBreadcrumbSchema('/committee/physical-infrastructure-and-purchase-maintenance-committee');
+  const webPageSchema = generateWebPageSchema({
+    title: 'Infrastructure & Maintenance Committee | JKKN Dental',
+    description: 'Managing campus infrastructure, maintenance, and upgrades. Ensuring modern, safe, and functional facilities for quality education.',
+    url: 'https://dental.jkkn.ac.in/committee/physical-infrastructure-and-purchase-maintenance-committee/',
+    dateModified: '2026-03-18',
+  });
+  const speakableSchema = generateSpeakableWebPageSchema({
+    title: 'Physical Infrastructure & Maintenance | JKKN Dental',
+    description: 'Managing campus infrastructure, maintenance, and upgrades. Ensuring modern, safe, and functional facilities for quality education.',
+    url: 'https://dental.jkkn.ac.in/committee/physical-infrastructure-and-purchase-maintenance-committee/',
+    speakableCssSelectors: ['h1', '.hero-description', 'article p'],
+  });
+
   return (
     <main>
+      <StructuredData data={breadcrumbSchema} />
+      <StructuredData data={webPageSchema} />
+      <StructuredData data={speakableSchema} />
       <Header />
 
       {/* Page Content */}
@@ -25,7 +51,7 @@ export default function PhysicalInfrastructureCommittee() {
 
           {/* Description Paragraphs */}
           <p className="text-base text-gray-700 mb-4 leading-relaxed text-justify font-semibold">
-            Physical infrastructure refers to the built environment and facilities that support an institution or organization's operations. This includes buildings, classrooms, laboratories, libraries, sports facilities, dormitories, and other physical structures.
+            Physical infrastructure refers to the built environment and facilities that support an institution or organization&apos;s operations. This includes buildings, classrooms, laboratories, libraries, sports facilities, dormitories, and other physical structures.
           </p>
 
           <p className="text-base text-gray-700 mb-4 leading-relaxed text-justify font-semibold">
@@ -37,7 +63,7 @@ export default function PhysicalInfrastructureCommittee() {
           </p>
 
           <p className="text-base text-gray-700 mb-8 leading-relaxed text-justify font-semibold">
-            Efficient maintenance and strategic upgradation of physical infrastructure contribute to creating a conducive environment for learning, research, and other institutional activities. It also reflects the institution's commitment to providing a high-quality and modern learning environment for its community. Proper planning and allocation of resources are essential to ensure that physical infrastructure remains functional, safe, and up-to-date.
+            Efficient maintenance and strategic upgradation of physical infrastructure contribute to creating a conducive environment for learning, research, and other institutional activities. It also reflects the institution&apos;s commitment to providing a high-quality and modern learning environment for its community. Proper planning and allocation of resources are essential to ensure that physical infrastructure remains functional, safe, and up-to-date.
           </p>
 
           {/* Committee Members */}

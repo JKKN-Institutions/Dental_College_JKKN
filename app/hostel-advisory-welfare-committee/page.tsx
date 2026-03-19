@@ -2,16 +2,45 @@ import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
+import StructuredData from '@/components/StructuredData';
+import { generateWebPageSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: 'Hostel Advisory & Welfare Committee | JKKN Dental College',
   description: 'Ensuring safe and comfortable hostel living for students. View hostel staff and welfare programs creating home-away-from-home experience.',
   keywords: 'hostel advisory, hostel welfare, student accommodation, hostel safety, boys hostel, girls hostel, JKKN dental college, student living',
+  openGraph: {
+    title: 'Hostel Advisory & Welfare Committee | JKKN Dental College',
+    description: 'Ensuring safe and comfortable hostel living for students. View hostel staff and welfare programs creating home-away-from-home experience.',
+    url: 'https://dental.jkkn.ac.in/hostel-advisory-welfare-committee/',
+    type: 'website',
+    siteName: 'JKKN Dental College & Hospital',
+  },
 };
 
 export default function HostelAdvisoryWelfareCommittee() {
+  const webPageSchema = generateWebPageSchema({
+    title: 'Hostel Advisory & Welfare Committee | JKKN Dental College',
+    description: 'Ensuring safe and comfortable hostel living for students. View hostel staff and welfare programs creating home-away-from-home experience.',
+    url: 'https://dental.jkkn.ac.in/hostel-advisory-welfare-committee/',
+    dateModified: '2026-03-18',
+  });
+  const speakableSchema = generateSpeakableWebPageSchema({
+    title: 'Hostel Advisory & Welfare Committee | JKKN Dental College',
+    description: 'Ensuring safe and comfortable hostel living for students. View hostel staff and welfare programs creating home-away-from-home experience.',
+    url: 'https://dental.jkkn.ac.in/hostel-advisory-welfare-committee/',
+    speakableCssSelectors: ['h1', '.hero-description', 'article p'],
+  });
+
   return (
     <main>
+      <StructuredData data={webPageSchema} />
+      <StructuredData data={speakableSchema} />
+      <BreadcrumbSchema items={[
+        { name: 'Home', url: 'https://dental.jkkn.ac.in/' },
+        { name: 'Hostel Advisory & Welfare Committee', url: 'https://dental.jkkn.ac.in/hostel-advisory-welfare-committee/' },
+      ]} />
       <Header />
 
       {/* Page Content */}

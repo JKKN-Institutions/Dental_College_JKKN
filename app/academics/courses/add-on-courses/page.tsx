@@ -3,16 +3,35 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import { Check } from 'lucide-react';
+import { generateBreadcrumbSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
+import StructuredData from '@/components/StructuredData';
 
 export const metadata: Metadata = {
   title: 'Add-On Courses - JKKN Dental College',
   description: 'Explore specialized add-on courses in implantology, laser aesthetics, and composite restoration at JKKN Dental College. Enhance your expertise today.',
   keywords: 'add-on courses, dental specialization courses, implantology course, laser aesthetics, composite restoration, dental certification, advanced dental training',
+  openGraph: {
+    title: 'Add-On Courses - JKKN Dental College',
+    description: 'Explore specialized add-on courses in implantology, laser aesthetics, and composite restoration at JKKN Dental College. Enhance your expertise today.',
+    url: 'https://dental.jkkn.ac.in/academics/courses/add-on-courses/',
+    type: 'website',
+    siteName: 'JKKN Dental College & Hospital',
+  },
 };
 
 export default function AddOnCourses() {
+  const breadcrumbSchema = generateBreadcrumbSchema('/academics/courses/add-on-courses/');
+  const speakableSchema = generateSpeakableWebPageSchema({
+    title: 'Add-On Courses - JKKN Dental College',
+    description: 'Explore specialized add-on courses in implantology, laser aesthetics, and composite restoration at JKKN Dental College. Enhance your expertise today.',
+    url: 'https://dental.jkkn.ac.in/academics/courses/add-on-courses/',
+    speakableCssSelectors: ['h1', '.hero-description', 'article p'],
+  });
+
   return (
     <main>
+      <StructuredData data={breadcrumbSchema} />
+      <StructuredData data={speakableSchema} />
       <Header />
 
       {/* Page Content */}

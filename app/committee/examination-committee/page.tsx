@@ -2,16 +2,42 @@ import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+import StructuredData from '@/components/StructuredData';
+import { generateBreadcrumbSchema, generateWebPageSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: 'Examination Committee | JKKN Dental College',
   description: 'Overseeing fair and smooth conduct of examinations. Formulating policies, designing question papers, and ensuring credible assessments.',
   keywords: 'examination committee, exam policies, question papers, fair examination, result evaluation, JKKN dental college, academic assessment',
+  openGraph: {
+    title: 'Examination Committee | JKKN Dental College',
+    description: 'Overseeing fair and smooth conduct of examinations. Formulating policies, designing question papers, and ensuring credible assessments.',
+    url: 'https://dental.jkkn.ac.in/committee/examination-committee/',
+    type: 'website',
+    siteName: 'JKKN Dental College & Hospital',
+  },
 };
 
 export default function ExaminationCommittee() {
+  const breadcrumbSchema = generateBreadcrumbSchema('/committee/examination-committee');
+  const webPageSchema = generateWebPageSchema({
+    title: 'Examination Committee - JKKN Dental College',
+    description: 'Overseeing fair and smooth conduct of examinations. Formulating policies, designing question papers, and ensuring credible assessments.',
+    url: 'https://dental.jkkn.ac.in/committee/examination-committee/',
+    dateModified: '2026-03-18',
+  });
+  const speakableSchema = generateSpeakableWebPageSchema({
+    title: 'Examination Committee | JKKN Dental College',
+    description: 'Overseeing fair and smooth conduct of examinations. Formulating policies, designing question papers, and ensuring credible assessments.',
+    url: 'https://dental.jkkn.ac.in/committee/examination-committee/',
+    speakableCssSelectors: ['h1', '.hero-description', 'article p'],
+  });
+
   return (
     <main>
+      <StructuredData data={breadcrumbSchema} />
+      <StructuredData data={webPageSchema} />
+      <StructuredData data={speakableSchema} />
       <Header />
 
       {/* Page Content */}

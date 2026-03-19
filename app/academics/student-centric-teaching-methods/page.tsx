@@ -2,16 +2,41 @@ import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+import { generateBreadcrumbSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
+import StructuredData from '@/components/StructuredData';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
 export const metadata: Metadata = {
   title: 'Student-Centric Teaching Methods - JKKN Dental College',
   description: 'Innovative student-centric teaching methods at JKKN Dental College. Active learning, AI integration, and personalized instruction for excellence. Learn more.',
   keywords: 'student-centric teaching, active learning, AI integrated education, experiential learning, problem-based learning, personalized instruction, dental education',
+  openGraph: {
+    title: 'Student-Centric Teaching Methods - JKKN Dental College',
+    description: 'Innovative student-centric teaching methods at JKKN Dental College. Active learning, AI integration, and personalized instruction for excellence. Learn more.',
+    url: 'https://dental.jkkn.ac.in/academics/student-centric-teaching-methods/',
+    type: 'website',
+    siteName: 'JKKN Dental College & Hospital',
+  },
 };
 
 export default function StudentCentricTeachingMethods() {
+  const breadcrumbSchema = generateBreadcrumbSchema('/academics/student-centric-teaching-methods/');
+  const speakableSchema = generateSpeakableWebPageSchema({
+    title: 'Student-Centric Teaching Methods - JKKN Dental College',
+    description: 'Innovative student-centric teaching methods at JKKN Dental College. Active learning, AI integration, and personalized instruction for excellence. Learn more.',
+    url: 'https://dental.jkkn.ac.in/academics/student-centric-teaching-methods/',
+    speakableCssSelectors: ['h1', '.hero-description', 'article p'],
+  });
+
   return (
     <main className="overflow-x-hidden w-full">
+      <BreadcrumbSchema items={[
+        { name: 'Home', url: 'https://dental.jkkn.ac.in/' },
+        { name: 'Academics', url: 'https://dental.jkkn.ac.in/academics/' },
+        { name: 'Student Centric Teaching Methods', url: 'https://dental.jkkn.ac.in/academics/student-centric-teaching-methods/' },
+      ]} />
+      <StructuredData data={breadcrumbSchema} />
+      <StructuredData data={speakableSchema} />
       <Header />
 
       {/* Page Content */}

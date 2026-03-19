@@ -3,16 +3,42 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import Image from 'next/image';
+import StructuredData from '@/components/StructuredData';
+import { generateBreadcrumbSchema, generateWebPageSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: 'Campus Food Court - Diverse Cuisine at JKKN Dental College',
   description: 'JKKN food court offers diverse, healthy, affordable meals with sustainable practices, quality ingredients, and a vibrant social hub for students and faculty.',
   keywords: 'JKKN food court, campus cafeteria, student dining, healthy food options, affordable meals, sustainable dining, college canteen, nutritious food',
+  openGraph: {
+    title: 'Campus Food Court - Diverse Cuisine at JKKN Dental College',
+    description: 'JKKN food court offers diverse, healthy, affordable meals with sustainable practices, quality ingredients, and a vibrant social hub for students and faculty.',
+    url: 'https://dental.jkkn.ac.in/facilities/food-court/',
+    type: 'website',
+    siteName: 'JKKN Dental College & Hospital',
+  },
 };
 
 export default function FoodCourt() {
+  const breadcrumbSchema = generateBreadcrumbSchema('/facilities/food-court');
+  const webPageSchema = generateWebPageSchema({
+    title: 'Campus Food Court - Diverse Cuisine at JKKN Dental College',
+    description: 'JKKN food court offers diverse, healthy, affordable meals with sustainable practices, quality ingredients, and a vibrant social hub for students and faculty.',
+    url: 'https://dental.jkkn.ac.in/facilities/food-court/',
+    dateModified: '2026-03-18',
+  });
+  const speakableSchema = generateSpeakableWebPageSchema({
+    title: 'Campus Food Court - Diverse Cuisine at JKKN Dental College',
+    description: 'JKKN food court offers diverse, healthy, affordable meals with sustainable practices, quality ingredients, and a vibrant social hub for students and faculty.',
+    url: 'https://dental.jkkn.ac.in/facilities/food-court/',
+    speakableCssSelectors: ['h1', '.hero-description', 'article p'],
+  });
+
   return (
     <main>
+      <StructuredData data={breadcrumbSchema} />
+      <StructuredData data={webPageSchema} />
+      <StructuredData data={speakableSchema} />
       <Header />
 
       {/* Page Content */}
@@ -29,7 +55,7 @@ export default function FoodCourt() {
             <div className="w-full h-[280px] md:h-[240px] bg-gray-200 rounded-lg overflow-hidden">
               <Image
                 src="/images/foodcourt-1.webp"
-                alt="Food court exterior"
+                alt="JKKN Dental College food court exterior view at Komarapalayam campus"
                 width={400}
                 height={240}
                 className="w-full h-full object-cover"
@@ -40,7 +66,7 @@ export default function FoodCourt() {
             <div className="w-full h-[280px] md:h-[240px] bg-gray-200 rounded-lg overflow-hidden">
               <Image
                 src="/images/foodcourt-2.webp"
-                alt="Food court seating area"
+                alt="Students and faculty dining at JKKN campus food court seating area"
                 width={400}
                 height={240}
                 className="w-full h-full object-cover"
@@ -51,7 +77,7 @@ export default function FoodCourt() {
             <div className="w-full h-[280px] md:h-[240px] bg-gray-200 rounded-lg overflow-hidden">
               <Image
                 src="/images/foodcourt-3.webp"
-                alt="Food court dining area"
+                alt="Diverse food options available at JKKN Dental College campus dining hall"
                 width={400}
                 height={240}
                 className="w-full h-full object-cover"

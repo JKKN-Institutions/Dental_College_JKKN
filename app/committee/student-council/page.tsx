@@ -2,16 +2,42 @@ import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+import StructuredData from '@/components/StructuredData';
+import { generateBreadcrumbSchema, generateWebPageSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: 'Student Council | JKKN Dental College',
   description: 'Student representatives fostering campus life, organizing events, and bridging students with administration at JKKN Dental College.',
   keywords: 'student council, student representatives, campus events, student leadership, student activities, JKKN dental college, student body',
+  openGraph: {
+    title: 'Student Council | JKKN Dental College',
+    description: 'Student representatives fostering campus life, organizing events, and bridging students with administration at JKKN Dental College.',
+    url: 'https://dental.jkkn.ac.in/committee/student-council/',
+    type: 'website',
+    siteName: 'JKKN Dental College & Hospital',
+  },
 };
 
 export default function StudentCouncil() {
+  const breadcrumbSchema = generateBreadcrumbSchema('/committee/student-council');
+  const webPageSchema = generateWebPageSchema({
+    title: 'Student Council - JKKN Dental College',
+    description: 'Student representatives fostering campus life, organizing events, and bridging students with administration at JKKN Dental College.',
+    url: 'https://dental.jkkn.ac.in/committee/student-council/',
+    dateModified: '2026-03-18',
+  });
+  const speakableSchema = generateSpeakableWebPageSchema({
+    title: 'Student Council | JKKN Dental College',
+    description: 'Student representatives fostering campus life, organizing events, and bridging students with administration at JKKN Dental College.',
+    url: 'https://dental.jkkn.ac.in/committee/student-council/',
+    speakableCssSelectors: ['h1', '.hero-description', 'article p'],
+  });
+
   return (
     <main>
+      <StructuredData data={breadcrumbSchema} />
+      <StructuredData data={webPageSchema} />
+      <StructuredData data={speakableSchema} />
       <Header />
 
       {/* Page Content */}

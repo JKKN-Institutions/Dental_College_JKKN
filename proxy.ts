@@ -6,7 +6,7 @@ function setSecurityHeaders(response: NextResponse) {
   response.headers.set('X-Frame-Options', 'SAMEORIGIN');
   response.headers.set(
     'Content-Security-Policy',
-    "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://www.google-analytics.com; frame-src 'self'; object-src 'none';"
+    "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://www.google-analytics.com https://*.supabase.co; frame-src 'self' https://www.google.com; object-src 'none';"
   );
   response.headers.set('Referrer-Policy', 'strict-origin-when-cross-origin');
   response.headers.set(

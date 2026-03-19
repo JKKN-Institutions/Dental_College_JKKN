@@ -2,16 +2,39 @@ import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
+import StructuredData from '@/components/StructuredData';
+import { generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: 'Research Proposal & Consent Forms | JKKN Dental College',
   description: 'Download research proposal templates, informed consent documents, and ethical committee forms for PG dissertation submissions at JKKN.',
-  keywords: 'research proposal forms, informed consent, IEC forms, dissertation proposal, clinical research forms, ethics committee, JKKN research'
+  keywords: 'research proposal forms, informed consent, IEC forms, dissertation proposal, clinical research forms, ethics committee, JKKN research',
+  openGraph: {
+    title: 'Research Proposal & Consent Forms | JKKN Dental College',
+    description: 'Download research proposal templates, informed consent documents, and ethical committee forms for PG dissertation submissions at JKKN.',
+    url: 'https://dental.jkkn.ac.in/research/research-proposal-and-consent-forms/',
+    type: 'website',
+    siteName: 'JKKN Dental College & Hospital',
+  },
 };
 
 export default function ResearchProposalAndConsentForms() {
+  const speakableSchema = generateSpeakableWebPageSchema({
+    title: 'Research Proposal & Consent Forms | JKKN Dental College',
+    description: 'Download research proposal templates, informed consent documents, and ethical committee forms for PG dissertation submissions at JKKN.',
+    url: 'https://dental.jkkn.ac.in/research/research-proposal-and-consent-forms/',
+    speakableCssSelectors: ['h1', '.hero-description', 'article p'],
+  });
+
   return (
     <main>
+      <StructuredData data={speakableSchema} />
+      <BreadcrumbSchema items={[
+        { name: 'Home', url: 'https://dental.jkkn.ac.in/' },
+        { name: 'Research', url: 'https://dental.jkkn.ac.in/research/' },
+        { name: 'Research Proposal & Consent Forms', url: 'https://dental.jkkn.ac.in/research/research-proposal-and-consent-forms/' },
+      ]} />
       <Header />
 
       {/* Page Content */}

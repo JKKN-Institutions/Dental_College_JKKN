@@ -2,16 +2,35 @@ import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+import StructuredData from '@/components/StructuredData';
+import { generateBreadcrumbSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: 'Equitable Opportunity for SEDG Group - JKKN Dental College',
   description: 'JKKN Dental College\'s commitment to inclusive education through equitable access for Socio-Economically Disadvantaged Groups per UGC 2024.',
   keywords: 'SEDG group, inclusive education, UGC guidelines, reservation policy, SC ST OBC EWS, JKKN Dental College admission, equitable access, NEP 2020',
+  openGraph: {
+    title: 'Equitable Opportunity for SEDG Group - JKKN Dental College',
+    description: 'JKKN Dental College\'s commitment to inclusive education through equitable access for Socio-Economically Disadvantaged Groups per UGC 2024.',
+    url: 'https://dental.jkkn.ac.in/admission/equitable-opportunity-for-sedg-group/',
+    type: 'website',
+    siteName: 'JKKN Dental College & Hospital',
+  },
 };
 
 export default function EquitableOpportunityForSEDGGroup() {
+  const breadcrumbSchema = generateBreadcrumbSchema('/admission/equitable-opportunity-for-sedg-group');
+  const speakableSchema = generateSpeakableWebPageSchema({
+    title: 'Equitable Opportunity for SEDG Group - JKKN Dental College',
+    description: "JKKN Dental College's commitment to inclusive education through equitable access for Socio-Economically Disadvantaged Groups per UGC 2024.",
+    url: 'https://dental.jkkn.ac.in/admission/equitable-opportunity-for-sedg-group/',
+    speakableCssSelectors: ['h1', '.hero-description', 'article p'],
+  });
+
   return (
     <main>
+      <StructuredData data={breadcrumbSchema} />
+      <StructuredData data={speakableSchema} />
       <Header />
 
       {/* Page Content */}

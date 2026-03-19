@@ -2,15 +2,35 @@ import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+import StructuredData from '@/components/StructuredData';
+import { generateBreadcrumbSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: 'Finance Officer | JKKN Dental College',
   description: 'Meet Mr. K. Velayutham, MBA, Finance Officer at JKKN Dental College, managing financial planning, budgeting, and institutional growth.',
   keywords: 'Finance Officer, JKKN Dental College, K. Velayutham, financial management, budgeting, financial planning, institutional finance',
+  openGraph: {
+    title: 'Finance Officer | JKKN Dental College',
+    description: 'Meet Mr. K. Velayutham, MBA, Finance Officer at JKKN Dental College, managing financial planning, budgeting, and institutional growth.',
+    url: 'https://dental.jkkn.ac.in/administration/finance-officer/',
+    type: 'website',
+    siteName: 'JKKN Dental College & Hospital',
+  },
 };
+
+const breadcrumbSchema = generateBreadcrumbSchema('/administration/finance-officer/');
+const speakableSchema = generateSpeakableWebPageSchema({
+  title: 'Finance Officer | JKKN Dental College',
+  description: 'Meet Mr. K. Velayutham, MBA, Finance Officer at JKKN Dental College, managing financial planning, budgeting, and institutional growth.',
+  url: 'https://dental.jkkn.ac.in/administration/finance-officer/',
+  speakableCssSelectors: ['h1', '.hero-description', 'article p'],
+});
 
 export default function FinanceOfficer() {
   return (
+    <>
+      <StructuredData data={breadcrumbSchema} />
+      <StructuredData data={speakableSchema} />
     <main className="overflow-x-hidden w-full">
       <Header />
 
@@ -79,5 +99,6 @@ export default function FinanceOfficer() {
       <Footer />
       <FloatingWhatsApp />
     </main>
+    </>
   );
 }

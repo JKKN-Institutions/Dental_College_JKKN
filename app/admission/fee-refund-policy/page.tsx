@@ -2,16 +2,35 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import { Metadata } from 'next';
+import StructuredData from '@/components/StructuredData';
+import { generateBreadcrumbSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: 'Fee Refund Policy | JKKN Dental College Admission Fee Refund',
   description: 'JKKN Dental College fee refund policy for BDS and MDS admissions. Understand refund rules, timelines, and procedures as per UGC guidelines.',
   keywords: 'fee refund policy, admission refund, fee structure, refund rules, UGC refund policy',
+  openGraph: {
+    title: 'Fee Refund Policy | JKKN Dental College Admission Fee Refund',
+    description: 'JKKN Dental College fee refund policy for BDS and MDS admissions. Understand refund rules, timelines, and procedures as per UGC guidelines.',
+    url: 'https://dental.jkkn.ac.in/admission/fee-refund-policy/',
+    type: 'website',
+    siteName: 'JKKN Dental College & Hospital',
+  },
 };
 
 export default function FeeRefundPolicy() {
+  const breadcrumbSchema = generateBreadcrumbSchema('/admission/fee-refund-policy');
+  const speakableSchema = generateSpeakableWebPageSchema({
+    title: 'Fee Refund Policy | JKKN Dental College Admission Fee Refund',
+    description: 'JKKN Dental College fee refund policy for BDS and MDS admissions. Understand refund rules, timelines, and procedures as per UGC guidelines.',
+    url: 'https://dental.jkkn.ac.in/admission/fee-refund-policy/',
+    speakableCssSelectors: ['h1', '.hero-description', 'article p'],
+  });
+
   return (
     <main className="overflow-x-hidden w-full">
+      <StructuredData data={breadcrumbSchema} />
+      <StructuredData data={speakableSchema} />
       <Header />
 
       {/* Page Content */}

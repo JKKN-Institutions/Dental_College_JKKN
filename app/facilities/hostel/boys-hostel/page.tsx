@@ -3,16 +3,90 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import Image from 'next/image';
+import StructuredData from '@/components/StructuredData';
+import { generateBreadcrumbSchema, generateWebPageSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
-  title: 'Boys Hostel - Comfortable Accommodation at JKKN Dental College',
+  title: 'Boys Hostel - Accommodation at JKKN Dental College',
   description: 'JKKN boys hostel offers spacious rooms, high-speed internet, 24/7 security, study-focused ambiance, and modern amenities just 5 minutes from campus.',
   keywords: 'boys hostel JKKN, dental college hostel, student accommodation, hostel facilities, on-campus housing, AC rooms, safe hostel, boys dormitory',
+  openGraph: {
+    title: 'Boys Hostel - Accommodation at JKKN Dental College',
+    description: 'JKKN boys hostel offers spacious rooms, high-speed internet, 24/7 security, study-focused ambiance, and modern amenities just 5 minutes from campus.',
+    url: 'https://dental.jkkn.ac.in/facilities/hostel/boys-hostel/',
+    type: 'website',
+    siteName: 'JKKN Dental College & Hospital',
+  },
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is hostel accommodation mandatory for students at JKKN Dental College?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No, hostel accommodation is not mandatory at JKKN Dental College. It is an optional facility available for students who prefer to stay on or near campus. The Boys Hostel is situated just a 5-minute walk from the JKKN campus, offering convenience and easy access to classes and facilities. Students may choose to stay at the hostel or arrange their own accommodation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What facilities are available in the Boys Hostel at JKKN Dental College?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Boys Hostel at JKKN Dental College offers well-ventilated single and shared rooms, air-conditioned rooms (available on request), high-speed internet connectivity, a study-focused quiet environment, 24/7 committed staff support, and round-the-clock security measures. The hostel fosters a community environment and provides a safe, well-maintained living space designed to support academic focus and personal growth."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is food included in the boys hostel fee at JKKN Dental College?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Mess or dining facilities are available for hostel residents at JKKN Dental College. For specific details on whether food charges are included in the hostel fee or billed separately, and for the current hostel fee breakdown, please contact the admissions or hostel office at +91 93458 55001 or email dental@jkkn.ac.in."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the distance from the boys hostel to JKKN Dental College campus?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Boys Hostel at JKKN Dental College is situated approximately a 5-minute walk from the heart of the JKKN campus. This close proximity ensures students have quick and easy access to classrooms, clinical labs, the hospital, library, and other campus facilities without the need for transportation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the hostel fees at JKKN Dental College boys hostel?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Hostel fees at JKKN Dental College vary based on room type (single or shared) and whether air conditioning is requested. For the current hostel fee structure, contact the admissions office at +91 93458 55001 or email dental@jkkn.ac.in. Hostel fees are charged separately from tuition fees and are optional."
+      }
+    }
+  ]
 };
 
 export default function BoysHostel() {
+  const breadcrumbSchema = generateBreadcrumbSchema('/facilities/hostel/boys-hostel');
+  const webPageSchema = generateWebPageSchema({
+    title: 'Boys Hostel - Accommodation at JKKN Dental College',
+    description: 'JKKN boys hostel offers spacious rooms, high-speed internet, 24/7 security, study-focused ambiance, and modern amenities just 5 minutes from campus.',
+    url: 'https://dental.jkkn.ac.in/facilities/hostel/boys-hostel/',
+    dateModified: '2026-03-18',
+  });
+  const speakableSchema = generateSpeakableWebPageSchema({
+    title: 'Boys Hostel - Accommodation at JKKN Dental College',
+    description: 'JKKN boys hostel offers spacious rooms, high-speed internet, 24/7 security, study-focused ambiance, and modern amenities just 5 minutes from campus.',
+    url: 'https://dental.jkkn.ac.in/facilities/hostel/boys-hostel/',
+    speakableCssSelectors: ['h1', '.hero-description', 'article p'],
+  });
+
   return (
     <main>
+      <StructuredData data={breadcrumbSchema} />
+      <StructuredData data={webPageSchema} />
+      <StructuredData data={speakableSchema} />
+      <StructuredData data={faqSchema} />
       <Header />
 
       {/* Page Content */}

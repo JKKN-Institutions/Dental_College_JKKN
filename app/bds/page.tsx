@@ -1,4 +1,17 @@
+import type { Metadata } from 'next';
 import StructuredData from '@/components/StructuredData';
+
+export const metadata: Metadata = {
+  title: 'BDS Course at JKKN Dental College | 100 Seats',
+  description: 'BDS at JKKN Dental College — 5-year DCI approved program, 100 seats, NEET-UG admission. 200+ dental chairs, 500+ daily patients. Komarapalayam, Tamil Nadu.',
+  openGraph: {
+    title: 'BDS Course at JKKN Dental College | 100 Seats',
+    description: 'BDS at JKKN Dental College — 5-year DCI approved program, 100 seats, NEET-UG admission. 200+ dental chairs, 500+ daily patients. Komarapalayam, Tamil Nadu.',
+    url: 'https://dental.jkkn.ac.in/bds/',
+    type: 'website',
+    siteName: 'JKKN Dental College & Hospital',
+  },
+};
 
 // Schema #3a: Course – BDS
 const bdsCourseSchema = {

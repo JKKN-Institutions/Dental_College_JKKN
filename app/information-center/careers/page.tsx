@@ -3,16 +3,42 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import { Check } from 'lucide-react';
+import StructuredData from '@/components/StructuredData';
+import { generateBreadcrumbSchema, generateWebPageSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: 'Careers - Join JKKN Dental College & Hospital',
   description: 'Explore career opportunities at JKKN Dental College & Hospital. Join our team of excellence in dental education, research, and healthcare.',
   keywords: 'JKKN dental careers, dental college jobs, faculty positions, dental teaching jobs, healthcare careers, research positions, Namakkal jobs, dental education careers, hospital jobs, academic positions',
+  openGraph: {
+    title: 'Careers - Join JKKN Dental College & Hospital',
+    description: 'Explore career opportunities at JKKN Dental College & Hospital. Join our team of excellence in dental education, research, and healthcare.',
+    url: 'https://dental.jkkn.ac.in/information-center/careers/',
+    type: 'website',
+    siteName: 'JKKN Dental College & Hospital',
+  },
 };
 
 export default function Careers() {
+  const breadcrumbSchema = generateBreadcrumbSchema('/information-center/careers');
+  const webPageSchema = generateWebPageSchema({
+    title: 'Careers - Join JKKN Dental College & Hospital',
+    description: 'Explore career opportunities at JKKN Dental College & Hospital. Join our team of excellence in dental education, research, and healthcare.',
+    url: 'https://dental.jkkn.ac.in/information-center/careers/',
+    dateModified: '2026-03-18',
+  });
+  const speakableSchema = generateSpeakableWebPageSchema({
+    title: 'Careers - Join JKKN Dental College & Hospital',
+    description: 'Explore career opportunities at JKKN Dental College & Hospital. Join our team of excellence in dental education, research, and healthcare.',
+    url: 'https://dental.jkkn.ac.in/information-center/careers/',
+    speakableCssSelectors: ['h1', '.hero-description', 'article p'],
+  });
+
   return (
     <main>
+      <StructuredData data={breadcrumbSchema} />
+      <StructuredData data={webPageSchema} />
+      <StructuredData data={speakableSchema} />
       <Header />
 
       {/* Page Content */}

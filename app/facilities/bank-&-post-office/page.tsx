@@ -3,16 +3,42 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import Image from 'next/image';
+import StructuredData from '@/components/StructuredData';
+import { generateBreadcrumbSchema, generateWebPageSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
-  title: 'Bank & Post Office - On-Campus Banking Services at JKKN Dental College',
+  title: 'Bank & Post Office | JKKN Dental Campus',
   description: 'JKKN campus features 24/7 ATM, on-campus post office, and complete banking services including domestic/international mail and savings schemes for students.',
   keywords: 'on-campus banking JKKN, ATM facility dental college, campus post office, Indian Bank ATM, postal services, student banking, on-campus financial services',
+  openGraph: {
+    title: 'Bank & Post Office | JKKN Dental Campus',
+    description: 'JKKN campus features 24/7 ATM, on-campus post office, and complete banking services including domestic/international mail and savings schemes for students.',
+    url: 'https://dental.jkkn.ac.in/facilities/bank-&-post-office/',
+    type: 'website',
+    siteName: 'JKKN Dental College & Hospital',
+  },
 };
 
 export default function BankPostOffice() {
+  const breadcrumbSchema = generateBreadcrumbSchema('/facilities/bank-&-post-office');
+  const webPageSchema = generateWebPageSchema({
+    title: 'Bank & Post Office | JKKN Dental Campus',
+    description: 'JKKN campus features 24/7 ATM, on-campus post office, and complete banking services including domestic/international mail and savings schemes for students.',
+    url: 'https://dental.jkkn.ac.in/facilities/bank-&-post-office/',
+    dateModified: '2026-03-18',
+  });
+  const speakableSchema = generateSpeakableWebPageSchema({
+    title: 'Bank & Post Office | JKKN Dental Campus',
+    description: 'JKKN campus features 24/7 ATM, on-campus post office, and complete banking services including domestic/international mail and savings schemes for students.',
+    url: 'https://dental.jkkn.ac.in/facilities/bank-&-post-office/',
+    speakableCssSelectors: ['h1', '.hero-description', 'article p'],
+  });
+
   return (
     <main>
+      <StructuredData data={breadcrumbSchema} />
+      <StructuredData data={webPageSchema} />
+      <StructuredData data={speakableSchema} />
       <Header />
 
       {/* Page Content */}

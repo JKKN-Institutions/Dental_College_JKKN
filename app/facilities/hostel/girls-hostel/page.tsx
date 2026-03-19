@@ -3,16 +3,90 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import Image from 'next/image';
+import StructuredData from '@/components/StructuredData';
+import { generateBreadcrumbSchema, generateWebPageSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
-  title: 'Girls Hostel - Safe & Secure Accommodation at JKKN Dental College',
+  title: 'Girls Hostel | JKKN Dental Campus',
   description: 'JKKN girls hostel features 24/7 security, CCTV surveillance, attached bathrooms, gym, yoga room, and on-campus convenience for female dental students.',
   keywords: 'girls hostel JKKN, safe hostel for girls, women hostel dental college, secure accommodation, female students housing, on-campus girls hostel, CCTV hostel',
+  openGraph: {
+    title: 'Girls Hostel | JKKN Dental Campus',
+    description: 'JKKN girls hostel features 24/7 security, CCTV surveillance, attached bathrooms, gym, yoga room, and on-campus convenience for female dental students.',
+    url: 'https://dental.jkkn.ac.in/facilities/hostel/girls-hostel/',
+    type: 'website',
+    siteName: 'JKKN Dental College & Hospital',
+  },
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is the girls hostel at JKKN Dental College safe and secure?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, the Girls Hostel at JKKN Dental College maintains the highest security standards. The hostel features 24/7 security personnel, comprehensive CCTV surveillance, and access control systems. A strict no-visitor policy is enforced for added safety. The hostel is located within the JKKN campus itself, providing an additional layer of security and peace of mind for both students and parents."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What facilities are available in the girls hostel at JKKN Dental College?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Girls Hostel at JKKN Dental College offers on-campus accommodation with rooms featuring comfortable beds, study tables, and ample storage. Air-conditioned rooms are available upon request. Each room has an attached bathroom for privacy. Additional facilities include high-speed internet connectivity, 24/7 electricity and water supply, a well-equipped gymnasium, a yoga room, a sports complex, and round-the-clock staff support."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is there a separate mess for the girls hostel at JKKN Dental College?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "JKKN Dental College provides dining facilities for girls hostel residents. For specific details about mess arrangements, meal timings, and whether food is included in the hostel fee, please contact the hostel or admissions office at +91 93458 55001 or email dental@jkkn.ac.in."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are visitors allowed in the JKKN Dental College girls hostel?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The JKKN Dental College Girls Hostel enforces a strict no-visitor policy to ensure the safety and security of all residents. This policy is part of the hostel's comprehensive security measures, which also include 24/7 CCTV surveillance and access control systems. Parents may be permitted to visit during designated hours — contact the hostel warden for current visitor guidelines."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the girls hostel fee at JKKN Dental College?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Girls hostel fees at JKKN Dental College vary based on room type and selected amenities (including AC or non-AC options). Hostel accommodation is optional and charged separately from tuition fees. For the current fee structure, contact the admissions office at +91 93458 55001 or email dental@jkkn.ac.in."
+      }
+    }
+  ]
 };
 
 export default function GirlsHostel() {
+  const breadcrumbSchema = generateBreadcrumbSchema('/facilities/hostel/girls-hostel');
+  const webPageSchema = generateWebPageSchema({
+    title: 'Girls Hostel | JKKN Dental Campus',
+    description: 'JKKN girls hostel features 24/7 security, CCTV surveillance, attached bathrooms, gym, yoga room, and on-campus convenience for female dental students.',
+    url: 'https://dental.jkkn.ac.in/facilities/hostel/girls-hostel/',
+    dateModified: '2026-03-18',
+  });
+  const speakableSchema = generateSpeakableWebPageSchema({
+    title: 'Girls Hostel | JKKN Dental Campus',
+    description: 'JKKN girls hostel features 24/7 security, CCTV surveillance, attached bathrooms, gym, yoga room, and on-campus convenience for female dental students.',
+    url: 'https://dental.jkkn.ac.in/facilities/hostel/girls-hostel/',
+    speakableCssSelectors: ['h1', '.hero-description', 'article p'],
+  });
+
   return (
     <main>
+      <StructuredData data={breadcrumbSchema} />
+      <StructuredData data={webPageSchema} />
+      <StructuredData data={speakableSchema} />
+      <StructuredData data={faqSchema} />
       <Header />
 
       {/* Page Content */}

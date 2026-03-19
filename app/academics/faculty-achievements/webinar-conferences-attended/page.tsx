@@ -2,16 +2,35 @@ import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+import { generateBreadcrumbSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
+import StructuredData from '@/components/StructuredData';
 
 export const metadata: Metadata = {
   title: 'Webinars and Conferences Attended - JKKN Dental College',
   description: 'Explore webinars and conferences attended by JKKN faculty. Staying updated with latest dental research and innovations for quality education. View list.',
   keywords: 'webinars attended, dental conferences, faculty achievements, continuing education, dental research, professional development, academic conferences',
+  openGraph: {
+    title: 'Webinars and Conferences Attended - JKKN Dental College',
+    description: 'Explore webinars and conferences attended by JKKN faculty. Staying updated with latest dental research and innovations for quality education. View list.',
+    url: 'https://dental.jkkn.ac.in/academics/faculty-achievements/webinar-conferences-attended/',
+    type: 'website',
+    siteName: 'JKKN Dental College & Hospital',
+  },
 };
 
 export default function WebinarConferencesAttended() {
+  const breadcrumbSchema = generateBreadcrumbSchema('/academics/faculty-achievements/webinar-conferences-attended/');
+  const speakableSchema = generateSpeakableWebPageSchema({
+    title: 'Webinars and Conferences Attended - JKKN Dental College',
+    description: 'Explore webinars and conferences attended by JKKN faculty. Staying updated with latest dental research and innovations for quality education. View list.',
+    url: 'https://dental.jkkn.ac.in/academics/faculty-achievements/webinar-conferences-attended/',
+    speakableCssSelectors: ['h1', '.hero-description', 'article p'],
+  });
+
   return (
     <main className="overflow-x-hidden w-full">
+      <StructuredData data={breadcrumbSchema} />
+      <StructuredData data={speakableSchema} />
       <Header />
 
       {/* Page Content */}

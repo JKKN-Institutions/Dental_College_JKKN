@@ -3,6 +3,8 @@ import Footer from '@/components/Footer';
 import { Calendar, Clock } from 'lucide-react';
 import { createClient } from '@/lib/supabase/server';
 import { Metadata } from 'next';
+import StructuredData from '@/components/StructuredData';
+import { generateWebPageSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: 'Blog | JKKN Dental College & Hospital',
@@ -21,6 +23,30 @@ export const metadata: Metadata = {
 };
 
 export const revalidate = 60;
+
+const blogBreadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://dental.jkkn.ac.in/" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://dental.jkkn.ac.in/blog/" }
+  ]
+};
+
+const blogWebPageSchema = generateWebPageSchema({
+  title: 'Blog | JKKN Dental College & Hospital',
+  description: 'Latest articles, news & insights from JKKN Dental College & Hospital. Dental education tips, admission guides, campus updates & career advice.',
+  url: 'https://dental.jkkn.ac.in/blog/',
+  datePublished: '2024-10-01',
+  dateModified: '2026-03-18',
+});
+
+const blogSpeakableSchema = generateSpeakableWebPageSchema({
+  title: 'Blog | JKKN Dental College & Hospital',
+  description: 'Latest articles, news & insights from JKKN Dental College & Hospital. Dental education tips, admission guides, campus updates & career advice.',
+  url: 'https://dental.jkkn.ac.in/blog/',
+  speakableCssSelectors: ['h1', '.hero-description', 'article p'],
+});
 
 export default async function BlogPage() {
   // Fetch admin-created posts from Supabase
@@ -46,6 +72,9 @@ export default async function BlogPage() {
 
   return (
     <div className="min-h-screen bg-[#FBFBEE]">
+      <StructuredData data={blogBreadcrumbSchema} />
+      <StructuredData data={blogWebPageSchema} />
+      <StructuredData data={blogSpeakableSchema} />
       <Header />
 
       {/* ── Campus News (Admin Posts) Section — shown only when posts exist ── */}

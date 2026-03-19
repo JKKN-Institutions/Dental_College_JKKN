@@ -5,6 +5,7 @@ import { Metadata } from 'next';
 import { createClient } from '@/lib/supabase/server';
 import GalleryCarousel, { GalleryImage } from '@/components/GalleryCarousel';
 import StructuredData from '@/components/StructuredData';
+import { generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const revalidate = 60;
 
@@ -12,6 +13,13 @@ export const metadata: Metadata = {
   title: 'Campus Gallery | JKKN Dental College & Hospital Photos',
   description: 'Explore JKKN Dental College campus through our photo gallery. View our modern infrastructure, clinical facilities, laboratories, classrooms, library, and student activities.',
   keywords: 'JKKN campus photos, dental college gallery, campus facilities, infrastructure photos',
+  openGraph: {
+    title: 'Campus Gallery | JKKN Dental College & Hospital Photos',
+    description: 'Explore JKKN Dental College campus through our photo gallery. View our modern infrastructure, clinical facilities, laboratories, classrooms, library, and student activities.',
+    url: 'https://dental.jkkn.ac.in/gallery/',
+    type: 'website',
+    siteName: 'JKKN Dental College & Hospital',
+  },
 };
 
 // ── Hardcoded images (used when no admin albums exist) ──────────────────────
@@ -69,9 +77,17 @@ export default async function Gallery() {
     ]
   };
 
+  const speakableSchema = generateSpeakableWebPageSchema({
+    title: 'Campus Gallery | JKKN Dental College & Hospital Photos',
+    description: 'Explore JKKN Dental College campus through our photo gallery. View our modern infrastructure, clinical facilities, laboratories, classrooms, library, and student activities.',
+    url: 'https://dental.jkkn.ac.in/gallery/',
+    speakableCssSelectors: ['h1', '.hero-description', 'article p'],
+  });
+
   return (
     <main className="overflow-x-hidden">
       <StructuredData data={galleryBreadcrumbSchema} />
+      <StructuredData data={speakableSchema} />
       <Header />
 
       <div className="bg-[#FBF8F3] py-8 sm:py-10 md:py-12 lg:py-16 px-4 sm:px-6">

@@ -2,16 +2,39 @@ import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
+import StructuredData from '@/components/StructuredData';
+import { generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: 'Institutional Ethics Committee (IEC) | JKKN Dental College',
   description: 'JKKN IEC ensures ethical research standards, protecting participant rights and promoting responsible biomedical research practices.',
-  keywords: 'institutional ethics committee, IEC, research ethics, biomedical research, participant protection, DHR registration, JKKN Dental College'
+  keywords: 'institutional ethics committee, IEC, research ethics, biomedical research, participant protection, DHR registration, JKKN Dental College',
+  openGraph: {
+    title: 'Institutional Ethics Committee (IEC) | JKKN Dental College',
+    description: 'JKKN IEC ensures ethical research standards, protecting participant rights and promoting responsible biomedical research practices.',
+    url: 'https://dental.jkkn.ac.in/research/institutional-ethical-committee/',
+    type: 'website',
+    siteName: 'JKKN Dental College & Hospital',
+  },
 };
 
 export default function InstitutionalEthicalCommittee() {
+  const speakableSchema = generateSpeakableWebPageSchema({
+    title: 'Institutional Ethics Committee (IEC) | JKKN Dental College',
+    description: 'JKKN IEC ensures ethical research standards, protecting participant rights and promoting responsible biomedical research practices.',
+    url: 'https://dental.jkkn.ac.in/research/institutional-ethical-committee/',
+    speakableCssSelectors: ['h1', '.hero-description', 'article p'],
+  });
+
   return (
     <main>
+      <StructuredData data={speakableSchema} />
+      <BreadcrumbSchema items={[
+        { name: 'Home', url: 'https://dental.jkkn.ac.in/' },
+        { name: 'Research', url: 'https://dental.jkkn.ac.in/research/' },
+        { name: 'Institutional Ethical Committee', url: 'https://dental.jkkn.ac.in/research/institutional-ethical-committee/' },
+      ]} />
       <Header />
 
       {/* Page Content */}

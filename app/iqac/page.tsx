@@ -3,16 +3,42 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import { Cog, Target } from 'lucide-react';
+import StructuredData from '@/components/StructuredData';
+import { generateBreadcrumbSchema, generateWebPageSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: 'IQAC | Internal Quality Assurance Cell | JKKN Dental College',
   description: 'Internal Quality Assurance Cell (IQAC) at JKKN Dental College ensures continuous quality improvement in academics, research, administration, and infrastructure development.',
   keywords: 'IQAC, quality assurance, internal quality cell, academic quality, NAAC IQAC',
+  openGraph: {
+    title: 'IQAC | Internal Quality Assurance Cell | JKKN Dental College',
+    description: 'Internal Quality Assurance Cell (IQAC) at JKKN Dental College ensures continuous quality improvement in academics, research, administration, and infrastructure development.',
+    url: 'https://dental.jkkn.ac.in/iqac/',
+    type: 'website',
+    siteName: 'JKKN Dental College & Hospital',
+  },
 };
 
 export default function IQAC() {
+  const breadcrumbSchema = generateBreadcrumbSchema('/iqac');
+  const webPageSchema = generateWebPageSchema({
+    title: 'IQAC | Internal Quality Assurance Cell | JKKN Dental College',
+    description: 'Internal Quality Assurance Cell (IQAC) at JKKN Dental College ensures continuous quality improvement in academics, research, administration, and infrastructure development.',
+    url: 'https://dental.jkkn.ac.in/iqac/',
+    dateModified: '2026-03-18',
+  });
+  const speakableSchema = generateSpeakableWebPageSchema({
+    title: 'IQAC | Internal Quality Assurance Cell | JKKN Dental College',
+    description: 'Internal Quality Assurance Cell (IQAC) at JKKN Dental College ensures continuous quality improvement in academics, research, administration, and infrastructure development.',
+    url: 'https://dental.jkkn.ac.in/iqac/',
+    speakableCssSelectors: ['h1', '.hero-description', 'article p'],
+  });
+
   return (
     <main>
+      <StructuredData data={breadcrumbSchema} />
+      <StructuredData data={webPageSchema} />
+      <StructuredData data={speakableSchema} />
       <Header />
 
       {/* Page Content */}

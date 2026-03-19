@@ -4,10 +4,30 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import Image from 'next/image';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
+
+const speakableSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Our Trust | JKKN Dental College",
+  "url": "https://dental.jkkn.ac.in/our-trust/",
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": ["h1", ".hero-description", "article p"],
+  },
+};
 
 export default function OurTrust() {
   return (
     <main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }}
+      />
+      <BreadcrumbSchema items={[
+        { name: 'Home', url: 'https://dental.jkkn.ac.in/' },
+        { name: 'Our Trust', url: 'https://dental.jkkn.ac.in/our-trust/' },
+      ]} />
       <Header />
 
       {/* Hero Image Section with Framed Portrait */}

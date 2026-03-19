@@ -3,16 +3,35 @@ import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import Image from 'next/image';
 import { Metadata } from 'next';
+import StructuredData from '@/components/StructuredData';
+import { generateBreadcrumbSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: 'Alumni Network | JKKN Dental College Alumni Association',
   description: 'Join JKKN Dental College Alumni Network. Connect with fellow graduates, attend alumni events, contribute to college development, and stay engaged with your alma mater.',
   keywords: 'alumni network, dental alumni, JKKN alumni, alumni association, dental college alumni',
+  openGraph: {
+    title: 'Alumni Network | JKKN Dental College Alumni Association',
+    description: 'Join JKKN Dental College Alumni Network. Connect with fellow graduates, attend alumni events, contribute to college development, and stay engaged with your alma mater.',
+    url: 'https://dental.jkkn.ac.in/alumni/',
+    type: 'website',
+    siteName: 'JKKN Dental College & Hospital',
+  },
 };
 
 export default function Alumni() {
+  const breadcrumbSchema = generateBreadcrumbSchema('/alumni');
+  const speakableSchema = generateSpeakableWebPageSchema({
+    title: 'Alumni Network | JKKN Dental College Alumni Association',
+    description: 'Join JKKN Dental College Alumni Network. Connect with fellow graduates, attend alumni events, contribute to college development, and stay engaged with your alma mater.',
+    url: 'https://dental.jkkn.ac.in/alumni/',
+    speakableCssSelectors: ['h1', '.hero-description', 'article p'],
+  });
+
   return (
     <main>
+      <StructuredData data={breadcrumbSchema} />
+      <StructuredData data={speakableSchema} />
       <Header />
 
       {/* Page Content */}

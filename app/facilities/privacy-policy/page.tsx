@@ -2,16 +2,42 @@ import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+import StructuredData from '@/components/StructuredData';
+import { generateBreadcrumbSchema, generateWebPageSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy - JKKN Dental College Data Protection & Security',
+  title: 'Privacy Policy - JKKN Dental Data Protection & Security',
   description: 'JKKN Dental College privacy policy outlines personal data collection, usage, protection, and your rights regarding information security and confidentiality.',
   keywords: 'privacy policy JKKN, data protection dental college, personal information security, JKKN privacy statement, data confidentiality, user privacy rights',
+  openGraph: {
+    title: 'Privacy Policy - JKKN Dental Data Protection & Security',
+    description: 'JKKN Dental College privacy policy outlines personal data collection, usage, protection, and your rights regarding information security and confidentiality.',
+    url: 'https://dental.jkkn.ac.in/facilities/privacy-policy/',
+    type: 'website',
+    siteName: 'JKKN Dental College & Hospital',
+  },
 };
 
 export default function PrivacyPolicy() {
+  const breadcrumbSchema = generateBreadcrumbSchema('/facilities/privacy-policy');
+  const webPageSchema = generateWebPageSchema({
+    title: 'Privacy Policy - JKKN Dental Data Protection & Security',
+    description: 'JKKN Dental College privacy policy outlines personal data collection, usage, protection, and your rights regarding information security and confidentiality.',
+    url: 'https://dental.jkkn.ac.in/facilities/privacy-policy/',
+    dateModified: '2026-03-18',
+  });
+  const speakableSchema = generateSpeakableWebPageSchema({
+    title: 'Privacy Policy - JKKN Dental Data Protection & Security',
+    description: 'JKKN Dental College privacy policy outlines personal data collection, usage, protection, and your rights regarding information security and confidentiality.',
+    url: 'https://dental.jkkn.ac.in/facilities/privacy-policy/',
+    speakableCssSelectors: ['h1', '.hero-description', 'article p'],
+  });
+
   return (
     <main>
+      <StructuredData data={breadcrumbSchema} />
+      <StructuredData data={webPageSchema} />
+      <StructuredData data={speakableSchema} />
       <Header />
 
       {/* Page Content */}

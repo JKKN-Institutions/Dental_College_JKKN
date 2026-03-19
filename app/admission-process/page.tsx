@@ -4,12 +4,28 @@ import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import Link from 'next/link';
 import { Metadata } from 'next';
 import StructuredData from '@/components/StructuredData';
+import { generateBreadcrumbSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
-  title: 'Admission Process 2025 | Step-by-Step Guide | JKKN Dental College',
+  title: 'Admission Process 2026 | JKKN Dental College',
   description: 'Complete admission process for BDS & MDS programs at JKKN Dental College. NEET eligibility, counseling steps, document requirements, fee structure, and important dates for 2025 admissions.',
   keywords: 'admission process, how to apply, JKKN admission, BDS admission process, MDS admission process, NEET counseling, admission steps, dental college admission',
+  openGraph: {
+    title: 'Admission Process 2026 | JKKN Dental College',
+    description: 'Complete admission process for BDS & MDS programs at JKKN Dental College. NEET eligibility, counseling steps, document requirements, fee structure, and important dates for 2025 admissions.',
+    url: 'https://dental.jkkn.ac.in/admission-process/',
+    type: 'website',
+    siteName: 'JKKN Dental College & Hospital',
+  },
 };
+
+const breadcrumbSchema = generateBreadcrumbSchema('/admission-process/');
+const speakableSchema = generateSpeakableWebPageSchema({
+  title: 'Admission Process 2026 | JKKN Dental College',
+  description: 'Complete admission process for BDS & MDS programs at JKKN Dental College. NEET eligibility, counseling steps, document requirements, fee structure, and important dates for 2025 admissions.',
+  url: 'https://dental.jkkn.ac.in/admission-process/',
+  speakableCssSelectors: ['h1', '.hero-description', 'article p'],
+});
 
 export default function AdmissionProcess() {
   // Schema #6: HowTo – How to Apply for BDS
@@ -93,6 +109,9 @@ export default function AdmissionProcess() {
   };
 
   return (
+    <>
+      <StructuredData data={breadcrumbSchema} />
+      <StructuredData data={speakableSchema} />
     <main className="overflow-x-hidden">
       <StructuredData data={howToSchema} />
       <Header />
@@ -398,5 +417,6 @@ export default function AdmissionProcess() {
       <Footer />
       <FloatingWhatsApp />
     </main>
+    </>
   );
 }

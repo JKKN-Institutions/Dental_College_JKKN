@@ -3,16 +3,39 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import { Check } from 'lucide-react';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
+import StructuredData from '@/components/StructuredData';
+import { generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: 'MOU - Memorandum of Understanding | JKKN Dental College',
   description: 'Strategic partnerships with academic institutions, hospitals, and healthcare organizations advancing dental education and research excellence.',
-  keywords: 'memorandum of understanding, MOU, academic partnerships, healthcare collaborations, dental education, research collaborations, JKKN partnerships'
+  keywords: 'memorandum of understanding, MOU, academic partnerships, healthcare collaborations, dental education, research collaborations, JKKN partnerships',
+  openGraph: {
+    title: 'MOU - Memorandum of Understanding | JKKN Dental College',
+    description: 'Strategic partnerships with academic institutions, hospitals, and healthcare organizations advancing dental education and research excellence.',
+    url: 'https://dental.jkkn.ac.in/research/mou-memorandum-of-understanding/',
+    type: 'website',
+    siteName: 'JKKN Dental College & Hospital',
+  },
 };
 
 export default function MOUPage() {
+  const speakableSchema = generateSpeakableWebPageSchema({
+    title: 'MOU - Memorandum of Understanding | JKKN Dental College',
+    description: 'Strategic partnerships with academic institutions, hospitals, and healthcare organizations advancing dental education and research excellence.',
+    url: 'https://dental.jkkn.ac.in/research/mou-memorandum-of-understanding/',
+    speakableCssSelectors: ['h1', '.hero-description', 'article p'],
+  });
+
   return (
     <main>
+      <StructuredData data={speakableSchema} />
+      <BreadcrumbSchema items={[
+        { name: 'Home', url: 'https://dental.jkkn.ac.in/' },
+        { name: 'Research', url: 'https://dental.jkkn.ac.in/research/' },
+        { name: 'MoU', url: 'https://dental.jkkn.ac.in/research/mou-memorandum-of-understanding/' },
+      ]} />
       <Header />
 
       {/* Page Content */}

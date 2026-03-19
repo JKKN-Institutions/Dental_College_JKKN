@@ -2,16 +2,42 @@ import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+import StructuredData from '@/components/StructuredData';
+import { generateBreadcrumbSchema, generateWebPageSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: 'Student Welfare Committee | JKKN Dental College',
   description: 'Dedicated to student well-being, academic support, and overall welfare. View committee members committed to student success.',
   keywords: 'student welfare committee, student wellbeing, academic support, student care, welfare programs, JKKN dental college, student services',
+  openGraph: {
+    title: 'Student Welfare Committee | JKKN Dental College',
+    description: 'Dedicated to student well-being, academic support, and overall welfare. View committee members committed to student success.',
+    url: 'https://dental.jkkn.ac.in/committee/student-welfare-committee/',
+    type: 'website',
+    siteName: 'JKKN Dental College & Hospital',
+  },
 };
 
 export default function StudentWelfareCommittee() {
+  const breadcrumbSchema = generateBreadcrumbSchema('/committee/student-welfare-committee');
+  const webPageSchema = generateWebPageSchema({
+    title: 'Student Welfare Committee - JKKN Dental College',
+    description: 'Dedicated to student well-being, academic support, and overall welfare. View committee members committed to student success.',
+    url: 'https://dental.jkkn.ac.in/committee/student-welfare-committee/',
+    dateModified: '2026-03-18',
+  });
+  const speakableSchema = generateSpeakableWebPageSchema({
+    title: 'Student Welfare Committee | JKKN Dental College',
+    description: 'Dedicated to student well-being, academic support, and overall welfare. View committee members committed to student success.',
+    url: 'https://dental.jkkn.ac.in/committee/student-welfare-committee/',
+    speakableCssSelectors: ['h1', '.hero-description', 'article p'],
+  });
+
   return (
     <main>
+      <StructuredData data={breadcrumbSchema} />
+      <StructuredData data={webPageSchema} />
+      <StructuredData data={speakableSchema} />
       <Header />
 
       {/* Page Content */}

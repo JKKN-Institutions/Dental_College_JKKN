@@ -2,6 +2,8 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import { Metadata } from 'next';
+import StructuredData from '@/components/StructuredData';
+import { generateBreadcrumbSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
 import {
   Sparkles,
   Brain,
@@ -20,7 +22,14 @@ import {
 export const metadata: Metadata = {
   title: "India's 1st Human-AI AGI Dental Campus | JKKN Dental College",
   description: "JKKN Dental College — India's 1st AI-integrated dental campus. ChatGPT, AI diagnostics & digital dentistry tools integrated into BDS & MDS curriculum.",
-  keywords: "AI dental campus India, artificial intelligence dental education, AI-powered dental college, ChatGPT dental training, digital dentistry AI, smart dental education, AI diagnostic tools dentistry, JKKN AI integration"
+  keywords: "AI dental campus India, artificial intelligence dental education, AI-powered dental college, ChatGPT dental training, digital dentistry AI, smart dental education, AI diagnostic tools dentistry, JKKN AI integration",
+  openGraph: {
+    title: "India's 1st Human-AI AGI Dental Campus | JKKN Dental College",
+    description: "JKKN Dental College — India's 1st AI-integrated dental campus. ChatGPT, AI diagnostics & digital dentistry tools integrated into BDS & MDS curriculum.",
+    url: 'https://dental.jkkn.ac.in/ai-dental-campus/',
+    type: 'website',
+    siteName: 'JKKN Dental College & Hospital',
+  },
 };
 
 export default function AIDentalCampus() {
@@ -137,8 +146,18 @@ export default function AIDentalCampus() {
     }
   ];
 
+  const breadcrumbSchema = generateBreadcrumbSchema('/ai-dental-campus');
+  const speakableSchema = generateSpeakableWebPageSchema({
+    title: "India's 1st Human-AI AGI Dental Campus | JKKN Dental College",
+    description: "JKKN Dental College — India's 1st AI-integrated dental campus. ChatGPT, AI diagnostics & digital dentistry tools integrated into BDS & MDS curriculum.",
+    url: 'https://dental.jkkn.ac.in/ai-dental-campus/',
+    speakableCssSelectors: ['h1', '.hero-description', 'article p'],
+  });
+
   return (
     <main className="overflow-x-hidden w-full">
+      <StructuredData data={breadcrumbSchema} />
+      <StructuredData data={speakableSchema} />
       <Header />
 
       {/* Hero Section */}

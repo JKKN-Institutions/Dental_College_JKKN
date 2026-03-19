@@ -2,16 +2,42 @@ import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+import StructuredData from '@/components/StructuredData';
+import { generateBreadcrumbSchema, generateWebPageSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
-  title: 'Placement Cell / CDC - Career Development Center | JKKN Dental College',
+  title: 'Placement Cell (CDC) | JKKN Dental College',
   description: 'Bridging education and employment through training, internships, and placements. Empowering students for successful careers worldwide.',
   keywords: 'placement cell, CDC, career development, campus placements, internships, aptitude training, soft skills, JKKN dental college',
+  openGraph: {
+    title: 'Placement Cell (CDC) | JKKN Dental College',
+    description: 'Bridging education and employment through training, internships, and placements. Empowering students for successful careers worldwide.',
+    url: 'https://dental.jkkn.ac.in/committee/placement-cell-cdc/',
+    type: 'website',
+    siteName: 'JKKN Dental College & Hospital',
+  },
 };
 
 export default function PlacementCellCDC() {
+  const breadcrumbSchema = generateBreadcrumbSchema('/committee/placement-cell-cdc');
+  const webPageSchema = generateWebPageSchema({
+    title: 'Placement Cell (CDC) | JKKN Dental College',
+    description: 'Bridging education and employment through training, internships, and placements. Empowering students for successful careers worldwide.',
+    url: 'https://dental.jkkn.ac.in/committee/placement-cell-cdc/',
+    dateModified: '2026-03-18',
+  });
+  const speakableSchema = generateSpeakableWebPageSchema({
+    title: 'Placement Cell (CDC) | JKKN Dental College',
+    description: 'Bridging education and employment through training, internships, and placements. Empowering students for successful careers worldwide.',
+    url: 'https://dental.jkkn.ac.in/committee/placement-cell-cdc/',
+    speakableCssSelectors: ['h1', '.hero-description', 'article p'],
+  });
+
   return (
     <main>
+      <StructuredData data={breadcrumbSchema} />
+      <StructuredData data={webPageSchema} />
+      <StructuredData data={speakableSchema} />
       <Header />
 
       {/* Page Content */}
@@ -28,7 +54,7 @@ export default function PlacementCellCDC() {
             Vision
           </h2>
           <p className="text-base text-black mb-6 leading-relaxed">
-            To be a leading global provider of innovative solutions that equip students with skills, knowledge, and exposure for meaningful careers. We envision a future where individuals embrace continuous learning and adapt to society's evolving needs. Our goal is to empower students to contribute their best to the nation and the world.
+            To be a leading global provider of innovative solutions that equip students with skills, knowledge, and exposure for meaningful careers. We envision a future where individuals embrace continuous learning and adapt to society&apos;s evolving needs. Our goal is to empower students to contribute their best to the nation and the world.
           </p>
 
           {/* Mission Section */}
@@ -48,7 +74,7 @@ export default function PlacementCellCDC() {
             Empower Future Leaders – Provide mentorship and career development programs to help students seize opportunities and become dynamic leaders.
           </p>
           <p className="text-base text-black mb-8 leading-relaxed">
-            Drive Meaningful Change – Enable students to contribute to society's progress and global advancements through innovation and leadership.
+            Drive Meaningful Change – Enable students to contribute to society&apos;s progress and global advancements through innovation and leadership.
           </p>
 
           {/* MESSAGE BY OUR MANAGING DIRECTOR */}
@@ -66,13 +92,13 @@ export default function PlacementCellCDC() {
             Dear Students, Faculty, and Industry Partners,
           </h3>
           <p className="text-base text-black mb-4 leading-relaxed">
-            At JKKN Institutions, we believe education extends beyond classrooms—it's about equipping students with skills, mindset, and opportunities for real-world success. The Career Development Center (CDC) bridges academic learning with industry needs, fostering career empowerment, entrepreneurship, and leadership.
+            At JKKN Institutions, we believe education extends beyond classrooms—it&apos;s about equipping students with skills, mindset, and opportunities for real-world success. The Career Development Center (CDC) bridges academic learning with industry needs, fostering career empowerment, entrepreneurship, and leadership.
           </p>
           <p className="text-base text-black mb-4 leading-relaxed">
-            By integrating AI-driven learning, automation, and smart technologies, we aim to transform students into future-ready professionals. AI is not a replacement for human potential but a catalyst for growth, creativity, and innovation. Let's embrace technology and talent to create endless possibilities.
+            By integrating AI-driven learning, automation, and smart technologies, we aim to transform students into future-ready professionals. AI is not a replacement for human potential but a catalyst for growth, creativity, and innovation. Let&apos;s embrace technology and talent to create endless possibilities.
           </p>
           <p className="text-base text-black mb-4 leading-relaxed">
-            Make the most of CDC's resources—where knowledge meets opportunity, and aspirations turn into achievements!
+            Make the most of CDC&apos;s resources—where knowledge meets opportunity, and aspirations turn into achievements!
           </p>
           <p className="text-base text-black font-bold mb-2">
             Best regards,
@@ -116,7 +142,7 @@ export default function PlacementCellCDC() {
 
           {/* Training Programs & Placement Process */}
           <h2 className="text-lg md:text-xl font-bold text-black mb-6">
-            Training Programs & Placement Process
+            Training Programs &amp; Placement Process
           </h2>
 
           <h3 className="text-base md:text-lg font-bold text-black mb-4">
@@ -152,7 +178,7 @@ export default function PlacementCellCDC() {
             4. Golden Hour Training
           </h4>
           <p className="text-base text-black mb-6 leading-relaxed">
-            Golden Hour Training is an intensive, last-minute, company-specific training program designed to maximize a candidate's success in securing a job. This strategic training equips students with the precise skills, insights, and confidence required to excel in final-stage interviews and assessments. By focusing on real-time industry expectations, employer-specific requirements, and proven success strategies, Golden Hour Training ensures candidates are fully prepared to make a lasting impression and win their desired job opportunities.
+            Golden Hour Training is an intensive, last-minute, company-specific training program designed to maximize a candidate&apos;s success in securing a job. This strategic training equips students with the precise skills, insights, and confidence required to excel in final-stage interviews and assessments. By focusing on real-time industry expectations, employer-specific requirements, and proven success strategies, Golden Hour Training ensures candidates are fully prepared to make a lasting impression and win their desired job opportunities.
           </p>
 
           {/* Outsource Training Partners */}
@@ -206,14 +232,14 @@ export default function PlacementCellCDC() {
             Soft Skills: Communication, Aptitude, Presentation, and Interview Techniques. Technical Skills: Specific to industry requirements.
           </p>
           <p className="text-base text-black mb-4 leading-relaxed">
-            Mock Interviews & Group Discussions: Conducted by industry experts to prepare students thoroughly.
+            Mock Interviews &amp; Group Discussions: Conducted by industry experts to prepare students thoroughly.
           </p>
 
           <h4 className="text-base font-bold text-black mb-3">
             3. Campus Recruitment
           </h4>
           <p className="text-base text-black mb-2 leading-relaxed">
-            Recruiters &Hiring Partners
+            Recruiters &amp; Hiring Partners
           </p>
           <p className="text-base text-black mb-2 leading-relaxed">
             Student Placement Statistics
@@ -229,7 +255,7 @@ export default function PlacementCellCDC() {
             Industry Internship Programs
           </p>
           <p className="text-base text-black mb-2 leading-relaxed">
-            Research & Academic Internships
+            Research &amp; Academic Internships
           </p>
           <p className="text-base text-black mb-4 leading-relaxed">
             Student Internship Success Stories
@@ -242,27 +268,27 @@ export default function PlacementCellCDC() {
             Corporate Training Programs
           </p>
           <p className="text-base text-black mb-2 leading-relaxed">
-            Guest Lectures & Webinars
+            Guest Lectures &amp; Webinars
           </p>
           <p className="text-base text-black mb-4 leading-relaxed">
-            MoUs & Partnerships
+            MoUs &amp; Partnerships
           </p>
 
           <h4 className="text-base font-bold text-black mb-3">
-            6. Career Guidance & Counselling
+            6. Career Guidance &amp; Counselling
           </h4>
           <p className="text-base text-black mb-2 leading-relaxed">
             One-on-One Career Mentorship
           </p>
           <p className="text-base text-black mb-2 leading-relaxed">
-            Career Roadmaps & Planning
+            Career Roadmaps &amp; Planning
           </p>
           <p className="text-base text-black mb-6 leading-relaxed">
             Psychometric Assessments
           </p>
 
           <h4 className="text-base font-bold text-black mb-3">
-            7. Events & Activities
+            7. Events &amp; Activities
           </h4>
           <p className="text-base text-black mb-2 leading-relaxed">
             Placement Drives &amp; Job Fairs
@@ -271,7 +297,7 @@ export default function PlacementCellCDC() {
             Hackathons &amp; Competitions
           </p>
           <p className="text-base text-black mb-4 leading-relaxed">
-            Alumni & Industry Networking Meets
+            Alumni &amp; Industry Networking Meets
           </p>
 
           <h4 className="text-base font-bold text-black mb-3">
