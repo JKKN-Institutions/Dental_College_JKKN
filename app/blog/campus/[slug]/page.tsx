@@ -7,7 +7,7 @@ import CampusBlogContent from './CampusBlogContent';
 import StructuredData from '@/components/StructuredData';
 import { generateSpeakableWebPageSchema } from '@/lib/metadata';
 
-export const revalidate = 300;
+export const dynamic = 'force-dynamic';
 
 /** Extract h2/h3 headings from HTML and inject id attributes for TOC */
 function processContent(

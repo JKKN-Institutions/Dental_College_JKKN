@@ -7,7 +7,7 @@ import GalleryCarousel, { GalleryImage } from '@/components/GalleryCarousel';
 import StructuredData from '@/components/StructuredData';
 import { generateSpeakableWebPageSchema } from '@/lib/metadata';
 
-export const revalidate = 60;
+export const dynamic = 'force-dynamic';
 
 export const metadata: Metadata = {
   title: 'Campus Gallery | JKKN Dental College & Hospital Photos',

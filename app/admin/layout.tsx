@@ -4,6 +4,8 @@ import AdminSidebar from './AdminSidebar';
 import ToastProvider from './ToastProvider';
 import { AdminCollegeProvider } from './AdminCollegeContext';
 
+export const dynamic = 'force-dynamic';
+
 export default async function AdminLayout({ children }: { children: React.ReactNode }) {
   const supabase = await createClient();
   let user = null;
