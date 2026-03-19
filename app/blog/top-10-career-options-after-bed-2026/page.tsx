@@ -30,7 +30,7 @@ export default function BlogDetailPage() {
         items={[
           { name: 'Home', url: 'https://dental.jkkn.ac.in/' },
           { name: 'Blog', url: 'https://dental.jkkn.ac.in/blog/' },
-          { name: 'Top 10 Career Options After B.Ed 2026' },
+          { name: 'Top 10 Career Options After B.Ed 2026', url: 'https://dental.jkkn.ac.in/blog/top-10-career-options-after-bed-2026/' },
         ]}
       />
       <StructuredData data={speakableSchema} />

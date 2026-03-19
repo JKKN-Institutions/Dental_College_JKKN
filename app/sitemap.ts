@@ -193,5 +193,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ].map(entry => ({
     ...entry,
     url: entry.url.endsWith('/') ? entry.url : `${entry.url}/`,
-  }))
+  })) as MetadataRoute.Sitemap
 }
