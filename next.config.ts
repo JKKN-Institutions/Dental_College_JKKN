@@ -3,7 +3,13 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   trailingSlash: true,
   images: {
-    remotePatterns: [],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: '*.supabase.co',
+        pathname: '/storage/v1/object/public/**',
+      },
+    ],
     formats: ['image/webp', 'image/avif'],
     deviceSizes: [640, 750, 828, 1080, 1200, 1920],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
@@ -20,7 +26,6 @@ const nextConfig: NextConfig = {
       // Trailing slash redirects (WordPress used trailing slashes)
       { source: '/bds/', destination: '/academics/details-of-academic-programs/bds', permanent: true },
       { source: '/mds/', destination: '/academics/details-of-academic-programs/mds', permanent: true },
-      { source: '/gallery/', destination: '/gallery', permanent: true },
       { source: '/contact/', destination: '/contact', permanent: true },
       { source: '/iqac/', destination: '/iqac', permanent: true },
       { source: '/alumni/', destination: '/alumni', permanent: true },
@@ -53,7 +58,7 @@ const nextConfig: NextConfig = {
           },
           {
             key: 'Content-Security-Policy',
-            value: "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com https://connect.facebook.net https://*.facebook.net; script-src-elem 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://connect.facebook.net https://*.facebook.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://www.google-analytics.com https://*.supabase.co https://www.facebook.com https://*.facebook.com; frame-src 'self' https://www.google.com; object-src 'none';",
+            value: "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com https://connect.facebook.net https://*.facebook.net; script-src-elem 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://connect.facebook.net https://*.facebook.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: blob: https:; connect-src 'self' https://www.google-analytics.com https://*.supabase.co https://www.facebook.com https://*.facebook.com; frame-src 'self' https://www.google.com; object-src 'none';",
           },
           {
             key: 'Referrer-Policy',
@@ -274,7 +279,6 @@ const nextConfig: NextConfig = {
 
       // Top-level pages
       { source: '/iqac', destination: '/iqac' },
-      { source: '/gallery', destination: '/gallery' },
       { source: '/contact', destination: '/contact' },
     ];
   },

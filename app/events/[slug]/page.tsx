@@ -69,7 +69,7 @@ export default async function EventDetailPage({ params }: Props) {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 py-10 sm:py-14">
         {/* Back link */}
         <Link
-          href="/#events"
+          href="/"
           className="inline-flex items-center gap-1.5 text-sm text-[#006837] font-semibold mb-6 hover:underline"
         >
           <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
