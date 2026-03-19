@@ -3,11 +3,11 @@ import { Metadata } from 'next';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
 export const metadata: Metadata = {
-  title: 'NIRF Overall Ranking 2025 | JKKN Dental College National Position',
+  title: 'NIRF Overall Ranking 2025 | JKKN Dental College Position',
   description: 'View JKKN Dental College NIRF 2025 overall ranking report. Check our comprehensive national institutional ranking score. Download official NIRF 2025 data.',
   keywords: 'NIRF 2025 overall, overall ranking, national ranking 2025, NIRF score, college ranking',
   openGraph: {
-    title: 'NIRF Overall Ranking 2025 | JKKN Dental College National Position',
+    title: 'NIRF Overall Ranking 2025 | JKKN Dental College Position',
     description: 'View JKKN Dental College NIRF 2025 overall ranking report. Check our comprehensive national institutional ranking score. Download official NIRF 2025 data.',
     url: 'https://dental.jkkn.ac.in/accreditation/nirf/nirf-2025/overall/',
     type: 'website',

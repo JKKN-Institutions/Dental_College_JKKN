@@ -7,11 +7,11 @@ import StructuredData from '@/components/StructuredData';
 import { generateBreadcrumbSchema, generateWebPageSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
-  title: 'Seminar Hall - Modern Conference Facility at JKKN Dental College',
+  title: 'Seminar Hall - Conference Facility at JKKN Dental College',
   description: 'JKKN seminar hall features high-tech AV equipment, air conditioning, ergonomic seating, high-speed WiFi, and expert technical support for presentations.',
   keywords: 'seminar hall JKKN, conference facility dental college, presentation hall, academic seminars, workshop venue, AV equipment, event space',
   openGraph: {
-    title: 'Seminar Hall - Modern Conference Facility at JKKN Dental College',
+    title: 'Seminar Hall - Conference Facility at JKKN Dental College',
     description: 'JKKN seminar hall features high-tech AV equipment, air conditioning, ergonomic seating, high-speed WiFi, and expert technical support for presentations.',
     url: 'https://dental.jkkn.ac.in/facilities/seminar-hall/',
     type: 'website',
@@ -22,13 +22,13 @@ export const metadata: Metadata = {
 export default function SeminarHall() {
   const breadcrumbSchema = generateBreadcrumbSchema('/facilities/seminar-hall');
   const webPageSchema = generateWebPageSchema({
-    title: 'Seminar Hall - Modern Conference Facility at JKKN Dental College',
+    title: 'Seminar Hall - Conference Facility at JKKN Dental College',
     description: 'JKKN seminar hall features high-tech AV equipment, air conditioning, ergonomic seating, high-speed WiFi, and expert technical support for presentations.',
     url: 'https://dental.jkkn.ac.in/facilities/seminar-hall/',
     dateModified: '2026-03-18',
   });
   const speakableSchema = generateSpeakableWebPageSchema({
-    title: 'Seminar Hall - Modern Conference Facility at JKKN Dental College',
+    title: 'Seminar Hall - Conference Facility at JKKN Dental College',
     description: 'JKKN seminar hall features high-tech AV equipment, air conditioning, ergonomic seating, high-speed WiFi, and expert technical support for presentations.',
     url: 'https://dental.jkkn.ac.in/facilities/seminar-hall/',
     speakableCssSelectors: ['h1', '.hero-description', 'article p'],

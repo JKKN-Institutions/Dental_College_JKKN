@@ -7,11 +7,11 @@ import StructuredData from '@/components/StructuredData';
 import { generateBreadcrumbSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
-  title: 'Admission Process 2025 | Step-by-Step Guide | JKKN Dental College',
+  title: 'Admission Process 2026 | JKKN Dental College',
   description: 'Complete admission process for BDS & MDS programs at JKKN Dental College. NEET eligibility, counseling steps, document requirements, fee structure, and important dates for 2025 admissions.',
   keywords: 'admission process, how to apply, JKKN admission, BDS admission process, MDS admission process, NEET counseling, admission steps, dental college admission',
   openGraph: {
-    title: 'Admission Process 2025 | Step-by-Step Guide | JKKN Dental College',
+    title: 'Admission Process 2026 | JKKN Dental College',
     description: 'Complete admission process for BDS & MDS programs at JKKN Dental College. NEET eligibility, counseling steps, document requirements, fee structure, and important dates for 2025 admissions.',
     url: 'https://dental.jkkn.ac.in/admission-process/',
     type: 'website',
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 
 const breadcrumbSchema = generateBreadcrumbSchema('/admission-process/');
 const speakableSchema = generateSpeakableWebPageSchema({
-  title: 'Admission Process 2025 | Step-by-Step Guide | JKKN Dental College',
+  title: 'Admission Process 2026 | JKKN Dental College',
   description: 'Complete admission process for BDS & MDS programs at JKKN Dental College. NEET eligibility, counseling steps, document requirements, fee structure, and important dates for 2025 admissions.',
   url: 'https://dental.jkkn.ac.in/admission-process/',
   speakableCssSelectors: ['h1', '.hero-description', 'article p'],

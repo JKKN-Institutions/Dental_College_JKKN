@@ -84,6 +84,53 @@ const structuredData = {
   ]
 };
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the BDS fee structure at JKKN Dental College?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The BDS (Bachelor of Dental Surgery) fee at JKKN Dental College is approximately Rs. 3,00,000 to Rs. 5,00,000 per year for the tuition fee component. Additional fees include hostel charges (optional), library fee, lab and clinical fee, caution deposit (refundable), and university examination fees. Fees are regulated by the fee fixation committee and subject to annual revision. Contact the admissions office at +91 9345855001 or dental@jkkn.ac.in for exact current fee details."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are there any hidden charges beyond the tuition fee at JKKN Dental College?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No hidden charges are applicable at JKKN Dental College. Beyond tuition fees, the standard fee components include library fee, lab and clinical fee, university examination fee (as per university norms), and caution/library/lab deposits (all refundable upon course completion). Hostel charges are separate and optional. All applicable fees are communicated transparently at the time of admission."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is fee payment available in installments at JKKN Dental College?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, JKKN Dental College offers installment-based fee payment options. Semester-wise payment plans and custom payment arrangements are available. No processing fee is charged for installment payments. Students and parents can contact the admissions office at +91 9345855001 or email dental@jkkn.ac.in to discuss available installment plans based on their specific circumstances."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the MDS fee structure at JKKN Dental College?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The MDS (Master of Dental Surgery) annual tuition fee at JKKN Dental College is approximately Rs. 8,00,000 to Rs. 15,00,000 per year depending on the specialization. MDS programs available include Periodontics (4 seats), Orthodontics and Dentofacial Orthopedics (4 seats), Prosthodontics Crown and Bridge (4 seats), Conservative Dentistry and Endodontics (3 seats), and Oral Medicine and Radiology (3 seats). Additional one-time fees include admission fee, caution deposit, library deposit, and lab deposit (all refundable). Contact admissions for current fee details."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are there scholarship options to reduce fees at JKKN Dental College?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, JKKN Dental College offers multiple scholarship options to eligible students. These include merit-based scholarships (based on NEET scores and academic performance), sports quota scholarships (for state-level tournament winners), single parent scholarships, JKKN student scholarships, and government scholarships for SC/ST, OBC, and minority communities as per government norms. Scholarship amounts are directly reduced from tuition fees. Visit the scholarship policy page or contact the admissions office for eligibility details."
+      }
+    }
+  ]
+};
+
 export default function FeesStructure() {
   const breadcrumbSchema = generateBreadcrumbSchema('/fees-structure');
   const webPageSchema = generateWebPageSchema({
@@ -104,6 +151,7 @@ export default function FeesStructure() {
       <StructuredData data={breadcrumbSchema} />
       <StructuredData data={webPageSchema} />
       <StructuredData data={speakableSchema} />
+      <StructuredData data={faqSchema} />
       {/* Add JSON-LD Structured Data */}
       <script
         type="application/ld+json"

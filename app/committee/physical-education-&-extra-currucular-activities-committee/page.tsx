@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 export default function PhysicalEducationExtraCurricularCommittee() {
   const breadcrumbSchema = generateBreadcrumbSchema('/committee/physical-education-&-extra-currucular-activities-committee');
   const webPageSchema = generateWebPageSchema({
-    title: 'Physical Education & Extracurricular Activities Committee - JKKN Dental College',
+    title: 'Physical Education Committee | JKKN Dental',
     description: 'Promoting sports, physical fitness, and extracurricular activities. View committee members fostering holistic student development.',
     url: 'https://dental.jkkn.ac.in/committee/physical-education-&-extra-currucular-activities-committee/',
     dateModified: '2026-03-18',

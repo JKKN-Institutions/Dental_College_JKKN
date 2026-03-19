@@ -14,6 +14,53 @@ export const metadata = generatePageMetadata({
   dateModified: '2025-02-13'
 });
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the contact number of JKKN Dental College?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The main contact number for JKKN Dental College & Hospital is +91 93458 55001. For admission enquiries, call or email admissions@jkkn.ac.in. For hospital and patient care, call +91 93458 55002 or email hospital@jkkn.ac.in. General enquiries can be sent to dental@jkkn.ac.in. Office hours are Monday to Saturday, 9:00 AM to 5:00 PM."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where is JKKN Dental College located?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "JKKN Dental College & Hospital is located at Natarajapuram, NH-544 (Salem to Coimbatore National Highway), Komarapalayam (Taluk), Namakkal (District), Tamil Nadu - 638183, India. The campus is situated on the Salem-Coimbatore national highway, approximately 3 km from Komarapalayam Bus Stand, 25 km from Erode Junction railway station, and 50 km from Salem Junction."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the visiting hours for JKKN Dental Hospital?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "JKKN Dental Hospital OPD operates Monday to Saturday from 9:00 AM to 6:00 PM. The hospital provides 500+ daily patient treatments with 200+ dental chairs. Emergency dental services are available 24/7. The college administrative office is open Monday to Saturday, 9:00 AM to 5:00 PM. The campus is closed on Sundays and public holidays except for emergency services."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How to reach JKKN Dental College from Salem?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "JKKN Dental College is approximately 50 km from Salem and can be reached in about 1 hour by road. The college is on NH-544 (Salem-Coimbatore National Highway). From Salem, take the highway towards Coimbatore and look for JKKN Dental College near Komarapalayam. Regular bus services operate between Salem and Komarapalayam. The nearest railway station from the college is Erode Junction (25 km, about 30 minutes away)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is there a helpline for admission queries at JKKN Dental College?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, JKKN Dental College has a dedicated admissions helpline at +91 93458 55001. You can also email admissions@jkkn.ac.in for admission-related queries about BDS and MDS programs. Online applications are accepted at https://admission.jkkn.ac.in. The admissions team is available Monday to Saturday, 9:00 AM to 5:00 PM to answer questions about NEET eligibility, fee structure, scholarships, hostel facilities, and the application process."
+      }
+    }
+  ]
+};
+
 export default function Contact() {
   // Generate structured data for this page
   const breadcrumbSchema = generateBreadcrumbSchema('/contact');
@@ -49,6 +96,7 @@ export default function Contact() {
       <StructuredData data={webPageSchema} />
       <StructuredData data={contactBreadcrumbSchema} />
       <StructuredData data={speakableSchema} />
+      <StructuredData data={faqSchema} />
       <Header />
 
       {/* Page Content */}

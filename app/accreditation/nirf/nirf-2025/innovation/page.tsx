@@ -3,11 +3,11 @@ import { Metadata } from 'next';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
 export const metadata: Metadata = {
-  title: 'NIRF Innovation Ranking 2025 | JKKN Dental College Innovation Score',
+  title: 'NIRF Innovation Ranking 2025 | JKKN Dental',
   description: 'View JKKN Dental College NIRF 2025 innovation ranking. Check our innovation & entrepreneurship score in national ranking. Download NIRF innovation report.',
   keywords: 'NIRF innovation 2025, innovation ranking, entrepreneurship score, NIRF 2025, innovation framework',
   openGraph: {
-    title: 'NIRF Innovation Ranking 2025 | JKKN Dental College Innovation Score',
+    title: 'NIRF Innovation Ranking 2025 | JKKN Dental',
     description: 'View JKKN Dental College NIRF 2025 innovation ranking. Check our innovation & entrepreneurship score in national ranking. Download NIRF innovation report.',
     url: 'https://dental.jkkn.ac.in/accreditation/nirf/nirf-2025/innovation/',
     type: 'website',

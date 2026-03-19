@@ -21,7 +21,7 @@ import {
 // ===== SEO METADATA =====
 export const metadata: Metadata = {
   title:
-    "Dental Surgery Assistant Course | 6-Month Certificate | JKKN Dental College",
+    "Dental Surgery Assistant Course | JKKN Dental College",
   description:
     "Become a Certified Dental Surgery Assistant in 6 months at JKKN Dental College, Namakkal. Hands-on training in 250+ chair hospital. \u20B925,000 fee. Apply before April 28, 2026.",
   keywords:
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     canonical: "https://dental.jkkn.ac.in/dental-surgery-assistant-course/",
   },
   openGraph: {
-    title: "6-Month Dental Surgery Assistant Course | JKKN Dental College",
+    title: "DSA 6-Month Certificate Course | JKKN Dental College",
     description:
       "Hands-on training in 250+ chair hospital. Start earning \u20B98,000\u201312,000/month. Limited seats. Apply now!",
     url: "https://dental.jkkn.ac.in/dental-surgery-assistant-course/",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "6-Month Dental Surgery Assistant Course | JKKN Dental College",
+    title: "DSA 6-Month Certificate Course | JKKN Dental College",
     description:
       "Hands-on training in 250+ chair hospital. Start earning \u20B98,000\u201312,000/month. Limited seats. Apply now!",
   },
@@ -299,7 +299,7 @@ const localBusinessSchema = {
 // ===== PAGE COMPONENT =====
 export default function DSACoursePage() {
   const speakableSchema = generateSpeakableWebPageSchema({
-    title: 'Dental Surgery Assistant Course | 6-Month Certificate | JKKN Dental College',
+    title: 'Dental Surgery Assistant Course | JKKN Dental College',
     description: 'Become a Certified Dental Surgery Assistant in 6 months at JKKN Dental College, Namakkal. Hands-on training in 250+ chair hospital. ₹25,000 fee. Apply before April 28, 2026.',
     url: 'https://dental.jkkn.ac.in/dental-surgery-assistant-course/',
     speakableCssSelectors: ['h1', '.hero-description', 'article p'],

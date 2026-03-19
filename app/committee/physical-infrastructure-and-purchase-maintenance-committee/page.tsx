@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 export default function PhysicalInfrastructureCommittee() {
   const breadcrumbSchema = generateBreadcrumbSchema('/committee/physical-infrastructure-and-purchase-maintenance-committee');
   const webPageSchema = generateWebPageSchema({
-    title: 'Physical Infrastructure & Purchase Maintenance Committee - JKKN Dental College',
+    title: 'Infrastructure & Maintenance Committee | JKKN Dental',
     description: 'Managing campus infrastructure, maintenance, and upgrades. Ensuring modern, safe, and functional facilities for quality education.',
     url: 'https://dental.jkkn.ac.in/committee/physical-infrastructure-and-purchase-maintenance-committee/',
     dateModified: '2026-03-18',

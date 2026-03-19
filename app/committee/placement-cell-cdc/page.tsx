@@ -6,11 +6,11 @@ import StructuredData from '@/components/StructuredData';
 import { generateBreadcrumbSchema, generateWebPageSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
-  title: 'Placement Cell / CDC - Career Development Center | JKKN Dental College',
+  title: 'Placement Cell (CDC) | JKKN Dental College',
   description: 'Bridging education and employment through training, internships, and placements. Empowering students for successful careers worldwide.',
   keywords: 'placement cell, CDC, career development, campus placements, internships, aptitude training, soft skills, JKKN dental college',
   openGraph: {
-    title: 'Placement Cell / CDC - Career Development Center | JKKN Dental College',
+    title: 'Placement Cell (CDC) | JKKN Dental College',
     description: 'Bridging education and employment through training, internships, and placements. Empowering students for successful careers worldwide.',
     url: 'https://dental.jkkn.ac.in/committee/placement-cell-cdc/',
     type: 'website',
@@ -21,13 +21,13 @@ export const metadata: Metadata = {
 export default function PlacementCellCDC() {
   const breadcrumbSchema = generateBreadcrumbSchema('/committee/placement-cell-cdc');
   const webPageSchema = generateWebPageSchema({
-    title: 'Placement Cell / CDC - Career Development Center - JKKN Dental College',
+    title: 'Placement Cell (CDC) | JKKN Dental College',
     description: 'Bridging education and employment through training, internships, and placements. Empowering students for successful careers worldwide.',
     url: 'https://dental.jkkn.ac.in/committee/placement-cell-cdc/',
     dateModified: '2026-03-18',
   });
   const speakableSchema = generateSpeakableWebPageSchema({
-    title: 'Placement Cell / CDC - Career Development Center | JKKN Dental College',
+    title: 'Placement Cell (CDC) | JKKN Dental College',
     description: 'Bridging education and employment through training, internships, and placements. Empowering students for successful careers worldwide.',
     url: 'https://dental.jkkn.ac.in/committee/placement-cell-cdc/',
     speakableCssSelectors: ['h1', '.hero-description', 'article p'],

@@ -6,11 +6,11 @@ import StructuredData from '@/components/StructuredData';
 import { generateBreadcrumbSchema, generateWebPageSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
-  title: 'Health Facilities - Medical Care at JKKN Dental College Campus',
+  title: 'Health Facilities - Medical Care at JKKN Dental Campus',
   description: 'JKKN offers comprehensive health facilities including on-duty doctors, multidisciplinary dental hospital, and upcoming 100-bed multi-specialty hospital.',
   keywords: 'health facilities JKKN, campus medical care, dental emergency services, multi-specialty hospital, on-campus healthcare, student health services, medical emergency preparedness',
   openGraph: {
-    title: 'Health Facilities - Medical Care at JKKN Dental College Campus',
+    title: 'Health Facilities - Medical Care at JKKN Dental Campus',
     description: 'JKKN offers comprehensive health facilities including on-duty doctors, multidisciplinary dental hospital, and upcoming 100-bed multi-specialty hospital.',
     url: 'https://dental.jkkn.ac.in/facilities/health-facilities/',
     type: 'website',
@@ -21,13 +21,13 @@ export const metadata: Metadata = {
 export default function HealthFacilities() {
   const breadcrumbSchema = generateBreadcrumbSchema('/facilities/health-facilities');
   const webPageSchema = generateWebPageSchema({
-    title: 'Health Facilities - Medical Care at JKKN Dental College Campus',
+    title: 'Health Facilities - Medical Care at JKKN Dental Campus',
     description: 'JKKN offers comprehensive health facilities including on-duty doctors, multidisciplinary dental hospital, and upcoming 100-bed multi-specialty hospital.',
     url: 'https://dental.jkkn.ac.in/facilities/health-facilities/',
     dateModified: '2026-03-18',
   });
   const speakableSchema = generateSpeakableWebPageSchema({
-    title: 'Health Facilities - Medical Care at JKKN Dental College Campus',
+    title: 'Health Facilities - Medical Care at JKKN Dental Campus',
     description: 'JKKN offers comprehensive health facilities including on-duty doctors, multidisciplinary dental hospital, and upcoming 100-bed multi-specialty hospital.',
     url: 'https://dental.jkkn.ac.in/facilities/health-facilities/',
     speakableCssSelectors: ['h1', '.hero-description', 'article p'],

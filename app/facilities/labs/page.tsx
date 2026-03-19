@@ -19,6 +19,53 @@ export const metadata: Metadata = {
   },
 };
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What lab facilities are available at JKKN Dental College?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "JKKN Dental College has world-class dental laboratories equipped with cutting-edge technologies. Available labs include: Anatomy, Histology, Radiology and Imaging Labs; Preclinical Simulation and Digital Dentistry Labs (with CAD/CAM technology and lifelike mannequins); Prosthodontics, Restorative, Orthodontics and Endodontics Labs; Periodontics and Oral Surgery Labs; and interdisciplinary collaboration spaces. All labs are DCI approved and designed to provide hands-on clinical training from the first year of the BDS program."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How many dental chairs are there at JKKN Dental College?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "JKKN Dental College & Hospital has over 200 dental chairs, providing extensive clinical training capacity for students. The hospital serves 500+ patients daily, giving BDS and MDS students significant hands-on clinical exposure. The hospital also has 100+ beds for inpatient dental and maxillofacial care."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do students get hands-on clinical training from Year 1 at JKKN Dental College?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, JKKN Dental College provides clinical exposure from the first year of the BDS program. Students begin with preclinical lab training using simulation mannequins and advanced equipment, progressing to real patient care under faculty supervision in the attached teaching hospital. This early clinical exposure ensures students develop confidence and competence in dental procedures throughout their 5-year BDS program."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What advanced equipment is available in the labs at JKKN Dental College?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "JKKN Dental College labs are equipped with advanced dental technology including digital X-ray and 3D scanning systems for the radiology lab, CAD/CAM technology for digital dentistry and prosthodontics, simulation mannequins for preclinical practice, microscopic examination equipment for histology, instruments for endodontics, orthodontics, periodontics, and oral surgery training, and research-grade equipment for faculty and student research projects."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are the labs at JKKN Dental College DCI approved?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, JKKN Dental College & Hospital is approved by the Dental Council of India (DCI). All laboratory and clinical facilities meet DCI standards for dental education. The college is affiliated with TN Dr. MGR Medical University and maintains compliance with DCI inspection requirements for both the BDS (100 seats) and MDS programs across 5 specializations."
+      }
+    }
+  ]
+};
+
 export default function Labs() {
   const breadcrumbSchema = generateBreadcrumbSchema('/facilities/labs');
   const webPageSchema = generateWebPageSchema({
@@ -39,6 +86,7 @@ export default function Labs() {
       <StructuredData data={breadcrumbSchema} />
       <StructuredData data={webPageSchema} />
       <StructuredData data={speakableSchema} />
+      <StructuredData data={faqSchema} />
       <Header />
 
       {/* Page Content */}

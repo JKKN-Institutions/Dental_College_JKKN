@@ -19,6 +19,53 @@ export const metadata: Metadata = {
   },
 };
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What are the library timings at JKKN Dental College?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The library at JKKN Dental College is generally open during regular college hours, Monday to Saturday. Extended hours are available during examination periods. For exact current library timings, contact the library at +91 93458 55001 or visit the library in person on the JKKN campus, Komarapalayam, Namakkal, Tamil Nadu."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does the JKKN Dental College library have access to international journals?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, the JKKN Dental College library provides access to international dental journals and research publications. The library has an extensive collection of textbooks, journals, and research papers covering all dental specialties. Digital access to e-journals, e-books, and online databases is also available through the library's digital portal, keeping students and faculty updated on the latest developments in dental science."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is there a digital library facility at JKKN Dental College?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, JKKN Dental College has a digital library facility. Students and faculty can access e-books, e-journals, and multimedia materials through the library's online portal. The digital library complements the physical collection and allows access to the latest dental research and advancements. High-speed internet connectivity on campus supports seamless access to digital library resources."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How many books are available in the JKKN Dental College library?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The JKKN Dental College library maintains an extensive collection of dental textbooks, reference books, journals, and research papers covering all dental disciplines including BDS subjects, MDS specialization topics, and interdisciplinary medical sciences. For the exact and current count of library holdings, please contact the library directly at +91 93458 55001."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can students access the JKKN Dental College library during exam periods?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, JKKN Dental College library extends its access during examination periods to support students' study needs. The library provides both quiet reading spaces and collaboration zones to suit different study preferences. Students can also access digital library resources and e-learning materials online. Contact the library or admissions office at +91 93458 55001 for the specific extended exam-period timings."
+      }
+    }
+  ]
+};
+
 export default function Library() {
   const breadcrumbSchema = generateBreadcrumbSchema('/facilities/library');
   const webPageSchema = generateWebPageSchema({
@@ -39,6 +86,7 @@ export default function Library() {
       <StructuredData data={breadcrumbSchema} />
       <StructuredData data={webPageSchema} />
       <StructuredData data={speakableSchema} />
+      <StructuredData data={faqSchema} />
       <Header />
 
       {/* Page Content */}

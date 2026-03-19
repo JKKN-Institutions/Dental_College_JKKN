@@ -6,11 +6,11 @@ import StructuredData from '@/components/StructuredData';
 import { generateBreadcrumbSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
-  title: 'Scholarship Policy - JKKN Dental College Admission & Financial Aid',
+  title: 'Scholarships & Aid | JKKN Dental College',
   description: 'Explore JKKN Dental College scholarship programs for academic excellence, sports achievements, and special circumstances. Apply for financial aid.',
   keywords: 'dental college scholarship, JKKN scholarship policy, academic scholarship, sports quota scholarship, single parent scholarship, NEET scholarship, financial aid',
   openGraph: {
-    title: 'Scholarship Policy - JKKN Dental College Admission & Financial Aid',
+    title: 'Scholarships & Aid | JKKN Dental College',
     description: 'Explore JKKN Dental College scholarship programs for academic excellence, sports achievements, and special circumstances. Apply for financial aid.',
     url: 'https://dental.jkkn.ac.in/admission/scholarship-policy-for-dental-college/',
     type: 'website',
@@ -18,10 +18,57 @@ export const metadata: Metadata = {
   },
 };
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What scholarships are available at JKKN Dental College?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "JKKN Dental College offers several scholarship categories: Academic Achievement Scholarships (based on rural area background and NEET mark percentage), Sports Quota Scholarships (for state-level winners or runners-up in sports including Wrestling, Volleyball, Basketball, Kho Kho, Kabaddi, and Badminton), Single Parent Scholarship, JKKN Student Scholarship, Recommendation Letter from Governing Body scholarship, Gold Medal achievement scholarship, and Government scholarships as per government norms (SC/ST, OBC, minority categories)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Who is eligible for scholarships at JKKN Dental College?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Eligibility for scholarships at JKKN Dental College varies by category. Academic Achievement Scholarships are awarded based on rural area background (villages, tribal areas, underdeveloped towns) and NEET mark percentage. Sports Quota Scholarships are for students who have achieved winner or runner-up positions in state-level tournaments. The Single Parent Scholarship requires documentation of single-parent status. Government scholarships follow standard government eligibility norms for SC/ST, OBC, and minority communities."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How to apply for a scholarship at JKKN Dental College?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "To apply for a scholarship at JKKN Dental College, approach the admission officer who will verify your eligibility and provide the application form. Fill out the form and submit it with required supporting documents. For Sports Quota Scholarships, provide documentation of sports achievements. For the Single Parent Scholarship, submit relevant proof of single-parent status. For government scholarships, apply through the appropriate government scholarship portal. Contact the admissions office at +91 9345855001 for assistance."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How is the scholarship amount awarded at JKKN Dental College?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "At JKKN Dental College, scholarship amounts are directly reduced from the student's tuition fees — meaning eligible students pay a reduced fee amount rather than receiving a cash award. Scholarship amounts vary by category. Note that scholarships at JKKN Dental are not renewable (one-time benefit). Sports Quota Scholarship recipients must additionally fulfil mandatory conditions including daily practice and participation in all tournaments."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are there government scholarships for dental students at JKKN?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, JKKN Dental College facilitates government scholarships as per government norms. Eligible students from SC/ST, OBC, and minority communities can apply for state and central government scholarship schemes. Students are advised to apply through official government scholarship portals such as the National Scholarship Portal (NSP) and Tamil Nadu state scholarship schemes. The admissions office can guide students on available government scholarship options."
+      }
+    }
+  ]
+};
+
 export default function ScholarshipPolicy() {
   const breadcrumbSchema = generateBreadcrumbSchema('/admission/scholarship-policy-for-dental-college');
   const speakableSchema = generateSpeakableWebPageSchema({
-    title: 'Scholarship Policy - JKKN Dental College Admission & Financial Aid',
+    title: 'Scholarships & Aid | JKKN Dental College',
     description: 'Explore JKKN Dental College scholarship programs for academic excellence, sports achievements, and special circumstances. Apply for financial aid.',
     url: 'https://dental.jkkn.ac.in/admission/scholarship-policy-for-dental-college/',
     speakableCssSelectors: ['h1', '.hero-description', 'article p'],
@@ -31,6 +78,7 @@ export default function ScholarshipPolicy() {
     <main>
       <StructuredData data={breadcrumbSchema} />
       <StructuredData data={speakableSchema} />
+      <StructuredData data={faqSchema} />
       <Header />
 
       {/* Page Content */}

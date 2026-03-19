@@ -4,11 +4,11 @@ import StructuredData from '@/components/StructuredData';
 import { generateBreadcrumbSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
-  title: 'Download UGC Public Disclosure - Anti Ragging Committee | JKKN Dental College',
+  title: 'UGC Public Disclosure | JKKN Anti-Ragging Committee',
   description: 'Download UGC public disclosure for anti-ragging measures at JKKN Dental College. View compliance documents and preventive measures.',
   keywords: 'UGC public disclosure, anti ragging, ragging prevention, UGC compliance, JKKN dental college, student safety, ragging free campus',
   openGraph: {
-    title: 'Download UGC Public Disclosure - Anti Ragging Committee | JKKN Dental College',
+    title: 'UGC Public Disclosure | JKKN Anti-Ragging Committee',
     description: 'Download UGC public disclosure for anti-ragging measures at JKKN Dental College. View compliance documents and preventive measures.',
     url: 'https://dental.jkkn.ac.in/committee/anti-ragging-committee/download-ugc-public-disclosure/',
     type: 'website',

@@ -6,11 +6,11 @@ import StructuredData from '@/components/StructuredData';
 import { generateBreadcrumbSchema, generateWebPageSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
-  title: 'SEDG Cell - Socio-Economically Disadvantaged Groups | JKKN Dental College',
+  title: 'SEDG Cell | JKKN Dental College',
   description: 'Supporting marginalized and economically weaker students with scholarships, mentoring, and inclusive academic opportunities as per NEP 2020.',
   keywords: 'SEDG cell, socio-economic support, disadvantaged groups, scholarships, inclusive education, NEP 2020, UGC guidelines, JKKN dental',
   openGraph: {
-    title: 'SEDG Cell - Socio-Economically Disadvantaged Groups | JKKN Dental College',
+    title: 'SEDG Cell | JKKN Dental College',
     description: 'Supporting marginalized and economically weaker students with scholarships, mentoring, and inclusive academic opportunities as per NEP 2020.',
     url: 'https://dental.jkkn.ac.in/committee/sedg-cell/',
     type: 'website',
@@ -21,13 +21,13 @@ export const metadata: Metadata = {
 export default function SEDGCell() {
   const breadcrumbSchema = generateBreadcrumbSchema('/committee/sedg-cell');
   const webPageSchema = generateWebPageSchema({
-    title: 'SEDG Cell - Socio-Economically Disadvantaged Groups - JKKN Dental College',
+    title: 'SEDG Cell | JKKN Dental College',
     description: 'Supporting marginalized and economically weaker students with scholarships, mentoring, and inclusive academic opportunities as per NEP 2020.',
     url: 'https://dental.jkkn.ac.in/committee/sedg-cell/',
     dateModified: '2026-03-18',
   });
   const speakableSchema = generateSpeakableWebPageSchema({
-    title: 'SEDG Cell - Socio-Economically Disadvantaged Groups | JKKN Dental College',
+    title: 'SEDG Cell | JKKN Dental College',
     description: 'Supporting marginalized and economically weaker students with scholarships, mentoring, and inclusive academic opportunities as per NEP 2020.',
     url: 'https://dental.jkkn.ac.in/committee/sedg-cell/',
     speakableCssSelectors: ['h1', '.hero-description', 'article p'],

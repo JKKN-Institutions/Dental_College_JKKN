@@ -7,11 +7,11 @@ import StructuredData from '@/components/StructuredData';
 import { generateBreadcrumbSchema, generateWebPageSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
-  title: 'State-of-the-Art Auditorium - JKKN Dental College Campus Facility',
+  title: 'Auditorium | JKKN Dental Campus',
   description: 'JKKN auditorium features advanced AV technology, superior acoustics, unobstructed seating, and customized lighting for lectures and cultural performances.',
   keywords: 'JKKN auditorium, dental college auditorium, campus auditorium facility, state-of-the-art auditorium, event venue JKKN, cultural performances, academic lectures',
   openGraph: {
-    title: 'State-of-the-Art Auditorium - JKKN Dental College Campus Facility',
+    title: 'Auditorium | JKKN Dental Campus',
     description: 'JKKN auditorium features advanced AV technology, superior acoustics, unobstructed seating, and customized lighting for lectures and cultural performances.',
     url: 'https://dental.jkkn.ac.in/facilities/auditorium/',
     type: 'website',
@@ -22,13 +22,13 @@ export const metadata: Metadata = {
 export default function Auditorium() {
   const breadcrumbSchema = generateBreadcrumbSchema('/facilities/auditorium');
   const webPageSchema = generateWebPageSchema({
-    title: 'State-of-the-Art Auditorium - JKKN Dental College Campus Facility',
+    title: 'Auditorium | JKKN Dental Campus',
     description: 'JKKN auditorium features advanced AV technology, superior acoustics, unobstructed seating, and customized lighting for lectures and cultural performances.',
     url: 'https://dental.jkkn.ac.in/facilities/auditorium/',
     dateModified: '2026-03-18',
   });
   const speakableSchema = generateSpeakableWebPageSchema({
-    title: 'State-of-the-Art Auditorium - JKKN Dental College Campus Facility',
+    title: 'Auditorium | JKKN Dental Campus',
     description: 'JKKN auditorium features advanced AV technology, superior acoustics, unobstructed seating, and customized lighting for lectures and cultural performances.',
     url: 'https://dental.jkkn.ac.in/facilities/auditorium/',
     speakableCssSelectors: ['h1', '.hero-description', 'article p'],

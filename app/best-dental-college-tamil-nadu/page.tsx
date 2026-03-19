@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
-  title: "Best Dental Colleges in Tamil Nadu 2026 — Rankings, Fees & Placement Comparison",
+  title: "Best Dental Colleges Tamil Nadu 2026 | Rankings & Fees",
   description:
     "Compare best dental colleges in Tamil Nadu 2026. Rankings with fees, NAAC grade, seats & placements. JKKN Dental tops with 100% placement support.",
   keywords:
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     canonical: "https://dental.jkkn.ac.in/best-dental-college-tamil-nadu/",
   },
   openGraph: {
-    title: "Best Dental Colleges in Tamil Nadu 2026 — Rankings, Fees & Placement Comparison",
+    title: "Best Dental Colleges Tamil Nadu 2026 | Rankings & Fees",
     description:
       "Compare top dental colleges in Tamil Nadu by NIRF rank, fees, NAAC grade, seats, and placements. Updated 2026 data.",
     url: "https://dental.jkkn.ac.in/best-dental-college-tamil-nadu/",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Best Dental Colleges in Tamil Nadu 2026 — Rankings, Fees & Placement Comparison",
+    title: "Best Dental Colleges Tamil Nadu 2026 | Rankings & Fees",
     description:
       "Compare top dental colleges in Tamil Nadu by NIRF rank, fees, NAAC grade, seats, and placements. Updated 2026 data.",
   },
