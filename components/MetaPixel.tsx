@@ -2,10 +2,9 @@
 
 import Script from 'next/script'
 
-const META_PIXEL_ID = process.env.NEXT_PUBLIC_META_PIXEL_ID
+const META_PIXEL_ID = '3384501078534276'
 
 export function MetaPixel() {
-  if (!META_PIXEL_ID) return null
 
   return (
     <>
