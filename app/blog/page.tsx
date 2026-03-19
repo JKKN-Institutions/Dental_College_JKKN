@@ -48,18 +48,6 @@ export default async function BlogPage() {
     <div className="min-h-screen bg-[#FBFBEE]">
       <Header />
 
-      {/* Blog Page H1 */}
-      <section className="bg-[#FBFBEE] px-4 sm:px-6 lg:px-8 pt-10 pb-4">
-        <div className="max-w-7xl mx-auto">
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#006837]">
-            JKKN Dental College Blog
-          </h1>
-          <p className="text-gray-600 text-sm sm:text-base mt-2">
-            Latest news, insights & guides from JKKN Dental College & Hospital
-          </p>
-        </div>
-      </section>
-
       {/* ── Campus News (Admin Posts) Section — shown only when posts exist ── */}
       {hasCampusPosts && (
         <section className="bg-[#FBFBEE] border-b border-gray-100 px-4 sm:px-6 lg:px-8 py-10">
