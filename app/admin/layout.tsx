@@ -42,7 +42,7 @@ export default async function AdminLayout({ children }: { children: React.ReactN
 
   return (
     <AdminCollegeProvider collegeId={currentCollegeId}>
-      <div className="min-h-screen bg-gray-50 flex">
+      <div className="min-h-screen bg-gray-50 flex -mt-16 xs:-mt-18 sm:-mt-20 lg:-mt-24 xl:-mt-28">
         <ToastProvider />
         {user && (
           <AdminSidebar
@@ -54,7 +54,6 @@ export default async function AdminLayout({ children }: { children: React.ReactN
           />
         )}
         <main className={`flex-1 ${user ? 'lg:ml-64' : ''} min-h-screen`}>
-          {user && <div className="h-14 lg:hidden" aria-hidden="true" />}
           {children}
         </main>
       </div>
