@@ -10,6 +10,53 @@ import {
   generateSpeakableWebPageSchema
 } from '@/lib/metadata';
 
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'What is the vision of JKKN Dental College?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'The vision of JKKN Dental College is to be a leading global innovative solution provider for the ever-changing needs of society, delivering excellence in dental education, research, and healthcare.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What is the mission of JKKN Dental College?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'The mission of JKKN Dental College is to help learners become great dentists through top-quality education, research, and clinical skill development. The college facilitates understanding of bio convergence to improve oral healthcare and empowers graduates to become leaders in their field.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'How long has JKKN Dental College been providing dental education?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'JKKN Dental College is part of JKKN Institutions, founded in 1952 — over 74 years of committed service to quality education in Tamil Nadu, India.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Is JKKN Dental College accredited?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes. JKKN Dental College is affiliated to TN Dr. MGR Medical University and holds NAAC A Grade accreditation. The college is approved by the Dental Council of India (DCI).',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Where is JKKN Dental College located?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'JKKN Dental College & Hospital is located at Natarajapuram, NH-544 (Salem-Coimbatore Highway), Komarapalayam, Namakkal, Tamil Nadu 638183. It is conveniently accessible from Salem, Erode, Namakkal, and Coimbatore.',
+      },
+    },
+  ],
+};
+
 export const metadata = generatePageMetadata({
   title: 'Vision & Mission | JKKN Dental College Strategic Goals',
   description: 'Discover JKKN Dental College vision and mission. Leading global innovator in dental education, research, and clinical skill development. Learn about our commitment to excellence.',
@@ -46,6 +93,7 @@ export default function VisionAndMission() {
       <StructuredData data={webPageSchema} />
       <StructuredData data={aboutPageSchema} />
       <StructuredData data={speakableSchema} />
+      <StructuredData data={faqSchema} />
       <Header />
 
       {/* Page Content */}

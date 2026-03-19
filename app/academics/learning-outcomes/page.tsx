@@ -6,6 +6,53 @@ import { generateBreadcrumbSchema, generateSpeakableWebPageSchema } from '@/lib/
 import StructuredData from '@/components/StructuredData';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'What are the key learning outcomes of the BDS program at JKKN Dental College?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'BDS graduates from JKKN Dental College acquire critical thinking and problem-solving abilities, comprehensive patient care competencies, scientific investigation skills, and proficiency in diagnosing and managing a wide range of dental disorders. They are also trained in pain control, oral health awareness, and evidence-based healthcare practice.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What does the MDS program at JKKN Dental College prepare students for?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'The MDS program at JKKN Dental College prepares postgraduate students to apply scientific knowledge and expertise in their chosen dental specialty. Graduates are equipped for advanced clinical practice, research, academic careers, and leadership in their respective specializations including Periodontics, Orthodontics, Prosthodontics, Conservative Dentistry, and Oral Medicine.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'How many seats are available in the BDS program?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'JKKN Dental College offers 100 seats in the BDS (Bachelor of Dental Surgery) program. The course spans 5 years including 4 years of academic training and 1 year of compulsory rotatory internship.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What university is JKKN Dental College affiliated to?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'JKKN Dental College & Hospital is affiliated to TN Dr. MGR Medical University (The Tamil Nadu Dr. M.G.R. Medical University), Chennai, and its programs are approved by the Dental Council of India (DCI).',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What clinical exposure do BDS students get at JKKN Dental College?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'BDS students at JKKN Dental College receive extensive clinical training from early in their program. The college operates a hospital with 200+ dental chairs, 100+ beds, and handles 500+ daily patients, providing students with broad and diverse hands-on clinical experience across all dental disciplines.',
+      },
+    },
+  ],
+};
+
 export const metadata: Metadata = {
   title: 'Learning Outcomes - BDS & MDS Programs - JKKN Dental College',
   description: 'Explore comprehensive learning outcomes for BDS and MDS programs at JKKN Dental College. Quality-focused dental education objectives. Discover more.',
@@ -37,6 +84,7 @@ export default function LearningOutcomes() {
       ]} />
       <StructuredData data={breadcrumbSchema} />
       <StructuredData data={speakableSchema} />
+      <StructuredData data={faqSchema} />
       <Header />
 
       {/* Page Content */}

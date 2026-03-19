@@ -1,5 +1,18 @@
+import type { Metadata } from 'next';
 import StructuredData from '@/components/StructuredData';
 import { generateSpeakableWebPageSchema } from '@/lib/metadata';
+
+export const metadata: Metadata = {
+  title: 'Facilities at JKKN Dental College | Campus & Hospital',
+  description: 'World-class facilities at JKKN Dental College — 200+ dental chairs, digital labs, hostel, library, sports complex, Wi-Fi campus. Komarapalayam, Tamil Nadu.',
+  openGraph: {
+    title: 'Facilities at JKKN Dental College | Campus & Hospital',
+    description: 'World-class facilities at JKKN Dental College — 200+ dental chairs, digital labs, hostel, library, sports complex, Wi-Fi campus. Komarapalayam, Tamil Nadu.',
+    url: 'https://dental.jkkn.ac.in/facilities/',
+    type: 'website',
+    siteName: 'JKKN Dental College & Hospital',
+  },
+};
 
 // Schema #4f: BreadcrumbList – /facilities Page
 const facilitiesBreadcrumbSchema = {

@@ -1,4 +1,17 @@
+import type { Metadata } from 'next';
 import StructuredData from '@/components/StructuredData';
+
+export const metadata: Metadata = {
+  title: 'MDS Specializations at JKKN Dental College | 5 Streams',
+  description: 'MDS at JKKN Dental College — 5 specializations: Periodontics, Orthodontics, Prosthodontics, Conservative Dentistry & Oral Medicine. NEET-MDS, Tamil Nadu.',
+  openGraph: {
+    title: 'MDS Specializations at JKKN Dental College | 5 Streams',
+    description: 'MDS at JKKN Dental College — 5 specializations: Periodontics, Orthodontics, Prosthodontics, Conservative Dentistry & Oral Medicine. NEET-MDS, Tamil Nadu.',
+    url: 'https://dental.jkkn.ac.in/mds/',
+    type: 'website',
+    siteName: 'JKKN Dental College & Hospital',
+  },
+};
 
 // Schema #3b: Course – MDS Periodontics
 const mdsPerioSchema = {

@@ -8,6 +8,53 @@ import { generateBreadcrumbSchema, generateSpeakableWebPageSchema } from '@/lib/
 import StructuredData from '@/components/StructuredData';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'What academic programs does JKKN Dental College offer?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'JKKN Dental College offers two DCI-approved programs: BDS (Bachelor of Dental Surgery) — a 5-year undergraduate program with 100 seats — and MDS (Master of Dental Surgery) — a 3-year postgraduate program with 5 specializations including Periodontics, Orthodontics, Prosthodontics, Conservative Dentistry & Endodontics, and Oral Medicine & Radiology.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'How many seats are available in the BDS program at JKKN Dental College?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'The BDS program at JKKN Dental College has 100 seats. The 5-year program includes 4 years of academic and clinical training followed by 1 year of compulsory rotatory internship.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What are the MDS specializations offered at JKKN Dental College?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'JKKN Dental College offers 5 MDS specializations: Periodontics (4 seats), Orthodontics & Dentofacial Orthopedics (4 seats), Prosthodontics Crown & Bridge (4 seats), Conservative Dentistry & Endodontics (3 seats), and Oral Medicine & Radiology (3 seats) — totaling 18 MDS seats.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What is the eligibility requirement for BDS admission at JKKN?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Admission to the BDS program at JKKN Dental College requires a valid NEET-UG score. The college is affiliated to TN Dr. MGR Medical University and follows DCI-prescribed admission norms.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What is the placement rate for dental graduates from JKKN?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'JKKN Dental College maintains a 92%+ placement rate across all programs. Graduates are placed in leading hospitals, dental clinics, and healthcare organizations in India and internationally, including opportunities in the UK (NHS), UAE, and Saudi Arabia.',
+      },
+    },
+  ],
+};
+
 export const metadata: Metadata = {
   title: 'Academics - JKKN Dental College & Hospital',
   description: 'Explore academic programs at JKKN Dental College. BDS undergraduate program, 5 MDS postgraduate specializations, comprehensive curriculum, and excellence in dental education.',
@@ -38,6 +85,7 @@ export default function Academics() {
       ]} />
       <StructuredData data={breadcrumbSchema} />
       <StructuredData data={speakableSchema} />
+      <StructuredData data={faqSchema} />
       <Header />
 
       {/* Hero Section */}

@@ -208,6 +208,15 @@ export default function BlogDetailPage() {
           "cssSelector": ["h1", ".hero-description", "article p"]
         }
       }) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://dental.jkkn.ac.in/" },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://dental.jkkn.ac.in/blog/" },
+          { "@type": "ListItem", "position": 3, "name": "B.Ed Admission 2026 Tamil Nadu" }
+        ]
+      }) }} />
       <Header />
 
       {/* ── Article Header ── */}
