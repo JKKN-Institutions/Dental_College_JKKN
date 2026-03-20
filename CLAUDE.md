@@ -132,7 +132,7 @@ npm run lint     # ESLint check
 
 ### Main Sections
 - `/about/` — Vision, approvals, accreditation, annual reports
-- `/academics/` — BDS, MDS (9 specializations), syllabi, calendars, faculty
+- `/academics/` — BDS, MDS (5 specializations), syllabi, calendars, faculty
 - `/accreditation/` — NAAC, NIRF (2024, 2025)
 - `/administration/` — Trust, management, governing body, committees
 - `/admission/` — Process, fees, scholarships, refund policy
@@ -219,7 +219,7 @@ npm run lint     # ESLint check
 ### Institution Data
 - **Name:** JKKN Dental College & Hospital
 - **Affiliation:** TN Dr. MGR Medical University
-- **Programs:** BDS (100 seats) + MDS (9 specializations)
+- **Programs:** BDS (100 seats) + MDS (5 specializations)
 - **Hospital:** 200+ dental chairs, 100+ beds, 500+ daily patients
 - **Contact:** +91 9345855001 | info@jkkn.ac.in
 - **Address:** Natarajapuram, NH-544, Komarapalayam, Namakkal, TN 638183
