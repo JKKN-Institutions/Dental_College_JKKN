@@ -19,9 +19,9 @@ export default function WhyChooseJKKN() {
                   </div>
                 </div>
                 <div>
-                  <h4 className="text-lg sm:text-xl font-bold mb-1 sm:mb-2">JKKN Group: 57+ Years of Educational Legacy</h4>
+                  <h4 className="text-lg sm:text-xl font-bold mb-1 sm:mb-2">JKKN Group: 74+ Years of Educational Legacy</h4>
                   <p className="text-gray-300 leading-relaxed text-sm sm:text-base">
-                    Part of JKKN Institutions, founded in 1969, with a commitment to progressive education. #JKKN100
+                    Part of JKKN Institutions, founded in 1952, with a commitment to progressive education. #JKKN100
                   </p>
                 </div>
               </div>
