@@ -336,23 +336,44 @@ export default function Home() {
   };
 
   // Principal/Dean Person Schema
-  // [UPDATE: Add actual principal name, qualifications, and uncomment this block]
-  // const principalSchema = {
-  //   "@context": "https://schema.org",
-  //   "@type": "Person",
-  //   "name": "Dr. [Principal Name]",
-  //   "jobTitle": "Principal & Dean",
-  //   "worksFor": {
-  //     "@type": "CollegeOrUniversity",
-  //     "name": "JKKN Dental College & Hospital",
-  //     "url": "https://dental.jkkn.ac.in/"
-  //   },
-  //   "alumniOf": "Tamil Nadu Dr. MGR Medical University",
-  //   "hasCredential": {
-  //     "@type": "EducationalOccupationalCredential",
-  //     "credentialCategory": "MDS, PhD"
-  //   }
-  // };
+  const principalSchema = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Dr. Dhanasekar Balakrishnan",
+    "jobTitle": "Principal",
+    "worksFor": {
+      "@type": "CollegeOrUniversity",
+      "name": "JKKN Dental College & Hospital",
+      "url": "https://dental.jkkn.ac.in/"
+    },
+    "alumniOf": "Tamil Nadu Dr. MGR Medical University",
+    "hasCredential": [
+      {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "BDS"
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "MDS"
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "FDS RCS (England)"
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "MDTFEd (Edinburgh)"
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "MFDS RCPS (Glasgow)"
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "MFDS RCS (Edinburgh)"
+      }
+    ]
+  };
 
   // Schema #1: MedicalOrganization + Dentist
   const medicalOrgSchema = {
@@ -595,7 +616,7 @@ export default function Home() {
       <StructuredData data={webPageSchema} />
       <StructuredData data={orgSameAsSchema} />
       {/* [UPDATE: Uncomment when principal name is confirmed] */}
-      {/* <StructuredData data={principalSchema} /> */}
+      <StructuredData data={principalSchema} />
       <StructuredData data={bdsSchema} />
       <StructuredData data={mdsSchema} />
       <StructuredData data={collegeSchema} />

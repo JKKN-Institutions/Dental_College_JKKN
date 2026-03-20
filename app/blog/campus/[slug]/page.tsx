@@ -1,3 +1,4 @@
+import { Metadata } from 'next';
 import { createClient } from '@/lib/supabase/server';
 import { notFound } from 'next/navigation';
 import Header from '@/components/Header';
@@ -8,6 +9,56 @@ import StructuredData from '@/components/StructuredData';
 import { generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const dynamic = 'force-dynamic';
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const supabase = await createClient();
+  const collegeId = process.env.NEXT_PUBLIC_COLLEGE_ID!;
+
+  const { data: post } = await supabase
+    .from('blogs')
+    .select('title, excerpt, slug, cover_image_url')
+    .eq('slug', slug)
+    .eq('college_id', collegeId)
+    .eq('is_published', true)
+    .single();
+
+  if (!post) {
+    return { title: 'Blog Post Not Found | JKKN Dental College' };
+  }
+
+  const title = `${post.title} | JKKN Dental College Blog`;
+  const description =
+    post.excerpt || `Read ${post.title} on the JKKN Dental College campus blog.`;
+  const url = `https://dental.jkkn.ac.in/blog/campus/${post.slug}/`;
+
+  return {
+    title,
+    description,
+    alternates: { canonical: url },
+    openGraph: {
+      title: post.title,
+      description,
+      url,
+      siteName: 'JKKN Dental College & Hospital',
+      type: 'article',
+      locale: 'en_IN',
+      ...(post.cover_image_url && {
+        images: [{ url: post.cover_image_url, width: 1200, height: 630, alt: post.title }],
+      }),
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: post.title,
+      description,
+      ...(post.cover_image_url && { images: [post.cover_image_url] }),
+    },
+  };
+}
 
 /** Extract h2/h3 headings from HTML and inject id attributes for TOC */
 function processContent(
