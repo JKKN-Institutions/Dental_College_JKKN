@@ -35,7 +35,7 @@ const faqSchema = {
       name: 'How long has JKKN Dental College been providing dental education?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'JKKN Dental College is part of JKKN Institutions, founded in 1952 — over 74 years of committed service to quality education in Tamil Nadu, India.',
+        text: 'JKKN Dental College was established in 1987 as part of JKKN Institutions, founded in 1952 — over 74 years of committed service to quality education in Tamil Nadu, India.',
       },
     },
     {

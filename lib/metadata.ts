@@ -503,8 +503,8 @@ export function generateLocalBusinessSchema() {
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": "11.4070",
-      "longitude": "77.7190"
+      "latitude": "11.445180",
+      "longitude": "77.726549"
     },
     "areaServed": [
       { "@type": "City", "name": "Namakkal" },

@@ -27,7 +27,7 @@ const aboutBreadcrumbSchema = {
 export default function AboutPage() {
   const speakableSchema = generateSpeakableWebPageSchema({
     title: 'About Us | JKKN Dental College & Hospital',
-    description: 'Learn about JKKN Dental College & Hospital — founded 1952, affiliated to TN Dr. MGR Medical University, offering BDS and MDS programs in Komarapalayam, Namakkal.',
+    description: 'Learn about JKKN Dental College & Hospital — established 1987, part of JKKN Institutions (since 1952). Affiliated to TN Dr. MGR Medical University, offering BDS and MDS programs in Komarapalayam, Namakkal.',
     url: 'https://dental.jkkn.ac.in/about/',
     speakableCssSelectors: ['h1', '.hero-description', 'article p'],
   });

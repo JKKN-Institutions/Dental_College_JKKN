@@ -265,6 +265,30 @@ export default function Home() {
           "@type": "Answer",
           "text": "JKKN Dental College integrates artificial intelligence across its curriculum, including AI-powered diagnostic imaging, computer-aided design and manufacturing technology, and research tools."
         }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the fee structure for BDS at JKKN Dental College?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Bachelor of Dental Surgery fees at JKKN Dental College vary by admission quota as per Tamil Nadu government regulations, with annual tuition ranging from three to five lakhs."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Where is JKKN Dental College located?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "JKKN Dental College is located on National Highway 544 in Komarapalayam, Namakkal District, Tamil Nadu, approximately thirty-five kilometres from Erode and fifty kilometres from Salem."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What are the hostel facilities at JKKN Dental College?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "JKKN Dental College provides separate hostels for boys and girls with furnished rooms, mess facilities, Wi-Fi connectivity, twenty-four-hour security, and recreational areas on campus."
+        }
       }
     ]
   };
