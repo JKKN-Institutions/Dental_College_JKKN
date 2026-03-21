@@ -531,15 +531,15 @@ export default function Home() {
       { "@type": "City", "name": "Coimbatore" },
       { "@type": "State", "name": "Tamil Nadu" }
     ],
-    // [UPDATE: Verify ratingValue and reviewCount from Google Business Profile before publishing]
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.5",
-      "bestRating": "5",
-      "worstRating": "1",
-      "ratingCount": "400",
-      "reviewCount": "400"
-    }
+    // [UPDATE: AggregateRating commented out — verify ratingValue and reviewCount from Google Business Profile before uncommenting]
+    // "aggregateRating": {
+    //   "@type": "AggregateRating",
+    //   "ratingValue": "4.5",
+    //   "bestRating": "5",
+    //   "worstRating": "1",
+    //   "ratingCount": "400",
+    //   "reviewCount": "400"
+    // }
   };
 
   // Schema #5: WebSite + SearchAction
@@ -556,7 +556,15 @@ export default function Home() {
       "@id": "https://dental.jkkn.ac.in/#organization",
       "name": "JKKN Dental College & Hospital"
     },
-    "inLanguage": "en"
+    "inLanguage": "en",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://dental.jkkn.ac.in/search?q={search_term_string}"
+      },
+      "query-input": "required name=search_term_string"
+    }
   };
 
   // Schema #8a: WebPage with Speakable

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import { ClientLayoutWrapper } from "@/components/ClientLayoutWrapper";
 import { MetaPixel } from "@/components/MetaPixel";
@@ -13,7 +14,7 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   metadataBase: new URL('https://dental.jkkn.ac.in'),
   title: {
-    default: "JKKN Dental College & Hospital | DCI Approved",
+    default: "JKKN Dental College & Hospital | DCI Approved, Tamil Nadu",
     template: "%s | JKKN Dental College"
   },
   description: "JKKN Dental College & Hospital, Komarapalayam — DCI approved, NAAC A accredited. BDS & MDS programs with 200+ chair hospital training. Since 1987.",
@@ -30,7 +31,7 @@ export const metadata: Metadata = {
     apple: "/images/dental-logo.png",
   },
   openGraph: {
-    title: "JKKN Dental College & Hospital | DCI Approved",
+    title: "JKKN Dental College & Hospital | DCI Approved, Tamil Nadu",
     description: "JKKN Dental College & Hospital, Komarapalayam — DCI approved, NAAC A accredited. BDS & MDS programs with 200+ chair hospital training. Since 1987.",
     url: "https://dental.jkkn.ac.in/",
     siteName: "JKKN Dental College & Hospital",
@@ -47,7 +48,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "JKKN Dental College & Hospital | DCI Approved",
+    title: "JKKN Dental College & Hospital | DCI Approved, Tamil Nadu",
     description: "JKKN Dental College & Hospital, Komarapalayam — DCI approved, NAAC A accredited. BDS & MDS programs with 200+ chair hospital training. Since 1987.",
     images: ["/images/BDS-hero-image.png"],
   },
@@ -72,20 +73,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-RWVNW1RWMG"></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-RWVNW1RWMG');
-            `,
-          }}
-        />
-      </head>
+      <head />
       <body className={`${poppins.className} antialiased pt-16 xs:pt-18 sm:pt-20 lg:pt-24 xl:pt-28`} suppressHydrationWarning>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-RWVNW1RWMG"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-RWVNW1RWMG');
+          `}
+        </Script>
         <MetaPixel />
         <a
           href="#main-content"

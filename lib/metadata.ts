@@ -496,7 +496,7 @@ export function generateLocalBusinessSchema() {
     "description": "JKKN Dental College & Hospital is a premier dental institution affiliated to TN Dr. MGR Medical University, offering BDS and MDS in 5 specializations with 200+ dental chairs and 500+ daily patients.",
     "url": organizationInfo.url,
     "telephone": organizationInfo.contactPoint.telephone,
-    "email": "info@jkkn.ac.in",
+    "email": "dental@jkkn.ac.in",
     "address": {
       "@type": "PostalAddress",
       ...organizationInfo.address
