@@ -11,7 +11,7 @@ export const metadata = generatePageMetadata({
   keywords: 'contact JKKN Dental, dental college contact, admission enquiry, Komarapalayam dental college address, directions to JKKN Dental',
   canonicalPath: '/contact',
   datePublished: '2024-01-15',
-  dateModified: '2025-02-13'
+  dateModified: '2026-03-21'
 });
 
 const faqSchema = {
@@ -70,7 +70,7 @@ export default function Contact() {
     description: 'Contact information, location, and visiting hours for JKKN Dental College & Hospital in Komarapalayam, Tamil Nadu.',
     url: 'https://dental.jkkn.ac.in/contact',
     datePublished: '2024-01-15',
-    dateModified: '2025-02-13'
+    dateModified: '2026-03-21'
   });
 
   // Schema #4e: BreadcrumbList – /contact Page

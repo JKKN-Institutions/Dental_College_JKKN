@@ -141,7 +141,7 @@ export default function Home() {
   // College/University Schema
   const collegeSchema = {
     "@context": "https://schema.org",
-    "@type": "CollegeOrUniversity",
+    "@type": ["CollegeOrUniversity", "EducationalOrganization"],
     "name": "JKKN Dental College & Hospital",
     "alternateName": ["J.K.K. Nattraja Dental College & Hospital", "ஜே.கே.கே. நட்ராஜா பல் மருத்துவக் கல்லூரி மற்றும் மருத்துவமனை"],
     "url": "https://dental.jkkn.ac.in",
@@ -171,8 +171,24 @@ export default function Home() {
       "NAAC A Grade Accreditation"
     ],
     "hasCredential": [
-      "Dental Council of India (DCI) Approved",
-      "Affiliated to The Tamil Nadu Dr. M.G.R. Medical University"
+      {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "Approval",
+        "name": "Dental Council of India (DCI) Approved",
+        "recognizedBy": { "@type": "Organization", "name": "Dental Council of India", "alternateName": "DCI" }
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "Accreditation",
+        "name": "NAAC A Grade Accredited",
+        "recognizedBy": { "@type": "Organization", "name": "National Assessment and Accreditation Council", "alternateName": "NAAC" }
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "Affiliation",
+        "name": "Affiliated to Tamil Nadu Dr. M.G.R. Medical University",
+        "recognizedBy": { "@type": "CollegeOrUniversity", "name": "Tamil Nadu Dr. M.G.R. Medical University", "url": "https://www.tnmgrmu.ac.in/" }
+      }
     ],
     "sameAs": [
       "https://www.facebook.com/jkkndental/",
@@ -587,7 +603,7 @@ export default function Home() {
     },
     "description": "JKKN Dental College & Hospital, established in 1987, is a DCI approved and NAAC A Grade accredited dental college offering BDS and MDS programs. Located on India's first AI-integrated campus in Komarapalayam, Tamil Nadu, with 200+ dental chairs, 100+ bed hospital, and 92% placement rate. Apply now for 2026-27 admissions.",
     "datePublished": "2025-01-01",
-    "dateModified": "2026-03-16"
+    "dateModified": "2026-03-21"
   };
 
   // Schema #10: Organization sameAs Enhancement
@@ -606,7 +622,11 @@ export default function Home() {
       "https://admission.jkkn.ac.in/",
       "https://placements.jkkn.ac.in/",
       "https://jkkn.ac.in/",
-      "https://dciindia.gov.in/"
+      "https://dciindia.gov.in/",
+      "https://www.shiksha.com/college/j-k-k-nattraja-dental-college-and-hospital-namakkal-78331",
+      "https://collegedunia.com/college/10574-jkk-nattraja-dental-college-and-hospital-jkkndch-namakkal",
+      "https://www.careers360.com/colleges/jkk-nattraja-dental-college-and-hospital-komarapalayam",
+      "https://en.wikipedia.org/wiki/J._K._K._Nattraja_Educational_Institutions"
     ],
     "parentOrganization": {
       "@type": "EducationalOrganization",

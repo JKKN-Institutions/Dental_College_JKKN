@@ -8,21 +8,30 @@ import { generateBreadcrumbSchema, generateSpeakableWebPageSchema } from '@/lib/
 
 export const metadata: Metadata = {
   title: 'Admission Process 2026 | JKKN Dental College',
-  description: 'Complete admission process for BDS & MDS programs at JKKN Dental College. NEET eligibility, counseling steps, document requirements, fee structure, and important dates for 2025 admissions.',
+  description: 'Complete admission process for BDS & MDS programs at JKKN Dental College. NEET eligibility, counseling steps, document requirements, fee structure, and important dates for 2026 admissions.',
   keywords: 'admission process, how to apply, JKKN admission, BDS admission process, MDS admission process, NEET counseling, admission steps, dental college admission',
   openGraph: {
     title: 'Admission Process 2026 | JKKN Dental College',
-    description: 'Complete admission process for BDS & MDS programs at JKKN Dental College. NEET eligibility, counseling steps, document requirements, fee structure, and important dates for 2025 admissions.',
+    description: 'Complete admission process for BDS & MDS programs at JKKN Dental College. NEET eligibility, counseling steps, document requirements, fee structure, and important dates for 2026 admissions.',
     url: 'https://dental.jkkn.ac.in/admission-process/',
     type: 'website',
     siteName: 'JKKN Dental College & Hospital',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Admission Process 2026 | JKKN Dental College',
+    description: 'Complete admission process for BDS & MDS programs at JKKN Dental College. NEET eligibility, counseling steps, document requirements.',
+    images: ['/images/BDS-hero-image.png'],
+  },
+  alternates: {
+    canonical: 'https://dental.jkkn.ac.in/admission-process/',
   },
 };
 
 const breadcrumbSchema = generateBreadcrumbSchema('/admission-process/');
 const speakableSchema = generateSpeakableWebPageSchema({
   title: 'Admission Process 2026 | JKKN Dental College',
-  description: 'Complete admission process for BDS & MDS programs at JKKN Dental College. NEET eligibility, counseling steps, document requirements, fee structure, and important dates for 2025 admissions.',
+  description: 'Complete admission process for BDS & MDS programs at JKKN Dental College. NEET eligibility, counseling steps, document requirements, fee structure, and important dates for 2026 admissions.',
   url: 'https://dental.jkkn.ac.in/admission-process/',
   speakableCssSelectors: ['h1', '.hero-description', 'article p'],
 });
@@ -124,7 +133,7 @@ export default function AdmissionProcess() {
               <svg className="w-5 h-5 text-[#7cb983]" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
               </svg>
-              <span className="text-[#7cb983] font-semibold text-sm">Admissions Open 2025</span>
+              <span className="text-[#7cb983] font-semibold text-sm">Admissions Open 2026</span>
             </div>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
@@ -332,30 +341,30 @@ export default function AdmissionProcess() {
       <section className="py-16 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-[#006837] mb-8 text-center">
-            Important Dates 2025
+            Important Dates 2026
           </h2>
 
           <div className="bg-[#FBFBEE] rounded-xl p-8">
             <div className="space-y-4">
               <div className="flex justify-between items-center py-3 border-b border-gray-300">
                 <span className="font-semibold text-gray-700">NEET-UG Examination</span>
-                <span className="text-[#006837] font-bold">May 2025</span>
+                <span className="text-[#006837] font-bold">May 2026</span>
               </div>
               <div className="flex justify-between items-center py-3 border-b border-gray-300">
                 <span className="font-semibold text-gray-700">NEET-UG Result Declaration</span>
-                <span className="text-[#006837] font-bold">June 2025</span>
+                <span className="text-[#006837] font-bold">June 2026</span>
               </div>
               <div className="flex justify-between items-center py-3 border-b border-gray-300">
                 <span className="font-semibold text-gray-700">Counseling Registration Begins</span>
-                <span className="text-[#006837] font-bold">July 2025</span>
+                <span className="text-[#006837] font-bold">July 2026</span>
               </div>
               <div className="flex justify-between items-center py-3 border-b border-gray-300">
                 <span className="font-semibold text-gray-700">Document Verification</span>
-                <span className="text-[#006837] font-bold">July - August 2025</span>
+                <span className="text-[#006837] font-bold">July - August 2026</span>
               </div>
               <div className="flex justify-between items-center py-3">
                 <span className="font-semibold text-gray-700">Academic Session Begins</span>
-                <span className="text-[#006837] font-bold">August 2025</span>
+                <span className="text-[#006837] font-bold">August 2026</span>
               </div>
             </div>
           </div>

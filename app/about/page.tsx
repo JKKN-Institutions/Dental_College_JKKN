@@ -10,12 +10,21 @@ import { GraduationCap, Stethoscope, Users, Award, Building2, MapPin } from 'luc
 export const metadata: Metadata = {
   title: 'About JKKN Dental College | DCI Approved Since 1987',
   description: 'Learn about JKKN Dental College & Hospital — DCI approved, NAAC A accredited since 1987. 200+ dental chairs, 500+ daily patients, BDS & MDS programs in Komarapalayam, Namakkal.',
+  alternates: {
+    canonical: 'https://dental.jkkn.ac.in/about/',
+  },
   openGraph: {
     title: 'About JKKN Dental College | DCI Approved Since 1987',
     description: 'Learn about JKKN Dental College & Hospital — DCI approved, NAAC A accredited since 1987. 200+ dental chairs, 500+ daily patients, BDS & MDS programs in Komarapalayam, Namakkal.',
     url: 'https://dental.jkkn.ac.in/about/',
     type: 'website',
     siteName: 'JKKN Dental College & Hospital',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'About JKKN Dental College | DCI Approved Since 1987',
+    description: 'Learn about JKKN Dental College & Hospital — DCI approved, NAAC A accredited since 1987. 200+ dental chairs, 500+ daily patients.',
+    images: ['/images/BDS-hero-image.png'],
   },
 };
 
