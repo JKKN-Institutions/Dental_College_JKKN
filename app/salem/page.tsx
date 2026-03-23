@@ -7,11 +7,11 @@ export default function SalemPage() {
   const faqs = [
     {
       q: 'Which are the best dental colleges in Salem?',
-      a: 'JKKN Dental College & Hospital is among the top dental colleges in Salem region, located just 40-50 km from Salem on NH-544. Approved by DCI, NAAC and affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai, it offers excellent programmes with strong placement support.',
+      a: 'JKKN Dental College & Hospital is among the top dental colleges in Salem region, located just 58 km from Salem on NH-544. Approved by DCI, NAAC and affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai, it offers excellent programmes with strong placement support.',
     },
     {
       q: 'How far is JKKN Dental from Salem?',
-      a: 'JKKN Dental is approximately 40-50 km from Salem city centre, which takes about 50-60 minutes by road via NH-544 (Salem-Coimbatore Highway) — direct route. TN State Transport buses from Salem New Bus Stand to Komarapalayam run every 15-20 minutes throughout the day.',
+      a: 'JKKN Dental is approximately 58 km from Salem city centre, which takes about 1 hour by road via NH-544 (Salem-Coimbatore Highway) — direct route. TN State Transport buses from Salem New Bus Stand to Komarapalayam run every 15-20 minutes throughout the day.',
     },
     {
       q: 'What is the NEET cut-off for BDS at JKKN Dental?',
@@ -27,7 +27,7 @@ export default function SalemPage() {
     },
     {
       q: 'Does JKKN Dental provide hostel for Salem students?',
-      a: 'Yes, JKKN Dental provides separate hostel facilities for boys and girls. Students from Salem can also opt for daily commute as the campus is just 50-60 minutes away via NH-544. College transport services are also available.',
+      a: 'Yes, JKKN Dental provides separate hostel facilities for boys and girls. Students from Salem can also opt for daily commute as the campus is just about 1 hour away via NH-544. College transport services are also available.',
     },
     {
       q: 'How can I apply for admission at JKKN Dental?',
@@ -41,7 +41,7 @@ export default function SalemPage() {
     { icon: <Microscope className="w-6 h-6 text-[#006837]" />, title: 'Advanced Labs', desc: 'Advanced dental labs, simulation equipment, and digital dentistry training' },
     { icon: <TrendingUp className="w-6 h-6 text-[#006837]" />, title: 'NEET MDS Results', desc: 'Strong track record in NEET MDS results and higher education' },
     { icon: <Users className="w-6 h-6 text-[#006837]" />, title: 'Community Service', desc: 'Hospital serves the community — builds trust and clinical experience' },
-    { icon: <Bus className="w-6 h-6 text-[#006837]" />, title: 'Easy Commute', desc: 'Just 40-50 km from Salem. Daily commute or comfortable hostel — your choice.' },
+    { icon: <Bus className="w-6 h-6 text-[#006837]" />, title: 'Easy Commute', desc: 'Just 58 km from Salem. Daily commute or comfortable hostel — your choice.' },
   ];
 
   const programmes = [
@@ -75,8 +75,8 @@ export default function SalemPage() {
   const transportRows = [
     { icon: <Route className="w-6 h-6 text-[#006837]" />, label: 'ROUTE', text: 'NH-544 (Salem-Coimbatore Highway) — direct route' },
     { icon: <Bus className="w-6 h-6 text-[#006837]" />, label: 'BY BUS', text: 'TN State Transport buses from Salem New Bus Stand to Komarapalayam run every 15-20 minutes throughout the day' },
-    { icon: <Train className="w-6 h-6 text-[#006837]" />, label: 'NEAREST RAILWAY STATION', text: 'Salem Junction (~45 km from campus)' },
-    { icon: <Plane className="w-6 h-6 text-[#006837]" />, label: 'NEAREST AIRPORT', text: 'Salem Airport (~15 km, limited flights) / Coimbatore International Airport (~110 km)' },
+    { icon: <Train className="w-6 h-6 text-[#006837]" />, label: 'NEAREST RAILWAY STATION', text: 'Salem Junction (~58 km from campus)' },
+    { icon: <Plane className="w-6 h-6 text-[#006837]" />, label: 'NEAREST AIRPORT', text: 'Salem Airport (~75 km, limited flights) / Coimbatore International Airport (~100 km)' },
     { icon: <MapPin className="w-6 h-6 text-[#006837]" />, label: 'CAMPUS ADDRESS', text: 'JKKN Institutions, Natarajapuram, NH-544, Komarapalayam (TK), Namakkal (DT), Tamil Nadu - 638183' },
   ];
 
@@ -91,7 +91,7 @@ export default function SalemPage() {
 
   const cities = [
     { icon: <Home className="w-6 h-6 text-[#006837]" />, name: 'Namakkal', dist: '5-10 km', href: '/namakkal/' },
-    { icon: <Route className="w-6 h-6 text-[#006837]" />, name: 'Erode', dist: '30-40 km', href: '/erode/' },
+    { icon: <Route className="w-6 h-6 text-[#006837]" />, name: 'Erode', dist: '~22 km', href: '/erode/' },
     { icon: <Target className="w-6 h-6 text-[#006837]" />, name: 'Tiruppur', dist: '80-90 km', href: '/tiruppur/' },
     { icon: <Sparkles className="w-6 h-6 text-[#006837]" />, name: 'Coimbatore', dist: '100-110 km', href: '/coimbatore/' },
   ];
@@ -142,7 +142,7 @@ export default function SalemPage() {
           {[
             { value: '90%+', label: 'PLACEMENTS' },
             { value: '8-10', label: 'LPA HIGHEST' },
-            { value: '45 km', label: 'FROM SALEM' },
+            { value: '58 km', label: 'FROM SALEM' },
             { value: '2', label: 'PROGRAMMES' },
           ].map((stat) => (
             <li key={stat.label} className="bg-white/10 backdrop-blur border border-white/20 rounded-2xl px-4 py-4 text-white">
@@ -177,11 +177,11 @@ export default function SalemPage() {
           <div className="bg-white rounded-2xl shadow-sm p-6 sm:p-8 flex flex-col sm:flex-row items-start sm:items-center gap-6 justify-between">
             <div className="flex items-start gap-5">
               <div className="text-[#006837] font-extrabold leading-none" style={{ fontSize: 'clamp(3rem, 6vw, 4rem)' }}>
-                45<span className="text-xl sm:text-2xl font-bold">km</span>
+                58<span className="text-xl sm:text-2xl font-bold">km</span>
               </div>
               <div>
                 <p className="font-bold text-gray-900 text-base sm:text-lg">From Salem to JKKN Dental</p>
-                <p className="text-gray-500 text-sm mt-1">50-60 minutes via NH-544 (Salem-Coimbatore Highway) — direct route</p>
+                <p className="text-gray-500 text-sm mt-1">~1 hour via NH-544 (Salem-Coimbatore Highway) — direct route</p>
               </div>
             </div>
             <a
@@ -315,7 +315,7 @@ export default function SalemPage() {
               <MapPin className="w-6 h-6" />
               <div>
                 <p className="font-bold text-lg">Salem → JKKN Dental Campus</p>
-                <p className="text-white/80 text-sm">40-50 km • 50-60 minutes</p>
+                <p className="text-white/80 text-sm">~58 km • ~1 hour</p>
               </div>
             </div>
             {transportRows.map((row, i) => (
@@ -365,7 +365,7 @@ export default function SalemPage() {
             <div className="bg-white rounded-2xl p-6 text-left shadow-sm">
               <div className="text-5xl text-gray-200 font-serif leading-none mb-3 select-none">"</div>
               <p className="text-gray-500 text-sm leading-relaxed italic mb-6">
-                From Salem, JKKN was just 45 km on NH-544 — closer than most dental colleges in the region. The clinical exposure here is unmatched. We get to work with 500+ patients daily across all dental specializations.
+                From Salem, JKKN was just 58 km on NH-544 — closer than most dental colleges in the region. The clinical exposure here is unmatched. We get to work with 500+ patients daily across all dental specializations.
               </p>
               <div>
                 <p className="font-bold text-gray-900 text-sm">Sneha Ramesh</p>
