@@ -640,9 +640,7 @@ export default function Home() {
       "@type": "SpeakableSpecification",
       "cssSelector": [
         ".snippet-answer",
-        ".hero-description",
-        ".institution-highlights",
-        ".admission-cta"
+        ".hero-description"
       ],
       "xpath": [
         "/html/head/meta[@name='description']/@content"
@@ -651,6 +649,48 @@ export default function Home() {
     "description": "JKKN Dental College & Hospital, established in 1987, is a DCI approved and NAAC A Grade accredited dental college offering BDS and MDS programs. Located on India's first AI-integrated campus in Komarapalayam, Tamil Nadu, with 200+ dental chairs, 100+ bed hospital, and 92% placement rate. Apply now for 2026-27 admissions.",
     "datePublished": "2025-01-01",
     "dateModified": "2026-03-21"
+  };
+
+  // Schema #9: HowTo — Admission Process
+  const howToSchema = {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "@id": "https://dental.jkkn.ac.in/#howto-admission",
+    "name": "How to Get Admission in JKKN Dental College — BDS & MDS",
+    "description": "Step-by-step admission process for BDS and MDS programs at JKKN Dental College & Hospital, Komarapalayam, Tamil Nadu.",
+    "totalTime": "P30D",
+    "step": [
+      {
+        "@type": "HowToStep",
+        "position": 1,
+        "name": "Check Eligibility",
+        "text": "Verify your academic qualifications and NEET score. BDS requires 10+2 with PCB and NEET-UG. MDS requires BDS degree with completed internship and NEET-MDS."
+      },
+      {
+        "@type": "HowToStep",
+        "position": 2,
+        "name": "Register for Counseling",
+        "text": "Register for Tamil Nadu State counseling or All India Quota counseling through the official government portal."
+      },
+      {
+        "@type": "HowToStep",
+        "position": 3,
+        "name": "Participate in Counseling",
+        "text": "Attend the counseling process and select JKKN Dental College during the choice-filling round based on your NEET rank."
+      },
+      {
+        "@type": "HowToStep",
+        "position": 4,
+        "name": "Document Verification",
+        "text": "Complete document verification at the JKKN Dental College admission office with original certificates and required documents."
+      },
+      {
+        "@type": "HowToStep",
+        "position": 5,
+        "name": "Fee Payment and Enrollment",
+        "text": "Pay the prescribed fees and complete enrollment formalities to secure your seat at JKKN Dental College."
+      }
+    ]
   };
 
   return (
@@ -666,6 +706,7 @@ export default function Home() {
       <StructuredData data={collegeSchema} />
       <StructuredData data={faqSchema} />
       <StructuredData data={admissionEventSchema} />
+      <StructuredData data={howToSchema} />
       <BreadcrumbSchema items={[
         { name: 'JKKN Institutions', url: 'https://jkkn.ac.in/' },
         { name: 'JKKN Dental College & Hospital', url: 'https://dental.jkkn.ac.in/' },
