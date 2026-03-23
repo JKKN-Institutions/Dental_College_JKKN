@@ -10,9 +10,8 @@ export default function WhyChooseJKKN() {
               Why JKKN is the Best Dental College in Tamil Nadu
             </h2>
 
-            <div className="space-y-5 sm:space-y-6 md:space-y-8">
-              {/* Point 1 */}
-              <div className="flex gap-3 sm:gap-4">
+            <ol className="space-y-5 sm:space-y-6 md:space-y-8 list-none p-0 m-0">
+              <li className="flex gap-3 sm:gap-4">
                 <div className="flex-shrink-0">
                   <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#7cb983] rounded-full flex items-center justify-center font-bold text-sm sm:text-lg">
                     01
@@ -24,10 +23,9 @@ export default function WhyChooseJKKN() {
                     Part of JKKN Institutions, founded in 1952, with a commitment to progressive education. #JKKN100
                   </p>
                 </div>
-              </div>
+              </li>
 
-              {/* Point 2 */}
-              <div className="flex gap-3 sm:gap-4">
+              <li className="flex gap-3 sm:gap-4">
                 <div className="flex-shrink-0">
                   <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#7cb983] rounded-full flex items-center justify-center font-bold text-sm sm:text-lg">
                     02
@@ -39,10 +37,9 @@ export default function WhyChooseJKKN() {
                     500+ patients visiting daily — extensive hands-on experience across all specialties.
                   </p>
                 </div>
-              </div>
+              </li>
 
-              {/* Point 3 */}
-              <div className="flex gap-3 sm:gap-4">
+              <li className="flex gap-3 sm:gap-4">
                 <div className="flex-shrink-0">
                   <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#7cb983] rounded-full flex items-center justify-center font-bold text-sm sm:text-lg">
                     03
@@ -54,10 +51,9 @@ export default function WhyChooseJKKN() {
                     Experienced specialists with national and international recognition in their fields.
                   </p>
                 </div>
-              </div>
+              </li>
 
-              {/* Point 4 */}
-              <div className="flex gap-3 sm:gap-4">
+              <li className="flex gap-3 sm:gap-4">
                 <div className="flex-shrink-0">
                   <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#7cb983] rounded-full flex items-center justify-center font-bold text-sm sm:text-lg">
                     04
@@ -69,8 +65,8 @@ export default function WhyChooseJKKN() {
                     Strong industry connections with leading dental chains and hospitals.
                   </p>
                 </div>
-              </div>
-            </div>
+              </li>
+            </ol>
           </div>
 
           {/* Right Stats Grid */}

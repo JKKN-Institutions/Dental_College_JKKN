@@ -300,9 +300,9 @@ export const siteContent = {
   // Hero Section
   hero: {
     title: "JKKN DENTAL COLLEGE & HOSPITAL",
-    subtitle: "Online Admissions 2025-2026",
+    subtitle: "Online Admissions 2026-2027",
     buttons: [
-      { label: "Online Admissions 2025-2026", href: "/admissions" },
+      { label: "Online Admissions 2026-2027", href: "/admissions" },
       { label: "Academic Calendar", href: "/academic-calendar" },
     ],
     backgroundImage: "/images/college-building.jpg",

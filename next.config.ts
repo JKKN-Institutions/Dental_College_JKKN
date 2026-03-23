@@ -41,6 +41,10 @@ const nextConfig: NextConfig = {
       // Campus typo redirect
       { source: '/camu', destination: '/facilities/wi-fi-campus', permanent: true },
       { source: '/camu/', destination: '/facilities/wi-fi-campus', permanent: true },
+
+      // Removed landing page → redirect to homepage
+      { source: '/best-dental-college-tamil-nadu', destination: '/', permanent: true },
+      { source: '/best-dental-college-tamil-nadu/', destination: '/', permanent: true },
     ];
   },
   async headers() {

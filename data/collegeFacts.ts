@@ -52,6 +52,13 @@ export const collegeFacts = {
   // === INFRASTRUCTURE ===
   dentalChairs: 200, // Number of dental chairs in hospital
   hospitalBeds: 100, // Note: Beds and chairs are different!
+  dailyPatients: 500, // Average daily patient footfall
+
+  // === PLACEMENTS ===
+  placementRate: 92, // Percentage placement assistance
+  alumniCount: 3000, // Total alumni worldwide
+  publications: 50, // Research publications
+  partnerships: 25, // Industry & academic partnerships
 
   // === ADMISSIONS ===
   currentAdmissionYear: '2026-27',
@@ -96,7 +103,12 @@ export const collegeFacts = {
     yearsOfExcellence: new Date().getFullYear() - 1987,
     totalSeats: 100 + 18, // BDS + MDS
     specializations: 5,
-    departments: 9
+    departments: 9,
+    dailyPatients: 500,
+    placementRate: 92,
+    alumniCount: 3000,
+    publications: 50,
+    partnerships: 25
   }
 };
 
@@ -107,6 +119,9 @@ export const getMDSSeatsText = () => `${collegeFacts.mdsSeatCount} MDS Seats`;
 export const getBDSSeatsText = () => `${collegeFacts.bdsSeatCount} BDS Seats`;
 export const getSpecializationsText = () => `${collegeFacts.mdsSpecialisations} PG Specialisations`;
 export const getHospitalCapacityText = () => `${collegeFacts.dentalChairs}+ Dental Chairs & ${collegeFacts.hospitalBeds}+ Hospital Beds`;
+export const getDailyPatientsText = () => `${collegeFacts.dailyPatients}+ Daily Patients`;
+export const getPlacementRateText = () => `${collegeFacts.placementRate}% Placement`;
+export const getAlumniCountText = () => `${collegeFacts.alumniCount}+ Alumni`;
 export const getFormattedPhone = () => collegeFacts.phone;
 export const getFormattedAddress = () => collegeFacts.address.full;
 

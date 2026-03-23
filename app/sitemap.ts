@@ -195,9 +195,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     // Campaign landing pages
     { url: `${baseUrl}/dental-surgery-assistant-course/`, lastModified: '2026-03-01', changeFrequency: 'weekly', priority: 0.8 },
 
-    // Comparison page
-    { url: `${baseUrl}/best-dental-college-tamil-nadu/`, lastModified: '2026-03-01', changeFrequency: 'monthly', priority: 0.8 },
-
     // City SEO pages
     { url: `${baseUrl}/coimbatore/`, lastModified: '2026-02-01', changeFrequency: 'monthly', priority: 0.7 },
     { url: `${baseUrl}/erode/`, lastModified: '2026-02-01', changeFrequency: 'monthly', priority: 0.7 },

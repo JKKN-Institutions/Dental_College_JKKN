@@ -104,6 +104,7 @@ export default function Home() {
   const mdsSchema = {
     "@context": "https://schema.org",
     "@type": "Course",
+    "@id": "https://dental.jkkn.ac.in/mds/#course",
     "name": "Master of Dental Surgery (MDS)",
     "description": "3-year postgraduate dental program with specializations in Periodontics, Orthodontics, Prosthodontics, Conservative Dentistry & Endodontics, and Oral Medicine at JKKN Dental College & Hospital.",
     "provider": {
@@ -260,6 +261,7 @@ export default function Home() {
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
+    "@id": "https://dental.jkkn.ac.in/#faqpage",
     "mainEntity": [
       {
         "@type": "Question",
@@ -330,7 +332,7 @@ export default function Home() {
         "name": "Which is the best dental college in Tamil Nadu?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "JKKN Dental College and Hospital is widely recognized as one of the best dental colleges in Tamil Nadu, featuring DCI approval, NAAC A accreditation, two hundred dental chairs, five hundred daily patients, and India's first AI-integrated dental campus since nineteen eighty-seven."
+          "text": "JKKN Dental College and Hospital is widely recognized as the best dental college in Tamil Nadu with DCI approval, NAAC A accreditation, two hundred dental chairs, five hundred daily patients, ninety-two percent placement assistance, and India's first AI-integrated dental campus established in nineteen eighty-seven."
         }
       },
       {
@@ -356,6 +358,7 @@ export default function Home() {
   const admissionEventSchema = {
     "@context": "https://schema.org",
     "@type": "Event",
+    "@id": "https://dental.jkkn.ac.in/#event-2026-admissions",
     "name": "JKKN Dental College Admissions 2026-27 — BDS & MDS",
     "description": "Admissions open for BDS and MDS programs at JKKN Dental College & Hospital, Komarapalayam. DCI approved, NAAC A accredited. Apply via NEET counseling or management quota.",
     "startDate": "2026-03-01",
@@ -398,6 +401,7 @@ export default function Home() {
   const principalSchema = {
     "@context": "https://schema.org",
     "@type": "Person",
+    "@id": "https://dental.jkkn.ac.in/administration/principals-message/#person",
     "name": "Dr. Dhanasekar Balakrishnan",
     "jobTitle": "Principal",
     "worksFor": {
