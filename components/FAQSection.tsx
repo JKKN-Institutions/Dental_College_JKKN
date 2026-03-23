@@ -99,14 +99,16 @@ export default function FAQSection() {
                 </div>
               </button>
 
-              {/* Answer */}
-              {openIndex === index && (
+              {/* Answer — always in DOM for SEO crawlers, collapsed visually when closed */}
+              <div
+                className={`overflow-hidden transition-all duration-300 ${openIndex === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}
+              >
                 <div className="px-4 sm:px-5 md:px-6 pb-4 sm:pb-5 md:pb-6">
                   <p className="text-gray-600 leading-relaxed text-sm sm:text-base">
                     {faq.answer}
                   </p>
                 </div>
-              )}
+              </div>
             </div>
           ))}
         </div>

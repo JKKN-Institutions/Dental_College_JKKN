@@ -6,9 +6,10 @@ export default function WhyChooseJKKN() {
           {/* Left Content */}
           <div>
             <h3 className="text-[#7cb983] text-xs sm:text-sm md:text-base font-bold uppercase tracking-wider mb-3 sm:mb-4">Why Choose JKKN</h3>
-            <h2 className="text-2xl xs:text-3xl sm:text-4xl font-bold mb-8 sm:mb-10 md:mb-12 leading-tight">
+            <h2 className="text-2xl xs:text-3xl sm:text-4xl font-bold mb-4 sm:mb-5 md:mb-6 leading-tight">
               Why JKKN is the Best Dental College in Tamil Nadu
             </h2>
+            <p className="text-gray-300 text-sm sm:text-base mb-8 sm:mb-10 md:mb-12 leading-relaxed">JKKN Dental College stands out with 39+ years of excellence, 500+ daily patients for clinical exposure, AI-integrated campus technology, and 92% placement assistance backed by JKKN Institutions since 1952.</p>
 
             <ol className="space-y-5 sm:space-y-6 md:space-y-8 list-none p-0 m-0">
               <li className="flex gap-3 sm:gap-4">

@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'JKKN Dental College | Best Dental College in Tamil Nadu',
     description: 'Best dental college in Tamil Nadu — JKKN Dental College, DCI approved & NAAC A. BDS & MDS programs, 200+ dental chairs, 92% placement rate.',
-    images: ['/images/BDS-hero-image.png'],
+    images: ['https://dental.jkkn.ac.in/images/BDS-hero-image.png'],
   },
   alternates: {
     canonical: 'https://dental.jkkn.ac.in/',
@@ -438,11 +438,11 @@ export default function Home() {
     ]
   };
 
-  // Schema #1: MedicalOrganization + Dentist
+  // Schema #1: MedicalOrganization + Dentist (shares @id with #college — same entity)
   const medicalOrgSchema = {
     "@context": "https://schema.org",
     "@type": ["MedicalOrganization", "Dentist"],
-    "@id": "https://dental.jkkn.ac.in/#organization",
+    "@id": "https://dental.jkkn.ac.in/#college",
     "name": "JKKN Dental College & Hospital",
     "alternateName": ["JKKN Dental College", "ஜே.கே.கே.என் பல் மருத்துவக் கல்லூரி"],
     "url": "https://dental.jkkn.ac.in/",
@@ -615,7 +615,7 @@ export default function Home() {
     "description": "Official website of JKKN Dental College & Hospital – DCI approved, NAAC A Grade accredited dental institution offering BDS and MDS programs in Komarapalayam, Tamil Nadu.",
     "publisher": {
       "@type": "CollegeOrUniversity",
-      "@id": "https://dental.jkkn.ac.in/#organization",
+      "@id": "https://dental.jkkn.ac.in/#college",
       "name": "JKKN Dental College & Hospital"
     },
     "inLanguage": "en",
