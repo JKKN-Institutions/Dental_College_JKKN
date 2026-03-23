@@ -1,6 +1,7 @@
 ﻿'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
 import { ChevronUp, ChevronDown, Hospital, Stethoscope, Microscope, TrendingUp, Users, Bus, Route, Train, Plane, Home, MapPin, BookOpen, Award, Wifi, GraduationCap, Target, Sparkles, Shield } from 'lucide-react';
 import { ScrollToTop } from '@/components/ScrollToTop';
 
@@ -18,22 +19,16 @@ const speakableSchema = {
   "@type": "WebPage",
   "name": "Dental College in Erode | JKKN Dental College",
   "url": "https://dental.jkkn.ac.in/erode/",
+  "dateModified": "2026-03-23",
   "speakable": {
     "@type": "SpeakableSpecification",
-    "cssSelector": ["h1", ".hero-description", "article p"],
+    "cssSelector": ["h1", ".text-lg", ".text-base"],
   },
 };
 
 
 export default function ErodePage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
-  const [formData, setFormData] = useState({
-    name: '',
-    mobile: '',
-    city: 'Erode',
-    programme: '',
-    question: '',
-  });
 
   const faqs = [
     {
@@ -72,7 +67,7 @@ export default function ErodePage() {
     { icon: <Microscope className="w-6 h-6 text-[#006837]" />, title: 'Advanced Labs', desc: 'Advanced dental labs, simulation equipment, and digital dentistry training' },
     { icon: <TrendingUp className="w-6 h-6 text-[#006837]" />, title: 'NEET MDS Results', desc: 'Strong track record in NEET MDS results and higher education' },
     { icon: <Users className="w-6 h-6 text-[#006837]" />, title: 'Community Service', desc: 'Hospital serves the community — builds trust and clinical experience' },
-    { icon: <Bus className="w-6 h-6 text-[#006837]" />, title: 'Easy Commute', desc: 'Just 30-40 km from Erode. Daily commute or comfortable hostel — your choice.' },
+    { icon: <Bus className="w-6 h-6 text-[#006837]" />, title: 'Easy Commute', desc: 'Just 35 km from Erode. Daily commute or comfortable hostel — your choice.' },
   ];
 
   const programmes = [
@@ -151,7 +146,7 @@ export default function ErodePage() {
         </h1>
         <p className="text-white/80 max-w-2xl mb-10 leading-relaxed" style={{ fontSize: 'clamp(0.9rem, 1vw + 0.5rem, 1.1rem)' }}>
           Erode to JKKN — a short, smooth ride on NH-544. JKKN Dental College &amp; Hospital offers top-tier dental programmes with
-          90%+ placement support — just 30-40 km from Erode with excellent highway connectivity.
+          90%+ placement support — just 35 km from Erode with excellent highway connectivity.
         </p>
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 mb-10 w-full max-w-2xl">
           {[
@@ -218,7 +213,7 @@ export default function ErodePage() {
             Why Erode Students Choose JKKN Dental
           </h2>
           <p className="text-gray-500 max-w-3xl mx-auto mb-4 leading-relaxed" style={{ fontSize: 'clamp(0.875rem, 1vw + 0.4rem, 1.05rem)' }}>
-            Erode&apos;s strong industrial base means families value quality education with good placement outcomes. JKKN is just 30-40 km away — closer than many colleges within Erode city itself. The excellent NH-544 connectivity makes daily commute comfortable and quick.
+            Erode&apos;s strong industrial base means families value quality education with good placement outcomes. JKKN is just 35 km away — closer than many colleges within Erode city itself. The excellent NH-544 connectivity makes daily commute comfortable and quick.
           </p>
           <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-12" />
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -259,7 +254,7 @@ export default function ErodePage() {
                   ))}
                 </div>
                 <p className="text-gray-400 text-sm mb-6">{prog.eligibility}</p>
-                <a href="tel:+919345855001" target="_blank" rel="nofollow noopener noreferrer" className="block text-center bg-[#FBFBEE] hover:bg-[#e8f5e9] text-[#006837] font-semibold py-3 rounded-xl transition-colors text-sm">
+                <a href="tel:+919345855001" className="block text-center bg-[#FBFBEE] hover:bg-[#e8f5e9] text-[#006837] font-semibold py-3 rounded-xl transition-colors text-sm">
                   Enquire About This Course
                 </a>
               </div>
@@ -426,23 +421,23 @@ export default function ErodePage() {
           <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-10" />
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
             {cities.slice(0, 3).map((city) => (
-              <a href={city.href} key={city.name} className="bg-white rounded-2xl px-5 py-4 flex items-center gap-3 shadow-sm hover:shadow-md transition-shadow cursor-pointer">
+              <Link href={city.href} key={city.name} className="bg-white rounded-2xl px-5 py-4 flex items-center gap-3 shadow-sm hover:shadow-md transition-shadow cursor-pointer">
                 <span className="flex-shrink-0">{city.icon}</span>
                 <span className="font-bold text-gray-900 text-base flex-1 text-left">{city.name}</span>
                 <span className="text-gray-400 text-sm">{city.dist}</span>
-              </a>
+              </Link>
             ))}
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-10">
             {cities.slice(3).map((city) => (
-              <a href={city.href} key={city.name} className="bg-white rounded-2xl px-5 py-4 flex items-center gap-3 shadow-sm hover:shadow-md transition-shadow cursor-pointer sm:col-span-1">
+              <Link href={city.href} key={city.name} className="bg-white rounded-2xl px-5 py-4 flex items-center gap-3 shadow-sm hover:shadow-md transition-shadow cursor-pointer sm:col-span-1">
                 <span className="flex-shrink-0">{city.icon}</span>
                 <span className="font-bold text-gray-900 text-base flex-1 text-left">{city.name}</span>
                 <span className="text-gray-400 text-sm">{city.dist}</span>
-              </a>
+              </Link>
             ))}
           </div>
-          <a href="/#academic-programs" className="inline-block bg-[#7cb983] hover:bg-[#6ba872] text-white font-bold px-10 py-4 rounded-full transition-all transform hover:scale-105 shadow-lg text-base">
+          <a href="/academics/" className="inline-block bg-[#7cb983] hover:bg-[#6ba872] text-white font-bold px-10 py-4 rounded-full transition-all transform hover:scale-105 shadow-lg text-base">
             View All Programmes
           </a>
         </div>

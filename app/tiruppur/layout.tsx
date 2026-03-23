@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   keywords: 'dental colleges in tiruppur, top dental colleges, bds colleges in tiruppur, dental college tiruppur, mds college tiruppur, jkkn dental tiruppur',
   robots: { index: true, follow: true },
   alternates: {
-    canonical: '/tiruppur/',
+    canonical: 'https://dental.jkkn.ac.in/tiruppur/',
   },
   openGraph: {
     title: 'Dental Colleges in Tiruppur | JKKN Dental College',
@@ -28,6 +28,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
+    site: '@jaborejkkn',
     title: 'Dental Colleges in Tiruppur | JKKN Dental College',
     description: 'JKKN Dental College & Hospital — among the top dental colleges in Tiruppur region, 80 km via NH-544. DCI approved, NAAC accredited. BDS & MDS programs with hostel & transport.',
     images: ['/images/BDS-hero-image.webp'],
@@ -39,7 +40,7 @@ const faqSchema = {
   "@type": "FAQPage",
   "mainEntity": [
     { "@type": "Question", "name": "Which are the best dental colleges in Tiruppur?", "acceptedAnswer": { "@type": "Answer", "text": "JKKN Dental College & Hospital is among the top dental colleges accessible from Tiruppur, located just 80-90 km on NH-544. Approved by DCI, NAAC and affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai, it offers excellent programmes with strong placement support." } },
-    { "@type": "Question", "name": "How far is JKKN Dental from Tiruppur?", "acceptedAnswer": { "@type": "Answer", "text": "JKKN Dental is approximately 80-90 km from Tiruppur, which takes about 1.5-2 hours by road via NH-544 via Erode, then State Highway towards Tiruppur. Regular inter-city bus services are available from Tiruppur to Komarapalayam/Erode." } },
+    { "@type": "Question", "name": "How far is JKKN Dental from Tiruppur?", "acceptedAnswer": { "@type": "Answer", "text": "JKKN Dental is approximately 80-90 km from Tiruppur, which takes about 1.5-2 hours by road via State Highway to Erode, then NH-544 to Komarapalayam. Regular inter-city bus services are available from Tiruppur to Komarapalayam/Erode." } },
     { "@type": "Question", "name": "What is the NEET cut-off for BDS at JKKN Dental?", "acceptedAnswer": { "@type": "Answer", "text": "The NEET cut-off for BDS admission at JKKN Dental College & Hospital varies each year based on counselling rounds. Contact the admission office for the latest cut-off information and seat availability for the current admission cycle." } },
     { "@type": "Question", "name": "Does JKKN Dental have its own hospital?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, JKKN Dental College & Hospital has its own attached dental hospital on campus. This hospital serves patients from the surrounding community and provides BDS students with extensive hands-on clinical training from the early years of the programme." } },
     { "@type": "Question", "name": "What MDS specialisations are available?", "acceptedAnswer": { "@type": "Answer", "text": "JKKN Dental College & Hospital offers MDS in multiple specialisations including Orthodontics, Prosthodontics, Oral Surgery, Conservative Dentistry, Periodontics, and more. Admission is through NEET MDS counselling. Contact the admission office for the full list of available specialisations." } },
@@ -51,6 +52,7 @@ const faqSchema = {
 const orgSchema = {
   "@context": "https://schema.org",
   "@type": "EducationalOrganization",
+  "@id": "https://dental.jkkn.ac.in/#organization",
   "name": "JKKN Dental College & Hospital",
   "alternateName": "JKKN Dental",
   "url": "https://dental.jkkn.ac.in/",
@@ -81,6 +83,8 @@ const courseSchema = [
   {
     "@context": "https://schema.org",
     "@type": "Course",
+    "@id": "https://dental.jkkn.ac.in/academics/bds/#course",
+    "url": "https://dental.jkkn.ac.in/academics/bds/",
     "name": "BDS (Bachelor of Dental Surgery)",
     "description": "4-year undergraduate dental programme with 1-year internship. DCI approved, 100 seats. NEET qualified admission.",
     "provider": { "@type": "EducationalOrganization", "name": "JKKN Dental College & Hospital", "url": "https://dental.jkkn.ac.in/" },
@@ -91,6 +95,8 @@ const courseSchema = [
   {
     "@context": "https://schema.org",
     "@type": "Course",
+    "@id": "https://dental.jkkn.ac.in/academics/mds/#course",
+    "url": "https://dental.jkkn.ac.in/academics/mds/",
     "name": "MDS (Master of Dental Surgery)",
     "description": "3-year postgraduate dental programme with multiple specialisations including Orthodontics, Prosthodontics, Oral Surgery, Conservative Dentistry, and Periodontics.",
     "provider": { "@type": "EducationalOrganization", "name": "JKKN Dental College & Hospital", "url": "https://dental.jkkn.ac.in/" },

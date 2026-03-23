@@ -1,6 +1,7 @@
 ﻿'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
 import { ChevronUp, ChevronDown, Hospital, Stethoscope, Microscope, TrendingUp, Users, Bus, Route, Train, Plane, Home, MapPin, BookOpen, Award, Wifi, GraduationCap, Target, Sparkles, Shield } from 'lucide-react';
 import { ScrollToTop } from '@/components/ScrollToTop';
 
@@ -18,22 +19,16 @@ const speakableSchema = {
   "@type": "WebPage",
   "name": "Dental Colleges in Tiruppur | JKKN Dental College",
   "url": "https://dental.jkkn.ac.in/tiruppur/",
+  "dateModified": "2026-03-23",
   "speakable": {
     "@type": "SpeakableSpecification",
-    "cssSelector": ["h1", ".hero-description", "article p"],
+    "cssSelector": ["h1", ".text-lg", ".text-base"],
   },
 };
 
 
 export default function TiruppurPage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
-  const [formData, setFormData] = useState({
-    name: '',
-    mobile: '',
-    city: 'Tiruppur',
-    programme: '',
-    question: '',
-  });
 
   const faqs = [
     {
@@ -42,7 +37,7 @@ export default function TiruppurPage() {
     },
     {
       q: 'How far is JKKN Dental from Tiruppur?',
-      a: 'JKKN Dental is approximately 80-90 km from Tiruppur, which takes about 1.5-2 hours by road via NH-544 via Erode, then State Highway towards Tiruppur. Regular inter-city bus services are available from Tiruppur to Komarapalayam/Erode.',
+      a: 'JKKN Dental is approximately 80-90 km from Tiruppur, which takes about 1.5-2 hours by road via State Highway to Erode, then NH-544 to Komarapalayam. Regular inter-city bus services are available from Tiruppur to Komarapalayam/Erode.',
     },
     {
       q: 'What is the NEET cut-off for BDS at JKKN Dental?',
@@ -72,7 +67,7 @@ export default function TiruppurPage() {
     { icon: <Microscope className="w-6 h-6 text-[#006837]" />, title: 'Advanced Labs', desc: 'Advanced dental labs, simulation equipment, and digital dentistry training' },
     { icon: <TrendingUp className="w-6 h-6 text-[#006837]" />, title: 'NEET MDS Results', desc: 'Strong track record in NEET MDS results and higher education' },
     { icon: <Users className="w-6 h-6 text-[#006837]" />, title: 'Community Service', desc: 'Hospital serves the community — builds trust and clinical experience' },
-    { icon: <Bus className="w-6 h-6 text-[#006837]" />, title: 'Easy Commute', desc: 'Just 80-90 km from Tiruppur. Daily commute or comfortable hostel — your choice.' },
+    { icon: <Bus className="w-6 h-6 text-[#006837]" />, title: 'Well-Connected', desc: '80-90 km from Tiruppur via Erode. Comfortable on-campus hostel with all amenities — feel at home from day one.' },
   ];
 
   const programmes = [
@@ -90,7 +85,7 @@ export default function TiruppurPage() {
   const companies = ['Clove Dental', 'MyDentist', 'Sabka Dentist', 'Apollo Hospitals', 'Fortis Healthcare'];
 
   const transportRows = [
-    { icon: <Route className="w-6 h-6 text-[#006837]" />, label: 'ROUTE', text: 'NH-544 via Erode, then State Highway towards Tiruppur' },
+    { icon: <Route className="w-6 h-6 text-[#006837]" />, label: 'ROUTE', text: 'Via State Highway to Erode, then NH-544 to Komarapalayam' },
     { icon: <Bus className="w-6 h-6 text-[#006837]" />, label: 'BY BUS', text: 'Inter-city buses from Tiruppur to Komarapalayam/Erode available regularly. Private bus services also available.' },
     { icon: <Train className="w-6 h-6 text-[#006837]" />, label: 'NEAREST RAILWAY STATION', text: 'Tiruppur Junction (~85 km from campus)' },
     { icon: <Plane className="w-6 h-6 text-[#006837]" />, label: 'NEAREST AIRPORT', text: 'Coimbatore International Airport (Code: CJB) (~50 km)' },
@@ -198,7 +193,7 @@ export default function TiruppurPage() {
               </div>
               <div>
                 <p className="font-bold text-gray-900 text-base sm:text-lg">From Tiruppur to JKKN Dental</p>
-                <p className="text-gray-500 text-sm mt-1">1.5-2 hours via NH-544 via Erode, then State Highway towards Tiruppur</p>
+                <p className="text-gray-500 text-sm mt-1">1.5-2 hours via State Highway to Erode, then NH-544 to Komarapalayam</p>
               </div>
             </div>
             <a
@@ -261,7 +256,7 @@ export default function TiruppurPage() {
                   ))}
                 </div>
                 <p className="text-gray-400 text-sm mb-6">{prog.eligibility}</p>
-                <a href="tel:+919345855001" target="_blank" rel="nofollow noopener noreferrer" className="block text-center bg-[#FBFBEE] hover:bg-[#e8f5e9] text-[#006837] font-semibold py-3 rounded-xl transition-colors text-sm">
+                <a href="tel:+919345855001" className="block text-center bg-[#FBFBEE] hover:bg-[#e8f5e9] text-[#006837] font-semibold py-3 rounded-xl transition-colors text-sm">
                   Enquire About This Course
                 </a>
               </div>
@@ -428,23 +423,23 @@ export default function TiruppurPage() {
           <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-10" />
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
             {cities.slice(0, 3).map((city) => (
-              <a href={city.href} key={city.name} className="bg-white rounded-2xl px-5 py-4 flex items-center gap-3 shadow-sm hover:shadow-md transition-shadow cursor-pointer">
+              <Link href={city.href} key={city.name} className="bg-white rounded-2xl px-5 py-4 flex items-center gap-3 shadow-sm hover:shadow-md transition-shadow cursor-pointer">
                 <span className="flex-shrink-0">{city.icon}</span>
                 <span className="font-bold text-gray-900 text-base flex-1 text-left">{city.name}</span>
                 <span className="text-gray-400 text-sm">{city.dist}</span>
-              </a>
+              </Link>
             ))}
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-10">
             {cities.slice(3).map((city) => (
-              <a href={city.href} key={city.name} className="bg-white rounded-2xl px-5 py-4 flex items-center gap-3 shadow-sm hover:shadow-md transition-shadow cursor-pointer sm:col-span-1">
+              <Link href={city.href} key={city.name} className="bg-white rounded-2xl px-5 py-4 flex items-center gap-3 shadow-sm hover:shadow-md transition-shadow cursor-pointer sm:col-span-1">
                 <span className="flex-shrink-0">{city.icon}</span>
                 <span className="font-bold text-gray-900 text-base flex-1 text-left">{city.name}</span>
                 <span className="text-gray-400 text-sm">{city.dist}</span>
-              </a>
+              </Link>
             ))}
           </div>
-          <a href="/#academic-programs" className="inline-block bg-[#7cb983] hover:bg-[#6ba872] text-white font-bold px-10 py-4 rounded-full transition-all transform hover:scale-105 shadow-lg text-base">
+          <a href="/academics/" className="inline-block bg-[#7cb983] hover:bg-[#6ba872] text-white font-bold px-10 py-4 rounded-full transition-all transform hover:scale-105 shadow-lg text-base">
             View All Programmes
           </a>
         </div>

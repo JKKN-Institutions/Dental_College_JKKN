@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   keywords: 'best dental college in coimbatore, dental colleges in coimbatore, private dental colleges in coimbatore, top dental colleges in coimbatore, bds college coimbatore, jkkn dental coimbatore',
   robots: { index: true, follow: true },
   alternates: {
-    canonical: '/coimbatore/',
+    canonical: 'https://dental.jkkn.ac.in/coimbatore/',
   },
   openGraph: {
     title: 'Best Dental College in Coimbatore | JKKN Dental College',
@@ -31,6 +31,7 @@ export const metadata: Metadata = {
     title: 'Best Dental College in Coimbatore | JKKN Dental College',
     description: 'JKKN Dental College & Hospital — best dental college in Coimbatore region, 100 km on NH-544. DCI approved, NAAC accredited. Top private dental college with BDS & MDS programs, hostel & transport.',
     images: ['/images/BDS-hero-image.webp'],
+    site: '@jaborejkkn',
   },
 };
 
@@ -51,6 +52,7 @@ const faqSchema = {
 const orgSchema = {
   "@context": "https://schema.org",
   "@type": "EducationalOrganization",
+  "@id": "https://dental.jkkn.ac.in/#organization",
   "name": "JKKN Dental College & Hospital",
   "alternateName": "JKKN Dental",
   "url": "https://dental.jkkn.ac.in/",
@@ -81,6 +83,8 @@ const courseSchema = [
   {
     "@context": "https://schema.org",
     "@type": "Course",
+    "@id": "https://dental.jkkn.ac.in/academics/bds/#course",
+    "url": "https://dental.jkkn.ac.in/academics/bds/",
     "name": "BDS (Bachelor of Dental Surgery)",
     "description": "4-year undergraduate dental programme with 1-year internship. DCI approved, 100 seats. NEET qualified admission.",
     "provider": { "@type": "EducationalOrganization", "name": "JKKN Dental College & Hospital", "url": "https://dental.jkkn.ac.in/" },
@@ -91,6 +95,8 @@ const courseSchema = [
   {
     "@context": "https://schema.org",
     "@type": "Course",
+    "@id": "https://dental.jkkn.ac.in/academics/mds/#course",
+    "url": "https://dental.jkkn.ac.in/academics/mds/",
     "name": "MDS (Master of Dental Surgery)",
     "description": "3-year postgraduate dental programme with multiple specialisations including Orthodontics, Prosthodontics, Oral Surgery, Conservative Dentistry, and Periodontics.",
     "provider": { "@type": "EducationalOrganization", "name": "JKKN Dental College & Hospital", "url": "https://dental.jkkn.ac.in/" },

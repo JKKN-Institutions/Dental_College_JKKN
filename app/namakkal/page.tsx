@@ -1,6 +1,7 @@
 ﻿'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
 import { ChevronUp, ChevronDown, Hospital, Stethoscope, Microscope, TrendingUp, Users, Bus, Route, Train, Plane, Home, MapPin, BookOpen, Award, Wifi, GraduationCap, Target, Sparkles, Shield } from 'lucide-react';
 import { ScrollToTop } from '@/components/ScrollToTop';
 
@@ -18,22 +19,16 @@ const speakableSchema = {
   "@type": "WebPage",
   "name": "Namakkal Dental College | JKKN Dental College & Hospital",
   "url": "https://dental.jkkn.ac.in/namakkal/",
+  "dateModified": "2026-03-23",
   "speakable": {
     "@type": "SpeakableSpecification",
-    "cssSelector": ["h1", ".hero-description", "article p"],
+    "cssSelector": ["h1", ".text-lg", ".text-base"],
   },
 };
 
 
 export default function NamakkalPage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
-  const [formData, setFormData] = useState({
-    name: '',
-    mobile: '',
-    city: 'Namakkal',
-    programme: '',
-    question: '',
-  });
 
   const faqs = [
     {
@@ -92,7 +87,7 @@ export default function NamakkalPage() {
   const transportRows = [
     { icon: <Route className="w-6 h-6 text-[#006837]" />, label: 'ROUTE', text: 'NH-544 (Salem-Coimbatore Highway)' },
     { icon: <Bus className="w-6 h-6 text-[#006837]" />, label: 'BY BUS', text: 'Frequent local buses and auto-rickshaws available from Namakkal town to Komarapalayam' },
-    { icon: <Train className="w-6 h-6 text-[#006837]" />, label: 'NEAREST RAILWAY STATION', text: 'Salem Junction (~40 km from campus)' },
+    { icon: <Train className="w-6 h-6 text-[#006837]" />, label: 'NEAREST RAILWAY STATION', text: 'Tiruchengode Railway Station (~15 km) | Salem Junction (~40 km from campus)' },
     { icon: <Plane className="w-6 h-6 text-[#006837]" />, label: 'NEAREST AIRPORT', text: 'Coimbatore International Airport (Code: CJB) (~110 km)' },
     { icon: <MapPin className="w-6 h-6 text-[#006837]" />, label: 'CAMPUS ADDRESS', text: 'JKKN Institutions, Natarajapuram, NH-544, Komarapalayam (TK), Namakkal (DT), Tamil Nadu - 638183' },
   ];
@@ -259,7 +254,7 @@ export default function NamakkalPage() {
                   ))}
                 </div>
                 <p className="text-gray-400 text-sm mb-6">{prog.eligibility}</p>
-                <a href="tel:+919345855001" target="_blank" rel="nofollow noopener noreferrer" className="block text-center bg-[#FBFBEE] hover:bg-[#e8f5e9] text-[#006837] font-semibold py-3 rounded-xl transition-colors text-sm">
+                <a href="tel:+919345855001" className="block text-center bg-[#FBFBEE] hover:bg-[#e8f5e9] text-[#006837] font-semibold py-3 rounded-xl transition-colors text-sm">
                   Enquire About This Course
                 </a>
               </div>
@@ -426,23 +421,23 @@ export default function NamakkalPage() {
           <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-10" />
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
             {cities.slice(0, 3).map((city) => (
-              <a href={city.href} key={city.name} className="bg-white rounded-2xl px-5 py-4 flex items-center gap-3 shadow-sm hover:shadow-md transition-shadow cursor-pointer">
+              <Link href={city.href} key={city.name} className="bg-white rounded-2xl px-5 py-4 flex items-center gap-3 shadow-sm hover:shadow-md transition-shadow cursor-pointer">
                 <span className="flex-shrink-0">{city.icon}</span>
                 <span className="font-bold text-gray-900 text-base flex-1 text-left">{city.name}</span>
                 <span className="text-gray-400 text-sm">{city.dist}</span>
-              </a>
+              </Link>
             ))}
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-10">
             {cities.slice(3).map((city) => (
-              <a href={city.href} key={city.name} className="bg-white rounded-2xl px-5 py-4 flex items-center gap-3 shadow-sm hover:shadow-md transition-shadow cursor-pointer sm:col-span-1">
+              <Link href={city.href} key={city.name} className="bg-white rounded-2xl px-5 py-4 flex items-center gap-3 shadow-sm hover:shadow-md transition-shadow cursor-pointer sm:col-span-1">
                 <span className="flex-shrink-0">{city.icon}</span>
                 <span className="font-bold text-gray-900 text-base flex-1 text-left">{city.name}</span>
                 <span className="text-gray-400 text-sm">{city.dist}</span>
-              </a>
+              </Link>
             ))}
           </div>
-          <a href="/#academic-programs" className="inline-block bg-[#7cb983] hover:bg-[#6ba872] text-white font-bold px-10 py-4 rounded-full transition-all transform hover:scale-105 shadow-lg text-base">
+          <a href="/academics/" className="inline-block bg-[#7cb983] hover:bg-[#6ba872] text-white font-bold px-10 py-4 rounded-full transition-all transform hover:scale-105 shadow-lg text-base">
             View All Programmes
           </a>
         </div>

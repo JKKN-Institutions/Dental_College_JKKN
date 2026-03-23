@@ -4,15 +4,15 @@ import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
   title: { absolute: 'Dental Colleges in Salem | JKKN Dental College' },
-  description: 'JKKN Dental College & Hospital — among the top dental colleges in Salem region, just 40 km on NH-544. DCI approved, NAAC accredited. BDS & MDS programs with hostel & transport.',
+  description: 'JKKN Dental College & Hospital — among the top dental colleges in Salem region, just 45 km on NH-544. DCI approved, NAAC accredited. BDS & MDS programs with hostel & transport.',
   keywords: 'dental colleges in salem, top dental colleges, bds colleges in salem, dental college salem, mds college salem, jkkn dental salem',
   robots: { index: true, follow: true },
   alternates: {
-    canonical: '/salem/',
+    canonical: 'https://dental.jkkn.ac.in/salem/',
   },
   openGraph: {
     title: 'Dental Colleges in Salem | JKKN Dental College',
-    description: 'JKKN Dental College & Hospital — among the top dental colleges in Salem region, just 40 km on NH-544. DCI approved, NAAC accredited. BDS & MDS programs with hostel & transport.',
+    description: 'JKKN Dental College & Hospital — among the top dental colleges in Salem region, just 45 km on NH-544. DCI approved, NAAC accredited. BDS & MDS programs with hostel & transport.',
     url: 'https://dental.jkkn.ac.in/salem/',
     siteName: 'JKKN Dental College & Hospital',
     images: [
@@ -29,8 +29,9 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Dental Colleges in Salem | JKKN Dental College',
-    description: 'JKKN Dental College & Hospital — among the top dental colleges in Salem region, just 40 km on NH-544. DCI approved, NAAC accredited. BDS & MDS programs with hostel & transport.',
+    description: 'JKKN Dental College & Hospital — among the top dental colleges in Salem region, just 45 km on NH-544. DCI approved, NAAC accredited. BDS & MDS programs with hostel & transport.',
     images: ['/images/BDS-hero-image.webp'],
+    site: '@jaborejkkn',
   },
 };
 
@@ -51,6 +52,7 @@ const faqSchema = {
 const orgSchema = {
   "@context": "https://schema.org",
   "@type": "EducationalOrganization",
+  "@id": "https://dental.jkkn.ac.in/#organization",
   "name": "JKKN Dental College & Hospital",
   "alternateName": "JKKN Dental",
   "url": "https://dental.jkkn.ac.in/",
@@ -81,6 +83,8 @@ const courseSchema = [
   {
     "@context": "https://schema.org",
     "@type": "Course",
+    "@id": "https://dental.jkkn.ac.in/academics/bds/#course",
+    "url": "https://dental.jkkn.ac.in/academics/bds/",
     "name": "BDS (Bachelor of Dental Surgery)",
     "description": "4-year undergraduate dental programme with 1-year internship. DCI approved, 100 seats. NEET qualified admission.",
     "provider": { "@type": "EducationalOrganization", "name": "JKKN Dental College & Hospital", "url": "https://dental.jkkn.ac.in/" },
@@ -91,6 +95,8 @@ const courseSchema = [
   {
     "@context": "https://schema.org",
     "@type": "Course",
+    "@id": "https://dental.jkkn.ac.in/academics/mds/#course",
+    "url": "https://dental.jkkn.ac.in/academics/mds/",
     "name": "MDS (Master of Dental Surgery)",
     "description": "3-year postgraduate dental programme with multiple specialisations including Orthodontics, Prosthodontics, Oral Surgery, Conservative Dentistry, and Periodontics.",
     "provider": { "@type": "EducationalOrganization", "name": "JKKN Dental College & Hospital", "url": "https://dental.jkkn.ac.in/" },

@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   keywords: 'dental college in erode, top dental colleges, bds colleges in erode, erode dental college, mds college erode, jkkn dental erode',
   robots: { index: true, follow: true },
   alternates: {
-    canonical: '/erode/',
+    canonical: 'https://dental.jkkn.ac.in/erode/',
   },
   openGraph: {
     title: 'Dental College in Erode | JKKN Dental College',
@@ -31,6 +31,7 @@ export const metadata: Metadata = {
     title: 'Dental College in Erode | JKKN Dental College',
     description: 'JKKN Dental College & Hospital — a top dental college in Erode district, just 30 km on NH-544. DCI approved, NAAC accredited. BDS & MDS programs with hostel & transport.',
     images: ['/images/BDS-hero-image.webp'],
+    site: '@jaborejkkn',
   },
 };
 
@@ -51,6 +52,7 @@ const faqSchema = {
 const orgSchema = {
   "@context": "https://schema.org",
   "@type": "EducationalOrganization",
+  "@id": "https://dental.jkkn.ac.in/#organization",
   "name": "JKKN Dental College & Hospital",
   "alternateName": "JKKN Dental",
   "url": "https://dental.jkkn.ac.in/",
@@ -81,6 +83,8 @@ const courseSchema = [
   {
     "@context": "https://schema.org",
     "@type": "Course",
+    "@id": "https://dental.jkkn.ac.in/academics/bds/#course",
+    "url": "https://dental.jkkn.ac.in/academics/bds/",
     "name": "BDS (Bachelor of Dental Surgery)",
     "description": "4-year undergraduate dental programme with 1-year internship. DCI approved, 100 seats. NEET qualified admission.",
     "provider": { "@type": "EducationalOrganization", "name": "JKKN Dental College & Hospital", "url": "https://dental.jkkn.ac.in/" },
@@ -91,6 +95,8 @@ const courseSchema = [
   {
     "@context": "https://schema.org",
     "@type": "Course",
+    "@id": "https://dental.jkkn.ac.in/academics/mds/#course",
+    "url": "https://dental.jkkn.ac.in/academics/mds/",
     "name": "MDS (Master of Dental Surgery)",
     "description": "3-year postgraduate dental programme with multiple specialisations including Orthodontics, Prosthodontics, Oral Surgery, Conservative Dentistry, and Periodontics.",
     "provider": { "@type": "EducationalOrganization", "name": "JKKN Dental College & Hospital", "url": "https://dental.jkkn.ac.in/" },
