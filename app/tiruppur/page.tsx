@@ -19,11 +19,11 @@ export default function TiruppurPage() {
     },
     {
       q: 'Does JKKN Dental have its own hospital?',
-      a: 'Yes, JKKN Dental College & Hospital has its own attached dental hospital on campus. This hospital serves patients from the surrounding community and provides BDS students with extensive hands-on clinical training from the early years of the programme.',
+      a: 'Yes, JKKN Dental College & Hospital has a 200+ chair dental hospital with 100+ beds right on campus. The hospital serves patients from across western Tamil Nadu including Tiruppur, Erode, and Coimbatore districts — treating 500+ patients daily, ensuring students get exceptional clinical training from Year 1.',
     },
     {
       q: 'What MDS specialisations are available?',
-      a: 'JKKN Dental College & Hospital offers MDS in multiple specialisations including Orthodontics, Prosthodontics, Oral Surgery, Conservative Dentistry, Periodontics, and more. Admission is through NEET MDS counselling. Contact the admission office for the full list of available specialisations.',
+      a: 'JKKN Dental offers MDS in five specialisations: Orthodontics & Dentofacial Orthopaedics, Prosthodontics & Crown and Bridge, Oral & Maxillofacial Surgery, Conservative Dentistry & Endodontics, and Periodontics. Tiruppur students benefit from on-campus hostel accommodation and access to diverse clinical cases from across western Tamil Nadu.',
     },
     {
       q: 'Does JKKN Dental provide hostel for Tiruppur students?',
@@ -31,7 +31,7 @@ export default function TiruppurPage() {
     },
     {
       q: 'How can I apply for admission at JKKN Dental?',
-      a: 'You can apply online through the official website at https://dental.jkkn.ac.in/ or visit the campus directly. Admissions for 2026-27 are currently open. Contact the admission office for guidance.',
+      a: 'Tiruppur students can apply online at https://dental.jkkn.ac.in/ or call +91 9345855001 for personalised guidance. The campus is accessible via Erode (NH-544). Admissions for BDS and MDS 2026-27 are currently open — hostel accommodation is available for outstation students.',
     },
   ];
 

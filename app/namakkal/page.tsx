@@ -19,11 +19,11 @@ export default function NamakkalPage() {
     },
     {
       q: 'Does JKKN Dental have its own hospital?',
-      a: 'Yes, JKKN Dental College & Hospital has its own attached dental hospital on campus. This hospital serves patients from the surrounding community and provides BDS students with extensive hands-on clinical training from the early years of the programme.',
+      a: 'Yes, JKKN Dental College & Hospital has a fully equipped 200+ chair dental hospital with 100+ beds on the same campus. Being in Namakkal district, the hospital draws a large patient base from the local community — students treat 500+ patients daily and gain extensive clinical skills from their very first year.',
     },
     {
       q: 'What MDS specialisations are available?',
-      a: 'JKKN Dental College & Hospital offers MDS in multiple specialisations including Orthodontics, Prosthodontics, Oral Surgery, Conservative Dentistry, Periodontics, and more. Admission is through NEET MDS counselling. Contact the admission office for the full list of available specialisations.',
+      a: 'JKKN Dental offers MDS in five specialisations: Orthodontics & Dentofacial Orthopaedics, Prosthodontics & Crown and Bridge, Oral & Maxillofacial Surgery, Conservative Dentistry & Endodontics, and Periodontics. Located right in Namakkal district, MDS students benefit from high patient volume and diverse clinical cases at the attached hospital.',
     },
     {
       q: 'Does JKKN Dental provide hostel for Namakkal students?',
@@ -31,7 +31,7 @@ export default function NamakkalPage() {
     },
     {
       q: 'How can I apply for admission at JKKN Dental?',
-      a: 'You can apply online through the official website at https://dental.jkkn.ac.in/ or visit the campus directly. Admissions for 2026-27 are currently open. Contact the admission office for guidance.',
+      a: 'Namakkal students can apply online at https://dental.jkkn.ac.in/ or simply visit the campus in Komarapalayam — barely 15-20 minutes away. Admissions for BDS and MDS 2026-27 are currently open. Call +91 9345855001 for personalised guidance on eligibility, fees, and the counselling process.',
     },
   ];
 
@@ -125,19 +125,19 @@ export default function NamakkalPage() {
           Namakkal is home — and so are we. JKKN Dental College &amp; Hospital offers top-tier dental programmes with
           90%+ placement support — located right in your home district.
         </p>
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 mb-10 w-full max-w-2xl">
+        <ul className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 mb-10 w-full max-w-2xl list-none p-0 m-0">
           {[
             { value: '90%+', label: 'PLACEMENTS' },
             { value: '8-10', label: 'LPA HIGHEST' },
             { value: '10km', label: 'FROM NAMAKKAL' },
             { value: '2', label: 'PROGRAMMES' },
           ].map((stat) => (
-            <div key={stat.label} className="bg-white/10 backdrop-blur border border-white/20 rounded-2xl px-4 py-4 text-white">
+            <li key={stat.label} className="bg-white/10 backdrop-blur border border-white/20 rounded-2xl px-4 py-4 text-white">
               <div className="font-extrabold text-white" style={{ fontSize: 'clamp(1.5rem, 3vw, 2rem)' }}>{stat.value}</div>
               <div className="text-xs font-semibold tracking-widest text-white/70 mt-1">{stat.label}</div>
-            </div>
+            </li>
           ))}
-        </div>
+        </ul>
         <div className="flex flex-col sm:flex-row gap-4 items-center">
           <a href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8" target="_blank" rel="nofollow noopener noreferrer" className="bg-[#7cb983] hover:bg-[#6ba872] text-white font-bold px-8 py-4 rounded-full transition-all transform hover:scale-105 shadow-lg text-base">
             Apply Now — 2026-27
@@ -265,11 +265,11 @@ export default function NamakkalPage() {
             ))}
           </div>
           <p className="text-xs font-semibold tracking-widest text-gray-400 mb-5 uppercase">Companies That Hire From Us</p>
-          <div className="flex flex-wrap justify-center gap-3">
+          <ul className="flex flex-wrap justify-center gap-3 list-none p-0 m-0">
             {companies.map((company) => (
-              <span key={company} className="border border-gray-200 rounded-full px-5 py-2 text-sm text-gray-700 bg-white">{company}</span>
+              <li key={company} className="border border-gray-200 rounded-full px-5 py-2 text-sm text-gray-700 bg-white">{company}</li>
             ))}
-          </div>
+          </ul>
         </div>
       </section>
 
