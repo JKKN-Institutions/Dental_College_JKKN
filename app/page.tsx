@@ -137,10 +137,11 @@ export default function Home() {
     }
   };
 
-  // College/University Schema
+  // College/University Schema (consolidated — single canonical entity)
   const collegeSchema = {
     "@context": "https://schema.org",
     "@type": ["CollegeOrUniversity", "EducationalOrganization"],
+    "@id": "https://dental.jkkn.ac.in/#college",
     "name": "JKKN Dental College & Hospital",
     "alternateName": ["J.K.K. Nattraja Dental College & Hospital", "ஜே.கே.கே. நட்ராஜா பல் மருத்துவக் கல்லூரி மற்றும் மருத்துவமனை"],
     "url": "https://dental.jkkn.ac.in",
@@ -195,8 +196,14 @@ export default function Home() {
       "https://www.linkedin.com/school/jkkndental/",
       "https://www.youtube.com/playlist?list=PL6QsTq-__HhvqQ28WcrDAwPa9jeMSK3AO",
       "https://maps.app.goo.gl/mXx6rFRqpS9U76BK6",
+      "https://admission.jkkn.ac.in/",
+      "https://placements.jkkn.ac.in/",
       "https://jkkn.ac.in/",
-      "https://dciindia.gov.in/"
+      "https://dciindia.gov.in/",
+      "https://www.shiksha.com/college/j-k-k-nattraja-dental-college-and-hospital-namakkal-78331",
+      "https://collegedunia.com/college/10574-jkk-nattraja-dental-college-and-hospital-jkkndch-namakkal",
+      "https://www.careers360.com/colleges/jkk-nattraja-dental-college-and-hospital-komarapalayam",
+      "https://en.wikipedia.org/wiki/J._K._K._Nattraja_Educational_Institutions"
     ],
     "parentOrganization": {
       "@type": "EducationalOrganization",
@@ -613,43 +620,12 @@ export default function Home() {
     "dateModified": "2026-03-21"
   };
 
-  // Schema #10: Organization sameAs Enhancement
-  const orgSameAsSchema = {
-    "@context": "https://schema.org",
-    "@type": "CollegeOrUniversity",
-    "@id": "https://dental.jkkn.ac.in/#college",
-    "name": "JKKN Dental College & Hospital",
-    "url": "https://dental.jkkn.ac.in/",
-    "sameAs": [
-      "https://www.facebook.com/jkkndental/",
-      "https://www.instagram.com/jkkndental/",
-      "https://www.linkedin.com/school/jkkndental/",
-      "https://www.youtube.com/playlist?list=PL6QsTq-__HhvqQ28WcrDAwPa9jeMSK3AO",
-      "https://maps.app.goo.gl/mXx6rFRqpS9U76BK6",
-      "https://admission.jkkn.ac.in/",
-      "https://placements.jkkn.ac.in/",
-      "https://jkkn.ac.in/",
-      "https://dciindia.gov.in/",
-      "https://www.shiksha.com/college/j-k-k-nattraja-dental-college-and-hospital-namakkal-78331",
-      "https://collegedunia.com/college/10574-jkk-nattraja-dental-college-and-hospital-jkkndch-namakkal",
-      "https://www.careers360.com/colleges/jkk-nattraja-dental-college-and-hospital-komarapalayam",
-      "https://en.wikipedia.org/wiki/J._K._K._Nattraja_Educational_Institutions"
-    ],
-    "parentOrganization": {
-      "@type": "EducationalOrganization",
-      "@id": "https://jkkn.ac.in/#organization",
-      "name": "JKKN Institutions",
-      "url": "https://jkkn.ac.in/"
-    }
-  };
-
   return (
     <main className="overflow-x-hidden w-full">
       <StructuredData data={medicalOrgSchema} />
       <StructuredData data={dentistLocalSchema} />
       <StructuredData data={websiteSchema} />
       <StructuredData data={webPageSchema} />
-      <StructuredData data={orgSameAsSchema} />
       {/* [UPDATE: Uncomment when principal name is confirmed] */}
       <StructuredData data={principalSchema} />
       <StructuredData data={bdsSchema} />
