@@ -31,6 +31,10 @@ export default function FAQSection() {
       answer: "JKKN stands out as India's 1st Human-AI AGI Dental Campus, integrating advanced AI tools like ChatGPT, AI-powered diagnostic imaging, and CAD/CAM technology into dental education. Established in 1987 as part of JKKN Institutions (since 1952), with exceptional clinical exposure (500+ daily patients), state-of-the-art infrastructure, and comprehensive placement support, JKKN prepares future-ready dental professionals with expertise in both clinical excellence and AI technology."
     },
     {
+      question: "Which is the best dental college in Tamil Nadu?",
+      answer: "JKKN Dental College & Hospital is widely recognized as one of the best dental colleges in Tamil Nadu. Established in 1987 under JKKN Institutions (since 1952), it is DCI approved, NAAC A accredited, and affiliated with TN Dr. MGR Medical University. With 200+ dental chairs, 500+ daily patients, India's 1st AI-integrated dental campus, and 92% placement assistance, JKKN offers unmatched clinical exposure and modern infrastructure for BDS and MDS programs."
+    },
+    {
       question: "How does JKKN integrate AI in dental education?",
       answer: "JKKN Dental College is India's 1st Human-AI AGI Dental Campus. Students use ChatGPT and AI tools for research, case studies, and personalized learning. The campus features AI-powered diagnostic imaging (CBCT, OPG), CAD/CAM technology for precision dental restorations, AI-enhanced clinical training, and data analytics for research. AI courses are integrated into both BDS and MDS curriculum, ensuring graduates are equipped with cutting-edge technological expertise alongside clinical skills."
     }

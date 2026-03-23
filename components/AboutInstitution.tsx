@@ -46,7 +46,7 @@ export default function AboutInstitution() {
               Over Five Decades of Excellence in Progressive Education
             </h2>
             <p className="text-gray-600 text-sm sm:text-base md:text-lg mb-4 sm:mb-6 leading-relaxed">
-            JKKN Dental College & Hospital is a premier dental institution under JKKN Institutions, founded on the vision of Founder J.K.K. Nattraja Chettiar (1895-1995).
+            JKKN Dental College & Hospital is one of the best dental colleges in Tamil Nadu — a premier institution under JKKN Institutions, founded on the vision of Founder J.K.K. Nattraja Chettiar (1895-1995).
             </p>
             <p className="text-gray-600 text-sm sm:text-base md:text-lg mb-6 sm:mb-8 leading-relaxed">
               Located in Komarapalayam, Namakkal District, Tamil Nadu, our dental college offers an ideal environment for focused learning. Affiliated with The Tamil Nadu Dr. M.G.R. Medical University and approved by DCI, we produce competent dental professionals.

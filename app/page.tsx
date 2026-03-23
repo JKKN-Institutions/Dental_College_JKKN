@@ -18,17 +18,17 @@ const FacultySection = dynamic(() => import('@/components/FacultySection'));
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'JKKN Dental College & Hospital | DCI Approved, Tamil Nadu',
-  description: 'JKKN Dental College, Komarapalayam — DCI approved, NAAC A accredited. BDS (100 seats) & MDS (5 specializations). 200+ dental chairs, 92%+ placement rate.',
+  title: 'JKKN Dental College | Best Dental College in Tamil Nadu',
+  description: 'Best dental college in Tamil Nadu — JKKN Dental College, DCI approved & NAAC A. BDS & MDS programs, 200+ dental chairs, 92% placement rate.',
   keywords: 'JKKN dental college, dental college Tamil Nadu, dental college Namakkal, BDS Tamil Nadu, MDS Tamil Nadu, dental college near Salem, dental college near Erode, DCI approved dental college, NAAC accredited dental college, dental college Komarapalayam',
   openGraph: {
-    title: 'JKKN Dental College & Hospital | DCI Approved, Tamil Nadu',
-    description: 'JKKN Dental College, Komarapalayam — DCI approved, NAAC A accredited. BDS (100 seats) & MDS (5 specializations). 200+ dental chairs, 92%+ placement rate.',
+    title: 'JKKN Dental College | Best Dental College in Tamil Nadu',
+    description: 'Best dental college in Tamil Nadu — JKKN Dental College, DCI approved & NAAC A. BDS & MDS programs, 200+ dental chairs, 92% placement rate.',
     url: 'https://dental.jkkn.ac.in/',
     siteName: 'JKKN Dental College & Hospital',
     images: [
       {
-        url: '/images/BDS-hero-image.png',
+        url: 'https://dental.jkkn.ac.in/images/BDS-hero-image.png',
         width: 1200,
         height: 630,
         alt: 'JKKN Dental College & Hospital campus at Komarapalayam, Namakkal District, Tamil Nadu'
@@ -39,8 +39,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'JKKN Dental College & Hospital | DCI Approved, Tamil Nadu',
-    description: 'JKKN Dental College, Komarapalayam — DCI approved, NAAC A accredited. BDS (100 seats) & MDS (5 specializations). 200+ dental chairs, 92%+ placement rate.',
+    title: 'JKKN Dental College | Best Dental College in Tamil Nadu',
+    description: 'Best dental college in Tamil Nadu — JKKN Dental College, DCI approved & NAAC A. BDS & MDS programs, 200+ dental chairs, 92% placement rate.',
     images: ['/images/BDS-hero-image.png'],
   },
   alternates: {
@@ -288,6 +288,14 @@ export default function Home() {
         "acceptedAnswer": {
           "@type": "Answer",
           "text": "Bachelor of Dental Surgery fees at JKKN Dental College vary by admission quota as per Tamil Nadu government regulations, with annual tuition ranging from three to five lakhs."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which is the best dental college in Tamil Nadu?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "JKKN Dental College and Hospital is widely recognized as one of the best dental colleges in Tamil Nadu, featuring DCI approval, NAAC A accreditation, two hundred dental chairs, five hundred daily patients, and India's first AI-integrated dental campus since nineteen eighty-seven."
         }
       },
       {

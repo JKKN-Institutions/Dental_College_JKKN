@@ -7,7 +7,7 @@ export default function WhyChooseJKKN() {
           <div>
             <h3 className="text-[#7cb983] text-xs sm:text-sm md:text-base font-bold uppercase tracking-wider mb-3 sm:mb-4">Why Choose JKKN</h3>
             <h2 className="text-2xl xs:text-3xl sm:text-4xl font-bold mb-8 sm:mb-10 md:mb-12 leading-tight">
-              Why JKKN Dental College is Your Best Choice
+              Why JKKN is the Best Dental College in Tamil Nadu
             </h2>
 
             <div className="space-y-5 sm:space-y-6 md:space-y-8">

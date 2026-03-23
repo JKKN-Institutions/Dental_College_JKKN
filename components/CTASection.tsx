@@ -12,7 +12,7 @@ export default function CTASection() {
 
         {/* Description */}
         <p className="text-white text-sm sm:text-base md:text-lg mb-6 sm:mb-8 md:mb-10 max-w-3xl mx-auto leading-relaxed">
-          Join JKKN Dental College & Hospital and become part of over five decades of educational excellence. Applications for 2026-27 are now open.
+          Join the best dental college in Tamil Nadu — JKKN Dental College & Hospital — and become part of over five decades of educational excellence. Applications for 2026-27 are now open.
         </p>
 
         {/* Buttons */}
