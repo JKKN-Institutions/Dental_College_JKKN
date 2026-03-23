@@ -5,7 +5,7 @@ import { jkknSameAsUrls } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: { absolute: 'Dental Colleges in Tiruppur | JKKN Dental College' },
-  description: 'JKKN Dental College & Hospital — among the top dental colleges in Tiruppur region, 80 km via NH-544. DCI approved, NAAC accredited. BDS & MDS programs with hostel & transport.',
+  description: 'Top dental college near Tiruppur — JKKN Dental, 80 km via NH-544. DCI approved, NAAC accredited. BDS & MDS with 90%+ placements & hostel.',
   keywords: 'dental colleges in tiruppur, top dental colleges, bds colleges in tiruppur, dental college tiruppur, mds college tiruppur, jkkn dental tiruppur',
   robots: { index: true, follow: true },
   alternates: {
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Dental Colleges in Tiruppur | JKKN Dental College',
-    description: 'JKKN Dental College & Hospital — among the top dental colleges in Tiruppur region, 80 km via NH-544. DCI approved, NAAC accredited. BDS & MDS programs with hostel & transport.',
+    description: 'Top dental college near Tiruppur — JKKN Dental, 80 km via NH-544. DCI approved, NAAC accredited. BDS & MDS with 90%+ placements & hostel.',
     url: 'https://dental.jkkn.ac.in/tiruppur/',
     siteName: 'JKKN Dental College & Hospital',
     images: [
@@ -29,10 +29,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    site: '@jaborejkkn',
     title: 'Dental Colleges in Tiruppur | JKKN Dental College',
-    description: 'JKKN Dental College & Hospital — among the top dental colleges in Tiruppur region, 80 km via NH-544. DCI approved, NAAC accredited. BDS & MDS programs with hostel & transport.',
+    description: 'Top dental college near Tiruppur — JKKN Dental, 80 km via NH-544. DCI approved, NAAC accredited. BDS & MDS with 90%+ placements & hostel.',
     images: ['/images/BDS-hero-image.webp'],
+    site: '@jaborejkkn',
   },
 };
 
@@ -122,7 +122,7 @@ const eventSchema = {
   "startDate": "2026-03-01",
   "endDate": "2026-08-31",
   "eventStatus": "https://schema.org/EventScheduled",
-  "eventAttendanceMode": "https://schema.org/MixedEventAttendanceMode",
+  "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
   "location": {
     "@type": "Place",
     "name": "JKKN Dental College & Hospital",

@@ -362,11 +362,11 @@ export default function CoimbatorePage() {
             <div className="bg-white rounded-2xl p-6 text-left shadow-sm">
               <div className="text-5xl text-gray-200 font-serif leading-none mb-3 select-none">"</div>
               <p className="text-gray-500 text-sm leading-relaxed italic mb-6">
-                JKKN&apos;s MDS in Oral Medicine programme is research-driven with published faculty. The 100+ bed hospital and multi-specialty setup meant I worked on complex cases that most postgraduates only read about in textbooks.
+                JKKN&apos;s MDS in Oral Surgery programme is research-driven with published faculty. The 100+ bed hospital and multi-specialty setup meant I worked on complex cases that most postgraduates only read about in textbooks.
               </p>
               <div>
                 <p className="font-bold text-gray-900 text-sm">Praveen Raj K.</p>
-                <p className="text-gray-400 text-xs mt-0.5">MDS Oral Medicine 2023 • Fortis Healthcare, Bengaluru</p>
+                <p className="text-gray-400 text-xs mt-0.5">MDS Oral Surgery 2023 • Fortis Healthcare, Bengaluru</p>
               </div>
             </div>
             <div className="bg-white rounded-2xl p-6 text-left shadow-sm">

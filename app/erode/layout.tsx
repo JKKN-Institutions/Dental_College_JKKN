@@ -5,7 +5,7 @@ import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
   title: { absolute: 'Dental College in Erode | JKKN Dental College' },
-  description: 'JKKN Dental College & Hospital — a top dental college in Erode district, just 30 km on NH-544. DCI approved, NAAC accredited. BDS & MDS programs with hostel & transport.',
+  description: 'Top dental college near Erode — JKKN Dental, 30 km on NH-544. DCI approved, NAAC accredited. BDS & MDS with 90%+ placements, hostel & transport.',
   keywords: 'dental college in erode, top dental colleges, bds colleges in erode, erode dental college, mds college erode, jkkn dental erode',
   robots: { index: true, follow: true },
   alternates: {
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Dental College in Erode | JKKN Dental College',
-    description: 'JKKN Dental College & Hospital — a top dental college in Erode district, just 30 km on NH-544. DCI approved, NAAC accredited. BDS & MDS programs with hostel & transport.',
+    description: 'Top dental college near Erode — JKKN Dental, 30 km on NH-544. DCI approved, NAAC accredited. BDS & MDS with 90%+ placements, hostel & transport.',
     url: 'https://dental.jkkn.ac.in/erode/',
     siteName: 'JKKN Dental College & Hospital',
     images: [
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Dental College in Erode | JKKN Dental College',
-    description: 'JKKN Dental College & Hospital — a top dental college in Erode district, just 30 km on NH-544. DCI approved, NAAC accredited. BDS & MDS programs with hostel & transport.',
+    description: 'Top dental college near Erode — JKKN Dental, 30 km on NH-544. DCI approved, NAAC accredited. BDS & MDS with 90%+ placements, hostel & transport.',
     images: ['/images/BDS-hero-image.webp'],
     site: '@jaborejkkn',
   },
@@ -122,7 +122,7 @@ const eventSchema = {
   "startDate": "2026-03-01",
   "endDate": "2026-08-31",
   "eventStatus": "https://schema.org/EventScheduled",
-  "eventAttendanceMode": "https://schema.org/MixedEventAttendanceMode",
+  "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
   "location": {
     "@type": "Place",
     "name": "JKKN Dental College & Hospital",

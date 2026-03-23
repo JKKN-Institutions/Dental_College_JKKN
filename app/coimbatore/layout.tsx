@@ -5,7 +5,7 @@ import { jkknSameAsUrls } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: { absolute: 'Best Dental College in Coimbatore | JKKN Dental College' },
-  description: 'JKKN Dental College & Hospital — best dental college in Coimbatore region, 100 km on NH-544. DCI approved, NAAC accredited. Top private dental college with BDS & MDS programs, hostel & transport.',
+  description: 'Best dental college in Coimbatore region — JKKN Dental, 100 km on NH-544. DCI approved, NAAC accredited. BDS & MDS with 90%+ placements & hostel.',
   keywords: 'best dental college in coimbatore, dental colleges in coimbatore, private dental colleges in coimbatore, top dental colleges in coimbatore, bds college coimbatore, jkkn dental coimbatore',
   robots: { index: true, follow: true },
   alternates: {
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Best Dental College in Coimbatore | JKKN Dental College',
-    description: 'JKKN Dental College & Hospital — best dental college in Coimbatore region, 100 km on NH-544. DCI approved, NAAC accredited. Top private dental college with BDS & MDS programs, hostel & transport.',
+    description: 'Best dental college in Coimbatore region — JKKN Dental, 100 km on NH-544. DCI approved, NAAC accredited. BDS & MDS with 90%+ placements & hostel.',
     url: 'https://dental.jkkn.ac.in/coimbatore/',
     siteName: 'JKKN Dental College & Hospital',
     images: [
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Best Dental College in Coimbatore | JKKN Dental College',
-    description: 'JKKN Dental College & Hospital — best dental college in Coimbatore region, 100 km on NH-544. DCI approved, NAAC accredited. Top private dental college with BDS & MDS programs, hostel & transport.',
+    description: 'Best dental college in Coimbatore region — JKKN Dental, 100 km on NH-544. DCI approved, NAAC accredited. BDS & MDS with 90%+ placements & hostel.',
     images: ['/images/BDS-hero-image.webp'],
     site: '@jaborejkkn',
   },
@@ -95,7 +95,7 @@ const eventSchema = {
   "startDate": "2026-03-01",
   "endDate": "2026-08-31",
   "eventStatus": "https://schema.org/EventScheduled",
-  "eventAttendanceMode": "https://schema.org/MixedEventAttendanceMode",
+  "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
   "location": {
     "@type": "Place",
     "name": "JKKN Dental College & Hospital",

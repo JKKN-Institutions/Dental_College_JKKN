@@ -5,7 +5,7 @@ import { jkknSameAsUrls } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: { absolute: 'Dental Colleges in Salem | JKKN Dental College' },
-  description: 'JKKN Dental College & Hospital — among the top dental colleges in Salem region, just 45 km on NH-544. DCI approved, NAAC accredited. BDS & MDS programs with hostel & transport.',
+  description: 'Top dental college near Salem — JKKN Dental, 45 km on NH-544. DCI approved, NAAC accredited. BDS & MDS with 90%+ placements, hostel & transport.',
   keywords: 'dental colleges in salem, top dental colleges, bds colleges in salem, dental college salem, mds college salem, jkkn dental salem',
   robots: { index: true, follow: true },
   alternates: {
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Dental Colleges in Salem | JKKN Dental College',
-    description: 'JKKN Dental College & Hospital — among the top dental colleges in Salem region, just 45 km on NH-544. DCI approved, NAAC accredited. BDS & MDS programs with hostel & transport.',
+    description: 'Top dental college near Salem — JKKN Dental, 45 km on NH-544. DCI approved, NAAC accredited. BDS & MDS with 90%+ placements, hostel & transport.',
     url: 'https://dental.jkkn.ac.in/salem/',
     siteName: 'JKKN Dental College & Hospital',
     images: [
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Dental Colleges in Salem | JKKN Dental College',
-    description: 'JKKN Dental College & Hospital — among the top dental colleges in Salem region, just 45 km on NH-544. DCI approved, NAAC accredited. BDS & MDS programs with hostel & transport.',
+    description: 'Top dental college near Salem — JKKN Dental, 45 km on NH-544. DCI approved, NAAC accredited. BDS & MDS with 90%+ placements, hostel & transport.',
     images: ['/images/BDS-hero-image.webp'],
     site: '@jaborejkkn',
   },
@@ -122,7 +122,7 @@ const eventSchema = {
   "startDate": "2026-03-01",
   "endDate": "2026-08-31",
   "eventStatus": "https://schema.org/EventScheduled",
-  "eventAttendanceMode": "https://schema.org/MixedEventAttendanceMode",
+  "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
   "location": {
     "@type": "Place",
     "name": "JKKN Dental College & Hospital",

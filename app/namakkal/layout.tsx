@@ -5,7 +5,7 @@ import { jkknSameAsUrls } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: { absolute: 'Namakkal Dental College | JKKN Dental College & Hospital' },
-  description: 'JKKN Dental College & Hospital — Namakkal dental college in Komarapalayam. DCI approved, NAAC accredited. BDS & MDS programs with 200+ chair hospital. Top dental college in Namakkal district.',
+  description: 'Namakkal dental college — JKKN Dental, Komarapalayam. DCI approved, NAAC accredited. BDS & MDS with 200+ chair hospital & 90%+ placements.',
   keywords: 'namakkal dental college, top dental colleges, namakkal bds college, dental college namakkal, mds college namakkal, jkkn dental namakkal, dental college komarapalayam',
   robots: { index: true, follow: true },
   alternates: {
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Namakkal Dental College | JKKN Dental College & Hospital',
-    description: 'JKKN Dental College & Hospital — Namakkal dental college in Komarapalayam. DCI approved, NAAC accredited. BDS & MDS programs with 200+ chair hospital. Top dental college in Namakkal district.',
+    description: 'Namakkal dental college — JKKN Dental, Komarapalayam. DCI approved, NAAC accredited. BDS & MDS with 200+ chair hospital & 90%+ placements.',
     url: 'https://dental.jkkn.ac.in/namakkal/',
     siteName: 'JKKN Dental College & Hospital',
     images: [
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Namakkal Dental College | JKKN Dental College & Hospital',
-    description: 'JKKN Dental College & Hospital — Namakkal dental college in Komarapalayam. DCI approved, NAAC accredited. BDS & MDS programs with 200+ chair hospital. Top dental college in Namakkal district.',
+    description: 'Namakkal dental college — JKKN Dental, Komarapalayam. DCI approved, NAAC accredited. BDS & MDS with 200+ chair hospital & 90%+ placements.',
     images: ['/images/BDS-hero-image.webp'],
     site: '@jaborejkkn',
   },
@@ -122,7 +122,7 @@ const eventSchema = {
   "startDate": "2026-03-01",
   "endDate": "2026-08-31",
   "eventStatus": "https://schema.org/EventScheduled",
-  "eventAttendanceMode": "https://schema.org/MixedEventAttendanceMode",
+  "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
   "location": {
     "@type": "Place",
     "name": "JKKN Dental College & Hospital",
