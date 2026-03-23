@@ -7,11 +7,11 @@ export default function NamakkalPage() {
   const faqs = [
     {
       q: 'Which is the best Namakkal dental college?',
-      a: 'JKKN Dental College & Hospital, located just 5-10 km from Namakkal on NH-544, is widely regarded as one of the top dental colleges accessible from Namakkal. Approved by DCI, NAAC and affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai, it offers excellent programmes with strong placement support.',
+      a: 'JKKN Dental College & Hospital, located in Komarapalayam, Namakkal district (~66 km from Namakkal city via Tiruchengode), is widely regarded as one of the top dental colleges in Namakkal district. Approved by DCI, NAAC and affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai, it offers excellent programmes with strong placement support.',
     },
     {
       q: 'How far is JKKN Dental from Namakkal?',
-      a: 'JKKN Dental is approximately 5-10 km from Namakkal city centre, which takes about 15-20 minutes by road via NH-544 (Salem-Coimbatore Highway). Frequent local buses and auto-rickshaws are available from Namakkal town to Komarapalayam throughout the day.',
+      a: 'JKKN Dental is approximately 66 km from Namakkal city, which takes about 1.5 hours by road via Tiruchengode. Regular bus services are available from Namakkal to Komarapalayam via Tiruchengode throughout the day.',
     },
     {
       q: 'What is the NEET cut-off for BDS at JKKN Dental?',
@@ -27,11 +27,11 @@ export default function NamakkalPage() {
     },
     {
       q: 'Does JKKN Dental provide hostel for Namakkal students?',
-      a: 'Yes, JKKN Dental provides separate hostel facilities for boys and girls. Students from Namakkal can also opt for daily commute as the campus is just 5-10 km away — just 15-20 minutes. College transport services are also available.',
+      a: 'Yes, JKKN Dental provides separate hostel facilities for boys and girls with all amenities. Students from Namakkal city can reach the campus in about 1.5 hours. College transport services are also available.',
     },
     {
       q: 'How can I apply for admission at JKKN Dental?',
-      a: 'Namakkal students can apply online at https://dental.jkkn.ac.in/ or simply visit the campus in Komarapalayam — barely 15-20 minutes away. Admissions for BDS and MDS 2026-27 are currently open. Call +91 9345855001 for personalised guidance on eligibility, fees, and the counselling process.',
+      a: 'Namakkal students can apply online at https://dental.jkkn.ac.in/ or visit the campus in Komarapalayam — about 1.5 hours from Namakkal city. Admissions for BDS and MDS 2026-27 are currently open. Call +91 9345855001 for personalised guidance on eligibility, fees, and the counselling process.',
     },
   ];
 
@@ -41,7 +41,7 @@ export default function NamakkalPage() {
     { icon: <Microscope className="w-6 h-6 text-[#006837]" />, title: 'Advanced Labs', desc: 'Advanced dental labs, simulation equipment, and digital dentistry training' },
     { icon: <TrendingUp className="w-6 h-6 text-[#006837]" />, title: 'NEET MDS Results', desc: 'Strong track record in NEET MDS results and higher education' },
     { icon: <Users className="w-6 h-6 text-[#006837]" />, title: 'Community Service', desc: 'Hospital serves the community — builds trust and clinical experience' },
-    { icon: <Bus className="w-6 h-6 text-[#006837]" />, title: 'Easy Commute', desc: 'Just 5-10 km from Namakkal. Daily commute or comfortable hostel — your choice.' },
+    { icon: <Bus className="w-6 h-6 text-[#006837]" />, title: 'Well-Connected', desc: '66 km from Namakkal city via Tiruchengode. Comfortable on-campus hostel with all amenities.' },
   ];
 
   const programmes = [
@@ -61,8 +61,8 @@ export default function NamakkalPage() {
   const transportRows = [
     { icon: <Route className="w-6 h-6 text-[#006837]" />, label: 'ROUTE', text: 'NH-544 (Salem-Coimbatore Highway)' },
     { icon: <Bus className="w-6 h-6 text-[#006837]" />, label: 'BY BUS', text: 'Frequent local buses and auto-rickshaws available from Namakkal town to Komarapalayam' },
-    { icon: <Train className="w-6 h-6 text-[#006837]" />, label: 'NEAREST RAILWAY STATION', text: 'Tiruchengode Railway Station (~15 km) | Salem Junction (~40 km from campus)' },
-    { icon: <Plane className="w-6 h-6 text-[#006837]" />, label: 'NEAREST AIRPORT', text: 'Coimbatore International Airport (Code: CJB) (~110 km)' },
+    { icon: <Train className="w-6 h-6 text-[#006837]" />, label: 'NEAREST RAILWAY STATION', text: 'Tiruchengode Railway Station (~15 km) | Namakkal Railway Station (~66 km) | Salem Junction (~58 km from campus)' },
+    { icon: <Plane className="w-6 h-6 text-[#006837]" />, label: 'NEAREST AIRPORT', text: 'Coimbatore International Airport (Code: CJB) (~100 km)' },
     { icon: <MapPin className="w-6 h-6 text-[#006837]" />, label: 'CAMPUS ADDRESS', text: 'JKKN Institutions, Natarajapuram, NH-544, Komarapalayam (TK), Namakkal (DT), Tamil Nadu - 638183' },
   ];
 
@@ -76,9 +76,9 @@ export default function NamakkalPage() {
   ];
 
   const cities = [
-    { icon: <Bus className="w-6 h-6 text-[#006837]" />, name: 'Salem', dist: '40-50 km', href: '/salem/' },
-    { icon: <Route className="w-6 h-6 text-[#006837]" />, name: 'Erode', dist: '30-40 km', href: '/erode/' },
-    { icon: <Target className="w-6 h-6 text-[#006837]" />, name: 'Tiruppur', dist: '80-90 km', href: '/tiruppur/' },
+    { icon: <Bus className="w-6 h-6 text-[#006837]" />, name: 'Salem', dist: '~58 km', href: '/salem/' },
+    { icon: <Route className="w-6 h-6 text-[#006837]" />, name: 'Erode', dist: '~22 km', href: '/erode/' },
+    { icon: <Target className="w-6 h-6 text-[#006837]" />, name: 'Tiruppur', dist: '~67 km', href: '/tiruppur/' },
     { icon: <Sparkles className="w-6 h-6 text-[#006837]" />, name: 'Coimbatore', dist: '100-110 km', href: '/coimbatore/' },
   ];
 
@@ -129,7 +129,7 @@ export default function NamakkalPage() {
           {[
             { value: '90%+', label: 'PLACEMENTS' },
             { value: '8-10', label: 'LPA HIGHEST' },
-            { value: '10km', label: 'FROM NAMAKKAL' },
+            { value: '66km', label: 'FROM NAMAKKAL' },
             { value: '2', label: 'PROGRAMMES' },
           ].map((stat) => (
             <li key={stat.label} className="bg-white/10 backdrop-blur border border-white/20 rounded-2xl px-4 py-4 text-white">
@@ -169,11 +169,11 @@ export default function NamakkalPage() {
           <div className="bg-white rounded-2xl shadow-sm p-6 sm:p-8 flex flex-col sm:flex-row items-start sm:items-center gap-6 justify-between">
             <div className="flex items-start gap-5">
               <div className="text-[#006837] font-extrabold leading-none" style={{ fontSize: 'clamp(3rem, 6vw, 4rem)' }}>
-                10<span className="text-xl sm:text-2xl font-bold">km</span>
+                66<span className="text-xl sm:text-2xl font-bold">km</span>
               </div>
               <div>
                 <p className="font-bold text-gray-900 text-base sm:text-lg">From Namakkal to JKKN Dental</p>
-                <p className="text-gray-500 text-sm mt-1">15-20 minutes via NH-544 (Salem-Coimbatore Highway)</p>
+                <p className="text-gray-500 text-sm mt-1">~1.5 hours via Tiruchengode</p>
               </div>
             </div>
             <a
@@ -286,7 +286,7 @@ export default function NamakkalPage() {
               <MapPin className="w-6 h-6" />
               <div>
                 <p className="font-bold text-lg">Namakkal → JKKN Dental Campus</p>
-                <p className="text-white/80 text-sm">5-10 km • 15-20 minutes</p>
+                <p className="text-white/80 text-sm">~66 km • ~1.5 hours</p>
               </div>
             </div>
             {transportRows.map((row, i) => (
@@ -336,7 +336,7 @@ export default function NamakkalPage() {
             <div className="bg-white rounded-2xl p-6 text-left shadow-sm">
               <div className="text-5xl text-gray-200 font-serif leading-none mb-3 select-none">&quot;</div>
               <p className="text-gray-500 text-sm leading-relaxed italic mb-6">
-                As a Namakkal local, JKKN Dental College was the obvious choice. The campus is just 10 km from town, and the 200+ chair hospital gave me incredible clinical experience. I treated real patients from my second year itself.
+                As a student from Namakkal district, JKKN Dental College was the obvious choice. The 200+ chair hospital gave me incredible clinical experience. I treated real patients from my second year itself.
               </p>
               <div>
                 <p className="font-bold text-gray-900 text-sm">Surya Prakash K.</p>
