@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     siteName: "JKKN Dental College & Hospital",
     images: [
       {
-        url: "/images/BDS-hero-image.png",
+        url: "/images/BDS-hero-image.webp",
         width: 1200,
         height: 630,
         alt: "JKKN Dental College & Hospital - Best Dental College in Tamil Nadu"
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "JKKN Dental College & Hospital | DCI Approved",
     description: "JKKN Dental College & Hospital, Komarapalayam — DCI approved, NAAC A accredited. BDS & MDS programs with 200+ chair hospital training. Since 1987.",
-    images: ["/images/BDS-hero-image.png"],
+    images: ["/images/BDS-hero-image.webp"],
   },
   robots: {
     index: true,
@@ -70,7 +70,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en-IN">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="https://connect.facebook.net" />
+        <link rel="dns-prefetch" href="https://supabase.co" />
+      </head>
       <body className={`${poppins.className} antialiased pt-16 xs:pt-18 sm:pt-20 lg:pt-24 xl:pt-28`} suppressHydrationWarning>
         <a
           href="#main-content"

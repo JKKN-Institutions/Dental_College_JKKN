@@ -1,11 +1,13 @@
 import { Metadata } from 'next';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: 'Best Dental College Near Coimbatore | JKKN Dental College',
+  title: { absolute: 'Best Dental College Near Coimbatore | JKKN Dental College' },
   description: 'JKKN Dental College & Hospital, 100 km from Coimbatore on NH-544. DCI approved, NAAC A accredited. BDS & MDS programs with hostel & transport.',
   keywords: 'dental college near coimbatore, best dental college coimbatore, bds college near coimbatore, mds college near coimbatore, jkkn dental coimbatore, dental college tamilnadu coimbatore',
   alternates: {
-    canonical: '/coimbatore',
+    canonical: '/coimbatore/',
   },
   openGraph: {
     title: 'Best Dental College Near Coimbatore | JKKN Dental College',
@@ -36,5 +38,11 @@ export default function CoimbatoreLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return <>{children}</>;
+  return (
+    <>
+      <Header />
+      {children}
+      <Footer />
+    </>
+  );
 }

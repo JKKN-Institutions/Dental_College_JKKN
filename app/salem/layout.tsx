@@ -1,11 +1,13 @@
 import { Metadata } from 'next';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: 'Best Dental College Near Salem | JKKN Dental College',
+  title: { absolute: 'Best Dental College Near Salem | JKKN Dental College' },
   description: 'JKKN Dental College & Hospital, just 40 km from Salem on NH-544. DCI approved, NAAC A accredited. BDS & MDS programs with hostel & transport.',
   keywords: 'dental college near salem, best dental college salem, bds college near salem, mds college near salem, jkkn dental salem, dental college tamilnadu salem',
   alternates: {
-    canonical: '/salem',
+    canonical: '/salem/',
   },
   openGraph: {
     title: 'Best Dental College Near Salem | JKKN Dental College',
@@ -36,5 +38,11 @@ export default function SalemLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return <>{children}</>;
+  return (
+    <>
+      <Header />
+      {children}
+      <Footer />
+    </>
+  );
 }

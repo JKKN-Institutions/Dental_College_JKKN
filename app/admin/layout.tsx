@@ -1,4 +1,9 @@
+import type { Metadata } from 'next';
 import { createClient } from '@/lib/supabase/server';
+
+export const metadata: Metadata = {
+  robots: { index: false, follow: false },
+};
 import { getAdminCollegeId } from '@/lib/get-admin-college';
 import AdminSidebar from './AdminSidebar';
 import ToastProvider from './ToastProvider';

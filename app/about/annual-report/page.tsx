@@ -5,11 +5,11 @@ import { generateBreadcrumbSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: 'Annual Report | JKKN Dental College Yearly Performance',
-  description: 'Download JKKN Dental College annual report. View achievements, academic performance, research activities, and institutional development. Access latest yearly reports.',
+  description: 'Download JKKN Dental College annual report. View achievements, academic performance, research activities, and institutional development.',
   keywords: 'annual report, yearly performance, college achievements, institutional report, academic progress',
   openGraph: {
     title: 'Annual Report | JKKN Dental College Yearly Performance',
-    description: 'Download JKKN Dental College annual report. View achievements, academic performance, research activities, and institutional development. Access latest yearly reports.',
+    description: 'Download JKKN Dental College annual report. View achievements, academic performance, research activities, and institutional development.',
     url: 'https://dental.jkkn.ac.in/about/annual-report/',
     type: 'website',
     siteName: 'JKKN Dental College & Hospital',

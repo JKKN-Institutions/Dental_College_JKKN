@@ -1,11 +1,13 @@
 import { Metadata } from 'next';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: 'Best Dental College Near Tiruppur | JKKN Dental College',
+  title: { absolute: 'Best Dental College Near Tiruppur | JKKN Dental College' },
   description: 'JKKN Dental College & Hospital, 80 km from Tiruppur via NH-544. DCI approved, NAAC A accredited. BDS & MDS programs with hostel & transport.',
   keywords: 'dental college near tiruppur, best dental college tiruppur, bds college near tiruppur, mds college near tiruppur, jkkn dental tiruppur, dental college tamilnadu tiruppur',
   alternates: {
-    canonical: '/tiruppur',
+    canonical: '/tiruppur/',
   },
   openGraph: {
     title: 'Best Dental College Near Tiruppur | JKKN Dental College',
@@ -36,5 +38,11 @@ export default function TiruppurLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return <>{children}</>;
+  return (
+    <>
+      <Header />
+      {children}
+      <Footer />
+    </>
+  );
 }

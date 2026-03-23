@@ -5,11 +5,11 @@ import { generateBreadcrumbSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: 'Acts & Statutes | JKKN Dental College Regulations & Rules',
-  description: 'View JKKN Dental College acts, statutes and regulatory framework. Download official college regulations, rules and governance documents. Transparency in compliance.',
+  description: 'View JKKN Dental College acts, statutes and regulatory framework. Download official college regulations, rules and governance documents.',
   keywords: 'acts statutes, college regulations, governance, regulatory framework, college rules',
   openGraph: {
     title: 'Acts & Statutes | JKKN Dental College Regulations & Rules',
-    description: 'View JKKN Dental College acts, statutes and regulatory framework. Download official college regulations, rules and governance documents. Transparency in compliance.',
+    description: 'View JKKN Dental College acts, statutes and regulatory framework. Download official college regulations, rules and governance documents.',
     url: 'https://dental.jkkn.ac.in/about/act-statutes/',
     type: 'website',
     siteName: 'JKKN Dental College & Hospital',

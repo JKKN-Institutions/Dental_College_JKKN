@@ -1,11 +1,11 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Endodontic Courses in Coimbatore Region | JKKN Dental',
+  title: { absolute: 'Endodontic Courses in Coimbatore Region | JKKN Dental' },
   description: 'Join MDS Conservative Dentistry & Endodontics at JKKN Dental, near Coimbatore. DCI-approved programme with root canal training, microscopy & advanced labs.',
   keywords: 'endodontic courses in Coimbatore, best endodontic courses in india, certificate courses in endodontics, endodontic courses in india, certificate courses in endodontics in india',
   alternates: {
-    canonical: '/academics/details-of-academic-programs/mds/conservative-dentistry-and-endodontics',
+    canonical: '/academics/details-of-academic-programs/mds/conservative-dentistry-and-endodontics/',
   },
   openGraph: {
     title: 'Endodontic Courses in Coimbatore Region | JKKN Dental',

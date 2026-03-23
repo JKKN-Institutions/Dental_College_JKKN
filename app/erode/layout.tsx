@@ -1,11 +1,13 @@
 import { Metadata } from 'next';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: 'Best Dental College Near Erode | JKKN Dental College',
+  title: { absolute: 'Best Dental College Near Erode | JKKN Dental College' },
   description: 'JKKN Dental College & Hospital, just 30 km from Erode on NH-544. DCI approved, NAAC A accredited. BDS & MDS programs with hostel & transport.',
   keywords: 'dental college near erode, best dental college erode, bds college near erode, mds college near erode, jkkn dental erode, dental college tamilnadu erode',
   alternates: {
-    canonical: '/erode',
+    canonical: '/erode/',
   },
   openGraph: {
     title: 'Best Dental College Near Erode | JKKN Dental College',
@@ -36,5 +38,11 @@ export default function ErodeLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return <>{children}</>;
+  return (
+    <>
+      <Header />
+      {children}
+      <Footer />
+    </>
+  );
 }

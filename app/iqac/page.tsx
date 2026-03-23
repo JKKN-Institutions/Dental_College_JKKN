@@ -8,11 +8,11 @@ import { generateBreadcrumbSchema, generateWebPageSchema, generateSpeakableWebPa
 
 export const metadata: Metadata = {
   title: 'IQAC | Internal Quality Assurance Cell | JKKN Dental College',
-  description: 'Internal Quality Assurance Cell (IQAC) at JKKN Dental College ensures continuous quality improvement in academics, research, administration, and infrastructure development.',
+  description: 'IQAC at JKKN Dental College ensures continuous quality improvement in academics, research, administration, and infrastructure as per NAAC guidelines.',
   keywords: 'IQAC, quality assurance, internal quality cell, academic quality, NAAC IQAC',
   openGraph: {
     title: 'IQAC | Internal Quality Assurance Cell | JKKN Dental College',
-    description: 'Internal Quality Assurance Cell (IQAC) at JKKN Dental College ensures continuous quality improvement in academics, research, administration, and infrastructure development.',
+    description: 'IQAC at JKKN Dental College ensures continuous quality improvement in academics, research, administration, and infrastructure as per NAAC guidelines.',
     url: 'https://dental.jkkn.ac.in/iqac/',
     type: 'website',
     siteName: 'JKKN Dental College & Hospital',
@@ -23,13 +23,13 @@ export default function IQAC() {
   const breadcrumbSchema = generateBreadcrumbSchema('/iqac');
   const webPageSchema = generateWebPageSchema({
     title: 'IQAC | Internal Quality Assurance Cell | JKKN Dental College',
-    description: 'Internal Quality Assurance Cell (IQAC) at JKKN Dental College ensures continuous quality improvement in academics, research, administration, and infrastructure development.',
+    description: 'IQAC at JKKN Dental College ensures continuous quality improvement in academics, research, administration, and infrastructure as per NAAC guidelines.',
     url: 'https://dental.jkkn.ac.in/iqac/',
     dateModified: '2026-03-18',
   });
   const speakableSchema = generateSpeakableWebPageSchema({
     title: 'IQAC | Internal Quality Assurance Cell | JKKN Dental College',
-    description: 'Internal Quality Assurance Cell (IQAC) at JKKN Dental College ensures continuous quality improvement in academics, research, administration, and infrastructure development.',
+    description: 'IQAC at JKKN Dental College ensures continuous quality improvement in academics, research, administration, and infrastructure as per NAAC guidelines.',
     url: 'https://dental.jkkn.ac.in/iqac/',
     speakableCssSelectors: ['h1', '.hero-description', 'article p'],
   });

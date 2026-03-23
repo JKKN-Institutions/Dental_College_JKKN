@@ -1,11 +1,11 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'NAAC Accreditation A Grade | JKKN Dental College Quality',
+  title: { absolute: 'NAAC Accreditation A Grade | JKKN Dental College Quality' },
   description: 'JKKN Dental College is NAAC accredited with A grade, reflecting our commitment to quality education, infrastructure, research, and student development in dental education.',
   keywords: 'NAAC accreditation, A grade, quality dental education, NAAC grade, accredited dental college',
   alternates: {
-    canonical: './',
+    canonical: '/accreditation/naac/',
   },
   openGraph: {
     title: 'NAAC Accreditation A Grade | JKKN Dental College Quality',
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     siteName: 'JKKN Dental College & Hospital',
     images: [
       {
-        url: '/images/BDS-hero-image.png',
+        url: '/images/BDS-hero-image.webp',
         width: 1200,
         height: 630,
         alt: 'NAAC A Accredited JKKN Dental College'
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'NAAC A Grade | JKKN Dental College',
     description: 'JKKN Dental College is NAAC accredited with A grade, reflecting our commitment to quality education.',
-    images: ['/images/BDS-hero-image.png'],
+    images: ['/images/BDS-hero-image.webp'],
   },
 };
 

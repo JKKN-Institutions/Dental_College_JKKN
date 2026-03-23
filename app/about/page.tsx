@@ -5,12 +5,20 @@ import { generateSpeakableWebPageSchema } from '@/lib/metadata';
 export const metadata: Metadata = {
   title: 'About JKKN Dental College | Vision & Overview',
   description: 'Learn about JKKN Dental College & Hospital — DCI approved, NAAC A accredited, affiliated to TN Dr. MGR Medical University, Komarapalayam, Namakkal.',
+  alternates: {
+    canonical: '/about/',
+  },
   openGraph: {
     title: 'About JKKN Dental College | Vision & Overview',
     description: 'Learn about JKKN Dental College & Hospital — DCI approved, NAAC A accredited, affiliated to TN Dr. MGR Medical University, Komarapalayam, Namakkal.',
     url: 'https://dental.jkkn.ac.in/about/',
     type: 'website',
     siteName: 'JKKN Dental College & Hospital',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'About JKKN Dental College | Vision & Overview',
+    description: 'Learn about JKKN Dental College & Hospital — DCI approved, NAAC A accredited, affiliated to TN Dr. MGR Medical University, Komarapalayam, Namakkal.',
   },
 };
 

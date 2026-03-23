@@ -9,14 +9,22 @@ import { generateBreadcrumbSchema, generateWebPageSchema, generateSpeakableWebPa
 
 export const metadata: Metadata = {
   title: 'Fee Structure 2026-27 | BDS & MDS Fees | JKKN Dental College',
-  description: 'Complete fee structure for BDS and MDS programs at JKKN Dental College for 2026-27. Detailed breakdown of tuition fees, hostel charges, and all payment information.',
+  description: 'BDS & MDS fee structure at JKKN Dental College 2026-27. Detailed breakdown of tuition fees, hostel charges, scholarships, and payment information.',
   keywords: 'fee structure, BDS fees, MDS fees, dental college fees, JKKN fees, tuition fees, hostel fees, admission fees, course fees 2026',
+  alternates: {
+    canonical: '/fees-structure/',
+  },
   openGraph: {
     title: 'Fee Structure 2026-27 | BDS & MDS Fees | JKKN Dental College',
-    description: 'Complete fee structure for BDS and MDS programs at JKKN Dental College for 2026-27. Detailed breakdown of tuition fees, hostel charges, and all payment information.',
+    description: 'BDS & MDS fee structure at JKKN Dental College 2026-27. Detailed breakdown of tuition fees, hostel charges, scholarships, and payment information.',
     url: 'https://dental.jkkn.ac.in/fees-structure/',
     type: 'website',
     siteName: 'JKKN Dental College & Hospital',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Fee Structure 2026-27 | BDS & MDS Fees | JKKN Dental College',
+    description: 'BDS & MDS fee structure at JKKN Dental College 2026-27. Detailed breakdown of tuition fees, hostel charges, scholarships, and payment information.',
   },
 };
 
@@ -135,13 +143,13 @@ export default function FeesStructure() {
   const breadcrumbSchema = generateBreadcrumbSchema('/fees-structure');
   const webPageSchema = generateWebPageSchema({
     title: 'Fee Structure 2026-27 | BDS & MDS Fees | JKKN Dental College',
-    description: 'Complete fee structure for BDS and MDS programs at JKKN Dental College for 2026-27. Detailed breakdown of tuition fees, hostel charges, and all payment information.',
+    description: 'BDS & MDS fee structure at JKKN Dental College 2026-27. Detailed breakdown of tuition fees, hostel charges, scholarships, and payment information.',
     url: 'https://dental.jkkn.ac.in/fees-structure/',
     dateModified: '2026-03-18',
   });
   const speakableSchema = generateSpeakableWebPageSchema({
     title: 'Fee Structure 2026-27 | BDS & MDS Fees | JKKN Dental College',
-    description: 'Complete fee structure for BDS and MDS programs at JKKN Dental College for 2026-27. Detailed breakdown of tuition fees, hostel charges, and all payment information.',
+    description: 'BDS & MDS fee structure at JKKN Dental College 2026-27. Detailed breakdown of tuition fees, hostel charges, scholarships, and payment information.',
     url: 'https://dental.jkkn.ac.in/fees-structure/',
     speakableCssSelectors: ['h1', '.hero-description', 'article p'],
   });

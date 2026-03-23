@@ -59,7 +59,7 @@ const faqSchema = {
 
 export const metadata = generatePageMetadata({
   title: 'Vision & Mission | JKKN Dental College Strategic Goals',
-  description: 'Discover JKKN Dental College vision and mission. Leading global innovator in dental education, research, and clinical skill development. Learn about our commitment to excellence.',
+  description: 'Discover JKKN Dental College vision and mission. Leading global innovator in dental education, research, and clinical skill development.',
   keywords: 'vision mission, dental college goals, JKKN vision, dental education mission, strategic goals',
   canonicalPath: '/about/vision-and-mission',
   datePublished: '2024-01-15',
@@ -82,7 +82,7 @@ export default function VisionAndMission() {
   });
   const speakableSchema = generateSpeakableWebPageSchema({
     title: 'Vision & Mission | JKKN Dental College Strategic Goals',
-    description: 'Discover JKKN Dental College vision and mission. Leading global innovator in dental education, research, and clinical skill development. Learn about our commitment to excellence.',
+    description: 'Discover JKKN Dental College vision and mission. Leading global innovator in dental education, research, and clinical skill development.',
     url: 'https://dental.jkkn.ac.in/about/vision-and-mission/',
     speakableCssSelectors: ['h1', '.hero-description', 'article p'],
   });

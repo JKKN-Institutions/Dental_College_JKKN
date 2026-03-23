@@ -1,11 +1,11 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Best College for Prosthodontics in India | JKKN Dental',
+  title: { absolute: 'Best College for Prosthodontics in India | JKKN Dental' },
   description: 'Looking for the best college for prosthodontics in India? JKKN Dental offers MDS Prosthodontics with expert faculty, prosthetic labs & hospital training.',
   keywords: 'best college for prosthodontics in india',
   alternates: {
-    canonical: '/academics/details-of-academic-programs/mds/prosthodontics-crown-and-bridge',
+    canonical: '/academics/details-of-academic-programs/mds/prosthodontics-crown-and-bridge/',
   },
   openGraph: {
     title: 'Best College for Prosthodontics in India | JKKN Dental',
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     siteName: 'JKKN Dental College & Hospital',
     images: [
       {
-        url: '/images/BDS-hero-image.png',
+        url: '/images/BDS-hero-image.webp',
         width: 1200,
         height: 630,
         alt: 'Best College for Prosthodontics in India - JKKN Dental'
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Best College for Prosthodontics in India | JKKN Dental',
     description: 'Looking for the best college for prosthodontics in India? JKKN Dental offers MDS Prosthodontics with expert faculty, prosthetic labs & hospital training.',
-    images: ['/images/BDS-hero-image.png'],
+    images: ['/images/BDS-hero-image.webp'],
   },
 };
 

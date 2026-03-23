@@ -1,11 +1,13 @@
 import { Metadata } from 'next';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: 'Best Dental College in Namakkal | JKKN Dental College',
+  title: { absolute: 'Best Dental College in Namakkal | JKKN Dental College' },
   description: 'JKKN Dental College & Hospital, located in Komarapalayam, Namakkal. DCI approved, NAAC A accredited. BDS & MDS programs with 200+ chair hospital.',
   keywords: 'dental college in namakkal, best dental college namakkal, bds college namakkal, mds college namakkal, jkkn dental namakkal, dental college komarapalayam',
   alternates: {
-    canonical: '/namakkal',
+    canonical: '/namakkal/',
   },
   openGraph: {
     title: 'Best Dental College in Namakkal | JKKN Dental College',
@@ -36,5 +38,11 @@ export default function NamakkalLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return <>{children}</>;
+  return (
+    <>
+      <Header />
+      {children}
+      <Footer />
+    </>
+  );
 }

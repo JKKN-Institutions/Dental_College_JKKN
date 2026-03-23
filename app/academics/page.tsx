@@ -57,14 +57,22 @@ const faqSchema = {
 
 export const metadata: Metadata = {
   title: 'Academics - JKKN Dental College & Hospital',
-  description: 'Explore academic programs at JKKN Dental College. BDS undergraduate program, 5 MDS postgraduate specializations, comprehensive curriculum, and excellence in dental education.',
+  description: 'Explore academic programs at JKKN Dental College. BDS (100 seats), 5 MDS specializations, DCI-approved curriculum, and excellence in dental education.',
   keywords: 'JKKN academics, BDS program, MDS specializations, dental education, curriculum, postgraduate dental courses, undergraduate dentistry, DCI approved programs',
+  alternates: {
+    canonical: '/academics/',
+  },
   openGraph: {
     title: 'Academics - JKKN Dental College & Hospital',
-    description: 'Explore academic programs at JKKN Dental College. BDS undergraduate program, 5 MDS postgraduate specializations, comprehensive curriculum, and excellence in dental education.',
+    description: 'Explore academic programs at JKKN Dental College. BDS (100 seats), 5 MDS specializations, DCI-approved curriculum, and excellence in dental education.',
     url: 'https://dental.jkkn.ac.in/academics/',
     type: 'website',
     siteName: 'JKKN Dental College & Hospital',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Academics - JKKN Dental College & Hospital',
+    description: 'Explore academic programs at JKKN Dental College. BDS (100 seats), 5 MDS specializations, DCI-approved curriculum, and excellence in dental education.',
   },
 };
 
@@ -72,7 +80,7 @@ export default function Academics() {
   const breadcrumbSchema = generateBreadcrumbSchema('/academics/');
   const speakableSchema = generateSpeakableWebPageSchema({
     title: 'Academics - JKKN Dental College & Hospital',
-    description: 'Explore academic programs at JKKN Dental College. BDS undergraduate program, 5 MDS postgraduate specializations, comprehensive curriculum, and excellence in dental education.',
+    description: 'Explore academic programs at JKKN Dental College. BDS (100 seats), 5 MDS specializations, DCI-approved curriculum, and excellence in dental education.',
     url: 'https://dental.jkkn.ac.in/academics/',
     speakableCssSelectors: ['h1', '.hero-description', 'article p'],
   });

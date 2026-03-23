@@ -54,7 +54,18 @@ export const topMenuItems: NavItem[] = [
         ]
       },
       { label: "ANNUAL REPORT", href: "/pdf/ANNUAL-REPORT.pdf" },
-      { label: "ANNUAL ACCOUNT STATEMENT", href: "/pdf/ANNUAL-ACCOUNTS-STATEMENT.pdf" }
+      { label: "ANNUAL ACCOUNT STATEMENT", href: "/pdf/ANNUAL-ACCOUNTS-STATEMENT.pdf" },
+      {
+        label: "WHY STUDENTS CHOOSE JKKN?",
+        href: "/about",
+        submenu: [
+          { label: "WHY ERODE STUDENTS?", href: "/erode/" },
+          { label: "WHY SALEM STUDENTS?", href: "/salem/" },
+          { label: "WHY TIRUPPUR STUDENTS?", href: "/tiruppur/" },
+          { label: "WHY NAMAKKAL STUDENTS?", href: "/namakkal/" },
+          { label: "WHY COIMBATORE STUDENTS?", href: "/coimbatore/" }
+        ]
+      }
     ]
   },
   {
@@ -274,7 +285,8 @@ export const bottomMenuItems: NavItem[] = [
     href: "/information-center",
     submenu: [
       { label: "RIGHT TO INFORMATION (RTI)", href: "/information-center/right-to-information-rti" },
-      { label: "CAREERS", href: "/information-center/careers" }
+      { label: "CAREERS", href: "/information-center/careers" },
+      { label: "BLOG", href: "/blog" }
     ]
   },
   { label: "GALLERY", href: "/gallery" },

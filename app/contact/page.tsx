@@ -7,9 +7,9 @@ import { MessageCircle } from 'lucide-react';
 
 export const metadata = generatePageMetadata({
   title: 'Contact Us | JKKN Dental College & Hospital, Komarapalayam',
-  description: 'Contact JKKN Dental College & Hospital in Komarapalayam. Phone: +91 93458 55001, Email: dental@jkkn.ac.in. Get admission details, visit campus, or schedule a consultation.',
+  description: 'Contact JKKN Dental College & Hospital. Phone: +91 93458 55001, Email: dental@jkkn.ac.in. Get admission details, visit campus, or schedule a consultation.',
   keywords: 'contact JKKN Dental, dental college contact, admission enquiry, Komarapalayam dental college address, directions to JKKN Dental',
-  canonicalPath: '/contact',
+  canonicalPath: '/contact/',
   datePublished: '2024-01-15',
   dateModified: '2025-02-13'
 });
@@ -84,7 +84,7 @@ export default function Contact() {
   };
   const speakableSchema = generateSpeakableWebPageSchema({
     title: 'Contact Us | JKKN Dental College & Hospital, Komarapalayam',
-    description: 'Contact JKKN Dental College & Hospital in Komarapalayam. Phone: +91 93458 55001, Email: dental@jkkn.ac.in. Get admission details, visit campus, or schedule a consultation.',
+    description: 'Contact JKKN Dental College & Hospital. Phone: +91 93458 55001, Email: dental@jkkn.ac.in. Get admission details, visit campus, or schedule a consultation.',
     url: 'https://dental.jkkn.ac.in/contact/',
     speakableCssSelectors: ['h1', '.hero-description', 'article p'],
   });

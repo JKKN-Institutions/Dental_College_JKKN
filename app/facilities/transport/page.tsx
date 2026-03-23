@@ -8,11 +8,11 @@ import { generateBreadcrumbSchema, generateWebPageSchema, generateSpeakableWebPa
 
 export const metadata: Metadata = {
   title: 'Transport Services - Bus Facility at JKKN Dental College',
-  description: 'JKKN transport features air-conditioned buses, GPS tracking, CCTV monitoring, trained drivers, wheelchair accessibility, and affordable distance-based pricing.',
+  description: 'JKKN Dental College transport: AC buses, GPS tracking, CCTV monitoring, trained drivers, wheelchair accessibility, and affordable distance-based pricing.',
   keywords: 'college bus transport JKKN, student bus service, campus transportation, GPS tracked buses, safe college bus, wheelchair accessible transport, AC buses',
   openGraph: {
     title: 'Transport Services - Bus Facility at JKKN Dental College',
-    description: 'JKKN transport features air-conditioned buses, GPS tracking, CCTV monitoring, trained drivers, wheelchair accessibility, and affordable distance-based pricing.',
+    description: 'JKKN Dental College transport: AC buses, GPS tracking, CCTV monitoring, trained drivers, wheelchair accessibility, and affordable distance-based pricing.',
     url: 'https://dental.jkkn.ac.in/facilities/transport/',
     type: 'website',
     siteName: 'JKKN Dental College & Hospital',
@@ -23,13 +23,13 @@ export default function Transport() {
   const breadcrumbSchema = generateBreadcrumbSchema('/facilities/transport');
   const webPageSchema = generateWebPageSchema({
     title: 'Transport Services - Bus Facility at JKKN Dental College',
-    description: 'JKKN transport features air-conditioned buses, GPS tracking, CCTV monitoring, trained drivers, wheelchair accessibility, and affordable distance-based pricing.',
+    description: 'JKKN Dental College transport: AC buses, GPS tracking, CCTV monitoring, trained drivers, wheelchair accessibility, and affordable distance-based pricing.',
     url: 'https://dental.jkkn.ac.in/facilities/transport/',
     dateModified: '2026-03-18',
   });
   const speakableSchema = generateSpeakableWebPageSchema({
     title: 'Transport Services - Bus Facility at JKKN Dental College',
-    description: 'JKKN transport features air-conditioned buses, GPS tracking, CCTV monitoring, trained drivers, wheelchair accessibility, and affordable distance-based pricing.',
+    description: 'JKKN Dental College transport: AC buses, GPS tracking, CCTV monitoring, trained drivers, wheelchair accessibility, and affordable distance-based pricing.',
     url: 'https://dental.jkkn.ac.in/facilities/transport/',
     speakableCssSelectors: ['h1', '.hero-description', 'article p'],
   });

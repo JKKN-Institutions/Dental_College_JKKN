@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { useState } from 'react';
 import { ChevronUp, ChevronDown } from 'lucide-react';
@@ -105,13 +105,13 @@ export default function SalemPage() {
     <main className="overflow-x-hidden w-full">
 
       {/* ── Top Announcement Bar ── */}
-      <div className="bg-[#1a3060] text-white py-2 px-4">
+      <div className="bg-[#002309] text-white py-2 px-4">
         <div className="max-w-7xl mx-auto flex items-center justify-center gap-3 sm:gap-6 flex-wrap">
           <span className="flex items-center gap-2 text-sm font-medium">
             <span className="w-2 h-2 bg-green-400 rounded-full inline-block" />
             Admissions Open 2026-27
           </span>
-          <a href="tel:+919345855001" className="bg-[#2a4080] hover:bg-[#324b99] text-white text-sm font-semibold px-4 py-1.5 rounded-full border border-white/20 transition-colors">
+          <a href="tel:+919345855001" className="bg-[#006837] hover:bg-[#005a30] text-white text-sm font-semibold px-4 py-1.5 rounded-full border border-white/20 transition-colors">
             Call Now
           </a>
           <a href="https://wa.me/919345855001" target="_blank" rel="nofollow noopener noreferrer" className="bg-green-500 hover:bg-green-600 text-white text-sm font-semibold px-4 py-1.5 rounded-full transition-colors">
@@ -123,13 +123,13 @@ export default function SalemPage() {
       {/* ── Hero ── */}
       <section
         className="relative flex flex-col items-center justify-center text-center px-4 py-16 sm:py-24"
-        style={{ background: 'linear-gradient(135deg, #1e40af 0%, #1e3a8a 45%, #0f172a 100%)', minHeight: '88vh' }}
+        style={{ background: 'linear-gradient(135deg, #006837 0%, #002309 100%)', minHeight: '88vh' }}
       >
         <div className="mb-6 inline-flex items-center gap-2 bg-white/10 backdrop-blur border border-white/20 text-white text-sm font-medium px-5 py-2 rounded-full">
           🦷 DCI, NAAC Approved • Admissions Open
         </div>
         <h1 className="text-white font-extrabold leading-tight mb-6 max-w-4xl" style={{ fontSize: 'clamp(2rem, 5vw + 0.5rem, 3.5rem)' }}>
-          Best Dental College Near <span className="text-orange-500">Salem</span>
+          Best Dental College Near <span className="text-[#7cb983]">Salem</span>
         </h1>
         <p className="text-white/80 max-w-2xl mb-10 leading-relaxed" style={{ fontSize: 'clamp(0.9rem, 1vw + 0.5rem, 1.1rem)' }}>
           Under 1 hour from Salem — closer than you think. JKKN Dental College &amp; Hospital offers top-tier dental programmes with
@@ -149,7 +149,7 @@ export default function SalemPage() {
           ))}
         </div>
         <div className="flex flex-col sm:flex-row gap-4 items-center">
-          <a href="https://wa.me/919345855001" target="_blank" rel="nofollow noopener noreferrer" className="bg-orange-500 hover:bg-orange-600 text-white font-bold px-8 py-4 rounded-full transition-all transform hover:scale-105 shadow-lg text-base">
+          <a href="https://wa.me/919345855001" target="_blank" rel="nofollow noopener noreferrer" className="bg-[#7cb983] hover:bg-[#6ba872] text-white font-bold px-8 py-4 rounded-full transition-all transform hover:scale-105 shadow-lg text-base">
             Apply Now — 2026-27
           </a>
           <a href="https://wa.me/919345855001" target="_blank" rel="nofollow noopener noreferrer" className="bg-green-500 hover:bg-green-600 text-white font-bold px-8 py-4 rounded-full flex items-center gap-2 transition-all transform hover:scale-105 shadow-lg text-base">
@@ -162,8 +162,8 @@ export default function SalemPage() {
       <div className="bg-white border-b border-gray-100 py-4 px-4">
         <div className="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8">
           <div className="flex items-center gap-3">
-            <span className="flex items-center gap-1.5 bg-blue-50 border border-blue-200 text-blue-700 text-sm font-semibold px-3 py-1.5 rounded-full">✓ DCI</span>
-            <span className="flex items-center gap-1.5 bg-blue-50 border border-blue-200 text-blue-700 text-sm font-semibold px-3 py-1.5 rounded-full">✓ NAAC</span>
+            <span className="flex items-center gap-1.5 bg-[#FBFBEE] border border-[#7cb983] text-[#006837] text-sm font-semibold px-3 py-1.5 rounded-full">✓ DCI</span>
+            <span className="flex items-center gap-1.5 bg-[#FBFBEE] border border-[#7cb983] text-[#006837] text-sm font-semibold px-3 py-1.5 rounded-full">✓ NAAC</span>
           </div>
           <span className="hidden sm:block text-gray-300">|</span>
           <p className="text-gray-500 text-sm text-center">Affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai</p>
@@ -171,11 +171,11 @@ export default function SalemPage() {
       </div>
 
       {/* ── Distance Card ── */}
-      <section className="bg-[#eef2ff] py-10 px-4">
+      <section className="bg-[#FBFBEE] py-10 px-4">
         <div className="max-w-3xl mx-auto">
           <div className="bg-white rounded-2xl shadow-sm p-6 sm:p-8 flex flex-col sm:flex-row items-start sm:items-center gap-6 justify-between">
             <div className="flex items-start gap-5">
-              <div className="text-[#1a3a8a] font-extrabold leading-none" style={{ fontSize: 'clamp(3rem, 6vw, 4rem)' }}>
+              <div className="text-[#006837] font-extrabold leading-none" style={{ fontSize: 'clamp(3rem, 6vw, 4rem)' }}>
                 45<span className="text-xl sm:text-2xl font-bold">km</span>
               </div>
               <div>
@@ -186,7 +186,7 @@ export default function SalemPage() {
             <a
               href="https://maps.google.com/?q=JKKN+Dental+College+Komarapalayam"
               target="_blank" rel="nofollow noopener noreferrer"
-              className="flex-shrink-0 bg-blue-700 hover:bg-blue-800 text-white font-semibold px-5 py-3 rounded-xl flex flex-col items-center gap-1 transition-colors min-w-[110px] text-center"
+              className="flex-shrink-0 bg-[#006837] hover:bg-[#002309] text-white font-semibold px-5 py-3 rounded-xl flex flex-col items-center gap-1 transition-colors min-w-[110px] text-center"
             >
               <span className="text-xl">📍</span>
               <span className="text-sm">View on Map</span>
@@ -204,10 +204,10 @@ export default function SalemPage() {
           <p className="text-gray-500 max-w-3xl mx-auto mb-4 leading-relaxed" style={{ fontSize: 'clamp(0.875rem, 1vw + 0.4rem, 1.05rem)' }}>
             Salem is one of the largest cities in central Tamil Nadu with excellent connectivity to JKKN via NH-544. The journey takes under 1 hour, making daily commute a practical option. Students from Salem get access to quality professional education without the high costs of metro city colleges.
           </p>
-          <div className="w-14 h-1 bg-orange-500 rounded mx-auto mb-12" />
+          <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-12" />
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {whyFeatures.map((item) => (
-              <div key={item.title} className="bg-[#f0f4ff] rounded-2xl p-6 text-center hover:shadow-md transition-shadow">
+              <div key={item.title} className="bg-[#FBFBEE] rounded-2xl p-6 text-center hover:shadow-md transition-shadow">
                 <div className="text-4xl mb-4">{item.icon}</div>
                 <h3 className="text-base font-bold text-gray-900 mb-2">{item.title}</h3>
                 <p className="text-gray-500 text-sm leading-relaxed">{item.desc}</p>
@@ -218,13 +218,13 @@ export default function SalemPage() {
       </section>
 
       {/* ── Programmes Offered ── */}
-      <section className="bg-[#f0f4ff] py-16 px-4">
+      <section className="bg-[#FBFBEE] py-16 px-4">
         <div className="max-w-5xl mx-auto text-center">
           <h2 className="font-extrabold text-gray-900 mb-3" style={{ fontSize: 'clamp(1.6rem, 3vw + 0.5rem, 2.4rem)' }}>
             Programmes Offered
           </h2>
           <p className="text-gray-500 text-base mb-4">Choose the right programme for your career goals</p>
-          <div className="w-14 h-1 bg-orange-500 rounded mx-auto mb-12" />
+          <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-12" />
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {programmes.map((prog) => (
               <div key={prog.title} className="bg-white rounded-2xl p-6 sm:p-8 text-left shadow-sm">
@@ -237,13 +237,13 @@ export default function SalemPage() {
                     { label: 'Intake', value: prog.intake },
                   ].map((row) => (
                     <div key={row.label} className="flex justify-between items-center border-b border-gray-100 pb-2">
-                      <span className="text-blue-400 text-sm">{row.label}</span>
+                      <span className="text-[#7cb983] text-sm">{row.label}</span>
                       <span className="text-gray-900 text-sm font-semibold">{row.value}</span>
                     </div>
                   ))}
                 </div>
                 <p className="text-gray-400 text-sm mb-6">{prog.eligibility}</p>
-                <a href="https://wa.me/919345855001" target="_blank" rel="nofollow noopener noreferrer" className="block text-center bg-blue-50 hover:bg-blue-100 text-blue-700 font-semibold py-3 rounded-xl transition-colors text-sm">
+                <a href="https://wa.me/919345855001" target="_blank" rel="nofollow noopener noreferrer" className="block text-center bg-[#FBFBEE] hover:bg-[#e8f5e9] text-[#006837] font-semibold py-3 rounded-xl transition-colors text-sm">
                   Enquire About This Course
                 </a>
               </div>
@@ -259,11 +259,11 @@ export default function SalemPage() {
             Placement Highlights
           </h2>
           <p className="text-gray-500 text-base mb-4">Our placement cell connects you with India&apos;s top employers</p>
-          <div className="w-14 h-1 bg-orange-500 rounded mx-auto mb-12" />
+          <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-12" />
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-10">
             {placementStats.map((stat) => (
               <div key={stat.label} className="bg-white border border-gray-100 rounded-2xl p-5 shadow-sm">
-                <div className="font-extrabold text-blue-700" style={{ fontSize: 'clamp(1.8rem, 3vw, 2.5rem)' }}>{stat.value}</div>
+                <div className="font-extrabold text-[#006837]" style={{ fontSize: 'clamp(1.8rem, 3vw, 2.5rem)' }}>{stat.value}</div>
                 <div className="text-xs font-semibold tracking-widest text-gray-400 mt-1">{stat.label}</div>
               </div>
             ))}
@@ -278,15 +278,15 @@ export default function SalemPage() {
       </section>
 
       {/* ── How to Reach ── */}
-      <section className="bg-[#f0f4ff] py-16 px-4">
+      <section className="bg-[#FBFBEE] py-16 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="font-extrabold text-gray-900 mb-3" style={{ fontSize: 'clamp(1.6rem, 3vw + 0.5rem, 2.4rem)' }}>
             How to Reach from Salem
           </h2>
           <p className="text-gray-500 text-base mb-4">Multiple transport options to get to campus easily</p>
-          <div className="w-14 h-1 bg-orange-500 rounded mx-auto mb-10" />
+          <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-10" />
           <div className="bg-white rounded-2xl overflow-hidden shadow-sm text-left">
-            <div className="bg-blue-700 text-white px-6 py-5 flex items-center gap-3">
+            <div className="bg-[#006837] text-white px-6 py-5 flex items-center gap-3">
               <span className="text-2xl">📍</span>
               <div>
                 <p className="font-bold text-lg">Salem → JKKN Dental Campus</p>
@@ -295,7 +295,7 @@ export default function SalemPage() {
             </div>
             {transportRows.map((row, i) => (
               <div key={row.label} className={`flex items-start gap-4 px-6 py-5 ${i < transportRows.length - 1 ? 'border-b border-gray-100' : ''}`}>
-                <div className="w-10 h-10 rounded-xl bg-blue-50 flex items-center justify-center text-xl flex-shrink-0">{row.icon}</div>
+                <div className="w-10 h-10 rounded-xl bg-[#FBFBEE] flex items-center justify-center text-xl flex-shrink-0">{row.icon}</div>
                 <div>
                   <p className="text-xs font-semibold tracking-widest text-gray-400 mb-1">{row.label}</p>
                   <p className="text-gray-800 text-sm leading-relaxed">{row.text}</p>
@@ -313,11 +313,11 @@ export default function SalemPage() {
             Campus &amp; Facilities
           </h2>
           <p className="text-gray-500 text-base mb-4">Everything you need for a world-class education experience</p>
-          <div className="w-14 h-1 bg-orange-500 rounded mx-auto mb-12" />
+          <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-12" />
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {facilities.map((item) => (
-              <div key={item.title} className="flex items-start gap-3 bg-[#f0f4ff] rounded-2xl p-4 text-left">
-                <div className="w-10 h-10 rounded-xl bg-blue-100 flex items-center justify-center text-xl flex-shrink-0">{item.icon}</div>
+              <div key={item.title} className="flex items-start gap-3 bg-[#FBFBEE] rounded-2xl p-4 text-left">
+                <div className="w-10 h-10 rounded-xl bg-[#e8f5e9] flex items-center justify-center text-xl flex-shrink-0">{item.icon}</div>
                 <div>
                   <p className="font-bold text-gray-900 text-sm">{item.title}</p>
                   <p className="text-gray-500 text-xs mt-1 leading-relaxed">{item.desc}</p>
@@ -329,13 +329,13 @@ export default function SalemPage() {
       </section>
 
       {/* ── Testimonials ── */}
-      <section className="bg-[#f0f4ff] py-16 px-4">
+      <section className="bg-[#FBFBEE] py-16 px-4">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="font-extrabold text-gray-900 mb-3" style={{ fontSize: 'clamp(1.6rem, 3vw + 0.5rem, 2.4rem)' }}>
             Students from Salem Love JKKN Dental
           </h2>
           <p className="text-gray-500 text-base mb-4">Hear from students who made the right choice</p>
-          <div className="w-14 h-1 bg-orange-500 rounded mx-auto mb-12" />
+          <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-12" />
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             <div className="bg-white rounded-2xl p-6 text-left shadow-sm">
               <div className="text-5xl text-gray-200 font-serif leading-none mb-3 select-none">"</div>
@@ -357,8 +357,8 @@ export default function SalemPage() {
                 <p className="text-gray-400 text-xs mt-0.5">[Course], Batch of [Year]</p>
               </div>
             </div>
-            <div className="border-2 border-dashed border-orange-300 bg-orange-50 rounded-2xl p-6 flex items-center justify-center text-center">
-              <p className="text-orange-500 text-sm font-medium leading-relaxed">
+            <div className="border-2 border-dashed border-[#7cb983] bg-[#FBFBEE] rounded-2xl p-6 flex items-center justify-center text-center">
+              <p className="text-[#7cb983] text-sm font-medium leading-relaxed">
                 Add 2-3 real student testimonials from Salem or nearby areas before deployment.
               </p>
             </div>
@@ -373,24 +373,24 @@ export default function SalemPage() {
             Frequently Asked Questions
           </h2>
           <p className="text-gray-500 text-base mb-4">Dental College in Salem — Your Questions Answered</p>
-          <div className="w-14 h-1 bg-orange-500 rounded mx-auto mb-12" />
+          <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-12" />
           <div className="text-left space-y-3">
             {faqs.map((faq, i) => (
               <div
                 key={i}
-                className={`rounded-xl overflow-hidden border transition-colors ${openFaq === i ? 'border-blue-300' : 'border-gray-200'}`}
+                className={`rounded-xl overflow-hidden border transition-colors ${openFaq === i ? 'border-[#7cb983]' : 'border-gray-200'}`}
               >
                 <button
                   onClick={() => setOpenFaq(openFaq === i ? null : i)}
                   className="w-full flex items-center justify-between px-5 py-4 text-left font-semibold text-gray-900 text-sm sm:text-base bg-white hover:bg-gray-50 transition-colors"
                 >
                   <span>{faq.q}</span>
-                  <span className="ml-4 flex-shrink-0 text-blue-600">
+                  <span className="ml-4 flex-shrink-0 text-[#006837]">
                     {openFaq === i ? <ChevronUp className="w-5 h-5" /> : <ChevronDown className="w-5 h-5" />}
                   </span>
                 </button>
                 {openFaq === i && (
-                  <div className="px-5 pb-5 pt-2 text-gray-500 text-sm leading-relaxed border-t border-blue-100 bg-white">
+                  <div className="px-5 pb-5 pt-2 text-gray-500 text-sm leading-relaxed border-t border-[#7cb983]/20 bg-white">
                     {faq.a}
                   </div>
                 )}
@@ -401,13 +401,13 @@ export default function SalemPage() {
       </section>
 
       {/* ── Interested? Let's Talk! ── */}
-      <section className="py-16 px-4" style={{ background: 'linear-gradient(135deg, #1e40af 0%, #2952cc 50%, #1e3a8a 100%)' }}>
+      <section className="py-16 px-4" style={{ background: 'linear-gradient(135deg, #006837 0%, #002309 100%)' }}>
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="font-extrabold text-white mb-3" style={{ fontSize: 'clamp(1.6rem, 3vw + 0.5rem, 2.4rem)' }}>
             Interested? Let&apos;s Talk!
           </h2>
           <p className="text-white/80 text-base mb-4">Fill in your details and our admission team will contact you within 24 hours</p>
-          <div className="w-14 h-1 bg-orange-500 rounded mx-auto mb-10" />
+          <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-10" />
           <form
             className="text-left space-y-5"
             onSubmit={(e) => {
@@ -473,7 +473,7 @@ export default function SalemPage() {
             </div>
             <button
               type="submit"
-              className="w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-4 rounded-full transition-all transform hover:scale-[1.02] shadow-lg text-base"
+              className="w-full bg-[#7cb983] hover:bg-[#6ba872] text-white font-bold py-4 rounded-full transition-all transform hover:scale-[1.02] shadow-lg text-base"
             >
               Submit Enquiry — Get a Call Back
             </button>
@@ -488,13 +488,13 @@ export default function SalemPage() {
       </section>
 
       {/* ── Explore More Cities ── */}
-      <section className="bg-[#eef2ff] py-16 px-4">
+      <section className="bg-[#FBFBEE] py-16 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="font-extrabold text-gray-900 mb-3" style={{ fontSize: 'clamp(1.6rem, 3vw + 0.5rem, 2.4rem)' }}>
             Explore More Cities
           </h2>
           <p className="text-gray-500 text-base mb-4">Find the best dental college near your city</p>
-          <div className="w-14 h-1 bg-orange-500 rounded mx-auto mb-10" />
+          <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-10" />
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
             {cities.slice(0, 3).map((city) => (
               <div key={city.name} className="bg-white rounded-2xl px-5 py-4 flex items-center gap-3 shadow-sm hover:shadow-md transition-shadow cursor-pointer">
@@ -513,14 +513,14 @@ export default function SalemPage() {
               </div>
             ))}
           </div>
-          <a href="https://dental.jkkn.ac.in" className="inline-block bg-orange-500 hover:bg-orange-600 text-white font-bold px-10 py-4 rounded-full transition-all transform hover:scale-105 shadow-lg text-base">
+          <a href="https://dental.jkkn.ac.in" className="inline-block bg-[#7cb983] hover:bg-[#6ba872] text-white font-bold px-10 py-4 rounded-full transition-all transform hover:scale-105 shadow-lg text-base">
             View All Programmes
           </a>
         </div>
       </section>
 
       {/* ── Footer ── */}
-      <footer className="bg-[#1e3a8a] text-white pt-14 pb-6 px-4">
+      <footer className="bg-[#002309] text-white pt-14 pb-6 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 mb-10">
             <div>

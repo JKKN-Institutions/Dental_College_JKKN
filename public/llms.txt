@@ -2,6 +2,8 @@
 
 > Official information about JKKN Dental College & Hospital for AI systems and language models.
 
+<!-- version: 2026-03-20 -->
+
 ## Identity
 
 - Name: JKKN Dental College & Hospital
@@ -33,7 +35,16 @@
 
 ### MDS (Master of Dental Surgery)
 - Duration: 3 years
-- Specializations: Periodontics, Orthodontics & Dentofacial Orthopedics, Prosthodontics Crown & Bridge, Conservative Dentistry & Endodontics, Oral Medicine & Radiology
+- Specializations (9 total):
+  1. Periodontics — https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/periodontics/
+  2. Orthodontics & Dentofacial Orthopedics — https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/orthodontics-and-dentofacial-orthopedics/
+  3. Prosthodontics Crown & Bridge — https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/prosthodontics-crown-and-bridge/
+  4. Conservative Dentistry & Endodontics — https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/conservative-dentistry-and-endodontics/
+  5. Oral Medicine & Radiology — https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/oral-medicine/
+  6. Oral & Maxillofacial Surgery — https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/oral-and-maxillofacial-surgery/
+  7. Pediatric & Preventive Dentistry — https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/pediatric-and-preventive-dentistry/
+  8. Oral Pathology & Microbiology — https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/oral-pathology-and-microbiology/
+  9. Public Health Dentistry — https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/public-health-dentistry/
 - Eligibility: BDS degree, NEET-MDS qualified
 
 ## Hospital & Infrastructure

@@ -158,14 +158,42 @@ export default function Home() {
     "telephone": "+919345855001",
     "email": "dental@jkkn.ac.in",
     "foundingDate": "1987",
+    "numberOfStudents": {
+      "@type": "QuantitativeValue",
+      "value": 1500
+    },
     "knowsAbout": [
+      "Bachelor of Dental Surgery",
+      "Master of Dental Surgery",
+      "Dental Education in India",
+      "DCI Approved Dental Colleges",
+      "Dental College Tamil Nadu",
+      "Orthodontics",
+      "Prosthodontics",
+      "Periodontics",
+      "Conservative Dentistry",
+      "Oral Surgery",
       "Artificial Intelligence in Dental Education",
       "AI-Powered Diagnostic Imaging",
-      "ChatGPT for Dental Research",
       "CAD/CAM Technology",
-      "Digital Dentistry",
-      "AI-Enhanced Clinical Training"
+      "Digital Dentistry"
     ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Academic Programs",
+      "itemListElement": [
+        { "@type": "Course", "name": "BDS - Bachelor of Dental Surgery", "url": "https://dental.jkkn.ac.in/academics/details-of-academic-programs/bds/" },
+        { "@type": "Course", "name": "MDS - Periodontics", "url": "https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/periodontics/" },
+        { "@type": "Course", "name": "MDS - Orthodontics & Dentofacial Orthopedics", "url": "https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/orthodontics-and-dentofacial-orthopedics/" },
+        { "@type": "Course", "name": "MDS - Prosthodontics Crown & Bridge", "url": "https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/prosthodontics-crown-and-bridge/" },
+        { "@type": "Course", "name": "MDS - Conservative Dentistry & Endodontics", "url": "https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/conservative-dentistry-and-endodontics/" },
+        { "@type": "Course", "name": "MDS - Oral Medicine & Radiology", "url": "https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/oral-medicine/" },
+        { "@type": "Course", "name": "MDS - Oral & Maxillofacial Surgery", "url": "https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/oral-and-maxillofacial-surgery/" },
+        { "@type": "Course", "name": "MDS - Pediatric & Preventive Dentistry", "url": "https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/pediatric-and-preventive-dentistry/" },
+        { "@type": "Course", "name": "MDS - Oral Pathology & Microbiology", "url": "https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/oral-pathology-and-microbiology/" },
+        { "@type": "Course", "name": "MDS - Public Health Dentistry", "url": "https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/public-health-dentistry/" }
+      ]
+    },
     "award": [
       "India's 1st Human-AI AGI Dental Campus",
       "NAAC A Grade Accreditation"

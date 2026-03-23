@@ -10,15 +10,20 @@ export const metadata: Metadata = {
   title: 'Blog | JKKN Dental College & Hospital',
   description: 'Latest articles, news & insights from JKKN Dental College & Hospital. Dental education tips, admission guides, campus updates & career advice.',
   alternates: {
-    canonical: '/blog',
+    canonical: '/blog/',
   },
   openGraph: {
     title: 'Blog | JKKN Dental College & Hospital',
     description: 'Latest articles, news & insights from JKKN Dental College & Hospital. Dental education tips, admission guides, campus updates & career advice.',
-    url: 'https://dental.jkkn.ac.in/blog',
+    url: 'https://dental.jkkn.ac.in/blog/',
     siteName: 'JKKN Dental College & Hospital',
     type: 'website',
     locale: 'en_IN',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Blog | JKKN Dental College & Hospital',
+    description: 'Latest articles, news & insights from JKKN Dental College & Hospital. Dental education tips, admission guides, campus updates & career advice.',
   },
 };
 
@@ -76,6 +81,21 @@ export default async function BlogPage() {
       <StructuredData data={blogWebPageSchema} />
       <StructuredData data={blogSpeakableSchema} />
       <Header />
+
+      {/* ── Coming Soon — shown when no posts exist ── */}
+      {!hasCampusPosts && (
+        <section className="flex flex-col items-center justify-center min-h-[60vh] px-4 text-center">
+          <div className="w-16 h-16 rounded-full bg-[#e8f0ec] flex items-center justify-center mb-6">
+            <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 text-[#1B5E20]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+            </svg>
+          </div>
+          <h1 className="text-3xl sm:text-4xl font-bold text-[#1B5E20] mb-3">Blog Coming Soon</h1>
+          <p className="text-gray-500 text-base max-w-md">
+            We&apos;re working on articles and insights about dental education, campus life, and careers. Check back soon!
+          </p>
+        </section>
+      )}
 
       {/* ── Campus News (Admin Posts) Section — shown only when posts exist ── */}
       {hasCampusPosts && (

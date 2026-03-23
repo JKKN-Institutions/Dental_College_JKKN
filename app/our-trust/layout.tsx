@@ -1,11 +1,11 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Our Trust | JKKN Educational Trust History & Vision',
+  title: { absolute: 'Our Trust | JKKN Educational Trust History & Vision' },
   description: 'Learn about JKKN Educational Trust, founded in 1987. Discover our mission to provide quality dental education and healthcare services in Tamil Nadu through JKKN Dental College.',
   keywords: 'JKKN Trust, educational trust, college trust, JKKN history, dental college foundation',
   alternates: {
-    canonical: './',
+    canonical: '/our-trust/',
   },
   openGraph: {
     title: 'Our Trust | JKKN Educational Trust History & Vision',
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     siteName: 'JKKN Dental College & Hospital',
     images: [
       {
-        url: '/images/BDS-hero-image.png',
+        url: '/images/BDS-hero-image.webp',
         width: 1200,
         height: 630,
         alt: 'JKKN Educational Trust'
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Our Trust | JKKN Educational Trust',
     description: 'JKKN Educational Trust, founded in 1987. Quality dental education and healthcare services in Tamil Nadu.',
-    images: ['/images/BDS-hero-image.png'],
+    images: ['/images/BDS-hero-image.webp'],
   },
 };
 

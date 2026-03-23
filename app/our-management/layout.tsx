@@ -1,11 +1,11 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Our Management Team | JKKN Dental College Leadership',
+  title: { absolute: 'Our Management Team | JKKN Dental College Leadership' },
   description: 'Meet the leadership team of JKKN Dental College & Hospital. Learn about our experienced management dedicated to providing excellence in dental education and patient care.',
   keywords: 'management team, college leadership, JKKN management, dental college administration',
   alternates: {
-    canonical: './',
+    canonical: '/our-management/',
   },
   openGraph: {
     title: 'Our Management Team | JKKN Dental College Leadership',
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     siteName: 'JKKN Dental College & Hospital',
     images: [
       {
-        url: '/images/BDS-hero-image.png',
+        url: '/images/BDS-hero-image.webp',
         width: 1200,
         height: 630,
         alt: 'JKKN Dental College Management Team'
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Our Management Team | JKKN Dental College',
     description: 'Meet the leadership team of JKKN Dental College & Hospital. Excellence in dental education and patient care.',
-    images: ['/images/BDS-hero-image.png'],
+    images: ['/images/BDS-hero-image.webp'],
   },
 };
 

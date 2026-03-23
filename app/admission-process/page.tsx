@@ -4,25 +4,59 @@ import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import Link from 'next/link';
 import { Metadata } from 'next';
 import StructuredData from '@/components/StructuredData';
-import { generateBreadcrumbSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
+import { generateBreadcrumbSchema, generateSpeakableWebPageSchema, generateFAQSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: 'Admission Process 2026 | JKKN Dental College',
-  description: 'Complete admission process for BDS & MDS programs at JKKN Dental College. NEET eligibility, counseling steps, document requirements, fee structure, and important dates for 2025 admissions.',
+  description: 'BDS & MDS admission process at JKKN Dental College. NEET eligibility, counseling steps, document requirements, fee structure, and important dates.',
   keywords: 'admission process, how to apply, JKKN admission, BDS admission process, MDS admission process, NEET counseling, admission steps, dental college admission',
+  alternates: {
+    canonical: '/admission-process/',
+  },
   openGraph: {
     title: 'Admission Process 2026 | JKKN Dental College',
-    description: 'Complete admission process for BDS & MDS programs at JKKN Dental College. NEET eligibility, counseling steps, document requirements, fee structure, and important dates for 2025 admissions.',
+    description: 'BDS & MDS admission process at JKKN Dental College. NEET eligibility, counseling steps, document requirements, fee structure, and important dates.',
     url: 'https://dental.jkkn.ac.in/admission-process/',
     type: 'website',
     siteName: 'JKKN Dental College & Hospital',
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Admission Process 2026 | JKKN Dental College',
+    description: 'BDS & MDS admission process at JKKN Dental College. NEET eligibility, counseling steps, document requirements, fee structure, and important dates.',
+  },
 };
 
 const breadcrumbSchema = generateBreadcrumbSchema('/admission-process/');
+const faqSchema = generateFAQSchema([
+  {
+    question: 'What is the eligibility criteria for BDS admission at JKKN Dental College?',
+    answer: 'Candidates must have completed 10+2 with Physics, Chemistry and Biology, scored minimum 50% aggregate marks (40% for reserved categories), be at least 17 years of age, and qualified in NEET-UG.',
+  },
+  {
+    question: 'Is NEET mandatory for BDS admission?',
+    answer: 'Yes. NEET-UG qualification is mandatory for BDS admission at all Dental Council of India approved dental colleges in India, including JKKN Dental College & Hospital.',
+  },
+  {
+    question: 'How many BDS seats are available at JKKN Dental College?',
+    answer: 'JKKN Dental College & Hospital offers 100 seats for the BDS (Bachelor of Dental Surgery) program as approved by the Dental Council of India.',
+  },
+  {
+    question: 'What documents are required for BDS admission?',
+    answer: 'Required documents include 10+2 mark sheet, NEET-UG scorecard, community certificate, transfer certificate, passport-size photographs, Aadhaar card, and income certificate if applying for fee concession.',
+  },
+  {
+    question: 'What is the BDS fee structure at JKKN Dental College?',
+    answer: 'Fee structure details are available on the fees structure page at dental.jkkn.ac.in/fees-structure/ or by contacting the admissions office at +91 93458 55001.',
+  },
+  {
+    question: 'How does MDS admission work at JKKN Dental College?',
+    answer: 'MDS admission requires a BDS degree and NEET-MDS qualification. Seats are allotted through Tamil Nadu state counselling. JKKN offers 9 MDS specializations.',
+  },
+]);
 const speakableSchema = generateSpeakableWebPageSchema({
   title: 'Admission Process 2026 | JKKN Dental College',
-  description: 'Complete admission process for BDS & MDS programs at JKKN Dental College. NEET eligibility, counseling steps, document requirements, fee structure, and important dates for 2025 admissions.',
+  description: 'BDS & MDS admission process at JKKN Dental College. NEET eligibility, counseling steps, document requirements, fee structure, and important dates.',
   url: 'https://dental.jkkn.ac.in/admission-process/',
   speakableCssSelectors: ['h1', '.hero-description', 'article p'],
 });
@@ -111,6 +145,7 @@ export default function AdmissionProcess() {
   return (
     <>
       <StructuredData data={breadcrumbSchema} />
+      <StructuredData data={faqSchema} />
       <StructuredData data={speakableSchema} />
     <main className="overflow-x-hidden">
       <StructuredData data={howToSchema} />

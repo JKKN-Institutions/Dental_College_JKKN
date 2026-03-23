@@ -23,12 +23,20 @@ export const metadata: Metadata = {
   title: "India's 1st Human-AI AGI Dental Campus | JKKN Dental College",
   description: "JKKN Dental College — India's 1st AI-integrated dental campus. ChatGPT, AI diagnostics & digital dentistry tools integrated into BDS & MDS curriculum.",
   keywords: "AI dental campus India, artificial intelligence dental education, AI-powered dental college, ChatGPT dental training, digital dentistry AI, smart dental education, AI diagnostic tools dentistry, JKKN AI integration",
+  alternates: {
+    canonical: '/ai-dental-campus/',
+  },
   openGraph: {
     title: "India's 1st Human-AI AGI Dental Campus | JKKN Dental College",
     description: "JKKN Dental College — India's 1st AI-integrated dental campus. ChatGPT, AI diagnostics & digital dentistry tools integrated into BDS & MDS curriculum.",
     url: 'https://dental.jkkn.ac.in/ai-dental-campus/',
     type: 'website',
     siteName: 'JKKN Dental College & Hospital',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "India's 1st Human-AI AGI Dental Campus | JKKN Dental College",
+    description: "JKKN Dental College — India's 1st AI-integrated dental campus. ChatGPT, AI diagnostics & digital dentistry tools integrated into BDS & MDS curriculum.",
   },
 };
 

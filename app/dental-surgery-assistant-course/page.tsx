@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   title:
     "Dental Surgery Assistant Course | JKKN Dental College",
   description:
-    "Become a Certified Dental Surgery Assistant in 6 months at JKKN Dental College, Namakkal. Hands-on training in 250+ chair hospital. \u20B925,000 fee. Apply before April 28, 2026.",
+    "Certified Dental Surgery Assistant course, 6 months at JKKN Dental College. Hands-on training, 250+ chair hospital. \u20B925,000 fee. Apply by April 28, 2026.",
   keywords:
     "dental surgery assistant course, dental assistant certificate, DSA course Tamil Nadu, dental assistant training Namakkal, JKKN dental college courses, 6 month dental course",
   alternates: {

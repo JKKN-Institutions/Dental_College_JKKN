@@ -1,7 +1,8 @@
-'use client';
+﻿'use client';
 
 import { useState } from 'react';
-import { ChevronUp, ChevronDown } from 'lucide-react';
+import { ChevronUp, ChevronDown, Hospital, Stethoscope, Microscope, TrendingUp, Users, Bus, Route, Train, Plane, Home, MapPin, BookOpen, Award, Wifi, GraduationCap, Target, Sparkles, Shield } from 'lucide-react';
+import { ScrollToTop } from '@/components/ScrollToTop';
 
 const breadcrumbSchema = {
   "@context": "https://schema.org",
@@ -23,11 +24,6 @@ const speakableSchema = {
   },
 };
 
-const WA_ICON = (
-  <svg className="w-5 h-5 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
-    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
-  </svg>
-);
 
 export default function NamakkalPage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
@@ -71,12 +67,12 @@ export default function NamakkalPage() {
   ];
 
   const whyFeatures = [
-    { icon: '🏥', title: 'Own Hospital', desc: 'DCI-approved dental college with attached hospital for hands-on clinical training' },
-    { icon: '👨‍⚕️', title: 'Real Patient Exposure', desc: 'Own dental hospital on campus — students get real patient exposure from Year 1' },
-    { icon: '🔬', title: 'Advanced Labs', desc: 'Advanced dental labs, simulation equipment, and digital dentistry training' },
-    { icon: '📈', title: 'NEET MDS Results', desc: 'Strong track record in NEET MDS results and higher education' },
-    { icon: '🤝', title: 'Community Service', desc: 'Hospital serves the community — builds trust and clinical experience' },
-    { icon: '🚌', title: 'Easy Commute', desc: 'Just 5-10 km from Namakkal. Daily commute or comfortable hostel — your choice.' },
+    { icon: <Hospital className="w-6 h-6 text-[#006837]" />, title: 'Own Hospital', desc: 'DCI-approved dental college with attached hospital for hands-on clinical training' },
+    { icon: <Stethoscope className="w-6 h-6 text-[#006837]" />, title: 'Real Patient Exposure', desc: 'Own dental hospital on campus — students get real patient exposure from Year 1' },
+    { icon: <Microscope className="w-6 h-6 text-[#006837]" />, title: 'Advanced Labs', desc: 'Advanced dental labs, simulation equipment, and digital dentistry training' },
+    { icon: <TrendingUp className="w-6 h-6 text-[#006837]" />, title: 'NEET MDS Results', desc: 'Strong track record in NEET MDS results and higher education' },
+    { icon: <Users className="w-6 h-6 text-[#006837]" />, title: 'Community Service', desc: 'Hospital serves the community — builds trust and clinical experience' },
+    { icon: <Bus className="w-6 h-6 text-[#006837]" />, title: 'Easy Commute', desc: 'Just 5-10 km from Namakkal. Daily commute or comfortable hostel — your choice.' },
   ];
 
   const programmes = [
@@ -94,31 +90,28 @@ export default function NamakkalPage() {
   const companies = ['Clove Dental', 'MyDentist', 'Sabka Dentist', 'Apollo Hospitals', 'Fortis Healthcare'];
 
   const transportRows = [
-    { icon: '🛣️', label: 'ROUTE', text: 'NH-544 (Salem-Coimbatore Highway)' },
-    { icon: '🚌', label: 'BY BUS', text: 'Frequent local buses and auto-rickshaws available from Namakkal town to Komarapalayam' },
-    { icon: '🚆', label: 'NEAREST RAILWAY STATION', text: 'Salem Junction (~40 km from campus)' },
-    { icon: '✈️', label: 'NEAREST AIRPORT', text: 'Coimbatore International Airport (Code: CJB) (~110 km)' },
-    { icon: '🏠', label: 'CAMPUS ADDRESS', text: 'JKKN Institutions, Natarajapuram, NH-544, Komarapalayam (TK), Namakkal (DT), Tamil Nadu - 638183' },
+    { icon: <Route className="w-6 h-6 text-[#006837]" />, label: 'ROUTE', text: 'NH-544 (Salem-Coimbatore Highway)' },
+    { icon: <Bus className="w-6 h-6 text-[#006837]" />, label: 'BY BUS', text: 'Frequent local buses and auto-rickshaws available from Namakkal town to Komarapalayam' },
+    { icon: <Train className="w-6 h-6 text-[#006837]" />, label: 'NEAREST RAILWAY STATION', text: 'Salem Junction (~40 km from campus)' },
+    { icon: <Plane className="w-6 h-6 text-[#006837]" />, label: 'NEAREST AIRPORT', text: 'Coimbatore International Airport (Code: CJB) (~110 km)' },
+    { icon: <MapPin className="w-6 h-6 text-[#006837]" />, label: 'CAMPUS ADDRESS', text: 'JKKN Institutions, Natarajapuram, NH-544, Komarapalayam (TK), Namakkal (DT), Tamil Nadu - 638183' },
   ];
 
   const facilities = [
-    { icon: '🔬', title: 'Modern Labs', desc: 'State-of-the-art laboratories and smart classrooms' },
-    { icon: '📚', title: 'Digital Library', desc: 'Well-stocked library with digital access and journals' },
-    { icon: '🏠', title: 'Hostel', desc: 'Separate hostels for boys and girls with mess facility' },
-    { icon: '🚌', title: 'Transport', desc: 'College buses connecting to Namakkal and surrounding areas' },
-    { icon: '🏅', title: 'Sports', desc: 'Playground, indoor games, gym, and annual sports events' },
-    { icon: '📶', title: 'WiFi Campus', desc: 'High-speed internet across the entire campus' },
+    { icon: <Microscope className="w-6 h-6 text-[#006837]" />, title: 'Modern Labs', desc: 'State-of-the-art laboratories and smart classrooms' },
+    { icon: <BookOpen className="w-6 h-6 text-[#006837]" />, title: 'Digital Library', desc: 'Well-stocked library with digital access and journals' },
+    { icon: <Home className="w-6 h-6 text-[#006837]" />, title: 'Hostel', desc: 'Separate hostels for boys and girls with mess facility' },
+    { icon: <Bus className="w-6 h-6 text-[#006837]" />, title: 'Transport', desc: 'College buses connecting to Namakkal and surrounding areas' },
+    { icon: <Award className="w-6 h-6 text-[#006837]" />, title: 'Sports', desc: 'Playground, indoor games, gym, and annual sports events' },
+    { icon: <Wifi className="w-6 h-6 text-[#006837]" />, title: 'WiFi Campus', desc: 'High-speed internet across the entire campus' },
   ];
 
   const cities = [
-    { icon: '🚌', name: 'Salem', dist: '40-50 km' },
-    { icon: '🛣️', name: 'Erode', dist: '30-40 km' },
-    { icon: '🎯', name: 'Tiruppur', dist: '80-90 km' },
-    { icon: '✨', name: 'Coimbatore', dist: '100-110 km' },
+    { icon: <Bus className="w-6 h-6 text-[#006837]" />, name: 'Salem', dist: '40-50 km', href: '/salem/' },
+    { icon: <Route className="w-6 h-6 text-[#006837]" />, name: 'Erode', dist: '30-40 km', href: '/erode/' },
+    { icon: <Target className="w-6 h-6 text-[#006837]" />, name: 'Tiruppur', dist: '80-90 km', href: '/tiruppur/' },
+    { icon: <Sparkles className="w-6 h-6 text-[#006837]" />, name: 'Coimbatore', dist: '100-110 km', href: '/coimbatore/' },
   ];
-
-  const quickLinks = ['All Programmes', 'Admissions', 'Placements', 'Campus Life', 'Fee Structure', 'Contact Us'];
-  const institutions = ['JKKN Group', 'Dental', 'Pharmacy', 'Nursing', 'Engineering', 'Arts & Science', 'Allied Health Sciences'];
 
   return (
     <>
@@ -133,17 +126,14 @@ export default function NamakkalPage() {
       <main className="overflow-x-hidden w-full">
 
       {/* ── Top Announcement Bar ── */}
-      <div className="bg-[#1a3060] text-white py-2 px-4">
+      <div className="bg-[#002309] text-white py-2 px-4">
         <div className="max-w-7xl mx-auto flex items-center justify-center gap-3 sm:gap-6 flex-wrap">
           <span className="flex items-center gap-2 text-sm font-medium">
             <span className="w-2 h-2 bg-green-400 rounded-full inline-block" />
             Admissions Open 2026-27
           </span>
-          <a href="tel:+919345855001" className="bg-[#2a4080] hover:bg-[#324b99] text-white text-sm font-semibold px-4 py-1.5 rounded-full border border-white/20 transition-colors">
-            Call Now
-          </a>
-          <a href="https://wa.me/919345855001" target="_blank" rel="nofollow noopener noreferrer" className="bg-green-500 hover:bg-green-600 text-white text-sm font-semibold px-4 py-1.5 rounded-full transition-colors">
-            WhatsApp
+          <a href="tel:+919345855001" className="bg-[#006837] hover:bg-[#005a30] text-white text-sm font-semibold px-4 py-1.5 rounded-full border border-white/20 transition-colors">
+            Call Us
           </a>
         </div>
       </div>
@@ -151,13 +141,13 @@ export default function NamakkalPage() {
       {/* ── Hero ── */}
       <section
         className="relative flex flex-col items-center justify-center text-center px-4 py-16 sm:py-24"
-        style={{ background: 'linear-gradient(135deg, #1e40af 0%, #1e3a8a 45%, #0f172a 100%)', minHeight: '88vh' }}
+        style={{ background: 'linear-gradient(135deg, #006837 0%, #002309 100%)', minHeight: '88vh' }}
       >
         <div className="mb-6 inline-flex items-center gap-2 bg-white/10 backdrop-blur border border-white/20 text-white text-sm font-medium px-5 py-2 rounded-full">
-          🦷 DCI, NAAC Approved • Admissions Open
+          <Shield className="w-4 h-4" /> DCI, NAAC Approved • Admissions Open
         </div>
         <h1 className="text-white font-extrabold leading-tight mb-6 max-w-4xl" style={{ fontSize: 'clamp(2rem, 5vw + 0.5rem, 3.5rem)' }}>
-          Best Dental College Near <span className="text-orange-500">Namakkal</span>
+          Best Dental College Near <span className="text-[#7cb983]">Namakkal</span>
         </h1>
         <p className="text-white/80 max-w-2xl mb-10 leading-relaxed" style={{ fontSize: 'clamp(0.9rem, 1vw + 0.5rem, 1.1rem)' }}>
           Namakkal is home — and so are we. JKKN Dental College &amp; Hospital offers top-tier dental programmes with
@@ -177,12 +167,10 @@ export default function NamakkalPage() {
           ))}
         </div>
         <div className="flex flex-col sm:flex-row gap-4 items-center">
-          <a href="https://wa.me/919345855001" target="_blank" rel="nofollow noopener noreferrer" className="bg-orange-500 hover:bg-orange-600 text-white font-bold px-8 py-4 rounded-full transition-all transform hover:scale-105 shadow-lg text-base">
+          <a href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8" target="_blank" rel="nofollow noopener noreferrer" className="bg-[#7cb983] hover:bg-[#6ba872] text-white font-bold px-8 py-4 rounded-full transition-all transform hover:scale-105 shadow-lg text-base">
             Apply Now — 2026-27
           </a>
-          <a href="https://wa.me/919345855001" target="_blank" rel="nofollow noopener noreferrer" className="bg-green-500 hover:bg-green-600 text-white font-bold px-8 py-4 rounded-full flex items-center gap-2 transition-all transform hover:scale-105 shadow-lg text-base">
-            {WA_ICON} WhatsApp Us
-          </a>
+          <a href="tel:+919345855001" className="bg-[#006837] hover:bg-[#002309] text-white font-bold px-8 py-4 rounded-full transition-all transform hover:scale-105 shadow-lg text-base">Call Us</a>
         </div>
       </section>
 
@@ -190,8 +178,8 @@ export default function NamakkalPage() {
       <div className="bg-white border-b border-gray-100 py-4 px-4">
         <div className="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8">
           <div className="flex items-center gap-3">
-            <span className="flex items-center gap-1.5 bg-blue-50 border border-blue-200 text-blue-700 text-sm font-semibold px-3 py-1.5 rounded-full">✓ DCI</span>
-            <span className="flex items-center gap-1.5 bg-blue-50 border border-blue-200 text-blue-700 text-sm font-semibold px-3 py-1.5 rounded-full">✓ NAAC</span>
+            <span className="flex items-center gap-1.5 bg-[#FBFBEE] border border-[#7cb983] text-[#006837] text-sm font-semibold px-3 py-1.5 rounded-full">✓ DCI</span>
+            <span className="flex items-center gap-1.5 bg-[#FBFBEE] border border-[#7cb983] text-[#006837] text-sm font-semibold px-3 py-1.5 rounded-full">✓ NAAC</span>
           </div>
           <span className="hidden sm:block text-gray-300">|</span>
           <p className="text-gray-500 text-sm text-center">Affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai</p>
@@ -199,11 +187,11 @@ export default function NamakkalPage() {
       </div>
 
       {/* ── Distance Card ── */}
-      <section className="bg-[#eef2ff] py-10 px-4">
+      <section className="bg-[#FBFBEE] py-10 px-4">
         <div className="max-w-3xl mx-auto">
           <div className="bg-white rounded-2xl shadow-sm p-6 sm:p-8 flex flex-col sm:flex-row items-start sm:items-center gap-6 justify-between">
             <div className="flex items-start gap-5">
-              <div className="text-[#1a3a8a] font-extrabold leading-none" style={{ fontSize: 'clamp(3rem, 6vw, 4rem)' }}>
+              <div className="text-[#006837] font-extrabold leading-none" style={{ fontSize: 'clamp(3rem, 6vw, 4rem)' }}>
                 10<span className="text-xl sm:text-2xl font-bold">km</span>
               </div>
               <div>
@@ -214,9 +202,9 @@ export default function NamakkalPage() {
             <a
               href="https://maps.google.com/?q=JKKN+Dental+College+Komarapalayam"
               target="_blank" rel="nofollow noopener noreferrer"
-              className="flex-shrink-0 bg-blue-700 hover:bg-blue-800 text-white font-semibold px-5 py-3 rounded-xl flex flex-col items-center gap-1 transition-colors min-w-[110px] text-center"
+              className="flex-shrink-0 bg-[#006837] hover:bg-[#002309] text-white font-semibold px-5 py-3 rounded-xl flex flex-col items-center gap-1 transition-colors min-w-[110px] text-center"
             >
-              <span className="text-xl">📍</span>
+              <MapPin className="w-5 h-5" />
               <span className="text-sm">View on Map</span>
             </a>
           </div>
@@ -232,11 +220,11 @@ export default function NamakkalPage() {
           <p className="text-gray-500 max-w-3xl mx-auto mb-4 leading-relaxed" style={{ fontSize: 'clamp(0.875rem, 1vw + 0.4rem, 1.05rem)' }}>
             Being in the home district of JKKN, Namakkal students enjoy the closest proximity to the campus. There is no need for hostel accommodation — daily commute is easy and convenient. Students can stay at home and still access world-class education.
           </p>
-          <div className="w-14 h-1 bg-orange-500 rounded mx-auto mb-12" />
+          <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-12" />
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {whyFeatures.map((item) => (
-              <div key={item.title} className="bg-[#f0f4ff] rounded-2xl p-6 text-center hover:shadow-md transition-shadow">
-                <div className="text-4xl mb-4">{item.icon}</div>
+              <div key={item.title} className="bg-[#FBFBEE] rounded-2xl p-6 text-center hover:shadow-md transition-shadow">
+                <div className="flex justify-center mb-4">{item.icon}</div>
                 <h3 className="text-base font-bold text-gray-900 mb-2">{item.title}</h3>
                 <p className="text-gray-500 text-sm leading-relaxed">{item.desc}</p>
               </div>
@@ -246,17 +234,17 @@ export default function NamakkalPage() {
       </section>
 
       {/* ── Programmes Offered ── */}
-      <section className="bg-[#f0f4ff] py-16 px-4">
+      <section className="bg-[#FBFBEE] py-16 px-4">
         <div className="max-w-5xl mx-auto text-center">
           <h2 className="font-extrabold text-gray-900 mb-3" style={{ fontSize: 'clamp(1.6rem, 3vw + 0.5rem, 2.4rem)' }}>
             Programmes Offered
           </h2>
           <p className="text-gray-500 text-base mb-4">Choose the right programme for your career goals</p>
-          <div className="w-14 h-1 bg-orange-500 rounded mx-auto mb-12" />
+          <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-12" />
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {programmes.map((prog) => (
               <div key={prog.title} className="bg-white rounded-2xl p-6 sm:p-8 text-left shadow-sm">
-                <div className="text-3xl mb-4">🎓</div>
+                <div className="mb-4"><GraduationCap className="w-8 h-8 text-[#006837]" /></div>
                 <h3 className="text-lg font-bold text-gray-900 mb-5">{prog.title}</h3>
                 <div className="space-y-3 mb-4">
                   {[
@@ -265,13 +253,13 @@ export default function NamakkalPage() {
                     { label: 'Intake', value: prog.intake },
                   ].map((row) => (
                     <div key={row.label} className="flex justify-between items-center border-b border-gray-100 pb-2">
-                      <span className="text-blue-400 text-sm">{row.label}</span>
+                      <span className="text-[#7cb983] text-sm">{row.label}</span>
                       <span className="text-gray-900 text-sm font-semibold">{row.value}</span>
                     </div>
                   ))}
                 </div>
                 <p className="text-gray-400 text-sm mb-6">{prog.eligibility}</p>
-                <a href="https://wa.me/919345855001" target="_blank" rel="nofollow noopener noreferrer" className="block text-center bg-blue-50 hover:bg-blue-100 text-blue-700 font-semibold py-3 rounded-xl transition-colors text-sm">
+                <a href="tel:+919345855001" target="_blank" rel="nofollow noopener noreferrer" className="block text-center bg-[#FBFBEE] hover:bg-[#e8f5e9] text-[#006837] font-semibold py-3 rounded-xl transition-colors text-sm">
                   Enquire About This Course
                 </a>
               </div>
@@ -287,11 +275,11 @@ export default function NamakkalPage() {
             Placement Highlights
           </h2>
           <p className="text-gray-500 text-base mb-4">Our placement cell connects you with India&apos;s top employers</p>
-          <div className="w-14 h-1 bg-orange-500 rounded mx-auto mb-12" />
+          <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-12" />
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-10">
             {placementStats.map((stat) => (
               <div key={stat.label} className="bg-white border border-gray-100 rounded-2xl p-5 shadow-sm">
-                <div className="font-extrabold text-blue-700" style={{ fontSize: 'clamp(1.8rem, 3vw, 2.5rem)' }}>{stat.value}</div>
+                <div className="font-extrabold text-[#006837]" style={{ fontSize: 'clamp(1.8rem, 3vw, 2.5rem)' }}>{stat.value}</div>
                 <div className="text-xs font-semibold tracking-widest text-gray-400 mt-1">{stat.label}</div>
               </div>
             ))}
@@ -306,16 +294,16 @@ export default function NamakkalPage() {
       </section>
 
       {/* ── How to Reach ── */}
-      <section className="bg-[#f0f4ff] py-16 px-4">
+      <section className="bg-[#FBFBEE] py-16 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="font-extrabold text-gray-900 mb-3" style={{ fontSize: 'clamp(1.6rem, 3vw + 0.5rem, 2.4rem)' }}>
             How to Reach from Namakkal
           </h2>
           <p className="text-gray-500 text-base mb-4">Multiple transport options to get to campus easily</p>
-          <div className="w-14 h-1 bg-orange-500 rounded mx-auto mb-10" />
+          <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-10" />
           <div className="bg-white rounded-2xl overflow-hidden shadow-sm text-left">
-            <div className="bg-blue-700 text-white px-6 py-5 flex items-center gap-3">
-              <span className="text-2xl">📍</span>
+            <div className="bg-[#006837] text-white px-6 py-5 flex items-center gap-3">
+              <MapPin className="w-6 h-6" />
               <div>
                 <p className="font-bold text-lg">Namakkal → JKKN Dental Campus</p>
                 <p className="text-white/80 text-sm">5-10 km • 15-20 minutes</p>
@@ -323,7 +311,7 @@ export default function NamakkalPage() {
             </div>
             {transportRows.map((row, i) => (
               <div key={row.label} className={`flex items-start gap-4 px-6 py-5 ${i < transportRows.length - 1 ? 'border-b border-gray-100' : ''}`}>
-                <div className="w-10 h-10 rounded-xl bg-blue-50 flex items-center justify-center text-xl flex-shrink-0">{row.icon}</div>
+                <div className="w-10 h-10 rounded-xl bg-[#FBFBEE] flex items-center justify-center text-xl flex-shrink-0">{row.icon}</div>
                 <div>
                   <p className="text-xs font-semibold tracking-widest text-gray-400 mb-1">{row.label}</p>
                   <p className="text-gray-800 text-sm leading-relaxed">{row.text}</p>
@@ -341,11 +329,11 @@ export default function NamakkalPage() {
             Campus &amp; Facilities
           </h2>
           <p className="text-gray-500 text-base mb-4">Everything you need for a world-class education experience</p>
-          <div className="w-14 h-1 bg-orange-500 rounded mx-auto mb-12" />
+          <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-12" />
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {facilities.map((item) => (
-              <div key={item.title} className="flex items-start gap-3 bg-[#f0f4ff] rounded-2xl p-4 text-left">
-                <div className="w-10 h-10 rounded-xl bg-blue-100 flex items-center justify-center text-xl flex-shrink-0">{item.icon}</div>
+              <div key={item.title} className="flex items-start gap-3 bg-[#FBFBEE] rounded-2xl p-4 text-left">
+                <div className="w-10 h-10 rounded-xl bg-[#e8f5e9] flex items-center justify-center text-xl flex-shrink-0">{item.icon}</div>
                 <div>
                   <p className="font-bold text-gray-900 text-sm">{item.title}</p>
                   <p className="text-gray-500 text-xs mt-1 leading-relaxed">{item.desc}</p>
@@ -357,13 +345,13 @@ export default function NamakkalPage() {
       </section>
 
       {/* ── Testimonials ── */}
-      <section className="bg-[#f0f4ff] py-16 px-4">
+      <section className="bg-[#FBFBEE] py-16 px-4">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="font-extrabold text-gray-900 mb-3" style={{ fontSize: 'clamp(1.6rem, 3vw + 0.5rem, 2.4rem)' }}>
             Students from Namakkal Love JKKN Dental
           </h2>
           <p className="text-gray-500 text-base mb-4">Hear from students who made the right choice</p>
-          <div className="w-14 h-1 bg-orange-500 rounded mx-auto mb-12" />
+          <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-12" />
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             <div className="bg-white rounded-2xl p-6 text-left shadow-sm">
               <div className="text-5xl text-gray-200 font-serif leading-none mb-3 select-none">&quot;</div>
@@ -385,8 +373,8 @@ export default function NamakkalPage() {
                 <p className="text-gray-400 text-xs mt-0.5">[Course], Batch of [Year]</p>
               </div>
             </div>
-            <div className="border-2 border-dashed border-orange-300 bg-orange-50 rounded-2xl p-6 flex items-center justify-center text-center">
-              <p className="text-orange-500 text-sm font-medium leading-relaxed">
+            <div className="border-2 border-dashed border-[#7cb983] bg-[#FBFBEE] rounded-2xl p-6 flex items-center justify-center text-center">
+              <p className="text-[#7cb983] text-sm font-medium leading-relaxed">
                 Add 2-3 real student testimonials from Namakkal or nearby areas before deployment.
               </p>
             </div>
@@ -401,24 +389,24 @@ export default function NamakkalPage() {
             Frequently Asked Questions
           </h2>
           <p className="text-gray-500 text-base mb-4">Dental College in Namakkal — Your Questions Answered</p>
-          <div className="w-14 h-1 bg-orange-500 rounded mx-auto mb-12" />
+          <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-12" />
           <div className="text-left space-y-3">
             {faqs.map((faq, i) => (
               <div
                 key={i}
-                className={`rounded-xl overflow-hidden border transition-colors ${openFaq === i ? 'border-blue-300' : 'border-gray-200'}`}
+                className={`rounded-xl overflow-hidden border transition-colors ${openFaq === i ? 'border-[#7cb983]' : 'border-gray-200'}`}
               >
                 <button
                   onClick={() => setOpenFaq(openFaq === i ? null : i)}
                   className="w-full flex items-center justify-between px-5 py-4 text-left font-semibold text-gray-900 text-sm sm:text-base bg-white hover:bg-gray-50 transition-colors"
                 >
                   <span>{faq.q}</span>
-                  <span className="ml-4 flex-shrink-0 text-blue-600">
+                  <span className="ml-4 flex-shrink-0 text-[#006837]">
                     {openFaq === i ? <ChevronUp className="w-5 h-5" /> : <ChevronDown className="w-5 h-5" />}
                   </span>
                 </button>
                 {openFaq === i && (
-                  <div className="px-5 pb-5 pt-2 text-gray-500 text-sm leading-relaxed border-t border-blue-100 bg-white">
+                  <div className="px-5 pb-5 pt-2 text-gray-500 text-sm leading-relaxed border-t border-[#7cb983]/20 bg-white">
                     {faq.a}
                   </div>
                 )}
@@ -429,18 +417,18 @@ export default function NamakkalPage() {
       </section>
 
       {/* ── Interested? Let's Talk! ── */}
-      <section className="py-16 px-4" style={{ background: 'linear-gradient(135deg, #1e40af 0%, #2952cc 50%, #1e3a8a 100%)' }}>
+      <section className="py-16 px-4" style={{ background: 'linear-gradient(135deg, #006837 0%, #002309 100%)' }}>
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="font-extrabold text-white mb-3" style={{ fontSize: 'clamp(1.6rem, 3vw + 0.5rem, 2.4rem)' }}>
             Interested? Let&apos;s Talk!
           </h2>
           <p className="text-white/80 text-base mb-4">Fill in your details and our admission team will contact you within 24 hours</p>
-          <div className="w-14 h-1 bg-orange-500 rounded mx-auto mb-10" />
+          <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-10" />
           <form
             className="text-left space-y-5"
             onSubmit={(e) => {
               e.preventDefault();
-              window.location.href = `https://wa.me/919345855001?text=Name: ${formData.name}%0AMobile: ${formData.mobile}%0ACity: ${formData.city}%0AProgramme: ${formData.programme}%0AQuestion: ${formData.question}`;
+              window.location.href = 'tel:+919345855001';
             }}
           >
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
@@ -501,108 +489,50 @@ export default function NamakkalPage() {
             </div>
             <button
               type="submit"
-              className="w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-4 rounded-full transition-all transform hover:scale-[1.02] shadow-lg text-base"
+              className="w-full bg-[#7cb983] hover:bg-[#6ba872] text-white font-bold py-4 rounded-full transition-all transform hover:scale-[1.02] shadow-lg text-base"
             >
               Submit Enquiry — Get a Call Back
             </button>
             <p className="text-center text-white/70 text-sm">
               Or call us directly:{' '}
-              <a href="tel:+919345855001" className="text-white underline hover:text-white/90">+91-XXXXXXXXXX</a>
-              {' '}•{' '}
-              <a href="https://wa.me/919345855001" target="_blank" rel="nofollow noopener noreferrer" className="text-white underline hover:text-white/90">WhatsApp</a>
-            </p>
+              <a href="tel:+919345855001" className="text-white underline hover:text-white/90">+91-9345855001</a></p>
           </form>
         </div>
       </section>
 
       {/* ── Explore More Cities ── */}
-      <section className="bg-[#eef2ff] py-16 px-4">
+      <section className="bg-[#FBFBEE] py-16 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="font-extrabold text-gray-900 mb-3" style={{ fontSize: 'clamp(1.6rem, 3vw + 0.5rem, 2.4rem)' }}>
             Explore More Cities
           </h2>
           <p className="text-gray-500 text-base mb-4">Find the best dental college near your city</p>
-          <div className="w-14 h-1 bg-orange-500 rounded mx-auto mb-10" />
+          <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-10" />
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
             {cities.slice(0, 3).map((city) => (
-              <div key={city.name} className="bg-white rounded-2xl px-5 py-4 flex items-center gap-3 shadow-sm hover:shadow-md transition-shadow cursor-pointer">
-                <span className="text-2xl">{city.icon}</span>
+              <a href={city.href} key={city.name} className="bg-white rounded-2xl px-5 py-4 flex items-center gap-3 shadow-sm hover:shadow-md transition-shadow cursor-pointer">
+                <span className="flex-shrink-0">{city.icon}</span>
                 <span className="font-bold text-gray-900 text-base flex-1 text-left">{city.name}</span>
                 <span className="text-gray-400 text-sm">{city.dist}</span>
-              </div>
+              </a>
             ))}
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-10">
             {cities.slice(3).map((city) => (
-              <div key={city.name} className="bg-white rounded-2xl px-5 py-4 flex items-center gap-3 shadow-sm hover:shadow-md transition-shadow cursor-pointer sm:col-span-1">
-                <span className="text-2xl">{city.icon}</span>
+              <a href={city.href} key={city.name} className="bg-white rounded-2xl px-5 py-4 flex items-center gap-3 shadow-sm hover:shadow-md transition-shadow cursor-pointer sm:col-span-1">
+                <span className="flex-shrink-0">{city.icon}</span>
                 <span className="font-bold text-gray-900 text-base flex-1 text-left">{city.name}</span>
                 <span className="text-gray-400 text-sm">{city.dist}</span>
-              </div>
+              </a>
             ))}
           </div>
-          <a href="https://dental.jkkn.ac.in" className="inline-block bg-orange-500 hover:bg-orange-600 text-white font-bold px-10 py-4 rounded-full transition-all transform hover:scale-105 shadow-lg text-base">
+          <a href="/#academic-programs" className="inline-block bg-[#7cb983] hover:bg-[#6ba872] text-white font-bold px-10 py-4 rounded-full transition-all transform hover:scale-105 shadow-lg text-base">
             View All Programmes
           </a>
         </div>
       </section>
 
-      {/* ── Footer ── */}
-      <footer className="bg-[#1e3a8a] text-white pt-14 pb-6 px-4">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 mb-10">
-            {/* Col 1 */}
-            <div>
-              <h3 className="font-bold text-base mb-4">JKKN Dental College &amp; Hospital</h3>
-              <p className="text-white/70 text-sm mb-3">Part of JKKN Institutions</p>
-              <p className="text-white/70 text-sm mb-3 leading-relaxed">
-                Natarajapuram, NH-544 (Salem To Coimbatore National Highway), Komarapalayam (TK), Namakkal (DT), Tamil Nadu - 638183, India
-              </p>
-              <p className="text-white/70 text-sm mb-1">Phone: +91-XXXXXXXXXX</p>
-              <p className="text-white/70 text-sm mb-1">WhatsApp: +91-XXXXXXXXXX</p>
-              <p className="text-white/70 text-sm">Email: admissions@dental.jkkn.ac.in</p>
-            </div>
-            {/* Col 2 */}
-            <div>
-              <h3 className="font-bold text-base mb-4">Quick Links</h3>
-              <ul className="space-y-2">
-                {quickLinks.map((link) => (
-                  <li key={link}>
-                    <a href="https://dental.jkkn.ac.in" className="text-white/70 hover:text-white text-sm transition-colors">{link}</a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            {/* Col 3 */}
-            <div>
-              <h3 className="font-bold text-base mb-4">JKKN Institutions</h3>
-              <ul className="space-y-2">
-                {institutions.map((inst) => (
-                  <li key={inst}>
-                    <a href="https://dental.jkkn.ac.in" className="text-white/70 hover:text-white text-sm transition-colors">{inst}</a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-          {/* Bottom bar */}
-          <div className="border-t border-white/20 pt-6">
-            <p className="text-white/50 text-xs text-center leading-relaxed">
-              © 2026 JKKN Dental College &amp; Hospital | Part of JKKN Institutions | All institution names follow the JKKN Official Name Registry | Page optimised for SEO, AEO, and GEO
-            </p>
-          </div>
-        </div>
-      </footer>
-
-      {/* ── Floating WhatsApp Button ── */}
-      <a
-        href="https://wa.me/919345855001"
-        target="_blank" rel="nofollow noopener noreferrer"
-        className="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white font-semibold px-5 py-3 rounded-full flex items-center gap-2 shadow-xl transition-all transform hover:scale-105"
-        aria-label="Chat with us on WhatsApp"
-      >
-        {WA_ICON} Chat with Us
-      </a>
+      <ScrollToTop />
 
       </main>
     </>

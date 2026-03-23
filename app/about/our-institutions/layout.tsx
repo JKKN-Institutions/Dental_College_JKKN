@@ -1,11 +1,11 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Our Institutions | JKKN Group of Educational Institutions',
+  title: { absolute: 'Our Institutions | JKKN Group of Educational Institutions' },
   description: 'Explore JKKN Group of Educational Institutions including Dental College, Engineering College, Arts & Science College, and Hospital facilities in Komarapalayam, Tamil Nadu.',
   keywords: 'JKKN institutions, JKKN group, educational institutions, JKKN colleges, Komarapalayam colleges',
   alternates: {
-    canonical: './',
+    canonical: '/about/our-institutions/',
   },
   openGraph: {
     title: 'Our Institutions | JKKN Group of Educational Institutions',
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     siteName: 'JKKN Dental College & Hospital',
     images: [
       {
-        url: '/images/BDS-hero-image.png',
+        url: '/images/BDS-hero-image.webp',
         width: 1200,
         height: 630,
         alt: 'JKKN Group of Educational Institutions'
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Our Institutions | JKKN Group',
     description: 'JKKN Group of Educational Institutions - Dental, Engineering, Arts & Science College in Komarapalayam.',
-    images: ['/images/BDS-hero-image.png'],
+    images: ['/images/BDS-hero-image.webp'],
   },
 };
 

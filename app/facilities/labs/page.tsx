@@ -8,11 +8,11 @@ import { generateBreadcrumbSchema, generateWebPageSchema, generateSpeakableWebPa
 
 export const metadata: Metadata = {
   title: 'Laboratory Facilities | Modern Dental Labs | JKKN Dental',
-  description: 'State-of-the-art dental laboratories at JKKN Dental College with advanced equipment for preclinical training, research, and hands-on learning in all dental specialties.',
+  description: 'State-of-the-art dental laboratories at JKKN Dental College with advanced equipment for preclinical training, research, and hands-on learning.',
   keywords: 'dental labs, laboratory facilities, preclinical labs, dental equipment, dental training labs',
   openGraph: {
     title: 'Laboratory Facilities | Modern Dental Labs | JKKN Dental',
-    description: 'State-of-the-art dental laboratories at JKKN Dental College with advanced equipment for preclinical training, research, and hands-on learning in all dental specialties.',
+    description: 'State-of-the-art dental laboratories at JKKN Dental College with advanced equipment for preclinical training, research, and hands-on learning.',
     url: 'https://dental.jkkn.ac.in/facilities/labs/',
     type: 'website',
     siteName: 'JKKN Dental College & Hospital',
@@ -70,13 +70,13 @@ export default function Labs() {
   const breadcrumbSchema = generateBreadcrumbSchema('/facilities/labs');
   const webPageSchema = generateWebPageSchema({
     title: 'Laboratory Facilities | Modern Dental Labs | JKKN Dental',
-    description: 'State-of-the-art dental laboratories at JKKN Dental College with advanced equipment for preclinical training, research, and hands-on learning in all dental specialties.',
+    description: 'State-of-the-art dental laboratories at JKKN Dental College with advanced equipment for preclinical training, research, and hands-on learning.',
     url: 'https://dental.jkkn.ac.in/facilities/labs/',
     dateModified: '2026-03-18',
   });
   const speakableSchema = generateSpeakableWebPageSchema({
     title: 'Laboratory Facilities | Modern Dental Labs | JKKN Dental',
-    description: 'State-of-the-art dental laboratories at JKKN Dental College with advanced equipment for preclinical training, research, and hands-on learning in all dental specialties.',
+    description: 'State-of-the-art dental laboratories at JKKN Dental College with advanced equipment for preclinical training, research, and hands-on learning.',
     url: 'https://dental.jkkn.ac.in/facilities/labs/',
     speakableCssSelectors: ['h1', '.hero-description', 'article p'],
   });

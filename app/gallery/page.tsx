@@ -11,11 +11,11 @@ export const revalidate = 60;
 
 export const metadata: Metadata = {
   title: 'Campus Gallery | JKKN Dental College & Hospital Photos',
-  description: 'Explore JKKN Dental College campus through our photo gallery. View our modern infrastructure, clinical facilities, laboratories, classrooms, library, and student activities.',
+  description: 'Explore JKKN Dental College campus gallery. View modern infrastructure, clinical facilities, laboratories, classrooms, library, and student activities.',
   keywords: 'JKKN campus photos, dental college gallery, campus facilities, infrastructure photos',
   openGraph: {
     title: 'Campus Gallery | JKKN Dental College & Hospital Photos',
-    description: 'Explore JKKN Dental College campus through our photo gallery. View our modern infrastructure, clinical facilities, laboratories, classrooms, library, and student activities.',
+    description: 'Explore JKKN Dental College campus gallery. View modern infrastructure, clinical facilities, laboratories, classrooms, library, and student activities.',
     url: 'https://dental.jkkn.ac.in/gallery/',
     type: 'website',
     siteName: 'JKKN Dental College & Hospital',
@@ -79,7 +79,7 @@ export default async function Gallery() {
 
   const speakableSchema = generateSpeakableWebPageSchema({
     title: 'Campus Gallery | JKKN Dental College & Hospital Photos',
-    description: 'Explore JKKN Dental College campus through our photo gallery. View our modern infrastructure, clinical facilities, laboratories, classrooms, library, and student activities.',
+    description: 'Explore JKKN Dental College campus gallery. View modern infrastructure, clinical facilities, laboratories, classrooms, library, and student activities.',
     url: 'https://dental.jkkn.ac.in/gallery/',
     speakableCssSelectors: ['h1', '.hero-description', 'article p'],
   });
