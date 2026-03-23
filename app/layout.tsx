@@ -18,14 +18,7 @@ export const metadata: Metadata = {
     template: "%s | JKKN Dental College"
   },
   description: "JKKN Dental College & Hospital, Komarapalayam — DCI approved, NAAC A accredited. BDS & MDS programs with 200+ chair hospital training. Since 1987.",
-  keywords: "JKKN Dental College, AI dental campus, dental college Tamil Nadu, BDS course, MDS specializations, AI in dentistry, ChatGPT dental education, DCI approved dental college, NAAC accredited, digital dentistry, CAD/CAM dentistry, Komarapalayam dental college",
   authors: [{ name: "JKKN Dental College Editorial Team" }],
-  alternates: {
-    canonical: 'https://dental.jkkn.ac.in/',
-    languages: {
-      'en-IN': 'https://dental.jkkn.ac.in/',
-    },
-  },
   icons: {
     icon: "/images/dental-logo.png",
     apple: "/images/dental-logo.png",
@@ -37,7 +30,7 @@ export const metadata: Metadata = {
     siteName: "JKKN Dental College & Hospital",
     images: [
       {
-        url: "/images/BDS-hero-image.png",
+        url: "https://dental.jkkn.ac.in/images/BDS-hero-image.png",
         width: 1200,
         height: 630,
         alt: "JKKN Dental College & Hospital - Best Dental College in Tamil Nadu"

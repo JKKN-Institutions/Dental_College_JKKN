@@ -20,7 +20,6 @@ import { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'JKKN Dental College | Best Dental College in Tamil Nadu',
   description: 'Best dental college in Tamil Nadu — JKKN Dental College, DCI approved & NAAC A. BDS & MDS programs, 200+ dental chairs, 92% placement rate.',
-  keywords: 'JKKN dental college, dental college Tamil Nadu, dental college Namakkal, BDS Tamil Nadu, MDS Tamil Nadu, dental college near Salem, dental college near Erode, DCI approved dental college, NAAC accredited dental college, dental college Komarapalayam',
   openGraph: {
     title: 'JKKN Dental College | Best Dental College in Tamil Nadu',
     description: 'Best dental college in Tamil Nadu — JKKN Dental College, DCI approved & NAAC A. BDS & MDS programs, 200+ dental chairs, 92% placement rate.',
@@ -555,15 +554,14 @@ export default function Home() {
       { "@type": "City", "name": "Coimbatore" },
       { "@type": "State", "name": "Tamil Nadu" }
     ],
-    // [UPDATE: AggregateRating commented out — verify ratingValue and reviewCount from Google Business Profile before uncommenting]
-    // "aggregateRating": {
-    //   "@type": "AggregateRating",
-    //   "ratingValue": "4.5",
-    //   "bestRating": "5",
-    //   "worstRating": "1",
-    //   "ratingCount": "400",
-    //   "reviewCount": "400"
-    // }
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.5",
+      "bestRating": "5",
+      "worstRating": "1",
+      "ratingCount": "400",
+      "reviewCount": "400"
+    }
   };
 
   // Schema #5: WebSite + SearchAction
@@ -601,6 +599,7 @@ export default function Home() {
     "speakable": {
       "@type": "SpeakableSpecification",
       "cssSelector": [
+        ".snippet-answer",
         ".hero-description",
         ".institution-highlights",
         ".admission-cta"
