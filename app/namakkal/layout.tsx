@@ -3,16 +3,16 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: { absolute: 'Best Dental College in Namakkal | JKKN Dental College' },
-  description: 'JKKN Dental College & Hospital, located in Komarapalayam, Namakkal. DCI approved, NAAC A accredited. BDS & MDS programs with 200+ chair hospital.',
-  keywords: 'dental college in namakkal, best dental college namakkal, bds college namakkal, mds college namakkal, jkkn dental namakkal, dental college komarapalayam',
+  title: { absolute: 'Namakkal Dental College | JKKN Dental College & Hospital' },
+  description: 'JKKN Dental College & Hospital — Namakkal dental college in Komarapalayam. DCI approved, NAAC accredited. BDS & MDS programs with 200+ chair hospital. Top dental college in Namakkal district.',
+  keywords: 'namakkal dental college, top dental colleges, namakkal bds college, dental college namakkal, mds college namakkal, jkkn dental namakkal, dental college komarapalayam',
   robots: { index: true, follow: true },
   alternates: {
     canonical: '/namakkal/',
   },
   openGraph: {
-    title: 'Best Dental College in Namakkal | JKKN Dental College',
-    description: 'JKKN Dental College & Hospital, located in Komarapalayam, Namakkal. DCI approved, NAAC A accredited. BDS & MDS programs with 200+ chair hospital.',
+    title: 'Namakkal Dental College | JKKN Dental College & Hospital',
+    description: 'JKKN Dental College & Hospital — Namakkal dental college in Komarapalayam. DCI approved, NAAC accredited. BDS & MDS programs with 200+ chair hospital. Top dental college in Namakkal district.',
     url: 'https://dental.jkkn.ac.in/namakkal/',
     siteName: 'JKKN Dental College & Hospital',
     images: [
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
         url: '/images/BDS-hero-image.webp',
         width: 1200,
         height: 630,
-        alt: 'Best Dental College in Namakkal - JKKN Dental College'
+        alt: 'Namakkal Dental College - JKKN Dental College'
       }
     ],
     type: 'website',
@@ -28,8 +28,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Best Dental College in Namakkal | JKKN Dental College',
-    description: 'JKKN Dental College & Hospital, located in Komarapalayam, Namakkal. DCI approved, NAAC A accredited. BDS & MDS programs with 200+ chair hospital.',
+    title: 'Namakkal Dental College | JKKN Dental College & Hospital',
+    description: 'JKKN Dental College & Hospital — Namakkal dental college in Komarapalayam. DCI approved, NAAC accredited. BDS & MDS programs with 200+ chair hospital. Top dental college in Namakkal district.',
     images: ['/images/BDS-hero-image.webp'],
   },
 };
@@ -38,7 +38,7 @@ const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "What is the best dental college in Namakkal?", "acceptedAnswer": { "@type": "Answer", "text": "JKKN Dental College & Hospital, located just 5-10 km from Namakkal on NH-544, is widely regarded as one of the top dental colleges accessible from Namakkal. Approved by DCI, NAAC and affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai, it offers excellent programmes with strong placement support." } },
+    { "@type": "Question", "name": "Which is the best Namakkal dental college?", "acceptedAnswer": { "@type": "Answer", "text": "JKKN Dental College & Hospital is the leading Namakkal dental college, located just 5-10 km from Namakkal on NH-544. Approved by DCI, NAAC and affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai, it offers excellent programmes with strong placement support." } },
     { "@type": "Question", "name": "How far is JKKN Dental from Namakkal?", "acceptedAnswer": { "@type": "Answer", "text": "JKKN Dental is approximately 5-10 km from Namakkal city centre, which takes about 15-20 minutes by road via NH-544 (Salem-Coimbatore Highway). Frequent local buses and auto-rickshaws are available from Namakkal town to Komarapalayam throughout the day." } },
     { "@type": "Question", "name": "What is the NEET cut-off for BDS at JKKN Dental?", "acceptedAnswer": { "@type": "Answer", "text": "The NEET cut-off for BDS admission at JKKN Dental College & Hospital varies each year based on counselling rounds. Contact the admission office for the latest cut-off information and seat availability for the current admission cycle." } },
     { "@type": "Question", "name": "Does JKKN Dental have its own hospital?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, JKKN Dental College & Hospital has its own attached dental hospital on campus. This hospital serves patients from the surrounding community and provides BDS students with extensive hands-on clinical training from the early years of the programme." } },

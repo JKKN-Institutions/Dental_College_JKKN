@@ -9,14 +9,14 @@ const breadcrumbSchema = {
   "@type": "BreadcrumbList",
   "itemListElement": [
     { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://dental.jkkn.ac.in/" },
-    { "@type": "ListItem", "position": 2, "name": "Best Dental College Near Salem", "item": "https://dental.jkkn.ac.in/salem/" },
+    { "@type": "ListItem", "position": 2, "name": "Dental Colleges in Salem", "item": "https://dental.jkkn.ac.in/salem/" },
   ],
 };
 
 const speakableSchema = {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "name": "Best Dental College Near Salem | JKKN Dental College",
+  "name": "Dental Colleges in Salem | JKKN Dental College",
   "url": "https://dental.jkkn.ac.in/salem/",
   "speakable": {
     "@type": "SpeakableSpecification",
@@ -37,8 +37,8 @@ export default function SalemPage() {
 
   const faqs = [
     {
-      q: 'What is the best dental college in Salem?',
-      a: 'JKKN Dental College & Hospital, located just 40-50 km from Salem on NH-544, is widely regarded as one of the top dental colleges accessible from Salem. Approved by DCI, NAAC and affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai, it offers excellent programmes with strong placement support.',
+      q: 'Which are the best dental colleges in Salem?',
+      a: 'JKKN Dental College & Hospital is among the top dental colleges in Salem region, located just 40-50 km from Salem on NH-544. Approved by DCI, NAAC and affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai, it offers excellent programmes with strong placement support.',
     },
     {
       q: 'How far is JKKN Dental from Salem?',
@@ -147,7 +147,7 @@ export default function SalemPage() {
           <Shield className="w-4 h-4" /> DCI, NAAC Approved • Admissions Open
         </div>
         <h1 className="text-white font-extrabold leading-tight mb-6 max-w-4xl" style={{ fontSize: 'clamp(2rem, 5vw + 0.5rem, 3.5rem)' }}>
-          Best Dental College Near <span className="text-[#7cb983]">Salem</span>
+          Dental Colleges in <span className="text-[#7cb983]">Salem</span>
         </h1>
         <p className="text-white/80 max-w-2xl mb-10 leading-relaxed" style={{ fontSize: 'clamp(0.9rem, 1vw + 0.5rem, 1.1rem)' }}>
           Under 1 hour from Salem — closer than you think. JKKN Dental College &amp; Hospital offers top-tier dental programmes with
@@ -388,7 +388,7 @@ export default function SalemPage() {
           <h2 className="font-extrabold text-gray-900 mb-3" style={{ fontSize: 'clamp(1.6rem, 3vw + 0.5rem, 2.4rem)' }}>
             Frequently Asked Questions
           </h2>
-          <p className="text-gray-500 text-base mb-4">Dental College in Salem — Your Questions Answered</p>
+          <p className="text-gray-500 text-base mb-4">Dental Colleges in Salem — BDS Colleges in Salem</p>
           <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-12" />
           <div className="text-left space-y-3">
             {faqs.map((faq, i) => (

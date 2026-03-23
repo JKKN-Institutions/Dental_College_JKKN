@@ -3,16 +3,16 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: { absolute: 'Best Dental College Near Erode | JKKN Dental College' },
-  description: 'JKKN Dental College & Hospital, just 30 km from Erode on NH-544. DCI approved, NAAC A accredited. BDS & MDS programs with hostel & transport.',
-  keywords: 'dental college near erode, best dental college erode, bds college near erode, mds college near erode, jkkn dental erode, dental college tamilnadu erode',
+  title: { absolute: 'Dental College in Erode | JKKN Dental College' },
+  description: 'JKKN Dental College & Hospital — a top dental college in Erode district, just 30 km on NH-544. DCI approved, NAAC accredited. BDS & MDS programs with hostel & transport.',
+  keywords: 'dental college in erode, top dental colleges, bds colleges in erode, erode dental college, mds college erode, jkkn dental erode',
   robots: { index: true, follow: true },
   alternates: {
     canonical: '/erode/',
   },
   openGraph: {
-    title: 'Best Dental College Near Erode | JKKN Dental College',
-    description: 'JKKN Dental College & Hospital, just 30 km from Erode on NH-544. DCI approved, NAAC A accredited. BDS & MDS programs with hostel & transport.',
+    title: 'Dental College in Erode | JKKN Dental College',
+    description: 'JKKN Dental College & Hospital — a top dental college in Erode district, just 30 km on NH-544. DCI approved, NAAC accredited. BDS & MDS programs with hostel & transport.',
     url: 'https://dental.jkkn.ac.in/erode/',
     siteName: 'JKKN Dental College & Hospital',
     images: [
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
         url: '/images/BDS-hero-image.webp',
         width: 1200,
         height: 630,
-        alt: 'Best Dental College Near Erode - JKKN Dental College'
+        alt: 'Dental College in Erode - JKKN Dental College'
       }
     ],
     type: 'website',
@@ -28,8 +28,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Best Dental College Near Erode | JKKN Dental College',
-    description: 'JKKN Dental College & Hospital, just 30 km from Erode on NH-544. DCI approved, NAAC A accredited. BDS & MDS programs with hostel & transport.',
+    title: 'Dental College in Erode | JKKN Dental College',
+    description: 'JKKN Dental College & Hospital — a top dental college in Erode district, just 30 km on NH-544. DCI approved, NAAC accredited. BDS & MDS programs with hostel & transport.',
     images: ['/images/BDS-hero-image.webp'],
   },
 };
@@ -38,7 +38,7 @@ const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "What is the best dental college in Erode?", "acceptedAnswer": { "@type": "Answer", "text": "JKKN Dental College & Hospital, located just 30-40 km from Erode on NH-544, is widely regarded as one of the top dental colleges accessible from Erode. Approved by DCI, NAAC and affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai, it offers excellent programmes with strong placement support." } },
+    { "@type": "Question", "name": "Which is the best dental college in Erode?", "acceptedAnswer": { "@type": "Answer", "text": "JKKN Dental College & Hospital is one of the top dental colleges in Erode district, located just 30-40 km away on NH-544. Approved by DCI, NAAC and affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai, it offers excellent programmes with strong placement support." } },
     { "@type": "Question", "name": "How far is JKKN Dental from Erode?", "acceptedAnswer": { "@type": "Answer", "text": "JKKN Dental is approximately 30-40 km from Erode city centre, which takes about 40-50 minutes by road via NH-544 — direct highway connectivity. Regular government and private buses are available from Erode Central Bus Stand to Komarapalayam throughout the day." } },
     { "@type": "Question", "name": "What is the NEET cut-off for BDS at JKKN Dental?", "acceptedAnswer": { "@type": "Answer", "text": "The NEET cut-off for BDS admission at JKKN Dental College & Hospital varies each year based on counselling rounds. Contact the admission office for the latest cut-off information and seat availability for the current admission cycle." } },
     { "@type": "Question", "name": "Does JKKN Dental have its own hospital?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, JKKN Dental College & Hospital has its own attached dental hospital on campus. This hospital serves patients from the surrounding community and provides BDS students with extensive hands-on clinical training from the early years of the programme." } },

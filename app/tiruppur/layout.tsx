@@ -3,16 +3,16 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: { absolute: 'Best Dental College Near Tiruppur | JKKN Dental College' },
-  description: 'JKKN Dental College & Hospital, 80 km from Tiruppur via NH-544. DCI approved, NAAC A accredited. BDS & MDS programs with hostel & transport.',
-  keywords: 'dental college near tiruppur, best dental college tiruppur, bds college near tiruppur, mds college near tiruppur, jkkn dental tiruppur, dental college tamilnadu tiruppur',
+  title: { absolute: 'Dental Colleges in Tiruppur | JKKN Dental College' },
+  description: 'JKKN Dental College & Hospital — among the top dental colleges in Tiruppur region, 80 km via NH-544. DCI approved, NAAC accredited. BDS & MDS programs with hostel & transport.',
+  keywords: 'dental colleges in tiruppur, top dental colleges, bds colleges in tiruppur, dental college tiruppur, mds college tiruppur, jkkn dental tiruppur',
   robots: { index: true, follow: true },
   alternates: {
     canonical: '/tiruppur/',
   },
   openGraph: {
-    title: 'Best Dental College Near Tiruppur | JKKN Dental College',
-    description: 'JKKN Dental College & Hospital, 80 km from Tiruppur via NH-544. DCI approved, NAAC A accredited. BDS & MDS programs with hostel & transport.',
+    title: 'Dental Colleges in Tiruppur | JKKN Dental College',
+    description: 'JKKN Dental College & Hospital — among the top dental colleges in Tiruppur region, 80 km via NH-544. DCI approved, NAAC accredited. BDS & MDS programs with hostel & transport.',
     url: 'https://dental.jkkn.ac.in/tiruppur/',
     siteName: 'JKKN Dental College & Hospital',
     images: [
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
         url: '/images/BDS-hero-image.webp',
         width: 1200,
         height: 630,
-        alt: 'Best Dental College Near Tiruppur - JKKN Dental College'
+        alt: 'Dental Colleges in Tiruppur - JKKN Dental College'
       }
     ],
     type: 'website',
@@ -28,8 +28,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Best Dental College Near Tiruppur | JKKN Dental College',
-    description: 'JKKN Dental College & Hospital, 80 km from Tiruppur via NH-544. DCI approved, NAAC A accredited. BDS & MDS programs with hostel & transport.',
+    title: 'Dental Colleges in Tiruppur | JKKN Dental College',
+    description: 'JKKN Dental College & Hospital — among the top dental colleges in Tiruppur region, 80 km via NH-544. DCI approved, NAAC accredited. BDS & MDS programs with hostel & transport.',
     images: ['/images/BDS-hero-image.webp'],
   },
 };
@@ -38,7 +38,7 @@ const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "What is the best dental college in Tiruppur?", "acceptedAnswer": { "@type": "Answer", "text": "JKKN Dental College & Hospital, located just 80-90 km from Tiruppur on NH-544, is widely regarded as one of the top dental colleges accessible from Tiruppur. Approved by DCI, NAAC and affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai, it offers excellent programmes with strong placement support." } },
+    { "@type": "Question", "name": "Which are the best dental colleges in Tiruppur?", "acceptedAnswer": { "@type": "Answer", "text": "JKKN Dental College & Hospital is among the top dental colleges accessible from Tiruppur, located just 80-90 km on NH-544. Approved by DCI, NAAC and affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai, it offers excellent programmes with strong placement support." } },
     { "@type": "Question", "name": "How far is JKKN Dental from Tiruppur?", "acceptedAnswer": { "@type": "Answer", "text": "JKKN Dental is approximately 80-90 km from Tiruppur, which takes about 1.5-2 hours by road via NH-544 via Erode, then State Highway towards Tiruppur. Regular inter-city bus services are available from Tiruppur to Komarapalayam/Erode." } },
     { "@type": "Question", "name": "What is the NEET cut-off for BDS at JKKN Dental?", "acceptedAnswer": { "@type": "Answer", "text": "The NEET cut-off for BDS admission at JKKN Dental College & Hospital varies each year based on counselling rounds. Contact the admission office for the latest cut-off information and seat availability for the current admission cycle." } },
     { "@type": "Question", "name": "Does JKKN Dental have its own hospital?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, JKKN Dental College & Hospital has its own attached dental hospital on campus. This hospital serves patients from the surrounding community and provides BDS students with extensive hands-on clinical training from the early years of the programme." } },

@@ -9,14 +9,14 @@ const breadcrumbSchema = {
   "@type": "BreadcrumbList",
   "itemListElement": [
     { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://dental.jkkn.ac.in/" },
-    { "@type": "ListItem", "position": 2, "name": "Best Dental College Near Erode", "item": "https://dental.jkkn.ac.in/erode/" },
+    { "@type": "ListItem", "position": 2, "name": "Dental College in Erode", "item": "https://dental.jkkn.ac.in/erode/" },
   ],
 };
 
 const speakableSchema = {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "name": "Best Dental College Near Erode | JKKN Dental College",
+  "name": "Dental College in Erode | JKKN Dental College",
   "url": "https://dental.jkkn.ac.in/erode/",
   "speakable": {
     "@type": "SpeakableSpecification",
@@ -37,7 +37,7 @@ export default function ErodePage() {
 
   const faqs = [
     {
-      q: 'What is the best dental college in Erode?',
+      q: 'Which is the best dental college in Erode?',
       a: 'JKKN Dental College & Hospital, located just 30-40 km from Erode on NH-544, is widely regarded as one of the top dental colleges accessible from Erode. Approved by DCI, NAAC and affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai, it offers excellent programmes with strong placement support.',
     },
     {
@@ -147,7 +147,7 @@ export default function ErodePage() {
           <Shield className="w-4 h-4" /> DCI, NAAC Approved • Admissions Open
         </div>
         <h1 className="text-white font-extrabold leading-tight mb-6 max-w-4xl" style={{ fontSize: 'clamp(2rem, 5vw + 0.5rem, 3.5rem)' }}>
-          Best Dental College Near <span className="text-[#7cb983]">Erode</span>
+          Dental College in <span className="text-[#7cb983]">Erode</span>
         </h1>
         <p className="text-white/80 max-w-2xl mb-10 leading-relaxed" style={{ fontSize: 'clamp(0.9rem, 1vw + 0.5rem, 1.1rem)' }}>
           Erode to JKKN — a short, smooth ride on NH-544. JKKN Dental College &amp; Hospital offers top-tier dental programmes with
@@ -388,7 +388,7 @@ export default function ErodePage() {
           <h2 className="font-extrabold text-gray-900 mb-3" style={{ fontSize: 'clamp(1.6rem, 3vw + 0.5rem, 2.4rem)' }}>
             Frequently Asked Questions
           </h2>
-          <p className="text-gray-500 text-base mb-4">Dental College in Erode — Your Questions Answered</p>
+          <p className="text-gray-500 text-base mb-4">Dental College in Erode — Top BDS Colleges in Erode</p>
           <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-12" />
           <div className="text-left space-y-3">
             {faqs.map((faq, i) => (

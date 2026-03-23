@@ -3,16 +3,16 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: { absolute: 'Best Dental College Near Salem | JKKN Dental College' },
-  description: 'JKKN Dental College & Hospital, just 40 km from Salem on NH-544. DCI approved, NAAC A accredited. BDS & MDS programs with hostel & transport.',
-  keywords: 'dental college near salem, best dental college salem, bds college near salem, mds college near salem, jkkn dental salem, dental college tamilnadu salem',
+  title: { absolute: 'Dental Colleges in Salem | JKKN Dental College' },
+  description: 'JKKN Dental College & Hospital — among the top dental colleges in Salem region, just 40 km on NH-544. DCI approved, NAAC accredited. BDS & MDS programs with hostel & transport.',
+  keywords: 'dental colleges in salem, top dental colleges, bds colleges in salem, dental college salem, mds college salem, jkkn dental salem',
   robots: { index: true, follow: true },
   alternates: {
     canonical: '/salem/',
   },
   openGraph: {
-    title: 'Best Dental College Near Salem | JKKN Dental College',
-    description: 'JKKN Dental College & Hospital, just 40 km from Salem on NH-544. DCI approved, NAAC A accredited. BDS & MDS programs with hostel & transport.',
+    title: 'Dental Colleges in Salem | JKKN Dental College',
+    description: 'JKKN Dental College & Hospital — among the top dental colleges in Salem region, just 40 km on NH-544. DCI approved, NAAC accredited. BDS & MDS programs with hostel & transport.',
     url: 'https://dental.jkkn.ac.in/salem/',
     siteName: 'JKKN Dental College & Hospital',
     images: [
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
         url: '/images/BDS-hero-image.webp',
         width: 1200,
         height: 630,
-        alt: 'Best Dental College Near Salem - JKKN Dental College'
+        alt: 'Dental Colleges in Salem - JKKN Dental College'
       }
     ],
     type: 'website',
@@ -28,8 +28,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Best Dental College Near Salem | JKKN Dental College',
-    description: 'JKKN Dental College & Hospital, just 40 km from Salem on NH-544. DCI approved, NAAC A accredited. BDS & MDS programs with hostel & transport.',
+    title: 'Dental Colleges in Salem | JKKN Dental College',
+    description: 'JKKN Dental College & Hospital — among the top dental colleges in Salem region, just 40 km on NH-544. DCI approved, NAAC accredited. BDS & MDS programs with hostel & transport.',
     images: ['/images/BDS-hero-image.webp'],
   },
 };
@@ -38,7 +38,7 @@ const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "What is the best dental college in Salem?", "acceptedAnswer": { "@type": "Answer", "text": "JKKN Dental College & Hospital, located just 40-50 km from Salem on NH-544, is widely regarded as one of the top dental colleges accessible from Salem. Approved by DCI, NAAC and affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai, it offers excellent programmes with strong placement support." } },
+    { "@type": "Question", "name": "Which are the best dental colleges in Salem?", "acceptedAnswer": { "@type": "Answer", "text": "JKKN Dental College & Hospital is among the top dental colleges in Salem region, located just 40-50 km from Salem on NH-544. Approved by DCI, NAAC and affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai, it offers excellent programmes with strong placement support." } },
     { "@type": "Question", "name": "How far is JKKN Dental from Salem?", "acceptedAnswer": { "@type": "Answer", "text": "JKKN Dental is approximately 40-50 km from Salem city centre, which takes about 50-60 minutes by road via NH-544 (Salem-Coimbatore Highway) — direct route. TN State Transport buses from Salem New Bus Stand to Komarapalayam run every 15-20 minutes throughout the day." } },
     { "@type": "Question", "name": "What is the NEET cut-off for BDS at JKKN Dental?", "acceptedAnswer": { "@type": "Answer", "text": "The NEET cut-off for BDS admission at JKKN Dental College & Hospital varies each year based on counselling rounds. Contact the admission office for the latest cut-off information and seat availability for the current admission cycle." } },
     { "@type": "Question", "name": "Does JKKN Dental have its own hospital?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, JKKN Dental College & Hospital has its own attached dental hospital on campus. This hospital serves patients from the surrounding community and provides BDS students with extensive hands-on clinical training from the early years of the programme." } },
