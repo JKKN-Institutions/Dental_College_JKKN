@@ -7,11 +7,11 @@ export default function ErodePage() {
   const faqs = [
     {
       q: 'Which is the best dental college in Erode?',
-      a: 'JKKN Dental College & Hospital, located just 30-40 km from Erode on NH-544, is widely regarded as one of the top dental colleges accessible from Erode. Approved by DCI, NAAC and affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai, it offers excellent programmes with strong placement support.',
+      a: 'JKKN Dental College & Hospital, located just 22 km from Erode on NH-544, is widely regarded as one of the top dental colleges accessible from Erode. Approved by DCI, NAAC and affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai, it offers excellent programmes with strong placement support.',
     },
     {
       q: 'How far is JKKN Dental from Erode?',
-      a: 'JKKN Dental is approximately 30-40 km from Erode city centre, which takes about 40-50 minutes by road via NH-544 — direct highway connectivity. Regular government and private buses are available from Erode Central Bus Stand to Komarapalayam throughout the day.',
+      a: 'JKKN Dental is approximately 22 km from Erode city centre, which takes about 35-40 minutes by road via NH-544 — direct highway connectivity. Regular government and private buses are available from Erode Central Bus Stand to Komarapalayam throughout the day.',
     },
     {
       q: 'What is the NEET cut-off for BDS at JKKN Dental?',
@@ -27,11 +27,11 @@ export default function ErodePage() {
     },
     {
       q: 'Does JKKN Dental provide hostel for Erode students?',
-      a: 'Yes, JKKN Dental provides separate hostel facilities for boys and girls. Students from Erode can also opt for daily commute as the campus is just 40-50 minutes away. College transport services are available.',
+      a: 'Yes, JKKN Dental provides separate hostel facilities for boys and girls. Students from Erode can also opt for daily commute as the campus is just 35-40 minutes away. College transport services are available.',
     },
     {
       q: 'How can I apply for admission at JKKN Dental?',
-      a: 'Erode students can apply online at https://dental.jkkn.ac.in/ or visit the campus directly — just a 40-minute drive on NH-544. Admissions for BDS and MDS 2026-27 are currently open. Call +91 9345855001 for personalised guidance on eligibility, fees, and the counselling process.',
+      a: 'Erode students can apply online at https://dental.jkkn.ac.in/ or visit the campus directly — just a 35-minute drive on NH-544. Admissions for BDS and MDS 2026-27 are currently open. Call +91 9345855001 for personalised guidance on eligibility, fees, and the counselling process.',
     },
   ];
 
@@ -41,7 +41,7 @@ export default function ErodePage() {
     { icon: <Microscope className="w-6 h-6 text-[#006837]" />, title: 'Advanced Labs', desc: 'Advanced dental labs, simulation equipment, and digital dentistry training' },
     { icon: <TrendingUp className="w-6 h-6 text-[#006837]" />, title: 'NEET MDS Results', desc: 'Strong track record in NEET MDS results and higher education' },
     { icon: <Users className="w-6 h-6 text-[#006837]" />, title: 'Community Service', desc: 'Hospital serves the community — builds trust and clinical experience' },
-    { icon: <Bus className="w-6 h-6 text-[#006837]" />, title: 'Easy Commute', desc: 'Just 35 km from Erode. Daily commute or comfortable hostel — your choice.' },
+    { icon: <Bus className="w-6 h-6 text-[#006837]" />, title: 'Easy Commute', desc: 'Just 22 km from Erode. Daily commute or comfortable hostel — your choice.' },
   ];
 
   const programmes = [
@@ -123,13 +123,13 @@ export default function ErodePage() {
         </h1>
         <p className="text-white/80 max-w-2xl mb-10 leading-relaxed" style={{ fontSize: 'clamp(0.9rem, 1vw + 0.5rem, 1.1rem)' }}>
           Erode to JKKN — a short, smooth ride on NH-544. JKKN Dental College &amp; Hospital offers top-tier dental programmes with
-          90%+ placement support — just 35 km from Erode with excellent highway connectivity.
+          90%+ placement support — just 22 km from Erode with excellent highway connectivity.
         </p>
         <ul className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 mb-10 w-full max-w-2xl list-none p-0 m-0">
           {[
             { value: '90%+', label: 'PLACEMENTS' },
             { value: '8-10', label: 'LPA HIGHEST' },
-            { value: '35km', label: 'FROM ERODE' },
+            { value: '22km', label: 'FROM ERODE' },
             { value: '2', label: 'PROGRAMMES' },
           ].map((stat) => (
             <li key={stat.label} className="bg-white/10 backdrop-blur border border-white/20 rounded-2xl px-4 py-4 text-white">
@@ -164,11 +164,11 @@ export default function ErodePage() {
           <div className="bg-white rounded-2xl shadow-sm p-6 sm:p-8 flex flex-col sm:flex-row items-start sm:items-center gap-6 justify-between">
             <div className="flex items-start gap-5">
               <div className="text-[#006837] font-extrabold leading-none" style={{ fontSize: 'clamp(3rem, 6vw, 4rem)' }}>
-                35<span className="text-xl sm:text-2xl font-bold">km</span>
+                22<span className="text-xl sm:text-2xl font-bold">km</span>
               </div>
               <div>
                 <p className="font-bold text-gray-900 text-base sm:text-lg">From Erode to JKKN Dental</p>
-                <p className="text-gray-500 text-sm mt-1">40-50 minutes via NH-544 — direct highway connectivity</p>
+                <p className="text-gray-500 text-sm mt-1">35-40 minutes via NH-544 — direct highway connectivity</p>
               </div>
             </div>
             <a
@@ -190,7 +190,7 @@ export default function ErodePage() {
             Why Erode Students Choose JKKN Dental
           </h2>
           <p className="text-gray-500 max-w-3xl mx-auto mb-4 leading-relaxed" style={{ fontSize: 'clamp(0.875rem, 1vw + 0.4rem, 1.05rem)' }}>
-            Erode&apos;s strong industrial base means families value quality education with good placement outcomes. JKKN is just 35 km away — closer than many colleges within Erode city itself. The excellent NH-544 connectivity makes daily commute comfortable and quick.
+            Erode&apos;s strong industrial base means families value quality education with good placement outcomes. JKKN is just 22 km away — closer than many colleges within Erode city itself. The excellent NH-544 connectivity makes daily commute comfortable and quick.
           </p>
           <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-12" />
           <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 list-none">
@@ -281,7 +281,7 @@ export default function ErodePage() {
               <MapPin className="w-6 h-6" />
               <div>
                 <p className="font-bold text-lg">Erode → JKKN Dental Campus</p>
-                <p className="text-white/80 text-sm">30-40 km • 40-50 minutes</p>
+                <p className="text-white/80 text-sm">~22 km • 35-40 minutes</p>
               </div>
             </div>
             {transportRows.map((row, i) => (
@@ -331,7 +331,7 @@ export default function ErodePage() {
             <div className="bg-white rounded-2xl p-6 text-left shadow-sm">
               <div className="text-5xl text-gray-200 font-serif leading-none mb-3 select-none">"</div>
               <p className="text-gray-500 text-sm leading-relaxed italic mb-6">
-                Coming from Erode, I was looking for a quality dental college nearby. JKKN was just 35 km away with excellent clinical training — we treat 500+ patients daily. The hands-on experience from Year 1 made all the difference in my career.
+                Coming from Erode, I was looking for a quality dental college nearby. JKKN was just 22 km away with excellent clinical training — we treat 500+ patients daily. The hands-on experience from Year 1 made all the difference in my career.
               </p>
               <div>
                 <p className="font-bold text-gray-900 text-sm">Priya Lakshmi R.</p>
