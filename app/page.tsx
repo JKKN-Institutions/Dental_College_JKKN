@@ -18,17 +18,16 @@ const FacultySection = dynamic(() => import('@/components/FacultySection'));
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'JKKN Dental College & Hospital | DCI Approved, Tamil Nadu',
-  description: 'JKKN Dental College, Komarapalayam — DCI approved, NAAC A accredited. BDS (100 seats) & MDS (5 specializations). 200+ dental chairs, 92%+ placement rate.',
-  keywords: 'JKKN dental college, dental college Tamil Nadu, dental college Namakkal, BDS Tamil Nadu, MDS Tamil Nadu, dental college near Salem, dental college near Erode, DCI approved dental college, NAAC accredited dental college, dental college Komarapalayam',
+  title: 'JKKN Dental College | Best Dental College in Tamil Nadu',
+  description: 'Best dental college in Tamil Nadu — JKKN Dental College, DCI approved & NAAC A. BDS & MDS programs, 200+ dental chairs, 92% placement rate.',
   openGraph: {
-    title: 'JKKN Dental College & Hospital | DCI Approved, Tamil Nadu',
-    description: 'JKKN Dental College, Komarapalayam — DCI approved, NAAC A accredited. BDS (100 seats) & MDS (5 specializations). 200+ dental chairs, 92%+ placement rate.',
+    title: 'JKKN Dental College | Best Dental College in Tamil Nadu',
+    description: 'Best dental college in Tamil Nadu — JKKN Dental College, DCI approved & NAAC A. BDS & MDS programs, 200+ dental chairs, 92% placement rate.',
     url: 'https://dental.jkkn.ac.in/',
     siteName: 'JKKN Dental College & Hospital',
     images: [
       {
-        url: '/images/BDS-hero-image.png',
+        url: 'https://dental.jkkn.ac.in/images/BDS-hero-image.png',
         width: 1200,
         height: 630,
         alt: 'JKKN Dental College & Hospital campus at Komarapalayam, Namakkal District, Tamil Nadu'
@@ -39,8 +38,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'JKKN Dental College & Hospital | DCI Approved, Tamil Nadu',
-    description: 'JKKN Dental College, Komarapalayam — DCI approved, NAAC A accredited. BDS (100 seats) & MDS (5 specializations). 200+ dental chairs, 92%+ placement rate.',
+    title: 'JKKN Dental College | Best Dental College in Tamil Nadu',
+    description: 'Best dental college in Tamil Nadu — JKKN Dental College, DCI approved & NAAC A. BDS & MDS programs, 200+ dental chairs, 92% placement rate.',
     images: ['/images/BDS-hero-image.png'],
   },
   alternates: {
@@ -53,6 +52,7 @@ export default function Home() {
   const bdsSchema = {
     "@context": "https://schema.org",
     "@type": "Course",
+    "@id": "https://dental.jkkn.ac.in/bds/#course",
     "name": "Bachelor of Dental Surgery (BDS)",
     "description": "5-year undergraduate dental program including 1-year compulsory rotatory internship at JKKN Dental College & Hospital, approved by DCI with hands-on clinical training and world-class infrastructure.",
     "provider": {
@@ -138,10 +138,11 @@ export default function Home() {
     }
   };
 
-  // College/University Schema
+  // College/University Schema (consolidated — single canonical entity)
   const collegeSchema = {
     "@context": "https://schema.org",
-    "@type": "CollegeOrUniversity",
+    "@type": ["CollegeOrUniversity", "EducationalOrganization"],
+    "@id": "https://dental.jkkn.ac.in/#college",
     "name": "JKKN Dental College & Hospital",
     "alternateName": ["J.K.K. Nattraja Dental College & Hospital", "ஜே.கே.கே. நட்ராஜா பல் மருத்துவக் கல்லூரி மற்றும் மருத்துவமனை"],
     "url": "https://dental.jkkn.ac.in",
@@ -199,8 +200,24 @@ export default function Home() {
       "NAAC A Grade Accreditation"
     ],
     "hasCredential": [
-      "Dental Council of India (DCI) Approved",
-      "Affiliated to The Tamil Nadu Dr. M.G.R. Medical University"
+      {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "Approval",
+        "name": "Dental Council of India (DCI) Approved",
+        "recognizedBy": { "@type": "Organization", "name": "Dental Council of India", "alternateName": "DCI" }
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "Accreditation",
+        "name": "NAAC A Grade Accredited",
+        "recognizedBy": { "@type": "Organization", "name": "National Assessment and Accreditation Council", "alternateName": "NAAC" }
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "Affiliation",
+        "name": "Affiliated to Tamil Nadu Dr. M.G.R. Medical University",
+        "recognizedBy": { "@type": "CollegeOrUniversity", "name": "Tamil Nadu Dr. M.G.R. Medical University", "url": "https://www.tnmgrmu.ac.in/" }
+      }
     ],
     "sameAs": [
       "https://www.facebook.com/jkkndental/",
@@ -208,8 +225,14 @@ export default function Home() {
       "https://www.linkedin.com/school/jkkndental/",
       "https://www.youtube.com/playlist?list=PL6QsTq-__HhvqQ28WcrDAwPa9jeMSK3AO",
       "https://maps.app.goo.gl/mXx6rFRqpS9U76BK6",
+      "https://admission.jkkn.ac.in/",
+      "https://placements.jkkn.ac.in/",
       "https://jkkn.ac.in/",
-      "https://dciindia.gov.in/"
+      "https://dciindia.gov.in/",
+      "https://www.shiksha.com/college/j-k-k-nattraja-dental-college-and-hospital-namakkal-78331",
+      "https://collegedunia.com/college/10574-jkk-nattraja-dental-college-and-hospital-jkkndch-namakkal",
+      "https://www.careers360.com/colleges/jkk-nattraja-dental-college-and-hospital-komarapalayam",
+      "https://en.wikipedia.org/wiki/J._K._K._Nattraja_Educational_Institutions"
     ],
     "parentOrganization": {
       "@type": "EducationalOrganization",
@@ -293,6 +316,38 @@ export default function Home() {
           "@type": "Answer",
           "text": "JKKN Dental College integrates artificial intelligence across its curriculum, including AI-powered diagnostic imaging, computer-aided design and manufacturing technology, and research tools."
         }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the fee structure for BDS at JKKN Dental College?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Bachelor of Dental Surgery fees at JKKN Dental College vary by admission quota as per Tamil Nadu government regulations, with annual tuition ranging from three to five lakhs."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which is the best dental college in Tamil Nadu?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "JKKN Dental College and Hospital is widely recognized as one of the best dental colleges in Tamil Nadu, featuring DCI approval, NAAC A accreditation, two hundred dental chairs, five hundred daily patients, and India's first AI-integrated dental campus since nineteen eighty-seven."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Where is JKKN Dental College located?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "JKKN Dental College is located on National Highway 544 in Komarapalayam, Namakkal District, Tamil Nadu, approximately thirty-five kilometres from Erode and fifty kilometres from Salem."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What are the hostel facilities at JKKN Dental College?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "JKKN Dental College provides separate hostels for boys and girls with furnished rooms, mess facilities, Wi-Fi connectivity, twenty-four-hour security, and recreational areas on campus."
+        }
       }
     ]
   };
@@ -340,23 +395,44 @@ export default function Home() {
   };
 
   // Principal/Dean Person Schema
-  // [UPDATE: Add actual principal name, qualifications, and uncomment this block]
-  // const principalSchema = {
-  //   "@context": "https://schema.org",
-  //   "@type": "Person",
-  //   "name": "Dr. [Principal Name]",
-  //   "jobTitle": "Principal & Dean",
-  //   "worksFor": {
-  //     "@type": "CollegeOrUniversity",
-  //     "name": "JKKN Dental College & Hospital",
-  //     "url": "https://dental.jkkn.ac.in/"
-  //   },
-  //   "alumniOf": "Tamil Nadu Dr. MGR Medical University",
-  //   "hasCredential": {
-  //     "@type": "EducationalOccupationalCredential",
-  //     "credentialCategory": "MDS, PhD"
-  //   }
-  // };
+  const principalSchema = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Dr. Dhanasekar Balakrishnan",
+    "jobTitle": "Principal",
+    "worksFor": {
+      "@type": "CollegeOrUniversity",
+      "name": "JKKN Dental College & Hospital",
+      "url": "https://dental.jkkn.ac.in/"
+    },
+    "alumniOf": "Tamil Nadu Dr. MGR Medical University",
+    "hasCredential": [
+      {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "BDS"
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "MDS"
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "FDS RCS (England)"
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "MDTFEd (Edinburgh)"
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "MFDS RCPS (Glasgow)"
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "MFDS RCS (Edinburgh)"
+      }
+    ]
+  };
 
   // Schema #1: MedicalOrganization + Dentist
   const medicalOrgSchema = {
@@ -514,7 +590,6 @@ export default function Home() {
       { "@type": "City", "name": "Coimbatore" },
       { "@type": "State", "name": "Tamil Nadu" }
     ],
-    // [UPDATE: Verify ratingValue and reviewCount from Google Business Profile before publishing]
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": "4.5",
@@ -539,7 +614,15 @@ export default function Home() {
       "@id": "https://dental.jkkn.ac.in/#organization",
       "name": "JKKN Dental College & Hospital"
     },
-    "inLanguage": "en"
+    "inLanguage": "en",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://dental.jkkn.ac.in/search?q={search_term_string}"
+      },
+      "query-input": "required name=search_term_string"
+    }
   };
 
   // Schema #8a: WebPage with Speakable
@@ -552,6 +635,7 @@ export default function Home() {
     "speakable": {
       "@type": "SpeakableSpecification",
       "cssSelector": [
+        ".snippet-answer",
         ".hero-description",
         ".institution-highlights",
         ".admission-cta"
@@ -562,33 +646,7 @@ export default function Home() {
     },
     "description": "JKKN Dental College & Hospital, established in 1987, is a DCI approved and NAAC A Grade accredited dental college offering BDS and MDS programs. Located on India's first AI-integrated campus in Komarapalayam, Tamil Nadu, with 200+ dental chairs, 100+ bed hospital, and 92% placement rate. Apply now for 2026-27 admissions.",
     "datePublished": "2025-01-01",
-    "dateModified": "2026-03-16"
-  };
-
-  // Schema #10: Organization sameAs Enhancement
-  const orgSameAsSchema = {
-    "@context": "https://schema.org",
-    "@type": "CollegeOrUniversity",
-    "@id": "https://dental.jkkn.ac.in/#college",
-    "name": "JKKN Dental College & Hospital",
-    "url": "https://dental.jkkn.ac.in/",
-    "sameAs": [
-      "https://www.facebook.com/jkkndental/",
-      "https://www.instagram.com/jkkndental/",
-      "https://www.linkedin.com/school/jkkndental/",
-      "https://www.youtube.com/playlist?list=PL6QsTq-__HhvqQ28WcrDAwPa9jeMSK3AO",
-      "https://maps.app.goo.gl/mXx6rFRqpS9U76BK6",
-      "https://admission.jkkn.ac.in/",
-      "https://placements.jkkn.ac.in/",
-      "https://jkkn.ac.in/",
-      "https://dciindia.gov.in/"
-    ],
-    "parentOrganization": {
-      "@type": "EducationalOrganization",
-      "@id": "https://jkkn.ac.in/#organization",
-      "name": "JKKN Institutions",
-      "url": "https://jkkn.ac.in/"
-    }
+    "dateModified": "2026-03-21"
   };
 
   return (
@@ -597,9 +655,8 @@ export default function Home() {
       <StructuredData data={dentistLocalSchema} />
       <StructuredData data={websiteSchema} />
       <StructuredData data={webPageSchema} />
-      <StructuredData data={orgSameAsSchema} />
       {/* [UPDATE: Uncomment when principal name is confirmed] */}
-      {/* <StructuredData data={principalSchema} /> */}
+      <StructuredData data={principalSchema} />
       <StructuredData data={bdsSchema} />
       <StructuredData data={mdsSchema} />
       <StructuredData data={collegeSchema} />

@@ -7,7 +7,7 @@ function setSecurityHeaders(response: NextResponse) {
   response.headers.set('X-Frame-Options', 'SAMEORIGIN');
   response.headers.set(
     'Content-Security-Policy',
-    "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: blob: https:; connect-src 'self' https://www.google-analytics.com https://*.supabase.co; frame-src 'self' https://www.google.com; object-src 'none';"
+    "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com https://connect.facebook.net https://*.facebook.net; script-src-elem 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://connect.facebook.net https://*.facebook.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: blob: https:; connect-src 'self' https://www.google-analytics.com https://*.supabase.co https://www.facebook.com https://*.facebook.com; frame-src 'self' https://www.google.com; object-src 'none';"
   );
   response.headers.set('Referrer-Policy', 'strict-origin-when-cross-origin');
   response.headers.set(
@@ -27,34 +27,43 @@ export async function proxy(request: NextRequest) {
 
   let supabaseResponse = NextResponse.next({ request });
 
-  const supabase = createServerClient(
-    process.env.NEXT_PUBLIC_SUPABASE_URL!,
-    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
-    {
-      cookies: {
-        getAll() {
-          return request.cookies.getAll();
-        },
-        setAll(cookiesToSet) {
-          cookiesToSet.forEach(({ name, value }) =>
-            request.cookies.set(name, value)
-          );
-          supabaseResponse = NextResponse.next({ request });
-          cookiesToSet.forEach(({ name, value, options }) =>
-            supabaseResponse.cookies.set(name, value, options)
-          );
-        },
-      },
-    }
-  );
+  // Skip Supabase auth if env vars are not configured
+  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
+  const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
 
-  const { data: { user } } = await supabase.auth.getUser();
+  if (supabaseUrl && supabaseKey) {
+    const supabase = createServerClient(
+      supabaseUrl,
+      supabaseKey,
+      {
+        cookies: {
+          getAll() {
+            return request.cookies.getAll();
+          },
+          setAll(cookiesToSet) {
+            cookiesToSet.forEach(({ name, value }) =>
+              request.cookies.set(name, value)
+            );
+            supabaseResponse = NextResponse.next({ request });
+            cookiesToSet.forEach(({ name, value, options }) =>
+              supabaseResponse.cookies.set(name, value, options)
+            );
+          },
+        },
+      }
+    );
 
-  // Protect /admin routes — redirect unauthenticated users to login
-  if (pathname.startsWith('/admin') && !pathname.startsWith('/admin/login')) {
-    if (!user) {
-      return NextResponse.redirect(new URL('/admin/login', request.url));
+    const { data: { user } } = await supabase.auth.getUser();
+
+    // Protect /admin routes — redirect unauthenticated users to login
+    if (pathname.startsWith('/admin') && !pathname.startsWith('/admin/login')) {
+      if (!user) {
+        return NextResponse.redirect(new URL('/admin/login', request.url));
+      }
     }
+  } else if (pathname.startsWith('/admin') && !pathname.startsWith('/admin/login')) {
+    // No Supabase configured — block admin access
+    return NextResponse.redirect(new URL('/admin/login', request.url));
   }
 
   setSecurityHeaders(supabaseResponse);

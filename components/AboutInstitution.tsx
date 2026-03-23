@@ -42,14 +42,17 @@ export default function AboutInstitution() {
             <div className="mb-3 sm:mb-4">
               <h3 className="text-[#7cb983] text-xs sm:text-sm md:text-base font-bold uppercase tracking-wider">About Our Institution</h3>
             </div>
-            <h2 className="text-xl xs:text-2xl sm:text-3xl lg:text-4xl font-bold text-[#006837] mb-4 sm:mb-6 leading-tight">
-              Over Five Decades of Excellence in Progressive Education
+            <h2 className="text-xl xs:text-2xl sm:text-3xl lg:text-4xl font-bold text-[#006837] mb-2 sm:mb-3 leading-tight">
+              Best Dental College in Tamil Nadu
             </h2>
-            <p className="text-gray-600 text-sm sm:text-base md:text-lg mb-4 sm:mb-6 leading-relaxed">
-            JKKN Dental College & Hospital is a premier dental institution under JKKN Institutions, founded on the vision of Founder J.K.K. Nattraja Chettiar (1895-1995).
+            <p className="text-[#7cb983] text-sm sm:text-base md:text-lg font-semibold mb-4 sm:mb-6">
+              Over Five Decades of Excellence in Progressive Education
+            </p>
+            <p className="snippet-answer text-gray-600 text-sm sm:text-base md:text-lg mb-4 sm:mb-6 leading-relaxed">
+              JKKN Dental College &amp; Hospital is a DCI-approved and NAAC A Grade accredited dental institution in Tamil Nadu, established in 1987. With 200+ dental chairs, 100+ hospital beds, 500+ daily patients, and a 92% placement rate, JKKN offers BDS and MDS programs affiliated to TN Dr. MGR Medical University at Komarapalayam, Namakkal — accessible from Salem, Erode, and Coimbatore.
             </p>
             <p className="text-gray-600 text-sm sm:text-base md:text-lg mb-6 sm:mb-8 leading-relaxed">
-              Located in Komarapalayam, Namakkal District, Tamil Nadu, our dental college offers an ideal environment for focused learning. Affiliated with The Tamil Nadu Dr. M.G.R. Medical University and approved by DCI, we produce competent dental professionals.
+              Founded on the vision of J.K.K. Nattraja Chettiar (1895–1995), JKKN Dental College is a premier institution under JKKN Institutions. Located on NH-544 in Komarapalayam, Namakkal District, the college provides an ideal environment for focused learning as India&#39;s first AI-integrated dental campus.
             </p>
 
             {/* Features List */}

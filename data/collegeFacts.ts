@@ -17,8 +17,8 @@ export const collegeFacts = {
   foundedYear: 1987,
   collegeAge: new Date().getFullYear() - 1987, // Auto-calculates current age
   trustName: "J.K.K. Nattraja Educational Institutions",
-  trustFoundedYear: 1969,
-  trustAge: new Date().getFullYear() - 1969, // Auto-calculates trust age
+  trustFoundedYear: 1952,
+  trustAge: new Date().getFullYear() - 1952, // Auto-calculates trust age
 
   // === ACADEMIC PROGRAMS ===
   // IMPORTANT: Verify these numbers with current DCI permission letters

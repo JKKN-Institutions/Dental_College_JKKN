@@ -26,13 +26,13 @@ export default function Hero() {
 
             {/* Main Heading */}
             <h1 className="text-2xl xs:text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight">
-              JKKN Dental College & Hospital{' '}
-              <span className="text-[#7cb983]">BDS & MDS Programs Near Erode, Tamil Nadu</span>
+              JKKN Dental College & Hospital —{' '}
+              <span className="text-[#7cb983]">Best Dental College in Tamil Nadu for BDS & MDS</span>
             </h1>
 
             {/* Description */}
             <p className="hero-description text-gray-200 text-sm sm:text-base md:text-lg leading-relaxed">
-              Join JKKN Dental College & Hospital — where world-class dental education meets compassionate patient care. Our DCI-approved programs prepare Learners for exceptional careers in dentistry.
+              Recognized as one of the best dental colleges in Tamil Nadu, JKKN Dental College & Hospital combines world-class dental education with compassionate patient care. Our DCI-approved BDS & MDS programs prepare learners for exceptional careers in dentistry.
             </p>
 
             {/* Stats */}

@@ -10,6 +10,8 @@ import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 import StructuredData from '@/components/StructuredData';
 import { generateSpeakableWebPageSchema } from '@/lib/metadata';
 
+export const dynamic = 'force-dynamic';
+
 interface Props {
   params: Promise<{ slug: string }>;
 }

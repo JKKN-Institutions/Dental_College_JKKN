@@ -7,7 +7,7 @@ export default function WhyChooseJKKN() {
           <div>
             <h3 className="text-[#7cb983] text-xs sm:text-sm md:text-base font-bold uppercase tracking-wider mb-3 sm:mb-4">Why Choose JKKN</h3>
             <h2 className="text-2xl xs:text-3xl sm:text-4xl font-bold mb-8 sm:mb-10 md:mb-12 leading-tight">
-              Why JKKN Dental College is Your Best Choice
+              Why JKKN is the Best Dental College in Tamil Nadu
             </h2>
 
             <div className="space-y-5 sm:space-y-6 md:space-y-8">
@@ -19,9 +19,9 @@ export default function WhyChooseJKKN() {
                   </div>
                 </div>
                 <div>
-                  <h4 className="text-lg sm:text-xl font-bold mb-1 sm:mb-2">JKKN Group: 57+ Years of Educational Legacy</h4>
+                  <h4 className="text-lg sm:text-xl font-bold mb-1 sm:mb-2">JKKN Group: 74+ Years of Educational Legacy</h4>
                   <p className="text-gray-300 leading-relaxed text-sm sm:text-base">
-                    Part of JKKN Institutions, founded in 1969, with a commitment to progressive education. #JKKN100
+                    Part of JKKN Institutions, founded in 1952, with a commitment to progressive education. #JKKN100
                   </p>
                 </div>
               </div>
