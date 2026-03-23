@@ -52,6 +52,7 @@ export default function Home() {
   const bdsSchema = {
     "@context": "https://schema.org",
     "@type": "Course",
+    "@id": "https://dental.jkkn.ac.in/bds/#course",
     "name": "Bachelor of Dental Surgery (BDS)",
     "description": "5-year undergraduate dental program including 1-year compulsory rotatory internship at JKKN Dental College & Hospital, approved by DCI with hands-on clinical training and world-class infrastructure.",
     "provider": {

@@ -279,6 +279,7 @@ const speakableSchema = {
 const courseSchema = {
   "@context": "https://schema.org",
   "@type": "Course",
+  "@id": "https://dental.jkkn.ac.in/bds/#course",
   name: "Bachelor of Dental Surgery (BDS)",
   description:
     "5-year DCI-approved undergraduate dental program at JKKN Dental College & Hospital, Komarapalayam, Tamil Nadu. Includes 1-year compulsory rotatory internship, AI-integrated curriculum, and 100% placement support.",

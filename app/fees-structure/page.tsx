@@ -29,6 +29,7 @@ const structuredData = {
   "offers": [
     {
       "@type": "Course",
+      "@id": "https://dental.jkkn.ac.in/bds/#course",
       "name": "Bachelor of Dental Surgery (BDS)",
       "description": "4-year undergraduate dental program plus 1-year internship at JKKN Dental College & Hospital, DCI approved",
       "provider": {
