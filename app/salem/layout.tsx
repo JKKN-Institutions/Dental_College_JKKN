@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     siteName: 'JKKN Dental College & Hospital',
     images: [
       {
-        url: '/images/BDS-hero-image.webp',
+        url: 'https://dental.jkkn.ac.in/images/BDS-hero-image.webp',
         width: 1200,
         height: 630,
         alt: 'Dental Colleges in Salem - JKKN Dental College'
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Dental Colleges in Salem | JKKN Dental College',
     description: 'Top dental college near Salem — JKKN Dental, 45 km on NH-544. DCI approved, NAAC accredited. BDS & MDS with 90%+ placements, hostel & transport.',
-    images: ['/images/BDS-hero-image.webp'],
+    images: ['https://dental.jkkn.ac.in/images/BDS-hero-image.webp'],
     site: '@jaborejkkn',
   },
 };
@@ -69,7 +69,7 @@ const orgSchema = {
   },
   "telephone": "+919345855001",
   "email": "info@jkkn.ac.in",
-  "foundingDate": "1952",
+  "foundingDate": "1987",
   "parentOrganization": { "@type": "Organization", "name": "JKKN Institutions", "url": "https://jkkn.ac.in/" },
   "hasCredential": [
     { "@type": "EducationalOccupationalCredential", "credentialCategory": "DCI Approved" },
@@ -149,6 +149,93 @@ const eventSchema = {
   }
 };
 
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": "Dentist",
+  "@id": "https://dental.jkkn.ac.in/#dentist",
+  "name": "JKKN Dental College & Hospital",
+  "image": "https://dental.jkkn.ac.in/images/jkkn-dental-logo.webp",
+  "url": "https://dental.jkkn.ac.in/",
+  "telephone": "+919345855001",
+  "email": "info@jkkn.ac.in",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Natarajapuram, NH-544 (Salem–Coimbatore Highway)",
+    "addressLocality": "Komarapalayam",
+    "addressRegion": "Tamil Nadu",
+    "postalCode": "638183",
+    "addressCountry": "IN"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "11.4446062",
+    "longitude": "77.7309852"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      "opens": "09:00",
+      "closes": "17:00"
+    }
+  ],
+  "priceRange": "₹₹",
+  "medicalSpecialty": "Dentistry",
+  "parentOrganization": {
+    "@type": "Organization",
+    "name": "JKKN Institutions",
+    "url": "https://jkkn.ac.in/"
+  }
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://dental.jkkn.ac.in/" },
+    { "@type": "ListItem", "position": 2, "name": "Dental Colleges in Salem", "item": "https://dental.jkkn.ac.in/salem/" },
+  ],
+};
+
+const speakableSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Dental Colleges in Salem | JKKN Dental College",
+  "url": "https://dental.jkkn.ac.in/salem/",
+  "dateModified": "2026-03-23",
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": ["h1", ".text-lg", ".text-base"],
+  },
+};
+
+const reviewSchema = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Review",
+    "author": { "@type": "Person", "name": "Sneha Ramesh" },
+    "reviewBody": "From Salem, JKKN was just 45 km on NH-544. The clinical exposure here is unmatched with 500+ patients daily.",
+    "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+    "itemReviewed": {
+      "@type": "EducationalOrganization",
+      "@id": "https://dental.jkkn.ac.in/#organization",
+      "name": "JKKN Dental College & Hospital"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Review",
+    "author": { "@type": "Person", "name": "Vijay Anand S." },
+    "reviewBody": "I did my MDS in Prosthodontics at JKKN and the infrastructure blew me away — modern simulation labs and digital dentistry equipment.",
+    "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+    "itemReviewed": {
+      "@type": "EducationalOrganization",
+      "@id": "https://dental.jkkn.ac.in/#organization",
+      "name": "JKKN Dental College & Hospital"
+    }
+  }
+];
+
 export default function SalemLayout({
   children,
 }: {
@@ -160,6 +247,10 @@ export default function SalemLayout({
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(eventSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewSchema) }} />
       <Header />
       {children}
       <Footer />

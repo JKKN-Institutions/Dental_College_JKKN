@@ -1,34 +1,8 @@
-﻿'use client';
-
-import { useState } from 'react';
 import Link from 'next/link';
-import { ChevronUp, ChevronDown, Hospital, Stethoscope, Microscope, TrendingUp, Users, Bus, Route, Train, Plane, Home, MapPin, BookOpen, Award, Wifi, GraduationCap, Target, Sparkles, Shield } from 'lucide-react';
+import { Hospital, Stethoscope, Microscope, TrendingUp, Users, Bus, Route, Train, Plane, Home, MapPin, BookOpen, Award, Wifi, GraduationCap, Target, Sparkles, Shield } from 'lucide-react';
 import { ScrollToTop } from '@/components/ScrollToTop';
 
-const breadcrumbSchema = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://dental.jkkn.ac.in/" },
-    { "@type": "ListItem", "position": 2, "name": "Dental College in Erode", "item": "https://dental.jkkn.ac.in/erode/" },
-  ],
-};
-
-const speakableSchema = {
-  "@context": "https://schema.org",
-  "@type": "WebPage",
-  "name": "Dental College in Erode | JKKN Dental College",
-  "url": "https://dental.jkkn.ac.in/erode/",
-  "dateModified": "2026-03-23",
-  "speakable": {
-    "@type": "SpeakableSpecification",
-    "cssSelector": ["h1", ".text-lg", ".text-base"],
-  },
-};
-
-
 export default function ErodePage() {
-  const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   const faqs = [
     {
@@ -71,8 +45,8 @@ export default function ErodePage() {
   ];
 
   const programmes = [
-    { title: 'BDS (Bachelor of Dental Surgery)', duration: '4 years + 1 year internship', level: 'UG', intake: '100 seats', eligibility: '10+2 with Physics, Chemistry, Biology; NEET qualified' },
-    { title: 'MDS (Master of Dental Surgery)', duration: '3 years', level: 'PG', intake: '30 seats', eligibility: 'BDS degree; NEET MDS qualified' },
+    { title: 'BDS (Bachelor of Dental Surgery)', duration: '4 years + 1 year internship', level: 'UG', intake: '100 seats', eligibility: '10+2 with Physics, Chemistry, Biology; NEET qualified', href: '/academics/bds/' },
+    { title: 'MDS (Master of Dental Surgery)', duration: '3 years', level: 'PG', intake: '30 seats', eligibility: 'BDS degree; NEET MDS qualified', href: '/academics/mds/' },
   ];
 
   const placementStats = [
@@ -110,15 +84,18 @@ export default function ErodePage() {
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }}
-      />
       <main className="overflow-x-hidden w-full">
+
+      {/* ── Breadcrumb ── */}
+      <nav aria-label="Breadcrumb" className="bg-white border-b border-gray-100">
+        <div className="max-w-5xl mx-auto px-4 py-3">
+          <ol className="flex items-center gap-2 text-sm text-gray-500">
+            <li><Link href="/" className="hover:text-[#006837] transition-colors">Home</Link></li>
+            <li className="text-gray-300">/</li>
+            <li className="text-gray-900 font-medium">Dental College in Erode</li>
+          </ol>
+        </div>
+      </nav>
 
       {/* ── Top Announcement Bar ── */}
       <div className="bg-[#002309] text-white py-2 px-4">
@@ -216,15 +193,15 @@ export default function ErodePage() {
             Erode&apos;s strong industrial base means families value quality education with good placement outcomes. JKKN is just 35 km away — closer than many colleges within Erode city itself. The excellent NH-544 connectivity makes daily commute comfortable and quick.
           </p>
           <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-12" />
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 list-none">
             {whyFeatures.map((item) => (
-              <div key={item.title} className="bg-[#FBFBEE] rounded-2xl p-6 text-center hover:shadow-md transition-shadow">
+              <li key={item.title} className="bg-[#FBFBEE] rounded-2xl p-6 text-center hover:shadow-md transition-shadow">
                 <div className="flex justify-center mb-4">{item.icon}</div>
                 <h3 className="text-base font-bold text-gray-900 mb-2">{item.title}</h3>
                 <p className="text-gray-500 text-sm leading-relaxed">{item.desc}</p>
-              </div>
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
       </section>
 
@@ -241,19 +218,22 @@ export default function ErodePage() {
               <div key={prog.title} className="bg-white rounded-2xl p-6 sm:p-8 text-left shadow-sm">
                 <div className="mb-4"><GraduationCap className="w-8 h-8 text-[#006837]" /></div>
                 <h3 className="text-lg font-bold text-gray-900 mb-5">{prog.title}</h3>
-                <div className="space-y-3 mb-4">
+                <dl className="space-y-3 mb-4">
                   {[
                     { label: 'Duration', value: prog.duration },
                     { label: 'Level', value: prog.level },
                     { label: 'Intake', value: prog.intake },
                   ].map((row) => (
                     <div key={row.label} className="flex justify-between items-center border-b border-gray-100 pb-2">
-                      <span className="text-[#7cb983] text-sm">{row.label}</span>
-                      <span className="text-gray-900 text-sm font-semibold">{row.value}</span>
+                      <dt className="text-[#7cb983] text-sm">{row.label}</dt>
+                      <dd className="text-gray-900 text-sm font-semibold">{row.value}</dd>
                     </div>
                   ))}
-                </div>
-                <p className="text-gray-400 text-sm mb-6">{prog.eligibility}</p>
+                </dl>
+                <p className="text-gray-400 text-sm mb-4">{prog.eligibility}</p>
+                <Link href={prog.href} className="text-[#006837] hover:underline text-sm font-medium block mb-4">
+                  {prog.level === 'UG' ? 'View BDS Details →' : 'View MDS Details →'}
+                </Link>
                 <a href="tel:+919345855001" className="block text-center bg-[#FBFBEE] hover:bg-[#e8f5e9] text-[#006837] font-semibold py-3 rounded-xl transition-colors text-sm">
                   Enquire About This Course
                 </a>
@@ -325,17 +305,17 @@ export default function ErodePage() {
           </h2>
           <p className="text-gray-500 text-base mb-4">Everything you need for a world-class education experience</p>
           <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-12" />
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 list-none">
             {facilities.map((item) => (
-              <div key={item.title} className="flex items-start gap-3 bg-[#FBFBEE] rounded-2xl p-4 text-left">
+              <li key={item.title} className="flex items-start gap-3 bg-[#FBFBEE] rounded-2xl p-4 text-left">
                 <div className="w-10 h-10 rounded-xl bg-[#e8f5e9] flex items-center justify-center text-xl flex-shrink-0">{item.icon}</div>
                 <div>
                   <p className="font-bold text-gray-900 text-sm">{item.title}</p>
                   <p className="text-gray-500 text-xs mt-1 leading-relaxed">{item.desc}</p>
                 </div>
-              </div>
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
       </section>
 
@@ -392,25 +372,20 @@ export default function ErodePage() {
           <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-12" />
           <div className="text-left space-y-3">
             {faqs.map((faq, i) => (
-              <div
+              <details
                 key={i}
-                className={`rounded-xl overflow-hidden border transition-colors ${openFaq === i ? 'border-[#7cb983]' : 'border-gray-200'}`}
+                className="rounded-xl overflow-hidden border border-gray-200 group open:border-[#7cb983]"
               >
-                <button
-                  onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                  className="w-full flex items-center justify-between px-5 py-4 text-left font-semibold text-gray-900 text-sm sm:text-base bg-white hover:bg-gray-50 transition-colors"
-                >
+                <summary className="flex items-center justify-between px-5 py-4 text-left font-semibold text-gray-900 text-sm sm:text-base bg-white hover:bg-gray-50 transition-colors cursor-pointer list-none [&::-webkit-details-marker]:hidden">
                   <span>{faq.q}</span>
-                  <span className="ml-4 flex-shrink-0 text-[#006837]">
-                    {openFaq === i ? <ChevronUp className="w-5 h-5" /> : <ChevronDown className="w-5 h-5" />}
-                  </span>
-                </button>
-                {openFaq === i && (
-                  <div className="px-5 pb-5 pt-2 text-gray-500 text-sm leading-relaxed border-t border-[#7cb983]/20 bg-white">
-                    {faq.a}
-                  </div>
-                )}
-              </div>
+                  <svg className="w-5 h-5 text-[#006837] flex-shrink-0 ml-4 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </summary>
+                <div className="px-5 pb-5 pt-2 text-gray-500 text-sm leading-relaxed border-t border-[#7cb983]/20 bg-white">
+                  {faq.a}
+                </div>
+              </details>
             ))}
           </div>
         </div>
@@ -442,9 +417,15 @@ export default function ErodePage() {
               </Link>
             ))}
           </div>
-          <a href="/academics/" className="inline-block bg-[#7cb983] hover:bg-[#6ba872] text-white font-bold px-10 py-4 rounded-full transition-all transform hover:scale-105 shadow-lg text-base">
-            View All Programmes
-          </a>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
+            <a href="/academics/" className="inline-block bg-[#7cb983] hover:bg-[#6ba872] text-white font-bold px-10 py-4 rounded-full transition-all transform hover:scale-105 shadow-lg text-base">
+              View All Programmes
+            </a>
+          </div>
+          <div className="flex items-center justify-center gap-6 flex-wrap">
+            <Link href="/admission/" className="text-[#006837] hover:underline text-sm">Admission Process</Link>
+            <Link href="/fees-structure/" className="text-[#006837] hover:underline text-sm">Fee Structure</Link>
+          </div>
         </div>
       </section>
 

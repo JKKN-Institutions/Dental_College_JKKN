@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     siteName: 'JKKN Dental College & Hospital',
     images: [
       {
-        url: '/images/BDS-hero-image.webp',
+        url: 'https://dental.jkkn.ac.in/images/BDS-hero-image.webp',
         width: 1200,
         height: 630,
         alt: 'Dental Colleges in Tiruppur - JKKN Dental College'
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Dental Colleges in Tiruppur | JKKN Dental College',
     description: 'Top dental college near Tiruppur — JKKN Dental, 80 km via NH-544. DCI approved, NAAC accredited. BDS & MDS with 90%+ placements & hostel.',
-    images: ['/images/BDS-hero-image.webp'],
+    images: ['https://dental.jkkn.ac.in/images/BDS-hero-image.webp'],
     site: '@jaborejkkn',
   },
 };
@@ -69,7 +69,7 @@ const orgSchema = {
   },
   "telephone": "+919345855001",
   "email": "info@jkkn.ac.in",
-  "foundingDate": "1952",
+  "foundingDate": "1987",
   "parentOrganization": { "@type": "Organization", "name": "JKKN Institutions", "url": "https://jkkn.ac.in/" },
   "hasCredential": [
     { "@type": "EducationalOccupationalCredential", "credentialCategory": "DCI Approved" },
@@ -149,6 +149,65 @@ const eventSchema = {
   }
 };
 
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": "Dentist",
+  "@id": "https://dental.jkkn.ac.in/#dentist",
+  "name": "JKKN Dental College & Hospital",
+  "url": "https://dental.jkkn.ac.in/",
+  "telephone": "+919345855001",
+  "email": "info@jkkn.ac.in",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Natarajapuram, NH-544 (Salem–Coimbatore Highway)",
+    "addressLocality": "Komarapalayam",
+    "addressRegion": "Tamil Nadu",
+    "postalCode": "638183",
+    "addressCountry": "IN"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "11.4446062",
+    "longitude": "77.7309852"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      "opens": "09:00",
+      "closes": "17:00"
+    }
+  ],
+  "priceRange": "₹₹",
+  "medicalSpecialty": "Dentistry"
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://dental.jkkn.ac.in/" },
+    { "@type": "ListItem", "position": 2, "name": "Dental Colleges in Tiruppur", "item": "https://dental.jkkn.ac.in/tiruppur/" },
+  ],
+};
+
+const speakableSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Dental Colleges in Tiruppur | JKKN Dental College",
+  "url": "https://dental.jkkn.ac.in/tiruppur/",
+  "dateModified": "2026-03-23",
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": ["h1", ".text-lg", ".text-base"],
+  },
+};
+
+const reviewSchema = [
+  { "@context": "https://schema.org", "@type": "Review", "author": { "@type": "Person", "name": "Dharani Selvam" }, "reviewBody": "I came from Tiruppur and the on-campus hostel made it feel like home. The 200+ dental chairs and daily patient flow gave me clinical skills that most fresh graduates lack.", "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }, "itemReviewed": { "@type": "EducationalOrganization", "@id": "https://dental.jkkn.ac.in/#organization", "name": "JKKN Dental College & Hospital" } },
+  { "@context": "https://schema.org", "@type": "Review", "author": { "@type": "Person", "name": "Nithya Sri R." }, "reviewBody": "JKKN's MDS programme in Conservative Dentistry was my top choice. The faculty are published researchers who bring real-world expertise.", "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }, "itemReviewed": { "@type": "EducationalOrganization", "@id": "https://dental.jkkn.ac.in/#organization", "name": "JKKN Dental College & Hospital" } }
+];
+
 export default function TiruppurLayout({
   children,
 }: {
@@ -160,6 +219,10 @@ export default function TiruppurLayout({
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(eventSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewSchema) }} />
       <Header />
       {children}
       <Footer />

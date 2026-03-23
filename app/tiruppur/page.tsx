@@ -1,34 +1,8 @@
-﻿'use client';
-
-import { useState } from 'react';
 import Link from 'next/link';
-import { ChevronUp, ChevronDown, Hospital, Stethoscope, Microscope, TrendingUp, Users, Bus, Route, Train, Plane, Home, MapPin, BookOpen, Award, Wifi, GraduationCap, Target, Sparkles, Shield } from 'lucide-react';
+import { Hospital, Stethoscope, Microscope, TrendingUp, Users, Bus, Route, Train, Plane, Home, MapPin, BookOpen, Award, Wifi, GraduationCap, Target, Sparkles, Shield } from 'lucide-react';
 import { ScrollToTop } from '@/components/ScrollToTop';
 
-const breadcrumbSchema = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://dental.jkkn.ac.in/" },
-    { "@type": "ListItem", "position": 2, "name": "Dental Colleges in Tiruppur", "item": "https://dental.jkkn.ac.in/tiruppur/" },
-  ],
-};
-
-const speakableSchema = {
-  "@context": "https://schema.org",
-  "@type": "WebPage",
-  "name": "Dental Colleges in Tiruppur | JKKN Dental College",
-  "url": "https://dental.jkkn.ac.in/tiruppur/",
-  "dateModified": "2026-03-23",
-  "speakable": {
-    "@type": "SpeakableSpecification",
-    "cssSelector": ["h1", ".text-lg", ".text-base"],
-  },
-};
-
-
 export default function TiruppurPage() {
-  const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   const faqs = [
     {
@@ -71,8 +45,8 @@ export default function TiruppurPage() {
   ];
 
   const programmes = [
-    { title: 'BDS (Bachelor of Dental Surgery)', duration: '4 years + 1 year internship', level: 'UG', intake: '100 seats', eligibility: '10+2 with Physics, Chemistry, Biology; NEET qualified' },
-    { title: 'MDS (Master of Dental Surgery)', duration: '3 years', level: 'PG', intake: '30 seats', eligibility: 'BDS degree; NEET MDS qualified' },
+    { title: 'BDS (Bachelor of Dental Surgery)', href: '/academics/bds/', duration: '4 years + 1 year internship', level: 'UG', intake: '100 seats', eligibility: '10+2 with Physics, Chemistry, Biology; NEET qualified' },
+    { title: 'MDS (Master of Dental Surgery)', href: '/academics/mds/', duration: '3 years', level: 'PG', intake: '30 seats', eligibility: 'BDS degree; NEET MDS qualified' },
   ];
 
   const placementStats = [
@@ -110,15 +84,18 @@ export default function TiruppurPage() {
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }}
-      />
       <main className="overflow-x-hidden w-full">
+
+      {/* ── Breadcrumb UI ── */}
+      <nav aria-label="Breadcrumb" className="bg-white border-b border-gray-100">
+        <div className="max-w-5xl mx-auto px-4 py-3">
+          <ol className="flex items-center gap-2 text-sm text-gray-500">
+            <li><Link href="/" className="hover:text-[#006837] transition-colors">Home</Link></li>
+            <li className="text-gray-300">/</li>
+            <li className="text-gray-900 font-medium">Dental Colleges in Tiruppur</li>
+          </ol>
+        </div>
+      </nav>
 
       {/* ── Top Announcement Bar ── */}
       <div className="bg-[#002309] text-white py-2 px-4">
@@ -150,19 +127,19 @@ export default function TiruppurPage() {
           90%+ placement support — no need to go to Coimbatore — quality
           education is closer than you think.
         </p>
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 mb-10 w-full max-w-2xl">
+        <ul className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 mb-10 w-full max-w-2xl list-none p-0 m-0">
           {[
             { value: '90%+', label: 'PLACEMENTS' },
             { value: '8-10', label: 'LPA HIGHEST' },
             { value: '85km', label: 'FROM TIRUPPUR' },
             { value: '2', label: 'PROGRAMMES' },
           ].map((stat) => (
-            <div key={stat.label} className="bg-white/10 backdrop-blur border border-white/20 rounded-2xl px-4 py-4 text-white">
+            <li key={stat.label} className="bg-white/10 backdrop-blur border border-white/20 rounded-2xl px-4 py-4 text-white">
               <div className="font-extrabold text-white" style={{ fontSize: 'clamp(1.5rem, 3vw, 2rem)' }}>{stat.value}</div>
               <div className="text-xs font-semibold tracking-widest text-white/70 mt-1">{stat.label}</div>
-            </div>
+            </li>
           ))}
-        </div>
+        </ul>
         <div className="flex flex-col sm:flex-row gap-4 items-center">
           <a href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8" target="_blank" rel="nofollow noopener noreferrer" className="bg-[#7cb983] hover:bg-[#6ba872] text-white font-bold px-8 py-4 rounded-full transition-all transform hover:scale-105 shadow-lg text-base">
             Apply Now — 2026-27
@@ -218,15 +195,15 @@ export default function TiruppurPage() {
             Tiruppur students no longer need to travel all the way to Coimbatore or Chennai for quality professional education. JKKN offers an excellent alternative with comfortable hostel facilities, strong placements, and a peaceful campus environment ideal for focused learning.
           </p>
           <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-12" />
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 list-none p-0 m-0">
             {whyFeatures.map((item) => (
-              <div key={item.title} className="bg-[#FBFBEE] rounded-2xl p-6 text-center hover:shadow-md transition-shadow">
+              <li key={item.title} className="bg-[#FBFBEE] rounded-2xl p-6 text-center hover:shadow-md transition-shadow">
                 <div className="flex justify-center mb-4">{item.icon}</div>
                 <h3 className="text-base font-bold text-gray-900 mb-2">{item.title}</h3>
                 <p className="text-gray-500 text-sm leading-relaxed">{item.desc}</p>
-              </div>
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
       </section>
 
@@ -242,25 +219,35 @@ export default function TiruppurPage() {
             {programmes.map((prog) => (
               <div key={prog.title} className="bg-white rounded-2xl p-6 sm:p-8 text-left shadow-sm">
                 <div className="mb-4"><GraduationCap className="w-8 h-8 text-[#006837]" /></div>
-                <h3 className="text-lg font-bold text-gray-900 mb-5">{prog.title}</h3>
-                <div className="space-y-3 mb-4">
+                <h3 className="text-lg font-bold text-gray-900 mb-5">
+                  <Link href={prog.href} className="hover:text-[#006837] transition-colors">{prog.title}</Link>
+                </h3>
+                <dl className="space-y-3 mb-4">
                   {[
                     { label: 'Duration', value: prog.duration },
                     { label: 'Level', value: prog.level },
                     { label: 'Intake', value: prog.intake },
                   ].map((row) => (
                     <div key={row.label} className="flex justify-between items-center border-b border-gray-100 pb-2">
-                      <span className="text-[#7cb983] text-sm">{row.label}</span>
-                      <span className="text-gray-900 text-sm font-semibold">{row.value}</span>
+                      <dt className="text-[#7cb983] text-sm">{row.label}</dt>
+                      <dd className="text-gray-900 text-sm font-semibold">{row.value}</dd>
                     </div>
                   ))}
-                </div>
+                </dl>
                 <p className="text-gray-400 text-sm mb-6">{prog.eligibility}</p>
-                <a href="tel:+919345855001" className="block text-center bg-[#FBFBEE] hover:bg-[#e8f5e9] text-[#006837] font-semibold py-3 rounded-xl transition-colors text-sm">
+                <Link href="/admission/" className="block text-center bg-[#FBFBEE] hover:bg-[#e8f5e9] text-[#006837] font-semibold py-3 rounded-xl transition-colors text-sm">
                   Enquire About This Course
-                </a>
+                </Link>
               </div>
             ))}
+          </div>
+          <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="/fees-structure/" className="inline-block bg-white border border-[#7cb983] hover:bg-[#e8f5e9] text-[#006837] font-semibold px-6 py-3 rounded-xl transition-colors text-sm">
+              View Fees Structure
+            </Link>
+            <Link href="/admission/" className="inline-block bg-[#006837] hover:bg-[#002309] text-white font-semibold px-6 py-3 rounded-xl transition-colors text-sm">
+              Admission Process
+            </Link>
           </div>
         </div>
       </section>
@@ -273,20 +260,20 @@ export default function TiruppurPage() {
           </h2>
           <p className="text-gray-500 text-base mb-4">Our placement cell connects you with India&apos;s top employers</p>
           <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-12" />
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-10">
+          <ul className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-10 list-none p-0 m-0">
             {placementStats.map((stat) => (
-              <div key={stat.label} className="bg-white border border-gray-100 rounded-2xl p-5 shadow-sm">
+              <li key={stat.label} className="bg-white border border-gray-100 rounded-2xl p-5 shadow-sm">
                 <div className="font-extrabold text-[#006837]" style={{ fontSize: 'clamp(1.8rem, 3vw, 2.5rem)' }}>{stat.value}</div>
                 <div className="text-xs font-semibold tracking-widest text-gray-400 mt-1">{stat.label}</div>
-              </div>
+              </li>
             ))}
-          </div>
+          </ul>
           <p className="text-xs font-semibold tracking-widest text-gray-400 mb-5 uppercase">Companies That Hire From Us</p>
-          <div className="flex flex-wrap justify-center gap-3">
+          <ul className="flex flex-wrap justify-center gap-3 list-none p-0 m-0">
             {companies.map((company) => (
-              <span key={company} className="border border-gray-200 rounded-full px-5 py-2 text-sm text-gray-700 bg-white">{company}</span>
+              <li key={company} className="border border-gray-200 rounded-full px-5 py-2 text-sm text-gray-700 bg-white">{company}</li>
             ))}
-          </div>
+          </ul>
         </div>
       </section>
 
@@ -306,15 +293,17 @@ export default function TiruppurPage() {
                 <p className="text-white/80 text-sm">80-90 km • 1.5-2 hours</p>
               </div>
             </div>
-            {transportRows.map((row, i) => (
-              <div key={row.label} className={`flex items-start gap-4 px-6 py-5 ${i < transportRows.length - 1 ? 'border-b border-gray-100' : ''}`}>
-                <div className="w-10 h-10 rounded-xl bg-[#FBFBEE] flex items-center justify-center text-xl flex-shrink-0">{row.icon}</div>
-                <div>
-                  <p className="text-xs font-semibold tracking-widest text-gray-400 mb-1">{row.label}</p>
-                  <p className="text-gray-800 text-sm leading-relaxed">{row.text}</p>
-                </div>
-              </div>
-            ))}
+            <ul className="list-none p-0 m-0">
+              {transportRows.map((row, i) => (
+                <li key={row.label} className={`flex items-start gap-4 px-6 py-5 ${i < transportRows.length - 1 ? 'border-b border-gray-100' : ''}`}>
+                  <div className="w-10 h-10 rounded-xl bg-[#FBFBEE] flex items-center justify-center text-xl flex-shrink-0">{row.icon}</div>
+                  <div>
+                    <p className="text-xs font-semibold tracking-widest text-gray-400 mb-1">{row.label}</p>
+                    <p className="text-gray-800 text-sm leading-relaxed">{row.text}</p>
+                  </div>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </section>
@@ -327,17 +316,17 @@ export default function TiruppurPage() {
           </h2>
           <p className="text-gray-500 text-base mb-4">Everything you need for a world-class education experience</p>
           <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-12" />
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 list-none p-0 m-0">
             {facilities.map((item) => (
-              <div key={item.title} className="flex items-start gap-3 bg-[#FBFBEE] rounded-2xl p-4 text-left">
+              <li key={item.title} className="flex items-start gap-3 bg-[#FBFBEE] rounded-2xl p-4 text-left">
                 <div className="w-10 h-10 rounded-xl bg-[#e8f5e9] flex items-center justify-center text-xl flex-shrink-0">{item.icon}</div>
                 <div>
                   <p className="font-bold text-gray-900 text-sm">{item.title}</p>
                   <p className="text-gray-500 text-xs mt-1 leading-relaxed">{item.desc}</p>
                 </div>
-              </div>
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
       </section>
 
@@ -349,8 +338,8 @@ export default function TiruppurPage() {
           </h2>
           <p className="text-gray-500 text-base mb-4">Hear from students who made the right choice</p>
           <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-12" />
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-            <div className="bg-white rounded-2xl p-6 text-left shadow-sm">
+          <ul className="grid grid-cols-1 sm:grid-cols-3 gap-6 list-none p-0 m-0">
+            <li className="bg-white rounded-2xl p-6 text-left shadow-sm">
               <div className="text-5xl text-gray-200 font-serif leading-none mb-3 select-none">"</div>
               <p className="text-gray-500 text-sm leading-relaxed italic mb-6">
                 I came from Tiruppur and was initially worried about the distance, but the on-campus hostel made it feel like home. The 200+ dental chairs and daily patient flow gave me clinical skills that most fresh graduates lack.
@@ -359,18 +348,18 @@ export default function TiruppurPage() {
                 <p className="font-bold text-gray-900 text-sm">Dharani Selvam</p>
                 <p className="text-gray-400 text-xs mt-0.5">BDS 2024 • Clove Dental, Coimbatore</p>
               </div>
-            </div>
-            <div className="bg-white rounded-2xl p-6 text-left shadow-sm">
+            </li>
+            <li className="bg-white rounded-2xl p-6 text-left shadow-sm">
               <div className="text-5xl text-gray-200 font-serif leading-none mb-3 select-none">"</div>
               <p className="text-gray-500 text-sm leading-relaxed italic mb-6">
-                JKKN's MDS programme in Conservative Dentistry was my top choice. The faculty here are published researchers who bring real-world expertise to every lecture. My thesis got published in a national journal thanks to their guidance.
+                JKKN&apos;s MDS programme in Conservative Dentistry was my top choice. The faculty here are published researchers who bring real-world expertise to every lecture. My thesis got published in a national journal thanks to their guidance.
               </p>
               <div>
                 <p className="font-bold text-gray-900 text-sm">Nithya Sri R.</p>
                 <p className="text-gray-400 text-xs mt-0.5">MDS Conservative Dentistry 2023 • Apollo Hospitals, Chennai</p>
               </div>
-            </div>
-            <div className="bg-white rounded-2xl p-6 text-left shadow-sm">
+            </li>
+            <li className="bg-white rounded-2xl p-6 text-left shadow-sm">
               <div className="text-5xl text-gray-200 font-serif leading-none mb-3 select-none">"</div>
               <p className="text-gray-500 text-sm leading-relaxed italic mb-6">
                 The TNPSC Academy at JKKN prepared me for government dental officer exams alongside my BDS. The college thinks beyond just private placements — they prepare you for every career path in dentistry.
@@ -379,8 +368,8 @@ export default function TiruppurPage() {
                 <p className="font-bold text-gray-900 text-sm">Sathish Kumar M.</p>
                 <p className="text-gray-400 text-xs mt-0.5">BDS 2025 • Government Dental Surgeon, Tamil Nadu</p>
               </div>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
       </section>
 
@@ -394,25 +383,13 @@ export default function TiruppurPage() {
           <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-12" />
           <div className="text-left space-y-3">
             {faqs.map((faq, i) => (
-              <div
-                key={i}
-                className={`rounded-xl overflow-hidden border transition-colors ${openFaq === i ? 'border-[#7cb983]' : 'border-gray-200'}`}
-              >
-                <button
-                  onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                  className="w-full flex items-center justify-between px-5 py-4 text-left font-semibold text-gray-900 text-sm sm:text-base bg-white hover:bg-gray-50 transition-colors"
-                >
+              <details key={i} className="rounded-xl overflow-hidden border border-gray-200 group open:border-[#7cb983]">
+                <summary className="flex items-center justify-between px-5 py-4 text-left font-semibold text-gray-900 text-sm sm:text-base bg-white hover:bg-gray-50 transition-colors cursor-pointer list-none [&::-webkit-details-marker]:hidden">
                   <span>{faq.q}</span>
-                  <span className="ml-4 flex-shrink-0 text-[#006837]">
-                    {openFaq === i ? <ChevronUp className="w-5 h-5" /> : <ChevronDown className="w-5 h-5" />}
-                  </span>
-                </button>
-                {openFaq === i && (
-                  <div className="px-5 pb-5 pt-2 text-gray-500 text-sm leading-relaxed border-t border-[#7cb983]/20 bg-white">
-                    {faq.a}
-                  </div>
-                )}
-              </div>
+                  <svg className="w-5 h-5 text-[#006837] flex-shrink-0 ml-4 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" /></svg>
+                </summary>
+                <div className="px-5 pb-5 pt-2 text-gray-500 text-sm leading-relaxed border-t border-[#7cb983]/20 bg-white">{faq.a}</div>
+              </details>
             ))}
           </div>
         </div>
@@ -426,27 +403,31 @@ export default function TiruppurPage() {
           </h2>
           <p className="text-gray-500 text-base mb-4">Find the best dental college near your city</p>
           <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-10" />
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
+          <ul className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4 list-none p-0">
             {cities.slice(0, 3).map((city) => (
-              <Link href={city.href} key={city.name} className="bg-white rounded-2xl px-5 py-4 flex items-center gap-3 shadow-sm hover:shadow-md transition-shadow cursor-pointer">
-                <span className="flex-shrink-0">{city.icon}</span>
-                <span className="font-bold text-gray-900 text-base flex-1 text-left">{city.name}</span>
-                <span className="text-gray-400 text-sm">{city.dist}</span>
-              </Link>
+              <li key={city.name}>
+                <Link href={city.href} className="bg-white rounded-2xl px-5 py-4 flex items-center gap-3 shadow-sm hover:shadow-md transition-shadow cursor-pointer">
+                  <span className="flex-shrink-0">{city.icon}</span>
+                  <span className="font-bold text-gray-900 text-base flex-1 text-left">{city.name}</span>
+                  <span className="text-gray-400 text-sm">{city.dist}</span>
+                </Link>
+              </li>
             ))}
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-10">
+          </ul>
+          <ul className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-10 list-none p-0">
             {cities.slice(3).map((city) => (
-              <Link href={city.href} key={city.name} className="bg-white rounded-2xl px-5 py-4 flex items-center gap-3 shadow-sm hover:shadow-md transition-shadow cursor-pointer sm:col-span-1">
-                <span className="flex-shrink-0">{city.icon}</span>
-                <span className="font-bold text-gray-900 text-base flex-1 text-left">{city.name}</span>
-                <span className="text-gray-400 text-sm">{city.dist}</span>
-              </Link>
+              <li key={city.name} className="sm:col-span-1">
+                <Link href={city.href} className="bg-white rounded-2xl px-5 py-4 flex items-center gap-3 shadow-sm hover:shadow-md transition-shadow cursor-pointer">
+                  <span className="flex-shrink-0">{city.icon}</span>
+                  <span className="font-bold text-gray-900 text-base flex-1 text-left">{city.name}</span>
+                  <span className="text-gray-400 text-sm">{city.dist}</span>
+                </Link>
+              </li>
             ))}
-          </div>
-          <a href="/academics/" className="inline-block bg-[#7cb983] hover:bg-[#6ba872] text-white font-bold px-10 py-4 rounded-full transition-all transform hover:scale-105 shadow-lg text-base">
+          </ul>
+          <Link href="/academics/" className="inline-block bg-[#7cb983] hover:bg-[#6ba872] text-white font-bold px-10 py-4 rounded-full transition-all transform hover:scale-105 shadow-lg text-base">
             View All Programmes
-          </a>
+          </Link>
         </div>
       </section>
 

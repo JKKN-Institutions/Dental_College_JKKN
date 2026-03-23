@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     siteName: 'JKKN Dental College & Hospital',
     images: [
       {
-        url: '/images/BDS-hero-image.webp',
+        url: 'https://dental.jkkn.ac.in/images/BDS-hero-image.webp',
         width: 1200,
         height: 630,
         alt: 'Best Dental College in Coimbatore - JKKN Dental College'
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Best Dental College in Coimbatore | JKKN Dental College',
     description: 'Best dental college in Coimbatore region — JKKN Dental, 100 km on NH-544. DCI approved, NAAC accredited. BDS & MDS with 90%+ placements & hostel.',
-    images: ['/images/BDS-hero-image.webp'],
+    images: ['https://dental.jkkn.ac.in/images/BDS-hero-image.webp'],
     site: '@jaborejkkn',
   },
 };
@@ -69,7 +69,7 @@ const orgSchema = {
   },
   "telephone": "+919345855001",
   "email": "info@jkkn.ac.in",
-  "foundingDate": "1952",
+  "foundingDate": "1987",
   "parentOrganization": { "@type": "Organization", "name": "JKKN Institutions", "url": "https://jkkn.ac.in/" },
   "hasCredential": [
     { "@type": "EducationalOccupationalCredential", "credentialCategory": "DCI Approved" },
@@ -86,6 +86,65 @@ const orgSchema = {
     "ratingCount": "400"
   }
 };
+
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": "Dentist",
+  "@id": "https://dental.jkkn.ac.in/#dentist",
+  "name": "JKKN Dental College & Hospital",
+  "url": "https://dental.jkkn.ac.in/",
+  "telephone": "+919345855001",
+  "email": "info@jkkn.ac.in",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Natarajapuram, NH-544 (Salem–Coimbatore Highway)",
+    "addressLocality": "Komarapalayam",
+    "addressRegion": "Tamil Nadu",
+    "postalCode": "638183",
+    "addressCountry": "IN"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "11.4446062",
+    "longitude": "77.7309852"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      "opens": "09:00",
+      "closes": "17:00"
+    }
+  ],
+  "image": "https://dental.jkkn.ac.in/images/jkkn-dental-logo.webp",
+  "priceRange": "$$"
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://dental.jkkn.ac.in/" },
+    { "@type": "ListItem", "position": 2, "name": "Best Dental College in Coimbatore", "item": "https://dental.jkkn.ac.in/coimbatore/" },
+  ],
+};
+
+const speakableSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Best Dental College in Coimbatore | JKKN Dental College",
+  "url": "https://dental.jkkn.ac.in/coimbatore/",
+  "dateModified": "2026-03-23",
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": ["h1", ".text-lg", ".text-base"],
+  },
+};
+
+const reviewSchema = [
+  { "@context": "https://schema.org", "@type": "Review", "author": { "@type": "Person", "name": "Anitha Kumari S." }, "reviewBody": "I had options in Coimbatore, but JKKN's 500+ daily patient flow and 200+ dental chairs convinced me. The clinical exposure here is 3x what my friends at city colleges got.", "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }, "itemReviewed": { "@type": "EducationalOrganization", "@id": "https://dental.jkkn.ac.in/#organization", "name": "JKKN Dental College & Hospital" } },
+  { "@context": "https://schema.org", "@type": "Review", "author": { "@type": "Person", "name": "Praveen Raj K." }, "reviewBody": "JKKN's MDS in Oral Surgery programme is research-driven with published faculty. The 100+ bed hospital meant I worked on complex cases.", "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }, "itemReviewed": { "@type": "EducationalOrganization", "@id": "https://dental.jkkn.ac.in/#organization", "name": "JKKN Dental College & Hospital" } }
+];
 
 const eventSchema = {
   "@context": "https://schema.org",
@@ -158,6 +217,10 @@ export default function CoimbatoreLayout({
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(eventSchema) }} />
       <Header />
