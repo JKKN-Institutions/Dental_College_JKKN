@@ -98,8 +98,23 @@ export default function SalemPage() {
     { icon: '✨', name: 'Coimbatore', dist: '100-110 km' },
   ];
 
-  const quickLinks = ['All Programmes', 'Admissions', 'Placements', 'Campus Life', 'Fee Structure', 'Contact Us'];
-  const institutions = ['JKKN Group', 'Dental', 'Pharmacy', 'Nursing', 'Engineering', 'Arts & Science', 'Allied Health Sciences'];
+  const quickLinks = [
+    { name: 'All Programmes', url: '/academics/' },
+    { name: 'Admissions', url: '/admission/' },
+    { name: 'Placements', url: '/placements/' },
+    { name: 'Campus Life', url: '/facilities/' },
+    { name: 'Fee Structure', url: '/fees-structure/' },
+    { name: 'Contact Us', url: '/contact/' },
+  ];
+  const institutions = [
+    { name: 'JKKN Group', url: 'https://jkkn.ac.in/' },
+    { name: 'Dental', url: 'https://dental.jkkn.ac.in/' },
+    { name: 'Pharmacy', url: 'https://pharmacy.jkkn.ac.in/' },
+    { name: 'Nursing', url: 'https://nursing.sresakthimayeil.jkkn.ac.in/' },
+    { name: 'Engineering', url: 'https://engg.jkkn.ac.in/' },
+    { name: 'Arts & Science', url: 'https://cas.jkkn.ac.in/' },
+    { name: 'Allied Health Sciences', url: 'https://ahs.jkkn.ac.in/' },
+  ];
 
   return (
     <main className="overflow-x-hidden w-full">
@@ -479,7 +494,7 @@ export default function SalemPage() {
             </button>
             <p className="text-center text-white/70 text-sm">
               Or call us directly:{' '}
-              <a href="tel:+919345855001" className="text-white underline hover:text-white/90">+91-XXXXXXXXXX</a>
+              <a href="tel:+919345855001" className="text-white underline hover:text-white/90">+91 93458 55001</a>
               {' '}•{' '}
               <a href="https://wa.me/919345855001" target="_blank" rel="nofollow noopener noreferrer" className="text-white underline hover:text-white/90">WhatsApp</a>
             </p>
@@ -513,7 +528,7 @@ export default function SalemPage() {
               </div>
             ))}
           </div>
-          <a href="https://dental.jkkn.ac.in" className="inline-block bg-[#7cb983] hover:bg-[#6ba872] text-white font-bold px-10 py-4 rounded-full transition-all transform hover:scale-105 shadow-lg text-base">
+          <a href="https://dental.jkkn.ac.in/academics/" className="inline-block bg-[#7cb983] hover:bg-[#6ba872] text-white font-bold px-10 py-4 rounded-full transition-all transform hover:scale-105 shadow-lg text-base">
             View All Programmes
           </a>
         </div>
@@ -529,16 +544,16 @@ export default function SalemPage() {
               <p className="text-white/70 text-sm mb-3 leading-relaxed">
                 Natarajapuram, NH-544 (Salem To Coimbatore National Highway), Komarapalayam (TK), Namakkal (DT), Tamil Nadu - 638183, India
               </p>
-              <p className="text-white/70 text-sm mb-1">Phone: +91-XXXXXXXXXX</p>
-              <p className="text-white/70 text-sm mb-1">WhatsApp: +91-XXXXXXXXXX</p>
+              <p className="text-white/70 text-sm mb-1">Phone: +91 93458 55001</p>
+              <p className="text-white/70 text-sm mb-1">WhatsApp: +91 93458 55001</p>
               <p className="text-white/70 text-sm">Email: admissions@dental.jkkn.ac.in</p>
             </div>
             <div>
               <h3 className="font-bold text-base mb-4">Quick Links</h3>
               <ul className="space-y-2">
                 {quickLinks.map((link) => (
-                  <li key={link}>
-                    <a href="https://dental.jkkn.ac.in" className="text-white/70 hover:text-white text-sm transition-colors">{link}</a>
+                  <li key={link.name}>
+                    <a href={link.url} className="text-white/70 hover:text-white text-sm transition-colors">{link.name}</a>
                   </li>
                 ))}
               </ul>
@@ -547,8 +562,8 @@ export default function SalemPage() {
               <h3 className="font-bold text-base mb-4">JKKN Institutions</h3>
               <ul className="space-y-2">
                 {institutions.map((inst) => (
-                  <li key={inst}>
-                    <a href="https://dental.jkkn.ac.in" className="text-white/70 hover:text-white text-sm transition-colors">{inst}</a>
+                  <li key={inst.name}>
+                    <a href={inst.url} className="text-white/70 hover:text-white text-sm transition-colors">{inst.name}</a>
                   </li>
                 ))}
               </ul>
