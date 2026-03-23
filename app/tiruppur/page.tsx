@@ -7,11 +7,11 @@ export default function TiruppurPage() {
   const faqs = [
     {
       q: 'Which are the best dental colleges in Tiruppur?',
-      a: 'JKKN Dental College & Hospital, located just 80-90 km from Tiruppur on NH-544, is widely regarded as one of the top dental colleges accessible from Tiruppur. Approved by DCI, NAAC and affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai, it offers excellent programmes with strong placement support.',
+      a: 'JKKN Dental College & Hospital, located just 67 km from Tiruppur via NH-544, is widely regarded as one of the top dental colleges accessible from Tiruppur. Approved by DCI, NAAC and affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai, it offers excellent programmes with strong placement support.',
     },
     {
       q: 'How far is JKKN Dental from Tiruppur?',
-      a: 'JKKN Dental is approximately 80-90 km from Tiruppur, which takes about 1.5-2 hours by road via State Highway to Erode, then NH-544 to Komarapalayam. Regular inter-city bus services are available from Tiruppur to Komarapalayam/Erode.',
+      a: 'JKKN Dental is approximately 67 km from Tiruppur, which takes about 1.5 hours by road via NH-544. Regular inter-city bus services are available from Tiruppur to Komarapalayam/Erode.',
     },
     {
       q: 'What is the NEET cut-off for BDS at JKKN Dental?',
@@ -27,7 +27,7 @@ export default function TiruppurPage() {
     },
     {
       q: 'Does JKKN Dental provide hostel for Tiruppur students?',
-      a: 'Yes, JKKN Dental provides separate hostel facilities for boys and girls. Students from Tiruppur can also opt for daily commute as the campus is just 1.5-2 hours away. College transport services are available.',
+      a: 'Yes, JKKN Dental provides separate hostel facilities for boys and girls. Students from Tiruppur can also opt for daily commute as the campus is just about 1.5 hours away. College transport services are available.',
     },
     {
       q: 'How can I apply for admission at JKKN Dental?',
@@ -41,7 +41,7 @@ export default function TiruppurPage() {
     { icon: <Microscope className="w-6 h-6 text-[#006837]" />, title: 'Advanced Labs', desc: 'Advanced dental labs, simulation equipment, and digital dentistry training' },
     { icon: <TrendingUp className="w-6 h-6 text-[#006837]" />, title: 'NEET MDS Results', desc: 'Strong track record in NEET MDS results and higher education' },
     { icon: <Users className="w-6 h-6 text-[#006837]" />, title: 'Community Service', desc: 'Hospital serves the community — builds trust and clinical experience' },
-    { icon: <Bus className="w-6 h-6 text-[#006837]" />, title: 'Well-Connected', desc: '80-90 km from Tiruppur via Erode. Comfortable on-campus hostel with all amenities — feel at home from day one.' },
+    { icon: <Bus className="w-6 h-6 text-[#006837]" />, title: 'Well-Connected', desc: '67 km from Tiruppur via NH-544. Comfortable on-campus hostel with all amenities — feel at home from day one.' },
   ];
 
   const programmes = [
@@ -61,8 +61,8 @@ export default function TiruppurPage() {
   const transportRows = [
     { icon: <Route className="w-6 h-6 text-[#006837]" />, label: 'ROUTE', text: 'Via State Highway to Erode, then NH-544 to Komarapalayam' },
     { icon: <Bus className="w-6 h-6 text-[#006837]" />, label: 'BY BUS', text: 'Inter-city buses from Tiruppur to Komarapalayam/Erode available regularly. Private bus services also available.' },
-    { icon: <Train className="w-6 h-6 text-[#006837]" />, label: 'NEAREST RAILWAY STATION', text: 'Tiruppur Junction (~85 km from campus)' },
-    { icon: <Plane className="w-6 h-6 text-[#006837]" />, label: 'NEAREST AIRPORT', text: 'Coimbatore International Airport (Code: CJB) (~50 km)' },
+    { icon: <Train className="w-6 h-6 text-[#006837]" />, label: 'NEAREST RAILWAY STATION', text: 'Tiruppur Junction (~67 km from campus)' },
+    { icon: <Plane className="w-6 h-6 text-[#006837]" />, label: 'NEAREST AIRPORT', text: 'Coimbatore International Airport (Code: CJB) (~100 km)' },
     { icon: <MapPin className="w-6 h-6 text-[#006837]" />, label: 'CAMPUS ADDRESS', text: 'JKKN Institutions, Natarajapuram, NH-544, Komarapalayam (TK), Namakkal (DT), Tamil Nadu - 638183' },
   ];
 
@@ -77,8 +77,8 @@ export default function TiruppurPage() {
 
   const cities = [
     { icon: <Home className="w-6 h-6 text-[#006837]" />, name: 'Namakkal', dist: '5-10 km', href: '/namakkal/' },
-    { icon: <Bus className="w-6 h-6 text-[#006837]" />, name: 'Salem', dist: '40-50 km', href: '/salem/' },
-    { icon: <Route className="w-6 h-6 text-[#006837]" />, name: 'Erode', dist: '30-40 km', href: '/erode/' },
+    { icon: <Bus className="w-6 h-6 text-[#006837]" />, name: 'Salem', dist: '~58 km', href: '/salem/' },
+    { icon: <Route className="w-6 h-6 text-[#006837]" />, name: 'Erode', dist: '~22 km', href: '/erode/' },
     { icon: <Target className="w-6 h-6 text-[#006837]" />, name: 'Coimbatore', dist: '100-110 km', href: '/coimbatore/' },
   ];
 
@@ -131,7 +131,7 @@ export default function TiruppurPage() {
           {[
             { value: '90%+', label: 'PLACEMENTS' },
             { value: '8-10', label: 'LPA HIGHEST' },
-            { value: '85km', label: 'FROM TIRUPPUR' },
+            { value: '67km', label: 'FROM TIRUPPUR' },
             { value: '2', label: 'PROGRAMMES' },
           ].map((stat) => (
             <li key={stat.label} className="bg-white/10 backdrop-blur border border-white/20 rounded-2xl px-4 py-4 text-white">
@@ -166,11 +166,11 @@ export default function TiruppurPage() {
           <div className="bg-white rounded-2xl shadow-sm p-6 sm:p-8 flex flex-col sm:flex-row items-start sm:items-center gap-6 justify-between">
             <div className="flex items-start gap-5">
               <div className="text-[#006837] font-extrabold leading-none" style={{ fontSize: 'clamp(3rem, 6vw, 4rem)' }}>
-                85<span className="text-xl sm:text-2xl font-bold">km</span>
+                67<span className="text-xl sm:text-2xl font-bold">km</span>
               </div>
               <div>
                 <p className="font-bold text-gray-900 text-base sm:text-lg">From Tiruppur to JKKN Dental</p>
-                <p className="text-gray-500 text-sm mt-1">1.5-2 hours via State Highway to Erode, then NH-544 to Komarapalayam</p>
+                <p className="text-gray-500 text-sm mt-1">~1.5 hours via NH-544</p>
               </div>
             </div>
             <a
@@ -290,7 +290,7 @@ export default function TiruppurPage() {
               <MapPin className="w-6 h-6" />
               <div>
                 <p className="font-bold text-lg">Tiruppur → JKKN Dental Campus</p>
-                <p className="text-white/80 text-sm">80-90 km • 1.5-2 hours</p>
+                <p className="text-white/80 text-sm">~67 km • ~1.5 hours</p>
               </div>
             </div>
             <ul className="list-none p-0 m-0">
