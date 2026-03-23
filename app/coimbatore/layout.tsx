@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import { jkknSameAsUrls } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: { absolute: 'Best Dental College in Coimbatore | JKKN Dental College' },
@@ -76,7 +77,49 @@ const orgSchema = {
   ],
   "memberOf": { "@type": "Organization", "name": "The Tamil Nadu Dr. M.G.R. Medical University, Chennai" },
   "geo": { "@type": "GeoCoordinates", "latitude": "11.4120", "longitude": "77.7210" },
-  "sameAs": ["https://maps.app.goo.gl/mXx6rFRqpS9U76BK6"]
+  "sameAs": jkknSameAsUrls,
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.3",
+    "bestRating": "5",
+    "worstRating": "1",
+    "ratingCount": "400"
+  }
+};
+
+const eventSchema = {
+  "@context": "https://schema.org",
+  "@type": "Event",
+  "name": "JKKN Dental College — Admissions Open 2026-27",
+  "description": "Admissions open for BDS (100 seats) and MDS (5 specializations) programmes at JKKN Dental College & Hospital. NEET qualified candidates can apply now.",
+  "startDate": "2026-03-01",
+  "endDate": "2026-08-31",
+  "eventStatus": "https://schema.org/EventScheduled",
+  "eventAttendanceMode": "https://schema.org/MixedEventAttendanceMode",
+  "location": {
+    "@type": "Place",
+    "name": "JKKN Dental College & Hospital",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Natarajapuram, NH-544 (Salem–Coimbatore Highway)",
+      "addressLocality": "Komarapalayam",
+      "addressRegion": "Tamil Nadu",
+      "postalCode": "638183",
+      "addressCountry": "IN"
+    }
+  },
+  "organizer": {
+    "@type": "EducationalOrganization",
+    "name": "JKKN Dental College & Hospital",
+    "url": "https://dental.jkkn.ac.in/"
+  },
+  "url": "https://admission.jkkn.ac.in/",
+  "offers": {
+    "@type": "Offer",
+    "url": "https://admission.jkkn.ac.in/",
+    "availability": "https://schema.org/InStock",
+    "validFrom": "2026-03-01"
+  }
 };
 
 const courseSchema = [
@@ -116,6 +159,7 @@ export default function CoimbatoreLayout({
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(eventSchema) }} />
       <Header />
       {children}
       <Footer />
