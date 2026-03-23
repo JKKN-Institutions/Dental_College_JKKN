@@ -61,8 +61,8 @@ export default function ErodePage() {
   const transportRows = [
     { icon: <Route className="w-6 h-6 text-[#006837]" />, label: 'ROUTE', text: 'NH-544 — direct highway connectivity' },
     { icon: <Bus className="w-6 h-6 text-[#006837]" />, label: 'BY BUS', text: 'Regular government and private buses from Erode Central Bus Stand to Komarapalayam available throughout the day' },
-    { icon: <Train className="w-6 h-6 text-[#006837]" />, label: 'NEAREST RAILWAY STATION', text: 'Erode Junction (~35 km from campus)' },
-    { icon: <Plane className="w-6 h-6 text-[#006837]" />, label: 'NEAREST AIRPORT', text: 'Coimbatore International Airport (Code: CJB) (~80 km)' },
+    { icon: <Train className="w-6 h-6 text-[#006837]" />, label: 'NEAREST RAILWAY STATION', text: 'Erode Junction (~22 km from campus)' },
+    { icon: <Plane className="w-6 h-6 text-[#006837]" />, label: 'NEAREST AIRPORT', text: 'Coimbatore International Airport (Code: CJB) (~100 km)' },
     { icon: <MapPin className="w-6 h-6 text-[#006837]" />, label: 'CAMPUS ADDRESS', text: 'JKKN Institutions, Natarajapuram, NH-544, Komarapalayam (TK), Namakkal (DT), Tamil Nadu - 638183' },
   ];
 
