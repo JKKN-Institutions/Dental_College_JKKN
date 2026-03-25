@@ -88,10 +88,13 @@ data/content.ts → lib/metadata.ts → components/*.tsx → app/[route]/page.ts
 
 | Token | Value | Usage |
 |-------|-------|-------|
-| Primary (Dark Green) | `#1B5E20` | Headers, buttons, links |
-| Secondary (Gold) | `#FFC107` | Accents, highlights, CTAs |
-| Accent (Light Green) | `#8BC34A` | Badges, success states |
-| Cream | `#FBF8F3` | Background sections |
+| Primary Green (buttons) | `#7cb983` | Primary buttons, interactive elements |
+| Primary Green Hover | `#6ba872` | Hover state for primary buttons |
+| Dark Green (headings) | `#006837` | Text headings, primary dark accents |
+| Darkest Green (text) | `#002309` | Deep text/heading variant |
+| Background Cream | `#FBFBEE` | Page background sections |
+
+> **Brand rule:** Always use only the brand colors above. Do not introduce other colors.
 | Touch target minimum | 44px | All interactive elements |
 | Mobile breakpoint | 640px (sm) | `use-mobile.tsx` hook |
 
