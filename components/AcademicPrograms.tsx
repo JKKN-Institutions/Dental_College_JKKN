@@ -35,24 +35,24 @@ export default function AcademicPrograms() {
                 Our flagship undergraduate program provides comprehensive training in all aspects of dental science with extensive clinical exposure.
               </p>
 
-              <div className="space-y-3 mb-8">
-                <div className="flex items-start gap-3">
+              <ul className="space-y-3 mb-8 list-none p-0 m-0">
+                <li className="flex items-start gap-3">
                   <Check className="w-5 h-5 sm:w-6 sm:h-6 text-[#7cb983] flex-shrink-0" />
-                  <div className="text-gray-700 text-sm sm:text-base">Complete curriculum covering oral biology, pathology, surgery, and restorative dentistry</div>
-                </div>
-                <div className="flex items-start gap-3">
+                  <span className="text-gray-700 text-sm sm:text-base">Complete curriculum covering oral biology, pathology, surgery, and restorative dentistry</span>
+                </li>
+                <li className="flex items-start gap-3">
                   <Check className="w-5 h-5 sm:w-6 sm:h-6 text-[#7cb983] flex-shrink-0" />
-                  <div className="text-gray-700 text-sm sm:text-base">Hands-on clinical training from second year</div>
-                </div>
-                <div className="flex items-start gap-3">
+                  <span className="text-gray-700 text-sm sm:text-base">Hands-on clinical training from second year</span>
+                </li>
+                <li className="flex items-start gap-3">
                   <Check className="w-5 h-5 sm:w-6 sm:h-6 text-[#7cb983] flex-shrink-0" />
-                  <div className="text-gray-700 text-sm sm:text-base">Modern simulation labs for pre-clinical practice</div>
-                </div>
-                <div className="flex items-start gap-3">
+                  <span className="text-gray-700 text-sm sm:text-base">Modern simulation labs for pre-clinical practice</span>
+                </li>
+                <li className="flex items-start gap-3">
                   <Check className="w-5 h-5 sm:w-6 sm:h-6 text-[#7cb983] flex-shrink-0" />
-                  <div className="text-gray-700 text-sm sm:text-base">Community dentistry camps and rural exposure</div>
-                </div>
-              </div>
+                  <span className="text-gray-700 text-sm sm:text-base">Community dentistry camps and rural exposure</span>
+                </li>
+              </ul>
 
               <div className="border-t border-gray-200 pt-6">
                 <div className="mb-4">
@@ -86,24 +86,24 @@ export default function AcademicPrograms() {
                 Advance your dental career with specialized MDS programs offering advanced clinical training and research opportunities.
               </p>
 
-              <div className="space-y-3 mb-8">
-                <div className="flex items-start gap-3">
+              <ul className="space-y-3 mb-8 list-none p-0 m-0">
+                <li className="flex items-start gap-3">
                   <Check className="w-5 h-5 sm:w-6 sm:h-6 text-[#7cb983] flex-shrink-0" />
-                  <div className="text-gray-700 text-sm sm:text-base">5 specialized branches including Orthodontics, Oral Surgery, Prosthodontics</div>
-                </div>
-                <div className="flex items-start gap-3">
+                  <span className="text-gray-700 text-sm sm:text-base">5 specialized branches including Orthodontics, Oral Surgery, Prosthodontics</span>
+                </li>
+                <li className="flex items-start gap-3">
                   <Check className="w-5 h-5 sm:w-6 sm:h-6 text-[#7cb983] flex-shrink-0" />
-                  <div className="text-gray-700 text-sm sm:text-base">Research-oriented curriculum with publication support</div>
-                </div>
-                <div className="flex items-start gap-3">
+                  <span className="text-gray-700 text-sm sm:text-base">Research-oriented curriculum with publication support</span>
+                </li>
+                <li className="flex items-start gap-3">
                   <Check className="w-5 h-5 sm:w-6 sm:h-6 text-[#7cb983] flex-shrink-0" />
-                  <div className="text-gray-700 text-sm sm:text-base">Advanced CBCT and CAD/CAM systems</div>
-                </div>
-                <div className="flex items-start gap-3">
+                  <span className="text-gray-700 text-sm sm:text-base">Advanced CBCT and CAD/CAM systems</span>
+                </li>
+                <li className="flex items-start gap-3">
                   <Check className="w-5 h-5 sm:w-6 sm:h-6 text-[#7cb983] flex-shrink-0" />
-                  <div className="text-gray-700 text-sm sm:text-base">Conference presentations and international exposure</div>
-                </div>
-              </div>
+                  <span className="text-gray-700 text-sm sm:text-base">Conference presentations and international exposure</span>
+                </li>
+              </ul>
 
               <div className="border-t border-gray-200 pt-6">
                 <div className="mb-4">
@@ -123,7 +123,8 @@ export default function AcademicPrograms() {
 
         {/* BDS vs MDS Program Comparison Table */}
         <div className="mb-12 sm:mb-16 md:mb-20 overflow-x-auto">
-          <h2 className="text-xl sm:text-2xl font-bold text-[#006837] text-center mb-6">BDS vs MDS – Program Comparison</h2>
+          <h2 className="text-xl sm:text-2xl font-bold text-[#006837] text-center mb-4">BDS vs MDS – Program Comparison</h2>
+          <p className="text-gray-600 text-sm sm:text-base text-center mb-6 max-w-2xl mx-auto">BDS is a 5-year undergraduate dental program with 100 seats, while MDS is a 3-year postgraduate specialization with 18 seats across 5 branches at JKKN Dental College.</p>
           <table className="w-full border-collapse bg-white rounded-xl shadow-md overflow-hidden">
             <thead>
               <tr className="bg-[#006837] text-white">

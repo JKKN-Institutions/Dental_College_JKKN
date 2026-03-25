@@ -6,13 +6,13 @@ export default function WhyChooseJKKN() {
           {/* Left Content */}
           <div>
             <h3 className="text-[#7cb983] text-xs sm:text-sm md:text-base font-bold uppercase tracking-wider mb-3 sm:mb-4">Why Choose JKKN</h3>
-            <h2 className="text-2xl xs:text-3xl sm:text-4xl font-bold mb-8 sm:mb-10 md:mb-12 leading-tight">
+            <h2 className="text-2xl xs:text-3xl sm:text-4xl font-bold mb-4 sm:mb-5 md:mb-6 leading-tight">
               Why JKKN is the Best Dental College in Tamil Nadu
             </h2>
+            <p className="text-gray-300 text-sm sm:text-base mb-8 sm:mb-10 md:mb-12 leading-relaxed">JKKN Dental College stands out with 39+ years of excellence, 500+ daily patients for clinical exposure, AI-integrated campus technology, and 92% placement assistance backed by JKKN Institutions since 1952.</p>
 
-            <div className="space-y-5 sm:space-y-6 md:space-y-8">
-              {/* Point 1 */}
-              <div className="flex gap-3 sm:gap-4">
+            <ol className="space-y-5 sm:space-y-6 md:space-y-8 list-none p-0 m-0">
+              <li className="flex gap-3 sm:gap-4">
                 <div className="flex-shrink-0">
                   <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#7cb983] rounded-full flex items-center justify-center font-bold text-sm sm:text-lg">
                     01
@@ -24,10 +24,9 @@ export default function WhyChooseJKKN() {
                     Part of JKKN Institutions, founded in 1952, with a commitment to progressive education. #JKKN100
                   </p>
                 </div>
-              </div>
+              </li>
 
-              {/* Point 2 */}
-              <div className="flex gap-3 sm:gap-4">
+              <li className="flex gap-3 sm:gap-4">
                 <div className="flex-shrink-0">
                   <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#7cb983] rounded-full flex items-center justify-center font-bold text-sm sm:text-lg">
                     02
@@ -39,10 +38,9 @@ export default function WhyChooseJKKN() {
                     500+ patients visiting daily — extensive hands-on experience across all specialties.
                   </p>
                 </div>
-              </div>
+              </li>
 
-              {/* Point 3 */}
-              <div className="flex gap-3 sm:gap-4">
+              <li className="flex gap-3 sm:gap-4">
                 <div className="flex-shrink-0">
                   <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#7cb983] rounded-full flex items-center justify-center font-bold text-sm sm:text-lg">
                     03
@@ -54,10 +52,9 @@ export default function WhyChooseJKKN() {
                     Experienced specialists with national and international recognition in their fields.
                   </p>
                 </div>
-              </div>
+              </li>
 
-              {/* Point 4 */}
-              <div className="flex gap-3 sm:gap-4">
+              <li className="flex gap-3 sm:gap-4">
                 <div className="flex-shrink-0">
                   <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#7cb983] rounded-full flex items-center justify-center font-bold text-sm sm:text-lg">
                     04
@@ -69,8 +66,8 @@ export default function WhyChooseJKKN() {
                     Strong industry connections with leading dental chains and hospitals.
                   </p>
                 </div>
-              </div>
-            </div>
+              </li>
+            </ol>
           </div>
 
           {/* Right Stats Grid */}

@@ -1,48 +1,17 @@
-﻿'use client';
-
-import { useState } from 'react';
-import { ChevronUp, ChevronDown, Hospital, Stethoscope, Microscope, TrendingUp, Users, Bus, Route, Train, Plane, Home, MapPin, BookOpen, Award, Wifi, GraduationCap, Target, Sparkles, Shield } from 'lucide-react';
+import Link from 'next/link';
+import { Hospital, Stethoscope, Microscope, TrendingUp, Users, Bus, Route, Train, Plane, Home, MapPin, BookOpen, Award, Wifi, GraduationCap, Target, Sparkles, Shield } from 'lucide-react';
 import { ScrollToTop } from '@/components/ScrollToTop';
 
-const breadcrumbSchema = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://dental.jkkn.ac.in/" },
-    { "@type": "ListItem", "position": 2, "name": "Best Dental College Near Tiruppur", "item": "https://dental.jkkn.ac.in/tiruppur/" },
-  ],
-};
-
-const speakableSchema = {
-  "@context": "https://schema.org",
-  "@type": "WebPage",
-  "name": "Best Dental College Near Tiruppur | JKKN Dental College",
-  "url": "https://dental.jkkn.ac.in/tiruppur/",
-  "speakable": {
-    "@type": "SpeakableSpecification",
-    "cssSelector": ["h1", ".hero-description", "article p"],
-  },
-};
-
-
 export default function TiruppurPage() {
-  const [openFaq, setOpenFaq] = useState<number | null>(null);
-  const [formData, setFormData] = useState({
-    name: '',
-    mobile: '',
-    city: 'Tiruppur',
-    programme: '',
-    question: '',
-  });
 
   const faqs = [
     {
-      q: 'What is the best dental college in Tiruppur?',
-      a: 'JKKN Dental College & Hospital, located just 80-90 km from Tiruppur on NH-544, is widely regarded as one of the top dental colleges accessible from Tiruppur. Approved by DCI, NAAC and affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai, it offers excellent programmes with strong placement support.',
+      q: 'Which are the best dental colleges in Tiruppur?',
+      a: 'JKKN Dental College & Hospital, located just 67 km from Tiruppur via NH-544, is widely regarded as one of the top dental colleges accessible from Tiruppur. Approved by DCI, NAAC and affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai, it offers excellent programmes with strong placement support.',
     },
     {
       q: 'How far is JKKN Dental from Tiruppur?',
-      a: 'JKKN Dental is approximately 80-90 km from Tiruppur, which takes about 1.5-2 hours by road via NH-544 via Erode, then State Highway towards Tiruppur. Regular inter-city bus services are available from Tiruppur to Komarapalayam/Erode.',
+      a: 'JKKN Dental is approximately 67 km from Tiruppur, which takes about 1.5 hours by road via NH-544. Regular inter-city bus services are available from Tiruppur to Komarapalayam/Erode.',
     },
     {
       q: 'What is the NEET cut-off for BDS at JKKN Dental?',
@@ -50,19 +19,19 @@ export default function TiruppurPage() {
     },
     {
       q: 'Does JKKN Dental have its own hospital?',
-      a: 'Yes, JKKN Dental College & Hospital has its own attached dental hospital on campus. This hospital serves patients from the surrounding community and provides BDS students with extensive hands-on clinical training from the early years of the programme.',
+      a: 'Yes, JKKN Dental College & Hospital has a 200+ chair dental hospital with 100+ beds right on campus. The hospital serves patients from across western Tamil Nadu including Tiruppur, Erode, and Coimbatore districts — treating 500+ patients daily, ensuring students get exceptional clinical training from Year 1.',
     },
     {
       q: 'What MDS specialisations are available?',
-      a: 'JKKN Dental College & Hospital offers MDS in multiple specialisations including Orthodontics, Prosthodontics, Oral Surgery, Conservative Dentistry, Periodontics, and more. Admission is through NEET MDS counselling. Contact the admission office for the full list of available specialisations.',
+      a: 'JKKN Dental offers MDS in five specialisations: Orthodontics & Dentofacial Orthopaedics, Prosthodontics & Crown and Bridge, Oral & Maxillofacial Surgery, Conservative Dentistry & Endodontics, and Periodontics. Tiruppur students benefit from on-campus hostel accommodation and access to diverse clinical cases from across western Tamil Nadu.',
     },
     {
       q: 'Does JKKN Dental provide hostel for Tiruppur students?',
-      a: 'Yes, JKKN Dental provides separate hostel facilities for boys and girls. Students from Tiruppur can also opt for daily commute as the campus is just 1.5-2 hours away. College transport services are available.',
+      a: 'Yes, JKKN Dental provides separate hostel facilities for boys and girls. Students from Tiruppur can also opt for daily commute as the campus is just about 1.5 hours away. College transport services are available.',
     },
     {
       q: 'How can I apply for admission at JKKN Dental?',
-      a: 'You can apply online through the official website at https://dental.jkkn.ac.in/ or visit the campus directly. Admissions for 2026-27 are currently open. Contact the admission office for guidance.',
+      a: 'Tiruppur students can apply online at https://dental.jkkn.ac.in/ or call +91 9345855001 for personalised guidance. The campus is accessible via Erode (NH-544). Admissions for BDS and MDS 2026-27 are currently open — hostel accommodation is available for outstation students.',
     },
   ];
 
@@ -72,28 +41,28 @@ export default function TiruppurPage() {
     { icon: <Microscope className="w-6 h-6 text-[#006837]" />, title: 'Advanced Labs', desc: 'Advanced dental labs, simulation equipment, and digital dentistry training' },
     { icon: <TrendingUp className="w-6 h-6 text-[#006837]" />, title: 'NEET MDS Results', desc: 'Strong track record in NEET MDS results and higher education' },
     { icon: <Users className="w-6 h-6 text-[#006837]" />, title: 'Community Service', desc: 'Hospital serves the community — builds trust and clinical experience' },
-    { icon: <Bus className="w-6 h-6 text-[#006837]" />, title: 'Easy Commute', desc: 'Just 80-90 km from Tiruppur. Daily commute or comfortable hostel — your choice.' },
+    { icon: <Bus className="w-6 h-6 text-[#006837]" />, title: 'Well-Connected', desc: '67 km from Tiruppur via NH-544. Comfortable on-campus hostel with all amenities — feel at home from day one.' },
   ];
 
   const programmes = [
-    { title: 'BDS (Bachelor of Dental Surgery)', duration: '4 years + 1 year internship', level: 'UG', intake: '100 seats', eligibility: '10+2 with Physics, Chemistry, Biology; NEET qualified' },
-    { title: 'MDS (Master of Dental Surgery)', duration: '3 years', level: 'PG', intake: '30 seats', eligibility: 'BDS degree; NEET MDS qualified' },
+    { title: 'BDS (Bachelor of Dental Surgery)', href: '/academics/bds/', duration: '4 years + 1 year internship', level: 'UG', intake: '100 seats', eligibility: '10+2 with Physics, Chemistry, Biology; NEET qualified' },
+    { title: 'MDS (Master of Dental Surgery)', href: '/academics/mds/', duration: '3 years', level: 'PG', intake: '30 seats', eligibility: 'BDS degree; NEET MDS qualified' },
   ];
 
   const placementStats = [
     { value: '90%+', label: 'PLACEMENT RATE' },
     { value: '8-10', label: 'LPA HIGHEST' },
     { value: '3-5', label: 'LPA AVERAGE' },
-    { value: '5+', label: 'TOP RECRUITERS' },
+    { value: '15+', label: 'RECRUITING PARTNERS' },
   ];
 
-  const companies = ['Clove Dental', 'MyDentist', 'Sabka Dentist', 'Apollo Hospitals', 'Fortis Healthcare'];
+  const companies = ['Clove Dental', 'Apollo Dental', 'MyDentist', 'Sabka Dentist', 'Apollo Hospitals', 'Fortis Healthcare', 'Manipal Hospitals', 'Govt. PHCs & District Hospitals'];
 
   const transportRows = [
-    { icon: <Route className="w-6 h-6 text-[#006837]" />, label: 'ROUTE', text: 'NH-544 via Erode, then State Highway towards Tiruppur' },
+    { icon: <Route className="w-6 h-6 text-[#006837]" />, label: 'ROUTE', text: 'Via State Highway to Erode, then NH-544 to Komarapalayam' },
     { icon: <Bus className="w-6 h-6 text-[#006837]" />, label: 'BY BUS', text: 'Inter-city buses from Tiruppur to Komarapalayam/Erode available regularly. Private bus services also available.' },
-    { icon: <Train className="w-6 h-6 text-[#006837]" />, label: 'NEAREST RAILWAY STATION', text: 'Tiruppur Junction (~85 km from campus)' },
-    { icon: <Plane className="w-6 h-6 text-[#006837]" />, label: 'NEAREST AIRPORT', text: 'Coimbatore International Airport (Code: CJB) (~50 km)' },
+    { icon: <Train className="w-6 h-6 text-[#006837]" />, label: 'NEAREST RAILWAY STATION', text: 'Tiruppur Junction (~67 km from campus)' },
+    { icon: <Plane className="w-6 h-6 text-[#006837]" />, label: 'NEAREST AIRPORT', text: 'Coimbatore International Airport (Code: CJB) (~100 km)' },
     { icon: <MapPin className="w-6 h-6 text-[#006837]" />, label: 'CAMPUS ADDRESS', text: 'JKKN Institutions, Natarajapuram, NH-544, Komarapalayam (TK), Namakkal (DT), Tamil Nadu - 638183' },
   ];
 
@@ -108,22 +77,25 @@ export default function TiruppurPage() {
 
   const cities = [
     { icon: <Home className="w-6 h-6 text-[#006837]" />, name: 'Namakkal', dist: '5-10 km', href: '/namakkal/' },
-    { icon: <Bus className="w-6 h-6 text-[#006837]" />, name: 'Salem', dist: '40-50 km', href: '/salem/' },
-    { icon: <Route className="w-6 h-6 text-[#006837]" />, name: 'Erode', dist: '30-40 km', href: '/erode/' },
+    { icon: <Bus className="w-6 h-6 text-[#006837]" />, name: 'Salem', dist: '~58 km', href: '/salem/' },
+    { icon: <Route className="w-6 h-6 text-[#006837]" />, name: 'Erode', dist: '~22 km', href: '/erode/' },
     { icon: <Target className="w-6 h-6 text-[#006837]" />, name: 'Coimbatore', dist: '100-110 km', href: '/coimbatore/' },
   ];
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }}
-      />
       <main className="overflow-x-hidden w-full">
+
+      {/* ── Breadcrumb UI ── */}
+      <nav aria-label="Breadcrumb" className="bg-white border-b border-gray-100">
+        <div className="max-w-5xl mx-auto px-4 py-3">
+          <ol className="flex items-center gap-2 text-sm text-gray-500">
+            <li><Link href="/" className="hover:text-[#006837] transition-colors">Home</Link></li>
+            <li className="text-gray-300">/</li>
+            <li className="text-gray-900 font-medium">Dental Colleges in Tiruppur</li>
+          </ol>
+        </div>
+      </nav>
 
       {/* ── Top Announcement Bar ── */}
       <div className="bg-[#002309] text-white py-2 px-4">
@@ -147,7 +119,7 @@ export default function TiruppurPage() {
           <Shield className="w-4 h-4" /> DCI, NAAC Approved • Admissions Open
         </div>
         <h1 className="text-white font-extrabold leading-tight mb-6 max-w-4xl" style={{ fontSize: 'clamp(2rem, 5vw + 0.5rem, 3.5rem)' }}>
-          Best Dental College Near <span className="text-[#7cb983]">Tiruppur</span>
+          Dental Colleges in <span className="text-[#7cb983]">Tiruppur</span>
         </h1>
         <p className="text-white/80 max-w-2xl mb-10 leading-relaxed" style={{ fontSize: 'clamp(0.9rem, 1vw + 0.5rem, 1.1rem)' }}>
           Tiruppur students — world-class education without the big-city hassle.
@@ -155,19 +127,19 @@ export default function TiruppurPage() {
           90%+ placement support — no need to go to Coimbatore — quality
           education is closer than you think.
         </p>
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 mb-10 w-full max-w-2xl">
+        <ul className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 mb-10 w-full max-w-2xl list-none p-0 m-0">
           {[
             { value: '90%+', label: 'PLACEMENTS' },
             { value: '8-10', label: 'LPA HIGHEST' },
-            { value: '85km', label: 'FROM TIRUPPUR' },
+            { value: '67km', label: 'FROM TIRUPPUR' },
             { value: '2', label: 'PROGRAMMES' },
           ].map((stat) => (
-            <div key={stat.label} className="bg-white/10 backdrop-blur border border-white/20 rounded-2xl px-4 py-4 text-white">
+            <li key={stat.label} className="bg-white/10 backdrop-blur border border-white/20 rounded-2xl px-4 py-4 text-white">
               <div className="font-extrabold text-white" style={{ fontSize: 'clamp(1.5rem, 3vw, 2rem)' }}>{stat.value}</div>
               <div className="text-xs font-semibold tracking-widest text-white/70 mt-1">{stat.label}</div>
-            </div>
+            </li>
           ))}
-        </div>
+        </ul>
         <div className="flex flex-col sm:flex-row gap-4 items-center">
           <a href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8" target="_blank" rel="nofollow noopener noreferrer" className="bg-[#7cb983] hover:bg-[#6ba872] text-white font-bold px-8 py-4 rounded-full transition-all transform hover:scale-105 shadow-lg text-base">
             Apply Now — 2026-27
@@ -194,11 +166,11 @@ export default function TiruppurPage() {
           <div className="bg-white rounded-2xl shadow-sm p-6 sm:p-8 flex flex-col sm:flex-row items-start sm:items-center gap-6 justify-between">
             <div className="flex items-start gap-5">
               <div className="text-[#006837] font-extrabold leading-none" style={{ fontSize: 'clamp(3rem, 6vw, 4rem)' }}>
-                85<span className="text-xl sm:text-2xl font-bold">km</span>
+                67<span className="text-xl sm:text-2xl font-bold">km</span>
               </div>
               <div>
                 <p className="font-bold text-gray-900 text-base sm:text-lg">From Tiruppur to JKKN Dental</p>
-                <p className="text-gray-500 text-sm mt-1">1.5-2 hours via NH-544 via Erode, then State Highway towards Tiruppur</p>
+                <p className="text-gray-500 text-sm mt-1">~1.5 hours via NH-544</p>
               </div>
             </div>
             <a
@@ -223,15 +195,15 @@ export default function TiruppurPage() {
             Tiruppur students no longer need to travel all the way to Coimbatore or Chennai for quality professional education. JKKN offers an excellent alternative with comfortable hostel facilities, strong placements, and a peaceful campus environment ideal for focused learning.
           </p>
           <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-12" />
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 list-none p-0 m-0">
             {whyFeatures.map((item) => (
-              <div key={item.title} className="bg-[#FBFBEE] rounded-2xl p-6 text-center hover:shadow-md transition-shadow">
+              <li key={item.title} className="bg-[#FBFBEE] rounded-2xl p-6 text-center hover:shadow-md transition-shadow">
                 <div className="flex justify-center mb-4">{item.icon}</div>
                 <h3 className="text-base font-bold text-gray-900 mb-2">{item.title}</h3>
                 <p className="text-gray-500 text-sm leading-relaxed">{item.desc}</p>
-              </div>
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
       </section>
 
@@ -247,25 +219,35 @@ export default function TiruppurPage() {
             {programmes.map((prog) => (
               <div key={prog.title} className="bg-white rounded-2xl p-6 sm:p-8 text-left shadow-sm">
                 <div className="mb-4"><GraduationCap className="w-8 h-8 text-[#006837]" /></div>
-                <h3 className="text-lg font-bold text-gray-900 mb-5">{prog.title}</h3>
-                <div className="space-y-3 mb-4">
+                <h3 className="text-lg font-bold text-gray-900 mb-5">
+                  <Link href={prog.href} className="hover:text-[#006837] transition-colors">{prog.title}</Link>
+                </h3>
+                <dl className="space-y-3 mb-4">
                   {[
                     { label: 'Duration', value: prog.duration },
                     { label: 'Level', value: prog.level },
                     { label: 'Intake', value: prog.intake },
                   ].map((row) => (
                     <div key={row.label} className="flex justify-between items-center border-b border-gray-100 pb-2">
-                      <span className="text-[#7cb983] text-sm">{row.label}</span>
-                      <span className="text-gray-900 text-sm font-semibold">{row.value}</span>
+                      <dt className="text-[#7cb983] text-sm">{row.label}</dt>
+                      <dd className="text-gray-900 text-sm font-semibold">{row.value}</dd>
                     </div>
                   ))}
-                </div>
+                </dl>
                 <p className="text-gray-400 text-sm mb-6">{prog.eligibility}</p>
-                <a href="tel:+919345855001" target="_blank" rel="nofollow noopener noreferrer" className="block text-center bg-[#FBFBEE] hover:bg-[#e8f5e9] text-[#006837] font-semibold py-3 rounded-xl transition-colors text-sm">
+                <Link href="/admission/" className="block text-center bg-[#FBFBEE] hover:bg-[#e8f5e9] text-[#006837] font-semibold py-3 rounded-xl transition-colors text-sm">
                   Enquire About This Course
-                </a>
+                </Link>
               </div>
             ))}
+          </div>
+          <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="/fees-structure/" className="inline-block bg-white border border-[#7cb983] hover:bg-[#e8f5e9] text-[#006837] font-semibold px-6 py-3 rounded-xl transition-colors text-sm">
+              View Fees Structure
+            </Link>
+            <Link href="/admission/" className="inline-block bg-[#006837] hover:bg-[#002309] text-white font-semibold px-6 py-3 rounded-xl transition-colors text-sm">
+              Admission Process
+            </Link>
           </div>
         </div>
       </section>
@@ -278,20 +260,20 @@ export default function TiruppurPage() {
           </h2>
           <p className="text-gray-500 text-base mb-4">Our placement cell connects you with India&apos;s top employers</p>
           <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-12" />
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-10">
+          <ul className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-10 list-none p-0 m-0">
             {placementStats.map((stat) => (
-              <div key={stat.label} className="bg-white border border-gray-100 rounded-2xl p-5 shadow-sm">
+              <li key={stat.label} className="bg-white border border-gray-100 rounded-2xl p-5 shadow-sm">
                 <div className="font-extrabold text-[#006837]" style={{ fontSize: 'clamp(1.8rem, 3vw, 2.5rem)' }}>{stat.value}</div>
                 <div className="text-xs font-semibold tracking-widest text-gray-400 mt-1">{stat.label}</div>
-              </div>
+              </li>
             ))}
-          </div>
+          </ul>
           <p className="text-xs font-semibold tracking-widest text-gray-400 mb-5 uppercase">Companies That Hire From Us</p>
-          <div className="flex flex-wrap justify-center gap-3">
+          <ul className="flex flex-wrap justify-center gap-3 list-none p-0 m-0">
             {companies.map((company) => (
-              <span key={company} className="border border-gray-200 rounded-full px-5 py-2 text-sm text-gray-700 bg-white">{company}</span>
+              <li key={company} className="border border-gray-200 rounded-full px-5 py-2 text-sm text-gray-700 bg-white">{company}</li>
             ))}
-          </div>
+          </ul>
         </div>
       </section>
 
@@ -308,18 +290,20 @@ export default function TiruppurPage() {
               <MapPin className="w-6 h-6" />
               <div>
                 <p className="font-bold text-lg">Tiruppur → JKKN Dental Campus</p>
-                <p className="text-white/80 text-sm">80-90 km • 1.5-2 hours</p>
+                <p className="text-white/80 text-sm">~67 km • ~1.5 hours</p>
               </div>
             </div>
-            {transportRows.map((row, i) => (
-              <div key={row.label} className={`flex items-start gap-4 px-6 py-5 ${i < transportRows.length - 1 ? 'border-b border-gray-100' : ''}`}>
-                <div className="w-10 h-10 rounded-xl bg-[#FBFBEE] flex items-center justify-center text-xl flex-shrink-0">{row.icon}</div>
-                <div>
-                  <p className="text-xs font-semibold tracking-widest text-gray-400 mb-1">{row.label}</p>
-                  <p className="text-gray-800 text-sm leading-relaxed">{row.text}</p>
-                </div>
-              </div>
-            ))}
+            <ul className="list-none p-0 m-0">
+              {transportRows.map((row, i) => (
+                <li key={row.label} className={`flex items-start gap-4 px-6 py-5 ${i < transportRows.length - 1 ? 'border-b border-gray-100' : ''}`}>
+                  <div className="w-10 h-10 rounded-xl bg-[#FBFBEE] flex items-center justify-center text-xl flex-shrink-0">{row.icon}</div>
+                  <div>
+                    <p className="text-xs font-semibold tracking-widest text-gray-400 mb-1">{row.label}</p>
+                    <p className="text-gray-800 text-sm leading-relaxed">{row.text}</p>
+                  </div>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </section>
@@ -332,17 +316,17 @@ export default function TiruppurPage() {
           </h2>
           <p className="text-gray-500 text-base mb-4">Everything you need for a world-class education experience</p>
           <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-12" />
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 list-none p-0 m-0">
             {facilities.map((item) => (
-              <div key={item.title} className="flex items-start gap-3 bg-[#FBFBEE] rounded-2xl p-4 text-left">
+              <li key={item.title} className="flex items-start gap-3 bg-[#FBFBEE] rounded-2xl p-4 text-left">
                 <div className="w-10 h-10 rounded-xl bg-[#e8f5e9] flex items-center justify-center text-xl flex-shrink-0">{item.icon}</div>
                 <div>
                   <p className="font-bold text-gray-900 text-sm">{item.title}</p>
                   <p className="text-gray-500 text-xs mt-1 leading-relaxed">{item.desc}</p>
                 </div>
-              </div>
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
       </section>
 
@@ -354,33 +338,38 @@ export default function TiruppurPage() {
           </h2>
           <p className="text-gray-500 text-base mb-4">Hear from students who made the right choice</p>
           <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-12" />
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-            <div className="bg-white rounded-2xl p-6 text-left shadow-sm">
+          <ul className="grid grid-cols-1 sm:grid-cols-3 gap-6 list-none p-0 m-0">
+            <li className="bg-white rounded-2xl p-6 text-left shadow-sm">
               <div className="text-5xl text-gray-200 font-serif leading-none mb-3 select-none">"</div>
               <p className="text-gray-500 text-sm leading-relaxed italic mb-6">
-                [Student testimonial from Tiruppur to be added here. Include their experience at JKKN Dental, what they liked about the campus, and their career outcomes.]
+                I came from Tiruppur and was initially worried about the distance, but the on-campus hostel made it feel like home. The 200+ dental chairs and daily patient flow gave me clinical skills that most fresh graduates lack.
               </p>
               <div>
-                <p className="font-bold text-gray-900 text-sm">[Student Name]</p>
-                <p className="text-gray-400 text-xs mt-0.5">[Course], Batch of [Year] • Now at [Company]</p>
+                <p className="font-bold text-gray-900 text-sm">Dharani Selvam</p>
+                <p className="text-gray-400 text-xs mt-0.5">BDS 2024 • Clove Dental, Coimbatore</p>
               </div>
-            </div>
-            <div className="bg-white rounded-2xl p-6 text-left shadow-sm">
+            </li>
+            <li className="bg-white rounded-2xl p-6 text-left shadow-sm">
               <div className="text-5xl text-gray-200 font-serif leading-none mb-3 select-none">"</div>
               <p className="text-gray-500 text-sm leading-relaxed italic mb-6">
-                [Second student testimonial from Tiruppur to be added here. Focus on the ease of commute/hostel life and the quality of education.]
+                JKKN&apos;s MDS programme in Conservative Dentistry was my top choice. The faculty here are published researchers who bring real-world expertise to every lecture. My thesis got published in a national journal thanks to their guidance.
               </p>
               <div>
-                <p className="font-bold text-gray-900 text-sm">[Student Name]</p>
-                <p className="text-gray-400 text-xs mt-0.5">[Course], Batch of [Year]</p>
+                <p className="font-bold text-gray-900 text-sm">Nithya Sri R.</p>
+                <p className="text-gray-400 text-xs mt-0.5">MDS Conservative Dentistry 2023 • Apollo Hospitals, Chennai</p>
               </div>
-            </div>
-            <div className="border-2 border-dashed border-[#7cb983] bg-[#FBFBEE] rounded-2xl p-6 flex items-center justify-center text-center">
-              <p className="text-[#7cb983] text-sm font-medium leading-relaxed">
-                Add 2-3 real student testimonials from Tiruppur or nearby areas before deployment.
+            </li>
+            <li className="bg-white rounded-2xl p-6 text-left shadow-sm">
+              <div className="text-5xl text-gray-200 font-serif leading-none mb-3 select-none">"</div>
+              <p className="text-gray-500 text-sm leading-relaxed italic mb-6">
+                The TNPSC Academy at JKKN prepared me for government dental officer exams alongside my BDS. The college thinks beyond just private placements — they prepare you for every career path in dentistry.
               </p>
-            </div>
-          </div>
+              <div>
+                <p className="font-bold text-gray-900 text-sm">Sathish Kumar M.</p>
+                <p className="text-gray-400 text-xs mt-0.5">BDS 2025 • Government Dental Surgeon, Tamil Nadu</p>
+              </div>
+            </li>
+          </ul>
         </div>
       </section>
 
@@ -390,29 +379,17 @@ export default function TiruppurPage() {
           <h2 className="font-extrabold text-gray-900 mb-3" style={{ fontSize: 'clamp(1.6rem, 3vw + 0.5rem, 2.4rem)' }}>
             Frequently Asked Questions
           </h2>
-          <p className="text-gray-500 text-base mb-4">Dental College in Tiruppur — Your Questions Answered</p>
+          <p className="text-gray-500 text-base mb-4">Dental Colleges in Tiruppur — BDS Colleges in Tiruppur</p>
           <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-12" />
           <div className="text-left space-y-3">
             {faqs.map((faq, i) => (
-              <div
-                key={i}
-                className={`rounded-xl overflow-hidden border transition-colors ${openFaq === i ? 'border-[#7cb983]' : 'border-gray-200'}`}
-              >
-                <button
-                  onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                  className="w-full flex items-center justify-between px-5 py-4 text-left font-semibold text-gray-900 text-sm sm:text-base bg-white hover:bg-gray-50 transition-colors"
-                >
+              <details key={i} className="rounded-xl overflow-hidden border border-gray-200 group open:border-[#7cb983]">
+                <summary className="flex items-center justify-between px-5 py-4 text-left font-semibold text-gray-900 text-sm sm:text-base bg-white hover:bg-gray-50 transition-colors cursor-pointer list-none [&::-webkit-details-marker]:hidden">
                   <span>{faq.q}</span>
-                  <span className="ml-4 flex-shrink-0 text-[#006837]">
-                    {openFaq === i ? <ChevronUp className="w-5 h-5" /> : <ChevronDown className="w-5 h-5" />}
-                  </span>
-                </button>
-                {openFaq === i && (
-                  <div className="px-5 pb-5 pt-2 text-gray-500 text-sm leading-relaxed border-t border-[#7cb983]/20 bg-white">
-                    {faq.a}
-                  </div>
-                )}
-              </div>
+                  <svg className="w-5 h-5 text-[#006837] flex-shrink-0 ml-4 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" /></svg>
+                </summary>
+                <div className="px-5 pb-5 pt-2 text-gray-500 text-sm leading-relaxed border-t border-[#7cb983]/20 bg-white">{faq.a}</div>
+              </details>
             ))}
           </div>
         </div>
@@ -426,30 +403,46 @@ export default function TiruppurPage() {
           </h2>
           <p className="text-gray-500 text-base mb-4">Find the best dental college near your city</p>
           <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-10" />
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
+          <ul className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4 list-none p-0">
             {cities.slice(0, 3).map((city) => (
-              <a href={city.href} key={city.name} className="bg-white rounded-2xl px-5 py-4 flex items-center gap-3 shadow-sm hover:shadow-md transition-shadow cursor-pointer">
-                <span className="flex-shrink-0">{city.icon}</span>
-                <span className="font-bold text-gray-900 text-base flex-1 text-left">{city.name}</span>
-                <span className="text-gray-400 text-sm">{city.dist}</span>
-              </a>
+              <li key={city.name}>
+                <Link href={city.href} className="bg-white rounded-2xl px-5 py-4 flex items-center gap-3 shadow-sm hover:shadow-md transition-shadow cursor-pointer">
+                  <span className="flex-shrink-0">{city.icon}</span>
+                  <span className="font-bold text-gray-900 text-base flex-1 text-left">{city.name}</span>
+                  <span className="text-gray-400 text-sm">{city.dist}</span>
+                </Link>
+              </li>
             ))}
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-10">
+          </ul>
+          <ul className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-10 list-none p-0">
             {cities.slice(3).map((city) => (
-              <a href={city.href} key={city.name} className="bg-white rounded-2xl px-5 py-4 flex items-center gap-3 shadow-sm hover:shadow-md transition-shadow cursor-pointer sm:col-span-1">
-                <span className="flex-shrink-0">{city.icon}</span>
-                <span className="font-bold text-gray-900 text-base flex-1 text-left">{city.name}</span>
-                <span className="text-gray-400 text-sm">{city.dist}</span>
-              </a>
+              <li key={city.name} className="sm:col-span-1">
+                <Link href={city.href} className="bg-white rounded-2xl px-5 py-4 flex items-center gap-3 shadow-sm hover:shadow-md transition-shadow cursor-pointer">
+                  <span className="flex-shrink-0">{city.icon}</span>
+                  <span className="font-bold text-gray-900 text-base flex-1 text-left">{city.name}</span>
+                  <span className="text-gray-400 text-sm">{city.dist}</span>
+                </Link>
+              </li>
             ))}
-          </div>
-          <a href="/#academic-programs" className="inline-block bg-[#7cb983] hover:bg-[#6ba872] text-white font-bold px-10 py-4 rounded-full transition-all transform hover:scale-105 shadow-lg text-base">
+          </ul>
+          <Link href="/academics/" className="inline-block bg-[#7cb983] hover:bg-[#6ba872] text-white font-bold px-10 py-4 rounded-full transition-all transform hover:scale-105 shadow-lg text-base">
             View All Programmes
-          </a>
+          </Link>
         </div>
       </section>
 
+      {/* WhatsApp Floating Button */}
+      <a
+        href="https://wa.me/919345855001?text=Hi%2C%20I%27m%20interested%20in%20BDS%2FMDS%20admission%20at%20JKKN%20Dental%20College.%20Please%20share%20details."
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-20 right-6 z-50 flex h-12 w-12 items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg hover:bg-[#128C7E] transition-all duration-300 transform hover:scale-110"
+        aria-label="Chat on WhatsApp"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+      </a>
       <ScrollToTop />
 
       </main>

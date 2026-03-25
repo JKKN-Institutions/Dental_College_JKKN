@@ -18,47 +18,47 @@ export default function AdmissionsSection() {
             {/* BDS Eligibility */}
             <div className="bg-blue-50 rounded-xl sm:rounded-2xl p-4 sm:p-5 md:p-6 mb-4 sm:mb-6">
               <h4 className="text-lg sm:text-xl font-bold text-[#006837] mb-3 sm:mb-4">BDS Eligibility</h4>
-              <div className="space-y-2 sm:space-y-3">
-                <div className="flex items-start gap-2 sm:gap-3">
+              <ul className="space-y-2 sm:space-y-3 list-none p-0 m-0">
+                <li className="flex items-start gap-2 sm:gap-3">
                   <Check className="w-5 h-5 sm:w-6 sm:h-6 text-[#7cb983] flex-shrink-0" />
-                  <div className="text-gray-700 text-sm sm:text-base">10+2 with Physics, Chemistry, Biology</div>
-                </div>
-                <div className="flex items-start gap-2 sm:gap-3">
+                  <span className="text-gray-700 text-sm sm:text-base">10+2 with Physics, Chemistry, Biology</span>
+                </li>
+                <li className="flex items-start gap-2 sm:gap-3">
                   <Check className="w-5 h-5 sm:w-6 sm:h-6 text-[#7cb983] flex-shrink-0" />
-                  <div className="text-gray-700 text-sm sm:text-base">Minimum 50% marks (40% reserved)</div>
-                </div>
-                <div className="flex items-start gap-2 sm:gap-3">
+                  <span className="text-gray-700 text-sm sm:text-base">Minimum 50% marks (40% reserved)</span>
+                </li>
+                <li className="flex items-start gap-2 sm:gap-3">
                   <Check className="w-5 h-5 sm:w-6 sm:h-6 text-[#7cb983] flex-shrink-0" />
-                  <div className="text-gray-700 text-sm sm:text-base">Valid NEET-UG score</div>
-                </div>
-                <div className="flex items-start gap-2 sm:gap-3">
+                  <span className="text-gray-700 text-sm sm:text-base">Valid NEET-UG score</span>
+                </li>
+                <li className="flex items-start gap-2 sm:gap-3">
                   <Check className="w-5 h-5 sm:w-6 sm:h-6 text-[#7cb983] flex-shrink-0" />
-                  <div className="text-gray-700 text-sm sm:text-base">Age: 17 years by Dec 31</div>
-                </div>
-              </div>
+                  <span className="text-gray-700 text-sm sm:text-base">Age: 17 years by Dec 31</span>
+                </li>
+              </ul>
             </div>
 
             {/* MDS Eligibility */}
             <div className="bg-blue-50 rounded-xl sm:rounded-2xl p-4 sm:p-5 md:p-6 mb-6 sm:mb-8">
               <h4 className="text-lg sm:text-xl font-bold text-[#006837] mb-3 sm:mb-4">MDS Eligibility</h4>
-              <div className="space-y-2 sm:space-y-3">
-                <div className="flex items-start gap-2 sm:gap-3">
+              <ul className="space-y-2 sm:space-y-3 list-none p-0 m-0">
+                <li className="flex items-start gap-2 sm:gap-3">
                   <Check className="w-5 h-5 sm:w-6 sm:h-6 text-[#7cb983] flex-shrink-0" />
-                  <div className="text-gray-700 text-sm sm:text-base">BDS from DCI-recognized institution</div>
-                </div>
-                <div className="flex items-start gap-2 sm:gap-3">
+                  <span className="text-gray-700 text-sm sm:text-base">BDS from DCI-recognized institution</span>
+                </li>
+                <li className="flex items-start gap-2 sm:gap-3">
                   <Check className="w-5 h-5 sm:w-6 sm:h-6 text-[#7cb983] flex-shrink-0" />
-                  <div className="text-gray-700 text-sm sm:text-base">Completed rotating internship</div>
-                </div>
-                <div className="flex items-start gap-2 sm:gap-3">
+                  <span className="text-gray-700 text-sm sm:text-base">Completed rotating internship</span>
+                </li>
+                <li className="flex items-start gap-2 sm:gap-3">
                   <Check className="w-5 h-5 sm:w-6 sm:h-6 text-[#7cb983] flex-shrink-0" />
-                  <div className="text-gray-700 text-sm sm:text-base">Valid NEET-MDS score</div>
-                </div>
-                <div className="flex items-start gap-2 sm:gap-3">
+                  <span className="text-gray-700 text-sm sm:text-base">Valid NEET-MDS score</span>
+                </li>
+                <li className="flex items-start gap-2 sm:gap-3">
                   <Check className="w-5 h-5 sm:w-6 sm:h-6 text-[#7cb983] flex-shrink-0" />
-                  <div className="text-gray-700 text-sm sm:text-base">State Dental Council registration</div>
-                </div>
-              </div>
+                  <span className="text-gray-700 text-sm sm:text-base">State Dental Council registration</span>
+                </li>
+              </ul>
             </div>
 
             {/* Eligibility Comparison Table */}
@@ -121,9 +121,8 @@ export default function AdmissionsSection() {
             <div className="bg-white rounded-xl sm:rounded-2xl p-5 sm:p-6 md:p-8 shadow-lg">
               <h3 className="text-xl sm:text-2xl font-bold text-[#006837] mb-6 sm:mb-8">Admission Process</h3>
 
-              <div className="space-y-4 sm:space-y-5 md:space-y-6">
-                {/* Step 1 */}
-                <div className="flex gap-3 sm:gap-4">
+              <ol className="space-y-4 sm:space-y-5 md:space-y-6 list-none p-0 m-0">
+                <li className="flex gap-3 sm:gap-4">
                   <div className="flex-shrink-0">
                     <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#7cb983] rounded-full flex items-center justify-center font-bold text-white text-sm sm:text-base">
                       1
@@ -133,10 +132,9 @@ export default function AdmissionsSection() {
                     <h4 className="text-base sm:text-lg font-bold text-[#006837] mb-0.5 sm:mb-1">Check Eligibility</h4>
                     <p className="text-xs sm:text-sm text-gray-600">Verify academic and NEET requirements</p>
                   </div>
-                </div>
+                </li>
 
-                {/* Step 2 */}
-                <div className="flex gap-3 sm:gap-4">
+                <li className="flex gap-3 sm:gap-4">
                   <div className="flex-shrink-0">
                     <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#7cb983] rounded-full flex items-center justify-center font-bold text-white text-sm sm:text-base">
                       2
@@ -146,10 +144,9 @@ export default function AdmissionsSection() {
                     <h4 className="text-base sm:text-lg font-bold text-[#006837] mb-0.5 sm:mb-1">Register for Counseling</h4>
                     <p className="text-xs sm:text-sm text-gray-600">TN State or All India Quota</p>
                   </div>
-                </div>
+                </li>
 
-                {/* Step 3 */}
-                <div className="flex gap-3 sm:gap-4">
+                <li className="flex gap-3 sm:gap-4">
                   <div className="flex-shrink-0">
                     <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#7cb983] rounded-full flex items-center justify-center font-bold text-white text-sm sm:text-base">
                       3
@@ -159,10 +156,9 @@ export default function AdmissionsSection() {
                     <h4 className="text-base sm:text-lg font-bold text-[#006837] mb-0.5 sm:mb-1">Participate in Counseling</h4>
                     <p className="text-xs sm:text-sm text-gray-600">Select JKKN during choice-filling</p>
                   </div>
-                </div>
+                </li>
 
-                {/* Step 4 */}
-                <div className="flex gap-3 sm:gap-4">
+                <li className="flex gap-3 sm:gap-4">
                   <div className="flex-shrink-0">
                     <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#7cb983] rounded-full flex items-center justify-center font-bold text-white text-sm sm:text-base">
                       4
@@ -172,10 +168,9 @@ export default function AdmissionsSection() {
                     <h4 className="text-base sm:text-lg font-bold text-[#006837] mb-0.5 sm:mb-1">Document Verification</h4>
                     <p className="text-xs sm:text-sm text-gray-600">Complete verification at our office</p>
                   </div>
-                </div>
+                </li>
 
-                {/* Step 5 */}
-                <div className="flex gap-3 sm:gap-4">
+                <li className="flex gap-3 sm:gap-4">
                   <div className="flex-shrink-0">
                     <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#7cb983] rounded-full flex items-center justify-center font-bold text-white text-sm sm:text-base">
                       5
@@ -185,8 +180,8 @@ export default function AdmissionsSection() {
                     <h4 className="text-base sm:text-lg font-bold text-[#006837] mb-0.5 sm:mb-1">Fee Payment & Enrollment</h4>
                     <p className="text-xs sm:text-sm text-gray-600">Pay fees and secure your seat</p>
                   </div>
-                </div>
-              </div>
+                </li>
+              </ol>
             </div>
           </div>
         </div>

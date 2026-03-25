@@ -8,7 +8,7 @@ export default function FAQSection() {
   const faqs = [
     {
       question: "What courses are offered at JKKN Dental College & Hospital?",
-      answer: "JKKN Dental College & Hospital offers BDS (Bachelor of Dental Surgery) - a 5-year undergraduate program with comprehensive training across 9 departments including Oral Surgery, Orthodontics, Periodontics, Prosthodontics, Conservative Dentistry, Pedodontics, Oral Medicine, Oral Pathology, and Public Health Dentistry. We also offer MDS (Master of Dental Surgery) postgraduate programs in 5 specializations: Conservative Dentistry & Endodontics, Prosthodontics, Periodontics, Oral Medicine & Radiology, and Orthodontics & Dentofacial Orthopedics."
+      answer: "JKKN Dental College offers BDS (5-year undergraduate) with training across 9 departments and MDS (3-year postgraduate) in 5 specializations: Conservative Dentistry & Endodontics, Prosthodontics, Periodontics, Oral Medicine & Radiology, and Orthodontics."
     },
     {
       question: "Is JKKN Dental College & Hospital DCI approved?",
@@ -28,15 +28,27 @@ export default function FAQSection() {
     },
     {
       question: "What makes JKKN different from other dental colleges?",
-      answer: "JKKN stands out as India's 1st Human-AI AGI Dental Campus, integrating advanced AI tools like ChatGPT, AI-powered diagnostic imaging, and CAD/CAM technology into dental education. Established in 1987 as part of JKKN Institutions (since 1952), with exceptional clinical exposure (500+ daily patients), state-of-the-art infrastructure, and comprehensive placement support, JKKN prepares future-ready dental professionals with expertise in both clinical excellence and AI technology."
+      answer: "JKKN is India's first AI-integrated dental campus with 500+ daily patients, 200+ dental chairs, and 92% placement assistance. Established in 1987 under JKKN Institutions (since 1952), it combines AI-powered diagnostics, CAD/CAM technology, and hands-on clinical training."
     },
     {
       question: "Which is the best dental college in Tamil Nadu?",
-      answer: "JKKN Dental College & Hospital is widely recognized as one of the best dental colleges in Tamil Nadu. Established in 1987 under JKKN Institutions (since 1952), it is DCI approved, NAAC A accredited, and affiliated with TN Dr. MGR Medical University. With 200+ dental chairs, 500+ daily patients, India's 1st AI-integrated dental campus, and 92% placement assistance, JKKN offers unmatched clinical exposure and modern infrastructure for BDS and MDS programs."
+      answer: "JKKN Dental College & Hospital is widely recognized as the best dental college in Tamil Nadu with DCI approval, NAAC A accreditation, 200+ dental chairs, 500+ daily patients, 92% placement assistance, and India's first AI-integrated dental campus, established in 1987 under JKKN Institutions."
     },
     {
       question: "How does JKKN integrate AI in dental education?",
-      answer: "JKKN Dental College is India's 1st Human-AI AGI Dental Campus. Students use ChatGPT and AI tools for research, case studies, and personalized learning. The campus features AI-powered diagnostic imaging (CBCT, OPG), CAD/CAM technology for precision dental restorations, AI-enhanced clinical training, and data analytics for research. AI courses are integrated into both BDS and MDS curriculum, ensuring graduates are equipped with cutting-edge technological expertise alongside clinical skills."
+      answer: "JKKN integrates AI across BDS and MDS curriculum with AI-powered diagnostic imaging (CBCT, OPG), CAD/CAM digital prosthetics, ChatGPT-assisted research, and data analytics — making it India's first AI-integrated dental campus."
+    },
+    {
+      question: "What is the fee structure for BDS at JKKN Dental College?",
+      answer: "BDS fees at JKKN Dental College vary by admission quota as per Tamil Nadu government regulations. Annual tuition ranges from 3 to 5 lakhs depending on state counseling or management quota allocation."
+    },
+    {
+      question: "Where is JKKN Dental College located?",
+      answer: "JKKN Dental College is located on NH-544 (Salem-Coimbatore Highway) in Komarapalayam, Namakkal District, Tamil Nadu 638183 — approximately 35 km from Erode and 50 km from Salem."
+    },
+    {
+      question: "What are the hostel facilities at JKKN Dental College?",
+      answer: "JKKN provides separate hostels for boys and girls with furnished rooms, mess facilities, Wi-Fi connectivity, 24/7 security, recreational areas, and easy campus access for students."
     }
   ];
 
@@ -50,7 +62,7 @@ export default function FAQSection() {
       <div className="max-w-4xl mx-auto">
         {/* Header */}
         <div className="text-center mb-8 sm:mb-10 md:mb-12 lg:mb-16">
-          <h3 className="text-[#7cb983] text-xs sm:text-sm md:text-base font-bold uppercase tracking-wider mb-3 sm:mb-4">FAQS</h3>
+          <span className="block text-[#7cb983] text-xs sm:text-sm md:text-base font-bold uppercase tracking-wider mb-3 sm:mb-4">FAQS</span>
           <h2 className="text-2xl xs:text-3xl sm:text-4xl lg:text-5xl font-bold text-[#006837] mb-4 sm:mb-6 leading-tight">
             Frequently Asked Questions
           </h2>
@@ -87,14 +99,16 @@ export default function FAQSection() {
                 </div>
               </button>
 
-              {/* Answer */}
-              {openIndex === index && (
+              {/* Answer — always in DOM for SEO crawlers, collapsed visually when closed */}
+              <div
+                className={`overflow-hidden transition-all duration-300 ${openIndex === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}
+              >
                 <div className="px-4 sm:px-5 md:px-6 pb-4 sm:pb-5 md:pb-6">
                   <p className="text-gray-600 leading-relaxed text-sm sm:text-base">
                     {faq.answer}
                   </p>
                 </div>
-              )}
+              </div>
             </div>
           ))}
         </div>

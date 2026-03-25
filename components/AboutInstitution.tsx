@@ -49,39 +49,39 @@ export default function AboutInstitution() {
               Over Five Decades of Excellence in Progressive Education
             </p>
             <p className="snippet-answer text-gray-600 text-sm sm:text-base md:text-lg mb-4 sm:mb-6 leading-relaxed">
-              JKKN Dental College &amp; Hospital is a DCI-approved and NAAC A Grade accredited dental institution in Tamil Nadu, established in 1987. With 200+ dental chairs, 100+ hospital beds, 500+ daily patients, and a 92% placement rate, JKKN offers BDS and MDS programs affiliated to TN Dr. MGR Medical University at Komarapalayam, Namakkal — accessible from Salem, Erode, and Coimbatore.
+              JKKN Dental College &amp; Hospital is a DCI-approved, NAAC A Grade accredited dental college in Tamil Nadu, established in 1987. With 200+ dental chairs, 500+ daily patients, and 92% placement rate, JKKN offers BDS and MDS programs at Komarapalayam, Namakkal.
             </p>
             <p className="text-gray-600 text-sm sm:text-base md:text-lg mb-6 sm:mb-8 leading-relaxed">
               Founded on the vision of J.K.K. Nattraja Chettiar (1895–1995), JKKN Dental College is a premier institution under JKKN Institutions. Located on NH-544 in Komarapalayam, Namakkal District, the college provides an ideal environment for focused learning as India&#39;s first AI-integrated dental campus.
             </p>
 
             {/* Features List */}
-            <div className="grid grid-cols-1 xs:grid-cols-2 gap-3 sm:gap-4 mb-6 sm:mb-8">
-              <div className="flex items-start gap-2 sm:gap-3">
+            <ul className="grid grid-cols-1 xs:grid-cols-2 gap-3 sm:gap-4 mb-6 sm:mb-8 list-none p-0 m-0">
+              <li className="flex items-start gap-2 sm:gap-3">
                 <Check className="w-5 h-5 sm:w-6 sm:h-6 text-[#7cb983] flex-shrink-0" />
-                <div className="text-gray-700 font-medium text-sm sm:text-base">DCI & NMC Approved</div>
-              </div>
-              <div className="flex items-start gap-2 sm:gap-3">
+                <span className="text-gray-700 font-medium text-sm sm:text-base">DCI & NMC Approved</span>
+              </li>
+              <li className="flex items-start gap-2 sm:gap-3">
                 <Check className="w-5 h-5 sm:w-6 sm:h-6 text-[#7cb983] flex-shrink-0" />
-                <div className="text-gray-700 font-medium text-sm sm:text-base">NAAC Accredited</div>
-              </div>
-              <div className="flex items-start gap-2 sm:gap-3">
+                <span className="text-gray-700 font-medium text-sm sm:text-base">NAAC Accredited</span>
+              </li>
+              <li className="flex items-start gap-2 sm:gap-3">
                 <Check className="w-5 h-5 sm:w-6 sm:h-6 text-[#7cb983] flex-shrink-0" />
-                <div className="text-gray-700 font-medium text-sm sm:text-base">200+ Dental Chairs</div>
-              </div>
-              <div className="flex items-start gap-2 sm:gap-3">
+                <span className="text-gray-700 font-medium text-sm sm:text-base">200+ Dental Chairs</span>
+              </li>
+              <li className="flex items-start gap-2 sm:gap-3">
                 <Check className="w-5 h-5 sm:w-6 sm:h-6 text-[#7cb983] flex-shrink-0" />
-                <div className="text-gray-700 font-medium text-sm sm:text-base">500+ Daily Patients</div>
-              </div>
-              <div className="flex items-start gap-2 sm:gap-3">
+                <span className="text-gray-700 font-medium text-sm sm:text-base">500+ Daily Patients</span>
+              </li>
+              <li className="flex items-start gap-2 sm:gap-3">
                 <Check className="w-5 h-5 sm:w-6 sm:h-6 text-[#7cb983] flex-shrink-0" />
-                <div className="text-gray-700 font-medium text-sm sm:text-base">5 MDS Specializations</div>
-              </div>
-              <div className="flex items-start gap-2 sm:gap-3">
+                <span className="text-gray-700 font-medium text-sm sm:text-base">5 MDS Specializations</span>
+              </li>
+              <li className="flex items-start gap-2 sm:gap-3">
                 <Check className="w-5 h-5 sm:w-6 sm:h-6 text-[#7cb983] flex-shrink-0" />
-                <div className="text-gray-700 font-medium text-sm sm:text-base">92% Placement</div>
-              </div>
-            </div>
+                <span className="text-gray-700 font-medium text-sm sm:text-base">92% Placement</span>
+              </li>
+            </ul>
 
             <Link
               href="#academic-programs"

@@ -72,9 +72,9 @@ export default function Infrastructure() {
         </div>
 
         {/* Facilities Grid */}
-        <div className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-5 md:gap-6">
+        <ul className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-5 md:gap-6 list-none p-0 m-0">
           {facilities.map((facility, index) => (
-            <div
+            <li
               key={index}
               className="bg-white rounded-xl sm:rounded-2xl p-5 sm:p-6 shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 text-center"
             >
@@ -83,9 +83,9 @@ export default function Infrastructure() {
               </div>
               <h4 className="text-base sm:text-lg font-bold text-[#006837] mb-1 sm:mb-2">{facility.title}</h4>
               <p className="text-xs sm:text-sm text-gray-600">{facility.description}</p>
-            </div>
+            </li>
           ))}
-        </div>
+        </ul>
       </div>
     </section>
   );
