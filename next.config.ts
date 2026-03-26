@@ -26,7 +26,7 @@ const nextConfig: NextConfig = {
       // Trailing slash redirects (WordPress used trailing slashes)
       { source: '/bds/', destination: '/academics/details-of-academic-programs/bds', permanent: true },
       { source: '/mds/', destination: '/academics/details-of-academic-programs/mds', permanent: true },
-      { source: '/contact/', destination: '/contact', permanent: true },
+      // Removed: /contact/ → /contact redirect (caused infinite loop with trailingSlash: true)
       { source: '/iqac/', destination: '/iqac', permanent: true },
       { source: '/alumni/', destination: '/alumni', permanent: true },
 
@@ -283,7 +283,7 @@ const nextConfig: NextConfig = {
 
       // Top-level pages
       { source: '/iqac', destination: '/iqac' },
-      { source: '/contact', destination: '/contact' },
+      // Removed: /contact → /contact rewrite (unnecessary — page exists at app/contact/page.tsx)
     ];
   },
 };
