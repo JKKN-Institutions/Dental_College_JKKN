@@ -142,6 +142,7 @@ export const topMenuItems: NavItem[] = [
         ]
       },
       { label: "CAPABILITY ENHANCEMENT PROGRAM", href: "/academics/capability-enhancement-program" },
+      { label: "PLACEMENTS", href: "/placements" },
       { label: "CURRICULUM FEEDBACK", href: "/academics/curriculum-feedback" },
       {
         label: "FACULTY ACHIEVEMENTS",

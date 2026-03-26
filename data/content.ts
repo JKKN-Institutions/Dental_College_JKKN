@@ -112,6 +112,7 @@ export const siteContent = {
           },
           { label: "CAPABILITY ENHANCEMENT PROGRAM", href: "/academics/capability-enhancement-program" },
           { label: "CAREER COUNSELLING", href: "/academics/career-counselling" },
+          { label: "PLACEMENTS", href: "/placements" },
           { label: "CURRICULUM FEEDBACK", href: "/academics/curriculum-feedback" },
           {
             label: "FACULTY ACHIEVEMENTS",
