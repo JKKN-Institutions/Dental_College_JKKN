@@ -82,6 +82,19 @@ export default async function BlogPage() {
       <StructuredData data={blogSpeakableSchema} />
       <Header />
 
+      {/* Hero */}
+      <section className="bg-[#1B5E20] py-12 px-4">
+        <div className="max-w-6xl mx-auto text-center">
+          <p className="text-[#FFC107] text-xs font-semibold tracking-widest uppercase mb-2">
+            JKKN Dental College &amp; Hospital
+          </p>
+          <h1 className="text-3xl sm:text-4xl font-bold text-white">Our Blog</h1>
+          <p className="text-green-200 mt-3 text-sm sm:text-base max-w-xl mx-auto">
+            Latest articles, insights and updates on dental education, campus life, and careers.
+          </p>
+        </div>
+      </section>
+
       {/* ── Coming Soon — shown when no posts exist ── */}
       {!hasCampusPosts && (
         <section className="flex flex-col items-center justify-center min-h-[60vh] px-4 text-center">

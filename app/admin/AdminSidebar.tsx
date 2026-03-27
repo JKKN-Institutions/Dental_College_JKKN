@@ -45,14 +45,18 @@ interface College { id: string; name: string }
 interface AdminSidebarProps {
   userEmail: string;
   isSuperAdmin?: boolean;
+  isStaff?: boolean;
   canSwitchCollege?: boolean;
   colleges?: College[];
   currentCollegeId?: string;
 }
 
+const STAFF_ALLOWED_HREFS = ['/admin/events', '/admin/faculty'];
+
 export default function AdminSidebar({
   userEmail,
   isSuperAdmin = false,
+  isStaff = false,
   canSwitchCollege = false,
   colleges = [],
   currentCollegeId = process.env.NEXT_PUBLIC_COLLEGE_ID ?? 'education',
@@ -163,7 +167,7 @@ export default function AdminSidebar({
 
       {/* Nav */}
       <nav className="flex-1 px-3 py-4 space-y-1 overflow-y-auto">
-        {topNavLinks.map(({ href, label, icon: Icon }) => {
+        {topNavLinks.filter(({ href }) => !isStaff || STAFF_ALLOWED_HREFS.includes(href)).map(({ href, label, icon: Icon }) => {
           const active = pathname === href || pathname.startsWith(href + '/');
           return (
             <Link
@@ -184,7 +188,7 @@ export default function AdminSidebar({
         })}
 
         {/* Blog expandable section */}
-        <div>
+        {!isStaff && <div>
           <button
             onClick={() => setBlogOpen((o) => !o)}
             className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium transition-all ${
@@ -227,7 +231,7 @@ export default function AdminSidebar({
               })}
             </div>
           )}
-        </div>
+        </div>}
 
         {/* Colleges link — super_admin only */}
         {isSuperAdmin && (

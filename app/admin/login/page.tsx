@@ -50,11 +50,16 @@ export default function AdminLogin() {
       } else {
         const { data: profile } = await supabase
           .from('staff_profiles')
-          .select('college_id')
+          .select('college_id, role')
           .eq('id', authData.user.id)
           .single();
 
-        if (profile?.college_id !== siteConfig.id) {
+        const crossSiteRoles = ['seo', 'super_admin'];
+        const hasAccess =
+          profile?.college_id === siteConfig.id ||
+          crossSiteRoles.includes(profile?.role ?? '');
+
+        if (!hasAccess) {
           await supabase.auth.signOut({ scope: 'local' });
           setError('Access denied. You are not authorized to access this portal.');
         } else {
