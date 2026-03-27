@@ -79,31 +79,31 @@ export default function AboutInstitution() {
               </div>
             </div>
 
-            {/* Features List */}
+            {/* Why Choose JKKN — Unique value propositions (no overlap with Key Facts above) */}
             <ul className="grid grid-cols-1 xs:grid-cols-2 gap-3 sm:gap-4 mb-6 sm:mb-8 list-none p-0 m-0">
               <li className="flex items-start gap-2 sm:gap-3">
                 <Check className="w-5 h-5 sm:w-6 sm:h-6 text-[#7cb983] flex-shrink-0" />
-                <span className="text-gray-700 font-medium text-sm sm:text-base">Dental Council of India (DCI) & NMC Approved</span>
+                <span className="text-gray-700 font-medium text-sm sm:text-base">Clinical Exposure from Year 1</span>
               </li>
               <li className="flex items-start gap-2 sm:gap-3">
                 <Check className="w-5 h-5 sm:w-6 sm:h-6 text-[#7cb983] flex-shrink-0" />
-                <Link href="/accreditation/" className="text-gray-700 font-medium text-sm sm:text-base hover:text-[#006837] hover:underline">NAAC Accredited</Link>
+                <Link href="/facilities/hostel/" className="text-gray-700 font-medium text-sm sm:text-base hover:text-[#006837] hover:underline">International Placements — UK, UAE, Singapore</Link>
               </li>
               <li className="flex items-start gap-2 sm:gap-3">
                 <Check className="w-5 h-5 sm:w-6 sm:h-6 text-[#7cb983] flex-shrink-0" />
-                <span className="text-gray-700 font-medium text-sm sm:text-base">200+ Dental Chairs</span>
+                <span className="text-gray-700 font-medium text-sm sm:text-base">Attached 100+ Bed Multi-Specialty Hospital</span>
               </li>
               <li className="flex items-start gap-2 sm:gap-3">
                 <Check className="w-5 h-5 sm:w-6 sm:h-6 text-[#7cb983] flex-shrink-0" />
-                <span className="text-gray-700 font-medium text-sm sm:text-base">500+ Daily Patients</span>
+                <Link href="/research/" className="text-gray-700 font-medium text-sm sm:text-base hover:text-[#006837] hover:underline">50+ Research Publications Annually</Link>
               </li>
               <li className="flex items-start gap-2 sm:gap-3">
                 <Check className="w-5 h-5 sm:w-6 sm:h-6 text-[#7cb983] flex-shrink-0" />
-                <span className="text-gray-700 font-medium text-sm sm:text-base">5 MDS Specializations</span>
+                <span className="text-gray-700 font-medium text-sm sm:text-base">Rural Healthcare Outreach Program</span>
               </li>
               <li className="flex items-start gap-2 sm:gap-3">
                 <Check className="w-5 h-5 sm:w-6 sm:h-6 text-[#7cb983] flex-shrink-0" />
-                <span className="text-gray-700 font-medium text-sm sm:text-base">92% Placement</span>
+                <Link href="/admission/scholarship/" className="text-gray-700 font-medium text-sm sm:text-base hover:text-[#006837] hover:underline">Merit Scholarships Available</Link>
               </li>
             </ul>
 
