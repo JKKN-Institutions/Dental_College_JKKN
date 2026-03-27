@@ -311,3 +311,63 @@
     -webkit-line-clamp: 3;
   }
 }
+
+/* AEO — Snippet and Speakable Targeting Classes */
+.snippet-answer {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #002309;
+  max-width: 720px;
+}
+
+.speakable-summary {
+  /* Visually hidden from page layout but present for schema targeting */
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* voice-answer is a schema CSS selector target — no visual styling */
+.voice-answer {
+  /* Used as speakable schema cssSelector target only */
+}
+
+.college-facts-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+
+.college-facts-table th,
+.college-facts-table td {
+  border: 1px solid #e5e7eb;
+  padding: 0.75rem 1rem;
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+.college-facts-table th {
+  background-color: #f0f7ee;
+  font-weight: 600;
+  color: #006837;
+  width: 35%;
+}
+
+/* AEO Voice Search & Snippet Classes — added 2026-03-27 */
+.snippet-answer {
+  display: block;
+}
+
+.voice-answer {
+  display: block;
+}
+
+.speakable-summary {
+  display: block;
+}

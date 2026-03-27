@@ -21,7 +21,7 @@ export default function WhyChooseJKKN() {
                 <div>
                   <h4 className="text-lg sm:text-xl font-bold mb-1 sm:mb-2">JKKN Group: 74+ Years of Educational Legacy</h4>
                   <p className="text-gray-300 leading-relaxed text-sm sm:text-base">
-                    Part of JKKN Institutions, founded in 1952, with a commitment to progressive education. #JKKN100
+                    Part of JKKN Institutions, founded in 1952 with seventy-four years of educational heritage across eight colleges and two schools. The JKKN Group operates a five hundred bed multi-specialty teaching hospital on the same campus.
                   </p>
                 </div>
               </li>
@@ -35,7 +35,7 @@ export default function WhyChooseJKKN() {
                 <div>
                   <h4 className="text-lg sm:text-xl font-bold mb-1 sm:mb-2">Unmatched Clinical Exposure</h4>
                   <p className="text-gray-300 leading-relaxed text-sm sm:text-base">
-                    500+ patients visiting daily — extensive hands-on experience across all specialties.
+                    Over five hundred patients visit daily across nine clinical departments, providing extensive hands-on training from second year onwards in all dental specialties.
                   </p>
                 </div>
               </li>
@@ -63,8 +63,11 @@ export default function WhyChooseJKKN() {
                 <div>
                   <h4 className="text-lg sm:text-xl font-bold mb-1 sm:mb-2">92% Placement Assistance</h4>
                   <p className="text-gray-300 leading-relaxed text-sm sm:text-base">
-                    Strong industry connections with leading dental chains and hospitals.
+                    Strong industry connections with Apollo Dental, Clove Dental, Sabka Dentist, government hospitals, and international institutions including NHS United Kingdom.
                   </p>
+                  <a href="https://placements.jkkn.ac.in/" target="_blank" rel="noopener noreferrer" className="text-[#7cb983] hover:underline text-xs sm:text-sm mt-1 inline-block">
+                    View verified placement records →
+                  </a>
                 </div>
               </li>
             </ol>

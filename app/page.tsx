@@ -18,11 +18,11 @@ const FacultySection = dynamic(() => import('@/components/FacultySection'));
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'JKKN Dental College | Best Dental College in Tamil Nadu',
-  description: 'Best dental college in Tamil Nadu — JKKN Dental College, DCI approved & NAAC A. BDS & MDS programs, 200+ dental chairs, 92% placement rate.',
+  title: 'JKKN Dental College | Best Dental College in Tamil Nadu 2026',
+  description: 'JKKN Dental College, Namakkal — DCI approved, NAAC A dental college in Tamil Nadu. BDS & MDS programs, 200+ chairs, 500+ daily patients, 92% placement. Apply 2026.',
   openGraph: {
-    title: 'JKKN Dental College | Best Dental College in Tamil Nadu',
-    description: 'Best dental college in Tamil Nadu — JKKN Dental College, DCI approved & NAAC A. BDS & MDS programs, 200+ dental chairs, 92% placement rate.',
+    title: 'JKKN Dental College | Best Dental College in Tamil Nadu 2026',
+    description: 'JKKN Dental College, Namakkal — DCI approved, NAAC A dental college in Tamil Nadu. BDS & MDS programs, 200+ chairs, 500+ daily patients, 92% placement. Apply 2026.',
     url: 'https://dental.jkkn.ac.in/',
     siteName: 'JKKN Dental College & Hospital',
     images: [
@@ -38,8 +38,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'JKKN Dental College | Best Dental College in Tamil Nadu',
-    description: 'Best dental college in Tamil Nadu — JKKN Dental College, DCI approved & NAAC A. BDS & MDS programs, 200+ dental chairs, 92% placement rate.',
+    title: 'JKKN Dental College | Best Dental College in Tamil Nadu 2026',
+    description: 'JKKN Dental College, Namakkal — DCI approved, NAAC A dental college in Tamil Nadu. BDS & MDS programs, 200+ chairs, 500+ daily patients, 92% placement. Apply 2026.',
     images: ['https://dental.jkkn.ac.in/images/BDS-hero-image.png'],
   },
   alternates: {
@@ -350,6 +350,38 @@ export default function Home() {
           "@type": "Answer",
           "text": "JKKN Dental College provides separate hostels for boys and girls with furnished rooms, mess facilities, Wi-Fi connectivity, twenty-four-hour security, and recreational areas on campus."
         }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the NEET cutoff for JKKN Dental College?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "NEET cutoff for Bachelor of Dental Surgery admission at JKKN Dental College varies annually, with approximate cutoff ranging from three hundred fifty to four hundred fifty marks depending on quota."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How many dental colleges are there in Tamil Nadu?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Tamil Nadu has approximately thirty-two to thirty-five dental colleges approved by the Dental Council of India, including three government and twenty-eight to thirty-two private institutions."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which dental college in Tamil Nadu has the best placements?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "JKKN Dental College and Hospital provides ninety-two percent placement assistance with graduates at Apollo Dental, Clove Dental, government hospitals, and NHS United Kingdom."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the NIRF ranking of dental colleges in Tamil Nadu?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nine Tamil Nadu dental colleges appear in NIRF twenty twenty-five rankings, with SIMATS Saveetha at rank two, SRM Dental at rank eight, and Sri Ramachandra at rank thirteen."
+        }
       }
     ]
   };
@@ -640,7 +672,8 @@ export default function Home() {
       "@type": "SpeakableSpecification",
       "cssSelector": [
         ".snippet-answer",
-        ".hero-description"
+        ".hero-description",
+        ".voice-answer"
       ],
       "xpath": [
         "/html/head/meta[@name='description']/@content"
@@ -648,7 +681,7 @@ export default function Home() {
     },
     "description": "JKKN Dental College & Hospital, established in 1987, is a DCI approved and NAAC A Grade accredited dental college offering BDS and MDS programs. Located on India's first AI-integrated campus in Komarapalayam, Tamil Nadu, with 200+ dental chairs, 100+ bed hospital, and 92% placement rate. Apply now for 2026-27 admissions.",
     "datePublished": "2025-01-01",
-    "dateModified": "2026-03-21"
+    "dateModified": "2026-03-27"
   };
 
   // Schema #9: HowTo — Admission Process

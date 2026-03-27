@@ -32,7 +32,7 @@ export default function Hero() {
 
             {/* Description */}
             <p className="hero-description text-gray-200 text-sm sm:text-base md:text-lg leading-relaxed">
-              Recognized as one of the best dental colleges in Tamil Nadu, JKKN Dental College & Hospital combines world-class dental education with compassionate patient care. Our DCI-approved BDS & MDS programs prepare learners for exceptional careers in dentistry.
+              Recognized as one of the best dental colleges in Tamil Nadu, JKKN Dental College & Hospital combines world-class dental education with compassionate patient care. The DCI-approved BDS and MDS programs at JKKN prepare learners for exceptional careers in dentistry.
             </p>
 
             {/* Stats */}
