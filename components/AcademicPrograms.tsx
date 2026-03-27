@@ -65,6 +65,9 @@ export default function AcademicPrograms() {
                 >
                   Learn More →
                 </a>
+                <a href="/academics/details-of-academic-programs/bds/" className="block text-center text-[#006837] hover:underline text-xs sm:text-sm mt-2">
+                  View BDS program details →
+                </a>
               </div>
             </div>
           </div>
@@ -115,6 +118,9 @@ export default function AcademicPrograms() {
                   className="block w-full bg-[#7cb983] hover:bg-[#6ba872] active:bg-[#5a9761] text-white font-bold py-3 sm:py-3.5 px-6 sm:px-8 rounded-full transition-all duration-300 text-center text-sm sm:text-base min-h-[44px] flex items-center justify-center touch-manipulation transform hover:scale-105 active:scale-95"
                 >
                   Learn More →
+                </a>
+                <a href="/academics/details-of-academic-programs/mds/" className="block text-center text-[#006837] hover:underline text-xs sm:text-sm mt-2">
+                  Explore MDS specializations →
                 </a>
               </div>
             </div>

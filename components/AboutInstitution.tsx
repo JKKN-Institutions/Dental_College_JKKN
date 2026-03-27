@@ -31,7 +31,7 @@ export default function AboutInstitution() {
               />
               {/* JKKN Group Legacy Badge */}
               <div className="absolute bottom-3 right-3 sm:bottom-4 sm:right-4 md:bottom-6 md:right-6 bg-[#7cb983] text-white rounded-xl sm:rounded-2xl p-3 sm:p-4 md:p-6 shadow-2xl">
-                <div className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl font-bold text-center">57+</div>
+                <div className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl font-bold text-center">74+</div>
                 <div className="text-[10px] xs:text-xs sm:text-sm font-bold uppercase tracking-wide text-center">JKKN Group Legacy</div>
               </div>
             </div>
@@ -49,21 +49,45 @@ export default function AboutInstitution() {
               Over Five Decades of Excellence in Progressive Education
             </p>
             <p className="snippet-answer text-gray-600 text-sm sm:text-base md:text-lg mb-4 sm:mb-6 leading-relaxed">
-              JKKN Dental College &amp; Hospital is a DCI-approved, NAAC A Grade accredited dental college in Tamil Nadu, established in 1987. With 200+ dental chairs, 500+ daily patients, and 92% placement rate, JKKN offers BDS and MDS programs at Komarapalayam, Namakkal.
+              JKKN Dental College and Hospital, established in 1987 in Komarapalayam, Namakkal District, is a Dental Council of India approved and NAAC A Grade accredited dental college in Tamil Nadu. Affiliated to Tamil Nadu Dr. M.G.R. Medical University, the college offers Bachelor of Dental Surgery and Master of Dental Surgery programs with over two hundred dental chairs, five hundred daily patients, and ninety-two percent placement assistance.
             </p>
+            {/* Voice Search Answer — hidden visually, accessible to crawlers and screen readers */}
+            <div className="voice-answer sr-only" aria-hidden="false">
+              JKKN Dental College and Hospital in Komarapalayam, Namakkal, is a Dental Council of India approved dental college in Tamil Nadu with NAAC A Grade accreditation established in nineteen eighty-seven.
+            </div>
+
             <p className="text-gray-600 text-sm sm:text-base md:text-lg mb-6 sm:mb-8 leading-relaxed">
               Founded on the vision of J.K.K. Nattraja Chettiar (1895–1995), JKKN Dental College is a premier institution under JKKN Institutions. Located on NH-544 in Komarapalayam, Namakkal District, the college provides an ideal environment for focused learning as India&#39;s first AI-integrated dental campus.
             </p>
+
+            {/* AI Overview Content Block — Key Facts for citation optimization */}
+            <div className="ai-citation-block bg-white border border-gray-200 rounded-xl p-4 sm:p-6 mb-6 sm:mb-8">
+              <h3 className="text-base sm:text-lg font-bold text-[#006837] mb-3 sm:mb-4">JKKN Dental College — Key Facts</h3>
+              <div className="grid grid-cols-1 xs:grid-cols-2 gap-2 sm:gap-3 text-sm sm:text-base">
+                <div className="text-gray-700"><strong className="text-[#006837]">Established:</strong> 1987</div>
+                <div className="text-gray-700"><strong className="text-[#006837]">Affiliation:</strong> TN Dr. M.G.R. Medical University</div>
+                <div className="text-gray-700"><strong className="text-[#006837]">Approval:</strong> Dental Council of India (DCI)</div>
+                <div className="text-gray-700"><strong className="text-[#006837]">Accreditation:</strong> NAAC A Grade</div>
+                <div className="text-gray-700"><strong className="text-[#006837]">BDS Seats:</strong> 100 (Annual Intake)</div>
+                <div className="text-gray-700"><strong className="text-[#006837]">MDS Seats:</strong> 18 (5 Specializations)</div>
+                <div className="text-gray-700"><strong className="text-[#006837]">Dental Chairs:</strong> 200+</div>
+                <div className="text-gray-700"><strong className="text-[#006837]">Daily Patients:</strong> 500+</div>
+                <div className="text-gray-700"><strong className="text-[#006837]">Hospital Beds:</strong> 100+</div>
+                <div className="text-gray-700"><strong className="text-[#006837]">Placement:</strong> 92% Assistance</div>
+                <div className="text-gray-700"><strong className="text-[#006837]">Location:</strong> NH-544, Komarapalayam, Namakkal</div>
+                <div className="text-gray-700"><strong className="text-[#006837]">Unique:</strong> India&apos;s First AI-Integrated Dental Campus</div>
+              </div>
+            </div>
 
             {/* Features List */}
             <ul className="grid grid-cols-1 xs:grid-cols-2 gap-3 sm:gap-4 mb-6 sm:mb-8 list-none p-0 m-0">
               <li className="flex items-start gap-2 sm:gap-3">
                 <Check className="w-5 h-5 sm:w-6 sm:h-6 text-[#7cb983] flex-shrink-0" />
-                <span className="text-gray-700 font-medium text-sm sm:text-base">DCI & NMC Approved</span>
+                <span className="text-gray-700 font-medium text-sm sm:text-base">Dental Council of India (DCI) & NMC Approved</span>
               </li>
               <li className="flex items-start gap-2 sm:gap-3">
                 <Check className="w-5 h-5 sm:w-6 sm:h-6 text-[#7cb983] flex-shrink-0" />
-                <span className="text-gray-700 font-medium text-sm sm:text-base">NAAC Accredited</span>
+                <Link href="/accreditation/" className="text-gray-700 font-medium text-sm sm:text-base hover:text-[#006837] hover:underline">NAAC Accredited</Link>
               </li>
               <li className="flex items-start gap-2 sm:gap-3">
                 <Check className="w-5 h-5 sm:w-6 sm:h-6 text-[#7cb983] flex-shrink-0" />
@@ -91,6 +115,84 @@ export default function AboutInstitution() {
               Explore Programs →
             </Link>
           </div>
+        </div>
+
+        {/* Dental Colleges Comparison Table — Snippet & AI Overview optimization */}
+        <div className="mt-10 sm:mt-12 md:mt-16">
+          <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-[#006837] mb-4 sm:mb-6">
+            Dental Colleges in Tamil Nadu — Quick Comparison
+          </h3>
+          <div className="overflow-x-auto rounded-xl border border-gray-200">
+            <table className="w-full text-xs sm:text-sm md:text-base border-collapse min-w-[600px]">
+              <thead>
+                <tr className="bg-[#006837] text-white">
+                  <th className="p-3 sm:p-4 text-left font-semibold">Feature</th>
+                  <th className="p-3 sm:p-4 text-left font-semibold bg-[#005030]">JKKN Dental (Namakkal)</th>
+                  <th className="p-3 sm:p-4 text-left font-semibold">Saveetha Dental (Chennai)</th>
+                  <th className="p-3 sm:p-4 text-left font-semibold">SRM Dental (Chennai)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="border-b border-gray-100">
+                  <td className="p-3 sm:p-4 font-medium text-gray-700">Established</td>
+                  <td className="p-3 sm:p-4 text-gray-900 bg-green-50/50">1987</td>
+                  <td className="p-3 sm:p-4 text-gray-600">1988</td>
+                  <td className="p-3 sm:p-4 text-gray-600">1996</td>
+                </tr>
+                <tr className="border-b border-gray-100 bg-gray-50/50">
+                  <td className="p-3 sm:p-4 font-medium text-gray-700">DCI Approved</td>
+                  <td className="p-3 sm:p-4 text-gray-900 bg-green-50/50">Yes</td>
+                  <td className="p-3 sm:p-4 text-gray-600">Yes</td>
+                  <td className="p-3 sm:p-4 text-gray-600">Yes</td>
+                </tr>
+                <tr className="border-b border-gray-100">
+                  <td className="p-3 sm:p-4 font-medium text-gray-700">NAAC Grade</td>
+                  <td className="p-3 sm:p-4 text-gray-900 bg-green-50/50">A</td>
+                  <td className="p-3 sm:p-4 text-gray-600">A++</td>
+                  <td className="p-3 sm:p-4 text-gray-600">A++</td>
+                </tr>
+                <tr className="border-b border-gray-100 bg-gray-50/50">
+                  <td className="p-3 sm:p-4 font-medium text-gray-700">BDS Seats</td>
+                  <td className="p-3 sm:p-4 text-gray-900 bg-green-50/50">100</td>
+                  <td className="p-3 sm:p-4 text-gray-600">250</td>
+                  <td className="p-3 sm:p-4 text-gray-600">100</td>
+                </tr>
+                <tr className="border-b border-gray-100">
+                  <td className="p-3 sm:p-4 font-medium text-gray-700">MDS Specializations</td>
+                  <td className="p-3 sm:p-4 text-gray-900 bg-green-50/50">5</td>
+                  <td className="p-3 sm:p-4 text-gray-600">12+</td>
+                  <td className="p-3 sm:p-4 text-gray-600">9</td>
+                </tr>
+                <tr className="border-b border-gray-100 bg-gray-50/50">
+                  <td className="p-3 sm:p-4 font-medium text-gray-700">Dental Chairs</td>
+                  <td className="p-3 sm:p-4 text-gray-900 bg-green-50/50">200+</td>
+                  <td className="p-3 sm:p-4 text-gray-600">550</td>
+                  <td className="p-3 sm:p-4 text-gray-600">Not published</td>
+                </tr>
+                <tr className="border-b border-gray-100">
+                  <td className="p-3 sm:p-4 font-medium text-gray-700">Daily Patients</td>
+                  <td className="p-3 sm:p-4 text-gray-900 bg-green-50/50">500+</td>
+                  <td className="p-3 sm:p-4 text-gray-600">1,600+</td>
+                  <td className="p-3 sm:p-4 text-gray-600">Not published</td>
+                </tr>
+                <tr className="border-b border-gray-100 bg-gray-50/50">
+                  <td className="p-3 sm:p-4 font-medium text-gray-700">AI Campus</td>
+                  <td className="p-3 sm:p-4 text-gray-900 bg-green-50/50 font-semibold">Yes (India&apos;s 1st)</td>
+                  <td className="p-3 sm:p-4 text-gray-600">No</td>
+                  <td className="p-3 sm:p-4 text-gray-600">No</td>
+                </tr>
+                <tr>
+                  <td className="p-3 sm:p-4 font-medium text-gray-700">Location</td>
+                  <td className="p-3 sm:p-4 text-gray-900 bg-green-50/50">Central TN (Namakkal)</td>
+                  <td className="p-3 sm:p-4 text-gray-600">Chennai</td>
+                  <td className="p-3 sm:p-4 text-gray-600">Chennai</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p className="text-xs text-gray-500 mt-2 sm:mt-3">
+            Data sourced from official college websites and NIRF 2025 rankings. Last updated March 2026.
+          </p>
         </div>
       </div>
     </section>

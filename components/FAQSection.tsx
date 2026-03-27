@@ -24,7 +24,7 @@ export default function FAQSection() {
     },
     {
       question: "What is the placement record?",
-      answer: "JKKN Dental College & Hospital provides 100% placement assistance. Alumni work at Apollo Dental, Clove Dental, Sabka Dentist, government hospitals, and private practices. Many pursue higher studies abroad or establish their own clinics."
+      answer: "JKKN Dental College & Hospital provides 92% placement assistance. Alumni work at Apollo Dental, Clove Dental, Sabka Dentist, government hospitals, and private practices. Many pursue higher studies abroad or establish their own clinics."
     },
     {
       question: "What makes JKKN different from other dental colleges?",
@@ -40,15 +40,31 @@ export default function FAQSection() {
     },
     {
       question: "What is the fee structure for BDS at JKKN Dental College?",
-      answer: "BDS fees at JKKN Dental College vary by admission quota as per Tamil Nadu government regulations. Annual tuition ranges from 3 to 5 lakhs depending on state counseling or management quota allocation."
+      answer: <>BDS fees at JKKN Dental College vary by admission quota as per Tamil Nadu government regulations. Annual tuition ranges from 3 to 5 lakhs depending on state counseling or management quota allocation. <a href="/fees-structure/" className="text-[#006837] hover:underline font-medium">See detailed fee structure</a>.</>
     },
     {
       question: "Where is JKKN Dental College located?",
-      answer: "JKKN Dental College is located on NH-544 (Salem-Coimbatore Highway) in Komarapalayam, Namakkal District, Tamil Nadu 638183 — approximately 35 km from Erode and 50 km from Salem."
+      answer: <>JKKN Dental College is located on NH-544 (Salem-Coimbatore Highway) in Komarapalayam, Namakkal District, Tamil Nadu 638183 — approximately 35 km from Erode and 50 km from Salem. <a href="/contact/" className="text-[#006837] hover:underline font-medium">Get campus directions</a>.</>
     },
     {
       question: "What are the hostel facilities at JKKN Dental College?",
       answer: "JKKN provides separate hostels for boys and girls with furnished rooms, mess facilities, Wi-Fi connectivity, 24/7 security, recreational areas, and easy campus access for students."
+    },
+    {
+      question: "What is the NEET cutoff for JKKN Dental College?",
+      answer: "NEET cutoff for BDS admission at JKKN Dental College varies annually based on counseling rounds. Approximate cutoff ranges from 350 to 450 marks depending on admission quota category — government or management. Students must register for Tamil Nadu state counseling or All India Quota counseling with valid NEET-UG qualification."
+    },
+    {
+      question: "How many dental colleges are there in Tamil Nadu?",
+      answer: "Tamil Nadu has approximately 32 to 35 dental colleges approved by the Dental Council of India. This includes 3 government dental colleges and 28-32 private dental colleges across Chennai, Coimbatore, Salem, Namakkal, and other districts. JKKN Dental College is the prominent institution in Namakkal District on the Salem-Coimbatore corridor."
+    },
+    {
+      question: "Which dental college in Tamil Nadu has the best placements?",
+      answer: "JKKN Dental College and Hospital provides 92% placement assistance with graduates employed at Apollo Dental, Clove Dental, Sabka Dentist, government hospitals, and international healthcare institutions including NHS United Kingdom. The placement portal at placements.jkkn.ac.in provides verified placement data and recruiter details."
+    },
+    {
+      question: "What is the NIRF ranking of dental colleges in Tamil Nadu?",
+      answer: "Nine Tamil Nadu dental colleges appear in NIRF 2025 rankings: SIMATS Saveetha (#2), SRM Dental Ramapuram (#8), Sri Ramachandra (#13), Amrita Coimbatore (#14), MAHER Chennai (#16), Sree Balaji (#27), Dr. MGR University (#30), Chettinad (#32), and SRM Kattankulathur (#39). JKKN Dental College is not NIRF-ranked but holds DCI approval and NAAC A Grade accreditation."
     }
   ];
 
