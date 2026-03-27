@@ -5,15 +5,25 @@ import { jkknSameAsUrls } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: { absolute: 'Namakkal Dental College | JKKN Dental College & Hospital' },
-  description: 'Namakkal dental college — JKKN Dental, Komarapalayam. DCI approved, NAAC accredited. BDS & MDS with 200+ chair hospital & 90%+ placements.',
-  keywords: 'namakkal dental college, top dental colleges, namakkal bds college, dental college namakkal, mds college namakkal, jkkn dental namakkal, dental college komarapalayam',
-  robots: { index: true, follow: true },
+  description: 'Namakkal Dental College — JKKN Dental College & Hospital, Komarapalayam, NH-544. DCI approved, NAAC accredited. BDS 100 seats, MDS. Apply 2026.',
+  keywords: 'namakkal dental college, dental college in namakkal district, namakkal bds college, dental college namakkal, mds college namakkal, jkkn dental namakkal, dental college komarapalayam, namakkal district dental college',
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-snippet': -1,
+      'max-image-preview': 'large',
+      'max-video-preview': -1,
+    },
+  },
   alternates: {
     canonical: 'https://dental.jkkn.ac.in/namakkal/',
   },
   openGraph: {
     title: 'Namakkal Dental College | JKKN Dental College & Hospital',
-    description: 'Namakkal dental college — JKKN Dental, Komarapalayam. DCI approved, NAAC accredited. BDS & MDS with 200+ chair hospital & 90%+ placements.',
+    description: 'Namakkal Dental College — JKKN Dental College & Hospital, Komarapalayam, NH-544. DCI approved, NAAC accredited. BDS 100 seats, MDS. Apply 2026.',
     url: 'https://dental.jkkn.ac.in/namakkal/',
     siteName: 'JKKN Dental College & Hospital',
     images: [
@@ -21,7 +31,7 @@ export const metadata: Metadata = {
         url: 'https://dental.jkkn.ac.in/images/BDS-hero-image.webp',
         width: 1200,
         height: 630,
-        alt: 'Namakkal Dental College - JKKN Dental College'
+        alt: 'JKKN Dental College & Hospital — Namakkal District'
       }
     ],
     type: 'website',
@@ -30,7 +40,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Namakkal Dental College | JKKN Dental College & Hospital',
-    description: 'Namakkal dental college — JKKN Dental, Komarapalayam. DCI approved, NAAC accredited. BDS & MDS with 200+ chair hospital & 90%+ placements.',
+    description: 'Namakkal Dental College — JKKN Dental College & Hospital, Komarapalayam, NH-544. DCI approved, NAAC accredited. BDS 100 seats, MDS. Apply 2026.',
     images: ['https://dental.jkkn.ac.in/images/BDS-hero-image.webp'],
     site: '@jaborejkkn',
   },
@@ -40,13 +50,86 @@ const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "Which is the best Namakkal dental college?", "acceptedAnswer": { "@type": "Answer", "text": "JKKN Dental College & Hospital is the leading Namakkal dental college, located just 5-10 km from Namakkal on NH-544. Approved by DCI, NAAC and affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai, it offers excellent programmes with strong placement support." } },
-    { "@type": "Question", "name": "How far is JKKN Dental from Namakkal?", "acceptedAnswer": { "@type": "Answer", "text": "JKKN Dental is approximately 5-10 km from Namakkal city centre, which takes about 15-20 minutes by road via NH-544 (Salem-Coimbatore Highway). Frequent local buses and auto-rickshaws are available from Namakkal town to Komarapalayam throughout the day." } },
-    { "@type": "Question", "name": "What is the NEET cut-off for BDS at JKKN Dental?", "acceptedAnswer": { "@type": "Answer", "text": "The NEET cut-off for BDS admission at JKKN Dental College & Hospital varies each year based on counselling rounds. Contact the admission office for the latest cut-off information and seat availability for the current admission cycle." } },
-    { "@type": "Question", "name": "Does JKKN Dental have its own hospital?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, JKKN Dental College & Hospital has a fully equipped 200+ chair dental hospital with 100+ beds on the same campus. Being in Namakkal district, the hospital draws a large patient base from the local community — students treat 500+ patients daily and gain extensive clinical skills from their very first year." } },
-    { "@type": "Question", "name": "What MDS specialisations are available?", "acceptedAnswer": { "@type": "Answer", "text": "JKKN Dental offers MDS in five specialisations: Orthodontics & Dentofacial Orthopaedics, Prosthodontics & Crown and Bridge, Oral & Maxillofacial Surgery, Conservative Dentistry & Endodontics, and Periodontics. Located right in Namakkal district, MDS students benefit from high patient volume and diverse clinical cases at the attached hospital." } },
-    { "@type": "Question", "name": "Does JKKN Dental provide hostel for Namakkal students?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, JKKN Dental provides separate hostel facilities for boys and girls. Students from Namakkal can also opt for daily commute as the campus is just 5-10 km away — just 15-20 minutes. College transport services are also available." } },
-    { "@type": "Question", "name": "How can I apply for admission at JKKN Dental?", "acceptedAnswer": { "@type": "Answer", "text": "Namakkal students can apply online at https://dental.jkkn.ac.in/ or simply visit the campus in Komarapalayam — barely 15-20 minutes away. Admissions for BDS and MDS 2026-27 are currently open. Call +91 9345855001 for personalised guidance on eligibility, fees, and the counselling process." } },
+    {
+      "@type": "Question",
+      "name": "Is there a dental college in Namakkal?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. JKKN Dental College & Hospital is the leading dental institution in Namakkal district, located at Komarapalayam on NH-544 (Salem–Coimbatore Highway). Approved by the Dental Council of India (DCI) and affiliated to Tamil Nadu Dr. M.G.R. Medical University, Chennai, it offers BDS (100 seats) and MDS (5 specializations) with a 200-chair teaching hospital treating 500+ patients daily."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which is the best dental college in Namakkal district?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "JKKN Dental College & Hospital is the leading dental institution in Namakkal district. Located at Komarapalayam, Namakkal district on NH-544, it is DCI approved, NAAC accredited, and affiliated to Tamil Nadu Dr. M.G.R. Medical University, Chennai. It is the oldest dental college in Namakkal district, established as part of JKKN Institutions in 1952, and the only institution with a 200-chair teaching hospital in the district."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How far is JKKN Dental College from Namakkal city?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "JKKN Dental College & Hospital is located in Namakkal district at Komarapalayam on NH-544. From Namakkal city, the campus is approximately 60 km via Tiruchengode, about 1.5 hours by road. Regular bus services are available from Namakkal to Komarapalayam via Tiruchengode throughout the day. The college also provides campus transport services."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the NEET cut-off for BDS at JKKN Dental?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The NEET cut-off for BDS admission at JKKN Dental College & Hospital varies each year based on Tamil Nadu DME counselling rounds. NEET 2026 is scheduled for 3 May 2026. JKKN-specific cutoff ranks for 2026-27 will be updated after counselling at admission.jkkn.ac.in. Contact the admission office at +91 9345855001 for the latest information."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does JKKN Dental have its own hospital?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. JKKN Dental College & Hospital has a fully equipped 200-chair dental hospital with 100+ inpatient beds on the same campus in Namakkal district. The hospital draws a large patient base from the local community — students treat 500+ patients daily and gain extensive clinical skills from their very first year of the BDS programme."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What MDS specialisations are available?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "JKKN Dental College & Hospital, Namakkal district, offers MDS in five specialisations: Orthodontics and Dentofacial Orthopaedics, Prosthodontics and Crown and Bridge, Oral and Maxillofacial Surgery, Conservative Dentistry and Endodontics, and Periodontics. MDS students benefit from high patient volume and diverse clinical cases at the 200-chair attached hospital."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does JKKN Dental provide hostel for students?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. JKKN Dental College & Hospital provides separate hostel facilities for boys and girls with all amenities including mess facility. Students from Namakkal city can reach the campus in approximately 1.5 hours. College transport services connecting Namakkal district areas are also available."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How can I apply for admission at JKKN Dental?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Students can apply online at https://dental.jkkn.ac.in/ or visit the campus in Komarapalayam, Namakkal district. Admissions for BDS and MDS 2026-27 are currently open. The BDS admission process: (1) Qualify NEET-UG, (2) Register for Tamil Nadu DME counselling, (3) Receive allotment to JKKN Dental based on NEET rank, (4) Report to college with original documents. Call +91 9345855001 for guidance."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the fee structure for BDS at JKKN Dental College?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "BDS fee structure at JKKN Dental College & Hospital, Namakkal district, varies by quota (Government/Management). For official and current fee details, visit dental.jkkn.ac.in/fees-structure/ or call +91 9345855001. Fees are regulated by Tamil Nadu DME and are subject to change per government guidelines."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the placements from JKKN Dental College?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "JKKN Dental College & Hospital, Namakkal district, reports 92%+ placement rate. Recruiting partners include Clove Dental, Apollo Dental, MyDentist, Sabka Dentist, Apollo Hospitals, Fortis Healthcare, Manipal Hospitals, and Government PHCs. International placements in UK (NHS), Saudi Arabia, UAE, and Singapore are also available. View full records at placements.jkkn.ac.in."
+      }
+    },
   ]
 };
 
@@ -55,10 +138,10 @@ const orgSchema = {
   "@type": "EducationalOrganization",
   "@id": "https://dental.jkkn.ac.in/#organization",
   "name": "JKKN Dental College & Hospital",
-  "alternateName": "JKKN Dental",
+  "alternateName": ["JKKN Dental", "J.K.K. Nattraja Dental College and Hospital"],
   "url": "https://dental.jkkn.ac.in/",
   "logo": "https://dental.jkkn.ac.in/images/jkkn-dental-logo.webp",
-  "description": "DCI approved, NAAC accredited dental college affiliated to TN Dr. MGR Medical University. Offers BDS and MDS programmes with 90%+ placement support.",
+  "description": "DCI approved, NAAC accredited dental college in Namakkal district, affiliated to TN Dr. MGR Medical University. Offers BDS (100 seats) and MDS (5 specializations) with 200-chair teaching hospital treating 500+ patients daily.",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Natarajapuram, NH-544 (Salem–Coimbatore Highway)",
@@ -69,7 +152,7 @@ const orgSchema = {
   },
   "telephone": "+919345855001",
   "email": "info@jkkn.ac.in",
-  "foundingDate": "1987",
+  "foundingDate": "1952",
   "parentOrganization": { "@type": "Organization", "name": "JKKN Institutions", "url": "https://jkkn.ac.in/" },
   "hasCredential": [
     { "@type": "EducationalOccupationalCredential", "credentialCategory": "DCI Approved" },
@@ -94,11 +177,12 @@ const courseSchema = [
     "@id": "https://dental.jkkn.ac.in/academics/bds/#course",
     "url": "https://dental.jkkn.ac.in/academics/bds/",
     "name": "BDS (Bachelor of Dental Surgery)",
-    "description": "4-year undergraduate dental programme with 1-year internship. DCI approved, 100 seats. NEET qualified admission.",
+    "description": "5-year undergraduate dental programme (4 years + 1 year internship). DCI approved, 100 seats. NEET-UG qualified admission via Tamil Nadu DME counselling. Located in Namakkal district, Komarapalayam.",
     "provider": { "@type": "EducationalOrganization", "name": "JKKN Dental College & Hospital", "url": "https://dental.jkkn.ac.in/" },
     "educationalLevel": "Undergraduate",
     "timeRequired": "P5Y",
-    "occupationalCategory": "Dentist"
+    "occupationalCategory": "Dentist",
+    "numberOfCredits": 100
   },
   {
     "@context": "https://schema.org",
@@ -106,7 +190,7 @@ const courseSchema = [
     "@id": "https://dental.jkkn.ac.in/academics/mds/#course",
     "url": "https://dental.jkkn.ac.in/academics/mds/",
     "name": "MDS (Master of Dental Surgery)",
-    "description": "3-year postgraduate dental programme with multiple specialisations including Orthodontics, Prosthodontics, Oral Surgery, Conservative Dentistry, and Periodontics.",
+    "description": "3-year postgraduate dental programme with 5 specialisations: Orthodontics, Prosthodontics, Oral Surgery, Conservative Dentistry, and Periodontics. NEET-MDS qualified admission.",
     "provider": { "@type": "EducationalOrganization", "name": "JKKN Dental College & Hospital", "url": "https://dental.jkkn.ac.in/" },
     "educationalLevel": "Postgraduate",
     "timeRequired": "P3Y",
@@ -118,7 +202,7 @@ const eventSchema = {
   "@context": "https://schema.org",
   "@type": "Event",
   "name": "JKKN Dental College — Admissions Open 2026-27",
-  "description": "Admissions open for BDS (100 seats) and MDS (5 specializations) programmes at JKKN Dental College & Hospital. NEET qualified candidates can apply now.",
+  "description": "Admissions open for BDS (100 seats) and MDS (5 specializations) programmes at JKKN Dental College & Hospital, Namakkal district. NEET qualified candidates can apply now.",
   "startDate": "2026-03-01",
   "endDate": "2026-08-31",
   "eventStatus": "https://schema.org/EventScheduled",
@@ -189,11 +273,39 @@ const speakableSchema = {
   "@type": "WebPage",
   "name": "Namakkal Dental College | JKKN Dental College & Hospital",
   "url": "https://dental.jkkn.ac.in/namakkal/",
-  "dateModified": "2026-03-23",
+  "dateModified": "2026-03-27",
   "speakable": {
     "@type": "SpeakableSpecification",
-    "cssSelector": ["h1", "h2"],
+    "cssSelector": ["h1", ".snippet-answer", ".voice-answer"],
   },
+};
+
+const howToSchema = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to Reach JKKN Dental College from Namakkal City",
+  "description": "Step-by-step directions to reach JKKN Dental College & Hospital at Komarapalayam, Namakkal district from Namakkal city.",
+  "totalTime": "PT1H30M",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "position": 1,
+      "name": "Travel from Namakkal city",
+      "text": "From Namakkal city, take the road towards Tiruchengode (approximately 45 km). NH-544 (Salem–Coimbatore Highway) buses are available frequently from Namakkal bus stand."
+    },
+    {
+      "@type": "HowToStep",
+      "position": 2,
+      "name": "Reach Tiruchengode",
+      "text": "From Tiruchengode, continue on NH-544 towards Komarapalayam — approximately 15 km further. Tiruchengode Railway Station is also located here for those travelling by train."
+    },
+    {
+      "@type": "HowToStep",
+      "position": 3,
+      "name": "Arrive at Komarapalayam",
+      "text": "JKKN Dental College & Hospital is located in Komarapalayam on NH-544 (Salem–Coimbatore Highway), Natarajapuram, Namakkal District, Tamil Nadu 638183. The total journey from Namakkal city is approximately 60 km and takes about 1.5 hours."
+    }
+  ]
 };
 
 const reviewSchema = [
@@ -201,7 +313,7 @@ const reviewSchema = [
     "@context": "https://schema.org",
     "@type": "Review",
     "author": { "@type": "Person", "name": "Surya Prakash K." },
-    "reviewBody": "As a Namakkal local, JKKN Dental College was the obvious choice. The campus is just 10 km from town, and the 200+ chair hospital gave me incredible clinical experience.",
+    "reviewBody": "As a student from Namakkal district, JKKN Dental College was the obvious choice. Being located within the same district at Komarapalayam, the 200+ chair hospital gave me incredible clinical experience from Year 1.",
     "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
     "itemReviewed": { "@type": "EducationalOrganization", "@id": "https://dental.jkkn.ac.in/#organization", "name": "JKKN Dental College & Hospital" }
   },
@@ -209,7 +321,7 @@ const reviewSchema = [
     "@context": "https://schema.org",
     "@type": "Review",
     "author": { "@type": "Person", "name": "Divya Bharathi M." },
-    "reviewBody": "The research opportunities at JKKN are exceptional. Our faculty guided me through two publications during my MDS.",
+    "reviewBody": "The research opportunities at JKKN are exceptional. Our faculty guided me through two publications during my MDS. The patient flow of 500+ daily cases meant I never ran out of clinical material.",
     "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
     "itemReviewed": { "@type": "EducationalOrganization", "@id": "https://dental.jkkn.ac.in/#organization", "name": "JKKN Dental College & Hospital" }
   }
@@ -229,6 +341,7 @@ export default function NamakkalLayout({
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
       {reviewSchema.map((review, i) => (
         <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(review) }} />
       ))}

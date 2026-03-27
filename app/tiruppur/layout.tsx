@@ -5,7 +5,7 @@ import { jkknSameAsUrls } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: { absolute: 'Dental Colleges in Tiruppur | JKKN Dental College' },
-  description: 'Top dental college near Tiruppur — JKKN Dental, 80 km via NH-544. DCI approved, NAAC accredited. BDS & MDS with 90%+ placements & hostel.',
+  description: 'No dental college in Tiruppur? JKKN Dental College is 67 km away on NH-544. DCI approved, NAAC accredited. BDS 100 seats, MDS. Apply 2026.',
   keywords: 'dental colleges in tiruppur, top dental colleges, bds colleges in tiruppur, dental college tiruppur, mds college tiruppur, jkkn dental tiruppur',
   robots: { index: true, follow: true },
   alternates: {
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Dental Colleges in Tiruppur | JKKN Dental College',
-    description: 'Top dental college near Tiruppur — JKKN Dental, 80 km via NH-544. DCI approved, NAAC accredited. BDS & MDS with 90%+ placements & hostel.',
+    description: 'No dental college in Tiruppur? JKKN Dental College is 67 km away on NH-544. DCI approved, NAAC accredited. BDS 100 seats, MDS. Apply 2026.',
     url: 'https://dental.jkkn.ac.in/tiruppur/',
     siteName: 'JKKN Dental College & Hospital',
     images: [
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Dental Colleges in Tiruppur | JKKN Dental College',
-    description: 'Top dental college near Tiruppur — JKKN Dental, 80 km via NH-544. DCI approved, NAAC accredited. BDS & MDS with 90%+ placements & hostel.',
+    description: 'No dental college in Tiruppur? JKKN Dental College is 67 km away on NH-544. DCI approved, NAAC accredited. BDS 100 seats, MDS. Apply 2026.',
     images: ['https://dental.jkkn.ac.in/images/BDS-hero-image.webp'],
     site: '@jaborejkkn',
   },
@@ -40,13 +40,17 @@ const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "Which are the best dental colleges in Tiruppur?", "acceptedAnswer": { "@type": "Answer", "text": "JKKN Dental College & Hospital is among the top dental colleges accessible from Tiruppur, located just 80-90 km on NH-544. Approved by DCI, NAAC and affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai, it offers excellent programmes with strong placement support." } },
-    { "@type": "Question", "name": "How far is JKKN Dental from Tiruppur?", "acceptedAnswer": { "@type": "Answer", "text": "JKKN Dental is approximately 80-90 km from Tiruppur, which takes about 1.5-2 hours by road via State Highway to Erode, then NH-544 to Komarapalayam. Regular inter-city bus services are available from Tiruppur to Komarapalayam/Erode." } },
+    { "@type": "Question", "name": "Are there any dental colleges in Tiruppur?", "acceptedAnswer": { "@type": "Answer", "text": "There are no dental colleges inside Tiruppur district. The nearest DCI-approved dental college is JKKN Dental College and Hospital, located sixty-seven kilometres from Tiruppur at Komarapalayam, Namakkal, on the Salem to Coimbatore Highway." } },
+    { "@type": "Question", "name": "Which are the best dental colleges near Tiruppur?", "acceptedAnswer": { "@type": "Answer", "text": "JKKN Dental College and Hospital is the nearest DCI-approved dental college to Tiruppur, located sixty-seven kilometres away on NH-544. Affiliated to Tamil Nadu Doctor MGR Medical University, Chennai, it offers BDS with one hundred seats and MDS in five specializations." } },
+    { "@type": "Question", "name": "How far is JKKN Dental College from Tiruppur?", "acceptedAnswer": { "@type": "Answer", "text": "JKKN Dental College and Hospital is approximately sixty-seven kilometres from Tiruppur, about one and a half hours by road via NH-544 Salem to Coimbatore Highway through Erode." } },
     { "@type": "Question", "name": "What is the NEET cut-off for BDS at JKKN Dental?", "acceptedAnswer": { "@type": "Answer", "text": "The NEET cut-off for BDS admission at JKKN Dental College & Hospital varies each year based on counselling rounds. Contact the admission office for the latest cut-off information and seat availability for the current admission cycle." } },
     { "@type": "Question", "name": "Does JKKN Dental have its own hospital?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, JKKN Dental College & Hospital has a 200+ chair dental hospital with 100+ beds right on campus. The hospital serves patients from across western Tamil Nadu including Tiruppur, Erode, and Coimbatore districts — treating 500+ patients daily, ensuring students get exceptional clinical training from Year 1." } },
     { "@type": "Question", "name": "What MDS specialisations are available?", "acceptedAnswer": { "@type": "Answer", "text": "JKKN Dental offers MDS in five specialisations: Orthodontics & Dentofacial Orthopaedics, Prosthodontics & Crown and Bridge, Oral & Maxillofacial Surgery, Conservative Dentistry & Endodontics, and Periodontics. Tiruppur students benefit from on-campus hostel accommodation and access to diverse clinical cases from across western Tamil Nadu." } },
-    { "@type": "Question", "name": "Does JKKN Dental provide hostel for Tiruppur students?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, JKKN Dental provides separate hostel facilities for boys and girls. Students from Tiruppur can also opt for daily commute as the campus is just 1.5-2 hours away. College transport services are available." } },
+    { "@type": "Question", "name": "Does JKKN Dental College provide hostel for Tiruppur students?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, JKKN Dental College provides separate hostel facilities for boys and girls with mess facility. Students from Tiruppur travel sixty-seven kilometres to campus. College transport services are available." } },
     { "@type": "Question", "name": "How can I apply for admission at JKKN Dental?", "acceptedAnswer": { "@type": "Answer", "text": "Tiruppur students can apply online at https://dental.jkkn.ac.in/ or call +91 9345855001 for personalised guidance. The campus is accessible via Erode (NH-544). Admissions for BDS and MDS 2026-27 are currently open — hostel accommodation is available for outstation students." } },
+    { "@type": "Question", "name": "How many dental colleges are there in Tiruppur district?", "acceptedAnswer": { "@type": "Answer", "text": "There are zero dental colleges inside Tiruppur district. The nearest DCI-approved dental college is JKKN Dental College and Hospital at Komarapalayam, Namakkal, sixty-seven kilometres from Tiruppur via NH-544." } },
+    { "@type": "Question", "name": "Which dental colleges near Tiruppur accept NEET scores?", "acceptedAnswer": { "@type": "Answer", "text": "All DCI-approved dental colleges near Tiruppur accept NEET UG scores for BDS admission through DME Tamil Nadu counselling. JKKN Dental College and Hospital is sixty-seven kilometres away, RVS Dental College is fifty-five kilometres away in Coimbatore." } },
+    { "@type": "Question", "name": "What is the BDS fee at dental colleges near Tiruppur?", "acceptedAnswer": { "@type": "Answer", "text": "At JKKN Dental College and Hospital, BDS tuition fees are approximately two lakh fifty thousand rupees per year under Government Quota. Contact nine three four five eight five five zero zero one for the latest fee structure." } },
   ]
 };
 
@@ -198,11 +202,25 @@ const speakableSchema = {
   "@type": "WebPage",
   "name": "Dental Colleges in Tiruppur | JKKN Dental College",
   "url": "https://dental.jkkn.ac.in/tiruppur/",
-  "dateModified": "2026-03-23",
+  "dateModified": "2026-03-27",
   "speakable": {
     "@type": "SpeakableSpecification",
-    "cssSelector": ["h1", "h2"],
+    "cssSelector": ["h1", ".snippet-answer", ".voice-answer"],
   },
+};
+
+const howToSchema = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to Reach JKKN Dental College from Tiruppur",
+  "description": "Step-by-step travel directions from Tiruppur to JKKN Dental College & Hospital at Komarapalayam, Namakkal via NH-544.",
+  "totalTime": "PT1H30M",
+  "step": [
+    { "@type": "HowToStep", "position": 1, "name": "Start from Tiruppur", "text": "Head east from Tiruppur towards Erode via State Highway. Distance: approximately 18 km to Erode." },
+    { "@type": "HowToStep", "position": 2, "name": "Join NH-544 at Erode", "text": "At Erode, join NH-544 (Salem–Coimbatore Highway) heading east towards Salem." },
+    { "@type": "HowToStep", "position": 3, "name": "Continue to Komarapalayam", "text": "Follow NH-544 for approximately 49 km through Bhavani and Tiruchengode until you reach Komarapalayam." },
+    { "@type": "HowToStep", "position": 4, "name": "Arrive at JKKN Dental College", "text": "JKKN Dental College & Hospital is located at Natarajapuram on NH-544, Komarapalayam, Namakkal, Tamil Nadu 638183. Total distance: approximately 67 km, travel time: 1.5 hours." }
+  ]
 };
 
 const reviewSchema = [
@@ -224,6 +242,7 @@ export default function TiruppurLayout({
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
       {reviewSchema.map((review, i) => (
         <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(review) }} />
       ))}
