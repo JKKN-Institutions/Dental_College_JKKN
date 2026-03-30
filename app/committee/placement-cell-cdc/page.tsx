@@ -366,7 +366,7 @@ export default function PlacementCellCDC() {
           </p>
 
           <p className="text-base text-black mb-8">
-            Website: <a href="https://placements.jkkn.ac.in/" className="text-blue-600 hover:underline">https://placements.jkkn.ac.in/</a>
+            Website: <a href="https://placements.jkkn.ac.in/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">https://placements.jkkn.ac.in/</a>
           </p>
 
           {/* List of Events Button */}

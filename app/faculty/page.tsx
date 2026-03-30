@@ -115,13 +115,9 @@ export default async function FacultyPage() {
 
                 return (
                   <div key={m.id}>
-                    {m.slug ? (
-                      <a href={`/faculty/${m.slug}/`} className="block">
-                        {card}
-                      </a>
-                    ) : (
-                      card
-                    )}
+                    <a href={`/faculty/${m.slug || m.id}/`} className="block">
+                      {card}
+                    </a>
                   </div>
                 );
               })}

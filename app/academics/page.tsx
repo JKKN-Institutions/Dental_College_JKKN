@@ -301,12 +301,14 @@ export default function Academics() {
             Join JKKN Dental College and embark on a rewarding career in dentistry with comprehensive academic programs and excellent clinical training.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
+            <a
               href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-white hover:bg-gray-100 text-[#006837] font-bold px-8 py-4 rounded-lg text-lg transition-all duration-300 shadow-lg"
             >
               Apply Now
-            </Link>
+            </a>
             <Link
               href="/contact"
               className="bg-transparent border-2 border-white hover:bg-white hover:text-[#006837] text-white font-bold px-8 py-4 rounded-lg text-lg transition-all duration-300"

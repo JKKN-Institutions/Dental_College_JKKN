@@ -53,12 +53,14 @@ export default function Hero() {
 
             {/* Buttons */}
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
-              <Link
+              <a
                 href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-[#7cb983] hover:bg-[#6ba872] active:bg-[#5a9761] text-white font-bold py-3 sm:py-3.5 px-6 sm:px-8 rounded-full transition-all duration-300 text-center text-sm sm:text-base min-h-[44px] flex items-center justify-center touch-manipulation transform hover:scale-105 active:scale-95"
               >
                 Start Your Application →
-              </Link>
+              </a>
               <Link
                 href="#academic-programs"
                 onClick={scrollToSection}

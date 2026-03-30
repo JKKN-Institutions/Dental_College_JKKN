@@ -32,7 +32,7 @@ export async function generateMetadata({
   const { data } = await supabase
     .from('faculty')
     .select('name, designation, department')
-    .eq('slug', slug)
+    .or(`slug.eq.${slug},id.eq.${slug}`)
     .eq('college_id', process.env.NEXT_PUBLIC_COLLEGE_ID)
     .single();
 
@@ -73,7 +73,7 @@ export default async function FacultyProfilePage({
       experience, research_focus, publications, funded_research,
       certifications, awards, memberships, phd_scholars, faqs
     `)
-    .eq('slug', slug)
+    .or(`slug.eq.${slug},id.eq.${slug}`)
     .eq('college_id', collegeId)
     .eq('is_active', true)
     .single();

@@ -531,12 +531,14 @@ export default function AdmissionPage() {
 
           {/* Hero Dual CTA */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
+            <a
               href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-[#FFC107] hover:bg-[#e6ad00] text-[#006837] font-bold py-3.5 px-8 rounded-full transition-all duration-300 min-h-[44px] flex items-center justify-center gap-2 hover:scale-105 active:scale-95 text-lg"
             >
               Apply Now <ArrowRight className="w-5 h-5" />
-            </Link>
+            </a>
             <a
               href="https://wa.me/919345855001?text=Hi%2C%20I%20am%20interested%20in%20admission%20at%20JKKN%20Dental%20College.%20Please%20share%20details."
               target="_blank"
@@ -844,12 +846,14 @@ export default function AdmissionPage() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10">
-            <Link
+            <a
               href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-[#FFC107] hover:bg-[#e6ad00] text-[#006837] font-bold px-8 py-4 rounded-full transition-all duration-300 min-h-[44px] flex items-center justify-center gap-2 hover:scale-105 active:scale-95 text-lg"
             >
               Apply Now <ArrowRight className="w-5 h-5" />
-            </Link>
+            </a>
             <a
               href="https://wa.me/919345855001?text=Hi%2C%20I%20am%20interested%20in%20admission%20at%20JKKN%20Dental%20College.%20Please%20share%20details."
               target="_blank"

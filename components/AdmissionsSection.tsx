@@ -2,7 +2,7 @@ import { Check, Phone, Mail } from 'lucide-react';
 
 export default function AdmissionsSection() {
   return (
-    <section className="admission-cta py-12 sm:py-16 md:py-20 lg:py-24 px-4 sm:px-6 bg-[#FBFBEE]">
+    <section className="admission-cta pt-12 sm:pt-16 md:pt-20 lg:pt-24 pb-8 sm:pb-10 md:pb-12 px-4 sm:px-6 bg-[#FBFBEE]">
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-2 gap-8 sm:gap-10 md:gap-12 lg:gap-16">
           {/* Left - Eligibility */}
@@ -61,42 +61,6 @@ export default function AdmissionsSection() {
               </ul>
             </div>
 
-            {/* Eligibility Comparison Table */}
-            <div className="overflow-x-auto mb-6 sm:mb-8">
-              <h3 className="text-lg sm:text-xl font-bold text-[#006837] mb-4">Eligibility Criteria at a Glance</h3>
-              <table className="w-full border-collapse bg-white rounded-xl shadow-md overflow-hidden text-sm">
-                <thead>
-                  <tr className="bg-[#006837] text-white">
-                    <th className="px-3 py-2.5 text-left font-semibold">Criteria</th>
-                    <th className="px-3 py-2.5 text-left font-semibold">BDS</th>
-                    <th className="px-3 py-2.5 text-left font-semibold">MDS</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr className="border-b border-gray-100">
-                    <td className="px-3 py-2.5 text-gray-700 font-medium">Qualification</td>
-                    <td className="px-3 py-2.5 text-gray-600">10+2 with PCB</td>
-                    <td className="px-3 py-2.5 text-gray-600">BDS from DCI-recognized college</td>
-                  </tr>
-                  <tr className="border-b border-gray-100 bg-gray-50">
-                    <td className="px-3 py-2.5 text-gray-700 font-medium">Min. Marks</td>
-                    <td className="px-3 py-2.5 text-gray-600">50% (40% reserved)</td>
-                    <td className="px-3 py-2.5 text-gray-600">Pass in BDS</td>
-                  </tr>
-                  <tr className="border-b border-gray-100">
-                    <td className="px-3 py-2.5 text-gray-700 font-medium">Entrance Exam</td>
-                    <td className="px-3 py-2.5 text-gray-600">NEET-UG</td>
-                    <td className="px-3 py-2.5 text-gray-600">NEET-MDS</td>
-                  </tr>
-                  <tr className="bg-gray-50">
-                    <td className="px-3 py-2.5 text-gray-700 font-medium">Internship Required</td>
-                    <td className="px-3 py-2.5 text-gray-600">Not required</td>
-                    <td className="px-3 py-2.5 text-gray-600">Compulsory rotating internship</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-
             {/* Buttons */}
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
               <a
@@ -116,9 +80,9 @@ export default function AdmissionsSection() {
             </div>
           </div>
 
-          {/* Right - Admission Process */}
+          {/* Right - Admission Process + Table */}
           <div>
-            <div className="bg-white rounded-xl sm:rounded-2xl p-5 sm:p-6 md:p-8 shadow-lg">
+            <div className="bg-white rounded-xl sm:rounded-2xl p-5 sm:p-6 md:p-8 shadow-lg mb-6 sm:mb-8">
               <h3 className="text-xl sm:text-2xl font-bold text-[#006837] mb-6 sm:mb-8">Admission Process</h3>
 
               <ol className="space-y-4 sm:space-y-5 md:space-y-6 list-none p-0 m-0">
@@ -182,6 +146,42 @@ export default function AdmissionsSection() {
                   </div>
                 </li>
               </ol>
+            </div>
+
+            {/* Eligibility Comparison Table */}
+            <div className="overflow-x-auto">
+              <h3 className="text-lg sm:text-xl font-bold text-[#006837] mb-4">Eligibility Criteria at a Glance</h3>
+              <table className="w-full border-collapse bg-white rounded-xl shadow-md overflow-hidden text-sm">
+                <thead>
+                  <tr className="bg-[#006837] text-white">
+                    <th className="px-3 py-2.5 text-left font-semibold">Criteria</th>
+                    <th className="px-3 py-2.5 text-left font-semibold">BDS</th>
+                    <th className="px-3 py-2.5 text-left font-semibold">MDS</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="border-b border-gray-100">
+                    <td className="px-3 py-2.5 text-gray-700 font-medium">Qualification</td>
+                    <td className="px-3 py-2.5 text-gray-600">10+2 with PCB</td>
+                    <td className="px-3 py-2.5 text-gray-600">BDS from DCI-recognized college</td>
+                  </tr>
+                  <tr className="border-b border-gray-100 bg-gray-50">
+                    <td className="px-3 py-2.5 text-gray-700 font-medium">Min. Marks</td>
+                    <td className="px-3 py-2.5 text-gray-600">50% (40% reserved)</td>
+                    <td className="px-3 py-2.5 text-gray-600">Pass in BDS</td>
+                  </tr>
+                  <tr className="border-b border-gray-100">
+                    <td className="px-3 py-2.5 text-gray-700 font-medium">Entrance Exam</td>
+                    <td className="px-3 py-2.5 text-gray-600">NEET-UG</td>
+                    <td className="px-3 py-2.5 text-gray-600">NEET-MDS</td>
+                  </tr>
+                  <tr className="bg-gray-50">
+                    <td className="px-3 py-2.5 text-gray-700 font-medium">Internship Required</td>
+                    <td className="px-3 py-2.5 text-gray-600">Not required</td>
+                    <td className="px-3 py-2.5 text-gray-600">Compulsory rotating internship</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
         </div>

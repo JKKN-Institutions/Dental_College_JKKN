@@ -13,31 +13,10 @@ export default function AboutInstitution() {
     }
   };
   return (
-    <section className="py-12 sm:py-16 md:py-20 lg:py-24 px-4 sm:px-6 bg-[#FBFBEE]">
+    <section className="pt-12 sm:pt-16 md:pt-20 lg:pt-24 pb-8 sm:pb-10 md:pb-12 px-4 sm:px-6 bg-[#FBFBEE]">
       <div className="max-w-7xl mx-auto">
-        <div className="grid md:grid-cols-2 gap-8 sm:gap-10 md:gap-12 lg:gap-16 items-center">
-          {/* Left - Image */}
-          <div className="relative">
-            <div className="relative rounded-xl sm:rounded-2xl overflow-hidden shadow-xl">
-              <Image
-                src="/images/JKKN-Dental-College-Building.jpg"
-                alt="JKKN Dental College & Hospital building exterior with signboard at Komarapalayam campus"
-                width={1920}
-                height={1280}
-                className="w-full h-auto object-cover"
-                loading="lazy"
-                sizes="(max-width: 768px) 100vw, 50vw"
-                quality={85}
-              />
-              {/* JKKN Group Legacy Badge */}
-              <div className="absolute bottom-3 right-3 sm:bottom-4 sm:right-4 md:bottom-6 md:right-6 bg-[#7cb983] text-white rounded-xl sm:rounded-2xl p-3 sm:p-4 md:p-6 shadow-2xl">
-                <div className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl font-bold text-center">74+</div>
-                <div className="text-[10px] xs:text-xs sm:text-sm font-bold uppercase tracking-wide text-center">JKKN Group Legacy</div>
-              </div>
-            </div>
-          </div>
-
-          {/* Right - Content */}
+        <div className="grid md:grid-cols-2 gap-8 sm:gap-10 md:gap-12 lg:gap-16 items-start">
+          {/* Left - Text Content */}
           <div>
             <div className="mb-3 sm:mb-4">
               <h3 className="text-[#7cb983] text-xs sm:text-sm md:text-base font-bold uppercase tracking-wider">About Our Institution</h3>
@@ -60,26 +39,7 @@ export default function AboutInstitution() {
               Founded on the vision of J.K.K. Nattraja Chettiar (1895–1995), JKKN Dental College is a premier institution under JKKN Institutions. Located on NH-544 in Komarapalayam, Namakkal District, the college provides an ideal environment for focused learning as India&#39;s first AI-integrated dental campus.
             </p>
 
-            {/* AI Overview Content Block — Key Facts for citation optimization */}
-            <div className="ai-citation-block bg-white border border-gray-200 rounded-xl p-4 sm:p-6 mb-6 sm:mb-8">
-              <h3 className="text-base sm:text-lg font-bold text-[#006837] mb-3 sm:mb-4">JKKN Dental College — Key Facts</h3>
-              <div className="grid grid-cols-1 xs:grid-cols-2 gap-2 sm:gap-3 text-sm sm:text-base">
-                <div className="text-gray-700"><strong className="text-[#006837]">Established:</strong> 1987</div>
-                <div className="text-gray-700"><strong className="text-[#006837]">Affiliation:</strong> TN Dr. M.G.R. Medical University</div>
-                <div className="text-gray-700"><strong className="text-[#006837]">Approval:</strong> Dental Council of India (DCI)</div>
-                <div className="text-gray-700"><strong className="text-[#006837]">Accreditation:</strong> NAAC A Grade</div>
-                <div className="text-gray-700"><strong className="text-[#006837]">BDS Seats:</strong> 100 (Annual Intake)</div>
-                <div className="text-gray-700"><strong className="text-[#006837]">MDS Seats:</strong> 18 (5 Specializations)</div>
-                <div className="text-gray-700"><strong className="text-[#006837]">Dental Chairs:</strong> 200+</div>
-                <div className="text-gray-700"><strong className="text-[#006837]">Daily Patients:</strong> 500+</div>
-                <div className="text-gray-700"><strong className="text-[#006837]">Hospital Beds:</strong> 100+</div>
-                <div className="text-gray-700"><strong className="text-[#006837]">Placement:</strong> 92% Assistance</div>
-                <div className="text-gray-700"><strong className="text-[#006837]">Location:</strong> NH-544, Komarapalayam, Namakkal</div>
-                <div className="text-gray-700"><strong className="text-[#006837]">Unique:</strong> India&apos;s First AI-Integrated Dental Campus</div>
-              </div>
-            </div>
-
-            {/* Why Choose JKKN — Unique value propositions (no overlap with Key Facts above) */}
+            {/* Why Choose JKKN — Unique value propositions */}
             <ul className="grid grid-cols-1 xs:grid-cols-2 gap-3 sm:gap-4 mb-6 sm:mb-8 list-none p-0 m-0">
               <li className="flex items-start gap-2 sm:gap-3">
                 <Check className="w-5 h-5 sm:w-6 sm:h-6 text-[#7cb983] flex-shrink-0" />
@@ -114,6 +74,46 @@ export default function AboutInstitution() {
             >
               Explore Programs →
             </Link>
+          </div>
+
+          {/* Right - Image + Key Facts */}
+          <div>
+            <div className="relative rounded-xl sm:rounded-2xl overflow-hidden shadow-xl mb-6 sm:mb-8">
+              <Image
+                src="/images/JKKN-Dental-College-Building.jpg"
+                alt="JKKN Dental College & Hospital building exterior with signboard at Komarapalayam campus"
+                width={1920}
+                height={1280}
+                className="w-full h-auto object-cover"
+                loading="lazy"
+                sizes="(max-width: 768px) 100vw, 50vw"
+                quality={85}
+              />
+              {/* JKKN Group Legacy Badge */}
+              <div className="absolute bottom-3 right-3 bg-[#7cb983] text-white rounded-xl p-3 shadow-2xl">
+                <div className="text-2xl font-bold text-center">74+</div>
+                <div className="text-[9px] font-bold uppercase tracking-wide text-center">JKKN Group Legacy</div>
+              </div>
+            </div>
+
+            {/* AI Overview Content Block — Key Facts for citation optimization */}
+            <div className="ai-citation-block bg-white border border-gray-200 rounded-xl p-4 sm:p-6">
+              <h3 className="text-base sm:text-lg font-bold text-[#006837] mb-3 sm:mb-4">JKKN Dental College — Key Facts</h3>
+              <div className="grid grid-cols-1 xs:grid-cols-2 gap-2 sm:gap-3 text-sm sm:text-base">
+                <div className="text-gray-700"><strong className="text-[#006837]">Established:</strong> 1987</div>
+                <div className="text-gray-700"><strong className="text-[#006837]">Affiliation:</strong> TN Dr. M.G.R. Medical University</div>
+                <div className="text-gray-700"><strong className="text-[#006837]">Approval:</strong> Dental Council of India (DCI)</div>
+                <div className="text-gray-700"><strong className="text-[#006837]">Accreditation:</strong> NAAC A Grade</div>
+                <div className="text-gray-700"><strong className="text-[#006837]">BDS Seats:</strong> 100 (Annual Intake)</div>
+                <div className="text-gray-700"><strong className="text-[#006837]">MDS Seats:</strong> 18 (5 Specializations)</div>
+                <div className="text-gray-700"><strong className="text-[#006837]">Dental Chairs:</strong> 200+</div>
+                <div className="text-gray-700"><strong className="text-[#006837]">Daily Patients:</strong> 500+</div>
+                <div className="text-gray-700"><strong className="text-[#006837]">Hospital Beds:</strong> 100+</div>
+                <div className="text-gray-700"><strong className="text-[#006837]">Placement:</strong> 92% Assistance</div>
+                <div className="text-gray-700"><strong className="text-[#006837]">Location:</strong> NH-544, Komarapalayam, Namakkal</div>
+                <div className="text-gray-700"><strong className="text-[#006837]">Unique:</strong> India&apos;s First AI-Integrated Dental Campus</div>
+              </div>
+            </div>
           </div>
         </div>
 

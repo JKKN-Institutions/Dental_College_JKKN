@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import { Phone } from 'lucide-react';
 
 export default function CTASection() {
@@ -17,12 +16,14 @@ export default function CTASection() {
 
         {/* Buttons */}
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center">
-          <Link
+          <a
             href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8"
+            target="_blank"
+            rel="noopener noreferrer"
             className="w-full sm:w-auto bg-white hover:bg-gray-100 active:bg-gray-200 text-[#006837] font-bold py-3 sm:py-3.5 px-6 sm:px-8 rounded-full transition-all duration-300 text-center shadow-lg min-h-[44px] flex items-center justify-center touch-manipulation text-sm sm:text-base"
           >
             Apply Now →
-          </Link>
+          </a>
           <a
             href="tel:+919345855001"
             className="w-full sm:w-auto border-2 border-white hover:bg-white hover:text-[#7cb983] active:bg-gray-100 text-white font-bold py-3 sm:py-3.5 px-6 sm:px-8 rounded-full transition-all duration-300 text-center inline-flex items-center justify-center gap-2 min-h-[44px] touch-manipulation text-sm sm:text-base"

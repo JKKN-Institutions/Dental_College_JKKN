@@ -3,7 +3,7 @@ import { Circle, GraduationCap, Check, Leaf, Wrench, Pill, Microscope } from 'lu
 
 export default function AcademicPrograms() {
   return (
-    <section id="academic-programs" className="py-12 sm:py-16 md:py-20 lg:py-24 px-4 sm:px-6 bg-[#FBFBEE]">
+    <section id="academic-programs" className="pt-12 sm:pt-16 md:pt-20 lg:pt-24 pb-8 sm:pb-10 md:pb-12 px-4 sm:px-6 bg-[#FBFBEE]">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-10 sm:mb-12 md:mb-16">
