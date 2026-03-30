@@ -188,7 +188,7 @@ export default function NamakkalPage() {
           <a href="tel:+919345855001" className="bg-[#006837] hover:bg-[#002309] text-white font-bold px-8 py-4 rounded-full transition-all transform hover:scale-105 shadow-lg text-base">Call Us</a>
         </div>
         <div className="flex flex-col sm:flex-row gap-4 mt-6 items-center">
-          <Link href="/admission/" className="text-white/70 hover:text-white text-sm underline underline-offset-2 transition-colors">Admission Process</Link>
+          <Link href="/admissions/" className="text-white/70 hover:text-white text-sm underline underline-offset-2 transition-colors">Admission Process</Link>
           <span className="hidden sm:block text-white/30">|</span>
           <Link href="/fees-structure/" className="text-white/70 hover:text-white text-sm underline underline-offset-2 transition-colors">Fee Structure</Link>
         </div>

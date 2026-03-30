@@ -186,13 +186,14 @@ export const topMenuItems: NavItem[] = [
   },
   {
     label: "ADMISSION & FEE",
-    href: "/admission",
+    href: "/admissions",
     submenu: [
+      { label: "ADMISSION", href: "/admissions" },
       { label: "PROSPECTUS", href: "/pdf/Prospectus.pdf" },
-      { label: "FEE REFUND POLICY", href: "/admission/fee-refund-policy" },
-      { label: "SCHOLARSHIP POLICY FOR DENTAL COLLEGE", href: "/admission/scholarship-policy-for-dental-college" },
-      { label: "ADMISSION CRITERIA", href: "/admission/admission-criteria" },
-      { label: "EQUITABLE OPPORTUNITY FOR SEDG GROUP", href: "/admission/equitable-opportunity-for-sedg-group" }
+      { label: "FEE REFUND POLICY", href: "/admissions/fee-refund-policy" },
+      { label: "SCHOLARSHIP POLICY FOR DENTAL COLLEGE", href: "/admissions/scholarship-policy-for-dental-college" },
+      { label: "ADMISSION CRITERIA", href: "/admissions/admission-criteria" },
+      { label: "EQUITABLE OPPORTUNITY FOR SEDG GROUP", href: "/admissions/equitable-opportunity-for-sedg-group" }
     ]
   },
   {

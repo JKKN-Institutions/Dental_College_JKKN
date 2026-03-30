@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Scholarships & Aid | JKKN Dental College',
     description: 'Explore JKKN Dental College scholarship programs for academic excellence, sports achievements, and special circumstances. Apply for financial aid.',
-    url: 'https://dental.jkkn.ac.in/admission/scholarship-policy-for-dental-college/',
+    url: 'https://dental.jkkn.ac.in/admissions/scholarship-policy-for-dental-college/',
     type: 'website',
     siteName: 'JKKN Dental College & Hospital',
   },
@@ -66,11 +66,11 @@ const faqSchema = {
 };
 
 export default function ScholarshipPolicy() {
-  const breadcrumbSchema = generateBreadcrumbSchema('/admission/scholarship-policy-for-dental-college');
+  const breadcrumbSchema = generateBreadcrumbSchema('/admissions/scholarship-policy-for-dental-college');
   const speakableSchema = generateSpeakableWebPageSchema({
     title: 'Scholarships & Aid | JKKN Dental College',
     description: 'Explore JKKN Dental College scholarship programs for academic excellence, sports achievements, and special circumstances. Apply for financial aid.',
-    url: 'https://dental.jkkn.ac.in/admission/scholarship-policy-for-dental-college/',
+    url: 'https://dental.jkkn.ac.in/admissions/scholarship-policy-for-dental-college/',
     speakableCssSelectors: ['h1', '.hero-description', 'article p'],
   });
 

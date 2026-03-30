@@ -369,7 +369,7 @@ export default function AIDentalCampus() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="/admission/prospectus"
+              href="/admissions/prospectus"
               className="inline-flex items-center justify-center gap-2 bg-white text-blue-900 px-8 py-4 rounded-lg font-semibold hover:bg-blue-50 transition-colors duration-300 shadow-lg"
             >
               View Prospectus

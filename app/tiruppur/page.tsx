@@ -277,7 +277,7 @@ export default function TiruppurPage() {
                   ))}
                 </dl>
                 <p className="text-gray-400 text-sm mb-6">{prog.eligibility}</p>
-                <Link href="/admission/" className="block text-center bg-[#FBFBEE] hover:bg-[#e8f5e9] text-[#006837] font-semibold py-3 rounded-xl transition-colors text-sm">
+                <Link href="/admissions/" className="block text-center bg-[#FBFBEE] hover:bg-[#e8f5e9] text-[#006837] font-semibold py-3 rounded-xl transition-colors text-sm">
                   Enquire About This Course
                 </Link>
               </div>
@@ -287,7 +287,7 @@ export default function TiruppurPage() {
             <Link href="/fees-structure/" className="inline-block bg-white border border-[#7cb983] hover:bg-[#e8f5e9] text-[#006837] font-semibold px-6 py-3 rounded-xl transition-colors text-sm">
               View Fees Structure
             </Link>
-            <Link href="/admission/" className="inline-block bg-[#006837] hover:bg-[#002309] text-white font-semibold px-6 py-3 rounded-xl transition-colors text-sm">
+            <Link href="/admissions/" className="inline-block bg-[#006837] hover:bg-[#002309] text-white font-semibold px-6 py-3 rounded-xl transition-colors text-sm">
               Admission Process
             </Link>
           </div>

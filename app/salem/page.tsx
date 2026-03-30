@@ -328,7 +328,7 @@ export default function SalemPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mt-6">
             <Link
-              href="/admission/"
+              href="/admissions/"
               className="inline-block bg-[#7cb983] hover:bg-[#6ba872] text-white font-bold px-8 py-4 rounded-full transition-all transform hover:scale-105 shadow-lg text-base"
             >
               Start Admission Process

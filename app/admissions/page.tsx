@@ -341,7 +341,7 @@ const admissionPages = [
   {
     title: 'Admission Criteria',
     description: 'BDS & MDS eligibility, NEET requirements, age limits, and selection process.',
-    href: '/admission/admission-criteria/',
+    href: '/admissions/admission-criteria/',
     icon: ClipboardList,
   },
   {
@@ -353,25 +353,25 @@ const admissionPages = [
   {
     title: 'Scholarships & Aid',
     description: 'Merit, sports, single parent, and government scholarships with application details.',
-    href: '/admission/scholarship-policy-for-dental-college/',
+    href: '/admissions/scholarship-policy-for-dental-college/',
     icon: Award,
   },
   {
     title: 'Fee Refund Policy',
     description: 'Refund timelines, UGC guidelines, and withdrawal procedures.',
-    href: '/admission/fee-refund-policy/',
+    href: '/admissions/fee-refund-policy/',
     icon: IndianRupee,
   },
   {
     title: 'Prospectus',
     description: 'Download the official admission prospectus with complete program and campus details.',
-    href: '/admission/prospectus/',
+    href: '/admissions/prospectus/',
     icon: FileText,
   },
   {
     title: 'SEDG Equitable Opportunity',
     description: 'Inclusive admission policies for socio-economically disadvantaged groups per UGC 2024.',
-    href: '/admission/equitable-opportunity-for-sedg-group/',
+    href: '/admissions/equitable-opportunity-for-sedg-group/',
     icon: Users,
   },
 ];
@@ -456,7 +456,7 @@ const trustBadges = [
 /* ------------------------------------------------------------------ */
 
 export default function AdmissionPage() {
-  const breadcrumbSchema = generateBreadcrumbSchema('/admission');
+  const breadcrumbSchema = generateBreadcrumbSchema('/admissions');
   const speakableSchema = generateSpeakableWebPageSchema({
     title: 'Admission 2026-27 | BDS & MDS | JKKN Dental College',
     description:

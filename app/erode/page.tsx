@@ -283,7 +283,7 @@ export default function ErodePage() {
                 <Link href={prog.href} className="text-[#006837] hover:underline text-sm font-medium block mb-4">
                   {prog.level === 'UG' ? 'View Bachelor of Dental Surgery (BDS) Details →' : 'View Master of Dental Surgery (MDS) Specializations →'}
                 </Link>
-                <Link href="/admission/" className="block text-center bg-[#FBFBEE] hover:bg-[#e8f5e9] text-[#006837] font-semibold py-3 rounded-xl transition-colors text-sm">
+                <Link href="/admissions/" className="block text-center bg-[#FBFBEE] hover:bg-[#e8f5e9] text-[#006837] font-semibold py-3 rounded-xl transition-colors text-sm">
                   Enquire About This Course
                 </Link>
               </div>
@@ -293,7 +293,7 @@ export default function ErodePage() {
             <Link href="/fees-structure/" className="inline-block bg-white border border-[#7cb983] hover:bg-[#e8f5e9] text-[#006837] font-semibold px-6 py-3 rounded-xl transition-colors text-sm">
               View Fees Structure
             </Link>
-            <Link href="/admission/" className="inline-block bg-[#006837] hover:bg-[#002309] text-white font-semibold px-6 py-3 rounded-xl transition-colors text-sm">
+            <Link href="/admissions/" className="inline-block bg-[#006837] hover:bg-[#002309] text-white font-semibold px-6 py-3 rounded-xl transition-colors text-sm">
               Admission Process
             </Link>
           </div>
@@ -557,7 +557,7 @@ export default function ErodePage() {
             </Link>
           </div>
           <div className="flex items-center justify-center gap-6 flex-wrap">
-            <Link href="/admission/" className="text-[#006837] hover:underline text-sm">Admission Process</Link>
+            <Link href="/admissions/" className="text-[#006837] hover:underline text-sm">Admission Process</Link>
             <Link href="/fees-structure/" className="text-[#006837] hover:underline text-sm">Fee Structure</Link>
             <Link href="/contact-us/" className="text-[#006837] hover:underline text-sm">Contact JKKN Dental College &amp; Hospital</Link>
           </div>

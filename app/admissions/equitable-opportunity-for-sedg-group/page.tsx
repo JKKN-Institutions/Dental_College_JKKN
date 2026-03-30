@@ -12,18 +12,18 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Equitable Opportunity for SEDG Group - JKKN Dental College',
     description: 'JKKN Dental College\'s commitment to inclusive education through equitable access for Socio-Economically Disadvantaged Groups per UGC 2024.',
-    url: 'https://dental.jkkn.ac.in/admission/equitable-opportunity-for-sedg-group/',
+    url: 'https://dental.jkkn.ac.in/admissions/equitable-opportunity-for-sedg-group/',
     type: 'website',
     siteName: 'JKKN Dental College & Hospital',
   },
 };
 
 export default function EquitableOpportunityForSEDGGroup() {
-  const breadcrumbSchema = generateBreadcrumbSchema('/admission/equitable-opportunity-for-sedg-group');
+  const breadcrumbSchema = generateBreadcrumbSchema('/admissions/equitable-opportunity-for-sedg-group');
   const speakableSchema = generateSpeakableWebPageSchema({
     title: 'Equitable Opportunity for SEDG Group - JKKN Dental College',
     description: "JKKN Dental College's commitment to inclusive education through equitable access for Socio-Economically Disadvantaged Groups per UGC 2024.",
-    url: 'https://dental.jkkn.ac.in/admission/equitable-opportunity-for-sedg-group/',
+    url: 'https://dental.jkkn.ac.in/admissions/equitable-opportunity-for-sedg-group/',
     speakableCssSelectors: ['h1', '.hero-description', 'article p'],
   });
 

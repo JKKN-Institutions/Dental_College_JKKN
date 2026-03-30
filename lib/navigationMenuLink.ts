@@ -269,17 +269,17 @@ export function GetDentalCollegePages(pathname: string): MenuGroup[] {
       groupLabel: 'Admission',
       menus: [
         {
-          href: '/admission',
+          href: '/admissions',
           label: 'Admission',
           icon: FileText,
-          active: pathname.startsWith('/admission'),
+          active: pathname.startsWith('/admissions'),
           submenus: [
-            { href: '/admission/prospectus', label: 'Prospectus', icon: BookMarked, active: pathname === '/admission/prospectus' },
-            { href: '/admission/admission-process-guidelines/admission-criterion-in-others', label: 'Admission Criterion in Others', icon: ListChecks, active: pathname.includes('/admission-criterion-in-others') },
-            { href: '/admission/admission-criteria', label: 'Admission Criteria', icon: ListOrdered, active: pathname === '/admission/admission-criteria' },
-            { href: '/admission/fee-refund-policy/ugc-fee-refund-policy', label: 'Fee Refund Policy', icon: RefreshCcw, active: pathname.includes('/fee-refund') },
-            { href: '/admission/scholarship-policy-for-dental-college', label: 'Scholarship Policy', icon: Gift, active: pathname === '/admission/scholarship-policy-for-dental-college' },
-            { href: '/admission/equitable-opportunity-for-sedg-group/equitable-opportunity-for-sedgs', label: 'SEDG Opportunity', icon: HandHeart, active: pathname.includes('/sedg') }
+            { href: '/admissions/prospectus', label: 'Prospectus', icon: BookMarked, active: pathname === '/admissions/prospectus' },
+            { href: '/admissions/admission-process-guidelines/admission-criterion-in-others', label: 'Admission Criterion in Others', icon: ListChecks, active: pathname.includes('/admission-criterion-in-others') },
+            { href: '/admissions/admission-criteria', label: 'Admission Criteria', icon: ListOrdered, active: pathname === '/admissions/admission-criteria' },
+            { href: '/admissions/fee-refund-policy/ugc-fee-refund-policy', label: 'Fee Refund Policy', icon: RefreshCcw, active: pathname.includes('/fee-refund') },
+            { href: '/admissions/scholarship-policy-for-dental-college', label: 'Scholarship Policy', icon: Gift, active: pathname === '/admissions/scholarship-policy-for-dental-college' },
+            { href: '/admissions/equitable-opportunity-for-sedg-group/equitable-opportunity-for-sedgs', label: 'SEDG Opportunity', icon: HandHeart, active: pathname.includes('/sedg') }
           ]
         }
       ]

@@ -12,18 +12,18 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Fee Refund Policy | JKKN Dental College Admission Fee Refund',
     description: 'JKKN Dental College fee refund policy for BDS and MDS admissions. Understand refund rules, timelines, and procedures as per UGC guidelines.',
-    url: 'https://dental.jkkn.ac.in/admission/fee-refund-policy/',
+    url: 'https://dental.jkkn.ac.in/admissions/fee-refund-policy/',
     type: 'website',
     siteName: 'JKKN Dental College & Hospital',
   },
 };
 
 export default function FeeRefundPolicy() {
-  const breadcrumbSchema = generateBreadcrumbSchema('/admission/fee-refund-policy');
+  const breadcrumbSchema = generateBreadcrumbSchema('/admissions/fee-refund-policy');
   const speakableSchema = generateSpeakableWebPageSchema({
     title: 'Fee Refund Policy | JKKN Dental College Admission Fee Refund',
     description: 'JKKN Dental College fee refund policy for BDS and MDS admissions. Understand refund rules, timelines, and procedures as per UGC guidelines.',
-    url: 'https://dental.jkkn.ac.in/admission/fee-refund-policy/',
+    url: 'https://dental.jkkn.ac.in/admissions/fee-refund-policy/',
     speakableCssSelectors: ['h1', '.hero-description', 'article p'],
   });
 

@@ -163,20 +163,21 @@ export const siteContent = {
       },
       {
         label: "ADMISSION & FEE",
-        href: "/admission",
+        href: "/admissions",
         submenu: [
-          { label: "PROSPECTUS", href: "/admission/prospectus" },
+          { label: "ADMISSION", href: "/admissions" },
+          { label: "PROSPECTUS", href: "/admissions/prospectus" },
           {
             label: "ADMISSION PROCESS & GUIDELINES",
-            href: "/admission/admission-process-guidelines",
+            href: "/admissions/admission-process-guidelines",
             submenu: [
-              { label: "ADMISSION CRITERION IN OTHERS", href: "/admission/admission-process-guidelines/admission-criterion-in-others" }
+              { label: "ADMISSION CRITERION IN OTHERS", href: "/admissions/admission-process-guidelines/admission-criterion-in-others" }
             ]
           },
-          { label: "FEE REFUND POLICY", href: "/admission/fee-refund-policy" },
-          { label: "SCHOLARSHIP POLICY FOR DENTAL COLLEGE", href: "/admission/scholarship-policy-for-dental-college" },
-          { label: "ADMISSION CRITERIA", href: "/admission/admission-criteria" },
-          { label: "EQUITABLE OPPORTUNITY FOR SEDG GROUP", href: "/admission/equitable-opportunity-for-sedg-group" }
+          { label: "FEE REFUND POLICY", href: "/admissions/fee-refund-policy" },
+          { label: "SCHOLARSHIP POLICY FOR DENTAL COLLEGE", href: "/admissions/scholarship-policy-for-dental-college" },
+          { label: "ADMISSION CRITERIA", href: "/admissions/admission-criteria" },
+          { label: "EQUITABLE OPPORTUNITY FOR SEDG GROUP", href: "/admissions/equitable-opportunity-for-sedg-group" }
         ]
       },
       {

@@ -10,13 +10,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'UGC Fee Refund Policy | JKKN Dental College Admission',
     description: 'View UGC fee refund policy applicable to JKKN Dental College admissions. Understand refund eligibility, timelines, and procedures for BDS & MDS applicants.',
-    url: 'https://dental.jkkn.ac.in/admission/fee-refund-policy/ugc-fee-refund-policy/',
+    url: 'https://dental.jkkn.ac.in/admissions/fee-refund-policy/ugc-fee-refund-policy/',
     type: 'website',
     siteName: 'JKKN Dental College & Hospital',
   },
 };
 
-const breadcrumbSchema = generateBreadcrumbSchema('/admission/fee-refund-policy/ugc-fee-refund-policy/');
+const breadcrumbSchema = generateBreadcrumbSchema('/admissions/fee-refund-policy/ugc-fee-refund-policy/');
 
 export default function UGCFeeRefundPolicy() {
   return (

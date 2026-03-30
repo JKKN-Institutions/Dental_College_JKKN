@@ -10,13 +10,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Equitable Opportunity for SEDGs - JKKN Dental Admission',
     description: 'Access JKKN Dental College\'s equitable opportunity policies for Socio-Economically Disadvantaged Groups (SEDGs) in admission process.',
-    url: 'https://dental.jkkn.ac.in/admission/equitable-opportunity-for-sedg-group/equitable-opportunity-for-sedgs/',
+    url: 'https://dental.jkkn.ac.in/admissions/equitable-opportunity-for-sedg-group/equitable-opportunity-for-sedgs/',
     type: 'website',
     siteName: 'JKKN Dental College & Hospital',
   },
 };
 
-const breadcrumbSchema = generateBreadcrumbSchema('/admission/equitable-opportunity-for-sedg-group/equitable-opportunity-for-sedgs/');
+const breadcrumbSchema = generateBreadcrumbSchema('/admissions/equitable-opportunity-for-sedg-group/equitable-opportunity-for-sedgs/');
 
 export default function EquitableOpportunityForSEDGs() {
   return (

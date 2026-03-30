@@ -12,13 +12,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Admission Criteria | BDS & MDS Eligibility | JKKN Dental',
     description: 'JKKN Dental College admission criteria for BDS and MDS. NEET eligibility, qualifying marks, age limits, and selection process for dental courses.',
-    url: 'https://dental.jkkn.ac.in/admission/admission-criteria/',
+    url: 'https://dental.jkkn.ac.in/admissions/admission-criteria/',
     type: 'website',
     siteName: 'JKKN Dental College & Hospital',
   },
 };
 
-const breadcrumbSchema = generateBreadcrumbSchema('/admission/admission-criteria/');
+const breadcrumbSchema = generateBreadcrumbSchema('/admissions/admission-criteria/');
 
 const faqSchema = {
   "@context": "https://schema.org",
@@ -70,7 +70,7 @@ const faqSchema = {
 const speakableSchema = generateSpeakableWebPageSchema({
   title: 'Admission Criteria | BDS & MDS Eligibility | JKKN Dental',
   description: 'JKKN Dental College admission criteria for BDS and MDS. NEET eligibility, qualifying marks, age limits, and selection process for dental courses.',
-  url: 'https://dental.jkkn.ac.in/admission/admission-criteria/',
+  url: 'https://dental.jkkn.ac.in/admissions/admission-criteria/',
   speakableCssSelectors: ['h1', '.hero-description', 'article p'],
 });
 

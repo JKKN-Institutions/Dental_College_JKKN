@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Admission Prospectus | JKKN Dental BDS & MDS Admission',
     description: 'Download JKKN Dental College admission prospectus 2026-27. BDS & MDS courses, eligibility, fees, admission process, facilities, and placement information.',
-    url: 'https://dental.jkkn.ac.in/admission/prospectus/',
+    url: 'https://dental.jkkn.ac.in/admissions/prospectus/',
     type: 'website',
     siteName: 'JKKN Dental College & Hospital',
   },

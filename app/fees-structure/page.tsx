@@ -527,7 +527,7 @@ export default function FeesStructure() {
           </div>
 
           <div className="mt-8 text-center">
-            <Link href="/admission/scholarship-policy-for-dental-college" className="inline-flex items-center gap-2 bg-[#006837] hover:bg-[#005028] text-white font-semibold px-8 py-3 rounded-lg transition-all duration-300">
+            <Link href="/admissions/scholarship-policy-for-dental-college" className="inline-flex items-center gap-2 bg-[#006837] hover:bg-[#005028] text-white font-semibold px-8 py-3 rounded-lg transition-all duration-300">
               View Scholarship Policy
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -545,7 +545,7 @@ export default function FeesStructure() {
             <p className="text-gray-200 mb-6">
               In case of withdrawal, fee refund will be processed as per UGC and college refund policy guidelines.
             </p>
-            <Link href="/admission/fee-refund-policy" className="inline-flex items-center gap-2 bg-white text-[#006837] hover:bg-gray-100 font-semibold px-6 py-3 rounded-lg transition-all duration-300">
+            <Link href="/admissions/fee-refund-policy" className="inline-flex items-center gap-2 bg-white text-[#006837] hover:bg-gray-100 font-semibold px-6 py-3 rounded-lg transition-all duration-300">
               Read Full Refund Policy
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />

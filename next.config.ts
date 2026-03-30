@@ -30,6 +30,10 @@ const nextConfig: NextConfig = {
       { source: '/iqac/', destination: '/iqac', permanent: true },
       { source: '/alumni/', destination: '/alumni', permanent: true },
 
+      // Admission path rename: /admission → /admissions
+      { source: '/admission', destination: '/admissions', permanent: true },
+      { source: '/admission/:path*', destination: '/admissions/:path*', permanent: true },
+
       // Misspelled URLs & Common Shortcuts
       { source: '/carrer', destination: '/information-center/careers', permanent: true },
       { source: '/carrer/', destination: '/information-center/careers', permanent: true },
@@ -177,17 +181,17 @@ const nextConfig: NextConfig = {
       { source: '/nirf-2025-sdg', destination: '/accreditation/nirf/nirf-2025/sdg-institution/nirf-2025-sdg' },
 
       // Admission section
-      { source: '/admission', destination: '/admission' },
-      { source: '/prospectus', destination: '/admission/prospectus' },
+      { source: '/admission', destination: '/admissions' },
+      { source: '/prospectus', destination: '/admissions/prospectus' },
       { source: '/admission-process-guidelines', destination: '/admission-process' },
-      { source: '/admission-criterion-in-others', destination: '/admission/admission-process-guidelines/admission-criterion-in-others' },
-      { source: '/fee-refund-policy', destination: '/admission/fee-refund-policy' },
-      { source: '/ugc-fee-refund-policy', destination: '/admission/fee-refund-policy/ugc-fee-refund-policy' },
-      { source: '/scholarship-policy-for-dental-college', destination: '/admission/scholarship-policy-for-dental-college' },
-      { source: '/admission-criteria', destination: '/admission/admission-criteria' },
-      { source: '/equitable-opportunity-for-sedg-group', destination: '/admission/equitable-opportunity-for-sedg-group' },
-      { source: '/equitable-opportunity-for-sedgs', destination: '/admission/equitable-opportunity-for-sedg-group/equitable-opportunity-for-sedgs' },
-      { source: '/ugc-guidelines', destination: '/admission/equitable-opportunity-for-sedg-group/ugc-guidelines' },
+      { source: '/admission-criterion-in-others', destination: '/admissions/admission-process-guidelines/admission-criterion-in-others' },
+      { source: '/fee-refund-policy', destination: '/admissions/fee-refund-policy' },
+      { source: '/ugc-fee-refund-policy', destination: '/admissions/fee-refund-policy/ugc-fee-refund-policy' },
+      { source: '/scholarship-policy-for-dental-college', destination: '/admissions/scholarship-policy-for-dental-college' },
+      { source: '/admission-criteria', destination: '/admissions/admission-criteria' },
+      { source: '/equitable-opportunity-for-sedg-group', destination: '/admissions/equitable-opportunity-for-sedg-group' },
+      { source: '/equitable-opportunity-for-sedgs', destination: '/admissions/equitable-opportunity-for-sedg-group/equitable-opportunity-for-sedgs' },
+      { source: '/ugc-guidelines', destination: '/admissions/equitable-opportunity-for-sedg-group/ugc-guidelines' },
       { source: '/fees-structure', destination: '/fees-structure' },
 
       // Research section

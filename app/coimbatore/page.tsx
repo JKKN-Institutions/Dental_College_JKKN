@@ -334,7 +334,7 @@ export default function CoimbatorePage() {
                   <Link href={prog.href} className="block text-center bg-[#006837] hover:bg-[#002309] text-white font-semibold py-3 rounded-xl transition-colors text-sm">
                     View Programme Details
                   </Link>
-                  <Link href="/admission/" className="block text-center bg-white hover:bg-[#e8f5e9] text-[#006837] font-semibold py-3 rounded-xl transition-colors text-sm">
+                  <Link href="/admissions/" className="block text-center bg-white hover:bg-[#e8f5e9] text-[#006837] font-semibold py-3 rounded-xl transition-colors text-sm">
                     Apply for Admission
                   </Link>
                 </div>

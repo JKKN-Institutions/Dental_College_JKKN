@@ -10,13 +10,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'UGC Guidelines for SEDG - JKKN Dental Admission Policy',
     description: 'View UGC 2024 guidelines for equitable opportunities for Socio-Economically Disadvantaged Groups at JKKN Dental College admission process.',
-    url: 'https://dental.jkkn.ac.in/admission/equitable-opportunity-for-sedg-group/ugc-guidelines/',
+    url: 'https://dental.jkkn.ac.in/admissions/equitable-opportunity-for-sedg-group/ugc-guidelines/',
     type: 'website',
     siteName: 'JKKN Dental College & Hospital',
   },
 };
 
-const breadcrumbSchema = generateBreadcrumbSchema('/admission/equitable-opportunity-for-sedg-group/ugc-guidelines/');
+const breadcrumbSchema = generateBreadcrumbSchema('/admissions/equitable-opportunity-for-sedg-group/ugc-guidelines/');
 
 export default function UGCGuidelines() {
   return (
