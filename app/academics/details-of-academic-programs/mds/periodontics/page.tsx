@@ -1247,9 +1247,9 @@ export default function MDSPeriodontics() {
             Join our prestigious MDS Periodontics program and transform your career with world-class training in periodontal surgery and dental implantology at J.K.K. Nattraja Dental College.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <button className="bg-white text-[#7cb983] hover:bg-gray-100 font-bold px-10 py-4 rounded-lg text-lg transition-all duration-300 shadow-lg">
+            <a href="/pdf/brochure.pdf" download className="bg-white text-[#7cb983] hover:bg-gray-100 font-bold px-10 py-4 rounded-lg text-lg transition-all duration-300 shadow-lg">
               Download Prospectus
-            </button>
+            </a>
             <a href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8" target="_blank" rel="noopener noreferrer" className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#7cb983] font-bold px-10 py-4 rounded-lg text-lg transition-all duration-300">
               Apply Online
             </a>

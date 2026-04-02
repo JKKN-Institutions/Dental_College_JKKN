@@ -93,18 +93,24 @@ export default function ResearchDevelopmentRDCell() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-12">
             <a
               href="/pdf/RD-Reimbursement-Policy.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="block bg-[#81C784] hover:bg-[#66BB6A] text-white font-bold py-3 px-6 rounded transition-all duration-300 text-sm text-center"
             >
               R&D Reimbursement Policy
             </a>
             <a
               href="/pdf/RD-Solution-Oriented-Research-and-Entrepreneurship-Policy-BDS.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="block bg-[#81C784] hover:bg-[#66BB6A] text-white font-bold py-3 px-6 rounded transition-all duration-300 text-sm text-center"
             >
               Solution-Oriented Research and Entrepreneurship Policy BDS
             </a>
             <a
               href="/pdf/RD-Solution-Oriented-Research-and-Entrepreneurship-Policy-MDS.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="block bg-[#81C784] hover:bg-[#66BB6A] text-white font-bold py-3 px-6 rounded transition-all duration-300 text-sm text-center"
             >
               Solution-Oriented Research and Entrepreneurship Policy MDS
@@ -114,6 +120,8 @@ export default function ResearchDevelopmentRDCell() {
           <div className="mb-12">
             <a
               href="/pdf/RD-UGC-Guidelines.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="block bg-[#81C784] hover:bg-[#66BB6A] text-white font-bold py-3 px-6 rounded transition-all duration-300 text-sm text-center"
             >
               UGC Guidelines

@@ -73,7 +73,7 @@ export const topMenuItems: NavItem[] = [
     href: "/administration",
     submenu: [
       { label: "OUR TRUST", href: "/our-trust" },
-      { label: "OUR MANAGEMENT", href: "our-management" },
+      { label: "OUR MANAGEMENT", href: "/our-management" },
       { label: "PRINCIPAL'S MESSAGE", href: "/administration/principals-message" },
       { label: "FINANCE OFFICER", href: "/administration/finance-officer" },
       { label: "GOVERNING BODY", href: "/administration/governing-body" },
@@ -108,12 +108,12 @@ export const topMenuItems: NavItem[] = [
         label: "ACADEMIC CALENDAR",
         href: "/academics/academic-calendar",
         submenu: [
-          { label: "ACADEMIC CALENDAR 2023-2024 & 2024-2025", href: "/academic-calendar-2023-2024-2024-2025" },
-          { label: "ACADEMIC CALENDAR 2022-2023", href: "/academic-calendar-2022-2023" },
-          { label: "ACADEMIC CALENDAR 2021-2022", href: "/academic-calendar-2021-2022" },
-          { label: "ACADEMIC CALENDAR 2020-2021", href: "/academic-calendar-2020-2021" },
-          { label: "ACADEMIC CALENDAR 2019-2020", href: "/academic-calendar-2019-2020" },
-          { label: "ACADEMIC CALENDAR 2018-2019", href: "/academic-calendar-2018-2019" }
+          { label: "ACADEMIC CALENDAR 2023-2024 & 2024-2025", href: "https://calendar.google.com/calendar/u/0/embed?src=c_a87ef5523f0037f72793de0a608042f30ce62ca343535fa73face6f00c501792@group.calendar.google.com&ctz=Asia/Kolkata&mode=AGENDA" },
+          { label: "ACADEMIC CALENDAR 2022-2023", href: "/pdf/Academic-calender-2022-2023.pdf" },
+          { label: "ACADEMIC CALENDAR 2021-2022", href: "/pdf/Academic-calender-2021-2022.pdf" },
+          { label: "ACADEMIC CALENDAR 2020-2021", href: "/pdf/Academic-calender-2020-2021.pdf" },
+          { label: "ACADEMIC CALENDAR 2019-2020", href: "/pdf/Academic-calender-2019-2020.pdf" },
+          { label: "ACADEMIC CALENDAR 2018-2019", href: "/pdf/Academic-calender-2018-2019.pdf" }
         ]
       },
       {
@@ -143,15 +143,7 @@ export const topMenuItems: NavItem[] = [
       },
       { label: "CAPABILITY ENHANCEMENT PROGRAM", href: "/academics/capability-enhancement-program" },
       { label: "PLACEMENTS", href: "/placements" },
-      { label: "CURRICULUM FEEDBACK", href: "/academics/curriculum-feedback" },
-      {
-        label: "FACULTY ACHIEVEMENTS",
-        href: "/academics/faculty-achievements",
-        submenu: [
-          { label: "FDP ATTENDED", href: "/academics/faculty-achievements/fdp-attended" },
-          { label: "WEBINAR/CONFERENCES ATTENDED", href: "/academics/faculty-achievements/webinar-conferences-attended" }
-        ]
-      }
+      { label: "CURRICULUM FEEDBACK", href: "https://form.jotform.com/240432334247045" }
     ]
   },
   {
@@ -221,7 +213,6 @@ export const topMenuItems: NavItem[] = [
       { label: "PUBLICATION", href: "/pdf/Publication-TEMPLATE.pdf" }
     ]
   },
-  { label: "IQAC", href: "/iqac" },
 ];
 
 // Navigation menu configuration - Bottom Row
@@ -253,7 +244,6 @@ export const bottomMenuItems: NavItem[] = [
       { label: "INTERNATIONAL STUDENT CELL COMMITTEE", href: "/committee/international-student-cell-committee" }
     ]
   },
-  { label: "ALUMNI", href: "/alumni" },
   {
     label: "MANDATORY DISCLOSURES",
     href: "/mandatory-disclosures",

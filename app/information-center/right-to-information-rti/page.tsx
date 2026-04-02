@@ -210,12 +210,16 @@ export default function RightToInformation() {
           <div className="flex flex-col md:flex-row gap-6 mb-12 justify-center items-center">
             <a
               href="/pdf/RTI-guide-for-cpio.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-[#5FA866] hover:bg-[#4d8f54] text-white font-bold py-3 px-8 rounded transition-colors"
             >
               RTI-guide-for-cpio
             </a>
             <a
               href="/pdf/RTI-Act-2005-Amended-English-Version.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-[#5FA866] hover:bg-[#4d8f54] text-white font-bold py-3 px-8 rounded transition-colors"
             >
               RTI Act, 2005 (Amended)-English Version

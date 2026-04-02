@@ -214,7 +214,6 @@ export const siteContent = {
           }
         ]
       },
-      { label: "IQAC", href: "/iqac" },
     ],
     bottomMenuItems: [
       {
@@ -244,7 +243,6 @@ export const siteContent = {
           "INTERNATIONAL STUDENT CELL COMMITTEE"
         ]
       },
-      { label: "ALUMNI", href: "/alumni" },
       {
         label: "MANDATORY DISCLOSURES",
         href: "/mandatory-disclosures",

@@ -52,7 +52,9 @@ export default function StudentCouncil() {
           {/* View Document Button */}
           <div className="mb-8">
             <a
-              href="/view-student-council-document"
+              href="/pdf/Student-Council-ViewDocument.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-block bg-[#E8E1F0] hover:bg-[#D9CEE8] text-gray-700 font-semibold py-3 px-8 rounded transition-all duration-300 text-base"
             >
               View Document

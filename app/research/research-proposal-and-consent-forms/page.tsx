@@ -66,6 +66,7 @@ export default function ResearchProposalAndConsentForms() {
                 </h2>
                 <a
                   href="/pdf/FORMAT-FOR-SUBMITTING-PG-DISSERTATION-PROPOSAL-RPCF.pdf"
+                  download
                   className="inline-block bg-[#E5E7EB] hover:bg-[#D1D5DB] text-[#4B5563] font-semibold py-2 px-6 rounded transition-colors duration-200"
                 >
                   "Download"
@@ -79,6 +80,7 @@ export default function ResearchProposalAndConsentForms() {
                 </h2>
                 <a
                   href="/pdf/For-Institute-Ethics-Committee-(IEC)-Human Studies-RPCF.pdf"
+                  download
                   className="inline-block bg-[#E5E7EB] hover:bg-[#D1D5DB] text-[#4B5563] font-semibold py-2 px-6 rounded transition-colors duration-200"
                 >
                   "Download"
@@ -92,6 +94,7 @@ export default function ResearchProposalAndConsentForms() {
                 </h2>
                 <a
                   href="/pdf/INFORMED-CONSENT-DOCUMENT-(ICD)-PART-I-RPCF.pdf"
+                  download
                   className="inline-block bg-[#E5E7EB] hover:bg-[#D1D5DB] text-[#4B5563] font-semibold py-2 px-6 rounded transition-colors duration-200"
                 >
                   "Download"
@@ -105,6 +108,7 @@ export default function ResearchProposalAndConsentForms() {
                 </h2>
                 <a
                   href="/pdf/INFORMED-CONSENT-DOCUMENT-(ICD)-PART-2-RPCF.pdf"
+                  download
                   className="inline-block bg-[#E5E7EB] hover:bg-[#D1D5DB] text-[#4B5563] font-semibold py-2 px-6 rounded transition-colors duration-200"
                 >
                   "Download"
@@ -123,6 +127,7 @@ export default function ResearchProposalAndConsentForms() {
                 </h2>
                 <a
                   href="/pdf/Assent-form-to-participate-in-a-clinical-research-RPCF.pdf"
+                  download
                   className="inline-block bg-[#E5E7EB] hover:bg-[#D1D5DB] text-[#4B5563] font-semibold py-2 px-6 rounded transition-colors duration-200"
                 >
                   "Download"
@@ -136,6 +141,7 @@ export default function ResearchProposalAndConsentForms() {
                 </h2>
                 <a
                   href="/pdf/Application-form-for-requesting-waiver-of-consent-RPCF.pdf"
+                  download
                   className="inline-block bg-[#E5E7EB] hover:bg-[#D1D5DB] text-[#4B5563] font-semibold py-2 px-6 rounded transition-colors duration-200"
                 >
                   "Download"
@@ -149,6 +155,7 @@ export default function ResearchProposalAndConsentForms() {
                 </h2>
                 <a
                   href="/pdf/REVIEW-EXEMPTION-APPLICATION-FORM-RPCF.pdf"
+                  download
                   className="inline-block bg-[#E5E7EB] hover:bg-[#D1D5DB] text-[#4B5563] font-semibold py-2 px-6 rounded transition-colors duration-200"
                 >
                   "Download"
@@ -162,6 +169,7 @@ export default function ResearchProposalAndConsentForms() {
                 </h2>
                 <a
                   href="/pdf/CHECK-LIST-RPCF.pdf"
+                  download
                   className="inline-block bg-[#E5E7EB] hover:bg-[#D1D5DB] text-[#4B5563] font-semibold py-2 px-6 rounded transition-colors duration-200"
                 >
                   "Download"

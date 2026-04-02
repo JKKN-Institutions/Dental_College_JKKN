@@ -372,7 +372,9 @@ export default function PlacementCellCDC() {
           {/* List of Events Button */}
           <div className="mb-12">
             <a
-              href="/list-of-events"
+              href="/pdf/LIST-OF-EVENTS-PLACEMENT-CELL- CDC.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-block bg-[#81C784] hover:bg-[#66BB6A] text-white font-bold py-4 px-8 rounded transition-all duration-300 text-base"
             >
               LIST OF EVENTS

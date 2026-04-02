@@ -277,7 +277,9 @@ export default function AddOnCourses() {
 
             {/* Button */}
             <a
-              href="/academics/courses/add-on-courses/implant-program-2025"
+              href="/pdf/Add-on-Course-Implant-program-2025.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-block bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded transition-colors duration-200"
             >
               Implant program-2025

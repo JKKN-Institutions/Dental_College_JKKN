@@ -189,36 +189,48 @@ export default function StartUp() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-12">
             <a
               href="/pdf/LIST-OF-START-UPS-.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="block bg-[#81C784] hover:bg-[#66BB6A] text-white font-bold py-3 px-6 rounded transition-all duration-300 text-sm text-center"
             >
               List Of Start Ups
             </a>
             <a
               href="/pdf/National-Innovation-and-Startup-Policy.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="block bg-[#81C784] hover:bg-[#66BB6A] text-white font-bold py-3 px-6 rounded transition-all duration-300 text-sm text-center"
             >
               National Innovation And Startup Policy
             </a>
             <a
               href="/pdf/STARTUP-AWARDS.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="block bg-[#81C784] hover:bg-[#66BB6A] text-white font-bold py-3 px-6 rounded transition-all duration-300 text-sm text-center"
             >
               Startup Awards
             </a>
             <a
               href="/pdf/Tamil-Nadu-Startup-and-Innovation-Policy-2023.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="block bg-[#81C784] hover:bg-[#66BB6A] text-white font-bold py-3 px-6 rounded transition-all duration-300 text-sm text-center"
             >
               Tamil nadu startup and innovation policy-2023
             </a>
             <a
               href="/pdf/NIF-START-UP-POLICY.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="block bg-[#81C784] hover:bg-[#66BB6A] text-white font-bold py-3 px-6 rounded transition-all duration-300 text-sm text-center"
             >
               Nif Start Up Policy
             </a>
             <a
               href="/pdf/START-UP-EVENTS.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="block bg-[#81C784] hover:bg-[#66BB6A] text-white font-bold py-3 px-6 rounded transition-all duration-300 text-sm text-center"
             >
               Start Up Events

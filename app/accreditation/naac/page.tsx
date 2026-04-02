@@ -86,17 +86,17 @@ export default function NAAC() {
                       INTRODUCTION
                     </h2>
 
-                    {/* Buttons */}
+                    {/* Labels */}
                     <div className="flex flex-wrap gap-3 mb-8">
-                      <button className="bg-[#1B5E20] hover:bg-[#145018] text-white font-bold py-3 px-6 rounded transition-all duration-300">
+                      <span className="border border-[#006837] text-[#006837] font-semibold py-2 px-4 rounded-full text-sm">
                         Best practice 1-Rural Smiles
-                      </button>
-                      <button className="bg-[#1B5E20] hover:bg-[#145018] text-white font-bold py-3 px-6 rounded transition-all duration-300">
+                      </span>
+                      <span className="border border-[#006837] text-[#006837] font-semibold py-2 px-4 rounded-full text-sm">
                         Best practice 2-Lead JKKN
-                      </button>
-                      <button className="bg-[#1B5E20] hover:bg-[#145018] text-white font-bold py-3 px-6 rounded transition-all duration-300">
+                      </span>
+                      <span className="border border-[#006837] text-[#006837] font-semibold py-2 px-4 rounded-full text-sm">
                         Institutional Distinctiveness
-                      </button>
+                      </span>
                     </div>
 
                     {/* Content */}
@@ -239,13 +239,6 @@ export default function NAAC() {
                     <h2 className="text-2xl md:text-3xl font-bold text-black mb-6">
                       ASSESSMENT AND ACCREDITATION OF HIGHER EDUCATION INSTITUTIONS
                     </h2>
-
-                    {/* Undertaking Button */}
-                    <div className="mb-6">
-                      <button className="bg-gray-200 hover:bg-gray-300 text-gray-700 font-bold py-3 px-6 rounded transition-all duration-300">
-                        Undertaking
-                      </button>
-                    </div>
 
                     {/* Content */}
                     <div className="space-y-6 text-gray-800 leading-relaxed">

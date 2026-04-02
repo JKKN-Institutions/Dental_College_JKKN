@@ -79,6 +79,8 @@ export default function AntiRaggingCommittee() {
           <div className="mb-12">
             <a
               href="/pdf/ANTI-RAGGING-COMMITTEE-ViewCommitteeMembers.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-block bg-[#0D5E2E] hover:bg-[#0A4A23] text-white font-bold py-3 px-8 rounded transition-all duration-300 text-sm uppercase"
             >
               VIEW COMMITTEE MEMBERS
@@ -115,6 +117,8 @@ export default function AntiRaggingCommittee() {
           <div className="mb-12">
             <a
               href="/pdf/ANTI-RAGGING-COMMITTEE-PublicDisclosures.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-block bg-[#0D5E2E] hover:bg-[#0A4A23] text-white font-bold py-3 px-8 rounded transition-all duration-300 text-sm uppercase"
             >
               DOWNLOAD UGC PUBLIC DISCLOSURE
@@ -151,6 +155,8 @@ export default function AntiRaggingCommittee() {
           <div className="mb-12">
             <a
               href="/pdf/ANTI-RAGGING-COMMITTEE-UGC-Guideliness.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-block bg-[#0D5E2E] hover:bg-[#0A4A23] text-white font-bold py-3 px-8 rounded transition-all duration-300 text-sm uppercase"
             >
               READ FULL UGC GUIDELINES

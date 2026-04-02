@@ -365,7 +365,7 @@ const admissionPages = [
   {
     title: 'Prospectus',
     description: 'Download the official admission prospectus with complete program and campus details.',
-    href: '/admissions/prospectus/',
+    href: '/pdf/brochure.pdf',
     icon: FileText,
   },
   {
@@ -490,7 +490,7 @@ export default function AdmissionPage() {
         <div className="max-w-7xl mx-auto text-center">
           {/* AI Campus + Year Badges */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-6">
-            <span className="inline-flex items-center gap-2 bg-[#FFC107]/20 backdrop-blur-sm text-[#FFC107] px-4 py-2 rounded-full text-sm font-bold border border-[#FFC107]/30">
+            <span className="inline-flex items-center gap-2 bg-[#7cb983]/20 backdrop-blur-sm text-[#7cb983] px-4 py-2 rounded-full text-sm font-bold border border-[#7cb983]/30">
               <Cpu className="w-4 h-4" />
               India&apos;s 1st AI-Integrated Dental Campus
             </span>
@@ -502,7 +502,7 @@ export default function AdmissionPage() {
 
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
             Admission Open for{' '}
-            <span className="text-[#FFC107]">BDS & MDS</span>
+            <span className="text-[#7cb983]">BDS & MDS</span>
           </h1>
 
           <p className="hero-description text-lg md:text-xl text-gray-200 max-w-3xl mx-auto mb-8">
@@ -521,7 +521,7 @@ export default function AdmissionPage() {
               { number: `${collegeFacts.collegeAge}+`, label: 'Years of Excellence' },
             ].map((stat) => (
               <div key={stat.label} className="text-center">
-                <div className="text-3xl sm:text-4xl font-bold text-[#FFC107]">
+                <div className="text-3xl sm:text-4xl font-bold text-[#7cb983]">
                   {stat.number}
                 </div>
                 <div className="text-sm text-gray-200 mt-1">{stat.label}</div>
@@ -535,17 +535,9 @@ export default function AdmissionPage() {
               href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-[#FFC107] hover:bg-[#e6ad00] text-[#006837] font-bold py-3.5 px-8 rounded-full transition-all duration-300 min-h-[44px] flex items-center justify-center gap-2 hover:scale-105 active:scale-95 text-lg"
+              className="bg-[#7cb983] hover:bg-[#6ba872] text-white font-bold py-3.5 px-8 rounded-full transition-all duration-300 min-h-[44px] flex items-center justify-center gap-2 hover:scale-105 active:scale-95 text-lg"
             >
               Apply Now <ArrowRight className="w-5 h-5" />
-            </a>
-            <a
-              href="https://wa.me/919345855001?text=Hi%2C%20I%20am%20interested%20in%20admission%20at%20JKKN%20Dental%20College.%20Please%20share%20details."
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold py-3.5 px-8 rounded-full transition-all duration-300 min-h-[44px] flex items-center justify-center gap-2 hover:scale-105 active:scale-95 text-lg"
-            >
-              <MessageCircle className="w-5 h-5" /> WhatsApp Us
             </a>
           </div>
         </div>
@@ -560,7 +552,7 @@ export default function AdmissionPage() {
             {trustBadges.map((badge) => (
               <div
                 key={badge.label}
-                className="flex items-center gap-3 bg-[#FBF8F3] rounded-xl px-4 py-3 border border-gray-100"
+                className="flex items-center gap-3 bg-[#FBFBEE] rounded-xl px-4 py-3 border border-gray-100"
               >
                 <div className="bg-[#006837] text-white w-10 h-10 rounded-lg flex items-center justify-center shrink-0">
                   <badge.icon className="w-5 h-5" />
@@ -598,7 +590,7 @@ export default function AdmissionPage() {
             {programHighlights.map((prog) => (
               <div
                 key={prog.program}
-                className="bg-[#FBF8F3] rounded-2xl p-8 border border-gray-100 hover:shadow-xl transition-shadow duration-300"
+                className="bg-[#FBFBEE] rounded-2xl p-8 border border-gray-100 hover:shadow-xl transition-shadow duration-300"
               >
                 <div className="flex items-center gap-4 mb-6">
                   <div className="bg-[#006837] text-white w-14 h-14 rounded-xl flex items-center justify-center">
@@ -653,7 +645,7 @@ export default function AdmissionPage() {
       {/* ============================================================ */}
       {/*  CLINICAL EXPOSURE STATS                                     */}
       {/* ============================================================ */}
-      <section className="py-16 px-4 bg-gradient-to-br from-[#006837] to-[#004d2a]">
+      <section className="py-16 px-4 bg-gradient-to-br from-[#006837] to-[#002309]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
@@ -672,7 +664,7 @@ export default function AdmissionPage() {
                 key={stat.label}
                 className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 text-center border border-white/10"
               >
-                <stat.icon className="w-8 h-8 text-[#FFC107] mx-auto mb-3" />
+                <stat.icon className="w-8 h-8 text-[#7cb983] mx-auto mb-3" />
                 <div className="text-3xl sm:text-4xl font-bold text-white mb-1">
                   {stat.number}
                 </div>
@@ -691,7 +683,7 @@ export default function AdmissionPage() {
                 key={point}
                 className="flex items-start gap-3 bg-white/5 rounded-xl p-4 border border-white/10"
               >
-                <CheckCircle className="w-5 h-5 text-[#FFC107] mt-0.5 shrink-0" />
+                <CheckCircle className="w-5 h-5 text-[#7cb983] mt-0.5 shrink-0" />
                 <p className="text-sm text-gray-200">{point}</p>
               </div>
             ))}
@@ -702,7 +694,7 @@ export default function AdmissionPage() {
       {/* ============================================================ */}
       {/*  ADMISSION PROCESS STEPS                                     */}
       {/* ============================================================ */}
-      <section className="py-16 px-4 bg-[#FBF8F3]">
+      <section className="py-16 px-4 bg-[#FBFBEE]">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#006837] mb-4">
@@ -749,10 +741,32 @@ export default function AdmissionPage() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
             {admissionPages.map((page) => (
+              page.href.endsWith('.pdf') ? (
+                <a
+                  key={page.href}
+                  href={page.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group bg-[#FBFBEE] rounded-2xl p-6 hover:shadow-xl hover:border-[#7cb983] border border-transparent transition-all duration-300"
+                >
+                  <div className="flex items-center gap-4 mb-4">
+                    <div className="bg-[#7cb983] text-white w-12 h-12 rounded-xl flex items-center justify-center group-hover:bg-[#006837] transition-colors duration-300">
+                      <page.icon className="w-6 h-6" />
+                    </div>
+                    <h3 className="text-lg font-bold text-[#006837]">
+                      {page.title}
+                    </h3>
+                  </div>
+                  <p className="text-gray-600 text-sm mb-4">{page.description}</p>
+                  <span className="text-[#7cb983] text-sm font-semibold inline-flex items-center gap-1 group-hover:translate-x-2 transition-transform duration-300">
+                    Learn More <ArrowRight className="w-4 h-4" />
+                  </span>
+                </a>
+              ) : (
               <Link
                 key={page.href}
                 href={page.href}
-                className="group bg-[#FBF8F3] rounded-2xl p-6 hover:shadow-xl hover:border-[#7cb983] border border-transparent transition-all duration-300"
+                className="group bg-[#FBFBEE] rounded-2xl p-6 hover:shadow-xl hover:border-[#7cb983] border border-transparent transition-all duration-300"
               >
                 <div className="flex items-center gap-4 mb-4">
                   <div className="bg-[#7cb983] text-white w-12 h-12 rounded-xl flex items-center justify-center group-hover:bg-[#006837] transition-colors duration-300">
@@ -767,7 +781,7 @@ export default function AdmissionPage() {
                   Learn More <ArrowRight className="w-4 h-4" />
                 </span>
               </Link>
-            ))}
+              )))}
           </div>
         </div>
       </section>
@@ -775,7 +789,7 @@ export default function AdmissionPage() {
       {/* ============================================================ */}
       {/*  CAREER OUTCOMES AFTER BDS                                   */}
       {/* ============================================================ */}
-      <section className="py-16 px-4 bg-[#FBF8F3]">
+      <section className="py-16 px-4 bg-[#FBFBEE]">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#006837] mb-4">
@@ -821,7 +835,7 @@ export default function AdmissionPage() {
             {whyChooseReasons.map((reason) => (
               <div
                 key={reason.text}
-                className="bg-[#FBF8F3] rounded-xl p-6 flex items-start gap-4 shadow-sm hover:shadow-md transition-shadow duration-300"
+                className="bg-[#FBFBEE] rounded-xl p-6 flex items-start gap-4 shadow-sm hover:shadow-md transition-shadow duration-300"
               >
                 <reason.icon className="w-6 h-6 text-[#7cb983] mt-0.5 shrink-0" />
                 <p className="text-gray-700 font-medium">{reason.text}</p>
@@ -850,17 +864,9 @@ export default function AdmissionPage() {
               href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-[#FFC107] hover:bg-[#e6ad00] text-[#006837] font-bold px-8 py-4 rounded-full transition-all duration-300 min-h-[44px] flex items-center justify-center gap-2 hover:scale-105 active:scale-95 text-lg"
+              className="bg-[#7cb983] hover:bg-[#6ba872] text-[#006837] font-bold px-8 py-4 rounded-full transition-all duration-300 min-h-[44px] flex items-center justify-center gap-2 hover:scale-105 active:scale-95 text-lg"
             >
               Apply Now <ArrowRight className="w-5 h-5" />
-            </a>
-            <a
-              href="https://wa.me/919345855001?text=Hi%2C%20I%20am%20interested%20in%20admission%20at%20JKKN%20Dental%20College.%20Please%20share%20details."
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold px-8 py-4 rounded-full transition-all duration-300 min-h-[44px] flex items-center justify-center gap-2 hover:scale-105 active:scale-95 text-lg"
-            >
-              <MessageCircle className="w-5 h-5" /> WhatsApp Us
             </a>
             <a
               href="tel:+919345855001"
@@ -900,7 +906,7 @@ export default function AdmissionPage() {
       {/* ============================================================ */}
       {/*  FAQ SECTION (matches schema)                                */}
       {/* ============================================================ */}
-      <section className="py-16 px-4 bg-[#FBF8F3]">
+      <section className="py-16 px-4 bg-[#FBFBEE]">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-[#006837] text-center mb-12">
             Frequently Asked Questions

@@ -168,24 +168,32 @@ export default function MOUPage() {
           <div className="space-y-4 mb-12">
             <a
               href="/pdf/AROKYA-HOSPITAL-SALEM-MOU.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="block bg-[#81C784] hover:bg-[#66BB6A] text-white font-bold py-4 px-6 rounded transition-all duration-300 text-base w-fit"
             >
               AROKYA HOSPITAL SALEM MOU
             </a>
             <a
               href="/pdf/DHANVANTHRI-MOU.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="block bg-[#81C784] hover:bg-[#66BB6A] text-white font-bold py-4 px-6 rounded transition-all duration-300 text-base w-fit"
             >
               DHANVANTHRI MOU
             </a>
             <a
               href="/pdf/NANDHA-COLLEGE-MOU.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="block bg-[#81C784] hover:bg-[#66BB6A] text-white font-bold py-4 px-6 rounded transition-all duration-300 text-base w-fit"
             >
               NANDHA COLLEGE MOU
             </a>
             <a
               href="/pdf/SENTHIL-MULTI-SPECIALIT-HOSPITAL-MOU.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="block bg-[#81C784] hover:bg-[#66BB6A] text-white font-bold py-4 px-6 rounded transition-all duration-300 text-base w-fit"
             >
               SENTHIL MULTI SPECIALIT HOSPITAL- MOU- 06.03.2025

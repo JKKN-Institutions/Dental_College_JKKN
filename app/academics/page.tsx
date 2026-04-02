@@ -122,14 +122,14 @@ export default function Academics() {
                     BDS
                   </div>
                   <div>
-                    <h2 className="text-2xl font-bold text-[#006837]">Bachelor of Dental Surgery</h2>
-                    <p className="text-gray-600">5-Year Undergraduate Program</p>
+                    <h2 className="text-xl font-bold text-[#006837]">Bachelor of Dental Surgery</h2>
+                    <p className="text-sm text-gray-600">5-Year Undergraduate Program</p>
                   </div>
                 </div>
-                <p className="text-gray-700 mb-6 leading-relaxed">
+                <p className="text-sm text-gray-700 mb-6 leading-relaxed">
                   Comprehensive undergraduate program with 100 seats. Includes 4 years of academic training plus 1-year compulsory rotatory internship. DCI approved curriculum with extensive clinical exposure.
                 </p>
-                <div className="flex items-center text-[#7cb983] font-semibold group-hover:translate-x-2 transition-transform">
+                <div className="flex items-center text-sm text-[#7cb983] font-semibold group-hover:translate-x-2 transition-transform">
                   Learn More →
                 </div>
               </div>
@@ -143,14 +143,14 @@ export default function Academics() {
                     MDS
                   </div>
                   <div>
-                    <h2 className="text-2xl font-bold text-[#006837]">Master of Dental Surgery</h2>
-                    <p className="text-gray-600">3-Year Postgraduate Programs</p>
+                    <h2 className="text-xl font-bold text-[#006837]">Master of Dental Surgery</h2>
+                    <p className="text-sm text-gray-600">3-Year Postgraduate Programs</p>
                   </div>
                 </div>
-                <p className="text-gray-700 mb-6 leading-relaxed">
+                <p className="text-sm text-gray-700 mb-6 leading-relaxed">
                   5 DCI-approved MDS specializations with 18 total seats. Advanced postgraduate training in specialized fields with research, dissertation, and comprehensive clinical practice.
                 </p>
-                <div className="flex items-center text-[#7cb983] font-semibold group-hover:translate-x-2 transition-transform">
+                <div className="flex items-center text-sm text-[#7cb983] font-semibold group-hover:translate-x-2 transition-transform">
                   Explore Specializations →
                 </div>
               </div>
@@ -204,7 +204,7 @@ export default function Academics() {
                     <h3 className="text-lg font-bold group-hover:text-white text-[#006837]">
                       {spec.name}
                     </h3>
-                    <span className="bg-[#7cb983] group-hover:bg-white group-hover:text-[#006837] text-white px-3 py-1 rounded-full text-sm font-semibold">
+                    <span className="bg-[#7cb983] group-hover:bg-white group-hover:text-[#006837] text-white px-3 py-1 rounded-full text-sm font-semibold whitespace-nowrap shrink-0 ml-2">
                       {spec.seats} Seats
                     </span>
                   </div>

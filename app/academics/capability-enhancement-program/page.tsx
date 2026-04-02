@@ -130,13 +130,17 @@ export default function CapabilityEnhancementProgram() {
           {/* Buttons */}
           <div className="flex flex-wrap gap-4">
             <a
-              href="/view-capability-enhancement-document"
+              href="/pdf/Capability-Enhancement-Program-ViewDocument.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-block bg-gray-200 hover:bg-gray-300 text-gray-700 font-semibold py-3 px-6 rounded transition-colors duration-200"
             >
               View Document
             </a>
             <a
-              href="/neet-qualifiers"
+              href="/pdf/Capability-Enhancement-Program-NeetQualifiers.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-block bg-gray-200 hover:bg-gray-300 text-gray-700 font-semibold py-3 px-6 rounded transition-colors duration-200"
             >
               Neet Qualifiers

@@ -392,8 +392,8 @@ export default function BDSProgram() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
-              <h3 className="font-bold text-gray-800 mb-3">Program Duration</h3>
-              <div className="text-3xl font-bold text-[#7cb983] mb-2">5 Years</div>
+              <h3 className="text-sm font-bold text-gray-800 mb-3">Program Duration</h3>
+              <div className="text-2xl font-bold text-[#7cb983] mb-2">5 Years</div>
               <p className="text-sm text-gray-600">Including 1-year Internship</p>
             </div>
 
@@ -404,8 +404,8 @@ export default function BDSProgram() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                 </svg>
               </div>
-              <h3 className="font-bold text-gray-800 mb-3">Annual Intake</h3>
-              <div className="text-3xl font-bold text-[#7cb983] mb-2">100 Seats</div>
+              <h3 className="text-sm font-bold text-gray-800 mb-3">Annual Intake</h3>
+              <div className="text-2xl font-bold text-[#7cb983] mb-2">100 Seats</div>
               <p className="text-sm text-gray-600">As per DCI Norms</p>
             </div>
 
@@ -416,8 +416,8 @@ export default function BDSProgram() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
                 </svg>
               </div>
-              <h3 className="font-bold text-gray-800 mb-3">Fee Structure</h3>
-              <div className="text-3xl font-bold text-[#7cb983] mb-2">Affordable</div>
+              <h3 className="text-sm font-bold text-gray-800 mb-3">Fee Structure</h3>
+              <div className="text-2xl font-bold text-[#7cb983] mb-2">Affordable</div>
               <p className="text-sm text-gray-600">Contact Admissions</p>
             </div>
 
@@ -428,8 +428,8 @@ export default function BDSProgram() {
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
               </div>
-              <h3 className="font-bold text-gray-800 mb-3">Accreditation</h3>
-              <div className="text-3xl font-bold text-[#7cb983] mb-2">DCI & NAAC</div>
+              <h3 className="text-sm font-bold text-gray-800 mb-3">Accreditation</h3>
+              <div className="text-2xl font-bold text-[#7cb983] mb-2">DCI & NAAC</div>
               <p className="text-sm text-gray-600">Nationally Recognized</p>
             </div>
           </div>
@@ -1187,9 +1187,9 @@ export default function BDSProgram() {
               <div className="bg-gradient-to-br from-[#006837] to-[#002309] rounded-2xl p-12 text-center relative overflow-hidden shadow-2xl">
                 <h3 className="text-4xl md:text-5xl font-bold text-white mb-8">Dental Career</h3>
 
-                <div className="absolute bottom-2 right-2 sm:bottom-8 sm:right-8 bg-white rounded-lg sm:rounded-xl shadow-lg p-3 sm:p-6 scale-75 sm:scale-100 origin-bottom-right">
-                  <div className="text-3xl sm:text-5xl font-bold text-[#7cb983] mb-1 sm:mb-2">95%</div>
-                  <div className="text-xs sm:text-sm text-gray-600 font-semibold">Placement Rate</div>
+                <div className="absolute bottom-4 right-4 bg-white rounded-lg shadow-lg p-3">
+                  <div className="text-xl font-bold text-[#7cb983] mb-1">95%</div>
+                  <div className="text-xs text-gray-600 font-semibold">Placement Rate</div>
                 </div>
               </div>
             </div>
@@ -1430,9 +1430,9 @@ export default function BDSProgram() {
             <a href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8" target="_blank" rel="noopener noreferrer" className="bg-[#7cb983] hover:bg-[#6ba872] text-white font-semibold px-10 py-4 rounded-lg text-lg transition-all duration-300 shadow-lg hover:shadow-xl inline-block">
               Apply for Admission
             </a>
-            <button className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#006837] font-semibold px-10 py-4 rounded-lg text-lg transition-all duration-300">
+            <a href="/pdf/brochure.pdf" download className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#006837] font-semibold px-10 py-4 rounded-lg text-lg transition-all duration-300">
               Download Brochure
-            </button>
+            </a>
           </div>
         </div>
       </section>

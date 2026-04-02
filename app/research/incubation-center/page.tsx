@@ -135,6 +135,8 @@ export default function IncubationCenter() {
           <div className="mb-12">
             <a
               href="/pdf/NIF-Nattraja-Launchpad-for-Bioconvergence-INCUBATION-CENTER.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-block bg-[#81C784] hover:bg-[#66BB6A] text-white font-bold py-3 px-8 rounded transition-all duration-300 text-sm"
             >
               Nattraja Launchpad for Bioconvergence

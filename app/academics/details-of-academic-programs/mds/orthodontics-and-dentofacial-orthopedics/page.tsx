@@ -939,43 +939,43 @@ export default function MDSOrthodontics() {
           {/* Gallery Grid */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
             {/* Clinical Setup */}
-            <div className="bg-gradient-to-br from-[#006837] to-[#002309] rounded-2xl aspect-square flex items-center justify-center p-4 md:p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <h3 className="text-lg md:text-3xl font-bold text-white text-center">Clinical Setup</h3>
+            <div className="bg-gradient-to-br from-[#006837] to-[#002309] rounded-2xl aspect-square flex items-center justify-center p-3 md:p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <h3 className="text-base md:text-2xl font-bold text-white text-center">Clinical Setup</h3>
             </div>
 
             {/* Digital Lab */}
-            <div className="bg-gradient-to-br from-[#7cb983] to-[#6ba872] rounded-2xl aspect-square flex items-center justify-center p-4 md:p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <h3 className="text-lg md:text-3xl font-bold text-white text-center">Digital Lab</h3>
+            <div className="bg-gradient-to-br from-[#7cb983] to-[#6ba872] rounded-2xl aspect-square flex items-center justify-center p-3 md:p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <h3 className="text-base md:text-2xl font-bold text-white text-center">Digital Lab</h3>
             </div>
 
             {/* CBCT Center */}
-            <div className="bg-gradient-to-br from-[#7cb983] to-[#006837] rounded-2xl aspect-square flex items-center justify-center p-4 md:p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <h3 className="text-lg md:text-3xl font-bold text-white text-center">CBCT Center</h3>
+            <div className="bg-gradient-to-br from-[#7cb983] to-[#006837] rounded-2xl aspect-square flex items-center justify-center p-3 md:p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <h3 className="text-base md:text-2xl font-bold text-white text-center">CBCT Center</h3>
             </div>
 
             {/* Wire Lab */}
-            <div className="bg-gradient-to-br from-[#006837] to-[#002309] rounded-2xl aspect-square flex items-center justify-center p-4 md:p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <h3 className="text-lg md:text-3xl font-bold text-white text-center">Wire Lab</h3>
+            <div className="bg-gradient-to-br from-[#006837] to-[#002309] rounded-2xl aspect-square flex items-center justify-center p-3 md:p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <h3 className="text-base md:text-2xl font-bold text-white text-center">Wire Lab</h3>
             </div>
 
             {/* Seminar Hall */}
-            <div className="bg-gradient-to-br from-[#7cb983] to-[#6ba872] rounded-2xl aspect-square flex items-center justify-center p-4 md:p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <h3 className="text-lg md:text-3xl font-bold text-white text-center">Seminar Hall</h3>
+            <div className="bg-gradient-to-br from-[#7cb983] to-[#6ba872] rounded-2xl aspect-square flex items-center justify-center p-3 md:p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <h3 className="text-base md:text-2xl font-bold text-white text-center">Seminar Hall</h3>
             </div>
 
             {/* Patient Care */}
-            <div className="bg-gradient-to-br from-[#7cb983] to-[#006837] rounded-2xl aspect-square flex items-center justify-center p-4 md:p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <h3 className="text-lg md:text-3xl font-bold text-white text-center">Patient Care</h3>
+            <div className="bg-gradient-to-br from-[#7cb983] to-[#006837] rounded-2xl aspect-square flex items-center justify-center p-3 md:p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <h3 className="text-base md:text-2xl font-bold text-white text-center">Patient Care</h3>
             </div>
 
             {/* Research Lab */}
-            <div className="bg-gradient-to-br from-[#006837] to-[#002309] rounded-2xl aspect-square flex items-center justify-center p-4 md:p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <h3 className="text-lg md:text-3xl font-bold text-white text-center">Research Lab</h3>
+            <div className="bg-gradient-to-br from-[#006837] to-[#002309] rounded-2xl aspect-square flex items-center justify-center p-3 md:p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <h3 className="text-base md:text-2xl font-bold text-white text-center">Research Lab</h3>
             </div>
 
             {/* Library */}
-            <div className="bg-gradient-to-br from-[#7cb983] to-[#6ba872] rounded-2xl aspect-square flex items-center justify-center p-4 md:p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <h3 className="text-lg md:text-3xl font-bold text-white text-center">Library</h3>
+            <div className="bg-gradient-to-br from-[#7cb983] to-[#6ba872] rounded-2xl aspect-square flex items-center justify-center p-3 md:p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <h3 className="text-base md:text-2xl font-bold text-white text-center">Library</h3>
             </div>
 
               {/* JKKN Align Studio */}
@@ -1313,9 +1313,9 @@ export default function MDSOrthodontics() {
           </p>
 
           <div className="flex flex-wrap justify-center gap-6">
-            <button className="bg-[#FBFBEE] text-[#7cb983] font-bold px-10 py-4 rounded-lg text-lg transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105">
+            <a href="/pdf/brochure.pdf" download className="bg-[#FBFBEE] text-[#7cb983] font-bold px-10 py-4 rounded-lg text-lg transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105">
               Download Prospectus
-            </button>
+            </a>
             <a href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8" target="_blank" rel="noopener noreferrer" className="bg-transparent border-2 border-white text-white hover:bg-[#FBFBEE] hover:text-[#7cb983] font-bold px-10 py-4 rounded-lg text-lg transition-all duration-300">
               Apply Online
             </a>

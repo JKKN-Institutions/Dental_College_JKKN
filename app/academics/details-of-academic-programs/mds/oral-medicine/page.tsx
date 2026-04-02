@@ -431,7 +431,7 @@ export default function MDSOralMedicine() {
 
             {/* Year 3 - Specialization */}
             <div className="bg-[#FBFBEE] rounded-2xl shadow-lg overflow-hidden border border-gray-200">
-              <div className="bg-gradient-to-br from-[#7cb983] to-[#0199c7] p-8 text-center">
+              <div className="bg-gradient-to-br from-[#7cb983] to-[#006837] p-8 text-center">
                 <div className="inline-block bg-white/20 backdrop-blur-sm rounded-full px-4 py-2 mb-4">
                   <span className="text-white font-bold text-sm">Year 3</span>
                 </div>
@@ -715,7 +715,7 @@ export default function MDSOralMedicine() {
 
             {/* Diagnostic Lab */}
             <div className="bg-[#FBFBEE] rounded-2xl shadow-lg overflow-hidden border border-gray-200">
-              <div className="bg-gradient-to-br from-[#7cb983] to-[#0199c7] p-12 flex items-center justify-center h-64">
+              <div className="bg-gradient-to-br from-[#7cb983] to-[#006837] p-12 flex items-center justify-center h-64">
                 <h3 className="text-4xl font-bold text-white text-center">Diagnostic Lab</h3>
               </div>
               <div className="p-6">
@@ -748,7 +748,7 @@ export default function MDSOralMedicine() {
 
             {/* Digital Library */}
             <div className="bg-[#FBFBEE] rounded-2xl shadow-lg overflow-hidden border border-gray-200">
-              <div className="bg-gradient-to-br from-[#7cb983] to-[#0199c7] p-12 flex items-center justify-center h-64">
+              <div className="bg-gradient-to-br from-[#7cb983] to-[#006837] p-12 flex items-center justify-center h-64">
                 <h3 className="text-4xl font-bold text-white text-center">Digital Library</h3>
               </div>
               <div className="p-6">
@@ -783,7 +783,7 @@ export default function MDSOralMedicine() {
             </div>
 
             {/* Library */}
-            <div className="bg-gradient-to-br from-[#7cb983] to-[#0199c7] rounded-2xl p-6 md:p-12 flex items-center justify-center h-40 md:h-64 cursor-pointer hover:shadow-xl transition-shadow duration-300">
+            <div className="bg-gradient-to-br from-[#7cb983] to-[#006837] rounded-2xl p-6 md:p-12 flex items-center justify-center h-40 md:h-64 cursor-pointer hover:shadow-xl transition-shadow duration-300">
               <h3 className="text-xl md:text-4xl font-bold text-white text-center">Library</h3>
             </div>
 
@@ -798,7 +798,7 @@ export default function MDSOralMedicine() {
             </div>
 
             {/* Sports */}
-            <div className="bg-gradient-to-br from-[#7cb983] to-[#0199c7] rounded-2xl p-6 md:p-12 flex items-center justify-center h-40 md:h-64 cursor-pointer hover:shadow-xl transition-shadow duration-300">
+            <div className="bg-gradient-to-br from-[#7cb983] to-[#006837] rounded-2xl p-6 md:p-12 flex items-center justify-center h-40 md:h-64 cursor-pointer hover:shadow-xl transition-shadow duration-300">
               <h3 className="text-xl md:text-4xl font-bold text-white text-center">Sports</h3>
             </div>
 
@@ -1125,7 +1125,7 @@ export default function MDSOralMedicine() {
 
             {/* MGR */}
             <div className="flex flex-col items-center">
-              <div className="bg-gradient-to-br from-[#7cb983] to-[#0199c7] rounded-xl p-4 sm:p-8 mb-4 w-20 h-20 sm:w-32 sm:h-32 flex items-center justify-center">
+              <div className="bg-gradient-to-br from-[#7cb983] to-[#006837] rounded-xl p-4 sm:p-8 mb-4 w-20 h-20 sm:w-32 sm:h-32 flex items-center justify-center">
                 <span className="text-2xl sm:text-4xl font-bold text-white">MGR</span>
               </div>
               <h3 className="text-center font-bold text-gray-800 text-sm sm:text-base">TN Dr. MGR Medical University</h3>
@@ -1152,9 +1152,9 @@ export default function MDSOralMedicine() {
             Join our prestigious MDS program and transform your career with world-class training at J.K.K. Nattraja Dental College.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <button className="bg-white text-[#7cb983] hover:bg-gray-100 font-bold px-10 py-4 rounded-lg text-lg transition-all duration-300 shadow-lg">
+            <a href="/pdf/brochure.pdf" download className="bg-white text-[#7cb983] hover:bg-gray-100 font-bold px-10 py-4 rounded-lg text-lg transition-all duration-300 shadow-lg">
               Download Prospectus
-            </button>
+            </a>
             <a href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8" target="_blank" rel="noopener noreferrer" className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#7cb983] font-bold px-10 py-4 rounded-lg text-lg transition-all duration-300">
               Apply Online
             </a>

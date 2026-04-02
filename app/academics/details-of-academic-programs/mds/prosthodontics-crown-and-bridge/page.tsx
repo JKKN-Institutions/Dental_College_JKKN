@@ -1262,9 +1262,9 @@ export default function MDSProsthodontics() {
           </p>
 
           <div className="flex flex-wrap justify-center gap-4">
-            <button className="bg-white text-[#7cb983] hover:bg-gray-100 font-bold px-8 py-4 rounded-lg text-lg transition-all duration-300 shadow-lg">
+            <a href="/pdf/brochure.pdf" download className="bg-white text-[#7cb983] hover:bg-gray-100 font-bold px-8 py-4 rounded-lg text-lg transition-all duration-300 shadow-lg">
               Download Prospectus
-            </button>
+            </a>
             <a href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8" target="_blank" rel="noopener noreferrer" className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#7cb983] font-bold px-8 py-4 rounded-lg text-lg transition-all duration-300">
               Apply Online
             </a>

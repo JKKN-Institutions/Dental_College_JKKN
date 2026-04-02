@@ -15,7 +15,6 @@ import {
   AnimatedCounter,
   FAQAccordion,
   MobileStickyBarCTA,
-  WhatsAppFloat,
 } from "@/components/DSACourse/DSAClientSections";
 
 // ===== SEO METADATA =====
@@ -49,8 +48,6 @@ export const metadata: Metadata = {
 
 // ===== CONSTANTS =====
 const PHONE = "6381111621";
-const WHATSAPP_URL =
-  "https://wa.me/916381111621?text=Hi%2C%20I%20am%20interested%20in%20the%20Dental%20Surgery%20Assistant%20course.%20Please%20share%20details.";
 
 // ===== INLINE DATA =====
 const heroStats = [
@@ -452,14 +449,6 @@ export default function DSACoursePage() {
                 >
                   Call Now &mdash; {PHONE}
                 </a>
-                <a
-                  href={WHATSAPP_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl text-base font-bold no-underline transition-all text-white bg-[#25d366] shadow-[0_4px_16px_rgba(37,211,102,0.3)] hover:-translate-y-0.5 hover:shadow-[0_6px_24px_rgba(37,211,102,0.4)]"
-                >
-                  WhatsApp Us
-                </a>
               </div>
             </RevealOnScroll>
           </div>
@@ -847,18 +836,6 @@ export default function DSACoursePage() {
                   programs. Hear their experience directly &mdash; no filters,
                   no scripts.
                 </p>
-                <a
-                  href="https://wa.me/916381111621?text=Hi%2C%20I%20want%20to%20talk%20to%20past%20students%20who%20completed%20the%20Dental%20Surgery%20Assistant%20course."
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl text-base font-bold no-underline transition-all text-white shadow-[0_4px_16px_rgba(0,104,55,0.3)] hover:-translate-y-0.5 hover:shadow-[0_6px_24px_rgba(22,101,52,0.4)]"
-                  style={{
-                    background:
-                      "linear-gradient(135deg, #7CB983, #006837)",
-                  }}
-                >
-                  Request Alumni Connect via WhatsApp
-                </a>
               </div>
             </RevealOnScroll>
           </div>
@@ -1001,14 +978,6 @@ export default function DSACoursePage() {
               >
                 Call Dr. Aishwarya &mdash; {PHONE}
               </a>
-              <a
-                href={WHATSAPP_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl text-base font-bold no-underline transition-all text-white bg-white/[0.08] backdrop-blur-sm border border-white/20 hover:bg-white/15 hover:border-white/30"
-              >
-                WhatsApp Us
-              </a>
             </div>
             <p className="text-sm text-white/50">
               Email:{" "}
@@ -1024,8 +993,7 @@ export default function DSACoursePage() {
       </main>
 
       <Footer />
-      <WhatsAppFloat url={WHATSAPP_URL} />
-      <MobileStickyBarCTA phone={PHONE} whatsappUrl={WHATSAPP_URL} />
+      <MobileStickyBarCTA phone={PHONE} />
       <FloatingWhatsAppClient />
     </>
   );

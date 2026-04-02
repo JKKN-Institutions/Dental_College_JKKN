@@ -118,13 +118,17 @@ export default function EquitableOpportunityForSEDGGroup() {
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 mb-12">
             <a
-              href="/equitable-opportunity-for-sedgs"
+              href="/pdf/Equitable-Opportunity-for-SEDG.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-block bg-[#81C784] hover:bg-[#66BB6A] text-white font-bold py-3 px-8 rounded transition-all duration-300 uppercase text-sm text-center"
             >
               EQUITABLE OPPORTUNITY FOR SEDGs
             </a>
             <a
-              href="/ugc-guidelines"
+              href="/pdf/EQUITABLE-OPPORTUNITY-FOR-SEDG-UGC-Guidelines.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-block bg-[#81C784] hover:bg-[#66BB6A] text-white font-bold py-3 px-8 rounded transition-all duration-300 uppercase text-sm text-center"
             >
               UGC GUIDELINES

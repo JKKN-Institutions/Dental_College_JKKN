@@ -262,12 +262,16 @@ export default function AccessibilityInclusion() {
           <div className="flex flex-col sm:flex-row gap-4 mb-12">
             <a
               href="/pdf/Guidelines-Accessibility-Guidelines-and-Standards-for-Higher-Education-Institutions-and-Universities.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-[#5CB85C] hover:bg-[#4CAF50] text-white font-bold py-3 px-6 rounded transition-colors duration-300 text-sm md:text-base text-center"
             >
               Accessibility Guidelines and Standards for Higher Education Institutions and Universities
             </a>
             <a
               href="/pdf/DIVYANJAN.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-[#5CB85C] hover:bg-[#4CAF50] text-white font-bold py-3 px-6 rounded transition-colors duration-300 text-base md:text-lg text-center"
             >
               DIVYANJAN

@@ -175,7 +175,9 @@ export default function FeeRefundPolicy() {
           {/* UGC Fee Refund Policy Button */}
           <div className="mb-12">
             <a
-              href="/ugc-fee-refund-policy"
+              href="/pdf/UGC-Fee-Refund-Policy.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-block bg-[#81C784] hover:bg-[#66BB6A] text-white font-bold py-3 px-8 rounded transition-all duration-300 uppercase text-sm"
             >
               UGC FEE REFUND POLICY
