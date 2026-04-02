@@ -993,7 +993,7 @@ export default function DSACoursePage() {
       </main>
 
       <Footer />
-      <MobileStickyBarCTA phone={PHONE} />
+      <MobileStickyBarCTA phone={PHONE} whatsappUrl={`https://wa.me/91${PHONE}`} />
       <FloatingWhatsAppClient />
     </>
   );
