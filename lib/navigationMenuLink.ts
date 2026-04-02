@@ -260,7 +260,11 @@ export function GetDentalCollegePages(pathname: string): MenuGroup[] {
             { href: '/accreditation/nirf/nirf-2025/overall', label: 'NIRF 2025 - Overall', icon: Gauge, active: pathname === '/accreditation/nirf/nirf-2025/overall' },
             { href: '/accreditation/nirf/nirf-2025/dental', label: 'NIRF 2025 - Dental', icon: BarChart3, active: pathname === '/accreditation/nirf/nirf-2025/dental' },
             { href: '/accreditation/nirf/nirf-2025/innovation', label: 'NIRF 2025 - Innovation', icon: Rocket, active: pathname === '/accreditation/nirf/nirf-2025/innovation' },
-            { href: '/accreditation/nirf/nirf-2025/sdg-institution', label: 'NIRF 2025 - SDG Institution', icon: Leaf, active: pathname === '/accreditation/nirf/nirf-2025/sdg-institution' }
+            { href: '/accreditation/nirf/nirf-2025/sdg-institution', label: 'NIRF 2025 - SDG Institution', icon: Leaf, active: pathname === '/accreditation/nirf/nirf-2025/sdg-institution' },
+            { href: '/accreditation/nirf/nirf-2026/overall', label: 'NIRF 2026 - Overall', icon: Gauge, active: pathname === '/accreditation/nirf/nirf-2026/overall' },
+            { href: '/accreditation/nirf/nirf-2026/dental', label: 'NIRF 2026 - Dental', icon: BarChart3, active: pathname === '/accreditation/nirf/nirf-2026/dental' },
+            { href: '/accreditation/nirf/nirf-2026/innovation', label: 'NIRF 2026 - Innovation', icon: Rocket, active: pathname === '/accreditation/nirf/nirf-2026/innovation' },
+            { href: '/accreditation/nirf/nirf-2026/sdg-institution', label: 'NIRF 2026 - SDG Institution', icon: Leaf, active: pathname === '/accreditation/nirf/nirf-2026/sdg-institution' }
           ]
         }
       ]

@@ -156,6 +156,16 @@ export const siteContent = {
                     ]
                   }
                 ]
+              },
+              {
+                label: "NIRF-2026",
+                href: "/accreditation/nirf/nirf-2026",
+                submenu: [
+                  { label: "OVERALL", href: "/accreditation/nirf/nirf-2026/overall" },
+                  { label: "DENTAL", href: "/accreditation/nirf/nirf-2026/dental" },
+                  { label: "INNOVATION", href: "/accreditation/nirf/nirf-2026/innovation" },
+                  { label: "SDG INSTITUTION", href: "/accreditation/nirf/nirf-2026/sdg-institution" }
+                ]
               }
             ]
           }

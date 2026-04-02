@@ -179,6 +179,16 @@ export const topMenuItems: NavItem[] = [
               { label: "INNOVATION", href: "/pdf/NIRF-2025-Innovation.pdf" },
               { label: "SDG INSTITUTION", href: "/pdf/NIRF-2025-SDG-INSTITUTIONS.pdf" }
             ]
+          },
+          {
+            label: "NIRF-2026",
+            href: "/accreditation/nirf/nirf-2026",
+            submenu: [
+              { label: "OVERALL", href: "/pdf/NIRF-2026-Overall.pdf" },
+              { label: "DENTAL", href: "/pdf/NIRF-2026-Dental.pdf" },
+              { label: "INNOVATION", href: "/pdf/NIRF-2026-Innovation.pdf" },
+              { label: "SDG INSTITUTION", href: "/pdf/NIRF-2026-SDG.pdf" }
+            ]
           }
         ]
       }
