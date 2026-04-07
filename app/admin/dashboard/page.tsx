@@ -1,3 +1,4 @@
+import { redirect } from 'next/navigation';
 import { createClient } from '@/lib/supabase/server';
 import { getAdminCollegeId } from '@/lib/get-admin-college';
 import { FileText, Image as ImageIcon, Bell, ExternalLink, Plus, CalendarDays, Users } from 'lucide-react';
@@ -5,6 +6,18 @@ import Link from 'next/link';
 
 export default async function AdminDashboard() {
   const supabase = await createClient();
+
+  const { data: { session } } = await supabase.auth.getSession();
+  if (session) {
+    const { data: profile } = await supabase
+      .from('staff_profiles')
+      .select('role')
+      .eq('id', session.user.id)
+      .single();
+    if (profile?.role === 'staff') {
+      redirect('/admin/events');
+    }
+  }
 
   const collegeId = await getAdminCollegeId();
   const results = await Promise.allSettled([
@@ -116,7 +129,7 @@ export default async function AdminDashboard() {
 
       {/* Quick Actions */}
       <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-4 sm:p-5 mb-6">
-        <h2 className="font-semibold text-gray-800 mb-4">Quick Actions</h2>
+        <h2 className="text-sm font-semibold text-gray-800 mb-4">Quick Actions</h2>
         <div className="flex flex-wrap gap-3">
           <Link
             href="/admin/events/new"
@@ -161,7 +174,7 @@ export default async function AdminDashboard() {
         {/* Recent Blogs */}
         <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-4 sm:p-5">
           <div className="flex items-center justify-between mb-4">
-            <h2 className="font-semibold text-gray-800">Recent Blog Posts</h2>
+            <h2 className="text-sm font-semibold text-gray-800">Recent Blog Posts</h2>
             <Link href="/admin/blogs" className="text-xs text-[#006837] font-medium hover:underline">
               View all
             </Link>
@@ -203,7 +216,7 @@ export default async function AdminDashboard() {
         {/* Recent Notices */}
         <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-4 sm:p-5">
           <div className="flex items-center justify-between mb-4">
-            <h2 className="font-semibold text-gray-800">Recent Notices</h2>
+            <h2 className="text-sm font-semibold text-gray-800">Recent Notices</h2>
             <Link href="/admin/notices" className="text-xs text-[#006837] font-medium hover:underline">
               View all
             </Link>

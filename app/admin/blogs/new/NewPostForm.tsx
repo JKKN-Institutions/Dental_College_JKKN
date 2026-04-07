@@ -378,7 +378,7 @@ export default function NewPostForm({ userEmail, userName, userAvatar, categorie
         <div className="space-y-5">
           {/* Post Details */}
           <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-5">
-            <h3 className="flex items-center gap-2 font-semibold text-gray-800 mb-5">
+            <h3 className="flex items-center gap-2 font-semibold text-gray-800 text-sm mb-5">
               <FileText className="w-4 h-4 text-gray-500" />
               Post Details
             </h3>
@@ -422,7 +422,7 @@ export default function NewPostForm({ userEmail, userName, userAvatar, categorie
 
           {/* Content editor */}
           <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-5">
-            <h3 className="font-semibold text-gray-800 mb-1">Content</h3>
+            <h3 className="font-semibold text-gray-800 text-sm mb-1">Content</h3>
             <p className="text-sm text-gray-400 mb-4">Write your blog post content using the rich text editor below.</p>
             <RichTextEditor
               value={content}
@@ -445,7 +445,7 @@ export default function NewPostForm({ userEmail, userName, userAvatar, categorie
 
           {/* SEO Settings */}
           <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-5">
-            <h3 className="flex items-center gap-2 font-semibold text-gray-800 mb-5">
+            <h3 className="flex items-center gap-2 font-semibold text-gray-800 text-sm mb-5">
               <Globe className="w-4 h-4 text-gray-500" />
               SEO Settings
             </h3>
@@ -510,7 +510,7 @@ export default function NewPostForm({ userEmail, userName, userAvatar, categorie
         <div className="space-y-4">
           {/* Publish card */}
           <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-5">
-            <h3 className="flex items-center gap-2 font-semibold text-gray-800 mb-4">
+            <h3 className="flex items-center gap-2 font-semibold text-gray-800 text-sm mb-4">
               <Settings className="w-4 h-4 text-gray-500" />
               Publish
             </h3>
@@ -584,7 +584,7 @@ export default function NewPostForm({ userEmail, userName, userAvatar, categorie
 
           {/* Featured Image */}
           <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-5">
-            <h3 className="flex items-center gap-2 font-semibold text-gray-800 mb-4">
+            <h3 className="flex items-center gap-2 font-semibold text-gray-800 text-sm mb-4">
               <ImageIcon className="w-4 h-4 text-gray-500" />
               Featured Image
             </h3>
@@ -615,7 +615,7 @@ export default function NewPostForm({ userEmail, userName, userAvatar, categorie
 
           {/* Category */}
           <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-5">
-            <h3 className="flex items-center gap-2 font-semibold text-gray-800 mb-4">
+            <h3 className="flex items-center gap-2 font-semibold text-gray-800 text-sm mb-4">
               <FolderOpen className="w-4 h-4 text-gray-500" />
               Category
             </h3>
@@ -636,7 +636,7 @@ export default function NewPostForm({ userEmail, userName, userAvatar, categorie
 
           {/* Tags */}
           <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-5">
-            <h3 className="flex items-center gap-2 font-semibold text-gray-800 mb-4">
+            <h3 className="flex items-center gap-2 font-semibold text-gray-800 text-sm mb-4">
               <TagIcon className="w-4 h-4 text-gray-500" />
               Tags
             </h3>
@@ -645,7 +645,7 @@ export default function NewPostForm({ userEmail, userName, userAvatar, categorie
 
           {/* Author */}
           <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-5">
-            <h3 className="flex items-center gap-2 font-semibold text-gray-800 mb-4">
+            <h3 className="flex items-center gap-2 font-semibold text-gray-800 text-sm mb-4">
               <User className="w-4 h-4 text-gray-500" />
               Author
             </h3>

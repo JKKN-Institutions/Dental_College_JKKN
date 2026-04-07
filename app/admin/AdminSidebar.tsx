@@ -53,57 +53,47 @@ interface AdminSidebarProps {
 
 const STAFF_ALLOWED_HREFS = ['/admin/events', '/admin/faculty'];
 
-export default function AdminSidebar({
+interface SidebarContentProps {
+  userEmail: string;
+  isSuperAdmin: boolean;
+  isStaff: boolean;
+  canSwitchCollege: boolean;
+  colleges: College[];
+  currentCollegeId: string;
+  pathname: string;
+  blogOpen: boolean;
+  setBlogOpen: (fn: (o: boolean) => boolean) => void;
+  collegeSwitcherOpen: boolean;
+  setCollegeSwitcherOpen: (fn: (o: boolean) => boolean) => void;
+  switching: boolean;
+  onNavClick: () => void;
+  onSignOutClick: () => void;
+  onSwitchCollege: (collegeId: string) => void;
+}
+
+function SidebarContent({
   userEmail,
-  isSuperAdmin = false,
-  isStaff = false,
-  canSwitchCollege = false,
-  colleges = [],
-  currentCollegeId = process.env.NEXT_PUBLIC_COLLEGE_ID ?? 'education',
-}: AdminSidebarProps) {
-  const pathname = usePathname();
-  const router = useRouter();
-  const [mobileOpen, setMobileOpen] = useState(false);
-  const [collegeSwitcherOpen, setCollegeSwitcherOpen] = useState(false);
-  const [switching, setSwitching] = useState(false);
-  const [showSignOutModal, setShowSignOutModal] = useState(false);
-
+  isSuperAdmin,
+  isStaff,
+  canSwitchCollege,
+  colleges,
+  currentCollegeId,
+  pathname,
+  blogOpen,
+  setBlogOpen,
+  collegeSwitcherOpen,
+  setCollegeSwitcherOpen,
+  switching,
+  onNavClick,
+  onSignOutClick,
+  onSwitchCollege,
+}: SidebarContentProps) {
   const isBlogActive = pathname === '/admin/blogs' || pathname.startsWith('/admin/blogs/');
-  const [blogOpen, setBlogOpen] = useState(isBlogActive);
-
   const currentCollege = colleges.find((c) => c.id === currentCollegeId);
   const currentCollegeName = currentCollege?.name ?? currentCollegeId;
-
-  async function handleLogout() {
-    const supabase = createClient();
-    try {
-      await supabase.auth.signOut({ scope: 'local' });
-    } catch {
-      // ignore network errors — local session is cleared regardless
-    }
-    router.push('/admin/login');
-    router.refresh();
-  }
-
-  async function switchCollege(collegeId: string) {
-    if (collegeId === currentCollegeId || switching) return;
-    setSwitching(true);
-    setCollegeSwitcherOpen(false);
-    try {
-      await fetch('/api/admin/switch-college', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ college_id: collegeId }),
-      });
-      router.refresh();
-    } finally {
-      setSwitching(false);
-    }
-  }
-
   const initials = userEmail ? userEmail[0].toUpperCase() : 'A';
 
-  const SidebarContent = () => (
+  return (
     <div className="flex flex-col h-full">
       {/* Logo */}
       <div className="px-6 py-5 border-b border-white/10">
@@ -143,13 +133,13 @@ export default function AdminSidebar({
               <>
                 <div
                   className="fixed inset-0 z-10"
-                  onClick={() => setCollegeSwitcherOpen(false)}
+                  onClick={() => setCollegeSwitcherOpen(() => false)}
                 />
                 <div className="absolute left-0 right-0 top-full mt-1 bg-[#001a06] border border-white/10 rounded-xl shadow-xl z-20 overflow-hidden">
                   {colleges.map((col) => (
                     <button
                       key={col.id}
-                      onClick={() => switchCollege(col.id)}
+                      onClick={() => onSwitchCollege(col.id)}
                       className="w-full flex items-center gap-2.5 px-3 py-2.5 text-left hover:bg-white/10 transition"
                     >
                       <span className="text-xs text-white/80 flex-1 truncate">{col.name}</span>
@@ -173,7 +163,7 @@ export default function AdminSidebar({
             <Link
               key={href}
               href={href}
-              onClick={() => setMobileOpen(false)}
+              onClick={onNavClick}
               className={`flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium transition-all ${
                 active
                   ? 'bg-white text-[#006837]'
@@ -217,7 +207,7 @@ export default function AdminSidebar({
                   <Link
                     key={href}
                     href={href}
-                    onClick={() => setMobileOpen(false)}
+                    onClick={onNavClick}
                     className={`flex items-center gap-3 px-3 py-2 rounded-xl text-sm font-medium transition-all ${
                       active
                         ? 'bg-white text-[#006837]'
@@ -237,7 +227,7 @@ export default function AdminSidebar({
         {isSuperAdmin && (
           <Link
             href="/admin/colleges"
-            onClick={() => setMobileOpen(false)}
+            onClick={onNavClick}
             className={`flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium transition-all ${
               pathname === '/admin/colleges' || pathname.startsWith('/admin/colleges/')
                 ? 'bg-white text-[#006837]'
@@ -267,7 +257,7 @@ export default function AdminSidebar({
           </div>
         </div>
         <button
-          onClick={() => setShowSignOutModal(true)}
+          onClick={onSignOutClick}
           className="w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium text-white/70 hover:bg-red-500/20 hover:text-red-300 transition-all"
         >
           <LogOut size={18} />
@@ -276,6 +266,70 @@ export default function AdminSidebar({
       </div>
     </div>
   );
+}
+
+export default function AdminSidebar({
+  userEmail,
+  isSuperAdmin = false,
+  isStaff = false,
+  canSwitchCollege = false,
+  colleges = [],
+  currentCollegeId = process.env.NEXT_PUBLIC_COLLEGE_ID ?? 'education',
+}: AdminSidebarProps) {
+  const pathname = usePathname();
+  const router = useRouter();
+  const [mobileOpen, setMobileOpen] = useState(false);
+  const [collegeSwitcherOpen, setCollegeSwitcherOpen] = useState(false);
+  const [switching, setSwitching] = useState(false);
+  const [showSignOutModal, setShowSignOutModal] = useState(false);
+
+  const isBlogActive = pathname === '/admin/blogs' || pathname.startsWith('/admin/blogs/');
+  const [blogOpen, setBlogOpen] = useState(isBlogActive);
+
+  async function handleLogout() {
+    const supabase = createClient();
+    try {
+      await supabase.auth.signOut({ scope: 'local' });
+    } catch {
+      // ignore network errors — local session is cleared regardless
+    }
+    router.push('/admin/login');
+    router.refresh();
+  }
+
+  async function switchCollege(collegeId: string) {
+    if (collegeId === currentCollegeId || switching) return;
+    setSwitching(true);
+    setCollegeSwitcherOpen(() => false);
+    try {
+      await fetch('/api/admin/switch-college', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ college_id: collegeId }),
+      });
+      router.refresh();
+    } finally {
+      setSwitching(false);
+    }
+  }
+
+  const sharedProps = {
+    userEmail,
+    isSuperAdmin,
+    isStaff,
+    canSwitchCollege,
+    colleges,
+    currentCollegeId,
+    pathname,
+    blogOpen,
+    setBlogOpen,
+    collegeSwitcherOpen,
+    setCollegeSwitcherOpen,
+    switching,
+    onNavClick: () => setMobileOpen(false),
+    onSignOutClick: () => setShowSignOutModal(true),
+    onSwitchCollege: switchCollege,
+  };
 
   return (
     <>
@@ -301,12 +355,12 @@ export default function AdminSidebar({
           mobileOpen ? 'translate-x-0' : '-translate-x-full'
         }`}
       >
-        <SidebarContent />
+        <SidebarContent {...sharedProps} />
       </div>
 
       {/* Desktop sidebar */}
       <div className="hidden lg:flex fixed left-0 top-0 bottom-0 w-64 bg-[#002309] flex-col z-30">
-        <SidebarContent />
+        <SidebarContent {...sharedProps} />
       </div>
 
       {/* Sign out confirmation modal */}

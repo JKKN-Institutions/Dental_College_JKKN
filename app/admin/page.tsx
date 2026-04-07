@@ -9,5 +9,15 @@ export default async function AdminRoot() {
     redirect('/admin/login');
   }
 
+  const { data: profile } = await supabase
+    .from('staff_profiles')
+    .select('role')
+    .eq('id', session.user.id)
+    .single();
+
+  if (profile?.role === 'staff') {
+    redirect('/admin/events');
+  }
+
   redirect('/admin/dashboard');
 }
