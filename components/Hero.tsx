@@ -54,7 +54,7 @@ export default function Hero() {
             {/* Buttons */}
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
               <a
-                href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8"
+                href="https://www.jkkn.ai/apply/jkkn-admission-2026"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-[#7cb983] hover:bg-[#6ba872] active:bg-[#5a9761] text-white font-bold py-3 sm:py-3.5 px-6 sm:px-8 rounded-full transition-all duration-300 text-center text-sm sm:text-base min-h-[44px] flex items-center justify-center touch-manipulation transform hover:scale-105 active:scale-95"
@@ -100,6 +100,7 @@ export default function Hero() {
               width={120}
               height={64}
               className="h-10 xs:h-12 sm:h-14 md:h-16 w-auto grayscale hover:grayscale-0 transition-all duration-300"
+              style={{ width: "auto" }}
               loading="lazy"
               sizes="(max-width: 768px) 64px, 80px"
             />
@@ -109,6 +110,7 @@ export default function Hero() {
               width={120}
               height={64}
               className="h-10 xs:h-12 sm:h-14 md:h-16 w-auto grayscale hover:grayscale-0 transition-all duration-300"
+              style={{ width: "auto" }}
               loading="lazy"
               sizes="(max-width: 768px) 64px, 80px"
             />
@@ -118,6 +120,7 @@ export default function Hero() {
               width={120}
               height={64}
               className="h-10 xs:h-12 sm:h-14 md:h-16 w-auto grayscale hover:grayscale-0 transition-all duration-300"
+              style={{ width: "auto" }}
               loading="lazy"
               sizes="(max-width: 768px) 64px, 80px"
             />
@@ -127,6 +130,7 @@ export default function Hero() {
               width={120}
               height={64}
               className="h-10 xs:h-12 sm:h-14 md:h-16 w-auto grayscale hover:grayscale-0 transition-all duration-300"
+              style={{ width: "auto" }}
               loading="lazy"
               sizes="(max-width: 768px) 64px, 80px"
             />

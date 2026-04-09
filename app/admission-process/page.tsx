@@ -87,7 +87,7 @@ export default function AdmissionProcess() {
     "tool": [
       { "@type": "HowToTool", "name": "NEET-UG Registration Portal (neet.nta.nic.in)" },
       { "@type": "HowToTool", "name": "State Counselling Portal (Tamil Nadu Health Department)" },
-      { "@type": "HowToTool", "name": "JKKN Admissions Portal (admission.jkkn.ac.in)" }
+      { "@type": "HowToTool", "name": "JKKN Admissions Portal (www.jkkn.ai/apply/jkkn-admission-2026)" }
     ],
     "step": [
       {
@@ -137,7 +137,7 @@ export default function AdmissionProcess() {
         "position": 7,
         "name": "Pay Fees and Confirm Admission",
         "text": "Complete the fee payment as per the fee structure prescribed by the Tamil Nadu state fee committee. Submit the signed admission form, collect your student ID, and confirm your enrollment in the BDS program at JKKN Dental College & Hospital.",
-        "url": "https://admission.jkkn.ac.in/"
+        "url": "https://www.jkkn.ai/apply/jkkn-admission-2026"
       }
     ]
   };
@@ -439,7 +439,7 @@ export default function AdmissionProcess() {
           </div>
 
           <div className="flex flex-wrap justify-center gap-4">
-            <a href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8" target="_blank" rel="noopener noreferrer" className="bg-[#7cb983] hover:bg-[#6ba872] text-white font-bold px-10 py-4 rounded-lg text-lg transition-all duration-300 shadow-lg inline-block">
+            <a href="https://www.jkkn.ai/apply/jkkn-admission-2026" target="_blank" rel="noopener noreferrer" className="bg-[#7cb983] hover:bg-[#6ba872] text-white font-bold px-10 py-4 rounded-lg text-lg transition-all duration-300 shadow-lg inline-block">
               Apply Online Now
             </a>
             <Link href="/contact" className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#006837] font-bold px-10 py-4 rounded-lg text-lg transition-all duration-300 inline-block">

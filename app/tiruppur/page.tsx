@@ -154,7 +154,7 @@ export default function TiruppurPage() {
           ))}
         </ul>
         <div className="flex flex-col sm:flex-row gap-4 items-center">
-          <a href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8" target="_blank" rel="nofollow noopener noreferrer" className="bg-[#7cb983] hover:bg-[#6ba872] text-white font-bold px-8 py-4 rounded-full transition-all transform hover:scale-105 shadow-lg text-base">
+          <a href="https://www.jkkn.ai/apply/jkkn-admission-2026" target="_blank" rel="nofollow noopener noreferrer" className="bg-[#7cb983] hover:bg-[#6ba872] text-white font-bold px-8 py-4 rounded-full transition-all transform hover:scale-105 shadow-lg text-base">
             Apply Now — 2026-27
           </a>
           <a href="tel:+919345855001" className="bg-[#006837] hover:bg-[#002309] text-white font-bold px-8 py-4 rounded-full transition-all transform hover:scale-105 shadow-lg text-base">Call Us</a>
@@ -306,7 +306,7 @@ export default function TiruppurPage() {
             {[
               { step: 'Step 1', title: 'Qualify NEET UG 2026', desc: 'Secure minimum 50th percentile (General) or 40th percentile (Reserved) in NEET UG 2026.' },
               { step: 'Step 2', title: 'Register for TN State Counselling', desc: 'Register on the DME Tamil Nadu portal for Government Quota seat allotment.' },
-              { step: 'Step 3', title: 'Apply for Management Quota (Optional)', desc: 'Contact JKKN Dental College directly at +91 9345855001 or apply via admission.jkkn.ac.in.' },
+              { step: 'Step 3', title: 'Apply for Management Quota (Optional)', desc: 'Contact JKKN Dental College directly at +91 9345855001 or apply via www.jkkn.ai/apply/jkkn-admission-2026.' },
               { step: 'Step 4', title: 'Document Verification', desc: 'Submit 10+2 marksheets, NEET scorecard, community certificate, and transfer certificate.' },
               { step: 'Step 5', title: 'Confirm Admission', desc: 'Pay the first year fee and confirm your seat. Hostel registration available separately.' },
             ].map((item) => (
@@ -320,7 +320,7 @@ export default function TiruppurPage() {
             ))}
           </ol>
           <div className="mt-8 text-center">
-            <a href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8" target="_blank" rel="nofollow noopener noreferrer" className="inline-block bg-[#7cb983] hover:bg-[#6ba872] text-white font-bold px-8 py-4 rounded-full transition-all transform hover:scale-105 shadow-lg text-sm">
+            <a href="https://www.jkkn.ai/apply/jkkn-admission-2026" target="_blank" rel="nofollow noopener noreferrer" className="inline-block bg-[#7cb983] hover:bg-[#6ba872] text-white font-bold px-8 py-4 rounded-full transition-all transform hover:scale-105 shadow-lg text-sm">
               Apply Now — BDS/MDS 2026-27
             </a>
           </div>

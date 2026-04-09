@@ -79,7 +79,7 @@ const faqSchema = {
       "name": "What is the NEET cut-off for BDS at JKKN Dental?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The NEET cut-off for BDS admission at JKKN Dental College & Hospital varies each year based on Tamil Nadu DME counselling rounds. NEET 2026 is scheduled for 3 May 2026. JKKN-specific cutoff ranks for 2026-27 will be updated after counselling at admission.jkkn.ac.in. Contact the admission office at +91 9345855001 for the latest information."
+        "text": "The NEET cut-off for BDS admission at JKKN Dental College & Hospital varies each year based on Tamil Nadu DME counselling rounds. NEET 2026 is scheduled for 3 May 2026. JKKN-specific cutoff ranks for 2026-27 will be updated after counselling at www.jkkn.ai/apply/jkkn-admission-2026. Contact the admission office at +91 9345855001 for the latest information."
       }
     },
     {
@@ -224,10 +224,10 @@ const eventSchema = {
     "name": "JKKN Dental College & Hospital",
     "url": "https://dental.jkkn.ac.in/"
   },
-  "url": "https://admission.jkkn.ac.in/",
+  "url": "https://www.jkkn.ai/apply/jkkn-admission-2026",
   "offers": {
     "@type": "Offer",
-    "url": "https://admission.jkkn.ac.in/",
+    "url": "https://www.jkkn.ai/apply/jkkn-admission-2026",
     "availability": "https://schema.org/InStock",
     "validFrom": "2026-03-01"
   }

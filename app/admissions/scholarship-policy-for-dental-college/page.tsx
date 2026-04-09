@@ -174,11 +174,57 @@ export default function ScholarshipPolicy() {
 
           {/* 5. Government scholarships */}
           <h2 className="text-xl md:text-2xl font-bold text-black mb-4">
-            5.Government scholarships:
+            5. Government scholarships:
           </h2>
-          <ul className="list-disc list-inside mb-8 space-y-2 text-gray-700">
-            <li className="font-semibold">As per Government norms</li>
-          </ul>
+          <p className="text-gray-700 mb-4 leading-relaxed">
+            The following government scholarships are available for BDS students as per eligibility:
+          </p>
+          <div className="overflow-x-auto mb-8">
+            <table className="w-full border border-gray-300 text-sm text-gray-700">
+              <thead className="bg-[#006837] text-white">
+                <tr>
+                  <th className="border border-gray-300 px-4 py-3 text-left font-bold">Category</th>
+                  <th className="border border-gray-300 px-4 py-3 text-left font-bold">Scholarship</th>
+                  <th className="border border-gray-300 px-4 py-3 text-center font-bold">GQ</th>
+                  <th className="border border-gray-300 px-4 py-3 text-center font-bold">MQ</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="bg-gray-50">
+                  <td className="border border-gray-300 px-4 py-3 font-semibold" rowSpan={2}>SC / SCA / ST / BC-CC</td>
+                  <td className="border border-gray-300 px-4 py-3">PMSS (Community Scholarship)</td>
+                  <td className="border border-gray-300 px-4 py-3 text-center">2.5L / Yr</td>
+                  <td className="border border-gray-300 px-4 py-3 text-center">6L / Yr</td>
+                </tr>
+                <tr className="bg-gray-50">
+                  <td className="border border-gray-300 px-4 py-3">Maintainence Scholarship</td>
+                  <td className="border border-gray-300 px-4 py-3 text-center">5K &lt; 10K / Yr</td>
+                  <td className="border border-gray-300 px-4 py-3 text-center">—</td>
+                </tr>
+                <tr>
+                  <td className="border border-gray-300 px-4 py-3 font-semibold" rowSpan={3}>BC / MBC / DNC / BCM</td>
+                  <td className="border border-gray-300 px-4 py-3">First Graduate</td>
+                  <td className="border border-gray-300 px-4 py-3 text-center">40K / Yr</td>
+                  <td className="border border-gray-300 px-4 py-3 text-center">—</td>
+                </tr>
+                <tr>
+                  <td className="border border-gray-300 px-4 py-3">Community Scholarship</td>
+                  <td className="border border-gray-300 px-4 py-3 text-center">5K &lt; 10K / Yr</td>
+                  <td className="border border-gray-300 px-4 py-3 text-center">—</td>
+                </tr>
+                <tr>
+                  <td className="border border-gray-300 px-4 py-3">Trust Scholarship (Merit Based)</td>
+                  <td className="border border-gray-300 px-4 py-3 text-center">—</td>
+                  <td className="border border-gray-300 px-4 py-3 text-center">—</td>
+                </tr>
+                <tr className="bg-gray-50">
+                  <td className="border border-gray-300 px-4 py-3 font-semibold">All Community<br /><span className="font-normal text-xs">(Govt / Govt Aided School 6 to 12 Std, Tamil Medium)</span></td>
+                  <td className="border border-gray-300 px-4 py-3">Naan Phudulvan Scholarship</td>
+                  <td className="border border-gray-300 px-4 py-3 text-center" colSpan={2}>₹1,000 / month (Boys &amp; Girls)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
 
           {/* 6. Application Process */}
           <h2 className="text-xl md:text-2xl font-bold text-black mb-4">

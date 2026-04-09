@@ -60,7 +60,7 @@ const faqSchema = {
       "name": "What are the hostel fees at JKKN Dental College boys hostel?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Hostel fees at JKKN Dental College vary based on room type (single or shared) and whether air conditioning is requested. For the current hostel fee structure, contact the admissions office at +91 93458 55001 or email dental@jkkn.ac.in. Hostel fees are charged separately from tuition fees and are optional."
+        "text": "Boys hostel at JKKN Dental College: Classic Mess, Premium Mess, and AC Room charges are not applicable for Dental college boys. Hostel accommodation is optional and charged separately from tuition fees. For the current fee structure, contact the admissions office at +91 93458 55001 or email dental@jkkn.ac.in."
       }
     }
   ]

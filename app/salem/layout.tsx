@@ -156,10 +156,10 @@ const eventSchema = {
     "name": "JKKN Dental College & Hospital",
     "url": "https://dental.jkkn.ac.in/"
   },
-  "url": "https://admission.jkkn.ac.in/",
+  "url": "https://www.jkkn.ai/apply/jkkn-admission-2026",
   "offers": {
     "@type": "Offer",
-    "url": "https://admission.jkkn.ac.in/",
+    "url": "https://www.jkkn.ai/apply/jkkn-admission-2026",
     "availability": "https://schema.org/InStock",
     "validFrom": "2026-03-01"
   }

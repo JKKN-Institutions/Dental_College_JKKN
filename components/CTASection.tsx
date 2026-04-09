@@ -17,7 +17,7 @@ export default function CTASection() {
         {/* Buttons */}
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center">
           <a
-            href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8"
+            href="https://www.jkkn.ai/apply/jkkn-admission-2026"
             target="_blank"
             rel="noopener noreferrer"
             className="w-full sm:w-auto bg-white hover:bg-gray-100 active:bg-gray-200 text-[#006837] font-bold py-3 sm:py-3.5 px-6 sm:px-8 rounded-full transition-all duration-300 text-center shadow-lg min-h-[44px] flex items-center justify-center touch-manipulation text-sm sm:text-base"

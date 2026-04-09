@@ -60,7 +60,7 @@ const faqSchema = {
       "name": "What is the girls hostel fee at JKKN Dental College?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Girls hostel fees at JKKN Dental College vary based on room type and selected amenities (including AC or non-AC options). Hostel accommodation is optional and charged separately from tuition fees. For the current fee structure, contact the admissions office at +91 93458 55001 or email dental@jkkn.ac.in."
+        "text": "Girls hostel fee at JKKN Dental College: AC Room — ₹30,000/Year. Classic Mess and Premium Mess are not applicable for Dental college students. Hostel accommodation is optional and charged separately from tuition fees. For the current fee structure, contact the admissions office at +91 93458 55001 or email dental@jkkn.ac.in."
       }
     }
   ]

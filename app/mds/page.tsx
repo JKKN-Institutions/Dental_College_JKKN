@@ -61,7 +61,7 @@ const mdsPerioSchema = {
       "category": "Tuition Fee",
       // [UPDATE: Replace with actual fee when confirmed by admin]
       "priceCurrency": "INR",
-      "url": "https://admission.jkkn.ac.in/",
+      "url": "https://www.jkkn.ai/apply/jkkn-admission-2026",
       "availability": "https://schema.org/InStock"
     }
   }
@@ -115,7 +115,7 @@ const mdsOrthoSchema = {
       "category": "Tuition Fee",
       // [UPDATE: Replace with actual fee when confirmed by admin]
       "priceCurrency": "INR",
-      "url": "https://admission.jkkn.ac.in/",
+      "url": "https://www.jkkn.ai/apply/jkkn-admission-2026",
       "availability": "https://schema.org/InStock"
     }
   }
@@ -169,7 +169,7 @@ const mdsProsthoSchema = {
       "category": "Tuition Fee",
       // [UPDATE: Replace with actual fee when confirmed by admin]
       "priceCurrency": "INR",
-      "url": "https://admission.jkkn.ac.in/",
+      "url": "https://www.jkkn.ai/apply/jkkn-admission-2026",
       "availability": "https://schema.org/InStock"
     }
   }
@@ -223,7 +223,7 @@ const mdsCdeSchema = {
       "category": "Tuition Fee",
       // [UPDATE: Replace with actual fee when confirmed by admin]
       "priceCurrency": "INR",
-      "url": "https://admission.jkkn.ac.in/",
+      "url": "https://www.jkkn.ai/apply/jkkn-admission-2026",
       "availability": "https://schema.org/InStock"
     }
   }
@@ -277,7 +277,7 @@ const mdsOmrSchema = {
       "category": "Tuition Fee",
       // [UPDATE: Replace with actual fee when confirmed by admin]
       "priceCurrency": "INR",
-      "url": "https://admission.jkkn.ac.in/",
+      "url": "https://www.jkkn.ai/apply/jkkn-admission-2026",
       "availability": "https://schema.org/InStock"
     }
   }
@@ -403,7 +403,7 @@ const progPerioSchema = {
     "category": "Tuition Fee",
     // [UPDATE: Replace with actual fee when confirmed by admin]
     "priceCurrency": "INR",
-    "url": "https://admission.jkkn.ac.in/"
+    "url": "https://www.jkkn.ai/apply/jkkn-admission-2026"
   },
   "programPrerequisites": {
     "@type": "EducationalOccupationalCredential",
@@ -447,7 +447,7 @@ const progOrthoSchema = {
     "category": "Tuition Fee",
     // [UPDATE: Replace with actual fee when confirmed by admin]
     "priceCurrency": "INR",
-    "url": "https://admission.jkkn.ac.in/"
+    "url": "https://www.jkkn.ai/apply/jkkn-admission-2026"
   },
   "programPrerequisites": {
     "@type": "EducationalOccupationalCredential",
@@ -491,7 +491,7 @@ const progProsthoSchema = {
     "category": "Tuition Fee",
     // [UPDATE: Replace with actual fee when confirmed by admin]
     "priceCurrency": "INR",
-    "url": "https://admission.jkkn.ac.in/"
+    "url": "https://www.jkkn.ai/apply/jkkn-admission-2026"
   },
   "programPrerequisites": {
     "@type": "EducationalOccupationalCredential",
@@ -535,7 +535,7 @@ const progCdeSchema = {
     "category": "Tuition Fee",
     // [UPDATE: Replace with actual fee when confirmed by admin]
     "priceCurrency": "INR",
-    "url": "https://admission.jkkn.ac.in/"
+    "url": "https://www.jkkn.ai/apply/jkkn-admission-2026"
   },
   "programPrerequisites": {
     "@type": "EducationalOccupationalCredential",
@@ -579,7 +579,7 @@ const progOmrSchema = {
     "category": "Tuition Fee",
     // [UPDATE: Replace with actual fee when confirmed by admin]
     "priceCurrency": "INR",
-    "url": "https://admission.jkkn.ac.in/"
+    "url": "https://www.jkkn.ai/apply/jkkn-admission-2026"
   },
   "programPrerequisites": {
     "@type": "EducationalOccupationalCredential",

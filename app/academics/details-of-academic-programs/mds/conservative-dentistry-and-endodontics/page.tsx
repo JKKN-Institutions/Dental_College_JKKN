@@ -57,7 +57,7 @@ export default function MDSConservativeDentistry() {
         "name": "Is hostel accommodation available for postgraduate Learners?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes, we provide separate hostel facilities for male and female postgraduate Learners. The hostels are equipped with modern amenities including Wi-Fi, 24/7 security, mess facility, and recreational areas."
+          "text": "Yes, we provide separate hostel facilities for male and female postgraduate Learners. Girls: AC Room — ₹30,000/Year. Boys: No hostel charges applicable. Classic Mess and Premium Mess are not available for Dental students. The hostels are equipped with modern amenities including Wi-Fi, 24/7 security, and recreational areas."
         }
       },
       {
@@ -81,7 +81,7 @@ export default function MDSConservativeDentistry() {
         "name": "Are there any scholarships available for MDS Learners?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Merit-based scholarships and government scholarships for SC/ST/OBC categories are available. Additionally, we assist Learners in obtaining education loans from nationalized banks with competitive interest rates."
+          "text": "Government scholarships available: SC/SCA/ST/BC-CC — PMSS (GQ: 2.5L/Yr, MQ: 6L/Yr), Maintainence Scholarship (GQ: 5K–10K/Yr); BC/MBC/DNC/BCM — First Graduate (40K/Yr), Community Scholarship (5K–10K/Yr); All Community Tamil Medium (Govt School 6–12 Std) — Naan Phudulvan Scholarship (₹1,000/month). Merit-based scholarships and education loans from nationalized banks are also available."
         }
       },
       {
@@ -155,7 +155,7 @@ export default function MDSConservativeDentistry() {
 
               {/* Buttons */}
               <div className="flex flex-wrap gap-4">
-                <a href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8" target="_blank" rel="noopener noreferrer" className="bg-[#7cb983] hover:bg-[#6ba872] text-white font-bold px-8 py-4 rounded-lg text-lg transition-all duration-300 shadow-lg inline-block">
+                <a href="https://www.jkkn.ai/apply/jkkn-admission-2026" target="_blank" rel="noopener noreferrer" className="bg-[#7cb983] hover:bg-[#6ba872] text-white font-bold px-8 py-4 rounded-lg text-lg transition-all duration-300 shadow-lg inline-block">
                   Apply Now
                 </a>
                 <button
@@ -1085,13 +1085,13 @@ export default function MDSConservativeDentistry() {
                 {/* Row 4 */}
                 <div className="grid grid-cols-4 hover:bg-gray-50 transition-colors duration-200">
                   <div className="p-4 md:p-6 border-r border-gray-200">
-                    <p className="text-gray-700 font-medium text-sm md:text-base">Hostel Fee (Per Annum)</p>
+                    <p className="text-gray-700 font-medium text-sm md:text-base">Hostel Fee – Girls AC Room (Per Annum)</p>
                   </div>
                   <div className="p-4 md:p-6 border-r border-gray-200">
-                    <p className="text-gray-800 font-bold text-base md:text-lg">₹60,000</p>
+                    <p className="text-gray-800 font-bold text-base md:text-lg">₹30,000</p>
                   </div>
                   <div className="p-4 md:p-6 border-r border-gray-200">
-                    <p className="text-gray-800 font-bold text-base md:text-lg">₹60,000</p>
+                    <p className="text-gray-800 font-bold text-base md:text-lg">₹30,000</p>
                   </div>
                   <div className="p-4 md:p-6">
                     <p className="text-gray-800 font-bold text-base md:text-lg">$1,200</p>
@@ -1108,7 +1108,7 @@ export default function MDSConservativeDentistry() {
                 <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
               </svg>
               <p className="text-gray-700 leading-relaxed">
-                Fees are subject to revision as per university and government norms. Scholarships and education loans are available for eligible Learners. Contact the admissions office for the latest fee structure.
+                Fees are subject to revision as per university and government norms. Hostel fees: Girls — AC Room ₹30,000/Year; Boys — not applicable. Government scholarships (PMSS, Naan Phudulvan, First Graduate, etc.) and education loans are available for eligible Learners. Contact the admissions office for the latest fee structure.
               </p>
             </div>
           </div>
@@ -1170,7 +1170,7 @@ export default function MDSConservativeDentistry() {
                 </svg>
               </summary>
               <div className="px-6 pb-6 text-gray-600 leading-relaxed">
-                Yes, we provide separate hostel facilities for male and female postgraduate Learners. The hostels are equipped with modern amenities including Wi-Fi, 24/7 security, mess facility, and recreational areas.
+                Yes, we provide separate hostel facilities for male and female postgraduate Learners. Girls: AC Room — ₹30,000/Year. Boys: No hostel charges applicable. Classic Mess and Premium Mess are not available for Dental students. The hostels are equipped with modern amenities including Wi-Fi, 24/7 security, and recreational areas.
               </div>
             </details>
 
@@ -1209,7 +1209,7 @@ export default function MDSConservativeDentistry() {
                 </svg>
               </summary>
               <div className="px-6 pb-6 text-gray-600 leading-relaxed">
-                Merit-based scholarships and government scholarships for SC/ST/OBC categories are available. Additionally, we assist Learners in obtaining education loans from nationalized banks with competitive interest rates.
+                Government scholarships available: SC/SCA/ST/BC-CC — PMSS (GQ: 2.5L/Yr, MQ: 6L/Yr), Maintainence Scholarship (GQ: 5K–10K/Yr); BC/MBC/DNC/BCM — First Graduate (40K/Yr), Community Scholarship (5K–10K/Yr); All Community Tamil Medium (Govt School 6–12 Std) — Naan Phudulvan Scholarship (₹1,000/month). Merit-based scholarships and education loans from nationalized banks are also available.
               </div>
             </details>
 
@@ -1297,7 +1297,7 @@ export default function MDSConservativeDentistry() {
             <a href="/pdf/brochure.pdf" download className="bg-white hover:bg-gray-100 text-[#7cb983] font-bold px-10 py-4 rounded-lg text-lg transition-all duration-300 shadow-lg hover:shadow-xl">
               Download Prospectus
             </a>
-            <a href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8" target="_blank" rel="noopener noreferrer" className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#7cb983] font-bold px-10 py-4 rounded-lg text-lg transition-all duration-300">
+            <a href="https://www.jkkn.ai/apply/jkkn-admission-2026" target="_blank" rel="noopener noreferrer" className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#7cb983] font-bold px-10 py-4 rounded-lg text-lg transition-all duration-300">
               Apply Online
             </a>
           </div>

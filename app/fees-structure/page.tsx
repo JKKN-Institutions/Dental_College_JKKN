@@ -241,8 +241,13 @@ export default function FeesStructure() {
                   <td className="px-6 py-4 text-gray-600">Per Year</td>
                 </tr>
                 <tr className="hover:bg-white transition-colors">
-                  <td className="px-6 py-4 font-semibold text-gray-800">Hostel Fee (Optional)</td>
-                  <td className="px-6 py-4 text-right text-gray-800">Contact College</td>
+                  <td className="px-6 py-4 font-semibold text-gray-800">Hostel Fee – Girls AC Room (Optional)</td>
+                  <td className="px-6 py-4 text-right text-gray-800">&#8377;30,000</td>
+                  <td className="px-6 py-4 text-gray-600">Per Year</td>
+                </tr>
+                <tr className="hover:bg-white transition-colors">
+                  <td className="px-6 py-4 font-semibold text-gray-800">Hostel Fee – Boys (Optional)</td>
+                  <td className="px-6 py-4 text-right text-gray-800">—</td>
                   <td className="px-6 py-4 text-gray-600">Per Year</td>
                 </tr>
                 <tr className="hover:bg-white transition-colors">
@@ -508,7 +513,7 @@ export default function FeesStructure() {
               </div>
               <h3 className="text-lg font-bold text-gray-800 mb-2">Government Scholarships</h3>
               <p className="text-sm text-gray-600">
-                SC/ST, OBC, minority scholarships as per government norms and eligibility.
+                SC/SCA/ST/BC-CC: PMSS (2.5L–6L/Yr), Maintainence (5K–10K/Yr). BC/MBC/DNC/BCM: First Graduate (40K/Yr), Community (5K–10K/Yr). All Community (Tamil Medium): Naan Phudulvan ₹1,000/month.
               </p>
             </div>
 

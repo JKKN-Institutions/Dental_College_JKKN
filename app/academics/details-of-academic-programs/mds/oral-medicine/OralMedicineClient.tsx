@@ -132,7 +132,7 @@ export default function MDSOralMedicine() {
 
               {/* Buttons */}
               <div className="flex flex-wrap gap-4">
-                <a href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8" target="_blank" rel="noopener noreferrer" className="bg-[#7cb983] hover:bg-[#6ba872] text-white font-bold px-8 py-4 rounded-lg text-lg transition-all duration-300 shadow-lg inline-block">
+                <a href="https://www.jkkn.ai/apply/jkkn-admission-2026" target="_blank" rel="noopener noreferrer" className="bg-[#7cb983] hover:bg-[#6ba872] text-white font-bold px-8 py-4 rounded-lg text-lg transition-all duration-300 shadow-lg inline-block">
                   Apply Now
                 </a>
                 <button
@@ -1139,7 +1139,7 @@ export default function MDSOralMedicine() {
             <button className="bg-white text-[#7cb983] hover:bg-gray-100 font-bold px-10 py-4 rounded-lg text-lg transition-all duration-300 shadow-lg">
               Download Prospectus
             </button>
-            <a href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8" target="_blank" rel="noopener noreferrer" className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#7cb983] font-bold px-10 py-4 rounded-lg text-lg transition-all duration-300">
+            <a href="https://www.jkkn.ai/apply/jkkn-admission-2026" target="_blank" rel="noopener noreferrer" className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#7cb983] font-bold px-10 py-4 rounded-lg text-lg transition-all duration-300">
               Apply Online
             </a>
           </div>

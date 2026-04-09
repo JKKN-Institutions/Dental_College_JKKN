@@ -73,7 +73,7 @@ export default function MDSProsthodontics() {
         "name": "Does the college provide hostel accommodation?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes, separate hostel facilities are available for both male and female postgraduate Learners. The hostels are equipped with modern amenities, Wi-Fi connectivity, mess facilities, and 24/7 security. The campus also includes recreational facilities and a gymnasium."
+          "text": "Yes, separate hostel facilities are available for both male and female postgraduate Learners. Girls: AC Room — ₹30,000/Year. Boys: No hostel charges applicable. Classic Mess and Premium Mess are not available for Dental students. The hostels are equipped with modern amenities, Wi-Fi connectivity, and 24/7 security. The campus also includes recreational facilities and a gymnasium."
         }
       },
       {
@@ -147,7 +147,7 @@ export default function MDSProsthodontics() {
 
               {/* Buttons */}
               <div className="flex flex-wrap gap-4">
-                <a href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8" target="_blank" rel="noopener noreferrer" className="bg-[#7cb983] hover:bg-[#6ba872] text-white font-bold px-8 py-4 rounded-lg text-lg transition-all duration-300 shadow-lg inline-block">
+                <a href="https://www.jkkn.ai/apply/jkkn-admission-2026" target="_blank" rel="noopener noreferrer" className="bg-[#7cb983] hover:bg-[#6ba872] text-white font-bold px-8 py-4 rounded-lg text-lg transition-all duration-300 shadow-lg inline-block">
                   Apply Now
                 </a>
                 <button
@@ -1092,7 +1092,7 @@ export default function MDSProsthodontics() {
                 <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
               </svg>
               <p className="text-gray-700">
-                Fee structure is subject to revision as per university and government norms. Hostel and mess charges are additional. Education loan assistance available. Merit-based scholarships for qualifying Learners.
+                Fee structure is subject to revision as per university and government norms. Hostel fees: Girls — AC Room ₹30,000/Year; Boys — not applicable. Classic Mess and Premium Mess are not available for Dental students. Government scholarships (PMSS, Naan Phudulvan, First Graduate, etc.), merit-based scholarships, and education loan assistance are available for qualifying Learners.
               </p>
             </div>
           </div>
@@ -1178,7 +1178,7 @@ export default function MDSProsthodontics() {
                 </svg>
               </summary>
               <p className="mt-4 text-gray-700">
-                Yes, separate hostel facilities are available for both male and female postgraduate Learners. The hostels are equipped with modern amenities, Wi-Fi connectivity, mess facilities, and 24/7 security. The campus also includes recreational facilities and a gymnasium.
+                Yes, separate hostel facilities are available for both male and female postgraduate Learners. Girls: AC Room — ₹30,000/Year. Boys: No hostel charges applicable. Classic Mess and Premium Mess are not available for Dental students. The hostels are equipped with modern amenities, Wi-Fi connectivity, and 24/7 security. The campus also includes recreational facilities and a gymnasium.
               </p>
             </details>
 
@@ -1265,7 +1265,7 @@ export default function MDSProsthodontics() {
             <a href="/pdf/brochure.pdf" download className="bg-white text-[#7cb983] hover:bg-gray-100 font-bold px-8 py-4 rounded-lg text-lg transition-all duration-300 shadow-lg">
               Download Prospectus
             </a>
-            <a href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8" target="_blank" rel="noopener noreferrer" className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#7cb983] font-bold px-8 py-4 rounded-lg text-lg transition-all duration-300">
+            <a href="https://www.jkkn.ai/apply/jkkn-admission-2026" target="_blank" rel="noopener noreferrer" className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#7cb983] font-bold px-8 py-4 rounded-lg text-lg transition-all duration-300">
               Apply Online
             </a>
           </div>

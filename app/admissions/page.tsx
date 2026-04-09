@@ -108,7 +108,7 @@ const faqSchema = {
       name: 'Are scholarships available at JKKN Dental College?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'JKKN Dental College offers merit-based scholarships, sports quota scholarships, single parent scholarships, and government scholarships for SC, ST, OBC, and EWS categories.',
+        text: 'JKKN Dental College offers merit-based scholarships, sports quota scholarships, single parent scholarships, and government scholarships: SC/SCA/ST/BC-CC — PMSS (GQ: 2.5L/Yr, MQ: 6L/Yr), Maintainence Scholarship (5K–10K/Yr); BC/MBC/DNC/BCM — First Graduate (40K/Yr), Community Scholarship (5K–10K/Yr); All Community Tamil Medium — Naan Phudulvan ₹1,000/month.',
       },
     },
     {
@@ -140,8 +140,8 @@ const howToSchema = {
       '@type': 'HowToStep',
       position: 2,
       name: 'Apply Online',
-      text: 'Register on the JKKN admission portal at admission.jkkn.ac.in and submit your application with required documents.',
-      url: 'https://admission.jkkn.ac.in/',
+      text: 'Register on the JKKN admission portal at www.jkkn.ai/apply/jkkn-admission-2026 and submit your application with required documents.',
+      url: 'https://www.jkkn.ai/apply/jkkn-admission-2026',
     },
     {
       '@type': 'HowToStep',
@@ -189,7 +189,7 @@ const admissionEventSchema = {
     },
     {
       '@type': 'VirtualLocation',
-      url: 'https://admission.jkkn.ac.in/',
+      url: 'https://www.jkkn.ai/apply/jkkn-admission-2026',
     },
   ],
   organizer: {
@@ -199,7 +199,7 @@ const admissionEventSchema = {
   },
   offers: {
     '@type': 'Offer',
-    url: 'https://admission.jkkn.ac.in/',
+    url: 'https://www.jkkn.ai/apply/jkkn-admission-2026',
     availability: 'https://schema.org/InStock',
     validFrom: '2026-03-01',
   },
@@ -247,7 +247,7 @@ const bdsSchema = {
     '@type': 'Offer',
     category: 'Government Quota / Management Quota',
     availability: 'https://schema.org/InStock',
-    url: 'https://admission.jkkn.ac.in/',
+    url: 'https://www.jkkn.ai/apply/jkkn-admission-2026',
     priceSpecification: {
       '@type': 'PriceSpecification',
       priceCurrency: 'INR',
@@ -287,7 +287,7 @@ const mdsSchema = {
     '@type': 'Offer',
     category: 'Government Quota / Management Quota',
     availability: 'https://schema.org/InStock',
-    url: 'https://admission.jkkn.ac.in/',
+    url: 'https://www.jkkn.ai/apply/jkkn-admission-2026',
     priceSpecification: {
       '@type': 'PriceSpecification',
       priceCurrency: 'INR',
@@ -532,7 +532,7 @@ export default function AdmissionPage() {
           {/* Hero Dual CTA */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8"
+              href="https://www.jkkn.ai/apply/jkkn-admission-2026"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-[#7cb983] hover:bg-[#6ba872] text-white font-bold py-3.5 px-8 rounded-full transition-all duration-300 min-h-[44px] flex items-center justify-center gap-2 hover:scale-105 active:scale-95 text-lg"
@@ -861,7 +861,7 @@ export default function AdmissionPage() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10">
             <a
-              href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8"
+              href="https://www.jkkn.ai/apply/jkkn-admission-2026"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-[#7cb983] hover:bg-[#6ba872] text-[#006837] font-bold px-8 py-4 rounded-full transition-all duration-300 min-h-[44px] flex items-center justify-center gap-2 hover:scale-105 active:scale-95 text-lg"
@@ -928,7 +928,7 @@ export default function AdmissionPage() {
               },
               {
                 q: 'Are scholarships available?',
-                a: 'Yes. JKKN offers merit-based scholarships, sports quota scholarships (wrestling, volleyball, basketball, etc.), single parent scholarships, and government scholarships for SC/ST/OBC/EWS categories.',
+                a: 'Yes. JKKN offers merit-based scholarships, sports quota scholarships (wrestling, volleyball, basketball, etc.), single parent scholarships, and government scholarships: SC/SCA/ST/BC-CC — PMSS (GQ: 2.5L/Yr, MQ: 6L/Yr), Maintainence Scholarship (5K–10K/Yr); BC/MBC/DNC/BCM — First Graduate (40K/Yr), Community Scholarship (5K–10K/Yr); All Community Tamil Medium — Naan Phudulvan ₹1,000/month.',
               },
               {
                 q: 'What is the fee structure for BDS?',

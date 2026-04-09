@@ -15,11 +15,11 @@ export default function CoimbatorePage() {
     },
     {
       q: 'What is the NEET cutoff for dental colleges near Coimbatore?',
-      a: 'NEET cutoff for BDS admission in Tamil Nadu dental colleges varies by category and quota. For government quota seats, candidates typically require a minimum of 450 marks. For private dental college management quota seats, the 50th percentile applies for general category candidates. For JKKN Dental College & Hospital admission, visit admission.jkkn.ac.in for current 2026 cutoff data.',
+      a: 'NEET cutoff for BDS admission in Tamil Nadu dental colleges varies by category and quota. For government quota seats, candidates typically require a minimum of 450 marks. For private dental college management quota seats, the 50th percentile applies for general category candidates. For JKKN Dental College & Hospital admission, visit www.jkkn.ai/apply/jkkn-admission-2026 for current 2026 cutoff data.',
     },
     {
       q: 'What is the fee for BDS at JKKN Dental College?',
-      a: 'JKKN Dental College & Hospital BDS fees depend on the admission quota — state counseling quota or management quota. For current 2026–27 fee structure, visit dental.jkkn.ac.in/fees-structure/ or contact the admissions office at +91 9345855001. Fee details are also available at admission.jkkn.ac.in.',
+      a: 'JKKN Dental College & Hospital BDS fees depend on the admission quota — state counseling quota or management quota. For current 2026–27 fee structure, visit dental.jkkn.ac.in/fees-structure/ or contact the admissions office at +91 9345855001. Fee details are also available at www.jkkn.ai/apply/jkkn-admission-2026.',
     },
     {
       q: 'What are the MDS specializations at JKKN Dental College?',
@@ -39,7 +39,7 @@ export default function CoimbatorePage() {
     },
     {
       q: 'How to apply for BDS at JKKN Dental College from Coimbatore?',
-      a: 'To apply for BDS at JKKN Dental College & Hospital: (1) Qualify NEET UG 2026. (2) Register for Tamil Nadu state counseling at tnmedicalselection.net. (3) For management quota, apply at admission.jkkn.ac.in. (4) Submit NEET scorecard, 10+2 mark sheets, and category certificate. Admissions are open from March to August 2026.',
+      a: 'To apply for BDS at JKKN Dental College & Hospital: (1) Qualify NEET UG 2026. (2) Register for Tamil Nadu state counseling at tnmedicalselection.net. (3) For management quota, apply at www.jkkn.ai/apply/jkkn-admission-2026. (4) Submit NEET scorecard, 10+2 mark sheets, and category certificate. Admissions are open from March to August 2026.',
     },
     {
       q: 'What clinical exposure does JKKN Dental College provide?',
@@ -180,7 +180,7 @@ export default function CoimbatorePage() {
           ))}
         </ul>
         <div className="flex flex-col sm:flex-row gap-4 items-center">
-          <a href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8" target="_blank" rel="nofollow noopener noreferrer" className="bg-[#7cb983] hover:bg-[#6ba872] text-white font-bold px-8 py-4 rounded-full transition-all transform hover:scale-105 shadow-lg text-base">
+          <a href="https://www.jkkn.ai/apply/jkkn-admission-2026" target="_blank" rel="nofollow noopener noreferrer" className="bg-[#7cb983] hover:bg-[#6ba872] text-white font-bold px-8 py-4 rounded-full transition-all transform hover:scale-105 shadow-lg text-base">
             Apply Now — 2026-27
           </a>
           <a href="tel:+919345855001" className="bg-[#006837] hover:bg-[#002309] text-white font-bold px-8 py-4 rounded-full transition-all transform hover:scale-105 shadow-lg text-base">Call Us</a>
@@ -334,7 +334,7 @@ export default function CoimbatorePage() {
                   <Link href={prog.href} className="block text-center bg-[#006837] hover:bg-[#002309] text-white font-semibold py-3 rounded-xl transition-colors text-sm">
                     View Programme Details
                   </Link>
-                  <a href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8" target="_blank" rel="noopener noreferrer" className="block text-center bg-white hover:bg-[#e8f5e9] text-[#006837] font-semibold py-3 rounded-xl transition-colors text-sm">
+                  <a href="https://www.jkkn.ai/apply/jkkn-admission-2026" target="_blank" rel="noopener noreferrer" className="block text-center bg-white hover:bg-[#e8f5e9] text-[#006837] font-semibold py-3 rounded-xl transition-colors text-sm">
                     Apply for Admission
                   </a>
                 </div>
@@ -364,7 +364,7 @@ export default function CoimbatorePage() {
             {[
               'Qualify NEET UG 2026 with a minimum score of 50th percentile for general category candidates.',
               'Register for Tamil Nadu MBBS/BDS state counseling at tnmedicalselection.net after NEET results are declared.',
-              'For management quota seats, apply directly at admission.jkkn.ac.in — applications open March to August 2026.',
+              'For management quota seats, apply directly at www.jkkn.ai/apply/jkkn-admission-2026 — applications open March to August 2026.',
               'Submit documents: NEET scorecard, Class 10 and 12 mark sheets, transfer certificate, and category certificate (if applicable).',
               'Attend counseling, receive allotment, and complete fee payment to confirm the seat.',
             ].map((step, i) => (
@@ -562,7 +562,7 @@ export default function CoimbatorePage() {
           <div className="bg-[#FBFBEE] border border-[#7cb983]/30 rounded-2xl p-6">
             <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-3">About This Page</p>
             <p className="text-gray-600 text-sm leading-relaxed">
-              This page is published by JKKN Dental College &amp; Hospital, a DCI-approved institution established in 1987, affiliated with The Tamil Nadu Dr. M.G.R. Medical University, Chennai. Placement data is sourced from the institutional placement portal at <a href="https://placements.jkkn.ac.in" target="_blank" rel="noopener noreferrer" className="text-[#006837] underline">placements.jkkn.ac.in</a>. Admission data is sourced from <a href="https://admission.jkkn.ac.in" target="_blank" rel="noopener noreferrer" className="text-[#006837] underline">admission.jkkn.ac.in</a>. Last updated: March 2026.
+              This page is published by JKKN Dental College &amp; Hospital, a DCI-approved institution established in 1987, affiliated with The Tamil Nadu Dr. M.G.R. Medical University, Chennai. Placement data is sourced from the institutional placement portal at <a href="https://placements.jkkn.ac.in" target="_blank" rel="noopener noreferrer" className="text-[#006837] underline">placements.jkkn.ac.in</a>. Admission data is sourced from <a href="https://www.jkkn.ai/apply/jkkn-admission-2026" target="_blank" rel="noopener noreferrer" className="text-[#006837] underline">www.jkkn.ai/apply/jkkn-admission-2026</a>. Last updated: March 2026.
             </p>
           </div>
         </div>

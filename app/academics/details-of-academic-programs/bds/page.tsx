@@ -64,7 +64,7 @@ export default function BDSProgram() {
       "@type": "Offer",
       "category": "Government Quota / Management Quota",
       "availability": "https://schema.org/InStock",
-      "url": "https://admission.jkkn.ac.in/"
+      "url": "https://www.jkkn.ai/apply/jkkn-admission-2026"
     },
     "aggregateRating": {
       "@type": "AggregateRating",
@@ -133,7 +133,7 @@ export default function BDSProgram() {
         "name": "What is the BDS course fee at JKKN Dental College?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "BDS fees at JKKN Dental College are regulated by the Tamil Nadu government. Government Quota and Management Quota fees are determined as per state norms. For the latest 2026-27 fee structure, contact the admissions office at +91 93458 55001 or visit admission.jkkn.ac.in. Scholarships are available for meritorious and economically weaker students."
+          "text": "BDS fees at JKKN Dental College are regulated by the Tamil Nadu government. Government Quota and Management Quota fees are determined as per state norms. For the latest 2026-27 fee structure, contact the admissions office at +91 93458 55001 or visit www.jkkn.ai/apply/jkkn-admission-2026. Scholarships are available for meritorious and economically weaker students."
         }
       },
       {
@@ -299,7 +299,7 @@ export default function BDSProgram() {
 
               {/* CTA Buttons */}
               <div className="flex flex-wrap gap-4">
-                <a href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8" target="_blank" rel="noopener noreferrer" className="bg-[#7cb983] hover:bg-[#6ba872] text-white font-semibold px-8 py-3 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl inline-block">
+                <a href="https://www.jkkn.ai/apply/jkkn-admission-2026" target="_blank" rel="noopener noreferrer" className="bg-[#7cb983] hover:bg-[#6ba872] text-white font-semibold px-8 py-3 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl inline-block">
                   Apply Now — Admission 2026-27
                 </a>
                 <button
@@ -770,7 +770,7 @@ export default function BDSProgram() {
 
               <div className="mt-8 bg-[#006837]/10 rounded-lg p-4">
                 <p className="text-sm text-[#006837] font-semibold">
-                  For direct admission enquiries and management quota: <a href="tel:+919345855001" className="underline">+91 93458 55001</a> | <a href="mailto:dental@jkkn.ac.in" className="underline">dental@jkkn.ac.in</a> | <a href="https://admission.jkkn.ac.in/" target="_blank" rel="noopener noreferrer" className="underline">admission.jkkn.ac.in</a>
+                  For direct admission enquiries and management quota: <a href="tel:+919345855001" className="underline">+91 93458 55001</a> | <a href="mailto:dental@jkkn.ac.in" className="underline">dental@jkkn.ac.in</a> | <a href="https://www.jkkn.ai/apply/jkkn-admission-2026" target="_blank" rel="noopener noreferrer" className="underline">www.jkkn.ai/apply/jkkn-admission-2026</a>
                 </p>
               </div>
             </div>
@@ -1508,7 +1508,7 @@ export default function BDSProgram() {
               },
               {
                 q: 'What is the BDS course fee at JKKN Dental College?',
-                a: 'BDS fees at JKKN are regulated by the Tamil Nadu Government Fee Fixation Committee. Both Government Quota and Management Quota fees are determined as per state norms. For the latest 2026-27 fee structure, contact the admissions office at +91 93458 55001 or visit admission.jkkn.ac.in. Scholarships are available for meritorious and economically weaker students.'
+                a: 'BDS fees at JKKN are regulated by the Tamil Nadu Government Fee Fixation Committee. Both Government Quota and Management Quota fees are determined as per state norms. For the latest 2026-27 fee structure, contact the admissions office at +91 93458 55001 or visit www.jkkn.ai/apply/jkkn-admission-2026. Scholarships are available for meritorious and economically weaker students.'
               },
               {
                 q: 'What is the NEET cutoff for BDS admission at JKKN?',
@@ -1576,7 +1576,7 @@ export default function BDSProgram() {
           </p>
 
           <div className="flex flex-wrap justify-center gap-6">
-            <a href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8" target="_blank" rel="noopener noreferrer" className="bg-[#7cb983] hover:bg-[#6ba872] text-white font-semibold px-10 py-4 rounded-lg text-lg transition-all duration-300 shadow-lg hover:shadow-xl inline-block">
+            <a href="https://www.jkkn.ai/apply/jkkn-admission-2026" target="_blank" rel="noopener noreferrer" className="bg-[#7cb983] hover:bg-[#6ba872] text-white font-semibold px-10 py-4 rounded-lg text-lg transition-all duration-300 shadow-lg hover:shadow-xl inline-block">
               Apply for BDS Admission 2026-27
             </a>
             <a href="tel:+919345855001" className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#006837] font-semibold px-10 py-4 rounded-lg text-lg transition-all duration-300 inline-block">

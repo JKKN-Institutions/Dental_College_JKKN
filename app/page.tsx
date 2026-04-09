@@ -88,7 +88,7 @@ export default function Home() {
       "@type": "Offer",
       "category": "Government Quota / Management Quota",
       "availability": "https://schema.org/InStock",
-      "url": "https://admission.jkkn.ac.in/",
+      "url": "https://www.jkkn.ai/apply/jkkn-admission-2026",
       "priceSpecification": {
         "@type": "PriceSpecification",
         "priceCurrency": "INR",
@@ -127,7 +127,7 @@ export default function Home() {
       "@type": "Offer",
       "category": "Government Quota / Management Quota",
       "availability": "https://schema.org/InStock",
-      "url": "https://admission.jkkn.ac.in/",
+      "url": "https://www.jkkn.ai/apply/jkkn-admission-2026",
       "priceSpecification": {
         "@type": "PriceSpecification",
         "priceCurrency": "INR",
@@ -226,7 +226,7 @@ export default function Home() {
       "https://www.linkedin.com/school/jkkndental/",
       "https://www.youtube.com/playlist?list=PL6QsTq-__HhvqQ28WcrDAwPa9jeMSK3AO",
       "https://maps.app.goo.gl/mXx6rFRqpS9U76BK6",
-      "https://admission.jkkn.ac.in/",
+      "https://www.jkkn.ai/apply/jkkn-admission-2026",
       "https://placements.jkkn.ac.in/",
       "https://jkkn.ac.in/",
       "https://dciindia.gov.in/",
@@ -412,7 +412,7 @@ export default function Home() {
       },
       {
         "@type": "VirtualLocation",
-        "url": "https://admission.jkkn.ac.in/"
+        "url": "https://www.jkkn.ai/apply/jkkn-admission-2026"
       }
     ],
     "organizer": {
@@ -422,7 +422,7 @@ export default function Home() {
     },
     "offers": {
       "@type": "Offer",
-      "url": "https://admission.jkkn.ac.in/",
+      "url": "https://www.jkkn.ai/apply/jkkn-admission-2026",
       "availability": "https://schema.org/InStock",
       "validFrom": "2026-03-01"
     },

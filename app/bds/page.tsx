@@ -61,7 +61,7 @@ const bdsCourseSchema = {
       "@type": "Offer",
       "category": "Tuition Fee",
       "priceCurrency": "INR",
-      "url": "https://admission.jkkn.ac.in/",
+      "url": "https://www.jkkn.ai/apply/jkkn-admission-2026",
       "availability": "https://schema.org/InStock",
       "description": "Contact admissions office for current fee structure: +91 93458 55001"
     }

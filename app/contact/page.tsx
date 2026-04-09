@@ -55,7 +55,7 @@ const faqSchema = {
       "name": "Is there a helpline for admission queries at JKKN Dental College?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, JKKN Dental College has a dedicated admissions helpline at +91 93458 55001. You can also email admissions@jkkn.ac.in for admission-related queries about BDS and MDS programs. Online applications are accepted at https://admission.jkkn.ac.in. The admissions team is available Monday to Saturday, 9:00 AM to 5:00 PM to answer questions about NEET eligibility, fee structure, scholarships, hostel facilities, and the application process."
+        "text": "Yes, JKKN Dental College has a dedicated admissions helpline at +91 93458 55001. You can also email admissions@jkkn.ac.in for admission-related queries about BDS and MDS programs. Online applications are accepted at https://www.jkkn.ai/apply/jkkn-admission-2026. The admissions team is available Monday to Saturday, 9:00 AM to 5:00 PM to answer questions about NEET eligibility, fee structure, scholarships, hostel facilities, and the application process."
       }
     }
   ]
@@ -321,7 +321,7 @@ export default function Contact() {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <a
-                    href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8"
+                    href="https://www.jkkn.ai/apply/jkkn-admission-2026"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center bg-white hover:bg-gray-100 active:bg-gray-200 text-[#1B5E20] font-bold text-sm sm:text-base px-6 sm:px-8 py-3 sm:py-3.5 rounded-lg transition-all duration-300 shadow-md min-h-[44px] touch-manipulation"

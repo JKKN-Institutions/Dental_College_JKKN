@@ -476,7 +476,7 @@ export const jkknSameAsUrls = [
   "https://www.youtube.com/playlist?list=PL6QsTq-__HhvqQ28WcrDAwPa9jeMSK3AO",
   "https://maps.app.goo.gl/mXx6rFRqpS9U76BK6",
   "https://jkkn.ac.in/",
-  "https://admission.jkkn.ac.in/",
+  "https://www.jkkn.ai/apply/jkkn-admission-2026",
   "https://placements.jkkn.ac.in/",
   "https://dciindia.gov.in/",
   "https://www.shiksha.com/college/j-k-k-nattraja-dental-college-and-hospital-namakkal-78331",

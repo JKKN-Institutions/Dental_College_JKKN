@@ -67,7 +67,7 @@ const faqSchema = {
       "name": "What is the NEET cutoff for dental colleges near Coimbatore?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "NEET cutoff for BDS admission in Tamil Nadu dental colleges varies by category and quota. For government quota seats, candidates typically require a minimum of 450 marks. For private dental college management quota seats, the 50th percentile applies for general category candidates. For JKKN Dental College & Hospital admission, visit admission.jkkn.ac.in for current 2026 cutoff data."
+        "text": "NEET cutoff for BDS admission in Tamil Nadu dental colleges varies by category and quota. For government quota seats, candidates typically require a minimum of 450 marks. For private dental college management quota seats, the 50th percentile applies for general category candidates. For JKKN Dental College & Hospital admission, visit www.jkkn.ai/apply/jkkn-admission-2026 for current 2026 cutoff data."
       }
     },
     {
@@ -75,7 +75,7 @@ const faqSchema = {
       "name": "What is the fee for BDS at JKKN Dental College?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "JKKN Dental College & Hospital BDS fees depend on the admission quota — state counseling quota or management quota. For current 2026–27 fee structure, visit dental.jkkn.ac.in/fees-structure/ or contact the admissions office at +91 9345855001. Fee details are also available at admission.jkkn.ac.in."
+        "text": "JKKN Dental College & Hospital BDS fees depend on the admission quota — state counseling quota or management quota. For current 2026–27 fee structure, visit dental.jkkn.ac.in/fees-structure/ or contact the admissions office at +91 9345855001. Fee details are also available at www.jkkn.ai/apply/jkkn-admission-2026."
       }
     },
     {
@@ -115,7 +115,7 @@ const faqSchema = {
       "name": "How to apply for BDS at JKKN Dental College from Coimbatore?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "To apply for BDS at JKKN Dental College & Hospital: (1) Qualify NEET UG 2026. (2) Register for Tamil Nadu state counseling at tnmedicalselection.net. (3) For management quota, apply at admission.jkkn.ac.in. (4) Submit NEET scorecard, 10+2 mark sheets, and category certificate. Admissions are open from March to August 2026."
+        "text": "To apply for BDS at JKKN Dental College & Hospital: (1) Qualify NEET UG 2026. (2) Register for Tamil Nadu state counseling at tnmedicalselection.net. (3) For management quota, apply at www.jkkn.ai/apply/jkkn-admission-2026. (4) Submit NEET scorecard, 10+2 mark sheets, and category certificate. Admissions are open from March to August 2026."
       }
     },
     {
@@ -283,10 +283,10 @@ const eventSchema = {
     "name": "JKKN Dental College & Hospital",
     "url": "https://dental.jkkn.ac.in/"
   },
-  "url": "https://admission.jkkn.ac.in/",
+  "url": "https://www.jkkn.ai/apply/jkkn-admission-2026",
   "offers": {
     "@type": "Offer",
-    "url": "https://admission.jkkn.ac.in/",
+    "url": "https://www.jkkn.ai/apply/jkkn-admission-2026",
     "availability": "https://schema.org/InStock",
     "validFrom": "2026-03-01"
   }
