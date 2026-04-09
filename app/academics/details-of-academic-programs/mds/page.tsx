@@ -4,44 +4,144 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import StructuredData from '@/components/StructuredData';
-import { generateBreadcrumbSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
+import MDSComparisonTables from '@/components/mds/MDSComparisonTables';
+import {
+  generateBreadcrumbSchema,
+  generateSpeakableWebPageSchema,
+  generateFAQSchema,
+  generateEducationalOrganizationSchema,
+  generateLocalBusinessSchema,
+  generateMDSCourseSchema,
+  generateHowToSchema,
+} from '@/lib/metadata';
+
+// FAQ data — shared between FAQPage schema and rendered FAQ section
+const mdsFAQs = [
+  {
+    question: "What is MDS (Master of Dental Surgery)?",
+    answer:
+      "MDS (Master of Dental Surgery) is a 3-year postgraduate dental program that provides specialized training in specific areas of dentistry. It is the highest clinical degree in dental sciences, preparing graduates for specialized practice, academic careers, and advanced research in their chosen field.",
+  },
+  {
+    question: "What MDS specializations are available at JKKN?",
+    answer:
+      "JKKN Dental College offers 5 DCI-approved MDS specializations: Endodontics (Conservative Dentistry), Prosthodontics (Crown & Bridge), Periodontics (Oral Implantology), Oral Medicine & Radiology, and Orthodontics (Dentofacial Orthopedics). A total of 18 seats are available annually across all specializations.",
+  },
+  {
+    question: "What is the eligibility for MDS admission?",
+    answer:
+      "Candidates must hold a BDS degree from a DCI-recognized institution, complete one-year compulsory rotating internship, have permanent State Dental Council registration, and qualify NEET MDS entrance examination with a valid score meeting current cutoff norms.",
+  },
+  {
+    question: "What are the career opportunities after MDS?",
+    answer:
+      "MDS graduates can establish specialty private practices, join multi-specialty clinics and hospitals, pursue academic careers as Learning Facilitators, work in corporate dental chains or government hospitals, and explore international opportunities. Many also become consultants for dental product companies or pursue research careers.",
+  },
+  {
+    question: "Is JKKN Dental College MDS program recognized?",
+    answer:
+      "Yes, all MDS programs at JKKN Dental College are fully recognized and approved by the Dental Council of India (DCI). The college is affiliated with The Tamil Nadu Dr. M.G.R. Medical University and maintains NAAC accreditation, ensuring national recognition for all graduates.",
+  },
+  {
+    question: "How many MDS seats are there in Tamil Nadu?",
+    answer:
+      "Tamil Nadu has 32+ dental colleges offering approximately 850+ MDS seats across 9 specializations. This includes 3 government colleges and 29+ private colleges, with 316 seats available under the management quota. JKKN Dental College contributes 18 MDS seats across 5 specializations.",
+  },
+  {
+    question: "What is the MDS course fees in Tamil Nadu?",
+    answer:
+      "MDS fees in Tamil Nadu range from ₹50,000/year in government colleges to ₹18 lakh/year in private management quota. Total 3-year fees range from ₹1.5 lakh (government) to ₹54 lakh (private management). Government quota seats in private colleges cost ₹4.5–7 lakh per year.",
+  },
+  {
+    question: "Which are the top MDS dental colleges in Tamil Nadu?",
+    answer:
+      "Top MDS dental colleges in Tamil Nadu include JKKN Dental College & Hospital (Komarapalayam), Saveetha Dental College (Chennai), SRM Dental College (Ramapuram), Sri Ramachandra Dental College (Porur), Meenakshi Ammal Dental College (Chennai), and Vinayaka Mission's Sankarachariyar Dental College (Salem). All are DCI-approved.",
+  },
+];
+
+// Admission steps for HowTo schema
+const mdsAdmissionSteps = [
+  {
+    name: "Complete BDS Degree",
+    text: "Complete a Bachelor of Dental Surgery (BDS) degree from a Dental Council of India (DCI) recognized dental college, including a 1-year compulsory rotating internship.",
+  },
+  {
+    name: "Register with State Dental Council",
+    text: "Obtain permanent registration with any State Dental Council in India, which is mandatory for MDS admission in Tamil Nadu.",
+  },
+  {
+    name: "Apply for NEET MDS",
+    text: "Register for the NEET MDS entrance examination conducted by the National Board of Examinations in Medical Sciences (NBEMS) on the official NBEMS portal.",
+  },
+  {
+    name: "Qualify NEET MDS",
+    text: "Appear for and qualify NEET MDS with a score above the annual cutoff. The cutoff varies each year based on the number of candidates and available seats.",
+  },
+  {
+    name: "Apply for Counselling",
+    text: "Apply for Tamil Nadu state counselling or all-India counselling (MCC) based on your preferred category. Submit required documents and pay the counselling fee.",
+  },
+  {
+    name: "Participate in Seat Allotment",
+    text: "Choose your preferred MDS college (such as JKKN Dental College) and specialization during counselling rounds. Seat allotment is based on NEET MDS rank, category, and seat availability.",
+  },
+  {
+    name: "Complete Admission at JKKN Dental College",
+    text: "Upon seat allotment at JKKN Dental College, complete document verification, pay the prescribed fees, and enroll in your chosen MDS specialization to begin your 3-year postgraduate dental program.",
+  },
+];
 
 export default function MDSProgram() {
-  const mdsSchema = {
-    "@context": "https://schema.org",
-    "@type": "Course",
-    "name": "Master of Dental Surgery (MDS)",
-    "description": "3-year postgraduate dental program with specializations in Periodontics, Orthodontics, Prosthodontics, Conservative Dentistry & Endodontics, and Oral Medicine at JKKN Dental College & Hospital.",
-    "provider": {
-      "@type": "CollegeOrUniversity",
-      "name": "JKKN Dental College & Hospital",
-      "url": "https://dental.jkkn.ac.in/"
-    },
-    "educationalCredentialAwarded": "MDS (Master of Dental Surgery)",
-    "timeRequired": "P3Y",
-    "occupationalCategory": "Dental Specialist",
-    "coursePrerequisites": "BDS degree from a recognized university; NEET-MDS qualification required",
-    "hasCourseInstance": [
-      { "@type": "CourseInstance", "name": "MDS Periodontics", "courseMode": "Full-time" },
-      { "@type": "CourseInstance", "name": "MDS Orthodontics & Dentofacial Orthopedics", "courseMode": "Full-time" },
-      { "@type": "CourseInstance", "name": "MDS Prosthodontics Crown & Bridge", "courseMode": "Full-time" },
-      { "@type": "CourseInstance", "name": "MDS Conservative Dentistry & Endodontics", "courseMode": "Full-time" },
-      { "@type": "CourseInstance", "name": "MDS Oral Medicine", "courseMode": "Full-time" }
-    ]
-  };
+  // Enriched Course schema with offers, courseInstance, educationalLevel
+  const mdsSchema = generateMDSCourseSchema();
 
-  const breadcrumbSchema = generateBreadcrumbSchema('/academics/details-of-academic-programs/mds');
+  // Breadcrumb schema
+  const breadcrumbSchema = generateBreadcrumbSchema(
+    '/academics/details-of-academic-programs/mds'
+  );
+
+  // FAQPage schema from shared FAQ data (was MISSING before)
+  const faqSchema = generateFAQSchema(mdsFAQs);
+
+  // EducationalOrganization schema for entity + knowledge panel
+  const eduOrgSchema = generateEducationalOrganizationSchema();
+
+  // LocalBusiness (Dentist) schema for GBP alignment
+  const localBusinessSchema = generateLocalBusinessSchema();
+
+  // HowTo schema for admission process
+  const admissionHowToSchema = generateHowToSchema({
+    name: "How to Get MDS Admission in Tamil Nadu at JKKN Dental College",
+    description:
+      "Step-by-step guide to securing MDS admission at JKKN Dental College, Tamil Nadu — from BDS completion to final enrollment in a 3-year postgraduate dental program.",
+    steps: mdsAdmissionSteps,
+  });
+
+  // Expanded Speakable schema for voice search (added .mds-direct-answer,
+  // table captions, hero description)
   const speakableSchema = generateSpeakableWebPageSchema({
-    title: 'MDS Program | Master of Dental Surgery - JKKN Dental College',
-    description: '3-year postgraduate dental program with specializations in Periodontics, Orthodontics, Prosthodontics, Conservative Dentistry & Endodontics, and Oral Medicine at JKKN Dental College.',
+    title:
+      'MDS Colleges in Tamil Nadu | JKKN Dental College & Hospital — Admissions 2026',
+    description:
+      '3-year postgraduate MDS program with 18 seats across 5 DCI-approved specializations at JKKN Dental College & Hospital, Tamil Nadu. NAAC-accredited, affiliated to TN Dr. MGR Medical University.',
     url: 'https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/',
-    speakableCssSelectors: ['h1', '.hero-description', 'article p'],
+    speakableCssSelectors: [
+      'h1',
+      '.hero-description',
+      '.mds-direct-answer',
+      'article p',
+      'details div',
+    ],
   });
 
   return (
     <main className="overflow-x-hidden">
+      <StructuredData data={eduOrgSchema} />
+      <StructuredData data={localBusinessSchema} />
       <StructuredData data={mdsSchema} />
       <StructuredData data={breadcrumbSchema} />
+      <StructuredData data={faqSchema} />
+      <StructuredData data={admissionHowToSchema} />
       <StructuredData data={speakableSchema} />
       <Header />
 
@@ -67,14 +167,22 @@ export default function MDSProgram() {
                 <span className="text-[#7cb983] font-semibold text-sm">DCI Approved | NAAC Accredited</span>
               </div>
 
-              {/* Heading */}
+              {/* Heading — Primary keyword: "mds colleges in tamilnadu" */}
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
-                Master of Dental Surgery <span className="text-[#7cb983]">(MDS)</span>
+                MDS Colleges in <span className="text-[#7cb983]">Tamil Nadu</span>
+                <span className="block text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-100 mt-3">
+                  JKKN Dental College — Master of Dental Surgery Admissions 2026
+                </span>
               </h1>
 
               {/* Description */}
-              <p className="text-lg text-gray-200 mb-8 leading-relaxed">
-                Elevate your dental career with specialized postgraduate training at JKKN Dental College. Choose from 5 DCI-approved specializations and learn from expert Learning Facilitators using state-of-the-art facilities.
+              <p className="hero-description text-lg text-gray-200 mb-8 leading-relaxed">
+                JKKN Dental College &amp; Hospital is a leading MDS dental
+                college in Tamil Nadu offering 18 seats across 5 DCI-approved
+                specializations. NAAC-accredited and affiliated to The Tamil
+                Nadu Dr. M.G.R. Medical University, our 3-year postgraduate MDS
+                program combines rigorous academics with clinical exposure
+                across 200+ dental chairs and 500+ daily patients.
               </p>
 
               {/* Stats Grid */}
@@ -683,6 +791,9 @@ export default function MDSProgram() {
         </div>
       </section>
 
+      {/* MDS Comparison Tables — SEO + AEO snippet bait */}
+      <MDSComparisonTables />
+
       {/* FAQ Section */}
       <section className="py-16 px-4 bg-[#FBFBEE]">
         <div className="max-w-4xl mx-auto">
@@ -700,72 +811,32 @@ export default function MDSProgram() {
             Find answers to common questions about MDS programs, admission, and career opportunities.
           </p>
 
-          {/* FAQ Items */}
+          {/* FAQ Items — rendered from shared mdsFAQs data for schema consistency */}
           <div className="space-y-4">
-            {/* FAQ 1 */}
-            <details className="group border-2 border-gray-200 rounded-xl overflow-hidden bg-white">
-              <summary className="flex items-center justify-between cursor-pointer p-6 font-bold text-[#006837] text-lg hover:bg-[#FBFBEE] transition-colors duration-300">
-                What is MDS (Master of Dental Surgery)?
-                <svg className="w-5 h-5 text-[#7cb983] transition-transform duration-300 group-open:rotate-180" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
-                </svg>
-              </summary>
-              <div className="px-6 pb-6 text-gray-600 leading-relaxed">
-                MDS (Master of Dental Surgery) is a 3-year postgraduate dental program that provides specialized training in specific areas of dentistry. It is the highest clinical degree in dental sciences, preparing graduates for specialized practice, academic careers, and advanced research in their chosen field.
-              </div>
-            </details>
-
-            {/* FAQ 2 */}
-            <details className="group border-2 border-gray-200 rounded-xl overflow-hidden bg-white">
-              <summary className="flex items-center justify-between cursor-pointer p-6 font-bold text-[#006837] text-lg hover:bg-[#FBFBEE] transition-colors duration-300">
-                What MDS specializations are available at JKKN?
-                <svg className="w-5 h-5 text-[#7cb983] transition-transform duration-300 group-open:rotate-180" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
-                </svg>
-              </summary>
-              <div className="px-6 pb-6 text-gray-600 leading-relaxed">
-                JKKN Dental College offers 5 DCI-approved MDS specializations: Endodontics (Conservative Dentistry), Prosthodontics (Crown & Bridge), Periodontics (Oral Implantology), Oral Medicine & Radiology, and Orthodontics (Dentofacial Orthopedics). A total of 18 seats are available annually across all specializations.
-              </div>
-            </details>
-
-            {/* FAQ 3 */}
-            <details className="group border-2 border-gray-200 rounded-xl overflow-hidden bg-white">
-              <summary className="flex items-center justify-between cursor-pointer p-6 font-bold text-[#006837] text-lg hover:bg-[#FBFBEE] transition-colors duration-300">
-                What is the eligibility for MDS admission?
-                <svg className="w-5 h-5 text-[#7cb983] transition-transform duration-300 group-open:rotate-180" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
-                </svg>
-              </summary>
-              <div className="px-6 pb-6 text-gray-600 leading-relaxed">
-                Candidates must hold a BDS degree from a DCI-recognized institution, complete one-year compulsory rotating internship, have permanent State Dental Council registration, and qualify NEET MDS entrance examination with a valid score meeting current cutoff norms.
-              </div>
-            </details>
-
-            {/* FAQ 4 */}
-            <details className="group border-2 border-gray-200 rounded-xl overflow-hidden bg-white">
-              <summary className="flex items-center justify-between cursor-pointer p-6 font-bold text-[#006837] text-lg hover:bg-[#FBFBEE] transition-colors duration-300">
-                What are the career opportunities after MDS?
-                <svg className="w-5 h-5 text-[#7cb983] transition-transform duration-300 group-open:rotate-180" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
-                </svg>
-              </summary>
-              <div className="px-6 pb-6 text-gray-600 leading-relaxed">
-                MDS graduates can establish specialty private practices, join multi-specialty clinics and hospitals, pursue academic careers as Learning Facilitators, work in corporate dental chains or government hospitals, and explore international opportunities. Many also become consultants for dental product companies or pursue research careers.
-              </div>
-            </details>
-
-            {/* FAQ 5 */}
-            <details className="group border-2 border-gray-200 rounded-xl overflow-hidden bg-white">
-              <summary className="flex items-center justify-between cursor-pointer p-6 font-bold text-[#006837] text-lg hover:bg-[#FBFBEE] transition-colors duration-300">
-                Is JKKN Dental College MDS program recognized?
-                <svg className="w-5 h-5 text-[#7cb983] transition-transform duration-300 group-open:rotate-180" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
-                </svg>
-              </summary>
-              <div className="px-6 pb-6 text-gray-600 leading-relaxed">
-                Yes, all MDS programs at JKKN Dental College are fully recognized and approved by the Dental Council of India (DCI). The college is affiliated with The Tamil Nadu Dr. M.G.R. Medical University and maintains NAAC accreditation, ensuring national recognition for all graduates.
-              </div>
-            </details>
+            {mdsFAQs.map((faq, idx) => (
+              <details
+                key={idx}
+                className="group border-2 border-gray-200 rounded-xl overflow-hidden bg-white"
+              >
+                <summary className="flex items-center justify-between cursor-pointer p-6 font-bold text-[#006837] text-lg hover:bg-[#FBFBEE] transition-colors duration-300">
+                  {faq.question}
+                  <svg
+                    className="w-5 h-5 text-[#7cb983] transition-transform duration-300 group-open:rotate-180 flex-shrink-0 ml-4"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                </summary>
+                <div className="px-6 pb-6 text-gray-600 leading-relaxed">
+                  {faq.answer}
+                </div>
+              </details>
+            ))}
           </div>
         </div>
       </section>

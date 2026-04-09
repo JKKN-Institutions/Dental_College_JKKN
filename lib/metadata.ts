@@ -535,6 +535,196 @@ export function generateLocalBusinessSchema() {
 }
 
 /**
+ * Generate EducationalOrganization schema with full entity enrichment
+ * for GEO, LLM citation, and knowledge panel eligibility
+ */
+export function generateEducationalOrganizationSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "CollegeOrUniversity",
+    "@id": "https://dental.jkkn.ac.in/#educationalorganization",
+    "name": organizationInfo.name,
+    "alternateName": organizationInfo.alternateName,
+    "url": organizationInfo.url,
+    "logo": organizationInfo.logo,
+    "image": organizationInfo.logo,
+    "description": "JKKN Dental College & Hospital is a DCI-approved, NAAC-accredited dental institution in Tamil Nadu offering BDS and MDS in 5 specializations. Affiliated to The Tamil Nadu Dr. M.G.R. Medical University with 200+ dental chairs, 100+ hospital beds, and 500+ daily patients.",
+    "foundingDate": organizationInfo.foundingDate,
+    "founder": {
+      "@type": "Person",
+      "name": "Thiru J.K.K. Nattraja",
+      "description": "Founder of J.K.K. Nattraja Educational Institutions, Tamil Nadu"
+    },
+    "parentOrganization": {
+      "@type": "EducationalOrganization",
+      "name": "J.K.K. Nattraja Educational Institutions",
+      "url": "https://jkkn.ac.in/"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      ...organizationInfo.address
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "11.445180",
+      "longitude": "77.726549"
+    },
+    "contactPoint": [
+      {
+        "@type": "ContactPoint",
+        "telephone": organizationInfo.contactPoint.telephone,
+        "email": organizationInfo.contactPoint.email,
+        "contactType": "Admissions",
+        "availableLanguage": ["English", "Tamil"],
+        "areaServed": "IN"
+      }
+    ],
+    "sameAs": jkknSameAsUrls,
+    "areaServed": [
+      { "@type": "State", "name": "Tamil Nadu" },
+      { "@type": "Country", "name": "India" }
+    ],
+    "hasCredential": [
+      {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "DCI Approval",
+        "recognizedBy": {
+          "@type": "Organization",
+          "name": "Dental Council of India",
+          "url": "https://dciindia.gov.in/"
+        }
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "NAAC Accreditation",
+        "recognizedBy": {
+          "@type": "Organization",
+          "name": "National Assessment and Accreditation Council"
+        }
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "University Affiliation",
+        "recognizedBy": {
+          "@type": "Organization",
+          "name": "The Tamil Nadu Dr. M.G.R. Medical University"
+        }
+      }
+    ],
+    "department": [
+      {
+        "@type": "EducationalOrganization",
+        "name": "MDS Conservative Dentistry & Endodontics"
+      },
+      {
+        "@type": "EducationalOrganization",
+        "name": "MDS Prosthodontics & Crown and Bridge"
+      },
+      {
+        "@type": "EducationalOrganization",
+        "name": "MDS Periodontics & Oral Implantology"
+      },
+      {
+        "@type": "EducationalOrganization",
+        "name": "MDS Oral Medicine & Radiology"
+      },
+      {
+        "@type": "EducationalOrganization",
+        "name": "MDS Orthodontics & Dentofacial Orthopedics"
+      }
+    ],
+    "numberOfEmployees": {
+      "@type": "QuantitativeValue",
+      "minValue": 25
+    },
+    "keywords": "mds colleges in tamilnadu, mds dental colleges in tamilnadu, mds seats in tamilnadu, best mds college tamil nadu, mds course fees tamilnadu, dental colleges in tamilnadu for mds"
+  };
+}
+
+/**
+ * Generate enriched MDS Course schema with offers, courseInstance,
+ * and all specialization details for rich results eligibility
+ */
+export function generateMDSCourseSchema() {
+  const specializations = [
+    { name: "MDS Conservative Dentistry & Endodontics", seats: 5, code: "CDE" },
+    { name: "MDS Prosthodontics & Crown and Bridge", seats: 3, code: "PCB" },
+    { name: "MDS Periodontics & Oral Implantology", seats: 2, code: "PER" },
+    { name: "MDS Oral Medicine & Radiology", seats: 3, code: "OMR" },
+    { name: "MDS Orthodontics & Dentofacial Orthopedics", seats: 5, code: "ORT" }
+  ];
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    "@id": "https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/#course",
+    "name": "Master of Dental Surgery (MDS) — JKKN Dental College, Tamil Nadu",
+    "alternateName": "MDS at JKKN Dental College",
+    "description": "3-year postgraduate Master of Dental Surgery (MDS) program at JKKN Dental College & Hospital, Tamil Nadu. Offers 18 seats across 5 DCI-approved specializations with 200+ dental chairs, 500+ daily patients, and expert Learning Facilitators. Affiliated to TN Dr. MGR Medical University, NAAC accredited.",
+    "courseCode": "MDS-JKKN",
+    "educationalLevel": "Postgraduate",
+    "educationalCredentialAwarded": {
+      "@type": "EducationalOccupationalCredential",
+      "name": "Master of Dental Surgery (MDS)",
+      "credentialCategory": "degree",
+      "educationalLevel": "Postgraduate"
+    },
+    "timeRequired": "P3Y",
+    "numberOfCredits": 120,
+    "occupationalCategory": "Dental Specialist",
+    "coursePrerequisites": "BDS degree from a DCI-recognized dental college, completed 1-year compulsory rotating internship, permanent State Dental Council registration, and valid NEET MDS score",
+    "teaches": "Specialized dental surgery skills in 5 branches: Conservative Dentistry & Endodontics, Prosthodontics, Periodontics, Oral Medicine & Radiology, and Orthodontics",
+    "totalTime": "P3Y",
+    "provider": {
+      "@type": "CollegeOrUniversity",
+      "@id": "https://dental.jkkn.ac.in/#educationalorganization",
+      "name": organizationInfo.name,
+      "url": organizationInfo.url,
+      "sameAs": jkknSameAsUrls
+    },
+    "offers": {
+      "@type": "Offer",
+      "category": "Tuition",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock",
+      "validFrom": "2026-03-01",
+      "url": "https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8",
+      "eligibleRegion": {
+        "@type": "Country",
+        "name": "India"
+      }
+    },
+    "hasCourseInstance": specializations.map((spec) => ({
+      "@type": "CourseInstance",
+      "name": spec.name,
+      "courseMode": "Full-time",
+      "courseWorkload": "P3Y",
+      "instructor": {
+        "@type": "Organization",
+        "name": "JKKN Dental College Learning Facilitators"
+      },
+      "location": {
+        "@type": "Place",
+        "name": "JKKN Dental College & Hospital",
+        "address": {
+          "@type": "PostalAddress",
+          ...organizationInfo.address
+        }
+      }
+    })),
+    "about": [
+      "Dental Surgery",
+      "Postgraduate Dentistry",
+      "Dental Specialization",
+      "NEET MDS",
+      "Dental College Tamil Nadu",
+      "MDS Admissions"
+    ],
+    "inLanguage": "en-IN"
+  };
+}
+
+/**
  * Generate HowTo schema for step-by-step processes
  */
 export function generateHowToSchema({
