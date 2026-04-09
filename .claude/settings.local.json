@@ -17,7 +17,16 @@
       "Bash(npm run build:*)",
       "Bash(git init:*)",
       "Bash(git remote add:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "mcp__firecrawl__firecrawl_scrape",
+      "mcp__tavily__tavily_extract",
+      "mcp__seo-search-console__list_verified_sites",
+      "mcp__playwright__browser_install",
+      "mcp__firecrawl__firecrawl_map",
+      "mcp__analytics-mcp__get_account_summaries",
+      "mcp__playwright__browser_navigate",
+      "mcp__seo-search-console__search_analytics",
+      "mcp__playwright__browser_take_screenshot"
     ]
   }
 }
