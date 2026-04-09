@@ -7,6 +7,14 @@ import DeleteFacultyButton from './DeleteFacultyButton';
 export default async function AdminFaculty() {
   const supabase = await createClient();
   const collegeId = await getAdminCollegeId();
+
+  const { data: { session } } = await supabase.auth.getSession();
+  const { data: profile } = await supabase
+    .from('staff_profiles')
+    .select('role')
+    .eq('id', session?.user?.id ?? '')
+    .single();
+  const isStaff = profile?.role === 'staff';
   const { data: members } = await supabase
     .from('faculty')
     .select('id, name, designation, department, qualification, experience_years, photo_url, email, display_order, is_active')
@@ -89,7 +97,7 @@ export default async function AdminFaculty() {
                   <Pencil className="w-3.5 h-3.5" />
                   Edit
                 </Link>
-                <DeleteFacultyButton id={m.id} />
+                {!isStaff && <DeleteFacultyButton id={m.id} />}
               </div>
             </div>
           ))}
