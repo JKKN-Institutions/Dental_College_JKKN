@@ -93,7 +93,7 @@ Account create aaithuchu — but ippo limitations iruku. "Autoconfirmed" status 
 ### Step 2: Account Levels Purinjuku
 
 | Level | Requirements | Ena Panna Mudiyum |
-|-------|-------------|-------------------|
+|-------|-------------|-------------------|     
 | **New user** | Just created | Existing articles edit pannu, Talk pages use pannu |
 | **Autoconfirmed** | 4 days old + 10 edits | New articles create pannu, semi-protected pages edit pannu |
 | **Extended confirmed** | 30 days + 500 edits | Extended-confirmed-protected pages edit pannu |
