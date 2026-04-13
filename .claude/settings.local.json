@@ -26,7 +26,10 @@
       "mcp__analytics-mcp__get_account_summaries",
       "mcp__playwright__browser_navigate",
       "mcp__seo-search-console__search_analytics",
-      "mcp__playwright__browser_take_screenshot"
+      "mcp__playwright__browser_take_screenshot",
+      "mcp__serper__google_search",
+      "mcp__website-auditor__audit_page",
+      "mcp__ai-citation-monitor__check_citation"
     ]
   }
 }
