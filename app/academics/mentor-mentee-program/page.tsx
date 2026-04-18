@@ -87,58 +87,104 @@ export default function MentorMenteeProgram() {
       <StructuredData data={faqSchema} />
       <Header />
 
-      {/* Page Content */}
-      <div className="bg-[#FBF8F3] py-12 px-4">
-        <div className="max-w-6xl mx-auto">
-          {/* Main Heading */}
-          <h1 className="text-4xl md:text-5xl font-bold text-black mb-12">
+      {/* Hero Section */}
+      <div className="bg-[#006837] pt-16 overflow-hidden">
+        <div className="max-w-4xl mx-auto px-4 py-10 flex flex-col items-center gap-6">
+          <div className="flex items-center gap-4">
+            <div className="h-px w-16 sm:w-32 bg-[#7cb983] opacity-60" />
+            <div className="w-2 h-2 rounded-full bg-[#7cb983]" />
+            <div className="h-px w-16 sm:w-32 bg-[#7cb983] opacity-60" />
+          </div>
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white text-center tracking-wide">
             MENTOR-MENTEE PROGRAM
           </h1>
-
-          {/* Program Vision */}
-          <div className="mb-8">
-            <h2 className="text-lg md:text-xl font-bold text-black mb-3">
-              Program Vision:
-            </h2>
-            <p className="text-base leading-relaxed text-black text-justify">
-              Our vision for the Mentor-Mentee Program is to nurture a culture of mentorship and support that empowers students across diverse fields to achieve excellence in their respective domains. We firmly believe that mentorship is an integral part of the educational journey, facilitating both mentees' growth and mentors' professional development.
-            </p>
+          <div className="flex items-center gap-4">
+            <div className="h-px w-16 sm:w-32 bg-[#7cb983] opacity-60" />
+            <div className="w-2 h-2 rounded-full bg-[#7cb983]" />
+            <div className="h-px w-16 sm:w-32 bg-[#7cb983] opacity-60" />
           </div>
-
-          {/* Program Overview */}
-          <div className="mb-8">
-            <h2 className="text-lg md:text-xl font-bold text-black mb-3">
-              Program Overview:
-            </h2>
-            <p className="text-base leading-relaxed text-black text-justify">
-              The Mentor-Mentee Program at JKKN Educational Institution is designed to foster a supportive learning environment where experienced mentors guide and empower students (mentees) across various disciplines to excel academically and professionally. This program reflects our institution's commitment to providing holistic education and nurturing future leaders and professionals.
-            </p>
-          </div>
-
-          {/* Mentorship Objectives */}
-          <div className="mb-8">
-            <h2 className="text-lg md:text-xl font-bold text-black mb-3">
-              Mentorship Objectives:
-            </h2>
-            <div className="space-y-3">
-              <p className="text-base text-black text-justify">
-                • Cultivate a Sense of Belonging: Create an inclusive atmosphere where mentees feel an integral part of the JKKN educational community, enhancing faculty-student relationships.
-              </p>
-              <p className="text-base text-black text-justify">
-                • Enhance Discipline and Excellence: Conduct mentoring sessions to install discipline, punctuality, and commitment to academic and personal growth among students.
-              </p>
-              <p className="text-base text-black text-justify">
-                • Customized Learning: Tailor mentorship to students based on their academic performance and individual needs, fostering optimal learning outcomes.
-              </p>
-              <p className="text-base text-black text-justify">
-                • Personalized Growth: Identify and leverage the strengths and weaknesses of each student, assisting them in setting career goals and strategies for achievement.
-              </p>
-            </div>
-          </div>
-
-         
+        </div>
+        <div className="overflow-hidden leading-none">
+          <svg
+            viewBox="0 0 1440 60"
+            preserveAspectRatio="none"
+            className="w-full h-12 md:h-16 block"
+            fill="#FBFBEE"
+          >
+            <path d="M0,30 C480,0 960,60 1440,30 L1440,60 L0,60 Z" />
+          </svg>
         </div>
       </div>
+
+      {/* Content Section */}
+      <section className="bg-[#FBFBEE] pb-20 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-5xl mx-auto pt-2">
+          <div className="space-y-8">
+
+            {/* Program Vision Card */}
+            <div className="bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden">
+              <div className="h-1.5 bg-gradient-to-r from-[#006837] to-[#7cb983]" />
+              <div className="p-8">
+                <h2 className="text-lg md:text-xl font-bold text-[#006837] mb-4 flex items-center gap-3">
+                  <span className="w-1 h-6 bg-[#006837] rounded-full inline-block flex-shrink-0" />
+                  Program Vision:
+                </h2>
+                <p className="text-base leading-relaxed text-gray-700 text-justify">
+                  Our vision for the Mentor-Mentee Program is to nurture a culture of mentorship and support that empowers students across diverse fields to achieve excellence in their respective domains. We firmly believe that mentorship is an integral part of the educational journey, facilitating both mentees&apos; growth and mentors&apos; professional development.
+                </p>
+              </div>
+            </div>
+
+            {/* Program Overview Card */}
+            <div className="bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden">
+              <div className="h-1.5 bg-gradient-to-r from-[#006837] to-[#7cb983]" />
+              <div className="p-8">
+                <h2 className="text-lg md:text-xl font-bold text-[#006837] mb-4 flex items-center gap-3">
+                  <span className="w-1 h-6 bg-[#006837] rounded-full inline-block flex-shrink-0" />
+                  Program Overview:
+                </h2>
+                <p className="text-base leading-relaxed text-gray-700 text-justify">
+                  The Mentor-Mentee Program at JKKN Educational Institution is designed to foster a supportive learning environment where experienced mentors guide and empower students (mentees) across various disciplines to excel academically and professionally. This program reflects our institution&apos;s commitment to providing holistic education and nurturing future leaders and professionals.
+                </p>
+              </div>
+            </div>
+
+            {/* Mentorship Objectives Card */}
+            <div className="bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden">
+              <div className="h-1.5 bg-gradient-to-r from-[#006837] to-[#7cb983]" />
+              <div className="p-8">
+                <h2 className="text-lg md:text-xl font-bold text-[#006837] mb-6 flex items-center gap-3">
+                  <span className="w-1 h-6 bg-[#006837] rounded-full inline-block flex-shrink-0" />
+                  Mentorship Objectives:
+                </h2>
+                <div className="space-y-4">
+                  <div className="rounded-xl bg-[#FBFBEE] border-l-4 border-[#7cb983] p-4">
+                    <p className="text-base text-gray-700 text-justify">
+                      • Cultivate a Sense of Belonging: Create an inclusive atmosphere where mentees feel an integral part of the JKKN educational community, enhancing faculty-student relationships.
+                    </p>
+                  </div>
+                  <div className="rounded-xl bg-[#FBFBEE] border-l-4 border-[#7cb983] p-4">
+                    <p className="text-base text-gray-700 text-justify">
+                      • Enhance Discipline and Excellence: Conduct mentoring sessions to install discipline, punctuality, and commitment to academic and personal growth among students.
+                    </p>
+                  </div>
+                  <div className="rounded-xl bg-[#FBFBEE] border-l-4 border-[#7cb983] p-4">
+                    <p className="text-base text-gray-700 text-justify">
+                      • Customized Learning: Tailor mentorship to students based on their academic performance and individual needs, fostering optimal learning outcomes.
+                    </p>
+                  </div>
+                  <div className="rounded-xl bg-[#FBFBEE] border-l-4 border-[#7cb983] p-4">
+                    <p className="text-base text-gray-700 text-justify">
+                      • Personalized Growth: Identify and leverage the strengths and weaknesses of each student, assisting them in setting career goals and strategies for achievement.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
 
       <Footer />
       <FloatingWhatsApp />

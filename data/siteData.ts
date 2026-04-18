@@ -288,7 +288,8 @@ export const bottomMenuItems: NavItem[] = [
     submenu: [
       { label: "RIGHT TO INFORMATION (RTI)", href: "/information-center/right-to-information-rti" },
       { label: "CAREERS", href: "/information-center/careers" },
-      { label: "BLOG", href: "/blog" }
+      { label: "BLOG", href: "/blog" },
+      { label: "FAQs", href: "/faq" }
     ]
   },
   { label: "GALLERY", href: "/gallery" },

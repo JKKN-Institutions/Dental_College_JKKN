@@ -116,7 +116,7 @@ const faqSchema = {
       name: 'What is the fee structure for BDS at JKKN Dental College?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'BDS annual tuition fee at JKKN Dental College ranges from three lakh to five lakh rupees per year. Installment payment options and scholarship fee reductions are available.',
+        text: 'BDS tuition fee at JKKN Dental College is four lakh fifty thousand rupees per year (Dayscholar with Instruments) or five lakh fifty thousand rupees per year (With Hostel and Instruments) under Management Quota. Government Quota fee is as per Govt Norms. Installment payment options and scholarship fee reductions are available.',
       },
     },
   ],
@@ -932,7 +932,7 @@ export default function AdmissionPage() {
               },
               {
                 q: 'What is the fee structure for BDS?',
-                a: `BDS annual tuition fee ranges from ₹3,00,000 to ₹5,00,000 per year. Installment payment options are available. Visit the fee structure page for a complete breakdown.`,
+                a: `BDS tuition fee is ₹4,50,000/year (Dayscholar with Instruments) or ₹5,50,000/year (With Hostel & Instruments) under Management Quota. Government Quota fee is as per Govt Norms. Installment payment options are available. Visit the fee structure page for a complete breakdown.`,
               },
             ].map((faq) => (
               <details

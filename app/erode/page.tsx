@@ -43,7 +43,7 @@ export default function ErodePage() {
     },
     {
       q: 'What is the BDS fee at dental colleges near Erode?',
-      a: 'At JKKN Dental College & Hospital, BDS tuition fees are approximately Rs. 2,50,000 per year under Government Quota and Rs. 6,00,000 per year under Management Quota. Contact +91 9345855001 for the latest 2026-27 fee structure.',
+      a: 'At JKKN Dental College & Hospital, BDS tuition fee is As Per Govt Norms under Government Quota and Rs. 4,50,000/year (Dayscholar with Instruments) or Rs. 5,50,000/year (With Hostel & Instruments) under Management Quota. Contact +91 9345855001 for the latest 2026-27 fee structure.',
     },
     {
       q: 'Which dental colleges near Erode accept NEET scores?',

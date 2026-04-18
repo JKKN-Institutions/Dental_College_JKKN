@@ -102,7 +102,7 @@ const faqSchema = {
       "name": "What is the BDS fee structure at JKKN Dental College?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The BDS (Bachelor of Dental Surgery) fee at JKKN Dental College is approximately Rs. 3,00,000 to Rs. 5,00,000 per year for the tuition fee component. Additional fees include hostel charges (optional), library fee, lab and clinical fee, caution deposit (refundable), and university examination fees. Fees are regulated by the fee fixation committee and subject to annual revision. Contact the admissions office at +91 9345855001 or dental@jkkn.ac.in for exact current fee details."
+        "text": "The BDS (Bachelor of Dental Surgery) tuition fee at JKKN Dental College is ₹4,50,000 per year (Dayscholar with Instruments) or ₹5,50,000 per year (With Hostel & Instruments) under Management Quota. Government Quota fee is as per Govt Norms. Additional fees include library fee, lab and clinical fee, caution deposit (refundable), and university examination fees. Contact the admissions office at +91 9345855001 or dental@jkkn.ac.in for complete fee details."
       }
     },
     {
@@ -126,7 +126,7 @@ const faqSchema = {
       "name": "What is the MDS fee structure at JKKN Dental College?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The MDS (Master of Dental Surgery) annual tuition fee at JKKN Dental College is approximately Rs. 8,00,000 to Rs. 15,00,000 per year depending on the specialization. MDS programs available include Periodontics (4 seats), Orthodontics and Dentofacial Orthopedics (4 seats), Prosthodontics Crown and Bridge (4 seats), Conservative Dentistry and Endodontics (3 seats), and Oral Medicine and Radiology (3 seats). Additional one-time fees include admission fee, caution deposit, library deposit, and lab deposit (all refundable). Contact admissions for current fee details."
+        "text": "The MDS (Master of Dental Surgery) annual tuition fee at JKKN Dental College is ₹8,50,000 per year under Management Quota across all 5 specializations. Government Quota fee is as per Govt Norms. MDS programs available include Periodontics (4 seats), Orthodontics and Dentofacial Orthopedics (4 seats), Prosthodontics Crown and Bridge (4 seats), Conservative Dentistry and Endodontics (3 seats), and Oral Medicine and Radiology (3 seats). Additional one-time fees include admission fee, caution deposit, library deposit, and lab deposit (all refundable). Contact admissions for complete fee details."
       }
     },
     {
@@ -237,7 +237,7 @@ export default function FeesStructure() {
               <tbody className="divide-y divide-gray-300">
                 <tr className="hover:bg-white transition-colors">
                   <td className="px-6 py-4 font-semibold text-gray-800">Tuition Fee</td>
-                  <td className="px-6 py-4 text-right text-gray-800">&#8377;3,00,000 - &#8377;5,00,000*</td>
+                  <td className="px-6 py-4 text-right text-gray-800">GQ: As Per Govt Norms<br/>MQ: &#8377;4,50,000 (Dayscholar) / &#8377;5,50,000 (With Hostel)</td>
                   <td className="px-6 py-4 text-gray-600">Per Year</td>
                 </tr>
                 <tr className="hover:bg-white transition-colors">
@@ -272,7 +272,7 @@ export default function FeesStructure() {
                 </tr>
                 <tr className="bg-[#006837] text-white font-bold">
                   <td className="px-6 py-4">Total Approximate Annual Fee</td>
-                  <td className="px-6 py-4 text-right">&#8377;3,00,000 - &#8377;5,00,000*</td>
+                  <td className="px-6 py-4 text-right">GQ: As Per Govt Norms<br/>MQ: &#8377;4,50,000 (Dayscholar) / &#8377;5,50,000 (With Hostel)</td>
                   <td className="px-6 py-4">Per Year</td>
                 </tr>
               </tbody>
@@ -326,27 +326,27 @@ export default function FeesStructure() {
                 <tr className="hover:bg-[#FBFBEE] transition-colors">
                   <td className="px-6 py-4 font-semibold text-gray-800">Periodontics</td>
                   <td className="px-6 py-4 text-center text-gray-800">4</td>
-                  <td className="px-6 py-4 text-right text-gray-800">&#8377;8,00,000 - &#8377;15,00,000*</td>
+                  <td className="px-6 py-4 text-right text-gray-800">GQ: As Per Govt Norms | MQ: &#8377;8,50,000</td>
                 </tr>
                 <tr className="hover:bg-[#FBFBEE] transition-colors">
                   <td className="px-6 py-4 font-semibold text-gray-800">Orthodontics and Dentofacial Orthopedics</td>
                   <td className="px-6 py-4 text-center text-gray-800">4</td>
-                  <td className="px-6 py-4 text-right text-gray-800">&#8377;8,00,000 - &#8377;15,00,000*</td>
+                  <td className="px-6 py-4 text-right text-gray-800">GQ: As Per Govt Norms | MQ: &#8377;8,50,000</td>
                 </tr>
                 <tr className="hover:bg-[#FBFBEE] transition-colors">
                   <td className="px-6 py-4 font-semibold text-gray-800">Prosthodontics Crown and Bridge</td>
                   <td className="px-6 py-4 text-center text-gray-800">4</td>
-                  <td className="px-6 py-4 text-right text-gray-800">&#8377;8,00,000 - &#8377;15,00,000*</td>
+                  <td className="px-6 py-4 text-right text-gray-800">GQ: As Per Govt Norms | MQ: &#8377;8,50,000</td>
                 </tr>
                 <tr className="hover:bg-[#FBFBEE] transition-colors">
                   <td className="px-6 py-4 font-semibold text-gray-800">Conservative Dentistry and Endodontics</td>
                   <td className="px-6 py-4 text-center text-gray-800">3</td>
-                  <td className="px-6 py-4 text-right text-gray-800">&#8377;8,00,000 - &#8377;15,00,000*</td>
+                  <td className="px-6 py-4 text-right text-gray-800">GQ: As Per Govt Norms | MQ: &#8377;8,50,000</td>
                 </tr>
                 <tr className="hover:bg-[#FBFBEE] transition-colors">
                   <td className="px-6 py-4 font-semibold text-gray-800">Oral Medicine and Radiology</td>
                   <td className="px-6 py-4 text-center text-gray-800">3</td>
-                  <td className="px-6 py-4 text-right text-gray-800">&#8377;8,00,000 - &#8377;15,00,000*</td>
+                  <td className="px-6 py-4 text-right text-gray-800">GQ: As Per Govt Norms | MQ: &#8377;8,50,000</td>
                 </tr>
                 <tr className="bg-[#006837] text-white font-bold">
                   <td className="px-6 py-4">Total MDS Seats</td>

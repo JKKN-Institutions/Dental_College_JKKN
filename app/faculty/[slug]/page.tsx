@@ -8,6 +8,10 @@ import { ArrowLeft, ExternalLink } from 'lucide-react';
 
 export const dynamic = 'force-dynamic';
 
+function toSlug(name: string) {
+  return name.toLowerCase().replace(/[^a-z0-9\s-]/g, '').trim().replace(/\s+/g, '-');
+}
+
 // ─── Types ────────────────────────────────────────────────────────────────────
 
 type AcademicQualification = { degree: string; specialisation: string; university: string; year: string };
@@ -29,12 +33,23 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const supabase = await createClient();
-  const { data } = await supabase
+  const collegeIdMeta = process.env.NEXT_PUBLIC_COLLEGE_ID;
+
+  let { data } = await supabase
     .from('faculty')
     .select('name, designation, department')
     .or(`slug.eq.${slug},id.eq.${slug}`)
-    .eq('college_id', process.env.NEXT_PUBLIC_COLLEGE_ID)
+    .eq('college_id', collegeIdMeta)
     .single();
+
+  if (!data) {
+    const { data: all } = await supabase
+      .from('faculty')
+      .select('name, designation, department')
+      .eq('college_id', collegeIdMeta)
+      .eq('is_active', true);
+    data = all?.find((f) => toSlug(f.name) === slug) ?? null;
+  }
 
   if (!data) return { title: 'Faculty | JKKN Dental College & Hospital' };
 
@@ -61,22 +76,41 @@ export default async function FacultyProfilePage({
   const supabase = await createClient();
   const collegeId = process.env.NEXT_PUBLIC_COLLEGE_ID;
 
-  const { data: m } = await supabase
+  const fullSelect = `
+    id, name, designation, department, qualification, experience_years,
+    photo_url, email, slug,
+    summary, research_papers_count, phd_scholars_count, awards_won_count,
+    google_scholar_url, researchgate_url, orcid_url,
+    mentoring_description, pg_dissertations_guided, ug_projects_guided,
+    badges, academic_qualifications, areas_of_specialisation,
+    experience, research_focus, publications, funded_research,
+    certifications, awards, memberships, phd_scholars, faqs
+  `;
+
+  let { data: m } = await supabase
     .from('faculty')
-    .select(`
-      id, name, designation, department, qualification, experience_years,
-      photo_url, email, slug,
-      summary, research_papers_count, phd_scholars_count, awards_won_count,
-      google_scholar_url, researchgate_url, orcid_url,
-      mentoring_description, pg_dissertations_guided, ug_projects_guided,
-      badges, academic_qualifications, areas_of_specialisation,
-      experience, research_focus, publications, funded_research,
-      certifications, awards, memberships, phd_scholars, faqs
-    `)
+    .select(fullSelect)
     .or(`slug.eq.${slug},id.eq.${slug}`)
     .eq('college_id', collegeId)
     .eq('is_active', true)
     .single();
+
+  if (!m) {
+    const { data: names } = await supabase
+      .from('faculty')
+      .select('id, name')
+      .eq('college_id', collegeId)
+      .eq('is_active', true);
+    const match = names?.find((f) => toSlug(f.name) === slug);
+    if (match) {
+      const { data: byId } = await supabase
+        .from('faculty')
+        .select(fullSelect)
+        .eq('id', match.id)
+        .single();
+      m = byId;
+    }
+  }
 
   if (!m) notFound();
 

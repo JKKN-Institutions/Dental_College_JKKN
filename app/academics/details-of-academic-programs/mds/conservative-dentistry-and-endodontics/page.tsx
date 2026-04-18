@@ -1040,10 +1040,10 @@ export default function MDSConservativeDentistry() {
                     <p className="text-gray-700 font-medium text-sm md:text-base">Tuition Fee (Per Annum)</p>
                   </div>
                   <div className="p-4 md:p-6 border-r border-gray-200">
-                    <p className="text-gray-800 font-bold text-base md:text-lg">₹3,00,000</p>
+                    <p className="text-gray-800 font-bold text-base md:text-lg">As Per Govt Norms</p>
                   </div>
                   <div className="p-4 md:p-6 border-r border-gray-200">
-                    <p className="text-gray-800 font-bold text-base md:text-lg">₹12,00,000</p>
+                    <p className="text-gray-800 font-bold text-base md:text-lg">₹8,50,000</p>
                   </div>
                   <div className="p-4 md:p-6">
                     <p className="text-gray-800 font-bold text-base md:text-lg">$15,000</p>

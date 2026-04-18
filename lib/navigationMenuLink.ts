@@ -427,7 +427,8 @@ export function GetDentalCollegePages(pathname: string): MenuGroup[] {
             { href: '/information-center/news', label: 'News', icon: Rss, active: pathname === '/information-center/news' },
             { href: '/information-center/events', label: 'Events', icon: CalendarDays, active: pathname === '/information-center/events' },
             { href: '/information-center/careers', label: 'Careers', icon: UserCircle, active: pathname === '/information-center/careers' },
-            { href: '/blog', label: 'Blog', icon: PenTool, active: pathname.startsWith('/blog') }
+            { href: '/blog', label: 'Blog', icon: PenTool, active: pathname.startsWith('/blog') },
+            { href: '/faq', label: 'FAQs', icon: FileQuestion, active: pathname.startsWith('/faq') }
           ]
         }
       ]

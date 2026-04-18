@@ -308,7 +308,7 @@ export default function BDSClient() {
 
             {/* Right Content - Image Boxes */}
             <div className="grid grid-cols-2 gap-4">
-              <div className="col-span-2 relative rounded-2xl h-64 overflow-hidden shadow-lg">
+              <div className="col-span-2 relative rounded-2xl h-72 overflow-hidden shadow-lg">
                 <Image
                   src="/images/BDS-Modern-Dental-Lab.webp"
                   alt="Modern dental laboratory with advanced equipment at JKKN Dental College"
@@ -321,7 +321,7 @@ export default function BDSClient() {
                   <h3 className="text-2xl md:text-4xl font-bold text-white">Modern Dental Lab</h3>
                 </div>
               </div>
-              <div className="relative rounded-2xl h-48 overflow-hidden shadow-lg">
+              <div className="relative rounded-2xl h-56 overflow-hidden shadow-lg">
                 <Image
                   src="/images/BDS-Clinical-Training.webp"
                   alt="BDS students undergoing clinical training at JKKN Dental Hospital, Komarapalayam"
@@ -334,7 +334,7 @@ export default function BDSClient() {
                   <h3 className="text-2xl font-bold text-white text-center">Clinical Training</h3>
                 </div>
               </div>
-              <div className="relative rounded-2xl h-48 overflow-hidden shadow-lg">
+              <div className="relative rounded-2xl h-56 overflow-hidden shadow-lg">
                 <Image
                   src="/images/BDS-Campus-Life.webp"
                   alt="BDS students enjoying campus life at JKKN Dental College, Tamil Nadu"

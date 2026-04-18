@@ -187,6 +187,11 @@ npm run lint     # ESLint check
 - Image alt text mandatory — descriptive, keyword-aware
 - Use `generateBreadcrumbSchema()` from `lib/metadata.ts`
 
+### Breadcrumb Navigation Rule (STRICT — applies to every page on the site)
+- **"Home" is the ONLY clickable item** in any breadcrumb navigation
+- All other breadcrumb items (section names, page names, intermediate paths) MUST be plain `<span>` — never `<a>` or `<Link>`
+- This applies to inline breadcrumbs and the shared `Breadcrumb.tsx` component alike
+
 ### Data Management
 - Site content lives in `data/content.ts` — NOT hardcoded in components
 - Statistics and facts in `data/collegeFacts.ts`

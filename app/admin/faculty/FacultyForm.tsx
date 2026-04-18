@@ -223,12 +223,16 @@ export default function FacultyForm({ member }: FacultyFormProps) {
   const collegeId = useAdminCollege();
   const [activeTab, setActiveTab] = useState(0);
 
+  function toSlug(value: string) {
+    return value.toLowerCase().replace(/[^a-z0-9\s-]/g, '').trim().replace(/\s+/g, '-');
+  }
+
   // Basic Info
   const [name, setName] = useState(member?.name ?? '');
   const [designation, setDesignation] = useState(member?.designation ?? 'Assistant Professor');
   const [department, setDepartment] = useState(member?.department ?? '');
   const [qualification, setQualification] = useState(member?.qualification ?? '');
-  const [slug, setSlug] = useState(member?.slug ?? '');
+  const [slug, setSlug] = useState(member?.name ? toSlug(member.name) : '');
   const [experienceYears, setExperienceYears] = useState(
     member?.experience_years?.toString() ?? '0'
   );
@@ -503,7 +507,7 @@ export default function FacultyForm({ member }: FacultyFormProps) {
           <input
             type="text"
             value={name}
-            onChange={(e) => { setName(e.target.value); clearError('name'); }}
+            onChange={(e) => { setName(e.target.value); clearError('name'); if (!slug || slug.startsWith('http') || slug === toSlug(name)) setSlug(toSlug(e.target.value)); }}
             placeholder="Dr. Firstname Lastname"
             className={I}
           />

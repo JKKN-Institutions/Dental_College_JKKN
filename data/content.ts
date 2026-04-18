@@ -290,7 +290,8 @@ export const siteContent = {
           "ANNOUNCEMENTS",
           "NEWS",
           "EVENTS",
-          "CAREERS"
+          "CAREERS",
+          "FAQs"
         ]
       },
       { label: "GALLERY", href: "/gallery" },
