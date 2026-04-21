@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import { ClientLayoutWrapper } from "@/components/ClientLayoutWrapper";
+import { MetaPixel } from "@/components/MetaPixel";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -85,6 +86,7 @@ export default function RootLayout({
         >
           Skip to main content
         </a>
+        <MetaPixel />
         <ClientLayoutWrapper>
           <div id="main-content" tabIndex={-1}>
             {children}
