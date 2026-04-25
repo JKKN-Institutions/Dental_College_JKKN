@@ -41,31 +41,41 @@ export default function AmbulanceServices() {
       <StructuredData data={speakableSchema} />
       <Header />
 
-      {/* Page Content */}
-      <div className="bg-[#FBF8F3] py-12 px-4">
+      {/* Hero Banner */}
+      <section className="bg-[#006837] py-16 px-4">
         <div className="max-w-6xl mx-auto">
-          {/* Banner Image */}
-          <div className="w-full rounded-lg overflow-hidden mb-8">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
+            AMBULANCE SERVICES
+          </h1>
+          <div className="h-1 w-24 bg-[#7cb983] rounded-full" />
+        </div>
+      </section>
+
+      {/* Banner Image */}
+      <section className="bg-white py-12 px-4">
+        <div className="max-w-6xl mx-auto">
+          <div className="relative w-full h-[300px] md:h-[450px] rounded-2xl overflow-hidden shadow-lg">
             <Image
               src="/images/ambulance.webp"
               alt="JKKN Free Ambulance Service"
-              width={1200}
-              height={400}
-              className="w-full h-auto object-contain"
+              fill
+              className="object-cover"
             />
           </div>
+        </div>
+      </section>
 
-          {/* First Paragraph */}
-          <p className="text-base leading-relaxed text-gray-700 mb-6">
+      {/* Content Paragraphs */}
+      <section className="bg-[#FBFBEE] py-12 px-4">
+        <div className="max-w-6xl mx-auto flex flex-col gap-6">
+          <p className="text-base leading-relaxed text-gray-700 border-l-4 border-[#7cb983] pl-6">
             <strong>JKKN Institutions, we are dedicated to delivering excellent education to our students, staff, and community. In line with our pledge to the community, we take pride in presenting our exceptional ambulance services, available round-the-clock for emergency responses and medical transportation.</strong>
           </p>
-
-          {/* Second Paragraph */}
-          <p className="text-base leading-relaxed text-gray-700 mb-12">
+          <p className="text-base leading-relaxed text-gray-700 border-l-4 border-[#7cb983] pl-6">
             <strong>Our ambulance services are managed by expert emergency medical technicians who are certified and experienced in handling diverse medical emergencies. To ensure our patients receive the highest quality of care, our ambulances are equipped with advanced medical equipment and supplies.</strong>
           </p>
         </div>
-      </div>
+      </section>
 
       <Footer />
       <FloatingWhatsApp />

@@ -5,6 +5,7 @@ import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import Image from 'next/image';
 import StructuredData from '@/components/StructuredData';
 import { generateBreadcrumbSchema, generateWebPageSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
+import { MapPin, Wifi, ShieldCheck, Heart } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Girls Hostel | JKKN Dental Campus',
@@ -89,107 +90,111 @@ export default function GirlsHostel() {
       <StructuredData data={faqSchema} />
       <Header />
 
-      {/* Page Content */}
-      <div className="bg-[#FBF8F3] py-12 px-4">
+      {/* Hero Banner */}
+      <section className="bg-[#006837] py-16 px-4">
         <div className="max-w-6xl mx-auto">
-           {/* Main Heading */}
-           <h1 className="text-4xl md:text-5xl font-bold text-[#1B5E20] mb-8">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
             Girls Hostel
           </h1>
-          {/* Image Gallery - 3 Images */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-            {/* Image 1 */}
-            <div className="w-full h-[280px] md:h-[240px] bg-gray-200 rounded-lg overflow-hidden">
+          <div className="h-1 w-24 bg-[#7cb983] rounded-full" />
+        </div>
+      </section>
+
+      {/* Image Gallery */}
+      <section className="bg-white py-12 px-4">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+            <div className="relative h-[280px] md:h-[300px] rounded-2xl overflow-hidden shadow-lg group">
               <Image
                 src="/images/girls-hostel-1.jpg"
                 alt="Girls hostel building exterior"
-                width={400}
-                height={240}
-                className="w-full h-full object-cover"
+                fill
+                className="object-cover group-hover:scale-105 transition-transform duration-500"
               />
             </div>
-
-            {/* Image 2 */}
-            <div className="w-full h-[280px] md:h-[240px] bg-gray-200 rounded-lg overflow-hidden">
+            <div className="relative h-[280px] md:h-[300px] rounded-2xl overflow-hidden shadow-lg group">
               <Image
                 src="/images/girls-hostel-2.jpg"
                 alt="Girls hostel campus view"
-                width={400}
-                height={240}
-                className="w-full h-full object-cover"
+                fill
+                className="object-cover group-hover:scale-105 transition-transform duration-500"
               />
             </div>
-
-            {/* Image 3 */}
-            <div className="w-full h-[280px] md:h-[240px] bg-gray-200 rounded-lg overflow-hidden">
+            <div className="relative h-[280px] md:h-[300px] rounded-2xl overflow-hidden shadow-lg group">
               <Image
                 src="/images/girls-hostel-3.jpg"
                 alt="Girls hostel dining area"
-                width={400}
-                height={240}
-                className="w-full h-full object-cover"
+                fill
+                className="object-cover group-hover:scale-105 transition-transform duration-500"
               />
             </div>
           </div>
+        </div>
+      </section>
 
-          {/* Introduction Paragraph */}
-          <p className="text-base leading-relaxed text-gray-700 mb-8">
+      {/* Intro Paragraph */}
+      <section className="bg-[#FBFBEE] py-10 px-4">
+        <div className="max-w-6xl mx-auto">
+          <p className="text-base md:text-lg leading-relaxed text-gray-700 border-l-4 border-[#7cb983] pl-6">
             <strong>Nestled within the vibrant JKKN campus, our Girls Hostel offers an inviting and secure environment that is meticulously designed to support the unique needs of our female students. Equipped with modern amenities, the hostel serves as a sanctuary where academic dreams and personal well-being flourish in harmony.</strong>
           </p>
+        </div>
+      </section>
+
+      {/* Feature Cards */}
+      <section className="bg-white py-16 px-4">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
 
           {/* Location and Facilities */}
-          <div className="mb-8">
-            <h2 className="text-xl md:text-2xl font-bold text-black mb-4">
-              Location and Facilities:
-            </h2>
-            <p className="text-base leading-relaxed text-gray-700 mb-4">
-              <strong>On-Campus Convenience:</strong> Located within the JKKN campus, the hostel ensures that students have immediate access to educational and recreational facilities.
-            </p>
-            <p className="text-base leading-relaxed text-gray-700 mb-4">
-              <strong>Choice and Comfort:</strong> Rooms come with essential furnishings—comfortable beds, study tables, and ample storage. Air-conditioned rooms are available upon request.
-            </p>
-            <p className="text-base leading-relaxed text-gray-700">
-              <strong>Self-Contained Living:</strong> Each room boasts an attached bathroom, providing a personal space that respects privacy.
-            </p>
+          <div className="bg-[#FBFBEE] rounded-2xl p-6 border border-[#7cb983]/20 hover:shadow-md transition-shadow duration-300 flex flex-col gap-4">
+            <div className="w-12 h-12 rounded-full bg-[#006837] flex items-center justify-center flex-shrink-0">
+              <MapPin className="text-white w-6 h-6" />
+            </div>
+            <h2 className="text-lg font-bold text-[#006837]">Location and Facilities:</h2>
+            <div className="text-gray-600 text-sm leading-relaxed flex flex-col gap-2">
+              <p><strong>On-Campus Convenience:</strong> Located within the JKKN campus, the hostel ensures that students have immediate access to educational and recreational facilities.</p>
+              <p><strong>Choice and Comfort:</strong> Rooms come with essential furnishings—comfortable beds, study tables, and ample storage. Air-conditioned rooms are available upon request.</p>
+              <p><strong>Self-Contained Living:</strong> Each room boasts an attached bathroom, providing a personal space that respects privacy.</p>
+            </div>
           </div>
 
           {/* Academic and Personal Support */}
-          <div className="mb-8">
-            <h2 className="text-xl md:text-2xl font-bold text-black mb-4">
-              Academic and Personal Support:
-            </h2>
-            <p className="text-base leading-relaxed text-gray-700 mb-4">
-              <strong>Round-the-Clock Utilities:</strong> Continuous electricity and water supply mean you're never left without essential services.
-            </p>
-            <p className="text-base leading-relaxed text-gray-700">
-              <strong>Internet Connectivity:</strong> Robust high-speed internet aids in uninterrupted research and study, aligning with our mission of academic excellence.
-            </p>
+          <div className="bg-[#FBFBEE] rounded-2xl p-6 border border-[#7cb983]/20 hover:shadow-md transition-shadow duration-300 flex flex-col gap-4">
+            <div className="w-12 h-12 rounded-full bg-[#006837] flex items-center justify-center flex-shrink-0">
+              <Wifi className="text-white w-6 h-6" />
+            </div>
+            <h2 className="text-lg font-bold text-[#006837]">Academic and Personal Support:</h2>
+            <div className="text-gray-600 text-sm leading-relaxed flex flex-col gap-2">
+              <p><strong>Round-the-Clock Utilities:</strong> Continuous electricity and water supply mean you&apos;re never left without essential services.</p>
+              <p><strong>Internet Connectivity:</strong> Robust high-speed internet aids in uninterrupted research and study, aligning with our mission of academic excellence.</p>
+            </div>
           </div>
 
           {/* Security and Wellness */}
-          <div className="mb-8">
-            <h2 className="text-xl md:text-2xl font-bold text-black mb-4">
-              Security and Wellness:
-            </h2>
-            <p className="text-base leading-relaxed text-gray-700">
+          <div className="bg-[#FBFBEE] rounded-2xl p-6 border border-[#7cb983]/20 hover:shadow-md transition-shadow duration-300 flex flex-col gap-4">
+            <div className="w-12 h-12 rounded-full bg-[#006837] flex items-center justify-center flex-shrink-0">
+              <ShieldCheck className="text-white w-6 h-6" />
+            </div>
+            <h2 className="text-lg font-bold text-[#006837]">Security and Wellness:</h2>
+            <p className="text-gray-600 text-sm leading-relaxed">
               <strong>Impenetrable Security:</strong> The hostel features 24/7 security, CCTV surveillance, and access control systems. A strict no-visitor policy is enforced for added safety.
             </p>
           </div>
 
           {/* Holistic Wellness */}
-          <div className="mb-12">
-            <h2 className="text-xl md:text-2xl font-bold text-black mb-4">
-              Holistic Wellness:
-            </h2>
-            <p className="text-base leading-relaxed text-gray-700 mb-4">
-              <strong>Committed to promoting a balanced lifestyle, we offer a well-equipped gymnasium, yoga room, and sports complex within the hostel premises.</strong>
-            </p>
-            <p className="text-base leading-relaxed text-gray-700">
-              <strong>Step into our Girls Hostel and become part of a growing community of empowered female students who embody JKKN's values of academic rigor, personal growth, and mutual respect.</strong>
-            </p>
+          <div className="bg-[#FBFBEE] rounded-2xl p-6 border border-[#7cb983]/20 hover:shadow-md transition-shadow duration-300 flex flex-col gap-4">
+            <div className="w-12 h-12 rounded-full bg-[#006837] flex items-center justify-center flex-shrink-0">
+              <Heart className="text-white w-6 h-6" />
+            </div>
+            <h2 className="text-lg font-bold text-[#006837]">Holistic Wellness:</h2>
+            <div className="text-gray-600 text-sm leading-relaxed flex flex-col gap-2">
+              <p><strong>Committed to promoting a balanced lifestyle, we offer a well-equipped gymnasium, yoga room, and sports complex within the hostel premises.</strong></p>
+              <p><strong>Step into our Girls Hostel and become part of a growing community of empowered female students who embody JKKN&apos;s values of academic rigor, personal growth, and mutual respect.</strong></p>
+            </div>
           </div>
+
         </div>
-      </div>
+      </section>
 
       <Footer />
       <FloatingWhatsApp />

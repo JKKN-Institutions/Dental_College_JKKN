@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
-import { BookOpen, Phone } from 'lucide-react';
+import { BookOpen, Phone, FileText } from 'lucide-react';
 import StructuredData from '@/components/StructuredData';
 import { generateBreadcrumbSchema, generateWebPageSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
 
@@ -41,159 +41,163 @@ export default function AntiRaggingCommittee() {
       <StructuredData data={speakableSchema} />
       <Header />
 
-      {/* Page Content */}
-      <div className="bg-[#FBF8F3] py-12 px-4">
+      {/* Hero Banner */}
+      <section className="bg-gradient-to-br from-[#006837] via-[#00572e] to-[#003d20] py-16 px-4">
         <div className="max-w-6xl mx-auto">
-
-          {/* Page Title */}
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-12">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
             ANTI RAGGING COMMITTEE
           </h1>
-
-          {/* Anti-Ragging Committee Section */}
-          <h2 className="text-2xl md:text-3xl font-bold text-[#0D7C66] mb-6">
+          <h2 className="text-xl md:text-2xl font-semibold text-green-200 mb-2">
             Anti-Ragging Committee
           </h2>
-
-          <h3 className="text-xl md:text-2xl font-bold text-[#0D7C66] mb-6">
+          <p className="text-green-100 text-base md:text-lg font-medium">
             Creating a Safe, Respectful, and Inclusive Campus for All
-          </h3>
-
-          <p className="text-base text-black mb-4 leading-relaxed">
-            At <span className="font-bold">JKKN Dental College & Hospital</span>, we uphold the highest standards of student welfare, dignity, and discipline. In line with the directives of the University Grants Commission (UGC) and Dental Council of India, our college maintains a strict zero-tolerance policy towards ragging in any form.
           </p>
+        </div>
+      </section>
 
-          <p className="text-base text-black mb-12 leading-relaxed">
-            The Anti-Ragging Committee has been constituted to ensure a ragging-free environment on campus, actively monitor student interactions, and take swift action in case of any violations. We are committed to maintaining a culture of respect, safety, and academic excellence.
-          </p>
+      {/* Intro */}
+      <section className="bg-[#FBFBEE] py-14 px-4">
+        <div className="max-w-6xl mx-auto">
+          <div className="bg-white rounded-xl p-8 shadow-sm border border-green-100 border-l-4 border-l-[#7cb983]">
+            <p className="hero-description text-gray-700 text-base leading-relaxed mb-4">
+              At <span className="font-bold">JKKN Dental College &amp; Hospital</span>, we uphold the highest standards of student welfare, dignity, and discipline. In line with the directives of the University Grants Commission (UGC) and Dental Council of India, our college maintains a strict zero-tolerance policy towards ragging in any form.
+            </p>
+            <p className="text-gray-700 text-base leading-relaxed">
+              The Anti-Ragging Committee has been constituted to ensure a ragging-free environment on campus, actively monitor student interactions, and take swift action in case of any violations. We are committed to maintaining a culture of respect, safety, and academic excellence.
+            </p>
+          </div>
+        </div>
+      </section>
 
-          {/* Members of the Anti-Ragging Committee */}
-          <h3 className="text-xl md:text-2xl font-bold text-[#0D7C66] mb-4 flex items-center">
-            <span className="text-2xl mr-3">👥</span> Members of the Anti-Ragging Committee
-          </h3>
-
-          <p className="text-base text-black mb-6 leading-relaxed">
-            Click the link below to view the current members of the Anti-Ragging Committee:
-          </p>
-
-          <div className="mb-12">
+      {/* Members */}
+      <section className="bg-white py-14 px-4">
+        <div className="max-w-6xl mx-auto">
+          <div className="bg-[#FBFBEE] rounded-xl p-8 border border-green-100">
+            <h3 className="text-xl md:text-2xl font-bold text-[#006837] mb-4 flex items-center gap-3">
+              <span className="text-2xl">👥</span> Members of the Anti-Ragging Committee
+            </h3>
+            <p className="text-gray-700 text-base leading-relaxed mb-6">
+              Click the link below to view the current members of the Anti-Ragging Committee:
+            </p>
             <a
               href="/pdf/ANTI-RAGGING-COMMITTEE-ViewCommitteeMembers.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-[#0D5E2E] hover:bg-[#0A4A23] text-white font-bold py-3 px-8 rounded transition-all duration-300 text-sm uppercase"
+              className="inline-flex items-center gap-2 bg-[#7cb983] hover:bg-[#6ba872] text-white font-bold py-3 px-8 rounded-lg transition-all duration-300 text-sm uppercase"
             >
+              <FileText className="w-4 h-4 flex-shrink-0" />
               VIEW COMMITTEE MEMBERS
             </a>
           </div>
+        </div>
+      </section>
 
-          {/* Public Disclosure as per UGC Guidelines */}
-          <h3 className="text-xl md:text-2xl font-bold text-[#0D7C66] mb-4 flex items-center">
-            <span className="text-2xl mr-3">📢</span> Public Disclosure as per UGC Guidelines
+      {/* Public Disclosure */}
+      <section className="bg-[#FBFBEE] py-14 px-4">
+        <div className="max-w-6xl mx-auto">
+          <h3 className="text-xl md:text-2xl font-bold text-[#006837] mb-4 flex items-center gap-3">
+            <span className="text-2xl">📢</span> Public Disclosure as per UGC Guidelines
           </h3>
-
-          <p className="text-base text-black mb-6 leading-relaxed">
+          <p className="text-gray-700 text-base leading-relaxed mb-6">
             In compliance with UGC regulations, the following measures are in place to prevent and address ragging:
           </p>
-
-          <ul className="list-disc list-inside mb-6 space-y-3 text-gray-700 ml-4">
-            <li className="font-semibold">
-              Display of anti-ragging posters across campus and hostels.
-            </li>
-            <li className="font-semibold">
-              Mandatory anti-ragging undertakings by all students and parents at the time of admission.
-            </li>
-            <li className="font-semibold">
-              Orientation programs sensitizing students about ragging and its consequences.
-            </li>
-            <li className="font-semibold">
-              Round-the-clock availability of anti-ragging helpline numbers and email.
-            </li>
-            <li className="font-semibold">
-              Immediate disciplinary action against offenders, including suspension or expulsion as per UGC rules.
-            </li>
-          </ul>
-
-          <div className="mb-12">
-            <a
-              href="/pdf/ANTI-RAGGING-COMMITTEE-PublicDisclosures.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-[#0D5E2E] hover:bg-[#0A4A23] text-white font-bold py-3 px-8 rounded transition-all duration-300 text-sm uppercase"
-            >
-              DOWNLOAD UGC PUBLIC DISCLOSURE
-            </a>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+            {[
+              'Display of anti-ragging posters across campus and hostels.',
+              'Mandatory anti-ragging undertakings by all students and parents at the time of admission.',
+              'Orientation programs sensitizing students about ragging and its consequences.',
+              'Round-the-clock availability of anti-ragging helpline numbers and email.',
+              'Immediate disciplinary action against offenders, including suspension or expulsion as per UGC rules.',
+            ].map((item) => (
+              <div key={item} className="flex items-start gap-3 bg-white rounded-lg p-4 shadow-sm border border-green-100">
+                <div className="w-2.5 h-2.5 rounded-full bg-[#006837] mt-1.5 flex-shrink-0" />
+                <p className="text-gray-700 text-sm font-semibold leading-relaxed">{item}</p>
+              </div>
+            ))}
           </div>
+          <a
+            href="/pdf/ANTI-RAGGING-COMMITTEE-PublicDisclosures.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 bg-[#7cb983] hover:bg-[#6ba872] text-white font-bold py-3 px-8 rounded-lg transition-all duration-300 text-sm uppercase"
+          >
+            <FileText className="w-4 h-4 flex-shrink-0" />
+            DOWNLOAD UGC PUBLIC DISCLOSURE
+          </a>
+        </div>
+      </section>
 
-          {/* UGC Guidelines on Ragging */}
-          <h3 className="text-xl md:text-2xl font-bold text-[#0D7C66] mb-4 flex items-center">
-            <BookOpen className="w-6 h-6 mr-3 inline-block" /> UGC Guidelines on Ragging
+      {/* UGC Guidelines */}
+      <section className="bg-white py-14 px-4">
+        <div className="max-w-6xl mx-auto">
+          <h3 className="text-xl md:text-2xl font-bold text-[#006837] mb-4 flex items-center gap-3">
+            <BookOpen className="w-6 h-6" /> UGC Guidelines on Ragging
           </h3>
-
-          <p className="text-base text-black mb-6 leading-relaxed">
+          <p className="text-gray-700 text-base leading-relaxed mb-6">
             The UGC Regulations on Curbing the Menace of Ragging in Higher Educational Institutions, 2009 provide a comprehensive framework to prevent and penalize ragging. Highlights include:
           </p>
-
-          <ul className="list-disc list-inside mb-6 space-y-3 text-gray-700 ml-4">
-            <li className="font-semibold">
-              Definition and forms of ragging.
-            </li>
-            <li className="font-semibold">
-              Preventive measures for institutions.
-            </li>
-            <li className="font-semibold">
-              Role and responsibilities of the Anti-Ragging Committee and Squad.
-            </li>
-            <li className="font-semibold">
-              Procedures for lodging and addressing complaints.
-            </li>
-            <li className="font-semibold">
-              Punishments ranging from warning to rustication and legal prosecution.
-            </li>
-          </ul>
-
-          <div className="mb-12">
-            <a
-              href="/pdf/ANTI-RAGGING-COMMITTEE-UGC-Guideliness.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-[#0D5E2E] hover:bg-[#0A4A23] text-white font-bold py-3 px-8 rounded transition-all duration-300 text-sm uppercase"
-            >
-              READ FULL UGC GUIDELINES
-            </a>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+            {[
+              'Definition and forms of ragging.',
+              'Preventive measures for institutions.',
+              'Role and responsibilities of the Anti-Ragging Committee and Squad.',
+              'Procedures for lodging and addressing complaints.',
+              'Punishments ranging from warning to rustication and legal prosecution.',
+            ].map((item) => (
+              <div key={item} className="flex items-start gap-3 bg-[#FBFBEE] rounded-lg p-4 border border-green-100">
+                <div className="w-2.5 h-2.5 rounded-full bg-[#006837] mt-1.5 flex-shrink-0" />
+                <p className="text-gray-700 text-sm font-semibold leading-relaxed">{item}</p>
+              </div>
+            ))}
           </div>
+          <a
+            href="/pdf/ANTI-RAGGING-COMMITTEE-UGC-Guideliness.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 bg-[#7cb983] hover:bg-[#6ba872] text-white font-bold py-3 px-8 rounded-lg transition-all duration-300 text-sm uppercase"
+          >
+            <FileText className="w-4 h-4 flex-shrink-0" />
+            READ FULL UGC GUIDELINES
+          </a>
+        </div>
+      </section>
 
-          {/* Anti-Ragging Helpline */}
-          <h3 className="text-xl md:text-2xl font-bold text-[#0D7C66] mb-4 flex items-center">
-            <Phone className="w-6 h-6 mr-3 inline-block" /> Anti-Ragging Helpline
+      {/* Helpline */}
+      <section className="bg-[#FBFBEE] py-14 px-4">
+        <div className="max-w-6xl mx-auto">
+          <h3 className="text-xl md:text-2xl font-bold text-[#006837] mb-6 flex items-center gap-3">
+            <Phone className="w-6 h-6" /> Anti-Ragging Helpline
           </h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {[
+              { label: 'College Helpline:', value: '' },
+              { label: 'UGC National Anti-Ragging Helpline:', value: '1800-180-5522' },
+              { label: 'Email:', value: 'helpline@antiragging.in' },
+              { label: 'Website:', value: 'www.antiragging.in' },
+            ].map(({ label, value }) => (
+              <div key={label} className="flex items-start gap-3 bg-white rounded-lg p-4 shadow-sm border border-green-100">
+                <div className="w-2.5 h-2.5 rounded-full bg-[#006837] mt-1.5 flex-shrink-0" />
+                <p className="text-gray-700 text-sm font-semibold leading-relaxed">
+                  {label}{value && <span className="text-black"> {value}</span>}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
-          <ul className="list-disc list-inside mb-12 space-y-3 text-gray-700 ml-4">
-            <li className="font-semibold">
-              College Helpline:
-            </li>
-            <li className="font-semibold">
-              UGC National Anti-Ragging Helpline: 1800-180-5522
-            </li>
-            <li className="font-semibold">
-              Email: <span className="text-black">helpline@antiragging.in</span>
-            </li>
-            <li className="font-semibold">
-              Website:<span className="text-black">www.antiragging.in</span>
-            </li>
-          </ul>
-
-          {/* Report Ragging */}
-          <h3 className="text-xl md:text-2xl font-bold text-[#0D7C66] mb-4 flex items-center">
-            <span className="text-2xl mr-3">📣</span> Report Ragging
+      {/* Report Ragging */}
+      <section className="bg-gradient-to-br from-[#006837] via-[#00572e] to-[#003d20] py-14 px-4">
+        <div className="max-w-6xl mx-auto">
+          <h3 className="text-xl md:text-2xl font-bold text-white mb-4 flex items-center gap-3">
+            <span className="text-2xl">📣</span> Report Ragging
           </h3>
-
-          <p className="text-base text-black mb-12 leading-relaxed">
+          <p className="text-green-100 text-base leading-relaxed max-w-3xl">
             If you or someone you know is experiencing ragging, do not stay silent. Report immediately using the helpline or contact any faculty member of the Anti-Ragging Committee. All reports will be handled with strict confidentiality and urgency.
           </p>
-
         </div>
-      </div>
+      </section>
 
       <Footer />
       <FloatingWhatsApp />

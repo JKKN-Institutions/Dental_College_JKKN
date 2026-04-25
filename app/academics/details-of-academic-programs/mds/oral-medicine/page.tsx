@@ -254,71 +254,33 @@ export default function MDSOralMedicine() {
       </section>
 
       {/* Program Overview Section */}
-      <section className="py-16 px-4 bg-gray-50">
+      <section className="bg-white py-20 px-4 overflow-hidden">
         <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12 items-start">
-            {/* Left Content */}
-            <div>
-              <div className="text-[#7cb983] uppercase font-bold text-sm mb-4 tracking-wider">Program Overview</div>
-              <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-8">About MDS Oral Medicine & Radiology</h2>
+          {/* Section Label */}
+          <div className="flex items-center justify-center gap-4 mb-12">
+            <div className="h-px w-16 bg-[#7cb983]"></div>
+            <span className="text-[#7cb983] font-bold text-sm uppercase tracking-widest">Program Overview</span>
+            <div className="h-px w-16 bg-[#7cb983]"></div>
+          </div>
 
-              <p className="text-lg text-gray-600 mb-6 leading-relaxed">
+          <div className="grid lg:grid-cols-2 gap-0 rounded-3xl overflow-hidden shadow-2xl">
+            {/* Left - Dark Green Content Panel */}
+            <div className="bg-gradient-to-br from-[#006837] to-[#002309] p-10 lg:p-14 flex flex-col justify-center">
+              <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6 leading-tight">About MDS Oral Medicine & Radiology</h2>
+
+              <p className="text-gray-200 mb-5 leading-relaxed">
                 The Master of Dental Surgery (MDS) in Oral Medicine and Radiology is a comprehensive three-year postgraduate program designed to develop specialists in oral diagnosis, dental imaging, and management of oral diseases. This specialty bridges dentistry with general medicine, focusing on the diagnosis and non-surgical treatment of oral conditions.
               </p>
 
-              <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+              <p className="text-gray-200 leading-relaxed">
                 Our program emphasizes advanced diagnostic imaging techniques including CBCT, MRI interpretation, and digital radiography, while also training Learners to manage medically compromised patients and oral manifestations of systemic diseases.
               </p>
-
-              {/* Features Grid */}
-              <div className="grid md:grid-cols-2 gap-4">
-                <div className="flex items-center gap-3">
-                  <svg className="w-6 h-6 text-[#7cb983] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                  </svg>
-                  <span className="text-gray-700 font-medium">Advanced CBCT Training</span>
-                </div>
-
-                <div className="flex items-center gap-3">
-                  <svg className="w-6 h-6 text-[#7cb983] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                  </svg>
-                  <span className="text-gray-700 font-medium">Digital Imaging</span>
-                </div>
-
-                <div className="flex items-center gap-3">
-                  <svg className="w-6 h-6 text-[#7cb983] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                  </svg>
-                  <span className="text-gray-700 font-medium">Research Training</span>
-                </div>
-
-                <div className="flex items-center gap-3">
-                  <svg className="w-6 h-6 text-[#7cb983] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                  </svg>
-                  <span className="text-gray-700 font-medium">Expert Learning Facilitators</span>
-                </div>
-
-                <div className="flex items-center gap-3">
-                  <svg className="w-6 h-6 text-[#7cb983] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                  </svg>
-                  <span className="text-gray-700 font-medium">Oral Pathology Expertise</span>
-                </div>
-
-                <div className="flex items-center gap-3">
-                  <svg className="w-6 h-6 text-[#7cb983] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                  </svg>
-                  <span className="text-gray-700 font-medium">International Exposure</span>
-                </div>
-              </div>
             </div>
 
-            {/* Right Content - Diagnostic Center Card */}
-            <div className="relative">
-              <div className="bg-gradient-to-br from-[#7cb983] to-[#6ba872] rounded-3xl overflow-hidden h-full min-h-[400px]">
+            {/* Right - Image + Feature Items */}
+            <div className="flex flex-col">
+              {/* Image */}
+              <div className="relative flex-1 min-h-[300px]">
                 <Image
                   src="/images/MDS-Oral-Medicine-&-Radiology-diagonic-lab.webp"
                   alt="Diagnostic Center"
@@ -327,6 +289,65 @@ export default function MDSOralMedicine() {
                   sizes="(max-width: 768px) 100vw, 50vw"
                   quality={80}
                 />
+              </div>
+
+              {/* Feature Items */}
+              <div className="bg-[#FBFBEE] p-6">
+                <div className="grid grid-cols-2 gap-3">
+                  <div className="flex items-center gap-2 bg-white rounded-lg px-3 py-2.5 shadow-sm">
+                    <div className="bg-[#7cb983] rounded-full p-1 flex-shrink-0">
+                      <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                    </div>
+                    <span className="text-gray-800 text-sm font-semibold">Advanced CBCT Training</span>
+                  </div>
+
+                  <div className="flex items-center gap-2 bg-white rounded-lg px-3 py-2.5 shadow-sm">
+                    <div className="bg-[#7cb983] rounded-full p-1 flex-shrink-0">
+                      <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                    </div>
+                    <span className="text-gray-800 text-sm font-semibold">Digital Imaging</span>
+                  </div>
+
+                  <div className="flex items-center gap-2 bg-white rounded-lg px-3 py-2.5 shadow-sm">
+                    <div className="bg-[#7cb983] rounded-full p-1 flex-shrink-0">
+                      <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                    </div>
+                    <span className="text-gray-800 text-sm font-semibold">Research Training</span>
+                  </div>
+
+                  <div className="flex items-center gap-2 bg-white rounded-lg px-3 py-2.5 shadow-sm">
+                    <div className="bg-[#7cb983] rounded-full p-1 flex-shrink-0">
+                      <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                    </div>
+                    <span className="text-gray-800 text-sm font-semibold">Expert Learning Facilitators</span>
+                  </div>
+
+                  <div className="flex items-center gap-2 bg-white rounded-lg px-3 py-2.5 shadow-sm">
+                    <div className="bg-[#7cb983] rounded-full p-1 flex-shrink-0">
+                      <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                    </div>
+                    <span className="text-gray-800 text-sm font-semibold">Oral Pathology Expertise</span>
+                  </div>
+
+                  <div className="flex items-center gap-2 bg-white rounded-lg px-3 py-2.5 shadow-sm">
+                    <div className="bg-[#7cb983] rounded-full p-1 flex-shrink-0">
+                      <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                    </div>
+                    <span className="text-gray-800 text-sm font-semibold">International Exposure</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

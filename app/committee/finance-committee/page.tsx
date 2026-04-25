@@ -40,110 +40,83 @@ export default function FinanceCommittee() {
       <StructuredData data={speakableSchema} />
       <Header />
 
-      {/* Page Content */}
-      <div className="bg-[#FBF8F3] py-12 px-4">
+      {/* Hero Banner */}
+      <section className="bg-gradient-to-br from-[#006837] via-[#00572e] to-[#003d20] py-16 px-4">
         <div className="max-w-6xl mx-auto">
-
-          {/* Page Title */}
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-8">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
             FINANCE COMMITTEE
           </h1>
-
-          {/* Subheadings */}
-          <h2 className="text-lg md:text-xl font-bold text-black mb-2">
+          <h2 className="text-lg md:text-xl font-semibold text-green-200 mb-1">
             JKKN DENTAL COLLEGE AND HOSPITAL
           </h2>
-          <h3 className="text-lg md:text-xl font-bold text-black mb-6">
+          <h3 className="text-lg md:text-xl font-semibold text-green-300">
             FINANCE COMMITTEE
           </h3>
+        </div>
+      </section>
 
-          {/* Description */}
-          <p className="text-base text-black mb-8 leading-relaxed">
-            The Finance Committee of JKKN DENTAL COLELGE AND HOSPITAL is constituted with the following members
-          </p>
+      {/* Description */}
+      <section className="bg-[#FBFBEE] py-14 px-4">
+        <div className="max-w-6xl mx-auto">
+          <div className="bg-white rounded-xl p-8 shadow-sm border border-green-100 border-l-4 border-l-[#7cb983]">
+            <p className="hero-description text-gray-700 text-base leading-relaxed">
+              The Finance Committee of JKKN DENTAL COLELGE AND HOSPITAL is constituted with the following members
+            </p>
+          </div>
+        </div>
+      </section>
 
-          {/* Committee Members Table */}
-          <div className="overflow-x-auto mb-12">
-            <table className="w-full border-collapse">
+      {/* Committee Members Table */}
+      <section className="bg-white py-14 px-4">
+        <div className="max-w-6xl mx-auto">
+          <div className="overflow-x-auto rounded-xl shadow-sm border border-green-100">
+            <table className="w-full border-collapse bg-white">
               <thead>
-                <tr className="bg-gray-200">
-                  <th className="border border-gray-300 px-4 py-3 text-left font-bold text-gray-700">
+                <tr className="bg-[#006837]">
+                  <th className="px-6 py-4 text-left font-bold text-white uppercase text-sm">
                     S.NO
                   </th>
-                  <th className="border border-gray-300 px-4 py-3 text-left font-bold text-gray-700">
+                  <th className="px-6 py-4 text-left font-bold text-white uppercase text-sm">
                     NAME
                   </th>
-                  <th className="border border-gray-300 px-4 py-3 text-left font-bold text-gray-700">
+                  <th className="px-6 py-4 text-left font-bold text-white uppercase text-sm">
                     DESIGNATION
                   </th>
-                  <th className="border border-gray-300 px-4 py-3 text-left font-bold text-gray-700">
+                  <th className="px-6 py-4 text-left font-bold text-white uppercase text-sm">
                     RESPONISIBILITY
                   </th>
                 </tr>
               </thead>
               <tbody>
                 <tr className="bg-white">
-                  <td className="border border-gray-300 px-4 py-3 text-gray-700">
-                    1
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-gray-700">
-                    DR B DHANASEKAR
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-gray-700">
-                    PRINCIPAL
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-gray-700">
-                    CHAIRMAN
-                  </td>
+                  <td className="px-6 py-4 text-sm font-semibold text-gray-700 border-b border-green-100">1</td>
+                  <td className="px-6 py-4 text-sm font-semibold text-gray-700 border-b border-green-100">DR B DHANASEKAR</td>
+                  <td className="px-6 py-4 text-sm font-semibold text-gray-700 border-b border-green-100">PRINCIPAL</td>
+                  <td className="px-6 py-4 text-sm font-semibold text-gray-700 border-b border-green-100">CHAIRMAN</td>
+                </tr>
+                <tr className="bg-[#f9fdf9]">
+                  <td className="px-6 py-4 text-sm font-semibold text-gray-700 border-b border-green-100">2</td>
+                  <td className="px-6 py-4 text-sm font-semibold text-gray-700 border-b border-green-100">MRS. ISVARYALAKSHMI O</td>
+                  <td className="px-6 py-4 text-sm font-semibold text-gray-700 border-b border-green-100">TREASURER</td>
+                  <td className="px-6 py-4 text-sm font-semibold text-gray-700 border-b border-green-100">MEMBER</td>
                 </tr>
                 <tr className="bg-white">
-                  <td className="border border-gray-300 px-4 py-3 text-gray-700">
-                    2
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-gray-700">
-                    MRS. ISVARYALAKSHMI O
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-gray-700">
-                    TREASURER
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-gray-700">
-                    MEMBER
-                  </td>
+                  <td className="px-6 py-4 text-sm font-semibold text-gray-700 border-b border-green-100">3</td>
+                  <td className="px-6 py-4 text-sm font-semibold text-gray-700 border-b border-green-100">DR J. V. KARUNAKARAN</td>
+                  <td className="px-6 py-4 text-sm font-semibold text-gray-700 border-b border-green-100">HEAD OF THE DEPARTMENT</td>
+                  <td className="px-6 py-4 text-sm font-semibold text-gray-700 border-b border-green-100">MEMBER</td>
                 </tr>
-                <tr className="bg-white">
-                  <td className="border border-gray-300 px-4 py-3 text-gray-700">
-                    3
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-gray-700">
-                    DR J. V. KARUNAKARAN
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-gray-700">
-                    HEAD OF THE DEPARTMENT
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-gray-700">
-                    MEMBER
-                  </td>
-                </tr>
-                <tr className="bg-white">
-                  <td className="border border-gray-300 px-4 py-3 text-gray-700">
-                    4
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-gray-700">
-                    MR. VELAYUDHAM
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-gray-700">
-                    FINANCE OFFICER
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-gray-700">
-                    MEMBER
-                  </td>
+                <tr className="bg-[#f9fdf9]">
+                  <td className="px-6 py-4 text-sm font-semibold text-gray-700">4</td>
+                  <td className="px-6 py-4 text-sm font-semibold text-gray-700">MR. VELAYUDHAM</td>
+                  <td className="px-6 py-4 text-sm font-semibold text-gray-700">FINANCE OFFICER</td>
+                  <td className="px-6 py-4 text-sm font-semibold text-gray-700">MEMBER</td>
                 </tr>
               </tbody>
             </table>
           </div>
-
         </div>
-      </div>
+      </section>
 
       <Footer />
       <FloatingWhatsApp />

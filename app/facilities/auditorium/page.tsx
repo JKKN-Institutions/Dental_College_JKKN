@@ -5,6 +5,7 @@ import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import Image from 'next/image';
 import StructuredData from '@/components/StructuredData';
 import { generateBreadcrumbSchema, generateWebPageSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
+import { Eye, Volume2, Monitor, Lightbulb, Layers, Award } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Auditorium | JKKN Dental Campus',
@@ -18,6 +19,39 @@ export const metadata: Metadata = {
     siteName: 'JKKN Dental College & Hospital',
   },
 };
+
+const features = [
+  {
+    icon: Eye,
+    title: 'Uncompromising Viewing Experience:',
+    description: 'Thoughtfully designed seating configurations provide an unobstructed view from every angle, thereby enriching the attendee experience.',
+  },
+  {
+    icon: Volume2,
+    title: 'Sound Quality, Elevated:',
+    description: 'State-of-the-art acoustics amplify clarity and depth, ensuring that each word or note resonates with the audience.',
+  },
+  {
+    icon: Monitor,
+    title: 'Advanced Technical Capabilities:',
+    description: 'Featuring cutting-edge audio-visual technologies, the stage is versatile enough for both academic lectures and high-octane cultural performances.',
+  },
+  {
+    icon: Lightbulb,
+    title: 'Distinctive Atmosphere:',
+    description: 'The interior fuses contemporary and classic design elements, creating a harmonious yet dynamic atmosphere. Customized lighting schemes further elevate the ambience for different events.',
+  },
+  {
+    icon: Layers,
+    title: 'Resourceful & Adaptable:',
+    description: 'Beyond performances and lectures, the auditorium serves as a communal asset for various campus activities, from workshops to ceremonies.',
+  },
+  {
+    icon: Award,
+    title: 'Commitment to Excellence:',
+    description: "Regular maintenance by our dedicated team assures optimal functionality, reflecting JKKN Institutions' overarching standards of excellence.",
+  },
+];
 
 export default function Auditorium() {
   const breadcrumbSchema = generateBreadcrumbSchema('/facilities/auditorium');
@@ -41,116 +75,74 @@ export default function Auditorium() {
       <StructuredData data={speakableSchema} />
       <Header />
 
-      {/* Page Content */}
-      <div className="bg-[#FBF8F3] py-12 px-4">
+      {/* Hero Banner */}
+      <section className="bg-[#006837] py-16 px-4">
         <div className="max-w-6xl mx-auto">
-          {/* Main Heading */}
-          <h1 className="text-4xl md:text-5xl font-bold text-[#1B5E20] mb-8">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
             Auditorium
           </h1>
+          <div className="h-1 w-24 bg-[#7cb983] rounded-full" />
+        </div>
+      </section>
 
-          {/* Image Gallery - 3 Images */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-            {/* Image 1 */}
-            <div className="w-full h-[280px] md:h-[240px] bg-gray-200 rounded-lg overflow-hidden">
+      {/* Image Gallery */}
+      <section className="bg-white py-12 px-4">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+            <div className="relative h-[280px] md:h-[300px] rounded-2xl overflow-hidden shadow-lg group">
               <Image
                 src="/images/Auditorium-1.webp"
                 alt="Auditorium decorated for event"
-                width={400}
-                height={240}
-                className="w-full h-full object-cover"
+                fill
+                className="object-cover group-hover:scale-105 transition-transform duration-500"
               />
             </div>
-
-            {/* Image 2 */}
-            <div className="w-full h-[280px] md:h-[240px] bg-gray-200 rounded-lg overflow-hidden">
+            <div className="relative h-[280px] md:h-[300px] rounded-2xl overflow-hidden shadow-lg group">
               <Image
                 src="/images/Auditorium-2.webp"
                 alt="Auditorium event ceremony"
-                width={400}
-                height={240}
-                className="w-full h-full object-cover"
+                fill
+                className="object-cover group-hover:scale-105 transition-transform duration-500"
               />
             </div>
-
-            {/* Image 3 */}
-            <div className="w-full h-[280px] md:h-[240px] bg-gray-200 rounded-lg overflow-hidden">
+            <div className="relative h-[280px] md:h-[300px] rounded-2xl overflow-hidden shadow-lg group">
               <Image
                 src="/images/Auditorium-3.webp"
                 alt="Cultural performance in auditorium"
-                width={400}
-                height={240}
-                className="w-full h-full object-cover"
+                fill
+                className="object-cover group-hover:scale-105 transition-transform duration-500"
               />
             </div>
           </div>
-
-          {/* Introduction Paragraph */}
-          <p className="text-base leading-relaxed text-gray-700 mb-8">
-            <strong>Our auditorium is not just a venue—it's a testament to JKKN Institutions' commitment to fostering a rich educational and cultural landscape. Here's why this space sets new standards:</strong>
-          </p>
-
-          {/* Uncompromising Viewing Experience */}
-          <div className="mb-8">
-            <h2 className="text-xl md:text-2xl font-bold text-black mb-4">
-              Uncompromising Viewing Experience:
-            </h2>
-            <p className="text-base leading-relaxed text-gray-700">
-              <strong>Thoughtfully designed seating configurations provide an unobstructed view from every angle, thereby enriching the attendee experience.</strong>
-            </p>
-          </div>
-
-          {/* Sound Quality, Elevated */}
-          <div className="mb-8">
-            <h2 className="text-xl md:text-2xl font-bold text-black mb-4">
-              Sound Quality, Elevated:
-            </h2>
-            <p className="text-base leading-relaxed text-gray-700">
-              <strong>State-of-the-art acoustics amplify clarity and depth, ensuring that each word or note resonates with the audience.</strong>
-            </p>
-          </div>
-
-          {/* Advanced Technical Capabilities */}
-          <div className="mb-8">
-            <h2 className="text-xl md:text-2xl font-bold text-black mb-4">
-              Advanced Technical Capabilities:
-            </h2>
-            <p className="text-base leading-relaxed text-gray-700">
-              <strong>Featuring cutting-edge audio-visual technologies, the stage is versatile enough for both academic lectures and high-octane cultural performances.</strong>
-            </p>
-          </div>
-
-          {/* Distinctive Atmosphere */}
-          <div className="mb-8">
-            <h2 className="text-xl md:text-2xl font-bold text-black mb-4">
-              Distinctive Atmosphere:
-            </h2>
-            <p className="text-base leading-relaxed text-gray-700">
-              <strong>The interior fuses contemporary and classic design elements, creating a harmonious yet dynamic atmosphere. Customized lighting schemes further elevate the ambience for different events.</strong>
-            </p>
-          </div>
-
-          {/* Resourceful & Adaptable */}
-          <div className="mb-8">
-            <h2 className="text-xl md:text-2xl font-bold text-black mb-4">
-              Resourceful & Adaptable:
-            </h2>
-            <p className="text-base leading-relaxed text-gray-700">
-              <strong>Beyond performances and lectures, the auditorium serves as a communal asset for various campus activities, from workshops to ceremonies.</strong>
-            </p>
-          </div>
-
-          {/* Commitment to Excellence */}
-          <div className="mb-12">
-            <h2 className="text-xl md:text-2xl font-bold text-black mb-4">
-              Commitment to Excellence:
-            </h2>
-            <p className="text-base leading-relaxed text-gray-700">
-              <strong>Regular maintenance by our dedicated team assures optimal functionality, reflecting JKKN Institutions' overarching standards of excellence.</strong>
-            </p>
-          </div>
         </div>
-      </div>
+      </section>
+
+      {/* Intro Paragraph */}
+      <section className="bg-[#FBFBEE] py-10 px-4">
+        <div className="max-w-6xl mx-auto">
+          <p className="text-base md:text-lg leading-relaxed text-gray-700 border-l-4 border-[#7cb983] pl-6">
+            <strong>Our auditorium is not just a venue—it&apos;s a testament to JKKN Institutions&apos; commitment to fostering a rich educational and cultural landscape. Here&apos;s why this space sets new standards:</strong>
+          </p>
+        </div>
+      </section>
+
+      {/* Feature Cards */}
+      <section className="bg-white py-16 px-4">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {features.map(({ icon: Icon, title, description }) => (
+            <div
+              key={title}
+              className="bg-[#FBFBEE] rounded-2xl p-6 border border-[#7cb983]/20 hover:shadow-md transition-shadow duration-300 flex flex-col gap-4"
+            >
+              <div className="w-12 h-12 rounded-full bg-[#006837] flex items-center justify-center flex-shrink-0">
+                <Icon className="text-white w-6 h-6" />
+              </div>
+              <h2 className="text-lg font-bold text-[#006837]">{title}</h2>
+              <p className="text-gray-600 text-sm leading-relaxed"><strong>{description}</strong></p>
+            </div>
+          ))}
+        </div>
+      </section>
 
       <Footer />
       <FloatingWhatsApp />

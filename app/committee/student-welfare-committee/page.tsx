@@ -4,6 +4,7 @@ import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import StructuredData from '@/components/StructuredData';
 import { generateBreadcrumbSchema, generateWebPageSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
+import { User } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Student Welfare Committee | JKKN Dental College',
@@ -33,6 +34,16 @@ export default function StudentWelfareCommittee() {
     speakableCssSelectors: ['h1', '.hero-description', 'article p'],
   });
 
+  const members = [
+    '1 .Managing Director-Mr.Ommsharravana (Chair)',
+    '2. C hief Administrative Offi cer- Mr. K. M. Raj endiran',
+    '3. Principal-Prof. Dr. Dhanasekar B-( Member secretary)',
+    '4. Prof.Dr.Sasirekha',
+    '5. Prof.Sai Sadan',
+    '6.Dr. Jagadeesh',
+    'T.Dr.Chris Susan',
+  ];
+
   return (
     <main>
       <StructuredData data={breadcrumbSchema} />
@@ -40,40 +51,30 @@ export default function StudentWelfareCommittee() {
       <StructuredData data={speakableSchema} />
       <Header />
 
-      {/* Page Content */}
-      <div className="bg-[#FBF8F3] py-12 px-4">
+      {/* Hero Banner */}
+      <section className="bg-gradient-to-br from-[#006837] via-[#00572e] to-[#003d20] py-16 px-4">
         <div className="max-w-6xl mx-auto">
-
-          {/* Page Title */}
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-8">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white">
             STUDENT WELFARE COMMITTEE
           </h1>
-
-          {/* Committee Members List */}
-          <p className="text-base text-black mb-3 leading-relaxed">
-            1 .Managing Director-Mr.Ommsharravana (Chair)
-          </p>
-          <p className="text-base text-black mb-3 leading-relaxed">
-            2. C hief Administrative Offi cer- Mr. K. M. Raj endiran
-          </p>
-          <p className="text-base text-black mb-3 leading-relaxed">
-            3. Principal-Prof. Dr. Dhanasekar B-( Member secretary)
-          </p>
-          <p className="text-base text-black mb-3 leading-relaxed">
-            4. Prof.Dr.Sasirekha
-          </p>
-          <p className="text-base text-black mb-3 leading-relaxed">
-            5. Prof.Sai Sadan
-          </p>
-          <p className="text-base text-black mb-3 leading-relaxed">
-            6.Dr. Jagadeesh
-          </p>
-          <p className="text-base text-black mb-12 leading-relaxed">
-            T.Dr.Chris Susan
-          </p>
-
         </div>
-      </div>
+      </section>
+
+      {/* Members */}
+      <section className="bg-[#FBFBEE] py-14 px-4">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            {members.map((member) => (
+              <div key={member} className="bg-white rounded-xl p-6 shadow-sm border border-green-100 flex items-start gap-4">
+                <div className="w-10 h-10 bg-[#e8f5e9] rounded-lg flex items-center justify-center flex-shrink-0">
+                  <User className="w-5 h-5 text-[#006837]" />
+                </div>
+                <p className="text-[#002309] font-semibold text-sm leading-relaxed">{member}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
       <Footer />
       <FloatingWhatsApp />

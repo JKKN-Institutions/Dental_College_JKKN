@@ -186,7 +186,6 @@ export const siteContent = {
           },
           { label: "FEE REFUND POLICY", href: "/admissions/fee-refund-policy" },
           { label: "SCHOLARSHIP POLICY FOR DENTAL COLLEGE", href: "/admissions/scholarship-policy-for-dental-college" },
-          { label: "ADMISSION CRITERIA", href: "/admissions/admission-criteria" },
           { label: "EQUITABLE OPPORTUNITY FOR SEDG GROUP", href: "/admissions/equitable-opportunity-for-sedg-group" }
         ]
       },

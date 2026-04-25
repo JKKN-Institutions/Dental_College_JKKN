@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { Metadata } from 'next';
 import StructuredData from '@/components/StructuredData';
 import { generateBreadcrumbSchema, generateWebPageSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
+import { BookOpen, GraduationCap, Monitor, Search, Calendar, Users, Clock, Star } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Library Facilities | Digital Library | JKKN Dental College',
@@ -66,6 +67,49 @@ const faqSchema = {
   ]
 };
 
+const features = [
+  {
+    icon: BookOpen,
+    title: 'Explore our Comprehensive Dental Collection:',
+    description: 'Boasting an extensive array of textbooks, journals, and research papers, our library serves as a treasure trove for dental knowledge. Dive into our collection to enrich your understanding of dental science.',
+  },
+  {
+    icon: GraduationCap,
+    title: 'Study Spaces Tailored for Success:',
+    description: 'From quiet reading corners to collaboration zones, we provide a conducive learning environment. Find the perfect space to suit your study needs.',
+  },
+  {
+    icon: Monitor,
+    title: 'Stay Ahead with Digital Dexterity:',
+    description: 'Access state-of-the-art digital resources through our online portal. E-books, e-journals, and multimedia materials keep you abreast of the latest dental advancements.',
+  },
+  {
+    icon: Search,
+    title: 'Expert Assistance & Research Hub:',
+    description: 'Our librarians stand ready to support your academic journey. Embark on research projects with literature reviews, data analysis, and citation management.',
+  },
+  {
+    icon: Calendar,
+    title: 'Engage with Workshops, Seminars & Dental News:',
+    description: 'Participate in educational workshops and seminars from renowned dental experts. Stay informed with curated news on the latest developments in dentistry.',
+  },
+  {
+    icon: Users,
+    title: 'Community, Collaboration & Personalized Learning:',
+    description: 'Connect with like-minded dental enthusiasts and explore personalized learning resources. From visual aids to interactive modules, we make learning engaging.',
+  },
+  {
+    icon: Clock,
+    title: 'Relaxation, Reflection & History Exhibit:',
+    description: "Find solace in our relaxation zone, or explore the evolution of dentistry through our historical exhibit. Appreciate the profession's rich heritage.",
+  },
+  {
+    icon: Star,
+    title: 'Library Membership Benefits:',
+    description: 'Become a member to enjoy exclusive access to resources, borrowing privileges, and priority registration for workshops.',
+  },
+];
+
 export default function Library() {
   const breadcrumbSchema = generateBreadcrumbSchema('/facilities/library');
   const webPageSchema = generateWebPageSchema({
@@ -89,143 +133,83 @@ export default function Library() {
       <StructuredData data={faqSchema} />
       <Header />
 
-      {/* Page Content */}
-      <div className="bg-[#FBF8F3] py-12 px-4">
+      {/* Hero Banner */}
+      <section className="bg-[#006837] py-16 px-4">
         <div className="max-w-6xl mx-auto">
-          {/* Main Heading */}
-          <h1 className="text-4xl md:text-5xl font-bold text-[#1B5E20] mb-8">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
             Library
           </h1>
+          <div className="h-1 w-24 bg-[#7cb983] rounded-full" />
+        </div>
+      </section>
 
-          {/* Image Gallery - 3 Images */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-            {/* Image 1 */}
-            <div className="w-full h-[300px] md:h-[350px] bg-gray-200 rounded-lg overflow-hidden">
+      {/* Image Gallery */}
+      <section className="bg-white py-12 px-4">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+            <div className="relative h-[300px] md:h-[370px] rounded-2xl overflow-hidden shadow-lg group">
               <Image
                 src="/images/library-1.jpg"
                 alt="JKKN Dental College library study area with students reading at study desks"
-                width={400}
-                height={350}
-                className="w-full h-full object-cover"
+                fill
+                className="object-cover group-hover:scale-105 transition-transform duration-500"
               />
             </div>
-
-            {/* Image 2 */}
-            <div className="w-full h-[300px] md:h-[350px] bg-gray-200 rounded-lg overflow-hidden">
+            <div className="relative h-[300px] md:h-[370px] rounded-2xl overflow-hidden shadow-lg group">
               <Image
                 src="/images/library-2.jpg"
                 alt="Dental students browsing textbooks at JKKN library bookshelves"
-                width={400}
-                height={350}
-                className="w-full h-full object-cover"
+                fill
+                className="object-cover group-hover:scale-105 transition-transform duration-500"
               />
             </div>
-
-            {/* Image 3 */}
-            <div className="w-full h-[300px] md:h-[350px] bg-gray-200 rounded-lg overflow-hidden">
+            <div className="relative h-[300px] md:h-[370px] rounded-2xl overflow-hidden shadow-lg group">
               <Image
                 src="/images/library-3.jpg"
                 alt="Students exploring journals and periodicals section at JKKN Dental College library"
-                width={400}
-                height={350}
-                className="w-full h-full object-cover"
+                fill
+                className="object-cover group-hover:scale-105 transition-transform duration-500"
               />
             </div>
           </div>
+        </div>
+      </section>
 
-          {/* Subtitle */}
-          <p className="text-base md:text-lg text-gray-600 mb-8">
+      {/* Subtitle */}
+      <section className="bg-[#FBFBEE] py-10 px-4">
+        <div className="max-w-6xl mx-auto">
+          <p className="text-base md:text-lg leading-relaxed text-gray-700 border-l-4 border-[#7cb983] pl-6">
             Dental College Library – Your Partner in Dental Excellence
           </p>
-
-          {/* Explore our Comprehensive Dental Collection */}
-          <div className="mb-8">
-            <h2 className="text-xl md:text-2xl font-bold text-black mb-4">
-              Explore our Comprehensive Dental Collection:
-            </h2>
-            <p className="text-base leading-relaxed text-gray-700">
-              <strong>Boasting an extensive array of textbooks, journals, and research papers, our library serves as a treasure trove for dental knowledge. Dive into our collection to enrich your understanding of dental science.</strong>
-            </p>
-          </div>
-
-          {/* Study Spaces Tailored for Success */}
-          <div className="mb-8">
-            <h2 className="text-xl md:text-2xl font-bold text-black mb-4">
-              Study Spaces Tailored for Success:
-            </h2>
-            <p className="text-base leading-relaxed text-gray-700">
-              <strong>From quiet reading corners to collaboration zones, we provide a conducive learning environment. Find the perfect space to suit your study needs.</strong>
-            </p>
-          </div>
-
-          {/* Stay Ahead with Digital Dexterity */}
-          <div className="mb-8">
-            <h2 className="text-xl md:text-2xl font-bold text-black mb-4">
-              Stay Ahead with Digital Dexterity:
-            </h2>
-            <p className="text-base leading-relaxed text-gray-700">
-              <strong>Access state-of-the-art digital resources through our online portal. E-books, e-journals, and multimedia materials keep you abreast of the latest dental advancements.</strong>
-            </p>
-          </div>
-
-          {/* Expert Assistance & Research Hub */}
-          <div className="mb-8">
-            <h2 className="text-xl md:text-2xl font-bold text-black mb-4">
-              Expert Assistance & Research Hub:
-            </h2>
-            <p className="text-base leading-relaxed text-gray-700">
-              <strong>Our librarians stand ready to support your academic journey. Embark on research projects with literature reviews, data analysis, and citation management.</strong>
-            </p>
-          </div>
-
-          {/* Engage with Workshops, Seminars & Dental News */}
-          <div className="mb-8">
-            <h2 className="text-xl md:text-2xl font-bold text-black mb-4">
-              Engage with Workshops, Seminars & Dental News:
-            </h2>
-            <p className="text-base leading-relaxed text-gray-700">
-              <strong>Participate in educational workshops and seminars from renowned dental experts. Stay informed with curated news on the latest developments in dentistry.</strong>
-            </p>
-          </div>
-
-          {/* Community, Collaboration & Personalized Learning */}
-          <div className="mb-8">
-            <h2 className="text-xl md:text-2xl font-bold text-black mb-4">
-              Community, Collaboration & Personalized Learning:
-            </h2>
-            <p className="text-base leading-relaxed text-gray-700">
-              <strong>Connect with like-minded dental enthusiasts and explore personalized learning resources. From visual aids to interactive modules, we make learning engaging.</strong>
-            </p>
-          </div>
-
-          {/* Relaxation, Reflection & History Exhibit */}
-          <div className="mb-8">
-            <h2 className="text-xl md:text-2xl font-bold text-black mb-4">
-              Relaxation, Reflection & History Exhibit:
-            </h2>
-            <p className="text-base leading-relaxed text-gray-700">
-              <strong>Find solace in our relaxation zone, or explore the evolution of dentistry through our historical exhibit. Appreciate the profession's rich heritage.</strong>
-            </p>
-          </div>
-
-          {/* Library Membership Benefits */}
-          <div className="mb-8">
-            <h2 className="text-xl md:text-2xl font-bold text-black mb-4">
-              Library Membership Benefits:
-            </h2>
-            <p className="text-base leading-relaxed text-gray-700">
-              <strong>Become a member to enjoy exclusive access to resources, borrowing privileges, and priority registration for workshops.</strong>
-            </p>
-          </div>
-
-          {/* Final Statement */}
-          <div className="mb-12">
-            <p className="text-base leading-relaxed text-gray-700">
-              <strong>At the Dental College Library, we are committed to your growth in dental excellence. Explore, learn, collaborate, and contribute to the future of dentistry with us.</strong>
-            </p>
-          </div>
         </div>
-      </div>
+      </section>
+
+      {/* Feature Cards */}
+      <section className="bg-white py-16 px-4">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {features.map(({ icon: Icon, title, description }) => (
+            <div
+              key={title}
+              className="bg-[#FBFBEE] rounded-2xl p-6 border border-[#7cb983]/20 hover:shadow-md transition-shadow duration-300 flex flex-col gap-4"
+            >
+              <div className="w-12 h-12 rounded-full bg-[#006837] flex items-center justify-center flex-shrink-0">
+                <Icon className="text-white w-6 h-6" />
+              </div>
+              <h2 className="text-lg font-bold text-[#006837]">{title}</h2>
+              <p className="text-gray-600 text-sm leading-relaxed"><strong>{description}</strong></p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Closing Statement */}
+      <section className="bg-[#006837] py-12 px-4">
+        <div className="max-w-4xl mx-auto text-center">
+          <p className="text-white text-base md:text-lg leading-relaxed">
+            <strong>At the Dental College Library, we are committed to your growth in dental excellence. Explore, learn, collaborate, and contribute to the future of dentistry with us.</strong>
+          </p>
+        </div>
+      </section>
 
       <Footer />
       <FloatingWhatsApp />

@@ -155,7 +155,7 @@ export default function MDSPeriodontics() {
             <div className="relative">
               <div className="relative rounded-2xl border-4 border-white/20 overflow-hidden">
                 <Image
-                  src="/images/MDS-Periodontics-hero.webp"
+                  src="/images/MDS-Periodontics-dept.jpg"
                   alt="MDS Periodontics department with implant training facility at JKKN Dental College, Komarapalayam"
                   width={600}
                   height={400}
@@ -327,8 +327,8 @@ export default function MDSPeriodontics() {
             <div className="relative">
               <div className="relative rounded-3xl overflow-hidden min-h-[400px]">
                 <Image
-                  src="/images/MDS-Periodontics-surgery-image.webp"
-                  alt="MDS Periodontics student performing periodontal surgery procedure at JKKN Dental Hospital"
+                  src="/images/DENTAL-PHOTOS/PHOTOS/IMG_6821.JPG"
+                  alt="MDS Periodontics students observing periodontal surgery procedure at JKKN Dental College clinical hall"
                   fill
                   className="object-cover"
                   sizes="(max-width: 768px) 100vw, 50vw"
@@ -752,52 +752,52 @@ export default function MDSPeriodontics() {
       </section>
 
       {/* Infrastructure Section */}
-      <section className="py-16 px-4 bg-gray-50">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-12">
-            <p className="text-[#7cb983] font-semibold text-sm uppercase tracking-wide mb-2">INFRASTRUCTURE</p>
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">World-Class Facilities</h2>
-            <p className="text-lg text-gray-600 max-w-4xl mx-auto">
+      <section className="py-10 px-4 bg-gray-50">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-8">
+            <p className="text-[#7cb983] font-semibold text-xs uppercase tracking-wide mb-2">INFRASTRUCTURE</p>
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3">World-Class Facilities</h2>
+            <p className="text-sm text-gray-600 max-w-3xl mx-auto">
               Train with cutting-edge equipment and technology in our state-of-the-art periodontics and implantology facilities.
             </p>
           </div>
 
           {/* Facilities Grid */}
-          <div className="grid md:grid-cols-3 gap-8 mb-8">
+          <div className="grid md:grid-cols-3 gap-5 mb-5">
             {/* Implant Suite */}
-            <div className="bg-gradient-to-br from-[#006837] to-[#002309] rounded-2xl overflow-hidden">
-              <div className="p-8 h-64 flex items-center justify-center">
-                <h3 className="text-5xl font-bold text-white text-center">Implant Suite</h3>
+            <div className="bg-gradient-to-br from-[#006837] to-[#002309] rounded-xl overflow-hidden">
+              <div className="p-5 h-36 flex items-center justify-center">
+                <h3 className="text-xl font-bold text-white text-center">Implant Suite</h3>
               </div>
-              <div className="bg-white p-6">
-                <h4 className="text-xl font-bold text-gray-900 mb-3">Implant Surgical Suite</h4>
-                <p className="text-gray-700">
+              <div className="bg-white p-4">
+                <h4 className="text-base font-bold text-gray-900 mb-2">Implant Surgical Suite</h4>
+                <p className="text-sm text-gray-700">
                   Dedicated implant surgery room with advanced surgical motors, implant kits from leading manufacturers, and guided surgery systems.
                 </p>
               </div>
             </div>
 
             {/* CBCT Scanner */}
-            <div className="bg-gradient-to-br from-[#7cb983] to-[#6ba872] rounded-2xl overflow-hidden">
-              <div className="p-8 h-64 flex items-center justify-center">
-                <h3 className="text-5xl font-bold text-white text-center">CBCT Scanner</h3>
+            <div className="bg-gradient-to-br from-[#7cb983] to-[#6ba872] rounded-xl overflow-hidden">
+              <div className="p-5 h-36 flex items-center justify-center">
+                <h3 className="text-xl font-bold text-white text-center">CBCT Scanner</h3>
               </div>
-              <div className="bg-white p-6">
-                <h4 className="text-xl font-bold text-gray-900 mb-3">CBCT Imaging Center</h4>
-                <p className="text-gray-700">
+              <div className="bg-white p-4">
+                <h4 className="text-base font-bold text-gray-900 mb-2">CBCT Imaging Center</h4>
+                <p className="text-sm text-gray-700">
                   3D Cone Beam Computed Tomography for precise implant planning, bone assessment, and anatomical evaluation.
                 </p>
               </div>
             </div>
 
             {/* Laser Unit */}
-            <div className="bg-gradient-to-br from-[#7cb983] to-[#6ba872] rounded-2xl overflow-hidden">
-              <div className="p-8 h-64 flex items-center justify-center">
-                <h3 className="text-5xl font-bold text-white text-center">Laser Unit</h3>
+            <div className="bg-gradient-to-br from-[#7cb983] to-[#6ba872] rounded-xl overflow-hidden">
+              <div className="p-5 h-36 flex items-center justify-center">
+                <h3 className="text-xl font-bold text-white text-center">Laser Unit</h3>
               </div>
-              <div className="bg-white p-6">
-                <h4 className="text-xl font-bold text-gray-900 mb-3">Laser Therapy Unit</h4>
-                <p className="text-gray-700">
+              <div className="bg-white p-4">
+                <h4 className="text-base font-bold text-gray-900 mb-2">Laser Therapy Unit</h4>
+                <p className="text-sm text-gray-700">
                   Diode and Er:YAG laser systems for minimally invasive periodontal treatment and soft tissue management.
                 </p>
               </div>
@@ -805,41 +805,41 @@ export default function MDSPeriodontics() {
           </div>
 
           {/* Additional Facilities */}
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-5">
             {/* Perio Clinic */}
-            <div className="bg-gradient-to-br from-[#006837] to-[#002309] rounded-2xl overflow-hidden">
-              <div className="p-8 h-64 flex items-center justify-center">
-                <h3 className="text-3xl md:text-5xl font-bold text-white text-center">Perio Clinic</h3>
+            <div className="bg-gradient-to-br from-[#006837] to-[#002309] rounded-xl overflow-hidden">
+              <div className="p-5 h-36 flex items-center justify-center">
+                <h3 className="text-xl font-bold text-white text-center">Perio Clinic</h3>
               </div>
-              <div className="bg-white p-6">
-                <h4 className="text-xl font-bold text-gray-900 mb-3">Periodontics Clinical Area</h4>
-                <p className="text-gray-700">
+              <div className="bg-white p-4">
+                <h4 className="text-base font-bold text-gray-900 mb-2">Periodontics Clinical Area</h4>
+                <p className="text-sm text-gray-700">
                   Fully equipped clinical chairs with ultrasonic scalers, piezo surgery units, and advanced diagnostic tools.
                 </p>
               </div>
             </div>
 
             {/* Simulation Lab */}
-            <div className="bg-gradient-to-br from-[#7cb983] to-[#6ba872] rounded-2xl overflow-hidden">
-              <div className="p-8 h-64 flex items-center justify-center">
-                <h3 className="text-3xl md:text-5xl font-bold text-white text-center">Simulation Lab</h3>
+            <div className="bg-gradient-to-br from-[#7cb983] to-[#6ba872] rounded-xl overflow-hidden">
+              <div className="p-5 h-36 flex items-center justify-center">
+                <h3 className="text-xl font-bold text-white text-center">Simulation Lab</h3>
               </div>
-              <div className="bg-white p-6">
-                <h4 className="text-xl font-bold text-gray-900 mb-3">Simulation Laboratory</h4>
-                <p className="text-gray-700">
+              <div className="bg-white p-4">
+                <h4 className="text-base font-bold text-gray-900 mb-2">Simulation Laboratory</h4>
+                <p className="text-sm text-gray-700">
                   Phantom heads and surgical simulators for practicing flap surgeries, grafting, and implant placement.
                 </p>
               </div>
             </div>
 
             {/* Research Lab */}
-            <div className="bg-gradient-to-br from-[#7cb983] to-[#6ba872] rounded-2xl overflow-hidden">
-              <div className="p-8 h-64 flex items-center justify-center">
-                <h3 className="text-3xl md:text-5xl font-bold text-white text-center">Research Lab</h3>
+            <div className="bg-gradient-to-br from-[#7cb983] to-[#6ba872] rounded-xl overflow-hidden">
+              <div className="p-5 h-36 flex items-center justify-center">
+                <h3 className="text-xl font-bold text-white text-center">Research Lab</h3>
               </div>
-              <div className="bg-white p-6">
-                <h4 className="text-xl font-bold text-gray-900 mb-3">Research Laboratory</h4>
-                <p className="text-gray-700">
+              <div className="bg-white p-4">
+                <h4 className="text-base font-bold text-gray-900 mb-2">Research Laboratory</h4>
+                <p className="text-sm text-gray-700">
                   Well-equipped laboratory for microbiological analysis, cell culture studies, and biomaterial research.
                 </p>
               </div>

@@ -319,7 +319,7 @@ export default function BDSProgram() {
               <div className="relative rounded-2xl border-4 border-white/20 overflow-hidden aspect-video">
                 {/* Gap #15: Fixed alt text */}
                 <Image
-                  src="/images/BDS-hero-image.webp"
+                  src="/images/BDS-hero-clinical.jpg"
                   alt="BDS dental education and clinical training at JKKN Dental College, best BDS college in Tamil Nadu"
                   fill
                   className="object-cover"

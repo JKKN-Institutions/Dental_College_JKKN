@@ -19,6 +19,33 @@ export const metadata: Metadata = {
   },
 };
 
+const objectives = [
+  'Encourage Research & Innovation – Foster a research-driven academic environment by facilitating high-quality scientific studies.',
+  'Support Faculty & Student Research – Provide necessary guidance, funding assistance, and access to advanced research facilities.',
+  'Enhance Industry & Academic Collaborations – Strengthen partnerships with universities, research institutions, and healthcare industries.',
+  'Promote Publications & Patents – Encourage the publication of research in reputed journals and the development of innovative patents.',
+  'Facilitate Ethical Research Practices – Ensure research adheres to national and international ethical guidelines.',
+];
+
+const pdfLinks = [
+  {
+    href: '/pdf/RD-Reimbursement-Policy.pdf',
+    label: 'R&D Reimbursement Policy',
+  },
+  {
+    href: '/pdf/RD-Solution-Oriented-Research-and-Entrepreneurship-Policy-BDS.pdf',
+    label: 'Solution-Oriented Research and Entrepreneurship Policy BDS',
+  },
+  {
+    href: '/pdf/RD-Solution-Oriented-Research-and-Entrepreneurship-Policy-MDS.pdf',
+    label: 'Solution-Oriented Research and Entrepreneurship Policy MDS',
+  },
+  {
+    href: '/pdf/RD-UGC-Guidelines.pdf',
+    label: 'UGC Guidelines',
+  },
+];
+
 export default function ResearchDevelopmentRDCell() {
   const speakableSchema = generateSpeakableWebPageSchema({
     title: 'Research & Development (R&D) Cell | JKKN Dental College',
@@ -28,7 +55,7 @@ export default function ResearchDevelopmentRDCell() {
   });
 
   return (
-    <main>
+    <main className="overflow-x-hidden w-full">
       <StructuredData data={speakableSchema} />
       <BreadcrumbSchema items={[
         { name: 'Home', url: 'https://dental.jkkn.ac.in/' },
@@ -37,95 +64,70 @@ export default function ResearchDevelopmentRDCell() {
       ]} />
       <Header />
 
-      {/* Page Content */}
-      <div className="bg-[#FBF8F3] py-12 px-4">
-        <div className="max-w-6xl mx-auto">
-
-          {/* Page Title */}
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-8">
-            RESEARCH & DEVELOPMENT (R&D) CELL
-          </h1>
-
-          {/* Subtitle */}
-          <h2 className="text-xl md:text-2xl font-bold text-black mb-4">
-            JKKN Dental College & Hospital
+      {/* Hero Banner */}
+      <section className="bg-[#006837] py-16 px-4">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-base md:text-lg font-semibold text-[#7cb983] mb-2 uppercase tracking-widest">
+            JKKN Dental College &amp; Hospital
           </h2>
-
-          {/* Second Subtitle */}
-          <p className="text-base md:text-lg font-semibold text-black mb-6">
-            Fostering Innovation & Excellence in Research
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 uppercase tracking-wide">
+            RESEARCH &amp; DEVELOPMENT (R&amp;D) CELL
+          </h1>
+          <div className="w-20 h-1 bg-[#7cb983] mb-5 rounded-full" />
+          <p className="text-white/80 text-base md:text-lg font-semibold mb-5">
+            Fostering Innovation &amp; Excellence in Research
           </p>
-
-          {/* Introduction */}
-          <p className="text-gray-700 mb-8 leading-relaxed text-justify">
-            At JKKN Dental College & Hospital, research is the driving force behind academic excellence and scientific advancement. Our Research and Development (R&D) Cell is committed to promoting a culture of innovation, interdisciplinary collaboration, and impactful research in dentistry, biomedical sciences, and healthcare. By supporting faculty and student-led research initiatives, the R&D Cell plays a vital role in advancing knowledge, improving patient care, and contributing to global scientific progress.
+          <p className="hero-description text-white/80 text-base leading-relaxed max-w-3xl">
+            At JKKN Dental College &amp; Hospital, research is the driving force behind academic excellence and scientific advancement. Our Research and Development (R&amp;D) Cell is committed to promoting a culture of innovation, interdisciplinary collaboration, and impactful research in dentistry, biomedical sciences, and healthcare. By supporting faculty and student-led research initiatives, the R&amp;D Cell plays a vital role in advancing knowledge, improving patient care, and contributing to global scientific progress.
           </p>
+        </div>
+      </section>
 
-          {/* Objectives Section */}
-          <h3 className="text-lg md:text-xl font-bold text-black mb-4">
-            Objectives of the R&D Cell
-          </h3>
+      <div className="bg-[#FBFBEE] py-16 px-4">
+        <div className="max-w-5xl mx-auto space-y-10">
 
-          <ul className="list-disc list-inside mb-8 space-y-3 text-gray-700">
-            <li className="font-semibold">
-              Encourage Research & Innovation – Foster a research-driven academic environment by facilitating high-quality scientific studies.
-            </li>
-            <li className="font-semibold">
-              Support Faculty & Student Research – Provide necessary guidance, funding assistance, and access to advanced research facilities.
-            </li>
-            <li className="font-semibold">
-              Enhance Industry & Academic Collaborations – Strengthen partnerships with universities, research institutions, and healthcare industries.
-            </li>
-            <li className="font-semibold">
-              Promote Publications & Patents – Encourage the publication of research in reputed journals and the development of innovative patents.
-            </li>
-            <li className="font-semibold">
-              Facilitate Ethical Research Practices – Ensure research adheres to national and international ethical guidelines.
-            </li>
-          </ul>
-
-          {/* Key Initiatives & Facilities */}
-          <h3 className="text-lg md:text-xl font-bold text-black mb-6">
-            Key Initiatives & Facilities
-          </h3>
-
-          {/* Buttons */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-12">
-            <a
-              href="/pdf/RD-Reimbursement-Policy.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block bg-[#81C784] hover:bg-[#66BB6A] text-white font-bold py-3 px-6 rounded transition-all duration-300 text-sm text-center"
-            >
-              R&D Reimbursement Policy
-            </a>
-            <a
-              href="/pdf/RD-Solution-Oriented-Research-and-Entrepreneurship-Policy-BDS.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block bg-[#81C784] hover:bg-[#66BB6A] text-white font-bold py-3 px-6 rounded transition-all duration-300 text-sm text-center"
-            >
-              Solution-Oriented Research and Entrepreneurship Policy BDS
-            </a>
-            <a
-              href="/pdf/RD-Solution-Oriented-Research-and-Entrepreneurship-Policy-MDS.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block bg-[#81C784] hover:bg-[#66BB6A] text-white font-bold py-3 px-6 rounded transition-all duration-300 text-sm text-center"
-            >
-              Solution-Oriented Research and Entrepreneurship Policy MDS
-            </a>
+          {/* Objectives */}
+          <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
+            <div className="bg-[#006837] px-6 py-4">
+              <h3 className="text-white font-bold text-base md:text-lg">
+                Objectives of the R&amp;D Cell
+              </h3>
+            </div>
+            <ul className="px-6 py-5 space-y-4">
+              {objectives.map((item, i) => (
+                <li key={i} className="flex items-start gap-3 text-sm md:text-base font-semibold text-gray-700">
+                  <div className="flex-shrink-0 w-6 h-6 rounded-full bg-[#006837] text-white flex items-center justify-center text-xs font-bold mt-0.5">
+                    {i + 1}
+                  </div>
+                  {item}
+                </li>
+              ))}
+            </ul>
           </div>
 
-          <div className="mb-12">
-            <a
-              href="/pdf/RD-UGC-Guidelines.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block bg-[#81C784] hover:bg-[#66BB6A] text-white font-bold py-3 px-6 rounded transition-all duration-300 text-sm text-center"
-            >
-              UGC Guidelines
-            </a>
+          {/* Key Initiatives & Facilities */}
+          <div>
+            <h3 className="text-xl md:text-2xl font-bold text-[#006837] mb-6">
+              Key Initiatives &amp; Facilities
+            </h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {pdfLinks.map((link, i) => (
+                <a
+                  key={i}
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`flex items-center gap-3 bg-white hover:bg-[#006837] border-2 border-[#006837] text-[#006837] hover:text-white font-bold py-4 px-5 rounded-xl transition-all duration-200 shadow-sm group ${i === 3 ? 'sm:col-span-2 sm:max-w-sm' : ''}`}
+                >
+                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#006837] group-hover:bg-white flex items-center justify-center transition-colors duration-200">
+                    <svg className="w-4 h-4 text-white group-hover:text-[#006837] transition-colors duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3M3 17V7a2 2 0 012-2h6l2 2h6a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+                    </svg>
+                  </div>
+                  <span className="text-sm leading-snug">{link.label}</span>
+                </a>
+              ))}
+            </div>
           </div>
 
         </div>

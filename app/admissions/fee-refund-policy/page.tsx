@@ -18,6 +18,35 @@ export const metadata: Metadata = {
   },
 };
 
+const partialRefundRows = [
+  {
+    condition: '15 DAYS OR MORE BEFORE THE LAST DATE OF ADMISSION',
+    percentage: '100%',
+  },
+  {
+    condition: 'LESS THAN 15 DAYS BEFORE THE LAST DATE OF ADMISSION',
+    percentage: '90%',
+  },
+  {
+    condition: 'WITHIN 15 DAYS AFTER THE LAST DATE OF ADMISSION',
+    percentage: '80%',
+  },
+  {
+    condition: 'BETWEEN 16-30 DAYS AFTER THE LAST DATE OF ADMISSION',
+    percentage: '50%',
+  },
+  {
+    condition: 'MORE THAN 30 DAYS AFTER THE LAST DATE OF ADMISSION',
+    percentage: 'NO REFUND',
+  },
+];
+
+const applicabilityPoints = [
+  'This policy is applicable to all students enrolling in our programs.',
+  'The refund will be processed within a reasonable timeframe after the withdrawal request is approved.',
+  'Admission cancellation must be officially communicated in writing or via email to the Admissions Office.',
+];
+
 export default function FeeRefundPolicy() {
   const breadcrumbSchema = generateBreadcrumbSchema('/admissions/fee-refund-policy');
   const speakableSchema = generateSpeakableWebPageSchema({
@@ -33,156 +62,144 @@ export default function FeeRefundPolicy() {
       <StructuredData data={speakableSchema} />
       <Header />
 
-      {/* Page Content */}
-      <div className="bg-[#FBF8F3] py-12 px-4">
+      {/* Hero Banner */}
+      <section className="bg-[#006837] py-16 px-4">
         <div className="max-w-5xl mx-auto">
-          {/* Main Title */}
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-12 uppercase">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-5 uppercase tracking-wide">
             FEE REFUND POLICY
           </h1>
-
-          {/* Subtitle */}
-          <h2 className="text-xl md:text-2xl font-bold text-black mb-6">
-            Fee Refund Policy - JKKN Dental College & Hospital
+          <div className="w-20 h-1 bg-[#7cb983] mb-6 rounded-full" />
+          <h2 className="text-lg md:text-xl font-semibold text-white/90 mb-5">
+            Fee Refund Policy - JKKN Dental College &amp; Hospital
           </h2>
+          <div className="bg-white/10 rounded-2xl p-6 max-w-3xl">
+            <p className="text-sm font-bold text-[#7cb983] uppercase tracking-wide mb-2">Introduction</p>
+            <p className="hero-description text-white/85 text-base leading-relaxed">
+              At JKKN Dental College &amp; Hospital, we are committed to upholding transparency and fairness in financial transactions. In accordance with the University Grants Commission (UGC) Fee Refund Policy, we have established a structured refund policy to ensure a smooth process for students who wish to withdraw their admission.
+            </p>
+          </div>
+        </div>
+      </section>
 
-          {/* Introduction */}
-          <h3 className="text-lg md:text-xl font-bold text-black mb-4">
-            Introduction
-          </h3>
+      <div className="bg-[#FBFBEE] py-16 px-4">
+        <div className="max-w-5xl mx-auto space-y-8">
 
-          <p className="text-gray-700 mb-8 leading-relaxed text-justify">
-            At JKKN Dental College & Hospital, we are committed to upholding transparency and fairness in financial transactions. In accordance with the University Grants Commission (UGC) Fee Refund Policy, we have established a structured refund policy to ensure a smooth process for students who wish to withdraw their admission.
-          </p>
-
-          {/* Fee Refund Guidelines */}
-          <h3 className="text-lg md:text-xl font-bold text-black mb-4">
+          {/* Guidelines Header */}
+          <h3 className="text-xl md:text-2xl font-bold text-[#006837]">
             Fee Refund Guidelines (As per UGC Regulations 2024-25)
           </h3>
 
           {/* 1. Full Refund */}
-          <h4 className="text-base md:text-lg font-bold text-black mb-3">
-            1. Full Refund:
-          </h4>
-
-          <p className="text-gray-700 mb-8 leading-relaxed">
-            Students who withdraw their admission on or before September 30, 2025, will receive a 100% refund, with a maximum deduction of ₹1,000 as a processing fee.
-          </p>
+          <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
+            <div className="flex items-center gap-4 bg-[#006837] px-6 py-4">
+              <div className="flex-shrink-0 w-9 h-9 rounded-full bg-white/20 flex items-center justify-center font-bold text-white text-base">
+                1
+              </div>
+              <h4 className="text-white font-bold text-base md:text-lg">Full Refund:</h4>
+            </div>
+            <div className="px-6 py-5">
+              <p className="text-gray-700 leading-relaxed text-sm md:text-base">
+                Students who withdraw their admission on or before September 30, 2025, will receive a 100% refund, with a maximum deduction of ₹1,000 as a processing fee.
+              </p>
+            </div>
+          </div>
 
           {/* 2. Partial Refunds */}
-          <h4 className="text-base md:text-lg font-bold text-black mb-4">
-            2. Partial Refunds (Based on Withdrawal Date):
-          </h4>
-
-          {/* Refund Table */}
-          <div className="overflow-x-auto mb-8">
-            <table className="w-full border-collapse border border-gray-400">
-              <thead>
-                <tr className="bg-white">
-                  <th className="border border-gray-400 px-4 py-3 text-left text-sm md:text-base font-bold text-gray-700 uppercase">
-                    POINT OF TIME WHEN NOTICE OF WITHDRAWAL IS RECEIVED
-                  </th>
-                  <th className="border border-gray-400 px-4 py-3 text-left text-sm md:text-base font-bold text-gray-700 uppercase">
-                    REFUND PERCENTAGE
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr className="bg-white">
-                  <td className="border border-gray-400 px-4 py-3 text-sm md:text-base text-gray-600">
-                    15 DAYS OR MORE BEFORE THE LAST DATE OF ADMISSION
-                  </td>
-                  <td className="border border-gray-400 px-4 py-3 text-sm md:text-base text-gray-600 font-semibold">
-                    100%
-                  </td>
-                </tr>
-                <tr className="bg-white">
-                  <td className="border border-gray-400 px-4 py-3 text-sm md:text-base text-gray-600">
-                    LESS THAN 15 DAYS BEFORE THE LAST DATE OF ADMISSION
-                  </td>
-                  <td className="border border-gray-400 px-4 py-3 text-sm md:text-base text-gray-600 font-semibold">
-                    90%
-                  </td>
-                </tr>
-                <tr className="bg-white">
-                  <td className="border border-gray-400 px-4 py-3 text-sm md:text-base text-gray-600">
-                    WITHIN 15 DAYS AFTER THE LAST DATE OF ADMISSION
-                  </td>
-                  <td className="border border-gray-400 px-4 py-3 text-sm md:text-base text-gray-600 font-semibold">
-                    80%
-                  </td>
-                </tr>
-                <tr className="bg-white">
-                  <td className="border border-gray-400 px-4 py-3 text-sm md:text-base text-gray-600">
-                    BETWEEN 16-30 DAYS AFTER THE LAST DATE OF ADMISSION
-                  </td>
-                  <td className="border border-gray-400 px-4 py-3 text-sm md:text-base text-gray-600 font-semibold">
-                    50%
-                  </td>
-                </tr>
-                <tr className="bg-white">
-                  <td className="border border-gray-400 px-4 py-3 text-sm md:text-base text-gray-600">
-                    MORE THAN 30 DAYS AFTER THE LAST DATE OF ADMISSION
-                  </td>
-                  <td className="border border-gray-400 px-4 py-3 text-sm md:text-base text-gray-600 font-semibold">
-                    NO REFUND
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+          <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
+            <div className="flex items-center gap-4 bg-[#006837] px-6 py-4">
+              <div className="flex-shrink-0 w-9 h-9 rounded-full bg-white/20 flex items-center justify-center font-bold text-white text-base">
+                2
+              </div>
+              <h4 className="text-white font-bold text-base md:text-lg">Partial Refunds (Based on Withdrawal Date):</h4>
+            </div>
+            <div className="overflow-x-auto">
+              <table className="w-full">
+                <thead>
+                  <tr className="bg-[#FBFBEE] border-b border-gray-200">
+                    <th className="px-6 py-4 text-left text-xs md:text-sm font-bold text-[#006837] uppercase tracking-wide w-3/4">
+                      POINT OF TIME WHEN NOTICE OF WITHDRAWAL IS RECEIVED
+                    </th>
+                    <th className="px-6 py-4 text-left text-xs md:text-sm font-bold text-[#006837] uppercase tracking-wide">
+                      REFUND PERCENTAGE
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {partialRefundRows.map((row, index) => (
+                    <tr
+                      key={index}
+                      className={`border-b border-gray-100 ${index % 2 === 0 ? 'bg-white' : 'bg-[#FBFBEE]/60'}`}
+                    >
+                      <td className="px-6 py-4 text-sm md:text-base text-gray-600">
+                        {row.condition}
+                      </td>
+                      <td className="px-6 py-4 text-sm md:text-base font-bold text-[#006837]">
+                        {row.percentage}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
           </div>
 
-          {/* 3. Applicability of the Policy */}
-          <h4 className="text-base md:text-lg font-bold text-black mb-4">
-            3. Applicability of the Policy:
-          </h4>
-
-          <p className="text-gray-700 mb-3 leading-relaxed">
-            This policy is applicable to all students enrolling in our programs.
-          </p>
-
-          <p className="text-gray-700 mb-3 leading-relaxed">
-            The refund will be processed within a reasonable timeframe after the withdrawal request is approved.
-          </p>
-
-          <p className="text-gray-700 mb-8 leading-relaxed">
-            Admission cancellation must be officially communicated in writing or via email to the Admissions Office.
-          </p>
+          {/* 3. Applicability */}
+          <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
+            <div className="flex items-center gap-4 bg-[#006837] px-6 py-4">
+              <div className="flex-shrink-0 w-9 h-9 rounded-full bg-white/20 flex items-center justify-center font-bold text-white text-base">
+                3
+              </div>
+              <h4 className="text-white font-bold text-base md:text-lg">Applicability of the Policy:</h4>
+            </div>
+            <ul className="px-6 py-5 space-y-3">
+              {applicabilityPoints.map((point, index) => (
+                <li key={index} className="flex items-start gap-3 text-sm md:text-base text-gray-700 leading-relaxed">
+                  <div className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-[#7cb983] mt-2" />
+                  {point}
+                </li>
+              ))}
+            </ul>
+          </div>
 
           {/* Grievance Redressal */}
-          <h3 className="text-lg md:text-xl font-bold text-black mb-4">
-            Grievance Redressal
-          </h3>
+          <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 md:p-8">
+            <h3 className="text-xl md:text-2xl font-bold text-[#006837] mb-4">
+              Grievance Redressal
+            </h3>
+            <p className="text-gray-700 leading-relaxed text-sm md:text-base mb-4">
+              Students facing any issues related to the fee refund process may reach out to our Grievance Redressal Committee in accordance with UGC Redressal of Grievances of Students Regulations, 2023.
+            </p>
+            <p className="text-gray-700 leading-relaxed text-sm md:text-base mb-5">
+              For any inquiries or to initiate a refund request, please contact:
+            </p>
 
-          <p className="text-gray-700 mb-6 leading-relaxed">
-            Students facing any issues related to the fee refund process may reach out to our Grievance Redressal Committee in accordance with UGC Redressal of Grievances of Students Regulations, 2023.
-          </p>
+            {/* Contact Info Box */}
+            <div className="bg-[#FBFBEE] border border-[#7cb983]/30 rounded-xl p-5 space-y-2 mb-6">
+              <p className="text-[#002309] font-bold text-sm md:text-base">
+                Phone: +91 93458 55001
+              </p>
+              <p className="text-[#002309] font-bold text-sm md:text-base">
+                Email: [dental@jkkn.ac.in]
+              </p>
+            </div>
 
-          <p className="text-gray-700 mb-4 leading-relaxed">
-            For any inquiries or to initiate a refund request, please contact:
-          </p>
-
-          {/* Contact Information */}
-          <div className="text-gray-700 mb-6 space-y-1">
-            <p><strong>Phone: +91 93458 55001</strong></p>
-            <p><strong>Email: [dental@jkkn.ac.in]</strong></p>
+            <p className="text-gray-700 leading-relaxed text-sm md:text-base">
+              JKKN Dental College &amp; Hospital remains committed to ensuring a fair and transparent admission and refund process for all students.
+            </p>
           </div>
 
-          <p className="text-gray-700 mb-8 leading-relaxed">
-            JKKN Dental College & Hospital remains committed to ensuring a fair and transparent admission and refund process for all students.
-          </p>
-
-          {/* UGC Fee Refund Policy Button */}
-          <div className="mb-12">
+          {/* PDF Button */}
+          <div>
             <a
               href="/pdf/UGC-Fee-Refund-Policy.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-[#81C784] hover:bg-[#66BB6A] text-white font-bold py-3 px-8 rounded transition-all duration-300 uppercase text-sm"
+              className="inline-block bg-[#006837] hover:bg-[#005a2f] text-white font-bold py-3 px-12 rounded-xl transition-colors duration-200 shadow-sm uppercase text-sm tracking-wide"
             >
               UGC FEE REFUND POLICY
             </a>
           </div>
+
         </div>
       </div>
 
