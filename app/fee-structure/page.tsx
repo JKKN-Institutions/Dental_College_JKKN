@@ -55,10 +55,10 @@ const structuredData = {
           "priceSpecification": {
             "@type": "PriceSpecification",
             "priceCurrency": "INR",
-            "minPrice": "300000",
-            "maxPrice": "500000",
+            "minPrice": "350000",
+            "maxPrice": "550000",
             "unitText": "per year",
-            "description": "Approximate annual tuition fee. Actual fees may vary."
+            "description": "GQ: ₹3,50,000–₹4,25,000/year. MQ: ₹4,50,000–₹5,50,000/year. Varies by hostel/dayscholar option."
           }
         }
       }
@@ -82,10 +82,10 @@ const structuredData = {
           "priceSpecification": {
             "@type": "PriceSpecification",
             "priceCurrency": "INR",
-            "minPrice": "800000",
-            "maxPrice": "1500000",
+            "minPrice": "250000",
+            "maxPrice": "850000",
             "unitText": "per year",
-            "description": "Approximate annual tuition fee. Actual fees may vary by specialization."
+            "description": "GQ: ₹2,50,000/year. MQ: ₹8,50,000/year. Applicable across all 5 MDS specializations."
           }
         }
       }
@@ -102,7 +102,7 @@ const faqSchema = {
       "name": "What is the BDS fee structure at JKKN Dental College?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The BDS (Bachelor of Dental Surgery) tuition fee at JKKN Dental College is ₹4,50,000 per year (Dayscholar with Instruments) or ₹5,50,000 per year (With Hostel & Instruments) under Management Quota. Government Quota fee is as per Govt Norms. Additional fees include library fee, lab and clinical fee, caution deposit (refundable), and university examination fees. Contact the admissions office at +91 9345855001 or dental@jkkn.ac.in for complete fee details."
+        "text": "The BDS (Bachelor of Dental Surgery) tuition fee at JKKN Dental College is: Government Quota (GQ) – ₹4,25,000/year (With Hostel & Instruments) or ₹3,50,000/year (Dayscholar with Instruments). Management Quota (MQ) – ₹5,50,000/year (With Hostel & Instruments) or ₹4,50,000/year (Dayscholar with Instruments). Additional fees include library fee, lab and clinical fee, caution deposit (refundable), and university examination fees. Contact the admissions office at +91 9345855001 or dental@jkkn.ac.in for complete fee details."
       }
     },
     {
@@ -126,15 +126,7 @@ const faqSchema = {
       "name": "What is the MDS fee structure at JKKN Dental College?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The MDS (Master of Dental Surgery) annual tuition fee at JKKN Dental College is ₹8,50,000 per year under Management Quota across all 5 specializations. Government Quota fee is as per Govt Norms. MDS programs available include Periodontics (4 seats), Orthodontics and Dentofacial Orthopedics (4 seats), Prosthodontics Crown and Bridge (4 seats), Conservative Dentistry and Endodontics (3 seats), and Oral Medicine and Radiology (3 seats). Additional one-time fees include admission fee, caution deposit, library deposit, and lab deposit (all refundable). Contact admissions for complete fee details."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Are there scholarship options to reduce fees at JKKN Dental College?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, JKKN Dental College offers multiple scholarship options to eligible students. These include merit-based scholarships (based on NEET scores and academic performance), sports quota scholarships (for state-level tournament winners), single parent scholarships, JKKN student scholarships, and government scholarships for SC/ST, OBC, and minority communities as per government norms. Scholarship amounts are directly reduced from tuition fees. Visit the scholarship policy page or contact the admissions office for eligibility details."
+        "text": "The MDS (Master of Dental Surgery) annual tuition fee at JKKN Dental College is ₹2,50,000 per year (Government Quota) and ₹8,50,000 per year (Management Quota) across all 5 specializations. MDS programs available include Periodontics (4 seats), Orthodontics (4 seats), Prosthodontics (4 seats), Endodontics (3 seats), and Oral Medicine (3 seats). Additional one-time fees include admission fee, caution deposit, library deposit, and lab deposit (all refundable). Contact admissions for complete fee details."
       }
     }
   ]
@@ -229,54 +221,28 @@ export default function FeesStructure() {
             <table className="w-full">
               <thead className="bg-[#006837] text-white">
                 <tr>
-                  <th className="px-6 py-4 text-left font-bold">Fee Component</th>
-                  <th className="px-6 py-4 text-right font-bold">Amount (₹)</th>
-                  <th className="px-6 py-4 text-left font-bold">Payment Frequency</th>
+                  <th className="px-6 py-4 text-left font-bold">Program</th>
+                  <th className="px-6 py-4 text-right font-bold">GQ (&#8377;)</th>
+                  <th className="px-6 py-4 text-right font-bold">MQ (&#8377;)</th>
+                  <th className="px-6 py-4 text-left font-bold">Remarks</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-300">
                 <tr className="hover:bg-white transition-colors">
-                  <td className="px-6 py-4 font-semibold text-gray-800">Tuition Fee</td>
-                  <td className="px-6 py-4 text-right text-gray-800">GQ: As Per Govt Norms<br/>MQ: &#8377;4,50,000 (Dayscholar) / &#8377;5,50,000 (With Hostel)</td>
-                  <td className="px-6 py-4 text-gray-600">Per Year</td>
+                  <td className="px-6 py-4 font-semibold text-gray-800">BDS</td>
+                  <td className="px-6 py-4 text-right text-gray-800">&#8377;4,25,000</td>
+                  <td className="px-6 py-4 text-right text-gray-800">&#8377;5,50,000</td>
+                  <td className="px-6 py-4 text-gray-600">With Hostel &amp; Instruments</td>
                 </tr>
                 <tr className="hover:bg-white transition-colors">
-                  <td className="px-6 py-4 font-semibold text-gray-800">Hostel Fee – Girls AC Room (Optional)</td>
-                  <td className="px-6 py-4 text-right text-gray-800">&#8377;30,000</td>
-                  <td className="px-6 py-4 text-gray-600">Per Year</td>
-                </tr>
-                <tr className="hover:bg-white transition-colors">
-                  <td className="px-6 py-4 font-semibold text-gray-800">Hostel Fee – Boys (Optional)</td>
-                  <td className="px-6 py-4 text-right text-gray-800">—</td>
-                  <td className="px-6 py-4 text-gray-600">Per Year</td>
-                </tr>
-                <tr className="hover:bg-white transition-colors">
-                  <td className="px-6 py-4 font-semibold text-gray-800">Caution Deposit (Refundable)</td>
-                  <td className="px-6 py-4 text-right text-gray-800">Contact College</td>
-                  <td className="px-6 py-4 text-gray-600">One-time</td>
-                </tr>
-                <tr className="hover:bg-white transition-colors">
-                  <td className="px-6 py-4 font-semibold text-gray-800">Library Fee</td>
-                  <td className="px-6 py-4 text-right text-gray-800">Contact College</td>
-                  <td className="px-6 py-4 text-gray-600">Per Year</td>
-                </tr>
-                <tr className="hover:bg-white transition-colors">
-                  <td className="px-6 py-4 font-semibold text-gray-800">Lab & Clinical Fee</td>
-                  <td className="px-6 py-4 text-right text-gray-800">Contact College</td>
-                  <td className="px-6 py-4 text-gray-600">Per Year</td>
-                </tr>
-                <tr className="hover:bg-white transition-colors">
-                  <td className="px-6 py-4 font-semibold text-gray-800">University Exam Fee</td>
-                  <td className="px-6 py-4 text-right text-gray-800">As per University</td>
-                  <td className="px-6 py-4 text-gray-600">Per Exam</td>
-                </tr>
-                <tr className="bg-[#006837] text-white font-bold">
-                  <td className="px-6 py-4">Total Approximate Annual Fee</td>
-                  <td className="px-6 py-4 text-right">GQ: As Per Govt Norms<br/>MQ: &#8377;4,50,000 (Dayscholar) / &#8377;5,50,000 (With Hostel)</td>
-                  <td className="px-6 py-4">Per Year</td>
+                  <td className="px-6 py-4 font-semibold text-gray-800">BDS</td>
+                  <td className="px-6 py-4 text-right text-gray-800">&#8377;3,50,000</td>
+                  <td className="px-6 py-4 text-right text-gray-800">&#8377;4,50,000</td>
+                  <td className="px-6 py-4 text-gray-600">Dayscholar with Instruments</td>
                 </tr>
               </tbody>
             </table>
+            <p className="text-xs text-gray-500 px-6 py-3">* Fees are per year. GQ = Government Quota &nbsp;|&nbsp; MQ = Management Quota</p>
           </div>
 
           {/* BDS Additional Information */}
@@ -319,42 +285,50 @@ export default function FeesStructure() {
                 <tr>
                   <th className="px-6 py-4 text-left font-bold">Specialization</th>
                   <th className="px-6 py-4 text-center font-bold">Seats</th>
-                  <th className="px-6 py-4 text-right font-bold">Annual Fee (₹)</th>
+                  <th className="px-6 py-4 text-right font-bold">GQ (&#8377;)</th>
+                  <th className="px-6 py-4 text-right font-bold">MQ (&#8377;)</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-300">
                 <tr className="hover:bg-[#FBFBEE] transition-colors">
+                  <td className="px-6 py-4 font-semibold text-gray-800">Orthodontics</td>
+                  <td className="px-6 py-4 text-center text-gray-800">4</td>
+                  <td className="px-6 py-4 text-right text-gray-800">&#8377;2,50,000</td>
+                  <td className="px-6 py-4 text-right text-gray-800">&#8377;8,50,000</td>
+                </tr>
+                <tr className="hover:bg-[#FBFBEE] transition-colors">
+                  <td className="px-6 py-4 font-semibold text-gray-800">Endodontics</td>
+                  <td className="px-6 py-4 text-center text-gray-800">3</td>
+                  <td className="px-6 py-4 text-right text-gray-800">&#8377;2,50,000</td>
+                  <td className="px-6 py-4 text-right text-gray-800">&#8377;8,50,000</td>
+                </tr>
+                <tr className="hover:bg-[#FBFBEE] transition-colors">
+                  <td className="px-6 py-4 font-semibold text-gray-800">Prosthodontics</td>
+                  <td className="px-6 py-4 text-center text-gray-800">4</td>
+                  <td className="px-6 py-4 text-right text-gray-800">&#8377;2,50,000</td>
+                  <td className="px-6 py-4 text-right text-gray-800">&#8377;8,50,000</td>
+                </tr>
+                <tr className="hover:bg-[#FBFBEE] transition-colors">
                   <td className="px-6 py-4 font-semibold text-gray-800">Periodontics</td>
                   <td className="px-6 py-4 text-center text-gray-800">4</td>
-                  <td className="px-6 py-4 text-right text-gray-800">GQ: As Per Govt Norms | MQ: &#8377;8,50,000</td>
+                  <td className="px-6 py-4 text-right text-gray-800">&#8377;2,50,000</td>
+                  <td className="px-6 py-4 text-right text-gray-800">&#8377;8,50,000</td>
                 </tr>
                 <tr className="hover:bg-[#FBFBEE] transition-colors">
-                  <td className="px-6 py-4 font-semibold text-gray-800">Orthodontics and Dentofacial Orthopedics</td>
-                  <td className="px-6 py-4 text-center text-gray-800">4</td>
-                  <td className="px-6 py-4 text-right text-gray-800">GQ: As Per Govt Norms | MQ: &#8377;8,50,000</td>
-                </tr>
-                <tr className="hover:bg-[#FBFBEE] transition-colors">
-                  <td className="px-6 py-4 font-semibold text-gray-800">Prosthodontics Crown and Bridge</td>
-                  <td className="px-6 py-4 text-center text-gray-800">4</td>
-                  <td className="px-6 py-4 text-right text-gray-800">GQ: As Per Govt Norms | MQ: &#8377;8,50,000</td>
-                </tr>
-                <tr className="hover:bg-[#FBFBEE] transition-colors">
-                  <td className="px-6 py-4 font-semibold text-gray-800">Conservative Dentistry and Endodontics</td>
+                  <td className="px-6 py-4 font-semibold text-gray-800">Oral Medicine</td>
                   <td className="px-6 py-4 text-center text-gray-800">3</td>
-                  <td className="px-6 py-4 text-right text-gray-800">GQ: As Per Govt Norms | MQ: &#8377;8,50,000</td>
-                </tr>
-                <tr className="hover:bg-[#FBFBEE] transition-colors">
-                  <td className="px-6 py-4 font-semibold text-gray-800">Oral Medicine and Radiology</td>
-                  <td className="px-6 py-4 text-center text-gray-800">3</td>
-                  <td className="px-6 py-4 text-right text-gray-800">GQ: As Per Govt Norms | MQ: &#8377;8,50,000</td>
+                  <td className="px-6 py-4 text-right text-gray-800">&#8377;2,50,000</td>
+                  <td className="px-6 py-4 text-right text-gray-800">&#8377;8,50,000</td>
                 </tr>
                 <tr className="bg-[#006837] text-white font-bold">
                   <td className="px-6 py-4">Total MDS Seats</td>
                   <td className="px-6 py-4 text-center">18</td>
                   <td className="px-6 py-4 text-right">—</td>
+                  <td className="px-6 py-4 text-right">—</td>
                 </tr>
               </tbody>
             </table>
+            <p className="text-xs text-gray-500 px-6 py-3">* Fees are per year. GQ = Government Quota &nbsp;|&nbsp; MQ = Management Quota</p>
           </div>
 
           {/* MDS Additional Components */}
@@ -479,83 +453,6 @@ export default function FeesStructure() {
                 </li>
               </ul>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Scholarships & Financial Aid */}
-      <section className="py-16 px-4 bg-[#FBFBEE]">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#006837] mb-8 text-center">
-            Scholarships & Financial Aid
-          </h2>
-
-          <div className="grid md:grid-cols-3 gap-6">
-            {/* Merit Scholarships */}
-            <div className="bg-white rounded-xl p-6 shadow-md">
-              <div className="w-12 h-12 bg-[#7cb983]/20 rounded-full flex items-center justify-center mb-4">
-                <svg className="w-6 h-6 text-[#006837]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
-                </svg>
-              </div>
-              <h3 className="text-lg font-bold text-gray-800 mb-2">Merit-Based Scholarships</h3>
-              <p className="text-sm text-gray-600">
-                Scholarships for students with excellent NEET scores and academic performance.
-              </p>
-            </div>
-
-            {/* Government Scholarships */}
-            <div className="bg-white rounded-xl p-6 shadow-md">
-              <div className="w-12 h-12 bg-[#7cb983]/20 rounded-full flex items-center justify-center mb-4">
-                <svg className="w-6 h-6 text-[#006837]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-                </svg>
-              </div>
-              <h3 className="text-lg font-bold text-gray-800 mb-2">Government Scholarships</h3>
-              <p className="text-sm text-gray-600">
-                SC/SCA/ST/BC-CC: PMSS (2.5L–6L/Yr), Maintainence (5K–10K/Yr). BC/MBC/DNC/BCM: First Graduate (40K/Yr), Community (5K–10K/Yr). All Community (Tamil Medium): Naan Phudulvan ₹1,000/month.
-              </p>
-            </div>
-
-            {/* Need-Based Aid */}
-            <div className="bg-white rounded-xl p-6 shadow-md">
-              <div className="w-12 h-12 bg-[#7cb983]/20 rounded-full flex items-center justify-center mb-4">
-                <svg className="w-6 h-6 text-[#006837]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </div>
-              <h3 className="text-lg font-bold text-gray-800 mb-2">Need-Based Financial Aid</h3>
-              <p className="text-sm text-gray-600">
-                Financial assistance for economically weaker sections. Contact admission office for details.
-              </p>
-            </div>
-          </div>
-
-          <div className="mt-8 text-center">
-            <Link href="/admissions/scholarship-policy-for-dental-college" className="inline-flex items-center gap-2 bg-[#006837] hover:bg-[#005028] text-white font-semibold px-8 py-3 rounded-lg transition-all duration-300">
-              View Scholarship Policy
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Fee Refund Policy */}
-      <section className="py-16 px-4 bg-white">
-        <div className="max-w-6xl mx-auto">
-          <div className="bg-gradient-to-r from-[#006837] to-[#002309] rounded-xl p-8 md:p-12 text-white">
-            <h2 className="text-2xl md:text-3xl font-bold mb-4">Fee Refund Policy</h2>
-            <p className="text-gray-200 mb-6">
-              In case of withdrawal, fee refund will be processed as per UGC and college refund policy guidelines.
-            </p>
-            <Link href="/admissions/fee-refund-policy" className="inline-flex items-center gap-2 bg-white text-[#006837] hover:bg-gray-100 font-semibold px-6 py-3 rounded-lg transition-all duration-300">
-              Read Full Refund Policy
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-              </svg>
-            </Link>
           </div>
         </div>
       </section>

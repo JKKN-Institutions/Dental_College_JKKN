@@ -45,7 +45,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${baseUrl}/gallery/`, lastModified: '2026-03-01', changeFrequency: 'monthly', priority: 0.7 },
     { url: `${baseUrl}/blog/`, lastModified: '2026-03-15', changeFrequency: 'weekly', priority: 0.7 },
     { url: `${baseUrl}/ai-dental-campus/`, lastModified: '2026-02-01', changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${baseUrl}/fees-structure/`, lastModified: '2026-03-01', changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${baseUrl}/fee-structure/`, lastModified: '2026-03-01', changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/placements/`, lastModified: '2026-03-26', changeFrequency: 'monthly', priority: 0.8 },
 
     // Academics — BDS & MDS (highest SEO value)
