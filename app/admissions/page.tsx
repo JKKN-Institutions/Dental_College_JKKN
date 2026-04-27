@@ -347,7 +347,7 @@ const admissionPages = [
   {
     title: 'Fee Structure',
     description: 'Complete fee breakdown for BDS & MDS programs including hostel and other charges.',
-    href: '/fees-structure/',
+    href: '/fee-structure/',
     icon: IndianRupee,
   },
   {

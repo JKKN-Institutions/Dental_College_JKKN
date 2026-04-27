@@ -31,490 +31,196 @@ export default function AcademicCouncil() {
     <>
       <StructuredData data={breadcrumbSchema} />
       <StructuredData data={speakableSchema} />
-    <main>
-      <Header />
+      <main className="overflow-x-hidden w-full">
+        <Header />
 
-      {/* Page Content */}
-      <div className="bg-[#FBF8F3] py-12 px-4">
-        <div className="max-w-6xl mx-auto">
-          {/* Main Heading */}
-          <h1 className="text-4xl md:text-5xl font-bold text-black mb-8">
-            ACADEMIC COUNCIL
-          </h1>
-
-          {/* Introduction */}
-          <div className="mb-8">
-            <p className="text-base leading-relaxed text-black">
-              The Academic Council plays a pivotal role in shaping and enhancing the academic framework of our dental college. Committed to excellence in education, the committee ensures that the curriculum remains dynamic, student-centred, and aligned with contemporary advancements in dental sciences.
-            </p>
+        {/* Hero Section */}
+        <div className="bg-[#006837] pt-16 overflow-hidden">
+          <div className="max-w-4xl mx-auto px-4 py-10 flex flex-col items-center gap-6">
+            <div className="flex items-center gap-4">
+              <div className="h-px w-16 sm:w-32 bg-[#7cb983] opacity-60" />
+              <div className="w-2 h-2 rounded-full bg-[#7cb983]" />
+              <div className="h-px w-16 sm:w-32 bg-[#7cb983] opacity-60" />
+            </div>
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white text-center tracking-wide">
+              ACADEMIC COUNCIL
+            </h1>
+            <div className="flex items-center gap-4">
+              <div className="h-px w-16 sm:w-32 bg-[#7cb983] opacity-60" />
+              <div className="w-2 h-2 rounded-full bg-[#7cb983]" />
+              <div className="h-px w-16 sm:w-32 bg-[#7cb983] opacity-60" />
+            </div>
           </div>
-
-          {/* Objectives */}
-          <h2 className="text-lg md:text-xl font-bold text-black mb-4">
-            Objectives:
-          </h2>
-          <div className="mb-8 space-y-2">
-            <p className="text-base text-black">
-              • To develop and periodically revise the curriculum in accordance with the guidelines of regulatory bodies such as the Dental Council of India (DCI).
-            </p>
-            <p className="text-base text-black">
-              • To integrate innovative teaching methodologies, including digital learning and hands on training, for a comprehensive learning experience.
-            </p>
-            <p className="text-base text-black">
-              • To promote interdisciplinary and evidence-based education, preparing students for modern dental practice.
-            </p>
-            <p className="text-base text-black">
-              • To encourage research, critical thinking, and problem-solving skills among students.
-            </p>
-            <p className="text-base text-black">
-              • To incorporate community-based learning initiatives to enhance social responsibility and patient-centred care.
-            </p>
-          </div>
-
-          {/* Functions */}
-          <h2 className="text-lg md:text-xl font-bold text-black mb-4">
-            Functions:
-          </h2>
-          <div className="mb-8 space-y-2">
-            <p className="text-base text-black">
-              • Regular assessment and updating of course content to maintain relevance with industry and academic advancements.
-            </p>
-            <p className="text-base text-black">
-              • Organizing faculty development programs and workshops to improve teaching effectiveness.
-            </p>
-            <p className="text-base text-black">
-              • Facilitating collaborations with healthcare institutions and research organizations for academic enrichment.
-            </p>
-            <p className="text-base text-black">
-              • Monitoring and evaluating student feedback to enhance the teaching- learning experience.
-            </p>
-            <p className="text-base text-black">
-              • Ensuring adherence to accreditation and quality assurance standards.
-            </p>
-          </div>
-
-          {/* Concluding Statement */}
-          <div className="mb-12">
-            <p className="text-base leading-relaxed text-black">
-              The Academic Council remains dedicated to fostering an engaging and progressive academic environment that equips future dental professionals with the knowledge, skills, and ethical values necessary for excellence in patient care.
-            </p>
-          </div>
-
-          {/* Table */}
-          <div className="overflow-x-auto mb-12">
-            <table className="w-full border-collapse bg-white">
-              <thead>
-                <tr className="bg-gray-100">
-                  <th className="border border-gray-300 px-4 py-3 text-left text-sm md:text-base font-bold text-gray-600">
-                    S.No
-                  </th>
-                  <th className="border border-gray-300 px-4 py-3 text-left text-sm md:text-base font-bold text-gray-600">
-                    Faculty Name
-                  </th>
-                  <th className="border border-gray-300 px-4 py-3 text-left text-sm md:text-base font-bold text-gray-600">
-                    Designation
-                  </th>
-                  <th className="border border-gray-300 px-4 py-3 text-left text-sm md:text-base font-bold text-gray-600">
-                    Role
-                  </th>
-                  <th className="border border-gray-300 px-4 py-3 text-left text-sm md:text-base font-bold text-gray-600">
-                    Contact Number
-                  </th>
-                  <th className="border border-gray-300 px-4 py-3 text-left text-sm md:text-base font-bold text-gray-600">
-                    E-Mail Id
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-700">
-                    1.
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    Dr. Dhanasekar B
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    Principal
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    Chairperson
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    9742444184
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    dentalprincipl@jkkn.ac.in
-                  </td>
-                </tr>
-                <tr>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-700">
-                    2.
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    Dr. M. Rekha
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    Head Of The Department
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    Member Secretary
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    9965754937
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    hodoralsurgery@jkkn.ac.in
-                  </td>
-                </tr>
-                <tr>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-700">
-                    3.
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    Dr. J. V. Karunakaran
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    Head Of The Department
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    Member
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    9840215137
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    jvkarunak58@jkkn.ac.in
-                  </td>
-                </tr>
-                <tr>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-700">
-                    4.
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    Dr. Ramya
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    Head Of The Department
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    Member
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    9003795490
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    hodorthodontics@jkkn.ac.in
-                  </td>
-                </tr>
-                <tr>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-700">
-                    5.
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    Dr. T.Dineshkumar
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    Head Of The Department
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    Member
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    8610365007
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    hodoralpathology@jkkn.ac.in
-                  </td>
-                </tr>
-                <tr>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-700">
-                    6.
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    Dr. C. DhineshKumar
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    Head Of The Department
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    Member
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    9443236200
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    hodprosthodontics@jkkn.ac.in
-                  </td>
-                </tr>
-                <tr>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-700">
-                    7.
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    Dr. P.K. SasiKumar
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    Head Of The Department
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    Member
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    9865289991
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    hodperiodontics@jkkn.ac.in
-                  </td>
-                </tr>
-                <tr>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-700">
-                    8.
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    Dr. B. Sasirekha
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    Head Of The Department
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    Member
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    9500606824
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    hodoralmedicine@jkkn.ac.in
-                  </td>
-                </tr>
-                <tr>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-700">
-                    9.
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    Dr. Nandhini
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    Head Of The Department
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    Member
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    9677750616
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    hodpedodontics@jkkn.ac.in
-                  </td>
-                </tr>
-                <tr>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-700">
-                    10.
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    Dr.Nazer
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    Head Of The Department
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    Member
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    9443552172
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    nazer@jkkn.ac.in
-                  </td>
-                </tr>
-                <tr>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-700">
-                    11.
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    Dr.Dhanabalan
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    Controller Of Examinations
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    Member
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    9488826921
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    dhanabalan.s@jkkn.ac.in
-                  </td>
-                </tr>
-                <tr>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-700">
-                    12.
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    Dr. Shivakumar
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    Principal - JKKN Engineering College
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    Expert/Academician
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    9842710606
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    principaljkncet@jkkn.ac.in
-                  </td>
-                </tr>
-                <tr>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-700">
-                    13.
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    Mr. Senthil
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    Principal -JKKN Pharmacy College
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    Expert/Academician
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    9842650602
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    pharmacyprincipal@jkkn.ac.in
-                  </td>
-                </tr>
-                <tr>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-700">
-                    14.
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    Mrs. Gowri B
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    Vice Principal – Sre Sakthimaeyil College Of Nursing
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    Expert/Academician
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    9894302206
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    hodmedicalsurgical@jkkn.ac.in
-                  </td>
-                </tr>
-                <tr>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-700">
-                    15.
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    Poonguzhali
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    Vice Principal –JKKN College Of Arts And Science
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    Expert/Academician
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    9500882792
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    viceprincipalcas@jkkn.ac.in
-                  </td>
-                </tr>
-                <tr>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-700">
-                    16.
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    Dr Vinod Thangasamy
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    Professor
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    Member
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    9791642614
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    vinodthangaswamy@jkkn.ac.in
-                  </td>
-                </tr>
-                <tr>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-700">
-                    17.
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    Dr.Sai Sadan
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    Professor
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    Member
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    9842796493
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    saisadan.d@jkkn.ac.in
-                  </td>
-                </tr>
-                <tr>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-700">
-                    18.
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    Dr.Jayaprakash
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    Professor
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    Member
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    9790235535
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    jayaprakash@jkkn.ac.in
-                  </td>
-                </tr>
-                <tr>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-700">
-                    19.
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    Dr. Vignesh Kumar
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    Professor
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    Member
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    9842325551
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-sm md:text-base text-gray-600">
-                    drvigneshkumar@jkkn.ac.in
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+          <div className="overflow-hidden leading-none">
+            <svg
+              viewBox="0 0 1440 60"
+              preserveAspectRatio="none"
+              className="w-full h-12 md:h-16 block"
+              fill="#FBFBEE"
+            >
+              <path d="M0,30 C480,0 960,60 1440,30 L1440,60 L0,60 Z" />
+            </svg>
           </div>
         </div>
-      </div>
 
-      <Footer />
-      <FloatingWhatsApp />
-    </main>
+        {/* Introduction */}
+        <section className="bg-[#FBFBEE] pt-2 pb-8 px-4 sm:px-6 lg:px-8">
+          <div className="max-w-5xl mx-auto">
+            <div className="bg-white rounded-2xl shadow-md overflow-hidden border border-gray-100">
+              <div className="h-1.5 bg-gradient-to-r from-[#006837] to-[#7cb983]" />
+              <div className="p-8">
+                <p className="text-base leading-relaxed text-gray-700 text-justify">
+                  The Academic Council plays a pivotal role in shaping and enhancing the academic framework of our dental college. Committed to excellence in education, the committee ensures that the curriculum remains dynamic, student-centred, and aligned with contemporary advancements in dental sciences.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Objectives & Functions */}
+        <section className="bg-[#FBFBEE] pb-8 px-4 sm:px-6 lg:px-8">
+          <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-6">
+
+            {/* Objectives */}
+            <div className="bg-white rounded-2xl shadow-md overflow-hidden border border-gray-100">
+              <div className="h-1.5 bg-gradient-to-r from-[#006837] to-[#7cb983]" />
+              <div className="p-8">
+                <div className="flex items-center gap-2 mb-5">
+                  <div className="w-1 h-8 bg-[#006837] rounded-full" />
+                  <div className="w-1 h-5 bg-[#7cb983] rounded-full" />
+                  <h2 className="text-lg md:text-xl font-bold text-[#006837] ml-2">
+                    Objectives
+                  </h2>
+                </div>
+                <div className="space-y-3">
+                  {[
+                    'To develop and periodically revise the curriculum in accordance with the guidelines of regulatory bodies such as the Dental Council of India (DCI).',
+                    'To integrate innovative teaching methodologies, including digital learning and hands on training, for a comprehensive learning experience.',
+                    'To promote interdisciplinary and evidence-based education, preparing students for modern dental practice.',
+                    'To encourage research, critical thinking, and problem-solving skills among students.',
+                    'To incorporate community-based learning initiatives to enhance social responsibility and patient-centred care.',
+                  ].map((item) => (
+                    <div key={item} className="flex items-start gap-3 bg-[#FBFBEE] rounded-lg px-4 py-3">
+                      <span className="text-[#006837] font-bold flex-shrink-0 mt-0.5">•</span>
+                      <p className="text-sm sm:text-base text-gray-700">{item}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {/* Functions */}
+            <div className="bg-white rounded-2xl shadow-md overflow-hidden border border-gray-100">
+              <div className="h-1.5 bg-gradient-to-r from-[#006837] to-[#7cb983]" />
+              <div className="p-8">
+                <div className="flex items-center gap-2 mb-5">
+                  <div className="w-1 h-8 bg-[#006837] rounded-full" />
+                  <div className="w-1 h-5 bg-[#7cb983] rounded-full" />
+                  <h2 className="text-lg md:text-xl font-bold text-[#006837] ml-2">
+                    Functions
+                  </h2>
+                </div>
+                <div className="space-y-3">
+                  {[
+                    'Regular assessment and updating of course content to maintain relevance with industry and academic advancements.',
+                    'Organizing faculty development programs and workshops to improve teaching effectiveness.',
+                    'Facilitating collaborations with healthcare institutions and research organizations for academic enrichment.',
+                    'Monitoring and evaluating student feedback to enhance the teaching- learning experience.',
+                    'Ensuring adherence to accreditation and quality assurance standards.',
+                  ].map((item) => (
+                    <div key={item} className="flex items-start gap-3 bg-[#FBFBEE] rounded-lg px-4 py-3">
+                      <span className="text-[#006837] font-bold flex-shrink-0 mt-0.5">•</span>
+                      <p className="text-sm sm:text-base text-gray-700">{item}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        {/* Concluding Statement */}
+        <section className="bg-[#FBFBEE] pb-8 px-4 sm:px-6 lg:px-8">
+          <div className="max-w-5xl mx-auto">
+            <div className="bg-white rounded-2xl shadow-md overflow-hidden border border-gray-100">
+              <div className="h-1.5 bg-gradient-to-r from-[#006837] to-[#7cb983]" />
+              <div className="p-8">
+                <p className="text-base leading-relaxed text-gray-700 text-justify">
+                  The Academic Council remains dedicated to fostering an engaging and progressive academic environment that equips future dental professionals with the knowledge, skills, and ethical values necessary for excellence in patient care.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Members Table */}
+        <section className="bg-[#FBFBEE] pb-20 px-4 sm:px-6 lg:px-8">
+          <div className="max-w-5xl mx-auto">
+            <div className="bg-white rounded-2xl shadow-md overflow-hidden border border-gray-100">
+              <div className="h-1.5 bg-gradient-to-r from-[#006837] to-[#7cb983]" />
+              <div className="p-8">
+                <div className="flex items-center gap-2 mb-6">
+                  <div className="w-1 h-8 bg-[#006837] rounded-full" />
+                  <div className="w-1 h-5 bg-[#7cb983] rounded-full" />
+                  <h3 className="text-lg md:text-xl font-bold text-[#006837] ml-2">
+                    Council Members
+                  </h3>
+                </div>
+                <div className="overflow-x-auto">
+                  <table className="w-full border-collapse min-w-[700px]">
+                    <thead>
+                      <tr className="bg-[#006837]">
+                        <th className="px-4 py-3 text-left text-xs sm:text-sm font-bold text-white whitespace-nowrap">S.No</th>
+                        <th className="px-4 py-3 text-left text-xs sm:text-sm font-bold text-white">Faculty Name</th>
+                        <th className="px-4 py-3 text-left text-xs sm:text-sm font-bold text-white">Designation</th>
+                        <th className="px-4 py-3 text-left text-xs sm:text-sm font-bold text-white">Role</th>
+                        <th className="px-4 py-3 text-left text-xs sm:text-sm font-bold text-white whitespace-nowrap">Contact Number</th>
+                        <th className="px-4 py-3 text-left text-xs sm:text-sm font-bold text-white">E-Mail Id</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {[
+                        { no: '1.', name: 'Dr. Dhanasekar B', designation: 'Principal', role: 'Chairperson', contact: '9742444184', email: 'dentalprincipl@jkkn.ac.in' },
+                        { no: '2.', name: 'Dr. M. Rekha', designation: 'Head Of The Department', role: 'Member Secretary', contact: '9965754937', email: 'hodoralsurgery@jkkn.ac.in' },
+                        { no: '3.', name: 'Dr. J. V. Karunakaran', designation: 'Head Of The Department', role: 'Member', contact: '9840215137', email: 'jvkarunak58@jkkn.ac.in' },
+                        { no: '4.', name: 'Dr. Ramya', designation: 'Head Of The Department', role: 'Member', contact: '9003795490', email: 'hodorthodontics@jkkn.ac.in' },
+                        { no: '5.', name: 'Dr. T.Dineshkumar', designation: 'Head Of The Department', role: 'Member', contact: '8610365007', email: 'hodoralpathology@jkkn.ac.in' },
+                        { no: '6.', name: 'Dr. C. DhineshKumar', designation: 'Head Of The Department', role: 'Member', contact: '9443236200', email: 'hodprosthodontics@jkkn.ac.in' },
+                        { no: '7.', name: 'Dr. P.K. SasiKumar', designation: 'Head Of The Department', role: 'Member', contact: '9865289991', email: 'hodperiodontics@jkkn.ac.in' },
+                        { no: '8.', name: 'Dr. B. Sasirekha', designation: 'Head Of The Department', role: 'Member', contact: '9500606824', email: 'hodoralmedicine@jkkn.ac.in' },
+                        { no: '9.', name: 'Dr. Nandhini', designation: 'Head Of The Department', role: 'Member', contact: '9677750616', email: 'hodpedodontics@jkkn.ac.in' },
+                        { no: '10.', name: 'Dr.Nazer', designation: 'Head Of The Department', role: 'Member', contact: '9443552172', email: 'nazer@jkkn.ac.in' },
+                        { no: '11.', name: 'Dr.Dhanabalan', designation: 'Controller Of Examinations', role: 'Member', contact: '9488826921', email: 'dhanabalan.s@jkkn.ac.in' },
+                        { no: '12.', name: 'Dr. Shivakumar', designation: 'Principal - JKKN Engineering College', role: 'Expert/Academician', contact: '9842710606', email: 'principaljkncet@jkkn.ac.in' },
+                        { no: '13.', name: 'Mr. Senthil', designation: 'Principal -JKKN Pharmacy College', role: 'Expert/Academician', contact: '9842650602', email: 'pharmacyprincipal@jkkn.ac.in' },
+                        { no: '14.', name: 'Mrs. Gowri B', designation: 'Vice Principal – Sre Sakthimaeyil College Of Nursing', role: 'Expert/Academician', contact: '9894302206', email: 'hodmedicalsurgical@jkkn.ac.in' },
+                        { no: '15.', name: 'Poonguzhali', designation: 'Vice Principal –JKKN College Of Arts And Science', role: 'Expert/Academician', contact: '9500882792', email: 'viceprincipalcas@jkkn.ac.in' },
+                        { no: '16.', name: 'Dr Vinod Thangasamy', designation: 'Professor', role: 'Member', contact: '9791642614', email: 'vinodthangaswamy@jkkn.ac.in' },
+                        { no: '17.', name: 'Dr.Sai Sadan', designation: 'Professor', role: 'Member', contact: '9842796493', email: 'saisadan.d@jkkn.ac.in' },
+                        { no: '18.', name: 'Dr.Jayaprakash', designation: 'Professor', role: 'Member', contact: '9790235535', email: 'jayaprakash@jkkn.ac.in' },
+                        { no: '19.', name: 'Dr. Vignesh Kumar', designation: 'Professor', role: 'Member', contact: '9842325551', email: 'drvigneshkumar@jkkn.ac.in' },
+                      ].map((row, i) => (
+                        <tr key={row.no} className={i % 2 === 0 ? 'bg-white' : 'bg-[#FBFBEE]'}>
+                          <td className="px-4 py-3 text-xs sm:text-sm text-gray-700 border-b border-gray-100">{row.no}</td>
+                          <td className="px-4 py-3 text-xs sm:text-sm text-gray-600 border-b border-gray-100">{row.name}</td>
+                          <td className="px-4 py-3 text-xs sm:text-sm text-gray-600 border-b border-gray-100">{row.designation}</td>
+                          <td className="px-4 py-3 text-xs sm:text-sm text-gray-600 border-b border-gray-100">{row.role}</td>
+                          <td className="px-4 py-3 text-xs sm:text-sm text-gray-600 border-b border-gray-100">{row.contact}</td>
+                          <td className="px-4 py-3 text-xs sm:text-sm text-gray-600 border-b border-gray-100">{row.email}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <Footer />
+        <FloatingWhatsApp />
+      </main>
     </>
   );
 }

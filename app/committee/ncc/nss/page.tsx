@@ -40,47 +40,48 @@ export default function NCCNSSPage() {
       <StructuredData data={speakableSchema} />
       <Header />
 
-      {/* Page Content */}
-      <div className="bg-[#FBF8F3] py-12 px-4">
+      {/* Hero Banner */}
+      <section className="bg-gradient-to-br from-[#006837] via-[#00572e] to-[#003d20] py-16 px-4">
         <div className="max-w-6xl mx-auto">
-
-          {/* Page Title */}
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-8">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
             NCC/NSS
           </h1>
-
-          {/* College Name */}
-          <h2 className="text-lg md:text-xl font-bold text-black mb-4">
-            JKKN DENTAL COLLEGE & HOSPITAL
+          <h2 className="text-lg md:text-xl font-semibold text-green-200">
+            JKKN DENTAL COLLEGE &amp; HOSPITAL
           </h2>
+        </div>
+      </section>
 
-          {/* National Service Scheme */}
-          <h3 className="text-base md:text-lg font-bold text-black mb-4">
+      {/* National Service Scheme */}
+      <section className="bg-[#FBFBEE] py-14 px-4">
+        <div className="max-w-6xl mx-auto">
+          <h3 className="text-xl md:text-2xl font-bold text-[#006837] mb-6">
             NATIONAL SERVICE SCHEME
           </h3>
+          <div className="bg-white rounded-xl p-6 shadow-sm border border-green-100 border-l-4 border-l-[#7cb983]">
+            <p className="text-gray-700 text-base font-semibold leading-relaxed">
+              NSS COORDINATOR: DR NS NAVEENRAJ, MDS
+            </p>
+          </div>
+        </div>
+      </section>
 
-          {/* Coordinator */}
-          <p className="text-base text-black mb-4 leading-relaxed">
-            NSS COORDINATOR: DR NS NAVEENRAJ, MDS
-          </p>
-
-          {/* Self Financing Unit */}
-          <h3 className="text-base md:text-lg font-bold text-black mb-4">
+      {/* Self Financing Unit */}
+      <section className="bg-white py-14 px-4">
+        <div className="max-w-6xl mx-auto">
+          <h3 className="text-xl md:text-2xl font-bold text-[#006837] mb-6">
             SELF FINANCING UNIT
           </h3>
-
-          {/* NSS Title */}
-          <p className="text-base text-black mb-4 leading-relaxed">
-            National Service Scheme (NSS) at JKKN Dental College & Hospital
-          </p>
-
-          {/* Description Paragraph */}
-          <p className="text-base text-black mb-8 leading-relaxed text-justify">
-            The National Service Scheme (NSS) unit of JKKN Dental College is committed to instilling a sense of social responsibility and community service among students. Through various outreach programs, awareness campaigns, and health initiatives, our NSS volunteers actively engage in serving underprivileged communities. Emphasizing the importance of public health and social welfare, the unit conducts dental screening camps, oral health awareness drives, Swachh Bharat initiatives, and environmental sustainability projects. By fostering teamwork and leadership, the NSS unit plays a vital role in shaping socially responsible dental professionals dedicated to holistic community development.
-          </p>
-
+          <div className="bg-[#FBFBEE] rounded-xl p-8 shadow-sm border border-green-100 border-l-4 border-l-[#7cb983] space-y-5">
+            <p className="text-gray-700 text-base font-semibold leading-relaxed">
+              National Service Scheme (NSS) at JKKN Dental College &amp; Hospital
+            </p>
+            <p className="hero-description text-gray-700 text-base leading-relaxed text-justify">
+              The National Service Scheme (NSS) unit of JKKN Dental College is committed to instilling a sense of social responsibility and community service among students. Through various outreach programs, awareness campaigns, and health initiatives, our NSS volunteers actively engage in serving underprivileged communities. Emphasizing the importance of public health and social welfare, the unit conducts dental screening camps, oral health awareness drives, Swachh Bharat initiatives, and environmental sustainability projects. By fostering teamwork and leadership, the NSS unit plays a vital role in shaping socially responsible dental professionals dedicated to holistic community development.
+            </p>
+          </div>
         </div>
-      </div>
+      </section>
 
       <Footer />
       <FloatingWhatsApp />

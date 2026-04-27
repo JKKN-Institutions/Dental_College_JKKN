@@ -65,6 +65,16 @@ export const metadata: Metadata = {
   },
 };
 
+const programs = [
+  'Soft skill development',
+  'Language and communication skill development',
+  'Yoga and wellness',
+  'Analytical skill development',
+  'Human value development',
+  'Personality and professional development',
+  'Employability skill development',
+];
+
 export default function CapabilityEnhancementProgram() {
   const breadcrumbSchema = generateBreadcrumbSchema('/academics/capability-enhancement-program/');
   const speakableSchema = generateSpeakableWebPageSchema({
@@ -75,56 +85,49 @@ export default function CapabilityEnhancementProgram() {
   });
 
   return (
-    <main>
+    <main className="overflow-x-hidden w-full">
       <StructuredData data={breadcrumbSchema} />
       <StructuredData data={speakableSchema} />
       <StructuredData data={faqSchema} />
       <Header />
 
-      {/* Page Content */}
-      <div className="bg-[#FBF8F3] py-12 px-4">
-        <div className="max-w-6xl mx-auto">
-
+      {/* Hero Banner */}
+      <section className="bg-[#006837] py-16 px-4">
+        <div className="max-w-5xl mx-auto">
           {/* Breadcrumb */}
-          <div className="mb-6 text-sm text-gray-600">
+          <div className="mb-6 text-sm text-white/60 flex items-center gap-2">
             <span>Home</span>
-            <span className="mx-2">›</span>
-            <span>Capability enhancement Program</span>
+            <span>›</span>
+            <span className="text-white/90">Capability enhancement Program</span>
           </div>
 
-          {/* Page Title */}
-          <h1 className="text-4xl md:text-5xl font-bold text-black mb-8">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-5 tracking-wide">
             Capability enhancement Program
           </h1>
-
-          {/* Description */}
-          <p className="text-base text-black mb-6">
+          <div className="w-20 h-1 bg-[#7cb983] mb-6 rounded-full" />
+          <p className="hero-description text-white/85 text-base md:text-lg leading-relaxed max-w-3xl">
             1.2 Capability enhancement and development schemes employed by the Institution for students:
           </p>
+        </div>
+      </section>
 
-          {/* List of Programs */}
-          <div className="mb-8">
-            <p className="text-base text-gray-700 font-semibold mb-3">
-              1. Soft skill development
-            </p>
-            <p className="text-base text-gray-700 font-semibold mb-3">
-              2. Language and communication skill development
-            </p>
-            <p className="text-base text-gray-700 font-semibold mb-3">
-              3. Yoga and wellness
-            </p>
-            <p className="text-base text-gray-700 font-semibold mb-3">
-              4. Analytical skill development
-            </p>
-            <p className="text-base text-gray-700 font-semibold mb-3">
-              5. Human value development
-            </p>
-            <p className="text-base text-gray-700 font-semibold mb-3">
-              6. Personality and professional development
-            </p>
-            <p className="text-base text-gray-700 font-semibold mb-8">
-              7. Employability skill development
-            </p>
+      {/* Programs Grid */}
+      <section className="bg-[#FBFBEE] py-16 px-4">
+        <div className="max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-12">
+            {programs.map((program, index) => (
+              <div
+                key={index}
+                className="bg-white rounded-2xl shadow-sm border border-gray-100 p-5 flex items-center gap-4 hover:shadow-md hover:border-[#7cb983]/40 transition-all duration-200"
+              >
+                <div className="flex-shrink-0 w-11 h-11 rounded-full bg-[#006837] text-white flex items-center justify-center font-bold text-base leading-none">
+                  {index + 1}
+                </div>
+                <p className="text-[#002309] font-semibold text-sm md:text-base leading-snug">
+                  {program}
+                </p>
+              </div>
+            ))}
           </div>
 
           {/* Buttons */}
@@ -133,7 +136,7 @@ export default function CapabilityEnhancementProgram() {
               href="/pdf/Capability-Enhancement-Program-ViewDocument.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-gray-200 hover:bg-gray-300 text-gray-700 font-semibold py-3 px-6 rounded transition-colors duration-200"
+              className="inline-block bg-[#006837] hover:bg-[#005a2f] text-white font-semibold py-3 px-12 rounded-xl transition-colors duration-200 shadow-sm"
             >
               View Document
             </a>
@@ -141,14 +144,13 @@ export default function CapabilityEnhancementProgram() {
               href="/pdf/Capability-Enhancement-Program-NeetQualifiers.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-gray-200 hover:bg-gray-300 text-gray-700 font-semibold py-3 px-6 rounded transition-colors duration-200"
+              className="inline-block bg-white hover:bg-[#FBFBEE] text-[#006837] font-semibold py-3 px-12 rounded-xl border-2 border-[#006837] transition-colors duration-200"
             >
               Neet Qualifiers
             </a>
           </div>
-
         </div>
-      </div>
+      </section>
 
       <Footer />
       <FloatingWhatsApp />

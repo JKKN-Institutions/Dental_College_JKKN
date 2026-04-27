@@ -5,6 +5,7 @@ import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import Image from 'next/image';
 import StructuredData from '@/components/StructuredData';
 import { generateBreadcrumbSchema, generateWebPageSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
+import { Monitor, Wind, Wifi, Wrench, ShieldCheck } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Seminar Hall - Conference Facility at JKKN Dental College',
@@ -18,6 +19,34 @@ export const metadata: Metadata = {
     siteName: 'JKKN Dental College & Hospital',
   },
 };
+
+const features = [
+  {
+    icon: Monitor,
+    label: 'High-Tech Infrastructure:',
+    description: 'The hall includes top-notch audio-visual equipment and a dedicated stage, perfect for any presentation.',
+  },
+  {
+    icon: Wind,
+    label: 'Comfort:',
+    description: 'Air-conditioned and designed with ergonomic seating to ensure a relaxed atmosphere for attendees.',
+  },
+  {
+    icon: Wifi,
+    label: 'Connectivity:',
+    description: 'High-speed Wi-Fi supports seamless digital engagement during events.',
+  },
+  {
+    icon: Wrench,
+    label: 'Expert Support:',
+    description: 'Our skilled technicians are readily available to ensure smooth event execution.',
+  },
+  {
+    icon: ShieldCheck,
+    label: 'Safety & Hygiene:',
+    description: 'Maintaining strict standards, we prioritize the well-being of each participant.',
+  },
+];
 
 export default function SeminarHall() {
   const breadcrumbSchema = generateBreadcrumbSchema('/facilities/seminar-hall');
@@ -41,88 +70,87 @@ export default function SeminarHall() {
       <StructuredData data={speakableSchema} />
       <Header />
 
-      {/* Page Content */}
-      <div className="bg-[#FBF8F3] py-12 px-4">
+      {/* Hero Banner */}
+      <section className="bg-[#006837] py-16 px-4">
         <div className="max-w-6xl mx-auto">
-          {/* Main Heading */}
-          <h1 className="text-4xl md:text-5xl font-bold text-[#1B5E20] mb-8">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
             Seminar Hall
           </h1>
+          <div className="h-1 w-24 bg-[#7cb983] rounded-full" />
+        </div>
+      </section>
 
-          {/* Image Gallery - 3 Images */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-            {/* Image 1 */}
-            <div className="w-full h-[280px] md:h-[320px] bg-gray-200 rounded-lg overflow-hidden">
+      {/* Image Gallery */}
+      <section className="bg-white py-12 px-4">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+            <div className="relative h-[280px] md:h-[320px] rounded-2xl overflow-hidden shadow-lg group">
               <Image
                 src="/images/seminar-hall-1.png"
                 alt="Seminar hall with audience"
-                width={400}
-                height={320}
-                className="w-full h-full object-cover"
+                fill
+                className="object-cover group-hover:scale-105 transition-transform duration-500"
               />
             </div>
-
-            {/* Image 2 */}
-            <div className="w-full h-[280px] md:h-[320px] bg-gray-200 rounded-lg overflow-hidden">
+            <div className="relative h-[280px] md:h-[320px] rounded-2xl overflow-hidden shadow-lg group">
               <Image
                 src="/images/seminar-hall-2.png"
                 alt="JKKN Dental College seminar hall interior with ergonomic seating and AV equipment"
-                width={400}
-                height={320}
-                className="w-full h-full object-cover"
+                fill
+                className="object-cover group-hover:scale-105 transition-transform duration-500"
               />
             </div>
-
-            {/* Image 3 */}
-            <div className="w-full h-[280px] md:h-[320px] bg-gray-200 rounded-lg overflow-hidden">
+            <div className="relative h-[280px] md:h-[320px] rounded-2xl overflow-hidden shadow-lg group">
               <Image
                 src="/images/seminar-hall-3.png"
                 alt="JKKN Dental College air-conditioned seminar hall set up for academic workshop"
-                width={400}
-                height={320}
-                className="w-full h-full object-cover"
+                fill
+                className="object-cover group-hover:scale-105 transition-transform duration-500"
               />
             </div>
           </div>
+        </div>
+      </section>
 
-          {/* Introduction Paragraph */}
-          <p className="text-base leading-relaxed text-gray-700 mb-8">
+      {/* Intro Paragraph */}
+      <section className="bg-[#FBFBEE] py-10 px-4">
+        <div className="max-w-6xl mx-auto">
+          <p className="text-base md:text-lg leading-relaxed text-gray-700 border-l-4 border-[#7cb983] pl-6">
             <strong>Our Seminar Hall is designed as an inviting environment equipped for both learning and networking. We blend modern technology with thoughtful amenities to make every event a success.</strong>
           </p>
+        </div>
+      </section>
 
-          {/* Features Section */}
-          <div className="mb-8">
-            <h2 className="text-xl md:text-2xl font-bold text-black mb-6">
-              Features:
-            </h2>
-
-            <div className="space-y-4 text-base text-gray-700">
-              <p>
-                <strong>High-Tech Infrastructure:</strong> The hall includes top-notch audio-visual equipment and a dedicated stage, perfect for any presentation.
-              </p>
-              <p>
-                <strong>Comfort:</strong> Air-conditioned and designed with ergonomic seating to ensure a relaxed atmosphere for attendees.
-              </p>
-              <p>
-                <strong>Connectivity:</strong> High-speed Wi-Fi supports seamless digital engagement during events.
-              </p>
-              <p>
-                <strong>Expert Support:</strong> Our skilled technicians are readily available to ensure smooth event execution.
-              </p>
-              <p>
-                <strong>Safety & Hygiene:</strong> Maintaining strict standards, we prioritize the well-being of each participant.
-              </p>
-            </div>
-          </div>
-
-          {/* Final Statement */}
-          <div className="mb-12">
-            <p className="text-base leading-relaxed text-gray-700">
-              <strong>JKKN Institutions takes pride in offering a Seminar Hall that combines functionality, comfort, and cutting-edge technology to create an enriching experience for all.</strong>
-            </p>
+      {/* Features Section */}
+      <section className="bg-white py-16 px-4">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-xl md:text-2xl font-bold text-[#006837] mb-8">Features:</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {features.map(({ icon: Icon, label, description }) => (
+              <div
+                key={label}
+                className="bg-[#FBFBEE] rounded-2xl p-6 border border-[#7cb983]/20 hover:shadow-md transition-shadow duration-300 flex flex-col gap-4"
+              >
+                <div className="w-12 h-12 rounded-full bg-[#006837] flex items-center justify-center flex-shrink-0">
+                  <Icon className="text-white w-6 h-6" />
+                </div>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  <strong>{label}</strong> {description}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
-      </div>
+      </section>
+
+      {/* Closing Statement */}
+      <section className="bg-[#006837] py-12 px-4">
+        <div className="max-w-4xl mx-auto text-center">
+          <p className="text-white text-base md:text-lg leading-relaxed">
+            <strong>JKKN Institutions takes pride in offering a Seminar Hall that combines functionality, comfort, and cutting-edge technology to create an enriching experience for all.</strong>
+          </p>
+        </div>
+      </section>
 
       <Footer />
       <FloatingWhatsApp />

@@ -47,7 +47,7 @@ const faqSchema = generateFAQSchema([
   },
   {
     question: 'What is the BDS fee structure at JKKN Dental College?',
-    answer: 'Fee structure details are available on the fees structure page at dental.jkkn.ac.in/fees-structure/ or by contacting the admissions office at +91 93458 55001.',
+    answer: 'Fee structure details are available on the fees structure page at dental.jkkn.ac.in/fee-structure/ or by contacting the admissions office at +91 93458 55001.',
   },
   {
     question: 'How does MDS admission work at JKKN Dental College?',

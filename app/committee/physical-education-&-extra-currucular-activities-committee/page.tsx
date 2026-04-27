@@ -4,6 +4,7 @@ import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import StructuredData from '@/components/StructuredData';
 import { generateBreadcrumbSchema, generateWebPageSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
+import { User } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Physical Education & Extracurricular Activities | JKKN',
@@ -40,37 +41,37 @@ export default function PhysicalEducationExtraCurricularCommittee() {
       <StructuredData data={speakableSchema} />
       <Header />
 
-      {/* Page Content */}
-      <div className="bg-[#FBF8F3] py-12 px-4">
+      {/* Hero Banner */}
+      <section className="bg-gradient-to-br from-[#006837] via-[#00572e] to-[#003d20] py-16 px-4">
         <div className="max-w-6xl mx-auto">
-
-          {/* Page Title */}
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-8">
-            PHYSICAL EDUCATION & EXTRA CURRUCULAR ACTIVITIES COMMITTEE
+          <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white">
+            PHYSICAL EDUCATION &amp; EXTRA CURRUCULAR ACTIVITIES COMMITTEE
           </h1>
-
-          {/* Committee Members List */}
-          <p className="text-base text-black mb-3 leading-relaxed">
-            I . Convener – Principal.Prof.Dr.Dhanasekar B
-          </p>
-          <p className="text-base text-black mb-3 leading-relaxed">
-            2.Mr.Rozario Cyril- (Chair)
-          </p>
-          <p className="text-base text-black mb-3 leading-relaxed">
-            3.Dr.Vijay Thiyagarajan- (Member Secretary)
-          </p>
-          <p className="text-base text-black mb-3 leading-relaxed">
-            4.Dr.AnuPriya
-          </p>
-          <p className="text-base text-black mb-3 leading-relaxed">
-            5.Prof.Dr.B.Sasi Rekha
-          </p>
-          <p className="text-base text-black mb-12 leading-relaxed">
-            6.Dr.Sasi Kumar
-          </p>
-
         </div>
-      </div>
+      </section>
+
+      {/* Committee Members */}
+      <section className="bg-[#FBFBEE] py-14 px-4">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            {[
+              'I . Convener – Principal.Prof.Dr.Dhanasekar B',
+              '2.Mr.Rozario Cyril- (Chair)',
+              '3.Dr.Vijay Thiyagarajan- (Member Secretary)',
+              '4.Dr.AnuPriya',
+              '5.Prof.Dr.B.Sasi Rekha',
+              '6.Dr.Sasi Kumar',
+            ].map((member) => (
+              <div key={member} className="bg-white rounded-xl p-6 shadow-sm border border-green-100 flex items-start gap-4">
+                <div className="w-10 h-10 bg-[#e8f5e9] rounded-lg flex items-center justify-center flex-shrink-0">
+                  <User className="w-5 h-5 text-[#006837]" />
+                </div>
+                <p className="text-[#002309] font-bold text-sm leading-relaxed">{member}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
       <Footer />
       <FloatingWhatsApp />

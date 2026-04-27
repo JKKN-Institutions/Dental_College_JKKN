@@ -5,6 +5,7 @@ import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import Image from 'next/image';
 import StructuredData from '@/components/StructuredData';
 import { generateBreadcrumbSchema, generateWebPageSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
+import { Landmark, Mail } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Bank & Post Office | JKKN Dental Campus',
@@ -41,94 +42,119 @@ export default function BankPostOffice() {
       <StructuredData data={speakableSchema} />
       <Header />
 
-      {/* Page Content */}
-      <div className="bg-[#FBF8F3] py-12 px-4">
+      {/* Hero Banner */}
+      <section className="bg-[#006837] py-16 px-4">
         <div className="max-w-6xl mx-auto">
-          {/* Main Heading */}
-          <h1 className="text-4xl md:text-5xl font-bold text-[#1B5E20] mb-8">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
             BANK & POST OFFICE
           </h1>
+          <div className="h-1 w-24 bg-[#7cb983] rounded-full" />
+        </div>
+      </section>
 
-          {/* Image Gallery - 3 Images */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-            {/* Image 1 */}
-            <div className="w-full h-[300px] md:h-[350px] bg-gray-200 rounded-lg overflow-hidden">
+      {/* Image Gallery */}
+      <section className="bg-white py-12 px-4">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+            <div className="relative h-[300px] md:h-[370px] rounded-2xl overflow-hidden shadow-lg group">
               <Image
                 src="/images/bank_postoffice-1.webp"
                 alt="Post office on campus"
-                width={400}
-                height={350}
-                className="w-full h-full object-cover"
+                fill
+                className="object-cover group-hover:scale-105 transition-transform duration-500"
               />
             </div>
-
-            {/* Image 2 */}
-            <div className="w-full h-[300px] md:h-[350px] bg-gray-200 rounded-lg overflow-hidden">
+            <div className="relative h-[300px] md:h-[370px] rounded-2xl overflow-hidden shadow-lg group">
               <Image
                 src="/images/bank_postoffice-2.webp"
                 alt="Indian Bank ATM 24 Hours"
-                width={400}
-                height={350}
-                className="w-full h-full object-cover"
+                fill
+                className="object-cover group-hover:scale-105 transition-transform duration-500"
               />
             </div>
-
-            {/* Image 3 */}
-            <div className="w-full h-[300px] md:h-[350px] bg-gray-200 rounded-lg overflow-hidden">
+            <div className="relative h-[300px] md:h-[370px] rounded-2xl overflow-hidden shadow-lg group">
               <Image
                 src="/images/bank_postoffice-3.webp"
                 alt="Indian Bank ATM"
-                width={400}
-                height={350}
-                className="w-full h-full object-cover"
+                fill
+                className="object-cover group-hover:scale-105 transition-transform duration-500"
               />
             </div>
           </div>
+        </div>
+      </section>
 
-          {/* Introduction Paragraph */}
-          <p className="text-base md:text-lg leading-relaxed text-gray-600 mb-8">
+      {/* Intro Paragraph */}
+      <section className="bg-[#FBFBEE] py-10 px-4">
+        <div className="max-w-6xl mx-auto">
+          <p className="text-base md:text-lg leading-relaxed text-gray-700 border-l-4 border-[#7cb983] pl-6">
             At JKKN Institutions, we are committed to providing our students and staff with a range of convenient services to make campus life easier. This includes banking and postal services designed to meet your daily needs without requiring you to step off campus.
           </p>
+        </div>
+      </section>
+
+      {/* Feature Cards */}
+      <section className="bg-white py-16 px-4">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
 
           {/* On-Campus ATM Kiosk */}
-          <div className="mb-8">
-            <h2 className="text-xl md:text-2xl font-bold text-black mb-4">
-              On-Campus ATM Kiosk:
-            </h2>
-            <p className="text-base leading-relaxed text-gray-600 mb-4">
-              For your immediate banking needs, we have an ATM kiosk right on campus. Whether it's withdrawing cash or checking account balances, you can do it all in a secure environment, without the need to travel off-site.
-            </p>
-            <div className="text-base leading-relaxed text-gray-600 space-y-2">
-              <p>Easy withdrawals and balance checks</p>
-              <p>Conveniently located within the campus</p>
-              <p>Available 24/7 to meet your banking needs</p>
+          <div className="bg-[#FBFBEE] rounded-2xl p-6 border border-[#7cb983]/20 hover:shadow-md transition-shadow duration-300 flex flex-col gap-4">
+            <div className="w-12 h-12 rounded-full bg-[#006837] flex items-center justify-center flex-shrink-0">
+              <Landmark className="text-white w-6 h-6" />
             </div>
+            <h2 className="text-lg font-bold text-[#006837]">On-Campus ATM Kiosk:</h2>
+            <p className="text-gray-600 text-sm leading-relaxed">
+              For your immediate banking needs, we have an ATM kiosk right on campus. Whether it&apos;s withdrawing cash or checking account balances, you can do it all in a secure environment, without the need to travel off-site.
+            </p>
+            <ul className="flex flex-col gap-2">
+              {[
+                'Easy withdrawals and balance checks',
+                'Conveniently located within the campus',
+                'Available 24/7 to meet your banking needs',
+              ].map((item) => (
+                <li key={item} className="flex items-start gap-2 text-sm text-gray-600">
+                  <span className="mt-1.5 w-2 h-2 rounded-full bg-[#7cb983] flex-shrink-0" />
+                  {item}
+                </li>
+              ))}
+            </ul>
           </div>
 
           {/* Campus Post Office */}
-          <div className="mb-8">
-            <h2 className="text-xl md:text-2xl font-bold text-black mb-4">
-              Campus Post Office:
-            </h2>
-            <p className="text-base leading-relaxed text-gray-600 mb-4">
+          <div className="bg-[#FBFBEE] rounded-2xl p-6 border border-[#7cb983]/20 hover:shadow-md transition-shadow duration-300 flex flex-col gap-4">
+            <div className="w-12 h-12 rounded-full bg-[#006837] flex items-center justify-center flex-shrink-0">
+              <Mail className="text-white w-6 h-6" />
+            </div>
+            <h2 className="text-lg font-bold text-[#006837]">Campus Post Office:</h2>
+            <p className="text-gray-600 text-sm leading-relaxed">
               Our on-campus post office serves as a one-stop solution for all your postal requirements. From mailing packages to availing savings schemes, everything is just a step away.
             </p>
-            <div className="text-base leading-relaxed text-gray-600 space-y-2">
-              <p>Domestic and international mail services</p>
-              <p>Speed post and registered post options</p>
-              <p>Additional facilities like savings schemes and postal life insurance</p>
-              <p>Efficient and reliable service to keep you connected</p>
-            </div>
+            <ul className="flex flex-col gap-2">
+              {[
+                'Domestic and international mail services',
+                'Speed post and registered post options',
+                'Additional facilities like savings schemes and postal life insurance',
+                'Efficient and reliable service to keep you connected',
+              ].map((item) => (
+                <li key={item} className="flex items-start gap-2 text-sm text-gray-600">
+                  <span className="mt-1.5 w-2 h-2 rounded-full bg-[#7cb983] flex-shrink-0" />
+                  {item}
+                </li>
+              ))}
+            </ul>
           </div>
 
-          {/* Final Statement */}
-          <div className="mb-12">
-            <p className="text-base leading-relaxed text-gray-600">
-              By offering these financial and postal services, JKKN Institutions ensures that you can manage your transactions and communications conveniently, allowing you more time to focus on your academic and professional growth.
-            </p>
-          </div>
         </div>
-      </div>
+      </section>
+
+      {/* Closing Statement */}
+      <section className="bg-[#006837] py-12 px-4">
+        <div className="max-w-4xl mx-auto text-center">
+          <p className="text-white text-base md:text-lg leading-relaxed">
+            By offering these financial and postal services, JKKN Institutions ensures that you can manage your transactions and communications conveniently, allowing you more time to focus on your academic and professional growth.
+          </p>
+        </div>
+      </section>
 
       <Footer />
       <FloatingWhatsApp />

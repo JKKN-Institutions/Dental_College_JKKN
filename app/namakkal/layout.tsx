@@ -119,7 +119,7 @@ const faqSchema = {
       "name": "What is the fee structure for BDS at JKKN Dental College?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "BDS fee structure at JKKN Dental College & Hospital, Namakkal district, varies by quota (Government/Management). For official and current fee details, visit dental.jkkn.ac.in/fees-structure/ or call +91 9345855001. Fees are regulated by Tamil Nadu DME and are subject to change per government guidelines."
+        "text": "BDS fee structure at JKKN Dental College & Hospital, Namakkal district, varies by quota (Government/Management). For official and current fee details, visit dental.jkkn.ac.in/fee-structure/ or call +91 9345855001. Fees are regulated by Tamil Nadu DME and are subject to change per government guidelines."
       }
     },
     {

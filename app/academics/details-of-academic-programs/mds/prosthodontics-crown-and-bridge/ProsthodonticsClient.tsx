@@ -236,88 +236,35 @@ export default function MDSProsthodontics() {
       </section>
 
       {/* Program Overview Section */}
-      <section className="bg-gray-50 py-20 px-4">
+      <section className="bg-white py-20 px-4 overflow-hidden">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-4">
-            <span className="text-[#7cb983] font-bold text-sm uppercase tracking-wider">PROGRAM OVERVIEW</span>
+          {/* Section Label */}
+          <div className="flex items-center justify-center gap-4 mb-12">
+            <div className="h-px w-16 bg-[#7cb983]"></div>
+            <span className="text-[#7cb983] font-bold text-sm uppercase tracking-widest">PROGRAM OVERVIEW</span>
+            <div className="h-px w-16 bg-[#7cb983]"></div>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-12 items-start">
-            {/* Left Content */}
-            <div>
-              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          <div className="grid lg:grid-cols-2 gap-0 rounded-3xl overflow-hidden shadow-2xl">
+            {/* Left - Dark Green Content Panel */}
+            <div className="bg-gradient-to-br from-[#006837] to-[#002309] p-10 lg:p-14 flex flex-col justify-center">
+              <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6 leading-tight">
                 About MDS Prosthodontics & Crown and Bridge
               </h2>
 
-              <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+              <p className="text-gray-200 mb-5 leading-relaxed">
                 The Master of Dental Surgery (MDS) in Prosthodontics and Crown and Bridge is a comprehensive three-year postgraduate program designed to develop specialists in the rehabilitation of oral function, comfort, appearance, and health through the replacement of missing teeth and contiguous oral and maxillofacial tissues with artificial substitutes.
               </p>
 
-              <p className="text-lg text-gray-700 mb-8 leading-relaxed">
+              <p className="text-gray-200 leading-relaxed">
                 Our program emphasizes hands-on clinical training, cutting-edge CAD/CAM technology, implant dentistry, and research-driven practice, preparing Learners to become leaders in the field of prosthodontics and dental implantology.
               </p>
-
-              {/* Features Grid */}
-              <div className="grid grid-cols-2 gap-6">
-                <div className="flex items-center gap-3">
-                  <div className="bg-[#7cb983] rounded-full p-2 flex-shrink-0">
-                    <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                    </svg>
-                  </div>
-                  <span className="text-gray-800 font-semibold">CAD/CAM Technology</span>
-                </div>
-
-                <div className="flex items-center gap-3">
-                  <div className="bg-[#7cb983] rounded-full p-2 flex-shrink-0">
-                    <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                    </svg>
-                  </div>
-                  <span className="text-gray-800 font-semibold">Implant Training</span>
-                </div>
-
-                <div className="flex items-center gap-3">
-                  <div className="bg-[#7cb983] rounded-full p-2 flex-shrink-0">
-                    <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                    </svg>
-                  </div>
-                  <span className="text-gray-800 font-semibold">Research Training</span>
-                </div>
-
-                <div className="flex items-center gap-3">
-                  <div className="bg-[#7cb983] rounded-full p-2 flex-shrink-0">
-                    <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                    </svg>
-                  </div>
-                  <span className="text-gray-800 font-semibold">Expert Learning Facilitators</span>
-                </div>
-
-                <div className="flex items-center gap-3">
-                  <div className="bg-[#7cb983] rounded-full p-2 flex-shrink-0">
-                    <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                    </svg>
-                  </div>
-                  <span className="text-gray-800 font-semibold">Clinical Excellence</span>
-                </div>
-
-                <div className="flex items-center gap-3">
-                  <div className="bg-[#7cb983] rounded-full p-2 flex-shrink-0">
-                    <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                    </svg>
-                  </div>
-                  <span className="text-gray-800 font-semibold">International Exposure</span>
-                </div>
-              </div>
             </div>
 
-            {/* Right Content - Clinical Training Card */}
-            <div className="relative">
-              <div className="bg-gradient-to-br from-[#7cb983] to-[#6ba872] rounded-2xl overflow-hidden h-full min-h-[500px]">
+            {/* Right - Image + Feature Items */}
+            <div className="flex flex-col">
+              {/* Image */}
+              <div className="relative flex-1 min-h-[300px]">
                 <Image
                   src="/images/MDS-Prosthodontics-&-Crown-and-Bridge-clinical training.webp"
                   alt="MDS Prosthodontics postgraduate student performing clinical training at JKKN Dental Hospital"
@@ -326,6 +273,65 @@ export default function MDSProsthodontics() {
                   sizes="(max-width: 768px) 100vw, 50vw"
                   quality={80}
                 />
+              </div>
+
+              {/* Feature Items */}
+              <div className="bg-[#FBFBEE] p-6">
+                <div className="grid grid-cols-2 gap-3">
+                  <div className="flex items-center gap-2 bg-white rounded-lg px-3 py-2.5 shadow-sm">
+                    <div className="bg-[#7cb983] rounded-full p-1 flex-shrink-0">
+                      <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                    </div>
+                    <span className="text-gray-800 text-sm font-semibold">CAD/CAM Technology</span>
+                  </div>
+
+                  <div className="flex items-center gap-2 bg-white rounded-lg px-3 py-2.5 shadow-sm">
+                    <div className="bg-[#7cb983] rounded-full p-1 flex-shrink-0">
+                      <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                    </div>
+                    <span className="text-gray-800 text-sm font-semibold">Implant Training</span>
+                  </div>
+
+                  <div className="flex items-center gap-2 bg-white rounded-lg px-3 py-2.5 shadow-sm">
+                    <div className="bg-[#7cb983] rounded-full p-1 flex-shrink-0">
+                      <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                    </div>
+                    <span className="text-gray-800 text-sm font-semibold">Research Training</span>
+                  </div>
+
+                  <div className="flex items-center gap-2 bg-white rounded-lg px-3 py-2.5 shadow-sm">
+                    <div className="bg-[#7cb983] rounded-full p-1 flex-shrink-0">
+                      <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                    </div>
+                    <span className="text-gray-800 text-sm font-semibold">Expert Learning Facilitators</span>
+                  </div>
+
+                  <div className="flex items-center gap-2 bg-white rounded-lg px-3 py-2.5 shadow-sm">
+                    <div className="bg-[#7cb983] rounded-full p-1 flex-shrink-0">
+                      <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                    </div>
+                    <span className="text-gray-800 text-sm font-semibold">Clinical Excellence</span>
+                  </div>
+
+                  <div className="flex items-center gap-2 bg-white rounded-lg px-3 py-2.5 shadow-sm">
+                    <div className="bg-[#7cb983] rounded-full p-1 flex-shrink-0">
+                      <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                    </div>
+                    <span className="text-gray-800 text-sm font-semibold">International Exposure</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

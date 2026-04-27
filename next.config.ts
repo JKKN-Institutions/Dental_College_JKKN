@@ -193,7 +193,8 @@ const nextConfig: NextConfig = {
       { source: '/equitable-opportunity-for-sedg-group', destination: '/admissions/equitable-opportunity-for-sedg-group' },
       { source: '/equitable-opportunity-for-sedgs', destination: '/admissions/equitable-opportunity-for-sedg-group/equitable-opportunity-for-sedgs' },
       { source: '/ugc-guidelines', destination: '/admissions/equitable-opportunity-for-sedg-group/ugc-guidelines' },
-      { source: '/fees-structure', destination: '/fees-structure' },
+      { source: '/fees-structure', destination: '/fee-structure' },
+      { source: '/fee-structure', destination: '/fee-structure' },
 
       // Research section
       { source: '/research', destination: '/research' },

@@ -19,7 +19,7 @@ export default function CoimbatorePage() {
     },
     {
       q: 'What is the fee for BDS at JKKN Dental College?',
-      a: 'JKKN Dental College & Hospital BDS fees depend on the admission quota — state counseling quota or management quota. For current 2026–27 fee structure, visit dental.jkkn.ac.in/fees-structure/ or contact the admissions office at +91 9345855001. Fee details are also available at www.jkkn.ai/apply/jkkn-admission-2026.',
+      a: 'JKKN Dental College & Hospital BDS fees depend on the admission quota — state counseling quota or management quota. For current 2026–27 fee structure, visit dental.jkkn.ac.in/fee-structure/ or contact the admissions office at +91 9345855001. Fee details are also available at www.jkkn.ai/apply/jkkn-admission-2026.',
     },
     {
       q: 'What are the MDS specializations at JKKN Dental College?',

@@ -19,6 +19,41 @@ export const metadata: Metadata = {
   },
 };
 
+const forms = [
+  {
+    title: 'FORMAT FOR SUBMITTING PG DISSERTATION PROPOSAL',
+    href: '/pdf/FORMAT-FOR-SUBMITTING-PG-DISSERTATION-PROPOSAL-RPCF.pdf',
+  },
+  {
+    title: 'Assent form to participate in a clinical research',
+    href: '/pdf/Assent-form-to-participate-in-a-clinical-research-RPCF.pdf',
+  },
+  {
+    title: '(For Institute Ethics Committee (IEC)-Human Studies)',
+    href: '/pdf/For-Institute-Ethics-Committee-(IEC)-Human Studies-RPCF.pdf',
+  },
+  {
+    title: 'Application form for requesting waiver of consent',
+    href: '/pdf/Application-form-for-requesting-waiver-of-consent-RPCF.pdf',
+  },
+  {
+    title: 'INFORMED CONSENT DOCUMENT (ICD) PART-I',
+    href: '/pdf/INFORMED-CONSENT-DOCUMENT-(ICD)-PART-I-RPCF.pdf',
+  },
+  {
+    title: 'REVIEW EXEMPTION APPLICATION FORM',
+    href: '/pdf/REVIEW-EXEMPTION-APPLICATION-FORM-RPCF.pdf',
+  },
+  {
+    title: 'INFORMED CONSENT DOCUMENT (ICD) PART-2',
+    href: '/pdf/INFORMED-CONSENT-DOCUMENT-(ICD)-PART-2-RPCF.pdf',
+  },
+  {
+    title: 'CHECK LIST',
+    href: '/pdf/CHECK-LIST-RPCF.pdf',
+  },
+];
+
 export default function ResearchProposalAndConsentForms() {
   const speakableSchema = generateSpeakableWebPageSchema({
     title: 'Research Proposal & Consent Forms | JKKN Dental College',
@@ -28,7 +63,7 @@ export default function ResearchProposalAndConsentForms() {
   });
 
   return (
-    <main>
+    <main className="overflow-x-hidden w-full">
       <StructuredData data={speakableSchema} />
       <BreadcrumbSchema items={[
         { name: 'Home', url: 'https://dental.jkkn.ac.in/' },
@@ -37,151 +72,48 @@ export default function ResearchProposalAndConsentForms() {
       ]} />
       <Header />
 
-      {/* Page Content */}
-      <div className="bg-[#FBF8F3] py-12 px-4">
-        <div className="max-w-6xl mx-auto">
-
-          {/* Breadcrumb */}
-          <div className="mb-6 text-sm text-gray-600">
+      {/* Hero Banner */}
+      <section className="bg-[#006837] py-16 px-4">
+        <div className="max-w-5xl mx-auto">
+          <div className="mb-5 text-sm text-white/60 flex items-center gap-2">
             <span>Home</span>
-            <span className="mx-2">›</span>
-            <span>RESEARCH PROPOSAL AND CONSENT FORMS</span>
+            <span>›</span>
+            <span className="text-white/90">RESEARCH PROPOSAL AND CONSENT FORMS</span>
           </div>
-
-          {/* Page Title */}
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-12">
+          <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-5 uppercase tracking-wide">
             RESEARCH PROPOSAL AND CONSENT FORMS
           </h1>
-
-          {/* Two Column Layout */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-
-            {/* Left Column */}
-            <div className="space-y-8">
-
-              {/* FORMAT FOR SUBMITTING PG DISSERTATION PROPOSAL */}
-              <div>
-                <h2 className="text-base md:text-lg font-bold text-black mb-3">
-                  FORMAT FOR SUBMITTING PG DISSERTATION PROPOSAL
-                </h2>
-                <a
-                  href="/pdf/FORMAT-FOR-SUBMITTING-PG-DISSERTATION-PROPOSAL-RPCF.pdf"
-                  download
-                  className="inline-block bg-[#E5E7EB] hover:bg-[#D1D5DB] text-[#4B5563] font-semibold py-2 px-6 rounded transition-colors duration-200"
-                >
-                  "Download"
-                </a>
-              </div>
-
-              {/* (For Institute Ethics Committee (IEC)-Human Studies) */}
-              <div>
-                <h2 className="text-base md:text-lg font-bold text-black mb-3">
-                  (For Institute Ethics Committee (IEC)-Human Studies)
-                </h2>
-                <a
-                  href="/pdf/For-Institute-Ethics-Committee-(IEC)-Human Studies-RPCF.pdf"
-                  download
-                  className="inline-block bg-[#E5E7EB] hover:bg-[#D1D5DB] text-[#4B5563] font-semibold py-2 px-6 rounded transition-colors duration-200"
-                >
-                  "Download"
-                </a>
-              </div>
-
-              {/* INFORMED CONSENT DOCUMENT (ICD) PART-I */}
-              <div>
-                <h2 className="text-base md:text-lg font-bold text-black mb-3">
-                  INFORMED CONSENT DOCUMENT (ICD) PART-I
-                </h2>
-                <a
-                  href="/pdf/INFORMED-CONSENT-DOCUMENT-(ICD)-PART-I-RPCF.pdf"
-                  download
-                  className="inline-block bg-[#E5E7EB] hover:bg-[#D1D5DB] text-[#4B5563] font-semibold py-2 px-6 rounded transition-colors duration-200"
-                >
-                  "Download"
-                </a>
-              </div>
-
-              {/* INFORMED CONSENT DOCUMENT (ICD) PART-2 */}
-              <div>
-                <h2 className="text-base md:text-lg font-bold text-black mb-3">
-                  INFORMED CONSENT DOCUMENT (ICD) PART-2
-                </h2>
-                <a
-                  href="/pdf/INFORMED-CONSENT-DOCUMENT-(ICD)-PART-2-RPCF.pdf"
-                  download
-                  className="inline-block bg-[#E5E7EB] hover:bg-[#D1D5DB] text-[#4B5563] font-semibold py-2 px-6 rounded transition-colors duration-200"
-                >
-                  "Download"
-                </a>
-              </div>
-
-            </div>
-
-            {/* Right Column */}
-            <div className="space-y-8">
-
-              {/* Assent form to participate in a clinical research */}
-              <div>
-                <h2 className="text-base md:text-lg font-bold text-black mb-3">
-                  Assent form to participate in a clinical research
-                </h2>
-                <a
-                  href="/pdf/Assent-form-to-participate-in-a-clinical-research-RPCF.pdf"
-                  download
-                  className="inline-block bg-[#E5E7EB] hover:bg-[#D1D5DB] text-[#4B5563] font-semibold py-2 px-6 rounded transition-colors duration-200"
-                >
-                  "Download"
-                </a>
-              </div>
-
-              {/* Application form for requesting waiver of consent */}
-              <div>
-                <h2 className="text-base md:text-lg font-bold text-black mb-3">
-                  Application form for requesting waiver of consent
-                </h2>
-                <a
-                  href="/pdf/Application-form-for-requesting-waiver-of-consent-RPCF.pdf"
-                  download
-                  className="inline-block bg-[#E5E7EB] hover:bg-[#D1D5DB] text-[#4B5563] font-semibold py-2 px-6 rounded transition-colors duration-200"
-                >
-                  "Download"
-                </a>
-              </div>
-
-              {/* REVIEW EXEMPTION APPLICATION FORM */}
-              <div>
-                <h2 className="text-base md:text-lg font-bold text-black mb-3">
-                  REVIEW EXEMPTION APPLICATION FORM
-                </h2>
-                <a
-                  href="/pdf/REVIEW-EXEMPTION-APPLICATION-FORM-RPCF.pdf"
-                  download
-                  className="inline-block bg-[#E5E7EB] hover:bg-[#D1D5DB] text-[#4B5563] font-semibold py-2 px-6 rounded transition-colors duration-200"
-                >
-                  "Download"
-                </a>
-              </div>
-
-              {/* CHECK LIST */}
-              <div>
-                <h2 className="text-base md:text-lg font-bold text-black mb-3">
-                  CHECK LIST
-                </h2>
-                <a
-                  href="/pdf/CHECK-LIST-RPCF.pdf"
-                  download
-                  className="inline-block bg-[#E5E7EB] hover:bg-[#D1D5DB] text-[#4B5563] font-semibold py-2 px-6 rounded transition-colors duration-200"
-                >
-                  "Download"
-                </a>
-              </div>
-
-            </div>
-
-          </div>
-
+          <div className="w-20 h-1 bg-[#7cb983] rounded-full" />
         </div>
-      </div>
+      </section>
+
+      {/* Forms Grid */}
+      <section className="bg-[#FBFBEE] py-16 px-4">
+        <div className="max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+            {forms.map((form, index) => (
+              <div
+                key={index}
+                className="bg-white rounded-2xl shadow-sm border border-gray-100 p-5 flex flex-col gap-4 hover:shadow-md hover:border-[#7cb983]/40 transition-all duration-200"
+              >
+                <h2 className="text-sm md:text-base font-bold text-[#002309] leading-snug flex-1">
+                  {form.title}
+                </h2>
+                <a
+                  href={form.href}
+                  download
+                  className="inline-flex items-center gap-2 self-start bg-[#006837] hover:bg-[#005a2f] text-white font-semibold py-2 px-5 rounded-xl transition-colors duration-200 text-sm"
+                >
+                  <svg className="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3M3 17V7a2 2 0 012-2h6l2 2h6a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+                  </svg>
+                  &quot;Download&quot;
+                </a>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
       <Footer />
       <FloatingWhatsApp />
