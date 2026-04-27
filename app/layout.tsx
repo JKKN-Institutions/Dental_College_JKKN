@@ -3,6 +3,7 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import { ClientLayoutWrapper } from "@/components/ClientLayoutWrapper";
 import { MetaPixel } from "@/components/MetaPixel";
+import { GAPageTracker } from "@/components/GAPageTracker";
 import { GoogleAnalytics } from "@next/third-parties/google";
 
 const poppins = Poppins({
@@ -88,6 +89,7 @@ export default function RootLayout({
           Skip to main content
         </a>
         <MetaPixel />
+        <GAPageTracker />
         <ClientLayoutWrapper>
           <div id="main-content" tabIndex={-1}>
             {children}
