@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import collegeFacts from '@/data/collegeFacts';
 
 /**
  * Organization information for JKKN Dental College
@@ -611,32 +612,39 @@ export function generateEducationalOrganizationSchema() {
         }
       }
     ],
-    "department": [
-      {
-        "@type": "EducationalOrganization",
-        "name": "MDS Conservative Dentistry & Endodontics"
-      },
-      {
-        "@type": "EducationalOrganization",
-        "name": "MDS Prosthodontics & Crown and Bridge"
-      },
-      {
-        "@type": "EducationalOrganization",
-        "name": "MDS Periodontics & Oral Implantology"
-      },
-      {
-        "@type": "EducationalOrganization",
-        "name": "MDS Oral Medicine & Radiology"
-      },
-      {
-        "@type": "EducationalOrganization",
-        "name": "MDS Orthodontics & Dentofacial Orthopedics"
-      }
-    ],
+    "department": collegeFacts.departmentsList.map((dept) => ({
+      "@type": "EducationalOrganization",
+      "name": dept
+    })),
     "numberOfEmployees": {
       "@type": "QuantitativeValue",
       "minValue": 25
     },
+    "knowsAbout": [
+      "Dentistry",
+      "Bachelor of Dental Surgery (BDS)",
+      "Master of Dental Surgery (MDS)",
+      "Periodontics",
+      "Orthodontics and Dentofacial Orthopedics",
+      "Prosthodontics, Crown and Bridge",
+      "Conservative Dentistry and Endodontics",
+      "Oral Medicine and Radiology",
+      "Oral and Maxillofacial Surgery",
+      "Pediatric and Preventive Dentistry",
+      "Oral Pathology and Microbiology",
+      "Public Health Dentistry",
+      "Dental Implantology",
+      "Cosmetic Dentistry",
+      "Endodontic Therapy (Root Canal Treatment)",
+      "Dental Surgery",
+      "Clinical Dentistry",
+      "NEET-UG (BDS Admission)",
+      "NEET-MDS (Postgraduate Dental Admission)",
+      "Dental Council of India (DCI) Regulations",
+      "AI-Integrated Dental Education",
+      "Digital Dentistry",
+      "CAD/CAM Dentistry"
+    ],
     "keywords": "mds colleges in tamilnadu, mds dental colleges in tamilnadu, mds seats in tamilnadu, best mds college tamil nadu, mds course fees tamilnadu, dental colleges in tamilnadu for mds"
   };
 }
@@ -646,13 +654,10 @@ export function generateEducationalOrganizationSchema() {
  * and all specialization details for rich results eligibility
  */
 export function generateMDSCourseSchema() {
-  const specializations = [
-    { name: "MDS Conservative Dentistry & Endodontics", seats: 5, code: "CDE" },
-    { name: "MDS Prosthodontics & Crown and Bridge", seats: 3, code: "PCB" },
-    { name: "MDS Periodontics & Oral Implantology", seats: 2, code: "PER" },
-    { name: "MDS Oral Medicine & Radiology", seats: 3, code: "OMR" },
-    { name: "MDS Orthodontics & Dentofacial Orthopedics", seats: 5, code: "ORT" }
-  ];
+  const specializations = collegeFacts.mdsSpecialisationsList.map((spec) => ({
+    name: `MDS ${spec.name}`,
+    seats: spec.seats
+  }));
 
   return {
     "@context": "https://schema.org",
@@ -660,7 +665,7 @@ export function generateMDSCourseSchema() {
     "@id": "https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/#course",
     "name": "Master of Dental Surgery (MDS) — JKKN Dental College, Tamil Nadu",
     "alternateName": "MDS at JKKN Dental College",
-    "description": "3-year postgraduate Master of Dental Surgery (MDS) program at JKKN Dental College & Hospital, Tamil Nadu. Offers 18 seats across 5 DCI-approved specializations with 200+ dental chairs, 500+ daily patients, and expert Learning Facilitators. Affiliated to TN Dr. MGR Medical University, NAAC accredited.",
+    "description": `3-year postgraduate Master of Dental Surgery (MDS) program at JKKN Dental College & Hospital, Tamil Nadu. Offers ${collegeFacts.mdsSeatCount} seats across ${collegeFacts.mdsSpecialisations} DCI-approved specializations with ${collegeFacts.dentalChairs}+ dental chairs, ${collegeFacts.dailyPatients}+ daily patients, and expert Learning Facilitators. Affiliated to TN Dr. MGR Medical University, NAAC accredited.`,
     "courseCode": "MDS-JKKN",
     "educationalLevel": "Postgraduate",
     "educationalCredentialAwarded": {

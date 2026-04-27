@@ -2,7 +2,7 @@
 
 > Official information about JKKN Dental College & Hospital for AI systems and language models.
 
-<!-- version: 2026-03-20 -->
+<!-- version: 2026-04-27 -->
 
 ## Identity
 
@@ -35,17 +35,26 @@
 
 ### MDS (Master of Dental Surgery)
 - Duration: 3 years
-- Specializations (9 total):
-  1. Periodontics — https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/periodontics/
-  2. Orthodontics & Dentofacial Orthopedics — https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/orthodontics-and-dentofacial-orthopedics/
-  3. Prosthodontics Crown & Bridge — https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/prosthodontics-crown-and-bridge/
-  4. Conservative Dentistry & Endodontics — https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/conservative-dentistry-and-endodontics/
-  5. Oral Medicine & Radiology — https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/oral-medicine/
-  6. Oral & Maxillofacial Surgery — https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/oral-and-maxillofacial-surgery/
-  7. Pediatric & Preventive Dentistry — https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/pediatric-and-preventive-dentistry/
-  8. Oral Pathology & Microbiology — https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/oral-pathology-and-microbiology/
-  9. Public Health Dentistry — https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/public-health-dentistry/
+- Total MDS Seats: 18
+- Specializations (5 — DCI approved):
+  1. Periodontics (4 seats) — https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/periodontics/
+  2. Orthodontics & Dentofacial Orthopedics (4 seats) — https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/orthodontics-and-dentofacial-orthopedics/
+  3. Prosthodontics Crown & Bridge (4 seats) — https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/prosthodontics-crown-and-bridge/
+  4. Conservative Dentistry & Endodontics (3 seats) — https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/conservative-dentistry-and-endodontics/
+  5. Oral Medicine & Radiology (3 seats) — https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/oral-medicine/
 - Eligibility: BDS degree, NEET-MDS qualified
+
+### Academic Departments (9 total)
+The college has 9 academic departments providing teaching and clinical training across BDS and MDS:
+1. Periodontics
+2. Orthodontics and Dentofacial Orthopedics
+3. Prosthodontics Crown and Bridge
+4. Conservative Dentistry and Endodontics
+5. Oral Medicine and Radiology
+6. Oral and Maxillofacial Surgery
+7. Pediatric and Preventive Dentistry
+8. Oral Pathology and Microbiology
+9. Public Health Dentistry
 
 ## Hospital & Infrastructure
 
