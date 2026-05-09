@@ -5,6 +5,7 @@ import StructuredData from '@/components/StructuredData';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
 import FloatingWhatsApp from '@/components/FloatingWhatsAppClient';
+import AdmissionPopup from '@/components/AdmissionPopup';
 const AboutInstitution = dynamic(() => import('@/components/AboutInstitution'));
 const AcademicPrograms = dynamic(() => import('@/components/AcademicPrograms'));
 const Infrastructure = dynamic(() => import('@/components/Infrastructure'));
@@ -728,6 +729,7 @@ export default function Home() {
 
   return (
     <main className="overflow-x-hidden w-full">
+      <AdmissionPopup />
       <StructuredData data={medicalOrgSchema} />
       <StructuredData data={dentistLocalSchema} />
       <StructuredData data={websiteSchema} />
