@@ -3,6 +3,7 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import { ClientLayoutWrapper } from "@/components/ClientLayoutWrapper";
 import { MetaPixel } from "@/components/MetaPixel";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -93,6 +94,7 @@ export default function RootLayout({
           </div>
         </ClientLayoutWrapper>
       </body>
+      <GoogleAnalytics gaId="G-RWVNW1RWMG" />
     </html>
   );
 }
