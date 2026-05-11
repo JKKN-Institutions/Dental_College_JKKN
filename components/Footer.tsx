@@ -111,7 +111,7 @@ export default function Footer() {
 
         {/* Copyright */}
         <div className="mt-10 pt-6 border-t border-white/30 text-center pb-20 lg:pb-0">
-          <p className="text-sm">&copy; 2025 JKKN Dental College & Hospital. All rights reserved.</p>
+          <p className="text-sm">&copy; 2026 JKKN Dental College & Hospital. All rights reserved.</p>
         </div>
       </div>
     </footer>
