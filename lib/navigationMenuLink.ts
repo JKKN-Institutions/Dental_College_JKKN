@@ -7,7 +7,6 @@ import {
   FileText,
   Phone,
   Award,
-  ClipboardCheck,
   BookOpen,
   UsersRound,
   Info,
@@ -311,18 +310,6 @@ export function GetDentalCollegePages(pathname: string): MenuGroup[] {
       ]
     },
     {
-      groupLabel: 'IQAC',
-      menus: [
-        {
-          href: '/iqac',
-          label: 'IQAC',
-          icon: ClipboardCheck,
-          active: pathname === '/iqac',
-          submenus: []
-        }
-      ]
-    },
-    {
       groupLabel: 'Committee',
       menus: [
         {
@@ -351,18 +338,6 @@ export function GetDentalCollegePages(pathname: string): MenuGroup[] {
             { href: '/committee/physical-education-&-extra-currucular-activities-committee', label: 'Physical Education Committee', icon: Dumbbell, active: pathname.includes('/physical-education') },
             { href: '/committee/ncc/nss', label: 'NCC/NSS', icon: Flag, active: pathname.includes('/ncc/nss') }
           ]
-        }
-      ]
-    },
-    {
-      groupLabel: 'Alumni',
-      menus: [
-        {
-          href: '/alumni',
-          label: 'Alumni',
-          icon: UsersRound,
-          active: pathname.startsWith('/alumni'),
-          submenus: []
         }
       ]
     },

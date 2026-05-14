@@ -55,10 +55,10 @@ const structuredData = {
           "priceSpecification": {
             "@type": "PriceSpecification",
             "priceCurrency": "INR",
-            "minPrice": "350000",
+            "minPrice": "450000",
             "maxPrice": "550000",
             "unitText": "per year",
-            "description": "GQ: ₹3,50,000–₹4,25,000/year. MQ: ₹4,50,000–₹5,50,000/year. Varies by hostel/dayscholar option."
+            "description": "GQ: As per Govt. Norms. MQ: ₹4,50,000–₹5,50,000/year. Varies by hostel/dayscholar option."
           }
         }
       }
@@ -82,10 +82,10 @@ const structuredData = {
           "priceSpecification": {
             "@type": "PriceSpecification",
             "priceCurrency": "INR",
-            "minPrice": "250000",
+            "minPrice": "850000",
             "maxPrice": "850000",
             "unitText": "per year",
-            "description": "GQ: ₹2,50,000/year. MQ: ₹8,50,000/year. Applicable across all 5 MDS specializations."
+            "description": "GQ: As per Govt. Norms. MQ: ₹8,50,000/year. Applicable across all 5 MDS specializations."
           }
         }
       }
@@ -102,7 +102,7 @@ const faqSchema = {
       "name": "What is the BDS fee structure at JKKN Dental College?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The BDS (Bachelor of Dental Surgery) tuition fee at JKKN Dental College is: Government Quota (GQ) – ₹4,25,000/year (With Hostel & Instruments) or ₹3,50,000/year (Dayscholar with Instruments). Management Quota (MQ) – ₹5,50,000/year (With Hostel & Instruments) or ₹4,50,000/year (Dayscholar with Instruments). Additional fees include library fee, lab and clinical fee, caution deposit (refundable), and university examination fees. Contact the admissions office at +91 9345855001 or dental@jkkn.ac.in for complete fee details."
+        "text": "The BDS (Bachelor of Dental Surgery) tuition fee at JKKN Dental College is: Government Quota (GQ) – As per Govt. Norms. Management Quota (MQ) – ₹5,50,000/year (With Hostel & Instruments) or ₹4,50,000/year (Dayscholar with Instruments). Additional fees include library fee, lab and clinical fee, caution deposit (refundable), and university examination fees. Contact the admissions office at +91 9345855001 or dental@jkkn.ac.in for complete fee details."
       }
     },
     {
@@ -126,7 +126,7 @@ const faqSchema = {
       "name": "What is the MDS fee structure at JKKN Dental College?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The MDS (Master of Dental Surgery) annual tuition fee at JKKN Dental College is ₹2,50,000 per year (Government Quota) and ₹8,50,000 per year (Management Quota) across all 5 specializations. MDS programs available include Periodontics (4 seats), Orthodontics (4 seats), Prosthodontics (4 seats), Endodontics (3 seats), and Oral Medicine (3 seats). Additional one-time fees include admission fee, caution deposit, library deposit, and lab deposit (all refundable). Contact admissions for complete fee details."
+        "text": "The MDS (Master of Dental Surgery) annual tuition fee at JKKN Dental College is As per Govt. Norms (Government Quota) and ₹8,50,000 per year (Management Quota) across all 5 specializations. MDS programs available include Periodontics (4 seats), Orthodontics (4 seats), Prosthodontics (4 seats), Endodontics (3 seats), and Oral Medicine (3 seats). Additional one-time fees include admission fee, caution deposit, library deposit, and lab deposit (all refundable). Contact admissions for complete fee details."
       }
     }
   ]
@@ -222,7 +222,7 @@ export default function FeesStructure() {
               <thead className="bg-[#006837] text-white">
                 <tr>
                   <th className="px-6 py-4 text-left font-bold">Program</th>
-                  <th className="px-6 py-4 text-right font-bold">GQ (&#8377;)</th>
+                  <th className="px-6 py-4 text-left font-bold">GQ</th>
                   <th className="px-6 py-4 text-right font-bold">MQ (&#8377;)</th>
                   <th className="px-6 py-4 text-left font-bold">Remarks</th>
                 </tr>
@@ -230,13 +230,13 @@ export default function FeesStructure() {
               <tbody className="divide-y divide-gray-300">
                 <tr className="hover:bg-white transition-colors">
                   <td className="px-6 py-4 font-semibold text-gray-800">BDS</td>
-                  <td className="px-6 py-4 text-right text-gray-800">&#8377;4,25,000</td>
+                  <td className="px-6 py-4 text-left text-gray-600 italic">As per Govt. Norms</td>
                   <td className="px-6 py-4 text-right text-gray-800">&#8377;5,50,000</td>
                   <td className="px-6 py-4 text-gray-600">With Hostel &amp; Instruments</td>
                 </tr>
                 <tr className="hover:bg-white transition-colors">
                   <td className="px-6 py-4 font-semibold text-gray-800">BDS</td>
-                  <td className="px-6 py-4 text-right text-gray-800">&#8377;3,50,000</td>
+                  <td className="px-6 py-4 text-left text-gray-600 italic">As per Govt. Norms</td>
                   <td className="px-6 py-4 text-right text-gray-800">&#8377;4,50,000</td>
                   <td className="px-6 py-4 text-gray-600">Dayscholar with Instruments</td>
                 </tr>
@@ -285,7 +285,7 @@ export default function FeesStructure() {
                 <tr>
                   <th className="px-6 py-4 text-left font-bold">Specialization</th>
                   <th className="px-6 py-4 text-center font-bold">Seats</th>
-                  <th className="px-6 py-4 text-right font-bold">GQ (&#8377;)</th>
+                  <th className="px-6 py-4 text-left font-bold">GQ</th>
                   <th className="px-6 py-4 text-right font-bold">MQ (&#8377;)</th>
                 </tr>
               </thead>
@@ -293,31 +293,31 @@ export default function FeesStructure() {
                 <tr className="hover:bg-[#FBFBEE] transition-colors">
                   <td className="px-6 py-4 font-semibold text-gray-800">Orthodontics</td>
                   <td className="px-6 py-4 text-center text-gray-800">4</td>
-                  <td className="px-6 py-4 text-right text-gray-800">&#8377;2,50,000</td>
+                  <td className="px-6 py-4 text-left text-gray-600 italic">As per Govt. Norms</td>
                   <td className="px-6 py-4 text-right text-gray-800">&#8377;8,50,000</td>
                 </tr>
                 <tr className="hover:bg-[#FBFBEE] transition-colors">
                   <td className="px-6 py-4 font-semibold text-gray-800">Endodontics</td>
                   <td className="px-6 py-4 text-center text-gray-800">3</td>
-                  <td className="px-6 py-4 text-right text-gray-800">&#8377;2,50,000</td>
+                  <td className="px-6 py-4 text-left text-gray-600 italic">As per Govt. Norms</td>
                   <td className="px-6 py-4 text-right text-gray-800">&#8377;8,50,000</td>
                 </tr>
                 <tr className="hover:bg-[#FBFBEE] transition-colors">
                   <td className="px-6 py-4 font-semibold text-gray-800">Prosthodontics</td>
                   <td className="px-6 py-4 text-center text-gray-800">4</td>
-                  <td className="px-6 py-4 text-right text-gray-800">&#8377;2,50,000</td>
+                  <td className="px-6 py-4 text-left text-gray-600 italic">As per Govt. Norms</td>
                   <td className="px-6 py-4 text-right text-gray-800">&#8377;8,50,000</td>
                 </tr>
                 <tr className="hover:bg-[#FBFBEE] transition-colors">
                   <td className="px-6 py-4 font-semibold text-gray-800">Periodontics</td>
                   <td className="px-6 py-4 text-center text-gray-800">4</td>
-                  <td className="px-6 py-4 text-right text-gray-800">&#8377;2,50,000</td>
+                  <td className="px-6 py-4 text-left text-gray-600 italic">As per Govt. Norms</td>
                   <td className="px-6 py-4 text-right text-gray-800">&#8377;8,50,000</td>
                 </tr>
                 <tr className="hover:bg-[#FBFBEE] transition-colors">
                   <td className="px-6 py-4 font-semibold text-gray-800">Oral Medicine</td>
                   <td className="px-6 py-4 text-center text-gray-800">3</td>
-                  <td className="px-6 py-4 text-right text-gray-800">&#8377;2,50,000</td>
+                  <td className="px-6 py-4 text-left text-gray-600 italic">As per Govt. Norms</td>
                   <td className="px-6 py-4 text-right text-gray-800">&#8377;8,50,000</td>
                 </tr>
                 <tr className="bg-[#006837] text-white font-bold">
