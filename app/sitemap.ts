@@ -218,6 +218,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     // Others
     { url: `${baseUrl}/others/patient-safety-manual/`, lastModified: now, changeFrequency: 'yearly', priority: 0.4 },
     { url: `${baseUrl}/blog/top-10-career-options-after-bed-2026/`, lastModified: now, changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${baseUrl}/blog/bds-course-complete-guide-2026/`, lastModified: '2026-05-16', changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${baseUrl}/blog/mds-orthodontics-complete-guide-2026/`, lastModified: '2026-05-16', changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${baseUrl}/blog/mds-prosthodontics-complete-guide-2026/`, lastModified: '2026-05-16', changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${baseUrl}/blog/mds-periodontics-complete-guide-2026/`, lastModified: '2026-05-16', changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${baseUrl}/blog/mds-conservative-dentistry-endodontics-complete-guide-2026/`, lastModified: '2026-05-16', changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${baseUrl}/blog/mds-oral-medicine-radiology-complete-guide-2026/`, lastModified: '2026-05-16', changeFrequency: 'monthly', priority: 0.8 },
 
     // Information & Mandatory
     { url: `${baseUrl}/information-center/careers/`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
