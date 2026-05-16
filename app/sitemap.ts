@@ -94,6 +94,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
     // Admission
     { url: `${baseUrl}/admission/`, lastModified: now, changeFrequency: 'monthly', priority: 0.9 },
+    { url: `${baseUrl}/admissions/bds/`, lastModified: now, changeFrequency: 'monthly', priority: 0.95 },
+    { url: `${baseUrl}/admissions/mds/`, lastModified: now, changeFrequency: 'monthly', priority: 0.95 },
     { url: `${baseUrl}/admission-process/`, lastModified: now, changeFrequency: 'monthly', priority: 0.9 },
     { url: `${baseUrl}/admission/admission-criteria/`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/admission/prospectus/`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
