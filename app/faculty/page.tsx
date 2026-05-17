@@ -36,15 +36,27 @@ export default async function FacultyPage() {
   const supabase = await createClient();
   const collegeId = process.env.NEXT_PUBLIC_COLLEGE_ID;
 
-  const { data: members } = await supabase
+  const { data: rows } = await supabase
     .from('faculty')
     .select(
-      'id, name, designation, department, qualification, experience_years, photo_url, slug'
+      'id, name, designation, department, qualification, experience_years, photo_url, slug, email, myjkkn_staff_id'
     )
     .eq('college_id', collegeId)
     .eq('is_active', true)
+    .eq('source', 'myjkkn')
     .order('display_order', { ascending: true })
     .order('name', { ascending: true });
+
+  const seen = new Set<string>();
+  const members = (rows ?? []).filter((m) => {
+    const key =
+      m.myjkkn_staff_id ||
+      (m.email ? `email:${m.email.toLowerCase().trim()}` : null) ||
+      `name:${m.name.toLowerCase().trim()}`;
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
 
   return (
     <>
