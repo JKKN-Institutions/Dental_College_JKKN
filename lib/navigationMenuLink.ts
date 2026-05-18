@@ -426,8 +426,9 @@ export function GetDentalCollegePages(pathname: string): MenuGroup[] {
           href: '/others',
           label: 'Others',
           icon: MoreHorizontal,
-          active: pathname.startsWith('/others'),
+          active: pathname.startsWith('/others') || pathname.startsWith('/faculty'),
           submenus: [
+            { href: '/faculty', label: 'Faculty', icon: Users, active: pathname.startsWith('/faculty') },
             { href: '/others/digital-campus', label: 'Digital Campus', icon: Laptop, active: pathname === '/others/digital-campus' },
             { href: '/others/patient-safety-manual', label: 'Patient Safety Manual', icon: FileHeart, active: pathname.includes('/patient-safety') },
             { href: '/others/outreach', label: 'Outreach', icon: Megaphone, active: pathname === '/others/outreach' }
