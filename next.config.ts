@@ -54,6 +54,163 @@ const nextConfig: NextConfig = {
       // Removed landing page → redirect to homepage
       { source: '/best-dental-college-tamil-nadu', destination: '/', permanent: true },
       { source: '/best-dental-college-tamil-nadu/', destination: '/', permanent: true },
+
+      // Faculty profile pages (old WordPress dr-* slugs) → faculty listing
+      { source: '/dr-:slug/', destination: '/faculty', permanent: true },
+      { source: '/dr-:slug', destination: '/faculty', permanent: true },
+
+      // About section old slugs
+      { source: '/about-us/', destination: '/about', permanent: true },
+      { source: '/about-us', destination: '/about', permanent: true },
+      { source: '/our-vision-and-mission/', destination: '/about/vision-and-mission', permanent: true },
+      { source: '/our-vision-and-mission', destination: '/about/vision-and-mission', permanent: true },
+      { source: '/awards-recognition/', destination: '/about', permanent: true },
+      { source: '/awards-recognition', destination: '/about', permanent: true },
+
+      // Admission old slugs
+      { source: '/admissions/scholarship/', destination: '/admissions/scholarship-policy-for-dental-college', permanent: true },
+      { source: '/admissions/scholarship', destination: '/admissions/scholarship-policy-for-dental-college', permanent: true },
+      { source: '/admission-criteria-bds-mds/', destination: '/admissions/admission-criteria', permanent: true },
+      { source: '/admission-criteria-bds-mds', destination: '/admissions/admission-criteria', permanent: true },
+      { source: '/scholarship-policy-for-dental-collegellege/', destination: '/admissions/scholarship-policy-for-dental-college', permanent: true },
+      { source: '/admission-form/', destination: '/admissions', permanent: true },
+      { source: '/admission-form', destination: '/admissions', permanent: true },
+
+      // Academic old slugs
+      { source: '/bachelor-of-dental-surgery/', destination: '/academics/details-of-academic-programs/bds', permanent: true },
+      { source: '/bachelor-of-dental-surgery', destination: '/academics/details-of-academic-programs/bds', permanent: true },
+      { source: '/master-of-dental-surgery/', destination: '/academics/details-of-academic-programs/mds', permanent: true },
+      { source: '/master-of-dental-surgery', destination: '/academics/details-of-academic-programs/mds', permanent: true },
+      { source: '/periodontics-mds/', destination: '/academics/details-of-academic-programs/mds/periodontics', permanent: true },
+      { source: '/periodontics-mds', destination: '/academics/details-of-academic-programs/mds/periodontics', permanent: true },
+      { source: '/prosthodontics-crown-and-bridge-mds/', destination: '/academics/details-of-academic-programs/mds/prosthodontics-crown-and-bridge', permanent: true },
+      { source: '/prosthodontics-crown-and-bridge-mds', destination: '/academics/details-of-academic-programs/mds/prosthodontics-crown-and-bridge', permanent: true },
+      { source: '/oral-medicine-diagnosis-and-radiology/', destination: '/academics/details-of-academic-programs/mds/oral-medicine', permanent: true },
+      { source: '/oral-medicine-diagnosis-and-radiology', destination: '/academics/details-of-academic-programs/mds/oral-medicine', permanent: true },
+      { source: '/oral-and-maxillofacial-surgery/', destination: '/academics/details-of-academic-programs/mds', permanent: true },
+      { source: '/oral-and-maxillofacial-surgery', destination: '/academics/details-of-academic-programs/mds', permanent: true },
+      { source: '/public-health-dentistry/', destination: '/academics/details-of-academic-programs/mds', permanent: true },
+      { source: '/public-health-dentistry', destination: '/academics/details-of-academic-programs/mds', permanent: true },
+      { source: '/oral-pathology-and-microbiology/', destination: '/academics/details-of-academic-programs/mds', permanent: true },
+      { source: '/department-of-orthodontics-and-dentofacial-orthopaedics/', destination: '/academics/details-of-academic-programs/mds/orthodontics-and-dentofacial-orthopedics', permanent: true },
+      { source: '/department-of-orthodontics-and-dentofacial-orthopaedics', destination: '/academics/details-of-academic-programs/mds/orthodontics-and-dentofacial-orthopedics', permanent: true },
+      { source: '/department-of-pediatric-and-preventive-dentistry/', destination: '/academics/details-of-academic-programs/mds', permanent: true },
+      { source: '/department-of-pediatric-and-preventive-dentistry', destination: '/academics/details-of-academic-programs/mds', permanent: true },
+      { source: '/conservative-dentistry-and-endodontics-3/', destination: '/academics/details-of-academic-programs/mds/conservative-dentistry-and-endodontics', permanent: true },
+      { source: '/academic-calendar/', destination: '/academic-calendar-2023-2024-2024-2025', permanent: true },
+      { source: '/academic-calendar-2/', destination: '/academic-calendar-2023-2024-2024-2025', permanent: true },
+      { source: '/teaching-learning-and-evaluation/', destination: '/academics', permanent: true },
+      { source: '/teaching-learning-and-evaluation', destination: '/academics', permanent: true },
+      { source: '/curricular-aspects/', destination: '/academics', permanent: true },
+      { source: '/curricular-aspects-2-2/', destination: '/academics', permanent: true },
+      { source: '/curricular-aspects-2-2', destination: '/academics', permanent: true },
+      { source: '/faculty-development-program/', destination: '/academics/faculty-achievements/fdp-attended', permanent: true },
+      { source: '/faculty-development-program', destination: '/academics/faculty-achievements/fdp-attended', permanent: true },
+      { source: '/guidance-for-competitive-examination-and-career-counselling/', destination: '/information-center/careers', permanent: true },
+      { source: '/dental-nanotechnology-course/', destination: '/academics/courses/add-on-courses', permanent: true },
+      { source: '/e-content-delivery/', destination: '/academics', permanent: true },
+      { source: '/tle/', destination: '/academics', permanent: true },
+      { source: '/tle-2/', destination: '/academics', permanent: true },
+      { source: '/tle', destination: '/academics', permanent: true },
+
+      // Administration old slugs
+      { source: '/governance-leadership-and-management/', destination: '/administration', permanent: true },
+      { source: '/governance-leadership-and-management', destination: '/administration', permanent: true },
+      { source: '/infrastructure-and-learning-resources/', destination: '/facilities', permanent: true },
+      { source: '/infrastructure-and-learning-resources', destination: '/facilities', permanent: true },
+
+      // Research old slugs
+      { source: '/research-innovations-and-extension/', destination: '/research/research-development-rd-cell', permanent: true },
+      { source: '/research-innovations-and-extension', destination: '/research/research-development-rd-cell', permanent: true },
+      { source: '/academic-research/', destination: '/research/research-and-dissertation', permanent: true },
+      { source: '/academic-research', destination: '/research/research-and-dissertation', permanent: true },
+      { source: '/research-and-dissertation/', destination: '/research/research-and-dissertation', permanent: true },
+      { source: '/mou-2/', destination: '/research/mou-memorandum-of-understanding', permanent: true },
+      { source: '/mou-2', destination: '/research/mou-memorandum-of-understanding', permanent: true },
+      { source: '/institutional-ethical-committee-2/', destination: '/research/institutional-ethical-committee', permanent: true },
+      { source: '/extension-outreach-activities-2/', destination: '/research/research-development-rd-cell', permanent: true },
+      { source: '/rie/', destination: '/research/research-development-rd-cell', permanent: true },
+      { source: '/rie', destination: '/research/research-development-rd-cell', permanent: true },
+      { source: '/ivbp/', destination: '/research/institutions-innovation-council-iic', permanent: true },
+      { source: '/ivbp-2/', destination: '/research/institutions-innovation-council-iic', permanent: true },
+      { source: '/ivbp-2', destination: '/research/institutions-innovation-council-iic', permanent: true },
+
+      // Committee old slugs
+      { source: '/grievance-redressal-committee/', destination: '/committee/student-grievance-redressal-committee-sgrc', permanent: true },
+      { source: '/grievance-redressal-committee', destination: '/committee/student-grievance-redressal-committee-sgrc', permanent: true },
+      { source: '/parent-teacher-association/', destination: '/committee', permanent: true },
+      { source: '/parent-teacher-association', destination: '/committee', permanent: true },
+      { source: '/women-empowerment-cell-sexual-harassment-committee/', destination: '/committee/internal-compliants-committee-icc', permanent: true },
+      { source: '/women-empowerment-cell-sexual-harassment-committee', destination: '/committee/internal-compliants-committee-icc', permanent: true },
+      { source: '/dental-education-committee/', destination: '/committee/dental-education-department', permanent: true },
+      { source: '/dental-education-committee-2/', destination: '/committee/dental-education-department', permanent: true },
+      { source: '/hostel-advisory-welfare-committee-2/', destination: '/committee/hostel-advisory-&-welfare-committee', permanent: true },
+      { source: '/student-council-2/', destination: '/committee/student-council', permanent: true },
+      { source: '/nss/', destination: '/committee/ncc/nss', permanent: true },
+      { source: '/nss', destination: '/committee/ncc/nss', permanent: true },
+      { source: '/institutional-finance-committee/', destination: '/committee/finance-committee', permanent: true },
+      { source: '/institutional-finance-committee', destination: '/committee/finance-committee', permanent: true },
+      { source: '/physical-infrastructure-and-purchase-maintenance-committee-2/', destination: '/committee/physical-infrastructure-and-purchase-maintenance-committee', permanent: true },
+      { source: '/disciplinary-committee-2', destination: '/committee/disciplinary-committee', permanent: true },
+      { source: '/cac/', destination: '/committee', permanent: true },
+      { source: '/cac', destination: '/committee', permanent: true },
+      { source: '/anti-ragging-seminar-program/', destination: '/committee/anti-ragging-committee', permanent: true },
+
+      // Facilities old slugs
+      { source: '/hostel/', destination: '/facilities/hostel', permanent: true },
+      { source: '/wifi/', destination: '/facilities/wi-fi-campus', permanent: true },
+      { source: '/wifi', destination: '/facilities/wi-fi-campus', permanent: true },
+      { source: '/class-room/', destination: '/facilities/digital-class-room', permanent: true },
+      { source: '/class-room', destination: '/facilities/digital-class-room', permanent: true },
+      { source: '/emergency-care/', destination: '/facilities/health-facilities', permanent: true },
+      { source: '/emergency-care', destination: '/facilities/health-facilities', permanent: true },
+      { source: '/d-sai-sadan/', destination: '/facilities/hostel', permanent: true },
+      { source: '/d-sai-sadan', destination: '/facilities/hostel', permanent: true },
+      { source: '/microsoft-360/', destination: '/facilities', permanent: true },
+      { source: '/microsoft-360', destination: '/facilities', permanent: true },
+
+      // IQAC, alumni, placement old slugs
+      { source: '/iqac-feedback/', destination: '/iqac', permanent: true },
+      { source: '/iqac-feedback', destination: '/iqac', permanent: true },
+      { source: '/alumni-association-committee/', destination: '/alumni/alumni-association-activities', permanent: true },
+      { source: '/alumni-association-committee', destination: '/alumni/alumni-association-activities', permanent: true },
+      { source: '/placement-day-celebration-2025/', destination: '/placements', permanent: true },
+      { source: '/placement-day-celebration-2025', destination: '/placements', permanent: true },
+
+      // Mandatory disclosures old slug
+      { source: '/ugc-public-disclosure-compliance/', destination: '/mandatory-disclosures/guidelines-on-public-disclosure-by-heis', permanent: true },
+
+      // Gallery old slugs (wildcard)
+      { source: '/gallery-:slug/', destination: '/gallery', permanent: true },
+      { source: '/gallery-:slug', destination: '/gallery', permanent: true },
+
+      // WordPress legacy patterns (wildcard) → homepage
+      { source: '/category/:path*', destination: '/', permanent: true },
+      { source: '/web-stories/:path*', destination: '/', permanent: true },
+      { source: '/tag/:path*', destination: '/', permanent: true },
+      { source: '/author/:path*', destination: '/', permanent: true },
+      { source: '/index.php/:path*', destination: '/', permanent: true },
+      { source: '/wp-content/:path*', destination: '/', permanent: true },
+
+      // Allied health / B.Sc programs (not this college) → homepage
+      { source: '/b-sc-:slug/', destination: '/', permanent: true },
+      { source: '/b-sc-:slug', destination: '/', permanent: true },
+      { source: '/allied-health-sciences/', destination: '/', permanent: true },
+      { source: '/allied-health-sciences', destination: '/', permanent: true },
+
+      // Misc deleted/junk pages → homepage
+      { source: '/green-dentistry/', destination: '/about', permanent: true },
+      { source: '/green-dentistry', destination: '/about', permanent: true },
+      { source: '/clm-2/', destination: '/', permanent: true },
+      { source: '/sample/', destination: '/', permanent: true },
+      { source: '/resume/', destination: '/', permanent: true },
+      { source: '/flowcharts', destination: '/', permanent: true },
+      { source: '/new/', destination: '/', permanent: true },
+      { source: '/new-2/', destination: '/', permanent: true },
+      { source: '/new-3/', destination: '/', permanent: true },
+      { source: '/new-4/', destination: '/', permanent: true },
+      { source: '/legal/:path*', destination: '/', permanent: true },
+      { source: '/digital-campus-2', destination: '/', permanent: true },
     ];
   },
   async headers() {
