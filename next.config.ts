@@ -96,7 +96,6 @@ const nextConfig: NextConfig = {
       { source: '/dental-2025', destination: '/accreditation/nirf/nirf-2025/dental' },
 
       // About section
-      { source: '/about', destination: '/about' },
       { source: '/our-institutions', destination: '/about/our-institutions' },
       { source: '/vision-and-mission', destination: '/about/vision-and-mission' },
       { source: '/act-statutes', destination: '/about/act-statutes' },
@@ -110,7 +109,6 @@ const nextConfig: NextConfig = {
       { source: '/annual-account-statement', destination: '/about/annual-account-statement' },
 
       // Administration section
-      { source: '/administration', destination: '/administration' },
       { source: '/our-trust', destination: '/administration/our-trust' },
       { source: '/our-management', destination: '/administration/our-management' },
       { source: '/principals-message', destination: '/administration/principals-message' },
@@ -121,7 +119,6 @@ const nextConfig: NextConfig = {
       { source: '/academic-leadership', destination: '/administration/academic-leadership' },
 
       // Academics section - Programs
-      { source: '/academics', destination: '/academics' },
       { source: '/details-of-academic-programs', destination: '/academics/details-of-academic-programs' },
       { source: '/bds', destination: '/academics/details-of-academic-programs/bds' },
       { source: '/mds', destination: '/academics/details-of-academic-programs/mds' },
@@ -170,7 +167,6 @@ const nextConfig: NextConfig = {
       { source: '/academic-calendar-2018-2019', destination: '/academics/academic-calendar/academic-calendar-2018-2019' },
 
       // Accreditation section
-      { source: '/accreditation', destination: '/accreditation' },
       { source: '/nirf', destination: '/accreditation/nirf' },
       { source: '/nirf-2024', destination: '/accreditation/nirf/nirf-2024' },
       { source: '/overall-2024', destination: '/accreditation/nirf/nirf-2024/overall' },
@@ -182,7 +178,7 @@ const nextConfig: NextConfig = {
       { source: '/nirf-2025-sdg', destination: '/accreditation/nirf/nirf-2025/sdg-institution/nirf-2025-sdg' },
 
       // Admission section
-      { source: '/admission', destination: '/admissions' },
+      // Note: /admission (singular) is handled by 301 redirect above, not a rewrite
       { source: '/prospectus', destination: '/admissions/prospectus' },
       { source: '/admission-process-guidelines', destination: '/admission-process' },
       { source: '/admission-criterion-in-others', destination: '/admissions/admission-process-guidelines/admission-criterion-in-others' },
@@ -194,10 +190,8 @@ const nextConfig: NextConfig = {
       { source: '/equitable-opportunity-for-sedgs', destination: '/admissions/equitable-opportunity-for-sedg-group/equitable-opportunity-for-sedgs' },
       { source: '/ugc-guidelines', destination: '/admissions/equitable-opportunity-for-sedg-group/ugc-guidelines' },
       { source: '/fees-structure', destination: '/fee-structure' },
-      { source: '/fee-structure', destination: '/fee-structure' },
 
       // Research section
-      { source: '/research', destination: '/research' },
       { source: '/research-development-rd-cell', destination: '/research/research-development-rd-cell' },
       { source: '/research-and-dissertation', destination: '/research/research-and-dissertation' },
       { source: '/institutions-innovation-council-iic', destination: '/research/institutions-innovation-council-iic' },
@@ -210,7 +204,6 @@ const nextConfig: NextConfig = {
       { source: '/publication', destination: '/research/publication' },
 
       // Committee section
-      { source: '/committee', destination: '/committee' },
       { source: '/student-council', destination: '/committee/student-council' },
       { source: '/internal-compliants-committee-icc', destination: '/committee/internal-compliants-committee-icc' },
       { source: '/student-grievance-redressal-committee-sgrc', destination: '/committee/student-grievance-redressal-committee-sgrc' },
@@ -237,7 +230,6 @@ const nextConfig: NextConfig = {
       { source: '/physical-education-extra-currucular-activities-committee', destination: '/committee/physical-education-extra-currucular-activities-committee' },
 
       // Facilities section
-      { source: '/facilities', destination: '/facilities' },
       { source: '/accessibility-inclusion-at-jkkndch', destination: '/facilities/accessibility-&-inclusion-at-jkkndch' },
       { source: '/library', destination: '/facilities/library' },
       { source: '/labs', destination: '/facilities/labs' },
@@ -258,7 +250,6 @@ const nextConfig: NextConfig = {
       { source: '/barrier-free-environment', destination: '/facilities/barrier-free-environment' },
 
       // Information Center section
-      { source: '/information-center', destination: '/information-center' },
       { source: '/right-to-information-rti', destination: '/information-center/right-to-information-rti' },
       { source: '/careers', destination: '/information-center/careers' },
       { source: '/tender', destination: '/information-center/tender' },
@@ -269,13 +260,11 @@ const nextConfig: NextConfig = {
       { source: '/events', destination: '/information-center/events' },
 
       // Mandatory Disclosures section
-      { source: '/mandatory-disclosures', destination: '/mandatory-disclosures' },
       { source: '/guidelines-on-public-disclosure-by-heis', destination: '/mandatory-disclosures/guidelines-on-public-disclosure-by-heis' },
       { source: '/letter-of-undertaking', destination: '/mandatory-disclosures/letter-of-undertaking' },
       { source: '/ugc-public-disclosure-compliance', destination: '/mandatory-disclosures/ugc-public-disclosure-compliance' },
 
       // Others section
-      { source: '/others', destination: '/others' },
       { source: '/patient-safety-manual', destination: '/others/patient-safety-manual' },
       { source: '/best-practices', destination: '/others/best-practices' },
       { source: '/institutional-distinctiveness', destination: '/others/institutional-distinctiveness' },
@@ -283,13 +272,10 @@ const nextConfig: NextConfig = {
       { source: '/outreach', destination: '/others/outreach' },
 
       // Alumni section
-      { source: '/alumni', destination: '/alumni' },
       { source: '/alumni-association-activities', destination: '/alumni/alumni-association-activities' },
       { source: '/alumni-registration-certificate', destination: '/alumni/alumni-registration-certificate' },
 
-      // Top-level pages
-      { source: '/iqac', destination: '/iqac' },
-      // Removed: /contact → /contact rewrite (unnecessary — page exists at app/contact/page.tsx)
+      // Removed: /iqac → /iqac and /contact → /contact rewrites (unnecessary — pages exist at app/iqac/page.tsx and app/contact/page.tsx)
     ];
   },
 };

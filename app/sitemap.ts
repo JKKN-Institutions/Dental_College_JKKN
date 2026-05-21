@@ -1,5 +1,6 @@
 import { MetadataRoute } from 'next'
 import { createClient } from '@/lib/supabase/server'
+import { siteConfig } from '@/lib/site-config'
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = 'https://dental.jkkn.ac.in'
@@ -7,9 +8,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   // Fetch dynamic blog posts from Supabase
   let blogUrls: MetadataRoute.Sitemap = []
+  let campusBlogUrls: MetadataRoute.Sitemap = []
   let eventUrls: MetadataRoute.Sitemap = []
   try {
     const supabase = await createClient()
+    const collegeId = process.env.NEXT_PUBLIC_COLLEGE_ID
+
     const { data: posts } = await supabase
       .from('blog_posts')
       .select('slug, updated_at')
@@ -22,12 +26,34 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         priority: 0.6,
       }))
     }
+
+    // Campus blogs live in a separate `blogs` table (rendered at /blog/campus/[slug]/)
+    if (collegeId) {
+      const { data: campusPosts } = await supabase
+        .from('blogs')
+        .select('slug, updated_at')
+        .eq('college_id', collegeId)
+        .eq('is_published', true)
+      if (campusPosts) {
+        campusBlogUrls = campusPosts.map(post => ({
+          url: `${baseUrl}/blog/campus/${post.slug}/`,
+          lastModified: new Date(post.updated_at),
+          changeFrequency: 'monthly' as const,
+          priority: 0.6,
+        }))
+      }
+    }
+
+    // Events query must mirror /events/[slug]/page.tsx filters (is_published + college_id)
+    // otherwise sitemap surfaces unpublished or cross-college slugs that 404 at render time.
     const { data: events } = await supabase
       .from('events')
       .select('slug, updated_at')
+      .eq('college_id', siteConfig.id)
+      .eq('is_published', true)
     if (events) {
       eventUrls = events.map(event => ({
-        url: `${baseUrl}/information-center/events/${event.slug}/`,
+        url: `${baseUrl}/events/${event.slug}/`,
         lastModified: new Date(event.updated_at),
         changeFrequency: 'monthly' as const,
         priority: 0.5,
@@ -48,6 +74,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${baseUrl}/ai-dental-campus/`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/fee-structure/`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/placements/`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${baseUrl}/scholarships/`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${baseUrl}/faculty/`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${baseUrl}/faq/`, lastModified: now, changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${baseUrl}/testimonials/`, lastModified: now, changeFrequency: 'monthly', priority: 0.6 },
 
     // Academics — BDS & MDS (highest SEO value)
     { url: `${baseUrl}/academics/`, lastModified: now, changeFrequency: 'monthly', priority: 0.9 },
@@ -92,29 +122,35 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${baseUrl}/academic-calendar-2019-2020/`, lastModified: '2020-06-01', changeFrequency: 'yearly', priority: 0.3 },
     { url: `${baseUrl}/academic-calendar-2018-2019/`, lastModified: '2019-06-01', changeFrequency: 'yearly', priority: 0.3 },
 
-    // Admission
-    { url: `${baseUrl}/admission/`, lastModified: now, changeFrequency: 'monthly', priority: 0.9 },
+    // Admission (canonical /admissions/* — singular /admission/* 301-redirects)
+    { url: `${baseUrl}/admissions/`, lastModified: now, changeFrequency: 'monthly', priority: 0.9 },
     { url: `${baseUrl}/admissions/bds/`, lastModified: now, changeFrequency: 'monthly', priority: 0.95 },
     { url: `${baseUrl}/admissions/mds/`, lastModified: now, changeFrequency: 'monthly', priority: 0.95 },
     { url: `${baseUrl}/admission-process/`, lastModified: now, changeFrequency: 'monthly', priority: 0.9 },
-    { url: `${baseUrl}/admission/admission-criteria/`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${baseUrl}/admission/prospectus/`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${baseUrl}/admission/scholarship-policy-for-dental-college/`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${baseUrl}/admission/fee-refund-policy/`, lastModified: now, changeFrequency: 'yearly', priority: 0.5 },
-    { url: `${baseUrl}/admission/fee-refund-policy/ugc-fee-refund-policy/`, lastModified: now, changeFrequency: 'yearly', priority: 0.4 },
-    { url: `${baseUrl}/admission/equitable-opportunity-for-sedg-group/`, lastModified: now, changeFrequency: 'yearly', priority: 0.4 },
-    { url: `${baseUrl}/admission/equitable-opportunity-for-sedg-group/equitable-opportunity-for-sedgs/`, lastModified: now, changeFrequency: 'yearly', priority: 0.4 },
-    { url: `${baseUrl}/admission/equitable-opportunity-for-sedg-group/ugc-guidelines/`, lastModified: now, changeFrequency: 'yearly', priority: 0.4 },
-    { url: `${baseUrl}/bds/`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${baseUrl}/mds/`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${baseUrl}/admissions/admission-criteria/`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${baseUrl}/admissions/prospectus/`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${baseUrl}/admissions/scholarship-policy-for-dental-college/`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${baseUrl}/admissions/fee-refund-policy/`, lastModified: now, changeFrequency: 'yearly', priority: 0.5 },
+    { url: `${baseUrl}/admissions/fee-refund-policy/ugc-fee-refund-policy/`, lastModified: now, changeFrequency: 'yearly', priority: 0.4 },
+    { url: `${baseUrl}/admissions/equitable-opportunity-for-sedg-group/`, lastModified: now, changeFrequency: 'yearly', priority: 0.4 },
+    { url: `${baseUrl}/admissions/equitable-opportunity-for-sedg-group/equitable-opportunity-for-sedgs/`, lastModified: now, changeFrequency: 'yearly', priority: 0.4 },
+    { url: `${baseUrl}/admissions/equitable-opportunity-for-sedg-group/ugc-guidelines/`, lastModified: now, changeFrequency: 'yearly', priority: 0.4 },
+    // /bds/ and /mds/ removed — both 301 to /academics/details-of-academic-programs/* (already listed above)
 
     // Accreditation
     { url: `${baseUrl}/accreditation/naac/`, lastModified: now, changeFrequency: 'yearly', priority: 0.8 },
     { url: `${baseUrl}/iqac/`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
+    // NIRF 2026 (latest)
+    { url: `${baseUrl}/accreditation/nirf/nirf-2026/dental/`, lastModified: '2026-09-01', changeFrequency: 'yearly', priority: 0.7 },
+    { url: `${baseUrl}/accreditation/nirf/nirf-2026/overall/`, lastModified: '2026-09-01', changeFrequency: 'yearly', priority: 0.7 },
+    { url: `${baseUrl}/accreditation/nirf/nirf-2026/innovation/`, lastModified: '2026-09-01', changeFrequency: 'yearly', priority: 0.6 },
+    { url: `${baseUrl}/accreditation/nirf/nirf-2026/sdg-institution/`, lastModified: '2026-09-01', changeFrequency: 'yearly', priority: 0.6 },
+    // NIRF 2025
     { url: `${baseUrl}/accreditation/nirf/nirf-2025/dental/`, lastModified: '2025-09-01', changeFrequency: 'yearly', priority: 0.6 },
     { url: `${baseUrl}/accreditation/nirf/nirf-2025/overall/`, lastModified: '2025-09-01', changeFrequency: 'yearly', priority: 0.6 },
     { url: `${baseUrl}/accreditation/nirf/nirf-2025/innovation/`, lastModified: '2025-09-01', changeFrequency: 'yearly', priority: 0.5 },
     { url: `${baseUrl}/accreditation/nirf/nirf-2025/sdg-institution/`, lastModified: '2025-09-01', changeFrequency: 'yearly', priority: 0.5 },
+    // NIRF 2024
     { url: `${baseUrl}/accreditation/nirf/nirf-2024/dental/`, lastModified: '2024-09-01', changeFrequency: 'yearly', priority: 0.5 },
     { url: `${baseUrl}/about/accreditation-ranking-status/naac/`, lastModified: now, changeFrequency: 'yearly', priority: 0.5 },
 
@@ -211,10 +247,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${baseUrl}/facilities/accessibility-&-inclusion-at-jkkndch/`, lastModified: now, changeFrequency: 'yearly', priority: 0.4 },
     { url: `${baseUrl}/facilities/privacy-policy/`, lastModified: now, changeFrequency: 'yearly', priority: 0.3 },
 
-    // Standalone committee URLs
-    { url: `${baseUrl}/hostel-advisory-welfare-committee/`, lastModified: now, changeFrequency: 'yearly', priority: 0.4 },
-    { url: `${baseUrl}/physical-education-extra-currucular-activities-committee/`, lastModified: now, changeFrequency: 'yearly', priority: 0.4 },
-
     // Others
     { url: `${baseUrl}/others/patient-safety-manual/`, lastModified: now, changeFrequency: 'yearly', priority: 0.4 },
     { url: `${baseUrl}/blog/top-10-career-options-after-bed-2026/`, lastModified: now, changeFrequency: 'monthly', priority: 0.6 },
@@ -232,5 +264,5 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${baseUrl}/mandatory-disclosures/letter-of-undertaking/`, lastModified: now, changeFrequency: 'yearly', priority: 0.4 },
   ]
 
-  return [...staticPages, ...blogUrls, ...eventUrls]
+  return [...staticPages, ...blogUrls, ...campusBlogUrls, ...eventUrls]
 }
