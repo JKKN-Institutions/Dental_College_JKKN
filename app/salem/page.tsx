@@ -334,7 +334,7 @@ export default function SalemPage() {
               Start Admission Process
             </Link>
             <Link
-              href="/fee-structure/"
+              href="/fees-structure/"
               className="inline-block bg-white hover:bg-[#FBFBEE] text-[#006837] border border-[#7cb983] font-bold px-8 py-4 rounded-full transition-all transform hover:scale-105 shadow-sm text-base"
             >
               View Fees Structure

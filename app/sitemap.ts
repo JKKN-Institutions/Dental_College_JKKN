@@ -50,6 +50,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // Fetch dynamic blog posts from Supabase
   let blogUrls: MetadataRoute.Sitemap = []
   let campusBlogUrls: MetadataRoute.Sitemap = []
+  let facultyUrls: MetadataRoute.Sitemap = []
   let eventUrls: MetadataRoute.Sitemap = []
   try {
     const supabase = await createClient()
@@ -85,6 +86,27 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       }
     }
 
+    // Faculty profile pages (live from MyJKKN sync). Mirrors filters used in
+    // /faculty/[slug]/page.tsx so sitemap doesn't surface inactive profiles.
+    if (collegeId) {
+      const { data: faculty } = await supabase
+        .from('faculty')
+        .select('slug, updated_at')
+        .eq('college_id', collegeId)
+        .eq('is_active', true)
+        .eq('source', 'myjkkn')
+      if (faculty) {
+        facultyUrls = faculty
+          .filter(f => f.slug)
+          .map(f => ({
+            url: `${baseUrl}/faculty/${f.slug}/`,
+            lastModified: f.updated_at ? new Date(f.updated_at) : now,
+            changeFrequency: 'monthly' as const,
+            priority: 0.6,
+          }))
+      }
+    }
+
     // Events query must mirror /events/[slug]/page.tsx filters (is_published + college_id)
     // otherwise sitemap surfaces unpublished or cross-college slugs that 404 at render time.
     const { data: events } = await supabase
@@ -113,7 +135,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${baseUrl}/gallery/`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${baseUrl}/blog/`, lastModified: now, changeFrequency: 'weekly', priority: 0.7 },
     { url: `${baseUrl}/ai-dental-campus/`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${baseUrl}/fee-structure/`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${baseUrl}/fees-structure/`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/placements/`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/scholarships/`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/faculty/`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
@@ -298,6 +320,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${baseUrl}/blog/mds-conservative-dentistry-endodontics-complete-guide-2026/`, lastModified: '2026-05-16', changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/blog/mds-oral-medicine-radiology-complete-guide-2026/`, lastModified: '2026-05-16', changeFrequency: 'monthly', priority: 0.8 },
 
+    // PDFs (Google indexes and ranks these — keep canonical-priority entries here)
+    { url: `${baseUrl}/pdf/brochure.pdf`, lastModified: '2026-03-01', changeFrequency: 'yearly', priority: 0.6 },
+    { url: `${baseUrl}/pdf/UGC-Fee-Refund-Policy.pdf`, lastModified: '2025-06-01', changeFrequency: 'yearly', priority: 0.4 },
+    { url: `${baseUrl}/pdf/Equitable-Opportunity-for-SEDG.pdf`, lastModified: '2025-06-01', changeFrequency: 'yearly', priority: 0.4 },
+    { url: `${baseUrl}/pdf/Add-on-Course-Implant-program-2025.pdf`, lastModified: '2025-09-01', changeFrequency: 'yearly', priority: 0.4 },
+
     // Information & Mandatory
     { url: `${baseUrl}/information-center/careers/`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${baseUrl}/information-center/right-to-information-rti/`, lastModified: now, changeFrequency: 'yearly', priority: 0.4 },
@@ -316,5 +344,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     return entry
   })
 
-  return [...staticPagesWithGitDates, ...blogUrls, ...campusBlogUrls, ...eventUrls]
+  return [
+    ...staticPagesWithGitDates,
+    ...blogUrls,
+    ...campusBlogUrls,
+    ...facultyUrls,
+    ...eventUrls,
+  ]
 }

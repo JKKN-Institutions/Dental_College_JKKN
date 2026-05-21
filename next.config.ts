@@ -55,6 +55,12 @@ const nextConfig: NextConfig = {
       { source: '/best-dental-college-tamil-nadu', destination: '/', permanent: true },
       { source: '/best-dental-college-tamil-nadu/', destination: '/', permanent: true },
 
+      // Canonical alignment: /fee-structure/ (singular) -> /fees-structure/ (plural)
+      // Google indexes the plural form (rank #2 with 26 clicks). Force consolidation.
+      // Rewrite at line ~375 makes /fees-structure -> /fee-structure internally for rendering.
+      { source: '/fee-structure/', destination: '/fees-structure/', permanent: true },
+      { source: '/fee-structure', destination: '/fees-structure', permanent: true },
+
       // Faculty profile pages (old WordPress dr-* slugs) → faculty listing
       { source: '/dr-:slug/', destination: '/faculty', permanent: true },
       { source: '/dr-:slug', destination: '/faculty', permanent: true },

@@ -40,7 +40,7 @@ export default function FAQSection() {
     },
     {
       question: "What is the fee structure for BDS at JKKN Dental College?",
-      answer: <>BDS fees at JKKN Dental College vary by admission quota as per Tamil Nadu government regulations. Annual tuition ranges from 3 to 5 lakhs depending on state counseling or management quota allocation. <a href="/fee-structure/" className="text-[#006837] hover:underline font-medium">See detailed fee structure</a>.</>
+      answer: <>BDS fees at JKKN Dental College vary by admission quota as per Tamil Nadu government regulations. Annual tuition ranges from 3 to 5 lakhs depending on state counseling or management quota allocation. <a href="/fees-structure/" className="text-[#006837] hover:underline font-medium">See detailed fee structure</a>.</>
     },
     {
       question: "Where is JKKN Dental College located?",

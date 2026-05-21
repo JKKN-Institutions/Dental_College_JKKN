@@ -808,7 +808,7 @@ export default function MDSAdmissionPage() {
             <p className="text-[#006837] font-medium">
               MDS fees vary by specialization. For the complete specialization-wise fee
               structure and stipend details, visit{' '}
-              <Link href="/fee-structure/" className="underline font-bold">fee structure page</Link>{' '}
+              <Link href="/fees-structure/" className="underline font-bold">fee structure page</Link>{' '}
               or call <a href="tel:+919345855001" className="underline font-bold">+91 93458 55001</a>.
             </p>
           </div>

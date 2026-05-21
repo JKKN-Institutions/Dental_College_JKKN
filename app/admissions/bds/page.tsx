@@ -746,7 +746,7 @@ export default function BDSAdmissionPage() {
             <p className="text-[#006837] font-medium">
               Installment payment options and scholarships are available. For the complete
               fee structure including exam fees, hostel & mess, visit{' '}
-              <Link href="/fee-structure/" className="underline font-bold">fee structure page</Link>.
+              <Link href="/fees-structure/" className="underline font-bold">fee structure page</Link>.
             </p>
           </div>
         </div>

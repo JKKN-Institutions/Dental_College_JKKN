@@ -428,7 +428,7 @@ export default function BdsGuideClient({ faqs }: { faqs: FAQ[] }) {
                 The fee covers tuition, university registration, laboratory charges and hospital
                 clinical exposure. Hostel, mess, transport and books are charged separately. The
                 exact, current-year fee table is published on the official{' '}
-                <a href="/fee-structure/" className="text-[#006837] font-semibold hover:underline">JKKN BDS Fee Structure page</a>.
+                <a href="/fees-structure/" className="text-[#006837] font-semibold hover:underline">JKKN BDS Fee Structure page</a>.
               </p>
               <p className="text-gray-600 leading-relaxed mb-4">
                 <strong>Scholarships &amp; financial support:</strong>

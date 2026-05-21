@@ -276,7 +276,7 @@ export default function MdsEndodonticsClient({ faqs }: { faqs: FAQ[] }) {
               <p className="text-gray-600 leading-relaxed mb-4">
                 MDS fees at JKKN are levied as per <strong>Government of Tamil Nadu norms</strong>
                 with Government, Management and NRI Quotas. Current exact figures published at{' '}
-                <a href="/fee-structure/" className="text-[#006837] font-semibold hover:underline">JKKN Fee Structure page</a>.
+                <a href="/fees-structure/" className="text-[#006837] font-semibold hover:underline">JKKN Fee Structure page</a>.
                 PG students receive a <strong>Tamil Nadu government PG stipend</strong> and are
                 eligible for SC/ST/OBC scholarships, central PG schemes and bank education loans.
               </p>

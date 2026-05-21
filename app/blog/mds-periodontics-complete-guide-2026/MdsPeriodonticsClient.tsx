@@ -280,7 +280,7 @@ export default function MdsPeriodonticsClient({ faqs }: { faqs: FAQ[] }) {
                 MDS Periodontics fees at JKKN are levied as per <strong>Government of Tamil Nadu
                 norms</strong>, with Government, Management and NRI Quotas. Current exact figures
                 are published at{' '}
-                <a href="/fee-structure/" className="text-[#006837] font-semibold hover:underline">JKKN Fee Structure page</a>.
+                <a href="/fees-structure/" className="text-[#006837] font-semibold hover:underline">JKKN Fee Structure page</a>.
               </p>
               <p className="text-gray-600 leading-relaxed mb-4">
                 PG students receive a <strong>Tamil Nadu government PG stipend</strong> and are

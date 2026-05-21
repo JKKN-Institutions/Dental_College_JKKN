@@ -395,7 +395,7 @@ export default function MdsOrthodonticsClient({ faqs }: { faqs: FAQ[] }) {
               <p className="text-gray-600 leading-relaxed mb-4">
                 Hostel, mess and transport are charged separately. Current-year exact figures are
                 published on the official{' '}
-                <a href="/fee-structure/" className="text-[#006837] font-semibold hover:underline">
+                <a href="/fees-structure/" className="text-[#006837] font-semibold hover:underline">
                   JKKN Fee Structure page
                 </a>.
               </p>

@@ -863,7 +863,7 @@ export default function BDSProgram() {
             BDS Fee Structure at JKKN Dental College — 2026-27
           </h2>
           <p className="text-gray-600 text-center mb-8 max-w-3xl mx-auto">
-            Affordable dental education with government-regulated fees. <a href="/fee-structure/" className="text-[#7cb983] underline hover:text-[#6ba872]">View complete fee details</a>.
+            Affordable dental education with government-regulated fees. <a href="/fees-structure/" className="text-[#7cb983] underline hover:text-[#6ba872]">View complete fee details</a>.
           </p>
 
           <div className="overflow-x-auto">
@@ -1607,7 +1607,7 @@ export default function BDSProgram() {
 
           <p className="text-sm text-gray-300 mt-8">
             <a href="/admission/" className="underline hover:text-white">Admission Process</a> &nbsp;|&nbsp;
-            <a href="/fee-structure/" className="underline hover:text-white">Fee Structure</a> &nbsp;|&nbsp;
+            <a href="/fees-structure/" className="underline hover:text-white">Fee Structure</a> &nbsp;|&nbsp;
             <a href="/facilities/hostel/" className="underline hover:text-white">Hostel Facilities</a> &nbsp;|&nbsp;
             <a href="/best-dental-college-tamil-nadu/" className="underline hover:text-white">Why JKKN</a> &nbsp;|&nbsp;
             <a href="/blog/" className="underline hover:text-white">Blog</a> &nbsp;|&nbsp;

@@ -39,7 +39,7 @@ export default function NamakkalPage() {
     },
     {
       q: 'What is the fee structure for BDS at JKKN Dental College?',
-      a: 'BDS fee structure at JKKN Dental College & Hospital, Namakkal district, varies by quota (Government/Management). For official and current fee details, visit dental.jkkn.ac.in/fee-structure/ or call +91 9345855001. Fees are regulated by Tamil Nadu DME and are subject to change per government guidelines.',
+      a: 'BDS fee structure at JKKN Dental College & Hospital, Namakkal district, varies by quota (Government/Management). For official and current fee details, visit dental.jkkn.ac.in/fees-structure/ or call +91 9345855001. Fees are regulated by Tamil Nadu DME and are subject to change per government guidelines.',
     },
     {
       q: 'What are the placements from JKKN Dental College?',
@@ -190,7 +190,7 @@ export default function NamakkalPage() {
         <div className="flex flex-col sm:flex-row gap-4 mt-6 items-center">
           <Link href="/admissions/" className="text-white/70 hover:text-white text-sm underline underline-offset-2 transition-colors">Admission Process</Link>
           <span className="hidden sm:block text-white/30">|</span>
-          <Link href="/fee-structure/" className="text-white/70 hover:text-white text-sm underline underline-offset-2 transition-colors">Fee Structure</Link>
+          <Link href="/fees-structure/" className="text-white/70 hover:text-white text-sm underline underline-offset-2 transition-colors">Fee Structure</Link>
         </div>
       </section>
 
@@ -378,19 +378,19 @@ export default function NamakkalPage() {
                     <td className="px-5 py-4 font-semibold text-gray-900">BDS</td>
                     <td className="px-5 py-4 text-gray-600">5 years (4 + 1 internship)</td>
                     <td className="px-5 py-4 text-gray-600">100</td>
-                    <td className="px-5 py-4 text-gray-600">As per Tamil Nadu DME regulations. <Link href="/fee-structure/" className="text-[#006837] hover:underline font-medium">View official fee structure →</Link></td>
+                    <td className="px-5 py-4 text-gray-600">As per Tamil Nadu DME regulations. <Link href="/fees-structure/" className="text-[#006837] hover:underline font-medium">View official fee structure →</Link></td>
                   </tr>
                   <tr className="bg-[#FBFBEE]">
                     <td className="px-5 py-4 font-semibold text-gray-900">MDS</td>
                     <td className="px-5 py-4 text-gray-600">3 years</td>
                     <td className="px-5 py-4 text-gray-600">30</td>
-                    <td className="px-5 py-4 text-gray-600">As per Tamil Nadu DOGE regulations. <Link href="/fee-structure/" className="text-[#006837] hover:underline font-medium">View official fee structure →</Link></td>
+                    <td className="px-5 py-4 text-gray-600">As per Tamil Nadu DOGE regulations. <Link href="/fees-structure/" className="text-[#006837] hover:underline font-medium">View official fee structure →</Link></td>
                   </tr>
                 </tbody>
               </table>
             </div>
             <p className="text-gray-400 text-xs mt-3 leading-relaxed">
-              Fee figures vary by quota (Government/Management). For official and current fee structure, visit <Link href="/fee-structure/" className="text-[#006837] hover:underline">dental.jkkn.ac.in/fee-structure/</Link>. Fees are regulated by Tamil Nadu DME and subject to change per government guidelines.
+              Fee figures vary by quota (Government/Management). For official and current fee structure, visit <Link href="/fees-structure/" className="text-[#006837] hover:underline">dental.jkkn.ac.in/fees-structure/</Link>. Fees are regulated by Tamil Nadu DME and subject to change per government guidelines.
             </p>
           </div>
 

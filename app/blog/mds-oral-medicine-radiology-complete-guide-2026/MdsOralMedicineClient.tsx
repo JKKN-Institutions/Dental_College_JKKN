@@ -281,7 +281,7 @@ export default function MdsOralMedicineClient({ faqs }: { faqs: FAQ[] }) {
                 NRI Quotas. Among MDS specialisations, Oral Medicine fees are typically{' '}
                 <strong>relatively more accessible</strong> due to lower competition. Current
                 figures published at{' '}
-                <a href="/fee-structure/" className="text-[#006837] font-semibold hover:underline">JKKN Fee Structure page</a>.
+                <a href="/fees-structure/" className="text-[#006837] font-semibold hover:underline">JKKN Fee Structure page</a>.
                 PG students receive a <strong>Tamil Nadu government PG stipend</strong> and are
                 eligible for SC/ST/OBC scholarships, central PG schemes and bank education loans.
               </p>

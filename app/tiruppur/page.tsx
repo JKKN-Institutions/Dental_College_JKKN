@@ -284,7 +284,7 @@ export default function TiruppurPage() {
             ))}
           </div>
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/fee-structure/" className="inline-block bg-white border border-[#7cb983] hover:bg-[#e8f5e9] text-[#006837] font-semibold px-6 py-3 rounded-xl transition-colors text-sm">
+            <Link href="/fees-structure/" className="inline-block bg-white border border-[#7cb983] hover:bg-[#e8f5e9] text-[#006837] font-semibold px-6 py-3 rounded-xl transition-colors text-sm">
               View Fees Structure
             </Link>
             <Link href="/admissions/" className="inline-block bg-[#006837] hover:bg-[#002309] text-white font-semibold px-6 py-3 rounded-xl transition-colors text-sm">

@@ -302,7 +302,7 @@ export default function MdsProsthodonticsClient({ faqs }: { faqs: FAQ[] }) {
               </ul>
               <p className="text-gray-600 leading-relaxed mb-4">
                 Current exact fees published at{' '}
-                <a href="/fee-structure/" className="text-[#006837] font-semibold hover:underline">JKKN Fee Structure page</a>.
+                <a href="/fees-structure/" className="text-[#006837] font-semibold hover:underline">JKKN Fee Structure page</a>.
                 PG students receive a <strong>Tamil Nadu government stipend</strong> (revised
                 periodically) and are eligible for SC/ST/OBC scholarship schemes plus education
                 loans through bank tie-ups.
