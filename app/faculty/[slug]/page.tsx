@@ -40,6 +40,8 @@ export async function generateMetadata({
     .select('name, designation, department')
     .or(`slug.eq.${slug},id.eq.${slug}`)
     .eq('college_id', collegeIdMeta)
+    .eq('is_active', true)
+    .eq('source', 'myjkkn')
     .single();
 
   if (!data) {
@@ -47,7 +49,8 @@ export async function generateMetadata({
       .from('faculty')
       .select('name, designation, department')
       .eq('college_id', collegeIdMeta)
-      .eq('is_active', true);
+      .eq('is_active', true)
+      .eq('source', 'myjkkn');
     data = all?.find((f) => toSlug(f.name) === slug) ?? null;
   }
 
@@ -93,6 +96,7 @@ export default async function FacultyProfilePage({
     .or(`slug.eq.${slug},id.eq.${slug}`)
     .eq('college_id', collegeId)
     .eq('is_active', true)
+    .eq('source', 'myjkkn')
     .single();
 
   if (!m) {
@@ -100,13 +104,15 @@ export default async function FacultyProfilePage({
       .from('faculty')
       .select('id, name')
       .eq('college_id', collegeId)
-      .eq('is_active', true);
+      .eq('is_active', true)
+      .eq('source', 'myjkkn');
     const match = names?.find((f) => toSlug(f.name) === slug);
     if (match) {
       const { data: byId } = await supabase
         .from('faculty')
         .select(fullSelect)
         .eq('id', match.id)
+        .eq('source', 'myjkkn')
         .single();
       m = byId;
     }
