@@ -43,7 +43,7 @@ export const siteContent = {
           { label: "FINANCE OFFICER", href: "/administration/finance-officer" },
           { label: "GOVERNING BODY", href: "/administration/governing-body" },
           { label: "ACADEMIC COUNCIL", href: "/administration/academic-council" },
-          { label: "INTERNAL COMPLIANTS COMMITTEE", href: "/administration/internal-compliants-committee" },
+          { label: "INTERNAL COMPLAINTS COMMITTEE", href: "/administration/internal-complaints-committee" },
           { label: "ACADEMIC LEADERSHIP", href: "/administration/academic-leadership" }
         ]
       },

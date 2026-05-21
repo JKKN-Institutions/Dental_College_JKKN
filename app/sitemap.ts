@@ -1,10 +1,51 @@
+import { execSync } from 'node:child_process'
 import { MetadataRoute } from 'next'
 import { createClient } from '@/lib/supabase/server'
 import { siteConfig } from '@/lib/site-config'
 
+// Build a single map of file -> last-commit-date by running `git log` ONCE
+// (instead of per-file). This makes lastmod values accurate per-page rather
+// than uniform "build time" — Google rewards stable, truthful lastmod signals.
+function buildGitLastModMap(): Map<string, Date> {
+  const map = new Map<string, Date>()
+  try {
+    const output = execSync(
+      'git log --pretty=format:%cI --name-only -- app/',
+      { encoding: 'utf-8', maxBuffer: 32 * 1024 * 1024 },
+    )
+    let currentDate: Date | null = null
+    for (const line of output.split('\n')) {
+      const trimmed = line.trim()
+      if (/^\d{4}-\d{2}-\d{2}T/.test(trimmed)) {
+        currentDate = new Date(trimmed)
+      } else if (trimmed && currentDate) {
+        // Most recent commit wins (git log is newest-first; only set if unset).
+        const normalized = trimmed.replace(/\\/g, '/')
+        if (!map.has(normalized)) map.set(normalized, currentDate)
+      }
+    }
+  } catch {
+    // git unavailable (e.g. shallow CI clone) — fall back to build time.
+  }
+  return map
+}
+
+// Resolve a sitemap URL (relative path, e.g. "/about/") to a Date from git
+// history. Falls back to `fallback` when the heuristic can't locate a file.
+function resolveLastMod(
+  fileMap: Map<string, Date>,
+  routePath: string,
+  fallback: Date,
+): Date {
+  const slug = routePath.replace(/^\/+|\/+$/g, '')
+  const candidate = slug ? `app/${slug}/page.tsx` : 'app/page.tsx'
+  return fileMap.get(candidate) ?? fallback
+}
+
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = 'https://dental.jkkn.ac.in'
   const now = new Date()
+  const gitLastMod = buildGitLastModMap()
 
   // Fetch dynamic blog posts from Supabase
   let blogUrls: MetadataRoute.Sitemap = []
@@ -201,7 +242,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${baseUrl}/facilities/ambulance-services/`, lastModified: now, changeFrequency: 'yearly', priority: 0.4 },
     { url: `${baseUrl}/facilities/barrier-free-environment/`, lastModified: now, changeFrequency: 'yearly', priority: 0.4 },
     { url: `${baseUrl}/facilities/seminar-hall/`, lastModified: now, changeFrequency: 'yearly', priority: 0.4 },
-    { url: `${baseUrl}/facilities/bank-&-post-office/`, lastModified: now, changeFrequency: 'yearly', priority: 0.4 },
+    { url: `${baseUrl}/facilities/bank-and-post-office/`, lastModified: now, changeFrequency: 'yearly', priority: 0.4 },
 
     // Administration
     { url: `${baseUrl}/administration/principals-message/`, lastModified: now, changeFrequency: 'yearly', priority: 0.6 },
@@ -209,7 +250,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${baseUrl}/administration/academic-council/`, lastModified: now, changeFrequency: 'yearly', priority: 0.5 },
     { url: `${baseUrl}/administration/governing-body/`, lastModified: now, changeFrequency: 'yearly', priority: 0.5 },
     { url: `${baseUrl}/administration/finance-officer/`, lastModified: now, changeFrequency: 'yearly', priority: 0.4 },
-    { url: `${baseUrl}/administration/internal-compliants-committee/`, lastModified: now, changeFrequency: 'yearly', priority: 0.4 },
+    { url: `${baseUrl}/administration/internal-complaints-committee/`, lastModified: now, changeFrequency: 'yearly', priority: 0.4 },
 
     // Committees
     { url: `${baseUrl}/committee/anti-ragging-committee/`, lastModified: now, changeFrequency: 'yearly', priority: 0.5 },
@@ -220,15 +261,15 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${baseUrl}/committee/finance-committee/`, lastModified: now, changeFrequency: 'yearly', priority: 0.5 },
     { url: `${baseUrl}/committee/mentoring-committee/`, lastModified: now, changeFrequency: 'yearly', priority: 0.5 },
     { url: `${baseUrl}/committee/examination-committee/`, lastModified: now, changeFrequency: 'yearly', priority: 0.5 },
-    { url: `${baseUrl}/committee/hostel-advisory-&-welfare-committee/`, lastModified: now, changeFrequency: 'yearly', priority: 0.4 },
+    { url: `${baseUrl}/committee/hostel-advisory-and-welfare-committee/`, lastModified: now, changeFrequency: 'yearly', priority: 0.4 },
     { url: `${baseUrl}/committee/sedg-cell/`, lastModified: now, changeFrequency: 'yearly', priority: 0.4 },
     { url: `${baseUrl}/committee/international-student-cell-committee/`, lastModified: now, changeFrequency: 'yearly', priority: 0.4 },
-    { url: `${baseUrl}/committee/physical-education-&-extra-currucular-activities-committee/`, lastModified: now, changeFrequency: 'yearly', priority: 0.4 },
+    { url: `${baseUrl}/committee/physical-education-and-extra-curricular-activities-committee/`, lastModified: now, changeFrequency: 'yearly', priority: 0.4 },
     { url: `${baseUrl}/committee/physical-infrastructure-and-purchase-maintenance-committee/`, lastModified: now, changeFrequency: 'yearly', priority: 0.4 },
     { url: `${baseUrl}/committee/disciplinary-committee/`, lastModified: now, changeFrequency: 'yearly', priority: 0.4 },
     { url: `${baseUrl}/committee/patient-welfare-committee/`, lastModified: now, changeFrequency: 'yearly', priority: 0.4 },
     { url: `${baseUrl}/committee/student-council/`, lastModified: now, changeFrequency: 'yearly', priority: 0.4 },
-    { url: `${baseUrl}/committee/internal-compliants-committee-icc/`, lastModified: now, changeFrequency: 'yearly', priority: 0.4 },
+    { url: `${baseUrl}/committee/internal-complaints-committee-icc/`, lastModified: now, changeFrequency: 'yearly', priority: 0.4 },
     { url: `${baseUrl}/committee/dental-education-department/`, lastModified: now, changeFrequency: 'yearly', priority: 0.4 },
     { url: `${baseUrl}/committee/library-and-learning-resources-committee/`, lastModified: now, changeFrequency: 'yearly', priority: 0.4 },
 
@@ -244,7 +285,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
     // Facilities — additional
     { url: `${baseUrl}/facilities/`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${baseUrl}/facilities/accessibility-&-inclusion-at-jkkndch/`, lastModified: now, changeFrequency: 'yearly', priority: 0.4 },
+    { url: `${baseUrl}/facilities/accessibility-and-inclusion-at-jkkndch/`, lastModified: now, changeFrequency: 'yearly', priority: 0.4 },
     { url: `${baseUrl}/facilities/privacy-policy/`, lastModified: now, changeFrequency: 'yearly', priority: 0.3 },
 
     // Others
@@ -264,5 +305,16 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${baseUrl}/mandatory-disclosures/letter-of-undertaking/`, lastModified: now, changeFrequency: 'yearly', priority: 0.4 },
   ]
 
-  return [...staticPages, ...blogUrls, ...campusBlogUrls, ...eventUrls]
+  // Replace placeholder `now` lastModified values with the real per-file
+  // git commit date (where derivable from the URL). Hardcoded ISO strings
+  // (NIRF dates, syllabus revisions, etc.) are preserved unchanged.
+  const staticPagesWithGitDates: MetadataRoute.Sitemap = staticPages.map(entry => {
+    if (entry.lastModified instanceof Date && entry.lastModified.getTime() === now.getTime()) {
+      const path = entry.url.replace(baseUrl, '')
+      return { ...entry, lastModified: resolveLastMod(gitLastMod, path, now) }
+    }
+    return entry
+  })
+
+  return [...staticPagesWithGitDates, ...blogUrls, ...campusBlogUrls, ...eventUrls]
 }

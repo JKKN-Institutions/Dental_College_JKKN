@@ -14,24 +14,24 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Bank & Post Office | JKKN Dental Campus',
     description: 'JKKN campus features 24/7 ATM, on-campus post office, and complete banking services including domestic/international mail and savings schemes for students.',
-    url: 'https://dental.jkkn.ac.in/facilities/bank-&-post-office/',
+    url: 'https://dental.jkkn.ac.in/facilities/bank-and-post-office/',
     type: 'website',
     siteName: 'JKKN Dental College & Hospital',
   },
 };
 
 export default function BankPostOffice() {
-  const breadcrumbSchema = generateBreadcrumbSchema('/facilities/bank-&-post-office');
+  const breadcrumbSchema = generateBreadcrumbSchema('/facilities/bank-and-post-office');
   const webPageSchema = generateWebPageSchema({
     title: 'Bank & Post Office | JKKN Dental Campus',
     description: 'JKKN campus features 24/7 ATM, on-campus post office, and complete banking services including domestic/international mail and savings schemes for students.',
-    url: 'https://dental.jkkn.ac.in/facilities/bank-&-post-office/',
+    url: 'https://dental.jkkn.ac.in/facilities/bank-and-post-office/',
     dateModified: '2026-03-18',
   });
   const speakableSchema = generateSpeakableWebPageSchema({
     title: 'Bank & Post Office | JKKN Dental Campus',
     description: 'JKKN campus features 24/7 ATM, on-campus post office, and complete banking services including domestic/international mail and savings schemes for students.',
-    url: 'https://dental.jkkn.ac.in/facilities/bank-&-post-office/',
+    url: 'https://dental.jkkn.ac.in/facilities/bank-and-post-office/',
     speakableCssSelectors: ['h1', '.hero-description', 'article p'],
   });
 

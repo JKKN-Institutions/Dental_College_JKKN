@@ -10,13 +10,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Internal Complaints Committee (ICC) | JKKN Dental College',
     description: 'Addressing workplace harassment and ensuring safe environment. View ICC members and complaint redressal procedures at JKKN.',
-    url: 'https://dental.jkkn.ac.in/committee/internal-compliants-committee-icc/',
+    url: 'https://dental.jkkn.ac.in/committee/internal-complaints-committee-icc/',
     type: 'website',
     siteName: 'JKKN Dental College & Hospital',
   },
 };
 
-const breadcrumbSchema = generateBreadcrumbSchema('/committee/internal-compliants-committee-icc/');
+const breadcrumbSchema = generateBreadcrumbSchema('/committee/internal-complaints-committee-icc/');
 
 export default function InternalCompliantsCommittee() {
   return (

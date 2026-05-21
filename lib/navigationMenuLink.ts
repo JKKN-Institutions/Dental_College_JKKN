@@ -196,7 +196,7 @@ export function GetDentalCollegePages(pathname: string): MenuGroup[] {
             { href: '/administration/governing-body', label: 'Governing Body', icon: Landmark, active: pathname === '/administration/governing-body' },
             { href: '/administration/academic-council', label: 'Academic Council', icon: ScrollText, active: pathname === '/administration/academic-council' },
             { href: '/administration/academic-leadership', label: 'Academic Leadership', icon: Crown, active: pathname === '/administration/academic-leadership' },
-            { href: '/administration/internal-compliants-committee', label: 'Internal Complaints Committee', icon: ShieldAlert, active: pathname === '/administration/internal-compliants-committee' }
+            { href: '/administration/internal-complaints-committee', label: 'Internal Complaints Committee', icon: ShieldAlert, active: pathname === '/administration/internal-complaints-committee' }
           ]
         }
       ]
@@ -319,7 +319,7 @@ export function GetDentalCollegePages(pathname: string): MenuGroup[] {
           active: pathname.startsWith('/committee'),
           submenus: [
             { href: '/committee/student-council/view-document', label: 'Student Council', icon: UsersRound, active: pathname.includes('/student-council') },
-            { href: '/committee/internal-compliants-committee-icc', label: 'ICC', icon: MessageCircle, active: pathname.includes('/internal-compliants') },
+            { href: '/committee/internal-complaints-committee-icc', label: 'ICC', icon: MessageCircle, active: pathname.includes('/internal-complaints') },
             { href: '/committee/student-grievance-redressal-committee-sgrc', label: 'SGRC', icon: AlertTriangle, active: pathname.includes('/student-grievance') },
             { href: '/committee/placement-cell-cdc/list-of-events', label: 'Placement Cell / CDC', icon: Briefcase, active: pathname.includes('/placement-cell') },
             { href: '/committee/anti-ragging-committee/view-committee-members', label: 'Anti-Ragging Committee', icon: ShieldOff, active: pathname.includes('/anti-ragging') },
@@ -333,9 +333,9 @@ export function GetDentalCollegePages(pathname: string): MenuGroup[] {
             { href: '/committee/international-student-cell-committee', label: 'International Student Cell', icon: Globe, active: pathname.includes('/international-student') },
             { href: '/committee/dental-education-department', label: 'Dental Education Department', icon: School, active: pathname.includes('/dental-education') },
             { href: '/committee/physical-infrastructure-and-purchase-maintenance-committee', label: 'Physical Infrastructure Committee', icon: Wrench, active: pathname.includes('/physical-infrastructure') },
-            { href: '/committee/hostel-advisory-&-welfare-committee', label: 'Hostel Advisory & Welfare', icon: BedDouble, active: pathname.includes('/hostel-advisory') },
+            { href: '/committee/hostel-advisory-and-welfare-committee', label: 'Hostel Advisory & Welfare', icon: BedDouble, active: pathname.includes('/hostel-advisory') },
             { href: '/committee/finance-committee', label: 'Finance Committee', icon: DollarSign, active: pathname === '/committee/finance-committee' },
-            { href: '/committee/physical-education-&-extra-currucular-activities-committee', label: 'Physical Education Committee', icon: Dumbbell, active: pathname.includes('/physical-education') },
+            { href: '/committee/physical-education-and-extra-curricular-activities-committee', label: 'Physical Education Committee', icon: Dumbbell, active: pathname.includes('/physical-education') },
             { href: '/committee/ncc/nss', label: 'NCC/NSS', icon: Flag, active: pathname.includes('/ncc/nss') }
           ]
         }
@@ -365,12 +365,12 @@ export function GetDentalCollegePages(pathname: string): MenuGroup[] {
           icon: Building,
           active: pathname.startsWith('/facilities'),
           submenus: [
-            { href: '/facilities/accessibility-&-inclusion-at-jkkndch', label: 'Accessibility & Inclusion', icon: Accessibility, active: pathname.includes('/accessibility') },
+            { href: '/facilities/accessibility-and-inclusion-at-jkkndch', label: 'Accessibility & Inclusion', icon: Accessibility, active: pathname.includes('/accessibility') },
             { href: 'https://outreach.dental.jkkn.ac.in/', label: 'Outreach Request', icon: ExternalLink, active: false },
             { href: '/facilities/food-court', label: 'Food Court', icon: Coffee, active: pathname === '/facilities/food-court' },
             { href: '/facilities/transport', label: 'Transport', icon: Bus, active: pathname === '/facilities/transport' },
             { href: '/facilities/sports-club', label: 'Sports Club', icon: Medal, active: pathname === '/facilities/sports-club' },
-            { href: '/facilities/bank-&-post-office', label: 'Bank & Post Office', icon: PiggyBank, active: pathname.includes('/bank-') },
+            { href: '/facilities/bank-and-post-office', label: 'Bank & Post Office', icon: PiggyBank, active: pathname.includes('/bank-') },
             { href: '/facilities/health-facilities', label: 'Health Facilities', icon: HeartPulse, active: pathname === '/facilities/health-facilities' },
             { href: '/facilities/ambulance-services', label: 'Ambulance Services', icon: Ambulance, active: pathname === '/facilities/ambulance-services' },
             { href: '/facilities/barrier-free-environment', label: 'Barrier Free Environment', icon: TreeDeciduous, active: pathname.includes('/barrier-free') },

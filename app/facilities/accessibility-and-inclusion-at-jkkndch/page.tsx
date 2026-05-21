@@ -13,24 +13,24 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Accessibility & Inclusion at JKKNDCH - Barrier-Free',
     description: 'JKKN Dental College ensures accessibility for all with wheelchair access, Braille signage, priority services, and inclusive facilities for patients and visitors.',
-    url: 'https://dental.jkkn.ac.in/facilities/accessibility-&-inclusion-at-jkkndch/',
+    url: 'https://dental.jkkn.ac.in/facilities/accessibility-and-inclusion-at-jkkndch/',
     type: 'website',
     siteName: 'JKKN Dental College & Hospital',
   },
 };
 
 export default function AccessibilityInclusion() {
-  const breadcrumbSchema = generateBreadcrumbSchema('/facilities/accessibility-&-inclusion-at-jkkndch');
+  const breadcrumbSchema = generateBreadcrumbSchema('/facilities/accessibility-and-inclusion-at-jkkndch');
   const webPageSchema = generateWebPageSchema({
     title: 'Accessibility & Inclusion at JKKNDCH - Barrier-Free',
     description: 'JKKN Dental College ensures accessibility for all with wheelchair access, Braille signage, priority services, and inclusive facilities for patients and visitors.',
-    url: 'https://dental.jkkn.ac.in/facilities/accessibility-&-inclusion-at-jkkndch/',
+    url: 'https://dental.jkkn.ac.in/facilities/accessibility-and-inclusion-at-jkkndch/',
     dateModified: '2026-03-18',
   });
   const speakableSchema = generateSpeakableWebPageSchema({
     title: 'Accessibility & Inclusion at JKKNDCH - Barrier-Free',
     description: 'JKKN Dental College ensures accessibility for all with wheelchair access, Braille signage, priority services, and inclusive facilities for patients and visitors.',
-    url: 'https://dental.jkkn.ac.in/facilities/accessibility-&-inclusion-at-jkkndch/',
+    url: 'https://dental.jkkn.ac.in/facilities/accessibility-and-inclusion-at-jkkndch/',
     speakableCssSelectors: ['h1', '.hero-description', 'article p'],
   });
 

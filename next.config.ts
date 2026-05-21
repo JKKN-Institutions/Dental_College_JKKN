@@ -140,11 +140,11 @@ const nextConfig: NextConfig = {
       { source: '/grievance-redressal-committee', destination: '/committee/student-grievance-redressal-committee-sgrc', permanent: true },
       { source: '/parent-teacher-association/', destination: '/committee', permanent: true },
       { source: '/parent-teacher-association', destination: '/committee', permanent: true },
-      { source: '/women-empowerment-cell-sexual-harassment-committee/', destination: '/committee/internal-compliants-committee-icc', permanent: true },
-      { source: '/women-empowerment-cell-sexual-harassment-committee', destination: '/committee/internal-compliants-committee-icc', permanent: true },
+      { source: '/women-empowerment-cell-sexual-harassment-committee/', destination: '/committee/internal-complaints-committee-icc', permanent: true },
+      { source: '/women-empowerment-cell-sexual-harassment-committee', destination: '/committee/internal-complaints-committee-icc', permanent: true },
       { source: '/dental-education-committee/', destination: '/committee/dental-education-department', permanent: true },
       { source: '/dental-education-committee-2/', destination: '/committee/dental-education-department', permanent: true },
-      { source: '/hostel-advisory-welfare-committee-2/', destination: '/committee/hostel-advisory-&-welfare-committee', permanent: true },
+      { source: '/hostel-advisory-welfare-committee-2/', destination: '/committee/hostel-advisory-and-welfare-committee', permanent: true },
       { source: '/student-council-2/', destination: '/committee/student-council', permanent: true },
       { source: '/nss/', destination: '/committee/ncc/nss', permanent: true },
       { source: '/nss', destination: '/committee/ncc/nss', permanent: true },
@@ -211,6 +211,27 @@ const nextConfig: NextConfig = {
       { source: '/new-4/', destination: '/', permanent: true },
       { source: '/legal/:path*', destination: '/', permanent: true },
       { source: '/digital-campus-2', destination: '/', permanent: true },
+
+      // URL cleanup (2026-05-21): remove & from path; fix "compliants" -> "complaints"; fix "currucular" -> "curricular"
+      // Old & URLs -> new -and- URLs (consolidate canonical)
+      { source: '/committee/hostel-advisory-&-welfare-committee/', destination: '/committee/hostel-advisory-and-welfare-committee', permanent: true },
+      { source: '/committee/hostel-advisory-&-welfare-committee', destination: '/committee/hostel-advisory-and-welfare-committee', permanent: true },
+      { source: '/committee/physical-education-&-extra-currucular-activities-committee/', destination: '/committee/physical-education-and-extra-curricular-activities-committee', permanent: true },
+      { source: '/committee/physical-education-&-extra-currucular-activities-committee', destination: '/committee/physical-education-and-extra-curricular-activities-committee', permanent: true },
+      { source: '/facilities/bank-&-post-office/', destination: '/facilities/bank-and-post-office', permanent: true },
+      { source: '/facilities/bank-&-post-office', destination: '/facilities/bank-and-post-office', permanent: true },
+      { source: '/facilities/accessibility-&-inclusion-at-jkkndch/', destination: '/facilities/accessibility-and-inclusion-at-jkkndch', permanent: true },
+      { source: '/facilities/accessibility-&-inclusion-at-jkkndch', destination: '/facilities/accessibility-and-inclusion-at-jkkndch', permanent: true },
+      // Misspellings: compliants -> complaints
+      { source: '/committee/internal-compliants-committee-icc/', destination: '/committee/internal-complaints-committee-icc', permanent: true },
+      { source: '/committee/internal-compliants-committee-icc', destination: '/committee/internal-complaints-committee-icc', permanent: true },
+      { source: '/administration/internal-compliants-committee/', destination: '/administration/internal-complaints-committee', permanent: true },
+      { source: '/administration/internal-compliants-committee', destination: '/administration/internal-complaints-committee', permanent: true },
+      // Deleted standalone duplicates -> canonical deep /committee/* paths
+      { source: '/hostel-advisory-welfare-committee/', destination: '/committee/hostel-advisory-and-welfare-committee', permanent: true },
+      { source: '/hostel-advisory-welfare-committee', destination: '/committee/hostel-advisory-and-welfare-committee', permanent: true },
+      { source: '/physical-education-extra-currucular-activities-committee/', destination: '/committee/physical-education-and-extra-curricular-activities-committee', permanent: true },
+      { source: '/physical-education-extra-currucular-activities-committee', destination: '/committee/physical-education-and-extra-curricular-activities-committee', permanent: true },
     ];
   },
   async headers() {
@@ -276,7 +297,8 @@ const nextConfig: NextConfig = {
       { source: '/finance-officer', destination: '/administration/finance-officer' },
       { source: '/governing-body', destination: '/administration/governing-body' },
       { source: '/academic-council', destination: '/administration/academic-council' },
-      { source: '/internal-compliants-committee', destination: '/administration/internal-compliants-committee' },
+      { source: '/internal-compliants-committee', destination: '/administration/internal-complaints-committee' },
+      { source: '/internal-complaints-committee', destination: '/administration/internal-complaints-committee' },
       { source: '/academic-leadership', destination: '/administration/academic-leadership' },
 
       // Academics section - Programs
@@ -366,7 +388,8 @@ const nextConfig: NextConfig = {
 
       // Committee section
       { source: '/student-council', destination: '/committee/student-council' },
-      { source: '/internal-compliants-committee-icc', destination: '/committee/internal-compliants-committee-icc' },
+      { source: '/internal-compliants-committee-icc', destination: '/committee/internal-complaints-committee-icc' },
+      { source: '/internal-complaints-committee-icc', destination: '/committee/internal-complaints-committee-icc' },
       { source: '/student-grievance-redressal-committee-sgrc', destination: '/committee/student-grievance-redressal-committee-sgrc' },
       { source: '/placement-cell-cdc', destination: '/committee/placement-cell-cdc' },
       { source: '/list-of-events', destination: '/committee/placement-cell-cdc/list-of-events' },
@@ -386,12 +409,12 @@ const nextConfig: NextConfig = {
       { source: '/institutional-biosafety-committee-ibsc', destination: '/committee/institutional-biosafety-committee-ibsc' },
       { source: '/rti-committee', destination: '/committee/rti-committee' },
       { source: '/physical-infrastructure-and-purchase-maintenance-committee', destination: '/committee/physical-infrastructure-and-purchase-maintenance-committee' },
-      { source: '/hostel-advisory-welfare-committee', destination: '/committee/hostel-advisory-welfare-committee' },
+      // Note: /hostel-advisory-welfare-committee and /physical-education-extra-currucular-activities-committee
+      // now handled by 301 redirects (see redirects() above) to consolidate duplicates into canonical /committee/* paths.
       { source: '/library-and-learning-resources-committee', destination: '/committee/library-and-learning-resources-committee' },
-      { source: '/physical-education-extra-currucular-activities-committee', destination: '/committee/physical-education-extra-currucular-activities-committee' },
 
       // Facilities section
-      { source: '/accessibility-inclusion-at-jkkndch', destination: '/facilities/accessibility-&-inclusion-at-jkkndch' },
+      { source: '/accessibility-inclusion-at-jkkndch', destination: '/facilities/accessibility-and-inclusion-at-jkkndch' },
       { source: '/library', destination: '/facilities/library' },
       { source: '/labs', destination: '/facilities/labs' },
       { source: '/food-court', destination: '/facilities/food-court' },
@@ -402,7 +425,7 @@ const nextConfig: NextConfig = {
       { source: '/seminar-hall', destination: '/facilities/seminar-hall' },
       { source: '/sports-club', destination: '/facilities/sports-club' },
       { source: '/auditorium', destination: '/facilities/auditorium' },
-      { source: '/bank-post-office', destination: '/facilities/bank-&-post-office' },
+      { source: '/bank-post-office', destination: '/facilities/bank-and-post-office' },
       { source: '/digital-class-room', destination: '/facilities/digital-class-room' },
       { source: '/health-facilities', destination: '/facilities/health-facilities' },
       { source: '/wi-fi-campus', destination: '/facilities/wi-fi-campus' },

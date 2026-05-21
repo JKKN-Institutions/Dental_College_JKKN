@@ -127,7 +127,7 @@ export function GetRoleBasedPages(
             { href: '/facilities/wifi', label: 'WIFI', active: pathname === '/facilities/wifi' },
             { href: '/facilities/ambulance-services', label: 'Ambulance Services', active: pathname === '/facilities/ambulance-services' },
             { href: '/facilities/food-court', label: 'Food Court', active: pathname === '/facilities/food-court' },
-            { href: '/facilities/bank-post-office', label: 'Bank & Post Office', active: pathname === '/facilities/bank-post-office' },
+            { href: '/facilities/bank-and-post-office', label: 'Bank & Post Office', active: pathname === '/facilities/bank-and-post-office' },
             { href: '/facilities/hospital', label: 'Hospital', active: pathname === '/facilities/hospital' },
             { href: '/facilities/seminar-hall', label: 'Seminar Hall', active: pathname === '/facilities/seminar-hall' }
           ]

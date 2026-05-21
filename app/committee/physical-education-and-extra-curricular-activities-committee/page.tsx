@@ -13,24 +13,24 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Physical Education & Extracurricular Activities | JKKN',
     description: 'Promoting sports, physical fitness, and extracurricular activities. View committee members fostering holistic student development.',
-    url: 'https://dental.jkkn.ac.in/committee/physical-education-&-extra-currucular-activities-committee/',
+    url: 'https://dental.jkkn.ac.in/committee/physical-education-and-extra-curricular-activities-committee/',
     type: 'website',
     siteName: 'JKKN Dental College & Hospital',
   },
 };
 
 export default function PhysicalEducationExtraCurricularCommittee() {
-  const breadcrumbSchema = generateBreadcrumbSchema('/committee/physical-education-&-extra-currucular-activities-committee');
+  const breadcrumbSchema = generateBreadcrumbSchema('/committee/physical-education-and-extra-curricular-activities-committee');
   const webPageSchema = generateWebPageSchema({
     title: 'Physical Education Committee | JKKN Dental',
     description: 'Promoting sports, physical fitness, and extracurricular activities. View committee members fostering holistic student development.',
-    url: 'https://dental.jkkn.ac.in/committee/physical-education-&-extra-currucular-activities-committee/',
+    url: 'https://dental.jkkn.ac.in/committee/physical-education-and-extra-curricular-activities-committee/',
     dateModified: '2026-03-18',
   });
   const speakableSchema = generateSpeakableWebPageSchema({
     title: 'Physical Education & Extracurricular Activities | JKKN',
     description: 'Promoting sports, physical fitness, and extracurricular activities. View committee members fostering holistic student development.',
-    url: 'https://dental.jkkn.ac.in/committee/physical-education-&-extra-currucular-activities-committee/',
+    url: 'https://dental.jkkn.ac.in/committee/physical-education-and-extra-curricular-activities-committee/',
     speakableCssSelectors: ['h1', '.hero-description', 'article p'],
   });
 
