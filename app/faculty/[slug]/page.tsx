@@ -36,7 +36,9 @@ export async function generateMetadata({
 }: {
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
-  const { slug } = await params;
+  const rawSlug = (await params).slug;
+  const slug = decodeURIComponent(rawSlug);
+  const normalized = toSlug(slug);
   const supabase = await createClient();
   const collegeIdMeta = process.env.NEXT_PUBLIC_COLLEGE_ID;
 
@@ -46,7 +48,7 @@ export async function generateMetadata({
     .select('name, designation, department')
     .eq('college_id', collegeIdMeta)
     .eq('is_active', true);
-  metaQuery = isUuidMeta ? metaQuery.eq('id', slug) : metaQuery.eq('slug', slug);
+  metaQuery = isUuidMeta ? metaQuery.eq('id', slug) : metaQuery.eq('slug', normalized);
   let { data } = await metaQuery.maybeSingle();
 
   if (!data) {
@@ -55,7 +57,7 @@ export async function generateMetadata({
       .select('name, designation, department')
       .eq('college_id', collegeIdMeta)
       .eq('is_active', true);
-    data = all?.find((f) => toSlug(f.name) === slug) ?? null;
+    data = all?.find((f) => toSlug(f.name) === normalized) ?? null;
   }
 
   if (!data) return { title: 'Faculty | JKKN Dental College & Hospital' };
@@ -79,7 +81,9 @@ export default async function FacultyProfilePage({
 }: {
   params: Promise<{ slug: string }>;
 }) {
-  const { slug } = await params;
+  const rawSlug = (await params).slug;
+  const slug = decodeURIComponent(rawSlug);
+  const normalized = toSlug(slug);
   const supabase = await createClient();
   const collegeId = process.env.NEXT_PUBLIC_COLLEGE_ID;
 
@@ -100,7 +104,7 @@ export default async function FacultyProfilePage({
     .select(fullSelect)
     .eq('college_id', collegeId)
     .eq('is_active', true);
-  primary = isUuid ? primary.eq('id', slug) : primary.eq('slug', slug);
+  primary = isUuid ? primary.eq('id', slug) : primary.eq('slug', normalized);
   const primaryRes = await primary.maybeSingle();
   let m = primaryRes.data;
 
@@ -110,7 +114,7 @@ export default async function FacultyProfilePage({
       .select('id, name, slug, is_active, source')
       .eq('college_id', collegeId);
     const activeNames = (names ?? []).filter((f) => f.is_active);
-    const match = activeNames.find((f) => toSlug(f.name) === slug);
+    const match = activeNames.find((f) => toSlug(f.name) === normalized);
     if (match) {
       const { data: byId } = await supabase
         .from('faculty')
@@ -121,14 +125,15 @@ export default async function FacultyProfilePage({
     }
 
     if (!m) {
-      // One-shot diagnostic so 404 reasons land in the server log instead of being silent.
       const exactSlugMatches = (names ?? []).filter((f) => f.slug === slug);
-      const toSlugMatches = (names ?? []).filter((f) => toSlug(f.name) === slug);
+      const normalizedMatches = (names ?? []).filter((f) => f.slug === normalized);
+      const toSlugMatches = (names ?? []).filter((f) => toSlug(f.name) === normalized);
       console.warn(
         `[faculty/${slug}] 404 — collegeId=${collegeId ?? 'undefined'} ` +
+        `normalized=${normalized}, ` +
         `primary={ error: ${primaryRes.error?.message ?? 'none'} }, ` +
-        `slug-column-matches=${exactSlugMatches.length} ` +
-        `(${exactSlugMatches.map((r) => `${r.name}|active=${r.is_active}|source=${r.source}`).join(' ; ') || 'none'}), ` +
+        `slug-column-matches=${exactSlugMatches.length}, ` +
+        `normalized-slug-matches=${normalizedMatches.length}, ` +
         `toSlug(name)-matches=${toSlugMatches.length} ` +
         `(${toSlugMatches.map((r) => `${r.name}|active=${r.is_active}|source=${r.source}`).join(' ; ') || 'none'})`
       );

@@ -32,6 +32,8 @@ function toSlug(name: string) {
   return name.toLowerCase().replace(/[^a-z0-9\s-]/g, '').trim().replace(/\s+/g, '-');
 }
 
+const VALID_SLUG_RE = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
+
 export default async function FacultyPage() {
   const supabase = await createClient();
   const collegeId = process.env.NEXT_PUBLIC_COLLEGE_ID;
@@ -128,9 +130,11 @@ export default async function FacultyPage() {
                   </div>
                 );
 
+                const validSlug = m.slug && VALID_SLUG_RE.test(m.slug) ? m.slug : toSlug(m.name);
+
                 return (
                   <div key={m.id}>
-                    <a href={`/faculty/${m.slug && !m.slug.startsWith('http') ? m.slug : toSlug(m.name)}/`} className="block">
+                    <a href={`/faculty/${validSlug}/`} className="block">
                       {card}
                     </a>
                   </div>

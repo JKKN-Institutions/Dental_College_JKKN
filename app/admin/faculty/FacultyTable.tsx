@@ -234,17 +234,15 @@ export default function FacultyTable({
           // the View affordance never opens a 404. Reasons it stays hidden:
           //   - is_active=false  → public route requires is_active=true
           //   - slug missing or stored as a URL → would build a broken href
-          const slugIsUrl = !!m.slug && /^https?:\/\//i.test(m.slug);
-          const publicHref =
-            m.slug && !slugIsUrl && m.is_active
-              ? `/faculty/${m.slug}/`
-              : null;
+          const VALID_SLUG_RE = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
+          const hasValidSlug = !!m.slug && VALID_SLUG_RE.test(m.slug);
+          const publicHref = m.is_active
+            ? `/faculty/${hasValidSlug ? m.slug : m.name.toLowerCase().replace(/[^a-z0-9\s-]/g, '').trim().replace(/\s+/g, '-')}/`
+            : null;
 
           let hiddenReason: string | null = null;
           if (!publicHref) {
-            if (!m.slug) hiddenReason = 'No slug set — public URL cannot be built.';
-            else if (slugIsUrl) hiddenReason = 'Slug looks like a URL — fix the slug field to enable the public page.';
-            else if (!m.is_active) hiddenReason = 'Draft — toggle Published (or re-publish in MyJKKN and sync) to make this visible.';
+            if (!m.is_active) hiddenReason = 'Draft — toggle Published (or re-publish in MyJKKN and sync) to make this visible.';
           }
 
           return (

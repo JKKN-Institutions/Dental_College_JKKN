@@ -1,8 +1,6 @@
 'use client';
 
-import dynamic from 'next/dynamic';
-
-const FloatingWhatsApp = dynamic(() => import('@/components/FloatingWhatsApp'), { ssr: false });
+import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 
 export default function FloatingWhatsAppClient() {
   return <FloatingWhatsApp />;

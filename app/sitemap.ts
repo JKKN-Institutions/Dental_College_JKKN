@@ -86,24 +86,22 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       }
     }
 
-    // Faculty profile pages (live from MyJKKN sync). Mirrors filters used in
-    // /faculty/[slug]/page.tsx so sitemap doesn't surface inactive profiles.
+    // Faculty profile pages — include all active faculty, not just MyJKKN-synced.
     if (collegeId) {
       const { data: faculty } = await supabase
         .from('faculty')
-        .select('slug, updated_at')
+        .select('name, slug, updated_at')
         .eq('college_id', collegeId)
         .eq('is_active', true)
-        .eq('source', 'myjkkn')
       if (faculty) {
-        facultyUrls = faculty
-          .filter(f => f.slug)
-          .map(f => ({
-            url: `${baseUrl}/faculty/${f.slug}/`,
-            lastModified: f.updated_at ? new Date(f.updated_at) : now,
-            changeFrequency: 'monthly' as const,
-            priority: 0.6,
-          }))
+        const VALID_SLUG_RE = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
+        const toSlug = (n: string) => n.toLowerCase().replace(/[^a-z0-9\s-]/g, '').trim().replace(/\s+/g, '-');
+        facultyUrls = faculty.map(f => ({
+          url: `${baseUrl}/faculty/${f.slug && VALID_SLUG_RE.test(f.slug) ? f.slug : toSlug(f.name)}/`,
+          lastModified: f.updated_at ? new Date(f.updated_at) : now,
+          changeFrequency: 'monthly' as const,
+          priority: 0.6,
+        }))
       }
     }
 

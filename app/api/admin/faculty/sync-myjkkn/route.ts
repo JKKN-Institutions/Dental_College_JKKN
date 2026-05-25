@@ -122,6 +122,10 @@ function buildName(s: MyJKKNStaff): string {
     .trim();
 }
 
+function toSlug(name: string): string {
+  return name.toLowerCase().replace(/[^a-z0-9\s-]/g, '').trim().replace(/\s+/g, '-');
+}
+
 function preferredEmail(s: MyJKKNStaff): string | null {
   return s.institution_email?.trim() || s.email?.trim() || null;
 }
@@ -208,24 +212,32 @@ export async function POST() {
     // to legacy/manually-added rows on the first sync.
     const byId = await supabase
       .from('faculty')
-      .select('id')
+      .select('id, slug')
       .eq('myjkkn_staff_id', s.id)
       .maybeSingle();
 
     let existingId: string | null = byId.data?.id ?? null;
+    let existingSlug: string | null = byId.data?.slug ?? null;
 
     if (!existingId) {
       const byEmail = await supabase
         .from('faculty')
-        .select('id')
+        .select('id, slug')
         .eq('college_id', collegeId)
         .eq('email', email)
         .maybeSingle();
       existingId = byEmail.data?.id ?? null;
+      existingSlug = byEmail.data?.slug ?? null;
     }
 
+    const VALID_SLUG_RE = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
+    const generatedSlug = toSlug(name);
+
     if (existingId) {
-      const { error } = await supabase.from('faculty').update(basic).eq('id', existingId);
+      const update = VALID_SLUG_RE.test(existingSlug ?? '')
+        ? basic
+        : { ...basic, slug: generatedSlug };
+      const { error } = await supabase.from('faculty').update(update).eq('id', existingId);
       if (error) stats.errors.push(`Update ${s.id} (${name}): ${error.message}`);
       else stats.updated++;
     } else {
@@ -233,6 +245,7 @@ export async function POST() {
         id: crypto.randomUUID(),
         display_order: 0,
         created_at: now,
+        slug: generatedSlug,
         ...basic,
       });
       if (error) stats.errors.push(`Insert ${s.id} (${name}): ${error.message}`);
