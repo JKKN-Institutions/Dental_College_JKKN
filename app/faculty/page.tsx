@@ -43,7 +43,6 @@ export default async function FacultyPage() {
     )
     .eq('college_id', collegeId)
     .eq('is_active', true)
-    .eq('source', 'myjkkn')
     .order('display_order', { ascending: true })
     .order('name', { ascending: true });
 

@@ -21,7 +21,7 @@ export default async function AdminFaculty() {
   // docs/migrations/2026-05-17-myjkkn-sync-columns.sql has not been applied yet.
   const rich = await supabase
     .from('faculty')
-    .select('id, name, designation, department, qualification, experience_years, photo_url, email, display_order, is_active, source, last_synced_at, role')
+    .select('id, name, designation, department, qualification, experience_years, photo_url, email, display_order, is_active, source, last_synced_at, role, slug, myjkkn_staff_id')
     .eq('college_id', collegeId)
     .order('display_order', { ascending: true })
     .order('name', { ascending: true });
@@ -30,7 +30,7 @@ export default async function AdminFaculty() {
   if (rich.error) {
     const legacy = await supabase
       .from('faculty')
-      .select('id, name, designation, department, qualification, experience_years, photo_url, email, display_order, is_active')
+      .select('id, name, designation, department, qualification, experience_years, photo_url, email, display_order, is_active, slug')
       .eq('college_id', collegeId)
       .order('display_order', { ascending: true })
       .order('name', { ascending: true });

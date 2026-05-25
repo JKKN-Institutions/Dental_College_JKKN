@@ -113,7 +113,13 @@ function emptyStats(): SyncStats {
 }
 
 function buildName(s: MyJKKNStaff): string {
-  return [s.first_name, s.last_name].filter(Boolean).join(' ').trim();
+  // Collapse any internal whitespace runs (MyJKKN sometimes returns double
+  // spaces inside first/last name) so downstream slug generation is stable.
+  return [s.first_name, s.last_name]
+    .filter(Boolean)
+    .join(' ')
+    .replace(/\s+/g, ' ')
+    .trim();
 }
 
 function preferredEmail(s: MyJKKNStaff): string | null {

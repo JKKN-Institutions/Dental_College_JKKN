@@ -12,6 +12,11 @@ function toSlug(name: string) {
   return name.toLowerCase().replace(/[^a-z0-9\s-]/g, '').trim().replace(/\s+/g, '-');
 }
 
+// `id` is a UUID column — passing a non-UUID value to `id.eq.X` in a PostgREST
+// .or() filter triggers a 400 that kills the whole query, not just the OR leg.
+// Branch on shape so the lookup is reliable for both URL forms.
+const UUID_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
+
 // ─── Types ────────────────────────────────────────────────────────────────────
 
 type AcademicQualification = { degree: string; specialisation: string; university: string; year: string };
@@ -35,22 +40,21 @@ export async function generateMetadata({
   const supabase = await createClient();
   const collegeIdMeta = process.env.NEXT_PUBLIC_COLLEGE_ID;
 
-  let { data } = await supabase
+  const isUuidMeta = UUID_RE.test(slug);
+  let metaQuery = supabase
     .from('faculty')
     .select('name, designation, department')
-    .or(`slug.eq.${slug},id.eq.${slug}`)
     .eq('college_id', collegeIdMeta)
-    .eq('is_active', true)
-    .eq('source', 'myjkkn')
-    .single();
+    .eq('is_active', true);
+  metaQuery = isUuidMeta ? metaQuery.eq('id', slug) : metaQuery.eq('slug', slug);
+  let { data } = await metaQuery.maybeSingle();
 
   if (!data) {
     const { data: all } = await supabase
       .from('faculty')
       .select('name, designation, department')
       .eq('college_id', collegeIdMeta)
-      .eq('is_active', true)
-      .eq('source', 'myjkkn');
+      .eq('is_active', true);
     data = all?.find((f) => toSlug(f.name) === slug) ?? null;
   }
 
@@ -90,31 +94,44 @@ export default async function FacultyProfilePage({
     certifications, awards, memberships, phd_scholars, faqs
   `;
 
-  let { data: m } = await supabase
+  const isUuid = UUID_RE.test(slug);
+  let primary = supabase
     .from('faculty')
     .select(fullSelect)
-    .or(`slug.eq.${slug},id.eq.${slug}`)
     .eq('college_id', collegeId)
-    .eq('is_active', true)
-    .eq('source', 'myjkkn')
-    .single();
+    .eq('is_active', true);
+  primary = isUuid ? primary.eq('id', slug) : primary.eq('slug', slug);
+  const primaryRes = await primary.maybeSingle();
+  let m = primaryRes.data;
 
   if (!m) {
     const { data: names } = await supabase
       .from('faculty')
-      .select('id, name')
-      .eq('college_id', collegeId)
-      .eq('is_active', true)
-      .eq('source', 'myjkkn');
-    const match = names?.find((f) => toSlug(f.name) === slug);
+      .select('id, name, slug, is_active, source')
+      .eq('college_id', collegeId);
+    const activeNames = (names ?? []).filter((f) => f.is_active);
+    const match = activeNames.find((f) => toSlug(f.name) === slug);
     if (match) {
       const { data: byId } = await supabase
         .from('faculty')
         .select(fullSelect)
         .eq('id', match.id)
-        .eq('source', 'myjkkn')
-        .single();
+        .maybeSingle();
       m = byId;
+    }
+
+    if (!m) {
+      // One-shot diagnostic so 404 reasons land in the server log instead of being silent.
+      const exactSlugMatches = (names ?? []).filter((f) => f.slug === slug);
+      const toSlugMatches = (names ?? []).filter((f) => toSlug(f.name) === slug);
+      console.warn(
+        `[faculty/${slug}] 404 — collegeId=${collegeId ?? 'undefined'} ` +
+        `primary={ error: ${primaryRes.error?.message ?? 'none'} }, ` +
+        `slug-column-matches=${exactSlugMatches.length} ` +
+        `(${exactSlugMatches.map((r) => `${r.name}|active=${r.is_active}|source=${r.source}`).join(' ; ') || 'none'}), ` +
+        `toSlug(name)-matches=${toSlugMatches.length} ` +
+        `(${toSlugMatches.map((r) => `${r.name}|active=${r.is_active}|source=${r.source}`).join(' ; ') || 'none'})`
+      );
     }
   }
 
@@ -271,7 +288,33 @@ export default async function FacultyProfilePage({
                 <span className={`${iconBox} bg-yellow-50`}>🎓</span>
                 Academic Qualifications
               </h2>
-              <table className="w-full text-sm">
+
+              {/* Mobile: stacked cards */}
+              <div className="sm:hidden space-y-3">
+                {academicQualifications.map((q, i) => (
+                  <div key={i} className="rounded-xl border border-gray-100 bg-gray-50 p-4">
+                    <div className="flex items-start justify-between gap-3 mb-2">
+                      <p className="font-semibold text-gray-900 text-base">{q.degree}</p>
+                      <span className="text-sm font-bold text-[#1B5E20] whitespace-nowrap">{q.year}</span>
+                    </div>
+                    {q.specialisation && (
+                      <p className="text-sm text-gray-700 mb-1">
+                        <span className={`${tableHead} mr-2`}>Specialisation:</span>
+                        {q.specialisation}
+                      </p>
+                    )}
+                    {q.university && (
+                      <p className="text-sm text-gray-700">
+                        <span className={`${tableHead} mr-2`}>University:</span>
+                        {q.university}
+                      </p>
+                    )}
+                  </div>
+                ))}
+              </div>
+
+              {/* Desktop: table */}
+              <table className="w-full text-sm hidden sm:table">
                 <thead>
                   <tr className="border-b border-gray-100">
                     <th className={`${tableHead} text-left py-2 pr-4`}>Degree</th>
@@ -438,7 +481,42 @@ export default async function FacultyProfilePage({
                     <span className="w-4 h-px bg-[#1B5E20] inline-block" />
                     FUNDED RESEARCH
                   </p>
-                  <table className="w-full text-sm">
+
+                  {/* Mobile: stacked cards */}
+                  <div className="sm:hidden space-y-3">
+                    {fundedResearch.map((fr, i) => (
+                      <div key={i} className="rounded-xl border border-gray-100 bg-gray-50 p-4">
+                        <div className="flex items-start justify-between gap-3 mb-2">
+                          <p className="font-semibold text-gray-900 text-sm">{fr.project}</p>
+                          <span className={`text-xs font-medium px-2.5 py-1 rounded-full whitespace-nowrap ${
+                            fr.status === 'Completed'
+                              ? 'bg-green-50 text-green-700 border border-green-200'
+                              : 'bg-yellow-50 text-yellow-700 border border-yellow-200'
+                          }`}>
+                            {fr.status}
+                          </span>
+                        </div>
+                        {fr.agency && (
+                          <p className="text-sm text-gray-700 mb-1">
+                            <span className={`${tableHead} mr-2`}>Agency:</span>{fr.agency}
+                          </p>
+                        )}
+                        {fr.amount && (
+                          <p className="text-sm text-gray-700 mb-1">
+                            <span className={`${tableHead} mr-2`}>Amount:</span>{fr.amount}
+                          </p>
+                        )}
+                        {fr.period && (
+                          <p className="text-sm text-gray-700">
+                            <span className={`${tableHead} mr-2`}>Period:</span>{fr.period}
+                          </p>
+                        )}
+                      </div>
+                    ))}
+                  </div>
+
+                  {/* Desktop: table */}
+                  <table className="w-full text-sm hidden sm:table">
                     <thead>
                       <tr className="border-b border-gray-100">
                         <th className={`${tableHead} text-left py-2 pr-4`}>Project</th>
@@ -531,7 +609,22 @@ export default async function FacultyProfilePage({
                 <span className={`${iconBox} bg-yellow-50`}>🏆</span>
                 Awards &amp; Recognitions
               </h2>
-              <table className="w-full text-sm">
+
+              {/* Mobile: stacked cards */}
+              <div className="sm:hidden space-y-3">
+                {awards.map((award, i) => (
+                  <div key={i} className="rounded-xl border border-gray-100 bg-gray-50 p-4">
+                    <div className="flex items-start justify-between gap-3 mb-1">
+                      <p className="font-semibold text-gray-900 text-sm">{award.award}</p>
+                      <span className="text-sm font-bold text-[#1B5E20] whitespace-nowrap">{award.year}</span>
+                    </div>
+                    {award.body && <p className="text-sm text-gray-700">{award.body}</p>}
+                  </div>
+                ))}
+              </div>
+
+              {/* Desktop: table */}
+              <table className="w-full text-sm hidden sm:table">
                 <thead>
                   <tr className="border-b border-gray-100">
                     <th className={`${tableHead} text-left py-2 pr-4`}>Award</th>
@@ -559,7 +652,22 @@ export default async function FacultyProfilePage({
                 <span className={`${iconBox} bg-purple-50`}>👥</span>
                 Professional Memberships
               </h2>
-              <table className="w-full text-sm">
+
+              {/* Mobile: stacked cards */}
+              <div className="sm:hidden space-y-3">
+                {memberships.map((mem, i) => (
+                  <div key={i} className="rounded-xl border border-gray-100 bg-gray-50 p-4">
+                    <div className="flex items-start justify-between gap-3 mb-1">
+                      <p className="font-semibold text-gray-900 text-sm">{mem.organisation}</p>
+                      <span className="text-sm font-bold text-[#1B5E20] whitespace-nowrap">{mem.since}</span>
+                    </div>
+                    {mem.type && <p className="text-sm text-gray-700">{mem.type}</p>}
+                  </div>
+                ))}
+              </div>
+
+              {/* Desktop: table */}
+              <table className="w-full text-sm hidden sm:table">
                 <thead>
                   <tr className="border-b border-gray-100">
                     <th className={`${tableHead} text-left py-2 pr-4`}>Organisation</th>
@@ -598,7 +706,30 @@ export default async function FacultyProfilePage({
                     <span className="w-4 h-px bg-[#1B5E20] inline-block" />
                     PHD SCHOLARS
                   </p>
-                  <table className="w-full text-sm">
+
+                  {/* Mobile: stacked cards */}
+                  <div className="sm:hidden space-y-3">
+                    {phdScholars.map((scholar, i) => (
+                      <div key={i} className="rounded-xl border border-gray-100 bg-gray-50 p-4">
+                        <div className="flex items-start justify-between gap-3 mb-1">
+                          <p className="font-semibold text-gray-900 text-sm">{scholar.scholar}</p>
+                          <span className={`text-xs font-medium px-2.5 py-1 rounded-full whitespace-nowrap ${
+                            scholar.status?.toLowerCase() === 'ongoing'
+                              ? 'bg-yellow-50 text-yellow-700 border border-yellow-200'
+                              : 'bg-green-50 text-green-700 border border-green-200'
+                          }`}>
+                            {scholar.status}
+                          </span>
+                        </div>
+                        {scholar.research_topic && (
+                          <p className="text-sm text-gray-700">{scholar.research_topic}</p>
+                        )}
+                      </div>
+                    ))}
+                  </div>
+
+                  {/* Desktop: table */}
+                  <table className="w-full text-sm hidden sm:table">
                     <thead>
                       <tr className="border-b border-gray-100">
                         <th className={`${tableHead} text-left py-2 pr-4`}>Scholar</th>

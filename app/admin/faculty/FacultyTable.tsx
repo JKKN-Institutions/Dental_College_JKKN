@@ -10,9 +10,10 @@ import {
   ChevronRight,
   ChevronsLeft,
   ChevronsRight,
+  Eye,
+  ExternalLink,
   Pencil,
   Search,
-  UserCircle2,
 } from 'lucide-react';
 import {
   useReactTable,
@@ -43,7 +44,37 @@ export type FacultyRow = {
   source?: string | null;
   last_synced_at?: string | null;
   role?: string | null;
+  slug?: string | null;
+  myjkkn_staff_id?: string | null;
 };
+
+// Stable colored avatar palette — pick deterministically from the name so the
+// same person always gets the same colour across renders/sessions.
+const AVATAR_PALETTE = [
+  'bg-emerald-600',
+  'bg-blue-600',
+  'bg-violet-600',
+  'bg-amber-600',
+  'bg-rose-600',
+  'bg-teal-600',
+  'bg-indigo-600',
+  'bg-pink-600',
+];
+
+function hashIndex(value: string, mod: number): number {
+  let h = 0;
+  for (let i = 0; i < value.length; i++) h = (h * 31 + value.charCodeAt(i)) >>> 0;
+  return h % mod;
+}
+
+function initialsOf(name: string): string {
+  return name
+    .split(/\s+/)
+    .filter(Boolean)
+    .slice(0, 2)
+    .map((w) => w[0]?.toUpperCase() ?? '')
+    .join('');
+}
 
 // MyJKKN's role_key is authoritative when set, but many HODs in the dental
 // roster are only labelled via designation ("Professor & HOD", "Reader & HOD",
@@ -77,36 +108,27 @@ export default function FacultyTable({
   const columns = useMemo<ColumnDef<FacultyRow>[]>(
     () => [
       {
-        id: 'photo',
-        header: 'Photo',
-        enableSorting: false,
-        enableColumnFilter: false,
+        accessorKey: 'name',
+        header: 'Name',
         cell: ({ row }) => {
           const m = row.original;
-          return m.photo_url ? (
-            <img
-              src={m.photo_url}
-              alt={m.name}
-              className="w-10 h-10 rounded-full object-cover border border-gray-100"
-            />
-          ) : (
-            <div className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center">
-              <UserCircle2 className="w-6 h-6 text-gray-300" />
+          const colour = AVATAR_PALETTE[hashIndex(m.name, AVATAR_PALETTE.length)];
+          return (
+            <div className="flex items-center gap-3 min-w-[14rem]">
+              <div
+                className={`w-9 h-9 rounded-full ${colour} text-white text-xs font-bold flex items-center justify-center flex-shrink-0`}
+              >
+                {initialsOf(m.name) || '?'}
+              </div>
+              <div className="min-w-0">
+                <p className="font-semibold text-gray-900 text-sm truncate">{m.name}</p>
+                {m.email && (
+                  <p className="text-xs text-gray-400 mt-0.5 truncate">{m.email}</p>
+                )}
+              </div>
             </div>
           );
         },
-      },
-      {
-        accessorKey: 'name',
-        header: 'Name',
-        cell: ({ row }) => (
-          <div>
-            <p className="font-semibold text-gray-900 text-sm">{row.original.name}</p>
-            {row.original.email && (
-              <p className="text-xs text-gray-400 mt-0.5">{row.original.email}</p>
-            )}
-          </div>
-        ),
       },
       {
         accessorKey: 'designation',
@@ -118,7 +140,7 @@ export default function FacultyTable({
           return (
             <div className="flex flex-wrap items-center gap-1.5">
               {v ? (
-                <span className="text-sm text-[#006837] font-medium">{v}</span>
+                <span className="text-sm text-gray-700">{v}</span>
               ) : (
                 <span className="text-gray-300">&mdash;</span>
               )}
@@ -155,26 +177,30 @@ export default function FacultyTable({
         },
       },
       {
-        accessorKey: 'qualification',
-        header: 'Qualification',
-        cell: ({ getValue }) => {
-          const v = getValue<string | null>();
-          return v ? (
-            <span className="text-sm text-gray-600 line-clamp-2 max-w-xs block">{v}</span>
-          ) : (
-            <span className="text-gray-300">&mdash;</span>
-          );
-        },
-      },
-      {
-        accessorKey: 'experience_years',
-        header: 'Experience',
-        cell: ({ getValue }) => {
-          const v = getValue<number | null>();
-          return v && v > 0 ? (
-            <span className="text-sm text-gray-600 whitespace-nowrap">{v} yrs</span>
-          ) : (
-            <span className="text-gray-300">&mdash;</span>
+        id: 'source',
+        accessorFn: (row) => row.source ?? 'manual',
+        header: 'Source',
+        cell: ({ row }) => {
+          const m = row.original;
+          if (m.source === 'myjkkn') {
+            return (
+              <span
+                title={
+                  m.last_synced_at
+                    ? `Synced ${new Date(m.last_synced_at).toLocaleString()}`
+                    : 'Synced from MyJKKN'
+                }
+                className="inline-flex items-center gap-1 text-xs font-semibold px-2.5 py-1 rounded-full bg-sky-50 text-sky-700 border border-sky-200 whitespace-nowrap"
+              >
+                <ExternalLink className="w-3 h-3" />
+                MyJKKN
+              </span>
+            );
+          }
+          return (
+            <span className="inline-flex items-center gap-1 text-xs font-semibold px-2.5 py-1 rounded-full bg-gray-50 text-gray-600 border border-gray-200 whitespace-nowrap">
+              Manual
+            </span>
           );
         },
       },
@@ -184,29 +210,15 @@ export default function FacultyTable({
         header: 'Status',
         filterFn: statusFilter,
         cell: ({ row }) => (
-          <div className="flex flex-col gap-1">
-            <span
-              className={`text-xs font-medium px-2 py-0.5 rounded-full w-fit whitespace-nowrap ${
-                row.original.is_active
-                  ? 'bg-green-50 text-green-600'
-                  : 'bg-gray-100 text-gray-500'
-              }`}
-            >
-              {row.original.is_active ? 'Active' : 'Inactive'}
-            </span>
-            {row.original.source === 'myjkkn' && (
-              <span
-                title={
-                  row.original.last_synced_at
-                    ? `Synced ${new Date(row.original.last_synced_at).toLocaleString()}`
-                    : 'Synced from MyJKKN'
-                }
-                className="text-[10px] font-medium px-1.5 py-0.5 rounded bg-blue-50 text-blue-700 w-fit"
-              >
-                MyJKKN
-              </span>
-            )}
-          </div>
+          <span
+            className={`inline-flex items-center text-xs font-semibold px-2.5 py-1 rounded-full whitespace-nowrap ${
+              row.original.is_active
+                ? 'bg-emerald-50 text-emerald-700 border border-emerald-200'
+                : 'bg-amber-50 text-amber-700 border border-amber-200'
+            }`}
+          >
+            {row.original.is_active ? 'Published' : 'Draft'}
+          </span>
         ),
       },
       {
@@ -214,18 +226,72 @@ export default function FacultyTable({
         header: () => <span className="block text-right">Actions</span>,
         enableSorting: false,
         enableColumnFilter: false,
-        cell: ({ row }) => (
-          <div className="flex items-center justify-end gap-1">
-            <Link
-              href={`/admin/faculty/${row.original.id}`}
-              className="flex items-center gap-1.5 text-xs font-medium text-gray-600 hover:text-[#006837] px-3 py-1.5 rounded-lg hover:bg-gray-100 transition"
-            >
-              <Pencil className="w-3.5 h-3.5" />
-              Edit
-            </Link>
-            {!isStaff && <DeleteFacultyButton id={row.original.id} />}
-          </div>
-        ),
+        cell: ({ row }) => {
+          const m = row.original;
+          const isMyJKKN = m.source === 'myjkkn' && !!m.myjkkn_staff_id;
+
+          // Mirror the public route's filter (app/faculty/[slug]/page.tsx) so
+          // the View affordance never opens a 404. Reasons it stays hidden:
+          //   - is_active=false  → public route requires is_active=true
+          //   - slug missing or stored as a URL → would build a broken href
+          const slugIsUrl = !!m.slug && /^https?:\/\//i.test(m.slug);
+          const publicHref =
+            m.slug && !slugIsUrl && m.is_active
+              ? `/faculty/${m.slug}/`
+              : null;
+
+          let hiddenReason: string | null = null;
+          if (!publicHref) {
+            if (!m.slug) hiddenReason = 'No slug set — public URL cannot be built.';
+            else if (slugIsUrl) hiddenReason = 'Slug looks like a URL — fix the slug field to enable the public page.';
+            else if (!m.is_active) hiddenReason = 'Draft — toggle Published (or re-publish in MyJKKN and sync) to make this visible.';
+          }
+
+          return (
+            <div className="flex items-center justify-end gap-1">
+              {isMyJKKN ? (
+                <a
+                  href={`https://www.jkkn.ai/staff/${m.myjkkn_staff_id}/edit`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 text-xs font-medium text-[#006837] hover:text-[#005a2e] px-3 py-1.5 rounded-lg hover:bg-emerald-50 transition"
+                >
+                  Edit in MyJKKN
+                  <ExternalLink className="w-3.5 h-3.5" />
+                </a>
+              ) : (
+                <Link
+                  href={`/admin/faculty/${m.id}`}
+                  className="inline-flex items-center gap-1.5 text-xs font-medium text-gray-600 hover:text-[#006837] px-3 py-1.5 rounded-lg hover:bg-gray-100 transition"
+                >
+                  <Pencil className="w-3.5 h-3.5" />
+                  Edit
+                </Link>
+              )}
+              {publicHref ? (
+                <a
+                  href={publicHref}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="View public profile"
+                  aria-label="View public profile"
+                  className="inline-flex items-center justify-center w-8 h-8 text-gray-400 hover:text-[#006837] hover:bg-gray-100 rounded-lg transition"
+                >
+                  <Eye className="w-4 h-4" />
+                </a>
+              ) : (
+                <span
+                  title={hiddenReason ?? 'Public profile not available.'}
+                  aria-label={hiddenReason ?? 'Public profile not available.'}
+                  className="inline-flex items-center justify-center w-8 h-8 text-gray-300 cursor-not-allowed rounded-lg"
+                >
+                  <Eye className="w-4 h-4" />
+                </span>
+              )}
+              {!isStaff && !isMyJKKN && <DeleteFacultyButton id={m.id} />}
+            </div>
+          );
+        },
       },
     ],
     [isStaff],
@@ -332,12 +398,7 @@ export default function FacultyTable({
               </tr>
             ) : (
               table.getRowModel().rows.map((row) => (
-                <tr
-                  key={row.id}
-                  className={`hover:bg-gray-50 transition ${
-                    row.original.is_active ? '' : 'opacity-60'
-                  }`}
-                >
+                <tr key={row.id} className="hover:bg-gray-50 transition">
                   {row.getVisibleCells().map((cell) => (
                     <td key={cell.id} className="px-4 py-3 align-middle">
                       {flexRender(cell.column.columnDef.cell, cell.getContext())}
@@ -424,8 +485,22 @@ function ColumnFilter({ column }: { column: Column<FacultyRow, unknown> }) {
         className="w-full text-xs font-normal normal-case border border-gray-200 rounded-md px-2 py-1 focus:outline-none focus:ring-2 focus:ring-[#006837]/20"
       >
         <option value="all">All</option>
-        <option value="active">Active</option>
-        <option value="inactive">Inactive</option>
+        <option value="active">Published</option>
+        <option value="inactive">Draft</option>
+      </select>
+    );
+  }
+
+  if (column.id === 'source') {
+    return (
+      <select
+        value={(value as string) ?? ''}
+        onChange={(e) => column.setFilterValue(e.target.value || undefined)}
+        className="w-full text-xs font-normal normal-case border border-gray-200 rounded-md px-2 py-1 focus:outline-none focus:ring-2 focus:ring-[#006837]/20"
+      >
+        <option value="">All</option>
+        <option value="myjkkn">MyJKKN</option>
+        <option value="manual">Manual</option>
       </select>
     );
   }
