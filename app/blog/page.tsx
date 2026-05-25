@@ -63,7 +63,7 @@ export default async function BlogPage() {
     .eq('college_id', collegeId)
     .eq('is_published', true)
     .order('created_at', { ascending: false })
-    .limit(9);
+    .limit(100);
 
   const hasCampusPosts = campusPosts && campusPosts.length > 0;
 

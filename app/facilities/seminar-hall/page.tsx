@@ -86,7 +86,7 @@ export default function SeminarHall() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
             <div className="relative h-[280px] md:h-[320px] rounded-2xl overflow-hidden shadow-lg group">
               <Image
-                src="/images/seminar-hall-1.png"
+                src="/images/Seminar-hall-1.avif"
                 alt="Seminar hall with audience"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -94,7 +94,7 @@ export default function SeminarHall() {
             </div>
             <div className="relative h-[280px] md:h-[320px] rounded-2xl overflow-hidden shadow-lg group">
               <Image
-                src="/images/seminar-hall-2.png"
+                src="/images/Seminar-hall-2.avif"
                 alt="JKKN Dental College seminar hall interior with ergonomic seating and AV equipment"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -102,7 +102,7 @@ export default function SeminarHall() {
             </div>
             <div className="relative h-[280px] md:h-[320px] rounded-2xl overflow-hidden shadow-lg group">
               <Image
-                src="/images/seminar-hall-3.png"
+                src="/images/Seminar-hall-3.avif"
                 alt="JKKN Dental College air-conditioned seminar hall set up for academic workshop"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"

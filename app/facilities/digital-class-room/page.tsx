@@ -52,13 +52,13 @@ export default function DigitalClassRoom() {
         </div>
       </section>
 
-      {/* Image Gallery — 2 images */}
+      {/* Image Gallery — 3 images */}
       <section className="bg-white py-12 px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
             <div className="relative h-[280px] md:h-[340px] rounded-2xl overflow-hidden shadow-lg group">
               <Image
-                src="/images/digital-class-room-1.jpg"
+                src="/images/class_room-1.webp"
                 alt="JKKN Dental College classroom session with students attentively listening to faculty"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -66,8 +66,16 @@ export default function DigitalClassRoom() {
             </div>
             <div className="relative h-[280px] md:h-[340px] rounded-2xl overflow-hidden shadow-lg group">
               <Image
-                src="/images/digital-class-room-2.jpg"
+                src="/images/class_room-2.webp"
                 alt="Wide view of JKKN Dental College classroom with students during a lecture"
+                fill
+                className="object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+            <div className="relative h-[280px] md:h-[340px] rounded-2xl overflow-hidden shadow-lg group">
+              <Image
+                src="/images/class_room-3.webp"
+                alt="JKKN Dental College digital classroom with smart technology and modern facilities"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
               />

@@ -97,7 +97,7 @@ export default function SportsClub() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
             <div className="relative h-[300px] md:h-[370px] rounded-2xl overflow-hidden shadow-lg group">
               <Image
-                src="/images/sports-1.webp"
+                src="/images/sports-1.avif"
                 alt="Student with rugby ball"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -105,7 +105,7 @@ export default function SportsClub() {
             </div>
             <div className="relative h-[300px] md:h-[370px] rounded-2xl overflow-hidden shadow-lg group">
               <Image
-                src="/images/sports-2.webp"
+                src="/images/sports-2.avif"
                 alt="Student athlete"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -113,7 +113,7 @@ export default function SportsClub() {
             </div>
             <div className="relative h-[300px] md:h-[370px] rounded-2xl overflow-hidden shadow-lg group">
               <Image
-                src="/images/sports-3.webp"
+                src="/images/sports-3.avif"
                 alt="Sports team"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"

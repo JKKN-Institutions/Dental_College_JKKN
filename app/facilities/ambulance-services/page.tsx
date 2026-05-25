@@ -54,12 +54,13 @@ export default function AmbulanceServices() {
       {/* Banner Image */}
       <section className="bg-white py-12 px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="relative w-full h-[300px] md:h-[450px] rounded-2xl overflow-hidden shadow-lg">
+          <div className="flex justify-center">
             <Image
               src="/images/ambulance.webp"
               alt="JKKN Free Ambulance Service"
-              fill
-              className="object-cover"
+              width={500}
+              height={350}
+              className="rounded-2xl shadow-lg object-contain"
             />
           </div>
         </div>
