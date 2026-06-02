@@ -7,7 +7,13 @@ export const metadata: Metadata = {
   title: { absolute: 'Dental Colleges in Tiruppur | JKKN Dental College' },
   description: 'No dental college in Tiruppur? JKKN Dental College is 67 km away on NH-544. DCI approved, NAAC accredited. BDS 100 seats, MDS. Apply 2026.',
   keywords: 'dental colleges in tiruppur, top dental colleges, bds colleges in tiruppur, dental college tiruppur, mds college tiruppur, jkkn dental tiruppur',
-  robots: { index: true, follow: true },
+  robots: {
+    index: true,
+    follow: true,
+    'max-snippet': -1,
+    'max-image-preview': 'large',
+    'max-video-preview': -1,
+  },
   alternates: {
     canonical: 'https://dental.jkkn.ac.in/tiruppur/',
   },

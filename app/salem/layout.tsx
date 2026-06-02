@@ -7,7 +7,13 @@ export const metadata: Metadata = {
   title: { absolute: 'Dental Colleges in Salem | JKKN Dental College' },
   description: 'Dental Colleges in Salem? JKKN Dental College is 60 km away at Komarapalayam via NH-544. DCI approved, NAAC accredited. BDS 100 seats, MDS. Apply 2026.',
   keywords: 'dental colleges in salem, top dental colleges, bds colleges in salem, dental college salem, mds college salem, jkkn dental salem',
-  robots: { index: true, follow: true },
+  robots: {
+    index: true,
+    follow: true,
+    'max-snippet': -1,
+    'max-image-preview': 'large',
+    'max-video-preview': -1,
+  },
   alternates: {
     canonical: 'https://dental.jkkn.ac.in/salem/',
   },

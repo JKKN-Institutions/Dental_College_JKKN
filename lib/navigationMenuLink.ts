@@ -400,7 +400,6 @@ export function GetDentalCollegePages(pathname: string): MenuGroup[] {
             { href: '/information-center/announcements', label: 'Announcements', icon: Bell, active: pathname === '/information-center/announcements' },
             { href: '/information-center/news', label: 'News', icon: Rss, active: pathname === '/information-center/news' },
             { href: '/information-center/events', label: 'Events', icon: CalendarDays, active: pathname === '/information-center/events' },
-            { href: '/information-center/careers', label: 'Careers', icon: UserCircle, active: pathname === '/information-center/careers' },
             { href: '/blog', label: 'Blog', icon: PenTool, active: pathname.startsWith('/blog') },
             { href: '/faq', label: 'FAQs', icon: FileQuestion, active: pathname.startsWith('/faq') }
           ]
@@ -429,6 +428,7 @@ export function GetDentalCollegePages(pathname: string): MenuGroup[] {
           active: pathname.startsWith('/others') || pathname.startsWith('/faculty'),
           submenus: [
             { href: '/faculty', label: 'Faculty', icon: Users, active: pathname.startsWith('/faculty') },
+            { href: 'https://jobs.cvviz.com/jkkn_institutions', label: 'Careers', icon: Briefcase, active: false },
             { href: '/others/digital-campus', label: 'Digital Campus', icon: Laptop, active: pathname === '/others/digital-campus' },
             { href: '/others/patient-safety-manual', label: 'Patient Safety Manual', icon: FileHeart, active: pathname.includes('/patient-safety') },
             { href: '/others/outreach', label: 'Outreach', icon: Megaphone, active: pathname === '/others/outreach' }

@@ -286,7 +286,6 @@ export const bottomMenuItems: NavItem[] = [
     href: "/information-center",
     submenu: [
       { label: "RIGHT TO INFORMATION (RTI)", href: "/information-center/right-to-information-rti" },
-      { label: "CAREERS", href: "/information-center/careers" },
       { label: "BLOG", href: "/blog" },
       { label: "FAQs", href: "/faq" }
     ]
@@ -297,6 +296,7 @@ export const bottomMenuItems: NavItem[] = [
     href: "/others",
     submenu: [
       { label: "FACULTY", href: "/faculty" },
+      { label: "CAREERS", href: "https://jobs.cvviz.com/jkkn_institutions" },
       { label: "PATIENT SAFETY MANUAL", href: "/pdf/PATIENT-SAFETY-MANUAL.pdf" },
       { label: "OUTREACH", href: "https://outreach.dental.jkkn.ac.in/" }
     ]

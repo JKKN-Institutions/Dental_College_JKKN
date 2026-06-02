@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useMemo, useCallback, useLayoutEffect, useRef } from 'react';
+import { useState, useEffect, useMemo, useCallback, useRef } from 'react';
 import { usePathname, useRouter } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
@@ -190,8 +190,9 @@ export function BottomNavbar() {
     return currentActiveGroup?.menus || [];
   }, [effectiveActiveNavId, allNavGroups, currentActiveGroup]);
 
-  // Update active page IMMEDIATELY when currentActivePage changes
-  useLayoutEffect(() => {
+  // Update active page after paint — runs only on mobile to avoid desktop forced reflows
+  useEffect(() => {
+    if (!isMobile) return;
     if (currentActivePage) {
       setActivePage(currentActivePage);
 
@@ -200,7 +201,7 @@ export function BottomNavbar() {
         setMinimized(false);
       }
     }
-  }, [currentActivePage, setActivePage, setMinimized]);
+  }, [currentActivePage, isMobile, setActivePage, setMinimized]);
 
   // Sync activeNavId with pathname when it changes
   useEffect(() => {
@@ -233,7 +234,11 @@ export function BottomNavbar() {
   // Handle submenu item click
   const handleSubmenuClick = useCallback(
     (href: string) => {
-      router.push(href);
+      if (href.startsWith('http')) {
+        window.open(href, '_blank', 'noopener,noreferrer');
+      } else {
+        router.push(href);
+      }
       setExpanded(false);
     },
     [router, setExpanded]
@@ -248,7 +253,11 @@ export function BottomNavbar() {
   // Handle click on More menu item
   const handleMoreItemClick = useCallback(
     (href: string) => {
-      router.push(href);
+      if (href.startsWith('http')) {
+        window.open(href, '_blank', 'noopener,noreferrer');
+      } else {
+        router.push(href);
+      }
       setMoreMenuOpen(false);
     },
     [router, setMoreMenuOpen]

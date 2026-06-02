@@ -40,8 +40,10 @@ const nextConfig: NextConfig = {
       { source: '/admission/:path*', destination: '/admissions/:path*', permanent: true },
 
       // Misspelled URLs & Common Shortcuts
-      { source: '/carrer', destination: '/information-center/careers', permanent: true },
-      { source: '/carrer/', destination: '/information-center/careers', permanent: true },
+      { source: '/information-center/careers', destination: 'https://jobs.cvviz.com/jkkn_institutions', permanent: false },
+      { source: '/information-center/careers/', destination: 'https://jobs.cvviz.com/jkkn_institutions', permanent: false },
+      { source: '/carrer', destination: 'https://jobs.cvviz.com/jkkn_institutions', permanent: true },
+      { source: '/carrer/', destination: 'https://jobs.cvviz.com/jkkn_institutions', permanent: true },
       { source: '/naac', destination: '/accreditation/naac', permanent: true },
       { source: '/naac/', destination: '/accreditation/naac', permanent: true },
       { source: '/nacc', destination: '/accreditation/naac', permanent: true },
@@ -255,7 +257,7 @@ const nextConfig: NextConfig = {
           },
           {
             key: 'Content-Security-Policy',
-            value: "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: blob: https:; connect-src 'self' https://www.google-analytics.com https://*.supabase.co; frame-src 'self' https://www.google.com; object-src 'none'; worker-src 'self';",
+            value: "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: blob: https:; connect-src 'self' https://www.google-analytics.com https://*.supabase.co; frame-src 'self' https://www.google.com https://jobs.cvviz.com; object-src 'none'; worker-src 'self';",
           },
           {
             key: 'Referrer-Policy',
