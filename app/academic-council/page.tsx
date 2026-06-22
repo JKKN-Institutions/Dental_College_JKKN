@@ -12,17 +12,17 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Academic Council | JKKN Dental College',
     description: 'Learn about the Academic Council at JKKN Dental College, dedicated to shaping curriculum, promoting research, and enhancing dental education.',
-    url: 'https://dental.jkkn.ac.in/administration/academic-council/',
+    url: 'https://dental.jkkn.ac.in/academic-council/',
     type: 'website',
     siteName: 'JKKN Dental College & Hospital',
   },
 };
 
-const breadcrumbSchema = generateBreadcrumbSchema('/administration/academic-council/');
+const breadcrumbSchema = generateBreadcrumbSchema('/academic-council/');
 const speakableSchema = generateSpeakableWebPageSchema({
   title: 'Academic Council | JKKN Dental College',
   description: 'Learn about the Academic Council at JKKN Dental College, dedicated to shaping curriculum, promoting research, and enhancing dental education.',
-  url: 'https://dental.jkkn.ac.in/administration/academic-council/',
+  url: 'https://dental.jkkn.ac.in/academic-council/',
   speakableCssSelectors: ['h1', '.hero-description', 'article p'],
 });
 

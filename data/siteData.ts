@@ -74,10 +74,10 @@ export const topMenuItems: NavItem[] = [
     submenu: [
       { label: "OUR TRUST", href: "/our-trust" },
       { label: "OUR MANAGEMENT", href: "/our-management" },
-      { label: "PRINCIPAL'S MESSAGE", href: "/administration/principals-message" },
-      { label: "FINANCE OFFICER", href: "/administration/finance-officer" },
-      { label: "GOVERNING BODY", href: "/administration/governing-body" },
-      { label: "ACADEMIC COUNCIL", href: "/administration/academic-council" },
+      { label: "PRINCIPAL'S MESSAGE", href: "/principals-message" },
+      { label: "FINANCE OFFICER", href: "/finance-officer" },
+      { label: "GOVERNING BODY", href: "/governing-body" },
+      { label: "ACADEMIC COUNCIL", href: "/academic-council" },
       { label: "INTERNAL COMPLIANTS COMMITTEE", href: "/pdf/Internal-Compliance-committee.pdf" },
       { label: "ACADEMIC LEADERSHIP", href: "/pdf/Academic-Leadership.pdf" }
     ]

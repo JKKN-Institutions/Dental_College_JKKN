@@ -137,7 +137,7 @@ npm run lint     # ESLint check
 - `/about/` — Vision, approvals, accreditation, annual reports
 - `/academics/` — BDS, MDS (5 specializations), syllabi, calendars, faculty
 - `/accreditation/` — NAAC, NIRF (2024, 2025)
-- `/administration/` — Trust, management, governing body, committees
+- Administration (top-level, flattened from `/administration/`): `/our-trust`, `/our-management`, `/principals-message`, `/finance-officer`, `/governing-body`, `/academic-council`, `/academic-leadership`, `/internal-complaints-committee`
 - `/admission/` — Process, fees, scholarships, refund policy
 - `/committee/` — 20+ institutional committees
 - `/facilities/` — Hostel, library, labs, transport, sports, health

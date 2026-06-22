@@ -12,17 +12,17 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Finance Officer | JKKN Dental College',
     description: 'Meet Mr. K. Velayutham, MBA, Finance Officer at JKKN Dental College, managing financial planning, budgeting, and institutional growth.',
-    url: 'https://dental.jkkn.ac.in/administration/finance-officer/',
+    url: 'https://dental.jkkn.ac.in/finance-officer/',
     type: 'website',
     siteName: 'JKKN Dental College & Hospital',
   },
 };
 
-const breadcrumbSchema = generateBreadcrumbSchema('/administration/finance-officer/');
+const breadcrumbSchema = generateBreadcrumbSchema('/finance-officer/');
 const speakableSchema = generateSpeakableWebPageSchema({
   title: 'Finance Officer | JKKN Dental College',
   description: 'Meet Mr. K. Velayutham, MBA, Finance Officer at JKKN Dental College, managing financial planning, budgeting, and institutional growth.',
-  url: 'https://dental.jkkn.ac.in/administration/finance-officer/',
+  url: 'https://dental.jkkn.ac.in/finance-officer/',
   speakableCssSelectors: ['h1', '.hero-description', 'article p'],
 });
 

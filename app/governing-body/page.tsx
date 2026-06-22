@@ -13,17 +13,17 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Governing Body | JKKN Dental College',
     description: 'Explore the Governing Body of JKKN Dental College, guiding excellence in dental education, healthcare, and institutional governance.',
-    url: 'https://dental.jkkn.ac.in/administration/governing-body/',
+    url: 'https://dental.jkkn.ac.in/governing-body/',
     type: 'website',
     siteName: 'JKKN Dental College & Hospital',
   },
 };
 
-const breadcrumbSchema = generateBreadcrumbSchema('/administration/governing-body/');
+const breadcrumbSchema = generateBreadcrumbSchema('/governing-body/');
 const speakableSchema = generateSpeakableWebPageSchema({
   title: 'Governing Body | JKKN Dental College',
   description: 'Explore the Governing Body of JKKN Dental College, guiding excellence in dental education, healthcare, and institutional governance.',
-  url: 'https://dental.jkkn.ac.in/administration/governing-body/',
+  url: 'https://dental.jkkn.ac.in/governing-body/',
   speakableCssSelectors: ['h1', '.hero-description', 'article p'],
 });
 

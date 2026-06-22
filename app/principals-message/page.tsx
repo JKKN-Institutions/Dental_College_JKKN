@@ -12,17 +12,17 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Principal's Message | JKKN Dental College",
     description: 'Read the inspiring message from Dr. Dhanasekar Balakrishnan, Principal of JKKN Dental College, on our vision for dental education excellence.',
-    url: 'https://dental.jkkn.ac.in/administration/principals-message/',
+    url: 'https://dental.jkkn.ac.in/principals-message/',
     type: 'website',
     siteName: 'JKKN Dental College & Hospital',
   },
 };
 
-const breadcrumbSchema = generateBreadcrumbSchema('/administration/principals-message/');
+const breadcrumbSchema = generateBreadcrumbSchema('/principals-message/');
 const speakableSchema = generateSpeakableWebPageSchema({
   title: "Principal's Message | JKKN Dental College",
   description: 'Read the inspiring message from Dr. Dhanasekar Balakrishnan, Principal of JKKN Dental College, on our vision for dental education excellence.',
-  url: 'https://dental.jkkn.ac.in/administration/principals-message/',
+  url: 'https://dental.jkkn.ac.in/principals-message/',
   speakableCssSelectors: ['h1', '.hero-description', 'article p'],
 });
 

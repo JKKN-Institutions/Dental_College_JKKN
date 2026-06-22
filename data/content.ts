@@ -37,14 +37,14 @@ export const siteContent = {
         label: "ADMINISTRATION",
         href: "/administration",
         submenu: [
-          { label: "OUR TRUST", href: "/administration/our-trust" },
-          { label: "OUR MANAGEMENT", href: "/administration/our-management" },
-          { label: "PRINCIPAL'S MESSAGE", href: "/administration/principals-message" },
-          { label: "FINANCE OFFICER", href: "/administration/finance-officer" },
-          { label: "GOVERNING BODY", href: "/administration/governing-body" },
-          { label: "ACADEMIC COUNCIL", href: "/administration/academic-council" },
-          { label: "INTERNAL COMPLAINTS COMMITTEE", href: "/administration/internal-complaints-committee" },
-          { label: "ACADEMIC LEADERSHIP", href: "/administration/academic-leadership" }
+          { label: "OUR TRUST", href: "/our-trust" },
+          { label: "OUR MANAGEMENT", href: "/our-management" },
+          { label: "PRINCIPAL'S MESSAGE", href: "/principals-message" },
+          { label: "FINANCE OFFICER", href: "/finance-officer" },
+          { label: "GOVERNING BODY", href: "/governing-body" },
+          { label: "ACADEMIC COUNCIL", href: "/academic-council" },
+          { label: "INTERNAL COMPLAINTS COMMITTEE", href: "/internal-complaints-committee" },
+          { label: "ACADEMIC LEADERSHIP", href: "/academic-leadership" }
         ]
       },
       {

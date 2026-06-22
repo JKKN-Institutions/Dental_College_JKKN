@@ -187,16 +187,16 @@ export function GetDentalCollegePages(pathname: string): MenuGroup[] {
           href: '/administration',
           label: 'Administration',
           icon: Users,
-          active: pathname.startsWith('/administration') || pathname.startsWith('/our-'),
+          active: ['/principals-message', '/finance-officer', '/governing-body', '/academic-council', '/academic-leadership', '/internal-complaints-committee'].includes(pathname) || pathname.startsWith('/our-'),
           submenus: [
             { href: '/our-trust', label: 'Our Trust', icon: Heart, active: pathname === '/our-trust' },
             { href: '/our-management', label: 'Our Management', icon: Briefcase, active: pathname === '/our-management' },
-            { href: '/administration/principals-message', label: "Principal's Message", icon: MessageSquare, active: pathname === '/administration/principals-message' },
-            { href: '/administration/finance-officer', label: 'Finance Officer', icon: DollarSign, active: pathname === '/administration/finance-officer' },
-            { href: '/administration/governing-body', label: 'Governing Body', icon: Landmark, active: pathname === '/administration/governing-body' },
-            { href: '/administration/academic-council', label: 'Academic Council', icon: ScrollText, active: pathname === '/administration/academic-council' },
-            { href: '/administration/academic-leadership', label: 'Academic Leadership', icon: Crown, active: pathname === '/administration/academic-leadership' },
-            { href: '/administration/internal-complaints-committee', label: 'Internal Complaints Committee', icon: ShieldAlert, active: pathname === '/administration/internal-complaints-committee' }
+            { href: '/principals-message', label: "Principal's Message", icon: MessageSquare, active: pathname === '/principals-message' },
+            { href: '/finance-officer', label: 'Finance Officer', icon: DollarSign, active: pathname === '/finance-officer' },
+            { href: '/governing-body', label: 'Governing Body', icon: Landmark, active: pathname === '/governing-body' },
+            { href: '/academic-council', label: 'Academic Council', icon: ScrollText, active: pathname === '/academic-council' },
+            { href: '/academic-leadership', label: 'Academic Leadership', icon: Crown, active: pathname === '/academic-leadership' },
+            { href: '/internal-complaints-committee', label: 'Internal Complaints Committee', icon: ShieldAlert, active: pathname === '/internal-complaints-committee' }
           ]
         }
       ]
