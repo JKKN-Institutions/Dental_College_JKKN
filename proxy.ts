@@ -25,6 +25,14 @@ export async function proxy(request: NextRequest) {
     return new NextResponse(null, { status: 410 });
   }
 
+  // Match the admin panel WITHOUT colliding with public sections that merely
+  // share the "admin" prefix (e.g. /administration/*). A bare startsWith('/admin')
+  // would wrongly capture /administration/principals-message and redirect logged-out
+  // visitors (and crawlers) to /admin/login. Require an exact /admin or a /admin/ path.
+  const isProtectedAdminRoute =
+    (pathname === '/admin' || pathname.startsWith('/admin/')) &&
+    !pathname.startsWith('/admin/login');
+
   let supabaseResponse = NextResponse.next({ request });
 
   // Skip Supabase auth if env vars are not configured
@@ -56,12 +64,12 @@ export async function proxy(request: NextRequest) {
     const { data: { user } } = await supabase.auth.getUser();
 
     // Protect /admin routes — redirect unauthenticated users to login
-    if (pathname.startsWith('/admin') && !pathname.startsWith('/admin/login')) {
+    if (isProtectedAdminRoute) {
       if (!user) {
         return NextResponse.redirect(new URL('/admin/login', request.url));
       }
     }
-  } else if (pathname.startsWith('/admin') && !pathname.startsWith('/admin/login')) {
+  } else if (isProtectedAdminRoute) {
     // No Supabase configured — block admin access
     return NextResponse.redirect(new URL('/admin/login', request.url));
   }
