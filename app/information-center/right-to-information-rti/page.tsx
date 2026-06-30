@@ -73,7 +73,7 @@ export default function RightToInformation() {
             </div>
             <div className="px-6 py-5">
               <p className="text-gray-700 leading-relaxed text-sm md:text-base">
-                At JKKN Dental College &  Hospital, we are committed to maintaining transparency, accountability, and openness in accordance with the Right to Information (RTI) Act, 2005, as per the University Grants Commission (UGC) guidelines. We ensure that all stakeholders, including students, faculty, and the public, have access to information about our institution&apos;s administration, policies, and functioning.
+                At JKKN Dental College &  Hospital, we are committed to maintaining transparency, accountability, and openness in accordance with the Right to Information (RTI) Act, 2005, as per the University Grants Commission (UGC) guidelines. We ensure that all stakeholders, including learners, senior learners, and the public, have access to information about our institution&apos;s administration, policies, and functioning.
               </p>
             </div>
           </div>
@@ -110,7 +110,7 @@ export default function RightToInformation() {
                 </div>
                 <div className="flex items-start gap-3">
                   <Check className="w-5 h-5 text-[#006837] flex-shrink-0 mt-0.5" />
-                  <p className="text-gray-700 text-sm md:text-base leading-relaxed">Academic Information – Courses offered, faculty details, admission procedures, and academic regulations.</p>
+                  <p className="text-gray-700 text-sm md:text-base leading-relaxed">Academic Information – Courses offered, senior learner details, admission procedures, and academic regulations.</p>
                 </div>
                 <div className="flex items-start gap-3">
                   <Check className="w-5 h-5 text-[#006837] flex-shrink-0 mt-0.5" />
@@ -249,7 +249,7 @@ export default function RightToInformation() {
                 As per the RTI Act, certain information is exempt from disclosure, including:
               </p>
               <p className="text-gray-700 leading-relaxed text-sm md:text-base">
-                Personal and confidential information of students, faculty, or patients.
+                Personal and confidential information of learners, senior learners, or patients.
               </p>
               <p className="text-gray-700 leading-relaxed text-sm md:text-base ml-4">
                 Information that affects national security, public safety, or ongoing legal proceedings.

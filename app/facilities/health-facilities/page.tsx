@@ -49,7 +49,7 @@ const features = [
     icon: ShieldCheck,
     title: 'Preparedness:',
     content: (
-      <p>Training and Drills: Regular training for staff and students to handle various kinds of medical emergencies efficiently.</p>
+      <p>Training and Drills: Regular training for team members and learners to handle various kinds of medical emergencies efficiently.</p>
     ),
   },
   {

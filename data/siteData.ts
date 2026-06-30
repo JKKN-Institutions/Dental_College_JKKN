@@ -56,14 +56,14 @@ export const topMenuItems: NavItem[] = [
       { label: "ANNUAL REPORT", href: "/pdf/ANNUAL-REPORT.pdf" },
       { label: "ANNUAL ACCOUNT STATEMENT", href: "/pdf/ANNUAL-ACCOUNTS-STATEMENT.pdf" },
       {
-        label: "WHY STUDENTS CHOOSE JKKN?",
+        label: "WHY LEARNERS CHOOSE JKKN?",
         href: "/about",
         submenu: [
-          { label: "WHY ERODE STUDENTS?", href: "/erode/" },
-          { label: "WHY SALEM STUDENTS?", href: "/salem/" },
-          { label: "WHY TIRUPPUR STUDENTS?", href: "/tiruppur/" },
-          { label: "WHY NAMAKKAL STUDENTS?", href: "/namakkal/" },
-          { label: "WHY COIMBATORE STUDENTS?", href: "/coimbatore/" }
+          { label: "WHY ERODE LEARNERS?", href: "/erode/" },
+          { label: "WHY SALEM LEARNERS?", href: "/salem/" },
+          { label: "WHY TIRUPPUR LEARNERS?", href: "/tiruppur/" },
+          { label: "WHY NAMAKKAL LEARNERS?", href: "/namakkal/" },
+          { label: "WHY COIMBATORE LEARNERS?", href: "/coimbatore/" }
         ]
       }
     ]
@@ -131,7 +131,7 @@ export const topMenuItems: NavItem[] = [
       { label: "MENTOR-MENTEE PROGRAM", href: "/academics/mentor-mentee-program" },
       { label: "ACADEMIC ATTRIBUTES", href: "/pdf/Academic-Attributes.pdf" },
       { label: "LEARNING OUTCOMES", href: "/academics/learning-outcomes" },
-      { label: "STUDENT-CENTRIC TEACHING METHODS", href: "/academics/student-centric-teaching-methods" },
+      { label: "LEARNER-CENTRIC TEACHING METHODS", href: "/academics/student-centric-teaching-methods" },
       {
         label: "COURSES",
         href: "/academics/courses",
@@ -143,7 +143,7 @@ export const topMenuItems: NavItem[] = [
       },
       { label: "CAPABILITY ENHANCEMENT PROGRAM", href: "/academics/capability-enhancement-program" },
       { label: "PLACEMENTS", href: "/placements" },
-      { label: "CURRICULUM FEEDBACK", href: "https://form.jotform.com/240432334247045" }
+      { label: "LEARNING FRAMEWORK FEEDBACK", href: "https://form.jotform.com/240432334247045" }
     ]
   },
   {
@@ -220,10 +220,10 @@ export const bottomMenuItems: NavItem[] = [
     label: "COMMITTEE",
     href: "/committee",
     submenu: [
-      { label: "STUDENT COUNCIL", href: "/committee/student-council" },
+      { label: "LEARNER COUNCIL", href: "/committee/student-council" },
       { label: "INSTITUTION'S INNOVATION COUNCIL ( IIC )", href: "/research/institutions-innovation-council-iic" },
       { label: "INTERNAL COMPLIANTS COMMITTEE (ICC)", href: "/pdf/Internal-Compliance-committee.pdf" },
-      { label: "STUDENT GRIEVANCE REDRESSAL COMMITTEE (SGRC)", href: "/pdf/Student-Grievance-residencial-committee.pdf" },
+      { label: "LEARNER GRIEVANCE REDRESSAL COMMITTEE (SGRC)", href: "/pdf/Student-Grievance-residencial-committee.pdf" },
       { label: "PLACEMENT CELL / CDC", href: "/committee/placement-cell-cdc" },
       { label: "INSTITUTIONAL ETHICAL COMMITTEE", href: "/institutional-ethical-committee" },
       { label: "ANTI-RAGGING COMMITTEE", href: "/committee/anti-ragging-committee" },
@@ -236,11 +236,11 @@ export const bottomMenuItems: NavItem[] = [
       { label: "HOSTEL ADVISORY & WELFARE COMMITTEE", href: "/committee/hostel-advisory-and-welfare-committee" },
       { label: "LIBRARY AND LEARNING RESOURCES COMMITTEE", href: "/committee/library-and-learning-resources-committee" },
       { label: "FINANCE COMMITTEE", href: "/committee/finance-committee" },
-      { label: "STUDENT WELFARE COMMITTEE", href: "/committee/student-welfare-committee" },
+      { label: "LEARNER WELFARE COMMITTEE", href: "/committee/student-welfare-committee" },
       { label: "PHYSICAL EDUCATION & EXTRA CURRICULAR ACTIVITIES COMMITTEE", href: "/committee/physical-education-and-extra-curricular-activities-committee" },
       { label: "PATIENT WELFARE COMMITTEE", href: "/committee/patient-welfare-committee" },
       { label: "NCC/NSS", href: "/committee/ncc/nss" },
-      { label: "INTERNATIONAL STUDENT CELL COMMITTEE", href: "/committee/international-student-cell-committee" }
+      { label: "INTERNATIONAL LEARNER CELL COMMITTEE", href: "/committee/international-student-cell-committee" }
     ]
   },
   {
@@ -256,9 +256,9 @@ export const bottomMenuItems: NavItem[] = [
     href: "/facilities",
     submenu: [
       { label: "ACCESSIBILITY & INCLUSION AT JKKNDCH", href: "/facilities/accessibility-and-inclusion-at-jkkndch" },
-      { label: "LIBRARY", href: "/facilities/library" },
+      { label: "LEARNING COMMONS", href: "/facilities/library" },
       { label: "OUTREACH REQUEST", href: "https://outreach.dental.jkkn.ac.in/" },
-      { label: "LABS", href: "/facilities/labs" },
+      { label: "LEARNING LABS", href: "/facilities/labs" },
       { label: "FOOD COURT", href: "/facilities/food-court" },
       {
         label: "HOSTEL",
@@ -273,7 +273,7 @@ export const bottomMenuItems: NavItem[] = [
       { label: "SPORTS CLUB", href: "/facilities/sports-club" },
       { label: "AUDITORIUM", href: "/facilities/auditorium" },
       { label: "BANK & POST OFFICE", href: "/facilities/bank-and-post-office" },
-      { label: "DIGITAL CLASS ROOM", href: "/facilities/digital-class-room" },
+      { label: "DIGITAL LEARNING STUDIO", href: "/facilities/digital-class-room" },
       { label: "HEALTH FACILITIES", href: "/facilities/health-facilities" },
       { label: "WI-FI CAMPUS", href: "/facilities/wi-fi-campus" },
       { label: "AMBULANCE SERVICES", href: "/facilities/ambulance-services" },
@@ -295,7 +295,7 @@ export const bottomMenuItems: NavItem[] = [
     label: "OTHERS",
     href: "/others",
     submenu: [
-      { label: "FACULTY", href: "/faculty" },
+      { label: "SENIOR LEARNERS", href: "/faculty" },
       { label: "CAREERS", href: "https://jobs.cvviz.com/jkkn_institutions" },
       { label: "PATIENT SAFETY MANUAL", href: "/pdf/PATIENT-SAFETY-MANUAL.pdf" },
       { label: "OUTREACH", href: "https://outreach.dental.jkkn.ac.in/" }

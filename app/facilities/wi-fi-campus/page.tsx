@@ -32,7 +32,7 @@ const wifiFeatures = [
     icon: Radio,
     title: 'All-encompassing Coverage:',
     content: (
-      <p>Our strategically placed routers ensure WiFi coverage in lecture halls, libraries, labs, common areas, and even outdoor spaces.</p>
+      <p>Our strategically placed routers ensure WiFi coverage in learning auditoriums, learning commons, learning labs, common areas, and even outdoor spaces.</p>
     ),
   },
   {

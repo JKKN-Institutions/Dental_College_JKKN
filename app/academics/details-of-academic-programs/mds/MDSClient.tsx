@@ -138,7 +138,7 @@ export default function MDSProgram() {
               </p>
 
               <p className="text-gray-600 mb-8 leading-relaxed">
-                At JKKN Dental College, our MDS programs combine rigorous academic curriculum with extensive clinical exposure. Learners work on diverse cases under expert supervision, conduct original research, and develop the skills required to become leaders in their chosen specialization.
+                At JKKN Dental College, our MDS programs combine rigorous academic learning framework with extensive clinical exposure. Learners work on diverse cases under expert supervision, conduct original research, and develop the skills required to become leaders in their chosen specialization.
               </p>
 
               {/* Features Grid */}
@@ -150,7 +150,7 @@ export default function MDSProgram() {
                         <path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z" />
                       </svg>
                     </div>
-                    <h3 className="font-bold text-gray-800 text-sm sm:text-base">DCI Curriculum</h3>
+                    <h3 className="font-bold text-gray-800 text-sm sm:text-base">DCI Learning Framework</h3>
                   </div>
                 </div>
 
@@ -412,7 +412,7 @@ export default function MDSProgram() {
                 </svg>
               </div>
               <div className="text-4xl md:text-5xl font-bold text-[#7cb983] mb-3">25+</div>
-              <div className="text-sm text-white uppercase">Expert Faculty</div>
+              <div className="text-sm text-white uppercase">Expert Senior Learners</div>
             </div>
 
             {/* Dental Chairs */}
@@ -499,7 +499,7 @@ export default function MDSProgram() {
                   <path fillRule="evenodd" d="M3 5a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2h-2.22l.123.489.804.804A1 1 0 0113 18H7a1 1 0 01-.707-1.707l.804-.804L7.22 15H5a2 2 0 01-2-2V5zm5.771 7H5V5h10v7H8.771z" clipRule="evenodd" />
                 </svg>
               </div>
-              <h3 className="font-bold text-gray-800 text-lg mb-3 text-center">Digital Dentistry Lab</h3>
+              <h3 className="font-bold text-gray-800 text-lg mb-3 text-center">Digital Dentistry Learning Lab</h3>
               <p className="text-sm text-gray-600 text-center">
                 CAD/CAM systems, intraoral scanners, and 3D printers for precision treatments.
               </p>

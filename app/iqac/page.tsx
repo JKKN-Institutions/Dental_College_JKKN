@@ -82,10 +82,10 @@ export default function IQAC() {
               To channelize all efforts and measures of the institution towards promoting quality education.
             </li>
             <li className="font-semibold">
-              To facilitate the creation of a learner-centric environment conducive to quality education and faculty growth.
+              To facilitate the creation of a learner-centric environment conducive to quality education and senior learner growth.
             </li>
             <li className="font-semibold">
-              To arrange for feedback responses from students, parents, and other stakeholders on quality-related institutional processes.
+              To arrange for feedback responses from learners, learning partners, and other stakeholders on quality-related institutional processes.
             </li>
             <li className="font-semibold">
               To disseminate information on various quality parameters to all stakeholders.
@@ -153,7 +153,7 @@ export default function IQAC() {
               External experts from academia and industry
             </li>
             <li className="font-semibold">
-              Stakeholder representatives (Alumni, Students)
+              Stakeholder representatives (Alumni, Learners)
             </li>
           </ul>
 
@@ -180,10 +180,10 @@ export default function IQAC() {
               Preparation and submission of Annual Quality Assurance Report (AQAR)
             </li>
             <li className="font-semibold">
-              Organizing faculty development programs and quality enhancement initiatives
+              Organizing senior learner development programs and quality enhancement initiatives
             </li>
             <li className="font-semibold">
-              Collecting and analyzing feedback from students, faculty, and stakeholders
+              Collecting and analyzing feedback from learners, senior learners, and stakeholders
             </li>
             <li className="font-semibold">
               Monitoring academic and administrative quality parameters

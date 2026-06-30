@@ -51,7 +51,7 @@ const faqSchema = {
       "name": "Which is the best dental college near Coimbatore?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "JKKN Dental College & Hospital in Komarapalayam, Namakkal is the leading dental institution within 120 km of Coimbatore, offering a 92%+ placement rate and the highest BDS-to-MDS conversion record in the region. The college is approved by the Dental Council of India and affiliated with TN Dr. MGR Medical University. Students from Coimbatore reach the campus in approximately 1.5 hours via NH-544."
+        "text": "JKKN Dental College & Hospital in Komarapalayam, Namakkal is the leading dental institution within 120 km of Coimbatore, offering a 92%+ placement rate and the highest BDS-to-MDS conversion record in the region. The college is approved by the Dental Council of India and affiliated with TN Dr. MGR Medical University. Learners from Coimbatore reach the campus in approximately 1.5 hours via NH-544."
       }
     },
     {
@@ -59,7 +59,7 @@ const faqSchema = {
       "name": "How far is JKKN Dental College from Coimbatore?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "JKKN Dental College & Hospital is located 108 km from Coimbatore city, connected directly via National Highway 544 (NH-544, the Salem–Coimbatore Highway). The drive takes approximately 1 hour 30 minutes. Regular inter-city bus services and the college's dedicated transport facility serve students from Coimbatore."
+        "text": "JKKN Dental College & Hospital is located 108 km from Coimbatore city, connected directly via National Highway 544 (NH-544, the Salem–Coimbatore Highway). The drive takes approximately 1 hour 30 minutes. Regular inter-city bus services and the college's dedicated transport facility serve learners from Coimbatore."
       }
     },
     {
@@ -91,7 +91,7 @@ const faqSchema = {
       "name": "Does JKKN Dental College have hostel facility?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. JKKN Dental College & Hospital provides separate hostel facilities for male and female students on campus at Komarapalayam, Namakkal. Hostels include Wi-Fi, dining, and 24-hour security. This is particularly convenient for students from Coimbatore who prefer on-campus residence during weekdays."
+        "text": "Yes. JKKN Dental College & Hospital provides separate hostel facilities for male and female learners on campus at Komarapalayam, Namakkal. Hostels include Wi-Fi, dining, and 24-hour security. This is particularly convenient for learners from Coimbatore who prefer on-campus residence during weekdays."
       }
     },
     {
@@ -136,10 +136,10 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      "name": "Does JKKN Dental College offer transport for Coimbatore students?",
+      "name": "Does JKKN Dental College offer transport for Coimbatore learners?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "JKKN Dental College & Hospital provides college transport services for students. The campus is also served by regular inter-city bus services and train connections via Coimbatore Junction to Erode and Salem, from where campus-direction transport is available. For daily commuters from Coimbatore, on-campus hostel accommodation is recommended."
+        "text": "JKKN Dental College & Hospital provides college transport services for learners. The campus is also served by regular inter-city bus services and train connections via Coimbatore Junction to Erode and Salem, from where campus-direction transport is available. For daily commuters from Coimbatore, on-campus hostel accommodation is recommended."
       }
     }
   ]

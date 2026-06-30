@@ -146,7 +146,7 @@ export default function InstitutionalDevelopmentPlan() {
               </li>
               <li className="flex gap-3 text-gray-700">
                 <span className="mt-1.5 shrink-0 w-2 h-2 rounded-full bg-[#7cb983]" />
-                Robust faculty development and interdisciplinary learning initiatives.
+                Robust senior learner development and interdisciplinary learning initiatives.
               </li>
               <li className="flex gap-3 text-gray-700">
                 <span className="mt-1.5 shrink-0 w-2 h-2 rounded-full bg-[#7cb983]" />

@@ -27,34 +27,34 @@ export default function SalemPage() {
     },
     {
       q: 'Does JKKN Dental have its own hospital?',
-      a: 'Yes, JKKN Dental College & Hospital has its own 200+ chair dental hospital and 100+ bed facility on campus. Patients from Salem, Namakkal, and surrounding districts visit daily — with 500+ patients treated every day, students gain extensive hands-on clinical experience from Year 1.',
+      a: 'Yes, JKKN Dental College & Hospital has its own 200+ chair dental hospital and 100+ bed facility on campus. Patients from Salem, Namakkal, and surrounding districts visit daily — with 500+ patients treated every day, learners gain extensive hands-on clinical experience from Year 1.',
     },
     {
       q: 'What MDS specialisations are available?',
-      a: 'JKKN Dental offers MDS in five specialisations: Orthodontics & Dentofacial Orthopaedics, Prosthodontics & Crown and Bridge, Oral & Maxillofacial Surgery, Conservative Dentistry & Endodontics, and Periodontics. Salem students can commute or stay on campus while accessing 500+ daily patient cases for their postgraduate research and clinical training.',
+      a: 'JKKN Dental offers MDS in five specialisations: Orthodontics & Dentofacial Orthopaedics, Prosthodontics & Crown and Bridge, Oral & Maxillofacial Surgery, Conservative Dentistry & Endodontics, and Periodontics. Salem learners can commute or stay on campus while accessing 500+ daily patient cases for their postgraduate research and clinical training.',
     },
     {
-      q: 'Does JKKN Dental provide hostel for Salem students?',
-      a: 'Yes, JKKN Dental provides separate hostel facilities for boys and girls. Students from Salem can also opt for daily commute as the campus is approximately 1 hour away via NH-544. College transport services are also available.',
+      q: 'Does JKKN Dental provide hostel for Salem learners?',
+      a: 'Yes, JKKN Dental provides separate hostel facilities for boys and girls. Learners from Salem can also opt for daily commute as the campus is approximately 1 hour away via NH-544. College transport services are also available.',
     },
     {
       q: 'What is the BDS fee at dental colleges near Salem?',
       a: 'At JKKN Dental College & Hospital, BDS tuition fees are approximately ₹2,50,000 under Government Quota. Management quota fees are available separately. Contact +91 9345855001 or visit www.jkkn.ai/apply/jkkn-admission-2026 for the latest fee structure and 2026 admission details.',
     },
     {
-      q: 'Can Salem students get BDS admission at JKKN through NEET?',
-      a: 'Yes, Salem students can secure BDS admission at JKKN Dental College & Hospital through NEET-UG scores via Tamil Nadu DME state quota counselling or management quota. 85% of seats are allocated through state quota and 15% through All India Quota. JKKN is approximately 60 km from Salem via NH-544.',
+      q: 'Can Salem learners get BDS admission at JKKN through NEET?',
+      a: 'Yes, Salem learners can secure BDS admission at JKKN Dental College & Hospital through NEET-UG scores via Tamil Nadu DME state quota counselling or management quota. 85% of seats are allocated through state quota and 15% through All India Quota. JKKN is approximately 60 km from Salem via NH-544.',
     },
     {
       q: 'How can I apply for admission at JKKN Dental?',
-      a: 'Salem students can apply online at https://dental.jkkn.ac.in/ or visit the campus directly — approximately 1 hour via NH-544. Admissions for BDS and MDS 2026-27 are currently open. Call +91 9345855001 for personalised guidance on eligibility, fees, and the counselling process.',
+      a: 'Salem learners can apply online at https://dental.jkkn.ac.in/ or visit the campus directly — approximately 1 hour via NH-544. Admissions for BDS and MDS 2026-27 are currently open. Call +91 9345855001 for personalised guidance on eligibility, fees, and the counselling process.',
     },
   ];
 
   const whyFeatures = [
     { icon: <Hospital className="w-6 h-6 text-[#006837]" />, title: 'Own Hospital', desc: 'DCI-approved dental college with attached hospital for hands-on clinical training' },
-    { icon: <Stethoscope className="w-6 h-6 text-[#006837]" />, title: 'Real Patient Exposure', desc: 'Own dental hospital on campus — students get real patient exposure from Year 1' },
-    { icon: <Microscope className="w-6 h-6 text-[#006837]" />, title: 'Advanced Labs', desc: 'Advanced dental labs, simulation equipment, and digital dentistry training' },
+    { icon: <Stethoscope className="w-6 h-6 text-[#006837]" />, title: 'Real Patient Exposure', desc: 'Own dental hospital on campus — learners get real patient exposure from Year 1' },
+    { icon: <Microscope className="w-6 h-6 text-[#006837]" />, title: 'Advanced Learning Labs', desc: 'Advanced dental learning labs, simulation equipment, and digital dentistry training' },
     { icon: <TrendingUp className="w-6 h-6 text-[#006837]" />, title: 'NEET MDS Results', desc: 'Strong track record in NEET MDS results and higher education' },
     { icon: <Users className="w-6 h-6 text-[#006837]" />, title: 'Community Service', desc: 'Hospital serves the community — builds trust and clinical experience' },
     { icon: <Bus className="w-6 h-6 text-[#006837]" />, title: 'Easy Commute', desc: 'Approximately 60 km from Salem via NH-544. Daily commute or comfortable hostel — your choice.' },
@@ -97,8 +97,8 @@ export default function SalemPage() {
   ];
 
   const facilities = [
-    { icon: <Microscope className="w-6 h-6 text-[#006837]" />, title: 'Modern Labs', desc: 'State-of-the-art laboratories and smart classrooms' },
-    { icon: <BookOpen className="w-6 h-6 text-[#006837]" />, title: 'Digital Library', desc: 'Well-stocked library with digital access and journals' },
+    { icon: <Microscope className="w-6 h-6 text-[#006837]" />, title: 'Modern Learning Labs', desc: 'State-of-the-art learning labs and smart learning studios' },
+    { icon: <BookOpen className="w-6 h-6 text-[#006837]" />, title: 'Digital Learning Commons', desc: 'Well-stocked learning commons with digital access and journals' },
     { icon: <Home className="w-6 h-6 text-[#006837]" />, title: 'Hostel', desc: 'Separate hostels for boys and girls with mess facility, WiFi, 24-hour security, and recreational facilities' },
     { icon: <Bus className="w-6 h-6 text-[#006837]" />, title: 'Transport', desc: 'College buses connecting to Salem and surrounding areas' },
     { icon: <Award className="w-6 h-6 text-[#006837]" />, title: 'Sports', desc: 'Playground, indoor games, gym, and annual sports events' },
@@ -222,7 +222,7 @@ export default function SalemPage() {
           <div className="mt-8 border border-gray-200 rounded-xl p-5 bg-white">
             <h3 className="font-bold text-gray-900 text-base mb-3">How Many Dental Colleges Are in Salem?</h3>
             <p className="text-gray-600 text-sm leading-relaxed">
-              There are dental institutions in and around Salem, Tamil Nadu: Vinayaka Mission&apos;s Sankarachariyar Dental College (private, within Salem city), Government Medical College Salem (GMKMC) with dental programs, and JKKN Dental College &amp; Hospital approximately 60 km from Salem via NH-544. Salem students seeking broader clinical exposure and better placement outcomes often choose JKKN Dental College.
+              There are dental institutions in and around Salem, Tamil Nadu: Vinayaka Mission&apos;s Sankarachariyar Dental College (private, within Salem city), Government Medical College Salem (GMKMC) with dental programs, and JKKN Dental College &amp; Hospital approximately 60 km from Salem via NH-544. Salem learners seeking broader clinical exposure and better placement outcomes often choose JKKN Dental College.
             </p>
           </div>
         </div>
@@ -257,15 +257,15 @@ export default function SalemPage() {
       <section className="bg-[#FBFBEE] py-16 px-4">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="font-extrabold text-gray-900 mb-4" style={{ fontSize: 'clamp(1.6rem, 3vw + 0.5rem, 2.4rem)' }}>
-            Why Salem Students Choose JKKN Dental
+            Why Salem Learners Choose JKKN Dental
           </h2>
           <p className="text-gray-500 max-w-3xl mx-auto mb-4 leading-relaxed" style={{ fontSize: 'clamp(0.875rem, 1vw + 0.4rem, 1.05rem)' }}>
-            Salem is one of the largest cities in central Tamil Nadu with excellent connectivity to JKKN via NH-544. The journey takes approximately 1 hour, making daily commute a practical option. Students from Salem get access to quality professional education without the high costs of metro city colleges.
+            Salem is one of the largest cities in central Tamil Nadu with excellent connectivity to JKKN via NH-544. The journey takes approximately 1 hour, making daily commute a practical option. Learners from Salem get access to quality professional education without the high costs of metro city colleges.
           </p>
           {/* E-E-A-T paragraph */}
           <div className="bg-white rounded-xl p-5 max-w-3xl mx-auto mb-8 text-left border border-gray-100">
             <p className="text-gray-600 text-sm leading-relaxed">
-              JKKN Dental College &amp; Hospital is a Dental Council of India (DCI) approved institution located at Natarajapuram, NH-544 (Salem-Coimbatore Highway), Komarapalayam, Namakkal District, Tamil Nadu 638183. Established in 1952 and operating as a dental college since 1987, JKKN is affiliated to TN Dr. MGR Medical University, Chennai. The college operates a 200-chair dental hospital receiving 500+ patients daily, providing students with one of the highest clinical contact hours in the region. JKKN offers BDS (100 seats) and MDS in 5 specializations. The institution reports a 92% placement rate across graduating batches. Salem students can reach JKKN Dental College &amp; Hospital in approximately 60 km via NH-544. Learn more about our <Link href="/accreditation/" className="text-[#006837] hover:underline">NAAC accreditation</Link>.
+              JKKN Dental College &amp; Hospital is a Dental Council of India (DCI) approved institution located at Natarajapuram, NH-544 (Salem-Coimbatore Highway), Komarapalayam, Namakkal District, Tamil Nadu 638183. Established in 1952 and operating as a dental college since 1987, JKKN is affiliated to TN Dr. MGR Medical University, Chennai. The college operates a 200-chair dental hospital receiving 500+ patients daily, providing learners with one of the highest clinical contact hours in the region. JKKN offers BDS (100 seats) and MDS in 5 specializations. The institution reports a 92% placement rate across graduating batches. Salem learners can reach JKKN Dental College &amp; Hospital in approximately 60 km via NH-544. Learn more about our <Link href="/accreditation/" className="text-[#006837] hover:underline">NAAC accreditation</Link>.
             </p>
           </div>
           <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-12" />
@@ -380,10 +380,10 @@ export default function SalemPage() {
           <h2 className="font-extrabold text-gray-900 mb-3 text-center" style={{ fontSize: 'clamp(1.6rem, 3vw + 0.5rem, 2.4rem)' }}>
             NEET Admission from Salem — BDS 2026 Guide
           </h2>
-          <p className="text-gray-500 text-base mb-4 text-center">Step-by-step process for Salem students</p>
+          <p className="text-gray-500 text-base mb-4 text-center">Step-by-step process for Salem learners</p>
           <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-10" />
           <p className="text-gray-600 leading-relaxed mb-6" style={{ fontSize: 'clamp(0.875rem, 1vw + 0.3rem, 1rem)' }}>
-            Salem students can secure BDS admission at JKKN Dental College &amp; Hospital through NEET-UG scores via Tamil Nadu DME state quota counselling or management quota. The Tamil Nadu BDS admission process allocates 85% seats through state quota counselling and 15% through All India Quota (AIQ) administered by MCC.
+            Salem learners can secure BDS admission at JKKN Dental College &amp; Hospital through NEET-UG scores via Tamil Nadu DME state quota counselling or management quota. The Tamil Nadu BDS admission process allocates 85% seats through state quota counselling and 15% through All India Quota (AIQ) administered by MCC.
           </p>
           <div className="bg-[#FBFBEE] rounded-2xl p-6 mb-6">
             <h3 className="font-bold text-gray-900 text-base mb-4">Eligibility for BDS Admission 2026</h3>
@@ -395,7 +395,7 @@ export default function SalemPage() {
             </ul>
           </div>
           <div className="mb-6">
-            <h3 className="font-bold text-gray-900 text-base mb-4">BDS Admission Steps for Salem Students</h3>
+            <h3 className="font-bold text-gray-900 text-base mb-4">BDS Admission Steps for Salem Learners</h3>
             <ol className="space-y-3">
               {[
                 { step: 1, text: 'Qualify NEET-UG (conducted by NTA)' },
@@ -429,7 +429,7 @@ export default function SalemPage() {
           <h2 className="font-extrabold text-gray-900 mb-3 text-center" style={{ fontSize: 'clamp(1.6rem, 3vw + 0.5rem, 2.4rem)' }}>
             Key Facts: JKKN Dental College from Salem
           </h2>
-          <p className="text-gray-500 text-base mb-4 text-center">Quick reference for Salem students and parents</p>
+          <p className="text-gray-500 text-base mb-4 text-center">Quick reference for Salem learners and learning partners</p>
           <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-10" />
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             {keyFacts.map((fact) => (
@@ -448,7 +448,7 @@ export default function SalemPage() {
           <h2 className="font-extrabold text-gray-900 mb-3" style={{ fontSize: 'clamp(1.6rem, 3vw + 0.5rem, 2.4rem)' }}>
             Frequently Asked Questions
           </h2>
-          <p className="text-gray-500 text-base mb-4">Common questions from Salem students about dental college admissions</p>
+          <p className="text-gray-500 text-base mb-4">Common questions from Salem learners about dental college admissions</p>
           <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-12" />
           <div className="text-left space-y-3">
             {faqs.map((faq, i) => (
@@ -513,7 +513,7 @@ export default function SalemPage() {
             ))}
           </ul>
           <p className="text-gray-500 text-sm">
-            Salem and outstation students may apply for <Link href="/facilities/hostel/" className="text-[#006837] hover:underline font-medium">hostel facilities</Link> at the time of admission. Contact +91 9345855001 for details.
+            Salem and outstation learners may apply for <Link href="/facilities/hostel/" className="text-[#006837] hover:underline font-medium">hostel facilities</Link> at the time of admission. Contact +91 9345855001 for details.
           </p>
         </div>
       </section>
@@ -522,9 +522,9 @@ export default function SalemPage() {
       <section className="bg-[#FBFBEE] py-16 px-4">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="font-extrabold text-gray-900 mb-3" style={{ fontSize: 'clamp(1.6rem, 3vw + 0.5rem, 2.4rem)' }}>
-            What Salem Students Say About JKKN Dental College
+            What Salem Learners Say About JKKN Dental College
           </h2>
-          <p className="text-gray-500 text-base mb-4">Hear from students who made the right choice</p>
+          <p className="text-gray-500 text-base mb-4">Hear from learners who made the right choice</p>
           <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-12" />
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             <div className="bg-white rounded-2xl p-6 text-left shadow-sm">
@@ -540,7 +540,7 @@ export default function SalemPage() {
             <div className="bg-white rounded-2xl p-6 text-left shadow-sm">
               <div className="text-5xl text-gray-200 font-serif leading-none mb-3 select-none">&quot;</div>
               <p className="text-gray-500 text-sm leading-relaxed italic mb-6">
-                I did my MDS in Prosthodontics at JKKN and the infrastructure blew me away — modern simulation labs, digital dentistry equipment, and a supportive faculty who genuinely care about your growth as a specialist.
+                I did my MDS in Prosthodontics at JKKN and the infrastructure blew me away — modern simulation learning labs, digital dentistry equipment, and supportive senior learners who genuinely care about your growth as a specialist.
               </p>
               <div>
                 <p className="font-bold text-gray-900 text-sm">Vijay Anand S.</p>

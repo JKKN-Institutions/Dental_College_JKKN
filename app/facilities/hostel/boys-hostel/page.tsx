@@ -179,7 +179,7 @@ export default function BoysHostel() {
             </div>
             <h2 className="text-lg font-bold text-[#006837]">Community and Safety:</h2>
             <p className="text-gray-600 text-sm leading-relaxed">
-              <strong>Lifelong Connections:</strong> Forge friendships and create cherished memories within a supportive community of peers. <strong>Committed Staff:</strong> Rest assured with our dedicated staff available around the clock to assist and ensure a smooth stay. <strong>Safety First:</strong> Experience peace of mind with security measures that prioritize your well-being. Our Boys Hostel stands as a testament to JKKN&apos;s commitment to providing an enriching, safe, and nurturing environment. Join us in this vibrant living space that complements your academic journey and personal growth.
+              <strong>Lifelong Connections:</strong> Forge friendships and create cherished memories within a supportive community of peers. <strong>Committed Team Members:</strong> Rest assured with our dedicated team members available around the clock to assist and ensure a smooth stay. <strong>Safety First:</strong> Experience peace of mind with security measures that prioritize your well-being. Our Boys Hostel stands as a testament to JKKN&apos;s commitment to providing an enriching, safe, and nurturing environment. Join us in this vibrant living space that complements your academic journey and personal growth.
             </p>
           </div>
 

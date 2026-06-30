@@ -114,7 +114,7 @@ export default function PrincipalsMessage() {
 
           <div className="space-y-6 text-gray-700 text-justify leading-relaxed">
             <p className="font-semibold text-center">
-              Greetings to all students, parents, Faculty, and stakeholders,
+              Greetings to all learners, learning partners, Senior Learners, and stakeholders,
             </p>
 
             <p>
@@ -122,11 +122,11 @@ export default function PrincipalsMessage() {
             </p>
 
             <p>
-              At JKKN Dental College &amp; Hospital, we believe in providing a holistic education that balances academic rigor with real-world application. By integrating cutting-edge technology, advanced clinical training, and a curriculum rooted in design thinking, we prepare our students to address the evolving needs of the dental profession with creativity, empathy, and a solutions-oriented mindset.
+              At JKKN Dental College &amp; Hospital, we believe in providing a holistic education that balances academic rigor with real-world application. By integrating cutting-edge technology, advanced clinical training, and a learning framework rooted in design thinking, we prepare our learners to address the evolving needs of the dental profession with creativity, empathy, and a solutions-oriented mindset.
             </p>
 
             <p>
-              Our institution fosters an environment that encourages research, innovation, and entrepreneurship. We empower our students and faculty to think beyond traditional boundaries, contribute meaningfully to dentistry, and lead transformative changes in oral healthcare.
+              Our institution fosters an environment that encourages research, innovation, and entrepreneurship. We empower our learners and senior learners to think beyond traditional boundaries, contribute meaningfully to dentistry, and lead transformative changes in oral healthcare.
             </p>
 
             <p>
@@ -134,11 +134,11 @@ export default function PrincipalsMessage() {
             </p>
 
             <p>
-              As an institution, we are dedicated to creating leaders who inspire and excel. With our facilities, a team of expert faculty, and a culture of continuous learning, we strive to build a future where education drives progress, healthcare is a right for all, and innovation becomes a way of life.
+              As an institution, we are dedicated to creating leaders who inspire and excel. With our facilities, a team of expert senior learners, and a culture of continuous learning, we strive to build a future where education drives progress, healthcare is a right for all, and innovation becomes a way of life.
             </p>
 
             <p>
-              I extend my heartfelt gratitude to our students, faculty, parents, and stakeholders for their trust and unwavering support on our journey. Together, let us continue to transform education and healthcare, upholding the legacy of JKKN as a hub of excellence and a catalyst for societal impact.
+              I extend my heartfelt gratitude to our learners, senior learners, learning partners, and stakeholders for their trust and unwavering support on our journey. Together, let us continue to transform education and healthcare, upholding the legacy of JKKN as a hub of excellence and a catalyst for societal impact.
             </p>
 
             <div className="text-center mt-8 pt-6 border-t border-gray-200">

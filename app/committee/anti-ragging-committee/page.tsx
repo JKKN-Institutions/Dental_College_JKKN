@@ -61,10 +61,10 @@ export default function AntiRaggingCommittee() {
         <div className="max-w-6xl mx-auto">
           <div className="bg-white rounded-xl p-8 shadow-sm border border-green-100 border-l-4 border-l-[#7cb983]">
             <p className="hero-description text-gray-700 text-base leading-relaxed mb-4">
-              At <span className="font-bold">JKKN Dental College &amp; Hospital</span>, we uphold the highest standards of student welfare, dignity, and discipline. In line with the directives of the University Grants Commission (UGC) and Dental Council of India, our college maintains a strict zero-tolerance policy towards ragging in any form.
+              At <span className="font-bold">JKKN Dental College &amp; Hospital</span>, we uphold the highest standards of learner welfare, dignity, and discipline. In line with the directives of the University Grants Commission (UGC) and Dental Council of India, our college maintains a strict zero-tolerance policy towards ragging in any form.
             </p>
             <p className="text-gray-700 text-base leading-relaxed">
-              The Anti-Ragging Committee has been constituted to ensure a ragging-free environment on campus, actively monitor student interactions, and take swift action in case of any violations. We are committed to maintaining a culture of respect, safety, and academic excellence.
+              The Anti-Ragging Committee has been constituted to ensure a ragging-free environment on campus, actively monitor learner interactions, and take swift action in case of any violations. We are committed to maintaining a culture of respect, safety, and academic excellence.
             </p>
           </div>
         </div>
@@ -105,8 +105,8 @@ export default function AntiRaggingCommittee() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
             {[
               'Display of anti-ragging posters across campus and hostels.',
-              'Mandatory anti-ragging undertakings by all students and parents at the time of admission.',
-              'Orientation programs sensitizing students about ragging and its consequences.',
+              'Mandatory anti-ragging undertakings by all learners and learning partners at the time of admission.',
+              'Orientation programs sensitizing learners about ragging and its consequences.',
               'Round-the-clock availability of anti-ragging helpline numbers and email.',
               'Immediate disciplinary action against offenders, including suspension or expulsion as per UGC rules.',
             ].map((item) => (
@@ -194,7 +194,7 @@ export default function AntiRaggingCommittee() {
             <span className="text-2xl">📣</span> Report Ragging
           </h3>
           <p className="text-green-100 text-base leading-relaxed max-w-3xl">
-            If you or someone you know is experiencing ragging, do not stay silent. Report immediately using the helpline or contact any faculty member of the Anti-Ragging Committee. All reports will be handled with strict confidentiality and urgency.
+            If you or someone you know is experiencing ragging, do not stay silent. Report immediately using the helpline or contact any senior learner member of the Anti-Ragging Committee. All reports will be handled with strict confidentiality and urgency.
           </p>
         </div>
       </section>

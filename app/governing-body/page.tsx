@@ -100,7 +100,7 @@ export default function GoverningBody() {
                 <div className="space-y-3">
                   {[
                     { title: 'Setting Institutional Policies', desc: 'Defining governance frameworks to enhance academic and operational efficiency.' },
-                    { title: 'Ensuring Quality Education', desc: 'Overseeing curriculum development, faculty recruitment, and student welfare initiatives.' },
+                    { title: 'Ensuring Quality Education', desc: 'Overseeing learning framework development, senior learner recruitment, and learner welfare initiatives.' },
                     { title: 'Advancing Research & Innovation', desc: 'Supporting scientific research, collaborations, and technological advancements.' },
                     { title: 'Upholding Ethical Standards', desc: 'Ensuring compliance with regulatory authorities, accreditation bodies, and ethical guidelines.' },
                     { title: 'Strengthening Community Engagement', desc: 'Promoting outreach programs, public health initiatives, and social responsibility.' },

@@ -7,14 +7,14 @@ import { UserCircle2 } from 'lucide-react';
 export const dynamic = 'force-dynamic';
 
 export const metadata: Metadata = {
-  title: 'Faculty | JKKN Dental College & Hospital',
+  title: 'Senior Learners | JKKN Dental College & Hospital',
   description:
-    'Meet the experienced faculty of JKKN Dental College & Hospital, Komarapalayam. Qualified professors and specialists in BDS and MDS programmes.',
+    'Meet the experienced senior learners of JKKN Dental College & Hospital, Komarapalayam. Qualified senior learners and specialists in BDS and MDS programmes.',
   alternates: { canonical: '/faculty/' },
   openGraph: {
-    title: 'Faculty | JKKN Dental College & Hospital',
+    title: 'Senior Learners | JKKN Dental College & Hospital',
     description:
-      'Meet the experienced faculty of JKKN Dental College & Hospital, Komarapalayam.',
+      'Meet the experienced senior learners of JKKN Dental College & Hospital, Komarapalayam.',
     url: 'https://dental.jkkn.ac.in/faculty/',
     siteName: 'JKKN Dental College & Hospital',
     type: 'website',
@@ -22,9 +22,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Faculty | JKKN Dental College & Hospital',
+    title: 'Senior Learners | JKKN Dental College & Hospital',
     description:
-      'Meet the experienced faculty of JKKN Dental College & Hospital, Komarapalayam.',
+      'Meet the experienced senior learners of JKKN Dental College & Hospital, Komarapalayam.',
   },
 };
 
@@ -69,7 +69,7 @@ export default async function FacultyPage() {
             <p className="text-[#FFC107] text-xs font-semibold tracking-widest uppercase mb-2">
               JKKN Dental College &amp; Hospital
             </p>
-            <h1 className="text-3xl sm:text-4xl font-bold text-white">Our Faculty</h1>
+            <h1 className="text-3xl sm:text-4xl font-bold text-white">Our Senior Learners</h1>
             <p className="text-green-200 mt-3 text-sm sm:text-base max-w-xl mx-auto">
               Experienced specialists guiding the next generation of dental professionals.
             </p>
@@ -146,7 +146,7 @@ export default async function FacultyPage() {
               <div className="w-16 h-16 bg-gray-100 rounded-2xl flex items-center justify-center mb-4">
                 <UserCircle2 className="w-8 h-8 text-gray-300" />
               </div>
-              <p className="text-gray-500 font-medium">No faculty members found.</p>
+              <p className="text-gray-500 font-medium">No senior learners found.</p>
             </div>
           )}
         </section>

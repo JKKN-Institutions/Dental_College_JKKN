@@ -72,7 +72,7 @@ export default function MOUPage() {
                 <Check className="w-5 h-5 text-[#006837]" />
               </div>
               <p className="text-gray-700 text-sm leading-relaxed">
-                Enhance Educational Opportunities – Facilitate faculty and student exchange programs, specialized training, and workshops.
+                Enhance Educational Opportunities – Facilitate senior learner and learner exchange programs, specialized training, and workshops.
               </p>
             </div>
 

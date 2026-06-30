@@ -162,7 +162,7 @@ export default function MDSPeriodontics() {
                   onClick={() => document.getElementById('curriculum')?.scrollIntoView({ behavior: 'smooth' })}
                   className="bg-white/10 backdrop-blur-sm border-2 border-white text-white hover:bg-white hover:text-[#006837] font-bold px-8 py-4 rounded-lg text-lg transition-all duration-300"
                 >
-                  Explore Curriculum
+                  Explore Learning Framework
                 </button>
               </div>
             </div>
@@ -181,7 +181,7 @@ export default function MDSPeriodontics() {
                   priority
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex flex-col justify-end p-4 sm:p-6">
-                  <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white text-center mb-4">Periodontics Lab</h2>
+                  <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white text-center mb-4">Periodontics Learning Lab</h2>
 
                   {/* Stats Badges */}
                   <div className="flex flex-wrap justify-center gap-2">
@@ -364,9 +364,9 @@ export default function MDSPeriodontics() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <p className="text-[#7cb983] font-semibold text-sm uppercase tracking-wide mb-2">COURSE STRUCTURE</p>
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">3-Year Curriculum</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">3-Year Learning Framework</h2>
             <p className="text-lg text-gray-600 max-w-4xl mx-auto">
-              A comprehensive curriculum designed to build expertise progressively from foundational periodontal science to advanced surgical and implant mastery.
+              A comprehensive learning framework designed to build expertise progressively from foundational periodontal science to advanced surgical and implant mastery.
             </p>
           </div>
 
@@ -838,10 +838,10 @@ export default function MDSPeriodontics() {
             {/* Simulation Lab */}
             <div className="bg-gradient-to-br from-[#7cb983] to-[#6ba872] rounded-2xl overflow-hidden">
               <div className="p-8 h-64 flex items-center justify-center">
-                <h3 className="text-3xl md:text-5xl font-bold text-white text-center">Simulation Lab</h3>
+                <h3 className="text-3xl md:text-5xl font-bold text-white text-center">Simulation Learning Lab</h3>
               </div>
               <div className="bg-white p-6">
-                <h4 className="text-xl font-bold text-gray-900 mb-3">Simulation Laboratory</h4>
+                <h4 className="text-xl font-bold text-gray-900 mb-3">Simulation Learning Lab</h4>
                 <p className="text-gray-700">
                   Phantom heads and surgical simulators for practicing flap surgeries, grafting, and implant placement.
                 </p>
@@ -851,12 +851,12 @@ export default function MDSPeriodontics() {
             {/* Research Lab */}
             <div className="bg-gradient-to-br from-[#7cb983] to-[#6ba872] rounded-2xl overflow-hidden">
               <div className="p-8 h-64 flex items-center justify-center">
-                <h3 className="text-3xl md:text-5xl font-bold text-white text-center">Research Lab</h3>
+                <h3 className="text-3xl md:text-5xl font-bold text-white text-center">Research Learning Lab</h3>
               </div>
               <div className="bg-white p-6">
-                <h4 className="text-xl font-bold text-gray-900 mb-3">Research Laboratory</h4>
+                <h4 className="text-xl font-bold text-gray-900 mb-3">Research Learning Lab</h4>
                 <p className="text-gray-700">
-                  Well-equipped laboratory for microbiological analysis, cell culture studies, and biomaterial research.
+                  Well-equipped learning lab for microbiological analysis, cell culture studies, and biomaterial research.
                 </p>
               </div>
             </div>
@@ -884,7 +884,7 @@ export default function MDSPeriodontics() {
               <h3 className="text-xl md:text-4xl font-bold text-white text-center">Clinic</h3>
             </div>
             <div className="bg-gradient-to-br from-[#7cb983] to-[#6ba872] rounded-xl p-6 md:p-12 flex items-center justify-center h-48 md:h-64">
-              <h3 className="text-xl md:text-4xl font-bold text-white text-center">Library</h3>
+              <h3 className="text-xl md:text-4xl font-bold text-white text-center">Learning Commons</h3>
             </div>
             <div className="bg-gradient-to-br from-[#006837] to-[#002309] rounded-xl p-6 md:p-12 flex items-center justify-center h-48 md:h-64">
               <h3 className="text-xl md:text-4xl font-bold text-white text-center">Conference</h3>
@@ -1121,7 +1121,7 @@ export default function MDSPeriodontics() {
               </summary>
               <div className="px-6 pb-5">
                 <p className="text-gray-700">
-                  Yes, comprehensive dental implant training is a core component of the MDS Periodontics curriculum. Learners receive hands-on training in implant planning, surgical placement, bone grafting, and prosthetic integration under expert supervision.
+                  Yes, comprehensive dental implant training is a core component of the MDS Periodontics learning framework. Learners receive hands-on training in implant planning, surgical placement, bone grafting, and prosthetic integration under expert supervision.
                 </p>
               </div>
             </details>
@@ -1136,7 +1136,7 @@ export default function MDSPeriodontics() {
               </summary>
               <div className="px-6 pb-5">
                 <p className="text-gray-700">
-                  Yes, we provide separate hostel facilities for male and female postgraduate Learners. Girls: AC Room — ₹30,000/Year. Boys: No hostel charges applicable. Classic Mess and Premium Mess are not available for Dental students. The hostels are equipped with modern amenities including Wi-Fi, 24/7 security, and recreational areas.
+                  Yes, we provide separate hostel facilities for male and female postgraduate Learners. Girls: AC Room — ₹30,000/Year. Boys: No hostel charges applicable. Classic Mess and Premium Mess are not available for Dental learners. The hostels are equipped with modern amenities including Wi-Fi, 24/7 security, and recreational areas.
                 </p>
               </div>
             </details>

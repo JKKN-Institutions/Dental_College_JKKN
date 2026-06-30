@@ -40,7 +40,7 @@ export default function PatientWelfareCommittee() {
     '3.Dr. Naveen Raj',
     '5.Dr.Santosh',
     '6. Dr.Thangammani Ammal',
-    'T.Student members- I.Mr.Mohammed Mufa',
+    'T.Learner members- I.Mr.Mohammed Mufa',
     '2.Dr.Surya.A.S',
     '3.Mrs.Shivee Sankari',
     '4..Dr.Bharathi',

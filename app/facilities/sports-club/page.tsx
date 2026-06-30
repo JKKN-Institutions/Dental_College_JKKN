@@ -31,7 +31,7 @@ const features = [
     icon: Trophy,
     title: 'Championship Legacy:',
     description:
-      "Our sporting arenas frequently host wrestling, kabaddi, badminton, and volleyball championships, allowing students to gain competitive exposure. JKKN Institutions' teams have set benchmarks in various sports categories.",
+      "Our sporting arenas frequently host wrestling, kabaddi, badminton, and volleyball championships, allowing learners to gain competitive exposure. JKKN Institutions' teams have set benchmarks in various sports categories.",
   },
   {
     icon: Dumbbell,
@@ -41,15 +41,15 @@ const features = [
   },
   {
     icon: Shield,
-    title: 'Experienced Instructors:',
+    title: 'Experienced Senior Learners:',
     description:
-      "Our certified instructors bring years of expertise to guide, motivate, and refine your skills. Whether you're a novice or a pro, you're in safe hands.",
+      "Our certified senior learners bring years of expertise to guide, motivate, and refine your skills. Whether you're a novice or a pro, you're in safe hands.",
   },
   {
     icon: Heart,
     title: 'Inclusive Membership:',
     description:
-      'Students, staff, and community members are welcomed to join. We believe that quality fitness facilities should be accessible to all, which is why our membership options are flexible and diverse.',
+      'Learners, team members, and community members are welcomed to join. We believe that quality fitness facilities should be accessible to all, which is why our membership options are flexible and diverse.',
   },
   {
     icon: Users,

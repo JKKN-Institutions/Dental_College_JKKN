@@ -77,7 +77,7 @@ export default function NCCNSSPage() {
               National Service Scheme (NSS) at JKKN Dental College &amp; Hospital
             </p>
             <p className="hero-description text-gray-700 text-base leading-relaxed text-justify">
-              The National Service Scheme (NSS) unit of JKKN Dental College is committed to instilling a sense of social responsibility and community service among students. Through various outreach programs, awareness campaigns, and health initiatives, our NSS volunteers actively engage in serving underprivileged communities. Emphasizing the importance of public health and social welfare, the unit conducts dental screening camps, oral health awareness drives, Swachh Bharat initiatives, and environmental sustainability projects. By fostering teamwork and leadership, the NSS unit plays a vital role in shaping socially responsible dental professionals dedicated to holistic community development.
+              The National Service Scheme (NSS) unit of JKKN Dental College is committed to instilling a sense of social responsibility and community service among learners. Through various outreach programs, awareness campaigns, and health initiatives, our NSS volunteers actively engage in serving underprivileged communities. Emphasizing the importance of public health and social welfare, the unit conducts dental screening camps, oral health awareness drives, Swachh Bharat initiatives, and environmental sustainability projects. By fostering teamwork and leadership, the NSS unit plays a vital role in shaping socially responsible dental professionals dedicated to holistic community development.
             </p>
           </div>
         </div>

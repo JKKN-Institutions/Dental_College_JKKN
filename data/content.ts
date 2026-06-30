@@ -342,11 +342,11 @@ export const siteContent = {
   // About Section
   about: {
     heading: "ABOUT JKKN DENTAL COLLEGE & HOSPITAL",
-    content: `At JKKN Dental College & Hospital, we are dedicated to providing our students with the highest quality education in dental surgery. Established in 1987, our institution is located in Komarapalayam, Tamil Nadu, affiliated with The Tamil Nadu Dr. M.G.R. Medical University, Chennai, and approved by the Government of Tamil Nadu and Dental Council of India.
+    content: `At JKKN Dental College & Hospital, we are dedicated to providing our learners with the highest quality education in dental surgery. Established in 1987, our institution is located in Komarapalayam, Tamil Nadu, affiliated with The Tamil Nadu Dr. M.G.R. Medical University, Chennai, and approved by the Government of Tamil Nadu and Dental Council of India.
 
-We offer undergraduate (BDS) and postgraduate (MDS) programs, along with continuing dental education programs. Our state-of-the-art facilities, experienced faculty, and cutting-edge technology ensure that our students receive the best education and training possible.
+We offer undergraduate (BDS) and postgraduate (MDS) programs, along with continuing dental education programs. Our state-of-the-art facilities, experienced senior learners, and cutting-edge technology ensure that our learners receive the best education and training possible.
 
-Our curriculum emphasizes clinical excellence, research, and community service, preparing our students for successful careers in dental surgery. We also offer undergraduate and postgraduate courses to dental practitioners and provide continuing dental education.`,
+Our learning framework emphasizes clinical excellence, research, and community service, preparing our learners for successful careers in dental surgery. We also offer undergraduate and postgraduate courses to dental practitioners and provide continuing dental education.`,
   },
 
   // College News
@@ -418,7 +418,7 @@ Our curriculum emphasizes clinical excellence, research, and community service, 
   // Life @ JKKN
   life: {
     heading: "LIFE @ JKKN",
-    description: `JKKN Institutions boasts a vibrant residential campus that fosters both personal and professional growth. More than just classrooms, libraries, and labs, the campus offers an enriching environment where students can pursue passions, hone skills, and uncover new talents and interests. From academic pursuits to co-curricular engagements and extracurricular adventures, the campus is alive with opportunities and activities that make a dynamic, exciting environment for all.`,
+    description: `JKKN Institutions boasts a vibrant residential campus that fosters both personal and professional growth. More than just learning studios, learning commons, and learning labs, the campus offers an enriching environment where learners can pursue passions, hone skills, and uncover new talents and interests. From academic pursuits to co-curricular engagements and extracurricular adventures, the campus is alive with opportunities and activities that make a dynamic, exciting environment for all.`,
     image: "/images/life-at-jkkn.jpg",
   },
 

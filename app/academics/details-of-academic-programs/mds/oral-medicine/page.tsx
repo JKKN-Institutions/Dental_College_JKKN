@@ -155,7 +155,7 @@ export default function MDSOralMedicine() {
                   onClick={() => document.getElementById('curriculum')?.scrollIntoView({ behavior: 'smooth' })}
                   className="bg-white/10 backdrop-blur-sm border-2 border-white text-white hover:bg-white hover:text-[#006837] font-bold px-8 py-4 rounded-lg text-lg transition-all duration-300"
                 >
-                  Explore Curriculum
+                  Explore Learning Framework
                 </button>
               </div>
             </div>
@@ -359,9 +359,9 @@ export default function MDSOralMedicine() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <div className="text-[#7cb983] uppercase font-bold text-sm mb-4 tracking-wider">Course Structure</div>
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">3-Year Curriculum</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">3-Year Learning Framework</h2>
             <p className="text-lg text-gray-600 max-w-4xl mx-auto">
-              A comprehensive curriculum designed to build expertise progressively from foundational diagnostic skills to advanced imaging interpretation and clinical mastery.
+              A comprehensive learning framework designed to build expertise progressively from foundational diagnostic skills to advanced imaging interpretation and clinical mastery.
             </p>
           </div>
 
@@ -748,10 +748,10 @@ export default function MDSOralMedicine() {
             {/* Simulation Lab */}
             <div className="bg-[#FBFBEE] rounded-2xl shadow-lg overflow-hidden border border-gray-200">
               <div className="bg-gradient-to-br from-[#006837] to-[#002309] p-12 flex items-center justify-center h-64">
-                <h3 className="text-4xl font-bold text-white text-center">Simulation Lab</h3>
+                <h3 className="text-4xl font-bold text-white text-center">Simulation Learning Lab</h3>
               </div>
               <div className="p-6">
-                <h4 className="text-xl font-bold text-gray-800 mb-3">Simulation Laboratory</h4>
+                <h4 className="text-xl font-bold text-gray-800 mb-3">Simulation Learning Lab</h4>
                 <p className="text-gray-600">Advanced simulation systems for practicing radiographic positioning and interpretation techniques.</p>
               </div>
             </div>
@@ -770,11 +770,11 @@ export default function MDSOralMedicine() {
             {/* Digital Library */}
             <div className="bg-[#FBFBEE] rounded-2xl shadow-lg overflow-hidden border border-gray-200">
               <div className="bg-gradient-to-br from-[#7cb983] to-[#006837] p-12 flex items-center justify-center h-64">
-                <h3 className="text-4xl font-bold text-white text-center">Digital Library</h3>
+                <h3 className="text-4xl font-bold text-white text-center">Digital Learning Commons</h3>
               </div>
               <div className="p-6">
                 <h4 className="text-xl font-bold text-gray-800 mb-3">Digital Learning Center</h4>
-                <p className="text-gray-600">E-library access with journals, databases, and AI-powered learning resources for continuous education.</p>
+                <p className="text-gray-600">Learning commons access with journals, databases, and AI-powered learning resources for continuous education.</p>
               </div>
             </div>
           </div>
@@ -805,7 +805,7 @@ export default function MDSOralMedicine() {
 
             {/* Library */}
             <div className="bg-gradient-to-br from-[#7cb983] to-[#006837] rounded-2xl p-6 md:p-12 flex items-center justify-center h-40 md:h-64 cursor-pointer hover:shadow-xl transition-shadow duration-300">
-              <h3 className="text-xl md:text-4xl font-bold text-white text-center">Library</h3>
+              <h3 className="text-xl md:text-4xl font-bold text-white text-center">Learning Commons</h3>
             </div>
 
             {/* Conference */}
@@ -825,7 +825,7 @@ export default function MDSOralMedicine() {
 
             {/* Lab */}
             <div className="bg-gradient-to-br from-[#006837] to-[#002309] rounded-2xl p-6 md:p-12 flex items-center justify-center h-40 md:h-64 cursor-pointer hover:shadow-xl transition-shadow duration-300">
-              <h3 className="text-xl md:text-4xl font-bold text-white text-center">Lab</h3>
+              <h3 className="text-xl md:text-4xl font-bold text-white text-center">Learning Lab</h3>
             </div>
 
             {/* Cafeteria */}

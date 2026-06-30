@@ -85,7 +85,7 @@ export default function FoodCourt() {
           </div>
           <div className="bg-white rounded-xl p-8 shadow-sm border border-green-100 border-l-4 border-l-[#7cb983]">
             <p className="hero-description text-gray-700 text-base leading-relaxed">
-              <strong>At JKKN Institutions, we recognize that success transcends the classroom, extending into overall well-being and campus life. In the heart of our campus is our state-of-the-art food court, a culinary haven designed not only to tantalize your taste buds but also to fuel your academic pursuits.</strong>
+              <strong>At JKKN Institutions, we recognize that success transcends the learning studio, extending into overall well-being and campus life. In the heart of our campus is our state-of-the-art food court, a culinary haven designed not only to tantalize your taste buds but also to fuel your academic pursuits.</strong>
             </p>
           </div>
         </div>
@@ -102,7 +102,7 @@ export default function FoodCourt() {
           </h2>
           <div className="bg-[#FBFBEE] rounded-xl p-8 border border-green-100">
             <p className="text-gray-700 text-base leading-relaxed">
-              <strong>Our food court serves as a bustling social nexus where students, faculty, and guests can gather, connect, and rejuvenate. With comfortable seating and an inviting ambiance, it&apos;s more than a place for meals; it&apos;s a venue for camaraderie and relaxation.</strong>
+              <strong>Our food court serves as a bustling social nexus where learners, senior learners, and guests can gather, connect, and rejuvenate. With comfortable seating and an inviting ambiance, it&apos;s more than a place for meals; it&apos;s a venue for camaraderie and relaxation.</strong>
             </p>
           </div>
         </div>

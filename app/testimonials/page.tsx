@@ -85,7 +85,7 @@ export default function TestimonialsPage() {
         >
           <div className="max-w-3xl mx-auto">
             <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 mb-6">
-              <span className="text-[#7cb983] font-semibold text-sm">STUDENT VOICES</span>
+              <span className="text-[#7cb983] font-semibold text-sm">LEARNER VOICES</span>
             </div>
             <h1
               className="text-white font-extrabold leading-tight mb-4"

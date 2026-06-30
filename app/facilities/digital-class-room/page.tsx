@@ -88,7 +88,7 @@ export default function DigitalClassRoom() {
       <section className="bg-[#FBFBEE] py-10 px-4">
         <div className="max-w-6xl mx-auto">
           <p className="text-base md:text-lg leading-relaxed text-gray-700 border-l-4 border-[#7cb983] pl-6">
-            <strong>Digital Classrooms at JKKN Institutions: Where Technology Meets Excellence At JKKN Institutions, we redefine the classroom experience by integrating cutting-edge technology and design thinking into our learning spaces. Every detail is meticulously planned to inspire innovation, encourage collaborative learning, and cater to the diverse needs of our student body.</strong>
+            <strong>Digital Learning Studios at JKKN Institutions: Where Technology Meets Excellence At JKKN Institutions, we redefine the learning studio experience by integrating cutting-edge technology and design thinking into our learning spaces. Every detail is meticulously planned to inspire innovation, encourage collaborative learning, and cater to the diverse needs of our learner body.</strong>
           </p>
         </div>
       </section>
@@ -105,10 +105,10 @@ export default function DigitalClassRoom() {
             <h2 className="text-lg font-bold text-[#006837]">Smart Technology:</h2>
             <div className="text-gray-600 text-sm leading-relaxed flex flex-col gap-2">
               <p><strong>Smart TVs and Multimedia Projectors: Tailor-made for interactive and dynamic learning experiences.</strong></p>
-              <p><strong>Portable Microphones and Speakers: For crystal-clear audio in larger classrooms, ensuring that every word is heard.</strong></p>
+              <p><strong>Portable Microphones and Speakers: For crystal-clear audio in larger learning studios, ensuring that every word is heard.</strong></p>
               <p><strong>Seamless Integration:</strong></p>
-              <p><strong>AI Tools: Embedded in daily lectures, discussions, and problem-solving sessions to elevate the learning experience.</strong></p>
-              <p><strong>Design Thinking: Integrated into classroom activities to foster innovation and critical thinking.</strong></p>
+              <p><strong>AI Tools: Embedded in daily learning sessions, discussions, and problem-solving sessions to elevate the learning experience.</strong></p>
+              <p><strong>Design Thinking: Integrated into learning studio activities to foster innovation and critical thinking.</strong></p>
             </div>
           </div>
 
@@ -119,7 +119,7 @@ export default function DigitalClassRoom() {
             </div>
             <h2 className="text-lg font-bold text-[#006837]">Customizable Learning Spaces:</h2>
             <div className="text-gray-600 text-sm leading-relaxed flex flex-col gap-2">
-              <p><strong>Multiple Classroom Settings: From traditional lecture halls to collaborative workspaces, we have a layout for every learning style.</strong></p>
+              <p><strong>Multiple Learning Studio Settings: From traditional learning auditoriums to collaborative workspaces, we have a layout for every learning style.</strong></p>
               <p><strong>Comfortable Seating: Ergonomically designed for optimum focus and minimal distraction.</strong></p>
             </div>
           </div>

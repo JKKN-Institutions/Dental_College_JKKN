@@ -91,7 +91,7 @@ export default function StartUp() {
               <div className="w-12 h-12 bg-[#e8f5e9] rounded-lg flex items-center justify-center mb-4">
                 <Users className="w-6 h-6 text-[#006837]" />
               </div>
-              <h3 className="font-bold text-[#006837] text-base mb-2">Support Student &amp; Faculty Entrepreneurs</h3>
+              <h3 className="font-bold text-[#006837] text-base mb-2">Support Learner &amp; Senior Learner Entrepreneurs</h3>
               <p className="text-gray-600 text-sm leading-relaxed">
                 Provide mentorship, funding assistance, and incubation opportunities for innovative ideas.
               </p>
@@ -159,7 +159,7 @@ export default function StartUp() {
             <div className="border-l-4 border-[#7cb983] pl-5 py-2">
               <h3 className="font-bold text-[#002309] text-base mb-2">Technology &amp; Infrastructure Support</h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                State-of-the-art research labs and advanced dental facilities for product development and testing.
+                State-of-the-art research learning labs and advanced dental facilities for product development and testing.
               </p>
             </div>
           </div>
@@ -197,7 +197,7 @@ export default function StartUp() {
             Join the Future of Dental Innovation!
           </h2>
           <p className="text-green-100 max-w-3xl mx-auto leading-relaxed text-base md:text-lg">
-            If you are a student, researcher, or entrepreneur with a vision to revolutionize dental healthcare, the JKKN Startup Hub is your launchpad to success. We invite you to collaborate, innovate, and transform ideas into impactful solutions that shape the future of dentistry.
+            If you are a learner, researcher, or entrepreneur with a vision to revolutionize dental healthcare, the JKKN Startup Hub is your launchpad to success. We invite you to collaborate, innovate, and transform ideas into impactful solutions that shape the future of dentistry.
           </p>
         </div>
       </section>

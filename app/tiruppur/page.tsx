@@ -19,23 +19,23 @@ export default function TiruppurPage() {
     },
     {
       q: 'Does JKKN Dental have its own hospital?',
-      a: 'Yes, JKKN Dental College & Hospital has a 200+ chair dental hospital with 100+ beds right on campus. The hospital serves patients from across western Tamil Nadu including Tiruppur, Erode, and Coimbatore districts — treating 500+ patients daily, ensuring students get exceptional clinical training from Year 1.',
+      a: 'Yes, JKKN Dental College & Hospital has a 200+ chair dental hospital with 100+ beds right on campus. The hospital serves patients from across western Tamil Nadu including Tiruppur, Erode, and Coimbatore districts — treating 500+ patients daily, ensuring learners get exceptional clinical training from Year 1.',
     },
     {
       q: 'What MDS specialisations are available?',
-      a: 'JKKN Dental offers MDS in five specialisations: Orthodontics & Dentofacial Orthopaedics, Prosthodontics & Crown and Bridge, Oral & Maxillofacial Surgery, Conservative Dentistry & Endodontics, and Periodontics. Tiruppur students benefit from on-campus hostel accommodation and access to diverse clinical cases from across western Tamil Nadu.',
+      a: 'JKKN Dental offers MDS in five specialisations: Orthodontics & Dentofacial Orthopaedics, Prosthodontics & Crown and Bridge, Oral & Maxillofacial Surgery, Conservative Dentistry & Endodontics, and Periodontics. Tiruppur learners benefit from on-campus hostel accommodation and access to diverse clinical cases from across western Tamil Nadu.',
     },
     {
-      q: 'Does JKKN Dental provide hostel for Tiruppur students?',
-      a: 'Yes, JKKN Dental provides separate hostel facilities for boys and girls. Students from Tiruppur can also opt for daily commute as the campus is just about 1.5 hours away. College transport services are available.',
+      q: 'Does JKKN Dental provide hostel for Tiruppur learners?',
+      a: 'Yes, JKKN Dental provides separate hostel facilities for boys and girls. Learners from Tiruppur can also opt for daily commute as the campus is just about 1.5 hours away. College transport services are available.',
     },
     {
       q: 'How can I apply for admission at JKKN Dental?',
-      a: 'Tiruppur students can apply online at https://dental.jkkn.ac.in/ or call +91 9345855001 for personalised guidance. The campus is accessible via Erode (NH-544). Admissions for BDS and MDS 2026-27 are currently open — hostel accommodation is available for outstation students.',
+      a: 'Tiruppur learners can apply online at https://dental.jkkn.ac.in/ or call +91 9345855001 for personalised guidance. The campus is accessible via Erode (NH-544). Admissions for BDS and MDS 2026-27 are currently open — hostel accommodation is available for outstation learners.',
     },
     {
       q: 'How many dental colleges are there in Tiruppur district?',
-      a: 'There are currently zero dental colleges inside Tiruppur district, Tamil Nadu. Students from Tiruppur seeking dental education travel to neighbouring districts. JKKN Dental College & Hospital in Komarapalayam, Namakkal (approximately 67 km via NH-544) is the nearest DCI-approved option offering both BDS and MDS programmes.',
+      a: 'There are currently zero dental colleges inside Tiruppur district, Tamil Nadu. Learners from Tiruppur seeking dental education travel to neighbouring districts. JKKN Dental College & Hospital in Komarapalayam, Namakkal (approximately 67 km via NH-544) is the nearest DCI-approved option offering both BDS and MDS programmes.',
     },
     {
       q: 'Which dental colleges near Tiruppur accept NEET scores?',
@@ -49,8 +49,8 @@ export default function TiruppurPage() {
 
   const whyFeatures = [
     { icon: <Hospital className="w-6 h-6 text-[#006837]" />, title: 'Own Hospital', desc: 'DCI-approved dental college with attached hospital for hands-on clinical training' },
-    { icon: <Stethoscope className="w-6 h-6 text-[#006837]" />, title: 'Real Patient Exposure', desc: 'Own dental hospital on campus — students get real patient exposure from Year 1' },
-    { icon: <Microscope className="w-6 h-6 text-[#006837]" />, title: 'Advanced Labs', desc: 'Advanced dental labs, simulation equipment, and digital dentistry training' },
+    { icon: <Stethoscope className="w-6 h-6 text-[#006837]" />, title: 'Real Patient Exposure', desc: 'Own dental hospital on campus — learners get real patient exposure from Year 1' },
+    { icon: <Microscope className="w-6 h-6 text-[#006837]" />, title: 'Advanced Learning Labs', desc: 'Advanced dental learning labs, simulation equipment, and digital dentistry training' },
     { icon: <TrendingUp className="w-6 h-6 text-[#006837]" />, title: 'NEET MDS Results', desc: 'Strong track record in NEET MDS results and higher education' },
     { icon: <Users className="w-6 h-6 text-[#006837]" />, title: 'Community Service', desc: 'Hospital serves the community — builds trust and clinical experience' },
     { icon: <Bus className="w-6 h-6 text-[#006837]" />, title: 'Well-Connected', desc: '67 km from Tiruppur via NH-544. Comfortable on-campus hostel with all amenities — feel at home from day one.' },
@@ -79,8 +79,8 @@ export default function TiruppurPage() {
   ];
 
   const facilities = [
-    { icon: <Microscope className="w-6 h-6 text-[#006837]" />, title: 'Modern Labs', desc: 'State-of-the-art laboratories and smart classrooms' },
-    { icon: <BookOpen className="w-6 h-6 text-[#006837]" />, title: 'Digital Library', desc: 'Well-stocked library with digital access and journals' },
+    { icon: <Microscope className="w-6 h-6 text-[#006837]" />, title: 'Modern Learning Labs', desc: 'State-of-the-art learning labs and smart learning studios' },
+    { icon: <BookOpen className="w-6 h-6 text-[#006837]" />, title: 'Digital Learning Commons', desc: 'Well-stocked learning commons with digital access and journals' },
     { icon: <Home className="w-6 h-6 text-[#006837]" />, title: 'Hostel', desc: 'Separate hostels for boys and girls with mess facility' },
     { icon: <Bus className="w-6 h-6 text-[#006837]" />, title: 'Transport', desc: 'College buses connecting to Tiruppur and surrounding areas' },
     { icon: <Award className="w-6 h-6 text-[#006837]" />, title: 'Sports', desc: 'Playground, indoor games, gym, and annual sports events' },
@@ -135,7 +135,7 @@ export default function TiruppurPage() {
         </h1>
         <p className="text-white/60 text-sm font-medium tracking-wide mb-6">Nearest DCI-Approved Dental College — JKKN Dental College &amp; Hospital, Komarapalayam</p>
         <p className="text-white/80 max-w-2xl mb-10 leading-relaxed" style={{ fontSize: 'clamp(0.9rem, 1vw + 0.5rem, 1.1rem)' }}>
-          Tiruppur students — world-class education without the big-city hassle.
+          Tiruppur learners — world-class education without the big-city hassle.
           JKKN Dental College &amp; Hospital offers top-tier dental programmes with
           90%+ placement support — no need to go to Coimbatore — quality
           education is closer than you think.
@@ -228,10 +228,10 @@ export default function TiruppurPage() {
       <section className="bg-white py-16 px-4">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="font-extrabold text-gray-900 mb-4" style={{ fontSize: 'clamp(1.6rem, 3vw + 0.5rem, 2.4rem)' }}>
-            Why Tiruppur Students Choose JKKN Dental
+            Why Tiruppur Learners Choose JKKN Dental
           </h2>
           <p className="text-gray-500 max-w-3xl mx-auto mb-2 leading-relaxed" style={{ fontSize: 'clamp(0.875rem, 1vw + 0.4rem, 1.05rem)' }}>
-            Tiruppur students no longer need to travel all the way to Coimbatore or Chennai for quality professional education. JKKN offers an excellent alternative with comfortable hostel facilities, strong placements, and a peaceful campus environment ideal for focused learning.
+            Tiruppur learners no longer need to travel all the way to Coimbatore or Chennai for quality professional education. JKKN offers an excellent alternative with comfortable hostel facilities, strong placements, and a peaceful campus environment ideal for focused learning.
           </p>
           <p className="text-gray-400 max-w-3xl mx-auto mb-4 text-sm leading-relaxed">
             Founded in 1952, JKKN Dental College &amp; Hospital brings over 74 years of dental education excellence. Approved by the Dental Council of India (DCI) and affiliated to TN Dr. MGR Medical University, Chennai, the institution operates a 200+ chair teaching hospital treating 500+ patients daily from across western Tamil Nadu.
@@ -300,7 +300,7 @@ export default function TiruppurPage() {
           <h2 className="font-extrabold text-gray-900 mb-3 text-center" style={{ fontSize: 'clamp(1.6rem, 3vw + 0.5rem, 2.4rem)' }}>
             BDS Admission 2026 — How to Apply from Tiruppur
           </h2>
-          <p className="text-gray-500 text-base mb-4 text-center">Step-by-step admission process for Tiruppur students</p>
+          <p className="text-gray-500 text-base mb-4 text-center">Step-by-step admission process for Tiruppur learners</p>
           <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-10" />
           <ol className="space-y-4 list-none p-0 m-0">
             {[
@@ -414,9 +414,9 @@ export default function TiruppurPage() {
       <section className="bg-[#FBFBEE] py-16 px-4">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="font-extrabold text-gray-900 mb-3" style={{ fontSize: 'clamp(1.6rem, 3vw + 0.5rem, 2.4rem)' }}>
-            Students from Tiruppur Love JKKN Dental
+            Learners from Tiruppur Love JKKN Dental
           </h2>
-          <p className="text-gray-500 text-base mb-4">Hear from students who made the right choice</p>
+          <p className="text-gray-500 text-base mb-4">Hear from learners who made the right choice</p>
           <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-12" />
           <ul className="grid grid-cols-1 sm:grid-cols-3 gap-6 list-none p-0 m-0">
             <li className="bg-white rounded-2xl p-6 text-left shadow-sm">
@@ -432,7 +432,7 @@ export default function TiruppurPage() {
             <li className="bg-white rounded-2xl p-6 text-left shadow-sm">
               <div className="text-5xl text-gray-200 font-serif leading-none mb-3 select-none">"</div>
               <p className="text-gray-500 text-sm leading-relaxed italic mb-6">
-                JKKN&apos;s MDS programme in Conservative Dentistry was my top choice. The faculty here are published researchers who bring real-world expertise to every lecture. My thesis got published in a national journal thanks to their guidance.
+                JKKN&apos;s MDS programme in Conservative Dentistry was my top choice. The senior learners here are published researchers who bring real-world expertise to every learning session. My thesis got published in a national journal thanks to their guidance.
               </p>
               <div>
                 <p className="font-bold text-gray-900 text-sm">Nithya Sri R.</p>
@@ -459,7 +459,7 @@ export default function TiruppurPage() {
           <h2 className="font-extrabold text-gray-900 mb-3 text-center" style={{ fontSize: 'clamp(1.6rem, 3vw + 0.5rem, 2.4rem)' }}>
             JKKN Dental College &amp; Hospital — Key Facts
           </h2>
-          <p className="text-gray-500 text-base mb-4 text-center">Essential information for Tiruppur students considering dental education</p>
+          <p className="text-gray-500 text-base mb-4 text-center">Essential information for Tiruppur learners considering dental education</p>
           <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-10" />
           <dl className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {[

@@ -7,11 +7,11 @@ export default function CoimbatorePage() {
   const faqs = [
     {
       q: 'Which is the best dental college near Coimbatore?',
-      a: 'JKKN Dental College & Hospital in Komarapalayam, Namakkal is the leading dental institution within 120 km of Coimbatore, offering a 92%+ placement rate and the highest BDS-to-MDS conversion record in the region. The college is approved by the Dental Council of India and affiliated with TN Dr. MGR Medical University. Students from Coimbatore reach the campus in approximately 1.5 hours via NH-544.',
+      a: 'JKKN Dental College & Hospital in Komarapalayam, Namakkal is the leading dental institution within 120 km of Coimbatore, offering a 92%+ placement rate and the highest BDS-to-MDS conversion record in the region. The college is approved by the Dental Council of India and affiliated with TN Dr. MGR Medical University. Learners from Coimbatore reach the campus in approximately 1.5 hours via NH-544.',
     },
     {
       q: 'How far is JKKN Dental College from Coimbatore?',
-      a: 'JKKN Dental College & Hospital is located 108 km from Coimbatore city, connected directly via National Highway 544 (NH-544, the Salem–Coimbatore Highway). The drive takes approximately 1 hour 30 minutes. Regular inter-city bus services and the college\'s dedicated transport facility serve students from Coimbatore.',
+      a: 'JKKN Dental College & Hospital is located 108 km from Coimbatore city, connected directly via National Highway 544 (NH-544, the Salem–Coimbatore Highway). The drive takes approximately 1 hour 30 minutes. Regular inter-city bus services and the college\'s dedicated transport facility serve learners from Coimbatore.',
     },
     {
       q: 'What is the NEET cutoff for dental colleges near Coimbatore?',
@@ -27,7 +27,7 @@ export default function CoimbatorePage() {
     },
     {
       q: 'Does JKKN Dental College have hostel facility?',
-      a: 'Yes. JKKN Dental College & Hospital provides separate hostel facilities for male and female students on campus at Komarapalayam, Namakkal. Hostels include Wi-Fi, dining, and 24-hour security. This is particularly convenient for students from Coimbatore who prefer on-campus residence during weekdays.',
+      a: 'Yes. JKKN Dental College & Hospital provides separate hostel facilities for male and female learners on campus at Komarapalayam, Namakkal. Hostels include Wi-Fi, dining, and 24-hour security. This is particularly convenient for learners from Coimbatore who prefer on-campus residence during weekdays.',
     },
     {
       q: 'Is JKKN Dental College approved by the Dental Council of India?',
@@ -50,15 +50,15 @@ export default function CoimbatorePage() {
       a: 'JKKN Dental College & Hospital offers superior placement outcomes (92%+, 8–10 LPA highest) and larger clinical infrastructure (200+ chairs, 500+ daily patients) compared to Coimbatore-based dental colleges. Coimbatore colleges such as Sri Ramakrishna Dental College & Hospital offer NIRF ranking (#18) and in-city location advantages. The best choice depends on individual priorities: outcomes and clinical scale (JKKN) versus urban location and ranking (SRDCH).',
     },
     {
-      q: 'Does JKKN Dental College offer transport for Coimbatore students?',
-      a: 'JKKN Dental College & Hospital provides college transport services for students. The campus is also served by regular inter-city bus services and train connections via Coimbatore Junction to Erode and Salem, from where campus-direction transport is available. For daily commuters from Coimbatore, on-campus hostel accommodation is recommended.',
+      q: 'Does JKKN Dental College offer transport for Coimbatore learners?',
+      a: 'JKKN Dental College & Hospital provides college transport services for learners. The campus is also served by regular inter-city bus services and train connections via Coimbatore Junction to Erode and Salem, from where campus-direction transport is available. For daily commuters from Coimbatore, on-campus hostel accommodation is recommended.',
     },
   ];
 
   const whyFeatures = [
     { icon: <Hospital className="w-6 h-6 text-[#006837]" />, title: 'Own Hospital', desc: 'DCI-approved dental college with attached hospital for hands-on clinical training — 200+ chairs, 100+ beds, 500+ daily patients' },
-    { icon: <Stethoscope className="w-6 h-6 text-[#006837]" />, title: 'Real Patient Exposure', desc: 'Own dental hospital on campus — students get real patient exposure from Year 1, not Year 3' },
-    { icon: <Microscope className="w-6 h-6 text-[#006837]" />, title: 'Advanced Labs', desc: 'Advanced dental labs, simulation equipment, and digital dentistry training — India\'s first AI-integrated dental campus' },
+    { icon: <Stethoscope className="w-6 h-6 text-[#006837]" />, title: 'Real Patient Exposure', desc: 'Own dental hospital on campus — learners get real patient exposure from Year 1, not Year 3' },
+    { icon: <Microscope className="w-6 h-6 text-[#006837]" />, title: 'Advanced Learning Labs', desc: 'Advanced dental learning labs, simulation equipment, and digital dentistry training — India\'s first AI-integrated dental campus' },
     { icon: <TrendingUp className="w-6 h-6 text-[#006837]" />, title: '92%+ Placement Record', desc: 'JKKN Dental records 92%+ placement rate for BDS graduates. Highest salary: 8–10 LPA. International placements: UK (NHS), UAE, Saudi Arabia.' },
     { icon: <Users className="w-6 h-6 text-[#006837]" />, title: 'Community Service', desc: 'Hospital serves the community — builds patient trust, clinical breadth, and real-world dentistry experience' },
     { icon: <Bus className="w-6 h-6 text-[#006837]" />, title: 'Accessible from Coimbatore via NH-544', desc: '108 km from Coimbatore on NH-544. Approximately 1.5 hours by road. On-campus hostel eliminates daily commuting stress.' },
@@ -87,8 +87,8 @@ export default function CoimbatorePage() {
   ];
 
   const facilities = [
-    { icon: <Microscope className="w-6 h-6 text-[#006837]" />, title: 'Modern Labs', desc: 'State-of-the-art laboratories and smart classrooms' },
-    { icon: <BookOpen className="w-6 h-6 text-[#006837]" />, title: 'Digital Library', desc: 'Well-stocked library with digital access and journals' },
+    { icon: <Microscope className="w-6 h-6 text-[#006837]" />, title: 'Modern Learning Labs', desc: 'State-of-the-art learning labs and smart learning studios' },
+    { icon: <BookOpen className="w-6 h-6 text-[#006837]" />, title: 'Digital Learning Commons', desc: 'Well-stocked learning commons with digital access and journals' },
     { icon: <Home className="w-6 h-6 text-[#006837]" />, title: 'Hostel', desc: 'Separate hostels for boys and girls with mess facility' },
     { icon: <Bus className="w-6 h-6 text-[#006837]" />, title: 'Transport', desc: 'College buses connecting to Coimbatore and surrounding areas' },
     { icon: <Award className="w-6 h-6 text-[#006837]" />, title: 'Sports', desc: 'Playground, indoor games, gym, and annual sports events' },
@@ -275,7 +275,7 @@ export default function CoimbatorePage() {
             </table>
           </div>
           <p className="text-gray-500 leading-relaxed max-w-3xl mx-auto text-center" style={{ fontSize: 'clamp(0.875rem, 1vw + 0.3rem, 1rem)' }}>
-            The table above compares the three main dental colleges accessible from Coimbatore as of 2026. JKKN Dental College &amp; Hospital leads on placement outcomes and clinical infrastructure despite being 108 km from Coimbatore city. For students whose primary goal is a strong dental career with measurable post-graduation outcomes, the 1.5-hour drive on NH-544 is a worthwhile investment.
+            The table above compares the three main dental colleges accessible from Coimbatore as of 2026. JKKN Dental College &amp; Hospital leads on placement outcomes and clinical infrastructure despite being 108 km from Coimbatore city. For learners whose primary goal is a strong dental career with measurable post-graduation outcomes, the 1.5-hour drive on NH-544 is a worthwhile investment.
           </p>
         </div>
       </section>
@@ -284,10 +284,10 @@ export default function CoimbatorePage() {
       <section className="bg-[#FBFBEE] py-16 px-4">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="font-extrabold text-gray-900 mb-4" style={{ fontSize: 'clamp(1.6rem, 3vw + 0.5rem, 2.4rem)' }}>
-            Why Students from Coimbatore Choose JKKN Dental College
+            Why Learners from Coimbatore Choose JKKN Dental College
           </h2>
           <p className="snippet-answer text-gray-600 max-w-3xl mx-auto mb-4 leading-relaxed" style={{ fontSize: 'clamp(0.875rem, 1vw + 0.4rem, 1.05rem)' }}>
-            Students from Coimbatore choose JKKN Dental College &amp; Hospital for one measurable reason: outcomes. With a 92%+ placement rate, 8–10 LPA highest salary, and 500+ daily patients providing real clinical exposure from Year 1, JKKN delivers verified results on every metric that matters for a dental career in 2026.
+            Learners from Coimbatore choose JKKN Dental College &amp; Hospital for one measurable reason: outcomes. With a 92%+ placement rate, 8–10 LPA highest salary, and 500+ daily patients providing real clinical exposure from Year 1, JKKN delivers verified results on every metric that matters for a dental career in 2026.
           </p>
           <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-12" />
           <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 list-none p-0 m-0">
@@ -355,10 +355,10 @@ export default function CoimbatorePage() {
           <h2 className="font-extrabold text-gray-900 mb-3 text-center" style={{ fontSize: 'clamp(1.6rem, 3vw + 0.5rem, 2.4rem)' }}>
             BDS Admission Near Coimbatore 2026 — How to Apply
           </h2>
-          <p className="text-gray-500 text-base mb-4 text-center">Step-by-step process for Coimbatore students applying to JKKN Dental</p>
+          <p className="text-gray-500 text-base mb-4 text-center">Step-by-step process for Coimbatore learners applying to JKKN Dental</p>
           <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-10" />
           <p className="text-gray-600 mb-5 leading-relaxed">
-            Students from Coimbatore can apply for BDS or MDS admission at JKKN Dental College &amp; Hospital through the following process for the 2026–27 academic year:
+            Learners from Coimbatore can apply for BDS or MDS admission at JKKN Dental College &amp; Hospital through the following process for the 2026–27 academic year:
           </p>
           <ol className="space-y-4 mb-6">
             {[
@@ -416,12 +416,12 @@ export default function CoimbatorePage() {
             How Far Is JKKN Dental College from Coimbatore?
           </h2>
           <p className="snippet-answer text-gray-600 text-base mb-6 max-w-2xl mx-auto leading-relaxed">
-            JKKN Dental College &amp; Hospital is 108 km from Coimbatore on NH-544, the Salem–Coimbatore National Highway. The drive takes approximately 1.5 hours. Regular buses, trains via Erode, and college transport connect Coimbatore students to the campus.
+            JKKN Dental College &amp; Hospital is 108 km from Coimbatore on NH-544, the Salem–Coimbatore National Highway. The drive takes approximately 1.5 hours. Regular buses, trains via Erode, and college transport connect Coimbatore learners to the campus.
           </p>
           {/* Speakable summary block */}
           <div className="speakable-summary bg-[#e8f5e9] border border-[#7cb983] rounded-xl p-4 mb-8 max-w-2xl mx-auto text-left">
             <p className="text-[#006837] text-sm font-medium leading-relaxed">
-              <strong>Quick Answer:</strong> JKKN Dental College &amp; Hospital is 108 km from Coimbatore on NH-544 — approximately a 1.5-hour drive. Regular buses, trains, and college transport connect Coimbatore students to the campus.
+              <strong>Quick Answer:</strong> JKKN Dental College &amp; Hospital is 108 km from Coimbatore on NH-544 — approximately a 1.5-hour drive. Regular buses, trains, and college transport connect Coimbatore learners to the campus.
             </p>
           </div>
           <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-10" />
@@ -472,9 +472,9 @@ export default function CoimbatorePage() {
       <section className="bg-[#FBFBEE] py-16 px-4">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="font-extrabold text-gray-900 mb-3" style={{ fontSize: 'clamp(1.6rem, 3vw + 0.5rem, 2.4rem)' }}>
-            Students from Coimbatore Love JKKN Dental
+            Learners from Coimbatore Love JKKN Dental
           </h2>
-          <p className="text-gray-500 text-base mb-4">Hear from students who made the right choice</p>
+          <p className="text-gray-500 text-base mb-4">Hear from learners who made the right choice</p>
           <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-12" />
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             <div className="bg-white rounded-2xl p-6 text-left shadow-sm">
@@ -490,7 +490,7 @@ export default function CoimbatorePage() {
             <div className="bg-white rounded-2xl p-6 text-left shadow-sm">
               <div className="text-5xl text-gray-200 font-serif leading-none mb-3 select-none">"</div>
               <p className="text-gray-500 text-sm leading-relaxed italic mb-6">
-                JKKN&apos;s MDS in Oral Surgery programme is research-driven with published faculty. The 100+ bed hospital and multi-specialty setup meant I worked on complex cases that most postgraduates only read about in textbooks.
+                JKKN&apos;s MDS in Oral Surgery programme is research-driven with published senior learners. The 100+ bed hospital and multi-specialty setup meant I worked on complex cases that most postgraduates only read about in textbooks.
               </p>
               <div>
                 <p className="font-bold text-gray-900 text-sm">Praveen Raj K.</p>
@@ -500,7 +500,7 @@ export default function CoimbatorePage() {
             <div className="bg-white rounded-2xl p-6 text-left shadow-sm">
               <div className="text-5xl text-gray-200 font-serif leading-none mb-3 select-none">"</div>
               <p className="text-gray-500 text-sm leading-relaxed italic mb-6">
-                The NH-544 connectivity from Coimbatore made weekend visits home easy. But honestly, the campus became my second home — great hostel, modern labs, and a placement team that got me hired at Clove Dental in my final year.
+                The NH-544 connectivity from Coimbatore made weekend visits home easy. But honestly, the campus became my second home — great hostel, modern learning labs, and a placement team that got me hired at Clove Dental in my final year.
               </p>
               <div>
                 <p className="font-bold text-gray-900 text-sm">Deepika Mohan R.</p>
@@ -517,7 +517,7 @@ export default function CoimbatorePage() {
           <h2 className="font-extrabold text-gray-900 mb-3" style={{ fontSize: 'clamp(1.6rem, 3vw + 0.5rem, 2.4rem)' }}>
             Key Facts — JKKN Dental College &amp; Hospital
           </h2>
-          <p className="text-gray-500 text-base mb-4">Quick reference data for prospective students from Coimbatore</p>
+          <p className="text-gray-500 text-base mb-4">Quick reference data for prospective learners from Coimbatore</p>
           <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-10" />
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
             {keyFacts.map((fact) => (
@@ -550,7 +550,7 @@ export default function CoimbatorePage() {
               JKKN Dental College &amp; Hospital records a 92%+ placement rate for BDS graduates, with a highest salary of 8–10 LPA and an average salary of 3–5 LPA. International placements include the UK (NHS), UAE (Cleveland Clinic Abu Dhabi), and Saudi Arabia. Recognized as one of the <Link href="/best-dental-college-tamil-nadu/" className="text-[#006837] hover:underline font-medium">best dental colleges in Tamil Nadu</Link>, JKKN combines institutional heritage with measurable career outcomes.
             </p>
             <p className="text-gray-600 leading-relaxed" style={{ fontSize: 'clamp(0.875rem, 1vw + 0.3rem, 1rem)' }}>
-              Students from Coimbatore access the campus via a 108-km drive on NH-544 (approximately 1.5 hours) or through college-operated transport services. Contact: +91 9345855001 | info@jkkn.ac.in
+              Learners from Coimbatore access the campus via a 108-km drive on NH-544 (approximately 1.5 hours) or through college-operated transport services. Contact: +91 9345855001 | info@jkkn.ac.in
             </p>
           </div>
         </div>
@@ -574,7 +574,7 @@ export default function CoimbatorePage() {
           <h2 className="font-extrabold text-gray-900 mb-3" style={{ fontSize: 'clamp(1.6rem, 3vw + 0.5rem, 2.4rem)' }}>
             Frequently Asked Questions
           </h2>
-          <p className="text-gray-500 text-base mb-4">Questions Coimbatore students ask about dental colleges — answered</p>
+          <p className="text-gray-500 text-base mb-4">Questions Coimbatore learners ask about dental colleges — answered</p>
           <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-12" />
           <div className="text-left space-y-3">
             {faqs.map((faq, i) => (

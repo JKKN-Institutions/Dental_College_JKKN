@@ -6,7 +6,7 @@ export default function AIIntegration() {
     {
       icon: Brain,
       title: "AI-Powered Learning",
-      description: "Advanced AI tools integrated into curriculum for enhanced diagnostic accuracy and treatment planning"
+      description: "Advanced AI tools integrated into the learning framework for enhanced diagnostic accuracy and treatment planning"
     },
     {
       icon: Microscope,
@@ -34,7 +34,7 @@ export default function AIIntegration() {
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             Leading the future of dental education with cutting-edge AI integration,
-            empowering students with technology-enhanced learning and clinical excellence
+            empowering learners with technology-enhanced learning and clinical excellence
           </p>
         </div>
 

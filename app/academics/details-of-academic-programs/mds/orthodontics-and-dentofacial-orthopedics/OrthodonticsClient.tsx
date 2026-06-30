@@ -138,7 +138,7 @@ export default function MDSOrthodontics() {
                   onClick={() => document.getElementById('curriculum')?.scrollIntoView({ behavior: 'smooth' })}
                   className="bg-[#FBFBEE]/10 backdrop-blur-sm border-2 border-white text-white hover:bg-[#FBFBEE] hover:text-[#006837] font-bold px-8 py-4 rounded-lg text-lg transition-all duration-300"
                 >
-                  View Curriculum
+                  View Learning Framework
                 </button>
               </div>
             </div>
@@ -254,7 +254,7 @@ export default function MDSOrthodontics() {
               </p>
 
               <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-                Orthodontics focuses on diagnosing, preventing, and correcting malpositioned teeth and jaws, including irregular dental development and facial growth patterns. Our comprehensive curriculum covers fixed and removable appliances, myofunctional and orthopedic appliances, clear aligners, lingual orthodontics, and orthognathic surgery coordination.
+                Orthodontics focuses on diagnosing, preventing, and correcting malpositioned teeth and jaws, including irregular dental development and facial growth patterns. Our comprehensive learning framework covers fixed and removable appliances, myofunctional and orthopedic appliances, clear aligners, lingual orthodontics, and orthognathic surgery coordination.
               </p>
 
               {/* Features Grid */}
@@ -265,7 +265,7 @@ export default function MDSOrthodontics() {
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
                   </div>
-                  <span className="text-gray-700 font-medium">Digital Orthodontics Lab</span>
+                  <span className="text-gray-700 font-medium">Digital Orthodontics Learning Lab</span>
                 </div>
 
                 <div className="flex items-start gap-3">
@@ -340,9 +340,9 @@ export default function MDSOrthodontics() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <p className="text-[#7cb983] font-semibold text-sm uppercase tracking-wide mb-2">COURSE STRUCTURE</p>
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Comprehensive Curriculum</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Comprehensive Learning Framework</h2>
             <p className="text-gray-600 max-w-3xl mx-auto">
-              Our curriculum is designed to provide both theoretical knowledge and extensive clinical experience in orthodontic diagnosis and treatment.
+              Our learning framework is designed to provide both theoretical knowledge and extensive clinical experience in orthodontic diagnosis and treatment.
             </p>
           </div>
 
@@ -806,7 +806,7 @@ export default function MDSOrthodontics() {
                     <path fillRule="evenodd" d="M3 5a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2h-2.22l.123.489.804.804A1 1 0 0113 18H7a1 1 0 01-.707-1.707l.804-.804L7.22 15H5a2 2 0 01-2-2V5zm5.771 7H5V5h10v7H8.771z" clipRule="evenodd" />
                   </svg>
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900">Digital Orthodontics Lab</h3>
+                <h3 className="text-2xl font-bold text-gray-900">Digital Orthodontics Learning Lab</h3>
               </div>
               <p className="text-gray-700 leading-relaxed">
                 Advanced digital workflow with CAD/CAM systems, 3D printing for aligners and models, and digital treatment planning software for precise orthodontic care.
@@ -837,10 +837,10 @@ export default function MDSOrthodontics() {
                     <path d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z" />
                   </svg>
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900">Wire Bending Laboratory</h3>
+                <h3 className="text-2xl font-bold text-gray-900">Wire Bending Learning Lab</h3>
               </div>
               <p className="text-gray-700 leading-relaxed">
-                Dedicated preclinical lab with typodont stations for mastering wire bending techniques, bracket positioning, and appliance fabrication skills.
+                Dedicated preclinical learning lab with typodont stations for mastering wire bending techniques, bracket positioning, and appliance fabrication skills.
               </p>
             </div>
 
@@ -867,10 +867,10 @@ export default function MDSOrthodontics() {
                     <path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z" />
                   </svg>
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900">Research & Library</h3>
+                <h3 className="text-2xl font-bold text-gray-900">Research & Learning Commons</h3>
               </div>
               <p className="text-gray-700 leading-relaxed">
-                Comprehensive digital library with access to international orthodontic journals, research databases, and latest publications for evidence-based practice.
+                Comprehensive digital learning commons with access to international orthodontic journals, research databases, and latest publications for evidence-based practice.
               </p>
             </div>
 
@@ -885,7 +885,7 @@ export default function MDSOrthodontics() {
                 <h3 className="text-2xl font-bold text-gray-900">Seminar & Conference Hall</h3>
               </div>
               <p className="text-gray-700 leading-relaxed">
-                State-of-the-art seminar hall equipped with AV facilities for case presentations, journal clubs, guest lectures, and continuing education programs.
+                State-of-the-art seminar hall equipped with AV facilities for case presentations, journal clubs, guest learning sessions, and continuing education programs.
               </p>
             </div>
 
@@ -929,7 +929,7 @@ export default function MDSOrthodontics() {
 
             {/* Digital Lab */}
             <div className="bg-gradient-to-br from-[#7cb983] to-[#6ba872] rounded-2xl aspect-square flex items-center justify-center p-4 md:p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <h3 className="text-lg md:text-3xl font-bold text-white text-center">Digital Lab</h3>
+              <h3 className="text-lg md:text-3xl font-bold text-white text-center">Digital Learning Lab</h3>
             </div>
 
             {/* CBCT Center */}
@@ -939,7 +939,7 @@ export default function MDSOrthodontics() {
 
             {/* Wire Lab */}
             <div className="bg-gradient-to-br from-[#006837] to-[#002309] rounded-2xl aspect-square flex items-center justify-center p-4 md:p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <h3 className="text-lg md:text-3xl font-bold text-white text-center">Wire Lab</h3>
+              <h3 className="text-lg md:text-3xl font-bold text-white text-center">Wire Learning Lab</h3>
             </div>
 
             {/* Seminar Hall */}
@@ -954,12 +954,12 @@ export default function MDSOrthodontics() {
 
             {/* Research Lab */}
             <div className="bg-gradient-to-br from-[#006837] to-[#002309] rounded-2xl aspect-square flex items-center justify-center p-4 md:p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <h3 className="text-lg md:text-3xl font-bold text-white text-center">Research Lab</h3>
+              <h3 className="text-lg md:text-3xl font-bold text-white text-center">Research Learning Lab</h3>
             </div>
 
             {/* Library */}
             <div className="bg-gradient-to-br from-[#7cb983] to-[#6ba872] rounded-2xl aspect-square flex items-center justify-center p-4 md:p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <h3 className="text-lg md:text-3xl font-bold text-white text-center">Library</h3>
+              <h3 className="text-lg md:text-3xl font-bold text-white text-center">Learning Commons</h3>
             </div>
 
               {/* JKKN Align Studio */}
@@ -1204,13 +1204,13 @@ export default function MDSOrthodontics() {
             {/* FAQ 5 */}
             <details className="group bg-[#FBFBEE] rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
               <summary className="flex items-center justify-between cursor-pointer p-6 font-bold text-gray-900 text-lg">
-                Is clear aligner training included in the curriculum?
+                Is clear aligner training included in the learning framework?
                 <svg className="w-6 h-6 text-[#7cb983] transition-transform duration-300 group-open:rotate-180" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                 </svg>
               </summary>
               <div className="px-6 pb-6 text-gray-600 leading-relaxed border-t border-gray-100 pt-4">
-                Yes, our curriculum includes comprehensive training in clear aligner therapy including Invisalign and JKKN Align Studio. Learners gain hands-on experience in digital treatment planning, aligner case selection, and managing aligner patients from start to finish.
+                Yes, our learning framework includes comprehensive training in clear aligner therapy including Invisalign and JKKN Align Studio. Learners gain hands-on experience in digital treatment planning, aligner case selection, and managing aligner patients from start to finish.
               </div>
             </details>
 

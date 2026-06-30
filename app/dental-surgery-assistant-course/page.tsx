@@ -86,7 +86,7 @@ const bentoCards = [
     emoji: "\uD83D\uDCC5",
     bigNum: "",
     title: "6 Months Full-Time",
-    desc: "Monday\u2013Saturday, 9 AM\u20134 PM. Structured curriculum combining theory and hands-on practice.",
+    desc: "Monday\u2013Saturday, 9 AM\u20134 PM. Structured learning framework combining theory and hands-on practice.",
     variant: "normal" as const,
   },
   {
@@ -116,7 +116,7 @@ const timelineMonths = [
     month: "M2",
     label: "Month 2",
     title: "Sterilization & Instrument Handling",
-    desc: "Sterilization protocols, dental instrument identification, tray setup, and autoclave operation. Hands-on lab practice begins.",
+    desc: "Sterilization protocols, dental instrument identification, tray setup, and autoclave operation. Hands-on learning lab practice begins.",
   },
   {
     month: "M3",
@@ -152,7 +152,7 @@ const whyCards = [
   },
   {
     num: 2,
-    title: "Expert Faculty Mentorship",
+    title: "Expert Senior Learner Mentorship",
     desc: "Learn from qualified dental surgeons and specialists with decades of clinical experience.",
   },
   {
@@ -167,7 +167,7 @@ const whyCards = [
   },
   {
     num: 5,
-    title: "Industry-Ready Curriculum",
+    title: "Industry-Ready Learning Framework",
     desc: "Radiography, sterilization, chairside assisting, and clinic management \u2014 everything employers want.",
   },
   {
@@ -561,7 +561,7 @@ export default function DSACoursePage() {
                 <br />6 Months
               </h2>
               <p className="text-base text-gray-500 max-w-[580px] mx-auto mb-11">
-                A structured, progressive curriculum that takes you from basics
+                A structured, progressive learning framework that takes you from basics
                 to job-ready professional.
               </p>
             </RevealOnScroll>
@@ -747,7 +747,7 @@ export default function DSACoursePage() {
                 className="font-extrabold text-gray-900 mb-2.5 tracking-tight leading-[1.12]"
                 style={{ fontSize: "clamp(26px, 4vw, 40px)" }}
               >
-                Why Students Choose
+                Why Learners Choose
                 <br />
                 JKKN Dental College
               </h2>
@@ -829,7 +829,7 @@ export default function DSACoursePage() {
             <RevealOnScroll>
               <div className="text-center p-[30px] rounded-2xl border-2 border-dashed border-[#7CB983] max-w-[700px] mx-auto bg-gradient-to-br from-[#FBFBEE] to-green-100">
                 <h3 className="text-xl text-[#002309] font-extrabold mb-2">
-                  Want to Talk to Our Past Students?
+                  Want to Talk to Our Past Learners?
                 </h3>
                 <p className="text-gray-500 text-[15px] mb-4">
                   We&apos;ll connect you with our alumni who completed similar

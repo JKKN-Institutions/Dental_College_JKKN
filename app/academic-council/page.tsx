@@ -70,7 +70,7 @@ export default function AcademicCouncil() {
               <div className="h-1.5 bg-gradient-to-r from-[#006837] to-[#7cb983]" />
               <div className="p-8">
                 <p className="text-base leading-relaxed text-gray-700 text-justify">
-                  The Academic Council plays a pivotal role in shaping and enhancing the academic framework of our dental college. Committed to excellence in education, the committee ensures that the curriculum remains dynamic, student-centred, and aligned with contemporary advancements in dental sciences.
+                  The Academic Council plays a pivotal role in shaping and enhancing the academic framework of our dental college. Committed to excellence in education, the committee ensures that the learning framework remains dynamic, learner-centred, and aligned with contemporary advancements in dental sciences.
                 </p>
               </div>
             </div>
@@ -94,10 +94,10 @@ export default function AcademicCouncil() {
                 </div>
                 <div className="space-y-3">
                   {[
-                    'To develop and periodically revise the curriculum in accordance with the guidelines of regulatory bodies such as the Dental Council of India (DCI).',
+                    'To develop and periodically revise the learning framework in accordance with the guidelines of regulatory bodies such as the Dental Council of India (DCI).',
                     'To integrate innovative teaching methodologies, including digital learning and hands on training, for a comprehensive learning experience.',
-                    'To promote interdisciplinary and evidence-based education, preparing students for modern dental practice.',
-                    'To encourage research, critical thinking, and problem-solving skills among students.',
+                    'To promote interdisciplinary and evidence-based education, preparing learners for modern dental practice.',
+                    'To encourage research, critical thinking, and problem-solving skills among learners.',
                     'To incorporate community-based learning initiatives to enhance social responsibility and patient-centred care.',
                   ].map((item) => (
                     <div key={item} className="flex items-start gap-3 bg-[#FBFBEE] rounded-lg px-4 py-3">
@@ -123,9 +123,9 @@ export default function AcademicCouncil() {
                 <div className="space-y-3">
                   {[
                     'Regular assessment and updating of course content to maintain relevance with industry and academic advancements.',
-                    'Organizing faculty development programs and workshops to improve teaching effectiveness.',
+                    'Organizing senior learner development programs and workshops to improve teaching effectiveness.',
                     'Facilitating collaborations with healthcare institutions and research organizations for academic enrichment.',
-                    'Monitoring and evaluating student feedback to enhance the teaching- learning experience.',
+                    'Monitoring and evaluating learner feedback to enhance the teaching- learning experience.',
                     'Ensuring adherence to accreditation and quality assurance standards.',
                   ].map((item) => (
                     <div key={item} className="flex items-start gap-3 bg-[#FBFBEE] rounded-lg px-4 py-3">
@@ -172,7 +172,7 @@ export default function AcademicCouncil() {
                     <thead>
                       <tr className="bg-[#006837]">
                         <th className="px-4 py-3 text-left text-xs sm:text-sm font-bold text-white whitespace-nowrap">S.No</th>
-                        <th className="px-4 py-3 text-left text-xs sm:text-sm font-bold text-white">Faculty Name</th>
+                        <th className="px-4 py-3 text-left text-xs sm:text-sm font-bold text-white">Senior Learner Name</th>
                         <th className="px-4 py-3 text-left text-xs sm:text-sm font-bold text-white">Designation</th>
                         <th className="px-4 py-3 text-left text-xs sm:text-sm font-bold text-white">Role</th>
                         <th className="px-4 py-3 text-left text-xs sm:text-sm font-bold text-white whitespace-nowrap">Contact Number</th>

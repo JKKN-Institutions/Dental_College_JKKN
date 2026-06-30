@@ -55,7 +55,7 @@ export default function HostelAdvisoryWelfareCommittee() {
         <div className="max-w-6xl mx-auto">
           <div className="bg-white rounded-xl p-8 shadow-sm border border-green-100 border-l-4 border-l-[#7cb983]">
             <p className="hero-description text-gray-700 text-base leading-relaxed text-justify font-semibold">
-              The Hostel Advisory and Welfare Committee is a significant body within educational institutions responsible for overseeing the welfare and well-being of students residing in hostels. Comprising faculty members, hostel wardens, and student representatives, the committee addresses hostel-related concerns and ensures a safe and conducive living environment. It formulates and enforces hostel rules and regulations, promoting discipline and mutual respect. The committee also organizes recreational and cultural activities, fostering a sense of community and camaraderie among hostel residents. In addition, it addresses grievances and provides support to students facing challenges, striving to create a comfortable and supportive home-away-from-home experience for students living in the hostels.
+              The Hostel Advisory and Welfare Committee is a significant body within educational institutions responsible for overseeing the welfare and well-being of learners residing in hostels. Comprising senior learner members, hostel wardens, and learner representatives, the committee addresses hostel-related concerns and ensures a safe and conducive living environment. It formulates and enforces hostel rules and regulations, promoting discipline and mutual respect. The committee also organizes recreational and cultural activities, fostering a sense of community and camaraderie among hostel residents. In addition, it addresses grievances and provides support to learners facing challenges, striving to create a comfortable and supportive home-away-from-home experience for learners living in the hostels.
             </p>
           </div>
         </div>
@@ -65,7 +65,7 @@ export default function HostelAdvisoryWelfareCommittee() {
       <section className="bg-white py-14 px-4">
         <div className="max-w-6xl mx-auto">
           <h3 className="text-xl md:text-2xl font-bold text-[#006837] mb-6">
-            Boys Hostel Staff Incharge
+            Boys Hostel Team Members Incharge
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {[
@@ -90,7 +90,7 @@ export default function HostelAdvisoryWelfareCommittee() {
       <section className="bg-[#FBFBEE] py-14 px-4">
         <div className="max-w-6xl mx-auto">
           <h3 className="text-xl md:text-2xl font-bold text-[#006837] mb-6">
-            Girls Hostel Staff Incharge
+            Girls Hostel Team Members Incharge
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {[

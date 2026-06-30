@@ -197,7 +197,7 @@ const bdsFaqSchema = {
     },
     {
       '@type': 'Question',
-      name: 'Are scholarships available for BDS students?',
+      name: 'Are scholarships available for BDS learners?',
       acceptedAnswer: {
         '@type': 'Answer',
         text: 'Yes. JKKN offers merit-based scholarships, sports quota scholarships, single parent scholarships, and government scholarships including PMSS (₹2.5L–6L/year for SC/SCA/ST/BC-CC), First Graduate (₹40K/year for BC/MBC/DNC/BCM), Community Scholarship (₹5K–10K/year), and Naan Mudhalvan (₹1,000/month for Tamil medium students).',
@@ -213,10 +213,10 @@ const bdsFaqSchema = {
     },
     {
       '@type': 'Question',
-      name: 'Is hostel accommodation available for BDS students?',
+      name: 'Is hostel accommodation available for BDS learners?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes. JKKN provides separate boys and girls hostels with 24/7 security, Wi-Fi, mess facilities, and study rooms. Hostel charges are included in the ₹5,50,000/year Management Quota package or can be paid separately.',
+        text: 'Yes. JKKN provides separate boys and girls hostels with 24/7 security, Wi-Fi, mess facilities, and learning commons. Hostel charges are included in the ₹5,50,000/year Management Quota package or can be paid separately.',
       },
     },
     {
@@ -385,7 +385,7 @@ const feeBreakdown = [
   {
     quota: 'Management Quota — Dayscholar',
     tuition: '₹ 4,50,000 / year',
-    note: 'Includes tuition fee and student instruments kit.',
+    note: 'Includes tuition fee and learner instruments kit.',
   },
   {
     quota: 'Management Quota — With Hostel',
@@ -458,7 +458,7 @@ const whyJKKN = [
   { text: 'DCI approved, NAAC A grade accredited institution', icon: Award },
   { text: 'India\'s 1st AI-Integrated Dental Campus', icon: Cpu },
   { text: '92% placement assistance with national & international tie-ups', icon: Briefcase },
-  { text: '9 specialised dental departments with expert faculty', icon: Users },
+  { text: '9 specialised dental departments with expert senior learners', icon: Users },
   { text: 'NH-544 location — accessible from Salem, Erode, Coimbatore, Tiruppur', icon: MapPin },
 ];
 
@@ -492,8 +492,8 @@ const bdsFaqs = [
     a: 'Yes — merit, sports, single parent, and government scholarships: PMSS (₹2.5L–6L/year for SC/SCA/ST/BC-CC), First Graduate (₹40K/year), Community Scholarship (₹5K–10K/year), Naan Mudhalvan (₹1,000/month for Tamil medium students).',
   },
   {
-    q: 'Is hostel accommodation available for BDS students?',
-    a: 'Yes. JKKN provides separate boys and girls hostels with 24/7 security, Wi-Fi, mess facilities, and study rooms. Hostel charges are included in the ₹5,50,000/year Management Quota package.',
+    q: 'Is hostel accommodation available for BDS learners?',
+    a: 'Yes. JKKN provides separate boys and girls hostels with 24/7 security, Wi-Fi, mess facilities, and learning commons. Hostel charges are included in the ₹5,50,000/year Management Quota package.',
   },
   {
     q: 'What career options are available after BDS from JKKN?',
@@ -852,7 +852,7 @@ export default function BDSAdmissionPage() {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Ready to Begin Your BDS Journey?</h2>
           <p className="text-lg text-gray-200 mb-8 max-w-2xl mx-auto">
-            Join 100 BDS students admitted every year at JKKN Dental College &
+            Join 100 BDS learners admitted every year at JKKN Dental College &
             Hospital — DCI approved, NAAC A grade, with industry-leading clinical
             exposure and placement support.
           </p>

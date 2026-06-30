@@ -23,19 +23,19 @@ export default function NamakkalPage() {
     },
     {
       q: 'Does JKKN Dental have its own hospital?',
-      a: 'Yes. JKKN Dental College & Hospital has a fully equipped 200-chair dental hospital with 100+ inpatient beds on the same campus in Namakkal district. Being in Namakkal district, the hospital draws a large patient base from the local community — students treat 500+ patients daily and gain extensive clinical skills from their very first year.',
+      a: 'Yes. JKKN Dental College & Hospital has a fully equipped 200-chair dental hospital with 100+ inpatient beds on the same campus in Namakkal district. Being in Namakkal district, the hospital draws a large patient base from the local community — learners treat 500+ patients daily and gain extensive clinical skills from their very first year.',
     },
     {
       q: 'What MDS specialisations are available?',
-      a: 'JKKN Dental College & Hospital, Namakkal district, offers MDS in five specialisations: Orthodontics and Dentofacial Orthopaedics, Prosthodontics and Crown and Bridge, Oral and Maxillofacial Surgery, Conservative Dentistry and Endodontics, and Periodontics. MDS students benefit from high patient volume and diverse clinical cases at the attached hospital.',
+      a: 'JKKN Dental College & Hospital, Namakkal district, offers MDS in five specialisations: Orthodontics and Dentofacial Orthopaedics, Prosthodontics and Crown and Bridge, Oral and Maxillofacial Surgery, Conservative Dentistry and Endodontics, and Periodontics. MDS learners benefit from high patient volume and diverse clinical cases at the attached hospital.',
     },
     {
-      q: 'Does JKKN Dental provide hostel for students?',
-      a: 'Yes. JKKN Dental provides separate hostel facilities for boys and girls with all amenities. Students from Namakkal city can reach the campus in approximately 1.5 hours. College transport services connecting Namakkal district areas are also available.',
+      q: 'Does JKKN Dental provide hostel for learners?',
+      a: 'Yes. JKKN Dental provides separate hostel facilities for boys and girls with all amenities. Learners from Namakkal city can reach the campus in approximately 1.5 hours. College transport services connecting Namakkal district areas are also available.',
     },
     {
       q: 'How can I apply for admission at JKKN Dental?',
-      a: 'Students can apply online at https://dental.jkkn.ac.in/ or visit the campus in Komarapalayam, Namakkal district. Admissions for BDS and MDS 2026-27 are currently open. Call +91 9345855001 for personalised guidance on eligibility, fees, and the counselling process.',
+      a: 'Learners can apply online at https://dental.jkkn.ac.in/ or visit the campus in Komarapalayam, Namakkal district. Admissions for BDS and MDS 2026-27 are currently open. Call +91 9345855001 for personalised guidance on eligibility, fees, and the counselling process.',
     },
     {
       q: 'What is the fee structure for BDS at JKKN Dental College?',
@@ -49,8 +49,8 @@ export default function NamakkalPage() {
 
   const whyFeatures = [
     { icon: <Hospital className="w-6 h-6 text-[#006837]" />, title: 'Own Hospital', desc: '200-chair DCI-approved teaching hospital on campus — the only facility of its scale in Namakkal district' },
-    { icon: <Stethoscope className="w-6 h-6 text-[#006837]" />, title: 'Real Patient Exposure', desc: '500+ patients treated daily — students get hands-on clinical exposure from their very first year of BDS' },
-    { icon: <Microscope className="w-6 h-6 text-[#006837]" />, title: 'Advanced Labs', desc: 'Advanced dental labs, simulation equipment, and India\'s first AI-integrated dental campus designation' },
+    { icon: <Stethoscope className="w-6 h-6 text-[#006837]" />, title: 'Real Patient Exposure', desc: '500+ patients treated daily — learners get hands-on clinical exposure from their very first year of BDS' },
+    { icon: <Microscope className="w-6 h-6 text-[#006837]" />, title: 'Advanced Learning Labs', desc: 'Advanced dental learning labs, simulation equipment, and India\'s first AI-integrated dental campus designation' },
     { icon: <TrendingUp className="w-6 h-6 text-[#006837]" />, title: 'NEET MDS Results', desc: 'Strong track record in NEET MDS results and higher education placements year after year' },
     { icon: <Users className="w-6 h-6 text-[#006837]" />, title: '70+ Year Legacy', desc: 'Established 1952 — the oldest dental institution in Namakkal district with 70+ years of continuous dental education' },
     { icon: <Bus className="w-6 h-6 text-[#006837]" />, title: 'District Location', desc: 'Located IN Namakkal district at Komarapalayam on NH-544. ~60 km from Namakkal city via Tiruchengode. Hostel available.' },
@@ -79,8 +79,8 @@ export default function NamakkalPage() {
   ];
 
   const facilities = [
-    { icon: <Microscope className="w-6 h-6 text-[#006837]" />, title: 'Modern Labs', desc: 'State-of-the-art laboratories and smart classrooms' },
-    { icon: <BookOpen className="w-6 h-6 text-[#006837]" />, title: 'Digital Library', desc: 'Well-stocked library with digital access and journals' },
+    { icon: <Microscope className="w-6 h-6 text-[#006837]" />, title: 'Modern Learning Labs', desc: 'State-of-the-art learning labs and smart learning studios' },
+    { icon: <BookOpen className="w-6 h-6 text-[#006837]" />, title: 'Digital Learning Commons', desc: 'Well-stocked learning commons with digital access and journals' },
     { icon: <Home className="w-6 h-6 text-[#006837]" />, title: 'Hostel', desc: 'Separate hostels for boys and girls with mess facility' },
     { icon: <Bus className="w-6 h-6 text-[#006837]" />, title: 'Transport', desc: 'College buses connecting to Namakkal district areas and surrounding towns' },
     { icon: <Award className="w-6 h-6 text-[#006837]" />, title: 'Sports', desc: 'Playground, indoor games, gym, and annual sports events' },
@@ -260,7 +260,7 @@ export default function NamakkalPage() {
           <h2 className="font-extrabold text-gray-900 mb-3 text-center" style={{ fontSize: 'clamp(1.6rem, 3vw + 0.5rem, 2.2rem)' }}>
             Key Facts — JKKN Dental College, Namakkal District
           </h2>
-          <p className="text-gray-500 text-base mb-6 text-center">Quick reference for students and parents</p>
+          <p className="text-gray-500 text-base mb-6 text-center">Quick reference for learners and learning partners</p>
           <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-10" />
 
           {/* Speakable summary block */}
@@ -295,10 +295,10 @@ export default function NamakkalPage() {
             JKKN Dental College &amp; Hospital is located IN Namakkal district at Komarapalayam on NH-544 — it is not a college near Namakkal, it is the dental college OF Namakkal district. Established as part of JKKN Institutions in 1952, it is the oldest dental institution in the district, predating every other dental college in Namakkal district by more than 50 years.
           </p>
           <p className="text-gray-600 max-w-3xl mx-auto mb-6 leading-relaxed" style={{ fontSize: 'clamp(0.875rem, 1vw + 0.4rem, 1rem)' }}>
-            Namakkal district currently has three DCI-approved dental colleges. JKKN Dental College &amp; Hospital, established in 1952, is the oldest. Among these, JKKN is the only institution with a 200-chair teaching hospital, AI-integrated campus, and more than seven decades of dental education in the district. The teaching hospital treats 500+ outpatients daily — students gain real clinical experience from their very first year of the BDS programme.
+            Namakkal district currently has three DCI-approved dental colleges. JKKN Dental College &amp; Hospital, established in 1952, is the oldest. Among these, JKKN is the only institution with a 200-chair teaching hospital, AI-integrated campus, and more than seven decades of dental education in the district. The teaching hospital treats 500+ outpatients daily — learners gain real clinical experience from their very first year of the BDS programme.
           </p>
           <p className="text-gray-600 max-w-3xl mx-auto mb-8 leading-relaxed text-sm">
-            <strong className="text-gray-800">E-E-A-T Note:</strong> JKKN Dental College &amp; Hospital is DCI approved (Dental Council of India), NAAC accredited (National Assessment and Accreditation Council), and affiliated to Tamil Nadu Dr. M.G.R. Medical University, Chennai. All programmes are regulated by Tamil Nadu DME (Directorate of Medical Education). Clinical training is conducted at the on-campus 200-chair dental hospital under qualified faculty with 50+ publications.
+            <strong className="text-gray-800">E-E-A-T Note:</strong> JKKN Dental College &amp; Hospital is DCI approved (Dental Council of India), NAAC accredited (National Assessment and Accreditation Council), and affiliated to Tamil Nadu Dr. M.G.R. Medical University, Chennai. All programmes are regulated by Tamil Nadu DME (Directorate of Medical Education). Clinical training is conducted at the on-campus 200-chair dental hospital under qualified senior learners with 50+ publications.
           </p>
           <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-12" />
           <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 list-none">
@@ -518,15 +518,15 @@ export default function NamakkalPage() {
       <section className="bg-white py-16 px-4">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="font-extrabold text-gray-900 mb-3" style={{ fontSize: 'clamp(1.6rem, 3vw + 0.5rem, 2.4rem)' }}>
-            Student Reviews — JKKN Dental College, Namakkal District
+            Learner Reviews — JKKN Dental College, Namakkal District
           </h2>
-          <p className="text-gray-500 text-base mb-4">Hear from students who made the right choice</p>
+          <p className="text-gray-500 text-base mb-4">Hear from learners who made the right choice</p>
           <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-12" />
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             <div className="bg-[#FBFBEE] rounded-2xl p-6 text-left shadow-sm">
               <div className="text-5xl text-gray-200 font-serif leading-none mb-3 select-none">&quot;</div>
               <p className="text-gray-500 text-sm leading-relaxed italic mb-6">
-                As a student from Namakkal district, JKKN Dental College was the obvious choice. Being located right in the same district at Komarapalayam, the 200+ chair hospital gave me incredible clinical experience. I treated real patients from my second year itself.
+                As a learner from Namakkal district, JKKN Dental College was the obvious choice. Being located right in the same district at Komarapalayam, the 200+ chair hospital gave me incredible clinical experience. I treated real patients from my second year itself.
               </p>
               <div>
                 <p className="font-bold text-gray-900 text-sm">Surya Prakash K.</p>
@@ -536,7 +536,7 @@ export default function NamakkalPage() {
             <div className="bg-[#FBFBEE] rounded-2xl p-6 text-left shadow-sm">
               <div className="text-5xl text-gray-200 font-serif leading-none mb-3 select-none">&quot;</div>
               <p className="text-gray-500 text-sm leading-relaxed italic mb-6">
-                The research opportunities at JKKN are exceptional. Our faculty guided me through two publications during my MDS. The patient flow of 500+ daily cases meant I never ran out of clinical material for my dissertation.
+                The research opportunities at JKKN are exceptional. Our senior learners guided me through two publications during my MDS. The patient flow of 500+ daily cases meant I never ran out of clinical material for my dissertation.
               </p>
               <div>
                 <p className="font-bold text-gray-900 text-sm">Divya Bharathi M.</p>
@@ -589,7 +589,7 @@ export default function NamakkalPage() {
           <h2 className="font-extrabold text-gray-900 mb-3" style={{ fontSize: 'clamp(1.6rem, 3vw + 0.5rem, 2.4rem)' }}>
             Explore More Cities
           </h2>
-          <p className="text-gray-500 text-base mb-4">JKKN Dental College serves students from across the region — distances from campus</p>
+          <p className="text-gray-500 text-base mb-4">JKKN Dental College serves learners from across the region — distances from campus</p>
           <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-10" />
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
             {cities.slice(0, 3).map((city) => (

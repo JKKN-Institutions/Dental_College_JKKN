@@ -106,7 +106,7 @@ export default function CapabilityEnhancementProgram() {
           </h1>
           <div className="w-20 h-1 bg-[#7cb983] mb-6 rounded-full" />
           <p className="hero-description text-white/85 text-base md:text-lg leading-relaxed max-w-3xl">
-            1.2 Capability enhancement and development schemes employed by the Institution for students:
+            1.2 Capability enhancement and development schemes employed by the Institution for learners:
           </p>
         </div>
       </section>
