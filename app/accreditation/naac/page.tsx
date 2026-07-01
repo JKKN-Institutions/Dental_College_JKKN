@@ -363,7 +363,7 @@ export default function NAAC() {
                                 NUMBER OF STUDENTS YEAR-WISE DURING THE LAST FIVE YEARS
                               </td>
                               <td className="border border-gray-300 px-4 py-3">
-                                <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                                <a href="/pdf/naac/1.1.2_C-and-R-SHEET.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                               </td>
                             </tr>
                             <tr>
@@ -372,7 +372,7 @@ export default function NAAC() {
                                 NUMBER OF OUTGOING / FINAL YEAR STUDENTS YEAR-WISE DURING THE LAST FIVE YEARS
                               </td>
                               <td className="border border-gray-300 px-4 py-3">
-                                <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                                <a href="/pdf/naac/1.2.1_1714124981_10187.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                               </td>
                             </tr>
                             <tr>
@@ -381,7 +381,7 @@ export default function NAAC() {
                                 NUMBER OF FIRST YEAR STUDENTS ADMITTED YEAR-WISE IN LAST FIVE YEARS.
                               </td>
                               <td className="border border-gray-300 px-4 py-3">
-                                <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                                <a href="/pdf/naac/1.3.2_List_of-value-added-courses_final_upload.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                               </td>
                             </tr>
                           </tbody>
@@ -416,7 +416,7 @@ export default function NAAC() {
                                 NUMBER OF FULL TIME TEACHERS YEAR-WISE DURING THE LAST FIVE YEARS
                               </td>
                               <td className="border border-gray-300 px-4 py-3">
-                                <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                                <a href="/pdf/naac/2.1.1-C-and-R-SHEET.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                               </td>
                             </tr>
                             <tr>
@@ -425,7 +425,7 @@ export default function NAAC() {
                                 NUMBER OF SANCTIONED POSTS YEAR-WISE DURING THE LAST FIVE YEARS
                               </td>
                               <td className="border border-gray-300 px-4 py-3">
-                                <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                                <a href="/pdf/naac/2.2.1-C-and-R-SHEET.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                               </td>
                             </tr>
                           </tbody>
@@ -460,7 +460,7 @@ export default function NAAC() {
                                 DETAILS OF TOTAL EXPENDITURE EXCLUDING SALARY YEAR WISE DURING THE LAST FIVE YEARS
                               </td>
                               <td className="border border-gray-300 px-4 py-3">
-                                <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                                <a href="/pdf/naac/3.1.1-recreate.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                               </td>
                             </tr>
                           </tbody>
@@ -501,7 +501,7 @@ export default function NAAC() {
                               PROVIDE A DESCRIPTION OF ABOVE MENTIONED PROCESS WITHIN 500 WORDS
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/1.1.2_C-and-R-SHEET.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -511,7 +511,7 @@ export default function NAAC() {
                               NUMBER OF TEACHERS OF THE INSTITUTION PARTICIPATING IN BOS/ACADEMIC COUNCIL OF UNIVERSITIES YEAR-WISE DURING THE LAST FIVE YEARS
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/1.1.2_C-and-R-SHEET.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                         </tbody>
@@ -546,7 +546,7 @@ export default function NAAC() {
                               PERCENTAGE OF INTER-DISCIPLINARY / INTER-DEPARTMENTAL COURSES /TRAINING ACROSS ALL THE VIEW PROGRAMMES OFFERED BY THE COLLEGE DURING THE LAST FIVE YEARS
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/1.2.1_1714124981_10187.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -555,7 +555,7 @@ export default function NAAC() {
                               PERCENTAGE OF INTERDISCIPLINARY/INTERDEPARTMENTAL COURSES/TRAINING ACROSS THE VIEW PROGRAMMES OFFERED BY THE COLLEGE DURING THE LAST FIVE YEARS
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/1.2.1_1714124981_10187.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -564,7 +564,7 @@ export default function NAAC() {
                               ADDITIONAL INFO FINAL UPLOAD
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/1.2.1_Additional-info_final_upload.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -573,7 +573,7 @@ export default function NAAC() {
                               COURSE INFO SHEET MDS
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/1.2.1_COURSE-INFO-SHEET-MDS-1.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -582,7 +582,7 @@ export default function NAAC() {
                               LIST OF INTERDISP FINAL UPLOAD
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/1.2.1_List-of-interdisp_final_upload.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -591,7 +591,7 @@ export default function NAAC() {
                               NUMBER OF COURSES OFFERED ACROSS ALL PROGRAMMES DURING THE LAST FIVE YEARS
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/1.2.1.2-Number-of-courses-offered-across-all-programmes-during-the-last-five-years-33-.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -600,7 +600,7 @@ export default function NAAC() {
                               PERCENTAGE OF INTERDISCIPLINARY/INTERDEPARTMENTAL COURSES/TRAINING ACROSS THE VIEW PROGRAMMES OFFERED BY THE COLLEGE DURING THE LAST FIVE YEARS
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/1.2.1_1714124981_10187.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -609,7 +609,7 @@ export default function NAAC() {
                               NUMBER OF COURSES OFFERED ACROSS ALL PROGRAMMES DURING THE LAST FIVE YEARS (33 )
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/1.2.1.2-Number-of-courses-offered-across-all-programmes-during-the-last-five-years-33-.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -618,7 +618,7 @@ export default function NAAC() {
                               MINUTES OF MEETING FINAL UPLOAD
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/1.2.1_-Minutes-of-meeting_final_upload.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -627,7 +627,7 @@ export default function NAAC() {
                               ADDITIONAL INFO FINAL UPLOAD
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/1.2.1_Additional-info_final_upload-1.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -636,7 +636,7 @@ export default function NAAC() {
                               LIST OF INTERDISP FINAL UPLOAD
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/1.2.1_List-of-interdisp_final_upload-1.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -645,7 +645,7 @@ export default function NAAC() {
                               AVERAGE PERCENTAGE OF STUDENTS ENROLLED IN SUBJECT-RELATED CERTIFICATE/DIPLOMA/ADD-ON VIEW COURSES AS AGAINST THE TOTAL NUMBER OF STUDENTS DURING THE LAST FIVE YEARS
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/1.2.2_1714125616_10187--6.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -654,7 +654,7 @@ export default function NAAC() {
                               AVERAGE PERCENTAGE OF STUDENTS ENROLLED IN SUBJECT-RELATED CERTIFICATE DIPLOMA
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/1.2.2-Average-percentage-of-students-enrolled-in-subject-related-CertificateDiploma-programsAdd-on-programs-as.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -663,7 +663,7 @@ export default function NAAC() {
                               AVERAGE PERCENTAGE OF STUDENTS ENROLLED IN SUBJECT-RELATED CERTIFICATE/DIPLOMA VIEW PROGRAMS/ADD-ON PROGRAMS AS AGAINST THE TOTAL NUMBER OF STUDENTS DURING THE LAST FIVE YEARS
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/1.2.2-Average-percentage-of-students-enrolled-in-subject-related-CertificateDiploma-programsAdd-on-programs-as.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -672,7 +672,7 @@ export default function NAAC() {
                               DETAILS OF THE STUDENTS ENROLLED IN SUBJECT-RELATED CERTIFICATE/DIPLOMA/ADD-ON COURSE
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/1.2.2.-Details-of-the-students-enrolled-in-subject-related-CertificateDiplomaAdd-on-course.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -681,7 +681,7 @@ export default function NAAC() {
                               AVERAGE PERCENTAGE OF STUDENTS ENROLLED IN SUBJECT-RELATED CERTIFICATE/DIPLOMA VIEW PROGRAMS/ADD-ON PROGRAMS AS AGAINST THE TOTAL NUMBER OF STUDENTS DURING THE LAST FIVE YEARS
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/1.2.2.-Details-of-the-students-enrolled-in-subject-related-CertificateDiplomaAdd-on-course.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -690,7 +690,7 @@ export default function NAAC() {
                               DETAILS OF THE STUDENTS ENROLLED FINAL UPLOAD
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/1.2.2_Details-of-the-students-enrolled_final_upload.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -699,7 +699,7 @@ export default function NAAC() {
                               DETAILS OF THE STUDENTS ENROLLED IN SUBJECT-RELATED CERTIFICATE/DIPLOMA/ADD-ON COURSEVIEW ATTENDANCE COPY OF THE STUDENTS ENROLLED FOR THE COURSE
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/1.2.2_Yearwise_List_Link_Page.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -708,7 +708,7 @@ export default function NAAC() {
                               YEARWISE LIST LINK PAGE
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/1.2.2_Yearwise_List_Link_Page.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                         </tbody>
@@ -743,7 +743,7 @@ export default function NAAC() {
                               THE INSTITUTION INTEGRATES CROSS-CUTTING ISSUES RELEVANT TO GENDER, ENVIRONMENT ANDVIEW SUSTAINABILITY, HUMAN VALUES, HEALTH DETERMINANTS, RIGHT TO HEALTH AND EMERGING DEMOGRAPHIC ISSUES AND PROFESSIONAL ETHICS INTO THE CURRICULUM AS PRESCRIBED BY THE UNIVERSITY / RESPECTIVE REGULATIVE COUNCILS
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/cross-cutting-issues.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -752,7 +752,7 @@ export default function NAAC() {
                               NUMBER OF VALUE-ADDED COURSES OFFERED DURING THE LAST FIVE YEARS THAT IMPART TRANSFERABLEVIEW AND LIFE SKILLS
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/1.3.2_List_of-value-added-courses_final_upload.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -761,7 +761,7 @@ export default function NAAC() {
                               AVERAGE PERCENTAGE OF STUDENTS ENROLLED IN THE VALUE-ADDED COURSES DURING THE LAST FIVEVIEW YEARS
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/1.3.2_List_of-value-added-courses_final_upload.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -770,7 +770,7 @@ export default function NAAC() {
                               PERCENTAGE OF STUDENTS UNDERTAKING FIELD VISITS/CLINICAL/INDUSTRY INTERNSHIPS/RESEARCHVIEW PROJECTS/INDUSTRY VISITS/COMMUNITY POSTINGS (DATA FOR THE PRECEDING ACADEMIC YEAR)
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/1.3.2_List_of-value-added-courses_final_upload.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                         </tbody>
@@ -811,7 +811,7 @@ export default function NAAC() {
                               5) PROFESSIONALS
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/1.4.1_C-and-R-SHEET-1.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -826,7 +826,7 @@ export default function NAAC() {
                               <strong>E. FEEDBACK NOT COLLECTED</strong>
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/1.4.2_C-and-R-SHEET-1.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                         </tbody>
@@ -865,7 +865,7 @@ export default function NAAC() {
                               DUE CONSIDERATION IS GIVEN TO EQUITY AND INCLUSIVENESS BY PROVIDING RESERVATION OF SEATSVIEW TO ALL CATEGORIES DURING THE ADMISSION PROCESS.
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/2.1.1-C-and-R-SHEET.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -874,7 +874,7 @@ export default function NAAC() {
                               AVERAGE PERCENTAGE OF SEATS FILLED IN FOR THE VARIOUS PROGRAMMES AS AGAINST THE APPROVEDVIEW INTAKE
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/2.1.2-C-and-R-SHEET.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -883,7 +883,7 @@ export default function NAAC() {
                               AVERAGE PERCENTAGE OF STUDENTS ENROLLED DEMONSTRATES A NATIONAL SPREAD AND INCLUDESVIEW STUDENTS FROM OTHER STATES
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/2.1.3-C-and-R-SHEET.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                         </tbody>
@@ -918,7 +918,7 @@ export default function NAAC() {
                               THE INSTITUTION ASSESSES THE LEARNING LEVELS OF THE STUDENTS, AFTER ADMISSION AND ORGANISESVIEW SPECIAL PROGRAMMES FOR ADVANCED LEARNERS AND SLOW PERFORMERS
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/2.2.1-C-and-R-SHEET.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -927,7 +927,7 @@ export default function NAAC() {
                               STUDENT – FULLTIME TEACHER RATIO (DATA FOR THE PRECEDING ACADEMIC YEAR)
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/2.2.2-C-and-R-SHEET.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -936,7 +936,7 @@ export default function NAAC() {
                               INSTITUTION FACILITATES BUILDING AND SUSTENANCE OF INNATE TALENT/APTITUDE OF INDIVIDUALVIEW STUDENTS (EXTRAMURAL ACTIVITIES/BEYOND THE CLASSROOM ACTIVITIES SUCH AS STUDENT CLUBS, CULTURAL SOCIETIES, ETC)
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/2.2.2-C-and-R-SHEET.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                         </tbody>
@@ -971,7 +971,7 @@ export default function NAAC() {
                               STUDENT-CENTRIC METHODS ARE USED FOR ENHANCING LEARNING EXPERIENCES BY...
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/2.3.2-C-and-R-SHEET.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -980,7 +980,7 @@ export default function NAAC() {
                               INSTITUTION FACILITATES THE USE OF CLINICAL SKILLS LABORATORY / SIMULATION BASED LEARNING
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/2.3.2-C-and-R-SHEET.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -989,7 +989,7 @@ export default function NAAC() {
                               TEACHERS USE ICT-ENABLED TOOLS FOR EFFECTIVE TEACHING AND LEARNING PROCESS INCLUDINGVIEW ONLINE E-RESOURCES
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/2.3.2-C-and-R-SHEET.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -998,7 +998,7 @@ export default function NAAC() {
                               STUDENT : MENTOR RATIO (PRECEDING ACADEMIC YEAR)
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/2.3.4-C-and-R-SHEET.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -1007,7 +1007,7 @@ export default function NAAC() {
                               THE TEACHING LEARNING PROCESS OF THE INSTITUTION NURTURES CREATIVITY, ANALYTICAL SKILLSVIEW AND INNOVATION AMONG STUDENTS
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/2.3.5-recreate.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                         </tbody>
@@ -1042,7 +1042,7 @@ export default function NAAC() {
                               AVERAGE PERCENTAGE OF FULLTIME TEACHERS AGAINST SANCTIONED POSTS DURING THE LAST FIVEVIEW YEARS
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/2.4.1-C-and-R-SHEET.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -1051,7 +1051,7 @@ export default function NAAC() {
                               AVERAGE PERCENTAGE OF FULLTIME TEACHERS WITH PH.D./D.SC./D.LIT./DM/M CH/DNB IN SUPERVIEW SPECIALITIES /OTHER PG DEGREES
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/2.4.2-C-and-R-SHEET.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -1060,7 +1060,7 @@ export default function NAAC() {
                               AVERAGE TEACHING EXPERIENCE OF FULLTIME TEACHERS IN NUMBER OF YEARS
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/2.4.3-C-and-R-SHEET.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -1069,7 +1069,7 @@ export default function NAAC() {
                               AVERAGE PERCENTAGE OF TEACHERS TRAINED FOR DEVELOPMENT AND DELIVERY OF E-CONTENT / E-VIEW COURSES DURING THE LAST 5 YEARS
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/2.4.4.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -1078,7 +1078,7 @@ export default function NAAC() {
                               AVERAGE PERCENTAGE OF FULLTIME TEACHERS WHO RECEIVED AWARDS AND RECOGNITIONS
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/2.4.5-C-and-R-SHEET.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                         </tbody>
@@ -1113,7 +1113,7 @@ export default function NAAC() {
                               THE INSTITUTION ADHERES TO THE ACADEMIC CALENDAR FOR THE CONDUCT OF CONTINUOUS INTERNALVIEW EVALUATION AND ENSURES THAT IT IS ROBUST AND TRANSPARENT
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/2.5.2-recreate.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -1122,7 +1122,7 @@ export default function NAAC() {
                               MECHANISM TO DEAL WITH EXAMINATION-RELATED GRIEVANCES IS TRANSPARENT, TIME-BOUND ANDVIEW EFFICIENT
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/2.5.2-recreate.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -1131,7 +1131,7 @@ export default function NAAC() {
                               REFORMS IN THE PROCESS AND PROCEDURE IN THE CONDUCT OF EVALUATION/EXAMINATION;VIEW INCLUDING THE AUTOMATION OF THE EXAMINATION SYSTEM
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/2.5.2-recreate.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -1140,7 +1140,7 @@ export default function NAAC() {
                               THE INSTITUTION PROVIDES OPPORTUNITIES TO STUDENTS FOR MIDCOURSE IMPROVEMENT OFVIEW PERFORMANCE THROUGH SPECIFIC INTERVENTIONS
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/2.5.4-C-and-R-SHEET.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                         </tbody>
@@ -1175,7 +1175,7 @@ export default function NAAC() {
                               THE INSTITUTION HAS STATED THE LEARNING OUTCOMES (GENERIC AND PROGRAMME-SPECIFIC)...
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/2.6.2-C-and-R-SHEET.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -1184,7 +1184,7 @@ export default function NAAC() {
                               INCREMENTAL PERFORMANCE IN PASS PERCENTAGE OF FINAL YEAR STUDENTS IN THE LAST FIVE YEARS
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/2.6.2-C-and-R-SHEET.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -1193,7 +1193,7 @@ export default function NAAC() {
                               THE TEACHING LEARNING AND ASSESSMENT PROCESSES OF THE INSTITUTION ARE ALIGNED WITH THEVIEW STATED LEARNING OUTCOMES.
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/2.6.2-C-and-R-SHEET.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -1202,7 +1202,7 @@ export default function NAAC() {
                               PRESENCE AND PERIODICITY OF PARENT-TEACHERS MEETINGS, REMEDIAL MEASURES UNDERTAKEN ANDVIEW OUTCOME ANALYSIS
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/2.6.2-C-and-R-SHEET.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                         </tbody>
@@ -1234,7 +1234,7 @@ export default function NAAC() {
                               ONLINE STUDENT SATISFACTION SURVEY REGARDING TEACHING LEARNING PROCESSVIEW
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/2.6.2-C-and-R-SHEET.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                         </tbody>
@@ -1273,7 +1273,7 @@ export default function NAAC() {
                               PERCENTAGE OF TEACHERS RECOGNIZED AS PG/PH.D RESEARCH GUIDES BY THE RESPECTIVE UNIVERSITY
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/3.1.1-recreate.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -1282,7 +1282,7 @@ export default function NAAC() {
                               AVERAGE PERCENTAGE OF TEACHERS AWARDED NATIONAL /INTERNATIONAL FELLOWSHIPS / FINANCIALVIEW SUPPORT FOR ADVANCED STUDIES/COLLABORATIVE RESEARCH AND PARTICIPATION IN CONFERENCES DURING THE LAST FIVE YEARS
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/3.1.1-recreate.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -1291,7 +1291,7 @@ export default function NAAC() {
                               NUMBER OF RESEARCH PROJECTS/CLINICAL TRIALS FUNDED BY GOVERNMENT, INDUSTRIES AND NON-VIEW GOVERNMENTAL AGENCIES DURING THE LAST FIVE YEARS
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/3.1.3.1_C-and-R-SHEET.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                         </tbody>
@@ -1326,7 +1326,7 @@ export default function NAAC() {
                               THE INSTITUTION HAS CREATED AN ECOSYSTEM FOR INNOVATIONS INCLUDING INCUBATION CENTRE ANDVIEW OTHER INITIATIVES FOR CREATION AND TRANSFER OF KNOWLEDGE
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/3.2.2-C-and-R-SHEET.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -1335,7 +1335,7 @@ export default function NAAC() {
                               NUMBER OF WORKSHOPS/SEMINARS CONDUCTED ON INTELLECTUAL PROPERTY RIGHTS (IPR) RESEARCHVIEW METHODOLOGY, GOOD CLINICAL, LABORATORY, PHARMACY AND COLLECTION PRACTICES, WRITING FOR RESEARCH GRANTS AND INDUSTRY-ACADEMIA COLLABORATIONS DURING THE LAST FIVE YEARS
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/3.2.2-C-and-R-SHEET.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                         </tbody>
@@ -1370,7 +1370,7 @@ export default function NAAC() {
                               THE INSTITUTION ENSURES IMPLEMENTATION OF ITS STATED CODE OF ETHICS FOR RESEARCH.
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/3.3.1_C-and-R-SHEET.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -1379,7 +1379,7 @@ export default function NAAC() {
                               AVERAGE NUMBER OF PH.D/DM/M CH/PG DEGREE IN THE RESPECTIVE DISCIPLINES RECEIVED PERVIEW RECOGNIZED PG TEACHERS* OF THE INSTITUTION DURING THE LAST FIVE YEARS
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/3.3.2_C-and-R-SHEET.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -1388,7 +1388,7 @@ export default function NAAC() {
                               AVERAGE NUMBER OF PAPERS PUBLISHED PER TEACHER IN THE JOURNALS NOTIFIED ON UGC -CARE LIST INVIEW THE UGC WEBSITE/SCOPUS/WEB OF SCIENCE/PUBMED DURING THE LAST FIVE YEARS
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/3.3.3_research-for-upload.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -1397,7 +1397,7 @@ export default function NAAC() {
                               NUMBER OF BOOKS AND CHAPTERS IN EDITED VOLUMES/BOOKS PUBLISHED AND PAPERS PUBLISHED INVIEW NATIONAL/INTERNATIONAL CONFERENCE PROCEEDINGS INDEXED IN UGC-CARE LIST ON THE UGC WEBSITE/SCOPUS/WEB OF SCIENCE/PUBMED/ DURING THE LAST FIVE YEARS
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/3.3.3_research-for-upload.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                         </tbody>
@@ -1432,7 +1432,7 @@ export default function NAAC() {
                               TOTAL NUMBER OF EXTENSION AND OUTREACH ACTIVITIES CARRIED OUT IN COLLABORATION WITHVIEW NATIONAL AND INTERNATIONAL AGENCIES, INDUSTRY, THE COMMUNITY, GOVERNMENT AND NON-GOVERNMENT ORGANIZED BODIES THROUGH NSS/NCC DURING THE LAST FIVE YEARS.
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/3.5.2_C-and-R-SHEET.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -1441,7 +1441,7 @@ export default function NAAC() {
                               AVERAGE PERCENTAGE OF STUDENTS PARTICIPATING IN EXTENSION AND OUTREACH ACTIVITIES DURINGVIEW THE LAST 5 YEARS
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/3.5.2_C-and-R-SHEET.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -1450,7 +1450,7 @@ export default function NAAC() {
                               NUMBER OF AWARDS AND RECOGNITIONS RECEIVED FOR EXTENSION AND OUTREACH ACTIVITIES FROMVIEW GOVERNMENT / OTHER RECOGNISED BODIES DURING THE LAST FIVE YEARS
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/3.5.2_C-and-R-SHEET.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -1459,7 +1459,7 @@ export default function NAAC() {
                               INSTITUTIONAL SOCIAL RESPONSIBILITY ACTIVITIES IN THE NEIGHBOURHOOD COMMUNITY IN TERMS OFVIEW EDUCATION, ENVIRONMENTAL ISSUES LIKE SWACHH BHARATH, HEALTH AND HYGIENE AWARENESS AND SOCIO-ECONOMIC DEVELOPMENT ISSUES CARRIED OUT BY THE STUDENTS AND STAFF DURING THE LAST FIVE YEARS.
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/3.5.2_C-and-R-SHEET.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                         </tbody>
@@ -1494,7 +1494,7 @@ export default function NAAC() {
                               AVERAGE NUMBER OF COLLABORATIVE ACTIVITIES FOR RESEARCH, FACULTY EXCHANGE, STUDENTVIEW EXCHANGE/ INDUSTRY-INTERNSHIP ETC. PER YEAR FOR THE LAST FIVE YEARS
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/3.5.2_C-and-R-SHEET.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -1503,7 +1503,7 @@ export default function NAAC() {
                               TOTAL NUMBER OF FUNCTIONAL MOUS WITH INSTITUTIONS/ INDUSTRIES IN INDIA AND ABROAD FORVIEW ACADEMIC, CLINICAL TRAINING / INTERNSHIP, ON-THE JOB TRAINING, PROJECT WORK, STUDENT / FACULTY EXCHANGE, COLLABORATIVE RESEARCH PROGRAMMES ETC. YEAR-WISE DURING THE LAST FIVE YEARS
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/3.5.2_C-and-R-SHEET.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                         </tbody>
@@ -1542,7 +1542,7 @@ export default function NAAC() {
                               THE INSTITUTION HAS ADEQUATE FACILITIES FOR TEACHING-LEARNING.
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/4.1.4_Cand-R_Sheet.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -1551,7 +1551,7 @@ export default function NAAC() {
                               THE INSTITUTION HAS ADEQUATE FACILITIES TO SUPPORT PHYSICAL AND RECREATIONAL REQUIREMENTSVIEW OF STUDENTS AND STAFF.
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/4.1.4_Cand-R_Sheet.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -1560,7 +1560,7 @@ export default function NAAC() {
                               AVAILABILITY AND ADEQUACY OF GENERAL CAMPUS FACILITIES AND OVERALL AMBIENCE.
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/4.1.4_Cand-R_Sheet.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -1569,7 +1569,7 @@ export default function NAAC() {
                               AVERAGE PERCENTAGE OF EXPENDITURE INCURRED, EXCLUDING SALARY, FOR INFRASTRUCTUREVIEW DEVELOPMENT AND AUGMENTATION DURING THE LAST FIVE YEARS.
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/4.1.4_Cand-R_Sheet.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                         </tbody>
@@ -1604,7 +1604,7 @@ export default function NAAC() {
                               TEACHING HOSPITAL, EQUIPMENT, CLINICAL TEACHING-LEARNING AND LABORATORY FACILITIES ASVIEW STIPULATED BY THE RESPECTIVE REGULATORY BODIES.
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/4.2.2_Cand-R_-Sheet.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -1613,7 +1613,7 @@ export default function NAAC() {
                               AVERAGE NUMBER OF PATIENTS PER YEAR TREATED AS OUTPATIENTS AND INPATIENTS IN THE TEACHINGVIEW HOSPITAL FOR THE LAST FIVE YEARS.
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/4.2.2_Cand-R_-Sheet.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -1622,7 +1622,7 @@ export default function NAAC() {
                               AVERAGE NUMBER OF STUDENTS PER YEAR EXPOSED TO LEARNING RESOURCE SUCH AS LABORATORIES,VIEW ANIMAL HOUSE & HERBAL GARDEN (IN HOUSE OR HIRED) DURING THE LAST FIVE YEARS.
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/4.2.3_Cand-R_Sheet.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -1631,7 +1631,7 @@ export default function NAAC() {
                               AVAILABILITY OF INFRASTRUCTURE FOR COMMUNITY-BASED LEARNING.
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/4.2.4_C-and-R_Sheet.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                         </tbody>
@@ -1666,7 +1666,7 @@ export default function NAAC() {
                               LIBRARY IS AUTOMATED USING INTEGRATED LIBRARY MANAGEMENT SYSTEM (ILMS).
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/4.3.3_C-and-R_sheet.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -1675,7 +1675,7 @@ export default function NAAC() {
                               TOTAL NUMBER OF TEXTBOOKS, REFERENCE VOLUMES, JOURNALS, COLLECTION OF RARE BOOKS,VIEW MANUSCRIPTS, DIGITALIZED TRADITIONAL MANUSCRIPTS, DISCIPLINE-SPECIFIC LEARNING RESOURCES FROM ANCIENT INDIAN LANGUAGES, SPECIAL REPORTS OR ANY OTHER KNOWLEDGE RESOURCE FOR LIBRARY ENRICHMENT.
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/4.3.3_C-and-R_sheet.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -1684,7 +1684,7 @@ export default function NAAC() {
                               DOES THE INSTITUTION HAVE AN E-LIBRARY WITH MEMBERSHIP / REGISTRATION FOR VARIOUSVIEW RESOURCES?
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/4.3.3_C-and-R_sheet.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -1693,7 +1693,7 @@ export default function NAAC() {
                               AVERAGE ANNUAL EXPENDITURE FOR THE PURCHASE OF BOOKS AND JOURNALS INCLUDING E-JOURNALSVIEW DURING THE LAST FIVE YEARS.
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/4.3.4_Cand-R_sheet.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -1702,7 +1702,7 @@ export default function NAAC() {
                               IN-PERSON AND REMOTE ACCESS USAGE OF LIBRARY AND THE LEARNER SESSIONS/LIBRARY USAGEVIEW PROGRAMMES ORGANIZED FOR THE TEACHERS AND STUDENTS (DATA FOR THE PRECEDING ACADEMIC YEAR).
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/4.3.4_Cand-R_sheet.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -1711,7 +1711,7 @@ export default function NAAC() {
                               E-CONTENT RESOURCES USED BY TEACHERS.
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/4.3.6_C-and-R_Sheet.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                         </tbody>
@@ -1746,7 +1746,7 @@ export default function NAAC() {
                               PERCENTAGE OF CLASSROOMS, SEMINAR HALLS AND DEMONSTRATION ROOMS LINKED WITH INTERNETVIEW /WI-FI-ENABLED ICT FACILITIES (DATA FOR THE PRECEDING ACADEMIC YEAR).
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/4.4.1_Cand-R_sheet.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -1755,7 +1755,7 @@ export default function NAAC() {
                               INSTITUTION FREQUENTLY UPDATES ITS IT FACILITIES AND COMPUTER AVAILABILITY FOR STUDENTSVIEW INCLUDING WI-FI.
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/4.4.1_Cand-R_sheet.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -1764,7 +1764,7 @@ export default function NAAC() {
                               AVAILABLE BANDWIDTH OF INTERNET CONNECTION IN THE INSTITUTION (LEASED LINE).
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/4.4.3_Cand-R_sheet.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                         </tbody>
@@ -1799,7 +1799,7 @@ export default function NAAC() {
                               AVERAGE EXPENDITURE INCURRED ON MAINTENANCE OF PHYSICAL FACILITIES AND ACADEMIC SUPPORTVIEW FACILITIES.
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/4.5.1_Cand-R_sheet.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -1808,7 +1808,7 @@ export default function NAAC() {
                               THERE ARE ESTABLISHED SYSTEMS AND PROCEDURES FOR MAINTAINING AND UTILIZING PHYSICAL,VIEW ACADEMIC AND SUPPORT FACILITIES – LABORATORY, LIBRARY, SPORTS FACILITIES, COMPUTERS, CLASSROOMS ETC.
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/4.5.1_Cand-R_sheet.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                         </tbody>
@@ -1847,7 +1847,7 @@ export default function NAAC() {
                               AVERAGE PERCENTAGE OF STUDENTS BENEFITED BY SCHOLARSHIPS / FREESHIPS / FEE-WAIVERS BY GOVERNMENT / NON-GOVERNMENTAL AGENCIES / INSTITUTION DURING THE LAST FIVE YEARS.
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/5.1.1_C-and-R-SHEET.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -1865,7 +1865,7 @@ export default function NAAC() {
                               </ul>
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/5.1.2_C-and-R-SHEET.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -1874,7 +1874,7 @@ export default function NAAC() {
                               AVERAGE PERCENTAGE OF STUDENTS PROVIDED TRAINING AND GUIDANCE FOR COMPETITIVE VIEW EXAMINATIONS AND CAREER COUNSELING OFFERED BY THE INSTITUTION DURING THE LAST FIVE YEARS.
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/5.1.3_C-and-R-SHEET.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -1883,7 +1883,7 @@ export default function NAAC() {
                               THE INSTITUTION HAS AN ACTIVE INTERNATIONAL STUDENT CELL TO FACILITATE STUDY IN INDIA VIEW PROGRAM, ETC.DESCRIBE THE INTERNATIONAL STUDENT CELL ACTIVITIES WITHIN 500 WORDS.
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/5.1.3_C-and-R-SHEET.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -1892,7 +1892,7 @@ export default function NAAC() {
                               THE INSTITUTION HAS A TRANSPARENT MECHANISM FOR TIMELY REDRESSAL OF STUDENT GRIEVANCES / VIEW PREVENTION OF SEXUAL HARASSMENT / PREVENTION OF RAGGING.
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/5.1.5_C-and-R-SHEET.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                         </tbody>
@@ -1927,7 +1927,7 @@ export default function NAAC() {
                               AVERAGE PERCENTAGE OF STUDENTS QUALIFYING IN STATE/ NATIONAL/ INTERNATIONAL LEVEL VIEW EXAMINATIONS (E.G. GATE/GMAT/GPAT/CAT/NEET/GRE/TOEFL/PLAB/USMLE/AYUSH/CIVIL SERVICES/DEFENCE/UPSC/STATE GOVERNMENT EXAMINATIONS/AIIMSPGET, JIPMER ENTRANCE TEST, PGIMER ENTRANCE TEST, ETC.) DURING THE LAST FIVE YEARS.
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/5.2.1_C-and-R-SHEET.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -1936,7 +1936,7 @@ export default function NAAC() {
                               AVERAGE PERCENTAGE OF PLACEMENT / SELF-EMPLOYMENT (IN RELEVANT FIELD) IN PROFESSIONAL VIEW SERVICES OF OUTGOING STUDENTS DURING THE LAST FIVE YEARS.
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/5.2.2_C-and-R-SHEET.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -1945,7 +1945,7 @@ export default function NAAC() {
                               PERCENTAGE OF THE BATCH OF GRADUATED STUDENTS OF THE PRECEDING YEAR, WHO HAVE PROGRESSED VIEW TO HIGHER EDUCATION.
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/5.2.3_C-and-R-SHEET.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                         </tbody>
@@ -1980,7 +1980,7 @@ export default function NAAC() {
                               NUMBER OF AWARDS/MEDALS FOR OUTSTANDING PERFORMANCE IN SPORTS/CULTURAL ACTIVITIES AT VIEW STATE/REGIONAL (ZONAL)/NATIONAL/INTERNATIONAL LEVELS (AWARD FOR A TEAM EVENT SHOULD BE COUNTED AS ONE) DURING THE LAST FIVE YEARS.
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/5.3.1_C-and-R-SHEET.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -1989,7 +1989,7 @@ export default function NAAC() {
                               PRESENCE OF A STUDENT COUNCIL, ITS ACTIVITIES RELATED TO STUDENT WELFARE AND STUDENT VIEW REPRESENTATION IN ACADEMIC & ADMINISTRATIVE BODIES/COMMITTEES OF THE INSTITUTION.
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/5.3.1_C-and-R-SHEET.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -1998,7 +1998,7 @@ export default function NAAC() {
                               AVERAGE NUMBER OF SPORTS AND CULTURAL ACTIVITIES/COMPETITIONS ORGANIZED BY THE VIEW INSTITUTION DURING THE LAST FIVE YEARS.
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/5.3.3_C-and-R-SHEET.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                         </tbody>
@@ -2033,7 +2033,7 @@ export default function NAAC() {
                               THE ALUMNI ASSOCIATION IS REGISTERED AND HOLDS REGULAR MEETINGS TO PLAN ITS INVOLVEMENT VIEW AND DEVELOPMENTAL ACTIVITIES WITH THE SUPPORT OF THE COLLEGE DURING THE LAST FIVE YEARS.
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/5.4.2_C-and-R-SHEET.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -2042,7 +2042,7 @@ export default function NAAC() {
                               PROVIDE THE AREAS OF CONTRIBUTION BY THE ALUMNI ASSOCIATION / CHAPTERS DURING THE LAST FIVE VIEW YEARS.
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/5.4.2_C-and-R-SHEET.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                         </tbody>
@@ -2081,7 +2081,7 @@ export default function NAAC() {
                               THE INSTITUTION HAS CLEARLY STATED VISION AND MISSION WHICH ARE REFLECTED IN ITS ACADEMICVIEW AND ADMINISTRATIVE GOVERNANCE.
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/6.1.1.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -2090,7 +2090,7 @@ export default function NAAC() {
                               EFFECTIVE LEADERSHIP IS REFLECTED IN VARIOUS INSTITUTIONAL PRACTICES SUCH ASVIEW DECENTRALIZATION AND PARTICIPATIVE MANAGEMENT.
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/6.1.2.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                         </tbody>
@@ -2125,7 +2125,7 @@ export default function NAAC() {
                               THE INSTITUTIONAL HAS WELL DEFINED ORGANISATIONAL STRUCTURE, STATUTORY BODIES/COMMITTEESVIEW OF THE COLLEGE WITH RELEVANT RULES, NORMS AND GUIDELINES ALONG WITH STRATEGIC PLAN EFFECTIVELY DEPLOYED
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/6.2.1.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -2134,7 +2134,7 @@ export default function NAAC() {
                               IMPLEMENTATION OF E-GOVERNANCE IN AREAS OF OPERATION
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/6.2.2.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                         </tbody>
@@ -2169,7 +2169,7 @@ export default function NAAC() {
                               THE INSTITUTION HAS EFFECTIVE WELFARE MEASURES FOR TEACHING AND NON-TEACHING STAFF
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/6.3.1.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -2178,7 +2178,7 @@ export default function NAAC() {
                               AVERAGE PERCENTAGE OF TEACHERS PROVIDED WITH FINANCIAL SUPPORT TO ATTENDVIEW CONFERENCES/WORKSHOPS AND TOWARDS MEMBERSHIP FEE OF PROFESSIONAL BODIES DURING THE LAST FIVE YEARS
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/6.3.2.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -2187,7 +2187,7 @@ export default function NAAC() {
                               AVERAGE NUMBER OF PROFESSIONAL DEVELOPMENT / ADMINISTRATIVE TRAINING PROGRAMMESVIEW ORGANIZED BY THE INSTITUTION FOR TEACHING AND NON- TEACHING STAFF DURING THE LAST FIVE YEARS
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/6.3.3.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -2196,7 +2196,7 @@ export default function NAAC() {
                               AVERAGE PERCENTAGE OF TEACHERS UNDERGOING FACULTY DEVELOPMENT PROGRAMMES (FDP)VIEW INCLUDING ONLINE PROGRAMMES (ORIENTATION / INDUCTION PROGRAMMES, REFRESHER COURSE, SHORT TERM COURSE ETC.) DURING THE LAST FIVE YEARS..
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/6.3.4.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -2205,7 +2205,7 @@ export default function NAAC() {
                               INSTITUTION HAS PERFORMANCE APPRAISAL SYSTEM FOR TEACHING AND NON-TEACHING STAFF
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/6.3.5.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                         </tbody>
@@ -2240,7 +2240,7 @@ export default function NAAC() {
                               INSTITUTIONAL STRATEGIES FOR MOBILISATION OF FUNDS AND THE OPTIMAL UTILISATION OFVIEW RESOURCES
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/6.4.1.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -2249,7 +2249,7 @@ export default function NAAC() {
                               INSTITUTION CONDUCTS INTERNAL AND EXTERNAL FINANCIAL AUDITS REGULARLY
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/6.4.2.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -2258,7 +2258,7 @@ export default function NAAC() {
                               FUNDS / GRANTS RECEIVED FROM GOVERNMENT/NON-GOVERNMENT BODIES, INDIVIDUALS,VIEW PHILANTHROPISTS DURING THE LAST FIVE YEARS (NOT COVERED IN CRITERION III)
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/6.4.3.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                         </tbody>
@@ -2293,7 +2293,7 @@ export default function NAAC() {
                               INSTITUTION HAS A STREAMLINED INTERNAL QUALITY ASSURANCE MECHANISM
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/6.5.1.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -2302,7 +2302,7 @@ export default function NAAC() {
                               AVERAGE PERCENTAGE OF TEACHERS ATTENDING PROGRAMS/WORKSHOPS/SEMINARS SPECIFIC TOVIEW QUALITY IMPROVEMENT IN THE LAST 5 YEARS
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/6.5.2.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -2311,7 +2311,7 @@ export default function NAAC() {
                               THE INSTITUTION ADOPTS SEVERAL QUALITY ASSURANCE INITIATIVES
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/6.5.3.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                         </tbody>
@@ -2350,7 +2350,7 @@ export default function NAAC() {
                               TOTAL NUMBER OF GENDER EQUITY SENSITIZATION PROGRAMMES ORGANIZED BY THE INSTITUTIONVIEW DURING THE LAST FIVE YEARS.
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/7.1.1_Cand-R_sheet.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -2359,7 +2359,7 @@ export default function NAAC() {
                               MEASURES INITIATED BY THE INSTITUTION FOR THE PROMOTION OF GENDER EQUITY DURING THE LASTVIEW FIVE YEARS.
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/7.1.1_Cand-R_sheet.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -2368,7 +2368,7 @@ export default function NAAC() {
                               THE INSTITUTION HAS FACILITIES FOR ALTERNATE SOURCES OF ENERGY AND ENERGY CONSERVATIONVIEW DEVICES.
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/7.1.3-_C-and-R_-sheet.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -2377,7 +2377,7 @@ export default function NAAC() {
                               DESCRIBE THE FACILITIES IN THE INSTITUTION FOR THE MANAGEMENT OF THE FOLLOWING TYPES OF DEGRADABLE AND NON-DEGRADABLE WASTE (WITHIN 500 WORDS)
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/7.1.3-_C-and-R_-sheet.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -2386,7 +2386,7 @@ export default function NAAC() {
                               WATER CONSERVATION FACILITIES AVAILABLE IN THE INSTITUTION:
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/7.1.5-C-and-R-sheet.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -2395,7 +2395,7 @@ export default function NAAC() {
                               GREEN CAMPUS INITIATIVES OF THE INSTITUTION
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/7.1.6-C-and-R-sheet.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -2404,7 +2404,7 @@ export default function NAAC() {
                               THE INSTITUTION HAS DIVYANGJAN FRIENDLY, BARRIER-FREE ENVIRONMENT IN THE CAMPUS
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/7.1.7_Cand-R_sheet.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -2413,7 +2413,7 @@ export default function NAAC() {
                               DESCRIBE THE INSTITUTIONAL EFFORTS/INITIATIVES IN PROVIDING AN INCLUSIVE ENVIRONMENT I.E., TOLERANCE AND HARMONY TOWARDS CULTURAL, REGIONAL, LINGUISTIC, COMMUNAL SOCIO-ECONOMIC AND OTHER DIVERSITIES.
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/7.1.7_Cand-R_sheet.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -2422,7 +2422,7 @@ export default function NAAC() {
                               CODE OF CONDUCT HANDBOOK EXISTS FOR STUDENTS, TEACHERS AND ACADEMIC AND ADMINISTRATIVE STAFF INCLUDING THE DEAN / PRINCIPAL /OFFICIALS AND SUPPORT STAFF..
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/7.1.9_Cand-R_sheet.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -2431,7 +2431,7 @@ export default function NAAC() {
                               THE INSTITUTION CELEBRATES / ORGANIZES NATIONAL AND INTERNATIONAL COMMEMORATIVE DAYS, EVENTS AND FESTIVALS
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/7.1.9_Cand-R_sheet.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                         </tbody>
@@ -2463,7 +2463,7 @@ export default function NAAC() {
                               DESCRIBE TWO INSTITUTIONAL BEST PRACTICES AS PER THE NAAC FORMAT PROVIDED IN THE MANUAL.
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/7.1.9_Cand-R_sheet.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                         </tbody>
@@ -2498,7 +2498,7 @@ export default function NAAC() {
                               PORTRAY THE PERFORMANCE OF THE INSTITUTION IN ONE AREA DISTINCTIVE TO ITS PRIORITY ANDVIEW THRUST WITHIN 500 WORDS.
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/7.1.9_Cand-R_sheet.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                         </tbody>
@@ -2537,7 +2537,7 @@ export default function NAAC() {
                               NEET PERCENTILE SCORES OF STUDENTS ENROLLED FOR THE BDS PROGRAMME FOR THEPRECEDINGVIEW ACADEMIC YEAR.
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/8.1.1-recreate.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -2546,7 +2546,7 @@ export default function NAAC() {
                               THE INSTITUTION ENSURES ADEQUATE TRAINING FOR STUDENTS IN PRE-CLINICALSKILLS
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/8.1.1-recreate.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -2555,7 +2555,7 @@ export default function NAAC() {
                               INSTITUTION FOLLOWS INFECTION CONTROL PROTOCOLS DURING CLINICAL TEACHING DURINGVIEW PRECEDING ACADEMIC YEAR
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/8.1.3-recreate.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -2564,7 +2564,7 @@ export default function NAAC() {
                               ORIENTATION / FOUNDATION COURSES PRACTICED IN THE INSTITUTION FORSTUDENTS ENTERING THEVIEW COLLEGE / CLINICS / INTERNSHIP.
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/8.1.3-recreate.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -2573,7 +2573,7 @@ export default function NAAC() {
                               THE STUDENTS ARE TRAINED FOR USING HIGH END EQUIPMENT FORDIAGNOSTIC AND THERAPEUTICVIEW PURPOSES IN THE INSTITUTION. DATA FOR THEPRECEDING ACADEMIC YEAR
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/8.1.5-recreate.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -2582,7 +2582,7 @@ export default function NAAC() {
                               THE INSTITUTION PROVIDES STUDENT TRAINING IN SPECIALIZED CLINICS AND FACILITIES FOR CARE ANDVIEW TREATMENT.
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/8.1.6-recreate.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -2591,7 +2591,7 @@ export default function NAAC() {
                               NUMBER OF FULL-TIME TEACHERS WHO HAVE ACQUIRED ADDITIONALVIEW POSTGRADUATEDEGREES/DIPLOMAS/FELLOWSHIPS BEYOND THE ELIGIBILITY REQUIREMENTS FROM RECOGNIZED CENTERS/UNIVERSITIES IN INDIA OR ABROAD. (EG: AB, FRCS, MRCP, FAMS, FAIMER & IFME, FELLOWSHIPS, PH D IN DENTAL EDUCATION ETC.) DURING THE YEAR
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/8.1.7-recreate.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -2600,7 +2600,7 @@ export default function NAAC() {
                               THE INSTITUTION HAS INTRODUCED OBJECTIVE METHODS TO MEASURE AND CERTIFY ATTAINMENT OFVIEW SPECIFIC CLINICAL COMPETENCIES BY BDS STUDENTS/INTERNS AS STATED IN THE UNDERGRADUATE CURRICULUM BY THE DENTAL COUNCIL OF INDIA
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/8.1.7-recreate.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -2609,7 +2609,7 @@ export default function NAAC() {
                               NUMBER OF FIRST YEAR STUDENTS, PROVIDED WITH PROPHYLACTIC IMMUNIZATIONVIEW AGAINSTCOMMUNICABLE DISEASES LIKE HEPATITIS-B DURING THEIR CLINICAL WORK DURING THE YEAR.
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/8.1.9-recreate.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -2618,7 +2618,7 @@ export default function NAAC() {
                               THE COLLEGE HAS ADOPTED METHODS TO DEFINE AND IMPLEMENT DENTAL GRADUATE ATTRIBUTESVIEW WITH A SYSTEM OF EVALUATION OF ATTAINMENT OF SUCH ATTRIBUTES.
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/8.1.9-recreate.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -2627,7 +2627,7 @@ export default function NAAC() {
                               PER CAPITA EXPENDITURE ON DENTAL MATERIALS AND OTHER CONSUMABLES USED FOR STUDENTVIEW TRAINING DURING THE YEAR.
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/8.1.11-recreate.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                           <tr>
@@ -2636,7 +2636,7 @@ export default function NAAC() {
                               ESTABLISHMENT OF DENTAL EDUCATION DEPARTMENT BY THE COLLEGE FORTHE RANGE AND QUALITYVIEW OF FACULTY DEVELOPMENT PROGRAMMES IN EMERGING TRENDS IN DENTAL EDUCATIONAL TECHNOLOGY ORGANIZED BY IT.
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
+                              <a href="/pdf/naac/8.1.11-recreate.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">VIEW</a>
                             </td>
                           </tr>
                         </tbody>
@@ -2684,7 +2684,7 @@ export default function NAAC() {
                                 NUMBER OF TEACHERS OF THE INSTITUTION PARTICIPATING IN BOS/ACADEMIC COUNCIL OF UNIVERSITIES YEAR-WISE DURING THE LAST FIVE YEARS
                               </td>
                               <td className="border border-gray-300 px-4 py-3">
-                                <a href="#" className="text-[#1B5E20] font-bold hover:underline">
+                                <a href="/pdf/naac/1.1.2_C-and-R-SHEET.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">
                                   VIEW
                                 </a>
                               </td>
@@ -2723,7 +2723,7 @@ export default function NAAC() {
                                 PERCENTAGE OF INTER-DISCIPLINARY / INTER-DEPARTMENTAL COURSES /TRAINING ACROSS ALL THE PROGRAMMES OFFERED BY THE COLLEGE DURING THE LAST FIVE YEARS
                               </td>
                               <td className="border border-gray-300 px-4 py-3">
-                                <a href="#" className="text-[#1B5E20] font-bold hover:underline">
+                                <a href="/pdf/naac/1.2.1_1714124981_10187.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">
                                   VIEW
                                 </a>
                               </td>
@@ -2736,7 +2736,7 @@ export default function NAAC() {
                                 AVERAGE PERCENTAGE OF STUDENTS ENROLLED IN SUBJECT-RELATED CERTIFICATE/DIPLOMA/ADD-ON COURSES AS AGAINST THE TOTAL NUMBER OF STUDENTS DURING THE LAST FIVE YEARS
                               </td>
                               <td className="border border-gray-300 px-4 py-3">
-                                <a href="#" className="text-[#1B5E20] font-bold hover:underline">
+                                <a href="/pdf/naac/1.2.2_1714125616_10187--6.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">
                                   VIEW
                                 </a>
                               </td>
@@ -2775,7 +2775,7 @@ export default function NAAC() {
                                 NUMBER OF VALUE-ADDED COURSES OFFERED DURING THE LAST FIVE YEARS THAT IMPART TRANSFERABLE AND LIFE SKILLS
                               </td>
                               <td className="border border-gray-300 px-4 py-3">
-                                <a href="#" className="text-[#1B5E20] font-bold hover:underline">
+                                <a href="/pdf/naac/1.3.2_List_of-value-added-courses_final_upload.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">
                                   VIEW
                                 </a>
                               </td>
@@ -2788,7 +2788,7 @@ export default function NAAC() {
                                 AVERAGE PERCENTAGE OF STUDENTS ENROLLED IN THE VALUE-ADDED COURSES DURING THE LAST FIVE YEARS
                               </td>
                               <td className="border border-gray-300 px-4 py-3">
-                                <a href="#" className="text-[#1B5E20] font-bold hover:underline">
+                                <a href="/pdf/naac/1.3.2_List_of-value-added-courses_final_upload.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">
                                   VIEW
                                 </a>
                               </td>
@@ -2801,7 +2801,7 @@ export default function NAAC() {
                                 PERCENTAGE OF STUDENTS UNDERTAKING FIELD VISITS/CLINICAL/INDUSTRY INTERNSHIPS/RESEARCH PROJECTS/INDUSTRY VISITS/COMMUNITY POSTINGS (DATA FOR THE PRECEDING ACADEMIC YEAR)
                               </td>
                               <td className="border border-gray-300 px-4 py-3">
-                                <a href="#" className="text-[#1B5E20] font-bold hover:underline">
+                                <a href="/pdf/naac/1.3.2_List_of-value-added-courses_final_upload.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">
                                   VIEW
                                 </a>
                               </td>
@@ -2846,7 +2846,7 @@ export default function NAAC() {
                                 5) PROFESSIONALS
                               </td>
                               <td className="border border-gray-300 px-4 py-3">
-                                <a href="#" className="text-[#1B5E20] font-bold hover:underline">
+                                <a href="/pdf/naac/1.4.1_C-and-R-SHEET-1.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">
                                   VIEW
                                 </a>
                               </td>
@@ -2865,7 +2865,7 @@ export default function NAAC() {
                                 E. FEEDBACK NOT COLLECTED
                               </td>
                               <td className="border border-gray-300 px-4 py-3">
-                                <a href="#" className="text-[#1B5E20] font-bold hover:underline">
+                                <a href="/pdf/naac/1.4.2_C-and-R-SHEET-1.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">
                                   VIEW
                                 </a>
                               </td>
@@ -2911,7 +2911,7 @@ export default function NAAC() {
                                 DUE CONSIDERATION IS GIVEN TO EQUITY AND INCLUSIVENESS BY PROVIDING RESERVATION OF SEATS TO ALL CATEGORIES DURING THE ADMISSION PROCESS.
                               </td>
                               <td className="border border-gray-300 px-4 py-3">
-                                <a href="#" className="text-[#1B5E20] font-bold hover:underline">
+                                <a href="/pdf/naac/2.1.1-C-and-R-SHEET.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">
                                   VIEW
                                 </a>
                               </td>
@@ -2924,7 +2924,7 @@ export default function NAAC() {
                                 AVERAGE PERCENTAGE OF SEATS FILLED IN FOR THE VARIOUS PROGRAMMES AS AGAINST THE APPROVED INTAKE
                               </td>
                               <td className="border border-gray-300 px-4 py-3">
-                                <a href="#" className="text-[#1B5E20] font-bold hover:underline">
+                                <a href="/pdf/naac/2.1.2-C-and-R-SHEET.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">
                                   VIEW
                                 </a>
                               </td>
@@ -2937,7 +2937,7 @@ export default function NAAC() {
                                 AVERAGE PERCENTAGE OF STUDENTS ENROLLED DEMONSTRATES A NATIONAL SPREAD AND INCLUDES STUDENTS FROM OTHER STATES
                               </td>
                               <td className="border border-gray-300 px-4 py-3">
-                                <a href="#" className="text-[#1B5E20] font-bold hover:underline">
+                                <a href="/pdf/naac/2.1.3-C-and-R-SHEET.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">
                                   VIEW
                                 </a>
                               </td>
@@ -2976,7 +2976,7 @@ export default function NAAC() {
                                 THE INSTITUTION ASSESSES THE LEARNING LEVELS OF THE STUDENTS, AFTER ADMISSION AND ORGANISES SPECIAL PROGRAMMES FOR ADVANCED LEARNERS AND SLOW PERFORMERS
                               </td>
                               <td className="border border-gray-300 px-4 py-3">
-                                <a href="#" className="text-[#1B5E20] font-bold hover:underline">
+                                <a href="/pdf/naac/2.2.1-C-and-R-SHEET.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">
                                   VIEW
                                 </a>
                               </td>
@@ -2989,7 +2989,7 @@ export default function NAAC() {
                                 STUDENT - FULLTIME TEACHER RATIO (DATA FOR THE PRECEDING ACADEMIC YEAR)
                               </td>
                               <td className="border border-gray-300 px-4 py-3">
-                                <a href="#" className="text-[#1B5E20] font-bold hover:underline">
+                                <a href="/pdf/naac/2.2.2-C-and-R-SHEET.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">
                                   VIEW
                                 </a>
                               </td>
@@ -3028,7 +3028,7 @@ export default function NAAC() {
                                 INSTITUTION FACILITATES THE USE OF CLINICAL SKILLS LABORATORY / SIMULATION BASED LEARNING
                               </td>
                               <td className="border border-gray-300 px-4 py-3">
-                                <a href="#" className="text-[#1B5E20] font-bold hover:underline">
+                                <a href="/pdf/naac/2.3.2-C-and-R-SHEET.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">
                                   VIEW
                                 </a>
                               </td>
@@ -3041,7 +3041,7 @@ export default function NAAC() {
                                 STUDENT : MENTOR RATIO (PRECEDING ACADEMIC YEAR)
                               </td>
                               <td className="border border-gray-300 px-4 py-3">
-                                <a href="#" className="text-[#1B5E20] font-bold hover:underline">
+                                <a href="/pdf/naac/2.3.4-C-and-R-SHEET.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">
                                   VIEW
                                 </a>
                               </td>
@@ -3080,7 +3080,7 @@ export default function NAAC() {
                                 AVERAGE PERCENTAGE OF FULLTIME TEACHERS AGAINST SANCTIONED POSTS DURING THE LAST FIVE YEARS
                               </td>
                               <td className="border border-gray-300 px-4 py-3">
-                                <a href="#" className="text-[#1B5E20] font-bold hover:underline">
+                                <a href="/pdf/naac/2.4.1-C-and-R-SHEET.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">
                                   VIEW
                                 </a>
                               </td>
@@ -3093,7 +3093,7 @@ export default function NAAC() {
                                 AVERAGE PERCENTAGE OF FULLTIME TEACHERS WITH PH.D./D.SC./D.LIT./DM/M CH/DNB IN SUPER SPECIALITIES /OTHER PG DEGREES
                               </td>
                               <td className="border border-gray-300 px-4 py-3">
-                                <a href="#" className="text-[#1B5E20] font-bold hover:underline">
+                                <a href="/pdf/naac/2.4.2-C-and-R-SHEET.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">
                                   VIEW
                                 </a>
                               </td>
@@ -3106,7 +3106,7 @@ export default function NAAC() {
                                 AVERAGE TEACHING EXPERIENCE OF FULLTIME TEACHERS IN NUMBER OF YEARS
                               </td>
                               <td className="border border-gray-300 px-4 py-3">
-                                <a href="#" className="text-[#1B5E20] font-bold hover:underline">
+                                <a href="/pdf/naac/2.4.3-C-and-R-SHEET.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">
                                   VIEW
                                 </a>
                               </td>
@@ -3128,7 +3128,7 @@ export default function NAAC() {
                                 AVERAGE PERCENTAGE OF FULLTIME TEACHERS WHO RECEIVED AWARDS AND RECOGNITIONS
                               </td>
                               <td className="border border-gray-300 px-4 py-3">
-                                <a href="#" className="text-[#1B5E20] font-bold hover:underline">
+                                <a href="/pdf/naac/2.4.5-C-and-R-SHEET.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">
                                   VIEW
                                 </a>
                               </td>
@@ -3167,7 +3167,7 @@ export default function NAAC() {
                                 THE INSTITUTION PROVIDES OPPORTUNITIES TO STUDENTS FOR MIDCOURSE IMPROVEMENT OF PERFORMANCE THROUGH SPECIFIC INTERVENTIONS
                               </td>
                               <td className="border border-gray-300 px-4 py-3">
-                                <a href="#" className="text-[#1B5E20] font-bold hover:underline">
+                                <a href="/pdf/naac/2.5.4-C-and-R-SHEET.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">
                                   VIEW
                                 </a>
                               </td>
@@ -3206,7 +3206,7 @@ export default function NAAC() {
                                 INCREMENTAL PERFORMANCE IN PASS PERCENTAGE OF FINAL YEAR STUDENTS IN THE LAST FIVE YEARS
                               </td>
                               <td className="border border-gray-300 px-4 py-3">
-                                <a href="#" className="text-[#1B5E20] font-bold hover:underline">
+                                <a href="/pdf/naac/2.6.2-C-and-R-SHEET.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">
                                   VIEW
                                 </a>
                               </td>
@@ -3252,7 +3252,7 @@ export default function NAAC() {
                                 PERCENTAGE OF TEACHERS RECOGNIZED AS PG/PH.D RESEARCH GUIDES BY THE RESPECTIVE UNIVERSITY
                               </td>
                               <td className="border border-gray-300 px-4 py-3">
-                                <a href="#" className="text-[#1B5E20] font-bold hover:underline">
+                                <a href="/pdf/naac/3.1.1-recreate.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">
                                   VIEW
                                 </a>
                               </td>
@@ -3265,7 +3265,7 @@ export default function NAAC() {
                                 AVERAGE PERCENTAGE OF TEACHERS AWARDED NATIONAL /INTERNATIONAL FELLOWSHIPS / FINANCIAL SUPPORT FOR ADVANCED STUDIES/COLLABORATIVE RESEARCH AND PARTICIPATION IN CONFERENCES DURING THE LAST FIVE YEARS
                               </td>
                               <td className="border border-gray-300 px-4 py-3">
-                                <a href="#" className="text-[#1B5E20] font-bold hover:underline">
+                                <a href="/pdf/naac/3.1.1-recreate.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">
                                   VIEW
                                 </a>
                               </td>
@@ -3278,7 +3278,7 @@ export default function NAAC() {
                                 NUMBER OF RESEARCH PROJECTS/CLINICAL TRIALS FUNDED BY GOVERNMENT, INDUSTRIES AND NON-GOVERNMENTAL AGENCIES DURING THE LAST FIVE YEARS
                               </td>
                               <td className="border border-gray-300 px-4 py-3">
-                                <a href="#" className="text-[#1B5E20] font-bold hover:underline">
+                                <a href="/pdf/naac/3.1.3.1_C-and-R-SHEET.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">
                                   VIEW
                                 </a>
                               </td>
@@ -3317,7 +3317,7 @@ export default function NAAC() {
                                 NUMBER OF WORKSHOPS/SEMINARS CONDUCTED ON INTELLECTUAL PROPERTY RIGHTS (IPR) RESEARCH METHODOLOGY, GOOD CLINICAL, LABORATORY, PHARMACY AND COLLECTION PRACTICES, WRITING FOR RESEARCH GRANTS AND INDUSTRY-ACADEMIA COLLABORATIONS DURING THE LAST FIVE YEARS
                               </td>
                               <td className="border border-gray-300 px-4 py-3">
-                                <a href="#" className="text-[#1B5E20] font-bold hover:underline">
+                                <a href="/pdf/naac/3.2.2-C-and-R-SHEET.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">
                                   VIEW
                                 </a>
                               </td>
@@ -3356,7 +3356,7 @@ export default function NAAC() {
                                 THE INSTITUTION ENSURES IMPLEMENTATION OF ITS STATED CODE OF ETHICS FOR RESEARCH.
                               </td>
                               <td className="border border-gray-300 px-4 py-3">
-                                <a href="#" className="text-[#1B5E20] font-bold hover:underline">
+                                <a href="/pdf/naac/3.3.1_C-and-R-SHEET.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">
                                   VIEW
                                 </a>
                               </td>
@@ -3369,7 +3369,7 @@ export default function NAAC() {
                                 AVERAGE NUMBER OF PH.D/DM/M CH/PG DEGREE IN THE RESPECTIVE DISCIPLINES RECEIVED PER RECOGNIZED PG TEACHERS* OF THE INSTITUTION DURING THE LAST FIVE YEARS
                               </td>
                               <td className="border border-gray-300 px-4 py-3">
-                                <a href="#" className="text-[#1B5E20] font-bold hover:underline">
+                                <a href="/pdf/naac/3.3.2_C-and-R-SHEET.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">
                                   VIEW
                                 </a>
                               </td>
@@ -3382,7 +3382,7 @@ export default function NAAC() {
                                 AVERAGE NUMBER OF PAPERS PUBLISHED PER TEACHER IN THE JOURNALS NOTIFIED ON UGC -CARE LIST IN THE UGC WEBSITE/SCOPUS/WEB OF SCIENCE/PUBMED DURING THE LAST FIVE YEARS
                               </td>
                               <td className="border border-gray-300 px-4 py-3">
-                                <a href="#" className="text-[#1B5E20] font-bold hover:underline">
+                                <a href="/pdf/naac/3.3.3_research-for-upload.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">
                                   VIEW
                                 </a>
                               </td>
@@ -3395,7 +3395,7 @@ export default function NAAC() {
                                 NUMBER OF BOOKS AND CHAPTERS IN EDITED VOLUMES/BOOKS PUBLISHED AND PAPERS PUBLISHED IN NATIONAL/INTERNATIONAL CONFERENCE PROCEEDINGS INDEXED IN UGC-CARE LIST ON THE UGC WEBSITE/SCOPUS/WEB OF SCIENCE/PUBMED/ DURING THE LAST FIVE YEARS
                               </td>
                               <td className="border border-gray-300 px-4 py-3">
-                                <a href="#" className="text-[#1B5E20] font-bold hover:underline">
+                                <a href="/pdf/naac/3.3.3_research-for-upload.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">
                                   VIEW
                                 </a>
                               </td>
@@ -3434,7 +3434,7 @@ export default function NAAC() {
                                 TOTAL NUMBER OF EXTENSION AND OUTREACH ACTIVITIES CARRIED OUT IN COLLABORATION WITH NATIONAL AND INTERNATIONAL AGENCIES, INDUSTRY, THE COMMUNITY, GOVERNMENT AND NON-GOVERNMENT ORGANIZED BODIES THROUGH NSS/NCC DURING THE LAST FIVE YEARS.
                               </td>
                               <td className="border border-gray-300 px-4 py-3">
-                                <a href="#" className="text-[#1B5E20] font-bold hover:underline">
+                                <a href="/pdf/naac/3.5.2_C-and-R-SHEET.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">
                                   VIEW
                                 </a>
                               </td>
@@ -3447,7 +3447,7 @@ export default function NAAC() {
                                 AVERAGE PERCENTAGE OF STUDENTS PARTICIPATING IN EXTENSION AND OUTREACH ACTIVITIES DURING THE LAST 5 YEARS
                               </td>
                               <td className="border border-gray-300 px-4 py-3">
-                                <a href="#" className="text-[#1B5E20] font-bold hover:underline">
+                                <a href="/pdf/naac/3.5.2_C-and-R-SHEET.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">
                                   VIEW
                                 </a>
                               </td>
@@ -3486,7 +3486,7 @@ export default function NAAC() {
                                 AVERAGE NUMBER OF COLLABORATIVE ACTIVITIES FOR RESEARCH, FACULTY EXCHANGE, STUDENT EXCHANGE/ INDUSTRY-INTERNSHIP ETC. PER YEAR FOR THE LAST FIVE YEARS
                               </td>
                               <td className="border border-gray-300 px-4 py-3">
-                                <a href="#" className="text-[#1B5E20] font-bold hover:underline">
+                                <a href="/pdf/naac/3.5.2_C-and-R-SHEET.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">
                                   VIEW
                                 </a>
                               </td>
@@ -3499,7 +3499,7 @@ export default function NAAC() {
                                 TOTAL NUMBER OF FUNCTIONAL MOUS WITH INSTITUTIONS/ INDUSTRIES IN INDIA AND ABROAD FOR ACADEMIC, CLINICAL TRAINING / INTERNSHIP, ON-THE JOB TRAINING, PROJECT WORK, STUDENT / FACULTY EXCHANGE, COLLABORATIVE RESEARCH PROGRAMMES ETC. YEAR-WISE DURING THE LAST FIVE YEARS
                               </td>
                               <td className="border border-gray-300 px-4 py-3">
-                                <a href="#" className="text-[#1B5E20] font-bold hover:underline">
+                                <a href="/pdf/naac/3.5.2_C-and-R-SHEET.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">
                                   VIEW
                                 </a>
                               </td>
@@ -3545,7 +3545,7 @@ export default function NAAC() {
                                 AVERAGE PERCENTAGE OF EXPENDITURE INCURRED, EXCLUDING SALARY, FOR INFRASTRUCTURE DEVELOPMENT AND AUGMENTATION DURING THE LAST FIVE YEARS.
                               </td>
                               <td className="border border-gray-300 px-4 py-3">
-                                <a href="#" className="text-[#1B5E20] font-bold hover:underline">
+                                <a href="/pdf/naac/4.1.4_Cand-R_Sheet.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">
                                   VIEW
                                 </a>
                               </td>
@@ -3584,7 +3584,7 @@ export default function NAAC() {
                                 AVERAGE NUMBER OF PATIENTS PER YEAR TREATED AS OUTPATIENTS AND INPATIENTS IN THE TEACHING HOSPITAL FOR THE LAST FIVE YEARS.
                               </td>
                               <td className="border border-gray-300 px-4 py-3">
-                                <a href="#" className="text-[#1B5E20] font-bold hover:underline">
+                                <a href="/pdf/naac/4.2.2_Cand-R_-Sheet.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">
                                   VIEW
                                 </a>
                               </td>
@@ -3597,7 +3597,7 @@ export default function NAAC() {
                                 AVERAGE NUMBER OF STUDENTS PER YEAR EXPOSED TO LEARNING RESOURCE SUCH AS LABORATORIES, ANIMAL HOUSE & HERBAL GARDEN (IN HOUSE OR HIRED) DURING THE LAST FIVE YEARS.
                               </td>
                               <td className="border border-gray-300 px-4 py-3">
-                                <a href="#" className="text-[#1B5E20] font-bold hover:underline">
+                                <a href="/pdf/naac/4.2.3_Cand-R_Sheet.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">
                                   VIEW
                                 </a>
                               </td>
@@ -3610,7 +3610,7 @@ export default function NAAC() {
                                 AVAILABILITY OF INFRASTRUCTURE FOR COMMUNITY-BASED LEARNING.
                               </td>
                               <td className="border border-gray-300 px-4 py-3">
-                                <a href="#" className="text-[#1B5E20] font-bold hover:underline">
+                                <a href="/pdf/naac/4.2.4_C-and-R_Sheet.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">
                                   VIEW
                                 </a>
                               </td>
@@ -3649,7 +3649,7 @@ export default function NAAC() {
                                 DOES THE INSTITUTION HAVE AN E-LIBRARY WITH MEMBERSHIP / REGISTRATION FOR VARIOUS RESOURCES?
                               </td>
                               <td className="border border-gray-300 px-4 py-3">
-                                <a href="#" className="text-[#1B5E20] font-bold hover:underline">
+                                <a href="/pdf/naac/4.3.3_C-and-R_sheet.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">
                                   VIEW
                                 </a>
                               </td>
@@ -3662,7 +3662,7 @@ export default function NAAC() {
                                 AVERAGE ANNUAL EXPENDITURE FOR THE PURCHASE OF BOOKS AND JOURNALS INCLUDING E-JOURNALS DURING THE LAST FIVE YEARS.
                               </td>
                               <td className="border border-gray-300 px-4 py-3">
-                                <a href="#" className="text-[#1B5E20] font-bold hover:underline">
+                                <a href="/pdf/naac/4.3.4_Cand-R_sheet.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">
                                   VIEW
                                 </a>
                               </td>
@@ -3675,7 +3675,7 @@ export default function NAAC() {
                                 E-CONTENT RESOURCES USED BY TEACHERS.
                               </td>
                               <td className="border border-gray-300 px-4 py-3">
-                                <a href="#" className="text-[#1B5E20] font-bold hover:underline">
+                                <a href="/pdf/naac/4.3.6_C-and-R_Sheet.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">
                                   VIEW
                                 </a>
                               </td>
@@ -3714,7 +3714,7 @@ export default function NAAC() {
                                 PERCENTAGE OF CLASSROOMS, SEMINAR HALLS AND DEMONSTRATION ROOMS LINKED WITH INTERNET /WI-FI-ENABLED ICT FACILITIES (DATA FOR THE PRECEDING ACADEMIC YEAR).
                               </td>
                               <td className="border border-gray-300 px-4 py-3">
-                                <a href="#" className="text-[#1B5E20] font-bold hover:underline">
+                                <a href="/pdf/naac/4.4.1_Cand-R_sheet.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">
                                   VIEW
                                 </a>
                               </td>
@@ -3727,7 +3727,7 @@ export default function NAAC() {
                                 AVAILABLE BANDWIDTH OF INTERNET CONNECTION IN THE INSTITUTION (LEASED LINE).
                               </td>
                               <td className="border border-gray-300 px-4 py-3">
-                                <a href="#" className="text-[#1B5E20] font-bold hover:underline">
+                                <a href="/pdf/naac/4.4.3_Cand-R_sheet.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">
                                   VIEW
                                 </a>
                               </td>
@@ -3766,7 +3766,7 @@ export default function NAAC() {
                                 AVERAGE EXPENDITURE INCURRED ON MAINTENANCE OF PHYSICAL FACILITIES AND ACADEMIC SUPPORT FACILITIES.
                               </td>
                               <td className="border border-gray-300 px-4 py-3">
-                                <a href="#" className="text-[#1B5E20] font-bold hover:underline">
+                                <a href="/pdf/naac/4.5.1_Cand-R_sheet.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">
                                   VIEW
                                 </a>
                               </td>
@@ -3812,7 +3812,7 @@ export default function NAAC() {
                                 AVERAGE PERCENTAGE OF STUDENTS BENEFITED BY SCHOLARSHIPS / FREESHIPS / FEE-WAIVERS BY GOVERNMENT / NON-GOVERNMENTAL AGENCIES / INSTITUTION DURING THE LAST FIVE YEARS.
                               </td>
                               <td className="border border-gray-300 px-4 py-3">
-                                <a href="#" className="text-[#1B5E20] font-bold hover:underline">
+                                <a href="/pdf/naac/5.1.1_C-and-R-SHEET.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">
                                   VIEW
                                 </a>
                               </td>
@@ -3832,7 +3832,7 @@ export default function NAAC() {
                                 <span className="inline-block mr-2">■</span> EMPLOYABILITY SKILL DEVELOPMENT
                               </td>
                               <td className="border border-gray-300 px-4 py-3">
-                                <a href="#" className="text-[#1B5E20] font-bold hover:underline">
+                                <a href="/pdf/naac/5.1.2_C-and-R-SHEET.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">
                                   VIEW
                                 </a>
                               </td>
@@ -3845,7 +3845,7 @@ export default function NAAC() {
                                 AVERAGE PERCENTAGE OF STUDENTS PROVIDED TRAINING AND GUIDANCE FOR COMPETITIVE EXAMINATIONS AND CAREER COUNSELING OFFERED BY THE INSTITUTION DURING THE LAST FIVE YEARS.
                               </td>
                               <td className="border border-gray-300 px-4 py-3">
-                                <a href="#" className="text-[#1B5E20] font-bold hover:underline">
+                                <a href="/pdf/naac/5.1.3_C-and-R-SHEET.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">
                                   VIEW
                                 </a>
                               </td>
@@ -3858,7 +3858,7 @@ export default function NAAC() {
                                 THE INSTITUTION HAS A TRANSPARENT MECHANISM FOR TIMELY REDRESSAL OF STUDENT GRIEVANCES / PREVENTION OF SEXUAL HARASSMENT / PREVENTION OF RAGGING.
                               </td>
                               <td className="border border-gray-300 px-4 py-3">
-                                <a href="#" className="text-[#1B5E20] font-bold hover:underline">
+                                <a href="/pdf/naac/5.1.5_C-and-R-SHEET.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">
                                   VIEW
                                 </a>
                               </td>
@@ -3897,7 +3897,7 @@ export default function NAAC() {
                                 AVERAGE PERCENTAGE OF STUDENTS QUALIFYING IN STATE/ NATIONAL/ INTERNATIONAL LEVEL EXAMINATIONS (E.G. GATE/GMAT/GPAT/CAT/NEET/GRE/TOEFL/PLAB/USMLE/AYUSH/CIVIL SERVICES/DEFENCE/UPSC/STATE GOVERNMENT EXAMINATIONS/AIIMSPGET, JIPMER ENTRANCE TEST, PGIMER ENTRANCE TEST, ETC.) DURING THE LAST FIVE YEARS.
                               </td>
                               <td className="border border-gray-300 px-4 py-3">
-                                <a href="#" className="text-[#1B5E20] font-bold hover:underline">
+                                <a href="/pdf/naac/5.2.1_C-and-R-SHEET.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">
                                   VIEW
                                 </a>
                               </td>
@@ -3910,7 +3910,7 @@ export default function NAAC() {
                                 AVERAGE PERCENTAGE OF PLACEMENT / SELF-EMPLOYMENT (IN RELEVANT FIELD) IN PROFESSIONAL SERVICES OF OUTGOING STUDENTS DURING THE LAST FIVE YEARS.
                               </td>
                               <td className="border border-gray-300 px-4 py-3">
-                                <a href="#" className="text-[#1B5E20] font-bold hover:underline">
+                                <a href="/pdf/naac/5.2.2_C-and-R-SHEET.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">
                                   VIEW
                                 </a>
                               </td>
@@ -3923,7 +3923,7 @@ export default function NAAC() {
                                 PERCENTAGE OF THE BATCH OF GRADUATED STUDENTS OF THE PRECEDING YEAR, WHO HAVE PROGRESSED TO HIGHER EDUCATION.
                               </td>
                               <td className="border border-gray-300 px-4 py-3">
-                                <a href="#" className="text-[#1B5E20] font-bold hover:underline">
+                                <a href="/pdf/naac/5.2.3_C-and-R-SHEET.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">
                                   VIEW
                                 </a>
                               </td>
@@ -3962,7 +3962,7 @@ export default function NAAC() {
                                 NUMBER OF AWARDS/MEDALS FOR OUTSTANDING PERFORMANCE IN SPORTS/CULTURAL ACTIVITIES AT STATE/REGIONAL (ZONAL)/NATIONAL/INTERNATIONAL LEVELS (AWARD FOR A TEAM EVENT SHOULD BE COUNTED AS ONE) DURING THE LAST FIVE YEARS.
                               </td>
                               <td className="border border-gray-300 px-4 py-3">
-                                <a href="#" className="text-[#1B5E20] font-bold hover:underline">
+                                <a href="/pdf/naac/5.3.1_C-and-R-SHEET.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">
                                   VIEW
                                 </a>
                               </td>
@@ -3975,7 +3975,7 @@ export default function NAAC() {
                                 AVERAGE NUMBER OF SPORTS AND CULTURAL ACTIVITIES/COMPETITIONS ORGANIZED BY THE INSTITUTION DURING THE LAST FIVE YEARS.
                               </td>
                               <td className="border border-gray-300 px-4 py-3">
-                                <a href="#" className="text-[#1B5E20] font-bold hover:underline">
+                                <a href="/pdf/naac/5.3.3_C-and-R-SHEET.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">
                                   VIEW
                                 </a>
                               </td>
@@ -4014,7 +4014,7 @@ export default function NAAC() {
                                 PROVIDE THE AREAS OF CONTRIBUTION BY THE ALUMNI ASSOCIATION / CHAPTERS DURING THE LAST FIVE YEARS.
                               </td>
                               <td className="border border-gray-300 px-4 py-3">
-                                <a href="#" className="text-[#1B5E20] font-bold hover:underline">
+                                <a href="/pdf/naac/5.4.2_C-and-R-SHEET.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">
                                   VIEW
                                 </a>
                               </td>
@@ -4060,7 +4060,7 @@ export default function NAAC() {
                                 IMPLEMENTATION OF E-GOVERNANCE
                               </td>
                               <td className="border border-gray-300 px-4 py-3">
-                                <a href="#" className="text-[#1B5E20] font-bold hover:underline">
+                                <a href="/pdf/naac/6.2.2_C-and-R-SHEET.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">
                                   VIEW
                                 </a>
                               </td>
@@ -4099,7 +4099,7 @@ export default function NAAC() {
                                 AVERAGE PERCENTAGE OF TEACHERS PROVIDED WITH FINANCIAL SUPPORT TO ATTEND CONFERENCES/WORKSHOPS AND TOWARDS THE MEMBERSHIP FEE OF PROFESSIONAL BODIES DURING THE LAST FIVE YEARS.
                               </td>
                               <td className="border border-gray-300 px-4 py-3">
-                                <a href="#" className="text-[#1B5E20] font-bold hover:underline">
+                                <a href="/pdf/naac/6.3.2_C_and_R_sheet.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">
                                   VIEW
                                 </a>
                               </td>
@@ -4112,7 +4112,7 @@ export default function NAAC() {
                                 AVERAGE NUMBER OF PROFESSIONAL DEVELOPMENT/ADMINISTRATIVE TRAINING PROGRAMS ORGANIZED BY THE INSTITUTION FOR TEACHING AND NON-TEACHING/TECHNICAL STAFF DURING THE LAST FIVE YEARS.
                               </td>
                               <td className="border border-gray-300 px-4 py-3">
-                                <a href="#" className="text-[#1B5E20] font-bold hover:underline">
+                                <a href="/pdf/naac/6.3.3._C_and_R_sheet.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">
                                   VIEW
                                 </a>
                               </td>
@@ -4125,7 +4125,7 @@ export default function NAAC() {
                                 AVERAGE PERCENTAGE OF TEACHERS UNDERGOING FACULTY DEVELOPMENT PROGRAMS (FDP) INCLUDING ONLINE PROGRAMS DURING THE LAST FIVE YEARS (ORIENTATION/INDUCTION PROGRAMS, REFRESHER COURSE, SHORT TERM COURSE, ETC.).
                               </td>
                               <td className="border border-gray-300 px-4 py-3">
-                                <a href="#" className="text-[#1B5E20] font-bold hover:underline">
+                                <a href="/pdf/naac/6.3.4_C_and_R_sheet.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">
                                   VIEW
                                 </a>
                               </td>
@@ -4164,7 +4164,7 @@ export default function NAAC() {
                                 FUNDS/GRANTS RECEIVED FROM GOVERNMENT/NON-GOVERNMENT BODIES, INDIVIDUALS, PHILANTHROPISTS (INR IN LAKHS) DURING THE LAST FIVE YEARS (NOT COVERED IN CRITERION III).
                               </td>
                               <td className="border border-gray-300 px-4 py-3">
-                                <a href="#" className="text-[#1B5E20] font-bold hover:underline">
+                                <a href="/pdf/naac/6.4.3.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">
                                   VIEW
                                 </a>
                               </td>
@@ -4203,7 +4203,7 @@ export default function NAAC() {
                                 AVERAGE PERCENTAGE OF TEACHERS ATTENDING PROGRAMS/WORKSHOPS/SEMINARS SPECIFIC TO QUALITY IMPROVEMENT IN THE LAST 5 YEARS.
                               </td>
                               <td className="border border-gray-300 px-4 py-3">
-                                <a href="#" className="text-[#1B5E20] font-bold hover:underline">
+                                <a href="/pdf/naac/6.5.2_C-and-R-SHEET.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">
                                   VIEW
                                 </a>
                               </td>
@@ -4216,7 +4216,7 @@ export default function NAAC() {
                                 THE INSTITUTION ADOPTS SEVERAL QUALITY ASSURANCE INITIATIVES.
                               </td>
                               <td className="border border-gray-300 px-4 py-3">
-                                <a href="#" className="text-[#1B5E20] font-bold hover:underline">
+                                <a href="/pdf/naac/6.5.3_C-and-R-SHEET.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">
                                   VIEW
                                 </a>
                               </td>
@@ -4262,7 +4262,7 @@ export default function NAAC() {
                                 TOTAL NUMBER OF GENDER EQUITY SENSITIZATION PROGRAMMES ORGANIZED BY THE INSTITUTION DURING THE LAST FIVE YEARS.
                               </td>
                               <td className="border border-gray-300 px-4 py-3">
-                                <a href="#" className="text-[#1B5E20] font-bold hover:underline">
+                                <a href="/pdf/naac/7.1.1_Cand-R_sheet.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">
                                   VIEW
                                 </a>
                               </td>
@@ -4275,7 +4275,7 @@ export default function NAAC() {
                                 THE INSTITUTION HAS FACILITIES FOR ALTERNATE SOURCES OF ENERGY AND ENERGY CONSERVATION DEVICES.
                               </td>
                               <td className="border border-gray-300 px-4 py-3">
-                                <a href="#" className="text-[#1B5E20] font-bold hover:underline">
+                                <a href="/pdf/naac/7.1.3-_C-and-R_-sheet.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">
                                   VIEW
                                 </a>
                               </td>
@@ -4288,7 +4288,7 @@ export default function NAAC() {
                                 WATER CONSERVATION FACILITIES AVAILABLE IN THE INSTITUTION:
                               </td>
                               <td className="border border-gray-300 px-4 py-3">
-                                <a href="#" className="text-[#1B5E20] font-bold hover:underline">
+                                <a href="/pdf/naac/7.1.5-C-and-R-sheet.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">
                                   VIEW
                                 </a>
                               </td>
@@ -4301,7 +4301,7 @@ export default function NAAC() {
                                 GREEN CAMPUS INITIATIVES OF THE INSTITUTION
                               </td>
                               <td className="border border-gray-300 px-4 py-3">
-                                <a href="#" className="text-[#1B5E20] font-bold hover:underline">
+                                <a href="/pdf/naac/7.1.6-C-and-R-sheet.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">
                                   VIEW
                                 </a>
                               </td>
@@ -4314,7 +4314,7 @@ export default function NAAC() {
                                 THE INSTITUTION HAS DIVYANGJAN FRIENDLY, BARRIER-FREE ENVIRONMENT IN THE CAMPUS
                               </td>
                               <td className="border border-gray-300 px-4 py-3">
-                                <a href="#" className="text-[#1B5E20] font-bold hover:underline">
+                                <a href="/pdf/naac/7.1.7_Cand-R_sheet.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">
                                   VIEW
                                 </a>
                               </td>
@@ -4327,7 +4327,7 @@ export default function NAAC() {
                                 CODE OF CONDUCT HANDBOOK EXISTS FOR STUDENTS, TEACHERS AND ACADEMIC AND ADMINISTRATIVE STAFF INCLUDING THE DEAN / PRINCIPAL /OFFICIALS AND SUPPORT STAFF..
                               </td>
                               <td className="border border-gray-300 px-4 py-3">
-                                <a href="#" className="text-[#1B5E20] font-bold hover:underline">
+                                <a href="/pdf/naac/7.1.9_Cand-R_sheet.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">
                                   VIEW
                                 </a>
                               </td>
@@ -4367,7 +4367,7 @@ export default function NAAC() {
                               NEET PERCENTILE SCORES OF STUDENTS ENROLLED FOR THE BDS PROGRAMME FOR THEPRECEDING ACADEMIC YEAR.
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">
+                              <a href="/pdf/naac/8.1.1-recreate.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">
                                 VIEW
                               </a>
                             </td>
@@ -4380,7 +4380,7 @@ export default function NAAC() {
                               INSTITUTION FOLLOWS INFECTION CONTROL PROTOCOLS DURING CLINICAL TEACHING DURING PRECEDING ACADEMIC YEAR
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">
+                              <a href="/pdf/naac/8.1.3-recreate.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">
                                 VIEW
                               </a>
                             </td>
@@ -4393,7 +4393,7 @@ export default function NAAC() {
                               THE STUDENTS ARE TRAINED FOR USING HIGH END EQUIPMENT FORDIAGNOSTIC AND THERAPEUTIC PURPOSES IN THE INSTITUTION. DATA FOR THEPRECEDING ACADEMIC YEAR
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">
+                              <a href="/pdf/naac/8.1.5-recreate.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">
                                 VIEW
                               </a>
                             </td>
@@ -4406,7 +4406,7 @@ export default function NAAC() {
                               THE INSTITUTION PROVIDES STUDENT TRAINING IN SPECIALIZED CLINICS AND FACILITIES FOR CARE AND TREATMENT.
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">
+                              <a href="/pdf/naac/8.1.6-recreate.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">
                                 VIEW
                               </a>
                             </td>
@@ -4419,7 +4419,7 @@ export default function NAAC() {
                               NUMBER OF FULL-TIME TEACHERS WHO HAVE ACQUIRED ADDITIONAL POSTGRADUATEDEGREES/DIPLOMAS/FELLOWSHIPS BEYOND THE ELIGIBILITY REQUIREMENTS FROM RECOGNIZED CENTERS/UNIVERSITIES IN INDIA OR ABROAD. (EG: AB, FRCS, MRCP, FAMS, FAIMER & IFME, FELLOWSHIPS, PH D IN DENTAL EDUCATION ETC.) DURING THE YEAR
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">
+                              <a href="/pdf/naac/8.1.7-recreate.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">
                                 VIEW
                               </a>
                             </td>
@@ -4432,7 +4432,7 @@ export default function NAAC() {
                               NUMBER OF FIRST YEAR STUDENTS, PROVIDED WITH PROPHYLACTIC IMMUNIZATION AGAINSTCOMMUNICABLE DISEASES LIKE HEPATITIS-B DURING THEIR CLINICAL WORK DURING THE YEAR.
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">
+                              <a href="/pdf/naac/8.1.9-recreate.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">
                                 VIEW
                               </a>
                             </td>
@@ -4445,7 +4445,7 @@ export default function NAAC() {
                               PER CAPITA EXPENDITURE ON DENTAL MATERIALS AND OTHER CONSUMABLES USED FOR STUDENT TRAINING DURING THE YEAR.
                             </td>
                             <td className="border border-gray-300 px-4 py-3">
-                              <a href="#" className="text-[#1B5E20] font-bold hover:underline">
+                              <a href="/pdf/naac/8.1.11-recreate.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1B5E20] font-bold hover:underline">
                                 VIEW
                               </a>
                             </td>
