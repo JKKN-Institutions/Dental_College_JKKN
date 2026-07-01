@@ -38,17 +38,17 @@ export default function OurInstitutionsClient() {
           <div className="space-y-6">
             {/* Paragraph 1 */}
             <p className="text-lg text-gray-700 leading-relaxed text-justify">
-              At JKKN Institutions, our core teaching objective is to empower students with technical knowledge and essential skills to meet the growing challenges of today's competitive world. We implement cutting-edge teaching <span className="font-semibold">practice, laying a robust foundation for holistic education.</span>
+              At JKKN Institutions, our core teaching objective is to empower learners with technical knowledge and essential skills to meet the growing challenges of today's competitive world. We implement cutting-edge teaching <span className="font-semibold">practice, laying a robust foundation for holistic education.</span>
             </p>
 
             {/* Paragraph 2 */}
             <p className="text-lg text-gray-700 leading-relaxed text-justify">
-              Our state-of-the-art campus features meticulously designed academic blocks, advanced laboratory facilities, operation centres, knowledge-rich libraries, and comprehensive sports infrastructure. We also provide separate accommodations for boys and girls, as well as general and dental hospitals for healthcare services and practices. Our proactive Placement Cell ensures <span className="font-semibold">successful placement opportunities for all our students.</span>
+              Our state-of-the-art campus features meticulously designed academic blocks, advanced learning lab facilities, operation centres, knowledge-rich learning commons, and comprehensive sports infrastructure. We also provide separate accommodations for boys and girls, as well as general and dental hospitals for healthcare services and practices. Our proactive Placement Cell ensures <span className="font-semibold">successful placement opportunities for all our learners.</span>
             </p>
 
             {/* Paragraph 3 */}
             <p className="text-lg text-gray-700 leading-relaxed text-justify">
-              With contemporary facilities designed for the continuous enhancement of both students and faculty, we maintain tie-ups with leading manufacturing and commercial enterprises. These connections facilitate valuable industrial and corporate exposure, aligning our educational experiences with real-world applications.
+              With contemporary facilities designed for the continuous enhancement of both learners and senior learners, we maintain tie-ups with leading manufacturing and commercial enterprises. These connections facilitate valuable industrial and corporate exposure, aligning our educational experiences with real-world applications.
             </p>
 
             {/* Paragraph 4 */}

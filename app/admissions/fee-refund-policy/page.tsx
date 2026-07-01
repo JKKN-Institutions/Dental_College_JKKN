@@ -42,7 +42,7 @@ const partialRefundRows = [
 ];
 
 const applicabilityPoints = [
-  'This policy is applicable to all students enrolling in our programs.',
+  'This policy is applicable to all learners enrolling in our programs.',
   'The refund will be processed within a reasonable timeframe after the withdrawal request is approved.',
   'Admission cancellation must be officially communicated in writing or via email to the Admissions Office.',
 ];
@@ -75,7 +75,7 @@ export default function FeeRefundPolicy() {
           <div className="bg-white/10 rounded-2xl p-6 max-w-3xl">
             <p className="text-sm font-bold text-[#7cb983] uppercase tracking-wide mb-2">Introduction</p>
             <p className="hero-description text-white/85 text-base leading-relaxed">
-              At JKKN Dental College &amp; Hospital, we are committed to upholding transparency and fairness in financial transactions. In accordance with the University Grants Commission (UGC) Fee Refund Policy, we have established a structured refund policy to ensure a smooth process for students who wish to withdraw their admission.
+              At JKKN Dental College &amp; Hospital, we are committed to upholding transparency and fairness in financial transactions. In accordance with the University Grants Commission (UGC) Fee Refund Policy, we have established a structured refund policy to ensure a smooth process for learners who wish to withdraw their admission.
             </p>
           </div>
         </div>
@@ -99,7 +99,7 @@ export default function FeeRefundPolicy() {
             </div>
             <div className="px-6 py-5">
               <p className="text-gray-700 leading-relaxed text-sm md:text-base">
-                Students who withdraw their admission on or before September 30, 2025, will receive a 100% refund, with a maximum deduction of ₹1,000 as a processing fee.
+                Learners who withdraw their admission on or before September 30, 2025, will receive a 100% refund, with a maximum deduction of ₹1,000 as a processing fee.
               </p>
             </div>
           </div>
@@ -167,7 +167,7 @@ export default function FeeRefundPolicy() {
               Grievance Redressal
             </h3>
             <p className="text-gray-700 leading-relaxed text-sm md:text-base mb-4">
-              Students facing any issues related to the fee refund process may reach out to our Grievance Redressal Committee in accordance with UGC Redressal of Grievances of Students Regulations, 2023.
+              Learners facing any issues related to the fee refund process may reach out to our Grievance Redressal Committee in accordance with UGC Redressal of Grievances of Students Regulations, 2023.
             </p>
             <p className="text-gray-700 leading-relaxed text-sm md:text-base mb-5">
               For any inquiries or to initiate a refund request, please contact:
@@ -184,7 +184,7 @@ export default function FeeRefundPolicy() {
             </div>
 
             <p className="text-gray-700 leading-relaxed text-sm md:text-base">
-              JKKN Dental College &amp; Hospital remains committed to ensuring a fair and transparent admission and refund process for all students.
+              JKKN Dental College &amp; Hospital remains committed to ensuring a fair and transparent admission and refund process for all learners.
             </p>
           </div>
 

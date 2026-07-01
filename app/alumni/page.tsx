@@ -85,15 +85,15 @@ export default function Alumni() {
             <ul className="space-y-2 text-base text-black">
               <li className="flex items-start">
                 <span className="mr-2">●</span>
-                <span>To promote a goodwill and sense of pride to both alumni and students.</span>
+                <span>To promote a goodwill and sense of pride to both alumni and learners.</span>
               </li>
               <li className="flex items-start">
                 <span className="mr-2">●</span>
-                <span>To help and support alumnus develop and spread a philanthropic and entrepreneurial mindset among students.</span>
+                <span>To help and support alumnus develop and spread a philanthropic and entrepreneurial mindset among learners.</span>
               </li>
               <li className="flex items-start">
                 <span className="mr-2">●</span>
-                <span>To advise and conduct activities that shall motivate and upgrade student skill sets, in which both the alumni and the students are benefited.</span>
+                <span>To advise and conduct activities that shall motivate and upgrade learner skill sets, in which both the alumni and the learners are benefited.</span>
               </li>
             </ul>
           </div>
@@ -122,7 +122,7 @@ export default function Alumni() {
               </li>
               <li className="flex items-start">
                 <span className="mr-2">●</span>
-                <span>To mentor and channelize the efforts of the students seeking better opportunities to learn and grow.</span>
+                <span>To mentor and channelize the efforts of the learners seeking better opportunities to learn and grow.</span>
               </li>
               <li className="flex items-start">
                 <span className="mr-2">●</span>

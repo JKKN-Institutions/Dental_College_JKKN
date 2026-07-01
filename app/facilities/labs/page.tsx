@@ -70,8 +70,8 @@ const faqSchema = {
 const features = [
   {
     icon: Eye,
-    title: 'Anatomy, Histology, Radiology & Imaging Labs:',
-    description: 'From exploring the intricate details of oral structures to mastering dental imaging, these labs form the bedrock of clinical expertise. Learn diagnosis and planning through X-rays, 3D scans, and microscopic examinations.',
+    title: 'Anatomy, Histology, Radiology & Imaging Learning Labs:',
+    description: 'From exploring the intricate details of oral structures to mastering dental imaging, these learning labs form the bedrock of clinical expertise. Learn diagnosis and planning through X-rays, 3D scans, and microscopic examinations.',
   },
   {
     icon: Monitor,
@@ -80,12 +80,12 @@ const features = [
   },
   {
     icon: Smile,
-    title: 'Prosthodontics, Restorative, Orthodontics & Endodontics Labs:',
-    description: 'Specialized labs focusing on restorative practices, braces, and root canal therapies provide hands-on opportunities to develop proficiency in restoring smiles and correcting malocclusions.',
+    title: 'Prosthodontics, Restorative, Orthodontics & Endodontics Learning Labs:',
+    description: 'Specialized learning labs focusing on restorative practices, braces, and root canal therapies provide hands-on opportunities to develop proficiency in restoring smiles and correcting malocclusions.',
   },
   {
     icon: Scissors,
-    title: 'Periodontics & Oral Surgery Labs:',
+    title: 'Periodontics & Oral Surgery Learning Labs:',
     description: 'Venture into periodontal health management and minor surgical procedures. Develop confidence and precision in treatments that enhance oral hygiene and surgical excellence.',
   },
   {
@@ -100,8 +100,8 @@ const features = [
   },
   {
     icon: BookOpen,
-    title: 'Instructor-Guided Learning & Innovative Research:',
-    description: "Benefit from our faculty's mentorship and participate in groundbreaking research. Shape the future of dentistry by contributing to advancements in materials, techniques, and treatment modalities.",
+    title: 'Senior Learner-Guided Learning & Innovative Research:',
+    description: "Benefit from our senior learners' mentorship and participate in groundbreaking research. Shape the future of dentistry by contributing to advancements in materials, techniques, and treatment modalities.",
   },
 ];
 
@@ -175,7 +175,7 @@ export default function Labs() {
         <div className="max-w-6xl mx-auto">
           <h2 className="text-xl font-bold text-[#006837] mb-3">State-of-the-Art Facilities:</h2>
           <p className="text-base md:text-lg leading-relaxed text-gray-700 border-l-4 border-[#7cb983] pl-6">
-            <strong>Our world-class dental labs, equipped with cutting-edge technologies, foster a learning environment where innovation and hands-on skills development thrive.</strong>
+            <strong>Our world-class dental learning labs, equipped with cutting-edge technologies, foster a learning environment where innovation and hands-on skills development thrive.</strong>
           </p>
         </div>
       </section>
@@ -201,9 +201,9 @@ export default function Labs() {
       {/* Closing Statement */}
       <section className="bg-[#006837] py-12 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-xl font-bold text-white mb-4">Join Us at the Dental College Labs:</h2>
+          <h2 className="text-xl font-bold text-white mb-4">Join Us at the Dental College Learning Labs:</h2>
           <p className="text-white text-base md:text-lg leading-relaxed">
-            <strong>Blending theory with practice, our labs empower you to become a skilled and compassionate dental professional. Embrace the challenges and emerge as a proficient practitioner, poised to impact oral health positively.</strong>
+            <strong>Blending theory with practice, our learning labs empower you to become a skilled and compassionate dental professional. Embrace the challenges and emerge as a proficient practitioner, poised to impact oral health positively.</strong>
           </p>
         </div>
       </section>

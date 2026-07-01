@@ -71,7 +71,7 @@ const features = [
   {
     icon: BookOpen,
     title: 'Explore our Comprehensive Dental Collection:',
-    description: 'Boasting an extensive array of textbooks, journals, and research papers, our library serves as a treasure trove for dental knowledge. Dive into our collection to enrich your understanding of dental science.',
+    description: 'Boasting an extensive array of textbooks, journals, and research papers, our learning commons serves as a treasure trove for dental knowledge. Dive into our collection to enrich your understanding of dental science.',
   },
   {
     icon: GraduationCap,
@@ -105,7 +105,7 @@ const features = [
   },
   {
     icon: Star,
-    title: 'Library Membership Benefits:',
+    title: 'Learning Commons Membership Benefits:',
     description: 'Become a member to enjoy exclusive access to resources, borrowing privileges, and priority registration for workshops.',
   },
 ];
@@ -179,7 +179,7 @@ export default function Library() {
       <section className="bg-[#FBFBEE] py-10 px-4">
         <div className="max-w-6xl mx-auto">
           <p className="text-base md:text-lg leading-relaxed text-gray-700 border-l-4 border-[#7cb983] pl-6">
-            Dental College Library – Your Partner in Dental Excellence
+            Dental College Learning Commons – Your Partner in Dental Excellence
           </p>
         </div>
       </section>
@@ -206,7 +206,7 @@ export default function Library() {
       <section className="bg-[#006837] py-12 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-white text-base md:text-lg leading-relaxed">
-            <strong>At the Dental College Library, we are committed to your growth in dental excellence. Explore, learn, collaborate, and contribute to the future of dentistry with us.</strong>
+            <strong>At the Dental College Learning Commons, we are committed to your growth in dental excellence. Explore, learn, collaborate, and contribute to the future of dentistry with us.</strong>
           </p>
         </div>
       </section>

@@ -7,12 +7,12 @@ import { generateBreadcrumbSchema, generateWebPageSchema, generateSpeakableWebPa
 import { User } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Student Welfare Committee | JKKN Dental College',
-  description: 'Dedicated to student well-being, academic support, and overall welfare. View committee members committed to student success.',
-  keywords: 'student welfare committee, student wellbeing, academic support, student care, welfare programs, JKKN dental college, student services',
+  title: 'Learner Welfare Committee | JKKN Dental College',
+  description: 'Dedicated to learner well-being, academic support, and overall welfare. View committee members committed to learner success.',
+  keywords: 'learner welfare committee, learner wellbeing, academic support, learner care, welfare programs, JKKN dental college, learner services',
   openGraph: {
-    title: 'Student Welfare Committee | JKKN Dental College',
-    description: 'Dedicated to student well-being, academic support, and overall welfare. View committee members committed to student success.',
+    title: 'Learner Welfare Committee | JKKN Dental College',
+    description: 'Dedicated to learner well-being, academic support, and overall welfare. View committee members committed to learner success.',
     url: 'https://dental.jkkn.ac.in/committee/student-welfare-committee/',
     type: 'website',
     siteName: 'JKKN Dental College & Hospital',
@@ -22,14 +22,14 @@ export const metadata: Metadata = {
 export default function StudentWelfareCommittee() {
   const breadcrumbSchema = generateBreadcrumbSchema('/committee/student-welfare-committee');
   const webPageSchema = generateWebPageSchema({
-    title: 'Student Welfare Committee - JKKN Dental College',
-    description: 'Dedicated to student well-being, academic support, and overall welfare. View committee members committed to student success.',
+    title: 'Learner Welfare Committee - JKKN Dental College',
+    description: 'Dedicated to learner well-being, academic support, and overall welfare. View committee members committed to learner success.',
     url: 'https://dental.jkkn.ac.in/committee/student-welfare-committee/',
     dateModified: '2026-03-18',
   });
   const speakableSchema = generateSpeakableWebPageSchema({
-    title: 'Student Welfare Committee | JKKN Dental College',
-    description: 'Dedicated to student well-being, academic support, and overall welfare. View committee members committed to student success.',
+    title: 'Learner Welfare Committee | JKKN Dental College',
+    description: 'Dedicated to learner well-being, academic support, and overall welfare. View committee members committed to learner success.',
     url: 'https://dental.jkkn.ac.in/committee/student-welfare-committee/',
     speakableCssSelectors: ['h1', '.hero-description', 'article p'],
   });
@@ -55,7 +55,7 @@ export default function StudentWelfareCommittee() {
       <section className="bg-gradient-to-br from-[#006837] via-[#00572e] to-[#003d20] py-16 px-4">
         <div className="max-w-6xl mx-auto">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white">
-            STUDENT WELFARE COMMITTEE
+            LEARNER WELFARE COMMITTEE
           </h1>
         </div>
       </section>

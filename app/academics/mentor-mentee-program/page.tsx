@@ -130,7 +130,7 @@ export default function MentorMenteeProgram() {
                   Program Vision:
                 </h2>
                 <p className="text-base leading-relaxed text-gray-700 text-justify">
-                  Our vision for the Mentor-Mentee Program is to nurture a culture of mentorship and support that empowers students across diverse fields to achieve excellence in their respective domains. We firmly believe that mentorship is an integral part of the educational journey, facilitating both mentees&apos; growth and mentors&apos; professional development.
+                  Our vision for the Mentor-Mentee Program is to nurture a culture of mentorship and support that empowers learners across diverse fields to achieve excellence in their respective domains. We firmly believe that mentorship is an integral part of the educational journey, facilitating both mentees&apos; growth and mentors&apos; professional development.
                 </p>
               </div>
             </div>
@@ -144,7 +144,7 @@ export default function MentorMenteeProgram() {
                   Program Overview:
                 </h2>
                 <p className="text-base leading-relaxed text-gray-700 text-justify">
-                  The Mentor-Mentee Program at JKKN Educational Institution is designed to foster a supportive learning environment where experienced mentors guide and empower students (mentees) across various disciplines to excel academically and professionally. This program reflects our institution&apos;s commitment to providing holistic education and nurturing future leaders and professionals.
+                  The Mentor-Mentee Program at JKKN Educational Institution is designed to foster a supportive learning environment where experienced mentors guide and empower learners (mentees) across various disciplines to excel academically and professionally. This program reflects our institution&apos;s commitment to providing holistic education and nurturing future leaders and professionals.
                 </p>
               </div>
             </div>
@@ -160,22 +160,22 @@ export default function MentorMenteeProgram() {
                 <div className="space-y-4">
                   <div className="rounded-xl bg-[#FBFBEE] border-l-4 border-[#7cb983] p-4">
                     <p className="text-base text-gray-700 text-justify">
-                      • Cultivate a Sense of Belonging: Create an inclusive atmosphere where mentees feel an integral part of the JKKN educational community, enhancing faculty-student relationships.
+                      • Cultivate a Sense of Belonging: Create an inclusive atmosphere where mentees feel an integral part of the JKKN educational community, enhancing senior learner-learner relationships.
                     </p>
                   </div>
                   <div className="rounded-xl bg-[#FBFBEE] border-l-4 border-[#7cb983] p-4">
                     <p className="text-base text-gray-700 text-justify">
-                      • Enhance Discipline and Excellence: Conduct mentoring sessions to install discipline, punctuality, and commitment to academic and personal growth among students.
+                      • Enhance Discipline and Excellence: Conduct mentoring sessions to install discipline, punctuality, and commitment to academic and personal growth among learners.
                     </p>
                   </div>
                   <div className="rounded-xl bg-[#FBFBEE] border-l-4 border-[#7cb983] p-4">
                     <p className="text-base text-gray-700 text-justify">
-                      • Customized Learning: Tailor mentorship to students based on their academic performance and individual needs, fostering optimal learning outcomes.
+                      • Customized Learning: Tailor mentorship to learners based on their academic performance and individual needs, fostering optimal learning outcomes.
                     </p>
                   </div>
                   <div className="rounded-xl bg-[#FBFBEE] border-l-4 border-[#7cb983] p-4">
                     <p className="text-base text-gray-700 text-justify">
-                      • Personalized Growth: Identify and leverage the strengths and weaknesses of each student, assisting them in setting career goals and strategies for achievement.
+                      • Personalized Growth: Identify and leverage the strengths and weaknesses of each learner, assisting them in setting career goals and strategies for achievement.
                     </p>
                   </div>
                 </div>

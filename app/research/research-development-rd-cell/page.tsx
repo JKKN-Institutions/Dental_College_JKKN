@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 
 const objectives = [
   'Encourage Research & Innovation – Foster a research-driven academic environment by facilitating high-quality scientific studies.',
-  'Support Faculty & Student Research – Provide necessary guidance, funding assistance, and access to advanced research facilities.',
+  'Support Senior Learner & Learner Research – Provide necessary guidance, funding assistance, and access to advanced research facilities.',
   'Enhance Industry & Academic Collaborations – Strengthen partnerships with universities, research institutions, and healthcare industries.',
   'Promote Publications & Patents – Encourage the publication of research in reputed journals and the development of innovative patents.',
   'Facilitate Ethical Research Practices – Ensure research adheres to national and international ethical guidelines.',
@@ -78,7 +78,7 @@ export default function ResearchDevelopmentRDCell() {
             Fostering Innovation &amp; Excellence in Research
           </p>
           <p className="hero-description text-white/80 text-base leading-relaxed max-w-3xl">
-            At JKKN Dental College &amp; Hospital, research is the driving force behind academic excellence and scientific advancement. Our Research and Development (R&amp;D) Cell is committed to promoting a culture of innovation, interdisciplinary collaboration, and impactful research in dentistry, biomedical sciences, and healthcare. By supporting faculty and student-led research initiatives, the R&amp;D Cell plays a vital role in advancing knowledge, improving patient care, and contributing to global scientific progress.
+            At JKKN Dental College &amp; Hospital, research is the driving force behind academic excellence and scientific advancement. Our Research and Development (R&amp;D) Cell is committed to promoting a culture of innovation, interdisciplinary collaboration, and impactful research in dentistry, biomedical sciences, and healthcare. By supporting senior learner and learner-led research initiatives, the R&amp;D Cell plays a vital role in advancing knowledge, improving patient care, and contributing to global scientific progress.
           </p>
         </div>
       </section>

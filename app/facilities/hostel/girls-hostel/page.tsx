@@ -136,7 +136,7 @@ export default function GirlsHostel() {
       <section className="bg-[#FBFBEE] py-10 px-4">
         <div className="max-w-6xl mx-auto">
           <p className="text-base md:text-lg leading-relaxed text-gray-700 border-l-4 border-[#7cb983] pl-6">
-            <strong>Nestled within the vibrant JKKN campus, our Girls Hostel offers an inviting and secure environment that is meticulously designed to support the unique needs of our female students. Equipped with modern amenities, the hostel serves as a sanctuary where academic dreams and personal well-being flourish in harmony.</strong>
+            <strong>Nestled within the vibrant JKKN campus, our Girls Hostel offers an inviting and secure environment that is meticulously designed to support the unique needs of our female learners. Equipped with modern amenities, the hostel serves as a sanctuary where academic dreams and personal well-being flourish in harmony.</strong>
           </p>
         </div>
       </section>
@@ -152,7 +152,7 @@ export default function GirlsHostel() {
             </div>
             <h2 className="text-lg font-bold text-[#006837]">Location and Facilities:</h2>
             <div className="text-gray-600 text-sm leading-relaxed flex flex-col gap-2">
-              <p><strong>On-Campus Convenience:</strong> Located within the JKKN campus, the hostel ensures that students have immediate access to educational and recreational facilities.</p>
+              <p><strong>On-Campus Convenience:</strong> Located within the JKKN campus, the hostel ensures that learners have immediate access to educational and recreational facilities.</p>
               <p><strong>Choice and Comfort:</strong> Rooms come with essential furnishings—comfortable beds, study tables, and ample storage. Air-conditioned rooms are available upon request.</p>
               <p><strong>Self-Contained Living:</strong> Each room boasts an attached bathroom, providing a personal space that respects privacy.</p>
             </div>
@@ -189,7 +189,7 @@ export default function GirlsHostel() {
             <h2 className="text-lg font-bold text-[#006837]">Holistic Wellness:</h2>
             <div className="text-gray-600 text-sm leading-relaxed flex flex-col gap-2">
               <p><strong>Committed to promoting a balanced lifestyle, we offer a well-equipped gymnasium, yoga room, and sports complex within the hostel premises.</strong></p>
-              <p><strong>Step into our Girls Hostel and become part of a growing community of empowered female students who embody JKKN&apos;s values of academic rigor, personal growth, and mutual respect.</strong></p>
+              <p><strong>Step into our Girls Hostel and become part of a growing community of empowered female learners who embody JKKN&apos;s values of academic rigor, personal growth, and mutual respect.</strong></p>
             </div>
           </div>
 

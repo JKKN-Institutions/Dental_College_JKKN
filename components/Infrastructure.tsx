@@ -15,7 +15,7 @@ export default function Infrastructure() {
     },
     {
       icon: Laptop,
-      title: 'Simulation Labs',
+      title: 'Simulation Learning Labs',
       description: 'Pre-clinical training',
       bgColor: 'bg-blue-100'
     },
@@ -27,19 +27,19 @@ export default function Infrastructure() {
     },
     {
       icon: Cog,
-      title: 'CAD/CAM Lab',
+      title: 'CAD/CAM Learning Lab',
       description: 'Digital prosthetics',
       bgColor: 'bg-pink-100'
     },
     {
       icon: BookOpen,
-      title: 'Digital Library',
+      title: 'Digital Learning Commons',
       description: '10,000+ resources',
       bgColor: 'bg-green-100'
     },
     {
       icon: Microscope,
-      title: 'Research Labs',
+      title: 'Research Learning Labs',
       description: 'Dedicated research facilities',
       bgColor: 'bg-yellow-100'
     },

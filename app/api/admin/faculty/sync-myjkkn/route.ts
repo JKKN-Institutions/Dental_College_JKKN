@@ -181,8 +181,10 @@ export async function POST() {
     stats.eligible++;
 
     const name = buildName(s);
-    const email = preferredEmail(s)!;
-    matchedEmails.add(email.toLowerCase());
+    // Normalise to lowercase so stored emails are canonical and case-typos in
+    // manually-added rows can never spawn a duplicate on the email fallback below.
+    const email = preferredEmail(s)!.toLowerCase();
+    matchedEmails.add(email);
     matchedStaffIds.add(s.id);
     const designation = (s.designation ?? '').trim();
     const departmentName = s.department?.department_name ?? '';
@@ -220,11 +222,16 @@ export async function POST() {
     let existingSlug: string | null = byId.data?.slug ?? null;
 
     if (!existingId) {
+      // Case-insensitive: a manually-entered row may store the email with
+      // different casing (e.g. "Maryvinolajenifer@..."), which a plain .eq
+      // would miss — causing this sync to INSERT a duplicate instead of
+      // attaching to the existing row. `email` is already lowercased above;
+      // ilike matches regardless of how the legacy row was cased.
       const byEmail = await supabase
         .from('faculty')
         .select('id, slug')
         .eq('college_id', collegeId)
-        .eq('email', email)
+        .ilike('email', email)
         .maybeSingle();
       existingId = byEmail.data?.id ?? null;
       existingSlug = byEmail.data?.slug ?? null;

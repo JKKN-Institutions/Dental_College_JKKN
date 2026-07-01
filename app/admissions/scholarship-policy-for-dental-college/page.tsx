@@ -35,7 +35,7 @@ const faqSchema = {
       "name": "Who is eligible for scholarships at JKKN Dental College?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Eligibility for scholarships at JKKN Dental College varies by category. Academic Achievement Scholarships are awarded based on rural area background (villages, tribal areas, underdeveloped towns) and NEET mark percentage. Sports Quota Scholarships are for students who have achieved winner or runner-up positions in state-level tournaments. The Single Parent Scholarship requires documentation of single-parent status. Government scholarships follow standard government eligibility norms for SC/ST, OBC, and minority communities."
+        "text": "Eligibility for scholarships at JKKN Dental College varies by category. Academic Achievement Scholarships are awarded based on rural area background (villages, tribal areas, underdeveloped towns) and NEET mark percentage. Sports Quota Scholarships are for learners who have achieved winner or runner-up positions in state-level tournaments. The Single Parent Scholarship requires documentation of single-parent status. Government scholarships follow standard government eligibility norms for SC/ST, OBC, and minority communities."
       }
     },
     {
@@ -51,15 +51,15 @@ const faqSchema = {
       "name": "How is the scholarship amount awarded at JKKN Dental College?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "At JKKN Dental College, scholarship amounts are directly reduced from the student's tuition fees — meaning eligible students pay a reduced fee amount rather than receiving a cash award. Scholarship amounts vary by category. Note that scholarships at JKKN Dental are not renewable (one-time benefit). Sports Quota Scholarship recipients must additionally fulfil mandatory conditions including daily practice and participation in all tournaments."
+        "text": "At JKKN Dental College, scholarship amounts are directly reduced from the learner's tuition fees — meaning eligible learners pay a reduced fee amount rather than receiving a cash award. Scholarship amounts vary by category. Note that scholarships at JKKN Dental are not renewable (one-time benefit). Sports Quota Scholarship recipients must additionally fulfil mandatory conditions including daily practice and participation in all tournaments."
       }
     },
     {
       "@type": "Question",
-      "name": "Are there government scholarships for dental students at JKKN?",
+      "name": "Are there government scholarships for dental learners at JKKN?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, JKKN Dental College facilitates government scholarships as per government norms. Eligible students from SC/ST, OBC, and minority communities can apply for state and central government scholarship schemes. Students are advised to apply through official government scholarship portals such as the National Scholarship Portal (NSP) and Tamil Nadu state scholarship schemes. The admissions office can guide students on available government scholarship options."
+        "text": "Yes, JKKN Dental College facilitates government scholarships as per government norms. Eligible learners from SC/ST, OBC, and minority communities can apply for state and central government scholarship schemes. Learners are advised to apply through official government scholarship portals such as the National Scholarship Portal (NSP) and Tamil Nadu state scholarship schemes. The admissions office can guide learners on available government scholarship options."
       }
     }
   ]
@@ -108,7 +108,7 @@ const applicationSteps = [
 ];
 
 const awardDetails = [
-  'Scholarship amounts will be directly reduced by the student\'s tuition fees.',
+  'Scholarship amounts will be directly reduced by the learner\'s tuition fees.',
 ];
 
 const renewalItems = [
@@ -174,7 +174,7 @@ export default function ScholarshipPolicy() {
             </div>
             <div className="px-6 py-5">
               <p className="text-gray-700 leading-relaxed text-sm md:text-base">
-                The Dental College Scholarship Program aims to provide financial assistance to students who exhibit exceptional academic performance, sports achievements, and special circumstances. This policy outlines the eligibility criteria, application process, and award details for various scholarship categories.
+                The Dental College Scholarship Program aims to provide financial assistance to learners who exhibit exceptional academic performance, sports achievements, and special circumstances. This policy outlines the eligibility criteria, application process, and award details for various scholarship categories.
               </p>
             </div>
           </div>
@@ -200,13 +200,13 @@ export default function ScholarshipPolicy() {
             </div>
             <div className="px-6 py-5 space-y-4">
               <p className="text-gray-700 leading-relaxed text-sm md:text-base">
-                A tuition fee scholarship will be provided to students who have achieved winner or runner-up positions in state-level tournaments in the following sports: Wrestling, Volleyball, Basketball, Kho Kho, Kabaddi, and Badminton.
+                A tuition fee scholarship will be provided to learners who have achieved winner or runner-up positions in state-level tournaments in the following sports: Wrestling, Volleyball, Basketball, Kho Kho, Kabaddi, and Badminton.
               </p>
               {/* Important Note */}
               <div className="bg-amber-50 border border-amber-200 rounded-xl p-4">
                 <p className="font-bold text-amber-800 text-sm md:text-base mb-3">*Important Note</p>
                 <ul className="space-y-2">
-                  {['A minimum of two students is required for admission', 'Daily Practice Compulsory', 'Participating in All Tournaments is compulsory.'].map((note, i) => (
+                  {['A minimum of two learners is required for admission', 'Daily Practice Compulsory', 'Participating in All Tournaments is compulsory.'].map((note, i) => (
                     <li key={i} className="flex items-start gap-2 text-sm md:text-base text-amber-800">
                       <div className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-amber-500 mt-2" />
                       {note}
@@ -241,7 +241,7 @@ export default function ScholarshipPolicy() {
             </div>
             <div className="px-6 pt-5 pb-2">
               <p className="text-gray-700 text-sm md:text-base mb-4">
-                The following government scholarships are available for BDS students as per eligibility:
+                The following government scholarships are available for BDS learners as per eligibility:
               </p>
             </div>
             <div className="overflow-x-auto px-6 pb-6">

@@ -202,15 +202,15 @@ const mdsFaqSchema = {
     },
     {
       '@type': 'Question',
-      name: 'Is hostel accommodation available for MDS students?',
+      name: 'Is hostel accommodation available for MDS learners?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes. JKKN provides separate boys and girls hostels with 24/7 security, Wi-Fi, mess facilities, and study rooms for MDS postgraduates.',
+        text: 'Yes. JKKN provides separate boys and girls hostels with 24/7 security, Wi-Fi, mess facilities, and learning commons for MDS postgraduates.',
       },
     },
     {
       '@type': 'Question',
-      name: 'What is the stipend for MDS students at JKKN?',
+      name: 'What is the stipend for MDS learners at JKKN?',
       acceptedAnswer: {
         '@type': 'Answer',
         text: 'MDS postgraduates receive a stipend as per Tamil Nadu Dr. MGR Medical University and Tamil Nadu Government norms. The stipend increases each year of the programme. Contact admissions for the latest 2026-27 stipend structure.',
@@ -484,7 +484,7 @@ const whyJKKN = [
   { text: 'DCI approved, NAAC A grade accredited', icon: Award },
   { text: 'Advanced equipment — CBCT, lasers, CAD/CAM, microscopes', icon: Cpu },
   { text: 'Active dissertation and research culture', icon: FlaskConical },
-  { text: 'Expert faculty with national & international training', icon: Users },
+  { text: 'Expert senior learners with national & international training', icon: Users },
   { text: 'NH-544 location — accessible from Salem, Erode, Coimbatore', icon: MapPin },
 ];
 
@@ -519,10 +519,10 @@ const mdsFaqs = [
   },
   {
     q: 'Is hostel accommodation available?',
-    a: 'Yes — separate boys and girls hostels with 24/7 security, Wi-Fi, mess facilities, and study rooms for MDS postgraduates.',
+    a: 'Yes — separate boys and girls hostels with 24/7 security, Wi-Fi, mess facilities, and learning commons for MDS postgraduates.',
   },
   {
-    q: 'What is the stipend for MDS students?',
+    q: 'What is the stipend for MDS learners?',
     a: 'MDS postgraduates receive a stipend per TN Dr. MGR Medical University and Tamil Nadu Government norms; it increases each year of the programme.',
   },
   {
@@ -684,7 +684,7 @@ export default function MDSAdmissionPage() {
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
               Choose from 5 DCI-approved postgraduate specializations — each with
-              expert faculty, dedicated departments and research opportunities.
+              expert senior learners, dedicated departments and research opportunities.
             </p>
           </div>
 

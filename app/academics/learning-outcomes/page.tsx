@@ -187,11 +187,11 @@ export default function LearningOutcomes() {
                 </ul>
                 <div className="border-t border-[#7cb983]/30 pt-6">
                   <p className="text-base md:text-lg text-[#002309] font-semibold mb-5 border-l-4 border-[#006837] pl-4">
-                    The students should acquire the following during the period of training:
+                    The learners should acquire the following during the period of training:
                   </p>
                   <ul className="space-y-2.5">
                     {[
-                      "The students should acquire knowledge and understanding of the fundamental principles and concepts of oral health and dental science, including anatomy, physiology, pathology, microbiology, pharmacology, and restorative dentistry.",
+                      "The learners should acquire knowledge and understanding of the fundamental principles and concepts of oral health and dental science, including anatomy, physiology, pathology, microbiology, pharmacology, and restorative dentistry.",
                       "Acquire clinical skills in dental procedures, such as diagnosis, treatment planning, and the provision of dental care.",
                       "Effective communication skills with patients, colleagues, and other healthcare professionals.",
                       "Professionalism and ethical behavior, including understanding the legal and ethical aspects of the dental practice, and the ability to work with integrity and in the best interests of the patient.",
@@ -255,7 +255,7 @@ export default function LearningOutcomes() {
                   </h3>
                   <ul className="space-y-2">
                     {[
-                      "To understand the knowledge acquire in anatomy and to correlate, appreciate and apply in other subjects taught in the BDS courseThe student must be able to describe the location, nerve supply, mode of termination of ducts of salivary glands, and their functions",
+                      "To understand the knowledge acquire in anatomy and to correlate, appreciate and apply in other subjects taught in the BDS courseThe learner must be able to describe the location, nerve supply, mode of termination of ducts of salivary glands, and their functions",
                       "To describe and classify neurons and neuralgia",
                       "To define and describe the congenital anomalies of the head and neck",
                       "To draw and demonstrate the important anatomical points and structures of the head and neck",
@@ -289,7 +289,7 @@ export default function LearningOutcomes() {
                   </h3>
                   <ul className="space-y-2">
                     {[
-                      "The student should be able to identify different teeth in the different dentitions",
+                      "The learner should be able to identify different teeth in the different dentitions",
                       "To differentiate between normal and pathological states of oral structures",
                       "Demonstrate knowledge about the development of the maxilla, mandible,",
                       "palate, tongue, and lips and state the congenital defects during their formation",
@@ -426,7 +426,7 @@ export default function LearningOutcomes() {
                       "To apply the knowledge and understanding of biochemistry in medicine and surgery",
                       "To estimate glucose, abnormal constituents of urine",
                       "To diagnose diabetes mellitus, renal, liver, and thyroid functions",
-                      "The student will be able to list the laboratory hazards and the precautions to prevent them",
+                      "The learner will be able to list the laboratory hazards and the precautions to prevent them",
                       "To interpret the result of serum urea, creatinine, total protein, bilirubin",
                     ].map((item, i) => (
                       <li key={i} className="flex gap-2 items-start text-gray-600 text-sm leading-relaxed">
@@ -486,7 +486,7 @@ export default function LearningOutcomes() {
                   </h3>
                   <ul className="space-y-2">
                     {[
-                      "Students should be able to follow proper aseptic techniques in dental practice",
+                      "Learners should be able to follow proper aseptic techniques in dental practice",
                       "Should be able to collect samples from the oral cavity and carefully transfer them to the laboratory",
                       "To understand the general concepts of immunology and its applications, immunity classification, and difference",
                       "To define and classify hypersensitivity with mechanism and function",
@@ -544,7 +544,7 @@ export default function LearningOutcomes() {
                   </h3>
                   <ul className="space-y-2">
                     {[
-                      "The student should be able to identify and differentiate neoplastic and non-neoplastic lesions around the head and neck region",
+                      "The learner should be able to identify and differentiate neoplastic and non-neoplastic lesions around the head and neck region",
                       "Advise appropriate investigations for correct diagnosis of disease",
                       "To apply the knowledge acquired in pathology while practicing dental surgery",
                       "Identify acute, chronic, and granulomatous inflammation",
@@ -674,7 +674,7 @@ export default function LearningOutcomes() {
                   </h3>
                   <ul className="space-y-2">
                     {[
-                      "The student should be able to",
+                      "The learner should be able to",
                       "To identify the materials used in dentistry",
                       "Selection of appropriate material for clinical use",
                       "Proper use of instruments",
@@ -1049,7 +1049,7 @@ export default function LearningOutcomes() {
                   </h3>
                   <ul className="space-y-2">
                     {[
-                      "The student should be able to demonstrate adequate diagnostic skills, restorative skills, endodontic skills,",
+                      "The learner should be able to demonstrate adequate diagnostic skills, restorative skills, endodontic skills,",
                       "Ability to perform manual skill and dexterity",
                       "Communication skills to obtain a medical and psychosocial history",
                       "Ability to frame an effective treatment plan for the individual patient",
@@ -1084,7 +1084,7 @@ export default function LearningOutcomes() {
                   </h3>
                   <ul className="space-y-2">
                     {[
-                      "The student should be able to describe the background and scope of Periodontology",
+                      "The learner should be able to describe the background and scope of Periodontology",
                       "Knowledge about the classification of periodontal diseases and framing of treatment plan as required",
                       "Knowledge about the prevention and progression of periodontal diseases",
                       "Knowledge about the basic tissues of periodontium, clinical features of healthy and inflamed gingival",
@@ -1444,14 +1444,14 @@ export default function LearningOutcomes() {
                       "• Identify rarities in periodontal disease and environmental/Emotional determinates in a given case",
                       "• Recognize conditions that may be outside the area of his/her Speciality/ competence and refer them to an appropriate Specialist",
                       "• Decide regarding non-surgical or surgical management of the case",
-                      "• Update the student by attending courses, conferences, and seminars relevant to periodontics or by self-learning process.",
+                      "• Update the learner by attending courses, conferences, and seminars relevant to periodontics or by self-learning process.",
                       "• Plan out/ carry out research activity both basic and clinical aspects with the aim of publishing his/her work in scientific journals",
                       "• Reach out to the public to motivate and educate them regarding periodontal disease, its prevention, and its consequences if not treated.",
                       "• Plan out the epidemiological survey to assess the prevalence and incidence of early-onset periodontitis and adult periodontitis in the Indian population (Region wise)",
                       "• Shall develop knowledge and skill in the science and practice of Oral Implantology",
                       "• Shall develop teaching skills in the field of Periodontology and Oral Implantology",
                       "• Principals of Surgery and Medical Emergencies.",
-                      "To sensitize students about the interdisciplinary approach towards the soft tissues of the oral cavity with the help of specialists from other departments.",
+                      "To sensitize learners about the interdisciplinary approach towards the soft tissues of the oral cavity with the help of specialists from other departments.",
                     ].map((item, i) => (
                       <li key={i} className="flex gap-2 items-start text-gray-600 text-sm leading-relaxed">
                         <span className="flex-shrink-0 text-[#006837] font-bold mt-0.5">›</span>
@@ -1507,10 +1507,10 @@ export default function LearningOutcomes() {
                     {[
                       "The candidate should possess knowledge of applied basic and systemic medical sciences.",
                       "• On human anatomy, embryology, histology, applied in general and particularly to head and neck, Physiology & Biochemistry, Pathology Microbiology & virology; health and diseases of various systems of the body (systemic) principles in surgery and medicine, pharmacology, nutrition, behavioral science, age changes, genetics, Immunology, Congenital defects & syndromes and Anthropology. Bio-medical & Biological Principles",
-                      "• The student shall acquire knowledge of various Dental Materials used in the specialty and be able to provide an appropriate indication, understand the manipulation characteristics, compare with other materials available, and be adept with recent advancements of the same.",
-                      "• Students shall acquire knowledge and practice of history taking, Diagnosis, treatment planning, prognosis, and record maintenance of oral, craniofacial, and systemic regions.",
+                      "• The learner shall acquire knowledge of various Dental Materials used in the specialty and be able to provide an appropriate indication, understand the manipulation characteristics, compare with other materials available, and be adept with recent advancements of the same.",
+                      "• Learners shall acquire knowledge and practice of history taking, Diagnosis, treatment planning, prognosis, and record maintenance of oral, craniofacial, and systemic regions.",
                       "• Ability for comprehensive rehabilitation concept with a pre-prosthetic treatment plan including surgical re-evaluation and prosthodontic treatment planning, impressions, jaw relations, utility of face bows, articulators, selection and positioning of teeth, teeth 43 arrangement for retention, stability, esthetics, phonation, psychological comfort, fit and insertion.",
-                      "• Instructions for patients in aftercare and preventive Prosthodontics and management of failed restorations shall be possessed by the students.",
+                      "• Instructions for patients in aftercare and preventive Prosthodontics and management of failed restorations shall be possessed by the learners.",
                       "• Understanding of all the applied aspects of achieving physical, and psychological well-being of the patients for control of diseases and/or treatment-related syndromes with the patient satisfaction and restoring the function of the Craniomandibular system for a quality life of a patient.",
                       "• Ability to diagnose and plan treatment for patients requiring Prosthodontic therapy",
                       "• Ability to read and interpret radiographs, and other investigations for the purpose of diagnosis and treatment planning.",
@@ -1527,7 +1527,7 @@ export default function LearningOutcomes() {
                       "• Should be competent in the specialization of team management in craniofacial prosthesis design.",
                       "• To have adequate acquired knowledge, and understanding of applied basic, and systemic medical science knowledge in general and in particular to head and neck regions.",
                       "• Should attend continuing education programs, seminars, and conferences related to Prosthodontics, thus updating himself/herself.",
-                      "• To teach and guide his/her team, colleagues, and other students.",
+                      "• To teach and guide his/her team, colleagues, and other learners.",
                       "• Should be able to use information technology tools and carry out research both in basic and clinical areas, with the aim of publishing his/ her work and presenting his/her work at various scientific forums.",
                       "• Should have essential knowledge of personal hygiene, infection control, prevention of cross-infection, and safe disposal of waste, keeping in view the risk of transmission of potential communicable and transmissible infections like Hepatitis and HIV.",
                       "• Should have the ability to plan and establish Prosthodontics clinic/hospital teaching department and practice management.",
@@ -1583,7 +1583,7 @@ export default function LearningOutcomes() {
                       "• To develop communication skills, in particular, and to explain treatment options available in the management.",
                       "• To provide leadership and get the best out of his / her group in a congenial working atmosphere.",
                       "• Should be able to communicate in simple understandable language with the patient and explain the principles of prosthodontics to the patient. She/he should be able to guide and counsel the patient with regard to various treatment modalities available.",
-                      "• To develop the ability to communicate with professional colleagues through various media like the Internet, e-mails, videoconferences, etc. to render the best possible treatment. Should demonstrate good explanatory and demonstrating ability as a teacher in order to facilitate learning among students",
+                      "• To develop the ability to communicate with professional colleagues through various media like the Internet, e-mails, videoconferences, etc. to render the best possible treatment. Should demonstrate good explanatory and demonstrating ability as a teacher in order to facilitate learning among learners",
                     ].map((item, i) => (
                       <li key={i} className="flex gap-2 items-start text-gray-600 text-sm leading-relaxed">
                         <span className="flex-shrink-0 text-amber-600 font-bold mt-0.5">›</span>
@@ -1617,7 +1617,7 @@ export default function LearningOutcomes() {
                       "• Identify social, economic, environmental, and emotional determinants in a given case or community and take them into account for planning and execution at individual and community levels.",
                       "• Ability to master differential diagnosis and recognize conditions that may require a multi-disciplinary approach or a clinical situation outside the realm of the specialty, which he or she should be able to recognize and refer to appropriate specialists.",
                       "• Update himself by self-study and by attending basic and advanced courses, conferences, seminars, and workshops in the specialty of –Conservative Dentistry-Endodontics-Dental Materials and Restorative Dentistry.",
-                      "• Ability to teach/guide, colleagues and other students. Use information technology tools and carry out research both basic and clinical with the aim of publishing his work and presenting the same on a scientific platform.",
+                      "• Ability to teach/guide, colleagues and other learners. Use information technology tools and carry out research both basic and clinical with the aim of publishing his work and presenting the same on a scientific platform.",
                     ].map((item, i) => (
                       <li key={i} className="flex gap-2 items-start text-gray-600 text-sm leading-relaxed">
                         <span className="flex-shrink-0 text-[#006837] font-bold mt-0.5">›</span>
@@ -1755,7 +1755,7 @@ export default function LearningOutcomes() {
               </div>
               <div className="bg-white px-6 py-6">
                 <div className="bg-[#FBFBEE] border-l-4 border-[#7cb983] rounded-r-lg px-5 py-4 mb-6 text-gray-700 text-sm leading-relaxed">
-                  The continuing assessment examination (both Theory/Practical) held at least 3 times in a particular year and the better of two examinations should be considered. The Internal Assessment marks are to be submitted to the University, once every three months. The marks scored by the students shall be displayed on the Notice board and a copy forwarded by HOD shall be sent to the University once every 3 months.
+                  The continuing assessment examination (both Theory/Practical) held at least 3 times in a particular year and the better of two examinations should be considered. The Internal Assessment marks are to be submitted to the University, once every three months. The marks scored by the learners shall be displayed on the Notice board and a copy forwarded by HOD shall be sent to the University once every 3 months.
                 </div>
                 <div className="grid grid-cols-3 gap-4 mb-8">
                   {[
@@ -1771,7 +1771,7 @@ export default function LearningOutcomes() {
                 </div>
 
                 <h3 className="text-base font-bold text-[#006837] mb-4 border-b border-gray-200 pb-2">
-                  ASSESSMENT METHOD OF LEARNING OUTCOME – MDS CURRICULUM
+                  ASSESSMENT METHOD OF LEARNING OUTCOME – MDS LEARNING FRAMEWORK
                 </h3>
                 <div className="space-y-4">
                   <div className="flex gap-4 items-start">
@@ -1945,7 +1945,7 @@ export default function LearningOutcomes() {
               title: "DENTAL MATERIALS",
               competencies: [
                 "• To have knowledge about physical and chemical properties of dental materials",
-                "• A student must learn to manipulate dental materials to be used in clinical practice",
+                "• A learner must learn to manipulate dental materials to be used in clinical practice",
               ],
               steps: [
                 "• Making of impression with impression compound",
@@ -1978,7 +1978,7 @@ export default function LearningOutcomes() {
             {
               title: "GENERAL MEDICINE",
               competencies: [
-                "• The student should be able to perform a general physical examination and look for anemia, cyanosis, clubbing, and jaundice and to record vital signs- pulse, BP, temperature.",
+                "• The learner should be able to perform a general physical examination and look for anemia, cyanosis, clubbing, and jaundice and to record vital signs- pulse, BP, temperature.",
                 "• To know history taking from the patient and writing",
                 "• To diagnose various systemic diseases from history and physical findings",
                 "• Interpret and correlate physical findings with investigations like X-ray, hematology, urine and stool examination",
@@ -1994,7 +1994,7 @@ export default function LearningOutcomes() {
               title: "GENERAL SURGERY",
               competencies: [
                 "• To identify the common surgical problems, consider the differential diagnosis and complications",
-                "• The student must be able to learn and mention benign and malignant tumors of soft and hard tissue of the head and neck",
+                "• The learner must be able to learn and mention benign and malignant tumors of soft and hard tissue of the head and neck",
                 "• To be able to perform minor surgical procedures like incision and drainage of abscess",
                 "• To take biopsy under local anesthesia",
                 "• Understanding about personal and patient safety in OPD and OT through proper asepsis and infection prevention",
@@ -2041,7 +2041,7 @@ export default function LearningOutcomes() {
                 "• To prepare class I and class II cavities and restore them with amalgam",
                 "• Competent to carry out small composite restorations",
                 "• To understand the principles of aesthetic dental procedures",
-                "• The student should learn about patient assessment and diagnostic procedures for endodontic therapy",
+                "• The learner should learn about patient assessment and diagnostic procedures for endodontic therapy",
                 "• Able to perform RCT for anterior teeth",
               ],
               steps: [

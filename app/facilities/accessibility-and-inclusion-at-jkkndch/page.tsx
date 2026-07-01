@@ -61,7 +61,7 @@ export default function AccessibilityInclusion() {
           </h3>
           <div className="bg-white rounded-xl p-8 shadow-sm border border-green-100 border-l-4 border-l-[#7cb983]">
             <p className="hero-description text-gray-700 text-base leading-relaxed mb-6">
-              At JKKN Dental College &amp; Hospital, we recognize our responsibility to create a welcoming, inclusive, and accessible environment for all individuals—including patients, visitors, and the public. Although there are currently no students with disabilities enrolled, we actively implement accessibility measures across our healthcare and administrative services in accordance with:
+              At JKKN Dental College &amp; Hospital, we recognize our responsibility to create a welcoming, inclusive, and accessible environment for all individuals—including patients, visitors, and the public. Although there are currently no learners with disabilities enrolled, we actively implement accessibility measures across our healthcare and administrative services in accordance with:
             </p>
             <div className="space-y-3">
               <div className="flex items-start gap-3">
@@ -153,7 +153,7 @@ export default function AccessibilityInclusion() {
                   'Priority registration and queue system for patients with disabilities.',
                   'Screen-reading software installed in the reception.',
                   'Printed materials available in large font or digital formats upon request.',
-                  'Staff trained in basic inclusive communication practices.',
+                  'Team members trained in basic inclusive communication practices.',
                 ].map((item) => (
                   <div key={item} className="flex items-start gap-3">
                     <div className="w-2.5 h-2.5 rounded-full bg-[#006837] mt-1.5 flex-shrink-0" />
@@ -174,7 +174,7 @@ export default function AccessibilityInclusion() {
               <div className="space-y-3">
                 {[
                   'Dental chairs and equipment designed to accommodate diverse mobility needs.',
-                  'Assistance staff available to support patients with special needs.',
+                  'Assistance team members available to support patients with special needs.',
                   'Mental health counselling and psycho-social support services available.',
                 ].map((item) => (
                   <div key={item} className="flex items-start gap-3">
@@ -197,7 +197,7 @@ export default function AccessibilityInclusion() {
                 {[
                   'Periodic accessibility audits of physical and digital infrastructure.',
                   'Inclusion of accessibility standards in hospital upgrades and expansions.',
-                  'Staff sensitization on inclusion and disability awareness.',
+                  'Team member sensitization on inclusion and disability awareness.',
                 ].map((item) => (
                   <div key={item} className="flex items-start gap-3">
                     <div className="w-2.5 h-2.5 rounded-full bg-[#006837] mt-1.5 flex-shrink-0" />
@@ -222,7 +222,7 @@ export default function AccessibilityInclusion() {
               <h4 className="text-xl font-bold text-[#006837]">Note</h4>
             </div>
             <p className="text-gray-700 text-base leading-relaxed">
-              JKKN Dental College remains committed to supporting any future students with disabilities by providing the necessary academic, infrastructural, and technological accommodations as outlined in our official Accessibility &amp; Inclusion Policy.
+              JKKN Dental College remains committed to supporting any future learners with disabilities by providing the necessary academic, infrastructural, and technological accommodations as outlined in our official Accessibility &amp; Inclusion Policy.
             </p>
           </div>
         </div>

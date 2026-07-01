@@ -187,7 +187,7 @@ export default function Transport() {
           </h2>
           <div className="bg-white rounded-xl p-8 shadow-sm border border-green-100">
             <p className="text-gray-700 text-base leading-relaxed">
-              <strong>We believe in inclusivity and offer buses equipped with wheelchair ramps and other assistive features, ensuring that every student, irrespective of physical capabilities, can easily use our services.</strong>
+              <strong>We believe in inclusivity and offer buses equipped with wheelchair ramps and other assistive features, ensuring that every learner, irrespective of physical capabilities, can easily use our services.</strong>
             </p>
           </div>
         </div>

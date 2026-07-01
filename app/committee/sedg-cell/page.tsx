@@ -61,7 +61,7 @@ export default function SEDGCell() {
           </h3>
           <div className="bg-white rounded-xl p-8 shadow-sm border border-green-100 border-l-4 border-l-[#7cb983]">
             <p className="hero-description text-gray-700 text-base leading-relaxed">
-              The Socio-Economically Disadvantaged Groups (SEDG) Cell at JKK N Dental College &amp; Hospital is committed to fostering an inclusive academic and social environment for students from marginalized, underprivileged, and economically weaker sections. Guided by the principles of equity and inclusion under NEP 2020 and UGC Guidelines, the Cell strives to ensure that every student has equal access to academic resources, support services, and growth opportunities.
+              The Socio-Economically Disadvantaged Groups (SEDG) Cell at JKK N Dental College &amp; Hospital is committed to fostering an inclusive academic and social environment for learners from marginalized, underprivileged, and economically weaker sections. Guided by the principles of equity and inclusion under NEP 2020 and UGC Guidelines, the Cell strives to ensure that every learner has equal access to academic resources, support services, and growth opportunities.
             </p>
           </div>
         </div>
@@ -76,11 +76,11 @@ export default function SEDGCell() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="flex items-start gap-3 bg-[#FBFBEE] rounded-lg p-4 border border-green-100">
               <div className="w-2.5 h-2.5 rounded-full bg-[#006837] mt-1.5 flex-shrink-0" />
-              <p className="text-gray-700 text-sm font-semibold leading-relaxed">To identify students from SEDGs and assess their academic and non-academic support needs.</p>
+              <p className="text-gray-700 text-sm font-semibold leading-relaxed">To identify learners from SEDGs and assess their academic and non-academic support needs.</p>
             </div>
             <div className="flex items-start gap-3 bg-[#FBFBEE] rounded-lg p-4 border border-green-100">
               <div className="w-2.5 h-2.5 rounded-full bg-[#006837] mt-1.5 flex-shrink-0" />
-              <p className="text-gray-700 text-sm font-semibold leading-relaxed">To implement initiatives that improve access, equity, and outcomes for disadvantaged students.</p>
+              <p className="text-gray-700 text-sm font-semibold leading-relaxed">To implement initiatives that improve access, equity, and outcomes for disadvantaged learners.</p>
             </div>
             <div className="flex items-start gap-3 bg-[#FBFBEE] rounded-lg p-4 border border-green-100">
               <div className="w-2.5 h-2.5 rounded-full bg-[#006837] mt-1.5 flex-shrink-0" />
@@ -180,7 +180,7 @@ export default function SEDGCell() {
             </div>
             <div className="flex items-start gap-3 bg-[#FBFBEE] rounded-lg p-4 border border-green-100">
               <div className="w-2.5 h-2.5 rounded-full bg-[#006837] mt-1.5 flex-shrink-0" />
-              <p className="text-gray-700 text-sm font-semibold leading-relaxed">Act as a nodal point for addressing concerns and feedback from SEDG students.</p>
+              <p className="text-gray-700 text-sm font-semibold leading-relaxed">Act as a nodal point for addressing concerns and feedback from SEDG learners.</p>
             </div>
             <div className="flex items-start gap-3 bg-[#FBFBEE] rounded-lg p-4 border border-green-100">
               <div className="w-2.5 h-2.5 rounded-full bg-[#006837] mt-1.5 flex-shrink-0" />

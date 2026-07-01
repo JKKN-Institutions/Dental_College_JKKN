@@ -122,8 +122,30 @@ const nextConfig: NextConfig = {
       { source: '/tle', destination: '/academics', permanent: true },
 
       // Administration old slugs
-      { source: '/governance-leadership-and-management/', destination: '/administration', permanent: true },
-      { source: '/governance-leadership-and-management', destination: '/administration', permanent: true },
+      { source: '/governance-leadership-and-management/', destination: '/our-management', permanent: true },
+      { source: '/governance-leadership-and-management', destination: '/our-management', permanent: true },
+      // Administration section flattened to top-level URLs (2026-06-22) — 301 the old nested paths.
+      { source: '/administration', destination: '/our-management', permanent: true },
+      { source: '/administration/', destination: '/our-management', permanent: true },
+      { source: '/administration/principals-message', destination: '/principals-message', permanent: true },
+      { source: '/administration/principals-message/', destination: '/principals-message', permanent: true },
+      { source: '/administration/finance-officer', destination: '/finance-officer', permanent: true },
+      { source: '/administration/finance-officer/', destination: '/finance-officer', permanent: true },
+      { source: '/administration/governing-body', destination: '/governing-body', permanent: true },
+      { source: '/administration/governing-body/', destination: '/governing-body', permanent: true },
+      { source: '/administration/academic-council', destination: '/academic-council', permanent: true },
+      { source: '/administration/academic-council/', destination: '/academic-council', permanent: true },
+      { source: '/administration/academic-leadership', destination: '/academic-leadership', permanent: true },
+      { source: '/administration/academic-leadership/', destination: '/academic-leadership', permanent: true },
+      { source: '/administration/internal-complaints-committee', destination: '/internal-complaints-committee', permanent: true },
+      { source: '/administration/internal-complaints-committee/', destination: '/internal-complaints-committee', permanent: true },
+      { source: '/administration/our-trust', destination: '/our-trust', permanent: true },
+      { source: '/administration/our-trust/', destination: '/our-trust', permanent: true },
+      { source: '/administration/our-management', destination: '/our-management', permanent: true },
+      { source: '/administration/our-management/', destination: '/our-management', permanent: true },
+      // Misspelled top-level alias (was a rewrite) -> correct top-level page.
+      { source: '/internal-compliants-committee', destination: '/internal-complaints-committee', permanent: true },
+      { source: '/internal-compliants-committee/', destination: '/internal-complaints-committee', permanent: true },
       { source: '/infrastructure-and-learning-resources/', destination: '/facilities', permanent: true },
       { source: '/infrastructure-and-learning-resources', destination: '/facilities', permanent: true },
 
@@ -233,8 +255,8 @@ const nextConfig: NextConfig = {
       // Misspellings: compliants -> complaints
       { source: '/committee/internal-compliants-committee-icc/', destination: '/committee/internal-complaints-committee-icc', permanent: true },
       { source: '/committee/internal-compliants-committee-icc', destination: '/committee/internal-complaints-committee-icc', permanent: true },
-      { source: '/administration/internal-compliants-committee/', destination: '/administration/internal-complaints-committee', permanent: true },
-      { source: '/administration/internal-compliants-committee', destination: '/administration/internal-complaints-committee', permanent: true },
+      { source: '/administration/internal-compliants-committee/', destination: '/internal-complaints-committee', permanent: true },
+      { source: '/administration/internal-compliants-committee', destination: '/internal-complaints-committee', permanent: true },
       // Deleted standalone duplicates -> canonical deep /committee/* paths
       { source: '/hostel-advisory-welfare-committee/', destination: '/committee/hostel-advisory-and-welfare-committee', permanent: true },
       { source: '/hostel-advisory-welfare-committee', destination: '/committee/hostel-advisory-and-welfare-committee', permanent: true },
@@ -298,16 +320,8 @@ const nextConfig: NextConfig = {
       { source: '/annual-report', destination: '/about/annual-report' },
       { source: '/annual-account-statement', destination: '/about/annual-account-statement' },
 
-      // Administration section
-      { source: '/our-trust', destination: '/administration/our-trust' },
-      { source: '/our-management', destination: '/administration/our-management' },
-      { source: '/principals-message', destination: '/administration/principals-message' },
-      { source: '/finance-officer', destination: '/administration/finance-officer' },
-      { source: '/governing-body', destination: '/administration/governing-body' },
-      { source: '/academic-council', destination: '/administration/academic-council' },
-      { source: '/internal-compliants-committee', destination: '/administration/internal-complaints-committee' },
-      { source: '/internal-complaints-committee', destination: '/administration/internal-complaints-committee' },
-      { source: '/academic-leadership', destination: '/administration/academic-leadership' },
+      // Administration section — pages now live at top-level (no rewrite needed).
+      // Old /administration/* URLs are 301-redirected in redirects() above.
 
       // Academics section - Programs
       { source: '/details-of-academic-programs', destination: '/academics/details-of-academic-programs' },

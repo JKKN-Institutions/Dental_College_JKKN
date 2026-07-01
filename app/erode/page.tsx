@@ -11,7 +11,7 @@ export default function ErodePage() {
     },
     {
       q: 'How many dental colleges are in Erode district?',
-      a: 'Erode district has one dental college, Nandha Dental College & Hospital, which offers BDS only. For students seeking both BDS and MDS with a larger teaching hospital and stronger placements, JKKN Dental College & Hospital at Komarapalayam is only 18 km away via NH-544.',
+      a: 'Erode district has one dental college, Nandha Dental College & Hospital, which offers BDS only. For learners seeking both BDS and MDS with a larger teaching hospital and stronger placements, JKKN Dental College & Hospital at Komarapalayam is only 18 km away via NH-544.',
     },
     {
       q: 'Which is the best dental college in Erode?',
@@ -27,19 +27,19 @@ export default function ErodePage() {
     },
     {
       q: 'Does JKKN Dental have its own hospital?',
-      a: 'Yes, JKKN Dental College & Hospital has a 200+ chair dental hospital and 100+ bed facility right on campus. Students from Erode benefit from treating 500+ patients daily who visit from surrounding districts, gaining hands-on clinical training from Year 1 of the BDS programme.',
+      a: 'Yes, JKKN Dental College & Hospital has a 200+ chair dental hospital and 100+ bed facility right on campus. Learners from Erode benefit from treating 500+ patients daily who visit from surrounding districts, gaining hands-on clinical training from Year 1 of the BDS programme.',
     },
     {
       q: 'What MDS specialisations are available?',
-      a: 'JKKN Dental offers MDS in five specialisations: Orthodontics & Dentofacial Orthopaedics, Prosthodontics & Crown and Bridge, Oral & Maxillofacial Surgery, Conservative Dentistry & Endodontics, and Periodontics. Each department has dedicated faculty, modern labs, and the attached hospital ensures ample clinical cases for postgraduate research and training.',
+      a: 'JKKN Dental offers MDS in five specialisations: Orthodontics & Dentofacial Orthopaedics, Prosthodontics & Crown and Bridge, Oral & Maxillofacial Surgery, Conservative Dentistry & Endodontics, and Periodontics. Each department has dedicated senior learners, modern learning labs, and the attached hospital ensures ample clinical cases for postgraduate research and training.',
     },
     {
-      q: 'Does JKKN Dental provide hostel for Erode students?',
-      a: 'Yes, JKKN Dental provides separate hostel facilities for boys and girls. Students from Erode can also opt for daily commute as the campus is just 18 km away — about 35-40 minutes on NH-544. College transport services are available from Erode.',
+      q: 'Does JKKN Dental provide hostel for Erode learners?',
+      a: 'Yes, JKKN Dental provides separate hostel facilities for boys and girls. Learners from Erode can also opt for daily commute as the campus is just 18 km away — about 35-40 minutes on NH-544. College transport services are available from Erode.',
     },
     {
       q: 'How can I apply for admission at JKKN Dental?',
-      a: 'Erode students can apply online at https://dental.jkkn.ac.in/ or visit the campus directly — just a 35-minute drive on NH-544. Admissions for BDS and MDS 2026-27 are currently open. Call +91 9345855001 for personalised guidance on eligibility, fees, and the counselling process.',
+      a: 'Erode learners can apply online at https://dental.jkkn.ac.in/ or visit the campus directly — just a 35-minute drive on NH-544. Admissions for BDS and MDS 2026-27 are currently open. Call +91 9345855001 for personalised guidance on eligibility, fees, and the counselling process.',
     },
     {
       q: 'What is the BDS fee at dental colleges near Erode?',
@@ -53,8 +53,8 @@ export default function ErodePage() {
 
   const whyFeatures = [
     { icon: <Hospital className="w-6 h-6 text-[#006837]" />, title: 'Own Hospital', desc: 'DCI-approved dental college with attached hospital for hands-on clinical training' },
-    { icon: <Stethoscope className="w-6 h-6 text-[#006837]" />, title: 'Real Patient Exposure', desc: 'Own dental hospital on campus — students get real patient exposure from Year 1' },
-    { icon: <Microscope className="w-6 h-6 text-[#006837]" />, title: 'Advanced Labs', desc: 'Advanced dental labs, simulation equipment, and digital dentistry training' },
+    { icon: <Stethoscope className="w-6 h-6 text-[#006837]" />, title: 'Real Patient Exposure', desc: 'Own dental hospital on campus — learners get real patient exposure from Year 1' },
+    { icon: <Microscope className="w-6 h-6 text-[#006837]" />, title: 'Advanced Learning Labs', desc: 'Advanced dental learning labs, simulation equipment, and digital dentistry training' },
     { icon: <TrendingUp className="w-6 h-6 text-[#006837]" />, title: 'NEET MDS Results', desc: 'Strong track record in NEET MDS results and higher education' },
     { icon: <Users className="w-6 h-6 text-[#006837]" />, title: 'Community Service', desc: 'Hospital serves the community — builds trust and clinical experience' },
     { icon: <Bus className="w-6 h-6 text-[#006837]" />, title: 'Easy Commute', desc: 'Just 18 km from Erode. Daily commute or comfortable hostel — your choice.' },
@@ -83,8 +83,8 @@ export default function ErodePage() {
   ];
 
   const facilities = [
-    { icon: <Microscope className="w-6 h-6 text-[#006837]" />, title: 'Modern Labs', desc: 'State-of-the-art laboratories and smart classrooms' },
-    { icon: <BookOpen className="w-6 h-6 text-[#006837]" />, title: 'Digital Library', desc: 'Well-stocked library with digital access and journals' },
+    { icon: <Microscope className="w-6 h-6 text-[#006837]" />, title: 'Modern Learning Labs', desc: 'State-of-the-art learning labs and smart learning studios' },
+    { icon: <BookOpen className="w-6 h-6 text-[#006837]" />, title: 'Digital Learning Commons', desc: 'Well-stocked learning commons with digital access and journals' },
     { icon: <Home className="w-6 h-6 text-[#006837]" />, title: 'Hostel', desc: 'Separate hostels for boys and girls with mess facility' },
     { icon: <Bus className="w-6 h-6 text-[#006837]" />, title: 'Transport', desc: 'College buses connecting to Erode and surrounding areas' },
     { icon: <Award className="w-6 h-6 text-[#006837]" />, title: 'Sports', desc: 'Playground, indoor games, gym, and annual sports events' },
@@ -230,7 +230,7 @@ export default function ErodePage() {
       <section className="bg-white py-16 px-4">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="font-extrabold text-gray-900 mb-4" style={{ fontSize: 'clamp(1.6rem, 3vw + 0.5rem, 2.4rem)' }}>
-            Why Erode Students Choose JKKN Dental
+            Why Erode Learners Choose JKKN Dental
           </h2>
           <p className="text-gray-500 max-w-3xl mx-auto mb-2 leading-relaxed" style={{ fontSize: 'clamp(0.875rem, 1vw + 0.4rem, 1.05rem)' }}>
             Erode&apos;s strong industrial base means families value quality education with good placement outcomes. JKKN is just 18 km away — closer than many colleges within the city itself. The excellent NH-544 connectivity makes daily commute comfortable and quick.
@@ -306,7 +306,7 @@ export default function ErodePage() {
           <h2 className="font-extrabold text-gray-900 mb-3 text-center" style={{ fontSize: 'clamp(1.6rem, 3vw + 0.5rem, 2.4rem)' }}>
             BDS Admission 2026 — How to Apply from Erode
           </h2>
-          <p className="text-gray-500 text-base mb-4 text-center">Step-by-step admission process for Erode students</p>
+          <p className="text-gray-500 text-base mb-4 text-center">Step-by-step admission process for Erode learners</p>
           <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-10" />
           <ol className="space-y-4 list-none p-0 m-0">
             {[
@@ -314,7 +314,7 @@ export default function ErodePage() {
               { step: 'Step 2', title: 'Register for TN State Counselling', desc: 'Register on the DME Tamil Nadu portal for Government Quota seat allotment.' },
               { step: 'Step 3', title: 'Apply for Management Quota (Optional)', desc: 'Contact JKKN Dental College directly at +91 9345855001 or apply via www.jkkn.ai/apply/jkkn-admission-2026.' },
               { step: 'Step 4', title: 'Document Verification', desc: 'Submit 10+2 marksheets, NEET scorecard, community certificate, and transfer certificate.' },
-              { step: 'Step 5', title: 'Confirm Admission', desc: 'Pay the first year fee and confirm your seat. Hostel registration available separately for students from Erode.' },
+              { step: 'Step 5', title: 'Confirm Admission', desc: 'Pay the first year fee and confirm your seat. Hostel registration available separately for learners from Erode.' },
             ].map((item) => (
               <li key={item.step} className="flex gap-4 items-start bg-[#FBFBEE] rounded-xl p-5">
                 <span className="bg-[#006837] text-white text-xs font-bold px-3 py-1.5 rounded-lg flex-shrink-0 mt-0.5">{item.step}</span>
@@ -369,7 +369,7 @@ export default function ErodePage() {
           <h2 className="font-extrabold text-gray-900 mb-3" style={{ fontSize: 'clamp(1.6rem, 3vw + 0.5rem, 2.4rem)' }}>
             How Far Is JKKN Dental College from Erode?
           </h2>
-          <p className="snippet-answer text-gray-700 text-base mb-4">JKKN Dental College &amp; Hospital is approximately 18 km from Erode via NH-544 (Salem–Coimbatore Highway), a journey of approximately 35–40 minutes by road. Erode is the closest major city to JKKN Dental College, making it the most accessible dental college for students from Erode district.</p>
+          <p className="snippet-answer text-gray-700 text-base mb-4">JKKN Dental College &amp; Hospital is approximately 18 km from Erode via NH-544 (Salem–Coimbatore Highway), a journey of approximately 35–40 minutes by road. Erode is the closest major city to JKKN Dental College, making it the most accessible dental college for learners from Erode district.</p>
           <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-10" />
           <div className="bg-white rounded-2xl overflow-hidden shadow-sm text-left">
             <div className="bg-[#006837] text-white px-6 py-5 flex items-center gap-3">
@@ -425,9 +425,9 @@ export default function ErodePage() {
       <section className="bg-[#FBFBEE] py-16 px-4">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="font-extrabold text-gray-900 mb-3" style={{ fontSize: 'clamp(1.6rem, 3vw + 0.5rem, 2.4rem)' }}>
-            Students from Erode Love JKKN Dental
+            Learners from Erode Love JKKN Dental
           </h2>
-          <p className="text-gray-500 text-base mb-4">Hear from students who made the right choice</p>
+          <p className="text-gray-500 text-base mb-4">Hear from learners who made the right choice</p>
           <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-12" />
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             <div className="bg-white rounded-2xl p-6 text-left shadow-sm">
@@ -443,7 +443,7 @@ export default function ErodePage() {
             <div className="bg-white rounded-2xl p-6 text-left shadow-sm">
               <div className="text-5xl text-gray-200 font-serif leading-none mb-3 select-none">&quot;</div>
               <p className="text-gray-500 text-sm leading-relaxed italic mb-6">
-                The MDS programme at JKKN is outstanding. Modern simulation labs, experienced faculty, and a 200+ chair dental hospital gave me unmatched clinical exposure. The mentorship I received shaped me into a confident dental specialist.
+                The MDS programme at JKKN is outstanding. Modern simulation learning labs, experienced senior learners, and a 200+ chair dental hospital gave me unmatched clinical exposure. The mentorship I received shaped me into a confident dental specialist.
               </p>
               <div>
                 <p className="font-bold text-gray-900 text-sm">Karthik Sundaram</p>
@@ -470,7 +470,7 @@ export default function ErodePage() {
           <h2 className="font-extrabold text-gray-900 mb-3 text-center" style={{ fontSize: 'clamp(1.6rem, 3vw + 0.5rem, 2.4rem)' }}>
             JKKN Dental College &amp; Hospital — Key Facts
           </h2>
-          <p className="text-gray-500 text-base mb-4 text-center">Essential information for Erode students considering dental education</p>
+          <p className="text-gray-500 text-base mb-4 text-center">Essential information for Erode learners considering dental education</p>
           <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-10" />
           <dl className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {[

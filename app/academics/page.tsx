@@ -127,7 +127,7 @@ export default function Academics() {
                   </div>
                 </div>
                 <p className="text-sm text-gray-700 mb-6 leading-relaxed">
-                  Comprehensive undergraduate program with 100 seats. Includes 4 years of academic training plus 1-year compulsory rotatory internship. DCI approved curriculum with extensive clinical exposure.
+                  Comprehensive undergraduate program with 100 seats. Includes 4 years of academic training plus 1-year compulsory rotatory internship. DCI approved learning framework with extensive clinical exposure.
                 </p>
                 <div className="flex items-center text-sm text-[#7cb983] font-semibold group-hover:translate-x-2 transition-transform">
                   Learn More →
@@ -230,7 +230,7 @@ export default function Academics() {
                 title: 'Curriculum & Syllabus',
                 href: '/academics/statutes-pertaining-to-academic-departments/bds-syllabus',
                 icon: BookOpen,
-                description: 'Comprehensive curriculum details'
+                description: 'Comprehensive learning framework details'
               },
               {
                 title: 'Learning Outcomes',
@@ -248,13 +248,13 @@ export default function Academics() {
                 title: 'Faculty Achievements',
                 href: '/academics/faculty-achievements/webinar-conferences-attended',
                 icon: Trophy,
-                description: 'Faculty recognition and awards'
+                description: 'Senior learner recognition and awards'
               },
               {
                 title: 'Mentor-Mentee Program',
                 href: '/academics/mentor-mentee-program',
                 icon: Handshake,
-                description: 'Student guidance and support'
+                description: 'Learner guidance and support'
               },
               {
                 title: 'Add-On Courses',
@@ -272,7 +272,7 @@ export default function Academics() {
                 title: 'Curriculum Feedback',
                 href: '/academics/curriculum-feedback',
                 icon: MessageCircle,
-                description: 'Student and stakeholder input'
+                description: 'Learner and stakeholder input'
               },
             ].map((resource, index) => (
               <Link key={index} href={resource.href} className="group">

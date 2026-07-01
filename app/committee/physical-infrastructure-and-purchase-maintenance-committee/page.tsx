@@ -55,7 +55,7 @@ export default function PhysicalInfrastructureCommittee() {
         <div className="max-w-6xl mx-auto">
           <div className="bg-white rounded-xl p-8 shadow-sm border border-green-100 border-l-4 border-l-[#7cb983] space-y-5">
             <p className="hero-description text-gray-700 text-base leading-relaxed text-justify font-semibold">
-              Physical infrastructure refers to the built environment and facilities that support an institution or organization&apos;s operations. This includes buildings, classrooms, laboratories, libraries, sports facilities, dormitories, and other physical structures.
+              Physical infrastructure refers to the built environment and facilities that support an institution or organization&apos;s operations. This includes buildings, learning studios, learning labs, learning commons, sports facilities, dormitories, and other physical structures.
             </p>
             <p className="text-gray-700 text-base leading-relaxed text-justify font-semibold">
               Maintenance and Upgradation of physical infrastructure are essential to ensure the safety, functionality, and efficiency of the facilities. It involves ongoing inspections, repairs, and improvements to keep the infrastructure in optimal condition. Regular maintenance includes tasks like plumbing and electrical repairs, HVAC (heating, ventilation, and air conditioning) system checks, structural inspections, and general upkeep.

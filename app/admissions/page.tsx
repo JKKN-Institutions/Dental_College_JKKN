@@ -400,7 +400,7 @@ const whyChooseReasons = [
   { text: `${collegeFacts.dentalChairs}+ dental chairs & ${collegeFacts.hospitalBeds}+ hospital beds`, icon: Stethoscope },
   { text: 'DCI approved & NAAC A grade accredited', icon: Award },
   { text: 'Affiliated to TN Dr. MGR Medical University', icon: GraduationCap },
-  { text: `${collegeFacts.totalDepartments} departments with expert faculty`, icon: Users },
+  { text: `${collegeFacts.totalDepartments} departments with expert senior learners`, icon: Users },
   { text: 'NH-544 location — accessible from Salem, Erode & Coimbatore', icon: MapPin },
 ];
 
@@ -854,7 +854,7 @@ export default function AdmissionPage() {
             Ready to Start Your Dental Career?
           </h2>
           <p className="text-lg text-gray-200 mb-8 max-w-2xl mx-auto">
-            Join {collegeFacts.quickStats.totalSeats} students admitted every year at one of
+            Join {collegeFacts.quickStats.totalSeats} learners admitted every year at one of
             Tamil Nadu&apos;s leading dental institutions. Apply now or reach out to
             our admission team for guidance.
           </p>

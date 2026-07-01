@@ -6,12 +6,12 @@ import StructuredData from '@/components/StructuredData';
 import { generateBreadcrumbSchema, generateWebPageSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
-  title: 'Student Council | JKKN Dental College',
-  description: 'Student representatives fostering campus life, organizing events, and bridging students with administration at JKKN Dental College.',
-  keywords: 'student council, student representatives, campus events, student leadership, student activities, JKKN dental college, student body',
+  title: 'Learner Council | JKKN Dental College',
+  description: 'Learner representatives fostering campus life, organizing events, and bridging learners with administration at JKKN Dental College.',
+  keywords: 'learner council, learner representatives, campus events, learner leadership, learner activities, JKKN dental college, learner body',
   openGraph: {
-    title: 'Student Council | JKKN Dental College',
-    description: 'Student representatives fostering campus life, organizing events, and bridging students with administration at JKKN Dental College.',
+    title: 'Learner Council | JKKN Dental College',
+    description: 'Learner representatives fostering campus life, organizing events, and bridging learners with administration at JKKN Dental College.',
     url: 'https://dental.jkkn.ac.in/committee/student-council/',
     type: 'website',
     siteName: 'JKKN Dental College & Hospital',
@@ -21,14 +21,14 @@ export const metadata: Metadata = {
 export default function StudentCouncil() {
   const breadcrumbSchema = generateBreadcrumbSchema('/committee/student-council');
   const webPageSchema = generateWebPageSchema({
-    title: 'Student Council - JKKN Dental College',
-    description: 'Student representatives fostering campus life, organizing events, and bridging students with administration at JKKN Dental College.',
+    title: 'Learner Council - JKKN Dental College',
+    description: 'Learner representatives fostering campus life, organizing events, and bridging learners with administration at JKKN Dental College.',
     url: 'https://dental.jkkn.ac.in/committee/student-council/',
     dateModified: '2026-03-18',
   });
   const speakableSchema = generateSpeakableWebPageSchema({
-    title: 'Student Council | JKKN Dental College',
-    description: 'Student representatives fostering campus life, organizing events, and bridging students with administration at JKKN Dental College.',
+    title: 'Learner Council | JKKN Dental College',
+    description: 'Learner representatives fostering campus life, organizing events, and bridging learners with administration at JKKN Dental College.',
     url: 'https://dental.jkkn.ac.in/committee/student-council/',
     speakableCssSelectors: ['h1', '.hero-description', 'article p'],
   });
@@ -46,7 +46,7 @@ export default function StudentCouncil() {
 
           {/* Page Title */}
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#0D5E2E] mb-8">
-            STUDENT COUNCIL
+            LEARNER COUNCIL
           </h1>
 
           {/* View Document Button */}
@@ -67,7 +67,7 @@ export default function StudentCouncil() {
             <div className="w-full">
               <img
                 src="/images/student-council-1.jpg"
-                alt="Student Council 1"
+                alt="Learner Council 1"
                 className="w-full h-64 object-cover rounded"
               />
             </div>
@@ -76,7 +76,7 @@ export default function StudentCouncil() {
             <div className="w-full">
               <img
                 src="/images/student-council-2.jpg"
-                alt="Student Council 2"
+                alt="Learner Council 2"
                 className="w-full h-64 object-cover rounded"
               />
             </div>
@@ -85,7 +85,7 @@ export default function StudentCouncil() {
             <div className="w-full">
               <img
                 src="/images/student-council-3.webp"
-                alt="Student Council 3"
+                alt="Learner Council 3"
                 className="w-full h-64 object-cover rounded"
               />
             </div>
@@ -94,7 +94,7 @@ export default function StudentCouncil() {
             <div className="w-full">
               <img
                 src="/images/student-council-4.jpg"
-                alt="Student Council 4"
+                alt="Learner Council 4"
                 className="w-full h-64 object-cover rounded"
               />
             </div>
@@ -103,7 +103,7 @@ export default function StudentCouncil() {
             <div className="w-full">
               <img
                 src="/images/student-council-5.jpeg"
-                alt="Student Council 5"
+                alt="Learner Council 5"
                 className="w-full h-64 object-cover rounded"
               />
             </div>

@@ -13,17 +13,17 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Governing Body | JKKN Dental College',
     description: 'Explore the Governing Body of JKKN Dental College, guiding excellence in dental education, healthcare, and institutional governance.',
-    url: 'https://dental.jkkn.ac.in/administration/governing-body/',
+    url: 'https://dental.jkkn.ac.in/governing-body/',
     type: 'website',
     siteName: 'JKKN Dental College & Hospital',
   },
 };
 
-const breadcrumbSchema = generateBreadcrumbSchema('/administration/governing-body/');
+const breadcrumbSchema = generateBreadcrumbSchema('/governing-body/');
 const speakableSchema = generateSpeakableWebPageSchema({
   title: 'Governing Body | JKKN Dental College',
   description: 'Explore the Governing Body of JKKN Dental College, guiding excellence in dental education, healthcare, and institutional governance.',
-  url: 'https://dental.jkkn.ac.in/administration/governing-body/',
+  url: 'https://dental.jkkn.ac.in/governing-body/',
   speakableCssSelectors: ['h1', '.hero-description', 'article p'],
 });
 
@@ -100,7 +100,7 @@ export default function GoverningBody() {
                 <div className="space-y-3">
                   {[
                     { title: 'Setting Institutional Policies', desc: 'Defining governance frameworks to enhance academic and operational efficiency.' },
-                    { title: 'Ensuring Quality Education', desc: 'Overseeing curriculum development, faculty recruitment, and student welfare initiatives.' },
+                    { title: 'Ensuring Quality Education', desc: 'Overseeing learning framework development, senior learner recruitment, and learner welfare initiatives.' },
                     { title: 'Advancing Research & Innovation', desc: 'Supporting scientific research, collaborations, and technological advancements.' },
                     { title: 'Upholding Ethical Standards', desc: 'Ensuring compliance with regulatory authorities, accreditation bodies, and ethical guidelines.' },
                     { title: 'Strengthening Community Engagement', desc: 'Promoting outreach programs, public health initiatives, and social responsibility.' },

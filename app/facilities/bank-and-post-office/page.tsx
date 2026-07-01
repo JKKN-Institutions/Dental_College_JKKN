@@ -88,7 +88,7 @@ export default function BankPostOffice() {
       <section className="bg-[#FBFBEE] py-10 px-4">
         <div className="max-w-6xl mx-auto">
           <p className="text-base md:text-lg leading-relaxed text-gray-700 border-l-4 border-[#7cb983] pl-6">
-            At JKKN Institutions, we are committed to providing our students and staff with a range of convenient services to make campus life easier. This includes banking and postal services designed to meet your daily needs without requiring you to step off campus.
+            At JKKN Institutions, we are committed to providing our learners and team members with a range of convenient services to make campus life easier. This includes banking and postal services designed to meet your daily needs without requiring you to step off campus.
           </p>
         </div>
       </section>

@@ -309,7 +309,7 @@ export default function BDSProgram() {
                   }}
                   className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#006837] font-semibold px-8 py-3 rounded-lg transition-all duration-300 inline-block"
                 >
-                  Explore Curriculum
+                  Explore Learning Framework
                 </button>
               </div>
             </div>
@@ -384,14 +384,14 @@ export default function BDSProgram() {
             {[
               { num: 1, title: 'DCI Approved & NAAC Accredited', desc: 'Fully approved by the Dental Council of India and accredited by NAAC, ensuring nationally recognized standards of dental education and patient care.' },
               { num: 2, title: '200+ Dental Chairs — Largest in the Region', desc: 'One of the largest dental clinical facilities in the Namakkal-Erode-Salem corridor with 200+ operational dental chairs and 100+ hospital beds for comprehensive training.' },
-              { num: 3, title: '500+ Daily Patients — Unmatched Clinical Exposure', desc: 'Students receive hands-on clinical training from Year 1 with 500+ patients visiting daily across 9 specialized departments — a key advantage over many BDS colleges in Tamil Nadu.' },
+              { num: 3, title: '500+ Daily Patients — Unmatched Clinical Exposure', desc: 'Learners receive hands-on clinical training from Year 1 with 500+ patients visiting daily across 9 specialized departments — a key advantage over many BDS colleges in Tamil Nadu.' },
               { num: 4, title: '92% Placement Assistance — Including International', desc: 'Strong placement record with recruiters like Apollo Hospitals, Clove Dental, NHS UK, and Cleveland Clinic Abu Dhabi. 3,000+ alumni network worldwide.' },
               { num: 5, title: '5 MDS Specializations — Seamless UG to PG Pathway', desc: 'Pursue MDS in Periodontics, Orthodontics, Prosthodontics, Conservative & Endodontics, or Oral Medicine & Radiology — 18 PG seats available right on campus.' },
               { num: 6, title: '74+ Years of Trust Legacy (Since 1952)', desc: 'Part of J.K.K. Nattraja Educational Institutions, one of the oldest educational trusts in Tamil Nadu with a legacy spanning 74+ years across 10 institutions.' },
               { num: 7, title: 'Strategic NH-544 Location — Well-Connected', desc: 'Located on the Salem-Coimbatore National Highway, easily accessible from Erode (~22 km), Salem (~58 km), Tiruchengode (~15 km), and Coimbatore (~105 km).' },
               { num: 8, title: 'AI-Integrated Campus — India\'s First', desc: 'India\'s first AI-integrated dental campus, blending traditional clinical excellence with cutting-edge artificial intelligence tools for diagnostics and education.' },
               { num: 9, title: '50+ Research Publications — Strong Research Culture', desc: 'Active research ecosystem with 50+ published research papers, 25+ academic partnerships, ethical committee approvals, and dedicated R&D facilities.' },
-              { num: 10, title: 'Affordable Fee Structure with Scholarships', desc: 'Government-regulated fee structure with scholarship options for meritorious students and economically weaker sections (BC/MBC/SC/ST categories).' },
+              { num: 10, title: 'Affordable Fee Structure with Scholarships', desc: 'Government-regulated fee structure with scholarship options for meritorious learners and economically weaker sections (BC/MBC/SC/ST categories).' },
             ].map((item) => (
               <div key={item.num} className="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-shadow duration-300">
                 <div className="flex items-start gap-4">
@@ -436,11 +436,11 @@ export default function BDSProgram() {
                 </p>
 
                 <p className="text-gray-600 mb-6 leading-relaxed">
-                  With 200+ dental chairs and 500+ daily patients across 9 departments, JKKN provides unmatched clinical experience from the very first year. Students benefit from an <a href="/ai-dental-campus/" className="text-[#7cb983] underline hover:text-[#6ba872]">AI-integrated campus</a>, advanced simulation laboratories, and digital radiology infrastructure. The college is established in 1987 under the J.K.K. Nattraja Educational Institutions trust (since 1952), carrying forward a legacy of 74+ years of educational excellence.
+                  With 200+ dental chairs and 500+ daily patients across 9 departments, JKKN provides unmatched clinical experience from the very first year. Learners benefit from an <a href="/ai-dental-campus/" className="text-[#7cb983] underline hover:text-[#6ba872]">AI-integrated campus</a>, advanced simulation learning labs, and digital radiology infrastructure. The college is established in 1987 under the J.K.K. Nattraja Educational Institutions trust (since 1952), carrying forward a legacy of 74+ years of educational excellence.
                 </p>
 
                 <p className="text-gray-600 mb-8 leading-relaxed">
-                  Students searching for the best BDS colleges near <a href="/erode/" className="text-[#7cb983] underline hover:text-[#6ba872]">Erode</a>, <a href="/salem/" className="text-[#7cb983] underline hover:text-[#6ba872]">Salem</a>, <a href="/namakkal/" className="text-[#7cb983] underline hover:text-[#6ba872]">Namakkal</a>, or <a href="/coimbatore/" className="text-[#7cb983] underline hover:text-[#6ba872]">Coimbatore</a> will find JKKN strategically located on NH-544, offering world-class dental education with 92% placement assistance and a strong <a href="/alumni/" className="text-[#7cb983] underline hover:text-[#6ba872]">alumni network</a> of 3,000+ graduates.
+                  Learners searching for the best BDS colleges near <a href="/erode/" className="text-[#7cb983] underline hover:text-[#6ba872]">Erode</a>, <a href="/salem/" className="text-[#7cb983] underline hover:text-[#6ba872]">Salem</a>, <a href="/namakkal/" className="text-[#7cb983] underline hover:text-[#6ba872]">Namakkal</a>, or <a href="/coimbatore/" className="text-[#7cb983] underline hover:text-[#6ba872]">Coimbatore</a> will find JKKN strategically located on NH-544, offering world-class dental education with 92% placement assistance and a strong <a href="/alumni/" className="text-[#7cb983] underline hover:text-[#6ba872]">alumni network</a> of 3,000+ graduates.
                 </p>
               </article>
 
@@ -459,7 +459,7 @@ export default function BDSProgram() {
                   quality={80}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end justify-center pb-6">
-                  <h3 className="text-2xl md:text-4xl font-bold text-white">Modern Dental Lab</h3>
+                  <h3 className="text-2xl md:text-4xl font-bold text-white">Modern Dental Learning Lab</h3>
                 </div>
               </div>
               <div className="relative rounded-2xl h-48 overflow-hidden shadow-lg">
@@ -520,8 +520,8 @@ export default function BDSProgram() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="font-bold text-[#006837] mb-1 text-base">Expert Faculty</h3>
-                  <p className="text-sm text-gray-600">Highly qualified and experienced teaching faculty across 9 departments</p>
+                  <h3 className="font-bold text-[#006837] mb-1 text-base">Expert Senior Learners</h3>
+                  <p className="text-sm text-gray-600">Highly qualified and experienced teaching senior learners across 9 departments</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
@@ -531,8 +531,8 @@ export default function BDSProgram() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="font-bold text-[#006837] mb-1 text-base">Modern DCI Curriculum</h3>
-                  <p className="text-sm text-gray-600">Updated syllabus aligned with latest DCI guidelines and competency-based education</p>
+                  <h3 className="font-bold text-[#006837] mb-1 text-base">Modern DCI Learning Framework</h3>
+                  <p className="text-sm text-gray-600">Updated learning pathway aligned with latest DCI guidelines and competency-based education</p>
                 </div>
               </div>
             </div>
@@ -904,11 +904,11 @@ export default function BDSProgram() {
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-[#7cb983] mt-1">&#8226;</span>
-                Hostel fees, examination fees, and other charges are additional
+                Hostel fees, learning assessment fees, and other charges are additional
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-[#7cb983] mt-1">&#8226;</span>
-                <a href="/admission/" className="text-[#7cb983] underline hover:text-[#6ba872]">Scholarships available</a> for meritorious and economically weaker students
+                <a href="/admission/" className="text-[#7cb983] underline hover:text-[#6ba872]">Scholarships available</a> for meritorious and economically weaker learners
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-[#7cb983] mt-1">&#8226;</span>
@@ -934,10 +934,10 @@ export default function BDSProgram() {
           </div>
 
           <h2 id="curriculum" className="text-3xl md:text-4xl font-bold text-white text-center mb-4">
-            Comprehensive BDS Curriculum — DCI Approved Syllabus
+            Comprehensive BDS Learning Framework — DCI Approved Learning Pathway
           </h2>
           <p className="text-gray-200 text-center mb-12 max-w-3xl mx-auto">
-            A well-structured 5-year program covering all aspects of dental science and clinical practice as per <a href="/academics/" className="text-[#7cb983] underline hover:text-[#6ba872]">DCI curriculum guidelines</a>
+            A well-structured 5-year program covering all aspects of dental science and clinical practice as per <a href="/academics/" className="text-[#7cb983] underline hover:text-[#6ba872]">DCI learning framework guidelines</a>
           </p>
 
           {/* Year Tabs */}
@@ -1091,7 +1091,7 @@ export default function BDSProgram() {
           </div>
 
           <h2 className="text-3xl md:text-4xl font-bold text-[#006837] text-center mb-4">
-            World-Class Dental Facilities for BDS Students
+            World-Class Dental Facilities for BDS Learners
           </h2>
           <p className="text-gray-600 text-center mb-12 max-w-3xl mx-auto">
             State-of-the-art infrastructure designed for excellence in dental education. <a href="/facilities/" className="text-[#7cb983] underline hover:text-[#6ba872]">View all facilities</a>.
@@ -1100,10 +1100,10 @@ export default function BDSProgram() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               { title: 'Dental Hospital', subtitle: '200+ Chairs & 100+ Beds', desc: 'Fully equipped multi-specialty dental hospital for comprehensive clinical training with 500+ daily patients', gradient: 'from-[#006837] to-[#002309]', iconBg: 'bg-[#7cb983]' },
-              { title: 'Simulation Lab', subtitle: 'Phantom Head Units', desc: 'Advanced simulation laboratory for pre-clinical skill development and practice before patient contact', gradient: 'from-[#7cb983] to-[#6ba872]', iconBg: 'bg-white/20' },
+              { title: 'Simulation Learning Lab', subtitle: 'Phantom Head Units', desc: 'Advanced simulation learning lab for pre-clinical skill development and practice before patient contact', gradient: 'from-[#7cb983] to-[#6ba872]', iconBg: 'bg-white/20' },
               { title: 'Digital Radiology', subtitle: 'OPG, CBCT & Digital X-Ray', desc: 'Latest digital radiology equipment for accurate diagnosis and treatment planning', gradient: 'from-[#7cb983] to-[#6ba872]', iconBg: 'bg-white/20' },
               { title: 'Research Center', subtitle: 'R&D Facilities', desc: 'Dedicated research infrastructure supporting 50+ publications and evidence-based dentistry', gradient: 'from-[#006837] to-[#002309]', iconBg: 'bg-[#7cb983]' },
-              { title: 'Digital Library', subtitle: 'Books, Journals & E-Resources', desc: 'Central library with extensive collection of dental textbooks, international journals, and online databases', gradient: 'from-[#7cb983] to-[#6ba872]', iconBg: 'bg-white/20' },
+              { title: 'Digital Learning Commons', subtitle: 'Books, Journals & E-Resources', desc: 'Central learning commons with extensive collection of dental textbooks, international journals, and online databases', gradient: 'from-[#7cb983] to-[#6ba872]', iconBg: 'bg-white/20' },
               { title: 'AI-Integrated Campus', subtitle: "India's First", desc: 'Cutting-edge AI tools integrated into dental education, diagnostics, and patient management systems', gradient: 'from-[#006837] to-[#002309]', iconBg: 'bg-[#7cb983]' },
             ].map((facility, idx) => (
               <div key={idx} className={`bg-gradient-to-br ${facility.gradient} rounded-2xl p-8 text-white relative overflow-hidden group hover:shadow-2xl transition-shadow duration-300`}>
@@ -1127,15 +1127,15 @@ export default function BDSProgram() {
               <svg className="w-5 h-5 text-[#7cb983]" fill="currentColor" viewBox="0 0 20 20">
                 <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z" />
               </svg>
-              <span className="text-[#006837] font-semibold text-sm">OUR FACULTY</span>
+              <span className="text-[#006837] font-semibold text-sm">OUR SENIOR LEARNERS</span>
             </div>
           </div>
 
           <h2 className="text-3xl md:text-4xl font-bold text-[#006837] text-center mb-4">
-            Distinguished Faculty — Experts in Dental Sciences
+            Distinguished Senior Learners — Experts in Dental Sciences
           </h2>
           <p className="text-gray-600 text-center mb-12 max-w-3xl mx-auto">
-            Our experienced faculty bring decades of clinical and academic expertise, contributing to 50+ research publications and mentoring the next generation of dental professionals
+            Our experienced senior learners bring decades of clinical and academic expertise, contributing to 50+ research publications and mentoring the next generation of dental professionals
           </p>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -1163,7 +1163,7 @@ export default function BDSProgram() {
           </div>
 
           <p className="text-center mt-8 text-gray-600">
-            JKKN Dental College has a team of highly qualified faculty across all 9 departments. <a href="/academics/" className="text-[#7cb983] underline hover:text-[#6ba872]">View complete faculty list</a>.
+            JKKN Dental College has a team of highly qualified senior learners across all 9 departments. <a href="/academics/" className="text-[#7cb983] underline hover:text-[#6ba872]">View complete senior learners list</a>.
           </p>
         </div>
       </section>
@@ -1313,7 +1313,7 @@ export default function BDSProgram() {
           </div>
 
           <h2 className="text-3xl md:text-4xl font-bold text-[#006837] text-center mb-4">
-            Scholarships & Financial Aid for BDS Students
+            Scholarships & Financial Aid for BDS Learners
           </h2>
           <p className="text-gray-600 text-center mb-12 max-w-3xl mx-auto">
             Multiple scholarship options to make quality dental education accessible. <a href="/admission/" className="text-[#7cb983] underline hover:text-[#6ba872]">Learn more about admissions and financial aid</a>.
@@ -1327,7 +1327,7 @@ export default function BDSProgram() {
                 </svg>
               </div>
               <h3 className="font-bold text-[#006837] text-lg mb-3">Government Scholarships</h3>
-              <p className="text-gray-600 text-sm leading-relaxed">State government scholarships for BC, MBC, SC, ST category students as per Tamil Nadu government norms. Includes fee waivers, stipends, and maintenance allowances.</p>
+              <p className="text-gray-600 text-sm leading-relaxed">State government scholarships for BC, MBC, SC, ST category learners as per Tamil Nadu government norms. Includes fee waivers, stipends, and maintenance allowances.</p>
             </div>
 
             <div className="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-shadow duration-300">
@@ -1337,7 +1337,7 @@ export default function BDSProgram() {
                 </svg>
               </div>
               <h3 className="font-bold text-[#006837] text-lg mb-3">Merit Scholarships</h3>
-              <p className="text-gray-600 text-sm leading-relaxed">Merit-based scholarships for students with outstanding NEET scores and academic performance. Partial fee concessions available based on entrance rank and Class 12 marks.</p>
+              <p className="text-gray-600 text-sm leading-relaxed">Merit-based scholarships for learners with outstanding NEET scores and academic performance. Partial fee concessions available based on entrance rank and Class 12 marks.</p>
             </div>
 
             <div className="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-shadow duration-300">
@@ -1347,7 +1347,7 @@ export default function BDSProgram() {
                 </svg>
               </div>
               <h3 className="font-bold text-[#006837] text-lg mb-3">Management Scholarships</h3>
-              <p className="text-gray-600 text-sm leading-relaxed">Institution-level financial aid for deserving students from economically weaker backgrounds. Contact the admissions office for eligibility criteria and application process.</p>
+              <p className="text-gray-600 text-sm leading-relaxed">Institution-level financial aid for deserving learners from economically weaker backgrounds. Contact the admissions office for eligibility criteria and application process.</p>
             </div>
           </div>
         </div>
@@ -1368,7 +1368,7 @@ export default function BDSProgram() {
           </div>
 
           <h2 className="text-3xl md:text-4xl font-bold text-[#006837] text-center mb-4">
-            Hostel & Campus Life for BDS Students
+            Hostel & Campus Life for BDS Learners
           </h2>
           <p className="text-gray-600 text-center mb-12 max-w-3xl mx-auto">
             A safe, comfortable, and enriching residential experience on campus. <a href="/facilities/hostel/" className="text-[#7cb983] underline hover:text-[#6ba872]">View hostel details</a>.
@@ -1436,15 +1436,15 @@ export default function BDSProgram() {
               <svg className="w-5 h-5 text-[#7cb983]" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M18 13V5a2 2 0 00-2-2H4a2 2 0 00-2 2v8a2 2 0 002 2h3l3 3 3-3h3a2 2 0 002-2zM5 7a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1zm1 3a1 1 0 100 2h3a1 1 0 100-2H6z" clipRule="evenodd" />
               </svg>
-              <span className="text-[#7cb983] font-semibold text-sm">STUDENT VOICES</span>
+              <span className="text-[#7cb983] font-semibold text-sm">LEARNER VOICES</span>
             </div>
           </div>
 
           <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-4">
-            What Our BDS Students Say
+            What Our BDS Learners Say
           </h2>
           <p className="text-gray-200 text-center mb-12 max-w-3xl mx-auto">
-            Hear from students and alumni about their experience at JKKN Dental College
+            Hear from learners and alumni about their experience at JKKN Dental College
           </p>
 
           <div className="grid md:grid-cols-3 gap-6">
@@ -1452,17 +1452,17 @@ export default function BDSProgram() {
               {
                 name: '[Student Name — UPDATE]',
                 batch: 'BDS Batch [Year — UPDATE]',
-                quote: 'The clinical exposure at JKKN is unmatched. With 500+ patients visiting daily, I got hands-on experience from my second year itself. The 200+ dental chair facility means every student gets ample practice time, which is rare at other colleges.',
+                quote: 'The clinical exposure at JKKN is unmatched. With 500+ patients visiting daily, I got hands-on experience from my second year itself. The 200+ dental chair facility means every learner gets ample practice time, which is rare at other colleges.',
               },
               {
                 name: '[Student Name — UPDATE]',
                 batch: 'BDS Batch [Year — UPDATE]',
-                quote: 'The faculty at JKKN are incredibly supportive. The professors bring years of clinical and research experience to the classroom. The research culture here, with 50+ publications, encouraged me to pursue evidence-based dentistry early in my career.',
+                quote: 'The senior learners at JKKN are incredibly supportive. The senior learners bring years of clinical and research experience to the learning studio. The research culture here, with 50+ publications, encouraged me to pursue evidence-based dentistry early in my career.',
               },
               {
                 name: '[Student Name — UPDATE]',
                 batch: 'BDS Batch [Year — UPDATE]',
-                quote: 'JKKN helped me secure an international placement opportunity. The placement cell actively connects students with recruiters from NHS UK and dental practices in UAE. The 92% placement rate is backed by genuine support from the institution.',
+                quote: 'JKKN helped me secure an international placement opportunity. The placement cell actively connects learners with recruiters from NHS UK and dental practices in UAE. The 92% placement rate is backed by genuine support from the institution.',
               },
             ].map((testimonial, idx) => (
               <div key={idx} className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6">
@@ -1505,7 +1505,7 @@ export default function BDSProgram() {
             {[
               {
                 q: 'What is the duration of the BDS course?',
-                a: 'The Bachelor of Dental Surgery (BDS) program at JKKN Dental College is a 5-year course. This includes 4 years of academic study covering pre-clinical, para-clinical, and clinical subjects, followed by 1 year of compulsory rotating internship where students gain hands-on clinical experience across all 9 departments.'
+                a: 'The Bachelor of Dental Surgery (BDS) program at JKKN Dental College is a 5-year course. This includes 4 years of academic study covering pre-clinical, para-clinical, and clinical subjects, followed by 1 year of compulsory rotating internship where learners gain hands-on clinical experience across all 9 departments.'
               },
               {
                 q: 'What is the eligibility criteria for BDS admission?',
@@ -1520,8 +1520,8 @@ export default function BDSProgram() {
                 a: 'BDS graduates from JKKN have diverse career paths including private dental practice, government dental hospitals, corporate dental chains like Clove Dental and Dental Planet, MDS specialization (5 options available at JKKN), research and academics, armed forces dental corps, dental product industry, and public health dentistry. JKKN offers 92% placement assistance with domestic and international opportunities.'
               },
               {
-                q: 'What facilities are available for BDS students?',
-                a: 'JKKN offers 200+ dental chairs, 100+ hospital beds, advanced simulation laboratories, digital radiology (OPG, CBCT), 9 specialized departments, central library with digital resources, separate hostels, sports facilities, and a Wi-Fi enabled AI-integrated campus on NH-544.'
+                q: 'What facilities are available for BDS learners?',
+                a: 'JKKN offers 200+ dental chairs, 100+ hospital beds, advanced simulation learning labs, digital radiology (OPG, CBCT), 9 specialized departments, central learning commons with digital resources, separate hostels, sports facilities, and a Wi-Fi enabled AI-integrated campus on NH-544.'
               },
               {
                 q: 'Can I pursue MDS after BDS from this college?',
@@ -1529,7 +1529,7 @@ export default function BDSProgram() {
               },
               {
                 q: 'What is the BDS course fee at JKKN Dental College?',
-                a: 'BDS fees at JKKN are regulated by the Tamil Nadu Government Fee Fixation Committee. Both Government Quota and Management Quota fees are determined as per state norms. For the latest 2026-27 fee structure, contact the admissions office at +91 93458 55001 or visit www.jkkn.ai/apply/jkkn-admission-2026. Scholarships are available for meritorious and economically weaker students.'
+                a: 'BDS fees at JKKN are regulated by the Tamil Nadu Government Fee Fixation Committee. Both Government Quota and Management Quota fees are determined as per state norms. For the latest 2026-27 fee structure, contact the admissions office at +91 93458 55001 or visit www.jkkn.ai/apply/jkkn-admission-2026. Scholarships are available for meritorious and economically weaker learners.'
               },
               {
                 q: 'What is the NEET cutoff for BDS admission at JKKN?',
@@ -1548,16 +1548,16 @@ export default function BDSProgram() {
                 a: 'JKKN Dental College is at Natarajapuram, NH-544, Komarapalayam, Namakkal District, Tamil Nadu 638183. Distances: Tiruchengode (~15 km), Erode (~22 km, 35 min), Salem (~58 km, 1 hr), Namakkal town (~66 km), Tiruppur (~67 km), Coimbatore (~105 km, 2 hrs). It is the best BDS college on the Salem-Coimbatore NH-544 corridor.'
               },
               {
-                q: 'What hostel facilities are available for BDS students?',
+                q: 'What hostel facilities are available for BDS learners?',
                 a: 'JKKN provides separate boys and girls hostels with 24/7 security, Wi-Fi, hygienic mess (veg and non-veg), laundry services, hot water, indoor recreation, and proximity to academic buildings. The campus location on NH-544 ensures convenient access to Erode and Salem.'
               },
               {
                 q: 'How many dental chairs does JKKN Dental Hospital have?',
-                a: 'JKKN Dental Hospital has 200+ dental chairs and 100+ hospital beds, making it one of the largest dental facilities in the Namakkal-Erode-Salem region. The hospital serves 500+ patients daily across 9 departments, providing extensive clinical exposure to BDS students from Year 1.'
+                a: 'JKKN Dental Hospital has 200+ dental chairs and 100+ hospital beds, making it one of the largest dental facilities in the Namakkal-Erode-Salem region. The hospital serves 500+ patients daily across 9 departments, providing extensive clinical exposure to BDS learners from Year 1.'
               },
               {
-                q: 'Can international students apply for BDS at JKKN?',
-                a: 'Yes, international students and NRI candidates can apply as per DCI guidelines and TN Dr. MGR Medical University regulations. NRI/Foreign national seats are available. Contact the international admissions desk at +91 93458 55001 or email dental@jkkn.ac.in for requirements.'
+                q: 'Can international learners apply for BDS at JKKN?',
+                a: 'Yes, international learners and NRI candidates can apply as per DCI guidelines and TN Dr. MGR Medical University regulations. NRI/Foreign national seats are available. Contact the international admissions desk at +91 93458 55001 or email dental@jkkn.ac.in for requirements.'
               },
               {
                 q: 'What MDS specializations are available after BDS at JKKN?',

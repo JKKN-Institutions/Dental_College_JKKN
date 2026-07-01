@@ -265,12 +265,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${baseUrl}/facilities/bank-and-post-office/`, lastModified: now, changeFrequency: 'yearly', priority: 0.4 },
 
     // Administration
-    { url: `${baseUrl}/administration/principals-message/`, lastModified: now, changeFrequency: 'yearly', priority: 0.6 },
-    { url: `${baseUrl}/administration/academic-leadership/`, lastModified: now, changeFrequency: 'yearly', priority: 0.6 },
-    { url: `${baseUrl}/administration/academic-council/`, lastModified: now, changeFrequency: 'yearly', priority: 0.5 },
-    { url: `${baseUrl}/administration/governing-body/`, lastModified: now, changeFrequency: 'yearly', priority: 0.5 },
-    { url: `${baseUrl}/administration/finance-officer/`, lastModified: now, changeFrequency: 'yearly', priority: 0.4 },
-    { url: `${baseUrl}/administration/internal-complaints-committee/`, lastModified: now, changeFrequency: 'yearly', priority: 0.4 },
+    { url: `${baseUrl}/principals-message/`, lastModified: now, changeFrequency: 'yearly', priority: 0.6 },
+    { url: `${baseUrl}/academic-leadership/`, lastModified: now, changeFrequency: 'yearly', priority: 0.6 },
+    { url: `${baseUrl}/academic-council/`, lastModified: now, changeFrequency: 'yearly', priority: 0.5 },
+    { url: `${baseUrl}/governing-body/`, lastModified: now, changeFrequency: 'yearly', priority: 0.5 },
+    { url: `${baseUrl}/finance-officer/`, lastModified: now, changeFrequency: 'yearly', priority: 0.4 },
+    { url: `${baseUrl}/internal-complaints-committee/`, lastModified: now, changeFrequency: 'yearly', priority: 0.4 },
 
     // Committees
     { url: `${baseUrl}/committee/anti-ragging-committee/`, lastModified: now, changeFrequency: 'yearly', priority: 0.5 },

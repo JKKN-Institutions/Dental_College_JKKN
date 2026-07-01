@@ -20,9 +20,9 @@ export default function PlacementsPage() {
   ];
 
   const processSteps = [
-    { step: 1, title: 'Registration & Profile Building', desc: 'Students register with the CDC and build professional profiles including academic records, clinical experience, and career preferences.' },
-    { step: 2, title: 'Resume Workshop & Skill Development', desc: 'CDC conducts resume writing workshops, soft skills training, and professional development sessions to prepare students for the job market.' },
-    { step: 3, title: 'Company Connect & Campus Drives', desc: 'CDC organises campus recruitment drives, industry interactions, and connects students with 25+ recruiting partners including corporate dental chains and hospitals.' },
+    { step: 1, title: 'Registration & Profile Building', desc: 'Learners register with the CDC and build professional profiles including academic records, clinical experience, and career preferences.' },
+    { step: 2, title: 'Resume Workshop & Skill Development', desc: 'CDC conducts resume writing workshops, soft skills training, and professional development sessions to prepare learners for the job market.' },
+    { step: 3, title: 'Company Connect & Campus Drives', desc: 'CDC organises campus recruitment drives, industry interactions, and connects learners with 25+ recruiting partners including corporate dental chains and hospitals.' },
     { step: 4, title: 'Interview Preparation & Mock Sessions', desc: 'Dedicated interview preparation with mock interviews, group discussions, and clinical case presentations to build confidence and readiness.' },
     { step: 5, title: 'Offer Facilitation & Joining Support', desc: 'CDC facilitates offer letters, salary negotiations, and provides joining support including relocation guidance for outstation and international placements.' },
   ];
@@ -58,7 +58,7 @@ export default function PlacementsPage() {
     { icon: <Hospital className="w-7 h-7 text-[#006837]" />, title: 'Hospital Dentistry', desc: 'Work in multi-specialty hospitals, corporate dental chains, or government hospitals as a dental surgeon or specialist.' },
     { icon: <GraduationCap className="w-7 h-7 text-[#006837]" />, title: 'Higher Studies (MDS)', desc: 'Pursue MDS in 5 specialisations at JKKN or other top institutions. Strong NEET MDS coaching support provided.' },
     { icon: <Globe className="w-7 h-7 text-[#006837]" />, title: 'International Opportunities', desc: 'Work in the UK (NHS), UAE, Saudi Arabia, or Singapore. CDC assists with licensing exam preparation and placement.' },
-    { icon: <Microscope className="w-7 h-7 text-[#006837]" />, title: 'Research & Academia', desc: 'Join dental research institutions or teaching colleges. 50+ faculty publications provide a strong research foundation.' },
+    { icon: <Microscope className="w-7 h-7 text-[#006837]" />, title: 'Research & Academia', desc: 'Join dental research institutions or teaching colleges. 50+ senior learner publications provide a strong research foundation.' },
     { icon: <Users className="w-7 h-7 text-[#006837]" />, title: 'Public Health Dentistry', desc: 'Serve communities through government PHCs, public health programmes, and dental outreach initiatives across India.' },
   ];
 
@@ -76,10 +76,10 @@ export default function PlacementsPage() {
     { q: 'What career options are available after BDS?', a: 'After BDS from JKKN, graduates can pursue private practice, hospital dentistry, higher studies (MDS), international opportunities, dental research, or public health dentistry. The CDC provides guidance for all career pathways.' },
     { q: 'How does the JKKN Dental Placement Cell work?', a: `The CDC operates a structured 5-step process: Registration & Profile Building, Resume Workshop & Skill Development, Company Connect & Campus Drives, Interview Preparation & Mock Sessions, and Offer Facilitation & Joining Support. With ${collegeFacts.partnerships}+ recruiting partners, the CDC ensures comprehensive placement support.` },
     { q: 'What is the highest package from JKKN Dental College?', a: 'The highest package offered to JKKN Dental graduates is in the range of 8-10 LPA, typically from corporate dental chains and international healthcare organisations. [UPDATE \u2014 verify from CDC records]' },
-    { q: 'Can JKKN Dental students get government jobs?', a: 'Yes, many JKKN Dental alumni serve in government Primary Health Centres (PHCs), district hospitals, and dental departments across Tamil Nadu. The college provides guidance for TNPSC and other government dental recruitment exams.' },
+    { q: 'Can JKKN Dental learners get government jobs?', a: 'Yes, many JKKN Dental alumni serve in government Primary Health Centres (PHCs), district hospitals, and dental departments across Tamil Nadu. The college provides guidance for TNPSC and other government dental recruitment exams.' },
     { q: 'How many alumni does JKKN Dental College have?', a: `JKKN Dental College has a strong alumni network of ${collegeFacts.alumniCount.toLocaleString()}+ graduates spread across India and internationally. Alumni work in leading hospitals, corporate dental chains, government services, and private practice.` },
-    { q: 'Is JKKN Dental College good for higher studies after BDS?', a: `Yes, JKKN Dental College has a strong track record of students clearing NEET MDS and pursuing postgraduate specialisations. The college offers MDS in ${collegeFacts.mdsSpecialisations} specialisations and provides dedicated coaching and mentoring for competitive exams.` },
-    { q: 'Does JKKN have placement for MDS students?', a: `Yes, MDS graduates from JKKN receive dedicated placement support. With advanced clinical training across ${collegeFacts.mdsSpecialisations} specialisations and ${collegeFacts.publications}+ faculty publications, MDS graduates are placed in teaching institutions, specialty hospitals, and research organisations.` },
+    { q: 'Is JKKN Dental College good for higher studies after BDS?', a: `Yes, JKKN Dental College has a strong track record of learners clearing NEET MDS and pursuing postgraduate specialisations. The college offers MDS in ${collegeFacts.mdsSpecialisations} specialisations and provides dedicated coaching and mentoring for competitive exams.` },
+    { q: 'Does JKKN have placement for MDS learners?', a: `Yes, MDS graduates from JKKN receive dedicated placement support. With advanced clinical training across ${collegeFacts.mdsSpecialisations} specialisations and ${collegeFacts.publications}+ senior learner publications, MDS graduates are placed in teaching institutions, specialty hospitals, and research organisations.` },
   ];
 
   return (

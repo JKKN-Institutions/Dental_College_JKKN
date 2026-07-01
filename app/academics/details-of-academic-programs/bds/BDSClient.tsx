@@ -188,7 +188,7 @@ export default function BDSClient() {
                   }}
                   className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#006837] font-semibold px-8 py-3 rounded-lg transition-all duration-300 inline-block"
                 >
-                  Explore Curriculum
+                  Explore Learning Framework
                 </button>
               </div>
             </div>
@@ -288,7 +288,7 @@ export default function BDSClient() {
                   </div>
                   <div>
                     <h3 className="font-bold text-[#006837] mb-1 text-base">Expert Learning Facilitators</h3>
-                    <p className="text-sm text-gray-600">Highly qualified and experienced faculty</p>
+                    <p className="text-sm text-gray-600">Highly qualified and experienced senior learners</p>
                   </div>
                 </div>
 
@@ -299,8 +299,8 @@ export default function BDSClient() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-bold text-[#006837] mb-1 text-base">Modern Curriculum</h3>
-                    <p className="text-sm text-gray-600">Updated syllabus aligned with DCI guidelines</p>
+                    <h3 className="font-bold text-[#006837] mb-1 text-base">Modern Learning Framework</h3>
+                    <p className="text-sm text-gray-600">Updated learning pathway aligned with DCI guidelines</p>
                   </div>
                 </div>
               </div>
@@ -318,7 +318,7 @@ export default function BDSClient() {
                   quality={80}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end justify-center pb-6">
-                  <h3 className="text-2xl md:text-4xl font-bold text-white">Modern Dental Lab</h3>
+                  <h3 className="text-2xl md:text-4xl font-bold text-white">Modern Dental Learning Lab</h3>
                 </div>
               </div>
               <div className="relative rounded-2xl h-56 overflow-hidden shadow-lg">
@@ -575,7 +575,7 @@ export default function BDSClient() {
           </div>
 
           <h2 id='curriculum' className="text-3xl md:text-4xl font-bold text-white text-center mb-4">
-            Comprehensive BDS Curriculum
+            Comprehensive BDS Learning Framework
           </h2>
           <p className="text-gray-200 text-center mb-12 max-w-3xl mx-auto">
             A well-structured program covering all aspects of dental science and clinical practice
@@ -1094,8 +1094,8 @@ export default function BDSClient() {
                   <path fillRule="evenodd" d="M3 5a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2h-2.22l.123.489.804.804A1 1 0 0113 18H7a1 1 0 01-.707-1.707l.804-.804L7.22 15H5a2 2 0 01-2-2V5zm5.771 7H5V5h10v7H8.771z" clipRule="evenodd" />
                 </svg>
               </div>
-              <h3 className="text-3xl font-bold mb-4">Simulation Lab</h3>
-              <h4 className="text-xl font-semibold mb-3">Simulation Laboratory</h4>
+              <h3 className="text-3xl font-bold mb-4">Simulation Learning Lab</h3>
+              <h4 className="text-xl font-semibold mb-3">Simulation Learning Lab</h4>
               <p className="text-gray-100">Phantom head units for pre-clinical skill development</p>
             </div>
 
@@ -1131,8 +1131,8 @@ export default function BDSClient() {
                   <path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z" />
                 </svg>
               </div>
-              <h3 className="text-3xl font-bold mb-4">Digital Library</h3>
-              <h4 className="text-xl font-semibold mb-3">Digital Library</h4>
+              <h3 className="text-3xl font-bold mb-4">Digital Learning Commons</h3>
+              <h4 className="text-xl font-semibold mb-3">Digital Learning Commons</h4>
               <p className="text-gray-100">Extensive collection of books, journals, and e-resources</p>
             </div>
 
@@ -1386,7 +1386,7 @@ export default function BDSClient() {
                 </svg>
               </summary>
               <div className="px-6 pb-6 text-gray-600 leading-relaxed border-t-2 border-green-200 pt-4">
-                Our campus offers comprehensive facilities including a 100+ bedded attached dental hospital, advanced simulation laboratories, digital radiology department with OPG and CBCT, well-equipped Learning Studios, central library with digital resources, separate hostel accommodation, sports facilities, and Wi-Fi enabled campus.
+                Our campus offers comprehensive facilities including a 100+ bedded attached dental hospital, advanced simulation learning labs, digital radiology department with OPG and CBCT, well-equipped Learning Studios, central learning commons with digital resources, separate hostel accommodation, sports facilities, and Wi-Fi enabled campus.
               </div>
             </details>
 
@@ -1399,7 +1399,7 @@ export default function BDSClient() {
                 </svg>
               </summary>
               <div className="px-6 pb-6 text-gray-600 leading-relaxed border-t-2 border-green-200 pt-4">
-                Yes, after completing BDS, graduates can pursue MDS by qualifying NEET-MDS examination. JKKN Dental College & Hospital also offers MDS programs in various specializations. Our BDS curriculum is designed to provide a strong foundation for postgraduate studies.
+                Yes, after completing BDS, graduates can pursue MDS by qualifying NEET-MDS examination. JKKN Dental College & Hospital also offers MDS programs in various specializations. Our BDS learning framework is designed to provide a strong foundation for postgraduate studies.
               </div>
             </details>
           </div>

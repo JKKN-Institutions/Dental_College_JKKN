@@ -48,7 +48,7 @@ export default function ScholarshipsPage() {
             Scholarship <span className="text-[#7cb983]">Details</span>
           </h1>
           <p className="text-lg text-gray-200 max-w-3xl mx-auto leading-relaxed">
-            Government and institutional scholarships available for eligible BDS students at JKKN Dental College &amp; Hospital.
+            Government and institutional scholarships available for eligible BDS learners at JKKN Dental College &amp; Hospital.
           </p>
         </div>
       </section>

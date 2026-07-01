@@ -47,7 +47,7 @@ const sections = [
     number: '4',
     title: 'Institutional Commitment to Equity',
     points: [
-      'Supports underprivileged students through accessible admission processes and policy implementation.',
+      'Supports underprivileged learners through accessible admission processes and policy implementation.',
       'Focuses on long-term inclusivity aligned with NEP 2020 and NAAC criteria.',
     ],
   },
@@ -81,7 +81,7 @@ export default function EquitableOpportunityForSEDGGroup() {
           </h1>
           <div className="w-20 h-1 bg-[#7cb983] mb-6 rounded-full" />
           <p className="hero-description text-white/85 text-base md:text-lg leading-relaxed max-w-3xl">
-            JKKN Dental College is committed to inclusive education by providing equitable access to students from Socio-Economically Disadvantaged Groups (SEDGs). The following initiatives reflect our alignment with the UGC&apos;s 2024 guidelines:
+            JKKN Dental College is committed to inclusive education by providing equitable access to learners from Socio-Economically Disadvantaged Groups (SEDGs). The following initiatives reflect our alignment with the UGC&apos;s 2024 guidelines:
           </p>
         </div>
       </section>
@@ -117,7 +117,7 @@ export default function EquitableOpportunityForSEDGGroup() {
           {/* Conclusion */}
           <div className="bg-white rounded-2xl shadow-sm border border-[#7cb983]/30 px-6 py-5">
             <p className="text-gray-700 leading-relaxed text-sm md:text-base">
-              This integrated approach ensures JKKN Dental College&apos;s alignment with UGC&apos;s vision for empowering disadvantaged students and promoting inclusive education in higher education institutions.
+              This integrated approach ensures JKKN Dental College&apos;s alignment with UGC&apos;s vision for empowering disadvantaged learners and promoting inclusive education in higher education institutions.
             </p>
           </div>
 

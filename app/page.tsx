@@ -434,7 +434,7 @@ export default function Home() {
   const principalSchema = {
     "@context": "https://schema.org",
     "@type": "Person",
-    "@id": "https://dental.jkkn.ac.in/administration/principals-message/#person",
+    "@id": "https://dental.jkkn.ac.in/principals-message/#person",
     "name": "Dr. Dhanasekar Balakrishnan",
     "jobTitle": "Principal",
     "worksFor": {

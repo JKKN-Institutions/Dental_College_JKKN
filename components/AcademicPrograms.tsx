@@ -38,7 +38,7 @@ export default function AcademicPrograms() {
               <ul className="space-y-3 mb-8 list-none p-0 m-0">
                 <li className="flex items-start gap-3">
                   <Check className="w-5 h-5 sm:w-6 sm:h-6 text-[#7cb983] flex-shrink-0" />
-                  <span className="text-gray-700 text-sm sm:text-base">Complete curriculum covering oral biology, pathology, surgery, and restorative dentistry</span>
+                  <span className="text-gray-700 text-sm sm:text-base">Complete learning framework covering oral biology, pathology, surgery, and restorative dentistry</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <Check className="w-5 h-5 sm:w-6 sm:h-6 text-[#7cb983] flex-shrink-0" />
@@ -46,7 +46,7 @@ export default function AcademicPrograms() {
                 </li>
                 <li className="flex items-start gap-3">
                   <Check className="w-5 h-5 sm:w-6 sm:h-6 text-[#7cb983] flex-shrink-0" />
-                  <span className="text-gray-700 text-sm sm:text-base">Modern simulation labs for pre-clinical practice</span>
+                  <span className="text-gray-700 text-sm sm:text-base">Modern simulation learning labs for pre-clinical practice</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <Check className="w-5 h-5 sm:w-6 sm:h-6 text-[#7cb983] flex-shrink-0" />
@@ -96,7 +96,7 @@ export default function AcademicPrograms() {
                 </li>
                 <li className="flex items-start gap-3">
                   <Check className="w-5 h-5 sm:w-6 sm:h-6 text-[#7cb983] flex-shrink-0" />
-                  <span className="text-gray-700 text-sm sm:text-base">Research-oriented curriculum with publication support</span>
+                  <span className="text-gray-700 text-sm sm:text-base">Research-oriented learning framework with publication support</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <Check className="w-5 h-5 sm:w-6 sm:h-6 text-[#7cb983] flex-shrink-0" />

@@ -138,7 +138,7 @@ export default function MDSProsthodontics() {
                   onClick={() => document.getElementById('curriculum')?.scrollIntoView({ behavior: 'smooth' })}
                   className="bg-white/10 backdrop-blur-sm border-2 border-white text-white hover:bg-white hover:text-[#006837] font-bold px-8 py-4 rounded-lg text-lg transition-all duration-300"
                 >
-                  Explore Curriculum
+                  Explore Learning Framework
                 </button>
               </div>
             </div>
@@ -346,11 +346,11 @@ export default function MDSProsthodontics() {
           </div>
 
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 text-center mb-4">
-            3-Year Curriculum
+            3-Year Learning Framework
           </h2>
 
           <p className="text-lg text-gray-700 text-center mb-12 max-w-4xl mx-auto">
-            A comprehensive curriculum designed to build expertise progressively from foundational knowledge to specialized clinical mastery in prosthodontics.
+            A comprehensive learning framework designed to build expertise progressively from foundational knowledge to specialized clinical mastery in prosthodontics.
           </p>
 
           {/* Curriculum Cards */}
@@ -823,32 +823,32 @@ export default function MDSProsthodontics() {
             {/* Ceramic Lab */}
             <div className="bg-[#FBFBEE] rounded-2xl overflow-hidden shadow-lg border border-gray-200">
               <div className="bg-gradient-to-br from-[#7cb983] to-[#6ba872] p-12 flex items-center justify-center h-48">
-                <h3 className="text-4xl font-bold text-white text-center">Ceramic Lab</h3>
+                <h3 className="text-4xl font-bold text-white text-center">Ceramic Learning Lab</h3>
               </div>
               <div className="p-6">
-                <h4 className="text-xl font-bold text-gray-900 mb-3">Ceramic Laboratory</h4>
-                <p className="text-gray-700">Fully equipped ceramic lab with advanced furnaces, layering stations, and shade matching technology.</p>
+                <h4 className="text-xl font-bold text-gray-900 mb-3">Ceramic Learning Lab</h4>
+                <p className="text-gray-700">Fully equipped ceramic learning lab with advanced furnaces, layering stations, and shade matching technology.</p>
               </div>
             </div>
 
             {/* Prosthetics Lab */}
             <div className="bg-[#FBFBEE] rounded-2xl overflow-hidden shadow-lg border border-gray-200">
               <div className="bg-gradient-to-br from-[#006837] to-[#002309] p-12 flex items-center justify-center h-48">
-                <h3 className="text-4xl font-bold text-white text-center">Prosthetics Lab</h3>
+                <h3 className="text-4xl font-bold text-white text-center">Prosthetics Learning Lab</h3>
               </div>
               <div className="p-6">
-                <h4 className="text-xl font-bold text-gray-900 mb-3">Prosthodontics Laboratory</h4>
-                <p className="text-gray-700">Comprehensive lab with modern articulators, surveying equipment, and precision casting facilities.</p>
+                <h4 className="text-xl font-bold text-gray-900 mb-3">Prosthodontics Learning Lab</h4>
+                <p className="text-gray-700">Comprehensive learning lab with modern articulators, surveying equipment, and precision casting facilities.</p>
               </div>
             </div>
 
             {/* Simulation Lab */}
             <div className="bg-[#FBFBEE] rounded-2xl overflow-hidden shadow-lg border border-gray-200">
               <div className="bg-gradient-to-br from-[#7cb983] to-[#6ba872] p-12 flex items-center justify-center h-48">
-                <h3 className="text-4xl font-bold text-white text-center">Simulation Lab</h3>
+                <h3 className="text-4xl font-bold text-white text-center">Simulation Learning Lab</h3>
               </div>
               <div className="p-6">
-                <h4 className="text-xl font-bold text-gray-900 mb-3">Simulation Laboratory</h4>
+                <h4 className="text-xl font-bold text-gray-900 mb-3">Simulation Learning Lab</h4>
                 <p className="text-gray-700">Phantom head training units with patient simulators for pre-clinical skill development and practice.</p>
               </div>
             </div>
@@ -856,10 +856,10 @@ export default function MDSProsthodontics() {
             {/* Digital Library */}
             <div className="bg-[#FBFBEE] rounded-2xl overflow-hidden shadow-lg border border-gray-200">
               <div className="bg-gradient-to-br from-[#7cb983] to-[#6ba872] p-12 flex items-center justify-center h-48">
-                <h3 className="text-4xl font-bold text-white text-center">Digital Library</h3>
+                <h3 className="text-4xl font-bold text-white text-center">Digital Learning Commons</h3>
               </div>
               <div className="p-6">
-                <h4 className="text-xl font-bold text-gray-900 mb-3">Digital Library</h4>
+                <h4 className="text-xl font-bold text-gray-900 mb-3">Digital Learning Commons</h4>
                 <p className="text-gray-700">Extensive digital resources, e-journals, and dental databases for research and evidence-based learning.</p>
               </div>
             </div>
@@ -896,7 +896,7 @@ export default function MDSProsthodontics() {
 
             {/* Library */}
             <div className="bg-gradient-to-br from-[#7cb983] to-[#6ba872] rounded-xl p-6 md:p-12 flex items-center justify-center h-40 md:h-48 cursor-pointer hover:scale-105 transition-transform duration-300">
-              <h3 className="text-xl md:text-3xl font-bold text-white text-center">Library</h3>
+              <h3 className="text-xl md:text-3xl font-bold text-white text-center">Learning Commons</h3>
             </div>
 
             {/* Conference */}
@@ -916,7 +916,7 @@ export default function MDSProsthodontics() {
 
             {/* Lab */}
             <div className="bg-gradient-to-br from-[#006837] to-[#002309] rounded-xl p-6 md:p-12 flex items-center justify-center h-40 md:h-48 cursor-pointer hover:scale-105 transition-transform duration-300">
-              <h3 className="text-xl md:text-3xl font-bold text-white text-center">Lab</h3>
+              <h3 className="text-xl md:text-3xl font-bold text-white text-center">Learning Lab</h3>
             </div>
 
             {/* Cafeteria */}
@@ -1116,7 +1116,7 @@ export default function MDSProsthodontics() {
                 </svg>
               </summary>
               <p className="mt-4 text-gray-700">
-                The MDS in Prosthodontics and Crown and Bridge is a 3-year full-time postgraduate program that includes theoretical coursework, extensive clinical training, laboratory work, and a mandatory dissertation on an approved research topic.
+                The MDS in Prosthodontics and Crown and Bridge is a 3-year full-time postgraduate program that includes theoretical coursework, extensive clinical training, learning lab work, and a mandatory dissertation on an approved research topic.
               </p>
             </details>
 
@@ -1136,7 +1136,7 @@ export default function MDSProsthodontics() {
             {/* FAQ 3 */}
             <details className="bg-[#FBFBEE] rounded-xl p-6 shadow-md group">
               <summary className="flex justify-between items-center cursor-pointer list-none">
-                <h3 className="text-lg font-bold text-gray-900">Is implant training included in the curriculum?</h3>
+                <h3 className="text-lg font-bold text-gray-900">Is implant training included in the learning framework?</h3>
                 <svg className="w-6 h-6 text-[#7cb983] transform group-open:rotate-180 transition-transform" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                 </svg>

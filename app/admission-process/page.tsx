@@ -282,7 +282,7 @@ export default function AdmissionProcess() {
               <div>
                 <h3 className="text-xl font-bold text-[#006837] mb-2">Admission Confirmation</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  After fee payment, your admission is confirmed! You'll receive your admission letter, student ID, and details about hostel facilities, class schedule, and orientation program.
+                  After fee payment, your admission is confirmed! You'll receive your admission letter, learner ID, and details about hostel facilities, class schedule, and orientation program.
                 </p>
               </div>
             </div>

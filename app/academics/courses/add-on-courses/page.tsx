@@ -57,9 +57,9 @@ const modules = [
   },
   {
     number: 2,
-    title: 'Lecture and Hands-On',
+    title: 'Learning Session and Hands-On',
     duration: '6 hours',
-    objective: 'Provide an in-depth understanding of advanced composite restoration techniques through a combination of lecture and hands-on practice.',
+    objective: 'Provide an in-depth understanding of advanced composite restoration techniques through a combination of learning session and hands-on practice.',
   },
   {
     number: 3,
@@ -95,7 +95,7 @@ export default function AddOnCourses() {
             Expand Your Expertise in Dentistry
           </h2>
           <p className="hero-description text-white/80 text-base md:text-lg leading-relaxed max-w-3xl mx-auto">
-            Our add-on courses provide BDS students with advanced clinical skills, hands-on training, and exposure to the latest advancements in dentistry. These courses help students stay ahead in their careers by offering specialized knowledge beyond the standard curriculum.
+            Our add-on courses provide BDS learners with advanced clinical skills, hands-on training, and exposure to the latest advancements in dentistry. These courses help learners stay ahead in their careers by offering specialized knowledge beyond the standard learning framework.
           </p>
         </div>
       </section>
@@ -293,7 +293,7 @@ export default function AddOnCourses() {
               <ul className="space-y-2">
                 <li className="flex items-start gap-2 text-sm text-gray-700">
                   <div className="w-1.5 h-1.5 rounded-full bg-[#7cb983] flex-shrink-0 mt-2" />
-                  Open to BDS students and Interns
+                  Open to BDS learners and Interns
                 </li>
                 <li className="flex items-start gap-2 text-sm text-gray-700">
                   <div className="w-1.5 h-1.5 rounded-full bg-[#7cb983] flex-shrink-0 mt-2" />

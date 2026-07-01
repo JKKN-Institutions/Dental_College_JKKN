@@ -34,7 +34,7 @@ const features = [
   {
     icon: Monitor,
     title: 'Advanced Technical Capabilities:',
-    description: 'Featuring cutting-edge audio-visual technologies, the stage is versatile enough for both academic lectures and high-octane cultural performances.',
+    description: 'Featuring cutting-edge audio-visual technologies, the stage is versatile enough for both academic learning sessions and high-octane cultural performances.',
   },
   {
     icon: Lightbulb,
@@ -44,7 +44,7 @@ const features = [
   {
     icon: Layers,
     title: 'Resourceful & Adaptable:',
-    description: 'Beyond performances and lectures, the auditorium serves as a communal asset for various campus activities, from workshops to ceremonies.',
+    description: 'Beyond performances and learning sessions, the auditorium serves as a communal asset for various campus activities, from workshops to ceremonies.',
   },
   {
     icon: Award,

@@ -10,13 +10,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Academic Leadership | JKKN Dental College',
     description: 'Meet the academic leadership team at JKKN Dental College, committed to excellence in dental education and institutional development.',
-    url: 'https://dental.jkkn.ac.in/administration/academic-leadership/',
+    url: 'https://dental.jkkn.ac.in/academic-leadership/',
     type: 'website',
     siteName: 'JKKN Dental College & Hospital',
   },
 };
 
-const breadcrumbSchema = generateBreadcrumbSchema('/administration/academic-leadership/');
+const breadcrumbSchema = generateBreadcrumbSchema('/academic-leadership/');
 
 export default function AcademicLeadership() {
   return (

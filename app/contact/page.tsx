@@ -108,7 +108,7 @@ export default function Contact() {
           </h1>
 
           <p className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed mb-8 sm:mb-10 md:mb-12 max-w-4xl">
-            Have questions about admissions, courses, or campus facilities? We're here to help! JKKN Dental College & Hospital welcomes prospective students, parents, and visitors. Reach out to us through any of the contact methods below or visit our campus in Komarapalayam, Tamil Nadu.
+            Have questions about admissions, courses, or campus facilities? We're here to help! JKKN Dental College & Hospital welcomes prospective learners, learning partners, and visitors. Reach out to us through any of the contact methods below or visit our campus in Komarapalayam, Tamil Nadu.
           </p>
 
           {/* Contact Cards Grid */}

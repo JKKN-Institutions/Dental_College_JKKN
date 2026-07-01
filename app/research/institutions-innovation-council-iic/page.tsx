@@ -27,7 +27,7 @@ const visionItems = [
   },
   {
     label: 'Promote Entrepreneurship –',
-    text: 'To nurture entrepreneurial thinking among students and faculty, enabling them to develop innovative healthcare solutions and dental start-ups.',
+    text: 'To nurture entrepreneurial thinking among learners and senior learners, enabling them to develop innovative healthcare solutions and dental start-ups.',
   },
   {
     label: 'Encourage Research & Development –',
@@ -39,7 +39,7 @@ const visionItems = [
   },
   {
     label: 'Support Intellectual Property & Start-ups –',
-    text: 'To guide students and faculty in patenting innovations, protecting intellectual property, and transforming ideas into viable business ventures.',
+    text: 'To guide learners and senior learners in patenting innovations, protecting intellectual property, and transforming ideas into viable business ventures.',
   },
   {
     label: 'Strengthen Pre-incubation & Incubation Activities –',
@@ -116,13 +116,13 @@ export default function InstitutionsInnovationCouncilIIC() {
             </div>
             <div className="px-6 py-5 space-y-4">
               <p className="text-gray-700 leading-relaxed text-sm md:text-base">
-                In the academic year 2021-22, JKKN Dental College &amp; Hospital established the Institution&apos;s Innovation Council (IIC) under the guidance of the Ministry of Education&apos;s Innovation Cell (MIC) in collaboration with AICTE. The IIC at JKKN aims to systematically foster a culture of innovation and entrepreneurship within the institution by engaging faculty, students, and staff in various activities such as ideation, problem-solving, Proof of Concept development, Design
+                In the academic year 2021-22, JKKN Dental College &amp; Hospital established the Institution&apos;s Innovation Council (IIC) under the guidance of the Ministry of Education&apos;s Innovation Cell (MIC) in collaboration with AICTE. The IIC at JKKN aims to systematically foster a culture of innovation and entrepreneurship within the institution by engaging senior learners, learners, and team members in various activities such as ideation, problem-solving, Proof of Concept development, Design
               </p>
               <p className="text-gray-700 leading-relaxed text-sm md:text-base">
                 Thinking, Intellectual Property Rights (IPR), and project management at the Pre- incubation/Incubation stage. By integrating these initiatives, the IIC model at JKKN Dental
               </p>
               <p className="text-gray-700 leading-relaxed text-sm md:text-base">
-                College &amp; Hospital strives to create a robust innovation ecosystem, addressing challenges in dental education and research while promoting start-up culture among students and faculty.
+                College &amp; Hospital strives to create a robust innovation ecosystem, addressing challenges in dental education and research while promoting start-up culture among learners and senior learners.
               </p>
             </div>
           </div>
@@ -186,7 +186,7 @@ export default function InstitutionsInnovationCouncilIIC() {
             </div>
             <div className="px-6 py-5 space-y-4">
               <p className="text-gray-700 leading-relaxed text-sm md:text-base">
-                Are you a student, researcher, or aspiring entrepreneur passionate about transforming dental healthcare? The Institution&apos;s Innovation Council (IIC) at JKKN Dental College &amp; Hospital is your gateway to innovation and success. We invite you to collaborate, ideate, and innovate, turning visionary ideas into impactful solutions that redefine the future of dentistry and oral healthcare.
+                Are you a learner, researcher, or aspiring entrepreneur passionate about transforming dental healthcare? The Institution&apos;s Innovation Council (IIC) at JKKN Dental College &amp; Hospital is your gateway to innovation and success. We invite you to collaborate, ideate, and innovate, turning visionary ideas into impactful solutions that redefine the future of dentistry and oral healthcare.
               </p>
               <p className="text-gray-700 leading-relaxed text-sm md:text-base">
                 Be a part of our thriving innovation and startup ecosystem—where research meets entrepreneurship, and ideas turn into reality!
