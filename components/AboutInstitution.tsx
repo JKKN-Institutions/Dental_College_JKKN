@@ -47,7 +47,7 @@ export default function AboutInstitution() {
               </li>
               <li className="flex items-start gap-2 sm:gap-3">
                 <Check className="w-5 h-5 sm:w-6 sm:h-6 text-[#7cb983] flex-shrink-0" />
-                <Link href="/facilities/hostel/" className="text-gray-700 font-medium text-sm sm:text-base hover:text-[#006837] hover:underline">International Placements — UK, UAE, Singapore</Link>
+                <a href="https://placements.jkkn.ac.in/" target="_blank" rel="noopener" className="text-gray-700 font-medium text-sm sm:text-base hover:text-[#006837] hover:underline">International Placements — UK, UAE, Singapore</a>
               </li>
               <li className="flex items-start gap-2 sm:gap-3">
                 <Check className="w-5 h-5 sm:w-6 sm:h-6 text-[#7cb983] flex-shrink-0" />
@@ -55,7 +55,7 @@ export default function AboutInstitution() {
               </li>
               <li className="flex items-start gap-2 sm:gap-3">
                 <Check className="w-5 h-5 sm:w-6 sm:h-6 text-[#7cb983] flex-shrink-0" />
-                <Link href="/research/" className="text-gray-700 font-medium text-sm sm:text-base hover:text-[#006837] hover:underline">50+ Research Publications Annually</Link>
+                <Link href="/research/publication/" className="text-gray-700 font-medium text-sm sm:text-base hover:text-[#006837] hover:underline">50+ Research Publications Annually</Link>
               </li>
               <li className="flex items-start gap-2 sm:gap-3">
                 <Check className="w-5 h-5 sm:w-6 sm:h-6 text-[#7cb983] flex-shrink-0" />
