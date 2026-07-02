@@ -143,10 +143,10 @@ export default function Home() {
   // College/University Schema (consolidated — single canonical entity)
   const collegeSchema = {
     "@context": "https://schema.org",
-    "@type": ["CollegeOrUniversity", "EducationalOrganization"],
+    "@type": ["CollegeOrUniversity", "EducationalOrganization", "MedicalOrganization", "Dentist"],
     "@id": "https://dental.jkkn.ac.in/#college",
     "name": "JKKN Dental College & Hospital",
-    "alternateName": ["J.K.K. Nattraja Dental College & Hospital", "ஜே.கே.கே. நட்ராஜா பல் மருத்துவக் கல்லூரி மற்றும் மருத்துவமனை"],
+    "alternateName": ["J.K.K. Nattraja Dental College & Hospital", "JKK Nattraja Pal Maruthuvak Kalloori Marrum Maruthuvamanai"],
     "url": "https://dental.jkkn.ac.in",
     "logo": "https://dental.jkkn.ac.in/images/dental-logo.png",
     "description": "India's 1st Human-AI AGI Dental Campus - DCI approved & NAAC A grade accredited dental college offering BDS & MDS programmes with advanced AI integration",
@@ -190,11 +190,7 @@ export default function Home() {
         { "@type": "Course", "name": "MDS - Orthodontics & Dentofacial Orthopedics", "url": "https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/orthodontics-and-dentofacial-orthopedics/" },
         { "@type": "Course", "name": "MDS - Prosthodontics Crown & Bridge", "url": "https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/prosthodontics-crown-and-bridge/" },
         { "@type": "Course", "name": "MDS - Conservative Dentistry & Endodontics", "url": "https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/conservative-dentistry-and-endodontics/" },
-        { "@type": "Course", "name": "MDS - Oral Medicine & Radiology", "url": "https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/oral-medicine/" },
-        { "@type": "Course", "name": "MDS - Oral & Maxillofacial Surgery", "url": "https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/oral-and-maxillofacial-surgery/" },
-        { "@type": "Course", "name": "MDS - Pediatric & Preventive Dentistry", "url": "https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/pediatric-and-preventive-dentistry/" },
-        { "@type": "Course", "name": "MDS - Oral Pathology & Microbiology", "url": "https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/oral-pathology-and-microbiology/" },
-        { "@type": "Course", "name": "MDS - Public Health Dentistry", "url": "https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/public-health-dentistry/" }
+        { "@type": "Course", "name": "MDS - Oral Medicine & Radiology", "url": "https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/oral-medicine/" }
       ]
     },
     "award": [
@@ -233,8 +229,7 @@ export default function Home() {
       "https://dciindia.gov.in/",
       "https://www.shiksha.com/college/j-k-k-nattraja-dental-college-and-hospital-namakkal-78331",
       "https://collegedunia.com/college/10574-jkk-nattraja-dental-college-and-hospital-jkkndch-namakkal",
-      "https://www.careers360.com/colleges/jkk-nattraja-dental-college-and-hospital-komarapalayam",
-      "https://en.wikipedia.org/wiki/J._K._K._Nattraja_Educational_Institutions"
+      "https://www.careers360.com/colleges/jkk-nattraja-dental-college-and-hospital-komarapalayam"
     ],
     "parentOrganization": {
       "@type": "EducationalOrganization",
@@ -255,7 +250,34 @@ export default function Home() {
       { "@type": "City", "name": "Tiruchengode" },
       { "@type": "City", "name": "Komarapalayam" },
       { "@type": "State", "name": "Tamil Nadu" }
-    ]
+    ],
+    "image": [
+      "https://dental.jkkn.ac.in/images/campus-aerial.jpg",
+      "https://dental.jkkn.ac.in/images/dental-hospital.jpg",
+      "https://dental.jkkn.ac.in/images/simulation-lab.jpg"
+    ],
+    "priceRange": "$$",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "opens": "09:00",
+        "closes": "17:00"
+      }
+    ],
+    "medicalSpecialty": [
+      "Dentistry",
+      "Periodontics",
+      "Orthodontics",
+      "Prosthodontics",
+      "Endodontics",
+      "Oral Medicine",
+      "Oral Radiology",
+      "Oral and Maxillofacial Surgery",
+      "Pediatric Dentistry",
+      "Public Health Dentistry"
+    ],
+    "numberOfBeds": 100
   };
 
   // FAQ Schema — Voice-optimized (each answer ≤29 words, third-person, no abbreviations)
@@ -471,121 +493,7 @@ export default function Home() {
     ]
   };
 
-  // Schema #1: MedicalOrganization + Dentist (shares @id with #college — same entity)
-  const medicalOrgSchema = {
-    "@context": "https://schema.org",
-    "@type": ["MedicalOrganization", "Dentist"],
-    "@id": "https://dental.jkkn.ac.in/#college",
-    "name": "JKKN Dental College & Hospital",
-    "alternateName": ["JKKN Dental College", "ஜே.கே.கே.என் பல் மருத்துவக் கல்லூரி"],
-    "url": "https://dental.jkkn.ac.in/",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://dental.jkkn.ac.in/logo.png",
-      "width": 300,
-      "height": 100
-    },
-    "image": [
-      "https://dental.jkkn.ac.in/images/campus-aerial.jpg",
-      "https://dental.jkkn.ac.in/images/dental-hospital.jpg",
-      "https://dental.jkkn.ac.in/images/simulation-lab.jpg"
-    ],
-    "description": "JKKN Dental College & Hospital, established in 1987, is a DCI-approved and NAAC A Grade accredited dental institution offering BDS and MDS programs. Located on India's first AI-integrated campus, the college features 200+ dental chairs, a 100+ bed multi-specialty dental hospital, and treats 500+ patients daily. Affiliated to Tamil Nadu Dr. M.G.R. Medical University with 92% placement rate and 3000+ alumni worldwide.",
-    "foundingDate": "1987",
-    "telephone": "+919345855001",
-    "email": "dental@jkkn.ac.in",
-    "priceRange": "$$",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "NH-544 (Salem to Coimbatore Highway), Natarajapuram",
-      "addressLocality": "Komarapalayam",
-      "addressRegion": "Tamil Nadu",
-      "postalCode": "638183",
-      "addressCountry": "IN"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 11.445180,
-      "longitude": 77.726549
-    },
-    "openingHoursSpecification": [
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-        "opens": "09:00",
-        "closes": "17:00"
-      }
-    ],
-    "medicalSpecialty": [
-      "Dentistry",
-      "Periodontics",
-      "Orthodontics",
-      "Prosthodontics",
-      "Endodontics",
-      "Oral Medicine",
-      "Oral Radiology",
-      "Oral and Maxillofacial Surgery",
-      "Pediatric Dentistry",
-      "Public Health Dentistry"
-    ],
-    "numberOfBeds": 100,
-    "areaServed": [
-      { "@type": "State", "name": "Tamil Nadu" },
-      { "@type": "Country", "name": "India" }
-    ],
-    "parentOrganization": {
-      "@type": "EducationalOrganization",
-      "@id": "https://jkkn.ac.in/#organization",
-      "name": "JKKN Institutions",
-      "url": "https://jkkn.ac.in/"
-    },
-    "sameAs": [
-      "https://www.facebook.com/jkkndental/",
-      "https://www.instagram.com/jkkndental/",
-      "https://www.linkedin.com/school/jkkndental/",
-      "https://www.youtube.com/playlist?list=PL6QsTq-__HhvqQ28WcrDAwPa9jeMSK3AO",
-      "https://maps.app.goo.gl/mXx6rFRqpS9U76BK6",
-      "https://jkkn.ac.in/",
-      "https://dciindia.gov.in/"
-    ],
-    "hasCredential": [
-      {
-        "@type": "EducationalOccupationalCredential",
-        "credentialCategory": "Accreditation",
-        "recognizedBy": { "@type": "Organization", "name": "Dental Council of India", "alternateName": "DCI" }
-      },
-      {
-        "@type": "EducationalOccupationalCredential",
-        "credentialCategory": "Accreditation",
-        "recognizedBy": { "@type": "Organization", "name": "National Medical Commission", "alternateName": "NMC" }
-      },
-      {
-        "@type": "EducationalOccupationalCredential",
-        "credentialCategory": "Accreditation",
-        "recognizedBy": { "@type": "Organization", "name": "National Assessment and Accreditation Council", "alternateName": "NAAC" },
-        "description": "NAAC A Grade Accredited"
-      },
-      {
-        "@type": "EducationalOccupationalCredential",
-        "credentialCategory": "Affiliation",
-        "recognizedBy": { "@type": "CollegeOrUniversity", "name": "Tamil Nadu Dr. M.G.R. Medical University", "url": "https://www.tnmgrmu.ac.in/" }
-      }
-    ],
-    "knowsAbout": [
-      "Dental Surgery",
-      "Orthodontic Treatment",
-      "Periodontal Therapy",
-      "Prosthodontic Rehabilitation",
-      "Endodontic Treatment",
-      "Oral Radiology and Diagnostics",
-      "Preventive Dentistry",
-      "Dental Implantology",
-      "Cosmetic Dentistry",
-      "Oral and Maxillofacial Surgery"
-    ],
-  };
-
-  // Schema #2: Dentist (LocalBusiness) with AggregateRating
+  // Schema #2: Dentist (LocalBusiness)
   const dentistLocalSchema = {
     "@context": "https://schema.org",
     "@type": "Dentist",
@@ -626,15 +534,7 @@ export default function Home() {
       { "@type": "City", "name": "Komarapalayam" },
       { "@type": "City", "name": "Coimbatore" },
       { "@type": "State", "name": "Tamil Nadu" }
-    ],
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.5",
-      "bestRating": "5",
-      "worstRating": "1",
-      "ratingCount": "400",
-      "reviewCount": "400"
-    }
+    ]
   };
 
   // Schema #5: WebSite + SearchAction
@@ -730,7 +630,6 @@ export default function Home() {
   return (
     <main className="overflow-x-hidden w-full">
       <AdmissionPopup />
-      <StructuredData data={medicalOrgSchema} />
       <StructuredData data={dentistLocalSchema} />
       <StructuredData data={websiteSchema} />
       <StructuredData data={webPageSchema} />

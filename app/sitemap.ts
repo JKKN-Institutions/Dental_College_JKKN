@@ -250,6 +250,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     // Facilities
     { url: `${baseUrl}/facilities/labs/`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${baseUrl}/facilities/library/`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${baseUrl}/facilities/hostel/`, lastModified: now, changeFrequency: 'monthly', priority: 0.6 },
     { url: `${baseUrl}/facilities/hostel/boys-hostel/`, lastModified: now, changeFrequency: 'monthly', priority: 0.6 },
     { url: `${baseUrl}/facilities/hostel/girls-hostel/`, lastModified: now, changeFrequency: 'monthly', priority: 0.6 },
     { url: `${baseUrl}/facilities/transport/`, lastModified: now, changeFrequency: 'monthly', priority: 0.6 },

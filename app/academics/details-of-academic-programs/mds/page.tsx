@@ -358,7 +358,7 @@ export default function MDSProgram() {
                     <span className="text-sm">3 Years</span>
                   </div>
                 </div>
-                <a href="/conservative-dentistry-and-endodontics" className="text-[#7cb983] hover:text-[#006837] font-semibold flex items-center gap-2 transition-colors duration-300">
+                <a href="/academics/details-of-academic-programs/mds/conservative-dentistry-and-endodontics/" className="text-[#7cb983] hover:text-[#006837] font-semibold flex items-center gap-2 transition-colors duration-300">
                   View Details
                   <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
@@ -392,7 +392,7 @@ export default function MDSProgram() {
                     <span className="text-sm">3 Years</span>
                   </div>
                 </div>
-                <a href="/prosthodontics-crown-and-bridge" className="text-[#7cb983] hover:text-[#006837] font-semibold flex items-center gap-2 transition-colors duration-300">
+                <a href="/academics/details-of-academic-programs/mds/prosthodontics-crown-and-bridge/" className="text-[#7cb983] hover:text-[#006837] font-semibold flex items-center gap-2 transition-colors duration-300">
                   View Details
                   <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
@@ -426,7 +426,7 @@ export default function MDSProgram() {
                     <span className="text-sm">3 Years</span>
                   </div>
                 </div>
-                <a href="/periodontics" className="text-[#7cb983] hover:text-[#006837] font-semibold flex items-center gap-2 transition-colors duration-300">
+                <a href="/academics/details-of-academic-programs/mds/periodontics/" className="text-[#7cb983] hover:text-[#006837] font-semibold flex items-center gap-2 transition-colors duration-300">
                   View Details
                   <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
@@ -460,7 +460,7 @@ export default function MDSProgram() {
                     <span className="text-sm">3 Years</span>
                   </div>
                 </div>
-                <a href="/oral-medicine-and-radiology" className="text-[#7cb983] hover:text-[#006837] font-semibold flex items-center gap-2 transition-colors duration-300">
+                <a href="/academics/details-of-academic-programs/mds/oral-medicine/" className="text-[#7cb983] hover:text-[#006837] font-semibold flex items-center gap-2 transition-colors duration-300">
                   View Details
                   <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
@@ -494,7 +494,7 @@ export default function MDSProgram() {
                     <span className="text-sm">3 Years</span>
                   </div>
                 </div>
-                <a href="/orthodontics-and-dentofacial-orthopedics" className="text-[#7cb983] hover:text-[#006837] font-semibold flex items-center gap-2 transition-colors duration-300">
+                <a href="/academics/details-of-academic-programs/mds/orthodontics-and-dentofacial-orthopedics/" className="text-[#7cb983] hover:text-[#006837] font-semibold flex items-center gap-2 transition-colors duration-300">
                   View Details
                   <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />

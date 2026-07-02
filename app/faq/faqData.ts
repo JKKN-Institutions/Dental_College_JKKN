@@ -128,7 +128,7 @@ export const faqCategories = [
       {
         question: 'Can I pursue MDS after BDS at JKKN Dental College?',
         answer:
-          'Yes, JKKN Dental College offers MDS programs in 5 specializations: Periodontics (4 seats), Orthodontics (4 seats), Prosthodontics (4 seats), Conservative Dentistry & Endodontics (3 seats), and Oral Medicine & Radiology (3 seats) — totaling 18 MDS seats. After completing BDS, graduates can pursue MDS by qualifying NEET-MDS examination.',
+          'Yes, JKKN Dental College offers MDS programs in 5 specializations: Periodontics (2 seats), Orthodontics (5 seats), Prosthodontics (3 seats), Conservative Dentistry & Endodontics (5 seats), and Oral Medicine & Radiology (3 seats) — totaling 18 MDS seats. After completing BDS, graduates can pursue MDS by qualifying NEET-MDS examination.',
       },
       {
         question: 'What is MDS (Master of Dental Surgery)?',
@@ -138,7 +138,7 @@ export const faqCategories = [
       {
         question: 'What MDS specializations are available at JKKN?',
         answer:
-          'JKKN Dental College offers 5 DCI-approved MDS specializations: Conservative Dentistry & Endodontics (3 seats), Prosthodontics Crown & Bridge (4 seats), Periodontics & Oral Implantology (4 seats), Oral Medicine & Radiology (3 seats), and Orthodontics & Dentofacial Orthopedics (4 seats) — 18 seats in total annually.',
+          'JKKN Dental College offers 5 DCI-approved MDS specializations: Conservative Dentistry & Endodontics (5 seats), Prosthodontics Crown & Bridge (3 seats), Periodontics & Oral Implantology (2 seats), Oral Medicine & Radiology (3 seats), and Orthodontics & Dentofacial Orthopedics (5 seats) — 18 seats in total annually.',
       },
       {
         question: 'What are the career opportunities after MDS?',

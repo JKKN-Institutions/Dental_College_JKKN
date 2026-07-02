@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: { absolute: 'Our Management Team | JKKN Dental College Leadership' },
-  description: 'Meet the leadership team of JKKN Dental College & Hospital. Learn about our experienced management dedicated to providing excellence in dental education and patient care.',
+  description: 'Meet the management and leadership team of JKKN Dental College & Hospital, Komarapalayam — driving excellence in dental education and patient care.',
   keywords: 'management team, college leadership, JKKN management, dental college administration',
   alternates: {
     canonical: '/our-management/',

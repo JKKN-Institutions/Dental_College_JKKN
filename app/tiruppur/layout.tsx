@@ -87,14 +87,7 @@ const orgSchema = {
   ],
   "memberOf": { "@type": "Organization", "name": "The Tamil Nadu Dr. M.G.R. Medical University, Chennai" },
   "geo": { "@type": "GeoCoordinates", "latitude": "11.4120", "longitude": "77.7210" },
-  "sameAs": jkknSameAsUrls,
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.3",
-    "bestRating": "5",
-    "worstRating": "1",
-    "ratingCount": "400"
-  }
+  "sameAs": jkknSameAsUrls
 };
 
 const courseSchema = [

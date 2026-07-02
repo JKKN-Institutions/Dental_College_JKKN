@@ -92,14 +92,7 @@ const orgSchema = {
     "https://maps.app.goo.gl/mXx6rFRqpS9U76BK6",
     "https://www.facebook.com/jkkndental",
     "https://www.youtube.com/@jkkndental"
-  ],
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.3",
-    "bestRating": "5",
-    "worstRating": "1",
-    "ratingCount": "400"
-  }
+  ]
 };
 
 const courseSchema = [

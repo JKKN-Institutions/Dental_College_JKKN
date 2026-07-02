@@ -65,13 +65,6 @@ export default function BDSProgram() {
       "category": "Government Quota / Management Quota",
       "availability": "https://schema.org/InStock",
       "url": "https://www.jkkn.ai/apply/jkkn-admission-2026"
-    },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.5",
-      "bestRating": "5",
-      "ratingCount": "120",
-      "reviewCount": "85"
     }
   };
 
@@ -125,7 +118,7 @@ export default function BDSProgram() {
         "name": "Can I pursue MDS after BDS from this college?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes, JKKN Dental College offers MDS programs in 5 specializations: Periodontics (4 seats), Orthodontics (4 seats), Prosthodontics (4 seats), Conservative Dentistry & Endodontics (3 seats), and Oral Medicine & Radiology (3 seats) — totaling 18 MDS seats. After completing BDS, graduates can pursue MDS by qualifying NEET-MDS examination."
+          "text": "Yes, JKKN Dental College offers MDS programs in 5 specializations: Periodontics (2 seats), Orthodontics (5 seats), Prosthodontics (3 seats), Conservative Dentistry & Endodontics (5 seats), and Oral Medicine & Radiology (3 seats) — totaling 18 MDS seats. After completing BDS, graduates can pursue MDS by qualifying NEET-MDS examination."
         }
       },
       {
@@ -197,7 +190,7 @@ export default function BDSProgram() {
         "name": "What MDS specializations are available after BDS at JKKN?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "JKKN Dental College offers MDS in 5 specializations: (1) Periodontics — 4 seats, (2) Orthodontics and Dentofacial Orthopedics — 4 seats, (3) Prosthodontics Crown and Bridge — 4 seats, (4) Conservative Dentistry and Endodontics — 3 seats, and (5) Oral Medicine and Radiology — 3 seats. This provides a seamless UG to PG pathway for BDS graduates."
+          "text": "JKKN Dental College offers MDS in 5 specializations: (1) Periodontics — 2 seats, (2) Orthodontics and Dentofacial Orthopedics — 5 seats, (3) Prosthodontics Crown and Bridge — 3 seats, (4) Conservative Dentistry and Endodontics — 5 seats, and (5) Oral Medicine and Radiology — 3 seats. This provides a seamless UG to PG pathway for BDS graduates."
         }
       }
     ]
@@ -1525,7 +1518,7 @@ export default function BDSProgram() {
               },
               {
                 q: 'Can I pursue MDS after BDS from this college?',
-                a: 'Yes, JKKN offers MDS in 5 specializations: Periodontics (4 seats), Orthodontics (4 seats), Prosthodontics (4 seats), Conservative Dentistry & Endodontics (3 seats), and Oral Medicine & Radiology (3 seats) — totaling 18 MDS seats. After completing BDS, graduates can pursue MDS by qualifying NEET-MDS.'
+                a: 'Yes, JKKN offers MDS in 5 specializations: Periodontics (2 seats), Orthodontics (5 seats), Prosthodontics (3 seats), Conservative Dentistry & Endodontics (5 seats), and Oral Medicine & Radiology (3 seats) — totaling 18 MDS seats. After completing BDS, graduates can pursue MDS by qualifying NEET-MDS.'
               },
               {
                 q: 'What is the BDS course fee at JKKN Dental College?',
@@ -1561,7 +1554,7 @@ export default function BDSProgram() {
               },
               {
                 q: 'What MDS specializations are available after BDS at JKKN?',
-                a: 'JKKN offers MDS in 5 specializations: (1) Periodontics — 4 seats, (2) Orthodontics and Dentofacial Orthopedics — 4 seats, (3) Prosthodontics Crown and Bridge — 4 seats, (4) Conservative Dentistry and Endodontics — 3 seats, and (5) Oral Medicine and Radiology — 3 seats. This provides a seamless UG to PG pathway for BDS graduates.'
+                a: 'JKKN offers MDS in 5 specializations: (1) Periodontics — 2 seats, (2) Orthodontics and Dentofacial Orthopedics — 5 seats, (3) Prosthodontics Crown and Bridge — 3 seats, (4) Conservative Dentistry and Endodontics — 5 seats, and (5) Oral Medicine and Radiology — 3 seats. This provides a seamless UG to PG pathway for BDS graduates.'
               },
             ].map((faq, idx) => (
               <details key={idx} className="group border-2 border-gray-200 rounded-xl overflow-hidden bg-white">
@@ -1606,7 +1599,7 @@ export default function BDSProgram() {
           </div>
 
           <p className="text-sm text-gray-300 mt-8">
-            <a href="/admission/" className="underline hover:text-white">Admission Process</a> &nbsp;|&nbsp;
+            <a href="/admission-process/" className="underline hover:text-white">Admission Process</a> &nbsp;|&nbsp;
             <a href="/fees-structure/" className="underline hover:text-white">Fee Structure</a> &nbsp;|&nbsp;
             <a href="/facilities/hostel/" className="underline hover:text-white">Hostel Facilities</a> &nbsp;|&nbsp;
             <a href="/best-dental-college-tamil-nadu/" className="underline hover:text-white">Why JKKN</a> &nbsp;|&nbsp;

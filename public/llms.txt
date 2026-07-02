@@ -8,7 +8,7 @@
 
 - Name: JKKN Dental College & Hospital
 - Alternate Name: J.K.K. Nattraja Dental College & Hospital
-- Tamil Name: ஜே.கே.கே. நட்ராஜா பல் மருத்துவக் கல்லூரி மற்றும் மருத்துவமனை
+- Tamil Name (romanized): JKK Nattraja Pal Maruthuvak Kalloori Marrum Maruthuvamanai
 - Type: Dental College & Hospital
 - Website: https://dental.jkkn.ac.in
 - Parent Organization: JKKN Institutions (https://jkkn.ac.in)
@@ -37,10 +37,10 @@
 - Duration: 3 years
 - Total MDS Seats: 18
 - Specializations (5 — DCI approved):
-  1. Periodontics (4 seats) — https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/periodontics/
-  2. Orthodontics & Dentofacial Orthopedics (4 seats) — https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/orthodontics-and-dentofacial-orthopedics/
-  3. Prosthodontics Crown & Bridge (4 seats) — https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/prosthodontics-crown-and-bridge/
-  4. Conservative Dentistry & Endodontics (3 seats) — https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/conservative-dentistry-and-endodontics/
+  1. Periodontics (2 seats) — https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/periodontics/
+  2. Orthodontics & Dentofacial Orthopedics (5 seats) — https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/orthodontics-and-dentofacial-orthopedics/
+  3. Prosthodontics Crown & Bridge (3 seats) — https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/prosthodontics-crown-and-bridge/
+  4. Conservative Dentistry & Endodontics (5 seats) — https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/conservative-dentistry-and-endodontics/
   5. Oral Medicine & Radiology (3 seats) — https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/oral-medicine/
 - Eligibility: BDS degree, NEET-MDS qualified
 

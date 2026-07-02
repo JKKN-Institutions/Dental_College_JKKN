@@ -482,8 +482,7 @@ export const jkknSameAsUrls = [
   "https://dciindia.gov.in/",
   "https://www.shiksha.com/college/j-k-k-nattraja-dental-college-and-hospital-namakkal-78331",
   "https://collegedunia.com/college/10574-jkk-nattraja-dental-college-and-hospital-jkkndch-namakkal",
-  "https://www.careers360.com/colleges/jkk-nattraja-dental-college-and-hospital-komarapalayam",
-  "https://en.wikipedia.org/wiki/J._K._K._Nattraja_Educational_Institutions"
+  "https://www.careers360.com/colleges/jkk-nattraja-dental-college-and-hospital-komarapalayam"
 ];
 
 /**

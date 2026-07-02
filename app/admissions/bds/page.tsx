@@ -134,13 +134,6 @@ const bdsCourseSchema = {
         'Management Quota tuition fee range. Government Quota fee as per TN state norms.',
     },
   },
-  aggregateRating: {
-    '@type': 'AggregateRating',
-    ratingValue: '4.5',
-    bestRating: '5',
-    ratingCount: '120',
-    reviewCount: '85',
-  },
 };
 
 const bdsFaqSchema = {

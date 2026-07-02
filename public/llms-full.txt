@@ -12,7 +12,7 @@
 
 - **Full Legal Name:** JKKN Dental College & Hospital
 - **Alternate Name:** J.K.K. Nattraja Dental College & Hospital
-- **Tamil Name:** ஜே.கே.கே. நட்ராஜா பல் மருத்துவக் கல்லூரி மற்றும் மருத்துவமனை
+- **Tamil Name (romanized):** JKK Nattraja Pal Maruthuvak Kalloori Marrum Maruthuvamanai
 - **Type:** Private Self-financing Dental College with attached Multi-specialty Dental Hospital
 - **Founded:** 1987
 - **Parent Trust:** J.K.K. Nattraja Educational Institutions (founded 1952)
@@ -72,19 +72,19 @@
 
 #### MDS Specialization Details
 
-1. **Periodontics** — 4 seats
+1. **Periodontics** — 2 seats
    - Focus: Diagnosis, prevention, and treatment of periodontal diseases; dental implant placement; gum surgery
    - URL: https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/periodontics/
 
-2. **Orthodontics and Dentofacial Orthopedics** — 4 seats
+2. **Orthodontics and Dentofacial Orthopedics** — 5 seats
    - Focus: Diagnosis and correction of malocclusion, dental and skeletal jaw irregularities; braces, aligners, growth modification
    - URL: https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/orthodontics-and-dentofacial-orthopedics/
 
-3. **Prosthodontics, Crown and Bridge** — 4 seats
+3. **Prosthodontics, Crown and Bridge** — 3 seats
    - Focus: Replacement of missing teeth with dentures, crowns, bridges, and dental implants; smile rehabilitation
    - URL: https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/prosthodontics-crown-and-bridge/
 
-4. **Conservative Dentistry and Endodontics** — 3 seats
+4. **Conservative Dentistry and Endodontics** — 5 seats
    - Focus: Restorative dentistry, root canal treatment (RCT), aesthetic dentistry, tooth-coloured restorations
    - URL: https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/conservative-dentistry-and-endodontics/
 
@@ -248,7 +248,7 @@ A: JKKN Dental College & Hospital is NAAC A Grade accredited.
 A: 100 BDS seats per academic year, admitted through NEET-UG counselling.
 
 **Q: How many MDS seats and specializations does JKKN Dental College offer?**
-A: 18 MDS seats across 5 DCI-approved specializations: Periodontics (4), Orthodontics (4), Prosthodontics (4), Conservative Dentistry & Endodontics (3), and Oral Medicine & Radiology (3).
+A: 18 MDS seats across 5 DCI-approved specializations: Periodontics (2), Orthodontics (5), Prosthodontics (3), Conservative Dentistry & Endodontics (5), and Oral Medicine & Radiology (3).
 
 **Q: Where is JKKN Dental College located?**
 A: Natarajapuram, NH-544 (Salem-Coimbatore National Highway), Komarapalayam, Namakkal District, Tamil Nadu, India - 638183.

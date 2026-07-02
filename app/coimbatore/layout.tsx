@@ -186,14 +186,7 @@ const orgSchema = {
     ...jkknSameAsUrls,
     "https://collegedunia.com/college/10574-jkk-nattraja-dental-college-and-hospital-jkkndch-namakkal",
     "https://www.shiksha.com/college/j-k-k-nattraja-dental-college-and-hospital-namakkal-78331"
-  ],
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.3",
-    "bestRating": "5",
-    "worstRating": "1",
-    "ratingCount": "400"
-  }
+  ]
 };
 
 const localBusinessSchema = {

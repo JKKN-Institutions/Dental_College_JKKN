@@ -38,7 +38,7 @@ import {
 /* ------------------------------------------------------------------ */
 
 export const metadata: Metadata = {
-  title: 'Admission 2026-27 | BDS & MDS | JKKN Dental College',
+  title: { absolute: 'Admission 2026-27 | BDS & MDS | JKKN Dental College' },
   description:
     'Apply for BDS & MDS admission at JKKN Dental College, Komarapalayam. NEET-based admission, 100 BDS + 18 MDS seats, scholarships, hostel & placement support.',
   keywords:
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Admission 2026-27 | BDS & MDS | JKKN Dental College & Hospital',
     description:
-      'Apply for BDS & MDS admission at JKKN Dental College. NEET-based, 118 seats, scholarships available.',
+      'Apply for BDS & MDS admission at JKKN Dental College. NEET-based, 100 BDS + 18 MDS seats, scholarships available.',
     url: 'https://dental.jkkn.ac.in/admission/',
     type: 'website',
     siteName: 'JKKN Dental College & Hospital',
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Admission 2026-27 | BDS & MDS | JKKN Dental College',
     description:
-      'Apply for BDS & MDS admission at JKKN Dental College. NEET-based, 118 seats, scholarships available.',
+      'Apply for BDS & MDS admission at JKKN Dental College. NEET-based, 100 BDS + 18 MDS seats, scholarships available.',
     images: ['/images/BDS-hero-image.png'],
   },
   alternates: {

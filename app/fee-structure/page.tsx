@@ -126,7 +126,7 @@ const faqSchema = {
       "name": "What is the MDS fee structure at JKKN Dental College?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The MDS (Master of Dental Surgery) annual tuition fee at JKKN Dental College is As per Govt. Norms (Government Quota) and ₹8,50,000 per year (Management Quota) across all 5 specializations. MDS programs available include Periodontics (4 seats), Orthodontics (4 seats), Prosthodontics (4 seats), Endodontics (3 seats), and Oral Medicine (3 seats). Additional one-time fees include admission fee, caution deposit, library deposit, and lab deposit (all refundable). Contact admissions for complete fee details."
+        "text": "The MDS (Master of Dental Surgery) annual tuition fee at JKKN Dental College is As per Govt. Norms (Government Quota) and ₹8,50,000 per year (Management Quota) across all 5 specializations. MDS programs available include Periodontics (2 seats), Orthodontics (5 seats), Prosthodontics (3 seats), Endodontics (5 seats), and Oral Medicine (3 seats). Additional one-time fees include admission fee, caution deposit, library deposit, and lab deposit (all refundable). Contact admissions for complete fee details."
       }
     }
   ]
@@ -292,25 +292,25 @@ export default function FeesStructure() {
               <tbody className="divide-y divide-gray-300">
                 <tr className="hover:bg-[#FBFBEE] transition-colors">
                   <td className="px-6 py-4 font-semibold text-gray-800">Orthodontics</td>
-                  <td className="px-6 py-4 text-center text-gray-800">4</td>
+                  <td className="px-6 py-4 text-center text-gray-800">5</td>
                   <td className="px-6 py-4 text-left text-gray-600 italic">As per Govt. Norms</td>
                   <td className="px-6 py-4 text-right text-gray-800">&#8377;8,50,000</td>
                 </tr>
                 <tr className="hover:bg-[#FBFBEE] transition-colors">
                   <td className="px-6 py-4 font-semibold text-gray-800">Endodontics</td>
-                  <td className="px-6 py-4 text-center text-gray-800">3</td>
+                  <td className="px-6 py-4 text-center text-gray-800">5</td>
                   <td className="px-6 py-4 text-left text-gray-600 italic">As per Govt. Norms</td>
                   <td className="px-6 py-4 text-right text-gray-800">&#8377;8,50,000</td>
                 </tr>
                 <tr className="hover:bg-[#FBFBEE] transition-colors">
                   <td className="px-6 py-4 font-semibold text-gray-800">Prosthodontics</td>
-                  <td className="px-6 py-4 text-center text-gray-800">4</td>
+                  <td className="px-6 py-4 text-center text-gray-800">3</td>
                   <td className="px-6 py-4 text-left text-gray-600 italic">As per Govt. Norms</td>
                   <td className="px-6 py-4 text-right text-gray-800">&#8377;8,50,000</td>
                 </tr>
                 <tr className="hover:bg-[#FBFBEE] transition-colors">
                   <td className="px-6 py-4 font-semibold text-gray-800">Periodontics</td>
-                  <td className="px-6 py-4 text-center text-gray-800">4</td>
+                  <td className="px-6 py-4 text-center text-gray-800">2</td>
                   <td className="px-6 py-4 text-left text-gray-600 italic">As per Govt. Norms</td>
                   <td className="px-6 py-4 text-right text-gray-800">&#8377;8,50,000</td>
                 </tr>

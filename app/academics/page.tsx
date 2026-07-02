@@ -33,7 +33,7 @@ const faqSchema = {
       name: 'What are the MDS specializations offered at JKKN Dental College?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'JKKN Dental College offers 5 MDS specializations: Periodontics (4 seats), Orthodontics & Dentofacial Orthopedics (4 seats), Prosthodontics Crown & Bridge (4 seats), Conservative Dentistry & Endodontics (3 seats), and Oral Medicine & Radiology (3 seats) — totaling 18 MDS seats.',
+        text: 'JKKN Dental College offers 5 MDS specializations: Periodontics (2 seats), Orthodontics & Dentofacial Orthopedics (5 seats), Prosthodontics Crown & Bridge (3 seats), Conservative Dentistry & Endodontics (5 seats), and Oral Medicine & Radiology (3 seats) — totaling 18 MDS seats.',
       },
     },
     {

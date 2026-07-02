@@ -131,13 +131,6 @@ const mdsCourseSchema = {
         'Management Quota tuition fee range. Actual fee varies by specialization.',
     },
   },
-  aggregateRating: {
-    '@type': 'AggregateRating',
-    ratingValue: '4.5',
-    bestRating: '5',
-    ratingCount: '85',
-    reviewCount: '60',
-  },
 };
 
 const mdsFaqSchema = {
@@ -157,7 +150,7 @@ const mdsFaqSchema = {
       name: 'How many MDS seats and specializations are available at JKKN?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'JKKN Dental College offers 18 MDS seats across 5 specializations: Periodontics (4 seats), Orthodontics & Dentofacial Orthopedics (4 seats), Prosthodontics Crown & Bridge (4 seats), Conservative Dentistry & Endodontics (3 seats), and Oral Medicine & Radiology (3 seats).',
+        text: 'JKKN Dental College offers 18 MDS seats across 5 specializations: Periodontics (2 seats), Orthodontics & Dentofacial Orthopedics (5 seats), Prosthodontics Crown & Bridge (3 seats), Conservative Dentistry & Endodontics (5 seats), and Oral Medicine & Radiology (3 seats).',
       },
     },
     {
@@ -495,7 +488,7 @@ const mdsFaqs = [
   },
   {
     q: 'How many MDS seats and specializations are available?',
-    a: 'JKKN offers 18 MDS seats across 5 specializations — Periodontics (4), Orthodontics & Dentofacial Orthopedics (4), Prosthodontics Crown & Bridge (4), Conservative Dentistry & Endodontics (3), and Oral Medicine & Radiology (3).',
+    a: 'JKKN offers 18 MDS seats across 5 specializations — Periodontics (2), Orthodontics & Dentofacial Orthopedics (5), Prosthodontics Crown & Bridge (3), Conservative Dentistry & Endodontics (5), and Oral Medicine & Radiology (3).',
   },
   {
     q: 'What is the MDS course fee at JKKN?',
