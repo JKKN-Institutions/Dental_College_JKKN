@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Geo Pages SEO Fixes — Developer Handoff | JKKN Dental</title>
+<style>
+  :root{
+    --green:#006837; --green2:#7cb983; --green2h:#6ba872; --dark:#002309; --cream:#FBFBEE;
+    --p1:#c0392b; --p2:#e08e0b; --p3:#5b8def; --line:#e2e6da;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;font-family:'Segoe UI',Roboto,Helvetica,Arial,sans-serif;background:var(--cream);color:var(--dark);line-height:1.6;}
+  .wrap{max-width:960px;margin:0 auto;padding:32px 20px 80px;}
+  header.top{background:var(--green);color:#fff;border-radius:14px;padding:28px 30px;margin-bottom:26px;}
+  header.top h1{margin:0 0 6px;font-size:26px;}
+  header.top p{margin:4px 0;opacity:.92;font-size:14px;}
+  .meta-row{display:flex;flex-wrap:wrap;gap:18px;margin-top:14px;font-size:13px;}
+  .meta-row span{background:rgba(255,255,255,.14);padding:4px 12px;border-radius:20px;}
+
+  .intro{background:#fff;border:1px solid var(--line);border-left:5px solid var(--green2);border-radius:10px;padding:18px 22px;margin-bottom:28px;font-size:15px;}
+  .intro b{color:var(--green);}
+
+  h2.section{color:var(--green);font-size:20px;border-bottom:2px solid var(--green2);padding-bottom:8px;margin:38px 0 18px;}
+
+  table{width:100%;border-collapse:collapse;background:#fff;border-radius:10px;overflow:hidden;border:1px solid var(--line);font-size:14px;margin-bottom:10px;}
+  th{background:var(--green);color:#fff;text-align:left;padding:10px 12px;font-weight:600;}
+  td{padding:10px 12px;border-top:1px solid var(--line);vertical-align:top;}
+  tr:nth-child(even) td{background:#fafbf4;}
+
+  .badge{display:inline-block;color:#fff;font-size:11px;font-weight:700;padding:3px 10px;border-radius:20px;letter-spacing:.4px;}
+  .b-p1{background:var(--p1);}
+  .b-p2{background:var(--p2);}
+  .b-p3{background:var(--p3);}
+
+  .card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:0;margin-bottom:26px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.04);}
+  .card .head{padding:16px 22px;border-bottom:1px solid var(--line);background:#fbfdf7;}
+  .card .head h3{margin:0;font-size:18px;color:var(--green);display:flex;align-items:center;gap:10px;flex-wrap:wrap;}
+  .card .body{padding:18px 22px;}
+  .card .body h4{margin:18px 0 6px;font-size:13px;text-transform:uppercase;letter-spacing:.6px;color:#6a7a5f;}
+  .card .body h4:first-child{margin-top:0;}
+  .why{font-size:15px;}
+  .filepath{font-family:'Courier New',monospace;background:#eef3e8;color:var(--green);padding:2px 8px;border-radius:5px;font-size:13px;display:inline-block;}
+
+  pre{background:#1d231b;color:#e8f0e2;border-radius:8px;padding:14px 16px;overflow-x:auto;font-size:13px;line-height:1.5;margin:8px 0;}
+  pre.before{border-left:4px solid var(--p1);}
+  pre.after{border-left:4px solid var(--green2);}
+  code{font-family:'Courier New',Consolas,monospace;}
+  .tag{font-size:11px;font-weight:700;padding:2px 8px;border-radius:4px;color:#fff;margin-bottom:4px;display:inline-block;}
+  .tag-rm{background:var(--p1);}
+  .tag-add{background:var(--green);}
+
+  .verify{background:#eef6ec;border:1px solid #cfe3c8;border-radius:8px;padding:12px 16px;font-size:14px;margin-top:14px;}
+  .verify b{color:var(--green);}
+  .note{background:#fff7e6;border:1px solid #f0dca8;border-radius:8px;padding:12px 16px;font-size:14px;margin-top:14px;}
+
+  ul.steps{margin:6px 0;padding-left:20px;}
+  ul.steps li{margin-bottom:6px;}
+  .chip{display:inline-block;background:#eef3e8;color:var(--green);font-size:12px;font-weight:600;padding:2px 9px;border-radius:6px;margin:2px 4px 2px 0;}
+  .checklist{background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px 24px;}
+  .checklist label{display:block;padding:7px 0;border-bottom:1px dashed var(--line);font-size:15px;}
+  .checklist input{margin-right:10px;transform:scale(1.2);}
+  footer{margin-top:40px;text-align:center;color:#7a8a6f;font-size:13px;}
+  .small{font-size:12px;color:#7a8a6f;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="top">
+    <h1>Geo Landing Pages — SEO Fixes (Developer Handoff)</h1>
+    <p>5 city pages: Erode, Salem, Tiruppur, Namakkal, Coimbatore</p>
+    <p>Prepared for the dev team · All file paths, line numbers, and copy-paste code included.</p>
+    <div class="meta-row">
+      <span>Date: 28 May 2026</span>
+      <span>Framework: Next.js 16 (App Router)</span>
+      <span>Pages health: 96–99/100</span>
+      <span>Total fixes: 6</span>
+    </div>
+  </header>
+
+  <div class="intro">
+    <b>Context in one line:</b> All 5 pages are technically excellent and already rank on Google page 1–2,
+    but they get <b>0 clicks</b> in the last 28 days. The job is mostly <b>CTR engineering</b> (better titles)
+    plus a few small technical tidy-ups. Nothing here is a rebuild — these are surgical edits.
+    Work top-down: <b>P1 first</b> (biggest impact), then P2, then P3.
+  </div>
+
+  <!-- ================= PRIORITY SUMMARY ================= -->
+  <h2 class="section">Priority Summary</h2>
+  <table>
+    <thead>
+      <tr><th>#</th><th>Priority</th><th>Issue</th><th>Pages affected</th><th>File type</th><th>Effort</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>1</td><td><span class="badge b-p1">P1</span></td><td>Titles rank but earn 0 clicks — rewrite for CTR</td><td>All 5</td><td>layout.tsx</td><td>Low</td></tr>
+      <tr><td>2</td><td><span class="badge b-p1">P1</span></td><td>Namakkal mobile is slow (TBT 1230ms, perf 65)</td><td>Namakkal</td><td>page.tsx</td><td>Medium</td></tr>
+      <tr><td>3</td><td><span class="badge b-p2">P2</span></td><td>Add <code>serviceArea</code> + <code>areaServed</code> to schema</td><td>Erode, Salem, Tiruppur, Namakkal</td><td>layout.tsx</td><td>Low</td></tr>
+      <tr><td>4</td><td><span class="badge b-p2">P2</span></td><td>Salem &amp; Tiruppur missing rich-result robots directives</td><td>Salem, Tiruppur</td><td>layout.tsx</td><td>Low</td></tr>
+      <tr><td>5</td><td><span class="badge b-p3">P3</span></td><td>LCP &gt; 2.5s — preload hero image</td><td>Namakkal, Coimbatore, Tiruppur</td><td>layout.tsx</td><td>Low</td></tr>
+      <tr><td>6</td><td><span class="badge b-p3">P3</span></td><td>(Optional) X-XSS-Protection header</td><td>All</td><td>next.config.ts</td><td>Low</td></tr>
+    </tbody>
+  </table>
+  <p class="small">Note: Salem &amp; Tiruppur short titles (46 &amp; 49 chars) are fixed automatically by Issue&nbsp;1.</p>
+
+  <!-- ================= ISSUE 1 ================= -->
+  <h2 class="section">Issue 1 — Rewrite Titles for Click-Through (CTR)</h2>
+  <div class="card">
+    <div class="head"><h3><span class="badge b-p1">P1</span> Pages rank on Google but nobody clicks</h3></div>
+    <div class="body">
+      <h4>What's wrong</h4>
+      <p class="why">In Search Console these pages show impressions (e.g. "dental college in erode" sits at position 6.3),
+      but <b>0 clicks in 28 days</b>. The page title shown in Google results is not compelling enough — aggregator
+      sites (Collegedunia, Shiksha) win the click. We add a <b>proof + offer hook</b> (placement %, BDS 2026, distance)
+      while keeping the exact ranking keyword at the start of the title. All titles stay under 60 characters.</p>
+
+      <h4>Where</h4>
+      <p>Each page's metadata lives in its <span class="filepath">layout.tsx</span> file, not <code>page.tsx</code>.
+      The title appears in <b>3 places</b> per file — update all three so the SERP, Open Graph (social), and Twitter card stay consistent:</p>
+      <ul class="steps">
+        <li><code>metadata.title.absolute</code> — the main SEO title</li>
+        <li><code>openGraph.title</code></li>
+        <li><code>twitter.title</code></li>
+      </ul>
+
+      <h4>Exact changes (per file)</h4>
+
+      <p><b>1. </b><span class="filepath">app/erode/layout.tsx</span> &nbsp;(line 7, 21, 38)</p>
+      <p class="tag tag-rm">BEFORE</p>
+      <pre class="before"><code>title: { absolute: 'Dental College in Erode | JKKN Dental College &amp; Hospital' }</code></pre>
+      <p class="tag tag-add">AFTER</p>
+      <pre class="after"><code>title: { absolute: 'Dental College in Erode? JKKN - 92% Placement, BDS 2026' }</code></pre>
+      <p class="small">openGraph.title &amp; twitter.title (no <code>absolute</code> wrapper): <code>'Dental College in Erode? JKKN - 92% Placement, BDS 2026'</code></p>
+
+      <p style="margin-top:18px;"><b>2. </b><span class="filepath">app/salem/layout.tsx</span> &nbsp;(line 7, 15, 32) — was only 46 chars</p>
+      <p class="tag tag-rm">BEFORE</p>
+      <pre class="before"><code>title: { absolute: 'Dental Colleges in Salem | JKKN Dental College' }</code></pre>
+      <p class="tag tag-add">AFTER</p>
+      <pre class="after"><code>title: { absolute: 'Dental Colleges in Salem? JKKN - BDS 2026, 92% Placement' }</code></pre>
+
+      <p style="margin-top:18px;"><b>3. </b><span class="filepath">app/tiruppur/layout.tsx</span> &nbsp;(line 7, 15, 32) — was only 49 chars</p>
+      <p class="tag tag-rm">BEFORE</p>
+      <pre class="before"><code>title: { absolute: 'Dental Colleges in Tiruppur | JKKN Dental College' }</code></pre>
+      <p class="tag tag-add">AFTER</p>
+      <pre class="after"><code>title: { absolute: 'Dental Colleges in Tiruppur? JKKN - 67km, BDS 2026 Open' }</code></pre>
+
+      <p style="margin-top:18px;"><b>4. </b><span class="filepath">app/namakkal/layout.tsx</span> &nbsp;(line 7, 25, 42)</p>
+      <p class="tag tag-rm">BEFORE</p>
+      <pre class="before"><code>title: { absolute: 'Namakkal Dental College | JKKN Dental College &amp; Hospital' }</code></pre>
+      <p class="tag tag-add">AFTER</p>
+      <pre class="after"><code>title: { absolute: 'Namakkal Dental College - JKKN | BDS 2026, 92% Placement' }</code></pre>
+
+      <p style="margin-top:18px;"><b>5. </b><span class="filepath">app/coimbatore/layout.tsx</span> &nbsp;(line 7, 21, 38)</p>
+      <p class="tag tag-rm">BEFORE</p>
+      <pre class="before"><code>title: { absolute: 'Best Dental College Near Coimbatore | JKKN Dental College' }</code></pre>
+      <p class="tag tag-add">AFTER</p>
+      <pre class="after"><code>title: { absolute: 'Best Dental College Near Coimbatore - 92% Placed | JKKN' }</code></pre>
+
+      <div class="note">
+        <b>Keep the keyword first.</b> Each new title still opens with the exact phrase Google already ranks
+        ("Dental College in Erode", "Namakkal Dental College", etc.) so we don't lose the ranking — we only add the hook after it.
+        The "92% placement" claim already appears across the site, so it is consistent.
+      </div>
+
+      <div class="verify">
+        <b>How to verify:</b> Run <code>npm run build</code> (no type errors). View page source → confirm the new
+        <code>&lt;title&gt;</code>. After deploy, re-check Search Console "dental college in [city]" CTR in 2–3 weeks — it should rise above 0%.
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= ISSUE 2 ================= -->
+  <h2 class="section">Issue 2 — Fix Namakkal Mobile Performance</h2>
+  <div class="card">
+    <div class="head"><h3><span class="badge b-p1">P1</span> Namakkal is the slow outlier</h3></div>
+    <div class="body">
+      <h4>What's wrong</h4>
+      <p class="why">Mobile Lighthouse: <b>performance 65/100, Total Blocking Time 1,230ms, LCP 3.1s</b>.
+      The other 4 pages (built from the same template) have TBT of just 130–510ms. So something on the
+      Namakkal page specifically is blocking the main thread 5–9× longer. This hurts mobile rankings and bounce rate.</p>
+
+      <h4>Where</h4>
+      <p><span class="filepath">app/namakkal/page.tsx</span> (and its <code>layout.tsx</code>)</p>
+
+      <h4>How to find &amp; fix (investigation, not a blind edit)</h4>
+      <ul class="steps">
+        <li><b>Reproduce:</b> <code>npm run build &amp;&amp; npm start</code>, then run Chrome DevTools → Lighthouse (mobile) on <code>/namakkal/</code>. Open the <b>Performance</b> tab → record a load → look at the longest "Long Tasks" on the main thread.</li>
+        <li><b>Diff against the fast page:</b> compare <code>app/namakkal/page.tsx</code> with <code>app/tiruppur/page.tsx</code> (TBT 130ms, the fastest). Namakkal has extra sections and a longer content body — find what Tiruppur does NOT have.</li>
+        <li><b>Look for these usual suspects:</b>
+          <span class="chip">a heavy "use client" component rendered above the fold</span>
+          <span class="chip">a non-lazy carousel / map / video embed</span>
+          <span class="chip">a very large inline array rendered on mount</span>
+          <span class="chip">framer-motion animating many elements at once</span>
+        </li>
+        <li><b>Fix pattern — lazy-load below-the-fold heavy widgets:</b></li>
+      </ul>
+      <pre class="after"><code>import dynamic from 'next/dynamic';
+
+// load only when needed, skip during SSR for non-critical widgets
+const HeavyWidget = dynamic(() =&gt; import('@/components/HeavyWidget'), {
+  ssr: false,
+  loading: () =&gt; null,
+});</code></pre>
+      <ul class="steps">
+        <li>Add <code>loading="lazy"</code> to every below-the-fold <code>&lt;img&gt;</code> on the page.</li>
+        <li>If framer-motion is animating long lists, gate animations with <code>whileInView</code> + <code>viewport={{ once: true }}</code> instead of animating everything on load.</li>
+      </ul>
+
+      <div class="verify">
+        <b>Target / How to verify:</b> Re-run mobile Lighthouse on <code>/namakkal/</code>.
+        Goal: <b>TBT &lt; 300ms, performance &gt; 85</b> (matching its sister pages). Also confirm the page still renders identically across breakpoints (375px, 768px, 1024px).
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= ISSUE 3 ================= -->
+  <h2 class="section">Issue 3 — Add Geo Schema (serviceArea + areaServed)</h2>
+  <div class="card">
+    <div class="head"><h3><span class="badge b-p2">P2</span> Strengthen local-entity signals for AI &amp; local search</h3></div>
+    <div class="body">
+      <h4>What's wrong</h4>
+      <p class="why">Only <b>Coimbatore</b>'s <code>EducationalOrganization</code> schema declares which areas the college
+      serves (<code>serviceArea</code> + <code>areaServed</code>). The other 4 pages are missing it. These properties
+      help Google and AI engines (ChatGPT/Gemini/Perplexity) understand the geographic relevance of each page.</p>
+
+      <h4>Where</h4>
+      <p>In each <span class="filepath">layout.tsx</span>, inside the <code>orgSchema</code> object, add the two
+      properties <b>right after the <code>"geo"</code> line</b> (and before <code>"sameAs"</code>).
+      Reference implementation already exists in <span class="filepath">app/coimbatore/layout.tsx</span> (lines 175–184).</p>
+
+      <h4>Code to insert — same block, only the city list changes</h4>
+      <pre class="after"><code>"serviceArea": {
+  "@type": "GeoCircle",
+  "geoMidpoint": { "@type": "GeoCoordinates", "latitude": "11.4445", "longitude": "77.6992" },
+  "geoRadius": "150000"
+},
+"areaServed": [ /* see per-city list below */ ],</code></pre>
+
+      <h4>Per-file <code>areaServed</code> values</h4>
+      <table>
+        <thead><tr><th>File (line ~ after geo)</th><th><code>areaServed</code> value</th></tr></thead>
+        <tbody>
+          <tr><td><span class="filepath">app/erode/layout.tsx</span><br><span class="small">after line 90</span></td><td><code>["Erode", "Komarapalayam", "Bhavani", "Gobichettipalayam", "Namakkal"]</code></td></tr>
+          <tr><td><span class="filepath">app/salem/layout.tsx</span><br><span class="small">after line 83</span></td><td><code>["Salem", "Komarapalayam", "Namakkal", "Tiruchengode"]</code></td></tr>
+          <tr><td><span class="filepath">app/tiruppur/layout.tsx</span><br><span class="small">after line 83</span></td><td><code>["Tiruppur", "Erode", "Komarapalayam", "Coimbatore"]</code></td></tr>
+          <tr><td><span class="filepath">app/namakkal/layout.tsx</span><br><span class="small">after line 162</span></td><td><code>["Namakkal", "Komarapalayam", "Tiruchengode", "Rasipuram", "Erode"]</code></td></tr>
+        </tbody>
+      </table>
+
+      <div class="verify">
+        <b>How to verify:</b> Paste each page URL into <a href="https://validator.schema.org/">validator.schema.org</a>
+        (or Google Rich Results Test) → confirm <code>EducationalOrganization</code> now lists <code>serviceArea</code> and <code>areaServed</code>, with no errors.
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= ISSUE 4 ================= -->
+  <h2 class="section">Issue 4 — Add Rich-Result Robots Directives (Salem &amp; Tiruppur)</h2>
+  <div class="card">
+    <div class="head"><h3><span class="badge b-p2">P2</span> Salem &amp; Tiruppur use a bare robots block</h3></div>
+    <div class="body">
+      <h4>What's wrong</h4>
+      <p class="why">Erode and Coimbatore allow large image previews and full snippets in Google
+      (<code>max-image-preview: large</code> etc.), which makes results visually richer.
+      Salem and Tiruppur only have <code>{ index: true, follow: true }</code> — missing those rich-result hints.</p>
+
+      <h4>Where</h4>
+      <p><span class="filepath">app/salem/layout.tsx</span> (line 10) &nbsp;and&nbsp; <span class="filepath">app/tiruppur/layout.tsx</span> (line 10)</p>
+
+      <p class="tag tag-rm">BEFORE</p>
+      <pre class="before"><code>robots: { index: true, follow: true },</code></pre>
+      <p class="tag tag-add">AFTER</p>
+      <pre class="after"><code>robots: {
+  index: true,
+  follow: true,
+  'max-snippet': -1,
+  'max-image-preview': 'large',
+  'max-video-preview': -1,
+},</code></pre>
+
+      <div class="verify">
+        <b>How to verify:</b> <code>npm run build</code>, then view page source → the <code>&lt;meta name="robots"&gt;</code>
+        tag should now include <code>max-image-preview:large</code>.
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= ISSUE 5 ================= -->
+  <h2 class="section">Issue 5 — Preload the Hero (LCP) Image</h2>
+  <div class="card">
+    <div class="head"><h3><span class="badge b-p3">P3</span> Push LCP under 2.5s</h3></div>
+    <div class="body">
+      <h4>What's wrong</h4>
+      <p class="why">Largest Contentful Paint is above the 2.5s target on Namakkal (3.1s), Coimbatore (3.0s) and Tiruppur (2.7s).
+      The hero image <code>/images/BDS-hero-image.webp</code> is the LCP element. Preloading it helps the browser fetch it sooner.</p>
+
+      <h4>Where &amp; how</h4>
+      <p>Best approach in Next.js: if the hero is rendered with <code>next/image</code>, add the <code>priority</code> prop to it
+      (this auto-generates a preload). Find the hero <code>&lt;Image&gt;</code> in each <span class="filepath">app/[city]/page.tsx</span>:</p>
+      <pre class="after"><code>&lt;Image src="/images/BDS-hero-image.webp" alt="..." priority /&gt;</code></pre>
+      <p>If the hero is a plain CSS background or <code>&lt;img&gt;</code>, add a preload link in the layout instead:</p>
+      <pre class="after"><code>// inside the layout return, before &lt;Header /&gt;
+&lt;link rel="preload" as="image" href="/images/BDS-hero-image.webp" /&gt;</code></pre>
+
+      <div class="verify">
+        <b>How to verify:</b> Mobile Lighthouse → LCP should drop below 2.5s. Confirm only ONE preload per page (don't double up).
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= ISSUE 6 ================= -->
+  <h2 class="section">Issue 6 — (Optional) X-XSS-Protection Header</h2>
+  <div class="card">
+    <div class="head"><h3><span class="badge b-p3">P3</span> Low value — read before doing</h3></div>
+    <div class="body">
+      <h4>What the audit flagged</h4>
+      <p class="why">An automated scanner reported the <code>X-XSS-Protection</code> header is missing on all 5 pages.</p>
+
+      <div class="note">
+        <b>Honest recommendation:</b> This header is <b>deprecated</b>. Modern browsers ignore it, and in some old
+        browsers it could even introduce issues — current security guidance (OWASP) is to either omit it or set it to <code>0</code>.
+        The site already has a strong <code>Content-Security-Policy</code>, which is the real XSS defense.
+        <b>You can safely skip this.</b> Only add it if a compliance checklist explicitly requires the header to be present.
+      </div>
+
+      <h4>If you must add it</h4>
+      <p><span class="filepath">next.config.ts</span> → inside the <code>headers()</code> array for <code>/(.*)</code>:</p>
+      <pre class="after"><code>{ key: 'X-XSS-Protection', value: '0' },</code></pre>
+    </div>
+  </div>
+
+  <!-- ================= FINAL CHECKLIST ================= -->
+  <h2 class="section">Developer Checklist</h2>
+  <div class="checklist">
+    <label><input type="checkbox"> P1 — Rewrite titles in all 5 layout.tsx files (3 spots each: metadata, openGraph, twitter)</label>
+    <label><input type="checkbox"> P1 — Profile Namakkal, lazy-load the heavy widget, target TBT &lt; 300ms</label>
+    <label><input type="checkbox"> P2 — Add serviceArea + areaServed to Erode, Salem, Tiruppur, Namakkal orgSchema</label>
+    <label><input type="checkbox"> P2 — Add rich-result robots directives to Salem &amp; Tiruppur</label>
+    <label><input type="checkbox"> P3 — Preload / prioritize hero image on Namakkal, Coimbatore, Tiruppur</label>
+    <label><input type="checkbox"> P3 — (Optional) X-XSS-Protection header — likely skip</label>
+    <label><input type="checkbox"> Final — <code>npm run lint</code> passes</label>
+    <label><input type="checkbox"> Final — <code>npm run build</code> passes (no TypeScript errors)</label>
+    <label><input type="checkbox"> Final — Validate all 5 pages on validator.schema.org (no schema errors)</label>
+    <label><input type="checkbox"> Final — Spot-check titles in deployed page source + mobile Lighthouse on Namakkal</label>
+  </div>
+
+  <footer>
+    <p>JKKN Dental College &amp; Hospital — Geo Pages SEO Fixes · Generated 28 May 2026</p>
+    <p class="small">All "before" code is copied verbatim from the current repo. Line numbers refer to the files as of this date and may shift slightly after edits.</p>
+  </footer>
+
+</div>
+</body>
+</html>

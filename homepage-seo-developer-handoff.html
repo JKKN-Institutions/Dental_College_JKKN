@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Homepage SEO Fixes — Developer Handoff | JKKN Dental College</title>
+<style>
+  :root{
+    --green:#006837; --green-light:#7cb983; --green-dark:#002309;
+    --cream:#FBFBEE; --red:#c0392b; --amber:#b8860b; --blue:#1d6fa5;
+    --gray:#5b6770; --line:#e3e6e1;
+  }
+  *{box-sizing:border-box;}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    margin:0; background:var(--cream); color:var(--green-dark); line-height:1.55; font-size:15px;
+  }
+  .wrap{max-width:920px; margin:0 auto; padding:32px 20px 80px;}
+  header.hero{
+    background:linear-gradient(135deg,var(--green) 0%,#00502b 100%);
+    color:#fff; border-radius:16px; padding:32px 28px; margin-bottom:28px;
+  }
+  header.hero h1{margin:0 0 6px; font-size:26px; line-height:1.25;}
+  header.hero p{margin:4px 0; opacity:.92; font-size:14px;}
+  .meta-row{display:flex; flex-wrap:wrap; gap:10px; margin-top:18px;}
+  .pill{background:rgba(255,255,255,.15); border:1px solid rgba(255,255,255,.25);
+    padding:6px 12px; border-radius:999px; font-size:13px;}
+  .score{display:inline-flex; align-items:center; gap:10px; background:#fff; color:var(--green);
+    font-weight:800; padding:8px 16px; border-radius:999px; font-size:18px; margin-top:6px;}
+  h2{color:var(--green); border-bottom:2px solid var(--green-light); padding-bottom:8px;
+    margin-top:44px; font-size:21px;}
+  h3{color:var(--green-dark); font-size:17px; margin:0;}
+  a{color:var(--blue);}
+  .legend{display:flex; gap:10px; flex-wrap:wrap; margin:14px 0 0;}
+  .badge{font-size:12px; font-weight:700; padding:4px 10px; border-radius:6px; color:#fff; white-space:nowrap;}
+  .b-p1{background:var(--red);} .b-p2{background:var(--amber);} .b-p3{background:var(--blue);}
+  .b-info{background:var(--gray);}
+  table{width:100%; border-collapse:collapse; margin:14px 0; background:#fff; border-radius:10px; overflow:hidden;}
+  th,td{text-align:left; padding:10px 12px; border-bottom:1px solid var(--line); font-size:14px; vertical-align:top;}
+  th{background:var(--green); color:#fff; font-weight:600;}
+  tr:last-child td{border-bottom:none;}
+  .card{background:#fff; border:1px solid var(--line); border-left:6px solid var(--green-light);
+    border-radius:10px; padding:20px 22px; margin:18px 0;}
+  .card.p1{border-left-color:var(--red);}
+  .card.p2{border-left-color:var(--amber);}
+  .card.p3{border-left-color:var(--blue);}
+  .card-head{display:flex; align-items:center; gap:12px; flex-wrap:wrap; margin-bottom:6px;}
+  .filepath{font-family:"SFMono-Regular",Consolas,"Liberation Mono",Menlo,monospace;
+    background:#eef2ee; color:#13351f; padding:3px 8px; border-radius:5px; font-size:13px;
+    display:inline-block; margin:8px 0;}
+  .label{font-weight:700; color:var(--green); font-size:13px; text-transform:uppercase;
+    letter-spacing:.04em; margin:16px 0 4px;}
+  pre{background:#0d1f14; color:#e8f5ec; padding:14px 16px; border-radius:8px; overflow-x:auto;
+    font-size:13px; line-height:1.5; font-family:"SFMono-Regular",Consolas,Menlo,monospace; margin:6px 0;}
+  pre.bad{border-left:4px solid var(--red);}
+  pre.good{border-left:4px solid var(--green-light);}
+  code{font-family:"SFMono-Regular",Consolas,Menlo,monospace; background:#eef2ee;
+    padding:1px 5px; border-radius:4px; font-size:13px; color:#13351f;}
+  .tok-del{color:#ff8a80;} .tok-add{color:#9be8a8;}
+  .why{background:var(--cream); border-radius:8px; padding:12px 14px; font-size:14px;}
+  .verify{font-size:13px; color:var(--gray); margin-top:10px;}
+  .note{background:#fff7e0; border:1px solid #f0d97a; border-radius:8px; padding:14px 16px; margin:14px 0; font-size:14px;}
+  .donot{background:#f4f9f4; border:1px dashed var(--green-light); border-radius:8px; padding:14px 16px; margin:10px 0; font-size:14px;}
+  ul.tight{margin:8px 0; padding-left:20px;} ul.tight li{margin:4px 0;}
+  .footer{margin-top:50px; padding-top:18px; border-top:1px solid var(--line); font-size:12px; color:var(--gray);}
+  .effort{font-size:12px; color:var(--gray); font-weight:600;}
+  .toc{background:#fff; border:1px solid var(--line); border-radius:10px; padding:16px 22px; margin:8px 0 0;}
+  .toc ol{margin:6px 0; padding-left:22px;} .toc li{margin:5px 0; font-size:14px;}
+  .tasklist{background:#fff; border:2px solid var(--green); border-radius:12px; padding:8px 0 0; margin:8px 0 0; overflow:hidden;}
+  .tasklist .tl-head{background:var(--green); color:#fff; padding:14px 22px; margin:-8px 0 0;}
+  .tasklist .tl-head h3{color:#fff; font-size:18px;}
+  .tasklist .tl-head p{margin:4px 0 0; font-size:13px; opacity:.9;}
+  table.tasks{margin:0; border-radius:0;}
+  table.tasks th{background:#eef2ee; color:var(--green); border-bottom:2px solid var(--green-light);}
+  table.tasks td{font-size:14px;}
+  .chk{display:inline-block; width:20px; height:20px; border:2px solid var(--green); border-radius:5px; background:#fff;}
+  .task-title{font-weight:700; color:var(--green-dark);}
+  .task-loc{font-family:"SFMono-Regular",Consolas,Menlo,monospace; font-size:12px; color:#13351f;
+    background:#eef2ee; padding:2px 7px; border-radius:5px; display:inline-block; margin-top:4px;}
+  .jump{font-size:12px; color:var(--blue); text-decoration:none;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="hero">
+    <h1>Homepage SEO Fixes — Developer Handoff</h1>
+    <p><strong>Page:</strong> https://dental.jkkn.ac.in/ &nbsp;(homepage only)</p>
+    <p><strong>Framework:</strong> Next.js 16 (App Router) &nbsp;|&nbsp; <strong>Audit date:</strong> 2026-05-27</p>
+    <div class="score">Health Score: 82 / 100 &middot; GOOD</div>
+    <div class="meta-row">
+      <span class="pill">✅ Indexed by Google</span>
+      <span class="pill">🔍 Brand term rank #2.1</span>
+      <span class="pill">📱 Mobile LCP 6.5s (needs work)</span>
+      <span class="pill">💻 Desktop perf 96/100</span>
+    </div>
+  </header>
+
+  <p style="font-size:15px;">
+    This document lists <strong>only the homepage issues</strong> found in the SEO audit, with the
+    <strong>exact file, line number, before/after code, and how to verify each fix</strong>. Every file path
+    and line number below was checked against the live codebase on the audit date. Work top-to-bottom:
+    P1 first, then P2, then P3.
+  </p>
+
+  <div class="legend">
+    <span class="badge b-p1">P1 — Fix now</span>
+    <span class="badge b-p2">P2 — Fix this week</span>
+    <span class="badge b-p3">P3 — Fix this month</span>
+    <span class="badge b-info">INFO — Do not touch</span>
+  </div>
+
+  <!-- DEVELOPER TASK LIST -->
+  <div class="tasklist">
+    <div class="tl-head">
+      <h3>✅ Developer Task List — 7 tasks</h3>
+      <p>Do these in order (P1 → P2 → P3). Full code for each task is in the matching section below — click "details".</p>
+    </div>
+    <table class="tasks">
+      <tr>
+        <th style="width:34px;">Done</th><th style="width:30px;">#</th>
+        <th>Task — what to do</th><th>Where (file · line)</th><th style="width:60px;">Priority</th>
+      </tr>
+      <tr>
+        <td><span class="chk"></span></td><td>1</td>
+        <td><span class="task-title">Fix broken "International Placements" link</span> — repoint to the placements site (or remove the item). It currently 404s and the anchor text doesn't match the URL. <a class="jump" href="#t1">details ↓</a></td>
+        <td><span class="task-loc">components/AboutInstitution.tsx · line 50</span></td>
+        <td><span class="badge b-p1">P1</span></td>
+      </tr>
+      <tr>
+        <td><span class="chk"></span></td><td>2</td>
+        <td><span class="task-title">Fix broken "50+ Research Publications" link</span> — change <code>/research/</code> to <code>/research/publication/</code>. <a class="jump" href="#t2">details ↓</a></td>
+        <td><span class="task-loc">components/AboutInstitution.tsx · line 58</span></td>
+        <td><span class="badge b-p1">P1</span></td>
+      </tr>
+      <tr>
+        <td><span class="chk"></span></td><td>3</td>
+        <td><span class="task-title">Speed up mobile — optimize hero image</span> — convert the JPG to WebP/AVIF and cut unused JS. <strong>Do NOT add <code>priority</code> — it's already there.</strong> <a class="jump" href="#t3">details ↓</a></td>
+        <td><span class="task-loc">components/Hero.tsx · lines 77–84</span><br><span class="task-loc">next.config.ts · app/layout.tsx</span></td>
+        <td><span class="badge b-p1">P1</span></td>
+      </tr>
+      <tr>
+        <td><span class="chk"></span></td><td>4</td>
+        <td><span class="task-title">Shorten meta description</span> — trim from 163 to ≤155 chars (suggested text provided). <a class="jump" href="#t4">details ↓</a></td>
+        <td><span class="task-loc">app/page.tsx · line 23</span></td>
+        <td><span class="badge b-p2">P2</span></td>
+      </tr>
+      <tr>
+        <td><span class="chk"></span></td><td>5</td>
+        <td><span class="task-title">Replace placeholder faculty names</span> — put real names/qualifications for all 5 entries (or remove the section until ready). <a class="jump" href="#t5">details ↓</a></td>
+        <td><span class="task-loc">components/FacultySection.tsx · lines 6,13,20,27,34</span></td>
+        <td><span class="badge b-p2">P2</span></td>
+      </tr>
+      <tr>
+        <td><span class="chk"></span></td><td>6</td>
+        <td><span class="task-title">Complete the Event schema</span> — add <code>performer</code> + <code>offers</code> (price/priceCurrency). <a class="jump" href="#t6">details ↓</a></td>
+        <td><span class="task-loc">app/page.tsx · Event JSON-LD block</span></td>
+        <td><span class="badge b-p3">P3</span></td>
+      </tr>
+      <tr>
+        <td><span class="chk"></span></td><td>7</td>
+        <td><span class="task-title">Add X-XSS-Protection header</span> — one line in the headers array. <a class="jump" href="#t7">details ↓</a></td>
+        <td><span class="task-loc">next.config.ts · headers()</span></td>
+        <td><span class="badge b-p3">P3</span></td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="note" style="margin-top:14px;">
+    🚫 <strong>NOT a task — do not change these:</strong> robots.txt (it's correct), schema "missing EducationalOrganization/LocalBusiness" (already present), and the hero "missing priority" alert (priority is already set). Full explanation in Section 8. These are false alarms from automated tools — touching them will cause harm.
+  </div>
+
+  <!-- ======================= P1 #1 ======================= -->
+  <h2 id="t1">1. Broken link — "International Placements" (404 + wrong destination)</h2>
+  <div class="card p1">
+    <div class="card-head">
+      <span class="badge b-p1">P1</span><h3>Two bugs in one link</h3>
+      <span class="effort">· Effort: 2 min</span>
+    </div>
+    <span class="filepath">components/AboutInstitution.tsx &nbsp;— line 50</span>
+
+    <div class="label">Current code (broken)</div>
+    <pre class="bad">&lt;Link href=<span class="tok-del">"/facilities/hostel/"</span> className="..."&gt;<span class="tok-del">International Placements — UK, UAE, Singapore</span>&lt;/Link&gt;</pre>
+
+    <div class="why why">
+      <strong>Two problems:</strong>
+      <ul class="tight">
+        <li><strong>404:</strong> There is no <code>app/facilities/hostel/page.tsx</code> — only
+          <code>/facilities/hostel/boys-hostel/</code> and <code>/facilities/hostel/girls-hostel/</code> exist.
+          So <code>/facilities/hostel/</code> returns a 404.</li>
+        <li><strong>Wrong anchor:</strong> The link text says "International Placements" but points to a hostel URL —
+          a copy-paste mismatch that confuses both users and Google.</li>
+      </ul>
+    </div>
+
+    <div class="label">Fix — Option A (recommended: it's a placements claim)</div>
+    <pre class="good">&lt;a href=<span class="tok-add">"https://placements.jkkn.ac.in/"</span> target="_blank" rel="noopener" className="..."&gt;International Placements — UK, UAE, Singapore&lt;/a&gt;</pre>
+    <p style="font-size:13px; margin:6px 0;">(Use a plain <code>&lt;a&gt;</code> for the external placements site, not Next.js <code>&lt;Link&gt;</code>.)</p>
+
+    <div class="label">Fix — Option B (if no placements page exists yet)</div>
+    <p style="font-size:14px; margin:4px 0;">Repoint to the live About/Why-Choose section and align the anchor text, OR remove the list item until a placements page is ready. Do not leave it pointing at a 404.</p>
+
+    <div class="verify">✔ <strong>Verify:</strong> Click the link on the live homepage — must load a real page (200), not "404". Re-run the link checker; broken count must drop to 0.</div>
+  </div>
+
+  <!-- ======================= P1 #2 ======================= -->
+  <h2 id="t2">2. Broken link — "50+ Research Publications Annually" (404)</h2>
+  <div class="card p1">
+    <div class="card-head">
+      <span class="badge b-p1">P1</span><h3>Points to a non-existent index page</h3>
+      <span class="effort">· Effort: 1 min</span>
+    </div>
+    <span class="filepath">components/AboutInstitution.tsx &nbsp;— line 58</span>
+
+    <div class="label">Current code (broken)</div>
+    <pre class="bad">&lt;Link href=<span class="tok-del">"/research/"</span> className="..."&gt;50+ Research Publications Annually&lt;/Link&gt;</pre>
+
+    <div class="why why">
+      There is no <code>app/research/page.tsx</code> (index). Only sub-pages exist, e.g.
+      <code>/research/publication/</code>, <code>/research/research-development-rd-cell/</code>.
+      So <code>/research/</code> itself is a 404.
+    </div>
+
+    <div class="label">Fix — repoint to the matching live sub-page</div>
+    <pre class="good">&lt;Link href=<span class="tok-add">"/research/publication/"</span> className="..."&gt;50+ Research Publications Annually&lt;/Link&gt;</pre>
+
+    <div class="verify">✔ <strong>Verify:</strong> <code>/research/publication/</code> loads (200). Re-run link checker — 0 broken links on homepage.</div>
+  </div>
+
+  <!-- ======================= P1 #3 ======================= -->
+  <h2 id="t3">3. Mobile LCP 6.5s — hero image is a heavy JPG</h2>
+  <div class="card p1">
+    <div class="card-head">
+      <span class="badge b-p1">P1</span><h3>Mobile performance 69/100 (desktop is 96)</h3>
+      <span class="effort">· Effort: 1–2 hrs</span>
+    </div>
+    <span class="filepath">components/Hero.tsx &nbsp;— lines 77–84 (the &lt;Image&gt; render)</span>
+
+    <div class="note">
+      ⚠️ <strong>Important — already done, don't redo:</strong> The hero <code>&lt;Image&gt;</code> <em>already</em> has
+      <code>priority</code> and a correct <code>sizes</code> attribute. The problem is <strong>not</strong> a missing
+      priority flag. The problem is the <strong>image format and weight</strong>.
+    </div>
+
+    <div class="label">Root causes (from PageSpeed mobile)</div>
+    <ul class="tight">
+      <li>LCP element = hero image <code>/images/JKKN-Dental-Clinical-Training.jpg</code> — served as <strong>JPG only</strong> (no WebP/AVIF variant exists in <code>public/images/</code>).</li>
+      <li>≈ <strong>880ms of unused JavaScript</strong> and ≈150ms unused CSS on first load.</li>
+      <li>Mobile LCP = 6.5s vs target &lt; 2.5s. Google crawls this page as <strong>mobile</strong>, so this is the figure that affects ranking.</li>
+    </ul>
+
+    <div class="label">Fix steps</div>
+    <ol class="tight">
+      <li><strong>Serve modern formats.</strong> Confirm <code>next.config.ts</code> has:
+        <pre class="good">images: { formats: ['image/avif', 'image/webp'] }</pre>
+        With this, Next.js auto-serves AVIF/WebP from the existing JPG. If the JPG source is very large, also export a compressed/resized master (target the rendered display size, ~1200px wide max for the hero).</li>
+      <li><strong>Add explicit <code>width</code>/<code>height</code></strong> (or keep <code>fill</code> with a sized container) so the browser reserves space — prevents layout shift and helps LCP.</li>
+      <li><strong>Cut unused JS (880ms).</strong> The page already uses <code>dynamic()</code> for below-the-fold sections (good). The remaining unused JS is most likely third-party (GTM / Analytics). Load those with <code>strategy="afterInteractive"</code> or <code>"lazyOnload"</code> via <code>next/script</code> in <code>app/layout.tsx</code>.</li>
+    </ol>
+
+    <div class="verify">✔ <strong>Verify:</strong> Run PageSpeed Insights (mobile) on the homepage. Target: LCP &lt; 2.5s, Performance &gt; 90. Confirm DevTools → Network shows the hero served as <code>.avif</code> or <code>.webp</code>.</div>
+  </div>
+
+  <!-- ======================= P2 #4 ======================= -->
+  <h2 id="t4">4. Meta description too long (163 chars → trim to ≤155)</h2>
+  <div class="card p2">
+    <div class="card-head">
+      <span class="badge b-p2">P2</span><h3>Google truncates it in search results</h3>
+      <span class="effort">· Effort: 2 min</span>
+    </div>
+    <span class="filepath">app/page.tsx &nbsp;— line 23 (the <code>description</code> field)</span>
+
+    <div class="label">Current (163 chars — too long)</div>
+    <pre class="bad">description: <span class="tok-del">'JKKN Dental College, Namakkal — DCI approved, NAAC A dental college in Tamil Nadu. BDS &amp; MDS programs, 200+ chairs, 500+ daily patients, 92% placement. Apply 2026.'</span>,</pre>
+
+    <div class="label">Suggested (≈139 chars — safe)</div>
+    <pre class="good">description: <span class="tok-add">'JKKN Dental College, Namakkal — DCI-approved, NAAC A in Tamil Nadu. BDS &amp; MDS, 200+ chairs, 500+ daily patients, 92% placement. Apply 2026.'</span>,</pre>
+
+    <div class="why why">
+      Only the <code>&lt;meta name="description"&gt;</code> (line 23) has the ≤155 limit. The Open Graph (line 26)
+      and Twitter (line 43) descriptions can stay longer, but keeping them consistent is fine.
+      <strong>Note:</strong> "NAAC A" is marked unverified in project docs — confirm the grade with admin before it spreads.
+    </div>
+
+    <div class="verify">✔ <strong>Verify:</strong> View page source → <code>&lt;meta name="description"&gt;</code> is ≤155 chars. Re-check in Google's Rich Results / a SERP preview tool.</div>
+  </div>
+
+  <!-- ======================= P2 #5 ======================= -->
+  <h2 id="t5">5. Placeholder faculty names in DOM + schema</h2>
+  <div class="card p2">
+    <div class="card-head">
+      <span class="badge b-p2">P2</span><h3>"Dr. [Faculty Name]" / "Dr. [Principal Name]" still in the page</h3>
+      <span class="effort">· Effort: 15 min (once real names provided)</span>
+    </div>
+    <span class="filepath">components/FacultySection.tsx &nbsp;— lines 6, 13, 20, 27, 34</span>
+
+    <div class="label">Current code (placeholders)</div>
+    <pre class="bad">const faculty = [
+  { name: <span class="tok-del">'Dr. [Principal Name]'</span>, designation: 'Principal &amp; Dean', ... },
+  { name: <span class="tok-del">'Dr. [Faculty Name]'</span>,   designation: 'Professor &amp; HOD', ... },  // Orthodontics
+  { name: <span class="tok-del">'Dr. [Faculty Name]'</span>,   ... },  // Periodontics
+  { name: <span class="tok-del">'Dr. [Faculty Name]'</span>,   ... },  // Prosthodontics
+  { name: <span class="tok-del">'Dr. [Faculty Name]'</span>,   ... },  // Conservative Dentistry
+];</pre>
+
+    <div class="note">
+      ⚠️ This section currently has the CSS class <code>hidden</code> (line 44), so it is <em>not visually shown</em> —
+      but it is <strong>still rendered in the HTML/DOM</strong>, so the placeholder text is still crawled by Google
+      and read by AI engines. Hiding it visually does not solve the SEO/E-E-A-T problem.
+    </div>
+
+    <div class="label">Fix — choose one</div>
+    <ul class="tight">
+      <li><strong>Preferred:</strong> Replace all 5 names with the real Principal + HOD names and qualifications (admin to provide). Update any matching <code>Person</code> JSON-LD so schema names match the visible names.</li>
+      <li><strong>If names aren't ready:</strong> Don't just keep it <code>hidden</code> — remove/comment out the placeholder data and the section render until real names exist, so no fake "Dr. [Faculty Name]" entity is exposed.</li>
+    </ul>
+
+    <div class="verify">✔ <strong>Verify:</strong> Search page source for <code>[Faculty Name]</code> and <code>[Principal Name]</code> → zero matches. Validate <code>Person</code> schema in Google Rich Results Test.</div>
+  </div>
+
+  <!-- ======================= P3 #6 ======================= -->
+  <h2 id="t6">6. Event schema missing 3 fields</h2>
+  <div class="card p3">
+    <div class="card-head">
+      <span class="badge b-p3">P3</span><h3>Admissions Event JSON-LD incomplete</h3>
+      <span class="effort">· Effort: 10 min</span>
+    </div>
+    <span class="filepath">app/page.tsx &nbsp;— locate the JSON-LD block with <code>"@type": "Event"</code></span>
+
+    <div class="why why">
+      Google flags the Event as missing <code>performer</code>, <code>price</code>, and <code>priceCurrency</code>.
+      Adding them unlocks the full Event rich result.
+    </div>
+
+    <div class="label">Add these fields to the Event object</div>
+    <pre class="good">{
+  "@type": "Event",
+  // ...existing name, startDate, location...
+  <span class="tok-add">"performer": { "@type": "Organization", "name": "JKKN Dental College &amp; Hospital" },
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "INR",
+    "availability": "https://schema.org/InStock",
+    "url": "https://dental.jkkn.ac.in/admission/"
+  }</span>
+}</pre>
+    <p style="font-size:13px;">(If admission enquiry is free, <code>price: "0"</code> is correct. Use the real application fee if there is one.)</p>
+
+    <div class="verify">✔ <strong>Verify:</strong> Google Rich Results Test on the homepage → Event shows 0 errors/warnings.</div>
+  </div>
+
+  <!-- ======================= P3 #7 ======================= -->
+  <h2 id="t7">7. Missing X-XSS-Protection header</h2>
+  <div class="card p3">
+    <div class="card-head">
+      <span class="badge b-p3">P3</span><h3>Minor security-header gap</h3>
+      <span class="effort">· Effort: 5 min</span>
+    </div>
+    <span class="filepath">next.config.ts &nbsp;— inside <code>headers()</code> for source <code>/(.*)</code></span>
+
+    <div class="label">Add this header to the existing array</div>
+    <pre class="good">{ key: <span class="tok-add">'X-XSS-Protection'</span>, value: <span class="tok-add">'0'</span> },</pre>
+    <p style="font-size:13px;">
+      Modern guidance is <code>X-XSS-Protection: 0</code> (the legacy filter is deprecated; your CSP does the real protection).
+      Some scanners still want the header present. Don't remove your existing CSP / HSTS / X-Frame-Options.
+    </p>
+
+    <div class="verify">✔ <strong>Verify:</strong> <code>curl -I https://dental.jkkn.ac.in/</code> shows the header, or use securityheaders.com.</div>
+  </div>
+
+  <!-- ======================= INFO / DO NOT TOUCH ======================= -->
+  <h2>8. Flagged but already correct — DO NOT change</h2>
+  <div class="donot">
+    <p>Automated tools threw these alerts. Each was manually verified and is a <strong>false positive</strong> —
+    changing them would do harm. Listed so no one wastes time "fixing" them.</p>
+    <ul class="tight">
+      <li><span class="badge b-info">INFO</span> <strong>"robots.txt blocks entire site"</strong> — FALSE. The file has <code>Allow: /</code>;
+        Google reports the page as <em>ALLOWED + indexed</em>. The tool mis-read the <code>Disallow: /*?q=</code> wildcard rules. <strong>Leave robots as-is.</strong></li>
+      <li><span class="badge b-info">INFO</span> <strong>"Add EducationalOrganization / LocalBusiness schema"</strong> — FALSE. Already present
+        (as <code>CollegeOrUniversity + EducationalOrganization</code>, and <code>MedicalOrganization + Dentist</code> for the local-business role).</li>
+      <li><span class="badge b-info">INFO</span> <strong>Hero image "missing priority"</strong> — FALSE. <code>priority</code> is already set on the hero <code>&lt;Image&gt;</code> (see Issue 3 note).</li>
+    </ul>
+  </div>
+
+  <!-- ======================= CONTEXT ======================= -->
+  <h2>9. Context — why these matter (Search Console, 28 days)</h2>
+  <table>
+    <tr><th>Metric</th><th>Value</th><th>Meaning</th></tr>
+    <tr><td>Index status</td><td>Submitted &amp; indexed</td><td>Page is healthy in Google. No coverage errors.</td></tr>
+    <tr><td>Top query "jkkn dental college"</td><td>92 clicks · pos 2.1</td><td>Strong on the brand name.</td></tr>
+    <tr><td>Non-branded head terms</td><td>0 in top clicks</td><td>"best dental college Tamil Nadu" etc. get impressions but few clicks — fixing speed + completeness helps here.</td></tr>
+    <tr><td>Mobile LCP</td><td>6.5s</td><td>Single biggest weakness. Google crawls mobile-first.</td></tr>
+  </table>
+
+  <div class="note">
+    🔎 <strong>Separate investigation (not a code bug):</strong> Search Console shows the query
+    <code>libra168 login</code> pulling 524 impressions at position 3.8 for this site. That term has nothing to do
+    with a dental college and may indicate a spam association or a hacked/scraped page reference. Flag to the SEO/admin
+    team to investigate — it does not belong in any homepage code change.
+  </div>
+
+  <!-- ======================= CHECKLIST ======================= -->
+  <h2>10. Final verification checklist (after all fixes)</h2>
+  <table>
+    <tr><th>#</th><th>Check</th><th>Pass condition</th></tr>
+    <tr><td>1</td><td>Broken links</td><td>Link checker / crawl shows <strong>0</strong> broken links on homepage</td></tr>
+    <tr><td>2</td><td>PageSpeed (mobile)</td><td>LCP &lt; 2.5s, Performance &gt; 90, hero served as AVIF/WebP</td></tr>
+    <tr><td>3</td><td>Meta description</td><td>≤ 155 characters</td></tr>
+    <tr><td>4</td><td>Placeholders</td><td>Page source has 0 matches for <code>[Faculty Name]</code> / <code>[Principal Name]</code></td></tr>
+    <tr><td>5</td><td>Schema</td><td>Rich Results Test: Event has 0 warnings; all types valid</td></tr>
+    <tr><td>6</td><td>Headers</td><td><code>X-XSS-Protection</code> present; CSP/HSTS untouched</td></tr>
+    <tr><td>7</td><td>Build</td><td><code>npm run build</code> passes with no type errors</td></tr>
+  </table>
+
+  <div class="footer">
+    <p><strong>Files this developer will touch:</strong>
+      <code>components/AboutInstitution.tsx</code>,
+      <code>components/Hero.tsx</code>,
+      <code>components/FacultySection.tsx</code>,
+      <code>app/page.tsx</code>,
+      <code>next.config.ts</code>.</p>
+    <p>Generated from a single-page SEO audit of the JKKN Dental College homepage · 2026-05-27 ·
+      Health Score 82/100 (GOOD, Optimize mode). Re-audit recommended after fixes (~45 days).</p>
+  </div>
+
+</div>
+</body>
+</html>

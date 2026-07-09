@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Internal Link Architecture — JKKN Dental College &amp; Hospital</title>
+<style>
+  :root{
+    --green:#006837;--green2:#7cb983;--dark:#002309;--cream:#FBFBEE;
+    --p1:#c0392b;--p2:#d68910;--p3:#2471a3;--ok:#1e8449;--line:#e6e6d8;--ink:#2b2b2b;--muted:#6b7280;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:'Segoe UI',Roboto,Arial,sans-serif;color:var(--ink);background:#f4f4ec;line-height:1.55;}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 20px 90px;}
+  header.top{background:linear-gradient(135deg,var(--green),var(--green2));color:#fff;padding:44px 20px;margin-bottom:26px;}
+  header.top .in{max-width:1120px;margin:0 auto;}
+  header.top h1{margin:0 0 8px;font-size:28px;}
+  header.top p{margin:3px 0;opacity:.95;font-size:14px;}
+  .pill{display:inline-block;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.35);padding:4px 12px;border-radius:99px;font-size:12px;font-weight:600;margin-top:10px;margin-right:6px;}
+  h2.sec{color:var(--green);border-bottom:3px solid var(--green2);padding-bottom:7px;margin-top:46px;font-size:22px;}
+  h3.sub{color:var(--dark);font-size:17px;margin:26px 0 6px;}
+  p.lead{font-size:15px;}
+  .toc{background:#fff;border:1px solid var(--line);border-radius:10px;padding:16px 22px;margin:18px 0;}
+  .toc strong{color:var(--green);}
+  .toc ol{margin:10px 0 0;padding-left:20px;column-count:2;column-gap:30px;font-size:13.5px;}
+  .toc li{margin:5px 0;break-inside:avoid;}
+  .toc a{color:var(--green);text-decoration:none;font-weight:600;}
+  .toc a:hover{text-decoration:underline;}
+  .card{background:#fff;border:1px solid var(--line);border-radius:12px;margin:16px 0;padding:18px 22px;box-shadow:0 1px 3px rgba(0,0,0,.05);}
+  .badge{display:inline-block;color:#fff;font-size:11px;font-weight:700;padding:3px 9px;border-radius:99px;}
+  .b-p1{background:var(--p1)}.b-p2{background:var(--p2)}.b-p3{background:var(--p3)}.b-ok{background:var(--ok)}
+  .chip{display:inline-block;font-size:11px;font-weight:700;padding:3px 9px;border-radius:6px;background:#eef0ea;color:#444;margin:2px 3px 2px 0;}
+  .chip.eff{background:#e9f7ef;color:var(--ok)} .chip.eff.m{background:#fef5e7;color:var(--p2)} .chip.eff.h{background:#fdecea;color:var(--p1)}
+  .lab{font-size:11px;text-transform:uppercase;letter-spacing:.05em;font-weight:700;color:var(--muted);margin-top:14px;margin-bottom:4px;}
+  code,.url{font-family:Consolas,monospace;font-size:12.5px;background:#f0f0e4;border:1px solid var(--line);border-radius:4px;padding:1px 6px;color:#7a3b00;}
+  table{width:100%;border-collapse:collapse;margin:14px 0;background:#fff;border-radius:10px;overflow:hidden;font-size:13px;box-shadow:0 1px 3px rgba(0,0,0,.05);}
+  th,td{padding:9px 12px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top;}
+  thead th{background:var(--green);color:#fff;font-size:12.5px;}
+  tr:nth-child(even){background:var(--cream);}
+  .anchor{font-style:italic;color:var(--p3);}
+  .arrow{color:var(--green2);font-weight:700;}
+  .tree{font-family:Consolas,monospace;font-size:13px;background:#1f2421;color:#e6efe8;border-radius:10px;padding:18px 22px;overflow-x:auto;line-height:1.65;}
+  .tree .l0{color:#ffd97a;font-weight:700;}
+  .tree .l1{color:#9fe0b0;font-weight:700;}
+  .tree .hub{color:#7ec8ff;}
+  .tree .orphan{color:#ff9a8f;}
+  .tree .c{color:#8fa99a;}
+  .diagram{background:var(--cream);border:1px solid var(--line);border-radius:12px;padding:20px;margin:14px 0;}
+  .hubbox{display:block;max-width:360px;margin:0 auto 6px;text-align:center;background:var(--green);color:#fff;font-weight:700;padding:11px;border-radius:10px;font-size:14px;}
+  .spokes{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:12px;}
+  .spoke{background:#fff;border:1.5px solid var(--green2);color:var(--dark);padding:7px 12px;border-radius:8px;font-size:12.5px;font-weight:600;}
+  .spoke.x{border-color:var(--p2);background:#fef9f0;}
+  .legend{font-size:12px;color:var(--muted);margin:8px 0 0;}
+  .legend span{display:inline-block;margin-right:16px;}
+  .dot{display:inline-block;width:11px;height:11px;border-radius:3px;vertical-align:middle;margin-right:4px;}
+  .callout{border-left:4px solid var(--p2);background:#fff8e6;border-radius:0 10px 10px 0;padding:14px 18px;margin:16px 0;font-size:14px;}
+  .callout.ok{border-left-color:var(--ok);background:#eefaf1;}
+  .callout.bad{border-left-color:var(--p1);background:#fdecea;}
+  .callout b{color:var(--dark);}
+  ul.tight{margin:6px 0 0;padding-left:20px;}
+  ul.tight li{margin:5px 0;font-size:14px;}
+  .footer{margin-top:50px;padding:20px 22px;background:var(--dark);color:#cfe3d3;border-radius:12px;font-size:13px;}
+  .footer b{color:#fff;}
+  .num{display:inline-block;width:24px;height:24px;border-radius:7px;background:var(--green);color:#fff;font-weight:700;font-size:12px;text-align:center;line-height:24px;margin-right:8px;}
+  .kpi{display:flex;flex-wrap:wrap;gap:12px;margin:14px 0;}
+  .kpi .box{flex:1 1 150px;background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px 16px;text-align:center;}
+  .kpi .box .n{font-size:24px;font-weight:800;color:var(--green);}
+  .kpi .box .t{font-size:12px;color:var(--muted);margin-top:2px;}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="in">
+    <h1>Internal Link Architecture &amp; Linking Plan</h1>
+    <p>JKKN Dental College &amp; Hospital &bull; dental.jkkn.ac.in &bull; Next.js 16 (App Router)</p>
+    <p>Complete site-wide internal link structure &mdash; pillar/cluster model, link-flow matrix, anchor-text plan &amp; fixes</p>
+    <span class="pill">150+ pages mapped</span>
+    <span class="pill">8 topic clusters</span>
+    <span class="pill">Strategy only &mdash; no code edited</span>
+    <span class="pill">28 May 2026</span>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ============ TOC ============ -->
+  <div class="toc">
+    <strong>Contents</strong>
+    <ol>
+      <li><a href="#s1">Executive summary &amp; current state</a></li>
+      <li><a href="#s2">Site hierarchy (depth map L0&ndash;L3)</a></li>
+      <li><a href="#s3">The 8 topic clusters (pillar &rarr; spoke)</a></li>
+      <li><a href="#s4">Internal-link flow matrix (page &rarr; page + anchor)</a></li>
+      <li><a href="#s5">Global linking layers (header / footer / body)</a></li>
+      <li><a href="#s6">Anchor-text strategy</a></li>
+      <li><a href="#s7">Orphan &amp; near-orphan fixes</a></li>
+      <li><a href="#s8">Canonical-URL linking rules</a></li>
+      <li><a href="#s9">Priority action list</a></li>
+      <li><a href="#s10">Where to implement (files)</a></li>
+    </ol>
+  </div>
+
+  <!-- ============ S1 ============ -->
+  <h2 class="sec" id="s1">1 &bull; Executive summary &amp; current state</h2>
+  <p class="lead">An internal link is any <code>&lt;a&gt;</code>/<code>&lt;Link&gt;</code> from one page on the domain to another page on the same domain. Internal links do three jobs: (1) help Google <b>discover &amp; crawl</b> pages, (2) <b>pass authority (PageRank)</b> from strong pages to money pages, and (3) tell Google <b>what a page is about</b> via the anchor text. Right now the site has a strong top-down mega menu but three structural gaps that leak ranking potential.</p>
+
+  <div class="kpi">
+    <div class="box"><div class="n">~150</div><div class="t">indexable pages</div></div>
+    <div class="box"><div class="n">13</div><div class="t">mega-menu top groups</div></div>
+    <div class="box"><div class="n">0</div><div class="t">internal links in footer</div></div>
+    <div class="box"><div class="n">11+</div><div class="t">money pages not in nav</div></div>
+  </div>
+
+  <div class="callout bad">
+    <b>Finding 1 &mdash; Footer passes ZERO internal link equity.</b> <code>components/Footer.tsx</code> only renders links to <i>other JKKN domains</i> (ahs, pharmacy, nursing&hellip;) and social profiles (with <code>rel="nofollow"</code>). Every page on the site has a footer, so a footer &ldquo;Quick Links&rdquo; block is the single highest-leverage place to flow authority to admissions/BDS/MDS/fees.
+  </div>
+  <div class="callout bad">
+    <b>Finding 2 &mdash; The actual conversion pages are missing from the Admission menu.</b> <code>navigationMenuLink.ts</code> &rarr; Admission submenu lists Prospectus, Fee-Refund, Scholarship, SEDG &mdash; but NOT <code>/admissions/bds/</code>, <code>/admissions/mds/</code> or <code>/admission-process/</code>, which are the real lead pages. Two existing nav links (<code>/admissions/admission-process-guidelines/&hellip;</code>) also 404.
+  </div>
+  <div class="callout bad">
+    <b>Finding 3 &mdash; High-value pages are near-orphans.</b> <code>/placements/</code>, <code>/fees-structure/</code>, <code>/scholarships/</code>, <code>/testimonials/</code>, <code>/iqac/</code>, <code>/dental-surgery-assistant-course/</code> and the 5 city pages are NOT in the mega menu and NOT in the footer &mdash; they survive on a handful of scattered in-body links. Orphan/near-orphan pages crawl slowly and rank poorly.
+  </div>
+  <div class="callout ok">
+    <b>What is already good.</b> The mega menu (Header) gives deep top-down coverage of About / Academics / Accreditation / Research / Committee / Facilities. The 5 city pages already cross-link each other and point to fees + placements &mdash; a working geo-cluster that just needs connecting to the global nav.
+  </div>
+
+  <!-- ============ S2 ============ -->
+  <h2 class="sec" id="s2">2 &bull; Site hierarchy &mdash; depth map (L0&ndash;L3)</h2>
+  <p>Target rule: <b>every important page reachable within 3 clicks of Home</b>; money pages within 1&ndash;2 clicks. Blue = hub/pillar, red = currently orphan or near-orphan.</p>
+  <div class="tree"><span class="l0">L0  /  (Home)</span>
+&nbsp;
+<span class="l1">L1  Primary hubs (mega menu)</span>
+ ├─ <span class="hub">/admissions/</span>                         <span class="c"># money hub</span>
+ ├─ <span class="hub">/academics/</span>                          <span class="c"># programs hub</span>
+ ├─ /about/   /administration/   /accreditation/
+ ├─ /research/   /committee/   /facilities/
+ ├─ /information-center/ (news, events, careers)  /blog/  /faq/
+ ├─ /gallery/   /contact/   /mandatory-disclosures/
+ └─ <span class="orphan">/placements/  /fees-structure/  /scholarships/  /testimonials/  /iqac/   ← not in nav</span>
+&nbsp;
+<span class="l1">L2  Section pages</span>
+ ├─ /admissions/<span class="hub">bds</span>/   /admissions/<span class="hub">mds</span>/   /admission-process/
+ ├─ /admissions/prospectus/  /admission-criteria/  /scholarship-policy&hellip;/  /fee-refund-policy/
+ ├─ /academics/details-of-academic-programs/<span class="hub">bds</span>/
+ ├─ /academics/details-of-academic-programs/<span class="hub">mds</span>/        <span class="c"># sub-hub for 5 specs</span>
+ ├─ /accreditation/naac/   /accreditation/nirf/nirf-2026/&hellip;
+ ├─ /facilities/library|labs|hostel|transport&hellip;
+ └─ <span class="orphan">/coimbatore/  /erode/  /salem/  /namakkal/  /tiruppur/   ← geo cluster, not in nav</span>
+&nbsp;
+<span class="l1">L3  Leaf pages</span>
+ ├─ MDS specs: periodontics · orthodontics · prosthodontics · conservative · oral-medicine
+ ├─ Syllabi (BDS + 5 MDS) · academic calendars (2018&ndash;2025)
+ ├─ 20+ committee pages · approvals/affiliation (DCI/MGR)
+ └─ Blog guides: bds · mds-ortho · mds-prostho · mds-perio · mds-conservative · mds-oral-medicine</div>
+  <p class="legend">
+    <span><span class="dot" style="background:#7ec8ff"></span>Hub / pillar</span>
+    <span><span class="dot" style="background:#ff9a8f"></span>Orphan / near-orphan (fix in §7)</span>
+    <span><span class="dot" style="background:#9fe0b0"></span>Depth level</span>
+  </p>
+
+  <!-- ============ S3 ============ -->
+  <h2 class="sec" id="s3">3 &bull; The 8 topic clusters (pillar &rarr; spoke model)</h2>
+  <p class="lead">Group related pages into clusters. Each cluster has one <b>pillar/hub</b> page. Spokes link <b>up</b> to the pillar (consolidate authority) and the pillar links <b>down</b> to every spoke (distribute crawl + authority). Spokes in the same cluster also link <b>sideways</b> to 2&ndash;3 siblings. This is the core of the whole plan.</p>
+
+  <!-- Cluster 1 -->
+  <h3 class="sub"><span class="num">1</span>Admissions cluster &mdash; the money cluster <span class="badge b-p1">Highest priority</span></h3>
+  <div class="diagram">
+    <span class="hubbox">PILLAR &nbsp;/admissions/</span>
+    <div class="spokes">
+      <span class="spoke">/admissions/bds/</span>
+      <span class="spoke">/admissions/mds/</span>
+      <span class="spoke">/admission-process/</span>
+      <span class="spoke">/admissions/admission-criteria/</span>
+      <span class="spoke">/admissions/prospectus/</span>
+      <span class="spoke">/admissions/scholarship-policy-for-dental-college/</span>
+      <span class="spoke">/admissions/fee-refund-policy/</span>
+      <span class="spoke">/admissions/equitable-opportunity-for-sedg-group/</span>
+    </div>
+    <p class="legend" style="text-align:center">Cross-cluster bridges &rarr; <span class="anchor">/fees-structure/ · /scholarships/ · /academics/&hellip;/bds/ · /placements/ · /contact/</span></p>
+  </div>
+
+  <!-- Cluster 2 -->
+  <h3 class="sub"><span class="num">2</span>Academic-programs cluster <span class="badge b-p1">Highest priority</span></h3>
+  <div class="diagram">
+    <span class="hubbox">PILLAR &nbsp;/academics/details-of-academic-programs/mds/</span>
+    <div class="spokes">
+      <span class="spoke">&hellip;/mds/periodontics/</span>
+      <span class="spoke">&hellip;/mds/orthodontics-and-dentofacial-orthopedics/</span>
+      <span class="spoke">&hellip;/mds/prosthodontics-crown-and-bridge/</span>
+      <span class="spoke">&hellip;/mds/conservative-dentistry-and-endodontics/</span>
+      <span class="spoke">&hellip;/mds/oral-medicine/</span>
+    </div>
+    <p class="legend" style="text-align:center">+ sibling hub <span class="anchor">/academics/details-of-academic-programs/bds/</span> &bull; each spec links to its <b>syllabus</b> + matching <b>blog guide</b> + <b>/admissions/mds/</b></p>
+  </div>
+  <div class="callout">
+    <b>1:1 program &harr; blog pairing (strong topical signal).</b> Pair each program page with its complete-guide blog post, reciprocally:
+    <table>
+      <thead><tr><th>Program page</th><th>&harr;</th><th>Blog guide</th></tr></thead>
+      <tbody>
+        <tr><td><code>&hellip;/bds/</code></td><td class="arrow">&harr;</td><td><code>/blog/bds-course-complete-guide-2026/</code></td></tr>
+        <tr><td><code>&hellip;/mds/orthodontics&hellip;/</code></td><td class="arrow">&harr;</td><td><code>/blog/mds-orthodontics-complete-guide-2026/</code></td></tr>
+        <tr><td><code>&hellip;/mds/prosthodontics&hellip;/</code></td><td class="arrow">&harr;</td><td><code>/blog/mds-prosthodontics-complete-guide-2026/</code></td></tr>
+        <tr><td><code>&hellip;/mds/periodontics/</code></td><td class="arrow">&harr;</td><td><code>/blog/mds-periodontics-complete-guide-2026/</code></td></tr>
+        <tr><td><code>&hellip;/mds/conservative&hellip;/</code></td><td class="arrow">&harr;</td><td><code>/blog/mds-conservative-dentistry-endodontics-complete-guide-2026/</code></td></tr>
+        <tr><td><code>&hellip;/mds/oral-medicine/</code></td><td class="arrow">&harr;</td><td><code>/blog/mds-oral-medicine-radiology-complete-guide-2026/</code></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Cluster 3 -->
+  <h3 class="sub"><span class="num">3</span>Fees &amp; funding cluster <span class="badge b-p2">High</span></h3>
+  <div class="diagram">
+    <span class="hubbox">PILLAR &nbsp;/fees-structure/</span>
+    <div class="spokes">
+      <span class="spoke">/scholarships/</span>
+      <span class="spoke">/admissions/scholarship-policy-for-dental-college/</span>
+      <span class="spoke">/admissions/fee-refund-policy/</span>
+      <span class="spoke">/admissions/equitable-opportunity-for-sedg-group/</span>
+    </div>
+    <p class="legend" style="text-align:center">Inbound from &rarr; admissions hub, BDS &amp; MDS pages, all 5 city pages, FAQ</p>
+  </div>
+
+  <!-- Cluster 4 -->
+  <h3 class="sub"><span class="num">4</span>Placements &amp; outcomes cluster <span class="badge b-p2">High</span></h3>
+  <div class="diagram">
+    <span class="hubbox">PILLAR &nbsp;/placements/</span>
+    <div class="spokes">
+      <span class="spoke">/committee/placement-cell-cdc/</span>
+      <span class="spoke">/alumni/</span>
+      <span class="spoke x">/testimonials/</span>
+    </div>
+    <p class="legend" style="text-align:center">Inbound from &rarr; Home, BDS/MDS program pages, admissions hub, city pages</p>
+  </div>
+
+  <!-- Cluster 5 -->
+  <h3 class="sub"><span class="num">5</span>Local / geo cluster <span class="badge b-p2">High</span></h3>
+  <div class="diagram">
+    <span class="hubbox">PILLAR &nbsp;/namakkal/ (home district) </span>
+    <div class="spokes">
+      <span class="spoke x">/coimbatore/</span>
+      <span class="spoke x">/erode/</span>
+      <span class="spoke x">/salem/</span>
+      <span class="spoke x">/tiruppur/</span>
+    </div>
+    <p class="legend" style="text-align:center">Cities already cross-link each other &amp; &rarr; fees + placements. Add: each city &rarr; /admissions/bds/, /contact/ + connect cluster to footer/nav.</p>
+  </div>
+
+  <!-- Cluster 6 -->
+  <h3 class="sub"><span class="num">6</span>Trust &amp; accreditation cluster (E-E-A-T) <span class="badge b-p3">Medium</span></h3>
+  <div class="diagram">
+    <span class="hubbox">PILLAR &nbsp;/accreditation/naac/</span>
+    <div class="spokes">
+      <span class="spoke">/accreditation/nirf/nirf-2026/dental/</span>
+      <span class="spoke">/accreditation/nirf/nirf-2026/overall/</span>
+      <span class="spoke x">/iqac/</span>
+      <span class="spoke">/about/vision-and-mission/</span>
+      <span class="spoke">/about/approvals-and-affiliation/dci-bds/</span>
+    </div>
+    <p class="legend" style="text-align:center">Inbound from &rarr; Home trust band, admissions hub (proof), about hub</p>
+  </div>
+
+  <!-- Cluster 7 + 8 -->
+  <h3 class="sub"><span class="num">7</span>Campus-life / facilities cluster &nbsp;&amp;&nbsp; <span class="num">8</span>Content / blog cluster <span class="badge b-p3">Medium</span></h3>
+  <div class="diagram">
+    <span class="hubbox">PILLARS &nbsp;/facilities/ &nbsp;&amp;&nbsp; /blog/</span>
+    <div class="spokes">
+      <span class="spoke">/facilities/library/</span>
+      <span class="spoke">/facilities/labs/</span>
+      <span class="spoke">/facilities/hostel/boys-hostel/</span>
+      <span class="spoke">/facilities/hostel/girls-hostel/</span>
+      <span class="spoke">/facilities/transport/</span>
+      <span class="spoke">/blog/ &rarr; all guides &amp; career posts</span>
+    </div>
+    <p class="legend" style="text-align:center">/facilities/ already a real hub via mega menu. /blog/ pillar should link out to the program pages it discusses (see cluster 2 pairing).</p>
+  </div>
+
+  <!-- ============ S4 ============ -->
+  <h2 class="sec" id="s4">4 &bull; Internal-link flow matrix (page &rarr; page + anchor text)</h2>
+  <p>For the 16 highest-value pages, the table below is the recommended outbound contextual-link set. <span class="anchor">Italic</span> = exact recommended anchor text. All targets are <b>canonical URLs with trailing slash</b> (see §8).</p>
+
+  <table>
+    <thead><tr><th style="width:24%">From page</th><th>Should link out to (anchor text)</th></tr></thead>
+    <tbody>
+      <tr>
+        <td><code>/</code> (Home)</td>
+        <td>
+          <code>/admissions/bds/</code> <span class="anchor">&ldquo;BDS Admission 2026&ndash;27&rdquo;</span> &bull;
+          <code>/admissions/mds/</code> <span class="anchor">&ldquo;MDS Admission&rdquo;</span> &bull;
+          <code>/fees-structure/</code> <span class="anchor">&ldquo;BDS &amp; MDS fee structure&rdquo;</span> &bull;
+          <code>/placements/</code> <span class="anchor">&ldquo;placement records&rdquo;</span> &bull;
+          <code>/accreditation/naac/</code> <span class="anchor">&ldquo;NAAC accreditation&rdquo;</span> &bull;
+          <code>/academics/&hellip;/mds/</code> <span class="anchor">&ldquo;5 MDS specializations&rdquo;</span>
+        </td>
+      </tr>
+      <tr>
+        <td><code>/admissions/</code> (hub)</td>
+        <td>All 8 spokes (§3.1) + <code>/fees-structure/</code> <span class="anchor">&ldquo;fee structure&rdquo;</span> + <code>/scholarships/</code> <span class="anchor">&ldquo;scholarships&rdquo;</span> + <code>/placements/</code> <span class="anchor">&ldquo;placement support&rdquo;</span> + <code>/contact/</code> <span class="anchor">&ldquo;enquire now&rdquo;</span></td>
+      </tr>
+      <tr>
+        <td><code>/admissions/bds/</code></td>
+        <td><code>/academics/&hellip;/bds/</code> <span class="anchor">&ldquo;BDS course &amp; curriculum&rdquo;</span> &bull; <code>/blog/bds-course-complete-guide-2026/</code> <span class="anchor">&ldquo;complete BDS guide&rdquo;</span> &bull; <code>/fees-structure/</code> &bull; <code>/admissions/admission-criteria/</code> <span class="anchor">&ldquo;eligibility &amp; NEET criteria&rdquo;</span> &bull; <code>/placements/</code> &bull; <code>/admissions/</code> (up to hub)</td>
+      </tr>
+      <tr>
+        <td><code>/admissions/mds/</code></td>
+        <td><code>/academics/&hellip;/mds/</code> <span class="anchor">&ldquo;MDS specializations&rdquo;</span> &bull; each of the 5 MDS spec pages <span class="anchor">(by branch name)</span> &bull; <code>/fees-structure/</code> &bull; <code>/admissions/</code></td>
+      </tr>
+      <tr>
+        <td><code>/academics/&hellip;/bds/</code></td>
+        <td><code>/admissions/bds/</code> <span class="anchor">&ldquo;apply for BDS&rdquo;</span> &bull; <code>&hellip;/bds-syllabus/</code> <span class="anchor">&ldquo;BDS syllabus&rdquo;</span> &bull; <code>/blog/bds-course-complete-guide-2026/</code> &bull; <code>/fees-structure/</code> &bull; <code>/placements/</code></td>
+      </tr>
+      <tr>
+        <td><code>/academics/&hellip;/mds/</code> (sub-hub)</td>
+        <td>All 5 spec pages (down) &bull; <code>/academics/&hellip;/bds/</code> (sibling) &bull; <code>/admissions/mds/</code> <span class="anchor">&ldquo;MDS admission&rdquo;</span> &bull; <code>/academics/</code> (up)</td>
+      </tr>
+      <tr>
+        <td>Each MDS spec page<br>(&times;5)</td>
+        <td><code>/academics/&hellip;/mds/</code> (up) &bull; 2&ndash;3 sibling specs <span class="anchor">(branch names)</span> &bull; its own <code>&hellip;-syllabus/</code> &bull; its matching <code>/blog/mds-&hellip;-complete-guide-2026/</code> &bull; <code>/admissions/mds/</code></td>
+      </tr>
+      <tr>
+        <td><code>/fees-structure/</code></td>
+        <td><code>/scholarships/</code> &bull; <code>/admissions/scholarship-policy-for-dental-college/</code> &bull; <code>/admissions/fee-refund-policy/</code> &bull; <code>/admissions/bds/</code> &bull; <code>/admissions/mds/</code></td>
+      </tr>
+      <tr>
+        <td><code>/placements/</code></td>
+        <td><code>/committee/placement-cell-cdc/</code> <span class="anchor">&ldquo;placement cell (CDC)&rdquo;</span> &bull; <code>/alumni/</code> &bull; <code>/testimonials/</code> &bull; <code>/admissions/</code></td>
+      </tr>
+      <tr>
+        <td>Blog guide (&times;6)</td>
+        <td>Matching program page <span class="anchor">(course name)</span> &bull; <code>/admissions/bds/</code> or <code>/admissions/mds/</code> &bull; <code>/fees-structure/</code> &bull; <code>/blog/</code> (up) + 1&ndash;2 sibling guides</td>
+      </tr>
+      <tr>
+        <td>Each city page (&times;5)</td>
+        <td><code>/admissions/bds/</code> &bull; <code>/fees-structure/</code> &bull; <code>/placements/</code> &bull; <code>/contact/</code> &bull; other 4 cities (sibling) &bull; <code>/academics/&hellip;/bds/</code></td>
+      </tr>
+      <tr>
+        <td><code>/accreditation/naac/</code></td>
+        <td>latest NIRF dental + overall &bull; <code>/iqac/</code> &bull; <code>/about/vision-and-mission/</code> &bull; <code>/admissions/</code> <span class="anchor">&ldquo;admissions open&rdquo;</span></td>
+      </tr>
+      <tr>
+        <td><code>/contact/</code></td>
+        <td><code>/admissions/bds/</code> &bull; <code>/admissions/mds/</code> &bull; <code>/admissions/prospectus/</code> <span class="anchor">&ldquo;download prospectus&rdquo;</span></td>
+      </tr>
+      <tr>
+        <td><code>/faq/</code></td>
+        <td><code>/fees-structure/</code> &bull; <code>/admissions/admission-criteria/</code> &bull; <code>/admissions/bds/</code> &bull; <code>/scholarships/</code></td>
+      </tr>
+      <tr>
+        <td><code>/about/</code></td>
+        <td><code>/accreditation/naac/</code> &bull; <code>/about/vision-and-mission/</code> &bull; <code>/administration/principals-message/</code> &bull; <code>/admissions/</code></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- ============ S5 ============ -->
+  <h2 class="sec" id="s5">5 &bull; Global linking layers</h2>
+  <p>Internal links should come from <b>four</b> layers. The site currently uses only one well (header).</p>
+
+  <table>
+    <thead><tr><th style="width:18%">Layer</th><th style="width:14%">Status</th><th>Role &amp; recommendation</th></tr></thead>
+    <tbody>
+      <tr><td><b>1. Header mega menu</b></td><td><span class="badge b-ok">Strong</span></td><td>Top-down crawl path to ~130 pages. <b>Fix:</b> add <code>/admissions/bds/</code>, <code>/admissions/mds/</code>, <code>/admission-process/</code> to the Admission group; remove the two 404 <code>admission-process-guidelines</code> links.</td></tr>
+      <tr><td><b>2. Footer quick-links</b></td><td><span class="badge b-p1">Missing</span></td><td>Add a sitewide &ldquo;Quick Links&rdquo; column: Admissions, BDS, MDS, Fees, Scholarships, Placements, Facilities, Contact. This single block lifts every near-orphan in one shot and appears on all ~150 pages.</td></tr>
+      <tr><td><b>3. Contextual (in-body)</b></td><td><span class="badge b-p2">Partial</span></td><td>The highest-value links for ranking &mdash; keyword-rich, in running text. Build out per the §4 matrix. Programs&harr;blog&harr;admissions&harr;fees are the priority bridges.</td></tr>
+      <tr><td><b>4. Related-content blocks</b></td><td><span class="badge b-p3">Optional</span></td><td>A &ldquo;Related pages&rdquo; / &ldquo;You may also like&rdquo; module at the bottom of program, blog and city pages to automate sibling + cross-cluster links.</td></tr>
+    </tbody>
+  </table>
+
+  <div class="callout">
+    <b>Breadcrumbs are NOT a linking layer here.</b> Per the project rule, only &ldquo;Home&rdquo; is clickable in any breadcrumb; all other crumbs are plain <code>&lt;span&gt;</code>. So breadcrumbs contribute exactly one internal link (to Home) and must not be relied on for cluster/hub link flow &mdash; that is why layers 2&ndash;4 above matter more on this site than on a typical site.
+  </div>
+
+  <!-- ============ S6 ============ -->
+  <h2 class="sec" id="s6">6 &bull; Anchor-text strategy</h2>
+  <ul class="tight">
+    <li><b>Descriptive, keyword-bearing anchors</b> &mdash; use <span class="anchor">&ldquo;BDS admission 2026&rdquo;</span>, not &ldquo;click here&rdquo; / &ldquo;read more&rdquo;. The anchor tells Google the target topic.</li>
+    <li><b>Vary the phrasing</b> &mdash; for the BDS program page rotate anchors like <span class="anchor">&ldquo;BDS course&rdquo;</span>, <span class="anchor">&ldquo;Bachelor of Dental Surgery&rdquo;</span>, <span class="anchor">&ldquo;BDS curriculum&rdquo;</span> across different source pages. Avoid the exact same anchor everywhere (looks manipulative).</li>
+    <li><b>Match anchor to target&rsquo;s primary keyword</b> &mdash; fees page anchored as <span class="anchor">&ldquo;fee structure&rdquo;</span>, placements as <span class="anchor">&ldquo;placement records&rdquo;</span>, each MDS spec by its <span class="anchor">branch name</span>.</li>
+    <li><b>Keep anchors natural in the sentence</b> &mdash; contextual links inside real sentences carry more weight than a bare list of links.</li>
+    <li><b>One canonical anchor concept per target</b> &mdash; don&rsquo;t anchor the same URL as both &ldquo;fees&rdquo; and &ldquo;courses&rdquo;; keep the topic consistent.</li>
+  </ul>
+
+  <!-- ============ S7 ============ -->
+  <h2 class="sec" id="s7">7 &bull; Orphan &amp; near-orphan fixes</h2>
+  <p>Pages with too few inbound internal links. &ldquo;Fix via&rdquo; = the layer that solves it fastest.</p>
+  <table>
+    <thead><tr><th>Page</th><th>Current inbound</th><th>Fix via</th><th>Priority</th></tr></thead>
+    <tbody>
+      <tr><td><code>/admissions/bds/</code></td><td>Not in nav</td><td>Header + Footer + Home + city pages</td><td><span class="badge b-p1">P1</span></td></tr>
+      <tr><td><code>/admissions/mds/</code></td><td>Not in nav</td><td>Header + Footer + Home + MDS hub</td><td><span class="badge b-p1">P1</span></td></tr>
+      <tr><td><code>/placements/</code></td><td>Home, WhyChooseJKKN, city pages</td><td>Footer quick-links + nav + program pages</td><td><span class="badge b-p1">P1</span></td></tr>
+      <tr><td><code>/fees-structure/</code></td><td>FAQ, city pages</td><td>Footer + admissions hub + BDS/MDS pages</td><td><span class="badge b-p1">P1</span></td></tr>
+      <tr><td><code>/scholarships/</code></td><td>Self-refs only</td><td>Footer + fees page + admissions hub</td><td><span class="badge b-p2">P2</span></td></tr>
+      <tr><td><code>/testimonials/</code></td><td>Self-refs only</td><td>Placements page + Home + related-block</td><td><span class="badge b-p2">P2</span></td></tr>
+      <tr><td><code>/iqac/</code></td><td>Self-refs only</td><td>Accreditation hub + About + footer</td><td><span class="badge b-p2">P2</span></td></tr>
+      <tr><td><code>/coimbatore/ /erode/ /salem/ /namakkal/ /tiruppur/</code></td><td>Cross-link each other only</td><td>Footer &ldquo;Locations&rdquo; row + Home + admissions</td><td><span class="badge b-p2">P2</span></td></tr>
+      <tr><td><code>/dental-surgery-assistant-course/</code></td><td>Campaign page, near-orphan</td><td>Academics &ldquo;Courses&rdquo; + footer + related-block</td><td><span class="badge b-p3">P3</span></td></tr>
+      <tr><td><code>/ai-dental-campus/</code></td><td>AIIntegration component</td><td>About + facilities + related-block</td><td><span class="badge b-p3">P3</span></td></tr>
+    </tbody>
+  </table>
+
+  <!-- ============ S8 ============ -->
+  <h2 class="sec" id="s8">8 &bull; Canonical-URL linking rules (do not break these)</h2>
+  <div class="callout bad">
+    <b>Always link to the canonical URL &mdash; never to a URL that 301-redirects.</b> Linking to a redirected URL wastes a hop and dilutes link equity.
+  </div>
+  <table>
+    <thead><tr><th>Use this canonical target</th><th>Never link to (it redirects)</th></tr></thead>
+    <tbody>
+      <tr><td><code>/admissions/</code> (and all <code>/admissions/*</code>)</td><td><code>/admission/</code> &amp; singular <code>/admission/*</code></td></tr>
+      <tr><td><code>/academics/details-of-academic-programs/bds/</code></td><td><code>/bds/</code></td></tr>
+      <tr><td><code>/academics/details-of-academic-programs/mds/</code></td><td><code>/mds/</code></td></tr>
+      <tr><td><code>/fees-structure/</code> (plural)</td><td><code>/fee-structure/</code> (singular)</td></tr>
+    </tbody>
+  </table>
+  <ul class="tight">
+    <li><b>Trailing slash on every internal URL</b> &mdash; <code>trailingSlash: true</code> is set; <code>/admissions</code> redirects to <code>/admissions/</code>.</li>
+    <li><b>Use relative paths</b> (<code>/admissions/bds/</code>), not absolute <code>https://dental.jkkn.ac.in/&hellip;</code>, for in-app <code>&lt;Link&gt;</code>.</li>
+    <li><b>Link only to pages that exist</b> &mdash; the two <code>/admissions/admission-process-guidelines/&hellip;</code> nav links currently 404; replace, don&rsquo;t link.</li>
+  </ul>
+
+  <!-- ============ S9 ============ -->
+  <h2 class="sec" id="s9">9 &bull; Priority action list</h2>
+  <table>
+    <thead><tr><th>#</th><th>Action</th><th>Layer</th><th>Priority</th><th>Effort</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>Add Footer &ldquo;Quick Links&rdquo; + &ldquo;Locations&rdquo; columns (Admissions, BDS, MDS, Fees, Scholarships, Placements, Facilities, Contact + 5 cities)</td><td>Footer</td><td><span class="badge b-p1">P1</span></td><td><span class="chip eff">Low 1&ndash;2h</span></td></tr>
+      <tr><td>2</td><td>Add <code>/admissions/bds/</code>, <code>/admissions/mds/</code>, <code>/admission-process/</code> to Admission mega-menu; remove 2 dead 404 links</td><td>Header</td><td><span class="badge b-p1">P1</span></td><td><span class="chip eff">Low 1h</span></td></tr>
+      <tr><td>3</td><td>Build the program&harr;blog&harr;admissions&harr;fees contextual bridges (§4 matrix) on BDS/MDS/spec pages</td><td>Contextual</td><td><span class="badge b-p1">P1</span></td><td><span class="chip eff m">Med 1&ndash;2d</span></td></tr>
+      <tr><td>4</td><td>Add cross-cluster links on /fees-structure/, /placements/, /scholarships/ to lift near-orphans</td><td>Contextual</td><td><span class="badge b-p2">P2</span></td><td><span class="chip eff">Low 0.5d</span></td></tr>
+      <tr><td>5</td><td>Add &ldquo;Related pages&rdquo; block to program, blog &amp; city page templates</td><td>Related</td><td><span class="badge b-p2">P2</span></td><td><span class="chip eff m">Med 1d</span></td></tr>
+      <tr><td>6</td><td>Add CTA links from /accreditation/naac/ &amp; /about/ into /admissions/ + surface /iqac/</td><td>Contextual</td><td><span class="badge b-p3">P3</span></td><td><span class="chip eff">Low 2h</span></td></tr>
+      <tr><td>7</td><td>Audit + standardize all anchors to canonical URLs (§6, §8)</td><td>All</td><td><span class="badge b-p3">P3</span></td><td><span class="chip eff">Low</span></td></tr>
+    </tbody>
+  </table>
+
+  <!-- ============ S10 ============ -->
+  <h2 class="sec" id="s10">10 &bull; Where to implement (file pointers)</h2>
+  <table>
+    <thead><tr><th>What</th><th>File</th><th>Note</th></tr></thead>
+    <tbody>
+      <tr><td>Footer quick-links data</td><td><code>data/content.ts</code> &rarr; <code>footer</code> object (~line 438)</td><td>Add a <code>quickLinks</code> + <code>locations</code> array alongside <code>institutions</code>.</td></tr>
+      <tr><td>Footer rendering</td><td><code>components/Footer.tsx</code></td><td>Add 1&ndash;2 new <code>&lt;ul&gt;</code> columns that map over the new arrays (mirror the existing institutions column). HIGH-RISK file &mdash; on every page.</td></tr>
+      <tr><td>Mega-menu links</td><td><code>lib/navigationMenuLink.ts</code> &rarr; Admission group (~line 272)</td><td>Add BDS/MDS/process submenu items; delete the 2 404 entries. HIGH-RISK &mdash; Header is on every page; test desktop + BottomNav.</td></tr>
+      <tr><td>Contextual + related links</td><td>Per-page <code>app/&hellip;/page.tsx</code> &amp; program/blog/city components</td><td>Use <code>next/link</code> <code>&lt;Link&gt;</code> with canonical relative hrefs and keyword anchors.</td></tr>
+      <tr><td>Verify after changes</td><td><code>app/sitemap.ts</code></td><td>Confirm every newly-linked target is also in the sitemap (it already lists the money pages).</td></tr>
+    </tbody>
+  </table>
+
+  <div class="footer">
+    <p><b>Bottom line.</b> The site&rsquo;s top-down crawl (mega menu) is healthy; the gaps are <b>sideways &amp; upward link flow</b>. The three changes with the biggest ROI: (1) a Footer quick-links block, (2) putting the BDS/MDS/process pages in the Admission menu, and (3) the program&harr;blog&harr;admissions&harr;fees contextual bridges. Together they convert ~11 near-orphan money pages into well-linked, crawl-friendly, authority-fed pages.</p>
+    <p style="margin-top:10px;opacity:.8">JKKN Dental College &amp; Hospital &bull; Internal Link Architecture &bull; Strategy document &mdash; no production code changed. Generated 28 May 2026.</p>
+  </div>
+
+</div>
+</body>
+</html>

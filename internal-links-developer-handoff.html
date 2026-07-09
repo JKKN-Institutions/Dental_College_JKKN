@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Internal Linking — Developer Handoff | JKKN Dental College</title>
+<style>
+  :root{
+    --green:#006837;--green2:#7cb983;--dark:#002309;--cream:#FBFBEE;
+    --p1:#c0392b;--p2:#d68910;--p3:#2471a3;--ok:#1e8449;--line:#e6e6d8;--ink:#2b2b2b;--muted:#6b7280;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:'Segoe UI',Roboto,Arial,sans-serif;color:var(--ink);background:#f4f4ec;line-height:1.55;}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 20px 80px;}
+  header.top{background:linear-gradient(135deg,var(--green),var(--green2));color:#fff;padding:42px 20px;margin-bottom:26px;}
+  header.top .in{max-width:1080px;margin:0 auto;}
+  header.top h1{margin:0 0 6px;font-size:27px;}
+  header.top p{margin:3px 0;opacity:.95;font-size:14px;}
+  .pill{display:inline-block;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.35);padding:4px 12px;border-radius:99px;font-size:12px;font-weight:600;margin-top:8px;margin-right:6px;}
+  h2.sec{color:var(--green);border-bottom:3px solid var(--green2);padding-bottom:7px;margin-top:40px;font-size:21px;}
+  .toc{background:#fff;border:1px solid var(--line);border-radius:10px;padding:16px 20px;margin:18px 0;}
+  .toc table{width:100%;border-collapse:collapse;font-size:13px;}
+  .toc td{padding:6px 8px;border-bottom:1px solid var(--line);}
+  .toc tr:last-child td{border-bottom:none;}
+  .toc a{color:var(--green);text-decoration:none;font-weight:600;}
+  .primer{background:#eef6f0;border:1px solid #cfe6d6;border-radius:12px;padding:18px 22px;margin:18px 0;}
+  .primer h3{margin:0 0 8px;color:var(--green);font-size:16px;}
+  .primer p{margin:6px 0;font-size:14px;}
+  .primer b{color:var(--dark);}
+  .task{background:#fff;border:1px solid var(--line);border-radius:12px;margin:18px 0;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.05);}
+  .task .h{display:flex;align-items:center;gap:12px;padding:14px 18px;border-bottom:1px solid var(--line);}
+  .task .h .id{flex:0 0 auto;width:30px;height:30px;border-radius:8px;color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center;font-size:13px;background:var(--green);}
+  .task .h h3{margin:0;font-size:16px;color:var(--dark);flex:1;}
+  .task .b{padding:8px 18px 18px;}
+  .meta{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0;}
+  .badge{display:inline-block;color:#fff;font-size:11px;font-weight:700;padding:3px 9px;border-radius:99px;}
+  .b-p1{background:var(--p1)}.b-p2{background:var(--p2)}.b-p3{background:var(--p3)}
+  .chip{display:inline-block;font-size:11px;font-weight:700;padding:3px 9px;border-radius:6px;background:#eef0ea;color:#444;}
+  .chip.eff{background:#e9f7ef;color:var(--ok)} .chip.eff.m{background:#fef5e7;color:var(--p2)} .chip.eff.h{background:#fdecea;color:var(--p1)}
+  .lab{font-size:11px;text-transform:uppercase;letter-spacing:.05em;font-weight:700;color:var(--muted);margin-top:14px;margin-bottom:4px;}
+  .file{font-family:Consolas,monospace;font-size:13px;background:#f0f0e4;border:1px solid var(--line);border-radius:4px;padding:2px 7px;color:#7a3b00;}
+  code{font-family:Consolas,monospace;font-size:12.5px;background:#f0f0e4;border:1px solid var(--line);border-radius:4px;padding:1px 5px;color:#7a3b00;}
+  pre{background:#1f2421;color:#e6efe8;border-radius:8px;padding:14px 16px;overflow-x:auto;font-size:12.5px;line-height:1.5;margin:8px 0;}
+  pre.bad{border-left:4px solid var(--p1);}
+  pre.good{border-left:4px solid var(--ok);}
+  pre .c{color:#8fa99a;}
+  pre .add{color:#9fe0b0;}
+  pre .del{color:#ff9a8f;}
+  .tag-bad{display:inline-block;font-size:11px;font-weight:700;color:var(--p1);}
+  .tag-good{display:inline-block;font-size:11px;font-weight:700;color:var(--ok);}
+  ul.steps{margin:6px 0 0;padding-left:20px;}
+  ul.steps li{margin:5px 0;font-size:14px;}
+  .note{font-size:13px;color:var(--muted);}
+  .warn{background:#fff8e6;border:1px solid #f0d98a;border-radius:10px;padding:12px 16px;margin:12px 0;font-size:13.5px;}
+  .warn b{color:#9a6a00;}
+  .footer{margin-top:46px;padding:18px;background:var(--dark);color:#cfe3d3;border-radius:12px;font-size:13px;}
+  table.sum{width:100%;border-collapse:collapse;margin:14px 0;background:#fff;border-radius:10px;overflow:hidden;font-size:13px;box-shadow:0 1px 3px rgba(0,0,0,.05);}
+  table.sum th,table.sum td{padding:9px 12px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top;}
+  table.sum thead th{background:var(--green);color:#fff;}
+  table.sum tr:nth-child(even){background:var(--cream);}
+  .anchor{font-style:italic;color:var(--p3);}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="in">
+    <h1>Internal Linking — Developer Handoff</h1>
+    <p>JKKN Dental College &amp; Hospital &bull; dental.jkkn.ac.in &bull; Next.js 16 (App Router)</p>
+    <p>Scope: <strong>add &amp; fix internal links sitewide</strong> — exact file + line + before/after &bull; 28 May 2026</p>
+    <span class="pill">6 dev tasks</span>
+    <span class="pill">Copy-paste ready code</span>
+    <span class="pill">No code edited yet — needs approval</span>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ===== DEV PRIMER ===== -->
+  <div class="primer">
+    <h3>Internal linking in 60 seconds (for whoever picks this up)</h3>
+    <p>An <b>internal link</b> = a <code>&lt;Link&gt;</code> from one page on our domain to another page on the same domain. Google&rsquo;s crawler walks the site by following these links, so a page with no inbound links is nearly invisible. Three rules drive every task below:</p>
+    <p>1&nbsp;&bull;&nbsp;<b>Discoverability</b> — every important page must be reachable in &le;3 clicks from Home.<br>
+       2&nbsp;&bull;&nbsp;<b>Authority flow</b> — strong pages (Home, footer-on-every-page) should link to money pages (admissions, BDS, MDS, fees).<br>
+       3&nbsp;&bull;&nbsp;<b>Anchor text</b> — the clickable text must describe the target (<span class="anchor">&ldquo;BDS Admission 2026&rdquo;</span>, never &ldquo;click here&rdquo;).</p>
+    <p class="note">Today: the Footer has <b>0 internal links</b>, the Admission menu is missing the real BDS/MDS/process pages, and ~11 money pages are near-orphans. These 6 tasks fix all three.</p>
+  </div>
+
+  <div class="toc">
+    <strong>Task list (priority order)</strong>
+    <table>
+      <tr><td><a href="#t1">D1</a></td><td>Add Footer &ldquo;Quick Links&rdquo; + &ldquo;Locations&rdquo; (internal links on every page)</td><td><span class="badge b-p1">P1</span></td><td><span class="chip eff">Low 1–2h</span></td></tr>
+      <tr><td><a href="#t2">D2</a></td><td>Fix Admission mega-menu — add BDS/MDS/Process, fix 404 link</td><td><span class="badge b-p1">P1</span></td><td><span class="chip eff">Low 1h</span></td></tr>
+      <tr><td><a href="#t3">D3</a></td><td>Add reusable <code>&lt;RelatedLinks&gt;</code> component</td><td><span class="badge b-p1">P1</span></td><td><span class="chip eff">Low 1–2h</span></td></tr>
+      <tr><td><a href="#t4">D4</a></td><td>Drop <code>&lt;RelatedLinks&gt;</code> onto program / blog / city pages (per spec)</td><td><span class="badge b-p2">P2</span></td><td><span class="chip eff m">Med 1d</span></td></tr>
+      <tr><td><a href="#t5">D5</a></td><td>Add contextual in-body cross-links to lift near-orphans</td><td><span class="badge b-p2">P2</span></td><td><span class="chip eff">Low 0.5d</span></td></tr>
+      <tr><td><a href="#t6">D6</a></td><td>Canonical-URL rule + audit (never link to a redirect)</td><td><span class="badge b-p3">P3</span></td><td><span class="chip eff">Low 1h</span></td></tr>
+    </table>
+  </div>
+
+  <!-- ============ D1 ============ -->
+  <h2 class="sec" id="t1">D1 &bull; Footer &ldquo;Quick Links&rdquo; + &ldquo;Locations&rdquo;</h2>
+  <div class="task">
+    <div class="h"><div class="id">1</div><h3>Footer has zero internal links — add a sitewide link hub</h3></div>
+    <div class="b">
+      <div class="meta"><span class="badge b-p1">P1</span><span class="chip eff">Effort: Low (1–2h)</span><span class="chip">Impact: Very High</span></div>
+      <p class="note">The footer renders on all ~150 pages but currently only links OUT to other JKKN domains + social. Adding two internal-link columns lifts every near-orphan money page in one change.</p>
+
+      <div class="lab">Step 1 — File <span class="file">data/content.ts</span> → inside the <code>footer:</code> object (after <code>institutions</code>, ~line 456)</div>
+      <p class="tag-good">ADD these two arrays</p>
+      <pre class="good"><span class="add">    quickLinks: {
+      title: "QUICK LINKS",
+      links: [
+        { name: "Admissions 2026-27", url: "/admissions/" },
+        { name: "BDS Admission",      url: "/admissions/bds/" },
+        { name: "MDS Admission",      url: "/admissions/mds/" },
+        { name: "Fee Structure",      url: "/fees-structure/" },
+        { name: "Scholarships",       url: "/scholarships/" },
+        { name: "Placements",         url: "/placements/" },
+        { name: "Facilities",         url: "/facilities/" },
+        { name: "Contact Us",         url: "/contact/" },
+      ],
+    },
+    locations: {
+      title: "DENTAL COLLEGE NEAR",
+      links: [
+        { name: "Namakkal",   url: "/namakkal/" },
+        { name: "Salem",      url: "/salem/" },
+        { name: "Erode",      url: "/erode/" },
+        { name: "Coimbatore", url: "/coimbatore/" },
+        { name: "Tiruppur",   url: "/tiruppur/" },
+      ],
+    },</span></pre>
+
+      <div class="lab">Step 2 — File <span class="file">components/Footer.tsx</span> line 8 — widen the grid</div>
+      <p class="tag-bad">BEFORE</p>
+      <pre class="bad">&lt;div className="grid grid-cols-1 md:grid-cols-2 <span class="del">lg:grid-cols-3</span> gap-8 lg:gap-12"&gt;</pre>
+      <p class="tag-good">AFTER</p>
+      <pre class="good">&lt;div className="grid grid-cols-1 md:grid-cols-2 <span class="add">lg:grid-cols-4</span> gap-8 lg:gap-12"&gt;</pre>
+
+      <div class="lab">Step 3 — File <span class="file">components/Footer.tsx</span> — add a new column after the &ldquo;Our Institutions&rdquo; column (after line 49)</div>
+      <p class="tag-good">INSERT this block</p>
+      <pre class="good"><span class="add">{/* Quick Links - internal pages */}
+&lt;div&gt;
+  &lt;h3 className="text-lg sm:text-xl font-bold mb-4 uppercase border-b-2 border-white pb-2 inline-block"&gt;
+    {siteContent.footer.quickLinks.title}
+  &lt;/h3&gt;
+  &lt;ul className="space-y-2 text-sm sm:text-base mt-4"&gt;
+    {siteContent.footer.quickLinks.links.map((link, index) =&gt; (
+      &lt;li key={index}&gt;
+        &lt;Link href={link.url} className="text-white hover:text-gray-300 transition-colors block py-1"&gt;
+          {link.name}
+        &lt;/Link&gt;
+      &lt;/li&gt;
+    ))}
+  &lt;/ul&gt;
+&lt;/div&gt;</span></pre>
+
+      <div class="lab">Step 4 — File <span class="file">components/Footer.tsx</span> — add a Locations strip just above the copyright (before line 112)</div>
+      <p class="tag-good">INSERT this block</p>
+      <pre class="good"><span class="add">{/* Locations - geo internal links */}
+&lt;div className="mt-10 pt-6 border-t border-white/30"&gt;
+  &lt;p className="text-sm font-bold uppercase mb-2"&gt;{siteContent.footer.locations.title}&lt;/p&gt;
+  &lt;div className="flex flex-wrap gap-x-4 gap-y-1 text-sm"&gt;
+    {siteContent.footer.locations.links.map((link, index) =&gt; (
+      &lt;Link key={index} href={link.url} className="text-white hover:text-gray-300 transition-colors"&gt;
+        {link.name}
+      &lt;/Link&gt;
+    ))}
+  &lt;/div&gt;
+&lt;/div&gt;</span></pre>
+
+      <ul class="steps">
+        <li><code>Link</code> is already imported at the top of Footer.tsx — no new import needed.</li>
+        <li>HIGH-RISK file (every page). After edit, check footer at 320 / 640 / 768 / 1024 / 1536px.</li>
+        <li>All hrefs are canonical + trailing-slash (see D6).</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ============ D2 ============ -->
+  <h2 class="sec" id="t2">D2 &bull; Fix the Admission mega-menu</h2>
+  <div class="task">
+    <div class="h"><div class="id">2</div><h3>Real BDS/MDS/Process pages missing from nav; one link 404s</h3></div>
+    <div class="b">
+      <div class="meta"><span class="badge b-p1">P1</span><span class="chip eff">Effort: Low (1h)</span><span class="chip">Impact: High</span></div>
+
+      <div class="lab">File <span class="file">lib/navigationMenuLink.ts</span> — Admission group <code>submenus</code> (~lines 279–285)</div>
+      <p class="tag-bad">BEFORE (no BDS/MDS/process; <code>admission-criterion-in-others</code> path has no page → 404)</p>
+      <pre class="bad">submenus: [
+  { href: '/admissions/prospectus', label: 'Prospectus', icon: BookMarked, active: pathname === '/admissions/prospectus' },
+  <span class="del">{ href: '/admissions/admission-process-guidelines/admission-criterion-in-others', label: 'Admission Criterion in Others', icon: ListChecks, active: pathname.includes('/admission-criterion-in-others') },</span>
+  { href: '/admissions/fee-refund-policy/ugc-fee-refund-policy', label: 'Fee Refund Policy', icon: RefreshCcw, active: pathname.includes('/fee-refund') },
+  { href: '/admissions/scholarship-policy-for-dental-college', label: 'Scholarship Policy', icon: Gift, active: pathname === '/admissions/scholarship-policy-for-dental-college' },
+  { href: '/admissions/equitable-opportunity-for-sedg-group/equitable-opportunity-for-sedgs', label: 'SEDG Opportunity', icon: HandHeart, active: pathname.includes('/sedg') }
+]</pre>
+      <p class="tag-good">AFTER (add the 3 money pages at top; fix the 404 link to the real page)</p>
+      <pre class="good">submenus: [
+<span class="add">  { href: '/admissions/bds', label: 'BDS Admission 2026-27', icon: Stethoscope, active: pathname === '/admissions/bds' },
+  { href: '/admissions/mds', label: 'MDS Admission', icon: GraduationCap, active: pathname === '/admissions/mds' },
+  { href: '/admission-process', label: 'Admission Process', icon: ListOrdered, active: pathname === '/admission-process' },
+  { href: '/admissions/admission-criteria', label: 'Eligibility & Criteria', icon: ListChecks, active: pathname === '/admissions/admission-criteria' },</span>
+  { href: '/admissions/prospectus', label: 'Prospectus', icon: BookMarked, active: pathname === '/admissions/prospectus' },
+  { href: '/admissions/fee-refund-policy/ugc-fee-refund-policy', label: 'Fee Refund Policy', icon: RefreshCcw, active: pathname.includes('/fee-refund') },
+  { href: '/admissions/scholarship-policy-for-dental-college', label: 'Scholarship Policy', icon: Gift, active: pathname === '/admissions/scholarship-policy-for-dental-college' },
+  { href: '/admissions/equitable-opportunity-for-sedg-group/equitable-opportunity-for-sedgs', label: 'SEDG Opportunity', icon: HandHeart, active: pathname.includes('/sedg') }
+]</pre>
+      <ul class="steps">
+        <li>All icons used (<code>Stethoscope</code>, <code>GraduationCap</code>, <code>ListOrdered</code>, <code>ListChecks</code>) are already imported in this file.</li>
+        <li>HIGH-RISK (Header on every page). Test desktop mega-menu + mobile BottomNav after change.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ============ D3 ============ -->
+  <h2 class="sec" id="t3">D3 &bull; Reusable <code>&lt;RelatedLinks&gt;</code> component</h2>
+  <div class="task">
+    <div class="h"><div class="id">3</div><h3>One component to add sibling + cross-cluster links anywhere</h3></div>
+    <div class="b">
+      <div class="meta"><span class="badge b-p1">P1</span><span class="chip eff">Effort: Low (1–2h)</span><span class="chip">Impact: High</span></div>
+
+      <div class="lab">NEW file <span class="file">components/RelatedLinks.tsx</span></div>
+      <pre class="good"><span class="add">import Link from 'next/link';
+
+interface RelatedLink { label: string; href: string; }
+interface RelatedLinksProps { title?: string; links: RelatedLink[]; }
+
+export default function RelatedLinks({ title = 'Related pages', links }: RelatedLinksProps) {
+  return (
+    &lt;nav aria-label={title} className="mt-12 rounded-xl border border-[#e6e6d8] bg-[#FBFBEE] p-6"&gt;
+      &lt;h2 className="mb-4 text-lg font-bold text-[#006837]"&gt;{title}&lt;/h2&gt;
+      &lt;ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3"&gt;
+        {links.map((l) =&gt; (
+          &lt;li key={l.href}&gt;
+            &lt;Link
+              href={l.href}
+              className="block rounded-lg border border-[#7cb983] bg-white px-4 py-3 text-sm font-semibold text-[#002309] transition-colors hover:bg-[#7cb983] hover:text-white"
+            &gt;
+              {l.label}
+            &lt;/Link&gt;
+          &lt;/li&gt;
+        ))}
+      &lt;/ul&gt;
+    &lt;/nav&gt;
+  );
+}</span></pre>
+      <ul class="steps">
+        <li>Server component (no <code>"use client"</code>) — pure markup, brand colors hardcoded per theme tokens.</li>
+        <li>Used in D4. Place near the bottom of a page&rsquo;s main content, before <code>&lt;Footer&gt;</code>.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ============ D4 ============ -->
+  <h2 class="sec" id="t4">D4 &bull; Place <code>&lt;RelatedLinks&gt;</code> per spec</h2>
+  <div class="task">
+    <div class="h"><div class="id">4</div><h3>Drop the component on the cluster pages with these exact links</h3></div>
+    <div class="b">
+      <div class="meta"><span class="badge b-p2">P2</span><span class="chip eff m">Effort: Med (1d)</span><span class="chip">Impact: High</span></div>
+
+      <div class="lab">Example — BDS program page <span class="file">app/academics/details-of-academic-programs/bds/page.tsx</span></div>
+      <pre class="good"><span class="add">import RelatedLinks from '@/components/RelatedLinks';
+// ...near the end of the page body, before closing wrapper:
+&lt;RelatedLinks links={[
+  { label: 'BDS Admission 2026-27', href: '/admissions/bds/' },
+  { label: 'BDS Syllabus',          href: '/academics/statutes-pertaining-to-academic-departments/bds-syllabus/' },
+  { label: 'Complete BDS Guide',    href: '/blog/bds-course-complete-guide-2026/' },
+  { label: 'Fee Structure',         href: '/fees-structure/' },
+  { label: 'Placement Records',     href: '/placements/' },
+]} /&gt;</span></pre>
+
+      <div class="lab">Link spec for the rest (use the same component, swap the array)</div>
+      <table class="sum">
+        <thead><tr><th>Page</th><th>RelatedLinks should contain</th></tr></thead>
+        <tbody>
+          <tr><td>MDS hub<br><code>&hellip;/mds/</code></td><td>5 spec pages + <code>/academics/&hellip;/bds/</code> + <code>/admissions/mds/</code></td></tr>
+          <tr><td>Each MDS spec<br>(&times;5)</td><td>2&ndash;3 sibling specs + its own syllabus + its matching <code>/blog/mds-&hellip;-complete-guide-2026/</code> + <code>/admissions/mds/</code></td></tr>
+          <tr><td>Each blog guide<br>(&times;6)</td><td>Matching program page + <code>/admissions/bds/</code> or <code>/mds/</code> + <code>/fees-structure/</code> + 1&ndash;2 sibling guides</td></tr>
+          <tr><td>Each city page<br>(&times;5)</td><td><code>/admissions/bds/</code> + <code>/fees-structure/</code> + <code>/placements/</code> + <code>/contact/</code> + other 4 cities</td></tr>
+          <tr><td><code>/placements/</code></td><td><code>/committee/placement-cell-cdc/</code> + <code>/alumni/</code> + <code>/testimonials/</code> + <code>/admissions/</code></td></tr>
+        </tbody>
+      </table>
+      <div class="warn"><b>Program &harr; blog pairing (1:1):</b> bds&harr;bds-course-complete-guide &bull; orthodontics&harr;mds-orthodontics &bull; prosthodontics&harr;mds-prosthodontics &bull; periodontics&harr;mds-periodontics &bull; conservative&harr;mds-conservative-dentistry-endodontics &bull; oral-medicine&harr;mds-oral-medicine-radiology. Link both directions.</div>
+    </div>
+  </div>
+
+  <!-- ============ D5 ============ -->
+  <h2 class="sec" id="t5">D5 &bull; Contextual in-body cross-links</h2>
+  <div class="task">
+    <div class="h"><div class="id">5</div><h3>Keyword-anchored links inside running text (strongest signal)</h3></div>
+    <div class="b">
+      <div class="meta"><span class="badge b-p2">P2</span><span class="chip eff">Effort: Low (0.5d)</span><span class="chip">Impact: Medium-High</span></div>
+      <p class="note">In addition to the related-block, add a few links inside the actual paragraph text. Pattern:</p>
+      <pre class="good">&lt;p&gt;
+  Our &lt;Link href="/admissions/bds/"&gt;<span class="add">BDS admission 2026-27</span>&lt;/Link&gt; process follows NEET-based
+  counselling. See the full &lt;Link href="/fees-structure/"&gt;<span class="add">fee structure</span>&lt;/Link&gt; and
+  available &lt;Link href="/scholarships/"&gt;<span class="add">scholarships</span>&lt;/Link&gt;.
+&lt;/p&gt;</pre>
+      <div class="lab">Highest-value places to add contextual links</div>
+      <table class="sum">
+        <thead><tr><th>On page</th><th>Add link to (anchor)</th></tr></thead>
+        <tbody>
+          <tr><td><code>/fees-structure/</code></td><td><code>/scholarships/</code> <span class="anchor">&ldquo;scholarships&rdquo;</span> &bull; <code>/admissions/fee-refund-policy/</code> <span class="anchor">&ldquo;fee refund policy&rdquo;</span> &bull; <code>/admissions/bds/</code> &amp; <code>/admissions/mds/</code></td></tr>
+          <tr><td><code>/scholarships/</code></td><td><code>/fees-structure/</code> &bull; <code>/admissions/scholarship-policy-for-dental-college/</code> &bull; <code>/admissions/</code></td></tr>
+          <tr><td><code>/accreditation/naac/</code></td><td><code>/iqac/</code> <span class="anchor">&ldquo;IQAC&rdquo;</span> &bull; <code>/about/vision-and-mission/</code> &bull; <code>/admissions/</code> <span class="anchor">&ldquo;admissions open&rdquo;</span></td></tr>
+          <tr><td><code>/about/</code></td><td><code>/accreditation/naac/</code> &bull; <code>/administration/principals-message/</code> &bull; <code>/admissions/</code></td></tr>
+          <tr><td><code>/faq/</code></td><td><code>/fees-structure/</code> &bull; <code>/admissions/admission-criteria/</code> &bull; <code>/admissions/bds/</code></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ============ D6 ============ -->
+  <h2 class="sec" id="t6">D6 &bull; Canonical-URL linking rule + audit</h2>
+  <div class="task">
+    <div class="h"><div class="id">6</div><h3>Never link to a URL that 301-redirects</h3></div>
+    <div class="b">
+      <div class="meta"><span class="badge b-p3">P3</span><span class="chip eff">Effort: Low (1h)</span><span class="chip">Impact: Medium</span></div>
+      <p class="note">Linking to a redirected URL wastes a hop and dilutes link equity. Always link to the canonical target with a trailing slash.</p>
+      <table class="sum">
+        <thead><tr><th>Use (canonical)</th><th>Never link to (redirects)</th></tr></thead>
+        <tbody>
+          <tr><td><code>/admissions/&hellip;</code> (plural)</td><td><code>/admission/&hellip;</code> (singular)</td></tr>
+          <tr><td><code>/academics/details-of-academic-programs/bds/</code></td><td><code>/bds/</code></td></tr>
+          <tr><td><code>/academics/details-of-academic-programs/mds/</code></td><td><code>/mds/</code></td></tr>
+          <tr><td><code>/fees-structure/</code> (plural)</td><td><code>/fee-structure/</code> (singular)</td></tr>
+        </tbody>
+      </table>
+      <div class="lab">Audit command (run from repo root) — finds any non-canonical internal hrefs</div>
+      <pre class="good">grep -rnE "href=\"/(bds|mds|fee-structure|admission)/" app/ components/ data/ lib/</pre>
+      <ul class="steps">
+        <li>Trailing slash is required (<code>trailingSlash: true</code>). Use <code>/contact/</code>, not <code>/contact</code>.</li>
+        <li>Use relative hrefs in <code>&lt;Link&gt;</code> (<code>/admissions/bds/</code>), not absolute <code>https://&hellip;</code>.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ============ SUMMARY ============ -->
+  <h2 class="sec">Summary &amp; acceptance check</h2>
+  <table class="sum">
+    <thead><tr><th>#</th><th>Task</th><th>Files touched</th><th>Done when&hellip;</th></tr></thead>
+    <tbody>
+      <tr><td>D1</td><td>Footer Quick Links + Locations</td><td>data/content.ts, components/Footer.tsx</td><td>8 quick links + 5 city links show in footer on every page, all responsive</td></tr>
+      <tr><td>D2</td><td>Admission menu fix</td><td>lib/navigationMenuLink.ts</td><td>BDS/MDS/Process appear in Admission menu; no 404 from any menu item</td></tr>
+      <tr><td>D3</td><td>RelatedLinks component</td><td>components/RelatedLinks.tsx (new)</td><td>Component builds &amp; renders a grid of links</td></tr>
+      <tr><td>D4</td><td>Place RelatedLinks</td><td>program / blog / city page.tsx</td><td>Every program, blog &amp; city page has a related-links block per spec</td></tr>
+      <tr><td>D5</td><td>Contextual links</td><td>fees / scholarships / naac / about / faq pages</td><td>Each page has 2&ndash;4 keyword-anchored in-body links</td></tr>
+      <tr><td>D6</td><td>Canonical audit</td><td>all</td><td>grep returns no non-canonical internal hrefs; <code>npm run build</code> passes</td></tr>
+    </tbody>
+  </table>
+
+  <div class="warn"><b>Before pushing:</b> <code>npm run lint</code> &amp; <code>npm run build</code> must pass (catches TS/JSX errors), and manually verify Footer + Header across the breakpoints listed in CLAUDE.md.</div>
+
+  <div class="footer">
+    <p><b>Why this order:</b> D1 (footer) + D2 (menu) are global one-file wins that instantly link every near-orphan. D3 builds the tool D4 reuses across ~20 pages. D5 adds the high-weight contextual links. D6 keeps it all pointing at canonical URLs. No production code has been changed — this document is the spec.</p>
+    <p style="margin-top:8px;opacity:.8">JKKN Dental College &amp; Hospital &bull; Internal Linking Developer Handoff &bull; 28 May 2026</p>
+  </div>
+
+</div>
+</body>
+</html>

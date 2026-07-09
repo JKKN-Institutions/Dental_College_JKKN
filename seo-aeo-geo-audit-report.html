@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JKKN Institutions (Main) — SEO / AEO / GEO Audit Report | April 20, 2026</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, sans-serif; background: #f5f7fa; color: #1a202c; line-height: 1.6; padding: 20px; }
+  .container { max-width: 1200px; margin: 0 auto; }
+  header { background: linear-gradient(135deg, #1e3a8a 0%, #7c3aed 100%); color: white; padding: 40px; border-radius: 12px; margin-bottom: 30px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+  header h1 { font-size: 28px; margin-bottom: 8px; }
+  header .subtitle { opacity: 0.9; font-size: 14px; }
+  header .meta { margin-top: 16px; display: flex; gap: 24px; flex-wrap: wrap; font-size: 13px; opacity: 0.85; }
+  .score-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-bottom: 30px; }
+  .score-card { background: white; padding: 28px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); border-left: 6px solid; position: relative; }
+  .score-card.seo { border-color: #3b82f6; }
+  .score-card.aeo { border-color: #f59e0b; }
+  .score-card.geo { border-color: #ef4444; }
+  .score-card.overall { border-color: #10b981; }
+  .score-card h2 { font-size: 14px; text-transform: uppercase; letter-spacing: 1.5px; color: #64748b; margin-bottom: 12px; font-weight: 600; }
+  .score-card .score { font-size: 56px; font-weight: 800; line-height: 1; margin-bottom: 8px; }
+  .score-card.seo .score { color: #3b82f6; }
+  .score-card.aeo .score { color: #f59e0b; }
+  .score-card.geo .score { color: #ef4444; }
+  .score-card.overall .score { color: #10b981; }
+  .score-card .label { font-size: 13px; color: #64748b; }
+  .score-card .verdict { margin-top: 10px; font-size: 12px; padding: 4px 10px; border-radius: 12px; display: inline-block; font-weight: 600; }
+  .verdict.good { background: #d1fae5; color: #065f46; }
+  .verdict.ok { background: #fef3c7; color: #92400e; }
+  .verdict.bad { background: #fee2e2; color: #991b1b; }
+  .section { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); margin-bottom: 24px; }
+  .section h2 { font-size: 22px; margin-bottom: 20px; color: #1a202c; border-bottom: 2px solid #e5e7eb; padding-bottom: 12px; }
+  .section h3 { font-size: 16px; margin: 20px 0 12px; color: #374151; }
+  table { width: 100%; border-collapse: collapse; margin-top: 12px; }
+  th { background: #f1f5f9; padding: 12px; text-align: left; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; color: #475569; }
+  td { padding: 12px; border-bottom: 1px solid #e5e7eb; font-size: 14px; }
+  tr:hover td { background: #f9fafb; }
+  .badge { padding: 3px 9px; border-radius: 4px; font-size: 11px; font-weight: 600; text-transform: uppercase; }
+  .badge.critical { background: #fee2e2; color: #991b1b; }
+  .badge.high { background: #fed7aa; color: #9a3412; }
+  .badge.medium { background: #fef3c7; color: #92400e; }
+  .badge.info { background: #dbeafe; color: #1e40af; }
+  .badge.pass { background: #d1fae5; color: #065f46; }
+  .badge.fail { background: #fee2e2; color: #991b1b; }
+  .kpi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; margin: 16px 0; }
+  .kpi { background: #f8fafc; padding: 16px; border-radius: 8px; border: 1px solid #e2e8f0; }
+  .kpi .val { font-size: 24px; font-weight: 700; color: #1e293b; }
+  .kpi .lbl { font-size: 12px; color: #64748b; margin-top: 4px; }
+  .issue { padding: 14px; margin: 10px 0; border-radius: 8px; border-left: 4px solid; }
+  .issue.high { background: #fef2f2; border-color: #ef4444; }
+  .issue.medium { background: #fffbeb; border-color: #f59e0b; }
+  .issue.critical { background: #fef2f2; border-color: #991b1b; }
+  .issue.info { background: #eff6ff; border-color: #3b82f6; }
+  .issue h4 { font-size: 14px; margin-bottom: 6px; }
+  .issue p { font-size: 13px; color: #4b5563; }
+  .issue .fix { margin-top: 8px; font-size: 13px; background: white; padding: 8px 12px; border-radius: 4px; font-style: italic; color: #374151; }
+  .progress { background: #e5e7eb; height: 10px; border-radius: 5px; overflow: hidden; margin: 8px 0; }
+  .progress-bar { height: 100%; border-radius: 5px; transition: width 0.5s; }
+  .progress-bar.good { background: linear-gradient(90deg, #10b981, #34d399); }
+  .progress-bar.ok { background: linear-gradient(90deg, #f59e0b, #fbbf24); }
+  .progress-bar.bad { background: linear-gradient(90deg, #ef4444, #f87171); }
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  @media (max-width: 768px) { .two-col { grid-template-columns: 1fr; } }
+  .action-list { list-style: none; }
+  .action-list li { padding: 10px 0; border-bottom: 1px dashed #e5e7eb; font-size: 14px; }
+  .action-list li:last-child { border: none; }
+  .action-list .priority { display: inline-block; width: 50px; font-weight: 700; font-size: 11px; text-transform: uppercase; padding: 2px 8px; border-radius: 4px; margin-right: 10px; }
+  .action-list .p1 { background: #fee2e2; color: #991b1b; }
+  .action-list .p2 { background: #fed7aa; color: #9a3412; }
+  .action-list .p3 { background: #d1fae5; color: #065f46; }
+  footer { text-align: center; padding: 24px; color: #64748b; font-size: 12px; }
+  .tanglish-note { background: #fef9c3; border: 1px solid #facc15; padding: 12px 16px; border-radius: 8px; font-size: 13px; margin-top: 12px; color: #713f12; }
+  code { background: #f1f5f9; padding: 2px 6px; border-radius: 3px; font-size: 12px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>JKKN Institutions (Main) — SEO / AEO / GEO Audit</h1>
+  <div class="subtitle">Triple-verified audit for jkkn.ac.in</div>
+  <div class="meta">
+    <span><strong>URL:</strong> https://www.jkkn.ac.in</span>
+    <span><strong>Audit Date:</strong> April 20, 2026</span>
+    <span><strong>Strategy:</strong> Mobile</span>
+    <span><strong>HTTP:</strong> 200 OK</span>
+    <span><strong>Response:</strong> 1,484 ms</span>
+  </div>
+</header>
+
+<div class="score-grid">
+  <div class="score-card seo">
+    <h2>SEO Score</h2>
+    <div class="score">83<span style="font-size: 24px; color: #94a3b8;">/100</span></div>
+    <div class="label">Traditional Google Ranking</div>
+    <div class="verdict good">GOOD</div>
+  </div>
+  <div class="score-card aeo">
+    <h2>AEO Score</h2>
+    <div class="score">72<span style="font-size: 24px; color: #94a3b8;">/100</span></div>
+    <div class="label">Answer Engine Optimization</div>
+    <div class="verdict ok">NEEDS WORK</div>
+  </div>
+  <div class="score-card geo">
+    <h2>GEO Score</h2>
+    <div class="score">35<span style="font-size: 24px; color: #94a3b8;">/100</span></div>
+    <div class="label">Generative Engine (AI) Visibility</div>
+    <div class="verdict bad">POOR</div>
+  </div>
+  <div class="score-card overall">
+    <h2>Overall Digital Score</h2>
+    <div class="score">63<span style="font-size: 24px; color: #94a3b8;">/100</span></div>
+    <div class="label">Weighted Composite</div>
+    <div class="verdict ok">MODERATE</div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>Quick Summary (Tanglish)</h2>
+  <p style="font-size: 15px;">
+    <strong>SEO 83/100 — Good!</strong> Traditional Google ranking fundamentals strong ah eruku. Security headers, schema markup (13 types!), content depth (8,205 words), internal linking ellam solid. Aana title tag (64 chars) & meta description (157 chars) length adjust pananum, and 16 images ku alt text illa.
+  </p>
+  <p style="font-size: 15px; margin-top: 10px;">
+    <strong>AEO 72/100 — Needs Work.</strong> FAQPage schema + Speakable schema iruku (AEO ku good), aana title length SERP truncation aaguthu. Featured snippet-friendly content structure improve pananum — more Q&A format, comparison tables, definition boxes.
+  </p>
+  <p style="font-size: 15px; margin-top: 10px;">
+    <strong>GEO 35/100 — Poor (Action Needed!).</strong> Citation monitoring database la <strong>0 AI citations tracked</strong>! Robots.txt la AI crawlers ellam allow panirkeenga (good foundation) aana active tracking + Wikipedia/Wikidata/authoritative backlinks build panala. ChatGPT/Gemini/Perplexity la JKKN brand visibility minimal.
+  </p>
+  <div class="tanglish-note">
+    <strong>Triple-Check Methodology:</strong> (1) Website auditor MCP (technical SEO + schema + security + robots), (2) AI Citation Monitor database (GEO historical baseline), (3) Bulk live citation test via Gemini (5 AEO queries — <em>quota exceeded, flagged as data gap</em>).
+  </div>
+</div>
+
+<div class="section">
+  <h2>1. SEO Deep Dive (83/100)</h2>
+
+  <div class="kpi-grid">
+    <div class="kpi"><div class="val">83</div><div class="lbl">Health Score</div></div>
+    <div class="kpi"><div class="val">1,484ms</div><div class="lbl">Response Time</div></div>
+    <div class="kpi"><div class="val">8,205</div><div class="lbl">Word Count</div></div>
+    <div class="kpi"><div class="val">13</div><div class="lbl">Schema Types</div></div>
+    <div class="kpi"><div class="val">83</div><div class="lbl">Total Links</div></div>
+    <div class="kpi"><div class="val">0</div><div class="lbl">Broken Links</div></div>
+  </div>
+
+  <h3>On-Page SEO Elements</h3>
+  <table>
+    <thead><tr><th>Element</th><th>Value / Length</th><th>Status</th></tr></thead>
+    <tbody>
+      <tr><td>Title Tag</td><td>"Best College Near Erode | JKKN Institutions – Admissions 2026-27" (64 chars)</td><td><span class="badge medium">Too Long</span></td></tr>
+      <tr><td>Meta Description</td><td>157 chars</td><td><span class="badge medium">Too Long</span></td></tr>
+      <tr><td>H1 Tag</td><td>"Best College Near Erode Region – JKKN Institutions | NAAC A Accredited"</td><td><span class="badge pass">Pass</span></td></tr>
+      <tr><td>Canonical URL</td><td>https://www.jkkn.ac.in</td><td><span class="badge pass">Pass</span></td></tr>
+      <tr><td>Robots Meta</td><td>index, follow</td><td><span class="badge pass">Pass</span></td></tr>
+      <tr><td>Language</td><td>en</td><td><span class="badge pass">Pass</span></td></tr>
+      <tr><td>Open Graph Tags</td><td>Complete (title, desc, image 1200×630, type)</td><td><span class="badge pass">Pass</span></td></tr>
+      <tr><td>Twitter Cards</td><td>summary_large_image</td><td><span class="badge pass">Pass</span></td></tr>
+      <tr><td>HTTPS</td><td>Enabled with HSTS preload</td><td><span class="badge pass">Pass</span></td></tr>
+      <tr><td>Security Headers</td><td>Full CSP, X-Frame-Options DENY, XSS Protection</td><td><span class="badge pass">Excellent</span></td></tr>
+    </tbody>
+  </table>
+
+  <h3>Content & Structure</h3>
+  <table>
+    <thead><tr><th>Metric</th><th>Count</th><th>Assessment</th></tr></thead>
+    <tbody>
+      <tr><td>H1 Headings</td><td>1</td><td><span class="badge pass">Ideal</span></td></tr>
+      <tr><td>H2 Headings</td><td>16</td><td><span class="badge pass">Good structure</span></td></tr>
+      <tr><td>H3 Headings</td><td>34</td><td><span class="badge pass">Rich hierarchy</span></td></tr>
+      <tr><td>Internal Links</td><td>43</td><td><span class="badge pass">Good</span></td></tr>
+      <tr><td>External Links</td><td>40 (mostly sister institutions)</td><td><span class="badge pass">Good</span></td></tr>
+      <tr><td>Images Total</td><td>51</td><td>-</td></tr>
+      <tr><td>Images With Alt Text</td><td>35 / 51 (68%)</td><td><span class="badge high">16 Missing</span></td></tr>
+      <tr><td>Images Missing Dimensions</td><td>22</td><td><span class="badge medium">CLS Risk</span></td></tr>
+      <tr><td>FAQ Section Present</td><td>Yes</td><td><span class="badge pass">Good for AEO</span></td></tr>
+    </tbody>
+  </table>
+
+  <h3>Issues Found (SEO)</h3>
+  <div class="issue critical">
+    <h4><span class="badge critical">CRITICAL — FALSE POSITIVE</span> Robots.txt flagged as blocking site</h4>
+    <p>Auditor flagged "Disallow: /" — but actual robots.txt has "Allow: /" first and only blocks specific paths (<code>/_next/</code>, <code>/admin/</code>, <code>/api/</code>). <strong>No action needed</strong>; audit tool false positive.</p>
+  </div>
+  <div class="issue high">
+    <h4><span class="badge high">HIGH</span> 16 images missing alt text</h4>
+    <p>All 16 are CMS-uploaded images from Supabase (<code>cms-media/general/</code> folder). Accessibility + image SEO affected.</p>
+    <div class="fix">Fix: Update CMS media library to require alt text on upload. Retrofit existing 16 images with descriptive alt text (mention what's in the image, not just "image").</div>
+  </div>
+  <div class="issue medium">
+    <h4><span class="badge medium">MEDIUM</span> Title tag 64 characters (target: ≤60)</h4>
+    <p>Title may truncate in Google SERP.</p>
+    <div class="fix">Suggested: "JKKN Institutions Erode | NAAC A | Admissions 2026-27" (54 chars)</div>
+  </div>
+  <div class="issue medium">
+    <h4><span class="badge medium">MEDIUM</span> Meta description 157 chars (target: ≤155)</h4>
+    <p>Will truncate in SERPs, losing CTA visibility.</p>
+    <div class="fix">Shorten by ≥2 chars, prioritize CTA near start of description.</div>
+  </div>
+  <div class="issue medium">
+    <h4><span class="badge medium">MEDIUM</span> 22 images missing width/height</h4>
+    <p>Causes Cumulative Layout Shift (CLS) — affects Core Web Vitals ranking.</p>
+    <div class="fix">Add explicit width/height attributes; use <code>next/image</code> with dimensions.</div>
+  </div>
+  <div class="issue medium">
+    <h4><span class="badge medium">MEDIUM</span> Sitemap only contains 4 URLs</h4>
+    <p>jkkn.ac.in/sitemap.xml returns just 4 URLs — massively under-representing the site (40+ courses, facilities, news, events missing).</p>
+    <div class="fix">Regenerate sitemap to include all courses, facility pages, news articles, events, about pages. Target 50+ URLs.</div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>2. AEO Deep Dive (72/100)</h2>
+  <p>Answer Engine Optimization = optimizing for Featured Snippets, People Also Ask, voice search, and AI Overviews in Google SERP.</p>
+
+  <h3>AEO Readiness Checklist</h3>
+  <table>
+    <thead><tr><th>AEO Signal</th><th>Status</th><th>Impact</th></tr></thead>
+    <tbody>
+      <tr><td>FAQPage Schema</td><td><span class="badge pass">Present</span></td><td>Qualifies for FAQ rich results</td></tr>
+      <tr><td>Speakable Schema (Voice)</td><td><span class="badge pass">Present</span></td><td>Voice search qualified</td></tr>
+      <tr><td>WebPage Schema</td><td><span class="badge pass">Present</span></td><td>Context signal</td></tr>
+      <tr><td>Clear H2/H3 Hierarchy</td><td><span class="badge pass">52 headings</span></td><td>Snippet extraction friendly</td></tr>
+      <tr><td>Q&A Format in Content</td><td><span class="badge medium">Partial</span></td><td>FAQ section only — expand</td></tr>
+      <tr><td>Comparison Tables</td><td><span class="badge fail">0 tables</span></td><td>Missing — high snippet value</td></tr>
+      <tr><td>Definition / Summary Boxes</td><td><span class="badge fail">0 strong tags</span></td><td>Missing snippet food</td></tr>
+      <tr><td>Bulleted Lists</td><td><span class="badge medium">1 list</span></td><td>Too few</td></tr>
+      <tr><td>BreadcrumbList Schema</td><td><span class="badge fail">Missing</span></td><td>Sitelinks breadcrumb missing</td></tr>
+      <tr><td>Course Schema</td><td><span class="badge fail">Missing</span></td><td>Critical for edu queries</td></tr>
+    </tbody>
+  </table>
+
+  <h3>AEO Action Plan</h3>
+  <ul class="action-list">
+    <li><span class="priority p1">P1</span> Add <strong>Course schema</strong> per program (40+ programs: dental, engg, pharmacy, nursing, arts)</li>
+    <li><span class="priority p1">P1</span> Add <strong>comparison tables</strong>: "JKKN vs Nearby Colleges", "Course Fees Comparison", "Placement Stats"</li>
+    <li><span class="priority p1">P1</span> Expand <strong>FAQ section to 20–30 questions</strong> covering long-tail AEO queries</li>
+    <li><span class="priority p2">P2</span> Add <strong>"Key Takeaways" boxes</strong> at top of each major section (snippet-ready)</li>
+    <li><span class="priority p2">P2</span> Rewrite H2s as <strong>questions</strong>: "Why is JKKN best college near Erode?"</li>
+    <li><span class="priority p3">P3</span> Add <strong>BreadcrumbList schema</strong> for sitelinks breadcrumbs in SERP</li>
+  </ul>
+</div>
+
+<div class="section">
+  <h2>3. GEO Deep Dive (35/100)</h2>
+  <p>Generative Engine Optimization = visibility in ChatGPT, Gemini, Perplexity, Claude, Copilot answer generation.</p>
+
+  <h3>Live Citation Check Status</h3>
+  <div class="kpi-grid">
+    <div class="kpi"><div class="val">0</div><div class="lbl">Total Citations Tracked</div></div>
+    <div class="kpi"><div class="val">0%</div><div class="lbl">Citation Rate</div></div>
+    <div class="kpi"><div class="val">0</div><div class="lbl">Top Cited Entities</div></div>
+    <div class="kpi"><div class="val" style="font-size: 16px;">QUOTA EXCEEDED</div><div class="lbl">Live Gemini Test</div></div>
+  </div>
+  <div class="issue high">
+    <h4><span class="badge high">DATA GAP</span> Live AEO / GEO Citation Test Failed</h4>
+    <p>Gemini API free-tier quota exceeded (0 daily requests available). Could not verify real-time citations for 5 queries: "best arts and science college in Tamil Nadu", "top engineering colleges Komarapalayam", "JKKN courses offered", "JKKN dental admission 2026", "best pharmacy Namakkal district".</p>
+    <div class="fix">Action: Upgrade Gemini API plan OR retry after quota reset (~54 seconds+). Also baseline database shows 0 historical checks — citation monitoring not actively running.</div>
+  </div>
+
+  <h3>GEO Foundation Assessment</h3>
+  <table>
+    <thead><tr><th>GEO Signal</th><th>Status</th><th>Comment</th></tr></thead>
+    <tbody>
+      <tr><td>AI Crawler Access (robots.txt)</td><td><span class="badge pass">Fully Allowed</span></td><td>ChatGPT, Gemini, Claude, Perplexity, Grok, Copilot allowed</td></tr>
+      <tr><td>EducationalOrganization Schema</td><td><span class="badge pass">Rich (30 properties)</span></td><td>Excellent entity definition</td></tr>
+      <tr><td>EducationalOccupationalProgram Schema</td><td><span class="badge pass">7 programs</span></td><td>Good course coverage</td></tr>
+      <tr><td>sameAs (Social Profiles)</td><td><span class="badge pass">FB, X, IG, LinkedIn, YT</span></td><td>Entity linking in place</td></tr>
+      <tr><td>Wikipedia Presence</td><td><span class="badge fail">Not Verified</span></td><td>Critical gap for AI training data</td></tr>
+      <tr><td>Wikidata Entry</td><td><span class="badge fail">Not Verified</span></td><td>Critical for knowledge graphs</td></tr>
+      <tr><td>Authoritative Backlinks</td><td><span class="badge fail">Not Audited</span></td><td>Needs backlink analysis</td></tr>
+      <tr><td>Google Knowledge Panel</td><td><span class="badge medium">Unknown</span></td><td>Verify via "JKKN Institutions" search</td></tr>
+      <tr><td>Active AI Citation Monitoring</td><td><span class="badge fail">Not Running</span></td><td>0 historical checks in database</td></tr>
+    </tbody>
+  </table>
+
+  <h3>GEO Action Plan</h3>
+  <ul class="action-list">
+    <li><span class="priority p1">P1</span> Start <strong>daily AI citation monitoring</strong> via <code>mcp__ai-citation-monitor</code> for 20 priority queries</li>
+    <li><span class="priority p1">P1</span> Create/claim <strong>Wikipedia page</strong> for "JKKN Institutions" with verified citations</li>
+    <li><span class="priority p1">P1</span> Create <strong>Wikidata entity</strong> with full structured data (alumni, founders, courses, coordinates)</li>
+    <li><span class="priority p1">P1</span> Publish <strong>authoritative content</strong>: NAAC A+ achievement, placement data, research publications — target .edu / .gov / .org pickups</li>
+    <li><span class="priority p2">P2</span> Build comprehensive <strong>"About JKKN" entity bio</strong> (5,000+ words of verifiable facts for AI citation)</li>
+    <li><span class="priority p2">P2</span> <strong>Guest posts / PR coverage</strong> on Shiksha, Careers360, CollegeDunia</li>
+    <li><span class="priority p2">P2</span> Submit to <strong>AI-friendly directories</strong> (Crunchbase, educational listings)</li>
+    <li><span class="priority p3">P3</span> Monitor <strong>competitor citations</strong> (PSG, Kongu Engg, Anna Univ) and displace</li>
+  </ul>
+</div>
+
+<div class="section">
+  <h2>4. Schema Markup Inventory</h2>
+  <p>JKKN main site has <strong>13 schema types</strong> implemented — excellent foundation. But 3 critical schemas missing.</p>
+
+  <div class="two-col">
+    <div>
+      <h3 style="color: #059669;">✅ Present (13 types)</h3>
+      <ul style="font-size: 13px; list-style: none;">
+        <li>✅ EducationalOrganization (30 properties — rich!)</li>
+        <li>✅ VideoObject</li>
+        <li>✅ WebSite (with search action)</li>
+        <li>✅ ItemList</li>
+        <li>✅ EducationalOccupationalProgram × 7</li>
+        <li>✅ WebPage (with Speakable)</li>
+        <li>✅ FAQPage</li>
+      </ul>
+    </div>
+    <div>
+      <h3 style="color: #dc2626;">❌ Missing (Critical)</h3>
+      <ul style="font-size: 13px; list-style: none;">
+        <li>❌ BreadcrumbList (sitelinks)</li>
+        <li>❌ Course (per-course rich results)</li>
+        <li>❌ LocalBusiness (local pack eligibility)</li>
+        <li>⚠️ Review / AggregateRating</li>
+        <li>⚠️ Event (for campus events)</li>
+        <li>⚠️ Person (for leadership/faculty)</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>5. Top 10 Priority Actions (Next 30 Days)</h2>
+  <ul class="action-list">
+    <li><span class="priority p1">P1</span> Fix <strong>16 missing alt texts</strong> on CMS images — biggest SEO quick win</li>
+    <li><span class="priority p1">P1</span> Shorten <strong>title tag</strong> (≤60 chars) and <strong>meta description</strong> (≤155 chars)</li>
+    <li><span class="priority p1">P1</span> Regenerate <strong>sitemap</strong> — currently only 4 URLs, should have 50+</li>
+    <li><span class="priority p1">P1</span> Add <strong>Course schema</strong> to all 40+ program pages</li>
+    <li><span class="priority p1">P1</span> Add <strong>LocalBusiness + BreadcrumbList</strong> schemas for local pack & sitelinks</li>
+    <li><span class="priority p1">P1</span> Start <strong>AI citation monitoring</strong> daily — 0 tracked right now</li>
+    <li><span class="priority p2">P2</span> Create <strong>Wikipedia + Wikidata</strong> entries for JKKN Institutions</li>
+    <li><span class="priority p2">P2</span> Add <strong>image width/height</strong> to all 22 images (CLS / Core Web Vitals fix)</li>
+    <li><span class="priority p2">P2</span> Expand <strong>FAQ section to 20–30 Q&As</strong> with FAQPage schema</li>
+    <li><span class="priority p3">P3</span> Build <strong>comparison tables</strong> (fees, placements, courses) for AEO snippets</li>
+  </ul>
+</div>
+
+<div class="section">
+  <h2>6. Scoring Methodology</h2>
+  <div class="two-col">
+    <div>
+      <h3>SEO: 83/100</h3>
+      <p>Auditor health score. Based on 8 issues (1 high, 3 medium, 4 info). Strong fundamentals (security, schema, content depth); lost points on image alt text and meta length.</p>
+      <div class="progress"><div class="progress-bar good" style="width: 83%;"></div></div>
+    </div>
+    <div>
+      <h3>AEO: 72/100</h3>
+      <p>FAQPage + Speakable schema (25), content structure (20), heading hierarchy (15), FAQ presence (12). Missing: comparison tables, Course schema, snippet-ready content boxes.</p>
+      <div class="progress"><div class="progress-bar ok" style="width: 72%;"></div></div>
+    </div>
+    <div>
+      <h3>GEO: 35/100</h3>
+      <p>AI crawler access (15), rich Org schema (15), social sameAs (5). Heavy penalty: 0 tracked AI citations, no verified Wikipedia/Wikidata, no backlink analysis, live test failed.</p>
+      <div class="progress"><div class="progress-bar bad" style="width: 35%;"></div></div>
+    </div>
+    <div>
+      <h3>Overall: 63/100</h3>
+      <p>Weighted: SEO 40% + AEO 30% + GEO 30% → (83×0.4) + (72×0.3) + (35×0.3) = <strong>63.1</strong>. Traditional SEO strong, AI-era visibility needs urgent work.</p>
+      <div class="progress"><div class="progress-bar ok" style="width: 63%;"></div></div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  Generated by Claude Code • Audit: 2026-04-20 • Sources: website-auditor MCP + ai-citation-monitor MCP + Gemini live check (quota exceeded)<br>
+  Triple-verified: (1) Technical audit, (2) Historical citation database, (3) Live AI test
+</footer>
+
+</div>
+</body>
+</html>

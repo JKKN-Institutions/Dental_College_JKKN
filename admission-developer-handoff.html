@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admission Fixes — Developer Handoff | JKKN Dental College</title>
+<style>
+  :root{
+    --green:#006837;--green2:#7cb983;--dark:#002309;--cream:#FBFBEE;
+    --p1:#c0392b;--p2:#d68910;--p3:#2471a3;--ok:#1e8449;--line:#e6e6d8;--ink:#2b2b2b;--muted:#6b7280;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:'Segoe UI',Roboto,Arial,sans-serif;color:var(--ink);background:#f4f4ec;line-height:1.55;}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 20px 80px;}
+  header.top{background:linear-gradient(135deg,var(--green),var(--green2));color:#fff;padding:42px 20px;margin-bottom:26px;}
+  header.top .in{max-width:1080px;margin:0 auto;}
+  header.top h1{margin:0 0 6px;font-size:27px;}
+  header.top p{margin:3px 0;opacity:.95;font-size:14px;}
+  .pill{display:inline-block;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.35);padding:4px 12px;border-radius:99px;font-size:12px;font-weight:600;margin-top:8px;margin-right:6px;}
+  h2.sec{color:var(--green);border-bottom:3px solid var(--green2);padding-bottom:7px;margin-top:40px;font-size:21px;}
+  .toc{background:#fff;border:1px solid var(--line);border-radius:10px;padding:16px 20px;margin:18px 0;}
+  .toc table{width:100%;border-collapse:collapse;font-size:13px;}
+  .toc td{padding:6px 8px;border-bottom:1px solid var(--line);}
+  .toc tr:last-child td{border-bottom:none;}
+  .toc a{color:var(--green);text-decoration:none;font-weight:600;}
+  .task{background:#fff;border:1px solid var(--line);border-radius:12px;margin:18px 0;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.05);}
+  .task .h{display:flex;align-items:center;gap:12px;padding:14px 18px;border-bottom:1px solid var(--line);}
+  .task .h .id{flex:0 0 auto;width:30px;height:30px;border-radius:8px;color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center;font-size:13px;background:var(--green);}
+  .task .h h3{margin:0;font-size:16px;color:var(--dark);flex:1;}
+  .task .b{padding:8px 18px 18px;}
+  .meta{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0;}
+  .badge{display:inline-block;color:#fff;font-size:11px;font-weight:700;padding:3px 9px;border-radius:99px;}
+  .b-p1{background:var(--p1)}.b-p2{background:var(--p2)}.b-p3{background:var(--p3)}
+  .chip{display:inline-block;font-size:11px;font-weight:700;padding:3px 9px;border-radius:6px;background:#eef0ea;color:#444;}
+  .chip.eff{background:#e9f7ef;color:var(--ok)} .chip.eff.m{background:#fef5e7;color:var(--p2)} .chip.eff.h{background:#fdecea;color:var(--p1)}
+  .lab{font-size:11px;text-transform:uppercase;letter-spacing:.05em;font-weight:700;color:var(--muted);margin-top:14px;margin-bottom:4px;}
+  .file{font-family:Consolas,monospace;font-size:13px;background:#f0f0e4;border:1px solid var(--line);border-radius:4px;padding:2px 7px;color:#7a3b00;}
+  pre{background:#1f2421;color:#e6efe8;border-radius:8px;padding:14px 16px;overflow-x:auto;font-size:12.5px;line-height:1.5;margin:8px 0;}
+  pre.bad{border-left:4px solid var(--p1);}
+  pre.good{border-left:4px solid var(--ok);}
+  pre .c{color:#8fa99a;}
+  .tag-bad{display:inline-block;font-size:11px;font-weight:700;color:var(--p1);}
+  .tag-good{display:inline-block;font-size:11px;font-weight:700;color:var(--ok);}
+  ul.steps{margin:6px 0 0;padding-left:20px;}
+  ul.steps li{margin:5px 0;font-size:14px;}
+  .blocked{background:#fff8e6;border:1px solid #f0d98a;border-radius:10px;padding:16px 20px;margin:16px 0;}
+  .blocked h3{margin:0 0 8px;color:#9a6a00;font-size:15px;}
+  .note{font-size:13px;color:var(--muted);}
+  .footer{margin-top:46px;padding:18px;background:var(--dark);color:#cfe3d3;border-radius:12px;font-size:13px;}
+  table.sum{width:100%;border-collapse:collapse;margin:14px 0;background:#fff;border-radius:10px;overflow:hidden;font-size:13.5px;box-shadow:0 1px 3px rgba(0,0,0,.05);}
+  table.sum th,table.sum td{padding:9px 12px;text-align:left;border-bottom:1px solid var(--line);}
+  table.sum thead th{background:var(--green);color:#fff;}
+  table.sum tr:nth-child(even){background:var(--cream);}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="in">
+    <h1>Admission Fixes — Developer Handoff</h1>
+    <p>JKKN Dental College &amp; Hospital &bull; dental.jkkn.ac.in &bull; Next.js 16 (App Router)</p>
+    <p>Scope: <strong>only developer-actionable code changes</strong> (no content/admin-data tasks) &bull; 28 May 2026</p>
+    <span class="pill">10 dev tasks</span>
+    <span class="pill">Exact file + line + before/after</span>
+    <span class="pill">No code edited yet — needs approval</span>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <div class="toc">
+    <strong>Task list (priority order)</strong>
+    <table>
+      <tr><td><a href="#t1">D1</a></td><td>Fix broken Admission nav + add BDS/MDS/Fees/Apply</td><td><span class="badge b-p1">P1</span></td><td><span class="chip eff">Low 1–2h</span></td></tr>
+      <tr><td><a href="#t2">D2</a></td><td>Fix /admissions/ canonical + OG + speakable + breadcrumb URLs</td><td><span class="badge b-p1">P1</span></td><td><span class="chip eff">Low &lt;1h</span></td></tr>
+      <tr><td><a href="#t3">D3</a></td><td>Refresh /admission-process/ — dates, 9→5 specs, invalid schema</td><td><span class="badge b-p1">P1</span></td><td><span class="chip eff">Low 1h</span></td></tr>
+      <tr><td><a href="#t4">D4</a></td><td>Build on-site admission enquiry form → Supabase</td><td><span class="badge b-p1">P1</span></td><td><span class="chip eff h">High 3–4d</span></td></tr>
+      <tr><td><a href="#t5">D5</a></td><td>Fix "Naan Phudulvan" → "Naan Mudhalvan" + prospectus PDF mismatch</td><td><span class="badge b-p2">P2</span></td><td><span class="chip eff">Low 30m</span></td></tr>
+      <tr><td><a href="#t6">D6</a></td><td>Remove unverifiable aggregateRating from BDS/MDS schema</td><td><span class="badge b-p2">P2</span></td><td><span class="chip eff">Low 20m</span></td></tr>
+      <tr><td><a href="#t7">D7</a></td><td>Fix Contact map placeholder coords + surface admissions email</td><td><span class="badge b-p2">P2</span></td><td><span class="chip eff">Low 30m</span></td></tr>
+      <tr><td><a href="#t8">D8</a></td><td>Add GQ/MQ seat-matrix card + rebuild admission-criteria page</td><td><span class="badge b-p2">P2</span></td><td><span class="chip eff m">Med 1d</span></td></tr>
+      <tr><td><a href="#t9">D9</a></td><td>Resolve cannibalization (canonical hub / 301 process page)</td><td><span class="badge b-p2">P2</span></td><td><span class="chip eff m">Med 0.5d</span></td></tr>
+      <tr><td><a href="#t10">D10</a></td><td>Add inline breadcrumb UI to /admissions/ hub</td><td><span class="badge b-p3">P3</span></td><td><span class="chip eff">Low 0.5h</span></td></tr>
+    </table>
+  </div>
+
+  <!-- ============ D1 ============ -->
+  <h2 class="sec" id="t1">D1 &bull; Fix broken Admission nav + add key pages</h2>
+  <div class="task">
+    <div class="h"><div class="id">1</div><h3>Two nav links 404; BDS/MDS/Fees/Apply not in menu</h3></div>
+    <div class="b">
+      <div class="meta"><span class="badge b-p1">P1</span><span class="chip eff">Effort: Low (1–2h)</span><span class="chip">Impact: Very High</span></div>
+
+      <div class="lab">File 1 — <span class="file">data/content.ts</span> (around lines 175–189)</div>
+      <p class="tag-bad">CURRENT (broken: both admission-process-guidelines paths have no page → 404)</p>
+      <pre class="bad">{
+  label: "ADMISSION &amp; FEE",
+  href: "/admissions",
+  submenu: [
+    { label: "ADMISSION", href: "/admissions" },
+    { label: "PROSPECTUS", href: "/admissions/prospectus" },
+    {
+      label: "ADMISSION PROCESS &amp; GUIDELINES",
+      href: "/admissions/admission-process-guidelines",          <span class="c">// 404</span>
+      submenu: [
+        { label: "ADMISSION CRITERION IN OTHERS",
+          href: "/admissions/admission-process-guidelines/admission-criterion-in-others" } <span class="c">// 404</span>
+      ]
+    },
+    { label: "FEE REFUND POLICY", href: "/admissions/fee-refund-policy" },
+    { label: "SCHOLARSHIP POLICY FOR DENTAL COLLEGE", href: "/admissions/scholarship-policy-for-dental-college" },
+    { label: "EQUITABLE OPPORTUNITY FOR SEDG GROUP", href: "/admissions/equitable-opportunity-for-sedg-group" }
+  ]
+}</pre>
+      <p class="tag-good">CHANGE TO (point to real pages + add the high-value ones)</p>
+      <pre class="good">{
+  label: "ADMISSION &amp; FEE",
+  href: "/admissions",
+  submenu: [
+    { label: "ADMISSION OVERVIEW", href: "/admissions" },
+    { label: "BDS ADMISSION 2026-27", href: "/admissions/bds" },
+    { label: "MDS ADMISSION 2026-27", href: "/admissions/mds" },
+    { label: "ADMISSION PROCESS", href: "/admission-process" },
+    { label: "ADMISSION CRITERIA", href: "/admissions/admission-criteria" },
+    { label: "FEE STRUCTURE", href: "/fees-structure" },
+    { label: "FEE REFUND POLICY", href: "/admissions/fee-refund-policy" },
+    { label: "SCHOLARSHIP POLICY", href: "/admissions/scholarship-policy-for-dental-college" },
+    { label: "PROSPECTUS", href: "/admissions/prospectus" },
+    { label: "EQUITABLE OPPORTUNITY FOR SEDG", href: "/admissions/equitable-opportunity-for-sedg-group" }
+  ]
+}</pre>
+
+      <div class="lab">File 2 — <span class="file">lib/navigationMenuLink.ts</span> (Admission block, around lines 279–285)</div>
+      <p class="tag-bad">CURRENT (replace the 404 "Admission Criterion in Others" line; add 3 new items)</p>
+      <pre class="bad">submenus: [
+  { href: '/admissions/prospectus', label: 'Prospectus', icon: BookMarked, active: pathname === '/admissions/prospectus' },
+  { href: '/admissions/admission-process-guidelines/admission-criterion-in-others', label: 'Admission Criterion in Others', icon: ListChecks, active: ... }, <span class="c">// 404</span>
+  { href: '/admissions/fee-refund-policy/ugc-fee-refund-policy', label: 'Fee Refund Policy', icon: RefreshCcw, active: pathname.includes('/fee-refund') },
+  { href: '/admissions/scholarship-policy-for-dental-college', label: 'Scholarship Policy', icon: Gift, active: ... },
+  { href: '/admissions/equitable-opportunity-for-sedg-group/equitable-opportunity-for-sedgs', label: 'SEDG Opportunity', icon: HandHeart, active: pathname.includes('/sedg') }
+]</pre>
+      <p class="tag-good">CHANGE TO</p>
+      <pre class="good">submenus: [
+  { href: '/admissions/bds', label: 'BDS Admission', icon: ListOrdered, active: pathname === '/admissions/bds' },
+  { href: '/admissions/mds', label: 'MDS Admission', icon: ListChecks, active: pathname === '/admissions/mds' },
+  { href: '/admission-process', label: 'Admission Process', icon: ListChecks, active: pathname === '/admission-process' },
+  { href: '/admissions/admission-criteria', label: 'Admission Criteria', icon: ListChecks, active: pathname === '/admissions/admission-criteria' },
+  { href: '/fees-structure', label: 'Fee Structure', icon: Receipt, active: pathname === '/fees-structure' },
+  { href: '/admissions/fee-refund-policy/ugc-fee-refund-policy', label: 'Fee Refund Policy', icon: RefreshCcw, active: pathname.includes('/fee-refund') },
+  { href: '/admissions/scholarship-policy-for-dental-college', label: 'Scholarship Policy', icon: Gift, active: pathname === '/admissions/scholarship-policy-for-dental-college' },
+  { href: '/admissions/prospectus', label: 'Prospectus', icon: BookMarked, active: pathname === '/admissions/prospectus' },
+  { href: '/admissions/equitable-opportunity-for-sedg-group/equitable-opportunity-for-sedgs', label: 'SEDG Opportunity', icon: HandHeart, active: pathname.includes('/sedg') }
+]</pre>
+      <p class="note"><strong>Note:</strong> <code>Receipt</code> &amp; <code>ListOrdered</code> icons already imported in this file. <strong>Test after:</strong> Header desktop mega-menu + BottomNav (mobile). Optionally add an external "Apply Now" item to <code>https://www.jkkn.ai/apply/jkkn-admission-2026</code>.</p>
+    </div>
+  </div>
+
+  <!-- ============ D2 ============ -->
+  <h2 class="sec" id="t2">D2 &bull; Fix /admissions/ canonical &amp; related URLs</h2>
+  <div class="task">
+    <div class="h"><div class="id">2</div><h3>Hub page self-canonical points to a 301-redirected URL</h3></div>
+    <div class="b">
+      <div class="meta"><span class="badge b-p1">P1</span><span class="chip eff">Effort: Low (&lt;1h)</span><span class="chip">Impact: High</span></div>
+      <div class="lab">File — <span class="file">app/admissions/page.tsx</span></div>
+      <p>Replace every <code>/admission/</code> (singular) with <code>/admissions/</code> (plural). <code>/admission/</code> is 301-redirected in <code>next.config.ts</code>, so the self-canonical is invalid.</p>
+      <pre class="bad"><span class="c">// Line 50  (openGraph.url)</span>
+url: 'https://dental.jkkn.ac.in/admission/',
+<span class="c">// Line 70  (alternates.canonical)</span>
+canonical: 'https://dental.jkkn.ac.in/admission/',
+<span class="c">// Line 464 (speakable url)</span>
+url: 'https://dental.jkkn.ac.in/admission/',
+<span class="c">// Line 473 (breadcrumb item)</span>
+{ name: 'Admission', url: 'https://dental.jkkn.ac.in/admission/' },</pre>
+      <p class="tag-good">CHANGE all four to</p>
+      <pre class="good">https://dental.jkkn.ac.in/admissions/</pre>
+
+      <div class="lab">Also — <span class="file">app/admissions/prospectus/page.tsx</span> (line 19)</div>
+      <pre class="bad">const breadcrumbSchema = generateBreadcrumbSchema('/admission/prospectus/');</pre>
+      <p class="tag-good">CHANGE TO</p>
+      <pre class="good">const breadcrumbSchema = generateBreadcrumbSchema('/admissions/prospectus/');</pre>
+    </div>
+  </div>
+
+  <!-- ============ D3 ============ -->
+  <h2 class="sec" id="t3">D3 &bull; Refresh /admission-process/ page</h2>
+  <div class="task">
+    <div class="h"><div class="id">3</div><h3>Stale 2025 dates, "9 MDS specializations" (real: 5), invalid schema value</h3></div>
+    <div class="b">
+      <div class="meta"><span class="badge b-p1">P1</span><span class="chip eff">Effort: Low (1h)</span><span class="chip">Impact: High</span></div>
+      <div class="lab">File — <span class="file">app/admission-process/page.tsx</span></div>
+
+      <p class="tag-bad">3a. Line 54 — FAQ answer factual error</p>
+      <pre class="bad">"...JKKN offers 9 MDS specializations."</pre>
+      <p class="tag-good">→ "...JKKN offers 5 MDS specializations." (9 is the department count; seats/specs = 5 per <code>collegeFacts.mdsSpecialisations</code>)</p>
+
+      <p class="tag-bad">3b. Lines 73–77 — invalid HowTo estimatedCost (string placeholder breaks structured data)</p>
+      <pre class="bad">"estimatedCost": {
+  "@type": "MonetaryAmount",
+  "currency": "INR",
+  "value": "[PLACEHOLDER – Contact admissions for current fee structure]"
+},</pre>
+      <p class="tag-good">→ Remove the whole <code>estimatedCost</code> block (or set a real numeric value once confirmed).</p>
+
+      <p class="tag-bad">3c. Line 162 — stale badge</p>
+      <pre class="bad">&lt;span ...&gt;Admissions Open 2025&lt;/span&gt;</pre>
+      <p class="tag-good">→ "Admissions Open 2026-27"</p>
+
+      <p class="tag-bad">3d. Lines 370 + 377–393 — "Important Dates 2025" table (May/Jun/Jul/Aug 2025)</p>
+      <p class="tag-good">→ Update heading to 2026 and align rows with the BDS page's <code>importantDates</code> array (single source) in <span class="file">app/admissions/bds/page.tsx</span> (NEET-UG May 2026, results Jun 2026, counselling Jul–Aug 2026, session begins Sep 2026).</p>
+    </div>
+  </div>
+
+  <!-- ============ D4 ============ -->
+  <h2 class="sec" id="t4">D4 &bull; On-site admission enquiry form</h2>
+  <div class="task">
+    <div class="h"><div class="id">4</div><h3>No lead capture anywhere — all CTAs leave the site</h3></div>
+    <div class="b">
+      <div class="meta"><span class="badge b-p1">P1</span><span class="chip eff h">Effort: High (3–4d)</span><span class="chip">Impact: Very High</span></div>
+      <p>Build a reusable client component and persist leads to Supabase (already configured in <span class="file">lib/supabase/</span>). Keep external Apply Now as secondary CTA.</p>
+      <ul class="steps">
+        <li><strong>Component:</strong> new <span class="file">components/AdmissionEnquiryForm.tsx</span> (<code>"use client"</code>). Fields: Name, Phone (required, 10-digit validate), Course (BDS / MDS select), City, NEET score (optional), Message (optional). Honeypot + basic rate-limit.</li>
+        <li><strong>Storage:</strong> Supabase table e.g. <code>admission_enquiries</code> (id, name, phone, course, city, neet_score, message, source_page, created_at). Insert via a server action / route handler <span class="file">app/api/admission-enquiry/route.ts</span> using the server client.</li>
+        <li><strong>Embed in:</strong> <span class="file">app/admissions/page.tsx</span>, <span class="file">app/admissions/bds/page.tsx</span>, <span class="file">app/admissions/mds/page.tsx</span>, and the "Apply Online" block in <span class="file">app/contact/page.tsx</span>. Pass <code>source_page</code> prop for attribution.</li>
+        <li><strong>UX:</strong> success state + WhatsApp fallback; brand colors (#006837 / #7cb983); min 44px touch targets; mobile-first.</li>
+        <li><strong>Needs confirmation before build:</strong> exact fields, whether to also email the admission team on submit, and the destination inbox (see D7 — <code>admissions@jkkn.ac.in</code>).</li>
+      </ul>
+      <p class="note">CLAUDE.md currently states "No CRM — leads managed manually" — a Supabase table is the minimal fix and unblocks follow-up during season.</p>
+    </div>
+  </div>
+
+  <!-- ============ D5 ============ -->
+  <h2 class="sec" id="t5">D5 &bull; Fix data inconsistencies (typo + PDF)</h2>
+  <div class="task">
+    <div class="h"><div class="id">5</div><h3>"Naan Phudulvan" vs "Naan Mudhalvan"; two different prospectus PDFs</h3></div>
+    <div class="b">
+      <div class="meta"><span class="badge b-p2">P2</span><span class="chip eff">Effort: Low (30m)</span><span class="chip">Impact: Medium</span></div>
+
+      <p class="tag-bad">5a. "Naan Phudulvan" → "Naan Mudhalvan" in these locations:</p>
+      <pre class="bad"><span class="c">app/admissions/scholarship-policy-for-dental-college/page.tsx</span>  ~line 290  "Naan Phudulvan Scholarship"
+<span class="c">app/admissions/page.tsx</span>                                    ~line 111  faqSchema: "...Naan Phudulvan ₹1,000/month"
+<span class="c">app/admissions/page.tsx</span>                                    ~line 931  on-page FAQ: "...Naan Phudulvan ₹1,000/month"</pre>
+      <p class="tag-good">→ "Naan Mudhalvan" everywhere (BDS page already uses the correct spelling — match it).</p>
+
+      <p class="tag-bad">5b. Prospectus PDF mismatch — two different files referenced</p>
+      <pre class="bad"><span class="c">app/admissions/page.tsx</span>  ~line 368  Prospectus card href: '/pdf/brochure.pdf'
+<span class="c">app/admissions/prospectus/page.tsx</span>  line 25  PdfRedirect pdfUrl="/pdf/Prospectus.pdf"</pre>
+      <p class="tag-good">→ Pick ONE canonical file (both exist in <code>public/pdf/</code>) and use it in both places. Recommend <code>/pdf/Prospectus.pdf</code> for the "Prospectus" label; keep <code>brochure.pdf</code> only if it is a separate brochure.</p>
+    </div>
+  </div>
+
+  <!-- ============ D6 ============ -->
+  <h2 class="sec" id="t6">D6 &bull; Remove unverifiable aggregateRating</h2>
+  <div class="task">
+    <div class="h"><div class="id">6</div><h3>Self-declared ratings with no reviews shown → structured-data penalty risk</h3></div>
+    <div class="b">
+      <div class="meta"><span class="badge b-p2">P2</span><span class="chip eff">Effort: Low (20m)</span><span class="chip">Impact: Medium (risk)</span></div>
+      <p>Course schema declares ratings but no reviews are rendered on the page (against Google policy). Remove the <code>aggregateRating</code> blocks (or only keep if you render real reviews on the same page).</p>
+      <pre class="bad"><span class="c">app/admissions/bds/page.tsx</span>  lines ~137–143  aggregateRating { ratingValue:'4.5', ratingCount:'120', reviewCount:'85' }
+<span class="c">app/admissions/mds/page.tsx</span>  lines ~134–140  aggregateRating { ratingValue:'4.5', ratingCount:'85',  reviewCount:'60' }</pre>
+      <p class="tag-good">→ Delete both <code>aggregateRating</code> objects from the Course schema (trailing comma cleanup).</p>
+    </div>
+  </div>
+
+  <!-- ============ D7 ============ -->
+  <h2 class="sec" id="t7">D7 &bull; Fix Contact map + surface admissions email</h2>
+  <div class="task">
+    <div class="h"><div class="id">7</div><h3>Map iframe uses placeholder coordinates; admissions@ not on admission pages</h3></div>
+    <div class="b">
+      <div class="meta"><span class="badge b-p2">P2</span><span class="chip eff">Effort: Low (30m)</span><span class="chip">Impact: Medium</span></div>
+
+      <p class="tag-bad">7a. <span class="file">app/contact/page.tsx</span> line ~202 — dummy coords</p>
+      <pre class="bad">src="https://www.google.com/maps/embed?pb=...!2d77.5654321!3d11.2345678...!4v1234567890123..."</pre>
+      <p class="tag-good">→ Replace with the real embed from the verified GBP (maps.app.goo.gl/mXx6rFRqpS9U76BK6 → "Share &rarr; Embed a map" → copy the genuine <code>pb=</code> src).</p>
+
+      <p class="tag-bad">7b. Admission pages only show <code>dental@jkkn.ac.in</code> in CTAs</p>
+      <p class="tag-good">→ Where a dedicated admissions inbox is wanted, surface <code>admissions@jkkn.ac.in</code> (already used on Contact page) in the CTA blocks of <span class="file">app/admissions/page.tsx</span>, <code>/bds/</code>, <code>/mds/</code>. Keep <code>collegeFacts.email</code> as the general fallback, or add an <code>admissionsEmail</code> field to <span class="file">data/collegeFacts.ts</span> for a single source.</p>
+    </div>
+  </div>
+
+  <!-- ============ D8 ============ -->
+  <h2 class="sec" id="t8">D8 &bull; Seat matrix + rebuild admission-criteria page</h2>
+  <div class="task">
+    <div class="h"><div class="id">8</div><h3>GQ 35 / MQ 65 hidden on a raw text page that also omits the 5th MDS spec</h3></div>
+    <div class="b">
+      <div class="meta"><span class="badge b-p2">P2</span><span class="chip eff m">Effort: Med (1d)</span><span class="chip">Impact: High</span></div>
+      <ul class="steps">
+        <li><strong>Add a seat-matrix card</strong> (BDS: Government 35 / Management 65) to <span class="file">app/admissions/bds/page.tsx</span> — reuse the existing card/grid styling.</li>
+        <li><strong>Rebuild</strong> <span class="file">app/admissions/admission-criteria/page.tsx</span>: replace the all-caps <code>&lt;p&gt;</code> text dump with styled components (cards/table) matching BDS/MDS pages.</li>
+        <li><strong>Add the missing 5th MDS specialization</strong> — current page lists only 4 (Prosthodontics, Conservative, Orthodontics, Periodontics); add <strong>Oral Medicine &amp; Radiology</strong>.</li>
+        <li><strong>Standardize naming</strong> to <code>collegeFacts.mdsSpecialisationsList</code> (e.g. "Prosthodontics Crown and Bridge", not "Prosthodontics &amp; Oral Implantology"). Fix in both the visible text and the FAQ schema on this page.</li>
+        <li><strong>Add inline breadcrumb UI</strong> (Home clickable only — per CLAUDE.md breadcrumb rule) to match other inner pages.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ============ D9 ============ -->
+  <h2 class="sec" id="t9">D9 &bull; Resolve process-page cannibalization</h2>
+  <div class="task">
+    <div class="h"><div class="id">9</div><h3>/admission-process/ vs /admissions/ vs /admission-criteria/ overlap same intent</h3></div>
+    <div class="b">
+      <div class="meta"><span class="badge b-p2">P2</span><span class="chip eff m">Effort: Med (0.5d)</span><span class="chip">Impact: Medium</span></div>
+      <p><strong>Decision needed (pick one):</strong></p>
+      <ul class="steps">
+        <li><strong>Option A — Consolidate:</strong> 301 <code>/admission-process/</code> → <code>/admissions/</code> by adding a redirect in <span class="file">next.config.ts</span> <code>redirects()</code>, then remove <span class="file">app/admission-process/page.tsx</span>. (Cleanest; but do D3 first or skip D3 if removing.)</li>
+        <li><strong>Option B — Differentiate:</strong> keep both but re-scope <code>/admission-process/</code> as a focused "step-by-step counselling guide", set its canonical to itself, and tightly cross-link the three pages. Make <code>/admissions/</code> the canonical hub.</li>
+      </ul>
+      <p class="note">Recommend Option A unless <code>/admission-process/</code> has meaningful GSC traffic worth preserving — confirm in Search Console before deciding.</p>
+    </div>
+  </div>
+
+  <!-- ============ D10 ============ -->
+  <h2 class="sec" id="t10">D10 &bull; Inline breadcrumb on /admissions/ hub</h2>
+  <div class="task">
+    <div class="h"><div class="id">10</div><h3>Hub page has breadcrumb schema but no visible breadcrumb UI</h3></div>
+    <div class="b">
+      <div class="meta"><span class="badge b-p3">P3</span><span class="chip eff">Effort: Low (0.5h)</span><span class="chip">Impact: Low–Med</span></div>
+      <p>Add the inline breadcrumb nav block to <span class="file">app/admissions/page.tsx</span> (right after <code>&lt;Header /&gt;</code>) — copy the exact pattern already used in <span class="file">app/admissions/bds/page.tsx</span> (lines ~536–550). Per CLAUDE.md: <strong>only "Home" is a link</strong>; all other items are plain <code>&lt;span&gt;</code>.</p>
+    </div>
+  </div>
+
+  <!-- ============ BLOCKED ============ -->
+  <h2 class="sec">Not in this handoff — needs data before coding</h2>
+  <div class="blocked">
+    <h3>These were P1/P2 in the audit but are blocked on admin/content input, not dev:</h3>
+    <ul class="steps">
+      <li><strong>NEET cutoff tables</strong> — need previous-year category-wise closing ranks/marks from the admission office before a dev can build the table.</li>
+      <li><strong>MDS spec-wise fee, stipend amount, NRI fee, loan/EMI details</strong> — need confirmed figures + partner-bank list from finance/admission.</li>
+      <li><strong>Awareness content</strong> (BDS-vs-MDS, ROI/salary, low-NEET-score path, testimonials copy) — content team to draft; dev embeds after.</li>
+    </ul>
+    <p class="note">Once you hand me the numbers/copy, these become straightforward dev tasks too.</p>
+  </div>
+
+  <!-- ============ SUMMARY ============ -->
+  <h2 class="sec">Build order (suggested)</h2>
+  <table class="sum">
+    <thead><tr><th>Order</th><th>Task</th><th>Priority</th><th>Effort</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>D2 — Canonical/URL fixes</td><td><span class="badge b-p1">P1</span></td><td>&lt;1h</td></tr>
+      <tr><td>2</td><td>D1 — Nav repair + add pages</td><td><span class="badge b-p1">P1</span></td><td>1–2h</td></tr>
+      <tr><td>3</td><td>D3 — Refresh admission-process</td><td><span class="badge b-p1">P1</span></td><td>1h</td></tr>
+      <tr><td>4</td><td>D5 + D6 + D7 — typo, rating, map</td><td><span class="badge b-p2">P2</span></td><td>~1.5h</td></tr>
+      <tr><td>5</td><td>D10 — hub breadcrumb</td><td><span class="badge b-p3">P3</span></td><td>0.5h</td></tr>
+      <tr><td>6</td><td>D8 — seat matrix + criteria rebuild</td><td><span class="badge b-p2">P2</span></td><td>1d</td></tr>
+      <tr><td>7</td><td>D9 — cannibalization (decide A/B)</td><td><span class="badge b-p2">P2</span></td><td>0.5d</td></tr>
+      <tr><td>8</td><td>D4 — enquiry form (biggest, needs spec)</td><td><span class="badge b-p1">P1</span></td><td>3–4d</td></tr>
+    </tbody>
+  </table>
+
+  <div class="footer">
+    <strong>Validation per task:</strong> <code>npm run build</code> (type-check) + <code>npm run lint</code>; manually test Header (desktop) + BottomNav (mobile) after D1; validate JSON-LD at validator.schema.org after D3/D6.<br><br>
+    <strong>No files were edited.</strong> Developer-actionable items only — awaiting approval. Line numbers are from the current working tree and may shift slightly after the first edit.
+  </div>
+
+</div>
+</body>
+</html>

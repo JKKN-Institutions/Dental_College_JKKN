@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admission Funnel Audit — JKKN Dental College (2026-27 Season)</title>
+<style>
+  :root{
+    --green:#006837; --green2:#7cb983; --dark:#002309; --cream:#FBFBEE;
+    --p1:#c0392b; --p2:#d68910; --p3:#2471a3; --good:#1e8449;
+    --line:#e6e6d8; --ink:#2b2b2b; --muted:#6b7280;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:#f4f4ec;line-height:1.6;}
+  .wrap{max-width:1100px;margin:0 auto;padding:0 20px 80px;}
+  header.top{background:linear-gradient(135deg,var(--green),var(--green2));color:#fff;padding:48px 20px;margin-bottom:32px;}
+  header.top .inner{max-width:1100px;margin:0 auto;}
+  header.top h1{margin:0 0 8px;font-size:30px;line-height:1.2;}
+  header.top p{margin:4px 0;opacity:.95;font-size:15px;}
+  .pill{display:inline-block;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.35);padding:4px 12px;border-radius:99px;font-size:12px;font-weight:600;margin-top:10px;margin-right:6px;}
+  h2.section{color:var(--green);border-bottom:3px solid var(--green2);padding-bottom:8px;margin-top:48px;font-size:23px;}
+  h3.sub{color:var(--dark);margin-top:28px;font-size:18px;}
+  .lead{background:#fff;border:1px solid var(--line);border-left:5px solid var(--green2);padding:16px 20px;border-radius:10px;margin:18px 0;}
+  .grid{display:grid;gap:16px;}
+  @media(min-width:760px){.grid.cols2{grid-template-columns:1fr 1fr;}}
+  .card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px 20px;box-shadow:0 1px 3px rgba(0,0,0,.04);}
+  .good-list{list-style:none;padding:0;margin:0;}
+  .good-list li{padding:8px 0 8px 30px;position:relative;border-bottom:1px dashed var(--line);}
+  .good-list li:last-child{border-bottom:none;}
+  .good-list li::before{content:"\2713";position:absolute;left:0;top:8px;color:var(--good);font-weight:bold;font-size:16px;}
+  .gap{background:#fff;border:1px solid var(--line);border-radius:12px;padding:0;margin:18px 0;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.05);}
+  .gap .head{display:flex;align-items:flex-start;gap:12px;padding:16px 20px;border-bottom:1px solid var(--line);}
+  .gap .head .num{flex:0 0 auto;width:34px;height:34px;border-radius:8px;color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center;font-size:14px;}
+  .gap .head h4{margin:0;font-size:17px;color:var(--dark);}
+  .gap .body{padding:6px 20px 18px;}
+  .gap .body p{margin:12px 0 4px;}
+  .lab{font-size:12px;text-transform:uppercase;letter-spacing:.05em;font-weight:700;color:var(--muted);}
+  .badge{display:inline-block;color:#fff;font-size:11px;font-weight:700;padding:3px 9px;border-radius:99px;letter-spacing:.03em;}
+  .b-p1{background:var(--p1)} .b-p2{background:var(--p2)} .b-p3{background:var(--p3)}
+  .num.p1{background:var(--p1)} .num.p2{background:var(--p2)} .num.p3{background:var(--p3)}
+  code{background:#f0f0e4;border:1px solid var(--line);border-radius:4px;padding:1px 6px;font-size:13px;color:#7a3b00;font-family:'Cascadia Code',Consolas,monospace;}
+  .file{color:var(--green);font-weight:600;}
+  table{width:100%;border-collapse:collapse;margin:20px 0;background:#fff;border-radius:10px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.05);font-size:14px;}
+  th,td{padding:11px 13px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top;}
+  thead th{background:var(--green);color:#fff;font-weight:600;}
+  tbody tr:nth-child(even){background:var(--cream);}
+  .tag{font-size:11px;font-weight:700;padding:2px 8px;border-radius:6px;white-space:nowrap;}
+  .t-p1{background:#fdecea;color:var(--p1)} .t-p2{background:#fdf3e3;color:var(--p2)} .t-p3{background:#e8f1fb;color:var(--p3)}
+  .t-lo{background:#e9f7ef;color:var(--good)} .t-md{background:#fef5e7;color:var(--p2)} .t-hi{background:#fdecea;color:var(--p1)}
+  .journey{display:grid;gap:10px;margin:18px 0;}
+  @media(min-width:760px){.journey{grid-template-columns:repeat(5,1fr);}}
+  .stage{background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px;text-align:center;}
+  .stage .st{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em;}
+  .stage .em{font-size:22px;display:block;margin:6px 0;}
+  .stage .verdict{font-size:12px;font-weight:700;margin-top:6px;}
+  .v-ok{color:var(--good)} .v-warn{color:var(--p2)} .v-bad{color:var(--p1)}
+  .note{font-size:13px;color:var(--muted);}
+  .qw{counter-reset:qw;list-style:none;padding:0;}
+  .qw li{background:#fff;border:1px solid var(--line);border-left:5px solid var(--green2);border-radius:10px;padding:14px 18px 14px 52px;margin:10px 0;position:relative;}
+  .qw li::before{counter-increment:qw;content:counter(qw);position:absolute;left:14px;top:14px;width:26px;height:26px;background:var(--green);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;}
+  .footer{margin-top:50px;padding:20px;background:var(--dark);color:#cfe3d3;border-radius:12px;font-size:13px;}
+  .legend{font-size:13px;margin:10px 0 0;}
+  .legend span{margin-right:14px;}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="inner">
+    <h1>Admission Funnel Audit — JKKN Dental College &amp; Hospital</h1>
+    <p>Prospective student + parent perspective &bull; Awareness &rarr; Eligibility &rarr; Fees &rarr; Apply &rarr; Contact</p>
+    <p>Site: dental.jkkn.ac.in &bull; Next.js 16 &bull; Audit date: 28 May 2026 &bull; Season: <strong>2026-27 admissions live</strong></p>
+    <span class="pill">Analysis only — no code edited</span>
+    <span class="pill">Approval venum before implementing</span>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <div class="lead">
+    <strong>Summary (Tanglish):</strong> Foundation strong-ah iruku — <code>/admissions/</code> hub, BDS &amp; MDS landing pages, scholarship + fee-refund + SEDG pages, schema (Course, FAQ, HowTo, Event), homepage admission section ellam already nalla cover aagiruku. Aana <strong>admission season-ku critical-ah irukura 4 vishayam miss / break aagiduchu</strong>: (1) on-site lead capture form <em>illave illa</em> — ellame external <code>jkkn.ai/apply</code> illa phone-ku pogudhu, (2) header navigation-la Admission menu-la <strong>BDS/MDS admission pages, Fee Structure, Apply Now ellam illa</strong> + 2 menu link <strong>404 pannudhu</strong>, (3) main <code>/admissions/</code> page-oda canonical thappu URL-ku point pannudhu (SEO leak), (4) <code>/admission-process/</code> page-la innum <strong>2025 dates</strong> + "9 MDS specializations" (correct: 5) + invalid schema iruku. Keezha priority order-la full breakdown.
+  </div>
+
+  <!-- ================= JOURNEY MAP ================= -->
+  <h2 class="section">Admission Journey — Stage-by-stage Verdict</h2>
+  <div class="journey">
+    <div class="stage"><div class="st">1. Awareness</div><span class="em">&#128270;</span><div>Why JKKN? Rankings, comparison, ROI</div><div class="verdict v-warn">PARTIAL</div></div>
+    <div class="stage"><div class="st">2. Eligibility</div><span class="em">&#9989;</span><div>NEET, marks, age, docs</div><div class="verdict v-ok">STRONG</div></div>
+    <div class="stage"><div class="st">3. Fees</div><span class="em">&#8377;</span><div>Tuition, hostel, loans, refund</div><div class="verdict v-warn">PARTIAL</div></div>
+    <div class="stage"><div class="st">4. Apply</div><span class="em">&#128221;</span><div>Lead capture &amp; application</div><div class="verdict v-bad">WEAK</div></div>
+    <div class="stage"><div class="st">5. Contact</div><span class="em">&#128222;</span><div>Call, email, visit, map</div><div class="verdict v-warn">PARTIAL</div></div>
+  </div>
+  <p class="note">Verdict: <strong>Eligibility</strong> stage romba nalla cover aagiruku. <strong>Apply</strong> stage thaan weakest — no low-friction lead form, broken nav links, orphaned landing pages. Awareness &amp; Fees stages-la content depth konjam korachal.</p>
+
+  <!-- ================= ALREADY GOOD ================= -->
+  <h2 class="section">1. Already Iruku (Good — keep &amp; protect)</h2>
+  <div class="grid cols2">
+    <div class="card">
+      <h3 class="sub" style="margin-top:0">Pages &amp; structure</h3>
+      <ul class="good-list">
+        <li>Dedicated <span class="file">/admissions/</span> hub page — programs, 5-step process, resources, careers, why-JKKN, FAQ, dual CTA.</li>
+        <li>High-quality <span class="file">/admissions/bds/</span> landing — eligibility (6 cards), process, documents checklist, fee table, important dates, careers, why-JKKN, 9 FAQs.</li>
+        <li>High-quality <span class="file">/admissions/mds/</span> landing — 5 specializations w/ seats, eligibility, docs, fee range, dates, careers, FAQs.</li>
+        <li><span class="file">/admissions/scholarship-policy-for-dental-college/</span> — full govt scholarship table (PMSS, First Graduate, etc.).</li>
+        <li>Compliance pages present: fee-refund-policy + UGC, SEDG equitable-opportunity + UGC guidelines.</li>
+        <li>Prospectus PDF download route + brochure PDF.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3 class="sub" style="margin-top:0">SEO / AEO / GEO &amp; conversion basics</h3>
+      <ul class="good-list">
+        <li>Rich schema on BDS/MDS: <code>Course</code>, <code>FAQPage</code>, <code>HowTo</code>, <code>Speakable</code>, <code>BreadcrumbList</code> + an admission <code>Event</code> (window 01 Mar–31 Aug 2026).</li>
+        <li>Keyword-targeted titles/descriptions ("BDS Admission 2026-27 Komarapalayam", NEET, fees, Namakkal).</li>
+        <li><code>collegeFacts.ts</code> single source of truth for seats (100 BDS / 18 MDS), so numbers stay consistent.</li>
+        <li>Homepage <span class="file">AdmissionsSection.tsx</span> (eligibility + process + BDS-vs-MDS table) and <span class="file">CTASection.tsx</span> ("Applications for 2026-27 now open").</li>
+        <li>Hero button "Online Admissions 2026-2027" + ticker "Admission Available".</li>
+        <li>FloatingWhatsApp + tel/email CTAs on every admission page; trust badges (DCI, NAAC, MGR Univ, Govt TN).</li>
+        <li>Strong 301 redirect coverage for old WordPress admission URLs (<code>/admission-form</code>, <code>/admission-criteria-bds-mds</code>, <code>/admissions/scholarship</code>, etc.).</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ================= GAPS ================= -->
+  <h2 class="section">2. Missing / Gaps (priority order)</h2>
+  <p class="legend">
+    <span><span class="badge b-p1">P1</span> Urgent — fix this season</span>
+    <span><span class="badge b-p2">P2</span> Important — soon</span>
+    <span><span class="badge b-p3">P3</span> Nice-to-have</span>
+  </p>
+
+  <!-- ===== P1 ===== -->
+  <h3 class="sub">P1 — Urgent for this admission season</h3>
+
+  <div class="gap">
+    <div class="head"><div class="num p1">1</div><h4>No on-site lead capture form — every CTA leaves the site or opens phone/email</h4></div>
+    <div class="body">
+      <span class="badge b-p1">P1</span>
+      <p class="lab">Enna miss aaguthu</p>
+      <p>There is <strong>no enquiry / "request a callback" form anywhere</strong> on the site. Every admission CTA is either <code>tel:+919345855001</code>, <code>mailto:</code>, or an external link to <code>https://www.jkkn.ai/apply/jkkn-admission-2026</code>. The Contact page (<span class="file">app/contact/page.tsx</span>) has phone/email cards and an external Apply button — but no form fields.</p>
+      <p class="lab">Yen important</p>
+      <p>During season, most visitors are <em>exploring</em>, not ready to formally apply on a third-party portal. A student/parent on mobile who wants "JKKN-la oru call back venum" has no low-friction option. External jump = drop-off + zero lead data captured = no follow-up by the admission team. This is the single biggest conversion leak in the funnel.</p>
+      <p class="lab">Epdi add pannanum</p>
+      <p>Create a small client component <span class="file">components/AdmissionEnquiryForm.tsx</span> (Name, Phone, Course interest BDS/MDS, City, optional NEET score) posting to a Supabase table (Supabase already wired via <span class="file">lib/supabase/</span>) or an API route. Embed it: (a) as a section on <span class="file">app/admissions/page.tsx</span> + <code>/admissions/bds/</code> + <code>/admissions/mds/</code>, (b) on <span class="file">app/contact/page.tsx</span> "Apply Online" block, (c) optionally as a sticky/slide-in during season. Keep the external Apply Now as the secondary CTA. (CLAUDE.md notes "No CRM — leads managed manually" — a DB table fixes exactly that.)</p>
+    </div>
+  </div>
+
+  <div class="gap">
+    <div class="head"><div class="num p1">2</div><h4>Header Admission menu has broken links + the best pages are not linked</h4></div>
+    <div class="body">
+      <span class="badge b-p1">P1</span>
+      <p class="lab">Enna miss aaguthu</p>
+      <p>Both nav definitions — <span class="file">data/content.ts</span> (lines ~175–189) and <span class="file">lib/navigationMenuLink.ts</span> (lines ~272–286) — point the Admission submenu to <code>/admissions/admission-process-guidelines</code> and <code>/admissions/admission-process-guidelines/admission-criterion-in-others</code>. <strong>Neither page exists</strong> (no such folder under <code>app/admissions/</code>) — these <strong>404</strong> when clicked. Meanwhile the crown-jewel pages — <code>/admissions/bds/</code>, <code>/admissions/mds/</code> (sitemap priority 0.95), <code>/fees-structure/</code>, the real <code>/admissions/admission-criteria/</code>, <code>/admission-process/</code>, and a direct <strong>Apply Now</strong> — are <strong>absent from the menu entirely</strong>.</p>
+      <p class="lab">Yen important</p>
+      <p>The highest-converting, highest-SEO admission pages are effectively orphaned from primary navigation — only reachable via resource cards on the hub or the sitemap. During season, a parent opening the menu sees a thin, partly-broken Admission list. 404s on a money menu hurt trust and crawl budget.</p>
+      <p class="lab">Epdi add pannanum</p>
+      <p>In <span class="file">data/content.ts</span> and <span class="file">lib/navigationMenuLink.ts</span>: remove/repoint the two <code>admission-process-guidelines</code> entries to the real <code>/admissions/admission-criteria/</code>, and add submenu items: <em>BDS Admission</em> (<code>/admissions/bds</code>), <em>MDS Admission</em> (<code>/admissions/mds</code>), <em>Fee Structure</em> (<code>/fees-structure</code>), <em>Admission Process</em> (<code>/admission-process</code>), and an <em>Apply Now</em> entry to the external portal. Re-test on Header (desktop mega-menu) and BottomNav (mobile).</p>
+    </div>
+  </div>
+
+  <div class="gap">
+    <div class="head"><div class="num p1">3</div><h4>Main /admissions/ page canonical (+ OG + speakable) points to a 301-redirected URL</h4></div>
+    <div class="body">
+      <span class="badge b-p1">P1</span>
+      <p class="lab">Enna miss aaguthu</p>
+      <p>In <span class="file">app/admissions/page.tsx</span>: <code>alternates.canonical</code>, <code>openGraph.url</code>, the speakable <code>url</code>, and the breadcrumb item all use <code>https://dental.jkkn.ac.in/admission/</code> (<strong>singular</strong>). But <span class="file">next.config.ts</span> 301-redirects <code>/admission &rarr; /admissions</code>. So the page's self-canonical points to a URL that immediately redirects.</p>
+      <p class="lab">Yen important</p>
+      <p>A canonical that resolves to a redirect is a conflicting signal — Google may ignore it, split equity, or pick its own canonical. On the most important admission hub page, that risks the page not ranking under its true URL for "JKKN dental admission".</p>
+      <p class="lab">Epdi fix pannanum</p>
+      <p>Change all four occurrences to <code>https://dental.jkkn.ac.in/admissions/</code>. (BDS/MDS sub-pages already use the correct plural — only the hub + <span class="file">app/admissions/prospectus/page.tsx</span> breadcrumb, which uses <code>/admission/prospectus/</code>, need fixing.)</p>
+    </div>
+  </div>
+
+  <div class="gap">
+    <div class="head"><div class="num p1">4</div><h4>/admission-process/ page is stale: 2025 dates, wrong spec count, invalid schema</h4></div>
+    <div class="body">
+      <span class="badge b-p1">P1</span>
+      <p class="lab">Enna miss aaguthu</p>
+      <p>In <span class="file">app/admission-process/page.tsx</span>: badge says "Admissions Open 2025"; "Important Dates 2025" table lists <strong>May/June/July/August 2025</strong>; FAQ schema claims <em>"JKKN offers 9 MDS specializations"</em> (correct is <strong>5</strong> — 9 is the department count); and the <code>HowTo.estimatedCost.value</code> is the literal string <code>"[PLACEHOLDER – Contact admissions for current fee structure]"</code> (invalid for a MonetaryAmount).</p>
+      <p class="lab">Yen important</p>
+      <p>This page ranks/served for "admission process" queries and is indexed. Last-year dates make the college look inactive during a live 2026-27 cycle; the "9 specializations" error is a factual contradiction AI engines (ChatGPT/Gemini/Perplexity) will surface; the placeholder cost can trigger invalid structured-data warnings in Search Console.</p>
+      <p class="lab">Epdi fix pannanum</p>
+      <p>Update copy to 2026-27, align the dates table with the BDS page's <code>importantDates</code> (single source), correct "9 &rarr; 5 specializations" in the FAQ schema, and either set a real numeric <code>estimatedCost</code> or remove that property. Also decide: this page overlaps heavily with <code>/admissions/</code> — see P2 #9 (consolidate vs differentiate).</p>
+    </div>
+  </div>
+
+  <!-- ===== P2 ===== -->
+  <h3 class="sub">P2 — Important (high search demand / trust)</h3>
+
+  <div class="gap">
+    <div class="head"><div class="num p2">5</div><h4>No NEET cutoff information anywhere — high-volume query left uncaptured</h4></div>
+    <div class="body">
+      <span class="badge b-p2">P2</span>
+      <p class="lab">Enna miss aaguthu</p>
+      <p>Every page defers NEET cutoff to "contact admissions" (e.g. BDS FAQ schema, admission-criteria FAQ). No indicative or previous-year cutoff/closing-rank table exists.</p>
+      <p class="lab">Yen important</p>
+      <p>"JKKN dental NEET cutoff", "BDS cutoff Tamil Nadu management quota" are among the most-searched admission queries. Competitors (CollegeDunia/Shiksha) capture this traffic. An on-page indicative table = big organic + AEO win and answers the #1 student question.</p>
+      <p class="lab">Epdi add pannanum</p>
+      <p>Add a "NEET Cutoff (Indicative)" section + table on <code>/admissions/bds/</code> and <code>/admissions/mds/</code> with category-wise previous-year closing ranks/marks (clearly labelled "indicative, varies yearly"), backed by <code>collegeFacts.ts</code>. Wrap in a small schema-friendly FAQ.</p>
+    </div>
+  </div>
+
+  <div class="gap">
+    <div class="head"><div class="num p2">6</div><h4>Fee transparency gaps — MDS range too wide, stipend/EMI/loan unstated</h4></div>
+    <div class="body">
+      <span class="badge b-p2">P2</span>
+      <p class="lab">Enna miss aaguthu</p>
+      <p>BDS fees are concrete (₹4.5L day-scholar / ₹5.5L with hostel, MQ). But MDS shows only "₹8L–₹15L / year — contact admissions", stipend is "as per norms" (no figure), NRI fee is "as per DCI norms", and "installment options available" has no detail. No education-loan / EMI guidance.</p>
+      <p class="lab">Yen important</p>
+      <p>Affordability is parents' #1 decision factor. Vague ranges create friction and push them to call competitors who publish clear numbers. Loan/EMI info is a known conversion accelerator for professional courses.</p>
+      <p class="lab">Epdi add pannanum</p>
+      <p>On <code>/admissions/mds/</code> add specialization-wise fee + a stated stipend figure; add an "Education Loan &amp; EMI" block (partner banks, indicative EMI) on <code>/fees-structure/</code> (<span class="file">app/fee-structure/page.tsx</span>) and link it from BDS/MDS fee sections.</p>
+    </div>
+  </div>
+
+  <div class="gap">
+    <div class="head"><div class="num p2">7</div><h4>Government vs Management seat split (35/65) buried on a low-quality page</h4></div>
+    <div class="body">
+      <span class="badge b-p2">P2</span>
+      <p class="lab">Enna miss aaguthu</p>
+      <p>The GQ 35 / MQ 65 BDS seat matrix exists only on <span class="file">app/admissions/admission-criteria/page.tsx</span> — which is a raw all-caps text dump, lists only <strong>4 MDS specializations</strong> (missing Oral Medicine &amp; Radiology), uses inconsistent naming ("Prosthodontics &amp; Oral Implantology"), has no inline breadcrumb UI, and isn't in the nav. The polished BDS page never states the GQ/MQ split.</p>
+      <p class="lab">Yen important</p>
+      <p>"How many management quota seats?" is a top question. The information is correct but hidden on the weakest page, while the strong page omits it.</p>
+      <p class="lab">Epdi fix pannanum</p>
+      <p>Add a clean GQ/MQ seat-matrix card to <code>/admissions/bds/</code> (and MDS). Rebuild <code>admission-criteria</code> with proper styled components, add the 5th MDS specialization, and standardize names to match <code>collegeFacts.mdsSpecialisationsList</code>.</p>
+    </div>
+  </div>
+
+  <div class="gap">
+    <div class="head"><div class="num p2">8</div><h4>Data inconsistencies across pages (typos + naming)</h4></div>
+    <div class="body">
+      <span class="badge b-p2">P2</span>
+      <p class="lab">Enna miss aaguthu</p>
+      <p>"<strong>Naan Phudulvan</strong>" (scholarship page + main <code>/admissions/</code> FAQ schema) vs the correct "<strong>Naan Mudhalvan</strong>" (used on BDS page) — same scheme spelled two ways. MDS specialization names differ between <code>admission-criteria</code> and the rest of the site. Prospectus link mismatch: hub card &rarr; <code>/pdf/brochure.pdf</code> but <code>/admissions/prospectus/</code> redirects to <code>/pdf/Prospectus.pdf</code> (two different files).</p>
+      <p class="lab">Yen important</p>
+      <p>AI search engines cross-check facts; contradictions reduce citation confidence and look careless to parents reading multiple pages.</p>
+      <p class="lab">Epdi fix pannanum</p>
+      <p>Fix "Phudulvan &rarr; Mudhalvan" everywhere; standardize specialization names from <code>collegeFacts</code>; decide one canonical prospectus PDF and use it in both places.</p>
+    </div>
+  </div>
+
+  <div class="gap">
+    <div class="head"><div class="num p2">9</div><h4>Content overlap / cannibalization: /admission-process/ vs /admissions/ vs /admission-criteria/</h4></div>
+    <div class="body">
+      <span class="badge b-p2">P2</span>
+      <p class="lab">Enna miss aaguthu</p>
+      <p>Three pages cover essentially the same "process + eligibility": the strong <code>/admissions/</code> hub, the stale <code>/admission-process/</code>, and the thin <code>/admissions/admission-criteria/</code>. All carry HowTo/FAQ on the same intent.</p>
+      <p class="lab">Yen important</p>
+      <p>Keyword cannibalization splits ranking signals for "admission process / criteria / eligibility" and dilutes which URL Google trusts.</p>
+      <p class="lab">Epdi fix pannanum</p>
+      <p>Pick <code>/admissions/</code> as the canonical hub. Either 301 <code>/admission-process/</code> into it, or refresh + clearly differentiate it (e.g. "step-by-step counselling guide") and cross-link tightly. Make <code>admission-criteria</code> the dedicated eligibility deep-page and interlink.</p>
+    </div>
+  </div>
+
+  <div class="gap">
+    <div class="head"><div class="num p2">10</div><h4>Self-declared aggregateRating without visible reviews (structured-data risk)</h4></div>
+    <div class="body">
+      <span class="badge b-p2">P2</span>
+      <p class="lab">Enna miss aaguthu</p>
+      <p>BDS Course schema has <code>aggregateRating 4.5 (120 ratings/85 reviews)</code> and MDS <code>4.5 (85/60)</code> — but no corresponding reviews are shown on the pages.</p>
+      <p class="lab">Yen important</p>
+      <p>Google's policy requires ratings to reflect content visible on the page; unverifiable ratings can trigger a structured-data manual action and loss of rich results — bad during season.</p>
+      <p class="lab">Epdi fix pannanum</p>
+      <p>Either surface real reviews/testimonials on the same page (link the existing <code>/testimonials/</code> data into the admission funnel) or remove <code>aggregateRating</code> until genuine review data is displayed.</p>
+    </div>
+  </div>
+
+  <div class="gap">
+    <div class="head"><div class="num p2">11</div><h4>Contact page Google Map uses placeholder coordinates</h4></div>
+    <div class="body">
+      <span class="badge b-p2">P2</span>
+      <p class="lab">Enna miss aaguthu</p>
+      <p>The map iframe in <span class="file">app/contact/page.tsx</span> uses dummy values (<code>!2d77.5654321!3d11.2345678 ... v1234567890123</code>) — not the real GBP embed. Pin likely shows the wrong spot. Also a dedicated <code>admissions@jkkn.ac.in</code> exists on the contact page but admission pages only show <code>dental@jkkn.ac.in</code>.</p>
+      <p class="lab">Yen important</p>
+      <p>Parents use the map to plan campus visits during counselling. A wrong pin = bad first impression + local-SEO mismatch with the verified GBP.</p>
+      <p class="lab">Epdi fix pannanum</p>
+      <p>Replace with the real embed from the verified GBP (maps.app.goo.gl/mXx6rFRqpS9U76BK6). Surface the dedicated admissions phone/email consistently across admission pages.</p>
+    </div>
+  </div>
+
+  <!-- ===== P3 ===== -->
+  <h3 class="sub">P3 — Nice-to-have (awareness depth / polish)</h3>
+
+  <div class="gap">
+    <div class="head"><div class="num p3">12</div><h4>Thin awareness-stage / consideration content</h4></div>
+    <div class="body">
+      <span class="badge b-p3">P3</span>
+      <p class="lab">Enna miss aaguthu</p>
+      <p>No decision-support content for early-stage seekers: "Is JKKN good for BDS?", "BDS vs MDS — which to choose", "career ROI / expected salary after BDS", "what to do with a low NEET score", or a JKKN-vs-other-colleges comparison. Testimonials and gallery/hostel visuals are not surfaced inside the admission funnel.</p>
+      <p class="lab">Yen important</p>
+      <p>These are exactly the questions AI engines (GEO) and PAA boxes (AEO) answer and cite. They pull top-funnel seekers and warm them before they reach Apply.</p>
+      <p class="lab">Epdi add pannanum</p>
+      <p>Add 2–3 consideration sections/FAQs to BDS/MDS pages and/or blog posts (the blog already has BDS/MDS guides — interlink them into the admission funnel). Embed a few testimonials + a campus/hostel image strip on the hub.</p>
+    </div>
+  </div>
+
+  <div class="gap">
+    <div class="head"><div class="num p3">13</div><h4>NRI / international &amp; "what happens after I apply" gaps</h4></div>
+    <div class="body">
+      <span class="badge b-p3">P3</span>
+      <p class="lab">Enna miss aaguthu</p>
+      <p>NRI/foreign fee &amp; process is only "contact admissions". No post-application clarity (timeline after submitting, who calls back, when). Main hub page lacks a visible inline breadcrumb UI (schema only).</p>
+      <p class="lab">Yen important</p>
+      <p>An International Student Cell committee exists — a small NRI info block adds reach. "What next after applying" reduces anxiety and abandoned applications.</p>
+      <p class="lab">Epdi add pannanum</p>
+      <p>Add a short NRI/international block (link the International Student Cell), a "what happens after you apply" mini-section, and an inline breadcrumb to the hub page for consistency with BDS/MDS.</p>
+    </div>
+  </div>
+
+  <!-- ================= QUICK WINS ================= -->
+  <h2 class="section">3. Quick Wins (1–2 days, low effort / high value)</h2>
+  <ul class="qw">
+    <li><strong>Fix the main hub canonical/OG/speakable URLs</strong> <code>/admission/ &rarr; /admissions/</code> in <span class="file">app/admissions/page.tsx</span> (+ prospectus breadcrumb). <span class="note">~30 min, P1.</span></li>
+    <li><strong>Repair + enrich the Admission nav menu</strong> in <span class="file">data/content.ts</span> &amp; <span class="file">lib/navigationMenuLink.ts</span> — remove the two 404 links, add BDS Admission, MDS Admission, Fee Structure, Apply Now. <span class="note">~1–2 hrs, P1.</span></li>
+    <li><strong>Refresh /admission-process/</strong>: 2025 &rarr; 2026-27 dates, fix "9 &rarr; 5 MDS specializations", remove placeholder <code>estimatedCost</code>. <span class="note">~1 hr, P1.</span></li>
+    <li><strong>Fix "Naan Phudulvan" &rarr; "Naan Mudhalvan"</strong> on scholarship page + hub FAQ schema; standardize MDS specialization names. <span class="note">~30 min, P2.</span></li>
+    <li><strong>Add the GQ 35 / MQ 65 seat-matrix card</strong> to <code>/admissions/bds/</code> (data already known). <span class="note">~1 hr, P2.</span></li>
+    <li><strong>Decide one prospectus PDF</strong> (brochure vs Prospectus) and use it consistently. <span class="note">~15 min, P2.</span></li>
+    <li><strong>Remove or justify aggregateRating</strong> on BDS/MDS Course schema to avoid a structured-data penalty. <span class="note">~20 min, P2.</span></li>
+  </ul>
+  <p class="note">The big-ticket items (lead capture form, NEET cutoff tables, fee/loan depth) are not quick wins — they need a few days and content/data input from the admission team.</p>
+
+  <!-- ================= RECOMMENDATIONS TABLE ================= -->
+  <h2 class="section">4. Recommendations Table</h2>
+  <table>
+    <thead>
+      <tr><th>#</th><th>Item</th><th>Priority</th><th>Effort</th><th>Impact</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>1</td><td>On-site lead capture / callback form (BDS, MDS, hub, contact) &rarr; Supabase</td><td><span class="tag t-p1">P1</span></td><td><span class="tag t-hi">High (3–4d)</span></td><td><span class="tag t-hi">Very High</span></td></tr>
+      <tr><td>2</td><td>Fix broken Admission nav links + add BDS/MDS/Fees/Apply Now</td><td><span class="tag t-p1">P1</span></td><td><span class="tag t-lo">Low (1–2h)</span></td><td><span class="tag t-hi">Very High</span></td></tr>
+      <tr><td>3</td><td>Fix /admissions/ canonical, OG, speakable, breadcrumb URLs</td><td><span class="tag t-p1">P1</span></td><td><span class="tag t-lo">Low (&lt;1h)</span></td><td><span class="tag t-md">High</span></td></tr>
+      <tr><td>4</td><td>Refresh /admission-process/ (2026 dates, 5 specs, valid schema)</td><td><span class="tag t-p1">P1</span></td><td><span class="tag t-lo">Low (1h)</span></td><td><span class="tag t-md">High</span></td></tr>
+      <tr><td>5</td><td>Add indicative NEET cutoff tables (BDS &amp; MDS)</td><td><span class="tag t-p2">P2</span></td><td><span class="tag t-md">Med (1–2d)</span></td><td><span class="tag t-hi">Very High</span></td></tr>
+      <tr><td>6</td><td>Fee transparency: MDS spec-wise fee, stipend, loan/EMI block</td><td><span class="tag t-p2">P2</span></td><td><span class="tag t-md">Med (1–2d)</span></td><td><span class="tag t-hi">Very High</span></td></tr>
+      <tr><td>7</td><td>Surface GQ/MQ seat matrix on strong pages; rebuild admission-criteria (+5th spec)</td><td><span class="tag t-p2">P2</span></td><td><span class="tag t-md">Med (1d)</span></td><td><span class="tag t-md">High</span></td></tr>
+      <tr><td>8</td><td>Fix data inconsistencies (Mudhalvan, spec names, prospectus PDF)</td><td><span class="tag t-p2">P2</span></td><td><span class="tag t-lo">Low (1h)</span></td><td><span class="tag t-md">Medium</span></td></tr>
+      <tr><td>9</td><td>Resolve cannibalization (canonical hub + 301/differentiate process page)</td><td><span class="tag t-p2">P2</span></td><td><span class="tag t-md">Med (0.5d)</span></td><td><span class="tag t-md">Medium</span></td></tr>
+      <tr><td>10</td><td>Remove/justify self-declared aggregateRating</td><td><span class="tag t-p2">P2</span></td><td><span class="tag t-lo">Low (20m)</span></td><td><span class="tag t-md">Medium (risk)</span></td></tr>
+      <tr><td>11</td><td>Fix Contact map coords; surface admissions@ email on admission pages</td><td><span class="tag t-p2">P2</span></td><td><span class="tag t-lo">Low (30m)</span></td><td><span class="tag t-md">Medium</span></td></tr>
+      <tr><td>12</td><td>Awareness content: BDS-vs-MDS, ROI, low-score path, testimonials in funnel</td><td><span class="tag t-p3">P3</span></td><td><span class="tag t-md">Med (1–2d)</span></td><td><span class="tag t-md">Medium</span></td></tr>
+      <tr><td>13</td><td>NRI/international block, "what next after apply", hub inline breadcrumb</td><td><span class="tag t-p3">P3</span></td><td><span class="tag t-lo">Low (0.5d)</span></td><td><span class="tag t-lo">Low–Med</span></td></tr>
+    </tbody>
+  </table>
+
+  <div class="footer">
+    <strong>Scope &amp; method:</strong> Read <code>app/admissions/*</code> (hub, bds, mds, admission-criteria, prospectus, scholarship), <code>app/admission-process/</code>, <code>app/contact/</code>, <code>app/fee-structure/</code> location, <code>data/content.ts</code>, <code>data/collegeFacts.ts</code>, <code>lib/navigationMenuLink.ts</code>, <code>app/sitemap.ts</code>, <code>next.config.ts</code>, <code>components/AdmissionsSection.tsx</code> &amp; <code>CTASection.tsx</code>, and <code>public/pdf/</code>. No live MCP/analytics data was pulled for this pass — cutoff/keyword priorities are best-practice estimates and can be validated against GSC/GA4 before build.<br><br>
+    <strong>No files were edited.</strong> This is analysis + recommendations only, awaiting your approval before implementation.
+  </div>
+
+</div>
+</body>
+</html>

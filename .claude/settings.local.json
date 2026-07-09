@@ -18,6 +18,7 @@
       "Bash(git init:*)",
       "Bash(git remote add:*)",
       "Bash(git add:*)",
+      "Bash(git push:*)",
       "mcp__firecrawl__firecrawl_scrape",
       "mcp__tavily__tavily_extract",
       "mcp__seo-search-console__list_verified_sites",
@@ -29,7 +30,13 @@
       "mcp__playwright__browser_take_screenshot",
       "mcp__serper__google_search",
       "mcp__website-auditor__audit_page",
-      "mcp__ai-citation-monitor__check_citation"
+      "mcp__ai-citation-monitor__check_citation",
+      "mcp__website-auditor__check_schema_markup",
+      "mcp__website-auditor__check_content",
+      "mcp__website-auditor__check_headings",
+      "mcp__website-auditor__check_robots_sitemap",
+      "mcp__seo-search-console__top_queries",
+      "mcp__seo-search-console__top_pages"
     ]
   }
 }
