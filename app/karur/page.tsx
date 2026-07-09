@@ -2,24 +2,24 @@ import Link from 'next/link';
 import { Hospital, Stethoscope, Microscope, TrendingUp, Users, Bus, Route, Train, Plane, Home, MapPin, BookOpen, Award, Wifi, GraduationCap, Target, Sparkles, Shield } from 'lucide-react';
 import { ScrollToTop } from '@/components/ScrollToTop';
 
-export default function ChennaiPage() {
+export default function KarurPage() {
 
   const faqs = [
     {
-      q: 'Why do students from Chennai choose JKKN Dental College?',
-      a: 'Chennai students choose JKKN Dental College & Hospital at Komarapalayam for its 200+ chair teaching hospital with 500+ daily patients, full residential campus with separate hostels, and the same DME Tamil Nadu counselling process as Chennai colleges. The campus is well connected — frequent daily trains run from Chennai to Erode Junction, 18 km from the college.',
+      q: 'Are there any dental colleges in Karur?',
+      a: 'Karur district has no dedicated dental college, so BDS and MDS aspirants from Karur travel to neighbouring districts. The nearest established DCI-approved option is JKKN Dental College & Hospital at Komarapalayam, Namakkal — approximately 75 km away via the Erode side. It offers BDS with 100 seats and MDS in 5 specialisations, affiliated to TN Dr. MGR Medical University, Chennai.',
     },
     {
-      q: 'How do Chennai students reach JKKN Dental College?',
-      a: 'The easiest route is by train: frequent daily express trains run from Chennai towards Coimbatore via Erode Junction, which is approximately 18 km from the campus. By road, the campus is approximately 380 km from Chennai via NH-544 through Salem — around 6.5 to 7 hours.',
+      q: 'Which is the best dental college near Karur?',
+      a: 'JKKN Dental College & Hospital at Komarapalayam is one of the most established DCI-approved dental colleges accessible from Karur. Founded in 1952, NAAC accredited and affiliated to The Tamil Nadu Dr. M.G.R. Medical University, it operates a 200+ chair teaching hospital treating 500+ patients daily.',
     },
     {
-      q: 'Is the admission process different from Chennai dental colleges?',
-      a: 'No. JKKN Dental College admits BDS students through the same NEET UG and DME Tamil Nadu state counselling process used for all Tamil Nadu dental colleges, including those in Chennai. Government Quota and Management Quota options are both available.',
+      q: 'How far is JKKN Dental College from Karur?',
+      a: 'JKKN Dental is approximately 75 km from Karur — around 1.5 to 2 hours by road via the Erode side. Direct trains also run from Karur Junction to Erode Junction, which is 18 km from the campus.',
     },
     {
-      q: 'Does JKKN Dental provide hostel for Chennai students?',
-      a: 'Yes. JKKN Dental provides separate hostels for boys and girls with mess facility on a full residential campus. Most learners from Chennai stay on campus through the term and travel home during holidays using the Chennai–Erode rail line.',
+      q: 'Can Karur students commute daily or should they stay in the hostel?',
+      a: 'Both options work. JKKN Dental provides separate hostels for boys and girls with mess facility, and many Karur learners stay on campus and travel home on weekends via bus or the Karur Junction–Erode Junction train line. Daily commute is possible but a hostel stay is more comfortable for the BDS workload.',
     },
     {
       q: 'What is the NEET cut-off for BDS at JKKN Dental?',
@@ -34,8 +34,8 @@ export default function ChennaiPage() {
       a: 'JKKN Dental offers MDS in five specialisations: Orthodontics & Dentofacial Orthopaedics, Prosthodontics & Crown and Bridge, Oral & Maxillofacial Surgery, Conservative Dentistry & Endodontics, and Periodontics. Each department has modern learning labs, and the attached hospital ensures ample clinical cases for postgraduate research and training.',
     },
     {
-      q: 'How can Chennai students apply for admission at JKKN Dental?',
-      a: 'Chennai learners can apply online at https://dental.jkkn.ac.in/ or visit the campus on NH-544 at Komarapalayam. Admissions for BDS and MDS 2026-27 are currently open. Call +91 9345855001 for personalised guidance on eligibility, fees, and the counselling process.',
+      q: 'How can Karur students apply for admission at JKKN Dental?',
+      a: 'Karur learners can apply online at https://dental.jkkn.ac.in/ or visit the campus on NH-544 at Komarapalayam. Admissions for BDS and MDS 2026-27 are currently open. Call +91 9345855001 for personalised guidance on eligibility, fees, and the counselling process.',
     },
     {
       q: 'What is the BDS fee at JKKN Dental College?',
@@ -45,11 +45,11 @@ export default function ChennaiPage() {
 
   const whyFeatures = [
     { icon: <Hospital className="w-6 h-6 text-[#006837]" />, title: 'Own Hospital', desc: 'DCI-approved dental college with attached hospital for hands-on clinical training' },
-    { icon: <Stethoscope className="w-6 h-6 text-[#006837]" />, title: 'High Patient Volume', desc: '500+ patients daily from surrounding districts — deep clinical exposure from Year 1' },
+    { icon: <Stethoscope className="w-6 h-6 text-[#006837]" />, title: 'Real Patient Exposure', desc: 'Own dental hospital on campus — learners get real patient exposure from Year 1' },
     { icon: <Microscope className="w-6 h-6 text-[#006837]" />, title: 'Advanced Learning Labs', desc: 'Advanced dental learning labs, simulation equipment, and digital dentistry training' },
-    { icon: <TrendingUp className="w-6 h-6 text-[#006837]" />, title: 'Same TN Counselling', desc: 'Same NEET UG + DME Tamil Nadu counselling process as Chennai colleges' },
-    { icon: <Users className="w-6 h-6 text-[#006837]" />, title: 'Focused Campus Life', desc: 'Full residential campus away from metro distractions — study-first environment' },
-    { icon: <Train className="w-6 h-6 text-[#006837]" />, title: 'Rail Connectivity', desc: 'Frequent daily trains from Chennai to Erode Junction — 18 km from campus' },
+    { icon: <TrendingUp className="w-6 h-6 text-[#006837]" />, title: 'NEET MDS Results', desc: 'Strong track record in NEET MDS results and higher education' },
+    { icon: <Users className="w-6 h-6 text-[#006837]" />, title: 'Community Service', desc: 'Hospital serves the community — builds trust and clinical experience' },
+    { icon: <Train className="w-6 h-6 text-[#006837]" />, title: 'Easy Connectivity', desc: 'Direct Karur Junction–Erode Junction trains; hostel or weekend travel — your choice' },
   ];
 
   const programmes = [
@@ -67,10 +67,10 @@ export default function ChennaiPage() {
   const companies = ['Clove Dental', 'Apollo Dental', 'MyDentist', 'Sabka Dentist', 'Apollo Hospitals', 'Fortis Healthcare', 'Manipal Hospitals', 'Govt. PHCs & District Hospitals'];
 
   const transportRows = [
-    { icon: <Train className="w-6 h-6 text-[#006837]" />, label: 'BY TRAIN (RECOMMENDED)', text: 'Frequent daily express trains from Chennai towards Coimbatore stop at Erode Junction — approximately 18 km from campus; buses and taxis cover the last stretch on NH-544' },
-    { icon: <Route className="w-6 h-6 text-[#006837]" />, label: 'BY ROAD', text: 'NH-544 via Salem — approximately 380 km from Chennai, around 6.5 to 7 hours' },
-    { icon: <Bus className="w-6 h-6 text-[#006837]" />, label: 'BY BUS', text: 'Overnight government and private buses run from Chennai (CMBT) towards Erode and Salem; get down at Komarapalayam or Erode' },
-    { icon: <Plane className="w-6 h-6 text-[#006837]" />, label: 'NEAREST AIRPORT', text: 'Coimbatore International Airport (Code: CJB) (~108 km from campus); Chennai International Airport (MAA) serves the Chennai side' },
+    { icon: <Route className="w-6 h-6 text-[#006837]" />, label: 'ROUTE', text: 'Karur to Erode by road (~65 km), then NH-544 to Komarapalayam (~18 km) — approximately 75 km total via the direct Kodumudi side' },
+    { icon: <Bus className="w-6 h-6 text-[#006837]" />, label: 'BY BUS', text: 'Regular government buses from Karur towards Erode; from Erode Central Bus Stand frequent buses reach Komarapalayam throughout the day' },
+    { icon: <Train className="w-6 h-6 text-[#006837]" />, label: 'BY TRAIN', text: 'Direct trains from Karur Junction to Erode Junction — Erode Junction is ~18 km from campus' },
+    { icon: <Plane className="w-6 h-6 text-[#006837]" />, label: 'NEAREST AIRPORT', text: 'Coimbatore International Airport (Code: CJB) (~108 km from campus); Trichy International Airport (TRZ) serves the Karur side' },
     { icon: <MapPin className="w-6 h-6 text-[#006837]" />, label: 'CAMPUS ADDRESS', text: 'JKKN Institutions, Natarajapuram, NH-544, Komarapalayam (TK), Namakkal (DT), Tamil Nadu - 638183' },
   ];
 
@@ -84,12 +84,10 @@ export default function ChennaiPage() {
   ];
 
   const cities = [
-    { icon: <Home className="w-6 h-6 text-[#006837]" />, name: 'Salem', dist: '~60 km', href: '/salem/' },
-    { icon: <Bus className="w-6 h-6 text-[#006837]" />, name: 'Trichy', dist: '~145 km', href: '/trichy/' },
-    { icon: <Target className="w-6 h-6 text-[#006837]" />, name: 'Erode', dist: '~18 km', href: '/erode/' },
+    { icon: <Home className="w-6 h-6 text-[#006837]" />, name: 'Erode', dist: '~18 km', href: '/erode/' },
+    { icon: <Bus className="w-6 h-6 text-[#006837]" />, name: 'Namakkal', dist: '~60 km', href: '/namakkal/' },
+    { icon: <Target className="w-6 h-6 text-[#006837]" />, name: 'Trichy', dist: '~145 km', href: '/trichy/' },
     { icon: <Sparkles className="w-6 h-6 text-[#006837]" />, name: 'Madurai', dist: '~215 km', href: '/madurai/' },
-    { icon: <Train className="w-6 h-6 text-[#006837]" />, name: 'Karur', dist: '~75 km', href: '/karur/' },
-    { icon: <MapPin className="w-6 h-6 text-[#006837]" />, name: 'Kerala', dist: 'Palakkad ~165 km', href: '/kerala/' },
   ];
 
   return (
@@ -102,7 +100,7 @@ export default function ChennaiPage() {
           <ol className="flex items-center gap-2 text-sm text-gray-500">
             <li><Link href="/" className="hover:text-[#006837] transition-colors">Home</Link></li>
             <li className="text-gray-300">/</li>
-            <li className="text-gray-900 font-medium">Dental College for Chennai Students</li>
+            <li className="text-gray-900 font-medium">Dental College near Karur</li>
           </ol>
         </div>
       </nav>
@@ -129,18 +127,18 @@ export default function ChennaiPage() {
           <Shield className="w-4 h-4" /> DCI, NAAC Approved • Admissions Open
         </div>
         <h1 className="text-white font-extrabold leading-tight mb-3 max-w-4xl" style={{ fontSize: 'clamp(2rem, 5vw + 0.5rem, 3.5rem)' }}>
-          Dental College for Students from <span className="text-[#7cb983]">Chennai</span>
+          Dental College near <span className="text-[#7cb983]">Karur</span>
         </h1>
-        <p className="text-white/60 text-sm font-medium tracking-wide mb-6">JKKN Dental College &amp; Hospital, Komarapalayam — DCI Approved, NAAC Accredited</p>
+        <p className="text-white/60 text-sm font-medium tracking-wide mb-6">Nearest DCI-Approved Dental College — JKKN Dental College &amp; Hospital, Komarapalayam</p>
         <p className="text-white/80 max-w-2xl mb-10 leading-relaxed" style={{ fontSize: 'clamp(0.9rem, 1vw + 0.5rem, 1.1rem)' }}>
-          Same NEET + DME Tamil Nadu counselling as Chennai colleges — with a 200+ chair teaching hospital, 500+ daily patients,
-          and a full residential campus. Frequent daily trains from Chennai stop at Erode Junction, 18 km from campus.
+          Karur district has no dental college — JKKN Dental College &amp; Hospital at Komarapalayam is the nearest established
+          option, approximately 75 km via Erode. BDS with 100 seats, MDS in 5 specialisations, and a 200+ chair teaching hospital.
         </p>
         <ul className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 mb-10 w-full max-w-2xl list-none p-0 m-0">
           {[
             { value: '92%+', label: 'PLACEMENTS' },
-            { value: '500+', label: 'DAILY PATIENTS' },
-            { value: '200+', label: 'DENTAL CHAIRS' },
+            { value: '8-10', label: 'LPA HIGHEST' },
+            { value: '~75km', label: 'FROM KARUR' },
             { value: '2', label: 'PROGRAMMES' },
           ].map((stat) => (
             <li key={stat.label} className="bg-white/10 backdrop-blur border border-white/20 rounded-2xl px-4 py-4 text-white">
@@ -171,25 +169,25 @@ export default function ChennaiPage() {
 
       {/* ── Speakable Summary (Voice Search Target) ── */}
       <div className="speakable-summary sr-only" id="speakable-intro">
-        JKKN Dental College and Hospital at Komarapalayam, Namakkal is a DCI-approved dental college chosen by students from Chennai for its two hundred plus chair teaching hospital and full residential campus. Admission follows the same NEET and DME Tamil Nadu counselling as Chennai colleges. Frequent daily trains connect Chennai to Erode Junction, eighteen kilometres from the campus.
+        JKKN Dental College and Hospital is the nearest established DCI-approved dental college to Karur, located approximately seventy-five kilometres away at Komarapalayam, Namakkal, via Erode. The college offers BDS with one hundred seats and MDS with five specialisations, affiliated to TN Dr. MGR Medical University.
       </div>
 
       {/* ── Snippet Answer Section (AEO Target) ── */}
-      <section className="bg-white py-12 px-4" id="dental-college-chennai-students">
+      <section className="bg-white py-12 px-4" id="dental-colleges-karur">
         <div className="max-w-3xl mx-auto">
           <h2 className="font-extrabold text-gray-900 mb-4" style={{ fontSize: 'clamp(1.4rem, 2.5vw + 0.5rem, 2rem)' }}>
-            Why Do Chennai Students Choose JKKN Dental College?
+            Are There Any Dental Colleges in Karur?
           </h2>
           <div className="snippet-answer voice-answer">
             <p className="text-gray-700 leading-relaxed mb-4" style={{ fontSize: 'clamp(0.95rem, 1vw + 0.4rem, 1.1rem)' }}>
-              Chennai has several dental colleges, but many families look beyond the metro for a residential campus, deep clinical exposure, and focused study. <strong>JKKN Dental College &amp; Hospital</strong> at Komarapalayam, Namakkal — founded in 1952 and affiliated to TN Dr. MGR Medical University, Chennai — offers BDS with 100 government-sanctioned seats and MDS in 5 specialisations, with a 200-chair teaching hospital treating 500+ patients daily drawn from surrounding districts.
+              Karur district has no dedicated dental college, so BDS and MDS aspirants from Karur look to neighbouring districts. The nearest established option is <strong>JKKN Dental College &amp; Hospital</strong> at Komarapalayam, Namakkal — approximately 75 km via Erode, with a direct Karur Junction–Erode Junction train line. Founded in 1952 and affiliated to TN Dr. MGR Medical University, Chennai, it offers BDS with 100 government-sanctioned seats and MDS in 5 specialisations, and operates a 200-chair teaching hospital treating 500+ patients daily.
             </p>
           </div>
-          <h3 className="font-bold text-gray-900 mb-3 text-lg">What Chennai Students Get at JKKN</h3>
+          <h3 className="font-bold text-gray-900 mb-3 text-lg">Why Karur Students Choose the Komarapalayam Side</h3>
           <ul className="list-disc list-inside space-y-2 text-gray-700 mb-4" style={{ fontSize: 'clamp(0.9rem, 1vw + 0.4rem, 1.05rem)' }}>
-            <li><strong>Same counselling</strong> — NEET UG + DME Tamil Nadu process, identical to Chennai colleges</li>
-            <li><strong>High patient volume</strong> — 500+ daily patients means more hands-on cases per learner</li>
-            <li><strong>Residential campus</strong> — separate hostels, mess, sports and WiFi; travel home by direct train</li>
+            <li>Closest full BDS + MDS campus to Karur district — approximately 1.5 to 2 hours door to door</li>
+            <li>Direct rail link — Karur Junction to Erode Junction, then 18 km to campus</li>
+            <li>Hostel or weekend-commute both practical at this distance</li>
           </ul>
           <p className="text-gray-500 text-sm">All DCI-approved dental colleges in Tamil Nadu admit students through NEET UG counselling conducted by DME Tamil Nadu.</p>
         </div>
@@ -201,11 +199,11 @@ export default function ChennaiPage() {
           <div className="bg-white rounded-2xl shadow-sm p-6 sm:p-8 flex flex-col sm:flex-row items-start sm:items-center gap-6 justify-between">
             <div className="flex items-start gap-5">
               <div className="text-[#006837] font-extrabold leading-none" style={{ fontSize: 'clamp(3rem, 6vw, 4rem)' }}>
-                380<span className="text-xl sm:text-2xl font-bold">km</span>
+                75<span className="text-xl sm:text-2xl font-bold">km</span>
               </div>
               <div>
-                <p className="font-bold text-gray-900 text-base sm:text-lg">From Chennai to JKKN Dental</p>
-                <p className="text-gray-500 text-sm mt-1">Direct trains to Erode Junction (18 km from campus) • 6.5–7 hours by road via NH-544</p>
+                <p className="font-bold text-gray-900 text-base sm:text-lg">From Karur to JKKN Dental</p>
+                <p className="text-gray-500 text-sm mt-1">1.5–2 hours via Erode • direct Karur Jn–Erode Jn trains</p>
               </div>
             </div>
             <a
@@ -224,10 +222,10 @@ export default function ChennaiPage() {
       <section className="bg-white py-16 px-4">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="font-extrabold text-gray-900 mb-4" style={{ fontSize: 'clamp(1.6rem, 3vw + 0.5rem, 2.4rem)' }}>
-            Why Chennai Learners Choose JKKN Dental
+            Why Karur Learners Choose JKKN Dental
           </h2>
           <p className="text-gray-500 max-w-3xl mx-auto mb-2 leading-relaxed" style={{ fontSize: 'clamp(0.875rem, 1vw + 0.4rem, 1.05rem)' }}>
-            For many Chennai families, the right dental college is about clinical depth and a focused campus — not the metro address. JKKN&apos;s teaching hospital draws patients from across the Kongu belt, giving learners the case variety that builds confident clinicians.
+            Karur&apos;s strong business families value professional education with practical outcomes. With no dental college in the district, JKKN at Komarapalayam is the closest full BDS + MDS campus — near enough for weekend travel, established enough for serious clinical training.
           </p>
           <p className="text-gray-400 max-w-3xl mx-auto mb-4 text-sm leading-relaxed">
             Founded in 1952, JKKN Dental College &amp; Hospital brings over 74 years of dental education excellence. Approved by the Dental Council of India (DCI) and affiliated to TN Dr. MGR Medical University, Chennai, the institution operates a 200+ chair teaching hospital treating 500+ patients daily.
@@ -249,7 +247,7 @@ export default function ChennaiPage() {
       <section className="bg-[#FBFBEE] py-16 px-4">
         <div className="max-w-5xl mx-auto text-center">
           <h2 className="font-extrabold text-gray-900 mb-3" style={{ fontSize: 'clamp(1.6rem, 3vw + 0.5rem, 2.4rem)' }}>
-            BDS and MDS Programs at JKKN Dental College
+            BDS and MDS Programs at JKKN Dental College Near Karur
           </h2>
           <p className="text-gray-500 text-base mb-4">Choose the right programme for your career goals</p>
           <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-12" />
@@ -297,17 +295,17 @@ export default function ChennaiPage() {
       <section className="bg-white py-16 px-4">
         <div className="max-w-3xl mx-auto">
           <h2 className="font-extrabold text-gray-900 mb-3 text-center" style={{ fontSize: 'clamp(1.6rem, 3vw + 0.5rem, 2.4rem)' }}>
-            BDS Admission 2026 — How to Apply from Chennai
+            BDS Admission 2026 — How to Apply from Karur
           </h2>
-          <p className="text-gray-500 text-base mb-4 text-center">Step-by-step admission process for Chennai learners</p>
+          <p className="text-gray-500 text-base mb-4 text-center">Step-by-step admission process for Karur learners</p>
           <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-10" />
           <ol className="space-y-4 list-none p-0 m-0">
             {[
               { step: 'Step 1', title: 'Qualify NEET UG 2026', desc: 'Secure minimum 50th percentile (General) or 40th percentile (Reserved) in NEET UG 2026.' },
-              { step: 'Step 2', title: 'Register for TN State Counselling', desc: 'Register on the DME Tamil Nadu portal for Government Quota seat allotment — the same portal used for Chennai colleges.' },
+              { step: 'Step 2', title: 'Register for TN State Counselling', desc: 'Register on the DME Tamil Nadu portal for Government Quota seat allotment.' },
               { step: 'Step 3', title: 'Apply for Management Quota (Optional)', desc: 'Contact JKKN Dental College directly at +91 9345855001 or apply via www.jkkn.ai/apply/jkkn-admission-2026.' },
               { step: 'Step 4', title: 'Document Verification', desc: 'Submit 10+2 marksheets, NEET scorecard, community certificate, and transfer certificate.' },
-              { step: 'Step 5', title: 'Confirm Admission', desc: 'Pay the first year fee and confirm your seat. Hostel registration available separately for learners from Chennai.' },
+              { step: 'Step 5', title: 'Confirm Admission', desc: 'Pay the first year fee and confirm your seat. Hostel registration available separately for learners from Karur.' },
             ].map((item) => (
               <li key={item.step} className="flex gap-4 items-start bg-[#FBFBEE] rounded-xl p-5">
                 <span className="bg-[#006837] text-white text-xs font-bold px-3 py-1.5 rounded-lg flex-shrink-0 mt-0.5">{item.step}</span>
@@ -360,16 +358,16 @@ export default function ChennaiPage() {
       <section className="bg-[#FBFBEE] py-16 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="font-extrabold text-gray-900 mb-3" style={{ fontSize: 'clamp(1.6rem, 3vw + 0.5rem, 2.4rem)' }}>
-            How Do Chennai Students Reach JKKN Dental College?
+            How Far Is JKKN Dental College from Karur?
           </h2>
-          <p className="snippet-answer text-gray-700 text-base mb-4">The easiest route from Chennai is by train — frequent daily expresses towards Coimbatore stop at Erode Junction, approximately 18 km from the campus. By road, JKKN Dental College is approximately 380 km from Chennai via NH-544 through Salem, a journey of 6.5 to 7 hours.</p>
+          <p className="snippet-answer text-gray-700 text-base mb-4">JKKN Dental College &amp; Hospital is approximately 75 km from Karur via the Erode side, a journey of approximately 1.5 to 2 hours by road. Direct trains from Karur Junction to Erode Junction bring you within 18 km of the campus.</p>
           <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-10" />
           <div className="bg-white rounded-2xl overflow-hidden shadow-sm text-left">
             <div className="bg-[#006837] text-white px-6 py-5 flex items-center gap-3">
               <MapPin className="w-6 h-6" />
               <div>
-                <p className="font-bold text-lg">Chennai → JKKN Dental Campus</p>
-                <p className="text-white/80 text-sm">~380 km by road • direct trains to Erode Junction (18 km from campus)</p>
+                <p className="font-bold text-lg">Karur → JKKN Dental Campus</p>
+                <p className="text-white/80 text-sm">~75 km • 1.5–2 hours via Erode</p>
               </div>
             </div>
             <ul className="list-none p-0 m-0">
@@ -415,17 +413,17 @@ export default function ChennaiPage() {
       </section>
 
       {/* ── Key Facts (AI Citation Target) ── */}
-      <section className="bg-white py-16 px-4" id="about-jkkn-chennai">
+      <section className="bg-white py-16 px-4" id="about-jkkn-karur">
         <div className="max-w-3xl mx-auto">
           <h2 className="font-extrabold text-gray-900 mb-3 text-center" style={{ fontSize: 'clamp(1.6rem, 3vw + 0.5rem, 2.4rem)' }}>
             JKKN Dental College &amp; Hospital — Key Facts
           </h2>
-          <p className="text-gray-500 text-base mb-4 text-center">Essential information for Chennai learners considering dental education</p>
+          <p className="text-gray-500 text-base mb-4 text-center">Essential information for Karur learners considering dental education</p>
           <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-10" />
           <dl className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {[
               { label: 'Location', value: 'Natarajapuram, NH-544, Komarapalayam, Namakkal, Tamil Nadu 638183' },
-              { label: 'From Chennai', value: '~380 km by road; direct trains to Erode Junction (18 km from campus)' },
+              { label: 'Distance from Karur', value: 'Approximately 75 km via Erode — 1.5–2 hours by road' },
               { label: 'Founded', value: '1952 (74+ years of educational excellence)' },
               { label: 'Programmes', value: 'BDS (100 seats) + MDS (5 specialisations)' },
               { label: 'Hospital', value: '200+ dental chairs, 100+ beds, 500+ patients daily' },
@@ -448,7 +446,7 @@ export default function ChennaiPage() {
           <h2 className="font-extrabold text-gray-900 mb-3" style={{ fontSize: 'clamp(1.6rem, 3vw + 0.5rem, 2.4rem)' }}>
             Frequently Asked Questions
           </h2>
-          <p className="text-gray-500 text-base mb-4">Common questions from Chennai learners considering JKKN Dental</p>
+          <p className="text-gray-500 text-base mb-4">Common questions about dental education options for Karur learners</p>
           <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-12" />
           <div className="text-left space-y-3">
             {faqs.map((faq, i) => (

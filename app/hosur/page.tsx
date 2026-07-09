@@ -88,6 +88,8 @@ export default function HosurPage() {
     { icon: <Bus className="w-6 h-6 text-[#006837]" />, name: 'Namakkal', dist: '~60 km', href: '/namakkal/' },
     { icon: <Target className="w-6 h-6 text-[#006837]" />, name: 'Erode', dist: '~18 km', href: '/erode/' },
     { icon: <Sparkles className="w-6 h-6 text-[#006837]" />, name: 'Chennai', dist: '~380 km', href: '/chennai/' },
+    { icon: <Train className="w-6 h-6 text-[#006837]" />, name: 'Karur', dist: '~75 km', href: '/karur/' },
+    { icon: <MapPin className="w-6 h-6 text-[#006837]" />, name: 'Kerala', dist: 'Palakkad ~165 km', href: '/kerala/' },
   ];
 
   return (

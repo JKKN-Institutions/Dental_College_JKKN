@@ -307,6 +307,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${baseUrl}/madurai/`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${baseUrl}/chennai/`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${baseUrl}/hosur/`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${baseUrl}/karur/`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${baseUrl}/kerala/`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
 
     // Facilities — additional
     { url: `${baseUrl}/facilities/`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },

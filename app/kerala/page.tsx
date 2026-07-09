@@ -2,28 +2,32 @@ import Link from 'next/link';
 import { Hospital, Stethoscope, Microscope, TrendingUp, Users, Bus, Route, Train, Plane, Home, MapPin, BookOpen, Award, Wifi, GraduationCap, Target, Sparkles, Shield } from 'lucide-react';
 import { ScrollToTop } from '@/components/ScrollToTop';
 
-export default function ChennaiPage() {
+export default function KeralaPage() {
 
   const faqs = [
     {
-      q: 'Why do students from Chennai choose JKKN Dental College?',
-      a: 'Chennai students choose JKKN Dental College & Hospital at Komarapalayam for its 200+ chair teaching hospital with 500+ daily patients, full residential campus with separate hostels, and the same DME Tamil Nadu counselling process as Chennai colleges. The campus is well connected — frequent daily trains run from Chennai to Erode Junction, 18 km from the college.',
+      q: 'Can Kerala students join BDS at JKKN Dental College in Tamil Nadu?',
+      a: 'Yes. Students from Kerala are admitted to JKKN Dental College & Hospital under the Management Quota with NEET UG qualification. The Government Quota seats are filled through DME Tamil Nadu state counselling for Tamil Nadu students, while Management Quota admission is open to students from Kerala and other states.',
     },
     {
-      q: 'How do Chennai students reach JKKN Dental College?',
-      a: 'The easiest route is by train: frequent daily express trains run from Chennai towards Coimbatore via Erode Junction, which is approximately 18 km from the campus. By road, the campus is approximately 380 km from Chennai via NH-544 through Salem — around 6.5 to 7 hours.',
+      q: 'How far is JKKN Dental College from Kerala?',
+      a: 'JKKN Dental College at Komarapalayam, Namakkal is approximately 165 km from Palakkad, approximately 240 km from Thrissur, and approximately 300 km from Kochi. Most Kerala–Chennai trains stop at Erode Junction, which is 18 km from the campus.',
     },
     {
-      q: 'Is the admission process different from Chennai dental colleges?',
-      a: 'No. JKKN Dental College admits BDS students through the same NEET UG and DME Tamil Nadu state counselling process used for all Tamil Nadu dental colleges, including those in Chennai. Government Quota and Management Quota options are both available.',
+      q: 'How do Kerala students travel to JKKN Dental College?',
+      a: 'The easiest route is by train — the Kerala–Chennai main rail line passes through Palakkad, Coimbatore and Tiruppur to Erode Junction, 18 km from the campus. By road, take NH-544 from Palakkad through Coimbatore towards Salem; Komarapalayam is on NH-544 itself.',
     },
     {
-      q: 'Does JKKN Dental provide hostel for Chennai students?',
-      a: 'Yes. JKKN Dental provides separate hostels for boys and girls with mess facility on a full residential campus. Most learners from Chennai stay on campus through the term and travel home during holidays using the Chennai–Erode rail line.',
+      q: 'Does JKKN Dental provide hostel for Kerala students?',
+      a: 'Yes. JKKN Dental provides separate hostels for boys and girls with mess facility on a full residential campus. Learners from Kerala stay on campus through the term and travel home during holidays on the Kerala–Chennai rail line via Erode Junction.',
     },
     {
-      q: 'What is the NEET cut-off for BDS at JKKN Dental?',
-      a: 'The NEET cut-off for BDS admission at JKKN Dental College & Hospital varies each year based on counselling rounds. Contact the admission office for the latest cut-off information and seat availability for the current admission cycle.',
+      q: 'Is BDS at JKKN taught in English?',
+      a: 'Yes. The BDS and MDS programmes at JKKN Dental College are taught in English, as in all DCI-approved dental colleges in India, so Kerala students face no language barrier in academics. The hospital’s patient base is largely Tamil-speaking, which learners pick up naturally during clinical years.',
+    },
+    {
+      q: 'Can students from Bengaluru and other states also apply?',
+      a: 'Yes. Students from Karnataka, including Bengaluru, and from other states are admitted under the Management Quota with NEET UG qualification — the same route as Kerala students. Call +91 9345855001 for seat availability.',
     },
     {
       q: 'Does JKKN Dental have its own hospital?',
@@ -34,12 +38,8 @@ export default function ChennaiPage() {
       a: 'JKKN Dental offers MDS in five specialisations: Orthodontics & Dentofacial Orthopaedics, Prosthodontics & Crown and Bridge, Oral & Maxillofacial Surgery, Conservative Dentistry & Endodontics, and Periodontics. Each department has modern learning labs, and the attached hospital ensures ample clinical cases for postgraduate research and training.',
     },
     {
-      q: 'How can Chennai students apply for admission at JKKN Dental?',
-      a: 'Chennai learners can apply online at https://dental.jkkn.ac.in/ or visit the campus on NH-544 at Komarapalayam. Admissions for BDS and MDS 2026-27 are currently open. Call +91 9345855001 for personalised guidance on eligibility, fees, and the counselling process.',
-    },
-    {
-      q: 'What is the BDS fee at JKKN Dental College?',
-      a: 'At JKKN Dental College & Hospital, BDS tuition fee is As Per Govt Norms under Government Quota and Rs. 4,50,000/year (Dayscholar with Instruments) or Rs. 5,50,000/year (With Hostel & Instruments) under Management Quota. Contact +91 9345855001 for the latest 2026-27 fee structure.',
+      q: 'What is the BDS fee for Kerala students at JKKN Dental College?',
+      a: 'Under the Management Quota, BDS tuition fee at JKKN Dental College & Hospital is Rs. 4,50,000/year (Dayscholar with Instruments) or Rs. 5,50,000/year (With Hostel & Instruments). Contact +91 9345855001 for the latest 2026-27 fee structure.',
     },
   ];
 
@@ -47,9 +47,9 @@ export default function ChennaiPage() {
     { icon: <Hospital className="w-6 h-6 text-[#006837]" />, title: 'Own Hospital', desc: 'DCI-approved dental college with attached hospital for hands-on clinical training' },
     { icon: <Stethoscope className="w-6 h-6 text-[#006837]" />, title: 'High Patient Volume', desc: '500+ patients daily from surrounding districts — deep clinical exposure from Year 1' },
     { icon: <Microscope className="w-6 h-6 text-[#006837]" />, title: 'Advanced Learning Labs', desc: 'Advanced dental learning labs, simulation equipment, and digital dentistry training' },
-    { icon: <TrendingUp className="w-6 h-6 text-[#006837]" />, title: 'Same TN Counselling', desc: 'Same NEET UG + DME Tamil Nadu counselling process as Chennai colleges' },
-    { icon: <Users className="w-6 h-6 text-[#006837]" />, title: 'Focused Campus Life', desc: 'Full residential campus away from metro distractions — study-first environment' },
-    { icon: <Train className="w-6 h-6 text-[#006837]" />, title: 'Rail Connectivity', desc: 'Frequent daily trains from Chennai to Erode Junction — 18 km from campus' },
+    { icon: <TrendingUp className="w-6 h-6 text-[#006837]" />, title: 'Management Quota Route', desc: 'NEET-qualified students from Kerala and other states join via Management Quota' },
+    { icon: <Train className="w-6 h-6 text-[#006837]" />, title: 'On the Kerala Rail Line', desc: 'Kerala–Chennai main-line trains stop at Erode Junction — 18 km from campus' },
+    { icon: <Home className="w-6 h-6 text-[#006837]" />, title: 'Residential Campus', desc: 'Separate boys and girls hostels with mess — a home away from home' },
   ];
 
   const programmes = [
@@ -67,10 +67,10 @@ export default function ChennaiPage() {
   const companies = ['Clove Dental', 'Apollo Dental', 'MyDentist', 'Sabka Dentist', 'Apollo Hospitals', 'Fortis Healthcare', 'Manipal Hospitals', 'Govt. PHCs & District Hospitals'];
 
   const transportRows = [
-    { icon: <Train className="w-6 h-6 text-[#006837]" />, label: 'BY TRAIN (RECOMMENDED)', text: 'Frequent daily express trains from Chennai towards Coimbatore stop at Erode Junction — approximately 18 km from campus; buses and taxis cover the last stretch on NH-544' },
-    { icon: <Route className="w-6 h-6 text-[#006837]" />, label: 'BY ROAD', text: 'NH-544 via Salem — approximately 380 km from Chennai, around 6.5 to 7 hours' },
-    { icon: <Bus className="w-6 h-6 text-[#006837]" />, label: 'BY BUS', text: 'Overnight government and private buses run from Chennai (CMBT) towards Erode and Salem; get down at Komarapalayam or Erode' },
-    { icon: <Plane className="w-6 h-6 text-[#006837]" />, label: 'NEAREST AIRPORT', text: 'Coimbatore International Airport (Code: CJB) (~108 km from campus); Chennai International Airport (MAA) serves the Chennai side' },
+    { icon: <Train className="w-6 h-6 text-[#006837]" />, label: 'BY TRAIN (RECOMMENDED)', text: 'Kerala–Chennai main-line trains from Kochi, Thrissur and Palakkad stop at Erode Junction — approximately 18 km from campus; buses and taxis cover the last stretch on NH-544' },
+    { icon: <Route className="w-6 h-6 text-[#006837]" />, label: 'BY ROAD', text: 'NH-544 from Palakkad via Coimbatore and Tiruppur towards Salem — the campus is on NH-544 at Komarapalayam (~165 km from Palakkad)' },
+    { icon: <Bus className="w-6 h-6 text-[#006837]" />, label: 'BY BUS', text: 'Interstate buses from Kerala towards Salem and Erode run on the NH-544 corridor; get down at Komarapalayam or Erode' },
+    { icon: <Plane className="w-6 h-6 text-[#006837]" />, label: 'NEAREST AIRPORT', text: 'Coimbatore International Airport (Code: CJB) (~108 km from campus) — direct flights and easy rail/road links to Kerala' },
     { icon: <MapPin className="w-6 h-6 text-[#006837]" />, label: 'CAMPUS ADDRESS', text: 'JKKN Institutions, Natarajapuram, NH-544, Komarapalayam (TK), Namakkal (DT), Tamil Nadu - 638183' },
   ];
 
@@ -84,12 +84,10 @@ export default function ChennaiPage() {
   ];
 
   const cities = [
-    { icon: <Home className="w-6 h-6 text-[#006837]" />, name: 'Salem', dist: '~60 km', href: '/salem/' },
-    { icon: <Bus className="w-6 h-6 text-[#006837]" />, name: 'Trichy', dist: '~145 km', href: '/trichy/' },
+    { icon: <Home className="w-6 h-6 text-[#006837]" />, name: 'Coimbatore', dist: '~108 km', href: '/coimbatore/' },
+    { icon: <Bus className="w-6 h-6 text-[#006837]" />, name: 'Tiruppur', dist: '~67 km', href: '/tiruppur/' },
     { icon: <Target className="w-6 h-6 text-[#006837]" />, name: 'Erode', dist: '~18 km', href: '/erode/' },
-    { icon: <Sparkles className="w-6 h-6 text-[#006837]" />, name: 'Madurai', dist: '~215 km', href: '/madurai/' },
-    { icon: <Train className="w-6 h-6 text-[#006837]" />, name: 'Karur', dist: '~75 km', href: '/karur/' },
-    { icon: <MapPin className="w-6 h-6 text-[#006837]" />, name: 'Kerala', dist: 'Palakkad ~165 km', href: '/kerala/' },
+    { icon: <Sparkles className="w-6 h-6 text-[#006837]" />, name: 'Chennai', dist: '~380 km', href: '/chennai/' },
   ];
 
   return (
@@ -102,7 +100,7 @@ export default function ChennaiPage() {
           <ol className="flex items-center gap-2 text-sm text-gray-500">
             <li><Link href="/" className="hover:text-[#006837] transition-colors">Home</Link></li>
             <li className="text-gray-300">/</li>
-            <li className="text-gray-900 font-medium">Dental College for Chennai Students</li>
+            <li className="text-gray-900 font-medium">Dental College for Kerala Students</li>
           </ol>
         </div>
       </nav>
@@ -129,18 +127,18 @@ export default function ChennaiPage() {
           <Shield className="w-4 h-4" /> DCI, NAAC Approved • Admissions Open
         </div>
         <h1 className="text-white font-extrabold leading-tight mb-3 max-w-4xl" style={{ fontSize: 'clamp(2rem, 5vw + 0.5rem, 3.5rem)' }}>
-          Dental College for Students from <span className="text-[#7cb983]">Chennai</span>
+          Dental College for Students from <span className="text-[#7cb983]">Kerala</span>
         </h1>
-        <p className="text-white/60 text-sm font-medium tracking-wide mb-6">JKKN Dental College &amp; Hospital, Komarapalayam — DCI Approved, NAAC Accredited</p>
+        <p className="text-white/60 text-sm font-medium tracking-wide mb-6">JKKN Dental College &amp; Hospital, Komarapalayam, Tamil Nadu — DCI Approved, NAAC Accredited</p>
         <p className="text-white/80 max-w-2xl mb-10 leading-relaxed" style={{ fontSize: 'clamp(0.9rem, 1vw + 0.5rem, 1.1rem)' }}>
-          Same NEET + DME Tamil Nadu counselling as Chennai colleges — with a 200+ chair teaching hospital, 500+ daily patients,
-          and a full residential campus. Frequent daily trains from Chennai stop at Erode Junction, 18 km from campus.
+          NEET-qualified students from Kerala join BDS and MDS at JKKN through the Management Quota. The campus sits just off the
+          Kerala–Chennai rail line (Erode Junction, 18 km) — approximately 165 km from Palakkad via NH-544.
         </p>
         <ul className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 mb-10 w-full max-w-2xl list-none p-0 m-0">
           {[
             { value: '92%+', label: 'PLACEMENTS' },
             { value: '500+', label: 'DAILY PATIENTS' },
-            { value: '200+', label: 'DENTAL CHAIRS' },
+            { value: '~165km', label: 'FROM PALAKKAD' },
             { value: '2', label: 'PROGRAMMES' },
           ].map((stat) => (
             <li key={stat.label} className="bg-white/10 backdrop-blur border border-white/20 rounded-2xl px-4 py-4 text-white">
@@ -171,27 +169,27 @@ export default function ChennaiPage() {
 
       {/* ── Speakable Summary (Voice Search Target) ── */}
       <div className="speakable-summary sr-only" id="speakable-intro">
-        JKKN Dental College and Hospital at Komarapalayam, Namakkal is a DCI-approved dental college chosen by students from Chennai for its two hundred plus chair teaching hospital and full residential campus. Admission follows the same NEET and DME Tamil Nadu counselling as Chennai colleges. Frequent daily trains connect Chennai to Erode Junction, eighteen kilometres from the campus.
+        JKKN Dental College and Hospital at Komarapalayam, Tamil Nadu admits NEET-qualified students from Kerala under the Management Quota for BDS and MDS. The campus is approximately one hundred and sixty-five kilometres from Palakkad, and Kerala to Chennai main-line trains stop at Erode Junction, eighteen kilometres from the campus.
       </div>
 
       {/* ── Snippet Answer Section (AEO Target) ── */}
-      <section className="bg-white py-12 px-4" id="dental-college-chennai-students">
+      <section className="bg-white py-12 px-4" id="dental-college-kerala-students">
         <div className="max-w-3xl mx-auto">
           <h2 className="font-extrabold text-gray-900 mb-4" style={{ fontSize: 'clamp(1.4rem, 2.5vw + 0.5rem, 2rem)' }}>
-            Why Do Chennai Students Choose JKKN Dental College?
+            Can Kerala Students Join BDS in Tamil Nadu?
           </h2>
           <div className="snippet-answer voice-answer">
             <p className="text-gray-700 leading-relaxed mb-4" style={{ fontSize: 'clamp(0.95rem, 1vw + 0.4rem, 1.1rem)' }}>
-              Chennai has several dental colleges, but many families look beyond the metro for a residential campus, deep clinical exposure, and focused study. <strong>JKKN Dental College &amp; Hospital</strong> at Komarapalayam, Namakkal — founded in 1952 and affiliated to TN Dr. MGR Medical University, Chennai — offers BDS with 100 government-sanctioned seats and MDS in 5 specialisations, with a 200-chair teaching hospital treating 500+ patients daily drawn from surrounding districts.
+              Yes — NEET-qualified students from Kerala join Tamil Nadu dental colleges through the <strong>Management Quota</strong>. <strong>JKKN Dental College &amp; Hospital</strong> at Komarapalayam — founded in 1952 and affiliated to TN Dr. MGR Medical University, Chennai — is a popular choice for the Palakkad–Thrissur–Kochi belt: the Kerala–Chennai main rail line stops at Erode Junction, 18 km from campus, and NH-544 runs from Palakkad practically to the college gate. BDS has 100 seats; MDS runs in 5 specialisations.
             </p>
           </div>
-          <h3 className="font-bold text-gray-900 mb-3 text-lg">What Chennai Students Get at JKKN</h3>
+          <h3 className="font-bold text-gray-900 mb-3 text-lg">What Kerala Students Get at JKKN</h3>
           <ul className="list-disc list-inside space-y-2 text-gray-700 mb-4" style={{ fontSize: 'clamp(0.9rem, 1vw + 0.4rem, 1.05rem)' }}>
-            <li><strong>Same counselling</strong> — NEET UG + DME Tamil Nadu process, identical to Chennai colleges</li>
-            <li><strong>High patient volume</strong> — 500+ daily patients means more hands-on cases per learner</li>
-            <li><strong>Residential campus</strong> — separate hostels, mess, sports and WiFi; travel home by direct train</li>
+            <li><strong>Straightforward admission</strong> — Management Quota with NEET UG; no state counselling needed</li>
+            <li><strong>English-medium academics</strong> — as in all DCI-approved colleges; no language barrier</li>
+            <li><strong>Easy travel home</strong> — Kerala–Chennai trains via Erode Junction; Coimbatore airport ~108 km</li>
           </ul>
-          <p className="text-gray-500 text-sm">All DCI-approved dental colleges in Tamil Nadu admit students through NEET UG counselling conducted by DME Tamil Nadu.</p>
+          <p className="text-gray-500 text-sm">Government Quota seats are filled through DME Tamil Nadu counselling for Tamil Nadu students; out-of-state students apply under the Management Quota.</p>
         </div>
       </section>
 
@@ -201,11 +199,11 @@ export default function ChennaiPage() {
           <div className="bg-white rounded-2xl shadow-sm p-6 sm:p-8 flex flex-col sm:flex-row items-start sm:items-center gap-6 justify-between">
             <div className="flex items-start gap-5">
               <div className="text-[#006837] font-extrabold leading-none" style={{ fontSize: 'clamp(3rem, 6vw, 4rem)' }}>
-                380<span className="text-xl sm:text-2xl font-bold">km</span>
+                165<span className="text-xl sm:text-2xl font-bold">km</span>
               </div>
               <div>
-                <p className="font-bold text-gray-900 text-base sm:text-lg">From Chennai to JKKN Dental</p>
-                <p className="text-gray-500 text-sm mt-1">Direct trains to Erode Junction (18 km from campus) • 6.5–7 hours by road via NH-544</p>
+                <p className="font-bold text-gray-900 text-base sm:text-lg">From Palakkad to JKKN Dental</p>
+                <p className="text-gray-500 text-sm mt-1">Via NH-544 through Coimbatore • Thrissur ~240 km • Kochi ~300 km</p>
               </div>
             </div>
             <a
@@ -224,10 +222,10 @@ export default function ChennaiPage() {
       <section className="bg-white py-16 px-4">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="font-extrabold text-gray-900 mb-4" style={{ fontSize: 'clamp(1.6rem, 3vw + 0.5rem, 2.4rem)' }}>
-            Why Chennai Learners Choose JKKN Dental
+            Why Kerala Learners Choose JKKN Dental
           </h2>
           <p className="text-gray-500 max-w-3xl mx-auto mb-2 leading-relaxed" style={{ fontSize: 'clamp(0.875rem, 1vw + 0.4rem, 1.05rem)' }}>
-            For many Chennai families, the right dental college is about clinical depth and a focused campus — not the metro address. JKKN&apos;s teaching hospital draws patients from across the Kongu belt, giving learners the case variety that builds confident clinicians.
+            Kerala families have long sent students to western Tamil Nadu for professional education — the rail line makes it practically next door. JKKN adds a 200+ chair teaching hospital, a full residential campus, and a clear Management Quota admission route for NEET-qualified students.
           </p>
           <p className="text-gray-400 max-w-3xl mx-auto mb-4 text-sm leading-relaxed">
             Founded in 1952, JKKN Dental College &amp; Hospital brings over 74 years of dental education excellence. Approved by the Dental Council of India (DCI) and affiliated to TN Dr. MGR Medical University, Chennai, the institution operates a 200+ chair teaching hospital treating 500+ patients daily.
@@ -297,17 +295,17 @@ export default function ChennaiPage() {
       <section className="bg-white py-16 px-4">
         <div className="max-w-3xl mx-auto">
           <h2 className="font-extrabold text-gray-900 mb-3 text-center" style={{ fontSize: 'clamp(1.6rem, 3vw + 0.5rem, 2.4rem)' }}>
-            BDS Admission 2026 — How to Apply from Chennai
+            BDS Admission 2026 — How to Apply from Kerala
           </h2>
-          <p className="text-gray-500 text-base mb-4 text-center">Step-by-step admission process for Chennai learners</p>
+          <p className="text-gray-500 text-base mb-4 text-center">Step-by-step Management Quota admission process for Kerala learners</p>
           <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-10" />
           <ol className="space-y-4 list-none p-0 m-0">
             {[
               { step: 'Step 1', title: 'Qualify NEET UG 2026', desc: 'Secure minimum 50th percentile (General) or 40th percentile (Reserved) in NEET UG 2026.' },
-              { step: 'Step 2', title: 'Register for TN State Counselling', desc: 'Register on the DME Tamil Nadu portal for Government Quota seat allotment — the same portal used for Chennai colleges.' },
-              { step: 'Step 3', title: 'Apply for Management Quota (Optional)', desc: 'Contact JKKN Dental College directly at +91 9345855001 or apply via www.jkkn.ai/apply/jkkn-admission-2026.' },
-              { step: 'Step 4', title: 'Document Verification', desc: 'Submit 10+2 marksheets, NEET scorecard, community certificate, and transfer certificate.' },
-              { step: 'Step 5', title: 'Confirm Admission', desc: 'Pay the first year fee and confirm your seat. Hostel registration available separately for learners from Chennai.' },
+              { step: 'Step 2', title: 'Contact the Admission Office', desc: 'Kerala and other out-of-state students apply under the Management Quota — call +91 9345855001 or apply via www.jkkn.ai/apply/jkkn-admission-2026.' },
+              { step: 'Step 3', title: 'Document Verification', desc: 'Submit 10+2 marksheets, NEET scorecard, transfer certificate, and ID proof.' },
+              { step: 'Step 4', title: 'Confirm Admission', desc: 'Pay the first year fee and confirm your seat.' },
+              { step: 'Step 5', title: 'Hostel Registration', desc: 'Register for the hostel — separate blocks for boys and girls with mess facility.' },
             ].map((item) => (
               <li key={item.step} className="flex gap-4 items-start bg-[#FBFBEE] rounded-xl p-5">
                 <span className="bg-[#006837] text-white text-xs font-bold px-3 py-1.5 rounded-lg flex-shrink-0 mt-0.5">{item.step}</span>
@@ -345,7 +343,7 @@ export default function ChennaiPage() {
           <ul className="text-left max-w-xl mx-auto space-y-2 mb-8 list-none p-0">
             <li className="flex items-start gap-2 text-sm text-gray-600"><span className="text-[#7cb983] font-bold mt-0.5">✓</span> International placement destinations: UK (NHS), UAE, Saudi Arabia, Singapore</li>
             <li className="flex items-start gap-2 text-sm text-gray-600"><span className="text-[#7cb983] font-bold mt-0.5">✓</span> Recruiters include Apollo Hospitals, Clove Dental, Fortis Healthcare, and 15+ partners</li>
-            <li className="flex items-start gap-2 text-sm text-gray-600"><span className="text-[#7cb983] font-bold mt-0.5">✓</span> Dedicated TNPSC coaching for government dental officer exams</li>
+            <li className="flex items-start gap-2 text-sm text-gray-600"><span className="text-[#7cb983] font-bold mt-0.5">✓</span> Gulf placements are a natural fit for Kerala graduates — UAE and Saudi recruiters visit</li>
           </ul>
           <p className="text-xs font-semibold tracking-widest text-gray-400 mb-5 uppercase">Companies That Hire From Us</p>
           <ul className="flex flex-wrap justify-center gap-3 list-none p-0 m-0">
@@ -360,16 +358,16 @@ export default function ChennaiPage() {
       <section className="bg-[#FBFBEE] py-16 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="font-extrabold text-gray-900 mb-3" style={{ fontSize: 'clamp(1.6rem, 3vw + 0.5rem, 2.4rem)' }}>
-            How Do Chennai Students Reach JKKN Dental College?
+            How Do Kerala Students Reach JKKN Dental College?
           </h2>
-          <p className="snippet-answer text-gray-700 text-base mb-4">The easiest route from Chennai is by train — frequent daily expresses towards Coimbatore stop at Erode Junction, approximately 18 km from the campus. By road, JKKN Dental College is approximately 380 km from Chennai via NH-544 through Salem, a journey of 6.5 to 7 hours.</p>
+          <p className="snippet-answer text-gray-700 text-base mb-4">The Kerala–Chennai main rail line passes through Palakkad, Coimbatore and Tiruppur to Erode Junction, approximately 18 km from the campus. By road, NH-544 runs from Palakkad through Coimbatore towards Salem — the campus sits on NH-544 at Komarapalayam, approximately 165 km from Palakkad.</p>
           <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-10" />
           <div className="bg-white rounded-2xl overflow-hidden shadow-sm text-left">
             <div className="bg-[#006837] text-white px-6 py-5 flex items-center gap-3">
               <MapPin className="w-6 h-6" />
               <div>
-                <p className="font-bold text-lg">Chennai → JKKN Dental Campus</p>
-                <p className="text-white/80 text-sm">~380 km by road • direct trains to Erode Junction (18 km from campus)</p>
+                <p className="font-bold text-lg">Kerala → JKKN Dental Campus</p>
+                <p className="text-white/80 text-sm">Palakkad ~165 km • Thrissur ~240 km • Kochi ~300 km • trains via Erode Jn</p>
               </div>
             </div>
             <ul className="list-none p-0 m-0">
@@ -415,22 +413,22 @@ export default function ChennaiPage() {
       </section>
 
       {/* ── Key Facts (AI Citation Target) ── */}
-      <section className="bg-white py-16 px-4" id="about-jkkn-chennai">
+      <section className="bg-white py-16 px-4" id="about-jkkn-kerala">
         <div className="max-w-3xl mx-auto">
           <h2 className="font-extrabold text-gray-900 mb-3 text-center" style={{ fontSize: 'clamp(1.6rem, 3vw + 0.5rem, 2.4rem)' }}>
             JKKN Dental College &amp; Hospital — Key Facts
           </h2>
-          <p className="text-gray-500 text-base mb-4 text-center">Essential information for Chennai learners considering dental education</p>
+          <p className="text-gray-500 text-base mb-4 text-center">Essential information for Kerala learners considering dental education in Tamil Nadu</p>
           <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-10" />
           <dl className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {[
               { label: 'Location', value: 'Natarajapuram, NH-544, Komarapalayam, Namakkal, Tamil Nadu 638183' },
-              { label: 'From Chennai', value: '~380 km by road; direct trains to Erode Junction (18 km from campus)' },
+              { label: 'From Kerala', value: 'Palakkad ~165 km via NH-544; Kerala–Chennai trains stop at Erode Jn (18 km)' },
               { label: 'Founded', value: '1952 (74+ years of educational excellence)' },
               { label: 'Programmes', value: 'BDS (100 seats) + MDS (5 specialisations)' },
+              { label: 'Admission for Kerala students', value: 'Management Quota with NEET UG qualification' },
               { label: 'Hospital', value: '200+ dental chairs, 100+ beds, 500+ patients daily' },
-              { label: 'Approval', value: 'Dental Council of India (DCI)' },
-              { label: 'Affiliation', value: 'TN Dr. MGR Medical University, Chennai' },
+              { label: 'Approval', value: 'DCI approved | TN Dr. MGR Medical University, Chennai' },
               { label: 'Contact', value: '+91 9345855001 | info@jkkn.ac.in' },
             ].map((item) => (
               <div key={item.label} className="bg-[#FBFBEE] rounded-xl p-4 border border-gray-100">
@@ -448,7 +446,7 @@ export default function ChennaiPage() {
           <h2 className="font-extrabold text-gray-900 mb-3" style={{ fontSize: 'clamp(1.6rem, 3vw + 0.5rem, 2.4rem)' }}>
             Frequently Asked Questions
           </h2>
-          <p className="text-gray-500 text-base mb-4">Common questions from Chennai learners considering JKKN Dental</p>
+          <p className="text-gray-500 text-base mb-4">Common questions from Kerala learners considering JKKN Dental</p>
           <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-12" />
           <div className="text-left space-y-3">
             {faqs.map((faq, i) => (
