@@ -100,6 +100,10 @@ export default function CoimbatorePage() {
     { icon: <Bus className="w-6 h-6 text-[#006837]" />, name: 'Salem', dist: '~60 km', href: '/salem/' },
     { icon: <Route className="w-6 h-6 text-[#006837]" />, name: 'Erode', dist: '~18 km', href: '/erode/' },
     { icon: <Target className="w-6 h-6 text-[#006837]" />, name: 'Tiruppur', dist: '~67 km', href: '/tiruppur/' },
+    { icon: <Train className="w-6 h-6 text-[#006837]" />, name: 'Trichy', dist: '~145 km', href: '/trichy/' },
+    { icon: <MapPin className="w-6 h-6 text-[#006837]" />, name: 'Madurai', dist: '~215 km', href: '/madurai/' },
+    { icon: <Plane className="w-6 h-6 text-[#006837]" />, name: 'Chennai', dist: '~380 km', href: '/chennai/' },
+    { icon: <Wifi className="w-6 h-6 text-[#006837]" />, name: 'Hosur', dist: '~245 km', href: '/hosur/' },
   ];
 
   const keyFacts = [
