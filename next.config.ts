@@ -215,10 +215,10 @@ const nextConfig: NextConfig = {
       { source: '/gallery-:slug', destination: '/gallery', permanent: true },
 
       // WordPress legacy patterns (wildcard) → homepage
-      { source: '/category/:path*', destination: '/', permanent: true },
+      // NOTE: /category/, /tag/, /author/ are handled in middleware.ts instead —
+      // config redirects run BEFORE middleware, and spam taxonomies like
+      // /category/omegle-cc/ must reach the middleware to get a 410 Gone.
       { source: '/web-stories/:path*', destination: '/', permanent: true },
-      { source: '/tag/:path*', destination: '/', permanent: true },
-      { source: '/author/:path*', destination: '/', permanent: true },
       { source: '/index.php/:path*', destination: '/', permanent: true },
       { source: '/wp-content/:path*', destination: '/', permanent: true },
 

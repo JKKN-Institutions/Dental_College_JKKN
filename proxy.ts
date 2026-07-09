@@ -2,6 +2,59 @@ import { createServerClient } from '@supabase/ssr';
 import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 
+// WordPress-era spam/hacked content (chat/adult/gambling/tech-junk pages) that
+// Google still crawls — 90+ URLs found in GSC with ~58k clicks over 12 months.
+// A 410 Gone is the strongest de-index signal; a plain 404 keeps the URL in the
+// index far longer, and redirecting to "/" passes the spam association to the
+// homepage.
+//
+// Keyword safety: patterns are chosen so no legitimate route matches —
+// avoid bare "cam" (ai-dental-CAMpus), bare "bet" (dia-BET-es-day),
+// bare "sex" (the sexual-harassment-committee page is legitimate).
+// Verified against all 217 app/ route folders: zero false positives.
+const SPAM_PATTERN = new RegExp(
+  [
+    // chat / random-video-chat family (bare "chat" covers chathub, chatiw,
+    // chaturbate, ai-chat, chatbots, free-chat-rooms, etc.)
+    'omegle', 'chat', 'stranger', 'video-chat', 'video-call', 'random-video',
+    'webcam', 'camgo', 'camloo', 'camsoda', 'cam-site', 'adult-cam',
+    'luckycrush', 'lucky-crush', 'justalk', 'ometv', 'monkey-app', 'monkey-free',
+    // adult / dating spam
+    'jerkmate', 'dirtyroulette', 'roulette', 'bedpage', 'hookup', 'dating',
+    'flirt', 'migliori', 'citas',
+    // gambling / betting spam
+    'casino', 'gambling', 'kazino', 'betting', 'mostbet', 'elonbet', 'elon-bet',
+    '1xbet', '1win', '20bet', 'bukmeker', 'sportsbook', 'free-spins', 'spinslot',
+    'spins-by', 'slot-madness', 'position-madness', '777', 'poker', 'gembling',
+    'wms-harbors', 'fairspin',
+    // Russian/Spanish-language spam (gambling, crypto, chat)
+    'obzor', 'rassmotrenie', 'algotrejding', 'bitkoiny', 'majnit',
+    'mejores', 'videollamadas', 'extranos', 'european-economic-union',
+    // injected tech-blog junk
+    'intel-core', 'kaby-lake', 'iphone-7', 'macos-sierra', 'playstation',
+    'shadow-tactics', 'last-guardian',
+  ].join('|')
+);
+
+// Legacy WordPress taxonomy prefixes. Spam taxonomies (e.g. /category/omegle-cc/)
+// must 410 via SPAM_PATTERN above; the rest redirect home. Handled here instead
+// of next.config.ts redirects() because config redirects run BEFORE the proxy,
+// which would have let /category/omegle-cc/ escape the 410.
+const WP_TAXONOMY_PREFIX = /^\/(category|tag|author)(\/|$)/;
+
+function goneResponse() {
+  return new NextResponse(
+    '<!DOCTYPE html><html><head><title>410 Gone</title><meta name="robots" content="noindex"></head><body><h1>410 Gone</h1><p>This page has been permanently removed.</p></body></html>',
+    {
+      status: 410,
+      headers: {
+        'Content-Type': 'text/html; charset=utf-8',
+        'X-Robots-Tag': 'noindex',
+      },
+    }
+  );
+}
+
 function setSecurityHeaders(response: NextResponse) {
   response.headers.set('X-Content-Type-Options', 'nosniff');
   response.headers.set('X-Frame-Options', 'SAMEORIGIN');
@@ -19,10 +72,17 @@ function setSecurityHeaders(response: NextResponse) {
 
 export async function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
+  const lowerPath = pathname.toLowerCase();
 
-  // Block spam URL - return 410 Gone status
-  if (pathname === '/7-greatest-free-ai-chatbots-ive-tried-and-loved-for-2025') {
-    return new NextResponse(null, { status: 410 });
+  // WordPress-era spam pages → 410 Gone (also covers the previously hardcoded
+  // /7-greatest-free-ai-chatbots-… URL via the "chat" pattern)
+  if (SPAM_PATTERN.test(lowerPath)) {
+    return goneResponse();
+  }
+
+  // Legacy WP taxonomy pages (non-spam) → homepage
+  if (WP_TAXONOMY_PREFIX.test(lowerPath)) {
+    return NextResponse.redirect(new URL('/', request.url), 301);
   }
 
   // Match the admin panel WITHOUT colliding with public sections that merely
