@@ -226,9 +226,11 @@ const BLOCKED_BOTS = [
   'SemrushBot-BA',
   'SemrushBot-OCOB',
   'BLEXBot',
-  'DataForSeoBot',
+  // DataForSeoBot and AhrefsSiteAudit were removed from this block list on
+  // 2026-07-21: both are used for JKKN's OWN site audits, and blocking them
+  // only created a blind spot in our own reporting. AhrefsBot and SemrushBot
+  // were already allowed below, so blocking these two was also inconsistent.
   'magpie-crawler',
-  'AhrefsSiteAudit',
   'Sogou',
   'AspiegelBot',
   'PanguBot',
@@ -297,7 +299,12 @@ export default function robots(): MetadataRoute.Robots {
         userAgent: 'Bingbot',
         allow: ['/', ...NEXTJS_ALLOW],
         disallow: [
-          '/_next/',
+          // Do NOT blanket-disallow '/_next/' here. Bing's precedence for
+          // overlapping allow/disallow is less predictable than Google's, and a
+          // wholesale block risks Bingbot (and therefore Copilot and DuckDuckGo)
+          // being unable to fetch the CSS/JS it needs to render the page.
+          // Mirror the Googlebot rule instead: block the data/build paths only.
+          ...NEXTJS_DISALLOW.filter((p) => p !== '/_next/'),
           '/api/',
           ...ADMIN_DISALLOW.filter((p) =>
             ['/admin/', '/login/', '/signin/', '/dashboard/', '/preview/',

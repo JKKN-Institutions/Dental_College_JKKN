@@ -181,9 +181,12 @@ const nextConfig: NextConfig = {
       // Research old slugs
       { source: '/research-innovations-and-extension/', destination: '/research/research-development-rd-cell', permanent: true },
       { source: '/research-innovations-and-extension', destination: '/research/research-development-rd-cell', permanent: true },
-      { source: '/academic-research/', destination: '/research/research-and-dissertation', permanent: true },
-      { source: '/academic-research', destination: '/research/research-and-dissertation', permanent: true },
-      { source: '/research-and-dissertation/', destination: '/research/research-and-dissertation', permanent: true },
+      // Repointed 2026-07-21: these used to 301 into /research/research-and-dissertation,
+      // whose page.tsx calls notFound() unconditionally — so they all landed on a
+      // guaranteed 404. Sent to the nearest page with real content instead.
+      { source: '/academic-research/', destination: '/research/publication/', permanent: true },
+      { source: '/academic-research', destination: '/research/publication/', permanent: true },
+      { source: '/research-and-dissertation/', destination: '/research/publication/', permanent: true },
       { source: '/mou-2/', destination: '/research/mou-memorandum-of-understanding', permanent: true },
       { source: '/mou-2', destination: '/research/mou-memorandum-of-understanding', permanent: true },
       { source: '/institutional-ethical-committee-2/', destination: '/research/institutional-ethical-committee', permanent: true },
@@ -389,8 +392,9 @@ const nextConfig: NextConfig = {
       // Academics section - Programs
       // REMOVED: /details-of-academic-programs — no page.tsx at destination
       // (served a 404). Now a 301 to /academics/ in redirects().
-      { source: '/bds', destination: '/academics/details-of-academic-programs/bds' },
-      { source: '/mds', destination: '/academics/details-of-academic-programs/mds' },
+      // REMOVED: /bds and /mds — both are already 301'd in redirects() (which run
+      // first) AND both have their own app/bds, app/mds page.tsx, so these
+      // rewrites could never fire under either rule.
       { source: '/periodontics', destination: '/academics/details-of-academic-programs/mds/periodontics' },
       { source: '/orthodontics-and-dentofacial-orthopedics', destination: '/academics/details-of-academic-programs/mds/orthodontics-and-dentofacial-orthopedics' },
       { source: '/prosthodontics-crown-and-bridge', destination: '/academics/details-of-academic-programs/mds/prosthodontics-crown-and-bridge' },
@@ -460,7 +464,8 @@ const nextConfig: NextConfig = {
 
       // Research section
       { source: '/research-development-rd-cell', destination: '/research/research-development-rd-cell' },
-      { source: '/research-and-dissertation', destination: '/research/research-and-dissertation' },
+      // REMOVED: /research-and-dissertation — its destination always 404s, and a
+      // redirect for the same source already runs first, so this never fired.
       { source: '/institutions-innovation-council-iic', destination: '/research/institutions-innovation-council-iic' },
       { source: '/research-proposal-and-consent-forms', destination: '/research/research-proposal-and-consent-forms' },
       { source: '/institutional-ethical-committee', destination: '/research/institutional-ethical-committee' },
@@ -501,7 +506,7 @@ const nextConfig: NextConfig = {
       { source: '/library', destination: '/facilities/library' },
       { source: '/labs', destination: '/facilities/labs' },
       { source: '/food-court', destination: '/facilities/food-court' },
-      { source: '/hostel', destination: '/facilities/hostel' },
+      // REMOVED: /hostel — already 301'd in redirects(), which run first.
       { source: '/boys-hostel', destination: '/facilities/hostel/boys-hostel' },
       { source: '/girls-hostel', destination: '/facilities/hostel/girls-hostel' },
       { source: '/transport', destination: '/facilities/transport' },

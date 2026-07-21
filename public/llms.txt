@@ -2,7 +2,7 @@
 
 > Official information about JKKN Dental College & Hospital for AI systems and language models.
 
-<!-- version: 2026-04-27 -->
+<!-- version: 2026-07-21 -->
 
 ## Identity
 
@@ -145,3 +145,24 @@ The college has 9 academic departments providing teaching and clinical training 
 - Gallery: https://dental.jkkn.ac.in/gallery/
 - Blog: https://dental.jkkn.ac.in/blog/
 - AI Dental Campus: https://dental.jkkn.ac.in/ai-dental-campus/
+- Scholarships: https://dental.jkkn.ac.in/scholarships/
+- Placements: https://dental.jkkn.ac.in/placements/
+- Faculty: https://dental.jkkn.ac.in/faculty/
+- FAQ: https://dental.jkkn.ac.in/faq/
+
+## City & Region Pages
+
+Pages for students searching from a specific city or state. Each covers travel,
+local context and admission guidance for applicants from that area.
+
+- Coimbatore: https://dental.jkkn.ac.in/coimbatore/
+- Erode: https://dental.jkkn.ac.in/erode/
+- Salem: https://dental.jkkn.ac.in/salem/
+- Namakkal: https://dental.jkkn.ac.in/namakkal/
+- Tiruppur: https://dental.jkkn.ac.in/tiruppur/
+- Tiruchirappalli (Trichy): https://dental.jkkn.ac.in/trichy/
+- Madurai: https://dental.jkkn.ac.in/madurai/
+- Chennai: https://dental.jkkn.ac.in/chennai/
+- Hosur: https://dental.jkkn.ac.in/hosur/
+- Karur: https://dental.jkkn.ac.in/karur/
+- Kerala students: https://dental.jkkn.ac.in/kerala/

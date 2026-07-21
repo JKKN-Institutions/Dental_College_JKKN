@@ -24,8 +24,15 @@ function buildGitLastModMap(): Map<string, Date> {
         if (!map.has(normalized)) map.set(normalized, currentDate)
       }
     }
-  } catch {
-    // git unavailable (e.g. shallow CI clone) — fall back to build time.
+  } catch (err) {
+    // git unavailable (e.g. a shallow CI clone). Every URL then falls back to
+    // build time, so the whole sitemap ships one identical lastmod — a signal
+    // Google learns to distrust. Fail loudly so a broken build config is
+    // visible in the deploy log instead of silently degrading the sitemap.
+    console.warn('[sitemap] git history unavailable, lastmod falling back to build time:', err)
+  }
+  if (map.size === 0) {
+    console.warn('[sitemap] git lastmod map is EMPTY — check the build does a full clone (fetch-depth: 0)')
   }
   return map
 }
@@ -243,7 +250,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${baseUrl}/research/incubation-center/`, lastModified: now, changeFrequency: 'monthly', priority: 0.6 },
     { url: `${baseUrl}/research/start-up/`, lastModified: now, changeFrequency: 'monthly', priority: 0.6 },
     { url: `${baseUrl}/research/research-development-rd-cell/`, lastModified: now, changeFrequency: 'monthly', priority: 0.6 },
-    { url: `${baseUrl}/research/research-and-dissertation/`, lastModified: now, changeFrequency: 'monthly', priority: 0.6 },
+    // NOTE: /research/research-and-dissertation/ is deliberately NOT listed —
+    // app/research/research-and-dissertation/page.tsx calls notFound()
+    // unconditionally, so the URL always returns 404. Re-add this entry once
+    // that page has real content.
     { url: `${baseUrl}/research/research-proposal-and-consent-forms/`, lastModified: now, changeFrequency: 'yearly', priority: 0.5 },
     { url: `${baseUrl}/research/institutional-ethical-committee/`, lastModified: now, changeFrequency: 'yearly', priority: 0.5 },
     { url: `${baseUrl}/research/institutions-innovation-council-iic/`, lastModified: now, changeFrequency: 'monthly', priority: 0.5 },

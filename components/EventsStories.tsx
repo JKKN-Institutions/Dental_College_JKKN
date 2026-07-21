@@ -46,9 +46,10 @@ export default async function EventsStories() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {events.map((event: Event) => (
+            // trailing slash required: trailingSlash: true, else every click costs a 308
             <Link
               key={event.id}
-              href={`/events/${event.slug}`}
+              href={`/events/${event.slug}/`}
               className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col"
             >
               {/* Image */}
