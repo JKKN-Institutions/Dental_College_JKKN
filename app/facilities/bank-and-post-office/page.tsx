@@ -8,6 +8,7 @@ import { generateBreadcrumbSchema, generateWebPageSchema, generateSpeakableWebPa
 import { Landmark, Mail } from 'lucide-react';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/facilities/bank-and-post-office/' },
   title: 'Bank & Post Office | JKKN Dental Campus',
   description: 'JKKN campus features 24/7 ATM, on-campus post office, and complete banking services including domestic/international mail and savings schemes for students.',
   keywords: 'on-campus banking JKKN, ATM facility dental college, campus post office, Indian Bank ATM, postal services, student banking, on-campus financial services',

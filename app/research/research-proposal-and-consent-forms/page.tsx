@@ -7,6 +7,7 @@ import StructuredData from '@/components/StructuredData';
 import { generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/research/research-proposal-and-consent-forms/' },
   title: 'Research Proposal & Consent Forms | JKKN Dental College',
   description: 'Download research proposal templates, informed consent documents, and ethical committee forms for PG dissertation submissions at JKKN.',
   keywords: 'research proposal forms, informed consent, IEC forms, dissertation proposal, clinical research forms, ethics committee, JKKN research',

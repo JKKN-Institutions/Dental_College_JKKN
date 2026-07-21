@@ -7,6 +7,7 @@ import { generateBreadcrumbSchema, generateWebPageSchema, generateSpeakableWebPa
 import { User } from 'lucide-react';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/committee/hostel-advisory-and-welfare-committee/' },
   title: 'Hostel Advisory & Welfare Committee | JKKN Dental College',
   description: 'Ensuring safe and conducive living environment for hostel students. View boys and girls hostel staff in-charge and welfare initiatives.',
   keywords: 'hostel advisory committee, hostel welfare, student accommodation, hostel staff, student safety, JKKN dental college, hostel facilities',

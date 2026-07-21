@@ -6,6 +6,7 @@ import StructuredData from '@/components/StructuredData';
 import { generateBreadcrumbSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/admissions/equitable-opportunity-for-sedg-group/' },
   title: 'Equitable Opportunity for SEDG Group - JKKN Dental College',
   description: 'JKKN Dental College\'s commitment to inclusive education through equitable access for Socio-Economically Disadvantaged Groups per UGC 2024.',
   keywords: 'SEDG group, inclusive education, UGC guidelines, reservation policy, SC ST OBC EWS, JKKN Dental College admission, equitable access, NEP 2020',

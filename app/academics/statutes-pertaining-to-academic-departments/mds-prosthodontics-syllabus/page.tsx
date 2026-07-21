@@ -3,6 +3,7 @@ import { PdfRedirect } from '@/components/pdf-redirect';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/academics/statutes-pertaining-to-academic-departments/mds-prosthodontics-syllabus/' },
   title: 'MDS Prosthodontics Syllabus - JKKN Dental College',
   description: 'Access MDS Prosthodontics syllabus at JKKN Dental College. Specialized postgraduate program in dental prosthetics and restorative dentistry. View details.',
   keywords: 'MDS prosthodontics syllabus, prosthodontics curriculum, dental prosthetics, restorative dentistry, postgraduate prosthodontics, JKKN MDS program',

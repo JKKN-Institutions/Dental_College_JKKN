@@ -7,6 +7,7 @@ import { generateBreadcrumbSchema, generateWebPageSchema, generateSpeakableWebPa
 import { User } from 'lucide-react';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/committee/dental-education-department/' },
   title: 'Dental Education Department | JKKN Dental College',
   description: 'Enhancing quality dental education through curriculum development, research integration, and modern teaching methodologies at JKKN.',
   keywords: 'dental education department, curriculum development, dental faculty, educational quality, teaching methodology, JKKN dental college',

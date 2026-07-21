@@ -32,6 +32,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `${event.title} | ${siteConfig.name}`,
     description: event.description?.slice(0, 160) || `Event at ${siteConfig.name}`,
+    // Self-referencing canonical. Without it this route inherits the root
+    // layout's canonical and every event page would point at the homepage.
+    alternates: { canonical: `/events/${slug}/` },
     openGraph: event.image_url
       ? { images: [{ url: event.image_url }] }
       : undefined,

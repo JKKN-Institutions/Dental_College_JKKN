@@ -4,6 +4,7 @@ import StructuredData from '@/components/StructuredData';
 import { generateBreadcrumbSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/about/approvals-and-affiliation/affiliation-mds/' },
   title: 'MDS Affiliation Certificate | Dr. MGR University Approval',
   description: 'View JKKN Dental College MDS affiliation from Dr. MGR Medical University, Chennai. 5 specializations approved. Download official affiliation letters.',
   keywords: 'MDS affiliation, postgraduate affiliation, MGR medical university, MDS approval, specialization approval',

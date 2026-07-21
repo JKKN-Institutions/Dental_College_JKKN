@@ -8,6 +8,7 @@ import { generateBreadcrumbSchema, generateWebPageSchema, generateSpeakableWebPa
 import { BookOpen, GraduationCap, Monitor, Search, Calendar, Users, Clock, Star } from 'lucide-react';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/facilities/library/' },
   title: 'Library Facilities | Digital Library | JKKN Dental College',
   description: 'JKKN Dental College library: extensive dental textbooks, journals, research papers, e-resources, and digital library facilities for students and faculty.',
   keywords: 'dental library, digital library, dental textbooks, research journals, e-library, dental resources',

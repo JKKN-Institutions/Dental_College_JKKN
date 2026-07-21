@@ -6,6 +6,7 @@ import StructuredData from '@/components/StructuredData';
 import { generateBreadcrumbSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/admissions/fee-refund-policy/' },
   title: 'Fee Refund Policy | JKKN Dental College Admission Fee Refund',
   description: 'JKKN Dental College fee refund policy for BDS and MDS admissions. Understand refund rules, timelines, and procedures as per UGC guidelines.',
   keywords: 'fee refund policy, admission refund, fee structure, refund rules, UGC refund policy',

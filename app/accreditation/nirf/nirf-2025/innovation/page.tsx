@@ -3,6 +3,7 @@ import { Metadata } from 'next';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/accreditation/nirf/nirf-2025/innovation/' },
   title: 'NIRF Innovation Ranking 2025 | JKKN Dental',
   description: 'View JKKN Dental College NIRF 2025 innovation ranking. Check our innovation & entrepreneurship score in national ranking. Download NIRF innovation report.',
   keywords: 'NIRF innovation 2025, innovation ranking, entrepreneurship score, NIRF 2025, innovation framework',

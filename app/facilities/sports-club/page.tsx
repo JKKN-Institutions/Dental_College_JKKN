@@ -8,6 +8,7 @@ import { generateBreadcrumbSchema, generateWebPageSchema, generateSpeakableWebPa
 import { Star, Trophy, Dumbbell, Shield, Heart, Users } from 'lucide-react';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/facilities/sports-club/' },
   title: 'Sports Facilities | JKKN Dental Campus',
   description: 'JKKN sports club features 100m track, multipurpose indoor stadium, basketball, tennis, football, wrestling, kabaddi arenas, and state-of-the-art gym equipment.',
   keywords: 'sports club JKKN, campus sports facilities, athletic center, gym facilities, indoor stadium, basketball court, wrestling arena, kabaddi, student sports',

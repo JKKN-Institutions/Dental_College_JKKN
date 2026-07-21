@@ -8,6 +8,7 @@ import StructuredData from '@/components/StructuredData';
 import { generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/research/mou-memorandum-of-understanding/' },
   title: 'MOU - Memorandum of Understanding | JKKN Dental College',
   description: 'Strategic partnerships with academic institutions, hospitals, and healthcare organizations advancing dental education and research excellence.',
   keywords: 'memorandum of understanding, MOU, academic partnerships, healthcare collaborations, dental education, research collaborations, JKKN partnerships',

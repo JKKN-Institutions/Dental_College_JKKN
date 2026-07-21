@@ -8,6 +8,7 @@ import { generateBreadcrumbSchema, generateWebPageSchema, generateSpeakableWebPa
 import { Eye, Monitor, Smile, Scissors, Users, ShieldCheck, BookOpen } from 'lucide-react';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/facilities/labs/' },
   title: 'Laboratory Facilities | Modern Dental Labs | JKKN Dental',
   description: 'State-of-the-art dental laboratories at JKKN Dental College with advanced equipment for preclinical training, research, and hands-on learning.',
   keywords: 'dental labs, laboratory facilities, preclinical labs, dental equipment, dental training labs',

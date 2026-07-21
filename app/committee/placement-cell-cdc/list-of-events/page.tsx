@@ -4,6 +4,7 @@ import StructuredData from '@/components/StructuredData';
 import { generateBreadcrumbSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/committee/placement-cell-cdc/list-of-events/' },
   title: 'Placement Cell Events List | JKKN Dental College',
   description: 'View the comprehensive list of events organized by Career Development Center (CDC) for student training and placement activities.',
   keywords: 'placement events, CDC events, career development, training programs, placement activities, JKKN dental college, student events',

@@ -4,6 +4,7 @@ import StructuredData from '@/components/StructuredData';
 import { generateBreadcrumbSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/about/act-statutes/' },
   title: 'Acts & Statutes | JKKN Dental College Regulations & Rules',
   description: 'View JKKN Dental College acts, statutes and regulatory framework. Download official college regulations, rules and governance documents.',
   keywords: 'acts statutes, college regulations, governance, regulatory framework, college rules',

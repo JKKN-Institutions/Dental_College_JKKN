@@ -6,6 +6,7 @@ import StructuredData from '@/components/StructuredData';
 import { generateBreadcrumbSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/principals-message/' },
   title: "Principal's Message | JKKN Dental College",
   description: 'Read the inspiring message from Dr. Dhanasekar Balakrishnan, Principal of JKKN Dental College, on our vision for dental education excellence.',
   keywords: "Principal's Message, Dr. Dhanasekar Balakrishnan, JKKN Dental College, dental education vision, academic leadership, dental college principal",

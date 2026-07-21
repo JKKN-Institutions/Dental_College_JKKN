@@ -3,6 +3,7 @@ import { PdfRedirect } from '@/components/pdf-redirect';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/mandatory-disclosures/letter-of-undertaking/' },
   title: 'Letter of Undertaking - JKKN Dental College',
   description: 'View JKKN Dental College & Hospital Letter of Undertaking for mandatory disclosure. Official compliance document as per regulatory requirements.',
   keywords: 'JKKN letter of undertaking, mandatory disclosure, compliance document, dental college undertaking, regulatory compliance, JKKN official documents, institutional undertaking',

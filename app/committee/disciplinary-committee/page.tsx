@@ -7,6 +7,7 @@ import { generateBreadcrumbSchema, generateWebPageSchema, generateSpeakableWebPa
 import { User } from 'lucide-react';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/committee/disciplinary-committee/' },
   title: 'Disciplinary Committee | JKKN Dental College',
   description: 'Maintaining discipline and enforcing codes of conduct to create a safe and respectful learning environment at JKKN Dental College.',
   keywords: 'disciplinary committee, student discipline, code of conduct, institutional rules, student accountability, JKKN dental college',

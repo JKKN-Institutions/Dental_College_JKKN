@@ -7,6 +7,7 @@ import { generateBreadcrumbSchema, generateWebPageSchema, generateSpeakableWebPa
 import { User } from 'lucide-react';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/committee/mentoring-committee/' },
   title: 'Mentoring Committee | JKKN Dental College',
   description: 'Providing guidance, support, and mentorship to students and faculty. Fostering personal development and academic excellence.',
   keywords: 'mentoring committee, student mentorship, faculty guidance, personal development, academic support, JKKN dental college, mentor program',

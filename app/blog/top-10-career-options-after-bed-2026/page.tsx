@@ -5,6 +5,7 @@ import StructuredData from '@/components/StructuredData';
 import { generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/blog/top-10-career-options-after-bed-2026/' },
   title: 'Top 10 Career Options After B.Ed in 2026',
   description: 'Top 10 career options after B.Ed 2026 — government teacher, private school, Ed-Tech, M.Ed, administration and more. Salary comparison included.',
   openGraph: {

@@ -10,6 +10,7 @@ import { generateSpeakableWebPageSchema } from '@/lib/metadata';
 export const dynamic = 'force-dynamic';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/gallery/' },
   title: 'Campus Gallery | JKKN Dental College & Hospital Photos',
   description: 'Explore JKKN Dental College campus gallery. View modern infrastructure, clinical facilities, laboratories, classrooms, library, and student activities.',
   keywords: 'JKKN campus photos, dental college gallery, campus facilities, infrastructure photos',

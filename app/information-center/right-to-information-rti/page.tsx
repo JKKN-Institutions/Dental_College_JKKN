@@ -8,6 +8,7 @@ import StructuredData from '@/components/StructuredData';
 import { generateBreadcrumbSchema, generateWebPageSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/information-center/right-to-information-rti/' },
   title: 'Right to Information (RTI) - JKKN Dental College',
   description: 'Access RTI information at JKKN Dental College & Hospital. Learn how to file RTI applications and contact CPIO for transparency and accountability.',
   keywords: 'RTI JKKN dental, right to information, RTI Act 2005, CPIO contact, RTI application, transparency, public information officer, UGC guidelines, RTI online, information access',

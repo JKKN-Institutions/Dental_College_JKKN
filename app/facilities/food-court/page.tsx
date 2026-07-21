@@ -8,6 +8,7 @@ import StructuredData from '@/components/StructuredData';
 import { generateBreadcrumbSchema, generateWebPageSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/facilities/food-court/' },
   title: 'Campus Food Court - Diverse Cuisine at JKKN Dental College',
   description: 'JKKN food court offers diverse, healthy, affordable meals with sustainable practices, quality ingredients, and a vibrant social hub for students and faculty.',
   keywords: 'JKKN food court, campus cafeteria, student dining, healthy food options, affordable meals, sustainable dining, college canteen, nutritious food',

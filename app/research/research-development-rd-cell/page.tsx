@@ -7,6 +7,7 @@ import StructuredData from '@/components/StructuredData';
 import { generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/research/research-development-rd-cell/' },
   title: 'Research & Development (R&D) Cell | JKKN Dental College',
   description: 'Promoting innovation, interdisciplinary research, and scientific advancement in dentistry, biomedical sciences, and healthcare excellence.',
   keywords: 'R&D cell, research development, dental research, scientific innovation, biomedical research, research funding, JKKN Dental College',

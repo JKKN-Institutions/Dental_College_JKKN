@@ -7,6 +7,7 @@ import StructuredData from '@/components/StructuredData';
 import { generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/research/collaboration/' },
   title: 'Research Collaboration | JKKN Dental College',
   description: 'Strategic partnerships with industry leaders, academic institutions, and research organizations for cutting-edge dental research.',
   keywords: 'dental research collaboration, academic partnerships, research organizations, dental innovation, JKKN Dental College, healthcare collaboration',

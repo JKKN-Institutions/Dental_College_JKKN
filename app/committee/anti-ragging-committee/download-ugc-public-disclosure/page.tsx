@@ -4,6 +4,7 @@ import StructuredData from '@/components/StructuredData';
 import { generateBreadcrumbSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/committee/anti-ragging-committee/download-ugc-public-disclosure/' },
   title: 'UGC Public Disclosure | JKKN Anti-Ragging Committee',
   description: 'Download UGC public disclosure for anti-ragging measures at JKKN Dental College. View compliance documents and preventive measures.',
   keywords: 'UGC public disclosure, anti ragging, ragging prevention, UGC compliance, JKKN dental college, student safety, ragging free campus',

@@ -3,6 +3,7 @@ import StructuredData from '@/components/StructuredData';
 import { generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/facilities/' },
   title: 'Facilities at JKKN Dental College | Campus & Hospital',
   description: 'World-class facilities at JKKN Dental College — 200+ dental chairs, digital labs, hostel, library, sports complex, Wi-Fi campus. Komarapalayam, Tamil Nadu.',
   openGraph: {

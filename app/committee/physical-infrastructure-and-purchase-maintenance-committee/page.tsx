@@ -7,6 +7,7 @@ import { generateBreadcrumbSchema, generateWebPageSchema, generateSpeakableWebPa
 import { User } from 'lucide-react';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/committee/physical-infrastructure-and-purchase-maintenance-committee/' },
   title: 'Physical Infrastructure & Maintenance | JKKN Dental',
   description: 'Managing campus infrastructure, maintenance, and upgrades. Ensuring modern, safe, and functional facilities for quality education.',
   keywords: 'infrastructure committee, campus maintenance, facility management, building upgrades, JKKN dental college, campus facilities',

@@ -53,6 +53,7 @@ const faqSchema = {
 };
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/academics/capability-enhancement-program/' },
   title: 'Capability Enhancement Program - JKKN Dental College',
   description: 'Comprehensive capability enhancement programs at JKKN Dental College. Soft skills, analytical thinking, and professional development for students. Explore now.',
   keywords: 'capability enhancement, soft skill development, dental student training, professional development, analytical skills, communication skills, employability skills',

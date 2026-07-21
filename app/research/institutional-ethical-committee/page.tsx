@@ -7,6 +7,7 @@ import StructuredData from '@/components/StructuredData';
 import { generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/research/institutional-ethical-committee/' },
   title: 'Institutional Ethics Committee (IEC) | JKKN Dental College',
   description: 'JKKN IEC ensures ethical research standards, protecting participant rights and promoting responsible biomedical research practices.',
   keywords: 'institutional ethics committee, IEC, research ethics, biomedical research, participant protection, DHR registration, JKKN Dental College',

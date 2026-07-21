@@ -4,6 +4,7 @@ import { generateBreadcrumbSchema } from '@/lib/metadata';
 import StructuredData from '@/components/StructuredData';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/research/publication/' },
   title: 'Research Publications | JKKN Dental College Faculty Research',
   description: 'JKKN Dental College research publications by faculty and students. Browse contributions to dental research, clinical studies, and academic journals.',
   keywords: 'dental research, research publications, faculty research, dental studies, academic research',

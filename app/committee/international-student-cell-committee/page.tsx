@@ -6,6 +6,7 @@ import StructuredData from '@/components/StructuredData';
 import { generateBreadcrumbSchema, generateWebPageSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/committee/international-student-cell-committee/' },
   title: 'International Learner Cell Committee | JKKN Dental College',
   description: 'Supporting NRI and international learners with admission, orientation, and academic guidance. Globally acclaimed dental education.',
   keywords: 'international learner cell, NRI admissions, foreign learners, international education, learner support, JKKN dental college',

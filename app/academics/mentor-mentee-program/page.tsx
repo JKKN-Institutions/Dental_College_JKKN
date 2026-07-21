@@ -54,6 +54,7 @@ const faqSchema = {
 };
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/academics/mentor-mentee-program/' },
   title: 'Mentor-Mentee Program - JKKN Dental College',
   description: 'Discover our supportive mentor-mentee program at JKKN Dental College. Personalized guidance for academic and professional excellence. Join now.',
   keywords: 'mentor-mentee program, student mentorship, academic guidance, professional development, student support, JKKN mentoring, faculty-student relationship',

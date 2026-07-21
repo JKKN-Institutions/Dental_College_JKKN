@@ -21,12 +21,14 @@ export const metadata: Metadata = {
   description: "JKKN Dental College & Hospital, Komarapalayam — DCI approved, NAAC A accredited. BDS & MDS programs with 200+ chair hospital training. Since 1987.",
   keywords: "JKKN Dental College, AI dental campus, dental college Tamil Nadu, BDS course, MDS specializations, AI in dentistry, ChatGPT dental education, DCI approved dental college, NAAC accredited, digital dentistry, CAD/CAM dentistry, Komarapalayam dental college",
   authors: [{ name: "JKKN Dental College Editorial Team" }],
-  alternates: {
-    canonical: 'https://dental.jkkn.ac.in/',
-    languages: {
-      'en-IN': 'https://dental.jkkn.ac.in/',
-    },
-  },
+  // NOTE: do NOT put `alternates.canonical` here. Next.js metadata is inherited
+  // by every child route, so an absolute canonical in the root layout made all
+  // 124 routes that don't override it emit <link rel="canonical" href=".../">
+  // — i.e. every one of them told Google it was a duplicate of the homepage.
+  // Each route now declares its own self-referencing canonical; the homepage's
+  // lives in app/page.tsx. `languages` was removed with it: it emitted no
+  // hreflang in the rendered output (verified across all 169 prerendered pages)
+  // and this is a single-language site.
   icons: {
     icon: "/images/dental-logo.png",
     apple: "/images/dental-logo.png",

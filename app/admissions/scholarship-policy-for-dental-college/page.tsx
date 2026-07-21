@@ -6,6 +6,7 @@ import StructuredData from '@/components/StructuredData';
 import { generateBreadcrumbSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/admissions/scholarship-policy-for-dental-college/' },
   title: 'Scholarships & Aid | JKKN Dental College',
   description: 'Explore JKKN Dental College scholarship programs for academic excellence, sports achievements, and special circumstances. Apply for financial aid.',
   keywords: 'dental college scholarship, JKKN scholarship policy, academic scholarship, sports quota scholarship, single parent scholarship, NEET scholarship, financial aid',

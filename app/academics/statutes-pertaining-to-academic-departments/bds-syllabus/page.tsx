@@ -3,6 +3,7 @@ import { PdfRedirect } from '@/components/pdf-redirect';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/academics/statutes-pertaining-to-academic-departments/bds-syllabus/' },
   title: 'BDS Syllabus - JKKN Dental College',
   description: 'Access complete BDS syllabus at JKKN Dental College. Comprehensive curriculum for Bachelor of Dental Surgery program. Download now.',
   keywords: 'BDS syllabus, Bachelor of Dental Surgery curriculum, dental undergraduate syllabus, JKKN BDS program, dental course structure, BDS academics',

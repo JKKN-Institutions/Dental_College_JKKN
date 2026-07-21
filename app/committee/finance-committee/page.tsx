@@ -6,6 +6,7 @@ import StructuredData from '@/components/StructuredData';
 import { generateBreadcrumbSchema, generateWebPageSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/committee/finance-committee/' },
   title: 'Finance Committee | JKKN Dental College',
   description: 'Managing financial operations and oversight at JKKN Dental College. View committee members and their responsibilities.',
   keywords: 'finance committee, financial management, budget oversight, college finance, committee members, JKKN dental college, financial operations',

@@ -4,6 +4,7 @@ import StructuredData from '@/components/StructuredData';
 import { generateBreadcrumbSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/admissions/prospectus/' },
   title: 'Admission Prospectus | JKKN Dental BDS & MDS Admission',
   description: 'Download JKKN Dental College admission prospectus 2026-27. BDS & MDS courses, eligibility, fees, admission process, facilities, and placement information.',
   keywords: 'admission prospectus, BDS admission, MDS admission, dental college prospectus, JKKN admission details',

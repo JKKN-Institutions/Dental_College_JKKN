@@ -8,6 +8,7 @@ import { generateBreadcrumbSchema, generateWebPageSchema, generateSpeakableWebPa
 import { MapPin, Wifi, ShieldCheck, Heart } from 'lucide-react';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/facilities/hostel/girls-hostel/' },
   title: 'Girls Hostel | JKKN Dental Campus',
   description: 'JKKN girls hostel features 24/7 security, CCTV surveillance, attached bathrooms, gym, yoga room, and on-campus convenience for female dental students.',
   keywords: 'girls hostel JKKN, safe hostel for girls, women hostel dental college, secure accommodation, female students housing, on-campus girls hostel, CCTV hostel',

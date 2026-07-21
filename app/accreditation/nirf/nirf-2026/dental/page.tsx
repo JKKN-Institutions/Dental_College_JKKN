@@ -3,6 +3,7 @@ import { Metadata } from 'next';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/accreditation/nirf/nirf-2026/dental/' },
   title: 'NIRF Ranking 2026 Dental | JKKN Dental College Ranking',
   description: 'JKKN Dental College NIRF 2026 dental ranking. View national ranking, performance metrics, and quality indicators per NIRF framework.',
   keywords: 'NIRF ranking, dental college ranking, national ranking, NIRF 2026, JKKN ranking',

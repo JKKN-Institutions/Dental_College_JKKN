@@ -7,6 +7,7 @@ import StructuredData from '@/components/StructuredData';
 import { generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/research/incubation-center/' },
   title: 'Nattraja Incubation Forum (NIF) | JKKN Dental College',
   description: 'India\'s pioneering bioconvergence incubation center fostering healthcare innovation, startups, and research excellence at JKKN.',
   keywords: 'Nattraja Incubation Forum, NIF, bioconvergence incubation, healthcare innovation, startup incubation, dental technology, JKKN research',

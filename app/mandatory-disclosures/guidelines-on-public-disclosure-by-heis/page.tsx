@@ -3,6 +3,7 @@ import { PdfRedirect } from '@/components/pdf-redirect';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/mandatory-disclosures/guidelines-on-public-disclosure-by-heis/' },
   title: 'Guidelines on Public Disclosure by HEIs - JKKN Dental',
   description: 'View UGC guidelines on public disclosure by Higher Education Institutions. JKKN Dental College mandatory disclosure compliance documents.',
   keywords: 'UGC public disclosure guidelines, HEI disclosure, mandatory disclosures, JKKN compliance, higher education transparency, UGC regulations, institutional disclosure, JKKN dental disclosures',

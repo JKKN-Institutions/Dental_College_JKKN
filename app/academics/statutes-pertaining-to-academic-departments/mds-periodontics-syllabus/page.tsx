@@ -3,6 +3,7 @@ import { PdfRedirect } from '@/components/pdf-redirect';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/academics/statutes-pertaining-to-academic-departments/mds-periodontics-syllabus/' },
   title: 'MDS Periodontics Syllabus - JKKN Dental College',
   description: 'Review MDS Periodontics syllabus at JKKN Dental College. Advanced postgraduate training in periodontal health and gum disease management. Access now.',
   keywords: 'MDS periodontics syllabus, periodontics curriculum, gum disease treatment, postgraduate periodontics, MDS specialization, JKKN periodontics program',

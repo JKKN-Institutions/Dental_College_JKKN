@@ -7,6 +7,7 @@ import { generateBreadcrumbSchema, generateWebPageSchema, generateSpeakableWebPa
 import { User } from 'lucide-react';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/committee/physical-education-and-extra-curricular-activities-committee/' },
   title: 'Physical Education & Extracurricular Activities | JKKN',
   description: 'Promoting sports, physical fitness, and extracurricular activities. View committee members fostering holistic student development.',
   keywords: 'physical education committee, sports activities, extracurricular activities, student fitness, holistic development, JKKN dental college',

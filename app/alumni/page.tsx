@@ -7,6 +7,7 @@ import StructuredData from '@/components/StructuredData';
 import { generateBreadcrumbSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/alumni/' },
   title: 'Alumni Network | JKKN Dental College Alumni Association',
   description: 'Join JKKN Dental College Alumni Network "Namaskara". Connect with graduates, attend alumni events, and contribute to college development.',
   keywords: 'alumni network, dental alumni, JKKN alumni, alumni association, dental college alumni',

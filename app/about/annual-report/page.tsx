@@ -4,6 +4,7 @@ import StructuredData from '@/components/StructuredData';
 import { generateBreadcrumbSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/about/annual-report/' },
   title: 'Annual Report | JKKN Dental College Yearly Performance',
   description: 'Download JKKN Dental College annual report. View achievements, academic performance, research activities, and institutional development.',
   keywords: 'annual report, yearly performance, college achievements, institutional report, academic progress',

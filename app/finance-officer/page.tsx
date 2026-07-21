@@ -6,6 +6,7 @@ import StructuredData from '@/components/StructuredData';
 import { generateBreadcrumbSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/finance-officer/' },
   title: 'Finance Officer | JKKN Dental College',
   description: 'Meet Mr. K. Velayutham, MBA, Finance Officer at JKKN Dental College, managing financial planning, budgeting, and institutional growth.',
   keywords: 'Finance Officer, JKKN Dental College, K. Velayutham, financial management, budgeting, financial planning, institutional finance',

@@ -8,6 +8,7 @@ import { generateBreadcrumbSchema, generateWebPageSchema, generateSpeakableWebPa
 import { Eye, Volume2, Monitor, Lightbulb, Layers, Award } from 'lucide-react';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/facilities/auditorium/' },
   title: 'Auditorium | JKKN Dental Campus',
   description: 'JKKN auditorium features advanced AV technology, superior acoustics, unobstructed seating, and customized lighting for lectures and cultural performances.',
   keywords: 'JKKN auditorium, dental college auditorium, campus auditorium facility, state-of-the-art auditorium, event venue JKKN, cultural performances, academic lectures',

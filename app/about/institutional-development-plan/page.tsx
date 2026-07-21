@@ -6,6 +6,7 @@ import StructuredData from '@/components/StructuredData';
 import { generateBreadcrumbSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/about/institutional-development-plan/' },
   title: 'Institutional Development Plan | JKKN Dental College IDP',
   description: 'JKKN Dental College IDP aligned with NEP 2020, UGC guidelines & SDGs. Strategic goals for academic excellence, research & community health.',
   keywords: 'institutional development plan, IDP, NEP 2020, UGC guidelines, strategic planning',

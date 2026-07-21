@@ -4,6 +4,7 @@ import StructuredData from '@/components/StructuredData';
 import { generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/academic-calendar-2018-2019/' },
   title: 'Academic Calendar 2018-19 | JKKN Dental College Schedule',
   description: 'View JKKN Dental College academic calendar 2018-19. Check past exam dates, holidays and academic events. Access archived academic schedule PDF.',
   keywords: 'academic calendar 2018-19, college calendar, exam schedule, academic year, archived calendar',

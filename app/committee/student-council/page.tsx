@@ -6,6 +6,7 @@ import StructuredData from '@/components/StructuredData';
 import { generateBreadcrumbSchema, generateWebPageSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/committee/student-council/' },
   title: 'Learner Council | JKKN Dental College',
   description: 'Learner representatives fostering campus life, organizing events, and bridging learners with administration at JKKN Dental College.',
   keywords: 'learner council, learner representatives, campus events, learner leadership, learner activities, JKKN dental college, learner body',

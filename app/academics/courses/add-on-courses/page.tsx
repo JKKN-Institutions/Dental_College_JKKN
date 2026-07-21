@@ -7,6 +7,7 @@ import { generateBreadcrumbSchema, generateSpeakableWebPageSchema } from '@/lib/
 import StructuredData from '@/components/StructuredData';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/academics/courses/add-on-courses/' },
   title: 'Add-On Courses - JKKN Dental College',
   description: 'Explore specialized add-on courses in implantology, laser aesthetics, and composite restoration at JKKN Dental College. Enhance your expertise today.',
   keywords: 'add-on courses, dental specialization courses, implantology course, laser aesthetics, composite restoration, dental certification, advanced dental training',

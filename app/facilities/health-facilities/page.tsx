@@ -7,6 +7,7 @@ import { generateBreadcrumbSchema, generateWebPageSchema, generateSpeakableWebPa
 import { Stethoscope, Building2, Cross, ShieldCheck, Zap, Heart, Users } from 'lucide-react';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/facilities/health-facilities/' },
   title: 'Health Facilities - Medical Care at JKKN Dental Campus',
   description: 'JKKN offers comprehensive health facilities including on-duty doctors, multidisciplinary dental hospital, and upcoming 100-bed multi-specialty hospital.',
   keywords: 'health facilities JKKN, campus medical care, dental emergency services, multi-specialty hospital, on-campus healthcare, student health services, medical emergency preparedness',

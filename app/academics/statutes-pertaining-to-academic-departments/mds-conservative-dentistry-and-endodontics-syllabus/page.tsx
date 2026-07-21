@@ -3,6 +3,7 @@ import { PdfRedirect } from '@/components/pdf-redirect';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/academics/statutes-pertaining-to-academic-departments/mds-conservative-dentistry-and-endodontics-syllabus/' },
   title: 'MDS Conservative Dentistry Syllabus | JKKN Dental',
   description: 'View MDS Conservative Dentistry and Endodontics syllabus at JKKN Dental College. Specialized postgraduate dental curriculum. Access details now.',
   keywords: 'MDS syllabus, conservative dentistry syllabus, endodontics curriculum, postgraduate dental education, MDS program, JKKN specialization, dental masters',

@@ -3,6 +3,7 @@ import { PdfRedirect } from '@/components/pdf-redirect';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/academics/statutes-pertaining-to-academic-departments/mds-oral-medicine-and-radiology-syllabus/' },
   title: 'MDS Oral Medicine & Radiology Syllabus - JKKN Dental College',
   description: 'Access MDS Oral Medicine and Radiology syllabus at JKKN Dental College. Advanced diagnostic and radiological dental education. View curriculum now.',
   keywords: 'MDS oral medicine syllabus, oral radiology curriculum, postgraduate dental education, diagnostic dentistry, MDS specialization, JKKN postgraduate programs',

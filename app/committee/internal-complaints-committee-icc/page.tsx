@@ -4,6 +4,7 @@ import StructuredData from '@/components/StructuredData';
 import { generateBreadcrumbSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/committee/internal-complaints-committee-icc/' },
   title: 'Internal Complaints Committee (ICC) | JKKN Dental College',
   description: 'Addressing workplace harassment and ensuring safe environment. View ICC members and complaint redressal procedures at JKKN.',
   keywords: 'internal complaints committee, ICC, harassment prevention, workplace safety, complaint redressal, JKKN dental college, student protection',

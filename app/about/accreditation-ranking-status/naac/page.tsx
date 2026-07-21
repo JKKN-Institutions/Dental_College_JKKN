@@ -4,6 +4,7 @@ import StructuredData from '@/components/StructuredData';
 import { generateBreadcrumbSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/about/accreditation-ranking-status/naac/' },
   title: 'NAAC Accreditation Status | JKKN Dental Quality Rating',
   description: 'View JKKN Dental College NAAC accreditation certificate and quality assessment report. Check our NAAC grade and ranking. Download official NAAC documents.',
   keywords: 'NAAC accreditation, NAAC certificate, quality assessment, NAAC grade, college ranking',

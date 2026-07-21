@@ -6,6 +6,7 @@ import StructuredData from '@/components/StructuredData';
 import { generateBreadcrumbSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/admissions/admission-criteria/' },
   title: 'Admission Criteria | BDS & MDS Eligibility | JKKN Dental',
   description: 'JKKN Dental College admission criteria for BDS and MDS. NEET eligibility, qualifying marks, age limits, and selection process for dental courses.',
   keywords: 'admission criteria, eligibility, NEET requirements, BDS eligibility, MDS eligibility, admission requirements',

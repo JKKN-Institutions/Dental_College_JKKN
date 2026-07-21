@@ -6,6 +6,7 @@ import { generateBreadcrumbSchema, generateSpeakableWebPageSchema } from '@/lib/
 import StructuredData from '@/components/StructuredData';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/academics/faculty-achievements/fdp-attended/' },
   title: 'Faculty Development Programs Attended - JKKN Dental College',
   description: 'View FDP attended by JKKN Dental College faculty members. Committed to continuous professional development and educational excellence. Learn more.',
   keywords: 'faculty development program, FDP attended, faculty training, professional development, dental faculty achievements, JKKN faculty, academic excellence',

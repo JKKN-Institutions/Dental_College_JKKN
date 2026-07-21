@@ -7,6 +7,7 @@ import { generateBreadcrumbSchema, generateWebPageSchema, generateSpeakableWebPa
 import { FileText, Mail, Phone, Globe } from 'lucide-react';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/committee/placement-cell-cdc/' },
   title: 'Placement Cell (CDC) | JKKN Dental College',
   description: 'Bridging education and employment through training, internships, and placements. Empowering students for successful careers worldwide.',
   keywords: 'placement cell, CDC, career development, campus placements, internships, aptitude training, soft skills, JKKN dental college',

@@ -54,6 +54,7 @@ const faqSchema = {
 };
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/academics/learning-outcomes/' },
   title: 'Learning Outcomes - BDS & MDS Programs - JKKN Dental College',
   description: 'Explore comprehensive learning outcomes for BDS and MDS programs at JKKN Dental College. Quality-focused dental education objectives. Discover more.',
   keywords: 'learning outcomes, BDS program outcomes, MDS program outcomes, dental education objectives, curriculum outcomes, JKKN academics, program goals',

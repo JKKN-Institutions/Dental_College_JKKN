@@ -7,6 +7,7 @@ import { generateBreadcrumbSchema, generateWebPageSchema, generateSpeakableWebPa
 import { User, FileText, Share2, ShieldCheck, Clock, CheckCircle, RefreshCw, Phone } from 'lucide-react';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/facilities/privacy-policy/' },
   title: 'Privacy Policy - JKKN Dental Data Protection & Security',
   description: 'JKKN Dental College privacy policy outlines personal data collection, usage, protection, and your rights regarding information security and confidentiality.',
   keywords: 'privacy policy JKKN, data protection dental college, personal information security, JKKN privacy statement, data confidentiality, user privacy rights',

@@ -4,6 +4,7 @@ import StructuredData from '@/components/StructuredData';
 import { generateBreadcrumbSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/academic-leadership/' },
   title: 'Academic Leadership | JKKN Dental College',
   description: 'Meet the academic leadership team at JKKN Dental College, committed to excellence in dental education and institutional development.',
   keywords: 'Academic Leadership, JKKN Dental College, dental college leadership, academic administration, dental education leaders, department heads',

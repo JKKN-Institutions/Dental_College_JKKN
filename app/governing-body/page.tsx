@@ -7,6 +7,7 @@ import StructuredData from '@/components/StructuredData';
 import { generateBreadcrumbSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/governing-body/' },
   title: 'Governing Body | JKKN Dental College',
   description: 'Explore the Governing Body of JKKN Dental College, guiding excellence in dental education, healthcare, and institutional governance.',
   keywords: 'Governing Body, JKKN Dental College, governance, institutional policies, dental education governance, academic excellence, healthcare leadership',

@@ -7,6 +7,7 @@ import { generateBreadcrumbSchema, generateWebPageSchema, generateSpeakableWebPa
 import { User } from 'lucide-react';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/committee/patient-welfare-committee/' },
   title: 'Patient Welfare Committee | JKKN Dental College',
   description: 'Ensuring quality patient care and welfare at JKKN Dental Hospital. View committee members dedicated to patient rights and safety.',
   keywords: 'patient welfare committee, patient care, patient rights, hospital welfare, dental hospital, JKKN dental college, healthcare quality',

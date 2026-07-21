@@ -6,6 +6,7 @@ import StructuredData from '@/components/StructuredData';
 import { generateBreadcrumbSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/academic-council/' },
   title: 'Academic Council | JKKN Dental College',
   description: 'Learn about the Academic Council at JKKN Dental College, dedicated to shaping curriculum, promoting research, and enhancing dental education.',
   keywords: 'Academic Council, JKKN Dental College, dental curriculum, dental education, faculty development, DCI guidelines, teaching methodology',

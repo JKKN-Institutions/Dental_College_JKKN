@@ -4,6 +4,7 @@ import { generateBreadcrumbSchema } from '@/lib/metadata';
 import StructuredData from '@/components/StructuredData';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/facilities/barrier-free-environment/' },
   title: 'Barrier-Free Campus | JKKN Dental College',
   description: 'Comprehensive barrier-free environment policy at JKKN Dental College ensuring accessibility, inclusivity, and equal opportunities for all students and visitors.',
   keywords: 'barrier-free environment JKKN, accessibility policy dental college, inclusive campus, disability-friendly infrastructure, wheelchair accessibility, equal opportunity education',

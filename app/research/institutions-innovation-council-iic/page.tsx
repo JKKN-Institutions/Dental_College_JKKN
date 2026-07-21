@@ -8,6 +8,7 @@ import StructuredData from '@/components/StructuredData';
 import { generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/research/institutions-innovation-council-iic/' },
   title: 'Institution\'s Innovation Council (IIC) | JKKN Dental College',
   description: 'MIC-AICTE supported innovation council fostering entrepreneurship, IPR, and startup culture in dental education at JKKN Dental College.',
   keywords: 'Innovation Council, IIC, dental entrepreneurship, startup culture, IPR, AICTE innovation, Ministry of Education, dental innovation',

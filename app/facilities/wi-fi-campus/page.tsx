@@ -8,6 +8,7 @@ import { generateBreadcrumbSchema, generateWebPageSchema, generateSpeakableWebPa
 import { Zap, Radio, Lock, BookOpen, Music, Database, Leaf, Clock, Stethoscope, Link2, MapPin, TrendingUp } from 'lucide-react';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/facilities/wi-fi-campus/' },
   title: 'Wi-Fi Campus - High-Speed Internet at JKKN Dental College',
   description: 'JKKN campus offers high-speed WiFi coverage in lecture halls, libraries, labs, and outdoor spaces with multi-layered security and reliable connectivity.',
   keywords: 'WiFi campus JKKN, high-speed internet dental college, campus connectivity, wireless network, secure WiFi, free campus internet, student WiFi access',

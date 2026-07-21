@@ -7,6 +7,7 @@ import { generateBreadcrumbSchema, generateWebPageSchema, generateSpeakableWebPa
 import { User } from 'lucide-react';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/committee/library-and-learning-resources-committee/' },
   title: 'Library & Learning Resources Committee | JKKN Dental',
   description: 'Managing library resources and learning facilities. View committee members responsible for academic resources and student learning support.',
   keywords: 'library committee, learning resources, academic library, library management, student resources, JKKN dental college, educational materials',

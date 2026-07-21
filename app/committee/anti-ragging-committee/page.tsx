@@ -7,6 +7,7 @@ import StructuredData from '@/components/StructuredData';
 import { generateBreadcrumbSchema, generateWebPageSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/committee/anti-ragging-committee/' },
   title: 'Anti Ragging Committee | JKKN Dental College',
   description: 'JKKN Dental College maintains zero-tolerance towards ragging. View committee members, UGC guidelines, and helpline for a safe campus.',
   keywords: 'anti ragging committee, ragging free campus, student safety, UGC guidelines, zero tolerance policy, JKKN dental college, anti ragging helpline',

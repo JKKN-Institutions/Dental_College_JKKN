@@ -3,6 +3,7 @@ import StructuredData from '@/components/StructuredData';
 import { generateBreadcrumbSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/academic-calendar-2021-2022/' },
   title: 'Academic Calendar 2021-22 | JKKN Dental College Schedule',
   description: 'View JKKN Dental College academic calendar 2021-22. Check past exam dates, holidays and academic events. Access archived academic schedule PDF.',
   keywords: 'academic calendar 2021-22, college calendar, exam schedule, academic year, archived calendar',

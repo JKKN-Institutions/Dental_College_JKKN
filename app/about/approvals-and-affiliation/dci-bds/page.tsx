@@ -4,6 +4,7 @@ import StructuredData from '@/components/StructuredData';
 import { generateBreadcrumbSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/about/approvals-and-affiliation/dci-bds/' },
   title: 'DCI BDS Permission Letter | Dental Council of India Approval',
   description: 'Download JKKN Dental College DCI permission letter for BDS program. View Dental Council of India approval and recognition. 100 BDS seats DCI approved.',
   keywords: 'DCI approval, dental council India, BDS permission, DCI recognition, regulatory approval',

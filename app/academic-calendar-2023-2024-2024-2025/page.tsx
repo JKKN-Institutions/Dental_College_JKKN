@@ -4,6 +4,7 @@ import StructuredData from '@/components/StructuredData';
 import { generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/academic-calendar-2023-2024-2024-2025/' },
   title: 'Academic Calendar 2023-24 & 2024-25 | JKKN Dental College',
   description: 'View JKKN Dental College academic calendar 2023-24 & 2024-25. Check exam dates, holidays, events & important academic schedules. Plan your academic year effectively.',
   keywords: 'academic calendar, college calendar 2023-24, exam schedule, academic year, important dates',

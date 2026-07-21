@@ -4,6 +4,7 @@ import StructuredData from '@/components/StructuredData';
 import { generateBreadcrumbSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/committee/student-council/view-document/' },
   title: 'Learner Council Document | JKKN Dental College',
   description: 'View official Learner Council document detailing roles, responsibilities, and guidelines for learner representatives at JKKN.',
   keywords: 'learner council document, council guidelines, learner roles, learner responsibilities, JKKN dental college, learner governance',

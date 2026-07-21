@@ -8,6 +8,7 @@ import StructuredData from '@/components/StructuredData';
 import { generateBreadcrumbSchema, generateWebPageSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/facilities/transport/' },
   title: 'Transport Services - Bus Facility at JKKN Dental College',
   description: 'JKKN Dental College transport: AC buses, GPS tracking, CCTV monitoring, trained drivers, wheelchair accessibility, and affordable distance-based pricing.',
   keywords: 'college bus transport JKKN, student bus service, campus transportation, GPS tracked buses, safe college bus, wheelchair accessible transport, AC buses',

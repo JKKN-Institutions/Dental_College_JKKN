@@ -6,6 +6,7 @@ import StructuredData from '@/components/StructuredData';
 import { generateBreadcrumbSchema, generateWebPageSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/committee/ncc/nss/' },
   title: 'NCC/NSS - National Service Scheme | JKKN Dental College',
   description: 'NSS unit instilling social responsibility through community service, dental camps, health awareness drives, and sustainability projects.',
   keywords: 'NSS, national service scheme, community service, social responsibility, dental camps, health awareness, JKKN dental college',

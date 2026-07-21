@@ -7,6 +7,7 @@ import StructuredData from '@/components/StructuredData';
 import { generateBreadcrumbSchema, generateWebPageSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/facilities/ambulance-services/' },
   title: 'Ambulance Service | JKKN Dental College',
   description: 'JKKN Institutions offers round-the-clock free ambulance services with expert EMTs and advanced medical equipment for emergency medical transportation.',
   keywords: 'free ambulance service JKKN, 24/7 emergency ambulance, dental college ambulance, medical emergency transportation, JKKN institutions ambulance, emergency medical care',

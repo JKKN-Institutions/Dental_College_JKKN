@@ -7,6 +7,7 @@ import { generateBreadcrumbSchema, generateWebPageSchema, generateSpeakableWebPa
 import { BookOpen, Target, Users, Settings2, GraduationCap, Phone } from 'lucide-react';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/committee/sedg-cell/' },
   title: 'SEDG Cell | JKKN Dental College',
   description: 'Supporting marginalized and economically weaker students with scholarships, mentoring, and inclusive academic opportunities as per NEP 2020.',
   keywords: 'SEDG cell, socio-economic support, disadvantaged groups, scholarships, inclusive education, NEP 2020, UGC guidelines, JKKN dental',

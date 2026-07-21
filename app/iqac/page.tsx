@@ -7,6 +7,7 @@ import StructuredData from '@/components/StructuredData';
 import { generateBreadcrumbSchema, generateWebPageSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/iqac/' },
   title: 'IQAC | Internal Quality Assurance Cell | JKKN Dental College',
   description: 'IQAC at JKKN Dental College ensures continuous quality improvement in academics, research, administration, and infrastructure as per NAAC guidelines.',
   keywords: 'IQAC, quality assurance, internal quality cell, academic quality, NAAC IQAC',

@@ -3,6 +3,7 @@ import { PdfRedirect } from '@/components/pdf-redirect';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/academics/courses/add-on-courses/implant-program-2025/' },
   title: 'Implant Program 2025 - JKKN Dental College',
   description: 'Join our comprehensive Implantology program 2025 at JKKN Dental College. Hands-on training in implant placement and prosthetics. Register now.',
   keywords: 'implant program 2025, implantology training, dental implant course, hands-on implant training, CBCT imaging, implant prosthetics, dental certification',

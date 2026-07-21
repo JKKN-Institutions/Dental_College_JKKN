@@ -3,6 +3,7 @@ import { Metadata } from 'next';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/accreditation/nirf/nirf-2025/sdg-institution/' },
   title: 'NIRF SDG Ranking 2025 | JKKN Dental College',
   description: 'View JKKN Dental College NIRF 2025 SDG institutions ranking. Check our sustainable development goals performance score. Download SDG report.',
   keywords: 'NIRF SDG 2025, sustainable development goals, SDG ranking, sustainability score, NIRF SDG institutions',

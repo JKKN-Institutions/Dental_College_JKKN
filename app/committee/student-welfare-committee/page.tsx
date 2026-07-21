@@ -7,6 +7,7 @@ import { generateBreadcrumbSchema, generateWebPageSchema, generateSpeakableWebPa
 import { User } from 'lucide-react';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/committee/student-welfare-committee/' },
   title: 'Learner Welfare Committee | JKKN Dental College',
   description: 'Dedicated to learner well-being, academic support, and overall welfare. View committee members committed to learner success.',
   keywords: 'learner welfare committee, learner wellbeing, academic support, learner care, welfare programs, JKKN dental college, learner services',

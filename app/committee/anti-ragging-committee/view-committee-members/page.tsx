@@ -4,6 +4,7 @@ import StructuredData from '@/components/StructuredData';
 import { generateBreadcrumbSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/committee/anti-ragging-committee/view-committee-members/' },
   title: 'Anti Ragging Committee Members | JKKN Dental College',
   description: 'View the current members of the Anti Ragging Committee at JKKN Dental College committed to maintaining a safe and respectful campus.',
   keywords: 'anti ragging committee members, committee faculty, student safety, ragging prevention team, JKKN dental college, campus security',

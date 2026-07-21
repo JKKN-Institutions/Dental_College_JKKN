@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import StructuredData from '@/components/StructuredData';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/mds/' },
   title: 'MDS Specializations at JKKN Dental College | 5 Streams',
   description: 'MDS at JKKN Dental College — 5 specializations: Periodontics, Orthodontics, Prosthodontics, Conservative Dentistry & Oral Medicine. NEET-MDS, Tamil Nadu.',
   openGraph: {

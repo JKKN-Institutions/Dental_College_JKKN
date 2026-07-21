@@ -8,6 +8,7 @@ import StructuredData from '@/components/StructuredData';
 import { generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/research/start-up/' },
   title: 'Startup Hub & Entrepreneurship | JKKN Dental College',
   description: 'Empowering dental entrepreneurs with incubation support, mentorship, and funding for innovative healthcare solutions and startups.',
   keywords: 'dental startups, healthcare entrepreneurship, incubation hub, digital dentistry, AI diagnostics, dental innovation, JKKN startup',

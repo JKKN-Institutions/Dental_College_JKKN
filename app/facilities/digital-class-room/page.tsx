@@ -8,6 +8,7 @@ import { generateBreadcrumbSchema, generateWebPageSchema, generateSpeakableWebPa
 import { Tv, LayoutGrid, Wifi, Palette, Sparkles } from 'lucide-react';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/facilities/digital-class-room/' },
   title: 'Digital Classrooms - Smart Technology at JKKN Dental College',
   description: 'JKKN digital classrooms feature smart TVs, AI tools, design thinking integration, high-speed connectivity, and interactive learning for enhanced dental education.',
   keywords: 'digital classroom JKKN, smart classroom dental college, AI-powered education, interactive learning, multimedia projectors, educational technology, modern classroom facilities',
