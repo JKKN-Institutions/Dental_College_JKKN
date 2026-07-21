@@ -1,6 +1,29 @@
 import { resolve } from "path";
 import type { NextConfig } from "next";
 
+type RedirectRule = { source: string; destination: string; permanent: boolean };
+
+/**
+ * `trailingSlash: true` means any redirect destination WITHOUT a trailing
+ * slash triggers a SECOND 308 normalisation redirect, i.e. 308 -> 308 -> 200.
+ * Normalising destinations here collapses every rule to a single hop.
+ *
+ * Deliberately skipped:
+ *   - external URLs (http…)      — not ours to normalise
+ *   - destinations already ending in "/"
+ *   - wildcard destinations (":") — appending "/" to `/admissions/:path*`
+ *     can produce `/admissions//` when :path* matches zero segments
+ */
+const oneHop = (r: RedirectRule): RedirectRule => ({
+  ...r,
+  destination:
+    r.destination.startsWith("http") ||
+    r.destination.endsWith("/") ||
+    r.destination.includes(":")
+      ? r.destination
+      : `${r.destination}/`,
+});
+
 const nextConfig: NextConfig = {
   turbopack: {
     root: resolve("."),
@@ -21,7 +44,7 @@ const nextConfig: NextConfig = {
     minimumCacheTTL: 60 * 60 * 24 * 365, // 1 year
   },
   async redirects() {
-    return [
+    const rules: RedirectRule[] = [
       // Old WordPress URLs → New Next.js URLs
       { source: '/contact-us/', destination: '/contact', permanent: true },
       { source: '/contact-us', destination: '/contact', permanent: true },
@@ -32,12 +55,18 @@ const nextConfig: NextConfig = {
       { source: '/bds/', destination: '/academics/details-of-academic-programs/bds', permanent: true },
       { source: '/mds/', destination: '/academics/details-of-academic-programs/mds', permanent: true },
       // Removed: /contact/ → /contact redirect (caused infinite loop with trailingSlash: true)
-      { source: '/iqac/', destination: '/iqac', permanent: true },
-      { source: '/alumni/', destination: '/alumni', permanent: true },
+      // Removed 2026-07-21: /iqac/ → /iqac and /alumni/ → /alumni had the SAME
+      // defect and were live infinite redirect loops in production (verified by
+      // curl: "Maximum (12) redirects followed"). Under trailingSlash: true the
+      // destination is normalised straight back to the source. Both pages exist
+      // (app/iqac/page.tsx, app/alumni/page.tsx) so no redirect is needed at all.
 
       // Admission path rename: /admission → /admissions
       { source: '/admission', destination: '/admissions', permanent: true },
-      { source: '/admission/:path*', destination: '/admissions/:path*', permanent: true },
+      // Trailing slash written by hand: oneHop skips wildcard destinations, and
+      // the bare '/admission' rule above already covers the zero-segment case
+      // (so :path* never matches empty here and cannot produce '//').
+      { source: '/admission/:path*', destination: '/admissions/:path*/', permanent: true },
 
       // Misspelled URLs & Common Shortcuts
       { source: '/information-center/careers', destination: 'https://jobs.cvviz.com/jkkn_institutions', permanent: false },
@@ -168,8 +197,9 @@ const nextConfig: NextConfig = {
       // Committee old slugs
       { source: '/grievance-redressal-committee/', destination: '/committee/student-grievance-redressal-committee-sgrc', permanent: true },
       { source: '/grievance-redressal-committee', destination: '/committee/student-grievance-redressal-committee-sgrc', permanent: true },
-      { source: '/parent-teacher-association/', destination: '/committee', permanent: true },
-      { source: '/parent-teacher-association', destination: '/committee', permanent: true },
+      // /committee has no page.tsx — these used to 301 straight into a 404.
+      { source: '/parent-teacher-association/', destination: '/committee/student-welfare-committee/', permanent: true },
+      { source: '/parent-teacher-association', destination: '/committee/student-welfare-committee/', permanent: true },
       { source: '/women-empowerment-cell-sexual-harassment-committee/', destination: '/committee/internal-complaints-committee-icc', permanent: true },
       { source: '/women-empowerment-cell-sexual-harassment-committee', destination: '/committee/internal-complaints-committee-icc', permanent: true },
       { source: '/dental-education-committee/', destination: '/committee/dental-education-department', permanent: true },
@@ -182,8 +212,9 @@ const nextConfig: NextConfig = {
       { source: '/institutional-finance-committee', destination: '/committee/finance-committee', permanent: true },
       { source: '/physical-infrastructure-and-purchase-maintenance-committee-2/', destination: '/committee/physical-infrastructure-and-purchase-maintenance-committee', permanent: true },
       { source: '/disciplinary-committee-2', destination: '/committee/disciplinary-committee', permanent: true },
-      { source: '/cac/', destination: '/committee', permanent: true },
-      { source: '/cac', destination: '/committee', permanent: true },
+      // /committee has no page.tsx — these used to 301 straight into a 404.
+      { source: '/cac/', destination: '/academic-council/', permanent: true },
+      { source: '/cac', destination: '/academic-council/', permanent: true },
       { source: '/anti-ragging-seminar-program/', destination: '/committee/anti-ragging-committee', permanent: true },
 
       // Facilities old slugs
@@ -220,6 +251,16 @@ const nextConfig: NextConfig = {
       // /category/omegle-cc/ must reach the middleware to get a 410 Gone.
       { source: '/web-stories/:path*', destination: '/', permanent: true },
       { source: '/index.php/:path*', destination: '/', permanent: true },
+
+      // WP-era PDFs that STILL earn Google clicks (46 clicks, GSC 2026-04-21
+      // to 2026-07-19). The wildcard below would send them to the homepage,
+      // which Google treats as an irrelevant redirect / soft 404. These four
+      // MUST stay above it — first match wins.
+      { source: '/wp-content/uploads/2024/04/BDS-Enzymes.pdf', destination: '/academics/statutes-pertaining-to-academic-departments/bds-syllabus/', permanent: true },
+      { source: '/wp-content/uploads/2025/03/syllabus-bds-course-1.pdf', destination: '/academics/statutes-pertaining-to-academic-departments/bds-syllabus/', permanent: true },
+      { source: '/wp-content/uploads/2025/03/ACADEMIC-SCHEDULE-2025-2026.pdf', destination: '/academic-calendar-2023-2024-2024-2025/', permanent: true },
+      { source: '/wp-content/uploads/2025/03/mds-regulation-15052018.pdf', destination: '/academics/details-of-academic-programs/mds/', permanent: true },
+
       { source: '/wp-content/:path*', destination: '/', permanent: true },
 
       // Allied health / B.Sc programs (not this college) → homepage
@@ -262,7 +303,28 @@ const nextConfig: NextConfig = {
       { source: '/hostel-advisory-welfare-committee', destination: '/committee/hostel-advisory-and-welfare-committee', permanent: true },
       { source: '/physical-education-extra-currucular-activities-committee/', destination: '/committee/physical-education-and-extra-curricular-activities-committee', permanent: true },
       { source: '/physical-education-extra-currucular-activities-committee', destination: '/committee/physical-education-and-extra-curricular-activities-committee', permanent: true },
+
+      // Short URLs recovered from dead rewrites (2026-07-21). Each used to be a
+      // rewrite whose destination had no page.tsx, so it served a live 404.
+      // Exact-match sources only — never :path* here, or /events/[slug] and
+      // similar real dynamic routes would be swallowed.
+      { source: '/news', destination: '/blog/', permanent: true },
+      { source: '/downloads', destination: '/admissions/prospectus/', permanent: true },
+      { source: '/feedback', destination: '/academics/curriculum-feedback/', permanent: true },
+      { source: '/courses', destination: '/academics/', permanent: true },
+      { source: '/nirf', destination: '/accreditation/nirf/nirf-2026/dental/', permanent: true },
+      { source: '/nirf-2025', destination: '/accreditation/nirf/nirf-2025/dental/', permanent: true },
+      { source: '/nirf-2024', destination: '/accreditation/nirf/nirf-2024/dental/', permanent: true },
+      { source: '/best-practices', destination: '/about/', permanent: true },
+      { source: '/digital-campus', destination: '/ai-dental-campus/', permanent: true },
+      // Linked from the Header mega-menu (data/siteData.ts) — was a live 404.
+      { source: '/accreditation-ranking-status', destination: '/accreditation/naac/', permanent: true },
+      { source: '/details-of-academic-programs', destination: '/academics/', permanent: true },
+      { source: '/statutes-pertaining-to-academic-departments', destination: '/academics/', permanent: true },
     ];
+
+    // Collapse 308 -> 308 -> 200 chains into a single hop. See oneHop above.
+    return rules.map(oneHop);
   },
   async headers() {
     return [
@@ -316,7 +378,8 @@ const nextConfig: NextConfig = {
       { source: '/affiliation-mds', destination: '/about/approvals-and-affiliation/affiliation-mds' },
       { source: '/dci-bds', destination: '/about/approvals-and-affiliation/dci-bds' },
       { source: '/dci-mds', destination: '/about/approvals-and-affiliation/dci-mds' },
-      { source: '/accreditation-ranking-status', destination: '/about/accreditation-ranking-status' },
+      // REMOVED: /accreditation-ranking-status — destination has no page.tsx
+      // (served a 404). Now a 301 to /accreditation/naac/ in redirects().
       { source: '/annual-report', destination: '/about/annual-report' },
       { source: '/annual-account-statement', destination: '/about/annual-account-statement' },
 
@@ -324,7 +387,8 @@ const nextConfig: NextConfig = {
       // Old /administration/* URLs are 301-redirected in redirects() above.
 
       // Academics section - Programs
-      { source: '/details-of-academic-programs', destination: '/academics/details-of-academic-programs' },
+      // REMOVED: /details-of-academic-programs — no page.tsx at destination
+      // (served a 404). Now a 301 to /academics/ in redirects().
       { source: '/bds', destination: '/academics/details-of-academic-programs/bds' },
       { source: '/mds', destination: '/academics/details-of-academic-programs/mds' },
       { source: '/periodontics', destination: '/academics/details-of-academic-programs/mds/periodontics' },
@@ -332,13 +396,14 @@ const nextConfig: NextConfig = {
       { source: '/prosthodontics-crown-and-bridge', destination: '/academics/details-of-academic-programs/mds/prosthodontics-crown-and-bridge' },
       { source: '/conservative-dentistry-and-endodontics', destination: '/academics/details-of-academic-programs/mds/conservative-dentistry-and-endodontics' },
       { source: '/oral-medicine-and-radiology', destination: '/academics/details-of-academic-programs/mds/oral-medicine' },
-      { source: '/oral-and-maxillofacial-surgery', destination: '/academics/details-of-academic-programs/mds/oral-and-maxillofacial-surgery' },
-      { source: '/pediatric-and-preventive-dentistry', destination: '/academics/details-of-academic-programs/mds/pediatric-and-preventive-dentistry' },
-      { source: '/oral-pathology-and-microbiology', destination: '/academics/details-of-academic-programs/mds/oral-pathology-and-microbiology' },
-      { source: '/public-health-dentistry', destination: '/academics/details-of-academic-programs/mds/public-health-dentistry' },
+      // REMOVED (no page.tsx at destination — these four MDS specialisations
+      // have no page on this site). /oral-and-maxillofacial-surgery,
+      // /oral-pathology-and-microbiology and /public-health-dentistry are
+      // already 301'd to the MDS index in redirects(); the rewrites were dead.
 
       // Academics section - Syllabus
-      { source: '/statutes-pertaining-to-academic-departments', destination: '/academics/statutes-pertaining-to-academic-departments' },
+      // REMOVED: /statutes-pertaining-to-academic-departments — no page.tsx
+      // at destination. Now a 301 to /academics/ in redirects().
       { source: '/bds-syllabus', destination: '/academics/statutes-pertaining-to-academic-departments/bds-syllabus' },
       { source: '/mds-prosthodontics-syllabus', destination: '/academics/statutes-pertaining-to-academic-departments/mds-prosthodontics-syllabus' },
       { source: '/mds-periodontics-syllabus', destination: '/academics/statutes-pertaining-to-academic-departments/mds-periodontics-syllabus' },
@@ -351,42 +416,39 @@ const nextConfig: NextConfig = {
       { source: '/academic-attributes', destination: '/academics/academic-attributes' },
       { source: '/learning-outcomes', destination: '/academics/learning-outcomes' },
       { source: '/student-centric-teaching-methods', destination: '/academics/student-centric-teaching-methods' },
-      { source: '/slow-advanced-learners', destination: '/academics/slow-advanced-learners' },
-      { source: '/courses', destination: '/academics/courses' },
+      // REMOVED: /slow-advanced-learners (no page.tsx, no traffic — now a clean 404)
+      // REMOVED: /courses (no page.tsx) — now a 301 to /academics/ in redirects()
       { source: '/add-on-courses', destination: '/academics/courses/add-on-courses' },
       { source: '/value-added-courses', destination: '/academics/courses/value-added-courses' },
       { source: '/cross-cutting-issues', destination: '/academics/courses/cross-cutting-issues' },
       { source: '/capability-enhancement-program', destination: '/academics/capability-enhancement-program' },
       { source: '/neet-qualifiers', destination: '/academics/capability-enhancement-program/neet-qualifiers' },
-      { source: '/career-counselling', destination: '/academics/career-counselling' },
+      // REMOVED: /career-counselling (no page.tsx — now a clean 404)
       { source: '/curriculum-feedback', destination: '/academics/curriculum-feedback' },
-      { source: '/faculty-achievements', destination: '/academics/faculty-achievements' },
+      // REMOVED: /faculty-achievements (no page.tsx — now a clean 404)
       { source: '/fdp-attended', destination: '/academics/faculty-achievements/fdp-attended' },
       { source: '/webinar-conferences-attended', destination: '/academics/faculty-achievements/webinar-conferences-attended' },
-      { source: '/academic-calendar', destination: '/academics/academic-calendar' },
-      { source: '/academic-calendar-2023-2024-2024-2025', destination: '/academics/academic-calendar/academic-calendar-2023-2024-2024-2025' },
-      { source: '/academic-calendar-2022-2023', destination: '/academics/academic-calendar/academic-calendar-2022-2023' },
-      { source: '/academic-calendar-2021-2022', destination: '/academics/academic-calendar/academic-calendar-2021-2022' },
-      { source: '/academic-calendar-2020-2021', destination: '/academics/academic-calendar/academic-calendar-2020-2021' },
-      { source: '/academic-calendar-2019-2020', destination: '/academics/academic-calendar/academic-calendar-2019-2020' },
-      { source: '/academic-calendar-2018-2019', destination: '/academics/academic-calendar/academic-calendar-2018-2019' },
+      // REMOVED: /academic-calendar — no page.tsx at destination, and the path
+      // is already 301'd to /academic-calendar-2023-2024-2024-2025/ in redirects().
+      // REMOVED: the six /academic-calendar-YYYY-YYYY rewrites. Each source has
+      // its own page.tsx and array-form rewrites run as `afterFiles`, so the
+      // real page always won and these never fired. Destinations don't exist.
 
       // Accreditation section
-      { source: '/nirf', destination: '/accreditation/nirf' },
-      { source: '/nirf-2024', destination: '/accreditation/nirf/nirf-2024' },
-      { source: '/overall-2024', destination: '/accreditation/nirf/nirf-2024/overall' },
-      { source: '/innovation-2024', destination: '/accreditation/nirf/nirf-2024/innovation' },
-      { source: '/nirf-2025', destination: '/accreditation/nirf/nirf-2025' },
+      // REMOVED (no page.tsx at destination): /nirf, /nirf-2024, /nirf-2025,
+      // /overall-2024, /innovation-2024. The three year-index paths are now
+      // 301'd to their /dental/ pages in redirects(); the two 2024 sub-pages
+      // have no equivalent page and return a clean 404.
       { source: '/overall', destination: '/accreditation/nirf/nirf-2025/overall' },
       { source: '/innovation-2025', destination: '/accreditation/nirf/nirf-2025/innovation' },
       { source: '/sdg-institution', destination: '/accreditation/nirf/nirf-2025/sdg-institution' },
-      { source: '/nirf-2025-sdg', destination: '/accreditation/nirf/nirf-2025/sdg-institution/nirf-2025-sdg' },
+      // REMOVED: /nirf-2025-sdg — no page.tsx at destination (clean 404 now)
 
       // Admission section
       // Note: /admission (singular) is handled by 301 redirect above, not a rewrite
       { source: '/prospectus', destination: '/admissions/prospectus' },
       { source: '/admission-process-guidelines', destination: '/admission-process' },
-      { source: '/admission-criterion-in-others', destination: '/admissions/admission-process-guidelines/admission-criterion-in-others' },
+      // REMOVED: /admission-criterion-in-others — no page.tsx (clean 404 now)
       { source: '/fee-refund-policy', destination: '/admissions/fee-refund-policy' },
       { source: '/ugc-fee-refund-policy', destination: '/admissions/fee-refund-policy/ugc-fee-refund-policy' },
       { source: '/scholarship-policy-for-dental-college', destination: '/admissions/scholarship-policy-for-dental-college' },
@@ -426,10 +488,9 @@ const nextConfig: NextConfig = {
       { source: '/patient-welfare-committee', destination: '/committee/patient-welfare-committee' },
       { source: '/ncc-nss', destination: '/committee/ncc/nss' },
       { source: '/international-student-cell-committee', destination: '/committee/international-student-cell-committee' },
-      { source: '/sports-committee', destination: '/committee/sports-committee' },
-      { source: '/cultural-committee', destination: '/committee/cultural-committee' },
-      { source: '/institutional-biosafety-committee-ibsc', destination: '/committee/institutional-biosafety-committee-ibsc' },
-      { source: '/rti-committee', destination: '/committee/rti-committee' },
+      // REMOVED (no page.tsx at destination — these four committees have no
+      // page on this site): /sports-committee, /cultural-committee,
+      // /institutional-biosafety-committee-ibsc, /rti-committee.
       { source: '/physical-infrastructure-and-purchase-maintenance-committee', destination: '/committee/physical-infrastructure-and-purchase-maintenance-committee' },
       // Note: /hostel-advisory-welfare-committee and /physical-education-extra-currucular-activities-committee
       // now handled by 301 redirects (see redirects() above) to consolidate duplicates into canonical /committee/* paths.
@@ -458,24 +519,24 @@ const nextConfig: NextConfig = {
       // Information Center section
       { source: '/right-to-information-rti', destination: '/information-center/right-to-information-rti' },
       { source: '/careers', destination: '/information-center/careers' },
-      { source: '/tender', destination: '/information-center/tender' },
-      { source: '/downloads', destination: '/information-center/downloads' },
-      { source: '/feedback', destination: '/information-center/feedback' },
-      { source: '/announcements', destination: '/information-center/announcements' },
-      { source: '/news', destination: '/information-center/news' },
-      { source: '/events', destination: '/information-center/events' },
+      // REMOVED (no page.tsx at destination — all served 404s):
+      //   /tender, /announcements  -> clean 404
+      //   /downloads, /feedback, /news -> now 301'd in redirects()
+      //   /events -> deliberately NOT redirected: app/events/[slug] serves real
+      //   event pages and their BreadcrumbSchema names /events/ as the parent.
+      //   Redirecting /events elsewhere would point that parent at another
+      //   section. Proper fix is an app/events/page.tsx index (tracked separately).
 
       // Mandatory Disclosures section
       { source: '/guidelines-on-public-disclosure-by-heis', destination: '/mandatory-disclosures/guidelines-on-public-disclosure-by-heis' },
       { source: '/letter-of-undertaking', destination: '/mandatory-disclosures/letter-of-undertaking' },
-      { source: '/ugc-public-disclosure-compliance', destination: '/mandatory-disclosures/ugc-public-disclosure-compliance' },
+      // REMOVED: /ugc-public-disclosure-compliance — no page.tsx at destination,
+      // and the path is already 301'd in redirects(); the rewrite was dead.
 
       // Others section
       { source: '/patient-safety-manual', destination: '/others/patient-safety-manual' },
-      { source: '/best-practices', destination: '/others/best-practices' },
-      { source: '/institutional-distinctiveness', destination: '/others/institutional-distinctiveness' },
-      { source: '/digital-campus', destination: '/others/digital-campus' },
-      { source: '/outreach', destination: '/others/outreach' },
+      // REMOVED (no page.tsx at destination): /institutional-distinctiveness and
+      // /outreach -> clean 404. /best-practices and /digital-campus -> now 301'd.
 
       // Alumni section
       { source: '/alumni-association-activities', destination: '/alumni/alumni-association-activities' },
