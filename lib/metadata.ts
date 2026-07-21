@@ -131,14 +131,21 @@ export function generatePageMetadata({
   dateModified?: string;
   ogImage?: string;
 }): Metadata {
-  const fullUrl = `https://dental.jkkn.ac.in${canonicalPath}`;
+  // The site runs `trailingSlash: true`, so a canonical without a trailing
+  // slash points at a 308 redirect rather than the live URL — Google discards
+  // such a canonical. Normalise here so callers can't get it wrong.
+  const normalizedPath =
+    canonicalPath === '/'
+      ? '/'
+      : `/${canonicalPath.replace(/^\/+|\/+$/g, '')}/`;
+  const fullUrl = `https://dental.jkkn.ac.in${normalizedPath}`;
 
   return {
     title,
     description,
     ...(keywords && { keywords }),
     alternates: {
-      canonical: canonicalPath
+      canonical: normalizedPath
     },
     authors: [{ name: "JKKN Dental College Editorial Team" }],
     ...(datePublished && {

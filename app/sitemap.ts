@@ -157,7 +157,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${baseUrl}/academics/mentor-mentee-program/`, lastModified: now, changeFrequency: 'monthly', priority: 0.6 },
     { url: `${baseUrl}/academics/academic-attributes/`, lastModified: now, changeFrequency: 'monthly', priority: 0.6 },
     { url: `${baseUrl}/academics/student-centric-teaching-methods/`, lastModified: now, changeFrequency: 'monthly', priority: 0.6 },
-    { url: `${baseUrl}/academics/curriculum-feedback/`, lastModified: now, changeFrequency: 'monthly', priority: 0.5 },
+    // NOTE: /academics/curriculum-feedback/ is deliberately NOT listed — the
+    // page calls redirect() to an external JotForm, so it never returns 200.
+    // Same rule as /information-center/careers/ above.
     { url: `${baseUrl}/academics/courses/value-added-courses/`, lastModified: now, changeFrequency: 'monthly', priority: 0.6 },
     { url: `${baseUrl}/academics/courses/add-on-courses/`, lastModified: now, changeFrequency: 'monthly', priority: 0.6 },
     { url: `${baseUrl}/academics/courses/add-on-courses/implant-program-2025/`, lastModified: now, changeFrequency: 'monthly', priority: 0.6 },
@@ -332,7 +334,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${baseUrl}/pdf/Add-on-Course-Implant-program-2025.pdf`, lastModified: '2025-09-01', changeFrequency: 'yearly', priority: 0.4 },
 
     // Information & Mandatory
-    { url: `${baseUrl}/information-center/careers/`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
+    // NOTE: /information-center/careers/ is deliberately NOT listed — it
+    // 307-redirects off-site to jobs.cvviz.com, and a sitemap must contain
+    // only self-hosted, indexable 200 URLs.
     { url: `${baseUrl}/information-center/right-to-information-rti/`, lastModified: now, changeFrequency: 'yearly', priority: 0.4 },
     { url: `${baseUrl}/mandatory-disclosures/guidelines-on-public-disclosure-by-heis/`, lastModified: now, changeFrequency: 'yearly', priority: 0.4 },
     { url: `${baseUrl}/mandatory-disclosures/letter-of-undertaking/`, lastModified: now, changeFrequency: 'yearly', priority: 0.4 },

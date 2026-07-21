@@ -67,7 +67,9 @@ export const metadata: Metadata = {
     images: ['/images/BDS-hero-image.png'],
   },
   alternates: {
-    canonical: 'https://dental.jkkn.ac.in/admission/',
+    // Must be the plural /admissions/ — /admission/ 301-redirects here
+    // (next.config.ts), and a canonical pointing at a redirect is discarded.
+    canonical: 'https://dental.jkkn.ac.in/admissions/',
   },
 };
 
