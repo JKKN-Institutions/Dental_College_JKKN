@@ -296,7 +296,12 @@ export default function NewPostForm({ userEmail, userName, userAvatar, categorie
     toast.success(`Estimated read time: ${mins} min`);
   }
 
-  async function handleSubmit(publish: boolean) {
+  /**
+   * `forceDraft` = the "Save as Draft" button, which always creates a draft.
+   * The primary "Create Post" button passes false and simply obeys the Status
+   * dropdown — so a post left on Draft is created as a draft, not published.
+   */
+  async function handleSubmit(forceDraft: boolean) {
     if (!title.trim()) return toast.error('Title is required.');
     if (!slug.trim()) return toast.error('Slug is required.');
 
@@ -304,7 +309,8 @@ export default function NewPostForm({ userEmail, userName, userAvatar, categorie
     const coverUrl = await uploadCoverImage();
     if (coverImageFile && !coverUrl) { setSaving(false); return; }
 
-    const status = publish ? 'published' : postStatus === 'published' ? 'draft' : postStatus;
+    const status = forceDraft ? 'draft' : postStatus;
+    if (forceDraft) setPostStatus('draft');
 
     const payload = {
       college_id: collegeId,
@@ -338,7 +344,13 @@ export default function NewPostForm({ userEmail, userName, userAvatar, categorie
     if (error) {
       toast.error('Failed to save: ' + error.message);
     } else {
-      toast.success(status === 'published' ? 'Post published!' : 'Draft saved!');
+      toast.success(
+        status === 'published'
+          ? 'Post published!'
+          : status === 'draft'
+          ? 'Saved as draft — not live.'
+          : `Post saved as ${status}.`
+      );
       router.push('/admin/blogs');
       router.refresh();
     }
@@ -561,7 +573,7 @@ export default function NewPostForm({ userEmail, userName, userAvatar, categorie
               <div className="flex gap-2 pt-1">
                 <button
                   type="button"
-                  onClick={() => handleSubmit(true)}
+                  onClick={() => handleSubmit(false)}
                   disabled={saving}
                   className="flex-1 flex items-center justify-center gap-2 bg-[#006837] text-white text-sm font-semibold py-2.5 rounded-xl hover:bg-[#005a2e] transition disabled:opacity-50"
                 >
@@ -571,12 +583,13 @@ export default function NewPostForm({ userEmail, userName, userAvatar, categorie
                 </button>
                 <button
                   type="button"
-                  onClick={() => handleSubmit(false)}
+                  onClick={() => handleSubmit(true)}
                   disabled={saving}
                   className="flex items-center justify-center gap-1.5 border border-gray-200 text-sm font-medium text-gray-600 px-3 py-2.5 rounded-xl hover:bg-gray-50 transition disabled:opacity-50"
+                  title="Save without publishing"
                 >
-                  <Eye className="w-3.5 h-3.5" />
-                  Save
+                  <FileText className="w-3.5 h-3.5" />
+                  Draft
                 </button>
               </div>
             </div>

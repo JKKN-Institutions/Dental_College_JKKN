@@ -48,6 +48,7 @@ const ADMIN_DISALLOW = [
   '/cms/',
   '/panel/',
   '/preview/',
+  '/blog/preview/',        // Draft preview links (also noindex + token-gated)
   '/draft/',
   '/staging/',
   '/test/',
@@ -308,7 +309,7 @@ export default function robots(): MetadataRoute.Robots {
           '/api/',
           ...ADMIN_DISALLOW.filter((p) =>
             ['/admin/', '/login/', '/signin/', '/dashboard/', '/preview/',
-             '/draft/', '/staging/', '/private/', '/internal/',
+             '/blog/preview/', '/draft/', '/staging/', '/private/', '/internal/',
              '/student-portal/', '/faculty-portal/'].includes(p)
           ),
           '/search/',

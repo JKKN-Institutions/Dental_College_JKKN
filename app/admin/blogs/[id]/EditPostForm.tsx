@@ -313,14 +313,21 @@ export default function EditPostForm({ blog, userEmail, userName, userAvatar, ca
     toast.success(`Estimated read time: ${mins} min`);
   }
 
-  async function handleSubmit(publish: boolean) {
+  /**
+   * `forceDraft` = the "Save as Draft" button, which always parks the post as a
+   * draft. The primary "Update Post" button passes false and simply obeys the
+   * Status dropdown — so a post left on Draft stays a draft, and switching the
+   * dropdown to Published is what puts it live.
+   */
+  async function handleSubmit(forceDraft: boolean) {
     if (!title.trim()) return toast.error('Title is required.');
     if (!slug.trim()) return toast.error('Slug is required.');
 
     setSaving(true);
     const coverUrl = await uploadCoverImage();
 
-    const status = publish ? 'published' : postStatus;
+    const status = forceDraft ? 'draft' : postStatus;
+    if (forceDraft) setPostStatus('draft');
 
     const payload: Record<string, unknown> = {
       title: title.trim(),
@@ -351,7 +358,13 @@ export default function EditPostForm({ blog, userEmail, userName, userAvatar, ca
     if (error) {
       toast.error('Failed to update: ' + error.message);
     } else {
-      toast.success(status === 'published' ? 'Post published!' : 'Post updated!');
+      toast.success(
+        status === 'published'
+          ? 'Post published!'
+          : status === 'draft'
+          ? 'Saved as draft — not live.'
+          : `Post saved as ${status}.`
+      );
       router.push('/admin/blogs');
       router.refresh();
     }
@@ -574,7 +587,7 @@ export default function EditPostForm({ blog, userEmail, userName, userAvatar, ca
               <div className="flex gap-2 pt-1">
                 <button
                   type="button"
-                  onClick={() => handleSubmit(true)}
+                  onClick={() => handleSubmit(false)}
                   disabled={saving}
                   className="flex-1 flex items-center justify-center gap-2 bg-[#006837] text-white text-sm font-semibold py-2.5 rounded-xl hover:bg-[#005a2e] transition disabled:opacity-50"
                 >
@@ -584,14 +597,27 @@ export default function EditPostForm({ blog, userEmail, userName, userAvatar, ca
                 </button>
                 <button
                   type="button"
-                  onClick={() => handleSubmit(false)}
+                  onClick={() => handleSubmit(true)}
                   disabled={saving}
                   className="flex items-center justify-center gap-1.5 border border-gray-200 text-sm font-medium text-gray-600 px-3 py-2.5 rounded-xl hover:bg-gray-50 transition disabled:opacity-50"
+                  title="Save without publishing"
                 >
-                  <Eye className="w-3.5 h-3.5" />
-                  Save
+                  <FileText className="w-3.5 h-3.5" />
+                  Draft
                 </button>
               </div>
+
+              <Link
+                href={`/blog/preview/${blog.id}/`}
+                target="_blank"
+                className="flex items-center justify-center gap-1.5 w-full text-sm font-medium text-gray-600 border border-gray-200 py-2.5 rounded-xl hover:bg-gray-50 transition"
+              >
+                <Eye className="w-3.5 h-3.5" />
+                Preview
+              </Link>
+              <p className="text-[11px] text-gray-400 -mt-2 text-center">
+                Save first — the preview shows what is stored.
+              </p>
             </div>
           </div>
 

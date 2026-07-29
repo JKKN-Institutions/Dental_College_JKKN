@@ -11,7 +11,7 @@ export default async function AdminBlogsPage() {
   const [{ data: blogs }, { data: categories }] = await Promise.all([
     supabase
       .from('blogs')
-      .select('id, title, slug, category, author_name, is_published, created_at, published_at, view_count, read_time')
+      .select('id, title, slug, category, author_name, is_published, created_at, published_at, view_count, read_time, preview_token')
       .eq('college_id', collegeId)
       .order('created_at', { ascending: false }),
     supabase

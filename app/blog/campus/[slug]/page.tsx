@@ -7,6 +7,7 @@ import { ScrollToTop } from '@/components/ScrollToTop';
 import CampusBlogContent from './CampusBlogContent';
 import StructuredData from '@/components/StructuredData';
 import { generateSpeakableWebPageSchema } from '@/lib/metadata';
+import { renderBlogBody } from '@/lib/blog-render';
 
 export const dynamic = 'force-dynamic';
 
@@ -58,49 +59,6 @@ export async function generateMetadata({
       ...(post.cover_image_url && { images: [post.cover_image_url] }),
     },
   };
-}
-
-/** Extract h2/h3 headings from HTML and inject id attributes for TOC */
-function processContent(
-  html: string
-): { processedHtml: string; tocItems: { id: string; label: string }[] } {
-  if (!html) return { processedHtml: '', tocItems: [] };
-
-  const tocItems: { id: string; label: string }[] = [];
-  const seen = new Map<string, number>();
-
-  const processedHtml = html.replace(
-    /<h([23])([^>]*)>(.*?)<\/h\1>/gi,
-    (_, level: string, attrs: string, inner: string) => {
-      const label = inner.replace(/<[^>]+>/g, '').trim();
-      const base = label
-        .toLowerCase()
-        .replace(/[^\w\s-]/g, '')
-        .replace(/\s+/g, '-')
-        .replace(/-+/g, '-')
-        .trim();
-
-      const count = seen.get(base) ?? 0;
-      const id = count > 0 ? `${base}-${count}` : base;
-      seen.set(base, count + 1);
-
-      tocItems.push({ id, label });
-
-      if (!attrs.includes('id=')) {
-        return `<h${level}${attrs} id="${id}">${inner}</h${level}>`;
-      }
-      return `<h${level}${attrs}>${inner}</h${level}>`;
-    }
-  );
-
-  return { processedHtml, tocItems };
-}
-
-/** Estimate reading time from HTML content */
-function calcReadMeta(content: string): { words: number; readTime: number } {
-  const text = content.replace(/<[^>]+>/g, ' ');
-  const words = text.split(/\s+/).filter(Boolean).length;
-  return { words, readTime: Math.max(1, Math.ceil(words / 200)) };
 }
 
 export default async function CampusBlogPost({
@@ -172,25 +130,7 @@ export default async function CampusBlogPost({
   ]);
 
   // Structured posts (new format with sections JSONB) skip HTML processing
-  const isStructured = !!post.sections;
-
-  const contentHtml = post.content ?? '';
-  const isHtml = contentHtml.includes('<');
-
-  const rawHtml = isStructured
-    ? ''
-    : isHtml
-    ? contentHtml
-    : contentHtml
-        .split(/\n\n+/)
-        .map((p: string) => `<p>${p.replace(/\n/g, '<br/>')}</p>`)
-        .join('');
-
-  const { processedHtml, tocItems } = isStructured
-    ? { processedHtml: '', tocItems: [] }
-    : processContent(rawHtml);
-
-  const { words, readTime } = calcReadMeta(rawHtml);
+  const { processedHtml, tocItems, words, readTime } = renderBlogBody(post);
 
   return (
     <div className="min-h-screen bg-white">

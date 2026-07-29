@@ -17,6 +17,7 @@ import {
   Trash2,
   ExternalLink,
   Loader2,
+  Link2,
 } from 'lucide-react';
 import ConfirmModal from '../ConfirmModal';
 
@@ -31,6 +32,7 @@ interface Blog {
   published_at: string | null;
   view_count: number | null;
   read_time: string | null;
+  preview_token: string | null;
 }
 
 interface Category {
@@ -120,6 +122,25 @@ export default function BlogsTableClient({ blogs, categories }: Props) {
       router.refresh();
     }
     setDeletingId(null);
+  }
+
+  /**
+   * Copies a shareable preview link. The `token` is the post's secret, so the
+   * person receiving the link can read the draft without an admin login —
+   * see docs/migrations/2026-07-29-blog-preview-token.sql.
+   */
+  async function copyShareLink(blog: Blog) {
+    if (!blog.preview_token) {
+      toast.error('No preview token on this post. Run the preview-token migration.');
+      return;
+    }
+    const url = `${window.location.origin}/blog/preview/${blog.id}/?token=${blog.preview_token}`;
+    try {
+      await navigator.clipboard.writeText(url);
+      toast.success('Share link copied — anyone with it can view this post.');
+    } catch {
+      window.prompt('Copy this preview link:', url);
+    }
   }
 
   function toggleSelect(id: string) {
@@ -344,6 +365,22 @@ export default function BlogsTableClient({ blogs, categories }: Props) {
                                 <Pencil className="w-3.5 h-3.5" />
                                 Edit
                               </Link>
+                              <Link
+                                href={`/blog/preview/${blog.id}/`}
+                                target="_blank"
+                                className="flex items-center gap-2.5 px-3 py-2 text-sm text-gray-700 hover:bg-gray-50"
+                                onClick={() => { setOpenMenu(null); setMenuPos(null); }}
+                              >
+                                <Eye className="w-3.5 h-3.5" />
+                                Preview
+                              </Link>
+                              <button
+                                onClick={() => { setOpenMenu(null); setMenuPos(null); copyShareLink(blog); }}
+                                className="w-full flex items-center gap-2.5 px-3 py-2 text-sm text-gray-700 hover:bg-gray-50"
+                              >
+                                <Link2 className="w-3.5 h-3.5" />
+                                Copy Share Link
+                              </button>
                               {blog.is_published && blog.slug && (
                                 <Link
                                   href={`/blog/campus/${blog.slug}`}
