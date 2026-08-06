@@ -126,7 +126,7 @@ export const siteContent = {
       },
       {
         label: "ACCREDITATION",
-        href: "/accreditation",
+        href: "/accreditation/naac",
         submenu: [
           { label: "NAAC", href: "/accreditation/naac" },
           {
@@ -191,7 +191,7 @@ export const siteContent = {
       },
       {
         label: "RESEARCH",
-        href: "/research",
+        href: "/research/research-development-rd-cell",
         submenu: [
           { label: "RESEARCH & DEVELOPMENT (R&D) CELL", href: "/research/research-development-rd-cell" },
           { label: "RESEARCH AND DISSERTATION", href: "/research/research-and-dissertation" },

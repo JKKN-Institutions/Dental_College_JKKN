@@ -248,7 +248,7 @@ export function GetDentalCollegePages(pathname: string): MenuGroup[] {
       groupLabel: 'Accreditation',
       menus: [
         {
-          href: '/accreditation',
+          href: '/accreditation/naac',
           label: 'Accreditation',
           icon: Award,
           active: pathname.startsWith('/accreditation'),
@@ -290,7 +290,7 @@ export function GetDentalCollegePages(pathname: string): MenuGroup[] {
       groupLabel: 'Research',
       menus: [
         {
-          href: '/research',
+          href: '/research/research-development-rd-cell',
           label: 'Research',
           icon: BookOpen,
           active: pathname.startsWith('/research'),

@@ -148,7 +148,7 @@ export const topMenuItems: NavItem[] = [
   },
   {
     label: "ACCREDITATION",
-    href: "/accreditation",
+    href: "/accreditation/naac",
     submenu: [
       { label: "NAAC", href: "/accreditation/naac" },
       {
@@ -199,7 +199,7 @@ export const topMenuItems: NavItem[] = [
   },
   {
     label: "RESEARCH",
-    href: "/research",
+    href: "/research/research-development-rd-cell",
     submenu: [
       { label: "RESEARCH & DEVELOPMENT (R&D) CELL", href: "/research/research-development-rd-cell" },
       { label: "INSTITUTION'S INNOVATION COUNCIL ( IIC )", href: "/research/institutions-innovation-council-iic" },
