@@ -198,7 +198,7 @@ export default function BDSProgram() {
 
   const speakableSchema = generateSpeakableWebPageSchema({
     title: 'Best BDS College in Tamil Nadu — JKKN Dental College & Hospital',
-    description: 'JKKN Dental College, Namakkal offers DCI-approved BDS with 200+ dental chairs, 500+ daily patients, 92% placements, NAAC Accredited. Admission 2026-27 open.',
+    description: 'JKKN Dental College, Namakkal offers DCI-approved BDS with 200+ dental chairs, 500+ daily patients, 92% placement assistance, NAAC Accredited. Admission 2026-27 open.',
     url: 'https://dental.jkkn.ac.in/academics/details-of-academic-programs/bds/',
     dateModified: '2026-04-08',
     speakableCssSelectors: ['h1', '.hero-description', '.answer-capsule', 'article p'],
@@ -1455,7 +1455,7 @@ export default function BDSProgram() {
               {
                 name: '[Student Name — UPDATE]',
                 batch: 'BDS Batch [Year — UPDATE]',
-                quote: 'JKKN helped me secure an international placement opportunity. The placement cell actively connects learners with recruiters from NHS UK and dental practices in UAE. The 92% placement rate is backed by genuine support from the institution.',
+                quote: 'JKKN helped me secure an international placement opportunity. The placement cell actively connects learners with recruiters from NHS UK and dental practices in UAE. The 92% placement assistance is backed by genuine support from the institution.',
               },
             ].map((testimonial, idx) => (
               <div key={idx} className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6">

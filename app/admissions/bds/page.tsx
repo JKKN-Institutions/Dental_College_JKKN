@@ -41,7 +41,7 @@ import {
 export const metadata: Metadata = {
   title: 'BDS Admission 2026-27 | JKKN Dental College Komarapalayam',
   description:
-    'Apply for BDS admission at JKKN Dental College, Komarapalayam. NEET-UG based, 100 DCI-approved seats, scholarships, hostel & 92% placement support.',
+    'Apply for BDS admission at JKKN Dental College, Komarapalayam. NEET-UG based, 100 DCI-approved seats, scholarships, hostel & 92% placement assistance.',
   keywords:
     'BDS admission 2026, BDS admission Tamil Nadu, JKKN BDS admission, NEET BDS counselling, BDS seats Namakkal, dental college admission Komarapalayam, BDS fees Tamil Nadu',
   openGraph: {

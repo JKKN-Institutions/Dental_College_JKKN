@@ -68,7 +68,7 @@ const orgSchema = {
   "alternateName": "JKKN Dental",
   "url": "https://dental.jkkn.ac.in/",
   "logo": "https://dental.jkkn.ac.in/images/jkkn-dental-logo.webp",
-  "description": "JKKN Dental College & Hospital is a DCI-approved dental college located at Komarapalayam, Namakkal, Tamil Nadu, approximately 60 km from Salem via NH-544. Offering BDS (100 seats) and MDS programs, with 200+ dental chairs, 500+ daily patients, and 92% placement rate.",
+  "description": "JKKN Dental College & Hospital is a DCI-approved dental college located at Komarapalayam, Namakkal, Tamil Nadu, approximately 60 km from Salem via NH-544. Offering BDS (100 seats) and MDS programs, with 200+ dental chairs, 500+ daily patients, and 92% placement assistance.",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Natarajapuram, NH-544 (Salem-Coimbatore Highway)",

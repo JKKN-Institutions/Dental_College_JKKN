@@ -216,7 +216,7 @@ export default function SalemPage() {
             Are There Any Dental Colleges in Salem?
           </h2>
           <p className="snippet-answer text-gray-700 leading-relaxed mb-6 bg-white p-5 rounded-xl border border-[#7cb983]/30" style={{ fontSize: 'clamp(0.9rem, 1vw + 0.4rem, 1.05rem)' }}>
-            JKKN Dental College &amp; Hospital, located on NH-544 (Salem-Coimbatore Highway), Komarapalayam, is the top-rated dental college accessible from Salem. Approved by the Dental Council of India and affiliated to TN Dr. MGR Medical University, JKKN offers BDS (100 seats) and MDS with 92% placement support, approximately 60 km from Salem.
+            JKKN Dental College &amp; Hospital, located on NH-544 (Salem-Coimbatore Highway), Komarapalayam, is the top-rated dental college accessible from Salem. Approved by the Dental Council of India and affiliated to TN Dr. MGR Medical University, JKKN offers BDS (100 seats) and MDS with 92% placement assistance, approximately 60 km from Salem.
           </p>
           <p id="voice-answer" className="voice-answer text-gray-700 leading-relaxed" style={{ borderLeft: '3px solid #7cb983', paddingLeft: '1rem', fontSize: 'clamp(0.875rem, 1vw + 0.3rem, 1rem)' }}>
             JKKN Dental College &amp; Hospital, located sixty kilometres from Salem on NH-544 (Salem-Coimbatore Highway), is DCI-approved with two hundred plus dental chairs, five hundred plus daily patients, and a ninety-two percent placement record.
@@ -269,7 +269,7 @@ export default function SalemPage() {
           {/* E-E-A-T paragraph */}
           <div className="bg-white rounded-xl p-5 max-w-3xl mx-auto mb-8 text-left border border-gray-100">
             <p className="text-gray-600 text-sm leading-relaxed">
-              JKKN Dental College &amp; Hospital is a Dental Council of India (DCI) approved institution located at Natarajapuram, NH-544 (Salem-Coimbatore Highway), Komarapalayam, Namakkal District, Tamil Nadu 638183. Established in 1952 and operating as a dental college since 1987, JKKN is affiliated to TN Dr. MGR Medical University, Chennai. The college operates a 200-chair dental hospital receiving 500+ patients daily, providing learners with one of the highest clinical contact hours in the region. JKKN offers BDS (100 seats) and MDS in 5 specializations. The institution reports a 92% placement rate across graduating batches. Salem learners can reach JKKN Dental College &amp; Hospital in approximately 60 km via NH-544. Learn more about our <Link href="/accreditation/" className="text-[#006837] hover:underline">NAAC accreditation</Link>.
+              JKKN Dental College &amp; Hospital is a Dental Council of India (DCI) approved institution located at Natarajapuram, NH-544 (Salem-Coimbatore Highway), Komarapalayam, Namakkal District, Tamil Nadu 638183. Established in 1952 and operating as a dental college since 1987, JKKN is affiliated to TN Dr. MGR Medical University, Chennai. The college operates a 200-chair dental hospital receiving 500+ patients daily, providing learners with one of the highest clinical contact hours in the region. JKKN offers BDS (100 seats) and MDS in 5 specializations. The institution reports 92% placement assistance across graduating batches. Salem learners can reach JKKN Dental College &amp; Hospital in approximately 60 km via NH-544. Learn more about our <Link href="/accreditation/" className="text-[#006837] hover:underline">NAAC accreditation</Link>.
             </p>
           </div>
           <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-12" />

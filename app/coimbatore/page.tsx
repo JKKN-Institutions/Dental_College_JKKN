@@ -124,7 +124,7 @@ export default function CoimbatorePage() {
 
       {/* ── Voice Answer (sr-only — speakable/voice search target) ── */}
       <div className="voice-answer sr-only">
-        <p>JKKN Dental College &amp; Hospital is 108 km from Coimbatore on NH-544, offering 92% placement, 200 dental chairs, and BDS admission through Tamil Nadu state counseling.</p>
+        <p>JKKN Dental College &amp; Hospital is 108 km from Coimbatore on NH-544, offering 92% placement assistance, 200 dental chairs, and BDS admission through Tamil Nadu state counseling.</p>
       </div>
 
       {/* ── Breadcrumb ── */}
