@@ -121,7 +121,7 @@ export function generatePageMetadata({
   canonicalPath,
   datePublished,
   dateModified,
-  ogImage = "/images/BDS-hero-image.png"
+  ogImage = "/images/BDS-hero-image.webp"
 }: {
   title: string;
   description: string;

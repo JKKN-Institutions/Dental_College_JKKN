@@ -25,7 +25,7 @@ export default function AdmissionPopup() {
           rel="noopener noreferrer"
         >
           <Image
-            src="/images/dental-pop-up-poster.jpg"
+            src="/images/dental-pop-up-poster.webp"
             alt="JKKN Dental College Admission 2026"
             width={500}
             height={700}

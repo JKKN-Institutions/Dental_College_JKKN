@@ -76,7 +76,7 @@ export default function StudentCouncil() {
             {/* Image 2 */}
             <div className="w-full">
               <img
-                src="/images/student-council-2.jpg"
+                src="/images/student-council-2.webp"
                 alt="Learner Council 2"
                 className="w-full h-64 object-cover rounded"
               />

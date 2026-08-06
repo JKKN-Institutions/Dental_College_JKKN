@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     siteName: 'JKKN Dental College & Hospital',
     images: [
       {
-        url: 'https://dental.jkkn.ac.in/images/BDS-hero-image.png',
+        url: 'https://dental.jkkn.ac.in/images/BDS-hero-image.webp',
         width: 1200,
         height: 630,
         alt: 'JKKN Dental College & Hospital campus at Komarapalayam, Namakkal District, Tamil Nadu'
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'JKKN Dental College | Best Dental College in Tamil Nadu 2026',
     description: 'JKKN Dental College, Namakkal — DCI approved, NAAC A dental college in Tamil Nadu. BDS & MDS programs, 200+ chairs, 500+ daily patients, 92% placement assistance. Apply 2026.',
-    images: ['https://dental.jkkn.ac.in/images/BDS-hero-image.png'],
+    images: ['https://dental.jkkn.ac.in/images/BDS-hero-image.webp'],
   },
   alternates: {
     canonical: 'https://dental.jkkn.ac.in/',
@@ -449,7 +449,7 @@ export default function Home() {
       "availability": "https://schema.org/InStock",
       "validFrom": "2026-03-01"
     },
-    "image": "https://dental.jkkn.ac.in/images/BDS-hero-image.png"
+    "image": "https://dental.jkkn.ac.in/images/BDS-hero-image.webp"
   };
 
   // Principal/Dean Person Schema

@@ -155,7 +155,7 @@ export default function MDSPeriodontics() {
             <div className="relative">
               <div className="relative rounded-2xl border-4 border-white/20 overflow-hidden">
                 <Image
-                  src="/images/MDS-Periodontics-dept.jpg"
+                  src="/images/MDS-Periodontics-dept.webp"
                   alt="MDS Periodontics department with implant training facility at JKKN Dental College, Komarapalayam"
                   width={600}
                   height={400}
@@ -327,7 +327,7 @@ export default function MDSPeriodontics() {
             <div className="relative">
               <div className="relative rounded-3xl overflow-hidden min-h-[400px]">
                 <Image
-                  src="/images/DENTAL-PHOTOS/PHOTOS/IMG_6821.JPG"
+                  src="/images/DENTAL-PHOTOS/PHOTOS/IMG_6821.webp"
                   alt="MDS Periodontics students observing periodontal surgery procedure at JKKN Dental College clinical hall"
                   fill
                   className="object-cover"

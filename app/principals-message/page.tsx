@@ -77,7 +77,7 @@ export default function PrincipalsMessage() {
                   <div className="absolute -inset-2 rounded-2xl border border-[#7cb983] opacity-40" />
                   <div className="w-[200px] rounded-xl overflow-hidden border-2 border-[#7cb983] shadow-md">
                     <img
-                      src="/images/dental-principal-message.png"
+                      src="/images/dental-principal-message.webp"
                       alt="Dr. Dhanasekar Balakrishnan"
                       className="w-full h-auto"
                     />

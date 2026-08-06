@@ -171,7 +171,7 @@ export default function MDSPeriodontics() {
             <div className="relative">
               <div className="relative rounded-2xl border-4 border-white/20 overflow-hidden">
                 <Image
-                  src="/images/MDS-Periodontics-dept.jpg"
+                  src="/images/MDS-Periodontics-dept.webp"
                   alt="Periodontics Lab"
                   width={600}
                   height={400}

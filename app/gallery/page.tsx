@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 
 // ── Hardcoded images (used when no admin albums exist) ──────────────────────
 const HARDCODED_IMAGES: GalleryImage[] = [
-  { src: '/images/Pongal-Celebration-gallery.jpg',           alt: 'Pongal Celebration',           caption: 'Pongal Celebration' },
+  { src: '/images/Pongal-Celebration-gallery.webp',           alt: 'Pongal Celebration',           caption: 'Pongal Celebration' },
   { src: '/images/Farewell-Day-gallery.webp',                alt: 'Farewell Day',                 caption: 'Farewell Day' },
   { src: '/images/Founders-Day-2022-gallery.jpg',            alt: 'Founders Day 2022',            caption: 'Founders Day 2022' },
   { src: '/images/Blood-Camp-gallery.webp',                  alt: 'Blood Camp',                   caption: 'Blood Camp' },

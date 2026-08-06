@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     siteName: 'JKKN Dental College & Hospital',
     images: [
       {
-        url: '/images/BDS-hero-image.png',
+        url: '/images/BDS-hero-image.webp',
         width: 1200,
         height: 630,
         alt: 'BDS Admission 2026-27 at JKKN Dental College',
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
     title: 'BDS Admission 2026-27 | JKKN Dental College',
     description:
       'NEET-based BDS admission at JKKN Dental College. 100 seats, DCI approved, NAAC A grade, scholarships available.',
-    images: ['/images/BDS-hero-image.png'],
+    images: ['/images/BDS-hero-image.webp'],
   },
   alternates: {
     canonical: 'https://dental.jkkn.ac.in/admissions/bds/',

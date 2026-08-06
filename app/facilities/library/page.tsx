@@ -150,7 +150,7 @@ export default function Library() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
             <div className="relative h-[300px] md:h-[370px] rounded-2xl overflow-hidden shadow-lg group">
               <Image
-                src="/images/library-1.jpg"
+                src="/images/library-1.webp"
                 alt="JKKN Dental College library study area with students reading at study desks"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -158,7 +158,7 @@ export default function Library() {
             </div>
             <div className="relative h-[300px] md:h-[370px] rounded-2xl overflow-hidden shadow-lg group">
               <Image
-                src="/images/library-2.jpg"
+                src="/images/library-2.webp"
                 alt="Dental students browsing textbooks at JKKN library bookshelves"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -166,7 +166,7 @@ export default function Library() {
             </div>
             <div className="relative h-[300px] md:h-[370px] rounded-2xl overflow-hidden shadow-lg group">
               <Image
-                src="/images/library-3.jpg"
+                src="/images/library-3.webp"
                 alt="Students exploring journals and periodicals section at JKKN Dental College library"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"

@@ -145,7 +145,7 @@ export default function Labs() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
             <div className="relative h-[280px] md:h-[300px] rounded-2xl overflow-hidden shadow-lg group">
               <Image
-                src="/images/lab-1.jpg"
+                src="/images/lab-1.webp"
                 alt="JKKN Dental College preclinical lab with students practicing dental procedures at workbenches"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -153,7 +153,7 @@ export default function Labs() {
             </div>
             <div className="relative h-[280px] md:h-[300px] rounded-2xl overflow-hidden shadow-lg group">
               <Image
-                src="/images/lab-2.jpg"
+                src="/images/lab-2.webp"
                 alt="Dental students working with dental materials and impression trays in JKKN preclinical laboratory"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -161,7 +161,7 @@ export default function Labs() {
             </div>
             <div className="relative h-[280px] md:h-[300px] rounded-2xl overflow-hidden shadow-lg group">
               <Image
-                src="/images/lab-3.jpg"
+                src="/images/lab-3.webp"
                 alt="Faculty demonstrating clinical dental procedure to students at JKKN Dental College lab"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"

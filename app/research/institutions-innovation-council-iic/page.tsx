@@ -170,7 +170,7 @@ export default function InstitutionsInnovationCouncilIIC() {
             <div className="p-6 flex justify-center">
               <div className="w-full max-w-4xl">
                 <img
-                  src="/images/LEARNING-MODULES.png"
+                  src="/images/LEARNING-MODULES.webp"
                   alt="Learning Modules - Innovation Council Activities"
                   className="w-full h-auto rounded-xl"
                 />
