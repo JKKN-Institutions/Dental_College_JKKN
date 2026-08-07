@@ -43,8 +43,14 @@ export const metadata: Metadata = {
 // but left the status at 200, which is still a soft 404.
 export const dynamicParams = false;
 
+// DEP-16, 2026-08-07: the list is now EMPTY on purpose. The one slug it held served a B.Ed
+// admission guide on a dental domain - JKKN Dental does not run B.Ed, and the College of
+// Education owns that demand. With dynamicParams false and no params every /blog/<slug>
+// answers 404, and the 1,019-line page below is simply never reached. Pharmacy already runs
+// this exact shape. The page file is left in place deliberately - deleting it was offered
+// and not chosen.
 export async function generateStaticParams() {
-  return [{ slug: 'bed-admission-2026-tamil-nadu' }];
+  return [];
 }
 
 export default function BlogSlugLayout({ children }: { children: React.ReactNode }) {
