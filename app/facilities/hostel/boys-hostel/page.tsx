@@ -9,7 +9,7 @@ import { Home, BookOpen, ShieldCheck } from 'lucide-react';
 
 export const metadata: Metadata = {
   alternates: { canonical: '/facilities/hostel/boys-hostel/' },
-  title: 'Boys Hostel - Accommodation at JKKN Dental College',
+  title: "Boys Hostel",
   description: 'JKKN boys hostel offers spacious rooms, high-speed internet, 24/7 security, study-focused ambiance, and modern amenities just 5 minutes from campus.',
   keywords: 'boys hostel JKKN, dental college hostel, student accommodation, hostel facilities, on-campus housing, AC rooms, safe hostel, boys dormitory',
   openGraph: {

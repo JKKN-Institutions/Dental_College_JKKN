@@ -4,7 +4,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: { absolute: 'Dental College near Karur | JKKN Dental College & Hospital' },
+  title: { absolute: "Dental College Near Karur — BDS & MDS" },
   description: 'Karur district has no dental college. JKKN Dental College at Komarapalayam is ~75 km away via Erode. DCI approved. BDS 100 seats, MDS. Apply 2026.',
   keywords: 'dental college in karur, dental college near karur, bds colleges near karur, karur dental college, mds college karur, jkkn dental karur',
   robots: {

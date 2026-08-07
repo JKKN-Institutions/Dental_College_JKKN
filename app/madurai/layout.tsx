@@ -4,7 +4,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: { absolute: 'Dental College near Madurai | JKKN Dental College & Hospital' },
+  title: { absolute: "Dental College Near Madurai — BDS & MDS" },
   description: 'BDS/MDS from Madurai? JKKN Dental College at Komarapalayam offers 100 BDS seats + MDS in 5 specialisations with a 200+ chair hospital. Apply 2026.',
   keywords: 'dental college in madurai, dental college near madurai, bds colleges in madurai, madurai dental college, mds college madurai, jkkn dental madurai',
   robots: {
