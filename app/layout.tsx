@@ -4,6 +4,7 @@ import "./globals.css";
 import { ClientLayoutWrapper } from "@/components/ClientLayoutWrapper";
 import { MetaPixel } from "@/components/MetaPixel";
 import { GAPageTracker } from "@/components/GAPageTracker";
+import { ConversionTracking } from "@/components/analytics/ConversionTracking";
 import { GoogleAnalytics } from "@next/third-parties/google";
 
 const poppins = Poppins({
@@ -92,6 +93,7 @@ export default function RootLayout({
         </a>
         <MetaPixel />
         <GAPageTracker />
+        <ConversionTracking />
         <ClientLayoutWrapper>
           <div id="main-content" tabIndex={-1}>
             {children}
