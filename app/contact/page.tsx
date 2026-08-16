@@ -4,6 +4,7 @@ import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import StructuredData from '@/components/StructuredData';
 import { generatePageMetadata, generateBreadcrumbSchema, generateContactPageSchema, generateWebPageSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
 import { MessageCircle } from 'lucide-react';
+import DentalEnquiryForm from "@/components/lead/DentalEnquiryForm";
 
 export const metadata = generatePageMetadata({
   title: 'Contact Us | JKKN Dental College & Hospital, Komarapalayam',
@@ -347,6 +348,16 @@ export default function Contact() {
           </div>
         </div>
       </div>
+
+      {/* DEP-34 - enquiry form. Posts to the CRM from the server; a browser cannot POST there */}
+      {/* directly - the endpoint sends no Access-Control-Allow-Origin header. */}
+      <section className="bg-gradient-to-br from-[#006837] to-[#0b8f52] py-16">
+          <div className="max-w-3xl mx-auto px-4">
+              <h2 className="text-white text-2xl md:text-3xl font-bold text-center mb-2">Get a Call Back</h2>
+              <p className="text-white/80 text-center text-sm mb-8">Leave your details and our admission team will contact you within 24 hours.</p>
+              <DentalEnquiryForm sourcePage="contact" />
+          </div>
+      </section>
 
       <Footer />
       <FloatingWhatsApp />
