@@ -302,7 +302,7 @@ export default function Academics() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="https://www.jkkn.ai/apply/jkkn-admission-2026"
+              href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_medium=organic&utm_campaign=academics"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white hover:bg-gray-100 text-[#006837] font-bold px-8 py-4 rounded-lg text-lg transition-all duration-300 shadow-lg"

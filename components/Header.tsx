@@ -236,7 +236,7 @@ export default function Header() {
               {/* Apply Now Button - Right Side (spans both rows) */}
               <div className="flex items-center flex-shrink-0">
                 <a
-                  href="https://www.jkkn.ai/apply/jkkn-admission-2026"
+                  href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_medium=organic&utm_campaign=components-header"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-primary text-white px-3 xl:px-4 2xl:px-6 py-1.5 xl:py-2 2xl:py-2.5 rounded-md font-semibold hover:opacity-90 transition-opacity min-h-[44px] flex items-center justify-center text-sm xl:text-sm 2xl:text-base whitespace-nowrap"
@@ -266,7 +266,7 @@ export default function Header() {
 
           {/* Apply Now Button */}
           <a
-            href="https://www.jkkn.ai/apply/jkkn-admission-2026"
+            href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_medium=organic&utm_campaign=components-header"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-primary text-white px-3 xs:px-4 sm:px-6 py-1.5 xs:py-2 sm:py-2.5 rounded-md font-semibold hover:opacity-90 transition-opacity min-h-[44px] flex items-center justify-center touch-manipulation text-xs xs:text-sm sm:text-base"
@@ -440,7 +440,7 @@ export default function Header() {
 
             {/* Mobile Apply Now Button */}
             <a
-              href="https://www.jkkn.ai/apply/jkkn-admission-2026"
+              href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_medium=organic&utm_campaign=components-header"
               target="_blank"
               rel="noopener noreferrer"
               className="w-full mt-3 sm:mt-4 py-2.5 xs:py-3 px-2.5 xs:px-3 xs:px-4 bg-primary text-white font-semibold rounded-lg flex items-center justify-center gap-2 sm:gap-3 min-h-[44px] touch-manipulation hover:opacity-90 transition-opacity text-xs xs:text-sm sm:text-base"

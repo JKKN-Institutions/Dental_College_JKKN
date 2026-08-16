@@ -534,7 +534,7 @@ export default function AdmissionPage() {
           {/* Hero Dual CTA */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="https://www.jkkn.ai/apply/jkkn-admission-2026"
+              href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_medium=organic&utm_campaign=admissions"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-[#7cb983] hover:bg-[#6ba872] text-white font-bold py-3.5 px-8 rounded-full transition-all duration-300 min-h-[44px] flex items-center justify-center gap-2 hover:scale-105 active:scale-95 text-lg"
@@ -863,7 +863,7 @@ export default function AdmissionPage() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10">
             <a
-              href="https://www.jkkn.ai/apply/jkkn-admission-2026"
+              href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_medium=organic&utm_campaign=admissions"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-[#7cb983] hover:bg-[#6ba872] text-[#006837] font-bold px-8 py-4 rounded-full transition-all duration-300 min-h-[44px] flex items-center justify-center gap-2 hover:scale-105 active:scale-95 text-lg"

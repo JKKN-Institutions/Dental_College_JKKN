@@ -322,7 +322,7 @@ export default function Contact() {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <a
-                    href="https://www.jkkn.ai/apply/jkkn-admission-2026"
+                    href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_medium=organic&utm_campaign=contact"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center bg-white hover:bg-gray-100 active:bg-gray-200 text-[#1B5E20] font-bold text-sm sm:text-base px-6 sm:px-8 py-3 sm:py-3.5 rounded-lg transition-all duration-300 shadow-md min-h-[44px] touch-manipulation"

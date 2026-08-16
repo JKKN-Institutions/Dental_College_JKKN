@@ -190,7 +190,7 @@ export default function SalemPage() {
           ))}
         </ul>
         <div className="flex flex-col sm:flex-row gap-4 items-center">
-          <a href="https://www.jkkn.ai/apply/jkkn-admission-2026" target="_blank" rel="nofollow noopener noreferrer" className="bg-[#7cb983] hover:bg-[#6ba872] text-white font-bold px-8 py-4 rounded-full transition-all transform hover:scale-105 shadow-lg text-base">
+          <a href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_medium=organic&utm_campaign=salem" target="_blank" rel="nofollow noopener noreferrer" className="bg-[#7cb983] hover:bg-[#6ba872] text-white font-bold px-8 py-4 rounded-full transition-all transform hover:scale-105 shadow-lg text-base">
             Apply for BDS 2026 →
           </a>
           <a href="tel:+919345855001" className="bg-[#006837] hover:bg-[#002309] text-white font-bold px-8 py-4 rounded-full transition-all transform hover:scale-105 shadow-lg text-base">Call Us</a>
@@ -420,7 +420,7 @@ export default function SalemPage() {
               <p className="font-bold text-base">Ready to Apply for BDS 2026?</p>
               <p className="text-white/80 text-sm mt-1">Contact JKKN Admissions: <strong>+91 9345855001</strong></p>
             </div>
-            <a href="https://www.jkkn.ai/apply/jkkn-admission-2026" target="_blank" rel="noopener noreferrer" className="flex-shrink-0 bg-[#7cb983] hover:bg-[#6ba872] text-white font-bold px-6 py-3 rounded-full transition-colors text-sm">
+            <a href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_medium=organic&utm_campaign=salem" target="_blank" rel="noopener noreferrer" className="flex-shrink-0 bg-[#7cb983] hover:bg-[#6ba872] text-white font-bold px-6 py-3 rounded-full transition-colors text-sm">
               Apply for BDS 2026 →
             </a>
           </div>

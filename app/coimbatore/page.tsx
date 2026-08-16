@@ -184,7 +184,7 @@ export default function CoimbatorePage() {
           ))}
         </ul>
         <div className="flex flex-col sm:flex-row gap-4 items-center">
-          <a href="https://www.jkkn.ai/apply/jkkn-admission-2026" target="_blank" rel="nofollow noopener noreferrer" className="bg-[#7cb983] hover:bg-[#6ba872] text-white font-bold px-8 py-4 rounded-full transition-all transform hover:scale-105 shadow-lg text-base">
+          <a href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_medium=organic&utm_campaign=coimbatore" target="_blank" rel="nofollow noopener noreferrer" className="bg-[#7cb983] hover:bg-[#6ba872] text-white font-bold px-8 py-4 rounded-full transition-all transform hover:scale-105 shadow-lg text-base">
             Apply Now — 2026-27
           </a>
           <a href="tel:+919345855001" className="bg-[#006837] hover:bg-[#002309] text-white font-bold px-8 py-4 rounded-full transition-all transform hover:scale-105 shadow-lg text-base">Call Us</a>
@@ -338,7 +338,7 @@ export default function CoimbatorePage() {
                   <Link href={prog.href} className="block text-center bg-[#006837] hover:bg-[#002309] text-white font-semibold py-3 rounded-xl transition-colors text-sm">
                     View Programme Details
                   </Link>
-                  <a href="https://www.jkkn.ai/apply/jkkn-admission-2026" target="_blank" rel="noopener noreferrer" className="block text-center bg-white hover:bg-[#e8f5e9] text-[#006837] font-semibold py-3 rounded-xl transition-colors text-sm">
+                  <a href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_medium=organic&utm_campaign=coimbatore" target="_blank" rel="noopener noreferrer" className="block text-center bg-white hover:bg-[#e8f5e9] text-[#006837] font-semibold py-3 rounded-xl transition-colors text-sm">
                     Apply for Admission
                   </a>
                 </div>
@@ -566,7 +566,7 @@ export default function CoimbatorePage() {
           <div className="bg-[#FBFBEE] border border-[#7cb983]/30 rounded-2xl p-6">
             <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-3">About This Page</p>
             <p className="text-gray-600 text-sm leading-relaxed">
-              This page is published by JKKN Dental College &amp; Hospital, a DCI-approved institution established in 1987, affiliated with The Tamil Nadu Dr. M.G.R. Medical University, Chennai. Placement data is sourced from the institutional placement portal at <a href="https://placements.jkkn.ac.in" target="_blank" rel="noopener noreferrer" className="text-[#006837] underline">placements.jkkn.ac.in</a>. Admission data is sourced from <a href="https://www.jkkn.ai/apply/jkkn-admission-2026" target="_blank" rel="noopener noreferrer" className="text-[#006837] underline">www.jkkn.ai/apply/jkkn-admission-2026</a>. Last updated: March 2026.
+              This page is published by JKKN Dental College &amp; Hospital, a DCI-approved institution established in 1987, affiliated with The Tamil Nadu Dr. M.G.R. Medical University, Chennai. Placement data is sourced from the institutional placement portal at <a href="https://placements.jkkn.ac.in" target="_blank" rel="noopener noreferrer" className="text-[#006837] underline">placements.jkkn.ac.in</a>. Admission data is sourced from <a href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_medium=organic&utm_campaign=coimbatore" target="_blank" rel="noopener noreferrer" className="text-[#006837] underline">www.jkkn.ai/apply/jkkn-admission-2026</a>. Last updated: March 2026.
             </p>
           </div>
         </div>

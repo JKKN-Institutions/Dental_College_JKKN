@@ -186,7 +186,7 @@ export default function NamakkalPage() {
           ))}
         </ul>
         <div className="flex flex-col sm:flex-row gap-4 items-center">
-          <a href="https://www.jkkn.ai/apply/jkkn-admission-2026" target="_blank" rel="nofollow noopener noreferrer" className="bg-[#7cb983] hover:bg-[#6ba872] text-white font-bold px-8 py-4 rounded-full transition-all transform hover:scale-105 shadow-lg text-base">
+          <a href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_medium=organic&utm_campaign=namakkal" target="_blank" rel="nofollow noopener noreferrer" className="bg-[#7cb983] hover:bg-[#6ba872] text-white font-bold px-8 py-4 rounded-full transition-all transform hover:scale-105 shadow-lg text-base">
             Apply Now — 2026-27
           </a>
           <a href="tel:+919345855001" className="bg-[#006837] hover:bg-[#002309] text-white font-bold px-8 py-4 rounded-full transition-all transform hover:scale-105 shadow-lg text-base">Call Us</a>
@@ -411,7 +411,7 @@ export default function NamakkalPage() {
             </ol>
             <div className="mt-6 flex flex-col sm:flex-row gap-4">
               <a
-                href="https://www.jkkn.ai/apply/jkkn-admission-2026"
+                href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_medium=organic&utm_campaign=namakkal"
                 target="_blank" rel="noopener noreferrer"
                 className="bg-[#7cb983] hover:bg-[#6ba872] text-white font-bold px-8 py-4 rounded-full transition-all transform hover:scale-105 shadow text-base text-center"
               >
@@ -427,7 +427,7 @@ export default function NamakkalPage() {
           <div className="bg-[#FBFBEE] rounded-2xl p-6">
             <h3 className="text-base font-bold text-gray-900 mb-2">NEET 2026 — Qualifying Marks</h3>
             <p className="text-gray-600 text-sm leading-relaxed mb-3">
-              NEET-UG qualifying marks for BDS admission: <strong>General category — 144 marks</strong> | SC/ST/OBC — 113 marks. NEET 2026 is scheduled for <strong>3 May 2026</strong>. JKKN-specific cutoff ranks for 2026-27 will be updated after Tamil Nadu DME counselling concludes at <a href="https://www.jkkn.ai/apply/jkkn-admission-2026" target="_blank" rel="noopener noreferrer" className="text-[#006837] hover:underline font-medium">www.jkkn.ai/apply/jkkn-admission-2026</a>.
+              NEET-UG qualifying marks for BDS admission: <strong>General category — 144 marks</strong> | SC/ST/OBC — 113 marks. NEET 2026 is scheduled for <strong>3 May 2026</strong>. JKKN-specific cutoff ranks for 2026-27 will be updated after Tamil Nadu DME counselling concludes at <a href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_medium=organic&utm_campaign=namakkal" target="_blank" rel="noopener noreferrer" className="text-[#006837] hover:underline font-medium">www.jkkn.ai/apply/jkkn-admission-2026</a>.
             </p>
             <p className="text-gray-400 text-xs">For personalised guidance on eligibility and cut-off ranks, call <a href="tel:+919345855001" className="text-[#006837] hover:underline">+91 9345855001</a>.</p>
           </div>
