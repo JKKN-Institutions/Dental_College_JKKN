@@ -51,7 +51,8 @@ export default function Header() {
       }}
     >
       {item.submenu ? (
-        <button
+        <Link
+          href={item.href}
           aria-haspopup="true"
           aria-expanded={activeSubmenu === item.label}
           className="text-black hover:text-primary font-semibold text-[11px] xl:text-[12px] 2xl:text-[13px] px-1.5 xl:px-2.5 2xl:px-3 py-2 transition-colors whitespace-nowrap flex items-center gap-1"
@@ -60,7 +61,7 @@ export default function Header() {
           <svg aria-hidden="true" className="w-2.5 h-2.5 lg:w-3 lg:h-3 fill-current" viewBox="0 0 12 12">
             <path d="M6 9L1 4h10z" />
           </svg>
-        </button>
+        </Link>
       ) : isExternalOrPdf(item.href) ? (
         <a
           href={item.href}
@@ -96,7 +97,8 @@ export default function Header() {
                 onMouseLeave={() => !subitem.submenu && setActiveNestedSubmenu(null)}
               >
                 {subitem.submenu ? (
-                  <button
+                  <Link
+                    href={subitem.href}
                     aria-haspopup="true"
                     aria-expanded={activeNestedSubmenu === subitem.label}
                     className="w-full block px-4 py-2.5 text-sm text-gray-600 hover:bg-primary hover:text-white transition-colors flex items-center justify-between text-left"
@@ -105,7 +107,7 @@ export default function Header() {
                     <svg aria-hidden="true" className={`w-3 h-3 fill-current ml-2 ${['OTHERS', 'COMMITTEE', 'RESEARCH'].includes(item.label) ? 'rotate-180' : ''}`} viewBox="0 0 12 12">
                       <path d="M4 1l5 5-5 5z" />
                     </svg>
-                  </button>
+                  </Link>
                 ) : isExternalOrPdf(subitem.href) ? (
                   <a
                     href={subitem.href}
@@ -135,7 +137,8 @@ export default function Header() {
                       onMouseLeave={() => !nestedItem.submenu && setActiveThirdLevelSubmenu(null)}
                     >
                       {nestedItem.submenu ? (
-                        <button
+                        <Link
+                          href={nestedItem.href}
                           aria-haspopup="true"
                           aria-expanded={activeThirdLevelSubmenu === nestedItem.label}
                           className="w-full block px-4 py-2.5 text-sm text-gray-600 hover:bg-primary hover:text-white transition-colors flex items-center justify-between text-left"
@@ -144,7 +147,7 @@ export default function Header() {
                           <svg aria-hidden="true" className={`w-3 h-3 fill-current ml-2 ${['OTHERS', 'COMMITTEE', 'RESEARCH'].includes(item.label) ? 'rotate-180' : ''}`} viewBox="0 0 12 12">
                             <path d="M4 1l5 5-5 5z" />
                           </svg>
-                        </button>
+                        </Link>
                       ) : isExternalOrPdf(nestedItem.href) ? (
                         <a
                           href={nestedItem.href}
