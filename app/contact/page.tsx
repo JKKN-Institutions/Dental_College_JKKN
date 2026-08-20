@@ -6,14 +6,27 @@ import { generatePageMetadata, generateBreadcrumbSchema, generateContactPageSche
 import { MessageCircle } from 'lucide-react';
 import DentalEnquiryForm from "@/components/lead/DentalEnquiryForm";
 
-export const metadata = generatePageMetadata({
-  title: 'Contact Us | JKKN Dental College & Hospital, Komarapalayam',
-  description: 'Contact JKKN Dental College & Hospital. Phone: +91 93458 55001, Email: dental@jkkn.ac.in. Get admission details, visit campus, or schedule a consultation.',
+// GL1-08: the root layout sets `title.template: "%s | JKKN Dental College"`, which
+// appended 22 characters to every child page. This title was 58 + 22 = 80 characters
+// live, so Google truncated it and the appended brand was never seen. `absolute`
+// opts this one page out of the template; nothing else changes.
+// Measured 2026-07-21..08-17: 1,737 of this page's 1,874 impressions were on BRAND
+// queries the homepage also ranks for, converting at 1.61%, while its own
+// address/contact queries converted at 6.57%. Leading with the intent words is what
+// stops a contact page competing for "jkkn dental college".
+const contactMetadata = generatePageMetadata({
+  title: 'JKKN Dental College Address & Contact Number, Komarapalayam',
+  description: 'Address, phone number and directions for JKKN Dental College & Hospital, Komarapalayam. Call +91 93458 55001 or email dental@jkkn.ac.in. Open Mon-Sat 9am-5pm.',
   keywords: 'contact JKKN Dental, dental college contact, admission enquiry, Komarapalayam dental college address, directions to JKKN Dental',
   canonicalPath: '/contact/',
   datePublished: '2024-01-15',
-  dateModified: '2026-03-21'
+  dateModified: '2026-08-20'
 });
+
+export const metadata = {
+  ...contactMetadata,
+  title: { absolute: 'JKKN Dental College Address & Contact Number, Komarapalayam' }
+};
 
 const faqSchema = {
   "@context": "https://schema.org",

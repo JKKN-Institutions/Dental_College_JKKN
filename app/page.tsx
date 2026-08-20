@@ -19,11 +19,11 @@ const FacultySection = dynamic(() => import('@/components/FacultySection'));
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'JKKN Dental College | Best Dental College in Tamil Nadu 2026',
-  description: 'JKKN Dental College, Namakkal — DCI approved, NAAC A dental college in Tamil Nadu. BDS & MDS programs, 200+ chairs, 500+ daily patients, 92% placement assistance. Apply 2026.',
+  title: 'JKKN Dental College & Hospital (JKK Nattraja), Komarapalayam',
+  description: 'JKKN Dental College & Hospital (JKK Nattraja), Komarapalayam. DCI approved, NAAC A Grade. BDS 100 & MDS 18 seats, fees, 92% placement assistance. Apply 2026-27.',
   openGraph: {
-    title: 'JKKN Dental College | Best Dental College in Tamil Nadu 2026',
-    description: 'JKKN Dental College, Namakkal — DCI approved, NAAC A dental college in Tamil Nadu. BDS & MDS programs, 200+ chairs, 500+ daily patients, 92% placement assistance. Apply 2026.',
+    title: 'JKKN Dental College & Hospital (JKK Nattraja), Komarapalayam',
+    description: 'JKKN Dental College & Hospital (JKK Nattraja), Komarapalayam. DCI approved, NAAC A Grade. BDS 100 & MDS 18 seats, fees, 92% placement assistance. Apply 2026-27.',
     url: 'https://dental.jkkn.ac.in/',
     siteName: 'JKKN Dental College & Hospital',
     images: [
@@ -39,8 +39,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'JKKN Dental College | Best Dental College in Tamil Nadu 2026',
-    description: 'JKKN Dental College, Namakkal — DCI approved, NAAC A dental college in Tamil Nadu. BDS & MDS programs, 200+ chairs, 500+ daily patients, 92% placement assistance. Apply 2026.',
+    title: 'JKKN Dental College & Hospital (JKK Nattraja), Komarapalayam',
+    description: 'JKKN Dental College & Hospital (JKK Nattraja), Komarapalayam. DCI approved, NAAC A Grade. BDS 100 & MDS 18 seats, fees, 92% placement assistance. Apply 2026-27.',
     images: ['https://dental.jkkn.ac.in/images/BDS-hero-image.webp'],
   },
   alternates: {
