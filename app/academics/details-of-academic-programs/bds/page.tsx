@@ -199,7 +199,7 @@ export default function BDSProgram() {
   };
 
   const speakableSchema = generateSpeakableWebPageSchema({
-    title: 'Best BDS College in Tamil Nadu — JKKN Dental College & Hospital',
+    title: 'BDS Colleges in Tamil Nadu — BDS Admission 2026-27 at JKKN Dental College',
     description: 'JKKN Dental College, Namakkal offers DCI-approved BDS with 200+ dental chairs, 500+ daily patients, 92% placement assistance, NAAC Accredited. Admission 2026-27 open.',
     url: 'https://dental.jkkn.ac.in/academics/details-of-academic-programs/bds/',
     dateModified: '2026-04-08',
@@ -262,8 +262,8 @@ export default function BDSProgram() {
 
               {/* H1 — Gap #3 Fixed: Keyword-rich H1 */}
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
-                Best BDS College in Tamil Nadu{' '}
-                <span className="text-[#7cb983]">— JKKN Dental College</span>
+                BDS Colleges in Tamil Nadu{' '}
+                <span className="text-[#7cb983]">— BDS Admission 2026-27 at JKKN</span>
               </h1>
 
               {/* Subtitle with schema keywords */}
@@ -273,7 +273,7 @@ export default function BDSProgram() {
 
               {/* Description — Gap #4, #5: Keywords + content expansion */}
               <p className="hero-description text-base md:text-lg text-gray-200 mb-8 leading-relaxed">
-                JKKN Dental College & Hospital, established in 1987, is among the <strong className="text-white">best BDS colleges in Tamil Nadu</strong> offering a comprehensive 5-year dental program with 200+ dental chairs, 500+ daily patients, and 92% placement assistance. Located on NH-544, Komarapalayam, Namakkal — well-connected to Erode, Salem, and Coimbatore.
+                JKKN Dental College & Hospital, established in 1987, is a <strong className="text-white">DCI-approved BDS college in Tamil Nadu</strong> with 100 BDS seats, a 5-year programme, 200+ dental chairs, around 500 patients a day, and 92% placement assistance (2025 batch, JKKN placement cell record). Located on NH-544, Komarapalayam, Namakkal — well-connected to Erode, Salem, and Coimbatore.
               </p>
 
               {/* Hero Stats */}
@@ -369,7 +369,7 @@ export default function BDSProgram() {
           </div>
 
           <h2 className="text-3xl md:text-4xl font-bold text-[#006837] text-center mb-4">
-            Why JKKN Is Among the Best BDS Colleges in Tamil Nadu
+            What Makes the Best BDS Colleges in Tamil Nadu - and How JKKN Compares
           </h2>
           <p className="text-gray-600 text-center mb-12 max-w-3xl mx-auto">
             Discover what makes JKKN Dental College a preferred choice for aspiring dental professionals across Tamil Nadu, from <a href="/erode/" className="text-[#7cb983] underline hover:text-[#6ba872]">Erode</a>, <a href="/salem/" className="text-[#7cb983] underline hover:text-[#6ba872]">Salem</a>, <a href="/coimbatore/" className="text-[#7cb983] underline hover:text-[#6ba872]">Coimbatore</a>, and beyond.

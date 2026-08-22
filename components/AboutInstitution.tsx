@@ -22,7 +22,7 @@ export default function AboutInstitution() {
               <h3 className="text-[#7cb983] text-xs sm:text-sm md:text-base font-bold uppercase tracking-wider">About Our Institution</h3>
             </div>
             <h2 className="text-xl xs:text-2xl sm:text-3xl lg:text-4xl font-bold text-[#006837] mb-2 sm:mb-3 leading-tight">
-              Best Dental College in Tamil Nadu
+              A DCI-Approved Dental College in Tamil Nadu Since 1987
             </h2>
             <p className="text-[#7cb983] text-sm sm:text-base md:text-lg font-semibold mb-4 sm:mb-6">
               Over Five Decades of Excellence in Progressive Education
@@ -36,7 +36,7 @@ export default function AboutInstitution() {
             </div>
 
             <p className="text-gray-600 text-sm sm:text-base md:text-lg mb-6 sm:mb-8 leading-relaxed">
-              Founded on the vision of J.K.K. Nattraja Chettiar (1895–1995), JKKN Dental College is a premier institution under JKKN Institutions. Located on NH-544 in Komarapalayam, Namakkal District, the college provides an ideal environment for focused learning as India&#39;s first AI-integrated dental campus.
+              Founded on the vision of J.K.K. Nattraja Chettiar (1895–1995), JKKN Dental College is a premier institution under JKKN Institutions. Located on NH-544 in Komarapalayam, Namakkal District, the college provides an ideal environment for focused learning on an AI-integrated dental campus.
             </p>
 
             {/* Why Choose JKKN — Unique value propositions */}

@@ -27,12 +27,12 @@ export default function Hero() {
             {/* Main Heading */}
             <h1 className="text-2xl xs:text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight">
               JKKN Dental College & Hospital —{' '}
-              <span className="text-[#7cb983]">Best Dental College in Tamil Nadu for BDS & MDS</span>
+              <span className="text-[#7cb983]">DCI-Approved Dental College in Tamil Nadu</span>
             </h1>
 
             {/* Description */}
             <p className="hero-description text-gray-200 text-sm sm:text-base md:text-lg leading-relaxed">
-              Recognized as one of the best dental colleges in Tamil Nadu, JKKN Dental College & Hospital combines world-class dental education with compassionate patient care. The DCI-approved BDS and MDS programs at JKKN prepare learners for exceptional careers in dentistry.
+              Established in 1987 at Komarapalayam, Namakkal, JKKN Dental College & Hospital is a DCI-approved, NAAC A Grade dental college in Tamil Nadu, teaching in a 200+ chair hospital that sees around 500 patients a day.
             </p>
 
             {/* Stats */}

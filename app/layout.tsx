@@ -44,7 +44,7 @@ export const metadata: Metadata = {
         url: "/images/BDS-hero-image.webp",
         width: 1200,
         height: 630,
-        alt: "JKKN Dental College & Hospital - Best Dental College in Tamil Nadu"
+        alt: "JKKN Dental College & Hospital, Komarapalayam - DCI approved, NAAC A Grade"
       }
     ],
     type: "website",
