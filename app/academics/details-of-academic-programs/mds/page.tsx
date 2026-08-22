@@ -46,7 +46,7 @@ const mdsFAQs = [
   {
     question: "How many MDS seats are there in Tamil Nadu?",
     answer:
-      "Tamil Nadu has 32+ dental colleges offering approximately 850+ MDS seats across 9 specializations. This includes 3 government colleges and 29+ private colleges, with 316 seats available under the management quota. JKKN Dental College contributes 18 MDS seats across 5 specializations.",
+      "Tamil Nadu has 435 sanctioned MDS seats across 19 dental colleges affiliated to The Tamil Nadu Dr. M.G.R. Medical University for the academic year 2025-26 — 2 government colleges holding 79 seats and 17 self-financing colleges holding 356. Deemed-to-be universities such as Saveetha and SRM award their own degrees and are not in that matrix. JKKN Dental College holds 18 of the 435 seats across 5 specialisations.",
   },
   {
     question: "What is the MDS course fees in Tamil Nadu?",
@@ -170,9 +170,11 @@ export default function MDSProgram() {
 
               {/* Heading — Primary keyword: "mds colleges in tamilnadu" */}
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
-                MDS Colleges in <span className="text-[#7cb983]">Tamil Nadu</span>
+                MDS Fees in Private Colleges,{' '}
+                <span className="text-[#7cb983]">Tamil Nadu 2026-27</span>
+                <span className="sr-only"> — </span>
                 <span className="block text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-100 mt-3">
-                  JKKN Dental College — Master of Dental Surgery Admissions 2026
+                  Government quota, management quota and the three-year total
                 </span>
               </h1>
 
@@ -795,6 +797,49 @@ export default function MDSProgram() {
       </section>
 
       {/* MDS Comparison Tables — SEO + AEO snippet bait */}
+      {/* MDS cluster - the hub keeps the fees question and hands the other three to pages
+          that answer only that question. Without these links the children have no internal
+          signal at all, which is what left /bds/ weak on the homepage side (GL6-25). */}
+      <section className="py-16 px-4 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-2xl sm:text-3xl font-bold text-[#006837] mb-3">
+            MDS in Tamil Nadu — seats, colleges and specialities
+          </h2>
+          <p className="text-gray-700 text-sm sm:text-base leading-relaxed mb-8 max-w-3xl">
+            The figures below come from the sanctioned-intake matrix published by The Tamil Nadu
+            Dr. M.G.R. Medical University for 2025-26: 435 MDS seats across 19 affiliated
+            colleges and nine specialities. Each page answers one question in full.
+          </p>
+          <div className="grid sm:grid-cols-3 gap-4">
+            <a href="/academics/details-of-academic-programs/mds/seats-in-tamil-nadu/"
+               className="block rounded-xl border border-gray-200 p-5 hover:border-[#006837] hover:shadow-sm transition-all">
+              <span className="block font-semibold text-[#006837]">MDS seats in Tamil Nadu</span>
+              <span className="block mt-1.5 text-sm text-gray-600 leading-relaxed">
+                All 435 sanctioned seats, college by college and speciality by speciality.
+              </span>
+            </a>
+            <a href="/academics/details-of-academic-programs/mds/colleges-in-tamil-nadu/"
+               className="block rounded-xl border border-gray-200 p-5 hover:border-[#006837] hover:shadow-sm transition-all">
+              <span className="block font-semibold text-[#006837]">MDS colleges in Tamil Nadu</span>
+              <span className="block mt-1.5 text-sm text-gray-600 leading-relaxed">
+                Every one of the 19 affiliated colleges, where it is and what it holds.
+              </span>
+            </a>
+            <a href="/academics/details-of-academic-programs/mds/specialities-in-tamil-nadu/"
+               className="block rounded-xl border border-gray-200 p-5 hover:border-[#006837] hover:shadow-sm transition-all">
+              <span className="block font-semibold text-[#006837]">MDS courses and specialities</span>
+              <span className="block mt-1.5 text-sm text-gray-600 leading-relaxed">
+                All nine branches and how the 435 seats split between them.
+              </span>
+            </a>
+          </div>
+          <a href="/pdf/TN-MDS-Seat-Matrix-2025-26.pdf" download
+             className="inline-flex items-center gap-2 mt-6 bg-[#006837] hover:bg-[#00552d] text-white font-semibold px-5 py-3 rounded-full text-sm sm:text-base transition-colors">
+            Download the Tamil Nadu MDS seat matrix 2025-26 (PDF)
+          </a>
+        </div>
+      </section>
+
       <MDSComparisonTables />
 
       {/* FAQ Section */}

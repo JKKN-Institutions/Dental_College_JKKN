@@ -32,7 +32,7 @@ const answerBlocks: AnswerBlock[] = [
   {
     question: "How many MDS seats are there in Tamil Nadu?",
     answer:
-      "Tamil Nadu offers approximately 850+ MDS seats across 32+ dental colleges, including 3 government and 29+ private institutions. Seats are distributed across 9 specializations, with 316 seats available under the management quota. JKKN Dental College offers 18 MDS seats across 5 DCI-approved specializations.",
+      "Tamil Nadu has 435 sanctioned MDS seats across 19 dental colleges affiliated to The Tamil Nadu Dr. M.G.R. Medical University for the academic year 2025-26 — 2 government colleges holding 79 seats and 17 self-financing colleges holding 356. Deemed-to-be universities such as Saveetha and SRM award their own degrees and are not in that matrix. JKKN Dental College holds 18 of the 435 seats across 5 specialisations.",
   },
   {
     question: "What is the MDS course fees in Tamil Nadu?",

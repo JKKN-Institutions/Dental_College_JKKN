@@ -2,14 +2,14 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: { absolute: 'MDS Fees in Private Colleges, Tamil Nadu 2026-27 | JKKN' },
-  description: 'JKKN Dental is one of the top MDS colleges in Tamilnadu. DCI-approved MDS courses in multiple specialisations with advanced clinical training & hospital.',
+  description: 'MDS fees in Tamil Nadu 2026-27 - government quota, management quota and the three-year total, across the 435 sanctioned seats in 19 affiliated colleges. DCI-approved MDS at JKKN Dental College, Komarapalayam.',
   keywords: 'mds colleges in tamilnadu, mds dental colleges in tamilnadu, mds seats in tamilnadu, total mds seats in tamilnadu, dental colleges in tamilnadu for mds, mds course fees in tamilnadu, mds course in tamilnadu, mds fees in tamilnadu, mds fees structure in tamilnadu, top dental colleges in tamilnadu for mds, mds course duration in tamilnadu, mds colleges in coimbatore',
   alternates: {
     canonical: '/academics/details-of-academic-programs/mds/',
   },
   openGraph: {
     title: 'MDS Fees in Private Colleges, Tamil Nadu 2026-27 | JKKN',
-    description: 'JKKN Dental is one of the top MDS colleges in Tamilnadu. DCI-approved MDS courses in multiple specialisations with advanced clinical training & hospital.',
+    description: 'MDS fees in Tamil Nadu 2026-27 - government quota, management quota and the three-year total, across the 435 sanctioned seats in 19 affiliated colleges. DCI-approved MDS at JKKN Dental College, Komarapalayam.',
     url: 'https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds',
     siteName: 'JKKN Dental College & Hospital',
     images: [
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'MDS Fees in Private Colleges, Tamil Nadu 2026-27 | JKKN',
-    description: 'JKKN Dental is one of the top MDS colleges in Tamilnadu. DCI-approved MDS courses in multiple specialisations with advanced clinical training & hospital.',
+    description: 'MDS fees in Tamil Nadu 2026-27 - government quota, management quota and the three-year total, across the 435 sanctioned seats in 19 affiliated colleges. DCI-approved MDS at JKKN Dental College, Komarapalayam.',
     images: ['/images/BDS-hero-image.webp'],
   },
 };
