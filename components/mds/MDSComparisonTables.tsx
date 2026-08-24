@@ -26,18 +26,28 @@ export default function MDSComparisonTables() {
           id="mds-comparison-heading"
           className="text-3xl md:text-4xl font-bold text-[#006837] text-center mb-4"
         >
-          MDS Colleges in Tamil Nadu — Complete Comparison
+          How JKKN&rsquo;s MDS Seats and Fees Compare
         </h2>
-        <p className="text-gray-600 text-center mb-12 max-w-4xl mx-auto leading-relaxed">
-          Compare top MDS dental colleges in Tamil Nadu, view seat matrix, fee
-          structure, and benchmark JKKN Dental College against other leading
-          institutions. Data updated for MDS Admissions 2026.
+        <p className="text-gray-600 text-center mb-6 max-w-4xl mx-auto leading-relaxed">
+          JKKN&rsquo;s own seats, speciality by speciality, and what an MDS costs by quota
+          across Tamil Nadu. Updated for MDS admissions 2026-27.
+        </p>
+        {/* The full Tamil Nadu list lives on its own page. This heading deliberately does NOT
+            say "MDS colleges in Tamil Nadu" - that phrase belongs to the child page, and the
+            hub was bidding against it (A-03, redefined 2026-08-24). */}
+        <p className="text-center mb-12">
+          <a
+            href="/academics/details-of-academic-programs/mds/colleges-in-tamil-nadu/"
+            className="inline-flex items-center gap-2 text-[#006837] font-semibold underline hover:no-underline"
+          >
+            See the full list of all 19 MDS colleges in Tamil Nadu &rarr;
+          </a>
         </p>
 
         {/* Table 1: MDS Seat Matrix at JKKN */}
         <div className="mb-12">
           <h3 className="text-2xl md:text-3xl font-bold text-[#006837] mb-4">
-            MDS Specializations &amp; Seat Matrix at JKKN Dental College
+            JKKN&rsquo;s 18 MDS Seats, Speciality by Speciality
           </h3>
           <p className="text-gray-600 mb-6">
             JKKN Dental College offers 18 MDS seats across 5 DCI-approved

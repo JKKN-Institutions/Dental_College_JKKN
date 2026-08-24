@@ -122,7 +122,7 @@ export default function MDSProgram() {
   // table captions, hero description)
   const speakableSchema = generateSpeakableWebPageSchema({
     title:
-      'MDS Colleges in Tamil Nadu | JKKN Dental College & Hospital — Admissions 2026',
+      'MDS Fees in Private Colleges, Tamil Nadu 2026-27 | JKKN Dental College & Hospital',
     description:
       '3-year postgraduate MDS program with 18 seats across 5 DCI-approved specializations at JKKN Dental College & Hospital, Tamil Nadu. NAAC-accredited, affiliated to TN Dr. MGR Medical University.',
     url: 'https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/',

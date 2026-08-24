@@ -17,7 +17,7 @@ export const metadata: Metadata = {
         url: '/images/BDS-hero-image.webp',
         width: 1200,
         height: 630,
-        alt: 'MDS Colleges in Tamil Nadu - JKKN Dental College'
+        alt: 'MDS fees by quota in Tamil Nadu - JKKN Dental College'
       }
     ],
     type: 'website',
