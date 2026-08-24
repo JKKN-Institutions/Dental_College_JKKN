@@ -7,7 +7,7 @@ export default function CoimbatorePage() {
   const faqs = [
     {
       q: 'Which is the best dental college near Coimbatore?',
-      a: 'JKKN Dental College & Hospital in Komarapalayam, Namakkal is the leading dental institution within 120 km of Coimbatore, offering a 92%+ placement rate and the highest BDS-to-MDS conversion record in the region. The college is approved by the Dental Council of India and affiliated with TN Dr. MGR Medical University. Learners from Coimbatore reach the campus in approximately 1.5 hours via NH-544.',
+      a: 'JKKN Dental College & Hospital in Komarapalayam, Namakkal is the leading dental institution within 120 km of Coimbatore, offering a 92% placement rate and the highest BDS-to-MDS conversion record in the region. The college is approved by the Dental Council of India and affiliated with TN Dr. MGR Medical University. Learners from Coimbatore reach the campus in approximately 1.5 hours via NH-544.',
     },
     {
       q: 'How far is JKKN Dental College from Coimbatore?',
@@ -35,7 +35,7 @@ export default function CoimbatorePage() {
     },
     {
       q: 'What is the placement record of JKKN Dental College?',
-      a: 'JKKN Dental College & Hospital records a 92%+ placement rate for BDS graduates. The highest salary package is 8–10 LPA and the average salary is 3–5 LPA. International placements include the UK (NHS), UAE (Cleveland Clinic Abu Dhabi), and Saudi Arabia. Placement details are at placements.jkkn.ac.in.',
+      a: 'JKKN Dental College & Hospital records a 92% placement rate for BDS graduates. The highest salary package is 8–10 LPA and the average salary is 3–5 LPA. International placements include the UK (NHS), UAE (Cleveland Clinic Abu Dhabi), and Saudi Arabia. Placement details are at placements.jkkn.ac.in.',
     },
     {
       q: 'How to apply for BDS at JKKN Dental College from Coimbatore?',
@@ -47,7 +47,7 @@ export default function CoimbatorePage() {
     },
     {
       q: 'Is JKKN Dental College better than colleges in Coimbatore?',
-      a: 'JKKN Dental College & Hospital offers superior placement outcomes (92%+, 8–10 LPA highest) and larger clinical infrastructure (200+ chairs, 500+ daily patients) compared to Coimbatore-based dental colleges. Coimbatore colleges such as Sri Ramakrishna Dental College & Hospital offer NIRF ranking (#18) and in-city location advantages. The best choice depends on individual priorities: outcomes and clinical scale (JKKN) versus urban location and ranking (SRDCH).',
+      a: 'JKKN Dental College & Hospital offers superior placement outcomes (92%, 8–10 LPA highest) and larger clinical infrastructure (200+ chairs, 500+ daily patients) compared to Coimbatore-based dental colleges. Coimbatore colleges such as Sri Ramakrishna Dental College & Hospital offer NIRF ranking (#18) and in-city location advantages. The best choice depends on individual priorities: outcomes and clinical scale (JKKN) versus urban location and ranking (SRDCH).',
     },
     {
       q: 'Does JKKN Dental College offer transport for Coimbatore learners?',
@@ -59,7 +59,7 @@ export default function CoimbatorePage() {
     { icon: <Hospital className="w-6 h-6 text-[#006837]" />, title: 'Own Hospital', desc: 'DCI-approved dental college with attached hospital for hands-on clinical training — 200+ chairs, 100+ beds, 500+ daily patients' },
     { icon: <Stethoscope className="w-6 h-6 text-[#006837]" />, title: 'Real Patient Exposure', desc: 'Own dental hospital on campus — learners get real patient exposure from Year 1, not Year 3' },
     { icon: <Microscope className="w-6 h-6 text-[#006837]" />, title: 'Advanced Learning Labs', desc: 'Advanced dental learning labs, simulation equipment, and digital dentistry training — India\'s first AI-integrated dental campus' },
-    { icon: <TrendingUp className="w-6 h-6 text-[#006837]" />, title: '92%+ Placement Record', desc: 'JKKN Dental records 92%+ placement rate for BDS graduates. Highest salary: 8–10 LPA. International placements: UK (NHS), UAE, Saudi Arabia.' },
+    { icon: <TrendingUp className="w-6 h-6 text-[#006837]" />, title: '92% Placement Record', desc: 'JKKN Dental records 92% placement rate for BDS graduates. Highest salary: 8–10 LPA. International placements: UK (NHS), UAE, Saudi Arabia.' },
     { icon: <Users className="w-6 h-6 text-[#006837]" />, title: 'Community Service', desc: 'Hospital serves the community — builds patient trust, clinical breadth, and real-world dentistry experience' },
     { icon: <Bus className="w-6 h-6 text-[#006837]" />, title: 'Accessible from Coimbatore via NH-544', desc: '108 km from Coimbatore on NH-544. Approximately 1.5 hours by road. On-campus hostel eliminates daily commuting stress.' },
   ];
@@ -70,7 +70,7 @@ export default function CoimbatorePage() {
   ];
 
   const placementStats = [
-    { value: '92%+', label: 'PLACEMENT RATE' },
+    { value: '92%', label: 'PLACEMENT RATE' },
     { value: '8-10', label: 'LPA HIGHEST' },
     { value: '3-5', label: 'LPA AVERAGE' },
     { value: '15+', label: 'RECRUITING PARTNERS' },
@@ -114,7 +114,7 @@ export default function CoimbatorePage() {
     { label: 'MDS Specializations', value: '5' },
     { label: 'Dental Chairs', value: '200+' },
     { label: 'Daily Patients', value: '500+' },
-    { label: 'Placement Rate', value: '92%+' },
+    { label: 'Placement Rate', value: '92%' },
     { label: 'Highest Salary', value: '8–10 LPA' },
     { label: 'Distance from Coimbatore', value: '~108 km via NH-544' },
   ];
@@ -168,11 +168,11 @@ export default function CoimbatorePage() {
         <p className="text-white/80 max-w-2xl mb-10 leading-relaxed" style={{ fontSize: 'clamp(0.9rem, 1vw + 0.5rem, 1.1rem)' }}>
           Better value, better campus, better you — just 1.5 hours from Coimbatore.
           JKKN Dental College &amp; Hospital offers top-tier dental programmes with
-          92%+ placement support — world-class education with extensive clinical exposure.
+          92% placement support — world-class education with extensive clinical exposure.
         </p>
         <ul className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 mb-10 w-full max-w-2xl list-none p-0 m-0">
           {[
-            { value: '92%+', label: 'PLACEMENTS' },
+            { value: '92%', label: 'PLACEMENTS' },
             { value: '8-10', label: 'LPA HIGHEST' },
             { value: '108km', label: 'FROM COIMBATORE' },
             { value: '2', label: 'PROGRAMMES' },
@@ -235,7 +235,7 @@ export default function CoimbatorePage() {
             Best Dental College Near Coimbatore: How JKKN Compares
           </h2>
           <p className="snippet-answer text-gray-600 leading-relaxed mb-8 max-w-3xl mx-auto text-center" style={{ fontSize: 'clamp(0.9rem, 1vw + 0.4rem, 1.05rem)' }}>
-            JKKN Dental College &amp; Hospital, located 108 km from Coimbatore on NH-544, records a 92%+ placement rate and a highest salary of 8–10 LPA for BDS graduates. The college holds NAAC accreditation, DCI approval, and offers 100 BDS seats and 5 MDS specializations through TN Dr. MGR Medical University.
+            JKKN Dental College &amp; Hospital, located 108 km from Coimbatore on NH-544, records a 92% placement rate and a highest salary of 8–10 LPA for BDS graduates. The college holds NAAC accreditation, DCI approval, and offers 100 BDS seats and 5 MDS specializations through TN Dr. MGR Medical University.
           </p>
           {/* Comparison Table */}
           <div className="overflow-x-auto rounded-2xl border border-gray-100 shadow-sm mb-8">
@@ -291,7 +291,7 @@ export default function CoimbatorePage() {
             Why Learners from Coimbatore Choose JKKN Dental College
           </h2>
           <p className="snippet-answer text-gray-600 max-w-3xl mx-auto mb-4 leading-relaxed" style={{ fontSize: 'clamp(0.875rem, 1vw + 0.4rem, 1.05rem)' }}>
-            Learners from Coimbatore choose JKKN Dental College &amp; Hospital for one measurable reason: outcomes. With a 92%+ placement rate, 8–10 LPA highest salary, and 500+ daily patients providing real clinical exposure from Year 1, JKKN delivers verified results on every metric that matters for a dental career in 2026.
+            Learners from Coimbatore choose JKKN Dental College &amp; Hospital for one measurable reason: outcomes. With a 92% placement rate, 8–10 LPA highest salary, and 500+ daily patients providing real clinical exposure from Year 1, JKKN delivers verified results on every metric that matters for a dental career in 2026.
           </p>
           <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-12" />
           <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 list-none p-0 m-0">
@@ -551,7 +551,7 @@ export default function CoimbatorePage() {
               The on-campus teaching hospital operates 200+ dental chairs, 100+ hospital beds, and treats 500+ patients daily, providing clinical exposure from Year 1 of the BDS program. The campus is India&apos;s first AI-integrated dental educational campus, with <Link href="/research/" className="text-[#006837] hover:underline font-medium">50+ research publications</Link> and an active institutional innovation council.
             </p>
             <p className="text-gray-600 leading-relaxed" style={{ fontSize: 'clamp(0.875rem, 1vw + 0.3rem, 1rem)' }}>
-              JKKN Dental College &amp; Hospital records a 92%+ placement rate for BDS graduates, with a highest salary of 8–10 LPA and an average salary of 3–5 LPA. International placements include the UK (NHS), UAE (Cleveland Clinic Abu Dhabi), and Saudi Arabia. Recognized as one of the <Link href="/best-dental-college-tamil-nadu/" className="text-[#006837] hover:underline font-medium">best dental colleges in Tamil Nadu</Link>, JKKN combines institutional heritage with measurable career outcomes.
+              JKKN Dental College &amp; Hospital records a 92% placement rate for BDS graduates, with a highest salary of 8–10 LPA and an average salary of 3–5 LPA. International placements include the UK (NHS), UAE (Cleveland Clinic Abu Dhabi), and Saudi Arabia. Recognized as one of the <Link href="/best-dental-college-tamil-nadu/" className="text-[#006837] hover:underline font-medium">best dental colleges in Tamil Nadu</Link>, JKKN combines institutional heritage with measurable career outcomes.
             </p>
             <p className="text-gray-600 leading-relaxed" style={{ fontSize: 'clamp(0.875rem, 1vw + 0.3rem, 1rem)' }}>
               Learners from Coimbatore access the campus via a 108-km drive on NH-544 (approximately 1.5 hours) or through college-operated transport services. Contact: +91 9345855001 | info@jkkn.ac.in

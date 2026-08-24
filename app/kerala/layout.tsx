@@ -66,7 +66,7 @@ const orgSchema = {
   "alternateName": "JKKN Dental",
   "url": "https://dental.jkkn.ac.in/",
   "logo": "https://dental.jkkn.ac.in/images/jkkn-dental-logo.webp",
-  "description": "DCI approved, NAAC accredited dental college affiliated to TN Dr. MGR Medical University. Offers BDS and MDS programmes with 92%+ placement support.",
+  "description": "DCI approved, NAAC accredited dental college affiliated to TN Dr. MGR Medical University. Offers BDS and MDS programmes with 92% placement support.",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Natarajapuram, NH-544 (Salem–Coimbatore Highway)",

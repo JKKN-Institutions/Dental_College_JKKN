@@ -58,7 +58,7 @@ export default function KarurPage() {
   ];
 
   const placementStats = [
-    { value: '92%+', label: 'PLACEMENT RATE' },
+    { value: '92%', label: 'PLACEMENT RATE' },
     { value: '8-10', label: 'LPA HIGHEST' },
     { value: '3-5', label: 'LPA AVERAGE' },
     { value: '15+', label: 'RECRUITING PARTNERS' },
@@ -136,7 +136,7 @@ export default function KarurPage() {
         </p>
         <ul className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 mb-10 w-full max-w-2xl list-none p-0 m-0">
           {[
-            { value: '92%+', label: 'PLACEMENTS' },
+            { value: '92%', label: 'PLACEMENTS' },
             { value: '8-10', label: 'LPA HIGHEST' },
             { value: '~75km', label: 'FROM KARUR' },
             { value: '2', label: 'PROGRAMMES' },

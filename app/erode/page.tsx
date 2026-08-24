@@ -66,7 +66,7 @@ export default function ErodePage() {
   ];
 
   const placementStats = [
-    { value: '92%+', label: 'PLACEMENT RATE' },
+    { value: '92%', label: 'PLACEMENT RATE' },
     { value: '8-10', label: 'LPA HIGHEST' },
     { value: '3-5', label: 'LPA AVERAGE' },
     { value: '15+', label: 'RECRUITING PARTNERS' },
@@ -144,11 +144,11 @@ export default function ErodePage() {
         <p className="text-white/60 text-sm font-medium tracking-wide mb-6">Nearest DCI-Approved Dental College — JKKN Dental College &amp; Hospital, Komarapalayam</p>
         <p className="text-white/80 max-w-2xl mb-10 leading-relaxed" style={{ fontSize: 'clamp(0.9rem, 1vw + 0.5rem, 1.1rem)' }}>
           Erode to JKKN — a short, smooth ride on NH-544. JKKN Dental College &amp; Hospital offers top-tier dental programmes with
-          92%+ placement support — just 18 km from Erode with excellent highway connectivity.
+          92% placement support — just 18 km from Erode with excellent highway connectivity.
         </p>
         <ul className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 mb-10 w-full max-w-2xl list-none p-0 m-0">
           {[
-            { value: '92%+', label: 'PLACEMENTS' },
+            { value: '92%', label: 'PLACEMENTS' },
             { value: '8-10', label: 'LPA HIGHEST' },
             { value: '18km', label: 'FROM ERODE' },
             { value: '2', label: 'PROGRAMMES' },
@@ -457,7 +457,7 @@ export default function ErodePage() {
             <div className="bg-white rounded-2xl p-6 text-left shadow-sm">
               <div className="text-5xl text-gray-200 font-serif leading-none mb-3 select-none">&quot;</div>
               <p className="text-gray-500 text-sm leading-relaxed italic mb-6">
-                I chose JKKN over colleges in Coimbatore because of the patient volume and placement support. The campus hostel was comfortable, and the 92%+ placement record is real — I got placed at Apollo Dental before my final year ended.
+                I chose JKKN over colleges in Coimbatore because of the patient volume and placement support. The campus hostel was comfortable, and the 92% placement record is real — I got placed at Apollo Dental before my final year ended.
               </p>
               <div>
                 <p className="font-bold text-gray-900 text-sm">Meena Devi S.</p>

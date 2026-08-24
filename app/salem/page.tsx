@@ -80,7 +80,7 @@ export default function SalemPage() {
   ];
 
   const placementStats = [
-    { value: '92%+', label: 'PLACEMENT RATE' },
+    { value: '92%', label: 'PLACEMENT RATE' },
     { value: '8-10', label: 'LPA HIGHEST' },
     { value: '3-5', label: 'LPA AVERAGE' },
     { value: '15+', label: 'RECRUITING PARTNERS' },
@@ -126,7 +126,7 @@ export default function SalemPage() {
     { label: 'MDS Specializations', value: '5 specializations' },
     { label: 'Dental Chairs', value: '200+ chairs' },
     { label: 'Daily Patients', value: '500+ patients' },
-    { label: 'Placement Rate', value: '92%+' },
+    { label: 'Placement Rate', value: '92%' },
     { label: 'Campus', value: 'Komarapalayam, Namakkal, TN 638183' },
     { label: 'Contact', value: '+91 9345855001' },
   ];
@@ -174,11 +174,11 @@ export default function SalemPage() {
         </p>
         <p className="text-white/80 max-w-2xl mb-10 leading-relaxed" style={{ fontSize: 'clamp(0.9rem, 1vw + 0.5rem, 1.1rem)' }}>
           Approximately 60 km from Salem on NH-544. JKKN Dental College &amp; Hospital offers top-tier dental programmes with
-          92%+ placement support.
+          92% placement support.
         </p>
         <ul className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 mb-10 w-full max-w-2xl list-none p-0 m-0">
           {[
-            { value: '92%+', label: 'PLACEMENTS' },
+            { value: '92%', label: 'PLACEMENTS' },
             { value: '8-10', label: 'LPA HIGHEST' },
             { value: '60 km', label: 'FROM SALEM' },
             { value: '2', label: 'PROGRAMMES' },
@@ -371,7 +371,7 @@ export default function SalemPage() {
           </ul>
           <div className="bg-white rounded-xl p-5 text-left border border-gray-100">
             <p className="text-gray-600 text-sm leading-relaxed">
-              For Salem-origin graduates, JKKN Dental College &amp; Hospital&apos;s placement network extends to dental hospitals in Salem, Erode, Namakkal, Coimbatore, and across Tamil Nadu. The 92%+ placement rate includes placements in private dental hospitals, government dental departments, and international opportunities (UK NHS, UAE). Track verified placement records at{' '}
+              For Salem-origin graduates, JKKN Dental College &amp; Hospital&apos;s placement network extends to dental hospitals in Salem, Erode, Namakkal, Coimbatore, and across Tamil Nadu. The 92% placement rate includes placements in private dental hospitals, government dental departments, and international opportunities (UK NHS, UAE). Track verified placement records at{' '}
               <a href="https://placements.jkkn.ac.in/" target="_blank" rel="noopener noreferrer" className="text-[#006837] hover:underline font-medium">placements.jkkn.ac.in</a>.
             </p>
           </div>

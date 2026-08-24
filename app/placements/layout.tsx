@@ -40,7 +40,7 @@ const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "What is the placement rate at JKKN Dental College?", "acceptedAnswer": { "@type": "Answer", "text": "JKKN Dental College achieves a 92%+ placement assistance rate. The Career Development Centre (CDC) provides comprehensive support including resume building, interview preparation, and direct company connections for BDS and MDS graduates." } },
+    { "@type": "Question", "name": "What is the placement rate at JKKN Dental College?", "acceptedAnswer": { "@type": "Answer", "text": "JKKN Dental College achieves a 92% placement assistance rate. The Career Development Centre (CDC) provides comprehensive support including resume building, interview preparation, and direct company connections for BDS and MDS graduates." } },
     { "@type": "Question", "name": "Which companies hire from JKKN Dental College?", "acceptedAnswer": { "@type": "Answer", "text": "Top recruiters include Apollo Dental, Clove Dental, Sabka Dentist, MyDentist, Apollo Hospitals, Fortis Healthcare, Manipal Hospitals, and government PHCs & district hospitals. International recruiters include NHS UK, Cleveland Clinic Abu Dhabi, and Saudi MOH." } },
     { "@type": "Question", "name": "What is the salary after BDS from JKKN Dental College?", "acceptedAnswer": { "@type": "Answer", "text": "BDS graduates from JKKN Dental College typically receive packages ranging from 3-5 LPA for entry-level positions. Top performers and those placed in corporate dental chains or international positions can earn 8-10 LPA or higher. [UPDATE — verify from CDC records]" } },
     { "@type": "Question", "name": "Does JKKN Dental College offer international placements?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, JKKN Dental College alumni work internationally at NHS UK, Cleveland Clinic Abu Dhabi, Saudi Ministry of Health, and dental clinics in Singapore. The CDC supports international licensing exam preparation and placement assistance." } },
@@ -62,7 +62,7 @@ const orgSchema = {
   "alternateName": "JKKN Dental",
   "url": "https://dental.jkkn.ac.in/",
   "logo": "https://dental.jkkn.ac.in/images/jkkn-dental-logo.webp",
-  "description": "DCI approved, NAAC accredited dental college with 92%+ placement assistance. 3,000+ alumni worldwide. Career Development Centre provides comprehensive placement support for BDS and MDS graduates.",
+  "description": "DCI approved, NAAC accredited dental college with 92% placement assistance. 3,000+ alumni worldwide. Career Development Centre provides comprehensive placement support for BDS and MDS graduates.",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Natarajapuram, NH-544 (Salem\u2013Coimbatore Highway)",

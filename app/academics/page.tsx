@@ -49,7 +49,7 @@ const faqSchema = {
       name: 'What is the placement rate for dental graduates from JKKN?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'JKKN Dental College maintains a 92%+ placement rate across all programs. Graduates are placed in leading hospitals, dental clinics, and healthcare organizations in India and internationally, including opportunities in the UK (NHS), UAE, and Saudi Arabia.',
+        text: 'JKKN Dental College maintains a 92% placement rate across all programs. Graduates are placed in leading hospitals, dental clinics, and healthcare organizations in India and internationally, including opportunities in the UK (NHS), UAE, and Saudi Arabia.',
       },
     },
   ],

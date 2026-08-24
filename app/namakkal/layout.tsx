@@ -127,7 +127,7 @@ const faqSchema = {
       "name": "What are the placements from JKKN Dental College?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "JKKN Dental College & Hospital, Namakkal district, reports 92%+ placement rate. Recruiting partners include Clove Dental, Apollo Dental, MyDentist, Sabka Dentist, Apollo Hospitals, Fortis Healthcare, Manipal Hospitals, and Government PHCs. International placements in UK (NHS), Saudi Arabia, UAE, and Singapore are also available. View full records at placements.jkkn.ac.in."
+        "text": "JKKN Dental College & Hospital, Namakkal district, reports 92% placement rate. Recruiting partners include Clove Dental, Apollo Dental, MyDentist, Sabka Dentist, Apollo Hospitals, Fortis Healthcare, Manipal Hospitals, and Government PHCs. International placements in UK (NHS), Saudi Arabia, UAE, and Singapore are also available. View full records at placements.jkkn.ac.in."
       }
     },
   ]

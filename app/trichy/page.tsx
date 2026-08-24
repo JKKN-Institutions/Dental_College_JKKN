@@ -58,7 +58,7 @@ export default function TrichyPage() {
   ];
 
   const placementStats = [
-    { value: '92%+', label: 'PLACEMENT RATE' },
+    { value: '92%', label: 'PLACEMENT RATE' },
     { value: '8-10', label: 'LPA HIGHEST' },
     { value: '3-5', label: 'LPA AVERAGE' },
     { value: '15+', label: 'RECRUITING PARTNERS' },
@@ -134,11 +134,11 @@ export default function TrichyPage() {
         <p className="text-white/60 text-sm font-medium tracking-wide mb-6">Established DCI-Approved Dental College — JKKN Dental College &amp; Hospital, Komarapalayam</p>
         <p className="text-white/80 max-w-2xl mb-10 leading-relaxed" style={{ fontSize: 'clamp(0.9rem, 1vw + 0.5rem, 1.1rem)' }}>
           Trichy has very few dental college options — JKKN Dental College &amp; Hospital at Komarapalayam is a straight
-          NH-44 ride via Namakkal. BDS with 100 seats, MDS in 5 specialisations, and a 200+ chair teaching hospital with 92%+ placement support.
+          NH-44 ride via Namakkal. BDS with 100 seats, MDS in 5 specialisations, and a 200+ chair teaching hospital with 92% placement support.
         </p>
         <ul className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 mb-10 w-full max-w-2xl list-none p-0 m-0">
           {[
-            { value: '92%+', label: 'PLACEMENTS' },
+            { value: '92%', label: 'PLACEMENTS' },
             { value: '8-10', label: 'LPA HIGHEST' },
             { value: '~145km', label: 'FROM TRICHY' },
             { value: '2', label: 'PROGRAMMES' },

@@ -231,7 +231,7 @@ export const faqCategories = [
       {
         question: 'What is the placement rate at JKKN Dental College?',
         answer:
-          'JKKN Dental College achieves a 92%+ placement assistance rate. The Career Development Centre (CDC) provides comprehensive support including resume building, interview preparation, and direct company connections for BDS and MDS graduates.',
+          'JKKN Dental College achieves a 92% placement assistance rate. The Career Development Centre (CDC) provides comprehensive support including resume building, interview preparation, and direct company connections for BDS and MDS graduates.',
       },
       {
         question: 'Which companies hire from JKKN Dental College?',

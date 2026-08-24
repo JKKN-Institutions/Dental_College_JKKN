@@ -62,7 +62,7 @@ export default function TiruppurPage() {
   ];
 
   const placementStats = [
-    { value: '90%+', label: 'PLACEMENT RATE' },
+    { value: '92%', label: 'PLACEMENT RATE' },
     { value: '8-10', label: 'LPA HIGHEST' },
     { value: '3-5', label: 'LPA AVERAGE' },
     { value: '15+', label: 'RECRUITING PARTNERS' },
@@ -141,12 +141,12 @@ export default function TiruppurPage() {
         <p className="text-white/80 max-w-2xl mb-10 leading-relaxed" style={{ fontSize: 'clamp(0.9rem, 1vw + 0.5rem, 1.1rem)' }}>
           Tiruppur learners — world-class education without the big-city hassle.
           JKKN Dental College &amp; Hospital offers top-tier dental programmes with
-          90%+ placement support — no need to go to Coimbatore — quality
+          92% placement support — no need to go to Coimbatore — quality
           education is closer than you think.
         </p>
         <ul className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 mb-10 w-full max-w-2xl list-none p-0 m-0">
           {[
-            { value: '90%+', label: 'PLACEMENTS' },
+            { value: '92%', label: 'PLACEMENTS' },
             { value: '8-10', label: 'LPA HIGHEST' },
             { value: '67km', label: 'FROM TIRUPPUR' },
             { value: '2', label: 'PROGRAMMES' },
