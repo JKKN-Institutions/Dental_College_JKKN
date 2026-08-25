@@ -7,6 +7,7 @@ import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import StructuredData from '@/components/StructuredData';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 import Breadcrumb from '@/components/Breadcrumb';
+import MdsSpecialityNav from '@/components/mds/MdsSpecialityNav';
 import { generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export default function MDSPeriodontics() {
@@ -1256,6 +1257,8 @@ export default function MDSPeriodontics() {
           </div>
         </div>
       </section>
+
+      <MdsSpecialityNav current="periodontics" />
 
       <Footer />
       <FloatingWhatsApp />
