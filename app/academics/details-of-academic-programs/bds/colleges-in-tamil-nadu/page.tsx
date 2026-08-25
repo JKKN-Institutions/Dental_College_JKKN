@@ -106,7 +106,7 @@ export default function DentalCollegesInTamilNadu() {
     {
       question: 'Is there an official ranking of the best BDS colleges in Tamil Nadu?',
       answer:
-        'No. The Tamil Nadu Dr. M.G.R. Medical University publishes sanctioned intake, not a merit order, so any list titled \u201cbest BDS colleges\u201d is somebody\u2019s opinion rather than a published ranking. What the university document does let you compare is factual: whether a college is government or self-financing, how many BDS seats it is sanctioned, where it is, and whether it carries minority status \u2014 all four are in the table above.',
+        'Not one that covers them all. The Tamil Nadu Dr. M.G.R. Medical University publishes sanctioned intake, not a merit order. NIRF, the Ministry of Education\u2019s ranking framework, does rank dental institutions nationally \u2014 but only those that take part in it, so it is neither a list of Tamil Nadu\u2019s dental colleges nor a ranking of BDS seats. No published source ranks all 23 affiliated colleges, which is why a state-wide \u201ctop 10\u201d is an opinion. What the university document does let you compare is factual: whether a college is government or self-financing, how many BDS seats it is sanctioned, where it is, and whether it carries minority status \u2014 all four are in the table above.',
     },
   ];
 
@@ -409,12 +409,16 @@ export default function DentalCollegesInTamilNadu() {
               What about the &ldquo;best&rdquo; BDS colleges in Tamil Nadu?
             </h3>
             <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
-              {TN_BDS_SOURCE.authority} publishes sanctioned intake, not a merit order. There is
-              no official ranking of BDS colleges in the state, so every &ldquo;top 10&rdquo; list
-              on this query is an opinion presented as a fact. Four things in the table above are
-              sourced and comparable instead &mdash; government or self-financing, sanctioned
-              seats, location, and minority status &mdash; and for a candidate choosing on NEET
-              rank those decide far more than a ranking does.
+              {TN_BDS_SOURCE.authority} publishes sanctioned intake, not a merit order, so the
+              table above is a list and not a ranking. NIRF, the Ministry of Education&rsquo;s
+              ranking framework, does rank dental institutions nationally &mdash; but only the ones
+              that take part in it, which is why it is neither a list of Tamil Nadu&rsquo;s dental
+              colleges nor a ranking of BDS seats. No published source ranks all{' '}
+              {TN_BDS_TOTALS.colleges} affiliated colleges, so a state-wide &ldquo;top 10&rdquo; is
+              an opinion presented as a fact. Four things in the table above are sourced and
+              comparable instead &mdash; government or self-financing, sanctioned seats, location,
+              and minority status &mdash; and for a candidate choosing on NEET rank those decide
+              far more than a ranking does.
             </p>
           </div>
         </div>
