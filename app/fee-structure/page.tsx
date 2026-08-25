@@ -458,6 +458,39 @@ export default function FeesStructure() {
         </div>
       </section>
 
+      {/* A-08. These four questions were already declared in faqSchema and shown to nobody -
+          the page emitted FAQPage markup with no visible question or answer anywhere on it,
+          which Google's FAQPage guidelines do not allow. The block below RENDERS faqSchema
+          itself rather than a copy of it, so the markup and what a reader sees are the same
+          strings by construction and cannot drift. */}
+      <section className="py-16 px-4 bg-white">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#006837] mb-3 text-center">
+            Fee questions parents ask
+          </h2>
+          <p className="text-gray-600 text-center mb-10">
+            Answered for the {new Date().getFullYear()}&ndash;
+            {String(new Date().getFullYear() + 1).slice(2)} admission year. For a figure specific
+            to your quota and course, call the admissions office.
+          </p>
+          <div className="space-y-5">
+            {faqSchema.mainEntity.map((f) => (
+              <div
+                key={f.name}
+                className="rounded-xl border border-gray-200 bg-[#FBFBEE] p-5 sm:p-6"
+              >
+                <h3 className="font-semibold text-gray-900 text-base sm:text-lg mb-2">
+                  {f.name}
+                </h3>
+                <p className="faq-answer text-gray-700 text-sm sm:text-base leading-relaxed">
+                  {f.acceptedAnswer.text}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Contact for Fee Queries */}
       <section className="py-16 px-4 bg-gradient-to-br from-[#006837] to-[#002309]">
         <div className="max-w-4xl mx-auto text-center">
