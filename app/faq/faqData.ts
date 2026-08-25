@@ -179,7 +179,7 @@ export const faqCategories = [
       {
         question: 'What is the MDS course fee range in Tamil Nadu?',
         answer:
-          'MDS fees in Tamil Nadu range from ₹50,000/year in government colleges to ₹18 lakh/year in private management quota. Total 3-year fees range from ₹1.5 lakh (government) to ₹54 lakh (private management). Government quota seats in private colleges cost ₹4.5–7 lakh per year.',
+          'Tamil Nadu’s MDS prospectuses for 2026-27 set exactly one tuition amount: ₹30,000 a year for Government Institutions. For self-financing colleges, on government-quota and management or NRI seats alike, the prospectuses state the tuition is fixed by the Committee on Fixation of Fees in respect of Self-Financing Professional Colleges and publish no figure, so no reliable private-college range can be quoted. Security deposits are published: ₹30,000 for government colleges, ₹1,00,000 for government-quota seats in self-financing colleges and ₹2,00,000 for management quota. Source: Selection Committee, Directorate of Medical Education and Research, MDS Prospectus 2026-2027.',
       },
       {
         question: 'Are there any hidden charges beyond the tuition fee?',

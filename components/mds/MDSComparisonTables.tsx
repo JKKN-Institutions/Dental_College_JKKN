@@ -1,5 +1,7 @@
 "use client";
 
+import { TN_MDS_FEES, TN_MDS_FEE_SOURCE } from '@/data/tnMdsFees';
+
 /**
  * MDS Comparison Tables — SEO + AEO featured snippet bait
  *
@@ -7,8 +9,13 @@
  * 1. MDS Specializations & Seat Matrix at JKKN
  * 2. MDS Fees Breakdown (Year-wise)
  *
- * Data sourced from aggregator benchmarks (Shiksha, CollegeDunia, Careers360)
- * and official JKKN records. Aggregated data flagged [UPDATE] where unverified.
+ * FEE DATA IS NO LONGER FROM AGGREGATORS. Table 2 reads data/tnMdsFees.ts, which is
+ * GENERATED from the Tamil Nadu Selection Committee's own MDS prospectuses for
+ * 2026-2027. The previous table came from aggregator benchmarks (Shiksha,
+ * CollegeDunia, Careers360) and was measurably wrong: it published Rs 50,000 to
+ * Rs 1,00,000 as government MDS tuition where the prospectus says Rs 30,000, and its
+ * prose claimed private fees reach Rs 52 lakh a year against its own table's
+ * Rs 18,00,000 maximum. Table 1, JKKN's own seat matrix, is unchanged.
  */
 
 export default function MDSComparisonTables() {
@@ -121,54 +128,74 @@ export default function MDSComparisonTables() {
           <h3 className="text-2xl md:text-3xl font-bold text-[#006837] mb-4">
             MDS Course Fees Structure in Tamil Nadu
           </h3>
-          <p className="text-gray-600 mb-6">
-            MDS fees in Tamil Nadu vary significantly between government and
-            private dental colleges. Government MDS seats start from ₹50,000
-            per year, while private MDS fees range from ₹4.5 lakh to ₹52 lakh
-            annually depending on the specialization and institution.
+          <p className="text-gray-600 mb-4">
+            Tamil Nadu&rsquo;s MDS admission prospectuses set exactly one tuition
+            amount &mdash; {TN_MDS_FEES[0].tuitionPerYear} a year for Government
+            Institutions. For every self-financing seat, government quota and
+            management or NRI alike, both prospectuses say the tuition is
+            &ldquo;as prescribed by the {TN_MDS_FEE_SOURCE.committee}&rdquo; and
+            publish no figure at all. The table below therefore carries the
+            government&rsquo;s own numbers and nothing else.
           </p>
           <div className="overflow-x-auto rounded-xl border-2 border-[#7cb983]">
             <table className="w-full text-left border-collapse bg-white">
               <thead className="bg-[#006837] text-white">
                 <tr>
-                  <th className="p-4 font-bold">College Type</th>
-                  <th className="p-4 font-bold">Annual Tuition Fees</th>
-                  <th className="p-4 font-bold">Total MDS Fees (3 Years)</th>
-                  <th className="p-4 font-bold">Seat Category</th>
+                  <th className="p-4 font-bold">Seat Type</th>
+                  <th className="p-4 font-bold">Annual Tuition</th>
+                  <th className="p-4 font-bold">Security Deposit</th>
+                  <th className="p-4 font-bold">Application Fee</th>
                 </tr>
               </thead>
               <tbody>
-                <tr className="bg-[#FBFBEE] border-b border-gray-200">
-                  <td className="p-4 font-semibold">Government Dental Colleges</td>
-                  <td className="p-4">₹50,000 – ₹1,00,000</td>
-                  <td className="p-4">₹1.5 – ₹3 lakh</td>
-                  <td className="p-4">Merit (NEET MDS)</td>
-                </tr>
-                <tr className="border-b border-gray-200">
-                  <td className="p-4 font-semibold">Private — Government Quota</td>
-                  <td className="p-4">₹4,50,000 – ₹7,00,000</td>
-                  <td className="p-4">₹13.5 – ₹21 lakh</td>
-                  <td className="p-4">Merit (NEET MDS)</td>
-                </tr>
-                <tr className="bg-[#FBFBEE] border-b border-gray-200">
-                  <td className="p-4 font-semibold">Private — Management Quota</td>
-                  <td className="p-4">₹9,00,000 – ₹18,00,000</td>
-                  <td className="p-4">₹27 – ₹54 lakh</td>
-                  <td className="p-4">Management</td>
-                </tr>
-                <tr className="border-b border-gray-200">
-                  <td className="p-4 font-semibold">Private — NRI Quota</td>
-                  <td className="p-4">$15,000 – $25,000</td>
-                  <td className="p-4">$45,000 – $75,000</td>
-                  <td className="p-4">NRI</td>
-                </tr>
+                {TN_MDS_FEES.map((r, i) => (
+                  <tr
+                    key={r.id}
+                    className={`border-b border-gray-200 ${
+                      i % 2 === 0 ? 'bg-[#FBFBEE]' : ''
+                    }`}
+                  >
+                    <td className="p-4 font-semibold">
+                      {r.category}
+                      <span className="block mt-0.5 text-xs font-normal text-gray-500">
+                        {r.seatCategory}
+                      </span>
+                    </td>
+                    <td className="p-4">
+                      {r.tuitionIsOfficial ? (
+                        <span className="font-semibold">{r.tuitionPerYear}</span>
+                      ) : (
+                        <span className="text-gray-600">{r.tuitionPerYear}</span>
+                      )}
+                      <span className="block mt-0.5 text-xs text-gray-500">
+                        {r.clause}
+                      </span>
+                    </td>
+                    <td className="p-4">{r.securityDeposit}</td>
+                    <td className="p-4">
+                      {r.applicationFee}
+                      <span className="block mt-0.5 text-xs text-gray-500">
+                        plus {r.registrationFee} at counselling registration
+                      </span>
+                    </td>
+                  </tr>
+                ))}
               </tbody>
             </table>
           </div>
+          <p className="text-sm text-gray-600 mt-3">
+            <strong>Source:</strong> {TN_MDS_FEE_SOURCE.authority} &mdash;{' '}
+            {TN_MDS_FEE_SOURCE.gq.label} ({TN_MDS_FEE_SOURCE.gq.order}) and{' '}
+            {TN_MDS_FEE_SOURCE.mq.label} ({TN_MDS_FEE_SOURCE.mq.order}).
+            Retrieved {TN_MDS_FEE_SOURCE.retrieved} from{' '}
+            {TN_MDS_FEE_SOURCE.site}. Security deposit is refundable to
+            candidates who get no seat, per the prospectus.
+          </p>
           <p className="text-sm text-gray-500 mt-3 italic">
-            For exact MDS fees at JKKN Dental College, contact admissions at
-            +91 9345855001 or email dental@jkkn.ac.in. Fees are revised annually
-            as per TN Fee Committee orders.
+            No per-college private tuition figure is quoted here because none is
+            published in these orders &mdash; the {TN_MDS_FEE_SOURCE.committee}{' '}
+            fixes it for each year. For JKKN&rsquo;s own MDS fees, ask admissions
+            on +91 9345855001 or dental@jkkn.ac.in.
           </p>
         </div>
       </div>
