@@ -93,6 +93,21 @@ export default function DentalCollegesInTamilNadu() {
       answer:
         'Through NEET UG. Candidates qualify the national entrance exam, then take part in Tamil Nadu state counselling for government-quota seats or institutional counselling for management-quota seats. Seats are allotted on NEET rank, category and availability, and the BDS course runs five years including a compulsory rotatory internship.',
     },
+    {
+      question: 'How many BDS colleges are there in Tamil Nadu?',
+      answer:
+        'Twenty-three, and they are the same twenty-three dental colleges listed above. BDS is the only undergraduate dental degree recognised in India, so every affiliated dental college in Tamil Nadu is a BDS college \u2014 the two phrases describe one list. Between them they are sanctioned 2,200 BDS seats for 2025-26.',
+    },
+    {
+      question: 'Which are the private BDS colleges in Tamil Nadu?',
+      answer:
+        'Twenty of the twenty-three affiliated colleges are self-financing, which is what most people mean by private, and they hold 1,950 of the 2,200 sanctioned BDS seats. Filter the table above to see them by name, location and intake. Deemed-to-be universities are private too but are not in this matrix at all, because they award their own degrees rather than the university\u2019s.',
+    },
+    {
+      question: 'Is there an official ranking of the best BDS colleges in Tamil Nadu?',
+      answer:
+        'No. The Tamil Nadu Dr. M.G.R. Medical University publishes sanctioned intake, not a merit order, so any list titled \u201cbest BDS colleges\u201d is somebody\u2019s opinion rather than a published ranking. What the university document does let you compare is factual: whether a college is government or self-financing, how many BDS seats it is sanctioned, where it is, and whether it carries minority status \u2014 all four are in the table above.',
+    },
   ];
 
   const speakable = generateSpeakableWebPageSchema({
@@ -323,6 +338,84 @@ export default function DentalCollegesInTamilNadu() {
                 MDS seats across nine specialities.
               </span>
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* A-05. The table above already answers "BDS colleges in Tamil Nadu" - it just never
+          used the words, which is why 215 mobile impressions for that query land on the homepage
+          and the /bds/ hub instead of here. This section says it plainly and splits the list the
+          three ways the measured query family actually asks for: government, private, and
+          "best". The last is answered by refusing to rank, because the university publishes no
+          merit order and inventing one would be the unsourced claim this page exists against. */}
+      <section className="py-10 sm:py-14 px-4 sm:px-6 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-xl sm:text-2xl font-bold text-[#006837] mb-3">
+            BDS Colleges in Tamil Nadu
+          </h2>
+          <p className="answer-capsule text-sm sm:text-base text-gray-700 leading-relaxed max-w-3xl mb-6">
+            BDS colleges in Tamil Nadu and dental colleges in Tamil Nadu are the same{' '}
+            {TN_BDS_TOTALS.colleges} institutions. Bachelor of Dental Surgery is the only
+            undergraduate dental degree recognised in India, so every affiliated dental college
+            here is a BDS college. They hold{' '}
+            {TN_BDS_TOTALS.seats.toLocaleString('en-IN')} sanctioned BDS seats for{' '}
+            {TN_BDS_SOURCE.academicYear}, and the table above lists all of them with location,
+            type, minority status and intake.
+          </p>
+
+          <div className="grid sm:grid-cols-3 gap-4">
+            <div className="rounded-xl border border-gray-200 bg-[#FBFBEE] p-5">
+              <p className="text-2xl font-bold text-[#006837]">
+                {TN_BDS_TOTALS.governmentColleges}
+              </p>
+              <p className="mt-1 font-semibold text-gray-900 text-sm sm:text-base">
+                Government BDS colleges
+              </p>
+              <p className="mt-1.5 text-xs sm:text-sm text-gray-700 leading-relaxed">
+                Holding {TN_BDS_TOTALS.governmentSeats} of the{' '}
+                {TN_BDS_TOTALS.seats.toLocaleString('en-IN')} seats. Filled through Tamil Nadu
+                state counselling on NEET rank, which is why their cutoffs run highest.
+              </p>
+            </div>
+            <div className="rounded-xl border border-gray-200 bg-[#FBFBEE] p-5">
+              <p className="text-2xl font-bold text-[#006837]">
+                {TN_BDS_TOTALS.selfFinancingColleges}
+              </p>
+              <p className="mt-1 font-semibold text-gray-900 text-sm sm:text-base">
+                Private BDS colleges
+              </p>
+              <p className="mt-1.5 text-xs sm:text-sm text-gray-700 leading-relaxed">
+                Self-financing, holding{' '}
+                {TN_BDS_TOTALS.selfFinancingSeats.toLocaleString('en-IN')} seats between them
+                across government-quota and management-quota routes.
+              </p>
+            </div>
+            <div className="rounded-xl border border-gray-200 bg-[#FBFBEE] p-5">
+              <p className="text-2xl font-bold text-[#006837]">
+                {TN_BDS_TOTALS.minorityColleges}
+              </p>
+              <p className="mt-1 font-semibold text-gray-900 text-sm sm:text-base">
+                Minority BDS colleges
+              </p>
+              <p className="mt-1.5 text-xs sm:text-sm text-gray-700 leading-relaxed">
+                Marked in the university document, JKKN among them. Minority status changes how
+                the management quota is filled, not the sanctioned intake or the NEET requirement.
+              </p>
+            </div>
+          </div>
+
+          <div className="mt-6 rounded-xl border border-[#d4af37]/40 bg-white p-5 sm:p-6 max-w-3xl">
+            <h3 className="font-semibold text-gray-900 text-base sm:text-lg mb-2">
+              What about the &ldquo;best&rdquo; BDS colleges in Tamil Nadu?
+            </h3>
+            <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
+              {TN_BDS_SOURCE.authority} publishes sanctioned intake, not a merit order. There is
+              no official ranking of BDS colleges in the state, so every &ldquo;top 10&rdquo; list
+              on this query is an opinion presented as a fact. Four things in the table above are
+              sourced and comparable instead &mdash; government or self-financing, sanctioned
+              seats, location, and minority status &mdash; and for a candidate choosing on NEET
+              rank those decide far more than a ranking does.
+            </p>
           </div>
         </div>
       </section>

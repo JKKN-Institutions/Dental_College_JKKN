@@ -65,7 +65,7 @@ export default function AcademicPrograms() {
                 >
                   BDS Admission 2026-27 — Fees &amp; Seats →
                 </a>
-                <a href="/academics/details-of-academic-programs/bds/" className="block text-center text-[#006837] hover:underline text-xs sm:text-sm mt-2">
+                <a href="/academics/details-of-academic-programs/bds/colleges-in-tamil-nadu/" className="block text-center text-[#006837] hover:underline text-xs sm:text-sm mt-2">
                   BDS colleges in Tamil Nadu — how JKKN compares →
                 </a>
               </div>
