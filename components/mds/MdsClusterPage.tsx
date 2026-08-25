@@ -110,7 +110,7 @@ export default function MdsClusterPage({
 
       <section className="bg-[#006837] text-white pt-10 pb-12 px-4 sm:px-6">
         <div className="max-w-6xl mx-auto">
-          <Breadcrumb
+          <Breadcrumb variant="onDark"
             items={[
               { name: 'Home', url: 'https://dental.jkkn.ac.in/' },
               { name: 'Academics', url: 'https://dental.jkkn.ac.in/academics/' },
@@ -121,7 +121,7 @@ export default function MdsClusterPage({
               { name: kicker, url },
             ]}
           />
-          <p className="mt-6 text-[#7cb983] font-semibold uppercase tracking-wider text-xs sm:text-sm">
+          <p className="mt-6 text-[#d4f1e4] font-semibold uppercase tracking-wider text-xs sm:text-sm">
             {kicker} &middot; Academic year {TN_MDS_SOURCE.academicYear}
           </p>
           <h1 className="mt-2 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
