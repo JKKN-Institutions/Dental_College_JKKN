@@ -260,6 +260,18 @@ export default function BDSProgram() {
                 </div>
               </div>
 
+              {/* A-04: the BDS hub hands the Tamil-Nadu-wide list query to its own child.
+                  A child page with no parent link is the defect this estate keeps repeating -
+                  GL6-25 on /bds/, GL6-75 on the MDS children. */}
+              <p className="mb-4">
+                <a
+                  href="/academics/details-of-academic-programs/bds/colleges-in-tamil-nadu/"
+                  className="inline-flex items-center gap-2 text-[#7cb983] font-semibold underline hover:no-underline"
+                >
+                  All 23 dental colleges in Tamil Nadu and their 2,200 BDS seats &rarr;
+                </a>
+              </p>
+
               {/* H1 — Gap #3 Fixed: Keyword-rich H1 */}
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
                 BDS Colleges in Tamil Nadu{' '}

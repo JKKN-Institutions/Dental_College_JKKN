@@ -153,6 +153,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${baseUrl}/academics/details-of-academic-programs/mds/`, lastModified: now, changeFrequency: 'monthly', priority: 0.9 },
     // MDS cluster - one page per question, so each can rank for its own query instead of the
     // hub ranking mid-page-one for four different ones. Data behind them: data/tnMdsSeatMatrix.ts
+    // A-04: the register's highest-impression money keyword. A code page, not a blog post -
+    // measured 2026-08-25, zero of the 165 /blog/ URLs earned a single GSC mobile impression.
+    { url: `${baseUrl}/academics/details-of-academic-programs/bds/colleges-in-tamil-nadu/`, lastModified: now, changeFrequency: 'monthly', priority: 0.9 },
     { url: `${baseUrl}/academics/details-of-academic-programs/mds/seats-in-tamil-nadu/`, lastModified: now, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${baseUrl}/academics/details-of-academic-programs/mds/colleges-in-tamil-nadu/`, lastModified: now, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${baseUrl}/academics/details-of-academic-programs/mds/specialities-in-tamil-nadu/`, lastModified: now, changeFrequency: 'monthly', priority: 0.85 },
