@@ -327,7 +327,7 @@ export default function BDSProgram() {
                 {/* Gap #15: Fixed alt text */}
                 <Image
                   src="/images/BDS-hero-clinical.webp"
-                  alt="BDS dental education and clinical training at JKKN Dental College, best BDS college in Tamil Nadu"
+                  alt="BDS learners in clinical training at JKKN Dental College &amp; Hospital, Komarapalayam"
                   fill
                   className="object-cover"
                   sizes="(max-width: 768px) 100vw, 50vw"
@@ -360,7 +360,7 @@ export default function BDSProgram() {
         <div className="max-w-4xl mx-auto">
           <div className="answer-capsule bg-white border-l-4 border-[#7cb983] rounded-r-xl p-6 shadow-sm">
             <p className="text-gray-700 leading-relaxed text-base md:text-lg">
-              <strong className="text-[#006837]">JKKN Dental College & Hospital</strong>, established in 1987 under the J.K.K. Nattraja Educational Institutions (since 1952), is a DCI-approved and <a href="/accreditation/" className="text-[#7cb983] underline hover:text-[#6ba872]">NAAC Accredited</a> dental institution located on NH-544, Komarapalayam, Namakkal District, Tamil Nadu 638183. It offers <strong>100 BDS seats</strong> and <strong>18 MDS seats</strong> across 5 specializations, affiliated to the <a href="https://www.tnmgrmu.ac.in/" target="_blank" rel="noopener noreferrer" className="text-[#7cb983] underline hover:text-[#6ba872]">Tamil Nadu Dr. M.G.R. Medical University</a>, Chennai. With 200+ dental chairs, 100+ hospital beds, and 500+ daily patient footfall across 9 departments, JKKN is recognized as one of the best BDS colleges in Tamil Nadu for clinical exposure and <a href="/research/" className="text-[#7cb983] underline hover:text-[#6ba872]">research excellence</a> with 50+ publications and 25+ academic partnerships. The college provides 92% placement assistance including international opportunities.
+              <strong className="text-[#006837]">JKKN Dental College & Hospital</strong>, established in 1987 under the J.K.K. Nattraja Educational Institutions (since 1952), is a DCI-approved and <a href="/accreditation/" className="text-[#7cb983] underline hover:text-[#6ba872]">NAAC Accredited</a> dental institution located on NH-544, Komarapalayam, Namakkal District, Tamil Nadu 638183. It offers <strong>100 BDS seats</strong> and <strong>18 MDS seats</strong> across 5 specializations, affiliated to the <a href="https://www.tnmgrmu.ac.in/" target="_blank" rel="noopener noreferrer" className="text-[#7cb983] underline hover:text-[#6ba872]">Tamil Nadu Dr. M.G.R. Medical University</a>, Chennai. With 200+ dental chairs, 100+ hospital beds, and 500+ daily patient footfall across 9 departments, JKKN gives BDS learners daily clinical exposure from the first year, alongside <a href="/research/" className="text-[#7cb983] underline hover:text-[#6ba872]">research excellence</a> with 50+ publications and 25+ academic partnerships. The college provides 92% placement assistance including international opportunities.
             </p>
           </div>
         </div>
@@ -391,7 +391,7 @@ export default function BDSProgram() {
             {[
               { num: 1, title: 'DCI Approved & NAAC Accredited', desc: 'Fully approved by the Dental Council of India and accredited by NAAC, ensuring nationally recognized standards of dental education and patient care.' },
               { num: 2, title: '200+ Dental Chairs — Largest in the Region', desc: 'One of the largest dental clinical facilities in the Namakkal-Erode-Salem corridor with 200+ operational dental chairs and 100+ hospital beds for comprehensive training.' },
-              { num: 3, title: '500+ Daily Patients — Unmatched Clinical Exposure', desc: 'Learners receive hands-on clinical training from Year 1 with 500+ patients visiting daily across 9 specialized departments — a key advantage over many BDS colleges in Tamil Nadu.' },
+              { num: 3, title: '500+ Daily Patients — Clinical Exposure from Year 1', desc: 'Learners receive hands-on clinical training from Year 1 with 500+ patients visiting daily across 9 specialized departments — a key advantage over many BDS colleges in Tamil Nadu.' },
               { num: 4, title: '92% Placement Assistance — Including International', desc: 'Strong placement record with recruiters like Apollo Hospitals, Clove Dental, NHS UK, and Cleveland Clinic Abu Dhabi. 3,000+ alumni network worldwide.' },
               { num: 5, title: '5 MDS Specializations — Seamless UG to PG Pathway', desc: 'Pursue MDS in Periodontics, Orthodontics, Prosthodontics, Conservative & Endodontics, or Oral Medicine & Radiology — 18 PG seats available right on campus.' },
               { num: 6, title: '74+ Years of Trust Legacy (Since 1952)', desc: 'Part of J.K.K. Nattraja Educational Institutions, one of the oldest educational trusts in Tamil Nadu with a legacy spanning 74+ years across 10 institutions.' },
@@ -439,11 +439,11 @@ export default function BDSProgram() {
 
               <article>
                 <p className="text-gray-600 mb-6 leading-relaxed">
-                  The Bachelor of Dental Surgery (BDS) at <a href="/about/" className="text-[#7cb983] underline hover:text-[#6ba872]">JKKN Dental College & Hospital</a> is a prestigious 5-year undergraduate program designed to produce competent dental professionals. Approved by the Dental Council of India (DCI), recognized by the Government of Tamil Nadu, and affiliated with the <strong>Tamil Nadu Dr. M.G.R. Medical University, Chennai</strong>, the program combines rigorous academic training with extensive clinical exposure at one of the best dental colleges in Tamil Nadu.
+                  The Bachelor of Dental Surgery (BDS) at <a href="/about/" className="text-[#7cb983] underline hover:text-[#6ba872]">JKKN Dental College & Hospital</a> is a prestigious 5-year undergraduate program designed to produce competent dental professionals. Approved by the Dental Council of India (DCI), recognized by the Government of Tamil Nadu, and affiliated with the <strong>Tamil Nadu Dr. M.G.R. Medical University, Chennai</strong>, the program combines rigorous academic training with extensive clinical exposure in the college's own 200+ chair teaching hospital.
                 </p>
 
                 <p className="text-gray-600 mb-6 leading-relaxed">
-                  With 200+ dental chairs and 500+ daily patients across 9 departments, JKKN provides unmatched clinical experience from the very first year. Learners benefit from an <a href="/ai-dental-campus/" className="text-[#7cb983] underline hover:text-[#6ba872]">AI-integrated campus</a>, advanced simulation learning labs, and digital radiology infrastructure. The college is established in 1987 under the J.K.K. Nattraja Educational Institutions trust (since 1952), carrying forward a legacy of 74+ years of educational excellence.
+                  With 200+ dental chairs and 500+ daily patients across 9 departments, JKKN gives BDS learners hands-on clinical experience from the very first year. Learners benefit from an <a href="/ai-dental-campus/" className="text-[#7cb983] underline hover:text-[#6ba872]">AI-integrated campus</a>, advanced simulation learning labs, and digital radiology infrastructure. The college is established in 1987 under the J.K.K. Nattraja Educational Institutions trust (since 1952), carrying forward a legacy of 74+ years of educational excellence.
                 </p>
 
                 <p className="text-gray-600 mb-8 leading-relaxed">
@@ -565,7 +565,7 @@ export default function BDSProgram() {
             Hospital & Clinical Infrastructure
           </h2>
           <p className="text-gray-200 text-center mb-12 max-w-3xl mx-auto">
-            One of the most well-equipped dental hospitals among BDS colleges in Tamil Nadu, providing unmatched clinical exposure
+            One of a 200+ chair teaching hospital seeing 500+ patients a day, giving BDS learners clinical exposure from the first year
           </p>
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
@@ -704,7 +704,7 @@ export default function BDSProgram() {
             BDS Eligibility & Admission Process — 2026-27
           </h2>
           <p className="text-gray-600 text-center mb-12 max-w-3xl mx-auto">
-            Your pathway to becoming a dental professional at one of the best BDS colleges in Tamil Nadu starts here. <a href="/admission/" className="text-[#7cb983] underline hover:text-[#6ba872]">View full admission details</a>.
+            Your pathway to becoming a dental professional at a DCI-approved, NAAC A Grade BDS college starts here. <a href="/admission/" className="text-[#7cb983] underline hover:text-[#6ba872]">View full admission details</a>.
           </p>
 
           <div className="grid md:grid-cols-2 gap-8">
@@ -1552,7 +1552,7 @@ export default function BDSProgram() {
               },
               {
                 q: 'Where is JKKN Dental College located?',
-                a: 'JKKN Dental College is at Natarajapuram, NH-544, Komarapalayam, Namakkal District, Tamil Nadu 638183. Distances: Tiruchengode (~15 km), Erode (~22 km, 35 min), Salem (~58 km, 1 hr), Namakkal town (~66 km), Tiruppur (~67 km), Coimbatore (~105 km, 2 hrs). It is the best BDS college on the Salem-Coimbatore NH-544 corridor.'
+                a: 'JKKN Dental College is at Natarajapuram, NH-544, Komarapalayam, Namakkal District, Tamil Nadu 638183. Distances: Tiruchengode (~15 km), Erode (~22 km, 35 min), Salem (~58 km, 1 hr), Namakkal town (~66 km), Tiruppur (~67 km), Coimbatore (~105 km, 2 hrs). It is approved by the Dental Council of India and NAAC accredited with an A Grade.'
               },
               {
                 q: 'What hostel facilities are available for BDS learners?',
@@ -1597,7 +1597,7 @@ export default function BDSProgram() {
           </div>
 
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Begin Your Journey at One of the Best BDS Colleges in Tamil Nadu
+            Begin Your Journey at a DCI-Approved, NAAC A Grade BDS College
           </h2>
           <p className="text-lg text-gray-200 mb-10 leading-relaxed max-w-3xl mx-auto">
             Join JKKN Dental College & Hospital — DCI Approved, NAAC Accredited, 200+ dental chairs, 500+ daily patients, 92% placement assistance, and a 74+ year trust legacy. Your career in dentistry starts here.

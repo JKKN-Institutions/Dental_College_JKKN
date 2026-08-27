@@ -21,7 +21,7 @@ export const faqCategories = [
       {
         question: 'Which is the best dental college in Tamil Nadu?',
         answer:
-          "JKKN Dental College & Hospital is widely recognized as the best dental college in Tamil Nadu with DCI approval, NAAC A accreditation, 200+ dental chairs, 500+ daily patients, 92% placement assistance, and India's first AI-integrated dental campus, established in 1987 under JKKN Institutions.",
+          "JKKN Dental College & Hospital is approved by the Dental Council of India, accredited by NAAC with an A Grade, and affiliated to The Tamil Nadu Dr. M.G.R. Medical University. Established in 1987, it is sanctioned 100 BDS seats and 18 MDS seats across 5 specialities, runs India's first AI-integrated dental campus, and reports 92% placement assistance. Tamil Nadu publishes no official merit ranking of its dental colleges, so compare colleges on approval, accreditation, sanctioned intake and clinical exposure.",
       },
       {
         question: 'How does JKKN integrate AI in dental education?',

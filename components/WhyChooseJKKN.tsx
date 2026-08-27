@@ -35,7 +35,7 @@ export default function WhyChooseJKKN() {
                 </div>
               </div>
               <div>
-                <h4 className="text-lg sm:text-xl font-bold mb-1 sm:mb-2">Unmatched Clinical Exposure</h4>
+                <h4 className="text-lg sm:text-xl font-bold mb-1 sm:mb-2">Clinical Exposure from Year 1</h4>
                 <p className="text-gray-300 leading-relaxed text-sm sm:text-base">
                   Over five hundred patients visit daily across nine clinical departments, providing extensive hands-on training from second year onwards in all dental specialties.
                 </p>

@@ -11,7 +11,7 @@ export default function CTASection() {
 
         {/* Description */}
         <p className="text-white text-sm sm:text-base md:text-lg mb-6 sm:mb-8 md:mb-10 max-w-3xl mx-auto leading-relaxed">
-          Join the best dental college in Tamil Nadu — JKKN Dental College & Hospital — and become part of over five decades of educational excellence. Applications for 2026-27 are now open.
+          Join JKKN Dental College & Hospital — approved by the Dental Council of India, NAAC accredited with an A Grade, affiliated to The Tamil Nadu Dr. M.G.R. Medical University, with 100 BDS and 18 MDS sanctioned seats and its own teaching hospital. Applications for 2026-27 are now open.
         </p>
 
         {/* Buttons */}
