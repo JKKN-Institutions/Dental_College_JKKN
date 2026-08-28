@@ -109,7 +109,7 @@ export default function AboutInstitution() {
                 <div className="text-gray-700"><strong className="text-[#006837]">Dental Chairs:</strong> 200+</div>
                 <div className="text-gray-700"><strong className="text-[#006837]">Daily Patients:</strong> 500+</div>
                 <div className="text-gray-700"><strong className="text-[#006837]">Hospital Beds:</strong> 100+</div>
-                <div className="text-gray-700"><strong className="text-[#006837]">Placement:</strong> 92% Assistance</div>
+                <div className="text-gray-700"><strong className="text-[#006837]">Placement:</strong> 92% Assistance (2024-25)</div>
                 <div className="text-gray-700"><strong className="text-[#006837]">Location:</strong> NH-544, Komarapalayam, Namakkal</div>
                 <div className="text-gray-700"><strong className="text-[#006837]">Unique:</strong> India&apos;s First AI-Integrated Dental Campus</div>
               </div>

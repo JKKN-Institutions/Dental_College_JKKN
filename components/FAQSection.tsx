@@ -24,15 +24,15 @@ export default function FAQSection() {
     },
     {
       question: "What is the placement record?",
-      answer: "JKKN Dental College & Hospital provides 92% placement assistance. Alumni work at Apollo Dental, Clove Dental, Sabka Dentist, government hospitals, and private practices. Many pursue higher studies abroad or establish their own clinics."
+      answer: "JKKN Dental College & Hospital provides 92% placement assistance (2024-25 batch). Alumni work at Apollo Dental, Clove Dental, Sabka Dentist, government hospitals, and private practices. Many pursue higher studies abroad or establish their own clinics."
     },
     {
       question: "What makes JKKN different from other dental colleges?",
-      answer: "JKKN is India's first AI-integrated dental campus with 500+ daily patients, 200+ dental chairs, and 92% placement assistance. Established in 1987 under JKKN Institutions (since 1952), it combines AI-powered diagnostics, CAD/CAM technology, and hands-on clinical training."
+      answer: "JKKN is India's first AI-integrated dental campus with 500+ daily patients, 200+ dental chairs, and 92% placement assistance (2024-25 batch). Established in 1987 under JKKN Institutions (since 1952), it combines AI-powered diagnostics, CAD/CAM technology, and hands-on clinical training."
     },
     {
       question: "Which is the best dental college in Tamil Nadu?",
-      answer: "JKKN Dental College & Hospital is approved by the Dental Council of India, accredited by NAAC with an A Grade, and affiliated to The Tamil Nadu Dr. M.G.R. Medical University. Established in 1987, it is sanctioned 100 BDS seats and 18 MDS seats across 5 specialities, runs India's first AI-integrated dental campus, and reports 92% placement assistance. Tamil Nadu publishes no official merit ranking of its dental colleges, so compare colleges on approval, accreditation, sanctioned intake and clinical exposure."
+      answer: "JKKN Dental College & Hospital is approved by the Dental Council of India, accredited by NAAC with an A Grade, and affiliated to The Tamil Nadu Dr. M.G.R. Medical University. Established in 1987, it is sanctioned 100 BDS seats and 18 MDS seats across 5 specialities, runs India's first AI-integrated dental campus, and reports 92% placement assistance (2024-25 batch). Tamil Nadu publishes no official merit ranking of its dental colleges, so compare colleges on approval, accreditation, sanctioned intake and clinical exposure."
     },
     {
       question: "How does JKKN integrate AI in dental education?",
@@ -60,7 +60,7 @@ export default function FAQSection() {
     },
     {
       question: "Which dental college in Tamil Nadu has the best placements?",
-      answer: "JKKN Dental College and Hospital provides 92% placement assistance with graduates employed at Apollo Dental, Clove Dental, Sabka Dentist, government hospitals, and international healthcare institutions including NHS United Kingdom. The placement portal at placements.jkkn.ac.in provides verified placement data and recruiter details."
+      answer: "JKKN Dental College and Hospital provides 92% placement assistance (2024-25 batch) with graduates employed at Apollo Dental, Clove Dental, Sabka Dentist, government hospitals, and international healthcare institutions including NHS United Kingdom. The placement portal at placements.jkkn.ac.in provides verified placement data and recruiter details."
     },
     {
       question: "What is the NIRF ranking of dental colleges in Tamil Nadu?",

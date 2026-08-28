@@ -12,6 +12,23 @@
  * - Contact info → Official letterhead
  */
 
+import { TN_MDS_COLLEGES, JKKN_MDS_CODE } from './tnMdsSeatMatrix';
+
+// The MDS per-speciality seats are DERIVED, not typed in. Until 2026-08-28 this file listed
+// Periodontics 4, Orthodontics 4, Prosthodontics 4 and Conservative 3 - four of the five wrong
+// against the university's own sanctioned intake - and the error was invisible because the five
+// still summed to 18. /admissions/ renders this list as "Periodontics (4)", so a wrong number
+// here reaches a live page. A-13 corrected the speciality pages on 2026-08-24 and missed this
+// file; deriving removes the class of mistake instead of correcting one instance of it.
+const _jkknMdsRow = TN_MDS_COLLEGES.find((c) => c.code === JKKN_MDS_CODE);
+if (!_jkknMdsRow) {
+  // Fail the build loudly. A silent fallback would put invented seat counts on a live page.
+  throw new Error(
+    'collegeFacts: JKKN row (code ' + JKKN_MDS_CODE + ') not found in tnMdsSeatMatrix - regenerate the matrix'
+  );
+}
+const JKKN_MDS = _jkknMdsRow.seats;
+
 export const collegeFacts = {
   // === ESTABLISHMENT & HISTORY ===
   foundedYear: 1987,
@@ -23,16 +40,16 @@ export const collegeFacts = {
   // === ACADEMIC PROGRAMS ===
   // IMPORTANT: Verify these numbers with current DCI permission letters
   bdsSeatCount: 100,
-  mdsSeatCount: 18, // Total MDS seats across all specializations
+  mdsSeatCount: _jkknMdsRow.total, // from the university matrix, not typed in
 
-  // MDS Specializations (as per DCI approval)
+  // MDS Specializations - names are ours, SEATS come from the TN Dr M.G.R. sanctioned intake
   mdsSpecialisations: 5,
   mdsSpecialisationsList: [
-    { name: "Periodontics", seats: 4 },
-    { name: "Orthodontics and Dentofacial Orthopedics", seats: 4 },
-    { name: "Prosthodontics Crown and Bridge", seats: 4 },
-    { name: "Conservative Dentistry and Endodontics", seats: 3 },
-    { name: "Oral Medicine and Radiology", seats: 3 }
+    { name: "Periodontics", seats: JKKN_MDS.periodontology },
+    { name: "Orthodontics and Dentofacial Orthopedics", seats: JKKN_MDS.orthodontics },
+    { name: "Prosthodontics Crown and Bridge", seats: JKKN_MDS.prosthodontics },
+    { name: "Conservative Dentistry and Endodontics", seats: JKKN_MDS.conservative },
+    { name: "Oral Medicine and Radiology", seats: JKKN_MDS.oralMedicine }
   ],
 
   // Total departments (academic + clinical)

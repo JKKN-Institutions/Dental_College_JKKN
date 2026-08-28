@@ -43,7 +43,7 @@ export default function NamakkalPage() {
     },
     {
       q: 'What are the placements from JKKN Dental College?',
-      a: 'JKKN Dental College & Hospital, Namakkal district, reports 92% placement rate. Recruiting partners include Clove Dental, Apollo Dental, MyDentist, Sabka Dentist, Apollo Hospitals, Fortis Healthcare, Manipal Hospitals, and Government PHCs. International placements in UK (NHS), Saudi Arabia, UAE, and Singapore are also available.',
+      a: 'JKKN Dental College & Hospital, Namakkal district, reports 92% placement rate (2024-25 batch). Recruiting partners include Clove Dental, Apollo Dental, MyDentist, Sabka Dentist, Apollo Hospitals, Fortis Healthcare, Manipal Hospitals, and Government PHCs. International placements in UK (NHS), Saudi Arabia, UAE, and Singapore are also available.',
     },
   ];
 
@@ -62,7 +62,7 @@ export default function NamakkalPage() {
   ];
 
   const placementStats = [
-    { value: '92%', label: 'PLACEMENT RATE' },
+    { value: '92%', label: 'PLACEMENT RATE 2024-25' },
     { value: '8-10', label: 'LPA HIGHEST' },
     { value: '3-5', label: 'LPA AVERAGE' },
     { value: '15+', label: 'RECRUITING PARTNERS' },
@@ -107,7 +107,7 @@ export default function NamakkalPage() {
     { label: 'BDS Seats', value: '100 seats per year' },
     { label: 'MDS', value: '5 specializations' },
     { label: 'Hospital', value: '200-chair teaching hospital, 500+ patients/day' },
-    { label: 'Placements', value: '92% placement rate' },
+    { label: 'Placements', value: '92% placement rate (2024-25 batch)' },
     { label: 'Campus', value: 'India\'s first AI-integrated dental campus' },
   ];
 
@@ -174,7 +174,7 @@ export default function NamakkalPage() {
 
         <ul className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 mb-10 w-full max-w-2xl list-none p-0 m-0">
           {[
-            { value: '92%', label: 'PLACEMENTS' },
+            { value: '92%', label: 'PLACEMENTS 2024-25' },
             { value: '8-10', label: 'LPA HIGHEST' },
             { value: 'In District', label: 'NAMAKKAL DIST.' },
             { value: '2', label: 'PROGRAMMES' },
@@ -438,7 +438,7 @@ export default function NamakkalPage() {
       <section className="bg-[#FBFBEE] py-16 px-4">
         <div className="max-w-5xl mx-auto text-center">
           <h2 className="font-extrabold text-gray-900 mb-3" style={{ fontSize: 'clamp(1.6rem, 3vw + 0.5rem, 2.4rem)' }}>
-            Placements from JKKN Dental College, Namakkal — 92% Placement Rate
+            Placements from JKKN Dental College, Namakkal — 92% Placement Rate (2024-25 batch)
           </h2>
           <p className="text-gray-500 text-base mb-4">Our placement cell connects graduates with India&apos;s top dental employers</p>
           <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-12" />

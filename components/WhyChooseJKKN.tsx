@@ -8,7 +8,7 @@ export default function WhyChooseJKKN() {
           <h2 className="text-2xl xs:text-3xl sm:text-4xl font-bold mb-4 sm:mb-5 leading-tight">
             Why Students Choose JKKN Dental College in Tamil Nadu
           </h2>
-          <p className="text-gray-300 text-sm sm:text-base leading-relaxed max-w-2xl mx-auto">JKKN Dental College stands out with 39+ years of excellence, 500+ daily patients for clinical exposure, AI-integrated campus technology, and 92% placement assistance backed by JKKN Institutions since 1952.</p>
+          <p className="text-gray-300 text-sm sm:text-base leading-relaxed max-w-2xl mx-auto">JKKN Dental College stands out with 39+ years of excellence, 500+ daily patients for clinical exposure, AI-integrated campus technology, and 92% placement assistance (2024-25 batch) backed by JKKN Institutions since 1952.</p>
         </div>
 
         {/* Middle: Numbered list in two columns */}
@@ -65,7 +65,7 @@ export default function WhyChooseJKKN() {
                 </div>
               </div>
               <div>
-                <h4 className="text-lg sm:text-xl font-bold mb-1 sm:mb-2">92% Placement Assistance</h4>
+                <h4 className="text-lg sm:text-xl font-bold mb-1 sm:mb-2">92% Placement (2024-25) Assistance (2024-25 batch)</h4>
                 <p className="text-gray-300 leading-relaxed text-sm sm:text-base">
                   Strong industry connections with Apollo Dental, Clove Dental, Sabka Dentist, government hospitals, and international institutions including NHS United Kingdom.
                 </p>

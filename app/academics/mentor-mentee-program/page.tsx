@@ -39,7 +39,7 @@ const faqSchema = {
       name: 'How does the Mentor-Mentee Program benefit dental students?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'The program provides dental students with personalized academic support, career guidance, and mentorship from experienced faculty. It helps students build confidence, develop professionalism, and improve both their clinical and interpersonal skills, contributing to a 92% placement rate for JKKN graduates.',
+        text: 'The program provides dental students with personalized academic support, career guidance, and mentorship from experienced faculty. It helps students build confidence, develop professionalism, and improve both their clinical and interpersonal skills, contributing to a 92% placement rate (2024-25 batch) for JKKN graduates.',
       },
     },
     {

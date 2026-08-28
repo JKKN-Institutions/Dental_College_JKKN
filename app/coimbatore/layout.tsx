@@ -5,7 +5,7 @@ import { jkknSameAsUrls } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: { absolute: 'Best Dental College Near Coimbatore | JKKN Dental College' },
-  description: 'JKKN Dental — 108 km from Coimbatore via NH-544. 92% placement, 200+ dental chairs, BDS & MDS. DCI approved. Admissions open 2026.',
+  description: 'JKKN Dental — 108 km from Coimbatore via NH-544. 92% placement (2024-25 batch), 200+ dental chairs, BDS & MDS. DCI approved. Admissions open 2026.',
   keywords: 'best dental college near coimbatore, dental colleges in coimbatore, private dental colleges in coimbatore, top dental colleges in coimbatore, bds college coimbatore, jkkn dental coimbatore, dental college 108 km coimbatore',
   robots: {
     index: true,
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Best Dental College Near Coimbatore | JKKN Dental College',
-    description: 'JKKN Dental College & Hospital — 108 km from Coimbatore on NH-544. 92% placement, 200+ dental chairs, BDS & MDS. DCI approved.',
+    description: 'JKKN Dental College & Hospital — 108 km from Coimbatore on NH-544. 92% placement (2024-25 batch), 200+ dental chairs, BDS & MDS. DCI approved.',
     url: 'https://dental.jkkn.ac.in/coimbatore/',
     siteName: 'JKKN Dental College & Hospital',
     images: [
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Best Dental College Near Coimbatore | JKKN Dental College',
-    description: 'JKKN Dental College & Hospital — 108 km from Coimbatore on NH-544. 92% placement, 200+ dental chairs, BDS & MDS. DCI approved.',
+    description: 'JKKN Dental College & Hospital — 108 km from Coimbatore on NH-544. 92% placement (2024-25 batch), 200+ dental chairs, BDS & MDS. DCI approved.',
     images: ['https://dental.jkkn.ac.in/images/BDS-hero-image.webp'],
     site: '@jaborejkkn',
   },
@@ -51,7 +51,7 @@ const faqSchema = {
       "name": "Which is the best dental college near Coimbatore?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "JKKN Dental College & Hospital in Komarapalayam, Namakkal is the leading dental institution within 120 km of Coimbatore, offering a 92% placement rate and the highest BDS-to-MDS conversion record in the region. The college is approved by the Dental Council of India and affiliated with TN Dr. MGR Medical University. Learners from Coimbatore reach the campus in approximately 1.5 hours via NH-544."
+        "text": "JKKN Dental College & Hospital in Komarapalayam, Namakkal is the leading dental institution within 120 km of Coimbatore, offering a 92% placement rate (2024-25 batch) and the highest BDS-to-MDS conversion record in the region. The college is approved by the Dental Council of India and affiliated with TN Dr. MGR Medical University. Learners from Coimbatore reach the campus in approximately 1.5 hours via NH-544."
       }
     },
     {
@@ -107,7 +107,7 @@ const faqSchema = {
       "name": "What is the placement record of JKKN Dental College?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "JKKN Dental College & Hospital records a 92% placement rate for BDS graduates. The highest salary package is 8–10 LPA and the average salary is 3–5 LPA. International placements include the UK (NHS), UAE (Cleveland Clinic Abu Dhabi), and Saudi Arabia. Placement details are at placements.jkkn.ac.in."
+        "text": "JKKN Dental College & Hospital records a 92% placement rate (2024-25 batch) for BDS graduates. The highest salary package is 8–10 LPA and the average salary is 3–5 LPA. International placements include the UK (NHS), UAE (Cleveland Clinic Abu Dhabi), and Saudi Arabia. Placement details are at placements.jkkn.ac.in."
       }
     },
     {
@@ -131,7 +131,7 @@ const faqSchema = {
       "name": "Is JKKN Dental College better than colleges in Coimbatore?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "JKKN Dental College & Hospital offers superior placement outcomes (92%, 8–10 LPA highest) and larger clinical infrastructure (200+ chairs, 500+ daily patients) compared to Coimbatore-based dental colleges. Coimbatore colleges such as Sri Ramakrishna Dental College & Hospital offer NIRF ranking (#18) and in-city location advantages. The best choice depends on individual priorities: outcomes and clinical scale (JKKN) versus urban location and ranking (SRDCH)."
+        "text": "JKKN Dental College & Hospital offers superior placement outcomes (92% in 2024-25, 8–10 LPA highest) and larger clinical infrastructure (200+ chairs, 500+ daily patients) compared to Coimbatore-based dental colleges. Coimbatore colleges such as Sri Ramakrishna Dental College & Hospital offer NIRF ranking (#18) and in-city location advantages. The best choice depends on individual priorities: outcomes and clinical scale (JKKN) versus urban location and ranking (SRDCH)."
       }
     },
     {
@@ -153,7 +153,7 @@ const orgSchema = {
   "alternateName": ["JKK Nattraja Dental College", "JKKN Dental"],
   "url": "https://dental.jkkn.ac.in/",
   "logo": "https://dental.jkkn.ac.in/images/jkkn-dental-logo.webp",
-  "description": "DCI-approved dental college offering BDS (100 seats) and MDS (5 specializations) with a 92% placement rate, 200+ dental chairs, and clinical exposure from Year 1.",
+  "description": "DCI-approved dental college offering BDS (100 seats) and MDS (5 specializations) with a 92% placement rate (2024-25 batch), 200+ dental chairs, and clinical exposure from Year 1.",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Natarajapuram, NH-544 (Salem–Coimbatore Highway)",

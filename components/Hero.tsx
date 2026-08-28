@@ -47,7 +47,7 @@ export default function Hero() {
               </div>
               <div className="text-center sm:text-left">
                 <div className="text-2xl xs:text-3xl sm:text-4xl lg:text-5xl font-bold text-[#7cb983]">92%</div>
-                <div className="text-xs sm:text-sm text-gray-300 uppercase mt-1">Placement</div>
+                <div className="text-xs sm:text-sm text-gray-300 uppercase mt-1">Placement 2024-25</div>
               </div>
             </div>
 

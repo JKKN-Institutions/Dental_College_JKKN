@@ -66,7 +66,7 @@ export default function ErodePage() {
   ];
 
   const placementStats = [
-    { value: '92%', label: 'PLACEMENT RATE' },
+    { value: '92%', label: 'PLACEMENT RATE 2024-25' },
     { value: '8-10', label: 'LPA HIGHEST' },
     { value: '3-5', label: 'LPA AVERAGE' },
     { value: '15+', label: 'RECRUITING PARTNERS' },
@@ -144,11 +144,11 @@ export default function ErodePage() {
         <p className="text-white/60 text-sm font-medium tracking-wide mb-6">Nearest DCI-Approved Dental College — JKKN Dental College &amp; Hospital, Komarapalayam</p>
         <p className="text-white/80 max-w-2xl mb-10 leading-relaxed" style={{ fontSize: 'clamp(0.9rem, 1vw + 0.5rem, 1.1rem)' }}>
           Erode to JKKN — a short, smooth ride on NH-544. JKKN Dental College &amp; Hospital offers top-tier dental programmes with
-          92% placement support — just 18 km from Erode with excellent highway connectivity.
+          92% placement support (2024-25 batch) — just 18 km from Erode with excellent highway connectivity.
         </p>
         <ul className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 mb-10 w-full max-w-2xl list-none p-0 m-0">
           {[
-            { value: '92%', label: 'PLACEMENTS' },
+            { value: '92%', label: 'PLACEMENTS 2024-25' },
             { value: '8-10', label: 'LPA HIGHEST' },
             { value: '18km', label: 'FROM ERODE' },
             { value: '2', label: 'PROGRAMMES' },

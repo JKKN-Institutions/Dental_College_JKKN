@@ -21,7 +21,7 @@ export default function BDSProgram() {
     "@type": "Course",
     "@id": "https://dental.jkkn.ac.in/academics/details-of-academic-programs/bds/#course",
     "name": "Bachelor of Dental Surgery (BDS)",
-    "description": "JKKN Dental College & Hospital, established in 1987, offers a 5-year DCI-approved BDS program with 100 seats, 200+ dental chairs, 500+ daily patients, and 92% placement assistance. Affiliated to TN Dr. MGR Medical University, NAAC Accredited, located on NH-544, Komarapalayam, Namakkal, Tamil Nadu.",
+    "description": "JKKN Dental College & Hospital, established in 1987, offers a 5-year DCI-approved BDS program with 100 seats, 200+ dental chairs, 500+ daily patients, and 92% placement assistance (2024-25 batch). Affiliated to TN Dr. MGR Medical University, NAAC Accredited, located on NH-544, Komarapalayam, Namakkal, Tamil Nadu.",
     "provider": {
       "@type": "CollegeOrUniversity",
       "name": "JKKN Dental College & Hospital",
@@ -104,7 +104,7 @@ export default function BDSProgram() {
         "name": "What are the career opportunities after completing BDS?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "BDS graduates from JKKN have diverse career paths including private dental practice, government dental hospitals, corporate dental chains like Clove Dental and Dental Planet, MDS specialization, research and academics, armed forces dental corps, dental product industry, and public health dentistry. JKKN offers 92% placement assistance with recruiters like Apollo Hospitals, Manipal Hospitals, and international placements in NHS UK, Cleveland Clinic Abu Dhabi, and Singapore."
+          "text": "BDS graduates from JKKN have diverse career paths including private dental practice, government dental hospitals, corporate dental chains like Clove Dental and Dental Planet, MDS specialization, research and academics, armed forces dental corps, dental product industry, and public health dentistry. JKKN offers 92% placement assistance (2024-25 batch) with recruiters like Apollo Hospitals, Manipal Hospitals, and international placements in NHS UK, Cleveland Clinic Abu Dhabi, and Singapore."
         }
       },
       {
@@ -152,7 +152,7 @@ export default function BDSProgram() {
         "name": "What is the placement record of JKKN Dental College?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "JKKN Dental College maintains a 92% placement assistance rate. Top recruiters include Apollo Hospitals, Sun Pharma, Clove Dental, Dental Planet, Manipal Hospitals, and Dr. Agarwal's Healthcare. International placements are available through NHS UK, Cleveland Clinic Abu Dhabi, and dental practices in Singapore and UAE. The college has a strong alumni network of 3,000+ graduates worldwide."
+          "text": "JKKN Dental College maintains a 92% placement assistance rate (2024-25 batch). Top recruiters include Apollo Hospitals, Sun Pharma, Clove Dental, Dental Planet, Manipal Hospitals, and Dr. Agarwal's Healthcare. International placements are available through NHS UK, Cleveland Clinic Abu Dhabi, and dental practices in Singapore and UAE. The college has a strong alumni network of 3,000+ graduates worldwide."
         }
       },
       {
@@ -200,7 +200,7 @@ export default function BDSProgram() {
 
   const speakableSchema = generateSpeakableWebPageSchema({
     title: 'BDS Colleges in Tamil Nadu — BDS Admission 2026-27 at JKKN Dental College',
-    description: 'JKKN Dental College, Namakkal offers DCI-approved BDS with 200+ dental chairs, 500+ daily patients, 92% placement assistance, NAAC Accredited. Admission 2026-27 open.',
+    description: 'JKKN Dental College, Namakkal offers DCI-approved BDS with 200+ dental chairs, 500+ daily patients, 92% placement assistance (2024-25 batch), NAAC Accredited. Admission 2026-27 open.',
     url: 'https://dental.jkkn.ac.in/academics/details-of-academic-programs/bds/',
     dateModified: '2026-04-08',
     speakableCssSelectors: ['h1', '.hero-description', '.answer-capsule', 'article p'],
@@ -285,7 +285,7 @@ export default function BDSProgram() {
 
               {/* Description — Gap #4, #5: Keywords + content expansion */}
               <p className="hero-description text-base md:text-lg text-gray-200 mb-8 leading-relaxed">
-                JKKN Dental College & Hospital, established in 1987, is a <strong className="text-white">DCI-approved BDS college in Tamil Nadu</strong> with 100 BDS seats, a 5-year programme, 200+ dental chairs, around 500 patients a day, and 92% placement assistance (2025 batch, JKKN placement cell record). Located on NH-544, Komarapalayam, Namakkal — well-connected to Erode, Salem, and Coimbatore.
+                JKKN Dental College & Hospital, established in 1987, is a <strong className="text-white">DCI-approved BDS college in Tamil Nadu</strong> with 100 BDS seats, a 5-year programme, 200+ dental chairs, around 500 patients a day, and 92% placement assistance (2024-25 batch, JKKN placement cell record). Located on NH-544, Komarapalayam, Namakkal — well-connected to Erode, Salem, and Coimbatore.
               </p>
 
               {/* Hero Stats */}
@@ -300,7 +300,7 @@ export default function BDSProgram() {
                 </div>
                 <div>
                   <div className="text-2xl sm:text-4xl md:text-5xl font-bold text-[#7cb983] mb-2">92%</div>
-                  <div className="text-[10px] sm:text-sm text-gray-200">Placement Rate</div>
+                  <div className="text-[10px] sm:text-sm text-gray-200">Placement Rate 2024-25</div>
                 </div>
               </div>
 
@@ -360,7 +360,7 @@ export default function BDSProgram() {
         <div className="max-w-4xl mx-auto">
           <div className="answer-capsule bg-white border-l-4 border-[#7cb983] rounded-r-xl p-6 shadow-sm">
             <p className="text-gray-700 leading-relaxed text-base md:text-lg">
-              <strong className="text-[#006837]">JKKN Dental College & Hospital</strong>, established in 1987 under the J.K.K. Nattraja Educational Institutions (since 1952), is a DCI-approved and <a href="/accreditation/" className="text-[#7cb983] underline hover:text-[#6ba872]">NAAC Accredited</a> dental institution located on NH-544, Komarapalayam, Namakkal District, Tamil Nadu 638183. It offers <strong>100 BDS seats</strong> and <strong>18 MDS seats</strong> across 5 specializations, affiliated to the <a href="https://www.tnmgrmu.ac.in/" target="_blank" rel="noopener noreferrer" className="text-[#7cb983] underline hover:text-[#6ba872]">Tamil Nadu Dr. M.G.R. Medical University</a>, Chennai. With 200+ dental chairs, 100+ hospital beds, and 500+ daily patient footfall across 9 departments, JKKN gives BDS learners daily clinical exposure from the first year, alongside <a href="/research/" className="text-[#7cb983] underline hover:text-[#6ba872]">research excellence</a> with 50+ publications and 25+ academic partnerships. The college provides 92% placement assistance including international opportunities.
+              <strong className="text-[#006837]">JKKN Dental College & Hospital</strong>, established in 1987 under the J.K.K. Nattraja Educational Institutions (since 1952), is a DCI-approved and <a href="/accreditation/" className="text-[#7cb983] underline hover:text-[#6ba872]">NAAC Accredited</a> dental institution located on NH-544, Komarapalayam, Namakkal District, Tamil Nadu 638183. It offers <strong>100 BDS seats</strong> and <strong>18 MDS seats</strong> across 5 specializations, affiliated to the <a href="https://www.tnmgrmu.ac.in/" target="_blank" rel="noopener noreferrer" className="text-[#7cb983] underline hover:text-[#6ba872]">Tamil Nadu Dr. M.G.R. Medical University</a>, Chennai. With 200+ dental chairs, 100+ hospital beds, and 500+ daily patient footfall across 9 departments, JKKN gives BDS learners daily clinical exposure from the first year, alongside <a href="/research/" className="text-[#7cb983] underline hover:text-[#6ba872]">research excellence</a> with 50+ publications and 25+ academic partnerships. The college provides 92% placement assistance (2024-25 batch) including international opportunities.
             </p>
           </div>
         </div>
@@ -392,7 +392,7 @@ export default function BDSProgram() {
               { num: 1, title: 'DCI Approved & NAAC Accredited', desc: 'Fully approved by the Dental Council of India and accredited by NAAC, ensuring nationally recognized standards of dental education and patient care.' },
               { num: 2, title: '200+ Dental Chairs — Largest in the Region', desc: 'One of the largest dental clinical facilities in the Namakkal-Erode-Salem corridor with 200+ operational dental chairs and 100+ hospital beds for comprehensive training.' },
               { num: 3, title: '500+ Daily Patients — Clinical Exposure from Year 1', desc: 'Learners receive hands-on clinical training from Year 1 with 500+ patients visiting daily across 9 specialized departments — a key advantage over many BDS colleges in Tamil Nadu.' },
-              { num: 4, title: '92% Placement Assistance — Including International', desc: 'Strong placement record with recruiters like Apollo Hospitals, Clove Dental, NHS UK, and Cleveland Clinic Abu Dhabi. 3,000+ alumni network worldwide.' },
+              { num: 4, title: '92% Placement (2024-25) Assistance (2024-25 batch) — Including International', desc: 'Strong placement record with recruiters like Apollo Hospitals, Clove Dental, NHS UK, and Cleveland Clinic Abu Dhabi. 3,000+ alumni network worldwide.' },
               { num: 5, title: '5 MDS Specializations — Seamless UG to PG Pathway', desc: 'Pursue MDS in Periodontics, Orthodontics, Prosthodontics, Conservative & Endodontics, or Oral Medicine & Radiology — 18 PG seats available right on campus.' },
               { num: 6, title: '74+ Years of Trust Legacy (Since 1952)', desc: 'Part of J.K.K. Nattraja Educational Institutions, one of the oldest educational trusts in Tamil Nadu with a legacy spanning 74+ years across 10 institutions.' },
               { num: 7, title: 'Strategic NH-544 Location — Well-Connected', desc: 'Located on the Salem-Coimbatore National Highway, easily accessible from Erode (~22 km), Salem (~58 km), Tiruchengode (~15 km), and Coimbatore (~105 km).' },
@@ -447,7 +447,7 @@ export default function BDSProgram() {
                 </p>
 
                 <p className="text-gray-600 mb-8 leading-relaxed">
-                  Learners searching for the best BDS colleges near <a href="/erode/" className="text-[#7cb983] underline hover:text-[#6ba872]">Erode</a>, <a href="/salem/" className="text-[#7cb983] underline hover:text-[#6ba872]">Salem</a>, <a href="/namakkal/" className="text-[#7cb983] underline hover:text-[#6ba872]">Namakkal</a>, or <a href="/coimbatore/" className="text-[#7cb983] underline hover:text-[#6ba872]">Coimbatore</a> will find JKKN strategically located on NH-544, offering world-class dental education with 92% placement assistance and a strong <a href="/alumni/" className="text-[#7cb983] underline hover:text-[#6ba872]">alumni network</a> of 3,000+ graduates.
+                  Learners searching for the best BDS colleges near <a href="/erode/" className="text-[#7cb983] underline hover:text-[#6ba872]">Erode</a>, <a href="/salem/" className="text-[#7cb983] underline hover:text-[#6ba872]">Salem</a>, <a href="/namakkal/" className="text-[#7cb983] underline hover:text-[#6ba872]">Namakkal</a>, or <a href="/coimbatore/" className="text-[#7cb983] underline hover:text-[#6ba872]">Coimbatore</a> will find JKKN strategically located on NH-544, offering world-class dental education with 92% placement assistance (2024-25 batch) and a strong <a href="/alumni/" className="text-[#7cb983] underline hover:text-[#6ba872]">alumni network</a> of 3,000+ graduates.
                 </p>
               </article>
 
@@ -1201,7 +1201,7 @@ export default function BDSProgram() {
             Career Opportunities & Placement Assistance
           </h2>
           <p className="text-gray-600 text-center mb-12 max-w-4xl mx-auto leading-relaxed">
-            JKKN Dental College provides 92% placement assistance with a strong network of domestic and international recruiters. Our 3,000+ <a href="/alumni/" className="text-[#7cb983] underline hover:text-[#6ba872]">alumni</a> are placed across leading healthcare institutions in India, UK, UAE, and Singapore.
+            JKKN Dental College provides 92% placement assistance (2024-25 batch) with a strong network of domestic and international recruiters. Our 3,000+ <a href="/alumni/" className="text-[#7cb983] underline hover:text-[#6ba872]">alumni</a> are placed across leading healthcare institutions in India, UK, UAE, and Singapore.
           </p>
 
           {/* Placement Highlights — Horizontal Stats Strip */}
@@ -1210,7 +1210,7 @@ export default function BDSProgram() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               <div className="text-center bg-white/10 rounded-xl py-5 px-3">
                 <div className="text-4xl font-bold text-[#7cb983] mb-1">92%</div>
-                <div className="text-xs text-gray-200 font-semibold leading-snug">Placement Assistance Rate</div>
+                <div className="text-xs text-gray-200 font-semibold leading-snug">Placement Assistance Rate 2024-25</div>
               </div>
               <div className="text-center bg-white/10 rounded-xl py-5 px-3">
                 <div className="text-4xl font-bold text-[#7cb983] mb-1">3,000+</div>
@@ -1469,7 +1469,7 @@ export default function BDSProgram() {
               {
                 name: '[Student Name — UPDATE]',
                 batch: 'BDS Batch [Year — UPDATE]',
-                quote: 'JKKN helped me secure an international placement opportunity. The placement cell actively connects learners with recruiters from NHS UK and dental practices in UAE. The 92% placement assistance is backed by genuine support from the institution.',
+                quote: 'JKKN helped me secure an international placement opportunity. The placement cell actively connects learners with recruiters from NHS UK and dental practices in UAE. The 92% placement assistance (2024-25 batch) is backed by genuine support from the institution.',
               },
             ].map((testimonial, idx) => (
               <div key={idx} className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6">
@@ -1524,7 +1524,7 @@ export default function BDSProgram() {
               },
               {
                 q: 'What are the career opportunities after completing BDS?',
-                a: 'BDS graduates from JKKN have diverse career paths including private dental practice, government dental hospitals, corporate dental chains like Clove Dental and Dental Planet, MDS specialization (5 options available at JKKN), research and academics, armed forces dental corps, dental product industry, and public health dentistry. JKKN offers 92% placement assistance with domestic and international opportunities.'
+                a: 'BDS graduates from JKKN have diverse career paths including private dental practice, government dental hospitals, corporate dental chains like Clove Dental and Dental Planet, MDS specialization (5 options available at JKKN), research and academics, armed forces dental corps, dental product industry, and public health dentistry. JKKN offers 92% placement assistance (2024-25 batch) with domestic and international opportunities.'
               },
               {
                 q: 'What facilities are available for BDS learners?',
@@ -1548,7 +1548,7 @@ export default function BDSProgram() {
               },
               {
                 q: 'What is the placement record of JKKN Dental College?',
-                a: 'JKKN maintains a 92% placement assistance rate. Top domestic recruiters include Apollo Hospitals, Sun Pharma, Clove Dental, Dental Planet, Manipal Hospitals, and Dr. Agarwal\'s Healthcare. International placements are available through NHS UK, Cleveland Clinic Abu Dhabi, and dental practices in Singapore and UAE. The alumni network spans 3,000+ graduates worldwide.'
+                a: 'JKKN maintains a 92% placement assistance rate (2024-25 batch). Top domestic recruiters include Apollo Hospitals, Sun Pharma, Clove Dental, Dental Planet, Manipal Hospitals, and Dr. Agarwal\'s Healthcare. International placements are available through NHS UK, Cleveland Clinic Abu Dhabi, and dental practices in Singapore and UAE. The alumni network spans 3,000+ graduates worldwide.'
               },
               {
                 q: 'Where is JKKN Dental College located?',
@@ -1600,7 +1600,7 @@ export default function BDSProgram() {
             Begin Your Journey at a DCI-Approved, NAAC A Grade BDS College
           </h2>
           <p className="text-lg text-gray-200 mb-10 leading-relaxed max-w-3xl mx-auto">
-            Join JKKN Dental College & Hospital — DCI Approved, NAAC Accredited, 200+ dental chairs, 500+ daily patients, 92% placement assistance, and a 74+ year trust legacy. Your career in dentistry starts here.
+            Join JKKN Dental College & Hospital — DCI Approved, NAAC Accredited, 200+ dental chairs, 500+ daily patients, 92% placement assistance (2024-25 batch), and a 74+ year trust legacy. Your career in dentistry starts here.
           </p>
 
           <div className="flex flex-wrap justify-center gap-6">

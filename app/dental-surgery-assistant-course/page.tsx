@@ -179,7 +179,7 @@ const whyCards = [
 
 const alumniStats = [
   { value: 3000, suffix: "+", label: "Alumni Network Across India" },
-  { value: 92, suffix: "%", label: "Placement Assistance Rate" },
+  { value: 92, suffix: "%", label: "Placement Assistance Rate 2024-25" },
   { value: 39, suffix: "+", label: "Years of Dental College Excellence" },
 ];
 

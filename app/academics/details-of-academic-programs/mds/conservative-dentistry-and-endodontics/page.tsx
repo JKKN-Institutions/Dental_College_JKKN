@@ -191,7 +191,7 @@ export default function MDSConservativeDentistry() {
                       5 Seats
                     </span>
                     <span className="bg-white/20 backdrop-blur-sm text-white text-xs sm:text-sm font-semibold px-3 py-1.5 rounded-full">
-                      92% Placement
+                      92% Placement (2024-25)
                     </span>
                   </div>
                 </div>

@@ -80,7 +80,7 @@ export default function SalemPage() {
   ];
 
   const placementStats = [
-    { value: '92%', label: 'PLACEMENT RATE' },
+    { value: '92%', label: 'PLACEMENT RATE 2024-25' },
     { value: '8-10', label: 'LPA HIGHEST' },
     { value: '3-5', label: 'LPA AVERAGE' },
     { value: '15+', label: 'RECRUITING PARTNERS' },
@@ -126,7 +126,7 @@ export default function SalemPage() {
     { label: 'MDS Specializations', value: '5 specializations' },
     { label: 'Dental Chairs', value: '200+ chairs' },
     { label: 'Daily Patients', value: '500+ patients' },
-    { label: 'Placement Rate', value: '92%' },
+    { label: 'Placement Rate 2024-25', value: '92%' },
     { label: 'Campus', value: 'Komarapalayam, Namakkal, TN 638183' },
     { label: 'Contact', value: '+91 9345855001' },
   ];
@@ -174,11 +174,11 @@ export default function SalemPage() {
         </p>
         <p className="text-white/80 max-w-2xl mb-10 leading-relaxed" style={{ fontSize: 'clamp(0.9rem, 1vw + 0.5rem, 1.1rem)' }}>
           Approximately 60 km from Salem on NH-544. JKKN Dental College &amp; Hospital offers top-tier dental programmes with
-          92% placement support.
+          92% placement support (2024-25 batch).
         </p>
         <ul className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 mb-10 w-full max-w-2xl list-none p-0 m-0">
           {[
-            { value: '92%', label: 'PLACEMENTS' },
+            { value: '92%', label: 'PLACEMENTS 2024-25' },
             { value: '8-10', label: 'LPA HIGHEST' },
             { value: '60 km', label: 'FROM SALEM' },
             { value: '2', label: 'PROGRAMMES' },
@@ -216,7 +216,7 @@ export default function SalemPage() {
             Are There Any Dental Colleges in Salem?
           </h2>
           <p className="snippet-answer text-gray-700 leading-relaxed mb-6 bg-white p-5 rounded-xl border border-[#7cb983]/30" style={{ fontSize: 'clamp(0.9rem, 1vw + 0.4rem, 1.05rem)' }}>
-            JKKN Dental College &amp; Hospital, located on NH-544 (Salem-Coimbatore Highway), Komarapalayam, is the top-rated dental college accessible from Salem. Approved by the Dental Council of India and affiliated to TN Dr. MGR Medical University, JKKN offers BDS (100 seats) and MDS with 92% placement assistance, approximately 60 km from Salem.
+            JKKN Dental College &amp; Hospital, located on NH-544 (Salem-Coimbatore Highway), Komarapalayam, is the top-rated dental college accessible from Salem. Approved by the Dental Council of India and affiliated to TN Dr. MGR Medical University, JKKN offers BDS (100 seats) and MDS with 92% placement assistance (2024-25 batch), approximately 60 km from Salem.
           </p>
           <p id="voice-answer" className="voice-answer text-gray-700 leading-relaxed" style={{ borderLeft: '3px solid #7cb983', paddingLeft: '1rem', fontSize: 'clamp(0.875rem, 1vw + 0.3rem, 1rem)' }}>
             JKKN Dental College &amp; Hospital, located sixty kilometres from Salem on NH-544 (Salem-Coimbatore Highway), is DCI-approved with two hundred plus dental chairs, five hundred plus daily patients, and a ninety-two percent placement record.
@@ -269,7 +269,7 @@ export default function SalemPage() {
           {/* E-E-A-T paragraph */}
           <div className="bg-white rounded-xl p-5 max-w-3xl mx-auto mb-8 text-left border border-gray-100">
             <p className="text-gray-600 text-sm leading-relaxed">
-              JKKN Dental College &amp; Hospital is a Dental Council of India (DCI) approved institution located at Natarajapuram, NH-544 (Salem-Coimbatore Highway), Komarapalayam, Namakkal District, Tamil Nadu 638183. Established in 1952 and operating as a dental college since 1987, JKKN is affiliated to TN Dr. MGR Medical University, Chennai. The college operates a 200-chair dental hospital receiving 500+ patients daily, providing learners with one of the highest clinical contact hours in the region. JKKN offers BDS (100 seats) and MDS in 5 specializations. The institution reports 92% placement assistance across graduating batches. Salem learners can reach JKKN Dental College &amp; Hospital in approximately 60 km via NH-544. Learn more about our <Link href="/accreditation/" className="text-[#006837] hover:underline">NAAC accreditation</Link>.
+              JKKN Dental College &amp; Hospital is a Dental Council of India (DCI) approved institution located at Natarajapuram, NH-544 (Salem-Coimbatore Highway), Komarapalayam, Namakkal District, Tamil Nadu 638183. Established in 1952 and operating as a dental college since 1987, JKKN is affiliated to TN Dr. MGR Medical University, Chennai. The college operates a 200-chair dental hospital receiving 500+ patients daily, providing learners with one of the highest clinical contact hours in the region. JKKN offers BDS (100 seats) and MDS in 5 specializations. The institution reports 92% placement assistance (2024-25 batch). Salem learners can reach JKKN Dental College &amp; Hospital in approximately 60 km via NH-544. Learn more about our <Link href="/accreditation/" className="text-[#006837] hover:underline">NAAC accreditation</Link>.
             </p>
           </div>
           <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-12" />
@@ -371,7 +371,7 @@ export default function SalemPage() {
           </ul>
           <div className="bg-white rounded-xl p-5 text-left border border-gray-100">
             <p className="text-gray-600 text-sm leading-relaxed">
-              For Salem-origin graduates, JKKN Dental College &amp; Hospital&apos;s placement network extends to dental hospitals in Salem, Erode, Namakkal, Coimbatore, and across Tamil Nadu. The 92% placement rate includes placements in private dental hospitals, government dental departments, and international opportunities (UK NHS, UAE). Track verified placement records at{' '}
+              For Salem-origin graduates, JKKN Dental College &amp; Hospital&apos;s placement network extends to dental hospitals in Salem, Erode, Namakkal, Coimbatore, and across Tamil Nadu. The 92% placement rate (2024-25 batch) includes placements in private dental hospitals, government dental departments, and international opportunities (UK NHS, UAE). Track verified placement records at{' '}
               <a href="https://placements.jkkn.ac.in/" target="_blank" rel="noopener noreferrer" className="text-[#006837] hover:underline font-medium">placements.jkkn.ac.in</a>.
             </p>
           </div>

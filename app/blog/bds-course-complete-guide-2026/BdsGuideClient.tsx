@@ -534,7 +534,7 @@ export default function BdsGuideClient({ faqs }: { faqs: FAQ[] }) {
                   ['Modern infrastructure:', 'digital classrooms, simulation lab, CBCT, OPG, RVG, implant centre'],
                   ['Strategic location:', 'on NH-544 between Salem and Coimbatore — easy access from Erode, Namakkal, Tiruppur'],
                   ['Hostel & transport:', 'separate boys/girls hostels, fleet of college buses across 5+ districts'],
-                  ['Placement support:', '~92% placement assistance across clinics, hospitals and Indian dental chains'],
+                  ['Placement support:', '~92% placement assistance (2024-25 batch) across clinics, hospitals and Indian dental chains'],
                   ['39+ years of legacy:', '3,000+ alumni practising across India, Middle East, UK, Australia and USA'],
                 ].map(([k, v]) => (
                   <li key={k as string} className="flex items-start gap-2.5 text-gray-600 text-sm">

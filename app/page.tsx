@@ -20,10 +20,10 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'JKKN Dental College & Hospital (JKK Nattraja), Komarapalayam',
-  description: 'JKKN Dental College & Hospital (JKK Nattraja), Komarapalayam. DCI approved, NAAC A Grade. BDS 100 & MDS 18 seats, fees, 92% placement assistance. Apply 2026-27.',
+  description: 'JKKN Dental College & Hospital (JKK Nattraja), Komarapalayam. DCI approved, NAAC A Grade. BDS 100 & MDS 18 seats, fees, 92% placement assistance (2024-25 batch). Apply 2026-27.',
   openGraph: {
     title: 'JKKN Dental College & Hospital (JKK Nattraja), Komarapalayam',
-    description: 'JKKN Dental College & Hospital (JKK Nattraja), Komarapalayam. DCI approved, NAAC A Grade. BDS 100 & MDS 18 seats, fees, 92% placement assistance. Apply 2026-27.',
+    description: 'JKKN Dental College & Hospital (JKK Nattraja), Komarapalayam. DCI approved, NAAC A Grade. BDS 100 & MDS 18 seats, fees, 92% placement assistance (2024-25 batch). Apply 2026-27.',
     url: 'https://dental.jkkn.ac.in/',
     siteName: 'JKKN Dental College & Hospital',
     images: [
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'JKKN Dental College & Hospital (JKK Nattraja), Komarapalayam',
-    description: 'JKKN Dental College & Hospital (JKK Nattraja), Komarapalayam. DCI approved, NAAC A Grade. BDS 100 & MDS 18 seats, fees, 92% placement assistance. Apply 2026-27.',
+    description: 'JKKN Dental College & Hospital (JKK Nattraja), Komarapalayam. DCI approved, NAAC A Grade. BDS 100 & MDS 18 seats, fees, 92% placement assistance (2024-25 batch). Apply 2026-27.',
     images: ['https://dental.jkkn.ac.in/images/BDS-hero-image.webp'],
   },
   alternates: {
@@ -580,7 +580,7 @@ export default function Home() {
         "/html/head/meta[@name='description']/@content"
       ]
     },
-    "description": "JKKN Dental College & Hospital, established in 1987, is a DCI approved and NAAC A Grade accredited dental college offering BDS and MDS programs. Located on India's first AI-integrated campus in Komarapalayam, Tamil Nadu, with 200+ dental chairs, 100+ bed hospital, and 92% placement assistance. Apply now for 2026-27 admissions.",
+    "description": "JKKN Dental College & Hospital, established in 1987, is a DCI approved and NAAC A Grade accredited dental college offering BDS and MDS programs. Located on India's first AI-integrated campus in Komarapalayam, Tamil Nadu, with 200+ dental chairs, 100+ bed hospital, and 92% placement assistance (2024-25 batch). Apply now for 2026-27 admissions.",
     "datePublished": "2025-01-01",
     "dateModified": "2026-03-27"
   };

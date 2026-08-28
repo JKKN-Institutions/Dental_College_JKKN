@@ -6,14 +6,14 @@ import { collegeFacts } from '@/data/collegeFacts';
 export default function PlacementsPage() {
 
   const heroStats = [
-    { value: `${collegeFacts.placementRate}%`, label: 'PLACEMENT RATE' },
+    { value: `${collegeFacts.placementRate}%`, label: 'PLACEMENT RATE 2024-25' },
     { value: `${collegeFacts.alumniCount.toLocaleString()}+`, label: 'ALUMNI' },
     { value: `${collegeFacts.partnerships}+`, label: 'PARTNERS' },
     { value: '38+', label: 'BATCHES' },
   ];
 
   const highlightStats = [
-    { value: `${collegeFacts.placementRate}%`, label: 'PLACEMENT RATE', desc: 'Consistent placement assistance across BDS & MDS batches' },
+    { value: `${collegeFacts.placementRate}%`, label: 'PLACEMENT RATE 2024-25', desc: 'Consistent placement assistance across BDS & MDS batches' },
     { value: `${collegeFacts.alumniCount.toLocaleString()}+`, label: 'ALUMNI WORLDWIDE', desc: 'Graduates serving across India and internationally' },
     { value: `${collegeFacts.partnerships}+`, label: 'RECRUITING PARTNERS', desc: 'Corporate chains, hospitals, and government institutions' },
     { value: '8-10', label: 'LPA HIGHEST', desc: 'Top packages from corporate dental chains [UPDATE]' },
