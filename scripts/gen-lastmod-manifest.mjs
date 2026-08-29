@@ -28,7 +28,30 @@ import { dirname, join } from 'node:path'
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..')
 const OUT = join(ROOT, 'lastmod-manifest.json')
 
+// A SHALLOW clone must never feed this map, and the reason is measured, not theoretical.
+// The oldest commit in a shallow clone has no parent, so git cannot diff it against anything
+// and reports it as having ADDED the entire tree. Proven on this repo 2026-08-29: in a
+// `git clone --depth 10`, the boundary commit 3f6fcf2 claims to touch 200 app/ page.tsx files.
+// It really touched 2. Trusting that log attributes almost every page on the site to one
+// unrelated commit date — which is exactly what shipped in b5aacf7 and put 109 sitemap URLs
+// on 2026-08-25, the date of a five-file commit.
+//
+// Vercel clones at depth 10 by default, so this is the normal case on the deploy build, not
+// an edge. Unknown state is treated as shallow: an unreadable answer is not permission to trust.
+function isShallowClone() {
+  try {
+    return execSync('git rev-parse --is-shallow-repository', {
+      cwd: ROOT, encoding: 'utf-8',
+    }).trim() !== 'false'
+  } catch {
+    return true
+  }
+}
+
 function readGit() {
+  if (isShallowClone()) {
+    throw new Error('shallow clone — its boundary commit reports the whole tree as changed')
+  }
   const raw = execSync('git log --pretty=format:%cI --name-only -- app/', {
     cwd: ROOT,
     encoding: 'utf-8',

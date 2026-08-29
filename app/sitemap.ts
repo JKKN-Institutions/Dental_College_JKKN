@@ -32,6 +32,19 @@ function buildGitLastModMap(): Map<string, Date> {
   }
 
   try {
+    // A SHALLOW clone must never overlay the manifest, and this is measured, not theoretical.
+    // The oldest commit in a shallow clone has no parent, so git cannot diff it and reports it
+    // as having ADDED the whole tree. Proven on this repo 2026-08-29: in a `git clone --depth
+    // 10` the boundary commit 3f6fcf2 claims 200 app/ page.tsx files; it really touched 2.
+    // b5aacf7 shipped without this guard and the live sitemap put 109 URLs on 2026-08-25, the
+    // date of a FIVE-file commit — a worse lie than the build-time stamp it replaced.
+    // Vercel clones at depth 10, so on the deploy build this is the normal path, not an edge.
+    const shallow = execSync('git rev-parse --is-shallow-repository', { encoding: 'utf-8' }).trim()
+    if (shallow !== 'false') {
+      console.warn('[sitemap] shallow clone — skipping the git overlay, the committed manifest stands')
+      return map
+    }
+
     const output = execSync(
       'git log --pretty=format:%cI --name-only -- app/',
       { encoding: 'utf-8', maxBuffer: 32 * 1024 * 1024 },
