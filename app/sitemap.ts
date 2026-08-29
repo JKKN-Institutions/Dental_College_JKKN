@@ -2,37 +2,72 @@ import { execSync } from 'node:child_process'
 import { MetadataRoute } from 'next'
 import { createClient } from '@/lib/supabase/server'
 import { siteConfig } from '@/lib/site-config'
+import lastModManifest from '@/lastmod-manifest.json'
 
-// Build a single map of file -> last-commit-date by running `git log` ONCE
-// (instead of per-file). This makes lastmod values accurate per-page rather
-// than uniform "build time" — Google rewards stable, truthful lastmod signals.
+// Build a single map of file -> last-commit-date.
+//
+// TWO SOURCES, IN THIS ORDER, AND THE ORDER IS THE POINT.
+//   1. lastmod-manifest.json — written by scripts/gen-lastmod-manifest.mjs at commit time,
+//      where git history demonstrably exists, and committed to the repo.
+//   2. a live `git log`, layered on top when the build environment does have history.
+//
+// WHY THE MANIFEST HAD TO BE ADDED — measured 2026-08-29 on the live sitemap, not assumed.
+// Reading git at request time is correct logic that produced a wrong result in production. Of
+// the 155 static URLs in the live sitemap, 131 carried the identical value
+// 2026-08-29T08:58:07.997Z — the exact millisecond of the request — and every one of the 24
+// static URLs that did carry a real date got it from a hardcoded editorial string, never from
+// git. Zero static pages resolved from git in production. Run locally, this same code builds a
+// 321-file map and resolves 155 of 155. The logic was never the defect: the deploy build has no
+// usable git history, exactly as the catch block below already warned it might not.
+//
+// This is not cosmetic. A sitemap whose static half says "everything changed just now" on every
+// fetch is precisely the lastmod signal Google is documented to stop trusting.
 function buildGitLastModMap(): Map<string, Date> {
   const map = new Map<string, Date>()
+
+  // Seed from the committed manifest. In production this is the branch that actually runs.
+  for (const [file, iso] of Object.entries(lastModManifest as Record<string, string>)) {
+    const parsed = new Date(iso)
+    if (!Number.isNaN(parsed.getTime())) map.set(file, parsed)
+  }
+
   try {
     const output = execSync(
       'git log --pretty=format:%cI --name-only -- app/',
       { encoding: 'utf-8', maxBuffer: 32 * 1024 * 1024 },
     )
     let currentDate: Date | null = null
+    // Tracked separately from `map`, which is pre-seeded by the manifest. Without this, the
+    // seed would block every live git value and a build that DOES have history could never
+    // correct a stale manifest.
+    const seenInGit = new Set<string>()
     for (const line of output.split('\n')) {
       const trimmed = line.trim()
       if (/^\d{4}-\d{2}-\d{2}T/.test(trimmed)) {
         currentDate = new Date(trimmed)
       } else if (trimmed && currentDate) {
-        // Most recent commit wins (git log is newest-first; only set if unset).
+        // Most recent commit wins (git log is newest-first; only take the first sighting).
         const normalized = trimmed.replace(/\\/g, '/')
-        if (!map.has(normalized)) map.set(normalized, currentDate)
+        if (!seenInGit.has(normalized)) {
+          seenInGit.add(normalized)
+          map.set(normalized, currentDate)
+        }
       }
     }
+    if (seenInGit.size > 0) {
+      console.log(`[sitemap] live git history present, ${seenInGit.size} paths refreshed over the manifest`)
+    }
   } catch (err) {
-    // git unavailable (e.g. a shallow CI clone). Every URL then falls back to
-    // build time, so the whole sitemap ships one identical lastmod — a signal
-    // Google learns to distrust. Fail loudly so a broken build config is
-    // visible in the deploy log instead of silently degrading the sitemap.
-    console.warn('[sitemap] git history unavailable, lastmod falling back to build time:', err)
+    // git unavailable (e.g. a shallow CI clone, or a build that ships no .git at all).
+    // This is EXPECTED on the deploy build and is no longer fatal to lastmod quality — the
+    // committed manifest above already carries the dates. Logged, not escalated.
+    console.warn('[sitemap] live git history unavailable, using the committed manifest:', err)
   }
   if (map.size === 0) {
-    console.warn('[sitemap] git lastmod map is EMPTY — check the build does a full clone (fetch-depth: 0)')
+    // Now genuinely alarming: it means the manifest is missing or empty AND git failed, so
+    // every URL is about to ship build time. Regenerate with
+    // `node scripts/gen-lastmod-manifest.mjs` and commit the result.
+    console.warn('[sitemap] lastmod map is EMPTY — manifest missing and git unavailable; every URL will ship build time')
   }
   return map
 }
@@ -359,15 +394,28 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${baseUrl}/mandatory-disclosures/letter-of-undertaking/`, lastModified: now, changeFrequency: 'yearly', priority: 0.4 },
   ]
 
-  // Replace placeholder `now` lastModified values with the real per-file
-  // git commit date (where derivable from the URL). Hardcoded ISO strings
-  // (NIRF dates, syllabus revisions, etc.) are preserved unchanged.
+  // Replace two kinds of untrustworthy lastModified value with the real per-file commit date:
+  //
+  //   1. the placeholder `now` — the request timestamp. Measured on the live sitemap
+  //      2026-08-29: 131 of 155 static URLs shipped one identical millisecond.
+  //   2. any date in the FUTURE. Four NIRF-2026 entries were hardcoded to '2026-09-01' and
+  //      were being served three days ahead of the fetch. A lastmod that has not happened yet
+  //      cannot be true, and it teaches Google to ignore the field for the whole file.
+  //
+  // Hardcoded PAST ISO strings (syllabus revisions, older NIRF years, PDFs) are editorial
+  // dates and are preserved exactly as written.
   const staticPagesWithGitDates: MetadataRoute.Sitemap = staticPages.map(entry => {
-    if (entry.lastModified instanceof Date && entry.lastModified.getTime() === now.getTime()) {
-      const path = entry.url.replace(baseUrl, '')
-      return { ...entry, lastModified: resolveLastMod(gitLastMod, path, now) }
-    }
-    return entry
+    const stamped = entry.lastModified
+    if (stamped === undefined) return entry
+
+    const asDate = stamped instanceof Date ? stamped : new Date(String(stamped))
+    const isBuildTime = stamped instanceof Date && stamped.getTime() === now.getTime()
+    const isFuture = !Number.isNaN(asDate.getTime()) && asDate.getTime() > now.getTime()
+
+    if (!isBuildTime && !isFuture) return entry
+
+    const path = entry.url.replace(baseUrl, '')
+    return { ...entry, lastModified: resolveLastMod(gitLastMod, path, now) }
   })
 
   return [

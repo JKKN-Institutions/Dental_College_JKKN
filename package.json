@@ -4,9 +4,11 @@
   "description": "JKKN Dental College & Hospital Website",
   "scripts": {
     "dev": "next dev",
+    "prebuild": "node scripts/gen-lastmod-manifest.mjs",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "lastmod": "node scripts/gen-lastmod-manifest.mjs"
   },
   "keywords": [],
   "author": "",
