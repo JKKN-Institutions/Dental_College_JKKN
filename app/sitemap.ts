@@ -1,4 +1,5 @@
 import { execSync } from 'node:child_process'
+import { existsSync } from 'node:fs'
 import { MetadataRoute } from 'next'
 import { createClient } from '@/lib/supabase/server'
 import { siteConfig } from '@/lib/site-config'
@@ -61,7 +62,12 @@ function buildGitLastModMap(): Map<string, Date> {
       } else if (trimmed && currentDate) {
         // Most recent commit wins (git log is newest-first; only take the first sighting).
         const normalized = trimmed.replace(/\\/g, '/')
-        if (!seenInGit.has(normalized)) {
+        // Skip paths git still remembers but the tree no longer has. `git log --name-only`
+        // reports HISTORY, so a deleted file keeps its last date and can be matched by a URL
+        // whose real file lives elsewhere - see the /fees-structure/ case documented in
+        // scripts/gen-lastmod-manifest.mjs. The generator already filters these out of the
+        // manifest; this keeps the overlay from putting them back on a full-history build.
+        if (!seenInGit.has(normalized) && existsSync(normalized)) {
           seenInGit.add(normalized)
           map.set(normalized, currentDate)
         }
@@ -85,6 +91,19 @@ function buildGitLastModMap(): Map<string, Date> {
   return map
 }
 
+// Routes whose URL does not match their folder, because next.config.ts rewrites them.
+// The url -> file guess below is a heuristic, and a rewrite is exactly where it breaks.
+//
+// Measured 2026-08-29 across all 155 static sitemap URLs: this is the ONLY one. The canonical
+// route is /fees-structure/ (plural) and the file that renders it is app/fee-structure/
+// (SINGULAR), joined by the rewrite in next.config.ts. A deleted app/fees-structure/page.tsx
+// used to sit in the manifest and quietly answered for it with a four-month-old date; once
+// deleted paths were filtered out, the URL resolved to nothing instead. Either way it is the
+// site's highest-traffic money page, so it is the one row worth naming explicitly.
+const ROUTE_FILE_OVERRIDES: Record<string, string> = {
+  '/fees-structure/': 'app/fee-structure/page.tsx',
+}
+
 // Resolve a sitemap URL (relative path, e.g. "/about/") to a Date from git
 // history. Falls back to `fallback` when the heuristic can't locate a file.
 function resolveLastMod(
@@ -92,6 +111,8 @@ function resolveLastMod(
   routePath: string,
   fallback: Date,
 ): Date {
+  const override = ROUTE_FILE_OVERRIDES[routePath]
+  if (override) return fileMap.get(override) ?? fallback
   const slug = routePath.replace(/^\/+|\/+$/g, '')
   const candidate = slug ? `app/${slug}/page.tsx` : 'app/page.tsx'
   return fileMap.get(candidate) ?? fallback
@@ -417,6 +438,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   //
   // Hardcoded PAST ISO strings (syllabus revisions, older NIRF years, PDFs) are editorial
   // dates and are preserved exactly as written.
+  const unresolved: string[] = []
   const staticPagesWithGitDates: MetadataRoute.Sitemap = staticPages.map(entry => {
     const stamped = entry.lastModified
     if (stamped === undefined) return entry
@@ -428,8 +450,21 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     if (!isBuildTime && !isFuture) return entry
 
     const path = entry.url.replace(baseUrl, '')
-    return { ...entry, lastModified: resolveLastMod(gitLastMod, path, now) }
+    const resolved = resolveLastMod(gitLastMod, path, now)
+    if (resolved === now) unresolved.push(path)
+    return { ...entry, lastModified: resolved }
   })
+
+  // Fail loudly rather than silently shipping build time. A URL lands here when the
+  // url -> app/<slug>/page.tsx guess misses, which in practice means a new next.config
+  // rewrite whose route no longer matches its folder. Measured 2026-08-29 the only such URL
+  // was /fees-structure/, now named in ROUTE_FILE_OVERRIDES; this list should stay empty.
+  if (unresolved.length > 0) {
+    console.warn(
+      `[sitemap] ${unresolved.length} URL(s) fell back to build time — add them to ` +
+      `ROUTE_FILE_OVERRIDES: ${unresolved.join(', ')}`,
+    )
+  }
 
   return [
     ...staticPagesWithGitDates,

@@ -70,6 +70,19 @@ function readGit() {
       if (!(normalized in map)) map[normalized] = current
     }
   }
+
+  // DROP PATHS THAT NO LONGER EXIST. `git log --name-only` lists HISTORY, not the current
+  // tree, so a file deleted years ago is still in the log and lands in this map carrying the
+  // date it was deleted. That is not theoretical: 32 of the 321 paths measured on 2026-08-29
+  // were already deleted, and one of them silently poisoned a live URL. `/fees-structure/` is
+  // served by app/fee-structure/page.tsx (SINGULAR - the plural route is a next.config
+  // rewrite), but a deleted app/fees-structure/page.tsx was still in this map, so the URL
+  // resolved to 2026-04-18 when the page it actually renders last changed 2026-08-25. That
+  // URL is the site's highest-traffic money page, so the one stale row was the expensive one.
+  for (const path of Object.keys(map)) {
+    if (!existsSync(join(ROOT, path))) delete map[path]
+  }
+
   return map
 }
 
