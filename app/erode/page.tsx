@@ -426,48 +426,6 @@ export default function ErodePage() {
       </section>
 
       {/* ── Testimonials ── */}
-      <section className="bg-[#FBFBEE] py-16 px-4">
-        <div className="max-w-6xl mx-auto text-center">
-          <h2 className="font-extrabold text-gray-900 mb-3" style={{ fontSize: 'clamp(1.6rem, 3vw + 0.5rem, 2.4rem)' }}>
-            Learners from Erode Love JKKN Dental
-          </h2>
-          <p className="text-gray-500 text-base mb-4">Hear from learners who made the right choice</p>
-          <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-12" />
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-            <div className="bg-white rounded-2xl p-6 text-left shadow-sm">
-              <div className="text-5xl text-gray-200 font-serif leading-none mb-3 select-none">&quot;</div>
-              <p className="text-gray-500 text-sm leading-relaxed italic mb-6">
-                Coming from Erode, I was looking for a quality dental college nearby. JKKN was just 18 km away with excellent clinical training — we treat 500+ patients daily. The hands-on experience from Year 1 made all the difference in my career.
-              </p>
-              <div>
-                <p className="font-bold text-gray-900 text-sm">Priya Lakshmi R.</p>
-                <p className="text-gray-400 text-xs mt-0.5">BDS 2024 • Now at Clove Dental, Chennai</p>
-              </div>
-            </div>
-            <div className="bg-white rounded-2xl p-6 text-left shadow-sm">
-              <div className="text-5xl text-gray-200 font-serif leading-none mb-3 select-none">&quot;</div>
-              <p className="text-gray-500 text-sm leading-relaxed italic mb-6">
-                The MDS programme at JKKN is outstanding. Modern simulation learning labs, experienced senior learners, and a 200+ chair dental hospital gave me unmatched clinical exposure. The mentorship I received shaped me into a confident dental specialist.
-              </p>
-              <div>
-                <p className="font-bold text-gray-900 text-sm">Karthik Sundaram</p>
-                <p className="text-gray-400 text-xs mt-0.5">MDS Orthodontics 2023 • Private Practice, Erode</p>
-              </div>
-            </div>
-            <div className="bg-white rounded-2xl p-6 text-left shadow-sm">
-              <div className="text-5xl text-gray-200 font-serif leading-none mb-3 select-none">&quot;</div>
-              <p className="text-gray-500 text-sm leading-relaxed italic mb-6">
-                I chose JKKN over colleges in Coimbatore because of the patient volume and placement support. The campus hostel was comfortable, and the 92% placement record is real — I got placed at Apollo Dental before my final year ended.
-              </p>
-              <div>
-                <p className="font-bold text-gray-900 text-sm">Meena Devi S.</p>
-                <p className="text-gray-400 text-xs mt-0.5">BDS 2025 • Apollo Dental, Bengaluru</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* ── Key Facts (AI Citation Target) ── */}
       <section className="bg-white py-16 px-4" id="about-jkkn-erode">
         <div className="max-w-3xl mx-auto">

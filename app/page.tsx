@@ -409,49 +409,6 @@ export default function Home() {
     ]
   };
 
-  // Admissions 2026-27 Event Schema
-  const admissionEventSchema = {
-    "@context": "https://schema.org",
-    "@type": "Event",
-    "@id": "https://dental.jkkn.ac.in/#event-2026-admissions",
-    "name": "JKKN Dental College Admissions 2026-27 — BDS & MDS",
-    "description": "Admissions open for BDS and MDS programs at JKKN Dental College & Hospital, Komarapalayam. DCI approved, NAAC A accredited. Apply via NEET counseling or management quota.",
-    "startDate": "2026-03-01",
-    "endDate": "2026-08-31",
-    "eventStatus": "https://schema.org/EventScheduled",
-    "eventAttendanceMode": "https://schema.org/MixedEventAttendanceMode",
-    "location": [
-      {
-        "@type": "Place",
-        "name": "JKKN Dental College & Hospital",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "NH-544, Natarajapuram",
-          "addressLocality": "Komarapalayam",
-          "addressRegion": "Tamil Nadu",
-          "postalCode": "638183",
-          "addressCountry": "IN"
-        }
-      },
-      {
-        "@type": "VirtualLocation",
-        "url": "https://www.jkkn.ai/apply/jkkn-admission-2026"
-      }
-    ],
-    "organizer": {
-      "@type": "CollegeOrUniversity",
-      "name": "JKKN Dental College & Hospital",
-      "url": "https://dental.jkkn.ac.in/"
-    },
-    "offers": {
-      "@type": "Offer",
-      "url": "https://www.jkkn.ai/apply/jkkn-admission-2026",
-      "availability": "https://schema.org/InStock",
-      "validFrom": "2026-03-01"
-    },
-    "image": "https://dental.jkkn.ac.in/images/BDS-hero-image.webp"
-  };
-
   // Principal/Dean Person Schema
   const principalSchema = {
     "@context": "https://schema.org",
@@ -639,7 +596,6 @@ export default function Home() {
       <StructuredData data={mdsSchema} />
       <StructuredData data={collegeSchema} />
       <StructuredData data={faqSchema} />
-      <StructuredData data={admissionEventSchema} />
       <StructuredData data={howToSchema} />
       <BreadcrumbSchema items={[
         { name: 'JKKN Institutions', url: 'https://jkkn.ac.in/' },

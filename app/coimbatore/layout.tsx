@@ -245,46 +245,6 @@ const speakableSchema = {
   },
 };
 
-const reviewSchema = [
-  { "@context": "https://schema.org", "@type": "Review", "author": { "@type": "Person", "name": "Anitha Kumari S." }, "reviewBody": "I had options in Coimbatore, but JKKN's 500+ daily patient flow and 200+ dental chairs convinced me. The clinical exposure here is 3x what my friends at city colleges got.", "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }, "itemReviewed": { "@type": "EducationalOrganization", "@id": "https://dental.jkkn.ac.in/#organization", "name": "JKKN Dental College & Hospital" } },
-  { "@context": "https://schema.org", "@type": "Review", "author": { "@type": "Person", "name": "Praveen Raj K." }, "reviewBody": "JKKN's MDS in Oral Surgery programme is research-driven with published faculty. The 100+ bed hospital meant I worked on complex cases.", "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }, "itemReviewed": { "@type": "EducationalOrganization", "@id": "https://dental.jkkn.ac.in/#organization", "name": "JKKN Dental College & Hospital" } }
-];
-
-const eventSchema = {
-  "@context": "https://schema.org",
-  "@type": "Event",
-  "name": "JKKN Dental College — Admissions Open 2026-27",
-  "description": "Admissions open for BDS (100 seats) and MDS (5 specializations) programmes at JKKN Dental College & Hospital. NEET qualified candidates can apply now.",
-  "startDate": "2026-03-01",
-  "endDate": "2026-08-31",
-  "eventStatus": "https://schema.org/EventScheduled",
-  "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-  "location": {
-    "@type": "Place",
-    "name": "JKKN Dental College & Hospital",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Natarajapuram, NH-544 (Salem–Coimbatore Highway)",
-      "addressLocality": "Komarapalayam",
-      "addressRegion": "Tamil Nadu",
-      "postalCode": "638183",
-      "addressCountry": "IN"
-    }
-  },
-  "organizer": {
-    "@type": "EducationalOrganization",
-    "name": "JKKN Dental College & Hospital",
-    "url": "https://dental.jkkn.ac.in/"
-  },
-  "url": "https://www.jkkn.ai/apply/jkkn-admission-2026",
-  "offers": {
-    "@type": "Offer",
-    "url": "https://www.jkkn.ai/apply/jkkn-admission-2026",
-    "availability": "https://schema.org/InStock",
-    "validFrom": "2026-03-01"
-  }
-};
-
 const courseSchema = [
   {
     "@context": "https://schema.org",
@@ -363,11 +323,7 @@ export default function CoimbatoreLayout({
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }} />
-      {reviewSchema.map((review, i) => (
-        <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(review) }} />
-      ))}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(eventSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
       <Header />
       {children}

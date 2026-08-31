@@ -519,48 +519,6 @@ export default function NamakkalPage() {
       </section>
 
       {/* ── Student Reviews ── */}
-      <section className="bg-white py-16 px-4">
-        <div className="max-w-6xl mx-auto text-center">
-          <h2 className="font-extrabold text-gray-900 mb-3" style={{ fontSize: 'clamp(1.6rem, 3vw + 0.5rem, 2.4rem)' }}>
-            Learner Reviews — JKKN Dental College, Namakkal District
-          </h2>
-          <p className="text-gray-500 text-base mb-4">Hear from learners who made the right choice</p>
-          <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-12" />
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-            <div className="bg-[#FBFBEE] rounded-2xl p-6 text-left shadow-sm">
-              <div className="text-5xl text-gray-200 font-serif leading-none mb-3 select-none">&quot;</div>
-              <p className="text-gray-500 text-sm leading-relaxed italic mb-6">
-                As a learner from Namakkal district, JKKN Dental College was the obvious choice. Being located right in the same district at Komarapalayam, the 200+ chair hospital gave me incredible clinical experience. I treated real patients from my second year itself.
-              </p>
-              <div>
-                <p className="font-bold text-gray-900 text-sm">Surya Prakash K.</p>
-                <p className="text-gray-400 text-xs mt-0.5">BDS 2024 • Apollo Hospitals, Chennai</p>
-              </div>
-            </div>
-            <div className="bg-[#FBFBEE] rounded-2xl p-6 text-left shadow-sm">
-              <div className="text-5xl text-gray-200 font-serif leading-none mb-3 select-none">&quot;</div>
-              <p className="text-gray-500 text-sm leading-relaxed italic mb-6">
-                The research opportunities at JKKN are exceptional. Our senior learners guided me through two publications during my MDS. The patient flow of 500+ daily cases meant I never ran out of clinical material for my dissertation.
-              </p>
-              <div>
-                <p className="font-bold text-gray-900 text-sm">Divya Bharathi M.</p>
-                <p className="text-gray-400 text-xs mt-0.5">MDS Periodontics 2023 • Fortis Healthcare, Bengaluru</p>
-              </div>
-            </div>
-            <div className="bg-[#FBFBEE] rounded-2xl p-6 text-left shadow-sm">
-              <div className="text-5xl text-gray-200 font-serif leading-none mb-3 select-none">&quot;</div>
-              <p className="text-gray-500 text-sm leading-relaxed italic mb-6">
-                What sets JKKN apart is the placement support. The Career Development Centre prepared us with mock interviews, soft skills training, and direct campus recruitment. I had three offers before my internship ended.
-              </p>
-              <div>
-                <p className="font-bold text-gray-900 text-sm">Arun Kumar P.</p>
-                <p className="text-gray-400 text-xs mt-0.5">BDS 2025 • MyDentist, Hyderabad</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* ── FAQ ── */}
       <section className="bg-[#FBFBEE] py-16 px-4">
         <div className="max-w-3xl mx-auto text-center">

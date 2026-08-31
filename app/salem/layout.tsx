@@ -129,41 +129,6 @@ const courseSchema = [
   }
 ];
 
-const eventSchema = {
-  "@context": "https://schema.org",
-  "@type": "Event",
-  "name": "JKKN Dental College — Admissions Open 2026-27",
-  "description": "Admissions open for BDS (100 seats) and MDS (5 specializations) programmes at JKKN Dental College & Hospital. NEET qualified candidates can apply now.",
-  "startDate": "2026-03-01",
-  "endDate": "2026-08-31",
-  "eventStatus": "https://schema.org/EventScheduled",
-  "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-  "location": {
-    "@type": "Place",
-    "name": "JKKN Dental College & Hospital",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Natarajapuram, NH-544 (Salem-Coimbatore Highway)",
-      "addressLocality": "Komarapalayam",
-      "addressRegion": "Tamil Nadu",
-      "postalCode": "638183",
-      "addressCountry": "IN"
-    }
-  },
-  "organizer": {
-    "@type": "EducationalOrganization",
-    "name": "JKKN Dental College & Hospital",
-    "url": "https://dental.jkkn.ac.in/"
-  },
-  "url": "https://www.jkkn.ai/apply/jkkn-admission-2026",
-  "offers": {
-    "@type": "Offer",
-    "url": "https://www.jkkn.ai/apply/jkkn-admission-2026",
-    "availability": "https://schema.org/InStock",
-    "validFrom": "2026-03-01"
-  }
-};
-
 const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "Dentist",
@@ -238,33 +203,6 @@ const howToSchema = {
   ]
 };
 
-const reviewSchema = [
-  {
-    "@context": "https://schema.org",
-    "@type": "Review",
-    "author": { "@type": "Person", "name": "Sneha Ramesh" },
-    "reviewBody": "From Salem, JKKN was approximately 60 km on NH-544 — closer than most dental colleges in the region. The clinical exposure here is unmatched with 500+ patients daily.",
-    "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-    "itemReviewed": {
-      "@type": "EducationalOrganization",
-      "@id": "https://dental.jkkn.ac.in/#organization",
-      "name": "JKKN Dental College & Hospital"
-    }
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "Review",
-    "author": { "@type": "Person", "name": "Vijay Anand S." },
-    "reviewBody": "I did my MDS in Prosthodontics at JKKN and the infrastructure blew me away — modern simulation labs and digital dentistry equipment.",
-    "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-    "itemReviewed": {
-      "@type": "EducationalOrganization",
-      "@id": "https://dental.jkkn.ac.in/#organization",
-      "name": "JKKN Dental College & Hospital"
-    }
-  }
-];
-
 export default function SalemLayout({
   children,
 }: {
@@ -275,14 +213,10 @@ export default function SalemLayout({
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(eventSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
-      {reviewSchema.map((review, i) => (
-        <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(review) }} />
-      ))}
       <Header />
       {children}
       <Footer />

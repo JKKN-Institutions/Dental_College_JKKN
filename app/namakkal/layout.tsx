@@ -191,41 +191,6 @@ const courseSchema = [
   }
 ];
 
-const eventSchema = {
-  "@context": "https://schema.org",
-  "@type": "Event",
-  "name": "JKKN Dental College — Admissions Open 2026-27",
-  "description": "Admissions open for BDS (100 seats) and MDS (5 specializations) programmes at JKKN Dental College & Hospital, Namakkal district. NEET qualified candidates can apply now.",
-  "startDate": "2026-03-01",
-  "endDate": "2026-08-31",
-  "eventStatus": "https://schema.org/EventScheduled",
-  "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-  "location": {
-    "@type": "Place",
-    "name": "JKKN Dental College & Hospital",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Natarajapuram, NH-544 (Salem–Coimbatore Highway)",
-      "addressLocality": "Komarapalayam",
-      "addressRegion": "Tamil Nadu",
-      "postalCode": "638183",
-      "addressCountry": "IN"
-    }
-  },
-  "organizer": {
-    "@type": "EducationalOrganization",
-    "name": "JKKN Dental College & Hospital",
-    "url": "https://dental.jkkn.ac.in/"
-  },
-  "url": "https://www.jkkn.ai/apply/jkkn-admission-2026",
-  "offers": {
-    "@type": "Offer",
-    "url": "https://www.jkkn.ai/apply/jkkn-admission-2026",
-    "availability": "https://schema.org/InStock",
-    "validFrom": "2026-03-01"
-  }
-};
-
 const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "Dentist",
@@ -301,25 +266,6 @@ const howToSchema = {
   ]
 };
 
-const reviewSchema = [
-  {
-    "@context": "https://schema.org",
-    "@type": "Review",
-    "author": { "@type": "Person", "name": "Surya Prakash K." },
-    "reviewBody": "As a student from Namakkal district, JKKN Dental College was the obvious choice. Being located within the same district at Komarapalayam, the 200+ chair hospital gave me incredible clinical experience from Year 1.",
-    "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-    "itemReviewed": { "@type": "EducationalOrganization", "@id": "https://dental.jkkn.ac.in/#organization", "name": "JKKN Dental College & Hospital" }
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "Review",
-    "author": { "@type": "Person", "name": "Divya Bharathi M." },
-    "reviewBody": "The research opportunities at JKKN are exceptional. Our faculty guided me through two publications during my MDS. The patient flow of 500+ daily cases meant I never ran out of clinical material.",
-    "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-    "itemReviewed": { "@type": "EducationalOrganization", "@id": "https://dental.jkkn.ac.in/#organization", "name": "JKKN Dental College & Hospital" }
-  }
-];
-
 export default function NamakkalLayout({
   children,
 }: {
@@ -330,14 +276,10 @@ export default function NamakkalLayout({
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(eventSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
-      {reviewSchema.map((review, i) => (
-        <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(review) }} />
-      ))}
       <Header />
       {children}
       <Footer />

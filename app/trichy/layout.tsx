@@ -116,41 +116,6 @@ const courseSchema = [
   }
 ];
 
-const eventSchema = {
-  "@context": "https://schema.org",
-  "@type": "Event",
-  "name": "JKKN Dental College BDS/MDS Admissions 2026-27",
-  "description": "BDS and MDS admissions open at JKKN Dental College & Hospital for the 2026-27 academic year. Apply at www.jkkn.ai/apply/jkkn-admission-2026.",
-  "startDate": "2026-03-01",
-  "endDate": "2026-08-31",
-  "eventStatus": "https://schema.org/EventScheduled",
-  "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-  "location": {
-    "@type": "Place",
-    "name": "JKKN Dental College & Hospital",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Natarajapuram, NH-544 (Salem–Coimbatore Highway)",
-      "addressLocality": "Komarapalayam",
-      "addressRegion": "Tamil Nadu",
-      "postalCode": "638183",
-      "addressCountry": "IN"
-    }
-  },
-  "organizer": {
-    "@type": "EducationalOrganization",
-    "name": "JKKN Dental College & Hospital",
-    "url": "https://dental.jkkn.ac.in/"
-  },
-  "url": "https://www.jkkn.ai/apply/jkkn-admission-2026",
-  "offers": {
-    "@type": "Offer",
-    "url": "https://www.jkkn.ai/apply/jkkn-admission-2026",
-    "availability": "https://schema.org/InStock",
-    "validFrom": "2026-03-01"
-  }
-};
-
 const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": ["LocalBusiness", "Dentist"],
@@ -232,7 +197,6 @@ export default function TrichyLayout({
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(eventSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }} />

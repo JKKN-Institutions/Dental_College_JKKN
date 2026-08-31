@@ -118,41 +118,6 @@ const courseSchema = [
   }
 ];
 
-const eventSchema = {
-  "@context": "https://schema.org",
-  "@type": "Event",
-  "name": "JKKN Dental College BDS/MDS Admissions 2026-27",
-  "description": "BDS and MDS admissions open at JKKN Dental College & Hospital for the 2026-27 academic year. Apply at www.jkkn.ai/apply/jkkn-admission-2026.",
-  "startDate": "2026-03-01",
-  "endDate": "2026-08-31",
-  "eventStatus": "https://schema.org/EventScheduled",
-  "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-  "location": {
-    "@type": "Place",
-    "name": "JKKN Dental College & Hospital",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Natarajapuram, NH-544 (Salem–Coimbatore Highway)",
-      "addressLocality": "Komarapalayam",
-      "addressRegion": "Tamil Nadu",
-      "postalCode": "638183",
-      "addressCountry": "IN"
-    }
-  },
-  "organizer": {
-    "@type": "EducationalOrganization",
-    "name": "JKKN Dental College & Hospital",
-    "url": "https://dental.jkkn.ac.in/"
-  },
-  "url": "https://www.jkkn.ai/apply/jkkn-admission-2026",
-  "offers": {
-    "@type": "Offer",
-    "url": "https://www.jkkn.ai/apply/jkkn-admission-2026",
-    "availability": "https://schema.org/InStock",
-    "validFrom": "2026-03-01"
-  }
-};
-
 const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": ["LocalBusiness", "Dentist"],
@@ -224,25 +189,6 @@ const howToSchema = {
   ]
 };
 
-const reviewSchema = [
-  {
-    "@context": "https://schema.org",
-    "@type": "Review",
-    "author": { "@type": "Person", "name": "Priya Lakshmi R." },
-    "reviewBody": "Coming from Erode, I was looking for a quality dental college nearby. JKKN was just 18 km away with excellent clinical training — we treat 500+ patients daily. The hands-on experience from Year 1 made all the difference in my career.",
-    "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-    "itemReviewed": { "@type": "EducationalOrganization", "@id": "https://dental.jkkn.ac.in/#organization", "name": "JKKN Dental College & Hospital" }
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "Review",
-    "author": { "@type": "Person", "name": "Karthik Sundaram" },
-    "reviewBody": "The MDS programme at JKKN is outstanding. Modern simulation labs, experienced faculty, and a 200+ chair dental hospital gave me unmatched clinical exposure. Being from Erode, the 18 km commute was never a problem.",
-    "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-    "itemReviewed": { "@type": "EducationalOrganization", "@id": "https://dental.jkkn.ac.in/#organization", "name": "JKKN Dental College & Hospital" }
-  }
-];
-
 export default function ErodeLayout({
   children,
 }: {
@@ -253,14 +199,10 @@ export default function ErodeLayout({
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(eventSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
-      {reviewSchema.map((review, i) => (
-        <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(review) }} />
-      ))}
       <Header />
       {children}
       <Footer />

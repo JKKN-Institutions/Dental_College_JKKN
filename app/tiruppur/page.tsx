@@ -415,48 +415,6 @@ export default function TiruppurPage() {
       </section>
 
       {/* ── Testimonials ── */}
-      <section className="bg-[#FBFBEE] py-16 px-4">
-        <div className="max-w-6xl mx-auto text-center">
-          <h2 className="font-extrabold text-gray-900 mb-3" style={{ fontSize: 'clamp(1.6rem, 3vw + 0.5rem, 2.4rem)' }}>
-            Learners from Tiruppur Love JKKN Dental
-          </h2>
-          <p className="text-gray-500 text-base mb-4">Hear from learners who made the right choice</p>
-          <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-12" />
-          <ul className="grid grid-cols-1 sm:grid-cols-3 gap-6 list-none p-0 m-0">
-            <li className="bg-white rounded-2xl p-6 text-left shadow-sm">
-              <div className="text-5xl text-gray-200 font-serif leading-none mb-3 select-none">"</div>
-              <p className="text-gray-500 text-sm leading-relaxed italic mb-6">
-                I came from Tiruppur and was initially worried about the distance, but the on-campus hostel made it feel like home. The 200+ dental chairs and daily patient flow gave me clinical skills that most fresh graduates lack.
-              </p>
-              <div>
-                <p className="font-bold text-gray-900 text-sm">Dharani Selvam</p>
-                <p className="text-gray-400 text-xs mt-0.5">BDS 2024 • Clove Dental, Coimbatore</p>
-              </div>
-            </li>
-            <li className="bg-white rounded-2xl p-6 text-left shadow-sm">
-              <div className="text-5xl text-gray-200 font-serif leading-none mb-3 select-none">"</div>
-              <p className="text-gray-500 text-sm leading-relaxed italic mb-6">
-                JKKN&apos;s MDS programme in Conservative Dentistry was my top choice. The senior learners here are published researchers who bring real-world expertise to every learning session. My thesis got published in a national journal thanks to their guidance.
-              </p>
-              <div>
-                <p className="font-bold text-gray-900 text-sm">Nithya Sri R.</p>
-                <p className="text-gray-400 text-xs mt-0.5">MDS Conservative Dentistry 2023 • Apollo Hospitals, Chennai</p>
-              </div>
-            </li>
-            <li className="bg-white rounded-2xl p-6 text-left shadow-sm">
-              <div className="text-5xl text-gray-200 font-serif leading-none mb-3 select-none">"</div>
-              <p className="text-gray-500 text-sm leading-relaxed italic mb-6">
-                The TNPSC Academy at JKKN prepared me for government dental officer exams alongside my BDS. The college thinks beyond just private placements — they prepare you for every career path in dentistry.
-              </p>
-              <div>
-                <p className="font-bold text-gray-900 text-sm">Sathish Kumar M.</p>
-                <p className="text-gray-400 text-xs mt-0.5">BDS 2025 • Government Dental Surgeon, Tamil Nadu</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
-
       {/* ── Key Facts (AI Citation Target) ── */}
       <section className="bg-[#FBFBEE] py-16 px-4" id="about-jkkn-tiruppur">
         <div className="max-w-3xl mx-auto">

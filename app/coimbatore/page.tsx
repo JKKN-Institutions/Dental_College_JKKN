@@ -473,48 +473,6 @@ export default function CoimbatorePage() {
       </section>
 
       {/* ── Testimonials ── */}
-      <section className="bg-[#FBFBEE] py-16 px-4">
-        <div className="max-w-6xl mx-auto text-center">
-          <h2 className="font-extrabold text-gray-900 mb-3" style={{ fontSize: 'clamp(1.6rem, 3vw + 0.5rem, 2.4rem)' }}>
-            Learners from Coimbatore Love JKKN Dental
-          </h2>
-          <p className="text-gray-500 text-base mb-4">Hear from learners who made the right choice</p>
-          <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-12" />
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-            <div className="bg-white rounded-2xl p-6 text-left shadow-sm">
-              <div className="text-5xl text-gray-200 font-serif leading-none mb-3 select-none">"</div>
-              <p className="text-gray-500 text-sm leading-relaxed italic mb-6">
-                I had options in Coimbatore, but JKKN&apos;s 500+ daily patient flow and 200+ dental chairs convinced me. The clinical exposure here is 3x what my friends at city colleges got. Best decision I ever made for my dental career.
-              </p>
-              <div>
-                <p className="font-bold text-gray-900 text-sm">Anitha Kumari S.</p>
-                <p className="text-gray-400 text-xs mt-0.5">BDS 2024 • Apollo Dental, Coimbatore</p>
-              </div>
-            </div>
-            <div className="bg-white rounded-2xl p-6 text-left shadow-sm">
-              <div className="text-5xl text-gray-200 font-serif leading-none mb-3 select-none">"</div>
-              <p className="text-gray-500 text-sm leading-relaxed italic mb-6">
-                JKKN&apos;s MDS in Oral Surgery programme is research-driven with published senior learners. The 100+ bed hospital and multi-specialty setup meant I worked on complex cases that most postgraduates only read about in textbooks.
-              </p>
-              <div>
-                <p className="font-bold text-gray-900 text-sm">Praveen Raj K.</p>
-                <p className="text-gray-400 text-xs mt-0.5">MDS Oral Surgery 2023 • Fortis Healthcare, Bengaluru</p>
-              </div>
-            </div>
-            <div className="bg-white rounded-2xl p-6 text-left shadow-sm">
-              <div className="text-5xl text-gray-200 font-serif leading-none mb-3 select-none">"</div>
-              <p className="text-gray-500 text-sm leading-relaxed italic mb-6">
-                The NH-544 connectivity from Coimbatore made weekend visits home easy. But honestly, the campus became my second home — great hostel, modern learning labs, and a placement team that got me hired at Clove Dental in my final year.
-              </p>
-              <div>
-                <p className="font-bold text-gray-900 text-sm">Deepika Mohan R.</p>
-                <p className="text-gray-400 text-xs mt-0.5">BDS 2025 • Clove Dental, Chennai</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* ── Key Facts (AI Citation Target) ── */}
       <section className="bg-white py-16 px-4">
         <div className="max-w-5xl mx-auto text-center">

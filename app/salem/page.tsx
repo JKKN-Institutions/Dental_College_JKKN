@@ -523,48 +523,6 @@ export default function SalemPage() {
       </section>
 
       {/* ── Testimonials ── */}
-      <section className="bg-[#FBFBEE] py-16 px-4">
-        <div className="max-w-6xl mx-auto text-center">
-          <h2 className="font-extrabold text-gray-900 mb-3" style={{ fontSize: 'clamp(1.6rem, 3vw + 0.5rem, 2.4rem)' }}>
-            What Salem Learners Say About JKKN Dental College
-          </h2>
-          <p className="text-gray-500 text-base mb-4">Hear from learners who made the right choice</p>
-          <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-12" />
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-            <div className="bg-white rounded-2xl p-6 text-left shadow-sm">
-              <div className="text-5xl text-gray-200 font-serif leading-none mb-3 select-none">&quot;</div>
-              <p className="text-gray-500 text-sm leading-relaxed italic mb-6">
-                From Salem, JKKN was approximately 60 km on NH-544 — closer than most dental colleges in the region. The clinical exposure here is unmatched. We get to work with 500+ patients daily across all dental specializations.
-              </p>
-              <div>
-                <p className="font-bold text-gray-900 text-sm">Sneha Ramesh</p>
-                <p className="text-gray-400 text-xs mt-0.5">BDS 2024 • MyDentist, Chennai</p>
-              </div>
-            </div>
-            <div className="bg-white rounded-2xl p-6 text-left shadow-sm">
-              <div className="text-5xl text-gray-200 font-serif leading-none mb-3 select-none">&quot;</div>
-              <p className="text-gray-500 text-sm leading-relaxed italic mb-6">
-                I did my MDS in Prosthodontics at JKKN and the infrastructure blew me away — modern simulation learning labs, digital dentistry equipment, and supportive senior learners who genuinely care about your growth as a specialist.
-              </p>
-              <div>
-                <p className="font-bold text-gray-900 text-sm">Vijay Anand S.</p>
-                <p className="text-gray-400 text-xs mt-0.5">MDS Prosthodontics 2023 • Own Practice, Salem</p>
-              </div>
-            </div>
-            <div className="bg-white rounded-2xl p-6 text-left shadow-sm">
-              <div className="text-5xl text-gray-200 font-serif leading-none mb-3 select-none">&quot;</div>
-              <p className="text-gray-500 text-sm leading-relaxed italic mb-6">
-                The placement cell at JKKN is incredibly active. They brought top dental chains for campus recruitment, conducted mock interviews, and helped me prepare for every round. I got placed at Sabka Dentist with a great package.
-              </p>
-              <div>
-                <p className="font-bold text-gray-900 text-sm">Kavitha Priya T.</p>
-                <p className="text-gray-400 text-xs mt-0.5">BDS 2025 • Sabka Dentist, Mumbai</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* ── Explore More Cities ── */}
       <section className="bg-white py-16 px-4">
         <div className="max-w-4xl mx-auto text-center">
