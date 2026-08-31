@@ -182,7 +182,7 @@ export default function HosurPage() {
           </h2>
           <div className="snippet-answer voice-answer">
             <p className="text-gray-700 leading-relaxed mb-4" style={{ fontSize: 'clamp(0.95rem, 1vw + 0.4rem, 1.1rem)' }}>
-              The Hosur–Krishnagiri–Dharmapuri belt has no dedicated private dental college offering full BDS and MDS programmes. The nearest established option along the NH-44 corridor is <strong>JKKN Dental College &amp; Hospital</strong> at Komarapalayam, Namakkal — reached via Salem. Founded in 1952 and affiliated to TN Dr. MGR Medical University, Chennai, JKKN Dental offers BDS with 100 government-sanctioned seats and MDS in 5 specialisations, and operates a 200-chair teaching hospital treating 500+ patients daily.
+              The Hosur–Krishnagiri–Dharmapuri belt has no dedicated private dental college offering full BDS and MDS programmes. The nearest established option along the NH-44 corridor is <strong>JKKN Dental College &amp; Hospital</strong> at Komarapalayam, Namakkal — reached via Salem. Founded in 1987 and affiliated to TN Dr. MGR Medical University, Chennai, JKKN Dental offers BDS with 100 government-sanctioned seats and MDS in 5 specialisations, and operates a 200-chair teaching hospital treating 500+ patients daily.
             </p>
           </div>
           <h3 className="font-bold text-gray-900 mb-3 text-lg">Why Stay in Tamil Nadu Instead of Crossing to Bangalore?</h3>
@@ -230,7 +230,7 @@ export default function HosurPage() {
             Hosur is one of Tamil Nadu&apos;s fastest-growing industrial cities, but its students have no dental college in their own belt. Rather than crossing into Karnataka and losing TN state-quota benefits, JKKN Dental at Komarapalayam keeps everything within the Tamil Nadu system — one direct NH-44 corridor away.
           </p>
           <p className="text-gray-400 max-w-3xl mx-auto mb-4 text-sm leading-relaxed">
-            Founded in 1952, JKKN Dental College &amp; Hospital brings over 74 years of dental education excellence. Approved by the Dental Council of India (DCI) and affiliated to TN Dr. MGR Medical University, Chennai, the institution operates a 200+ chair teaching hospital treating 500+ patients daily.
+            Founded in 1987, JKKN Dental College &amp; Hospital brings nearly four decades of dental education excellence, backed by the JKKN Institutions legacy since 1952. Approved by the Dental Council of India (DCI) and affiliated to TN Dr. MGR Medical University, Chennai, the institution operates a 200+ chair teaching hospital treating 500+ patients daily.
           </p>
           <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-12" />
           <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 list-none p-0 m-0">
@@ -426,7 +426,7 @@ export default function HosurPage() {
             {[
               { label: 'Location', value: 'Natarajapuram, NH-544, Komarapalayam, Namakkal, Tamil Nadu 638183' },
               { label: 'Distance from Hosur', value: 'Approximately 245 km via NH-44 — 4.5–5 hours by road' },
-              { label: 'Founded', value: '1952 (74+ years of educational excellence)' },
+              { label: 'Founded', value: '1987 (part of JKKN Institutions, est. 1952)' },
               { label: 'Programmes', value: 'BDS (100 seats) + MDS (5 specialisations)' },
               { label: 'Hospital', value: '200+ dental chairs, 100+ beds, 500+ patients daily' },
               { label: 'Approval', value: 'Dental Council of India (DCI)' },

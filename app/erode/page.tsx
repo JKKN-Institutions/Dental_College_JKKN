@@ -192,7 +192,7 @@ export default function ErodePage() {
           </h2>
           <div className="snippet-answer voice-answer">
             <p className="text-gray-700 leading-relaxed mb-4" style={{ fontSize: 'clamp(0.95rem, 1vw + 0.4rem, 1.1rem)' }}>
-              While Erode has limited dental college options within the district, the nearest well-established DCI-approved dental college is <strong>JKKN Dental College &amp; Hospital</strong>, located just 18 km from Erode at Komarapalayam, Namakkal, via NH-544 (Salem–Coimbatore Highway). Established in 1952 and affiliated to TN Dr. MGR Medical University, Chennai, JKKN Dental College offers BDS with 100 government-sanctioned seats and MDS in 5 specializations, and operates a 200-chair teaching hospital treating 500+ patients daily.
+              While Erode has limited dental college options within the district, the nearest well-established DCI-approved dental college is <strong>JKKN Dental College &amp; Hospital</strong>, located just 18 km from Erode at Komarapalayam, Namakkal, via NH-544 (Salem–Coimbatore Highway). Established in 1987 and affiliated to TN Dr. MGR Medical University, Chennai, JKKN Dental College offers BDS with 100 government-sanctioned seats and MDS in 5 specializations, and operates a 200-chair teaching hospital treating 500+ patients daily.
             </p>
           </div>
           <h3 className="font-bold text-gray-900 mb-3 text-lg">Dental Colleges Near Erode</h3>
@@ -240,7 +240,7 @@ export default function ErodePage() {
             Erode&apos;s strong industrial base means families value quality education with good placement outcomes. JKKN is just 18 km away — closer than many colleges within the city itself. The excellent NH-544 connectivity makes daily commute comfortable and quick.
           </p>
           <p className="text-gray-400 max-w-3xl mx-auto mb-4 text-sm leading-relaxed">
-            Founded in 1952, JKKN Dental College &amp; Hospital brings over 74 years of dental education excellence. Approved by the Dental Council of India (DCI) and affiliated to TN Dr. MGR Medical University, Chennai, the institution operates a 200+ chair teaching hospital treating 500+ patients daily. Learn more about being the{' '}
+            Founded in 1987, JKKN Dental College &amp; Hospital brings nearly four decades of dental education excellence, backed by the JKKN Institutions legacy since 1952. Approved by the Dental Council of India (DCI) and affiliated to TN Dr. MGR Medical University, Chennai, the institution operates a 200+ chair teaching hospital treating 500+ patients daily. Learn more about being the{' '}
             <Link href="/best-dental-college-tamil-nadu/" className="text-[#006837] hover:underline">best dental college in Tamil Nadu</Link>.
           </p>
           <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-12" />
@@ -480,7 +480,7 @@ export default function ErodePage() {
             {[
               { label: 'Location', value: 'Natarajapuram, NH-544, Komarapalayam, Namakkal, Tamil Nadu 638183' },
               { label: 'Distance from Erode', value: 'Approximately 18 km via NH-544 — 35–40 minutes by road' },
-              { label: 'Founded', value: '1952 (74+ years of educational excellence)' },
+              { label: 'Founded', value: '1987 (part of JKKN Institutions, est. 1952)' },
               { label: 'Programmes', value: 'BDS (100 seats) + MDS (5 specialisations)' },
               { label: 'Hospital', value: '200+ dental chairs, 100+ beds, 500+ patients daily' },
               { label: 'Approval', value: 'Dental Council of India (DCI)' },

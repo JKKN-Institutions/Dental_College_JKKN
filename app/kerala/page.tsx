@@ -180,7 +180,7 @@ export default function KeralaPage() {
           </h2>
           <div className="snippet-answer voice-answer">
             <p className="text-gray-700 leading-relaxed mb-4" style={{ fontSize: 'clamp(0.95rem, 1vw + 0.4rem, 1.1rem)' }}>
-              Yes — NEET-qualified students from Kerala join Tamil Nadu dental colleges through the <strong>Management Quota</strong>. <strong>JKKN Dental College &amp; Hospital</strong> at Komarapalayam — founded in 1952 and affiliated to TN Dr. MGR Medical University, Chennai — is a popular choice for the Palakkad–Thrissur–Kochi belt: the Kerala–Chennai main rail line stops at Erode Junction, 18 km from campus, and NH-544 runs from Palakkad practically to the college gate. BDS has 100 seats; MDS runs in 5 specialisations.
+              Yes — NEET-qualified students from Kerala join Tamil Nadu dental colleges through the <strong>Management Quota</strong>. <strong>JKKN Dental College &amp; Hospital</strong> at Komarapalayam — founded in 1987 and affiliated to TN Dr. MGR Medical University, Chennai — is a popular choice for the Palakkad–Thrissur–Kochi belt: the Kerala–Chennai main rail line stops at Erode Junction, 18 km from campus, and NH-544 runs from Palakkad practically to the college gate. BDS has 100 seats; MDS runs in 5 specialisations.
             </p>
           </div>
           <h3 className="font-bold text-gray-900 mb-3 text-lg">What Kerala Students Get at JKKN</h3>
@@ -228,7 +228,7 @@ export default function KeralaPage() {
             Kerala families have long sent students to western Tamil Nadu for professional education — the rail line makes it practically next door. JKKN adds a 200+ chair teaching hospital, a full residential campus, and a clear Management Quota admission route for NEET-qualified students.
           </p>
           <p className="text-gray-400 max-w-3xl mx-auto mb-4 text-sm leading-relaxed">
-            Founded in 1952, JKKN Dental College &amp; Hospital brings over 74 years of dental education excellence. Approved by the Dental Council of India (DCI) and affiliated to TN Dr. MGR Medical University, Chennai, the institution operates a 200+ chair teaching hospital treating 500+ patients daily.
+            Founded in 1987, JKKN Dental College &amp; Hospital brings nearly four decades of dental education excellence, backed by the JKKN Institutions legacy since 1952. Approved by the Dental Council of India (DCI) and affiliated to TN Dr. MGR Medical University, Chennai, the institution operates a 200+ chair teaching hospital treating 500+ patients daily.
           </p>
           <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-12" />
           <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 list-none p-0 m-0">
@@ -424,7 +424,7 @@ export default function KeralaPage() {
             {[
               { label: 'Location', value: 'Natarajapuram, NH-544, Komarapalayam, Namakkal, Tamil Nadu 638183' },
               { label: 'From Kerala', value: 'Palakkad ~165 km via NH-544; Kerala–Chennai trains stop at Erode Jn (18 km)' },
-              { label: 'Founded', value: '1952 (74+ years of educational excellence)' },
+              { label: 'Founded', value: '1987 (part of JKKN Institutions, est. 1952)' },
               { label: 'Programmes', value: 'BDS (100 seats) + MDS (5 specialisations)' },
               { label: 'Admission for Kerala students', value: 'Management Quota with NEET UG qualification' },
               { label: 'Hospital', value: '200+ dental chairs, 100+ beds, 500+ patients daily' },

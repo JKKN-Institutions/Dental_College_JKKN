@@ -63,7 +63,7 @@ const faqSchema = {
       "name": "Which is the best dental college in Namakkal district?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "JKKN Dental College & Hospital is the leading dental institution in Namakkal district. Located at Komarapalayam, Namakkal district on NH-544, it is DCI approved, NAAC accredited, and affiliated to Tamil Nadu Dr. M.G.R. Medical University, Chennai. It is the oldest dental college in Namakkal district, established as part of JKKN Institutions in 1952, and the only institution with a 200-chair teaching hospital in the district."
+        "text": "JKKN Dental College & Hospital is the leading dental institution in Namakkal district. Located at Komarapalayam, Namakkal district on NH-544, it is DCI approved, NAAC accredited, and affiliated to Tamil Nadu Dr. M.G.R. Medical University, Chennai. Established in 1987 as part of JKKN Institutions, it is the only institution in the district with a 200-chair teaching hospital."
       }
     },
     {
@@ -152,7 +152,7 @@ const orgSchema = {
   },
   "telephone": "+919345855001",
   "email": "info@jkkn.ac.in",
-  "foundingDate": "1952",
+  "foundingDate": "1987",
   "parentOrganization": { "@type": "Organization", "name": "JKKN Institutions", "url": "https://jkkn.ac.in/" },
   "hasCredential": [
     { "@type": "EducationalOccupationalCredential", "credentialCategory": "DCI Approved" },

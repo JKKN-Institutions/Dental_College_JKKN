@@ -47,7 +47,7 @@ const faqSchema = {
   "@type": "FAQPage",
   "mainEntity": [
     { "@type": "Question", "name": "How many dental colleges are in Madurai?", "acceptedAnswer": { "@type": "Answer", "text": "Madurai has only a couple of dental colleges, so seats fill quickly and many BDS and MDS aspirants from Madurai district consider colleges in western Tamil Nadu. JKKN Dental College and Hospital at Komarapalayam, Namakkal offers BDS with one hundred seats and MDS in five specialisations, affiliated to TN Dr. MGR Medical University, Chennai." } },
-    { "@type": "Question", "name": "Which is the best dental college near Madurai?", "acceptedAnswer": { "@type": "Answer", "text": "JKKN Dental College and Hospital at Komarapalayam is one of the most established DCI-approved dental colleges accessible from Madurai. Founded in 1952, NAAC accredited and affiliated to The Tamil Nadu Dr. M.G.R. Medical University, it operates a 200+ chair teaching hospital treating 500+ patients daily." } },
+    { "@type": "Question", "name": "Which is the best dental college near Madurai?", "acceptedAnswer": { "@type": "Answer", "text": "JKKN Dental College and Hospital at Komarapalayam is one of the most established DCI-approved dental colleges accessible from Madurai. Founded in 1987, NAAC accredited and affiliated to The Tamil Nadu Dr. M.G.R. Medical University, it operates a 200+ chair teaching hospital treating 500+ patients daily." } },
     { "@type": "Question", "name": "How far is JKKN Dental College from Madurai?", "acceptedAnswer": { "@type": "Answer", "text": "JKKN Dental College is approximately two hundred and fifteen kilometres from Madurai — around four to four and a half hours by road via NH-44 through Dindigul and Karur, then on to Komarapalayam. Trains from Madurai Junction towards Erode Junction bring you within eighteen kilometres of the campus." } },
     { "@type": "Question", "name": "Can Madurai students stay in the hostel at JKKN Dental?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. JKKN Dental provides separate hostels for boys and girls with mess facility. Most learners from Madurai stay on campus and travel home during holidays — Madurai is well connected to Erode and Karur by frequent buses and trains." } },
     { "@type": "Question", "name": "What is the NEET cut-off for BDS at JKKN Dental?", "acceptedAnswer": { "@type": "Answer", "text": "The NEET cut-off for BDS admission at JKKN Dental College & Hospital varies each year based on counselling rounds. Contact the admission office at plus ninety-one nine three four five eight five five zero zero one for the latest cut-off information and seat availability for the current admission cycle." } },
@@ -77,7 +77,7 @@ const orgSchema = {
   },
   "telephone": "+919345855001",
   "email": "info@jkkn.ac.in",
-  "foundingDate": "1952",
+  "foundingDate": "1987",
   "parentOrganization": { "@type": "Organization", "name": "JKKN Institutions", "url": "https://jkkn.ac.in/" },
   "hasCredential": [
     { "@type": "EducationalOccupationalCredential", "credentialCategory": "DCI Approved" },

@@ -77,7 +77,7 @@ const orgSchema = {
   },
   "telephone": "+919345855001",
   "email": "info@jkkn.ac.in",
-  "foundingDate": "1952",
+  "foundingDate": "1987",
   "parentOrganization": { "@type": "Organization", "name": "JKKN Institutions", "url": "https://jkkn.ac.in/" },
   "hasCredential": [
     { "@type": "EducationalOccupationalCredential", "credentialCategory": "DCI Approved" },

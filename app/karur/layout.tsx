@@ -47,7 +47,7 @@ const faqSchema = {
   "@type": "FAQPage",
   "mainEntity": [
     { "@type": "Question", "name": "Are there any dental colleges in Karur?", "acceptedAnswer": { "@type": "Answer", "text": "Karur district has no dedicated dental college, so BDS and MDS aspirants from Karur travel to neighbouring districts. The nearest established DCI-approved option is JKKN Dental College and Hospital at Komarapalayam, Namakkal — approximately seventy-five kilometres away via the Erode side. It offers BDS with one hundred seats and MDS in five specialisations, affiliated to TN Dr. MGR Medical University, Chennai." } },
-    { "@type": "Question", "name": "Which is the best dental college near Karur?", "acceptedAnswer": { "@type": "Answer", "text": "JKKN Dental College and Hospital at Komarapalayam is one of the most established DCI-approved dental colleges accessible from Karur. Founded in 1952, NAAC accredited and affiliated to The Tamil Nadu Dr. M.G.R. Medical University, it operates a 200+ chair teaching hospital treating 500+ patients daily." } },
+    { "@type": "Question", "name": "Which is the best dental college near Karur?", "acceptedAnswer": { "@type": "Answer", "text": "JKKN Dental College and Hospital at Komarapalayam is one of the most established DCI-approved dental colleges accessible from Karur. Founded in 1987, NAAC accredited and affiliated to The Tamil Nadu Dr. M.G.R. Medical University, it operates a 200+ chair teaching hospital treating 500+ patients daily." } },
     { "@type": "Question", "name": "How far is JKKN Dental College from Karur?", "acceptedAnswer": { "@type": "Answer", "text": "JKKN Dental College is approximately seventy-five kilometres from Karur — around one and a half to two hours by road via the Erode side. Direct trains also run from Karur Junction to Erode Junction, which is eighteen kilometres from the campus." } },
     { "@type": "Question", "name": "Can Karur students commute daily or should they stay in the hostel?", "acceptedAnswer": { "@type": "Answer", "text": "Both options work. JKKN Dental provides separate hostels for boys and girls with mess facility, and many Karur learners stay on campus and travel home on weekends via bus or the Karur Junction to Erode Junction train line. Daily commute is possible but a hostel stay is more comfortable for the BDS workload." } },
     { "@type": "Question", "name": "What is the NEET cut-off for BDS at JKKN Dental?", "acceptedAnswer": { "@type": "Answer", "text": "The NEET cut-off for BDS admission at JKKN Dental College & Hospital varies each year based on counselling rounds. Contact the admission office at plus ninety-one nine three four five eight five five zero zero one for the latest cut-off information and seat availability for the current admission cycle." } },
@@ -77,7 +77,7 @@ const orgSchema = {
   },
   "telephone": "+919345855001",
   "email": "info@jkkn.ac.in",
-  "foundingDate": "1952",
+  "foundingDate": "1987",
   "parentOrganization": { "@type": "Organization", "name": "JKKN Institutions", "url": "https://jkkn.ac.in/" },
   "hasCredential": [
     { "@type": "EducationalOccupationalCredential", "credentialCategory": "DCI Approved" },

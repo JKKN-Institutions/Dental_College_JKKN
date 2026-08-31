@@ -182,7 +182,7 @@ export default function ChennaiPage() {
           </h2>
           <div className="snippet-answer voice-answer">
             <p className="text-gray-700 leading-relaxed mb-4" style={{ fontSize: 'clamp(0.95rem, 1vw + 0.4rem, 1.1rem)' }}>
-              Chennai has several dental colleges, but many families look beyond the metro for a residential campus, deep clinical exposure, and focused study. <strong>JKKN Dental College &amp; Hospital</strong> at Komarapalayam, Namakkal — founded in 1952 and affiliated to TN Dr. MGR Medical University, Chennai — offers BDS with 100 government-sanctioned seats and MDS in 5 specialisations, with a 200-chair teaching hospital treating 500+ patients daily drawn from surrounding districts.
+              Chennai has several dental colleges, but many families look beyond the metro for a residential campus, deep clinical exposure, and focused study. <strong>JKKN Dental College &amp; Hospital</strong> at Komarapalayam, Namakkal — founded in 1987 and affiliated to TN Dr. MGR Medical University, Chennai — offers BDS with 100 government-sanctioned seats and MDS in 5 specialisations, with a 200-chair teaching hospital treating 500+ patients daily drawn from surrounding districts.
             </p>
           </div>
           <h3 className="font-bold text-gray-900 mb-3 text-lg">What Chennai Students Get at JKKN</h3>
@@ -230,7 +230,7 @@ export default function ChennaiPage() {
             For many Chennai families, the right dental college is about clinical depth and a focused campus — not the metro address. JKKN&apos;s teaching hospital draws patients from across the Kongu belt, giving learners the case variety that builds confident clinicians.
           </p>
           <p className="text-gray-400 max-w-3xl mx-auto mb-4 text-sm leading-relaxed">
-            Founded in 1952, JKKN Dental College &amp; Hospital brings over 74 years of dental education excellence. Approved by the Dental Council of India (DCI) and affiliated to TN Dr. MGR Medical University, Chennai, the institution operates a 200+ chair teaching hospital treating 500+ patients daily.
+            Founded in 1987, JKKN Dental College &amp; Hospital brings nearly four decades of dental education excellence, backed by the JKKN Institutions legacy since 1952. Approved by the Dental Council of India (DCI) and affiliated to TN Dr. MGR Medical University, Chennai, the institution operates a 200+ chair teaching hospital treating 500+ patients daily.
           </p>
           <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-12" />
           <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 list-none p-0 m-0">
@@ -426,7 +426,7 @@ export default function ChennaiPage() {
             {[
               { label: 'Location', value: 'Natarajapuram, NH-544, Komarapalayam, Namakkal, Tamil Nadu 638183' },
               { label: 'From Chennai', value: '~380 km by road; direct trains to Erode Junction (18 km from campus)' },
-              { label: 'Founded', value: '1952 (74+ years of educational excellence)' },
+              { label: 'Founded', value: '1987 (part of JKKN Institutions, est. 1952)' },
               { label: 'Programmes', value: 'BDS (100 seats) + MDS (5 specialisations)' },
               { label: 'Hospital', value: '200+ dental chairs, 100+ beds, 500+ patients daily' },
               { label: 'Approval', value: 'Dental Council of India (DCI)' },

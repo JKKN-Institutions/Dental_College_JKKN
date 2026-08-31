@@ -11,7 +11,7 @@ export default function NamakkalPage() {
     },
     {
       q: 'Which is the best dental college in Namakkal district?',
-      a: 'JKKN Dental College & Hospital is the leading dental institution in Namakkal district. Located at Komarapalayam on NH-544, it is DCI approved, NAAC accredited, and the oldest dental college in Namakkal district. It is the only institution in the district with a 200-chair teaching hospital, AI-integrated campus, and 70+ years of dental education heritage.',
+      a: 'JKKN Dental College & Hospital is the leading dental institution in Namakkal district. Located at Komarapalayam on NH-544, it is DCI approved, NAAC accredited, and a DCI-approved dental college in Namakkal district. It is the only institution in the district with a 200-chair teaching hospital and an AI-integrated campus, offering dental education since 1987.',
     },
     {
       q: 'How far is JKKN Dental College from Namakkal city?',
@@ -52,7 +52,7 @@ export default function NamakkalPage() {
     { icon: <Stethoscope className="w-6 h-6 text-[#006837]" />, title: 'Real Patient Exposure', desc: '500+ patients treated daily — learners get hands-on clinical exposure from their very first year of BDS' },
     { icon: <Microscope className="w-6 h-6 text-[#006837]" />, title: 'Advanced Learning Labs', desc: 'Advanced dental learning labs, simulation equipment, and India\'s first AI-integrated dental campus designation' },
     { icon: <TrendingUp className="w-6 h-6 text-[#006837]" />, title: 'NEET MDS Results', desc: 'Strong track record in NEET MDS results and higher education placements year after year' },
-    { icon: <Users className="w-6 h-6 text-[#006837]" />, title: '70+ Year Legacy', desc: 'Established 1952 — the oldest dental institution in Namakkal district with 70+ years of continuous dental education' },
+    { icon: <Users className="w-6 h-6 text-[#006837]" />, title: 'Established 1987', desc: 'Part of JKKN Institutions (est. 1952), with continuous dental education in Namakkal district since 1987' },
     { icon: <Bus className="w-6 h-6 text-[#006837]" />, title: 'District Location', desc: 'Located IN Namakkal district at Komarapalayam on NH-544. ~60 km from Namakkal city via Tiruchengode. Hostel available.' },
   ];
 
@@ -100,7 +100,7 @@ export default function NamakkalPage() {
 
   const keyFacts = [
     { label: 'Location', value: 'Komarapalayam, Namakkal District, Tamil Nadu 638183' },
-    { label: 'Established', value: '1952 — oldest dental institution in Namakkal district' },
+    { label: 'Established', value: '1987 — part of JKKN Institutions (est. 1952)' },
     { label: 'Approval', value: 'Dental Council of India (DCI) approved' },
     { label: 'Accreditation', value: 'NAAC accredited' },
     { label: 'Affiliation', value: 'Tamil Nadu Dr. M.G.R. Medical University, Chennai' },
@@ -164,7 +164,7 @@ export default function NamakkalPage() {
 
         {/* Snippet Answer Block — AEO optimized */}
         <p className="snippet-answer text-white/80 max-w-2xl mb-6 leading-relaxed" style={{ fontSize: 'clamp(0.9rem, 1vw + 0.5rem, 1.05rem)', color: 'rgba(255,255,255,0.8)' }}>
-          JKKN Dental College &amp; Hospital is the dental institution of Namakkal district, located at Komarapalayam on National Highway 544 (Salem–Coimbatore Highway). Approved by the Dental Council of India and affiliated to Tamil Nadu Dr. MGR Medical University, it offers BDS (100 seats) and MDS (5 specializations). The 200-chair teaching hospital treats 500+ patients daily. Established in 1952.
+          JKKN Dental College &amp; Hospital is the dental institution of Namakkal district, located at Komarapalayam on National Highway 544 (Salem–Coimbatore Highway). Approved by the Dental Council of India and affiliated to Tamil Nadu Dr. MGR Medical University, it offers BDS (100 seats) and MDS (5 specializations). The 200-chair teaching hospital treats 500+ patients daily. Established in 1987.
         </p>
 
         {/* Voice Answer Block — speakable */}
@@ -218,11 +218,11 @@ export default function NamakkalPage() {
             Is There a Dental College in Namakkal?
           </h2>
           <p className="snippet-answer text-gray-700 text-base leading-relaxed mb-4">
-            Yes. JKKN Dental College &amp; Hospital is the dental institution of Namakkal district, located at Komarapalayam on NH-544 (Salem–Coimbatore Highway). It is DCI approved, NAAC accredited, and affiliated to Tamil Nadu Dr. M.G.R. Medical University, Chennai. Established as part of JKKN Institutions in 1952, it is the oldest dental college in Namakkal district, offering BDS (100 seats) and MDS (5 specializations). The 200-chair teaching hospital treats 500+ patients daily.
+            Yes. JKKN Dental College &amp; Hospital is the dental institution of Namakkal district, located at Komarapalayam on NH-544 (Salem–Coimbatore Highway). It is DCI approved, NAAC accredited, and affiliated to Tamil Nadu Dr. M.G.R. Medical University, Chennai. Established in 1987 as part of JKKN Institutions, it offers BDS (100 seats) and MDS (5 specializations). The 200-chair teaching hospital treats 500+ patients daily.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 mt-2">
             <Link href="/about/" className="text-[#006837] hover:underline text-sm font-medium">
-              Learn about JKKN&apos;s 70+ year history →
+              Learn about JKKN&apos;s history →
             </Link>
             <span className="hidden sm:block text-gray-300">|</span>
             <Link href="/about/approvals-accreditations/" className="text-[#006837] hover:underline text-sm font-medium">
@@ -271,7 +271,7 @@ export default function NamakkalPage() {
           <div className="speakable-summary bg-white rounded-2xl shadow-sm p-6 mb-8 text-sm text-gray-700 leading-relaxed border border-gray-100">
             <p className="font-semibold text-[#006837] mb-2 text-base">About JKKN Dental College &amp; Hospital</p>
             <p>
-              JKKN Dental College &amp; Hospital (full legal name: J.K.K. Nattraja Dental College and Hospital) is a private dental college and teaching hospital established in 1952, located at Natarajapuram, NH-544, Komarapalayam, Namakkal District, Tamil Nadu 638183. The institution is approved by the Dental Council of India (DCI) and affiliated to Tamil Nadu Dr. M.G.R. Medical University, Chennai. JKKN is the oldest dental institution in Namakkal district. The teaching hospital operates 200+ dental chairs and 100+ inpatient beds, treating 500+ outpatients daily. Undergraduate admission (BDS, 100 seats) follows NEET-UG counselling. Postgraduate admission (MDS, 5 specializations) follows NEET-MDS counselling. Recognized as India&apos;s first AI-integrated dental campus.
+              JKKN Dental College &amp; Hospital (full legal name: J.K.K. Nattraja Dental College and Hospital) is a private dental college and teaching hospital established in 1987, located at Natarajapuram, NH-544, Komarapalayam, Namakkal District, Tamil Nadu 638183. The institution is approved by the Dental Council of India (DCI) and affiliated to Tamil Nadu Dr. M.G.R. Medical University, Chennai. The teaching hospital operates 200+ dental chairs and 100+ inpatient beds, treating 500+ outpatients daily. Undergraduate admission (BDS, 100 seats) follows NEET-UG counselling. Postgraduate admission (MDS, 5 specializations) follows NEET-MDS counselling. Recognized as India&apos;s first AI-integrated dental campus.
             </p>
           </div>
 
@@ -296,10 +296,10 @@ export default function NamakkalPage() {
             JKKN Dental College: The Dental Institution of Namakkal District
           </h2>
           <p className="text-gray-600 max-w-3xl mx-auto mb-6 leading-relaxed" style={{ fontSize: 'clamp(0.875rem, 1vw + 0.4rem, 1.05rem)' }}>
-            JKKN Dental College &amp; Hospital is located IN Namakkal district at Komarapalayam on NH-544 — it is not a college near Namakkal, it is the dental college OF Namakkal district. Established as part of JKKN Institutions in 1952, it is the oldest dental institution in the district, predating every other dental college in Namakkal district by more than 50 years.
+            JKKN Dental College &amp; Hospital is located IN Namakkal district at Komarapalayam on NH-544 — it is not a college near Namakkal, it is the dental college OF Namakkal district. Established in 1987 as part of JKKN Institutions (a trust legacy since 1952), it has served Namakkal district for nearly four decades.
           </p>
           <p className="text-gray-600 max-w-3xl mx-auto mb-6 leading-relaxed" style={{ fontSize: 'clamp(0.875rem, 1vw + 0.4rem, 1rem)' }}>
-            Namakkal district currently has three DCI-approved dental colleges. JKKN Dental College &amp; Hospital, established in 1952, is the oldest. Among these, JKKN is the only institution with a 200-chair teaching hospital, AI-integrated campus, and more than seven decades of dental education in the district. The teaching hospital treats 500+ outpatients daily — learners gain real clinical experience from their very first year of the BDS programme.
+            Namakkal district currently has three DCI-approved dental colleges. JKKN Dental College &amp; Hospital was established in 1987. Among these, JKKN is the only institution with a 200-chair teaching hospital and an AI-integrated campus. The teaching hospital treats 500+ outpatients daily — learners gain real clinical experience from their very first year of the BDS programme.
           </p>
           <p className="text-gray-600 max-w-3xl mx-auto mb-8 leading-relaxed text-sm">
             <strong className="text-gray-800">E-E-A-T Note:</strong> JKKN Dental College &amp; Hospital is DCI approved (Dental Council of India), NAAC accredited (National Assessment and Accreditation Council), and affiliated to Tamil Nadu Dr. M.G.R. Medical University, Chennai. All programmes are regulated by Tamil Nadu DME (Directorate of Medical Education). Clinical training is conducted at the on-campus 200-chair dental hospital under qualified senior learners with 50+ publications.

@@ -238,7 +238,7 @@ export default function TiruppurPage() {
             Tiruppur learners no longer need to travel all the way to Coimbatore or Chennai for quality professional education. JKKN offers an excellent alternative with comfortable hostel facilities, strong placements, and a peaceful campus environment ideal for focused learning.
           </p>
           <p className="text-gray-400 max-w-3xl mx-auto mb-4 text-sm leading-relaxed">
-            Founded in 1952, JKKN Dental College &amp; Hospital brings over 74 years of dental education excellence. Approved by the Dental Council of India (DCI) and affiliated to TN Dr. MGR Medical University, Chennai, the institution operates a 200+ chair teaching hospital treating 500+ patients daily from across western Tamil Nadu.
+            Founded in 1987, JKKN Dental College &amp; Hospital brings nearly four decades of dental education excellence, backed by the JKKN Institutions legacy since 1952. Approved by the Dental Council of India (DCI) and affiliated to TN Dr. MGR Medical University, Chennai, the institution operates a 200+ chair teaching hospital treating 500+ patients daily from across western Tamil Nadu.
           </p>
           <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-12" />
           <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 list-none p-0 m-0">
@@ -469,7 +469,7 @@ export default function TiruppurPage() {
             {[
               { label: 'Location', value: 'Natarajapuram, NH-544, Komarapalayam, Namakkal, Tamil Nadu 638183' },
               { label: 'Distance from Tiruppur', value: 'Approximately 67 km via NH-544 — 1.5 hours by road' },
-              { label: 'Founded', value: '1952 (74+ years of educational excellence)' },
+              { label: 'Founded', value: '1987 (part of JKKN Institutions, est. 1952)' },
               { label: 'Programmes', value: 'BDS (100 seats) + MDS (5 specialisations)' },
               { label: 'Hospital', value: '200+ dental chairs, 100+ beds, 500+ patients daily' },
               { label: 'Approval', value: 'Dental Council of India (DCI)' },
