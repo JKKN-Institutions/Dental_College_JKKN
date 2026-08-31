@@ -454,6 +454,31 @@ Our learning framework emphasizes clinical excellence, research, and community s
         { name: "Nattraja Vidhyalaya", url: "https://nv.jkkn.ac.in/" },
       ],
     },
+    // Site-wide links to the eleven city pages. They existed with no route into them:
+    // measured 2026-08-31, the homepage carried ZERO links to /namakkal/, /erode/, /salem/
+    // or /coimbatore/, and no component anywhere rendered a city list. Google had nothing to
+    // follow, which is why /namakkal/ earned SIX GSC impressions in 90 days while the
+    // HOMEPAGE answered "namakkal dental college" (60 impressions, position 2.27) instead.
+    //
+    // Anchor text is each page's own live H1, not a slogan, so the link says what the page
+    // says. These sit in the FOOTER rather than on the homepage deliberately: a footer link
+    // is site-wide, so all 260 URLs point at the city pages instead of only one.
+    nearbyCities: {
+      title: "DENTAL COLLEGE NEAR YOU",
+      links: [
+        { name: "Namakkal Dental College", url: "/namakkal/" },
+        { name: "Dental College in Erode", url: "/erode/" },
+        { name: "Dental College in Salem", url: "/salem/" },
+        { name: "Dental College in Coimbatore", url: "/coimbatore/" },
+        { name: "Dental College in Trichy", url: "/trichy/" },
+        { name: "Dental College in Karur", url: "/karur/" },
+        { name: "Dental College in Hosur", url: "/hosur/" },
+        { name: "Dental College in Madurai", url: "/madurai/" },
+        { name: "Dental College in Chennai", url: "/chennai/" },
+        { name: "Dental College in Tiruppur", url: "/tiruppur/" },
+        { name: "Dental College for Kerala Students", url: "/kerala/" },
+      ],
+    },
     contact: {
       title: "CONTACT US",
       phone: "+91 93458 55001",

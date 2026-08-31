@@ -109,6 +109,28 @@ export default function Footer() {
           </div>
         </div>
 
+        {/* Dental College Near You — the city pages.
+            A ROW under the grid, not a fourth column, so the three-column layout above is
+            untouched on every page. See data/content.ts nearbyCities for why these links had
+            to exist at all: the city pages had no inbound route anywhere on the site. */}
+        <nav aria-label="Dental college by city" className="mt-10 pt-6 border-t border-white/30">
+          <h3 className="text-base sm:text-lg font-bold mb-3 uppercase">
+            {siteContent.footer.nearbyCities.title}
+          </h3>
+          <ul className="flex flex-wrap gap-x-5 gap-y-2 text-sm sm:text-base">
+            {siteContent.footer.nearbyCities.links.map((link, index) => (
+              <li key={index}>
+                <Link
+                  href={link.url}
+                  className="text-white hover:text-gray-300 transition-colors block py-1"
+                >
+                  {link.name}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
+
         {/* Copyright */}
         <div className="mt-10 pt-6 border-t border-white/30 text-center pb-20 lg:pb-0">
           <p className="text-sm">&copy; 2026 JKKN Dental College & Hospital. All rights reserved.</p>

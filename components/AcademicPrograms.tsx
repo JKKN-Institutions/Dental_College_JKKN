@@ -113,11 +113,16 @@ export default function AcademicPrograms() {
                   <div className="text-2xl sm:text-3xl font-bold text-[#006837]">18+ Seats</div>
                   <div className="text-xs sm:text-sm text-gray-500 uppercase">PG Intake</div>
                 </div>
+                {/* Direct to the rendering URL, not /mds — that path is a 301 stub and made
+                    the site's own primary MDS CTA spend a redirect hop. A-01 (2075cbb) made
+                    exactly this correction on the BDS card above; this is its MDS twin, which
+                    that commit missed. Anchor text carries the phrase the page should own
+                    instead of "Learn More", which describes nothing to a crawler. */}
                 <a
-                  href="/mds"
+                  href="/academics/details-of-academic-programs/mds/"
                   className="block w-full bg-[#7cb983] hover:bg-[#6ba872] active:bg-[#5a9761] text-white font-bold py-3 sm:py-3.5 px-6 sm:px-8 rounded-full transition-all duration-300 text-center text-sm sm:text-base min-h-[44px] flex items-center justify-center touch-manipulation transform hover:scale-105 active:scale-95"
                 >
-                  Learn More →
+                  MDS Admission 2026-27 — Fees &amp; Seats →
                 </a>
                 <a href="/academics/details-of-academic-programs/mds/" className="block text-center text-[#006837] hover:underline text-xs sm:text-sm mt-2">
                   Explore MDS specializations →
