@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import FaqAccordion from '@/components/FaqAccordion';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import { BookOpen, Target, Calendar, Trophy, Handshake, Plus, Gem, MessageCircle, LucideIcon } from 'lucide-react';
 import { generateBreadcrumbSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
@@ -319,6 +320,7 @@ export default function Academics() {
         </div>
       </section>
 
+      <FaqAccordion schema={faqSchema} />
       <Footer />
       <FloatingWhatsApp />
     </main>

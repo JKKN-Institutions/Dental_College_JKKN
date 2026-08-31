@@ -71,7 +71,7 @@ export default function MDSOrthodontics() {
       },
       {
         "@type": "Question",
-        "name": "Is clear aligner training included in the curriculum?",
+        "name": "Is clear aligner training included in the learning framework?",
         "acceptedAnswer": {
           "@type": "Answer",
           "text": "Yes, our curriculum includes comprehensive training in clear aligner therapy including Invisalign and JKKN Align Studio. Learners gain hands-on experience in digital treatment planning, aligner case selection, and managing aligner patients from start to finish."

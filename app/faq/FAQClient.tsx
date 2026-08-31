@@ -7,44 +7,32 @@ import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import { faqCategories } from './faqData';
 
 function CategoryAccordion({ category }: { category: (typeof faqCategories)[0] }) {
-  const [openIndex, setOpenIndex] = useState<number | null>(null);
-
   return (
     <div className="space-y-3">
-      {category.faqs.map((faq, index) => (
-        <div
-          key={index}
-          className="bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-md transition-shadow duration-300"
+      {category.faqs.map((faq) => (
+        <details
+          key={faq.question}
+          className="group bg-white border border-gray-200 rounded-xl overflow-hidden open:border-[#7cb983] hover:shadow-md transition-shadow duration-300"
         >
-          <button
-            onClick={() => setOpenIndex(openIndex === index ? null : index)}
-            className="w-full flex items-center justify-between p-5 md:p-6 text-left hover:bg-gray-50 active:bg-gray-100 transition-colors duration-200 min-h-[56px] touch-manipulation"
-          >
-            <span className="text-sm sm:text-base md:text-lg font-bold text-[#006837] pr-4 leading-snug">
+          <summary className="w-full flex items-center justify-between gap-4 p-5 md:p-6 text-left cursor-pointer list-none min-h-[56px] hover:bg-gray-50 transition-colors duration-200 [&::-webkit-details-marker]:hidden">
+            <h3 className="text-sm sm:text-base md:text-lg font-bold text-[#006837] leading-snug">
               {faq.question}
-            </span>
-            <span className="flex-shrink-0">
-              {openIndex === index ? (
-                <svg className="w-5 h-5 sm:w-6 sm:h-6 text-[#7cb983]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 12H4" />
-                </svg>
-              ) : (
-                <svg className="w-5 h-5 sm:w-6 sm:h-6 text-[#7cb983]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
-                </svg>
-              )}
-            </span>
-          </button>
-          <div
-            className={`overflow-hidden transition-all duration-300 ${
-              openIndex === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
-            }`}
-          >
-            <div className="px-5 md:px-6 pb-5 md:pb-6">
-              <p className="text-gray-600 leading-relaxed text-sm sm:text-base">{faq.answer}</p>
-            </div>
+            </h3>
+            <svg
+              className="w-5 h-5 sm:w-6 sm:h-6 text-[#7cb983] flex-shrink-0 transition-transform duration-300 group-open:rotate-180"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth={2}
+              aria-hidden="true"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </summary>
+          <div className="px-5 md:px-6 pb-5 md:pb-6 pt-2 border-t border-[#7cb983]/20">
+            <p className="text-gray-600 leading-relaxed text-sm sm:text-base">{faq.answer}</p>
           </div>
-        </div>
+        </details>
       ))}
     </div>
   );
@@ -52,7 +40,6 @@ function CategoryAccordion({ category }: { category: (typeof faqCategories)[0] }
 
 export default function FAQClient() {
   const [activeCategory, setActiveCategory] = useState('about');
-  const currentCategory = faqCategories.find((c) => c.id === activeCategory)!;
 
   return (
     <main className="overflow-x-hidden w-full">
@@ -109,12 +96,16 @@ export default function FAQClient() {
             ))}
           </div>
 
-          {/* Active Category FAQs */}
+          {/* Every category is rendered; the tab only chooses which one is SHOWN.
+              GL6-178: rendering just the active one kept 43 of 54 declared questions out
+              of the served HTML while the FAQPage schema still promised them. */}
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-xl md:text-2xl font-bold text-[#006837] mb-6">
-              {currentCategory.label}
-            </h2>
-            <CategoryAccordion key={activeCategory} category={currentCategory} />
+            {faqCategories.map((cat) => (
+              <div key={cat.id} className={cat.id === activeCategory ? 'block' : 'hidden'}>
+                <h2 className="text-xl md:text-2xl font-bold text-[#006837] mb-6">{cat.label}</h2>
+                <CategoryAccordion category={cat} />
+              </div>
+            ))}
           </div>
 
           {/* CTA */}

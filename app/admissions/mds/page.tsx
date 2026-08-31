@@ -4,6 +4,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import StructuredData from '@/components/StructuredData';
+import { faqPageSchema } from '@/lib/faq';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 import { generateBreadcrumbSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
 import { collegeFacts } from '@/data/collegeFacts';
@@ -134,92 +135,6 @@ const mdsCourseSchema = {
   },
 };
 
-const mdsFaqSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: [
-    {
-      '@type': 'Question',
-      name: 'What is the eligibility for MDS admission at JKKN Dental College?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Candidates must hold a BDS degree from a DCI-recognised dental college, have completed the 1-year compulsory rotating internship, possess a valid NEET-MDS 2026 qualifying score, and be registered with the State Dental Council.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'How many MDS seats and specializations are available at JKKN?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'JKKN Dental College offers 18 MDS seats across 5 specializations: Periodontics (2 seats), Orthodontics & Dentofacial Orthopedics (5 seats), Prosthodontics Crown & Bridge (3 seats), Conservative Dentistry & Endodontics (5 seats), and Oral Medicine & Radiology (3 seats).',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'What is the MDS course fee at JKKN Dental College?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'MDS Management Quota fee ranges from ₹8,00,000 to ₹15,00,000 per year depending on specialization. Government Quota fee is as per Tamil Nadu state norms. Contact admissions at +91 93458 55001 for the exact specialization-wise fee.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'What is the MDS admission process at JKKN?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'MDS admission is NEET-MDS based. Qualify NEET-MDS 2026 → Apply online → Participate in Tamil Nadu MCC/state counselling (Govt Quota) or apply directly (Management Quota) → Document verification → Fee payment and enrolment.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'What is the duration of the MDS course?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'MDS at JKKN is a 3-year full-time postgraduate programme including didactic teaching, clinical training, dissertation/thesis, and seminars across the chosen specialization.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Which MDS specializations does JKKN offer?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'JKKN offers 5 DCI-approved MDS specializations: Periodontics, Orthodontics & Dentofacial Orthopedics, Prosthodontics Crown & Bridge, Conservative Dentistry & Endodontics, and Oral Medicine & Radiology.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'What documents are required for MDS admission?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Required documents: NEET-MDS 2026 scorecard, BDS degree certificate and all year marksheets, internship completion certificate, State Dental Council registration certificate, 10th and 12th marksheets, transfer certificate, conduct certificate, community certificate, Aadhaar, migration certificate (if applicable), and passport-size photographs.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Is hostel accommodation available for MDS learners?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Yes. JKKN provides separate boys and girls hostels with 24/7 security, Wi-Fi, mess facilities, and learning commons for MDS postgraduates.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'What is the stipend for MDS learners at JKKN?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'MDS postgraduates receive a stipend as per Tamil Nadu Dr. MGR Medical University and Tamil Nadu Government norms. The stipend increases each year of the programme. Contact admissions for the latest 2026-27 stipend structure.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'What are the career prospects after MDS from JKKN?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'MDS graduates can pursue specialist private practice, senior positions in corporate dental hospitals, faculty roles in dental colleges, research and PhD opportunities, government dental specialist roles, armed forces dental corps, and international practice (UK, UAE, Singapore, Australia).',
-      },
-    },
-  ],
-};
 
 const mdsHowToSchema = {
   '@context': 'https://schema.org',
@@ -524,6 +439,11 @@ const mdsFaqs = [
     a: 'Specialist private practice, dental college faculty, corporate dental chains, government specialist roles, research & PhD, armed forces dental corps, and international practice (UK, UAE, Singapore, Australia).',
   },
 ];
+
+/* GL6-178: the FAQ lived twice on this page - as JSON-LD and as mdsFaqs - and the two
+   copies had drifted apart, so 7 to 9 declared questions appeared nowhere on the page.
+   The schema is now GENERATED from the array the page renders, so they cannot differ. */
+const mdsFaqSchema = faqPageSchema(mdsFaqs);
 
 /* ------------------------------------------------------------------ */
 /*  PAGE COMPONENT                                                    */

@@ -1,5 +1,6 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import FaqAccordion from '@/components/FaqAccordion';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import StructuredData from '@/components/StructuredData';
 import { generatePageMetadata, generateBreadcrumbSchema, generateContactPageSchema, generateWebPageSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
@@ -372,6 +373,7 @@ export default function Contact() {
           </div>
       </section>
 
+      <FaqAccordion schema={faqSchema} />
       <Footer />
       <FloatingWhatsApp />
     </main>

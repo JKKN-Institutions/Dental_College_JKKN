@@ -1,5 +1,6 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import FaqAccordion from '@/components/FaqAccordion';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import Link from 'next/link';
 import { Metadata } from 'next';
@@ -51,7 +52,7 @@ const faqSchema = generateFAQSchema([
   },
   {
     question: 'How does MDS admission work at JKKN Dental College?',
-    answer: 'MDS admission requires a BDS degree and NEET-MDS qualification. Seats are allotted through Tamil Nadu state counselling. JKKN offers 9 MDS specializations.',
+    answer: 'MDS admission requires a BDS degree and NEET-MDS qualification. Seats are allotted through Tamil Nadu state counselling. JKKN offers 18 MDS seats across 5 specializations: Periodontics, Orthodontics & Dentofacial Orthopedics, Prosthodontics Crown & Bridge, Conservative Dentistry & Endodontics, and Oral Medicine & Radiology.',
   },
 ]);
 const speakableSchema = generateSpeakableWebPageSchema({
@@ -449,6 +450,7 @@ export default function AdmissionProcess() {
         </div>
       </section>
 
+      <FaqAccordion schema={faqSchema} />
       <Footer />
       <FloatingWhatsApp />
     </main>

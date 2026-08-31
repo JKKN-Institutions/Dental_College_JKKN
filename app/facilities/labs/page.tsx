@@ -1,5 +1,6 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import FaqAccordion from '@/components/FaqAccordion';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import Image from 'next/image';
 import { Metadata } from 'next';
@@ -209,6 +210,7 @@ export default function Labs() {
         </div>
       </section>
 
+      <FaqAccordion schema={faqSchema} />
       <Footer />
       <FloatingWhatsApp />
     </main>

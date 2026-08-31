@@ -1,5 +1,6 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import FaqAccordion from '@/components/FaqAccordion';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import StructuredData from '@/components/StructuredData';
 import {
@@ -203,6 +204,7 @@ export default function VisionAndMission() {
         </div>
       </section>
 
+      <FaqAccordion schema={faqSchema} />
       <Footer />
       <FloatingWhatsApp />
     </main>

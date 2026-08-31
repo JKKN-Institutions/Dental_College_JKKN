@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import FaqAccordion from '@/components/FaqAccordion';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import { generateBreadcrumbSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
 import StructuredData from '@/components/StructuredData';
@@ -187,6 +188,7 @@ export default function MentorMenteeProgram() {
         </div>
       </section>
 
+      <FaqAccordion schema={faqSchema} />
       <Footer />
       <FloatingWhatsApp />
     </main>

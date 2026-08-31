@@ -4,6 +4,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import StructuredData from '@/components/StructuredData';
+import { faqPageSchema } from '@/lib/faq';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 import { generateBreadcrumbSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
 import { collegeFacts } from '@/data/collegeFacts';
@@ -138,92 +139,6 @@ const bdsCourseSchema = {
   },
 };
 
-const bdsFaqSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: [
-    {
-      '@type': 'Question',
-      name: 'What is the eligibility for BDS admission at JKKN Dental College?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Candidates must have passed 10+2 with Physics, Chemistry, and Biology with minimum 50% aggregate marks (40% for SC/ST/OBC), a valid NEET-UG 2026 qualifying score, and must be at least 17 years old as on 31 December 2026.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'How many BDS seats are available at JKKN Dental College?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'JKKN Dental College & Hospital offers 100 BDS seats per year, approved by the Dental Council of India (DCI) and affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'What is the BDS course fee at JKKN Dental College?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'BDS Management Quota tuition fee is ₹4,50,000/year (Dayscholar with Instruments) or ₹5,50,000/year (with Hostel and Instruments). Government Quota fee is as per Tamil Nadu state norms. Installment payment options and scholarships are available.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'What is the BDS admission process at JKKN Dental College?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'BDS admission is NEET-UG based. Step 1: Qualify NEET-UG 2026. Step 2: Apply online at www.jkkn.ai/apply/jkkn-admission-2026. Step 3: Participate in TN state counselling (Govt Quota) or apply directly (Management Quota). Step 4: Complete document verification at the campus. Step 5: Pay fees and confirm admission.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'What documents are required for BDS admission?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Required documents: NEET-UG 2026 scorecard, 10th and 12th marksheets and certificates, transfer certificate, conduct certificate, community certificate (if applicable), nativity certificate, Aadhaar card, passport-sized photographs, and migration certificate (for out-of-state candidates).',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'What is the BDS course duration at JKKN?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'BDS at JKKN Dental College is a 5-year program — 4 years of academic study covering pre-clinical, para-clinical, and clinical subjects, followed by 1 year of compulsory rotating internship (CRRI) across 9 specialized dental departments.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Are scholarships available for BDS learners?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Yes. JKKN offers merit-based scholarships, sports quota scholarships, single parent scholarships, and government scholarships including PMSS (₹2.5L–6L/year for SC/SCA/ST/BC-CC), First Graduate (₹40K/year for BC/MBC/DNC/BCM), Community Scholarship (₹5K–10K/year), and Naan Mudhalvan (₹1,000/month for Tamil medium students).',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'What is the NEET cutoff for BDS at JKKN Dental College?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'NEET cutoff scores vary each year based on state counselling results and category (General, OBC, SC, ST). For the latest 2026-27 cutoff information and personalised guidance, contact the JKKN admissions team at +91 93458 55001.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Is hostel accommodation available for BDS learners?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Yes. JKKN provides separate boys and girls hostels with 24/7 security, Wi-Fi, mess facilities, and learning commons. Hostel charges are included in the ₹5,50,000/year Management Quota package or can be paid separately.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'What career options are available after BDS from JKKN?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'BDS graduates can pursue private dental practice, government dental services, MDS specialisation via NEET-MDS, corporate dental chains (Clove, Apollo, Sabka), armed forces dental corps, research and academics, dental product industry, and international opportunities in UK (NHS), UAE, Singapore, and Australia. JKKN offers 92% placement assistance (2024-25 batch).',
-      },
-    },
-  ],
-};
 
 const bdsHowToSchema = {
   '@context': 'https://schema.org',
@@ -487,6 +402,10 @@ const bdsFaqs = [
     a: 'Yes — merit, sports, single parent, and government scholarships: PMSS (₹2.5L–6L/year for SC/SCA/ST/BC-CC), First Graduate (₹40K/year), Community Scholarship (₹5K–10K/year), Naan Mudhalvan (₹1,000/month for Tamil medium students).',
   },
   {
+    q: 'What is the NEET cutoff for BDS at JKKN Dental College?',
+    a: 'NEET cutoff scores vary each year based on state counselling results and category (General, OBC, SC, ST). For the latest 2026-27 cutoff information and personalised guidance, contact the JKKN admissions team at +91 93458 55001.',
+  },
+  {
     q: 'Is hostel accommodation available for BDS learners?',
     a: 'Yes. JKKN provides separate boys and girls hostels with 24/7 security, Wi-Fi, mess facilities, and learning commons. Hostel charges are included in the ₹5,50,000/year Management Quota package.',
   },
@@ -495,6 +414,11 @@ const bdsFaqs = [
     a: 'BDS graduates can pursue private practice, government services, MDS specialisation, corporate dental chains, armed forces dental corps, international practice (UK NHS, UAE, Singapore, Australia), research, academics, and dental industry roles.',
   },
 ];
+
+/* GL6-178: the FAQ lived twice on this page - as JSON-LD and as bdsFaqs - and the two
+   copies had drifted apart, so 7 to 9 declared questions appeared nowhere on the page.
+   The schema is now GENERATED from the array the page renders, so they cannot differ. */
+const bdsFaqSchema = faqPageSchema(bdsFaqs);
 
 /* ------------------------------------------------------------------ */
 /*  PAGE COMPONENT                                                    */

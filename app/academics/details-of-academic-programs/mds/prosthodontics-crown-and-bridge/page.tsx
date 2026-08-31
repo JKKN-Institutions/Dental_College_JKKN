@@ -55,7 +55,7 @@ export default function MDSProsthodontics() {
       },
       {
         "@type": "Question",
-        "name": "Is implant training included in the curriculum?",
+        "name": "Is implant training included in the learning framework?",
         "acceptedAnswer": {
           "@type": "Answer",
           "text": "Yes, comprehensive implant training is an integral part of our MDS Prosthodontics program. Learners receive hands-on training in implant planning, placement, and prosthetic rehabilitation with exposure to the latest implant systems and guided surgery techniques."

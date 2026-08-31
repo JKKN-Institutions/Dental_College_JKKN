@@ -8,11 +8,79 @@ import StructuredData from '@/components/StructuredData';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 import Breadcrumb from '@/components/Breadcrumb';
 import { generateSpeakableWebPageSchema } from '@/lib/metadata';
+import { faqPageSchema } from '@/lib/faq';
 import { useState } from 'react';
 import DentalEnquiryForm from "@/components/lead/DentalEnquiryForm";
 import { DEFAULT_PROGRAMME_BY_PAGE } from "@/lib/dental-programmes";
 
 export default function BDSProgram() {
+
+  /* GL6-178: this page held the FAQ twice - a hand-written faqSchema and this same list
+     inline in the JSX - and 13 of the schema answers had drifted from the text the page
+     shows. One array now feeds both, so they cannot disagree again. */
+  const bdsPageFaqs = [
+              {
+                q: 'What is the duration of the BDS course?',
+                a: 'The Bachelor of Dental Surgery (BDS) program at JKKN Dental College is a 5-year course. This includes 4 years of academic study covering pre-clinical, para-clinical, and clinical subjects, followed by 1 year of compulsory rotating internship where learners gain hands-on clinical experience across all 9 departments.'
+              },
+              {
+                q: 'What is the eligibility criteria for BDS admission?',
+                a: 'Candidates must have completed 10+2 with Physics, Chemistry, and Biology as mandatory subjects with a minimum of 50% aggregate marks (40% for reserved categories). Additionally, candidates must qualify NEET-UG and be at least 17 years old as on 31st December of the admission year. Indian nationals and NRI/Foreign nationals are eligible as per DCI guidelines.'
+              },
+              {
+                q: 'Is the BDS program at JKKN Dental College & Hospital DCI approved?',
+                a: 'Yes, the BDS program at JKKN Dental College is fully approved by the Dental Council of India (DCI). The college is recognized by the Government of Tamil Nadu and affiliated with the Tamil Nadu Dr. M.G.R. Medical University, Chennai. JKKN is also NAAC Accredited, ensuring quality standards in dental education.'
+              },
+              {
+                q: 'What are the career opportunities after completing BDS?',
+                a: 'BDS graduates from JKKN have diverse career paths including private dental practice, government dental hospitals, corporate dental chains like Clove Dental and Dental Planet, MDS specialization (5 options available at JKKN), research and academics, armed forces dental corps, dental product industry, and public health dentistry. JKKN offers 92% placement assistance (2024-25 batch) with domestic and international opportunities.'
+              },
+              {
+                q: 'What facilities are available for BDS learners?',
+                a: 'JKKN offers 200+ dental chairs, 100+ hospital beds, advanced simulation learning labs, digital radiology (OPG, CBCT), 9 specialized departments, central learning commons with digital resources, separate hostels, sports facilities, and a Wi-Fi enabled AI-integrated campus on NH-544.'
+              },
+              {
+                q: 'Can I pursue MDS after BDS from this college?',
+                a: 'Yes, JKKN offers MDS in 5 specializations: Periodontics (2 seats), Orthodontics (5 seats), Prosthodontics (3 seats), Conservative Dentistry & Endodontics (5 seats), and Oral Medicine & Radiology (3 seats) — totaling 18 MDS seats. After completing BDS, graduates can pursue MDS by qualifying NEET-MDS.'
+              },
+              {
+                q: 'What is the BDS course fee at JKKN Dental College?',
+                a: 'BDS fees at JKKN are regulated by the Tamil Nadu Government Fee Fixation Committee. Both Government Quota and Management Quota fees are determined as per state norms. For the latest 2026-27 fee structure, contact the admissions office at +91 93458 55001 or visit www.jkkn.ai/apply/jkkn-admission-2026. Scholarships are available for meritorious and economically weaker learners.'
+              },
+              {
+                q: 'What is the NEET cutoff for BDS admission at JKKN?',
+                a: 'NEET cutoff scores for BDS admission vary each year based on Tamil Nadu state counselling results and differ by category (General, OBC, SC, ST). Contact the admissions team at +91 93458 55001 for the latest cutoff information and admission guidance for the 2026-27 academic year.'
+              },
+              {
+                q: 'Is JKKN Dental College NAAC accredited?',
+                a: 'Yes, JKKN Dental College & Hospital is NAAC Accredited with A Grade. The institution is DCI approved, Government of Tamil Nadu recognized, and affiliated with TN Dr. MGR Medical University. Established in 1987 under J.K.K. Nattraja Educational Institutions (since 1952), it carries a legacy of 74+ years.'
+              },
+              {
+                q: 'What is the placement record of JKKN Dental College?',
+                a: 'JKKN maintains a 92% placement assistance rate (2024-25 batch). Top domestic recruiters include Apollo Hospitals, Sun Pharma, Clove Dental, Dental Planet, Manipal Hospitals, and Dr. Agarwal\'s Healthcare. International placements are available through NHS UK, Cleveland Clinic Abu Dhabi, and dental practices in Singapore and UAE. The alumni network spans 3,000+ graduates worldwide.'
+              },
+              {
+                q: 'Where is JKKN Dental College located?',
+                a: 'JKKN Dental College is at Natarajapuram, NH-544, Komarapalayam, Namakkal District, Tamil Nadu 638183. Distances: Tiruchengode (~15 km), Erode (~22 km, 35 min), Salem (~58 km, 1 hr), Namakkal town (~66 km), Tiruppur (~67 km), Coimbatore (~105 km, 2 hrs). It is approved by the Dental Council of India and NAAC accredited with an A Grade.'
+              },
+              {
+                q: 'What hostel facilities are available for BDS learners?',
+                a: 'JKKN provides separate boys and girls hostels with 24/7 security, Wi-Fi, hygienic mess (veg and non-veg), laundry services, hot water, indoor recreation, and proximity to academic buildings. The campus location on NH-544 ensures convenient access to Erode and Salem.'
+              },
+              {
+                q: 'How many dental chairs does JKKN Dental Hospital have?',
+                a: 'JKKN Dental Hospital has 200+ dental chairs and 100+ hospital beds, making it one of the largest dental facilities in the Namakkal-Erode-Salem region. The hospital serves 500+ patients daily across 9 departments, providing extensive clinical exposure to BDS learners from Year 1.'
+              },
+              {
+                q: 'Can international learners apply for BDS at JKKN?',
+                a: 'Yes, international learners and NRI candidates can apply as per DCI guidelines and TN Dr. MGR Medical University regulations. NRI/Foreign national seats are available. Contact the international admissions desk at +91 93458 55001 or email dental@jkkn.ac.in for requirements.'
+              },
+              {
+                q: 'What MDS specializations are available after BDS at JKKN?',
+                a: 'JKKN offers MDS in 5 specializations: (1) Periodontics — 2 seats, (2) Orthodontics and Dentofacial Orthopedics — 5 seats, (3) Prosthodontics Crown and Bridge — 3 seats, (4) Conservative Dentistry and Endodontics — 5 seats, and (5) Oral Medicine and Radiology — 3 seats. This provides a seamless UG to PG pathway for BDS graduates.'
+              },
+            ];
+  const faqSchema = faqPageSchema(bdsPageFaqs);
   const [activeYear, setActiveYear] = useState('first');
 
   // Enhanced Course Schema for BDS
@@ -71,132 +139,6 @@ export default function BDSProgram() {
   };
 
   // Expanded FAQ Schema — 15 Questions
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "What is the duration of the BDS course?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "The Bachelor of Dental Surgery (BDS) program at JKKN Dental College is a 5-year course. This includes 4 years of academic study covering pre-clinical, para-clinical, and clinical subjects, followed by 1 year of compulsory rotating internship where students gain hands-on clinical experience across all 9 departments."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What is the eligibility criteria for BDS admission?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Candidates must have completed 10+2 with Physics, Chemistry, and Biology as mandatory subjects with a minimum of 50% aggregate marks (40% for reserved categories). Additionally, candidates must qualify NEET-UG and be at least 17 years old as on 31st December of the admission year. Indian nationals and NRI/Foreign nationals are eligible as per DCI guidelines."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Is the BDS program at JKKN Dental College & Hospital DCI approved?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes, the BDS program at JKKN Dental College is fully approved by the Dental Council of India (DCI). The college is recognized by the Government of Tamil Nadu and affiliated with the Tamil Nadu Dr. M.G.R. Medical University, Chennai. JKKN is also NAAC Accredited, ensuring quality standards in dental education."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What are the career opportunities after completing BDS?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "BDS graduates from JKKN have diverse career paths including private dental practice, government dental hospitals, corporate dental chains like Clove Dental and Dental Planet, MDS specialization, research and academics, armed forces dental corps, dental product industry, and public health dentistry. JKKN offers 92% placement assistance (2024-25 batch) with recruiters like Apollo Hospitals, Manipal Hospitals, and international placements in NHS UK, Cleveland Clinic Abu Dhabi, and Singapore."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What facilities are available for BDS students?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "JKKN Dental College offers 200+ dental chairs, 100+ hospital beds, advanced simulation laboratories with phantom head units, digital radiology with OPG and CBCT, 9 specialized departments, central library with digital resources, separate boys and girls hostels with 24/7 security and Wi-Fi, sports facilities, and a Wi-Fi enabled campus on NH-544."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Can I pursue MDS after BDS from this college?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes, JKKN Dental College offers MDS programs in 5 specializations: Periodontics (2 seats), Orthodontics (5 seats), Prosthodontics (3 seats), Conservative Dentistry & Endodontics (5 seats), and Oral Medicine & Radiology (3 seats) — totaling 18 MDS seats. After completing BDS, graduates can pursue MDS by qualifying NEET-MDS examination."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What is the BDS course fee at JKKN Dental College?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "BDS fees at JKKN Dental College are regulated by the Tamil Nadu government. Government Quota and Management Quota fees are determined as per state norms. For the latest 2026-27 fee structure, contact the admissions office at +91 93458 55001 or visit www.jkkn.ai/apply/jkkn-admission-2026. Scholarships are available for meritorious and economically weaker students."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What is the NEET cutoff for BDS admission at JKKN?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "NEET cutoff scores for BDS admission at JKKN Dental College vary each year based on state counselling results. Cutoffs differ by category (General, OBC, SC, ST). For the latest cutoff information and admission guidance for the 2026-27 academic year, contact the admissions team at +91 93458 55001."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Is JKKN Dental College NAAC accredited?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes, JKKN Dental College & Hospital is NAAC Accredited with A Grade. The institution is approved by the Dental Council of India (DCI), recognized by the Government of Tamil Nadu, and affiliated with the Tamil Nadu Dr. M.G.R. Medical University, Chennai. The college was established in 1987 under the J.K.K. Nattraja Educational Institutions trust, which has a legacy of 74+ years since 1952."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What is the placement record of JKKN Dental College?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "JKKN Dental College maintains a 92% placement assistance rate (2024-25 batch). Top recruiters include Apollo Hospitals, Sun Pharma, Clove Dental, Dental Planet, Manipal Hospitals, and Dr. Agarwal's Healthcare. International placements are available through NHS UK, Cleveland Clinic Abu Dhabi, and dental practices in Singapore and UAE. The college has a strong alumni network of 3,000+ graduates worldwide."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Where is JKKN Dental College located?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "JKKN Dental College is located at Natarajapuram, NH-544 (Salem-Coimbatore National Highway), Komarapalayam, Namakkal District, Tamil Nadu 638183. It is well-connected: ~22 km from Erode (35 min), ~58 km from Salem (1 hr), ~15 km from Tiruchengode, ~67 km from Tiruppur (1.5 hrs), and ~105 km from Coimbatore (2 hrs)."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What hostel facilities are available for BDS students?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "JKKN provides separate hostels for boys and girls within the campus premises. Hostel amenities include 24/7 security, Wi-Fi connectivity, hygienic mess facility serving vegetarian and non-vegetarian meals, laundry services, hot water supply, indoor recreation areas, and proximity to all academic buildings. The campus on NH-544 ensures safe and convenient student life."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How many dental chairs does JKKN Dental Hospital have?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "JKKN Dental Hospital has 200+ dental chairs and 100+ hospital beds, making it one of the largest dental clinical facilities in the Namakkal-Erode-Salem region. The hospital serves 500+ patients daily across 9 departments, providing extensive hands-on clinical exposure to BDS students from the very first year of the program."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Can international students apply for BDS at JKKN?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes, international students and NRI candidates can apply for BDS admission at JKKN Dental College as per DCI guidelines and regulations set by the Tamil Nadu Dr. M.G.R. Medical University. NRI/Foreign national seats are available. Contact the international admissions desk at +91 93458 55001 or email dental@jkkn.ac.in for specific requirements."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What MDS specializations are available after BDS at JKKN?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "JKKN Dental College offers MDS in 5 specializations: (1) Periodontics — 2 seats, (2) Orthodontics and Dentofacial Orthopedics — 5 seats, (3) Prosthodontics Crown and Bridge — 3 seats, (4) Conservative Dentistry and Endodontics — 5 seats, and (5) Oral Medicine and Radiology — 3 seats. This provides a seamless UG to PG pathway for BDS graduates."
-        }
-      }
-    ]
-  };
 
   const speakableSchema = generateSpeakableWebPageSchema({
     title: 'BDS Colleges in Tamil Nadu — BDS Admission 2026-27 at JKKN Dental College',
@@ -1509,68 +1451,7 @@ export default function BDSProgram() {
           </p>
 
           <div className="space-y-4">
-            {[
-              {
-                q: 'What is the duration of the BDS course?',
-                a: 'The Bachelor of Dental Surgery (BDS) program at JKKN Dental College is a 5-year course. This includes 4 years of academic study covering pre-clinical, para-clinical, and clinical subjects, followed by 1 year of compulsory rotating internship where learners gain hands-on clinical experience across all 9 departments.'
-              },
-              {
-                q: 'What is the eligibility criteria for BDS admission?',
-                a: 'Candidates must have completed 10+2 with Physics, Chemistry, and Biology as mandatory subjects with a minimum of 50% aggregate marks (40% for reserved categories). Additionally, candidates must qualify NEET-UG and be at least 17 years old as on 31st December of the admission year. Indian nationals and NRI/Foreign nationals are eligible as per DCI guidelines.'
-              },
-              {
-                q: 'Is the BDS program at JKKN Dental College & Hospital DCI approved?',
-                a: 'Yes, the BDS program at JKKN Dental College is fully approved by the Dental Council of India (DCI). The college is recognized by the Government of Tamil Nadu and affiliated with the Tamil Nadu Dr. M.G.R. Medical University, Chennai. JKKN is also NAAC Accredited, ensuring quality standards in dental education.'
-              },
-              {
-                q: 'What are the career opportunities after completing BDS?',
-                a: 'BDS graduates from JKKN have diverse career paths including private dental practice, government dental hospitals, corporate dental chains like Clove Dental and Dental Planet, MDS specialization (5 options available at JKKN), research and academics, armed forces dental corps, dental product industry, and public health dentistry. JKKN offers 92% placement assistance (2024-25 batch) with domestic and international opportunities.'
-              },
-              {
-                q: 'What facilities are available for BDS learners?',
-                a: 'JKKN offers 200+ dental chairs, 100+ hospital beds, advanced simulation learning labs, digital radiology (OPG, CBCT), 9 specialized departments, central learning commons with digital resources, separate hostels, sports facilities, and a Wi-Fi enabled AI-integrated campus on NH-544.'
-              },
-              {
-                q: 'Can I pursue MDS after BDS from this college?',
-                a: 'Yes, JKKN offers MDS in 5 specializations: Periodontics (2 seats), Orthodontics (5 seats), Prosthodontics (3 seats), Conservative Dentistry & Endodontics (5 seats), and Oral Medicine & Radiology (3 seats) — totaling 18 MDS seats. After completing BDS, graduates can pursue MDS by qualifying NEET-MDS.'
-              },
-              {
-                q: 'What is the BDS course fee at JKKN Dental College?',
-                a: 'BDS fees at JKKN are regulated by the Tamil Nadu Government Fee Fixation Committee. Both Government Quota and Management Quota fees are determined as per state norms. For the latest 2026-27 fee structure, contact the admissions office at +91 93458 55001 or visit www.jkkn.ai/apply/jkkn-admission-2026. Scholarships are available for meritorious and economically weaker learners.'
-              },
-              {
-                q: 'What is the NEET cutoff for BDS admission at JKKN?',
-                a: 'NEET cutoff scores for BDS admission vary each year based on Tamil Nadu state counselling results and differ by category (General, OBC, SC, ST). Contact the admissions team at +91 93458 55001 for the latest cutoff information and admission guidance for the 2026-27 academic year.'
-              },
-              {
-                q: 'Is JKKN Dental College NAAC accredited?',
-                a: 'Yes, JKKN Dental College & Hospital is NAAC Accredited with A Grade. The institution is DCI approved, Government of Tamil Nadu recognized, and affiliated with TN Dr. MGR Medical University. Established in 1987 under J.K.K. Nattraja Educational Institutions (since 1952), it carries a legacy of 74+ years.'
-              },
-              {
-                q: 'What is the placement record of JKKN Dental College?',
-                a: 'JKKN maintains a 92% placement assistance rate (2024-25 batch). Top domestic recruiters include Apollo Hospitals, Sun Pharma, Clove Dental, Dental Planet, Manipal Hospitals, and Dr. Agarwal\'s Healthcare. International placements are available through NHS UK, Cleveland Clinic Abu Dhabi, and dental practices in Singapore and UAE. The alumni network spans 3,000+ graduates worldwide.'
-              },
-              {
-                q: 'Where is JKKN Dental College located?',
-                a: 'JKKN Dental College is at Natarajapuram, NH-544, Komarapalayam, Namakkal District, Tamil Nadu 638183. Distances: Tiruchengode (~15 km), Erode (~22 km, 35 min), Salem (~58 km, 1 hr), Namakkal town (~66 km), Tiruppur (~67 km), Coimbatore (~105 km, 2 hrs). It is approved by the Dental Council of India and NAAC accredited with an A Grade.'
-              },
-              {
-                q: 'What hostel facilities are available for BDS learners?',
-                a: 'JKKN provides separate boys and girls hostels with 24/7 security, Wi-Fi, hygienic mess (veg and non-veg), laundry services, hot water, indoor recreation, and proximity to academic buildings. The campus location on NH-544 ensures convenient access to Erode and Salem.'
-              },
-              {
-                q: 'How many dental chairs does JKKN Dental Hospital have?',
-                a: 'JKKN Dental Hospital has 200+ dental chairs and 100+ hospital beds, making it one of the largest dental facilities in the Namakkal-Erode-Salem region. The hospital serves 500+ patients daily across 9 departments, providing extensive clinical exposure to BDS learners from Year 1.'
-              },
-              {
-                q: 'Can international learners apply for BDS at JKKN?',
-                a: 'Yes, international learners and NRI candidates can apply as per DCI guidelines and TN Dr. MGR Medical University regulations. NRI/Foreign national seats are available. Contact the international admissions desk at +91 93458 55001 or email dental@jkkn.ac.in for requirements.'
-              },
-              {
-                q: 'What MDS specializations are available after BDS at JKKN?',
-                a: 'JKKN offers MDS in 5 specializations: (1) Periodontics — 2 seats, (2) Orthodontics and Dentofacial Orthopedics — 5 seats, (3) Prosthodontics Crown and Bridge — 3 seats, (4) Conservative Dentistry and Endodontics — 5 seats, and (5) Oral Medicine and Radiology — 3 seats. This provides a seamless UG to PG pathway for BDS graduates.'
-              },
-            ].map((faq, idx) => (
+            {bdsPageFaqs.map((faq, idx) => (
               <details key={idx} className="group border-2 border-gray-200 rounded-xl overflow-hidden bg-white">
                 <summary className="flex items-center justify-between cursor-pointer p-6 font-bold text-[#006837] text-lg hover:bg-green-50 transition-colors duration-300">
                   {faq.q}

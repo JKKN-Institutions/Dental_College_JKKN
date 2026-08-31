@@ -1,5 +1,6 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import FaqAccordion from '@/components/FaqAccordion';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import { Metadata } from 'next';
 import StructuredData from '@/components/StructuredData';
@@ -38,7 +39,7 @@ const faqSchema = {
       "name": "What is the NEET cutoff for JKKN Dental College?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "JKKN Dental College admission for BDS is based on NEET-UG scores. The exact cutoff varies each year depending on the number of applicants, seat availability (35 government quota + 65 management quota), and state counseling rank lists. For the most current cutoff information, contact the admissions office at +91 9345855001 or visit the Tamil Nadu state dental counseling authority."
+        "text": "JKKN Dental College admission for BDS is based on NEET-UG scores. The exact cutoff varies each year depending on the number of applicants, seat availability, and state counseling rank lists. For the most current cutoff information, contact the admissions office at +91 9345855001 or visit the Tamil Nadu state dental counseling authority."
       }
     },
     {
@@ -46,7 +47,7 @@ const faqSchema = {
       "name": "Is there management quota admission at JKKN Dental College?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, JKKN Dental College has both government quota (35 seats) and management quota (65 seats) for BDS admissions. Management quota admissions are conducted by the college through the official admission portal after NEET-UG qualification. Candidates must still qualify in NEET-UG to be eligible for management quota seats."
+        "text": "Yes, JKKN Dental College admits BDS candidates under both government quota, allotted through Tamil Nadu state counselling, and management quota. Management quota admissions are conducted by the college through the official admission portal after NEET-UG qualification. Candidates must still qualify in NEET-UG to be eligible for management quota seats."
       }
     },
     {
@@ -167,6 +168,7 @@ export default function AdmissionCriteria() {
         </div>
       </div>
 
+      <FaqAccordion schema={faqSchema} />
       <Footer />
       <FloatingWhatsApp />
     </main>
