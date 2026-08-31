@@ -499,6 +499,24 @@ Our learning framework emphasizes clinical excellence, research, and community s
       links: [
         { name: "Dental Colleges in Tamil Nadu", url: "/academics/details-of-academic-programs/bds/colleges-in-tamil-nadu/" },
         { name: "MDS Seats in Tamil Nadu", url: "/academics/details-of-academic-programs/mds/seats-in-tamil-nadu/" },
+        // GL6-75, added 2026-08-31. The block above shipped the same morning and gave two of the
+        // three MDS cluster children a site-wide route; this one was left out and the BDS list
+        // page took the slot instead. Measured the same day on the live homepage: zero links to
+        // /mds/colleges-in-tamil-nadu/ anywhere outside the MDS hub, while its two siblings had
+        // four each. In the frozen money register the page’s own queries carry 175 mobile
+        // impressions - "mds colleges in tamilnadu" 90 at 7.9 and "mds college in tamilnadu" 78
+        // at 8.6 - and GSC serves both from the HUB, at 7.3 and 7.4 all-device, not from the
+        // child built to answer them. The hub’s own title is now MDS Fees, so it is not even
+        // bidding for these on purpose.
+        //
+        // WHAT THIS IS NOT. It is not "the fix", and the note that shipped with the siblings
+        // overstated the cause. The hub links all three children with identical markup in one
+        // grid and was crawled 2026-08-30, yet Google indexed only seats-in-tamil-nadu; colleges
+        // and specialities both still return "URL is unknown to Google". An identical route
+        // produced two different outcomes, so "no route" cannot be the whole cause. A second
+        // route can only help and costs no position - but the reason Google took one of three
+        // is still unexplained and is tracked separately, not closed by this line.
+        { name: "MDS Colleges in Tamil Nadu", url: "/academics/details-of-academic-programs/mds/colleges-in-tamil-nadu/" },
         { name: "MDS Courses in Tamil Nadu", url: "/academics/details-of-academic-programs/mds/specialities-in-tamil-nadu/" },
         { name: "BDS Admission 2026-27", url: "/academics/details-of-academic-programs/bds/" },
         { name: "MDS Admission 2026-27", url: "/academics/details-of-academic-programs/mds/" },
