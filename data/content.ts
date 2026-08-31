@@ -479,6 +479,33 @@ Our learning framework emphasizes clinical excellence, research, and community s
         { name: "Dental College for Kerala Students", url: "/kerala/" },
       ],
     },
+    // The list and admission pages that answer the course-intent searches. They are here for
+    // the same reason nearbyCities is: measured 2026-08-31, the homepage linked
+    // /academics/.../mds/seats-in-tamil-nadu/ and .../specialities-in-tamil-nadu/ ZERO times,
+    // and GSC URL Inspection returned "URL is unknown to Google" for both the BDS and the MDS
+    // list page. They have been live since 2026-08-24/25 and have earned ZERO impressions in
+    // 42 days, because Google has no route to them and the sitemap has not been downloaded
+    // since 2022-09-04.
+    //
+    // This ADDS a route. It deliberately does NOT take the matching phrases off the homepage:
+    // four days after A-01 (2075cbb) did that, "private dental colleges in tamilnadu" moved
+    // 11.95 -> 14.0 and "namakkal dental college" 2.37 -> 4.5. Weakening the page that ranks
+    // before its replacement is crawlable spends a position and buys nothing. The homepage
+    // rewrite waits until these URLs are indexed.
+    //
+    // Anchor text is each page's own live H1, shortened only where the H1 carries a year.
+    keyPages: {
+      title: "COURSES & ADMISSION",
+      links: [
+        { name: "Dental Colleges in Tamil Nadu", url: "/academics/details-of-academic-programs/bds/colleges-in-tamil-nadu/" },
+        { name: "MDS Seats in Tamil Nadu", url: "/academics/details-of-academic-programs/mds/seats-in-tamil-nadu/" },
+        { name: "MDS Courses in Tamil Nadu", url: "/academics/details-of-academic-programs/mds/specialities-in-tamil-nadu/" },
+        { name: "BDS Admission 2026-27", url: "/academics/details-of-academic-programs/bds/" },
+        { name: "MDS Admission 2026-27", url: "/academics/details-of-academic-programs/mds/" },
+        { name: "Fee Structure", url: "/fees-structure/" },
+        { name: "Admission Open for BDS & MDS", url: "/admissions/" },
+      ],
+    },
     contact: {
       title: "CONTACT US",
       phone: "+91 93458 55001",

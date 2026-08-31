@@ -59,7 +59,10 @@ const heroStats = [
 
 const trustItems = [
   { emoji: "\uD83C\uDF93", text: "NAAC 'A' Accredited" },
-  { emoji: "\u23F1\uFE0F", text: "74+ Years Legacy" },
+  // "74+ years" is the TRUST's age, not the college's. JKKN Institutions was founded 1952;
+  // the dental college opened 1987. Left bare under a "JKKN Dental College" heading it reads
+  // as the college's own age - the exact claim the 1952 -> 1987 pass removed everywhere else.
+  { emoji: "\u23F1\uFE0F", text: "JKKN Institutions since 1952" },
   { emoji: "\uD83E\uDDB7", text: "250+ Dental Chairs" },
   { emoji: "\uD83D\uDC65", text: "500+ Daily Patients" },
   { emoji: "\uD83D\uDCBC", text: "Placement Support" },
@@ -752,7 +755,8 @@ export default function DSACoursePage() {
                 JKKN Dental College
               </h2>
               <p className="text-base text-gray-500 max-w-[580px] mb-11">
-                74+ years of educational excellence in healthcare training.
+                Dental education since 1987, within JKKN Institutions&apos; educational legacy
+                dating to 1952.
               </p>
             </RevealOnScroll>
 

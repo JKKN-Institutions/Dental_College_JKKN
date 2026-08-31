@@ -131,6 +131,26 @@ export default function Footer() {
           </ul>
         </nav>
 
+        {/* Courses & Admission — the list pages Google had no route to.
+            Same shape and same reason as the city row above; see data/content.ts keyPages. */}
+        <nav aria-label="Courses and admission" className="mt-8 pt-6 border-t border-white/30">
+          <h3 className="text-base sm:text-lg font-bold mb-3 uppercase">
+            {siteContent.footer.keyPages.title}
+          </h3>
+          <ul className="flex flex-wrap gap-x-5 gap-y-2 text-sm sm:text-base">
+            {siteContent.footer.keyPages.links.map((link, index) => (
+              <li key={index}>
+                <Link
+                  href={link.url}
+                  className="text-white hover:text-gray-300 transition-colors block py-1"
+                >
+                  {link.name}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
+
         {/* Copyright */}
         <div className="mt-10 pt-6 border-t border-white/30 text-center pb-20 lg:pb-0">
           <p className="text-sm">&copy; 2026 JKKN Dental College & Hospital. All rights reserved.</p>
