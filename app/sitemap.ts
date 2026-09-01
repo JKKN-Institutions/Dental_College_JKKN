@@ -363,6 +363,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${baseUrl}/internal-complaints-committee/`, lastModified: now, changeFrequency: 'yearly', priority: 0.4 },
 
     // Committees
+    // Hub page — the COMMITTEE nav dropdown parent. Built 2026-09-01; before that the
+    // nav pointed 207 pages at a route that had no page.tsx and answered 404.
+    { url: `${baseUrl}/committee/`, lastModified: now, changeFrequency: 'yearly', priority: 0.6 },
     { url: `${baseUrl}/committee/anti-ragging-committee/`, lastModified: now, changeFrequency: 'yearly', priority: 0.5 },
     { url: `${baseUrl}/committee/student-grievance-redressal-committee-sgrc/`, lastModified: now, changeFrequency: 'yearly', priority: 0.5 },
     { url: `${baseUrl}/committee/student-welfare-committee/`, lastModified: now, changeFrequency: 'yearly', priority: 0.5 },
@@ -405,6 +408,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${baseUrl}/facilities/privacy-policy/`, lastModified: now, changeFrequency: 'yearly', priority: 0.3 },
 
     // Others
+    // Hub page — the OTHERS nav dropdown parent. Built 2026-09-01, same reason as /committee/.
+    { url: `${baseUrl}/others/`, lastModified: now, changeFrequency: 'yearly', priority: 0.5 },
     { url: `${baseUrl}/others/patient-safety-manual/`, lastModified: now, changeFrequency: 'yearly', priority: 0.4 },
     { url: `${baseUrl}/blog/bds-course-complete-guide-2026/`, lastModified: '2026-05-16', changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/blog/mds-orthodontics-complete-guide-2026/`, lastModified: '2026-05-16', changeFrequency: 'monthly', priority: 0.8 },
@@ -423,6 +428,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     // NOTE: /information-center/careers/ is deliberately NOT listed — it
     // 307-redirects off-site to jobs.cvviz.com, and a sitemap must contain
     // only self-hosted, indexable 200 URLs.
+    // Hub pages — the INFORMATION CENTER and MANDATORY DISCLOSURES nav dropdown parents.
+    // Built 2026-09-01, same reason as /committee/.
+    { url: `${baseUrl}/information-center/`, lastModified: now, changeFrequency: 'yearly', priority: 0.5 },
+    { url: `${baseUrl}/mandatory-disclosures/`, lastModified: now, changeFrequency: 'yearly', priority: 0.5 },
     { url: `${baseUrl}/information-center/right-to-information-rti/`, lastModified: now, changeFrequency: 'yearly', priority: 0.4 },
     { url: `${baseUrl}/mandatory-disclosures/guidelines-on-public-disclosure-by-heis/`, lastModified: now, changeFrequency: 'yearly', priority: 0.4 },
     { url: `${baseUrl}/mandatory-disclosures/letter-of-undertaking/`, lastModified: now, changeFrequency: 'yearly', priority: 0.4 },
