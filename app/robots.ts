@@ -333,11 +333,36 @@ export default function robots(): MetadataRoute.Robots {
         crawlDelay: 2,
       },
 
-      // ----- 4. AI CRAWLERS — ALLOW ALL -----
-      // Verified + Unverified AI crawlers — full access
+      // ----- 4. AI CRAWLERS — ALL PUBLIC CONTENT, NO INFRA -----
+      // A crawler obeys exactly ONE group (RFC 9309) and inherits NOTHING from
+      // User-agent: *. With `allow: ['/']` as its only rule this group therefore
+      // handed every AI crawler the paths the * group blocks. Measured live
+      // 2026-09-02: of the 11 such paths, 10 answer 404 and the one that does not
+      // is /admin/ — 200 at /admin/login/, the CMS sign-in page.
+      //
+      // Public content stays FULLY open, which is the whole point of this group:
+      // Google matches the LONGEST rule, and `/` is the shortest possible one, so
+      // it loses only to the longer, more specific infra prefixes listed below.
+      // Verified against the sitemap — 0 of 264 public URLs are affected.
+      //
+      // Deliberately NOT mirrored from the * group: PARAMS_DISALLOW,
+      // UTILITY_DISALLOW and ERROR_DISALLOW. Those govern duplicate-parameter
+      // hygiene, not access to private surfaces, and this site already runs two
+      // URL structures at once — tightening parameters here would be a separate
+      // decision on a site with an unresolved duplicate-content problem.
       {
         userAgent: [...VERIFIED_AI_CRAWLERS, ...UNVERIFIED_AI_CRAWLERS],
-        allow: ['/'],
+        allow: ['/', ...NEXTJS_ALLOW],
+        disallow: [
+          ...NEXTJS_DISALLOW,
+          ...ADMIN_DISALLOW,
+          ...SECURITY_DISALLOW,
+          ...LEGACY_CMS_DISALLOW,
+          // Taken from PARAMS_DISALLOW as a single literal rather than spreading
+          // the whole list: internal search is thin/duplicate and belongs here,
+          // but the ?utm / ?ref parameter rules in that list do not — see above.
+          '/search/',
+        ],
       },
 
       // AI crawlers with crawl-delay
