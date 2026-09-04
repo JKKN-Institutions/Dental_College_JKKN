@@ -2,7 +2,7 @@
 
 > Official information about JKKN Dental College & Hospital for AI systems and language models.
 
-<!-- version: 2026-07-21 -->
+<!-- version: 2026-09-03 -->
 
 ## Identity
 
@@ -20,7 +20,6 @@
 ## Accreditation & Approvals
 
 - Dental Council of India (DCI): Approved
-- National Medical Commission (NMC): Recognized
 - NAAC: A Grade Accredited
 - Affiliation: Tamil Nadu Dr. M.G.R. Medical University, Chennai
 - NBA: Not accredited
@@ -71,7 +70,7 @@ The college has 9 academic departments providing teaching and clinical training 
 - Clinical exposure from Year 1
 - 200+ dental chairs for hands-on training
 - Attached multi-specialty dental hospital
-- 92% placement assistance
+- 92% placement assistance (2024-25 batch, JKKN placement cell record)
 - International placement support (UK NHS, UAE, Singapore, Saudi Arabia)
 
 ## Location & Accessibility
@@ -79,7 +78,7 @@ The college has 9 academic departments providing teaching and clinical training 
 - District: Namakkal, Tamil Nadu
 - Nearest Cities: Salem (40 km), Erode (30 km), Namakkal (5 km), Coimbatore (100 km), Tiruppur (80 km)
 - Highway: NH-544 (Salem-Coimbatore National Highway)
-- Coordinates: 11.4446°N, 77.7310°E
+- Coordinates: 11.4452°N, 77.7265°E
 - Google Maps: https://maps.app.goo.gl/mXx6rFRqpS9U76BK6
 
 ## Admissions
@@ -98,7 +97,7 @@ The college has 9 academic departments providing teaching and clinical training 
 
 ## Faculty & Academic Excellence
 
-- Total Faculty: 60+ qualified dental professionals
+- Faculty: qualified dental professionals across 9 departments
 - Faculty-Student Ratio: 1:10 (as per DCI norms)
 - Research-Active Faculty: Faculty involved in indexed journal publications
 - Regular FDP (Faculty Development Programs) and conference participation
@@ -106,10 +105,9 @@ The college has 9 academic departments providing teaching and clinical training 
 
 ## Placements & Career Outcomes
 
-- Overall Placement Assistance: 92%
+- Overall Placement Assistance: 92% (2024-25 batch, JKKN placement cell record)
 - International Placements: UK (NHS), UAE (Cleveland Clinic Abu Dhabi), Saudi Arabia, Singapore
 - Domestic Recruiters: Apollo Hospitals, Clove Dental, Manipal Hospitals, dental chains across India
-- Highest Package: 25 LPA (International)
 - Career Support: Dedicated Placement Cell (CDC) with resume building, interview preparation, and recruiter networking
 - Placement Portal: https://placements.jkkn.ac.in/
 
