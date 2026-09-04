@@ -83,6 +83,23 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
         <link rel="dns-prefetch" href="https://connect.facebook.net" />
         <link rel="dns-prefetch" href="https://supabase.co" />
+        {/*
+          AI-facing knowledge files. Measured 2026-09-04: NOTHING in this codebase referenced
+          them — a grep for "llms" across app/ and components/ returned zero — so the only way
+          anything reached /llms.txt was by guessing the conventional path.
+
+          rel="llms" is deliberately NON-standard. rel="alternate" was rejected: this is the
+          ROOT layout, so it would declare llms.txt an alternate representation of every page,
+          which is false for /contact/ and is a rel Google actively processes. An unknown rel
+          is ignored by parsers that do not understand it, so this carries the intent at zero
+          risk of being misread.
+
+          This is a signal for link-parsing AI crawlers, NOT a Google indexing fix — Google
+          discovers URLs from <a href>, not arbitrary <link> rels. Getting these files known
+          to Google needs GSC URL Inspection or a real anchor.
+        */}
+        <link rel="llms" type="text/plain" href="/llms.txt" title="llms.txt — structured summary for AI systems" />
+        <link rel="llms" type="text/plain" href="/llms-full.txt" title="llms-full.txt — full reference for AI systems" />
       </head>
       <body className={`${poppins.className} antialiased pt-16 xs:pt-18 sm:pt-20 lg:pt-24 xl:pt-28`} suppressHydrationWarning>
         <a
