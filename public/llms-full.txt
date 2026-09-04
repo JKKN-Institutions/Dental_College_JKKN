@@ -120,7 +120,6 @@ The college has 9 academic departments providing undergraduate teaching and clin
 ## Faculty
 
 - **Faculty:** qualified dental professionals across 9 departments
-- **Faculty-Student Ratio:** 1:10 (as per DCI norms)
 - **Composition:** Professors, Associate Professors, Assistant Professors, Senior Lecturers across 9 departments
 - **Research Output:** 50+ publications in indexed journals
 - **Faculty Development:** Regular FDPs (Faculty Development Programs), conference participation, research grants
