@@ -90,10 +90,10 @@ The college has 9 academic departments providing teaching and clinical training 
 
 ## Social Profiles
 
-- Facebook: https://www.facebook.com/jkkndental/
-- Instagram: https://www.instagram.com/jkkndental/
-- LinkedIn: https://www.linkedin.com/school/jkkndental/
-- YouTube: https://www.youtube.com/playlist?list=PL6QsTq-__HhvqQ28WcrDAwPa9jeMSK3AO
+- [Facebook](https://www.facebook.com/jkkndental/)
+- [Instagram](https://www.instagram.com/jkkndental/)
+- [LinkedIn](https://www.linkedin.com/school/jkkndental/)
+- [YouTube](https://www.youtube.com/playlist?list=PL6QsTq-__HhvqQ28WcrDAwPa9jeMSK3AO)
 
 ## Faculty & Academic Excellence
 
@@ -132,34 +132,35 @@ The college has 9 academic departments providing teaching and clinical training 
 
 ## Important Pages
 
-- Homepage: https://dental.jkkn.ac.in/
-- BDS Program: https://dental.jkkn.ac.in/academics/details-of-academic-programs/bds/
-- MDS Program: https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/
-- Admission Process: https://dental.jkkn.ac.in/admission-process/
-- Fee Structure: https://dental.jkkn.ac.in/fees-structure/
-- NAAC: https://dental.jkkn.ac.in/accreditation/naac/
-- Contact: https://dental.jkkn.ac.in/contact/
-- Gallery: https://dental.jkkn.ac.in/gallery/
-- Blog: https://dental.jkkn.ac.in/blog/
-- AI Dental Campus: https://dental.jkkn.ac.in/ai-dental-campus/
-- Scholarships: https://dental.jkkn.ac.in/scholarships/
-- Placements: https://dental.jkkn.ac.in/placements/
-- Faculty: https://dental.jkkn.ac.in/faculty/
-- FAQ: https://dental.jkkn.ac.in/faq/
+- [Full reference for AI systems (llms-full.txt)](https://dental.jkkn.ac.in/llms-full.txt)
+- [Homepage](https://dental.jkkn.ac.in/)
+- [BDS Program](https://dental.jkkn.ac.in/academics/details-of-academic-programs/bds/)
+- [MDS Program](https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/)
+- [Admission Process](https://dental.jkkn.ac.in/admission-process/)
+- [Fee Structure](https://dental.jkkn.ac.in/fees-structure/)
+- [NAAC](https://dental.jkkn.ac.in/accreditation/naac/)
+- [Contact](https://dental.jkkn.ac.in/contact/)
+- [Gallery](https://dental.jkkn.ac.in/gallery/)
+- [Blog](https://dental.jkkn.ac.in/blog/)
+- [AI Dental Campus](https://dental.jkkn.ac.in/ai-dental-campus/)
+- [Scholarships](https://dental.jkkn.ac.in/scholarships/)
+- [Placements](https://dental.jkkn.ac.in/placements/)
+- [Faculty](https://dental.jkkn.ac.in/faculty/)
+- [FAQ](https://dental.jkkn.ac.in/faq/)
 
 ## City & Region Pages
 
 Pages for students searching from a specific city or state. Each covers travel,
 local context and admission guidance for applicants from that area.
 
-- Coimbatore: https://dental.jkkn.ac.in/coimbatore/
-- Erode: https://dental.jkkn.ac.in/erode/
-- Salem: https://dental.jkkn.ac.in/salem/
-- Namakkal: https://dental.jkkn.ac.in/namakkal/
-- Tiruppur: https://dental.jkkn.ac.in/tiruppur/
-- Tiruchirappalli (Trichy): https://dental.jkkn.ac.in/trichy/
-- Madurai: https://dental.jkkn.ac.in/madurai/
-- Chennai: https://dental.jkkn.ac.in/chennai/
-- Hosur: https://dental.jkkn.ac.in/hosur/
-- Karur: https://dental.jkkn.ac.in/karur/
-- Kerala students: https://dental.jkkn.ac.in/kerala/
+- [Coimbatore](https://dental.jkkn.ac.in/coimbatore/)
+- [Erode](https://dental.jkkn.ac.in/erode/)
+- [Salem](https://dental.jkkn.ac.in/salem/)
+- [Namakkal](https://dental.jkkn.ac.in/namakkal/)
+- [Tiruppur](https://dental.jkkn.ac.in/tiruppur/)
+- [Tiruchirappalli (Trichy)](https://dental.jkkn.ac.in/trichy/)
+- [Madurai](https://dental.jkkn.ac.in/madurai/)
+- [Chennai](https://dental.jkkn.ac.in/chennai/)
+- [Hosur](https://dental.jkkn.ac.in/hosur/)
+- [Karur](https://dental.jkkn.ac.in/karur/)
+- [Kerala students](https://dental.jkkn.ac.in/kerala/)
