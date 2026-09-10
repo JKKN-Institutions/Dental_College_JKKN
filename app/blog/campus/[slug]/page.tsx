@@ -26,7 +26,13 @@ export async function generateMetadata({
     .eq('slug', slug)
     .eq('college_id', collegeId)
     .eq('is_published', true)
-    .single();
+    // .single() ERRORS when a slug matches more than one row, and that error path
+    // ends in a 404 on a post that is actually live. Measured 2026-09-07: six
+    // /blog/campus/ URLs returned 404 while the same slugs render fine elsewhere.
+    // Take the newest matching row instead of demanding exactly one.
+    .order('created_at', { ascending: false })
+    .limit(1)
+    .maybeSingle();
 
   if (!post) {
     return { title: 'Blog Post Not Found | JKKN Dental College' };
@@ -76,7 +82,11 @@ export default async function CampusBlogPost({
     .eq('slug', slug)
     .eq('college_id', collegeId)
     .eq('is_published', true)
-    .single();
+    // See the note in generateMetadata: .single() turns a duplicate slug into a
+    // 404 on a live post. Newest row wins.
+    .order('created_at', { ascending: false })
+    .limit(1)
+    .maybeSingle();
 
   if (!post) notFound();
 

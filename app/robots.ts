@@ -151,6 +151,16 @@ const LEGACY_CMS_DISALLOW = [
   '/phpmyadmin/',
 ]
 
+// Legacy CMS UPLOADS carve-out.
+// Measured 2026-09-07 (sitemap audit, dental): five /wp-content/uploads/*.pdf files
+// carry 1,061 GSC impressions over 90 days and Google reports them as
+// "Indexed, though blocked by robots.txt" (pageFetchState BLOCKED_ROBOTS_TXT).
+// Google matches the LONGEST rule, so this 18-char Allow beats the 12-char
+// Disallow '/wp-content/' above while /wp-content/plugins/, /themes/ etc stay blocked.
+// User decision 2026-09-07: open uploads ONLY, not the whole /wp-content/ tree.
+const LEGACY_UPLOADS_ALLOW = [
+  '/wp-content/uploads/',
+]
 // Full disallow list for general + Googlebot
 const FULL_DISALLOW = [
   ...NEXTJS_DISALLOW,
@@ -259,7 +269,7 @@ export default function robots(): MetadataRoute.Robots {
       // ----- 1. GENERAL RULES (All Crawlers) -----
       {
         userAgent: '*',
-        allow: ['/', ...NEXTJS_ALLOW],
+        allow: ['/', ...NEXTJS_ALLOW, ...LEGACY_UPLOADS_ALLOW],
         disallow: FULL_DISALLOW,
       },
 
@@ -268,7 +278,7 @@ export default function robots(): MetadataRoute.Robots {
       // This section MUST contain ALL rules Googlebot needs
       {
         userAgent: 'Googlebot',
-        allow: ['/', ...NEXTJS_ALLOW],
+        allow: ['/', ...NEXTJS_ALLOW, ...LEGACY_UPLOADS_ALLOW],
         disallow: [
           ...NEXTJS_DISALLOW.filter((p) => p !== '/api/'), // Keep /api/ blocked
           '/api/',
@@ -352,7 +362,7 @@ export default function robots(): MetadataRoute.Robots {
       // decision on a site with an unresolved duplicate-content problem.
       {
         userAgent: [...VERIFIED_AI_CRAWLERS, ...UNVERIFIED_AI_CRAWLERS],
-        allow: ['/', ...NEXTJS_ALLOW],
+        allow: ['/', ...NEXTJS_ALLOW, ...LEGACY_UPLOADS_ALLOW],
         disallow: [
           ...NEXTJS_DISALLOW,
           ...ADMIN_DISALLOW,

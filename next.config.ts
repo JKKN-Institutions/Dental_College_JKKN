@@ -51,6 +51,25 @@ const nextConfig: NextConfig = {
       { source: '/principal-message/', destination: '/our-management', permanent: true },
       { source: '/principal-message', destination: '/our-management', permanent: true },
 
+      // ---- Campus-blog route collision, measured 2026-09-07 (sitemap audit) ----
+      // /blog/ lists rows from the `blogs` table and links every one of them to
+      // /blog/campus/<slug>. These six slugs are NOT campus CMS posts - they are
+      // real code pages at app/blog/<slug>/page.tsx, so /blog/campus/<slug> 404s.
+      // Both source forms are written by hand, matching the /information-center/careers
+      // precedent above. Destinations are left bare: oneHop appends the slash.
+      { source: '/blog/campus/bds-course-complete-guide-2026', destination: '/blog/bds-course-complete-guide-2026', permanent: true },
+      { source: '/blog/campus/bds-course-complete-guide-2026/', destination: '/blog/bds-course-complete-guide-2026', permanent: true },
+      { source: '/blog/campus/mds-conservative-dentistry-endodontics-complete-guide-2026', destination: '/blog/mds-conservative-dentistry-endodontics-complete-guide-2026', permanent: true },
+      { source: '/blog/campus/mds-conservative-dentistry-endodontics-complete-guide-2026/', destination: '/blog/mds-conservative-dentistry-endodontics-complete-guide-2026', permanent: true },
+      { source: '/blog/campus/mds-oral-medicine-radiology-complete-guide-2026', destination: '/blog/mds-oral-medicine-radiology-complete-guide-2026', permanent: true },
+      { source: '/blog/campus/mds-oral-medicine-radiology-complete-guide-2026/', destination: '/blog/mds-oral-medicine-radiology-complete-guide-2026', permanent: true },
+      { source: '/blog/campus/mds-orthodontics-complete-guide-2026', destination: '/blog/mds-orthodontics-complete-guide-2026', permanent: true },
+      { source: '/blog/campus/mds-orthodontics-complete-guide-2026/', destination: '/blog/mds-orthodontics-complete-guide-2026', permanent: true },
+      { source: '/blog/campus/mds-periodontics-complete-guide-2026', destination: '/blog/mds-periodontics-complete-guide-2026', permanent: true },
+      { source: '/blog/campus/mds-periodontics-complete-guide-2026/', destination: '/blog/mds-periodontics-complete-guide-2026', permanent: true },
+      { source: '/blog/campus/mds-prosthodontics-complete-guide-2026', destination: '/blog/mds-prosthodontics-complete-guide-2026', permanent: true },
+      { source: '/blog/campus/mds-prosthodontics-complete-guide-2026/', destination: '/blog/mds-prosthodontics-complete-guide-2026', permanent: true },
+
       // Trailing slash redirects (WordPress used trailing slashes)
       { source: '/bds/', destination: '/academics/details-of-academic-programs/bds', permanent: true },
       { source: '/mds/', destination: '/academics/details-of-academic-programs/mds', permanent: true },
