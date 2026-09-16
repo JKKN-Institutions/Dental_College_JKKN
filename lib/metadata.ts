@@ -596,10 +596,11 @@ export function generateEducationalOrganizationSchema() {
     "hasCredential": [
       {
         "@type": "EducationalOccupationalCredential",
-        "credentialCategory": "DCI Approval",
+        "credentialCategory": "NDC Approval (formerly DCI)",
         "recognizedBy": {
           "@type": "Organization",
-          "name": "Dental Council of India",
+          "name": "National Dental Commission",
+          "alternateName": "Dental Council of India (DCI)",
           "url": "https://dciindia.gov.in/"
         }
       },
@@ -648,7 +649,7 @@ export function generateEducationalOrganizationSchema() {
       "Clinical Dentistry",
       "NEET-UG (BDS Admission)",
       "NEET-MDS (Postgraduate Dental Admission)",
-      "Dental Council of India (DCI) Regulations",
+      "National Dental Commission (NDC) Regulations, formerly Dental Council of India (DCI)",
       "AI-Integrated Dental Education",
       "Digital Dentistry",
       "CAD/CAM Dentistry"

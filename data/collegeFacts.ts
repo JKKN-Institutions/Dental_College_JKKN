@@ -6,7 +6,7 @@
  * consistency and prevent AI search engines from finding contradictions.
  *
  * IMPORTANT: When updating any facts, verify with official documents:
- * - Seat counts → DCI permission letters
+ * - Seat counts → DCI/NDC permission letters
  * - Established years → Trust/College registration documents
  * - Hospital capacity → Infrastructure reports
  * - Contact info → Official letterhead
@@ -38,7 +38,7 @@ export const collegeFacts = {
   trustAge: new Date().getFullYear() - 1952, // Auto-calculates trust age
 
   // === ACADEMIC PROGRAMS ===
-  // IMPORTANT: Verify these numbers with current DCI permission letters
+  // IMPORTANT: Verify these numbers with current DCI/NDC permission letters
   bdsSeatCount: 100,
   mdsSeatCount: _jkknMdsRow.total, // from the university matrix, not typed in
 
@@ -83,7 +83,12 @@ export const collegeFacts = {
 
   // === AFFILIATIONS ===
   affiliatedUniversity: "The Tamil Nadu Dr. M.G.R. Medical University, Chennai",
-  recognizedBy: "Dental Council of India (DCI)",
+  recognizedBy: "National Dental Commission (NDC), formerly the Dental Council of India (DCI)",
+  // The DCI was dissolved w.e.f. 19 March 2026 and the NDC took effect the same date.
+  // DCI naming stays valid as an interim arrangement - the regulator says so itself.
+  // Source: dciindia.gov.in public notice, read 2026-09-16. NDC has no website yet.
+  regulatorSuccessionDate: "2026-03-19",
+  regulatorSuccessionSource: "https://dciindia.gov.in/",
   approvedBy: "Government of Tamil Nadu",
 
   // === CONTACT INFORMATION ===

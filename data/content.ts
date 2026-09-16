@@ -342,7 +342,7 @@ export const siteContent = {
   // About Section
   about: {
     heading: "ABOUT JKKN DENTAL COLLEGE & HOSPITAL",
-    content: `At JKKN Dental College & Hospital, we are dedicated to providing our learners with the highest quality education in dental surgery. Established in 1987, our institution is located in Komarapalayam, Tamil Nadu, affiliated with The Tamil Nadu Dr. M.G.R. Medical University, Chennai, and approved by the Government of Tamil Nadu and Dental Council of India.
+    content: `At JKKN Dental College & Hospital, we are dedicated to providing our learners with the highest quality education in dental surgery. Established in 1987, our institution is located in Komarapalayam, Tamil Nadu, affiliated with The Tamil Nadu Dr. M.G.R. Medical University, Chennai, and approved by the Government of Tamil Nadu and the National Dental Commission (formerly the Dental Council of India).
 
 We offer undergraduate (BDS) and postgraduate (MDS) programs, along with continuing dental education programs. Our state-of-the-art facilities, experienced senior learners, and cutting-edge technology ensure that our learners receive the best education and training possible.
 
@@ -408,7 +408,7 @@ Our learning framework emphasizes clinical excellence, research, and community s
         type: "Affiliated to",
       },
       {
-        title: "Dental Council of India",
+        title: "National Dental Commission (formerly DCI)",
         logo: "/images/affiliations/dci.png",
         type: "Recognised by",
       },
