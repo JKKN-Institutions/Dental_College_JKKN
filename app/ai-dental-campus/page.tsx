@@ -186,8 +186,8 @@ export default function AIDentalCampus() {
             </p>
 
             <p className="text-lg text-blue-200 leading-relaxed max-w-3xl mx-auto">
-              JKKN Dental College & Hospital is proud to be India's first dental institution
-              to fully integrate Artificial General Intelligence (AGI) and advanced AI tools
+              JKKN Dental College & Hospital integrates
+               Artificial General Intelligence (AGI) and advanced AI tools
               into every aspect of dental education, clinical practice, and research.
             </p>
           </div>

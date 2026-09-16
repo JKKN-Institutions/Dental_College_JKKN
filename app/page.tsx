@@ -326,7 +326,7 @@ export default function Home() {
         "name": "What makes JKKN different from other dental colleges?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "JKKN Dental College is India's first Human-AI Dental Campus, combining artificial intelligence tools with clinical training, two hundred dental chairs, and five hundred daily patients."
+          "text": "JKKN Dental College is an AI-integrated dental campus, combining artificial intelligence tools with clinical training, two hundred dental chairs, and five hundred daily patients."
         }
       },
       {
@@ -350,7 +350,7 @@ export default function Home() {
         "name": "Which is the best dental college in Tamil Nadu?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "JKKN Dental College and Hospital is approved by the Dental Council of India, accredited by NAAC with an A Grade, and affiliated to The Tamil Nadu Dr. M.G.R. Medical University. Established in nineteen eighty-seven, it is sanctioned one hundred BDS seats and eighteen MDS seats across five specialities, runs India's first AI-integrated dental campus, and reports ninety-two percent placement assistance. Tamil Nadu publishes no official merit ranking of its dental colleges, so compare colleges on approval, accreditation, sanctioned intake and clinical exposure."
+          "text": "JKKN Dental College and Hospital is approved by the Dental Council of India, accredited by NAAC with an A Grade, and affiliated to The Tamil Nadu Dr. M.G.R. Medical University. Established in nineteen eighty-seven, it is sanctioned one hundred BDS seats and eighteen MDS seats across five specialities, runs an AI-integrated dental campus, and reports ninety-two percent placement assistance. Tamil Nadu publishes no official merit ranking of its dental colleges, so compare colleges on approval, accreditation, sanctioned intake and clinical exposure."
         }
       },
       {
@@ -532,7 +532,7 @@ export default function Home() {
         "/html/head/meta[@name='description']/@content"
       ]
     },
-    "description": "JKKN Dental College & Hospital, established in 1987, is a DCI approved and NAAC A Grade accredited dental college offering BDS and MDS programs. Located on India's first AI-integrated campus in Komarapalayam, Tamil Nadu, with 200+ dental chairs, 100+ bed hospital, and 92% placement assistance (2024-25 batch). Apply now for 2026-27 admissions.",
+    "description": "JKKN Dental College & Hospital, established in 1987, is a DCI approved and NAAC A Grade accredited dental college offering BDS and MDS programs. Located on an AI-integrated campus in Komarapalayam, Tamil Nadu, with 200+ dental chairs, 100+ bed hospital, and 92% placement assistance (2024-25 batch). Apply now for 2026-27 admissions.",
     "datePublished": "2025-01-01",
     "dateModified": "2026-03-27"
   };

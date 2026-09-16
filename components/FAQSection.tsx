@@ -28,15 +28,15 @@ export default function FAQSection() {
     },
     {
       question: "What makes JKKN different from other dental colleges?",
-      answer: "JKKN is India's first AI-integrated dental campus with 500+ daily patients, 200+ dental chairs, and 92% placement assistance (2024-25 batch). Established in 1987 under JKKN Institutions (since 1952), it combines AI-powered diagnostics, CAD/CAM technology, and hands-on clinical training."
+      answer: "JKKN is an AI-integrated dental campus with 500+ daily patients, 200+ dental chairs, and 92% placement assistance (2024-25 batch). Established in 1987 under JKKN Institutions (since 1952), it combines AI-powered diagnostics, CAD/CAM technology, and hands-on clinical training."
     },
     {
       question: "Which is the best dental college in Tamil Nadu?",
-      answer: "JKKN Dental College & Hospital is approved by the Dental Council of India, accredited by NAAC with an A Grade, and affiliated to The Tamil Nadu Dr. M.G.R. Medical University. Established in 1987, it is sanctioned 100 BDS seats and 18 MDS seats across 5 specialities, runs India's first AI-integrated dental campus, and reports 92% placement assistance (2024-25 batch). Tamil Nadu publishes no official merit ranking of its dental colleges, so compare colleges on approval, accreditation, sanctioned intake and clinical exposure."
+      answer: "JKKN Dental College & Hospital is approved by the Dental Council of India, accredited by NAAC with an A Grade, and affiliated to The Tamil Nadu Dr. M.G.R. Medical University. Established in 1987, it is sanctioned 100 BDS seats and 18 MDS seats across 5 specialities, runs an AI-integrated dental campus, and reports 92% placement assistance (2024-25 batch). Tamil Nadu publishes no official merit ranking of its dental colleges, so compare colleges on approval, accreditation, sanctioned intake and clinical exposure."
     },
     {
       question: "How does JKKN integrate AI in dental education?",
-      answer: "JKKN integrates AI across BDS and MDS curriculum with AI-powered diagnostic imaging (CBCT, OPG), CAD/CAM digital prosthetics, ChatGPT-assisted research, and data analytics — making it India's first AI-integrated dental campus."
+      answer: "JKKN integrates AI across BDS and MDS curriculum with AI-powered diagnostic imaging (CBCT, OPG), CAD/CAM digital prosthetics, ChatGPT-assisted research, and data analytics — making it an AI-integrated dental campus."
     },
     {
       question: "What is the fee structure for BDS at JKKN Dental College?",
