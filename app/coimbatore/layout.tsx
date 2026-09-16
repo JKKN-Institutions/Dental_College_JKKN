@@ -183,9 +183,7 @@ const orgSchema = {
   },
   "areaServed": ["Coimbatore", "Salem", "Erode", "Namakkal", "Tiruchengode", "Tiruppur"],
   "sameAs": [
-    ...jkknSameAsUrls,
-    "https://collegedunia.com/college/10574-jkk-nattraja-dental-college-and-hospital-jkkndch-namakkal",
-    "https://www.shiksha.com/college/j-k-k-nattraja-dental-college-and-hospital-namakkal-78331"
+    ...jkknSameAsUrls
   ]
 };
 

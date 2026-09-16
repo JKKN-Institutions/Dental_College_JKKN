@@ -88,10 +88,7 @@ const orgSchema = {
   "memberOf": { "@type": "Organization", "name": "The Tamil Nadu Dr. M.G.R. Medical University, Chennai" },
   "geo": { "@type": "GeoCoordinates", "latitude": "11.4499", "longitude": "77.6988" },
   "sameAs": [
-    ...jkknSameAsUrls,
-    "https://maps.app.goo.gl/mXx6rFRqpS9U76BK6",
-    "https://www.facebook.com/jkkndental",
-    "https://www.youtube.com/@jkkndental"
+    ...jkknSameAsUrls
   ]
 };
 
