@@ -50,7 +50,7 @@ export default function NamakkalPage() {
   const whyFeatures = [
     { icon: <Hospital className="w-6 h-6 text-[#006837]" />, title: 'Own Hospital', desc: '200-chair DCI-approved teaching hospital on campus — the only facility of its scale in Namakkal district' },
     { icon: <Stethoscope className="w-6 h-6 text-[#006837]" />, title: 'Real Patient Exposure', desc: '500+ patients treated daily — learners get hands-on clinical exposure from their very first year of BDS' },
-    { icon: <Microscope className="w-6 h-6 text-[#006837]" />, title: 'Advanced Learning Labs', desc: 'Advanced dental learning labs, simulation equipment, and India\'s first AI-integrated dental campus designation' },
+    { icon: <Microscope className="w-6 h-6 text-[#006837]" />, title: 'Advanced Learning Labs', desc: 'Advanced dental learning labs, simulation equipment, and an AI-integrated dental campus' },
     { icon: <TrendingUp className="w-6 h-6 text-[#006837]" />, title: 'NEET MDS Results', desc: 'Strong track record in NEET MDS results and higher education placements year after year' },
     { icon: <Users className="w-6 h-6 text-[#006837]" />, title: 'Established 1987', desc: 'Part of JKKN Institutions (est. 1952), with continuous dental education in Namakkal district since 1987' },
     { icon: <Bus className="w-6 h-6 text-[#006837]" />, title: 'District Location', desc: 'Located IN Namakkal district at Komarapalayam on NH-544. ~60 km from Namakkal city via Tiruchengode. Hostel available.' },
@@ -108,7 +108,7 @@ export default function NamakkalPage() {
     { label: 'MDS', value: '5 specializations' },
     { label: 'Hospital', value: '200-chair teaching hospital, 500+ patients/day' },
     { label: 'Placements', value: '92% placement rate (2024-25 batch)' },
-    { label: 'Campus', value: 'India\'s first AI-integrated dental campus' },
+    { label: 'Campus', value: 'an AI-integrated dental campus' },
   ];
 
   const admissionSteps = [

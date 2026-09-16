@@ -253,8 +253,8 @@ export default function Contact() {
                   <h3 className="text-lg font-bold text-gray-800">By Air</h3>
                 </div>
                 <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
-                  <span className="font-semibold">Nearest Airport:</span> Coimbatore International Airport (75 km, ~1.5 hours)<br />
-                  <span className="font-semibold">Alternative:</span> Salem Airport (45 km, ~1 hour)
+                  <span className="font-semibold">Nearest Airport:</span> Coimbatore International Airport (~120 km, ~2.5 hours)<br />
+                  <span className="font-semibold">Alternative:</span> Salem Airport (~65 km, ~1.5 hours)
                 </p>
               </div>
 

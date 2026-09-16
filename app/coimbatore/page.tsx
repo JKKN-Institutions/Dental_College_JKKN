@@ -58,7 +58,7 @@ export default function CoimbatorePage() {
   const whyFeatures = [
     { icon: <Hospital className="w-6 h-6 text-[#006837]" />, title: 'Own Hospital', desc: 'DCI-approved dental college with attached hospital for hands-on clinical training — 200+ chairs, 100+ beds, 500+ daily patients' },
     { icon: <Stethoscope className="w-6 h-6 text-[#006837]" />, title: 'Real Patient Exposure', desc: 'Own dental hospital on campus — learners get real patient exposure from Year 1, not Year 3' },
-    { icon: <Microscope className="w-6 h-6 text-[#006837]" />, title: 'Advanced Learning Labs', desc: 'Advanced dental learning labs, simulation equipment, and digital dentistry training — India\'s first AI-integrated dental campus' },
+    { icon: <Microscope className="w-6 h-6 text-[#006837]" />, title: 'Advanced Learning Labs', desc: 'Advanced dental learning labs, simulation equipment, and digital dentistry training — an AI-integrated dental campus' },
     { icon: <TrendingUp className="w-6 h-6 text-[#006837]" />, title: '92% Placement Record (2024-25 batch)', desc: 'JKKN Dental records 92% placement rate (2024-25 batch) for BDS graduates. Highest salary: 8–10 LPA. International placements: UK (NHS), UAE, Saudi Arabia.' },
     { icon: <Users className="w-6 h-6 text-[#006837]" />, title: 'Community Service', desc: 'Hospital serves the community — builds patient trust, clinical breadth, and real-world dentistry experience' },
     { icon: <Bus className="w-6 h-6 text-[#006837]" />, title: 'Accessible from Coimbatore via NH-544', desc: '108 km from Coimbatore on NH-544. Approximately 1.5 hours by road. On-campus hostel eliminates daily commuting stress.' },
