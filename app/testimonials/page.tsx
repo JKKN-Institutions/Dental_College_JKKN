@@ -31,29 +31,9 @@ const breadcrumbItems = [
 
 const breadcrumbSchema = generateBreadcrumbSchema('/testimonials');
 
-const testimonials = [
-  {
-    quote:
-      'The CDC at JKKN connected me with Apollo Dental during my final year. The placement process was smooth — from resume building to interview prep, every step was guided. I started my career with confidence.',
-    name: 'Priya Dharshini S.',
-    role: 'BDS 2024 • Apollo Dental, Chennai',
-    programme: 'BDS',
-  },
-  {
-    quote:
-      'After completing MDS in Orthodontics at JKKN, the research exposure and clinical training made me stand out. I was placed at a leading hospital within weeks of completing my programme.',
-    name: 'Karthik Raja M.',
-    role: 'MDS Orthodontics 2023 • Fortis Healthcare',
-    programme: 'MDS',
-  },
-  {
-    quote:
-      "JKKN's international placement support helped me prepare for the UK licensing exam. Today, I work at NHS and credit my foundation to the clinical exposure I received at JKKN's 200+ chair hospital.",
-    name: 'Sangeetha R.',
-    role: 'BDS 2022 • NHS UK',
-    programme: 'BDS',
-  },
-];
+// Alumni testimonials are published only when the CDC holds a consented, verified quote
+// on record. Three unverified placeholder testimonials were removed on 2026-09-12.
+const testimonials: { quote: string; name: string; role: string; programme: string }[] = [];
 
 export default function TestimonialsPage() {
   return (
@@ -103,6 +83,12 @@ export default function TestimonialsPage() {
         {/* Testimonials Grid */}
         <section className="bg-[#FBFBEE] py-16 px-4">
           <div className="max-w-6xl mx-auto">
+            {testimonials.length === 0 && (
+              <p className="text-center text-gray-500 text-sm leading-relaxed max-w-xl mx-auto">
+                Alumni stories are on the way. Our Career Development Centre is collecting
+                consented graduate interviews for the 2026&ndash;27 cycle.
+              </p>
+            )}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {testimonials.map((t) => (
                 <article

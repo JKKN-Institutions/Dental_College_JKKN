@@ -110,7 +110,7 @@ export default function AcademicPrograms() {
 
               <div className="border-t border-gray-200 pt-6">
                 <div className="mb-4">
-                  <div className="text-2xl sm:text-3xl font-bold text-[#006837]">18+ Seats</div>
+                  <div className="text-2xl sm:text-3xl font-bold text-[#006837]">18 Seats</div>
                   <div className="text-xs sm:text-sm text-gray-500 uppercase">PG Intake</div>
                 </div>
                 {/* Direct to the rendering URL, not /mds — that path is a 301 stub and made

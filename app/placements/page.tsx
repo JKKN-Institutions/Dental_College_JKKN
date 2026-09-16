@@ -16,7 +16,7 @@ export default function PlacementsPage() {
     { value: `${collegeFacts.placementRate}%`, label: 'PLACEMENT RATE 2024-25', desc: 'Consistent placement assistance across BDS & MDS batches' },
     { value: `${collegeFacts.alumniCount.toLocaleString()}+`, label: 'ALUMNI WORLDWIDE', desc: 'Graduates serving across India and internationally' },
     { value: `${collegeFacts.partnerships}+`, label: 'RECRUITING PARTNERS', desc: 'Corporate chains, hospitals, and government institutions' },
-    { value: '8-10', label: 'LPA HIGHEST', desc: 'Top packages from corporate dental chains [UPDATE]' },
+    { value: '8-10', label: 'LPA HIGHEST', desc: 'Top packages from corporate dental chains' },
   ];
 
   const processSteps = [
@@ -62,20 +62,18 @@ export default function PlacementsPage() {
     { icon: <Users className="w-7 h-7 text-[#006837]" />, title: 'Public Health Dentistry', desc: 'Serve communities through government PHCs, public health programmes, and dental outreach initiatives across India.' },
   ];
 
-  const testimonials = [
-    { quote: 'The CDC at JKKN connected me with Apollo Dental during my final year. The placement process was smooth — from resume building to interview prep, every step was guided. I started my career with confidence.', name: 'Priya Dharshini S.', role: 'BDS 2024 \u2022 Apollo Dental, Chennai [UPDATE \u2014 verify]' },
-    { quote: 'After completing MDS in Orthodontics at JKKN, the research exposure and clinical training made me stand out. I was placed at a leading hospital within weeks of completing my programme.', name: 'Karthik Raja M.', role: 'MDS Orthodontics 2023 \u2022 Fortis Healthcare [UPDATE \u2014 verify]' },
-    { quote: 'JKKN\u2019s international placement support helped me prepare for the UK licensing exam. Today, I work at NHS and credit my foundation to the clinical exposure I received at JKKN\u2019s 200+ chair hospital.', name: 'Sangeetha R.', role: 'BDS 2022 \u2022 NHS UK [UPDATE \u2014 verify]' },
-  ];
+  // Alumni testimonials are published only when the CDC holds a consented, verified quote
+  // on record. Three unverified placeholder testimonials were removed on 2026-09-12.
+  const testimonials: { quote: string; name: string; role: string }[] = [];
 
   const faqs = [
     { q: 'What is the placement rate at JKKN Dental College?', a: `JKKN Dental College achieves a ${collegeFacts.placementRate}%+ placement assistance rate. The Career Development Centre (CDC) provides comprehensive support including resume building, interview preparation, and direct company connections for BDS and MDS graduates.` },
     { q: 'Which companies hire from JKKN Dental College?', a: 'Top recruiters include Apollo Dental, Clove Dental, Sabka Dentist, MyDentist, Apollo Hospitals, Fortis Healthcare, Manipal Hospitals, and government PHCs & district hospitals. International recruiters include NHS UK, Cleveland Clinic Abu Dhabi, and Saudi MOH.' },
-    { q: 'What is the salary after BDS from JKKN Dental College?', a: 'BDS graduates from JKKN Dental College typically receive packages ranging from 3-5 LPA for entry-level positions. Top performers and those placed in corporate dental chains or international positions can earn 8-10 LPA or higher. [UPDATE \u2014 verify from CDC records]' },
+    { q: 'What is the salary after BDS from JKKN Dental College?', a: 'BDS graduates from JKKN Dental College typically receive packages ranging from 3-5 LPA for entry-level positions. Top performers and those placed in corporate dental chains or international positions can earn 8-10 LPA or higher.' },
     { q: 'Does JKKN Dental College offer international placements?', a: 'Yes, JKKN Dental College alumni work internationally at NHS UK, Cleveland Clinic Abu Dhabi, Saudi Ministry of Health, and dental clinics in Singapore. The CDC supports international licensing exam preparation and placement assistance.' },
     { q: 'What career options are available after BDS?', a: 'After BDS from JKKN, graduates can pursue private practice, hospital dentistry, higher studies (MDS), international opportunities, dental research, or public health dentistry. The CDC provides guidance for all career pathways.' },
     { q: 'How does the JKKN Dental Placement Cell work?', a: `The CDC operates a structured 5-step process: Registration & Profile Building, Resume Workshop & Skill Development, Company Connect & Campus Drives, Interview Preparation & Mock Sessions, and Offer Facilitation & Joining Support. With ${collegeFacts.partnerships}+ recruiting partners, the CDC ensures comprehensive placement support.` },
-    { q: 'What is the highest package from JKKN Dental College?', a: 'The highest package offered to JKKN Dental graduates is in the range of 8-10 LPA, typically from corporate dental chains and international healthcare organisations. [UPDATE \u2014 verify from CDC records]' },
+    { q: 'What is the highest package from JKKN Dental College?', a: 'The highest package offered to JKKN Dental graduates is in the range of 8-10 LPA, typically from corporate dental chains and international healthcare organisations.' },
     { q: 'Can JKKN Dental learners get government jobs?', a: 'Yes, many JKKN Dental alumni serve in government Primary Health Centres (PHCs), district hospitals, and dental departments across Tamil Nadu. The college provides guidance for TNPSC and other government dental recruitment exams.' },
     { q: 'How many alumni does JKKN Dental College have?', a: `JKKN Dental College has a strong alumni network of ${collegeFacts.alumniCount.toLocaleString()}+ graduates spread across India and internationally. Alumni work in leading hospitals, corporate dental chains, government services, and private practice.` },
     { q: 'Is JKKN Dental College good for higher studies after BDS?', a: `Yes, JKKN Dental College has a strong track record of learners clearing NEET MDS and pursuing postgraduate specialisations. The college offers MDS in ${collegeFacts.mdsSpecialisations} specialisations and provides dedicated coaching and mentoring for competitive exams.` },
@@ -254,7 +252,7 @@ export default function PlacementsPage() {
           <h2 className="font-extrabold text-gray-900 mb-3" style={{ fontSize: 'clamp(1.6rem, 3vw + 0.5rem, 2.4rem)' }}>
             Year-Wise Placement Trends
           </h2>
-          <p className="text-gray-500 text-base mb-4">Consistent growth in placements across batches [UPDATE — verify from CDC records]</p>
+          <p className="text-gray-500 text-base mb-4">Consistent growth in placements across batches</p>
           <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-12" />
           <div className="overflow-x-auto">
             <table className="w-full text-sm text-left border-collapse">
@@ -306,6 +304,7 @@ export default function PlacementsPage() {
       </section>
 
       {/* -- Student Testimonials -- */}
+      {testimonials.length > 0 && (
       <section className="bg-[#FBFBEE] py-16 px-4">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="font-extrabold text-gray-900 mb-3" style={{ fontSize: 'clamp(1.6rem, 3vw + 0.5rem, 2.4rem)' }}>
@@ -327,6 +326,7 @@ export default function PlacementsPage() {
           </div>
         </div>
       </section>
+      )}
 
       {/* -- FAQ Section -- */}
       <section className="bg-white py-16 px-4">

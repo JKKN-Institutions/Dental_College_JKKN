@@ -112,7 +112,7 @@ export const collegeFacts = {
 
   // === ADDITIONAL INFO ===
   libraryBooks: 0, // Total library collection - verify
-  facultyCount: 0, // Total faculty members - verify
+  facultyCount: 46, // Counted from the published /faculty/ directory, 2026-09-12
   studentStrength: 0, // Current student enrollment - verify
 
   // === QUICK STATS FOR HOMEPAGE ===

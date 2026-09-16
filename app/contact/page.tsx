@@ -62,7 +62,7 @@ const faqSchema = {
       "name": "How to reach JKKN Dental College from Salem?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "JKKN Dental College is approximately 50 km from Salem and can be reached in about 1 hour by road. The college is on NH-544 (Salem-Coimbatore National Highway). From Salem, take the highway towards Coimbatore and look for JKKN Dental College near Komarapalayam. Regular bus services operate between Salem and Komarapalayam. The nearest railway station from the college is Erode Junction (25 km, about 30 minutes away)."
+        "text": "JKKN Dental College is approximately 58 km from Salem and can be reached in about 1 hour by road. The college is on NH-544 (Salem-Coimbatore National Highway). From Salem, take the highway towards Coimbatore and look for JKKN Dental College near Komarapalayam. Regular bus services operate between Salem and Komarapalayam. The nearest railway station from the college is Erode Junction (25 km, about 30 minutes away)."
       }
     },
     {

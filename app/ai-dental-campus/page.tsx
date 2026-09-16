@@ -20,23 +20,23 @@ import {
 } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: "India's 1st Human-AI AGI Dental Campus | JKKN Dental College",
-  description: "JKKN Dental College — India's 1st AI-integrated dental campus. ChatGPT, AI diagnostics & digital dentistry tools integrated into BDS & MDS curriculum.",
+  title: "AI-Integrated Dental Campus | JKKN Dental College",
+  description: "JKKN Dental College — an AI-integrated dental campus. ChatGPT, AI diagnostics & digital dentistry tools integrated into BDS & MDS curriculum.",
   keywords: "AI dental campus India, artificial intelligence dental education, AI-powered dental college, ChatGPT dental training, digital dentistry AI, smart dental education, AI diagnostic tools dentistry, JKKN AI integration",
   alternates: {
     canonical: '/ai-dental-campus/',
   },
   openGraph: {
-    title: "India's 1st Human-AI AGI Dental Campus | JKKN Dental College",
-    description: "JKKN Dental College — India's 1st AI-integrated dental campus. ChatGPT, AI diagnostics & digital dentistry tools integrated into BDS & MDS curriculum.",
+    title: "AI-Integrated Dental Campus | JKKN Dental College",
+    description: "JKKN Dental College — an AI-integrated dental campus. ChatGPT, AI diagnostics & digital dentistry tools integrated into BDS & MDS curriculum.",
     url: 'https://dental.jkkn.ac.in/ai-dental-campus/',
     type: 'website',
     siteName: 'JKKN Dental College & Hospital',
   },
   twitter: {
     card: 'summary_large_image',
-    title: "India's 1st Human-AI AGI Dental Campus | JKKN Dental College",
-    description: "JKKN Dental College — India's 1st AI-integrated dental campus. ChatGPT, AI diagnostics & digital dentistry tools integrated into BDS & MDS curriculum.",
+    title: "AI-Integrated Dental Campus | JKKN Dental College",
+    description: "JKKN Dental College — an AI-integrated dental campus. ChatGPT, AI diagnostics & digital dentistry tools integrated into BDS & MDS curriculum.",
   },
 };
 
@@ -150,14 +150,14 @@ export default function AIDentalCampus() {
     {
       icon: GraduationCap,
       title: "Industry Recognition",
-      description: "As India's 1st Human-AI AGI Dental Campus, JKKN graduates are recognized for their advanced technological expertise"
+      description: "As AI-Integrated Dental Campus, JKKN graduates are recognized for their advanced technological expertise"
     }
   ];
 
   const breadcrumbSchema = generateBreadcrumbSchema('/ai-dental-campus');
   const speakableSchema = generateSpeakableWebPageSchema({
-    title: "India's 1st Human-AI AGI Dental Campus | JKKN Dental College",
-    description: "JKKN Dental College — India's 1st AI-integrated dental campus. ChatGPT, AI diagnostics & digital dentistry tools integrated into BDS & MDS curriculum.",
+    title: "AI-Integrated Dental Campus | JKKN Dental College",
+    description: "JKKN Dental College — an AI-integrated dental campus. ChatGPT, AI diagnostics & digital dentistry tools integrated into BDS & MDS curriculum.",
     url: 'https://dental.jkkn.ac.in/ai-dental-campus/',
     speakableCssSelectors: ['h1', '.hero-description', 'article p'],
   });
@@ -178,7 +178,7 @@ export default function AIDentalCampus() {
             </div>
 
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-              India's 1st Human-AI AGI<br />Dental Campus
+              AI-Integrated<br />Dental Campus
             </h1>
 
             <p className="text-xl md:text-2xl mb-8 text-blue-100">

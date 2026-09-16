@@ -9,7 +9,7 @@ export const organizationInfo = {
   alternateName: "J.K.K. Nattraja Dental College & Hospital",
   url: "https://dental.jkkn.ac.in",
   logo: "https://dental.jkkn.ac.in/images/dental-logo.png",
-  description: "India's 1st Human-AI AGI Dental Campus - DCI approved & NAAC A grade accredited dental college",
+  description: "AI-integrated dental campus - DCI approved & NAAC A grade accredited dental college",
   address: {
     streetAddress: "Natarajapuram, NH-544 (Salem To Coimbatore National Highway)",
     addressLocality: "Komarapalayam",
@@ -559,7 +559,9 @@ export function generateEducationalOrganizationSchema() {
     "foundingDate": organizationInfo.foundingDate,
     "founder": {
       "@type": "Person",
-      "name": "Thiru J.K.K. Nattraja",
+      "name": "Thiru J.K.K. Nattraja Chettiar",
+      "birthDate": "1895",
+      "deathDate": "1995",
       "description": "Founder of J.K.K. Nattraja Educational Institutions, Tamil Nadu"
     },
     "parentOrganization": {
@@ -624,7 +626,7 @@ export function generateEducationalOrganizationSchema() {
     })),
     "numberOfEmployees": {
       "@type": "QuantitativeValue",
-      "minValue": 25
+      "value": collegeFacts.facultyCount
     },
     "knowsAbout": [
       "Dentistry",
@@ -699,7 +701,7 @@ export function generateMDSCourseSchema() {
       "priceCurrency": "INR",
       "availability": "https://schema.org/InStock",
       "validFrom": "2026-03-01",
-      "url": "https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8",
+      "url": "https://www.jkkn.ai/apply/jkkn-admission-2026",
       "eligibleRegion": {
         "@type": "Country",
         "name": "India"

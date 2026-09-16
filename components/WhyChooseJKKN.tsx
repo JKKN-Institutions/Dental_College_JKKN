@@ -23,7 +23,7 @@ export default function WhyChooseJKKN() {
               <div>
                 <h4 className="text-lg sm:text-xl font-bold mb-1 sm:mb-2">JKKN Group: 74+ Years of Educational Legacy</h4>
                 <p className="text-gray-300 leading-relaxed text-sm sm:text-base">
-                  Part of JKKN Institutions, founded in 1952 with seventy-four years of educational heritage across eight colleges and two schools. The JKKN Group operates a five hundred bed multi-specialty teaching hospital on the same campus.
+                  Part of JKKN Institutions, founded in 1952 with seventy-four years of educational heritage across seven colleges and two schools. JKKN Dental College runs its own 100+ bed dental hospital, on a campus shared with the JKKN Group’s 500-bed multi-specialty teaching hospital.
                 </p>
               </div>
             </li>

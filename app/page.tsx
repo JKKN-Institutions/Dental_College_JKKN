@@ -93,10 +93,10 @@ export default function Home() {
       "priceSpecification": {
         "@type": "PriceSpecification",
         "priceCurrency": "INR",
-        "minPrice": "300000",
-        "maxPrice": "500000",
+        "minPrice": "450000",
+        "maxPrice": "550000",
         "unitText": "per year",
-        "description": "Approximate annual tuition fee for BDS program. Actual fees may vary."
+        "description": "Management Quota annual tuition, academic year 2026-27: Rs 4,50,000 dayscholar with instruments, Rs 5,50,000 with hostel and instruments. Government Quota as per the Tamil Nadu Fee Fixation Committee norms."
       }
     }
   };
@@ -132,10 +132,10 @@ export default function Home() {
       "priceSpecification": {
         "@type": "PriceSpecification",
         "priceCurrency": "INR",
-        "minPrice": "800000",
-        "maxPrice": "1500000",
+        "minPrice": "850000",
+        "maxPrice": "850000",
         "unitText": "per year",
-        "description": "Approximate annual tuition fee for MDS program. Actual fees may vary by specialization."
+        "description": "Management Quota annual tuition, academic year 2026-27: Rs 8,50,000, the same across all five DCI-approved MDS specialisations. Government Quota as per the Tamil Nadu Fee Fixation Committee norms."
       }
     }
   };
@@ -146,10 +146,10 @@ export default function Home() {
     "@type": ["CollegeOrUniversity", "EducationalOrganization", "MedicalOrganization", "Dentist"],
     "@id": "https://dental.jkkn.ac.in/#college",
     "name": "JKKN Dental College & Hospital",
-    "alternateName": ["J.K.K. Nattraja Dental College & Hospital", "JKK Nattraja Pal Maruthuvak Kalloori Marrum Maruthuvamanai"],
+    "alternateName": ["J.K.K. Nattraja Dental College & Hospital", "J.K.K. Nataraja Dental College & Hospital", "J.K.K. Natarajah Dental College & Hospital", "JKK Nattraja Pal Maruthuvak Kalloori Marrum Maruthuvamanai"],
     "url": "https://dental.jkkn.ac.in",
     "logo": "https://dental.jkkn.ac.in/images/dental-logo.png",
-    "description": "India's 1st Human-AI AGI Dental Campus - DCI approved & NAAC A grade accredited dental college offering BDS & MDS programmes with advanced AI integration",
+    "description": "AI-integrated dental campus - DCI approved & NAAC A grade accredited dental college offering BDS & MDS programmes with advanced AI integration",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Natarajapuram, NH-544 (Salem To Coimbatore National Highway)",
@@ -161,10 +161,6 @@ export default function Home() {
     "telephone": "+919345855001",
     "email": "dental@jkkn.ac.in",
     "foundingDate": "1987",
-    "numberOfStudents": {
-      "@type": "QuantitativeValue",
-      "value": 1500
-    },
     "knowsAbout": [
       "Bachelor of Dental Surgery",
       "Master of Dental Surgery",
@@ -194,7 +190,6 @@ export default function Home() {
       ]
     },
     "award": [
-      "India's 1st Human-AI AGI Dental Campus",
       "NAAC A Grade Accreditation"
     ],
     "hasCredential": [

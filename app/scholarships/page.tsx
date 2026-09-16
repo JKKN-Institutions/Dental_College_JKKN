@@ -7,13 +7,13 @@ import { generateBreadcrumbSchema, generateWebPageSchema } from '@/lib/metadata'
 
 export const metadata: Metadata = {
   title: 'Scholarships 2026-27 | JKKN Dental College',
-  description: 'Scholarship details for BDS students at JKKN Dental College. PMSS, Maintainence, First Graduate, Community, Trust, and Naan Phudulvan scholarships available for eligible students.',
+  description: 'Scholarship details for BDS students at JKKN Dental College. PMSS, Maintenance, First Graduate, Community, Trust, and Naan Mudhalvan scholarships available for eligible students.',
   alternates: {
     canonical: '/scholarships/',
   },
   openGraph: {
     title: 'Scholarships 2026-27 | JKKN Dental College',
-    description: 'Scholarship details for BDS students at JKKN Dental College. PMSS, Maintainence, First Graduate, Community, Trust, and Naan Phudulvan scholarships available for eligible students.',
+    description: 'Scholarship details for BDS students at JKKN Dental College. PMSS, Maintenance, First Graduate, Community, Trust, and Naan Mudhalvan scholarships available for eligible students.',
     url: 'https://dental.jkkn.ac.in/scholarships/',
     type: 'website',
     siteName: 'JKKN Dental College & Hospital',
@@ -80,7 +80,7 @@ export default function ScholarshipsPage() {
                     <td className="px-6 py-4 text-right text-gray-800">&#8377;6L / Yr</td>
                   </tr>
                   <tr className="hover:bg-white transition-colors">
-                    <td className="px-6 py-4 font-semibold text-gray-800">Maintainence Scholarship</td>
+                    <td className="px-6 py-4 font-semibold text-gray-800">Maintenance Scholarship</td>
                     <td className="px-6 py-4 text-gray-700">BDS</td>
                     <td className="px-6 py-4 text-right text-gray-800">&#8377;5K–10K / Yr</td>
                     <td className="px-6 py-4 text-right text-gray-500">—</td>
@@ -146,7 +146,7 @@ export default function ScholarshipsPage() {
                     <td className="px-6 py-4 text-gray-600">MQ / GQ</td>
                   </tr>
                   <tr className="hover:bg-white transition-colors">
-                    <td className="px-6 py-4 font-semibold text-gray-800">Naan Phudulvan Scholarship</td>
+                    <td className="px-6 py-4 font-semibold text-gray-800">Naan Mudhalvan Scholarship</td>
                     <td className="px-6 py-4 text-gray-700">BDS</td>
                     <td className="px-6 py-4 text-right text-gray-800">&#8377;1,000 / month</td>
                     <td className="px-6 py-4 text-gray-600">Boys &amp; Girls</td>

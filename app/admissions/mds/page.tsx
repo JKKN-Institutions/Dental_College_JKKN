@@ -318,7 +318,7 @@ const feeBreakdown = [
   },
   {
     quota: 'Management Quota',
-    tuition: '₹ 8,00,000 – ₹ 15,00,000 / year',
+    tuition: '₹ 8,50,000 / year',
     note: 'Fee varies by specialization. Contact admissions for exact figures.',
   },
   {
@@ -408,7 +408,7 @@ const mdsFaqs = [
   },
   {
     q: 'What is the MDS course fee at JKKN?',
-    a: 'Management Quota fee ranges from ₹8,00,000 to ₹15,00,000 per year depending on specialization. Government Quota fee is as per Tamil Nadu state norms. Contact admissions for specialization-wise figures.',
+    a: 'Management Quota fee is ₹8,50,000 per year, the same across all five DCI-approved specialisations. Government Quota fee is as per Tamil Nadu state norms. Contact admissions for specialization-wise figures.',
   },
   {
     q: 'What is the MDS admission process?',

@@ -55,7 +55,7 @@ export default function AboutInstitution() {
               </li>
               <li className="flex items-start gap-2 sm:gap-3">
                 <Check className="w-5 h-5 sm:w-6 sm:h-6 text-[#7cb983] flex-shrink-0" />
-                <Link href="/research/publication/" className="text-gray-700 font-medium text-sm sm:text-base hover:text-[#006837] hover:underline">50+ Research Publications Annually</Link>
+                <Link href="/research/publication/" className="text-gray-700 font-medium text-sm sm:text-base hover:text-[#006837] hover:underline">50+ Research Publications</Link>
               </li>
               <li className="flex items-start gap-2 sm:gap-3">
                 <Check className="w-5 h-5 sm:w-6 sm:h-6 text-[#7cb983] flex-shrink-0" />

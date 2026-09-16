@@ -127,10 +127,15 @@ export function AnimatedCounter({
 }) {
   const ref = useRef<HTMLSpanElement>(null);
   const isInView = useInView(ref, { once: true, amount: 0.5 });
-  const [displayValue, setDisplayValue] = useState(0);
+  // Seeded from `value`, not 0, so the real figure is present in the server-rendered HTML.
+  // Seeding at 0 published "0+ Alumni" and "0% Placement" to every crawler and AI engine
+  // that does not scroll the page. The count-up animation still runs once, on scroll.
+  const [displayValue, setDisplayValue] = useState(value);
+  const [hasAnimated, setHasAnimated] = useState(false);
 
   useEffect(() => {
-    if (isInView) {
+    if (isInView && !hasAnimated) {
+      setHasAnimated(true);
       const duration = value > 500 ? 2 : 1.5;
       const controls = animate(0, value, {
         duration,
@@ -139,7 +144,7 @@ export function AnimatedCounter({
       });
       return () => controls.stop();
     }
-  }, [isInView, value]);
+  }, [isInView, value, hasAnimated]);
 
   return (
     <span ref={ref} className={className}>

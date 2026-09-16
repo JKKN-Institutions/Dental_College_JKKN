@@ -264,7 +264,7 @@ export default function ScholarshipPolicy() {
                     <td className="border border-gray-200 px-4 py-3 text-center font-semibold text-[#006837]">6L / Yr</td>
                   </tr>
                   <tr className="bg-[#FBFBEE]/60">
-                    <td className="border border-gray-200 px-4 py-3">Maintainence Scholarship</td>
+                    <td className="border border-gray-200 px-4 py-3">Maintenance Scholarship</td>
                     <td className="border border-gray-200 px-4 py-3 text-center font-semibold text-[#006837]">5K &lt; 10K / Yr</td>
                     <td className="border border-gray-200 px-4 py-3 text-center text-gray-400">—</td>
                   </tr>
@@ -289,7 +289,7 @@ export default function ScholarshipPolicy() {
                       All Community<br />
                       <span className="font-normal text-xs text-gray-500">(Govt / Govt Aided School 6 to 12 Std, Tamil Medium)</span>
                     </td>
-                    <td className="border border-gray-200 px-4 py-3">Naan Phudulvan Scholarship</td>
+                    <td className="border border-gray-200 px-4 py-3">Naan Mudhalvan Scholarship</td>
                     <td className="border border-gray-200 px-4 py-3 text-center font-semibold text-[#006837]" colSpan={2}>₹1,000 / month (Boys &amp; Girls)</td>
                   </tr>
                 </tbody>

@@ -131,12 +131,12 @@ export default function AddOnCourses() {
             </div>
           </section>
 
-          {/* Upcoming Courses */}
+          {/* Past Courses */}
           <section>
             <div className="flex items-center gap-3 mb-6">
-              <h3 className="text-2xl font-bold text-[#006837]">Upcoming Courses</h3>
-              <span className="bg-[#006837] text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">
-                Upcoming
+              <h3 className="text-2xl font-bold text-[#006837]">Past Courses</h3>
+              <span className="bg-gray-500 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">
+                Conducted
               </span>
             </div>
 
@@ -160,7 +160,7 @@ export default function AddOnCourses() {
                 <div>
                   <p className="text-sm font-bold text-[#006837] uppercase tracking-wide mb-3">Course coordinator:</p>
                   <ul className="space-y-1 text-gray-700 text-sm md:text-base mb-4">
-                    <li>Dr. Rekha (Oral aurgery),</li>
+                    <li>Dr. Rekha (Oral Surgery),</li>
                     <li>Dr. Sasikumar(Periodontics),</li>
                     <li>Dr. Dhinesh Kumar (Prosthodontics),</li>
                   </ul>
@@ -194,7 +194,7 @@ export default function AddOnCourses() {
 
             {/* Dental Photography Course */}
             <div className="bg-white rounded-2xl shadow-sm border border-[#7cb983]/30 p-6 md:p-8 mb-6">
-              <p className="text-base font-bold text-[#006837] mb-4">Upcoming Dental photography course</p>
+              <p className="text-base font-bold text-[#006837] mb-4">Dental photography course — dates to be announced</p>
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
                   <p className="text-sm font-bold text-[#006837] mb-2">Course coordinator:</p>

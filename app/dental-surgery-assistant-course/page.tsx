@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   title:
     "Dental Surgery Assistant Course | JKKN Dental College",
   description:
-    "Certified Dental Surgery Assistant course, 6 months at JKKN Dental College. Hands-on training, 250+ chair hospital. \u20B925,000 fee. Apply by April 28, 2026.",
+    "Certified Dental Surgery Assistant course, 6 months at JKKN Dental College. Hands-on training, 200+ chair hospital. \u20B925,000 fee. Call for the next batch date.",
   keywords:
     "dental surgery assistant course, dental assistant certificate, DSA course Tamil Nadu, dental assistant training Namakkal, JKKN dental college courses, 6 month dental course",
   alternates: {
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "DSA 6-Month Certificate Course | JKKN Dental College",
     description:
-      "Hands-on training in 250+ chair hospital. Start earning \u20B98,000\u201312,000/month. Limited seats. Apply now!",
+      "Hands-on training in 200+ chair hospital. Start earning \u20B98,000\u201312,000/month. Limited seats. Apply now!",
     url: "https://dental.jkkn.ac.in/dental-surgery-assistant-course/",
     siteName: "JKKN Dental College & Hospital",
     type: "website",
@@ -41,20 +41,20 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "DSA 6-Month Certificate Course | JKKN Dental College",
     description:
-      "Hands-on training in 250+ chair hospital. Start earning \u20B98,000\u201312,000/month. Limited seats. Apply now!",
+      "Hands-on training in 200+ chair hospital. Start earning \u20B98,000\u201312,000/month. Limited seats. Apply now!",
   },
   robots: { index: true, follow: true },
 };
 
 // ===== CONSTANTS =====
-const PHONE = "6381111621";
+const PHONE = "9345855001";
 
 // ===== INLINE DATA =====
 const heroStats = [
   { value: "6 Months", label: "Full-Time Program" },
-  { value: "\u20B925,000", label: "Total Course Fee" },
+  { value: "\u20B925,000", label: "Total Course Fee (2026-27)" },
   { value: "\u20B98K\u201312K", label: "Starting Salary / Month" },
-  { value: "250+", label: "Dental Chairs" },
+  { value: "200+", label: "Dental Chairs" },
 ];
 
 const trustItems = [
@@ -63,7 +63,7 @@ const trustItems = [
   // the dental college opened 1987. Left bare under a "JKKN Dental College" heading it reads
   // as the college's own age - the exact claim the 1952 -> 1987 pass removed everywhere else.
   { emoji: "\u23F1\uFE0F", text: "JKKN Institutions since 1952" },
-  { emoji: "\uD83E\uDDB7", text: "250+ Dental Chairs" },
+  { emoji: "\uD83E\uDDB7", text: "200+ Dental Chairs" },
   { emoji: "\uD83D\uDC65", text: "500+ Daily Patients" },
   { emoji: "\uD83D\uDCBC", text: "Placement Support" },
   { emoji: "\uD83C\uDFE5", text: "100+ Hospital Beds" },
@@ -73,7 +73,7 @@ const trustItems = [
 const bentoCards = [
   {
     emoji: "\uD83C\uDFE5",
-    bigNum: "250+",
+    bigNum: "200+",
     title: "Chair Multi-Specialty Dental Hospital",
     desc: "Train in one of Tamil Nadu\u2019s largest dental facilities with 500+ daily patients and hands-on experience across all major specialties.",
     variant: "featured" as const,
@@ -150,7 +150,7 @@ const timelineMonths = [
 const whyCards = [
   {
     num: 1,
-    title: "250+ Chair Dental Hospital",
+    title: "200+ Chair Dental Hospital",
     desc: "One of Tamil Nadu\u2019s largest dental facilities with 500+ daily patients and 100+ hospital beds.",
   },
   {
@@ -223,7 +223,7 @@ const faqItems = [
   {
     question: "When is the last date to apply?",
     answer:
-      "Admission closes on April 28, 2026. Seats are limited and filled on a first-come, first-served basis. We recommend applying early to secure your spot.",
+      "Seats are limited and filled on a first-come, first-served basis. Call +91 93458 55001 for the next batch's closing date. We recommend applying early to secure your spot.",
   },
 ];
 
@@ -233,7 +233,7 @@ const courseSchema = {
   "@type": "Course",
   name: "Certificate Course in Dental Surgery Assistant",
   description:
-    "A 6-month full-time certificate program training students to become professional dental surgery assistants with hands-on clinical experience at a 250+ chair dental hospital.",
+    "A 6-month full-time certificate program training students to become professional dental surgery assistants with hands-on clinical experience at a 200+ chair dental hospital.",
   provider: {
     "@type": "EducationalOrganization",
     name: "JKKN Dental College & Hospital",
@@ -254,8 +254,7 @@ const courseSchema = {
     "@type": "Offer",
     price: "25000",
     priceCurrency: "INR",
-    availability: "https://schema.org/LimitedAvailability",
-    validThrough: "2026-04-28",
+    availability: "https://schema.org/InStock",
   },
   coursePrerequisites:
     "10th or 12th standard pass from any recognized board. Minimum age 17 years.",
@@ -279,7 +278,7 @@ const localBusinessSchema = {
   "@type": "Dentist",
   name: "JKKN Dental College & Hospital",
   url: "https://dental.jkkn.ac.in",
-  telephone: "+916381111621",
+  telephone: "+919345855001",
   email: "aishwarya@jkkn.ac.in",
   address: {
     "@type": "PostalAddress",
@@ -300,7 +299,7 @@ const localBusinessSchema = {
 export default function DSACoursePage() {
   const speakableSchema = generateSpeakableWebPageSchema({
     title: 'Dental Surgery Assistant Course | JKKN Dental College',
-    description: 'Become a Certified Dental Surgery Assistant in 6 months at JKKN Dental College, Namakkal. Hands-on training in 250+ chair hospital. ₹25,000 fee. Apply before April 28, 2026.',
+    description: 'Become a Certified Dental Surgery Assistant in 6 months at JKKN Dental College, Namakkal. Hands-on training in 200+ chair hospital. ₹25,000 fee. Call for the next batch date.',
     url: 'https://dental.jkkn.ac.in/dental-surgery-assistant-course/',
     speakableCssSelectors: ['h1', '.hero-description', 'article p'],
   });
@@ -347,7 +346,7 @@ export default function DSACoursePage() {
         >
           <div className="inline-flex items-center gap-5 flex-wrap justify-center">
             <span>
-              Admission Closes: <strong>April 28, 2026</strong>
+              Applications Open &mdash; <strong>call for the next batch date</strong>
             </span>
             <span className="w-px h-4 bg-white/30 hidden md:block" />
             <span className="inline-flex items-center gap-1.5">
@@ -417,7 +416,7 @@ export default function DSACoursePage() {
                 className="text-white/70 mb-8 max-w-[620px] mx-auto leading-relaxed"
                 style={{ fontSize: "clamp(16px, 2.2vw, 20px)" }}
               >
-                Hands-on clinical training at JKKN&apos;s 250+ Chair
+                Hands-on clinical training at JKKN&apos;s 200+ Chair
                 Multi-Specialty Dental Hospital. No degree required &mdash; 10th
                 or 12th pass is enough to start your healthcare career.
               </p>
@@ -666,7 +665,7 @@ export default function DSACoursePage() {
                     {
                       emoji: "\u26A0\uFE0F",
                       label: "Deadline",
-                      value: "April 28, 2026",
+                      value: "Call for next batch date",
                       highlight: true,
                     },
                   ].map((row, i) => (

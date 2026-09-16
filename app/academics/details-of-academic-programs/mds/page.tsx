@@ -535,8 +535,8 @@ export default function MDSProgram() {
                   <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z" />
                 </svg>
               </div>
-              <div className="text-4xl md:text-5xl font-bold text-[#7cb983] mb-3">25+</div>
-              <div className="text-sm text-white uppercase">Expert Senior Learners</div>
+              <div className="text-4xl md:text-5xl font-bold text-[#7cb983] mb-3">46</div>
+              <div className="text-sm text-white uppercase">Faculty Members</div>
             </div>
 
             {/* Dental Chairs */}
@@ -557,8 +557,8 @@ export default function MDSProgram() {
                   <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z" />
                 </svg>
               </div>
-              <div className="text-4xl md:text-5xl font-bold text-[#7cb983] mb-3">50K+</div>
-              <div className="text-sm text-white uppercase">Patients/Year</div>
+              <div className="text-4xl md:text-5xl font-bold text-[#7cb983] mb-3">500+</div>
+              <div className="text-sm text-white uppercase">Daily Patients</div>
             </div>
 
             {/* DCI Approved */}
@@ -579,7 +579,7 @@ export default function MDSProgram() {
                   <path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z" />
                 </svg>
               </div>
-              <div className="text-4xl md:text-5xl font-bold text-[#7cb983] mb-3">200+</div>
+              <div className="text-4xl md:text-5xl font-bold text-[#7cb983] mb-3">50+</div>
               <div className="text-sm text-white uppercase">Publications</div>
             </div>
 

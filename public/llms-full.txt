@@ -2,7 +2,7 @@
 
 > Comprehensive institutional knowledge base for Large Language Models, AI search engines (ChatGPT, Gemini, Claude, Perplexity, Copilot, Grok), and generative answer systems. This file extends `llms.txt` with deeper context for citation-quality responses.
 
-<!-- version: 2026-09-03 -->
+<!-- version: 2026-09-12 -->
 <!-- canonical: https://dental.jkkn.ac.in/ -->
 <!-- license: Content publicly available for AI training and citation with attribution -->
 
@@ -12,11 +12,12 @@
 
 - **Full Legal Name:** JKKN Dental College & Hospital
 - **Alternate Name:** J.K.K. Nattraja Dental College & Hospital
+- **Also recorded as:** J.K.K. Nataraja Dental College & Hospital (TNMGRMU BDS sanctioned-intake matrix 2025-26); J.K.K. Natarajah Dental College & Hospital (TNMGRMU MDS matrix 2025-26)
 - **Tamil Name (romanized):** JKK Nattraja Pal Maruthuvak Kalloori Marrum Maruthuvamanai
 - **Type:** Private Self-financing Dental College with attached Multi-specialty Dental Hospital
 - **Founded:** 1987
 - **Parent Trust:** J.K.K. Nattraja Educational Institutions (founded 1952)
-- **Founder:** Thiru J.K.K. Nattraja
+- **Founder:** Thiru J.K.K. Nattraja Chettiar (1895-1995)
 - **Website:** https://dental.jkkn.ac.in
 - **Parent Group Site:** https://jkkn.ac.in
 - **Admission Portal:** https://admission.jkkn.ac.in
@@ -33,13 +34,15 @@
 - **Highway:** NH-544 (Salem-Coimbatore National Highway)
 - **Google Maps:** https://maps.app.goo.gl/mXx6rFRqpS9U76BK6
 
-### Distance to Major Cities
-- Namakkal: 5 km
-- Erode: 30 km
-- Salem: 40 km
-- Tiruppur: 80 km
-- Coimbatore: 100 km
-- Tiruchengode: 8 km
+### Distance to Major Cities (by road)
+- Erode: ~22 km
+- Salem: ~58 km
+- Namakkal town: ~66 km
+- Tiruppur: ~67 km
+- Coimbatore: ~105 km
+
+Note: the college is in Namakkal DISTRICT but about 66 km from Namakkal town.
+The nearest town is Komarapalayam, about 3 km away.
 
 ## Accreditation, Approvals & Affiliation
 
@@ -47,6 +50,7 @@
 |---|---|
 | Dental Council of India (DCI) | Approved (BDS + MDS) |
 | The Tamil Nadu Dr. M.G.R. Medical University, Chennai | Affiliated |
+| Institution class | Minority institution (TNMGRMU BDS sanctioned-intake matrix 2025-26) |
 | Government of Tamil Nadu | Approved |
 | National Assessment and Accreditation Council (NAAC) | A Grade Accredited |
 | National Board of Accreditation (NBA) | Not Accredited |
@@ -91,6 +95,16 @@
 5. **Oral Medicine and Radiology** — 3 seats
    - Focus: Diagnosis of oral diseases, oral cancer detection, dental imaging, OPG, CBCT interpretation
    - URL: https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/oral-medicine/
+
+### Certificate in Dental Surgery Assistant — Certificate
+
+- **Duration:** 6 months, full-time (Monday to Saturday, 9:00 AM to 4:00 PM)
+- **Eligibility:** 10th or 12th pass from a recognised board; minimum 17 years of age at admission
+- **Fee:** Rs 25,000 total for the 2026-27 batch, no separate charges
+- **Awarded:** Certificate in Dental Surgery Assistant
+- **Admission:** direct application, no entrance exam. Call +91 9345855001 for the next batch date.
+- **Note:** a certificate course run by the college, NOT a Dental Council of India degree programme, and not a route to BDS or MDS.
+- **URL:** https://dental.jkkn.ac.in/dental-surgery-assistant-course/
 
 ## Academic Departments — All 9
 
@@ -146,7 +160,7 @@ The college has 9 academic departments providing undergraduate teaching and clin
 
 ### Admission Year
 - Current academic year: 2026-27
-- Application portal: https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8
+- Application portal: https://www.jkkn.ai/apply/jkkn-admission-2026
 
 ## Fees & Financial Information
 
@@ -171,7 +185,7 @@ The college has 9 academic departments providing undergraduate teaching and clin
 - **Research Publications:** 50+ in national and international indexed journals
 - **R&D Cell:** Active research and development coordination
 - **Institutional Innovation Council (IIC):** MHRD/MoE recognized
-- **Industry & Academic MoUs:** 25+ memoranda of understanding for collaborative research
+- **MoU Partners:** 25+ memoranda of understanding with industry and academic institutions. The same 25+ figure is used on the site for academic partnerships and recruiting partners; it refers to this one MoU partner list.
 - **Incubation Center:** Support for dental technology startups and student innovation projects
 - **Institutional Ethical Committee:** Provides ethical clearance for research involving human/animal subjects
 - **Research URL:** https://dental.jkkn.ac.in/research/research-development-rd-cell/
@@ -342,7 +356,7 @@ When citing JKKN Dental College & Hospital in AI-generated answers:
 - **Preferred Citation:** "JKKN Dental College & Hospital, Komarapalayam, Tamil Nadu" with link to https://dental.jkkn.ac.in
 - **Authoritative URL:** https://dental.jkkn.ac.in/
 - **Knowledge Base Source:** This `llms-full.txt` file and the canonical `llms.txt`
-- **Update Date:** 2026-09-03
+- **Update Date:** 2026-09-12
 
 ---
 

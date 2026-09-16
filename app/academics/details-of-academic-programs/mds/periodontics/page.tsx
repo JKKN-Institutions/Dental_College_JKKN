@@ -66,7 +66,7 @@ export default function MDSPeriodontics() {
         "name": "Is hostel accommodation available for postgraduate Learners?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes, we provide separate hostel facilities for male and female postgraduate Learners. Girls: AC Room — ₹30,000/Year. Boys: No hostel charges applicable. Classic Mess and Premium Mess are not available for Dental students. The hostels are equipped with modern amenities including Wi-Fi, 24/7 security, and recreational areas."
+          "text": "Yes, we provide separate hostel facilities for male and female postgraduate Learners. Hostel fees for both boys and girls are charged separately from tuition — contact the admissions office for the current hostel fee. Classic Mess and Premium Mess are not available for Dental students. The hostels are equipped with modern amenities including Wi-Fi, 24/7 security, and recreational areas."
         }
       },
       {
@@ -1044,10 +1044,10 @@ export default function MDSPeriodontics() {
                     <td className="px-4 md:px-6 py-4 text-gray-900 font-bold text-sm md:text-base">$500</td>
                   </tr>
                   <tr className="bg-gray-50 hover:bg-gray-100">
-                    <td className="px-4 md:px-6 py-4 text-gray-700 font-medium text-sm md:text-base">Hostel Fee – Girls AC Room (Per Annum)</td>
-                    <td className="px-4 md:px-6 py-4 text-gray-900 font-bold text-sm md:text-base">₹30,000</td>
-                    <td className="px-4 md:px-6 py-4 text-gray-900 font-bold text-sm md:text-base">₹30,000</td>
-                    <td className="px-4 md:px-6 py-4 text-gray-900 font-bold text-sm md:text-base">$1,200</td>
+                    <td className="px-4 md:px-6 py-4 text-gray-700 font-medium text-sm md:text-base">Hostel Fee (Boys &amp; Girls, Per Annum)</td>
+                    <td className="px-4 md:px-6 py-4 text-gray-900 font-bold text-sm md:text-base">Contact office</td>
+                    <td className="px-4 md:px-6 py-4 text-gray-900 font-bold text-sm md:text-base">Contact office</td>
+                    <td className="px-4 md:px-6 py-4 text-gray-900 font-bold text-sm md:text-base">Contact office</td>
                   </tr>
                 </tbody>
               </table>
@@ -1061,7 +1061,7 @@ export default function MDSPeriodontics() {
                 <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
               </svg>
               <p className="text-gray-700">
-                Fees are subject to revision as per university and government norms. Hostel fees: Girls — AC Room ₹30,000/Year; Boys — not applicable. Government scholarships (PMSS, Naan Phudulvan, First Graduate, etc.) and education loans are available for eligible Learners. Contact the admissions office for the latest fee structure.
+                Fees are subject to revision as per university and government norms. Hostel fees: contact the admissions office (charged separately for both boys and girls). Government scholarships (PMSS, Naan Mudhalvan, First Graduate, etc.) and education loans are available for eligible Learners. Contact the admissions office for the latest fee structure.
               </p>
             </div>
           </div>
@@ -1137,7 +1137,7 @@ export default function MDSPeriodontics() {
               </summary>
               <div className="px-6 pb-5">
                 <p className="text-gray-700">
-                  Yes, we provide separate hostel facilities for male and female postgraduate Learners. Girls: AC Room — ₹30,000/Year. Boys: No hostel charges applicable. Classic Mess and Premium Mess are not available for Dental learners. The hostels are equipped with modern amenities including Wi-Fi, 24/7 security, and recreational areas.
+                  Yes, we provide separate hostel facilities for male and female postgraduate Learners. Hostel fees for both boys and girls are charged separately from tuition — contact the admissions office for the current hostel fee. Classic Mess and Premium Mess are not available for Dental learners. The hostels are equipped with modern amenities including Wi-Fi, 24/7 security, and recreational areas.
                 </p>
               </div>
             </details>

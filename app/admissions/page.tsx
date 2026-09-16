@@ -111,7 +111,7 @@ const faqSchema = {
       name: 'Are scholarships available at JKKN Dental College?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'JKKN Dental College offers merit-based scholarships, sports quota scholarships, single parent scholarships, and government scholarships: SC/SCA/ST/BC-CC — PMSS (GQ: 2.5L/Yr, MQ: 6L/Yr), Maintainence Scholarship (5K–10K/Yr); BC/MBC/DNC/BCM — First Graduate (40K/Yr), Community Scholarship (5K–10K/Yr); All Community Tamil Medium — Naan Phudulvan ₹1,000/month.',
+        text: 'JKKN Dental College offers merit-based scholarships, sports quota scholarships, single parent scholarships, and government scholarships: SC/SCA/ST/BC-CC — PMSS (GQ: 2.5L/Yr, MQ: 6L/Yr), Maintenance Scholarship (5K–10K/Yr); BC/MBC/DNC/BCM — First Graduate (40K/Yr), Community Scholarship (5K–10K/Yr); All Community Tamil Medium — Naan Mudhalvan ₹1,000/month.',
       },
     },
     {
@@ -888,7 +888,7 @@ export default function AdmissionPage() {
               },
               {
                 q: 'Are scholarships available?',
-                a: 'Yes. JKKN offers merit-based scholarships, sports quota scholarships (wrestling, volleyball, basketball, etc.), single parent scholarships, and government scholarships: SC/SCA/ST/BC-CC — PMSS (GQ: 2.5L/Yr, MQ: 6L/Yr), Maintainence Scholarship (5K–10K/Yr); BC/MBC/DNC/BCM — First Graduate (40K/Yr), Community Scholarship (5K–10K/Yr); All Community Tamil Medium — Naan Phudulvan ₹1,000/month.',
+                a: 'Yes. JKKN offers merit-based scholarships, sports quota scholarships (wrestling, volleyball, basketball, etc.), single parent scholarships, and government scholarships: SC/SCA/ST/BC-CC — PMSS (GQ: 2.5L/Yr, MQ: 6L/Yr), Maintenance Scholarship (5K–10K/Yr); BC/MBC/DNC/BCM — First Graduate (40K/Yr), Community Scholarship (5K–10K/Yr); All Community Tamil Medium — Naan Mudhalvan ₹1,000/month.',
               },
               {
                 q: 'What is the fee structure for BDS?',

@@ -61,7 +61,7 @@ export default function BDSProgram() {
               },
               {
                 q: 'Where is JKKN Dental College located?',
-                a: 'JKKN Dental College is at Natarajapuram, NH-544, Komarapalayam, Namakkal District, Tamil Nadu 638183. Distances: Tiruchengode (~15 km), Erode (~22 km, 35 min), Salem (~58 km, 1 hr), Namakkal town (~66 km), Tiruppur (~67 km), Coimbatore (~105 km, 2 hrs). It is approved by the Dental Council of India and NAAC accredited with an A Grade.'
+                a: 'JKKN Dental College is at Natarajapuram, NH-544, Komarapalayam, Namakkal District, Tamil Nadu 638183. Distances: Erode (~22 km, 35 min), Salem (~58 km, 1 hr), Namakkal town (~66 km), Tiruppur (~67 km), Coimbatore (~105 km, 2 hrs). It is approved by the Dental Council of India and NAAC accredited with an A Grade.'
               },
               {
                 q: 'What hostel facilities are available for BDS learners?',
@@ -332,14 +332,14 @@ export default function BDSProgram() {
           <div className="grid md:grid-cols-2 gap-6">
             {[
               { num: 1, title: 'DCI Approved & NAAC Accredited', desc: 'Fully approved by the Dental Council of India and accredited by NAAC, ensuring nationally recognized standards of dental education and patient care.' },
-              { num: 2, title: '200+ Dental Chairs — Largest in the Region', desc: 'One of the largest dental clinical facilities in the Namakkal-Erode-Salem corridor with 200+ operational dental chairs and 100+ hospital beds for comprehensive training.' },
+              { num: 2, title: '200+ Dental Chairs', desc: 'A large dental clinical facility in the Namakkal-Erode-Salem corridor with 200+ operational dental chairs and 100+ hospital beds for comprehensive training.' },
               { num: 3, title: '500+ Daily Patients — Clinical Exposure from Year 1', desc: 'Learners receive hands-on clinical training from Year 1 with 500+ patients visiting daily across 9 specialized departments — a key advantage over many BDS colleges in Tamil Nadu.' },
               { num: 4, title: '92% Placement (2024-25) Assistance (2024-25 batch) — Including International', desc: 'Strong placement record with recruiters like Apollo Hospitals, Clove Dental, NHS UK, and Cleveland Clinic Abu Dhabi. 3,000+ alumni network worldwide.' },
               { num: 5, title: '5 MDS Specializations — Seamless UG to PG Pathway', desc: 'Pursue MDS in Periodontics, Orthodontics, Prosthodontics, Conservative & Endodontics, or Oral Medicine & Radiology — 18 PG seats available right on campus.' },
-              { num: 6, title: '74+ Years of Trust Legacy (Since 1952)', desc: 'Part of J.K.K. Nattraja Educational Institutions, one of the oldest educational trusts in Tamil Nadu with a legacy spanning 74+ years across 10 institutions.' },
-              { num: 7, title: 'Strategic NH-544 Location — Well-Connected', desc: 'Located on the Salem-Coimbatore National Highway, easily accessible from Erode (~22 km), Salem (~58 km), Tiruchengode (~15 km), and Coimbatore (~105 km).' },
+              { num: 6, title: '74+ Years of Trust Legacy (Since 1952)', desc: 'Part of J.K.K. Nattraja Educational Institutions, one of the oldest educational trusts in Tamil Nadu with a legacy spanning 74+ years across 9 institutions.' },
+              { num: 7, title: 'Strategic NH-544 Location — Well-Connected', desc: 'Located on the Salem-Coimbatore National Highway, easily accessible from Erode (~22 km), Salem (~58 km), Namakkal town (~66 km), and Coimbatore (~105 km).' },
               { num: 8, title: 'AI-Integrated Campus — India\'s First', desc: 'India\'s first AI-integrated dental campus, blending traditional clinical excellence with cutting-edge artificial intelligence tools for diagnostics and education.' },
-              { num: 9, title: '50+ Research Publications — Strong Research Culture', desc: 'Active research ecosystem with 50+ published research papers, 25+ academic partnerships, ethical committee approvals, and dedicated R&D facilities.' },
+              { num: 9, title: '50+ Research Publications — Strong Research Culture', desc: 'Active research ecosystem with 50+ published research papers, 25+ MoU partners, ethical committee approvals, and dedicated R&D facilities.' },
               { num: 10, title: 'Affordable Fee Structure with Scholarships', desc: 'Government-regulated fee structure with scholarship options for meritorious learners and economically weaker sections (BC/MBC/SC/ST categories).' },
             ].map((item) => (
               <div key={item.num} className="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-shadow duration-300">
@@ -748,8 +748,8 @@ export default function BDSProgram() {
                 <tr className="bg-[#006837] text-white">
                   <th className="px-4 py-4 text-left text-sm font-semibold">Year</th>
                   <th className="px-4 py-4 text-left text-sm font-semibold">Category</th>
-                  <th className="px-4 py-4 text-center text-sm font-semibold">Opening Rank</th>
-                  <th className="px-4 py-4 text-center text-sm font-semibold">Closing Rank</th>
+                  <th className="px-4 py-4 text-center text-sm font-semibold">Opening Marks</th>
+                  <th className="px-4 py-4 text-center text-sm font-semibold">Closing Marks</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-100">
@@ -1053,7 +1053,7 @@ export default function BDSProgram() {
               { title: 'Digital Radiology', subtitle: 'OPG, CBCT & Digital X-Ray', desc: 'Latest digital radiology equipment for accurate diagnosis and treatment planning', gradient: 'from-[#7cb983] to-[#6ba872]', iconBg: 'bg-white/20' },
               { title: 'Research Center', subtitle: 'R&D Facilities', desc: 'Dedicated research infrastructure supporting 50+ publications and evidence-based dentistry', gradient: 'from-[#006837] to-[#002309]', iconBg: 'bg-[#7cb983]' },
               { title: 'Digital Learning Commons', subtitle: 'Books, Journals & E-Resources', desc: 'Central learning commons with extensive collection of dental textbooks, international journals, and online databases', gradient: 'from-[#7cb983] to-[#6ba872]', iconBg: 'bg-white/20' },
-              { title: 'AI-Integrated Campus', subtitle: "India's First", desc: 'Cutting-edge AI tools integrated into dental education, diagnostics, and patient management systems', gradient: 'from-[#006837] to-[#002309]', iconBg: 'bg-[#7cb983]' },
+              { title: 'AI-Integrated Campus', subtitle: 'AI-Integrated', desc: 'Cutting-edge AI tools integrated into dental education, diagnostics, and patient management systems', gradient: 'from-[#006837] to-[#002309]', iconBg: 'bg-[#7cb983]' },
             ].map((facility, idx) => (
               <div key={idx} className={`bg-gradient-to-br ${facility.gradient} rounded-2xl p-8 text-white relative overflow-hidden group hover:shadow-2xl transition-shadow duration-300`}>
                 <h3 className="text-3xl font-bold mb-2">{facility.title}</h3>
@@ -1083,37 +1083,30 @@ export default function BDSProgram() {
           <h2 className="text-3xl md:text-4xl font-bold text-[#006837] text-center mb-4">
             Distinguished Senior Learners — Experts in Dental Sciences
           </h2>
-          <p className="text-gray-600 text-center mb-12 max-w-3xl mx-auto">
-            Our experienced senior learners bring decades of clinical and academic expertise, contributing to 50+ research publications and mentoring the next generation of dental professionals
+          <p className="text-gray-600 text-center mb-10 max-w-3xl mx-auto">
+            JKKN Dental College is taught by 46 faculty members across all 9 departments,
+            contributing to 50+ research publications and mentoring the next generation of
+            dental professionals.
           </p>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {[
-              { name: '[UPDATE — HOD Name]', role: 'Principal & Head of Institution', qualification: '[UPDATE — MDS, PhD]', experience: '[UPDATE] years of academic and clinical experience', department: 'Administration' },
-              { name: '[UPDATE — Faculty Name]', role: 'Professor & HOD, Periodontics', qualification: '[UPDATE — MDS Periodontics]', experience: '[UPDATE] years of teaching and research experience', department: 'Periodontics' },
-              { name: '[UPDATE — Faculty Name]', role: 'Professor & HOD, Orthodontics', qualification: '[UPDATE — MDS Orthodontics]', experience: '[UPDATE] years specializing in orthodontic treatment', department: 'Orthodontics' },
-              { name: '[UPDATE — Faculty Name]', role: 'Professor & HOD, Prosthodontics', qualification: '[UPDATE — MDS Prosthodontics]', experience: '[UPDATE] years in prosthetic dentistry', department: 'Prosthodontics' },
-              { name: '[UPDATE — Faculty Name]', role: 'Professor & HOD, Conservative & Endodontics', qualification: '[UPDATE — MDS Conservative]', experience: '[UPDATE] years in restorative dentistry', department: 'Conservative & Endodontics' },
-              { name: '[UPDATE — Faculty Name]', role: 'Professor & HOD, Oral Surgery', qualification: '[UPDATE — MDS Oral Surgery]', experience: '[UPDATE] years in oral and maxillofacial surgery', department: 'Oral & Maxillofacial Surgery' },
-            ].map((faculty, idx) => (
-              <div key={idx} className="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-shadow duration-300">
-                <div className="w-16 h-16 bg-[#006837] rounded-full flex items-center justify-center mb-4">
-                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                  </svg>
-                </div>
-                <h3 className="font-bold text-[#006837] text-lg mb-1">{faculty.name}</h3>
-                <p className="text-[#7cb983] font-semibold text-sm mb-2">{faculty.role}</p>
-                <p className="text-gray-600 text-sm mb-1">{faculty.qualification}</p>
-                <p className="text-gray-500 text-sm">{faculty.experience}</p>
-                <span className="inline-block mt-3 bg-green-50 text-[#006837] px-3 py-1 rounded-full text-xs font-medium">{faculty.department}</span>
-              </div>
-            ))}
+          <div className="max-w-2xl mx-auto bg-white border border-gray-200 rounded-xl p-8 text-center">
+            <div className="w-16 h-16 bg-[#006837] rounded-full flex items-center justify-center mb-4 mx-auto">
+              <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+              </svg>
+            </div>
+            <h3 className="font-bold text-[#006837] text-lg mb-2">Meet the Faculty</h3>
+            <p className="text-gray-600 text-sm mb-6">
+              Every faculty member has a full profile &mdash; department, qualifications and
+              years of clinical and academic experience.
+            </p>
+            <a
+              href="/faculty/"
+              className="inline-block bg-[#006837] hover:bg-[#00522b] text-white font-semibold px-8 py-3 rounded-full transition-colors text-sm"
+            >
+              View all 46 faculty profiles
+            </a>
           </div>
-
-          <p className="text-center mt-8 text-gray-600">
-            JKKN Dental College has a team of highly qualified senior learners across all 9 departments. <a href="/academics/" className="text-[#7cb983] underline hover:text-[#6ba872]">View complete senior learners list</a>.
-          </p>
         </div>
       </section>
 
