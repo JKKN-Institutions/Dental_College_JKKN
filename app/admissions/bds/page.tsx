@@ -366,7 +366,7 @@ const whyJKKN = [
   { text: `${collegeFacts.dentalChairs}+ dental chairs & ${collegeFacts.hospitalBeds}+ hospital beds for clinical exposure`, icon: Stethoscope },
   { text: `${collegeFacts.dailyPatients}+ daily patients — hands-on training from Year 1`, icon: HeartPulse },
   { text: 'DCI approved, NAAC A grade accredited institution', icon: Award },
-  { text: 'India\'s 1st AI-Integrated Dental Campus', icon: Cpu },
+  { text: 'AI-Integrated Dental Campus', icon: Cpu },
   { text: '92% placement assistance (2024-25 batch) with national & international tie-ups', icon: Briefcase },
   { text: '9 specialised dental departments with expert senior learners', icon: Users },
   { text: 'NH-544 location — accessible from Salem, Erode, Coimbatore, Tiruppur', icon: MapPin },
@@ -476,7 +476,7 @@ export default function BDSAdmissionPage() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-6">
             <span className="inline-flex items-center gap-2 bg-[#7cb983]/20 backdrop-blur-sm text-[#7cb983] px-4 py-2 rounded-full text-sm font-bold border border-[#7cb983]/30">
               <Cpu className="w-4 h-4" />
-              India&apos;s 1st AI-Integrated Dental Campus
+              AI-Integrated Dental Campus
             </span>
             <span className="inline-flex items-center gap-2 bg-white/15 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm font-medium">
               <GraduationCap className="w-4 h-4" />

@@ -158,7 +158,7 @@ export default function AcademicPrograms() {
               <tr className="border-b border-gray-100">
                 <td className="px-4 py-3 text-sm text-gray-700 font-medium">Seat Intake</td>
                 <td className="px-4 py-3 text-sm text-gray-600">100 seats</td>
-                <td className="px-4 py-3 text-sm text-gray-600">18+ seats</td>
+                <td className="px-4 py-3 text-sm text-gray-600">18 seats</td>
               </tr>
               <tr className="border-b border-gray-100 bg-gray-50">
                 <td className="px-4 py-3 text-sm text-gray-700 font-medium">Specializations</td>

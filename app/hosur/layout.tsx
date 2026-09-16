@@ -182,7 +182,7 @@ const howToSchema = {
   "step": [
     { "@type": "HowToStep", "position": 1, "name": "Start from Hosur", "text": "Head south from Hosur bus stand on NH-44 towards Krishnagiri." },
     { "@type": "HowToStep", "position": 2, "name": "Travel on NH-44 to Salem", "text": "Follow NH-44 through Krishnagiri and Dharmapuri to reach Salem — approximately 205 km." },
-    { "@type": "HowToStep", "position": 3, "name": "Continue on NH-544 towards Komarapalayam", "text": "From Salem, take NH-544 (Salem–Coimbatore Highway) for approximately 40 km to reach Komarapalayam." },
+    { "@type": "HowToStep", "position": 3, "name": "Continue on NH-544 towards Komarapalayam", "text": "From Salem, take NH-544 (Salem–Coimbatore Highway) for approximately 58 km to reach Komarapalayam." },
     { "@type": "HowToStep", "position": 4, "name": "Arrive at JKKN Dental College", "text": "JKKN Dental College & Hospital is located at Natarajapuram on NH-544, Komarapalayam, Namakkal, Tamil Nadu 638183. Total distance: approximately 245 km, travel time: 4.5 to 5 hours." }
   ]
 };

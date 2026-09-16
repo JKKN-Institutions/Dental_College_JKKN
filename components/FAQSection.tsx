@@ -44,7 +44,7 @@ export default function FAQSection() {
     },
     {
       question: "Where is JKKN Dental College located?",
-      answer: <>JKKN Dental College is located on NH-544 (Salem-Coimbatore Highway) in Komarapalayam, Namakkal District, Tamil Nadu 638183 — approximately 35 km from Erode and 50 km from Salem. <a href="/contact/" className="text-[#006837] hover:underline font-medium">Get campus directions</a>.</>
+      answer: <>JKKN Dental College is located on NH-544 (Salem-Coimbatore Highway) in Komarapalayam, Namakkal District, Tamil Nadu 638183 — approximately 22 km from Erode and 58 km from Salem. <a href="/contact/" className="text-[#006837] hover:underline font-medium">Get campus directions</a>.</>
     },
     {
       question: "What are the hostel facilities at JKKN Dental College?",

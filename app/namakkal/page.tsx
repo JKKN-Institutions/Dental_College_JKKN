@@ -73,7 +73,7 @@ export default function NamakkalPage() {
   const transportRows = [
     { icon: <Route className="w-6 h-6 text-[#006837]" />, label: 'ROUTE', text: 'NH-544 (Salem-Coimbatore Highway) — JKKN campus is on this highway at Komarapalayam, Namakkal district' },
     { icon: <Bus className="w-6 h-6 text-[#006837]" />, label: 'BY BUS', text: 'Frequent buses from Namakkal city via Tiruchengode to Komarapalayam (~60 km, ~1.5 hours). Direct local buses and auto-rickshaws available at Komarapalayam.' },
-    { icon: <Train className="w-6 h-6 text-[#006837]" />, label: 'NEAREST RAILWAY STATION', text: 'Tiruchengode Railway Station (~15 km from campus) | Salem Junction (~60 km from campus) | Erode Junction (~18 km from campus)' },
+    { icon: <Train className="w-6 h-6 text-[#006837]" />, label: 'NEAREST RAILWAY STATION', text: 'Salem Junction (~58 km from campus) | Erode Junction (~22 km from campus)' },
     { icon: <Plane className="w-6 h-6 text-[#006837]" />, label: 'NEAREST AIRPORT', text: 'Coimbatore International Airport (Code: CJB) (~108 km) | Salem Airport (~60 km from campus)' },
     { icon: <MapPin className="w-6 h-6 text-[#006837]" />, label: 'CAMPUS ADDRESS', text: 'JKKN Institutions, Natarajapuram, NH-544, Komarapalayam (TK), Namakkal (DT), Tamil Nadu - 638183' },
   ];
@@ -271,7 +271,7 @@ export default function NamakkalPage() {
           <div className="speakable-summary bg-white rounded-2xl shadow-sm p-6 mb-8 text-sm text-gray-700 leading-relaxed border border-gray-100">
             <p className="font-semibold text-[#006837] mb-2 text-base">About JKKN Dental College &amp; Hospital</p>
             <p>
-              JKKN Dental College &amp; Hospital (full legal name: J.K.K. Nattraja Dental College and Hospital) is a private dental college and teaching hospital established in 1987, located at Natarajapuram, NH-544, Komarapalayam, Namakkal District, Tamil Nadu 638183. The institution is approved by the Dental Council of India (DCI) and affiliated to Tamil Nadu Dr. M.G.R. Medical University, Chennai. The teaching hospital operates 200+ dental chairs and 100+ inpatient beds, treating 500+ outpatients daily. Undergraduate admission (BDS, 100 seats) follows NEET-UG counselling. Postgraduate admission (MDS, 5 specializations) follows NEET-MDS counselling. Recognized as India&apos;s first AI-integrated dental campus.
+              JKKN Dental College &amp; Hospital (full legal name: J.K.K. Nattraja Dental College and Hospital) is a private dental college and teaching hospital established in 1987, located at Natarajapuram, NH-544, Komarapalayam, Namakkal District, Tamil Nadu 638183. The institution is approved by the Dental Council of India (DCI) and affiliated to Tamil Nadu Dr. M.G.R. Medical University, Chennai. The teaching hospital operates 200+ dental chairs and 100+ inpatient beds, treating 500+ outpatients daily. Undergraduate admission (BDS, 100 seats) follows NEET-UG counselling. Postgraduate admission (MDS, 5 specializations) follows NEET-MDS counselling. An AI-integrated dental campus.
             </p>
           </div>
 

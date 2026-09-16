@@ -47,7 +47,7 @@ export default function ErodePage() {
     },
     {
       q: 'Which dental colleges near Erode accept NEET scores?',
-      a: 'All DCI-approved dental colleges near Erode accept NEET UG scores for BDS admission through DME Tamil Nadu counselling. These include JKKN Dental College & Hospital at Komarapalayam (18 km away), KSR Institute of Dental Science at Tiruchengode (14 km away), and Nandha Dental College in Erode city.',
+      a: 'All DCI-approved dental colleges near Erode accept NEET UG scores for BDS admission through DME Tamil Nadu counselling. These include JKKN Dental College & Hospital at Komarapalayam (18 km away), KSR Institute of Dental Science at Tiruchengode, and Nandha Dental College in Erode city.',
     },
   ];
 
@@ -198,7 +198,7 @@ export default function ErodePage() {
           <h3 className="font-bold text-gray-900 mb-3 text-lg">Dental Colleges Near Erode</h3>
           <ol className="list-decimal list-inside space-y-2 text-gray-700 mb-4" style={{ fontSize: 'clamp(0.9rem, 1vw + 0.4rem, 1.05rem)' }}>
             <li><strong>JKKN Dental College &amp; Hospital</strong> — Komarapalayam, Namakkal — approximately 18 km via NH-544</li>
-            <li><strong>KSR Institute of Dental Science and Research</strong> — Tiruchengode, Namakkal — approximately 14 km</li>
+            <li><strong>KSR Institute of Dental Science and Research</strong> — Tiruchengode, Namakkal District</li>
             <li><strong>Nandha Dental College &amp; Hospital</strong> — Erode city — in Erode district (BDS only)</li>
           </ol>
           <p className="text-gray-500 text-sm">All three colleges are affiliated to TN Dr. MGR Medical University and admit students through NEET UG counselling conducted by DME Tamil Nadu.</p>

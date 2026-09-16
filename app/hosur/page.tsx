@@ -69,7 +69,7 @@ export default function HosurPage() {
   const transportRows = [
     { icon: <Route className="w-6 h-6 text-[#006837]" />, label: 'ROUTE', text: 'NH-44 from Hosur through Krishnagiri and Dharmapuri to Salem (~205 km), then NH-544 to Komarapalayam (~40 km) — approximately 245 km total' },
     { icon: <Bus className="w-6 h-6 text-[#006837]" />, label: 'BY BUS', text: 'Frequent buses on the Bangalore–Salem NH-44 corridor from Hosur; change at Salem for Komarapalayam (Salem–Erode route buses stop at Komarapalayam)' },
-    { icon: <Train className="w-6 h-6 text-[#006837]" />, label: 'BY TRAIN', text: 'Trains on the Bengaluru–Salem line to Salem Junction — approximately 40 km from campus by road' },
+    { icon: <Train className="w-6 h-6 text-[#006837]" />, label: 'BY TRAIN', text: 'Trains on the Bengaluru–Salem line to Salem Junction — approximately 58 km from campus by road' },
     { icon: <Plane className="w-6 h-6 text-[#006837]" />, label: 'NEAREST AIRPORT', text: 'Coimbatore International Airport (Code: CJB) (~108 km from campus); Bengaluru International Airport (BLR) serves the Hosur side' },
     { icon: <MapPin className="w-6 h-6 text-[#006837]" />, label: 'CAMPUS ADDRESS', text: 'JKKN Institutions, Natarajapuram, NH-544, Komarapalayam (TK), Namakkal (DT), Tamil Nadu - 638183' },
   ];

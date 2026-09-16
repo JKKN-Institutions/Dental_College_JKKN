@@ -126,11 +126,11 @@ const mdsCourseSchema = {
     priceSpecification: {
       '@type': 'PriceSpecification',
       priceCurrency: 'INR',
-      minPrice: '800000',
-      maxPrice: '1500000',
+      minPrice: '850000',
+      maxPrice: '850000',
       unitText: 'per year',
       description:
-        'Management Quota tuition fee range. Actual fee varies by specialization.',
+        'Management Quota annual tuition 2026-27: Rs 8,50,000, the same across all five MDS specialisations. Government Quota as per TN Fee Fixation Committee norms.',
     },
   },
 };
@@ -499,7 +499,7 @@ export default function MDSAdmissionPage() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-6">
             <span className="inline-flex items-center gap-2 bg-[#7cb983]/20 backdrop-blur-sm text-[#7cb983] px-4 py-2 rounded-full text-sm font-bold border border-[#7cb983]/30">
               <Cpu className="w-4 h-4" />
-              India&apos;s 1st AI-Integrated Dental Campus
+              AI-Integrated Dental Campus
             </span>
             <span className="inline-flex items-center gap-2 bg-white/15 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm font-medium">
               <GraduationCap className="w-4 h-4" />
