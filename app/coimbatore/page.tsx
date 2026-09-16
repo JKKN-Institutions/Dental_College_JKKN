@@ -23,7 +23,7 @@ export default function CoimbatorePage() {
     },
     {
       q: 'What are the MDS specializations at JKKN Dental College?',
-      a: 'JKKN Dental College & Hospital offers 5 MDS specializations: Orthodontics and Dentofacial Orthopaedics, Prosthodontics, Oral and Maxillofacial Surgery, Conservative Dentistry and Endodontics, and Periodontics. MDS admission is through NEET MDS scores and Tamil Nadu state counseling.',
+      a: 'JKKN Dental College & Hospital offers 5 MDS specializations: Orthodontics and Dentofacial Orthopaedics, Prosthodontics, Oral Medicine and Radiology, Conservative Dentistry and Endodontics, and Periodontics. MDS admission is through NEET MDS scores and Tamil Nadu state counseling.',
     },
     {
       q: 'Does JKKN Dental College have hostel facility?',
@@ -503,7 +503,7 @@ export default function CoimbatorePage() {
               JKKN Dental College &amp; Hospital is a Dental Council of India-approved dental institution established in 1987, located in Komarapalayam, Namakkal District, Tamil Nadu 638183, on National Highway 544. The college is affiliated with The Tamil Nadu Dr. M.G.R. Medical University, Chennai, and holds NAAC accreditation.
             </p>
             <p className="text-gray-600 leading-relaxed" style={{ fontSize: 'clamp(0.875rem, 1vw + 0.3rem, 1rem)' }}>
-              The college offers the Bachelor of Dental Surgery (BDS) program with 100 seats and the Master of Dental Surgery (MDS) program with 5 specializations: Orthodontics and Dentofacial Orthopaedics, Prosthodontics, Oral and Maxillofacial Surgery, Conservative Dentistry and Endodontics, and Periodontics.
+              The college offers the Bachelor of Dental Surgery (BDS) program with 100 seats and the Master of Dental Surgery (MDS) program with 5 specializations: Orthodontics and Dentofacial Orthopaedics, Prosthodontics, Oral Medicine and Radiology, Conservative Dentistry and Endodontics, and Periodontics.
             </p>
             <p className="text-gray-600 leading-relaxed" style={{ fontSize: 'clamp(0.875rem, 1vw + 0.3rem, 1rem)' }}>
               The on-campus teaching hospital operates 200+ dental chairs, 100+ hospital beds, and treats 500+ patients daily, providing clinical exposure from Year 1 of the BDS program. The campus is an AI-integrated dental educational campus, with <Link href="/research/" className="text-[#006837] hover:underline font-medium">50+ research publications</Link> and an active institutional innovation council.

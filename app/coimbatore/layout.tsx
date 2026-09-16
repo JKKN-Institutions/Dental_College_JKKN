@@ -83,7 +83,7 @@ const faqSchema = {
       "name": "What are the MDS specializations at JKKN Dental College?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "JKKN Dental College & Hospital offers 5 MDS specializations: Orthodontics and Dentofacial Orthopaedics, Prosthodontics, Oral and Maxillofacial Surgery, Conservative Dentistry and Endodontics, and Periodontics. MDS admission is through NEET MDS scores and Tamil Nadu state counseling."
+        "text": "JKKN Dental College & Hospital offers 5 MDS specializations: Orthodontics and Dentofacial Orthopaedics, Prosthodontics, Oral Medicine and Radiology, Conservative Dentistry and Endodontics, and Periodontics. MDS admission is through NEET MDS scores and Tamil Nadu state counseling."
       }
     },
     {
@@ -262,7 +262,7 @@ const courseSchema = [
     "@id": "https://dental.jkkn.ac.in/academics/mds/#course",
     "url": "https://dental.jkkn.ac.in/academics/mds/",
     "name": "MDS (Master of Dental Surgery)",
-    "description": "3-year postgraduate dental programme with multiple specialisations including Orthodontics, Prosthodontics, Oral Surgery, Conservative Dentistry, and Periodontics.",
+    "description": "3-year postgraduate dental programme in the five sanctioned specialisations: Conservative Dentistry & Endodontics, Orthodontics & Dentofacial Orthopaedics, Prosthodontics & Crown and Bridge, Oral Medicine & Radiology, and Periodontics.",
     "provider": { "@type": "EducationalOrganization", "name": "JKKN Dental College & Hospital", "url": "https://dental.jkkn.ac.in/" },
     "educationalLevel": "Postgraduate",
     "timeRequired": "P3Y",

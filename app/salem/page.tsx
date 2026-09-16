@@ -31,7 +31,7 @@ export default function SalemPage() {
     },
     {
       q: 'What MDS specialisations are available?',
-      a: 'JKKN Dental offers MDS in five specialisations: Orthodontics & Dentofacial Orthopaedics, Prosthodontics & Crown and Bridge, Oral & Maxillofacial Surgery, Conservative Dentistry & Endodontics, and Periodontics. Salem learners can commute or stay on campus while accessing 500+ daily patient cases for their postgraduate research and clinical training.',
+      a: 'JKKN Dental offers MDS in five specialisations: Orthodontics & Dentofacial Orthopaedics, Prosthodontics & Crown and Bridge, Oral Medicine & Radiology, Conservative Dentistry & Endodontics, and Periodontics. Salem learners can commute or stay on campus while accessing 500+ daily patient cases for their postgraduate research and clinical training.',
     },
     {
       q: 'Does JKKN Dental provide hostel for Salem learners?',
