@@ -50,7 +50,7 @@ const faqSchema = {
     { "@type": "Question", "name": "How far is JKKN Dental College from Kerala?", "acceptedAnswer": { "@type": "Answer", "text": "JKKN Dental College at Komarapalayam, Namakkal is approximately one hundred and sixty-five kilometres from Palakkad, approximately two hundred and forty kilometres from Thrissur, and approximately three hundred kilometres from Kochi. Most Kerala to Chennai trains stop at Erode Junction, which is eighteen kilometres from the campus." } },
     { "@type": "Question", "name": "How do Kerala students travel to JKKN Dental College?", "acceptedAnswer": { "@type": "Answer", "text": "The easiest route is by train — the Kerala to Chennai main rail line passes through Palakkad, Coimbatore and Tiruppur to Erode Junction, eighteen kilometres from the campus. By road, take NH-544 from Palakkad through Coimbatore towards Salem; Komarapalayam is on NH-544 itself." } },
     { "@type": "Question", "name": "Does JKKN Dental provide hostel for Kerala students?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. JKKN Dental provides separate hostels for boys and girls with mess facility on a full residential campus. Learners from Kerala stay on campus through the term and travel home during holidays on the Kerala–Chennai rail line via Erode Junction." } },
-    { "@type": "Question", "name": "Is BDS at JKKN taught in English?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. The BDS and MDS programmes at JKKN Dental College are taught in English, as in all DCI-approved dental colleges in India, so Kerala students face no language barrier in academics. The hospital's patient base is largely Tamil-speaking, which learners pick up naturally during clinical years." } },
+    { "@type": "Question", "name": "Is BDS at JKKN taught in English?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. The BDS and MDS programmes at JKKN Dental College are taught in English, as in all NDC-approved dental colleges in India, so Kerala students face no language barrier in academics. The hospital's patient base is largely Tamil-speaking, which learners pick up naturally during clinical years." } },
     { "@type": "Question", "name": "Can students from Bengaluru and other states also apply?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Students from Karnataka, including Bengaluru, and from other states are admitted under the Management Quota with NEET UG qualification, the same route as Kerala students. Call plus ninety-one nine three four five eight five five zero zero one for seat availability." } },
     { "@type": "Question", "name": "Does JKKN Dental have its own hospital?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, JKKN Dental College & Hospital has a 200+ chair dental hospital and 100+ bed facility right on campus. Learners gain hands-on clinical training from Year 1 of the BDS programme, treating patients who visit from surrounding districts every day." } },
     { "@type": "Question", "name": "What MDS specialisations are available?", "acceptedAnswer": { "@type": "Answer", "text": "JKKN Dental offers MDS in five specialisations: Orthodontics & Dentofacial Orthopaedics, Prosthodontics & Crown and Bridge, Oral Medicine & Radiology, Conservative Dentistry & Endodontics, and Periodontics. Each department has modern learning labs, and the attached hospital ensures ample clinical cases for postgraduate research and training." } },
@@ -66,7 +66,7 @@ const orgSchema = {
   "alternateName": "JKKN Dental",
   "url": "https://dental.jkkn.ac.in/",
   "logo": "https://dental.jkkn.ac.in/images/jkkn-dental-logo.webp",
-  "description": "DCI approved, NAAC accredited dental college affiliated to TN Dr. MGR Medical University. Offers BDS and MDS programmes with 93.9% placed or in higher studies (2024-25 batch).",
+  "description": "NDC approved, NAAC accredited dental college affiliated to TN Dr. MGR Medical University. Offers BDS and MDS programmes with 93.9% placed or in higher studies (2024-25 batch).",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Natarajapuram, NH-544 (Salem–Coimbatore Highway)",
@@ -80,10 +80,10 @@ const orgSchema = {
   "foundingDate": "1987",
   "parentOrganization": { "@type": "Organization", "name": "JKKN Institutions", "url": "https://jkkn.ac.in/" },
   "hasCredential": [
-    { "@type": "EducationalOccupationalCredential", "credentialCategory": "DCI Approved" },
+    { "@type": "EducationalOccupationalCredential", "credentialCategory": "NDC Approved" },
     { "@type": "EducationalOccupationalCredential", "credentialCategory": "NAAC Accredited" }
   ],
-  "accreditedBy": { "@type": "Organization", "name": "Dental Council of India" },
+  "accreditedBy": { "@type": "Organization", "name": "National Dental Commission (formerly Dental Council of India)" },
   "memberOf": { "@type": "Organization", "name": "The Tamil Nadu Dr. M.G.R. Medical University, Chennai" },
   "geo": { "@type": "GeoCoordinates", "latitude": "11.4446062", "longitude": "77.7309852" },
   "sameAs": jkknSameAsUrls
@@ -96,7 +96,7 @@ const courseSchema = [
     "@id": "https://dental.jkkn.ac.in/academics/bds/#course",
     "url": "https://dental.jkkn.ac.in/academics/bds/",
     "name": "BDS (Bachelor of Dental Surgery)",
-    "description": "4-year undergraduate dental programme with 1-year internship. DCI approved, 100 seats. NEET qualified admission.",
+    "description": "4-year undergraduate dental programme with 1-year internship. NDC approved, 100 seats. NEET qualified admission.",
     "provider": { "@type": "EducationalOrganization", "name": "JKKN Dental College & Hospital", "url": "https://dental.jkkn.ac.in/" },
     "educationalLevel": "Undergraduate",
     "timeRequired": "P5Y",

@@ -5,7 +5,7 @@ import { jkknSameAsUrls } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: { absolute: 'Dental Colleges in Salem | JKKN Dental College' },
-  description: 'Dental Colleges in Salem? JKKN Dental College is 60 km away at Komarapalayam via NH-544. DCI approved, NAAC accredited. BDS 100 seats, MDS. Apply 2026.',
+  description: 'Dental Colleges in Salem? JKKN Dental College is 60 km away at Komarapalayam via NH-544. NDC approved, NAAC accredited. BDS 100 seats, MDS. Apply 2026.',
   keywords: 'dental colleges in salem, top dental colleges, bds colleges in salem, dental college salem, mds college salem, jkkn dental salem',
   robots: {
     index: true,
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Dental Colleges in Salem | JKKN Dental College',
-    description: 'Dental Colleges in Salem? JKKN Dental College is 60 km away at Komarapalayam via NH-544. DCI approved, NAAC accredited. BDS 100 seats, MDS. Apply 2026.',
+    description: 'Dental Colleges in Salem? JKKN Dental College is 60 km away at Komarapalayam via NH-544. NDC approved, NAAC accredited. BDS 100 seats, MDS. Apply 2026.',
     url: 'https://dental.jkkn.ac.in/salem/',
     siteName: 'JKKN Dental College & Hospital',
     images: [
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Dental Colleges in Salem | JKKN Dental College',
-    description: 'Dental Colleges in Salem? JKKN Dental College is 60 km away at Komarapalayam via NH-544. DCI approved, NAAC accredited. BDS 100 seats, MDS. Apply 2026.',
+    description: 'Dental Colleges in Salem? JKKN Dental College is 60 km away at Komarapalayam via NH-544. NDC approved, NAAC accredited. BDS 100 seats, MDS. Apply 2026.',
     images: ['https://dental.jkkn.ac.in/images/BDS-hero-image.webp'],
     site: '@jaborejkkn',
   },
@@ -46,9 +46,9 @@ const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "Are there any dental colleges in Salem?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. There are dental colleges in and around Salem, Tamil Nadu. Within Salem city, Vinayaka Mission's Sankarachariyar Dental College is a private institution. Additionally, JKKN Dental College and Hospital is located sixty kilometres from Salem at Komarapalayam, Namakkal, on NH-544 (Salem to Coimbatore Highway), and is DCI-approved and NAAC accredited." } },
-    { "@type": "Question", "name": "How many dental colleges are in Salem district?", "acceptedAnswer": { "@type": "Answer", "text": "There are dental institutions in and near Salem district. Vinayaka Mission's Sankarachariyar Dental College is located within Salem city. Government Medical College Salem also has dental programs. JKKN Dental College and Hospital, located sixty kilometres away at Komarapalayam, Namakkal via NH-544, is the nearest DCI-approved and NAAC accredited private dental college outside the city." } },
-    { "@type": "Question", "name": "Which are the best dental colleges in Salem?", "acceptedAnswer": { "@type": "Answer", "text": "JKKN Dental College & Hospital is among the top dental colleges in Salem region, located approximately sixty kilometres from Salem on NH-544. Approved by DCI, NAAC accredited and affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai, it offers BDS with one hundred seats and MDS in five specializations with strong placement support." } },
+    { "@type": "Question", "name": "Are there any dental colleges in Salem?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. There are dental colleges in and around Salem, Tamil Nadu. Within Salem city, Vinayaka Mission's Sankarachariyar Dental College is a private institution. Additionally, JKKN Dental College and Hospital is located sixty kilometres from Salem at Komarapalayam, Namakkal, on NH-544 (Salem to Coimbatore Highway), and is NDC-approved and NAAC accredited." } },
+    { "@type": "Question", "name": "How many dental colleges are in Salem district?", "acceptedAnswer": { "@type": "Answer", "text": "There are dental institutions in and near Salem district. Vinayaka Mission's Sankarachariyar Dental College is located within Salem city. Government Medical College Salem also has dental programs. JKKN Dental College and Hospital, located sixty kilometres away at Komarapalayam, Namakkal via NH-544, is the nearest NDC-approved and NAAC accredited private dental college outside the city." } },
+    { "@type": "Question", "name": "Which are the best dental colleges in Salem?", "acceptedAnswer": { "@type": "Answer", "text": "JKKN Dental College & Hospital is among the top dental colleges in Salem region, located approximately sixty kilometres from Salem on NH-544. Approved by NDC, NAAC accredited and affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai, it offers BDS with one hundred seats and MDS in five specializations with strong placement support." } },
     { "@type": "Question", "name": "How far is JKKN Dental from Salem?", "acceptedAnswer": { "@type": "Answer", "text": "JKKN Dental is approximately sixty kilometres from Salem city centre, which takes about one hour by road via NH-544 (Salem-Coimbatore Highway). TN State Transport buses from Salem New Bus Stand to Komarapalayam run regularly throughout the day." } },
     { "@type": "Question", "name": "What is the NEET cut-off for BDS at JKKN Dental?", "acceptedAnswer": { "@type": "Answer", "text": "The NEET cut-off for BDS admission at JKKN Dental College & Hospital varies each year based on counselling rounds. Contact the admission office at plus nine one nine three four five eight five five zero zero one for the latest cut-off information and seat availability for the current admission cycle." } },
     { "@type": "Question", "name": "Does JKKN Dental have its own hospital?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, JKKN Dental College & Hospital has its own 200+ chair dental hospital and 100+ bed facility on campus. Patients from Salem, Namakkal, and surrounding districts visit daily — with 500+ patients treated every day, learners gain extensive hands-on clinical experience from Year 1." } },
@@ -68,7 +68,7 @@ const orgSchema = {
   "alternateName": "JKKN Dental",
   "url": "https://dental.jkkn.ac.in/",
   "logo": "https://dental.jkkn.ac.in/images/jkkn-dental-logo.webp",
-  "description": "JKKN Dental College & Hospital is a DCI-approved dental college located at Komarapalayam, Namakkal, Tamil Nadu, approximately 60 km from Salem via NH-544. Offering BDS (100 seats) and MDS programs, with 200+ dental chairs, 500+ daily patients, and 93.9% placed or in higher studies (2024-25 batch).",
+  "description": "JKKN Dental College & Hospital is a NDC-approved dental college located at Komarapalayam, Namakkal, Tamil Nadu, approximately 60 km from Salem via NH-544. Offering BDS (100 seats) and MDS programs, with 200+ dental chairs, 500+ daily patients, and 93.9% placed or in higher studies (2024-25 batch).",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Natarajapuram, NH-544 (Salem-Coimbatore Highway)",
@@ -82,7 +82,7 @@ const orgSchema = {
   "foundingDate": "1987",
   "parentOrganization": { "@type": "Organization", "name": "JKKN Institutions", "url": "https://jkkn.ac.in/" },
   "hasCredential": [
-    { "@type": "EducationalOccupationalCredential", "credentialCategory": "DCI Approved" },
+    { "@type": "EducationalOccupationalCredential", "credentialCategory": "NDC Approved" },
     { "@type": "EducationalOccupationalCredential", "credentialCategory": "NAAC Accredited" }
   ],
   "memberOf": { "@type": "Organization", "name": "The Tamil Nadu Dr. M.G.R. Medical University, Chennai" },
@@ -99,7 +99,7 @@ const courseSchema = [
     "@id": "https://dental.jkkn.ac.in/academics/bds/#course",
     "url": "https://dental.jkkn.ac.in/academics/bds/",
     "name": "BDS (Bachelor of Dental Surgery)",
-    "description": "4-year undergraduate dental programme with 1-year internship. DCI approved, 100 seats. NEET qualified admission.",
+    "description": "4-year undergraduate dental programme with 1-year internship. NDC approved, 100 seats. NEET qualified admission.",
     "provider": { "@type": "EducationalOrganization", "name": "JKKN Dental College & Hospital", "url": "https://dental.jkkn.ac.in/" },
     "educationalLevel": "Undergraduate",
     "timeRequired": "P5Y",

@@ -22,17 +22,17 @@ export default function AboutInstitution() {
               <h3 className="text-[#7cb983] text-xs sm:text-sm md:text-base font-bold uppercase tracking-wider">About Our Institution</h3>
             </div>
             <h2 className="text-xl xs:text-2xl sm:text-3xl lg:text-4xl font-bold text-[#006837] mb-2 sm:mb-3 leading-tight">
-              A DCI-Approved Dental College in Tamil Nadu Since 1987
+              A NDC-Approved Dental College in Tamil Nadu Since 1987
             </h2>
             <p className="text-[#7cb983] text-sm sm:text-base md:text-lg font-semibold mb-4 sm:mb-6">
               Over Five Decades of Excellence in Progressive Education
             </p>
             <p className="snippet-answer text-gray-600 text-sm sm:text-base md:text-lg mb-4 sm:mb-6 leading-relaxed">
-              JKKN Dental College and Hospital, established in 1987 in Komarapalayam, Namakkal District, is a Dental Council of India approved and NAAC A Grade accredited dental college in Tamil Nadu. Affiliated to Tamil Nadu Dr. M.G.R. Medical University, the college offers Bachelor of Dental Surgery and Master of Dental Surgery programs with over two hundred dental chairs, five hundred daily patients, and ninety-two percent placement assistance.
+              JKKN Dental College and Hospital, established in 1987 in Komarapalayam, Namakkal District, is a National Dental Commission (formerly Dental Council of India) approved and NAAC A Grade accredited dental college in Tamil Nadu. Affiliated to Tamil Nadu Dr. M.G.R. Medical University, the college offers Bachelor of Dental Surgery and Master of Dental Surgery programs with over two hundred dental chairs, five hundred daily patients, and ninety-two percent placement assistance.
             </p>
             {/* Voice Search Answer — hidden visually, accessible to crawlers and screen readers */}
             <div className="voice-answer sr-only" aria-hidden="false">
-              JKKN Dental College and Hospital in Komarapalayam, Namakkal, is a Dental Council of India approved dental college in Tamil Nadu with NAAC A Grade accreditation established in nineteen eighty-seven.
+              JKKN Dental College and Hospital in Komarapalayam, Namakkal, is a National Dental Commission approved dental college in Tamil Nadu with NAAC A Grade accreditation established in nineteen eighty-seven.
             </div>
 
             <p className="text-gray-600 text-sm sm:text-base md:text-lg mb-6 sm:mb-8 leading-relaxed">
@@ -102,7 +102,7 @@ export default function AboutInstitution() {
               <div className="grid grid-cols-1 xs:grid-cols-2 gap-2 sm:gap-3 text-sm sm:text-base">
                 <div className="text-gray-700"><strong className="text-[#006837]">Established:</strong> 1987</div>
                 <div className="text-gray-700"><strong className="text-[#006837]">Affiliation:</strong> TN Dr. M.G.R. Medical University</div>
-                <div className="text-gray-700"><strong className="text-[#006837]">Approval:</strong> Dental Council of India (DCI)</div>
+                <div className="text-gray-700"><strong className="text-[#006837]">Approval:</strong> National Dental Commission (NDC)</div>
                 <div className="text-gray-700"><strong className="text-[#006837]">Accreditation:</strong> NAAC A Grade</div>
                 <div className="text-gray-700"><strong className="text-[#006837]">BDS Seats:</strong> 100 (Annual Intake)</div>
                 <div className="text-gray-700"><strong className="text-[#006837]">MDS Seats:</strong> 18 (5 Specializations)</div>

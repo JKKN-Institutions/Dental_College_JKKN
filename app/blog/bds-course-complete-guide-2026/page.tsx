@@ -56,12 +56,12 @@ const faqs = [
   {
     question: 'How many BDS seats are available at JKKN Dental College?',
     answer:
-      'JKKN Dental College & Hospital is approved by the Dental Council of India (DCI) for 100 BDS seats per year. Seats are filled through the Tamil Nadu state counselling conducted by the Selection Committee, Directorate of Medical Education (DME) based on NEET-UG ranks.',
+      'JKKN Dental College & Hospital is approved by the National Dental Commission (NDC), formerly the Dental Council of India for 100 BDS seats per year. Seats are filled through the Tamil Nadu state counselling conducted by the Selection Committee, Directorate of Medical Education (DME) based on NEET-UG ranks.',
   },
   {
     question: 'What is the difference between BDS and MBBS?',
     answer:
-      'MBBS is a 5.5-year program training general physicians for the entire human body. BDS is a 5-year program specialising in oral, dental and maxillofacial health — diagnosis, treatment and prevention of diseases of teeth, gums, jaws and related structures. BDS graduates are addressed as "Doctor" and are licensed dental surgeons recognised by the Dental Council of India.',
+      'MBBS is a 5.5-year program training general physicians for the entire human body. BDS is a 5-year program specialising in oral, dental and maxillofacial health — diagnosis, treatment and prevention of diseases of teeth, gums, jaws and related structures. BDS graduates are addressed as "Doctor" and are licensed dental surgeons recognised by the National Dental Commission.',
   },
 ];
 
@@ -74,7 +74,7 @@ const articleSchema = generateArticleSchema({
   authorName: 'JKKN Dental Admissions Team',
   authorJobTitle: 'Admissions & Academics',
   authorCredentials:
-    'Faculty and admissions advisors at JKKN Dental College & Hospital, affiliated to The Tamil Nadu Dr. M.G.R. Medical University and approved by the Dental Council of India.',
+    'Faculty and admissions advisors at JKKN Dental College & Hospital, affiliated to The Tamil Nadu Dr. M.G.R. Medical University and approved by the National Dental Commission.',
 });
 
 const faqSchema = generateFAQSchema(faqs);

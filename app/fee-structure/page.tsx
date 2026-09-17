@@ -40,7 +40,7 @@ const structuredData = {
       "@type": "Course",
       "@id": "https://dental.jkkn.ac.in/bds/#course",
       "name": "Bachelor of Dental Surgery (BDS)",
-      "description": "4-year undergraduate dental program plus 1-year internship at JKKN Dental College & Hospital, DCI approved",
+      "description": "4-year undergraduate dental program plus 1-year internship at JKKN Dental College & Hospital, NDC approved",
       "provider": {
         "@type": "EducationalOrganization",
         "name": "JKKN Dental College & Hospital"
@@ -67,7 +67,7 @@ const structuredData = {
     {
       "@type": "Course",
       "name": "Master of Dental Surgery (MDS)",
-      "description": "3-year postgraduate dental specialization programs at JKKN Dental College & Hospital, DCI approved",
+      "description": "3-year postgraduate dental specialization programs at JKKN Dental College & Hospital, NDC approved",
       "provider": {
         "@type": "EducationalOrganization",
         "name": "JKKN Dental College & Hospital"
@@ -256,7 +256,7 @@ export default function FeesStructure() {
             </h3>
             <ul className="space-y-2 text-sm text-gray-700 ml-7 list-disc">
               <li>Duration: 4 years academic program + 1 year compulsory rotating internship</li>
-              <li>Total Seats: 100 seats per year (subject to DCI approval)</li>
+              <li>Total Seats: 100 seats per year (subject to National Dental Commission (NDC) approval)</li>
               <li>Admission: Through NEET-UG and state counseling</li>
               <li>Hostel facility available for boys and girls (charges separate)</li>
               <li>Fees are regulated by fee fixation committee and may change annually</li>
@@ -369,7 +369,7 @@ export default function FeesStructure() {
               <li>Duration: 3 years full-time postgraduate program</li>
               <li>Admission: Through NEET-MDS and state counseling</li>
               <li>Eligibility: BDS degree + 1 year internship completion required</li>
-              <li>All specializations are DCI approved</li>
+              <li>All specializations are NDC approved</li>
               <li>Stipend may be provided to MDS students as per norms</li>
               <li>Excellent clinical exposure with 200+ dental chairs</li>
               <li>Research facilities and dissertation support available</li>

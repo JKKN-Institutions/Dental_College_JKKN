@@ -27,7 +27,7 @@ const answerBlocks: AnswerBlock[] = [
   {
     question: "What are the top MDS colleges in Tamil Nadu?",
     answer:
-      "Tamil Nadu has 32+ MDS dental colleges, including JKKN Dental College & Hospital (Komarapalayam), Saveetha Dental College (Chennai), SRM Dental College (Chennai), Sri Ramachandra Dental College (Porur), and Meenakshi Ammal Dental College (Chennai). These institutions are DCI-approved and offer specialized postgraduate dental programs with strong clinical exposure.",
+      "Tamil Nadu has 32+ MDS dental colleges, including JKKN Dental College & Hospital (Komarapalayam), Saveetha Dental College (Chennai), SRM Dental College (Chennai), Sri Ramachandra Dental College (Porur), and Meenakshi Ammal Dental College (Chennai). These institutions are NDC-approved and offer specialized postgraduate dental programs with strong clinical exposure.",
   },
   {
     question: "How many MDS seats are there in Tamil Nadu?",
@@ -42,12 +42,12 @@ const answerBlocks: AnswerBlock[] = [
   {
     question: "What is the duration of MDS course in Tamil Nadu?",
     answer:
-      "The MDS (Master of Dental Surgery) course duration in Tamil Nadu is 3 years, as per Dental Council of India (DCI) regulations. This is a full-time postgraduate program that includes theoretical coursework, clinical practice, research dissertation, and hands-on training across all specializations.",
+      "The MDS (Master of Dental Surgery) course duration in Tamil Nadu is 3 years, as per National Dental Commission (NDC), formerly the Dental Council of India regulations. This is a full-time postgraduate program that includes theoretical coursework, clinical practice, research dissertation, and hands-on training across all specializations.",
   },
   {
     question: "What is the eligibility for MDS admission in Tamil Nadu?",
     answer:
-      "To be eligible for MDS admission in Tamil Nadu, candidates must hold a BDS degree from a DCI-recognized dental college, complete a 1-year compulsory rotating internship, obtain permanent registration with State Dental Council, and qualify NEET MDS with a valid score meeting the annual cutoff.",
+      "To be eligible for MDS admission in Tamil Nadu, candidates must hold a BDS degree from a NDC-recognized dental college, complete a 1-year compulsory rotating internship, obtain permanent registration with State Dental Council, and qualify NEET MDS with a valid score meeting the annual cutoff.",
   },
   {
     question: "How to get MDS admission in Tamil Nadu?",

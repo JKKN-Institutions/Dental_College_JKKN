@@ -18,8 +18,8 @@ export const siteContent = {
             submenu: [
               { label: "UNIVERSITY PROVISIONAL AFFILIATION LETTERS – BDS", href: "/about/approvals-and-affiliation/affiliation-bds" },
               { label: "UNIVERSITY PROVISIONAL AFFILIATION LETTERS -MDS", href: "/about/approvals-and-affiliation/affiliation-mds" },
-              { label: "DCI PERMISSION LETTER-BDS", href: "/about/approvals-and-affiliation/dci-bds" },
-              { label: "DCI PERMISSION LETTER-MDS", href: "/about/approvals-and-affiliation/dci-mds" }
+              { label: "NDC PERMISSION LETTER-BDS", href: "/about/approvals-and-affiliation/dci-bds" },
+              { label: "NDC PERMISSION LETTER-MDS", href: "/about/approvals-and-affiliation/dci-mds" }
             ]
           },
           {

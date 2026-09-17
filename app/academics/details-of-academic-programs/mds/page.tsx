@@ -26,12 +26,12 @@ const mdsFAQs = [
   {
     question: "What MDS specializations are available at JKKN?",
     answer:
-      "JKKN Dental College offers 5 DCI-approved MDS specializations: Endodontics (Conservative Dentistry), Prosthodontics (Crown & Bridge), Periodontics (Oral Implantology), Oral Medicine & Radiology, and Orthodontics (Dentofacial Orthopedics). A total of 18 seats are available annually across all specializations.",
+      "JKKN Dental College offers 5 NDC-approved MDS specializations: Endodontics (Conservative Dentistry), Prosthodontics (Crown & Bridge), Periodontics (Oral Implantology), Oral Medicine & Radiology, and Orthodontics (Dentofacial Orthopedics). A total of 18 seats are available annually across all specializations.",
   },
   {
     question: "What is the eligibility for MDS admission?",
     answer:
-      "Candidates must hold a BDS degree from a DCI-recognized institution, complete one-year compulsory rotating internship, have permanent State Dental Council registration, and qualify NEET MDS entrance examination with a valid score meeting current cutoff norms.",
+      "Candidates must hold a BDS degree from a NDC-recognized institution, complete one-year compulsory rotating internship, have permanent State Dental Council registration, and qualify NEET MDS entrance examination with a valid score meeting current cutoff norms.",
   },
   {
     question: "What are the career opportunities after MDS?",
@@ -41,7 +41,7 @@ const mdsFAQs = [
   {
     question: "Is JKKN Dental College MDS program recognized?",
     answer:
-      "Yes, all MDS programs at JKKN Dental College are fully recognized and approved by the Dental Council of India (DCI). The college is affiliated with The Tamil Nadu Dr. M.G.R. Medical University and maintains NAAC accreditation, ensuring national recognition for all graduates.",
+      "Yes, all MDS programs at JKKN Dental College are fully recognized and approved by the National Dental Commission (NDC), formerly the Dental Council of India. The college is affiliated with The Tamil Nadu Dr. M.G.R. Medical University and maintains NAAC accreditation, ensuring national recognition for all graduates.",
   },
   {
     question: "How many MDS seats are there in Tamil Nadu?",
@@ -56,7 +56,7 @@ const mdsFAQs = [
   {
     question: "Which are the top MDS dental colleges in Tamil Nadu?",
     answer:
-      "Top MDS dental colleges in Tamil Nadu include JKKN Dental College & Hospital (Komarapalayam), Saveetha Dental College (Chennai), SRM Dental College (Ramapuram), Sri Ramachandra Dental College (Porur), Meenakshi Ammal Dental College (Chennai), and Vinayaka Mission's Sankarachariyar Dental College (Salem). All are DCI-approved.",
+      "Top MDS dental colleges in Tamil Nadu include JKKN Dental College & Hospital (Komarapalayam), Saveetha Dental College (Chennai), SRM Dental College (Ramapuram), Sri Ramachandra Dental College (Porur), Meenakshi Ammal Dental College (Chennai), and Vinayaka Mission's Sankarachariyar Dental College (Salem). All are NDC-approved.",
   },
 ];
 
@@ -64,7 +64,7 @@ const mdsFAQs = [
 const mdsAdmissionSteps = [
   {
     name: "Complete BDS Degree",
-    text: "Complete a Bachelor of Dental Surgery (BDS) degree from a Dental Council of India (DCI) recognized dental college, including a 1-year compulsory rotating internship.",
+    text: "Complete a Bachelor of Dental Surgery (BDS) degree from a National Dental Commission (NDC) recognized dental college, including a 1-year compulsory rotating internship.",
   },
   {
     name: "Register with State Dental Council",
@@ -124,7 +124,7 @@ export default function MDSProgram() {
     title:
       'MDS Fees in Private Colleges, Tamil Nadu 2026-27 | JKKN Dental College & Hospital',
     description:
-      '3-year postgraduate MDS program with 18 seats across 5 DCI-approved specializations at JKKN Dental College & Hospital, Tamil Nadu. NAAC-accredited, affiliated to TN Dr. MGR Medical University.',
+      '3-year postgraduate MDS program with 18 seats across 5 NDC-approved specializations at JKKN Dental College & Hospital, Tamil Nadu. NAAC-accredited, affiliated to TN Dr. MGR Medical University.',
     url: 'https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/',
     speakableCssSelectors: [
       'h1',
@@ -160,12 +160,12 @@ export default function MDSProgram() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left Content */}
             <div>
-              {/* DCI Badge */}
+              {/* NDC Badge */}
               <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 mb-6">
                 <svg className="w-5 h-5 text-[#7cb983]" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
-                <span className="text-[#7cb983] font-semibold text-sm">DCI Approved | NAAC Accredited</span>
+                <span className="text-[#7cb983] font-semibold text-sm">NDC Approved | NAAC Accredited</span>
               </div>
 
               {/* Heading — Primary keyword: "mds colleges in tamilnadu" */}
@@ -181,7 +181,7 @@ export default function MDSProgram() {
               {/* Description */}
               <p className="hero-description text-lg text-gray-200 mb-8 leading-relaxed">
                 JKKN Dental College &amp; Hospital is a leading MDS dental
-                college in Tamil Nadu offering 18 seats across 5 DCI-approved
+                college in Tamil Nadu offering 18 seats across 5 NDC-approved
                 specializations. NAAC-accredited and affiliated to The Tamil
                 Nadu Dr. M.G.R. Medical University, our 3-year postgraduate MDS
                 program combines rigorous academics with clinical exposure
@@ -215,7 +215,7 @@ export default function MDSProgram() {
                 <h2 className="text-4xl md:text-5xl font-bold text-white text-center px-6">MDS Clinical Excellence</h2>
               </div>
 
-              {/* DCI Recognized Badge */}
+              {/* NDC Recognized Badge */}
               <div className="absolute bottom-2 right-2 sm:bottom-8 sm:right-4 lg:-right-4 bg-white rounded-lg sm:rounded-xl shadow-2xl p-2 sm:p-4 flex items-center gap-2 sm:gap-3 scale-75 sm:scale-100 origin-bottom-right">
                 <div className="bg-[#7cb983] rounded-lg p-2 sm:p-3">
                   <svg className="w-4 h-4 sm:w-6 sm:h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
@@ -223,7 +223,7 @@ export default function MDSProgram() {
                   </svg>
                 </div>
                 <div>
-                  <div className="font-bold text-gray-800 text-xs sm:text-base">DCI Recognized Programs</div>
+                  <div className="font-bold text-gray-800 text-xs sm:text-base">NDC Recognized Programs</div>
                 </div>
               </div>
             </div>
@@ -286,7 +286,7 @@ export default function MDSProgram() {
               <div className="grid grid-cols-2 gap-3">
                 {[
                   {
-                    title: 'DCI Learning Framework',
+                    title: 'NDC Learning Framework',
                     svg: <path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z" />,
                   },
                   {
@@ -331,7 +331,7 @@ export default function MDSProgram() {
             Choose Your Path to Excellence
           </h2>
           <p className="text-gray-600 text-center mb-12 max-w-4xl mx-auto leading-relaxed">
-            Explore our five DCI-approved MDS specializations. Each program offers comprehensive training, advanced facilities, and expert guidance to help you become a leader in your chosen field.
+            Explore our five NDC-approved MDS specializations. Each program offers comprehensive training, advanced facilities, and expert guidance to help you become a leader in your chosen field.
           </p>
 
           {/* Specializations Grid */}
@@ -561,14 +561,14 @@ export default function MDSProgram() {
               <div className="text-sm text-white uppercase">Daily Patients</div>
             </div>
 
-            {/* DCI Approved */}
+            {/* NDC Approved */}
             <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-8 text-center hover:bg-white/20 transition-all duration-300">
               <div className="bg-[#7cb983]/20 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6">
                 <svg className="w-8 h-8 text-[#7cb983]" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
               </div>
-              <div className="text-4xl md:text-5xl font-bold text-[#7cb983] mb-3">DCI</div>
+              <div className="text-4xl md:text-5xl font-bold text-[#7cb983] mb-3">NDC</div>
               <div className="text-sm text-white uppercase">Approved</div>
             </div>
 
@@ -706,7 +706,7 @@ export default function MDSProgram() {
                   <svg className="w-6 h-6 text-[#7cb983] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
-                  <p className="text-gray-700">BDS degree from DCI recognized dental college</p>
+                  <p className="text-gray-700">BDS degree from NDC recognized dental college</p>
                 </div>
 
                 <div className="flex items-start gap-3">
@@ -908,12 +908,12 @@ export default function MDSProgram() {
 
           {/* Logos Grid */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-6 max-w-5xl mx-auto">
-            {/* DCI */}
+            {/* NDC */}
             <div className="bg-white border border-gray-200 rounded-2xl p-4 sm:p-8 hover:shadow-xl transition-shadow duration-300">
               <div className="bg-[#006837] rounded-lg p-4 sm:p-6 mb-4 flex items-center justify-center h-24 sm:h-32">
-                <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white">DCI</h3>
+                <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white">NDC</h3>
               </div>
-              <p className="text-center text-xs sm:text-sm font-semibold text-gray-600 uppercase">DCI Approved</p>
+              <p className="text-center text-xs sm:text-sm font-semibold text-gray-600 uppercase">NDC Approved</p>
             </div>
 
             {/* TNMGRMU */}

@@ -194,7 +194,7 @@ export default function MdsOrthodonticsClient({ faqs }: { faqs: FAQ[] }) {
                 of malocclusion, misaligned teeth and dentofacial deformities using braces, clear
                 aligners, functional appliances and orthognathic-surgery coordination. Eligibility:
                 BDS + completed internship + valid <strong>NEET-MDS</strong> score. JKKN Dental
-                College offers <strong>4 DCI-approved MDS Ortho seats</strong> annually, affiliated
+                College offers <strong>4 NDC-approved MDS Ortho seats</strong> annually, affiliated
                 to <strong>TN Dr. MGR Medical University</strong>. Among all dental
                 specialisations, MDS Ortho is consistently the highest-paying and most-in-demand
                 career in 2026.
@@ -211,7 +211,7 @@ export default function MdsOrthodonticsClient({ faqs }: { faqs: FAQ[] }) {
                 <strong> Dentofacial Orthopedics</strong> extends the same scope to growing
                 children and adolescents, where appliances guide jaw growth and craniofacial
                 development. Together they form one of the <strong>9 specialty branches</strong>{' '}
-                recognised by the Dental Council of India.
+                recognised by the National Dental Commission (formerly Dental Council of India).
               </p>
               <p className="text-gray-600 leading-relaxed mb-4">
                 A practising orthodontist works with: fixed appliances (metal/ceramic braces,
@@ -236,7 +236,7 @@ export default function MdsOrthodonticsClient({ faqs }: { faqs: FAQ[] }) {
               <p className="text-gray-600 leading-relaxed mb-5">
                 MDS admission across India is conducted entirely through <strong>NEET-MDS</strong>,
                 the single national entrance exam for postgraduate dental admission. JKKN Dental
-                College follows the eligibility framework set by DCI and the Selection Committee,
+                College follows the eligibility framework set by NDC and the Selection Committee,
                 DME, Tamil Nadu.
               </p>
               <div className="overflow-x-auto mb-5">
@@ -249,7 +249,7 @@ export default function MdsOrthodonticsClient({ faqs }: { faqs: FAQ[] }) {
                   </thead>
                   <tbody>
                     {[
-                      ['Qualifying degree', 'BDS from a DCI-recognised institution'],
+                      ['Qualifying degree', 'BDS from a NDC-recognised institution'],
                       ['Internship', '1-year compulsory rotational internship completed before 31 Mar 2026'],
                       ['Dental Council registration', 'Permanent registration with State Dental Council mandatory at admission'],
                       ['Entrance test', 'Valid NEET-MDS 2026 score (NBE-conducted)'],
@@ -287,10 +287,10 @@ export default function MdsOrthodonticsClient({ faqs }: { faqs: FAQ[] }) {
               <div className="space-y-5 mb-5">
                 {[
                   { num: 1, title: 'Appear for NEET-MDS 2026', desc: 'Apply on the NBE portal and attempt NEET-MDS. The result publishes the percentile and All India Rank used for state allotment.' },
-                  { num: 2, title: 'Register for TN PG Counselling', desc: 'Register on tnmedicalselection.net within the announced window. Upload BDS marksheet, internship completion certificate, DCI registration, NEET-MDS scorecard, ID, community and nativity proofs.' },
+                  { num: 2, title: 'Register for TN PG Counselling', desc: 'Register on tnmedicalselection.net within the announced window. Upload BDS marksheet, internship completion certificate, NDC registration, NEET-MDS scorecard, ID, community and nativity proofs.' },
                   { num: 3, title: 'Choice Filling — Lock JKKN MDS Orthodontics', desc: 'Add JKKN Dental College & Hospital under MDS Orthodontics & Dentofacial Orthopedics in your preference order. Lock choices before the deadline.' },
                   { num: 4, title: 'Allotment Rounds', desc: 'Round 1, Round 2, Mop-up and Stray Vacancy. Allotment is purely rank-cum-preference. Allotment order downloaded online.' },
-                  { num: 5, title: 'Document Verification at Institution', desc: 'Report to JKKN with originals (BDS, internship, DCI registration), demand draft / online fee for first year, and category documents (if applicable).' },
+                  { num: 5, title: 'Document Verification at Institution', desc: 'Report to JKKN with originals (BDS, internship, NDC registration), demand draft / online fee for first year, and category documents (if applicable).' },
                   { num: 6, title: 'Admission Confirmation', desc: 'Verification + fee acknowledgement confirms PG admission. Departmental orientation and clinical posting begin per the academic calendar.' },
                 ].map(({ num, title, desc }) => (
                   <div key={num} className="flex gap-4">
@@ -310,7 +310,7 @@ export default function MdsOrthodonticsClient({ faqs }: { faqs: FAQ[] }) {
               </h2>
               <p className="text-gray-600 leading-relaxed mb-4">
                 MDS Orthodontics is a <strong>3-year full-time postgraduate program</strong>
-                governed by the <strong>DCI PG Regulations</strong> and the syllabus of The Tamil
+                governed by the <strong>NDC PG Regulations</strong> and the syllabus of The Tamil
                 Nadu Dr. M.G.R. Medical University. The course blends pre-clinical training,
                 clinical case management, library dissertation work and academic teaching.
               </p>
@@ -383,8 +383,8 @@ export default function MdsOrthodonticsClient({ faqs }: { faqs: FAQ[] }) {
               <ul className="space-y-2.5 mb-5">
                 {[
                   ['Government Quota:', 'most affordable; allotted through TN PG dental counselling — top-rank candidates'],
-                  ['Management Quota:', 'self-financing seats; fee fixed by institution within DCI/state regulatory cap'],
-                  ['NRI Quota:', 'Non-Resident Indian seats — separate fee category as per DCI'],
+                  ['Management Quota:', 'self-financing seats; fee fixed by institution within NDC/state regulatory cap'],
+                  ['NRI Quota:', 'Non-Resident Indian seats — separate fee category as per NDC'],
                 ].map(([k, v]) => (
                   <li key={k as string} className="flex items-start gap-2.5 text-gray-600 text-sm">
                     <span className="w-2 h-2 rounded-full bg-[#006837] mt-1.5 flex-shrink-0" />
@@ -432,7 +432,7 @@ export default function MdsOrthodonticsClient({ faqs }: { faqs: FAQ[] }) {
                   ['Consultant Orthodontist:', 'visiting consultant at multiple multi-specialty clinics, hospitals and dental chains'],
                   ['Corporate Dental Chains:', 'Clove Dental, Apollo White Dental, FMS Dental, Sabka Dentist — full-time / per-case orthodontist roles'],
                   ['Aligner-Tech Companies:', 'Invisalign (Align Technology), ClearPath, 3M Clarity, SmileDirectClub-type platforms hire MDS Ortho consultants and clinical advisors'],
-                  ['Dental College Faculty:', 'Senior Lecturer → Reader → Professor in DCI-approved colleges; UGC pay scales applicable'],
+                  ['Dental College Faculty:', 'Senior Lecturer → Reader → Professor in NDC-approved colleges; UGC pay scales applicable'],
                   ['Public Sector:', 'TNPSC Dental Assistant Surgeon / Dental Surgeon (Specialist) posts; defence dental corps; Railways; ESI'],
                   ['Overseas Practice:', 'after credential exams — Middle East (DHA, MOH, HAAD/DOH), UK (ORE), Australia (ADC), USA pathway'],
                   ['Academics & Research:', 'PhD in Orthodontics, research positions, dental product development for ortho biomaterials & AI ortho software'],
@@ -491,7 +491,7 @@ export default function MdsOrthodonticsClient({ faqs }: { faqs: FAQ[] }) {
               </p>
               <ul className="space-y-2.5 mb-6">
                 {[
-                  ['DCI-approved 4 PG seats:', 'in Orthodontics & Dentofacial Orthopedics, affiliated to TN Dr. MGR Medical University'],
+                  ['NDC-approved 4 PG seats:', 'in Orthodontics & Dentofacial Orthopedics, affiliated to TN Dr. MGR Medical University'],
                   ['High-volume clinical exposure:', '200+ dental chairs, 500+ daily patients — strong ortho-case pipeline including paediatric, adolescent and adult cases'],
                   ['Multi-disciplinary integration:', 'rotation with Maxillofacial Surgery, Prosthodontics, Periodontics for surgical ortho and full-mouth rehabilitation cases'],
                   ['Modern technology:', 'CBCT, OPG, lateral cephalogram, digital model scanner, indirect bonding setup, aligner workflow training'],
@@ -513,7 +513,7 @@ export default function MdsOrthodonticsClient({ faqs }: { faqs: FAQ[] }) {
                   Apply for MDS Orthodontics 2026
                 </h3>
                 <p className="text-white/80 text-sm mb-6 relative z-10">
-                  4 DCI-approved seats. NEET-MDS based through TN Selection Committee. Speak to our
+                  4 NDC-approved seats. NEET-MDS based through TN Selection Committee. Speak to our
                   PG admissions team for category-wise eligibility, fee categories and dissertation
                   ecosystem.
                 </p>
@@ -568,7 +568,7 @@ export default function MdsOrthodonticsClient({ faqs }: { faqs: FAQ[] }) {
                   <h4 className="font-bold text-gray-900 mb-1">JKKN Dental Admissions Team</h4>
                   <p className="text-gray-500 text-sm leading-relaxed">
                     The PG admissions and academic-advisory team at JKKN Dental College &amp;
-                    Hospital, Komarapalayam — DCI-approved, affiliated to The Tamil Nadu Dr. M.G.R.
+                    Hospital, Komarapalayam — NDC-approved, affiliated to The Tamil Nadu Dr. M.G.R.
                     Medical University, Chennai. We publish evidence-based admission and career
                     guidance for BDS and MDS aspirants across Tamil Nadu.
                   </p>
@@ -626,7 +626,7 @@ export default function MdsOrthodonticsClient({ faqs }: { faqs: FAQ[] }) {
                   <span className="text-green-600 text-xs font-bold uppercase tracking-wide">Open</span>
                 </div>
                 <h4 className="font-bold text-gray-900 text-sm mb-1">MDS Orthodontics 2026</h4>
-                <p className="text-gray-500 text-xs mb-4">4 DCI-approved PG seats — TN Govt. norm fees at JKKN Dental College</p>
+                <p className="text-gray-500 text-xs mb-4">4 NDC-approved PG seats — TN Govt. norm fees at JKKN Dental College</p>
                 <a href="/admissions/mds/" className="block w-full bg-[#006837] text-white font-semibold text-sm py-2.5 rounded-lg hover:bg-[#004d28] transition-colors text-center">
                   Apply / Enquire →
                 </a>

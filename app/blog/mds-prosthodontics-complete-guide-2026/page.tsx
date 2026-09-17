@@ -37,12 +37,12 @@ const faqs = [
   {
     question: 'What is the eligibility for MDS Prosthodontics 2026?',
     answer:
-      'BDS from a Dental Council of India (DCI) recognised institution + completed 1-year compulsory rotational internship before 31st March of the admission year + valid NEET-MDS 2026 score + permanent State Dental Council registration at the time of admission.',
+      'BDS from a National Dental Commission (NDC), formerly the Dental Council of India recognised institution + completed 1-year compulsory rotational internship before 31st March of the admission year + valid NEET-MDS 2026 score + permanent State Dental Council registration at the time of admission.',
   },
   {
     question: 'How many MDS Prosthodontics seats are at JKKN Dental College?',
     answer:
-      'JKKN Dental College & Hospital is approved by DCI for 4 MDS seats per year in Prosthodontics, Crown and Bridge. Admission is through Tamil Nadu state PG dental counselling based on NEET-MDS All-India ranks. Government Quota, Management Quota and NRI Quota categories are available.',
+      'JKKN Dental College & Hospital is approved by NDC for 4 MDS seats per year in Prosthodontics, Crown and Bridge. Admission is through Tamil Nadu state PG dental counselling based on NEET-MDS All-India ranks. Government Quota, Management Quota and NRI Quota categories are available.',
   },
   {
     question: 'What is the career scope after MDS Prosthodontics?',
@@ -70,7 +70,7 @@ const articleSchema = generateArticleSchema({
   authorName: 'JKKN Dental Admissions Team',
   authorJobTitle: 'PG Admissions & Academics',
   authorCredentials:
-    'PG admissions and academic-advisory team at JKKN Dental College & Hospital, affiliated to The Tamil Nadu Dr. M.G.R. Medical University and approved by the Dental Council of India.',
+    'PG admissions and academic-advisory team at JKKN Dental College & Hospital, affiliated to The Tamil Nadu Dr. M.G.R. Medical University and approved by the National Dental Commission.',
 });
 
 const faqSchema = generateFAQSchema(faqs);

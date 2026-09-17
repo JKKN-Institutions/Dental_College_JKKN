@@ -21,10 +21,10 @@ import { jkknSameAsUrls } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: 'JKKN Dental College & Hospital (JKK Nattraja), Komarapalayam',
-  description: 'JKKN Dental College & Hospital (JKK Nattraja), Komarapalayam. DCI approved, NAAC A Grade. BDS 100 & MDS 18 seats, fees, 93.9% placed or in higher studies (2024-25 batch). Apply 2026-27.',
+  description: 'JKKN Dental College & Hospital (JKK Nattraja), Komarapalayam. NDC approved, NAAC A Grade. BDS 100 & MDS 18 seats, fees, 93.9% placed or in higher studies (2024-25 batch). Apply 2026-27.',
   openGraph: {
     title: 'JKKN Dental College & Hospital (JKK Nattraja), Komarapalayam',
-    description: 'JKKN Dental College & Hospital (JKK Nattraja), Komarapalayam. DCI approved, NAAC A Grade. BDS 100 & MDS 18 seats, fees, 93.9% placed or in higher studies (2024-25 batch). Apply 2026-27.',
+    description: 'JKKN Dental College & Hospital (JKK Nattraja), Komarapalayam. NDC approved, NAAC A Grade. BDS 100 & MDS 18 seats, fees, 93.9% placed or in higher studies (2024-25 batch). Apply 2026-27.',
     url: 'https://dental.jkkn.ac.in/',
     siteName: 'JKKN Dental College & Hospital',
     images: [
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'JKKN Dental College & Hospital (JKK Nattraja), Komarapalayam',
-    description: 'JKKN Dental College & Hospital (JKK Nattraja), Komarapalayam. DCI approved, NAAC A Grade. BDS 100 & MDS 18 seats, fees, 93.9% placed or in higher studies (2024-25 batch). Apply 2026-27.',
+    description: 'JKKN Dental College & Hospital (JKK Nattraja), Komarapalayam. NDC approved, NAAC A Grade. BDS 100 & MDS 18 seats, fees, 93.9% placed or in higher studies (2024-25 batch). Apply 2026-27.',
     images: ['https://dental.jkkn.ac.in/images/BDS-hero-image.webp'],
   },
   alternates: {
@@ -56,7 +56,7 @@ export default function Home() {
     "@type": "Course",
     "@id": "https://dental.jkkn.ac.in/bds/#course",
     "name": "Bachelor of Dental Surgery (BDS)",
-    "description": "5-year undergraduate dental program including 1-year compulsory rotatory internship at JKKN Dental College & Hospital, approved by DCI with hands-on clinical training and world-class infrastructure.",
+    "description": "5-year undergraduate dental program including 1-year compulsory rotatory internship at JKKN Dental College & Hospital, approved by NDC with hands-on clinical training and world-class infrastructure.",
     "provider": {
       "@type": "CollegeOrUniversity",
       "name": "JKKN Dental College & Hospital",
@@ -136,7 +136,7 @@ export default function Home() {
         "minPrice": "850000",
         "maxPrice": "850000",
         "unitText": "per year",
-        "description": "Management Quota annual tuition, academic year 2026-27: Rs 8,50,000, the same across all five DCI-approved MDS specialisations. Government Quota as per the Tamil Nadu Fee Fixation Committee norms."
+        "description": "Management Quota annual tuition, academic year 2026-27: Rs 8,50,000, the same across all five NDC-approved MDS specialisations. Government Quota as per the Tamil Nadu Fee Fixation Committee norms."
       }
     }
   };
@@ -150,7 +150,7 @@ export default function Home() {
     "alternateName": ["J.K.K. Nattraja Dental College & Hospital", "J.K.K. Nataraja Dental College & Hospital", "J.K.K. Natarajah Dental College & Hospital", "JKK Nattraja Pal Maruthuvak Kalloori Marrum Maruthuvamanai"],
     "url": "https://dental.jkkn.ac.in",
     "logo": "https://dental.jkkn.ac.in/images/dental-logo.png",
-    "description": "AI-integrated dental campus - DCI approved & NAAC A grade accredited dental college offering BDS & MDS programmes with advanced AI integration",
+    "description": "AI-integrated dental campus - NDC approved & NAAC A grade accredited dental college offering BDS & MDS programmes with advanced AI integration",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Natarajapuram, NH-544 (Salem To Coimbatore National Highway)",
@@ -166,7 +166,7 @@ export default function Home() {
       "Bachelor of Dental Surgery",
       "Master of Dental Surgery",
       "Dental Education in India",
-      "DCI Approved Dental Colleges",
+      "NDC Approved Dental Colleges",
       "Dental College Tamil Nadu",
       "Orthodontics",
       "Prosthodontics",
@@ -197,8 +197,8 @@ export default function Home() {
       {
         "@type": "EducationalOccupationalCredential",
         "credentialCategory": "Approval",
-        "name": "Dental Council of India (DCI) Approved",
-        "recognizedBy": { "@type": "Organization", "name": "Dental Council of India", "alternateName": "DCI" }
+        "name": "National Dental Commission (NDC) Approved",
+        "recognizedBy": { "@type": "Organization", "name": "National Dental Commission", "alternateName": "NDC" }
       },
       {
         "@type": "EducationalOccupationalCredential",
@@ -281,10 +281,10 @@ export default function Home() {
       },
       {
         "@type": "Question",
-        "name": "Is JKKN Dental College & Hospital DCI approved?",
+        "name": "Is JKKN Dental College & Hospital NDC approved?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "JKKN Dental College and Hospital holds Dental Council of India approval, National Assessment and Accreditation Council A Grade accreditation, and Tamil Nadu Dr. M.G.R. Medical University affiliation."
+          "text": "JKKN Dental College and Hospital holds National Dental Commission approval, National Assessment and Accreditation Council A Grade accreditation, and Tamil Nadu Dr. M.G.R. Medical University affiliation."
         }
       },
       {
@@ -340,7 +340,7 @@ export default function Home() {
         "name": "Which is the best dental college in Tamil Nadu?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "JKKN Dental College and Hospital is approved by the Dental Council of India, accredited by NAAC with an A Grade, and affiliated to The Tamil Nadu Dr. M.G.R. Medical University. Established in nineteen eighty-seven, it is sanctioned one hundred BDS seats and eighteen MDS seats across five specialities, runs an AI-integrated dental campus, and reports ninety-two percent placement assistance. Tamil Nadu publishes no official merit ranking of its dental colleges, so compare colleges on approval, accreditation, sanctioned intake and clinical exposure."
+          "text": "JKKN Dental College and Hospital is approved by the National Dental Commission, accredited by NAAC with an A Grade, and affiliated to The Tamil Nadu Dr. M.G.R. Medical University. Established in nineteen eighty-seven, it is sanctioned one hundred BDS seats and eighteen MDS seats across five specialities, runs an AI-integrated dental campus, and reports ninety-two percent placement assistance. Tamil Nadu publishes no official merit ranking of its dental colleges, so compare colleges on approval, accreditation, sanctioned intake and clinical exposure."
         }
       },
       {
@@ -372,7 +372,7 @@ export default function Home() {
         "name": "How many dental colleges are there in Tamil Nadu?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Tamil Nadu has approximately thirty-two to thirty-five dental colleges approved by the Dental Council of India, including three government and twenty-eight to thirty-two private institutions."
+          "text": "Tamil Nadu has approximately thirty-two to thirty-five dental colleges approved by the National Dental Commission, including three government and twenty-eight to thirty-two private institutions."
         }
       },
       {
@@ -487,7 +487,7 @@ export default function Home() {
     "name": "JKKN Dental College & Hospital",
     "alternateName": "JKKN Dental College",
     "url": "https://dental.jkkn.ac.in/",
-    "description": "Official website of JKKN Dental College & Hospital – DCI approved, NAAC A Grade accredited dental institution offering BDS and MDS programs in Komarapalayam, Tamil Nadu.",
+    "description": "Official website of JKKN Dental College & Hospital – NDC approved, NAAC A Grade accredited dental institution offering BDS and MDS programs in Komarapalayam, Tamil Nadu.",
     "publisher": {
       "@type": "CollegeOrUniversity",
       "@id": "https://dental.jkkn.ac.in/#college",
@@ -509,7 +509,7 @@ export default function Home() {
     "@context": "https://schema.org",
     "@type": "WebPage",
     "@id": "https://dental.jkkn.ac.in/#webpage",
-    "name": "JKKN Dental College & Hospital – DCI Approved Dental College in Tamil Nadu",
+    "name": "JKKN Dental College & Hospital – NDC Approved Dental College in Tamil Nadu",
     "url": "https://dental.jkkn.ac.in/",
     "speakable": {
       "@type": "SpeakableSpecification",
@@ -522,7 +522,7 @@ export default function Home() {
         "/html/head/meta[@name='description']/@content"
       ]
     },
-    "description": "JKKN Dental College & Hospital, established in 1987, is a DCI approved and NAAC A Grade accredited dental college offering BDS and MDS programs. Located on an AI-integrated campus in Komarapalayam, Tamil Nadu, with 200+ dental chairs, 100+ bed hospital, and 93.9% placed or in higher studies (2024-25 batch). Apply now for 2026-27 admissions.",
+    "description": "JKKN Dental College & Hospital, established in 1987, is a NDC approved and NAAC A Grade accredited dental college offering BDS and MDS programs. Located on an AI-integrated campus in Komarapalayam, Tamil Nadu, with 200+ dental chairs, 100+ bed hospital, and 93.9% placed or in higher studies (2024-25 batch). Apply now for 2026-27 admissions.",
     "datePublished": "2025-01-01",
     "dateModified": "2026-03-27"
   };

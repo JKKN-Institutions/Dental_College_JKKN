@@ -128,12 +128,12 @@ export default function MDSOralMedicine() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             {/* Left Content */}
             <div>
-              {/* DCI Badge */}
+              {/* NDC Badge */}
               <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 mb-6">
                 <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
-                <span className="text-white font-semibold text-sm">DCI Approved | NAAC Accredited</span>
+                <span className="text-white font-semibold text-sm">NDC Approved | NAAC Accredited</span>
               </div>
 
               {/* Heading */}
@@ -620,11 +620,11 @@ export default function MDSOralMedicine() {
               <div className="space-y-6">
                 <div className="flex gap-4">
                   <div className="bg-[#7cb983] text-white rounded-full w-8 h-8 flex items-center justify-center font-bold flex-shrink-0">1</div>
-                  <p className="text-gray-700 pt-1">BDS degree from a DCI recognized institution with completion of one-year compulsory rotating internship</p>
+                  <p className="text-gray-700 pt-1">BDS degree from a NDC recognized institution with completion of one-year compulsory rotating internship</p>
                 </div>
                 <div className="flex gap-4">
                   <div className="bg-[#7cb983] text-white rounded-full w-8 h-8 flex items-center justify-center font-bold flex-shrink-0">2</div>
-                  <p className="text-gray-700 pt-1">Valid NEET MDS qualification with minimum required percentile as per DCI/State government norms</p>
+                  <p className="text-gray-700 pt-1">Valid NEET MDS qualification with minimum required percentile as per NDC/State government norms</p>
                 </div>
                 <div className="flex gap-4">
                   <div className="bg-[#7cb983] text-white rounded-full w-8 h-8 flex items-center justify-center font-bold flex-shrink-0">3</div>
@@ -1129,12 +1129,12 @@ export default function MDSOralMedicine() {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-8">
-            {/* DCI */}
+            {/* NDC */}
             <div className="flex flex-col items-center">
               <div className="bg-gradient-to-br from-[#006837] to-[#002309] rounded-xl p-4 sm:p-8 mb-4 w-20 h-20 sm:w-32 sm:h-32 flex items-center justify-center">
-                <span className="text-2xl sm:text-4xl font-bold text-white">DCI</span>
+                <span className="text-2xl sm:text-4xl font-bold text-white">NDC</span>
               </div>
-              <h3 className="text-center font-bold text-gray-800 text-sm sm:text-base">Dental Council of India</h3>
+              <h3 className="text-center font-bold text-gray-800 text-sm sm:text-base">National Dental Commission (formerly Dental Council of India)</h3>
             </div>
 
             {/* NAAC */}

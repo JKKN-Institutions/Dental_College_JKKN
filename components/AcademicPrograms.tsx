@@ -12,7 +12,7 @@ export default function AcademicPrograms() {
             Comprehensive Dental Education Programs
           </h2>
           <p className="text-gray-600 text-sm sm:text-base md:text-lg max-w-3xl mx-auto leading-relaxed">
-            Choose from our DCI-approved undergraduate and postgraduate dental programs designed to shape competent, compassionate dental professionals.
+            Choose from our undergraduate and postgraduate dental programmes, approved by the National Dental Commission (NDC)s designed to shape competent, compassionate dental professionals.
           </p>
         </div>
 

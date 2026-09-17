@@ -5,7 +5,7 @@ import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
   title: { absolute: 'Dental College near Hosur | JKKN Dental College & Hospital' },
-  description: 'No dental college in Hosur-Krishnagiri belt? JKKN Dental College, Komarapalayam is a direct NH-44 ride via Salem. DCI approved. BDS 100 seats, MDS.',
+  description: 'No dental college in Hosur-Krishnagiri belt? JKKN Dental College, Komarapalayam is a direct NH-44 ride via Salem. NDC approved. BDS 100 seats, MDS.',
   keywords: 'dental college in hosur, dental college near hosur, dental college krishnagiri, dental college dharmapuri, bds colleges near hosur, jkkn dental hosur',
   robots: {
     index: true,
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Dental College near Hosur | JKKN Dental College & Hospital',
-    description: 'No dental college in Hosur-Krishnagiri belt? JKKN Dental College, Komarapalayam is a direct NH-44 ride via Salem. DCI approved. BDS 100 seats, MDS.',
+    description: 'No dental college in Hosur-Krishnagiri belt? JKKN Dental College, Komarapalayam is a direct NH-44 ride via Salem. NDC approved. BDS 100 seats, MDS.',
     url: 'https://dental.jkkn.ac.in/hosur/',
     siteName: 'JKKN Dental College & Hospital',
     images: [
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Dental College near Hosur | JKKN Dental College & Hospital',
-    description: 'No dental college in Hosur-Krishnagiri belt? JKKN Dental College, Komarapalayam is a direct NH-44 ride via Salem. DCI approved. BDS 100 seats, MDS.',
+    description: 'No dental college in Hosur-Krishnagiri belt? JKKN Dental College, Komarapalayam is a direct NH-44 ride via Salem. NDC approved. BDS 100 seats, MDS.',
     images: ['https://dental.jkkn.ac.in/images/BDS-hero-image.webp'],
     site: '@jaborejkkn',
   },
@@ -66,7 +66,7 @@ const orgSchema = {
   "alternateName": "JKKN Dental",
   "url": "https://dental.jkkn.ac.in/",
   "logo": "https://dental.jkkn.ac.in/images/jkkn-dental-logo.webp",
-  "description": "DCI approved, NAAC accredited dental college affiliated to TN Dr. MGR Medical University. Offers BDS and MDS programmes with 93.9% placed or in higher studies (2024-25 batch).",
+  "description": "NDC approved, NAAC accredited dental college affiliated to TN Dr. MGR Medical University. Offers BDS and MDS programmes with 93.9% placed or in higher studies (2024-25 batch).",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Natarajapuram, NH-544 (Salem–Coimbatore Highway)",
@@ -80,10 +80,10 @@ const orgSchema = {
   "foundingDate": "1987",
   "parentOrganization": { "@type": "Organization", "name": "JKKN Institutions", "url": "https://jkkn.ac.in/" },
   "hasCredential": [
-    { "@type": "EducationalOccupationalCredential", "credentialCategory": "DCI Approved" },
+    { "@type": "EducationalOccupationalCredential", "credentialCategory": "NDC Approved" },
     { "@type": "EducationalOccupationalCredential", "credentialCategory": "NAAC Accredited" }
   ],
-  "accreditedBy": { "@type": "Organization", "name": "Dental Council of India" },
+  "accreditedBy": { "@type": "Organization", "name": "National Dental Commission (formerly Dental Council of India)" },
   "memberOf": { "@type": "Organization", "name": "The Tamil Nadu Dr. M.G.R. Medical University, Chennai" },
   "geo": { "@type": "GeoCoordinates", "latitude": "11.4446062", "longitude": "77.7309852" },
   "sameAs": jkknSameAsUrls
@@ -96,7 +96,7 @@ const courseSchema = [
     "@id": "https://dental.jkkn.ac.in/academics/bds/#course",
     "url": "https://dental.jkkn.ac.in/academics/bds/",
     "name": "BDS (Bachelor of Dental Surgery)",
-    "description": "4-year undergraduate dental programme with 1-year internship. DCI approved, 100 seats. NEET qualified admission.",
+    "description": "4-year undergraduate dental programme with 1-year internship. NDC approved, 100 seats. NEET qualified admission.",
     "provider": { "@type": "EducationalOrganization", "name": "JKKN Dental College & Hospital", "url": "https://dental.jkkn.ac.in/" },
     "educationalLevel": "Undergraduate",
     "timeRequired": "P5Y",

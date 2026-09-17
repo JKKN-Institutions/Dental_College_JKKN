@@ -47,7 +47,7 @@ export default function MdsSpecialityNav({ current }: Props) {
         </h2>
         <p className="text-sm sm:text-base text-gray-700 mb-8 max-w-3xl">
           JKKN Dental College is sanctioned {total} MDS seats across {SPECIALITIES.length}{' '}
-          DCI-approved specialities, each a three-year full-time programme affiliated to The Tamil
+          specialities approved by the National Dental Commission (NDC), each a three-year full-time programme affiliated to The Tamil
           Nadu Dr. M.G.R. Medical University.
         </p>
 

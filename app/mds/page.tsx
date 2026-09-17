@@ -409,7 +409,7 @@ const progPerioSchema = {
   "programPrerequisites": {
     "@type": "EducationalOccupationalCredential",
     "credentialCategory": "Undergraduate Degree",
-    "name": "BDS (Bachelor of Dental Surgery) from DCI-recognized college + NEET-MDS qualification"
+    "name": "BDS (Bachelor of Dental Surgery) from NDC-recognized college + NEET-MDS qualification"
   }
 };
 
@@ -453,7 +453,7 @@ const progOrthoSchema = {
   "programPrerequisites": {
     "@type": "EducationalOccupationalCredential",
     "credentialCategory": "Undergraduate Degree",
-    "name": "BDS (Bachelor of Dental Surgery) from DCI-recognized college + NEET-MDS qualification"
+    "name": "BDS (Bachelor of Dental Surgery) from NDC-recognized college + NEET-MDS qualification"
   }
 };
 
@@ -497,7 +497,7 @@ const progProsthoSchema = {
   "programPrerequisites": {
     "@type": "EducationalOccupationalCredential",
     "credentialCategory": "Undergraduate Degree",
-    "name": "BDS (Bachelor of Dental Surgery) from DCI-recognized college + NEET-MDS qualification"
+    "name": "BDS (Bachelor of Dental Surgery) from NDC-recognized college + NEET-MDS qualification"
   }
 };
 
@@ -541,7 +541,7 @@ const progCdeSchema = {
   "programPrerequisites": {
     "@type": "EducationalOccupationalCredential",
     "credentialCategory": "Undergraduate Degree",
-    "name": "BDS (Bachelor of Dental Surgery) from DCI-recognized college + NEET-MDS qualification"
+    "name": "BDS (Bachelor of Dental Surgery) from NDC-recognized college + NEET-MDS qualification"
   }
 };
 
@@ -585,7 +585,7 @@ const progOmrSchema = {
   "programPrerequisites": {
     "@type": "EducationalOccupationalCredential",
     "credentialCategory": "Undergraduate Degree",
-    "name": "BDS (Bachelor of Dental Surgery) from DCI-recognized college + NEET-MDS qualification"
+    "name": "BDS (Bachelor of Dental Surgery) from NDC-recognized college + NEET-MDS qualification"
   }
 };
 

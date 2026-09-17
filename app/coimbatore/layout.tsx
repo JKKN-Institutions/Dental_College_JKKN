@@ -5,7 +5,7 @@ import { jkknSameAsUrls } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: { absolute: 'Best Dental College Near Coimbatore | JKKN Dental College' },
-  description: 'JKKN Dental — 108 km from Coimbatore via NH-544. 93.9% placed or in higher studies (2024-25 batch), 200+ dental chairs, BDS & MDS. DCI approved. Admissions open 2026.',
+  description: 'JKKN Dental — 108 km from Coimbatore via NH-544. 93.9% placed or in higher studies (2024-25 batch), 200+ dental chairs, BDS & MDS. NDC approved. Admissions open 2026.',
   keywords: 'best dental college near coimbatore, dental colleges in coimbatore, private dental colleges in coimbatore, top dental colleges in coimbatore, bds college coimbatore, jkkn dental coimbatore, dental college 108 km coimbatore',
   robots: {
     index: true,
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Best Dental College Near Coimbatore | JKKN Dental College',
-    description: 'JKKN Dental College & Hospital — 108 km from Coimbatore on NH-544. 93.9% placed or in higher studies (2024-25 batch), 200+ dental chairs, BDS & MDS. DCI approved.',
+    description: 'JKKN Dental College & Hospital — 108 km from Coimbatore on NH-544. 93.9% placed or in higher studies (2024-25 batch), 200+ dental chairs, BDS & MDS. NDC approved.',
     url: 'https://dental.jkkn.ac.in/coimbatore/',
     siteName: 'JKKN Dental College & Hospital',
     images: [
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Best Dental College Near Coimbatore | JKKN Dental College',
-    description: 'JKKN Dental College & Hospital — 108 km from Coimbatore on NH-544. 93.9% placed or in higher studies (2024-25 batch), 200+ dental chairs, BDS & MDS. DCI approved.',
+    description: 'JKKN Dental College & Hospital — 108 km from Coimbatore on NH-544. 93.9% placed or in higher studies (2024-25 batch), 200+ dental chairs, BDS & MDS. NDC approved.',
     images: ['https://dental.jkkn.ac.in/images/BDS-hero-image.webp'],
     site: '@jaborejkkn',
   },
@@ -51,7 +51,7 @@ const faqSchema = {
       "name": "Which is the best dental college near Coimbatore?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "JKKN Dental College & Hospital in Komarapalayam, Namakkal is the leading dental institution within 120 km of Coimbatore, offering a 93.9% placed-or-higher-studies rate (2024-25 batch) and the highest BDS-to-MDS conversion record in the region. The college is approved by the Dental Council of India and affiliated with TN Dr. MGR Medical University. Learners from Coimbatore reach the campus in approximately 1.5 hours via NH-544."
+        "text": "JKKN Dental College & Hospital in Komarapalayam, Namakkal is the leading dental institution within 120 km of Coimbatore, offering a 93.9% placed-or-higher-studies rate (2024-25 batch) and the highest BDS-to-MDS conversion record in the region. The college is approved by the National Dental Commission (formerly Dental Council of India) and affiliated with TN Dr. MGR Medical University. Learners from Coimbatore reach the campus in approximately 1.5 hours via NH-544."
       }
     },
     {
@@ -96,10 +96,10 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      "name": "Is JKKN Dental College approved by the Dental Council of India?",
+      "name": "Is JKKN Dental College approved by the National Dental Commission?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. JKKN Dental College & Hospital is recognized and approved by the Dental Council of India (DCI). The college is also affiliated with The Tamil Nadu Dr. M.G.R. Medical University, Chennai, and holds NAAC accreditation."
+        "text": "Yes. JKKN Dental College & Hospital is recognized and approved by the National Dental Commission (NDC). The college is also affiliated with The Tamil Nadu Dr. M.G.R. Medical University, Chennai, and holds NAAC accreditation."
       }
     },
     {
@@ -153,7 +153,7 @@ const orgSchema = {
   "alternateName": ["JKK Nattraja Dental College", "JKKN Dental"],
   "url": "https://dental.jkkn.ac.in/",
   "logo": "https://dental.jkkn.ac.in/images/jkkn-dental-logo.webp",
-  "description": "DCI-approved dental college offering BDS (100 seats) and MDS (5 specializations) with a 93.9% placed-or-higher-studies rate (2024-25 batch), 200+ dental chairs, and clinical exposure from Year 1.",
+  "description": "NDC-approved dental college offering BDS (100 seats) and MDS (5 specializations) with a 93.9% placed-or-higher-studies rate (2024-25 batch), 200+ dental chairs, and clinical exposure from Year 1.",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Natarajapuram, NH-544 (Salem–Coimbatore Highway)",
@@ -168,7 +168,7 @@ const orgSchema = {
   "parentOrganization": { "@type": "Organization", "name": "JKKN Institutions", "url": "https://jkkn.ac.in/" },
   "hasCredential": [
     { "@type": "EducationalOccupationalCredential", "credentialCategory": "NAAC Accreditation Grade A" },
-    { "@type": "EducationalOccupationalCredential", "credentialCategory": "Dental Council of India Approval" }
+    { "@type": "EducationalOccupationalCredential", "credentialCategory": "National Dental Commission Approval" }
   ],
   "memberOf": { "@type": "Organization", "name": "The Tamil Nadu Dr. M.G.R. Medical University, Chennai" },
   "geo": { "@type": "GeoCoordinates", "latitude": "11.4120", "longitude": "77.7210" },
@@ -250,7 +250,7 @@ const courseSchema = [
     "@id": "https://dental.jkkn.ac.in/academics/bds/#course",
     "url": "https://dental.jkkn.ac.in/academics/bds/",
     "name": "BDS (Bachelor of Dental Surgery)",
-    "description": "5-year BDS program (including 1-year compulsory rotatory internship) with 100 seats. DCI approved, affiliated with TN Dr. MGR Medical University. Admission through NEET UG and Tamil Nadu state counseling.",
+    "description": "5-year BDS program (including 1-year compulsory rotatory internship) with 100 seats. NDC approved, affiliated with TN Dr. MGR Medical University. Admission through NEET UG and Tamil Nadu state counseling.",
     "provider": { "@type": "EducationalOrganization", "name": "JKKN Dental College & Hospital", "url": "https://dental.jkkn.ac.in/" },
     "educationalLevel": "Undergraduate",
     "timeRequired": "P5Y",

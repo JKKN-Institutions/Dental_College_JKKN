@@ -40,7 +40,7 @@ const faqSchema = {
       name: 'What university is JKKN Dental College affiliated to?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'JKKN Dental College & Hospital is affiliated to TN Dr. MGR Medical University (The Tamil Nadu Dr. M.G.R. Medical University), Chennai, and its programs are approved by the Dental Council of India (DCI).',
+        text: 'JKKN Dental College & Hospital is affiliated to TN Dr. MGR Medical University (The Tamil Nadu Dr. M.G.R. Medical University), Chennai, and its programs are approved by the National Dental Commission (NDC), formerly the Dental Council of India.',
       },
     },
     {

@@ -22,7 +22,7 @@
 ## Accreditation & Approvals
 
 - National Dental Commission (NDC), formerly the Dental Council of India (DCI): Approved
-- Regulator note: The Dental Council of India was dissolved with effect from 19 March 2026 and the National Dental Commission took effect the same date; DCI naming remains valid as an interim arrangement, so both names refer to the same regulator (source: dciindia.gov.in public notice, read 2026-09-16).
+- Regulator note: The National Dental Commission was dissolved with effect from 19 March 2026 and the National Dental Commission took effect the same date; NDC naming remains valid as an interim arrangement, so both names refer to the same regulator (source: dciindia.gov.in public notice, read 2026-09-16).
 - NAAC: A Grade (CGPA 3.01, valid to 26 February 2030) - certificate at https://ahs.jkkn.ac.in/pdfs/NAAC-certificate.pdf
 - Affiliation: Tamil Nadu Dr. M.G.R. Medical University, Chennai
 - Institution Class: Minority institution (per the TNMGRMU BDS sanctioned-intake matrix 2025-26)
@@ -39,7 +39,7 @@
 ### MDS (Master of Dental Surgery)
 - Duration: 3 years
 - Total MDS Seats: 18
-- Specializations (5 — NDC/DCI approved):
+- Specializations (5 — NDC/NDC approved):
   1. Periodontics (2 seats) — https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/periodontics/
   2. Orthodontics & Dentofacial Orthopedics (5 seats) — https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/orthodontics-and-dentofacial-orthopedics/
   3. Prosthodontics Crown & Bridge (3 seats) — https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/prosthodontics-crown-and-bridge/
@@ -53,7 +53,7 @@
 - Fee: Rs 25,000 total (2026-27)
 - Awarded: Certificate in Dental Surgery Assistant
 - Page: https://dental.jkkn.ac.in/dental-surgery-assistant-course/
-- Note: this is a certificate course, not an NDC/DCI degree programme. Call +91 9345855001 for the next batch date.
+- Note: this is a certificate course, not an NDC/NDC degree programme. Call +91 9345855001 for the next batch date.
 
 ### Academic Departments (9 total)
 The college has 9 academic departments providing teaching and clinical training across BDS and MDS:

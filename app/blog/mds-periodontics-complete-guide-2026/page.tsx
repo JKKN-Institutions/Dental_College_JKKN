@@ -37,12 +37,12 @@ const faqs = [
   {
     question: 'What is the eligibility for MDS Periodontics 2026?',
     answer:
-      'Candidates must hold a BDS degree from a Dental Council of India (DCI) recognised institution, have completed a 1-year compulsory rotational internship before 31st March of the admission year, possess permanent State Dental Council registration, and have a valid NEET-MDS 2026 score.',
+      'Candidates must hold a BDS degree from a National Dental Commission (NDC), formerly the Dental Council of India recognised institution, have completed a 1-year compulsory rotational internship before 31st March of the admission year, possess permanent State Dental Council registration, and have a valid NEET-MDS 2026 score.',
   },
   {
     question: 'How many MDS Periodontics seats are at JKKN Dental College?',
     answer:
-      'JKKN Dental College & Hospital is approved by DCI for 4 MDS Periodontics seats per year. Admission is conducted through Tamil Nadu PG dental counselling based on NEET-MDS ranks, with Government, Management and NRI Quotas.',
+      'JKKN Dental College & Hospital is approved by NDC for 4 MDS Periodontics seats per year. Admission is conducted through Tamil Nadu PG dental counselling based on NEET-MDS ranks, with Government, Management and NRI Quotas.',
   },
   {
     question: 'What is the career scope after MDS Periodontics in 2026?',
@@ -70,7 +70,7 @@ const articleSchema = generateArticleSchema({
   authorName: 'JKKN Dental Admissions Team',
   authorJobTitle: 'PG Admissions & Academics',
   authorCredentials:
-    'PG admissions and academic-advisory team at JKKN Dental College & Hospital, affiliated to The Tamil Nadu Dr. M.G.R. Medical University and approved by the Dental Council of India.',
+    'PG admissions and academic-advisory team at JKKN Dental College & Hospital, affiliated to The Tamil Nadu Dr. M.G.R. Medical University and approved by the National Dental Commission.',
 });
 
 const faqSchema = generateFAQSchema(faqs);

@@ -57,7 +57,7 @@ export default function MDSComparisonTables() {
             JKKN&rsquo;s 18 MDS Seats, Speciality by Speciality
           </h3>
           <p className="text-gray-600 mb-6">
-            JKKN Dental College offers 18 MDS seats across 5 DCI-approved
+            JKKN Dental College offers 18 MDS seats across 5 specialities approved by the National Dental Commission (NDC), 
             specializations. All programs are 3 years, full-time, and affiliated
             to The Tamil Nadu Dr. M.G.R. Medical University.
           </p>

@@ -45,13 +45,13 @@ import { jkknSameAsUrls } from '@/lib/metadata';
 export const metadata: Metadata = {
   title: 'BDS Admission 2026-27 | JKKN Dental College Komarapalayam',
   description:
-    'Apply for BDS admission at JKKN Dental College, Komarapalayam. NEET-UG based, 100 DCI-approved seats, scholarships, hostel & 93.9% placed or in higher studies (2024-25 batch).',
+    'Apply for BDS admission at JKKN Dental College, Komarapalayam. NEET-UG based, 100 NDC-approved seats, scholarships, hostel & 93.9% placed or in higher studies (2024-25 batch).',
   keywords:
     'BDS admission 2026, BDS admission Tamil Nadu, JKKN BDS admission, NEET BDS counselling, BDS seats Namakkal, dental college admission Komarapalayam, BDS fees Tamil Nadu',
   openGraph: {
     title: 'BDS Admission 2026-27 | JKKN Dental College & Hospital',
     description:
-      'NEET-based BDS admission at JKKN Dental College. 100 seats, DCI approved, NAAC A grade, scholarships and hostel available.',
+      'NEET-based BDS admission at JKKN Dental College. 100 seats, NDC approved, NAAC A grade, scholarships and hostel available.',
     url: 'https://dental.jkkn.ac.in/admissions/bds/',
     type: 'website',
     siteName: 'JKKN Dental College & Hospital',
@@ -68,7 +68,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'BDS Admission 2026-27 | JKKN Dental College',
     description:
-      'NEET-based BDS admission at JKKN Dental College. 100 seats, DCI approved, NAAC A grade, scholarships available.',
+      'NEET-based BDS admission at JKKN Dental College. 100 seats, NDC approved, NAAC A grade, scholarships available.',
     images: ['/images/BDS-hero-image.webp'],
   },
   alternates: {
@@ -86,7 +86,7 @@ const bdsCourseSchema = {
   '@id': 'https://dental.jkkn.ac.in/admissions/bds/#course',
   name: 'Bachelor of Dental Surgery (BDS) — Admission 2026-27',
   description:
-    '5-year DCI-approved BDS program (4 years academic + 1 year compulsory rotating internship) at JKKN Dental College & Hospital, Komarapalayam, Tamil Nadu. 100 seats, NEET-UG based admission, affiliated to TN Dr. MGR Medical University.',
+    '5-year NDC-approved BDS program (4 years academic + 1 year compulsory rotating internship) at JKKN Dental College & Hospital, Komarapalayam, Tamil Nadu. 100 seats, NEET-UG based admission, affiliated to TN Dr. MGR Medical University.',
   provider: {
     '@type': 'CollegeOrUniversity',
     name: 'JKKN Dental College & Hospital',
@@ -192,7 +192,7 @@ const heroStats = [
 ];
 
 const trustBadges = [
-  { label: 'DCI Approved', sublabel: 'Dental Council of India', icon: Shield },
+  { label: 'NDC Approved', sublabel: 'National Dental Commission (formerly Dental Council of India)', icon: Shield },
   { label: 'NAAC A Grade', sublabel: 'Accredited Institution', icon: Award },
   { label: 'TN Dr. MGR University', sublabel: 'Affiliated', icon: GraduationCap },
   { label: 'Govt. of Tamil Nadu', sublabel: 'Approved', icon: Building2 },
@@ -221,7 +221,7 @@ const eligibility = [
   },
   {
     title: 'Nationality',
-    text: 'Indian nationals, NRI, and Foreign nationals eligible per DCI norms',
+    text: 'Indian nationals, NRI, and Foreign nationals eligible per NDC norms',
     icon: Globe,
   },
   {
@@ -236,7 +236,7 @@ const admissionSteps = [
     step: 1,
     title: 'Qualify NEET-UG 2026',
     description:
-      'Appear for NEET-UG 2026 and secure the minimum qualifying percentile prescribed by NMC/DCI.',
+      'Appear for NEET-UG 2026 and secure the minimum qualifying percentile prescribed by NMC/NDC.',
     icon: BookOpen,
   },
   {
@@ -302,7 +302,7 @@ const feeBreakdown = [
   },
   {
     quota: 'NRI / Foreign National',
-    tuition: 'As per DCI norms',
+    tuition: 'As per NDC norms',
     note: 'Contact admissions for the latest NRI fee structure.',
   },
 ];
@@ -363,7 +363,7 @@ const whyJKKN = [
   { text: `${collegeFacts.collegeAge}+ years of dental education excellence (since 1987)`, icon: Building2 },
   { text: `${collegeFacts.dentalChairs}+ dental chairs & ${collegeFacts.hospitalBeds}+ hospital beds for clinical exposure`, icon: Stethoscope },
   { text: `${collegeFacts.dailyPatients}+ daily patients — hands-on training from Year 1`, icon: HeartPulse },
-  { text: 'DCI approved, NAAC A grade accredited institution', icon: Award },
+  { text: 'NDC approved, NAAC A grade accredited institution', icon: Award },
   { text: 'AI-Integrated Dental Campus', icon: Cpu },
   { text: '93.9% placed or in higher studies (2024-25 batch) with national & international tie-ups', icon: Briefcase },
   { text: '9 specialised dental departments with expert senior learners', icon: Users },
@@ -377,7 +377,7 @@ const bdsFaqs = [
   },
   {
     q: 'How many BDS seats are available?',
-    a: 'JKKN Dental College & Hospital offers 100 BDS seats per year, approved by the Dental Council of India (DCI) and affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai.',
+    a: 'JKKN Dental College & Hospital offers 100 BDS seats per year, approved by the National Dental Commission (NDC) and affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai.',
   },
   {
     q: 'What is the BDS course fee at JKKN?',
@@ -427,7 +427,7 @@ export default function BDSAdmissionPage() {
   const speakableSchema = generateSpeakableWebPageSchema({
     title: 'BDS Admission 2026-27 | JKKN Dental College',
     description:
-      'Apply for BDS admission at JKKN Dental College, Komarapalayam. NEET-UG based, 100 DCI-approved seats, scholarships and hostel available.',
+      'Apply for BDS admission at JKKN Dental College, Komarapalayam. NEET-UG based, 100 NDC-approved seats, scholarships and hostel available.',
     url: 'https://dental.jkkn.ac.in/admissions/bds/',
     speakableCssSelectors: ['h1', '.hero-description', 'article p'],
   });
@@ -488,7 +488,7 @@ export default function BDSAdmissionPage() {
 
           <p className="hero-description text-lg md:text-xl text-gray-200 max-w-3xl mx-auto mb-8">
             Apply for the Bachelor of Dental Surgery programme at JKKN Dental College &
-            Hospital, Komarapalayam — DCI approved, NAAC A grade, with 100 seats, 200+
+            Hospital, Komarapalayam — NDC approved, NAAC A grade, with 100 seats, 200+
             dental chairs, and 93.9% placed or in higher studies (2024-25 batch).
           </p>
 
@@ -675,7 +675,7 @@ export default function BDSAdmissionPage() {
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">BDS Admission Important Dates</h2>
             <p className="text-gray-300 max-w-2xl mx-auto">
-              Key timelines for the BDS 2026-27 admission cycle (subject to NMC/DCI/TN counselling notifications).
+              Key timelines for the BDS 2026-27 admission cycle (subject to NMC/NDC/TN counselling notifications).
             </p>
           </div>
 
@@ -770,7 +770,7 @@ export default function BDSAdmissionPage() {
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Ready to Begin Your BDS Journey?</h2>
           <p className="text-lg text-gray-200 mb-8 max-w-2xl mx-auto">
             Join 100 BDS learners admitted every year at JKKN Dental College &
-            Hospital — DCI approved, NAAC A grade, with industry-leading clinical
+            Hospital — NDC approved, NAAC A grade, with industry-leading clinical
             exposure and placement support.
           </p>
 

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   alternates: { canonical: '/academic-council/' },
   title: 'Academic Council | JKKN Dental College',
   description: 'Learn about the Academic Council at JKKN Dental College, dedicated to shaping curriculum, promoting research, and enhancing dental education.',
-  keywords: 'Academic Council, JKKN Dental College, dental curriculum, dental education, faculty development, DCI guidelines, teaching methodology',
+  keywords: 'Academic Council, JKKN Dental College, dental curriculum, dental education, faculty development, NDC guidelines, teaching methodology',
   openGraph: {
     title: 'Academic Council | JKKN Dental College',
     description: 'Learn about the Academic Council at JKKN Dental College, dedicated to shaping curriculum, promoting research, and enhancing dental education.',
@@ -95,7 +95,7 @@ export default function AcademicCouncil() {
                 </div>
                 <div className="space-y-3">
                   {[
-                    'To develop and periodically revise the learning framework in accordance with the guidelines of regulatory bodies such as the Dental Council of India (DCI).',
+                    'To develop and periodically revise the learning framework in accordance with the guidelines of regulatory bodies such as the National Dental Commission (NDC), formerly the Dental Council of India.',
                     'To integrate innovative teaching methodologies, including digital learning and hands on training, for a comprehensive learning experience.',
                     'To promote interdisciplinary and evidence-based education, preparing learners for modern dental practice.',
                     'To encourage research, critical thinking, and problem-solving skills among learners.',

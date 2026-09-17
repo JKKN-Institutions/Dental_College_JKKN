@@ -62,7 +62,7 @@ const orgSchema = {
   "alternateName": "JKKN Dental",
   "url": "https://dental.jkkn.ac.in/",
   "logo": "https://dental.jkkn.ac.in/images/jkkn-dental-logo.webp",
-  "description": "DCI approved, NAAC accredited dental college with 93.9% placed or in higher studies (2024-25 batch). 3,000+ alumni worldwide. Career Development Centre provides comprehensive placement support for BDS and MDS graduates.",
+  "description": "NDC approved, NAAC accredited dental college with 93.9% placed or in higher studies (2024-25 batch). 3,000+ alumni worldwide. Career Development Centre provides comprehensive placement support for BDS and MDS graduates.",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Natarajapuram, NH-544 (Salem\u2013Coimbatore Highway)",
@@ -76,7 +76,7 @@ const orgSchema = {
   "foundingDate": "1987",
   "parentOrganization": { "@type": "Organization", "name": "JKKN Institutions", "url": "https://jkkn.ac.in/" },
   "hasCredential": [
-    { "@type": "EducationalOccupationalCredential", "credentialCategory": "DCI Approved" },
+    { "@type": "EducationalOccupationalCredential", "credentialCategory": "NDC Approved" },
     { "@type": "EducationalOccupationalCredential", "credentialCategory": "NAAC Accredited" }
   ],
   "memberOf": { "@type": "Organization", "name": "The Tamil Nadu Dr. M.G.R. Medical University, Chennai" },

@@ -44,7 +44,7 @@ const faqSchema = {
       name: 'Is JKKN Dental College accredited?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes. JKKN Dental College is affiliated to TN Dr. MGR Medical University and holds NAAC A Grade accreditation. The college is approved by the Dental Council of India (DCI).',
+        text: 'Yes. JKKN Dental College is affiliated to TN Dr. MGR Medical University and holds NAAC A Grade accreditation. The college is approved by the National Dental Commission (NDC), formerly the Dental Council of India.',
       },
     },
     {

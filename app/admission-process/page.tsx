@@ -36,11 +36,11 @@ const faqSchema = generateFAQSchema([
   },
   {
     question: 'Is NEET mandatory for BDS admission?',
-    answer: 'Yes. NEET-UG qualification is mandatory for BDS admission at all Dental Council of India approved dental colleges in India, including JKKN Dental College & Hospital.',
+    answer: 'Yes. NEET-UG qualification is mandatory for BDS admission at all National Dental Commission (formerly Dental Council of India) approved dental colleges in India, including JKKN Dental College & Hospital.',
   },
   {
     question: 'How many BDS seats are available at JKKN Dental College?',
-    answer: 'JKKN Dental College & Hospital offers 100 seats for the BDS (Bachelor of Dental Surgery) program as approved by the Dental Council of India.',
+    answer: 'JKKN Dental College & Hospital offers 100 seats for the BDS (Bachelor of Dental Surgery) program as approved by the National Dental Commission.',
   },
   {
     question: 'What documents are required for BDS admission?',
@@ -338,7 +338,7 @@ export default function AdmissionProcess() {
                   <svg className="w-6 h-6 text-[#7cb983] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
-                  <span>BDS degree from DCI recognized college</span>
+                  <span>BDS degree from NDC recognized college</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <svg className="w-6 h-6 text-[#7cb983] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">

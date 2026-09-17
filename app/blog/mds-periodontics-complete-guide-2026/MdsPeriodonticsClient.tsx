@@ -135,7 +135,7 @@ export default function MdsPeriodonticsClient({ faqs }: { faqs: FAQ[] }) {
                 <strong>MDS Periodontics</strong> is a 3-year PG dental specialisation focused on
                 gum diseases, periodontal regeneration and dental implant surgery. Eligibility:
                 BDS + completed internship + valid <strong>NEET-MDS</strong> score. JKKN Dental
-                College offers <strong>4 DCI-approved seats</strong> per year. Career drivers in
+                College offers <strong>4 seats approved by the National Dental Commission (NDC)</strong> per year. Career drivers in
                 2026: dental implant boom, laser periodontics, regenerative therapy (GTR, PRF,
                 PRP), peri-implantitis management and aesthetic gum-line procedures.
               </p>
@@ -170,7 +170,7 @@ export default function MdsPeriodonticsClient({ faqs }: { faqs: FAQ[] }) {
               <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">Eligibility &amp; NEET-MDS Cutoff 2026</h2>
               <p className="text-gray-600 leading-relaxed mb-5">
                 MDS admission is conducted entirely through <strong>NEET-MDS</strong>. JKKN follows
-                eligibility set by DCI and the TN Selection Committee.
+                eligibility set by NDC and the TN Selection Committee.
               </p>
               <div className="overflow-x-auto mb-5">
                 <table className="w-full text-sm border border-gray-200 rounded-xl overflow-hidden">
@@ -180,7 +180,7 @@ export default function MdsPeriodonticsClient({ faqs }: { faqs: FAQ[] }) {
                   </tr></thead>
                   <tbody>
                     {[
-                      ['Qualifying degree', 'BDS from a DCI-recognised institution'],
+                      ['Qualifying degree', 'BDS from a NDC-recognised institution'],
                       ['Internship', '1-year compulsory rotational internship before 31 Mar 2026'],
                       ['Dental Council registration', 'Permanent State Dental Council registration'],
                       ['Entrance test', 'Valid NEET-MDS 2026 score (NBE-conducted)'],
@@ -210,7 +210,7 @@ export default function MdsPeriodonticsClient({ faqs }: { faqs: FAQ[] }) {
               <div className="space-y-5 mb-5">
                 {[
                   { num: 1, title: 'Appear for NEET-MDS 2026', desc: 'Apply on the NBE portal and attempt NEET-MDS. Result publishes percentile and AIR.' },
-                  { num: 2, title: 'Register for TN PG Counselling', desc: 'Register on tnmedicalselection.net. Upload BDS marksheet, internship cert, DCI registration, NEET-MDS scorecard, ID and category proofs.' },
+                  { num: 2, title: 'Register for TN PG Counselling', desc: 'Register on tnmedicalselection.net. Upload BDS marksheet, internship cert, NDC registration, NEET-MDS scorecard, ID and category proofs.' },
                   { num: 3, title: 'Choice Filling — JKKN Periodontics', desc: 'Add JKKN Dental College under MDS Periodontics in preference list and lock before deadline.' },
                   { num: 4, title: 'Allotment Rounds', desc: 'Round 1, Round 2, Mop-up, Stray Vacancy. Rank-cum-preference allotment.' },
                   { num: 5, title: 'Document Verification', desc: 'Report to JKKN with originals + first-year fee payment.' },
@@ -230,7 +230,7 @@ export default function MdsPeriodonticsClient({ faqs }: { faqs: FAQ[] }) {
             <section id="duration-structure" className="mb-12 scroll-mt-20">
               <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">Course Duration &amp; Structure</h2>
               <p className="text-gray-600 leading-relaxed mb-4">
-                MDS Periodontics is a <strong>3-year full-time program</strong> per DCI PG
+                MDS Periodontics is a <strong>3-year full-time program</strong> per NDC PG
                 Regulations and TNMGRMU syllabus, blending didactic, surgical and clinical
                 training.
               </p>
@@ -338,7 +338,7 @@ export default function MdsPeriodonticsClient({ faqs }: { faqs: FAQ[] }) {
               <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">Why Choose JKKN for MDS Periodontics</h2>
               <ul className="space-y-2.5 mb-6">
                 {[
-                  ['DCI-approved 4 PG seats:', 'Periodontics MDS affiliated to TN Dr. MGR Medical University'],
+                  ['NDC-approved 4 PG seats:', 'Periodontics MDS affiliated to TN Dr. MGR Medical University'],
                   ['High clinical case mix:', '200+ dental chairs, 500+ daily patients with strong perio + implant case pipeline'],
                   ['Implant placement training:', 'in-house implant workflow + multi-disciplinary collaboration with Prosthodontics & Oral Surgery'],
                   ['Regenerative & laser exposure:', 'GTR, bone grafting, PRF/PRP techniques + laser periodontics where applicable'],
@@ -355,7 +355,7 @@ export default function MdsPeriodonticsClient({ faqs }: { faqs: FAQ[] }) {
                 <div className="absolute top-3 right-6 w-20 h-20 rounded-full bg-white/10 pointer-events-none" />
                 <div className="absolute bottom-3 left-4 w-12 h-12 rounded-full bg-white/10 pointer-events-none" />
                 <h3 className="text-xl font-bold text-white mb-2 relative z-10">Apply for MDS Periodontics 2026</h3>
-                <p className="text-white/80 text-sm mb-6 relative z-10">4 DCI-approved seats. NEET-MDS through TN counselling.</p>
+                <p className="text-white/80 text-sm mb-6 relative z-10">4 NDC-approved seats. NEET-MDS through TN counselling.</p>
                 <div className="flex flex-col sm:flex-row gap-3 justify-center relative z-10">
                   <a href="/admissions/mds/" className="bg-white text-[#006837] font-semibold px-6 py-2.5 rounded-lg text-sm hover:bg-gray-100 transition-colors">MDS Admission Page →</a>
                   <a href="tel:+919345855001" className="border border-white/50 text-white font-semibold px-6 py-2.5 rounded-lg text-sm hover:bg-white/10 transition-colors">Call +91 93458 55001</a>
@@ -386,7 +386,7 @@ export default function MdsPeriodonticsClient({ faqs }: { faqs: FAQ[] }) {
                 <div className="w-16 h-16 rounded-xl bg-[#FBFBEE] flex items-center justify-center flex-shrink-0"><span className="text-[#006837] font-bold text-lg">JD</span></div>
                 <div>
                   <h4 className="font-bold text-gray-900 mb-1">JKKN Dental Admissions Team</h4>
-                  <p className="text-gray-500 text-sm leading-relaxed">PG admissions and academic-advisory team at JKKN Dental College &amp; Hospital, Komarapalayam — DCI-approved, affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai.</p>
+                  <p className="text-gray-500 text-sm leading-relaxed">PG admissions and academic-advisory team at JKKN Dental College &amp; Hospital, Komarapalayam — NDC-approved, affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai.</p>
                 </div>
               </div>
             </div>
@@ -419,7 +419,7 @@ export default function MdsPeriodonticsClient({ faqs }: { faqs: FAQ[] }) {
               <div className="bg-[#FBFBEE] border border-[#7cb983]/40 rounded-xl p-5">
                 <div className="flex items-center gap-1.5 mb-2"><span className="w-2 h-2 rounded-full bg-green-500" /><span className="text-green-600 text-xs font-bold uppercase tracking-wide">Open</span></div>
                 <h4 className="font-bold text-gray-900 text-sm mb-1">MDS Periodontics 2026</h4>
-                <p className="text-gray-500 text-xs mb-4">4 DCI-approved PG seats at JKKN Dental College</p>
+                <p className="text-gray-500 text-xs mb-4">4 NDC-approved PG seats at JKKN Dental College</p>
                 <a href="/admissions/mds/" className="block w-full bg-[#006837] text-white font-semibold text-sm py-2.5 rounded-lg hover:bg-[#004d28] transition-colors text-center">Apply / Enquire →</a>
                 <a href="tel:+919345855001" className="block text-center text-[#006837] text-xs font-medium mt-3">+91 93458 55001</a>
               </div>

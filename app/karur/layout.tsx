@@ -5,7 +5,7 @@ import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
   title: { absolute: "Dental College Near Karur — BDS & MDS" },
-  description: 'Karur district has no dental college. JKKN Dental College at Komarapalayam is ~75 km away via Erode. DCI approved. BDS 100 seats, MDS. Apply 2026.',
+  description: 'Karur district has no dental college. JKKN Dental College at Komarapalayam is ~75 km away via Erode. NDC approved. BDS 100 seats, MDS. Apply 2026.',
   keywords: 'dental college in karur, dental college near karur, bds colleges near karur, karur dental college, mds college karur, jkkn dental karur',
   robots: {
     index: true,
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Dental College near Karur | JKKN Dental College & Hospital',
-    description: 'Karur district has no dental college. JKKN Dental College at Komarapalayam is ~75 km away via Erode. DCI approved. BDS 100 seats, MDS. Apply 2026.',
+    description: 'Karur district has no dental college. JKKN Dental College at Komarapalayam is ~75 km away via Erode. NDC approved. BDS 100 seats, MDS. Apply 2026.',
     url: 'https://dental.jkkn.ac.in/karur/',
     siteName: 'JKKN Dental College & Hospital',
     images: [
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Dental College near Karur | JKKN Dental College & Hospital',
-    description: 'Karur district has no dental college. JKKN Dental College at Komarapalayam is ~75 km away via Erode. DCI approved. BDS 100 seats, MDS. Apply 2026.',
+    description: 'Karur district has no dental college. JKKN Dental College at Komarapalayam is ~75 km away via Erode. NDC approved. BDS 100 seats, MDS. Apply 2026.',
     images: ['https://dental.jkkn.ac.in/images/BDS-hero-image.webp'],
     site: '@jaborejkkn',
   },
@@ -46,8 +46,8 @@ const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "Are there any dental colleges in Karur?", "acceptedAnswer": { "@type": "Answer", "text": "Karur district has no dedicated dental college, so BDS and MDS aspirants from Karur travel to neighbouring districts. The nearest established DCI-approved option is JKKN Dental College and Hospital at Komarapalayam, Namakkal — approximately seventy-five kilometres away via the Erode side. It offers BDS with one hundred seats and MDS in five specialisations, affiliated to TN Dr. MGR Medical University, Chennai." } },
-    { "@type": "Question", "name": "Which is the best dental college near Karur?", "acceptedAnswer": { "@type": "Answer", "text": "JKKN Dental College and Hospital at Komarapalayam is one of the most established DCI-approved dental colleges accessible from Karur. Founded in 1987, NAAC accredited and affiliated to The Tamil Nadu Dr. M.G.R. Medical University, it operates a 200+ chair teaching hospital treating 500+ patients daily." } },
+    { "@type": "Question", "name": "Are there any dental colleges in Karur?", "acceptedAnswer": { "@type": "Answer", "text": "Karur district has no dedicated dental college, so BDS and MDS aspirants from Karur travel to neighbouring districts. The nearest established NDC-approved option is JKKN Dental College and Hospital at Komarapalayam, Namakkal — approximately seventy-five kilometres away via the Erode side. It offers BDS with one hundred seats and MDS in five specialisations, affiliated to TN Dr. MGR Medical University, Chennai." } },
+    { "@type": "Question", "name": "Which is the best dental college near Karur?", "acceptedAnswer": { "@type": "Answer", "text": "JKKN Dental College and Hospital at Komarapalayam is one of the most established NDC-approved dental colleges accessible from Karur. Founded in 1987, NAAC accredited and affiliated to The Tamil Nadu Dr. M.G.R. Medical University, it operates a 200+ chair teaching hospital treating 500+ patients daily." } },
     { "@type": "Question", "name": "How far is JKKN Dental College from Karur?", "acceptedAnswer": { "@type": "Answer", "text": "JKKN Dental College is approximately seventy-five kilometres from Karur — around one and a half to two hours by road via the Erode side. Direct trains also run from Karur Junction to Erode Junction, which is eighteen kilometres from the campus." } },
     { "@type": "Question", "name": "Can Karur students commute daily or should they stay in the hostel?", "acceptedAnswer": { "@type": "Answer", "text": "Both options work. JKKN Dental provides separate hostels for boys and girls with mess facility, and many Karur learners stay on campus and travel home on weekends via bus or the Karur Junction to Erode Junction train line. Daily commute is possible but a hostel stay is more comfortable for the BDS workload." } },
     { "@type": "Question", "name": "What is the NEET cut-off for BDS at JKKN Dental?", "acceptedAnswer": { "@type": "Answer", "text": "The NEET cut-off for BDS admission at JKKN Dental College & Hospital varies each year based on counselling rounds. Contact the admission office at plus ninety-one nine three four five eight five five zero zero one for the latest cut-off information and seat availability for the current admission cycle." } },
@@ -66,7 +66,7 @@ const orgSchema = {
   "alternateName": "JKKN Dental",
   "url": "https://dental.jkkn.ac.in/",
   "logo": "https://dental.jkkn.ac.in/images/jkkn-dental-logo.webp",
-  "description": "DCI approved, NAAC accredited dental college affiliated to TN Dr. MGR Medical University. Offers BDS and MDS programmes with 93.9% placed or in higher studies (2024-25 batch).",
+  "description": "NDC approved, NAAC accredited dental college affiliated to TN Dr. MGR Medical University. Offers BDS and MDS programmes with 93.9% placed or in higher studies (2024-25 batch).",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Natarajapuram, NH-544 (Salem–Coimbatore Highway)",
@@ -80,10 +80,10 @@ const orgSchema = {
   "foundingDate": "1987",
   "parentOrganization": { "@type": "Organization", "name": "JKKN Institutions", "url": "https://jkkn.ac.in/" },
   "hasCredential": [
-    { "@type": "EducationalOccupationalCredential", "credentialCategory": "DCI Approved" },
+    { "@type": "EducationalOccupationalCredential", "credentialCategory": "NDC Approved" },
     { "@type": "EducationalOccupationalCredential", "credentialCategory": "NAAC Accredited" }
   ],
-  "accreditedBy": { "@type": "Organization", "name": "Dental Council of India" },
+  "accreditedBy": { "@type": "Organization", "name": "National Dental Commission (formerly Dental Council of India)" },
   "memberOf": { "@type": "Organization", "name": "The Tamil Nadu Dr. M.G.R. Medical University, Chennai" },
   "geo": { "@type": "GeoCoordinates", "latitude": "11.4446062", "longitude": "77.7309852" },
   "sameAs": jkknSameAsUrls
@@ -96,7 +96,7 @@ const courseSchema = [
     "@id": "https://dental.jkkn.ac.in/academics/bds/#course",
     "url": "https://dental.jkkn.ac.in/academics/bds/",
     "name": "BDS (Bachelor of Dental Surgery)",
-    "description": "4-year undergraduate dental programme with 1-year internship. DCI approved, 100 seats. NEET qualified admission.",
+    "description": "4-year undergraduate dental programme with 1-year internship. NDC approved, 100 seats. NEET qualified admission.",
     "provider": { "@type": "EducationalOrganization", "name": "JKKN Dental College & Hospital", "url": "https://dental.jkkn.ac.in/" },
     "educationalLevel": "Undergraduate",
     "timeRequired": "P5Y",

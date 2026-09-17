@@ -5,7 +5,7 @@ import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
   title: { absolute: 'Dental College near Trichy | JKKN Dental College & Hospital' },
-  description: 'BDS/MDS from Trichy? JKKN Dental College at Komarapalayam is ~145 km via NH-44. DCI approved, NAAC accredited. BDS 100 seats, MDS 5 specialisations.',
+  description: 'BDS/MDS from Trichy? JKKN Dental College at Komarapalayam is ~145 km via NH-44. NDC approved, NAAC accredited. BDS 100 seats, MDS 5 specialisations.',
   keywords: 'dental college in trichy, dental college near trichy, bds colleges in trichy, trichy dental college, mds college trichy, jkkn dental trichy',
   robots: {
     index: true,
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Dental College near Trichy | JKKN Dental College & Hospital',
-    description: 'BDS/MDS from Trichy? JKKN Dental College at Komarapalayam is ~145 km via NH-44. DCI approved, NAAC accredited. BDS 100 seats, MDS 5 specialisations.',
+    description: 'BDS/MDS from Trichy? JKKN Dental College at Komarapalayam is ~145 km via NH-44. NDC approved, NAAC accredited. BDS 100 seats, MDS 5 specialisations.',
     url: 'https://dental.jkkn.ac.in/trichy/',
     siteName: 'JKKN Dental College & Hospital',
     images: [
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Dental College near Trichy | JKKN Dental College & Hospital',
-    description: 'BDS/MDS from Trichy? JKKN Dental College at Komarapalayam is ~145 km via NH-44. DCI approved, NAAC accredited. BDS 100 seats, MDS 5 specialisations.',
+    description: 'BDS/MDS from Trichy? JKKN Dental College at Komarapalayam is ~145 km via NH-44. NDC approved, NAAC accredited. BDS 100 seats, MDS 5 specialisations.',
     images: ['https://dental.jkkn.ac.in/images/BDS-hero-image.webp'],
     site: '@jaborejkkn',
   },
@@ -47,7 +47,7 @@ const faqSchema = {
   "@type": "FAQPage",
   "mainEntity": [
     { "@type": "Question", "name": "Are there any dental colleges in Trichy?", "acceptedAnswer": { "@type": "Answer", "text": "Trichy city has very limited dental college options, and most BDS aspirants from Trichy district travel to colleges in western Tamil Nadu. JKKN Dental College and Hospital at Komarapalayam, Namakkal — approximately one hundred and forty-five kilometres from Trichy via NH-44 — offers BDS with one hundred seats and MDS in five specialisations, affiliated to TN Dr. MGR Medical University, Chennai." } },
-    { "@type": "Question", "name": "Which is the best dental college near Trichy?", "acceptedAnswer": { "@type": "Answer", "text": "JKKN Dental College and Hospital at Komarapalayam is one of the most established DCI-approved dental colleges accessible from Trichy. Founded in 1987, NAAC accredited and affiliated to The Tamil Nadu Dr. M.G.R. Medical University, it operates a 200+ chair teaching hospital treating 500+ patients daily." } },
+    { "@type": "Question", "name": "Which is the best dental college near Trichy?", "acceptedAnswer": { "@type": "Answer", "text": "JKKN Dental College and Hospital at Komarapalayam is one of the most established NDC-approved dental colleges accessible from Trichy. Founded in 1987, NAAC accredited and affiliated to The Tamil Nadu Dr. M.G.R. Medical University, it operates a 200+ chair teaching hospital treating 500+ patients daily." } },
     { "@type": "Question", "name": "How far is JKKN Dental College from Trichy?", "acceptedAnswer": { "@type": "Answer", "text": "JKKN Dental College is approximately one hundred and forty-five kilometres from Trichy — around three to three and a half hours by road via NH-44 through Namakkal, then NH-544 to Komarapalayam. Direct government buses run from Trichy Central Bus Stand towards Salem and Erode via Namakkal." } },
     { "@type": "Question", "name": "Can Trichy students stay in the hostel at JKKN Dental?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. JKKN Dental provides separate hostels for boys and girls with mess facility. Most learners from Trichy stay on campus and travel home on weekends — Trichy is well connected to Namakkal and Erode by frequent buses and trains." } },
     { "@type": "Question", "name": "What is the NEET cut-off for BDS at JKKN Dental?", "acceptedAnswer": { "@type": "Answer", "text": "The NEET cut-off for BDS admission at JKKN Dental College & Hospital varies each year based on counselling rounds. Contact the admission office at plus ninety-one nine three four five eight five five zero zero one for the latest cut-off information and seat availability for the current admission cycle." } },
@@ -66,7 +66,7 @@ const orgSchema = {
   "alternateName": "JKKN Dental",
   "url": "https://dental.jkkn.ac.in/",
   "logo": "https://dental.jkkn.ac.in/images/jkkn-dental-logo.webp",
-  "description": "DCI approved, NAAC accredited dental college affiliated to TN Dr. MGR Medical University. Offers BDS and MDS programmes with 93.9% placed or in higher studies (2024-25 batch).",
+  "description": "NDC approved, NAAC accredited dental college affiliated to TN Dr. MGR Medical University. Offers BDS and MDS programmes with 93.9% placed or in higher studies (2024-25 batch).",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Natarajapuram, NH-544 (Salem–Coimbatore Highway)",
@@ -80,10 +80,10 @@ const orgSchema = {
   "foundingDate": "1987",
   "parentOrganization": { "@type": "Organization", "name": "JKKN Institutions", "url": "https://jkkn.ac.in/" },
   "hasCredential": [
-    { "@type": "EducationalOccupationalCredential", "credentialCategory": "DCI Approved" },
+    { "@type": "EducationalOccupationalCredential", "credentialCategory": "NDC Approved" },
     { "@type": "EducationalOccupationalCredential", "credentialCategory": "NAAC Accredited" }
   ],
-  "accreditedBy": { "@type": "Organization", "name": "Dental Council of India" },
+  "accreditedBy": { "@type": "Organization", "name": "National Dental Commission (formerly Dental Council of India)" },
   "memberOf": { "@type": "Organization", "name": "The Tamil Nadu Dr. M.G.R. Medical University, Chennai" },
   "geo": { "@type": "GeoCoordinates", "latitude": "11.4446062", "longitude": "77.7309852" },
   "sameAs": jkknSameAsUrls
@@ -96,7 +96,7 @@ const courseSchema = [
     "@id": "https://dental.jkkn.ac.in/academics/bds/#course",
     "url": "https://dental.jkkn.ac.in/academics/bds/",
     "name": "BDS (Bachelor of Dental Surgery)",
-    "description": "4-year undergraduate dental programme with 1-year internship. DCI approved, 100 seats. NEET qualified admission.",
+    "description": "4-year undergraduate dental programme with 1-year internship. NDC approved, 100 seats. NEET qualified admission.",
     "provider": { "@type": "EducationalOrganization", "name": "JKKN Dental College & Hospital", "url": "https://dental.jkkn.ac.in/" },
     "educationalLevel": "Undergraduate",
     "timeRequired": "P5Y",

@@ -23,7 +23,7 @@ export default function KeralaPage() {
     },
     {
       q: 'Is BDS at JKKN taught in English?',
-      a: 'Yes. The BDS and MDS programmes at JKKN Dental College are taught in English, as in all DCI-approved dental colleges in India, so Kerala students face no language barrier in academics. The hospital’s patient base is largely Tamil-speaking, which learners pick up naturally during clinical years.',
+      a: 'Yes. The BDS and MDS programmes at JKKN Dental College are taught in English, as in all NDC-approved dental colleges in India, so Kerala students face no language barrier in academics. The hospital’s patient base is largely Tamil-speaking, which learners pick up naturally during clinical years.',
     },
     {
       q: 'Can students from Bengaluru and other states also apply?',
@@ -44,7 +44,7 @@ export default function KeralaPage() {
   ];
 
   const whyFeatures = [
-    { icon: <Hospital className="w-6 h-6 text-[#006837]" />, title: 'Own Hospital', desc: 'DCI-approved dental college with attached hospital for hands-on clinical training' },
+    { icon: <Hospital className="w-6 h-6 text-[#006837]" />, title: 'Own Hospital', desc: 'NDC-approved dental college with attached hospital for hands-on clinical training' },
     { icon: <Stethoscope className="w-6 h-6 text-[#006837]" />, title: 'High Patient Volume', desc: '500+ patients daily from surrounding districts — deep clinical exposure from Year 1' },
     { icon: <Microscope className="w-6 h-6 text-[#006837]" />, title: 'Advanced Learning Labs', desc: 'Advanced dental learning labs, simulation equipment, and digital dentistry training' },
     { icon: <TrendingUp className="w-6 h-6 text-[#006837]" />, title: 'Management Quota Route', desc: 'NEET-qualified students from Kerala and other states join via Management Quota' },
@@ -124,12 +124,12 @@ export default function KeralaPage() {
         style={{ background: 'linear-gradient(135deg, #006837 0%, #002309 100%)', minHeight: '88vh' }}
       >
         <div className="mb-6 inline-flex items-center gap-2 bg-white/10 backdrop-blur border border-white/20 text-white text-sm font-medium px-5 py-2 rounded-full">
-          <Shield className="w-4 h-4" /> DCI, NAAC Approved • Admissions Open
+          <Shield className="w-4 h-4" /> NDC, NAAC Approved • Admissions Open
         </div>
         <h1 className="text-white font-extrabold leading-tight mb-3 max-w-4xl" style={{ fontSize: 'clamp(2rem, 5vw + 0.5rem, 3.5rem)' }}>
           Dental College for Students from <span className="text-[#7cb983]">Kerala</span>
         </h1>
-        <p className="text-white/60 text-sm font-medium tracking-wide mb-6">JKKN Dental College &amp; Hospital, Komarapalayam, Tamil Nadu — DCI Approved, NAAC Accredited</p>
+        <p className="text-white/60 text-sm font-medium tracking-wide mb-6">JKKN Dental College &amp; Hospital, Komarapalayam, Tamil Nadu — NDC Approved, NAAC Accredited</p>
         <p className="text-white/80 max-w-2xl mb-10 leading-relaxed" style={{ fontSize: 'clamp(0.9rem, 1vw + 0.5rem, 1.1rem)' }}>
           NEET-qualified students from Kerala join BDS and MDS at JKKN through the Management Quota. The campus sits just off the
           Kerala–Chennai rail line (Erode Junction, 18 km) — approximately 165 km from Palakkad via NH-544.
@@ -159,7 +159,7 @@ export default function KeralaPage() {
       <div className="bg-white border-b border-gray-100 py-4 px-4">
         <div className="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8">
           <div className="flex items-center gap-3">
-            <span className="flex items-center gap-1.5 bg-[#FBFBEE] border border-[#7cb983] text-[#006837] text-sm font-semibold px-3 py-1.5 rounded-full">✓ DCI</span>
+            <span className="flex items-center gap-1.5 bg-[#FBFBEE] border border-[#7cb983] text-[#006837] text-sm font-semibold px-3 py-1.5 rounded-full">✓ NDC</span>
             <span className="flex items-center gap-1.5 bg-[#FBFBEE] border border-[#7cb983] text-[#006837] text-sm font-semibold px-3 py-1.5 rounded-full">✓ NAAC</span>
           </div>
           <span className="hidden sm:block text-gray-300">|</span>
@@ -186,7 +186,7 @@ export default function KeralaPage() {
           <h3 className="font-bold text-gray-900 mb-3 text-lg">What Kerala Students Get at JKKN</h3>
           <ul className="list-disc list-inside space-y-2 text-gray-700 mb-4" style={{ fontSize: 'clamp(0.9rem, 1vw + 0.4rem, 1.05rem)' }}>
             <li><strong>Straightforward admission</strong> — Management Quota with NEET UG; no state counselling needed</li>
-            <li><strong>English-medium academics</strong> — as in all DCI-approved colleges; no language barrier</li>
+            <li><strong>English-medium academics</strong> — as in all NDC-approved colleges; no language barrier</li>
             <li><strong>Easy travel home</strong> — Kerala–Chennai trains via Erode Junction; Coimbatore airport ~108 km</li>
           </ul>
           <p className="text-gray-500 text-sm">Government Quota seats are filled through DME Tamil Nadu counselling for Tamil Nadu students; out-of-state students apply under the Management Quota.</p>
@@ -228,7 +228,7 @@ export default function KeralaPage() {
             Kerala families have long sent students to western Tamil Nadu for professional education — the rail line makes it practically next door. JKKN adds a 200+ chair teaching hospital, a full residential campus, and a clear Management Quota admission route for NEET-qualified students.
           </p>
           <p className="text-gray-400 max-w-3xl mx-auto mb-4 text-sm leading-relaxed">
-            Founded in 1987, JKKN Dental College &amp; Hospital brings nearly four decades of dental education excellence, backed by the JKKN Institutions legacy since 1952. Approved by the Dental Council of India (DCI) and affiliated to TN Dr. MGR Medical University, Chennai, the institution operates a 200+ chair teaching hospital treating 500+ patients daily.
+            Founded in 1987, JKKN Dental College &amp; Hospital brings nearly four decades of dental education excellence, backed by the JKKN Institutions legacy since 1952. Approved by the National Dental Commission (NDC), formerly the Dental Council of India and affiliated to TN Dr. MGR Medical University, Chennai, the institution operates a 200+ chair teaching hospital treating 500+ patients daily.
           </p>
           <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-12" />
           <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 list-none p-0 m-0">
@@ -428,7 +428,7 @@ export default function KeralaPage() {
               { label: 'Programmes', value: 'BDS (100 seats) + MDS (5 specialisations)' },
               { label: 'Admission for Kerala students', value: 'Management Quota with NEET UG qualification' },
               { label: 'Hospital', value: '200+ dental chairs, 100+ beds, 500+ patients daily' },
-              { label: 'Approval', value: 'DCI approved | TN Dr. MGR Medical University, Chennai' },
+              { label: 'Approval', value: 'NDC approved | TN Dr. MGR Medical University, Chennai' },
               { label: 'Contact', value: '+91 9345855001 | info@jkkn.ac.in' },
             ].map((item) => (
               <div key={item.label} className="bg-[#FBFBEE] rounded-xl p-4 border border-gray-100">

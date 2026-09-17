@@ -9,9 +9,9 @@ export const faqCategories = [
           'JKKN Dental College offers BDS (5-year undergraduate) with training across 9 departments and MDS (3-year postgraduate) in 5 specializations: Conservative Dentistry & Endodontics, Prosthodontics, Periodontics, Oral Medicine & Radiology, and Orthodontics.',
       },
       {
-        question: 'Is JKKN Dental College & Hospital DCI approved?',
+        question: 'Is JKKN Dental College & Hospital NDC approved?',
         answer:
-          'Yes, JKKN Dental College & Hospital is fully approved by the Dental Council of India (DCI) and National Medical Commission (NMC). The college is affiliated with The Tamil Nadu Dr. M.G.R. Medical University and NAAC accredited.',
+          'Yes, JKKN Dental College & Hospital is fully approved by the National Dental Commission (NDC), formerly the Dental Council of India and National Medical Commission (NMC). The college is affiliated with The Tamil Nadu Dr. M.G.R. Medical University and NAAC accredited.',
       },
       {
         question: 'What makes JKKN different from other dental colleges?',
@@ -21,7 +21,7 @@ export const faqCategories = [
       {
         question: 'Which is the best dental college in Tamil Nadu?',
         answer:
-          "JKKN Dental College & Hospital is approved by the Dental Council of India, accredited by NAAC with an A Grade, and affiliated to The Tamil Nadu Dr. M.G.R. Medical University. Established in 1987, it is sanctioned 100 BDS seats and 18 MDS seats across 5 specialities, runs an AI-integrated dental campus, and reports 93.9% placed or in higher studies (2024-25 batch). Tamil Nadu publishes no official merit ranking of its dental colleges, so compare colleges on approval, accreditation, sanctioned intake and clinical exposure.",
+          "JKKN Dental College & Hospital is approved by the National Dental Commission, accredited by NAAC with an A Grade, and affiliated to The Tamil Nadu Dr. M.G.R. Medical University. Established in 1987, it is sanctioned 100 BDS seats and 18 MDS seats across 5 specialities, runs an AI-integrated dental campus, and reports 93.9% placed or in higher studies (2024-25 batch). Tamil Nadu publishes no official merit ranking of its dental colleges, so compare colleges on approval, accreditation, sanctioned intake and clinical exposure.",
       },
       {
         question: 'How does JKKN integrate AI in dental education?',
@@ -46,17 +46,17 @@ export const faqCategories = [
       {
         question: 'Is JKKN Dental College NAAC accredited?',
         answer:
-          'Yes, JKKN Dental College & Hospital is NAAC Accredited with A Grade. The institution is approved by the Dental Council of India (DCI), recognized by the Government of Tamil Nadu, and affiliated with the Tamil Nadu Dr. M.G.R. Medical University, Chennai.',
+          'Yes, JKKN Dental College & Hospital is NAAC Accredited with A Grade. The institution is approved by the National Dental Commission (NDC), recognized by the Government of Tamil Nadu, and affiliated with the Tamil Nadu Dr. M.G.R. Medical University, Chennai.',
       },
       {
         question: 'How many dental colleges are there in Tamil Nadu?',
         answer:
-          'Tamil Nadu has approximately 32 to 35 dental colleges approved by the Dental Council of India. This includes 3 government dental colleges and 28–32 private dental colleges across Chennai, Coimbatore, Salem, Namakkal, and other districts. JKKN Dental College is the prominent institution in Namakkal District on the Salem-Coimbatore corridor.',
+          'Tamil Nadu has approximately 32 to 35 dental colleges approved by the National Dental Commission. This includes 3 government dental colleges and 28–32 private dental colleges across Chennai, Coimbatore, Salem, Namakkal, and other districts. JKKN Dental College is the prominent institution in Namakkal District on the Salem-Coimbatore corridor.',
       },
       {
         question: 'What is the NIRF ranking of dental colleges in Tamil Nadu?',
         answer:
-          'Nine Tamil Nadu dental colleges appear in NIRF 2025 rankings: SIMATS Saveetha (#2), SRM Dental Ramapuram (#8), Sri Ramachandra (#13), Amrita Coimbatore (#14), MAHER Chennai (#16), Sree Balaji (#27), Dr. MGR University (#30), Chettinad (#32), and SRM Kattankulathur (#39). JKKN Dental College is not NIRF-ranked but holds DCI approval and NAAC A Grade accreditation.',
+          'Nine Tamil Nadu dental colleges appear in NIRF 2025 rankings: SIMATS Saveetha (#2), SRM Dental Ramapuram (#8), Sri Ramachandra (#13), Amrita Coimbatore (#14), MAHER Chennai (#16), Sree Balaji (#27), Dr. MGR University (#30), Chettinad (#32), and SRM Kattankulathur (#39). JKKN Dental College is not NIRF-ranked but holds NDC approval and NAAC A Grade accreditation.',
       },
     ],
   },
@@ -77,12 +77,12 @@ export const faqCategories = [
       {
         question: 'Is NEET mandatory for BDS admission?',
         answer:
-          'Yes. NEET-UG qualification is mandatory for BDS admission at all Dental Council of India approved dental colleges in India, including JKKN Dental College & Hospital.',
+          'Yes. NEET-UG qualification is mandatory for BDS admission at all National Dental Commission approved dental colleges in India, including JKKN Dental College & Hospital.',
       },
       {
         question: 'How many BDS seats are available at JKKN Dental College?',
         answer:
-          'JKKN Dental College & Hospital offers 100 seats for the BDS (Bachelor of Dental Surgery) program as approved by the Dental Council of India.',
+          'JKKN Dental College & Hospital offers 100 seats for the BDS (Bachelor of Dental Surgery) program as approved by the National Dental Commission.',
       },
       {
         question: 'What documents are required for BDS admission?',
@@ -97,7 +97,7 @@ export const faqCategories = [
       {
         question: 'How does MDS admission work at JKKN Dental College?',
         answer:
-          'MDS admission requires a BDS degree from a DCI-recognized institution, completion of one-year compulsory rotating internship, permanent State Dental Council registration, and a valid NEET-MDS score. Seats are allotted through Tamil Nadu state counseling.',
+          'MDS admission requires a BDS degree from a NDC-recognized institution, completion of one-year compulsory rotating internship, permanent State Dental Council registration, and a valid NEET-MDS score. Seats are allotted through Tamil Nadu state counseling.',
       },
       {
         question: 'Are scholarships available at JKKN Dental College?',
@@ -107,7 +107,7 @@ export const faqCategories = [
       {
         question: 'Can international students apply for BDS at JKKN?',
         answer:
-          'Yes, international students and NRI candidates can apply for BDS admission at JKKN Dental College as per DCI guidelines and regulations set by the Tamil Nadu Dr. M.G.R. Medical University. NRI/Foreign national seats are available. Contact the international admissions desk at +91 93458 55001 or email dental@jkkn.ac.in for specific requirements.',
+          'Yes, international students and NRI candidates can apply for BDS admission at JKKN Dental College as per NDC guidelines and regulations set by the Tamil Nadu Dr. M.G.R. Medical University. NRI/Foreign national seats are available. Contact the international admissions desk at +91 93458 55001 or email dental@jkkn.ac.in for specific requirements.',
       },
     ],
   },
@@ -138,7 +138,7 @@ export const faqCategories = [
       {
         question: 'What MDS specializations are available at JKKN?',
         answer:
-          'JKKN Dental College offers 5 DCI-approved MDS specializations: Conservative Dentistry & Endodontics (5 seats), Prosthodontics Crown & Bridge (3 seats), Periodontics & Oral Implantology (2 seats), Oral Medicine & Radiology (3 seats), and Orthodontics & Dentofacial Orthopedics (5 seats) — 18 seats in total annually.',
+          'JKKN Dental College offers 5 NDC-approved MDS specializations: Conservative Dentistry & Endodontics (5 seats), Prosthodontics Crown & Bridge (3 seats), Periodontics & Oral Implantology (2 seats), Oral Medicine & Radiology (3 seats), and Orthodontics & Dentofacial Orthopedics (5 seats) — 18 seats in total annually.',
       },
       {
         question: 'What are the career opportunities after MDS?',
@@ -146,9 +146,9 @@ export const faqCategories = [
           'MDS graduates can establish specialty private practices, join multi-specialty clinics and hospitals, pursue academic careers, work in corporate dental chains or government hospitals, and explore international opportunities. Many also become consultants for dental product companies or pursue research careers.',
       },
       {
-        question: 'Is the JKKN MDS program recognized by DCI?',
+        question: 'Is the JKKN MDS program recognized by NDC?',
         answer:
-          'Yes, all MDS programs at JKKN Dental College are fully recognized and approved by the Dental Council of India (DCI). The college is affiliated with The Tamil Nadu Dr. M.G.R. Medical University and maintains NAAC accreditation, ensuring national recognition for all graduates.',
+          'Yes, all MDS programs at JKKN Dental College are fully recognized and approved by the National Dental Commission (NDC). The college is affiliated with The Tamil Nadu Dr. M.G.R. Medical University and maintains NAAC accreditation, ensuring national recognition for all graduates.',
       },
       {
         question: 'How many MDS seats are there in Tamil Nadu?',
@@ -158,7 +158,7 @@ export const faqCategories = [
       {
         question: 'Which are the top MDS dental colleges in Tamil Nadu?',
         answer:
-          "Top MDS dental colleges in Tamil Nadu include JKKN Dental College & Hospital (Komarapalayam), Saveetha Dental College (Chennai), SRM Dental College (Ramapuram), Sri Ramachandra Dental College (Porur), Meenakshi Ammal Dental College (Chennai), and Vinayaka Mission's Sankarachariyar Dental College (Salem). All are DCI-approved.",
+          "Top MDS dental colleges in Tamil Nadu include JKKN Dental College & Hospital (Komarapalayam), Saveetha Dental College (Chennai), SRM Dental College (Ramapuram), Sri Ramachandra Dental College (Porur), Meenakshi Ammal Dental College (Chennai), and Vinayaka Mission's Sankarachariyar Dental College (Salem). All are NDC-approved.",
       },
     ],
   },

@@ -18,7 +18,7 @@ const faqSchema = {
       name: 'What academic programs does JKKN Dental College offer?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'JKKN Dental College offers two DCI-approved programs: BDS (Bachelor of Dental Surgery) — a 5-year undergraduate program with 100 seats — and MDS (Master of Dental Surgery) — a 3-year postgraduate program with 5 specializations including Periodontics, Orthodontics, Prosthodontics, Conservative Dentistry & Endodontics, and Oral Medicine & Radiology.',
+        text: 'JKKN Dental College offers two programmes approved by the National Dental Commission (NDC): BDS (Bachelor of Dental Surgery) — a 5-year undergraduate program with 100 seats — and MDS (Master of Dental Surgery) — a 3-year postgraduate program with 5 specializations including Periodontics, Orthodontics, Prosthodontics, Conservative Dentistry & Endodontics, and Oral Medicine & Radiology.',
       },
     },
     {
@@ -42,7 +42,7 @@ const faqSchema = {
       name: 'What is the eligibility requirement for BDS admission at JKKN?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Admission to the BDS program at JKKN Dental College requires a valid NEET-UG score. The college is affiliated to TN Dr. MGR Medical University and follows DCI-prescribed admission norms.',
+        text: 'Admission to the BDS program at JKKN Dental College requires a valid NEET-UG score. The college is affiliated to TN Dr. MGR Medical University and follows NDC-prescribed admission norms.',
       },
     },
     {
@@ -58,14 +58,14 @@ const faqSchema = {
 
 export const metadata: Metadata = {
   title: 'Academics - JKKN Dental College & Hospital',
-  description: 'Explore academic programs at JKKN Dental College. BDS (100 seats), 5 MDS specializations, DCI-approved curriculum, and excellence in dental education.',
-  keywords: 'JKKN academics, BDS program, MDS specializations, dental education, curriculum, postgraduate dental courses, undergraduate dentistry, DCI approved programs',
+  description: 'Explore academic programs at JKKN Dental College. BDS (100 seats), 5 MDS specializations, NDC-approved curriculum, and excellence in dental education.',
+  keywords: 'JKKN academics, BDS program, MDS specializations, dental education, curriculum, postgraduate dental courses, undergraduate dentistry, NDC approved programs',
   alternates: {
     canonical: '/academics/',
   },
   openGraph: {
     title: 'Academics - JKKN Dental College & Hospital',
-    description: 'Explore academic programs at JKKN Dental College. BDS (100 seats), 5 MDS specializations, DCI-approved curriculum, and excellence in dental education.',
+    description: 'Explore academic programs at JKKN Dental College. BDS (100 seats), 5 MDS specializations, NDC-approved curriculum, and excellence in dental education.',
     url: 'https://dental.jkkn.ac.in/academics/',
     type: 'website',
     siteName: 'JKKN Dental College & Hospital',
@@ -73,7 +73,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Academics - JKKN Dental College & Hospital',
-    description: 'Explore academic programs at JKKN Dental College. BDS (100 seats), 5 MDS specializations, DCI-approved curriculum, and excellence in dental education.',
+    description: 'Explore academic programs at JKKN Dental College. BDS (100 seats), 5 MDS specializations, NDC-approved curriculum, and excellence in dental education.',
   },
 };
 
@@ -81,7 +81,7 @@ export default function Academics() {
   const breadcrumbSchema = generateBreadcrumbSchema('/academics/');
   const speakableSchema = generateSpeakableWebPageSchema({
     title: 'Academics - JKKN Dental College & Hospital',
-    description: 'Explore academic programs at JKKN Dental College. BDS (100 seats), 5 MDS specializations, DCI-approved curriculum, and excellence in dental education.',
+    description: 'Explore academic programs at JKKN Dental College. BDS (100 seats), 5 MDS specializations, NDC-approved curriculum, and excellence in dental education.',
     url: 'https://dental.jkkn.ac.in/academics/',
     speakableCssSelectors: ['h1', '.hero-description', 'article p'],
   });
@@ -105,7 +105,7 @@ export default function Academics() {
               Academic Programs
             </h1>
             <p className="text-lg md:text-xl text-gray-200 max-w-3xl mx-auto">
-              Comprehensive dental education with DCI-approved programs designed to create skilled dental professionals
+              Comprehensive dental education with NDC-approved programs designed to create skilled dental professionals
             </p>
           </div>
         </div>
@@ -128,7 +128,7 @@ export default function Academics() {
                   </div>
                 </div>
                 <p className="text-sm text-gray-700 mb-6 leading-relaxed">
-                  Comprehensive undergraduate program with 100 seats. Includes 4 years of academic training plus 1-year compulsory rotatory internship. DCI approved learning framework with extensive clinical exposure.
+                  Comprehensive undergraduate program with 100 seats. Includes 4 years of academic training plus 1-year compulsory rotatory internship. NDC approved learning framework with extensive clinical exposure.
                 </p>
                 <div className="flex items-center text-sm text-[#7cb983] font-semibold group-hover:translate-x-2 transition-transform">
                   Learn More →
@@ -149,7 +149,7 @@ export default function Academics() {
                   </div>
                 </div>
                 <p className="text-sm text-gray-700 mb-6 leading-relaxed">
-                  5 DCI-approved MDS specializations with 18 total seats. Advanced postgraduate training in specialized fields with research, dissertation, and comprehensive clinical practice.
+                  5 NDC-approved MDS specializations with 18 total seats. Advanced postgraduate training in specialized fields with research, dissertation, and comprehensive clinical practice.
                 </p>
                 <div className="flex items-center text-sm text-[#7cb983] font-semibold group-hover:translate-x-2 transition-transform">
                   Explore Specializations →
