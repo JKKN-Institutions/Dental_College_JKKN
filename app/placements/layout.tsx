@@ -5,7 +5,7 @@ import { jkknSameAsUrls } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: { absolute: 'BDS & MDS Placements | JKKN Dental College' },
-  description: '92% placement assistance (2024-25 batch) at JKKN Dental College. Alumni at Apollo Dental, Clove Dental, NHS UK & govt hospitals. BDS & MDS career guidance.',
+  description: '93.9% placed or in higher studies (2024-25 batch) at JKKN Dental College. Alumni at Apollo Dental, Clove Dental, NHS UK & govt hospitals. BDS & MDS career guidance.',
   keywords: 'dental college placements Tamil Nadu, BDS placement, MDS placement JKKN, salary after BDS, dental job opportunities, JKKN dental placements',
   robots: { index: true, follow: true },
   alternates: {
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'BDS & MDS Placements | JKKN Dental College',
-    description: '92% placement assistance (2024-25 batch) at JKKN Dental College. Alumni at Apollo Dental, Clove Dental, NHS UK & govt hospitals. BDS & MDS career guidance.',
+    description: '93.9% placed or in higher studies (2024-25 batch) at JKKN Dental College. Alumni at Apollo Dental, Clove Dental, NHS UK & govt hospitals. BDS & MDS career guidance.',
     url: 'https://dental.jkkn.ac.in/placements/',
     siteName: 'JKKN Dental College & Hospital',
     images: [
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'BDS & MDS Placements | JKKN Dental College',
-    description: '92% placement assistance (2024-25 batch) at JKKN Dental College. Alumni at Apollo Dental, Clove Dental, NHS UK & govt hospitals. BDS & MDS career guidance.',
+    description: '93.9% placed or in higher studies (2024-25 batch) at JKKN Dental College. Alumni at Apollo Dental, Clove Dental, NHS UK & govt hospitals. BDS & MDS career guidance.',
     images: ['https://dental.jkkn.ac.in/images/BDS-hero-image.webp'],
     site: '@jaborejkkn',
   },
@@ -40,13 +40,13 @@ const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "What is the placement rate at JKKN Dental College?", "acceptedAnswer": { "@type": "Answer", "text": "JKKN Dental College achieves a 92% placement assistance rate (2024-25 batch). The Career Development Centre (CDC) provides comprehensive support including resume building, interview preparation, and direct company connections for BDS and MDS graduates." } },
+    { "@type": "Question", "name": "What is the placement rate at JKKN Dental College?", "acceptedAnswer": { "@type": "Answer", "text": "JKKN Dental College achieves a 93.9% placed-or-higher-studies rate (2024-25 batch). The Career Development Centre (CDC) provides comprehensive support including resume building, interview preparation, and direct company connections for BDS and MDS graduates." } },
     { "@type": "Question", "name": "Which companies hire from JKKN Dental College?", "acceptedAnswer": { "@type": "Answer", "text": "Top recruiters include Apollo Dental, Clove Dental, Sabka Dentist, MyDentist, Apollo Hospitals, Fortis Healthcare, Manipal Hospitals, and government PHCs & district hospitals. International recruiters include NHS UK, Cleveland Clinic Abu Dhabi, and Saudi MOH." } },
-    { "@type": "Question", "name": "What is the salary after BDS from JKKN Dental College?", "acceptedAnswer": { "@type": "Answer", "text": "BDS graduates from JKKN Dental College typically receive packages ranging from 3-5 LPA for entry-level positions. Top performers and those placed in corporate dental chains or international positions can earn 8-10 LPA or higher." } },
+    { "@type": "Question", "name": "What is the salary after BDS from JKKN Dental College?", "acceptedAnswer": { "@type": "Answer", "text": "For the 2024-25 BDS batch, the JKKN NIRF 2026 filing to the Ministry of Education records a median salary of Rs 3,60,000. Of 99 graduates, 75 were placed and 18 went on to higher studies." } },
     { "@type": "Question", "name": "Does JKKN Dental College offer international placements?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, JKKN Dental College alumni work internationally at NHS UK, Cleveland Clinic Abu Dhabi, Saudi Ministry of Health, and dental clinics in Singapore. The CDC supports international licensing exam preparation and placement assistance." } },
     { "@type": "Question", "name": "What career options are available after BDS?", "acceptedAnswer": { "@type": "Answer", "text": "After BDS from JKKN, graduates can pursue private practice, hospital dentistry, higher studies (MDS), international opportunities, dental research, or public health dentistry. The CDC provides guidance for all career pathways." } },
     { "@type": "Question", "name": "How does the JKKN Dental Placement Cell work?", "acceptedAnswer": { "@type": "Answer", "text": "The CDC operates a structured 5-step process: Registration & Profile Building, Resume Workshop & Skill Development, Company Connect & Campus Drives, Interview Preparation & Mock Sessions, and Offer Facilitation & Joining Support." } },
-    { "@type": "Question", "name": "What is the highest package from JKKN Dental College?", "acceptedAnswer": { "@type": "Answer", "text": "The highest package offered to JKKN Dental graduates is in the range of 8-10 LPA, typically from corporate dental chains and international healthcare organizations." } },
+    { "@type": "Question", "name": "What is the highest package from JKKN Dental College?", "acceptedAnswer": { "@type": "Answer", "text": "JKKN does not publish a highest-package figure. The sourced number is the median: Rs 3,60,000 for the 2024-25 BDS batch and Rs 6,00,000 for MDS, per the JKKN NIRF 2026 filing to the Ministry of Education." } },
     { "@type": "Question", "name": "Can JKKN Dental learners get government jobs?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, many JKKN Dental alumni serve in government Primary Health Centres (PHCs), district hospitals, and dental departments across Tamil Nadu. The college provides guidance for TNPSC and other government dental recruitment exams." } },
     { "@type": "Question", "name": "How many alumni does JKKN Dental College have?", "acceptedAnswer": { "@type": "Answer", "text": "JKKN Dental College has a strong alumni network of 3,000+ graduates spread across India and internationally. Alumni work in leading hospitals, corporate dental chains, government services, and private practice." } },
     { "@type": "Question", "name": "Is JKKN Dental College good for higher studies after BDS?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, JKKN Dental College has a strong track record of learners clearing NEET MDS and pursuing postgraduate specialisations. The college offers MDS in 5 specialisations and provides dedicated coaching and mentoring for competitive exams." } },
@@ -62,7 +62,7 @@ const orgSchema = {
   "alternateName": "JKKN Dental",
   "url": "https://dental.jkkn.ac.in/",
   "logo": "https://dental.jkkn.ac.in/images/jkkn-dental-logo.webp",
-  "description": "DCI approved, NAAC accredited dental college with 92% placement assistance (2024-25 batch). 3,000+ alumni worldwide. Career Development Centre provides comprehensive placement support for BDS and MDS graduates.",
+  "description": "DCI approved, NAAC accredited dental college with 93.9% placed or in higher studies (2024-25 batch). 3,000+ alumni worldwide. Career Development Centre provides comprehensive placement support for BDS and MDS graduates.",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Natarajapuram, NH-544 (Salem\u2013Coimbatore Highway)",

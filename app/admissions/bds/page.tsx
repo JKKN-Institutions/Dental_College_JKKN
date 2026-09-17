@@ -45,7 +45,7 @@ import { jkknSameAsUrls } from '@/lib/metadata';
 export const metadata: Metadata = {
   title: 'BDS Admission 2026-27 | JKKN Dental College Komarapalayam',
   description:
-    'Apply for BDS admission at JKKN Dental College, Komarapalayam. NEET-UG based, 100 DCI-approved seats, scholarships, hostel & 92% placement assistance (2024-25 batch).',
+    'Apply for BDS admission at JKKN Dental College, Komarapalayam. NEET-UG based, 100 DCI-approved seats, scholarships, hostel & 93.9% placed or in higher studies (2024-25 batch).',
   keywords:
     'BDS admission 2026, BDS admission Tamil Nadu, JKKN BDS admission, NEET BDS counselling, BDS seats Namakkal, dental college admission Komarapalayam, BDS fees Tamil Nadu',
   openGraph: {
@@ -365,7 +365,7 @@ const whyJKKN = [
   { text: `${collegeFacts.dailyPatients}+ daily patients — hands-on training from Year 1`, icon: HeartPulse },
   { text: 'DCI approved, NAAC A grade accredited institution', icon: Award },
   { text: 'AI-Integrated Dental Campus', icon: Cpu },
-  { text: '92% placement assistance (2024-25 batch) with national & international tie-ups', icon: Briefcase },
+  { text: '93.9% placed or in higher studies (2024-25 batch) with national & international tie-ups', icon: Briefcase },
   { text: '9 specialised dental departments with expert senior learners', icon: Users },
   { text: 'NH-544 location — accessible from Salem, Erode, Coimbatore, Tiruppur', icon: MapPin },
 ];
@@ -489,7 +489,7 @@ export default function BDSAdmissionPage() {
           <p className="hero-description text-lg md:text-xl text-gray-200 max-w-3xl mx-auto mb-8">
             Apply for the Bachelor of Dental Surgery programme at JKKN Dental College &
             Hospital, Komarapalayam — DCI approved, NAAC A grade, with 100 seats, 200+
-            dental chairs, and 92% placement assistance (2024-25 batch).
+            dental chairs, and 93.9% placed or in higher studies (2024-25 batch).
           </p>
 
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 max-w-2xl mx-auto mb-10">

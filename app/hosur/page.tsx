@@ -58,9 +58,9 @@ export default function HosurPage() {
   ];
 
   const placementStats = [
-    { value: '92%', label: 'PLACEMENT RATE 2024-25' },
-    { value: '8-10', label: 'LPA HIGHEST' },
-    { value: '3-5', label: 'LPA AVERAGE' },
+    { value: '93.9%', label: 'PLACED OR IN HIGHER STUDIES 2024-25' },
+    { value: 'Rs 3.6L', label: 'BDS MEDIAN SALARY' },
+    { value: 'Rs 6.0L', label: 'MDS MEDIAN SALARY' },
     { value: '15+', label: 'RECRUITING PARTNERS' },
   ];
 
@@ -138,8 +138,8 @@ export default function HosurPage() {
         </p>
         <ul className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 mb-10 w-full max-w-2xl list-none p-0 m-0">
           {[
-            { value: '92%', label: 'PLACEMENTS 2024-25' },
-            { value: '8-10', label: 'LPA HIGHEST' },
+            { value: '93.9%', label: 'PLACED OR IN HIGHER STUDIES 2024-25' },
+            { value: 'Rs 3.6L', label: 'BDS MEDIAN SALARY' },
             { value: 'NH-44', label: 'DIRECT ROUTE' },
             { value: '2', label: 'PROGRAMMES' },
           ].map((stat) => (
