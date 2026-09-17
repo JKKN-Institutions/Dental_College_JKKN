@@ -44,7 +44,7 @@ export default function ChennaiPage() {
   ];
 
   const whyFeatures = [
-    { icon: <Hospital className="w-6 h-6 text-[#006837]" />, title: 'Own Hospital', desc: 'DCI-approved dental college with attached hospital for hands-on clinical training' },
+    { icon: <Hospital className="w-6 h-6 text-[#006837]" />, title: 'Own Hospital', desc: 'NDC-approved dental college with attached hospital for hands-on clinical training' },
     { icon: <Stethoscope className="w-6 h-6 text-[#006837]" />, title: 'High Patient Volume', desc: '500+ patients daily from surrounding districts — deep clinical exposure from Year 1' },
     { icon: <Microscope className="w-6 h-6 text-[#006837]" />, title: 'Advanced Learning Labs', desc: 'Advanced dental learning labs, simulation equipment, and digital dentistry training' },
     { icon: <TrendingUp className="w-6 h-6 text-[#006837]" />, title: 'Same TN Counselling', desc: 'Same NEET UG + DME Tamil Nadu counselling process as Chennai colleges' },
@@ -126,12 +126,12 @@ export default function ChennaiPage() {
         style={{ background: 'linear-gradient(135deg, #006837 0%, #002309 100%)', minHeight: '88vh' }}
       >
         <div className="mb-6 inline-flex items-center gap-2 bg-white/10 backdrop-blur border border-white/20 text-white text-sm font-medium px-5 py-2 rounded-full">
-          <Shield className="w-4 h-4" /> DCI, NAAC Approved • Admissions Open
+          <Shield className="w-4 h-4" /> NDC, NAAC Approved • Admissions Open
         </div>
         <h1 className="text-white font-extrabold leading-tight mb-3 max-w-4xl" style={{ fontSize: 'clamp(2rem, 5vw + 0.5rem, 3.5rem)' }}>
           Dental College for Students from <span className="text-[#7cb983]">Chennai</span>
         </h1>
-        <p className="text-white/60 text-sm font-medium tracking-wide mb-6">JKKN Dental College &amp; Hospital, Komarapalayam — DCI Approved, NAAC Accredited</p>
+        <p className="text-white/60 text-sm font-medium tracking-wide mb-6">JKKN Dental College &amp; Hospital, Komarapalayam — NDC Approved, NAAC Accredited</p>
         <p className="text-white/80 max-w-2xl mb-10 leading-relaxed" style={{ fontSize: 'clamp(0.9rem, 1vw + 0.5rem, 1.1rem)' }}>
           Same NEET + DME Tamil Nadu counselling as Chennai colleges — with a 200+ chair teaching hospital, 500+ daily patients,
           and a full residential campus. Frequent daily trains from Chennai stop at Erode Junction, 18 km from campus.
@@ -161,7 +161,7 @@ export default function ChennaiPage() {
       <div className="bg-white border-b border-gray-100 py-4 px-4">
         <div className="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8">
           <div className="flex items-center gap-3">
-            <span className="flex items-center gap-1.5 bg-[#FBFBEE] border border-[#7cb983] text-[#006837] text-sm font-semibold px-3 py-1.5 rounded-full">✓ DCI</span>
+            <span className="flex items-center gap-1.5 bg-[#FBFBEE] border border-[#7cb983] text-[#006837] text-sm font-semibold px-3 py-1.5 rounded-full">✓ NDC</span>
             <span className="flex items-center gap-1.5 bg-[#FBFBEE] border border-[#7cb983] text-[#006837] text-sm font-semibold px-3 py-1.5 rounded-full">✓ NAAC</span>
           </div>
           <span className="hidden sm:block text-gray-300">|</span>
@@ -171,7 +171,7 @@ export default function ChennaiPage() {
 
       {/* ── Speakable Summary (Voice Search Target) ── */}
       <div className="speakable-summary sr-only" id="speakable-intro">
-        JKKN Dental College and Hospital at Komarapalayam, Namakkal is a DCI-approved dental college chosen by students from Chennai for its two hundred plus chair teaching hospital and full residential campus. Admission follows the same NEET and DME Tamil Nadu counselling as Chennai colleges. Frequent daily trains connect Chennai to Erode Junction, eighteen kilometres from the campus.
+        JKKN Dental College and Hospital at Komarapalayam, Namakkal is a NDC-approved dental college chosen by students from Chennai for its two hundred plus chair teaching hospital and full residential campus. Admission follows the same NEET and DME Tamil Nadu counselling as Chennai colleges. Frequent daily trains connect Chennai to Erode Junction, eighteen kilometres from the campus.
       </div>
 
       {/* ── Snippet Answer Section (AEO Target) ── */}
@@ -191,7 +191,7 @@ export default function ChennaiPage() {
             <li><strong>High patient volume</strong> — 500+ daily patients means more hands-on cases per learner</li>
             <li><strong>Residential campus</strong> — separate hostels, mess, sports and WiFi; travel home by direct train</li>
           </ul>
-          <p className="text-gray-500 text-sm">All DCI-approved dental colleges in Tamil Nadu admit students through NEET UG counselling conducted by DME Tamil Nadu.</p>
+          <p className="text-gray-500 text-sm">All NDC-approved dental colleges in Tamil Nadu admit students through NEET UG counselling conducted by DME Tamil Nadu.</p>
         </div>
       </section>
 
@@ -230,7 +230,7 @@ export default function ChennaiPage() {
             For many Chennai families, the right dental college is about clinical depth and a focused campus — not the metro address. JKKN&apos;s teaching hospital draws patients from across the Kongu belt, giving learners the case variety that builds confident clinicians.
           </p>
           <p className="text-gray-400 max-w-3xl mx-auto mb-4 text-sm leading-relaxed">
-            Founded in 1987, JKKN Dental College &amp; Hospital brings nearly four decades of dental education excellence, backed by the JKKN Institutions legacy since 1952. Approved by the Dental Council of India (DCI) and affiliated to TN Dr. MGR Medical University, Chennai, the institution operates a 200+ chair teaching hospital treating 500+ patients daily.
+            Founded in 1987, JKKN Dental College &amp; Hospital brings nearly four decades of dental education excellence, backed by the JKKN Institutions legacy since 1952. Approved by the National Dental Commission (NDC), formerly the Dental Council of India and affiliated to TN Dr. MGR Medical University, Chennai, the institution operates a 200+ chair teaching hospital treating 500+ patients daily.
           </p>
           <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-12" />
           <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 list-none p-0 m-0">
@@ -429,7 +429,7 @@ export default function ChennaiPage() {
               { label: 'Founded', value: '1987 (part of JKKN Institutions, est. 1952)' },
               { label: 'Programmes', value: 'BDS (100 seats) + MDS (5 specialisations)' },
               { label: 'Hospital', value: '200+ dental chairs, 100+ beds, 500+ patients daily' },
-              { label: 'Approval', value: 'Dental Council of India (DCI)' },
+              { label: 'Approval', value: 'National Dental Commission (NDC)' },
               { label: 'Affiliation', value: 'TN Dr. MGR Medical University, Chennai' },
               { label: 'Contact', value: '+91 9345855001 | info@jkkn.ac.in' },
             ].map((item) => (

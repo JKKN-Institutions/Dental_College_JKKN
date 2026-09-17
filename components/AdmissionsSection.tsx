@@ -44,7 +44,7 @@ export default function AdmissionsSection() {
               <ul className="space-y-2 sm:space-y-3 list-none p-0 m-0">
                 <li className="flex items-start gap-2 sm:gap-3">
                   <Check className="w-5 h-5 sm:w-6 sm:h-6 text-[#7cb983] flex-shrink-0" />
-                  <span className="text-gray-700 text-sm sm:text-base">BDS from DCI-recognized institution</span>
+                  <span className="text-gray-700 text-sm sm:text-base">BDS from an institution recognized by the National Dental Commission (NDC)</span>
                 </li>
                 <li className="flex items-start gap-2 sm:gap-3">
                   <Check className="w-5 h-5 sm:w-6 sm:h-6 text-[#7cb983] flex-shrink-0" />
@@ -163,7 +163,7 @@ export default function AdmissionsSection() {
                   <tr className="border-b border-gray-100">
                     <td className="px-3 py-2.5 text-gray-700 font-medium">Qualification</td>
                     <td className="px-3 py-2.5 text-gray-600">10+2 with PCB</td>
-                    <td className="px-3 py-2.5 text-gray-600">BDS from DCI-recognized college</td>
+                    <td className="px-3 py-2.5 text-gray-600">BDS from NDC-recognized college</td>
                   </tr>
                   <tr className="border-b border-gray-100 bg-gray-50">
                     <td className="px-3 py-2.5 text-gray-700 font-medium">Min. Marks</td>

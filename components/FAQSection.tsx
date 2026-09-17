@@ -11,8 +11,8 @@ export default function FAQSection() {
       answer: "JKKN Dental College offers BDS (5-year undergraduate) with training across 9 departments and MDS (3-year postgraduate) in 5 specializations: Conservative Dentistry & Endodontics, Prosthodontics, Periodontics, Oral Medicine & Radiology, and Orthodontics."
     },
     {
-      question: "Is JKKN Dental College & Hospital DCI approved?",
-      answer: "Yes, JKKN Dental College & Hospital is fully approved by the Dental Council of India (DCI) and National Medical Commission (NMC). The college is affiliated with The Tamil Nadu Dr. M.G.R. Medical University and NAAC accredited."
+      question: "Is JKKN Dental College & Hospital NDC approved?",
+      answer: "Yes, JKKN Dental College & Hospital is fully approved by the National Dental Commission (NDC), formerly the Dental Council of India and National Medical Commission (NMC). The college is affiliated with The Tamil Nadu Dr. M.G.R. Medical University and NAAC accredited."
     },
     {
       question: "What is the admission process for BDS?",
@@ -32,7 +32,7 @@ export default function FAQSection() {
     },
     {
       question: "Which is the best dental college in Tamil Nadu?",
-      answer: "JKKN Dental College & Hospital is approved by the Dental Council of India, accredited by NAAC with an A Grade, and affiliated to The Tamil Nadu Dr. M.G.R. Medical University. Established in 1987, it is sanctioned 100 BDS seats and 18 MDS seats across 5 specialities, runs an AI-integrated dental campus, and reports 93.9% placed or in higher studies (2024-25 batch). Tamil Nadu publishes no official merit ranking of its dental colleges, so compare colleges on approval, accreditation, sanctioned intake and clinical exposure."
+      answer: "JKKN Dental College & Hospital is approved by the National Dental Commission, accredited by NAAC with an A Grade, and affiliated to The Tamil Nadu Dr. M.G.R. Medical University. Established in 1987, it is sanctioned 100 BDS seats and 18 MDS seats across 5 specialities, runs an AI-integrated dental campus, and reports 93.9% placed or in higher studies (2024-25 batch). Tamil Nadu publishes no official merit ranking of its dental colleges, so compare colleges on approval, accreditation, sanctioned intake and clinical exposure."
     },
     {
       question: "How does JKKN integrate AI in dental education?",
@@ -56,7 +56,7 @@ export default function FAQSection() {
     },
     {
       question: "How many dental colleges are there in Tamil Nadu?",
-      answer: "Tamil Nadu has approximately 32 to 35 dental colleges approved by the Dental Council of India. This includes 3 government dental colleges and 28-32 private dental colleges across Chennai, Coimbatore, Salem, Namakkal, and other districts. JKKN Dental College is the prominent institution in Namakkal District on the Salem-Coimbatore corridor."
+      answer: "Tamil Nadu has approximately 32 to 35 dental colleges approved by the National Dental Commission. This includes 3 government dental colleges and 28-32 private dental colleges across Chennai, Coimbatore, Salem, Namakkal, and other districts. JKKN Dental College is the prominent institution in Namakkal District on the Salem-Coimbatore corridor."
     },
     {
       question: "Which dental college in Tamil Nadu has the best placements?",
@@ -64,7 +64,7 @@ export default function FAQSection() {
     },
     {
       question: "What is the NIRF ranking of dental colleges in Tamil Nadu?",
-      answer: "Nine Tamil Nadu dental colleges appear in NIRF 2025 rankings: SIMATS Saveetha (#2), SRM Dental Ramapuram (#8), Sri Ramachandra (#13), Amrita Coimbatore (#14), MAHER Chennai (#16), Sree Balaji (#27), Dr. MGR University (#30), Chettinad (#32), and SRM Kattankulathur (#39). JKKN Dental College is not NIRF-ranked but holds DCI approval and NAAC A Grade accreditation."
+      answer: "Nine Tamil Nadu dental colleges appear in NIRF 2025 rankings: SIMATS Saveetha (#2), SRM Dental Ramapuram (#8), Sri Ramachandra (#13), Amrita Coimbatore (#14), MAHER Chennai (#16), Sree Balaji (#27), Dr. MGR University (#30), Chettinad (#32), and SRM Kattankulathur (#39). JKKN Dental College is not NIRF-ranked but holds NDC approval and NAAC A Grade accreditation."
     }
   ];
 

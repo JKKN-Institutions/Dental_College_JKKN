@@ -194,7 +194,7 @@ export default function BdsGuideClient({ faqs }: { faqs: FAQ[] }) {
               <p className="text-gray-700 text-sm leading-relaxed">
                 <strong>BDS (Bachelor of Dental Surgery)</strong> is a 5-year undergraduate dental
                 program — 4 years of academic study + 1 year of mandatory rotational internship —
-                approved by the <strong>Dental Council of India (DCI)</strong>. Eligibility: 10+2
+                approved by the <strong>National Dental Commission (NDC), formerly the Dental Council of India</strong>. Eligibility: 10+2
                 with PCB (50% aggregate) + valid <strong>NEET-UG 2026</strong> score. At{' '}
                 <strong>JKKN Dental College &amp; Hospital, Komarapalayam</strong> (affiliated to TN
                 Dr. MGR Medical University), 100 BDS seats are filled through Tamil Nadu state
@@ -213,7 +213,7 @@ export default function BdsGuideClient({ faqs }: { faqs: FAQ[] }) {
                 <strong>Bachelor of Dental Surgery (BDS)</strong> is the only academic dental degree
                 recognised across India for clinical dental practice. It is the dentistry equivalent
                 of MBBS — graduates earn the title <strong>&ldquo;Doctor&rdquo;</strong> and are
-                licensed dental surgeons under the <strong>Dental Council of India (DCI)</strong>.
+                licensed dental surgeons under the <strong>National Dental Commission (NDC)</strong>.
               </p>
               <p className="text-gray-600 leading-relaxed mb-4">
                 The BDS curriculum covers the entire spectrum of oral and dental healthcare —
@@ -224,8 +224,8 @@ export default function BdsGuideClient({ faqs }: { faqs: FAQ[] }) {
                 gums, jaws and oral cavity.
               </p>
               <p className="text-gray-600 leading-relaxed">
-                In India, BDS is regulated by the DCI under the <strong>BDS Course Regulations,
-                2007</strong> (with amendments). Across the country there are over 320 DCI-approved
+                In India, BDS is regulated by the NDC under the <strong>BDS Course Regulations,
+                2007</strong> (with amendments). Across the country there are over 320 NDC-approved
                 dental colleges offering approximately 27,000 BDS seats annually — Tamil Nadu being
                 one of the strongest hubs with both government and private institutions.
               </p>
@@ -344,7 +344,7 @@ export default function BdsGuideClient({ faqs }: { faqs: FAQ[] }) {
               <p className="text-gray-600 leading-relaxed mb-4">
                 BDS is a <strong>5-year program</strong> structured as 4 academic years (8 semesters,
                 4 university examinations) followed by a mandatory <strong>1-year rotational paid
-                internship</strong>. The internship is a non-negotiable DCI requirement and the
+                internship</strong>. The internship is a non-negotiable NDC requirement and the
                 degree is awarded only after its successful completion.
               </p>
               <p className="text-gray-600 leading-relaxed mb-4">
@@ -368,7 +368,7 @@ export default function BdsGuideClient({ faqs }: { faqs: FAQ[] }) {
                 BDS Syllabus — Year-Wise Subjects
               </h2>
               <p className="text-gray-600 leading-relaxed mb-5">
-                The BDS syllabus is set by the Dental Council of India and the affiliating
+                The BDS syllabus is set by the National Dental Commission and the affiliating
                 university — <strong>The Tamil Nadu Dr. M.G.R. Medical University</strong>. Here is
                 the year-wise subject structure:
               </p>
@@ -416,7 +416,7 @@ export default function BdsGuideClient({ faqs }: { faqs: FAQ[] }) {
                 {[
                   ['Government Quota:', 'As per Govt. of Tamil Nadu fee fixation committee (most affordable category)'],
                   ['Management Quota:', 'Self-financing seats with fee fixed by the institution under regulatory cap'],
-                  ['NRI Quota:', 'For Non-Resident Indian candidates as per DCI/state norms'],
+                  ['NRI Quota:', 'For Non-Resident Indian candidates as per NDC/state norms'],
                 ].map(([k, v]) => (
                   <li key={k as string} className="flex items-start gap-2.5 text-gray-600 text-sm">
                     <span className="w-2 h-2 rounded-full bg-[#006837] mt-1.5 flex-shrink-0" />
@@ -528,7 +528,7 @@ export default function BdsGuideClient({ faqs }: { faqs: FAQ[] }) {
               </p>
               <ul className="space-y-2.5 mb-6">
                 {[
-                  ['DCI & TNMGRMU recognised:', '100 BDS seats + 18 MDS seats across 5 specialisations'],
+                  ['NDC & TNMGRMU recognised:', '100 BDS seats + 18 MDS seats across 5 specialisations'],
                   ['Massive clinical exposure:', '200+ dental chairs, 100+ hospital beds, 500+ daily patient footfall'],
                   ['9 academic + clinical departments:', 'all branches of dentistry under one roof'],
                   ['Modern infrastructure:', 'digital classrooms, simulation lab, CBCT, OPG, RVG, implant centre'],
@@ -551,7 +551,7 @@ export default function BdsGuideClient({ faqs }: { faqs: FAQ[] }) {
                   Ready to Apply for BDS 2026?
                 </h3>
                 <p className="text-white/80 text-sm mb-6 relative z-10">
-                  100 DCI-approved BDS seats. Govt. norm fees. NEET-UG ranks accepted through Tamil
+                  100 NDC-approved BDS seats. Govt. norm fees. NEET-UG ranks accepted through Tamil
                   Nadu state counselling. Speak to our admissions team for personalised guidance.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3 justify-center relative z-10">
@@ -607,7 +607,7 @@ export default function BdsGuideClient({ faqs }: { faqs: FAQ[] }) {
                   <h4 className="font-bold text-gray-900 mb-1">JKKN Dental Admissions Team</h4>
                   <p className="text-gray-500 text-sm leading-relaxed">
                     The admissions and academic-advisory team at JKKN Dental College &amp;
-                    Hospital, Komarapalayam — DCI-approved and affiliated to The Tamil Nadu Dr.
+                    Hospital, Komarapalayam — NDC-approved and affiliated to The Tamil Nadu Dr.
                     M.G.R. Medical University, Chennai. We publish evidence-based admission and
                     career guidance for BDS and MDS aspirants across Tamil Nadu.
                   </p>
@@ -666,7 +666,7 @@ export default function BdsGuideClient({ faqs }: { faqs: FAQ[] }) {
                   <span className="text-green-600 text-xs font-bold uppercase tracking-wide">Open</span>
                 </div>
                 <h4 className="font-bold text-gray-900 text-sm mb-1">BDS Admission 2026</h4>
-                <p className="text-gray-500 text-xs mb-4">100 DCI-approved Seats — Govt. norm fees at JKKN Dental College, Komarapalayam</p>
+                <p className="text-gray-500 text-xs mb-4">100 NDC-approved Seats — Govt. norm fees at JKKN Dental College, Komarapalayam</p>
                 <a href="/admissions/bds/" className="block w-full bg-[#006837] text-white font-semibold text-sm py-2.5 rounded-lg hover:bg-[#004d28] transition-colors text-center">
                   Apply / Enquire →
                 </a>

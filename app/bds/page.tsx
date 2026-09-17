@@ -4,10 +4,10 @@ import StructuredData from '@/components/StructuredData';
 export const metadata: Metadata = {
   alternates: { canonical: '/bds/' },
   title: 'BDS Course at JKKN Dental College | 100 Seats',
-  description: 'BDS at JKKN Dental College — 5-year DCI approved program, 100 seats, NEET-UG admission. 200+ dental chairs, 500+ daily patients. Komarapalayam, Tamil Nadu.',
+  description: 'BDS at JKKN Dental College — 5-year NDC approved program, 100 seats, NEET-UG admission. 200+ dental chairs, 500+ daily patients. Komarapalayam, Tamil Nadu.',
   openGraph: {
     title: 'BDS Course at JKKN Dental College | 100 Seats',
-    description: 'BDS at JKKN Dental College — 5-year DCI approved program, 100 seats, NEET-UG admission. 200+ dental chairs, 500+ daily patients. Komarapalayam, Tamil Nadu.',
+    description: 'BDS at JKKN Dental College — 5-year NDC approved program, 100 seats, NEET-UG admission. 200+ dental chairs, 500+ daily patients. Komarapalayam, Tamil Nadu.',
     url: 'https://dental.jkkn.ac.in/bds/',
     type: 'website',
     siteName: 'JKKN Dental College & Hospital',
@@ -21,7 +21,7 @@ const bdsCourseSchema = {
   "@id": "https://dental.jkkn.ac.in/bds/#course",
   "name": "BDS – Bachelor of Dental Surgery",
   "courseCode": "BDS",
-  "description": "Bachelor of Dental Surgery (BDS) is a 5-year undergraduate dental program (4 years academic + 1 year compulsory internship) at JKKN Dental College & Hospital. The program is approved by the Dental Council of India, affiliated to Tamil Nadu Dr. M.G.R. Medical University, and provides extensive clinical training with 200+ dental chairs and 500+ daily patient exposure. Graduates are eligible for private practice, government service, or MDS specialization.",
+  "description": "Bachelor of Dental Surgery (BDS) is a 5-year undergraduate dental program (4 years academic + 1 year compulsory internship) at JKKN Dental College & Hospital. The program is approved by the National Dental Commission (formerly Dental Council of India), affiliated to Tamil Nadu Dr. M.G.R. Medical University, and provides extensive clinical training with 200+ dental chairs and 500+ daily patient exposure. Graduates are eligible for private practice, government service, or MDS specialization.",
   "provider": {
     "@type": "CollegeOrUniversity",
     "@id": "https://dental.jkkn.ac.in/#organization",
@@ -93,10 +93,10 @@ const bdsFaqSchema = {
     },
     {
       "@type": "Question",
-      "name": "Is JKKN Dental College DCI approved?",
+      "name": "Is JKKN Dental College NDC approved?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "JKKN Dental College and Hospital holds Dental Council of India and National Medical Commission approvals, National Assessment and Accreditation Council A Grade, and Tamil Nadu Dr. M.G.R. Medical University affiliation."
+        "text": "JKKN Dental College and Hospital holds National Dental Commission and National Medical Commission approvals, National Assessment and Accreditation Council A Grade, and Tamil Nadu Dr. M.G.R. Medical University affiliation."
       }
     },
     {
@@ -141,7 +141,7 @@ const bdsWebPageSchema = {
       ".admission-cta"
     ]
   },
-  "description": "BDS at JKKN Dental College is a 5-year program with 100 seats per year. DCI approved, NAAC A Grade accredited, affiliated to Tamil Nadu Dr. M.G.R. Medical University. Eligibility: 10+2 with PCB, 50%+ marks, NEET-UG qualification. 200+ dental chairs, 500+ daily patients for clinical training."
+  "description": "BDS at JKKN Dental College is a 5-year program with 100 seats per year. NDC approved, NAAC A Grade accredited, affiliated to Tamil Nadu Dr. M.G.R. Medical University. Eligibility: 10+2 with PCB, 50%+ marks, NEET-UG qualification. 200+ dental chairs, 500+ daily patients for clinical training."
 };
 
 // Schema #4b: BreadcrumbList – /bds Page

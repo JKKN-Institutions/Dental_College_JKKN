@@ -90,7 +90,7 @@ export default function MDSProsthodontics() {
 
   const speakableSchema = generateSpeakableWebPageSchema({
     title: 'MDS Prosthodontics in Tamil Nadu — 3 Seats, Fees & Eligibility 2026-27 | JKKN Dental',
-    description: 'MDS Prosthodontics, Crown & Bridge at JKKN Dental College — 3 DCI-approved seats, 3 years full-time, affiliated to The Tamil Nadu Dr. M.G.R. Medical University.',
+    description: 'MDS Prosthodontics, Crown & Bridge at JKKN Dental College — 3 NDC-approved seats, 3 years full-time, affiliated to The Tamil Nadu Dr. M.G.R. Medical University.',
     url: 'https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/prosthodontics-crown-and-bridge/',
     speakableCssSelectors: ['h1', '.hero-description', 'article p'],
   });
@@ -128,12 +128,12 @@ export default function MDSProsthodontics() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             {/* Left Content */}
             <div>
-              {/* DCI Badge */}
+              {/* NDC Badge */}
               <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 mb-6">
                 <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
-                <span className="text-white font-semibold text-sm">DCI Approved | NAAC Accredited</span>
+                <span className="text-white font-semibold text-sm">NDC Approved | NAAC Accredited</span>
               </div>
 
               {/* Heading */}
@@ -675,7 +675,7 @@ export default function MDSProsthodontics() {
                     <span className="text-white font-bold">1</span>
                   </div>
                   <p className="text-gray-700 pt-1">
-                    BDS degree from a DCI recognized dental college with mandatory one-year internship completion
+                    BDS degree from a NDC recognized dental college with mandatory one-year internship completion
                   </p>
                 </div>
 
@@ -693,7 +693,7 @@ export default function MDSProsthodontics() {
                     <span className="text-white font-bold">3</span>
                   </div>
                   <p className="text-gray-700 pt-1">
-                    Permanent registration with any State Dental Council of India
+                    Permanent registration with any State National Dental Commission (formerly Dental Council of India)
                   </p>
                 </div>
 
@@ -1222,12 +1222,12 @@ export default function MDSProsthodontics() {
 
           {/* Accreditation Cards */}
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-8">
-            {/* DCI */}
+            {/* NDC */}
             <div className="bg-[#FBFBEE] rounded-2xl p-4 sm:p-8 shadow-lg border border-gray-200 text-center">
               <div className="bg-gradient-to-br from-[#006837] to-[#002309] rounded-xl p-4 sm:p-6 mb-4 sm:mb-6 flex items-center justify-center mx-auto w-20 h-20 sm:w-24 sm:h-24">
-                <span className="text-2xl sm:text-4xl font-bold text-white">DCI</span>
+                <span className="text-2xl sm:text-4xl font-bold text-white">NDC</span>
               </div>
-              <h3 className="text-base sm:text-lg font-bold text-gray-900">Dental Council of India</h3>
+              <h3 className="text-base sm:text-lg font-bold text-gray-900">National Dental Commission</h3>
             </div>
 
             {/* NAAC */}

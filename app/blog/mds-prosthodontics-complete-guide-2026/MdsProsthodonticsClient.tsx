@@ -137,7 +137,7 @@ export default function MdsProsthodonticsClient({ faqs }: { faqs: FAQ[] }) {
                 specialisation focused on replacement and restoration of missing teeth using
                 crowns, bridges, dentures, implants and maxillofacial prostheses. Eligibility: BDS
                 + completed internship + valid <strong>NEET-MDS</strong> score. JKKN Dental College
-                offers <strong>4 DCI-approved seats</strong> per year. Career drivers in 2026:
+                offers <strong>4 seats approved by the National Dental Commission (NDC)</strong> per year. Career drivers in 2026:
                 dental implants boom, full-mouth rehabilitation, digital smile design and CAD/CAM
                 workflows.
               </p>
@@ -173,7 +173,7 @@ export default function MdsProsthodonticsClient({ faqs }: { faqs: FAQ[] }) {
               <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">Eligibility &amp; NEET-MDS Cutoff 2026</h2>
               <p className="text-gray-600 leading-relaxed mb-5">
                 MDS admission across India is conducted entirely through <strong>NEET-MDS</strong>.
-                JKKN follows the eligibility framework set by DCI and the Selection Committee,
+                JKKN follows the eligibility framework set by NDC and the Selection Committee,
                 Directorate of Medical Education, Tamil Nadu.
               </p>
               <div className="overflow-x-auto mb-5">
@@ -184,7 +184,7 @@ export default function MdsProsthodonticsClient({ faqs }: { faqs: FAQ[] }) {
                   </tr></thead>
                   <tbody>
                     {[
-                      ['Qualifying degree', 'BDS from a DCI-recognised institution'],
+                      ['Qualifying degree', 'BDS from a NDC-recognised institution'],
                       ['Internship', '1-year compulsory rotational internship before 31 Mar 2026'],
                       ['Dental Council registration', 'Permanent State Dental Council registration mandatory'],
                       ['Entrance test', 'Valid NEET-MDS 2026 score (NBE-conducted)'],
@@ -219,7 +219,7 @@ export default function MdsProsthodonticsClient({ faqs }: { faqs: FAQ[] }) {
               <div className="space-y-5 mb-5">
                 {[
                   { num: 1, title: 'Appear for NEET-MDS 2026', desc: 'Apply on the NBE portal and attempt NEET-MDS. Result publishes percentile and All India Rank for state allotment.' },
-                  { num: 2, title: 'Register for TN PG Counselling', desc: 'Register on tnmedicalselection.net. Upload BDS marksheet, internship certificate, DCI registration, NEET-MDS scorecard, ID, community and nativity proofs.' },
+                  { num: 2, title: 'Register for TN PG Counselling', desc: 'Register on tnmedicalselection.net. Upload BDS marksheet, internship certificate, NDC registration, NEET-MDS scorecard, ID, community and nativity proofs.' },
                   { num: 3, title: 'Choice Filling — Lock JKKN', desc: 'Add JKKN Dental College & Hospital under MDS Prosthodontics, Crown and Bridge in your preference list and lock before deadline.' },
                   { num: 4, title: 'Allotment Rounds', desc: 'Round 1, Round 2, Mop-up and Stray Vacancy. Rank-cum-preference allotment. Download allotment order online.' },
                   { num: 5, title: 'Document Verification at Institution', desc: 'Report to JKKN with originals + first-year fee (DD/online).' },
@@ -239,7 +239,7 @@ export default function MdsProsthodonticsClient({ faqs }: { faqs: FAQ[] }) {
             <section id="duration-structure" className="mb-12 scroll-mt-20">
               <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">Course Duration &amp; Structure</h2>
               <p className="text-gray-600 leading-relaxed mb-4">
-                MDS Prosthodontics is a <strong>3-year full-time program</strong> governed by DCI
+                MDS Prosthodontics is a <strong>3-year full-time program</strong> governed by NDC
                 PG Regulations and the TNMGRMU syllabus.
               </p>
               <ul className="space-y-2.5 mb-5">
@@ -364,7 +364,7 @@ export default function MdsProsthodonticsClient({ faqs }: { faqs: FAQ[] }) {
               <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">Why Choose JKKN for MDS Prosthodontics</h2>
               <ul className="space-y-2.5 mb-6">
                 {[
-                  ['DCI-approved 4 PG seats:', 'in Prosthodontics, Crown and Bridge — affiliated to TN Dr. MGR Medical University'],
+                  ['NDC-approved 4 PG seats:', 'in Prosthodontics, Crown and Bridge — affiliated to TN Dr. MGR Medical University'],
                   ['High clinical case volume:', '200+ dental chairs, 500+ daily patients with strong prostho case mix — denture, bridge, implant rehab'],
                   ['Implant centre exposure:', 'in-house implant placement workflow + multi-disciplinary collaboration with Periodontics & Oral Surgery'],
                   ['Digital dentistry training:', 'CAD/CAM, intraoral scanner workflow exposure, 3D imaging integration'],
@@ -382,7 +382,7 @@ export default function MdsProsthodonticsClient({ faqs }: { faqs: FAQ[] }) {
                 <div className="absolute top-3 right-6 w-20 h-20 rounded-full bg-white/10 pointer-events-none" />
                 <div className="absolute bottom-3 left-4 w-12 h-12 rounded-full bg-white/10 pointer-events-none" />
                 <h3 className="text-xl font-bold text-white mb-2 relative z-10">Apply for MDS Prosthodontics 2026</h3>
-                <p className="text-white/80 text-sm mb-6 relative z-10">4 DCI-approved seats. NEET-MDS through TN counselling. Talk to our PG admissions team.</p>
+                <p className="text-white/80 text-sm mb-6 relative z-10">4 NDC-approved seats. NEET-MDS through TN counselling. Talk to our PG admissions team.</p>
                 <div className="flex flex-col sm:flex-row gap-3 justify-center relative z-10">
                   <a href="/admissions/mds/" className="bg-white text-[#006837] font-semibold px-6 py-2.5 rounded-lg text-sm hover:bg-gray-100 transition-colors">MDS Admission Page →</a>
                   <a href="tel:+919345855001" className="border border-white/50 text-white font-semibold px-6 py-2.5 rounded-lg text-sm hover:bg-white/10 transition-colors">Call +91 93458 55001</a>
@@ -413,7 +413,7 @@ export default function MdsProsthodonticsClient({ faqs }: { faqs: FAQ[] }) {
                 <div className="w-16 h-16 rounded-xl bg-[#FBFBEE] flex items-center justify-center flex-shrink-0"><span className="text-[#006837] font-bold text-lg">JD</span></div>
                 <div>
                   <h4 className="font-bold text-gray-900 mb-1">JKKN Dental Admissions Team</h4>
-                  <p className="text-gray-500 text-sm leading-relaxed">PG admissions and academic-advisory team at JKKN Dental College &amp; Hospital, Komarapalayam — DCI-approved, affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai.</p>
+                  <p className="text-gray-500 text-sm leading-relaxed">PG admissions and academic-advisory team at JKKN Dental College &amp; Hospital, Komarapalayam — NDC-approved, affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai.</p>
                 </div>
               </div>
             </div>
@@ -446,7 +446,7 @@ export default function MdsProsthodonticsClient({ faqs }: { faqs: FAQ[] }) {
               <div className="bg-[#FBFBEE] border border-[#7cb983]/40 rounded-xl p-5">
                 <div className="flex items-center gap-1.5 mb-2"><span className="w-2 h-2 rounded-full bg-green-500" /><span className="text-green-600 text-xs font-bold uppercase tracking-wide">Open</span></div>
                 <h4 className="font-bold text-gray-900 text-sm mb-1">MDS Prosthodontics 2026</h4>
-                <p className="text-gray-500 text-xs mb-4">4 DCI-approved PG seats at JKKN Dental College, Komarapalayam</p>
+                <p className="text-gray-500 text-xs mb-4">4 NDC-approved PG seats at JKKN Dental College, Komarapalayam</p>
                 <a href="/admissions/mds/" className="block w-full bg-[#006837] text-white font-semibold text-sm py-2.5 rounded-lg hover:bg-[#004d28] transition-colors text-center">Apply / Enquire →</a>
                 <a href="tel:+919345855001" className="block text-center text-[#006837] text-xs font-medium mt-3">+91 93458 55001</a>
               </div>

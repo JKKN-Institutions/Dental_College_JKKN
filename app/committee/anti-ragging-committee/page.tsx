@@ -62,7 +62,7 @@ export default function AntiRaggingCommittee() {
         <div className="max-w-6xl mx-auto">
           <div className="bg-white rounded-xl p-8 shadow-sm border border-green-100 border-l-4 border-l-[#7cb983]">
             <p className="hero-description text-gray-700 text-base leading-relaxed mb-4">
-              At <span className="font-bold">JKKN Dental College &amp; Hospital</span>, we uphold the highest standards of learner welfare, dignity, and discipline. In line with the directives of the University Grants Commission (UGC) and Dental Council of India, our college maintains a strict zero-tolerance policy towards ragging in any form.
+              At <span className="font-bold">JKKN Dental College &amp; Hospital</span>, we uphold the highest standards of learner welfare, dignity, and discipline. In line with the directives of the University Grants Commission (UGC) and National Dental Commission (formerly Dental Council of India), our college maintains a strict zero-tolerance policy towards ragging in any form.
             </p>
             <p className="text-gray-700 text-base leading-relaxed">
               The Anti-Ragging Committee has been constituted to ensure a ragging-free environment on campus, actively monitor learner interactions, and take swift action in case of any violations. We are committed to maintaining a culture of respect, safety, and academic excellence.

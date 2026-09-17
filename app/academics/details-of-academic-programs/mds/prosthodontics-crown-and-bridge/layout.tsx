@@ -2,14 +2,14 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: { absolute: 'MDS Prosthodontics in Tamil Nadu — 3 Seats, Fees & Eligibility 2026-27 | JKKN Dental' },
-  description: 'MDS Prosthodontics, Crown & Bridge at JKKN Dental College — 3 DCI-approved seats, 3 years full-time, affiliated to The Tamil Nadu Dr. M.G.R. Medical University.',
+  description: 'MDS Prosthodontics, Crown & Bridge at JKKN Dental College — 3 NDC-approved seats, 3 years full-time, affiliated to The Tamil Nadu Dr. M.G.R. Medical University.',
   keywords: 'mds prosthodontics tamil nadu, mds prosthodontics seats, mds prosthodontics fees',
   alternates: {
     canonical: '/academics/details-of-academic-programs/mds/prosthodontics-crown-and-bridge/',
   },
   openGraph: {
     title: 'MDS Prosthodontics in Tamil Nadu — 3 Seats, Fees & Eligibility 2026-27 | JKKN Dental',
-    description: 'MDS Prosthodontics, Crown & Bridge at JKKN Dental College — 3 DCI-approved seats, 3 years full-time, affiliated to The Tamil Nadu Dr. M.G.R. Medical University.',
+    description: 'MDS Prosthodontics, Crown & Bridge at JKKN Dental College — 3 NDC-approved seats, 3 years full-time, affiliated to The Tamil Nadu Dr. M.G.R. Medical University.',
     url: 'https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/prosthodontics-crown-and-bridge',
     siteName: 'JKKN Dental College & Hospital',
     images: [
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'MDS Prosthodontics in Tamil Nadu — 3 Seats, Fees & Eligibility 2026-27 | JKKN Dental',
-    description: 'MDS Prosthodontics, Crown & Bridge at JKKN Dental College — 3 DCI-approved seats, 3 years full-time, affiliated to The Tamil Nadu Dr. M.G.R. Medical University.',
+    description: 'MDS Prosthodontics, Crown & Bridge at JKKN Dental College — 3 NDC-approved seats, 3 years full-time, affiliated to The Tamil Nadu Dr. M.G.R. Medical University.',
     images: ['/images/BDS-hero-image.webp'],
   },
 };

@@ -21,18 +21,18 @@ export default function Hero() {
             {/* Badge */}
             <div className="inline-flex items-center gap-2 sm:gap-2.5 bg-[#002309] px-3 sm:px-4 py-2 sm:py-2.5 rounded-full">
               <Trophy className="w-5 h-5 sm:w-6 sm:h-6 text-yellow-400" />
-              <span className="text-white text-xs sm:text-sm font-semibold">DCI Approved | NAAC Accredited</span>
+              <span className="text-white text-xs sm:text-sm font-semibold">NDC Approved | NAAC Accredited</span>
             </div>
 
             {/* Main Heading */}
             <h1 className="text-2xl xs:text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight">
               JKKN Dental College & Hospital —{' '}
-              <span className="text-[#7cb983]">DCI-Approved Dental College in Tamil Nadu</span>
+              <span className="text-[#7cb983]">NDC-Approved Dental College in Tamil Nadu</span>
             </h1>
 
             {/* Description */}
             <p className="hero-description text-gray-200 text-sm sm:text-base md:text-lg leading-relaxed">
-              Established in 1987 at Komarapalayam, Namakkal, JKKN Dental College & Hospital is a DCI-approved, NAAC A Grade dental college in Tamil Nadu, teaching in a 200+ chair hospital that sees around 500 patients a day.
+              Established in 1987 at Komarapalayam, Namakkal, JKKN Dental College & Hospital is a NDC-approved, NAAC A Grade dental college in Tamil Nadu, teaching in a 200+ chair hospital that sees around 500 patients a day.
             </p>
 
             {/* Stats */}
@@ -96,7 +96,7 @@ export default function Hero() {
           <div className="flex flex-wrap justify-center items-center gap-6 sm:gap-8 md:gap-10 lg:gap-12 opacity-70">
             <Image
               src="/images/Dental_Council_of_India_logo.webp"
-              alt="Dental Council of India"
+              alt="National Dental Commission (formerly Dental Council of India)"
               width={120}
               height={64}
               className="h-10 xs:h-12 sm:h-14 md:h-16 w-auto grayscale hover:grayscale-0 transition-all duration-300"

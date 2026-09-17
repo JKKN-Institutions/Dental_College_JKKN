@@ -5,7 +5,7 @@ import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
   title: { absolute: 'Dental College in Erode | JKKN Dental College & Hospital' },
-  description: 'Dental College in Erode? JKKN Dental College is just 18 km away at Komarapalayam. DCI approved, NAAC accredited. BDS 100 seats, MDS. Apply 2026.',
+  description: 'Dental College in Erode? JKKN Dental College is just 18 km away at Komarapalayam. NDC approved, NAAC accredited. BDS 100 seats, MDS. Apply 2026.',
   keywords: 'dental college in erode, top dental colleges, bds colleges in erode, erode dental college, mds college erode, jkkn dental erode',
   robots: {
     index: true,
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Dental College in Erode | JKKN Dental College & Hospital',
-    description: 'Dental College in Erode? JKKN Dental College is just 18 km away at Komarapalayam. DCI approved, NAAC accredited. BDS 100 seats, MDS. Apply 2026.',
+    description: 'Dental College in Erode? JKKN Dental College is just 18 km away at Komarapalayam. NDC approved, NAAC accredited. BDS 100 seats, MDS. Apply 2026.',
     url: 'https://dental.jkkn.ac.in/erode/',
     siteName: 'JKKN Dental College & Hospital',
     images: [
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Dental College in Erode | JKKN Dental College & Hospital',
-    description: 'Dental College in Erode? JKKN Dental College is just 18 km away at Komarapalayam. DCI approved, NAAC accredited. BDS 100 seats, MDS. Apply 2026.',
+    description: 'Dental College in Erode? JKKN Dental College is just 18 km away at Komarapalayam. NDC approved, NAAC accredited. BDS 100 seats, MDS. Apply 2026.',
     images: ['https://dental.jkkn.ac.in/images/BDS-hero-image.webp'],
     site: '@jaborejkkn',
   },
@@ -46,9 +46,9 @@ const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "Are there any dental colleges in Erode?", "acceptedAnswer": { "@type": "Answer", "text": "Erode district has limited dental college options. The nearest well-established DCI-approved dental college to Erode is JKKN Dental College and Hospital, located eighteen kilometres from Erode at Komarapalayam, Namakkal, on NH-544. It offers BDS with one hundred seats and MDS in five specializations, affiliated to TN Dr. MGR Medical University, Chennai." } },
+    { "@type": "Question", "name": "Are there any dental colleges in Erode?", "acceptedAnswer": { "@type": "Answer", "text": "Erode district has limited dental college options. The nearest well-established NDC-approved dental college to Erode is JKKN Dental College and Hospital, located eighteen kilometres from Erode at Komarapalayam, Namakkal, on NH-544. It offers BDS with one hundred seats and MDS in five specializations, affiliated to TN Dr. MGR Medical University, Chennai." } },
     { "@type": "Question", "name": "How many dental colleges are in Erode district?", "acceptedAnswer": { "@type": "Answer", "text": "Erode district has one dental college, Nandha Dental College and Hospital, which offers BDS only. For learners seeking both BDS and MDS with a larger teaching hospital and stronger placements, JKKN Dental College and Hospital at Komarapalayam is only eighteen kilometres away via NH-544." } },
-    { "@type": "Question", "name": "Which is the best dental college in Erode?", "acceptedAnswer": { "@type": "Answer", "text": "JKKN Dental College and Hospital, located just eighteen kilometres from Erode on NH-544, is widely regarded as one of the top dental colleges accessible from Erode. Approved by DCI, NAAC accredited and affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai, it offers excellent programmes with strong placement support." } },
+    { "@type": "Question", "name": "Which is the best dental college in Erode?", "acceptedAnswer": { "@type": "Answer", "text": "JKKN Dental College and Hospital, located just eighteen kilometres from Erode on NH-544, is widely regarded as one of the top dental colleges accessible from Erode. Approved by NDC, NAAC accredited and affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai, it offers excellent programmes with strong placement support." } },
     { "@type": "Question", "name": "How far is JKKN Dental from Erode?", "acceptedAnswer": { "@type": "Answer", "text": "JKKN Dental is approximately eighteen kilometres from Erode city centre, which takes about thirty-five to forty minutes by road via NH-544, the direct Salem to Coimbatore Highway. Regular government and private buses are available from Erode Central Bus Stand to Komarapalayam throughout the day." } },
     { "@type": "Question", "name": "What is the NEET cut-off for BDS at JKKN Dental?", "acceptedAnswer": { "@type": "Answer", "text": "The NEET cut-off for BDS admission at JKKN Dental College & Hospital varies each year based on counselling rounds. Contact the admission office at plus ninety-one nine three four five eight five five zero zero one for the latest cut-off information and seat availability for the current admission cycle." } },
     { "@type": "Question", "name": "Does JKKN Dental have its own hospital?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, JKKN Dental College & Hospital has a 200+ chair dental hospital and 100+ bed facility right on campus. Learners from Erode benefit from treating 500+ patients daily who visit from surrounding districts, gaining hands-on clinical training from Year 1 of the BDS programme." } },
@@ -56,7 +56,7 @@ const faqSchema = {
     { "@type": "Question", "name": "Does JKKN Dental provide hostel for Erode learners?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, JKKN Dental provides separate hostel facilities for boys and girls. Learners from Erode can also opt for daily commute as the campus is just eighteen kilometres away — about thirty-five to forty minutes on NH-544. College transport services are available from Erode." } },
     { "@type": "Question", "name": "How can I apply for admission at JKKN Dental?", "acceptedAnswer": { "@type": "Answer", "text": "Erode learners can apply online at https://dental.jkkn.ac.in/ or visit the campus directly — just a thirty-five minute drive on NH-544. Admissions for BDS and MDS 2026-27 are currently open. Call plus ninety-one nine three four five eight five five zero zero one for personalised guidance on eligibility, fees, and the counselling process." } },
     { "@type": "Question", "name": "What is the BDS fee at dental colleges near Erode?", "acceptedAnswer": { "@type": "Answer", "text": "At JKKN Dental College and Hospital, the nearest major dental college to Erode, BDS tuition fee is as per Government Quota norms under Government Quota and four lakh fifty thousand rupees per year (Dayscholar with Instruments) or five lakh fifty thousand rupees per year (With Hostel and Instruments) under Management Quota. Contact nine three four five eight five five zero zero one for the latest 2026-27 fee structure." } },
-    { "@type": "Question", "name": "Which dental colleges near Erode accept NEET scores?", "acceptedAnswer": { "@type": "Answer", "text": "All DCI-approved dental colleges near Erode accept NEET UG scores for BDS admission through DME Tamil Nadu counselling. These include JKKN Dental College and Hospital at Komarapalayam eighteen kilometres away, KSR Institute of Dental Science at Tiruchengode fourteen kilometres away, and Nandha Dental College in Erode city." } },
+    { "@type": "Question", "name": "Which dental colleges near Erode accept NEET scores?", "acceptedAnswer": { "@type": "Answer", "text": "All NDC-approved dental colleges near Erode accept NEET UG scores for BDS admission through DME Tamil Nadu counselling. These include JKKN Dental College and Hospital at Komarapalayam eighteen kilometres away, KSR Institute of Dental Science at Tiruchengode fourteen kilometres away, and Nandha Dental College in Erode city." } },
   ]
 };
 
@@ -68,7 +68,7 @@ const orgSchema = {
   "alternateName": "JKKN Dental",
   "url": "https://dental.jkkn.ac.in/",
   "logo": "https://dental.jkkn.ac.in/images/jkkn-dental-logo.webp",
-  "description": "DCI approved, NAAC accredited dental college affiliated to TN Dr. MGR Medical University. Offers BDS and MDS programmes with 93.9% placed or in higher studies (2024-25 batch).",
+  "description": "NDC approved, NAAC accredited dental college affiliated to TN Dr. MGR Medical University. Offers BDS and MDS programmes with 93.9% placed or in higher studies (2024-25 batch).",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Natarajapuram, NH-544 (Salem–Coimbatore Highway)",
@@ -82,10 +82,10 @@ const orgSchema = {
   "foundingDate": "1987",
   "parentOrganization": { "@type": "Organization", "name": "JKKN Institutions", "url": "https://jkkn.ac.in/" },
   "hasCredential": [
-    { "@type": "EducationalOccupationalCredential", "credentialCategory": "DCI Approved" },
+    { "@type": "EducationalOccupationalCredential", "credentialCategory": "NDC Approved" },
     { "@type": "EducationalOccupationalCredential", "credentialCategory": "NAAC Accredited" }
   ],
-  "accreditedBy": { "@type": "Organization", "name": "Dental Council of India" },
+  "accreditedBy": { "@type": "Organization", "name": "National Dental Commission (formerly Dental Council of India)" },
   "memberOf": { "@type": "Organization", "name": "The Tamil Nadu Dr. M.G.R. Medical University, Chennai" },
   "geo": { "@type": "GeoCoordinates", "latitude": "11.4446062", "longitude": "77.7309852" },
   "sameAs": jkknSameAsUrls
@@ -98,7 +98,7 @@ const courseSchema = [
     "@id": "https://dental.jkkn.ac.in/academics/bds/#course",
     "url": "https://dental.jkkn.ac.in/academics/bds/",
     "name": "BDS (Bachelor of Dental Surgery)",
-    "description": "4-year undergraduate dental programme with 1-year internship. DCI approved, 100 seats. NEET qualified admission.",
+    "description": "4-year undergraduate dental programme with 1-year internship. NDC approved, 100 seats. NEET qualified admission.",
     "provider": { "@type": "EducationalOrganization", "name": "JKKN Dental College & Hospital", "url": "https://dental.jkkn.ac.in/" },
     "educationalLevel": "Undergraduate",
     "timeRequired": "P5Y",

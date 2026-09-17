@@ -52,7 +52,7 @@ export default function InternationalStudentCellCommittee() {
 
           {/* Introduction */}
           <p className="text-base text-black mb-6 leading-relaxed text-justify">
-            J.K.K. Nattaraja Dental College and the hospital provide globally acclaimed services with good hospitality to NRI candidates. The international learner cell is active to facilitate international candidates. It considers and coordinates well with every futuristic prospect of international learners. On fulfilling the needed requirement, the foreign and NRI candidates are admitted into the institution based upon eligibility framed by UGC and DCI.
+            J.K.K. Nattaraja Dental College and the hospital provide globally acclaimed services with good hospitality to NRI candidates. The international learner cell is active to facilitate international candidates. It considers and coordinates well with every futuristic prospect of international learners. On fulfilling the needed requirement, the foreign and NRI candidates are admitted into the institution based upon eligibility framed by the UGC and the National Dental Commission (NDC).
           </p>
 
           {/* Objectives */}

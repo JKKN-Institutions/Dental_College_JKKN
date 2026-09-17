@@ -171,8 +171,8 @@ export function GetDentalCollegePages(pathname: string): MenuGroup[] {
             { href: '/about/act-statutes', label: 'Act & Statutes', icon: Scale, active: pathname === '/about/act-statutes' },
             { href: '/about/approvals-and-affiliation/affiliation-bds', label: 'Affiliation BDS', icon: FileCheck, active: pathname.includes('/affiliation-bds') },
             { href: '/about/approvals-and-affiliation/affiliation-mds', label: 'Affiliation MDS', icon: FileBadge, active: pathname.includes('/affiliation-mds') },
-            { href: '/about/approvals-and-affiliation/dci-bds', label: 'DCI Letter BDS', icon: BadgeCheck, active: pathname.includes('/dci-bds') },
-            { href: '/about/approvals-and-affiliation/dci-mds', label: 'DCI Letter MDS', icon: Award, active: pathname.includes('/dci-mds') },
+            { href: '/about/approvals-and-affiliation/dci-bds', label: 'NDC Letter BDS', icon: BadgeCheck, active: pathname.includes('/dci-bds') },
+            { href: '/about/approvals-and-affiliation/dci-mds', label: 'NDC Letter MDS', icon: Award, active: pathname.includes('/dci-mds') },
             { href: '/about/accreditation-ranking-status/naac', label: 'NAAC', icon: Medal, active: pathname.includes('/naac') },
             { href: '/about/annual-report', label: 'Annual Report', icon: CalendarRange, active: pathname === '/about/annual-report' },
             { href: '/about/annual-account-statement', label: 'Annual Account', icon: Receipt, active: pathname === '/about/annual-account-statement' }

@@ -16,11 +16,11 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   metadataBase: new URL('https://dental.jkkn.ac.in'),
   title: {
-    default: "JKKN Dental College & Hospital | DCI Approved",
+    default: "JKKN Dental College & Hospital | NDC Approved",
     template: "%s | JKKN Dental College"
   },
-  description: "JKKN Dental College & Hospital, Komarapalayam — DCI approved, NAAC A accredited. BDS & MDS programs with 200+ chair hospital training. Since 1987.",
-  keywords: "JKKN Dental College, AI dental campus, dental college Tamil Nadu, BDS course, MDS specializations, AI in dentistry, ChatGPT dental education, DCI approved dental college, NAAC accredited, digital dentistry, CAD/CAM dentistry, Komarapalayam dental college",
+  description: "JKKN Dental College & Hospital, Komarapalayam — NDC approved, NAAC A accredited. BDS & MDS programs with 200+ chair hospital training. Since 1987.",
+  keywords: "JKKN Dental College, AI dental campus, dental college Tamil Nadu, BDS course, MDS specializations, AI in dentistry, ChatGPT dental education, NDC approved dental college, NAAC accredited, digital dentistry, CAD/CAM dentistry, Komarapalayam dental college",
   authors: [{ name: "JKKN Dental College Editorial Team" }],
   // NOTE: do NOT put `alternates.canonical` here. Next.js metadata is inherited
   // by every child route, so an absolute canonical in the root layout made all
@@ -35,8 +35,8 @@ export const metadata: Metadata = {
     apple: "/images/dental-logo.png",
   },
   openGraph: {
-    title: "JKKN Dental College & Hospital | DCI Approved",
-    description: "JKKN Dental College & Hospital, Komarapalayam — DCI approved, NAAC A accredited. BDS & MDS programs with 200+ chair hospital training. Since 1987.",
+    title: "JKKN Dental College & Hospital | NDC Approved",
+    description: "JKKN Dental College & Hospital, Komarapalayam — NDC approved, NAAC A accredited. BDS & MDS programs with 200+ chair hospital training. Since 1987.",
     url: "https://dental.jkkn.ac.in/",
     siteName: "JKKN Dental College & Hospital",
     images: [
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
         url: "/images/BDS-hero-image.webp",
         width: 1200,
         height: 630,
-        alt: "JKKN Dental College & Hospital, Komarapalayam - DCI approved, NAAC A Grade"
+        alt: "JKKN Dental College & Hospital, Komarapalayam - NDC approved, NAAC A Grade"
       }
     ],
     type: "website",
@@ -52,8 +52,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "JKKN Dental College & Hospital | DCI Approved",
-    description: "JKKN Dental College & Hospital, Komarapalayam — DCI approved, NAAC A accredited. BDS & MDS programs with 200+ chair hospital training. Since 1987.",
+    title: "JKKN Dental College & Hospital | NDC Approved",
+    description: "JKKN Dental College & Hospital, Komarapalayam — NDC approved, NAAC A accredited. BDS & MDS programs with 200+ chair hospital training. Since 1987.",
     images: ["/images/BDS-hero-image.webp"],
   },
   robots: {

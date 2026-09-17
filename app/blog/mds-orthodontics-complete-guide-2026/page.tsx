@@ -36,17 +36,17 @@ const faqs = [
   {
     question: 'What is the eligibility for MDS Orthodontics in 2026?',
     answer:
-      'Candidates must hold a BDS degree from a Dental Council of India (DCI) recognised college and have completed a 1-year rotational internship before 31st March of the admission year. A valid NEET-MDS 2026 score is mandatory. Permanent registration with the State Dental Council is required at the time of admission.',
+      'Candidates must hold a BDS degree from a National Dental Commission (NDC), formerly the Dental Council of India recognised college and have completed a 1-year rotational internship before 31st March of the admission year. A valid NEET-MDS 2026 score is mandatory. Permanent registration with the State Dental Council is required at the time of admission.',
   },
   {
     question: 'How long is the MDS Orthodontics course at JKKN Dental College?',
     answer:
-      'MDS Orthodontics & Dentofacial Orthopedics is a full-time 3-year postgraduate program. The curriculum follows the Dental Council of India PG Regulations and the syllabus of The Tamil Nadu Dr. M.G.R. Medical University. It includes pre-clinical training, clinical case management, library dissertation and a final university examination.',
+      'MDS Orthodontics & Dentofacial Orthopedics is a full-time 3-year postgraduate program. The curriculum follows the National Dental Commission PG Regulations and the syllabus of The Tamil Nadu Dr. M.G.R. Medical University. It includes pre-clinical training, clinical case management, library dissertation and a final university examination.',
   },
   {
     question: 'How many MDS Orthodontics seats are available at JKKN?',
     answer:
-      'JKKN Dental College & Hospital is approved by the DCI for 4 MDS seats per year in Orthodontics and Dentofacial Orthopedics. Out of total 18 MDS seats across 5 specialisations, Orthodontics is one of the most competitive — typically filled in the early rounds of Tamil Nadu PG counselling.',
+      'JKKN Dental College & Hospital is approved by the NDC for 4 MDS seats per year in Orthodontics and Dentofacial Orthopedics. Out of total 18 MDS seats across 5 specialisations, Orthodontics is one of the most competitive — typically filled in the early rounds of Tamil Nadu PG counselling.',
   },
   {
     question: 'What is the career scope after MDS Orthodontics in 2026?',
@@ -61,7 +61,7 @@ const faqs = [
   {
     question: 'What is the NEET-MDS cutoff for Orthodontics admission?',
     answer:
-      'NEET-MDS qualifying percentile is 50th for General/EWS, 40th for SC/ST/OBC and 45th for PwD (subject to NBE/DCI revisions). However, closing ranks for Orthodontics in Tamil Nadu private dental colleges have historically been highly competitive — often within the top 5,000 NEET-MDS All-India ranks for Government Quota seats. Refer to tnmedicalselection.net for the exact current-year cutoff.',
+      'NEET-MDS qualifying percentile is 50th for General/EWS, 40th for SC/ST/OBC and 45th for PwD (subject to NBE/NDC revisions). However, closing ranks for Orthodontics in Tamil Nadu private dental colleges have historically been highly competitive — often within the top 5,000 NEET-MDS All-India ranks for Government Quota seats. Refer to tnmedicalselection.net for the exact current-year cutoff.',
   },
 ];
 
@@ -74,7 +74,7 @@ const articleSchema = generateArticleSchema({
   authorName: 'JKKN Dental Admissions Team',
   authorJobTitle: 'PG Admissions & Academics',
   authorCredentials:
-    'PG admissions and academic-advisory team at JKKN Dental College & Hospital, affiliated to The Tamil Nadu Dr. M.G.R. Medical University and approved by the Dental Council of India.',
+    'PG admissions and academic-advisory team at JKKN Dental College & Hospital, affiliated to The Tamil Nadu Dr. M.G.R. Medical University and approved by the National Dental Commission.',
 });
 
 const faqSchema = generateFAQSchema(faqs);

@@ -42,8 +42,8 @@ export const topMenuItems: NavItem[] = [
         submenu: [
           { label: "UNIVERSITY PROVISIONAL AFFILIATION LETTERS – BDS", href: "/pdf/university-provisional-affiliation-letters-bds.pdf" },
           { label: "UNIVERSITY PROVISIONAL AFFILIATION LETTERS -MDS", href: "/pdf/university-provisional-affiliation-letters-mds.pdf" },
-          { label: "DCI PERMISSION LETTER-BDS", href: "/pdf/DCI-Permission-letter-bds.pdf" },
-          { label: "DCI PERMISSION LETTER-MDS", href: "/pdf/DCI-Permission-letter-mds.pdf" }
+          { label: "NDC PERMISSION LETTER-BDS", href: "/pdf/DCI-Permission-letter-bds.pdf" },
+          { label: "NDC PERMISSION LETTER-MDS", href: "/pdf/DCI-Permission-letter-mds.pdf" }
         ]
       },
       {

@@ -2,14 +2,14 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: { absolute: 'MDS Periodontics | Gum Disease Specialist Course | JKKN Dental' },
-  description: 'MDS in Periodontics at JKKN Dental College. 3-year postgraduate program in gum disease treatment, dental implants, and periodontal surgery. DCI approved, expert faculty, modern facilities.',
+  description: 'MDS in Periodontics at JKKN Dental College. 3-year postgraduate program in gum disease treatment, dental implants, and periodontal surgery. NDC approved, expert faculty, modern facilities.',
   keywords: 'MDS Periodontics, periodontology course, gum disease specialist, dental implants training, periodontics postgraduate',
   alternates: {
     canonical: '/academics/details-of-academic-programs/mds/periodontics/',
   },
   openGraph: {
     title: 'MDS Periodontics | Gum Disease Specialist Course | JKKN Dental',
-    description: 'MDS in Periodontics at JKKN Dental College. 3-year postgraduate program in gum disease treatment, dental implants, and periodontal surgery. DCI approved, expert faculty, modern facilities.',
+    description: 'MDS in Periodontics at JKKN Dental College. 3-year postgraduate program in gum disease treatment, dental implants, and periodontal surgery. NDC approved, expert faculty, modern facilities.',
     url: 'https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/periodontics',
     siteName: 'JKKN Dental College & Hospital',
     images: [

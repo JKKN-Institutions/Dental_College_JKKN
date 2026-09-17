@@ -7,7 +7,7 @@ export default function CoimbatorePage() {
   const faqs = [
     {
       q: 'Which is the best dental college near Coimbatore?',
-      a: 'JKKN Dental College & Hospital in Komarapalayam, Namakkal is the leading dental institution within 120 km of Coimbatore, offering a 93.9% placed-or-higher-studies rate (2024-25 batch) and the highest BDS-to-MDS conversion record in the region. The college is approved by the Dental Council of India and affiliated with TN Dr. MGR Medical University. Learners from Coimbatore reach the campus in approximately 1.5 hours via NH-544.',
+      a: 'JKKN Dental College & Hospital in Komarapalayam, Namakkal is the leading dental institution within 120 km of Coimbatore, offering a 93.9% placed-or-higher-studies rate (2024-25 batch) and the highest BDS-to-MDS conversion record in the region. The college is approved by the National Dental Commission (formerly Dental Council of India) and affiliated with TN Dr. MGR Medical University. Learners from Coimbatore reach the campus in approximately 1.5 hours via NH-544.',
     },
     {
       q: 'How far is JKKN Dental College from Coimbatore?',
@@ -30,8 +30,8 @@ export default function CoimbatorePage() {
       a: 'Yes. JKKN Dental College & Hospital provides separate hostel facilities for male and female learners on campus at Komarapalayam, Namakkal. Hostels include Wi-Fi, dining, and 24-hour security. This is particularly convenient for learners from Coimbatore who prefer on-campus residence during weekdays.',
     },
     {
-      q: 'Is JKKN Dental College approved by the Dental Council of India?',
-      a: 'Yes. JKKN Dental College & Hospital is recognized and approved by the Dental Council of India (DCI). The college is also affiliated with The Tamil Nadu Dr. M.G.R. Medical University, Chennai, and holds NAAC accreditation.',
+      q: 'Is JKKN Dental College approved by the National Dental Commission?',
+      a: 'Yes. JKKN Dental College & Hospital is recognized and approved by the National Dental Commission (NDC). The college is also affiliated with The Tamil Nadu Dr. M.G.R. Medical University, Chennai, and holds NAAC accreditation.',
     },
     {
       q: 'What is the placement record of JKKN Dental College?',
@@ -56,7 +56,7 @@ export default function CoimbatorePage() {
   ];
 
   const whyFeatures = [
-    { icon: <Hospital className="w-6 h-6 text-[#006837]" />, title: 'Own Hospital', desc: 'DCI-approved dental college with attached hospital for hands-on clinical training — 200+ chairs, 100+ beds, 500+ daily patients' },
+    { icon: <Hospital className="w-6 h-6 text-[#006837]" />, title: 'Own Hospital', desc: 'NDC-approved dental college with attached hospital for hands-on clinical training — 200+ chairs, 100+ beds, 500+ daily patients' },
     { icon: <Stethoscope className="w-6 h-6 text-[#006837]" />, title: 'Real Patient Exposure', desc: 'Own dental hospital on campus — learners get real patient exposure from Year 1, not Year 3' },
     { icon: <Microscope className="w-6 h-6 text-[#006837]" />, title: 'Advanced Learning Labs', desc: 'Advanced dental learning labs, simulation equipment, and digital dentistry training — an AI-integrated dental campus' },
     { icon: <TrendingUp className="w-6 h-6 text-[#006837]" />, title: '93.9% Placed or in Higher Studies (2024-25)', desc: 'JKKN Dental records 93.9% placed or in higher studies (2024-25 batch) for BDS graduates. BDS median salary: Rs 3,60,000 (NIRF 2026 filing). International placements: UK (NHS), UAE, Saudi Arabia.' },
@@ -108,7 +108,7 @@ export default function CoimbatorePage() {
 
   const keyFacts = [
     { label: 'Established', value: '1987' },
-    { label: 'Approval', value: 'DCI Approved' },
+    { label: 'Approval', value: 'NDC Approved' },
     { label: 'Accreditation', value: 'NAAC Accredited' },
     { label: 'BDS Seats', value: '100' },
     { label: 'MDS Specializations', value: '5' },
@@ -157,7 +157,7 @@ export default function CoimbatorePage() {
         style={{ background: 'linear-gradient(135deg, #006837 0%, #002309 100%)', minHeight: '88vh' }}
       >
         <div className="mb-6 inline-flex items-center gap-2 bg-white/10 backdrop-blur border border-white/20 text-white text-sm font-medium px-5 py-2 rounded-full">
-          <Shield className="w-4 h-4" /> DCI, NAAC Approved • Admissions Open
+          <Shield className="w-4 h-4" /> NDC, NAAC Approved • Admissions Open
         </div>
         <h1 className="text-white font-extrabold leading-tight mb-3 max-w-4xl" style={{ fontSize: 'clamp(2rem, 5vw + 0.5rem, 3.5rem)' }}>
           Best Dental College Near <span className="text-[#7cb983]">Coimbatore</span>
@@ -195,7 +195,7 @@ export default function CoimbatorePage() {
       <div className="bg-white border-b border-gray-100 py-4 px-4">
         <div className="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8">
           <div className="flex items-center gap-3">
-            <span className="flex items-center gap-1.5 bg-[#FBFBEE] border border-[#7cb983] text-[#006837] text-sm font-semibold px-3 py-1.5 rounded-full">✓ DCI</span>
+            <span className="flex items-center gap-1.5 bg-[#FBFBEE] border border-[#7cb983] text-[#006837] text-sm font-semibold px-3 py-1.5 rounded-full">✓ NDC</span>
             <span className="flex items-center gap-1.5 bg-[#FBFBEE] border border-[#7cb983] text-[#006837] text-sm font-semibold px-3 py-1.5 rounded-full">✓ NAAC</span>
           </div>
           <span className="hidden sm:block text-gray-300">|</span>
@@ -235,7 +235,7 @@ export default function CoimbatorePage() {
             Best Dental College Near Coimbatore: How JKKN Compares
           </h2>
           <p className="snippet-answer text-gray-600 leading-relaxed mb-8 max-w-3xl mx-auto text-center" style={{ fontSize: 'clamp(0.9rem, 1vw + 0.4rem, 1.05rem)' }}>
-            JKKN Dental College &amp; Hospital, located 108 km from Coimbatore on NH-544, records a 93.9% placed-or-higher-studies rate (2024-25 batch) and a median BDS salary of Rs 3,60,000 (NIRF 2026 filing). The college holds NAAC accreditation, DCI approval, and offers 100 BDS seats and 5 MDS specializations through TN Dr. MGR Medical University.
+            JKKN Dental College &amp; Hospital, located 108 km from Coimbatore on NH-544, records a 93.9% placed-or-higher-studies rate (2024-25 batch) and a median BDS salary of Rs 3,60,000 (NIRF 2026 filing). The college holds NAAC accreditation, NDC approval, and offers 100 BDS seats and 5 MDS specializations through TN Dr. MGR Medical University.
           </p>
           {/* Comparison Table */}
           <div className="overflow-x-auto rounded-2xl border border-gray-100 shadow-sm mb-8">
@@ -500,7 +500,7 @@ export default function CoimbatorePage() {
           </h2>
           <div className="aeo-entity-block bg-white rounded-2xl p-6 sm:p-8 shadow-sm space-y-4" itemScope itemType="https://schema.org/EducationalOrganization">
             <p className="text-gray-600 leading-relaxed" style={{ fontSize: 'clamp(0.875rem, 1vw + 0.3rem, 1rem)' }}>
-              JKKN Dental College &amp; Hospital is a Dental Council of India-approved dental institution established in 1987, located in Komarapalayam, Namakkal District, Tamil Nadu 638183, on National Highway 544. The college is affiliated with The Tamil Nadu Dr. M.G.R. Medical University, Chennai, and holds NAAC accreditation.
+              JKKN Dental College &amp; Hospital is a National Dental Commission-approved dental institution established in 1987, located in Komarapalayam, Namakkal District, Tamil Nadu 638183, on National Highway 544. The college is affiliated with The Tamil Nadu Dr. M.G.R. Medical University, Chennai, and holds NAAC accreditation.
             </p>
             <p className="text-gray-600 leading-relaxed" style={{ fontSize: 'clamp(0.875rem, 1vw + 0.3rem, 1rem)' }}>
               The college offers the Bachelor of Dental Surgery (BDS) program with 100 seats and the Master of Dental Surgery (MDS) program with 5 specializations: Orthodontics and Dentofacial Orthopaedics, Prosthodontics, Oral Medicine and Radiology, Conservative Dentistry and Endodontics, and Periodontics.
@@ -524,7 +524,7 @@ export default function CoimbatorePage() {
           <div className="bg-[#FBFBEE] border border-[#7cb983]/30 rounded-2xl p-6">
             <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-3">About This Page</p>
             <p className="text-gray-600 text-sm leading-relaxed">
-              This page is published by JKKN Dental College &amp; Hospital, a DCI-approved institution established in 1987, affiliated with The Tamil Nadu Dr. M.G.R. Medical University, Chennai. Placement data is sourced from the institutional placement portal at <a href="https://placements.jkkn.ac.in" target="_blank" rel="noopener noreferrer" className="text-[#006837] underline">placements.jkkn.ac.in</a>. Admission data is sourced from <a href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_medium=organic&utm_campaign=coimbatore" target="_blank" rel="noopener noreferrer" className="text-[#006837] underline">www.jkkn.ai/apply/jkkn-admission-2026</a>. Last updated: March 2026.
+              This page is published by JKKN Dental College &amp; Hospital, a NDC-approved institution established in 1987, affiliated with The Tamil Nadu Dr. M.G.R. Medical University, Chennai. Placement data is sourced from the institutional placement portal at <a href="https://placements.jkkn.ac.in" target="_blank" rel="noopener noreferrer" className="text-[#006837] underline">placements.jkkn.ac.in</a>. Admission data is sourced from <a href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_medium=organic&utm_campaign=coimbatore" target="_blank" rel="noopener noreferrer" className="text-[#006837] underline">www.jkkn.ai/apply/jkkn-admission-2026</a>. Last updated: March 2026.
             </p>
           </div>
         </div>

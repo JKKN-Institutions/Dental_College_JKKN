@@ -144,7 +144,7 @@ export default function PlacementsPage() {
       <div className="bg-white border-b border-gray-100 py-4 px-4">
         <div className="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8">
           <div className="flex items-center gap-3">
-            <span className="flex items-center gap-1.5 bg-[#FBFBEE] border border-[#7cb983] text-[#006837] text-sm font-semibold px-3 py-1.5 rounded-full">{'\u2713'} DCI</span>
+            <span className="flex items-center gap-1.5 bg-[#FBFBEE] border border-[#7cb983] text-[#006837] text-sm font-semibold px-3 py-1.5 rounded-full">{'\u2713'} NDC</span>
             <span className="flex items-center gap-1.5 bg-[#FBFBEE] border border-[#7cb983] text-[#006837] text-sm font-semibold px-3 py-1.5 rounded-full">{'\u2713'} NAAC</span>
           </div>
           <span className="hidden sm:block text-gray-300">|</span>

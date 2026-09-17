@@ -26,11 +26,11 @@ export default function BDSProgram() {
               },
               {
                 q: 'What is the eligibility criteria for BDS admission?',
-                a: 'Candidates must have completed 10+2 with Physics, Chemistry, and Biology as mandatory subjects with a minimum of 50% aggregate marks (40% for reserved categories). Additionally, candidates must qualify NEET-UG and be at least 17 years old as on 31st December of the admission year. Indian nationals and NRI/Foreign nationals are eligible as per DCI guidelines.'
+                a: 'Candidates must have completed 10+2 with Physics, Chemistry, and Biology as mandatory subjects with a minimum of 50% aggregate marks (40% for reserved categories). Additionally, candidates must qualify NEET-UG and be at least 17 years old as on 31st December of the admission year. Indian nationals and NRI/Foreign nationals are eligible as per NDC guidelines.'
               },
               {
-                q: 'Is the BDS program at JKKN Dental College & Hospital DCI approved?',
-                a: 'Yes, the BDS program at JKKN Dental College is fully approved by the Dental Council of India (DCI). The college is recognized by the Government of Tamil Nadu and affiliated with the Tamil Nadu Dr. M.G.R. Medical University, Chennai. JKKN is also NAAC Accredited, ensuring quality standards in dental education.'
+                q: 'Is the BDS program at JKKN Dental College & Hospital NDC approved?',
+                a: 'Yes, the BDS program at JKKN Dental College is fully approved by the National Dental Commission (NDC), formerly the Dental Council of India. The college is recognized by the Government of Tamil Nadu and affiliated with the Tamil Nadu Dr. M.G.R. Medical University, Chennai. JKKN is also NAAC Accredited, ensuring quality standards in dental education.'
               },
               {
                 q: 'What are the career opportunities after completing BDS?',
@@ -54,7 +54,7 @@ export default function BDSProgram() {
               },
               {
                 q: 'Is JKKN Dental College NAAC accredited?',
-                a: 'Yes, JKKN Dental College & Hospital is NAAC Accredited with A Grade. The institution is DCI approved, Government of Tamil Nadu recognized, and affiliated with TN Dr. MGR Medical University. Established in 1987 under J.K.K. Nattraja Educational Institutions (since 1952), it carries a legacy of 74+ years.'
+                a: 'Yes, JKKN Dental College & Hospital is NAAC Accredited with A Grade. The institution is NDC approved, Government of Tamil Nadu recognized, and affiliated with TN Dr. MGR Medical University. Established in 1987 under J.K.K. Nattraja Educational Institutions (since 1952), it carries a legacy of 74+ years.'
               },
               {
                 q: 'What is the placement record of JKKN Dental College?',
@@ -62,7 +62,7 @@ export default function BDSProgram() {
               },
               {
                 q: 'Where is JKKN Dental College located?',
-                a: 'JKKN Dental College is at Natarajapuram, NH-544, Komarapalayam, Namakkal District, Tamil Nadu 638183. Distances: Erode (~22 km, 35 min), Salem (~58 km, 1 hr), Namakkal town (~66 km), Tiruppur (~67 km), Coimbatore (~105 km, 2 hrs). It is approved by the Dental Council of India and NAAC accredited with an A Grade.'
+                a: 'JKKN Dental College is at Natarajapuram, NH-544, Komarapalayam, Namakkal District, Tamil Nadu 638183. Distances: Erode (~22 km, 35 min), Salem (~58 km, 1 hr), Namakkal town (~66 km), Tiruppur (~67 km), Coimbatore (~105 km, 2 hrs). It is approved by the National Dental Commission and NAAC accredited with an A Grade.'
               },
               {
                 q: 'What hostel facilities are available for BDS learners?',
@@ -74,7 +74,7 @@ export default function BDSProgram() {
               },
               {
                 q: 'Can international learners apply for BDS at JKKN?',
-                a: 'Yes, international learners and NRI candidates can apply as per DCI guidelines and TN Dr. MGR Medical University regulations. NRI/Foreign national seats are available. Contact the international admissions desk at +91 93458 55001 or email dental@jkkn.ac.in for requirements.'
+                a: 'Yes, international learners and NRI candidates can apply as per NDC guidelines and TN Dr. MGR Medical University regulations. NRI/Foreign national seats are available. Contact the international admissions desk at +91 93458 55001 or email dental@jkkn.ac.in for requirements.'
               },
               {
                 q: 'What MDS specializations are available after BDS at JKKN?',
@@ -90,7 +90,7 @@ export default function BDSProgram() {
     "@type": "Course",
     "@id": "https://dental.jkkn.ac.in/academics/details-of-academic-programs/bds/#course",
     "name": "Bachelor of Dental Surgery (BDS)",
-    "description": "JKKN Dental College & Hospital, established in 1987, offers a 5-year DCI-approved BDS program with 100 seats, 200+ dental chairs, 500+ daily patients, and 93.9% placed or in higher studies (2024-25 batch). Affiliated to TN Dr. MGR Medical University, NAAC Accredited, located on NH-544, Komarapalayam, Namakkal, Tamil Nadu.",
+    "description": "JKKN Dental College & Hospital, established in 1987, offers a 5-year NDC-approved BDS program with 100 seats, 200+ dental chairs, 500+ daily patients, and 93.9% placed or in higher studies (2024-25 batch). Affiliated to TN Dr. MGR Medical University, NAAC Accredited, located on NH-544, Komarapalayam, Namakkal, Tamil Nadu.",
     "provider": {
       "@type": "CollegeOrUniversity",
       "name": "JKKN Dental College & Hospital",
@@ -140,7 +140,7 @@ export default function BDSProgram() {
 
   const speakableSchema = generateSpeakableWebPageSchema({
     title: 'BDS Colleges in Tamil Nadu — BDS Admission 2026-27 at JKKN Dental College',
-    description: 'JKKN Dental College, Namakkal offers DCI-approved BDS with 200+ dental chairs, 500+ daily patients, 93.9% placed or in higher studies (2024-25 batch), NAAC Accredited. Admission 2026-27 open.',
+    description: 'JKKN Dental College, Namakkal offers NDC-approved BDS with 200+ dental chairs, 500+ daily patients, 93.9% placed or in higher studies (2024-25 batch), NAAC Accredited. Admission 2026-27 open.',
     url: 'https://dental.jkkn.ac.in/academics/details-of-academic-programs/bds/',
     dateModified: '2026-04-08',
     speakableCssSelectors: ['h1', '.hero-description', '.answer-capsule', 'article p'],
@@ -187,7 +187,7 @@ export default function BDSProgram() {
                   <svg className="w-5 h-5 text-[#7cb983]" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
-                  <span className="text-[#7cb983] font-semibold text-sm">DCI Approved</span>
+                  <span className="text-[#7cb983] font-semibold text-sm">NDC Approved</span>
                 </div>
                 <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2">
                   <svg className="w-5 h-5 text-[#7cb983]" fill="currentColor" viewBox="0 0 20 20">
@@ -220,12 +220,12 @@ export default function BDSProgram() {
 
               {/* Subtitle with schema keywords */}
               <p className="text-lg md:text-xl text-[#7cb983] font-semibold mb-4">
-                Bachelor of Dental Surgery (BDS) Program | DCI Approved | NAAC Accredited
+                Bachelor of Dental Surgery (BDS) Program | NDC Approved | NAAC Accredited
               </p>
 
               {/* Description — Gap #4, #5: Keywords + content expansion */}
               <p className="hero-description text-base md:text-lg text-gray-200 mb-8 leading-relaxed">
-                JKKN Dental College & Hospital, established in 1987, is a <strong className="text-white">DCI-approved BDS college in Tamil Nadu</strong> with 100 BDS seats, a 5-year programme, 200+ dental chairs, around 500 patients a day, and 93.9% placed or in higher studies (2024-25 batch: 93 of 99 - NIRF 2026 filing). Located on NH-544, Komarapalayam, Namakkal — well-connected to Erode, Salem, and Coimbatore.
+                JKKN Dental College & Hospital, established in 1987, is a <strong className="text-white">NDC-approved BDS college in Tamil Nadu</strong> with 100 BDS seats, a 5-year programme, 200+ dental chairs, around 500 patients a day, and 93.9% placed or in higher studies (2024-25 batch: 93 of 99 - NIRF 2026 filing). Located on NH-544, Komarapalayam, Namakkal — well-connected to Erode, Salem, and Coimbatore.
               </p>
 
               {/* Hero Stats */}
@@ -300,7 +300,7 @@ export default function BDSProgram() {
         <div className="max-w-4xl mx-auto">
           <div className="answer-capsule bg-white border-l-4 border-[#7cb983] rounded-r-xl p-6 shadow-sm">
             <p className="text-gray-700 leading-relaxed text-base md:text-lg">
-              <strong className="text-[#006837]">JKKN Dental College & Hospital</strong>, established in 1987 under the J.K.K. Nattraja Educational Institutions (since 1952), is a DCI-approved and <a href="/accreditation/" className="text-[#7cb983] underline hover:text-[#6ba872]">NAAC Accredited</a> dental institution located on NH-544, Komarapalayam, Namakkal District, Tamil Nadu 638183. It offers <strong>100 BDS seats</strong> and <strong>18 MDS seats</strong> across 5 specializations, affiliated to the <a href="https://www.tnmgrmu.ac.in/" target="_blank" rel="noopener noreferrer" className="text-[#7cb983] underline hover:text-[#6ba872]">Tamil Nadu Dr. M.G.R. Medical University</a>, Chennai. With 200+ dental chairs, 100+ hospital beds, and 500+ daily patient footfall across 9 departments, JKKN gives BDS learners daily clinical exposure from the first year, alongside <a href="/research/" className="text-[#7cb983] underline hover:text-[#6ba872]">research excellence</a> with 50+ publications and 25+ MoU partners. The college provides 93.9% placed or in higher studies (2024-25 batch) including international opportunities.
+              <strong className="text-[#006837]">JKKN Dental College & Hospital</strong>, established in 1987 under the J.K.K. Nattraja Educational Institutions (since 1952), is a NDC-approved and <a href="/accreditation/" className="text-[#7cb983] underline hover:text-[#6ba872]">NAAC Accredited</a> dental institution located on NH-544, Komarapalayam, Namakkal District, Tamil Nadu 638183. It offers <strong>100 BDS seats</strong> and <strong>18 MDS seats</strong> across 5 specializations, affiliated to the <a href="https://www.tnmgrmu.ac.in/" target="_blank" rel="noopener noreferrer" className="text-[#7cb983] underline hover:text-[#6ba872]">Tamil Nadu Dr. M.G.R. Medical University</a>, Chennai. With 200+ dental chairs, 100+ hospital beds, and 500+ daily patient footfall across 9 departments, JKKN gives BDS learners daily clinical exposure from the first year, alongside <a href="/research/" className="text-[#7cb983] underline hover:text-[#6ba872]">research excellence</a> with 50+ publications and 25+ MoU partners. The college provides 93.9% placed or in higher studies (2024-25 batch) including international opportunities.
             </p>
           </div>
         </div>
@@ -329,7 +329,7 @@ export default function BDSProgram() {
 
           <div className="grid md:grid-cols-2 gap-6">
             {[
-              { num: 1, title: 'DCI Approved & NAAC Accredited', desc: 'Fully approved by the Dental Council of India and accredited by NAAC, ensuring nationally recognized standards of dental education and patient care.' },
+              { num: 1, title: 'NDC Approved & NAAC Accredited', desc: 'Fully approved by the National Dental Commission and accredited by NAAC, ensuring nationally recognized standards of dental education and patient care.' },
               { num: 2, title: '200+ Dental Chairs', desc: 'A large dental clinical facility in the Namakkal-Erode-Salem corridor with 200+ operational dental chairs and 100+ hospital beds for comprehensive training.' },
               { num: 3, title: '500+ Daily Patients — Clinical Exposure from Year 1', desc: 'Learners receive hands-on clinical training from Year 1 with 500+ patients visiting daily across 9 specialized departments — a key advantage over many BDS colleges in Tamil Nadu.' },
               { num: 4, title: '93.9% Placed or in Higher Studies (2024-25) — Including International', desc: 'Strong placement record with recruiters like Apollo Hospitals, Clove Dental, NHS UK, and Cleveland Clinic Abu Dhabi. 3,000+ alumni network worldwide.' },
@@ -379,7 +379,7 @@ export default function BDSProgram() {
 
               <article>
                 <p className="text-gray-600 mb-6 leading-relaxed">
-                  The Bachelor of Dental Surgery (BDS) at <a href="/about/" className="text-[#7cb983] underline hover:text-[#6ba872]">JKKN Dental College & Hospital</a> is a prestigious 5-year undergraduate program designed to produce competent dental professionals. Approved by the Dental Council of India (DCI), recognized by the Government of Tamil Nadu, and affiliated with the <strong>Tamil Nadu Dr. M.G.R. Medical University, Chennai</strong>, the program combines rigorous academic training with extensive clinical exposure in the college's own 200+ chair teaching hospital.
+                  The Bachelor of Dental Surgery (BDS) at <a href="/about/" className="text-[#7cb983] underline hover:text-[#6ba872]">JKKN Dental College & Hospital</a> is a prestigious 5-year undergraduate program designed to produce competent dental professionals. Approved by the National Dental Commission (NDC), recognized by the Government of Tamil Nadu, and affiliated with the <strong>Tamil Nadu Dr. M.G.R. Medical University, Chennai</strong>, the program combines rigorous academic training with extensive clinical exposure in the college's own 200+ chair teaching hospital.
                 </p>
 
                 <p className="text-gray-600 mb-6 leading-relaxed">
@@ -444,8 +444,8 @@ export default function BDSProgram() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="font-bold text-[#006837] mb-1 text-base">DCI Approved Program</h3>
-                  <p className="text-sm text-gray-600">Fully recognized by the Dental Council of India with 100 BDS seats</p>
+                  <h3 className="font-bold text-[#006837] mb-1 text-base">NDC Approved Program</h3>
+                  <p className="text-sm text-gray-600">Fully recognized by the National Dental Commission with 100 BDS seats</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
@@ -478,8 +478,8 @@ export default function BDSProgram() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="font-bold text-[#006837] mb-1 text-base">Modern DCI Learning Framework</h3>
-                  <p className="text-sm text-gray-600">Updated learning pathway aligned with latest DCI guidelines and competency-based education</p>
+                  <h3 className="font-bold text-[#006837] mb-1 text-base">Modern NDC Learning Framework</h3>
+                  <p className="text-sm text-gray-600">Updated learning pathway aligned with latest NDC guidelines and competency-based education</p>
                 </div>
               </div>
             </div>
@@ -598,7 +598,7 @@ export default function BDSProgram() {
               </div>
               <h3 className="text-sm font-bold text-gray-800 mb-3">Annual Intake</h3>
               <div className="text-xl font-bold text-[#7cb983] mb-2">100 Seats</div>
-              <p className="text-sm text-gray-600">As per DCI Approval (BDS)</p>
+              <p className="text-sm text-gray-600">As per NDC Approval (BDS)</p>
             </div>
 
             <div className="bg-white border border-gray-200 rounded-2xl p-8 text-center hover:shadow-xl transition-shadow duration-300">
@@ -619,7 +619,7 @@ export default function BDSProgram() {
                 </svg>
               </div>
               <h3 className="text-sm font-bold text-gray-800 mb-3">Accreditation</h3>
-              <div className="text-xl font-bold text-[#7cb983] mb-2">DCI & NAAC</div>
+              <div className="text-xl font-bold text-[#7cb983] mb-2">NDC & NAAC</div>
               <p className="text-sm text-gray-600">Nationally Recognized Standards</p>
             </div>
           </div>
@@ -644,7 +644,7 @@ export default function BDSProgram() {
             BDS Eligibility & Admission Process — 2026-27
           </h2>
           <p className="text-gray-600 text-center mb-12 max-w-3xl mx-auto">
-            Your pathway to becoming a dental professional at a DCI-approved, NAAC A Grade BDS college starts here. <a href="/admission/" className="text-[#7cb983] underline hover:text-[#6ba872]">View full admission details</a>.
+            Your pathway to becoming a dental professional at a NDC-approved, NAAC A Grade BDS college starts here. <a href="/admission/" className="text-[#7cb983] underline hover:text-[#6ba872]">View full admission details</a>.
           </p>
 
           <div className="grid md:grid-cols-2 gap-8">
@@ -667,7 +667,7 @@ export default function BDSProgram() {
                   'Minimum 50% aggregate marks in PCB (40% for reserved categories as per government norms)',
                   'Must have appeared and qualified in NEET-UG examination',
                   'Age limit: 17 years as on 31st December of the admission year',
-                  'Indian nationals and NRI/Foreign nationals as per DCI guidelines',
+                  'Indian nationals and NRI/Foreign nationals as per NDC guidelines',
                 ].map((item, idx) => (
                   <div key={idx} className="flex items-start gap-3">
                     <svg className="w-6 h-6 text-[#7cb983] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
@@ -881,10 +881,10 @@ export default function BDSProgram() {
           </div>
 
           <h2 id="curriculum" className="text-3xl md:text-4xl font-bold text-white text-center mb-4">
-            Comprehensive BDS Learning Framework — DCI Approved Learning Pathway
+            Comprehensive BDS Learning Framework — NDC Approved Learning Pathway
           </h2>
           <p className="text-gray-200 text-center mb-12 max-w-3xl mx-auto">
-            A well-structured 5-year program covering all aspects of dental science and clinical practice as per <a href="/academics/" className="text-[#7cb983] underline hover:text-[#6ba872]">DCI learning framework guidelines</a>
+            A well-structured 5-year program covering all aspects of dental science and clinical practice as per <a href="/academics/" className="text-[#7cb983] underline hover:text-[#6ba872]">NDC learning framework guidelines</a>
           </p>
 
           {/* Year Tabs */}
@@ -1469,10 +1469,10 @@ export default function BDSProgram() {
           </div>
 
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Begin Your Journey at a DCI-Approved, NAAC A Grade BDS College
+            Begin Your Journey at a NDC-Approved, NAAC A Grade BDS College
           </h2>
           <p className="text-lg text-gray-200 mb-10 leading-relaxed max-w-3xl mx-auto">
-            Join JKKN Dental College & Hospital — DCI Approved, NAAC Accredited, 200+ dental chairs, 500+ daily patients, 93.9% placed or in higher studies (2024-25 batch), and a 74+ year trust legacy. Your career in dentistry starts here.
+            Join JKKN Dental College & Hospital — NDC Approved, NAAC Accredited, 200+ dental chairs, 500+ daily patients, 93.9% placed or in higher studies (2024-25 batch), and a 74+ year trust legacy. Your career in dentistry starts here.
           </p>
 
           <div className="flex flex-wrap justify-center gap-6">

@@ -31,7 +31,7 @@ const faqSchema = {
       "name": "What lab facilities are available at JKKN Dental College?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "JKKN Dental College has world-class dental laboratories equipped with cutting-edge technologies. Available labs include: Anatomy, Histology, Radiology and Imaging Labs; Preclinical Simulation and Digital Dentistry Labs (with CAD/CAM technology and lifelike mannequins); Prosthodontics, Restorative, Orthodontics and Endodontics Labs; Periodontics and Oral Surgery Labs; and interdisciplinary collaboration spaces. All labs are DCI approved and designed to provide hands-on clinical training from the first year of the BDS program."
+        "text": "JKKN Dental College has world-class dental laboratories equipped with cutting-edge technologies. Available labs include: Anatomy, Histology, Radiology and Imaging Labs; Preclinical Simulation and Digital Dentistry Labs (with CAD/CAM technology and lifelike mannequins); Prosthodontics, Restorative, Orthodontics and Endodontics Labs; Periodontics and Oral Surgery Labs; and interdisciplinary collaboration spaces. All labs are NDC approved and designed to provide hands-on clinical training from the first year of the BDS program."
       }
     },
     {
@@ -60,10 +60,10 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      "name": "Are the labs at JKKN Dental College DCI approved?",
+      "name": "Are the labs at JKKN Dental College NDC approved?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, JKKN Dental College & Hospital is approved by the Dental Council of India (DCI). All laboratory and clinical facilities meet DCI standards for dental education. The college is affiliated with TN Dr. MGR Medical University and maintains compliance with DCI inspection requirements for both the BDS (100 seats) and MDS programs across 5 specializations."
+        "text": "Yes, JKKN Dental College & Hospital is approved by the National Dental Commission (NDC), formerly the Dental Council of India. All laboratory and clinical facilities meet NDC standards for dental education. The college is affiliated with TN Dr. MGR Medical University and maintains compliance with NDC inspection requirements for both the BDS (100 seats) and MDS programs across 5 specializations."
       }
     }
   ]

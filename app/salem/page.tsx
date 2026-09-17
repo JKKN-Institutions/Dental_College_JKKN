@@ -7,15 +7,15 @@ export default function SalemPage() {
   const faqs = [
     {
       q: 'Are there any dental colleges in Salem?',
-      a: 'Yes. There are dental institutions in and near Salem, Tamil Nadu. Within Salem city, Vinayaka Mission\'s Sankarachariyar Dental College is a private institution. Additionally, JKKN Dental College & Hospital is located approximately 60 km from Salem at Komarapalayam, Namakkal, on NH-544 (Salem-Coimbatore Highway), and is DCI-approved and NAAC accredited.',
+      a: 'Yes. There are dental institutions in and near Salem, Tamil Nadu. Within Salem city, Vinayaka Mission\'s Sankarachariyar Dental College is a private institution. Additionally, JKKN Dental College & Hospital is located approximately 60 km from Salem at Komarapalayam, Namakkal, on NH-544 (Salem-Coimbatore Highway), and is NDC-approved and NAAC accredited.',
     },
     {
       q: 'How many dental colleges are in Salem district?',
-      a: 'There are dental institutions in and near Salem district. Vinayaka Mission\'s Sankarachariyar Dental College is located within Salem city. Government Medical College Salem also has dental programs. JKKN Dental College & Hospital, located approximately 60 km away at Komarapalayam, Namakkal via NH-544, is the nearest DCI-approved and NAAC accredited private dental college near Salem.',
+      a: 'There are dental institutions in and near Salem district. Vinayaka Mission\'s Sankarachariyar Dental College is located within Salem city. Government Medical College Salem also has dental programs. JKKN Dental College & Hospital, located approximately 60 km away at Komarapalayam, Namakkal via NH-544, is the nearest NDC-approved and NAAC accredited private dental college near Salem.',
     },
     {
       q: 'Which are the best dental colleges in Salem?',
-      a: 'JKKN Dental College & Hospital is among the top dental colleges in Salem region, located approximately 60 km from Salem on NH-544. Approved by DCI, NAAC accredited and affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai, it offers BDS (100 seats) and MDS with strong placement support.',
+      a: 'JKKN Dental College & Hospital is among the top dental colleges in Salem region, located approximately 60 km from Salem on NH-544. Approved by NDC, NAAC accredited and affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai, it offers BDS (100 seats) and MDS with strong placement support.',
     },
     {
       q: 'How far is JKKN Dental from Salem?',
@@ -52,7 +52,7 @@ export default function SalemPage() {
   ];
 
   const whyFeatures = [
-    { icon: <Hospital className="w-6 h-6 text-[#006837]" />, title: 'Own Hospital', desc: 'DCI-approved dental college with attached hospital for hands-on clinical training' },
+    { icon: <Hospital className="w-6 h-6 text-[#006837]" />, title: 'Own Hospital', desc: 'NDC-approved dental college with attached hospital for hands-on clinical training' },
     { icon: <Stethoscope className="w-6 h-6 text-[#006837]" />, title: 'Real Patient Exposure', desc: 'Own dental hospital on campus — learners get real patient exposure from Year 1' },
     { icon: <Microscope className="w-6 h-6 text-[#006837]" />, title: 'Advanced Learning Labs', desc: 'Advanced dental learning labs, simulation equipment, and digital dentistry training' },
     { icon: <TrendingUp className="w-6 h-6 text-[#006837]" />, title: 'NEET MDS Results', desc: 'Strong track record in NEET MDS results and higher education' },
@@ -119,7 +119,7 @@ export default function SalemPage() {
   const keyFacts = [
     { label: 'Distance from Salem', value: '~60 km via NH-544' },
     { label: 'Travel Time', value: '~1 hour by road' },
-    { label: 'Approval', value: 'DCI Approved' },
+    { label: 'Approval', value: 'NDC Approved' },
     { label: 'Accreditation', value: 'NAAC Accredited' },
     { label: 'Affiliation', value: 'TN Dr. MGR Medical University' },
     { label: 'BDS Seats', value: '100 seats (NEET required)' },
@@ -164,13 +164,13 @@ export default function SalemPage() {
         style={{ background: 'linear-gradient(135deg, #006837 0%, #002309 100%)', minHeight: '88vh' }}
       >
         <div className="mb-6 inline-flex items-center gap-2 bg-white/10 backdrop-blur border border-white/20 text-white text-sm font-medium px-5 py-2 rounded-full">
-          <Shield className="w-4 h-4" /> DCI, NAAC Approved • Admissions Open
+          <Shield className="w-4 h-4" /> NDC, NAAC Approved • Admissions Open
         </div>
         <h1 className="text-white font-extrabold leading-tight mb-3 max-w-4xl" style={{ fontSize: 'clamp(2rem, 5vw + 0.5rem, 3.5rem)' }}>
           Dental Colleges in <span className="text-[#7cb983]">Salem</span>
         </h1>
         <p className="text-white/70 max-w-3xl mb-4 leading-relaxed" style={{ fontSize: 'clamp(0.875rem, 1vw + 0.3rem, 1rem)' }}>
-          Nearest DCI-Approved Dental College — JKKN Dental College &amp; Hospital, Komarapalayam
+          Nearest NDC-Approved Dental College — JKKN Dental College &amp; Hospital, Komarapalayam
         </p>
         <p className="text-white/80 max-w-2xl mb-10 leading-relaxed" style={{ fontSize: 'clamp(0.9rem, 1vw + 0.5rem, 1.1rem)' }}>
           Approximately 60 km from Salem on NH-544. JKKN Dental College &amp; Hospital offers top-tier dental programmes with
@@ -201,7 +201,7 @@ export default function SalemPage() {
       <div className="bg-white border-b border-gray-100 py-4 px-4">
         <div className="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8">
           <div className="flex items-center gap-3">
-            <span className="flex items-center gap-1.5 bg-[#FBFBEE] border border-[#7cb983] text-[#006837] text-sm font-semibold px-3 py-1.5 rounded-full">✓ DCI</span>
+            <span className="flex items-center gap-1.5 bg-[#FBFBEE] border border-[#7cb983] text-[#006837] text-sm font-semibold px-3 py-1.5 rounded-full">✓ NDC</span>
             <span className="flex items-center gap-1.5 bg-[#FBFBEE] border border-[#7cb983] text-[#006837] text-sm font-semibold px-3 py-1.5 rounded-full">✓ NAAC</span>
           </div>
           <span className="hidden sm:block text-gray-300">|</span>
@@ -216,10 +216,10 @@ export default function SalemPage() {
             Are There Any Dental Colleges in Salem?
           </h2>
           <p className="snippet-answer text-gray-700 leading-relaxed mb-6 bg-white p-5 rounded-xl border border-[#7cb983]/30" style={{ fontSize: 'clamp(0.9rem, 1vw + 0.4rem, 1.05rem)' }}>
-            JKKN Dental College &amp; Hospital, located on NH-544 (Salem-Coimbatore Highway), Komarapalayam, is the top-rated dental college accessible from Salem. Approved by the Dental Council of India and affiliated to TN Dr. MGR Medical University, JKKN offers BDS (100 seats) and MDS with 93.9% placed or in higher studies (2024-25 batch), approximately 60 km from Salem.
+            JKKN Dental College &amp; Hospital, located on NH-544 (Salem-Coimbatore Highway), Komarapalayam, is the top-rated dental college accessible from Salem. Approved by the National Dental Commission (formerly Dental Council of India) and affiliated to TN Dr. MGR Medical University, JKKN offers BDS (100 seats) and MDS with 93.9% placed or in higher studies (2024-25 batch), approximately 60 km from Salem.
           </p>
           <p id="voice-answer" className="voice-answer text-gray-700 leading-relaxed" style={{ borderLeft: '3px solid #7cb983', paddingLeft: '1rem', fontSize: 'clamp(0.875rem, 1vw + 0.3rem, 1rem)' }}>
-            JKKN Dental College &amp; Hospital, located sixty kilometres from Salem on NH-544 (Salem-Coimbatore Highway), is DCI-approved with two hundred plus dental chairs, five hundred plus daily patients, and a ninety-two percent placement record.
+            JKKN Dental College &amp; Hospital, located sixty kilometres from Salem on NH-544 (Salem-Coimbatore Highway), is NDC-approved with two hundred plus dental chairs, five hundred plus daily patients, and a ninety-two percent placement record.
           </p>
 
           {/* How Many Dental Colleges in Salem Info Box */}
@@ -269,7 +269,7 @@ export default function SalemPage() {
           {/* E-E-A-T paragraph */}
           <div className="bg-white rounded-xl p-5 max-w-3xl mx-auto mb-8 text-left border border-gray-100">
             <p className="text-gray-600 text-sm leading-relaxed">
-              JKKN Dental College &amp; Hospital is a Dental Council of India (DCI) approved institution located at Natarajapuram, NH-544 (Salem-Coimbatore Highway), Komarapalayam, Namakkal District, Tamil Nadu 638183. Established in 1987 as part of JKKN Institutions (a trust legacy since 1952), JKKN is affiliated to TN Dr. MGR Medical University, Chennai. The college operates a 200-chair dental hospital receiving 500+ patients daily, providing learners with one of the highest clinical contact hours in the region. JKKN offers BDS (100 seats) and MDS in 5 specializations. The institution reports 93.9% placed or in higher studies (2024-25 batch). Salem learners can reach JKKN Dental College &amp; Hospital in approximately 60 km via NH-544. Learn more about our <Link href="/accreditation/" className="text-[#006837] hover:underline">NAAC accreditation</Link>.
+              JKKN Dental College &amp; Hospital is a National Dental Commission (NDC) approved institution located at Natarajapuram, NH-544 (Salem-Coimbatore Highway), Komarapalayam, Namakkal District, Tamil Nadu 638183. Established in 1987 as part of JKKN Institutions (a trust legacy since 1952), JKKN is affiliated to TN Dr. MGR Medical University, Chennai. The college operates a 200-chair dental hospital receiving 500+ patients daily, providing learners with one of the highest clinical contact hours in the region. JKKN offers BDS (100 seats) and MDS in 5 specializations. The institution reports 93.9% placed or in higher studies (2024-25 batch). Salem learners can reach JKKN Dental College &amp; Hospital in approximately 60 km via NH-544. Learn more about our <Link href="/accreditation/" className="text-[#006837] hover:underline">NAAC accreditation</Link>.
             </p>
           </div>
           <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-12" />

@@ -5,7 +5,7 @@ import { jkknSameAsUrls } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: { absolute: 'Namakkal Dental College | JKKN Dental College & Hospital' },
-  description: 'Namakkal Dental College — JKKN Dental College & Hospital, Komarapalayam, NH-544. DCI approved, NAAC accredited. BDS 100 seats, MDS. Apply 2026.',
+  description: 'Namakkal Dental College — JKKN Dental College & Hospital, Komarapalayam, NH-544. NDC approved, NAAC accredited. BDS 100 seats, MDS. Apply 2026.',
   keywords: 'namakkal dental college, dental college in namakkal district, namakkal bds college, dental college namakkal, mds college namakkal, jkkn dental namakkal, dental college komarapalayam, namakkal district dental college',
   robots: {
     index: true,
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Namakkal Dental College | JKKN Dental College & Hospital',
-    description: 'Namakkal Dental College — JKKN Dental College & Hospital, Komarapalayam, NH-544. DCI approved, NAAC accredited. BDS 100 seats, MDS. Apply 2026.',
+    description: 'Namakkal Dental College — JKKN Dental College & Hospital, Komarapalayam, NH-544. NDC approved, NAAC accredited. BDS 100 seats, MDS. Apply 2026.',
     url: 'https://dental.jkkn.ac.in/namakkal/',
     siteName: 'JKKN Dental College & Hospital',
     images: [
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Namakkal Dental College | JKKN Dental College & Hospital',
-    description: 'Namakkal Dental College — JKKN Dental College & Hospital, Komarapalayam, NH-544. DCI approved, NAAC accredited. BDS 100 seats, MDS. Apply 2026.',
+    description: 'Namakkal Dental College — JKKN Dental College & Hospital, Komarapalayam, NH-544. NDC approved, NAAC accredited. BDS 100 seats, MDS. Apply 2026.',
     images: ['https://dental.jkkn.ac.in/images/BDS-hero-image.webp'],
     site: '@jaborejkkn',
   },
@@ -55,7 +55,7 @@ const faqSchema = {
       "name": "Is there a dental college in Namakkal?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. JKKN Dental College & Hospital is the leading dental institution in Namakkal district, located at Komarapalayam on NH-544 (Salem–Coimbatore Highway). Approved by the Dental Council of India (DCI) and affiliated to Tamil Nadu Dr. M.G.R. Medical University, Chennai, it offers BDS (100 seats) and MDS (5 specializations) with a 200-chair teaching hospital treating 500+ patients daily."
+        "text": "Yes. JKKN Dental College & Hospital is the leading dental institution in Namakkal district, located at Komarapalayam on NH-544 (Salem–Coimbatore Highway). Approved by the National Dental Commission (NDC), formerly the Dental Council of India and affiliated to Tamil Nadu Dr. M.G.R. Medical University, Chennai, it offers BDS (100 seats) and MDS (5 specializations) with a 200-chair teaching hospital treating 500+ patients daily."
       }
     },
     {
@@ -63,7 +63,7 @@ const faqSchema = {
       "name": "Which is the best dental college in Namakkal district?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "JKKN Dental College & Hospital is the leading dental institution in Namakkal district. Located at Komarapalayam, Namakkal district on NH-544, it is DCI approved, NAAC accredited, and affiliated to Tamil Nadu Dr. M.G.R. Medical University, Chennai. Established in 1987 as part of JKKN Institutions, it is the only institution in the district with a 200-chair teaching hospital."
+        "text": "JKKN Dental College & Hospital is the leading dental institution in Namakkal district. Located at Komarapalayam, Namakkal district on NH-544, it is NDC approved, NAAC accredited, and affiliated to Tamil Nadu Dr. M.G.R. Medical University, Chennai. Established in 1987 as part of JKKN Institutions, it is the only institution in the district with a 200-chair teaching hospital."
       }
     },
     {
@@ -141,7 +141,7 @@ const orgSchema = {
   "alternateName": ["JKKN Dental", "J.K.K. Nattraja Dental College and Hospital"],
   "url": "https://dental.jkkn.ac.in/",
   "logo": "https://dental.jkkn.ac.in/images/jkkn-dental-logo.webp",
-  "description": "DCI approved, NAAC accredited dental college in Namakkal district, affiliated to TN Dr. MGR Medical University. Offers BDS (100 seats) and MDS (5 specializations) with 200-chair teaching hospital treating 500+ patients daily.",
+  "description": "NDC approved, NAAC accredited dental college in Namakkal district, affiliated to TN Dr. MGR Medical University. Offers BDS (100 seats) and MDS (5 specializations) with 200-chair teaching hospital treating 500+ patients daily.",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Natarajapuram, NH-544 (Salem–Coimbatore Highway)",
@@ -155,7 +155,7 @@ const orgSchema = {
   "foundingDate": "1987",
   "parentOrganization": { "@type": "Organization", "name": "JKKN Institutions", "url": "https://jkkn.ac.in/" },
   "hasCredential": [
-    { "@type": "EducationalOccupationalCredential", "credentialCategory": "DCI Approved" },
+    { "@type": "EducationalOccupationalCredential", "credentialCategory": "NDC Approved" },
     { "@type": "EducationalOccupationalCredential", "credentialCategory": "NAAC Accredited" }
   ],
   "memberOf": { "@type": "Organization", "name": "The Tamil Nadu Dr. M.G.R. Medical University, Chennai" },
@@ -170,7 +170,7 @@ const courseSchema = [
     "@id": "https://dental.jkkn.ac.in/academics/bds/#course",
     "url": "https://dental.jkkn.ac.in/academics/bds/",
     "name": "BDS (Bachelor of Dental Surgery)",
-    "description": "5-year undergraduate dental programme (4 years + 1 year internship). DCI approved, 100 seats. NEET-UG qualified admission via Tamil Nadu DME counselling. Located in Namakkal district, Komarapalayam.",
+    "description": "5-year undergraduate dental programme (4 years + 1 year internship). NDC approved, 100 seats. NEET-UG qualified admission via Tamil Nadu DME counselling. Located in Namakkal district, Komarapalayam.",
     "provider": { "@type": "EducationalOrganization", "name": "JKKN Dental College & Hospital", "url": "https://dental.jkkn.ac.in/" },
     "educationalLevel": "Undergraduate",
     "timeRequired": "P5Y",

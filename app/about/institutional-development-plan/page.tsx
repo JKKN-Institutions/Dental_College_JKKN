@@ -176,7 +176,7 @@ export default function InstitutionalDevelopmentPlan() {
               </li>
               <li className="flex gap-3 text-gray-700">
                 <span className="mt-1.5 shrink-0 w-2 h-2 rounded-full bg-[#006837]" />
-                Dental Council of India (DCI)
+                National Dental Commission (NDC), formerly the Dental Council of India
               </li>
               <li className="flex gap-3 text-gray-700">
                 <span className="mt-1.5 shrink-0 w-2 h-2 rounded-full bg-[#006837]" />

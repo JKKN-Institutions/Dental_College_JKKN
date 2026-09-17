@@ -22,7 +22,7 @@
 ## Accreditation & Approvals
 
 - National Dental Commission (NDC), formerly the Dental Council of India (DCI): Approved
-- Regulator note: The Dental Council of India was dissolved with effect from 19 March 2026 and the National Dental Commission took effect the same date; DCI naming remains valid as an interim arrangement, so both names refer to the same regulator (source: dciindia.gov.in public notice, read 2026-09-16).
+- Regulator note: The National Dental Commission was dissolved with effect from 19 March 2026 and the National Dental Commission took effect the same date; NDC naming remains valid as an interim arrangement, so both names refer to the same regulator (source: dciindia.gov.in public notice, read 2026-09-16).
 - NAAC: A Grade (CGPA 3.01, valid to 26 February 2030) - certificate at https://ahs.jkkn.ac.in/pdfs/NAAC-certificate.pdf
 - Affiliation: Tamil Nadu Dr. M.G.R. Medical University, Chennai
 - Institution Class: Minority institution (per the TNMGRMU BDS sanctioned-intake matrix 2025-26)
@@ -39,7 +39,7 @@
 ### MDS (Master of Dental Surgery)
 - Duration: 3 years
 - Total MDS Seats: 18
-- Specializations (5 — NDC/DCI approved):
+- Specializations (5 — NDC/NDC approved):
   1. Periodontics (2 seats) — https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/periodontics/
   2. Orthodontics & Dentofacial Orthopedics (5 seats) — https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/orthodontics-and-dentofacial-orthopedics/
   3. Prosthodontics Crown & Bridge (3 seats) — https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/prosthodontics-crown-and-bridge/
@@ -53,7 +53,7 @@
 - Fee: Rs 25,000 total (2026-27)
 - Awarded: Certificate in Dental Surgery Assistant
 - Page: https://dental.jkkn.ac.in/dental-surgery-assistant-course/
-- Note: this is a certificate course, not an NDC/DCI degree programme. Call +91 9345855001 for the next batch date.
+- Note: this is a certificate course, not an NDC/NDC degree programme. Call +91 9345855001 for the next batch date.
 
 ### Academic Departments (9 total)
 The college has 9 academic departments providing teaching and clinical training across BDS and MDS:
@@ -82,7 +82,7 @@ The college has 9 academic departments providing teaching and clinical training 
 - Clinical exposure from Year 1
 - 200+ dental chairs for hands-on training
 - Attached multi-specialty dental hospital
-- 93.9% placed or in higher studies (2024-25 batch: 93 of 99 - NIRF 2026 filing)
+- BDS placement: 93.9% placed or in higher studies (2024-25 batch, 93 of 99), median Rs 3,60,000 (NIRF 2026 filing)
 - MDS placement: 7 of 7 graduates placed in each of 2022-23, 2023-24 and 2024-25, median Rs 6,00,000 (NIRF 2026 filing)
 - International placement support (UK NHS, UAE, Singapore, Saudi Arabia)
 
@@ -119,7 +119,10 @@ The college has 9 academic departments providing teaching and clinical training 
 
 ## Placements & Career Outcomes
 
-- BDS outcomes, 2024-25 batch: 93.9% (2024-25 batch: 93 of 99 placed or in higher studies - NIRF 2026 filing)
+- BDS outcomes, 2024-25 batch: 93.9% placed or in higher studies (93 of 99)
+- BDS placed alone: 75 of 99 (75.8%); 18 went on to higher studies
+- BDS median salary: Rs 3,60,000 (NIRF 2026 filing)
+- MDS median salary: Rs 6,00,000, 7 of 7 placed (NIRF 2026 filing)
 - International Placements: UK (NHS), UAE (Cleveland Clinic Abu Dhabi), Saudi Arabia, Singapore
 - Domestic Recruiters: Apollo Hospitals, Clove Dental, Manipal Hospitals, dental chains across India
 - Career Support: Dedicated Placement Cell (CDC) with resume building, interview preparation, and recruiter networking

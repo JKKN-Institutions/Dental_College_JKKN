@@ -98,7 +98,7 @@ export default function MDSPeriodontics() {
 
   const speakableSchema = generateSpeakableWebPageSchema({
     title: 'MDS Periodontics | Gum Disease Specialist Course | JKKN Dental',
-    description: 'MDS in Periodontics at JKKN Dental College. 3-year postgraduate program in gum disease treatment, dental implants, and periodontal surgery. DCI approved, expert faculty, modern facilities.',
+    description: 'MDS in Periodontics at JKKN Dental College. 3-year postgraduate program in gum disease treatment, dental implants, and periodontal surgery. NDC approved, expert faculty, modern facilities.',
     url: 'https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/periodontics/',
     speakableCssSelectors: ['h1', '.hero-description', 'article p'],
   });
@@ -136,12 +136,12 @@ export default function MDSPeriodontics() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             {/* Left Content */}
             <div>
-              {/* DCI Badge */}
+              {/* NDC Badge */}
               <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 mb-6">
                 <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
-                <span className="text-white font-semibold text-sm">DCI Approved | NAAC Accredited</span>
+                <span className="text-white font-semibold text-sm">NDC Approved | NAAC Accredited</span>
               </div>
 
               {/* Heading */}
@@ -661,7 +661,7 @@ export default function MDSPeriodontics() {
                 <div className="flex gap-4">
                   <div className="bg-[#7cb983] text-white rounded-full w-10 h-10 flex items-center justify-center flex-shrink-0 font-bold">1</div>
                   <div className="flex-1">
-                    <p className="text-gray-700">BDS degree from a DCI-recognized dental college</p>
+                    <p className="text-gray-700">BDS degree from a NDC-recognized dental college</p>
                   </div>
                 </div>
 
@@ -675,7 +675,7 @@ export default function MDSPeriodontics() {
                 <div className="flex gap-4">
                   <div className="bg-[#7cb983] text-white rounded-full w-10 h-10 flex items-center justify-center flex-shrink-0 font-bold">3</div>
                   <div className="flex-1">
-                    <p className="text-gray-700">Valid registration with State Dental Council or DCI</p>
+                    <p className="text-gray-700">Valid registration with State Dental Council or NDC</p>
                   </div>
                 </div>
 
@@ -732,7 +732,7 @@ export default function MDSPeriodontics() {
                   <svg className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4z" clipRule="evenodd" />
                   </svg>
-                  <span className="text-sm text-gray-700">DCI/State Registration</span>
+                  <span className="text-sm text-gray-700">NDC/State Registration</span>
                 </div>
 
                 <div className="flex items-start gap-3 p-3 bg-blue-50 rounded-lg">
@@ -1203,12 +1203,12 @@ export default function MDSPeriodontics() {
 
           {/* Accreditation Cards */}
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
-            {/* DCI */}
+            {/* NDC */}
             <div className="bg-white rounded-2xl p-4 sm:p-8 border-2 border-gray-200 hover:border-[#006837] transition-all duration-300 text-center">
               <div className="bg-[#006837] rounded-2xl w-20 h-20 sm:w-24 sm:h-24 flex items-center justify-center mx-auto mb-4 sm:mb-6">
-                <span className="text-2xl sm:text-3xl font-bold text-white">DCI</span>
+                <span className="text-2xl sm:text-3xl font-bold text-white">NDC</span>
               </div>
-              <h3 className="text-base sm:text-lg font-bold text-gray-900">Dental Council of India</h3>
+              <h3 className="text-base sm:text-lg font-bold text-gray-900">National Dental Commission (formerly Dental Council of India)</h3>
             </div>
 
             {/* NAAC */}

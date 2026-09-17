@@ -46,7 +46,7 @@ import { jkknSameAsUrls } from '@/lib/metadata';
 export const metadata: Metadata = {
   title: 'MDS Admission 2026-27 | JKKN Dental College Komarapalayam',
   description:
-    'Apply for MDS admission at JKKN Dental College — 18 DCI-approved seats across 5 specializations. NEET-MDS based, scholarships and hostel support available.',
+    'Apply for MDS admission at JKKN Dental College — 18 NDC-approved seats across 5 specializations. NEET-MDS based, scholarships and hostel support available.',
   keywords:
     'MDS admission 2026, MDS admission Tamil Nadu, JKKN MDS admission, NEET MDS counselling, MDS orthodontics, MDS prosthodontics, MDS periodontics, MDS specialization Namakkal',
   openGraph: {
@@ -87,7 +87,7 @@ const mdsCourseSchema = {
   '@id': 'https://dental.jkkn.ac.in/admissions/mds/#course',
   name: 'Master of Dental Surgery (MDS) — Admission 2026-27',
   description:
-    '3-year DCI-approved MDS postgraduate program at JKKN Dental College & Hospital, Komarapalayam. 18 seats across 5 specializations — Periodontics, Orthodontics, Prosthodontics, Conservative Dentistry, and Oral Medicine. NEET-MDS based admission.',
+    '3-year NDC-approved MDS postgraduate program at JKKN Dental College & Hospital, Komarapalayam. 18 seats across 5 specializations — Periodontics, Orthodontics, Prosthodontics, Conservative Dentistry, and Oral Medicine. NEET-MDS based admission.',
   provider: {
     '@type': 'CollegeOrUniversity',
     name: 'JKKN Dental College & Hospital',
@@ -108,7 +108,7 @@ const mdsCourseSchema = {
   timeRequired: 'P3Y',
   occupationalCategory: 'Dental Specialist',
   coursePrerequisites:
-    'BDS degree from a DCI-recognised institution with completed compulsory rotating internship; valid NEET-MDS 2026 qualifying score; registration with State Dental Council.',
+    'BDS degree from a NDC-recognised institution with completed compulsory rotating internship; valid NEET-MDS 2026 qualifying score; registration with State Dental Council.',
   hasCourseInstance: [
     { '@type': 'CourseInstance', name: 'MDS Periodontics', courseMode: 'Full-time', courseWorkload: 'PT3Y' },
     { '@type': 'CourseInstance', name: 'MDS Orthodontics & Dentofacial Orthopedics', courseMode: 'Full-time', courseWorkload: 'PT3Y' },
@@ -146,7 +146,7 @@ const mdsHowToSchema = {
       '@type': 'HowToStep',
       position: 1,
       name: 'Qualify NEET-MDS 2026',
-      text: 'Appear for NEET-MDS 2026 after completing BDS and the compulsory rotating internship. Secure the qualifying percentile prescribed by NBE/DCI.',
+      text: 'Appear for NEET-MDS 2026 after completing BDS and the compulsory rotating internship. Secure the qualifying percentile prescribed by NBE/NDC.',
     },
     {
       '@type': 'HowToStep',
@@ -188,7 +188,7 @@ const heroStats = [
 ];
 
 const trustBadges = [
-  { label: 'DCI Approved', sublabel: 'Dental Council of India', icon: Shield },
+  { label: 'NDC Approved', sublabel: 'National Dental Commission (formerly Dental Council of India)', icon: Shield },
   { label: 'NAAC A Grade', sublabel: 'Accredited Institution', icon: Award },
   { label: 'TN Dr. MGR University', sublabel: 'Affiliated', icon: GraduationCap },
   { label: 'Govt. of Tamil Nadu', sublabel: 'Approved', icon: Building2 },
@@ -223,7 +223,7 @@ const specializations = collegeFacts.mdsSpecialisationsList.map((spec) => ({
 const eligibility = [
   {
     title: 'BDS Degree',
-    text: 'BDS from a DCI-recognised dental college with all year marksheets',
+    text: 'BDS from a NDC-recognised dental college with all year marksheets',
     icon: GraduationCap,
   },
   {
@@ -243,7 +243,7 @@ const eligibility = [
   },
   {
     title: 'Nationality',
-    text: 'Indian nationals, NRI and Foreign nationals eligible per DCI norms',
+    text: 'Indian nationals, NRI and Foreign nationals eligible per NDC norms',
     icon: Globe,
   },
   {
@@ -258,7 +258,7 @@ const admissionSteps = [
     step: 1,
     title: 'Qualify NEET-MDS 2026',
     description:
-      'Appear for NEET-MDS 2026 after BDS and internship; secure qualifying percentile prescribed by NBE/DCI.',
+      'Appear for NEET-MDS 2026 after BDS and internship; secure qualifying percentile prescribed by NBE/NDC.',
     icon: BookOpen,
   },
   {
@@ -326,7 +326,7 @@ const feeBreakdown = [
   },
   {
     quota: 'NRI / Foreign National',
-    tuition: 'As per DCI norms',
+    tuition: 'As per NDC norms',
     note: 'Contact admissions for the current NRI MDS fee structure.',
   },
 ];
@@ -388,7 +388,7 @@ const whyJKKN = [
   { text: `${collegeFacts.collegeAge}+ years of postgraduate dental training`, icon: Building2 },
   { text: `${collegeFacts.mdsSeatCount} MDS seats across ${collegeFacts.mdsSpecialisations} specializations`, icon: Stethoscope },
   { text: `${collegeFacts.dailyPatients}+ daily patients — superlative clinical exposure`, icon: HeartPulse },
-  { text: 'DCI approved, NAAC A grade accredited', icon: Award },
+  { text: 'NDC approved, NAAC A grade accredited', icon: Award },
   { text: 'Advanced equipment — CBCT, lasers, CAD/CAM, microscopes', icon: Cpu },
   { text: 'Active dissertation and research culture', icon: FlaskConical },
   { text: 'Expert senior learners with national & international training', icon: Users },
@@ -398,7 +398,7 @@ const whyJKKN = [
 const mdsFaqs = [
   {
     q: 'What is the eligibility for MDS admission at JKKN?',
-    a: 'BDS degree from a DCI-recognised college, 1-year compulsory rotating internship completed, valid NEET-MDS 2026 qualifying score, and registration with State Dental Council.',
+    a: 'BDS degree from a NDC-recognised college, 1-year compulsory rotating internship completed, valid NEET-MDS 2026 qualifying score, and registration with State Dental Council.',
   },
   {
     q: 'How many MDS seats and specializations are available?',
@@ -406,7 +406,7 @@ const mdsFaqs = [
   },
   {
     q: 'What is the MDS course fee at JKKN?',
-    a: 'Management Quota fee is ₹8,50,000 per year, the same across all five DCI-approved specialisations. Government Quota fee is as per Tamil Nadu state norms. Contact admissions for specialization-wise figures.',
+    a: 'Management Quota fee is ₹8,50,000 per year, the same across all five NDC-approved specialisations. Government Quota fee is as per Tamil Nadu state norms. Contact admissions for specialization-wise figures.',
   },
   {
     q: 'What is the MDS admission process?',
@@ -418,7 +418,7 @@ const mdsFaqs = [
   },
   {
     q: 'Which MDS specializations does JKKN offer?',
-    a: 'Periodontics, Orthodontics & Dentofacial Orthopedics, Prosthodontics Crown & Bridge, Conservative Dentistry & Endodontics, and Oral Medicine & Radiology — all DCI approved.',
+    a: 'Periodontics, Orthodontics & Dentofacial Orthopedics, Prosthodontics Crown & Bridge, Conservative Dentistry & Endodontics, and Oral Medicine & Radiology — all NDC approved.',
   },
   {
     q: 'What documents are required?',
@@ -452,7 +452,7 @@ export default function MDSAdmissionPage() {
   const speakableSchema = generateSpeakableWebPageSchema({
     title: 'MDS Admission 2026-27 | JKKN Dental College',
     description:
-      'Apply for MDS admission at JKKN Dental College, Komarapalayam. 18 DCI-approved seats across 5 specializations. NEET-MDS based admission.',
+      'Apply for MDS admission at JKKN Dental College, Komarapalayam. 18 NDC-approved seats across 5 specializations. NEET-MDS based admission.',
     url: 'https://dental.jkkn.ac.in/admissions/mds/',
     speakableCssSelectors: ['h1', '.hero-description', 'article p'],
   });
@@ -511,7 +511,7 @@ export default function MDSAdmissionPage() {
 
           <p className="hero-description text-lg md:text-xl text-gray-200 max-w-3xl mx-auto mb-8">
             Postgraduate dental specialisation at JKKN Dental College & Hospital,
-            Komarapalayam — {collegeFacts.mdsSeatCount} DCI-approved seats across {collegeFacts.mdsSpecialisations} specializations, with
+            Komarapalayam — {collegeFacts.mdsSeatCount} NDC-approved seats across {collegeFacts.mdsSpecialisations} specializations, with
             advanced equipment, dissertation support, and a 200+ dental chair
             teaching hospital.
           </p>
@@ -565,7 +565,7 @@ export default function MDSAdmissionPage() {
             <p className="text-gray-600 max-w-3xl mx-auto">
               The Master of Dental Surgery (MDS) at JKKN is a 3-year postgraduate
               programme designed to produce specialist dental surgeons with deep
-              clinical, research, and academic expertise across five DCI-approved
+              clinical, research, and academic expertise across five NDC-approved
               specializations.
             </p>
           </div>
@@ -595,7 +595,7 @@ export default function MDSAdmissionPage() {
               MDS Specializations at JKKN
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Choose from 5 DCI-approved postgraduate specializations — each with
+              Choose from 5 NDC-approved postgraduate specializations — each with
               expert senior learners, dedicated departments and research opportunities.
             </p>
           </div>
@@ -733,7 +733,7 @@ export default function MDSAdmissionPage() {
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">MDS Admission Important Dates</h2>
             <p className="text-gray-300 max-w-2xl mx-auto">
-              Key timelines for the MDS 2026-27 admission cycle (subject to NBE/DCI/MCC notifications).
+              Key timelines for the MDS 2026-27 admission cycle (subject to NBE/NDC/MCC notifications).
             </p>
           </div>
 
@@ -828,7 +828,7 @@ export default function MDSAdmissionPage() {
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Ready to Specialise at JKKN?</h2>
           <p className="text-lg text-gray-200 mb-8 max-w-2xl mx-auto">
             Join {collegeFacts.mdsSeatCount} MDS postgraduates admitted every year at JKKN Dental College
-            & Hospital across {collegeFacts.mdsSpecialisations} DCI-approved specializations.
+            & Hospital across {collegeFacts.mdsSpecialisations} NDC-approved specializations.
           </p>
 
           <div className="flex justify-center mb-10">

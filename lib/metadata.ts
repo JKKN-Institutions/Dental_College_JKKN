@@ -9,7 +9,7 @@ export const organizationInfo = {
   alternateName: "J.K.K. Nattraja Dental College & Hospital",
   url: "https://dental.jkkn.ac.in",
   logo: "https://dental.jkkn.ac.in/images/dental-logo.png",
-  description: "AI-integrated dental campus - DCI approved & NAAC A grade accredited dental college",
+  description: "AI-integrated dental campus - NDC approved & NAAC A grade accredited dental college",
   address: {
     streetAddress: "Natarajapuram, NH-544 (Salem To Coimbatore National Highway)",
     addressLocality: "Komarapalayam",
@@ -552,7 +552,7 @@ export function generateEducationalOrganizationSchema() {
     "url": organizationInfo.url,
     "logo": organizationInfo.logo,
     "image": organizationInfo.logo,
-    "description": "JKKN Dental College & Hospital is a DCI-approved, NAAC-accredited dental institution in Tamil Nadu offering BDS and MDS in 5 specializations. Affiliated to The Tamil Nadu Dr. M.G.R. Medical University with 200+ dental chairs, 100+ hospital beds, and 500+ daily patients.",
+    "description": "JKKN Dental College & Hospital is a NDC-approved, NAAC-accredited dental institution in Tamil Nadu offering BDS and MDS in 5 specializations. Affiliated to The Tamil Nadu Dr. M.G.R. Medical University with 200+ dental chairs, 100+ hospital beds, and 500+ daily patients.",
     "foundingDate": organizationInfo.foundingDate,
     "founder": {
       "@type": "Person",
@@ -596,8 +596,8 @@ export function generateEducationalOrganizationSchema() {
         "credentialCategory": "NDC Approval (formerly DCI)",
         "recognizedBy": {
           "@type": "Organization",
-          "name": "National Dental Commission",
-          "alternateName": "Dental Council of India (DCI)",
+          "name": "National Dental Commission (formerly Dental Council of India)",
+          "alternateName": "National Dental Commission (NDC)",
           "url": "https://dciindia.gov.in/"
         }
       },
@@ -646,7 +646,7 @@ export function generateEducationalOrganizationSchema() {
       "Clinical Dentistry",
       "NEET-UG (BDS Admission)",
       "NEET-MDS (Postgraduate Dental Admission)",
-      "National Dental Commission (NDC) Regulations, formerly Dental Council of India (DCI)",
+      "National Dental Commission (NDC) Regulations, formerly National Dental Commission (NDC)",
       "AI-Integrated Dental Education",
       "Digital Dentistry",
       "CAD/CAM Dentistry"
@@ -671,7 +671,7 @@ export function generateMDSCourseSchema() {
     "@id": "https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/#course",
     "name": "Master of Dental Surgery (MDS) — JKKN Dental College, Tamil Nadu",
     "alternateName": "MDS at JKKN Dental College",
-    "description": `3-year postgraduate Master of Dental Surgery (MDS) program at JKKN Dental College & Hospital, Tamil Nadu. Offers ${collegeFacts.mdsSeatCount} seats across ${collegeFacts.mdsSpecialisations} DCI-approved specializations with ${collegeFacts.dentalChairs}+ dental chairs, ${collegeFacts.dailyPatients}+ daily patients, and expert Learning Facilitators. Affiliated to TN Dr. MGR Medical University, NAAC accredited.`,
+    "description": `3-year postgraduate Master of Dental Surgery (MDS) program at JKKN Dental College & Hospital, Tamil Nadu. Offers ${collegeFacts.mdsSeatCount} seats across ${collegeFacts.mdsSpecialisations} NDC-approved specializations with ${collegeFacts.dentalChairs}+ dental chairs, ${collegeFacts.dailyPatients}+ daily patients, and expert Learning Facilitators. Affiliated to TN Dr. MGR Medical University, NAAC accredited.`,
     "courseCode": "MDS-JKKN",
     "educationalLevel": "Postgraduate",
     "educationalCredentialAwarded": {
@@ -683,7 +683,7 @@ export function generateMDSCourseSchema() {
     "timeRequired": "P3Y",
     "numberOfCredits": 120,
     "occupationalCategory": "Dental Specialist",
-    "coursePrerequisites": "BDS degree from a DCI-recognized dental college, completed 1-year compulsory rotating internship, permanent State Dental Council registration, and valid NEET MDS score",
+    "coursePrerequisites": "BDS degree from a NDC-recognized dental college, completed 1-year compulsory rotating internship, permanent State Dental Council registration, and valid NEET MDS score",
     "teaches": "Specialized dental surgery skills in 5 branches: Conservative Dentistry & Endodontics, Prosthodontics, Periodontics, Oral Medicine & Radiology, and Orthodontics",
     "totalTime": "P3Y",
     "provider": {

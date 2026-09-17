@@ -64,15 +64,15 @@ The nearest town is Komarapalayam, about 3 km away.
 - **Total Seats:** 100
 - **Eligibility:** 10+2 with Physics, Chemistry, Biology (PCB), minimum 50% aggregate (40% for reserved categories), NEET-UG qualified
 - **Admission Mode:** TN State Quota & All India Quota through NEET-UG counselling
-- **Awarded Degree:** Bachelor of Dental Surgery, recognized by the National Dental Commission (NDC, formerly DCI) and TN Dr. MGR Medical University
+- **Awarded Degree:** Bachelor of Dental Surgery, recognized by the National Dental Commission (NDC, formerly the Dental Council of India) and TN Dr. MGR Medical University
 - **Career Pathways:** Dental practice, MDS specialization, government dental services, hospital dentistry, dental research, dental academia, international dental practice (UK, UAE, Singapore, Saudi Arabia subject to local equivalence)
 
 ### Master of Dental Surgery (MDS) — Postgraduate
 
 - **Duration:** 3 years
 - **Total Seats:** 18
-- **Number of Specializations (NDC/DCI Approved):** 5
-- **Eligibility:** BDS degree from an NDC/DCI-recognized college, completed compulsory rotating internship, permanent registration with State Dental Council, valid NEET-MDS score
+- **Number of Specializations (NDC/NDC Approved):** 5
+- **Eligibility:** BDS degree from an NDC/NDC-recognized college, completed compulsory rotating internship, permanent registration with State Dental Council, valid NEET-MDS score
 - **Admission Mode:** NEET-MDS counselling
 
 #### MDS Specialization Details
@@ -121,7 +121,7 @@ The college has 9 academic departments providing undergraduate teaching and clin
 8. Oral Pathology and Microbiology
 9. Public Health Dentistry
 
-> Note: Of these 9, only the first 5 currently offer NDC/DCI-approved MDS programs. The remaining 4 are BDS-level departments with clinical and didactic teaching.
+> Note: Of these 9, only the first 5 currently offer NDC/NDC-approved MDS programs. The remaining 4 are BDS-level departments with clinical and didactic teaching.
 
 ## Hospital & Clinical Infrastructure
 
@@ -173,7 +173,11 @@ The college has 9 academic departments providing undergraduate teaching and clin
 
 ## Placements & Career Outcomes
 
-- **BDS outcomes, 2024-25 batch:** 93.9% (2024-25 batch: 93 of 99 placed or in higher studies - NIRF 2026 filing)
+- **BDS outcomes, 2024-25 batch:** 93.9% placed or in higher studies (93 of 99)
+- **BDS placed alone:** 75 of 99 (75.8%); 18 went on to higher studies
+- **BDS median salary:** Rs 3,60,000 (NIRF 2026 filing)
+- **MDS outcomes:** 7 of 7 placed in each of 2022-23, 2023-24 and 2024-25, median salary Rs 6,00,000 (NIRF 2026 filing)
+- **Highest salary:** JKKN files no highest-salary figure with the Ministry, so none is published here
 - **Domestic Recruiters:** Apollo Hospitals, Clove Dental, Manipal Hospitals, dental chains across India
 - **International Placements:** UK (NHS), UAE (Cleveland Clinic Abu Dhabi), Saudi Arabia, Singapore
 - **Career Support:** Dedicated Career Development Cell (CDC) with resume building, mock interviews, recruiter networking
@@ -252,8 +256,8 @@ JKKN Dental College serves dental education aspirants and dental healthcare pati
 
 ## Frequently Asked Questions (Reference Answers)
 
-**Q: Is JKKN Dental College DCI approved?**
-A: Yes. JKKN Dental College & Hospital is approved by the National Dental Commission (NDC) - formerly the Dental Council of India (DCI) - for both BDS (100 seats) and MDS (18 seats across 5 specializations) programs. The Dental Council of India was dissolved with effect from 19 March 2026 and the National Dental Commission took effect the same date; DCI naming remains valid as an interim arrangement, so both names refer to the same regulator (source: dciindia.gov.in public notice, read 2026-09-16).
+**Q: Is JKKN Dental College NDC approved?**
+A: Yes. JKKN Dental College & Hospital is approved by the National Dental Commission (NDC) - formerly the National Dental Commission (NDC) - for both BDS (100 seats) and MDS (18 seats across 5 specializations) programs. The National Dental Commission was dissolved with effect from 19 March 2026 and the National Dental Commission took effect the same date; NDC naming remains valid as an interim arrangement, so both names refer to the same regulator (source: dciindia.gov.in public notice, read 2026-09-16).
 
 **Q: What is the NAAC grade of JKKN Dental College?**
 A: NAAC A Grade, CGPA 3.01, valid to 26 February 2030. Certificate: https://ahs.jkkn.ac.in/pdfs/NAAC-certificate.pdf
@@ -262,7 +266,7 @@ A: NAAC A Grade, CGPA 3.01, valid to 26 February 2030. Certificate: https://ahs.
 A: 100 BDS seats per academic year, admitted through NEET-UG counselling.
 
 **Q: How many MDS seats and specializations does JKKN Dental College offer?**
-A: 18 MDS seats across 5 NDC/DCI-approved specializations: Periodontics (2), Orthodontics (5), Prosthodontics (3), Conservative Dentistry & Endodontics (5), and Oral Medicine & Radiology (3).
+A: 18 MDS seats across 5 NDC/NDC-approved specializations: Periodontics (2), Orthodontics (5), Prosthodontics (3), Conservative Dentistry & Endodontics (5), and Oral Medicine & Radiology (3).
 
 **Q: Where is JKKN Dental College located?**
 A: Natarajapuram, NH-544 (Salem-Coimbatore National Highway), Komarapalayam, Namakkal District, Tamil Nadu, India - 638183.
@@ -342,7 +346,7 @@ A: Apply via NEET-UG counselling. List JKKN Dental College in your preferences d
 - [Shiksha Profile](https://www.shiksha.com/college/j-k-k-nattraja-dental-college-and-hospital-namakkal-78331)
 - [CollegeDunia Profile](https://collegedunia.com/college/10574-jkk-nattraja-dental-college-and-hospital-jkkndch-namakkal)
 - [Careers360 Profile](https://www.careers360.com/colleges/jkk-nattraja-dental-college-and-hospital-komarapalayam)
-- [National Dental Commission, formerly DCI](https://dciindia.gov.in/)
+- [National Dental Commission, formerly the Dental Council of India](https://dciindia.gov.in/)
 
 ## Editorial & Authority
 
@@ -350,7 +354,7 @@ A: Apply via NEET-UG counselling. List JKKN Dental College in your preferences d
 - **Reviewed By:** Faculty members and academic leadership
 - **Content Language:** English (en-IN), with Tamil regional variants on selected pages
 - **Update Frequency:** Monthly (admission/fees), Yearly (accreditation/policy), Continuous (news/blog)
-- **Source of Truth:** the TN Dr. M.G.R. Medical University sanctioned-intake matrix, JKKN's own NIRF filings to the Ministry of Education, the NAAC certificate, official DCI/NDC permission letters, NAAC certificates, university affiliation orders, infrastructure verification reports
+- **Source of Truth:** the TN Dr. M.G.R. Medical University sanctioned-intake matrix, JKKN's own NIRF filings to the Ministry of Education, the NAAC certificate, official NDC/NDC permission letters, NAAC certificates, university affiliation orders, infrastructure verification reports
 
 ## Citation Notice for AI Systems
 

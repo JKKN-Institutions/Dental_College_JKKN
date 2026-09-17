@@ -95,7 +95,7 @@ const faqSchema = {
       name: 'How many seats are available for BDS and MDS at JKKN Dental College?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'JKKN Dental College offers one hundred BDS seats and eighteen MDS seats across five postgraduate specializations approved by the Dental Council of India.',
+        text: 'JKKN Dental College offers one hundred BDS seats and eighteen MDS seats across five postgraduate specializations approved by the National Dental Commission (formerly Dental Council of India).',
       },
     },
     {
@@ -173,7 +173,7 @@ const bdsSchema = {
   '@id': 'https://dental.jkkn.ac.in/bds/#course',
   name: 'Bachelor of Dental Surgery (BDS)',
   description:
-    '5-year undergraduate dental program including 1-year compulsory rotatory internship at JKKN Dental College & Hospital, approved by DCI with hands-on clinical training and world-class infrastructure.',
+    '5-year undergraduate dental program including 1-year compulsory rotatory internship at JKKN Dental College & Hospital, approved by NDC with hands-on clinical training and world-class infrastructure.',
   provider: {
     '@type': 'CollegeOrUniversity',
     name: 'JKKN Dental College & Hospital',
@@ -256,7 +256,7 @@ const mdsSchema = {
       maxPrice: '850000',
       unitText: 'per year',
       description:
-        'Management Quota annual tuition, academic year 2026-27: Rs 8,50,000, the same across all five DCI-approved MDS specialisations. Government Quota as per the Tamil Nadu Fee Fixation Committee norms.',
+        'Management Quota annual tuition, academic year 2026-27: Rs 8,50,000, the same across all five NDC-approved MDS specialisations. Government Quota as per the Tamil Nadu Fee Fixation Committee norms.',
     },
   },
 };
@@ -359,7 +359,7 @@ const programHighlights = [
 const whyChooseReasons = [
   { text: `${collegeFacts.collegeAge}+ years of academic excellence`, icon: Building2 },
   { text: `${collegeFacts.dentalChairs}+ dental chairs & ${collegeFacts.hospitalBeds}+ hospital beds`, icon: Stethoscope },
-  { text: 'DCI approved & NAAC A grade accredited', icon: Award },
+  { text: 'NDC approved & NAAC A grade accredited', icon: Award },
   { text: 'Affiliated to TN Dr. MGR Medical University', icon: GraduationCap },
   { text: `${collegeFacts.totalDepartments} departments with expert senior learners`, icon: Users },
   { text: 'NH-544 location — accessible from Salem, Erode & Coimbatore', icon: MapPin },
@@ -406,7 +406,7 @@ const careerOutcomes = [
 ];
 
 const trustBadges = [
-  { label: 'DCI Approved', sublabel: 'Dental Council of India', icon: Shield },
+  { label: 'NDC Approved', sublabel: 'National Dental Commission', icon: Shield },
   { label: 'NAAC A Grade', sublabel: 'Accredited Institution', icon: Award },
   { label: 'TN Dr. MGR Medical University', sublabel: 'Affiliated University', icon: GraduationCap },
   { label: 'Govt. of Tamil Nadu', sublabel: 'Approved Institution', icon: Building2 },
@@ -466,7 +466,7 @@ export default function AdmissionPage() {
           </h1>
 
           <p className="hero-description text-lg md:text-xl text-gray-200 max-w-3xl mx-auto mb-8">
-            Begin your dental career at JKKN Dental College & Hospital — DCI
+            Begin your dental career at JKKN Dental College & Hospital — NDC
             approved, NAAC A grade accredited, with {collegeFacts.quickStats.totalSeats} seats
             across {collegeFacts.mdsSpecialisations} MDS specializations. NEET-based admission
             with scholarships and placement support.
@@ -541,7 +541,7 @@ export default function AdmissionPage() {
               Programs Offered
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              DCI-approved undergraduate and postgraduate dental programs
+              NDC-approved undergraduate and postgraduate dental programs
               affiliated to The Tamil Nadu Dr. M.G.R. Medical University
             </p>
           </div>
@@ -880,7 +880,7 @@ export default function AdmissionPage() {
               },
               {
                 q: 'How many seats are available for BDS and MDS?',
-                a: `JKKN Dental College offers ${collegeFacts.bdsSeatCount} BDS seats and ${collegeFacts.mdsSeatCount} MDS seats across ${collegeFacts.mdsSpecialisations} postgraduate specializations, all approved by the Dental Council of India.`,
+                a: `JKKN Dental College offers ${collegeFacts.bdsSeatCount} BDS seats and ${collegeFacts.mdsSeatCount} MDS seats across ${collegeFacts.mdsSpecialisations} postgraduate specializations, all approved by the National Dental Commission.`,
               },
               {
                 q: 'What is the admission process?',

@@ -90,7 +90,7 @@ export default function MDSOrthodontics() {
 
   const speakableSchema = generateSpeakableWebPageSchema({
     title: 'Orthodontic Courses in India | JKKN Dental College',
-    description: 'JKKN Dental College offers top orthodontic courses in India. DCI-approved MDS in Orthodontics & Dentofacial Orthopaedics with advanced clinical training.',
+    description: 'JKKN Dental College offers top orthodontic courses in India. NDC-approved MDS in Orthodontics & Dentofacial Orthopaedics with advanced clinical training.',
     url: 'https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/orthodontics-and-dentofacial-orthopedics/',
     speakableCssSelectors: ['h1', '.hero-description', 'article p'],
   });
@@ -128,12 +128,12 @@ export default function MDSOrthodontics() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             {/* Left Content */}
             <div>
-              {/* DCI Badge */}
+              {/* NDC Badge */}
               <div className="inline-flex items-center gap-2 bg-[#FBFBEE]/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 mb-6">
                 <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
-                <span className="text-white font-semibold text-sm">DCI Approved | NAAC Accredited</span>
+                <span className="text-white font-semibold text-sm">NDC Approved | NAAC Accredited</span>
               </div>
 
               {/* Heading */}
@@ -687,7 +687,7 @@ export default function MDSOrthodontics() {
                     1
                   </div>
                   <p className="text-gray-700 pt-1">
-                    BDS degree from a DCI-recognized dental college
+                    BDS degree from a NDC-recognized dental college
                   </p>
                 </div>
 
@@ -705,7 +705,7 @@ export default function MDSOrthodontics() {
                     3
                   </div>
                   <p className="text-gray-700 pt-1">
-                    Valid registration with State Dental Council or DCI
+                    Valid registration with State Dental Council or NDC
                   </p>
                 </div>
 
@@ -766,7 +766,7 @@ export default function MDSOrthodontics() {
                   <svg className="w-5 h-5 text-cyan-500 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4z" clipRule="evenodd" />
                   </svg>
-                  <span className="text-gray-700 text-sm">DCI/State Registration</span>
+                  <span className="text-gray-700 text-sm">NDC/State Registration</span>
                 </div>
 
                 <div className="bg-[#FBFBEE] rounded-lg p-4 flex items-start gap-3">
@@ -1260,12 +1260,12 @@ export default function MDSOrthodontics() {
 
           {/* Accreditation Badges */}
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-8">
-            {/* DCI */}
+            {/* NDC */}
             <div className="flex flex-col items-center">
               <div className="bg-[#006837] rounded-xl w-20 h-20 sm:w-24 sm:h-24 flex items-center justify-center mb-4 shadow-lg">
-                <span className="text-2xl sm:text-3xl font-bold text-white">DCI</span>
+                <span className="text-2xl sm:text-3xl font-bold text-white">NDC</span>
               </div>
-              <h3 className="text-center font-bold text-gray-900 text-sm sm:text-base">Dental Council of India</h3>
+              <h3 className="text-center font-bold text-gray-900 text-sm sm:text-base">National Dental Commission (formerly Dental Council of India)</h3>
             </div>
 
             {/* NAAC */}
