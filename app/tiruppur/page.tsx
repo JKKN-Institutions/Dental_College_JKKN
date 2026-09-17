@@ -62,9 +62,9 @@ export default function TiruppurPage() {
   ];
 
   const placementStats = [
-    { value: '92%', label: 'PLACEMENT RATE 2024-25' },
-    { value: '8-10', label: 'LPA HIGHEST' },
-    { value: '3-5', label: 'LPA AVERAGE' },
+    { value: '93.9%', label: 'PLACED OR IN HIGHER STUDIES 2024-25' },
+    { value: 'Rs 3.6L', label: 'BDS MEDIAN SALARY' },
+    { value: 'Rs 6.0L', label: 'MDS MEDIAN SALARY' },
     { value: '15+', label: 'RECRUITING PARTNERS' },
   ];
 
@@ -141,13 +141,13 @@ export default function TiruppurPage() {
         <p className="text-white/80 max-w-2xl mb-10 leading-relaxed" style={{ fontSize: 'clamp(0.9rem, 1vw + 0.5rem, 1.1rem)' }}>
           Tiruppur learners — world-class education without the big-city hassle.
           JKKN Dental College &amp; Hospital offers top-tier dental programmes with
-          92% placement support (2024-25 batch) — no need to go to Coimbatore — quality
+          93.9% placed or in higher studies (2024-25 batch) — no need to go to Coimbatore — quality
           education is closer than you think.
         </p>
         <ul className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 mb-10 w-full max-w-2xl list-none p-0 m-0">
           {[
-            { value: '92%', label: 'PLACEMENTS 2024-25' },
-            { value: '8-10', label: 'LPA HIGHEST' },
+            { value: '93.9%', label: 'PLACED OR IN HIGHER STUDIES 2024-25' },
+            { value: 'Rs 3.6L', label: 'BDS MEDIAN SALARY' },
             { value: '67km', label: 'FROM TIRUPPUR' },
             { value: '2', label: 'PROGRAMMES' },
           ].map((stat) => (

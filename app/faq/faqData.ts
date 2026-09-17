@@ -16,12 +16,12 @@ export const faqCategories = [
       {
         question: 'What makes JKKN different from other dental colleges?',
         answer:
-          "JKKN is an AI-integrated dental campus with 500+ daily patients, 200+ dental chairs, and 92% placement assistance (2024-25 batch). Established in 1987 under JKKN Institutions (since 1952), it combines AI-powered diagnostics, CAD/CAM technology, and hands-on clinical training.",
+          "JKKN is an AI-integrated dental campus with 500+ daily patients, 200+ dental chairs, and 93.9% placed or in higher studies (2024-25 batch). Established in 1987 under JKKN Institutions (since 1952), it combines AI-powered diagnostics, CAD/CAM technology, and hands-on clinical training.",
       },
       {
         question: 'Which is the best dental college in Tamil Nadu?',
         answer:
-          "JKKN Dental College & Hospital is approved by the Dental Council of India, accredited by NAAC with an A Grade, and affiliated to The Tamil Nadu Dr. M.G.R. Medical University. Established in 1987, it is sanctioned 100 BDS seats and 18 MDS seats across 5 specialities, runs an AI-integrated dental campus, and reports 92% placement assistance (2024-25 batch). Tamil Nadu publishes no official merit ranking of its dental colleges, so compare colleges on approval, accreditation, sanctioned intake and clinical exposure.",
+          "JKKN Dental College & Hospital is approved by the Dental Council of India, accredited by NAAC with an A Grade, and affiliated to The Tamil Nadu Dr. M.G.R. Medical University. Established in 1987, it is sanctioned 100 BDS seats and 18 MDS seats across 5 specialities, runs an AI-integrated dental campus, and reports 93.9% placed or in higher studies (2024-25 batch). Tamil Nadu publishes no official merit ranking of its dental colleges, so compare colleges on approval, accreditation, sanctioned intake and clinical exposure.",
       },
       {
         question: 'How does JKKN integrate AI in dental education?',
@@ -123,7 +123,7 @@ export const faqCategories = [
       {
         question: 'What are the career options after completing BDS?',
         answer:
-          'BDS graduates from JKKN pursue private dental practice, government dental hospitals, corporate dental chains like Clove Dental and Apollo Dental, MDS specialization, research and academics, armed forces dental corps, dental product industry, and public health dentistry. JKKN offers 92% placement assistance (2024-25 batch) with recruiters like Apollo Hospitals, Manipal Hospitals, and international placements in NHS UK, Cleveland Clinic Abu Dhabi, and Singapore.',
+          'BDS graduates from JKKN pursue private dental practice, government dental hospitals, corporate dental chains like Clove Dental and Apollo Dental, MDS specialization, research and academics, armed forces dental corps, dental product industry, and public health dentistry. JKKN offers 93.9% placed or in higher studies (2024-25 batch) with recruiters like Apollo Hospitals, Manipal Hospitals, and international placements in NHS UK, Cleveland Clinic Abu Dhabi, and Singapore.',
       },
       {
         question: 'Can I pursue MDS after BDS at JKKN Dental College?',
@@ -210,7 +210,7 @@ export const faqCategories = [
       {
         question: 'How many dental chairs does JKKN Dental Hospital have?',
         answer:
-          'JKKN Dental Hospital has 200+ dental chairs and 100+ hospital beds, making it one of the largest dental clinical facilities in the Namakkal-Erode-Salem region. The hospital serves 500+ patients daily across 9 departments, providing extensive hands-on clinical exposure to BDS students from the very first year.',
+          'JKKN Dental Hospital has 200+ dental chairs and 100 hospital beds. The hospital serves 500+ patients daily across 9 departments, providing extensive hands-on clinical exposure to BDS students from the very first year.',
       },
       {
         question: 'What are the hostel facilities at JKKN Dental College?',
@@ -231,7 +231,7 @@ export const faqCategories = [
       {
         question: 'What is the placement rate at JKKN Dental College?',
         answer:
-          'JKKN Dental College achieves a 92% placement assistance rate (2024-25 batch). The Career Development Centre (CDC) provides comprehensive support including resume building, interview preparation, and direct company connections for BDS and MDS graduates.',
+          'JKKN Dental College achieves a 93.9% placed-or-higher-studies rate (2024-25 batch). The Career Development Centre (CDC) provides comprehensive support including resume building, interview preparation, and direct company connections for BDS and MDS graduates.',
       },
       {
         question: 'Which companies hire from JKKN Dental College?',
@@ -241,7 +241,7 @@ export const faqCategories = [
       {
         question: 'What is the salary after BDS from JKKN Dental College?',
         answer:
-          'BDS graduates from JKKN Dental College typically receive packages ranging from 3–5 LPA for entry-level positions. Top performers placed in corporate dental chains or international positions can earn 8–10 LPA or higher.',
+          'For the 2024-25 BDS batch, the JKKN NIRF 2026 filing to the Ministry of Education records a median salary of Rs 3,60,000. Of 99 graduates, 75 were placed and 18 went on to higher studies.',
       },
       {
         question: 'Does JKKN Dental College offer international placements?',
@@ -256,7 +256,7 @@ export const faqCategories = [
       {
         question: 'What is the highest package from JKKN Dental College?',
         answer:
-          'The highest package offered to JKKN Dental graduates is in the range of 8–10 LPA, typically from corporate dental chains and international healthcare organisations.',
+          'JKKN does not publish a highest-package figure. The sourced number is the median: Rs 3,60,000 for the 2024-25 BDS batch and Rs 6,00,000 for MDS, per the JKKN NIRF 2026 filing to the Ministry of Education.',
       },
       {
         question: 'Can JKKN Dental students get government jobs?',
@@ -271,7 +271,7 @@ export const faqCategories = [
       {
         question: 'Which dental college in Tamil Nadu has the best placements?',
         answer:
-          'JKKN Dental College and Hospital provides 92% placement assistance (2024-25 batch) with graduates employed at Apollo Dental, Clove Dental, Sabka Dentist, government hospitals, and international healthcare institutions including NHS United Kingdom.',
+          'JKKN Dental College and Hospital provides 93.9% placed or in higher studies (2024-25 batch) with graduates employed at Apollo Dental, Clove Dental, Sabka Dentist, government hospitals, and international healthcare institutions including NHS United Kingdom.',
       },
       {
         question: 'Does JKKN have placement support for MDS students?',

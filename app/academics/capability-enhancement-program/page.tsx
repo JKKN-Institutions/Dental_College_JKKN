@@ -31,7 +31,7 @@ const faqSchema = {
       name: 'Why is the Capability Enhancement Program important for dental students?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Dental professionals need more than clinical expertise — effective communication, professional conduct, analytical thinking, and wellness management are critical for patient care and career success. The Capability Enhancement Program at JKKN Dental College ensures graduates are well-rounded professionals, contributing to the college\'s 92% placement rate (2024-25 batch).',
+        text: 'Dental professionals need more than clinical expertise — effective communication, professional conduct, analytical thinking, and wellness management are critical for patient care and career success. The Capability Enhancement Program at JKKN Dental College ensures graduates are well-rounded professionals, contributing to the college\'s 93.9% placed or in higher studies (2024-25 batch).',
       },
     },
     {
@@ -47,7 +47,7 @@ const faqSchema = {
       name: 'How does the Capability Enhancement Program improve employability?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'By developing communication, analytical, and professional skills alongside dental expertise, the Capability Enhancement Program makes JKKN Dental College graduates more competitive in the job market. The college maintains a 92% placement rate (2024-25 batch), with graduates placed in leading hospitals and healthcare organizations across India and internationally.',
+        text: 'By developing communication, analytical, and professional skills alongside dental expertise, the Capability Enhancement Program makes JKKN Dental College graduates more competitive in the job market. The college maintains a 93.9% placed-or-higher-studies rate (2024-25 batch), with graduates placed in leading hospitals and healthcare organizations across India and internationally.',
       },
     },
   ],
