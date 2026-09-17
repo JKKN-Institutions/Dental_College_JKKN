@@ -53,7 +53,7 @@ const faqSchema = {
     { "@type": "Question", "name": "Is BDS at JKKN taught in English?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. The BDS and MDS programmes at JKKN Dental College are taught in English, as in all DCI-approved dental colleges in India, so Kerala students face no language barrier in academics. The hospital's patient base is largely Tamil-speaking, which learners pick up naturally during clinical years." } },
     { "@type": "Question", "name": "Can students from Bengaluru and other states also apply?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Students from Karnataka, including Bengaluru, and from other states are admitted under the Management Quota with NEET UG qualification, the same route as Kerala students. Call plus ninety-one nine three four five eight five five zero zero one for seat availability." } },
     { "@type": "Question", "name": "Does JKKN Dental have its own hospital?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, JKKN Dental College & Hospital has a 200+ chair dental hospital and 100+ bed facility right on campus. Learners gain hands-on clinical training from Year 1 of the BDS programme, treating patients who visit from surrounding districts every day." } },
-    { "@type": "Question", "name": "What MDS specialisations are available?", "acceptedAnswer": { "@type": "Answer", "text": "JKKN Dental offers MDS in five specialisations: Orthodontics & Dentofacial Orthopaedics, Prosthodontics & Crown and Bridge, Oral & Maxillofacial Surgery, Conservative Dentistry & Endodontics, and Periodontics. Each department has modern learning labs, and the attached hospital ensures ample clinical cases for postgraduate research and training." } },
+    { "@type": "Question", "name": "What MDS specialisations are available?", "acceptedAnswer": { "@type": "Answer", "text": "JKKN Dental offers MDS in five specialisations: Orthodontics & Dentofacial Orthopaedics, Prosthodontics & Crown and Bridge, Oral Medicine & Radiology, Conservative Dentistry & Endodontics, and Periodontics. Each department has modern learning labs, and the attached hospital ensures ample clinical cases for postgraduate research and training." } },
     { "@type": "Question", "name": "What is the BDS fee for Kerala students at JKKN Dental College?", "acceptedAnswer": { "@type": "Answer", "text": "Under the Management Quota, BDS tuition fee at JKKN Dental College and Hospital is four lakh fifty thousand rupees per year (Dayscholar with Instruments) or five lakh fifty thousand rupees per year (With Hostel and Instruments). Contact nine three four five eight five five zero zero one for the latest 2026-27 fee structure." } },
   ]
 };
@@ -108,7 +108,7 @@ const courseSchema = [
     "@id": "https://dental.jkkn.ac.in/academics/mds/#course",
     "url": "https://dental.jkkn.ac.in/academics/mds/",
     "name": "MDS (Master of Dental Surgery)",
-    "description": "3-year postgraduate dental programme with multiple specialisations including Orthodontics, Prosthodontics, Oral Surgery, Conservative Dentistry, and Periodontics.",
+    "description": "3-year postgraduate dental programme in the five sanctioned specialisations: Conservative Dentistry & Endodontics, Orthodontics & Dentofacial Orthopaedics, Prosthodontics & Crown and Bridge, Oral Medicine & Radiology, and Periodontics.",
     "provider": { "@type": "EducationalOrganization", "name": "JKKN Dental College & Hospital", "url": "https://dental.jkkn.ac.in/" },
     "educationalLevel": "Postgraduate",
     "timeRequired": "P3Y",

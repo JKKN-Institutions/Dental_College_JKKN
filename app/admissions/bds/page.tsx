@@ -36,6 +36,7 @@ import {
 } from 'lucide-react';
 import DentalEnquiryForm from "@/components/lead/DentalEnquiryForm";
 import { DEFAULT_PROGRAMME_BY_PAGE } from "@/lib/dental-programmes";
+import { jkknSameAsUrls } from '@/lib/metadata';
 
 /* ------------------------------------------------------------------ */
 /*  METADATA                                                          */
@@ -91,10 +92,7 @@ const bdsCourseSchema = {
     name: 'JKKN Dental College & Hospital',
     url: 'https://dental.jkkn.ac.in/',
     sameAs: [
-      'https://www.facebook.com/jkkndental/',
-      'https://www.instagram.com/jkkndental/',
-      'https://www.linkedin.com/school/jkkndental/',
-      'https://maps.app.goo.gl/mXx6rFRqpS9U76BK6',
+      ...jkknSameAsUrls,
     ],
     address: {
       '@type': 'PostalAddress',

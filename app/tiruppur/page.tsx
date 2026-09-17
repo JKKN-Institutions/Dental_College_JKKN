@@ -23,7 +23,7 @@ export default function TiruppurPage() {
     },
     {
       q: 'What MDS specialisations are available?',
-      a: 'JKKN Dental offers MDS in five specialisations: Orthodontics & Dentofacial Orthopaedics, Prosthodontics & Crown and Bridge, Oral & Maxillofacial Surgery, Conservative Dentistry & Endodontics, and Periodontics. Tiruppur learners benefit from on-campus hostel accommodation and access to diverse clinical cases from across western Tamil Nadu.',
+      a: 'JKKN Dental offers MDS in five specialisations: Orthodontics & Dentofacial Orthopaedics, Prosthodontics & Crown and Bridge, Oral Medicine & Radiology, Conservative Dentistry & Endodontics, and Periodontics. Tiruppur learners benefit from on-campus hostel accommodation and access to diverse clinical cases from across western Tamil Nadu.',
     },
     {
       q: 'Does JKKN Dental provide hostel for Tiruppur learners?',

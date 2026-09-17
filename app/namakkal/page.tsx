@@ -27,7 +27,7 @@ export default function NamakkalPage() {
     },
     {
       q: 'What MDS specialisations are available?',
-      a: 'JKKN Dental College & Hospital, Namakkal district, offers MDS in five specialisations: Orthodontics and Dentofacial Orthopaedics, Prosthodontics and Crown and Bridge, Oral and Maxillofacial Surgery, Conservative Dentistry and Endodontics, and Periodontics. MDS learners benefit from high patient volume and diverse clinical cases at the attached hospital.',
+      a: 'JKKN Dental College & Hospital, Namakkal district, offers MDS in five specialisations: Orthodontics and Dentofacial Orthopaedics, Prosthodontics and Crown and Bridge, Oral Medicine and Radiology, Conservative Dentistry and Endodontics, and Periodontics. MDS learners benefit from high patient volume and diverse clinical cases at the attached hospital.',
     },
     {
       q: 'Does JKKN Dental provide hostel for learners?',
