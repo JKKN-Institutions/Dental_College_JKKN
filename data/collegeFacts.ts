@@ -72,7 +72,17 @@ export const collegeFacts = {
   dailyPatients: 500, // Average daily patient footfall
 
   // === PLACEMENTS ===
-  placementRate: 92, // Percentage placement assistance
+  // SOURCE: JKKN's own NIRF 2026 submission to the Ministry of Education,
+  // https://dental.jkkn.ac.in/pdf/NIRF-2026-Dental.pdf, institute id IR-N-C-45823,
+  // read 2026-09-17. These are the numbers the college filed with the Government.
+  // The previous `placementRate: 92` had no traceable source and is retired.
+  placementBds: { batch: '2024-25', graduated: 99, placed: 75, higherStudies: 18, medianSalary: 360000 },
+  placementMds: { batch: '2024-25', graduated: 7, placed: 7, higherStudies: 0, medianSalary: 600000 },
+  // 75 of 99 = 75.8% placed. 93 of 99 = 93.9% placed OR in higher studies.
+  // Use placementRate only where the label literally says "placement rate".
+  // Use placementOutcomeRate only with the words "placed or in higher studies".
+  placementRate: 75.8,
+  placementOutcomeRate: 93.9,
   alumniCount: 3000, // Total alumni worldwide
   publications: 50, // Research publications
   partnerships: 25, // Industry & academic partnerships
@@ -104,9 +114,15 @@ export const collegeFacts = {
   },
 
   // === ACCREDITATION ===
-  naacGrade: 'A', // Update as per latest NAAC certificate
-  naacScore: 0, // Update with actual NAAC score (e.g., 3.01)
-  naacYear: 0, // Year of NAAC accreditation
+  // SOURCE: the NAAC certificate itself, https://ahs.jkkn.ac.in/pdfs/NAAC-certificate.pdf
+  // It is addressed to "J K K Nattraja Dental College and Hospital" and declares a CGPA of
+  // 3.01 at 'A' grade, valid up to 26 February 2030. Read 2026-09-12; the PDF has no text
+  // layer, so the figures come from the embedded certificate images.
+  // The certificate states a VALIDITY date, not an award year - so there is no naacYear.
+  naacGrade: 'A',
+  naacScore: 3.01,
+  naacValidTo: '2030-02-26',
+  naacCertificateUrl: 'https://ahs.jkkn.ac.in/pdfs/NAAC-certificate.pdf',
 
   // === CAMPUS ===
   campusArea: '', // e.g., "25 acres" - verify from documents
@@ -127,7 +143,8 @@ export const collegeFacts = {
     specializations: 5,
     departments: 9,
     dailyPatients: 500,
-    placementRate: 92,
+    placementRate: 75.8,
+    placementOutcomeRate: 93.9,
     alumniCount: 3000,
     publications: 50,
     partnerships: 25
@@ -142,7 +159,10 @@ export const getBDSSeatsText = () => `${collegeFacts.bdsSeatCount} BDS Seats`;
 export const getSpecializationsText = () => `${collegeFacts.mdsSpecialisations} PG Specialisations`;
 export const getHospitalCapacityText = () => `${collegeFacts.dentalChairs}+ Dental Chairs & ${collegeFacts.hospitalBeds}+ Hospital Beds`;
 export const getDailyPatientsText = () => `${collegeFacts.dailyPatients}+ Daily Patients`;
-export const getPlacementRateText = () => `${collegeFacts.placementRate}% Placement`;
+export const getPlacementRateText = () =>
+  `${collegeFacts.placementOutcomeRate}% placed or in higher studies (${collegeFacts.placementBds.batch} batch)`;
+export const getMdsPlacementText = () =>
+  `${collegeFacts.placementMds.placed} of ${collegeFacts.placementMds.graduated} MDS graduates placed (${collegeFacts.placementMds.batch} batch)`;
 export const getAlumniCountText = () => `${collegeFacts.alumniCount}+ Alumni`;
 export const getFormattedPhone = () => collegeFacts.phone;
 export const getFormattedAddress = () => collegeFacts.address.full;
