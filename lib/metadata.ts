@@ -484,9 +484,6 @@ export const jkknSameAsUrls = [
   "https://www.youtube.com/@jkkndental",
   "https://www.youtube.com/playlist?list=PL6QsTq-__HhvqQ28WcrDAwPa9jeMSK3AO",
   "https://maps.app.goo.gl/mXx6rFRqpS9U76BK6",
-  "https://www.jkkn.ac.in/",
-  "https://www.jkkn.ai/apply/jkkn-admission-2026",
-  "https://placements.jkkn.ac.in/",
   "https://www.shiksha.com/college/j-k-k-nattraja-dental-college-and-hospital-namakkal-78331",
   "https://collegedunia.com/college/10574-jkk-nattraja-dental-college-and-hospital-jkkndch-namakkal",
   "https://www.careers360.com/colleges/jkk-nattraja-dental-college-and-hospital-komarapalayam"
