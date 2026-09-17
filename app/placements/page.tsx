@@ -48,9 +48,9 @@ export default function PlacementsPage() {
   ];
 
   const trendData = [
-    { batch: '2022-23', rate: '90%+', recruiters: 'Apollo Dental, Clove Dental, Govt. PHCs', international: '3 placed in NHS UK', higherStudies: '15+ cleared NEET MDS' },
-    { batch: '2023-24', rate: '91%+', recruiters: 'Apollo, Fortis, Sabka Dentist, ESIC', international: '5 placed internationally', higherStudies: '18+ cleared NEET MDS' },
-    { batch: '2024-25', rate: '93.9%', recruiters: 'Clove Dental, Manipal, District Hospitals', international: '4 placed in UAE & UK', higherStudies: '20+ cleared NEET MDS' },
+    { batch: '2022-23', rate: '53.4%', recruiters: 'Apollo Dental, Clove Dental, Govt. PHCs', international: 'Not published', higherStudies: '38 of 88 in higher studies' },
+    { batch: '2023-24', rate: '63.9%', recruiters: 'Apollo, Fortis, Sabka Dentist, ESIC', international: 'Not published', higherStudies: '40 of 97 in higher studies' },
+    { batch: '2024-25', rate: '93.9%', recruiters: 'Clove Dental, Manipal, District Hospitals', international: 'Not published', higherStudies: '18 of 99 in higher studies' },
   ];
 
   const careerPathways = [
@@ -259,7 +259,7 @@ export default function PlacementsPage() {
               <thead>
                 <tr className="bg-[#006837] text-white">
                   <th className="px-4 py-3 font-semibold rounded-tl-xl">Batch Year</th>
-                  <th className="px-4 py-3 font-semibold">Placement Rate</th>
+                  <th className="px-4 py-3 font-semibold">Placed or in Higher Studies (NIRF)</th>
                   <th className="px-4 py-3 font-semibold">Key Recruiters</th>
                   <th className="px-4 py-3 font-semibold">International</th>
                   <th className="px-4 py-3 font-semibold rounded-tr-xl">Higher Studies</th>
