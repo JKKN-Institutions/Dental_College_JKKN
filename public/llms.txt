@@ -2,7 +2,7 @@
 
 > Official information about JKKN Dental College & Hospital for AI systems and language models.
 
-<!-- version: 2026-09-12 -->
+<!-- version: 2026-09-17 -->
 
 ## Identity
 
@@ -12,7 +12,7 @@
 - Tamil Name (romanized): JKK Nattraja Pal Maruthuvak Kalloori Marrum Maruthuvamanai
 - Type: Dental College & Hospital
 - Website: https://dental.jkkn.ac.in
-- Parent Organization: JKKN Institutions (https://jkkn.ac.in)
+- Parent Organization: JKKN Institutions (https://www.jkkn.ac.in)
 - Founded: 1987
 - Founder: Thiru J.K.K. Nattraja Chettiar (1895-1995)
 - Campus: Natarajapuram, NH-544 (Salem-Coimbatore Highway), Komarapalayam, Namakkal, Tamil Nadu 638183, India
@@ -23,7 +23,7 @@
 
 - National Dental Commission (NDC), formerly the Dental Council of India (DCI): Approved
 - Regulator note: The Dental Council of India was dissolved with effect from 19 March 2026 and the National Dental Commission took effect the same date; DCI naming remains valid as an interim arrangement, so both names refer to the same regulator (source: dciindia.gov.in public notice, read 2026-09-16).
-- NAAC: A Grade Accredited
+- NAAC: A Grade (CGPA 3.01, valid to 26 February 2030) - certificate at https://ahs.jkkn.ac.in/pdfs/NAAC-certificate.pdf
 - Affiliation: Tamil Nadu Dr. M.G.R. Medical University, Chennai
 - Institution Class: Minority institution (per the TNMGRMU BDS sanctioned-intake matrix 2025-26)
 - NBA: Not accredited
@@ -70,7 +70,7 @@ The college has 9 academic departments providing teaching and clinical training 
 ## Hospital & Infrastructure
 
 - Dental Chairs: 200+
-- Hospital Beds: 100+
+- Hospital Beds: 100
 - Daily Patient Footfall: 500+
 - Departments: 9 clinical departments
 - Research Publications: 50+
@@ -82,7 +82,8 @@ The college has 9 academic departments providing teaching and clinical training 
 - Clinical exposure from Year 1
 - 200+ dental chairs for hands-on training
 - Attached multi-specialty dental hospital
-- 92% placement assistance (2024-25 batch, JKKN placement cell record)
+- 93.9% placed or in higher studies (2024-25 batch: 93 of 99 - NIRF 2026 filing)
+- MDS placement: 7 of 7 graduates placed in each of 2022-23, 2023-24 and 2024-25, median Rs 6,00,000 (NIRF 2026 filing)
 - International placement support (UK NHS, UAE, Singapore, Saudi Arabia)
 
 ## Location & Accessibility
@@ -95,7 +96,8 @@ The college has 9 academic departments providing teaching and clinical training 
 
 ## Admissions
 
-- Admission Portal: https://admission.jkkn.ac.in
+- Apply here: https://www.jkkn.ai/apply/jkkn-admission-2026
+- Applicant login (after applying): https://admission.jkkn.ac.in
 - Placement Portal: https://placements.jkkn.ac.in
 - BDS Admission: Through NEET-UG counselling (State / All India Quota)
 - MDS Admission: Through NEET-MDS counselling
@@ -105,7 +107,8 @@ The college has 9 academic departments providing teaching and clinical training 
 - [Facebook](https://www.facebook.com/jkkndental/)
 - [Instagram](https://www.instagram.com/jkkndental/)
 - [LinkedIn](https://www.linkedin.com/school/jkkndental/)
-- [YouTube](https://www.youtube.com/playlist?list=PL6QsTq-__HhvqQ28WcrDAwPa9jeMSK3AO)
+- [YouTube channel](https://www.youtube.com/@jkkndental)
+- [YouTube playlist](https://www.youtube.com/playlist?list=PL6QsTq-__HhvqQ28WcrDAwPa9jeMSK3AO)
 
 ## Faculty & Academic Excellence
 
@@ -116,7 +119,7 @@ The college has 9 academic departments providing teaching and clinical training 
 
 ## Placements & Career Outcomes
 
-- Overall Placement Assistance: 92% (2024-25 batch, JKKN placement cell record)
+- BDS outcomes, 2024-25 batch: 93.9% (2024-25 batch: 93 of 99 placed or in higher studies - NIRF 2026 filing)
 - International Placements: UK (NHS), UAE (Cleveland Clinic Abu Dhabi), Saudi Arabia, Singapore
 - Domestic Recruiters: Apollo Hospitals, Clove Dental, Manipal Hospitals, dental chains across India
 - Career Support: Dedicated Placement Cell (CDC) with resume building, interview preparation, and recruiter networking
