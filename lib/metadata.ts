@@ -1,5 +1,8 @@
 import { Metadata } from 'next';
 import collegeFacts from '@/data/collegeFacts';
+import { jkknSameAsUrls, DENTAL_ORG_ID, DENTAL_COURSE_URLS } from '@/lib/schema/organization';
+
+export { jkknSameAsUrls };
 
 /**
  * Organization information for JKKN Dental College
@@ -28,6 +31,8 @@ export const organizationInfo = {
 /**
  * Generate breadcrumb schema from path
  */
+import { NON_PAGE_PATHS, PATH_ALIASES } from '@/lib/breadcrumbs';
+
 export function generateBreadcrumbSchema(pathname: string) {
   const pathSegments = pathname.split('/').filter(Boolean);
 
@@ -36,13 +41,16 @@ export function generateBreadcrumbSchema(pathname: string) {
       "@type": "ListItem",
       "position": 1,
       "name": "Home",
-      "item": "https://dental.jkkn.ac.in"
+      "item": "https://dental.jkkn.ac.in/"
     }
   ];
 
   let currentPath = '';
   pathSegments.forEach((segment, index) => {
     currentPath += `/${segment}`;
+    const resolved = PATH_ALIASES[currentPath] ?? currentPath;
+    const isLast = index === pathSegments.length - 1;
+    if (!isLast && NON_PAGE_PATHS.has(resolved)) return;
     const name = segment
       .split('-')
       .map(word => word.charAt(0).toUpperCase() + word.slice(1))
@@ -50,9 +58,10 @@ export function generateBreadcrumbSchema(pathname: string) {
 
     breadcrumbs.push({
       "@type": "ListItem",
-      "position": index + 2,
+      "position": breadcrumbs.length + 1,
       "name": name,
-      "item": `https://dental.jkkn.ac.in${currentPath}`
+      // trailingSlash: true site - every real URL ends with a slash, anything else is a 308 hop
+      "item": `https://dental.jkkn.ac.in${resolved}/`
     });
   });
 
@@ -61,6 +70,11 @@ export function generateBreadcrumbSchema(pathname: string) {
     "@type": "BreadcrumbList",
     "itemListElement": breadcrumbs
   };
+}
+
+/** One @id per page for the WebPage node, so two generators describing the same page merge into one entity. */
+export function webPageId(url: string) {
+  return url.replace(/\/?$/, '/') + '#webpage';
 }
 
 /**
@@ -84,11 +98,13 @@ export function generateWebPageSchema({
   return {
     "@context": "https://schema.org",
     "@type": "WebPage",
+    "@id": webPageId(url),
     "name": title,
     "description": description,
     "url": url,
     "publisher": {
       "@type": "EducationalOrganization",
+      "@id": DENTAL_ORG_ID,
       "name": organizationInfo.name,
       "url": organizationInfo.url,
       "logo": {
@@ -222,7 +238,7 @@ export function generateContactPageSchema() {
     "@type": "ContactPage",
     "name": "Contact JKKN Dental College",
     "description": "Contact information for JKKN Dental College & Hospital",
-    "url": "https://dental.jkkn.ac.in/contact",
+    "url": "https://dental.jkkn.ac.in/contact/",
     "mainEntity": {
       "@type": "EducationalOrganization",
       "name": organizationInfo.name,
@@ -252,7 +268,7 @@ export function generateAboutPageSchema({
     "@type": "AboutPage",
     "name": title,
     "description": description,
-    "url": "https://dental.jkkn.ac.in/about",
+    "url": "https://dental.jkkn.ac.in/about/",
     "mainEntity": {
       "@type": "EducationalOrganization",
       "name": organizationInfo.name,
@@ -333,6 +349,7 @@ export function generateArticleSchema({
     },
     "publisher": {
       "@type": "EducationalOrganization",
+      "@id": DENTAL_ORG_ID,
       "name": organizationInfo.name,
       "url": organizationInfo.url,
       "logo": {
@@ -428,6 +445,7 @@ export function generateVideoSchema({
     ...(transcript && { "transcript": transcript }),
     "publisher": {
       "@type": "EducationalOrganization",
+      "@id": DENTAL_ORG_ID,
       "name": organizationInfo.name,
       "url": organizationInfo.url
     }
@@ -455,6 +473,7 @@ export function generateSpeakableWebPageSchema({
   return {
     "@context": "https://schema.org",
     "@type": "WebPage",
+    "@id": webPageId(url),
     "name": title,
     "description": description,
     "url": url,
@@ -474,20 +493,7 @@ export function generateSpeakableWebPageSchema({
   };
 }
 
-/**
- * Complete sameAs URLs for JKKN Dental College across all platforms
- */
-export const jkknSameAsUrls = [
-  "https://www.facebook.com/jkkndental/",
-  "https://www.instagram.com/jkkndental/",
-  "https://www.linkedin.com/school/jkkndental/",
-  "https://www.youtube.com/@jkkndental",
-  "https://www.youtube.com/playlist?list=PL6QsTq-__HhvqQ28WcrDAwPa9jeMSK3AO",
-  "https://maps.app.goo.gl/mXx6rFRqpS9U76BK6",
-  "https://www.shiksha.com/college/j-k-k-nattraja-dental-college-and-hospital-namakkal-78331",
-  "https://collegedunia.com/college/10574-jkk-nattraja-dental-college-and-hospital-jkkndch-namakkal",
-  "https://www.careers360.com/colleges/jkk-nattraja-dental-college-and-hospital-komarapalayam"
-];
+// jkknSameAsUrls now lives in lib/schema/organization.ts (re-exported above).
 
 /**
  * Generate LocalBusiness (Dentist) schema for GBP alignment and local SEO
@@ -546,7 +552,7 @@ export function generateEducationalOrganizationSchema() {
   return {
     "@context": "https://schema.org",
     "@type": "CollegeOrUniversity",
-    "@id": "https://dental.jkkn.ac.in/#educationalorganization",
+    "@id": DENTAL_ORG_ID,
     "name": organizationInfo.name,
     "alternateName": organizationInfo.alternateName,
     "url": organizationInfo.url,
@@ -668,7 +674,8 @@ export function generateMDSCourseSchema() {
   return {
     "@context": "https://schema.org",
     "@type": "Course",
-    "@id": "https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/#course",
+    "@id": `${DENTAL_COURSE_URLS.mds}#course`,
+    "url": DENTAL_COURSE_URLS.mds,
     "name": "Master of Dental Surgery (MDS) — JKKN Dental College, Tamil Nadu",
     "alternateName": "MDS at JKKN Dental College",
     "description": `3-year postgraduate Master of Dental Surgery (MDS) program at JKKN Dental College & Hospital, Tamil Nadu. Offers ${collegeFacts.mdsSeatCount} seats across ${collegeFacts.mdsSpecialisations} NDC-approved specializations with ${collegeFacts.dentalChairs}+ dental chairs, ${collegeFacts.dailyPatients}+ daily patients, and expert Learning Facilitators. Affiliated to TN Dr. MGR Medical University, NAAC accredited.`,
@@ -681,14 +688,13 @@ export function generateMDSCourseSchema() {
       "educationalLevel": "Postgraduate"
     },
     "timeRequired": "P3Y",
-    "numberOfCredits": 120,
     "occupationalCategory": "Dental Specialist",
     "coursePrerequisites": "BDS degree from a NDC-recognized dental college, completed 1-year compulsory rotating internship, permanent State Dental Council registration, and valid NEET MDS score",
     "teaches": "Specialized dental surgery skills in 5 branches: Conservative Dentistry & Endodontics, Prosthodontics, Periodontics, Oral Medicine & Radiology, and Orthodontics",
     "totalTime": "P3Y",
     "provider": {
       "@type": "CollegeOrUniversity",
-      "@id": "https://dental.jkkn.ac.in/#educationalorganization",
+      "@id": DENTAL_ORG_ID,
       "name": organizationInfo.name,
       "url": organizationInfo.url,
       "sameAs": jkknSameAsUrls

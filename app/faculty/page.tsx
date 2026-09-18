@@ -3,8 +3,20 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Metadata } from 'next';
 import { UserCircle2 } from 'lucide-react';
+import StructuredData from '@/components/StructuredData';
+import { generateBreadcrumbSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const dynamic = 'force-dynamic';
+
+// Measured 2026-09-18: /faculty/ shipped zero JSON-LD. Same two nodes every other hub page carries.
+const facultyBreadcrumbSchema = generateBreadcrumbSchema('/faculty/');
+const facultyWebPageSchema = generateSpeakableWebPageSchema({
+  title: 'Senior Learners | JKKN Dental College & Hospital',
+  description:
+    'Meet the experienced senior learners of JKKN Dental College & Hospital, Komarapalayam. Qualified senior learners and specialists in BDS and MDS programmes.',
+  url: 'https://dental.jkkn.ac.in/faculty/',
+  speakableCssSelectors: ['h1', '.hero-description'],
+});
 
 export const metadata: Metadata = {
   title: 'Senior Learners | JKKN Dental College & Hospital',
@@ -61,6 +73,8 @@ export default async function FacultyPage() {
 
   return (
     <>
+      <StructuredData data={facultyBreadcrumbSchema} />
+      <StructuredData data={facultyWebPageSchema} />
       <Header />
       <main className="min-h-screen bg-[#FBF8F3]">
         {/* Hero */}

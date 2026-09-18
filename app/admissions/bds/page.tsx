@@ -6,7 +6,7 @@ import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import StructuredData from '@/components/StructuredData';
 import { faqPageSchema } from '@/lib/faq';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
-import { generateBreadcrumbSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
+import { generateSpeakableWebPageSchema } from '@/lib/metadata';
 import { collegeFacts } from '@/data/collegeFacts';
 import {
   GraduationCap,
@@ -108,17 +108,10 @@ const bdsCourseSchema = {
   occupationalCategory: 'Dentist',
   coursePrerequisites:
     '10+2 with Physics, Chemistry, Biology (PCB) with minimum 50% aggregate (40% for reserved); NEET-UG qualification required; minimum 17 years of age as on 31 December 2026',
-  numberOfCredits: '240',
   hasCourseInstance: {
     '@type': 'CourseInstance',
     courseMode: 'Full-time',
-    courseWorkload: 'PT5Y',
-    startDate: '2026-09',
-    endDate: '2031-08',
-    instructor: {
-      '@type': 'Person',
-      name: 'Department of Dental Sciences Faculty',
-    },
+    courseWorkload: 'P5Y',
   },
   offers: {
     '@type': 'Offer',
@@ -423,7 +416,6 @@ const bdsFaqSchema = faqPageSchema(bdsFaqs);
 /* ------------------------------------------------------------------ */
 
 export default function BDSAdmissionPage() {
-  const breadcrumbSchema = generateBreadcrumbSchema('/admissions/bds');
   const speakableSchema = generateSpeakableWebPageSchema({
     title: 'BDS Admission 2026-27 | JKKN Dental College',
     description:
@@ -441,7 +433,6 @@ export default function BDSAdmissionPage() {
           { name: 'BDS Admission', url: 'https://dental.jkkn.ac.in/admissions/bds/' },
         ]}
       />
-      <StructuredData data={breadcrumbSchema} />
       <StructuredData data={speakableSchema} />
       <StructuredData data={bdsCourseSchema} />
       <StructuredData data={bdsFaqSchema} />

@@ -5,7 +5,6 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import StructuredData from '@/components/StructuredData';
-import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 import Breadcrumb from '@/components/Breadcrumb';
 import MdsSpecialityNav from '@/components/mds/MdsSpecialityNav';
 import { generateSpeakableWebPageSchema } from '@/lib/metadata';
@@ -15,12 +14,15 @@ export default function MDSOralMedicine() {
   const courseSchema = {
     "@context": "https://schema.org",
     "@type": "Course",
+    "@id": "https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/oral-medicine/#course",
+    "url": "https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/oral-medicine/",
     "name": "MDS Oral Medicine & Radiology",
     "description": "Become a diagnostic expert with our advanced 3-year postgraduate program. Master oral diagnosis, dental imaging, CBCT interpretation, and management of oral manifestations of systemic diseases at one of Tamil Nadu's premier dental institutions.",
     "provider": {
       "@type": "CollegeOrUniversity",
+      "@id": "https://dental.jkkn.ac.in/#organization",
       "name": "JKKN Dental College & Hospital",
-      "url": "https://dental.jkkn.ac.in"
+      "url": "https://dental.jkkn.ac.in/"
     },
     "courseCode": "MDS-OMR",
     "educationalCredentialAwarded": "Master of Dental Surgery in Oral Medicine & Radiology",
@@ -99,19 +101,13 @@ export default function MDSOralMedicine() {
     <main className="overflow-x-hidden">
       <StructuredData data={courseSchema} />
       <StructuredData data={faqSchema} />
-      <BreadcrumbSchema items={[
+      <StructuredData data={speakableSchema} />
+      <Header />
+      <Breadcrumb items={[
         { name: 'Home', url: 'https://dental.jkkn.ac.in/' },
         { name: 'Academics', url: 'https://dental.jkkn.ac.in/academics/' },
         { name: 'MDS Programs', url: 'https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/' },
         { name: 'Oral Medicine & Radiology', url: 'https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/oral-medicine/' },
-      ]} />
-      <StructuredData data={speakableSchema} />
-      <Header />
-      <Breadcrumb items={[
-        { name: 'Home', url: 'https://dental.jkkn.ac.in' },
-        { name: 'Academics', url: 'https://dental.jkkn.ac.in/academics' },
-        { name: 'MDS Programs', url: 'https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds' },
-        { name: 'Oral Medicine & Radiology', url: 'https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/oral-medicine' },
       ]} />
 
       {/* Hero Section */}

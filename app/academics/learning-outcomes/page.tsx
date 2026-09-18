@@ -3,7 +3,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FaqAccordion from '@/components/FaqAccordion';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
-import { generateBreadcrumbSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
+import { generateSpeakableWebPageSchema } from '@/lib/metadata';
 import StructuredData from '@/components/StructuredData';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
@@ -69,7 +69,6 @@ export const metadata: Metadata = {
 };
 
 export default function LearningOutcomes() {
-  const breadcrumbSchema = generateBreadcrumbSchema('/academics/learning-outcomes/');
   const speakableSchema = generateSpeakableWebPageSchema({
     title: 'Learning Outcomes - BDS & MDS Programs - JKKN Dental College',
     description: 'Explore comprehensive learning outcomes for BDS and MDS programs at JKKN Dental College. Quality-focused dental education objectives. Discover more.',
@@ -84,7 +83,6 @@ export default function LearningOutcomes() {
         { name: 'Academics', url: 'https://dental.jkkn.ac.in/academics/' },
         { name: 'Learning Outcomes', url: 'https://dental.jkkn.ac.in/academics/learning-outcomes/' },
       ]} />
-      <StructuredData data={breadcrumbSchema} />
       <StructuredData data={speakableSchema} />
       <StructuredData data={faqSchema} />
       <Header />

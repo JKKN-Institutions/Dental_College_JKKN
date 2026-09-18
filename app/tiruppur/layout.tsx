@@ -1,7 +1,9 @@
 import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { jkknSameAsUrls } from '@/lib/metadata';
+import { faqPageSchema } from '@/lib/faq';
+import { dentalOrganizationSchema, dentalOrgRef, DENTAL_COURSE_URLS } from '@/lib/schema/organization';
+import { faqs } from './faqs';
 
 export const metadata: Metadata = {
   title: { absolute: 'Dental Colleges in Tiruppur | JKKN Dental College' },
@@ -42,63 +44,18 @@ export const metadata: Metadata = {
   },
 };
 
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    { "@type": "Question", "name": "Are there any dental colleges in Tiruppur?", "acceptedAnswer": { "@type": "Answer", "text": "There are no dental colleges inside Tiruppur district. The nearest NDC-approved dental college is JKKN Dental College and Hospital, located sixty-seven kilometres from Tiruppur at Komarapalayam, Namakkal, on the Salem to Coimbatore Highway." } },
-    { "@type": "Question", "name": "Which are the best dental colleges in Tiruppur?", "acceptedAnswer": { "@type": "Answer", "text": "JKKN Dental College and Hospital is the nearest NDC-approved dental college to Tiruppur, located sixty-seven kilometres away on NH-544. Affiliated to Tamil Nadu Doctor MGR Medical University, Chennai, it offers BDS with one hundred seats and MDS in five specializations." } },
-    { "@type": "Question", "name": "How far is JKKN Dental College from Tiruppur?", "acceptedAnswer": { "@type": "Answer", "text": "JKKN Dental College and Hospital is approximately sixty-seven kilometres from Tiruppur, about one and a half hours by road via NH-544 Salem to Coimbatore Highway through Erode." } },
-    { "@type": "Question", "name": "What is the NEET cut-off for BDS at JKKN Dental?", "acceptedAnswer": { "@type": "Answer", "text": "The NEET cut-off for BDS admission at JKKN Dental College & Hospital varies each year based on counselling rounds. Contact the admission office for the latest cut-off information and seat availability for the current admission cycle." } },
-    { "@type": "Question", "name": "Does JKKN Dental have its own hospital?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, JKKN Dental College & Hospital has a 200+ chair dental hospital with 100+ beds right on campus. The hospital serves patients from across western Tamil Nadu including Tiruppur, Erode, and Coimbatore districts — treating 500+ patients daily, ensuring learners get exceptional clinical training from Year 1." } },
-    { "@type": "Question", "name": "What MDS specialisations are available?", "acceptedAnswer": { "@type": "Answer", "text": "JKKN Dental offers MDS in five specialisations: Orthodontics & Dentofacial Orthopaedics, Prosthodontics & Crown and Bridge, Oral Medicine & Radiology, Conservative Dentistry & Endodontics, and Periodontics. Tiruppur learners benefit from on-campus hostel accommodation and access to diverse clinical cases from across western Tamil Nadu." } },
-    { "@type": "Question", "name": "Does JKKN Dental provide hostel for Tiruppur learners?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, JKKN Dental College provides separate hostel facilities for boys and girls with mess facility. Learners from Tiruppur travel sixty-seven kilometres to campus. College transport services are available." } },
-    { "@type": "Question", "name": "How can I apply for admission at JKKN Dental?", "acceptedAnswer": { "@type": "Answer", "text": "Tiruppur learners can apply online at https://dental.jkkn.ac.in/ or call +91 9345855001 for personalised guidance. The campus is accessible via Erode (NH-544). Admissions for BDS and MDS 2026-27 are currently open — hostel accommodation is available for outstation learners." } },
-    { "@type": "Question", "name": "How many dental colleges are there in Tiruppur district?", "acceptedAnswer": { "@type": "Answer", "text": "There are zero dental colleges inside Tiruppur district. The nearest NDC-approved dental college is JKKN Dental College and Hospital at Komarapalayam, Namakkal, sixty-seven kilometres from Tiruppur via NH-544." } },
-    { "@type": "Question", "name": "Which dental colleges near Tiruppur accept NEET scores?", "acceptedAnswer": { "@type": "Answer", "text": "All NDC-approved dental colleges near Tiruppur accept NEET UG scores for BDS admission through DME Tamil Nadu counselling. JKKN Dental College and Hospital is sixty-seven kilometres away, RVS Dental College is fifty-five kilometres away in Coimbatore." } },
-    { "@type": "Question", "name": "What is the BDS fee at dental colleges near Tiruppur?", "acceptedAnswer": { "@type": "Answer", "text": "At JKKN Dental College and Hospital, BDS tuition fee is as per Government Quota norms under Government Quota and four lakh fifty thousand rupees per year (Dayscholar with Instruments) or five lakh fifty thousand rupees per year (With Hostel and Instruments) under Management Quota. Contact nine three four five eight five five zero zero one for the latest fee structure." } },
-  ]
-};
+const faqSchema = faqPageSchema(faqs);
 
-const orgSchema = {
-  "@context": "https://schema.org",
-  "@type": "EducationalOrganization",
-  "@id": "https://dental.jkkn.ac.in/#organization",
-  "name": "JKKN Dental College & Hospital",
-  "alternateName": "JKKN Dental",
-  "url": "https://dental.jkkn.ac.in/",
-  "logo": "https://dental.jkkn.ac.in/images/jkkn-dental-logo.webp",
-  "description": "NDC approved, NAAC accredited dental college affiliated to TN Dr. MGR Medical University. Offers BDS and MDS programmes with 93.9% placed or in higher studies (2024-25 batch).",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Natarajapuram, NH-544 (Salem–Coimbatore Highway)",
-    "addressLocality": "Komarapalayam",
-    "addressRegion": "Tamil Nadu",
-    "postalCode": "638183",
-    "addressCountry": "IN"
-  },
-  "telephone": "+919345855001",
-  "email": "info@jkkn.ac.in",
-  "foundingDate": "1987",
-  "parentOrganization": { "@type": "Organization", "name": "JKKN Institutions", "url": "https://jkkn.ac.in/" },
-  "hasCredential": [
-    { "@type": "EducationalOccupationalCredential", "credentialCategory": "NDC Approved" },
-    { "@type": "EducationalOccupationalCredential", "credentialCategory": "NAAC Accredited" }
-  ],
-  "memberOf": { "@type": "Organization", "name": "The Tamil Nadu Dr. M.G.R. Medical University, Chennai" },
-  "geo": { "@type": "GeoCoordinates", "latitude": "11.4446062", "longitude": "77.7309852" },
-  "sameAs": jkknSameAsUrls
-};
 
 const courseSchema = [
   {
     "@context": "https://schema.org",
     "@type": "Course",
-    "@id": "https://dental.jkkn.ac.in/academics/bds/#course",
-    "url": "https://dental.jkkn.ac.in/academics/bds/",
+    "@id": `${DENTAL_COURSE_URLS.bds}#course`,
+    "url": DENTAL_COURSE_URLS.bds,
     "name": "BDS (Bachelor of Dental Surgery)",
     "description": "4-year undergraduate dental programme with 1-year internship. NDC approved, 100 seats. NEET qualified admission.",
-    "provider": { "@type": "EducationalOrganization", "name": "JKKN Dental College & Hospital", "url": "https://dental.jkkn.ac.in/" },
+    "provider": dentalOrgRef,
     "educationalLevel": "Undergraduate",
     "timeRequired": "P5Y",
     "occupationalCategory": "Dentist"
@@ -106,51 +63,17 @@ const courseSchema = [
   {
     "@context": "https://schema.org",
     "@type": "Course",
-    "@id": "https://dental.jkkn.ac.in/academics/mds/#course",
-    "url": "https://dental.jkkn.ac.in/academics/mds/",
+    "@id": `${DENTAL_COURSE_URLS.mds}#course`,
+    "url": DENTAL_COURSE_URLS.mds,
     "name": "MDS (Master of Dental Surgery)",
     "description": "3-year postgraduate dental programme in the five sanctioned specialisations: Conservative Dentistry & Endodontics, Orthodontics & Dentofacial Orthopaedics, Prosthodontics & Crown and Bridge, Oral Medicine & Radiology, and Periodontics.",
-    "provider": { "@type": "EducationalOrganization", "name": "JKKN Dental College & Hospital", "url": "https://dental.jkkn.ac.in/" },
+    "provider": dentalOrgRef,
     "educationalLevel": "Postgraduate",
     "timeRequired": "P3Y",
     "occupationalCategory": "Dental Specialist"
   }
 ];
 
-const localBusinessSchema = {
-  "@context": "https://schema.org",
-  "@type": "Dentist",
-  "@id": "https://dental.jkkn.ac.in/#dentist",
-  "name": "JKKN Dental College & Hospital",
-  "url": "https://dental.jkkn.ac.in/",
-  "telephone": "+919345855001",
-  "email": "info@jkkn.ac.in",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Natarajapuram, NH-544 (Salem–Coimbatore Highway)",
-    "addressLocality": "Komarapalayam",
-    "addressRegion": "Tamil Nadu",
-    "postalCode": "638183",
-    "addressCountry": "IN"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": "11.4446062",
-    "longitude": "77.7309852"
-  },
-  "openingHoursSpecification": [
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-      "opens": "09:00",
-      "closes": "17:00"
-    }
-  ],
-  "priceRange": "₹₹",
-  "medicalSpecialty": "Dentistry",
-  "image": "https://dental.jkkn.ac.in/images/jkkn-dental-logo.webp",
-  "parentOrganization": { "@type": "Organization", "name": "JKKN Institutions", "url": "https://jkkn.ac.in/" }
-};
 
 const breadcrumbSchema = {
   "@context": "https://schema.org",
@@ -195,9 +118,8 @@ export default function TiruppurLayout({
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(dentalOrganizationSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />

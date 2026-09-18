@@ -5,7 +5,6 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import StructuredData from '@/components/StructuredData';
-import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 import Breadcrumb from '@/components/Breadcrumb';
 import MdsSpecialityNav from '@/components/mds/MdsSpecialityNav';
 import { generateSpeakableWebPageSchema } from '@/lib/metadata';
@@ -15,12 +14,15 @@ export default function MDSConservativeDentistry() {
   const courseSchema = {
     "@context": "https://schema.org",
     "@type": "Course",
+    "@id": "https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/conservative-dentistry-and-endodontics/#course",
+    "url": "https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/conservative-dentistry-and-endodontics/",
     "name": "MDS Conservative Dentistry & Endodontics",
     "description": "Transform your dental career with our advanced 3-year postgraduate program. Master root canal therapy, restorative dentistry, and dental trauma management at one of Tamil Nadu's premier dental institutions.",
     "provider": {
       "@type": "CollegeOrUniversity",
+      "@id": "https://dental.jkkn.ac.in/#organization",
       "name": "JKKN Dental College & Hospital",
-      "url": "https://dental.jkkn.ac.in"
+      "url": "https://dental.jkkn.ac.in/"
     },
     "courseCode": "MDS-CONS",
     "educationalCredentialAwarded": "Master of Dental Surgery in Conservative Dentistry & Endodontics",
@@ -107,19 +109,13 @@ export default function MDSConservativeDentistry() {
     <main className="overflow-x-hidden">
       <StructuredData data={courseSchema} />
       <StructuredData data={faqSchema} />
-      <BreadcrumbSchema items={[
+      <StructuredData data={speakableSchema} />
+      <Header />
+      <Breadcrumb items={[
         { name: 'Home', url: 'https://dental.jkkn.ac.in/' },
         { name: 'Academics', url: 'https://dental.jkkn.ac.in/academics/' },
         { name: 'MDS Programs', url: 'https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/' },
         { name: 'Conservative Dentistry & Endodontics', url: 'https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/conservative-dentistry-and-endodontics/' },
-      ]} />
-      <StructuredData data={speakableSchema} />
-      <Header />
-      <Breadcrumb items={[
-        { name: 'Home', url: 'https://dental.jkkn.ac.in' },
-        { name: 'Academics', url: 'https://dental.jkkn.ac.in/academics' },
-        { name: 'MDS Programs', url: 'https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds' },
-        { name: 'Conservative Dentistry & Endodontics', url: 'https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/conservative-dentistry-and-endodontics' },
       ]} />
 
       {/* Hero Section */}

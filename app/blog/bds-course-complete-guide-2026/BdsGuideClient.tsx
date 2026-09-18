@@ -586,11 +586,9 @@ export default function BdsGuideClient({ faqs }: { faqs: FAQ[] }) {
                         )}
                       </div>
                     </button>
-                    {openFaq === i && (
-                      <div className="px-5 pb-4 pt-3 text-sm text-gray-600 leading-relaxed border-t border-gray-100 faq-answer">
+                    <div className={`px-5 pb-4 pt-3 text-sm text-gray-600 leading-relaxed border-t border-gray-100 faq-answer${openFaq === i ? "" : " hidden"}`}>
                         {faq.answer}
                       </div>
-                    )}
                   </div>
                 ))}
               </div>

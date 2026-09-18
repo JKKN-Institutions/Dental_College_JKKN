@@ -1,7 +1,9 @@
 import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { jkknSameAsUrls } from '@/lib/metadata';
+import { faqPageSchema } from '@/lib/faq';
+import { dentalOrganizationSchema, dentalOrgRef, DENTAL_COURSE_URLS } from '@/lib/schema/organization';
+import { faqs } from './faqs';
 
 export const metadata: Metadata = {
   title: { absolute: 'Dental Colleges in Salem | JKKN Dental College' },
@@ -42,65 +44,18 @@ export const metadata: Metadata = {
   },
 };
 
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    { "@type": "Question", "name": "Are there any dental colleges in Salem?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. There are dental colleges in and around Salem, Tamil Nadu. Within Salem city, Vinayaka Mission's Sankarachariyar Dental College is a private institution. Additionally, JKKN Dental College and Hospital is located sixty kilometres from Salem at Komarapalayam, Namakkal, on NH-544 (Salem to Coimbatore Highway), and is NDC-approved and NAAC accredited." } },
-    { "@type": "Question", "name": "How many dental colleges are in Salem district?", "acceptedAnswer": { "@type": "Answer", "text": "There are dental institutions in and near Salem district. Vinayaka Mission's Sankarachariyar Dental College is located within Salem city. Government Medical College Salem also has dental programs. JKKN Dental College and Hospital, located sixty kilometres away at Komarapalayam, Namakkal via NH-544, is the nearest NDC-approved and NAAC accredited private dental college outside the city." } },
-    { "@type": "Question", "name": "Which are the best dental colleges in Salem?", "acceptedAnswer": { "@type": "Answer", "text": "JKKN Dental College & Hospital is among the top dental colleges in Salem region, located approximately sixty kilometres from Salem on NH-544. Approved by NDC, NAAC accredited and affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai, it offers BDS with one hundred seats and MDS in five specializations with strong placement support." } },
-    { "@type": "Question", "name": "How far is JKKN Dental from Salem?", "acceptedAnswer": { "@type": "Answer", "text": "JKKN Dental is approximately sixty kilometres from Salem city centre, which takes about one hour by road via NH-544 (Salem-Coimbatore Highway). TN State Transport buses from Salem New Bus Stand to Komarapalayam run regularly throughout the day." } },
-    { "@type": "Question", "name": "What is the NEET cut-off for BDS at JKKN Dental?", "acceptedAnswer": { "@type": "Answer", "text": "The NEET cut-off for BDS admission at JKKN Dental College & Hospital varies each year based on counselling rounds. Contact the admission office at plus nine one nine three four five eight five five zero zero one for the latest cut-off information and seat availability for the current admission cycle." } },
-    { "@type": "Question", "name": "Does JKKN Dental have its own hospital?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, JKKN Dental College & Hospital has its own 200+ chair dental hospital and 100+ bed facility on campus. Patients from Salem, Namakkal, and surrounding districts visit daily — with 500+ patients treated every day, learners gain extensive hands-on clinical experience from Year 1." } },
-    { "@type": "Question", "name": "What MDS specialisations are available?", "acceptedAnswer": { "@type": "Answer", "text": "JKKN Dental offers MDS in five specialisations: Orthodontics & Dentofacial Orthopaedics, Prosthodontics & Crown and Bridge, Oral Medicine & Radiology, Conservative Dentistry & Endodontics, and Periodontics. Salem learners can commute or stay on campus while accessing 500+ daily patient cases for their postgraduate research and clinical training." } },
-    { "@type": "Question", "name": "Does JKKN Dental provide hostel for Salem learners?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, JKKN Dental provides separate hostel facilities for boys and girls. Learners from Salem can also opt for daily commute as the campus is approximately one hour away via NH-544. College transport services are also available." } },
-    { "@type": "Question", "name": "What is the BDS fee at dental colleges near Salem?", "acceptedAnswer": { "@type": "Answer", "text": "At JKKN Dental College and Hospital, BDS tuition fee is as per Government Quota norms under Government Quota and four lakh fifty thousand rupees per year (Dayscholar with Instruments) or five lakh fifty thousand rupees per year (With Hostel and Instruments) under Management Quota. Contact nine three four five eight five five zero zero one or visit admission dot jkkn dot ac dot in for the latest fee structure and 2026 admission details." } },
-    { "@type": "Question", "name": "Can Salem learners get BDS admission at JKKN through NEET?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, Salem learners can secure BDS admission at JKKN Dental College and Hospital through NEET-UG scores via Tamil Nadu DME state quota counselling or management quota. Eighty-five percent of seats are allocated through state quota and fifteen percent through All India Quota. JKKN is sixty kilometres from Salem via NH-544." } },
-    { "@type": "Question", "name": "How can I apply for admission at JKKN Dental?", "acceptedAnswer": { "@type": "Answer", "text": "Salem learners can apply online at https://dental.jkkn.ac.in/ or visit the campus directly — approximately one hour via NH-544. Admissions for BDS and MDS 2026-27 are currently open. Call +91 9345855001 for personalised guidance on eligibility, fees, and the counselling process." } },
-  ]
-};
+const faqSchema = faqPageSchema(faqs);
 
-const orgSchema = {
-  "@context": "https://schema.org",
-  "@type": "EducationalOrganization",
-  "@id": "https://dental.jkkn.ac.in/#organization",
-  "name": "JKKN Dental College & Hospital",
-  "alternateName": "JKKN Dental",
-  "url": "https://dental.jkkn.ac.in/",
-  "logo": "https://dental.jkkn.ac.in/images/jkkn-dental-logo.webp",
-  "description": "JKKN Dental College & Hospital is a NDC-approved dental college located at Komarapalayam, Namakkal, Tamil Nadu, approximately 60 km from Salem via NH-544. Offering BDS (100 seats) and MDS programs, with 200+ dental chairs, 500+ daily patients, and 93.9% placed or in higher studies (2024-25 batch).",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Natarajapuram, NH-544 (Salem-Coimbatore Highway)",
-    "addressLocality": "Komarapalayam",
-    "addressRegion": "Tamil Nadu",
-    "postalCode": "638183",
-    "addressCountry": "IN"
-  },
-  "telephone": "+919345855001",
-  "email": "info@jkkn.ac.in",
-  "foundingDate": "1987",
-  "parentOrganization": { "@type": "Organization", "name": "JKKN Institutions", "url": "https://jkkn.ac.in/" },
-  "hasCredential": [
-    { "@type": "EducationalOccupationalCredential", "credentialCategory": "NDC Approved" },
-    { "@type": "EducationalOccupationalCredential", "credentialCategory": "NAAC Accredited" }
-  ],
-  "memberOf": { "@type": "Organization", "name": "The Tamil Nadu Dr. M.G.R. Medical University, Chennai" },
-  "geo": { "@type": "GeoCoordinates", "latitude": "11.4446062", "longitude": "77.7309852" },
-  "sameAs": [
-    ...jkknSameAsUrls
-  ]
-};
 
 const courseSchema = [
   {
     "@context": "https://schema.org",
     "@type": "Course",
-    "@id": "https://dental.jkkn.ac.in/academics/bds/#course",
-    "url": "https://dental.jkkn.ac.in/academics/bds/",
+    "@id": `${DENTAL_COURSE_URLS.bds}#course`,
+    "url": DENTAL_COURSE_URLS.bds,
     "name": "BDS (Bachelor of Dental Surgery)",
     "description": "4-year undergraduate dental programme with 1-year internship. NDC approved, 100 seats. NEET qualified admission.",
-    "provider": { "@type": "EducationalOrganization", "name": "JKKN Dental College & Hospital", "url": "https://dental.jkkn.ac.in/" },
+    "provider": dentalOrgRef,
     "educationalLevel": "Undergraduate",
     "timeRequired": "P5Y",
     "occupationalCategory": "Dentist",
@@ -108,62 +63,24 @@ const courseSchema = [
       "@type": "Offer",
       "category": "Tuition",
       "priceCurrency": "INR",
-      "price": "250000",
+      
       "description": "Government Quota fee — as per Govt Norms. Management Quota: INR 450000/year (Dayscholar with Instruments) or INR 550000/year (With Hostel and Instruments)."
     }
   },
   {
     "@context": "https://schema.org",
     "@type": "Course",
-    "@id": "https://dental.jkkn.ac.in/academics/mds/#course",
-    "url": "https://dental.jkkn.ac.in/academics/mds/",
+    "@id": `${DENTAL_COURSE_URLS.mds}#course`,
+    "url": DENTAL_COURSE_URLS.mds,
     "name": "MDS (Master of Dental Surgery)",
     "description": "3-year postgraduate dental programme in the five sanctioned specialisations: Conservative Dentistry & Endodontics, Orthodontics & Dentofacial Orthopaedics, Prosthodontics & Crown and Bridge, Oral Medicine & Radiology, and Periodontics.",
-    "provider": { "@type": "EducationalOrganization", "name": "JKKN Dental College & Hospital", "url": "https://dental.jkkn.ac.in/" },
+    "provider": dentalOrgRef,
     "educationalLevel": "Postgraduate",
     "timeRequired": "P3Y",
     "occupationalCategory": "Dental Specialist"
   }
 ];
 
-const localBusinessSchema = {
-  "@context": "https://schema.org",
-  "@type": "Dentist",
-  "@id": "https://dental.jkkn.ac.in/#dentist",
-  "name": "JKKN Dental College & Hospital",
-  "image": "https://dental.jkkn.ac.in/images/jkkn-dental-logo.webp",
-  "url": "https://dental.jkkn.ac.in/",
-  "telephone": "+919345855001",
-  "email": "info@jkkn.ac.in",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Natarajapuram, NH-544 (Salem-Coimbatore Highway)",
-    "addressLocality": "Komarapalayam",
-    "addressRegion": "Tamil Nadu",
-    "postalCode": "638183",
-    "addressCountry": "IN"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": "11.4446062",
-    "longitude": "77.7309852"
-  },
-  "openingHoursSpecification": [
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-      "opens": "09:00",
-      "closes": "17:00"
-    }
-  ],
-  "priceRange": "₹₹",
-  "medicalSpecialty": "Dentistry",
-  "parentOrganization": {
-    "@type": "Organization",
-    "name": "JKKN Institutions",
-    "url": "https://jkkn.ac.in/"
-  }
-};
 
 const breadcrumbSchema = {
   "@context": "https://schema.org",
@@ -208,9 +125,8 @@ export default function SalemLayout({
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(dentalOrganizationSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />

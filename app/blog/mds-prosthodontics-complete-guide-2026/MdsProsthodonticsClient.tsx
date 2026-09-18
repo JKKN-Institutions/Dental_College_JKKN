@@ -401,7 +401,7 @@ export default function MdsProsthodonticsClient({ faqs }: { faqs: FAQ[] }) {
                         {openFaq === i ? <ChevronUp className="w-3.5 h-3.5 text-[#006837]" /> : <span className="text-[#006837] text-base font-bold leading-none">&times;</span>}
                       </div>
                     </button>
-                    {openFaq === i && <div className="px-5 pb-4 pt-3 text-sm text-gray-600 leading-relaxed border-t border-gray-100 faq-answer">{faq.answer}</div>}
+                    <div className={`px-5 pb-4 pt-3 text-sm text-gray-600 leading-relaxed border-t border-gray-100 faq-answer${openFaq === i ? "" : " hidden"}`}>{faq.answer}</div>
                   </div>
                 ))}
               </div>

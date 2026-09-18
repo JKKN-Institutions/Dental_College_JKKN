@@ -1,5 +1,7 @@
 import { Metadata } from 'next';
-import { jkknSameAsUrls } from '@/lib/metadata';
+import { faqPageSchema } from '@/lib/faq';
+import { dentalOrganizationSchema, dentalOrgRef, DENTAL_COURSE_URLS } from '@/lib/schema/organization';
+import { faqs } from './faqs';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
@@ -42,62 +44,18 @@ export const metadata: Metadata = {
   },
 };
 
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    { "@type": "Question", "name": "Can Kerala students join BDS at JKKN Dental College in Tamil Nadu?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Students from Kerala are admitted to JKKN Dental College and Hospital under the Management Quota with NEET UG qualification. The Government Quota seats are filled through DME Tamil Nadu state counselling for Tamil Nadu students, while Management Quota admission is open to students from Kerala and other states." } },
-    { "@type": "Question", "name": "How far is JKKN Dental College from Kerala?", "acceptedAnswer": { "@type": "Answer", "text": "JKKN Dental College at Komarapalayam, Namakkal is approximately one hundred and sixty-five kilometres from Palakkad, approximately two hundred and forty kilometres from Thrissur, and approximately three hundred kilometres from Kochi. Most Kerala to Chennai trains stop at Erode Junction, which is eighteen kilometres from the campus." } },
-    { "@type": "Question", "name": "How do Kerala students travel to JKKN Dental College?", "acceptedAnswer": { "@type": "Answer", "text": "The easiest route is by train — the Kerala to Chennai main rail line passes through Palakkad, Coimbatore and Tiruppur to Erode Junction, eighteen kilometres from the campus. By road, take NH-544 from Palakkad through Coimbatore towards Salem; Komarapalayam is on NH-544 itself." } },
-    { "@type": "Question", "name": "Does JKKN Dental provide hostel for Kerala students?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. JKKN Dental provides separate hostels for boys and girls with mess facility on a full residential campus. Learners from Kerala stay on campus through the term and travel home during holidays on the Kerala–Chennai rail line via Erode Junction." } },
-    { "@type": "Question", "name": "Is BDS at JKKN taught in English?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. The BDS and MDS programmes at JKKN Dental College are taught in English, as in all NDC-approved dental colleges in India, so Kerala students face no language barrier in academics. The hospital's patient base is largely Tamil-speaking, which learners pick up naturally during clinical years." } },
-    { "@type": "Question", "name": "Can students from Bengaluru and other states also apply?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Students from Karnataka, including Bengaluru, and from other states are admitted under the Management Quota with NEET UG qualification, the same route as Kerala students. Call plus ninety-one nine three four five eight five five zero zero one for seat availability." } },
-    { "@type": "Question", "name": "Does JKKN Dental have its own hospital?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, JKKN Dental College & Hospital has a 200+ chair dental hospital and 100+ bed facility right on campus. Learners gain hands-on clinical training from Year 1 of the BDS programme, treating patients who visit from surrounding districts every day." } },
-    { "@type": "Question", "name": "What MDS specialisations are available?", "acceptedAnswer": { "@type": "Answer", "text": "JKKN Dental offers MDS in five specialisations: Orthodontics & Dentofacial Orthopaedics, Prosthodontics & Crown and Bridge, Oral Medicine & Radiology, Conservative Dentistry & Endodontics, and Periodontics. Each department has modern learning labs, and the attached hospital ensures ample clinical cases for postgraduate research and training." } },
-    { "@type": "Question", "name": "What is the BDS fee for Kerala students at JKKN Dental College?", "acceptedAnswer": { "@type": "Answer", "text": "Under the Management Quota, BDS tuition fee at JKKN Dental College and Hospital is four lakh fifty thousand rupees per year (Dayscholar with Instruments) or five lakh fifty thousand rupees per year (With Hostel and Instruments). Contact nine three four five eight five five zero zero one for the latest 2026-27 fee structure." } },
-  ]
-};
+const faqSchema = faqPageSchema(faqs);
 
-const orgSchema = {
-  "@context": "https://schema.org",
-  "@type": "EducationalOrganization",
-  "@id": "https://dental.jkkn.ac.in/#organization",
-  "name": "JKKN Dental College & Hospital",
-  "alternateName": "JKKN Dental",
-  "url": "https://dental.jkkn.ac.in/",
-  "logo": "https://dental.jkkn.ac.in/images/jkkn-dental-logo.webp",
-  "description": "NDC approved, NAAC accredited dental college affiliated to TN Dr. MGR Medical University. Offers BDS and MDS programmes with 93.9% placed or in higher studies (2024-25 batch).",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Natarajapuram, NH-544 (Salem–Coimbatore Highway)",
-    "addressLocality": "Komarapalayam",
-    "addressRegion": "Tamil Nadu",
-    "postalCode": "638183",
-    "addressCountry": "IN"
-  },
-  "telephone": "+919345855001",
-  "email": "info@jkkn.ac.in",
-  "foundingDate": "1987",
-  "parentOrganization": { "@type": "Organization", "name": "JKKN Institutions", "url": "https://jkkn.ac.in/" },
-  "hasCredential": [
-    { "@type": "EducationalOccupationalCredential", "credentialCategory": "NDC Approved" },
-    { "@type": "EducationalOccupationalCredential", "credentialCategory": "NAAC Accredited" }
-  ],
-  "accreditedBy": { "@type": "Organization", "name": "National Dental Commission (formerly Dental Council of India)" },
-  "memberOf": { "@type": "Organization", "name": "The Tamil Nadu Dr. M.G.R. Medical University, Chennai" },
-  "geo": { "@type": "GeoCoordinates", "latitude": "11.4446062", "longitude": "77.7309852" },
-  "sameAs": jkknSameAsUrls
-};
 
 const courseSchema = [
   {
     "@context": "https://schema.org",
     "@type": "Course",
-    "@id": "https://dental.jkkn.ac.in/academics/bds/#course",
-    "url": "https://dental.jkkn.ac.in/academics/bds/",
+    "@id": `${DENTAL_COURSE_URLS.bds}#course`,
+    "url": DENTAL_COURSE_URLS.bds,
     "name": "BDS (Bachelor of Dental Surgery)",
     "description": "4-year undergraduate dental programme with 1-year internship. NDC approved, 100 seats. NEET qualified admission.",
-    "provider": { "@type": "EducationalOrganization", "name": "JKKN Dental College & Hospital", "url": "https://dental.jkkn.ac.in/" },
+    "provider": dentalOrgRef,
     "educationalLevel": "Undergraduate",
     "timeRequired": "P5Y",
     "occupationalCategory": "Dentist"
@@ -105,52 +63,17 @@ const courseSchema = [
   {
     "@context": "https://schema.org",
     "@type": "Course",
-    "@id": "https://dental.jkkn.ac.in/academics/mds/#course",
-    "url": "https://dental.jkkn.ac.in/academics/mds/",
+    "@id": `${DENTAL_COURSE_URLS.mds}#course`,
+    "url": DENTAL_COURSE_URLS.mds,
     "name": "MDS (Master of Dental Surgery)",
     "description": "3-year postgraduate dental programme in the five sanctioned specialisations: Conservative Dentistry & Endodontics, Orthodontics & Dentofacial Orthopaedics, Prosthodontics & Crown and Bridge, Oral Medicine & Radiology, and Periodontics.",
-    "provider": { "@type": "EducationalOrganization", "name": "JKKN Dental College & Hospital", "url": "https://dental.jkkn.ac.in/" },
+    "provider": dentalOrgRef,
     "educationalLevel": "Postgraduate",
     "timeRequired": "P3Y",
     "occupationalCategory": "Dental Specialist"
   }
 ];
 
-const localBusinessSchema = {
-  "@context": "https://schema.org",
-  "@type": ["LocalBusiness", "Dentist"],
-  "@id": "https://dental.jkkn.ac.in/#dentist",
-  "name": "JKKN Dental College & Hospital",
-  "image": "https://dental.jkkn.ac.in/images/jkkn-dental-logo.webp",
-  "url": "https://dental.jkkn.ac.in/",
-  "telephone": "+919345855001",
-  "email": "info@jkkn.ac.in",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Natarajapuram, NH-544 (Salem–Coimbatore Highway)",
-    "addressLocality": "Komarapalayam",
-    "addressRegion": "Tamil Nadu",
-    "postalCode": "638183",
-    "addressCountry": "IN"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": "11.4446062",
-    "longitude": "77.7309852"
-  },
-  "hasMap": "https://maps.app.goo.gl/mXx6rFRqpS9U76BK6",
-  "openingHoursSpecification": [
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-      "opens": "09:00",
-      "closes": "17:00"
-    }
-  ],
-  "priceRange": "₹₹",
-  "medicalSpecialty": "Dentistry",
-  "parentOrganization": { "@type": "Organization", "name": "JKKN Institutions", "url": "https://jkkn.ac.in/" }
-};
 
 const breadcrumbSchema = {
   "@context": "https://schema.org",
@@ -195,9 +118,8 @@ export default function KeralaLayout({
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(dentalOrganizationSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />

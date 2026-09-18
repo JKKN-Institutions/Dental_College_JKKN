@@ -5,6 +5,9 @@ import Footer from '@/components/Footer';
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { ArrowLeft, ExternalLink } from 'lucide-react';
+import StructuredData from '@/components/StructuredData';
+import { faqPageSchema } from '@/lib/faq';
+import { dentalOrgRef } from '@/lib/schema/organization';
 
 export const dynamic = 'force-dynamic';
 
@@ -186,8 +189,57 @@ export default async function FacultyProfilePage({
   const tableHead = 'text-xs font-semibold text-[#1B5E20] uppercase tracking-wide';
   const chip = 'px-3 py-1.5 rounded-full border border-gray-200 text-sm text-gray-700';
 
+  // Measured 2026-09-18: all 46 live faculty profiles shipped ZERO JSON-LD. A profile is the one
+  // page type where a Person node is unambiguous. Only fields the page renders are used - the
+  // email column is fetched for the page but not shown, so it is deliberately left out.
+  const profileUrl = `https://dental.jkkn.ac.in/faculty/${slug}/`;
+  const scholarLinks = [m.google_scholar_url, m.researchgate_url, m.orcid_url].filter(
+    (u: unknown): u is string => typeof u === 'string' && u.startsWith('http')
+  );
+  const personSchema = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": `${profileUrl}#person`,
+    "name": m.name,
+    "url": profileUrl,
+    ...(m.designation && { "jobTitle": m.designation }),
+    ...(m.photo_url && { "image": m.photo_url }),
+    ...(m.summary && { "description": m.summary }),
+    "worksFor": dentalOrgRef,
+    "affiliation": dentalOrgRef,
+    ...(m.department && {
+      "memberOf": { "@type": "Organization", "name": `${m.department}, JKKN Dental College & Hospital` },
+    }),
+    ...(academicQualifications.length > 0 && {
+      "hasCredential": academicQualifications
+        .filter((q) => q.degree)
+        .map((q) => ({
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "degree",
+          "name": [q.degree, q.specialisation].filter(Boolean).join(' - '),
+          ...(q.university && { "recognizedBy": { "@type": "Organization", "name": q.university } }),
+        })),
+    }),
+    ...(areasOfSpecialisation.length > 0 && { "knowsAbout": areasOfSpecialisation }),
+    ...(scholarLinks.length > 0 && { "sameAs": scholarLinks }),
+  };
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://dental.jkkn.ac.in/" },
+      { "@type": "ListItem", "position": 2, "name": "Faculty", "item": "https://dental.jkkn.ac.in/faculty/" },
+      { "@type": "ListItem", "position": 3, "name": m.name, "item": profileUrl },
+    ],
+  };
+  const profileFaqSchema =
+    faqs.length > 0 ? faqPageSchema(faqs.map((f) => ({ q: f.question, a: f.answer }))) : null;
+
   return (
     <>
+      <StructuredData data={personSchema} />
+      <StructuredData data={breadcrumbSchema} />
+      {profileFaqSchema && <StructuredData data={profileFaqSchema} />}
       <Header />
       <main className="min-h-screen bg-[#FBF8F3]">
         {/* ── Hero ── */}

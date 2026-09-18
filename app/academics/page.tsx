@@ -5,7 +5,7 @@ import Footer from '@/components/Footer';
 import FaqAccordion from '@/components/FaqAccordion';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import { BookOpen, Target, Calendar, Trophy, Handshake, Plus, Gem, MessageCircle, LucideIcon } from 'lucide-react';
-import { generateBreadcrumbSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
+import { generateSpeakableWebPageSchema } from '@/lib/metadata';
 import StructuredData from '@/components/StructuredData';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
@@ -78,7 +78,6 @@ export const metadata: Metadata = {
 };
 
 export default function Academics() {
-  const breadcrumbSchema = generateBreadcrumbSchema('/academics/');
   const speakableSchema = generateSpeakableWebPageSchema({
     title: 'Academics - JKKN Dental College & Hospital',
     description: 'Explore academic programs at JKKN Dental College. BDS (100 seats), 5 MDS specializations, NDC-approved curriculum, and excellence in dental education.',
@@ -92,7 +91,6 @@ export default function Academics() {
         { name: 'Home', url: 'https://dental.jkkn.ac.in/' },
         { name: 'Academics', url: 'https://dental.jkkn.ac.in/academics/' },
       ]} />
-      <StructuredData data={breadcrumbSchema} />
       <StructuredData data={speakableSchema} />
       <StructuredData data={faqSchema} />
       <Header />

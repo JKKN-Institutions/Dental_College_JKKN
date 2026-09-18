@@ -33,12 +33,15 @@ export const metadata: Metadata = {
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "EducationalOrganization",
+  "@id": "https://dental.jkkn.ac.in/#organization",
+  "logo": "https://dental.jkkn.ac.in/images/dental-logo.png",
   "name": "JKKN Dental College & Hospital",
   "url": "https://dental.jkkn.ac.in",
   "offers": [
     {
       "@type": "Course",
-      "@id": "https://dental.jkkn.ac.in/bds/#course",
+      "@id": "https://dental.jkkn.ac.in/academics/details-of-academic-programs/bds/#course",
+      "url": "https://dental.jkkn.ac.in/academics/details-of-academic-programs/bds/",
       "name": "Bachelor of Dental Surgery (BDS)",
       "description": "4-year undergraduate dental program plus 1-year internship at JKKN Dental College & Hospital, NDC approved",
       "provider": {
