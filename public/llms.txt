@@ -91,7 +91,7 @@ The college has 9 academic departments providing teaching and clinical training 
 - District: Namakkal, Tamil Nadu
 - Nearest Cities by road: Erode (~22 km), Salem (~58 km), Namakkal town (~66 km), Tiruppur (~67 km), Coimbatore (~105 km)
 - Highway: NH-544 (Salem-Coimbatore National Highway)
-- Coordinates: 11.4452°N, 77.7265°E
+- Coordinates: 11.4446°N, 77.7310°E
 - Google Maps: https://maps.app.goo.gl/mXx6rFRqpS9U76BK6
 
 ## Admissions

@@ -67,9 +67,17 @@ export const collegeFacts = {
   ],
 
   // === INFRASTRUCTURE ===
-  dentalChairs: 200, // Number of dental chairs in hospital
-  hospitalBeds: 100, // Note: Beds and chairs are different!
-  dailyPatients: 500, // Average daily patient footfall
+  // SOURCE: confirmed with the JKKN college office on 2026-09-18. Not a published
+  // document - a verbal confirmation from the institution, recorded here with its date
+  // so the figure is traceable to someone rather than to nobody.
+  dentalChairs: 200, // 200+ published; confirmed by the college office 2026-09-18
+  hospitalBeds: 100, // Beds and chairs are different things - do not merge them
+  dailyPatients: 500, // 500+ published; confirmed by the college office 2026-09-18
+  // NOT A CONTRADICTION WITH NIRF. The NIRF form asks one patient question and fixes its
+  // year: "Average OPD attendance in the calendar year 2022" = 437, and that 2022 is the
+  // form's wording, not a stale entry. 437 OPD in 2022 and 500+ daily today are different
+  // years and, since OPD excludes departmental clinic visits, different scopes. If a portal
+  // or a parent raises it, that is the answer - do not "correct" 500+ down to 437.
 
   // === PLACEMENTS ===
   // SOURCE: JKKN's own NIRF 2026 submission to the Ministry of Education,

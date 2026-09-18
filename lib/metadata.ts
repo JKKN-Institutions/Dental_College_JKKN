@@ -507,8 +507,8 @@ export function generateLocalBusinessSchema() {
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": "11.445180",
-      "longitude": "77.726549"
+      "latitude": "11.4446062",
+      "longitude": "77.7309852"
     },
     "areaServed": [
       { "@type": "City", "name": "Namakkal" },
@@ -572,8 +572,8 @@ export function generateEducationalOrganizationSchema() {
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": "11.445180",
-      "longitude": "77.726549"
+      "latitude": "11.4446062",
+      "longitude": "77.7309852"
     },
     "contactPoint": [
       {

@@ -113,8 +113,8 @@ export default function BDSProgram() {
       },
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": "11.445180",
-        "longitude": "77.726549"
+        "latitude": "11.4446062",
+        "longitude": "77.7309852"
       }
     },
     "educationalCredentialAwarded": "BDS (Bachelor of Dental Surgery)",

@@ -159,7 +159,7 @@ const orgSchema = {
     { "@type": "EducationalOccupationalCredential", "credentialCategory": "NAAC Accredited" }
   ],
   "memberOf": { "@type": "Organization", "name": "The Tamil Nadu Dr. M.G.R. Medical University, Chennai" },
-  "geo": { "@type": "GeoCoordinates", "latitude": "11.4120", "longitude": "77.7210" },
+  "geo": { "@type": "GeoCoordinates", "latitude": "11.4446062", "longitude": "77.7309852" },
   "sameAs": jkknSameAsUrls
 };
 
