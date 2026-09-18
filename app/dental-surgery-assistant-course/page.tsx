@@ -290,8 +290,8 @@ const localBusinessSchema = {
   },
   geo: {
     "@type": "GeoCoordinates",
-    latitude: 11.4478,
-    longitude: 77.6964,
+    latitude: 11.4446062,
+    longitude: 77.7309852,
   },
 };
 

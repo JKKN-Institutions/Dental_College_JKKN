@@ -84,6 +84,11 @@ export default function BDSProgram() {
   const faqSchema = faqPageSchema(bdsPageFaqs);
   const [activeYear, setActiveYear] = useState('first');
 
+  // Learner testimonials are published only when a consented, verified quote is held
+  // on record. Three placeholder testimonials, signed '[Student Name - UPDATE]' and
+  // rendering live, were removed on 2026-09-18.
+  const bdsLearnerVoices: { name: string; batch: string; quote: string }[] = [];
+
   // Enhanced Course Schema for BDS
   const courseSchema = {
     "@context": "https://schema.org",
@@ -108,8 +113,8 @@ export default function BDSProgram() {
       },
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": "11.445180",
-        "longitude": "77.726549"
+        "latitude": "11.4446062",
+        "longitude": "77.7309852"
       }
     },
     "educationalCredentialAwarded": "BDS (Bachelor of Dental Surgery)",
@@ -1369,6 +1374,7 @@ export default function BDSProgram() {
       {/* ============================== */}
       {/* SECTION 19: TESTIMONIALS        */}
       {/* ============================== */}
+      {bdsLearnerVoices.length > 0 && (
       <section className="py-16 px-4 bg-gradient-to-br from-[#006837] to-[#002309]">
         <div className="max-w-7xl mx-auto">
           <div className="flex justify-center mb-6">
@@ -1388,23 +1394,7 @@ export default function BDSProgram() {
           </p>
 
           <div className="grid md:grid-cols-3 gap-6">
-            {[
-              {
-                name: '[Student Name — UPDATE]',
-                batch: 'BDS Batch [Year — UPDATE]',
-                quote: 'The clinical exposure at JKKN is unmatched. With 500+ patients visiting daily, I got hands-on experience from my second year itself. The 200+ dental chair facility means every learner gets ample practice time, which is rare at other colleges.',
-              },
-              {
-                name: '[Student Name — UPDATE]',
-                batch: 'BDS Batch [Year — UPDATE]',
-                quote: 'The senior learners at JKKN are incredibly supportive. The senior learners bring years of clinical and research experience to the learning studio. The research culture here, with 50+ publications, encouraged me to pursue evidence-based dentistry early in my career.',
-              },
-              {
-                name: '[Student Name — UPDATE]',
-                batch: 'BDS Batch [Year — UPDATE]',
-                quote: 'JKKN helped me secure an international placement opportunity. The placement cell actively connects learners with recruiters from NHS UK and dental practices in UAE. The 93.9% placed or in higher studies (2024-25 batch) is backed by genuine support from the institution.',
-              },
-            ].map((testimonial, idx) => (
+            {bdsLearnerVoices.map((testimonial, idx) => (
               <div key={idx} className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6">
                 <svg className="w-8 h-8 text-[#7cb983] mb-4" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
@@ -1419,6 +1409,8 @@ export default function BDSProgram() {
           </div>
         </div>
       </section>
+      )}
+
 
       {/* ============================== */}
       {/* SECTION 20: FAQ (15 Questions)  */}

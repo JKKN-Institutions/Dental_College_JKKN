@@ -51,7 +51,7 @@ const faqSchema = {
       "name": "Which is the best dental college near Coimbatore?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "JKKN Dental College & Hospital in Komarapalayam, Namakkal is the leading dental institution within 120 km of Coimbatore, offering a 93.9% placed-or-higher-studies rate (2024-25 batch) and the highest BDS-to-MDS conversion record in the region. The college is approved by the National Dental Commission (formerly Dental Council of India) and affiliated with TN Dr. MGR Medical University. Learners from Coimbatore reach the campus in approximately 1.5 hours via NH-544."
+        "text": "JKKN Dental College & Hospital in Komarapalayam, Namakkal is a National Dental Commission approved dental college 108 km from Coimbatore on NH-544. Its NIRF 2026 filing to the Ministry of Education records 93.9% of the 2024-25 BDS batch placed or in higher studies, and 7 of 7 MDS graduates placed in each of the last three years. The college is approved by the National Dental Commission (formerly Dental Council of India) and affiliated with TN Dr. MGR Medical University. Learners from Coimbatore reach the campus in approximately 1.5 hours via NH-544."
       }
     },
     {
@@ -171,13 +171,13 @@ const orgSchema = {
     { "@type": "EducationalOccupationalCredential", "credentialCategory": "National Dental Commission Approval" }
   ],
   "memberOf": { "@type": "Organization", "name": "The Tamil Nadu Dr. M.G.R. Medical University, Chennai" },
-  "geo": { "@type": "GeoCoordinates", "latitude": "11.4120", "longitude": "77.7210" },
+  "geo": { "@type": "GeoCoordinates", "latitude": "11.4446062", "longitude": "77.7309852" },
   "serviceArea": {
     "@type": "GeoCircle",
     "geoMidpoint": {
       "@type": "GeoCoordinates",
-      "latitude": "11.4445",
-      "longitude": "77.6992"
+      "latitude": "11.4446062",
+      "longitude": "77.7309852"
     },
     "geoRadius": "150000"
   },

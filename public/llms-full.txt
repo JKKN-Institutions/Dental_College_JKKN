@@ -31,7 +31,7 @@
 - **State:** Tamil Nadu
 - **Country:** India
 - **Pincode:** 638183
-- **Coordinates:** 11.4452°N, 77.7265°E
+- **Coordinates:** 11.4446°N, 77.7310°E
 - **Highway:** NH-544 (Salem-Coimbatore National Highway)
 - **Google Maps:** https://maps.app.goo.gl/mXx6rFRqpS9U76BK6
 
