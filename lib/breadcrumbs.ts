@@ -49,9 +49,18 @@ export const PATH_ALIASES: Record<string, string> = {
   '/administration': '/our-management',
 };
 
+/**
+ * True only for this exact origin - `SITE_ORIGIN` itself or `SITE_ORIGIN/...`. A plain
+ * startsWith(SITE_ORIGIN) would also accept "https://dental.jkkn.ac.in.evil.example" (CodeQL:
+ * incomplete URL substring sanitization, flagged on PR #5).
+ */
+export function isSiteUrl(url: string): boolean {
+  return url === SITE_ORIGIN || url.startsWith(SITE_ORIGIN + '/') || url.startsWith(SITE_ORIGIN + '#') || url.startsWith(SITE_ORIGIN + '?');
+}
+
 /** Path of an absolute or relative URL on this site, without trailing slash ('' for the homepage). */
 export function sitePath(url: string): string {
-  const p = url.startsWith(SITE_ORIGIN) ? url.slice(SITE_ORIGIN.length) : url;
+  const p = isSiteUrl(url) ? url.slice(SITE_ORIGIN.length) : url;
   const clean = p.split('#')[0].split('?')[0].replace(/\/+$/, '');
   return PATH_ALIASES[clean] ?? clean;
 }
@@ -72,11 +81,11 @@ export function cleanCrumbs(items: CrumbItem[]): CrumbItem[] {
   return items
     .filter((item, i) => {
       if (i === items.length - 1) return true;
-      if (!item.url.startsWith(SITE_ORIGIN) && !item.url.startsWith('/')) return true; // external (jkkn.ac.in)
+      if (!isSiteUrl(item.url) && !item.url.startsWith('/')) return true; // external (jkkn.ac.in)
       return !NON_PAGE_PATHS.has(sitePath(item.url));
     })
     .map((item) => ({
       name: item.name,
-      url: item.url.startsWith(SITE_ORIGIN) || item.url.startsWith('/') ? siteUrl(item.url) : item.url,
+      url: isSiteUrl(item.url) || item.url.startsWith('/') ? siteUrl(item.url) : item.url,
     }));
 }
