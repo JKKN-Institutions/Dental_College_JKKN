@@ -609,12 +609,11 @@ export default function AdmissionPage() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              Unmatched Clinical Exposure
+              Clinical Exposure from Year 1
             </h2>
             <p className="text-gray-200 max-w-2xl mx-auto">
-              Train at our 200+ chair dental hospital with real patient exposure
-              from Year 1 — one of the highest clinical training volumes in Tamil
-              Nadu
+              Train in our attached dental hospital with real patient exposure
+              from Year 1, across all nine departments.
             </p>
           </div>
 
@@ -814,8 +813,8 @@ export default function AdmissionPage() {
             Ready to Start Your Dental Career?
           </h2>
           <p className="text-lg text-gray-200 mb-8 max-w-2xl mx-auto">
-            Join {collegeFacts.quickStats.totalSeats} learners admitted every year at one of
-            Tamil Nadu&apos;s leading dental institutions. Apply now or reach out to
+            Join {collegeFacts.quickStats.totalSeats} learners admitted every year at a National Dental Commission
+            approved dental college in Tamil Nadu. Apply now or reach out to
             our admission team for guidance.
           </p>
 

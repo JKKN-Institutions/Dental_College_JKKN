@@ -55,7 +55,7 @@ const faqSchema = {
       "name": "Is there a dental college in Namakkal?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. JKKN Dental College & Hospital is the leading dental institution in Namakkal district, located at Komarapalayam on NH-544 (Salem–Coimbatore Highway). Approved by the National Dental Commission (NDC), formerly the Dental Council of India and affiliated to Tamil Nadu Dr. M.G.R. Medical University, Chennai, it offers BDS (100 seats) and MDS (5 specializations) with a 200-chair teaching hospital treating 500+ patients daily."
+        "text": "Yes. JKKN Dental College & Hospital is a National Dental Commission approved dental college in Namakkal district, located at Komarapalayam on NH-544 (Salem–Coimbatore Highway). Approved by the National Dental Commission (NDC), formerly the Dental Council of India and affiliated to Tamil Nadu Dr. M.G.R. Medical University, Chennai, it offers BDS (100 seats) and MDS (5 specializations) with a 200-chair teaching hospital treating 500+ patients daily."
       }
     },
     {
@@ -63,7 +63,7 @@ const faqSchema = {
       "name": "Which is the best dental college in Namakkal district?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "JKKN Dental College & Hospital is the leading dental institution in Namakkal district. Located at Komarapalayam, Namakkal district on NH-544, it is NDC approved, NAAC accredited, and affiliated to Tamil Nadu Dr. M.G.R. Medical University, Chennai. Established in 1987 as part of JKKN Institutions, it is the only institution in the district with a 200-chair teaching hospital."
+        "text": "JKKN Dental College & Hospital is a National Dental Commission approved dental college in Namakkal district. Located at Komarapalayam, Namakkal district on NH-544, it is NDC approved, NAAC accredited, and affiliated to Tamil Nadu Dr. M.G.R. Medical University, Chennai. Established in 1987 as part of JKKN Institutions, it is the only institution in the district with a 200-chair teaching hospital."
       }
     },
     {

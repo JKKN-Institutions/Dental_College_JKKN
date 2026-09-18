@@ -7,11 +7,11 @@ export default function NamakkalPage() {
   const faqs = [
     {
       q: 'Is there a dental college in Namakkal?',
-      a: 'Yes. JKKN Dental College & Hospital is the leading dental institution in Namakkal district, located at Komarapalayam on NH-544. Approved by the National Dental Commission (NDC), formerly the Dental Council of India and affiliated to Tamil Nadu Dr. M.G.R. Medical University, Chennai, it offers BDS (100 seats) and MDS (5 specializations) with a 200-chair teaching hospital treating 500+ patients daily.',
+      a: 'Yes. JKKN Dental College & Hospital is a National Dental Commission approved dental college in Namakkal district, located at Komarapalayam on NH-544. Approved by the National Dental Commission (NDC), formerly the Dental Council of India and affiliated to Tamil Nadu Dr. M.G.R. Medical University, Chennai, it offers BDS (100 seats) and MDS (5 specializations) with a 200-chair teaching hospital treating 500+ patients daily.',
     },
     {
       q: 'Which is the best dental college in Namakkal district?',
-      a: 'JKKN Dental College & Hospital is the leading dental institution in Namakkal district. Located at Komarapalayam on NH-544, it is NDC approved, NAAC accredited, and a NDC-approved dental college in Namakkal district. It is the only institution in the district with a 200-chair teaching hospital and an AI-integrated campus, offering dental education since 1987.',
+      a: 'JKKN Dental College & Hospital is a National Dental Commission approved dental college in Namakkal district. Located at Komarapalayam on NH-544, it is NDC approved, NAAC accredited, and a NDC-approved dental college in Namakkal district. It is the only institution in the district with a 200-chair teaching hospital and an AI-integrated campus, offering dental education since 1987.',
     },
     {
       q: 'How far is JKKN Dental College from Namakkal city?',
