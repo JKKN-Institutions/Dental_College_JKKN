@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   },
 };
 
-const breadcrumbSchema = generateBreadcrumbSchema('/admission/prospectus/');
+const breadcrumbSchema = generateBreadcrumbSchema('/admissions/prospectus/');
 
 export default function Prospectus() {
   return (

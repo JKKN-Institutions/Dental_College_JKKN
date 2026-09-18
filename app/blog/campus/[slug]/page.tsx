@@ -7,6 +7,7 @@ import { ScrollToTop } from '@/components/ScrollToTop';
 import CampusBlogContent from './CampusBlogContent';
 import StructuredData from '@/components/StructuredData';
 import { generateSpeakableWebPageSchema } from '@/lib/metadata';
+import { dentalOrgRef, DENTAL_LOGO_URL } from '@/lib/schema/organization';
 import { renderBlogBody } from '@/lib/blog-render';
 
 export const dynamic = 'force-dynamic';
@@ -90,21 +91,26 @@ export default async function CampusBlogPost({
 
   if (!post) notFound();
 
+  const postUrl = `https://dental.jkkn.ac.in/blog/campus/${post.slug}/`;
+
+  // No "Campus" crumb: /blog/campus/ has no page and answered 404 on all 48 live posts
+  // (measured 2026-09-18). A breadcrumb item must be a real URL.
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
       { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://dental.jkkn.ac.in/" },
       { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://dental.jkkn.ac.in/blog/" },
-      { "@type": "ListItem", "position": 3, "name": "Campus", "item": "https://dental.jkkn.ac.in/blog/campus/" },
-      { "@type": "ListItem", "position": 4, "name": post.title, "item": `https://dental.jkkn.ac.in/blog/campus/${post.slug}/` },
+      { "@type": "ListItem", "position": 3, "name": post.title, "item": postUrl },
     ],
   };
 
   const speakableSchema = generateSpeakableWebPageSchema({
     title: post.title,
     description: post.excerpt ?? post.title,
-    url: `https://dental.jkkn.ac.in/blog/campus/${post.slug}/`,
+    url: postUrl,
+    datePublished: post.published_at ?? post.created_at ?? undefined,
+    dateModified: post.updated_at ?? post.published_at ?? post.created_at ?? undefined,
     speakableCssSelectors: ['h1', '.hero-description', 'article p'],
   });
 
@@ -142,10 +148,42 @@ export default async function CampusBlogPost({
   // Structured posts (new format with sections JSONB) skip HTML processing
   const { processedHtml, tocItems, words, readTime } = renderBlogBody(post);
 
+  // BlogPosting was MISSING on every CMS post (48 of 48 live, measured 2026-09-18) - the posts
+  // shipped only a breadcrumb and a WebPage, so nothing told Google or an AI engine that this
+  // is an article, when it was written, or by whom. Every value below is a CMS field the page
+  // itself renders; nothing is invented (no author email, no rating).
+  const blogPostingSchema = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "@id": `${postUrl}#article`,
+    "mainEntityOfPage": { "@type": "WebPage", "@id": `${postUrl}#webpage` },
+    "url": postUrl,
+    "headline": post.title,
+    ...(post.excerpt && { "description": post.excerpt }),
+    ...(post.cover_image_url && { "image": post.cover_image_url }),
+    ...(post.published_at || post.created_at ? { "datePublished": post.published_at ?? post.created_at } : {}),
+    ...(post.updated_at || post.published_at || post.created_at
+      ? { "dateModified": post.updated_at ?? post.published_at ?? post.created_at }
+      : {}),
+    "author": post.author_name
+      ? { "@type": "Person", "name": post.author_name, "worksFor": dentalOrgRef }
+      : { "@type": "Organization", "name": "JKKN Dental College Editorial Team", "url": "https://dental.jkkn.ac.in/" },
+    "publisher": {
+      ...dentalOrgRef,
+      "logo": { "@type": "ImageObject", "url": DENTAL_LOGO_URL },
+    },
+    ...(post.category && { "articleSection": post.category }),
+    ...(Array.isArray(post.tags) && post.tags.length > 0 && { "keywords": post.tags.join(', ') }),
+    ...(words > 0 && { "wordCount": words }),
+    "inLanguage": "en-IN",
+    "isPartOf": { "@type": "Blog", "@id": "https://dental.jkkn.ac.in/blog/#blog", "name": "JKKN Dental College Blog", "url": "https://dental.jkkn.ac.in/blog/" },
+  };
+
   return (
     <div className="min-h-screen bg-white">
       <StructuredData data={breadcrumbSchema} />
       <StructuredData data={speakableSchema} />
+      <StructuredData data={blogPostingSchema} />
       <Header />
       <CampusBlogContent
         post={post}

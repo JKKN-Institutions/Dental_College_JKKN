@@ -5,7 +5,7 @@ import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import { Check } from 'lucide-react';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 import StructuredData from '@/components/StructuredData';
-import { generateBreadcrumbSchema, generateWebPageSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
+import { generateWebPageSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   alternates: { canonical: '/information-center/right-to-information-rti/' },
@@ -22,7 +22,6 @@ export const metadata: Metadata = {
 };
 
 export default function RightToInformation() {
-  const breadcrumbSchema = generateBreadcrumbSchema('/information-center/right-to-information-rti');
   const webPageSchema = generateWebPageSchema({
     title: 'Right to Information (RTI) - JKKN Dental College',
     description: 'Access RTI information at JKKN Dental College & Hospital. Learn how to file RTI applications and contact CPIO for transparency and accountability.',
@@ -38,7 +37,6 @@ export default function RightToInformation() {
 
   return (
     <main>
-      <StructuredData data={breadcrumbSchema} />
       <StructuredData data={webPageSchema} />
       <StructuredData data={speakableSchema} />
       <BreadcrumbSchema items={[

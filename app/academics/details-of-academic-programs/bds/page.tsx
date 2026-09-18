@@ -5,7 +5,6 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import StructuredData from '@/components/StructuredData';
-import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 import Breadcrumb from '@/components/Breadcrumb';
 import { generateSpeakableWebPageSchema } from '@/lib/metadata';
 import { faqPageSchema } from '@/lib/faq';
@@ -94,10 +93,12 @@ export default function BDSProgram() {
     "@context": "https://schema.org",
     "@type": "Course",
     "@id": "https://dental.jkkn.ac.in/academics/details-of-academic-programs/bds/#course",
+    "url": "https://dental.jkkn.ac.in/academics/details-of-academic-programs/bds/",
     "name": "Bachelor of Dental Surgery (BDS)",
     "description": "JKKN Dental College & Hospital, established in 1987, offers a 5-year NDC-approved BDS program with 100 seats, 200+ dental chairs, 500+ daily patients, and 93.9% placed or in higher studies (2024-25 batch). Affiliated to TN Dr. MGR Medical University, NAAC Accredited, located on NH-544, Komarapalayam, Namakkal, Tamil Nadu.",
     "provider": {
       "@type": "CollegeOrUniversity",
+      "@id": "https://dental.jkkn.ac.in/#organization",
       "name": "JKKN Dental College & Hospital",
       "url": "https://dental.jkkn.ac.in/",
       "sameAs": [
@@ -121,17 +122,10 @@ export default function BDSProgram() {
     "timeRequired": "P5Y",
     "occupationalCategory": "Dentist",
     "coursePrerequisites": "10+2 with Physics, Chemistry, Biology (PCB) with minimum 50% aggregate; NEET-UG qualification required",
-    "numberOfCredits": "240",
     "hasCourseInstance": {
       "@type": "CourseInstance",
       "courseMode": "Full-time",
-      "courseWorkload": "PT5Y",
-      "startDate": "2026-09",
-      "endDate": "2031-08",
-      "instructor": {
-        "@type": "Person",
-        "name": "Department of Dental Sciences Faculty"
-      }
+      "courseWorkload": "P5Y"
     },
     "offers": {
       "@type": "Offer",
@@ -156,18 +150,11 @@ export default function BDSProgram() {
       <StructuredData data={courseSchema} />
       <StructuredData data={faqSchema} />
       <StructuredData data={speakableSchema} />
-      <BreadcrumbSchema items={[
-        { name: 'JKKN Institutions', url: 'https://jkkn.ac.in/' },
-        { name: 'Dental College', url: 'https://dental.jkkn.ac.in/' },
-        { name: 'Academics', url: 'https://dental.jkkn.ac.in/academics/' },
-        { name: 'BDS Program', url: 'https://dental.jkkn.ac.in/academics/details-of-academic-programs/bds/' },
-      ]} />
       <Header />
       <Breadcrumb items={[
-        { name: 'Home', url: 'https://dental.jkkn.ac.in' },
-        { name: 'Academics', url: 'https://dental.jkkn.ac.in/academics' },
-        { name: 'Academic Programs', url: 'https://dental.jkkn.ac.in/academics/details-of-academic-programs' },
-        { name: 'BDS', url: 'https://dental.jkkn.ac.in/academics/details-of-academic-programs/bds' },
+        { name: 'Home', url: 'https://dental.jkkn.ac.in/' },
+        { name: 'Academics', url: 'https://dental.jkkn.ac.in/academics/' },
+        { name: 'BDS', url: 'https://dental.jkkn.ac.in/academics/details-of-academic-programs/bds/' },
       ]} />
 
       {/* ============================== */}

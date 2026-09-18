@@ -1,5 +1,7 @@
 import { Metadata } from 'next';
-import { jkknSameAsUrls } from '@/lib/metadata';
+import { faqPageSchema } from '@/lib/faq';
+import { dentalOrganizationSchema, dentalOrgRef, DENTAL_COURSE_URLS } from '@/lib/schema/organization';
+import { faqs } from './faqs';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
@@ -42,64 +44,18 @@ export const metadata: Metadata = {
   },
 };
 
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    { "@type": "Question", "name": "Are there any dental colleges in Erode?", "acceptedAnswer": { "@type": "Answer", "text": "Erode district has limited dental college options. The nearest well-established NDC-approved dental college to Erode is JKKN Dental College and Hospital, located eighteen kilometres from Erode at Komarapalayam, Namakkal, on NH-544. It offers BDS with one hundred seats and MDS in five specializations, affiliated to TN Dr. MGR Medical University, Chennai." } },
-    { "@type": "Question", "name": "How many dental colleges are in Erode district?", "acceptedAnswer": { "@type": "Answer", "text": "Erode district has one dental college, Nandha Dental College and Hospital, which offers BDS only. For learners seeking both BDS and MDS with a larger teaching hospital and stronger placements, JKKN Dental College and Hospital at Komarapalayam is only eighteen kilometres away via NH-544." } },
-    { "@type": "Question", "name": "Which is the best dental college in Erode?", "acceptedAnswer": { "@type": "Answer", "text": "JKKN Dental College and Hospital, located just eighteen kilometres from Erode on NH-544, is widely regarded as one of the top dental colleges accessible from Erode. Approved by NDC, NAAC accredited and affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai, it offers excellent programmes with strong placement support." } },
-    { "@type": "Question", "name": "How far is JKKN Dental from Erode?", "acceptedAnswer": { "@type": "Answer", "text": "JKKN Dental is approximately eighteen kilometres from Erode city centre, which takes about thirty-five to forty minutes by road via NH-544, the direct Salem to Coimbatore Highway. Regular government and private buses are available from Erode Central Bus Stand to Komarapalayam throughout the day." } },
-    { "@type": "Question", "name": "What is the NEET cut-off for BDS at JKKN Dental?", "acceptedAnswer": { "@type": "Answer", "text": "The NEET cut-off for BDS admission at JKKN Dental College & Hospital varies each year based on counselling rounds. Contact the admission office at plus ninety-one nine three four five eight five five zero zero one for the latest cut-off information and seat availability for the current admission cycle." } },
-    { "@type": "Question", "name": "Does JKKN Dental have its own hospital?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, JKKN Dental College & Hospital has a 200+ chair dental hospital and 100+ bed facility right on campus. Learners from Erode benefit from treating 500+ patients daily who visit from surrounding districts, gaining hands-on clinical training from Year 1 of the BDS programme." } },
-    { "@type": "Question", "name": "What MDS specialisations are available?", "acceptedAnswer": { "@type": "Answer", "text": "JKKN Dental offers MDS in five specialisations: Orthodontics & Dentofacial Orthopaedics, Prosthodontics & Crown and Bridge, Oral Medicine & Radiology, Conservative Dentistry & Endodontics, and Periodontics. Each department has dedicated senior learners, modern learning labs, and the attached hospital ensures ample clinical cases for postgraduate research and training." } },
-    { "@type": "Question", "name": "Does JKKN Dental provide hostel for Erode learners?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, JKKN Dental provides separate hostel facilities for boys and girls. Learners from Erode can also opt for daily commute as the campus is just eighteen kilometres away — about thirty-five to forty minutes on NH-544. College transport services are available from Erode." } },
-    { "@type": "Question", "name": "How can I apply for admission at JKKN Dental?", "acceptedAnswer": { "@type": "Answer", "text": "Erode learners can apply online at https://dental.jkkn.ac.in/ or visit the campus directly — just a thirty-five minute drive on NH-544. Admissions for BDS and MDS 2026-27 are currently open. Call plus ninety-one nine three four five eight five five zero zero one for personalised guidance on eligibility, fees, and the counselling process." } },
-    { "@type": "Question", "name": "What is the BDS fee at dental colleges near Erode?", "acceptedAnswer": { "@type": "Answer", "text": "At JKKN Dental College and Hospital, the nearest major dental college to Erode, BDS tuition fee is as per Government Quota norms under Government Quota and four lakh fifty thousand rupees per year (Dayscholar with Instruments) or five lakh fifty thousand rupees per year (With Hostel and Instruments) under Management Quota. Contact nine three four five eight five five zero zero one for the latest 2026-27 fee structure." } },
-    { "@type": "Question", "name": "Which dental colleges near Erode accept NEET scores?", "acceptedAnswer": { "@type": "Answer", "text": "All NDC-approved dental colleges near Erode accept NEET UG scores for BDS admission through DME Tamil Nadu counselling. These include JKKN Dental College and Hospital at Komarapalayam eighteen kilometres away, KSR Institute of Dental Science at Tiruchengode fourteen kilometres away, and Nandha Dental College in Erode city." } },
-  ]
-};
+const faqSchema = faqPageSchema(faqs);
 
-const orgSchema = {
-  "@context": "https://schema.org",
-  "@type": "EducationalOrganization",
-  "@id": "https://dental.jkkn.ac.in/#organization",
-  "name": "JKKN Dental College & Hospital",
-  "alternateName": "JKKN Dental",
-  "url": "https://dental.jkkn.ac.in/",
-  "logo": "https://dental.jkkn.ac.in/images/jkkn-dental-logo.webp",
-  "description": "NDC approved, NAAC accredited dental college affiliated to TN Dr. MGR Medical University. Offers BDS and MDS programmes with 93.9% placed or in higher studies (2024-25 batch).",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Natarajapuram, NH-544 (Salem–Coimbatore Highway)",
-    "addressLocality": "Komarapalayam",
-    "addressRegion": "Tamil Nadu",
-    "postalCode": "638183",
-    "addressCountry": "IN"
-  },
-  "telephone": "+919345855001",
-  "email": "info@jkkn.ac.in",
-  "foundingDate": "1987",
-  "parentOrganization": { "@type": "Organization", "name": "JKKN Institutions", "url": "https://jkkn.ac.in/" },
-  "hasCredential": [
-    { "@type": "EducationalOccupationalCredential", "credentialCategory": "NDC Approved" },
-    { "@type": "EducationalOccupationalCredential", "credentialCategory": "NAAC Accredited" }
-  ],
-  "accreditedBy": { "@type": "Organization", "name": "National Dental Commission (formerly Dental Council of India)" },
-  "memberOf": { "@type": "Organization", "name": "The Tamil Nadu Dr. M.G.R. Medical University, Chennai" },
-  "geo": { "@type": "GeoCoordinates", "latitude": "11.4446062", "longitude": "77.7309852" },
-  "sameAs": jkknSameAsUrls
-};
 
 const courseSchema = [
   {
     "@context": "https://schema.org",
     "@type": "Course",
-    "@id": "https://dental.jkkn.ac.in/academics/bds/#course",
-    "url": "https://dental.jkkn.ac.in/academics/bds/",
+    "@id": `${DENTAL_COURSE_URLS.bds}#course`,
+    "url": DENTAL_COURSE_URLS.bds,
     "name": "BDS (Bachelor of Dental Surgery)",
     "description": "4-year undergraduate dental programme with 1-year internship. NDC approved, 100 seats. NEET qualified admission.",
-    "provider": { "@type": "EducationalOrganization", "name": "JKKN Dental College & Hospital", "url": "https://dental.jkkn.ac.in/" },
+    "provider": dentalOrgRef,
     "educationalLevel": "Undergraduate",
     "timeRequired": "P5Y",
     "occupationalCategory": "Dentist"
@@ -107,52 +63,17 @@ const courseSchema = [
   {
     "@context": "https://schema.org",
     "@type": "Course",
-    "@id": "https://dental.jkkn.ac.in/academics/mds/#course",
-    "url": "https://dental.jkkn.ac.in/academics/mds/",
+    "@id": `${DENTAL_COURSE_URLS.mds}#course`,
+    "url": DENTAL_COURSE_URLS.mds,
     "name": "MDS (Master of Dental Surgery)",
     "description": "3-year postgraduate dental programme in the five sanctioned specialisations: Conservative Dentistry & Endodontics, Orthodontics & Dentofacial Orthopaedics, Prosthodontics & Crown and Bridge, Oral Medicine & Radiology, and Periodontics.",
-    "provider": { "@type": "EducationalOrganization", "name": "JKKN Dental College & Hospital", "url": "https://dental.jkkn.ac.in/" },
+    "provider": dentalOrgRef,
     "educationalLevel": "Postgraduate",
     "timeRequired": "P3Y",
     "occupationalCategory": "Dental Specialist"
   }
 ];
 
-const localBusinessSchema = {
-  "@context": "https://schema.org",
-  "@type": ["LocalBusiness", "Dentist"],
-  "@id": "https://dental.jkkn.ac.in/#dentist",
-  "name": "JKKN Dental College & Hospital",
-  "image": "https://dental.jkkn.ac.in/images/jkkn-dental-logo.webp",
-  "url": "https://dental.jkkn.ac.in/",
-  "telephone": "+919345855001",
-  "email": "info@jkkn.ac.in",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Natarajapuram, NH-544 (Salem–Coimbatore Highway)",
-    "addressLocality": "Komarapalayam",
-    "addressRegion": "Tamil Nadu",
-    "postalCode": "638183",
-    "addressCountry": "IN"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": "11.4446062",
-    "longitude": "77.7309852"
-  },
-  "hasMap": "https://maps.app.goo.gl/mXx6rFRqpS9U76BK6",
-  "openingHoursSpecification": [
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-      "opens": "09:00",
-      "closes": "17:00"
-    }
-  ],
-  "priceRange": "₹₹",
-  "medicalSpecialty": "Dentistry",
-  "parentOrganization": { "@type": "Organization", "name": "JKKN Institutions", "url": "https://jkkn.ac.in/" }
-};
 
 const breadcrumbSchema = {
   "@context": "https://schema.org",
@@ -197,9 +118,8 @@ export default function ErodeLayout({
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(dentalOrganizationSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />

@@ -73,7 +73,7 @@ export default function VisionAndMission() {
   const webPageSchema = generateWebPageSchema({
     title: 'Vision & Mission - JKKN Dental College',
     description: 'Our vision to be a leading global innovative solution provider and mission to help learners become great dentists through top-quality education, research, and clinical skill development.',
-    url: 'https://dental.jkkn.ac.in/about/vision-and-mission',
+    url: 'https://dental.jkkn.ac.in/about/vision-and-mission/',
     datePublished: '2024-01-15',
     dateModified: '2025-02-13'
   });

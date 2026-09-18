@@ -6,7 +6,7 @@ import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import StructuredData from '@/components/StructuredData';
 import { faqPageSchema } from '@/lib/faq';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
-import { generateBreadcrumbSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
+import { generateSpeakableWebPageSchema } from '@/lib/metadata';
 import { collegeFacts } from '@/data/collegeFacts';
 import {
   GraduationCap,
@@ -448,7 +448,6 @@ const mdsFaqSchema = faqPageSchema(mdsFaqs);
 /* ------------------------------------------------------------------ */
 
 export default function MDSAdmissionPage() {
-  const breadcrumbSchema = generateBreadcrumbSchema('/admissions/mds');
   const speakableSchema = generateSpeakableWebPageSchema({
     title: 'MDS Admission 2026-27 | JKKN Dental College',
     description:
@@ -466,7 +465,6 @@ export default function MDSAdmissionPage() {
           { name: 'MDS Admission', url: 'https://dental.jkkn.ac.in/admissions/mds/' },
         ]}
       />
-      <StructuredData data={breadcrumbSchema} />
       <StructuredData data={speakableSchema} />
       <StructuredData data={mdsCourseSchema} />
       <StructuredData data={mdsFaqSchema} />

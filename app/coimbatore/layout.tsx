@@ -1,7 +1,9 @@
 import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { jkknSameAsUrls } from '@/lib/metadata';
+import { faqPageSchema } from '@/lib/faq';
+import { dentalOrganizationSchema, dentalOrgRef, DENTAL_COURSE_URLS } from '@/lib/schema/organization';
+import { faqs } from './faqs';
 
 export const metadata: Metadata = {
   title: { absolute: 'Best Dental College Near Coimbatore | JKKN Dental College' },
@@ -42,185 +44,9 @@ export const metadata: Metadata = {
   },
 };
 
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Which is the best dental college near Coimbatore?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "JKKN Dental College & Hospital in Komarapalayam, Namakkal is a National Dental Commission approved dental college 108 km from Coimbatore on NH-544. Its NIRF 2026 filing to the Ministry of Education records 93.9% of the 2024-25 BDS batch placed or in higher studies, and 7 of 7 MDS graduates placed in each of the last three years. The college is approved by the National Dental Commission (formerly Dental Council of India) and affiliated with TN Dr. MGR Medical University. Learners from Coimbatore reach the campus in approximately 1.5 hours via NH-544."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How far is JKKN Dental College from Coimbatore?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "JKKN Dental College & Hospital is located 108 km from Coimbatore city, connected directly via National Highway 544 (NH-544, the Salem–Coimbatore Highway). The drive takes approximately 1 hour 30 minutes. Regular inter-city bus services and the college's dedicated transport facility serve learners from Coimbatore."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is the NEET cutoff for dental colleges near Coimbatore?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "NEET cutoff for BDS admission in Tamil Nadu dental colleges varies by category and quota. For government quota seats, candidates typically require a minimum of 450 marks. For private dental college management quota seats, the 50th percentile applies for general category candidates. For JKKN Dental College & Hospital admission, visit www.jkkn.ai/apply/jkkn-admission-2026 for current 2026 cutoff data."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is the fee for BDS at JKKN Dental College?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "JKKN Dental College & Hospital BDS fees depend on the admission quota — state counseling quota or management quota. For current 2026–27 fee structure, visit dental.jkkn.ac.in/fees-structure/ or contact the admissions office at +91 9345855001. Fee details are also available at www.jkkn.ai/apply/jkkn-admission-2026."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What are the MDS specializations at JKKN Dental College?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "JKKN Dental College & Hospital offers 5 MDS specializations: Orthodontics and Dentofacial Orthopaedics, Prosthodontics, Oral Medicine and Radiology, Conservative Dentistry and Endodontics, and Periodontics. MDS admission is through NEET MDS scores and Tamil Nadu state counseling."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does JKKN Dental College have hostel facility?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. JKKN Dental College & Hospital provides separate hostel facilities for male and female learners on campus at Komarapalayam, Namakkal. Hostels include Wi-Fi, dining, and 24-hour security. This is particularly convenient for learners from Coimbatore who prefer on-campus residence during weekdays."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is JKKN Dental College approved by the National Dental Commission?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. JKKN Dental College & Hospital is recognized and approved by the National Dental Commission (NDC). The college is also affiliated with The Tamil Nadu Dr. M.G.R. Medical University, Chennai, and holds NAAC accreditation."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is the placement record of JKKN Dental College?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "JKKN Dental College & Hospital records a 93.9% placed-or-higher-studies rate (2024-25 batch) for BDS graduates. The median salary for the 2024-25 BDS batch was Rs 3,60,000, and Rs 6,00,000 for MDS, as filed in the JKKN NIRF 2026 filing to the Ministry of Education. International placements include the UK (NHS), UAE (Cleveland Clinic Abu Dhabi), and Saudi Arabia. Placement details are at placements.jkkn.ac.in."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How to apply for BDS at JKKN Dental College from Coimbatore?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "To apply for BDS at JKKN Dental College & Hospital: (1) Qualify NEET UG 2026. (2) Register for Tamil Nadu state counseling at tnmedicalselection.net. (3) For management quota, apply at www.jkkn.ai/apply/jkkn-admission-2026. (4) Submit NEET scorecard, 10+2 mark sheets, and category certificate. Admissions are open from March to August 2026."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What clinical exposure does JKKN Dental College provide?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "JKKN Dental College & Hospital operates a dedicated teaching hospital with 200+ dental chairs, 100+ hospital beds, and 500+ daily patients. Clinical training begins from Year 1 of the BDS program. The college also conducts community dental camps, providing exposure to rural and urban patient populations."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is JKKN Dental College better than colleges in Coimbatore?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "JKKN Dental College & Hospital offers placement outcomes of 93.9% placed or in higher studies in 2024-25 and larger clinical infrastructure (200+ chairs, 500+ daily patients) compared to Coimbatore-based dental colleges. Coimbatore colleges such as Sri Ramakrishna Dental College & Hospital offer NIRF ranking (#18) and in-city location advantages. The best choice depends on individual priorities: outcomes and clinical scale (JKKN) versus urban location and ranking (SRDCH)."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does JKKN Dental College offer transport for Coimbatore learners?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "JKKN Dental College & Hospital provides college transport services for learners. The campus is also served by regular inter-city bus services and train connections via Coimbatore Junction to Erode and Salem, from where campus-direction transport is available. For daily commuters from Coimbatore, on-campus hostel accommodation is recommended."
-      }
-    }
-  ]
-};
+const faqSchema = faqPageSchema(faqs);
 
-const orgSchema = {
-  "@context": "https://schema.org",
-  "@type": "EducationalOrganization",
-  "@id": "https://dental.jkkn.ac.in/#organization",
-  "name": "JKKN Dental College & Hospital",
-  "alternateName": ["JKK Nattraja Dental College", "JKKN Dental"],
-  "url": "https://dental.jkkn.ac.in/",
-  "logo": "https://dental.jkkn.ac.in/images/jkkn-dental-logo.webp",
-  "description": "NDC-approved dental college offering BDS (100 seats) and MDS (5 specializations) with a 93.9% placed-or-higher-studies rate (2024-25 batch), 200+ dental chairs, and clinical exposure from Year 1.",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Natarajapuram, NH-544 (Salem–Coimbatore Highway)",
-    "addressLocality": "Komarapalayam",
-    "addressRegion": "Tamil Nadu",
-    "postalCode": "638183",
-    "addressCountry": "IN"
-  },
-  "telephone": "+919345855001",
-  "email": "info@jkkn.ac.in",
-  "foundingDate": "1987",
-  "parentOrganization": { "@type": "Organization", "name": "JKKN Institutions", "url": "https://jkkn.ac.in/" },
-  "hasCredential": [
-    { "@type": "EducationalOccupationalCredential", "credentialCategory": "NAAC Accreditation Grade A" },
-    { "@type": "EducationalOccupationalCredential", "credentialCategory": "National Dental Commission Approval" }
-  ],
-  "memberOf": { "@type": "Organization", "name": "The Tamil Nadu Dr. M.G.R. Medical University, Chennai" },
-  "geo": { "@type": "GeoCoordinates", "latitude": "11.4446062", "longitude": "77.7309852" },
-  "serviceArea": {
-    "@type": "GeoCircle",
-    "geoMidpoint": {
-      "@type": "GeoCoordinates",
-      "latitude": "11.4446062",
-      "longitude": "77.7309852"
-    },
-    "geoRadius": "150000"
-  },
-  "areaServed": ["Coimbatore", "Salem", "Erode", "Namakkal", "Tiruchengode", "Tiruppur"],
-  "sameAs": [
-    ...jkknSameAsUrls
-  ]
-};
 
-const localBusinessSchema = {
-  "@context": "https://schema.org",
-  "@type": "Dentist",
-  "@id": "https://dental.jkkn.ac.in/#dentist",
-  "name": "JKKN Dental College & Hospital",
-  "url": "https://dental.jkkn.ac.in/",
-  "telephone": "+919345855001",
-  "email": "info@jkkn.ac.in",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Natarajapuram, NH-544 (Salem–Coimbatore Highway)",
-    "addressLocality": "Komarapalayam",
-    "addressRegion": "Tamil Nadu",
-    "postalCode": "638183",
-    "addressCountry": "IN"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": "11.4446062",
-    "longitude": "77.7309852"
-  },
-  "openingHoursSpecification": [
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-      "opens": "09:00",
-      "closes": "17:00"
-    }
-  ],
-  "image": "https://dental.jkkn.ac.in/images/jkkn-dental-logo.webp",
-  "priceRange": "₹₹",
-  "medicalSpecialty": "Dentistry",
-  "parentOrganization": { "@type": "Organization", "name": "JKKN Institutions", "url": "https://jkkn.ac.in/" }
-};
 
 const breadcrumbSchema = {
   "@context": "https://schema.org",
@@ -247,11 +73,11 @@ const courseSchema = [
   {
     "@context": "https://schema.org",
     "@type": "Course",
-    "@id": "https://dental.jkkn.ac.in/academics/bds/#course",
-    "url": "https://dental.jkkn.ac.in/academics/bds/",
+    "@id": `${DENTAL_COURSE_URLS.bds}#course`,
+    "url": DENTAL_COURSE_URLS.bds,
     "name": "BDS (Bachelor of Dental Surgery)",
     "description": "5-year BDS program (including 1-year compulsory rotatory internship) with 100 seats. NDC approved, affiliated with TN Dr. MGR Medical University. Admission through NEET UG and Tamil Nadu state counseling.",
-    "provider": { "@type": "EducationalOrganization", "name": "JKKN Dental College & Hospital", "url": "https://dental.jkkn.ac.in/" },
+    "provider": dentalOrgRef,
     "educationalLevel": "Undergraduate",
     "timeRequired": "P5Y",
     "occupationalCategory": "Dentist"
@@ -259,11 +85,11 @@ const courseSchema = [
   {
     "@context": "https://schema.org",
     "@type": "Course",
-    "@id": "https://dental.jkkn.ac.in/academics/mds/#course",
-    "url": "https://dental.jkkn.ac.in/academics/mds/",
+    "@id": `${DENTAL_COURSE_URLS.mds}#course`,
+    "url": DENTAL_COURSE_URLS.mds,
     "name": "MDS (Master of Dental Surgery)",
     "description": "3-year postgraduate dental programme in the five sanctioned specialisations: Conservative Dentistry & Endodontics, Orthodontics & Dentofacial Orthopaedics, Prosthodontics & Crown and Bridge, Oral Medicine & Radiology, and Periodontics.",
-    "provider": { "@type": "EducationalOrganization", "name": "JKKN Dental College & Hospital", "url": "https://dental.jkkn.ac.in/" },
+    "provider": dentalOrgRef,
     "educationalLevel": "Postgraduate",
     "timeRequired": "P3Y",
     "occupationalCategory": "Dental Specialist"
@@ -317,8 +143,7 @@ export default function CoimbatoreLayout({
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(dentalOrganizationSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }} />

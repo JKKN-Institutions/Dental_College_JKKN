@@ -83,20 +83,11 @@ export default function Contact() {
   const webPageSchema = generateWebPageSchema({
     title: 'Contact JKKN Dental College & Hospital',
     description: 'Contact information, location, and visiting hours for JKKN Dental College & Hospital in Komarapalayam, Tamil Nadu.',
-    url: 'https://dental.jkkn.ac.in/contact',
+    url: 'https://dental.jkkn.ac.in/contact/',
     datePublished: '2024-01-15',
     dateModified: '2026-03-21'
   });
 
-  // Schema #4e: BreadcrumbList – /contact Page
-  const contactBreadcrumbSchema = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://dental.jkkn.ac.in/" },
-      { "@type": "ListItem", "position": 2, "name": "Contact Us", "item": "https://dental.jkkn.ac.in/contact/" }
-    ]
-  };
   const speakableSchema = generateSpeakableWebPageSchema({
     title: 'Contact Us | JKKN Dental College & Hospital, Komarapalayam',
     description: 'Contact JKKN Dental College & Hospital. Phone: +91 93458 55001, Email: dental@jkkn.ac.in. Get admission details, visit campus, or schedule a consultation.',
@@ -109,7 +100,6 @@ export default function Contact() {
       <StructuredData data={breadcrumbSchema} />
       <StructuredData data={contactPageSchema} />
       <StructuredData data={webPageSchema} />
-      <StructuredData data={contactBreadcrumbSchema} />
       <StructuredData data={speakableSchema} />
       <StructuredData data={faqSchema} />
       <Header />

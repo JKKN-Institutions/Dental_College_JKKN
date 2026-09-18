@@ -69,13 +69,8 @@ export default function AdmissionProcess() {
     "@type": "HowTo",
     "name": "How to Apply for BDS at JKKN Dental College & Hospital",
     "description": "Step-by-step guide for admission to the Bachelor of Dental Surgery (BDS) program at JKKN Dental College & Hospital, Komarapalayam. Covers eligibility verification, NEET-UG, counselling registration, seat allotment, and campus reporting.",
-    "image": "https://dental.jkkn.ac.in/images/admission-process.jpg",
+    "image": "https://dental.jkkn.ac.in/images/BDS-hero-image.webp",
     "totalTime": "P90D",
-    "estimatedCost": {
-      "@type": "MonetaryAmount",
-      "currency": "INR",
-      "value": "[PLACEHOLDER – Contact admissions for current fee structure]"
-    },
     "supply": [
       { "@type": "HowToSupply", "name": "10+2 Mark Sheet (with Physics, Chemistry, Biology)" },
       { "@type": "HowToSupply", "name": "NEET-UG Scorecard" },
@@ -96,7 +91,7 @@ export default function AdmissionProcess() {
         "position": 1,
         "name": "Check Eligibility Criteria",
         "text": "Verify that you meet the BDS eligibility requirements: completion of 10+2 (or equivalent) with Physics, Chemistry, and Biology, minimum 50% aggregate marks (40% for reserved categories), and minimum age of 17 years at the time of admission.",
-        "url": "https://dental.jkkn.ac.in/bds/#eligibility"
+        "url": "https://dental.jkkn.ac.in/academics/details-of-academic-programs/bds/#eligibility"
       },
       {
         "@type": "HowToStep",

@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import { cleanCrumbs } from '@/lib/breadcrumbs';
 
 interface BreadcrumbItem {
   name: string;
@@ -19,7 +20,8 @@ export default function Breadcrumb({ items, variant = 'default' }: BreadcrumbPro
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
-    "itemListElement": items.map((item, i) => ({
+    // cleanCrumbs: no 404 hub links, final trailing-slash URLs (measured 2026-09-18)
+    "itemListElement": cleanCrumbs(items).map((item, i) => ({
       "@type": "ListItem",
       "position": i + 1,
       "name": item.name,

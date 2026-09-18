@@ -5,7 +5,6 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import StructuredData from '@/components/StructuredData';
-import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 import Breadcrumb from '@/components/Breadcrumb';
 import MdsSpecialityNav from '@/components/mds/MdsSpecialityNav';
 import { generateSpeakableWebPageSchema } from '@/lib/metadata';
@@ -15,12 +14,15 @@ export default function MDSOrthodontics() {
   const courseSchema = {
     "@context": "https://schema.org",
     "@type": "Course",
+    "@id": "https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/orthodontics-and-dentofacial-orthopedics/#course",
+    "url": "https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/orthodontics-and-dentofacial-orthopedics/",
     "name": "MDS Orthodontics and Dentofacial Orthopaedics",
     "description": "Comprehensive 3-year postgraduate program in Orthodontics and Dentofacial Orthopaedics. Master the art and science of teeth alignment, malocclusion correction, and facial aesthetics.",
     "provider": {
       "@type": "CollegeOrUniversity",
+      "@id": "https://dental.jkkn.ac.in/#organization",
       "name": "JKKN Dental College & Hospital",
-      "url": "https://dental.jkkn.ac.in"
+      "url": "https://dental.jkkn.ac.in/"
     },
     "courseCode": "MDS-ORTHO",
     "educationalCredentialAwarded": "Master of Dental Surgery in Orthodontics and Dentofacial Orthopaedics",
@@ -74,7 +76,7 @@ export default function MDSOrthodontics() {
         "name": "Is clear aligner training included in the learning framework?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes, our curriculum includes comprehensive training in clear aligner therapy including Invisalign and JKKN Align Studio. Learners gain hands-on experience in digital treatment planning, aligner case selection, and managing aligner patients from start to finish."
+          "text": "Yes, our learning framework includes comprehensive training in clear aligner therapy including Invisalign and JKKN Align Studio. Learners gain hands-on experience in digital treatment planning, aligner case selection, and managing aligner patients from start to finish."
         }
       },
       {
@@ -99,19 +101,13 @@ export default function MDSOrthodontics() {
     <main className="overflow-x-hidden">
       <StructuredData data={courseSchema} />
       <StructuredData data={faqSchema} />
-      <BreadcrumbSchema items={[
-        { name: 'Home', url: 'https://dental.jkkn.ac.in/' },
-        { name: 'Academics', url: 'https://dental.jkkn.ac.in/academics/' },
-        { name: 'MDS Programs', url: 'https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/' },
-        { name: 'Orthodontics & Dentofacial Orthopaedics', url: 'https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/orthodontics-and-dentofacial-orthopedics/' },
-      ]} />
       <StructuredData data={speakableSchema} />
       <Header />
       <Breadcrumb items={[
-        { name: 'Home', url: 'https://dental.jkkn.ac.in' },
-        { name: 'Academics', url: 'https://dental.jkkn.ac.in/academics' },
-        { name: 'MDS Programs', url: 'https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds' },
-        { name: 'Orthodontics & Dentofacial Orthopedics', url: 'https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/orthodontics-and-dentofacial-orthopedics' },
+        { name: 'Home', url: 'https://dental.jkkn.ac.in/' },
+        { name: 'Academics', url: 'https://dental.jkkn.ac.in/academics/' },
+        { name: 'MDS Programs', url: 'https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/' },
+        { name: 'Orthodontics & Dentofacial Orthopedics', url: 'https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/orthodontics-and-dentofacial-orthopedics/' },
       ]} />
 
       {/* Hero Section */}

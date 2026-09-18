@@ -10,7 +10,6 @@ import {
   generateSpeakableWebPageSchema,
   generateFAQSchema,
   generateEducationalOrganizationSchema,
-  generateLocalBusinessSchema,
   generateMDSCourseSchema,
   generateHowToSchema,
 } from '@/lib/metadata';
@@ -107,8 +106,6 @@ export default function MDSProgram() {
   // EducationalOrganization schema for entity + knowledge panel
   const eduOrgSchema = generateEducationalOrganizationSchema();
 
-  // LocalBusiness (Dentist) schema for GBP alignment
-  const localBusinessSchema = generateLocalBusinessSchema();
 
   // HowTo schema for admission process
   const admissionHowToSchema = generateHowToSchema({
@@ -138,7 +135,6 @@ export default function MDSProgram() {
   return (
     <main className="overflow-x-hidden">
       <StructuredData data={eduOrgSchema} />
-      <StructuredData data={localBusinessSchema} />
       <StructuredData data={mdsSchema} />
       <StructuredData data={breadcrumbSchema} />
       <StructuredData data={faqSchema} />

@@ -241,7 +241,7 @@ const courseSchema = {
     address: {
       "@type": "PostalAddress",
       streetAddress: "Natarajapuram, NH-544, Komarapalayam",
-      addressLocality: "Namakkal",
+      addressLocality: "Komarapalayam",
       addressRegion: "Tamil Nadu",
       postalCode: "638183",
       addressCountry: "IN",
@@ -276,14 +276,15 @@ const faqSchema = {
 const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "Dentist",
+  "@id": "https://dental.jkkn.ac.in/#organization",
   name: "JKKN Dental College & Hospital",
   url: "https://dental.jkkn.ac.in",
   telephone: "+919345855001",
-  email: "aishwarya@jkkn.ac.in",
+  email: "dental@jkkn.ac.in",
   address: {
     "@type": "PostalAddress",
     streetAddress: "Natarajapuram, NH-544, Komarapalayam",
-    addressLocality: "Namakkal",
+    addressLocality: "Komarapalayam",
     addressRegion: "Tamil Nadu",
     postalCode: "638183",
     addressCountry: "IN",

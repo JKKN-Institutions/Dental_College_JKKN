@@ -5,7 +5,6 @@ import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import StructuredData from '@/components/StructuredData';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
-import { generateBreadcrumbSchema } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: 'Student Testimonials | JKKN Dental College & Hospital',
@@ -29,7 +28,6 @@ const breadcrumbItems = [
   { name: 'Testimonials', url: 'https://dental.jkkn.ac.in/testimonials/' },
 ];
 
-const breadcrumbSchema = generateBreadcrumbSchema('/testimonials');
 
 // Alumni testimonials are published only when the CDC holds a consented, verified quote
 // on record. Three unverified placeholder testimonials were removed on 2026-09-12.
@@ -38,7 +36,6 @@ const testimonials: { quote: string; name: string; role: string; programme: stri
 export default function TestimonialsPage() {
   return (
     <>
-      <StructuredData data={breadcrumbSchema} />
       <BreadcrumbSchema items={breadcrumbItems} />
       <Header />
 

@@ -6,7 +6,7 @@ import FaqAccordion from '@/components/FaqAccordion';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import StructuredData from '@/components/StructuredData';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
-import { generateBreadcrumbSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
+import { generateSpeakableWebPageSchema } from '@/lib/metadata';
 import { collegeFacts } from '@/data/collegeFacts';
 import {
   GraduationCap,
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     title: 'Admission 2026-27 | BDS & MDS | JKKN Dental College & Hospital',
     description:
       'Apply for BDS & MDS admission at JKKN Dental College. NEET-based, 100 BDS + 18 MDS seats, scholarships available.',
-    url: 'https://dental.jkkn.ac.in/admission/',
+    url: 'https://dental.jkkn.ac.in/admissions/',
     type: 'website',
     siteName: 'JKKN Dental College & Hospital',
     images: [
@@ -170,7 +170,7 @@ const howToSchema = {
 const bdsSchema = {
   '@context': 'https://schema.org',
   '@type': 'Course',
-  '@id': 'https://dental.jkkn.ac.in/bds/#course',
+  '@id': 'https://dental.jkkn.ac.in/academics/details-of-academic-programs/bds/#course',
   name: 'Bachelor of Dental Surgery (BDS)',
   description:
     '5-year undergraduate dental program including 1-year compulsory rotatory internship at JKKN Dental College & Hospital, approved by NDC with hands-on clinical training and world-class infrastructure.',
@@ -192,17 +192,10 @@ const bdsSchema = {
   occupationalCategory: 'Dentist',
   coursePrerequisites:
     '10+2 with Physics, Chemistry, Biology (PCB) with minimum 50% aggregate; NEET-UG qualification required',
-  numberOfCredits: '240',
   hasCourseInstance: {
     '@type': 'CourseInstance',
     courseMode: 'Full-time',
-    courseWorkload: 'PT5Y',
-    startDate: '2026-09',
-    endDate: '2031-08',
-    instructor: {
-      '@type': 'Person',
-      name: 'Department of Dental Sciences Faculty',
-    },
+    courseWorkload: 'P5Y',
   },
   offers: {
     '@type': 'Offer',
@@ -417,12 +410,11 @@ const trustBadges = [
 /* ------------------------------------------------------------------ */
 
 export default function AdmissionPage() {
-  const breadcrumbSchema = generateBreadcrumbSchema('/admissions');
   const speakableSchema = generateSpeakableWebPageSchema({
     title: 'Admission 2026-27 | BDS & MDS | JKKN Dental College',
     description:
       'Apply for BDS & MDS admission at JKKN Dental College, Komarapalayam. NEET-based admission, 100 BDS + 18 MDS seats, scholarships, hostel & placement support.',
-    url: 'https://dental.jkkn.ac.in/admission/',
+    url: 'https://dental.jkkn.ac.in/admissions/',
     speakableCssSelectors: ['h1', '.hero-description', 'article p'],
   });
 
@@ -431,10 +423,9 @@ export default function AdmissionPage() {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: 'https://dental.jkkn.ac.in/' },
-          { name: 'Admission', url: 'https://dental.jkkn.ac.in/admission/' },
+          { name: 'Admission', url: 'https://dental.jkkn.ac.in/admissions/' },
         ]}
       />
-      <StructuredData data={breadcrumbSchema} />
       <StructuredData data={speakableSchema} />
       <StructuredData data={faqSchema} />
       <StructuredData data={howToSchema} />

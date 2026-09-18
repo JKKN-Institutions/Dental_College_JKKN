@@ -5,7 +5,6 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import StructuredData from '@/components/StructuredData';
-import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 import Breadcrumb from '@/components/Breadcrumb';
 import MdsSpecialityNav from '@/components/mds/MdsSpecialityNav';
 import { generateSpeakableWebPageSchema } from '@/lib/metadata';
@@ -15,12 +14,15 @@ export default function MDSPeriodontics() {
   const courseSchema = {
     "@context": "https://schema.org",
     "@type": "Course",
+    "@id": "https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/periodontics/#course",
+    "url": "https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/periodontics/",
     "name": "MDS Periodontics",
     "description": "Advance your dental career with our comprehensive 3-year postgraduate program. Master periodontal surgery, dental implantology, regenerative therapy, and gum disease management at one of Tamil Nadu's premier dental institutions.",
     "provider": {
       "@type": "CollegeOrUniversity",
+      "@id": "https://dental.jkkn.ac.in/#organization",
       "name": "JKKN Dental College & Hospital",
-      "url": "https://dental.jkkn.ac.in"
+      "url": "https://dental.jkkn.ac.in/"
     },
     "courseCode": "MDS-PERIO",
     "educationalCredentialAwarded": "Master of Dental Surgery in Periodontics",
@@ -107,19 +109,13 @@ export default function MDSPeriodontics() {
     <main className="overflow-x-hidden">
       <StructuredData data={courseSchema} />
       <StructuredData data={faqSchema} />
-      <BreadcrumbSchema items={[
+      <StructuredData data={speakableSchema} />
+      <Header />
+      <Breadcrumb items={[
         { name: 'Home', url: 'https://dental.jkkn.ac.in/' },
         { name: 'Academics', url: 'https://dental.jkkn.ac.in/academics/' },
         { name: 'MDS Programs', url: 'https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/' },
         { name: 'Periodontics', url: 'https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/periodontics/' },
-      ]} />
-      <StructuredData data={speakableSchema} />
-      <Header />
-      <Breadcrumb items={[
-        { name: 'Home', url: 'https://dental.jkkn.ac.in' },
-        { name: 'Academics', url: 'https://dental.jkkn.ac.in/academics' },
-        { name: 'MDS Programs', url: 'https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds' },
-        { name: 'Periodontics', url: 'https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/periodontics' },
       ]} />
 
       {/* Hero Section */}

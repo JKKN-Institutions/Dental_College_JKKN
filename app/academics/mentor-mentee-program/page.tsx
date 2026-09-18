@@ -3,7 +3,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FaqAccordion from '@/components/FaqAccordion';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
-import { generateBreadcrumbSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
+import { generateSpeakableWebPageSchema } from '@/lib/metadata';
 import StructuredData from '@/components/StructuredData';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
@@ -69,7 +69,6 @@ export const metadata: Metadata = {
 };
 
 export default function MentorMenteeProgram() {
-  const breadcrumbSchema = generateBreadcrumbSchema('/academics/mentor-mentee-program/');
   const speakableSchema = generateSpeakableWebPageSchema({
     title: 'Mentor-Mentee Program - JKKN Dental College',
     description: 'Discover our supportive mentor-mentee program at JKKN Dental College. Personalized guidance for academic and professional excellence. Join now.',
@@ -84,7 +83,6 @@ export default function MentorMenteeProgram() {
         { name: 'Academics', url: 'https://dental.jkkn.ac.in/academics/' },
         { name: 'Mentor Mentee Program', url: 'https://dental.jkkn.ac.in/academics/mentor-mentee-program/' },
       ]} />
-      <StructuredData data={breadcrumbSchema} />
       <StructuredData data={speakableSchema} />
       <StructuredData data={faqSchema} />
       <Header />

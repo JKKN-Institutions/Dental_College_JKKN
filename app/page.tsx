@@ -3,6 +3,9 @@ import Header from '@/components/Header';
 import Hero from '@/components/Hero';
 import StructuredData from '@/components/StructuredData';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
+import { dentalOrganizationSchema, DENTAL_ORG_ID, DENTAL_COURSE_URLS } from '@/lib/schema/organization';
+import { faqPageSchema } from '@/lib/faq';
+import { homeFaqItems } from '@/data/homeFaqs';
 
 import FloatingWhatsApp from '@/components/FloatingWhatsAppClient';
 import AdmissionPopup from '@/components/AdmissionPopup';
@@ -17,7 +20,6 @@ const CTASection = dynamic(() => import('@/components/CTASection'));
 const Footer = dynamic(() => import('@/components/Footer'));
 const FacultySection = dynamic(() => import('@/components/FacultySection'));
 import { Metadata } from 'next';
-import { jkknSameAsUrls } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: 'JKKN Dental College & Hospital (JKK Nattraja), Komarapalayam',
@@ -54,11 +56,13 @@ export default function Home() {
   const bdsSchema = {
     "@context": "https://schema.org",
     "@type": "Course",
-    "@id": "https://dental.jkkn.ac.in/bds/#course",
+    "@id": `${DENTAL_COURSE_URLS.bds}#course`,
+    "url": DENTAL_COURSE_URLS.bds,
     "name": "Bachelor of Dental Surgery (BDS)",
     "description": "5-year undergraduate dental program including 1-year compulsory rotatory internship at JKKN Dental College & Hospital, approved by NDC with hands-on clinical training and world-class infrastructure.",
     "provider": {
       "@type": "CollegeOrUniversity",
+      "@id": DENTAL_ORG_ID,
       "name": "JKKN Dental College & Hospital",
       "url": "https://dental.jkkn.ac.in/",
       "address": {
@@ -74,17 +78,10 @@ export default function Home() {
     "timeRequired": "P5Y",
     "occupationalCategory": "Dentist",
     "coursePrerequisites": "10+2 with Physics, Chemistry, Biology (PCB) with minimum 50% aggregate; NEET-UG qualification required",
-    "numberOfCredits": "240",
     "hasCourseInstance": {
       "@type": "CourseInstance",
       "courseMode": "Full-time",
-      "courseWorkload": "PT5Y",
-      "startDate": "2026-09",
-      "endDate": "2031-08",
-      "instructor": {
-        "@type": "Person",
-        "name": "Department of Dental Sciences Faculty"
-      }
+      "courseWorkload": "P5Y"
     },
     "offers": {
       "@type": "Offer",
@@ -106,11 +103,13 @@ export default function Home() {
   const mdsSchema = {
     "@context": "https://schema.org",
     "@type": "Course",
-    "@id": "https://dental.jkkn.ac.in/mds/#course",
+    "@id": `${DENTAL_COURSE_URLS.mds}#course`,
+    "url": DENTAL_COURSE_URLS.mds,
     "name": "Master of Dental Surgery (MDS)",
     "description": "3-year postgraduate dental program with specializations in Periodontics, Orthodontics, Prosthodontics, Conservative Dentistry & Endodontics, and Oral Medicine at JKKN Dental College & Hospital.",
     "provider": {
       "@type": "CollegeOrUniversity",
+      "@id": DENTAL_ORG_ID,
       "name": "JKKN Dental College & Hospital",
       "url": "https://dental.jkkn.ac.in/"
     },
@@ -142,257 +141,10 @@ export default function Home() {
   };
 
   // College/University Schema (consolidated — single canonical entity)
-  const collegeSchema = {
-    "@context": "https://schema.org",
-    "@type": ["CollegeOrUniversity", "EducationalOrganization", "MedicalOrganization", "Dentist"],
-    "@id": "https://dental.jkkn.ac.in/#college",
-    "name": "JKKN Dental College & Hospital",
-    "alternateName": ["J.K.K. Nattraja Dental College & Hospital", "J.K.K. Nataraja Dental College & Hospital", "J.K.K. Natarajah Dental College & Hospital", "JKK Nattraja Pal Maruthuvak Kalloori Marrum Maruthuvamanai"],
-    "url": "https://dental.jkkn.ac.in",
-    "logo": "https://dental.jkkn.ac.in/images/dental-logo.png",
-    "description": "AI-integrated dental campus - NDC approved & NAAC A grade accredited dental college offering BDS & MDS programmes with advanced AI integration",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Natarajapuram, NH-544 (Salem To Coimbatore National Highway)",
-      "addressLocality": "Komarapalayam",
-      "addressRegion": "Tamil Nadu",
-      "postalCode": "638183",
-      "addressCountry": "IN"
-    },
-    "telephone": "+919345855001",
-    "email": "dental@jkkn.ac.in",
-    "foundingDate": "1987",
-    "knowsAbout": [
-      "Bachelor of Dental Surgery",
-      "Master of Dental Surgery",
-      "Dental Education in India",
-      "NDC Approved Dental Colleges",
-      "Dental College Tamil Nadu",
-      "Orthodontics",
-      "Prosthodontics",
-      "Periodontics",
-      "Conservative Dentistry",
-      "Oral Surgery",
-      "Artificial Intelligence in Dental Education",
-      "AI-Powered Diagnostic Imaging",
-      "CAD/CAM Technology",
-      "Digital Dentistry"
-    ],
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Academic Programs",
-      "itemListElement": [
-        { "@type": "Course", "name": "BDS - Bachelor of Dental Surgery", "url": "https://dental.jkkn.ac.in/academics/details-of-academic-programs/bds/" },
-        { "@type": "Course", "name": "MDS - Periodontics", "url": "https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/periodontics/" },
-        { "@type": "Course", "name": "MDS - Orthodontics & Dentofacial Orthopedics", "url": "https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/orthodontics-and-dentofacial-orthopedics/" },
-        { "@type": "Course", "name": "MDS - Prosthodontics Crown & Bridge", "url": "https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/prosthodontics-crown-and-bridge/" },
-        { "@type": "Course", "name": "MDS - Conservative Dentistry & Endodontics", "url": "https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/conservative-dentistry-and-endodontics/" },
-        { "@type": "Course", "name": "MDS - Oral Medicine & Radiology", "url": "https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/oral-medicine/" }
-      ]
-    },
-    "award": [
-      "NAAC A Grade Accreditation"
-    ],
-    "hasCredential": [
-      {
-        "@type": "EducationalOccupationalCredential",
-        "credentialCategory": "Approval",
-        "name": "National Dental Commission (NDC) Approved",
-        "recognizedBy": { "@type": "Organization", "name": "National Dental Commission", "alternateName": "NDC" }
-      },
-      {
-        "@type": "EducationalOccupationalCredential",
-        "credentialCategory": "Accreditation",
-        "name": "NAAC A Grade Accredited",
-        "recognizedBy": { "@type": "Organization", "name": "National Assessment and Accreditation Council", "alternateName": "NAAC" }
-      },
-      {
-        "@type": "EducationalOccupationalCredential",
-        "credentialCategory": "Affiliation",
-        "name": "Affiliated to Tamil Nadu Dr. M.G.R. Medical University",
-        "recognizedBy": { "@type": "CollegeOrUniversity", "name": "Tamil Nadu Dr. M.G.R. Medical University", "url": "https://www.tnmgrmu.ac.in/" }
-      }
-    ],
-    "sameAs": [
-      ...jkknSameAsUrls
-    ],
-    "parentOrganization": {
-      "@type": "EducationalOrganization",
-      "@id": "https://jkkn.ac.in/#organization",
-      "name": "JKKN Institutions",
-      "url": "https://jkkn.ac.in/"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 11.4446062,
-      "longitude": 77.7309852
-    },
-    "areaServed": [
-      { "@type": "City", "name": "Namakkal" },
-      { "@type": "City", "name": "Salem" },
-      { "@type": "City", "name": "Erode" },
-      { "@type": "City", "name": "Coimbatore" },
-      { "@type": "City", "name": "Tiruchengode" },
-      { "@type": "City", "name": "Komarapalayam" },
-      { "@type": "State", "name": "Tamil Nadu" }
-    ],
-    "image": [
-      "https://dental.jkkn.ac.in/images/campus-aerial.jpg",
-      "https://dental.jkkn.ac.in/images/dental-hospital.jpg",
-      "https://dental.jkkn.ac.in/images/simulation-lab.jpg"
-    ],
-    "priceRange": "$$",
-    "openingHoursSpecification": [
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-        "opens": "09:00",
-        "closes": "17:00"
-      }
-    ],
-    "medicalSpecialty": [
-      "Dentistry",
-      "Periodontics",
-      "Orthodontics",
-      "Prosthodontics",
-      "Endodontics",
-      "Oral Medicine",
-      "Oral Radiology",
-      "Oral and Maxillofacial Surgery",
-      "Pediatric Dentistry",
-      "Public Health Dentistry"
-    ],
-    "numberOfBeds": 100
-  };
+  const collegeSchema = dentalOrganizationSchema;
 
   // FAQ Schema — Voice-optimized (each answer ≤29 words, third-person, no abbreviations)
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "@id": "https://dental.jkkn.ac.in/#faqpage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "What courses are offered at JKKN Dental College & Hospital?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "JKKN Dental College and Hospital offers Bachelor of Dental Surgery, a five-year program, and Master of Dental Surgery with five postgraduate specializations across nine departments."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Is JKKN Dental College & Hospital NDC approved?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "JKKN Dental College and Hospital holds National Dental Commission approval, National Assessment and Accreditation Council A Grade accreditation, and Tamil Nadu Dr. M.G.R. Medical University affiliation."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What is the admission process for BDS?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Bachelor of Dental Surgery admission requires NEET qualification, higher secondary with Physics, Chemistry, and Biology at fifty percent minimum, through state or All India Quota counseling."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What facilities does JKKN Dental College offer?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "JKKN Dental College features over two hundred dental chairs, a hundred-bed hospital treating five hundred patients daily, digital simulation labs, and advanced imaging facilities."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What is the placement record?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "JKKN Dental College provides full placement assistance with alumni at Apollo Dental, Clove Dental, government hospitals, private practices, and international healthcare institutions."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What makes JKKN different from other dental colleges?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "JKKN Dental College is an AI-integrated dental campus, combining artificial intelligence tools with clinical training, two hundred dental chairs, and five hundred daily patients."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How does JKKN integrate AI in dental education?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "JKKN Dental College integrates artificial intelligence across its curriculum, including AI-powered diagnostic imaging, computer-aided design and manufacturing technology, and research tools."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What is the fee structure for BDS at JKKN Dental College?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Bachelor of Dental Surgery fees at JKKN Dental College vary by admission quota as per Tamil Nadu government regulations, with annual tuition ranging from three to five lakhs."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Which is the best dental college in Tamil Nadu?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "JKKN Dental College and Hospital is approved by the National Dental Commission, accredited by NAAC with an A Grade, and affiliated to The Tamil Nadu Dr. M.G.R. Medical University. Established in nineteen eighty-seven, it is sanctioned one hundred BDS seats and eighteen MDS seats across five specialities, runs an AI-integrated dental campus, and reports ninety-two percent placement assistance. Tamil Nadu publishes no official merit ranking of its dental colleges, so compare colleges on approval, accreditation, sanctioned intake and clinical exposure."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Where is JKKN Dental College located?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "JKKN Dental College is located on National Highway 544 in Komarapalayam, Namakkal District, Tamil Nadu, approximately thirty-five kilometres from Erode and fifty kilometres from Salem."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What are the hostel facilities at JKKN Dental College?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "JKKN Dental College provides separate hostels for boys and girls with furnished rooms, mess facilities, Wi-Fi connectivity, twenty-four-hour security, and recreational areas on campus."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What is the NEET cutoff for JKKN Dental College?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "NEET cutoff for Bachelor of Dental Surgery admission at JKKN Dental College varies annually, with approximate cutoff ranging from three hundred fifty to four hundred fifty marks depending on quota."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How many dental colleges are there in Tamil Nadu?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Tamil Nadu has approximately thirty-two to thirty-five dental colleges approved by the National Dental Commission, including three government and twenty-eight to thirty-two private institutions."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Which dental college in Tamil Nadu has the best placements?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "JKKN Dental College and Hospital provides ninety-two percent placement assistance with graduates at Apollo Dental, Clove Dental, government hospitals, and NHS United Kingdom."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What is the NIRF ranking of dental colleges in Tamil Nadu?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Nine Tamil Nadu dental colleges appear in NIRF twenty twenty-five rankings, with SIMATS Saveetha at rank two, SRM Dental at rank eight, and Sri Ramachandra at rank thirteen."
-        }
-      }
-    ]
-  };
+  const faqSchema = { ...faqPageSchema(homeFaqItems), "@id": "https://dental.jkkn.ac.in/#faqpage" };
 
   // Principal/Dean Person Schema
   const principalSchema = {
@@ -403,6 +155,7 @@ export default function Home() {
     "jobTitle": "Principal",
     "worksFor": {
       "@type": "CollegeOrUniversity",
+      "@id": DENTAL_ORG_ID,
       "name": "JKKN Dental College & Hospital",
       "url": "https://dental.jkkn.ac.in/"
     },
@@ -436,48 +189,6 @@ export default function Home() {
   };
 
   // Schema #2: Dentist (LocalBusiness)
-  const dentistLocalSchema = {
-    "@context": "https://schema.org",
-    "@type": "Dentist",
-    "@id": "https://dental.jkkn.ac.in/#localbusiness",
-    "name": "JKKN Dental College & Hospital",
-    "url": "https://dental.jkkn.ac.in/",
-    "image": "https://dental.jkkn.ac.in/images/dental-hospital-exterior.jpg",
-    "telephone": "+919345855001",
-    "email": "dental@jkkn.ac.in",
-    "priceRange": "$$",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "NH-544 (Salem to Coimbatore Highway), Natarajapuram",
-      "addressLocality": "Komarapalayam",
-      "addressRegion": "Tamil Nadu",
-      "postalCode": "638183",
-      "addressCountry": "IN"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 11.4446062,
-      "longitude": 77.7309852
-    },
-    "hasMap": "https://maps.app.goo.gl/mXx6rFRqpS9U76BK6",
-    "openingHoursSpecification": [
-      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Monday", "opens": "09:00", "closes": "17:00" },
-      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Tuesday", "opens": "09:00", "closes": "17:00" },
-      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Wednesday", "opens": "09:00", "closes": "17:00" },
-      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Thursday", "opens": "09:00", "closes": "17:00" },
-      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "09:00", "closes": "17:00" },
-      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "17:00" }
-    ],
-    "areaServed": [
-      { "@type": "City", "name": "Namakkal" },
-      { "@type": "City", "name": "Salem" },
-      { "@type": "City", "name": "Erode" },
-      { "@type": "City", "name": "Tiruchengode" },
-      { "@type": "City", "name": "Komarapalayam" },
-      { "@type": "City", "name": "Coimbatore" },
-      { "@type": "State", "name": "Tamil Nadu" }
-    ]
-  };
 
   // Schema #5: WebSite + SearchAction
   const websiteSchema = {
@@ -490,18 +201,10 @@ export default function Home() {
     "description": "Official website of JKKN Dental College & Hospital – NDC approved, NAAC A Grade accredited dental institution offering BDS and MDS programs in Komarapalayam, Tamil Nadu.",
     "publisher": {
       "@type": "CollegeOrUniversity",
-      "@id": "https://dental.jkkn.ac.in/#college",
+      "@id": DENTAL_ORG_ID,
       "name": "JKKN Dental College & Hospital"
     },
-    "inLanguage": "en",
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": {
-        "@type": "EntryPoint",
-        "urlTemplate": "https://dental.jkkn.ac.in/search?q={search_term_string}"
-      },
-      "query-input": "required name=search_term_string"
-    }
+    "inLanguage": "en"
   };
 
   // Schema #8a: WebPage with Speakable
@@ -572,7 +275,6 @@ export default function Home() {
   return (
     <main className="overflow-x-hidden w-full">
       <AdmissionPopup />
-      <StructuredData data={dentistLocalSchema} />
       <StructuredData data={websiteSchema} />
       <StructuredData data={webPageSchema} />
       {/* [UPDATE: Uncomment when principal name is confirmed] */}

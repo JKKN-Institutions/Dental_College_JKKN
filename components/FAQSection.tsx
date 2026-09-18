@@ -1,72 +1,12 @@
 'use client';
 
 import { useState } from 'react';
+import { homeFaqs } from '@/data/homeFaqs';
 
 export default function FAQSection() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
-  const faqs = [
-    {
-      question: "What courses are offered at JKKN Dental College & Hospital?",
-      answer: "JKKN Dental College offers BDS (5-year undergraduate) with training across 9 departments and MDS (3-year postgraduate) in 5 specializations: Conservative Dentistry & Endodontics, Prosthodontics, Periodontics, Oral Medicine & Radiology, and Orthodontics."
-    },
-    {
-      question: "Is JKKN Dental College & Hospital NDC approved?",
-      answer: "Yes, JKKN Dental College & Hospital is fully approved by the National Dental Commission (NDC), formerly the Dental Council of India and National Medical Commission (NMC). The college is affiliated with The Tamil Nadu Dr. M.G.R. Medical University and NAAC accredited."
-    },
-    {
-      question: "What is the admission process for BDS?",
-      answer: "BDS admission is based on NEET-UG scores through state or All India Quota counseling. Candidates need 10+2 with Physics, Chemistry, and Biology with minimum 50% marks (40% for reserved categories). After counseling allocation, complete document verification and fee payment."
-    },
-    {
-      question: "What facilities does JKKN Dental College offer?",
-      answer: "Our campus features a 200+ chair dental hospital treating 500+ patients daily, digital simulation labs, CBCT and OPG imaging, CAD/CAM laboratory, library with e-resources, research labs, separate hostels, cafeteria, sports facilities, and 24/7 Wi-Fi."
-    },
-    {
-      question: "What is the placement record?",
-      answer: "JKKN Dental College & Hospital provides 93.9% placed or in higher studies (2024-25 batch). Alumni work at Apollo Dental, Clove Dental, Sabka Dentist, government hospitals, and private practices. Many pursue higher studies abroad or establish their own clinics."
-    },
-    {
-      question: "What makes JKKN different from other dental colleges?",
-      answer: "JKKN is an AI-integrated dental campus with 500+ daily patients, 200+ dental chairs, and 93.9% placed or in higher studies (2024-25 batch). Established in 1987 under JKKN Institutions (since 1952), it combines AI-powered diagnostics, CAD/CAM technology, and hands-on clinical training."
-    },
-    {
-      question: "Which is the best dental college in Tamil Nadu?",
-      answer: "JKKN Dental College & Hospital is approved by the National Dental Commission, accredited by NAAC with an A Grade, and affiliated to The Tamil Nadu Dr. M.G.R. Medical University. Established in 1987, it is sanctioned 100 BDS seats and 18 MDS seats across 5 specialities, runs an AI-integrated dental campus, and reports 93.9% placed or in higher studies (2024-25 batch). Tamil Nadu publishes no official merit ranking of its dental colleges, so compare colleges on approval, accreditation, sanctioned intake and clinical exposure."
-    },
-    {
-      question: "How does JKKN integrate AI in dental education?",
-      answer: "JKKN integrates AI across BDS and MDS curriculum with AI-powered diagnostic imaging (CBCT, OPG), CAD/CAM digital prosthetics, ChatGPT-assisted research, and data analytics — making it an AI-integrated dental campus."
-    },
-    {
-      question: "What is the fee structure for BDS at JKKN Dental College?",
-      answer: <>BDS fees at JKKN Dental College vary by admission quota as per Tamil Nadu government regulations. Annual tuition ranges from 3 to 5 lakhs depending on state counseling or management quota allocation. <a href="/fees-structure/" className="text-[#006837] hover:underline font-medium">See detailed fee structure</a>.</>
-    },
-    {
-      question: "Where is JKKN Dental College located?",
-      answer: <>JKKN Dental College is located on NH-544 (Salem-Coimbatore Highway) in Komarapalayam, Namakkal District, Tamil Nadu 638183 — approximately 22 km from Erode and 58 km from Salem. <a href="/contact/" className="text-[#006837] hover:underline font-medium">Get campus directions</a>.</>
-    },
-    {
-      question: "What are the hostel facilities at JKKN Dental College?",
-      answer: "JKKN provides separate hostels for boys and girls with furnished rooms, mess facilities, Wi-Fi connectivity, 24/7 security, recreational areas, and easy campus access for students."
-    },
-    {
-      question: "What is the NEET cutoff for JKKN Dental College?",
-      answer: "NEET cutoff for BDS admission at JKKN Dental College varies annually based on counseling rounds. Approximate cutoff ranges from 350 to 450 marks depending on admission quota category — government or management. Students must register for Tamil Nadu state counseling or All India Quota counseling with valid NEET-UG qualification."
-    },
-    {
-      question: "How many dental colleges are there in Tamil Nadu?",
-      answer: "Tamil Nadu has approximately 32 to 35 dental colleges approved by the National Dental Commission. This includes 3 government dental colleges and 28-32 private dental colleges across Chennai, Coimbatore, Salem, Namakkal, and other districts. JKKN Dental College is the prominent institution in Namakkal District on the Salem-Coimbatore corridor."
-    },
-    {
-      question: "Which dental college in Tamil Nadu has the best placements?",
-      answer: "JKKN Dental College and Hospital provides 93.9% placed or in higher studies (2024-25 batch) with graduates employed at Apollo Dental, Clove Dental, Sabka Dentist, government hospitals, and international healthcare institutions including NHS United Kingdom. The placement portal at placements.jkkn.ac.in provides verified placement data and recruiter details."
-    },
-    {
-      question: "What is the NIRF ranking of dental colleges in Tamil Nadu?",
-      answer: "Nine Tamil Nadu dental colleges appear in NIRF 2025 rankings: SIMATS Saveetha (#2), SRM Dental Ramapuram (#8), Sri Ramachandra (#13), Amrita Coimbatore (#14), MAHER Chennai (#16), Sree Balaji (#27), Dr. MGR University (#30), Chettinad (#32), and SRM Kattankulathur (#39). JKKN Dental College is not NIRF-ranked but holds NDC approval and NAAC A Grade accreditation."
-    }
-  ];
+  const faqs = homeFaqs;
 
   const toggleFAQ = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
@@ -122,6 +62,15 @@ export default function FAQSection() {
                 <div className="px-4 sm:px-5 md:px-6 pb-4 sm:pb-5 md:pb-6">
                   <p className="text-gray-600 leading-relaxed text-sm sm:text-base">
                     {faq.answer}
+                    {faq.link && (
+                      <>
+                        {' '}
+                        <a href={faq.link.href} className="text-[#006837] hover:underline font-medium">
+                          {faq.link.label}
+                        </a>
+                        .
+                      </>
+                    )}
                   </p>
                 </div>
               </div>
