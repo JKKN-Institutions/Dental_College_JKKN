@@ -1,18 +1,18 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: { absolute: 'Dental Colleges in Tamil Nadu — All 23 BDS Colleges and 2,200 Seats | JKKN' },
+  title: { absolute: 'Dental Colleges in Tamil Nadu — 22 BDS Colleges and 2,100 Seats | JKKN' },
   description:
-    'Every dental college in Tamil Nadu affiliated to the TN Dr M.G.R. Medical University — all 23 BDS colleges and 2,200 sanctioned seats for 2025-26, with location, government or self-financing, minority status and intake per college.',
+    'Dental colleges in Tamil Nadu affiliated to the TN Dr M.G.R. Medical University — 22 BDS colleges and 2,100 sanctioned seats for 2025-26, with location, government or self-financing, minority status and intake per college.',
   keywords:
     'dental colleges in tamilnadu, dental college in tamil nadu, list of dental colleges in tamilnadu, bds colleges in tamilnadu, private dental colleges in tamilnadu, government dental colleges in tamilnadu, top dental colleges in tamilnadu, best dental colleges in tamilnadu',
   alternates: {
     canonical: '/academics/details-of-academic-programs/bds/colleges-in-tamil-nadu/',
   },
   openGraph: {
-    title: 'Dental Colleges in Tamil Nadu — All 23 BDS Colleges and 2,200 Seats',
+    title: 'Dental Colleges in Tamil Nadu — 22 BDS Colleges and 2,100 Seats',
     description:
-      '23 affiliated dental colleges, 2,200 sanctioned BDS seats for 2025-26, from the university’s own intake document.',
+      '22 affiliated dental colleges, 2,100 sanctioned BDS seats for 2025-26, from the university’s own intake document.',
     url: 'https://dental.jkkn.ac.in/academics/details-of-academic-programs/bds/colleges-in-tamil-nadu/',
     siteName: 'JKKN Dental College & Hospital',
     images: [
@@ -28,9 +28,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Dental Colleges in Tamil Nadu — All 23 BDS Colleges and 2,200 Seats',
+    title: 'Dental Colleges in Tamil Nadu — 22 BDS Colleges and 2,100 Seats',
     description:
-      '23 affiliated dental colleges, 2,200 sanctioned BDS seats for 2025-26, college by college.',
+      '22 affiliated dental colleges, 2,100 sanctioned BDS seats for 2025-26, college by college.',
     images: ['/images/BDS-hero-image.webp'],
   },
 };

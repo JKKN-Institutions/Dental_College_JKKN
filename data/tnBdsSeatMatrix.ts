@@ -5,6 +5,10 @@
 // https://www.tnmgrmu.ac.in/wp-content/uploads/2026/06/BDS-SeatMatrix-2025-2026.pdf
 // Downloaded and parsed 2026-08-25.
 //
+// MANUAL OMISSION 2026-09-21 (user decision): college code 967 (Erode) is deliberately NOT listed
+// here, and TN_BDS_TOTALS below count the 22 LISTED colleges, not the 23 in the PDF. If this file
+// is ever regenerated from the PDF, re-apply that omission or the page will list it again.
+//
 // SCOPE, AND THE PAGE MUST SAY IT: this matrix covers only the colleges AFFILIATED to TN Dr
 // M.G.R. Medical University. Deemed-to-be universities - Saveetha, SRM, Sri Ramachandra,
 // Meenakshi Ammal, Sathyabama, Bharath, VMRF and similar - award their own degrees and are not
@@ -53,18 +57,17 @@ export const TN_BDS_COLLEGES: TnBdsCollege[] = [
   { code: '273', name: 'Tagore Dental College and Hospital', location: 'Vandalur, Chennai', kind: 'Self-financing', minority: false, intake: 100 },
   { code: '274', name: 'R.V.S. Dental College and Hospital', location: 'Sulur, Coimbatore', kind: 'Self-financing', minority: false, intake: 100 },
   { code: '501', name: 'Asan Memorial Dental College & Hospital', location: 'Chengalpattu', kind: 'Self-financing', minority: true, intake: 100 },
-  { code: '943', name: 'Dhanalakshmi Srinivasan Dental College', location: 'Siruvachur, Perambalur', kind: 'Self-financing', minority: true, intake: 100 },
-  { code: '967', name: 'Nandha Dental College & Hospital', location: 'Erode', kind: 'Self-financing', minority: false, intake: 100 }
+  { code: '943', name: 'Dhanalakshmi Srinivasan Dental College', location: 'Siruvachur, Perambalur', kind: 'Self-financing', minority: true, intake: 100 }
 ];
 
 export const TN_BDS_TOTALS = {
-  colleges: 23,
+  colleges: 22,
   governmentColleges: 3,
-  selfFinancingColleges: 20,
+  selfFinancingColleges: 19,
   minorityColleges: 8,
-  seats: 2200,
+  seats: 2100,
   governmentSeats: 250,
-  selfFinancingSeats: 1950,
+  selfFinancingSeats: 1850,
 } as const;
 
 export const JKKN_BDS_CODE = '022';

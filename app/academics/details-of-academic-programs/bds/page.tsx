@@ -200,7 +200,7 @@ export default function BDSProgram() {
                   href="/academics/details-of-academic-programs/bds/colleges-in-tamil-nadu/"
                   className="inline-flex items-center gap-2 text-[#7cb983] font-semibold underline hover:no-underline"
                 >
-                  All 23 dental colleges in Tamil Nadu and their 2,200 BDS seats &rarr;
+                  22 dental colleges in Tamil Nadu and their 2,100 BDS seats &rarr;
                 </a>
               </p>
 

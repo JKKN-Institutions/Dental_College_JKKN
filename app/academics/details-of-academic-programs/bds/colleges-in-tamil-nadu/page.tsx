@@ -66,27 +66,27 @@ export default function DentalCollegesInTamilNadu() {
     {
       question: 'How many dental colleges are there in Tamil Nadu?',
       answer:
-        'Twenty-three dental colleges in Tamil Nadu are affiliated to The Tamil Nadu Dr. M.G.R. Medical University for 2025-26, holding 2,200 sanctioned BDS seats between them. Three are government colleges with 250 seats and twenty are self-financing with 1,950. Deemed-to-be universities such as Saveetha and SRM award their own degrees and are not in the university matrix, so a larger number quoted elsewhere is usually counting both sets without saying so.',
+        'Twenty-two dental colleges in Tamil Nadu affiliated to The Tamil Nadu Dr. M.G.R. Medical University are listed on this page for 2025-26, holding 2,100 sanctioned BDS seats between them. Three are government colleges with 250 seats and nineteen are self-financing with 1,850. Deemed-to-be universities such as Saveetha and SRM award their own degrees and are not in the university matrix, so a larger number quoted elsewhere is usually counting both sets without saying so.',
     },
     {
       question: 'Which are the government dental colleges in Tamil Nadu?',
       answer:
-        'Three: Tamil Nadu Government Dental College, Chennai with 100 BDS seats; Government Dental College & Hospital, Cuddalore with 100; and Government Dental College, Pudukottai with 50. Together they hold 250 of the 2,200 sanctioned BDS seats, which is why government-quota cutoffs are so much higher than private ones.',
+        'Three: Tamil Nadu Government Dental College, Chennai with 100 BDS seats; Government Dental College & Hospital, Cuddalore with 100; and Government Dental College, Pudukottai with 50. Together they hold 250 of the 2,100 sanctioned BDS seats listed here, which is why government-quota cutoffs are so much higher than private ones.',
     },
     {
       question: 'How many BDS seats are there in Tamil Nadu?',
       answer:
-        'There are 2,200 sanctioned BDS seats across the 23 affiliated colleges for the 2025-26 academic year. Most colleges are sanctioned 100 seats each; Government Dental College Pudukottai and Sree Mookambika Institute of Dental Sciences are sanctioned 50 each.',
+        'There are 2,100 sanctioned BDS seats across the 22 affiliated colleges listed on this page for the 2025-26 academic year. Most colleges are sanctioned 100 seats each; Government Dental College Pudukottai and Sree Mookambika Institute of Dental Sciences are sanctioned 50 each.',
     },
     {
       question: 'Which dental colleges are near Erode, Salem and Namakkal?',
       answer:
-        'Four of the 23 affiliated colleges sit in the Kongu belt: JKKN Dental College & Hospital at Komarapalayam in Namakkal district, K.S.R. Institute of Dental Science & Research at Tiruchengode, Vivekanandha Dental College for Women at Elayampalayam, and Nandha Dental College & Hospital at Erode. Each is sanctioned 100 BDS seats.',
+        'Three of the 22 affiliated colleges listed here sit in the Kongu belt: JKKN Dental College & Hospital at Komarapalayam in Namakkal district, K.S.R. Institute of Dental Science & Research at Tiruchengode, and Vivekanandha Dental College for Women at Elayampalayam. Each is sanctioned 100 BDS seats.',
     },
     {
       question: 'What does minority status mean on this list?',
       answer:
-        'A minority institution reserves a share of its seats for the community it was founded to serve, which changes how its management quota is filled. Eight of the 23 affiliated colleges carry minority status in the university document, including JKKN. It does not affect the sanctioned intake or the NEET requirement.',
+        'A minority institution reserves a share of its seats for the community it was founded to serve, which changes how its management quota is filled. Eight of the 22 affiliated colleges listed here carry minority status in the university document, including JKKN. It does not affect the sanctioned intake or the NEET requirement.',
     },
     {
       question: 'How do I get admission to a dental college in Tamil Nadu?',
@@ -96,22 +96,22 @@ export default function DentalCollegesInTamilNadu() {
     {
       question: 'How many BDS colleges are there in Tamil Nadu?',
       answer:
-        'Twenty-three, and they are the same twenty-three dental colleges listed above. BDS is the only undergraduate dental degree recognised in India, so every affiliated dental college in Tamil Nadu is a BDS college \u2014 the two phrases describe one list. Between them they are sanctioned 2,200 BDS seats for 2025-26.',
+        'Twenty-two, and they are the same twenty-two dental colleges listed above. BDS is the only undergraduate dental degree recognised in India, so every affiliated dental college in Tamil Nadu is a BDS college \u2014 the two phrases describe one list. Between them they are sanctioned 2,100 BDS seats for 2025-26.',
     },
     {
       question: 'Which are the private BDS colleges in Tamil Nadu?',
       answer:
-        'Twenty of the twenty-three affiliated colleges are self-financing, which is what most people mean by private, and they hold 1,950 of the 2,200 sanctioned BDS seats. Filter the table above to see them by name, location and intake. Deemed-to-be universities are private too but are not in this matrix at all, because they award their own degrees rather than the university\u2019s.',
+        'Nineteen of the twenty-two affiliated colleges listed here are self-financing, which is what most people mean by private, and they hold 1,850 of the 2,100 sanctioned BDS seats. Filter the table above to see them by name, location and intake. Deemed-to-be universities are private too but are not in this matrix at all, because they award their own degrees rather than the university\u2019s.',
     },
     {
       question: 'Is there an official ranking of the best BDS colleges in Tamil Nadu?',
       answer:
-        'Not one that covers them all. The Tamil Nadu Dr. M.G.R. Medical University publishes sanctioned intake, not a merit order. NIRF, the Ministry of Education\u2019s ranking framework, does rank dental institutions nationally \u2014 but only those that take part in it, so it is neither a list of Tamil Nadu\u2019s dental colleges nor a ranking of BDS seats. No published source ranks all 23 affiliated colleges, which is why a state-wide \u201ctop 10\u201d is an opinion. What the university document does let you compare is factual: whether a college is government or self-financing, how many BDS seats it is sanctioned, where it is, and whether it carries minority status \u2014 all four are in the table above.',
+        'Not one that covers them all. The Tamil Nadu Dr. M.G.R. Medical University publishes sanctioned intake, not a merit order. NIRF, the Ministry of Education\u2019s ranking framework, does rank dental institutions nationally \u2014 but only those that take part in it, so it is neither a list of Tamil Nadu\u2019s dental colleges nor a ranking of BDS seats. No published source ranks all 22 affiliated colleges listed here, which is why a state-wide \u201ctop 10\u201d is an opinion. What the university document does let you compare is factual: whether a college is government or self-financing, how many BDS seats it is sanctioned, where it is, and whether it carries minority status \u2014 all four are in the table above.',
     },
   ];
 
   const speakable = generateSpeakableWebPageSchema({
-    title: 'Dental Colleges in Tamil Nadu — All 23 BDS Colleges and 2,200 Seats',
+    title: 'Dental Colleges in Tamil Nadu — 22 BDS Colleges and 2,100 Seats',
     description: answer,
     url,
     dateModified: TN_BDS_SOURCE.retrieved,
@@ -189,7 +189,7 @@ export default function DentalCollegesInTamilNadu() {
               Filter
             </span>
             {([
-              ['all', 'All 23'],
+              ['all', 'All 22'],
               ['Government', 'Government only'],
               ['Self-financing', 'Self-financing'],
               ['minority', 'Minority status'],
