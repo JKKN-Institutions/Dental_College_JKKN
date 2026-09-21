@@ -16,7 +16,7 @@ export const faqs: FaqItem[] = [
   },
   {
     q: 'Which is the best dental college in Erode?',
-    a: 'JKKN Dental College & Hospital, located just 18 km from Erode on NH-544, is widely regarded as one of the top dental colleges accessible from Erode. Approved by NDC, NAAC accredited and affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai, it offers excellent programmes with strong placement support.',
+    a: 'Erode district has one dental college, Nandha Dental College & Hospital (BDS only). The nearest dental college to Erode offering both BDS and MDS is JKKN Dental College & Hospital, about 18 km away on NH-544 at Komarapalayam: established 1987, NDC approved, NAAC accredited, affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai, with BDS (100 seats), MDS (18 seats, 5 specialisations) and a 200+ chair teaching hospital. 93.9% of the 2024-25 batch were placed or in higher studies.',
   },
   {
     q: 'How far is JKKN Dental from Erode?',
