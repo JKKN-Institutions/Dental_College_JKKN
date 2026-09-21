@@ -17,7 +17,7 @@ export default function ErodePage() {
 
   const programmes = [
     { title: 'BDS (Bachelor of Dental Surgery)', duration: '4 years + 1 year internship', level: 'UG', intake: '100 seats', eligibility: '10+2 with Physics, Chemistry, Biology; NEET qualified', href: '/academics/details-of-academic-programs/bds/' },
-    { title: 'MDS (Master of Dental Surgery)', duration: '3 years', level: 'PG', intake: '30 seats', eligibility: 'BDS degree; NEET MDS qualified', href: '/academics/details-of-academic-programs/mds/' },
+    { title: 'MDS (Master of Dental Surgery)', duration: '3 years', level: 'PG', intake: '18 seats', eligibility: 'BDS degree; NEET MDS qualified', href: '/academics/details-of-academic-programs/mds/' },
   ];
 
   const placementStats = [
@@ -150,13 +150,47 @@ export default function ErodePage() {
               While Erode has limited dental college options within the district, the nearest well-established NDC-approved dental college is <strong>JKKN Dental College &amp; Hospital</strong>, located just 18 km from Erode at Komarapalayam, Namakkal, via NH-544 (Salem–Coimbatore Highway). Established in 1987 and affiliated to TN Dr. MGR Medical University, Chennai, JKKN Dental College offers BDS with 100 government-sanctioned seats and MDS in 5 specializations, and operates a 200-chair teaching hospital treating 500+ patients daily.
             </p>
           </div>
-          <h3 className="font-bold text-gray-900 mb-3 text-lg">Dental Colleges Near Erode</h3>
-          <ol className="list-decimal list-inside space-y-2 text-gray-700 mb-4" style={{ fontSize: 'clamp(0.9rem, 1vw + 0.4rem, 1.05rem)' }}>
-            <li><strong>JKKN Dental College &amp; Hospital</strong> — Komarapalayam, Namakkal — approximately 18 km via NH-544</li>
-            <li><strong>KSR Institute of Dental Science and Research</strong> — Tiruchengode, Namakkal District</li>
-            <li><strong>Nandha Dental College &amp; Hospital</strong> — Erode city — in Erode district (BDS only)</li>
-          </ol>
-          <p className="text-gray-500 text-sm">All three colleges are affiliated to TN Dr. MGR Medical University and admit students through NEET UG counselling conducted by DME Tamil Nadu.</p>
+          <h3 className="font-bold text-gray-900 mb-3 text-lg">Dental Colleges in and Around Erode — Compared</h3>
+          <p className="text-gray-700 mb-4" style={{ fontSize: 'clamp(0.9rem, 1vw + 0.4rem, 1.05rem)' }}>
+            Erode district itself has one dental college, Nandha Dental College &amp; Hospital (BDS only, founded 2021). The two nearest colleges offering both BDS and MDS are in neighbouring Namakkal district: JKKN Dental College &amp; Hospital at Komarapalayam (about 18 km from Erode on NH-544) and KSR Institute of Dental Science and Research at Tiruchengode.
+          </p>
+          <div className="overflow-x-auto mb-4">
+            <table className="w-full border-collapse bg-white rounded-xl shadow-sm overflow-hidden text-sm">
+              <thead>
+                <tr className="bg-[#006837] text-white">
+                  <th className="px-4 py-3 text-left font-semibold">College</th>
+                  <th className="px-4 py-3 text-left font-semibold">Where</th>
+                  <th className="px-4 py-3 text-left font-semibold">From Erode</th>
+                  <th className="px-4 py-3 text-left font-semibold">Established</th>
+                  <th className="px-4 py-3 text-left font-semibold">Courses</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="border-b border-gray-100">
+                  <td className="px-4 py-3 font-semibold text-gray-900">JKKN Dental College &amp; Hospital</td>
+                  <td className="px-4 py-3 text-gray-700">Komarapalayam, Namakkal district</td>
+                  <td className="px-4 py-3 text-gray-700">~18 km via NH-544</td>
+                  <td className="px-4 py-3 text-gray-700">1987</td>
+                  <td className="px-4 py-3 text-gray-700">BDS (100 seats) + MDS (18 seats, 5 specialisations)</td>
+                </tr>
+                <tr className="border-b border-gray-100 bg-gray-50">
+                  <td className="px-4 py-3 font-semibold text-gray-900">Nandha Dental College &amp; Hospital</td>
+                  <td className="px-4 py-3 text-gray-700">Erode–Perundurai Road, Erode (Erode district)</td>
+                  <td className="px-4 py-3 text-gray-700">Within Erode city</td>
+                  <td className="px-4 py-3 text-gray-700">2021</td>
+                  <td className="px-4 py-3 text-gray-700">BDS only</td>
+                </tr>
+                <tr>
+                  <td className="px-4 py-3 font-semibold text-gray-900">KSR Institute of Dental Science and Research</td>
+                  <td className="px-4 py-3 text-gray-700">Tiruchengode, Namakkal district</td>
+                  <td className="px-4 py-3 text-gray-700">Tiruchengode</td>
+                  <td className="px-4 py-3 text-gray-700">—</td>
+                  <td className="px-4 py-3 text-gray-700">BDS + MDS</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p className="text-gray-500 text-sm">All three colleges are affiliated to TN Dr. MGR Medical University and admit students through NEET UG counselling conducted by DME Tamil Nadu. Details for the other two colleges are taken from their own official websites (checked September 2026); JKKN figures are from this college's published records.</p>
         </div>
       </section>
 
