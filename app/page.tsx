@@ -18,7 +18,6 @@ const AdmissionsSection = dynamic(() => import('@/components/AdmissionsSection')
 const FAQSection = dynamic(() => import('@/components/FAQSection'));
 const CTASection = dynamic(() => import('@/components/CTASection'));
 const Footer = dynamic(() => import('@/components/Footer'));
-const FacultySection = dynamic(() => import('@/components/FacultySection'));
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -298,7 +297,6 @@ export default function Home() {
       <div id="events">
         <EventsStories />
       </div>
-      <FacultySection />
       <AdmissionsSection />
       <FAQSection />
       <CTASection />

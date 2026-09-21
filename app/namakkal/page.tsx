@@ -17,7 +17,7 @@ export default function NamakkalPage() {
 
   const programmes = [
     { title: 'BDS (Bachelor of Dental Surgery)', duration: '5 years (4 years + 1 year internship)', level: 'UG', intake: '100 seats', eligibility: '10+2 with Physics, Chemistry, Biology; NEET-UG qualified; Tamil Nadu DME counselling', href: '/academics/details-of-academic-programs/bds/' },
-    { title: 'MDS (Master of Dental Surgery)', duration: '3 years', level: 'PG', intake: '30 seats', eligibility: 'BDS degree; NEET MDS qualified; Tamil Nadu DOGE counselling', href: '/academics/details-of-academic-programs/mds/' },
+    { title: 'MDS (Master of Dental Surgery)', duration: '3 years', level: 'PG', intake: '18 seats', eligibility: 'BDS degree; NEET MDS qualified; Tamil Nadu DOGE counselling', href: '/academics/details-of-academic-programs/mds/' },
   ];
 
   const placementStats = [
@@ -32,7 +32,7 @@ export default function NamakkalPage() {
   const transportRows = [
     { icon: <Route className="w-6 h-6 text-[#006837]" />, label: 'ROUTE', text: 'NH-544 (Salem-Coimbatore Highway) — JKKN campus is on this highway at Komarapalayam, Namakkal district' },
     { icon: <Bus className="w-6 h-6 text-[#006837]" />, label: 'BY BUS', text: 'Frequent buses from Namakkal city via Tiruchengode to Komarapalayam (~60 km, ~1.5 hours). Direct local buses and auto-rickshaws available at Komarapalayam.' },
-    { icon: <Train className="w-6 h-6 text-[#006837]" />, label: 'NEAREST RAILWAY STATION', text: 'Salem Junction (~58 km from campus) | Erode Junction (~22 km from campus)' },
+    { icon: <Train className="w-6 h-6 text-[#006837]" />, label: 'NEAREST RAILWAY STATION', text: 'Salem Junction (~58 km from campus) | Erode Junction (~18 km from campus)' },
     { icon: <Plane className="w-6 h-6 text-[#006837]" />, label: 'NEAREST AIRPORT', text: 'Coimbatore International Airport (Code: CJB) (~108 km) | Salem Airport (~60 km from campus)' },
     { icon: <MapPin className="w-6 h-6 text-[#006837]" />, label: 'CAMPUS ADDRESS', text: 'JKKN Institutions, Natarajapuram, NH-544, Komarapalayam (TK), Namakkal (DT), Tamil Nadu - 638183' },
   ];

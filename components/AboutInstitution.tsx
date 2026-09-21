@@ -28,7 +28,7 @@ export default function AboutInstitution() {
               Over Five Decades of Excellence in Progressive Education
             </p>
             <p className="snippet-answer text-gray-600 text-sm sm:text-base md:text-lg mb-4 sm:mb-6 leading-relaxed">
-              JKKN Dental College and Hospital, established in 1987 in Komarapalayam, Namakkal District, is a National Dental Commission (formerly Dental Council of India) approved and NAAC A Grade accredited dental college in Tamil Nadu. Affiliated to Tamil Nadu Dr. M.G.R. Medical University, the college offers Bachelor of Dental Surgery and Master of Dental Surgery programs with over two hundred dental chairs, five hundred daily patients, and ninety-two percent placement assistance.
+              JKKN Dental College and Hospital, established in 1987 in Komarapalayam, Namakkal District, is a National Dental Commission (formerly Dental Council of India) approved and NAAC A Grade accredited dental college in Tamil Nadu. Affiliated to Tamil Nadu Dr. M.G.R. Medical University, the college offers Bachelor of Dental Surgery and Master of Dental Surgery programs with over two hundred dental chairs, five hundred daily patients, and 93.9% of the 2024-25 batch placed or in higher studies.
             </p>
             {/* Voice Search Answer — hidden visually, accessible to crawlers and screen readers */}
             <div className="voice-answer sr-only" aria-hidden="false">
@@ -36,7 +36,7 @@ export default function AboutInstitution() {
             </div>
 
             <p className="text-gray-600 text-sm sm:text-base md:text-lg mb-6 sm:mb-8 leading-relaxed">
-              Founded on the vision of J.K.K. Nattraja Chettiar (1895–1995), JKKN Dental College is a premier institution under JKKN Institutions. Located on NH-544 in Komarapalayam, Namakkal District, the college provides an ideal environment for focused learning on an AI-integrated dental campus.
+              Founded on the vision of J.K.K. Nattraja Chettiar (1895–1995), JKKN Dental College is a premier institution under JKKN Institutions. Located on NH-544 in Komarapalayam, Namakkal District — about 18 km from <Link href="/erode/" className="text-[#006837] hover:underline">Erode</Link> — the college provides an ideal environment for focused learning on an AI-integrated dental campus.
             </p>
 
             {/* Why Choose JKKN — Unique value propositions */}

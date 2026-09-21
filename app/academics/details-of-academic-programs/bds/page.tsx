@@ -61,7 +61,7 @@ export default function BDSProgram() {
               },
               {
                 q: 'Where is JKKN Dental College located?',
-                a: 'JKKN Dental College is at Natarajapuram, NH-544, Komarapalayam, Namakkal District, Tamil Nadu 638183. Distances: Erode (~22 km, 35 min), Salem (~58 km, 1 hr), Namakkal town (~66 km), Tiruppur (~67 km), Coimbatore (~105 km, 2 hrs). It is approved by the National Dental Commission and NAAC accredited with an A Grade.'
+                a: 'JKKN Dental College is at Natarajapuram, NH-544, Komarapalayam, Namakkal District, Tamil Nadu 638183. Distances: Erode (~18 km, 35 min), Salem (~58 km, 1 hr), Namakkal town (~66 km), Tiruppur (~67 km), Coimbatore (~105 km, 2 hrs). It is approved by the National Dental Commission and NAAC accredited with an A Grade.'
               },
               {
                 q: 'What hostel facilities are available for BDS learners?',
@@ -327,7 +327,7 @@ export default function BDSProgram() {
               { num: 4, title: '93.9% Placed or in Higher Studies (2024-25) — Including International', desc: 'Strong placement record with recruiters like Apollo Hospitals, Clove Dental, NHS UK, and Cleveland Clinic Abu Dhabi. 3,000+ alumni network worldwide.' },
               { num: 5, title: '5 MDS Specializations — Seamless UG to PG Pathway', desc: 'Pursue MDS in Periodontics, Orthodontics, Prosthodontics, Conservative & Endodontics, or Oral Medicine & Radiology — 18 PG seats available right on campus.' },
               { num: 6, title: '74+ Years of Trust Legacy (Since 1952)', desc: 'Part of J.K.K. Nattraja Educational Institutions, one of the oldest educational trusts in Tamil Nadu with a legacy spanning 74+ years across 9 institutions.' },
-              { num: 7, title: 'Strategic NH-544 Location — Well-Connected', desc: 'Located on the Salem-Coimbatore National Highway, easily accessible from Erode (~22 km), Salem (~58 km), Namakkal town (~66 km), and Coimbatore (~105 km).' },
+              { num: 7, title: 'Strategic NH-544 Location — Well-Connected', desc: 'Located on the Salem-Coimbatore National Highway, easily accessible from Erode (~18 km), Salem (~58 km), Namakkal town (~66 km), and Coimbatore (~105 km).' },
               { num: 8, title: 'AI-Integrated Campus', desc: 'An AI-integrated dental campus, blending traditional clinical excellence with cutting-edge artificial intelligence tools for diagnostics and education.' },
               { num: 9, title: '50+ Research Publications — Strong Research Culture', desc: 'Active research ecosystem with 50+ published research papers, 25+ MoU partners, ethical committee approvals, and dedicated R&D facilities.' },
               { num: 10, title: 'Affordable Fee Structure with Scholarships', desc: 'Government-regulated fee structure with scholarship options for meritorious learners and economically weaker sections (BC/MBC/SC/ST categories).' },
