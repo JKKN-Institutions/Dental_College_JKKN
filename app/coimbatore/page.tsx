@@ -17,7 +17,7 @@ export default function CoimbatorePage() {
 
   const programmes = [
     { title: 'BDS (Bachelor of Dental Surgery)', href: '/academics/details-of-academic-programs/bds/', duration: '4 years + 1 year internship', level: 'UG', intake: '100 seats', eligibility: '10+2 with Physics, Chemistry, Biology; NEET qualified' },
-    { title: 'MDS (Master of Dental Surgery)', href: '/academics/details-of-academic-programs/mds/', duration: '3 years', level: 'PG', intake: '30 seats', eligibility: 'BDS degree; NEET MDS qualified' },
+    { title: 'MDS (Master of Dental Surgery)', href: '/academics/details-of-academic-programs/mds/', duration: '3 years', level: 'PG', intake: '18 seats', eligibility: 'BDS degree; NEET MDS qualified' },
   ];
 
   const placementStats = [

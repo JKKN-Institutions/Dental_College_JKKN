@@ -104,7 +104,7 @@ const bdsFaqSchema = {
       "name": "What are the career options after completing BDS?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Bachelor of Dental Surgery graduates from JKKN pursue private practice, government positions, Master of Dental Surgery specialization, dental research, hospital roles, and public health careers with ninety-two percent placement support."
+        "text": "Bachelor of Dental Surgery graduates from JKKN pursue private practice, government positions, Master of Dental Surgery specialization, dental research, hospital roles, and public health careers with 93.9% of the 2024-25 batch placed or in higher studies."
       }
     },
     {
