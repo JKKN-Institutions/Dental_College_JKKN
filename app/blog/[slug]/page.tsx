@@ -686,7 +686,7 @@ export default function BlogDetailPage() {
                   {
                     num: 5,
                     title: 'Strategic Location & Residential Campus',
-                    desc: 'Situated on NH-544 (Salem-Coimbatore Highway) at Natarajapuram, Komarapalayam, easily accessible from Erode (~18 km), Salem (~58 km) and Namakkal town (~66 km). The residential campus includes hostel, library, and sports facilities.',
+                    desc: 'Situated on NH-544 (Salem-Coimbatore Highway) at Natarajapuram, Komarapalayam, easily accessible from Erode (~18 km), Salem (~60 km) and Namakkal town (~65 km). The residential campus includes hostel, library, and sports facilities.',
                   },
                 ].map(({ num, title, desc }) => (
                   <div key={num} className="flex gap-4">

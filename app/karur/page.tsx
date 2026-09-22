@@ -48,7 +48,7 @@ export default function KarurPage() {
 
   const cities = [
     { icon: <Home className="w-6 h-6 text-[#006837]" />, name: 'Erode', dist: '~18 km', href: '/erode/' },
-    { icon: <Bus className="w-6 h-6 text-[#006837]" />, name: 'Namakkal', dist: '~60 km', href: '/namakkal/' },
+    { icon: <Bus className="w-6 h-6 text-[#006837]" />, name: 'Namakkal', dist: '~65 km', href: '/namakkal/' },
     { icon: <Target className="w-6 h-6 text-[#006837]" />, name: 'Trichy', dist: '~145 km', href: '/trichy/' },
     { icon: <Sparkles className="w-6 h-6 text-[#006837]" />, name: 'Madurai', dist: '~215 km', href: '/madurai/' },
   ];

@@ -292,7 +292,7 @@ export const faqCategories = [
       {
         question: 'Where is JKKN Dental College located?',
         answer:
-          'JKKN Dental College & Hospital is located at Natarajapuram, NH-544 (Salem-Coimbatore National Highway), Komarapalayam (Taluk), Namakkal (District), Tamil Nadu — 638183. It is approximately 18 km from Erode, 58 km from Salem, and 105 km from Coimbatore.',
+          'JKKN Dental College & Hospital is located at Natarajapuram, NH-544 (Salem-Coimbatore National Highway), Komarapalayam (Taluk), Namakkal (District), Tamil Nadu — 638183. It is approximately 18 km from Erode, 60 km from Salem, and 105 km from Coimbatore.',
       },
       {
         question: 'What is the contact number of JKKN Dental College?',
@@ -302,7 +302,7 @@ export const faqCategories = [
       {
         question: 'How to reach JKKN Dental College from Salem?',
         answer:
-          'JKKN Dental College is approximately 58 km from Salem and can be reached in about 1 hour by road via NH-544 (Salem-Coimbatore National Highway). Regular bus services operate between Salem and Komarapalayam. The nearest railway station is Erode Junction, approximately 18 km (about 30 minutes) from the college.',
+          'JKKN Dental College is approximately 60 km from Salem and can be reached in about 1 hour by road via NH-544 (Salem-Coimbatore National Highway). Regular bus services operate between Salem and Komarapalayam. The nearest railway station is Erode Junction, approximately 18 km (about 30 minutes) from the college.',
       },
       {
         question: 'Is there a helpline for admission queries?',

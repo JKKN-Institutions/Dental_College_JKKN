@@ -123,7 +123,7 @@ const howToSchema = {
       "@type": "HowToStep",
       "position": 3,
       "name": "Arrive at Komarapalayam",
-      "text": "JKKN Dental College & Hospital is located in Komarapalayam on NH-544 (Salem–Coimbatore Highway), Natarajapuram, Namakkal District, Tamil Nadu 638183. The total journey from Namakkal city is approximately 60 km and takes about 1.5 hours."
+      "text": "JKKN Dental College & Hospital is located in Komarapalayam on NH-544 (Salem–Coimbatore Highway), Natarajapuram, Namakkal District, Tamil Nadu 638183. The total journey from Namakkal town is approximately 65 km and takes about 1.5 hours."
     }
   ]
 };

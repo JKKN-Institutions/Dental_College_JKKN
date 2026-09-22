@@ -48,7 +48,7 @@ export default function MaduraiPage() {
 
   const cities = [
     { icon: <Home className="w-6 h-6 text-[#006837]" />, name: 'Trichy', dist: '~145 km', href: '/trichy/' },
-    { icon: <Bus className="w-6 h-6 text-[#006837]" />, name: 'Namakkal', dist: '~60 km', href: '/namakkal/' },
+    { icon: <Bus className="w-6 h-6 text-[#006837]" />, name: 'Namakkal', dist: '~65 km', href: '/namakkal/' },
     { icon: <Target className="w-6 h-6 text-[#006837]" />, name: 'Salem', dist: '~60 km', href: '/salem/' },
     { icon: <Sparkles className="w-6 h-6 text-[#006837]" />, name: 'Coimbatore', dist: '~108 km', href: '/coimbatore/' },
     { icon: <Train className="w-6 h-6 text-[#006837]" />, name: 'Karur', dist: '~75 km', href: '/karur/' },

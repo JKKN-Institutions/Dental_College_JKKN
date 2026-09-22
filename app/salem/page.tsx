@@ -61,7 +61,7 @@ export default function SalemPage() {
   ];
 
   const cities = [
-    { icon: <Home className="w-6 h-6 text-[#006837]" />, name: 'Namakkal', dist: '~60 km', href: '/namakkal/' },
+    { icon: <Home className="w-6 h-6 text-[#006837]" />, name: 'Namakkal', dist: '~65 km', href: '/namakkal/' },
     { icon: <Route className="w-6 h-6 text-[#006837]" />, name: 'Erode', dist: '~18 km', href: '/erode/' },
     { icon: <Target className="w-6 h-6 text-[#006837]" />, name: 'Tiruppur', dist: '~67 km', href: '/tiruppur/' },
     { icon: <Sparkles className="w-6 h-6 text-[#006837]" />, name: 'Coimbatore', dist: '~108 km', href: '/coimbatore/' },

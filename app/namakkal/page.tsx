@@ -7,12 +7,12 @@ export default function NamakkalPage() {
 
 
   const whyFeatures = [
-    { icon: <Hospital className="w-6 h-6 text-[#006837]" />, title: 'Own Hospital', desc: '200-chair NDC-approved teaching hospital on campus — the only facility of its scale in Namakkal district' },
+    { icon: <Hospital className="w-6 h-6 text-[#006837]" />, title: 'Own Hospital', desc: '200+ chair NDC-approved teaching hospital on campus, treating 500+ patients a day' },
     { icon: <Stethoscope className="w-6 h-6 text-[#006837]" />, title: 'Real Patient Exposure', desc: '500+ patients treated daily — learners get hands-on clinical exposure from their very first year of BDS' },
     { icon: <Microscope className="w-6 h-6 text-[#006837]" />, title: 'Advanced Learning Labs', desc: 'Advanced dental learning labs, simulation equipment, and an AI-integrated dental campus' },
     { icon: <TrendingUp className="w-6 h-6 text-[#006837]" />, title: 'NEET MDS Results', desc: 'Strong track record in NEET MDS results and higher education placements year after year' },
     { icon: <Users className="w-6 h-6 text-[#006837]" />, title: 'Established 1987', desc: 'Part of JKKN Institutions (est. 1952), with continuous dental education in Namakkal district since 1987' },
-    { icon: <Bus className="w-6 h-6 text-[#006837]" />, title: 'District Location', desc: 'Located IN Namakkal district at Komarapalayam on NH-544. ~60 km from Namakkal city via Tiruchengode. Hostel available.' },
+    { icon: <Bus className="w-6 h-6 text-[#006837]" />, title: 'District Location', desc: 'Located IN Namakkal district at Komarapalayam on NH-544. ~65 km from Namakkal town via Tiruchengode. Hostel available.' },
   ];
 
   const programmes = [
@@ -31,8 +31,8 @@ export default function NamakkalPage() {
 
   const transportRows = [
     { icon: <Route className="w-6 h-6 text-[#006837]" />, label: 'ROUTE', text: 'NH-544 (Salem-Coimbatore Highway) — JKKN campus is on this highway at Komarapalayam, Namakkal district' },
-    { icon: <Bus className="w-6 h-6 text-[#006837]" />, label: 'BY BUS', text: 'Frequent buses from Namakkal city via Tiruchengode to Komarapalayam (~60 km, ~1.5 hours). Direct local buses and auto-rickshaws available at Komarapalayam.' },
-    { icon: <Train className="w-6 h-6 text-[#006837]" />, label: 'NEAREST RAILWAY STATION', text: 'Salem Junction (~58 km from campus) | Erode Junction (~18 km from campus)' },
+    { icon: <Bus className="w-6 h-6 text-[#006837]" />, label: 'BY BUS', text: 'Frequent buses from Namakkal city via Tiruchengode to Komarapalayam (~65 km, ~1.5 hours). Direct local buses and auto-rickshaws available at Komarapalayam.' },
+    { icon: <Train className="w-6 h-6 text-[#006837]" />, label: 'NEAREST RAILWAY STATION', text: 'Salem Junction (~60 km from campus) | Erode Junction (~18 km from campus)' },
     { icon: <Plane className="w-6 h-6 text-[#006837]" />, label: 'NEAREST AIRPORT', text: 'Coimbatore International Airport (Code: CJB) (~108 km) | Salem Airport (~60 km from campus)' },
     { icon: <MapPin className="w-6 h-6 text-[#006837]" />, label: 'CAMPUS ADDRESS', text: 'JKKN Institutions, Natarajapuram, NH-544, Komarapalayam (TK), Namakkal (DT), Tamil Nadu - 638183' },
   ];
@@ -123,7 +123,7 @@ export default function NamakkalPage() {
 
         {/* Snippet Answer Block — AEO optimized */}
         <p className="snippet-answer text-white/80 max-w-2xl mb-6 leading-relaxed" style={{ fontSize: 'clamp(0.9rem, 1vw + 0.5rem, 1.05rem)', color: 'rgba(255,255,255,0.8)' }}>
-          JKKN Dental College &amp; Hospital is the dental institution of Namakkal district, located at Komarapalayam on National Highway 544 (Salem–Coimbatore Highway). Approved by the National Dental Commission and affiliated to Tamil Nadu Dr. MGR Medical University, it offers BDS (100 seats) and MDS (5 specializations). The 200-chair teaching hospital treats 500+ patients daily. Established in 1987.
+          JKKN Dental College &amp; Hospital is one of the three NDC-approved dental colleges in Namakkal district, located at Komarapalayam on National Highway 544 (Salem–Coimbatore Highway). Approved by the National Dental Commission and affiliated to Tamil Nadu Dr. MGR Medical University, it offers BDS (100 seats) and MDS (5 specializations). The 200-chair teaching hospital treats 500+ patients daily. Established in 1987.
         </p>
 
         {/* Voice Answer Block — speakable */}
@@ -177,7 +177,7 @@ export default function NamakkalPage() {
             Is There a Dental College in Namakkal?
           </h2>
           <p className="snippet-answer text-gray-700 text-base leading-relaxed mb-4">
-            Yes. JKKN Dental College &amp; Hospital is the dental institution of Namakkal district, located at Komarapalayam on NH-544 (Salem–Coimbatore Highway). It is NDC approved, NAAC accredited, and affiliated to Tamil Nadu Dr. M.G.R. Medical University, Chennai. Established in 1987 as part of JKKN Institutions, it offers BDS (100 seats) and MDS (5 specializations). The 200-chair teaching hospital treats 500+ patients daily.
+            Yes. Namakkal district has three NDC-approved dental colleges; JKKN Dental College &amp; Hospital is the one at Komarapalayam on NH-544 (Salem–Coimbatore Highway). It is NDC approved, NAAC accredited, and affiliated to Tamil Nadu Dr. M.G.R. Medical University, Chennai. Established in 1987 as part of JKKN Institutions, it offers BDS (100 seats) and MDS (5 specializations). The 200-chair teaching hospital treats 500+ patients daily.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 mt-2">
             <Link href="/about/" className="text-[#006837] hover:underline text-sm font-medium">
@@ -202,7 +202,7 @@ export default function NamakkalPage() {
               <div>
                 <p className="font-bold text-gray-900 text-base sm:text-lg">JKKN Dental is IN Namakkal District</p>
                 <p className="text-gray-600 text-sm mt-1 font-medium">Komarapalayam, Namakkal District, Tamil Nadu 638183</p>
-                <p className="text-gray-500 text-sm mt-1">~60 km from Namakkal city • ~1.5 hours via Tiruchengode</p>
+                <p className="text-gray-500 text-sm mt-1">~65 km from Namakkal town • ~1.5 hours via Tiruchengode</p>
               </div>
             </div>
             <a
@@ -252,14 +252,51 @@ export default function NamakkalPage() {
       <section className="bg-white py-16 px-4">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="font-extrabold text-gray-900 mb-4" style={{ fontSize: 'clamp(1.6rem, 3vw + 0.5rem, 2.4rem)' }}>
-            JKKN Dental College: The Dental Institution of Namakkal District
+            JKKN Dental College: NDC-Approved Dental College in Namakkal District
           </h2>
           <p className="text-gray-600 max-w-3xl mx-auto mb-6 leading-relaxed" style={{ fontSize: 'clamp(0.875rem, 1vw + 0.4rem, 1.05rem)' }}>
-            JKKN Dental College &amp; Hospital is located IN Namakkal district at Komarapalayam on NH-544 — it is not a college near Namakkal, it is the dental college OF Namakkal district. Established in 1987 as part of JKKN Institutions (a trust legacy since 1952), it has served Namakkal district for nearly four decades.
+            JKKN Dental College &amp; Hospital is located IN Namakkal district at Komarapalayam on NH-544 — it is not a college near Namakkal district, it is inside it. Established in 1987 as part of JKKN Institutions (a trust legacy since 1952), it has served Namakkal district for nearly four decades.
           </p>
           <p className="text-gray-600 max-w-3xl mx-auto mb-6 leading-relaxed" style={{ fontSize: 'clamp(0.875rem, 1vw + 0.4rem, 1rem)' }}>
-            Namakkal district currently has three NDC-approved dental colleges. JKKN Dental College &amp; Hospital was established in 1987. Among these, JKKN is the only institution with a 200-chair teaching hospital and an AI-integrated campus. The teaching hospital treats 500+ outpatients daily — learners gain real clinical experience from their very first year of the BDS programme.
+            Namakkal district currently has three NDC-approved dental colleges — JKKN at Komarapalayam, and KSR Institute of Dental Science and Research and Vivekanandha Dental College for Women, both at Tiruchengode. JKKN Dental College &amp; Hospital was established in 1987 and runs a 200+ chair teaching hospital on an AI-integrated campus. The hospital treats 500+ outpatients daily — learners gain real clinical experience from their very first year of the BDS programme.
           </p>
+          <div className="overflow-x-auto max-w-3xl mx-auto mb-8">
+            <table className="w-full border-collapse bg-white rounded-xl shadow-sm overflow-hidden text-sm text-left">
+              <thead>
+                <tr className="bg-[#006837] text-white">
+                  <th className="px-4 py-3 font-semibold">College</th>
+                  <th className="px-4 py-3 font-semibold">Where in Namakkal district</th>
+                  <th className="px-4 py-3 font-semibold">Established</th>
+                  <th className="px-4 py-3 font-semibold">Courses</th>
+                  <th className="px-4 py-3 font-semibold">Admits</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="border-b border-gray-100">
+                  <td className="px-4 py-3 font-semibold text-gray-900">JKKN Dental College &amp; Hospital</td>
+                  <td className="px-4 py-3 text-gray-700">Komarapalayam, NH-544 (~18 km from Erode, ~60 km from Salem)</td>
+                  <td className="px-4 py-3 text-gray-700">1987</td>
+                  <td className="px-4 py-3 text-gray-700">BDS (100 seats) + MDS (18 seats, 5 specialisations)</td>
+                  <td className="px-4 py-3 text-gray-700">Men and women</td>
+                </tr>
+                <tr className="border-b border-gray-100 bg-gray-50">
+                  <td className="px-4 py-3 font-semibold text-gray-900">KSR Institute of Dental Science and Research</td>
+                  <td className="px-4 py-3 text-gray-700">Tiruchengode</td>
+                  <td className="px-4 py-3 text-gray-700">—</td>
+                  <td className="px-4 py-3 text-gray-700">BDS + MDS</td>
+                  <td className="px-4 py-3 text-gray-700">Men and women</td>
+                </tr>
+                <tr>
+                  <td className="px-4 py-3 font-semibold text-gray-900">Vivekanandha Dental College for Women</td>
+                  <td className="px-4 py-3 text-gray-700">Elayampalayam, Tiruchengode</td>
+                  <td className="px-4 py-3 text-gray-700">2007</td>
+                  <td className="px-4 py-3 text-gray-700">BDS + MDS</td>
+                  <td className="px-4 py-3 text-gray-700">Women only</td>
+                </tr>
+              </tbody>
+            </table>
+            <p className="text-gray-500 text-xs mt-2">All three are affiliated to The Tamil Nadu Dr. M.G.R. Medical University and admit through NEET counselling. Details for the other two colleges are from their own official websites (checked September 2026); JKKN figures are from this college's published records.</p>
+          </div>
           <p className="text-gray-600 max-w-3xl mx-auto mb-8 leading-relaxed text-sm">
             <strong className="text-gray-800">E-E-A-T Note:</strong> JKKN Dental College &amp; Hospital is NDC approved (National Dental Commission), NAAC accredited (National Assessment and Accreditation Council), and affiliated to Tamil Nadu Dr. M.G.R. Medical University, Chennai. All programmes are regulated by Tamil Nadu DME (Directorate of Medical Education). Clinical training is conducted at the on-campus 200-chair dental hospital under qualified senior learners with 50+ publications.
           </p>
@@ -431,7 +468,7 @@ export default function NamakkalPage() {
             How to Reach JKKN Dental College, Komarapalayam from Namakkal City
           </h2>
           <p className="snippet-answer text-gray-600 text-base mb-4 max-w-2xl mx-auto leading-relaxed">
-            JKKN Dental College &amp; Hospital is located in Komarapalayam, Namakkal district, Tamil Nadu 638183. From Namakkal city, the campus is approximately 60 km via Tiruchengode on NH-544, about 1.5 hours by road. Regular bus services operate between Namakkal and Komarapalayam throughout the day.
+            JKKN Dental College &amp; Hospital is located in Komarapalayam, Namakkal district, Tamil Nadu 638183. From Namakkal town, the campus is approximately 65 km via Tiruchengode on NH-544, about 1.5 hours by road. Regular bus services operate between Namakkal and Komarapalayam throughout the day.
           </p>
           <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-10" />
           <div className="bg-[#FBFBEE] rounded-2xl overflow-hidden shadow-sm text-left">
@@ -439,7 +476,7 @@ export default function NamakkalPage() {
               <MapPin className="w-6 h-6" />
               <div>
                 <p className="font-bold text-lg">JKKN Dental Campus — Namakkal District</p>
-                <p className="text-white/80 text-sm">Komarapalayam, NH-544 • ~60 km from Namakkal city • ~1.5 hours</p>
+                <p className="text-white/80 text-sm">Komarapalayam, NH-544 • ~65 km from Namakkal town • ~1.5 hours</p>
               </div>
             </div>
             {transportRows.map((row, i) => (
