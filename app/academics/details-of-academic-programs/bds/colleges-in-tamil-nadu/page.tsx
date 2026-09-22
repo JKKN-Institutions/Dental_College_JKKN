@@ -15,6 +15,7 @@ import {
   TN_BDS_TOTALS,
   JKKN_BDS_CODE,
 } from '@/data/tnBdsSeatMatrix';
+import { NIRF_2025_DENTAL_SOURCE, NIRF_2025_DENTAL_TN } from '@/data/nirf2025DentalTN';
 
 /**
  * "Dental colleges in Tamil Nadu" - the highest-impression money keyword in the dental
@@ -99,14 +100,17 @@ export default function DentalCollegesInTamilNadu() {
         'Twenty-two, and they are the same twenty-two dental colleges listed above. BDS is the only undergraduate dental degree recognised in India, so every affiliated dental college in Tamil Nadu is a BDS college \u2014 the two phrases describe one list. Between them they are sanctioned 2,100 BDS seats for 2025-26.',
     },
     {
-      question: 'Which are the private BDS colleges in Tamil Nadu?',
+      question: 'Which are the private (self-financing) dental colleges in Tamil Nadu?',
       answer:
-        'Nineteen of the twenty-two affiliated colleges listed here are self-financing, which is what most people mean by private, and they hold 1,850 of the 2,100 sanctioned BDS seats. Filter the table above to see them by name, location and intake. Deemed-to-be universities are private too but are not in this matrix at all, because they award their own degrees rather than the university\u2019s.',
+        'Nineteen of the twenty-two affiliated colleges listed here are self-financing, which is what most people mean by private, and they hold 1,850 of the 2,100 sanctioned BDS seats: ' +
+        TN_BDS_COLLEGES.filter((c) => c.kind === 'Self-financing').map((c) => c.name).join('; ') +
+        '. Deemed-to-be universities are private too but are not in this matrix at all, because they award their own degrees rather than the university\u2019s.',
     },
     {
-      question: 'Is there an official ranking of the best BDS colleges in Tamil Nadu?',
+      question: 'Which are the best or top dental colleges in Tamil Nadu?',
       answer:
-        'Not one that covers them all. The Tamil Nadu Dr. M.G.R. Medical University publishes sanctioned intake, not a merit order. NIRF, the Ministry of Education\u2019s ranking framework, does rank dental institutions nationally \u2014 but only those that take part in it, so it is neither a list of Tamil Nadu\u2019s dental colleges nor a ranking of BDS seats. No published source ranks all 22 affiliated colleges listed here, which is why a state-wide \u201ctop 10\u201d is an opinion. What the university document does let you compare is factual: whether a college is government or self-financing, how many BDS seats it is sanctioned, where it is, and whether it carries minority status \u2014 all four are in the table above.',
+        'The only published ranking is NIRF, the Ministry of Education\u2019s national framework. Its 2025 dental ranking places nine Tamil Nadu institutions in the national top 40: Saveetha (2), SRM Dental College (8), Sri Ramachandra (13), Amrita Coimbatore (14), Meenakshi (16), Sree Balaji (27), Dr. M.G.R. Educational and Research Institute (30), Chettinad (32) and SRM Kattankulathur (39). NIRF ranks only the institutions that take part, so it is not a list of all 22 affiliated colleges and JKKN is not in it. ' +
+        'The Tamil Nadu Dr. M.G.R. Medical University publishes sanctioned intake, not a merit order. No published source ranks all 22 affiliated colleges listed here, which is why a state-wide \u201ctop 10\u201d is an opinion. What the university document does let you compare is factual: whether a college is government or self-financing, how many BDS seats it is sanctioned, where it is, and whether it carries minority status \u2014 all four are in the table above.',
     },
   ];
 
@@ -354,8 +358,8 @@ export default function DentalCollegesInTamilNadu() {
             BDS Colleges in Tamil Nadu
           </h2>
           <p className="answer-capsule text-sm sm:text-base text-gray-700 leading-relaxed max-w-3xl mb-6">
-            BDS colleges in Tamil Nadu and dental colleges in Tamil Nadu are the same{' '}
-            {TN_BDS_TOTALS.colleges} institutions. Bachelor of Dental Surgery is the only
+            BDS colleges in Tamil Nadu and dental colleges in Tamil Nadu &mdash; spelt Tamilnadu in
+            most searches &mdash; are the same {TN_BDS_TOTALS.colleges} institutions. Bachelor of Dental Surgery is the only
             undergraduate dental degree recognised in India, so every affiliated dental college
             here is a BDS college. They hold{' '}
             {TN_BDS_TOTALS.seats.toLocaleString('en-IN')} sanctioned BDS seats for{' '}
@@ -382,7 +386,7 @@ export default function DentalCollegesInTamilNadu() {
                 {TN_BDS_TOTALS.selfFinancingColleges}
               </p>
               <p className="mt-1 font-semibold text-gray-900 text-sm sm:text-base">
-                Private BDS colleges
+                Private (self-financing) BDS colleges
               </p>
               <p className="mt-1.5 text-xs sm:text-sm text-gray-700 leading-relaxed">
                 Self-financing, holding{' '}
@@ -404,21 +408,59 @@ export default function DentalCollegesInTamilNadu() {
             </div>
           </div>
 
-          <div className="mt-6 rounded-xl border border-[#d4af37]/40 bg-white p-5 sm:p-6 max-w-3xl">
-            <h3 className="font-semibold text-gray-900 text-base sm:text-lg mb-2">
-              What about the &ldquo;best&rdquo; BDS colleges in Tamil Nadu?
-            </h3>
-            <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
+          <div id="nirf" className="mt-8 rounded-xl border border-[#d4af37]/40 bg-white p-5 sm:p-6">
+            <h2 className="text-xl sm:text-2xl font-bold text-[#006837] mb-2">
+              Best dental colleges in Tamil Nadu &mdash; what the NIRF 2025 ranking says
+            </h2>
+            <p className="answer-capsule text-sm sm:text-base text-gray-700 leading-relaxed mb-4">
               {TN_BDS_SOURCE.authority} publishes sanctioned intake, not a merit order, so the
-              table above is a list and not a ranking. NIRF, the Ministry of Education&rsquo;s
-              ranking framework, does rank dental institutions nationally &mdash; but only the ones
-              that take part in it, which is why it is neither a list of Tamil Nadu&rsquo;s dental
-              colleges nor a ranking of BDS seats. No published source ranks all{' '}
-              {TN_BDS_TOTALS.colleges} affiliated colleges, so a state-wide &ldquo;top 10&rdquo; is
-              an opinion presented as a fact. Four things in the table above are sourced and
-              comparable instead &mdash; government or self-financing, sanctioned seats, location,
-              and minority status &mdash; and for a candidate choosing on NEET rank those decide
-              far more than a ranking does.
+              table above is a list and not a ranking. The only published ranking of dental
+              institutions is NIRF, the Ministry of Education&rsquo;s national framework. Its 2025
+              dental ranking places {NIRF_2025_DENTAL_TN.length} Tamil Nadu institutions in the
+              national top {NIRF_2025_DENTAL_SOURCE.topN}, listed below in NIRF order. NIRF ranks
+              only the institutions that take part in it, so this is neither a list of all{' '}
+              {TN_BDS_TOTALS.colleges} affiliated colleges nor a ranking of BDS seats &mdash; and
+              JKKN is not in the 2025 top {NIRF_2025_DENTAL_SOURCE.topN}. Most of these nine are
+              deemed-to-be universities, which is why they do not appear in the affiliated table
+              above.
+            </p>
+            <div className="overflow-x-auto">
+              <table className="w-full text-xs sm:text-sm">
+                <thead>
+                  <tr className="bg-[#006837] text-white text-left">
+                    <th className="px-3 py-2">NIRF 2025 rank</th>
+                    <th className="px-3 py-2">Institution</th>
+                    <th className="px-3 py-2">City</th>
+                    <th className="px-3 py-2">Score</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {NIRF_2025_DENTAL_TN.map((r) => (
+                    <tr key={r.rank} className="border-b border-gray-200">
+                      <td className="px-3 py-2 font-semibold text-[#006837]">#{r.rank}</td>
+                      <td className="px-3 py-2 text-gray-900">{r.name}</td>
+                      <td className="px-3 py-2 text-gray-700">{r.city}</td>
+                      <td className="px-3 py-2 text-gray-700">{r.score.toFixed(2)}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p className="mt-3 text-xs sm:text-sm text-gray-600 leading-relaxed">
+              Source:{' '}
+              <a
+                href={NIRF_2025_DENTAL_SOURCE.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#006837] underline hover:no-underline"
+              >
+                {NIRF_2025_DENTAL_SOURCE.name}
+              </a>
+              , {NIRF_2025_DENTAL_SOURCE.publisher}. Retrieved {NIRF_2025_DENTAL_SOURCE.retrieved}.
+              The 2026 dental ranking had not been published on that date. For a candidate choosing
+              on NEET rank, the four sourced columns in the table above &mdash; government or
+              self-financing, sanctioned seats, location and minority status &mdash; decide more
+              than a national rank does.
             </p>
           </div>
         </div>

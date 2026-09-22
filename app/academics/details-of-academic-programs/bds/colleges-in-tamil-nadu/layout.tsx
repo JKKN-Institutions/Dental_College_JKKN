@@ -1,9 +1,9 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: { absolute: 'Dental Colleges in Tamil Nadu — 22 BDS Colleges and 2,100 Seats | JKKN' },
+  title: { absolute: 'Dental Colleges in Tamil Nadu — 22 BDS Colleges, Seats, Private List & NIRF Top Ranks | JKKN' },
   description:
-    'Dental colleges in Tamil Nadu affiliated to the TN Dr M.G.R. Medical University — 22 BDS colleges and 2,100 sanctioned seats for 2025-26, with location, government or self-financing, minority status and intake per college.',
+    'Dental colleges in Tamil Nadu (Tamilnadu) affiliated to the TN Dr M.G.R. Medical University — 22 BDS colleges and 2,100 sanctioned seats for 2025-26, the 19 private self-financing colleges, plus the 9 Tamil Nadu institutions in the NIRF 2025 dental top 40; location, minority status and intake per college.',
   keywords:
     'dental colleges in tamilnadu, dental college in tamil nadu, list of dental colleges in tamilnadu, bds colleges in tamilnadu, private dental colleges in tamilnadu, government dental colleges in tamilnadu, top dental colleges in tamilnadu, best dental colleges in tamilnadu',
   alternates: {
