@@ -2,6 +2,7 @@
 
 import MdsClusterPage from '@/components/mds/MdsClusterPage';
 import { TN_MDS_COLLEGES, TN_MDS_TOTALS } from '@/data/tnMdsSeatMatrix';
+import { NIRF_2025_DENTAL_SOURCE, NIRF_2025_DENTAL_TN } from '@/data/nirf2025DentalTN';
 
 export default function MdsCollegesInTamilNadu() {
   const faqs = [
@@ -26,6 +27,11 @@ export default function MdsCollegesInTamilNadu() {
         'Start with the speciality you want, because not every college offers all nine. Then check seat count in that speciality, whether the seat is government or management quota, the distance from home for a three-year full-time course, and the patient load of the attached teaching hospital, since MDS is a clinical degree.',
     },
     {
+      question: 'Which are the best or top MDS colleges in Tamil Nadu?',
+      answer:
+        'No published source ranks MDS programmes. The only published ranking of dental institutions is NIRF, the Ministry of Education\u2019s national framework, and it ranks the institution as a whole, not its MDS course. Its 2025 dental ranking places nine Tamil Nadu institutions in the national top 40: Saveetha (2), SRM Dental College (8), Sri Ramachandra (13), Amrita Coimbatore (14), Meenakshi (16), Sree Balaji (27), Dr. M.G.R. Educational and Research Institute (30), Chettinad (32) and SRM Kattankulathur (39). Most are deemed-to-be universities, which is why they are not in the affiliated table on this page, and JKKN is not in the 2025 list. What is comparable for an MDS candidate is sourced and on this page: how many seats a college holds in the speciality you want, whether it is government or self-financing, and where it is.',
+    },
+    {
       question: 'Does JKKN Dental College offer MDS?',
       answer:
         'Yes. JKKN Dental College & Hospital, Komarapalayam is one of the 19 affiliated MDS colleges, with 18 sanctioned seats across five specialities — Conservative Dentistry and Endodontics, Orthodontics and Dentofacial Orthopaedics, Prosthodontics and Crown & Bridge, Oral Medicine & Radiology, and Periodontology.',
@@ -47,7 +53,7 @@ export default function MdsCollegesInTamilNadu() {
       kicker="MDS colleges"
       h1="MDS Colleges in Tamil Nadu — All 19 Affiliated Colleges, 2025-26"
       answer="Nineteen dental colleges in Tamil Nadu are affiliated to The Tamil Nadu Dr. M.G.R. Medical University and sanctioned to run MDS in 2025-26. Two are government colleges with 79 seats; 17 are self-financing with 356. Together they hold 435 seats across nine specialities."
-      intro="This is the complete affiliated list, not a shortlist. Each row shows where the college is, whether it is government or self-financing, and how many seats it holds in each of the nine MDS specialities — so a candidate can see at a glance which colleges actually run the branch they want."
+      intro="This is the complete affiliated list, not a shortlist. Each row shows where the college is, whether it is government or self-financing, and how many seats it holds in each of the nine MDS specialities — so a candidate can see at a glance which colleges actually run the branch they want. MDS colleges in Tamil Nadu and MDS colleges in Tamilnadu, the spelling most searches use, are the same list."
       faqs={faqs}
       showSpecialities
     >
@@ -86,6 +92,68 @@ export default function MdsCollegesInTamilNadu() {
             </tbody>
           </table>
         </div>
+      </div>
+
+      <div id="nirf" className="mt-10 rounded-xl border border-[#d4af37]/40 bg-white p-5 sm:p-6">
+        <h2 className="text-xl sm:text-2xl font-bold text-[#006837] mb-2">
+          Best MDS colleges in Tamil Nadu &mdash; what the NIRF 2025 ranking says
+        </h2>
+        <p className="answer-capsule text-sm sm:text-base text-gray-700 leading-relaxed mb-4">
+          No published source ranks MDS programmes. NIRF, the Ministry of Education&rsquo;s national
+          framework, ranks the dental institution as a whole and only those that take part in it.
+          Its 2025 dental ranking places {NIRF_2025_DENTAL_TN.length} Tamil Nadu institutions in the
+          national top {NIRF_2025_DENTAL_SOURCE.topN}, listed below in NIRF order. Most are
+          deemed-to-be universities, which is why they are not in the affiliated table on this page,
+          and JKKN is not in the 2025 list. For an MDS candidate the comparable figures are the ones
+          above: seats in the speciality you want, government or self-financing, and location.
+        </p>
+        <div className="overflow-x-auto rounded-xl border border-gray-200 shadow-sm bg-white">
+          <table className="min-w-full text-sm">
+            <thead>
+              <tr className="bg-[#006837] text-white text-left">
+                <th scope="col" className="px-4 py-3 font-semibold">
+                  NIRF 2025 rank
+                </th>
+                <th scope="col" className="px-4 py-3 font-semibold">
+                  Institution
+                </th>
+                <th scope="col" className="px-4 py-3 font-semibold">
+                  City
+                </th>
+                <th scope="col" className="px-4 py-3 font-semibold text-right">
+                  Score
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              {NIRF_2025_DENTAL_TN.map((r) => (
+                <tr key={r.rank} className="odd:bg-white even:bg-gray-50">
+                  <th scope="row" className="px-4 py-2.5 text-left font-semibold text-[#006837]">
+                    #{r.rank}
+                  </th>
+                  <td className="px-4 py-2.5 text-gray-900">{r.name}</td>
+                  <td className="px-4 py-2.5 text-gray-700">{r.city}</td>
+                  <td className="px-4 py-2.5 text-right tabular-nums text-gray-700">
+                    {r.score.toFixed(2)}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p className="mt-3 text-xs sm:text-sm text-gray-600 leading-relaxed">
+          Source:{' '}
+          <a
+            href={NIRF_2025_DENTAL_SOURCE.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#006837] underline hover:no-underline"
+          >
+            {NIRF_2025_DENTAL_SOURCE.name}
+          </a>
+          , {NIRF_2025_DENTAL_SOURCE.publisher}. Retrieved {NIRF_2025_DENTAL_SOURCE.retrieved}. The
+          2026 dental ranking had not been published on that date.
+        </p>
       </div>
     </MdsClusterPage>
   );
