@@ -8,15 +8,15 @@ import type { FaqItem } from '@/lib/faq';
 export const faqs: FaqItem[] = [
   {
     q: 'Are there any dental colleges in Salem?',
-    a: 'Yes. There are dental institutions in and near Salem, Tamil Nadu. Within Salem city, Vinayaka Mission\'s Sankarachariyar Dental College is a private institution. Additionally, JKKN Dental College & Hospital is located approximately 60 km from Salem at Komarapalayam, Namakkal, on NH-544 (Salem-Coimbatore Highway), and is NDC-approved and NAAC accredited.',
+    a: 'Yes. Salem district has one dental college, Vinayaka Mission\'s Sankarachariyar Dental College at Ariyanur (a deemed-university college offering BDS and MDS). Outside the district, JKKN Dental College & Hospital is located approximately 60 km from Salem at Komarapalayam, Namakkal, on NH-544 (Salem-Coimbatore Highway), and is NDC-approved and NAAC accredited.',
   },
   {
     q: 'How many dental colleges are in Salem district?',
-    a: 'There are dental institutions in and near Salem district. Vinayaka Mission\'s Sankarachariyar Dental College is located within Salem city. Government Medical College Salem also has dental programs. JKKN Dental College & Hospital, located approximately 60 km away at Komarapalayam, Namakkal via NH-544, is the nearest NDC-approved and NAAC accredited private dental college near Salem.',
+    a: 'Salem district has one dental college, Vinayaka Mission\'s Sankarachariyar Dental College at Ariyanur (BDS and MDS). The dental colleges nearest to Salem outside the district are in Namakkal district: JKKN Dental College & Hospital at Komarapalayam (about 60 km from Salem via NH-544; NDC-approved, NAAC accredited, BDS and MDS), and KSR Institute of Dental Science and Research and Vivekanandha Dental College for Women, both at Tiruchengode.',
   },
   {
     q: 'Which are the best dental colleges in Salem?',
-    a: 'Salem district has one dental college, Vinayaka Mission\'s Sankarachariyar Dental College at Ariyanur (BDS and MDS). The nearest dental college outside the district offering both BDS and MDS is JKKN Dental College & Hospital at Komarapalayam, about 60 km from Salem on NH-544: established 1987, NDC approved, NAAC accredited, affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai, with BDS (100 seats), MDS (18 seats, 5 specialisations), a 200+ chair teaching hospital and 93.9% of the 2024-25 batch placed or in higher studies.',
+    a: 'Salem district has one dental college, Vinayaka Mission\'s Sankarachariyar Dental College at Ariyanur (BDS and MDS). Outside the district, JKKN Dental College & Hospital at Komarapalayam, about 60 km from Salem on NH-544, offers both BDS and MDS: established 1987, NDC approved, NAAC accredited, affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai, with BDS (100 seats), MDS (18 seats, 5 specialisations), a 200+ chair teaching hospital and 93.9% of the 2024-25 batch placed or in higher studies.',
   },
   {
     q: 'How far is JKKN Dental from Salem?',
@@ -44,7 +44,7 @@ export const faqs: FaqItem[] = [
   },
   {
     q: 'Can Salem learners get BDS admission at JKKN through NEET?',
-    a: 'Yes, Salem learners can secure BDS admission at JKKN Dental College & Hospital through NEET-UG scores via Tamil Nadu DME state quota counselling or management quota. 85% of seats are allocated through state quota and 15% through All India Quota. JKKN is approximately 60 km from Salem via NH-544.',
+    a: 'Yes, Salem learners can secure BDS admission at JKKN Dental College & Hospital through NEET-UG scores via Tamil Nadu DME state quota counselling or the management quota; the current seat split by quota is published on the admissions page. JKKN is approximately 60 km from Salem via NH-544.',
   },
   {
     q: 'How can I apply for admission at JKKN Dental?',

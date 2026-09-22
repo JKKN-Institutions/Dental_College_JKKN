@@ -125,10 +125,10 @@ export default function SalemPage() {
           Dental Colleges in <span className="text-[#7cb983]">Salem</span>
         </h1>
         <p className="text-white/70 max-w-3xl mb-4 leading-relaxed" style={{ fontSize: 'clamp(0.875rem, 1vw + 0.3rem, 1rem)' }}>
-          Nearest NDC-Approved Dental College — JKKN Dental College &amp; Hospital, Komarapalayam
+          NDC-Approved Dental College near Salem — JKKN Dental College &amp; Hospital, Komarapalayam
         </p>
         <p className="text-white/80 max-w-2xl mb-10 leading-relaxed" style={{ fontSize: 'clamp(0.9rem, 1vw + 0.5rem, 1.1rem)' }}>
-          Approximately 60 km from Salem on NH-544. JKKN Dental College &amp; Hospital offers top-tier dental programmes with
+          Approximately 60 km from Salem on NH-544. JKKN Dental College &amp; Hospital offers BDS and MDS programmes, with
           93.9% placed or in higher studies (2024-25 batch).
         </p>
         <ul className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 mb-10 w-full max-w-2xl list-none p-0 m-0">
@@ -171,7 +171,7 @@ export default function SalemPage() {
             Are There Any Dental Colleges in Salem?
           </h2>
           <p className="snippet-answer text-gray-700 leading-relaxed mb-6 bg-white p-5 rounded-xl border border-[#7cb983]/30" style={{ fontSize: 'clamp(0.9rem, 1vw + 0.4rem, 1.05rem)' }}>
-            Salem district has one dental college of its own, Vinayaka Mission&apos;s Sankarachariyar Dental College at Ariyanur. The nearest dental college outside the district offering both BDS and MDS is JKKN Dental College &amp; Hospital at Komarapalayam on NH-544 (Salem-Coimbatore Highway), about 60 km from Salem: approved by the National Dental Commission (formerly Dental Council of India), NAAC accredited and affiliated to TN Dr. MGR Medical University, with BDS (100 seats), MDS (18 seats, 5 specialisations) and 93.9% of the 2024-25 batch placed or in higher studies.
+            Salem district has one dental college of its own, Vinayaka Mission&apos;s Sankarachariyar Dental College at Ariyanur. Outside the district, JKKN Dental College &amp; Hospital at Komarapalayam on NH-544 (Salem-Coimbatore Highway), about 60 km from Salem, offers both BDS and MDS: approved by the National Dental Commission (formerly Dental Council of India), NAAC accredited and affiliated to TN Dr. MGR Medical University, with BDS (100 seats), MDS (18 seats, 5 specialisations) and 93.9% of the 2024-25 batch placed or in higher studies.
           </p>
           <p id="voice-answer" className="voice-answer text-gray-700 leading-relaxed" style={{ borderLeft: '3px solid #7cb983', paddingLeft: '1rem', fontSize: 'clamp(0.875rem, 1vw + 0.3rem, 1rem)' }}>
             JKKN Dental College &amp; Hospital, located sixty kilometres from Salem on NH-544 (Salem-Coimbatore Highway), is NDC-approved with two hundred plus dental chairs, five hundred plus daily patients, and 93.9% of the 2024-25 batch placed or in higher studies.
@@ -224,7 +224,7 @@ export default function SalemPage() {
           {/* E-E-A-T paragraph */}
           <div className="bg-white rounded-xl p-5 max-w-3xl mx-auto mb-8 text-left border border-gray-100">
             <p className="text-gray-600 text-sm leading-relaxed">
-              JKKN Dental College &amp; Hospital is a National Dental Commission (NDC) approved institution located at Natarajapuram, NH-544 (Salem-Coimbatore Highway), Komarapalayam, Namakkal District, Tamil Nadu 638183. Established in 1987 as part of JKKN Institutions (a trust legacy since 1952), JKKN is affiliated to TN Dr. MGR Medical University, Chennai. The college operates a 200-chair dental hospital receiving 500+ patients daily, providing learners with one of the highest clinical contact hours in the region. JKKN offers BDS (100 seats) and MDS in 5 specializations. The institution reports 93.9% placed or in higher studies (2024-25 batch). Salem learners can reach JKKN Dental College &amp; Hospital in approximately 60 km via NH-544. Learn more about our <Link href="/accreditation/" className="text-[#006837] hover:underline">NAAC accreditation</Link>.
+              JKKN Dental College &amp; Hospital is a National Dental Commission (NDC) approved institution located at Natarajapuram, NH-544 (Salem-Coimbatore Highway), Komarapalayam, Namakkal District, Tamil Nadu 638183. Established in 1987 as part of JKKN Institutions (a trust legacy since 1952), JKKN is affiliated to TN Dr. MGR Medical University, Chennai. The college operates a 200-chair dental hospital receiving 500+ patients daily. JKKN offers BDS (100 seats) and MDS in 5 specializations. The institution reports 93.9% placed or in higher studies (2024-25 batch). Salem learners can reach JKKN Dental College &amp; Hospital in approximately 60 km via NH-544. Learn more about our <Link href="/accreditation/" className="text-[#006837] hover:underline">NAAC accreditation</Link>.
             </p>
           </div>
           <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-12" />
@@ -342,7 +342,7 @@ export default function SalemPage() {
           <p className="text-gray-500 text-base mb-4 text-center">Step-by-step process for Salem learners</p>
           <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-10" />
           <p className="text-gray-600 leading-relaxed mb-6" style={{ fontSize: 'clamp(0.875rem, 1vw + 0.3rem, 1rem)' }}>
-            Salem learners can secure BDS admission at JKKN Dental College &amp; Hospital through NEET-UG scores via Tamil Nadu DME state quota counselling or management quota. The Tamil Nadu BDS admission process allocates 85% seats through state quota counselling and 15% through All India Quota (AIQ) administered by MCC.
+            Salem learners can secure BDS admission at JKKN Dental College &amp; Hospital through NEET-UG scores via Tamil Nadu DME state quota counselling or management quota. Seats are filled through the Tamil Nadu state counselling (government quota) and the management quota; the current seat split by quota is published on the admissions page.
           </p>
           <div className="bg-[#FBFBEE] rounded-2xl p-6 mb-6">
             <h3 className="font-bold text-gray-900 text-base mb-4">Eligibility for BDS Admission 2026</h3>
