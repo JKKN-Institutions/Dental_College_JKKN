@@ -24,9 +24,6 @@ export default function Footer() {
                 ></iframe>
               </div>
             </div>
-            <p className="text-sm sm:text-base font-semibold">
-              Best Innovation Focused<br />Multi-Disciplinary Campus
-            </p>
           </div>
 
           {/* Middle Column - Our Institutions */}
