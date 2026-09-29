@@ -171,7 +171,7 @@ export default function ApplyForm({ jobId, jobTitle }: ApplyFormProps) {
         ref={successRef}
         tabIndex={-1}
         role="status"
-        className="rounded-2xl border border-[#7cb983] bg-white p-6 md:p-8 focus:outline-none"
+        className="rounded-2xl border border-[#7cb983] bg-white p-6 md:p-8 lg:p-6 focus:outline-none"
       >
         <CheckCircle2 className="mb-3 h-10 w-10 text-[#006837]" aria-hidden="true" />
         <h3 className="mb-2 text-xl font-bold text-[#006837]">Application submitted</h3>
@@ -193,7 +193,7 @@ export default function ApplyForm({ jobId, jobTitle }: ApplyFormProps) {
   const consentErrorId = 'apply-consent-error';
 
   return (
-    <form method="post" noValidate onSubmit={handleSubmit} className="rounded-2xl border border-[#7cb983]/30 bg-white p-6 md:p-8">
+    <form method="post" noValidate onSubmit={handleSubmit} className="rounded-2xl border border-[#7cb983]/30 bg-white p-6 md:p-8 lg:p-6">
       <div ref={statusRef} tabIndex={-1} aria-live="polite" className="focus:outline-none">
         {status === 'error' && message && (
           <p role="alert" className="mb-5 flex items-start gap-2 rounded-lg border-2 border-[#002309] bg-[#FBFBEE] p-3 font-semibold text-[#002309]">
@@ -203,7 +203,7 @@ export default function ApplyForm({ jobId, jobTitle }: ApplyFormProps) {
         )}
       </div>
 
-      <div className="grid gap-5 md:grid-cols-2">
+      <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-1">
         <TextField name="first_name" label="First name" value={values.first_name} error={errors.first_name}
           onChange={(v) => update('first_name', v, 'first_name')} required maxLength={100} autoComplete="given-name" />
         <TextField name="last_name" label="Last name" value={values.last_name} error={errors.last_name}
@@ -212,13 +212,13 @@ export default function ApplyForm({ jobId, jobTitle }: ApplyFormProps) {
           onChange={(v) => update('email', v, 'email')} required maxLength={254} autoComplete="email" />
         <TextField name="phone" type="tel" label="Phone" value={values.phone} error={errors.phone}
           onChange={(v) => update('phone', v, 'phone')} required maxLength={20} autoComplete="tel" />
-        <div className="md:col-span-2">
+        <div className="md:col-span-2 lg:col-span-1">
           <TextField name="qualification" label="Highest qualification" value={values.qualification}
             error={errors.qualification} onChange={(v) => update('qualification', v, 'qualification')}
             required maxLength={200} hint="For example: MDS Periodontics" />
         </div>
 
-        <fieldset className="md:col-span-2" aria-describedby={errors.experience_months ? experienceErrorId : undefined}>
+        <fieldset className="md:col-span-2 lg:col-span-1" aria-describedby={errors.experience_months ? experienceErrorId : undefined}>
           <legend className="mb-1.5 text-sm font-semibold text-[#002309]">
             Total experience<span aria-hidden="true"> *</span>
           </legend>
@@ -250,7 +250,7 @@ export default function ApplyForm({ jobId, jobTitle }: ApplyFormProps) {
           error={errors.current_company} onChange={(v) => update('current_company', v, 'current_company')}
           maxLength={150} autoComplete="organization" />
 
-        <div className="md:col-span-2">
+        <div className="md:col-span-2 lg:col-span-1">
           <label htmlFor="apply-resume" className="mb-1.5 block text-sm font-semibold text-[#002309]">
             Resume<span aria-hidden="true"> *</span>
           </label>
@@ -271,7 +271,7 @@ export default function ApplyForm({ jobId, jobTitle }: ApplyFormProps) {
             value={values.company_fax} onChange={(e) => setValues((v) => ({ ...v, company_fax: e.target.value }))} />
         </div>
 
-        <div className="md:col-span-2">
+        <div className="md:col-span-2 lg:col-span-1">
           <label htmlFor="apply-consent" className="flex min-h-[44px] cursor-pointer items-start gap-3 text-sm text-[#002309]">
             <input id="apply-consent" name="consent" type="checkbox" checked={values.consent}
               onChange={(e) => update('consent', e.target.checked, 'consent')}

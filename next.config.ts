@@ -55,7 +55,7 @@ const nextConfig: NextConfig = {
       // /blog/ lists rows from the `blogs` table and links every one of them to
       // /blog/campus/<slug>. These six slugs are NOT campus CMS posts - they are
       // real code pages at app/blog/<slug>/page.tsx, so /blog/campus/<slug> 404s.
-      // Both source forms are written by hand, matching the /information-center/careers
+      // Both source forms are written by hand, matching the /contact-us
       // precedent above. Destinations are left bare: oneHop appends the slash.
       { source: '/blog/campus/bds-course-complete-guide-2026', destination: '/blog/bds-course-complete-guide-2026', permanent: true },
       { source: '/blog/campus/bds-course-complete-guide-2026/', destination: '/blog/bds-course-complete-guide-2026', permanent: true },
@@ -87,9 +87,14 @@ const nextConfig: NextConfig = {
       // (so :path* never matches empty here and cannot produce '//').
       { source: '/admission/:path*', destination: '/admissions/:path*/', permanent: true },
 
+      // Careers moved from /information-center/careers/ to /careers/ (MyJKKN jobs).
+      // Same shape as the /admission rules above: the bare rule covers the zero-segment case.
+      { source: '/information-center/careers', destination: '/careers', permanent: true },
+      { source: '/information-center/careers/:path*', destination: '/careers/:path*/', permanent: true },
+
       // Misspelled URLs & Common Shortcuts
-      { source: '/carrer', destination: '/information-center/careers/', permanent: true },
-      { source: '/carrer/', destination: '/information-center/careers/', permanent: true },
+      { source: '/carrer', destination: '/careers/', permanent: true },
+      { source: '/carrer/', destination: '/careers/', permanent: true },
       { source: '/naac', destination: '/accreditation/naac', permanent: true },
       { source: '/naac/', destination: '/accreditation/naac', permanent: true },
       { source: '/nacc', destination: '/accreditation/naac', permanent: true },
@@ -160,7 +165,7 @@ const nextConfig: NextConfig = {
       { source: '/curricular-aspects-2-2', destination: '/academics', permanent: true },
       { source: '/faculty-development-program/', destination: '/academics/faculty-achievements/fdp-attended', permanent: true },
       { source: '/faculty-development-program', destination: '/academics/faculty-achievements/fdp-attended', permanent: true },
-      { source: '/guidance-for-competitive-examination-and-career-counselling/', destination: '/information-center/careers', permanent: true },
+      { source: '/guidance-for-competitive-examination-and-career-counselling/', destination: '/careers', permanent: true },
       { source: '/dental-nanotechnology-course/', destination: '/academics/courses/add-on-courses', permanent: true },
       { source: '/e-content-delivery/', destination: '/academics', permanent: true },
       { source: '/tle/', destination: '/academics', permanent: true },
@@ -540,7 +545,6 @@ const nextConfig: NextConfig = {
 
       // Information Center section
       { source: '/right-to-information-rti', destination: '/information-center/right-to-information-rti' },
-      { source: '/careers', destination: '/information-center/careers' },
       // REMOVED (no page.tsx at destination — all served 404s):
       //   /tender, /announcements  -> clean 404
       //   /downloads, /feedback, /news -> now 301'd in redirects()

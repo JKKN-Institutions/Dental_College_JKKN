@@ -244,7 +244,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${baseUrl}/academics/student-centric-teaching-methods/`, lastModified: now, changeFrequency: 'monthly', priority: 0.6 },
     // NOTE: /academics/curriculum-feedback/ is deliberately NOT listed — the
     // page calls redirect() to an external JotForm, so it never returns 200.
-    // Same rule as /information-center/careers/ above.
+    // A sitemap lists only self-hosted, indexable 200 URLs.
     { url: `${baseUrl}/academics/courses/value-added-courses/`, lastModified: now, changeFrequency: 'monthly', priority: 0.6 },
     { url: `${baseUrl}/academics/courses/add-on-courses/`, lastModified: now, changeFrequency: 'monthly', priority: 0.6 },
     { url: `${baseUrl}/academics/courses/add-on-courses/implant-program-2025/`, lastModified: now, changeFrequency: 'monthly', priority: 0.6 },
@@ -431,7 +431,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${baseUrl}/information-center/`, lastModified: now, changeFrequency: 'yearly', priority: 0.5 },
     { url: `${baseUrl}/mandatory-disclosures/`, lastModified: now, changeFrequency: 'yearly', priority: 0.5 },
     // Native careers page (MyJKKN jobs) — self-hosted since the cvviz redirect was removed.
-    { url: `${baseUrl}/information-center/careers/`, lastModified: now, changeFrequency: 'daily', priority: 0.7 },
+    { url: `${baseUrl}/careers/`, lastModified: now, changeFrequency: 'daily', priority: 0.7 },
     { url: `${baseUrl}/information-center/right-to-information-rti/`, lastModified: now, changeFrequency: 'yearly', priority: 0.4 },
     { url: `${baseUrl}/mandatory-disclosures/guidelines-on-public-disclosure-by-heis/`, lastModified: now, changeFrequency: 'yearly', priority: 0.4 },
     { url: `${baseUrl}/mandatory-disclosures/letter-of-undertaking/`, lastModified: now, changeFrequency: 'yearly', priority: 0.4 },
@@ -479,7 +479,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // lastModified only when MyJKKN supplies posted_at — never the request time.
   const { jobs } = await getDentalJobs()
   const careerUrls: MetadataRoute.Sitemap = jobs.map(job => ({
-    url: `${baseUrl}/information-center/careers/${job.id}/`,
+    url: `${baseUrl}/careers/${job.id}/`,
     ...(job.posted_at ? { lastModified: new Date(job.posted_at) } : {}),
     changeFrequency: 'weekly' as const,
     priority: 0.6,

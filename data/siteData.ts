@@ -296,7 +296,7 @@ export const bottomMenuItems: NavItem[] = [
     href: "/others",
     submenu: [
       { label: "SENIOR LEARNERS", href: "/faculty" },
-      { label: "CAREERS", href: "/information-center/careers/" },
+      { label: "CAREERS", href: "/careers/" },
       { label: "PATIENT SAFETY MANUAL", href: "/pdf/PATIENT-SAFETY-MANUAL.pdf" },
       { label: "OUTREACH", href: "https://outreach.dental.jkkn.ac.in/" }
     ]

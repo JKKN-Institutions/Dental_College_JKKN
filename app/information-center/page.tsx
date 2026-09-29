@@ -25,12 +25,9 @@ const infoLinks: HubLink[] = [
     description: 'Answers to the questions asked most often by applicants and parents.',
   },
   {
-    // The internal route /information-center/careers/ 307-redirects off-site, so this card
-    // links the destination directly — same rule the sitemap applies to that route.
     label: 'Careers',
-    href: 'https://jobs.cvviz.com/jkkn_institutions',
-    description: 'Current openings across JKKN Institutions.',
-    external: true,
+    href: '/careers',
+    description: 'Current openings at JKKN Dental College & Hospital.',
   },
 ];
 

@@ -1469,7 +1469,7 @@ export default function BDSProgram() {
             <a href="/facilities/hostel/" className="underline hover:text-white">Hostel Facilities</a> &nbsp;|&nbsp;
             <a href="/best-dental-college-tamil-nadu/" className="underline hover:text-white">Why JKKN</a> &nbsp;|&nbsp;
             <a href="/blog/" className="underline hover:text-white">Blog</a> &nbsp;|&nbsp;
-            <a href="/information-center/careers/" className="underline hover:text-white">Careers</a>
+            <a href="/careers/" className="underline hover:text-white">Careers</a>
           </p>
         </div>
       </section>

@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest';
 import { buildJobPostingSchema, serializeJsonLd } from './schema';
 import { makeJob } from './test-fixtures';
 
-const URL = 'https://dental.jkkn.ac.in/information-center/careers/abc/';
+const URL = 'https://dental.jkkn.ac.in/careers/abc/';
 
 describe('buildJobPostingSchema', () => {
   it('returns null when posted_at is missing (Google requires datePosted)', () => {

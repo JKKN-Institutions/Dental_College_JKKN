@@ -116,7 +116,7 @@ data/content.ts → lib/metadata.ts → components/*.tsx → app/[route]/page.ts
 | FAQ component | `components/FAQSection.tsx` | Radix UI accordion |
 | Mobile nav | `components/BottomNav/` | Zustand-powered bottom nav |
 | Sitemap | `app/sitemap.ts` | Dynamic XML sitemap |
-| Careers (MyJKKN jobs) | `lib/careers/`, `app/information-center/careers/` | Dental-only, ISR 300s; apply posts from the browser (see `docs/public-careers-api.md`) |
+| Careers (MyJKKN jobs) | `lib/careers/`, `app/careers/` (served at `/careers/`) | Dental-only, ISR 300s; apply posts from the browser (see `docs/public-careers-api.md`) |
 | Global styles | `app/globals.css` | Tailwind base + custom styles |
 
 ---

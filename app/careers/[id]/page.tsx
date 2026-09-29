@@ -141,35 +141,40 @@ export default async function CareerDetailPage({ params }: CareerDetailPageProps
             All current openings
           </Link>
 
-          <div className="grid gap-8 lg:grid-cols-3">
+          <div className="grid gap-8 lg:grid-cols-3 lg:items-start">
             <article className="rounded-2xl border border-[#7cb983]/30 bg-white p-6 md:p-8 lg:col-span-2">
               <h2 className="mb-4 text-xl font-bold text-[#006837]">About this role</h2>
               {descriptionHtml ? (
                 <div className={DESCRIPTION_CLASSES} dangerouslySetInnerHTML={{ __html: descriptionHtml }} />
               ) : (
-                <p className="text-[#002309]">Contact our HR team for the full role description.</p>
+                <p className="text-[#002309]">A detailed description for this role is not available yet.</p>
               )}
             </article>
 
-            <aside className="h-fit rounded-2xl border border-[#7cb983]/30 bg-white p-6">
-              <h2 className="mb-4 text-lg font-bold text-[#006837]">Role at a glance</h2>
-              <dl className="space-y-3">
-                {facts.map(({ term, value }) => (
-                  <div key={term}>
-                    <dt className="text-xs font-semibold uppercase tracking-wide text-[#006837]">{term}</dt>
-                    <dd className="text-[#002309]">{value}</dd>
-                  </div>
-                ))}
-              </dl>
-            </aside>
-          </div>
+            {/* Right column: apply form first, role summary below it */}
+            <div className="space-y-8">
+              <section id="apply" aria-labelledby="apply-heading" className="scroll-mt-28">
+                <h2 id="apply-heading" className="mb-4 text-xl font-bold text-[#006837]">
+                  Apply for this role
+                </h2>
+                <ApplyForm jobId={job.id} jobTitle={job.title} />
+              </section>
 
-          <section id="apply" aria-labelledby="apply-heading" className="mt-10 scroll-mt-28">
-            <h2 id="apply-heading" className="mb-4 text-2xl font-bold text-[#006837]">
-              Apply for this role
-            </h2>
-            <ApplyForm jobId={job.id} jobTitle={job.title} />
-          </section>
+              <aside aria-labelledby="glance-heading" className="rounded-2xl border border-[#7cb983]/30 bg-white p-6">
+                <h2 id="glance-heading" className="mb-4 text-lg font-bold text-[#006837]">
+                  Role at a glance
+                </h2>
+                <dl className="space-y-3">
+                  {facts.map(({ term, value }) => (
+                    <div key={term}>
+                      <dt className="text-xs font-semibold uppercase tracking-wide text-[#006837]">{term}</dt>
+                      <dd className="text-[#002309]">{value}</dd>
+                    </div>
+                  ))}
+                </dl>
+              </aside>
+            </div>
+          </div>
         </div>
       </div>
 
