@@ -40,8 +40,8 @@ const nextConfig: NextConfig = {
       { source: '/admission/:path*', destination: '/admissions/:path*', permanent: true },
 
       // Misspelled URLs & Common Shortcuts
-      { source: '/carrer', destination: 'https://jobs.cvviz.com/jkkn_institutions', permanent: true },
-      { source: '/carrer/', destination: 'https://jobs.cvviz.com/jkkn_institutions', permanent: true },
+      { source: '/carrer', destination: '/information-center/careers/', permanent: true },
+      { source: '/carrer/', destination: '/information-center/careers/', permanent: true },
       { source: '/naac', destination: '/accreditation/naac', permanent: true },
       { source: '/naac/', destination: '/accreditation/naac', permanent: true },
       { source: '/nacc', destination: '/accreditation/naac', permanent: true },

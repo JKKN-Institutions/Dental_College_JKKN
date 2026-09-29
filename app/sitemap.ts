@@ -2,6 +2,7 @@ import { execSync } from 'node:child_process'
 import { MetadataRoute } from 'next'
 import { createClient } from '@/lib/supabase/server'
 import { siteConfig } from '@/lib/site-config'
+import { getDentalJobs } from '@/lib/careers/api'
 
 // Build a single map of file -> last-commit-date by running `git log` ONCE
 // (instead of per-file). This makes lastmod values accurate per-page rather
@@ -325,7 +326,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${baseUrl}/pdf/Add-on-Course-Implant-program-2025.pdf`, lastModified: '2025-09-01', changeFrequency: 'yearly', priority: 0.4 },
 
     // Information & Mandatory
-    { url: `${baseUrl}/information-center/careers/`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${baseUrl}/information-center/careers/`, lastModified: now, changeFrequency: 'daily', priority: 0.7 },
     { url: `${baseUrl}/information-center/right-to-information-rti/`, lastModified: now, changeFrequency: 'yearly', priority: 0.4 },
     { url: `${baseUrl}/mandatory-disclosures/guidelines-on-public-disclosure-by-heis/`, lastModified: now, changeFrequency: 'yearly', priority: 0.4 },
     { url: `${baseUrl}/mandatory-disclosures/letter-of-undertaking/`, lastModified: now, changeFrequency: 'yearly', priority: 0.4 },
@@ -342,11 +343,21 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     return entry
   })
 
+  // Open dental job postings from MyJKKN (empty if the API is unreachable)
+  const { jobs } = await getDentalJobs()
+  const careerUrls: MetadataRoute.Sitemap = jobs.map(job => ({
+    url: `${baseUrl}/information-center/careers/${job.id}/`,
+    lastModified: job.posted_at ? new Date(job.posted_at) : now,
+    changeFrequency: 'weekly' as const,
+    priority: 0.6,
+  }))
+
   return [
     ...staticPagesWithGitDates,
     ...blogUrls,
     ...campusBlogUrls,
     ...facultyUrls,
     ...eventUrls,
+    ...careerUrls,
   ]
 }

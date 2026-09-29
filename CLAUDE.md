@@ -116,6 +116,7 @@ data/content.ts → lib/metadata.ts → components/*.tsx → app/[route]/page.ts
 | FAQ component | `components/FAQSection.tsx` | Radix UI accordion |
 | Mobile nav | `components/BottomNav/` | Zustand-powered bottom nav |
 | Sitemap | `app/sitemap.ts` | Dynamic XML sitemap |
+| Careers (MyJKKN jobs) | `lib/careers/`, `app/information-center/careers/` | Dental-only, ISR 300s; apply posts from the browser (see `docs/public-careers-api.md`) |
 | Global styles | `app/globals.css` | Tailwind base + custom styles |
 
 ---
@@ -302,6 +303,8 @@ Required in `.env.local` (never committed to git):
 | `NEXT_PUBLIC_SUPABASE_URL` | Supabase project URL | `lib/supabase/client.ts`, `lib/supabase/server.ts` |
 | `NEXT_PUBLIC_SUPABASE_ANON_KEY` | Supabase anonymous key | `lib/supabase/client.ts`, `lib/supabase/server.ts` |
 | `NEXT_PUBLIC_COLLEGE_ID` | College identifier for Supabase queries | `app/blog/page.tsx`, `app/gallery/page.tsx` |
+| `JKKN_DENTAL_INSTITUTION_ID` | MyJKKN institution id — scopes faculty sync AND careers to Dental (careers shows zero jobs if unset) | `lib/jkkn-api.ts`, `lib/careers/api.ts` |
+| `NEXT_PUBLIC_MYJKKN_URL` | Optional MyJKKN host override (default `https://www.jkkn.ai`) — also update `connect-src` in `proxy.ts` if changed | `lib/careers/config.ts` |
 
 ### Setup
 ```bash
@@ -323,7 +326,7 @@ cp .env.example .env.local  # if example exists, otherwise create manually
 | Hosting | DigitalOcean |
 | Build command | `npm run build` |
 | Start command | `npm start` |
-| Node version | 18+ |
+| Node version | 22.12+ (required by sanitize-html; declared in package.json "engines") |
 | Image optimizer | `sharp` (installed as devDependency) |
 
 ### Pre-Deployment Checklist
@@ -358,7 +361,7 @@ Configured in `next.config.ts` → `headers()` for all routes `/(.*)`):
 
 ## TESTING
 
-> **No test framework configured.** No Jest, Vitest, or Playwright setup exists.
+> **Vitest** covers pure helpers in `lib/careers/` — run `npm test`. No other automated tests.
 
 ### Current Validation Methods
 - `npm run build` — TypeScript type checking + Next.js build validation
