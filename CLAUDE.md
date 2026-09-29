@@ -314,7 +314,7 @@ cp .env.example .env.local  # if example exists, otherwise create manually
 
 ### Rules
 - Never commit `.env.local` or any file with actual keys
-- All env vars use `NEXT_PUBLIC_` prefix (client-accessible)
+- Client-side vars use the `NEXT_PUBLIC_` prefix; server-only vars (`JKKN_API_BASE_URL`, `JKKN_API_KEY`, `JKKN_DENTAL_INSTITUTION_ID`) must NOT
 - Missing env vars will cause build failures in blog and gallery pages
 
 ---
@@ -330,16 +330,20 @@ cp .env.example .env.local  # if example exists, otherwise create manually
 | Image optimizer | `sharp` (installed as devDependency) |
 
 ### Pre-Deployment Checklist
-1. `npm run lint` — no ESLint errors
+1. `npm test` — Vitest unit tests pass
 2. `npm run build` — successful production build (catches TypeScript errors)
 3. Verify all env vars are set on the server
 4. Check redirects/rewrites in `next.config.ts` if URLs changed
+
+> `npm run lint` is currently broken (Next 16 removed `next lint`; ESLint 9 needs a flat config).
 
 ---
 
 ## SECURITY HEADERS
 
 Configured in `next.config.ts` → `headers()` for all routes `/(.*)`):
+
+> The CSP actually served comes from `proxy.ts` (`setSecurityHeaders`); `next.config.ts` holds a duplicate that must be kept in sync.
 
 | Header | Value |
 |--------|-------|
@@ -365,7 +369,8 @@ Configured in `next.config.ts` → `headers()` for all routes `/(.*)`):
 
 ### Current Validation Methods
 - `npm run build` — TypeScript type checking + Next.js build validation
-- `npm run lint` — ESLint rules (next/core-web-vitals)
+- `npm test` — Vitest unit tests (lib/careers)
+- `npm run lint` — ESLint rules (next/core-web-vitals) — currently broken (see Pre-Deployment Checklist)
 - Manual browser testing across breakpoints
 
 ### Recommended Breakpoints for Manual Testing

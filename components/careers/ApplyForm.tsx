@@ -1,6 +1,6 @@
 'use client';
 
-import { useRef, useState, type FormEvent, type ReactNode } from 'react';
+import { useEffect, useRef, useState, type FormEvent, type ReactNode } from 'react';
 import { AlertCircle, CheckCircle2, Loader2 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import {
@@ -105,16 +105,35 @@ export default function ApplyForm({ jobId, jobTitle }: ApplyFormProps) {
   const [message, setMessage] = useState('');
   const [reference, setReference] = useState('');
   const statusRef = useRef<HTMLDivElement>(null);
+  const successRef = useRef<HTMLDivElement>(null);
+  // Bumped on every failed submit so the focus effect re-runs even if status stays 'error'.
+  const [errorTick, setErrorTick] = useState(0);
+  const [focusTarget, setFocusTarget] = useState<string | null>(null);
 
   const update = <K extends keyof ApplicationInput>(key: K, value: ApplicationInput[K], errorKey: ApplicationField) => {
     setValues((current) => ({ ...current, [key]: value }));
     setErrors((current) => ({ ...current, [errorKey]: undefined }));
   };
 
-  const focusFirstError = (found: FieldErrors) => {
+  /** Records where focus should go once React has committed the resulting state. */
+  const requestErrorFocus = (found: FieldErrors) => {
     const first = APPLICATION_FIELD_ORDER.find((field) => found[field]);
-    if (first) requestAnimationFrame(() => document.getElementById(fieldInputId(first))?.focus());
+    setFocusTarget(first ? fieldInputId(first) : null);
+    setErrorTick((tick) => tick + 1);
   };
+
+  useEffect(() => {
+    if (status === 'success') {
+      successRef.current?.focus();
+      successRef.current?.scrollIntoView({ block: 'center' });
+    }
+  }, [status]);
+
+  useEffect(() => {
+    if (errorTick === 0) return;
+    const field = focusTarget ? document.getElementById(focusTarget) : null;
+    (field ?? statusRef.current)?.focus();
+  }, [errorTick, focusTarget]);
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -125,7 +144,7 @@ export default function ApplyForm({ jobId, jobTitle }: ApplyFormProps) {
       setErrors(found);
       setStatus('error');
       setMessage('Please correct the highlighted fields.');
-      focusFirstError(found);
+      requestErrorFocus(found);
       return;
     }
 
@@ -136,7 +155,6 @@ export default function ApplyForm({ jobId, jobTitle }: ApplyFormProps) {
     if (result.ok) {
       setStatus('success');
       setReference(result.reference);
-      requestAnimationFrame(() => statusRef.current?.focus());
       return;
     }
 
@@ -144,14 +162,13 @@ export default function ApplyForm({ jobId, jobTitle }: ApplyFormProps) {
     setErrors(serverErrors);
     setStatus('error');
     setMessage(result.error);
-    if (Object.keys(serverErrors).length > 0) focusFirstError(serverErrors);
-    else requestAnimationFrame(() => statusRef.current?.focus());
+    requestErrorFocus(serverErrors);
   }
 
   if (status === 'success') {
     return (
       <div
-        ref={statusRef}
+        ref={successRef}
         tabIndex={-1}
         role="status"
         className="rounded-2xl border border-[#7cb983] bg-white p-6 md:p-8 focus:outline-none"
@@ -176,7 +193,7 @@ export default function ApplyForm({ jobId, jobTitle }: ApplyFormProps) {
   const consentErrorId = 'apply-consent-error';
 
   return (
-    <form noValidate onSubmit={handleSubmit} className="rounded-2xl border border-[#7cb983]/30 bg-white p-6 md:p-8">
+    <form method="post" noValidate onSubmit={handleSubmit} className="rounded-2xl border border-[#7cb983]/30 bg-white p-6 md:p-8">
       <div ref={statusRef} tabIndex={-1} aria-live="polite" className="focus:outline-none">
         {status === 'error' && message && (
           <p role="alert" className="mb-5 flex items-start gap-2 rounded-lg border-2 border-[#002309] bg-[#FBFBEE] p-3 font-semibold text-[#002309]">

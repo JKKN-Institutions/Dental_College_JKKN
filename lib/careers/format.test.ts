@@ -50,6 +50,13 @@ describe('salaryLabel', () => {
     );
   });
 
+  it('does not throw on an invalid currency code', () => {
+    const label = salaryLabel({ min: 30000, max: 50000, currency: 'NOTACODE', duration: 'per_month' });
+    expect(label).not.toBeNull();
+    expect(label).toContain('30,000');
+    expect(label).toContain('50,000');
+  });
+
   it('returns null when hidden or empty', () => {
     expect(salaryLabel(null)).toBeNull();
     expect(salaryLabel({ min: null, max: null, currency: 'INR', duration: 'per_month' })).toBeNull();

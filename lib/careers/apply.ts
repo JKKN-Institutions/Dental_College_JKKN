@@ -155,5 +155,12 @@ export async function submitApplication(
     }
   }
   const apiError = typeof body.error === 'string' && body.error ? body.error : null;
-  return { ok: false, status: res.status, error: STATUS_MESSAGES[res.status] ?? apiError ?? FALLBACK_ERROR, fields };
+  const hasKnownField = Object.keys(fields).some((key) =>
+    (APPLICATION_FIELD_ORDER as readonly string[]).includes(key),
+  );
+  const error =
+    res.status === 400 && !hasKnownField
+      ? (apiError ?? STATUS_MESSAGES[400])
+      : (STATUS_MESSAGES[res.status] ?? apiError ?? FALLBACK_ERROR);
+  return { ok: false, status: res.status, error, fields };
 }

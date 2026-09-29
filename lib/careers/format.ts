@@ -57,11 +57,15 @@ export function experienceLabel(min: number | null, max: number | null): string 
 
 export function salaryLabel(salary: PublicJobSalary | null): string | null {
   if (!salary || (salary.min == null && salary.max == null)) return null;
-  const money = new Intl.NumberFormat('en-IN', {
-    style: 'currency',
-    currency: salary.currency || 'INR',
-    maximumFractionDigits: 0,
-  });
+  const currency = salary.currency || 'INR';
+  let money: { format: (n: number) => string };
+  try {
+    money = new Intl.NumberFormat('en-IN', { style: 'currency', currency, maximumFractionDigits: 0 });
+  } catch {
+    // Unknown currency code from the API — fall back to grouped numbers plus the raw code.
+    const plain = new Intl.NumberFormat('en-IN', { maximumFractionDigits: 0 });
+    money = { format: (n: number) => `${plain.format(n)} ${currency}` };
+  }
   const per = DURATION_LABELS[salary.duration] ?? '';
   if (salary.min != null && salary.max != null) return `${money.format(salary.min)} – ${money.format(salary.max)}${per}`;
   if (salary.min != null) return `From ${money.format(salary.min)}${per}`;

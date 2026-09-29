@@ -110,6 +110,15 @@ describe('submitApplication', () => {
     });
   });
 
+  it('uses the API error on 400 when no returned field is a known field', async () => {
+    const result = await submitApplication(
+      'abc',
+      body,
+      respond(400, { error: 'Invalid resume content', fields: { unknown_key: 'x' } }),
+    );
+    expect(result.ok === false && result.error).toBe('Invalid resume content');
+  });
+
   it('uses friendly messages for rate limit and closed jobs', async () => {
     const limited = await submitApplication('abc', body, respond(429, { error: 'Too many' }));
     expect(limited.ok === false && limited.error).toMatch(/try again in an hour/);

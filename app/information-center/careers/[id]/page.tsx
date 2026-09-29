@@ -7,7 +7,7 @@ import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import ApplyForm from '@/components/careers/ApplyForm';
 import JsonLd from '@/components/careers/JsonLd';
-import { getDentalJob, getDentalJobs } from '@/lib/careers/api';
+import { getDentalJob } from '@/lib/careers/api';
 import { CAREERS_PATH, SITE_URL } from '@/lib/careers/config';
 import {
   educationLabel,
@@ -23,14 +23,15 @@ import { descriptionToPlainText, sanitizeJobDescription } from '@/lib/careers/sa
 import { buildJobPostingSchema } from '@/lib/careers/schema';
 
 export const revalidate = 300;
+export const dynamicParams = true;
 
 interface CareerDetailPageProps {
   params: Promise<{ id: string }>;
 }
 
 export async function generateStaticParams() {
-  const { jobs } = await getDentalJobs();
-  return jobs.map((job) => ({ id: job.id }));
+  // Job pages render on demand (then ISR-cached) so `next build` never depends on MyJKKN being up.
+  return [];
 }
 
 export async function generateMetadata({ params }: CareerDetailPageProps): Promise<Metadata> {
@@ -76,8 +77,8 @@ export default async function CareerDetailPage({ params }: CareerDetailPageProps
     { term: 'Employment', value: jobTypeLabel(job.job_type) },
     { term: 'Experience', value: experienceLabel(job.min_experience_years, job.max_experience_years) },
     { term: 'Education', value: educationLabel(job.education_level) },
-    { term: 'Qualifications', value: job.qualifications?.length ? job.qualifications.join(', ') : null },
-    { term: 'Skills', value: job.skills?.length ? job.skills.join(', ') : null },
+    { term: 'Qualifications', value: Array.isArray(job.qualifications) && job.qualifications.length > 0 ? job.qualifications.join(', ') : null },
+    { term: 'Skills', value: Array.isArray(job.skills) && job.skills.length > 0 ? job.skills.join(', ') : null },
     { term: 'Openings', value: positionsLabel(job.positions_open) },
     { term: 'Location', value: locationLabel(job) },
     { term: 'Salary', value: salaryLabel(job.salary) },
