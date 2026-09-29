@@ -96,7 +96,7 @@ export default function ErodePage() {
         <h1 className="text-white font-extrabold leading-tight mb-3 max-w-4xl" style={{ fontSize: 'clamp(2rem, 5vw + 0.5rem, 3.5rem)' }}>
           Dental College in <span className="text-[#7cb983]">Erode</span>
         </h1>
-        <p className="text-white/60 text-sm font-medium tracking-wide mb-6">Nearest NDC-Approved Dental College — JKKN Dental College &amp; Hospital, Komarapalayam</p>
+        <p className="text-white/60 text-sm font-medium tracking-wide mb-6">NDC-Approved Dental College 18 km from Erode — JKKN Dental College &amp; Hospital, Komarapalayam</p>
         <p className="text-white/80 max-w-2xl mb-10 leading-relaxed" style={{ fontSize: 'clamp(0.9rem, 1vw + 0.5rem, 1.1rem)' }}>
           Erode to JKKN — a short, smooth ride on NH-544. JKKN Dental College &amp; Hospital offers top-tier dental programmes with
           93.9% placed or in higher studies (2024-25 batch) — just 18 km from Erode with excellent highway connectivity.
@@ -136,7 +136,7 @@ export default function ErodePage() {
 
       {/* ── Speakable Summary (Voice Search Target) ── */}
       <div className="speakable-summary sr-only" id="speakable-intro">
-        JKKN Dental College and Hospital is the nearest major dental college to Erode, located approximately eighteen kilometres away at Komarapalayam, Namakkal, on NH-544. The college offers BDS with one hundred seats and MDS with five specialisations, affiliated to TN Dr. MGR Medical University.
+        JKKN Dental College and Hospital is located approximately eighteen kilometres from Erode, at Komarapalayam, Namakkal, on NH-544. The college offers BDS with one hundred seats and MDS with five specialisations, affiliated to TN Dr. MGR Medical University.
       </div>
 
       {/* ── Snippet Answer Section (AEO Target) ── */}
@@ -147,12 +147,12 @@ export default function ErodePage() {
           </h2>
           <div className="snippet-answer voice-answer">
             <p className="text-gray-700 leading-relaxed mb-4" style={{ fontSize: 'clamp(0.95rem, 1vw + 0.4rem, 1.1rem)' }}>
-              While Erode has limited dental college options within the district, the nearest well-established NDC-approved dental college is <strong>JKKN Dental College &amp; Hospital</strong>, located just 18 km from Erode at Komarapalayam, Namakkal, via NH-544 (Salem–Coimbatore Highway). Established in 1987 and affiliated to TN Dr. MGR Medical University, Chennai, JKKN Dental College offers BDS with 100 government-sanctioned seats and MDS in 5 specializations, and operates a 200-chair teaching hospital treating 500+ patients daily.
+              While Erode has limited dental college options within the district, <strong>JKKN Dental College &amp; Hospital</strong>, an NDC-approved dental college, is located just 18 km from Erode at Komarapalayam, Namakkal, via NH-544 (Salem–Coimbatore Highway). Established in 1987 and affiliated to TN Dr. MGR Medical University, Chennai, JKKN Dental College offers BDS with 100 government-sanctioned seats and MDS in 5 specializations, and operates a 200-chair teaching hospital treating 500+ patients daily.
             </p>
           </div>
           <h3 className="font-bold text-gray-900 mb-3 text-lg">Dental Colleges in and Around Erode — Compared</h3>
           <p className="text-gray-700 mb-4" style={{ fontSize: 'clamp(0.9rem, 1vw + 0.4rem, 1.05rem)' }}>
-            Erode district itself has one dental college, Nandha Dental College &amp; Hospital (BDS only, founded 2021). The two nearest colleges offering both BDS and MDS are in neighbouring Namakkal district: JKKN Dental College &amp; Hospital at Komarapalayam (about 18 km from Erode on NH-544) and KSR Institute of Dental Science and Research at Tiruchengode.
+            JKKN Dental College &amp; Hospital at Komarapalayam (about 18 km from Erode on NH-544) and KSR Institute of Dental Science and Research at Tiruchengode, both in neighbouring Namakkal district, are the two nearest colleges offering both BDS and MDS. Erode district itself has one dental college, Nandha Dental College &amp; Hospital (BDS only, founded 2021).
           </p>
           <div className="overflow-x-auto mb-4">
             <table className="w-full border-collapse bg-white rounded-xl shadow-sm overflow-hidden text-sm">
