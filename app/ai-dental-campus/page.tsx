@@ -213,8 +213,7 @@ export default function AIDentalCampus() {
           <div className="max-w-5xl mx-auto bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-8 md:p-12 border border-blue-100">
             <div className="prose prose-lg max-w-none">
               <p className="text-gray-700 leading-relaxed mb-6">
-                While other dental colleges focus solely on traditional clinical training,
-                <strong className="text-blue-700"> JKKN Dental College integrates AI at every level</strong> —
+                <strong className="text-blue-700">JKKN Dental College integrates AI at every level</strong> —
                 from how students learn and research, to how they diagnose and treat patients.
               </p>
 

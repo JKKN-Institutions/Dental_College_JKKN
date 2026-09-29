@@ -36,7 +36,7 @@ export const faqs: FaqItem[] = [
   },
   {
     q: 'How many dental colleges are there in Tiruppur district?',
-    a: 'There are currently zero dental colleges inside Tiruppur district, Tamil Nadu. Learners from Tiruppur seeking dental education travel to neighbouring districts. JKKN Dental College & Hospital in Komarapalayam, Namakkal (approximately 67 km via NH-544) is the nearest NDC-approved option offering both BDS and MDS programmes.',
+    a: 'There are currently zero dental colleges inside Tiruppur district, Tamil Nadu. Learners from Tiruppur seeking dental education travel to neighbouring districts. JKKN Dental College & Hospital in Komarapalayam, Namakkal (approximately 67 km via NH-544) is an NDC-approved option offering both BDS and MDS programmes.',
   },
   {
     q: 'Which dental colleges near Tiruppur accept NEET scores?',
@@ -44,6 +44,6 @@ export const faqs: FaqItem[] = [
   },
   {
     q: 'What is the BDS fee at dental colleges near Tiruppur?',
-    a: 'At JKKN Dental College & Hospital, the nearest dental college to Tiruppur, BDS tuition fee is As Per Govt Norms under Government Quota and Rs. 4,50,000/year (Dayscholar with Instruments) or Rs. 5,50,000/year (With Hostel & Instruments) under Management Quota. Contact +91 9345855001 for the latest 2026-27 fee structure.',
+    a: 'At JKKN Dental College & Hospital, about 67 km from Tiruppur, BDS tuition fee is As Per Govt Norms under Government Quota and Rs. 4,50,000/year (Dayscholar with Instruments) or Rs. 5,50,000/year (With Hostel & Instruments) under Management Quota. Contact +91 9345855001 for the latest 2026-27 fee structure.',
   },
 ];
