@@ -4,6 +4,7 @@ import { MetadataRoute } from 'next'
 import { createClient } from '@/lib/supabase/server'
 import { siteConfig } from '@/lib/site-config'
 import lastModManifest from '@/lastmod-manifest.json'
+import { getDentalJobs } from '@/lib/careers/api'
 
 // Build a single map of file -> last-commit-date.
 //
@@ -425,13 +426,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${baseUrl}/pdf/Add-on-Course-Implant-program-2025.pdf`, lastModified: '2025-09-01', changeFrequency: 'yearly', priority: 0.4 },
 
     // Information & Mandatory
-    // NOTE: /information-center/careers/ is deliberately NOT listed — it
-    // 307-redirects off-site to jobs.cvviz.com, and a sitemap must contain
-    // only self-hosted, indexable 200 URLs.
     // Hub pages — the INFORMATION CENTER and MANDATORY DISCLOSURES nav dropdown parents.
     // Built 2026-09-01, same reason as /committee/.
     { url: `${baseUrl}/information-center/`, lastModified: now, changeFrequency: 'yearly', priority: 0.5 },
     { url: `${baseUrl}/mandatory-disclosures/`, lastModified: now, changeFrequency: 'yearly', priority: 0.5 },
+    // Native careers page (MyJKKN jobs) — self-hosted since the cvviz redirect was removed.
+    { url: `${baseUrl}/information-center/careers/`, lastModified: now, changeFrequency: 'daily', priority: 0.7 },
     { url: `${baseUrl}/information-center/right-to-information-rti/`, lastModified: now, changeFrequency: 'yearly', priority: 0.4 },
     { url: `${baseUrl}/mandatory-disclosures/guidelines-on-public-disclosure-by-heis/`, lastModified: now, changeFrequency: 'yearly', priority: 0.4 },
     { url: `${baseUrl}/mandatory-disclosures/letter-of-undertaking/`, lastModified: now, changeFrequency: 'yearly', priority: 0.4 },
@@ -475,11 +475,22 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     )
   }
 
+  // Open dental job postings from MyJKKN (empty if the API is unreachable).
+  // lastModified only when MyJKKN supplies posted_at — never the request time.
+  const { jobs } = await getDentalJobs()
+  const careerUrls: MetadataRoute.Sitemap = jobs.map(job => ({
+    url: `${baseUrl}/information-center/careers/${job.id}/`,
+    ...(job.posted_at ? { lastModified: new Date(job.posted_at) } : {}),
+    changeFrequency: 'weekly' as const,
+    priority: 0.6,
+  }))
+
   return [
     ...staticPagesWithGitDates,
     ...blogUrls,
     ...campusBlogUrls,
     ...facultyUrls,
     ...eventUrls,
+    ...careerUrls,
   ]
 }

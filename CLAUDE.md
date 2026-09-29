@@ -116,6 +116,7 @@ data/content.ts → lib/metadata.ts → components/*.tsx → app/[route]/page.ts
 | FAQ component | `components/FAQSection.tsx` | Radix UI accordion |
 | Mobile nav | `components/BottomNav/` | Zustand-powered bottom nav |
 | Sitemap | `app/sitemap.ts` | Dynamic XML sitemap |
+| Careers (MyJKKN jobs) | `lib/careers/`, `app/information-center/careers/` | Dental-only, ISR 300s; apply posts from the browser (see `docs/public-careers-api.md`) |
 | Global styles | `app/globals.css` | Tailwind base + custom styles |
 
 ---
@@ -302,6 +303,8 @@ Required in `.env.local` (never committed to git):
 | `NEXT_PUBLIC_SUPABASE_URL` | Supabase project URL | `lib/supabase/client.ts`, `lib/supabase/server.ts` |
 | `NEXT_PUBLIC_SUPABASE_ANON_KEY` | Supabase anonymous key | `lib/supabase/client.ts`, `lib/supabase/server.ts` |
 | `NEXT_PUBLIC_COLLEGE_ID` | College identifier for Supabase queries | `app/blog/page.tsx`, `app/gallery/page.tsx` |
+| `JKKN_DENTAL_INSTITUTION_ID` | MyJKKN institution id — scopes faculty sync AND careers to Dental (careers shows zero jobs if unset) | `lib/jkkn-api.ts`, `lib/careers/api.ts` |
+| `NEXT_PUBLIC_MYJKKN_URL` | Optional MyJKKN host override (default `https://www.jkkn.ai`) — also update `connect-src` in `proxy.ts` if changed | `lib/careers/config.ts` |
 
 ### Setup
 ```bash
@@ -311,7 +314,7 @@ cp .env.example .env.local  # if example exists, otherwise create manually
 
 ### Rules
 - Never commit `.env.local` or any file with actual keys
-- All env vars use `NEXT_PUBLIC_` prefix (client-accessible)
+- Client-side vars use the `NEXT_PUBLIC_` prefix; server-only vars (`JKKN_API_BASE_URL`, `JKKN_API_KEY`, `JKKN_DENTAL_INSTITUTION_ID`) must NOT
 - Missing env vars will cause build failures in blog and gallery pages
 
 ---
@@ -323,20 +326,23 @@ cp .env.example .env.local  # if example exists, otherwise create manually
 | Hosting | DigitalOcean |
 | Build command | `npm run build` |
 | Start command | `npm start` |
-| Node version | 18+ |
+| Node version | 22.12+ (required by sanitize-html; declared in package.json "engines") |
 | Image optimizer | `sharp` (installed as devDependency) |
 
 ### Pre-Deployment Checklist
-1. `npm run lint` — no ESLint errors
-2. `npm run build` — successful production build (catches TypeScript errors)
-3. Verify all env vars are set on the server
-4. Check redirects/rewrites in `next.config.ts` if URLs changed
+1. `npm run lint` — ESLint (flat config `eslint.config.mjs`); no new errors in changed files (the repo still has pre-existing errors elsewhere)
+2. `npm test` — Vitest unit tests pass
+3. `npm run build` — successful production build (catches TypeScript errors)
+4. Verify all env vars are set on the server
+5. Check redirects/rewrites in `next.config.ts` if URLs changed
 
 ---
 
 ## SECURITY HEADERS
 
 Configured in `next.config.ts` → `headers()` for all routes `/(.*)`):
+
+> The CSP actually served comes from `proxy.ts` (`setSecurityHeaders`); `next.config.ts` holds a duplicate that must be kept in sync.
 
 | Header | Value |
 |--------|-------|
@@ -358,11 +364,12 @@ Configured in `next.config.ts` → `headers()` for all routes `/(.*)`):
 
 ## TESTING
 
-> **No test framework configured.** No Jest, Vitest, or Playwright setup exists.
+> **Vitest** covers pure helpers in `lib/careers/` — run `npm test`. No other automated tests.
 
 ### Current Validation Methods
 - `npm run build` — TypeScript type checking + Next.js build validation
-- `npm run lint` — ESLint rules (next/core-web-vitals)
+- `npm test` — Vitest unit tests (lib/careers)
+- `npm run lint` — ESLint rules (next/core-web-vitals, flat config `eslint.config.mjs`)
 - Manual browser testing across breakpoints
 
 ### Recommended Breakpoints for Manual Testing

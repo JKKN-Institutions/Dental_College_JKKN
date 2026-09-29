@@ -428,7 +428,7 @@ export function GetDentalCollegePages(pathname: string): MenuGroup[] {
           active: pathname.startsWith('/others') || pathname.startsWith('/faculty'),
           submenus: [
             { href: '/faculty', label: 'Senior Learners', icon: Users, active: pathname.startsWith('/faculty') },
-            { href: 'https://jobs.cvviz.com/jkkn_institutions', label: 'Careers', icon: Briefcase, active: false },
+            { href: '/information-center/careers/', label: 'Careers', icon: Briefcase, active: pathname.startsWith('/information-center/careers') },
             { href: '/others/digital-campus', label: 'Digital Campus', icon: Laptop, active: pathname === '/others/digital-campus' },
             { href: '/others/patient-safety-manual', label: 'Patient Safety Manual', icon: FileHeart, active: pathname.includes('/patient-safety') },
             { href: '/others/outreach', label: 'Outreach', icon: Megaphone, active: pathname === '/others/outreach' }
