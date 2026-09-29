@@ -55,7 +55,7 @@ const mdsFAQs = [
   {
     question: "Which are the top MDS dental colleges in Tamil Nadu?",
     answer:
-      "Top MDS dental colleges in Tamil Nadu include JKKN Dental College & Hospital (Komarapalayam), Saveetha Dental College (Chennai), SRM Dental College (Ramapuram), Sri Ramachandra Dental College (Porur), Meenakshi Ammal Dental College (Chennai), and Vinayaka Mission's Sankarachariyar Dental College (Salem). All are NDC-approved.",
+      "No published source ranks MDS programmes. The only published ranking of dental institutions is NIRF, the Ministry of Education's national framework, and it ranks the institution as a whole, not its MDS course. Its 2025 dental ranking places nine Tamil Nadu institutions in the national top 40: Saveetha (2), SRM Dental College (8), Sri Ramachandra (13), Amrita Coimbatore (14), Meenakshi (16), Sree Balaji (27), Dr. M.G.R. Educational and Research Institute (30), Chettinad (32) and SRM Kattankulathur (39). JKKN Dental College & Hospital, Komarapalayam, is not in the 2025 list; it holds 18 MDS seats across 5 specialisations, affiliated to The Tamil Nadu Dr. M.G.R. Medical University. Source: NIRF India Rankings 2025: Dental, nirfindia.org.",
   },
 ];
 

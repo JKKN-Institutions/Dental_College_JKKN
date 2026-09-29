@@ -96,7 +96,7 @@ export default function TiruppurPage() {
         <h1 className="text-white font-extrabold leading-tight mb-3 max-w-4xl" style={{ fontSize: 'clamp(2rem, 5vw + 0.5rem, 3.5rem)' }}>
           Dental Colleges in <span className="text-[#7cb983]">Tiruppur</span>
         </h1>
-        <p className="text-white/60 text-sm font-medium tracking-wide mb-6">Nearest NDC-Approved Dental College — JKKN Dental College &amp; Hospital, Komarapalayam</p>
+        <p className="text-white/60 text-sm font-medium tracking-wide mb-6">NDC-Approved Dental College about 67 km from Tiruppur — JKKN Dental College &amp; Hospital, Komarapalayam</p>
         <p className="text-white/80 max-w-2xl mb-10 leading-relaxed" style={{ fontSize: 'clamp(0.9rem, 1vw + 0.5rem, 1.1rem)' }}>
           Tiruppur learners — world-class education without the big-city hassle.
           JKKN Dental College &amp; Hospital offers top-tier dental programmes with
@@ -138,7 +138,7 @@ export default function TiruppurPage() {
 
       {/* ── Speakable Summary (Voice Search Target) ── */}
       <div className="speakable-summary sr-only" id="speakable-intro">
-        JKKN Dental College and Hospital is the nearest dental college to Tiruppur, located approximately sixty-seven kilometres away at Komarapalayam, Namakkal, on NH-544. The college offers BDS with one hundred seats and MDS with five specialisations, affiliated to TN Dr. MGR Medical University.
+        JKKN Dental College and Hospital is located approximately sixty-seven kilometres from Tiruppur, at Komarapalayam, Namakkal, on NH-544. The college offers BDS with one hundred seats and MDS with five specialisations, affiliated to TN Dr. MGR Medical University.
       </div>
 
       {/* ── Snippet Answer Section (AEO Target) ── */}
@@ -149,10 +149,10 @@ export default function TiruppurPage() {
           </h2>
           <div className="snippet-answer voice-answer">
             <p className="text-gray-700 leading-relaxed mb-4" style={{ fontSize: 'clamp(0.95rem, 1vw + 0.4rem, 1.1rem)' }}>
-              There are no dental colleges located inside Tiruppur district as of 2026. The nearest NDC-approved dental college to Tiruppur is <strong>JKKN Dental College &amp; Hospital</strong>, located at Komarapalayam, Namakkal, approximately 67 km from Tiruppur via NH-544 (Salem–Coimbatore Highway). JKKN Dental College offers BDS with 100 government-sanctioned seats and MDS in 5 specializations, is affiliated to TN Dr. MGR Medical University, Chennai, and operates a 200-chair teaching hospital treating 500+ patients daily.
+              There are no dental colleges located inside Tiruppur district as of 2026. <strong>JKKN Dental College &amp; Hospital</strong>, an NDC-approved dental college, is located at Komarapalayam, Namakkal, approximately 67 km from Tiruppur via NH-544 (Salem–Coimbatore Highway). JKKN Dental College offers BDS with 100 government-sanctioned seats and MDS in 5 specializations, is affiliated to TN Dr. MGR Medical University, Chennai, and operates a 200-chair teaching hospital treating 500+ patients daily.
             </p>
           </div>
-          <h3 className="font-bold text-gray-900 mb-3 text-lg">Nearest Dental Colleges to Tiruppur</h3>
+          <h3 className="font-bold text-gray-900 mb-3 text-lg">Dental Colleges Near Tiruppur</h3>
           <ol className="list-decimal list-inside space-y-2 text-gray-700 mb-4" style={{ fontSize: 'clamp(0.9rem, 1vw + 0.4rem, 1.05rem)' }}>
             <li><strong>JKKN Dental College &amp; Hospital</strong> — Komarapalayam, Namakkal — approximately 67 km via NH-544</li>
             <li><strong>RVS Dental College &amp; Hospital</strong> — Kannampalayam, Coimbatore — approximately 55 km</li>

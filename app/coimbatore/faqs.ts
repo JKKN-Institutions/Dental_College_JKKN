@@ -48,7 +48,7 @@ export const faqs: FaqItem[] = [
   },
   {
     q: 'Is JKKN Dental College better than colleges in Coimbatore?',
-    a: 'JKKN Dental College & Hospital offers placement outcomes of 93.9% placed or in higher studies in 2024-25 and larger clinical infrastructure (200+ chairs, 500+ daily patients) compared to Coimbatore-based dental colleges. Coimbatore colleges such as Sri Ramakrishna Dental College & Hospital offer NIRF ranking (#18) and in-city location advantages. The best choice depends on individual priorities: outcomes and clinical scale (JKKN) versus urban location and ranking (SRDCH).',
+    a: 'JKKN Dental College & Hospital reports 93.9% of its 2024-25 batch placed or in higher studies and runs a teaching hospital with 200+ chairs and 500+ daily patients.Coimbatore colleges such as Sri Ramakrishna Dental College & Hospital offer NIRF ranking (#18) and in-city location advantages. The best choice depends on individual priorities: outcomes and clinical scale (JKKN) versus urban location and ranking (SRDCH).',
   },
   {
     q: 'Does JKKN Dental College offer transport for Coimbatore learners?',
