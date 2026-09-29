@@ -5,6 +5,7 @@ import { ArrowLeft, ChevronRight } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+import ApplyForm from '@/components/careers/ApplyForm';
 import JsonLd from '@/components/careers/JsonLd';
 import { getDentalJob, getDentalJobs } from '@/lib/careers/api';
 import { CAREERS_PATH, SITE_URL } from '@/lib/careers/config';
@@ -166,7 +167,7 @@ export default async function CareerDetailPage({ params }: CareerDetailPageProps
             <h2 id="apply-heading" className="mb-4 text-2xl font-bold text-[#006837]">
               Apply for this role
             </h2>
-            {/* ApplyForm is added in Task 5 */}
+            <ApplyForm jobId={job.id} jobTitle={job.title} />
           </section>
         </div>
       </div>
