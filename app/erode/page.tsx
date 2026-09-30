@@ -2,6 +2,8 @@ import Link from 'next/link';
 import { Hospital, Stethoscope, Microscope, TrendingUp, Users, Bus, Route, Train, Plane, Home, MapPin, BookOpen, Award, Wifi, GraduationCap, Target, Sparkles, Shield } from 'lucide-react';
 import { ScrollToTop } from '@/components/ScrollToTop';
 import { faqs } from './faqs';
+import { TN_BDS_SOURCE } from '@/data/tnBdsSeatMatrix';
+import { TN_MDS_SOURCE } from '@/data/tnMdsSeatMatrix';
 
 export default function ErodePage() {
 
@@ -150,47 +152,55 @@ export default function ErodePage() {
               While Erode has limited dental college options within the district, <strong>JKKN Dental College &amp; Hospital</strong>, an NDC-approved dental college, is located just 18 km from Erode at Komarapalayam, Namakkal, via NH-544 (Salem–Coimbatore Highway). Established in 1987 and affiliated to TN Dr. MGR Medical University, Chennai, JKKN Dental College offers BDS with 100 government-sanctioned seats and MDS in 5 specializations, and operates a 200-chair teaching hospital treating 500+ patients daily.
             </p>
           </div>
-          <h3 className="font-bold text-gray-900 mb-3 text-lg">Dental Colleges in and Around Erode — Compared</h3>
+          <h2 id="bds-colleges-erode" className="font-bold text-gray-900 mb-3 text-xl">BDS Colleges in and Around Erode — Compared (2026)</h2>
           <p className="text-gray-700 mb-4" style={{ fontSize: 'clamp(0.9rem, 1vw + 0.4rem, 1.05rem)' }}>
-            JKKN Dental College &amp; Hospital at Komarapalayam (about 18 km from Erode on NH-544) and KSR Institute of Dental Science and Research at Tiruchengode, both in neighbouring Namakkal district, are the two nearest colleges offering both BDS and MDS. Erode district itself has one dental college, Nandha Dental College &amp; Hospital (BDS only, founded 2021).
+            Four BDS colleges lie within about 30 km of Erode. <strong>JKKN Dental College &amp; Hospital</strong> at Komarapalayam, about 18 km from Erode on NH-544, is the longest-established of them (1987) and offers both BDS and MDS. KSR Institute of Dental Science and Research and Vivekanandha Dental College for Women (for women only) are at Tiruchengode in Namakkal district and also offer BDS and MDS. Erode district itself has one dental college, Nandha Dental College &amp; Hospital, which offers BDS only and was founded in 2021.
           </p>
           <div className="overflow-x-auto mb-4">
             <table className="w-full border-collapse bg-white rounded-xl shadow-sm overflow-hidden text-sm">
+              <caption className="sr-only">BDS colleges in and around Erode, 2026</caption>
               <thead>
                 <tr className="bg-[#006837] text-white">
                   <th className="px-4 py-3 text-left font-semibold">College</th>
                   <th className="px-4 py-3 text-left font-semibold">Where</th>
-                  <th className="px-4 py-3 text-left font-semibold">From Erode</th>
                   <th className="px-4 py-3 text-left font-semibold">Established</th>
-                  <th className="px-4 py-3 text-left font-semibold">Courses</th>
+                  <th className="px-4 py-3 text-left font-semibold">BDS seats</th>
+                  <th className="px-4 py-3 text-left font-semibold">MDS</th>
                 </tr>
               </thead>
               <tbody>
                 <tr className="border-b border-gray-100">
                   <td className="px-4 py-3 font-semibold text-gray-900">JKKN Dental College &amp; Hospital</td>
-                  <td className="px-4 py-3 text-gray-700">Komarapalayam, Namakkal district</td>
-                  <td className="px-4 py-3 text-gray-700">~18 km via NH-544</td>
+                  <td className="px-4 py-3 text-gray-700">Komarapalayam, Namakkal district — ~18 km from Erode via NH-544</td>
                   <td className="px-4 py-3 text-gray-700">1987</td>
-                  <td className="px-4 py-3 text-gray-700">BDS (100 seats) + MDS (18 seats, 5 specialisations)</td>
+                  <td className="px-4 py-3 text-gray-700">100</td>
+                  <td className="px-4 py-3 text-gray-700">Yes — 5 specialisations</td>
                 </tr>
                 <tr className="border-b border-gray-100 bg-gray-50">
-                  <td className="px-4 py-3 font-semibold text-gray-900">Nandha Dental College &amp; Hospital</td>
-                  <td className="px-4 py-3 text-gray-700">Erode–Perundurai Road, Erode (Erode district)</td>
-                  <td className="px-4 py-3 text-gray-700">Within Erode city</td>
-                  <td className="px-4 py-3 text-gray-700">2021</td>
-                  <td className="px-4 py-3 text-gray-700">BDS only</td>
-                </tr>
-                <tr>
                   <td className="px-4 py-3 font-semibold text-gray-900">KSR Institute of Dental Science and Research</td>
                   <td className="px-4 py-3 text-gray-700">Tiruchengode, Namakkal district</td>
-                  <td className="px-4 py-3 text-gray-700">Tiruchengode</td>
                   <td className="px-4 py-3 text-gray-700">—</td>
-                  <td className="px-4 py-3 text-gray-700">BDS + MDS</td>
+                  <td className="px-4 py-3 text-gray-700">100</td>
+                  <td className="px-4 py-3 text-gray-700">Yes</td>
+                </tr>
+                <tr className="border-b border-gray-100">
+                  <td className="px-4 py-3 font-semibold text-gray-900">Vivekanandha Dental College for Women (women only)</td>
+                  <td className="px-4 py-3 text-gray-700">Elayampalayam, Tiruchengode, Namakkal district</td>
+                  <td className="px-4 py-3 text-gray-700">2007</td>
+                  <td className="px-4 py-3 text-gray-700">100</td>
+                  <td className="px-4 py-3 text-gray-700">Yes</td>
+                </tr>
+                <tr className="bg-gray-50">
+                  <td className="px-4 py-3 font-semibold text-gray-900">Nandha Dental College &amp; Hospital</td>
+                  <td className="px-4 py-3 text-gray-700">Erode–Perundurai Road, Erode district</td>
+                  <td className="px-4 py-3 text-gray-700">2021</td>
+                  <td className="px-4 py-3 text-gray-700">100</td>
+                  <td className="px-4 py-3 text-gray-700">No</td>
                 </tr>
               </tbody>
             </table>
           </div>
-          <p className="text-gray-500 text-sm">All three colleges are affiliated to TN Dr. MGR Medical University and admit students through NEET UG counselling conducted by DME Tamil Nadu. Details for the other two colleges are taken from their own official websites (checked September 2026); JKKN figures are from this college's published records.</p>
+          <p className="text-gray-500 text-sm">All four colleges are affiliated to The Tamil Nadu Dr. M.G.R. Medical University and admit students through NEET UG counselling conducted by DME Tamil Nadu. BDS seats and MDS availability are from the university&apos;s sanctioned-intake documents for 2025-2026 (<a href={TN_BDS_SOURCE.url} target="_blank" rel="noopener noreferrer" className="underline">BDS</a>, <a href={TN_MDS_SOURCE.url} target="_blank" rel="noopener noreferrer" className="underline">MDS</a>). Founding years for the other colleges are from their own official websites, checked 30 September 2026; a dash means the college&apos;s website does not state it. JKKN figures are from this college&apos;s published records.</p>
         </div>
       </section>
 
@@ -226,7 +236,7 @@ export default function ErodePage() {
             Why Erode Learners Choose JKKN Dental
           </h2>
           <p className="text-gray-500 max-w-3xl mx-auto mb-2 leading-relaxed" style={{ fontSize: 'clamp(0.875rem, 1vw + 0.4rem, 1.05rem)' }}>
-            Erode&apos;s strong industrial base means families value quality education with good placement outcomes. JKKN is just 18 km away — closer than many colleges within the city itself. The excellent NH-544 connectivity makes daily commute comfortable and quick.
+            Erode&apos;s strong industrial base means families value quality education with good placement outcomes. JKKN is about 18 km away, a 35-40 minute drive on NH-544. The excellent NH-544 connectivity makes daily commute comfortable and quick.
           </p>
           <p className="text-gray-400 max-w-3xl mx-auto mb-4 text-sm leading-relaxed">
             Founded in 1987, JKKN Dental College &amp; Hospital brings nearly four decades of dental education excellence, backed by the JKKN Institutions legacy since 1952. Approved by the National Dental Commission (NDC), formerly the Dental Council of India and affiliated to TN Dr. MGR Medical University, Chennai, the institution operates a 200+ chair teaching hospital treating 500+ patients daily. Learn more about being the{' '}
