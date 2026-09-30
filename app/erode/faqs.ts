@@ -15,8 +15,16 @@ export const faqs: FaqItem[] = [
     a: 'Erode district has one dental college, Nandha Dental College & Hospital, which offers BDS only. For learners seeking both BDS and MDS, JKKN Dental College & Hospital at Komarapalayam, Namakkal district, is 18 km away via NH-544.',
   },
   {
+    q: 'What are the BDS colleges in and around Erode?',
+    a: 'Four BDS colleges lie within about 30 km of Erode: JKKN Dental College & Hospital at Komarapalayam (about 18 km, established 1987, BDS 100 seats and MDS), KSR Institute of Dental Science and Research at Tiruchengode (BDS 100 seats and MDS), Vivekanandha Dental College for Women at Tiruchengode (women only, BDS 100 seats and MDS) and Nandha Dental College & Hospital on Erode-Perundurai Road (BDS only, founded 2021). Seat figures are from The Tamil Nadu Dr. M.G.R. Medical University sanctioned intake for 2025-2026.',
+  },
+  {
+    q: 'Are the BDS colleges near Erode private or government?',
+    a: 'There is no government dental college in Erode district. The three government dental colleges affiliated to The Tamil Nadu Dr. M.G.R. Medical University are in Chennai, Cuddalore and Pudukottai. JKKN Dental College & Hospital, KSR Institute of Dental Science and Research and Vivekanandha Dental College for Women are self-financing colleges whose Government Quota and Management Quota BDS seats are filled through DME Tamil Nadu NEET UG counselling.',
+  },
+  {
     q: 'Which is the best dental college in Erode?',
-    a: 'JKKN Dental College & Hospital at Komarapalayam, Namakkal district, about 18 km from Erode on NH-544, is the nearest dental college to Erode offering both BDS and MDS: established 1987, NDC approved, NAAC accredited, affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai, with BDS (100 seats), MDS (18 seats, 5 specialisations), a 200+ chair teaching hospital and 93.9% of its 2024-25 batch placed or in higher studies. Erode district itself has one dental college, Nandha Dental College & Hospital (BDS only).',
+    a: 'JKKN Dental College & Hospital at Komarapalayam, Namakkal district, about 18 km from Erode on NH-544, is the longest-established of the BDS colleges in and around Erode and offers both BDS and MDS: established 1987, NDC approved, NAAC accredited, affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai, with BDS (100 seats), MDS (18 seats, 5 specialisations), a 200+ chair teaching hospital and 93.9% of its 2024-25 batch placed or in higher studies. Erode district itself has one dental college, Nandha Dental College & Hospital (BDS only).',
   },
   {
     q: 'How far is JKKN Dental from Erode?',
@@ -44,10 +52,10 @@ export const faqs: FaqItem[] = [
   },
   {
     q: 'What is the BDS fee at dental colleges near Erode?',
-    a: 'At JKKN Dental College & Hospital, BDS tuition fee is As Per Govt Norms under Government Quota and Rs. 4,50,000/year (Dayscholar with Instruments) or Rs. 5,50,000/year (With Hostel & Instruments) under Management Quota. Contact +91 9345855001 for the latest 2026-27 fee structure.',
+    a: 'At JKKN Dental College & Hospital, BDS tuition fee is As Per Govt Norms under Government Quota and Rs. 4,50,000/year (Dayscholar with Instruments) or Rs. 5,50,000/year (With Hostel & Instruments) under Management Quota. Contact +91 9345855001 for the latest 2026-27 fee structure. For other colleges, refer to the DME Tamil Nadu Selection Committee notifications at tnmedicalselection.net or the admission office of each college.',
   },
   {
     q: 'Which dental colleges near Erode accept NEET scores?',
-    a: 'All NDC-approved dental colleges near Erode accept NEET UG scores for BDS admission through DME Tamil Nadu counselling. These include JKKN Dental College & Hospital at Komarapalayam (18 km away), KSR Institute of Dental Science at Tiruchengode, and Nandha Dental College in Erode city.',
+    a: 'All NDC-approved dental colleges near Erode accept NEET UG scores for BDS admission through DME Tamil Nadu counselling. These include JKKN Dental College & Hospital at Komarapalayam (18 km away), KSR Institute of Dental Science and Research and Vivekanandha Dental College for Women at Tiruchengode, and Nandha Dental College in Erode district.',
   },
 ];
