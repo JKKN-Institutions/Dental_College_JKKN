@@ -2,6 +2,8 @@ import Link from 'next/link';
 import { Hospital, Stethoscope, Microscope, TrendingUp, Users, Bus, Route, Train, Plane, Home, MapPin, BookOpen, Award, Wifi, GraduationCap, Target, Sparkles, Shield, CheckCircle } from 'lucide-react';
 import { ScrollToTop } from '@/components/ScrollToTop';
 import { faqs } from './faqs';
+import { TN_BDS_SOURCE } from '@/data/tnBdsSeatMatrix';
+import { TN_MDS_SOURCE } from '@/data/tnMdsSeatMatrix';
 
 export default function SalemPage() {
 
@@ -38,10 +40,9 @@ export default function SalemPage() {
     { value: '93.9%', label: 'PLACED OR IN HIGHER STUDIES 2024-25' },
     { value: 'Rs 3.6L', label: 'BDS MEDIAN SALARY' },
     { value: 'Rs 6.0L', label: 'MDS MEDIAN SALARY' },
-    { value: '15+', label: 'RECRUITING PARTNERS' },
+    { value: '75 of 99', label: 'BDS GRADUATES PLACED 2024-25' },
   ];
 
-  const companies = ['Clove Dental', 'Apollo Dental', 'MyDentist', 'Sabka Dentist', 'Apollo Hospitals', 'Fortis Healthcare', 'Manipal Hospitals', 'Govt. PHCs & District Hospitals'];
 
   const transportRows = [
     { icon: <Route className="w-6 h-6 text-[#006837]" />, label: 'ROUTE', text: 'NH-544 (Salem-Coimbatore Highway) — direct route, approximately 60 km' },
@@ -184,6 +185,56 @@ export default function SalemPage() {
               Salem district itself has one dental college: Vinayaka Mission&apos;s Sankarachariyar Dental College (Ariyanur, Salem; a Vinayaka Mission&apos;s Research Foundation deemed-university college offering BDS and MDS). The nearest dental colleges outside the district are in neighbouring Namakkal district: JKKN Dental College &amp; Hospital at Komarapalayam (about 60 km via NH-544, BDS + MDS), and KSR Institute of Dental Science and Research and Vivekanandha Dental College for Women, both at Tiruchengode.
             </p>
           </div>
+
+          <h2 id="bds-colleges-salem" className="font-bold text-gray-900 mt-10 mb-3 text-xl">BDS Colleges in and Around Salem — Compared (2026)</h2>
+          <p className="text-gray-700 mb-4" style={{ fontSize: 'clamp(0.9rem, 1vw + 0.4rem, 1.05rem)' }}>
+            Four BDS colleges serve learners from Salem. <strong>JKKN Dental College &amp; Hospital</strong> at Komarapalayam, about 60 km from Salem on NH-544, is affiliated to The Tamil Nadu Dr. M.G.R. Medical University, so its BDS seats, including Government Quota seats, are filled through Tamil Nadu DME NEET UG counselling. KSR Institute of Dental Science and Research and Vivekanandha Dental College for Women (for women only) at Tiruchengode are affiliated to the same university. Within Salem district, Vinayaka Mission&apos;s Sankarachariyar Dental College at Ariyanur is a constituent college of a deemed-to-be university.
+          </p>
+          <div className="overflow-x-auto mb-4">
+            <table className="w-full border-collapse bg-white rounded-xl shadow-sm overflow-hidden text-sm">
+              <caption className="sr-only">BDS colleges in and around Salem, 2026</caption>
+              <thead>
+                <tr className="bg-[#006837] text-white">
+                  <th className="px-4 py-3 text-left font-semibold">College</th>
+                  <th className="px-4 py-3 text-left font-semibold">Where</th>
+                  <th className="px-4 py-3 text-left font-semibold">University</th>
+                  <th className="px-4 py-3 text-left font-semibold">BDS seats</th>
+                  <th className="px-4 py-3 text-left font-semibold">MDS</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="border-b border-gray-100">
+                  <td className="px-4 py-3 font-semibold text-gray-900">JKKN Dental College &amp; Hospital</td>
+                  <td className="px-4 py-3 text-gray-700">Komarapalayam, Namakkal district — ~60 km from Salem via NH-544</td>
+                  <td className="px-4 py-3 text-gray-700">Affiliated to TN Dr. M.G.R. Medical University</td>
+                  <td className="px-4 py-3 text-gray-700">100</td>
+                  <td className="px-4 py-3 text-gray-700">Yes — 5 specialisations</td>
+                </tr>
+                <tr className="border-b border-gray-100 bg-gray-50">
+                  <td className="px-4 py-3 font-semibold text-gray-900">KSR Institute of Dental Science and Research</td>
+                  <td className="px-4 py-3 text-gray-700">Tiruchengode, Namakkal district</td>
+                  <td className="px-4 py-3 text-gray-700">Affiliated to TN Dr. M.G.R. Medical University</td>
+                  <td className="px-4 py-3 text-gray-700">100</td>
+                  <td className="px-4 py-3 text-gray-700">Yes</td>
+                </tr>
+                <tr className="border-b border-gray-100">
+                  <td className="px-4 py-3 font-semibold text-gray-900">Vivekanandha Dental College for Women (women only)</td>
+                  <td className="px-4 py-3 text-gray-700">Elayampalayam, Tiruchengode, Namakkal district</td>
+                  <td className="px-4 py-3 text-gray-700">Affiliated to TN Dr. M.G.R. Medical University</td>
+                  <td className="px-4 py-3 text-gray-700">100</td>
+                  <td className="px-4 py-3 text-gray-700">Yes</td>
+                </tr>
+                <tr className="bg-gray-50">
+                  <td className="px-4 py-3 font-semibold text-gray-900">Vinayaka Mission&apos;s Sankarachariyar Dental College</td>
+                  <td className="px-4 py-3 text-gray-700">Ariyanur, Salem district</td>
+                  <td className="px-4 py-3 text-gray-700">Deemed-to-be university (Vinayaka Mission&apos;s Research Foundation)</td>
+                  <td className="px-4 py-3 text-gray-700">100</td>
+                  <td className="px-4 py-3 text-gray-700">Yes</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p className="text-gray-500 text-sm">BDS seats and MDS availability for the three university-affiliated colleges are from The Tamil Nadu Dr. M.G.R. Medical University sanctioned-intake documents for 2025-2026 (<a href={TN_BDS_SOURCE.url} target="_blank" rel="noopener noreferrer" className="underline">BDS</a>, <a href={TN_MDS_SOURCE.url} target="_blank" rel="noopener noreferrer" className="underline">MDS</a>). Deemed-university colleges are not in those documents; the Ariyanur figures are from its university&apos;s published 2026-27 intake table, checked 30 September 2026. JKKN figures are from this college&apos;s published records.</p>
         </div>
       </section>
 
@@ -308,7 +359,7 @@ export default function SalemPage() {
           <h2 className="font-extrabold text-gray-900 mb-3" style={{ fontSize: 'clamp(1.6rem, 3vw + 0.5rem, 2.4rem)' }}>
             Placement Highlights
           </h2>
-          <p className="text-gray-500 text-base mb-4">Our placement cell connects you with India&apos;s top employers</p>
+          <p className="text-gray-500 text-base mb-4">Outcomes of the 2024-25 batch, as filed in JKKN&apos;s <a href="/pdf/NIRF-2026-Dental.pdf" target="_blank" rel="noopener noreferrer" className="text-[#006837] hover:underline font-medium">NIRF 2026 submission</a></p>
           <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-12" />
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-10">
             {placementStats.map((stat) => (
@@ -318,16 +369,10 @@ export default function SalemPage() {
               </div>
             ))}
           </div>
-          <p className="text-xs font-semibold tracking-widest text-gray-400 mb-5 uppercase">Companies That Hire From Us</p>
-          <ul className="flex flex-wrap justify-center gap-3 list-none p-0 m-0 mb-8">
-            {companies.map((company) => (
-              <li key={company} className="border border-gray-200 rounded-full px-5 py-2 text-sm text-gray-700 bg-white">{company}</li>
-            ))}
-          </ul>
           <div className="bg-white rounded-xl p-5 text-left border border-gray-100">
             <p className="text-gray-600 text-sm leading-relaxed">
-              For Salem-origin graduates, JKKN Dental College &amp; Hospital&apos;s placement network extends to dental hospitals in Salem, Erode, Namakkal, Coimbatore, and across Tamil Nadu. The 93.9% placed or in higher studies (2024-25 batch) includes placements in private dental hospitals, government dental departments, and international opportunities (UK NHS, UAE). Track verified placement records at{' '}
-              <a href="https://placements.jkkn.ac.in/" target="_blank" rel="noopener noreferrer" className="text-[#006837] hover:underline font-medium">placements.jkkn.ac.in</a>.
+              For Salem-origin graduates, JKKN Dental College &amp; Hospital&apos;s placement network extends to dental hospitals in Salem, Erode, Namakkal, Coimbatore, and across Tamil Nadu. Of the 99 BDS graduates of the 2024-25 batch, 75 were placed and 18 went on to higher studies (93.9% in all), with a median salary of Rs 3,60,000; all 7 MDS graduates were placed at a median of Rs 6,00,000. Source:{' '}
+              <a href="/pdf/NIRF-2026-Dental.pdf" target="_blank" rel="noopener noreferrer" className="text-[#006837] hover:underline font-medium">JKKN&apos;s NIRF 2026 submission</a>.
             </p>
           </div>
         </div>

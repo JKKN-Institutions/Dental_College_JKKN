@@ -36,7 +36,7 @@ export const faqs: FaqItem[] = [
   },
   {
     q: 'What is the placement record of JKKN Dental College?',
-    a: 'JKKN Dental College & Hospital records a 93.9% placed-or-higher-studies rate (2024-25 batch) for BDS graduates. The median salary for the 2024-25 BDS batch was Rs 3,60,000, and Rs 6,00,000 for MDS, as filed in the JKKN NIRF 2026 filing to the Ministry of Education. International placements include the UK (NHS), UAE (Cleveland Clinic Abu Dhabi), and Saudi Arabia. Placement details are at placements.jkkn.ac.in.',
+    a: 'JKKN Dental College & Hospital records a 93.9% placed-or-higher-studies rate (2024-25 batch) for BDS graduates. The median salary for the 2024-25 BDS batch was Rs 3,60,000, and Rs 6,00,000 for MDS, as filed in the JKKN NIRF 2026 filing to the Ministry of Education.',
   },
   {
     q: 'How to apply for BDS at JKKN Dental College from Coimbatore?',

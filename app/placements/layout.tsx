@@ -7,7 +7,7 @@ import { faqs } from './faqs';
 
 export const metadata: Metadata = {
   title: { absolute: 'BDS & MDS Placements | JKKN Dental College' },
-  description: '93.9% placed or in higher studies (2024-25 batch) at JKKN Dental College. Alumni at Apollo Dental, Clove Dental, NHS UK & govt hospitals. BDS & MDS career guidance.',
+  description: 'JKKN Dental College 2024-25 batch: 75 of 99 BDS graduates placed, 18 in higher studies (93.9%), per NIRF 2026. BDS & MDS career guidance.',
   keywords: 'dental college placements Tamil Nadu, BDS placement, MDS placement JKKN, salary after BDS, dental job opportunities, JKKN dental placements',
   robots: { index: true, follow: true },
   alternates: {
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'BDS & MDS Placements | JKKN Dental College',
-    description: '93.9% placed or in higher studies (2024-25 batch) at JKKN Dental College. Alumni at Apollo Dental, Clove Dental, NHS UK & govt hospitals. BDS & MDS career guidance.',
+    description: 'JKKN Dental College 2024-25 batch: 75 of 99 BDS graduates placed, 18 in higher studies (93.9%), per NIRF 2026. BDS & MDS career guidance.',
     url: 'https://dental.jkkn.ac.in/placements/',
     siteName: 'JKKN Dental College & Hospital',
     images: [
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'BDS & MDS Placements | JKKN Dental College',
-    description: '93.9% placed or in higher studies (2024-25 batch) at JKKN Dental College. Alumni at Apollo Dental, Clove Dental, NHS UK & govt hospitals. BDS & MDS career guidance.',
+    description: 'JKKN Dental College 2024-25 batch: 75 of 99 BDS graduates placed, 18 in higher studies (93.9%), per NIRF 2026. BDS & MDS career guidance.',
     images: ['https://dental.jkkn.ac.in/images/BDS-hero-image.webp'],
     site: '@jaborejkkn',
   },
@@ -66,7 +66,7 @@ const howToSchema = {
   "@context": "https://schema.org",
   "@type": "HowTo",
   "name": "How the Placement Process Works at JKKN Dental College",
-  "description": "The Career Development Centre (CDC) at JKKN Dental College follows a structured 5-step placement process to connect graduates with top employers.",
+  "description": "The Career Development Centre (CDC) at JKKN Dental College follows a structured 5-step placement process to connect graduates with employers.",
   "step": [
     { "@type": "HowToStep", "position": 1, "name": "Registration & Profile Building", "text": "Learners register with the CDC and build their professional profiles including academic records, clinical experience, and career preferences." },
     { "@type": "HowToStep", "position": 2, "name": "Resume Workshop & Skill Development", "text": "CDC conducts resume writing workshops, soft skills training, and professional development sessions to prepare learners for the job market." },

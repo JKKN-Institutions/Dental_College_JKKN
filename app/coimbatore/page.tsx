@@ -10,7 +10,7 @@ export default function CoimbatorePage() {
     { icon: <Hospital className="w-6 h-6 text-[#006837]" />, title: 'Own Hospital', desc: 'NDC-approved dental college with attached hospital for hands-on clinical training — 200+ chairs, 100+ beds, 500+ daily patients' },
     { icon: <Stethoscope className="w-6 h-6 text-[#006837]" />, title: 'Real Patient Exposure', desc: 'Own dental hospital on campus — learners get real patient exposure from Year 1, not Year 3' },
     { icon: <Microscope className="w-6 h-6 text-[#006837]" />, title: 'Advanced Learning Labs', desc: 'Advanced dental learning labs, simulation equipment, and digital dentistry training — an AI-integrated dental campus' },
-    { icon: <TrendingUp className="w-6 h-6 text-[#006837]" />, title: '93.9% Placed or in Higher Studies (2024-25)', desc: 'JKKN Dental records 93.9% placed or in higher studies (2024-25 batch) for BDS graduates. BDS median salary: Rs 3,60,000 (NIRF 2026 filing). International placements: UK (NHS), UAE, Saudi Arabia.' },
+    { icon: <TrendingUp className="w-6 h-6 text-[#006837]" />, title: '93.9% Placed or in Higher Studies (2024-25)', desc: 'JKKN Dental records 93.9% placed or in higher studies (2024-25 batch) for BDS graduates. BDS median salary: Rs 3,60,000 (NIRF 2026 filing).' },
     { icon: <Users className="w-6 h-6 text-[#006837]" />, title: 'Community Service', desc: 'Hospital serves the community — builds patient trust, clinical breadth, and real-world dentistry experience' },
     { icon: <Bus className="w-6 h-6 text-[#006837]" />, title: 'Accessible from Coimbatore via NH-544', desc: '108 km from Coimbatore on NH-544. Approximately 1.5 hours by road. On-campus hostel eliminates daily commuting stress.' },
   ];
@@ -24,10 +24,9 @@ export default function CoimbatorePage() {
     { value: '93.9%', label: 'PLACED OR IN HIGHER STUDIES 2024-25' },
     { value: 'Rs 3.6L', label: 'BDS MEDIAN SALARY' },
     { value: 'Rs 6.0L', label: 'MDS MEDIAN SALARY' },
-    { value: '15+', label: 'RECRUITING PARTNERS' },
+    { value: '75 of 99', label: 'BDS GRADUATES PLACED 2024-25' },
   ];
 
-  const companies = ['Clove Dental', 'Apollo Dental', 'MyDentist', 'Sabka Dentist', 'Apollo Hospitals', 'Fortis Healthcare', 'Manipal Hospitals', 'Govt. PHCs & District Hospitals'];
 
   const transportRows = [
     { icon: <Route className="w-6 h-6 text-[#006837]" />, label: 'ROUTE', text: 'NH-544 (Coimbatore-Salem Highway) — direct route, 108 km' },
@@ -342,7 +341,7 @@ export default function CoimbatorePage() {
           <h2 className="font-extrabold text-gray-900 mb-3" style={{ fontSize: 'clamp(1.6rem, 3vw + 0.5rem, 2.4rem)' }}>
             Placement Highlights
           </h2>
-          <p className="text-gray-500 text-base mb-4">Our placement cell connects you with India&apos;s top employers</p>
+          <p className="text-gray-500 text-base mb-4">Outcomes of the 2024-25 batch, as filed in JKKN&apos;s <a href="/pdf/NIRF-2026-Dental.pdf" target="_blank" rel="noopener noreferrer" className="text-[#006837] hover:underline font-medium">NIRF 2026 submission</a></p>
           <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-12" />
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-10">
             {placementStats.map((stat) => (
@@ -353,14 +352,8 @@ export default function CoimbatorePage() {
             ))}
           </div>
           <p className="text-gray-500 text-sm leading-relaxed max-w-2xl mx-auto mb-8">
-            International placements include the UK (NHS), UAE (Cleveland Clinic Abu Dhabi), and Saudi Arabia. Full placement data is available at <a href="https://placements.jkkn.ac.in" target="_blank" rel="noopener noreferrer" className="text-[#006837] underline font-medium">placements.jkkn.ac.in</a>. the JKKN NIRF 2026 filing to the Ministry of Education records a median salary of Rs 3,60,000 for the 2024-25 BDS batch and Rs 6,00,000 for MDS.
+            The JKKN <a href="/pdf/NIRF-2026-Dental.pdf" target="_blank" rel="noopener noreferrer" className="text-[#006837] underline font-medium">NIRF 2026 filing</a> to the Ministry of Education records a median salary of Rs 3,60,000 for the 2024-25 BDS batch and Rs 6,00,000 for MDS.
           </p>
-          <p className="text-xs font-semibold tracking-widest text-gray-400 mb-5 uppercase">Companies That Hire From Us</p>
-          <ul className="flex flex-wrap justify-center gap-3 list-none p-0 m-0">
-            {companies.map((company) => (
-              <li key={company} className="border border-gray-200 rounded-full px-5 py-2 text-sm text-gray-700 bg-white">{company}</li>
-            ))}
-          </ul>
         </div>
       </section>
 
@@ -460,7 +453,7 @@ export default function CoimbatorePage() {
               The on-campus teaching hospital operates 200+ dental chairs, 100+ hospital beds, and treats 500+ patients daily, providing clinical exposure from Year 1 of the BDS program. The campus is an AI-integrated dental educational campus, with <Link href="/research/" className="text-[#006837] hover:underline font-medium">50+ research publications</Link> and an active institutional innovation council.
             </p>
             <p className="text-gray-600 leading-relaxed" style={{ fontSize: 'clamp(0.875rem, 1vw + 0.3rem, 1rem)' }}>
-              JKKN Dental College &amp; Hospital records a 93.9% placed-or-higher-studies rate (2024-25 batch) for BDS graduates, with a median salary of Rs 3,60,000 (NIRF 2026 filing). International placements include the UK (NHS), UAE (Cleveland Clinic Abu Dhabi), and Saudi Arabia. Recognized as one of the <Link href="/best-dental-college-tamil-nadu/" className="text-[#006837] hover:underline font-medium">best dental colleges in Tamil Nadu</Link>, JKKN combines institutional heritage with measurable career outcomes.
+              JKKN Dental College &amp; Hospital records a 93.9% placed-or-higher-studies rate (2024-25 batch) for BDS graduates, with a median salary of Rs 3,60,000 (NIRF 2026 filing). Recognized as one of the <Link href="/best-dental-college-tamil-nadu/" className="text-[#006837] hover:underline font-medium">best dental colleges in Tamil Nadu</Link>, JKKN combines institutional heritage with measurable career outcomes.
             </p>
             <p className="text-gray-600 leading-relaxed" style={{ fontSize: 'clamp(0.875rem, 1vw + 0.3rem, 1rem)' }}>
               Learners from Coimbatore access the campus via a 108-km drive on NH-544 (approximately 1.5 hours) or through college-operated transport services. Contact: +91 9345855001 | info@jkkn.ac.in
@@ -475,7 +468,7 @@ export default function CoimbatorePage() {
           <div className="bg-[#FBFBEE] border border-[#7cb983]/30 rounded-2xl p-6">
             <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-3">About This Page</p>
             <p className="text-gray-600 text-sm leading-relaxed">
-              This page is published by JKKN Dental College &amp; Hospital, a NDC-approved institution established in 1987, affiliated with The Tamil Nadu Dr. M.G.R. Medical University, Chennai. Placement data is sourced from the institutional placement portal at <a href="https://placements.jkkn.ac.in" target="_blank" rel="noopener noreferrer" className="text-[#006837] underline">placements.jkkn.ac.in</a>. Admission data is sourced from <a href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_medium=organic&utm_campaign=coimbatore" target="_blank" rel="noopener noreferrer" className="text-[#006837] underline">www.jkkn.ai/apply/jkkn-admission-2026</a>. Last updated: March 2026.
+              This page is published by JKKN Dental College &amp; Hospital, a NDC-approved institution established in 1987, affiliated with The Tamil Nadu Dr. M.G.R. Medical University, Chennai. Placement data is sourced from JKKN&apos;s <a href="/pdf/NIRF-2026-Dental.pdf" target="_blank" rel="noopener noreferrer" className="text-[#006837] underline">NIRF 2026 submission</a>. Admission data is sourced from <a href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_medium=organic&utm_campaign=coimbatore" target="_blank" rel="noopener noreferrer" className="text-[#006837] underline">www.jkkn.ai/apply/jkkn-admission-2026</a>. Last updated: March 2026.
             </p>
           </div>
         </div>
