@@ -24,10 +24,9 @@ export default function KeralaPage() {
     { value: '93.9%', label: 'PLACED OR IN HIGHER STUDIES 2024-25' },
     { value: 'Rs 3.6L', label: 'BDS MEDIAN SALARY' },
     { value: 'Rs 6.0L', label: 'MDS MEDIAN SALARY' },
-    { value: '15+', label: 'RECRUITING PARTNERS' },
+    { value: '75 of 99', label: 'BDS GRADUATES PLACED 2024-25' },
   ];
 
-  const companies = ['Clove Dental', 'Apollo Dental', 'MyDentist', 'Sabka Dentist', 'Apollo Hospitals', 'Fortis Healthcare', 'Manipal Hospitals', 'Govt. PHCs & District Hospitals'];
 
   const transportRows = [
     { icon: <Train className="w-6 h-6 text-[#006837]" />, label: 'BY TRAIN (RECOMMENDED)', text: 'Kerala–Chennai main-line trains from Kochi, Thrissur and Palakkad stop at Erode Junction — approximately 18 km from campus; buses and taxis cover the last stretch on NH-544' },
@@ -293,7 +292,7 @@ export default function KeralaPage() {
           <h2 className="font-extrabold text-gray-900 mb-3" style={{ fontSize: 'clamp(1.6rem, 3vw + 0.5rem, 2.4rem)' }}>
             Placement Highlights
           </h2>
-          <p className="text-gray-500 text-base mb-4">Our placement cell connects you with India&apos;s top employers</p>
+          <p className="text-gray-500 text-base mb-4">Outcomes of the 2024-25 batch, as filed in JKKN&apos;s <a href="/pdf/NIRF-2026-Dental.pdf" target="_blank" rel="noopener noreferrer" className="text-[#006837] hover:underline font-medium">NIRF 2026 submission</a></p>
           <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-12" />
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-10">
             {placementStats.map((stat) => (
@@ -304,15 +303,6 @@ export default function KeralaPage() {
             ))}
           </div>
           <ul className="text-left max-w-xl mx-auto space-y-2 mb-8 list-none p-0">
-            <li className="flex items-start gap-2 text-sm text-gray-600"><span className="text-[#7cb983] font-bold mt-0.5">✓</span> International placement destinations: UK (NHS), UAE, Saudi Arabia, Singapore</li>
-            <li className="flex items-start gap-2 text-sm text-gray-600"><span className="text-[#7cb983] font-bold mt-0.5">✓</span> Recruiters include Apollo Hospitals, Clove Dental, Fortis Healthcare, and 15+ partners</li>
-            <li className="flex items-start gap-2 text-sm text-gray-600"><span className="text-[#7cb983] font-bold mt-0.5">✓</span> Gulf placements are a natural fit for Kerala graduates — UAE and Saudi recruiters visit</li>
-          </ul>
-          <p className="text-xs font-semibold tracking-widest text-gray-400 mb-5 uppercase">Companies That Hire From Us</p>
-          <ul className="flex flex-wrap justify-center gap-3 list-none p-0 m-0">
-            {companies.map((company) => (
-              <li key={company} className="border border-gray-200 rounded-full px-5 py-2 text-sm text-gray-700 bg-white">{company}</li>
-            ))}
           </ul>
         </div>
       </section>

@@ -44,6 +44,6 @@ export const faqs: FaqItem[] = [
   },
   {
     q: 'What are the placements from JKKN Dental College?',
-    a: 'JKKN Dental College & Hospital, Namakkal district, reports 93.9% placed or in higher studies (2024-25 batch). Recruiting partners include Clove Dental, Apollo Dental, MyDentist, Sabka Dentist, Apollo Hospitals, Fortis Healthcare, Manipal Hospitals, and Government PHCs. International placements in UK (NHS), Saudi Arabia, UAE, and Singapore are also available.',
+    a: 'JKKN Dental College & Hospital, Namakkal district, reports 93.9% placed or in higher studies (2024-25 batch): of 99 BDS graduates, 75 were placed and 18 went on to higher studies, with a median salary of Rs 3,60,000, as filed in its NIRF 2026 submission.',
   },
 ];
