@@ -20,7 +20,7 @@ export const faqs: FaqItem[] = [
   },
   {
     q: 'How are BDS seats at JKKN Dental filled for Salem students?',
-    a: 'JKKN Dental College & Hospital is affiliated to The Tamil Nadu Dr. M.G.R. Medical University, so its BDS seats, both Government Quota and Management Quota, are filled through Tamil Nadu DME NEET UG counselling. Government Quota tuition is as per government norms; Management Quota tuition for 2026-27 is Rs. 4,50,000 a year for day scholars.',
+    a: 'JKKN Dental College & Hospital is affiliated to The Tamil Nadu Dr. M.G.R. Medical University, so its BDS seats, both Government Quota and Management Quota, are filled through Tamil Nadu DME NEET UG counselling. Government Quota tuition is Rs. 2,50,000 a year (DME prospectus 2025-26); Management Quota tuition for 2026-27 is Rs. 4,50,000 a year for day scholars. As a minority institution, JKKN fills its seats 50:50 between the two quotas.',
   },
   {
     q: 'Which are the best dental colleges in Salem?',
@@ -48,7 +48,7 @@ export const faqs: FaqItem[] = [
   },
   {
     q: 'What is the BDS fee at dental colleges near Salem?',
-    a: 'At JKKN Dental College & Hospital, BDS tuition is as per government norms under Government Quota, and Rs. 4,50,000 a year (day scholar, with instruments) or Rs. 5,50,000 a year (with hostel and instruments) under Management Quota, as published on the fee structure page for 2026-27. Contact +91 9345855001 or visit www.jkkn.ai/apply/jkkn-admission-2026 for 2026 admission details.',
+    a: 'At JKKN Dental College & Hospital, BDS tuition is Rs. 2,50,000 a year under Government Quota (the fee the Fee Committee fixes for every self-financing dental college in Tamil Nadu, DME prospectus 2025-26), and Rs. 4,50,000 a year (day scholar, with instruments) or Rs. 5,50,000 a year (with hostel and instruments) under Management Quota, as published on the fee structure page for 2026-27. Contact +91 9345855001 or visit www.jkkn.ai/apply/jkkn-admission-2026 for 2026 admission details.',
   },
   {
     q: 'Can Salem learners get BDS admission at JKKN through NEET?',

@@ -7,6 +7,7 @@ import Link from 'next/link';
 import StructuredData from '@/components/StructuredData';
 import { generateBreadcrumbSchema, generateWebPageSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
 import DentalEnquiryForm from "@/components/lead/DentalEnquiryForm";
+import { TN_BDS_FEES } from '@/data/tnBdsFees';
 
 export const metadata: Metadata = {
   title: 'Fee Structure 2026-27 | BDS & MDS Fees | JKKN Dental College',
@@ -62,7 +63,7 @@ const structuredData = {
             "minPrice": "450000",
             "maxPrice": "550000",
             "unitText": "per year",
-            "description": "GQ: As per Govt. Norms. MQ: ₹4,50,000–₹5,50,000/year. Varies by hostel/dayscholar option."
+            "description": "GQ: ₹2,50,000/year (Fee Committee, DME prospectus 2025-26). MQ: ₹4,50,000–₹5,50,000/year. Varies by hostel/dayscholar option."
           }
         }
       }
@@ -106,7 +107,7 @@ const faqSchema = {
       "name": "What is the BDS fee structure at JKKN Dental College?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The BDS (Bachelor of Dental Surgery) tuition fee at JKKN Dental College is: Government Quota (GQ) – As per Govt. Norms. Management Quota (MQ) – ₹5,50,000/year (With Hostel & Instruments) or ₹4,50,000/year (Dayscholar with Instruments). Additional fees include library fee, lab and clinical fee, caution deposit (refundable), and university examination fees. Contact the admissions office at +91 9345855001 or dental@jkkn.ac.in for complete fee details."
+        "text": "The BDS (Bachelor of Dental Surgery) tuition fee at JKKN Dental College is: Government Quota (GQ) – ₹2,50,000/year, the fee the Fee Committee fixes for every self-financing dental college in Tamil Nadu (DME Selection Committee prospectus 2025-26). Management Quota (MQ) – ₹5,50,000/year (With Hostel & Instruments) or ₹4,50,000/year (Dayscholar with Instruments). Additional fees include library fee, lab and clinical fee, caution deposit (refundable), and university examination fees. Contact the admissions office at +91 9345855001 or dental@jkkn.ac.in for complete fee details."
       }
     },
     {
@@ -234,19 +235,29 @@ export default function FeesStructure() {
               <tbody className="divide-y divide-gray-300">
                 <tr className="hover:bg-white transition-colors">
                   <td className="px-6 py-4 font-semibold text-gray-800">BDS</td>
-                  <td className="px-6 py-4 text-left text-gray-600 italic">As per Govt. Norms</td>
+                  <td className="px-6 py-4 text-left text-gray-600">&#8377;2,50,000*</td>
                   <td className="px-6 py-4 text-right text-gray-800">&#8377;5,50,000</td>
                   <td className="px-6 py-4 text-gray-600">With Hostel &amp; Instruments</td>
                 </tr>
                 <tr className="hover:bg-white transition-colors">
                   <td className="px-6 py-4 font-semibold text-gray-800">BDS</td>
-                  <td className="px-6 py-4 text-left text-gray-600 italic">As per Govt. Norms</td>
+                  <td className="px-6 py-4 text-left text-gray-600">&#8377;2,50,000*</td>
                   <td className="px-6 py-4 text-right text-gray-800">&#8377;4,50,000</td>
                   <td className="px-6 py-4 text-gray-600">Dayscholar with Instruments</td>
                 </tr>
               </tbody>
             </table>
             <p className="text-xs text-gray-500 px-6 py-3">* Fees are per year. GQ = Government Quota &nbsp;|&nbsp; MQ = Management Quota</p>
+            <p className="text-xs text-gray-600 px-6 pb-4 leading-relaxed">
+              * Government Quota: &#8377;{TN_BDS_FEES.governmentQuotaSelfFinancing.toLocaleString('en-IN')} a year, the fee the
+              Fee Committee fixes for every self-financing dental college in Tamil Nadu, as printed in the{' '}
+              <a href={TN_BDS_FEES.source.url} target="_blank" rel="noopener noreferrer" className="underline text-[#006837]">
+                DME Selection Committee prospectus {TN_BDS_FEES.source.session}
+              </a>{' '}
+              ({TN_BDS_FEES.source.order}). A revision for 2026-27, if any, is notified at counselling. JKKN is a
+              minority institution, so its BDS seats are split {TN_BDS_FEES.seatSplit.minority} between Government
+              Quota and Management Quota.
+            </p>
           </div>
 
           {/* BDS Additional Information */}
