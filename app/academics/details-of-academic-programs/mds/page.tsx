@@ -176,9 +176,9 @@ export default function MDSProgram() {
 
               {/* Description */}
               <p className="hero-description text-lg text-gray-200 mb-8 leading-relaxed">
-                JKKN Dental College &amp; Hospital is a leading MDS dental
-                college in Tamil Nadu offering 18 seats across 5 NDC-approved
-                specializations. NAAC-accredited and affiliated to The Tamil
+                JKKN Dental College &amp; Hospital, Komarapalayam, is one of the
+                19 MDS colleges affiliated to The Tamil Nadu Dr. M.G.R. Medical University,
+                with 18 seats across 5 NDC-approved specializations. NAAC-accredited and affiliated to The Tamil
                 Nadu Dr. M.G.R. Medical University, our 3-year postgraduate MDS
                 program combines rigorous academics with clinical exposure
                 across 200+ dental chairs and 500+ daily patients.
@@ -799,7 +799,7 @@ export default function MDSProgram() {
       <section className="py-16 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-2xl sm:text-3xl font-bold text-[#006837] mb-3">
-            MDS in Tamil Nadu — seats, colleges and specialities
+            MDS seats and specialities in Tamil Nadu
           </h2>
           <p className="text-gray-700 text-sm sm:text-base leading-relaxed mb-8 max-w-3xl">
             The figures below come from the sanctioned-intake matrix published by The Tamil Nadu
@@ -816,7 +816,7 @@ export default function MDSProgram() {
             </a>
             <a href="/academics/details-of-academic-programs/mds/colleges-in-tamil-nadu/"
                className="block rounded-xl border border-gray-200 p-5 hover:border-[#006837] hover:shadow-sm transition-all">
-              <span className="block font-semibold text-[#006837]">MDS colleges in Tamil Nadu</span>
+              <span className="block font-semibold text-[#006837]">All 19 MDS colleges in Tamilnadu</span>
               <span className="block mt-1.5 text-sm text-gray-600 leading-relaxed">
                 Every one of the 19 affiliated colleges, where it is and what it holds.
               </span>
