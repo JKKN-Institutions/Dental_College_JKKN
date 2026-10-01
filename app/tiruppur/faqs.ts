@@ -44,6 +44,6 @@ export const faqs: FaqItem[] = [
   },
   {
     q: 'What is the BDS fee at dental colleges near Tiruppur?',
-    a: 'At JKKN Dental College & Hospital, about 67 km from Tiruppur, BDS tuition fee is As Per Govt Norms under Government Quota and Rs. 4,50,000/year (Dayscholar with Instruments) or Rs. 5,50,000/year (With Hostel & Instruments) under Management Quota. Contact +91 9345855001 for the latest 2026-27 fee structure.',
+    a: 'At JKKN Dental College & Hospital, about 67 km from Tiruppur, BDS tuition fee is Rs. 2,50,000/year under Government Quota (the fee the Fee Committee fixes for every self-financing dental college in Tamil Nadu, DME prospectus 2025-26) and Rs. 4,50,000/year (Dayscholar with Instruments) or Rs. 5,50,000/year (With Hostel & Instruments) under Management Quota. Contact +91 9345855001 for the latest 2026-27 fee structure.',
   },
 ];

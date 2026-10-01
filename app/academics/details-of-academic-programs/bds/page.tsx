@@ -12,6 +12,7 @@ import { useState } from 'react';
 import DentalEnquiryForm from "@/components/lead/DentalEnquiryForm";
 import { DEFAULT_PROGRAMME_BY_PAGE } from "@/lib/dental-programmes";
 import { jkknSameAsUrls } from '@/lib/metadata';
+import { TN_BDS_FEES } from '@/data/tnBdsFees';
 
 export default function BDSProgram() {
 
@@ -45,7 +46,7 @@ export default function BDSProgram() {
               },
               {
                 q: 'What is the BDS course fee at JKKN Dental College?',
-                a: 'BDS fees at JKKN are regulated by the Tamil Nadu Government Fee Fixation Committee. Both Government Quota and Management Quota fees are determined as per state norms. For the latest 2026-27 fee structure, contact the admissions office at +91 93458 55001 or visit www.jkkn.ai/apply/jkkn-admission-2026. Scholarships are available for meritorious and economically weaker learners.'
+                a: 'Government Quota: Rs. 2,50,000 a year, the fee the Fee Committee fixes for every self-financing dental college in Tamil Nadu (DME Selection Committee prospectus 2025-26). Management Quota for 2026-27: Rs. 4,50,000 a year (day scholar, with instruments) or Rs. 5,50,000 a year (with hostel and instruments). As a minority institution, JKKN fills its BDS seats 50:50 between the two quotas. For the latest figures call +91 93458 55001. Scholarships are available for meritorious and economically weaker learners.'
               },
               {
                 q: 'What is the NEET cutoff for BDS admission at JKKN?',
@@ -138,7 +139,7 @@ export default function BDSProgram() {
   // Expanded FAQ Schema — 15 Questions
 
   const speakableSchema = generateSpeakableWebPageSchema({
-    title: 'BDS Colleges in Tamil Nadu — BDS Admission 2026-27 at JKKN Dental College',
+    title: 'BDS at JKKN Dental College — Admission 2026-27 in Tamil Nadu',
     description: 'JKKN Dental College, Namakkal offers NDC-approved BDS with 200+ dental chairs, 500+ daily patients, 93.9% placed or in higher studies (2024-25 batch), NAAC Accredited. Admission 2026-27 open.',
     url: 'https://dental.jkkn.ac.in/academics/details-of-academic-programs/bds/',
     dateModified: '2026-04-08',
@@ -200,14 +201,14 @@ export default function BDSProgram() {
                   href="/academics/details-of-academic-programs/bds/colleges-in-tamil-nadu/"
                   className="inline-flex items-center gap-2 text-[#7cb983] font-semibold underline hover:no-underline"
                 >
-                  22 dental colleges in Tamil Nadu and their 2,100 BDS seats &rarr;
+                  All 22 BDS colleges in Tamilnadu, their 2,100 seats and the official fees &rarr;
                 </a>
               </p>
 
               {/* H1 — Gap #3 Fixed: Keyword-rich H1 */}
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
-                BDS Colleges in Tamil Nadu{' '}
-                <span className="text-[#7cb983]">— BDS Admission 2026-27 at JKKN</span>
+                BDS at JKKN Dental College{' '}
+                <span className="text-[#7cb983]">— Admission 2026-27 in Tamil Nadu</span>
               </h1>
 
               {/* Subtitle with schema keywords */}
@@ -313,7 +314,7 @@ export default function BDSProgram() {
           </div>
 
           <h2 className="text-3xl md:text-4xl font-bold text-[#006837] text-center mb-4">
-            What Makes the Best BDS Colleges in Tamil Nadu - and How JKKN Compares
+            What to Check Before Choosing a BDS College - and How JKKN Compares
           </h2>
           <p className="text-gray-600 text-center mb-12 max-w-3xl mx-auto">
             Discover what makes JKKN Dental College a preferred choice for aspiring dental professionals across Tamil Nadu, from <a href="/erode/" className="text-[#7cb983] underline hover:text-[#6ba872]">Erode</a>, <a href="/salem/" className="text-[#7cb983] underline hover:text-[#6ba872]">Salem</a>, <a href="/coimbatore/" className="text-[#7cb983] underline hover:text-[#6ba872]">Coimbatore</a>, and beyond.
@@ -323,8 +324,8 @@ export default function BDSProgram() {
             {[
               { num: 1, title: 'NDC Approved & NAAC Accredited', desc: 'Fully approved by the National Dental Commission and accredited by NAAC, ensuring nationally recognized standards of dental education and patient care.' },
               { num: 2, title: '200+ Dental Chairs', desc: 'A large dental clinical facility in the Namakkal-Erode-Salem corridor with 200+ operational dental chairs and 100+ hospital beds for comprehensive training.' },
-              { num: 3, title: '500+ Daily Patients — Clinical Exposure from Year 1', desc: 'Learners receive hands-on clinical training from Year 1 with 500+ patients visiting daily across 9 specialized departments — a key advantage over many BDS colleges in Tamil Nadu.' },
-              { num: 4, title: '93.9% Placed or in Higher Studies (2024-25) — Including International', desc: 'Strong placement record with recruiters like Apollo Hospitals, Clove Dental, NHS UK, and Cleveland Clinic Abu Dhabi. 3,000+ alumni network worldwide.' },
+              { num: 3, title: '500+ Daily Patients — Clinical Exposure from Year 1', desc: 'Learners receive hands-on clinical training from Year 1 with 500+ patients visiting daily across 9 specialized departments.' },
+              { num: 4, title: '93.9% Placed or in Higher Studies (2024-25)', desc: 'Of 99 BDS graduates in 2024-25, 75 were placed and 18 went on to higher studies, at a median salary of Rs 3,60,000, as filed in the NIRF 2026 submission.' },
               { num: 5, title: '5 MDS Specializations — Seamless UG to PG Pathway', desc: 'Pursue MDS in Periodontics, Orthodontics, Prosthodontics, Conservative & Endodontics, or Oral Medicine & Radiology — 18 PG seats available right on campus.' },
               { num: 6, title: '74+ Years of Trust Legacy (Since 1952)', desc: 'Part of J.K.K. Nattraja Educational Institutions, one of the oldest educational trusts in Tamil Nadu with a legacy spanning 74+ years across 9 institutions.' },
               { num: 7, title: 'Strategic NH-544 Location — Well-Connected', desc: 'Located on the Salem-Coimbatore National Highway, easily accessible from Erode (~18 km), Salem (~60 km), Namakkal town (~65 km), and Coimbatore (~105 km).' },
@@ -817,8 +818,8 @@ export default function BDSProgram() {
               <tbody className="divide-y divide-gray-100">
                 <tr className="bg-white">
                   <td className="px-6 py-4 text-sm font-semibold text-gray-800">Government Quota</td>
-                  <td className="px-6 py-4 text-sm text-center text-gray-600">As Per Govt Norms</td>
-                  <td className="px-6 py-4 text-sm text-gray-600">As per TN Government fixation committee norms</td>
+                  <td className="px-6 py-4 text-sm text-center text-gray-600">₹2,50,000/year</td>
+                  <td className="px-6 py-4 text-sm text-gray-600">Fixed by the Fee Committee for every self-financing dental college in Tamil Nadu (<a href={TN_BDS_FEES.source.url} target="_blank" rel="noopener noreferrer" className="underline">DME prospectus {TN_BDS_FEES.source.session}</a>)</td>
                 </tr>
                 <tr className="bg-green-50/50">
                   <td className="px-6 py-4 text-sm font-semibold text-gray-800">Management Quota (With Hostel & Instruments)</td>
@@ -843,7 +844,7 @@ export default function BDSProgram() {
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-[#7cb983] mt-1">&#8226;</span>
-                Hostel fees, learning assessment fees, and other charges are additional
+                Hostel is included only in the Management Quota &ldquo;With Hostel &amp; Instruments&rdquo; fee; for other seats, and for examination and other charges, ask the admissions office
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-[#7cb983] mt-1">&#8226;</span>

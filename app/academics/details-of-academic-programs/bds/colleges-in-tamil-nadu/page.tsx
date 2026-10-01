@@ -95,7 +95,7 @@ export default function DentalCollegesInTamilNadu() {
         'Through NEET UG. Candidates qualify the national entrance exam, then take part in Tamil Nadu state counselling for government-quota seats or institutional counselling for management-quota seats. Seats are allotted on NEET rank, category and availability, and the BDS course runs five years including a compulsory rotatory internship.',
     },
     {
-      question: 'How many BDS colleges are there in Tamil Nadu?',
+      question: 'How many BDS colleges are there in Tamil Nadu (Tamilnadu)?',
       answer:
         'Twenty-two, and they are the same twenty-two dental colleges listed above. BDS is the only undergraduate dental degree recognised in India, so every affiliated dental college in Tamil Nadu is a BDS college \u2014 the two phrases describe one list. Between them they are sanctioned 2,100 BDS seats for 2025-26.',
     },
@@ -105,6 +105,11 @@ export default function DentalCollegesInTamilNadu() {
         'Nineteen of the twenty-two affiliated colleges listed here are self-financing, which is what most people mean by private, and they hold 1,850 of the 2,100 sanctioned BDS seats: ' +
         TN_BDS_COLLEGES.filter((c) => c.kind === 'Self-financing').map((c) => c.name).join('; ') +
         '. Deemed-to-be universities are private too but are not in this matrix at all, because they award their own degrees rather than the university\u2019s.',
+    },
+    {
+      question: 'What is the BDS fee structure in private colleges in Tamilnadu?',
+      answer:
+        'The State publishes two BDS fees. In every self-financing (private) dental college in Tamil Nadu, a Government Quota seat costs Rs. 2,50,000 a year, the fee fixed by the Fee Committee. In government dental colleges the total fee is Rs. 16,073 (Rs. 12,073 for SC, SCA and ST candidates). Management Quota fees are also fixed by the Fee Committee but differ by college; at JKKN Dental College they are Rs. 4,50,000 a year for day scholars and Rs. 5,50,000 a year with hostel for 2026-27. Source: DME Selection Committee prospectus 2025-26 (G.O.(D) No.601, 05-06-2025).',
     },
     {
       question: 'Which are the best or top dental colleges in Tamil Nadu?',
