@@ -194,8 +194,11 @@ export default function MDSComparisonTables() {
           <p className="text-sm text-gray-500 mt-3 italic">
             No per-college private tuition figure is quoted here because none is
             published in these orders &mdash; the {TN_MDS_FEE_SOURCE.committee}{' '}
-            fixes it for each year. For JKKN&rsquo;s own MDS fees, ask admissions
-            on +91 9345855001 or dental@jkkn.ac.in.
+            fixes it for each year. JKKN&rsquo;s own Management Quota MDS tuition for
+            2026-27 is &#8377;8,50,000 a year, the same in all five specialities, as published
+            on its <a href="/fees-structure/" className="underline text-[#006837]">fee structure page</a>;
+            its Government Quota fee is the one the committee fixes. Questions: +91 9345855001
+            or dental@jkkn.ac.in.
           </p>
         </div>
       </div>

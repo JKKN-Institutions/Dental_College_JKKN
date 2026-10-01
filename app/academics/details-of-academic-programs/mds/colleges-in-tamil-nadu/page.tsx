@@ -52,8 +52,8 @@ export default function MdsCollegesInTamilNadu() {
       slug="colleges-in-tamil-nadu"
       kicker="MDS colleges"
       h1="MDS Colleges in Tamil Nadu — All 19 Affiliated Colleges, 2025-26"
-      answer="Nineteen dental colleges in Tamil Nadu are affiliated to The Tamil Nadu Dr. M.G.R. Medical University and sanctioned to run MDS in 2025-26. Two are government colleges with 79 seats; 17 are self-financing with 356. Together they hold 435 seats across nine specialities."
-      intro="This is the complete affiliated list, not a shortlist. Each row shows where the college is, whether it is government or self-financing, and how many seats it holds in each of the nine MDS specialities — so a candidate can see at a glance which colleges actually run the branch they want. MDS colleges in Tamil Nadu and MDS colleges in Tamilnadu, the spelling most searches use, are the same list."
+      answer="Nineteen dental colleges in Tamil Nadu are affiliated to The Tamil Nadu Dr. M.G.R. Medical University and sanctioned to run MDS in 2025-26. Two are government colleges with 79 seats; 17 are self-financing with 356. Together they hold 435 seats across nine specialities. JKKN Dental College & Hospital at Komarapalayam, Namakkal district, which publishes this page, is one of the 17 self-financing colleges, with 18 seats in five specialities."
+      intro="This is the complete affiliated list, not a shortlist. Each row shows where the college is, whether it is government or self-financing, and how many seats it holds in each of the nine MDS specialities — so a candidate can see at a glance which colleges actually run the branch they want. MDS colleges in Tamil Nadu, MDS colleges in Tamilnadu (the spelling most searches use) and dental colleges in Tamilnadu for MDS are the same list."
       faqs={faqs}
       showSpecialities
     >
