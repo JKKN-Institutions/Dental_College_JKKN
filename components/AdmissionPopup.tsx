@@ -15,6 +15,7 @@ import Image from "next/image";
 import { X } from "lucide-react";
 import { useEnquiryModal } from "@/components/lead/EnquiryModal";
 import { ENQUIRY_DONE_KEY, readStore } from "@/lib/enquiry-store";
+import { sendGaEvent } from "@/lib/ga-event";
 
 export default function AdmissionPopup() {
   const modal = useEnquiryModal();
@@ -24,10 +25,7 @@ export default function AdmissionPopup() {
     if (readStore(ENQUIRY_DONE_KEY)) return;
 
     const variant = modal ? "poster_form" : "poster";
-    const w = window as unknown as { gtag?: (...args: unknown[]) => void };
-    if (typeof w.gtag === "function") {
-      w.gtag("event", "popup_view", { popup_variant: variant, page_path: window.location.pathname });
-    }
+    sendGaEvent("popup_view", { popup_variant: variant, page_path: window.location.pathname });
 
     if (modal) modal.openEnquiry("home-popup", { withPoster: true });
     else setShowPoster(true);

@@ -20,6 +20,7 @@ import { createContext, useCallback, useContext, useEffect, useMemo, useState, t
 import Image from "next/image"
 import { X } from "lucide-react"
 import DentalEnquiryForm from "@/components/lead/DentalEnquiryForm"
+import { sendGaEvent } from "@/lib/ga-event"
 
 type OpenOptions = { withPoster?: boolean }
 type EnquiryModalApi = { openEnquiry: (sourcePage: string, options?: OpenOptions) => void }
@@ -32,17 +33,12 @@ export function useEnquiryModal() {
   return useContext(EnquiryModalContext)
 }
 
-function track(eventName: string, params: Record<string, string>) {
-  // No name, no phone — ever. Only where the modal was opened from.
-  const w = window as unknown as { gtag?: (...args: unknown[]) => void }
-  if (typeof w.gtag === "function") w.gtag("event", eventName, params)
-}
-
 export function EnquiryModalProvider({ children }: { children: ReactNode }) {
   const [open, setOpen] = useState<OpenState | null>(null)
 
   const openEnquiry = useCallback((source: string, options?: OpenOptions) => {
-    track("enquiry_open", { source_page: source, page_path: window.location.pathname })
+    // Only where the modal was opened from — no name, no phone.
+    sendGaEvent("enquiry_open", { source_page: source, page_path: window.location.pathname })
     setOpen({ sourcePage: source, withPoster: !!options?.withPoster })
   }, [])
 
