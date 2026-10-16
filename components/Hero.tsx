@@ -3,6 +3,13 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { Trophy } from 'lucide-react';
+import EnquiryButton from '@/components/lead/EnquiryButton';
+import DentalEnquiryForm from '@/components/lead/DentalEnquiryForm';
+
+// Fix D2 of the 2026-10-12 homepage form audit: an action inside the first screen.
+// Phones: the photo moves below the text, so heading + "Get a Call Back" sit in the first screen
+// (mock-up: button at y=654 of an 812 px screen; before, the photo pushed it to y=879).
+// md and up: the photo's column becomes the 3-box enquiry card (mock-up: button bottom y=680 of 768).
 
 export default function Hero() {
   const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>) => {
@@ -51,16 +58,19 @@ export default function Hero() {
               </div>
             </div>
 
-            {/* Buttons */}
+            {/* Buttons — the call-back button is for phones; md and up has the card on the right */}
+            <p className="md:hidden text-gray-200 text-sm sm:text-base">
+              Fill 3 details. Our admission team will call you within 24 hours.
+            </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
-              <a
-                href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_medium=organic&utm_campaign=components-hero"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-[#7cb983] hover:bg-[#6ba872] active:bg-[#5a9761] text-white font-bold py-3 sm:py-3.5 px-6 sm:px-8 rounded-full transition-all duration-300 text-center text-sm sm:text-base min-h-[44px] flex items-center justify-center touch-manipulation transform hover:scale-105 active:scale-95"
+              <EnquiryButton
+                sourcePage="home-hero-btn"
+                fallbackHref="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_medium=organic&utm_campaign=components-hero"
+                fallbackLabel="Start Your Application →"
+                className="md:hidden bg-[#7cb983] hover:bg-[#6ba872] active:bg-[#5a9761] text-white font-bold py-3 sm:py-3.5 px-6 sm:px-8 rounded-full transition-all duration-300 text-center text-sm sm:text-base min-h-[44px] flex items-center justify-center touch-manipulation transform hover:scale-105 active:scale-95"
               >
-                Start Your Application →
-              </a>
+                Get a Call Back
+              </EnquiryButton>
               <Link
                 href="#academic-programs"
                 onClick={scrollToSection}
@@ -71,20 +81,24 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Right Image */}
-          <div className="relative order-first md:order-last">
-            <div className="rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl bg-gray-100 aspect-[4/3] md:aspect-auto">
+          {/* Right: photo on phones (below the text), enquiry card from md up */}
+          <div className="relative md:hidden">
+            <div className="rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl bg-gray-100 aspect-[4/3]">
               <Image
                 src="/images/JKKN-Dental-Clinical-Training.webp"
                 alt="JKKN Dental College clinical training with dental chairs and faculty treating patients"
                 width={1920}
                 height={1440}
                 className="w-full h-full object-cover"
-                priority
-                sizes="(max-width: 768px) 100vw, 50vw"
+                sizes="100vw"
                 quality={85}
               />
             </div>
+          </div>
+          <div className="hidden md:block rounded-2xl sm:rounded-3xl bg-[#0b3d1f]/60 border border-white/15 shadow-2xl p-6 lg:p-7">
+            <h2 className="text-xl lg:text-2xl font-bold text-white leading-snug">Get BDS / MDS fee and admission details</h2>
+            <p className="mt-1 mb-5 text-sm text-gray-200">Fill 3 details. Our admission team will call you within 24 hours.</p>
+            <DentalEnquiryForm sourcePage="home-hero" compact />
           </div>
         </div>
 
