@@ -1,4 +1,5 @@
 import { Check, Phone, Mail } from 'lucide-react';
+import DentalEnquiryForm from '@/components/lead/DentalEnquiryForm';
 
 export default function AdmissionsSection() {
   return (
@@ -59,6 +60,13 @@ export default function AdmissionsSection() {
                   <span className="text-gray-700 text-sm sm:text-base">State Dental Council registration</span>
                 </li>
               </ul>
+            </div>
+
+            {/* Fix D5 (2026-10-12 audit): the 3-box form right where eligibility is read */}
+            <div className="bg-[#006837] rounded-xl sm:rounded-2xl p-5 sm:p-6 mb-6 sm:mb-8">
+              <h4 className="text-xl sm:text-2xl font-bold text-white leading-snug">Check your eligibility with our admission team</h4>
+              <p className="mt-1 mb-5 text-sm sm:text-base text-white/80">Fill 3 details. Our admission team will call you within 24 hours.</p>
+              <DentalEnquiryForm sourcePage="home-admissions" compact />
             </div>
 
             {/* Buttons */}

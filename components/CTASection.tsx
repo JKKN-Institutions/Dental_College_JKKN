@@ -1,4 +1,5 @@
 import { Phone } from 'lucide-react';
+import EnquiryButton from '@/components/lead/EnquiryButton';
 
 export default function CTASection() {
   return (
@@ -11,19 +12,19 @@ export default function CTASection() {
 
         {/* Description */}
         <p className="text-white text-sm sm:text-base md:text-lg mb-6 sm:mb-8 md:mb-10 max-w-3xl mx-auto leading-relaxed">
-          Join JKKN Dental College & Hospital — approved by the National Dental Commission (formerly Dental Council of India), NAAC accredited with an A Grade, affiliated to The Tamil Nadu Dr. M.G.R. Medical University, with 100 BDS and 18 MDS sanctioned seats and its own teaching hospital. Applications for 2026-27 are now open.
+          Join JKKN Dental College & Hospital — approved by the National Dental Commission (formerly Dental Council of India), NAAC accredited with an A Grade, affiliated to The Tamil Nadu Dr. M.G.R. Medical University, with 100 BDS and 18 MDS sanctioned seats and its own teaching hospital. Talk to our admission team about BDS and MDS seats.
         </p>
 
         {/* Buttons */}
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center">
-          <a
-            href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_medium=organic&utm_campaign=components-ctasection"
-            target="_blank"
-            rel="noopener noreferrer"
+          <EnquiryButton
+            sourcePage="home-cta"
+            fallbackHref="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_medium=organic&utm_campaign=components-ctasection"
+            fallbackLabel="Apply Now →"
             className="w-full sm:w-auto bg-white hover:bg-gray-100 active:bg-gray-200 text-[#006837] font-bold py-3 sm:py-3.5 px-6 sm:px-8 rounded-full transition-all duration-300 text-center shadow-lg min-h-[44px] flex items-center justify-center touch-manipulation text-sm sm:text-base"
           >
-            Apply Now →
-          </a>
+            Get a Call Back
+          </EnquiryButton>
           <a
             href="tel:+919345855001"
             className="w-full sm:w-auto border-2 border-white hover:bg-white hover:text-[#7cb983] active:bg-gray-100 text-white font-bold py-3 sm:py-3.5 px-6 sm:px-8 rounded-full transition-all duration-300 text-center inline-flex items-center justify-center gap-2 min-h-[44px] touch-manipulation text-sm sm:text-base"
