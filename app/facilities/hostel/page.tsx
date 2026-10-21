@@ -44,12 +44,12 @@ export default function HostelFacilities() {
       <Header />
 
       {/* Hero Banner */}
-      <section className="bg-[#006837] py-16 px-4">
+      <section className="bg-[#0b6d41] py-16 px-4">
         <div className="max-w-6xl mx-auto">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
             Hostel Facilities
           </h1>
-          <div className="h-1 w-24 bg-[#7cb983] rounded-full" />
+          <div className="h-1 w-24 bg-[#ffde59] rounded-full" />
           <p className="text-gray-200 text-base md:text-lg mt-6 max-w-3xl">
             JKKN Dental College &amp; Hospital provides separate hostels for boys and girls
             within walking distance of the campus, offering a safe, comfortable and
@@ -75,12 +75,12 @@ export default function HostelFacilities() {
               />
             </div>
             <div className="p-6">
-              <h2 className="text-xl font-bold text-[#006837] mb-2">Boys Hostel</h2>
+              <h2 className="text-xl font-bold text-[#0b6d41] mb-2">Boys Hostel</h2>
               <p className="text-gray-600 text-sm leading-relaxed">
                 Well-ventilated rooms a short walk from campus with high-speed internet,
                 round-the-clock security and a quiet, study-focused environment.
               </p>
-              <span className="inline-block mt-4 text-[#7cb983] font-semibold group-hover:text-[#006837] transition-colors">
+              <span className="inline-block mt-4 text-[#0b6d41] font-semibold group-hover:text-[#0b6d41] transition-colors">
                 View Boys Hostel →
               </span>
             </div>
@@ -100,12 +100,12 @@ export default function HostelFacilities() {
               />
             </div>
             <div className="p-6">
-              <h2 className="text-xl font-bold text-[#006837] mb-2">Girls Hostel</h2>
+              <h2 className="text-xl font-bold text-[#0b6d41] mb-2">Girls Hostel</h2>
               <p className="text-gray-600 text-sm leading-relaxed">
                 Safe on-campus accommodation for girls with 24/7 security, Wi-Fi
                 connectivity, hygienic mess and dedicated warden support.
               </p>
-              <span className="inline-block mt-4 text-[#7cb983] font-semibold group-hover:text-[#006837] transition-colors">
+              <span className="inline-block mt-4 text-[#0b6d41] font-semibold group-hover:text-[#0b6d41] transition-colors">
                 View Girls Hostel →
               </span>
             </div>
@@ -116,33 +116,33 @@ export default function HostelFacilities() {
       {/* Common Amenities */}
       <section className="bg-white py-14 px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold text-[#006837] mb-8">
+          <h2 className="text-2xl md:text-3xl font-bold text-[#0b6d41] mb-8">
             Common Hostel Amenities
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="bg-[#FBFBEE] rounded-xl p-6">
-              <ShieldCheck className="w-8 h-8 text-[#7cb983] mb-3" />
+              <ShieldCheck className="w-8 h-8 text-[#0b6d41] mb-3" />
               <h3 className="font-bold text-gray-800 mb-1">24/7 Security</h3>
               <p className="text-sm text-gray-600">
                 Round-the-clock security measures and committed staff support.
               </p>
             </div>
             <div className="bg-[#FBFBEE] rounded-xl p-6">
-              <Wifi className="w-8 h-8 text-[#7cb983] mb-3" />
+              <Wifi className="w-8 h-8 text-[#0b6d41] mb-3" />
               <h3 className="font-bold text-gray-800 mb-1">Wi-Fi Connectivity</h3>
               <p className="text-sm text-gray-600">
                 High-speed internet across hostel blocks for study and research.
               </p>
             </div>
             <div className="bg-[#FBFBEE] rounded-xl p-6">
-              <Utensils className="w-8 h-8 text-[#7cb983] mb-3" />
+              <Utensils className="w-8 h-8 text-[#0b6d41] mb-3" />
               <h3 className="font-bold text-gray-800 mb-1">Hygienic Mess</h3>
               <p className="text-sm text-gray-600">
                 Vegetarian and non-vegetarian meals with laundry and hot water services.
               </p>
             </div>
             <div className="bg-[#FBFBEE] rounded-xl p-6">
-              <HomeIcon className="w-8 h-8 text-[#7cb983] mb-3" />
+              <HomeIcon className="w-8 h-8 text-[#0b6d41] mb-3" />
               <h3 className="font-bold text-gray-800 mb-1">Near Campus</h3>
               <p className="text-sm text-gray-600">
                 Minutes from academic buildings, labs and the dental hospital on NH-544.

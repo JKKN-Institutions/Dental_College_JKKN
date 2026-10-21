@@ -31,7 +31,7 @@ export const metadata: Metadata = {
 
 function Notice({ children }: { children: ReactNode }) {
   return (
-    <div className="rounded-2xl border border-[#7cb983]/30 bg-white p-6 text-center text-[#002309]">{children}</div>
+    <div className="rounded-2xl border border-[#0f8f56]/30 bg-white p-6 text-center text-[#032816]">{children}</div>
   );
 }
 
@@ -60,10 +60,10 @@ export default async function Careers() {
       <Header />
 
       {/* Hero Banner */}
-      <section className="bg-[#006837] py-12 px-4">
+      <section className="bg-[#0b6d41] py-12 px-4">
         <div className="max-w-6xl mx-auto">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">CAREERS</h1>
-          <div className="w-20 h-1 bg-[#7cb983] mb-4 rounded-full" />
+          <div className="w-20 h-1 bg-[#ffde59] mb-4 rounded-full" />
           <p className="text-white/90 text-base md:text-lg font-medium">
             Career Opportunities at JKKN Dental College &amp; Hospital
           </p>
@@ -74,11 +74,11 @@ export default async function Careers() {
       <section aria-labelledby="openings-heading" className="bg-[#FBFBEE] pt-8 pb-10 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="mb-5 flex flex-wrap items-baseline justify-between gap-2">
-            <h2 id="openings-heading" className="text-2xl md:text-3xl font-bold text-[#006837]">
+            <h2 id="openings-heading" className="text-2xl md:text-3xl font-bold text-[#0b6d41]">
               Current Openings
             </h2>
             {available && jobs.length > 0 && (
-              <p className="text-sm font-medium text-[#002309]/70">
+              <p className="text-sm font-medium text-[#032816]/70">
                 {jobs.length} open {jobs.length === 1 ? 'role' : 'roles'}
               </p>
             )}

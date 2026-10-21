@@ -88,7 +88,7 @@ export default function LearningOutcomes() {
       <Header />
 
       {/* Hero Banner */}
-      <div className="bg-[#006837] py-14 px-4">
+      <div className="bg-[#0b6d41] py-14 px-4">
         <div className="max-w-6xl mx-auto">
           <nav className="text-sm mb-4" aria-label="Breadcrumb">
             <ol className="flex flex-wrap items-center gap-1.5 text-white/70">
@@ -112,15 +112,15 @@ export default function LearningOutcomes() {
 
           {/* PROGRAM OUTCOME - BDS */}
           <section className="mb-12">
-            <div className="rounded-2xl overflow-hidden shadow-md border border-[#006837]/20">
-              <div className="bg-[#006837] px-6 py-5 flex items-center gap-3">
-                <span className="bg-white text-[#006837] text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">BDS Program</span>
+            <div className="rounded-2xl overflow-hidden shadow-md border border-[#0b6d41]/20">
+              <div className="bg-[#0b6d41] px-6 py-5 flex items-center gap-3">
+                <span className="bg-white text-[#0b6d41] text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">BDS Program</span>
                 <h2 className="text-2xl md:text-3xl font-bold text-white">
                   PROGRAM OUTCOME – BDS
                 </h2>
               </div>
               <div className="bg-white px-6 py-6">
-                <p className="text-base md:text-lg text-[#006837] font-semibold mb-6 border-l-4 border-[#7cb983] pl-4">
+                <p className="text-base md:text-lg text-[#0b6d41] font-semibold mb-6 border-l-4 border-[#0f8f56] pl-4">
                   The graduates should acquire the following during the period of training:
                 </p>
                 <ol className="space-y-3">
@@ -142,7 +142,7 @@ export default function LearningOutcomes() {
                     "Willing to apply the current skills and capabilities acquired in the best way possible for the welfare of the patients and community health.",
                   ].map((item, i) => (
                     <li key={i} className="flex gap-3 items-start text-gray-700 text-base leading-relaxed">
-                      <span className="flex-shrink-0 w-7 h-7 rounded-full bg-[#006837] text-white text-xs font-bold flex items-center justify-center mt-0.5">{i + 1}</span>
+                      <span className="flex-shrink-0 w-7 h-7 rounded-full bg-[#0b6d41] text-white text-xs font-bold flex items-center justify-center mt-0.5">{i + 1}</span>
                       <span>{item}</span>
                     </li>
                   ))}
@@ -153,15 +153,15 @@ export default function LearningOutcomes() {
 
           {/* PROGRAM OUTCOME - MDS */}
           <section className="mb-12">
-            <div className="rounded-2xl overflow-hidden shadow-md border border-[#7cb983]/30">
-              <div className="bg-[#002309] px-6 py-5 flex items-center gap-3">
-                <span className="bg-[#7cb983] text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">MDS Program</span>
+            <div className="rounded-2xl overflow-hidden shadow-md border border-[#0f8f56]/30">
+              <div className="bg-[#032816] px-6 py-5 flex items-center gap-3">
+                <span className="bg-[#ffde59] text-[#032816] text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">MDS Program</span>
                 <h2 className="text-2xl md:text-3xl font-bold text-white">
                   PROGRAM OUTCOME – MDS
                 </h2>
               </div>
               <div className="bg-white px-6 py-6">
-                <p className="text-base md:text-lg text-[#002309] font-semibold mb-5 border-l-4 border-[#7cb983] pl-4">
+                <p className="text-base md:text-lg text-[#032816] font-semibold mb-5 border-l-4 border-[#0f8f56] pl-4">
                   Utilize scientific knowledge and expertise to practice your respective specialty successfully and effectively.
                 </p>
                 <ul className="space-y-2.5 mb-8">
@@ -180,13 +180,13 @@ export default function LearningOutcomes() {
                     "Take a thorough clinical history, examine the patient, execute necessary diagnostic procedures, and interpret relevant tests to arrive at an accurate diagnosis of the problem.",
                   ].map((item, i) => (
                     <li key={i} className="flex gap-2.5 items-start text-gray-700 text-base">
-                      <span className="flex-shrink-0 text-[#7cb983] mt-1 font-bold text-lg leading-none">›</span>
+                      <span className="flex-shrink-0 text-[#0b6d41] mt-1 font-bold text-lg leading-none">›</span>
                       <span className="leading-relaxed">{item}</span>
                     </li>
                   ))}
                 </ul>
-                <div className="border-t border-[#7cb983]/30 pt-6">
-                  <p className="text-base md:text-lg text-[#002309] font-semibold mb-5 border-l-4 border-[#006837] pl-4">
+                <div className="border-t border-[#0f8f56]/30 pt-6">
+                  <p className="text-base md:text-lg text-[#032816] font-semibold mb-5 border-l-4 border-[#0b6d41] pl-4">
                     The learners should acquire the following during the period of training:
                   </p>
                   <ul className="space-y-2.5">
@@ -208,7 +208,7 @@ export default function LearningOutcomes() {
                       "Willingness to continue professional development and lifelong learning, including participation in continuing education programs in specialized areas of dental practice",
                     ].map((item, i) => (
                       <li key={i} className="flex gap-2.5 items-start text-gray-700 text-base">
-                        <span className="flex-shrink-0 text-[#006837] mt-1 font-bold text-lg leading-none">›</span>
+                        <span className="flex-shrink-0 text-[#0b6d41] mt-1 font-bold text-lg leading-none">›</span>
                         <span className="leading-relaxed">{item}</span>
                       </li>
                     ))}
@@ -221,14 +221,14 @@ export default function LearningOutcomes() {
           {/* COURSE OUTCOME - BDS GENERAL ANATOMY */}
           <section className="mb-8">
             <div className="rounded-xl overflow-hidden shadow-sm border border-gray-200">
-              <div className="bg-[#006837] px-5 py-4 flex items-center justify-between">
+              <div className="bg-[#0b6d41] px-5 py-4 flex items-center justify-between">
                 <h2 className="text-lg md:text-xl font-bold text-white">COURSE OUTCOME – BDS GENERAL ANATOMY</h2>
                 <span className="hidden sm:block text-white/60 text-xs font-medium uppercase tracking-widest">BDS</span>
               </div>
               <div className="grid md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-gray-200 bg-white">
                 <div className="px-5 py-5">
-                  <h3 className="text-sm font-bold text-[#006837] uppercase tracking-wide mb-3 flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-[#006837] inline-block"></span>
+                  <h3 className="text-sm font-bold text-[#0b6d41] uppercase tracking-wide mb-3 flex items-center gap-2">
+                    <span className="w-2 h-2 rounded-full bg-[#0b6d41] inline-block"></span>
                     Knowledge and Understanding
                   </h3>
                   <ul className="space-y-2">
@@ -242,15 +242,15 @@ export default function LearningOutcomes() {
                       "To demonstrate the boundary and identify the contents of the oral cavity, the gross features of the nerve supply of tongue, gum, and teeth Skills:",
                     ].map((item, i) => (
                       <li key={i} className="flex gap-2 items-start text-gray-600 text-sm leading-relaxed">
-                        <span className="flex-shrink-0 text-[#7cb983] font-bold mt-0.5">›</span>
+                        <span className="flex-shrink-0 text-[#0b6d41] font-bold mt-0.5">›</span>
                         <span>{item}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
                 <div className="px-5 py-5 bg-[#FBFBEE]">
-                  <h3 className="text-sm font-bold text-[#006837] uppercase tracking-wide mb-3 flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-[#7cb983] inline-block"></span>
+                  <h3 className="text-sm font-bold text-[#0b6d41] uppercase tracking-wide mb-3 flex items-center gap-2">
+                    <span className="w-2 h-2 rounded-full bg-[#ffde59] inline-block"></span>
                     Skills
                   </h3>
                   <ul className="space-y-2">
@@ -264,7 +264,7 @@ export default function LearningOutcomes() {
                       "To identify the different types of tissue on the slide under the microscope",
                     ].map((item, i) => (
                       <li key={i} className="flex gap-2 items-start text-gray-600 text-sm leading-relaxed">
-                        <span className="flex-shrink-0 text-[#7cb983] font-bold mt-0.5">›</span>
+                        <span className="flex-shrink-0 text-[#0b6d41] font-bold mt-0.5">›</span>
                         <span>{item}</span>
                       </li>
                     ))}
@@ -277,14 +277,14 @@ export default function LearningOutcomes() {
           {/* DENTAL ANATOMY */}
           <section className="mb-8">
             <div className="rounded-xl overflow-hidden shadow-sm border border-gray-200">
-              <div className="bg-[#006837] px-5 py-4 flex items-center justify-between">
+              <div className="bg-[#0b6d41] px-5 py-4 flex items-center justify-between">
                 <h2 className="text-lg md:text-xl font-bold text-white">DENTAL ANATOMY</h2>
                 <span className="hidden sm:block text-white/60 text-xs font-medium uppercase tracking-widest">BDS</span>
               </div>
               <div className="grid md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-gray-200 bg-white">
                 <div className="px-5 py-5">
-                  <h3 className="text-sm font-bold text-[#006837] uppercase tracking-wide mb-3 flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-[#006837] inline-block"></span>
+                  <h3 className="text-sm font-bold text-[#0b6d41] uppercase tracking-wide mb-3 flex items-center gap-2">
+                    <span className="w-2 h-2 rounded-full bg-[#0b6d41] inline-block"></span>
                     Knowledge and Understanding
                   </h3>
                   <ul className="space-y-2">
@@ -295,15 +295,15 @@ export default function LearningOutcomes() {
                       "palate, tongue, and lips and state the congenital defects during their formation",
                     ].map((item, i) => (
                       <li key={i} className="flex gap-2 items-start text-gray-600 text-sm leading-relaxed">
-                        <span className="flex-shrink-0 text-[#7cb983] font-bold mt-0.5">›</span>
+                        <span className="flex-shrink-0 text-[#0b6d41] font-bold mt-0.5">›</span>
                         <span>{item}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
                 <div className="px-5 py-5 bg-[#FBFBEE]">
-                  <h3 className="text-sm font-bold text-[#006837] uppercase tracking-wide mb-3 flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-[#7cb983] inline-block"></span>
+                  <h3 className="text-sm font-bold text-[#0b6d41] uppercase tracking-wide mb-3 flex items-center gap-2">
+                    <span className="w-2 h-2 rounded-full bg-[#ffde59] inline-block"></span>
                     Skills
                   </h3>
                   <ul className="space-y-2">
@@ -319,7 +319,7 @@ export default function LearningOutcomes() {
                       "To explain the clinical importance of teeth and oral tissues",
                     ].map((item, i) => (
                       <li key={i} className="flex gap-2 items-start text-gray-600 text-sm leading-relaxed">
-                        <span className="flex-shrink-0 text-[#7cb983] font-bold mt-0.5">›</span>
+                        <span className="flex-shrink-0 text-[#0b6d41] font-bold mt-0.5">›</span>
                         <span>{item}</span>
                       </li>
                     ))}
@@ -332,14 +332,14 @@ export default function LearningOutcomes() {
           {/* HUMAN PHYSIOLOGY */}
           <section className="mb-8">
             <div className="rounded-xl overflow-hidden shadow-sm border border-gray-200">
-              <div className="bg-[#006837] px-5 py-4 flex items-center justify-between">
+              <div className="bg-[#0b6d41] px-5 py-4 flex items-center justify-between">
                 <h2 className="text-lg md:text-xl font-bold text-white">HUMAN PHYSIOLOGY</h2>
                 <span className="hidden sm:block text-white/60 text-xs font-medium uppercase tracking-widest">BDS</span>
               </div>
               <div className="grid md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-gray-200 bg-white">
                 <div className="px-5 py-5">
-                  <h3 className="text-sm font-bold text-[#006837] uppercase tracking-wide mb-3 flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-[#006837] inline-block"></span>
+                  <h3 className="text-sm font-bold text-[#0b6d41] uppercase tracking-wide mb-3 flex items-center gap-2">
+                    <span className="w-2 h-2 rounded-full bg-[#0b6d41] inline-block"></span>
                     Knowledge and Understanding
                   </h3>
                   <ul className="space-y-2">
@@ -350,15 +350,15 @@ export default function LearningOutcomes() {
                       "To demonstrate basic knowledge and understanding of the normal functions of all the organ systems of the human body and apply it as a background for clinical subjects.",
                     ].map((item, i) => (
                       <li key={i} className="flex gap-2 items-start text-gray-600 text-sm leading-relaxed">
-                        <span className="flex-shrink-0 text-[#7cb983] font-bold mt-0.5">›</span>
+                        <span className="flex-shrink-0 text-[#0b6d41] font-bold mt-0.5">›</span>
                         <span>{item}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
                 <div className="px-5 py-5 bg-[#FBFBEE]">
-                  <h3 className="text-sm font-bold text-[#006837] uppercase tracking-wide mb-3 flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-[#7cb983] inline-block"></span>
+                  <h3 className="text-sm font-bold text-[#0b6d41] uppercase tracking-wide mb-3 flex items-center gap-2">
+                    <span className="w-2 h-2 rounded-full bg-[#ffde59] inline-block"></span>
                     Skills
                   </h3>
                   <ul className="space-y-2">
@@ -378,7 +378,7 @@ export default function LearningOutcomes() {
                       "To determine the bleeding time, clotting time, ESR, differential count of WBC",
                     ].map((item, i) => (
                       <li key={i} className="flex gap-2 items-start text-gray-600 text-sm leading-relaxed">
-                        <span className="flex-shrink-0 text-[#7cb983] font-bold mt-0.5">›</span>
+                        <span className="flex-shrink-0 text-[#0b6d41] font-bold mt-0.5">›</span>
                         <span>{item}</span>
                       </li>
                     ))}
@@ -391,14 +391,14 @@ export default function LearningOutcomes() {
           {/* BIOCHEMISTRY */}
           <section className="mb-8">
             <div className="rounded-xl overflow-hidden shadow-sm border border-gray-200">
-              <div className="bg-[#006837] px-5 py-4 flex items-center justify-between">
+              <div className="bg-[#0b6d41] px-5 py-4 flex items-center justify-between">
                 <h2 className="text-lg md:text-xl font-bold text-white">BIOCHEMISTRY</h2>
                 <span className="hidden sm:block text-white/60 text-xs font-medium uppercase tracking-widest">BDS</span>
               </div>
               <div className="grid md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-gray-200 bg-white">
                 <div className="px-5 py-5">
-                  <h3 className="text-sm font-bold text-[#006837] uppercase tracking-wide mb-3 flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-[#006837] inline-block"></span>
+                  <h3 className="text-sm font-bold text-[#0b6d41] uppercase tracking-wide mb-3 flex items-center gap-2">
+                    <span className="w-2 h-2 rounded-full bg-[#0b6d41] inline-block"></span>
                     Knowledge and Understanding
                   </h3>
                   <ul className="space-y-2">
@@ -409,15 +409,15 @@ export default function LearningOutcomes() {
                       "To acquire knowledge on fundamental chemical principles involved in body mechanism upon which life process depends",
                     ].map((item, i) => (
                       <li key={i} className="flex gap-2 items-start text-gray-600 text-sm leading-relaxed">
-                        <span className="flex-shrink-0 text-[#7cb983] font-bold mt-0.5">›</span>
+                        <span className="flex-shrink-0 text-[#0b6d41] font-bold mt-0.5">›</span>
                         <span>{item}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
                 <div className="px-5 py-5 bg-[#FBFBEE]">
-                  <h3 className="text-sm font-bold text-[#006837] uppercase tracking-wide mb-3 flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-[#7cb983] inline-block"></span>
+                  <h3 className="text-sm font-bold text-[#0b6d41] uppercase tracking-wide mb-3 flex items-center gap-2">
+                    <span className="w-2 h-2 rounded-full bg-[#ffde59] inline-block"></span>
                     Skills
                   </h3>
                   <ul className="space-y-2">
@@ -430,7 +430,7 @@ export default function LearningOutcomes() {
                       "To interpret the result of serum urea, creatinine, total protein, bilirubin",
                     ].map((item, i) => (
                       <li key={i} className="flex gap-2 items-start text-gray-600 text-sm leading-relaxed">
-                        <span className="flex-shrink-0 text-[#7cb983] font-bold mt-0.5">›</span>
+                        <span className="flex-shrink-0 text-[#0b6d41] font-bold mt-0.5">›</span>
                         <span>{item}</span>
                       </li>
                     ))}
@@ -443,14 +443,14 @@ export default function LearningOutcomes() {
           {/* GENERAL MICROBIOLOGY */}
           <section className="mb-8">
             <div className="rounded-xl overflow-hidden shadow-sm border border-gray-200">
-              <div className="bg-[#006837] px-5 py-4 flex items-center justify-between">
+              <div className="bg-[#0b6d41] px-5 py-4 flex items-center justify-between">
                 <h2 className="text-lg md:text-xl font-bold text-white">GENERAL MICROBIOLOGY</h2>
                 <span className="hidden sm:block text-white/60 text-xs font-medium uppercase tracking-widest">BDS</span>
               </div>
               <div className="grid md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-gray-200 bg-white">
                 <div className="px-5 py-5">
-                  <h3 className="text-sm font-bold text-[#006837] uppercase tracking-wide mb-3 flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-[#006837] inline-block"></span>
+                  <h3 className="text-sm font-bold text-[#0b6d41] uppercase tracking-wide mb-3 flex items-center gap-2">
+                    <span className="w-2 h-2 rounded-full bg-[#0b6d41] inline-block"></span>
                     Knowledge and Understanding
                   </h3>
                   <ul className="space-y-2">
@@ -473,15 +473,15 @@ export default function LearningOutcomes() {
                       "To apply microbiological knowledge in practicing dental surgery to improve the oral and dental health of the patients.",
                     ].map((item, i) => (
                       <li key={i} className="flex gap-2 items-start text-gray-600 text-sm leading-relaxed">
-                        <span className="flex-shrink-0 text-[#7cb983] font-bold mt-0.5">›</span>
+                        <span className="flex-shrink-0 text-[#0b6d41] font-bold mt-0.5">›</span>
                         <span>{item}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
                 <div className="px-5 py-5 bg-[#FBFBEE]">
-                  <h3 className="text-sm font-bold text-[#006837] uppercase tracking-wide mb-3 flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-[#7cb983] inline-block"></span>
+                  <h3 className="text-sm font-bold text-[#0b6d41] uppercase tracking-wide mb-3 flex items-center gap-2">
+                    <span className="w-2 h-2 rounded-full bg-[#ffde59] inline-block"></span>
                     Skills
                   </h3>
                   <ul className="space-y-2">
@@ -493,7 +493,7 @@ export default function LearningOutcomes() {
                       "Knowledge about the importance of respiratory viruses with their pathogenesis, clinical importance, and lab diagnosis.",
                     ].map((item, i) => (
                       <li key={i} className="flex gap-2 items-start text-gray-600 text-sm leading-relaxed">
-                        <span className="flex-shrink-0 text-[#7cb983] font-bold mt-0.5">›</span>
+                        <span className="flex-shrink-0 text-[#0b6d41] font-bold mt-0.5">›</span>
                         <span>{item}</span>
                       </li>
                     ))}
@@ -506,14 +506,14 @@ export default function LearningOutcomes() {
           {/* GENERAL PATHOLOGY */}
           <section className="mb-8">
             <div className="rounded-xl overflow-hidden shadow-sm border border-gray-200">
-              <div className="bg-[#006837] px-5 py-4 flex items-center justify-between">
+              <div className="bg-[#0b6d41] px-5 py-4 flex items-center justify-between">
                 <h2 className="text-lg md:text-xl font-bold text-white">GENERAL PATHOLOGY</h2>
                 <span className="hidden sm:block text-white/60 text-xs font-medium uppercase tracking-widest">BDS</span>
               </div>
               <div className="grid md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-gray-200 bg-white">
                 <div className="px-5 py-5">
-                  <h3 className="text-sm font-bold text-[#006837] uppercase tracking-wide mb-3 flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-[#006837] inline-block"></span>
+                  <h3 className="text-sm font-bold text-[#0b6d41] uppercase tracking-wide mb-3 flex items-center gap-2">
+                    <span className="w-2 h-2 rounded-full bg-[#0b6d41] inline-block"></span>
                     Knowledge and Understanding
                   </h3>
                   <ul className="space-y-2">
@@ -531,15 +531,15 @@ export default function LearningOutcomes() {
                       "Knowledge about various hematologic disorders",
                     ].map((item, i) => (
                       <li key={i} className="flex gap-2 items-start text-gray-600 text-sm leading-relaxed">
-                        <span className="flex-shrink-0 text-[#7cb983] font-bold mt-0.5">›</span>
+                        <span className="flex-shrink-0 text-[#0b6d41] font-bold mt-0.5">›</span>
                         <span>{item}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
                 <div className="px-5 py-5 bg-[#FBFBEE]">
-                  <h3 className="text-sm font-bold text-[#006837] uppercase tracking-wide mb-3 flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-[#7cb983] inline-block"></span>
+                  <h3 className="text-sm font-bold text-[#0b6d41] uppercase tracking-wide mb-3 flex items-center gap-2">
+                    <span className="w-2 h-2 rounded-full bg-[#ffde59] inline-block"></span>
                     Skills
                   </h3>
                   <ul className="space-y-2">
@@ -558,7 +558,7 @@ export default function LearningOutcomes() {
                       "To interpret TC, DC, absolute values, ESR, platelet count, bone marrow examination, BT, CT, and PT and determine their clinical significance",
                     ].map((item, i) => (
                       <li key={i} className="flex gap-2 items-start text-gray-600 text-sm leading-relaxed">
-                        <span className="flex-shrink-0 text-[#7cb983] font-bold mt-0.5">›</span>
+                        <span className="flex-shrink-0 text-[#0b6d41] font-bold mt-0.5">›</span>
                         <span>{item}</span>
                       </li>
                     ))}
@@ -571,14 +571,14 @@ export default function LearningOutcomes() {
           {/* GENERAL& DENTAL PHARMACOLOGY & THERAPEUTICS */}
           <section className="mb-8">
             <div className="rounded-xl overflow-hidden shadow-sm border border-gray-200">
-              <div className="bg-[#006837] px-5 py-4 flex items-center justify-between">
+              <div className="bg-[#0b6d41] px-5 py-4 flex items-center justify-between">
                 <h2 className="text-lg md:text-xl font-bold text-white">GENERAL&amp; DENTAL PHARMACOLOGY &amp; THERAPEUTICS</h2>
                 <span className="hidden sm:block text-white/60 text-xs font-medium uppercase tracking-widest">BDS</span>
               </div>
               <div className="grid md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-gray-200 bg-white">
                 <div className="px-5 py-5">
-                  <h3 className="text-sm font-bold text-[#006837] uppercase tracking-wide mb-3 flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-[#006837] inline-block"></span>
+                  <h3 className="text-sm font-bold text-[#0b6d41] uppercase tracking-wide mb-3 flex items-center gap-2">
+                    <span className="w-2 h-2 rounded-full bg-[#0b6d41] inline-block"></span>
                     Knowledge and Understanding
                   </h3>
                   <ul className="space-y-2">
@@ -592,15 +592,15 @@ export default function LearningOutcomes() {
                       "Knowledge about medical emergencies of relevance to dental practice like syncope, angina pectoris, myocardial infarction, cardiac arrest, hypertension, hypotension, acute allergic reactions/anaphylaxis, insulin shock/diabetic coma, asthma",
                     ].map((item, i) => (
                       <li key={i} className="flex gap-2 items-start text-gray-600 text-sm leading-relaxed">
-                        <span className="flex-shrink-0 text-[#7cb983] font-bold mt-0.5">›</span>
+                        <span className="flex-shrink-0 text-[#0b6d41] font-bold mt-0.5">›</span>
                         <span>{item}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
                 <div className="px-5 py-5 bg-[#FBFBEE]">
-                  <h3 className="text-sm font-bold text-[#006837] uppercase tracking-wide mb-3 flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-[#7cb983] inline-block"></span>
+                  <h3 className="text-sm font-bold text-[#0b6d41] uppercase tracking-wide mb-3 flex items-center gap-2">
+                    <span className="w-2 h-2 rounded-full bg-[#ffde59] inline-block"></span>
                     Skills
                   </h3>
                   <ul className="space-y-2">
@@ -622,7 +622,7 @@ export default function LearningOutcomes() {
                       "State the pharmacology of sialogogues and antisialogogues",
                     ].map((item, i) => (
                       <li key={i} className="flex gap-2 items-start text-gray-600 text-sm leading-relaxed">
-                        <span className="flex-shrink-0 text-[#7cb983] font-bold mt-0.5">›</span>
+                        <span className="flex-shrink-0 text-[#0b6d41] font-bold mt-0.5">›</span>
                         <span>{item}</span>
                       </li>
                     ))}
@@ -635,14 +635,14 @@ export default function LearningOutcomes() {
           {/* DENTAL MATERIALS */}
           <section className="mb-8">
             <div className="rounded-xl overflow-hidden shadow-sm border border-gray-200">
-              <div className="bg-[#006837] px-5 py-4 flex items-center justify-between">
+              <div className="bg-[#0b6d41] px-5 py-4 flex items-center justify-between">
                 <h2 className="text-lg md:text-xl font-bold text-white">DENTAL MATERIALS</h2>
                 <span className="hidden sm:block text-white/60 text-xs font-medium uppercase tracking-widest">BDS</span>
               </div>
               <div className="grid md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-gray-200 bg-white">
                 <div className="px-5 py-5">
-                  <h3 className="text-sm font-bold text-[#006837] uppercase tracking-wide mb-3 flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-[#006837] inline-block"></span>
+                  <h3 className="text-sm font-bold text-[#0b6d41] uppercase tracking-wide mb-3 flex items-center gap-2">
+                    <span className="w-2 h-2 rounded-full bg-[#0b6d41] inline-block"></span>
                     Knowledge and Understanding
                   </h3>
                   <ul className="space-y-2">
@@ -661,15 +661,15 @@ export default function LearningOutcomes() {
                       "Knowledge about denture base materials, techniques of manipulation, maintenance, and allergic reactions",
                     ].map((item, i) => (
                       <li key={i} className="flex gap-2 items-start text-gray-600 text-sm leading-relaxed">
-                        <span className="flex-shrink-0 text-[#7cb983] font-bold mt-0.5">›</span>
+                        <span className="flex-shrink-0 text-[#0b6d41] font-bold mt-0.5">›</span>
                         <span>{item}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
                 <div className="px-5 py-5 bg-[#FBFBEE]">
-                  <h3 className="text-sm font-bold text-[#006837] uppercase tracking-wide mb-3 flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-[#7cb983] inline-block"></span>
+                  <h3 className="text-sm font-bold text-[#0b6d41] uppercase tracking-wide mb-3 flex items-center gap-2">
+                    <span className="w-2 h-2 rounded-full bg-[#ffde59] inline-block"></span>
                     Skills
                   </h3>
                   <ul className="space-y-2">
@@ -684,7 +684,7 @@ export default function LearningOutcomes() {
                       "Manipulate acrylic resin and construct denture base",
                     ].map((item, i) => (
                       <li key={i} className="flex gap-2 items-start text-gray-600 text-sm leading-relaxed">
-                        <span className="flex-shrink-0 text-[#7cb983] font-bold mt-0.5">›</span>
+                        <span className="flex-shrink-0 text-[#0b6d41] font-bold mt-0.5">›</span>
                         <span>{item}</span>
                       </li>
                     ))}
@@ -697,14 +697,14 @@ export default function LearningOutcomes() {
           {/* PRECLINICAL CONSERVATIVE DENTISTRY */}
           <section className="mb-8">
             <div className="rounded-xl overflow-hidden shadow-sm border border-gray-200">
-              <div className="bg-[#006837] px-5 py-4 flex items-center justify-between">
+              <div className="bg-[#0b6d41] px-5 py-4 flex items-center justify-between">
                 <h2 className="text-lg md:text-xl font-bold text-white">PRECLINICAL CONSERVATIVE DENTISTRY</h2>
                 <span className="hidden sm:block text-white/60 text-xs font-medium uppercase tracking-widest">BDS</span>
               </div>
               <div className="grid md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-gray-200 bg-white">
                 <div className="px-5 py-5">
-                  <h3 className="text-sm font-bold text-[#006837] uppercase tracking-wide mb-3 flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-[#006837] inline-block"></span>
+                  <h3 className="text-sm font-bold text-[#0b6d41] uppercase tracking-wide mb-3 flex items-center gap-2">
+                    <span className="w-2 h-2 rounded-full bg-[#0b6d41] inline-block"></span>
                     Knowledge and Understanding
                   </h3>
                   <ul className="space-y-2">
@@ -713,15 +713,15 @@ export default function LearningOutcomes() {
                       "Knowledge about the composition and properties of restorative materials",
                     ].map((item, i) => (
                       <li key={i} className="flex gap-2 items-start text-gray-600 text-sm leading-relaxed">
-                        <span className="flex-shrink-0 text-[#7cb983] font-bold mt-0.5">›</span>
+                        <span className="flex-shrink-0 text-[#0b6d41] font-bold mt-0.5">›</span>
                         <span>{item}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
                 <div className="px-5 py-5 bg-[#FBFBEE]">
-                  <h3 className="text-sm font-bold text-[#006837] uppercase tracking-wide mb-3 flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-[#7cb983] inline-block"></span>
+                  <h3 className="text-sm font-bold text-[#0b6d41] uppercase tracking-wide mb-3 flex items-center gap-2">
+                    <span className="w-2 h-2 rounded-full bg-[#ffde59] inline-block"></span>
                     Skills
                   </h3>
                   <ul className="space-y-2">
@@ -735,7 +735,7 @@ export default function LearningOutcomes() {
                       "To describe the pit and fissure sealants",
                     ].map((item, i) => (
                       <li key={i} className="flex gap-2 items-start text-gray-600 text-sm leading-relaxed">
-                        <span className="flex-shrink-0 text-[#7cb983] font-bold mt-0.5">›</span>
+                        <span className="flex-shrink-0 text-[#0b6d41] font-bold mt-0.5">›</span>
                         <span>{item}</span>
                       </li>
                     ))}
@@ -748,14 +748,14 @@ export default function LearningOutcomes() {
           {/* PRECLINICAL PROSTHODONTICS */}
           <section className="mb-8">
             <div className="rounded-xl overflow-hidden shadow-sm border border-gray-200">
-              <div className="bg-[#006837] px-5 py-4 flex items-center justify-between">
+              <div className="bg-[#0b6d41] px-5 py-4 flex items-center justify-between">
                 <h2 className="text-lg md:text-xl font-bold text-white">PRECLINICAL PROSTHODONTICS</h2>
                 <span className="hidden sm:block text-white/60 text-xs font-medium uppercase tracking-widest">BDS</span>
               </div>
               <div className="grid md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-gray-200 bg-white">
                 <div className="px-5 py-5">
-                  <h3 className="text-sm font-bold text-[#006837] uppercase tracking-wide mb-3 flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-[#006837] inline-block"></span>
+                  <h3 className="text-sm font-bold text-[#0b6d41] uppercase tracking-wide mb-3 flex items-center gap-2">
+                    <span className="w-2 h-2 rounded-full bg-[#0b6d41] inline-block"></span>
                     Knowledge and Understanding
                   </h3>
                   <ul className="space-y-2">
@@ -767,15 +767,15 @@ export default function LearningOutcomes() {
                       "Demonstrate understanding of the properties and composition of elastomeric impression materials",
                     ].map((item, i) => (
                       <li key={i} className="flex gap-2 items-start text-gray-600 text-sm leading-relaxed">
-                        <span className="flex-shrink-0 text-[#7cb983] font-bold mt-0.5">›</span>
+                        <span className="flex-shrink-0 text-[#0b6d41] font-bold mt-0.5">›</span>
                         <span>{item}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
                 <div className="px-5 py-5 bg-[#FBFBEE]">
-                  <h3 className="text-sm font-bold text-[#006837] uppercase tracking-wide mb-3 flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-[#7cb983] inline-block"></span>
+                  <h3 className="text-sm font-bold text-[#0b6d41] uppercase tracking-wide mb-3 flex items-center gap-2">
+                    <span className="w-2 h-2 rounded-full bg-[#ffde59] inline-block"></span>
                     Skills
                   </h3>
                   <ul className="space-y-2">
@@ -791,7 +791,7 @@ export default function LearningOutcomes() {
                       "Technique to repair fractured denture /mode",
                     ].map((item, i) => (
                       <li key={i} className="flex gap-2 items-start text-gray-600 text-sm leading-relaxed">
-                        <span className="flex-shrink-0 text-[#7cb983] font-bold mt-0.5">›</span>
+                        <span className="flex-shrink-0 text-[#0b6d41] font-bold mt-0.5">›</span>
                         <span>{item}</span>
                       </li>
                     ))}
@@ -804,14 +804,14 @@ export default function LearningOutcomes() {
           {/* GENERAL MEDICINE */}
           <section className="mb-8">
             <div className="rounded-xl overflow-hidden shadow-sm border border-gray-200">
-              <div className="bg-[#006837] px-5 py-4 flex items-center justify-between">
+              <div className="bg-[#0b6d41] px-5 py-4 flex items-center justify-between">
                 <h2 className="text-lg md:text-xl font-bold text-white">GENERAL MEDICINE</h2>
                 <span className="hidden sm:block text-white/60 text-xs font-medium uppercase tracking-widest">BDS</span>
               </div>
               <div className="grid md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-gray-200 bg-white">
                 <div className="px-5 py-5">
-                  <h3 className="text-sm font-bold text-[#006837] uppercase tracking-wide mb-3 flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-[#006837] inline-block"></span>
+                  <h3 className="text-sm font-bold text-[#0b6d41] uppercase tracking-wide mb-3 flex items-center gap-2">
+                    <span className="w-2 h-2 rounded-full bg-[#0b6d41] inline-block"></span>
                     Knowledge and Understanding
                   </h3>
                   <ul className="space-y-2">
@@ -821,15 +821,15 @@ export default function LearningOutcomes() {
                       "Knowledge to correlate the clinical symptoms and physical signs to make a provisional diagnosis of common diseases and suggest relevant investigation.",
                     ].map((item, i) => (
                       <li key={i} className="flex gap-2 items-start text-gray-600 text-sm leading-relaxed">
-                        <span className="flex-shrink-0 text-[#7cb983] font-bold mt-0.5">›</span>
+                        <span className="flex-shrink-0 text-[#0b6d41] font-bold mt-0.5">›</span>
                         <span>{item}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
                 <div className="px-5 py-5 bg-[#FBFBEE]">
-                  <h3 className="text-sm font-bold text-[#006837] uppercase tracking-wide mb-3 flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-[#7cb983] inline-block"></span>
+                  <h3 className="text-sm font-bold text-[#0b6d41] uppercase tracking-wide mb-3 flex items-center gap-2">
+                    <span className="w-2 h-2 rounded-full bg-[#ffde59] inline-block"></span>
                     Skill
                   </h3>
                   <ul className="space-y-2">
@@ -844,7 +844,7 @@ export default function LearningOutcomes() {
                       "To acquire skills in performing intramuscular and intravenous injections.",
                     ].map((item, i) => (
                       <li key={i} className="flex gap-2 items-start text-gray-600 text-sm leading-relaxed">
-                        <span className="flex-shrink-0 text-[#7cb983] font-bold mt-0.5">›</span>
+                        <span className="flex-shrink-0 text-[#0b6d41] font-bold mt-0.5">›</span>
                         <span>{item}</span>
                       </li>
                     ))}
@@ -857,14 +857,14 @@ export default function LearningOutcomes() {
           {/* GENERAL SURGERY */}
           <section className="mb-8">
             <div className="rounded-xl overflow-hidden shadow-sm border border-gray-200">
-              <div className="bg-[#006837] px-5 py-4 flex items-center justify-between">
+              <div className="bg-[#0b6d41] px-5 py-4 flex items-center justify-between">
                 <h2 className="text-lg md:text-xl font-bold text-white">GENERAL SURGERY</h2>
                 <span className="hidden sm:block text-white/60 text-xs font-medium uppercase tracking-widest">BDS</span>
               </div>
               <div className="grid md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-gray-200 bg-white">
                 <div className="px-5 py-5">
-                  <h3 className="text-sm font-bold text-[#006837] uppercase tracking-wide mb-3 flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-[#006837] inline-block"></span>
+                  <h3 className="text-sm font-bold text-[#0b6d41] uppercase tracking-wide mb-3 flex items-center gap-2">
+                    <span className="w-2 h-2 rounded-full bg-[#0b6d41] inline-block"></span>
                     Knowledge and Understanding
                   </h3>
                   <ul className="space-y-2">
@@ -876,15 +876,15 @@ export default function LearningOutcomes() {
                       "Region and to learn surgical principles.",
                     ].map((item, i) => (
                       <li key={i} className="flex gap-2 items-start text-gray-600 text-sm leading-relaxed">
-                        <span className="flex-shrink-0 text-[#7cb983] font-bold mt-0.5">›</span>
+                        <span className="flex-shrink-0 text-[#0b6d41] font-bold mt-0.5">›</span>
                         <span>{item}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
                 <div className="px-5 py-5 bg-[#FBFBEE]">
-                  <h3 className="text-sm font-bold text-[#006837] uppercase tracking-wide mb-3 flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-[#7cb983] inline-block"></span>
+                  <h3 className="text-sm font-bold text-[#0b6d41] uppercase tracking-wide mb-3 flex items-center gap-2">
+                    <span className="w-2 h-2 rounded-full bg-[#ffde59] inline-block"></span>
                     Skills
                   </h3>
                   <ul className="space-y-2">
@@ -897,7 +897,7 @@ export default function LearningOutcomes() {
                       "To know about the universal precautions to be taken against HIV, Hepatitis.",
                     ].map((item, i) => (
                       <li key={i} className="flex gap-2 items-start text-gray-600 text-sm leading-relaxed">
-                        <span className="flex-shrink-0 text-[#7cb983] font-bold mt-0.5">›</span>
+                        <span className="flex-shrink-0 text-[#0b6d41] font-bold mt-0.5">›</span>
                         <span>{item}</span>
                       </li>
                     ))}
@@ -910,14 +910,14 @@ export default function LearningOutcomes() {
           {/* ORAL PATHOLOGY AND ORAL MICROBIOLOGY */}
           <section className="mb-8">
             <div className="rounded-xl overflow-hidden shadow-sm border border-gray-200">
-              <div className="bg-[#006837] px-5 py-4 flex items-center justify-between">
+              <div className="bg-[#0b6d41] px-5 py-4 flex items-center justify-between">
                 <h2 className="text-lg md:text-xl font-bold text-white">ORAL PATHOLOGY AND ORAL MICROBIOLOGY</h2>
                 <span className="hidden sm:block text-white/60 text-xs font-medium uppercase tracking-widest">BDS</span>
               </div>
               <div className="grid md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-gray-200 bg-white">
                 <div className="px-5 py-5">
-                  <h3 className="text-sm font-bold text-[#006837] uppercase tracking-wide mb-3 flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-[#006837] inline-block"></span>
+                  <h3 className="text-sm font-bold text-[#0b6d41] uppercase tracking-wide mb-3 flex items-center gap-2">
+                    <span className="w-2 h-2 rounded-full bg-[#0b6d41] inline-block"></span>
                     Knowledge and Understanding
                   </h3>
                   <ul className="space-y-2">
@@ -929,15 +929,15 @@ export default function LearningOutcomes() {
                       "To know about developmental disturbances of oral soft tissues and para-oral tissues",
                     ].map((item, i) => (
                       <li key={i} className="flex gap-2 items-start text-gray-600 text-sm leading-relaxed">
-                        <span className="flex-shrink-0 text-[#7cb983] font-bold mt-0.5">›</span>
+                        <span className="flex-shrink-0 text-[#0b6d41] font-bold mt-0.5">›</span>
                         <span>{item}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
                 <div className="px-5 py-5 bg-[#FBFBEE]">
-                  <h3 className="text-sm font-bold text-[#006837] uppercase tracking-wide mb-3 flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-[#7cb983] inline-block"></span>
+                  <h3 className="text-sm font-bold text-[#0b6d41] uppercase tracking-wide mb-3 flex items-center gap-2">
+                    <span className="w-2 h-2 rounded-full bg-[#ffde59] inline-block"></span>
                     Skills
                   </h3>
                   <ul className="space-y-2">
@@ -949,7 +949,7 @@ export default function LearningOutcomes() {
                       "Preservation of surgical specimens for immunohistochemistry",
                     ].map((item, i) => (
                       <li key={i} className="flex gap-2 items-start text-gray-600 text-sm leading-relaxed">
-                        <span className="flex-shrink-0 text-[#7cb983] font-bold mt-0.5">›</span>
+                        <span className="flex-shrink-0 text-[#0b6d41] font-bold mt-0.5">›</span>
                         <span>{item}</span>
                       </li>
                     ))}
@@ -962,14 +962,14 @@ export default function LearningOutcomes() {
           {/* ORAL MEDICINE AND RADIOLOGY */}
           <section className="mb-8">
             <div className="rounded-xl overflow-hidden shadow-sm border border-gray-200">
-              <div className="bg-[#006837] px-5 py-4 flex items-center justify-between">
+              <div className="bg-[#0b6d41] px-5 py-4 flex items-center justify-between">
                 <h2 className="text-lg md:text-xl font-bold text-white">ORAL MEDICINE AND RADIOLOGY</h2>
                 <span className="hidden sm:block text-white/60 text-xs font-medium uppercase tracking-widest">BDS</span>
               </div>
               <div className="grid md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-gray-200 bg-white">
                 <div className="px-5 py-5">
-                  <h3 className="text-sm font-bold text-[#006837] uppercase tracking-wide mb-3 flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-[#006837] inline-block"></span>
+                  <h3 className="text-sm font-bold text-[#0b6d41] uppercase tracking-wide mb-3 flex items-center gap-2">
+                    <span className="w-2 h-2 rounded-full bg-[#0b6d41] inline-block"></span>
                     Knowledge and Understanding
                   </h3>
                   <ul className="space-y-2">
@@ -983,15 +983,15 @@ export default function LearningOutcomes() {
                       "Knowledge about causes and complications of xerostomia",
                     ].map((item, i) => (
                       <li key={i} className="flex gap-2 items-start text-gray-600 text-sm leading-relaxed">
-                        <span className="flex-shrink-0 text-[#7cb983] font-bold mt-0.5">›</span>
+                        <span className="flex-shrink-0 text-[#0b6d41] font-bold mt-0.5">›</span>
                         <span>{item}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
                 <div className="px-5 py-5 bg-[#FBFBEE]">
-                  <h3 className="text-sm font-bold text-[#006837] uppercase tracking-wide mb-3 flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-[#7cb983] inline-block"></span>
+                  <h3 className="text-sm font-bold text-[#0b6d41] uppercase tracking-wide mb-3 flex items-center gap-2">
+                    <span className="w-2 h-2 rounded-full bg-[#ffde59] inline-block"></span>
                     Skills
                   </h3>
                   <ul className="space-y-2">
@@ -1005,7 +1005,7 @@ export default function LearningOutcomes() {
                       "Ability to take intraoral periapical radiographs and orthopantomograms and interpret",
                     ].map((item, i) => (
                       <li key={i} className="flex gap-2 items-start text-gray-600 text-sm leading-relaxed">
-                        <span className="flex-shrink-0 text-[#7cb983] font-bold mt-0.5">›</span>
+                        <span className="flex-shrink-0 text-[#0b6d41] font-bold mt-0.5">›</span>
                         <span>{item}</span>
                       </li>
                     ))}
@@ -1018,14 +1018,14 @@ export default function LearningOutcomes() {
           {/* CONSERVATIVE DENTISTRY AND ENDODONTICS */}
           <section className="mb-8">
             <div className="rounded-xl overflow-hidden shadow-sm border border-gray-200">
-              <div className="bg-[#006837] px-5 py-4 flex items-center justify-between">
+              <div className="bg-[#0b6d41] px-5 py-4 flex items-center justify-between">
                 <h2 className="text-lg md:text-xl font-bold text-white">CONSERVATIVE DENTISTRY AND ENDODONTICS</h2>
                 <span className="hidden sm:block text-white/60 text-xs font-medium uppercase tracking-widest">BDS</span>
               </div>
               <div className="grid md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-gray-200 bg-white">
                 <div className="px-5 py-5">
-                  <h3 className="text-sm font-bold text-[#006837] uppercase tracking-wide mb-3 flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-[#006837] inline-block"></span>
+                  <h3 className="text-sm font-bold text-[#0b6d41] uppercase tracking-wide mb-3 flex items-center gap-2">
+                    <span className="w-2 h-2 rounded-full bg-[#0b6d41] inline-block"></span>
                     Knowledge and Understanding
                   </h3>
                   <ul className="space-y-2">
@@ -1036,15 +1036,15 @@ export default function LearningOutcomes() {
                       "Knowledge about dental radiology",
                     ].map((item, i) => (
                       <li key={i} className="flex gap-2 items-start text-gray-600 text-sm leading-relaxed">
-                        <span className="flex-shrink-0 text-[#7cb983] font-bold mt-0.5">›</span>
+                        <span className="flex-shrink-0 text-[#0b6d41] font-bold mt-0.5">›</span>
                         <span>{item}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
                 <div className="px-5 py-5 bg-[#FBFBEE]">
-                  <h3 className="text-sm font-bold text-[#006837] uppercase tracking-wide mb-3 flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-[#7cb983] inline-block"></span>
+                  <h3 className="text-sm font-bold text-[#0b6d41] uppercase tracking-wide mb-3 flex items-center gap-2">
+                    <span className="w-2 h-2 rounded-full bg-[#ffde59] inline-block"></span>
                     Skill
                   </h3>
                   <ul className="space-y-2">
@@ -1059,7 +1059,7 @@ export default function LearningOutcomes() {
                       "Evidence-Based Dentistry (EBD) with scientific understanding and thought",
                     ].map((item, i) => (
                       <li key={i} className="flex gap-2 items-start text-gray-600 text-sm leading-relaxed">
-                        <span className="flex-shrink-0 text-[#7cb983] font-bold mt-0.5">›</span>
+                        <span className="flex-shrink-0 text-[#0b6d41] font-bold mt-0.5">›</span>
                         <span>{item}</span>
                       </li>
                     ))}
@@ -1072,14 +1072,14 @@ export default function LearningOutcomes() {
           {/* PERIODONTICS */}
           <section className="mb-8">
             <div className="rounded-xl overflow-hidden shadow-sm border border-gray-200">
-              <div className="bg-[#006837] px-5 py-4 flex items-center justify-between">
+              <div className="bg-[#0b6d41] px-5 py-4 flex items-center justify-between">
                 <h2 className="text-lg md:text-xl font-bold text-white">PERIODONTICS</h2>
                 <span className="hidden sm:block text-white/60 text-xs font-medium uppercase tracking-widest">BDS</span>
               </div>
               <div className="grid md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-gray-200 bg-white">
                 <div className="px-5 py-5">
-                  <h3 className="text-sm font-bold text-[#006837] uppercase tracking-wide mb-3 flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-[#006837] inline-block"></span>
+                  <h3 className="text-sm font-bold text-[#0b6d41] uppercase tracking-wide mb-3 flex items-center gap-2">
+                    <span className="w-2 h-2 rounded-full bg-[#0b6d41] inline-block"></span>
                     Knowledge and Understanding
                   </h3>
                   <ul className="space-y-2">
@@ -1093,15 +1093,15 @@ export default function LearningOutcomes() {
                       "Knowledge about the basic concepts and periodontal aspects of dental implants and management of periodontal health of implants",
                     ].map((item, i) => (
                       <li key={i} className="flex gap-2 items-start text-gray-600 text-sm leading-relaxed">
-                        <span className="flex-shrink-0 text-[#7cb983] font-bold mt-0.5">›</span>
+                        <span className="flex-shrink-0 text-[#0b6d41] font-bold mt-0.5">›</span>
                         <span>{item}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
                 <div className="px-5 py-5 bg-[#FBFBEE]">
-                  <h3 className="text-sm font-bold text-[#006837] uppercase tracking-wide mb-3 flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-[#7cb983] inline-block"></span>
+                  <h3 className="text-sm font-bold text-[#0b6d41] uppercase tracking-wide mb-3 flex items-center gap-2">
+                    <span className="w-2 h-2 rounded-full bg-[#ffde59] inline-block"></span>
                     Skills
                   </h3>
                   <ul className="space-y-2">
@@ -1116,7 +1116,7 @@ export default function LearningOutcomes() {
                       "To apply knowledge of Periodontology to integrate with a multidisciplinary treatment approach",
                     ].map((item, i) => (
                       <li key={i} className="flex gap-2 items-start text-gray-600 text-sm leading-relaxed">
-                        <span className="flex-shrink-0 text-[#7cb983] font-bold mt-0.5">›</span>
+                        <span className="flex-shrink-0 text-[#0b6d41] font-bold mt-0.5">›</span>
                         <span>{item}</span>
                       </li>
                     ))}
@@ -1129,14 +1129,14 @@ export default function LearningOutcomes() {
           {/* PROSTHODONTICS AND CROWN AND BRIDGE */}
           <section className="mb-8">
             <div className="rounded-xl overflow-hidden shadow-sm border border-gray-200">
-              <div className="bg-[#006837] px-5 py-4 flex items-center justify-between">
+              <div className="bg-[#0b6d41] px-5 py-4 flex items-center justify-between">
                 <h2 className="text-lg md:text-xl font-bold text-white">PROSTHODONTICS AND CROWN AND BRIDGE</h2>
                 <span className="hidden sm:block text-white/60 text-xs font-medium uppercase tracking-widest">BDS</span>
               </div>
               <div className="grid md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-gray-200 bg-white">
                 <div className="px-5 py-5">
-                  <h3 className="text-sm font-bold text-[#006837] uppercase tracking-wide mb-3 flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-[#006837] inline-block"></span>
+                  <h3 className="text-sm font-bold text-[#0b6d41] uppercase tracking-wide mb-3 flex items-center gap-2">
+                    <span className="w-2 h-2 rounded-full bg-[#0b6d41] inline-block"></span>
                     Knowledge and Understanding
                   </h3>
                   <ul className="space-y-2">
@@ -1152,15 +1152,15 @@ export default function LearningOutcomes() {
                       "To understand the basic principles of diagnosis, treatment planning of maxillofacial defects",
                     ].map((item, i) => (
                       <li key={i} className="flex gap-2 items-start text-gray-600 text-sm leading-relaxed">
-                        <span className="flex-shrink-0 text-[#7cb983] font-bold mt-0.5">›</span>
+                        <span className="flex-shrink-0 text-[#0b6d41] font-bold mt-0.5">›</span>
                         <span>{item}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
                 <div className="px-5 py-5 bg-[#FBFBEE]">
-                  <h3 className="text-sm font-bold text-[#006837] uppercase tracking-wide mb-3 flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-[#7cb983] inline-block"></span>
+                  <h3 className="text-sm font-bold text-[#0b6d41] uppercase tracking-wide mb-3 flex items-center gap-2">
+                    <span className="w-2 h-2 rounded-full bg-[#ffde59] inline-block"></span>
                     Skills
                   </h3>
                   <ul className="space-y-2">
@@ -1174,7 +1174,7 @@ export default function LearningOutcomes() {
                       "Skilled enough to perform various impression techniques",
                     ].map((item, i) => (
                       <li key={i} className="flex gap-2 items-start text-gray-600 text-sm leading-relaxed">
-                        <span className="flex-shrink-0 text-[#7cb983] font-bold mt-0.5">›</span>
+                        <span className="flex-shrink-0 text-[#0b6d41] font-bold mt-0.5">›</span>
                         <span>{item}</span>
                       </li>
                     ))}
@@ -1187,14 +1187,14 @@ export default function LearningOutcomes() {
           {/* ORAL AND MAXILLOFACIAL SURGERY */}
           <section className="mb-8">
             <div className="rounded-xl overflow-hidden shadow-sm border border-gray-200">
-              <div className="bg-[#006837] px-5 py-4 flex items-center justify-between">
+              <div className="bg-[#0b6d41] px-5 py-4 flex items-center justify-between">
                 <h2 className="text-lg md:text-xl font-bold text-white">ORAL AND MAXILLOFACIAL SURGERY</h2>
                 <span className="hidden sm:block text-white/60 text-xs font-medium uppercase tracking-widest">BDS</span>
               </div>
               <div className="grid md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-gray-200 bg-white">
                 <div className="px-5 py-5">
-                  <h3 className="text-sm font-bold text-[#006837] uppercase tracking-wide mb-3 flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-[#006837] inline-block"></span>
+                  <h3 className="text-sm font-bold text-[#0b6d41] uppercase tracking-wide mb-3 flex items-center gap-2">
+                    <span className="w-2 h-2 rounded-full bg-[#0b6d41] inline-block"></span>
                     Knowledge and Understanding
                   </h3>
                   <ul className="space-y-2">
@@ -1207,15 +1207,15 @@ export default function LearningOutcomes() {
                       "To understand the principles of inpatient management",
                     ].map((item, i) => (
                       <li key={i} className="flex gap-2 items-start text-gray-600 text-sm leading-relaxed">
-                        <span className="flex-shrink-0 text-[#7cb983] font-bold mt-0.5">›</span>
+                        <span className="flex-shrink-0 text-[#0b6d41] font-bold mt-0.5">›</span>
                         <span>{item}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
                 <div className="px-5 py-5 bg-[#FBFBEE]">
-                  <h3 className="text-sm font-bold text-[#006837] uppercase tracking-wide mb-3 flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-[#7cb983] inline-block"></span>
+                  <h3 className="text-sm font-bold text-[#0b6d41] uppercase tracking-wide mb-3 flex items-center gap-2">
+                    <span className="w-2 h-2 rounded-full bg-[#ffde59] inline-block"></span>
                     Skill
                   </h3>
                   <ul className="space-y-2">
@@ -1233,7 +1233,7 @@ export default function LearningOutcomes() {
                       "To maintain a high standard of professional ethics",
                     ].map((item, i) => (
                       <li key={i} className="flex gap-2 items-start text-gray-600 text-sm leading-relaxed">
-                        <span className="flex-shrink-0 text-[#7cb983] font-bold mt-0.5">›</span>
+                        <span className="flex-shrink-0 text-[#0b6d41] font-bold mt-0.5">›</span>
                         <span>{item}</span>
                       </li>
                     ))}
@@ -1246,14 +1246,14 @@ export default function LearningOutcomes() {
           {/* ORTHODONTICS AND DENTOFACIAL ORTHOPEDICS */}
           <section className="mb-8">
             <div className="rounded-xl overflow-hidden shadow-sm border border-gray-200">
-              <div className="bg-[#006837] px-5 py-4 flex items-center justify-between">
+              <div className="bg-[#0b6d41] px-5 py-4 flex items-center justify-between">
                 <h2 className="text-lg md:text-xl font-bold text-white">ORTHODONTICS AND DENTOFACIAL ORTHOPEDICS</h2>
                 <span className="hidden sm:block text-white/60 text-xs font-medium uppercase tracking-widest">BDS</span>
               </div>
               <div className="grid md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-gray-200 bg-white">
                 <div className="px-5 py-5">
-                  <h3 className="text-sm font-bold text-[#006837] uppercase tracking-wide mb-3 flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-[#006837] inline-block"></span>
+                  <h3 className="text-sm font-bold text-[#0b6d41] uppercase tracking-wide mb-3 flex items-center gap-2">
+                    <span className="w-2 h-2 rounded-full bg-[#0b6d41] inline-block"></span>
                     Knowledge and Understanding
                   </h3>
                   <ul className="space-y-2">
@@ -1265,15 +1265,15 @@ export default function LearningOutcomes() {
                       "Understand the principles of cephalometric tracing",
                     ].map((item, i) => (
                       <li key={i} className="flex gap-2 items-start text-gray-600 text-sm leading-relaxed">
-                        <span className="flex-shrink-0 text-[#7cb983] font-bold mt-0.5">›</span>
+                        <span className="flex-shrink-0 text-[#0b6d41] font-bold mt-0.5">›</span>
                         <span>{item}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
                 <div className="px-5 py-5 bg-[#FBFBEE]">
-                  <h3 className="text-sm font-bold text-[#006837] uppercase tracking-wide mb-3 flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-[#7cb983] inline-block"></span>
+                  <h3 className="text-sm font-bold text-[#0b6d41] uppercase tracking-wide mb-3 flex items-center gap-2">
+                    <span className="w-2 h-2 rounded-full bg-[#ffde59] inline-block"></span>
                     Skills
                   </h3>
                   <ul className="space-y-2">
@@ -1294,7 +1294,7 @@ export default function LearningOutcomes() {
                       "To evaluate the psychological and social impact of abnormal growth and malocclusion",
                     ].map((item, i) => (
                       <li key={i} className="flex gap-2 items-start text-gray-600 text-sm leading-relaxed">
-                        <span className="flex-shrink-0 text-[#7cb983] font-bold mt-0.5">›</span>
+                        <span className="flex-shrink-0 text-[#0b6d41] font-bold mt-0.5">›</span>
                         <span>{item}</span>
                       </li>
                     ))}
@@ -1307,14 +1307,14 @@ export default function LearningOutcomes() {
           {/* PEDODONTICS AND PREVENTIVE DENTISTRY */}
           <section className="mb-8">
             <div className="rounded-xl overflow-hidden shadow-sm border border-gray-200">
-              <div className="bg-[#006837] px-5 py-4 flex items-center justify-between">
+              <div className="bg-[#0b6d41] px-5 py-4 flex items-center justify-between">
                 <h2 className="text-lg md:text-xl font-bold text-white">PEDODONTICS AND PREVENTIVE DENTISTRY</h2>
                 <span className="hidden sm:block text-white/60 text-xs font-medium uppercase tracking-widest">BDS</span>
               </div>
               <div className="grid md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-gray-200 bg-white">
                 <div className="px-5 py-5">
-                  <h3 className="text-sm font-bold text-[#006837] uppercase tracking-wide mb-3 flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-[#006837] inline-block"></span>
+                  <h3 className="text-sm font-bold text-[#0b6d41] uppercase tracking-wide mb-3 flex items-center gap-2">
+                    <span className="w-2 h-2 rounded-full bg-[#0b6d41] inline-block"></span>
                     Knowledge and Understanding
                   </h3>
                   <ul className="space-y-2">
@@ -1325,15 +1325,15 @@ export default function LearningOutcomes() {
                       "Understanding simple surgical procedures like excision of cysts, epulis, and ranula",
                     ].map((item, i) => (
                       <li key={i} className="flex gap-2 items-start text-gray-600 text-sm leading-relaxed">
-                        <span className="flex-shrink-0 text-[#7cb983] font-bold mt-0.5">›</span>
+                        <span className="flex-shrink-0 text-[#0b6d41] font-bold mt-0.5">›</span>
                         <span>{item}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
                 <div className="px-5 py-5 bg-[#FBFBEE]">
-                  <h3 className="text-sm font-bold text-[#006837] uppercase tracking-wide mb-3 flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-[#7cb983] inline-block"></span>
+                  <h3 className="text-sm font-bold text-[#0b6d41] uppercase tracking-wide mb-3 flex items-center gap-2">
+                    <span className="w-2 h-2 rounded-full bg-[#ffde59] inline-block"></span>
                     Skills
                   </h3>
                   <ul className="space-y-2">
@@ -1354,7 +1354,7 @@ export default function LearningOutcomes() {
                       "To diagnose, manage and refer patients with communicative disorders",
                     ].map((item, i) => (
                       <li key={i} className="flex gap-2 items-start text-gray-600 text-sm leading-relaxed">
-                        <span className="flex-shrink-0 text-[#7cb983] font-bold mt-0.5">›</span>
+                        <span className="flex-shrink-0 text-[#0b6d41] font-bold mt-0.5">›</span>
                         <span>{item}</span>
                       </li>
                     ))}
@@ -1367,14 +1367,14 @@ export default function LearningOutcomes() {
           {/* PUBLIC HEALTH DENTISTRY */}
           <section className="mb-8">
             <div className="rounded-xl overflow-hidden shadow-sm border border-gray-200">
-              <div className="bg-[#006837] px-5 py-4 flex items-center justify-between">
+              <div className="bg-[#0b6d41] px-5 py-4 flex items-center justify-between">
                 <h2 className="text-lg md:text-xl font-bold text-white">PUBLIC HEALTH DENTISTRY</h2>
                 <span className="hidden sm:block text-white/60 text-xs font-medium uppercase tracking-widest">BDS</span>
               </div>
               <div className="grid md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-gray-200 bg-white">
                 <div className="px-5 py-5">
-                  <h3 className="text-sm font-bold text-[#006837] uppercase tracking-wide mb-3 flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-[#006837] inline-block"></span>
+                  <h3 className="text-sm font-bold text-[#0b6d41] uppercase tracking-wide mb-3 flex items-center gap-2">
+                    <span className="w-2 h-2 rounded-full bg-[#0b6d41] inline-block"></span>
                     Knowledge and Understanding
                   </h3>
                   <ul className="space-y-2">
@@ -1385,15 +1385,15 @@ export default function LearningOutcomes() {
                       "To understand the concept of dental jurisprudence and address the legal issues in dentistryDemonstrate knowledge of the social and psychological patterns of disease causation and its management accordingly",
                     ].map((item, i) => (
                       <li key={i} className="flex gap-2 items-start text-gray-600 text-sm leading-relaxed">
-                        <span className="flex-shrink-0 text-[#7cb983] font-bold mt-0.5">›</span>
+                        <span className="flex-shrink-0 text-[#0b6d41] font-bold mt-0.5">›</span>
                         <span>{item}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
                 <div className="px-5 py-5 bg-[#FBFBEE]">
-                  <h3 className="text-sm font-bold text-[#006837] uppercase tracking-wide mb-3 flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-[#7cb983] inline-block"></span>
+                  <h3 className="text-sm font-bold text-[#0b6d41] uppercase tracking-wide mb-3 flex items-center gap-2">
+                    <span className="w-2 h-2 rounded-full bg-[#ffde59] inline-block"></span>
                     Skills
                   </h3>
                   <ul className="space-y-2">
@@ -1408,7 +1408,7 @@ export default function LearningOutcomes() {
                       "To promote health promotional materials such as posters, festoons, leaflets, handbills, banners, etc.",
                     ].map((item, i) => (
                       <li key={i} className="flex gap-2 items-start text-gray-600 text-sm leading-relaxed">
-                        <span className="flex-shrink-0 text-[#7cb983] font-bold mt-0.5">›</span>
+                        <span className="flex-shrink-0 text-[#0b6d41] font-bold mt-0.5">›</span>
                         <span>{item}</span>
                       </li>
                     ))}
@@ -1420,16 +1420,16 @@ export default function LearningOutcomes() {
 
           {/* COURSE OUTCOME - MDS PERIODONTICS */}
           <section className="mb-10">
-            <div className="rounded-2xl overflow-hidden shadow-md border border-[#006837]/20">
-              <div className="bg-[#002309] px-6 py-5 flex items-center gap-3">
-                <span className="bg-[#7cb983] text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">MDS</span>
+            <div className="rounded-2xl overflow-hidden shadow-md border border-[#0b6d41]/20">
+              <div className="bg-[#032816] px-6 py-5 flex items-center gap-3">
+                <span className="bg-[#ffde59] text-[#032816] text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">MDS</span>
                 <h2 className="text-xl md:text-2xl font-bold text-white">COURSE OUTCOME – MDS PERIODONTICS</h2>
               </div>
               <div className="bg-white divide-y divide-gray-100">
                 {/* Knowledge */}
                 <div className="px-6 py-5">
-                  <h3 className="text-sm font-bold uppercase tracking-wide mb-3 flex items-center gap-2 text-[#006837]">
-                    <span className="w-3 h-3 rounded-sm bg-[#006837] inline-block"></span>
+                  <h3 className="text-sm font-bold uppercase tracking-wide mb-3 flex items-center gap-2 text-[#0b6d41]">
+                    <span className="w-3 h-3 rounded-sm bg-[#0b6d41] inline-block"></span>
                     Knowledge and Understanding
                   </h3>
                   <ul className="space-y-2">
@@ -1454,7 +1454,7 @@ export default function LearningOutcomes() {
                       "To sensitize learners about the interdisciplinary approach towards the soft tissues of the oral cavity with the help of specialists from other departments.",
                     ].map((item, i) => (
                       <li key={i} className="flex gap-2 items-start text-gray-600 text-sm leading-relaxed">
-                        <span className="flex-shrink-0 text-[#006837] font-bold mt-0.5">›</span>
+                        <span className="flex-shrink-0 text-[#0b6d41] font-bold mt-0.5">›</span>
                         <span>{item}</span>
                       </li>
                     ))}
@@ -1462,8 +1462,8 @@ export default function LearningOutcomes() {
                 </div>
                 {/* Skills */}
                 <div className="px-6 py-5 bg-[#FBFBEE]">
-                  <h3 className="text-sm font-bold uppercase tracking-wide mb-3 flex items-center gap-2 text-[#7cb983]">
-                    <span className="w-3 h-3 rounded-sm bg-[#7cb983] inline-block"></span>
+                  <h3 className="text-sm font-bold uppercase tracking-wide mb-3 flex items-center gap-2 text-[#0b6d41]">
+                    <span className="w-3 h-3 rounded-sm bg-[#ffde59] inline-block"></span>
                     Skills
                   </h3>
                   <ul className="space-y-2">
@@ -1480,7 +1480,7 @@ export default function LearningOutcomes() {
                       "• To learn the principal of lip repositioning and perio esthetics surgeries.",
                     ].map((item, i) => (
                       <li key={i} className="flex gap-2 items-start text-gray-600 text-sm leading-relaxed">
-                        <span className="flex-shrink-0 text-[#7cb983] font-bold mt-0.5">›</span>
+                        <span className="flex-shrink-0 text-[#0b6d41] font-bold mt-0.5">›</span>
                         <span>{item}</span>
                       </li>
                     ))}
@@ -1492,15 +1492,15 @@ export default function LearningOutcomes() {
 
           {/* PROSTHODONTICS AND CROWN AND BRIDGES (MDS) */}
           <section className="mb-10">
-            <div className="rounded-2xl overflow-hidden shadow-md border border-[#006837]/20">
-              <div className="bg-[#002309] px-6 py-5 flex items-center gap-3">
-                <span className="bg-[#7cb983] text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">MDS</span>
+            <div className="rounded-2xl overflow-hidden shadow-md border border-[#0b6d41]/20">
+              <div className="bg-[#032816] px-6 py-5 flex items-center gap-3">
+                <span className="bg-[#ffde59] text-[#032816] text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">MDS</span>
                 <h2 className="text-xl md:text-2xl font-bold text-white">PROSTHODONTICS AND CROWN AND BRIDGES</h2>
               </div>
               <div className="bg-white divide-y divide-gray-100">
                 <div className="px-6 py-5">
-                  <h3 className="text-sm font-bold uppercase tracking-wide mb-3 flex items-center gap-2 text-[#006837]">
-                    <span className="w-3 h-3 rounded-sm bg-[#006837] inline-block"></span>
+                  <h3 className="text-sm font-bold uppercase tracking-wide mb-3 flex items-center gap-2 text-[#0b6d41]">
+                    <span className="w-3 h-3 rounded-sm bg-[#0b6d41] inline-block"></span>
                     Knowledge and Understanding
                   </h3>
                   <ul className="space-y-2">
@@ -1534,15 +1534,15 @@ export default function LearningOutcomes() {
                       "• Should have a sound knowledge (of the applications in pharmacology, effects of drugs on oral tissues and systems of the body and in medically compromised patients.",
                     ].map((item, i) => (
                       <li key={i} className="flex gap-2 items-start text-gray-600 text-sm leading-relaxed">
-                        <span className="flex-shrink-0 text-[#006837] font-bold mt-0.5">›</span>
+                        <span className="flex-shrink-0 text-[#0b6d41] font-bold mt-0.5">›</span>
                         <span>{item}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
                 <div className="px-6 py-5 bg-[#FBFBEE]">
-                  <h3 className="text-sm font-bold uppercase tracking-wide mb-3 flex items-center gap-2 text-[#7cb983]">
-                    <span className="w-3 h-3 rounded-sm bg-[#7cb983] inline-block"></span>
+                  <h3 className="text-sm font-bold uppercase tracking-wide mb-3 flex items-center gap-2 text-[#0b6d41]">
+                    <span className="w-3 h-3 rounded-sm bg-[#ffde59] inline-block"></span>
                     Skills
                   </h3>
                   <ul className="space-y-2">
@@ -1560,7 +1560,7 @@ export default function LearningOutcomes() {
                       "• To understand the demographic distribution and target diseases of the Craniomandibular region related to Prosthodontics.",
                     ].map((item, i) => (
                       <li key={i} className="flex gap-2 items-start text-gray-600 text-sm leading-relaxed">
-                        <span className="flex-shrink-0 text-[#7cb983] font-bold mt-0.5">›</span>
+                        <span className="flex-shrink-0 text-[#0b6d41] font-bold mt-0.5">›</span>
                         <span>{item}</span>
                       </li>
                     ))}
@@ -1598,15 +1598,15 @@ export default function LearningOutcomes() {
 
           {/* CONSERVATIVE DENTISTRY AND ENDODONTICS (MDS) */}
           <section className="mb-10">
-            <div className="rounded-2xl overflow-hidden shadow-md border border-[#006837]/20">
-              <div className="bg-[#002309] px-6 py-5 flex items-center gap-3">
-                <span className="bg-[#7cb983] text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">MDS</span>
+            <div className="rounded-2xl overflow-hidden shadow-md border border-[#0b6d41]/20">
+              <div className="bg-[#032816] px-6 py-5 flex items-center gap-3">
+                <span className="bg-[#ffde59] text-[#032816] text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">MDS</span>
                 <h2 className="text-xl md:text-2xl font-bold text-white">CONSERVATIVE DENTISTRY AND ENDODONTICS</h2>
               </div>
               <div className="bg-white divide-y divide-gray-100">
                 <div className="px-6 py-5">
-                  <h3 className="text-sm font-bold uppercase tracking-wide mb-3 flex items-center gap-2 text-[#006837]">
-                    <span className="w-3 h-3 rounded-sm bg-[#006837] inline-block"></span>
+                  <h3 className="text-sm font-bold uppercase tracking-wide mb-3 flex items-center gap-2 text-[#0b6d41]">
+                    <span className="w-3 h-3 rounded-sm bg-[#0b6d41] inline-block"></span>
                     Knowledge and Understanding
                   </h3>
                   <ul className="space-y-2">
@@ -1620,15 +1620,15 @@ export default function LearningOutcomes() {
                       "• Ability to teach/guide, colleagues and other learners. Use information technology tools and carry out research both basic and clinical with the aim of publishing his work and presenting the same on a scientific platform.",
                     ].map((item, i) => (
                       <li key={i} className="flex gap-2 items-start text-gray-600 text-sm leading-relaxed">
-                        <span className="flex-shrink-0 text-[#006837] font-bold mt-0.5">›</span>
+                        <span className="flex-shrink-0 text-[#0b6d41] font-bold mt-0.5">›</span>
                         <span>{item}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
                 <div className="px-6 py-5 bg-[#FBFBEE]">
-                  <h3 className="text-sm font-bold uppercase tracking-wide mb-3 flex items-center gap-2 text-[#7cb983]">
-                    <span className="w-3 h-3 rounded-sm bg-[#7cb983] inline-block"></span>
+                  <h3 className="text-sm font-bold uppercase tracking-wide mb-3 flex items-center gap-2 text-[#0b6d41]">
+                    <span className="w-3 h-3 rounded-sm bg-[#ffde59] inline-block"></span>
                     Skills
                   </h3>
                   <ul className="space-y-2">
@@ -1641,7 +1641,7 @@ export default function LearningOutcomes() {
                       "• Should have proper knowledge of sterilization procedures.",
                     ].map((item, i) => (
                       <li key={i} className="flex gap-2 items-start text-gray-600 text-sm leading-relaxed">
-                        <span className="flex-shrink-0 text-[#7cb983] font-bold mt-0.5">›</span>
+                        <span className="flex-shrink-0 text-[#0b6d41] font-bold mt-0.5">›</span>
                         <span>{item}</span>
                       </li>
                     ))}
@@ -1674,15 +1674,15 @@ export default function LearningOutcomes() {
 
           {/* ORTHODONTICS AND DENTOFACIAL ORTHOPEDICS (MDS) */}
           <section className="mb-10">
-            <div className="rounded-2xl overflow-hidden shadow-md border border-[#006837]/20">
-              <div className="bg-[#002309] px-6 py-5 flex items-center gap-3">
-                <span className="bg-[#7cb983] text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">MDS</span>
+            <div className="rounded-2xl overflow-hidden shadow-md border border-[#0b6d41]/20">
+              <div className="bg-[#032816] px-6 py-5 flex items-center gap-3">
+                <span className="bg-[#ffde59] text-[#032816] text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">MDS</span>
                 <h2 className="text-xl md:text-2xl font-bold text-white">ORTHODONTICS AND DENTOFACIAL ORTHOPEDICS</h2>
               </div>
               <div className="bg-white divide-y divide-gray-100">
                 <div className="px-6 py-5">
-                  <h3 className="text-sm font-bold uppercase tracking-wide mb-3 flex items-center gap-2 text-[#006837]">
-                    <span className="w-3 h-3 rounded-sm bg-[#006837] inline-block"></span>
+                  <h3 className="text-sm font-bold uppercase tracking-wide mb-3 flex items-center gap-2 text-[#0b6d41]">
+                    <span className="w-3 h-3 rounded-sm bg-[#0b6d41] inline-block"></span>
                     Knowledge and Understanding
                   </h3>
                   <ul className="space-y-2">
@@ -1696,15 +1696,15 @@ export default function LearningOutcomes() {
                       "7. Personal hygiene and infection control, prevention of cross-infection, and safe disposal of hospital waste keeping in view the high prevalence of Hepatitis and HIV, and other highly contagious diseases.",
                     ].map((item, i) => (
                       <li key={i} className="flex gap-2 items-start text-gray-600 text-sm leading-relaxed">
-                        <span className="flex-shrink-0 text-[#006837] font-bold mt-0.5">›</span>
+                        <span className="flex-shrink-0 text-[#0b6d41] font-bold mt-0.5">›</span>
                         <span>{item}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
                 <div className="px-6 py-5 bg-[#FBFBEE]">
-                  <h3 className="text-sm font-bold uppercase tracking-wide mb-3 flex items-center gap-2 text-[#7cb983]">
-                    <span className="w-3 h-3 rounded-sm bg-[#7cb983] inline-block"></span>
+                  <h3 className="text-sm font-bold uppercase tracking-wide mb-3 flex items-center gap-2 text-[#0b6d41]">
+                    <span className="w-3 h-3 rounded-sm bg-[#ffde59] inline-block"></span>
                     Skills
                   </h3>
                   <ul className="space-y-2">
@@ -1713,7 +1713,7 @@ export default function LearningOutcomes() {
                       "2. To be competent to fabricate and manage the most appropriate appliance – intra or extra oral, removable or fixed, mechanical or functional, and active or passive – for the treatment of any orthodontic problem to be treated singly or as a part of multidisciplinary treatment of oro-facial deformities.",
                     ].map((item, i) => (
                       <li key={i} className="flex gap-2 items-start text-gray-600 text-sm leading-relaxed">
-                        <span className="flex-shrink-0 text-[#7cb983] font-bold mt-0.5">›</span>
+                        <span className="flex-shrink-0 text-[#0b6d41] font-bold mt-0.5">›</span>
                         <span>{item}</span>
                       </li>
                     ))}
@@ -1750,11 +1750,11 @@ export default function LearningOutcomes() {
           {/* FORMATIVE/INTERNAL ASSESSMENT */}
           <section className="mb-12">
             <div className="rounded-2xl overflow-hidden shadow-md border border-gray-200">
-              <div className="bg-[#006837] px-6 py-5">
+              <div className="bg-[#0b6d41] px-6 py-5">
                 <h2 className="text-xl md:text-2xl font-bold text-white">FORMATIVE/INTERNAL ASSESSMENT</h2>
               </div>
               <div className="bg-white px-6 py-6">
-                <div className="bg-[#FBFBEE] border-l-4 border-[#7cb983] rounded-r-lg px-5 py-4 mb-6 text-gray-700 text-sm leading-relaxed">
+                <div className="bg-[#FBFBEE] border-l-4 border-[#0f8f56] rounded-r-lg px-5 py-4 mb-6 text-gray-700 text-sm leading-relaxed">
                   The continuing assessment examination (both Theory/Practical) held at least 3 times in a particular year and the better of two examinations should be considered. The Internal Assessment marks are to be submitted to the University, once every three months. The marks scored by the learners shall be displayed on the Notice board and a copy forwarded by HOD shall be sent to the University once every 3 months.
                 </div>
                 <div className="grid grid-cols-3 gap-4 mb-8">
@@ -1763,19 +1763,19 @@ export default function LearningOutcomes() {
                     { label: "Theory IA", value: "10 Marks" },
                     { label: "Practical IA", value: "10 Marks" },
                   ].map((stat, i) => (
-                    <div key={i} className="bg-[#006837] rounded-xl px-4 py-5 text-center">
+                    <div key={i} className="bg-[#0b6d41] rounded-xl px-4 py-5 text-center">
                       <p className="text-2xl font-bold text-white">{stat.value}</p>
                       <p className="text-white/80 text-xs mt-1 font-medium uppercase tracking-wide">{stat.label}</p>
                     </div>
                   ))}
                 </div>
 
-                <h3 className="text-base font-bold text-[#006837] mb-4 border-b border-gray-200 pb-2">
+                <h3 className="text-base font-bold text-[#0b6d41] mb-4 border-b border-gray-200 pb-2">
                   ASSESSMENT METHOD OF LEARNING OUTCOME – MDS LEARNING FRAMEWORK
                 </h3>
                 <div className="space-y-4">
                   <div className="flex gap-4 items-start">
-                    <span className="flex-shrink-0 w-8 h-8 bg-[#006837] text-white rounded-full text-sm font-bold flex items-center justify-center">A</span>
+                    <span className="flex-shrink-0 w-8 h-8 bg-[#0b6d41] text-white rounded-full text-sm font-bold flex items-center justify-center">A</span>
                     <div>
                       <p className="font-semibold text-gray-800 text-sm">Theory:</p>
                       <p className="text-gray-600 text-sm mt-1"><strong>Part – I: Basic Sciences Paper</strong></p>
@@ -1784,14 +1784,14 @@ export default function LearningOutcomes() {
                     </div>
                   </div>
                   <div className="flex gap-4 items-start">
-                    <span className="flex-shrink-0 w-8 h-8 bg-[#7cb983] text-white rounded-full text-sm font-bold flex items-center justify-center">B</span>
+                    <span className="flex-shrink-0 w-8 h-8 bg-[#ffde59] text-[#032816] rounded-full text-sm font-bold flex items-center justify-center">B</span>
                     <div>
                       <p className="font-semibold text-gray-800 text-sm">Practical / Clinical Examination: 200 Marks (Varies with different subjects)</p>
                       <p className="text-gray-600 text-sm mt-1">The clinical examination shall be of two days duration</p>
                     </div>
                   </div>
                   <div className="flex gap-4 items-start">
-                    <span className="flex-shrink-0 w-8 h-8 bg-[#006837] text-white rounded-full text-sm font-bold flex items-center justify-center">C</span>
+                    <span className="flex-shrink-0 w-8 h-8 bg-[#0b6d41] text-white rounded-full text-sm font-bold flex items-center justify-center">C</span>
                     <div>
                       <p className="font-semibold text-gray-800 text-sm">Viva Voce: 100 Marks</p>
                       <p className="text-gray-600 text-sm mt-1"><strong>I. Viva-Voce examination: 80 marks</strong></p>
@@ -1808,27 +1808,27 @@ export default function LearningOutcomes() {
           {/* GENERAL ANATOMY */}
           <section className="mb-6">
             <div className="rounded-xl overflow-hidden border border-gray-200 shadow-sm">
-              <div className="bg-[#006837] px-5 py-3 flex items-center justify-between">
+              <div className="bg-[#0b6d41] px-5 py-3 flex items-center justify-between">
                 <h2 className="text-base md:text-lg font-bold text-white">GENERAL ANATOMY</h2>
                 <span className="hidden sm:block text-white/60 text-xs font-medium uppercase tracking-widest">Competencies</span>
               </div>
               <div className="grid md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-gray-200">
                 <div className="px-5 py-4 bg-white">
-                  <h3 className="text-xs font-bold text-[#006837] uppercase tracking-wide mb-2.5">Specific Competencies</h3>
+                  <h3 className="text-xs font-bold text-[#0b6d41] uppercase tracking-wide mb-2.5">Specific Competencies</h3>
                   <ul className="space-y-1.5">
                     {[
                       "To acquire knowledge about structural components of the body (macroscopic and microscopic) and correlate it with normal body functions.",
                       "To emphasize development and developmental anomalies of oral, dental, and maxillofacial structures",
                     ].map((item, i) => (
                       <li key={i} className="flex gap-2 items-start text-gray-600 text-sm">
-                        <span className="flex-shrink-0 text-[#7cb983] font-bold mt-0.5">›</span>
+                        <span className="flex-shrink-0 text-[#0b6d41] font-bold mt-0.5">›</span>
                         <span>{item}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
-                <div className="px-5 py-4 bg-[#006837]/5">
-                  <h3 className="text-xs font-bold text-[#006837] uppercase tracking-wide mb-2.5">Steps Taken to Attain</h3>
+                <div className="px-5 py-4 bg-[#0b6d41]/5">
+                  <h3 className="text-xs font-bold text-[#0b6d41] uppercase tracking-wide mb-2.5">Steps Taken to Attain</h3>
                   <ol className="space-y-1.5">
                     {[
                       "Dissection of human cadavers",
@@ -1836,7 +1836,7 @@ export default function LearningOutcomes() {
                       "Demonstrations",
                     ].map((item, i) => (
                       <li key={i} className="flex gap-2 items-start text-gray-600 text-sm">
-                        <span className="flex-shrink-0 w-5 h-5 rounded-full bg-[#006837] text-white text-xs font-bold flex items-center justify-center mt-0.5">{i + 1}</span>
+                        <span className="flex-shrink-0 w-5 h-5 rounded-full bg-[#0b6d41] text-white text-xs font-bold flex items-center justify-center mt-0.5">{i + 1}</span>
                         <span>{item}</span>
                       </li>
                     ))}
@@ -2143,28 +2143,28 @@ export default function LearningOutcomes() {
           ].map((subject, idx) => (
             <section key={idx} className="mb-6">
               <div className="rounded-xl overflow-hidden border border-gray-200 shadow-sm">
-                <div className="bg-[#006837] px-5 py-3 flex items-center justify-between">
+                <div className="bg-[#0b6d41] px-5 py-3 flex items-center justify-between">
                   <h2 className="text-base md:text-lg font-bold text-white">{subject.title}</h2>
                   <span className="hidden sm:block text-white/60 text-xs font-medium uppercase tracking-widest">Competencies</span>
                 </div>
                 <div className="grid md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-gray-200">
                   <div className="px-5 py-4 bg-white">
-                    <h3 className="text-xs font-bold text-[#006837] uppercase tracking-wide mb-2.5">Specific Competencies</h3>
+                    <h3 className="text-xs font-bold text-[#0b6d41] uppercase tracking-wide mb-2.5">Specific Competencies</h3>
                     <ul className="space-y-1.5">
                       {subject.competencies.map((item, i) => (
                         <li key={i} className="flex gap-2 items-start text-gray-600 text-sm">
-                          <span className="flex-shrink-0 text-[#7cb983] font-bold mt-0.5">›</span>
+                          <span className="flex-shrink-0 text-[#0b6d41] font-bold mt-0.5">›</span>
                           <span>{item}</span>
                         </li>
                       ))}
                     </ul>
                   </div>
-                  <div className="px-5 py-4 bg-[#006837]/5">
-                    <h3 className="text-xs font-bold text-[#006837] uppercase tracking-wide mb-2.5">Steps Taken to Attain</h3>
+                  <div className="px-5 py-4 bg-[#0b6d41]/5">
+                    <h3 className="text-xs font-bold text-[#0b6d41] uppercase tracking-wide mb-2.5">Steps Taken to Attain</h3>
                     <ol className="space-y-1.5">
                       {subject.steps.map((item, i) => (
                         <li key={i} className="flex gap-2 items-start text-gray-600 text-sm">
-                          <span className="flex-shrink-0 w-5 h-5 rounded-full bg-[#006837] text-white text-xs font-bold flex items-center justify-center mt-0.5">{i + 1}</span>
+                          <span className="flex-shrink-0 w-5 h-5 rounded-full bg-[#0b6d41] text-white text-xs font-bold flex items-center justify-center mt-0.5">{i + 1}</span>
                           <span>{item}</span>
                         </li>
                       ))}

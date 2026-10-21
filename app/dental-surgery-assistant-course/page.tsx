@@ -363,12 +363,12 @@ export default function DSACoursePage() {
         </div>
 
         {/* ===== HERO SECTION ===== */}
-        <section className="bg-[#002309] text-white py-11 md:py-[80px] relative overflow-hidden text-center">
+        <section className="bg-[#032816] text-white py-11 md:py-[80px] relative overflow-hidden text-center">
           <div
             className="absolute inset-0"
             style={{
               background:
-                "radial-gradient(ellipse at 30% 40%, rgba(0,104,55,0.25) 0%, transparent 60%), radial-gradient(ellipse at 70% 60%, rgba(124,185,131,0.12) 0%, transparent 50%), radial-gradient(ellipse at 50% 100%, rgba(0,104,55,0.15) 0%, transparent 50%)",
+                "radial-gradient(ellipse at 30% 40%, rgba(11,109,65,0.25) 0%, transparent 60%), radial-gradient(ellipse at 70% 60%, rgba(15,143,86,0.12) 0%, transparent 50%), radial-gradient(ellipse at 50% 100%, rgba(11,109,65,0.15) 0%, transparent 50%)",
             }}
           />
           <div className="relative z-[2] max-w-[780px] mx-auto px-6">
@@ -376,7 +376,7 @@ export default function DSACoursePage() {
               {/* Badge */}
               <div className="inline-flex items-center gap-1.5 bg-yellow-500/15 border border-yellow-500/30 text-yellow-400 px-[18px] py-2 rounded-full text-[13px] font-bold uppercase tracking-wider mb-6 backdrop-blur-sm">
                 <span
-                  className="w-[7px] h-[7px] bg-[#7CB983] rounded-full"
+                  className="w-[7px] h-[7px] bg-[#ffde59] rounded-full"
                   style={{ animation: "dsa-blink 1.5s infinite" }}
                 />
                 Admission Open 2026
@@ -443,7 +443,7 @@ export default function DSACoursePage() {
               <div className="flex flex-wrap gap-3 justify-center">
                 <a
                   href={`tel:+91${PHONE}`}
-                  className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl text-base font-bold no-underline transition-all text-[#002309] hover:-translate-y-0.5"
+                  className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl text-base font-bold no-underline transition-all text-[#032816] hover:-translate-y-0.5"
                   style={{
                     background:
                       "linear-gradient(135deg, #eab308, #f59e0b)",
@@ -464,7 +464,7 @@ export default function DSACoursePage() {
         <section className="py-14 md:py-20 bg-white">
           <div className="max-w-[1180px] mx-auto px-6">
             <RevealOnScroll>
-              <span className="inline-flex items-center gap-1.5 bg-green-100 text-[#006837] px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-3">
+              <span className="inline-flex items-center gap-1.5 bg-[#d4f1e4] text-[#0b6d41] px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-3">
                 Program Highlights
               </span>
               <h2
@@ -495,16 +495,16 @@ export default function DSACoursePage() {
                   <div
                     className={`rounded-2xl p-[30px] transition-all relative overflow-hidden border h-full ${
                       card.variant === "featured"
-                        ? "text-white border-transparent hover:shadow-[0_8px_32px_rgba(0,104,55,0.25)]"
+                        ? "text-white border-transparent hover:shadow-[0_8px_32px_rgba(11,109,65,0.25)]"
                         : card.variant === "gold"
                           ? "border-[#fcd34d] hover:bg-[rgba(254,243,199,0.7)] hover:backdrop-blur-2xl hover:-translate-y-[3px] hover:shadow-md"
-                          : "bg-[#FBFBEE] border-gray-200 hover:bg-white/65 hover:backdrop-blur-2xl hover:border-[rgba(0,104,55,0.2)] hover:-translate-y-[3px] hover:shadow-md"
+                          : "bg-[#FBFBEE] border-gray-200 hover:bg-white/65 hover:backdrop-blur-2xl hover:border-[rgba(11,109,65,0.2)] hover:-translate-y-[3px] hover:shadow-md"
                     }`}
                     style={
                       card.variant === "featured"
                         ? {
                             background:
-                              "linear-gradient(135deg, #1B5E20, #002309)",
+                              "linear-gradient(135deg, #0b6d41, #032816)",
                           }
                         : card.variant === "gold"
                           ? {
@@ -520,7 +520,7 @@ export default function DSACoursePage() {
                           ? "bg-white/10"
                           : card.variant === "gold"
                             ? "bg-amber-700/10"
-                            : "bg-green-600/10"
+                            : "bg-[#0b6d41]/10"
                       }`}
                     >
                       {card.emoji}
@@ -530,7 +530,7 @@ export default function DSACoursePage() {
                         className={`text-[44px] font-extrabold leading-none mb-1.5 ${
                           card.variant === "featured"
                             ? "text-yellow-400"
-                            : "text-[#1B5E20]"
+                            : "text-[#0b6d41]"
                         }`}
                       >
                         {card.bigNum}
@@ -553,7 +553,7 @@ export default function DSACoursePage() {
         <section className="py-14 md:py-20 bg-[#FBFBEE]">
           <div className="max-w-[1180px] mx-auto px-6">
             <RevealOnScroll className="text-center">
-              <span className="inline-flex items-center gap-1.5 bg-green-100 text-[#006837] px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-3">
+              <span className="inline-flex items-center gap-1.5 bg-[#d4f1e4] text-[#0b6d41] px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-3">
                 Training Roadmap
               </span>
               <h2
@@ -575,7 +575,7 @@ export default function DSACoursePage() {
                 className="absolute left-6 top-0 bottom-0 w-[3px] rounded-sm"
                 style={{
                   background:
-                    "linear-gradient(to bottom, #7CB983, #eab308)",
+                    "linear-gradient(to bottom, #0f8f56, #eab308)",
                 }}
               />
 
@@ -586,14 +586,14 @@ export default function DSACoursePage() {
                       className="shrink-0 w-[50px] h-[50px] rounded-full flex items-center justify-center font-extrabold text-sm text-white z-[2]"
                       style={{
                         background:
-                          "linear-gradient(135deg, #006837, #1B5E20)",
+                          "linear-gradient(135deg, #0b6d41, #0b6d41)",
                         boxShadow:
                           "0 0 0 6px #FBFBEE, 0 4px 16px rgba(0,0,0,0.08)",
                       }}
                     >
                       {item.month}
                     </div>
-                    <div className="flex-1 bg-white border border-gray-200 rounded-xl py-[22px] px-[26px] transition-all hover:border-[#7CB983] hover:shadow-sm">
+                    <div className="flex-1 bg-white border border-gray-200 rounded-xl py-[22px] px-[26px] transition-all hover:border-[#0f8f56] hover:shadow-sm">
                       <div className="text-[11px] font-bold uppercase tracking-wider text-[#4CAF50] mb-1">
                         {item.label}
                       </div>
@@ -615,7 +615,7 @@ export default function DSACoursePage() {
         <section className="py-14 md:py-20 bg-white">
           <div className="max-w-[1180px] mx-auto px-6">
             <RevealOnScroll>
-              <span className="inline-flex items-center gap-1.5 bg-green-100 text-[#006837] px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-3">
+              <span className="inline-flex items-center gap-1.5 bg-[#d4f1e4] text-[#0b6d41] px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-3">
                 Course Details
               </span>
               <h2
@@ -676,7 +676,7 @@ export default function DSACoursePage() {
                         i % 2 === 1 ? "bg-[#FBFBEE]" : ""
                       }`}
                     >
-                      <div className="w-[42%] py-4 px-5 font-bold text-sm text-[#1B5E20] flex items-center gap-2 border-r-2 border-green-100">
+                      <div className="w-[42%] py-4 px-5 font-bold text-sm text-[#0b6d41] flex items-center gap-2 border-r-2 border-[#d4f1e4]">
                         <span>{row.emoji}</span> {row.label}
                       </div>
                       <div
@@ -718,9 +718,9 @@ export default function DSACoursePage() {
                   ].map((card, i) => (
                     <div
                       key={i}
-                      className="bg-white border border-gray-200 rounded-xl p-5 flex items-center gap-4 transition-all hover:border-[#7CB983] hover:shadow-sm"
+                      className="bg-white border border-gray-200 rounded-xl p-5 flex items-center gap-4 transition-all hover:border-[#0f8f56] hover:shadow-sm"
                     >
-                      <div className="w-12 h-12 rounded-[14px] bg-green-100 flex items-center justify-center text-2xl shrink-0">
+                      <div className="w-12 h-12 rounded-[14px] bg-[#d4f1e4] flex items-center justify-center text-2xl shrink-0">
                         {card.emoji}
                       </div>
                       <div>
@@ -743,7 +743,7 @@ export default function DSACoursePage() {
         <section className="py-14 md:py-20 bg-[#FBFBEE]">
           <div className="max-w-[1180px] mx-auto px-6">
             <RevealOnScroll>
-              <span className="inline-flex items-center gap-1.5 bg-green-100 text-[#006837] px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-3">
+              <span className="inline-flex items-center gap-1.5 bg-[#d4f1e4] text-[#0b6d41] px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-3">
                 Why JKKN
               </span>
               <h2
@@ -763,12 +763,12 @@ export default function DSACoursePage() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
               {whyCards.map((card, i) => (
                 <RevealOnScroll key={i} delay={(i % 2) * 0.1}>
-                  <div className="p-6 rounded-xl border border-gray-200 flex gap-3.5 items-start transition-all bg-white hover:border-[#7CB983] hover:shadow-md hover:-translate-y-0.5 hover:bg-white/65 hover:backdrop-blur-2xl h-full">
+                  <div className="p-6 rounded-xl border border-gray-200 flex gap-3.5 items-start transition-all bg-white hover:border-[#0f8f56] hover:shadow-md hover:-translate-y-0.5 hover:bg-white/65 hover:backdrop-blur-2xl h-full">
                     <div
                       className="shrink-0 w-9 h-9 rounded-[10px] flex items-center justify-center font-extrabold text-sm text-white"
                       style={{
                         background:
-                          "linear-gradient(135deg, #006837, #1B5E20)",
+                          "linear-gradient(135deg, #0b6d41, #0b6d41)",
                       }}
                     >
                       {card.num}
@@ -792,7 +792,7 @@ export default function DSACoursePage() {
         <section className="py-14 md:py-20 bg-[#FBFBEE]">
           <div className="max-w-[1180px] mx-auto px-6">
             <RevealOnScroll className="text-center">
-              <span className="inline-flex items-center gap-1.5 bg-green-100 text-[#006837] px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-3">
+              <span className="inline-flex items-center gap-1.5 bg-[#d4f1e4] text-[#0b6d41] px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-3">
                 Proven Track Record
               </span>
               <h2
@@ -812,9 +812,9 @@ export default function DSACoursePage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-5 max-w-[900px] mx-auto mb-8">
               {alumniStats.map((stat, i) => (
                 <ScaleOnScroll key={i} delay={i * 0.15}>
-                  <div className="bg-white border border-gray-200 rounded-xl py-[30px] px-5 text-center transition-all hover:border-[#7CB983] hover:shadow-md hover:-translate-y-[3px]">
+                  <div className="bg-white border border-gray-200 rounded-xl py-[30px] px-5 text-center transition-all hover:border-[#0f8f56] hover:shadow-md hover:-translate-y-[3px]">
                     <div
-                      className="font-extrabold text-[#006837] mb-1"
+                      className="font-extrabold text-[#0b6d41] mb-1"
                       style={{ fontSize: "clamp(28px, 4vw, 40px)" }}
                     >
                       <AnimatedCounter
@@ -831,8 +831,8 @@ export default function DSACoursePage() {
             </div>
 
             <RevealOnScroll>
-              <div className="text-center p-[30px] rounded-2xl border-2 border-dashed border-[#7CB983] max-w-[700px] mx-auto bg-gradient-to-br from-[#FBFBEE] to-green-100">
-                <h3 className="text-xl text-[#002309] font-extrabold mb-2">
+              <div className="text-center p-[30px] rounded-2xl border-2 border-dashed border-[#0f8f56] max-w-[700px] mx-auto bg-gradient-to-br from-[#FBFBEE] to-[#d4f1e4]">
+                <h3 className="text-xl text-[#032816] font-extrabold mb-2">
                   Want to Talk to Our Past Learners?
                 </h3>
                 <p className="text-gray-500 text-[15px] mb-4">
@@ -849,7 +849,7 @@ export default function DSACoursePage() {
         <RevealOnScroll>
           <section className="py-[60px] relative overflow-hidden text-center text-white"
             style={{
-              background: "linear-gradient(135deg, #002309, #1B5E20)",
+              background: "linear-gradient(135deg, #032816, #0b6d41)",
             }}
           >
             <div
@@ -889,7 +889,7 @@ export default function DSACoursePage() {
         <section className="py-14 md:py-20 bg-white">
           <div className="max-w-[1180px] mx-auto px-6">
             <RevealOnScroll className="text-center">
-              <span className="inline-flex items-center gap-1.5 bg-green-100 text-[#006837] px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-3">
+              <span className="inline-flex items-center gap-1.5 bg-[#d4f1e4] text-[#0b6d41] px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-3">
                 Career Paths
               </span>
               <h2
@@ -909,8 +909,8 @@ export default function DSACoursePage() {
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3.5 max-w-[900px] mx-auto">
               {careerPaths.map((card, i) => (
                 <RevealOnScroll key={i} delay={i * 0.1}>
-                  <div className="bg-[#FBFBEE] border border-gray-200 rounded-xl py-7 px-4 text-center transition-all hover:border-[#7CB983] hover:shadow-md hover:-translate-y-[3px] hover:bg-white/65 hover:backdrop-blur-2xl">
-                    <div className="w-14 h-14 rounded-2xl bg-green-100 flex items-center justify-center text-[28px] mx-auto mb-3.5">
+                  <div className="bg-[#FBFBEE] border border-gray-200 rounded-xl py-7 px-4 text-center transition-all hover:border-[#0f8f56] hover:shadow-md hover:-translate-y-[3px] hover:bg-white/65 hover:backdrop-blur-2xl">
+                    <div className="w-14 h-14 rounded-2xl bg-[#d4f1e4] flex items-center justify-center text-[28px] mx-auto mb-3.5">
                       {card.emoji}
                     </div>
                     <h4 className="text-sm font-bold text-gray-800">
@@ -927,7 +927,7 @@ export default function DSACoursePage() {
         <section className="py-14 md:py-20 bg-[#FBFBEE]">
           <div className="max-w-[1180px] mx-auto px-6">
             <RevealOnScroll className="text-center">
-              <span className="inline-flex items-center gap-1.5 bg-green-100 text-[#006837] px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-3">
+              <span className="inline-flex items-center gap-1.5 bg-[#d4f1e4] text-[#0b6d41] px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-3">
                 FAQ
               </span>
               <h2
@@ -948,7 +948,7 @@ export default function DSACoursePage() {
         <section
           className="py-[70px] text-center text-white relative overflow-hidden"
           style={{
-            background: "linear-gradient(135deg, #1B5E20, #002309)",
+            background: "linear-gradient(135deg, #0b6d41, #032816)",
           }}
         >
           <div
@@ -974,7 +974,7 @@ export default function DSACoursePage() {
             <div className="flex flex-wrap gap-3 justify-center mb-5">
               <a
                 href={`tel:+91${PHONE}`}
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl text-base font-bold no-underline transition-all text-[#002309] hover:-translate-y-0.5"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl text-base font-bold no-underline transition-all text-[#032816] hover:-translate-y-0.5"
                 style={{
                   background: "linear-gradient(135deg, #eab308, #f59e0b)",
                   animation: "dsa-cta-pulse 2.5s ease-in-out infinite",
@@ -987,7 +987,7 @@ export default function DSACoursePage() {
               Email:{" "}
               <a
                 href="mailto:aishwarya@jkkn.ac.in"
-                className="text-yellow-400 no-underline font-semibold hover:underline"
+                className="text-[#ffde59] no-underline font-semibold hover:underline"
               >
                 aishwarya@jkkn.ac.in
               </a>

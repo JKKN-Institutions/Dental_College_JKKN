@@ -74,7 +74,7 @@ export default function ResearchProposalAndConsentForms() {
       <Header />
 
       {/* Hero Banner */}
-      <section className="bg-[#006837] py-16 px-4">
+      <section className="bg-[#0b6d41] py-16 px-4">
         <div className="max-w-5xl mx-auto">
           <div className="mb-5 text-sm text-white/60 flex items-center gap-2">
             <span>Home</span>
@@ -84,7 +84,7 @@ export default function ResearchProposalAndConsentForms() {
           <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-5 uppercase tracking-wide">
             RESEARCH PROPOSAL AND CONSENT FORMS
           </h1>
-          <div className="w-20 h-1 bg-[#7cb983] rounded-full" />
+          <div className="w-20 h-1 bg-[#ffde59] rounded-full" />
         </div>
       </section>
 
@@ -95,15 +95,15 @@ export default function ResearchProposalAndConsentForms() {
             {forms.map((form, index) => (
               <div
                 key={index}
-                className="bg-white rounded-2xl shadow-sm border border-gray-100 p-5 flex flex-col gap-4 hover:shadow-md hover:border-[#7cb983]/40 transition-all duration-200"
+                className="bg-white rounded-2xl shadow-sm border border-gray-100 p-5 flex flex-col gap-4 hover:shadow-md hover:border-[#0f8f56]/40 transition-all duration-200"
               >
-                <h2 className="text-sm md:text-base font-bold text-[#002309] leading-snug flex-1">
+                <h2 className="text-sm md:text-base font-bold text-[#032816] leading-snug flex-1">
                   {form.title}
                 </h2>
                 <a
                   href={form.href}
                   download
-                  className="inline-flex items-center gap-2 self-start bg-[#006837] hover:bg-[#005a2f] text-white font-semibold py-2 px-5 rounded-xl transition-colors duration-200 text-sm"
+                  className="inline-flex items-center gap-2 self-start bg-[#0b6d41] hover:bg-[#005a2f] text-white font-semibold py-2 px-5 rounded-xl transition-colors duration-200 text-sm"
                 >
                   <svg className="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3M3 17V7a2 2 0 012-2h6l2 2h6a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2z" />

@@ -44,7 +44,7 @@ export default function Transport() {
       <Header />
 
       {/* Hero Banner */}
-      <section className="bg-gradient-to-br from-[#006837] via-[#00572e] to-[#003d20] py-16 px-4">
+      <section className="bg-gradient-to-br from-[#0b6d41] via-[#00572e] to-[#003d20] py-16 px-4">
         <div className="max-w-6xl mx-auto">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white">
             TRANSPORT
@@ -84,7 +84,7 @@ export default function Transport() {
               />
             </div>
           </div>
-          <div className="bg-white rounded-xl p-8 shadow-sm border border-green-100 border-l-4 border-l-[#7cb983]">
+          <div className="bg-white rounded-xl p-8 shadow-sm border border-[#d4f1e4] border-l-4 border-l-[#0f8f56]">
             <p className="hero-description text-gray-700 text-base leading-relaxed">
               <strong>Navigating your way to academic excellence should be as smooth as possible, and that&apos;s precisely what our transport services at JKKN Institutions aim to provide. From the quality of our fleet to the training of our drivers, every aspect has been carefully curated to offer you not just a ride, but a journey you can count on.</strong>
             </p>
@@ -95,13 +95,13 @@ export default function Transport() {
       {/* Well-Equipped Fleet */}
       <section className="bg-white py-14 px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-xl md:text-2xl font-bold text-[#006837] mb-6 flex items-center gap-3">
-            <div className="w-9 h-9 bg-[#e8f5e9] rounded-lg flex items-center justify-center flex-shrink-0">
-              <Bus className="w-5 h-5 text-[#006837]" />
+          <h2 className="text-xl md:text-2xl font-bold text-[#0b6d41] mb-6 flex items-center gap-3">
+            <div className="w-9 h-9 bg-[#d4f1e4] rounded-lg flex items-center justify-center flex-shrink-0">
+              <Bus className="w-5 h-5 text-[#0b6d41]" />
             </div>
             Well-Equipped Fleet:
           </h2>
-          <div className="bg-[#FBFBEE] rounded-xl p-8 border border-green-100">
+          <div className="bg-[#FBFBEE] rounded-xl p-8 border border-[#d4f1e4]">
             <p className="text-gray-700 text-base leading-relaxed">
               <strong>Our vehicles are more than just a means of transport; they&apos;re an extension of the high-quality experience we provide on campus. Regular servicing and cleanliness checks ensure that each bus is in optimal condition. Features like air conditioning, plush seating, and advanced GPS tracking systems redefine the concept of comfortable commuting.</strong>
             </p>
@@ -112,13 +112,13 @@ export default function Transport() {
       {/* Expert Drivers */}
       <section className="bg-[#FBFBEE] py-14 px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-xl md:text-2xl font-bold text-[#006837] mb-6 flex items-center gap-3">
-            <div className="w-9 h-9 bg-[#e8f5e9] rounded-lg flex items-center justify-center flex-shrink-0">
-              <UserCheck className="w-5 h-5 text-[#006837]" />
+          <h2 className="text-xl md:text-2xl font-bold text-[#0b6d41] mb-6 flex items-center gap-3">
+            <div className="w-9 h-9 bg-[#d4f1e4] rounded-lg flex items-center justify-center flex-shrink-0">
+              <UserCheck className="w-5 h-5 text-[#0b6d41]" />
             </div>
             Expert Drivers:
           </h2>
-          <div className="bg-white rounded-xl p-8 shadow-sm border border-green-100">
+          <div className="bg-white rounded-xl p-8 shadow-sm border border-[#d4f1e4]">
             <p className="text-gray-700 text-base leading-relaxed">
               <strong>Behind every wheel is a highly trained professional who is well-versed in local routes and traffic conditions. Frequent skill-upgradation sessions make sure our drivers are always equipped to get you safely and efficiently to your destination.</strong>
             </p>
@@ -129,13 +129,13 @@ export default function Transport() {
       {/* Cost-Efficiency */}
       <section className="bg-white py-14 px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-xl md:text-2xl font-bold text-[#006837] mb-6 flex items-center gap-3">
-            <div className="w-9 h-9 bg-[#e8f5e9] rounded-lg flex items-center justify-center flex-shrink-0">
-              <Banknote className="w-5 h-5 text-[#006837]" />
+          <h2 className="text-xl md:text-2xl font-bold text-[#0b6d41] mb-6 flex items-center gap-3">
+            <div className="w-9 h-9 bg-[#d4f1e4] rounded-lg flex items-center justify-center flex-shrink-0">
+              <Banknote className="w-5 h-5 text-[#0b6d41]" />
             </div>
             Cost-Efficiency:
           </h2>
-          <div className="bg-[#FBFBEE] rounded-xl p-8 border border-green-100">
+          <div className="bg-[#FBFBEE] rounded-xl p-8 border border-[#d4f1e4]">
             <p className="text-gray-700 text-base leading-relaxed">
               <strong>Accessibility and affordability go hand-in-hand at JKKN Institutions. The pricing structure is transparent and is calculated based on the distance from your residence to the campus, making sure that premium service does not come with a premium price tag.</strong>
             </p>
@@ -146,13 +146,13 @@ export default function Transport() {
       {/* Safety Measures */}
       <section className="bg-[#FBFBEE] py-14 px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-xl md:text-2xl font-bold text-[#006837] mb-6 flex items-center gap-3">
-            <div className="w-9 h-9 bg-[#e8f5e9] rounded-lg flex items-center justify-center flex-shrink-0">
-              <Shield className="w-5 h-5 text-[#006837]" />
+          <h2 className="text-xl md:text-2xl font-bold text-[#0b6d41] mb-6 flex items-center gap-3">
+            <div className="w-9 h-9 bg-[#d4f1e4] rounded-lg flex items-center justify-center flex-shrink-0">
+              <Shield className="w-5 h-5 text-[#0b6d41]" />
             </div>
             Safety Measures:
           </h2>
-          <div className="bg-white rounded-xl p-8 shadow-sm border border-green-100">
+          <div className="bg-white rounded-xl p-8 shadow-sm border border-[#d4f1e4]">
             <p className="text-gray-700 text-base leading-relaxed">
               <strong>We have a zero-compromise policy when it comes to safety. Each bus is monitored via CCTV, and designated female attendants are in place to assist female passengers. A stringent set of guidelines ensures a secure commute for everyone aboard.</strong>
             </p>
@@ -163,13 +163,13 @@ export default function Transport() {
       {/* Timely Operation */}
       <section className="bg-white py-14 px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-xl md:text-2xl font-bold text-[#006837] mb-6 flex items-center gap-3">
-            <div className="w-9 h-9 bg-[#e8f5e9] rounded-lg flex items-center justify-center flex-shrink-0">
-              <Clock className="w-5 h-5 text-[#006837]" />
+          <h2 className="text-xl md:text-2xl font-bold text-[#0b6d41] mb-6 flex items-center gap-3">
+            <div className="w-9 h-9 bg-[#d4f1e4] rounded-lg flex items-center justify-center flex-shrink-0">
+              <Clock className="w-5 h-5 text-[#0b6d41]" />
             </div>
             Timely Operation:
           </h2>
-          <div className="bg-[#FBFBEE] rounded-xl p-8 border border-green-100">
+          <div className="bg-[#FBFBEE] rounded-xl p-8 border border-[#d4f1e4]">
             <p className="text-gray-700 text-base leading-relaxed">
               <strong>Time is of the essence, especially in an academic setting. Our transport services adhere to a strict timetable, facilitating punctuality that allows you to optimize your academic and personal schedules.</strong>
             </p>
@@ -180,13 +180,13 @@ export default function Transport() {
       {/* Inclusive Accessibility */}
       <section className="bg-[#FBFBEE] py-14 px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-xl md:text-2xl font-bold text-[#006837] mb-6 flex items-center gap-3">
-            <div className="w-9 h-9 bg-[#e8f5e9] rounded-lg flex items-center justify-center flex-shrink-0">
-              <Users className="w-5 h-5 text-[#006837]" />
+          <h2 className="text-xl md:text-2xl font-bold text-[#0b6d41] mb-6 flex items-center gap-3">
+            <div className="w-9 h-9 bg-[#d4f1e4] rounded-lg flex items-center justify-center flex-shrink-0">
+              <Users className="w-5 h-5 text-[#0b6d41]" />
             </div>
             Inclusive Accessibility:
           </h2>
-          <div className="bg-white rounded-xl p-8 shadow-sm border border-green-100">
+          <div className="bg-white rounded-xl p-8 shadow-sm border border-[#d4f1e4]">
             <p className="text-gray-700 text-base leading-relaxed">
               <strong>We believe in inclusivity and offer buses equipped with wheelchair ramps and other assistive features, ensuring that every learner, irrespective of physical capabilities, can easily use our services.</strong>
             </p>
@@ -195,10 +195,10 @@ export default function Transport() {
       </section>
 
       {/* Final Statement */}
-      <section className="bg-gradient-to-br from-[#006837] via-[#00572e] to-[#003d20] py-14 px-4">
+      <section className="bg-gradient-to-br from-[#0b6d41] via-[#00572e] to-[#003d20] py-14 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="bg-white/10 rounded-xl p-8 border border-white/20">
-            <p className="text-green-100 text-base leading-relaxed">
+            <p className="text-white text-base leading-relaxed">
               <strong>In essence, JKKN Institutions&apos; transport services are an embodiment of our core values—offering a safe, reliable, and comfortable comm</strong>
             </p>
           </div>

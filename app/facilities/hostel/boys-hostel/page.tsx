@@ -93,12 +93,12 @@ export default function BoysHostel() {
       <Header />
 
       {/* Hero Banner */}
-      <section className="bg-[#006837] py-16 px-4">
+      <section className="bg-[#0b6d41] py-16 px-4">
         <div className="max-w-6xl mx-auto">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
             Boys Hostel
           </h1>
-          <div className="h-1 w-24 bg-[#7cb983] rounded-full" />
+          <div className="h-1 w-24 bg-[#ffde59] rounded-full" />
         </div>
       </section>
 
@@ -137,7 +137,7 @@ export default function BoysHostel() {
       {/* Intro Paragraph */}
       <section className="bg-[#FBFBEE] py-10 px-4">
         <div className="max-w-6xl mx-auto">
-          <p className="text-base md:text-lg leading-relaxed text-gray-700 border-l-4 border-[#7cb983] pl-6">
+          <p className="text-base md:text-lg leading-relaxed text-gray-700 border-l-4 border-[#0f8f56] pl-6">
             <strong>Situated a mere 5-minute walk from the heart of JKKN campus, our Boys Hostel offers a perfect blend of convenience and comfort. Designed to foster both academics and camaraderie, the hostel embodies the holistic approach of JKKN Institutions.</strong>
           </p>
         </div>
@@ -148,11 +148,11 @@ export default function BoysHostel() {
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
 
           {/* Convenience and Comfort */}
-          <div className="bg-[#FBFBEE] rounded-2xl p-6 border border-[#7cb983]/20 hover:shadow-md transition-shadow duration-300 flex flex-col gap-4">
-            <div className="w-12 h-12 rounded-full bg-[#006837] flex items-center justify-center flex-shrink-0">
+          <div className="bg-[#FBFBEE] rounded-2xl p-6 border border-[#0f8f56]/20 hover:shadow-md transition-shadow duration-300 flex flex-col gap-4">
+            <div className="w-12 h-12 rounded-full bg-[#0b6d41] flex items-center justify-center flex-shrink-0">
               <Home className="text-white w-6 h-6" />
             </div>
-            <h2 className="text-lg font-bold text-[#006837]">Convenience and Comfort:</h2>
+            <h2 className="text-lg font-bold text-[#0b6d41]">Convenience and Comfort:</h2>
             <div className="text-gray-600 text-sm leading-relaxed flex flex-col gap-2">
               <p>
                 <strong>Short Commute:</strong> Positioned just a 5-minute walk from the campus, the hostel ensures an easy and quick access to classes and facilities. <strong>Spacious Living:</strong> Choose from well-ventilated single and shared rooms, thoughtfully designed to provide a pleasant living experience. Air conditioned rooms are available upon request.
@@ -164,22 +164,22 @@ export default function BoysHostel() {
           </div>
 
           {/* Academic Support */}
-          <div className="bg-[#FBFBEE] rounded-2xl p-6 border border-[#7cb983]/20 hover:shadow-md transition-shadow duration-300 flex flex-col gap-4">
-            <div className="w-12 h-12 rounded-full bg-[#006837] flex items-center justify-center flex-shrink-0">
+          <div className="bg-[#FBFBEE] rounded-2xl p-6 border border-[#0f8f56]/20 hover:shadow-md transition-shadow duration-300 flex flex-col gap-4">
+            <div className="w-12 h-12 rounded-full bg-[#0b6d41] flex items-center justify-center flex-shrink-0">
               <BookOpen className="text-white w-6 h-6" />
             </div>
-            <h2 className="text-lg font-bold text-[#006837]">Academic Support:</h2>
+            <h2 className="text-lg font-bold text-[#0b6d41]">Academic Support:</h2>
             <p className="text-gray-600 text-sm leading-relaxed">
               <strong>Study-Focused Ambiance:</strong> Our hostel emphasizes a peaceful and quiet atmosphere, facilitating uninterrupted study hours. <strong>High-Speed Internet Connectivity:</strong> Seamlessly access online resources and complete academic tasks with our robust internet service.
             </p>
           </div>
 
           {/* Community and Safety */}
-          <div className="bg-[#FBFBEE] rounded-2xl p-6 border border-[#7cb983]/20 hover:shadow-md transition-shadow duration-300 flex flex-col gap-4">
-            <div className="w-12 h-12 rounded-full bg-[#006837] flex items-center justify-center flex-shrink-0">
+          <div className="bg-[#FBFBEE] rounded-2xl p-6 border border-[#0f8f56]/20 hover:shadow-md transition-shadow duration-300 flex flex-col gap-4">
+            <div className="w-12 h-12 rounded-full bg-[#0b6d41] flex items-center justify-center flex-shrink-0">
               <ShieldCheck className="text-white w-6 h-6" />
             </div>
-            <h2 className="text-lg font-bold text-[#006837]">Community and Safety:</h2>
+            <h2 className="text-lg font-bold text-[#0b6d41]">Community and Safety:</h2>
             <p className="text-gray-600 text-sm leading-relaxed">
               <strong>Lifelong Connections:</strong> Forge friendships and create cherished memories within a supportive community of peers. <strong>Committed Team Members:</strong> Rest assured with our dedicated team members available around the clock to assist and ensure a smooth stay. <strong>Safety First:</strong> Experience peace of mind with security measures that prioritize your well-being. Our Boys Hostel stands as a testament to JKKN&apos;s commitment to providing an enriching, safe, and nurturing environment. Join us in this vibrant living space that complements your academic journey and personal growth.
             </p>

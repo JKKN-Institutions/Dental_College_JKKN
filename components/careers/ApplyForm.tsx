@@ -36,7 +36,7 @@ const EMPTY: ApplicationInput = {
 };
 
 const INPUT_CLASSES =
-  'w-full min-h-[44px] rounded-lg border bg-white px-3 text-[#002309] focus:outline-none focus:ring-2 focus:ring-[#7cb983]';
+  'w-full min-h-[44px] rounded-lg border bg-white px-3 text-[#032816] focus:outline-none focus:ring-2 focus:ring-[#0f8f56]';
 
 /** DOM id of the input to focus for a given error field. */
 const fieldInputId = (field: ApplicationField) =>
@@ -50,7 +50,7 @@ interface FieldErrorProps {
 function FieldError({ id, message }: FieldErrorProps) {
   if (!message) return null;
   return (
-    <p id={id} className="mt-1 flex items-center gap-1 text-sm font-semibold text-[#002309]">
+    <p id={id} className="mt-1 flex items-center gap-1 text-sm font-semibold text-[#032816]">
       <AlertCircle className="h-4 w-4 shrink-0" aria-hidden="true" />
       {message}
     </p>
@@ -75,9 +75,9 @@ function TextField({ name, label, value, error, onChange, type = 'text', require
   const errorId = `${id}-error`;
   return (
     <div>
-      <label htmlFor={id} className="mb-1.5 block text-sm font-semibold text-[#002309]">
+      <label htmlFor={id} className="mb-1.5 block text-sm font-semibold text-[#032816]">
         {label}
-        {required ? <span aria-hidden="true"> *</span> : <span className="font-normal text-[#002309]/70"> (optional)</span>}
+        {required ? <span aria-hidden="true"> *</span> : <span className="font-normal text-[#032816]/70"> (optional)</span>}
       </label>
       <input
         id={id}
@@ -90,9 +90,9 @@ function TextField({ name, label, value, error, onChange, type = 'text', require
         autoComplete={autoComplete}
         aria-invalid={error ? true : undefined}
         aria-describedby={error ? errorId : undefined}
-        className={cn(INPUT_CLASSES, error ? 'border-2 border-[#002309]' : 'border-[#7cb983]/50')}
+        className={cn(INPUT_CLASSES, error ? 'border-2 border-[#032816]' : 'border-[#0f8f56]/50')}
       />
-      {hint && !error && <p className="mt-1 text-xs text-[#002309]/70">{hint}</p>}
+      {hint && !error && <p className="mt-1 text-xs text-[#032816]/70">{hint}</p>}
       <FieldError id={errorId} message={error} />
     </div>
   );
@@ -171,16 +171,16 @@ export default function ApplyForm({ jobId, jobTitle }: ApplyFormProps) {
         ref={successRef}
         tabIndex={-1}
         role="status"
-        className="rounded-2xl border border-[#7cb983] bg-white p-6 md:p-8 lg:p-6 focus:outline-none"
+        className="rounded-2xl border border-[#0f8f56] bg-white p-6 md:p-8 lg:p-6 focus:outline-none"
       >
-        <CheckCircle2 className="mb-3 h-10 w-10 text-[#006837]" aria-hidden="true" />
-        <h3 className="mb-2 text-xl font-bold text-[#006837]">Application submitted</h3>
-        <p className="text-[#002309]">
+        <CheckCircle2 className="mb-3 h-10 w-10 text-[#0b6d41]" aria-hidden="true" />
+        <h3 className="mb-2 text-xl font-bold text-[#0b6d41]">Application submitted</h3>
+        <p className="text-[#032816]">
           Thank you for applying for <strong>{jobTitle}</strong>. A confirmation email has been sent to{' '}
           <strong>{values.email.trim()}</strong>, and our HR team will review your application.
         </p>
         {reference && (
-          <p className="mt-4 text-[#002309]">
+          <p className="mt-4 text-[#032816]">
             Your reference number: <strong className="font-mono">{reference}</strong>
           </p>
         )}
@@ -193,10 +193,10 @@ export default function ApplyForm({ jobId, jobTitle }: ApplyFormProps) {
   const consentErrorId = 'apply-consent-error';
 
   return (
-    <form method="post" noValidate onSubmit={handleSubmit} className="rounded-2xl border border-[#7cb983]/30 bg-white p-6 md:p-8 lg:p-6">
+    <form method="post" noValidate onSubmit={handleSubmit} className="rounded-2xl border border-[#0f8f56]/30 bg-white p-6 md:p-8 lg:p-6">
       <div ref={statusRef} tabIndex={-1} aria-live="polite" className="focus:outline-none">
         {status === 'error' && message && (
-          <p role="alert" className="mb-5 flex items-start gap-2 rounded-lg border-2 border-[#002309] bg-[#FBFBEE] p-3 font-semibold text-[#002309]">
+          <p role="alert" className="mb-5 flex items-start gap-2 rounded-lg border-2 border-[#032816] bg-[#FBFBEE] p-3 font-semibold text-[#032816]">
             <AlertCircle className="mt-0.5 h-5 w-5 shrink-0" aria-hidden="true" />
             {message}
           </p>
@@ -219,25 +219,25 @@ export default function ApplyForm({ jobId, jobTitle }: ApplyFormProps) {
         </div>
 
         <fieldset className="md:col-span-2 lg:col-span-1" aria-describedby={errors.experience_months ? experienceErrorId : undefined}>
-          <legend className="mb-1.5 text-sm font-semibold text-[#002309]">
+          <legend className="mb-1.5 text-sm font-semibold text-[#032816]">
             Total experience<span aria-hidden="true"> *</span>
           </legend>
           <div className="grid grid-cols-2 gap-3 sm:max-w-sm">
             <div>
-              <label htmlFor="apply-experience_years" className="mb-1 block text-xs text-[#002309]/80">Years</label>
+              <label htmlFor="apply-experience_years" className="mb-1 block text-xs text-[#032816]/80">Years</label>
               <input id="apply-experience_years" name="experience_years" type="number" inputMode="numeric" min={0} max={60}
                 value={values.experience_years}
                 onChange={(e) => update('experience_years', e.target.value, 'experience_months')}
                 aria-invalid={errors.experience_months ? true : undefined}
-                className={cn(INPUT_CLASSES, errors.experience_months ? 'border-2 border-[#002309]' : 'border-[#7cb983]/50')} />
+                className={cn(INPUT_CLASSES, errors.experience_months ? 'border-2 border-[#032816]' : 'border-[#0f8f56]/50')} />
             </div>
             <div>
-              <label htmlFor="apply-experience_extra_months" className="mb-1 block text-xs text-[#002309]/80">Months</label>
+              <label htmlFor="apply-experience_extra_months" className="mb-1 block text-xs text-[#032816]/80">Months</label>
               <input id="apply-experience_extra_months" name="experience_extra_months" type="number" inputMode="numeric" min={0} max={11}
                 value={values.experience_extra_months}
                 onChange={(e) => update('experience_extra_months', e.target.value, 'experience_months')}
                 aria-invalid={errors.experience_months ? true : undefined}
-                className={cn(INPUT_CLASSES, errors.experience_months ? 'border-2 border-[#002309]' : 'border-[#7cb983]/50')} />
+                className={cn(INPUT_CLASSES, errors.experience_months ? 'border-2 border-[#032816]' : 'border-[#0f8f56]/50')} />
             </div>
           </div>
           <FieldError id={experienceErrorId} message={errors.experience_months} />
@@ -251,7 +251,7 @@ export default function ApplyForm({ jobId, jobTitle }: ApplyFormProps) {
           maxLength={150} autoComplete="organization" />
 
         <div className="md:col-span-2 lg:col-span-1">
-          <label htmlFor="apply-resume" className="mb-1.5 block text-sm font-semibold text-[#002309]">
+          <label htmlFor="apply-resume" className="mb-1.5 block text-sm font-semibold text-[#032816]">
             Resume<span aria-hidden="true"> *</span>
           </label>
           <input id="apply-resume" name="resume" type="file" required
@@ -259,8 +259,8 @@ export default function ApplyForm({ jobId, jobTitle }: ApplyFormProps) {
             onChange={(e) => update('resume', e.target.files?.[0] ?? null, 'resume')}
             aria-invalid={errors.resume ? true : undefined}
             aria-describedby={errors.resume ? resumeErrorId : 'apply-resume-hint'}
-            className="block w-full min-h-[44px] text-sm text-[#002309] file:mr-4 file:min-h-[44px] file:cursor-pointer file:rounded-lg file:border-0 file:bg-[#FBFBEE] file:px-4 file:font-semibold file:text-[#006837] hover:file:bg-[#7cb983]/20" />
-          {!errors.resume && <p id="apply-resume-hint" className="mt-1 text-xs text-[#002309]/70">PDF, DOC or DOCX, smaller than 2 MB.</p>}
+            className="block w-full min-h-[44px] text-sm text-[#032816] file:mr-4 file:min-h-[44px] file:cursor-pointer file:rounded-lg file:border-0 file:bg-[#FBFBEE] file:px-4 file:font-semibold file:text-[#0b6d41] hover:file:bg-[#0f8f56]/20" />
+          {!errors.resume && <p id="apply-resume-hint" className="mt-1 text-xs text-[#032816]/70">PDF, DOC or DOCX, smaller than 2 MB.</p>}
           <FieldError id={resumeErrorId} message={errors.resume} />
         </div>
 
@@ -272,12 +272,12 @@ export default function ApplyForm({ jobId, jobTitle }: ApplyFormProps) {
         </div>
 
         <div className="md:col-span-2 lg:col-span-1">
-          <label htmlFor="apply-consent" className="flex min-h-[44px] cursor-pointer items-start gap-3 text-sm text-[#002309]">
+          <label htmlFor="apply-consent" className="flex min-h-[44px] cursor-pointer items-start gap-3 text-sm text-[#032816]">
             <input id="apply-consent" name="consent" type="checkbox" checked={values.consent}
               onChange={(e) => update('consent', e.target.checked, 'consent')}
               aria-invalid={errors.consent ? true : undefined}
               aria-describedby={errors.consent ? consentErrorId : undefined}
-              className="mt-0.5 h-5 w-5 shrink-0 accent-[#006837]" />
+              className="mt-0.5 h-5 w-5 shrink-0 accent-[#0b6d41]" />
             <span>
               I agree that JKKN Institutions may store and use the details and resume I submit to process my
               application.<span aria-hidden="true"> *</span>
@@ -288,7 +288,7 @@ export default function ApplyForm({ jobId, jobTitle }: ApplyFormProps) {
       </div>
 
       <button type="submit" disabled={status === 'submitting'}
-        className="mt-6 inline-flex min-h-[44px] items-center gap-2 rounded-lg bg-[#7cb983] px-8 font-semibold text-white transition-colors hover:bg-[#6ba872] disabled:cursor-not-allowed disabled:opacity-70">
+        className="mt-6 inline-flex min-h-[44px] items-center gap-2 rounded-lg bg-[#0b6d41] px-8 font-semibold text-white transition-colors hover:bg-[#085032] disabled:cursor-not-allowed disabled:opacity-70">
         {status === 'submitting' && <Loader2 className="h-4 w-4 animate-spin" aria-hidden="true" />}
         {status === 'submitting' ? 'Submitting…' : 'Submit application'}
       </button>

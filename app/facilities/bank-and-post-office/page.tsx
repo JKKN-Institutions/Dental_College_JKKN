@@ -44,12 +44,12 @@ export default function BankPostOffice() {
       <Header />
 
       {/* Hero Banner */}
-      <section className="bg-[#006837] py-16 px-4">
+      <section className="bg-[#0b6d41] py-16 px-4">
         <div className="max-w-6xl mx-auto">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
             BANK & POST OFFICE
           </h1>
-          <div className="h-1 w-24 bg-[#7cb983] rounded-full" />
+          <div className="h-1 w-24 bg-[#ffde59] rounded-full" />
         </div>
       </section>
 
@@ -88,7 +88,7 @@ export default function BankPostOffice() {
       {/* Intro Paragraph */}
       <section className="bg-[#FBFBEE] py-10 px-4">
         <div className="max-w-6xl mx-auto">
-          <p className="text-base md:text-lg leading-relaxed text-gray-700 border-l-4 border-[#7cb983] pl-6">
+          <p className="text-base md:text-lg leading-relaxed text-gray-700 border-l-4 border-[#0f8f56] pl-6">
             At JKKN Institutions, we are committed to providing our learners and team members with a range of convenient services to make campus life easier. This includes banking and postal services designed to meet your daily needs without requiring you to step off campus.
           </p>
         </div>
@@ -99,11 +99,11 @@ export default function BankPostOffice() {
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
 
           {/* On-Campus ATM Kiosk */}
-          <div className="bg-[#FBFBEE] rounded-2xl p-6 border border-[#7cb983]/20 hover:shadow-md transition-shadow duration-300 flex flex-col gap-4">
-            <div className="w-12 h-12 rounded-full bg-[#006837] flex items-center justify-center flex-shrink-0">
+          <div className="bg-[#FBFBEE] rounded-2xl p-6 border border-[#0f8f56]/20 hover:shadow-md transition-shadow duration-300 flex flex-col gap-4">
+            <div className="w-12 h-12 rounded-full bg-[#0b6d41] flex items-center justify-center flex-shrink-0">
               <Landmark className="text-white w-6 h-6" />
             </div>
-            <h2 className="text-lg font-bold text-[#006837]">On-Campus ATM Kiosk:</h2>
+            <h2 className="text-lg font-bold text-[#0b6d41]">On-Campus ATM Kiosk:</h2>
             <p className="text-gray-600 text-sm leading-relaxed">
               For your immediate banking needs, we have an ATM kiosk right on campus. Whether it&apos;s withdrawing cash or checking account balances, you can do it all in a secure environment, without the need to travel off-site.
             </p>
@@ -114,7 +114,7 @@ export default function BankPostOffice() {
                 'Available 24/7 to meet your banking needs',
               ].map((item) => (
                 <li key={item} className="flex items-start gap-2 text-sm text-gray-600">
-                  <span className="mt-1.5 w-2 h-2 rounded-full bg-[#7cb983] flex-shrink-0" />
+                  <span className="mt-1.5 w-2 h-2 rounded-full bg-[#ffde59] flex-shrink-0" />
                   {item}
                 </li>
               ))}
@@ -122,11 +122,11 @@ export default function BankPostOffice() {
           </div>
 
           {/* Campus Post Office */}
-          <div className="bg-[#FBFBEE] rounded-2xl p-6 border border-[#7cb983]/20 hover:shadow-md transition-shadow duration-300 flex flex-col gap-4">
-            <div className="w-12 h-12 rounded-full bg-[#006837] flex items-center justify-center flex-shrink-0">
+          <div className="bg-[#FBFBEE] rounded-2xl p-6 border border-[#0f8f56]/20 hover:shadow-md transition-shadow duration-300 flex flex-col gap-4">
+            <div className="w-12 h-12 rounded-full bg-[#0b6d41] flex items-center justify-center flex-shrink-0">
               <Mail className="text-white w-6 h-6" />
             </div>
-            <h2 className="text-lg font-bold text-[#006837]">Campus Post Office:</h2>
+            <h2 className="text-lg font-bold text-[#0b6d41]">Campus Post Office:</h2>
             <p className="text-gray-600 text-sm leading-relaxed">
               Our on-campus post office serves as a one-stop solution for all your postal requirements. From mailing packages to availing savings schemes, everything is just a step away.
             </p>
@@ -138,7 +138,7 @@ export default function BankPostOffice() {
                 'Efficient and reliable service to keep you connected',
               ].map((item) => (
                 <li key={item} className="flex items-start gap-2 text-sm text-gray-600">
-                  <span className="mt-1.5 w-2 h-2 rounded-full bg-[#7cb983] flex-shrink-0" />
+                  <span className="mt-1.5 w-2 h-2 rounded-full bg-[#ffde59] flex-shrink-0" />
                   {item}
                 </li>
               ))}
@@ -149,7 +149,7 @@ export default function BankPostOffice() {
       </section>
 
       {/* Closing Statement */}
-      <section className="bg-[#006837] py-12 px-4">
+      <section className="bg-[#0b6d41] py-12 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-white text-base md:text-lg leading-relaxed">
             By offering these financial and postal services, JKKN Institutions ensures that you can manage your transactions and communications conveniently, allowing you more time to focus on your academic and professional growth.

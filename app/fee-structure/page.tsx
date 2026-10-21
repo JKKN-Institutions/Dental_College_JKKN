@@ -167,19 +167,19 @@ export default function FeesStructure() {
       <Header />
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-[#006837] to-[#002309] py-16 px-4">
+      <section className="relative bg-gradient-to-br from-[#0b6d41] to-[#032816] py-16 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="text-center">
             <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 mb-6">
-              <svg className="w-5 h-5 text-[#7cb983]" fill="currentColor" viewBox="0 0 20 20">
+              <svg className="w-5 h-5 text-[#ffde59]" fill="currentColor" viewBox="0 0 20 20">
                 <path d="M8.433 7.418c.155-.103.346-.196.567-.267v1.698a2.305 2.305 0 01-.567-.267C8.07 8.34 8 8.114 8 8c0-.114.07-.34.433-.582zM11 12.849v-1.698c.22.071.412.164.567.267.364.243.433.468.433.582 0 .114-.07.34-.433.582a2.305 2.305 0 01-.567.267z" />
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-13a1 1 0 10-2 0v.092a4.535 4.535 0 00-1.676.662C6.602 6.234 6 7.009 6 8c0 .99.602 1.765 1.324 2.246.48.32 1.054.545 1.676.662v1.941c-.391-.127-.68-.317-.843-.504a1 1 0 10-1.51 1.31c.562.649 1.413 1.076 2.353 1.253V15a1 1 0 102 0v-.092a4.535 4.535 0 001.676-.662C13.398 13.766 14 12.991 14 12c0-.99-.602-1.765-1.324-2.246A4.535 4.535 0 0011 9.092V7.151c.391.127.68.317.843.504a1 1 0 101.511-1.31c-.563-.649-1.413-1.076-2.354-1.253V5z" clipRule="evenodd" />
               </svg>
-              <span className="text-[#7cb983] font-semibold text-sm">Academic Year 2026-27</span>
+              <span className="text-[#ffde59] font-semibold text-sm">Academic Year 2026-27</span>
             </div>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
-              Fee <span className="text-[#7cb983]">Structure</span>
+              Fee <span className="text-[#ffde59]">Structure</span>
             </h1>
             <p className="text-lg text-gray-200 max-w-3xl mx-auto leading-relaxed">
               Transparent and comprehensive fee breakdown for BDS and MDS programs. All fees are subject to regulatory approvals.
@@ -201,8 +201,8 @@ export default function FeesStructure() {
               </p>
               <p className="text-sm text-gray-700">
                 *Fee amounts shown are approximate ranges and subject to change based on government regulations, fee fixation committee decisions, and annual revisions.
-                Contact the admissions office for exact, current fee details at <a href="tel:+919345855001" className="text-[#006837] font-semibold hover:underline">+91 93458 55001</a> or
-                email <a href="mailto:dental@jkkn.ac.in" className="text-[#006837] font-semibold hover:underline">dental@jkkn.ac.in</a>.
+                Contact the admissions office for exact, current fee details at <a href="tel:+919345855001" className="text-[#0b6d41] font-semibold hover:underline">+91 93458 55001</a> or
+                email <a href="mailto:dental@jkkn.ac.in" className="text-[#0b6d41] font-semibold hover:underline">dental@jkkn.ac.in</a>.
               </p>
             </div>
           </div>
@@ -213,7 +213,7 @@ export default function FeesStructure() {
       <section className="py-16 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#006837] mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0b6d41] mb-4">
               BDS Fee Structure
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
@@ -224,7 +224,7 @@ export default function FeesStructure() {
           {/* BDS Fee Table */}
           <div className="overflow-x-auto bg-[#FBFBEE] rounded-xl shadow-lg">
             <table className="w-full">
-              <thead className="bg-[#006837] text-white">
+              <thead className="bg-[#0b6d41] text-white">
                 <tr>
                   <th className="px-6 py-4 text-left font-bold">Program</th>
                   <th className="px-6 py-4 text-left font-bold">GQ</th>
@@ -251,7 +251,7 @@ export default function FeesStructure() {
             <p className="text-xs text-gray-600 px-6 pb-4 leading-relaxed">
               * Government Quota: &#8377;{TN_BDS_FEES.governmentQuotaSelfFinancing.toLocaleString('en-IN')} a year, the fee the
               Fee Committee fixes for every self-financing dental college in Tamil Nadu, as printed in the{' '}
-              <a href={TN_BDS_FEES.source.url} target="_blank" rel="noopener noreferrer" className="underline text-[#006837]">
+              <a href={TN_BDS_FEES.source.url} target="_blank" rel="noopener noreferrer" className="underline text-[#0b6d41]">
                 DME Selection Committee prospectus {TN_BDS_FEES.source.session}
               </a>{' '}
               ({TN_BDS_FEES.source.order}). A revision for 2026-27, if any, is notified at counselling. JKKN is a
@@ -261,9 +261,9 @@ export default function FeesStructure() {
           </div>
 
           {/* BDS Additional Information */}
-          <div className="mt-8 bg-blue-50 border-l-4 border-blue-400 p-6 rounded-r-lg">
+          <div className="mt-8 bg-[#fbfbee] border-l-4 border-[#0f8f56] p-6 rounded-r-lg">
             <h3 className="font-bold text-gray-800 mb-3 flex items-center gap-2">
-              <svg className="w-5 h-5 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+              <svg className="w-5 h-5 text-[#0b6d41]" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
               </svg>
               Additional Notes for BDS:
@@ -285,7 +285,7 @@ export default function FeesStructure() {
       <section className="py-16 px-4 bg-[#FBFBEE]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#006837] mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0b6d41] mb-4">
               MDS Fee Structure
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
@@ -296,7 +296,7 @@ export default function FeesStructure() {
           {/* MDS Fee Table */}
           <div className="overflow-x-auto bg-white rounded-xl shadow-lg">
             <table className="w-full">
-              <thead className="bg-[#006837] text-white">
+              <thead className="bg-[#0b6d41] text-white">
                 <tr>
                   <th className="px-6 py-4 text-left font-bold">Specialization</th>
                   <th className="px-6 py-4 text-center font-bold">Seats</th>
@@ -335,7 +335,7 @@ export default function FeesStructure() {
                   <td className="px-6 py-4 text-left text-gray-600 italic">As per Govt. Norms</td>
                   <td className="px-6 py-4 text-right text-gray-800">&#8377;8,50,000</td>
                 </tr>
-                <tr className="bg-[#006837] text-white font-bold">
+                <tr className="bg-[#0b6d41] text-white font-bold">
                   <td className="px-6 py-4">Total MDS Seats</td>
                   <td className="px-6 py-4 text-center">18</td>
                   <td className="px-6 py-4 text-right">—</td>
@@ -348,7 +348,7 @@ export default function FeesStructure() {
 
           {/* MDS Additional Components */}
           <div className="mt-8 bg-white rounded-xl p-8 shadow-md">
-            <h3 className="text-xl font-bold text-[#006837] mb-4">Additional Fee Components (MDS)</h3>
+            <h3 className="text-xl font-bold text-[#0b6d41] mb-4">Additional Fee Components (MDS)</h3>
             <div className="grid md:grid-cols-2 gap-6">
               <div>
                 <h4 className="font-semibold text-gray-800 mb-3">One-Time Fees:</h4>
@@ -372,9 +372,9 @@ export default function FeesStructure() {
           </div>
 
           {/* MDS Additional Information */}
-          <div className="mt-8 bg-green-50 border-l-4 border-green-400 p-6 rounded-r-lg">
+          <div className="mt-8 bg-green-50 border-l-4 border-[#0f8f56] p-6 rounded-r-lg">
             <h3 className="font-bold text-gray-800 mb-3 flex items-center gap-2">
-              <svg className="w-5 h-5 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+              <svg className="w-5 h-5 text-[#0b6d41]" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
               </svg>
               Additional Notes for MDS:
@@ -395,14 +395,14 @@ export default function FeesStructure() {
       {/* Payment Information */}
       <section className="py-16 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#006837] mb-8 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#0b6d41] mb-8 text-center">
             Payment Information
           </h2>
 
           <div className="grid md:grid-cols-2 gap-8">
             {/* Payment Modes */}
             <div className="bg-[#FBFBEE] rounded-xl p-8">
-              <h3 className="text-xl font-bold text-[#006837] mb-4 flex items-center gap-2">
+              <h3 className="text-xl font-bold text-[#0b6d41] mb-4 flex items-center gap-2">
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
                 </svg>
@@ -410,25 +410,25 @@ export default function FeesStructure() {
               </h3>
               <ul className="space-y-3 text-gray-700">
                 <li className="flex items-start gap-3">
-                  <svg className="w-5 h-5 text-[#7cb983] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-5 h-5 text-[#0b6d41] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
                   <span>Demand Draft (DD) in favor of "JKKN Dental College"</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <svg className="w-5 h-5 text-[#7cb983] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-5 h-5 text-[#0b6d41] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
                   <span>Online Bank Transfer (NEFT/RTGS)</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <svg className="w-5 h-5 text-[#7cb983] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-5 h-5 text-[#0b6d41] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
                   <span>Payment at College Office (Cash/Card)</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <svg className="w-5 h-5 text-[#7cb983] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-5 h-5 text-[#0b6d41] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
                   <span>UPI and Digital Payment Options</span>
@@ -438,7 +438,7 @@ export default function FeesStructure() {
 
             {/* Installment Options */}
             <div className="bg-[#FBFBEE] rounded-xl p-8">
-              <h3 className="text-xl font-bold text-[#006837] mb-4 flex items-center gap-2">
+              <h3 className="text-xl font-bold text-[#0b6d41] mb-4 flex items-center gap-2">
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
                 </svg>
@@ -449,19 +449,19 @@ export default function FeesStructure() {
               </p>
               <ul className="space-y-3 text-gray-700">
                 <li className="flex items-start gap-3">
-                  <svg className="w-5 h-5 text-[#7cb983] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-5 h-5 text-[#0b6d41] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
                   <span>Semester-wise payment options</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <svg className="w-5 h-5 text-[#7cb983] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-5 h-5 text-[#0b6d41] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
                   <span>Custom payment plans available</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <svg className="w-5 h-5 text-[#7cb983] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-5 h-5 text-[#0b6d41] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
                   <span>No hidden charges or processing fees</span>
@@ -479,7 +479,7 @@ export default function FeesStructure() {
           strings by construction and cannot drift. */}
       <section className="py-16 px-4 bg-white">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#006837] mb-3 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#0b6d41] mb-3 text-center">
             Fee questions parents ask
           </h2>
           <p className="text-gray-600 text-center mb-10">
@@ -506,7 +506,7 @@ export default function FeesStructure() {
       </section>
 
       {/* Contact for Fee Queries */}
-      <section className="py-16 px-4 bg-gradient-to-br from-[#006837] to-[#002309]">
+      <section className="py-16 px-4 bg-gradient-to-br from-[#0b6d41] to-[#032816]">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
             Have Questions About Fees?
@@ -517,7 +517,7 @@ export default function FeesStructure() {
 
           <div className="grid md:grid-cols-3 gap-6 mb-10">
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
-              <svg className="w-10 h-10 text-[#7cb983] mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-10 h-10 text-[#ffde59] mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
               </svg>
               <h3 className="text-white font-bold mb-2">Call Us</h3>
@@ -525,7 +525,7 @@ export default function FeesStructure() {
             </div>
 
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
-              <svg className="w-10 h-10 text-[#7cb983] mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-10 h-10 text-[#ffde59] mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
               </svg>
               <h3 className="text-white font-bold mb-2">Email Us</h3>
@@ -533,7 +533,7 @@ export default function FeesStructure() {
             </div>
 
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
-              <svg className="w-10 h-10 text-[#7cb983] mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-10 h-10 text-[#ffde59] mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
               </svg>
@@ -543,10 +543,10 @@ export default function FeesStructure() {
           </div>
 
           <div className="flex flex-wrap justify-center gap-4">
-            <Link href="/admission-process" className="bg-[#7cb983] hover:bg-[#6ba872] text-white font-bold px-10 py-4 rounded-lg text-lg transition-all duration-300 shadow-lg inline-block">
+            <Link href="/admission-process" className="bg-[#ffde59] hover:bg-[#e6c64d] text-[#032816] font-bold px-10 py-4 rounded-lg text-lg transition-all duration-300 shadow-lg inline-block">
               View Admission Process
             </Link>
-            <Link href="/contact" className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#006837] font-bold px-10 py-4 rounded-lg text-lg transition-all duration-300 inline-block">
+            <Link href="/contact" className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#0b6d41] font-bold px-10 py-4 rounded-lg text-lg transition-all duration-300 inline-block">
               Contact Admission Office
             </Link>
           </div>
@@ -555,7 +555,7 @@ export default function FeesStructure() {
 
       {/* DEP-34 - enquiry form. Posts to the CRM from the server; a browser cannot POST there */}
       {/* directly - the endpoint sends no Access-Control-Allow-Origin header. */}
-      <section className="bg-gradient-to-br from-[#006837] to-[#0b8f52] py-16">
+      <section className="bg-gradient-to-br from-[#0b6d41] to-[#0f8f56] py-16">
           <div className="max-w-3xl mx-auto px-4">
               <h2 className="text-white text-2xl md:text-3xl font-bold text-center mb-2">Get a Call Back</h2>
               <p className="text-white/80 text-center text-sm mb-8">Leave your details and our admission team will contact you within 24 hours.</p>

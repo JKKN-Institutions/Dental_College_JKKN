@@ -19,17 +19,17 @@ const config: Config = {
   	extend: {
   		colors: {
   			primary: {
-  				DEFAULT: '#1B5E20',
-  				light: '#2E7D32',
-  				dark: '#0d3d13'
+  				DEFAULT: '#0b6d41',
+  				light: '#0f8f56',
+  				dark: '#085032'
   			},
   			secondary: {
-  				DEFAULT: '#FFC107',
-  				light: '#FFD54F',
-  				dark: '#FFA000'
+  				DEFAULT: '#ffde59',
+  				light: '#ffea9a',
+  				dark: '#e6c64d'
   			},
-  			cream: '#FBF8F3',
-  			accent: '#8BC34A'
+  			cream: '#fbfbee',
+  			accent: '#0f8f56'
   		},
   		spacing: {
   			'18': '4.5rem',

@@ -3,7 +3,7 @@ import EnquiryButton from '@/components/lead/EnquiryButton';
 
 export default function CTASection() {
   return (
-    <section className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 bg-[#7cb983]">
+    <section className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 bg-[#0b6d41]">
       <div className="max-w-5xl mx-auto text-center">
         {/* Heading */}
         <h2 className="text-2xl xs:text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-6 leading-tight">
@@ -21,13 +21,13 @@ export default function CTASection() {
             sourcePage="home-cta"
             fallbackHref="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_medium=organic&utm_campaign=components-ctasection"
             fallbackLabel="Apply Now →"
-            className="w-full sm:w-auto bg-white hover:bg-gray-100 active:bg-gray-200 text-[#006837] font-bold py-3 sm:py-3.5 px-6 sm:px-8 rounded-full transition-all duration-300 text-center shadow-lg min-h-[44px] flex items-center justify-center touch-manipulation text-sm sm:text-base"
+            className="w-full sm:w-auto bg-white hover:bg-gray-100 active:bg-gray-200 text-[#0b6d41] font-bold py-3 sm:py-3.5 px-6 sm:px-8 rounded-full transition-all duration-300 text-center shadow-lg min-h-[44px] flex items-center justify-center touch-manipulation text-sm sm:text-base"
           >
             Get a Call Back
           </EnquiryButton>
           <a
             href="tel:+919345855001"
-            className="w-full sm:w-auto border-2 border-white hover:bg-white hover:text-[#7cb983] active:bg-gray-100 text-white font-bold py-3 sm:py-3.5 px-6 sm:px-8 rounded-full transition-all duration-300 text-center inline-flex items-center justify-center gap-2 min-h-[44px] touch-manipulation text-sm sm:text-base"
+            className="w-full sm:w-auto border-2 border-white hover:bg-white hover:text-[#0b6d41] active:bg-gray-100 text-white font-bold py-3 sm:py-3.5 px-6 sm:px-8 rounded-full transition-all duration-300 text-center inline-flex items-center justify-center gap-2 min-h-[44px] touch-manipulation text-sm sm:text-base"
           >
             <Phone className="w-5 h-5" />
             <span>Call Us</span>

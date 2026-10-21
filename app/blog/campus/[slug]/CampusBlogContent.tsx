@@ -119,7 +119,7 @@ export default function CampusBlogContent({
 
         {/* Category badge */}
         {post.category && (
-          <span className="inline-block text-xs font-semibold text-[#006837] bg-green-50 border border-green-100 px-3 py-1 rounded-full mb-5">
+          <span className="inline-block text-xs font-semibold text-[#0b6d41] bg-green-50 border border-[#d4f1e4] px-3 py-1 rounded-full mb-5">
             {post.category}
           </span>
         )}
@@ -133,7 +133,7 @@ export default function CampusBlogContent({
         <div className="flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-gray-500 mb-8 pb-8 border-b border-gray-200">
           <div className="flex items-center gap-2">
             <div className="w-8 h-8 rounded-full bg-[#d1e8da] flex items-center justify-center flex-shrink-0">
-              <span className="text-[11px] font-bold text-[#006837]">
+              <span className="text-[11px] font-bold text-[#0b6d41]">
                 {getInitials(post.author_name)}
               </span>
             </div>
@@ -163,8 +163,8 @@ export default function CampusBlogContent({
 
         {/* Excerpt / Quick Answer */}
         {post.excerpt && (
-          <div className="bg-white border-l-4 border-[#006837] rounded-r-xl p-5 mb-10 shadow-sm">
-            <p className="text-[#006837] text-xs font-bold uppercase tracking-wider mb-2">Quick Answer</p>
+          <div className="bg-white border-l-4 border-[#0b6d41] rounded-r-xl p-5 mb-10 shadow-sm">
+            <p className="text-[#0b6d41] text-xs font-bold uppercase tracking-wider mb-2">Quick Answer</p>
             <p className="text-gray-700 text-sm leading-relaxed">{post.excerpt}</p>
           </div>
         )}
@@ -197,11 +197,11 @@ export default function CampusBlogContent({
             onClick={() => setCommentsOpen((o) => !o)}
             className="w-full bg-white rounded-2xl border border-gray-200 shadow-sm px-5 py-4 flex items-center gap-3 hover:bg-gray-50 transition mb-3"
           >
-            <div className="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center flex-shrink-0">
-              <MessageSquare className="w-5 h-5 text-[#006837]" />
+            <div className="w-10 h-10 rounded-full bg-[#d4f1e4] flex items-center justify-center flex-shrink-0">
+              <MessageSquare className="w-5 h-5 text-[#0b6d41]" />
             </div>
-            <span className="font-bold text-[#002309] text-base flex-1 text-left">Comments</span>
-            <span className="text-xs font-bold bg-green-100 text-[#006837] px-2.5 py-1 rounded-full mr-1">
+            <span className="font-bold text-[#032816] text-base flex-1 text-left">Comments</span>
+            <span className="text-xs font-bold bg-[#d4f1e4] text-[#0b6d41] px-2.5 py-1 rounded-full mr-1">
               {comments.length}
             </span>
             {commentsOpen
@@ -215,7 +215,7 @@ export default function CampusBlogContent({
             <>
               {comments.length === 0 ? (
                 <div className="bg-white rounded-2xl border border-gray-200 shadow-sm px-6 py-8 text-center mb-3">
-                  <p className="text-[#006837] text-sm">No comments yet. Be the first to share your thoughts!</p>
+                  <p className="text-[#0b6d41] text-sm">No comments yet. Be the first to share your thoughts!</p>
                 </div>
               ) : (
                 <div className="space-y-3 mb-3">
@@ -243,7 +243,7 @@ export default function CampusBlogContent({
 
         {/* ── Leave a Comment ───────────────────────────────────────────── */}
         {submitted ? (
-          <div className="flex items-center gap-3 bg-green-50 border border-green-100 rounded-2xl px-5 py-4 text-sm text-[#006837] font-medium mb-14">
+          <div className="flex items-center gap-3 bg-green-50 border border-[#d4f1e4] rounded-2xl px-5 py-4 text-sm text-[#0b6d41] font-medium mb-14">
             <Check className="w-4 h-4 flex-shrink-0" />
             Your comment is awaiting moderation. Thank you!
           </div>
@@ -251,19 +251,19 @@ export default function CampusBlogContent({
           <div className="bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden mb-14">
             {/* Card header with gradient */}
             <div className="bg-gradient-to-r from-green-50 via-[#f0f7f2] to-white px-6 py-5 flex items-center gap-4">
-              <div className="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center flex-shrink-0">
-                <MessageSquare className="w-5 h-5 text-[#006837]" />
+              <div className="w-10 h-10 rounded-full bg-[#d4f1e4] flex items-center justify-center flex-shrink-0">
+                <MessageSquare className="w-5 h-5 text-[#0b6d41]" />
               </div>
               <div>
-                <h3 className="text-xl font-bold text-[#002309]">Leave a Comment</h3>
-                <p className="text-sm text-[#006837]">Share your thoughts on this post</p>
+                <h3 className="text-xl font-bold text-[#032816]">Leave a Comment</h3>
+                <p className="text-sm text-[#0b6d41]">Share your thoughts on this post</p>
               </div>
             </div>
 
             {/* Form */}
             <form onSubmit={handleCommentSubmit} className="px-6 py-6 bg-gray-50 space-y-5">
               <div>
-                <label className="block text-sm font-semibold text-[#002309] mb-1.5">
+                <label className="block text-sm font-semibold text-[#032816] mb-1.5">
                   Name <span className="text-red-400">*</span>
                 </label>
                 <input
@@ -272,12 +272,12 @@ export default function CampusBlogContent({
                   onChange={(e) => setAuthorName(e.target.value)}
                   placeholder="Your name"
                   required
-                  className="w-full px-4 py-3 text-sm border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#006837]/20 focus:border-[#006837] bg-white"
+                  className="w-full px-4 py-3 text-sm border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#0b6d41]/20 focus:border-[#0b6d41] bg-white"
                 />
               </div>
 
               <div>
-                <label className="block text-sm font-semibold text-[#002309] mb-1.5">
+                <label className="block text-sm font-semibold text-[#032816] mb-1.5">
                   Email <span className="text-red-400">*</span>
                 </label>
                 <input
@@ -286,13 +286,13 @@ export default function CampusBlogContent({
                   onChange={(e) => setAuthorEmail(e.target.value)}
                   placeholder="your.email@example.com"
                   required
-                  className="w-full px-4 py-3 text-sm border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#006837]/20 focus:border-[#006837] bg-white"
+                  className="w-full px-4 py-3 text-sm border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#0b6d41]/20 focus:border-[#0b6d41] bg-white"
                 />
-                <p className="text-xs text-[#006837] mt-1.5">Your email will not be published.</p>
+                <p className="text-xs text-[#0b6d41] mt-1.5">Your email will not be published.</p>
               </div>
 
               <div>
-                <label className="block text-sm font-semibold text-[#002309] mb-1.5">
+                <label className="block text-sm font-semibold text-[#032816] mb-1.5">
                   Comment <span className="text-red-400">*</span>
                 </label>
                 <textarea
@@ -301,7 +301,7 @@ export default function CampusBlogContent({
                   placeholder="Write your comment here..."
                   rows={5}
                   required
-                  className="w-full px-4 py-3 text-sm border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#006837]/20 focus:border-[#006837] bg-white resize-y"
+                  className="w-full px-4 py-3 text-sm border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#0b6d41]/20 focus:border-[#0b6d41] bg-white resize-y"
                 />
               </div>
 
@@ -309,12 +309,12 @@ export default function CampusBlogContent({
                 <button
                   type="submit"
                   disabled={submitting}
-                  className="flex items-center gap-2 bg-[#006837] hover:bg-[#005a2e] text-white text-sm font-bold px-6 py-3 rounded-xl transition disabled:opacity-50"
+                  className="flex items-center gap-2 bg-[#0b6d41] hover:bg-[#005a2e] text-white text-sm font-bold px-6 py-3 rounded-xl transition disabled:opacity-50"
                 >
                   {submitting ? <Loader2 className="w-4 h-4 animate-spin" /> : <Send className="w-4 h-4" />}
                   Post Comment
                 </button>
-                <p className="text-xs text-[#006837] mt-2.5">All comments are moderated and will appear after approval.</p>
+                <p className="text-xs text-[#0b6d41] mt-2.5">All comments are moderated and will appear after approval.</p>
               </div>
             </form>
           </div>
@@ -323,7 +323,7 @@ export default function CampusBlogContent({
         {/* ── Related Posts ─────────────────────────────────────────────── */}
         {relatedPosts.length > 0 && (
           <div>
-            <h2 className="text-xl font-bold text-[#002309] mb-5 pl-4 border-l-4 border-[#006837]">
+            <h2 className="text-xl font-bold text-[#032816] mb-5 pl-4 border-l-4 border-[#0b6d41]">
               Related Posts
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -345,7 +345,7 @@ export default function CampusBlogContent({
                   )}
                   <div className="p-4">
                     {rp.category && (
-                      <span className="text-xs font-semibold text-[#006837] mb-1.5 block">{rp.category}</span>
+                      <span className="text-xs font-semibold text-[#0b6d41] mb-1.5 block">{rp.category}</span>
                     )}
                     <p className="text-sm font-bold text-gray-800 leading-snug line-clamp-2">{rp.title}</p>
                     <span className="text-xs text-gray-400 mt-2 block">
@@ -367,7 +367,7 @@ export default function CampusBlogContent({
         .blog-content ul { list-style-type: disc; padding-left: 1.6rem; margin: 0.75rem 0; }
         .blog-content ol { list-style-type: decimal; padding-left: 1.6rem; margin: 0.75rem 0; }
         .blog-content li { margin: 0.35rem 0; line-height: 1.75; color: #374151; }
-        .blog-content blockquote { border-left: 3px solid #006837; padding: 0.5rem 0 0.5rem 1rem; color: #6b7280; margin: 1.25rem 0; font-style: italic; background: #f9fafb; border-radius: 0 8px 8px 0; }
+        .blog-content blockquote { border-left: 3px solid #0b6d41; padding: 0.5rem 0 0.5rem 1rem; color: #6b7280; margin: 1.25rem 0; font-style: italic; background: #f9fafb; border-radius: 0 8px 8px 0; }
         .blog-content code { background: #f3f4f6; border-radius: 4px; padding: 0.1em 0.4em; font-size: 0.875em; font-family: monospace; color: #1f2937; }
         .blog-content pre { background: #1f2937; color: #f9fafb; border-radius: 10px; padding: 1.25rem; overflow-x: auto; margin: 1.25rem 0; }
         .blog-content pre code { background: none; color: inherit; padding: 0; }

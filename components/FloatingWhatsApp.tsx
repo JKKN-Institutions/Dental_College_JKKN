@@ -33,7 +33,7 @@ export default function FloatingWhatsApp() {
       {isVisible && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-24 right-4 md:right-6 lg:bottom-8 lg:right-8 z-50 bg-green-500 hover:bg-green-600 text-white p-2 lg:p-4 rounded-full shadow-lg transition-all duration-300 transform hover:scale-110"
+          className="fixed bottom-24 right-4 md:right-6 lg:bottom-8 lg:right-8 z-50 bg-[#0f8f56] hover:bg-[#0b6d41] text-white p-2 lg:p-4 rounded-full shadow-lg transition-all duration-300 transform hover:scale-110"
           aria-label="Scroll to top"
         >
           <svg

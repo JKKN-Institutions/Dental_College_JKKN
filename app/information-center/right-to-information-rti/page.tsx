@@ -47,12 +47,12 @@ export default function RightToInformation() {
       <Header />
 
       {/* Hero Banner */}
-      <section className="bg-[#006837] py-16 px-4">
+      <section className="bg-[#0b6d41] py-16 px-4">
         <div className="max-w-6xl mx-auto">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
             RIGHT TO INFORMATION (RTI)
           </h1>
-          <div className="w-20 h-1 bg-[#7cb983] mb-6 rounded-full" />
+          <div className="w-20 h-1 bg-[#ffde59] mb-6 rounded-full" />
           <h2 className="text-lg md:text-xl font-semibold text-white/90">
             Right to Information (RTI) – JKKN Dental College &  Hospital
           </h2>
@@ -65,7 +65,7 @@ export default function RightToInformation() {
 
           {/* Ensuring Transparency & Accountability */}
           <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
-            <div className="bg-[#006837] px-6 py-4">
+            <div className="bg-[#0b6d41] px-6 py-4">
               <h3 className="text-white font-bold text-base md:text-lg">
                 Ensuring Transparency & Accountability
               </h3>
@@ -79,7 +79,7 @@ export default function RightToInformation() {
 
           {/* About the RTI Act, 2005 */}
           <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
-            <div className="bg-[#006837] px-6 py-4">
+            <div className="bg-[#0b6d41] px-6 py-4">
               <h3 className="text-white font-bold text-base md:text-lg">
                 About the RTI Act, 2005
               </h3>
@@ -93,7 +93,7 @@ export default function RightToInformation() {
 
           {/* Information Available Under RTI */}
           <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
-            <div className="bg-[#006837] px-6 py-4">
+            <div className="bg-[#0b6d41] px-6 py-4">
               <h3 className="text-white font-bold text-base md:text-lg">
                 Information Available Under RTI
               </h3>
@@ -104,27 +104,27 @@ export default function RightToInformation() {
               </p>
               <div className="space-y-3">
                 <div className="flex items-start gap-3">
-                  <Check className="w-5 h-5 text-[#006837] flex-shrink-0 mt-0.5" />
+                  <Check className="w-5 h-5 text-[#0b6d41] flex-shrink-0 mt-0.5" />
                   <p className="text-gray-700 text-sm md:text-base leading-relaxed">Institutional Details – Vision, mission, organizational structure, and accreditation status.</p>
                 </div>
                 <div className="flex items-start gap-3">
-                  <Check className="w-5 h-5 text-[#006837] flex-shrink-0 mt-0.5" />
+                  <Check className="w-5 h-5 text-[#0b6d41] flex-shrink-0 mt-0.5" />
                   <p className="text-gray-700 text-sm md:text-base leading-relaxed">Academic Information – Courses offered, senior learner details, admission procedures, and academic regulations.</p>
                 </div>
                 <div className="flex items-start gap-3">
-                  <Check className="w-5 h-5 text-[#006837] flex-shrink-0 mt-0.5" />
+                  <Check className="w-5 h-5 text-[#0b6d41] flex-shrink-0 mt-0.5" />
                   <p className="text-gray-700 text-sm md:text-base leading-relaxed">Financial Transparency – Fees structure, scholarships, grants, and financial statements.</p>
                 </div>
                 <div className="flex items-start gap-3">
-                  <Check className="w-5 h-5 text-[#006837] flex-shrink-0 mt-0.5" />
+                  <Check className="w-5 h-5 text-[#0b6d41] flex-shrink-0 mt-0.5" />
                   <p className="text-gray-700 text-sm md:text-base leading-relaxed">Administrative Policies – Rules, regulations, recruitment policies, and decision-making processes.</p>
                 </div>
                 <div className="flex items-start gap-3">
-                  <Check className="w-5 h-5 text-[#006837] flex-shrink-0 mt-0.5" />
+                  <Check className="w-5 h-5 text-[#0b6d41] flex-shrink-0 mt-0.5" />
                   <p className="text-gray-700 text-sm md:text-base leading-relaxed">Research &amp; Development – Ongoing projects, publications, and collaborations.</p>
                 </div>
                 <div className="flex items-start gap-3">
-                  <Check className="w-5 h-5 text-[#006837] flex-shrink-0 mt-0.5" />
+                  <Check className="w-5 h-5 text-[#0b6d41] flex-shrink-0 mt-0.5" />
                   <p className="text-gray-700 text-sm md:text-base leading-relaxed">Hospital Services – Healthcare facilities, patient services, and public health initiatives.</p>
                 </div>
               </div>
@@ -133,7 +133,7 @@ export default function RightToInformation() {
 
           {/* How to File an RTI Application? */}
           <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
-            <div className="bg-[#006837] px-6 py-4">
+            <div className="bg-[#0b6d41] px-6 py-4">
               <h3 className="text-white font-bold text-base md:text-lg">
                 How to File an RTI Application?
               </h3>
@@ -147,7 +147,7 @@ export default function RightToInformation() {
 
           {/* RTI Application Process */}
           <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
-            <div className="bg-[#006837] px-6 py-4">
+            <div className="bg-[#0b6d41] px-6 py-4">
               <h3 className="text-white font-bold text-base md:text-lg">
                 RTI Application Process:
               </h3>
@@ -173,7 +173,7 @@ export default function RightToInformation() {
 
           {/* RTI Contact Details */}
           <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
-            <div className="bg-[#006837] px-6 py-4">
+            <div className="bg-[#0b6d41] px-6 py-4">
               <h3 className="text-white font-bold text-base md:text-lg">
                 RTI Contact Details
               </h3>
@@ -184,10 +184,10 @@ export default function RightToInformation() {
                   <strong>CENTRE:</strong>
                 </p>
                 <p className="text-gray-700 text-sm md:text-base mb-2">
-                  Central Public Information Officer (CPIO) <span className="text-[#1B5E20] font-bold">CPIO DETAILS</span>
+                  Central Public Information Officer (CPIO) <span className="text-[#0b6d41] font-bold">CPIO DETAILS</span>
                 </p>
                 <p className="text-gray-700 text-sm md:text-base">
-                  RTI ONLINE <span className="text-[#1B5E20] font-bold">RTI Online :: Home | Submit RTI Request | Submit RTI First Appeal | View RTI Status | RTI FAQ</span>
+                  RTI ONLINE <span className="text-[#0b6d41] font-bold">RTI Online :: Home | Submit RTI Request | Submit RTI First Appeal | View RTI Status | RTI FAQ</span>
                 </p>
               </div>
               <div className="border-t border-gray-100 pt-4">
@@ -195,26 +195,26 @@ export default function RightToInformation() {
                   <strong>STATE, TAMILNADU:</strong>
                 </p>
                 <p className="text-gray-700 text-sm md:text-base mb-2">
-                  <span className="text-[#1B5E20] font-bold">RTI Online :: Online RTI Information System</span>
+                  <span className="text-[#0b6d41] font-bold">RTI Online :: Online RTI Information System</span>
                 </p>
                 <p className="text-gray-700 text-sm md:text-base mb-2">
                   Public Information Officers & Appellate Authorities
                 </p>
                 <p className="text-gray-700 text-sm md:text-base mb-4">
-                  <span className="text-[#1B5E20] font-bold">Public Information Officers and Appellate Authorities – Right to Information Act, Tamil Nadu</span>
+                  <span className="text-[#0b6d41] font-bold">Public Information Officers and Appellate Authorities – Right to Information Act, Tamil Nadu</span>
                 </p>
                 <p className="text-gray-700 font-semibold text-sm md:text-base mb-3">
                   Health and Family Welfare Department
                 </p>
                 <div className="space-y-2 ml-4">
                   <p className="text-gray-700 text-sm md:text-base">
-                    Public Information Officers of Health and Family Welfare Department, Secretariat  <span className="text-[#1B5E20] font-bold">[English Version] [Tamil Version]</span>
+                    Public Information Officers of Health and Family Welfare Department, Secretariat  <span className="text-[#0b6d41] font-bold">[English Version] [Tamil Version]</span>
                   </p>
                   <p className="text-gray-700 text-sm md:text-base">
                     Appellate Authorities of Health and Family Welfare Department, Secretariat  [English Version] [Tamil Version]
                   </p>
                   <p className="text-gray-700 text-sm md:text-base">
-                    PIOs and Appellate Authorities of Directorate of Public Health and Preventive Medicine  <span className="text-[#1B5E20] font-bold">[English Version] [Tamil Version]</span>
+                    PIOs and Appellate Authorities of Directorate of Public Health and Preventive Medicine  <span className="text-[#0b6d41] font-bold">[English Version] [Tamil Version]</span>
                   </p>
                   <p className="text-gray-700 text-sm md:text-base">
                     PIOs and Appellate Authorities of Directorate of Medical Education
@@ -223,13 +223,13 @@ export default function RightToInformation() {
                     PIOs and Appellate Authorities in the Government Medical Institutions under the control of Director of Medical and Rural Health Services
                   </p>
                   <p className="text-gray-700 text-sm md:text-base">
-                    PIOs and Appellate Authorities of Directorate of Family Welfare  <span className="text-[#1B5E20] font-bold">[English Version] [Tamil Version]</span>
+                    PIOs and Appellate Authorities of Directorate of Family Welfare  <span className="text-[#0b6d41] font-bold">[English Version] [Tamil Version]</span>
                   </p>
                   <p className="text-gray-700 text-sm md:text-base">
-                    PIOs and Appellate Authorities of Department of Drug Control Administration  <span className="text-[#1B5E20] font-bold">[English Version] [Tamil Version]</span>
+                    PIOs and Appellate Authorities of Department of Drug Control Administration  <span className="text-[#0b6d41] font-bold">[English Version] [Tamil Version]</span>
                   </p>
                   <p className="text-gray-700 text-sm md:text-base">
-                    <span className="text-[#1B5E20] font-bold">PIOs and Appellate Authorities of Tamil Nadu Health Systems Project</span>
+                    <span className="text-[#0b6d41] font-bold">PIOs and Appellate Authorities of Tamil Nadu Health Systems Project</span>
                   </p>
                 </div>
               </div>
@@ -238,7 +238,7 @@ export default function RightToInformation() {
 
           {/* Exemptions Under RTI */}
           <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
-            <div className="bg-[#006837] px-6 py-4">
+            <div className="bg-[#0b6d41] px-6 py-4">
               <h3 className="text-white font-bold text-base md:text-lg">
                 Exemptions Under RTI
               </h3>
@@ -261,7 +261,7 @@ export default function RightToInformation() {
 
           {/* Commitment to Transparency */}
           <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
-            <div className="bg-[#006837] px-6 py-4">
+            <div className="bg-[#0b6d41] px-6 py-4">
               <h3 className="text-white font-bold text-base md:text-lg">
                 Commitment to Transparency
               </h3>
@@ -279,7 +279,7 @@ export default function RightToInformation() {
               href="/pdf/RTI-guide-for-cpio.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-[#006837] hover:bg-[#005a2f] text-white font-bold py-3 px-10 rounded-xl transition-colors duration-200 shadow-sm uppercase text-sm tracking-wide"
+              className="bg-[#0b6d41] hover:bg-[#005a2f] text-white font-bold py-3 px-10 rounded-xl transition-colors duration-200 shadow-sm uppercase text-sm tracking-wide"
             >
               RTI-guide-for-cpio
             </a>
@@ -287,7 +287,7 @@ export default function RightToInformation() {
               href="/pdf/RTI-Act-2005-Amended-English-Version.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-[#006837] hover:bg-[#005a2f] text-white font-bold py-3 px-10 rounded-xl transition-colors duration-200 shadow-sm uppercase text-sm tracking-wide"
+              className="bg-[#0b6d41] hover:bg-[#005a2f] text-white font-bold py-3 px-10 rounded-xl transition-colors duration-200 shadow-sm uppercase text-sm tracking-wide"
             >
               RTI Act, 2005 (Amended)-English Version
             </a>

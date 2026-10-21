@@ -47,18 +47,18 @@ export default function IncubationCenter() {
       <Header />
 
       {/* Hero Banner */}
-      <section className="bg-[#006837] py-16 px-4">
+      <section className="bg-[#0b6d41] py-16 px-4">
         <div className="max-w-5xl mx-auto">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-3 uppercase tracking-wide">
             INCUBATION CENTER
           </h1>
-          <h2 className="text-xl md:text-2xl font-bold text-[#7cb983] mb-1">
+          <h2 className="text-xl md:text-2xl font-bold text-[#ffde59] mb-1">
             Nattraja Incubation Forum
           </h2>
           <p className="text-white/80 font-semibold text-base md:text-lg mb-5">
             India&apos;s Bioconvergence Focused Incubation Center
           </p>
-          <div className="w-20 h-1 bg-[#7cb983] mb-6 rounded-full" />
+          <div className="w-20 h-1 bg-[#ffde59] mb-6 rounded-full" />
           <p className="hero-description text-white/85 text-base leading-relaxed max-w-3xl">
             Nattraja Incubation Forum (NIF), also known as NLB Nattraja Launchpad for Bioconvergence, is India&apos;s pioneering incubation center dedicated to the field of bioconvergence. Affectionately referred to as the NLB Nattraja Launchpad, NIF, within the esteemed JKKN Group Institution, is the nation&apos;s first incubation center committed to healthcare innovation. Thriving on transformation and innovation, NIF is a dynamic space where minds unite to push boundaries in healthcare and technology. It sets an unparalleled precedent, catalyzing groundbreaking advancements in healthcare. More than a physical space, NIF is a crucible of ideas, a sanctuary for pioneers, and a haven for those who dream beyond boundaries. As the dawn of bioconvergence unfolds, Nattraja Incubation Forum stands as India&apos;s commitment to shaping the future of healthcare through innovation.
           </p>
@@ -70,7 +70,7 @@ export default function IncubationCenter() {
 
           {/* About NIF */}
           <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
-            <div className="bg-[#006837] px-6 py-4">
+            <div className="bg-[#0b6d41] px-6 py-4">
               <h2 className="text-white font-bold text-base md:text-lg">About Nattraja Incubation Forum (NIF)</h2>
             </div>
             <div className="px-6 py-5">
@@ -82,7 +82,7 @@ export default function IncubationCenter() {
 
           {/* Our Vision */}
           <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
-            <div className="bg-[#006837] px-6 py-4">
+            <div className="bg-[#0b6d41] px-6 py-4">
               <h2 className="text-white font-bold text-base md:text-lg">Our Vision</h2>
             </div>
             <div className="px-6 py-5">
@@ -94,21 +94,21 @@ export default function IncubationCenter() {
 
           {/* Our Goals */}
           <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
-            <div className="bg-[#006837] px-6 py-4">
+            <div className="bg-[#0b6d41] px-6 py-4">
               <h2 className="text-white font-bold text-base md:text-lg">Our Goals</h2>
             </div>
             <div className="px-6 pt-5 pb-2">
               <p className="text-gray-700 leading-relaxed text-sm md:text-base mb-5">
                 Nurturing Innovation, Transforming Industries Welcome to the forefront of ingenuity and progress, where innovation is nurtured to transform industries.  we are dedicated to fostering a culture of creativity and forward-thinking that propels us beyond the boundaries of conventional practices. Our commitment to nurturing innovation is the driving force behind our transformative impact on diverse industries.
               </p>
-              <p className="text-sm font-bold text-[#006837] uppercase tracking-wide mb-4">
+              <p className="text-sm font-bold text-[#0b6d41] uppercase tracking-wide mb-4">
                 NIF aims to achieve the following outcomes:
               </p>
             </div>
             <ul className="px-6 pb-6 space-y-3">
               {nifOutcomes.map((item, i) => (
-                <li key={i} className="flex items-start gap-4 bg-[#FBFBEE] border border-[#7cb983]/30 rounded-xl p-4">
-                  <div className="flex-shrink-0 w-7 h-7 rounded-full bg-[#006837] text-white flex items-center justify-center text-xs font-bold mt-0.5">
+                <li key={i} className="flex items-start gap-4 bg-[#FBFBEE] border border-[#0f8f56]/30 rounded-xl p-4">
+                  <div className="flex-shrink-0 w-7 h-7 rounded-full bg-[#0b6d41] text-white flex items-center justify-center text-xs font-bold mt-0.5">
                     {i + 1}
                   </div>
                   <p className="text-sm md:text-base text-gray-700 leading-relaxed">{item}</p>
@@ -119,7 +119,7 @@ export default function IncubationCenter() {
 
           {/* Our Commitment */}
           <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
-            <div className="bg-[#006837] px-6 py-4">
+            <div className="bg-[#0b6d41] px-6 py-4">
               <h2 className="text-white font-bold text-base md:text-lg">Our Commitment</h2>
             </div>
             <div className="px-6 py-5">
@@ -130,7 +130,7 @@ export default function IncubationCenter() {
           </div>
 
           {/* CTA / Contact */}
-          <div className="bg-[#006837] rounded-2xl p-6 md:p-8">
+          <div className="bg-[#0b6d41] rounded-2xl p-6 md:p-8">
             <h3 className="text-white font-bold text-lg md:text-xl mb-2">
               Call Us Now+919688232957
             </h3>
@@ -141,7 +141,7 @@ export default function IncubationCenter() {
               href="/pdf/NIF-Nattraja-Launchpad-for-Bioconvergence-INCUBATION-CENTER.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-white hover:bg-[#FBFBEE] text-[#006837] font-bold py-3 px-10 rounded-xl transition-colors duration-200 text-sm"
+              className="inline-block bg-white hover:bg-[#FBFBEE] text-[#0b6d41] font-bold py-3 px-10 rounded-xl transition-colors duration-200 text-sm"
             >
               Nattraja Launchpad for Bioconvergence
             </a>

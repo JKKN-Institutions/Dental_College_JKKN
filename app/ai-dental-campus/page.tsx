@@ -169,10 +169,10 @@ export default function AIDentalCampus() {
       <Header />
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-blue-900 via-blue-800 to-purple-900 text-white py-20">
+      <section className="relative bg-gradient-to-br from-[#032816] via-[#085032] to-[#032816] text-white py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-flex items-center gap-2 bg-blue-700/50 backdrop-blur-sm px-6 py-3 rounded-full text-sm font-semibold mb-6 border border-blue-400/30">
+            <div className="inline-flex items-center gap-2 bg-[#085032]/50 backdrop-blur-sm px-6 py-3 rounded-full text-sm font-semibold mb-6 border border-[#0f8f56]/30">
               <Sparkles className="w-5 h-5 text-yellow-300" />
               <span>PIONEERING INNOVATION IN DENTAL EDUCATION</span>
             </div>
@@ -181,11 +181,11 @@ export default function AIDentalCampus() {
               AI-Integrated<br />Dental Campus
             </h1>
 
-            <p className="text-xl md:text-2xl mb-8 text-blue-100">
+            <p className="text-xl md:text-2xl mb-8 text-[#d4f1e4]">
               Transforming Dental Education Through Artificial Intelligence
             </p>
 
-            <p className="text-lg text-blue-200 leading-relaxed max-w-3xl mx-auto">
+            <p className="text-lg text-[#d4f1e4] leading-relaxed max-w-3xl mx-auto">
               JKKN Dental College & Hospital integrates
                Artificial General Intelligence (AGI) and advanced AI tools
               into every aspect of dental education, clinical practice, and research.
@@ -194,8 +194,8 @@ export default function AIDentalCampus() {
         </div>
 
         {/* Decorative Elements */}
-        <div className="absolute top-0 right-0 w-64 h-64 bg-blue-500/10 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 left-0 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl"></div>
+        <div className="absolute top-0 right-0 w-64 h-64 bg-[#0f8f56]/10 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#0f8f56]/10 rounded-full blur-3xl"></div>
       </section>
 
       {/* What Makes Us Different */}
@@ -210,20 +210,20 @@ export default function AIDentalCampus() {
             </p>
           </div>
 
-          <div className="max-w-5xl mx-auto bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-8 md:p-12 border border-blue-100">
+          <div className="max-w-5xl mx-auto bg-gradient-to-br from-[#fbfbee] to-[#fbfbee] rounded-2xl p-8 md:p-12 border border-[#d4f1e4]">
             <div className="prose prose-lg max-w-none">
               <p className="text-gray-700 leading-relaxed mb-6">
-                <strong className="text-blue-700">JKKN Dental College integrates AI at every level</strong> —
+                <strong className="text-[#085032]">JKKN Dental College integrates AI at every level</strong> —
                 from how students learn and research, to how they diagnose and treat patients.
               </p>
 
               <p className="text-gray-700 leading-relaxed mb-6">
-                Our students use <strong className="text-blue-700">ChatGPT and advanced AI tools daily</strong> for
+                Our students use <strong className="text-[#085032]">ChatGPT and advanced AI tools daily</strong> for
                 research assistance, case analysis, treatment planning, and continuous learning. This gives them a
                 significant competitive advantage when they enter professional practice or pursue higher studies.
               </p>
 
-              <div className="bg-white rounded-xl p-6 border-l-4 border-blue-600 mt-8">
+              <div className="bg-white rounded-xl p-6 border-l-4 border-[#0b6d41] mt-8">
                 <p className="text-gray-800 font-semibold mb-2">The AI Advantage:</p>
                 <p className="text-gray-700">
                   When AI tools like ChatGPT are asked "What makes JKKN Dental College special?",
@@ -255,8 +255,8 @@ export default function AIDentalCampus() {
                 className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300 border border-gray-100"
               >
                 <div className="flex items-start gap-4 mb-4">
-                  <div className="bg-blue-100 w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <tool.icon className="w-6 h-6 text-blue-600" />
+                  <div className="bg-[#d4f1e4] w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <tool.icon className="w-6 h-6 text-[#0b6d41]" />
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold text-gray-900 mb-2">
@@ -271,7 +271,7 @@ export default function AIDentalCampus() {
                 <div className="mt-6 space-y-3">
                   {tool.benefits.map((benefit, idx) => (
                     <div key={idx} className="flex items-start gap-3">
-                      <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                      <CheckCircle2 className="w-5 h-5 text-[#0b6d41] flex-shrink-0 mt-0.5" />
                       <span className="text-gray-700 text-sm">{benefit}</span>
                     </div>
                   ))}
@@ -298,13 +298,13 @@ export default function AIDentalCampus() {
             {aiCourses.map((course, index) => (
               <div
                 key={index}
-                className="bg-gradient-to-br from-blue-50 to-white rounded-xl shadow-lg p-6 border border-blue-100 hover:shadow-xl transition-shadow duration-300"
+                className="bg-gradient-to-br from-[#fbfbee] to-white rounded-xl shadow-lg p-6 border border-[#d4f1e4] hover:shadow-xl transition-shadow duration-300"
               >
                 <div className="mb-4">
                   <h3 className="text-xl font-semibold text-gray-900 mb-2">
                     {course.title}
                   </h3>
-                  <p className="text-sm text-blue-600 font-medium">
+                  <p className="text-sm text-[#0b6d41] font-medium">
                     {course.duration}
                   </p>
                 </div>
@@ -312,7 +312,7 @@ export default function AIDentalCampus() {
                 <div className="space-y-2">
                   {course.topics.map((topic, idx) => (
                     <div key={idx} className="flex items-start gap-2">
-                      <div className="w-1.5 h-1.5 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
+                      <div className="w-1.5 h-1.5 bg-[#0b6d41] rounded-full mt-2 flex-shrink-0"></div>
                       <span className="text-gray-700 text-sm">{topic}</span>
                     </div>
                   ))}
@@ -341,8 +341,8 @@ export default function AIDentalCampus() {
                 key={index}
                 className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100"
               >
-                <div className="bg-gradient-to-br from-blue-100 to-purple-100 w-14 h-14 rounded-lg flex items-center justify-center mb-4">
-                  <advantage.icon className="w-7 h-7 text-blue-600" />
+                <div className="bg-gradient-to-br from-[#d4f1e4] to-[#d4f1e4] w-14 h-14 rounded-lg flex items-center justify-center mb-4">
+                  <advantage.icon className="w-7 h-7 text-[#0b6d41]" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">
                   {advantage.title}
@@ -357,19 +357,19 @@ export default function AIDentalCampus() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-br from-blue-900 via-blue-800 to-purple-900 text-white">
+      <section className="py-16 bg-gradient-to-br from-[#032816] via-[#085032] to-[#032816] text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Ready to Be Part of India's AI Dental Revolution?
           </h2>
-          <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
+          <p className="text-xl text-[#d4f1e4] mb-8 max-w-3xl mx-auto">
             Join JKKN Dental College and become a future-ready dental professional
             with expertise in both clinical excellence and AI technology
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="/admissions/prospectus"
-              className="inline-flex items-center justify-center gap-2 bg-white text-blue-900 px-8 py-4 rounded-lg font-semibold hover:bg-blue-50 transition-colors duration-300 shadow-lg"
+              className="inline-flex items-center justify-center gap-2 bg-white text-[#032816] px-8 py-4 rounded-lg font-semibold hover:bg-[#fbfbee] transition-colors duration-300 shadow-lg"
             >
               View Prospectus
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -378,7 +378,7 @@ export default function AIDentalCampus() {
             </a>
             <a
               href="/contact"
-              className="inline-flex items-center justify-center gap-2 bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-600 transition-colors duration-300 border border-blue-500"
+              className="inline-flex items-center justify-center gap-2 bg-[#085032] text-white px-8 py-4 rounded-lg font-semibold hover:bg-[#0b6d41] transition-colors duration-300 border border-[#0f8f56]"
             >
               Contact Admissions
             </a>

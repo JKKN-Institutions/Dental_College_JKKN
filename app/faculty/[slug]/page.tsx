@@ -186,7 +186,7 @@ export default async function FacultyProfilePage({
   const sectionCard = 'bg-white rounded-2xl border border-gray-100 shadow-sm p-6 mb-4';
   const sectionTitle = 'text-xl font-bold text-gray-900 flex items-center gap-3 mb-4';
   const iconBox = 'w-10 h-10 rounded-xl flex items-center justify-center text-lg flex-shrink-0';
-  const tableHead = 'text-xs font-semibold text-[#1B5E20] uppercase tracking-wide';
+  const tableHead = 'text-xs font-semibold text-[#0b6d41] uppercase tracking-wide';
   const chip = 'px-3 py-1.5 rounded-full border border-gray-200 text-sm text-gray-700';
 
   // Measured 2026-09-18: all 46 live faculty profiles shipped ZERO JSON-LD. A profile is the one
@@ -241,13 +241,13 @@ export default async function FacultyProfilePage({
       <StructuredData data={breadcrumbSchema} />
       {profileFaqSchema && <StructuredData data={profileFaqSchema} />}
       <Header />
-      <main className="min-h-screen bg-[#FBF8F3]">
+      <main className="min-h-screen bg-[#fbfbee]">
         {/* ── Hero ── */}
-        <section className="bg-[#1B5E20] px-4 py-10">
+        <section className="bg-[#0b6d41] px-4 py-10">
           <div className="max-w-4xl mx-auto">
             <Link
               href="/faculty/"
-              className="inline-flex items-center gap-1.5 text-green-300 hover:text-white text-sm mb-6 transition"
+              className="inline-flex items-center gap-1.5 text-[#0b6d41] hover:text-white text-sm mb-6 transition"
             >
               <ArrowLeft className="w-4 h-4" />
               Back to Faculty
@@ -255,20 +255,20 @@ export default async function FacultyProfilePage({
 
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6">
               {/* Photo / Initials */}
-              <div className="w-28 h-28 rounded-full border-4 border-[#FFC107] overflow-hidden bg-white flex items-center justify-center flex-shrink-0">
+              <div className="w-28 h-28 rounded-full border-4 border-[#ffde59] overflow-hidden bg-white flex items-center justify-center flex-shrink-0">
                 {m.photo_url ? (
                   <img src={m.photo_url} alt={m.name} className="w-full h-full object-cover" />
                 ) : (
-                  <span className="text-[#1B5E20] text-2xl font-bold">{initials}</span>
+                  <span className="text-[#0b6d41] text-2xl font-bold">{initials}</span>
                 )}
               </div>
 
               <div className="flex-1">
-                <p className="text-[#FFC107] text-xs font-semibold tracking-widest uppercase mb-1">
+                <p className="text-[#ffde59] text-xs font-semibold tracking-widest uppercase mb-1">
                   JKKN DENTAL COLLEGE &amp; HOSPITAL
                 </p>
                 <h1 className="text-3xl sm:text-4xl font-bold text-white">{m.name}</h1>
-                <p className="text-green-200 mt-1">
+                <p className="text-[#0b6d41] mt-1">
                   {m.designation}{m.department ? ` — ${m.department}` : ''}
                 </p>
 
@@ -296,25 +296,25 @@ export default async function FacultyProfilePage({
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
               {m.experience_years > 0 && (
                 <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-4 text-center">
-                  <p className="text-3xl font-bold text-[#1B5E20]">{m.experience_years}+</p>
+                  <p className="text-3xl font-bold text-[#0b6d41]">{m.experience_years}+</p>
                   <p className="text-sm text-gray-500 mt-1">Years Experience</p>
                 </div>
               )}
               {m.research_papers_count > 0 && (
                 <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-4 text-center">
-                  <p className="text-3xl font-bold text-[#1B5E20]">{m.research_papers_count}</p>
+                  <p className="text-3xl font-bold text-[#0b6d41]">{m.research_papers_count}</p>
                   <p className="text-sm text-gray-500 mt-1">Research Papers</p>
                 </div>
               )}
               {m.phd_scholars_count > 0 && (
                 <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-4 text-center">
-                  <p className="text-3xl font-bold text-[#1B5E20]">{m.phd_scholars_count}</p>
+                  <p className="text-3xl font-bold text-[#0b6d41]">{m.phd_scholars_count}</p>
                   <p className="text-sm text-gray-500 mt-1">PhD Scholars</p>
                 </div>
               )}
               {m.awards_won_count > 0 && (
                 <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-4 text-center">
-                  <p className="text-3xl font-bold text-[#1B5E20]">{m.awards_won_count}</p>
+                  <p className="text-3xl font-bold text-[#0b6d41]">{m.awards_won_count}</p>
                   <p className="text-sm text-gray-500 mt-1">Awards Won</p>
                 </div>
               )}
@@ -332,7 +332,7 @@ export default async function FacultyProfilePage({
                 <span className={`${iconBox} bg-gray-100`}>👤</span>
                 Professional Summary
               </h2>
-              <div className="border-l-4 border-[#1B5E20] pl-4 text-gray-700 leading-relaxed">
+              <div className="border-l-4 border-[#0b6d41] pl-4 text-gray-700 leading-relaxed">
                 {m.summary}
               </div>
             </div>
@@ -352,7 +352,7 @@ export default async function FacultyProfilePage({
                   <div key={i} className="rounded-xl border border-gray-100 bg-gray-50 p-4">
                     <div className="flex items-start justify-between gap-3 mb-2">
                       <p className="font-semibold text-gray-900 text-base">{q.degree}</p>
-                      <span className="text-sm font-bold text-[#1B5E20] whitespace-nowrap">{q.year}</span>
+                      <span className="text-sm font-bold text-[#0b6d41] whitespace-nowrap">{q.year}</span>
                     </div>
                     {q.specialisation && (
                       <p className="text-sm text-gray-700 mb-1">
@@ -386,7 +386,7 @@ export default async function FacultyProfilePage({
                       <td className="py-3 pr-4 font-semibold text-gray-900">{q.degree}</td>
                       <td className="py-3 pr-4 text-gray-600">{q.specialisation}</td>
                       <td className="py-3 pr-4 text-gray-600">{q.university}</td>
-                      <td className="py-3 text-right font-bold text-[#1B5E20]">{q.year}</td>
+                      <td className="py-3 text-right font-bold text-[#0b6d41]">{q.year}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -398,7 +398,7 @@ export default async function FacultyProfilePage({
           {areasOfSpecialisation.length > 0 && (
             <div className={sectionCard}>
               <h2 className={sectionTitle}>
-                <span className={`${iconBox} bg-orange-50`}>✦</span>
+                <span className={`${iconBox} bg-[#fbfbee]`}>✦</span>
                 Areas of Specialisation
               </h2>
               <div className="flex flex-wrap gap-2">
@@ -413,23 +413,23 @@ export default async function FacultyProfilePage({
           {experienceEntries.length > 0 && (
             <div className={sectionCard}>
               <h2 className={sectionTitle}>
-                <span className={`${iconBox} bg-red-50`}>💼</span>
+                <span className={`${iconBox} bg-[#fbfbee]`}>💼</span>
                 Experience
               </h2>
 
               {teachingExp.length > 0 && (
                 <div className="mb-6">
                   <p className="text-xs font-semibold text-gray-400 tracking-widest uppercase mb-3 flex items-center gap-2">
-                    <span className="w-4 h-px bg-[#1B5E20] inline-block" />
+                    <span className="w-4 h-px bg-[#0b6d41] inline-block" />
                     TEACHING{teachingYears > 0 ? ` · ${teachingYears} YEARS` : ''}
                   </p>
                   <div className="relative pl-5 border-l-2 border-gray-200 space-y-5">
                     {teachingExp.map((entry, i) => (
                       <div key={i} className="relative">
                         {i === 0 && (
-                          <span className="absolute -left-[1.4rem] top-1 w-3 h-3 rounded-full bg-[#1B5E20] border-2 border-white shadow" />
+                          <span className="absolute -left-[1.4rem] top-1 w-3 h-3 rounded-full bg-[#0b6d41] border-2 border-white shadow" />
                         )}
-                        <p className="text-xs font-semibold text-[#1B5E20] uppercase tracking-wide mb-0.5">
+                        <p className="text-xs font-semibold text-[#0b6d41] uppercase tracking-wide mb-0.5">
                           {entry.period_start}{entry.period_end ? ` – ${entry.period_end.toUpperCase()}` : ''}
                         </p>
                         <p className="font-semibold text-gray-900 text-sm">{entry.role}</p>
@@ -446,16 +446,16 @@ export default async function FacultyProfilePage({
               {clinicalExp.length > 0 && (
                 <div>
                   <p className="text-xs font-semibold text-gray-400 tracking-widest uppercase mb-3 flex items-center gap-2">
-                    <span className="w-4 h-px bg-[#1B5E20] inline-block" />
+                    <span className="w-4 h-px bg-[#0b6d41] inline-block" />
                     CLINICAL{clinicalYears > 0 ? ` · ${clinicalYears} YEARS` : ''}
                   </p>
                   <div className="relative pl-5 border-l-2 border-gray-200 space-y-5">
                     {clinicalExp.map((entry, i) => (
                       <div key={i} className="relative">
                         {i === 0 && (
-                          <span className="absolute -left-[1.4rem] top-1 w-3 h-3 rounded-full bg-[#1B5E20] border-2 border-white shadow" />
+                          <span className="absolute -left-[1.4rem] top-1 w-3 h-3 rounded-full bg-[#0b6d41] border-2 border-white shadow" />
                         )}
-                        <p className="text-xs font-semibold text-[#1B5E20] uppercase tracking-wide mb-0.5">
+                        <p className="text-xs font-semibold text-[#0b6d41] uppercase tracking-wide mb-0.5">
                           {entry.period_start}{entry.period_end ? ` – ${entry.period_end.toUpperCase()}` : ''}
                         </p>
                         <p className="font-semibold text-gray-900 text-sm">{entry.role}</p>
@@ -475,7 +475,7 @@ export default async function FacultyProfilePage({
           {(researchFocus.length > 0 || publications.length > 0 || fundedResearch.length > 0 || m.google_scholar_url || m.researchgate_url || m.orcid_url) && (
             <div className={sectionCard}>
               <h2 className={sectionTitle}>
-                <span className={`${iconBox} bg-blue-50`}>📖</span>
+                <span className={`${iconBox} bg-[#fbfbee]`}>📖</span>
                 Research &amp; Publications
               </h2>
 
@@ -483,7 +483,7 @@ export default async function FacultyProfilePage({
               {researchFocus.length > 0 && (
                 <div className="mb-5">
                   <p className="text-xs font-semibold text-gray-400 tracking-widest uppercase mb-2 flex items-center gap-2">
-                    <span className="w-4 h-px bg-[#1B5E20] inline-block" />
+                    <span className="w-4 h-px bg-[#0b6d41] inline-block" />
                     RESEARCH FOCUS
                   </p>
                   <div className="flex flex-wrap gap-2">
@@ -498,13 +498,13 @@ export default async function FacultyProfilePage({
               {publications.length > 0 && (
                 <div className="mb-5">
                   <p className="text-xs font-semibold text-gray-400 tracking-widest uppercase mb-3 flex items-center gap-2">
-                    <span className="w-4 h-px bg-[#1B5E20] inline-block" />
+                    <span className="w-4 h-px bg-[#0b6d41] inline-block" />
                     SELECTED PUBLICATIONS
                   </p>
                   <div className="space-y-3">
                     {publications.map((pub, i) => (
                       <div key={i} className="flex gap-3 bg-gray-50 rounded-xl p-4">
-                        <div className="w-8 h-8 rounded-lg bg-[#1B5E20] text-white text-xs font-bold flex items-center justify-center flex-shrink-0">
+                        <div className="w-8 h-8 rounded-lg bg-[#0b6d41] text-white text-xs font-bold flex items-center justify-center flex-shrink-0">
                           {i + 1}
                         </div>
                         <div>
@@ -514,12 +514,12 @@ export default async function FacultyProfilePage({
                           </p>
                           <div className="flex gap-3 mt-1.5">
                             {pub.doi_url && (
-                              <a href={pub.doi_url} target="_blank" rel="noopener noreferrer" className="text-xs font-semibold text-[#1B5E20] hover:underline flex items-center gap-0.5">
+                              <a href={pub.doi_url} target="_blank" rel="noopener noreferrer" className="text-xs font-semibold text-[#0b6d41] hover:underline flex items-center gap-0.5">
                                 DOI <ExternalLink className="w-3 h-3" />
                               </a>
                             )}
                             {pub.pubmed_url && (
-                              <a href={pub.pubmed_url} target="_blank" rel="noopener noreferrer" className="text-xs font-semibold text-[#1B5E20] hover:underline flex items-center gap-0.5">
+                              <a href={pub.pubmed_url} target="_blank" rel="noopener noreferrer" className="text-xs font-semibold text-[#0b6d41] hover:underline flex items-center gap-0.5">
                                 PUBMED <ExternalLink className="w-3 h-3" />
                               </a>
                             )}
@@ -535,7 +535,7 @@ export default async function FacultyProfilePage({
               {fundedResearch.length > 0 && (
                 <div className="mb-5">
                   <p className="text-xs font-semibold text-gray-400 tracking-widest uppercase mb-3 flex items-center gap-2">
-                    <span className="w-4 h-px bg-[#1B5E20] inline-block" />
+                    <span className="w-4 h-px bg-[#0b6d41] inline-block" />
                     FUNDED RESEARCH
                   </p>
 
@@ -547,7 +547,7 @@ export default async function FacultyProfilePage({
                           <p className="font-semibold text-gray-900 text-sm">{fr.project}</p>
                           <span className={`text-xs font-medium px-2.5 py-1 rounded-full whitespace-nowrap ${
                             fr.status === 'Completed'
-                              ? 'bg-green-50 text-green-700 border border-green-200'
+                              ? 'bg-green-50 text-[#085032] border border-[#d4f1e4]'
                               : 'bg-yellow-50 text-yellow-700 border border-yellow-200'
                           }`}>
                             {fr.status}
@@ -593,7 +593,7 @@ export default async function FacultyProfilePage({
                           <td className="py-3">
                             <span className={`text-xs font-medium px-2.5 py-1 rounded-full ${
                               fr.status === 'Completed'
-                                ? 'bg-green-50 text-green-700 border border-green-200'
+                                ? 'bg-green-50 text-[#085032] border border-[#d4f1e4]'
                                 : 'bg-yellow-50 text-yellow-700 border border-yellow-200'
                             }`}>
                               {fr.status}
@@ -610,25 +610,25 @@ export default async function FacultyProfilePage({
               {(m.google_scholar_url || m.researchgate_url || m.orcid_url) && (
                 <div>
                   <p className="text-xs font-semibold text-gray-400 tracking-widest uppercase mb-2 flex items-center gap-2">
-                    <span className="w-4 h-px bg-[#1B5E20] inline-block" />
+                    <span className="w-4 h-px bg-[#0b6d41] inline-block" />
                     ACADEMIC PROFILES
                   </p>
                   <div className="flex flex-wrap gap-2">
                     {m.google_scholar_url && (
                       <a href={m.google_scholar_url} target="_blank" rel="noopener noreferrer"
-                        className="flex items-center gap-1.5 text-sm px-4 py-2 rounded-lg border border-gray-200 text-gray-700 hover:border-[#1B5E20] hover:text-[#1B5E20] transition">
+                        className="flex items-center gap-1.5 text-sm px-4 py-2 rounded-lg border border-gray-200 text-gray-700 hover:border-[#0b6d41] hover:text-[#0b6d41] transition">
                         Google Scholar
                       </a>
                     )}
                     {m.researchgate_url && (
                       <a href={m.researchgate_url} target="_blank" rel="noopener noreferrer"
-                        className="flex items-center gap-1.5 text-sm px-4 py-2 rounded-lg border border-gray-200 text-gray-700 hover:border-[#1B5E20] hover:text-[#1B5E20] transition">
+                        className="flex items-center gap-1.5 text-sm px-4 py-2 rounded-lg border border-gray-200 text-gray-700 hover:border-[#0b6d41] hover:text-[#0b6d41] transition">
                         ResearchGate
                       </a>
                     )}
                     {m.orcid_url && (
                       <a href={m.orcid_url} target="_blank" rel="noopener noreferrer"
-                        className="flex items-center gap-1.5 text-sm px-4 py-2 rounded-lg border border-gray-200 text-gray-700 hover:border-[#1B5E20] hover:text-[#1B5E20] transition">
+                        className="flex items-center gap-1.5 text-sm px-4 py-2 rounded-lg border border-gray-200 text-gray-700 hover:border-[#0b6d41] hover:text-[#0b6d41] transition">
                         ORCID
                       </a>
                     )}
@@ -642,13 +642,13 @@ export default async function FacultyProfilePage({
           {certifications.length > 0 && (
             <div className={sectionCard}>
               <h2 className={sectionTitle}>
-                <span className={`${iconBox} bg-orange-50`}>🔒</span>
+                <span className={`${iconBox} bg-[#fbfbee]`}>🔒</span>
                 Certifications &amp; Training
               </h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 {certifications.map((cert, i) => (
                   <div key={i} className="flex items-start gap-2 bg-gray-50 rounded-xl p-3">
-                    <span className="w-2 h-2 rounded-full bg-[#1B5E20] mt-1.5 flex-shrink-0" />
+                    <span className="w-2 h-2 rounded-full bg-[#0b6d41] mt-1.5 flex-shrink-0" />
                     <div>
                       <p className="text-sm font-medium text-gray-900">{cert.name}</p>
                       <p className="text-xs text-gray-500">{cert.organisation}{cert.year ? ` · ${cert.year}` : ''}</p>
@@ -673,7 +673,7 @@ export default async function FacultyProfilePage({
                   <div key={i} className="rounded-xl border border-gray-100 bg-gray-50 p-4">
                     <div className="flex items-start justify-between gap-3 mb-1">
                       <p className="font-semibold text-gray-900 text-sm">{award.award}</p>
-                      <span className="text-sm font-bold text-[#1B5E20] whitespace-nowrap">{award.year}</span>
+                      <span className="text-sm font-bold text-[#0b6d41] whitespace-nowrap">{award.year}</span>
                     </div>
                     {award.body && <p className="text-sm text-gray-700">{award.body}</p>}
                   </div>
@@ -694,7 +694,7 @@ export default async function FacultyProfilePage({
                     <tr key={i} className="border-b border-gray-50 last:border-0">
                       <td className="py-3 pr-4 font-semibold text-gray-900">{award.award}</td>
                       <td className="py-3 pr-4 text-gray-600">{award.body}</td>
-                      <td className="py-3 text-right font-bold text-[#1B5E20]">{award.year}</td>
+                      <td className="py-3 text-right font-bold text-[#0b6d41]">{award.year}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -706,7 +706,7 @@ export default async function FacultyProfilePage({
           {memberships.length > 0 && (
             <div className={sectionCard}>
               <h2 className={sectionTitle}>
-                <span className={`${iconBox} bg-purple-50`}>👥</span>
+                <span className={`${iconBox} bg-[#fbfbee]`}>👥</span>
                 Professional Memberships
               </h2>
 
@@ -716,7 +716,7 @@ export default async function FacultyProfilePage({
                   <div key={i} className="rounded-xl border border-gray-100 bg-gray-50 p-4">
                     <div className="flex items-start justify-between gap-3 mb-1">
                       <p className="font-semibold text-gray-900 text-sm">{mem.organisation}</p>
-                      <span className="text-sm font-bold text-[#1B5E20] whitespace-nowrap">{mem.since}</span>
+                      <span className="text-sm font-bold text-[#0b6d41] whitespace-nowrap">{mem.since}</span>
                     </div>
                     {mem.type && <p className="text-sm text-gray-700">{mem.type}</p>}
                   </div>
@@ -737,7 +737,7 @@ export default async function FacultyProfilePage({
                     <tr key={i} className="border-b border-gray-50 last:border-0">
                       <td className="py-3 pr-4 font-semibold text-gray-900">{mem.organisation}</td>
                       <td className="py-3 pr-4 text-gray-600">{mem.type}</td>
-                      <td className="py-3 text-right font-bold text-[#1B5E20]">{mem.since}</td>
+                      <td className="py-3 text-right font-bold text-[#0b6d41]">{mem.since}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -749,7 +749,7 @@ export default async function FacultyProfilePage({
           {(m.mentoring_description || phdScholars.length > 0 || m.pg_dissertations_guided > 0 || m.ug_projects_guided > 0) && (
             <div className={sectionCard}>
               <h2 className={sectionTitle}>
-                <span className={`${iconBox} bg-indigo-50`}>🎓</span>
+                <span className={`${iconBox} bg-[#fbfbee]`}>🎓</span>
                 Student Mentoring &amp; Guidance
               </h2>
 
@@ -760,7 +760,7 @@ export default async function FacultyProfilePage({
               {phdScholars.length > 0 && (
                 <div className="mb-4">
                   <p className="text-xs font-semibold text-gray-400 tracking-widest uppercase mb-3 flex items-center gap-2">
-                    <span className="w-4 h-px bg-[#1B5E20] inline-block" />
+                    <span className="w-4 h-px bg-[#0b6d41] inline-block" />
                     PHD SCHOLARS
                   </p>
 
@@ -773,7 +773,7 @@ export default async function FacultyProfilePage({
                           <span className={`text-xs font-medium px-2.5 py-1 rounded-full whitespace-nowrap ${
                             scholar.status?.toLowerCase() === 'ongoing'
                               ? 'bg-yellow-50 text-yellow-700 border border-yellow-200'
-                              : 'bg-green-50 text-green-700 border border-green-200'
+                              : 'bg-green-50 text-[#085032] border border-[#d4f1e4]'
                           }`}>
                             {scholar.status}
                           </span>
@@ -803,7 +803,7 @@ export default async function FacultyProfilePage({
                             <span className={`text-xs font-medium px-2.5 py-1 rounded-full ${
                               scholar.status?.toLowerCase() === 'ongoing'
                                 ? 'bg-yellow-50 text-yellow-700 border border-yellow-200'
-                                : 'bg-green-50 text-green-700 border border-green-200'
+                                : 'bg-green-50 text-[#085032] border border-[#d4f1e4]'
                             }`}>
                               {scholar.status}
                             </span>
@@ -818,19 +818,19 @@ export default async function FacultyProfilePage({
               {(m.pg_dissertations_guided > 0 || m.ug_projects_guided > 0) && (
                 <div>
                   <p className="text-xs font-semibold text-gray-400 tracking-widest uppercase mb-3 flex items-center gap-2">
-                    <span className="w-4 h-px bg-[#1B5E20] inline-block" />
+                    <span className="w-4 h-px bg-[#0b6d41] inline-block" />
                     GUIDANCE SUMMARY
                   </p>
                   <div className="grid grid-cols-2 gap-4">
                     {m.pg_dissertations_guided > 0 && (
                       <div className="bg-gray-50 rounded-xl p-4 text-center">
-                        <p className="text-3xl font-bold text-[#1B5E20]">{m.pg_dissertations_guided}</p>
+                        <p className="text-3xl font-bold text-[#0b6d41]">{m.pg_dissertations_guided}</p>
                         <p className="text-sm text-gray-500 mt-1">PG Dissertations Guided</p>
                       </div>
                     )}
                     {m.ug_projects_guided > 0 && (
                       <div className="bg-gray-50 rounded-xl p-4 text-center">
-                        <p className="text-3xl font-bold text-[#1B5E20]">{m.ug_projects_guided}</p>
+                        <p className="text-3xl font-bold text-[#0b6d41]">{m.ug_projects_guided}</p>
                         <p className="text-sm text-gray-500 mt-1">UG Projects Guided</p>
                       </div>
                     )}
@@ -844,7 +844,7 @@ export default async function FacultyProfilePage({
           {faqs.length > 0 && (
             <div className={sectionCard}>
               <h2 className={sectionTitle}>
-                <span className={`${iconBox} bg-pink-50`}>❓</span>
+                <span className={`${iconBox} bg-[#fbfbee]`}>❓</span>
                 Frequently Asked Questions
               </h2>
               <div className="space-y-3">

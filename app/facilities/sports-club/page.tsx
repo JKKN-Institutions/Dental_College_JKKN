@@ -83,12 +83,12 @@ export default function SportsClub() {
       <Header />
 
       {/* Hero Banner */}
-      <section className="bg-[#006837] py-16 px-4">
+      <section className="bg-[#0b6d41] py-16 px-4">
         <div className="max-w-6xl mx-auto">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
             Sports club
           </h1>
-          <div className="h-1 w-24 bg-[#7cb983] rounded-full" />
+          <div className="h-1 w-24 bg-[#ffde59] rounded-full" />
         </div>
       </section>
 
@@ -127,7 +127,7 @@ export default function SportsClub() {
       {/* Intro Paragraph */}
       <section className="bg-[#FBFBEE] py-10 px-4">
         <div className="max-w-6xl mx-auto">
-          <p className="text-base md:text-lg leading-relaxed text-gray-700 border-l-4 border-[#7cb983] pl-6">
+          <p className="text-base md:text-lg leading-relaxed text-gray-700 border-l-4 border-[#0f8f56] pl-6">
             We take sports seriously, making fitness an integral part of life on campus. Our sports facility is where champions are made, friendships are forged, and a healthier you is discovered. Here&apos;s what sets our sports club apart:
           </p>
         </div>
@@ -139,12 +139,12 @@ export default function SportsClub() {
           {features.map(({ icon: Icon, title, description }) => (
             <div
               key={title}
-              className="bg-[#FBFBEE] rounded-2xl p-6 border border-[#7cb983]/20 hover:shadow-md transition-shadow duration-300 flex flex-col gap-4"
+              className="bg-[#FBFBEE] rounded-2xl p-6 border border-[#0f8f56]/20 hover:shadow-md transition-shadow duration-300 flex flex-col gap-4"
             >
-              <div className="w-12 h-12 rounded-full bg-[#006837] flex items-center justify-center flex-shrink-0">
+              <div className="w-12 h-12 rounded-full bg-[#0b6d41] flex items-center justify-center flex-shrink-0">
                 <Icon className="text-white w-6 h-6" />
               </div>
-              <h2 className="text-lg font-bold text-[#006837]">{title}</h2>
+              <h2 className="text-lg font-bold text-[#0b6d41]">{title}</h2>
               <p className="text-gray-600 text-sm leading-relaxed">{description}</p>
             </div>
           ))}
@@ -152,7 +152,7 @@ export default function SportsClub() {
       </section>
 
       {/* Closing Statement */}
-      <section className="bg-[#006837] py-12 px-4">
+      <section className="bg-[#0b6d41] py-12 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-white text-base md:text-lg leading-relaxed">
             Whether you aim to set a new record, stay fit, or forge lasting friendships, our sports club at JKKN Institutions is the place to be.

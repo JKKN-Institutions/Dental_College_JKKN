@@ -39,9 +39,9 @@ export default function Collaboration() {
       <Header />
 
       {/* Hero Banner */}
-      <section className="bg-gradient-to-br from-[#006837] via-[#00572e] to-[#003d20] py-16 px-4">
+      <section className="bg-gradient-to-br from-[#0b6d41] via-[#00572e] to-[#003d20] py-16 px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="mb-4 text-sm text-green-300">
+          <div className="mb-4 text-sm text-[#d4f1e4]">
             <span>Home</span>
             <span className="mx-2">›</span>
             <span>COLLABORATION</span>
@@ -55,8 +55,8 @@ export default function Collaboration() {
       {/* Content Section */}
       <section className="bg-[#FBFBEE] py-14 px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="bg-white rounded-xl p-8 md:p-10 shadow-sm border border-green-100">
-            <div className="border-l-4 border-[#7cb983] pl-6">
+          <div className="bg-white rounded-xl p-8 md:p-10 shadow-sm border border-[#d4f1e4]">
+            <div className="border-l-4 border-[#0f8f56] pl-6">
               <p className="hero-description text-gray-700 leading-relaxed text-base md:text-lg text-justify">
                 JKKN Dental College, we believe in the power of collaboration and research to drive innovation and excellence in the field of dentistry. Through strategic partnerships with industry leaders, academic institutions, and research organizations, we provide our learners and senior learners with unparalleled opportunities to engage in cutting-edge research projects and initiatives. By fostering a culture of collaboration, we aim to create a vibrant ecosystem where ideas flourish, knowledge is shared, and breakthroughs are made. Our commitment to collaboration and research not only enhances the academic experience for our learners but also contributes to advancements in dental education and patient care. Join us at JKKNDental College and embark on a journey of discovery and innovation in the world of dentistry.
               </p>

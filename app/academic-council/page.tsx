@@ -36,20 +36,20 @@ export default function AcademicCouncil() {
         <Header />
 
         {/* Hero Section */}
-        <div className="bg-[#006837] pt-16 overflow-hidden">
+        <div className="bg-[#0b6d41] pt-16 overflow-hidden">
           <div className="max-w-4xl mx-auto px-4 py-10 flex flex-col items-center gap-6">
             <div className="flex items-center gap-4">
-              <div className="h-px w-16 sm:w-32 bg-[#7cb983] opacity-60" />
-              <div className="w-2 h-2 rounded-full bg-[#7cb983]" />
-              <div className="h-px w-16 sm:w-32 bg-[#7cb983] opacity-60" />
+              <div className="h-px w-16 sm:w-32 bg-[#ffde59] opacity-60" />
+              <div className="w-2 h-2 rounded-full bg-[#ffde59]" />
+              <div className="h-px w-16 sm:w-32 bg-[#ffde59] opacity-60" />
             </div>
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white text-center tracking-wide">
               ACADEMIC COUNCIL
             </h1>
             <div className="flex items-center gap-4">
-              <div className="h-px w-16 sm:w-32 bg-[#7cb983] opacity-60" />
-              <div className="w-2 h-2 rounded-full bg-[#7cb983]" />
-              <div className="h-px w-16 sm:w-32 bg-[#7cb983] opacity-60" />
+              <div className="h-px w-16 sm:w-32 bg-[#ffde59] opacity-60" />
+              <div className="w-2 h-2 rounded-full bg-[#ffde59]" />
+              <div className="h-px w-16 sm:w-32 bg-[#ffde59] opacity-60" />
             </div>
           </div>
           <div className="overflow-hidden leading-none">
@@ -68,7 +68,7 @@ export default function AcademicCouncil() {
         <section className="bg-[#FBFBEE] pt-2 pb-8 px-4 sm:px-6 lg:px-8">
           <div className="max-w-5xl mx-auto">
             <div className="bg-white rounded-2xl shadow-md overflow-hidden border border-gray-100">
-              <div className="h-1.5 bg-gradient-to-r from-[#006837] to-[#7cb983]" />
+              <div className="h-1.5 bg-gradient-to-r from-[#0b6d41] to-[#0f8f56]" />
               <div className="p-8">
                 <p className="text-base leading-relaxed text-gray-700 text-justify">
                   The Academic Council plays a pivotal role in shaping and enhancing the academic framework of our dental college. Committed to excellence in education, the committee ensures that the learning framework remains dynamic, learner-centred, and aligned with contemporary advancements in dental sciences.
@@ -84,12 +84,12 @@ export default function AcademicCouncil() {
 
             {/* Objectives */}
             <div className="bg-white rounded-2xl shadow-md overflow-hidden border border-gray-100">
-              <div className="h-1.5 bg-gradient-to-r from-[#006837] to-[#7cb983]" />
+              <div className="h-1.5 bg-gradient-to-r from-[#0b6d41] to-[#0f8f56]" />
               <div className="p-8">
                 <div className="flex items-center gap-2 mb-5">
-                  <div className="w-1 h-8 bg-[#006837] rounded-full" />
-                  <div className="w-1 h-5 bg-[#7cb983] rounded-full" />
-                  <h2 className="text-lg md:text-xl font-bold text-[#006837] ml-2">
+                  <div className="w-1 h-8 bg-[#0b6d41] rounded-full" />
+                  <div className="w-1 h-5 bg-[#ffde59] rounded-full" />
+                  <h2 className="text-lg md:text-xl font-bold text-[#0b6d41] ml-2">
                     Objectives
                   </h2>
                 </div>
@@ -102,7 +102,7 @@ export default function AcademicCouncil() {
                     'To incorporate community-based learning initiatives to enhance social responsibility and patient-centred care.',
                   ].map((item) => (
                     <div key={item} className="flex items-start gap-3 bg-[#FBFBEE] rounded-lg px-4 py-3">
-                      <span className="text-[#006837] font-bold flex-shrink-0 mt-0.5">•</span>
+                      <span className="text-[#0b6d41] font-bold flex-shrink-0 mt-0.5">•</span>
                       <p className="text-sm sm:text-base text-gray-700">{item}</p>
                     </div>
                   ))}
@@ -112,12 +112,12 @@ export default function AcademicCouncil() {
 
             {/* Functions */}
             <div className="bg-white rounded-2xl shadow-md overflow-hidden border border-gray-100">
-              <div className="h-1.5 bg-gradient-to-r from-[#006837] to-[#7cb983]" />
+              <div className="h-1.5 bg-gradient-to-r from-[#0b6d41] to-[#0f8f56]" />
               <div className="p-8">
                 <div className="flex items-center gap-2 mb-5">
-                  <div className="w-1 h-8 bg-[#006837] rounded-full" />
-                  <div className="w-1 h-5 bg-[#7cb983] rounded-full" />
-                  <h2 className="text-lg md:text-xl font-bold text-[#006837] ml-2">
+                  <div className="w-1 h-8 bg-[#0b6d41] rounded-full" />
+                  <div className="w-1 h-5 bg-[#ffde59] rounded-full" />
+                  <h2 className="text-lg md:text-xl font-bold text-[#0b6d41] ml-2">
                     Functions
                   </h2>
                 </div>
@@ -130,7 +130,7 @@ export default function AcademicCouncil() {
                     'Ensuring adherence to accreditation and quality assurance standards.',
                   ].map((item) => (
                     <div key={item} className="flex items-start gap-3 bg-[#FBFBEE] rounded-lg px-4 py-3">
-                      <span className="text-[#006837] font-bold flex-shrink-0 mt-0.5">•</span>
+                      <span className="text-[#0b6d41] font-bold flex-shrink-0 mt-0.5">•</span>
                       <p className="text-sm sm:text-base text-gray-700">{item}</p>
                     </div>
                   ))}
@@ -145,7 +145,7 @@ export default function AcademicCouncil() {
         <section className="bg-[#FBFBEE] pb-8 px-4 sm:px-6 lg:px-8">
           <div className="max-w-5xl mx-auto">
             <div className="bg-white rounded-2xl shadow-md overflow-hidden border border-gray-100">
-              <div className="h-1.5 bg-gradient-to-r from-[#006837] to-[#7cb983]" />
+              <div className="h-1.5 bg-gradient-to-r from-[#0b6d41] to-[#0f8f56]" />
               <div className="p-8">
                 <p className="text-base leading-relaxed text-gray-700 text-justify">
                   The Academic Council remains dedicated to fostering an engaging and progressive academic environment that equips future dental professionals with the knowledge, skills, and ethical values necessary for excellence in patient care.
@@ -159,19 +159,19 @@ export default function AcademicCouncil() {
         <section className="bg-[#FBFBEE] pb-20 px-4 sm:px-6 lg:px-8">
           <div className="max-w-5xl mx-auto">
             <div className="bg-white rounded-2xl shadow-md overflow-hidden border border-gray-100">
-              <div className="h-1.5 bg-gradient-to-r from-[#006837] to-[#7cb983]" />
+              <div className="h-1.5 bg-gradient-to-r from-[#0b6d41] to-[#0f8f56]" />
               <div className="p-8">
                 <div className="flex items-center gap-2 mb-6">
-                  <div className="w-1 h-8 bg-[#006837] rounded-full" />
-                  <div className="w-1 h-5 bg-[#7cb983] rounded-full" />
-                  <h3 className="text-lg md:text-xl font-bold text-[#006837] ml-2">
+                  <div className="w-1 h-8 bg-[#0b6d41] rounded-full" />
+                  <div className="w-1 h-5 bg-[#ffde59] rounded-full" />
+                  <h3 className="text-lg md:text-xl font-bold text-[#0b6d41] ml-2">
                     Council Members
                   </h3>
                 </div>
                 <div className="overflow-x-auto">
                   <table className="w-full border-collapse min-w-[700px]">
                     <thead>
-                      <tr className="bg-[#006837]">
+                      <tr className="bg-[#0b6d41]">
                         <th className="px-4 py-3 text-left text-xs sm:text-sm font-bold text-white whitespace-nowrap">S.No</th>
                         <th className="px-4 py-3 text-left text-xs sm:text-sm font-bold text-white">Senior Learner Name</th>
                         <th className="px-4 py-3 text-left text-xs sm:text-sm font-bold text-white">Designation</th>

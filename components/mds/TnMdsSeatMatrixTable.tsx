@@ -55,8 +55,8 @@ export default function TnMdsSeatMatrixTable({
             onClick={() => setOnlyGovt(k)}
             className={`text-xs sm:text-sm px-3 py-1.5 rounded-full border transition-colors ${
               onlyGovt === k
-                ? 'bg-[#006837] text-white border-[#006837]'
-                : 'bg-white text-[#006837] border-[#006837]/30 hover:border-[#006837]'
+                ? 'bg-[#0b6d41] text-white border-[#0b6d41]'
+                : 'bg-white text-[#0b6d41] border-[#0b6d41]/30 hover:border-[#0b6d41]'
             }`}
           >
             {k === 'all' ? 'All colleges' : k}
@@ -68,7 +68,7 @@ export default function TnMdsSeatMatrixTable({
         <button
           type="button"
           onClick={() => setSort(sort === 'total' ? 'name' : 'total')}
-          className="text-xs sm:text-sm px-3 py-1.5 rounded-full border border-[#006837]/30 text-[#006837] hover:border-[#006837]"
+          className="text-xs sm:text-sm px-3 py-1.5 rounded-full border border-[#0b6d41]/30 text-[#0b6d41] hover:border-[#0b6d41]"
         >
           {sort === 'total' ? 'By seats' : 'By name'}
         </button>
@@ -81,7 +81,7 @@ export default function TnMdsSeatMatrixTable({
             colleges affiliated to {TN_MDS_SOURCE.authority}
           </caption>
           <thead>
-            <tr className="bg-[#006837] text-white text-left">
+            <tr className="bg-[#0b6d41] text-white text-left">
               <th scope="col" className="px-3 py-3 font-semibold whitespace-nowrap">
                 College
               </th>
@@ -132,7 +132,7 @@ export default function TnMdsSeatMatrixTable({
                         {c.seats[s.key as keyof typeof c.seats]}
                       </td>
                     ))}
-                  <td className="px-3 py-2.5 text-right tabular-nums font-bold text-[#006837]">
+                  <td className="px-3 py-2.5 text-right tabular-nums font-bold text-[#0b6d41]">
                     {c.total}
                   </td>
                 </tr>
@@ -140,7 +140,7 @@ export default function TnMdsSeatMatrixTable({
             })}
           </tbody>
           <tfoot>
-            <tr className="bg-[#FBFBEE] font-bold border-t-2 border-[#006837]">
+            <tr className="bg-[#FBFBEE] font-bold border-t-2 border-[#0b6d41]">
               <th scope="row" className="px-3 py-3 text-left">
                 Tamil Nadu total
               </th>
@@ -155,7 +155,7 @@ export default function TnMdsSeatMatrixTable({
                     {s.seats}
                   </td>
                 ))}
-              <td className="px-3 py-3 text-right tabular-nums text-[#006837]">
+              <td className="px-3 py-3 text-right tabular-nums text-[#0b6d41]">
                 {TN_MDS_TOTALS.seats}
               </td>
             </tr>
@@ -169,7 +169,7 @@ export default function TnMdsSeatMatrixTable({
           href={TN_MDS_SOURCE.url}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-[#006837] underline hover:no-underline"
+          className="text-[#0b6d41] underline hover:no-underline"
         >
           {TN_MDS_SOURCE.document}
         </a>

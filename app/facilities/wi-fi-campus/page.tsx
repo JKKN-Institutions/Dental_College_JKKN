@@ -144,12 +144,12 @@ export default function WiFiCampus() {
       <Header />
 
       {/* Hero Banner */}
-      <section className="bg-[#006837] py-16 px-4">
+      <section className="bg-[#0b6d41] py-16 px-4">
         <div className="max-w-6xl mx-auto">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
             WI-FI CAMPUS
           </h1>
-          <div className="h-1 w-24 bg-[#7cb983] rounded-full" />
+          <div className="h-1 w-24 bg-[#ffde59] rounded-full" />
         </div>
       </section>
 
@@ -188,7 +188,7 @@ export default function WiFiCampus() {
       {/* WiFi Intro */}
       <section className="bg-[#FBFBEE] py-10 px-4">
         <div className="max-w-6xl mx-auto">
-          <p className="text-base md:text-lg leading-relaxed text-gray-700 border-l-4 border-[#7cb983] pl-6">
+          <p className="text-base md:text-lg leading-relaxed text-gray-700 border-l-4 border-[#0f8f56] pl-6">
             At JKKN Institutions, we recognize the indispensable role of robust internet connectivity in modern education and lifestyle. That&apos;s why we&apos;ve gone beyond merely offering WiFi access; we provide a seamless, high-speed, and secure internet experience throughout our sprawling campus.
           </p>
         </div>
@@ -200,12 +200,12 @@ export default function WiFiCampus() {
           {wifiFeatures.map(({ icon: Icon, title, content }) => (
             <div
               key={title}
-              className="bg-[#FBFBEE] rounded-2xl p-6 border border-[#7cb983]/20 hover:shadow-md transition-shadow duration-300 flex flex-col gap-4"
+              className="bg-[#FBFBEE] rounded-2xl p-6 border border-[#0f8f56]/20 hover:shadow-md transition-shadow duration-300 flex flex-col gap-4"
             >
-              <div className="w-12 h-12 rounded-full bg-[#006837] flex items-center justify-center flex-shrink-0">
+              <div className="w-12 h-12 rounded-full bg-[#0b6d41] flex items-center justify-center flex-shrink-0">
                 <Icon className="text-white w-6 h-6" />
               </div>
-              <h2 className="text-lg font-bold text-[#006837]">{title}</h2>
+              <h2 className="text-lg font-bold text-[#0b6d41]">{title}</h2>
               <div className="text-gray-600 text-sm leading-relaxed flex flex-col gap-2">{content}</div>
             </div>
           ))}
@@ -213,12 +213,12 @@ export default function WiFiCampus() {
       </section>
 
       {/* Ambulance Services Intro */}
-      <section className="bg-[#006837] py-12 px-4">
+      <section className="bg-[#0b6d41] py-12 px-4">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-xl md:text-2xl font-bold text-white mb-4">
             Ready to Respond, Ready to Serve: 24/7 Ambulance Services at JKKN Institutions
           </h2>
-          <p className="text-white/90 text-base leading-relaxed border-l-4 border-[#7cb983] pl-6">
+          <p className="text-white/90 text-base leading-relaxed border-l-4 border-[#0f8f56] pl-6">
             At JKKN Institutions, our commitment to the health and well-being of our community is unwavering. Our 24/7 ambulance services are an embodiment of this pledge, designed to provide rapid, professional, and advanced medical care during emergencies.
           </p>
         </div>
@@ -230,12 +230,12 @@ export default function WiFiCampus() {
           {ambulanceFeatures.map(({ icon: Icon, title, content }) => (
             <div
               key={title}
-              className="bg-[#FBFBEE] rounded-2xl p-6 border border-[#7cb983]/20 hover:shadow-md transition-shadow duration-300 flex flex-col gap-4"
+              className="bg-[#FBFBEE] rounded-2xl p-6 border border-[#0f8f56]/20 hover:shadow-md transition-shadow duration-300 flex flex-col gap-4"
             >
-              <div className="w-12 h-12 rounded-full bg-[#006837] flex items-center justify-center flex-shrink-0">
+              <div className="w-12 h-12 rounded-full bg-[#0b6d41] flex items-center justify-center flex-shrink-0">
                 <Icon className="text-white w-6 h-6" />
               </div>
-              <h2 className="text-lg font-bold text-[#006837]">{title}</h2>
+              <h2 className="text-lg font-bold text-[#0b6d41]">{title}</h2>
               <div className="text-gray-600 text-sm leading-relaxed flex flex-col gap-2">{content}</div>
             </div>
           ))}

@@ -32,12 +32,12 @@ export default function JobCard({ job }: JobCardProps) {
   const positions = positionsLabel(job.positions_open);
 
   return (
-    <article className="flex h-full flex-col rounded-2xl border border-[#7cb983]/30 bg-white p-6 shadow-sm">
+    <article className="flex h-full flex-col rounded-2xl border border-[#0f8f56]/30 bg-white p-6 shadow-sm">
       {job.department && (
-        <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-[#006837]">{job.department.name}</p>
+        <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-[#0b6d41]">{job.department.name}</p>
       )}
-      <h3 className="mb-3 text-lg font-bold text-[#002309]">
-        <Link href={href} className="hover:text-[#006837] hover:underline">
+      <h3 className="mb-3 text-lg font-bold text-[#032816]">
+        <Link href={href} className="hover:text-[#0b6d41] hover:underline">
           {job.title}
         </Link>
       </h3>
@@ -46,21 +46,21 @@ export default function JobCard({ job }: JobCardProps) {
           {facts.map(({ icon: Icon, label }) => (
             <li
               key={label}
-              className="inline-flex items-center gap-1.5 rounded-full bg-[#FBFBEE] px-3 py-1 text-xs font-medium text-[#002309]"
+              className="inline-flex items-center gap-1.5 rounded-full bg-[#FBFBEE] px-3 py-1 text-xs font-medium text-[#032816]"
             >
-              <Icon className="h-3.5 w-3.5 text-[#006837]" aria-hidden="true" />
+              <Icon className="h-3.5 w-3.5 text-[#0b6d41]" aria-hidden="true" />
               {label}
             </li>
           ))}
         </ul>
       )}
-      {excerpt && <p className="mb-5 line-clamp-3 text-sm text-[#002309]/80">{excerpt}</p>}
+      {excerpt && <p className="mb-5 line-clamp-3 text-sm text-[#032816]/80">{excerpt}</p>}
       <div className="mt-auto flex items-center justify-between gap-3">
-        <span className="text-xs font-medium text-[#002309]/70">{positions}</span>
+        <span className="text-xs font-medium text-[#032816]/70">{positions}</span>
         <Link
           href={href}
           aria-label={`View details and apply for ${job.title}`}
-          className="inline-flex min-h-[44px] items-center gap-2 rounded-lg bg-[#7cb983] px-5 text-sm font-semibold text-white transition-colors hover:bg-[#6ba872]"
+          className="inline-flex min-h-[44px] items-center gap-2 rounded-lg bg-[#0b6d41] px-5 text-sm font-semibold text-white transition-colors hover:bg-[#085032]"
         >
           View &amp; Apply
           <ArrowRight className="h-4 w-4" aria-hidden="true" />

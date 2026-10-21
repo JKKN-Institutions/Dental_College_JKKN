@@ -51,7 +51,7 @@ export async function generateMetadata({ params }: CareerDetailPageProps): Promi
 }
 
 const DESCRIPTION_CLASSES =
-  'text-[#002309] leading-relaxed [&_p]:mb-4 [&_ul]:mb-4 [&_ul]:list-disc [&_ul]:pl-6 [&_ol]:mb-4 [&_ol]:list-decimal [&_ol]:pl-6 [&_li]:mb-1 [&_strong]:font-semibold [&_a]:text-[#006837] [&_a]:underline [&_hr]:my-6 [&_hr]:border-[#7cb983]/30 [&_h3]:mt-6 [&_h3]:mb-2 [&_h3]:text-lg [&_h3]:font-bold [&_h3]:text-[#006837] [&_h4]:mt-4 [&_h4]:mb-2 [&_h4]:font-bold [&_blockquote]:border-l-4 [&_blockquote]:border-[#7cb983] [&_blockquote]:pl-4';
+  'text-[#032816] leading-relaxed [&_p]:mb-4 [&_ul]:mb-4 [&_ul]:list-disc [&_ul]:pl-6 [&_ol]:mb-4 [&_ol]:list-decimal [&_ol]:pl-6 [&_li]:mb-1 [&_strong]:font-semibold [&_a]:text-[#0b6d41] [&_a]:underline [&_hr]:my-6 border-[#0f8f56]/30 [&_h3]:mt-6 [&_h3]:mb-2 [&_h3]:text-lg [&_h3]:font-bold [&_h3]:text-[#0b6d41] [&_h4]:mt-4 [&_h4]:mb-2 [&_h4]:font-bold [&_blockquote]:border-l-4 border-[#0f8f56] [&_blockquote]:pl-4';
 
 export default async function CareerDetailPage({ params }: CareerDetailPageProps) {
   const { id } = await params;
@@ -93,7 +93,7 @@ export default async function CareerDetailPage({ params }: CareerDetailPageProps
       {jobPostingSchema && <JsonLd data={jobPostingSchema} />}
       <Header />
 
-      <section className="bg-[#006837] py-10 px-4">
+      <section className="bg-[#0b6d41] py-10 px-4">
         <div className="max-w-6xl mx-auto">
           <nav aria-label="Breadcrumb" className="mb-4 text-sm text-white/80">
             <ol className="flex flex-wrap items-center gap-1">
@@ -124,7 +124,7 @@ export default async function CareerDetailPage({ params }: CareerDetailPageProps
           </p>
           <a
             href="#apply"
-            className="mt-6 inline-flex min-h-[44px] items-center rounded-lg bg-[#7cb983] px-6 font-semibold text-white transition-colors hover:bg-[#6ba872]"
+            className="mt-6 inline-flex min-h-[44px] items-center rounded-lg bg-[#0b6d41] px-6 font-semibold text-white transition-colors hover:bg-[#085032]"
           >
             Apply for this role
           </a>
@@ -135,40 +135,40 @@ export default async function CareerDetailPage({ params }: CareerDetailPageProps
         <div className="max-w-6xl mx-auto">
           <Link
             href={`${CAREERS_PATH}/`}
-            className="mb-6 inline-flex min-h-[44px] items-center gap-2 font-semibold text-[#006837] hover:underline"
+            className="mb-6 inline-flex min-h-[44px] items-center gap-2 font-semibold text-[#0b6d41] hover:underline"
           >
             <ArrowLeft className="h-4 w-4" aria-hidden="true" />
             All current openings
           </Link>
 
           <div className="grid gap-8 lg:grid-cols-3 lg:items-start">
-            <article className="rounded-2xl border border-[#7cb983]/30 bg-white p-6 md:p-8 lg:col-span-2">
-              <h2 className="mb-4 text-xl font-bold text-[#006837]">About this role</h2>
+            <article className="rounded-2xl border border-[#0f8f56]/30 bg-white p-6 md:p-8 lg:col-span-2">
+              <h2 className="mb-4 text-xl font-bold text-[#0b6d41]">About this role</h2>
               {descriptionHtml ? (
                 <div className={DESCRIPTION_CLASSES} dangerouslySetInnerHTML={{ __html: descriptionHtml }} />
               ) : (
-                <p className="text-[#002309]">A detailed description for this role is not available yet.</p>
+                <p className="text-[#032816]">A detailed description for this role is not available yet.</p>
               )}
             </article>
 
             {/* Right column: apply form first, role summary below it */}
             <div className="space-y-8">
               <section id="apply" aria-labelledby="apply-heading" className="scroll-mt-28">
-                <h2 id="apply-heading" className="mb-4 text-xl font-bold text-[#006837]">
+                <h2 id="apply-heading" className="mb-4 text-xl font-bold text-[#0b6d41]">
                   Apply for this role
                 </h2>
                 <ApplyForm jobId={job.id} jobTitle={job.title} />
               </section>
 
-              <aside aria-labelledby="glance-heading" className="rounded-2xl border border-[#7cb983]/30 bg-white p-6">
-                <h2 id="glance-heading" className="mb-4 text-lg font-bold text-[#006837]">
+              <aside aria-labelledby="glance-heading" className="rounded-2xl border border-[#0f8f56]/30 bg-white p-6">
+                <h2 id="glance-heading" className="mb-4 text-lg font-bold text-[#0b6d41]">
                   Role at a glance
                 </h2>
                 <dl className="space-y-3">
                   {facts.map(({ term, value }) => (
                     <div key={term}>
-                      <dt className="text-xs font-semibold uppercase tracking-wide text-[#006837]">{term}</dt>
-                      <dd className="text-[#002309]">{value}</dd>
+                      <dt className="text-xs font-semibold uppercase tracking-wide text-[#0b6d41]">{term}</dt>
+                      <dd className="text-[#032816]">{value}</dd>
                     </div>
                   ))}
                 </dl>

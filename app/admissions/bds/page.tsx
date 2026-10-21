@@ -445,7 +445,7 @@ export default function BDSAdmissionPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 text-xs sm:text-sm text-gray-600">
           <ol className="flex flex-wrap items-center gap-1 sm:gap-2">
             <li>
-              <Link href="/" className="text-[#006837] hover:underline font-medium">
+              <Link href="/" className="text-[#0b6d41] hover:underline font-medium">
                 Home
               </Link>
             </li>
@@ -460,10 +460,10 @@ export default function BDSAdmissionPage() {
       {/* ============================================================ */}
       {/*  HERO                                                        */}
       {/* ============================================================ */}
-      <section className="relative bg-gradient-to-br from-[#006837] to-[#7cb983] py-16 sm:py-20 lg:py-24 px-4">
+      <section className="relative bg-gradient-to-br from-[#0b6d41] to-[#0f8f56] py-16 sm:py-20 lg:py-24 px-4">
         <div className="max-w-7xl mx-auto text-center">
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-6">
-            <span className="inline-flex items-center gap-2 bg-[#7cb983]/20 backdrop-blur-sm text-[#7cb983] px-4 py-2 rounded-full text-sm font-bold border border-[#7cb983]/30">
+            <span className="inline-flex items-center gap-2 bg-[#0f8f56]/20 backdrop-blur-sm text-[#ffde59] px-4 py-2 rounded-full text-sm font-bold border border-[#0f8f56]/30">
               <Cpu className="w-4 h-4" />
               AI-Integrated Dental Campus
             </span>
@@ -474,7 +474,7 @@ export default function BDSAdmissionPage() {
           </div>
 
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-            BDS Admission Open — <span className="text-[#7cb983]">2026-27</span>
+            BDS Admission Open — <span className="text-[#ffde59]">2026-27</span>
           </h1>
 
           <p className="hero-description text-lg md:text-xl text-gray-200 max-w-3xl mx-auto mb-8">
@@ -486,7 +486,7 @@ export default function BDSAdmissionPage() {
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 max-w-2xl mx-auto mb-10">
             {heroStats.map((stat) => (
               <div key={stat.label} className="text-center">
-                <div className="text-3xl sm:text-4xl font-bold text-[#7cb983]">{stat.number}</div>
+                <div className="text-3xl sm:text-4xl font-bold text-[#ffde59]">{stat.number}</div>
                 <div className="text-sm text-gray-200 mt-1">{stat.label}</div>
               </div>
             ))}
@@ -497,7 +497,7 @@ export default function BDSAdmissionPage() {
               href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_medium=organic&utm_campaign=admissions-bds"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-[#7cb983] hover:bg-[#6ba872] text-white font-bold py-3.5 px-10 rounded-full transition-all duration-300 min-h-[44px] flex items-center justify-center gap-2 hover:scale-105 active:scale-95 text-lg"
+              className="bg-[#ffde59] hover:bg-[#e6c64d] text-[#032816] font-bold py-3.5 px-10 rounded-full transition-all duration-300 min-h-[44px] flex items-center justify-center gap-2 hover:scale-105 active:scale-95 text-lg"
             >
               Apply Now <ArrowRight className="w-5 h-5" />
             </a>
@@ -511,11 +511,11 @@ export default function BDSAdmissionPage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
             {trustBadges.map((badge) => (
               <div key={badge.label} className="flex items-center gap-3 bg-[#FBFBEE] rounded-xl px-4 py-3 border border-gray-100">
-                <div className="bg-[#006837] text-white w-10 h-10 rounded-lg flex items-center justify-center shrink-0">
+                <div className="bg-[#0b6d41] text-white w-10 h-10 rounded-lg flex items-center justify-center shrink-0">
                   <badge.icon className="w-5 h-5" />
                 </div>
                 <div className="min-w-0">
-                  <p className="text-sm font-bold text-[#006837] leading-tight">{badge.label}</p>
+                  <p className="text-sm font-bold text-[#0b6d41] leading-tight">{badge.label}</p>
                   <p className="text-xs text-gray-500 leading-tight truncate">{badge.sublabel}</p>
                 </div>
               </div>
@@ -528,7 +528,7 @@ export default function BDSAdmissionPage() {
       <section className="py-16 px-4 bg-white">
         <article className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#006837] mb-4">About the BDS Programme</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0b6d41] mb-4">About the BDS Programme</h2>
             <p className="text-gray-600 max-w-3xl mx-auto">
               The Bachelor of Dental Surgery (BDS) at JKKN is a 5-year undergraduate
               dental programme designed to produce skilled, ethical dental surgeons with
@@ -544,8 +544,8 @@ export default function BDSAdmissionPage() {
               { label: 'Affiliation', value: 'TN Dr. MGR Univ.', icon: GraduationCap },
             ].map((item) => (
               <div key={item.label} className="bg-[#FBFBEE] rounded-2xl p-6 text-center border border-gray-100">
-                <item.icon className="w-8 h-8 text-[#7cb983] mx-auto mb-3" />
-                <div className="text-lg font-bold text-[#006837]">{item.value}</div>
+                <item.icon className="w-8 h-8 text-[#0b6d41] mx-auto mb-3" />
+                <div className="text-lg font-bold text-[#0b6d41]">{item.value}</div>
                 <div className="text-sm text-gray-600">{item.label}</div>
               </div>
             ))}
@@ -557,7 +557,7 @@ export default function BDSAdmissionPage() {
       <section className="py-16 px-4 bg-[#FBFBEE]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#006837] mb-4">BDS Eligibility Criteria</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0b6d41] mb-4">BDS Eligibility Criteria</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
               Candidates must satisfy all of the following requirements to be eligible for BDS admission.
             </p>
@@ -566,10 +566,10 @@ export default function BDSAdmissionPage() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {eligibility.map((item) => (
               <div key={item.title} className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-100">
-                <div className="bg-[#7cb983]/15 w-12 h-12 rounded-xl flex items-center justify-center mb-4">
-                  <item.icon className="w-6 h-6 text-[#006837]" />
+                <div className="bg-[#0f8f56]/15 w-12 h-12 rounded-xl flex items-center justify-center mb-4">
+                  <item.icon className="w-6 h-6 text-[#0b6d41]" />
                 </div>
-                <h3 className="text-lg font-bold text-[#006837] mb-2">{item.title}</h3>
+                <h3 className="text-lg font-bold text-[#0b6d41] mb-2">{item.title}</h3>
                 <p className="text-gray-600 text-sm">{item.text}</p>
               </div>
             ))}
@@ -581,7 +581,7 @@ export default function BDSAdmissionPage() {
       <section className="py-16 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#006837] mb-4">BDS Admission Process</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0b6d41] mb-4">BDS Admission Process</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
               A transparent, NEET-based admission process completed in five simple steps.
             </p>
@@ -591,11 +591,11 @@ export default function BDSAdmissionPage() {
             {admissionSteps.map((item) => (
               <div key={item.step} className="text-center">
                 <div className="bg-[#FBFBEE] rounded-2xl p-6 shadow-md hover:shadow-xl transition-shadow duration-300 h-full">
-                  <div className="bg-[#006837] text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 text-lg font-bold">
+                  <div className="bg-[#0b6d41] text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 text-lg font-bold">
                     {item.step}
                   </div>
-                  <item.icon className="w-8 h-8 text-[#7cb983] mx-auto mb-3" />
-                  <h3 className="text-base font-bold text-[#006837] mb-2">{item.title}</h3>
+                  <item.icon className="w-8 h-8 text-[#0b6d41] mx-auto mb-3" />
+                  <h3 className="text-base font-bold text-[#0b6d41] mb-2">{item.title}</h3>
                   <p className="text-gray-600 text-sm">{item.description}</p>
                 </div>
               </div>
@@ -608,7 +608,7 @@ export default function BDSAdmissionPage() {
       <section className="py-16 px-4 bg-[#FBFBEE]">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#006837] mb-4">Documents Required for BDS Admission</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0b6d41] mb-4">Documents Required for BDS Admission</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
               Keep these documents ready (originals + 2 sets of self-attested photocopies) for verification.
             </p>
@@ -618,7 +618,7 @@ export default function BDSAdmissionPage() {
             <div className="grid sm:grid-cols-2 gap-4">
               {requiredDocs.map((doc) => (
                 <div key={doc} className="flex items-start gap-3">
-                  <IdCard className="w-5 h-5 text-[#7cb983] mt-0.5 shrink-0" />
+                  <IdCard className="w-5 h-5 text-[#0b6d41] mt-0.5 shrink-0" />
                   <p className="text-gray-700 text-sm">{doc}</p>
                 </div>
               ))}
@@ -631,7 +631,7 @@ export default function BDSAdmissionPage() {
       <section className="py-16 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#006837] mb-4">BDS Fee Structure 2026-27</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0b6d41] mb-4">BDS Fee Structure 2026-27</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
               Transparent fee structure across Government Quota and Management Quota seats.
             </p>
@@ -641,17 +641,17 @@ export default function BDSAdmissionPage() {
             {feeBreakdown.map((fee) => (
               <div key={fee.quota} className="bg-[#FBFBEE] rounded-2xl p-6 border border-gray-100 hover:shadow-lg transition-shadow">
                 <div className="flex items-center gap-3 mb-3">
-                  <IndianRupee className="w-6 h-6 text-[#7cb983]" />
-                  <h3 className="text-lg font-bold text-[#006837]">{fee.quota}</h3>
+                  <IndianRupee className="w-6 h-6 text-[#0b6d41]" />
+                  <h3 className="text-lg font-bold text-[#0b6d41]">{fee.quota}</h3>
                 </div>
-                <p className="text-2xl font-bold text-[#002309] mb-2">{fee.tuition}</p>
+                <p className="text-2xl font-bold text-[#032816] mb-2">{fee.tuition}</p>
                 <p className="text-sm text-gray-600">{fee.note}</p>
               </div>
             ))}
           </div>
 
-          <div className="mt-8 bg-[#7cb983]/10 border border-[#7cb983]/30 rounded-2xl p-6 text-center">
-            <p className="text-[#006837] font-medium">
+          <div className="mt-8 bg-[#0f8f56]/10 border border-[#0f8f56]/30 rounded-2xl p-6 text-center">
+            <p className="text-[#0b6d41] font-medium">
               Installment payment options and scholarships are available. For the complete
               fee structure including exam fees, hostel & mess, visit{' '}
               <Link href="/fees-structure/" className="underline font-bold">fee structure page</Link>.
@@ -661,11 +661,11 @@ export default function BDSAdmissionPage() {
       </section>
 
       {/* IMPORTANT DATES */}
-      <section className="py-16 px-4 bg-gradient-to-br from-[#006837] to-[#002309]">
+      <section className="py-16 px-4 bg-gradient-to-br from-[#0b6d41] to-[#032816]">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">BDS Admission Important Dates</h2>
-            <p className="text-gray-300 max-w-2xl mx-auto">
+            <p className="text-gray-200 max-w-2xl mx-auto">
               Key timelines for the BDS 2026-27 admission cycle (subject to NMC/NDC/TN counselling notifications).
             </p>
           </div>
@@ -679,10 +679,10 @@ export default function BDSAdmissionPage() {
                 }`}
               >
                 <div className="flex items-center gap-3">
-                  <CalendarDays className="w-5 h-5 text-[#7cb983] shrink-0" />
+                  <CalendarDays className="w-5 h-5 text-[#ffde59] shrink-0" />
                   <p className="text-white font-medium">{item.event}</p>
                 </div>
-                <p className="text-[#7cb983] font-semibold text-sm sm:text-base">{item.date}</p>
+                <p className="text-[#ffde59] font-semibold text-sm sm:text-base">{item.date}</p>
               </div>
             ))}
           </div>
@@ -693,7 +693,7 @@ export default function BDSAdmissionPage() {
       <section className="py-16 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#006837] mb-4">Career Opportunities After BDS</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0b6d41] mb-4">Career Opportunities After BDS</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
               A BDS degree from JKKN opens up diverse career options — from private
               practice to global healthcare.
@@ -703,10 +703,10 @@ export default function BDSAdmissionPage() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {careerPaths.map((career) => (
               <div key={career.title} className="bg-[#FBFBEE] rounded-2xl p-6 border border-gray-100 hover:shadow-lg transition-shadow">
-                <div className="bg-[#7cb983]/15 w-12 h-12 rounded-xl flex items-center justify-center mb-4">
-                  <career.icon className="w-6 h-6 text-[#006837]" />
+                <div className="bg-[#0f8f56]/15 w-12 h-12 rounded-xl flex items-center justify-center mb-4">
+                  <career.icon className="w-6 h-6 text-[#0b6d41]" />
                 </div>
-                <h3 className="text-base font-bold text-[#006837] mb-2">{career.title}</h3>
+                <h3 className="text-base font-bold text-[#0b6d41] mb-2">{career.title}</h3>
                 <p className="text-gray-600 text-sm">{career.description}</p>
               </div>
             ))}
@@ -718,13 +718,13 @@ export default function BDSAdmissionPage() {
       <section className="py-16 px-4 bg-[#FBFBEE]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#006837] mb-4">Why Choose JKKN for BDS?</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0b6d41] mb-4">Why Choose JKKN for BDS?</h2>
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {whyJKKN.map((item) => (
               <div key={item.text} className="bg-white rounded-xl p-5 flex items-start gap-3 shadow-sm hover:shadow-md transition-shadow">
-                <item.icon className="w-5 h-5 text-[#7cb983] mt-0.5 shrink-0" />
+                <item.icon className="w-5 h-5 text-[#0b6d41] mt-0.5 shrink-0" />
                 <p className="text-gray-700 text-sm font-medium">{item.text}</p>
               </div>
             ))}
@@ -735,7 +735,7 @@ export default function BDSAdmissionPage() {
       {/* FAQ */}
       <section className="py-16 px-4 bg-white">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#006837] text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#0b6d41] text-center mb-12">
             BDS Admission — FAQs
           </h2>
 
@@ -743,8 +743,8 @@ export default function BDSAdmissionPage() {
             {bdsFaqs.map((faq) => (
               <details key={faq.q} className="group bg-[#FBFBEE] rounded-xl overflow-hidden shadow-sm">
                 <summary className="flex items-center justify-between p-6 cursor-pointer hover:bg-white transition-colors duration-200">
-                  <h3 className="text-base md:text-lg font-semibold text-[#006837] pr-4">{faq.q}</h3>
-                  <ArrowRight className="w-5 h-5 text-[#7cb983] shrink-0 transition-transform duration-300 group-open:rotate-90" />
+                  <h3 className="text-base md:text-lg font-semibold text-[#0b6d41] pr-4">{faq.q}</h3>
+                  <ArrowRight className="w-5 h-5 text-[#0b6d41] shrink-0 transition-transform duration-300 group-open:rotate-90" />
                 </summary>
                 <div className="px-6 pb-6">
                   <p className="text-gray-700 leading-relaxed">{faq.a}</p>
@@ -756,7 +756,7 @@ export default function BDSAdmissionPage() {
       </section>
 
       {/* FINAL CTA */}
-      <section className="py-16 px-4 bg-gradient-to-r from-[#006837] to-[#7cb983]">
+      <section className="py-16 px-4 bg-gradient-to-r from-[#0b6d41] to-[#0f8f56]">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Ready to Begin Your BDS Journey?</h2>
           <p className="text-lg text-gray-200 mb-8 max-w-2xl mx-auto">
@@ -770,7 +770,7 @@ export default function BDSAdmissionPage() {
               href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_medium=organic&utm_campaign=admissions-bds"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-white hover:bg-[#FBFBEE] text-[#006837] font-bold px-10 py-4 rounded-full transition-all duration-300 min-h-[44px] flex items-center justify-center gap-2 hover:scale-105 active:scale-95 text-lg"
+              className="bg-white hover:bg-[#FBFBEE] text-[#0b6d41] font-bold px-10 py-4 rounded-full transition-all duration-300 min-h-[44px] flex items-center justify-center gap-2 hover:scale-105 active:scale-95 text-lg"
             >
               Apply Now <ArrowRight className="w-5 h-5" />
             </a>
@@ -795,7 +795,7 @@ export default function BDSAdmissionPage() {
 
       {/* DEP-34 - enquiry form. Posts to the CRM from the server; a browser cannot POST there */}
       {/* directly - the endpoint sends no Access-Control-Allow-Origin header. */}
-      <section className="bg-gradient-to-br from-[#006837] to-[#0b8f52] py-16">
+      <section className="bg-gradient-to-br from-[#0b6d41] to-[#0f8f56] py-16">
           <div className="max-w-3xl mx-auto px-4">
               <h2 className="text-white text-2xl md:text-3xl font-bold text-center mb-2">Get a Call Back</h2>
               <p className="text-white/80 text-center text-sm mb-8">Leave your details and our admission team will contact you within 24 hours.</p>

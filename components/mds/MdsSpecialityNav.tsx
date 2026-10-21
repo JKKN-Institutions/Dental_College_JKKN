@@ -42,7 +42,7 @@ export default function MdsSpecialityNav({ current }: Props) {
   return (
     <section className="py-12 sm:py-16 px-4 sm:px-6 bg-[#FBFBEE]">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-2xl sm:text-3xl font-bold text-[#006837] mb-2">
+        <h2 className="text-2xl sm:text-3xl font-bold text-[#0b6d41] mb-2">
           The other MDS specialities at JKKN
         </h2>
         <p className="text-sm sm:text-base text-gray-700 mb-8 max-w-3xl">
@@ -56,9 +56,9 @@ export default function MdsSpecialityNav({ current }: Props) {
             <Link
               key={s.slug}
               href={`${MDS_HUB}${s.slug}/`}
-              className="block rounded-xl border border-gray-200 bg-white p-5 hover:border-[#006837] hover:shadow-sm transition-all"
+              className="block rounded-xl border border-gray-200 bg-white p-5 hover:border-[#0b6d41] hover:shadow-sm transition-all"
             >
-              <span className="block font-semibold text-[#006837] text-sm sm:text-base leading-snug">
+              <span className="block font-semibold text-[#0b6d41] text-sm sm:text-base leading-snug">
                 {s.name}
               </span>
               <span className="block mt-2 text-xs sm:text-sm text-gray-600">
@@ -69,18 +69,18 @@ export default function MdsSpecialityNav({ current }: Props) {
         </div>
 
         <div className="mt-6 flex flex-wrap gap-x-6 gap-y-2 text-sm sm:text-base">
-          <Link href={MDS_HUB} className="text-[#006837] font-semibold hover:underline">
+          <Link href={MDS_HUB} className="text-[#0b6d41] font-semibold hover:underline">
             All MDS programmes, seats and fees &rarr;
           </Link>
           <Link
             href={`${MDS_HUB}colleges-in-tamil-nadu/`}
-            className="text-[#006837] font-semibold hover:underline"
+            className="text-[#0b6d41] font-semibold hover:underline"
           >
             Every MDS college in Tamil Nadu &rarr;
           </Link>
           <Link
             href={`${MDS_HUB}seats-in-tamil-nadu/`}
-            className="text-[#006837] font-semibold hover:underline"
+            className="text-[#0b6d41] font-semibold hover:underline"
           >
             MDS seats in Tamil Nadu &rarr;
           </Link>

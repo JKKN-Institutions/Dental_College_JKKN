@@ -41,7 +41,7 @@ export default function OurInstitutions() {
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white drop-shadow-md">
                 Our Institutions
               </h1>
-              <div className="mt-3 w-16 h-[3px] bg-[#7cb983] rounded-full" />
+              <div className="mt-3 w-16 h-[3px] bg-[#ffde59] rounded-full" />
             </div>
           </div>
         </div>
@@ -52,14 +52,14 @@ export default function OurInstitutions() {
         <div className="max-w-7xl mx-auto">
           <ol className="flex items-center gap-2 text-sm">
             <li>
-              <a href="/" className="text-gray-500 hover:text-[#006837] transition-colors">Home</a>
+              <a href="/" className="text-gray-500 hover:text-[#0b6d41] transition-colors">Home</a>
             </li>
             <li className="text-gray-300 select-none">/</li>
             <li>
               <span className="text-gray-500">About</span>
             </li>
             <li className="text-gray-300 select-none">/</li>
-            <li className="text-[#006837] font-medium" aria-current="page">Our Institutions</li>
+            <li className="text-[#0b6d41] font-medium" aria-current="page">Our Institutions</li>
           </ol>
         </div>
       </nav>
@@ -69,7 +69,7 @@ export default function OurInstitutions() {
         <div className="max-w-4xl mx-auto space-y-6">
 
           {/* Paragraph 1 — lead card with left accent border */}
-          <div className="border-l-4 border-[#7cb983] bg-white rounded-r-xl px-6 py-5 shadow-sm">
+          <div className="border-l-4 border-[#0f8f56] bg-white rounded-r-xl px-6 py-5 shadow-sm">
             <p className="text-lg text-gray-700 leading-relaxed text-justify">
               At JKKN Institutions, our core teaching objective is to empower learners with technical knowledge and essential skills to meet the growing challenges of today&apos;s competitive world. We implement cutting-edge teaching <span className="font-semibold">practice, laying a robust foundation for holistic education.</span>
             </p>

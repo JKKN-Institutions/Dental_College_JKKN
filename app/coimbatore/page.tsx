@@ -7,12 +7,12 @@ export default function CoimbatorePage() {
 
 
   const whyFeatures = [
-    { icon: <Hospital className="w-6 h-6 text-[#006837]" />, title: 'Own Hospital', desc: 'NDC-approved dental college with attached hospital for hands-on clinical training — 200+ chairs, 100+ beds, 500+ daily patients' },
-    { icon: <Stethoscope className="w-6 h-6 text-[#006837]" />, title: 'Real Patient Exposure', desc: 'Own dental hospital on campus — learners get real patient exposure from Year 1, not Year 3' },
-    { icon: <Microscope className="w-6 h-6 text-[#006837]" />, title: 'Advanced Learning Labs', desc: 'Advanced dental learning labs, simulation equipment, and digital dentistry training — an AI-integrated dental campus' },
-    { icon: <TrendingUp className="w-6 h-6 text-[#006837]" />, title: '93.9% Placed or in Higher Studies (2024-25)', desc: 'JKKN Dental records 93.9% placed or in higher studies (2024-25 batch) for BDS graduates. BDS median salary: Rs 3,60,000 (NIRF 2026 filing).' },
-    { icon: <Users className="w-6 h-6 text-[#006837]" />, title: 'Community Service', desc: 'Hospital serves the community — builds patient trust, clinical breadth, and real-world dentistry experience' },
-    { icon: <Bus className="w-6 h-6 text-[#006837]" />, title: 'Accessible from Coimbatore via NH-544', desc: '108 km from Coimbatore on NH-544. Approximately 1.5 hours by road. On-campus hostel eliminates daily commuting stress.' },
+    { icon: <Hospital className="w-6 h-6 text-[#0b6d41]" />, title: 'Own Hospital', desc: 'NDC-approved dental college with attached hospital for hands-on clinical training — 200+ chairs, 100+ beds, 500+ daily patients' },
+    { icon: <Stethoscope className="w-6 h-6 text-[#0b6d41]" />, title: 'Real Patient Exposure', desc: 'Own dental hospital on campus — learners get real patient exposure from Year 1, not Year 3' },
+    { icon: <Microscope className="w-6 h-6 text-[#0b6d41]" />, title: 'Advanced Learning Labs', desc: 'Advanced dental learning labs, simulation equipment, and digital dentistry training — an AI-integrated dental campus' },
+    { icon: <TrendingUp className="w-6 h-6 text-[#0b6d41]" />, title: '93.9% Placed or in Higher Studies (2024-25)', desc: 'JKKN Dental records 93.9% placed or in higher studies (2024-25 batch) for BDS graduates. BDS median salary: Rs 3,60,000 (NIRF 2026 filing).' },
+    { icon: <Users className="w-6 h-6 text-[#0b6d41]" />, title: 'Community Service', desc: 'Hospital serves the community — builds patient trust, clinical breadth, and real-world dentistry experience' },
+    { icon: <Bus className="w-6 h-6 text-[#0b6d41]" />, title: 'Accessible from Coimbatore via NH-544', desc: '108 km from Coimbatore on NH-544. Approximately 1.5 hours by road. On-campus hostel eliminates daily commuting stress.' },
   ];
 
   const programmes = [
@@ -29,31 +29,31 @@ export default function CoimbatorePage() {
 
 
   const transportRows = [
-    { icon: <Route className="w-6 h-6 text-[#006837]" />, label: 'ROUTE', text: 'NH-544 (Coimbatore-Salem Highway) — direct route, 108 km' },
-    { icon: <Bus className="w-6 h-6 text-[#006837]" />, label: 'BY BUS', text: 'Frequent inter-city buses from Gandhipuram and Ukkadam bus stands to Komarapalayam/Namakkal route' },
-    { icon: <Train className="w-6 h-6 text-[#006837]" />, label: 'NEAREST RAILWAY STATION', text: 'Coimbatore Junction (~108 km from campus). Trains to Erode Junction, then bus/transport to Komarapalayam.' },
-    { icon: <Plane className="w-6 h-6 text-[#006837]" />, label: 'NEAREST AIRPORT', text: 'Coimbatore International Airport (Code: CJB) (~108 km from campus)' },
-    { icon: <MapPin className="w-6 h-6 text-[#006837]" />, label: 'CAMPUS ADDRESS', text: 'JKKN Institutions, Natarajapuram, NH-544, Komarapalayam (TK), Namakkal (DT), Tamil Nadu - 638183' },
+    { icon: <Route className="w-6 h-6 text-[#0b6d41]" />, label: 'ROUTE', text: 'NH-544 (Coimbatore-Salem Highway) — direct route, 108 km' },
+    { icon: <Bus className="w-6 h-6 text-[#0b6d41]" />, label: 'BY BUS', text: 'Frequent inter-city buses from Gandhipuram and Ukkadam bus stands to Komarapalayam/Namakkal route' },
+    { icon: <Train className="w-6 h-6 text-[#0b6d41]" />, label: 'NEAREST RAILWAY STATION', text: 'Coimbatore Junction (~108 km from campus). Trains to Erode Junction, then bus/transport to Komarapalayam.' },
+    { icon: <Plane className="w-6 h-6 text-[#0b6d41]" />, label: 'NEAREST AIRPORT', text: 'Coimbatore International Airport (Code: CJB) (~108 km from campus)' },
+    { icon: <MapPin className="w-6 h-6 text-[#0b6d41]" />, label: 'CAMPUS ADDRESS', text: 'JKKN Institutions, Natarajapuram, NH-544, Komarapalayam (TK), Namakkal (DT), Tamil Nadu - 638183' },
   ];
 
   const facilities = [
-    { icon: <Microscope className="w-6 h-6 text-[#006837]" />, title: 'Modern Learning Labs', desc: 'State-of-the-art learning labs and smart learning studios' },
-    { icon: <BookOpen className="w-6 h-6 text-[#006837]" />, title: 'Digital Learning Commons', desc: 'Well-stocked learning commons with digital access and journals' },
-    { icon: <Home className="w-6 h-6 text-[#006837]" />, title: 'Hostel', desc: 'Separate hostels for boys and girls with mess facility' },
-    { icon: <Bus className="w-6 h-6 text-[#006837]" />, title: 'Transport', desc: 'College buses connecting to Coimbatore and surrounding areas' },
-    { icon: <Award className="w-6 h-6 text-[#006837]" />, title: 'Sports', desc: 'Playground, indoor games, gym, and annual sports events' },
-    { icon: <Wifi className="w-6 h-6 text-[#006837]" />, title: 'WiFi Campus', desc: 'High-speed internet across the entire campus' },
+    { icon: <Microscope className="w-6 h-6 text-[#0b6d41]" />, title: 'Modern Learning Labs', desc: 'State-of-the-art learning labs and smart learning studios' },
+    { icon: <BookOpen className="w-6 h-6 text-[#0b6d41]" />, title: 'Digital Learning Commons', desc: 'Well-stocked learning commons with digital access and journals' },
+    { icon: <Home className="w-6 h-6 text-[#0b6d41]" />, title: 'Hostel', desc: 'Separate hostels for boys and girls with mess facility' },
+    { icon: <Bus className="w-6 h-6 text-[#0b6d41]" />, title: 'Transport', desc: 'College buses connecting to Coimbatore and surrounding areas' },
+    { icon: <Award className="w-6 h-6 text-[#0b6d41]" />, title: 'Sports', desc: 'Playground, indoor games, gym, and annual sports events' },
+    { icon: <Wifi className="w-6 h-6 text-[#0b6d41]" />, title: 'WiFi Campus', desc: 'High-speed internet across the entire campus' },
   ];
 
   const cities = [
-    { icon: <Home className="w-6 h-6 text-[#006837]" />, name: 'Namakkal', dist: '~65 km', href: '/namakkal/' },
-    { icon: <Bus className="w-6 h-6 text-[#006837]" />, name: 'Salem', dist: '~60 km', href: '/salem/' },
-    { icon: <Route className="w-6 h-6 text-[#006837]" />, name: 'Erode', dist: '~18 km', href: '/erode/' },
-    { icon: <Target className="w-6 h-6 text-[#006837]" />, name: 'Tiruppur', dist: '~67 km', href: '/tiruppur/' },
-    { icon: <Train className="w-6 h-6 text-[#006837]" />, name: 'Trichy', dist: '~145 km', href: '/trichy/' },
-    { icon: <MapPin className="w-6 h-6 text-[#006837]" />, name: 'Madurai', dist: '~215 km', href: '/madurai/' },
-    { icon: <Plane className="w-6 h-6 text-[#006837]" />, name: 'Chennai', dist: '~380 km', href: '/chennai/' },
-    { icon: <Wifi className="w-6 h-6 text-[#006837]" />, name: 'Hosur', dist: '~245 km', href: '/hosur/' },
+    { icon: <Home className="w-6 h-6 text-[#0b6d41]" />, name: 'Namakkal', dist: '~65 km', href: '/namakkal/' },
+    { icon: <Bus className="w-6 h-6 text-[#0b6d41]" />, name: 'Salem', dist: '~60 km', href: '/salem/' },
+    { icon: <Route className="w-6 h-6 text-[#0b6d41]" />, name: 'Erode', dist: '~18 km', href: '/erode/' },
+    { icon: <Target className="w-6 h-6 text-[#0b6d41]" />, name: 'Tiruppur', dist: '~67 km', href: '/tiruppur/' },
+    { icon: <Train className="w-6 h-6 text-[#0b6d41]" />, name: 'Trichy', dist: '~145 km', href: '/trichy/' },
+    { icon: <MapPin className="w-6 h-6 text-[#0b6d41]" />, name: 'Madurai', dist: '~215 km', href: '/madurai/' },
+    { icon: <Plane className="w-6 h-6 text-[#0b6d41]" />, name: 'Chennai', dist: '~380 km', href: '/chennai/' },
+    { icon: <Wifi className="w-6 h-6 text-[#0b6d41]" />, name: 'Hosur', dist: '~245 km', href: '/hosur/' },
   ];
 
   const keyFacts = [
@@ -81,7 +81,7 @@ export default function CoimbatorePage() {
       <nav aria-label="Breadcrumb" className="bg-white border-b border-gray-100">
         <div className="max-w-5xl mx-auto px-4 py-3">
           <ol className="flex items-center gap-2 text-sm text-gray-500">
-            <li><Link href="/" className="hover:text-[#006837] transition-colors">Home</Link></li>
+            <li><Link href="/" className="hover:text-[#0b6d41] transition-colors">Home</Link></li>
             <li className="text-gray-300">/</li>
             <li className="text-gray-900 font-medium">Best Dental College Near Coimbatore</li>
           </ol>
@@ -89,13 +89,13 @@ export default function CoimbatorePage() {
       </nav>
 
       {/* ── Top Announcement Bar ── */}
-      <div className="bg-[#002309] text-white py-2 px-4">
+      <div className="bg-[#032816] text-white py-2 px-4">
         <div className="max-w-7xl mx-auto flex items-center justify-center gap-3 sm:gap-6 flex-wrap">
           <span className="flex items-center gap-2 text-sm font-medium">
-            <span className="w-2 h-2 bg-green-400 rounded-full inline-block" />
+            <span className="w-2 h-2 bg-[#0f8f56] rounded-full inline-block" />
             Admissions Open 2026-27
           </span>
-          <a href="tel:+919345855001" className="bg-[#006837] hover:bg-[#005a30] text-white text-sm font-semibold px-4 py-1.5 rounded-full border border-white/20 transition-colors">
+          <a href="tel:+919345855001" className="bg-[#0b6d41] hover:bg-[#005a30] text-white text-sm font-semibold px-4 py-1.5 rounded-full border border-white/20 transition-colors">
             Call Us
           </a>
         </div>
@@ -104,13 +104,13 @@ export default function CoimbatorePage() {
       {/* ── Hero ── */}
       <section
         className="relative flex flex-col items-center justify-center text-center px-4 py-16 sm:py-24"
-        style={{ background: 'linear-gradient(135deg, #006837 0%, #002309 100%)', minHeight: '88vh' }}
+        style={{ background: 'linear-gradient(135deg, #0b6d41 0%, #032816 100%)', minHeight: '88vh' }}
       >
         <div className="mb-6 inline-flex items-center gap-2 bg-white/10 backdrop-blur border border-white/20 text-white text-sm font-medium px-5 py-2 rounded-full">
           <Shield className="w-4 h-4" /> NDC, NAAC Approved • Admissions Open
         </div>
         <h1 className="text-white font-extrabold leading-tight mb-3 max-w-4xl" style={{ fontSize: 'clamp(2rem, 5vw + 0.5rem, 3.5rem)' }}>
-          Best Dental College Near <span className="text-[#7cb983]">Coimbatore</span>
+          Best Dental College Near <span className="text-[#ffde59]">Coimbatore</span>
         </h1>
         <p className="text-white/70 max-w-2xl mb-6 leading-relaxed" style={{ fontSize: 'clamp(0.85rem, 1vw + 0.3rem, 1rem)' }}>
           Top Dental Colleges Near Coimbatore — Compare BDS &amp; MDS Options
@@ -134,10 +134,10 @@ export default function CoimbatorePage() {
           ))}
         </ul>
         <div className="flex flex-col sm:flex-row gap-4 items-center">
-          <a href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_medium=organic&utm_campaign=coimbatore" target="_blank" rel="nofollow noopener noreferrer" className="bg-[#7cb983] hover:bg-[#6ba872] text-white font-bold px-8 py-4 rounded-full transition-all transform hover:scale-105 shadow-lg text-base">
+          <a href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_medium=organic&utm_campaign=coimbatore" target="_blank" rel="nofollow noopener noreferrer" className="bg-[#ffde59] hover:bg-[#e6c64d] text-[#032816] font-bold px-8 py-4 rounded-full transition-all transform hover:scale-105 shadow-lg text-base">
             Apply Now — 2026-27
           </a>
-          <a href="tel:+919345855001" className="bg-[#006837] hover:bg-[#002309] text-white font-bold px-8 py-4 rounded-full transition-all transform hover:scale-105 shadow-lg text-base">Call Us</a>
+          <a href="tel:+919345855001" className="bg-[#0b6d41] hover:bg-[#032816] text-white font-bold px-8 py-4 rounded-full transition-all transform hover:scale-105 shadow-lg text-base">Call Us</a>
         </div>
       </section>
 
@@ -145,8 +145,8 @@ export default function CoimbatorePage() {
       <div className="bg-white border-b border-gray-100 py-4 px-4">
         <div className="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8">
           <div className="flex items-center gap-3">
-            <span className="flex items-center gap-1.5 bg-[#FBFBEE] border border-[#7cb983] text-[#006837] text-sm font-semibold px-3 py-1.5 rounded-full">✓ NDC</span>
-            <span className="flex items-center gap-1.5 bg-[#FBFBEE] border border-[#7cb983] text-[#006837] text-sm font-semibold px-3 py-1.5 rounded-full">✓ NAAC</span>
+            <span className="flex items-center gap-1.5 bg-[#FBFBEE] border border-[#0f8f56] text-[#0b6d41] text-sm font-semibold px-3 py-1.5 rounded-full">✓ NDC</span>
+            <span className="flex items-center gap-1.5 bg-[#FBFBEE] border border-[#0f8f56] text-[#0b6d41] text-sm font-semibold px-3 py-1.5 rounded-full">✓ NAAC</span>
           </div>
           <span className="hidden sm:block text-gray-300">|</span>
           <p className="text-gray-500 text-sm text-center">Affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai</p>
@@ -158,7 +158,7 @@ export default function CoimbatorePage() {
         <div className="max-w-3xl mx-auto">
           <div className="bg-white rounded-2xl shadow-sm p-6 sm:p-8 flex flex-col sm:flex-row items-start sm:items-center gap-6 justify-between">
             <div className="flex items-start gap-5">
-              <div className="text-[#006837] font-extrabold leading-none" style={{ fontSize: 'clamp(3rem, 6vw, 4rem)' }}>
+              <div className="text-[#0b6d41] font-extrabold leading-none" style={{ fontSize: 'clamp(3rem, 6vw, 4rem)' }}>
                 108<span className="text-xl sm:text-2xl font-bold">km</span>
               </div>
               <div>
@@ -169,7 +169,7 @@ export default function CoimbatorePage() {
             <a
               href="https://maps.google.com/?q=JKKN+Dental+College+Komarapalayam"
               target="_blank" rel="nofollow noopener noreferrer"
-              className="flex-shrink-0 bg-[#006837] hover:bg-[#002309] text-white font-semibold px-5 py-3 rounded-xl flex flex-col items-center gap-1 transition-colors min-w-[110px] text-center"
+              className="flex-shrink-0 bg-[#0b6d41] hover:bg-[#032816] text-white font-semibold px-5 py-3 rounded-xl flex flex-col items-center gap-1 transition-colors min-w-[110px] text-center"
             >
               <MapPin className="w-5 h-5" />
               <span className="text-sm">View on Map</span>
@@ -191,7 +191,7 @@ export default function CoimbatorePage() {
           <div className="overflow-x-auto rounded-2xl border border-gray-100 shadow-sm mb-8">
             <table className="w-full text-sm">
               <thead>
-                <tr className="bg-[#006837] text-white">
+                <tr className="bg-[#0b6d41] text-white">
                   <th className="px-4 py-3 text-left font-semibold">College</th>
                   <th className="px-4 py-3 text-left font-semibold">Distance from Coimbatore</th>
                   <th className="px-4 py-3 text-left font-semibold">NAAC Grade</th>
@@ -202,7 +202,7 @@ export default function CoimbatorePage() {
               </thead>
               <tbody>
                 <tr className="bg-[#FBFBEE] border-b border-gray-100">
-                  <td className="px-4 py-3 font-semibold text-[#006837]">JKKN Dental College &amp; Hospital</td>
+                  <td className="px-4 py-3 font-semibold text-[#0b6d41]">JKKN Dental College &amp; Hospital</td>
                   <td className="px-4 py-3">108 km via NH-544</td>
                   <td className="px-4 py-3">A</td>
                   <td className="px-4 py-3">100</td>
@@ -243,7 +243,7 @@ export default function CoimbatorePage() {
           <p className="snippet-answer text-gray-600 max-w-3xl mx-auto mb-4 leading-relaxed" style={{ fontSize: 'clamp(0.875rem, 1vw + 0.4rem, 1.05rem)' }}>
             Learners from Coimbatore choose JKKN Dental College &amp; Hospital for one measurable reason: outcomes. With a 93.9% placed-or-higher-studies rate (2024-25 batch), a median BDS salary of Rs 3,60,000 filed with the Ministry of Education, and 500+ daily patients providing real clinical exposure from Year 1, JKKN delivers verified results on every metric that matters for a dental career in 2026.
           </p>
-          <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-12" />
+          <div className="w-14 h-1 bg-[#ffde59] rounded mx-auto mb-12" />
           <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 list-none p-0 m-0">
             {whyFeatures.map((item) => (
               <li key={item.title} className="bg-white rounded-2xl p-6 text-center hover:shadow-md transition-shadow">
@@ -263,13 +263,13 @@ export default function CoimbatorePage() {
             Programmes Offered
           </h2>
           <p className="text-gray-500 text-base mb-4">Choose the right programme for your career goals</p>
-          <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-12" />
+          <div className="w-14 h-1 bg-[#ffde59] rounded mx-auto mb-12" />
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {programmes.map((prog) => (
               <div key={prog.title} className="bg-[#FBFBEE] rounded-2xl p-6 sm:p-8 text-left shadow-sm">
-                <div className="mb-4"><GraduationCap className="w-8 h-8 text-[#006837]" /></div>
+                <div className="mb-4"><GraduationCap className="w-8 h-8 text-[#0b6d41]" /></div>
                 <h3 className="text-lg font-bold text-gray-900 mb-5">
-                  <Link href={prog.href} className="hover:text-[#006837] transition-colors">{prog.title}</Link>
+                  <Link href={prog.href} className="hover:text-[#0b6d41] transition-colors">{prog.title}</Link>
                 </h3>
                 <dl className="space-y-3 mb-4">
                   {[
@@ -278,17 +278,17 @@ export default function CoimbatorePage() {
                     { label: 'Intake', value: prog.intake },
                   ].map((row) => (
                     <div key={row.label} className="flex justify-between items-center border-b border-gray-100 pb-2">
-                      <dt className="text-[#7cb983] text-sm">{row.label}</dt>
+                      <dt className="text-[#0b6d41] text-sm">{row.label}</dt>
                       <dd className="text-gray-900 text-sm font-semibold">{row.value}</dd>
                     </div>
                   ))}
                 </dl>
                 <p className="text-gray-400 text-sm mb-6">{prog.eligibility}</p>
                 <div className="flex flex-col gap-2">
-                  <Link href={prog.href} className="block text-center bg-[#006837] hover:bg-[#002309] text-white font-semibold py-3 rounded-xl transition-colors text-sm">
+                  <Link href={prog.href} className="block text-center bg-[#0b6d41] hover:bg-[#032816] text-white font-semibold py-3 rounded-xl transition-colors text-sm">
                     View Programme Details
                   </Link>
-                  <a href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_medium=organic&utm_campaign=coimbatore" target="_blank" rel="noopener noreferrer" className="block text-center bg-white hover:bg-[#e8f5e9] text-[#006837] font-semibold py-3 rounded-xl transition-colors text-sm">
+                  <a href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_medium=organic&utm_campaign=coimbatore" target="_blank" rel="noopener noreferrer" className="block text-center bg-white hover:bg-[#d4f1e4] text-[#0b6d41] font-semibold py-3 rounded-xl transition-colors text-sm">
                     Apply for Admission
                   </a>
                 </div>
@@ -296,7 +296,7 @@ export default function CoimbatorePage() {
             ))}
           </div>
           <div className="mt-8">
-            <Link href="/fees-structure/" className="inline-block text-sm text-[#006837] hover:underline font-medium">
+            <Link href="/fees-structure/" className="inline-block text-sm text-[#0b6d41] hover:underline font-medium">
               View Full Fees Structure →
             </Link>
           </div>
@@ -310,7 +310,7 @@ export default function CoimbatorePage() {
             BDS Admission Near Coimbatore 2026 — How to Apply
           </h2>
           <p className="text-gray-500 text-base mb-4 text-center">Step-by-step process for Coimbatore learners applying to JKKN Dental</p>
-          <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-10" />
+          <div className="w-14 h-1 bg-[#ffde59] rounded mx-auto mb-10" />
           <p className="text-gray-600 mb-5 leading-relaxed">
             Learners from Coimbatore can apply for BDS or MDS admission at JKKN Dental College &amp; Hospital through the following process for the 2026–27 academic year:
           </p>
@@ -323,12 +323,12 @@ export default function CoimbatorePage() {
               'Attend counseling, receive allotment, and complete fee payment to confirm the seat.',
             ].map((step, i) => (
               <li key={i} className="flex items-start gap-4 bg-white rounded-xl p-4 shadow-sm">
-                <span className="flex-shrink-0 w-8 h-8 bg-[#006837] text-white rounded-full flex items-center justify-center font-bold text-sm">{i + 1}</span>
+                <span className="flex-shrink-0 w-8 h-8 bg-[#0b6d41] text-white rounded-full flex items-center justify-center font-bold text-sm">{i + 1}</span>
                 <p className="text-gray-700 text-sm leading-relaxed">{step}</p>
               </li>
             ))}
           </ol>
-          <div className="bg-[#006837] text-white rounded-xl p-5 text-center">
+          <div className="bg-[#0b6d41] text-white rounded-xl p-5 text-center">
             <p className="font-semibold mb-2">For immediate admission queries:</p>
             <p className="text-white/90 text-sm">Call <a href="tel:+919345855001" className="underline font-bold">+91 9345855001</a> or email <a href="mailto:info@jkkn.ac.in" className="underline">info@jkkn.ac.in</a></p>
           </div>
@@ -341,18 +341,18 @@ export default function CoimbatorePage() {
           <h2 className="font-extrabold text-gray-900 mb-3" style={{ fontSize: 'clamp(1.6rem, 3vw + 0.5rem, 2.4rem)' }}>
             Placement Highlights
           </h2>
-          <p className="text-gray-500 text-base mb-4">Outcomes of the 2024-25 batch, as filed in JKKN&apos;s <a href="/pdf/NIRF-2026-Dental.pdf" target="_blank" rel="noopener noreferrer" className="text-[#006837] hover:underline font-medium">NIRF 2026 submission</a></p>
-          <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-12" />
+          <p className="text-gray-500 text-base mb-4">Outcomes of the 2024-25 batch, as filed in JKKN&apos;s <a href="/pdf/NIRF-2026-Dental.pdf" target="_blank" rel="noopener noreferrer" className="text-[#0b6d41] hover:underline font-medium">NIRF 2026 submission</a></p>
+          <div className="w-14 h-1 bg-[#ffde59] rounded mx-auto mb-12" />
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-10">
             {placementStats.map((stat) => (
               <div key={stat.label} className="bg-white border border-gray-100 rounded-2xl p-5 shadow-sm">
-                <div className="font-extrabold text-[#006837]" style={{ fontSize: 'clamp(1.8rem, 3vw, 2.5rem)' }}>{stat.value}</div>
+                <div className="font-extrabold text-[#0b6d41]" style={{ fontSize: 'clamp(1.8rem, 3vw, 2.5rem)' }}>{stat.value}</div>
                 <div className="text-xs font-semibold tracking-widest text-gray-400 mt-1">{stat.label}</div>
               </div>
             ))}
           </div>
           <p className="text-gray-500 text-sm leading-relaxed max-w-2xl mx-auto mb-8">
-            The JKKN <a href="/pdf/NIRF-2026-Dental.pdf" target="_blank" rel="noopener noreferrer" className="text-[#006837] underline font-medium">NIRF 2026 filing</a> to the Ministry of Education records a median salary of Rs 3,60,000 for the 2024-25 BDS batch and Rs 6,00,000 for MDS.
+            The JKKN <a href="/pdf/NIRF-2026-Dental.pdf" target="_blank" rel="noopener noreferrer" className="text-[#0b6d41] underline font-medium">NIRF 2026 filing</a> to the Ministry of Education records a median salary of Rs 3,60,000 for the 2024-25 BDS batch and Rs 6,00,000 for MDS.
           </p>
         </div>
       </section>
@@ -367,14 +367,14 @@ export default function CoimbatorePage() {
             JKKN Dental College &amp; Hospital is 108 km from Coimbatore on NH-544, the Salem–Coimbatore National Highway. The drive takes approximately 1.5 hours. Regular buses, trains via Erode, and college transport connect Coimbatore learners to the campus.
           </p>
           {/* Speakable summary block */}
-          <div className="speakable-summary bg-[#e8f5e9] border border-[#7cb983] rounded-xl p-4 mb-8 max-w-2xl mx-auto text-left">
-            <p className="text-[#006837] text-sm font-medium leading-relaxed">
+          <div className="speakable-summary bg-[#d4f1e4] border border-[#0f8f56] rounded-xl p-4 mb-8 max-w-2xl mx-auto text-left">
+            <p className="text-[#0b6d41] text-sm font-medium leading-relaxed">
               <strong>Quick Answer:</strong> JKKN Dental College &amp; Hospital is 108 km from Coimbatore on NH-544 — approximately a 1.5-hour drive. Regular buses, trains, and college transport connect Coimbatore learners to the campus.
             </p>
           </div>
-          <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-10" />
+          <div className="w-14 h-1 bg-[#ffde59] rounded mx-auto mb-10" />
           <div className="bg-white rounded-2xl overflow-hidden shadow-sm text-left">
-            <div className="bg-[#006837] text-white px-6 py-5 flex items-center gap-3">
+            <div className="bg-[#0b6d41] text-white px-6 py-5 flex items-center gap-3">
               <MapPin className="w-6 h-6" />
               <div>
                 <p className="font-bold text-lg">Coimbatore → JKKN Dental Campus</p>
@@ -401,11 +401,11 @@ export default function CoimbatorePage() {
             Campus &amp; Facilities
           </h2>
           <p className="text-gray-500 text-base mb-4">Everything you need for a world-class education experience</p>
-          <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-12" />
+          <div className="w-14 h-1 bg-[#ffde59] rounded mx-auto mb-12" />
           <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 list-none p-0 m-0">
             {facilities.map((item) => (
               <li key={item.title} className="flex items-start gap-3 bg-[#FBFBEE] rounded-2xl p-4 text-left">
-                <div className="w-10 h-10 rounded-xl bg-[#e8f5e9] flex items-center justify-center text-xl flex-shrink-0">{item.icon}</div>
+                <div className="w-10 h-10 rounded-xl bg-[#d4f1e4] flex items-center justify-center text-xl flex-shrink-0">{item.icon}</div>
                 <div>
                   <p className="font-bold text-gray-900 text-sm">{item.title}</p>
                   <p className="text-gray-500 text-xs mt-1 leading-relaxed">{item.desc}</p>
@@ -424,12 +424,12 @@ export default function CoimbatorePage() {
             Key Facts — JKKN Dental College &amp; Hospital
           </h2>
           <p className="text-gray-500 text-base mb-4">Quick reference data for prospective learners from Coimbatore</p>
-          <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-10" />
+          <div className="w-14 h-1 bg-[#ffde59] rounded mx-auto mb-10" />
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
             {keyFacts.map((fact) => (
               <div key={fact.label} className="bg-[#FBFBEE] rounded-xl p-4 text-left border border-gray-100">
                 <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-1">{fact.label}</p>
-                <p className="text-[#006837] font-bold text-sm leading-snug">{fact.value}</p>
+                <p className="text-[#0b6d41] font-bold text-sm leading-snug">{fact.value}</p>
               </div>
             ))}
           </div>
@@ -450,10 +450,10 @@ export default function CoimbatorePage() {
               The college offers the Bachelor of Dental Surgery (BDS) program with 100 seats and the Master of Dental Surgery (MDS) program with 5 specializations: Orthodontics and Dentofacial Orthopaedics, Prosthodontics, Oral Medicine and Radiology, Conservative Dentistry and Endodontics, and Periodontics.
             </p>
             <p className="text-gray-600 leading-relaxed" style={{ fontSize: 'clamp(0.875rem, 1vw + 0.3rem, 1rem)' }}>
-              The on-campus teaching hospital operates 200+ dental chairs, 100+ hospital beds, and treats 500+ patients daily, providing clinical exposure from Year 1 of the BDS program. The campus is an AI-integrated dental educational campus, with <Link href="/research/" className="text-[#006837] hover:underline font-medium">50+ research publications</Link> and an active institutional innovation council.
+              The on-campus teaching hospital operates 200+ dental chairs, 100+ hospital beds, and treats 500+ patients daily, providing clinical exposure from Year 1 of the BDS program. The campus is an AI-integrated dental educational campus, with <Link href="/research/" className="text-[#0b6d41] hover:underline font-medium">50+ research publications</Link> and an active institutional innovation council.
             </p>
             <p className="text-gray-600 leading-relaxed" style={{ fontSize: 'clamp(0.875rem, 1vw + 0.3rem, 1rem)' }}>
-              JKKN Dental College &amp; Hospital records a 93.9% placed-or-higher-studies rate (2024-25 batch) for BDS graduates, with a median salary of Rs 3,60,000 (NIRF 2026 filing). Recognized as one of the <Link href="/best-dental-college-tamil-nadu/" className="text-[#006837] hover:underline font-medium">best dental colleges in Tamil Nadu</Link>, JKKN combines institutional heritage with measurable career outcomes.
+              JKKN Dental College &amp; Hospital records a 93.9% placed-or-higher-studies rate (2024-25 batch) for BDS graduates, with a median salary of Rs 3,60,000 (NIRF 2026 filing). Recognized as one of the <Link href="/best-dental-college-tamil-nadu/" className="text-[#0b6d41] hover:underline font-medium">best dental colleges in Tamil Nadu</Link>, JKKN combines institutional heritage with measurable career outcomes.
             </p>
             <p className="text-gray-600 leading-relaxed" style={{ fontSize: 'clamp(0.875rem, 1vw + 0.3rem, 1rem)' }}>
               Learners from Coimbatore access the campus via a 108-km drive on NH-544 (approximately 1.5 hours) or through college-operated transport services. Contact: +91 9345855001 | info@jkkn.ac.in
@@ -465,10 +465,10 @@ export default function CoimbatorePage() {
       {/* ── E-E-A-T Trust Signals ── */}
       <section className="bg-white py-10 px-4">
         <div className="max-w-3xl mx-auto">
-          <div className="bg-[#FBFBEE] border border-[#7cb983]/30 rounded-2xl p-6">
+          <div className="bg-[#FBFBEE] border border-[#0f8f56]/30 rounded-2xl p-6">
             <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-3">About This Page</p>
             <p className="text-gray-600 text-sm leading-relaxed">
-              This page is published by JKKN Dental College &amp; Hospital, a NDC-approved institution established in 1987, affiliated with The Tamil Nadu Dr. M.G.R. Medical University, Chennai. Placement data is sourced from JKKN&apos;s <a href="/pdf/NIRF-2026-Dental.pdf" target="_blank" rel="noopener noreferrer" className="text-[#006837] underline">NIRF 2026 submission</a>. Admission data is sourced from <a href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_medium=organic&utm_campaign=coimbatore" target="_blank" rel="noopener noreferrer" className="text-[#006837] underline">www.jkkn.ai/apply/jkkn-admission-2026</a>. Last updated: March 2026.
+              This page is published by JKKN Dental College &amp; Hospital, a NDC-approved institution established in 1987, affiliated with The Tamil Nadu Dr. M.G.R. Medical University, Chennai. Placement data is sourced from JKKN&apos;s <a href="/pdf/NIRF-2026-Dental.pdf" target="_blank" rel="noopener noreferrer" className="text-[#0b6d41] underline">NIRF 2026 submission</a>. Admission data is sourced from <a href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_medium=organic&utm_campaign=coimbatore" target="_blank" rel="noopener noreferrer" className="text-[#0b6d41] underline">www.jkkn.ai/apply/jkkn-admission-2026</a>. Last updated: March 2026.
             </p>
           </div>
         </div>
@@ -481,15 +481,15 @@ export default function CoimbatorePage() {
             Frequently Asked Questions
           </h2>
           <p className="text-gray-500 text-base mb-4">Questions Coimbatore learners ask about dental colleges — answered</p>
-          <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-12" />
+          <div className="w-14 h-1 bg-[#ffde59] rounded mx-auto mb-12" />
           <div className="text-left space-y-3">
             {faqs.map((faq, i) => (
-              <details key={i} className="rounded-xl overflow-hidden border border-gray-200 group open:border-[#7cb983]">
+              <details key={i} className="rounded-xl overflow-hidden border border-gray-200 group open:border-[#0f8f56]">
                 <summary className="flex items-center justify-between px-5 py-4 text-left font-semibold text-gray-900 text-sm sm:text-base bg-white hover:bg-gray-50 transition-colors cursor-pointer list-none [&::-webkit-details-marker]:hidden">
                   <span>{faq.q}</span>
-                  <svg className="w-5 h-5 text-[#006837] flex-shrink-0 ml-4 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" /></svg>
+                  <svg className="w-5 h-5 text-[#0b6d41] flex-shrink-0 ml-4 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" /></svg>
                 </summary>
-                <div className="px-5 pb-5 pt-2 text-gray-500 text-sm leading-relaxed border-t border-[#7cb983]/20 bg-white">{faq.a}</div>
+                <div className="px-5 pb-5 pt-2 text-gray-500 text-sm leading-relaxed border-t border-[#0f8f56]/20 bg-white">{faq.a}</div>
               </details>
             ))}
           </div>
@@ -503,7 +503,7 @@ export default function CoimbatorePage() {
             Explore More Cities
           </h2>
           <p className="text-gray-500 text-base mb-4">Find the best dental college near your city</p>
-          <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-10" />
+          <div className="w-14 h-1 bg-[#ffde59] rounded mx-auto mb-10" />
           <ul className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4 list-none p-0 m-0">
             {cities.slice(0, 3).map((city) => (
               <li key={city.name}>
@@ -526,7 +526,7 @@ export default function CoimbatorePage() {
               </li>
             ))}
           </ul>
-          <a href="/academics/" className="inline-block bg-[#7cb983] hover:bg-[#6ba872] text-white font-bold px-10 py-4 rounded-full transition-all transform hover:scale-105 shadow-lg text-base">
+          <a href="/academics/" className="inline-block bg-[#ffde59] hover:bg-[#e6c64d] text-[#032816] font-bold px-10 py-4 rounded-full transition-all transform hover:scale-105 shadow-lg text-base">
             View All Programmes
           </a>
         </div>

@@ -101,12 +101,12 @@ export default function StudentCentricTeachingMethods() {
       <Header />
 
       {/* Hero Banner */}
-      <section className="bg-[#006837] py-16 px-4">
+      <section className="bg-[#0b6d41] py-16 px-4">
         <div className="max-w-5xl mx-auto text-center">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 uppercase tracking-wide">
             STUDENT-CENTRIC TEACHING METHODS
           </h1>
-          <div className="w-20 h-1 bg-[#7cb983] mx-auto mb-6 rounded-full" />
+          <div className="w-20 h-1 bg-[#ffde59] mx-auto mb-6 rounded-full" />
           <p className="hero-description text-white/90 text-base md:text-lg leading-relaxed max-w-3xl mx-auto">
             JKKN Dental College &amp; Hospital has embraced a progressive approach to education by implementing learner-centric teaching methods. This transformative approach places learners at the center of the learning experience, fostering engagement, critical thinking, and skill development.
           </p>
@@ -124,14 +124,14 @@ export default function StudentCentricTeachingMethods() {
               >
                 {/* Number Badge */}
                 <div className="flex-shrink-0">
-                  <div className="w-11 h-11 rounded-full bg-[#006837] text-white flex items-center justify-center font-bold text-base leading-none">
+                  <div className="w-11 h-11 rounded-full bg-[#0b6d41] text-white flex items-center justify-center font-bold text-base leading-none">
                     {method.number}
                   </div>
                 </div>
 
                 {/* Content */}
                 <div className="flex-1 min-w-0">
-                  <h3 className="text-base md:text-lg font-bold text-[#006837] mb-3">
+                  <h3 className="text-base md:text-lg font-bold text-[#0b6d41] mb-3">
                     {method.title}
                   </h3>
                   <p className="text-gray-700 leading-relaxed text-sm md:text-base">
@@ -151,10 +151,10 @@ export default function StudentCentricTeachingMethods() {
             {sectionTitles.map((title, index) => (
               <div
                 key={index}
-                className="flex items-start gap-4 bg-[#FBFBEE] border border-[#7cb983]/30 rounded-xl p-5 hover:border-[#7cb983] hover:shadow-sm transition-all duration-200"
+                className="flex items-start gap-4 bg-[#FBFBEE] border border-[#0f8f56]/30 rounded-xl p-5 hover:border-[#0f8f56] hover:shadow-sm transition-all duration-200"
               >
-                <div className="flex-shrink-0 w-1.5 h-full min-h-[2rem] rounded-full bg-[#7cb983] self-stretch" />
-                <h2 className="text-sm md:text-base font-bold text-[#002309] uppercase leading-snug">
+                <div className="flex-shrink-0 w-1.5 h-full min-h-[2rem] rounded-full bg-[#ffde59] self-stretch" />
+                <h2 className="text-sm md:text-base font-bold text-[#032816] uppercase leading-snug">
                   {title}
                 </h2>
               </div>

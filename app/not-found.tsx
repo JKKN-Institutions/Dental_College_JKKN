@@ -15,13 +15,13 @@ export default function NotFound() {
       <div className="text-center max-w-lg">
         <p
           className="text-8xl font-bold mb-4"
-          style={{ color: "#7cb983" }}
+          style={{ color: "#0b6d41" }}
         >
           404
         </p>
         <h1
           className="text-2xl font-semibold mb-3"
-          style={{ color: "#006837" }}
+          style={{ color: "#0b6d41" }}
         >
           Page Not Found
         </h1>
@@ -32,21 +32,21 @@ export default function NotFound() {
           <Link
             href="/"
             className="px-6 py-3 rounded-lg font-medium text-white transition-colors"
-            style={{ backgroundColor: "#7cb983" }}
+            style={{ backgroundColor: "#0b6d41" }}
           >
             Go to Homepage
           </Link>
           <Link
             href="/admissions"
             className="px-6 py-3 rounded-lg font-medium border transition-colors"
-            style={{ borderColor: "#006837", color: "#006837" }}
+            style={{ borderColor: "#0b6d41", color: "#0b6d41" }}
           >
             Admissions
           </Link>
           <Link
             href="/contact"
             className="px-6 py-3 rounded-lg font-medium border transition-colors"
-            style={{ borderColor: "#006837", color: "#006837" }}
+            style={{ borderColor: "#0b6d41", color: "#0b6d41" }}
           >
             Contact Us
           </Link>

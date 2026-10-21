@@ -7,12 +7,12 @@ export default function NamakkalPage() {
 
 
   const whyFeatures = [
-    { icon: <Hospital className="w-6 h-6 text-[#006837]" />, title: 'Own Hospital', desc: '200+ chair NDC-approved teaching hospital on campus, treating 500+ patients a day' },
-    { icon: <Stethoscope className="w-6 h-6 text-[#006837]" />, title: 'Real Patient Exposure', desc: '500+ patients treated daily — learners get hands-on clinical exposure from their very first year of BDS' },
-    { icon: <Microscope className="w-6 h-6 text-[#006837]" />, title: 'Advanced Learning Labs', desc: 'Advanced dental learning labs, simulation equipment, and an AI-integrated dental campus' },
-    { icon: <TrendingUp className="w-6 h-6 text-[#006837]" />, title: 'NEET MDS Results', desc: 'Strong track record in NEET MDS results and higher education placements year after year' },
-    { icon: <Users className="w-6 h-6 text-[#006837]" />, title: 'Established 1987', desc: 'Part of JKKN Institutions (est. 1952), with continuous dental education in Namakkal district since 1987' },
-    { icon: <Bus className="w-6 h-6 text-[#006837]" />, title: 'District Location', desc: 'Located IN Namakkal district at Komarapalayam on NH-544. ~65 km from Namakkal town via Tiruchengode. Hostel available.' },
+    { icon: <Hospital className="w-6 h-6 text-[#0b6d41]" />, title: 'Own Hospital', desc: '200+ chair NDC-approved teaching hospital on campus, treating 500+ patients a day' },
+    { icon: <Stethoscope className="w-6 h-6 text-[#0b6d41]" />, title: 'Real Patient Exposure', desc: '500+ patients treated daily — learners get hands-on clinical exposure from their very first year of BDS' },
+    { icon: <Microscope className="w-6 h-6 text-[#0b6d41]" />, title: 'Advanced Learning Labs', desc: 'Advanced dental learning labs, simulation equipment, and an AI-integrated dental campus' },
+    { icon: <TrendingUp className="w-6 h-6 text-[#0b6d41]" />, title: 'NEET MDS Results', desc: 'Strong track record in NEET MDS results and higher education placements year after year' },
+    { icon: <Users className="w-6 h-6 text-[#0b6d41]" />, title: 'Established 1987', desc: 'Part of JKKN Institutions (est. 1952), with continuous dental education in Namakkal district since 1987' },
+    { icon: <Bus className="w-6 h-6 text-[#0b6d41]" />, title: 'District Location', desc: 'Located IN Namakkal district at Komarapalayam on NH-544. ~65 km from Namakkal town via Tiruchengode. Hostel available.' },
   ];
 
   const programmes = [
@@ -29,31 +29,31 @@ export default function NamakkalPage() {
 
 
   const transportRows = [
-    { icon: <Route className="w-6 h-6 text-[#006837]" />, label: 'ROUTE', text: 'NH-544 (Salem-Coimbatore Highway) — JKKN campus is on this highway at Komarapalayam, Namakkal district' },
-    { icon: <Bus className="w-6 h-6 text-[#006837]" />, label: 'BY BUS', text: 'Frequent buses from Namakkal city via Tiruchengode to Komarapalayam (~65 km, ~1.5 hours). Direct local buses and auto-rickshaws available at Komarapalayam.' },
-    { icon: <Train className="w-6 h-6 text-[#006837]" />, label: 'NEAREST RAILWAY STATION', text: 'Salem Junction (~60 km from campus) | Erode Junction (~18 km from campus)' },
-    { icon: <Plane className="w-6 h-6 text-[#006837]" />, label: 'NEAREST AIRPORT', text: 'Coimbatore International Airport (Code: CJB) (~108 km) | Salem Airport (~60 km from campus)' },
-    { icon: <MapPin className="w-6 h-6 text-[#006837]" />, label: 'CAMPUS ADDRESS', text: 'JKKN Institutions, Natarajapuram, NH-544, Komarapalayam (TK), Namakkal (DT), Tamil Nadu - 638183' },
+    { icon: <Route className="w-6 h-6 text-[#0b6d41]" />, label: 'ROUTE', text: 'NH-544 (Salem-Coimbatore Highway) — JKKN campus is on this highway at Komarapalayam, Namakkal district' },
+    { icon: <Bus className="w-6 h-6 text-[#0b6d41]" />, label: 'BY BUS', text: 'Frequent buses from Namakkal city via Tiruchengode to Komarapalayam (~65 km, ~1.5 hours). Direct local buses and auto-rickshaws available at Komarapalayam.' },
+    { icon: <Train className="w-6 h-6 text-[#0b6d41]" />, label: 'NEAREST RAILWAY STATION', text: 'Salem Junction (~60 km from campus) | Erode Junction (~18 km from campus)' },
+    { icon: <Plane className="w-6 h-6 text-[#0b6d41]" />, label: 'NEAREST AIRPORT', text: 'Coimbatore International Airport (Code: CJB) (~108 km) | Salem Airport (~60 km from campus)' },
+    { icon: <MapPin className="w-6 h-6 text-[#0b6d41]" />, label: 'CAMPUS ADDRESS', text: 'JKKN Institutions, Natarajapuram, NH-544, Komarapalayam (TK), Namakkal (DT), Tamil Nadu - 638183' },
   ];
 
   const facilities = [
-    { icon: <Microscope className="w-6 h-6 text-[#006837]" />, title: 'Modern Learning Labs', desc: 'State-of-the-art learning labs and smart learning studios' },
-    { icon: <BookOpen className="w-6 h-6 text-[#006837]" />, title: 'Digital Learning Commons', desc: 'Well-stocked learning commons with digital access and journals' },
-    { icon: <Home className="w-6 h-6 text-[#006837]" />, title: 'Hostel', desc: 'Separate hostels for boys and girls with mess facility' },
-    { icon: <Bus className="w-6 h-6 text-[#006837]" />, title: 'Transport', desc: 'College buses connecting to Namakkal district areas and surrounding towns' },
-    { icon: <Award className="w-6 h-6 text-[#006837]" />, title: 'Sports', desc: 'Playground, indoor games, gym, and annual sports events' },
-    { icon: <Wifi className="w-6 h-6 text-[#006837]" />, title: 'WiFi Campus', desc: 'High-speed internet across the entire campus' },
+    { icon: <Microscope className="w-6 h-6 text-[#0b6d41]" />, title: 'Modern Learning Labs', desc: 'State-of-the-art learning labs and smart learning studios' },
+    { icon: <BookOpen className="w-6 h-6 text-[#0b6d41]" />, title: 'Digital Learning Commons', desc: 'Well-stocked learning commons with digital access and journals' },
+    { icon: <Home className="w-6 h-6 text-[#0b6d41]" />, title: 'Hostel', desc: 'Separate hostels for boys and girls with mess facility' },
+    { icon: <Bus className="w-6 h-6 text-[#0b6d41]" />, title: 'Transport', desc: 'College buses connecting to Namakkal district areas and surrounding towns' },
+    { icon: <Award className="w-6 h-6 text-[#0b6d41]" />, title: 'Sports', desc: 'Playground, indoor games, gym, and annual sports events' },
+    { icon: <Wifi className="w-6 h-6 text-[#0b6d41]" />, title: 'WiFi Campus', desc: 'High-speed internet across the entire campus' },
   ];
 
   const cities = [
-    { icon: <Bus className="w-6 h-6 text-[#006837]" />, name: 'Salem', dist: '~60 km', href: '/salem/' },
-    { icon: <Route className="w-6 h-6 text-[#006837]" />, name: 'Erode', dist: '~18 km', href: '/erode/' },
-    { icon: <Target className="w-6 h-6 text-[#006837]" />, name: 'Tiruppur', dist: '~67 km', href: '/tiruppur/' },
-    { icon: <Sparkles className="w-6 h-6 text-[#006837]" />, name: 'Coimbatore', dist: '~108 km', href: '/coimbatore/' },
-    { icon: <Train className="w-6 h-6 text-[#006837]" />, name: 'Trichy', dist: '~145 km', href: '/trichy/' },
-    { icon: <MapPin className="w-6 h-6 text-[#006837]" />, name: 'Madurai', dist: '~215 km', href: '/madurai/' },
-    { icon: <Plane className="w-6 h-6 text-[#006837]" />, name: 'Chennai', dist: '~380 km', href: '/chennai/' },
-    { icon: <Wifi className="w-6 h-6 text-[#006837]" />, name: 'Hosur', dist: '~245 km', href: '/hosur/' },
+    { icon: <Bus className="w-6 h-6 text-[#0b6d41]" />, name: 'Salem', dist: '~60 km', href: '/salem/' },
+    { icon: <Route className="w-6 h-6 text-[#0b6d41]" />, name: 'Erode', dist: '~18 km', href: '/erode/' },
+    { icon: <Target className="w-6 h-6 text-[#0b6d41]" />, name: 'Tiruppur', dist: '~67 km', href: '/tiruppur/' },
+    { icon: <Sparkles className="w-6 h-6 text-[#0b6d41]" />, name: 'Coimbatore', dist: '~108 km', href: '/coimbatore/' },
+    { icon: <Train className="w-6 h-6 text-[#0b6d41]" />, name: 'Trichy', dist: '~145 km', href: '/trichy/' },
+    { icon: <MapPin className="w-6 h-6 text-[#0b6d41]" />, name: 'Madurai', dist: '~215 km', href: '/madurai/' },
+    { icon: <Plane className="w-6 h-6 text-[#0b6d41]" />, name: 'Chennai', dist: '~380 km', href: '/chennai/' },
+    { icon: <Wifi className="w-6 h-6 text-[#0b6d41]" />, name: 'Hosur', dist: '~245 km', href: '/hosur/' },
   ];
 
   const keyFacts = [
@@ -85,7 +85,7 @@ export default function NamakkalPage() {
       <nav aria-label="Breadcrumb" className="bg-white border-b border-gray-100">
         <div className="max-w-5xl mx-auto px-4 py-3">
           <ol className="flex items-center gap-2 text-sm text-gray-500">
-            <li><Link href="/" className="hover:text-[#006837] transition-colors">Home</Link></li>
+            <li><Link href="/" className="hover:text-[#0b6d41] transition-colors">Home</Link></li>
             <li className="text-gray-300">/</li>
             <li className="text-gray-900 font-medium">Namakkal Dental College</li>
           </ol>
@@ -93,13 +93,13 @@ export default function NamakkalPage() {
       </nav>
 
       {/* ── Top Announcement Bar ── */}
-      <div className="bg-[#002309] text-white py-2 px-4">
+      <div className="bg-[#032816] text-white py-2 px-4">
         <div className="max-w-7xl mx-auto flex items-center justify-center gap-3 sm:gap-6 flex-wrap">
           <span className="flex items-center gap-2 text-sm font-medium">
-            <span className="w-2 h-2 bg-green-400 rounded-full inline-block" />
+            <span className="w-2 h-2 bg-[#0f8f56] rounded-full inline-block" />
             Admissions Open 2026-27
           </span>
-          <a href="tel:+919345855001" className="bg-[#006837] hover:bg-[#005a30] text-white text-sm font-semibold px-4 py-1.5 rounded-full border border-white/20 transition-colors">
+          <a href="tel:+919345855001" className="bg-[#0b6d41] hover:bg-[#005a30] text-white text-sm font-semibold px-4 py-1.5 rounded-full border border-white/20 transition-colors">
             Call Us
           </a>
         </div>
@@ -108,13 +108,13 @@ export default function NamakkalPage() {
       {/* ── Hero ── */}
       <section
         className="relative flex flex-col items-center justify-center text-center px-4 py-16 sm:py-24"
-        style={{ background: 'linear-gradient(135deg, #006837 0%, #002309 100%)', minHeight: '88vh' }}
+        style={{ background: 'linear-gradient(135deg, #0b6d41 0%, #032816 100%)', minHeight: '88vh' }}
       >
         <div className="mb-6 inline-flex items-center gap-2 bg-white/10 backdrop-blur border border-white/20 text-white text-sm font-medium px-5 py-2 rounded-full">
           <Shield className="w-4 h-4" /> NDC, NAAC Approved • Admissions Open
         </div>
         <h1 className="text-white font-extrabold leading-tight mb-3 max-w-4xl" style={{ fontSize: 'clamp(2rem, 5vw + 0.5rem, 3.5rem)' }}>
-          <span className="text-[#7cb983]">Namakkal</span> Dental College
+          <span className="text-[#ffde59]">Namakkal</span> Dental College
         </h1>
         <p className="text-white/70 text-sm sm:text-base mb-4 max-w-2xl font-medium">
           JKKN Dental College &amp; Hospital — Namakkal District&apos;s NDC-Approved Dental College
@@ -144,10 +144,10 @@ export default function NamakkalPage() {
           ))}
         </ul>
         <div className="flex flex-col sm:flex-row gap-4 items-center">
-          <a href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_medium=organic&utm_campaign=namakkal" target="_blank" rel="nofollow noopener noreferrer" className="bg-[#7cb983] hover:bg-[#6ba872] text-white font-bold px-8 py-4 rounded-full transition-all transform hover:scale-105 shadow-lg text-base">
+          <a href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_medium=organic&utm_campaign=namakkal" target="_blank" rel="nofollow noopener noreferrer" className="bg-[#ffde59] hover:bg-[#e6c64d] text-[#032816] font-bold px-8 py-4 rounded-full transition-all transform hover:scale-105 shadow-lg text-base">
             Apply Now — 2026-27
           </a>
-          <a href="tel:+919345855001" className="bg-[#006837] hover:bg-[#002309] text-white font-bold px-8 py-4 rounded-full transition-all transform hover:scale-105 shadow-lg text-base">Call Us</a>
+          <a href="tel:+919345855001" className="bg-[#0b6d41] hover:bg-[#032816] text-white font-bold px-8 py-4 rounded-full transition-all transform hover:scale-105 shadow-lg text-base">Call Us</a>
         </div>
         <div className="flex flex-col sm:flex-row gap-4 mt-6 items-center">
           <Link href="/admissions/" className="text-white/70 hover:text-white text-sm underline underline-offset-2 transition-colors">Admission Process</Link>
@@ -160,9 +160,9 @@ export default function NamakkalPage() {
       <div className="bg-white border-b border-gray-100 py-4 px-4">
         <div className="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8">
           <div className="flex items-center gap-3">
-            <span className="flex items-center gap-1.5 bg-[#FBFBEE] border border-[#7cb983] text-[#006837] text-sm font-semibold px-3 py-1.5 rounded-full">✓ NDC</span>
-            <span className="flex items-center gap-1.5 bg-[#FBFBEE] border border-[#7cb983] text-[#006837] text-sm font-semibold px-3 py-1.5 rounded-full">✓ NAAC</span>
-            <span className="flex items-center gap-1.5 bg-[#FBFBEE] border border-[#7cb983] text-[#006837] text-sm font-semibold px-3 py-1.5 rounded-full">✓ In Namakkal Dist.</span>
+            <span className="flex items-center gap-1.5 bg-[#FBFBEE] border border-[#0f8f56] text-[#0b6d41] text-sm font-semibold px-3 py-1.5 rounded-full">✓ NDC</span>
+            <span className="flex items-center gap-1.5 bg-[#FBFBEE] border border-[#0f8f56] text-[#0b6d41] text-sm font-semibold px-3 py-1.5 rounded-full">✓ NAAC</span>
+            <span className="flex items-center gap-1.5 bg-[#FBFBEE] border border-[#0f8f56] text-[#0b6d41] text-sm font-semibold px-3 py-1.5 rounded-full">✓ In Namakkal Dist.</span>
           </div>
           <span className="hidden sm:block text-gray-300">|</span>
           <p className="text-gray-500 text-sm text-center">Affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai</p>
@@ -179,11 +179,11 @@ export default function NamakkalPage() {
             Yes. Namakkal district has three NDC-approved dental colleges; JKKN Dental College &amp; Hospital is the one at Komarapalayam on NH-544 (Salem–Coimbatore Highway). It is NDC approved, NAAC accredited, and affiliated to Tamil Nadu Dr. M.G.R. Medical University, Chennai. Established in 1987 as part of JKKN Institutions, it offers BDS (100 seats) and MDS (5 specializations). The 200-chair teaching hospital treats 500+ patients daily.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 mt-2">
-            <Link href="/about/" className="text-[#006837] hover:underline text-sm font-medium">
+            <Link href="/about/" className="text-[#0b6d41] hover:underline text-sm font-medium">
               Learn about JKKN&apos;s history →
             </Link>
             <span className="hidden sm:block text-gray-300">|</span>
-            <Link href="/about/approvals-accreditations/" className="text-[#006837] hover:underline text-sm font-medium">
+            <Link href="/about/approvals-accreditations/" className="text-[#0b6d41] hover:underline text-sm font-medium">
               View NDC approval documents →
             </Link>
           </div>
@@ -195,8 +195,8 @@ export default function NamakkalPage() {
         <div className="max-w-3xl mx-auto">
           <div className="bg-[#FBFBEE] rounded-2xl shadow-sm p-6 sm:p-8 flex flex-col sm:flex-row items-start sm:items-center gap-6 justify-between">
             <div className="flex items-start gap-5">
-              <div className="text-[#006837] font-extrabold leading-none" style={{ fontSize: 'clamp(2.5rem, 5vw, 3.5rem)' }}>
-                <MapPin className="w-12 h-12 text-[#006837]" />
+              <div className="text-[#0b6d41] font-extrabold leading-none" style={{ fontSize: 'clamp(2.5rem, 5vw, 3.5rem)' }}>
+                <MapPin className="w-12 h-12 text-[#0b6d41]" />
               </div>
               <div>
                 <p className="font-bold text-gray-900 text-base sm:text-lg">JKKN Dental is IN Namakkal District</p>
@@ -207,7 +207,7 @@ export default function NamakkalPage() {
             <a
               href="https://maps.app.goo.gl/mXx6rFRqpS9U76BK6"
               target="_blank" rel="nofollow noopener noreferrer"
-              className="flex-shrink-0 bg-[#006837] hover:bg-[#002309] text-white font-semibold px-5 py-3 rounded-xl flex flex-col items-center gap-1 transition-colors min-w-[110px] text-center"
+              className="flex-shrink-0 bg-[#0b6d41] hover:bg-[#032816] text-white font-semibold px-5 py-3 rounded-xl flex flex-col items-center gap-1 transition-colors min-w-[110px] text-center"
             >
               <MapPin className="w-5 h-5" />
               <span className="text-sm">View on Map</span>
@@ -223,11 +223,11 @@ export default function NamakkalPage() {
             Key Facts — JKKN Dental College, Namakkal District
           </h2>
           <p className="text-gray-500 text-base mb-6 text-center">Quick reference for learners and learning partners</p>
-          <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-10" />
+          <div className="w-14 h-1 bg-[#ffde59] rounded mx-auto mb-10" />
 
           {/* Speakable summary block */}
           <div className="speakable-summary bg-white rounded-2xl shadow-sm p-6 mb-8 text-sm text-gray-700 leading-relaxed border border-gray-100">
-            <p className="font-semibold text-[#006837] mb-2 text-base">About JKKN Dental College &amp; Hospital</p>
+            <p className="font-semibold text-[#0b6d41] mb-2 text-base">About JKKN Dental College &amp; Hospital</p>
             <p>
               JKKN Dental College &amp; Hospital (full legal name: J.K.K. Nattraja Dental College and Hospital) is a private dental college and teaching hospital established in 1987, located at Natarajapuram, NH-544, Komarapalayam, Namakkal District, Tamil Nadu 638183. The institution is approved by the National Dental Commission (NDC) and affiliated to Tamil Nadu Dr. M.G.R. Medical University, Chennai. The teaching hospital operates 200+ dental chairs and 100+ inpatient beds, treating 500+ outpatients daily. Undergraduate admission (BDS, 100 seats) follows NEET-UG counselling. Postgraduate admission (MDS, 5 specializations) follows NEET-MDS counselling. An AI-integrated dental campus.
             </p>
@@ -236,7 +236,7 @@ export default function NamakkalPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             {keyFacts.map((fact) => (
               <div key={fact.label} className="bg-white rounded-xl p-4 flex items-start gap-3 border border-gray-100">
-                <CheckCircle className="w-5 h-5 text-[#7cb983] flex-shrink-0 mt-0.5" />
+                <CheckCircle className="w-5 h-5 text-[#0b6d41] flex-shrink-0 mt-0.5" />
                 <div>
                   <span className="text-xs font-semibold tracking-widest text-gray-400 uppercase">{fact.label}</span>
                   <p className="text-gray-800 text-sm font-medium mt-0.5">{fact.value}</p>
@@ -262,7 +262,7 @@ export default function NamakkalPage() {
           <div className="overflow-x-auto max-w-3xl mx-auto mb-8">
             <table className="w-full border-collapse bg-white rounded-xl shadow-sm overflow-hidden text-sm text-left">
               <thead>
-                <tr className="bg-[#006837] text-white">
+                <tr className="bg-[#0b6d41] text-white">
                   <th className="px-4 py-3 font-semibold">College</th>
                   <th className="px-4 py-3 font-semibold">Where in Namakkal district</th>
                   <th className="px-4 py-3 font-semibold">Established</th>
@@ -299,7 +299,7 @@ export default function NamakkalPage() {
           <p className="text-gray-600 max-w-3xl mx-auto mb-8 leading-relaxed text-sm">
             <strong className="text-gray-800">E-E-A-T Note:</strong> JKKN Dental College &amp; Hospital is NDC approved (National Dental Commission), NAAC accredited (National Assessment and Accreditation Council), and affiliated to Tamil Nadu Dr. M.G.R. Medical University, Chennai. All programmes are regulated by Tamil Nadu DME (Directorate of Medical Education). Clinical training is conducted at the on-campus 200-chair dental hospital under qualified senior learners with 50+ publications.
           </p>
-          <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-12" />
+          <div className="w-14 h-1 bg-[#ffde59] rounded mx-auto mb-12" />
           <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 list-none">
             {whyFeatures.map((item) => (
               <li key={item.title} className="bg-[#FBFBEE] rounded-2xl p-6 text-center hover:shadow-md transition-shadow">
@@ -319,11 +319,11 @@ export default function NamakkalPage() {
             BDS and MDS Programmes at JKKN Dental College Namakkal
           </h2>
           <p className="text-gray-500 text-base mb-4">Choose the right programme for your dental career</p>
-          <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-12" />
+          <div className="w-14 h-1 bg-[#ffde59] rounded mx-auto mb-12" />
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {programmes.map((prog) => (
               <div key={prog.title} className="bg-white rounded-2xl p-6 sm:p-8 text-left shadow-sm">
-                <div className="mb-4"><GraduationCap className="w-8 h-8 text-[#006837]" /></div>
+                <div className="mb-4"><GraduationCap className="w-8 h-8 text-[#0b6d41]" /></div>
                 <h3 className="text-lg font-bold text-gray-900 mb-5">{prog.title}</h3>
                 <dl className="space-y-3 mb-4">
                   {[
@@ -332,16 +332,16 @@ export default function NamakkalPage() {
                     { label: 'Intake', value: prog.intake },
                   ].map((row) => (
                     <div key={row.label} className="flex justify-between items-center border-b border-gray-100 pb-2">
-                      <dt className="text-[#7cb983] text-sm">{row.label}</dt>
+                      <dt className="text-[#0b6d41] text-sm">{row.label}</dt>
                       <dd className="text-gray-900 text-sm font-semibold">{row.value}</dd>
                     </div>
                   ))}
                 </dl>
                 <p className="text-gray-400 text-sm mb-4">{prog.eligibility}</p>
-                <Link href={prog.href} className="text-[#006837] hover:underline text-sm font-medium block mb-4">
+                <Link href={prog.href} className="text-[#0b6d41] hover:underline text-sm font-medium block mb-4">
                   {prog.title.startsWith('BDS') ? 'View BDS Details →' : 'View MDS Specializations →'}
                 </Link>
-                <Link href="/admissions/" className="block text-center bg-[#FBFBEE] hover:bg-[#e8f5e9] text-[#006837] font-semibold py-3 rounded-xl transition-colors text-sm">
+                <Link href="/admissions/" className="block text-center bg-[#FBFBEE] hover:bg-[#d4f1e4] text-[#0b6d41] font-semibold py-3 rounded-xl transition-colors text-sm">
                   Enquire About This Course
                 </Link>
               </div>
@@ -357,7 +357,7 @@ export default function NamakkalPage() {
             Fees and Admission for 2026-27 at JKKN Dental College Namakkal
           </h2>
           <p className="text-gray-500 text-base mb-4 text-center">BDS and MDS admission process, fee structure, and NEET requirements</p>
-          <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-12" />
+          <div className="w-14 h-1 bg-[#ffde59] rounded mx-auto mb-12" />
 
           {/* Fee Table */}
           <div className="mb-10">
@@ -365,7 +365,7 @@ export default function NamakkalPage() {
             <div className="overflow-x-auto rounded-2xl border border-gray-100">
               <table className="w-full text-sm">
                 <thead>
-                  <tr className="bg-[#006837] text-white">
+                  <tr className="bg-[#0b6d41] text-white">
                     <th className="px-5 py-4 text-left font-semibold">Programme</th>
                     <th className="px-5 py-4 text-left font-semibold">Duration</th>
                     <th className="px-5 py-4 text-left font-semibold">Seats</th>
@@ -377,19 +377,19 @@ export default function NamakkalPage() {
                     <td className="px-5 py-4 font-semibold text-gray-900">BDS</td>
                     <td className="px-5 py-4 text-gray-600">5 years (4 + 1 internship)</td>
                     <td className="px-5 py-4 text-gray-600">100</td>
-                    <td className="px-5 py-4 text-gray-600">As per Tamil Nadu DME regulations. <Link href="/fees-structure/" className="text-[#006837] hover:underline font-medium">View official fee structure →</Link></td>
+                    <td className="px-5 py-4 text-gray-600">As per Tamil Nadu DME regulations. <Link href="/fees-structure/" className="text-[#0b6d41] hover:underline font-medium">View official fee structure →</Link></td>
                   </tr>
                   <tr className="bg-[#FBFBEE]">
                     <td className="px-5 py-4 font-semibold text-gray-900">MDS</td>
                     <td className="px-5 py-4 text-gray-600">3 years</td>
                     <td className="px-5 py-4 text-gray-600">30</td>
-                    <td className="px-5 py-4 text-gray-600">As per Tamil Nadu DOGE regulations. <Link href="/fees-structure/" className="text-[#006837] hover:underline font-medium">View official fee structure →</Link></td>
+                    <td className="px-5 py-4 text-gray-600">As per Tamil Nadu DOGE regulations. <Link href="/fees-structure/" className="text-[#0b6d41] hover:underline font-medium">View official fee structure →</Link></td>
                   </tr>
                 </tbody>
               </table>
             </div>
             <p className="text-gray-400 text-xs mt-3 leading-relaxed">
-              Fee figures vary by quota (Government/Management). For official and current fee structure, visit <Link href="/fees-structure/" className="text-[#006837] hover:underline">dental.jkkn.ac.in/fees-structure/</Link>. Fees are regulated by Tamil Nadu DME and subject to change per government guidelines.
+              Fee figures vary by quota (Government/Management). For official and current fee structure, visit <Link href="/fees-structure/" className="text-[#0b6d41] hover:underline">dental.jkkn.ac.in/fees-structure/</Link>. Fees are regulated by Tamil Nadu DME and subject to change per government guidelines.
             </p>
           </div>
 
@@ -399,7 +399,7 @@ export default function NamakkalPage() {
             <ol className="space-y-3">
               {admissionSteps.map((step, i) => (
                 <li key={i} className="flex items-start gap-4 bg-[#FBFBEE] rounded-xl px-5 py-4">
-                  <span className="w-8 h-8 bg-[#006837] text-white rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">{i + 1}</span>
+                  <span className="w-8 h-8 bg-[#0b6d41] text-white rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">{i + 1}</span>
                   <p className="text-gray-700 text-sm leading-relaxed pt-1">{step}</p>
                 </li>
               ))}
@@ -408,11 +408,11 @@ export default function NamakkalPage() {
               <a
                 href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_medium=organic&utm_campaign=namakkal"
                 target="_blank" rel="noopener noreferrer"
-                className="bg-[#7cb983] hover:bg-[#6ba872] text-white font-bold px-8 py-4 rounded-full transition-all transform hover:scale-105 shadow text-base text-center"
+                className="bg-[#ffde59] hover:bg-[#e6c64d] text-[#032816] font-bold px-8 py-4 rounded-full transition-all transform hover:scale-105 shadow text-base text-center"
               >
                 Apply for Admission 2026-27
               </a>
-              <a href="tel:+919345855001" className="bg-[#FBFBEE] hover:bg-[#e8f5e9] text-[#006837] font-semibold px-8 py-4 rounded-full transition-colors text-base text-center">
+              <a href="tel:+919345855001" className="bg-[#FBFBEE] hover:bg-[#d4f1e4] text-[#0b6d41] font-semibold px-8 py-4 rounded-full transition-colors text-base text-center">
                 Call Admission Helpline
               </a>
             </div>
@@ -422,9 +422,9 @@ export default function NamakkalPage() {
           <div className="bg-[#FBFBEE] rounded-2xl p-6">
             <h3 className="text-base font-bold text-gray-900 mb-2">NEET 2026 — Qualifying Marks</h3>
             <p className="text-gray-600 text-sm leading-relaxed mb-3">
-              NEET-UG qualifying marks for BDS admission: <strong>General category — 144 marks</strong> | SC/ST/OBC — 113 marks. NEET 2026 is scheduled for <strong>3 May 2026</strong>. JKKN-specific cutoff ranks for 2026-27 will be updated after Tamil Nadu DME counselling concludes at <a href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_medium=organic&utm_campaign=namakkal" target="_blank" rel="noopener noreferrer" className="text-[#006837] hover:underline font-medium">www.jkkn.ai/apply/jkkn-admission-2026</a>.
+              NEET-UG qualifying marks for BDS admission: <strong>General category — 144 marks</strong> | SC/ST/OBC — 113 marks. NEET 2026 is scheduled for <strong>3 May 2026</strong>. JKKN-specific cutoff ranks for 2026-27 will be updated after Tamil Nadu DME counselling concludes at <a href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_medium=organic&utm_campaign=namakkal" target="_blank" rel="noopener noreferrer" className="text-[#0b6d41] hover:underline font-medium">www.jkkn.ai/apply/jkkn-admission-2026</a>.
             </p>
-            <p className="text-gray-400 text-xs">For personalised guidance on eligibility and cut-off ranks, call <a href="tel:+919345855001" className="text-[#006837] hover:underline">+91 9345855001</a>.</p>
+            <p className="text-gray-400 text-xs">For personalised guidance on eligibility and cut-off ranks, call <a href="tel:+919345855001" className="text-[#0b6d41] hover:underline">+91 9345855001</a>.</p>
           </div>
         </div>
       </section>
@@ -436,11 +436,11 @@ export default function NamakkalPage() {
             Placements from JKKN Dental College, Namakkal — 93.9% Placed or in Higher Studies (2024-25 batch)
           </h2>
           <p className="text-gray-500 text-base mb-4">Our placement cell connects graduates with India&apos;s top dental employers</p>
-          <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-12" />
+          <div className="w-14 h-1 bg-[#ffde59] rounded mx-auto mb-12" />
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
             {placementStats.map((stat) => (
               <div key={stat.label} className="bg-white border border-gray-100 rounded-2xl p-5 shadow-sm">
-                <div className="font-extrabold text-[#006837]" style={{ fontSize: 'clamp(1.8rem, 3vw, 2.5rem)' }}>{stat.value}</div>
+                <div className="font-extrabold text-[#0b6d41]" style={{ fontSize: 'clamp(1.8rem, 3vw, 2.5rem)' }}>{stat.value}</div>
                 <div className="text-xs font-semibold tracking-widest text-gray-400 mt-1">{stat.label}</div>
               </div>
             ))}
@@ -448,7 +448,7 @@ export default function NamakkalPage() {
           <p className="text-gray-600 text-sm max-w-2xl mx-auto mb-6 leading-relaxed">
             Of the 99 BDS graduates of the 2024-25 batch, 75 were placed and 18 went on to higher studies (93.9% in all), with a median salary of Rs 3,60,000.
           </p>
-          <a href="/pdf/NIRF-2026-Dental.pdf" target="_blank" rel="noopener noreferrer" className="text-[#006837] hover:underline text-sm font-medium">
+          <a href="/pdf/NIRF-2026-Dental.pdf" target="_blank" rel="noopener noreferrer" className="text-[#0b6d41] hover:underline text-sm font-medium">
             Source: JKKN&apos;s NIRF 2026 submission (PDF) →
           </a>
         </div>
@@ -463,9 +463,9 @@ export default function NamakkalPage() {
           <p className="snippet-answer text-gray-600 text-base mb-4 max-w-2xl mx-auto leading-relaxed">
             JKKN Dental College &amp; Hospital is located in Komarapalayam, Namakkal district, Tamil Nadu 638183. From Namakkal town, the campus is approximately 65 km via Tiruchengode on NH-544, about 1.5 hours by road. Regular bus services operate between Namakkal and Komarapalayam throughout the day.
           </p>
-          <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-10" />
+          <div className="w-14 h-1 bg-[#ffde59] rounded mx-auto mb-10" />
           <div className="bg-[#FBFBEE] rounded-2xl overflow-hidden shadow-sm text-left">
-            <div className="bg-[#006837] text-white px-6 py-5 flex items-center gap-3">
+            <div className="bg-[#0b6d41] text-white px-6 py-5 flex items-center gap-3">
               <MapPin className="w-6 h-6" />
               <div>
                 <p className="font-bold text-lg">JKKN Dental Campus — Namakkal District</p>
@@ -492,11 +492,11 @@ export default function NamakkalPage() {
             Campus &amp; Facilities
           </h2>
           <p className="text-gray-500 text-base mb-4">Everything you need for a world-class dental education experience</p>
-          <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-12" />
+          <div className="w-14 h-1 bg-[#ffde59] rounded mx-auto mb-12" />
           <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 list-none">
             {facilities.map((item) => (
               <li key={item.title} className="flex items-start gap-3 bg-white rounded-2xl p-4 text-left">
-                <div className="w-10 h-10 rounded-xl bg-[#e8f5e9] flex items-center justify-center text-xl flex-shrink-0">{item.icon}</div>
+                <div className="w-10 h-10 rounded-xl bg-[#d4f1e4] flex items-center justify-center text-xl flex-shrink-0">{item.icon}</div>
                 <div>
                   <p className="font-bold text-gray-900 text-sm">{item.title}</p>
                   <p className="text-gray-500 text-xs mt-1 leading-relaxed">{item.desc}</p>
@@ -515,17 +515,17 @@ export default function NamakkalPage() {
             Frequently Asked Questions
           </h2>
           <p className="text-gray-500 text-base mb-4">Common questions about dental college admission in Namakkal district</p>
-          <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-12" />
+          <div className="w-14 h-1 bg-[#ffde59] rounded mx-auto mb-12" />
           <div className="text-left space-y-3">
             {faqs.map((faq, i) => (
-              <details key={i} className="rounded-xl overflow-hidden border border-gray-200 group open:border-[#7cb983] bg-white">
+              <details key={i} className="rounded-xl overflow-hidden border border-gray-200 group open:border-[#0f8f56] bg-white">
                 <summary className="flex items-center justify-between px-5 py-4 text-left font-semibold text-gray-900 text-sm sm:text-base bg-white hover:bg-gray-50 transition-colors cursor-pointer list-none [&::-webkit-details-marker]:hidden">
                   <span>{faq.q}</span>
-                  <svg className="w-5 h-5 text-[#006837] flex-shrink-0 ml-4 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <svg className="w-5 h-5 text-[#0b6d41] flex-shrink-0 ml-4 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
                   </svg>
                 </summary>
-                <div className="px-5 pb-5 pt-2 text-gray-500 text-sm leading-relaxed border-t border-[#7cb983]/20 bg-white">
+                <div className="px-5 pb-5 pt-2 text-gray-500 text-sm leading-relaxed border-t border-[#0f8f56]/20 bg-white">
                   {faq.a}
                 </div>
               </details>
@@ -541,7 +541,7 @@ export default function NamakkalPage() {
             Explore More Cities
           </h2>
           <p className="text-gray-500 text-base mb-4">JKKN Dental College serves learners from across the region — distances from campus</p>
-          <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-10" />
+          <div className="w-14 h-1 bg-[#ffde59] rounded mx-auto mb-10" />
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
             {cities.slice(0, 3).map((city) => (
               <Link href={city.href} key={city.name} className="bg-[#FBFBEE] rounded-2xl px-5 py-4 flex items-center gap-3 shadow-sm hover:shadow-md transition-shadow cursor-pointer">
@@ -560,7 +560,7 @@ export default function NamakkalPage() {
               </Link>
             ))}
           </div>
-          <a href="/academics/" className="inline-block bg-[#7cb983] hover:bg-[#6ba872] text-white font-bold px-10 py-4 rounded-full transition-all transform hover:scale-105 shadow-lg text-base">
+          <a href="/academics/" className="inline-block bg-[#ffde59] hover:bg-[#e6c64d] text-[#032816] font-bold px-10 py-4 rounded-full transition-all transform hover:scale-105 shadow-lg text-base">
             View All Programmes
           </a>
         </div>

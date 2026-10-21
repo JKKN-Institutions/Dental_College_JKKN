@@ -26,7 +26,7 @@ export default function GalleryCarousel({ title, images }: GalleryCarouselProps)
   return (
     <div>
       {title && (
-        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#1B5E20] mb-5 sm:mb-6">
+        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#0b6d41] mb-5 sm:mb-6">
           {title}
         </h2>
       )}
@@ -81,7 +81,7 @@ export default function GalleryCarousel({ title, images }: GalleryCarouselProps)
               onClick={() => setPage(i)}
               aria-label={`Go to slide ${i + 1}`}
               className={`w-2.5 h-2.5 rounded-full transition-colors duration-200 ${
-                i === page ? 'bg-[#1B5E20]' : 'bg-gray-300'
+                i === page ? 'bg-[#0b6d41]' : 'bg-gray-300'
               }`}
             />
           ))}

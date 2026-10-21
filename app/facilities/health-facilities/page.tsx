@@ -99,19 +99,19 @@ export default function HealthFacilities() {
       <Header />
 
       {/* Hero Banner */}
-      <section className="bg-[#006837] py-16 px-4">
+      <section className="bg-[#0b6d41] py-16 px-4">
         <div className="max-w-6xl mx-auto">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
             HEALTH FACILITIES
           </h1>
-          <div className="h-1 w-24 bg-[#7cb983] rounded-full" />
+          <div className="h-1 w-24 bg-[#ffde59] rounded-full" />
         </div>
       </section>
 
       {/* Intro Paragraph */}
       <section className="bg-[#FBFBEE] py-10 px-4">
         <div className="max-w-6xl mx-auto">
-          <p className="text-base md:text-lg leading-relaxed text-gray-700 border-l-4 border-[#7cb983] pl-6">
+          <p className="text-base md:text-lg leading-relaxed text-gray-700 border-l-4 border-[#0f8f56] pl-6">
             At JKKN Institutions, the safety and well-being of our community are of paramount importance. While our on-campus facilities are centered around our multidisciplinary dental hospital, we are well-prepared for various emergency situations through a multi-tiered approach.
           </p>
         </div>
@@ -123,12 +123,12 @@ export default function HealthFacilities() {
           {features.map(({ icon: Icon, title, content }) => (
             <div
               key={title}
-              className="bg-[#FBFBEE] rounded-2xl p-6 border border-[#7cb983]/20 hover:shadow-md transition-shadow duration-300 flex flex-col gap-4"
+              className="bg-[#FBFBEE] rounded-2xl p-6 border border-[#0f8f56]/20 hover:shadow-md transition-shadow duration-300 flex flex-col gap-4"
             >
-              <div className="w-12 h-12 rounded-full bg-[#006837] flex items-center justify-center flex-shrink-0">
+              <div className="w-12 h-12 rounded-full bg-[#0b6d41] flex items-center justify-center flex-shrink-0">
                 <Icon className="text-white w-6 h-6" />
               </div>
-              <h2 className="text-lg font-bold text-[#006837]">{title}</h2>
+              <h2 className="text-lg font-bold text-[#0b6d41]">{title}</h2>
               <div className="text-gray-600 text-sm leading-relaxed flex flex-col gap-2">
                 {content}
               </div>
@@ -138,7 +138,7 @@ export default function HealthFacilities() {
       </section>
 
       {/* Closing Statement */}
-      <section className="bg-[#006837] py-12 px-4">
+      <section className="bg-[#0b6d41] py-12 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-white text-base md:text-lg leading-relaxed">
             At JKKN Institutions, we are diligently working to create a holistic healthcare ecosystem that aligns with our institutional values and vision. As we construct our new hospital, we continue to enhance our existing medical preparedness to ensure the safety and well-being of our community.

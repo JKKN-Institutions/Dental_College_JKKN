@@ -135,7 +135,7 @@ export default function ScholarshipPolicy() {
       <Header />
 
       {/* Hero Banner */}
-      <section className="bg-[#006837] py-16 px-4">
+      <section className="bg-[#0b6d41] py-16 px-4">
         <div className="max-w-5xl mx-auto">
           <div className="mb-5 text-sm text-white/60 flex items-center gap-2">
             <span>Home</span>
@@ -145,7 +145,7 @@ export default function ScholarshipPolicy() {
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-5 uppercase tracking-wide">
             SCHOLARSHIP POLICY FOR DENTAL COLLEGE
           </h1>
-          <div className="w-20 h-1 bg-[#7cb983] rounded-full" />
+          <div className="w-20 h-1 bg-[#ffde59] rounded-full" />
         </div>
       </section>
 
@@ -154,14 +154,14 @@ export default function ScholarshipPolicy() {
 
           {/* Table of Contents */}
           <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 md:p-8">
-            <p className="text-sm font-bold text-[#006837] uppercase tracking-wide mb-4">Contents</p>
+            <p className="text-sm font-bold text-[#0b6d41] uppercase tracking-wide mb-4">Contents</p>
             <ul className="space-y-2">
               {tocItems.map((item, index) => (
                 <li
                   key={index}
                   className={`flex items-start gap-2 text-sm md:text-base font-semibold text-gray-700 ${item.indent ? 'pl-6' : ''}`}
                 >
-                  <div className={`flex-shrink-0 mt-2 rounded-full bg-[#7cb983] ${item.indent ? 'w-1 h-1' : 'w-1.5 h-1.5'}`} />
+                  <div className={`flex-shrink-0 mt-2 rounded-full bg-[#ffde59] ${item.indent ? 'w-1 h-1' : 'w-1.5 h-1.5'}`} />
                   {item.label}
                 </li>
               ))}
@@ -170,7 +170,7 @@ export default function ScholarshipPolicy() {
 
           {/* Section 1: Purpose */}
           <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
-            <div className="flex items-center gap-4 bg-[#006837] px-6 py-4">
+            <div className="flex items-center gap-4 bg-[#0b6d41] px-6 py-4">
               <div className="flex-shrink-0 w-9 h-9 rounded-full bg-white/20 flex items-center justify-center font-bold text-white text-base">1</div>
               <h2 className="text-white font-bold text-base md:text-lg">Purpose:</h2>
             </div>
@@ -183,7 +183,7 @@ export default function ScholarshipPolicy() {
 
           {/* Section 2: Academic Achievement Scholarships */}
           <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
-            <div className="flex items-center gap-4 bg-[#006837] px-6 py-4">
+            <div className="flex items-center gap-4 bg-[#0b6d41] px-6 py-4">
               <div className="flex-shrink-0 w-9 h-9 rounded-full bg-white/20 flex items-center justify-center font-bold text-white text-base">2</div>
               <h2 className="text-white font-bold text-base md:text-lg">Academic Achievement Scholarships:</h2>
             </div>
@@ -196,7 +196,7 @@ export default function ScholarshipPolicy() {
 
           {/* Section 3: Sports Quota Scholarships */}
           <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
-            <div className="flex items-center gap-4 bg-[#006837] px-6 py-4">
+            <div className="flex items-center gap-4 bg-[#0b6d41] px-6 py-4">
               <div className="flex-shrink-0 w-9 h-9 rounded-full bg-white/20 flex items-center justify-center font-bold text-white text-base">3</div>
               <h2 className="text-white font-bold text-base md:text-lg">Sports Quota Scholarships:</h2>
             </div>
@@ -221,14 +221,14 @@ export default function ScholarshipPolicy() {
 
           {/* Section 4: Other Scholarships */}
           <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
-            <div className="flex items-center gap-4 bg-[#006837] px-6 py-4">
+            <div className="flex items-center gap-4 bg-[#0b6d41] px-6 py-4">
               <div className="flex-shrink-0 w-9 h-9 rounded-full bg-white/20 flex items-center justify-center font-bold text-white text-base">4</div>
               <h2 className="text-white font-bold text-base md:text-lg">Other Scholarships:</h2>
             </div>
             <ul className="px-6 py-5 space-y-3">
               {otherScholarships.map((item, i) => (
                 <li key={i} className="flex items-start gap-3 text-sm md:text-base font-semibold text-gray-700">
-                  <div className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-[#7cb983] mt-2" />
+                  <div className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-[#ffde59] mt-2" />
                   {item}
                 </li>
               ))}
@@ -237,7 +237,7 @@ export default function ScholarshipPolicy() {
 
           {/* Section 5: Government Scholarships */}
           <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
-            <div className="flex items-center gap-4 bg-[#006837] px-6 py-4">
+            <div className="flex items-center gap-4 bg-[#0b6d41] px-6 py-4">
               <div className="flex-shrink-0 w-9 h-9 rounded-full bg-white/20 flex items-center justify-center font-bold text-white text-base">5</div>
               <h2 className="text-white font-bold text-base md:text-lg">Government scholarships:</h2>
             </div>
@@ -248,7 +248,7 @@ export default function ScholarshipPolicy() {
             </div>
             <div className="overflow-x-auto px-6 pb-6">
               <table className="w-full text-sm text-gray-700 border border-gray-200 rounded-xl overflow-hidden">
-                <thead className="bg-[#006837] text-white">
+                <thead className="bg-[#0b6d41] text-white">
                   <tr>
                     <th className="border border-[#005a2f] px-4 py-3 text-left font-bold">Category</th>
                     <th className="border border-[#005a2f] px-4 py-3 text-left font-bold">Scholarship</th>
@@ -258,25 +258,25 @@ export default function ScholarshipPolicy() {
                 </thead>
                 <tbody>
                   <tr className="bg-[#FBFBEE]/60">
-                    <td className="border border-gray-200 px-4 py-3 font-semibold text-[#002309]" rowSpan={2}>SC / SCA / ST / BC-CC</td>
+                    <td className="border border-gray-200 px-4 py-3 font-semibold text-[#032816]" rowSpan={2}>SC / SCA / ST / BC-CC</td>
                     <td className="border border-gray-200 px-4 py-3">PMSS (Community Scholarship)</td>
-                    <td className="border border-gray-200 px-4 py-3 text-center font-semibold text-[#006837]">2.5L / Yr</td>
-                    <td className="border border-gray-200 px-4 py-3 text-center font-semibold text-[#006837]">6L / Yr</td>
+                    <td className="border border-gray-200 px-4 py-3 text-center font-semibold text-[#0b6d41]">2.5L / Yr</td>
+                    <td className="border border-gray-200 px-4 py-3 text-center font-semibold text-[#0b6d41]">6L / Yr</td>
                   </tr>
                   <tr className="bg-[#FBFBEE]/60">
                     <td className="border border-gray-200 px-4 py-3">Maintenance Scholarship</td>
-                    <td className="border border-gray-200 px-4 py-3 text-center font-semibold text-[#006837]">5K &lt; 10K / Yr</td>
+                    <td className="border border-gray-200 px-4 py-3 text-center font-semibold text-[#0b6d41]">5K &lt; 10K / Yr</td>
                     <td className="border border-gray-200 px-4 py-3 text-center text-gray-400">—</td>
                   </tr>
                   <tr className="bg-white">
-                    <td className="border border-gray-200 px-4 py-3 font-semibold text-[#002309]" rowSpan={3}>BC / MBC / DNC / BCM</td>
+                    <td className="border border-gray-200 px-4 py-3 font-semibold text-[#032816]" rowSpan={3}>BC / MBC / DNC / BCM</td>
                     <td className="border border-gray-200 px-4 py-3">First Graduate</td>
-                    <td className="border border-gray-200 px-4 py-3 text-center font-semibold text-[#006837]">40K / Yr</td>
+                    <td className="border border-gray-200 px-4 py-3 text-center font-semibold text-[#0b6d41]">40K / Yr</td>
                     <td className="border border-gray-200 px-4 py-3 text-center text-gray-400">—</td>
                   </tr>
                   <tr className="bg-white">
                     <td className="border border-gray-200 px-4 py-3">Community Scholarship</td>
-                    <td className="border border-gray-200 px-4 py-3 text-center font-semibold text-[#006837]">5K &lt; 10K / Yr</td>
+                    <td className="border border-gray-200 px-4 py-3 text-center font-semibold text-[#0b6d41]">5K &lt; 10K / Yr</td>
                     <td className="border border-gray-200 px-4 py-3 text-center text-gray-400">—</td>
                   </tr>
                   <tr className="bg-white">
@@ -285,12 +285,12 @@ export default function ScholarshipPolicy() {
                     <td className="border border-gray-200 px-4 py-3 text-center text-gray-400">—</td>
                   </tr>
                   <tr className="bg-[#FBFBEE]/60">
-                    <td className="border border-gray-200 px-4 py-3 font-semibold text-[#002309]">
+                    <td className="border border-gray-200 px-4 py-3 font-semibold text-[#032816]">
                       All Community<br />
                       <span className="font-normal text-xs text-gray-500">(Govt / Govt Aided School 6 to 12 Std, Tamil Medium)</span>
                     </td>
                     <td className="border border-gray-200 px-4 py-3">Naan Mudhalvan Scholarship</td>
-                    <td className="border border-gray-200 px-4 py-3 text-center font-semibold text-[#006837]" colSpan={2}>₹1,000 / month (Boys &amp; Girls)</td>
+                    <td className="border border-gray-200 px-4 py-3 text-center font-semibold text-[#0b6d41]" colSpan={2}>₹1,000 / month (Boys &amp; Girls)</td>
                   </tr>
                 </tbody>
               </table>
@@ -299,14 +299,14 @@ export default function ScholarshipPolicy() {
 
           {/* Section 6: Application Process */}
           <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
-            <div className="flex items-center gap-4 bg-[#006837] px-6 py-4">
+            <div className="flex items-center gap-4 bg-[#0b6d41] px-6 py-4">
               <div className="flex-shrink-0 w-9 h-9 rounded-full bg-white/20 flex items-center justify-center font-bold text-white text-base">6</div>
               <h2 className="text-white font-bold text-base md:text-lg">Application Process:</h2>
             </div>
             <ul className="px-6 py-5 space-y-3">
               {applicationSteps.map((step, i) => (
                 <li key={i} className={`flex items-start gap-3 text-sm md:text-base font-semibold text-gray-700 ${i >= 5 ? 'pl-4' : ''}`}>
-                  <div className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-[#7cb983] mt-2" />
+                  <div className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-[#ffde59] mt-2" />
                   {step}
                 </li>
               ))}
@@ -315,14 +315,14 @@ export default function ScholarshipPolicy() {
 
           {/* Section 7: Award Details */}
           <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
-            <div className="flex items-center gap-4 bg-[#006837] px-6 py-4">
+            <div className="flex items-center gap-4 bg-[#0b6d41] px-6 py-4">
               <div className="flex-shrink-0 w-9 h-9 rounded-full bg-white/20 flex items-center justify-center font-bold text-white text-base">7</div>
               <h2 className="text-white font-bold text-base md:text-lg">Award Details:</h2>
             </div>
             <ul className="px-6 py-5 space-y-3">
               {awardDetails.map((item, i) => (
                 <li key={i} className="flex items-start gap-3 text-sm md:text-base font-semibold text-gray-700">
-                  <div className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-[#7cb983] mt-2" />
+                  <div className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-[#ffde59] mt-2" />
                   {item}
                 </li>
               ))}
@@ -331,14 +331,14 @@ export default function ScholarshipPolicy() {
 
           {/* Section 8: Renewal and Compliance */}
           <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
-            <div className="flex items-center gap-4 bg-[#006837] px-6 py-4">
+            <div className="flex items-center gap-4 bg-[#0b6d41] px-6 py-4">
               <div className="flex-shrink-0 w-9 h-9 rounded-full bg-white/20 flex items-center justify-center font-bold text-white text-base">8</div>
               <h2 className="text-white font-bold text-base md:text-lg">Renewal and Compliance:</h2>
             </div>
             <ul className="px-6 py-5 space-y-3">
               {renewalItems.map((item, i) => (
                 <li key={i} className="flex items-start gap-3 text-sm md:text-base font-semibold text-gray-700">
-                  <div className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-[#7cb983] mt-2" />
+                  <div className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-[#ffde59] mt-2" />
                   {item}
                 </li>
               ))}
@@ -347,7 +347,7 @@ export default function ScholarshipPolicy() {
 
           {/* Section 9: Policy Review */}
           <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
-            <div className="flex items-center gap-4 bg-[#006837] px-6 py-4">
+            <div className="flex items-center gap-4 bg-[#0b6d41] px-6 py-4">
               <div className="flex-shrink-0 w-9 h-9 rounded-full bg-white/20 flex items-center justify-center font-bold text-white text-base">9</div>
               <h2 className="text-white font-bold text-base md:text-lg">Policy Review:</h2>
             </div>

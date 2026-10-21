@@ -132,7 +132,7 @@ export default function BdsGuideClient({ faqs }: { faqs: FAQ[] }) {
       {/* Article Header */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-6">
         <div className="flex flex-wrap items-center gap-3 mb-5">
-          <span className="bg-[#FBFBEE] text-[#006837] text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wide">
+          <span className="bg-[#FBFBEE] text-[#0b6d41] text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wide">
             BDS Admission
           </span>
           <div className="flex items-center gap-1.5 text-gray-400 text-sm">
@@ -156,7 +156,7 @@ export default function BdsGuideClient({ faqs }: { faqs: FAQ[] }) {
 
         <div className="flex items-center gap-3">
           <div className="w-10 h-10 rounded-full bg-[#FBFBEE] flex items-center justify-center flex-shrink-0">
-            <span className="text-[#006837] font-bold text-sm">JD</span>
+            <span className="text-[#0b6d41] font-bold text-sm">JD</span>
           </div>
           <div>
             <p className="font-semibold text-gray-800 text-sm">By JKKN Dental Admissions Team</p>
@@ -169,7 +169,7 @@ export default function BdsGuideClient({ faqs }: { faqs: FAQ[] }) {
 
       {/* Featured Banner */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-10">
-        <div className="w-full rounded-2xl bg-gradient-to-br from-[#6ba872] to-[#002309] flex flex-col items-center justify-center py-16 sm:py-20 gap-3">
+        <div className="w-full rounded-2xl bg-gradient-to-br from-[#0f8f56] to-[#032816] flex flex-col items-center justify-center py-16 sm:py-20 gap-3">
           <GraduationCap className="w-12 h-12 text-white" strokeWidth={1.5} />
           <p className="text-white font-semibold text-lg">BDS Course Complete Guide 2026</p>
           <p className="text-white/70 text-sm">JKKN Dental College &amp; Hospital</p>
@@ -182,12 +182,12 @@ export default function BdsGuideClient({ faqs }: { faqs: FAQ[] }) {
           <main className="min-w-0">
 
             {/* Quick Answer */}
-            <div className="bg-[#FBFBEE] border-l-4 border-[#006837] rounded-r-xl p-5 mb-10">
+            <div className="bg-[#FBFBEE] border-l-4 border-[#0b6d41] rounded-r-xl p-5 mb-10">
               <div className="flex items-center gap-2 mb-3">
-                <div className="w-5 h-5 rounded-full border-2 border-[#006837] flex items-center justify-center flex-shrink-0">
-                  <span className="text-[#006837] font-bold text-[10px] leading-none">i</span>
+                <div className="w-5 h-5 rounded-full border-2 border-[#0b6d41] flex items-center justify-center flex-shrink-0">
+                  <span className="text-[#0b6d41] font-bold text-[10px] leading-none">i</span>
                 </div>
-                <span className="text-[#006837] font-bold text-xs uppercase tracking-wider">
+                <span className="text-[#0b6d41] font-bold text-xs uppercase tracking-wider">
                   Quick Answer
                 </span>
               </div>
@@ -280,7 +280,7 @@ export default function BdsGuideClient({ faqs }: { faqs: FAQ[] }) {
                   ['PwD (General):', '45th percentile'],
                 ].map(([k, v]) => (
                   <li key={k as string} className="flex items-start gap-2.5 text-gray-600 text-sm">
-                    <span className="w-2 h-2 rounded-full bg-[#006837] mt-1.5 flex-shrink-0" />
+                    <span className="w-2 h-2 rounded-full bg-[#0b6d41] mt-1.5 flex-shrink-0" />
                     <span><strong>{k}</strong> {v}</span>
                   </li>
                 ))}
@@ -316,7 +316,7 @@ export default function BdsGuideClient({ faqs }: { faqs: FAQ[] }) {
                   { num: 6, title: 'Admission Confirmation', desc: 'On successful verification and fee payment, your BDS admission is confirmed. Orientation, ID card issue and class commencement follow as per the academic calendar.' },
                 ].map(({ num, title, desc }) => (
                   <div key={num} className="flex gap-4">
-                    <span className="w-8 h-8 rounded-full bg-[#006837] text-white font-bold text-sm flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <span className="w-8 h-8 rounded-full bg-[#0b6d41] text-white font-bold text-sm flex items-center justify-center flex-shrink-0 mt-0.5">
                       {num}
                     </span>
                     <div>
@@ -326,7 +326,7 @@ export default function BdsGuideClient({ faqs }: { faqs: FAQ[] }) {
                   </div>
                 ))}
               </div>
-              <div className="bg-[#FBFBEE] border-l-4 border-[#006837] rounded-r-xl p-4">
+              <div className="bg-[#FBFBEE] border-l-4 border-[#0b6d41] rounded-r-xl p-4">
                 <p className="text-sm text-gray-700">
                   Apart from State Quota, JKKN also has Management Quota and NRI Quota seats. These
                   are filled through the institution&apos;s direct application process. Parents are
@@ -419,7 +419,7 @@ export default function BdsGuideClient({ faqs }: { faqs: FAQ[] }) {
                   ['NRI Quota:', 'For Non-Resident Indian candidates as per NDC/state norms'],
                 ].map(([k, v]) => (
                   <li key={k as string} className="flex items-start gap-2.5 text-gray-600 text-sm">
-                    <span className="w-2 h-2 rounded-full bg-[#006837] mt-1.5 flex-shrink-0" />
+                    <span className="w-2 h-2 rounded-full bg-[#0b6d41] mt-1.5 flex-shrink-0" />
                     <span><strong>{k}</strong> {v}</span>
                   </li>
                 ))}
@@ -428,7 +428,7 @@ export default function BdsGuideClient({ faqs }: { faqs: FAQ[] }) {
                 The fee covers tuition, university registration, laboratory charges and hospital
                 clinical exposure. Hostel, mess, transport and books are charged separately. The
                 exact, current-year fee table is published on the official{' '}
-                <a href="/fees-structure/" className="text-[#006837] font-semibold hover:underline">JKKN BDS Fee Structure page</a>.
+                <a href="/fees-structure/" className="text-[#0b6d41] font-semibold hover:underline">JKKN BDS Fee Structure page</a>.
               </p>
               <p className="text-gray-600 leading-relaxed mb-4">
                 <strong>Scholarships &amp; financial support:</strong>
@@ -442,7 +442,7 @@ export default function BdsGuideClient({ faqs }: { faqs: FAQ[] }) {
                   ['Education loans:', 'tie-ups with nationalised banks for hassle-free education loan processing'],
                 ].map(([k, v]) => (
                   <li key={k as string} className="flex items-start gap-2.5 text-gray-600 text-sm">
-                    <span className="w-2 h-2 rounded-full bg-[#006837] mt-1.5 flex-shrink-0" />
+                    <span className="w-2 h-2 rounded-full bg-[#0b6d41] mt-1.5 flex-shrink-0" />
                     <span><strong>{k}</strong> {v}</span>
                   </li>
                 ))}
@@ -475,7 +475,7 @@ export default function BdsGuideClient({ faqs }: { faqs: FAQ[] }) {
                   ['Higher Studies Abroad:', 'INBDE / NDEB / ADC pathways for USA, Canada and Australia practice'],
                 ].map(([k, v]) => (
                   <li key={k as string} className="flex items-start gap-2.5 text-gray-600 text-sm">
-                    <span className="w-2 h-2 rounded-full bg-[#006837] mt-1.5 flex-shrink-0" />
+                    <span className="w-2 h-2 rounded-full bg-[#0b6d41] mt-1.5 flex-shrink-0" />
                     <span><strong>{k}</strong> {v}</span>
                   </li>
                 ))}
@@ -538,13 +538,13 @@ export default function BdsGuideClient({ faqs }: { faqs: FAQ[] }) {
                   ['39+ years of legacy:', '3,000+ alumni practising across India, Middle East, UK, Australia and USA'],
                 ].map(([k, v]) => (
                   <li key={k as string} className="flex items-start gap-2.5 text-gray-600 text-sm">
-                    <span className="w-2 h-2 rounded-full bg-[#006837] mt-1.5 flex-shrink-0" />
+                    <span className="w-2 h-2 rounded-full bg-[#0b6d41] mt-1.5 flex-shrink-0" />
                     <span><strong>{k}</strong> {v}</span>
                   </li>
                 ))}
               </ul>
 
-              <div className="relative rounded-2xl bg-gradient-to-br from-[#6ba872] to-[#002309] p-8 text-center overflow-hidden mt-4">
+              <div className="relative rounded-2xl bg-gradient-to-br from-[#0f8f56] to-[#032816] p-8 text-center overflow-hidden mt-4">
                 <div className="absolute top-3 right-6 w-20 h-20 rounded-full bg-white/10 pointer-events-none" />
                 <div className="absolute bottom-3 left-4 w-12 h-12 rounded-full bg-white/10 pointer-events-none" />
                 <h3 className="text-xl font-bold text-white mb-2 relative z-10">
@@ -555,7 +555,7 @@ export default function BdsGuideClient({ faqs }: { faqs: FAQ[] }) {
                   Nadu state counselling. Speak to our admissions team for personalised guidance.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3 justify-center relative z-10">
-                  <a href="/admissions/bds/" className="bg-white text-[#006837] font-semibold px-6 py-2.5 rounded-lg text-sm hover:bg-gray-100 transition-colors">
+                  <a href="/admissions/bds/" className="bg-white text-[#0b6d41] font-semibold px-6 py-2.5 rounded-lg text-sm hover:bg-gray-100 transition-colors">
                     BDS Admission Page →
                   </a>
                   <a href="tel:+919345855001" className="border border-white/50 text-white font-semibold px-6 py-2.5 rounded-lg text-sm hover:bg-white/10 transition-colors">
@@ -580,9 +580,9 @@ export default function BdsGuideClient({ faqs }: { faqs: FAQ[] }) {
                       <span className="font-semibold text-gray-800 text-sm pr-4">{faq.question}</span>
                       <div className="w-6 h-6 rounded-full bg-[#FBFBEE] flex items-center justify-center flex-shrink-0">
                         {openFaq === i ? (
-                          <ChevronUp className="w-3.5 h-3.5 text-[#006837]" />
+                          <ChevronUp className="w-3.5 h-3.5 text-[#0b6d41]" />
                         ) : (
-                          <span className="text-[#006837] text-base font-bold leading-none">&times;</span>
+                          <span className="text-[#0b6d41] text-base font-bold leading-none">&times;</span>
                         )}
                       </div>
                     </button>
@@ -599,7 +599,7 @@ export default function BdsGuideClient({ faqs }: { faqs: FAQ[] }) {
               <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-4">Written By</p>
               <div className="flex gap-4">
                 <div className="w-16 h-16 rounded-xl bg-[#FBFBEE] flex items-center justify-center flex-shrink-0">
-                  <span className="text-[#006837] font-bold text-lg">JD</span>
+                  <span className="text-[#0b6d41] font-bold text-lg">JD</span>
                 </div>
                 <div>
                   <h4 className="font-bold text-gray-900 mb-1">JKKN Dental Admissions Team</h4>
@@ -640,7 +640,7 @@ export default function BdsGuideClient({ faqs }: { faqs: FAQ[] }) {
             >
               <div className="border border-gray-200 rounded-xl p-5">
                 <div className="flex items-center gap-2 mb-4">
-                  <AlignLeft className="w-4 h-4 text-[#006837]" />
+                  <AlignLeft className="w-4 h-4 text-[#0b6d41]" />
                   <span className="font-bold text-gray-800 text-xs uppercase tracking-wider">Table of Contents</span>
                 </div>
                 <nav className="space-y-0.5">
@@ -649,7 +649,7 @@ export default function BdsGuideClient({ faqs }: { faqs: FAQ[] }) {
                       key={item.id}
                       onClick={() => scrollToSection(item.id)}
                       className={`w-full text-left px-2 py-1.5 rounded text-sm transition-colors ${
-                        activeSection === item.id ? 'text-[#006837] font-semibold' : 'text-gray-500 hover:text-gray-800'
+                        activeSection === item.id ? 'text-[#0b6d41] font-semibold' : 'text-gray-500 hover:text-gray-800'
                       }`}
                     >
                       {i + 1}. {item.label}
@@ -658,39 +658,39 @@ export default function BdsGuideClient({ faqs }: { faqs: FAQ[] }) {
                 </nav>
               </div>
 
-              <div className="bg-[#FBFBEE] border border-[#7cb983]/40 rounded-xl p-5">
+              <div className="bg-[#FBFBEE] border border-[#0f8f56]/40 rounded-xl p-5">
                 <div className="flex items-center gap-1.5 mb-2">
-                  <span className="w-2 h-2 rounded-full bg-green-500" />
-                  <span className="text-green-600 text-xs font-bold uppercase tracking-wide">Open</span>
+                  <span className="w-2 h-2 rounded-full bg-[#0f8f56]" />
+                  <span className="text-[#0b6d41] text-xs font-bold uppercase tracking-wide">Open</span>
                 </div>
                 <h4 className="font-bold text-gray-900 text-sm mb-1">BDS Admission 2026</h4>
                 <p className="text-gray-500 text-xs mb-4">100 NDC-approved Seats — Govt. norm fees at JKKN Dental College, Komarapalayam</p>
-                <a href="/admissions/bds/" className="block w-full bg-[#006837] text-white font-semibold text-sm py-2.5 rounded-lg hover:bg-[#004d28] transition-colors text-center">
+                <a href="/admissions/bds/" className="block w-full bg-[#0b6d41] text-white font-semibold text-sm py-2.5 rounded-lg hover:bg-[#085032] transition-colors text-center">
                   Apply / Enquire →
                 </a>
-                <a href="tel:+919345855001" className="block text-center text-[#006837] text-xs font-medium mt-3">+91 93458 55001</a>
+                <a href="tel:+919345855001" className="block text-center text-[#0b6d41] text-xs font-medium mt-3">+91 93458 55001</a>
               </div>
 
               <div className="border border-gray-200 rounded-xl p-5">
                 <div className="flex items-center gap-2 mb-1">
-                  <Mail className="w-4 h-4 text-[#006837]" />
+                  <Mail className="w-4 h-4 text-[#0b6d41]" />
                   <span className="font-bold text-gray-800 text-sm">Admission Alerts</span>
                 </div>
                 <p className="text-gray-400 text-xs mb-4">NEET cutoffs, counselling dates &amp; fee updates delivered to your inbox.</p>
-                <input type="email" placeholder="Enter your email" className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm mb-2 focus:outline-none focus:border-[#006837] transition-colors" />
+                <input type="email" placeholder="Enter your email" className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm mb-2 focus:outline-none focus:border-[#0b6d41] transition-colors" />
                 <button className="w-full bg-gray-900 text-white font-semibold text-sm py-2.5 rounded-lg hover:bg-gray-700 transition-colors">Subscribe</button>
               </div>
 
               <div className="border border-gray-200 rounded-xl p-5">
                 <div className="flex items-center gap-2 mb-4">
-                  <TrendingUp className="w-4 h-4 text-[#006837]" />
+                  <TrendingUp className="w-4 h-4 text-[#0b6d41]" />
                   <span className="font-bold text-gray-800 text-xs uppercase tracking-wider">Popular Posts</span>
                 </div>
                 <div className="space-y-4">
                   {popularPosts.map((post, i) => (
                     <div key={i} className="group cursor-pointer">
-                      <span className="bg-[#FBFBEE] text-[#006837] text-xs font-bold px-2 py-0.5 rounded-full">{post.category}</span>
-                      <p className="text-sm font-semibold text-gray-800 mt-1.5 mb-0.5 group-hover:text-[#006837] transition-colors leading-snug">{post.title}</p>
+                      <span className="bg-[#FBFBEE] text-[#0b6d41] text-xs font-bold px-2 py-0.5 rounded-full">{post.category}</span>
+                      <p className="text-sm font-semibold text-gray-800 mt-1.5 mb-0.5 group-hover:text-[#0b6d41] transition-colors leading-snug">{post.title}</p>
                       <p className="text-xs text-gray-400">{post.date}</p>
                     </div>
                   ))}

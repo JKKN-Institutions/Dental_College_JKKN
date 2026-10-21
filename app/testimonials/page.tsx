@@ -45,7 +45,7 @@ export default function TestimonialsPage() {
           <div className="max-w-5xl mx-auto px-4 py-3">
             <ol className="flex items-center gap-2 text-sm text-gray-500">
               <li>
-                <Link href="/" className="hover:text-[#006837] transition-colors">
+                <Link href="/" className="hover:text-[#0b6d41] transition-colors">
                   Home
                 </Link>
               </li>
@@ -58,11 +58,11 @@ export default function TestimonialsPage() {
         {/* Hero */}
         <section
           className="py-16 px-4 text-center"
-          style={{ background: 'linear-gradient(135deg, #006837 0%, #002309 100%)' }}
+          style={{ background: 'linear-gradient(135deg, #0b6d41 0%, #032816 100%)' }}
         >
           <div className="max-w-3xl mx-auto">
             <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 mb-6">
-              <span className="text-[#7cb983] font-semibold text-sm">LEARNER VOICES</span>
+              <span className="text-[#ffde59] font-semibold text-sm">LEARNER VOICES</span>
             </div>
             <h1
               className="text-white font-extrabold leading-tight mb-4"
@@ -97,7 +97,7 @@ export default function TestimonialsPage() {
                   <div className="border-t border-gray-100 pt-4">
                     <p className="font-bold text-gray-900 text-sm">{t.name}</p>
                     <p className="text-gray-400 text-xs mt-0.5">{t.role}</p>
-                    <span className="inline-block mt-2 text-xs font-semibold text-[#006837] bg-[#FBFBEE] border border-[#7cb983] rounded-full px-3 py-0.5">
+                    <span className="inline-block mt-2 text-xs font-semibold text-[#0b6d41] bg-[#FBFBEE] border border-[#0f8f56] rounded-full px-3 py-0.5">
                       {t.programme}
                     </span>
                   </div>
@@ -122,13 +122,13 @@ export default function TestimonialsPage() {
                 href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_medium=organic&utm_campaign=testimonials"
                 target="_blank"
                 rel="nofollow noopener noreferrer"
-                className="bg-[#7cb983] hover:bg-[#6ba872] text-white font-bold px-8 py-4 rounded-full transition-all transform hover:scale-105 shadow-lg text-sm"
+                className="bg-[#ffde59] hover:bg-[#e6c64d] text-[#032816] font-bold px-8 py-4 rounded-full transition-all transform hover:scale-105 shadow-lg text-sm"
               >
                 Apply Now — 2026-27
               </a>
               <Link
                 href="/admissions/"
-                className="bg-white border border-[#7cb983] hover:bg-[#e8f5e9] text-[#006837] font-semibold px-8 py-4 rounded-full transition-colors text-sm"
+                className="bg-white border border-[#0f8f56] hover:bg-[#d4f1e4] text-[#0b6d41] font-semibold px-8 py-4 rounded-full transition-colors text-sm"
               >
                 Admission Process
               </Link>

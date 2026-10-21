@@ -88,20 +88,20 @@ export default function MentorMenteeProgram() {
       <Header />
 
       {/* Hero Section */}
-      <div className="bg-[#006837] pt-16 overflow-hidden">
+      <div className="bg-[#0b6d41] pt-16 overflow-hidden">
         <div className="max-w-4xl mx-auto px-4 py-10 flex flex-col items-center gap-6">
           <div className="flex items-center gap-4">
-            <div className="h-px w-16 sm:w-32 bg-[#7cb983] opacity-60" />
-            <div className="w-2 h-2 rounded-full bg-[#7cb983]" />
-            <div className="h-px w-16 sm:w-32 bg-[#7cb983] opacity-60" />
+            <div className="h-px w-16 sm:w-32 bg-[#ffde59] opacity-60" />
+            <div className="w-2 h-2 rounded-full bg-[#ffde59]" />
+            <div className="h-px w-16 sm:w-32 bg-[#ffde59] opacity-60" />
           </div>
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white text-center tracking-wide">
             MENTOR-MENTEE PROGRAM
           </h1>
           <div className="flex items-center gap-4">
-            <div className="h-px w-16 sm:w-32 bg-[#7cb983] opacity-60" />
-            <div className="w-2 h-2 rounded-full bg-[#7cb983]" />
-            <div className="h-px w-16 sm:w-32 bg-[#7cb983] opacity-60" />
+            <div className="h-px w-16 sm:w-32 bg-[#ffde59] opacity-60" />
+            <div className="w-2 h-2 rounded-full bg-[#ffde59]" />
+            <div className="h-px w-16 sm:w-32 bg-[#ffde59] opacity-60" />
           </div>
         </div>
         <div className="overflow-hidden leading-none">
@@ -123,10 +123,10 @@ export default function MentorMenteeProgram() {
 
             {/* Program Vision Card */}
             <div className="bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden">
-              <div className="h-1.5 bg-gradient-to-r from-[#006837] to-[#7cb983]" />
+              <div className="h-1.5 bg-gradient-to-r from-[#0b6d41] to-[#0f8f56]" />
               <div className="p-8">
-                <h2 className="text-lg md:text-xl font-bold text-[#006837] mb-4 flex items-center gap-3">
-                  <span className="w-1 h-6 bg-[#006837] rounded-full inline-block flex-shrink-0" />
+                <h2 className="text-lg md:text-xl font-bold text-[#0b6d41] mb-4 flex items-center gap-3">
+                  <span className="w-1 h-6 bg-[#0b6d41] rounded-full inline-block flex-shrink-0" />
                   Program Vision:
                 </h2>
                 <p className="text-base leading-relaxed text-gray-700 text-justify">
@@ -137,10 +137,10 @@ export default function MentorMenteeProgram() {
 
             {/* Program Overview Card */}
             <div className="bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden">
-              <div className="h-1.5 bg-gradient-to-r from-[#006837] to-[#7cb983]" />
+              <div className="h-1.5 bg-gradient-to-r from-[#0b6d41] to-[#0f8f56]" />
               <div className="p-8">
-                <h2 className="text-lg md:text-xl font-bold text-[#006837] mb-4 flex items-center gap-3">
-                  <span className="w-1 h-6 bg-[#006837] rounded-full inline-block flex-shrink-0" />
+                <h2 className="text-lg md:text-xl font-bold text-[#0b6d41] mb-4 flex items-center gap-3">
+                  <span className="w-1 h-6 bg-[#0b6d41] rounded-full inline-block flex-shrink-0" />
                   Program Overview:
                 </h2>
                 <p className="text-base leading-relaxed text-gray-700 text-justify">
@@ -151,29 +151,29 @@ export default function MentorMenteeProgram() {
 
             {/* Mentorship Objectives Card */}
             <div className="bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden">
-              <div className="h-1.5 bg-gradient-to-r from-[#006837] to-[#7cb983]" />
+              <div className="h-1.5 bg-gradient-to-r from-[#0b6d41] to-[#0f8f56]" />
               <div className="p-8">
-                <h2 className="text-lg md:text-xl font-bold text-[#006837] mb-6 flex items-center gap-3">
-                  <span className="w-1 h-6 bg-[#006837] rounded-full inline-block flex-shrink-0" />
+                <h2 className="text-lg md:text-xl font-bold text-[#0b6d41] mb-6 flex items-center gap-3">
+                  <span className="w-1 h-6 bg-[#0b6d41] rounded-full inline-block flex-shrink-0" />
                   Mentorship Objectives:
                 </h2>
                 <div className="space-y-4">
-                  <div className="rounded-xl bg-[#FBFBEE] border-l-4 border-[#7cb983] p-4">
+                  <div className="rounded-xl bg-[#FBFBEE] border-l-4 border-[#0f8f56] p-4">
                     <p className="text-base text-gray-700 text-justify">
                       • Cultivate a Sense of Belonging: Create an inclusive atmosphere where mentees feel an integral part of the JKKN educational community, enhancing senior learner-learner relationships.
                     </p>
                   </div>
-                  <div className="rounded-xl bg-[#FBFBEE] border-l-4 border-[#7cb983] p-4">
+                  <div className="rounded-xl bg-[#FBFBEE] border-l-4 border-[#0f8f56] p-4">
                     <p className="text-base text-gray-700 text-justify">
                       • Enhance Discipline and Excellence: Conduct mentoring sessions to install discipline, punctuality, and commitment to academic and personal growth among learners.
                     </p>
                   </div>
-                  <div className="rounded-xl bg-[#FBFBEE] border-l-4 border-[#7cb983] p-4">
+                  <div className="rounded-xl bg-[#FBFBEE] border-l-4 border-[#0f8f56] p-4">
                     <p className="text-base text-gray-700 text-justify">
                       • Customized Learning: Tailor mentorship to learners based on their academic performance and individual needs, fostering optimal learning outcomes.
                     </p>
                   </div>
-                  <div className="rounded-xl bg-[#FBFBEE] border-l-4 border-[#7cb983] p-4">
+                  <div className="rounded-xl bg-[#FBFBEE] border-l-4 border-[#0f8f56] p-4">
                     <p className="text-base text-gray-700 text-justify">
                       • Personalized Growth: Identify and leverage the strengths and weaknesses of each learner, assisting them in setting career goals and strategies for achievement.
                     </p>

@@ -43,7 +43,7 @@ export default function DentalEducationDepartment() {
       <Header />
 
       {/* Hero Banner */}
-      <section className="bg-gradient-to-br from-[#006837] via-[#00572e] to-[#003d20] py-16 px-4">
+      <section className="bg-gradient-to-br from-[#0b6d41] via-[#00572e] to-[#003d20] py-16 px-4">
         <div className="max-w-6xl mx-auto">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white">
             DENTAL EDUCATION DEPARTMENT
@@ -56,7 +56,7 @@ export default function DentalEducationDepartment() {
         <div className="max-w-6xl mx-auto">
 
           {/* Description */}
-          <div className="bg-white rounded-xl p-8 shadow-sm border border-green-100 border-l-4 border-l-[#7cb983] mb-10">
+          <div className="bg-white rounded-xl p-8 shadow-sm border border-[#d4f1e4] border-l-4 border-l-[#0f8f56] mb-10">
             <p className="hero-description text-gray-700 text-base leading-relaxed text-justify">
               The Dental Education Department is a vital entity within dental schools or institutions dedicated to overseeing and enhancing the quality of dental education. Comprising dental senior learners, administrators, and sometimes external experts, the committee collaborates to ensure the learning framework aligns with industry standards and educational objectives. It assesses and updates the dental program regularly, integrating advancements in dental research and technology. The committee also reviews teaching methodologies, assessment strategies, and clinical training to promote effective learning and skill development among dental learners. By fostering a supportive learning environment and continuously improving the educational experience, the Dental Education Committee aims to produce competent and compassionate dental professionals prepared to meet the challenges of the dental field.
             </p>
@@ -71,20 +71,20 @@ export default function DentalEducationDepartment() {
               { label: 'Coordinator', name: 'Dr. SaiSadan' },
               { label: 'Joint Coordinator', name: 'Dr. Vinod Thangasamy' },
             ].map(({ label, name }) => (
-              <div key={name} className="bg-white rounded-xl p-6 shadow-sm border border-green-100 flex items-start gap-4">
-                <div className="w-10 h-10 bg-[#e8f5e9] rounded-lg flex items-center justify-center flex-shrink-0">
-                  <User className="w-5 h-5 text-[#006837]" />
+              <div key={name} className="bg-white rounded-xl p-6 shadow-sm border border-[#d4f1e4] flex items-start gap-4">
+                <div className="w-10 h-10 bg-[#d4f1e4] rounded-lg flex items-center justify-center flex-shrink-0">
+                  <User className="w-5 h-5 text-[#0b6d41]" />
                 </div>
                 <div>
-                  <p className="text-xs font-semibold text-[#7cb983] uppercase tracking-wide mb-1">{label}</p>
-                  <p className="text-[#002309] font-bold text-sm">{name}</p>
+                  <p className="text-xs font-semibold text-[#0b6d41] uppercase tracking-wide mb-1">{label}</p>
+                  <p className="text-[#032816] font-bold text-sm">{name}</p>
                 </div>
               </div>
             ))}
           </div>
 
           {/* Executive Members */}
-          <p className="text-base text-[#006837] font-bold mt-10 mb-5">
+          <p className="text-base text-[#0b6d41] font-bold mt-10 mb-5">
             Executive members :
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -94,11 +94,11 @@ export default function DentalEducationDepartment() {
               'Dr. Swathiraman',
               'Dr. Radhika',
             ].map((name) => (
-              <div key={name} className="bg-white rounded-xl p-6 shadow-sm border border-green-100 flex items-center gap-4">
-                <div className="w-10 h-10 bg-[#e8f5e9] rounded-lg flex items-center justify-center flex-shrink-0">
-                  <User className="w-5 h-5 text-[#006837]" />
+              <div key={name} className="bg-white rounded-xl p-6 shadow-sm border border-[#d4f1e4] flex items-center gap-4">
+                <div className="w-10 h-10 bg-[#d4f1e4] rounded-lg flex items-center justify-center flex-shrink-0">
+                  <User className="w-5 h-5 text-[#0b6d41]" />
                 </div>
-                <p className="text-[#002309] font-bold text-sm">{name}</p>
+                <p className="text-[#032816] font-bold text-sm">{name}</p>
               </div>
             ))}
           </div>

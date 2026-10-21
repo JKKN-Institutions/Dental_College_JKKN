@@ -82,7 +82,7 @@ export default function InstitutionsInnovationCouncilIIC() {
       <Header />
 
       {/* Hero Banner */}
-      <section className="bg-[#006837] py-16 px-4">
+      <section className="bg-[#0b6d41] py-16 px-4">
         <div className="max-w-5xl mx-auto">
           <div className="mb-5 text-sm text-white/60 flex items-center gap-2">
             <span>Home</span>
@@ -92,7 +92,7 @@ export default function InstitutionsInnovationCouncilIIC() {
           <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-5 uppercase tracking-wide">
             INSTITUTION&apos;S INNOVATION COUNCIL ( IIC )
           </h1>
-          <div className="w-20 h-1 bg-[#7cb983] rounded-full" />
+          <div className="w-20 h-1 bg-[#ffde59] rounded-full" />
         </div>
       </section>
 
@@ -112,7 +112,7 @@ export default function InstitutionsInnovationCouncilIIC() {
 
           {/* About IIC */}
           <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
-            <div className="bg-[#006837] px-6 py-4">
+            <div className="bg-[#0b6d41] px-6 py-4">
               <h2 className="text-white font-bold text-base md:text-lg">About IIC</h2>
             </div>
             <div className="px-6 py-5 space-y-4">
@@ -130,17 +130,17 @@ export default function InstitutionsInnovationCouncilIIC() {
 
           {/* Vision of IIC */}
           <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
-            <div className="bg-[#006837] px-6 py-4">
+            <div className="bg-[#0b6d41] px-6 py-4">
               <h2 className="text-white font-bold text-base md:text-lg">VISION OF IIC</h2>
             </div>
             <div className="p-6 grid grid-cols-1 md:grid-cols-2 gap-4">
               {visionItems.map((item, i) => (
                 <div
                   key={i}
-                  className="bg-[#FBFBEE] border border-[#7cb983]/30 rounded-xl p-4 hover:border-[#7cb983] hover:shadow-sm transition-all duration-200"
+                  className="bg-[#FBFBEE] border border-[#0f8f56]/30 rounded-xl p-4 hover:border-[#0f8f56] hover:shadow-sm transition-all duration-200"
                 >
                   <p className="text-sm md:text-base text-gray-700 leading-relaxed">
-                    <span className="font-bold text-[#006837]">{item.label}</span>{' '}
+                    <span className="font-bold text-[#0b6d41]">{item.label}</span>{' '}
                     {item.text}
                   </p>
                 </div>
@@ -150,7 +150,7 @@ export default function InstitutionsInnovationCouncilIIC() {
 
           {/* Trained Human Resources */}
           <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
-            <div className="bg-[#006837] px-6 py-4">
+            <div className="bg-[#0b6d41] px-6 py-4">
               <h2 className="text-white font-bold text-base md:text-lg">TRAINED HUMAN RESOURCES ON IIC</h2>
             </div>
             <div className="p-6">
@@ -164,7 +164,7 @@ export default function InstitutionsInnovationCouncilIIC() {
 
           {/* Learning Modules */}
           <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
-            <div className="bg-[#006837] px-6 py-4">
+            <div className="bg-[#0b6d41] px-6 py-4">
               <h2 className="text-white font-bold text-base md:text-lg">LEARNING MODULES</h2>
             </div>
             <div className="p-6 flex justify-center">
@@ -180,7 +180,7 @@ export default function InstitutionsInnovationCouncilIIC() {
 
           {/* Join the Future CTA */}
           <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
-            <div className="bg-[#006837] px-6 py-4">
+            <div className="bg-[#0b6d41] px-6 py-4">
               <h2 className="text-white font-bold text-base md:text-lg">
                 Join the Future of Dental Innovation with IIC - JKKN Dental College &amp; Hospital!
               </h2>
@@ -194,22 +194,22 @@ export default function InstitutionsInnovationCouncilIIC() {
               </p>
 
               {/* Contact Box */}
-              <div className="bg-[#FBFBEE] border border-[#7cb983]/30 rounded-xl p-5 space-y-3">
-                <h3 className="text-base font-bold text-[#006837] mb-3">
+              <div className="bg-[#FBFBEE] border border-[#0f8f56]/30 rounded-xl p-5 space-y-3">
+                <h3 className="text-base font-bold text-[#0b6d41] mb-3">
                   Explore, Learn, and Build Your Future with JKKN
                 </h3>
                 <div className="flex items-start gap-3 text-sm md:text-base text-gray-700">
-                  <MapPin className="w-5 h-5 text-[#7cb983] flex-shrink-0 mt-0.5" />
+                  <MapPin className="w-5 h-5 text-[#0b6d41] flex-shrink-0 mt-0.5" />
                   <p>
                     <span className="font-semibold">Location:</span> JKKN Dental College &amp; Hospital, Natarajapuram, NH-544 (Salem to Coimbatore National Highway), Komarapalayam (TK), Namakkal (DT), Tamil Nadu – 638183.
                   </p>
                 </div>
                 <div className="flex items-center gap-3 text-sm md:text-base text-gray-700">
-                  <Phone className="w-5 h-5 text-[#7cb983] flex-shrink-0" />
+                  <Phone className="w-5 h-5 text-[#0b6d41] flex-shrink-0" />
                   <p><span className="font-semibold">Contact:</span> Dr.Radhika, 7708611112</p>
                 </div>
                 <div className="flex items-center gap-3 text-sm md:text-base text-gray-700">
-                  <Mail className="w-5 h-5 text-[#7cb983] flex-shrink-0" />
+                  <Mail className="w-5 h-5 text-[#0b6d41] flex-shrink-0" />
                   <p><span className="font-semibold">E mail:</span> dental@jkkn.ac.in</p>
                 </div>
               </div>
@@ -228,10 +228,10 @@ export default function InstitutionsInnovationCouncilIIC() {
                 href={link.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 bg-white hover:bg-[#006837] border-2 border-[#006837] text-[#006837] hover:text-white font-bold py-4 px-5 rounded-xl transition-all duration-200 shadow-sm group"
+                className="flex items-center gap-3 bg-white hover:bg-[#0b6d41] border-2 border-[#0b6d41] text-[#0b6d41] hover:text-white font-bold py-4 px-5 rounded-xl transition-all duration-200 shadow-sm group"
               >
-                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#006837] group-hover:bg-white flex items-center justify-center transition-colors duration-200">
-                  <svg className="w-4 h-4 text-white group-hover:text-[#006837] transition-colors duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#0b6d41] group-hover:bg-white flex items-center justify-center transition-colors duration-200">
+                  <svg className="w-4 h-4 text-white group-hover:text-[#0b6d41] transition-colors duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3M3 17V7a2 2 0 012-2h6l2 2h6a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
                   </svg>
                 </div>

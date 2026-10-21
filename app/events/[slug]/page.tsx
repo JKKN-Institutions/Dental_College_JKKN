@@ -75,7 +75,7 @@ export default async function EventDetailPage({ params }: Props) {
         {/* Back link */}
         <Link
           href="/"
-          className="inline-flex items-center gap-1.5 text-sm text-[#006837] font-semibold mb-6 hover:underline"
+          className="inline-flex items-center gap-1.5 text-sm text-[#0b6d41] font-semibold mb-6 hover:underline"
         >
           <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
@@ -100,7 +100,7 @@ export default async function EventDetailPage({ params }: Props) {
         {/* Meta */}
         <div className="flex flex-wrap items-center gap-4 mb-4">
           {event.event_date && (
-            <span className="text-sm font-semibold text-[#006837]">
+            <span className="text-sm font-semibold text-[#0b6d41]">
               {new Date(event.event_date).toLocaleDateString('en-IN', {
                 weekday: 'long',
                 day: 'numeric',
