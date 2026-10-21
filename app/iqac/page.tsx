@@ -43,7 +43,7 @@ export default function IQAC() {
       <Header />
 
       {/* Page Content */}
-      <div className="bg-[#FBF8F3] py-12 px-4">
+      <div className="bg-[#fbfbee] py-12 px-4">
         <div className="max-w-6xl mx-auto">
 
           {/* Page Title */}

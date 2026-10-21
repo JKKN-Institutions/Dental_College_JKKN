@@ -91,9 +91,9 @@ export default async function Gallery() {
       <StructuredData data={speakableSchema} />
       <Header />
 
-      <div className="bg-[#FBF8F3] py-8 sm:py-10 md:py-12 lg:py-16 px-4 sm:px-6">
+      <div className="bg-[#fbfbee] py-8 sm:py-10 md:py-12 lg:py-16 px-4 sm:px-6">
         <div className="max-w-7xl mx-auto">
-          <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-bold text-[#1B5E20] mb-8 sm:mb-10 md:mb-12">
+          <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-bold text-[#0b6d41] mb-8 sm:mb-10 md:mb-12">
             GALLERY
           </h1>
 

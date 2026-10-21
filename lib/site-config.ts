@@ -29,15 +29,15 @@ export const siteConfig = {
 
   /** Primary brand color (hex) — used for buttons, headings, accents */
   primaryColor:
-    process.env.NEXT_PUBLIC_PRIMARY_COLOR ?? '#006837',
+    process.env.NEXT_PUBLIC_PRIMARY_COLOR ?? '#0b6d41',
 
   /** Darker shade for sidebar background and hero gradient */
   primaryDark:
-    process.env.NEXT_PUBLIC_PRIMARY_DARK ?? '#002309',
+    process.env.NEXT_PUBLIC_PRIMARY_DARK ?? '#032816',
 
   /** Mid-dark shade for gradient / hover */
   primaryMid:
-    process.env.NEXT_PUBLIC_PRIMARY_MID ?? '#004d28',
+    process.env.NEXT_PUBLIC_PRIMARY_MID ?? '#085032',
 
   /** Hover shade for buttons */
   primaryHover:

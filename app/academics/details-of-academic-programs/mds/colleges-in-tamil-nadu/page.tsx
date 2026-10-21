@@ -58,7 +58,7 @@ export default function MdsCollegesInTamilNadu() {
       showSpecialities
     >
       <div className="mt-10">
-        <h2 className="text-xl sm:text-2xl font-bold text-[#006837] mb-4">
+        <h2 className="text-xl sm:text-2xl font-bold text-[#0b6d41] mb-4">
           Where the {TN_MDS_TOTALS.seats} seats sit
         </h2>
         <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-4 max-w-3xl">
@@ -69,7 +69,7 @@ export default function MdsCollegesInTamilNadu() {
         <div className="overflow-x-auto rounded-xl border border-gray-200 shadow-sm bg-white">
           <table className="min-w-full text-sm">
             <thead>
-              <tr className="bg-[#006837] text-white text-left">
+              <tr className="bg-[#0b6d41] text-white text-left">
                 <th scope="col" className="px-4 py-3 font-semibold">
                   Area
                 </th>
@@ -84,7 +84,7 @@ export default function MdsCollegesInTamilNadu() {
                   <th scope="row" className="px-4 py-2.5 text-left font-medium text-gray-900">
                     {area}
                   </th>
-                  <td className="px-4 py-2.5 text-right tabular-nums font-semibold text-[#006837]">
+                  <td className="px-4 py-2.5 text-right tabular-nums font-semibold text-[#0b6d41]">
                     {seats}
                   </td>
                 </tr>
@@ -95,7 +95,7 @@ export default function MdsCollegesInTamilNadu() {
       </div>
 
       <div id="nirf" className="mt-10 rounded-xl border border-[#d4af37]/40 bg-white p-5 sm:p-6">
-        <h2 className="text-xl sm:text-2xl font-bold text-[#006837] mb-2">
+        <h2 className="text-xl sm:text-2xl font-bold text-[#0b6d41] mb-2">
           Best MDS colleges in Tamil Nadu &mdash; what the NIRF 2025 ranking says
         </h2>
         <p className="answer-capsule text-sm sm:text-base text-gray-700 leading-relaxed mb-4">
@@ -110,7 +110,7 @@ export default function MdsCollegesInTamilNadu() {
         <div className="overflow-x-auto rounded-xl border border-gray-200 shadow-sm bg-white">
           <table className="min-w-full text-sm">
             <thead>
-              <tr className="bg-[#006837] text-white text-left">
+              <tr className="bg-[#0b6d41] text-white text-left">
                 <th scope="col" className="px-4 py-3 font-semibold">
                   NIRF 2025 rank
                 </th>
@@ -128,7 +128,7 @@ export default function MdsCollegesInTamilNadu() {
             <tbody>
               {NIRF_2025_DENTAL_TN.map((r) => (
                 <tr key={r.rank} className="odd:bg-white even:bg-gray-50">
-                  <th scope="row" className="px-4 py-2.5 text-left font-semibold text-[#006837]">
+                  <th scope="row" className="px-4 py-2.5 text-left font-semibold text-[#0b6d41]">
                     #{r.rank}
                   </th>
                   <td className="px-4 py-2.5 text-gray-900">{r.name}</td>
@@ -147,7 +147,7 @@ export default function MdsCollegesInTamilNadu() {
             href={NIRF_2025_DENTAL_SOURCE.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#006837] underline hover:no-underline"
+            className="text-[#0b6d41] underline hover:no-underline"
           >
             {NIRF_2025_DENTAL_SOURCE.name}
           </a>

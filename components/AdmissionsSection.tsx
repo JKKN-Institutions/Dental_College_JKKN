@@ -8,8 +8,8 @@ export default function AdmissionsSection() {
         <div className="grid md:grid-cols-2 gap-8 sm:gap-10 md:gap-12 lg:gap-16">
           {/* Left - Eligibility */}
           <div>
-            <h3 className="text-[#7cb983] text-xs sm:text-sm md:text-base font-bold uppercase tracking-wider mb-3 sm:mb-4">Admissions 2026-27</h3>
-            <h2 className="text-2xl xs:text-3xl sm:text-4xl font-bold text-[#006837] mb-6 sm:mb-8 leading-tight">
+            <h3 className="text-[#0b6d41] text-xs sm:text-sm md:text-base font-bold uppercase tracking-wider mb-3 sm:mb-4">Admissions 2026-27</h3>
+            <h2 className="text-2xl xs:text-3xl sm:text-4xl font-bold text-[#0b6d41] mb-6 sm:mb-8 leading-tight">
               Begin Your Journey to Dental Excellence
             </h2>
             <p className="text-gray-600 mb-6 sm:mb-8 md:mb-10 leading-relaxed text-sm sm:text-base">
@@ -17,53 +17,53 @@ export default function AdmissionsSection() {
             </p>
 
             {/* BDS Eligibility */}
-            <div className="bg-blue-50 rounded-xl sm:rounded-2xl p-4 sm:p-5 md:p-6 mb-4 sm:mb-6">
-              <h4 className="text-lg sm:text-xl font-bold text-[#006837] mb-3 sm:mb-4">BDS Eligibility</h4>
+            <div className="bg-[#fbfbee] rounded-xl sm:rounded-2xl p-4 sm:p-5 md:p-6 mb-4 sm:mb-6">
+              <h4 className="text-lg sm:text-xl font-bold text-[#0b6d41] mb-3 sm:mb-4">BDS Eligibility</h4>
               <ul className="space-y-2 sm:space-y-3 list-none p-0 m-0">
                 <li className="flex items-start gap-2 sm:gap-3">
-                  <Check className="w-5 h-5 sm:w-6 sm:h-6 text-[#7cb983] flex-shrink-0" />
+                  <Check className="w-5 h-5 sm:w-6 sm:h-6 text-[#0b6d41] flex-shrink-0" />
                   <span className="text-gray-700 text-sm sm:text-base">10+2 with Physics, Chemistry, Biology</span>
                 </li>
                 <li className="flex items-start gap-2 sm:gap-3">
-                  <Check className="w-5 h-5 sm:w-6 sm:h-6 text-[#7cb983] flex-shrink-0" />
+                  <Check className="w-5 h-5 sm:w-6 sm:h-6 text-[#0b6d41] flex-shrink-0" />
                   <span className="text-gray-700 text-sm sm:text-base">Minimum 50% marks (40% reserved)</span>
                 </li>
                 <li className="flex items-start gap-2 sm:gap-3">
-                  <Check className="w-5 h-5 sm:w-6 sm:h-6 text-[#7cb983] flex-shrink-0" />
+                  <Check className="w-5 h-5 sm:w-6 sm:h-6 text-[#0b6d41] flex-shrink-0" />
                   <span className="text-gray-700 text-sm sm:text-base">Valid NEET-UG score</span>
                 </li>
                 <li className="flex items-start gap-2 sm:gap-3">
-                  <Check className="w-5 h-5 sm:w-6 sm:h-6 text-[#7cb983] flex-shrink-0" />
+                  <Check className="w-5 h-5 sm:w-6 sm:h-6 text-[#0b6d41] flex-shrink-0" />
                   <span className="text-gray-700 text-sm sm:text-base">Age: 17 years by Dec 31</span>
                 </li>
               </ul>
             </div>
 
             {/* MDS Eligibility */}
-            <div className="bg-blue-50 rounded-xl sm:rounded-2xl p-4 sm:p-5 md:p-6 mb-6 sm:mb-8">
-              <h4 className="text-lg sm:text-xl font-bold text-[#006837] mb-3 sm:mb-4">MDS Eligibility</h4>
+            <div className="bg-[#fbfbee] rounded-xl sm:rounded-2xl p-4 sm:p-5 md:p-6 mb-6 sm:mb-8">
+              <h4 className="text-lg sm:text-xl font-bold text-[#0b6d41] mb-3 sm:mb-4">MDS Eligibility</h4>
               <ul className="space-y-2 sm:space-y-3 list-none p-0 m-0">
                 <li className="flex items-start gap-2 sm:gap-3">
-                  <Check className="w-5 h-5 sm:w-6 sm:h-6 text-[#7cb983] flex-shrink-0" />
+                  <Check className="w-5 h-5 sm:w-6 sm:h-6 text-[#0b6d41] flex-shrink-0" />
                   <span className="text-gray-700 text-sm sm:text-base">BDS from an institution recognized by the National Dental Commission (NDC)</span>
                 </li>
                 <li className="flex items-start gap-2 sm:gap-3">
-                  <Check className="w-5 h-5 sm:w-6 sm:h-6 text-[#7cb983] flex-shrink-0" />
+                  <Check className="w-5 h-5 sm:w-6 sm:h-6 text-[#0b6d41] flex-shrink-0" />
                   <span className="text-gray-700 text-sm sm:text-base">Completed rotating internship</span>
                 </li>
                 <li className="flex items-start gap-2 sm:gap-3">
-                  <Check className="w-5 h-5 sm:w-6 sm:h-6 text-[#7cb983] flex-shrink-0" />
+                  <Check className="w-5 h-5 sm:w-6 sm:h-6 text-[#0b6d41] flex-shrink-0" />
                   <span className="text-gray-700 text-sm sm:text-base">Valid NEET-MDS score</span>
                 </li>
                 <li className="flex items-start gap-2 sm:gap-3">
-                  <Check className="w-5 h-5 sm:w-6 sm:h-6 text-[#7cb983] flex-shrink-0" />
+                  <Check className="w-5 h-5 sm:w-6 sm:h-6 text-[#0b6d41] flex-shrink-0" />
                   <span className="text-gray-700 text-sm sm:text-base">State Dental Council registration</span>
                 </li>
               </ul>
             </div>
 
             {/* Fix D5 (2026-10-12 audit): the 3-box form right where eligibility is read */}
-            <div className="bg-[#006837] rounded-xl sm:rounded-2xl p-5 sm:p-6 mb-6 sm:mb-8">
+            <div className="bg-[#0b6d41] rounded-xl sm:rounded-2xl p-5 sm:p-6 mb-6 sm:mb-8">
               <h4 className="text-xl sm:text-2xl font-bold text-white leading-snug">Check your eligibility with our admission team</h4>
               <p className="mt-1 mb-5 text-sm sm:text-base text-white/80">Fill 3 details. Our admission team will call you within 24 hours.</p>
               <DentalEnquiryForm sourcePage="home-admissions" compact />
@@ -73,14 +73,14 @@ export default function AdmissionsSection() {
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
               <a
                 href="tel:+919345855001"
-                className="bg-[#7cb983] hover:bg-[#6ba872] active:bg-[#5a9761] text-white font-bold py-3 sm:py-3.5 px-6 sm:px-8 rounded-full transition-all duration-300 text-center inline-flex items-center justify-center gap-2 min-h-[44px] touch-manipulation text-sm sm:text-base"
+                className="bg-[#ffde59] hover:bg-[#e6c64d] active:bg-[#e6c64d] text-[#032816] font-bold py-3 sm:py-3.5 px-6 sm:px-8 rounded-full transition-all duration-300 text-center inline-flex items-center justify-center gap-2 min-h-[44px] touch-manipulation text-sm sm:text-base"
               >
                 <Phone className="w-5 h-5" />
                 <span>Talk to Admissions</span>
               </a>
               <a
                 href="mailto:dental@jkkn.ac.in"
-                className="border-2 border-[#006837] hover:bg-[#006837] hover:text-white active:bg-[#0d3d13] text-[#006837] font-bold py-3 sm:py-3.5 px-6 sm:px-8 rounded-full transition-all duration-300 text-center inline-flex items-center justify-center gap-2 min-h-[44px] touch-manipulation text-sm sm:text-base"
+                className="border-2 border-[#0b6d41] hover:bg-[#0b6d41] hover:text-white active:bg-[#085032] text-[#0b6d41] font-bold py-3 sm:py-3.5 px-6 sm:px-8 rounded-full transition-all duration-300 text-center inline-flex items-center justify-center gap-2 min-h-[44px] touch-manipulation text-sm sm:text-base"
               >
                 <Mail className="w-5 h-5" />
                 <span>Email Us</span>
@@ -91,65 +91,65 @@ export default function AdmissionsSection() {
           {/* Right - Admission Process + Table */}
           <div>
             <div className="bg-white rounded-xl sm:rounded-2xl p-5 sm:p-6 md:p-8 shadow-lg mb-6 sm:mb-8">
-              <h3 className="text-xl sm:text-2xl font-bold text-[#006837] mb-6 sm:mb-8">Admission Process</h3>
+              <h3 className="text-xl sm:text-2xl font-bold text-[#0b6d41] mb-6 sm:mb-8">Admission Process</h3>
 
               <ol className="space-y-4 sm:space-y-5 md:space-y-6 list-none p-0 m-0">
                 <li className="flex gap-3 sm:gap-4">
                   <div className="flex-shrink-0">
-                    <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#7cb983] rounded-full flex items-center justify-center font-bold text-white text-sm sm:text-base">
+                    <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#ffde59] rounded-full flex items-center justify-center font-bold text-[#032816] text-sm sm:text-base">
                       1
                     </div>
                   </div>
                   <div>
-                    <h4 className="text-base sm:text-lg font-bold text-[#006837] mb-0.5 sm:mb-1">Check Eligibility</h4>
+                    <h4 className="text-base sm:text-lg font-bold text-[#0b6d41] mb-0.5 sm:mb-1">Check Eligibility</h4>
                     <p className="text-xs sm:text-sm text-gray-600">Verify academic and NEET requirements</p>
                   </div>
                 </li>
 
                 <li className="flex gap-3 sm:gap-4">
                   <div className="flex-shrink-0">
-                    <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#7cb983] rounded-full flex items-center justify-center font-bold text-white text-sm sm:text-base">
+                    <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#ffde59] rounded-full flex items-center justify-center font-bold text-[#032816] text-sm sm:text-base">
                       2
                     </div>
                   </div>
                   <div>
-                    <h4 className="text-base sm:text-lg font-bold text-[#006837] mb-0.5 sm:mb-1">Register for Counseling</h4>
+                    <h4 className="text-base sm:text-lg font-bold text-[#0b6d41] mb-0.5 sm:mb-1">Register for Counseling</h4>
                     <p className="text-xs sm:text-sm text-gray-600">TN State or All India Quota</p>
                   </div>
                 </li>
 
                 <li className="flex gap-3 sm:gap-4">
                   <div className="flex-shrink-0">
-                    <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#7cb983] rounded-full flex items-center justify-center font-bold text-white text-sm sm:text-base">
+                    <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#ffde59] rounded-full flex items-center justify-center font-bold text-[#032816] text-sm sm:text-base">
                       3
                     </div>
                   </div>
                   <div>
-                    <h4 className="text-base sm:text-lg font-bold text-[#006837] mb-0.5 sm:mb-1">Participate in Counseling</h4>
+                    <h4 className="text-base sm:text-lg font-bold text-[#0b6d41] mb-0.5 sm:mb-1">Participate in Counseling</h4>
                     <p className="text-xs sm:text-sm text-gray-600">Select JKKN during choice-filling</p>
                   </div>
                 </li>
 
                 <li className="flex gap-3 sm:gap-4">
                   <div className="flex-shrink-0">
-                    <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#7cb983] rounded-full flex items-center justify-center font-bold text-white text-sm sm:text-base">
+                    <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#ffde59] rounded-full flex items-center justify-center font-bold text-[#032816] text-sm sm:text-base">
                       4
                     </div>
                   </div>
                   <div>
-                    <h4 className="text-base sm:text-lg font-bold text-[#006837] mb-0.5 sm:mb-1">Document Verification</h4>
+                    <h4 className="text-base sm:text-lg font-bold text-[#0b6d41] mb-0.5 sm:mb-1">Document Verification</h4>
                     <p className="text-xs sm:text-sm text-gray-600">Complete verification at our office</p>
                   </div>
                 </li>
 
                 <li className="flex gap-3 sm:gap-4">
                   <div className="flex-shrink-0">
-                    <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#7cb983] rounded-full flex items-center justify-center font-bold text-white text-sm sm:text-base">
+                    <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#ffde59] rounded-full flex items-center justify-center font-bold text-[#032816] text-sm sm:text-base">
                       5
                     </div>
                   </div>
                   <div>
-                    <h4 className="text-base sm:text-lg font-bold text-[#006837] mb-0.5 sm:mb-1">Fee Payment & Enrollment</h4>
+                    <h4 className="text-base sm:text-lg font-bold text-[#0b6d41] mb-0.5 sm:mb-1">Fee Payment & Enrollment</h4>
                     <p className="text-xs sm:text-sm text-gray-600">Pay fees and secure your seat</p>
                   </div>
                 </li>
@@ -158,10 +158,10 @@ export default function AdmissionsSection() {
 
             {/* Eligibility Comparison Table */}
             <div className="overflow-x-auto">
-              <h3 className="text-lg sm:text-xl font-bold text-[#006837] mb-4">Eligibility Criteria at a Glance</h3>
+              <h3 className="text-lg sm:text-xl font-bold text-[#0b6d41] mb-4">Eligibility Criteria at a Glance</h3>
               <table className="w-full border-collapse bg-white rounded-xl shadow-md overflow-hidden text-sm">
                 <thead>
-                  <tr className="bg-[#006837] text-white">
+                  <tr className="bg-[#0b6d41] text-white">
                     <th className="px-3 py-2.5 text-left font-semibold">Criteria</th>
                     <th className="px-3 py-2.5 text-left font-semibold">BDS</th>
                     <th className="px-3 py-2.5 text-left font-semibold">MDS</th>

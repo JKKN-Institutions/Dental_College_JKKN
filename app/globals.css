@@ -316,7 +316,7 @@
 .snippet-answer {
   font-size: 1rem;
   line-height: 1.7;
-  color: #002309;
+  color: #032816;
   max-width: 720px;
 }
 
@@ -353,9 +353,9 @@
 }
 
 .college-facts-table th {
-  background-color: #f0f7ee;
+  background-color: #d4f1e4;
   font-weight: 600;
-  color: #006837;
+  color: #0b6d41;
   width: 35%;
 }
 

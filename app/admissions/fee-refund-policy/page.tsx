@@ -64,17 +64,17 @@ export default function FeeRefundPolicy() {
       <Header />
 
       {/* Hero Banner */}
-      <section className="bg-[#006837] py-16 px-4">
+      <section className="bg-[#0b6d41] py-16 px-4">
         <div className="max-w-5xl mx-auto">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-5 uppercase tracking-wide">
             FEE REFUND POLICY
           </h1>
-          <div className="w-20 h-1 bg-[#7cb983] mb-6 rounded-full" />
+          <div className="w-20 h-1 bg-[#ffde59] mb-6 rounded-full" />
           <h2 className="text-lg md:text-xl font-semibold text-white/90 mb-5">
             Fee Refund Policy - JKKN Dental College &amp; Hospital
           </h2>
           <div className="bg-white/10 rounded-2xl p-6 max-w-3xl">
-            <p className="text-sm font-bold text-[#7cb983] uppercase tracking-wide mb-2">Introduction</p>
+            <p className="text-sm font-bold text-[#ffde59] uppercase tracking-wide mb-2">Introduction</p>
             <p className="hero-description text-white/85 text-base leading-relaxed">
               At JKKN Dental College &amp; Hospital, we are committed to upholding transparency and fairness in financial transactions. In accordance with the University Grants Commission (UGC) Fee Refund Policy, we have established a structured refund policy to ensure a smooth process for learners who wish to withdraw their admission.
             </p>
@@ -86,13 +86,13 @@ export default function FeeRefundPolicy() {
         <div className="max-w-5xl mx-auto space-y-8">
 
           {/* Guidelines Header */}
-          <h3 className="text-xl md:text-2xl font-bold text-[#006837]">
+          <h3 className="text-xl md:text-2xl font-bold text-[#0b6d41]">
             Fee Refund Guidelines (As per UGC Regulations 2024-25)
           </h3>
 
           {/* 1. Full Refund */}
           <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
-            <div className="flex items-center gap-4 bg-[#006837] px-6 py-4">
+            <div className="flex items-center gap-4 bg-[#0b6d41] px-6 py-4">
               <div className="flex-shrink-0 w-9 h-9 rounded-full bg-white/20 flex items-center justify-center font-bold text-white text-base">
                 1
               </div>
@@ -107,7 +107,7 @@ export default function FeeRefundPolicy() {
 
           {/* 2. Partial Refunds */}
           <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
-            <div className="flex items-center gap-4 bg-[#006837] px-6 py-4">
+            <div className="flex items-center gap-4 bg-[#0b6d41] px-6 py-4">
               <div className="flex-shrink-0 w-9 h-9 rounded-full bg-white/20 flex items-center justify-center font-bold text-white text-base">
                 2
               </div>
@@ -117,10 +117,10 @@ export default function FeeRefundPolicy() {
               <table className="w-full">
                 <thead>
                   <tr className="bg-[#FBFBEE] border-b border-gray-200">
-                    <th className="px-6 py-4 text-left text-xs md:text-sm font-bold text-[#006837] uppercase tracking-wide w-3/4">
+                    <th className="px-6 py-4 text-left text-xs md:text-sm font-bold text-[#0b6d41] uppercase tracking-wide w-3/4">
                       POINT OF TIME WHEN NOTICE OF WITHDRAWAL IS RECEIVED
                     </th>
-                    <th className="px-6 py-4 text-left text-xs md:text-sm font-bold text-[#006837] uppercase tracking-wide">
+                    <th className="px-6 py-4 text-left text-xs md:text-sm font-bold text-[#0b6d41] uppercase tracking-wide">
                       REFUND PERCENTAGE
                     </th>
                   </tr>
@@ -134,7 +134,7 @@ export default function FeeRefundPolicy() {
                       <td className="px-6 py-4 text-sm md:text-base text-gray-600">
                         {row.condition}
                       </td>
-                      <td className="px-6 py-4 text-sm md:text-base font-bold text-[#006837]">
+                      <td className="px-6 py-4 text-sm md:text-base font-bold text-[#0b6d41]">
                         {row.percentage}
                       </td>
                     </tr>
@@ -146,7 +146,7 @@ export default function FeeRefundPolicy() {
 
           {/* 3. Applicability */}
           <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
-            <div className="flex items-center gap-4 bg-[#006837] px-6 py-4">
+            <div className="flex items-center gap-4 bg-[#0b6d41] px-6 py-4">
               <div className="flex-shrink-0 w-9 h-9 rounded-full bg-white/20 flex items-center justify-center font-bold text-white text-base">
                 3
               </div>
@@ -155,7 +155,7 @@ export default function FeeRefundPolicy() {
             <ul className="px-6 py-5 space-y-3">
               {applicabilityPoints.map((point, index) => (
                 <li key={index} className="flex items-start gap-3 text-sm md:text-base text-gray-700 leading-relaxed">
-                  <div className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-[#7cb983] mt-2" />
+                  <div className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-[#ffde59] mt-2" />
                   {point}
                 </li>
               ))}
@@ -164,7 +164,7 @@ export default function FeeRefundPolicy() {
 
           {/* Grievance Redressal */}
           <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 md:p-8">
-            <h3 className="text-xl md:text-2xl font-bold text-[#006837] mb-4">
+            <h3 className="text-xl md:text-2xl font-bold text-[#0b6d41] mb-4">
               Grievance Redressal
             </h3>
             <p className="text-gray-700 leading-relaxed text-sm md:text-base mb-4">
@@ -175,11 +175,11 @@ export default function FeeRefundPolicy() {
             </p>
 
             {/* Contact Info Box */}
-            <div className="bg-[#FBFBEE] border border-[#7cb983]/30 rounded-xl p-5 space-y-2 mb-6">
-              <p className="text-[#002309] font-bold text-sm md:text-base">
+            <div className="bg-[#FBFBEE] border border-[#0f8f56]/30 rounded-xl p-5 space-y-2 mb-6">
+              <p className="text-[#032816] font-bold text-sm md:text-base">
                 Phone: +91 93458 55001
               </p>
-              <p className="text-[#002309] font-bold text-sm md:text-base">
+              <p className="text-[#032816] font-bold text-sm md:text-base">
                 Email: [dental@jkkn.ac.in]
               </p>
             </div>
@@ -195,7 +195,7 @@ export default function FeeRefundPolicy() {
               href="/pdf/UGC-Fee-Refund-Policy.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-[#006837] hover:bg-[#005a2f] text-white font-bold py-3 px-12 rounded-xl transition-colors duration-200 shadow-sm uppercase text-sm tracking-wide"
+              className="inline-block bg-[#0b6d41] hover:bg-[#005a2f] text-white font-bold py-3 px-12 rounded-xl transition-colors duration-200 shadow-sm uppercase text-sm tracking-wide"
             >
               UGC FEE REFUND POLICY
             </a>

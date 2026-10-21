@@ -40,15 +40,15 @@ export default function MOUPage() {
       <Header />
 
       {/* Hero Banner */}
-      <section className="bg-gradient-to-br from-[#006837] via-[#00572e] to-[#003d20] py-16 px-4">
+      <section className="bg-gradient-to-br from-[#0b6d41] via-[#00572e] to-[#003d20] py-16 px-4">
         <div className="max-w-6xl mx-auto">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
             MOU (Memorandum of Understanding)
           </h1>
-          <h2 className="text-xl md:text-2xl font-semibold text-green-200 mb-2">
+          <h2 className="text-xl md:text-2xl font-semibold text-[#d4f1e4] mb-2">
             Memorandum of Understanding (MOU)
           </h2>
-          <p className="text-green-100 text-base md:text-lg font-medium mb-6">
+          <p className="text-white text-base md:text-lg font-medium mb-6">
             Fostering Strategic Collaborations for Excellence
           </p>
           <p className="hero-description text-green-50 max-w-3xl leading-relaxed text-base md:text-lg">
@@ -60,62 +60,62 @@ export default function MOUPage() {
       {/* Purpose & Benefits */}
       <section className="bg-[#FBFBEE] py-14 px-4">
         <div className="max-w-6xl mx-auto">
-          <h3 className="text-2xl md:text-3xl font-bold text-[#006837] mb-3">
+          <h3 className="text-2xl md:text-3xl font-bold text-[#0b6d41] mb-3">
             Purpose &amp; Benefits of MOUs
           </h3>
-          <h4 className="text-base md:text-lg font-bold text-[#002309] mb-8">
+          <h4 className="text-base md:text-lg font-bold text-[#032816] mb-8">
             Through MOUs, we aim to:
           </h4>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
-            <div className="flex items-start gap-4 bg-white rounded-xl p-5 shadow-sm border border-green-100 hover:shadow-md transition-shadow duration-300">
-              <div className="w-9 h-9 bg-[#e8f5e9] rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
-                <Check className="w-5 h-5 text-[#006837]" />
+            <div className="flex items-start gap-4 bg-white rounded-xl p-5 shadow-sm border border-[#d4f1e4] hover:shadow-md transition-shadow duration-300">
+              <div className="w-9 h-9 bg-[#d4f1e4] rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+                <Check className="w-5 h-5 text-[#0b6d41]" />
               </div>
               <p className="text-gray-700 text-sm leading-relaxed">
                 Enhance Educational Opportunities – Facilitate senior learner and learner exchange programs, specialized training, and workshops.
               </p>
             </div>
 
-            <div className="flex items-start gap-4 bg-white rounded-xl p-5 shadow-sm border border-green-100 hover:shadow-md transition-shadow duration-300">
-              <div className="w-9 h-9 bg-[#e8f5e9] rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
-                <Check className="w-5 h-5 text-[#006837]" />
+            <div className="flex items-start gap-4 bg-white rounded-xl p-5 shadow-sm border border-[#d4f1e4] hover:shadow-md transition-shadow duration-300">
+              <div className="w-9 h-9 bg-[#d4f1e4] rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+                <Check className="w-5 h-5 text-[#0b6d41]" />
               </div>
               <p className="text-gray-700 text-sm leading-relaxed">
                 Strengthen Research Collaborations – Enable joint research projects, resource sharing, and knowledge exchange with reputed institutions.
               </p>
             </div>
 
-            <div className="flex items-start gap-4 bg-white rounded-xl p-5 shadow-sm border border-green-100 hover:shadow-md transition-shadow duration-300">
-              <div className="w-9 h-9 bg-[#e8f5e9] rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
-                <Check className="w-5 h-5 text-[#006837]" />
+            <div className="flex items-start gap-4 bg-white rounded-xl p-5 shadow-sm border border-[#d4f1e4] hover:shadow-md transition-shadow duration-300">
+              <div className="w-9 h-9 bg-[#d4f1e4] rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+                <Check className="w-5 h-5 text-[#0b6d41]" />
               </div>
               <p className="text-gray-700 text-sm leading-relaxed">
                 Promote Industry-Academia Linkages – Bridge the gap between academic learning and practical industry applications.
               </p>
             </div>
 
-            <div className="flex items-start gap-4 bg-white rounded-xl p-5 shadow-sm border border-green-100 hover:shadow-md transition-shadow duration-300">
-              <div className="w-9 h-9 bg-[#e8f5e9] rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
-                <Check className="w-5 h-5 text-[#006837]" />
+            <div className="flex items-start gap-4 bg-white rounded-xl p-5 shadow-sm border border-[#d4f1e4] hover:shadow-md transition-shadow duration-300">
+              <div className="w-9 h-9 bg-[#d4f1e4] rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+                <Check className="w-5 h-5 text-[#0b6d41]" />
               </div>
               <p className="text-gray-700 text-sm leading-relaxed">
                 Encourage Skill Development &amp; Innovation – Provide hands-on experience, internships, and exposure to cutting-edge dental technologies.
               </p>
             </div>
 
-            <div className="flex items-start gap-4 bg-white rounded-xl p-5 shadow-sm border border-green-100 hover:shadow-md transition-shadow duration-300 md:col-span-2">
-              <div className="w-9 h-9 bg-[#e8f5e9] rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
-                <Check className="w-5 h-5 text-[#006837]" />
+            <div className="flex items-start gap-4 bg-white rounded-xl p-5 shadow-sm border border-[#d4f1e4] hover:shadow-md transition-shadow duration-300 md:col-span-2">
+              <div className="w-9 h-9 bg-[#d4f1e4] rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+                <Check className="w-5 h-5 text-[#0b6d41]" />
               </div>
               <p className="text-gray-700 text-sm leading-relaxed">
-                Expand Global &amp; National Networks – Establish strong relationships with universities, research centers, and healthcare organizations worldwide. Our Commitment to Excellence By forging meaningful collaborations, <span className="font-bold text-[#002309]">JKKN Dental College is committed to:</span>
+                Expand Global &amp; National Networks – Establish strong relationships with universities, research centers, and healthcare organizations worldwide. Our Commitment to Excellence By forging meaningful collaborations, <span className="font-bold text-[#032816]">JKKN Dental College is committed to:</span>
               </p>
             </div>
           </div>
 
           {/* Commitment Points */}
-          <div className="bg-white rounded-xl p-6 border-l-4 border-[#7cb983] shadow-sm">
+          <div className="bg-white rounded-xl p-6 border-l-4 border-[#0f8f56] shadow-sm">
             <p className="text-gray-700 text-sm leading-relaxed mb-2">
               Advancing dental education through shared expertise.&nbsp;&nbsp;&nbsp;&nbsp;Promoting ethical and impactful research.
             </p>
@@ -129,21 +129,21 @@ export default function MOUPage() {
       {/* Contact Section */}
       <section className="bg-white py-10 px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="bg-[#FBFBEE] rounded-xl p-6 border border-green-100 inline-block">
-            <p className="text-[#002309] font-bold mb-3 text-base">
+          <div className="bg-[#FBFBEE] rounded-xl p-6 border border-[#d4f1e4] inline-block">
+            <p className="text-[#032816] font-bold mb-3 text-base">
               ◆◆ For partnership inquiries or more details on our MOUs, Please contact
             </p>
             <div className="flex items-center gap-3 mb-2">
-              <div className="w-8 h-8 bg-[#e8f5e9] rounded-lg flex items-center justify-center flex-shrink-0">
-                <User className="w-4 h-4 text-[#006837]" />
+              <div className="w-8 h-8 bg-[#d4f1e4] rounded-lg flex items-center justify-center flex-shrink-0">
+                <User className="w-4 h-4 text-[#0b6d41]" />
               </div>
-              <p className="text-[#002309] font-bold text-sm">Dr T Dinesh Kumar</p>
+              <p className="text-[#032816] font-bold text-sm">Dr T Dinesh Kumar</p>
             </div>
             <div className="flex items-center gap-3">
-              <div className="w-8 h-8 bg-[#e8f5e9] rounded-lg flex items-center justify-center flex-shrink-0">
-                <Phone className="w-4 h-4 text-[#006837]" />
+              <div className="w-8 h-8 bg-[#d4f1e4] rounded-lg flex items-center justify-center flex-shrink-0">
+                <Phone className="w-4 h-4 text-[#0b6d41]" />
               </div>
-              <p className="text-[#002309] font-bold text-sm">Contact No. 8610365007</p>
+              <p className="text-[#032816] font-bold text-sm">Contact No. 8610365007</p>
             </div>
           </div>
         </div>
@@ -153,9 +153,9 @@ export default function MOUPage() {
       <section className="bg-[#FBFBEE] py-14 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-14">
-            <div className="bg-white rounded-xl overflow-hidden shadow-sm border border-green-100 hover:shadow-md transition-shadow duration-300">
-              <div className="p-5 border-b border-green-100">
-                <h4 className="text-sm font-bold text-[#006837] leading-snug">
+            <div className="bg-white rounded-xl overflow-hidden shadow-sm border border-[#d4f1e4] hover:shadow-md transition-shadow duration-300">
+              <div className="p-5 border-b border-[#d4f1e4]">
+                <h4 className="text-sm font-bold text-[#0b6d41] leading-snug">
                   MEMORUNDUM OF UNDERSTANDING WITH SENTHIL MULTISPECIALITY HOSPITAL
                 </h4>
               </div>
@@ -168,9 +168,9 @@ export default function MOUPage() {
               </div>
             </div>
 
-            <div className="bg-white rounded-xl overflow-hidden shadow-sm border border-green-100 hover:shadow-md transition-shadow duration-300">
-              <div className="p-5 border-b border-green-100">
-                <h4 className="text-sm font-bold text-[#006837] leading-snug">
+            <div className="bg-white rounded-xl overflow-hidden shadow-sm border border-[#d4f1e4] hover:shadow-md transition-shadow duration-300">
+              <div className="p-5 border-b border-[#d4f1e4]">
+                <h4 className="text-sm font-bold text-[#0b6d41] leading-snug">
                   MEMORUNDUM OF UNDERSTANDING WITH NANDHA DENTAL College &amp; Hospital
                 </h4>
               </div>
@@ -183,9 +183,9 @@ export default function MOUPage() {
               </div>
             </div>
 
-            <div className="bg-white rounded-xl overflow-hidden shadow-sm border border-green-100 hover:shadow-md transition-shadow duration-300">
-              <div className="p-5 border-b border-green-100">
-                <h4 className="text-sm font-bold text-[#006837] leading-snug">
+            <div className="bg-white rounded-xl overflow-hidden shadow-sm border border-[#d4f1e4] hover:shadow-md transition-shadow duration-300">
+              <div className="p-5 border-b border-[#d4f1e4]">
+                <h4 className="text-sm font-bold text-[#0b6d41] leading-snug">
                   MEMORUNDUM OF UNDERSTANDING WITH AROKYA HOSPITAL SALEM
                 </h4>
               </div>
@@ -205,7 +205,7 @@ export default function MOUPage() {
               href="/pdf/AROKYA-HOSPITAL-SALEM-MOU.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center gap-2 bg-[#7cb983] hover:bg-[#6ba872] text-white font-bold py-3 px-6 rounded-lg transition-all duration-300 text-sm"
+              className="flex items-center justify-center gap-2 bg-[#ffde59] hover:bg-[#e6c64d] text-[#032816] font-bold py-3 px-6 rounded-lg transition-all duration-300 text-sm"
             >
               <FileText className="w-4 h-4 flex-shrink-0" />
               AROKYA HOSPITAL SALEM MOU
@@ -214,7 +214,7 @@ export default function MOUPage() {
               href="/pdf/DHANVANTHRI-MOU.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center gap-2 bg-[#7cb983] hover:bg-[#6ba872] text-white font-bold py-3 px-6 rounded-lg transition-all duration-300 text-sm"
+              className="flex items-center justify-center gap-2 bg-[#ffde59] hover:bg-[#e6c64d] text-[#032816] font-bold py-3 px-6 rounded-lg transition-all duration-300 text-sm"
             >
               <FileText className="w-4 h-4 flex-shrink-0" />
               DHANVANTHRI MOU
@@ -223,7 +223,7 @@ export default function MOUPage() {
               href="/pdf/NANDHA-COLLEGE-MOU.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center gap-2 bg-[#7cb983] hover:bg-[#6ba872] text-white font-bold py-3 px-6 rounded-lg transition-all duration-300 text-sm"
+              className="flex items-center justify-center gap-2 bg-[#ffde59] hover:bg-[#e6c64d] text-[#032816] font-bold py-3 px-6 rounded-lg transition-all duration-300 text-sm"
             >
               <FileText className="w-4 h-4 flex-shrink-0" />
               NANDHA COLLEGE MOU
@@ -232,7 +232,7 @@ export default function MOUPage() {
               href="/pdf/SENTHIL-MULTI-SPECIALIT-HOSPITAL-MOU.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center gap-2 bg-[#7cb983] hover:bg-[#6ba872] text-white font-bold py-3 px-6 rounded-lg transition-all duration-300 text-sm"
+              className="flex items-center justify-center gap-2 bg-[#ffde59] hover:bg-[#e6c64d] text-[#032816] font-bold py-3 px-6 rounded-lg transition-all duration-300 text-sm"
             >
               <FileText className="w-4 h-4 flex-shrink-0" />
               SENTHIL MULTI SPECIALIT HOSPITAL- MOU- 06.03.2025

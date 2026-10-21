@@ -42,10 +42,10 @@ export default function ScholarshipsPage() {
       <Header />
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-[#006837] to-[#002309] py-16 px-4">
+      <section className="relative bg-gradient-to-br from-[#0b6d41] to-[#032816] py-16 px-4">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
-            Scholarship <span className="text-[#7cb983]">Details</span>
+            Scholarship <span className="text-[#ffde59]">Details</span>
           </h1>
           <p className="text-lg text-gray-200 max-w-3xl mx-auto leading-relaxed">
             Government and institutional scholarships available for eligible BDS learners at JKKN Dental College &amp; Hospital.
@@ -59,12 +59,12 @@ export default function ScholarshipsPage() {
 
           {/* SC/SCA/ST/BC-CC */}
           <div className="mb-14">
-            <h2 className="text-2xl md:text-3xl font-bold text-[#006837] mb-6">
+            <h2 className="text-2xl md:text-3xl font-bold text-[#0b6d41] mb-6">
               SC / SCA / ST / BC-CC
             </h2>
             <div className="overflow-x-auto rounded-xl shadow-lg">
               <table className="w-full">
-                <thead className="bg-[#006837] text-white">
+                <thead className="bg-[#0b6d41] text-white">
                   <tr>
                     <th className="px-6 py-4 text-left font-bold">Scholarship</th>
                     <th className="px-6 py-4 text-left font-bold">Course</th>
@@ -92,12 +92,12 @@ export default function ScholarshipsPage() {
 
           {/* BC/MBC/DNC/BCM */}
           <div className="mb-14">
-            <h2 className="text-2xl md:text-3xl font-bold text-[#006837] mb-6">
+            <h2 className="text-2xl md:text-3xl font-bold text-[#0b6d41] mb-6">
               BC / MBC / DNC / BCM
             </h2>
             <div className="overflow-x-auto rounded-xl shadow-lg">
               <table className="w-full">
-                <thead className="bg-[#006837] text-white">
+                <thead className="bg-[#0b6d41] text-white">
                   <tr>
                     <th className="px-6 py-4 text-left font-bold">Scholarship</th>
                     <th className="px-6 py-4 text-left font-bold">Course</th>
@@ -122,7 +122,7 @@ export default function ScholarshipsPage() {
 
           {/* All Community – Tamil Medium */}
           <div className="mb-6">
-            <h2 className="text-2xl md:text-3xl font-bold text-[#006837] mb-2">
+            <h2 className="text-2xl md:text-3xl font-bold text-[#0b6d41] mb-2">
               All Community
             </h2>
             <p className="text-sm text-gray-600 mb-6">
@@ -130,7 +130,7 @@ export default function ScholarshipsPage() {
             </p>
             <div className="overflow-x-auto rounded-xl shadow-lg">
               <table className="w-full">
-                <thead className="bg-[#006837] text-white">
+                <thead className="bg-[#0b6d41] text-white">
                   <tr>
                     <th className="px-6 py-4 text-left font-bold">Scholarship</th>
                     <th className="px-6 py-4 text-left font-bold">Course</th>
@@ -160,7 +160,7 @@ export default function ScholarshipsPage() {
       </section>
 
       {/* Contact Section */}
-      <section className="py-16 px-4 bg-gradient-to-br from-[#006837] to-[#002309]">
+      <section className="py-16 px-4 bg-gradient-to-br from-[#0b6d41] to-[#032816]">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
             Have Questions About Scholarships?

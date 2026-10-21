@@ -111,7 +111,7 @@ export default function MDSOralMedicine() {
       ]} />
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-[#006837] to-[#7cb983] py-20 px-4 overflow-hidden">
+      <section className="relative bg-gradient-to-br from-[#0b6d41] to-[#0f8f56] py-20 px-4 overflow-hidden">
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0" style={{
@@ -135,7 +135,7 @@ export default function MDSOralMedicine() {
               {/* Heading */}
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
                 MDS Oral Medicine & <br />
-                <span className="text-[#7cb983]">Radiology</span>
+                <span className="text-[#ffde59]">Radiology</span>
               </h1>
 
               {/* Description */}
@@ -145,12 +145,12 @@ export default function MDSOralMedicine() {
 
               {/* Buttons */}
               <div className="flex flex-wrap gap-4">
-                <a href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_medium=organic&utm_campaign=academics-details-of-academic-programs-mds-oral-medicine" target="_blank" rel="noopener noreferrer" className="bg-[#7cb983] hover:bg-[#6ba872] text-white font-bold px-8 py-4 rounded-lg text-lg transition-all duration-300 shadow-lg inline-block">
+                <a href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_medium=organic&utm_campaign=academics-details-of-academic-programs-mds-oral-medicine" target="_blank" rel="noopener noreferrer" className="bg-[#ffde59] hover:bg-[#e6c64d] text-[#032816] font-bold px-8 py-4 rounded-lg text-lg transition-all duration-300 shadow-lg inline-block">
                   Apply Now
                 </a>
                 <button
                   onClick={() => document.getElementById('curriculum')?.scrollIntoView({ behavior: 'smooth' })}
-                  className="bg-white/10 backdrop-blur-sm border-2 border-white text-white hover:bg-white hover:text-[#006837] font-bold px-8 py-4 rounded-lg text-lg transition-all duration-300"
+                  className="bg-white/10 backdrop-blur-sm border-2 border-white text-white hover:bg-white hover:text-[#0b6d41] font-bold px-8 py-4 rounded-lg text-lg transition-all duration-300"
                 >
                   Explore Learning Framework
                 </button>
@@ -159,7 +159,7 @@ export default function MDSOralMedicine() {
 
             {/* Right Content - Radiology Lab Card */}
             <div className="relative">
-              <div className="bg-gradient-to-br from-[#006837] to-[#002309] rounded-2xl border-4 border-white/20 overflow-hidden relative min-h-[400px] md:min-h-[450px]">
+              <div className="bg-gradient-to-br from-[#0b6d41] to-[#032816] rounded-2xl border-4 border-white/20 overflow-hidden relative min-h-[400px] md:min-h-[450px]">
                 <Image
                   src="/images/MDS-Oral-Medicine-&-Radiology-banner-Image.webp"
                   alt="Radiology Lab"
@@ -196,7 +196,7 @@ export default function MDSOralMedicine() {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
             {/* Duration */}
             <div className="flex items-center gap-4">
-              <div className="bg-[#7cb983] rounded-lg p-4 flex-shrink-0">
+              <div className="bg-[#ffde59] rounded-lg p-4 flex-shrink-0">
                 <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd" />
                 </svg>
@@ -209,7 +209,7 @@ export default function MDSOralMedicine() {
 
             {/* University */}
             <div className="flex items-center gap-4">
-              <div className="bg-[#7cb983] rounded-lg p-4 flex-shrink-0">
+              <div className="bg-[#ffde59] rounded-lg p-4 flex-shrink-0">
                 <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z" />
                 </svg>
@@ -222,7 +222,7 @@ export default function MDSOralMedicine() {
 
             {/* Admission */}
             <div className="flex items-center gap-4">
-              <div className="bg-[#7cb983] rounded-lg p-4 flex-shrink-0">
+              <div className="bg-[#ffde59] rounded-lg p-4 flex-shrink-0">
                 <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z" />
                   <path fillRule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z" clipRule="evenodd" />
@@ -236,7 +236,7 @@ export default function MDSOralMedicine() {
 
             {/* Location */}
             <div className="flex items-center gap-4">
-              <div className="bg-[#7cb983] rounded-lg p-4 flex-shrink-0">
+              <div className="bg-[#ffde59] rounded-lg p-4 flex-shrink-0">
                 <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
                 </svg>
@@ -255,21 +255,21 @@ export default function MDSOralMedicine() {
         <div className="max-w-7xl mx-auto">
           {/* Section Label */}
           <div className="flex items-center justify-center gap-4 mb-12">
-            <div className="h-px w-16 bg-[#7cb983]"></div>
-            <span className="text-[#7cb983] font-bold text-sm uppercase tracking-widest">Program Overview</span>
-            <div className="h-px w-16 bg-[#7cb983]"></div>
+            <div className="h-px w-16 bg-[#ffde59]"></div>
+            <span className="text-[#0b6d41] font-bold text-sm uppercase tracking-widest">Program Overview</span>
+            <div className="h-px w-16 bg-[#ffde59]"></div>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-0 rounded-3xl overflow-hidden shadow-2xl">
             {/* Left - Dark Green Content Panel */}
-            <div className="bg-gradient-to-br from-[#006837] to-[#002309] p-10 lg:p-14 flex flex-col justify-center">
+            <div className="bg-gradient-to-br from-[#0b6d41] to-[#032816] p-10 lg:p-14 flex flex-col justify-center">
               <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6 leading-tight">About MDS Oral Medicine & Radiology</h2>
 
               <p className="text-gray-200 mb-5 leading-relaxed">
                 The Master of Dental Surgery (MDS) in Oral Medicine and Radiology is a comprehensive three-year postgraduate program designed to develop specialists in oral diagnosis, dental imaging, and management of oral diseases. This specialty bridges dentistry with general medicine, focusing on the diagnosis and non-surgical treatment of oral conditions.
               </p>
 
-              <p className="text-gray-200 leading-relaxed">
+              <p className="text-gray-100 leading-relaxed">
                 Our program emphasizes advanced diagnostic imaging techniques including CBCT, MRI interpretation, and digital radiography, while also training Learners to manage medically compromised patients and oral manifestations of systemic diseases.
               </p>
             </div>
@@ -292,7 +292,7 @@ export default function MDSOralMedicine() {
               <div className="bg-[#FBFBEE] p-6">
                 <div className="grid grid-cols-2 gap-3">
                   <div className="flex items-center gap-2 bg-white rounded-lg px-3 py-2.5 shadow-sm">
-                    <div className="bg-[#7cb983] rounded-full p-1 flex-shrink-0">
+                    <div className="bg-[#ffde59] rounded-full p-1 flex-shrink-0">
                       <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                       </svg>
@@ -301,7 +301,7 @@ export default function MDSOralMedicine() {
                   </div>
 
                   <div className="flex items-center gap-2 bg-white rounded-lg px-3 py-2.5 shadow-sm">
-                    <div className="bg-[#7cb983] rounded-full p-1 flex-shrink-0">
+                    <div className="bg-[#ffde59] rounded-full p-1 flex-shrink-0">
                       <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                       </svg>
@@ -310,7 +310,7 @@ export default function MDSOralMedicine() {
                   </div>
 
                   <div className="flex items-center gap-2 bg-white rounded-lg px-3 py-2.5 shadow-sm">
-                    <div className="bg-[#7cb983] rounded-full p-1 flex-shrink-0">
+                    <div className="bg-[#ffde59] rounded-full p-1 flex-shrink-0">
                       <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                       </svg>
@@ -319,7 +319,7 @@ export default function MDSOralMedicine() {
                   </div>
 
                   <div className="flex items-center gap-2 bg-white rounded-lg px-3 py-2.5 shadow-sm">
-                    <div className="bg-[#7cb983] rounded-full p-1 flex-shrink-0">
+                    <div className="bg-[#ffde59] rounded-full p-1 flex-shrink-0">
                       <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                       </svg>
@@ -328,7 +328,7 @@ export default function MDSOralMedicine() {
                   </div>
 
                   <div className="flex items-center gap-2 bg-white rounded-lg px-3 py-2.5 shadow-sm">
-                    <div className="bg-[#7cb983] rounded-full p-1 flex-shrink-0">
+                    <div className="bg-[#ffde59] rounded-full p-1 flex-shrink-0">
                       <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                       </svg>
@@ -337,7 +337,7 @@ export default function MDSOralMedicine() {
                   </div>
 
                   <div className="flex items-center gap-2 bg-white rounded-lg px-3 py-2.5 shadow-sm">
-                    <div className="bg-[#7cb983] rounded-full p-1 flex-shrink-0">
+                    <div className="bg-[#ffde59] rounded-full p-1 flex-shrink-0">
                       <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                       </svg>
@@ -355,7 +355,7 @@ export default function MDSOralMedicine() {
       <section id="curriculum" className="py-16 px-4 bg-[#FBFBEE]">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <div className="text-[#7cb983] uppercase font-bold text-sm mb-4 tracking-wider">Course Structure</div>
+            <div className="text-[#0b6d41] uppercase font-bold text-sm mb-4 tracking-wider">Course Structure</div>
             <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">3-Year Learning Framework</h2>
             <p className="text-lg text-gray-600 max-w-4xl mx-auto">
               A comprehensive learning framework designed to build expertise progressively from foundational diagnostic skills to advanced imaging interpretation and clinical mastery.
@@ -365,7 +365,7 @@ export default function MDSOralMedicine() {
           <div className="grid md:grid-cols-3 gap-8">
             {/* Year 1 - Foundation */}
             <div className="bg-[#FBFBEE] rounded-2xl shadow-lg overflow-hidden border border-gray-200">
-              <div className="bg-gradient-to-br from-[#006837] to-[#002309] p-8 text-center">
+              <div className="bg-gradient-to-br from-[#0b6d41] to-[#032816] p-8 text-center">
                 <div className="inline-block bg-white/20 backdrop-blur-sm rounded-full px-4 py-2 mb-4">
                   <span className="text-white font-bold text-sm">Year 1</span>
                 </div>
@@ -373,31 +373,31 @@ export default function MDSOralMedicine() {
               </div>
               <div className="p-8 space-y-4">
                 <div className="flex items-start gap-3">
-                  <svg className="w-5 h-5 text-[#7cb983] flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-5 h-5 text-[#0b6d41] flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
                   <span className="text-gray-700">Oral Anatomy & Physiology</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <svg className="w-5 h-5 text-[#7cb983] flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-5 h-5 text-[#0b6d41] flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
                   <span className="text-gray-700">Principles of Radiographic Imaging</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <svg className="w-5 h-5 text-[#7cb983] flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-5 h-5 text-[#0b6d41] flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
                   <span className="text-gray-700">Oral & General Pathology</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <svg className="w-5 h-5 text-[#7cb983] flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-5 h-5 text-[#0b6d41] flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
                   <span className="text-gray-700">Research Methodology</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <svg className="w-5 h-5 text-[#7cb983] flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-5 h-5 text-[#0b6d41] flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
                   <span className="text-gray-700">Basic Clinical Diagnostic Skills</span>
@@ -407,7 +407,7 @@ export default function MDSOralMedicine() {
 
             {/* Year 2 - Advanced Clinical */}
             <div className="bg-[#FBFBEE] rounded-2xl shadow-lg overflow-hidden border border-gray-200">
-              <div className="bg-gradient-to-br from-[#7cb983] to-[#6ba872] p-8 text-center">
+              <div className="bg-gradient-to-br from-[#0f8f56] to-[#0f8f56] p-8 text-center">
                 <div className="inline-block bg-white/20 backdrop-blur-sm rounded-full px-4 py-2 mb-4">
                   <span className="text-white font-bold text-sm">Year 2</span>
                 </div>
@@ -415,31 +415,31 @@ export default function MDSOralMedicine() {
               </div>
               <div className="p-8 space-y-4">
                 <div className="flex items-start gap-3">
-                  <svg className="w-5 h-5 text-[#7cb983] flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-5 h-5 text-[#0b6d41] flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
                   <span className="text-gray-700">CBCT & 3D Imaging Interpretation</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <svg className="w-5 h-5 text-[#7cb983] flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-5 h-5 text-[#0b6d41] flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
                   <span className="text-gray-700">Oral Mucosal Diseases</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <svg className="w-5 h-5 text-[#7cb983] flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-5 h-5 text-[#0b6d41] flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
                   <span className="text-gray-700">Management of TMJ Disorders</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <svg className="w-5 h-5 text-[#7cb983] flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-5 h-5 text-[#0b6d41] flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
                   <span className="text-gray-700">Orofacial Pain & Neurological Disorders</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <svg className="w-5 h-5 text-[#7cb983] flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-5 h-5 text-[#0b6d41] flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
                   <span className="text-gray-700">Systemic Diseases & Oral Manifestations</span>
@@ -449,7 +449,7 @@ export default function MDSOralMedicine() {
 
             {/* Year 3 - Specialization */}
             <div className="bg-[#FBFBEE] rounded-2xl shadow-lg overflow-hidden border border-gray-200">
-              <div className="bg-gradient-to-br from-[#7cb983] to-[#006837] p-8 text-center">
+              <div className="bg-gradient-to-br from-[#0f8f56] to-[#0b6d41] p-8 text-center">
                 <div className="inline-block bg-white/20 backdrop-blur-sm rounded-full px-4 py-2 mb-4">
                   <span className="text-white font-bold text-sm">Year 3</span>
                 </div>
@@ -457,31 +457,31 @@ export default function MDSOralMedicine() {
               </div>
               <div className="p-8 space-y-4">
                 <div className="flex items-start gap-3">
-                  <svg className="w-5 h-5 text-[#7cb983] flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-5 h-5 text-[#0b6d41] flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
                   <span className="text-gray-700">Oral Cancer Diagnosis & Management</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <svg className="w-5 h-5 text-[#7cb983] flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-5 h-5 text-[#0b6d41] flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
                   <span className="text-gray-700">Forensic Odontology</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <svg className="w-5 h-5 text-[#7cb983] flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-5 h-5 text-[#0b6d41] flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
                   <span className="text-gray-700">Medically Compromised Patient Care</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <svg className="w-5 h-5 text-[#7cb983] flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-5 h-5 text-[#0b6d41] flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
                   <span className="text-gray-700">Advanced Imaging Techniques</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <svg className="w-5 h-5 text-[#7cb983] flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-5 h-5 text-[#0b6d41] flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
                   <span className="text-gray-700">Dissertation & Research</span>
@@ -496,7 +496,7 @@ export default function MDSOralMedicine() {
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <div className="text-[#7cb983] uppercase font-bold text-sm mb-4 tracking-wider">What You'll Achieve</div>
+            <div className="text-[#0b6d41] uppercase font-bold text-sm mb-4 tracking-wider">What You'll Achieve</div>
             <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">Learning Outcomes</h2>
             <p className="text-lg text-gray-600 max-w-4xl mx-auto">
               Upon completion of the program, Learners will possess comprehensive skills in oral diagnosis and radiographic interpretation.
@@ -507,7 +507,7 @@ export default function MDSOralMedicine() {
             {/* Diagnostic Excellence */}
             <div className="bg-[#FBFBEE] rounded-2xl shadow-lg p-8 border border-gray-200">
               <div className="bg-gray-100 rounded-2xl p-6 mb-6 flex items-center justify-center">
-                <svg className="w-16 h-16 text-[#7cb983]" fill="currentColor" viewBox="0 0 20 20">
+                <svg className="w-16 h-16 text-[#0b6d41]" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M9 9a2 2 0 114 0 2 2 0 01-4 0z" />
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-13a4 4 0 00-3.446 6.032l-2.261 2.26a1 1 0 101.414 1.415l2.261-2.261A4 4 0 1011 5z" clipRule="evenodd" />
                 </svg>
@@ -515,19 +515,19 @@ export default function MDSOralMedicine() {
               <h3 className="text-2xl font-bold text-gray-800 mb-4">Diagnostic Excellence</h3>
               <ul className="space-y-3 text-gray-600">
                 <li className="flex items-start gap-2">
-                  <span className="text-[#7cb983] font-bold">•</span>
+                  <span className="text-[#0b6d41] font-bold">•</span>
                   <span>Comprehensive oral examination techniques</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-[#7cb983] font-bold">•</span>
+                  <span className="text-[#0b6d41] font-bold">•</span>
                   <span>Differential diagnosis formulation</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-[#7cb983] font-bold">•</span>
+                  <span className="text-[#0b6d41] font-bold">•</span>
                   <span>Oral lesion identification and classification</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-[#7cb983] font-bold">•</span>
+                  <span className="text-[#0b6d41] font-bold">•</span>
                   <span>Biopsy technique and histopathology correlation</span>
                 </li>
               </ul>
@@ -536,26 +536,26 @@ export default function MDSOralMedicine() {
             {/* Radiographic Mastery */}
             <div className="bg-[#FBFBEE] rounded-2xl shadow-lg p-8 border border-gray-200">
               <div className="bg-gray-100 rounded-2xl p-6 mb-6 flex items-center justify-center">
-                <svg className="w-16 h-16 text-[#7cb983]" fill="currentColor" viewBox="0 0 20 20">
+                <svg className="w-16 h-16 text-[#0b6d41]" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M4 4a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clipRule="evenodd" />
                 </svg>
               </div>
               <h3 className="text-2xl font-bold text-gray-800 mb-4">Radiographic Mastery</h3>
               <ul className="space-y-3 text-gray-600">
                 <li className="flex items-start gap-2">
-                  <span className="text-[#7cb983] font-bold">•</span>
+                  <span className="text-[#0b6d41] font-bold">•</span>
                   <span>Intraoral and extraoral radiography</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-[#7cb983] font-bold">•</span>
+                  <span className="text-[#0b6d41] font-bold">•</span>
                   <span>CBCT and 3D imaging interpretation</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-[#7cb983] font-bold">•</span>
+                  <span className="text-[#0b6d41] font-bold">•</span>
                   <span>MRI and CT correlation</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-[#7cb983] font-bold">•</span>
+                  <span className="text-[#0b6d41] font-bold">•</span>
                   <span>Digital imaging and AI-assisted diagnosis</span>
                 </li>
               </ul>
@@ -564,26 +564,26 @@ export default function MDSOralMedicine() {
             {/* Clinical Competency */}
             <div className="bg-[#FBFBEE] rounded-2xl shadow-lg p-8 border border-gray-200">
               <div className="bg-gray-100 rounded-2xl p-6 mb-6 flex items-center justify-center">
-                <svg className="w-16 h-16 text-[#7cb983]" fill="currentColor" viewBox="0 0 20 20">
+                <svg className="w-16 h-16 text-[#0b6d41]" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z" />
                 </svg>
               </div>
               <h3 className="text-2xl font-bold text-gray-800 mb-4">Clinical Competency</h3>
               <ul className="space-y-3 text-gray-600">
                 <li className="flex items-start gap-2">
-                  <span className="text-[#7cb983] font-bold">•</span>
+                  <span className="text-[#0b6d41] font-bold">•</span>
                   <span>Management of medically compromised patients</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-[#7cb983] font-bold">•</span>
+                  <span className="text-[#0b6d41] font-bold">•</span>
                   <span>Oral cancer screening and early detection</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-[#7cb983] font-bold">•</span>
+                  <span className="text-[#0b6d41] font-bold">•</span>
                   <span>TMJ disorder treatment protocols</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-[#7cb983] font-bold">•</span>
+                  <span className="text-[#0b6d41] font-bold">•</span>
                   <span>Orofacial pain management</span>
                 </li>
               </ul>
@@ -596,7 +596,7 @@ export default function MDSOralMedicine() {
       <section className="py-16 px-4 bg-[#FBFBEE]">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <div className="text-[#7cb983] uppercase font-bold text-sm mb-4 tracking-wider">Admission Requirements</div>
+            <div className="text-[#0b6d41] uppercase font-bold text-sm mb-4 tracking-wider">Admission Requirements</div>
             <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">Eligibility & Documents</h2>
             <p className="text-lg text-gray-600 max-w-4xl mx-auto">
               Review the eligibility criteria and prepare the required documents for your MDS application.
@@ -607,7 +607,7 @@ export default function MDSOralMedicine() {
             {/* Eligibility Criteria */}
             <div className="bg-[#FBFBEE] rounded-2xl shadow-lg p-8 border border-gray-200">
               <div className="flex items-center gap-3 mb-6">
-                <svg className="w-8 h-8 text-[#7cb983]" fill="currentColor" viewBox="0 0 20 20">
+                <svg className="w-8 h-8 text-[#0b6d41]" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
                 <h3 className="text-2xl font-bold text-gray-800">Eligibility Criteria</h3>
@@ -615,19 +615,19 @@ export default function MDSOralMedicine() {
 
               <div className="space-y-6">
                 <div className="flex gap-4">
-                  <div className="bg-[#7cb983] text-white rounded-full w-8 h-8 flex items-center justify-center font-bold flex-shrink-0">1</div>
+                  <div className="bg-[#ffde59] text-[#032816] rounded-full w-8 h-8 flex items-center justify-center font-bold flex-shrink-0">1</div>
                   <p className="text-gray-700 pt-1">BDS degree from a NDC recognized institution with completion of one-year compulsory rotating internship</p>
                 </div>
                 <div className="flex gap-4">
-                  <div className="bg-[#7cb983] text-white rounded-full w-8 h-8 flex items-center justify-center font-bold flex-shrink-0">2</div>
+                  <div className="bg-[#ffde59] text-[#032816] rounded-full w-8 h-8 flex items-center justify-center font-bold flex-shrink-0">2</div>
                   <p className="text-gray-700 pt-1">Valid NEET MDS qualification with minimum required percentile as per NDC/State government norms</p>
                 </div>
                 <div className="flex gap-4">
-                  <div className="bg-[#7cb983] text-white rounded-full w-8 h-8 flex items-center justify-center font-bold flex-shrink-0">3</div>
+                  <div className="bg-[#ffde59] text-[#032816] rounded-full w-8 h-8 flex items-center justify-center font-bold flex-shrink-0">3</div>
                   <p className="text-gray-700 pt-1">Permanent or provisional registration with State Dental Council</p>
                 </div>
                 <div className="flex gap-4">
-                  <div className="bg-[#7cb983] text-white rounded-full w-8 h-8 flex items-center justify-center font-bold flex-shrink-0">4</div>
+                  <div className="bg-[#ffde59] text-[#032816] rounded-full w-8 h-8 flex items-center justify-center font-bold flex-shrink-0">4</div>
                   <p className="text-gray-700 pt-1">Indian nationality (NRI/OCI candidates as per state counseling norms)</p>
                 </div>
               </div>
@@ -636,7 +636,7 @@ export default function MDSOralMedicine() {
             {/* Required Documents */}
             <div className="bg-[#FBFBEE] rounded-2xl shadow-lg p-8 border border-gray-200">
               <div className="flex items-center gap-3 mb-6">
-                <svg className="w-8 h-8 text-[#7cb983]" fill="currentColor" viewBox="0 0 20 20">
+                <svg className="w-8 h-8 text-[#0b6d41]" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4z" />
                 </svg>
                 <h3 className="text-2xl font-bold text-gray-800">Required Documents</h3>
@@ -644,49 +644,49 @@ export default function MDSOralMedicine() {
 
               <div className="grid md:grid-cols-2 gap-4">
                 <div className="flex items-center gap-3">
-                  <svg className="w-6 h-6 text-[#7cb983] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-6 h-6 text-[#0b6d41] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
                   <span className="text-gray-700">BDS Degree Certificate</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <svg className="w-6 h-6 text-[#7cb983] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-6 h-6 text-[#0b6d41] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
                   <span className="text-gray-700">NEET MDS Score Card</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <svg className="w-6 h-6 text-[#7cb983] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-6 h-6 text-[#0b6d41] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
                   <span className="text-gray-700">Internship Certificate</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <svg className="w-6 h-6 text-[#7cb983] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-6 h-6 text-[#0b6d41] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
                   <span className="text-gray-700">Dental Council Registration</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <svg className="w-6 h-6 text-[#7cb983] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-6 h-6 text-[#0b6d41] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
                   <span className="text-gray-700">Identity Proof (Aadhar/Passport)</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <svg className="w-6 h-6 text-[#7cb983] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-6 h-6 text-[#0b6d41] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
                   <span className="text-gray-700">Passport Size Photographs</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <svg className="w-6 h-6 text-[#7cb983] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-6 h-6 text-[#0b6d41] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
                   <span className="text-gray-700">Community Certificate</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <svg className="w-6 h-6 text-[#7cb983] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-6 h-6 text-[#0b6d41] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
                   <span className="text-gray-700">Allotment Order</span>
@@ -701,7 +701,7 @@ export default function MDSOralMedicine() {
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <div className="text-[#7cb983] uppercase font-bold text-sm mb-4 tracking-wider">World-Class Infrastructure</div>
+            <div className="text-[#0b6d41] uppercase font-bold text-sm mb-4 tracking-wider">World-Class Infrastructure</div>
             <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">State-of-the-Art Facilities</h2>
             <p className="text-lg text-gray-600 max-w-4xl mx-auto">
               Our department is equipped with cutting-edge diagnostic equipment and modern infrastructure for comprehensive training.
@@ -711,7 +711,7 @@ export default function MDSOralMedicine() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* CBCT Unit */}
             <div className="bg-[#FBFBEE] rounded-2xl shadow-lg overflow-hidden border border-gray-200">
-              <div className="bg-gradient-to-br from-[#006837] to-[#002309] p-12 flex items-center justify-center h-64">
+              <div className="bg-gradient-to-br from-[#0b6d41] to-[#032816] p-12 flex items-center justify-center h-64">
                 <h3 className="text-4xl font-bold text-white text-center">CBCT Unit</h3>
               </div>
               <div className="p-6">
@@ -722,7 +722,7 @@ export default function MDSOralMedicine() {
 
             {/* Digital X-Ray */}
             <div className="bg-[#FBFBEE] rounded-2xl shadow-lg overflow-hidden border border-gray-200">
-              <div className="bg-gradient-to-br from-[#7cb983] to-[#6ba872] p-12 flex items-center justify-center h-64">
+              <div className="bg-gradient-to-br from-[#0f8f56] to-[#0f8f56] p-12 flex items-center justify-center h-64">
                 <h3 className="text-4xl font-bold text-white text-center">Digital X-Ray</h3>
               </div>
               <div className="p-6">
@@ -733,7 +733,7 @@ export default function MDSOralMedicine() {
 
             {/* Diagnostic Lab */}
             <div className="bg-[#FBFBEE] rounded-2xl shadow-lg overflow-hidden border border-gray-200">
-              <div className="bg-gradient-to-br from-[#7cb983] to-[#006837] p-12 flex items-center justify-center h-64">
+              <div className="bg-gradient-to-br from-[#0f8f56] to-[#0b6d41] p-12 flex items-center justify-center h-64">
                 <h3 className="text-4xl font-bold text-white text-center">Diagnostic Lab</h3>
               </div>
               <div className="p-6">
@@ -744,7 +744,7 @@ export default function MDSOralMedicine() {
 
             {/* Simulation Lab */}
             <div className="bg-[#FBFBEE] rounded-2xl shadow-lg overflow-hidden border border-gray-200">
-              <div className="bg-gradient-to-br from-[#006837] to-[#002309] p-12 flex items-center justify-center h-64">
+              <div className="bg-gradient-to-br from-[#0b6d41] to-[#032816] p-12 flex items-center justify-center h-64">
                 <h3 className="text-4xl font-bold text-white text-center">Simulation Learning Lab</h3>
               </div>
               <div className="p-6">
@@ -755,7 +755,7 @@ export default function MDSOralMedicine() {
 
             {/* Research Center */}
             <div className="bg-[#FBFBEE] rounded-2xl shadow-lg overflow-hidden border border-gray-200">
-              <div className="bg-gradient-to-br from-[#7cb983] to-[#6ba872] p-12 flex items-center justify-center h-64">
+              <div className="bg-gradient-to-br from-[#0f8f56] to-[#0f8f56] p-12 flex items-center justify-center h-64">
                 <h3 className="text-4xl font-bold text-white text-center">Research Center</h3>
               </div>
               <div className="p-6">
@@ -766,7 +766,7 @@ export default function MDSOralMedicine() {
 
             {/* Digital Library */}
             <div className="bg-[#FBFBEE] rounded-2xl shadow-lg overflow-hidden border border-gray-200">
-              <div className="bg-gradient-to-br from-[#7cb983] to-[#006837] p-12 flex items-center justify-center h-64">
+              <div className="bg-gradient-to-br from-[#0f8f56] to-[#0b6d41] p-12 flex items-center justify-center h-64">
                 <h3 className="text-4xl font-bold text-white text-center">Digital Learning Commons</h3>
               </div>
               <div className="p-6">
@@ -782,7 +782,7 @@ export default function MDSOralMedicine() {
       <section className="py-16 px-4 bg-[#FBFBEE]">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <div className="text-[#7cb983] uppercase font-bold text-sm mb-4 tracking-wider">Campus Life</div>
+            <div className="text-[#0b6d41] uppercase font-bold text-sm mb-4 tracking-wider">Campus Life</div>
             <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">Photo Gallery</h2>
             <p className="text-lg text-gray-600 max-w-4xl mx-auto">
               Experience the vibrant academic environment at J.K.K. Nattraja Dental College.
@@ -791,42 +791,42 @@ export default function MDSOralMedicine() {
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
             {/* Campus */}
-            <div className="bg-gradient-to-br from-[#006837] to-[#002309] rounded-2xl p-6 md:p-12 flex items-center justify-center h-40 md:h-64 cursor-pointer hover:shadow-xl transition-shadow duration-300">
+            <div className="bg-gradient-to-br from-[#0b6d41] to-[#032816] rounded-2xl p-6 md:p-12 flex items-center justify-center h-40 md:h-64 cursor-pointer hover:shadow-xl transition-shadow duration-300">
               <h3 className="text-xl md:text-4xl font-bold text-white text-center">Campus</h3>
             </div>
 
             {/* Radiology */}
-            <div className="bg-gradient-to-br from-[#7cb983] to-[#6ba872] rounded-2xl p-6 md:p-12 flex items-center justify-center h-40 md:h-64 cursor-pointer hover:shadow-xl transition-shadow duration-300">
+            <div className="bg-gradient-to-br from-[#0f8f56] to-[#0f8f56] rounded-2xl p-6 md:p-12 flex items-center justify-center h-40 md:h-64 cursor-pointer hover:shadow-xl transition-shadow duration-300">
               <h3 className="text-xl md:text-4xl font-bold text-white text-center">Radiology</h3>
             </div>
 
             {/* Library */}
-            <div className="bg-gradient-to-br from-[#7cb983] to-[#006837] rounded-2xl p-6 md:p-12 flex items-center justify-center h-40 md:h-64 cursor-pointer hover:shadow-xl transition-shadow duration-300">
+            <div className="bg-gradient-to-br from-[#0f8f56] to-[#0b6d41] rounded-2xl p-6 md:p-12 flex items-center justify-center h-40 md:h-64 cursor-pointer hover:shadow-xl transition-shadow duration-300">
               <h3 className="text-xl md:text-4xl font-bold text-white text-center">Learning Commons</h3>
             </div>
 
             {/* Conference */}
-            <div className="bg-gradient-to-br from-[#006837] to-[#002309] rounded-2xl p-6 md:p-12 flex items-center justify-center h-40 md:h-64 cursor-pointer hover:shadow-xl transition-shadow duration-300">
+            <div className="bg-gradient-to-br from-[#0b6d41] to-[#032816] rounded-2xl p-6 md:p-12 flex items-center justify-center h-40 md:h-64 cursor-pointer hover:shadow-xl transition-shadow duration-300">
               <h3 className="text-xl md:text-4xl font-bold text-white text-center">Conference</h3>
             </div>
 
             {/* Hostel */}
-            <div className="bg-gradient-to-br from-[#7cb983] to-[#6ba872] rounded-2xl p-6 md:p-12 flex items-center justify-center h-40 md:h-64 cursor-pointer hover:shadow-xl transition-shadow duration-300">
+            <div className="bg-gradient-to-br from-[#0f8f56] to-[#0f8f56] rounded-2xl p-6 md:p-12 flex items-center justify-center h-40 md:h-64 cursor-pointer hover:shadow-xl transition-shadow duration-300">
               <h3 className="text-xl md:text-4xl font-bold text-white text-center">Hostel</h3>
             </div>
 
             {/* Sports */}
-            <div className="bg-gradient-to-br from-[#7cb983] to-[#006837] rounded-2xl p-6 md:p-12 flex items-center justify-center h-40 md:h-64 cursor-pointer hover:shadow-xl transition-shadow duration-300">
+            <div className="bg-gradient-to-br from-[#0f8f56] to-[#0b6d41] rounded-2xl p-6 md:p-12 flex items-center justify-center h-40 md:h-64 cursor-pointer hover:shadow-xl transition-shadow duration-300">
               <h3 className="text-xl md:text-4xl font-bold text-white text-center">Sports</h3>
             </div>
 
             {/* Lab */}
-            <div className="bg-gradient-to-br from-[#006837] to-[#002309] rounded-2xl p-6 md:p-12 flex items-center justify-center h-40 md:h-64 cursor-pointer hover:shadow-xl transition-shadow duration-300">
+            <div className="bg-gradient-to-br from-[#0b6d41] to-[#032816] rounded-2xl p-6 md:p-12 flex items-center justify-center h-40 md:h-64 cursor-pointer hover:shadow-xl transition-shadow duration-300">
               <h3 className="text-xl md:text-4xl font-bold text-white text-center">Learning Lab</h3>
             </div>
 
             {/* Cafeteria */}
-            <div className="bg-gradient-to-br from-[#7cb983] to-[#6ba872] rounded-2xl p-6 md:p-12 flex items-center justify-center h-40 md:h-64 cursor-pointer hover:shadow-xl transition-shadow duration-300">
+            <div className="bg-gradient-to-br from-[#0f8f56] to-[#0f8f56] rounded-2xl p-6 md:p-12 flex items-center justify-center h-40 md:h-64 cursor-pointer hover:shadow-xl transition-shadow duration-300">
               <h3 className="text-xl md:text-4xl font-bold text-white text-center">Cafeteria</h3>
             </div>
           </div>
@@ -834,10 +834,10 @@ export default function MDSOralMedicine() {
       </section>
 
       {/* Career Opportunities Section */}
-      <section className="py-16 px-4 bg-gradient-to-br from-[#006837] to-[#002309]">
+      <section className="py-16 px-4 bg-gradient-to-br from-[#0b6d41] to-[#032816]">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <div className="text-[#7cb983] uppercase font-bold text-sm mb-4 tracking-wider">Your Future</div>
+            <div className="text-[#ffde59] uppercase font-bold text-sm mb-4 tracking-wider">Your Future</div>
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">Career Opportunities</h2>
             <p className="text-lg text-gray-200 max-w-4xl mx-auto">
               An MDS in Oral Medicine & Radiology opens diverse career pathways in clinical practice, diagnostics, and research.
@@ -847,7 +847,7 @@ export default function MDSOralMedicine() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* Private Practice */}
             <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-8 hover:bg-white/20 transition-all duration-300">
-              <div className="bg-[#7cb983] rounded-xl p-4 w-16 h-16 flex items-center justify-center mb-6">
+              <div className="bg-[#ffde59] rounded-xl p-4 w-16 h-16 flex items-center justify-center mb-6">
                 <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a1 1 0 110 2h-3a1 1 0 01-1-1v-2a1 1 0 00-1-1H9a1 1 0 00-1 1v2a1 1 0 01-1 1H4a1 1 0 110-2V4zm3 1h2v2H7V5zm2 4H7v2h2V9zm2-4h2v2h-2V5zm2 4h-2v2h2V9z" clipRule="evenodd" />
                 </svg>
@@ -860,7 +860,7 @@ export default function MDSOralMedicine() {
 
             {/* Academic Career */}
             <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-8 hover:bg-white/20 transition-all duration-300">
-              <div className="bg-[#7cb983] rounded-xl p-4 w-16 h-16 flex items-center justify-center mb-6">
+              <div className="bg-[#ffde59] rounded-xl p-4 w-16 h-16 flex items-center justify-center mb-6">
                 <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z" />
                 </svg>
@@ -873,7 +873,7 @@ export default function MDSOralMedicine() {
 
             {/* Research Scientist */}
             <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-8 hover:bg-white/20 transition-all duration-300">
-              <div className="bg-[#7cb983] rounded-xl p-4 w-16 h-16 flex items-center justify-center mb-6">
+              <div className="bg-[#ffde59] rounded-xl p-4 w-16 h-16 flex items-center justify-center mb-6">
                 <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M7 2a1 1 0 00-.707 1.707L7 4.414v3.758a1 1 0 01-.293.707l-4 4C.817 14.769 2.156 18 4.828 18h10.343c2.673 0 4.012-3.231 2.122-5.121l-4-4A1 1 0 0113 8.172V4.414l.707-.707A1 1 0 0013 2H7zm2 6.172V4h2v4.172a3 3 0 00.879 2.12l1.027 1.028a4 4 0 00-2.171.102l-.47.156a4 4 0 01-2.53 0l-.563-.187a1.993 1.993 0 00-.114-.035l1.063-1.063A3 3 0 009 8.172z" clipRule="evenodd" />
                 </svg>
@@ -886,7 +886,7 @@ export default function MDSOralMedicine() {
 
             {/* Hospital Consultant */}
             <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-8 hover:bg-white/20 transition-all duration-300">
-              <div className="bg-[#7cb983] rounded-xl p-4 w-16 h-16 flex items-center justify-center mb-6">
+              <div className="bg-[#ffde59] rounded-xl p-4 w-16 h-16 flex items-center justify-center mb-6">
                 <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
                 </svg>
@@ -899,7 +899,7 @@ export default function MDSOralMedicine() {
 
             {/* Forensic Odontologist */}
             <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-8 hover:bg-white/20 transition-all duration-300">
-              <div className="bg-[#7cb983] rounded-xl p-4 w-16 h-16 flex items-center justify-center mb-6">
+              <div className="bg-[#ffde59] rounded-xl p-4 w-16 h-16 flex items-center justify-center mb-6">
                 <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z" />
                 </svg>
@@ -912,7 +912,7 @@ export default function MDSOralMedicine() {
 
             {/* Armed Forces */}
             <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-8 hover:bg-white/20 transition-all duration-300">
-              <div className="bg-[#7cb983] rounded-xl p-4 w-16 h-16 flex items-center justify-center mb-6">
+              <div className="bg-[#ffde59] rounded-xl p-4 w-16 h-16 flex items-center justify-center mb-6">
                 <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
@@ -931,7 +931,7 @@ export default function MDSOralMedicine() {
       <section className="py-16 px-4 bg-[#FBFBEE]">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <div className="text-[#7cb983] uppercase font-bold text-sm mb-4 tracking-wider">Investment in Your Future</div>
+            <div className="text-[#0b6d41] uppercase font-bold text-sm mb-4 tracking-wider">Investment in Your Future</div>
             <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">Fee Structure</h2>
             <p className="text-lg text-gray-600 max-w-4xl mx-auto">
               Transparent fee structure with various scholarship opportunities and financial aid options.
@@ -941,7 +941,7 @@ export default function MDSOralMedicine() {
           <div className="overflow-x-auto">
             <div className="bg-[#FBFBEE] rounded-2xl shadow-lg overflow-hidden border border-gray-200 min-w-[640px]">
               {/* Table Header */}
-              <div className="bg-gradient-to-r from-[#006837] to-[#002309] grid grid-cols-4 gap-4 p-4 md:p-6 text-white font-bold">
+              <div className="bg-gradient-to-r from-[#0b6d41] to-[#032816] grid grid-cols-4 gap-4 p-4 md:p-6 text-white font-bold">
                 <div className="text-sm md:text-base">FEE COMPONENT</div>
                 <div className="text-center text-sm md:text-base">YEAR 1</div>
                 <div className="text-center text-sm md:text-base">YEAR 2</div>
@@ -994,9 +994,9 @@ export default function MDSOralMedicine() {
           </div>
 
           {/* Fee Note */}
-          <div className="mt-8 bg-blue-50 border-l-4 border-blue-400 p-6 rounded-r-lg">
+          <div className="mt-8 bg-[#fbfbee] border-l-4 border-[#0f8f56] p-6 rounded-r-lg">
             <div className="flex gap-4">
-              <svg className="w-6 h-6 text-blue-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+              <svg className="w-6 h-6 text-[#0b6d41] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
               </svg>
               <p className="text-gray-700">
@@ -1012,7 +1012,7 @@ export default function MDSOralMedicine() {
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <div className="text-[#7cb983] uppercase font-bold text-sm mb-4 tracking-wider">Have Questions?</div>
+            <div className="text-[#0b6d41] uppercase font-bold text-sm mb-4 tracking-wider">Have Questions?</div>
             <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">Frequently Asked Questions</h2>
             <p className="text-lg text-gray-600">
               Find answers to common questions about our MDS Oral Medicine & Radiology program.
@@ -1024,7 +1024,7 @@ export default function MDSOralMedicine() {
             <details className="bg-[#FBFBEE] rounded-xl shadow-sm border border-gray-200 overflow-hidden group">
               <summary className="flex items-center justify-between p-6 cursor-pointer hover:bg-gray-50">
                 <h3 className="text-lg font-bold text-gray-800">What is the duration of the MDS Oral Medicine & Radiology program?</h3>
-                <svg className="w-6 h-6 text-[#7cb983] transform group-open:rotate-180 transition-transform" fill="currentColor" viewBox="0 0 20 20">
+                <svg className="w-6 h-6 text-[#0b6d41] transform group-open:rotate-180 transition-transform" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                 </svg>
               </summary>
@@ -1039,7 +1039,7 @@ export default function MDSOralMedicine() {
             <details className="bg-[#FBFBEE] rounded-xl shadow-sm border border-gray-200 overflow-hidden group">
               <summary className="flex items-center justify-between p-6 cursor-pointer hover:bg-gray-50">
                 <h3 className="text-lg font-bold text-gray-800">What imaging modalities will I learn during the program?</h3>
-                <svg className="w-6 h-6 text-[#7cb983] transform group-open:rotate-180 transition-transform" fill="currentColor" viewBox="0 0 20 20">
+                <svg className="w-6 h-6 text-[#0b6d41] transform group-open:rotate-180 transition-transform" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                 </svg>
               </summary>
@@ -1054,7 +1054,7 @@ export default function MDSOralMedicine() {
             <details className="bg-[#FBFBEE] rounded-xl shadow-sm border border-gray-200 overflow-hidden group">
               <summary className="flex items-center justify-between p-6 cursor-pointer hover:bg-gray-50">
                 <h3 className="text-lg font-bold text-gray-800">What is the admission process for MDS?</h3>
-                <svg className="w-6 h-6 text-[#7cb983] transform group-open:rotate-180 transition-transform" fill="currentColor" viewBox="0 0 20 20">
+                <svg className="w-6 h-6 text-[#0b6d41] transform group-open:rotate-180 transition-transform" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                 </svg>
               </summary>
@@ -1069,7 +1069,7 @@ export default function MDSOralMedicine() {
             <details className="bg-[#FBFBEE] rounded-xl shadow-sm border border-gray-200 overflow-hidden group">
               <summary className="flex items-center justify-between p-6 cursor-pointer hover:bg-gray-50">
                 <h3 className="text-lg font-bold text-gray-800">What career opportunities are available after completing MDS Oral Medicine & Radiology?</h3>
-                <svg className="w-6 h-6 text-[#7cb983] transform group-open:rotate-180 transition-transform" fill="currentColor" viewBox="0 0 20 20">
+                <svg className="w-6 h-6 text-[#0b6d41] transform group-open:rotate-180 transition-transform" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                 </svg>
               </summary>
@@ -1084,7 +1084,7 @@ export default function MDSOralMedicine() {
             <details className="bg-[#FBFBEE] rounded-xl shadow-sm border border-gray-200 overflow-hidden group">
               <summary className="flex items-center justify-between p-6 cursor-pointer hover:bg-gray-50">
                 <h3 className="text-lg font-bold text-gray-800">Is there stipend provided during the MDS program?</h3>
-                <svg className="w-6 h-6 text-[#7cb983] transform group-open:rotate-180 transition-transform" fill="currentColor" viewBox="0 0 20 20">
+                <svg className="w-6 h-6 text-[#0b6d41] transform group-open:rotate-180 transition-transform" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                 </svg>
               </summary>
@@ -1099,7 +1099,7 @@ export default function MDSOralMedicine() {
             <details className="bg-[#FBFBEE] rounded-xl shadow-sm border border-gray-200 overflow-hidden group">
               <summary className="flex items-center justify-between p-6 cursor-pointer hover:bg-gray-50">
                 <h3 className="text-lg font-bold text-gray-800">What makes JKKN's Oral Medicine & Radiology department unique?</h3>
-                <svg className="w-6 h-6 text-[#7cb983] transform group-open:rotate-180 transition-transform" fill="currentColor" viewBox="0 0 20 20">
+                <svg className="w-6 h-6 text-[#0b6d41] transform group-open:rotate-180 transition-transform" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                 </svg>
               </summary>
@@ -1117,7 +1117,7 @@ export default function MDSOralMedicine() {
       <section className="py-16 px-4 bg-[#FBFBEE]">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <div className="text-[#7cb983] uppercase font-bold text-sm mb-4 tracking-wider">Recognition</div>
+            <div className="text-[#0b6d41] uppercase font-bold text-sm mb-4 tracking-wider">Recognition</div>
             <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">Accreditations & Affiliations</h2>
             <p className="text-lg text-gray-600 max-w-4xl mx-auto">
               Our programs are recognized by leading regulatory bodies ensuring quality education.
@@ -1127,7 +1127,7 @@ export default function MDSOralMedicine() {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-8">
             {/* NDC */}
             <div className="flex flex-col items-center">
-              <div className="bg-gradient-to-br from-[#006837] to-[#002309] rounded-xl p-4 sm:p-8 mb-4 w-20 h-20 sm:w-32 sm:h-32 flex items-center justify-center">
+              <div className="bg-gradient-to-br from-[#0b6d41] to-[#032816] rounded-xl p-4 sm:p-8 mb-4 w-20 h-20 sm:w-32 sm:h-32 flex items-center justify-center">
                 <span className="text-2xl sm:text-4xl font-bold text-white">NDC</span>
               </div>
               <h3 className="text-center font-bold text-gray-800 text-sm sm:text-base">National Dental Commission (formerly Dental Council of India)</h3>
@@ -1135,7 +1135,7 @@ export default function MDSOralMedicine() {
 
             {/* NAAC */}
             <div className="flex flex-col items-center">
-              <div className="bg-gradient-to-br from-[#7cb983] to-[#6ba872] rounded-xl p-4 sm:p-8 mb-4 w-20 h-20 sm:w-32 sm:h-32 flex items-center justify-center">
+              <div className="bg-gradient-to-br from-[#0f8f56] to-[#0f8f56] rounded-xl p-4 sm:p-8 mb-4 w-20 h-20 sm:w-32 sm:h-32 flex items-center justify-center">
                 <span className="text-2xl sm:text-4xl font-bold text-white">NAAC</span>
               </div>
               <h3 className="text-center font-bold text-gray-800 text-sm sm:text-base">NAAC Accredited</h3>
@@ -1143,7 +1143,7 @@ export default function MDSOralMedicine() {
 
             {/* MGR */}
             <div className="flex flex-col items-center">
-              <div className="bg-gradient-to-br from-[#7cb983] to-[#006837] rounded-xl p-4 sm:p-8 mb-4 w-20 h-20 sm:w-32 sm:h-32 flex items-center justify-center">
+              <div className="bg-gradient-to-br from-[#0f8f56] to-[#0b6d41] rounded-xl p-4 sm:p-8 mb-4 w-20 h-20 sm:w-32 sm:h-32 flex items-center justify-center">
                 <span className="text-2xl sm:text-4xl font-bold text-white">MGR</span>
               </div>
               <h3 className="text-center font-bold text-gray-800 text-sm sm:text-base">TN Dr. MGR Medical University</h3>
@@ -1151,7 +1151,7 @@ export default function MDSOralMedicine() {
 
             {/* IDA */}
             <div className="flex flex-col items-center">
-              <div className="bg-gradient-to-br from-[#006837] to-[#002309] rounded-xl p-4 sm:p-8 mb-4 w-20 h-20 sm:w-32 sm:h-32 flex items-center justify-center">
+              <div className="bg-gradient-to-br from-[#0b6d41] to-[#032816] rounded-xl p-4 sm:p-8 mb-4 w-20 h-20 sm:w-32 sm:h-32 flex items-center justify-center">
                 <span className="text-2xl sm:text-4xl font-bold text-white">IDA</span>
               </div>
               <h3 className="text-center font-bold text-gray-800 text-sm sm:text-base">Indian Dental Association</h3>
@@ -1161,7 +1161,7 @@ export default function MDSOralMedicine() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-4 bg-gradient-to-r from-[#7cb983] to-[#6ba872]">
+      <section className="py-20 px-4 bg-gradient-to-r from-[#0f8f56] to-[#0f8f56]">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
             Begin Your Journey to Becoming an Oral Medicine Specialist
@@ -1170,10 +1170,10 @@ export default function MDSOralMedicine() {
             Join our prestigious MDS program and transform your career with world-class training at J.K.K. Nattraja Dental College.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <a href="/pdf/brochure.pdf" download className="bg-white text-[#7cb983] hover:bg-gray-100 font-bold px-10 py-4 rounded-lg text-lg transition-all duration-300 shadow-lg">
+            <a href="/pdf/brochure.pdf" download className="bg-white text-[#0b6d41] hover:bg-gray-100 font-bold px-10 py-4 rounded-lg text-lg transition-all duration-300 shadow-lg">
               Download Prospectus
             </a>
-            <a href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_medium=organic&utm_campaign=academics-details-of-academic-programs-mds-oral-medicine" target="_blank" rel="noopener noreferrer" className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#7cb983] font-bold px-10 py-4 rounded-lg text-lg transition-all duration-300">
+            <a href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_medium=organic&utm_campaign=academics-details-of-academic-programs-mds-oral-medicine" target="_blank" rel="noopener noreferrer" className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#0b6d41] font-bold px-10 py-4 rounded-lg text-lg transition-all duration-300">
               Apply Online
             </a>
           </div>

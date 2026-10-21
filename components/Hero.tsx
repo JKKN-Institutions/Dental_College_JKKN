@@ -20,13 +20,13 @@ export default function Hero() {
     }
   };
   return (
-    <section className="bg-[#006837] text-white py-10 sm:py-12 md:py-16 lg:py-20 px-4 sm:px-6">
+    <section className="bg-[#0b6d41] text-white py-10 sm:py-12 md:py-16 lg:py-20 px-4 sm:px-6">
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-2 gap-8 sm:gap-10 md:gap-12 lg:gap-16 items-center">
           {/* Left Content */}
           <div className="space-y-6 sm:space-y-8">
             {/* Badge */}
-            <div className="inline-flex items-center gap-2 sm:gap-2.5 bg-[#002309] px-3 sm:px-4 py-2 sm:py-2.5 rounded-full">
+            <div className="inline-flex items-center gap-2 sm:gap-2.5 bg-[#032816] px-3 sm:px-4 py-2 sm:py-2.5 rounded-full">
               <Trophy className="w-5 h-5 sm:w-6 sm:h-6 text-yellow-400" />
               <span className="text-white text-xs sm:text-sm font-semibold">NDC Approved | NAAC Accredited</span>
             </div>
@@ -34,7 +34,7 @@ export default function Hero() {
             {/* Main Heading */}
             <h1 className="text-2xl xs:text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight">
               JKKN Dental College & Hospital —{' '}
-              <span className="text-[#7cb983]">NDC-Approved Dental College in Tamil Nadu</span>
+              <span className="text-[#ffde59]">NDC-Approved Dental College in Tamil Nadu</span>
             </h1>
 
             {/* Description */}
@@ -45,16 +45,16 @@ export default function Hero() {
             {/* Stats */}
             <div className="grid grid-cols-3 gap-4 sm:gap-6 md:gap-8 lg:gap-12">
               <div className="text-center sm:text-left">
-                <div className="text-2xl xs:text-3xl sm:text-4xl lg:text-5xl font-bold text-[#7cb983]">500+</div>
-                <div className="text-xs sm:text-sm text-gray-300 uppercase mt-1">Learners</div>
+                <div className="text-2xl xs:text-3xl sm:text-4xl lg:text-5xl font-bold text-[#ffde59]">500+</div>
+                <div className="text-xs sm:text-sm text-gray-200 uppercase mt-1">Learners</div>
               </div>
               <div className="text-center sm:text-left">
-                <div className="text-2xl xs:text-3xl sm:text-4xl lg:text-5xl font-bold text-[#7cb983]">200+</div>
-                <div className="text-xs sm:text-sm text-gray-300 uppercase mt-1">Dental Chairs</div>
+                <div className="text-2xl xs:text-3xl sm:text-4xl lg:text-5xl font-bold text-[#ffde59]">200+</div>
+                <div className="text-xs sm:text-sm text-gray-200 uppercase mt-1">Dental Chairs</div>
               </div>
               <div className="text-center sm:text-left">
-                <div className="text-2xl xs:text-3xl sm:text-4xl lg:text-5xl font-bold text-[#7cb983]">93.9%</div>
-                <div className="text-xs sm:text-sm text-gray-300 uppercase mt-1">Placed or higher studies 2024-25</div>
+                <div className="text-2xl xs:text-3xl sm:text-4xl lg:text-5xl font-bold text-[#ffde59]">93.9%</div>
+                <div className="text-xs sm:text-sm text-gray-200 uppercase mt-1">Placed or higher studies 2024-25</div>
               </div>
             </div>
 
@@ -67,14 +67,14 @@ export default function Hero() {
                 sourcePage="home-hero-btn"
                 fallbackHref="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_medium=organic&utm_campaign=components-hero"
                 fallbackLabel="Start Your Application →"
-                className="md:hidden bg-[#7cb983] hover:bg-[#6ba872] active:bg-[#5a9761] text-white font-bold py-3 sm:py-3.5 px-6 sm:px-8 rounded-full transition-all duration-300 text-center text-sm sm:text-base min-h-[44px] flex items-center justify-center touch-manipulation transform hover:scale-105 active:scale-95"
+                className="md:hidden bg-[#ffde59] hover:bg-[#e6c64d] active:bg-[#e6c64d] text-[#032816] font-bold py-3 sm:py-3.5 px-6 sm:px-8 rounded-full transition-all duration-300 text-center text-sm sm:text-base min-h-[44px] flex items-center justify-center touch-manipulation transform hover:scale-105 active:scale-95"
               >
                 Get a Call Back
               </EnquiryButton>
               <Link
                 href="#academic-programs"
                 onClick={scrollToSection}
-                className="border-2 border-white hover:bg-white hover:text-[#006837] active:bg-gray-100 text-white font-bold py-3 sm:py-3.5 px-6 sm:px-8 rounded-full transition-all duration-300 text-center text-sm sm:text-base min-h-[44px] flex items-center justify-center touch-manipulation"
+                className="border-2 border-white hover:bg-white hover:text-[#0b6d41] active:bg-gray-100 text-white font-bold py-3 sm:py-3.5 px-6 sm:px-8 rounded-full transition-all duration-300 text-center text-sm sm:text-base min-h-[44px] flex items-center justify-center touch-manipulation"
               >
                 Explore Programs
               </Link>
@@ -95,7 +95,7 @@ export default function Hero() {
               />
             </div>
           </div>
-          <div className="hidden md:block rounded-2xl sm:rounded-3xl bg-[#0b3d1f]/60 border border-white/15 shadow-2xl p-6 lg:p-7">
+          <div className="hidden md:block rounded-2xl sm:rounded-3xl bg-[#032816]/60 border border-white/15 shadow-2xl p-6 lg:p-7">
             <h2 className="text-xl lg:text-2xl font-bold text-white leading-snug">Get BDS / MDS fee and admission details</h2>
             <p className="mt-1 mb-5 text-sm text-gray-200">Fill 3 details. Our admission team will call you within 24 hours.</p>
             <DentalEnquiryForm sourcePage="home-hero" compact />

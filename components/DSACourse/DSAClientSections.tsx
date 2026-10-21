@@ -36,7 +36,7 @@ export function ScrollProgress() {
       className="fixed top-0 left-0 h-[3px] z-[9999]"
       style={{
         width: `${progress}%`,
-        background: 'linear-gradient(90deg, #006837, #facc15, #7CB983)',
+        background: 'linear-gradient(90deg, #0b6d41, #facc15, #0f8f56)',
         transition: 'width 0.1s linear',
       }}
     />
@@ -172,8 +172,8 @@ export function FAQAccordion({
             className={cn(
               'border rounded-xl mb-2.5 overflow-hidden transition-all bg-white',
               isActive
-                ? 'border-[#7CB983] shadow-sm'
-                : 'border-gray-200 hover:border-[#7CB983]'
+                ? 'border-[#0f8f56] shadow-sm'
+                : 'border-gray-200 hover:border-[#0f8f56]'
             )}
           >
             <button
@@ -185,7 +185,7 @@ export function FAQAccordion({
                 className={cn(
                   'w-7 h-7 rounded-lg flex items-center justify-center text-xs transition-all duration-300 shrink-0 ml-3',
                   isActive
-                    ? 'bg-[#006837] text-white rotate-180'
+                    ? 'bg-[#0b6d41] text-white rotate-180'
                     : 'bg-gray-100'
                 )}
               >
@@ -221,7 +221,7 @@ export function MobileStickyBarCTA({
         <a
           href={`tel:+91${phone}`}
           className="flex-1 flex items-center justify-center gap-1.5 py-[13px] rounded-lg font-bold text-sm text-white no-underline"
-          style={{ background: 'linear-gradient(135deg, #006837, #1B5E20)' }}
+          style={{ background: 'linear-gradient(135deg, #0b6d41, #0b6d41)' }}
         >
           Call Now
         </a>

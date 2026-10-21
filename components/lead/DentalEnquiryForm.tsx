@@ -218,7 +218,7 @@ export default function DentalEnquiryForm({
       <button
         type="submit"
         disabled={isPending}
-        className="w-full bg-orange-500 hover:bg-orange-600 disabled:opacity-60 text-white font-semibold py-4 rounded-full text-base transition-colors"
+        className="w-full bg-[#ffde59] hover:bg-[#e6c64d] disabled:opacity-60 text-[#032816] font-semibold py-4 rounded-full text-base transition-colors"
       >
         {isPending ? "Submitting…" : compact ? "Get a Call Back" : "Submit Enquiry — Get a Call Back"}
       </button>

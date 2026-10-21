@@ -36,7 +36,7 @@ export default async function EventsStories() {
     <section className="py-12 sm:py-16 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="mb-8 sm:mb-10">
-          <p className="text-[#006837] text-xs sm:text-sm font-bold uppercase tracking-wider mb-2">
+          <p className="text-[#0b6d41] text-xs sm:text-sm font-bold uppercase tracking-wider mb-2">
             Latest Events
           </p>
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">
@@ -53,7 +53,7 @@ export default async function EventsStories() {
               className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col"
             >
               {/* Image */}
-              <div className="relative h-48 bg-[#006837]/10 overflow-hidden">
+              <div className="relative h-48 bg-[#0b6d41]/10 overflow-hidden">
                 {event.image_url ? (
                   <Image
                     src={event.image_url}
@@ -64,7 +64,7 @@ export default async function EventsStories() {
                   />
                 ) : (
                   <div className="absolute inset-0 flex items-center justify-center">
-                    <svg className="w-12 h-12 text-[#006837]/30" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg className="w-12 h-12 text-[#0b6d41]/30" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                     </svg>
                   </div>
@@ -74,7 +74,7 @@ export default async function EventsStories() {
               {/* Content */}
               <div className="p-5 flex flex-col flex-1">
                 {event.event_date && (
-                  <p className="text-xs font-semibold text-[#006837] mb-2">
+                  <p className="text-xs font-semibold text-[#0b6d41] mb-2">
                     {new Date(event.event_date).toLocaleDateString('en-IN', {
                       day: 'numeric',
                       month: 'long',
@@ -82,7 +82,7 @@ export default async function EventsStories() {
                     })}
                   </p>
                 )}
-                <h3 className="text-base font-bold text-gray-900 mb-2 group-hover:text-[#006837] transition-colors line-clamp-2">
+                <h3 className="text-base font-bold text-gray-900 mb-2 group-hover:text-[#0b6d41] transition-colors line-clamp-2">
                   {event.title}
                 </h3>
                 {event.venue && (
@@ -99,7 +99,7 @@ export default async function EventsStories() {
                     {event.description}
                   </p>
                 )}
-                <span className="mt-4 text-xs font-semibold text-[#006837] group-hover:underline">
+                <span className="mt-4 text-xs font-semibold text-[#0b6d41] group-hover:underline">
                   Read more →
                 </span>
               </div>

@@ -50,7 +50,7 @@ export function PdfRedirect({ pdfUrl, heading }: PdfRedirectProps) {
 
   // Return a loading page with H1 for SEO while redirecting
   return (
-    <div className="min-h-screen flex items-center justify-center bg-[#FBF8F3]">
+    <div className="min-h-screen flex items-center justify-center bg-[#fbfbee]">
       <div className="text-center">
         {heading && <h1 className="text-3xl md:text-4xl font-bold text-black mb-4">{heading}</h1>}
         <p className="text-gray-600">Loading document...</p>

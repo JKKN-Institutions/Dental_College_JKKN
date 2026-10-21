@@ -76,15 +76,15 @@ export default async function FacultyPage() {
       <StructuredData data={facultyBreadcrumbSchema} />
       <StructuredData data={facultyWebPageSchema} />
       <Header />
-      <main className="min-h-screen bg-[#FBF8F3]">
+      <main className="min-h-screen bg-[#fbfbee]">
         {/* Hero */}
-        <section className="bg-[#1B5E20] py-12 px-4">
+        <section className="bg-[#0b6d41] py-12 px-4">
           <div className="max-w-6xl mx-auto text-center">
-            <p className="text-[#FFC107] text-xs font-semibold tracking-widest uppercase mb-2">
+            <p className="text-[#ffde59] text-xs font-semibold tracking-widest uppercase mb-2">
               JKKN Dental College &amp; Hospital
             </p>
             <h1 className="text-3xl sm:text-4xl font-bold text-white">Our Senior Learners</h1>
-            <p className="text-green-200 mt-3 text-sm sm:text-base max-w-xl mx-auto">
+            <p className="text-[#0b6d41] mt-3 text-sm sm:text-base max-w-xl mx-auto">
               Experienced specialists guiding the next generation of dental professionals.
             </p>
           </div>
@@ -105,7 +105,7 @@ export default async function FacultyPage() {
                 const card = (
                   <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-4 flex flex-col items-center text-center hover:shadow-md transition">
                     {/* Photo / Initials */}
-                    <div className="w-28 h-28 rounded-full overflow-hidden mb-4 flex-shrink-0 bg-[#1B5E20] flex items-center justify-center">
+                    <div className="w-28 h-28 rounded-full overflow-hidden mb-4 flex-shrink-0 bg-[#0b6d41] flex items-center justify-center">
                       {m.photo_url ? (
                         <img
                           src={m.photo_url}
@@ -122,7 +122,7 @@ export default async function FacultyPage() {
                       {m.name}
                     </p>
                     {m.designation && (
-                      <p className="text-xs text-[#1B5E20] font-medium mt-0.5">
+                      <p className="text-xs text-[#0b6d41] font-medium mt-0.5">
                         {m.designation}
                       </p>
                     )}

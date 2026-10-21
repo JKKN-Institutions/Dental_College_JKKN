@@ -75,7 +75,7 @@ export default function MDSDirectAnswers() {
       <div className="max-w-5xl mx-auto">
         {/* Badge */}
         <div className="flex justify-center mb-6">
-          <div className="inline-flex items-center gap-2 bg-[#7cb983] rounded-full px-6 py-2">
+          <div className="inline-flex items-center gap-2 bg-[#ffde59] rounded-full px-6 py-2">
             <span className="text-white font-semibold text-sm uppercase">
               Quick Answers
             </span>
@@ -84,7 +84,7 @@ export default function MDSDirectAnswers() {
 
         <h2
           id="mds-direct-answers-heading"
-          className="text-3xl md:text-4xl font-bold text-[#006837] text-center mb-4"
+          className="text-3xl md:text-4xl font-bold text-[#0b6d41] text-center mb-4"
         >
           MDS Tamil Nadu — Quick Answers
         </h2>
@@ -97,9 +97,9 @@ export default function MDSDirectAnswers() {
           {answerBlocks.map((block, idx) => (
             <article
               key={idx}
-              className="bg-white border-l-4 border-[#7cb983] rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow duration-300"
+              className="bg-white border-l-4 border-[#0f8f56] rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow duration-300"
             >
-              <h3 className="text-lg md:text-xl font-bold text-[#006837] mb-3">
+              <h3 className="text-lg md:text-xl font-bold text-[#0b6d41] mb-3">
                 {block.question}
               </h3>
               <p className="mds-direct-answer text-gray-700 leading-relaxed">

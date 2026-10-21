@@ -32,30 +32,30 @@ export default function FaqAccordion({
     <section id={id} className="bg-[#FBFBEE] py-14 px-4 sm:py-16">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-10">
-          <span className="block text-[#7cb983] text-xs sm:text-sm font-bold uppercase tracking-wider mb-3">
+          <span className="block text-[#0b6d41] text-xs sm:text-sm font-bold uppercase tracking-wider mb-3">
             FAQs
           </span>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#006837] leading-tight">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#0b6d41] leading-tight">
             {title}
           </h2>
           {intro ? (
             <p className="text-gray-600 text-sm sm:text-base leading-relaxed mt-4">{intro}</p>
           ) : null}
-          <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mt-6" />
+          <div className="w-14 h-1 bg-[#ffde59] rounded mx-auto mt-6" />
         </div>
 
         <div className="space-y-3 text-left">
           {faqs.map((faq) => (
             <details
               key={faq.q}
-              className="group bg-white border border-gray-200 rounded-xl overflow-hidden open:border-[#7cb983] hover:shadow-md transition-shadow duration-300"
+              className="group bg-white border border-gray-200 rounded-xl overflow-hidden open:border-[#0f8f56] hover:shadow-md transition-shadow duration-300"
             >
               <summary className="flex items-center justify-between gap-4 px-5 py-4 sm:px-6 sm:py-5 cursor-pointer list-none min-h-[56px] hover:bg-gray-50 transition-colors duration-200 [&::-webkit-details-marker]:hidden">
-                <h3 className="text-sm sm:text-base md:text-lg font-bold text-[#006837] leading-snug">
+                <h3 className="text-sm sm:text-base md:text-lg font-bold text-[#0b6d41] leading-snug">
                   {faq.q}
                 </h3>
                 <svg
-                  className="w-5 h-5 sm:w-6 sm:h-6 text-[#7cb983] flex-shrink-0 transition-transform duration-300 group-open:rotate-180"
+                  className="w-5 h-5 sm:w-6 sm:h-6 text-[#0b6d41] flex-shrink-0 transition-transform duration-300 group-open:rotate-180"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -65,7 +65,7 @@ export default function FaqAccordion({
                   <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
                 </svg>
               </summary>
-              <div className="px-5 pb-5 pt-2 sm:px-6 sm:pb-6 border-t border-[#7cb983]/20">
+              <div className="px-5 pb-5 pt-2 sm:px-6 sm:pb-6 border-t border-[#0f8f56]/20">
                 <p className="text-gray-600 text-sm sm:text-base leading-relaxed">{faq.a}</p>
               </div>
             </details>

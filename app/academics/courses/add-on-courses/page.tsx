@@ -86,12 +86,12 @@ export default function AddOnCourses() {
       <Header />
 
       {/* Hero Banner */}
-      <section className="bg-[#006837] py-16 px-4">
+      <section className="bg-[#0b6d41] py-16 px-4">
         <div className="max-w-5xl mx-auto text-center">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 uppercase tracking-wide">
             ADD-ON COURSES
           </h1>
-          <div className="w-20 h-1 bg-[#7cb983] mx-auto mb-6 rounded-full" />
+          <div className="w-20 h-1 bg-[#ffde59] mx-auto mb-6 rounded-full" />
           <h2 className="text-xl md:text-2xl font-semibold text-white/90 mb-4">
             Expand Your Expertise in Dentistry
           </h2>
@@ -107,24 +107,24 @@ export default function AddOnCourses() {
           {/* Completed Course */}
           <section>
             <div className="flex items-center gap-3 mb-6">
-              <h3 className="text-2xl font-bold text-[#006837]">Completed Course</h3>
-              <span className="bg-[#7cb983] text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">
+              <h3 className="text-2xl font-bold text-[#0b6d41]">Completed Course</h3>
+              <span className="bg-[#ffde59] text-[#032816] text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">
                 Completed
               </span>
             </div>
 
             <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 md:p-8">
               <div className="flex items-start gap-3 mb-4">
-                <div className="flex-shrink-0 w-7 h-7 rounded-full bg-[#7cb983] flex items-center justify-center mt-0.5">
+                <div className="flex-shrink-0 w-7 h-7 rounded-full bg-[#ffde59] flex items-center justify-center mt-0.5">
                   <Check className="w-4 h-4 text-white" />
                 </div>
-                <p className="text-base font-semibold text-[#002309]">
+                <p className="text-base font-semibold text-[#032816]">
                   Workshop on Laser Aesthetics (Successfully Conducted – December 2024)
                 </p>
               </div>
               <div className="pl-10">
                 <p className="text-gray-700 leading-relaxed text-sm md:text-base">
-                  <span className="font-bold text-[#006837]">Venue:</span>{' '}
+                  <span className="font-bold text-[#0b6d41]">Venue:</span>{' '}
                   Senthuraja Hall and Brainstorm Room, JKKN Dental College &amp; Hospital Certification Provided This workshop provided participants with comprehensive training on laser applications in dentistry, including clinical applications, patient safety, and hands-on skill development. The course included brainstorming sessions, live demonstrations, and assessments to ensure practical learning outcomes.
                 </p>
               </div>
@@ -134,7 +134,7 @@ export default function AddOnCourses() {
           {/* Past Courses */}
           <section>
             <div className="flex items-center gap-3 mb-6">
-              <h3 className="text-2xl font-bold text-[#006837]">Past Courses</h3>
+              <h3 className="text-2xl font-bold text-[#0b6d41]">Past Courses</h3>
               <span className="bg-gray-500 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">
                 Conducted
               </span>
@@ -143,7 +143,7 @@ export default function AddOnCourses() {
             {/* Course 1: Implantology */}
             <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden mb-6">
               {/* Course Header */}
-              <div className="bg-[#006837] px-6 py-4 flex items-start gap-4">
+              <div className="bg-[#0b6d41] px-6 py-4 flex items-start gap-4">
                 <div className="flex-shrink-0 w-10 h-10 rounded-full bg-white/20 flex items-center justify-center font-bold text-white text-lg">
                   1
                 </div>
@@ -158,30 +158,30 @@ export default function AddOnCourses() {
               <div className="p-6 md:p-8 grid md:grid-cols-2 gap-8">
                 {/* Coordinators */}
                 <div>
-                  <p className="text-sm font-bold text-[#006837] uppercase tracking-wide mb-3">Course coordinator:</p>
+                  <p className="text-sm font-bold text-[#0b6d41] uppercase tracking-wide mb-3">Course coordinator:</p>
                   <ul className="space-y-1 text-gray-700 text-sm md:text-base mb-4">
                     <li>Dr. Rekha (Oral Surgery),</li>
                     <li>Dr. Sasikumar(Periodontics),</li>
                     <li>Dr. Dhinesh Kumar (Prosthodontics),</li>
                   </ul>
                   <p className="text-sm md:text-base text-gray-700">
-                    <span className="font-bold text-[#006837]">co-coordinator:</span> Dr.Nivethitha
+                    <span className="font-bold text-[#0b6d41]">co-coordinator:</span> Dr.Nivethitha
                   </p>
 
-                  <div className="mt-6 p-4 bg-[#FBFBEE] rounded-xl border border-[#7cb983]/30">
-                    <p className="text-sm font-bold text-[#006837] mb-2">For Registration &amp; Inquiries:</p>
-                    <p className="font-bold text-[#002309] text-sm">+91 9443236200 | +91 9842796293</p>
+                  <div className="mt-6 p-4 bg-[#FBFBEE] rounded-xl border border-[#0f8f56]/30">
+                    <p className="text-sm font-bold text-[#0b6d41] mb-2">For Registration &amp; Inquiries:</p>
+                    <p className="font-bold text-[#032816] text-sm">+91 9443236200 | +91 9842796293</p>
                     <p className="text-gray-600 text-sm">hodprosthodontics@jkkn.ac.in</p>
                   </div>
                 </div>
 
                 {/* Key Highlights */}
                 <div>
-                  <p className="text-sm font-bold text-[#006837] uppercase tracking-wide mb-3">Key Highlights:</p>
+                  <p className="text-sm font-bold text-[#0b6d41] uppercase tracking-wide mb-3">Key Highlights:</p>
                   <ul className="space-y-2">
                     {keyHighlights.map((item, i) => (
                       <li key={i} className="flex items-start gap-2 text-sm md:text-base text-gray-700">
-                        <div className="flex-shrink-0 w-5 h-5 rounded-full bg-[#7cb983] flex items-center justify-center mt-0.5">
+                        <div className="flex-shrink-0 w-5 h-5 rounded-full bg-[#ffde59] flex items-center justify-center mt-0.5">
                           <Check className="w-3 h-3 text-white" />
                         </div>
                         {item}
@@ -193,16 +193,16 @@ export default function AddOnCourses() {
             </div>
 
             {/* Dental Photography Course */}
-            <div className="bg-white rounded-2xl shadow-sm border border-[#7cb983]/30 p-6 md:p-8 mb-6">
-              <p className="text-base font-bold text-[#006837] mb-4">Dental photography course — dates to be announced</p>
+            <div className="bg-white rounded-2xl shadow-sm border border-[#0f8f56]/30 p-6 md:p-8 mb-6">
+              <p className="text-base font-bold text-[#0b6d41] mb-4">Dental photography course — dates to be announced</p>
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
-                  <p className="text-sm font-bold text-[#006837] mb-2">Course coordinator:</p>
+                  <p className="text-sm font-bold text-[#0b6d41] mb-2">Course coordinator:</p>
                   <p className="text-gray-700 text-sm md:text-base">Dr. Dhinesh HOD Prosthodontics,</p>
                 </div>
                 <div>
                   <p className="text-gray-700 text-sm md:text-base">
-                    <span className="font-bold text-[#006837]">co-coordinator:</span> Dr.Vijay Thiyagarajan Oral Surgery
+                    <span className="font-bold text-[#0b6d41]">co-coordinator:</span> Dr.Vijay Thiyagarajan Oral Surgery
                   </p>
                 </div>
               </div>
@@ -211,7 +211,7 @@ export default function AddOnCourses() {
             {/* Course 2: Composite Restoration */}
             <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden mb-8">
               {/* Course Header */}
-              <div className="bg-[#006837] px-6 py-4 flex items-start gap-4">
+              <div className="bg-[#0b6d41] px-6 py-4 flex items-start gap-4">
                 <div className="flex-shrink-0 w-10 h-10 rounded-full bg-white/20 flex items-center justify-center font-bold text-white text-lg">
                   2
                 </div>
@@ -227,17 +227,17 @@ export default function AddOnCourses() {
 
               <div className="p-6 md:p-8">
                 {/* Course Structure */}
-                <p className="text-sm font-bold text-[#006837] uppercase tracking-wide mb-4">Course Structure:</p>
+                <p className="text-sm font-bold text-[#0b6d41] uppercase tracking-wide mb-4">Course Structure:</p>
                 <div className="grid md:grid-cols-3 gap-4 mb-8">
                   {modules.map((mod) => (
-                    <div key={mod.number} className="bg-[#FBFBEE] rounded-xl border border-[#7cb983]/30 p-4">
+                    <div key={mod.number} className="bg-[#FBFBEE] rounded-xl border border-[#0f8f56]/30 p-4">
                       <div className="flex items-center gap-2 mb-2">
-                        <div className="w-7 h-7 rounded-full bg-[#006837] flex items-center justify-center flex-shrink-0">
+                        <div className="w-7 h-7 rounded-full bg-[#0b6d41] flex items-center justify-center flex-shrink-0">
                           <span className="text-white text-xs font-bold">{mod.number}</span>
                         </div>
-                        <p className="font-bold text-[#006837] text-sm">Module {mod.number}: {mod.title}</p>
+                        <p className="font-bold text-[#0b6d41] text-sm">Module {mod.number}: {mod.title}</p>
                       </div>
-                      <p className="text-xs text-[#7cb983] font-semibold mb-2">Duration: {mod.duration}</p>
+                      <p className="text-xs text-[#0b6d41] font-semibold mb-2">Duration: {mod.duration}</p>
                       <p className="text-gray-600 text-xs leading-relaxed">
                         <span className="font-semibold">Objective:</span> {mod.objective}
                       </p>
@@ -248,15 +248,15 @@ export default function AddOnCourses() {
                 {/* Overall Expected Outcomes */}
                 <div className="mb-6">
                   <div className="flex items-center gap-2 mb-3">
-                    <div className="w-6 h-6 rounded-full bg-[#7cb983] flex items-center justify-center flex-shrink-0">
+                    <div className="w-6 h-6 rounded-full bg-[#ffde59] flex items-center justify-center flex-shrink-0">
                       <Check className="w-3.5 h-3.5 text-white" />
                     </div>
-                    <p className="font-bold text-[#006837] text-sm md:text-base">Overall Expected Outcomes:</p>
+                    <p className="font-bold text-[#0b6d41] text-sm md:text-base">Overall Expected Outcomes:</p>
                   </div>
                   <ul className="space-y-2 pl-2">
                     {expectedOutcomes.map((item, i) => (
                       <li key={i} className="flex items-start gap-2 text-sm md:text-base text-gray-700">
-                        <Check className="w-4 h-4 text-[#7cb983] flex-shrink-0 mt-0.5" />
+                        <Check className="w-4 h-4 text-[#0b6d41] flex-shrink-0 mt-0.5" />
                         {item}
                       </li>
                     ))}
@@ -264,9 +264,9 @@ export default function AddOnCourses() {
                 </div>
 
                 {/* Contact */}
-                <div className="p-4 bg-[#FBFBEE] rounded-xl border border-[#7cb983]/30 inline-block">
-                  <p className="text-sm font-bold text-[#006837] mb-1">For Registration &amp; Inquiries:</p>
-                  <p className="font-bold text-[#002309] text-sm">Dr. Chris Susan – +91 9895223882</p>
+                <div className="p-4 bg-[#FBFBEE] rounded-xl border border-[#0f8f56]/30 inline-block">
+                  <p className="text-sm font-bold text-[#0b6d41] mb-1">For Registration &amp; Inquiries:</p>
+                  <p className="font-bold text-[#032816] text-sm">Dr. Chris Susan – +91 9895223882</p>
                 </div>
               </div>
             </div>
@@ -277,11 +277,11 @@ export default function AddOnCourses() {
 
             {/* Why Choose */}
             <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6">
-              <p className="text-base font-bold text-[#006837] mb-4">Why Choose Our Add-On Courses?</p>
+              <p className="text-base font-bold text-[#0b6d41] mb-4">Why Choose Our Add-On Courses?</p>
               <ul className="space-y-2">
                 {whyChoose.map((item, i) => (
                   <li key={i} className="flex items-start gap-2 text-sm text-gray-700">
-                    <Check className="w-4 h-4 text-[#7cb983] flex-shrink-0 mt-0.5" />
+                    <Check className="w-4 h-4 text-[#0b6d41] flex-shrink-0 mt-0.5" />
                     {item}
                   </li>
                 ))}
@@ -290,14 +290,14 @@ export default function AddOnCourses() {
 
             {/* Eligibility */}
             <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6">
-              <p className="text-base font-bold text-[#006837] mb-4">Eligibility</p>
+              <p className="text-base font-bold text-[#0b6d41] mb-4">Eligibility</p>
               <ul className="space-y-2">
                 <li className="flex items-start gap-2 text-sm text-gray-700">
-                  <div className="w-1.5 h-1.5 rounded-full bg-[#7cb983] flex-shrink-0 mt-2" />
+                  <div className="w-1.5 h-1.5 rounded-full bg-[#ffde59] flex-shrink-0 mt-2" />
                   Open to BDS learners and Interns
                 </li>
                 <li className="flex items-start gap-2 text-sm text-gray-700">
-                  <div className="w-1.5 h-1.5 rounded-full bg-[#7cb983] flex-shrink-0 mt-2" />
+                  <div className="w-1.5 h-1.5 rounded-full bg-[#ffde59] flex-shrink-0 mt-2" />
                   Some courses may require prior clinical experience
                 </li>
               </ul>
@@ -305,11 +305,11 @@ export default function AddOnCourses() {
 
             {/* Enrollment Process */}
             <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6">
-              <p className="text-base font-bold text-[#006837] mb-4">Enrollment Process</p>
+              <p className="text-base font-bold text-[#0b6d41] mb-4">Enrollment Process</p>
               <ol className="space-y-3">
                 {enrollmentSteps.map((step, i) => (
                   <li key={i} className="flex items-start gap-3 text-sm text-gray-700">
-                    <div className="flex-shrink-0 w-6 h-6 rounded-full bg-[#006837] text-white flex items-center justify-center text-xs font-bold">
+                    <div className="flex-shrink-0 w-6 h-6 rounded-full bg-[#0b6d41] text-white flex items-center justify-center text-xs font-bold">
                       {i + 1}
                     </div>
                     {step}
@@ -326,7 +326,7 @@ export default function AddOnCourses() {
               href="/pdf/Add-on-Course-Implant-program-2025.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-[#006837] hover:bg-[#005a2f] text-white font-bold py-3 px-8 rounded-xl transition-colors duration-200 shadow-sm"
+              className="inline-block bg-[#0b6d41] hover:bg-[#005a2f] text-white font-bold py-3 px-8 rounded-xl transition-colors duration-200 shadow-sm"
             >
               Implant program-2025
             </a>

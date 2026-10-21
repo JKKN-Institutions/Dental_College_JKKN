@@ -77,12 +77,12 @@ export default function Auditorium() {
       <Header />
 
       {/* Hero Banner */}
-      <section className="bg-[#006837] py-16 px-4">
+      <section className="bg-[#0b6d41] py-16 px-4">
         <div className="max-w-6xl mx-auto">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
             Auditorium
           </h1>
-          <div className="h-1 w-24 bg-[#7cb983] rounded-full" />
+          <div className="h-1 w-24 bg-[#ffde59] rounded-full" />
         </div>
       </section>
 
@@ -121,7 +121,7 @@ export default function Auditorium() {
       {/* Intro Paragraph */}
       <section className="bg-[#FBFBEE] py-10 px-4">
         <div className="max-w-6xl mx-auto">
-          <p className="text-base md:text-lg leading-relaxed text-gray-700 border-l-4 border-[#7cb983] pl-6">
+          <p className="text-base md:text-lg leading-relaxed text-gray-700 border-l-4 border-[#0f8f56] pl-6">
             <strong>Our auditorium is not just a venue—it&apos;s a testament to JKKN Institutions&apos; commitment to fostering a rich educational and cultural landscape. Here&apos;s why this space sets new standards:</strong>
           </p>
         </div>
@@ -133,12 +133,12 @@ export default function Auditorium() {
           {features.map(({ icon: Icon, title, description }) => (
             <div
               key={title}
-              className="bg-[#FBFBEE] rounded-2xl p-6 border border-[#7cb983]/20 hover:shadow-md transition-shadow duration-300 flex flex-col gap-4"
+              className="bg-[#FBFBEE] rounded-2xl p-6 border border-[#0f8f56]/20 hover:shadow-md transition-shadow duration-300 flex flex-col gap-4"
             >
-              <div className="w-12 h-12 rounded-full bg-[#006837] flex items-center justify-center flex-shrink-0">
+              <div className="w-12 h-12 rounded-full bg-[#0b6d41] flex items-center justify-center flex-shrink-0">
                 <Icon className="text-white w-6 h-6" />
               </div>
-              <h2 className="text-lg font-bold text-[#006837]">{title}</h2>
+              <h2 className="text-lg font-bold text-[#0b6d41]">{title}</h2>
               <p className="text-gray-600 text-sm leading-relaxed"><strong>{description}</strong></p>
             </div>
           ))}

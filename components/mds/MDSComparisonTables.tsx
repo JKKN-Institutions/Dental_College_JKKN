@@ -24,14 +24,14 @@ export default function MDSComparisonTables() {
       <div className="max-w-7xl mx-auto">
         {/* Badge */}
         <div className="flex justify-center mb-6">
-          <div className="inline-flex items-center gap-2 bg-[#7cb983] rounded-full px-6 py-2">
+          <div className="inline-flex items-center gap-2 bg-[#ffde59] rounded-full px-6 py-2">
             <span className="text-white font-semibold text-sm uppercase">MDS Tamil Nadu Data</span>
           </div>
         </div>
 
         <h2
           id="mds-comparison-heading"
-          className="text-3xl md:text-4xl font-bold text-[#006837] text-center mb-4"
+          className="text-3xl md:text-4xl font-bold text-[#0b6d41] text-center mb-4"
         >
           How JKKN&rsquo;s MDS Seats and Fees Compare
         </h2>
@@ -45,7 +45,7 @@ export default function MDSComparisonTables() {
         <p className="text-center mb-12">
           <a
             href="/academics/details-of-academic-programs/mds/colleges-in-tamil-nadu/"
-            className="inline-flex items-center gap-2 text-[#006837] font-semibold underline hover:no-underline"
+            className="inline-flex items-center gap-2 text-[#0b6d41] font-semibold underline hover:no-underline"
           >
             See the full list of all 19 MDS colleges in Tamil Nadu &rarr;
           </a>
@@ -53,7 +53,7 @@ export default function MDSComparisonTables() {
 
         {/* Table 1: MDS Seat Matrix at JKKN */}
         <div className="mb-12">
-          <h3 className="text-2xl md:text-3xl font-bold text-[#006837] mb-4">
+          <h3 className="text-2xl md:text-3xl font-bold text-[#0b6d41] mb-4">
             JKKN&rsquo;s 18 MDS Seats, Speciality by Speciality
           </h3>
           <p className="text-gray-600 mb-6">
@@ -61,9 +61,9 @@ export default function MDSComparisonTables() {
             specializations. All programs are 3 years, full-time, and affiliated
             to The Tamil Nadu Dr. M.G.R. Medical University.
           </p>
-          <div className="overflow-x-auto rounded-xl border-2 border-[#7cb983]">
+          <div className="overflow-x-auto rounded-xl border-2 border-[#0f8f56]">
             <table className="w-full text-left border-collapse bg-white">
-              <thead className="bg-[#006837] text-white">
+              <thead className="bg-[#0b6d41] text-white">
                 <tr>
                   <th className="p-4 font-bold">Specialization</th>
                   <th className="p-4 font-bold">Seats</th>
@@ -112,7 +112,7 @@ export default function MDSComparisonTables() {
                   <td className="p-4">3 Years</td>
                   <td className="p-4">MDS</td>
                 </tr>
-                <tr className="bg-[#006837] text-white font-bold">
+                <tr className="bg-[#0b6d41] text-white font-bold">
                   <td className="p-4">Total MDS Seats</td>
                   <td className="p-4">18</td>
                   <td className="p-4">—</td>
@@ -125,7 +125,7 @@ export default function MDSComparisonTables() {
 
         {/* Table 2: MDS Fees Breakdown */}
         <div className="mb-12">
-          <h3 className="text-2xl md:text-3xl font-bold text-[#006837] mb-4">
+          <h3 className="text-2xl md:text-3xl font-bold text-[#0b6d41] mb-4">
             MDS Course Fees Structure in Tamil Nadu
           </h3>
           <p className="text-gray-600 mb-4">
@@ -137,9 +137,9 @@ export default function MDSComparisonTables() {
             publish no figure at all. The table below therefore carries the
             government&rsquo;s own numbers and nothing else.
           </p>
-          <div className="overflow-x-auto rounded-xl border-2 border-[#7cb983]">
+          <div className="overflow-x-auto rounded-xl border-2 border-[#0f8f56]">
             <table className="w-full text-left border-collapse bg-white">
-              <thead className="bg-[#006837] text-white">
+              <thead className="bg-[#0b6d41] text-white">
                 <tr>
                   <th className="p-4 font-bold">Seat Type</th>
                   <th className="p-4 font-bold">Annual Tuition</th>
@@ -196,7 +196,7 @@ export default function MDSComparisonTables() {
             published in these orders &mdash; the {TN_MDS_FEE_SOURCE.committee}{' '}
             fixes it for each year. JKKN&rsquo;s own Management Quota MDS tuition for
             2026-27 is &#8377;8,50,000 a year, the same in all five specialities, as published
-            on its <a href="/fees-structure/" className="underline text-[#006837]">fee structure page</a>;
+            on its <a href="/fees-structure/" className="underline text-[#0b6d41]">fee structure page</a>;
             its Government Quota fee is the one the committee fixes. Questions: +91 9345855001
             or dental@jkkn.ac.in.
           </p>

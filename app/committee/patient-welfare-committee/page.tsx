@@ -55,7 +55,7 @@ export default function PatientWelfareCommittee() {
       <Header />
 
       {/* Hero Banner */}
-      <section className="bg-gradient-to-br from-[#006837] via-[#00572e] to-[#003d20] py-16 px-4">
+      <section className="bg-gradient-to-br from-[#0b6d41] via-[#00572e] to-[#003d20] py-16 px-4">
         <div className="max-w-6xl mx-auto">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white">
             PATIENT WELFARE COMMITTEE
@@ -68,11 +68,11 @@ export default function PatientWelfareCommittee() {
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {members.map((member) => (
-              <div key={member} className="bg-white rounded-xl p-6 shadow-sm border border-green-100 flex items-start gap-4">
-                <div className="w-10 h-10 bg-[#e8f5e9] rounded-lg flex items-center justify-center flex-shrink-0">
-                  <User className="w-5 h-5 text-[#006837]" />
+              <div key={member} className="bg-white rounded-xl p-6 shadow-sm border border-[#d4f1e4] flex items-start gap-4">
+                <div className="w-10 h-10 bg-[#d4f1e4] rounded-lg flex items-center justify-center flex-shrink-0">
+                  <User className="w-5 h-5 text-[#0b6d41]" />
                 </div>
-                <p className="text-[#002309] font-semibold text-sm leading-relaxed">{member}</p>
+                <p className="text-[#032816] font-semibold text-sm leading-relaxed">{member}</p>
               </div>
             ))}
           </div>

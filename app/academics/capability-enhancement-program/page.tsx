@@ -94,7 +94,7 @@ export default function CapabilityEnhancementProgram() {
       <Header />
 
       {/* Hero Banner */}
-      <section className="bg-[#006837] py-16 px-4">
+      <section className="bg-[#0b6d41] py-16 px-4">
         <div className="max-w-5xl mx-auto">
           {/* Breadcrumb */}
           <div className="mb-6 text-sm text-white/60 flex items-center gap-2">
@@ -106,7 +106,7 @@ export default function CapabilityEnhancementProgram() {
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-5 tracking-wide">
             Capability enhancement Program
           </h1>
-          <div className="w-20 h-1 bg-[#7cb983] mb-6 rounded-full" />
+          <div className="w-20 h-1 bg-[#ffde59] mb-6 rounded-full" />
           <p className="hero-description text-white/85 text-base md:text-lg leading-relaxed max-w-3xl">
             1.2 Capability enhancement and development schemes employed by the Institution for learners:
           </p>
@@ -120,12 +120,12 @@ export default function CapabilityEnhancementProgram() {
             {programs.map((program, index) => (
               <div
                 key={index}
-                className="bg-white rounded-2xl shadow-sm border border-gray-100 p-5 flex items-center gap-4 hover:shadow-md hover:border-[#7cb983]/40 transition-all duration-200"
+                className="bg-white rounded-2xl shadow-sm border border-gray-100 p-5 flex items-center gap-4 hover:shadow-md hover:border-[#0f8f56]/40 transition-all duration-200"
               >
-                <div className="flex-shrink-0 w-11 h-11 rounded-full bg-[#006837] text-white flex items-center justify-center font-bold text-base leading-none">
+                <div className="flex-shrink-0 w-11 h-11 rounded-full bg-[#0b6d41] text-white flex items-center justify-center font-bold text-base leading-none">
                   {index + 1}
                 </div>
-                <p className="text-[#002309] font-semibold text-sm md:text-base leading-snug">
+                <p className="text-[#032816] font-semibold text-sm md:text-base leading-snug">
                   {program}
                 </p>
               </div>
@@ -138,7 +138,7 @@ export default function CapabilityEnhancementProgram() {
               href="/pdf/Capability-Enhancement-Program-ViewDocument.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-[#006837] hover:bg-[#005a2f] text-white font-semibold py-3 px-12 rounded-xl transition-colors duration-200 shadow-sm"
+              className="inline-block bg-[#0b6d41] hover:bg-[#005a2f] text-white font-semibold py-3 px-12 rounded-xl transition-colors duration-200 shadow-sm"
             >
               View Document
             </a>
@@ -146,7 +146,7 @@ export default function CapabilityEnhancementProgram() {
               href="/pdf/Capability-Enhancement-Program-NeetQualifiers.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-white hover:bg-[#FBFBEE] text-[#006837] font-semibold py-3 px-12 rounded-xl border-2 border-[#006837] transition-colors duration-200"
+              className="inline-block bg-white hover:bg-[#FBFBEE] text-[#0b6d41] font-semibold py-3 px-12 rounded-xl border-2 border-[#0b6d41] transition-colors duration-200"
             >
               Neet Qualifiers
             </a>

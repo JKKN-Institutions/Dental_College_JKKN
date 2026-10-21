@@ -105,10 +105,10 @@ export default function Contact() {
       <Header />
 
       {/* Page Content */}
-      <div className="bg-[#FBF8F3] py-8 sm:py-10 md:py-12 lg:py-16 px-4 sm:px-6">
+      <div className="bg-[#fbfbee] py-8 sm:py-10 md:py-12 lg:py-16 px-4 sm:px-6">
         <div className="max-w-7xl mx-auto">
           {/* Main Heading */}
-          <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-bold text-[#1B5E20] mb-6 sm:mb-8">
+          <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-bold text-[#0b6d41] mb-6 sm:mb-8">
             Contact Us
           </h1>
 
@@ -119,15 +119,15 @@ export default function Contact() {
           {/* Contact Cards Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-10 sm:mb-12 md:mb-16">
             {/* Main Office */}
-            <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 border-l-4 border-[#1B5E20]">
+            <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 border-l-4 border-[#0b6d41]">
               <div className="flex items-center gap-3 mb-4">
-                <svg className="w-8 h-8 text-[#1B5E20]" fill="currentColor" viewBox="0 0 24 24">
+                <svg className="w-8 h-8 text-[#0b6d41]" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
                 </svg>
                 <h3 className="text-lg sm:text-xl font-bold text-gray-800">Main Office</h3>
               </div>
-              <p className="text-sm sm:text-base text-gray-600 mb-2"><span className="font-semibold">Phone:</span> <a href="tel:+919345855001" className="text-[#1B5E20] hover:underline">+91 93458 55001</a></p>
-              <p className="text-sm sm:text-base text-gray-600"><span className="font-semibold">Email:</span> <a href="mailto:dental@jkkn.ac.in" className="text-[#1B5E20] hover:underline break-all">dental@jkkn.ac.in</a></p>
+              <p className="text-sm sm:text-base text-gray-600 mb-2"><span className="font-semibold">Phone:</span> <a href="tel:+919345855001" className="text-[#0b6d41] hover:underline">+91 93458 55001</a></p>
+              <p className="text-sm sm:text-base text-gray-600"><span className="font-semibold">Email:</span> <a href="mailto:dental@jkkn.ac.in" className="text-[#0b6d41] hover:underline break-all">dental@jkkn.ac.in</a></p>
             </div>
 
             {/* Admissions Office */}
@@ -138,20 +138,20 @@ export default function Contact() {
                 </svg>
                 <h3 className="text-lg sm:text-xl font-bold text-gray-800">Admissions</h3>
               </div>
-              <p className="text-sm sm:text-base text-gray-600 mb-2"><span className="font-semibold">Phone:</span> <a href="tel:+919345855001" className="text-[#1B5E20] hover:underline">+91 93458 55001</a></p>
-              <p className="text-sm sm:text-base text-gray-600"><span className="font-semibold">Email:</span> <a href="mailto:admissions@jkkn.ac.in" className="text-[#1B5E20] hover:underline break-all">admissions@jkkn.ac.in</a></p>
+              <p className="text-sm sm:text-base text-gray-600 mb-2"><span className="font-semibold">Phone:</span> <a href="tel:+919345855001" className="text-[#0b6d41] hover:underline">+91 93458 55001</a></p>
+              <p className="text-sm sm:text-base text-gray-600"><span className="font-semibold">Email:</span> <a href="mailto:admissions@jkkn.ac.in" className="text-[#0b6d41] hover:underline break-all">admissions@jkkn.ac.in</a></p>
             </div>
 
             {/* Hospital Reception */}
-            <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 border-l-4 border-[#7cb983]">
+            <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 border-l-4 border-[#0f8f56]">
               <div className="flex items-center gap-3 mb-4">
-                <svg className="w-8 h-8 text-[#7cb983]" fill="currentColor" viewBox="0 0 24 24">
+                <svg className="w-8 h-8 text-[#0b6d41]" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M19 3H5c-1.1 0-1.99.9-1.99 2L3 19c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 11h-4v4h-4v-4H6v-4h4V6h4v4h4v4z"/>
                 </svg>
                 <h3 className="text-lg sm:text-xl font-bold text-gray-800">Hospital & Patient Care</h3>
               </div>
-              <p className="text-sm sm:text-base text-gray-600 mb-2"><span className="font-semibold">Phone:</span> <a href="tel:+919345855002" className="text-[#1B5E20] hover:underline">+91 93458 55002</a></p>
-              <p className="text-sm sm:text-base text-gray-600"><span className="font-semibold">Email:</span> <a href="mailto:hospital@jkkn.ac.in" className="text-[#1B5E20] hover:underline break-all">hospital@jkkn.ac.in</a></p>
+              <p className="text-sm sm:text-base text-gray-600 mb-2"><span className="font-semibold">Phone:</span> <a href="tel:+919345855002" className="text-[#0b6d41] hover:underline">+91 93458 55002</a></p>
+              <p className="text-sm sm:text-base text-gray-600"><span className="font-semibold">Email:</span> <a href="mailto:hospital@jkkn.ac.in" className="text-[#0b6d41] hover:underline break-all">hospital@jkkn.ac.in</a></p>
             </div>
           </div>
 
@@ -159,13 +159,13 @@ export default function Contact() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12 mb-10 sm:mb-12 md:mb-16">
             {/* Address Section */}
             <div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-[#1B5E20] mb-4 sm:mb-6 border-b-4 border-[#1B5E20] inline-block pb-1">
+              <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-[#0b6d41] mb-4 sm:mb-6 border-b-4 border-[#0b6d41] inline-block pb-1">
                 Campus Location
               </h2>
 
               <div className="bg-white p-6 rounded-xl shadow-md mt-6">
                 <div className="flex items-start gap-4 mb-6">
-                  <svg className="w-8 h-8 text-[#1B5E20] flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-8 h-8 text-[#0b6d41] flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
                   </svg>
                   <div>
@@ -199,7 +199,7 @@ export default function Contact() {
 
             {/* Google Map */}
             <div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-[#1B5E20] mb-4 sm:mb-6 border-b-4 border-[#1B5E20] inline-block pb-1">
+              <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-[#0b6d41] mb-4 sm:mb-6 border-b-4 border-[#0b6d41] inline-block pb-1">
                 Find Us on Map
               </h2>
               <div className="mt-6 rounded-xl overflow-hidden shadow-md h-[350px] sm:h-[400px] lg:h-[450px]">
@@ -219,7 +219,7 @@ export default function Contact() {
                   href="https://maps.google.com/?q=JKKN+Dental+College+Komarapalayam"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#1B5E20] hover:underline font-semibold"
+                  className="text-[#0b6d41] hover:underline font-semibold"
                 >
                   Open in Google Maps →
                 </a>
@@ -229,7 +229,7 @@ export default function Contact() {
 
           {/* How to Reach */}
           <div className="mb-10 sm:mb-12 md:mb-16">
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-[#1B5E20] mb-6 sm:mb-8 border-b-4 border-[#1B5E20] inline-block pb-1">
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-[#0b6d41] mb-6 sm:mb-8 border-b-4 border-[#0b6d41] inline-block pb-1">
               How to Reach JKKN Dental College
             </h2>
 
@@ -237,7 +237,7 @@ export default function Contact() {
               {/* By Air */}
               <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
                 <div className="flex items-center gap-3 mb-4">
-                  <svg className="w-8 h-8 text-[#1B5E20]" fill="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-8 h-8 text-[#0b6d41]" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/>
                   </svg>
                   <h3 className="text-lg font-bold text-gray-800">By Air</h3>
@@ -251,7 +251,7 @@ export default function Contact() {
               {/* By Train */}
               <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
                 <div className="flex items-center gap-3 mb-4">
-                  <svg className="w-8 h-8 text-[#1B5E20]" fill="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-8 h-8 text-[#0b6d41]" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M12 2c-4 0-8 .5-8 4v9.5C4 17.43 5.57 19 7.5 19L6 20.5v.5h2l2-2h4l2 2h2v-.5L16.5 19c1.93 0 3.5-1.57 3.5-3.5V6c0-3.5-4-4-8-4zm0 2c3.51 0 4.96.48 5.57 1H6.43c.61-.52 2.06-1 5.57-1zM7.5 17c-.83 0-1.5-.67-1.5-1.5S6.67 14 7.5 14s1.5.67 1.5 1.5S8.33 17 7.5 17zm9 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm1.5-7H6V7h12v3z"/>
                   </svg>
                   <h3 className="text-lg font-bold text-gray-800">By Train</h3>
@@ -265,7 +265,7 @@ export default function Contact() {
               {/* By Road */}
               <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
                 <div className="flex items-center gap-3 mb-4">
-                  <svg className="w-8 h-8 text-[#1B5E20]" fill="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-8 h-8 text-[#0b6d41]" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"/>
                   </svg>
                   <h3 className="text-lg font-bold text-gray-800">By Road</h3>
@@ -281,7 +281,7 @@ export default function Contact() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12">
             {/* Parking & Campus Access */}
             <div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-[#1B5E20] mb-4 sm:mb-6 border-b-4 border-[#1B5E20] inline-block pb-1">
+              <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-[#0b6d41] mb-4 sm:mb-6 border-b-4 border-[#0b6d41] inline-block pb-1">
                 Parking & Campus Access
               </h2>
               <div className="bg-white p-6 rounded-xl shadow-md mt-6">
@@ -316,10 +316,10 @@ export default function Contact() {
 
             {/* Online Admission */}
             <div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-[#1B5E20] mb-4 sm:mb-6 border-b-4 border-[#1B5E20] inline-block pb-1">
+              <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-[#0b6d41] mb-4 sm:mb-6 border-b-4 border-[#0b6d41] inline-block pb-1">
                 Apply Online
               </h2>
-              <div className="bg-gradient-to-br from-[#1B5E20] to-[#145018] p-8 rounded-xl shadow-lg mt-6 text-white">
+              <div className="bg-gradient-to-br from-[#0b6d41] to-[#085032] p-8 rounded-xl shadow-lg mt-6 text-white">
                 <h3 className="text-xl sm:text-2xl font-bold mb-4">Start Your Dental Career Journey</h3>
                 <p className="text-sm sm:text-base mb-6 leading-relaxed">
                   Ready to join JKKN Dental College? Apply online for BDS and MDS programs. Our admission team will guide you through the process.
@@ -329,13 +329,13 @@ export default function Contact() {
                     href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_medium=organic&utm_campaign=contact"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center bg-white hover:bg-gray-100 active:bg-gray-200 text-[#1B5E20] font-bold text-sm sm:text-base px-6 sm:px-8 py-3 sm:py-3.5 rounded-lg transition-all duration-300 shadow-md min-h-[44px] touch-manipulation"
+                    className="inline-flex items-center justify-center bg-white hover:bg-gray-100 active:bg-gray-200 text-[#0b6d41] font-bold text-sm sm:text-base px-6 sm:px-8 py-3 sm:py-3.5 rounded-lg transition-all duration-300 shadow-md min-h-[44px] touch-manipulation"
                   >
                     Apply Now →
                   </a>
                   <a
                     href="tel: +91 93458 55001"
-                    className="inline-flex items-center justify-center border-2 border-white hover:bg-white hover:text-[#1B5E20] text-white font-bold text-sm sm:text-base px-6 sm:px-8 py-3 sm:py-3.5 rounded-lg transition-all duration-300 min-h-[44px] touch-manipulation"
+                    className="inline-flex items-center justify-center border-2 border-white hover:bg-white hover:text-[#0b6d41] text-white font-bold text-sm sm:text-base px-6 sm:px-8 py-3 sm:py-3.5 rounded-lg transition-all duration-300 min-h-[44px] touch-manipulation"
                   >
                     <MessageCircle className="w-5 h-5 mr-2 inline-block" /> Call Us
                   </a>
@@ -347,7 +347,7 @@ export default function Contact() {
           {/* Quick Contact Note */}
           <div className="mt-10 sm:mt-12 md:mt-16 bg-[#D4E8D4] p-6 sm:p-8 rounded-xl">
             <p className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed text-center">
-              <span className="font-bold text-[#1B5E20]">Need Immediate Assistance?</span> Call us at <a href="tel:+919345855001" className="text-[#1B5E20] font-bold hover:underline">+91 93458 55001</a> or email <a href="mailto:dental@jkkn.ac.in" className="text-[#1B5E20] font-bold hover:underline">dental@jkkn.ac.in</a>. Our team is ready to answer your questions about admissions, courses, campus facilities, or any other inquiries.
+              <span className="font-bold text-[#0b6d41]">Need Immediate Assistance?</span> Call us at <a href="tel:+919345855001" className="text-[#0b6d41] font-bold hover:underline">+91 93458 55001</a> or email <a href="mailto:dental@jkkn.ac.in" className="text-[#0b6d41] font-bold hover:underline">dental@jkkn.ac.in</a>. Our team is ready to answer your questions about admissions, courses, campus facilities, or any other inquiries.
             </p>
           </div>
         </div>
@@ -355,7 +355,7 @@ export default function Contact() {
 
       {/* DEP-34 - enquiry form. Posts to the CRM from the server; a browser cannot POST there */}
       {/* directly - the endpoint sends no Access-Control-Allow-Origin header. */}
-      <section className="bg-gradient-to-br from-[#006837] to-[#0b8f52] py-16">
+      <section className="bg-gradient-to-br from-[#0b6d41] to-[#0f8f56] py-16">
           <div className="max-w-3xl mx-auto px-4">
               <h2 className="text-white text-2xl md:text-3xl font-bold text-center mb-2">Get a Call Back</h2>
               <p className="text-white/80 text-center text-sm mb-8">Leave your details and our admission team will contact you within 24 hours.</p>

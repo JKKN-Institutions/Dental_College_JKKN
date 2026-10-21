@@ -31,21 +31,21 @@ export default function OurTrust() {
       <Header />
 
       {/* Hero Section */}
-      <section className="bg-[#006837] pt-16 overflow-hidden">
+      <section className="bg-[#0b6d41] pt-16 overflow-hidden">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 flex flex-col items-center">
 
           {/* Decorative top ornament */}
           <div className="flex items-center gap-4 mb-10">
-            <div className="h-px w-16 sm:w-24 bg-[#7cb983] opacity-60" />
-            <div className="w-2 h-2 rounded-full bg-[#7cb983]" />
-            <div className="h-px w-16 sm:w-24 bg-[#7cb983] opacity-60" />
+            <div className="h-px w-16 sm:w-24 bg-[#ffde59] opacity-60" />
+            <div className="w-2 h-2 rounded-full bg-[#ffde59]" />
+            <div className="h-px w-16 sm:w-24 bg-[#ffde59] opacity-60" />
           </div>
 
           {/* Portrait with decorative frame rings */}
           <div className="relative mb-10">
-            <div className="absolute -inset-3 rounded-2xl border border-[#7cb983] opacity-30" />
-            <div className="absolute -inset-6 rounded-2xl border border-[#7cb983] opacity-15" />
-            <div className="relative w-[240px] h-[240px] md:w-[300px] md:h-[300px] rounded-2xl overflow-hidden border-2 border-[#7cb983] shadow-2xl">
+            <div className="absolute -inset-3 rounded-2xl border border-[#0f8f56] opacity-30" />
+            <div className="absolute -inset-6 rounded-2xl border border-[#0f8f56] opacity-15" />
+            <div className="relative w-[240px] h-[240px] md:w-[300px] md:h-[300px] rounded-2xl overflow-hidden border-2 border-[#0f8f56] shadow-2xl">
               <Image
                 src="/images/Our_Trust.webp"
                 alt="Shri. J.K.K. Nattraja"
@@ -63,15 +63,15 @@ export default function OurTrust() {
           </h1>
 
           {/* Subtitle */}
-          <h2 className="text-base md:text-lg font-medium text-center text-[#7cb983] mb-10 tracking-wider">
+          <h2 className="text-base md:text-lg font-medium text-center text-[#ffde59] mb-10 tracking-wider">
             Founder J.K.K. Rangammal Charitable Trust
           </h2>
 
           {/* Decorative bottom ornament */}
           <div className="flex items-center gap-4">
-            <div className="h-px w-16 sm:w-24 bg-[#7cb983] opacity-60" />
-            <div className="w-2 h-2 rounded-full bg-[#7cb983]" />
-            <div className="h-px w-16 sm:w-24 bg-[#7cb983] opacity-60" />
+            <div className="h-px w-16 sm:w-24 bg-[#ffde59] opacity-60" />
+            <div className="w-2 h-2 rounded-full bg-[#ffde59]" />
+            <div className="h-px w-16 sm:w-24 bg-[#ffde59] opacity-60" />
           </div>
         </div>
 
@@ -94,8 +94,8 @@ export default function OurTrust() {
 
           {/* Section accent bar */}
           <div className="flex items-center gap-2 mb-10">
-            <div className="w-1 h-8 bg-[#006837] rounded-full" />
-            <div className="w-1 h-5 bg-[#7cb983] rounded-full" />
+            <div className="w-1 h-8 bg-[#0b6d41] rounded-full" />
+            <div className="w-1 h-5 bg-[#ffde59] rounded-full" />
           </div>
 
           <article className="space-y-8">
@@ -103,7 +103,7 @@ export default function OurTrust() {
               In the 1960s, female children in Komarapalayam had to walk 2.5 km to the nearby town of Bhavani for schooling. Some parents hesitated to send their daughters, while others ceased their children&apos;s education altogether, resulting in them staying at home or working in handlooms and dyeing industries. Recognizing the need for women&apos;s education, Shri J.K.K. Nattraja, a visionary philanthropist of the area, initiated a girls&apos; school in the town in 1965, four years before the inception of the trust.
             </p>
 
-            <p className="text-base md:text-lg text-gray-700 leading-relaxed text-justify pl-5 border-l-4 border-[#7cb983]">
+            <p className="text-base md:text-lg text-gray-700 leading-relaxed text-justify pl-5 border-l-4 border-[#0f8f56]">
               The Trust, J.K.K. Rangammal Charitable Trust (Reg No: 33), was established in 1969 with the mission of providing literacy and empowering women, aiming to upgrade the socio-economic status of the community. Following in her father&apos;s footsteps, Smt. N. Sendamaraai, Managing Trustee, expanded the service to offer multi-disciplinary education to both genders. Now, under the umbrella of the Trust, there are ten institutions, including Dental, Pharmacy, Nursing, Education, Engineering, Arts, and Science colleges, as well as a Government-Aided Girls&apos; School and Matriculation schools.
             </p>
 

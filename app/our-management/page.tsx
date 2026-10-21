@@ -31,12 +31,12 @@ export default function OurManagement() {
       <Header />
 
       {/* Decorative page topper */}
-      <div className="bg-[#006837] pt-16 overflow-hidden">
+      <div className="bg-[#0b6d41] pt-16 overflow-hidden">
         <div className="max-w-4xl mx-auto px-4 py-10 flex flex-col items-center">
           <div className="flex items-center gap-4">
-            <div className="h-px w-16 sm:w-32 bg-[#7cb983] opacity-60" />
-            <div className="w-2 h-2 rounded-full bg-[#7cb983]" />
-            <div className="h-px w-16 sm:w-32 bg-[#7cb983] opacity-60" />
+            <div className="h-px w-16 sm:w-32 bg-[#ffde59] opacity-60" />
+            <div className="w-2 h-2 rounded-full bg-[#ffde59]" />
+            <div className="h-px w-16 sm:w-32 bg-[#ffde59] opacity-60" />
           </div>
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white text-center tracking-wide mt-8">
             Our Management
@@ -62,13 +62,13 @@ export default function OurManagement() {
             {/* Chairperson Card */}
             <div className="bg-white rounded-2xl shadow-md overflow-hidden border border-gray-100">
               {/* Top accent bar */}
-              <div className="h-1.5 bg-gradient-to-r from-[#006837] to-[#7cb983]" />
+              <div className="h-1.5 bg-gradient-to-r from-[#0b6d41] to-[#0f8f56]" />
               <div className="p-8 flex flex-col items-center">
 
                 {/* Portrait */}
                 <div className="relative mb-6">
-                  <div className="absolute -inset-2 rounded-2xl border border-[#7cb983] opacity-40" />
-                  <div className="w-[220px] h-[220px] md:w-[260px] md:h-[260px] rounded-xl overflow-hidden border-2 border-[#7cb983] shadow-md">
+                  <div className="absolute -inset-2 rounded-2xl border border-[#0f8f56] opacity-40" />
+                  <div className="w-[220px] h-[220px] md:w-[260px] md:h-[260px] rounded-xl overflow-hidden border-2 border-[#0f8f56] shadow-md">
                     <Image
                       src="/images/Our_Management-1.webp"
                       alt="Smt.N.Sendamaraai"
@@ -81,12 +81,12 @@ export default function OurManagement() {
                 </div>
 
                 {/* Name */}
-                <h2 className="text-2xl md:text-3xl font-bold text-center text-[#006837] mb-3">
+                <h2 className="text-2xl md:text-3xl font-bold text-center text-[#0b6d41] mb-3">
                   SMT.N.SENDAMARAAI
                 </h2>
 
                 {/* Position Badge */}
-                <span className="inline-block bg-[#006837] text-white text-sm font-medium px-5 py-1.5 rounded-full mb-6">
+                <span className="inline-block bg-[#0b6d41] text-white text-sm font-medium px-5 py-1.5 rounded-full mb-6">
                   Chairperson - JKKN Institutions
                 </span>
 
@@ -108,13 +108,13 @@ export default function OurManagement() {
             {/* Director Card */}
             <div className="bg-white rounded-2xl shadow-md overflow-hidden border border-gray-100">
               {/* Top accent bar */}
-              <div className="h-1.5 bg-gradient-to-r from-[#006837] to-[#7cb983]" />
+              <div className="h-1.5 bg-gradient-to-r from-[#0b6d41] to-[#0f8f56]" />
               <div className="p-8 flex flex-col items-center">
 
                 {/* Portrait */}
                 <div className="relative mb-6">
-                  <div className="absolute -inset-2 rounded-2xl border border-[#7cb983] opacity-40" />
-                  <div className="w-[220px] h-[220px] md:w-[260px] md:h-[260px] rounded-xl overflow-hidden border-2 border-[#7cb983] shadow-md">
+                  <div className="absolute -inset-2 rounded-2xl border border-[#0f8f56] opacity-40" />
+                  <div className="w-[220px] h-[220px] md:w-[260px] md:h-[260px] rounded-xl overflow-hidden border-2 border-[#0f8f56] shadow-md">
                     <Image
                       src="/images/Our_Management-2.webp"
                       alt="Mr.S.Ommsharravana"
@@ -127,12 +127,12 @@ export default function OurManagement() {
                 </div>
 
                 {/* Name */}
-                <h2 className="text-2xl md:text-3xl font-bold text-center text-[#006837] mb-3">
+                <h2 className="text-2xl md:text-3xl font-bold text-center text-[#0b6d41] mb-3">
                   MR.S.OMMSHARRAVANA
                 </h2>
 
                 {/* Position Badge */}
-                <span className="inline-block bg-[#006837] text-white text-sm font-medium px-5 py-1.5 rounded-full mb-6">
+                <span className="inline-block bg-[#0b6d41] text-white text-sm font-medium px-5 py-1.5 rounded-full mb-6">
                   Director - JKKN Institutions
                 </span>
 

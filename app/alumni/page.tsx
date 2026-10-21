@@ -61,7 +61,7 @@ export default function Alumni() {
           </div>
 
           {/* Association Name */}
-          <h2 className="text-xl md:text-2xl font-bold text-[#1B5E20] text-center mb-8">
+          <h2 className="text-xl md:text-2xl font-bold text-[#0b6d41] text-center mb-8">
             JKKN DENTAL COLLEGE ALUMNI ASSOCIATION "NAMASKARA"
           </h2>
 
@@ -263,7 +263,7 @@ export default function Alumni() {
             </div>
 
             {/* Alumni engagement coordination committee members */}
-            <h4 className="text-base md:text-lg font-bold text-[#1B5E20] mb-6">
+            <h4 className="text-base md:text-lg font-bold text-[#0b6d41] mb-6">
               Alumni engagement coordination committee members
             </h4>
 
@@ -402,7 +402,7 @@ export default function Alumni() {
       </div>
 
       {/* Footer Section with Three Columns */}
-      <div className="bg-[#1B5E20] text-white py-12 px-4">
+      <div className="bg-[#0b6d41] text-white py-12 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Column 1: JKKN Dental College & Hospital */}

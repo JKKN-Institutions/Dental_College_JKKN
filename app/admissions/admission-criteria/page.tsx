@@ -86,11 +86,11 @@ export default function AdmissionCriteria() {
       <Header />
 
       {/* Page Content */}
-      <div className="bg-[#FBF8F3] py-12 px-4">
+      <div className="bg-[#fbfbee] py-12 px-4">
         <div className="max-w-6xl mx-auto">
 
           {/* Page Title */}
-          <h1 className="text-3xl md:text-4xl font-bold text-[#1B5E20] mb-8">
+          <h1 className="text-3xl md:text-4xl font-bold text-[#0b6d41] mb-8">
             ADMISSION CRITERIA
           </h1>
 

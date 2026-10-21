@@ -157,7 +157,7 @@ export default function DentalCollegesInTamilNadu() {
       <StructuredData data={itemListSchema} />
       <Header />
 
-      <section className="bg-[#006837] text-white pt-10 pb-12 px-4 sm:px-6">
+      <section className="bg-[#0b6d41] text-white pt-10 pb-12 px-4 sm:px-6">
         <div className="max-w-6xl mx-auto">
           <Breadcrumb variant="onDark"
             items={[
@@ -209,8 +209,8 @@ export default function DentalCollegesInTamilNadu() {
                 onClick={() => setFilter(k)}
                 className={`text-xs sm:text-sm px-3 py-1.5 rounded-full border transition-colors ${
                   filter === k
-                    ? 'bg-[#006837] text-white border-[#006837]'
-                    : 'bg-white text-[#006837] border-[#006837]/30 hover:border-[#006837]'
+                    ? 'bg-[#0b6d41] text-white border-[#0b6d41]'
+                    : 'bg-white text-[#0b6d41] border-[#0b6d41]/30 hover:border-[#0b6d41]'
                 }`}
               >
                 {label}
@@ -219,7 +219,7 @@ export default function DentalCollegesInTamilNadu() {
             <button
               type="button"
               onClick={() => setSort(sort === 'intake' ? 'name' : 'intake')}
-              className="ml-auto text-xs sm:text-sm px-3 py-1.5 rounded-full border border-[#006837]/30 text-[#006837] hover:border-[#006837]"
+              className="ml-auto text-xs sm:text-sm px-3 py-1.5 rounded-full border border-[#0b6d41]/30 text-[#0b6d41] hover:border-[#0b6d41]"
             >
               {sort === 'intake' ? 'Sorted by seats' : 'Sorted by name'}
             </button>
@@ -232,7 +232,7 @@ export default function DentalCollegesInTamilNadu() {
                 affiliated to {TN_BDS_SOURCE.authority}
               </caption>
               <thead>
-                <tr className="bg-[#006837] text-white text-left">
+                <tr className="bg-[#0b6d41] text-white text-left">
                   <th scope="col" className="px-3 py-3 font-semibold">College</th>
                   <th scope="col" className="px-3 py-3 font-semibold">Location</th>
                   <th scope="col" className="px-3 py-3 font-semibold">Type</th>
@@ -260,7 +260,7 @@ export default function DentalCollegesInTamilNadu() {
                       <td className="px-3 py-2.5 text-gray-600 whitespace-nowrap">
                         {c.minority ? 'Minority' : 'Non-minority'}
                       </td>
-                      <td className="px-3 py-2.5 text-right tabular-nums font-bold text-[#006837]">
+                      <td className="px-3 py-2.5 text-right tabular-nums font-bold text-[#0b6d41]">
                         {c.intake}
                       </td>
                     </tr>
@@ -268,7 +268,7 @@ export default function DentalCollegesInTamilNadu() {
                 })}
               </tbody>
               <tfoot>
-                <tr className="bg-[#FBFBEE] font-bold border-t-2 border-[#006837]">
+                <tr className="bg-[#FBFBEE] font-bold border-t-2 border-[#0b6d41]">
                   <th scope="row" className="px-3 py-3 text-left">Tamil Nadu total</th>
                   <td className="px-3 py-3" />
                   <td className="px-3 py-3 text-gray-600">
@@ -278,7 +278,7 @@ export default function DentalCollegesInTamilNadu() {
                   <td className="px-3 py-3 text-gray-600">
                     {TN_BDS_TOTALS.minorityColleges} minority
                   </td>
-                  <td className="px-3 py-3 text-right tabular-nums text-[#006837]">
+                  <td className="px-3 py-3 text-right tabular-nums text-[#0b6d41]">
                     {TN_BDS_TOTALS.seats.toLocaleString('en-IN')}
                   </td>
                 </tr>
@@ -292,7 +292,7 @@ export default function DentalCollegesInTamilNadu() {
               href={TN_BDS_SOURCE.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[#006837] underline hover:no-underline"
+              className="text-[#0b6d41] underline hover:no-underline"
             >
               {TN_BDS_SOURCE.document}
             </a>
@@ -303,7 +303,7 @@ export default function DentalCollegesInTamilNadu() {
               is published for them here - inventing one to look complete is the exact failure
               this page exists to correct. */}
           <div className="mt-10 rounded-xl border border-[#d4af37]/40 bg-white p-5 sm:p-6">
-            <h2 className="text-lg sm:text-xl font-bold text-[#006837] mb-2">
+            <h2 className="text-lg sm:text-xl font-bold text-[#0b6d41] mb-2">
               The deemed universities, and why they are not in the table
             </h2>
             <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-3">
@@ -325,9 +325,9 @@ export default function DentalCollegesInTamilNadu() {
           <div className="mt-8 grid sm:grid-cols-2 gap-4">
             <Link
               href="/academics/details-of-academic-programs/bds/"
-              className="block rounded-xl border border-gray-200 bg-white p-5 hover:border-[#006837] hover:shadow-sm transition-all"
+              className="block rounded-xl border border-gray-200 bg-white p-5 hover:border-[#0b6d41] hover:shadow-sm transition-all"
             >
-              <span className="font-semibold text-[#006837] text-sm sm:text-base">
+              <span className="font-semibold text-[#0b6d41] text-sm sm:text-base">
                 BDS admission 2026-27 at JKKN
               </span>
               <span className="block mt-1.5 text-xs sm:text-sm text-gray-600 leading-relaxed">
@@ -337,9 +337,9 @@ export default function DentalCollegesInTamilNadu() {
             </Link>
             <Link
               href="/academics/details-of-academic-programs/mds/colleges-in-tamil-nadu/"
-              className="block rounded-xl border border-gray-200 bg-white p-5 hover:border-[#006837] hover:shadow-sm transition-all"
+              className="block rounded-xl border border-gray-200 bg-white p-5 hover:border-[#0b6d41] hover:shadow-sm transition-all"
             >
-              <span className="font-semibold text-[#006837] text-sm sm:text-base">
+              <span className="font-semibold text-[#0b6d41] text-sm sm:text-base">
                 Looking for MDS instead?
               </span>
               <span className="block mt-1.5 text-xs sm:text-sm text-gray-600 leading-relaxed">
@@ -359,7 +359,7 @@ export default function DentalCollegesInTamilNadu() {
           merit order and inventing one would be the unsourced claim this page exists against. */}
       <section className="py-10 sm:py-14 px-4 sm:px-6 bg-white">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-xl sm:text-2xl font-bold text-[#006837] mb-3">
+          <h2 className="text-xl sm:text-2xl font-bold text-[#0b6d41] mb-3">
             BDS Colleges in Tamil Nadu
           </h2>
           <p className="answer-capsule text-sm sm:text-base text-gray-700 leading-relaxed max-w-3xl mb-6">
@@ -374,7 +374,7 @@ export default function DentalCollegesInTamilNadu() {
 
           <div className="grid sm:grid-cols-3 gap-4">
             <div className="rounded-xl border border-gray-200 bg-[#FBFBEE] p-5">
-              <p className="text-2xl font-bold text-[#006837]">
+              <p className="text-2xl font-bold text-[#0b6d41]">
                 {TN_BDS_TOTALS.governmentColleges}
               </p>
               <p className="mt-1 font-semibold text-gray-900 text-sm sm:text-base">
@@ -387,7 +387,7 @@ export default function DentalCollegesInTamilNadu() {
               </p>
             </div>
             <div className="rounded-xl border border-gray-200 bg-[#FBFBEE] p-5">
-              <p className="text-2xl font-bold text-[#006837]">
+              <p className="text-2xl font-bold text-[#0b6d41]">
                 {TN_BDS_TOTALS.selfFinancingColleges}
               </p>
               <p className="mt-1 font-semibold text-gray-900 text-sm sm:text-base">
@@ -400,7 +400,7 @@ export default function DentalCollegesInTamilNadu() {
               </p>
             </div>
             <div className="rounded-xl border border-gray-200 bg-[#FBFBEE] p-5">
-              <p className="text-2xl font-bold text-[#006837]">
+              <p className="text-2xl font-bold text-[#0b6d41]">
                 {TN_BDS_TOTALS.minorityColleges}
               </p>
               <p className="mt-1 font-semibold text-gray-900 text-sm sm:text-base">
@@ -414,7 +414,7 @@ export default function DentalCollegesInTamilNadu() {
           </div>
 
           <div id="nirf" className="mt-8 rounded-xl border border-[#d4af37]/40 bg-white p-5 sm:p-6">
-            <h2 className="text-xl sm:text-2xl font-bold text-[#006837] mb-2">
+            <h2 className="text-xl sm:text-2xl font-bold text-[#0b6d41] mb-2">
               Best dental colleges in Tamil Nadu &mdash; what the NIRF 2025 ranking says
             </h2>
             <p className="answer-capsule text-sm sm:text-base text-gray-700 leading-relaxed mb-4">
@@ -432,7 +432,7 @@ export default function DentalCollegesInTamilNadu() {
             <div className="overflow-x-auto">
               <table className="w-full text-xs sm:text-sm">
                 <thead>
-                  <tr className="bg-[#006837] text-white text-left">
+                  <tr className="bg-[#0b6d41] text-white text-left">
                     <th className="px-3 py-2">NIRF 2025 rank</th>
                     <th className="px-3 py-2">Institution</th>
                     <th className="px-3 py-2">City</th>
@@ -442,7 +442,7 @@ export default function DentalCollegesInTamilNadu() {
                 <tbody>
                   {NIRF_2025_DENTAL_TN.map((r) => (
                     <tr key={r.rank} className="border-b border-gray-200">
-                      <td className="px-3 py-2 font-semibold text-[#006837]">#{r.rank}</td>
+                      <td className="px-3 py-2 font-semibold text-[#0b6d41]">#{r.rank}</td>
                       <td className="px-3 py-2 text-gray-900">{r.name}</td>
                       <td className="px-3 py-2 text-gray-700">{r.city}</td>
                       <td className="px-3 py-2 text-gray-700">{r.score.toFixed(2)}</td>
@@ -457,7 +457,7 @@ export default function DentalCollegesInTamilNadu() {
                 href={NIRF_2025_DENTAL_SOURCE.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#006837] underline hover:no-underline"
+                className="text-[#0b6d41] underline hover:no-underline"
               >
                 {NIRF_2025_DENTAL_SOURCE.name}
               </a>
@@ -473,12 +473,12 @@ export default function DentalCollegesInTamilNadu() {
 
       <section className="py-10 sm:py-14 px-4 sm:px-6 bg-white">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-xl sm:text-2xl font-bold text-[#006837] mb-6">
+          <h2 className="text-xl sm:text-2xl font-bold text-[#0b6d41] mb-6">
             Questions parents and NEET candidates ask
           </h2>
           <div className="space-y-5">
             {faqs.map((f) => (
-              <div key={f.question} className="border-l-4 border-[#7cb983] pl-4">
+              <div key={f.question} className="border-l-4 border-[#0f8f56] pl-4">
                 <h3 className="font-semibold text-gray-900 text-base sm:text-lg mb-1.5">
                   {f.question}
                 </h3>
@@ -493,7 +493,7 @@ export default function DentalCollegesInTamilNadu() {
 
       <section className="py-10 sm:py-14 px-4 sm:px-6 bg-[#d4f1e4]">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-xl sm:text-2xl font-bold text-[#006837] mb-2">
+          <h2 className="text-xl sm:text-2xl font-bold text-[#0b6d41] mb-2">
             BDS admission 2026-27 at JKKN Dental College
           </h2>
           <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-6">

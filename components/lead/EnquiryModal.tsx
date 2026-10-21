@@ -90,7 +90,7 @@ function EnquiryDialog({
         role="dialog"
         aria-modal="true"
         aria-labelledby="enquiry-dialog-title"
-        className={`relative w-full max-h-[90vh] overflow-y-auto rounded-2xl bg-[#006837] p-5 sm:p-6 shadow-2xl ${
+        className={`relative w-full max-h-[90vh] overflow-y-auto rounded-2xl bg-[#0b6d41] p-5 sm:p-6 shadow-2xl ${
           withPoster ? "max-w-sm md:max-w-3xl" : "max-w-sm lg:max-w-md"
         }`}
       >

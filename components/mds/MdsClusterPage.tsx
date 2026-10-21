@@ -108,7 +108,7 @@ export default function MdsClusterPage({
       <StructuredData data={datasetSchema} />
       <Header />
 
-      <section className="bg-[#006837] text-white pt-10 pb-12 px-4 sm:px-6">
+      <section className="bg-[#0b6d41] text-white pt-10 pb-12 px-4 sm:px-6">
         <div className="max-w-6xl mx-auto">
           <Breadcrumb variant="onDark"
             items={[
@@ -145,8 +145,8 @@ export default function MdsClusterPage({
 
           <TnMdsSeatMatrixTable showSpecialities={showSpecialities} />
 
-          <div className="mt-8 rounded-xl border border-[#006837]/20 bg-white p-5 sm:p-6">
-            <h2 className="text-lg sm:text-xl font-bold text-[#006837] mb-2">
+          <div className="mt-8 rounded-xl border border-[#0b6d41]/20 bg-white p-5 sm:p-6">
+            <h2 className="text-lg sm:text-xl font-bold text-[#0b6d41] mb-2">
               Download the full seat matrix
             </h2>
             <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-4">
@@ -156,7 +156,7 @@ export default function MdsClusterPage({
             </p>
             <a
               href="/pdf/TN-MDS-Seat-Matrix-2025-26.pdf"
-              className="inline-flex items-center gap-2 bg-[#006837] hover:bg-[#00552d] text-white font-semibold px-5 py-3 rounded-full text-sm sm:text-base transition-colors"
+              className="inline-flex items-center gap-2 bg-[#0b6d41] hover:bg-[#00552d] text-white font-semibold px-5 py-3 rounded-full text-sm sm:text-base transition-colors"
               download
             >
               Tamil Nadu MDS seat matrix 2025-26 (PDF)
@@ -169,12 +169,12 @@ export default function MdsClusterPage({
 
       <section className="py-10 sm:py-14 px-4 sm:px-6 bg-white">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-xl sm:text-2xl font-bold text-[#006837] mb-6">
+          <h2 className="text-xl sm:text-2xl font-bold text-[#0b6d41] mb-6">
             Questions parents and NEET MDS candidates ask
           </h2>
           <div className="space-y-5">
             {faqs.map((f) => (
-              <div key={f.question} className="border-l-4 border-[#7cb983] pl-4">
+              <div key={f.question} className="border-l-4 border-[#0f8f56] pl-4">
                 <h3 className="font-semibold text-gray-900 text-base sm:text-lg mb-1.5">
                   {f.question}
                 </h3>
@@ -189,7 +189,7 @@ export default function MdsClusterPage({
 
       <section className="py-10 sm:py-14 px-4 sm:px-6">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-xl sm:text-2xl font-bold text-[#006837] mb-6">
+          <h2 className="text-xl sm:text-2xl font-bold text-[#0b6d41] mb-6">
             More on MDS in Tamil Nadu
           </h2>
           <div className="grid sm:grid-cols-3 gap-4">
@@ -197,9 +197,9 @@ export default function MdsClusterPage({
               <Link
                 key={s.href}
                 href={s.href}
-                className="block rounded-xl border border-gray-200 bg-white p-5 hover:border-[#006837] hover:shadow-sm transition-all"
+                className="block rounded-xl border border-gray-200 bg-white p-5 hover:border-[#0b6d41] hover:shadow-sm transition-all"
               >
-                <span className="font-semibold text-[#006837] text-sm sm:text-base">
+                <span className="font-semibold text-[#0b6d41] text-sm sm:text-base">
                   {s.label}
                 </span>
                 <span className="block mt-1.5 text-xs sm:text-sm text-gray-600 leading-relaxed">
@@ -213,7 +213,7 @@ export default function MdsClusterPage({
 
       <section className="py-10 sm:py-14 px-4 sm:px-6 bg-[#d4f1e4]">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-xl sm:text-2xl font-bold text-[#006837] mb-2">
+          <h2 className="text-xl sm:text-2xl font-bold text-[#0b6d41] mb-2">
             MDS admission 2026-27 at JKKN Dental College
           </h2>
           <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-6">

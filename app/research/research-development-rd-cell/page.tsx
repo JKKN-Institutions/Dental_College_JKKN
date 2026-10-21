@@ -66,15 +66,15 @@ export default function ResearchDevelopmentRDCell() {
       <Header />
 
       {/* Hero Banner */}
-      <section className="bg-[#006837] py-16 px-4">
+      <section className="bg-[#0b6d41] py-16 px-4">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-base md:text-lg font-semibold text-[#7cb983] mb-2 uppercase tracking-widest">
+          <h2 className="text-base md:text-lg font-semibold text-[#ffde59] mb-2 uppercase tracking-widest">
             JKKN Dental College &amp; Hospital
           </h2>
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 uppercase tracking-wide">
             RESEARCH &amp; DEVELOPMENT (R&amp;D) CELL
           </h1>
-          <div className="w-20 h-1 bg-[#7cb983] mb-5 rounded-full" />
+          <div className="w-20 h-1 bg-[#ffde59] mb-5 rounded-full" />
           <p className="text-white/80 text-base md:text-lg font-semibold mb-5">
             Fostering Innovation &amp; Excellence in Research
           </p>
@@ -89,7 +89,7 @@ export default function ResearchDevelopmentRDCell() {
 
           {/* Objectives */}
           <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
-            <div className="bg-[#006837] px-6 py-4">
+            <div className="bg-[#0b6d41] px-6 py-4">
               <h3 className="text-white font-bold text-base md:text-lg">
                 Objectives of the R&amp;D Cell
               </h3>
@@ -97,7 +97,7 @@ export default function ResearchDevelopmentRDCell() {
             <ul className="px-6 py-5 space-y-4">
               {objectives.map((item, i) => (
                 <li key={i} className="flex items-start gap-3 text-sm md:text-base font-semibold text-gray-700">
-                  <div className="flex-shrink-0 w-6 h-6 rounded-full bg-[#006837] text-white flex items-center justify-center text-xs font-bold mt-0.5">
+                  <div className="flex-shrink-0 w-6 h-6 rounded-full bg-[#0b6d41] text-white flex items-center justify-center text-xs font-bold mt-0.5">
                     {i + 1}
                   </div>
                   {item}
@@ -108,7 +108,7 @@ export default function ResearchDevelopmentRDCell() {
 
           {/* Key Initiatives & Facilities */}
           <div>
-            <h3 className="text-xl md:text-2xl font-bold text-[#006837] mb-6">
+            <h3 className="text-xl md:text-2xl font-bold text-[#0b6d41] mb-6">
               Key Initiatives &amp; Facilities
             </h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -118,10 +118,10 @@ export default function ResearchDevelopmentRDCell() {
                   href={link.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`flex items-center gap-3 bg-white hover:bg-[#006837] border-2 border-[#006837] text-[#006837] hover:text-white font-bold py-4 px-5 rounded-xl transition-all duration-200 shadow-sm group ${i === 3 ? 'sm:col-span-2 sm:max-w-sm' : ''}`}
+                  className={`flex items-center gap-3 bg-white hover:bg-[#0b6d41] border-2 border-[#0b6d41] text-[#0b6d41] hover:text-white font-bold py-4 px-5 rounded-xl transition-all duration-200 shadow-sm group ${i === 3 ? 'sm:col-span-2 sm:max-w-sm' : ''}`}
                 >
-                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#006837] group-hover:bg-white flex items-center justify-center transition-colors duration-200">
-                    <svg className="w-4 h-4 text-white group-hover:text-[#006837] transition-colors duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#0b6d41] group-hover:bg-white flex items-center justify-center transition-colors duration-200">
+                    <svg className="w-4 h-4 text-white group-hover:text-[#0b6d41] transition-colors duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3M3 17V7a2 2 0 012-2h6l2 2h6a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
                     </svg>
                   </div>

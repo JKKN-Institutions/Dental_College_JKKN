@@ -70,7 +70,7 @@ export default function EquitableOpportunityForSEDGGroup() {
       <Header />
 
       {/* Hero Banner */}
-      <section className="bg-[#006837] py-16 px-4">
+      <section className="bg-[#0b6d41] py-16 px-4">
         <div className="max-w-5xl mx-auto">
           <div className="mb-5 text-sm text-white/60 flex items-center gap-2">
             <span>Home</span>
@@ -80,7 +80,7 @@ export default function EquitableOpportunityForSEDGGroup() {
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-5 uppercase tracking-wide">
             EQUITABLE OPPORTUNITY FOR SEDG GROUP
           </h1>
-          <div className="w-20 h-1 bg-[#7cb983] mb-6 rounded-full" />
+          <div className="w-20 h-1 bg-[#ffde59] mb-6 rounded-full" />
           <p className="hero-description text-white/85 text-base md:text-lg leading-relaxed max-w-3xl">
             JKKN Dental College is committed to inclusive education by providing equitable access to learners from Socio-Economically Disadvantaged Groups (SEDGs). The following initiatives reflect our alignment with the UGC&apos;s 2024 guidelines:
           </p>
@@ -96,7 +96,7 @@ export default function EquitableOpportunityForSEDGGroup() {
               key={section.number}
               className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden"
             >
-              <div className="flex items-center gap-4 bg-[#006837] px-6 py-4">
+              <div className="flex items-center gap-4 bg-[#0b6d41] px-6 py-4">
                 <div className="flex-shrink-0 w-9 h-9 rounded-full bg-white/20 flex items-center justify-center font-bold text-white text-base">
                   {section.number}
                 </div>
@@ -107,7 +107,7 @@ export default function EquitableOpportunityForSEDGGroup() {
               <ul className="px-6 py-5 space-y-3">
                 {section.points.map((point, i) => (
                   <li key={i} className="flex items-start gap-3 text-sm md:text-base font-semibold text-gray-700">
-                    <div className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-[#7cb983] mt-2" />
+                    <div className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-[#ffde59] mt-2" />
                     {point}
                   </li>
                 ))}
@@ -116,7 +116,7 @@ export default function EquitableOpportunityForSEDGGroup() {
           ))}
 
           {/* Conclusion */}
-          <div className="bg-white rounded-2xl shadow-sm border border-[#7cb983]/30 px-6 py-5">
+          <div className="bg-white rounded-2xl shadow-sm border border-[#0f8f56]/30 px-6 py-5">
             <p className="text-gray-700 leading-relaxed text-sm md:text-base">
               This integrated approach ensures JKKN Dental College&apos;s alignment with UGC&apos;s vision for empowering disadvantaged learners and promoting inclusive education in higher education institutions.
             </p>
@@ -128,7 +128,7 @@ export default function EquitableOpportunityForSEDGGroup() {
               href="/pdf/Equitable-Opportunity-for-SEDG.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-[#006837] hover:bg-[#005a2f] text-white font-bold py-3 px-10 rounded-xl transition-colors duration-200 uppercase text-sm text-center shadow-sm"
+              className="inline-block bg-[#0b6d41] hover:bg-[#005a2f] text-white font-bold py-3 px-10 rounded-xl transition-colors duration-200 uppercase text-sm text-center shadow-sm"
             >
               EQUITABLE OPPORTUNITY FOR SEDGs
             </a>
@@ -136,7 +136,7 @@ export default function EquitableOpportunityForSEDGGroup() {
               href="/pdf/EQUITABLE-OPPORTUNITY-FOR-SEDG-UGC-Guidelines.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-white hover:bg-[#FBFBEE] text-[#006837] font-bold py-3 px-10 rounded-xl border-2 border-[#006837] transition-colors duration-200 uppercase text-sm text-center"
+              className="inline-block bg-white hover:bg-[#FBFBEE] text-[#0b6d41] font-bold py-3 px-10 rounded-xl border-2 border-[#0b6d41] transition-colors duration-200 uppercase text-sm text-center"
             >
               UGC GUIDELINES
             </a>

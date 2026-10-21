@@ -72,12 +72,12 @@ export default function SeminarHall() {
       <Header />
 
       {/* Hero Banner */}
-      <section className="bg-[#006837] py-16 px-4">
+      <section className="bg-[#0b6d41] py-16 px-4">
         <div className="max-w-6xl mx-auto">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
             Seminar Hall
           </h1>
-          <div className="h-1 w-24 bg-[#7cb983] rounded-full" />
+          <div className="h-1 w-24 bg-[#ffde59] rounded-full" />
         </div>
       </section>
 
@@ -116,7 +116,7 @@ export default function SeminarHall() {
       {/* Intro Paragraph */}
       <section className="bg-[#FBFBEE] py-10 px-4">
         <div className="max-w-6xl mx-auto">
-          <p className="text-base md:text-lg leading-relaxed text-gray-700 border-l-4 border-[#7cb983] pl-6">
+          <p className="text-base md:text-lg leading-relaxed text-gray-700 border-l-4 border-[#0f8f56] pl-6">
             <strong>Our Seminar Hall is designed as an inviting environment equipped for both learning and networking. We blend modern technology with thoughtful amenities to make every event a success.</strong>
           </p>
         </div>
@@ -125,14 +125,14 @@ export default function SeminarHall() {
       {/* Features Section */}
       <section className="bg-white py-16 px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-xl md:text-2xl font-bold text-[#006837] mb-8">Features:</h2>
+          <h2 className="text-xl md:text-2xl font-bold text-[#0b6d41] mb-8">Features:</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {features.map(({ icon: Icon, label, description }) => (
               <div
                 key={label}
-                className="bg-[#FBFBEE] rounded-2xl p-6 border border-[#7cb983]/20 hover:shadow-md transition-shadow duration-300 flex flex-col gap-4"
+                className="bg-[#FBFBEE] rounded-2xl p-6 border border-[#0f8f56]/20 hover:shadow-md transition-shadow duration-300 flex flex-col gap-4"
               >
-                <div className="w-12 h-12 rounded-full bg-[#006837] flex items-center justify-center flex-shrink-0">
+                <div className="w-12 h-12 rounded-full bg-[#0b6d41] flex items-center justify-center flex-shrink-0">
                   <Icon className="text-white w-6 h-6" />
                 </div>
                 <p className="text-gray-600 text-sm leading-relaxed">
@@ -145,7 +145,7 @@ export default function SeminarHall() {
       </section>
 
       {/* Closing Statement */}
-      <section className="bg-[#006837] py-12 px-4">
+      <section className="bg-[#0b6d41] py-12 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-white text-base md:text-lg leading-relaxed">
             <strong>JKKN Institutions takes pride in offering a Seminar Hall that combines functionality, comfort, and cutting-edge technology to create an enriching experience for all.</strong>

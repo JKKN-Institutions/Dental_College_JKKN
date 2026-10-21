@@ -44,12 +44,12 @@ export default function DigitalClassRoom() {
       <Header />
 
       {/* Hero Banner */}
-      <section className="bg-[#006837] py-16 px-4">
+      <section className="bg-[#0b6d41] py-16 px-4">
         <div className="max-w-6xl mx-auto">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
             DIGITAL CLASS ROOM
           </h1>
-          <div className="h-1 w-24 bg-[#7cb983] rounded-full" />
+          <div className="h-1 w-24 bg-[#ffde59] rounded-full" />
         </div>
       </section>
 
@@ -88,7 +88,7 @@ export default function DigitalClassRoom() {
       {/* Intro Paragraph */}
       <section className="bg-[#FBFBEE] py-10 px-4">
         <div className="max-w-6xl mx-auto">
-          <p className="text-base md:text-lg leading-relaxed text-gray-700 border-l-4 border-[#7cb983] pl-6">
+          <p className="text-base md:text-lg leading-relaxed text-gray-700 border-l-4 border-[#0f8f56] pl-6">
             <strong>Digital Learning Studios at JKKN Institutions: Where Technology Meets Excellence At JKKN Institutions, we redefine the learning studio experience by integrating cutting-edge technology and design thinking into our learning spaces. Every detail is meticulously planned to inspire innovation, encourage collaborative learning, and cater to the diverse needs of our learner body.</strong>
           </p>
         </div>
@@ -99,11 +99,11 @@ export default function DigitalClassRoom() {
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
           {/* Smart Technology */}
-          <div className="bg-[#FBFBEE] rounded-2xl p-6 border border-[#7cb983]/20 hover:shadow-md transition-shadow duration-300 flex flex-col gap-4">
-            <div className="w-12 h-12 rounded-full bg-[#006837] flex items-center justify-center flex-shrink-0">
+          <div className="bg-[#FBFBEE] rounded-2xl p-6 border border-[#0f8f56]/20 hover:shadow-md transition-shadow duration-300 flex flex-col gap-4">
+            <div className="w-12 h-12 rounded-full bg-[#0b6d41] flex items-center justify-center flex-shrink-0">
               <Tv className="text-white w-6 h-6" />
             </div>
-            <h2 className="text-lg font-bold text-[#006837]">Smart Technology:</h2>
+            <h2 className="text-lg font-bold text-[#0b6d41]">Smart Technology:</h2>
             <div className="text-gray-600 text-sm leading-relaxed flex flex-col gap-2">
               <p><strong>Smart TVs and Multimedia Projectors: Tailor-made for interactive and dynamic learning experiences.</strong></p>
               <p><strong>Portable Microphones and Speakers: For crystal-clear audio in larger learning studios, ensuring that every word is heard.</strong></p>
@@ -114,11 +114,11 @@ export default function DigitalClassRoom() {
           </div>
 
           {/* Customizable Learning Spaces */}
-          <div className="bg-[#FBFBEE] rounded-2xl p-6 border border-[#7cb983]/20 hover:shadow-md transition-shadow duration-300 flex flex-col gap-4">
-            <div className="w-12 h-12 rounded-full bg-[#006837] flex items-center justify-center flex-shrink-0">
+          <div className="bg-[#FBFBEE] rounded-2xl p-6 border border-[#0f8f56]/20 hover:shadow-md transition-shadow duration-300 flex flex-col gap-4">
+            <div className="w-12 h-12 rounded-full bg-[#0b6d41] flex items-center justify-center flex-shrink-0">
               <LayoutGrid className="text-white w-6 h-6" />
             </div>
-            <h2 className="text-lg font-bold text-[#006837]">Customizable Learning Spaces:</h2>
+            <h2 className="text-lg font-bold text-[#0b6d41]">Customizable Learning Spaces:</h2>
             <div className="text-gray-600 text-sm leading-relaxed flex flex-col gap-2">
               <p><strong>Multiple Learning Studio Settings: From traditional learning auditoriums to collaborative workspaces, we have a layout for every learning style.</strong></p>
               <p><strong>Comfortable Seating: Ergonomically designed for optimum focus and minimal distraction.</strong></p>
@@ -126,33 +126,33 @@ export default function DigitalClassRoom() {
           </div>
 
           {/* High-Speed Connectivity */}
-          <div className="bg-[#FBFBEE] rounded-2xl p-6 border border-[#7cb983]/20 hover:shadow-md transition-shadow duration-300 flex flex-col gap-4">
-            <div className="w-12 h-12 rounded-full bg-[#006837] flex items-center justify-center flex-shrink-0">
+          <div className="bg-[#FBFBEE] rounded-2xl p-6 border border-[#0f8f56]/20 hover:shadow-md transition-shadow duration-300 flex flex-col gap-4">
+            <div className="w-12 h-12 rounded-full bg-[#0b6d41] flex items-center justify-center flex-shrink-0">
               <Wifi className="text-white w-6 h-6" />
             </div>
-            <h2 className="text-lg font-bold text-[#006837]">High-Speed Connectivity:</h2>
+            <h2 className="text-lg font-bold text-[#0b6d41]">High-Speed Connectivity:</h2>
             <p className="text-gray-600 text-sm leading-relaxed">
               <strong>Uninterrupted Internet Access: Because the flow of information shouldn&apos;t have to wait.</strong>
             </p>
           </div>
 
           {/* Inspiring Aesthetics */}
-          <div className="bg-[#FBFBEE] rounded-2xl p-6 border border-[#7cb983]/20 hover:shadow-md transition-shadow duration-300 flex flex-col gap-4">
-            <div className="w-12 h-12 rounded-full bg-[#006837] flex items-center justify-center flex-shrink-0">
+          <div className="bg-[#FBFBEE] rounded-2xl p-6 border border-[#0f8f56]/20 hover:shadow-md transition-shadow duration-300 flex flex-col gap-4">
+            <div className="w-12 h-12 rounded-full bg-[#0b6d41] flex items-center justify-center flex-shrink-0">
               <Palette className="text-white w-6 h-6" />
             </div>
-            <h2 className="text-lg font-bold text-[#006837]">Inspiring Aesthetics:</h2>
+            <h2 className="text-lg font-bold text-[#0b6d41]">Inspiring Aesthetics:</h2>
             <p className="text-gray-600 text-sm leading-relaxed">
               <strong>Vibrant Colors and Motivational Posters: Creating an ambiance that stimulates creativity and enthusiasm.</strong>
             </p>
           </div>
 
           {/* Clean and Hygienic */}
-          <div className="bg-[#FBFBEE] rounded-2xl p-6 border border-[#7cb983]/20 hover:shadow-md transition-shadow duration-300 flex flex-col gap-4">
-            <div className="w-12 h-12 rounded-full bg-[#006837] flex items-center justify-center flex-shrink-0">
+          <div className="bg-[#FBFBEE] rounded-2xl p-6 border border-[#0f8f56]/20 hover:shadow-md transition-shadow duration-300 flex flex-col gap-4">
+            <div className="w-12 h-12 rounded-full bg-[#0b6d41] flex items-center justify-center flex-shrink-0">
               <Sparkles className="text-white w-6 h-6" />
             </div>
-            <h2 className="text-lg font-bold text-[#006837]">Clean and Hygienic:</h2>
+            <h2 className="text-lg font-bold text-[#0b6d41]">Clean and Hygienic:</h2>
             <p className="text-gray-600 text-sm leading-relaxed">
               <strong>Regular Maintenance: To offer a safe and hygienic environment conducive to focused learning.</strong>
             </p>
@@ -162,7 +162,7 @@ export default function DigitalClassRoom() {
       </section>
 
       {/* Closing Statement */}
-      <section className="bg-[#006837] py-12 px-4">
+      <section className="bg-[#0b6d41] py-12 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-white text-base md:text-lg leading-relaxed">
             <strong>Experience the future of learning today, only at JKKN Institutions.</strong>

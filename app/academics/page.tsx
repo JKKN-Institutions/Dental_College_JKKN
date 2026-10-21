@@ -96,7 +96,7 @@ export default function Academics() {
       <Header />
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-[#006837] to-[#7cb983] py-16 px-4">
+      <section className="relative bg-gradient-to-br from-[#0b6d41] to-[#0f8f56] py-16 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
@@ -110,25 +110,25 @@ export default function Academics() {
       </section>
 
       {/* Programs Overview */}
-      <section className="py-16 px-4 bg-[#FBF8F3]">
+      <section className="py-16 px-4 bg-[#fbfbee]">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-8">
             {/* BDS Program */}
             <Link href="/academics/details-of-academic-programs/bds" className="group">
-              <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border-2 border-transparent hover:border-[#7cb983] h-full">
+              <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border-2 border-transparent hover:border-[#0f8f56] h-full">
                 <div className="flex items-center gap-4 mb-6">
-                  <div className="bg-[#7cb983] text-white w-16 h-16 rounded-xl flex items-center justify-center text-2xl font-bold">
+                  <div className="bg-[#ffde59] text-[#032816] w-16 h-16 rounded-xl flex items-center justify-center text-2xl font-bold">
                     BDS
                   </div>
                   <div>
-                    <h2 className="text-xl font-bold text-[#006837]">Bachelor of Dental Surgery</h2>
+                    <h2 className="text-xl font-bold text-[#0b6d41]">Bachelor of Dental Surgery</h2>
                     <p className="text-sm text-gray-600">5-Year Undergraduate Program</p>
                   </div>
                 </div>
                 <p className="text-sm text-gray-700 mb-6 leading-relaxed">
                   Comprehensive undergraduate program with 100 seats. Includes 4 years of academic training plus 1-year compulsory rotatory internship. NDC approved learning framework with extensive clinical exposure.
                 </p>
-                <div className="flex items-center text-sm text-[#7cb983] font-semibold group-hover:translate-x-2 transition-transform">
+                <div className="flex items-center text-sm text-[#0b6d41] font-semibold group-hover:translate-x-2 transition-transform">
                   Learn More →
                 </div>
               </div>
@@ -136,20 +136,20 @@ export default function Academics() {
 
             {/* MDS Programs */}
             <Link href="/academics/details-of-academic-programs/mds" className="group">
-              <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border-2 border-transparent hover:border-[#7cb983] h-full">
+              <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border-2 border-transparent hover:border-[#0f8f56] h-full">
                 <div className="flex items-center gap-4 mb-6">
-                  <div className="bg-[#006837] text-white w-16 h-16 rounded-xl flex items-center justify-center text-2xl font-bold">
+                  <div className="bg-[#0b6d41] text-white w-16 h-16 rounded-xl flex items-center justify-center text-2xl font-bold">
                     MDS
                   </div>
                   <div>
-                    <h2 className="text-xl font-bold text-[#006837]">Master of Dental Surgery</h2>
+                    <h2 className="text-xl font-bold text-[#0b6d41]">Master of Dental Surgery</h2>
                     <p className="text-sm text-gray-600">3-Year Postgraduate Programs</p>
                   </div>
                 </div>
                 <p className="text-sm text-gray-700 mb-6 leading-relaxed">
                   5 NDC-approved MDS specializations with 18 total seats. Advanced postgraduate training in specialized fields with research, dissertation, and comprehensive clinical practice.
                 </p>
-                <div className="flex items-center text-sm text-[#7cb983] font-semibold group-hover:translate-x-2 transition-transform">
+                <div className="flex items-center text-sm text-[#0b6d41] font-semibold group-hover:translate-x-2 transition-transform">
                   Explore Specializations →
                 </div>
               </div>
@@ -161,7 +161,7 @@ export default function Academics() {
       {/* MDS Specializations */}
       <section className="py-16 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#006837] mb-12 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#0b6d41] mb-12 text-center">
             MDS Specializations
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -198,12 +198,12 @@ export default function Academics() {
               },
             ].map((spec, index) => (
               <Link key={index} href={spec.href} className="group">
-                <div className="bg-[#FBF8F3] rounded-xl p-6 hover:bg-[#7cb983] hover:text-white transition-all duration-300 h-full border-2 border-transparent hover:border-[#006837]">
+                <div className="bg-[#fbfbee] rounded-xl p-6 hover:bg-[#085032] hover:text-white transition-all duration-300 h-full border-2 border-transparent hover:border-[#0b6d41]">
                   <div className="flex justify-between items-start mb-3">
-                    <h3 className="text-lg font-bold group-hover:text-white text-[#006837]">
+                    <h3 className="text-lg font-bold group-hover:text-white text-[#0b6d41]">
                       {spec.name}
                     </h3>
-                    <span className="bg-[#7cb983] group-hover:bg-white group-hover:text-[#006837] text-white px-3 py-1 rounded-full text-sm font-semibold whitespace-nowrap shrink-0 ml-2">
+                    <span className="bg-[#ffde59] group-hover:bg-white group-hover:text-[#0b6d41] text-[#032816] px-3 py-1 rounded-full text-sm font-semibold whitespace-nowrap shrink-0 ml-2">
                       {spec.seats} Seats
                     </span>
                   </div>
@@ -218,9 +218,9 @@ export default function Academics() {
       </section>
 
       {/* Academic Resources */}
-      <section className="py-16 px-4 bg-[#FBF8F3]">
+      <section className="py-16 px-4 bg-[#fbfbee]">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#006837] mb-12 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#0b6d41] mb-12 text-center">
             Academic Resources
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -276,8 +276,8 @@ export default function Academics() {
             ].map((resource, index) => (
               <Link key={index} href={resource.href} className="group">
                 <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 h-full">
-                  <div className="mb-4"><resource.icon className="w-10 h-10 text-[#006837]" /></div>
-                  <h3 className="text-lg font-bold text-[#006837] mb-2 group-hover:text-[#7cb983]">
+                  <div className="mb-4"><resource.icon className="w-10 h-10 text-[#0b6d41]" /></div>
+                  <h3 className="text-lg font-bold text-[#0b6d41] mb-2 group-hover:text-[#0b6d41]">
                     {resource.title}
                   </h3>
                   <p className="text-gray-600 text-sm">
@@ -291,7 +291,7 @@ export default function Academics() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 px-4 bg-gradient-to-r from-[#006837] to-[#7cb983]">
+      <section className="py-16 px-4 bg-gradient-to-r from-[#0b6d41] to-[#0f8f56]">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
             Ready to Begin Your Dental Education Journey?
@@ -304,13 +304,13 @@ export default function Academics() {
               href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_medium=organic&utm_campaign=academics"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-white hover:bg-gray-100 text-[#006837] font-bold px-8 py-4 rounded-lg text-lg transition-all duration-300 shadow-lg"
+              className="bg-white hover:bg-gray-100 text-[#0b6d41] font-bold px-8 py-4 rounded-lg text-lg transition-all duration-300 shadow-lg"
             >
               Apply Now
             </a>
             <Link
               href="/contact"
-              className="bg-transparent border-2 border-white hover:bg-white hover:text-[#006837] text-white font-bold px-8 py-4 rounded-lg text-lg transition-all duration-300"
+              className="bg-transparent border-2 border-white hover:bg-white hover:text-[#0b6d41] text-white font-bold px-8 py-4 rounded-lg text-lg transition-all duration-300"
             >
               Contact Us
             </Link>

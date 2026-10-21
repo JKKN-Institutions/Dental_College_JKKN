@@ -42,12 +42,12 @@ export default function NCCNSSPage() {
       <Header />
 
       {/* Hero Banner */}
-      <section className="bg-gradient-to-br from-[#006837] via-[#00572e] to-[#003d20] py-16 px-4">
+      <section className="bg-gradient-to-br from-[#0b6d41] via-[#00572e] to-[#003d20] py-16 px-4">
         <div className="max-w-6xl mx-auto">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
             NCC/NSS
           </h1>
-          <h2 className="text-lg md:text-xl font-semibold text-green-200">
+          <h2 className="text-lg md:text-xl font-semibold text-[#d4f1e4]">
             JKKN DENTAL COLLEGE &amp; HOSPITAL
           </h2>
         </div>
@@ -56,10 +56,10 @@ export default function NCCNSSPage() {
       {/* National Service Scheme */}
       <section className="bg-[#FBFBEE] py-14 px-4">
         <div className="max-w-6xl mx-auto">
-          <h3 className="text-xl md:text-2xl font-bold text-[#006837] mb-6">
+          <h3 className="text-xl md:text-2xl font-bold text-[#0b6d41] mb-6">
             NATIONAL SERVICE SCHEME
           </h3>
-          <div className="bg-white rounded-xl p-6 shadow-sm border border-green-100 border-l-4 border-l-[#7cb983]">
+          <div className="bg-white rounded-xl p-6 shadow-sm border border-[#d4f1e4] border-l-4 border-l-[#0f8f56]">
             <p className="text-gray-700 text-base font-semibold leading-relaxed">
               NSS COORDINATOR: DR NS NAVEENRAJ, MDS
             </p>
@@ -70,10 +70,10 @@ export default function NCCNSSPage() {
       {/* Self Financing Unit */}
       <section className="bg-white py-14 px-4">
         <div className="max-w-6xl mx-auto">
-          <h3 className="text-xl md:text-2xl font-bold text-[#006837] mb-6">
+          <h3 className="text-xl md:text-2xl font-bold text-[#0b6d41] mb-6">
             SELF FINANCING UNIT
           </h3>
-          <div className="bg-[#FBFBEE] rounded-xl p-8 shadow-sm border border-green-100 border-l-4 border-l-[#7cb983] space-y-5">
+          <div className="bg-[#FBFBEE] rounded-xl p-8 shadow-sm border border-[#d4f1e4] border-l-4 border-l-[#0f8f56] space-y-5">
             <p className="text-gray-700 text-base font-semibold leading-relaxed">
               National Service Scheme (NSS) at JKKN Dental College &amp; Hospital
             </p>

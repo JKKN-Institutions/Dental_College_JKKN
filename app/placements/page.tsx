@@ -55,12 +55,12 @@ export default function PlacementsPage() {
   ];
 
   const careerPathways = [
-    { icon: <Briefcase className="w-7 h-7 text-[#006837]" />, title: 'Private Practice', desc: 'Start your own dental clinic or join an established practice. JKKN alumni run successful clinics across Tamil Nadu and beyond.' },
-    { icon: <Hospital className="w-7 h-7 text-[#006837]" />, title: 'Hospital Dentistry', desc: 'Work in multi-specialty hospitals, corporate dental chains, or government hospitals as a dental surgeon or specialist.' },
-    { icon: <GraduationCap className="w-7 h-7 text-[#006837]" />, title: 'Higher Studies (MDS)', desc: 'Pursue MDS in 5 specialisations at JKKN or other top institutions. Strong NEET MDS coaching support provided.' },
-    { icon: <Globe className="w-7 h-7 text-[#006837]" />, title: 'International Opportunities', desc: 'Work in the UK (NHS), UAE, Saudi Arabia, or Singapore. CDC assists with licensing exam preparation and placement.' },
-    { icon: <Microscope className="w-7 h-7 text-[#006837]" />, title: 'Research & Academia', desc: 'Join dental research institutions or teaching colleges. 50+ senior learner publications provide a strong research foundation.' },
-    { icon: <Users className="w-7 h-7 text-[#006837]" />, title: 'Public Health Dentistry', desc: 'Serve communities through government PHCs, public health programmes, and dental outreach initiatives across India.' },
+    { icon: <Briefcase className="w-7 h-7 text-[#0b6d41]" />, title: 'Private Practice', desc: 'Start your own dental clinic or join an established practice. JKKN alumni run successful clinics across Tamil Nadu and beyond.' },
+    { icon: <Hospital className="w-7 h-7 text-[#0b6d41]" />, title: 'Hospital Dentistry', desc: 'Work in multi-specialty hospitals, corporate dental chains, or government hospitals as a dental surgeon or specialist.' },
+    { icon: <GraduationCap className="w-7 h-7 text-[#0b6d41]" />, title: 'Higher Studies (MDS)', desc: 'Pursue MDS in 5 specialisations at JKKN or other top institutions. Strong NEET MDS coaching support provided.' },
+    { icon: <Globe className="w-7 h-7 text-[#0b6d41]" />, title: 'International Opportunities', desc: 'Work in the UK (NHS), UAE, Saudi Arabia, or Singapore. CDC assists with licensing exam preparation and placement.' },
+    { icon: <Microscope className="w-7 h-7 text-[#0b6d41]" />, title: 'Research & Academia', desc: 'Join dental research institutions or teaching colleges. 50+ senior learner publications provide a strong research foundation.' },
+    { icon: <Users className="w-7 h-7 text-[#0b6d41]" />, title: 'Public Health Dentistry', desc: 'Serve communities through government PHCs, public health programmes, and dental outreach initiatives across India.' },
   ];
 
   // Alumni testimonials are published only when the CDC holds a consented, verified quote
@@ -75,7 +75,7 @@ export default function PlacementsPage() {
       <nav aria-label="Breadcrumb" className="bg-white border-b border-gray-100">
         <div className="max-w-5xl mx-auto px-4 py-3">
           <ol className="flex items-center gap-2 text-sm text-gray-500">
-            <li><Link href="/" className="hover:text-[#006837] transition-colors">Home</Link></li>
+            <li><Link href="/" className="hover:text-[#0b6d41] transition-colors">Home</Link></li>
             <li className="text-gray-300">/</li>
             <li className="text-gray-900 font-medium">Placements</li>
           </ol>
@@ -83,13 +83,13 @@ export default function PlacementsPage() {
       </nav>
 
       {/* -- Top Announcement Bar -- */}
-      <div className="bg-[#002309] text-white py-2 px-4">
+      <div className="bg-[#032816] text-white py-2 px-4">
         <div className="max-w-7xl mx-auto flex items-center justify-center gap-3 sm:gap-6 flex-wrap">
           <span className="flex items-center gap-2 text-sm font-medium">
-            <span className="w-2 h-2 bg-green-400 rounded-full inline-block" />
+            <span className="w-2 h-2 bg-[#0f8f56] rounded-full inline-block" />
             Admissions Open {collegeFacts.currentAdmissionYear}
           </span>
-          <a href="tel:+919345855001" className="bg-[#006837] hover:bg-[#005a30] text-white text-sm font-semibold px-4 py-1.5 rounded-full border border-white/20 transition-colors">
+          <a href="tel:+919345855001" className="bg-[#0b6d41] hover:bg-[#005a30] text-white text-sm font-semibold px-4 py-1.5 rounded-full border border-white/20 transition-colors">
             Call Us
           </a>
         </div>
@@ -98,13 +98,13 @@ export default function PlacementsPage() {
       {/* -- Hero Section -- */}
       <section
         className="relative flex flex-col items-center justify-center text-center px-4 py-16 sm:py-24"
-        style={{ background: 'linear-gradient(135deg, #006837 0%, #002309 100%)', minHeight: '88vh' }}
+        style={{ background: 'linear-gradient(135deg, #0b6d41 0%, #032816 100%)', minHeight: '88vh' }}
       >
         <div className="mb-6 inline-flex items-center gap-2 bg-white/10 backdrop-blur border border-white/20 text-white text-sm font-medium px-5 py-2 rounded-full">
           <GraduationCap className="w-4 h-4" /> NDC (formerly DCI) Approved | {collegeFacts.placementOutcomeRate}% placed or in higher studies, {collegeFacts.placementBds.batch}
         </div>
         <h1 className="text-white font-extrabold leading-tight mb-6 max-w-4xl" style={{ fontSize: 'clamp(2rem, 5vw + 0.5rem, 3.5rem)' }}>
-          BDS &amp; MDS Placements at <span className="text-[#7cb983]">JKKN Dental College</span>
+          BDS &amp; MDS Placements at <span className="text-[#ffde59]">JKKN Dental College</span>
         </h1>
         <p className="hero-description text-white/80 max-w-2xl mb-10 leading-relaxed" style={{ fontSize: 'clamp(0.9rem, 1vw + 0.5rem, 1.1rem)' }}>
           With {collegeFacts.placementBds.placed} of {collegeFacts.placementBds.graduated} BDS graduates placed and {collegeFacts.placementBds.higherStudies} in higher studies in {collegeFacts.placementBds.batch}, and all {collegeFacts.placementMds.graduated} MDS graduates placed,
@@ -119,10 +119,10 @@ export default function PlacementsPage() {
           ))}
         </ul>
         <div className="flex flex-col sm:flex-row gap-4 items-center">
-          <a href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_medium=organic&utm_campaign=placements" target="_blank" rel="nofollow noopener noreferrer" className="bg-[#7cb983] hover:bg-[#6ba872] text-white font-bold px-8 py-4 rounded-full transition-all transform hover:scale-105 shadow-lg text-base">
+          <a href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_medium=organic&utm_campaign=placements" target="_blank" rel="nofollow noopener noreferrer" className="bg-[#ffde59] hover:bg-[#e6c64d] text-[#032816] font-bold px-8 py-4 rounded-full transition-all transform hover:scale-105 shadow-lg text-base">
             Enquire About Placements
           </a>
-          <a href="tel:+919345855001" className="bg-[#006837] hover:bg-[#002309] text-white font-bold px-8 py-4 rounded-full transition-all transform hover:scale-105 shadow-lg text-base">
+          <a href="tel:+919345855001" className="bg-[#0b6d41] hover:bg-[#032816] text-white font-bold px-8 py-4 rounded-full transition-all transform hover:scale-105 shadow-lg text-base">
             Call Placement Cell
           </a>
         </div>
@@ -132,8 +132,8 @@ export default function PlacementsPage() {
       <div className="bg-white border-b border-gray-100 py-4 px-4">
         <div className="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8">
           <div className="flex items-center gap-3">
-            <span className="flex items-center gap-1.5 bg-[#FBFBEE] border border-[#7cb983] text-[#006837] text-sm font-semibold px-3 py-1.5 rounded-full">{'\u2713'} NDC</span>
-            <span className="flex items-center gap-1.5 bg-[#FBFBEE] border border-[#7cb983] text-[#006837] text-sm font-semibold px-3 py-1.5 rounded-full">{'\u2713'} NAAC</span>
+            <span className="flex items-center gap-1.5 bg-[#FBFBEE] border border-[#0f8f56] text-[#0b6d41] text-sm font-semibold px-3 py-1.5 rounded-full">{'\u2713'} NDC</span>
+            <span className="flex items-center gap-1.5 bg-[#FBFBEE] border border-[#0f8f56] text-[#0b6d41] text-sm font-semibold px-3 py-1.5 rounded-full">{'\u2713'} NAAC</span>
           </div>
           <span className="hidden sm:block text-gray-300">|</span>
           <p className="text-gray-500 text-sm text-center">Affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai</p>
@@ -147,11 +147,11 @@ export default function PlacementsPage() {
             Placement Highlights
           </h2>
           <p className="text-gray-500 text-base mb-4">Career Development Centre — connecting graduates with India&apos;s top dental employers</p>
-          <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-12" />
+          <div className="w-14 h-1 bg-[#ffde59] rounded mx-auto mb-12" />
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-10">
             {highlightStats.map((stat) => (
               <div key={stat.label} className="bg-white border border-gray-100 rounded-2xl p-5 shadow-sm">
-                <div className="font-extrabold text-[#006837]" style={{ fontSize: 'clamp(1.8rem, 3vw, 2.5rem)' }}>{stat.value}</div>
+                <div className="font-extrabold text-[#0b6d41]" style={{ fontSize: 'clamp(1.8rem, 3vw, 2.5rem)' }}>{stat.value}</div>
                 <div className="text-xs font-semibold tracking-widest text-gray-400 mt-1">{stat.label}</div>
                 <p className="text-gray-500 text-xs mt-2 leading-relaxed">{stat.desc}</p>
               </div>
@@ -171,12 +171,12 @@ export default function PlacementsPage() {
             How the Placement Process Works
           </h2>
           <p className="text-gray-500 text-base mb-4">A structured 5-step process by the Career Development Centre</p>
-          <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-12" />
+          <div className="w-14 h-1 bg-[#ffde59] rounded mx-auto mb-12" />
           <div className="relative text-left max-w-2xl mx-auto">
-            <div className="absolute left-5 top-0 bottom-0 w-0.5 bg-[#7cb983]" />
+            <div className="absolute left-5 top-0 bottom-0 w-0.5 bg-[#ffde59]" />
             {processSteps.map((step) => (
               <div key={step.step} className="relative pl-14 pb-10 last:pb-0">
-                <div className="absolute left-2 top-0 w-7 h-7 rounded-full bg-[#006837] text-white text-xs font-bold flex items-center justify-center z-10">
+                <div className="absolute left-2 top-0 w-7 h-7 rounded-full bg-[#0b6d41] text-white text-xs font-bold flex items-center justify-center z-10">
                   {step.step}
                 </div>
                 <h3 className="text-base font-bold text-gray-900 mb-2">{step.title}</h3>
@@ -194,16 +194,16 @@ export default function PlacementsPage() {
             Top Recruiters &amp; Hiring Partners
           </h2>
           <p className="text-gray-500 text-base mb-4">Leading dental healthcare organisations that hire from JKKN</p>
-          <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-12" />
+          <div className="w-14 h-1 bg-[#ffde59] rounded mx-auto mb-12" />
 
           {/* National Recruiters */}
           <h3 className="text-lg font-bold text-gray-900 mb-6 flex items-center justify-center gap-2">
-            <Building2 className="w-5 h-5 text-[#006837]" /> National Recruiters
+            <Building2 className="w-5 h-5 text-[#0b6d41]" /> National Recruiters
           </h3>
           <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-12 list-none p-0 m-0">
             {nationalRecruiters.map((company) => (
               <li key={company.name} className="bg-[#FBFBEE] rounded-2xl p-4 flex items-center gap-4 text-left">
-                <div className="w-10 h-10 rounded-xl bg-[#006837] text-white flex items-center justify-center font-bold text-lg flex-shrink-0">
+                <div className="w-10 h-10 rounded-xl bg-[#0b6d41] text-white flex items-center justify-center font-bold text-lg flex-shrink-0">
                   {company.name.charAt(0)}
                 </div>
                 <div>
@@ -216,12 +216,12 @@ export default function PlacementsPage() {
 
           {/* International Recruiters */}
           <h3 className="text-lg font-bold text-gray-900 mb-6 flex items-center justify-center gap-2">
-            <Globe className="w-5 h-5 text-[#006837]" /> International Opportunities
+            <Globe className="w-5 h-5 text-[#0b6d41]" /> International Opportunities
           </h3>
           <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 list-none p-0 m-0">
             {internationalRecruiters.map((company) => (
               <li key={company.name} className="bg-[#FBFBEE] rounded-2xl p-4 flex items-center gap-4 text-left">
-                <div className="w-10 h-10 rounded-xl bg-[#006837] text-white flex items-center justify-center font-bold text-lg flex-shrink-0">
+                <div className="w-10 h-10 rounded-xl bg-[#0b6d41] text-white flex items-center justify-center font-bold text-lg flex-shrink-0">
                   {company.name.charAt(0)}
                 </div>
                 <div>
@@ -241,11 +241,11 @@ export default function PlacementsPage() {
             Year-Wise Placement Trends
           </h2>
           <p className="text-gray-500 text-base mb-4">Consistent growth in placements across batches</p>
-          <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-12" />
+          <div className="w-14 h-1 bg-[#ffde59] rounded mx-auto mb-12" />
           <div className="overflow-x-auto">
             <table className="w-full text-sm text-left border-collapse">
               <thead>
-                <tr className="bg-[#006837] text-white">
+                <tr className="bg-[#0b6d41] text-white">
                   <th className="px-4 py-3 font-semibold rounded-tl-xl">Batch Year</th>
                   <th className="px-4 py-3 font-semibold">Placed or in Higher Studies (NIRF)</th>
                   <th className="px-4 py-3 font-semibold">Key Recruiters</th>
@@ -257,7 +257,7 @@ export default function PlacementsPage() {
                 {trendData.map((row, i) => (
                   <tr key={row.batch} className={i % 2 === 0 ? 'bg-white' : 'bg-[#FBFBEE]'}>
                     <td className="px-4 py-3 font-semibold text-gray-900">{row.batch}</td>
-                    <td className="px-4 py-3 text-[#006837] font-bold">{row.rate}</td>
+                    <td className="px-4 py-3 text-[#0b6d41] font-bold">{row.rate}</td>
                     <td className="px-4 py-3 text-gray-600">{row.recruiters}</td>
                     <td className="px-4 py-3 text-gray-600">{row.international}</td>
                     <td className="px-4 py-3 text-gray-600">{row.higherStudies}</td>
@@ -278,7 +278,7 @@ export default function PlacementsPage() {
           <p className="text-gray-500 max-w-3xl mx-auto mb-4 leading-relaxed" style={{ fontSize: 'clamp(0.875rem, 1vw + 0.4rem, 1.05rem)' }}>
             A BDS or MDS degree from JKKN opens doors to diverse career opportunities. The CDC provides guidance for every pathway.
           </p>
-          <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-12" />
+          <div className="w-14 h-1 bg-[#ffde59] rounded mx-auto mb-12" />
           <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 list-none p-0 m-0">
             {careerPathways.map((item) => (
               <li key={item.title} className="bg-[#FBFBEE] rounded-2xl p-6 text-center hover:shadow-md transition-shadow">
@@ -299,7 +299,7 @@ export default function PlacementsPage() {
             What Our Placed Alumni Say
           </h2>
           <p className="text-gray-500 text-base mb-4">Hear from graduates who built their careers through JKKN</p>
-          <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-12" />
+          <div className="w-14 h-1 bg-[#0b6d41] rounded mx-auto mb-12" />
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {testimonials.map((t) => (
               <div key={t.name} className="bg-white rounded-2xl p-6 text-left shadow-sm">
@@ -323,15 +323,15 @@ export default function PlacementsPage() {
             Frequently Asked Questions — Placements
           </h2>
           <p className="text-gray-500 text-base mb-4">Your placement queries answered</p>
-          <div className="w-14 h-1 bg-[#7cb983] rounded mx-auto mb-12" />
+          <div className="w-14 h-1 bg-[#ffde59] rounded mx-auto mb-12" />
           <div className="text-left space-y-3">
             {faqs.map((faq, i) => (
-              <details key={i} className="rounded-xl overflow-hidden border border-gray-200 group open:border-[#7cb983]">
+              <details key={i} className="rounded-xl overflow-hidden border border-gray-200 group open:border-[#0f8f56]">
                 <summary className="flex items-center justify-between px-5 py-4 text-left font-semibold text-gray-900 text-sm sm:text-base bg-white hover:bg-gray-50 transition-colors cursor-pointer list-none [&::-webkit-details-marker]:hidden">
                   <span>{faq.q}</span>
-                  <svg className="w-5 h-5 text-[#006837] flex-shrink-0 ml-4 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" /></svg>
+                  <svg className="w-5 h-5 text-[#0b6d41] flex-shrink-0 ml-4 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" /></svg>
                 </summary>
-                <div className="faq-answer px-5 pb-5 pt-2 text-gray-500 text-sm leading-relaxed border-t border-[#7cb983]/20 bg-white">{faq.a}</div>
+                <div className="faq-answer px-5 pb-5 pt-2 text-gray-500 text-sm leading-relaxed border-t border-[#0f8f56]/20 bg-white">{faq.a}</div>
               </details>
             ))}
           </div>
@@ -341,7 +341,7 @@ export default function PlacementsPage() {
       {/* -- CTA Section -- */}
       <section
         className="py-16 px-4 text-center"
-        style={{ background: 'linear-gradient(135deg, #002309 0%, #006837 100%)' }}
+        style={{ background: 'linear-gradient(135deg, #032816 0%, #0b6d41 100%)' }}
       >
         <div className="max-w-4xl mx-auto">
           <h2 className="text-white font-extrabold mb-6" style={{ fontSize: 'clamp(1.6rem, 3vw + 0.5rem, 2.4rem)' }}>
@@ -368,7 +368,7 @@ export default function PlacementsPage() {
             </a>
           </div>
           <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">
-            <a href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_medium=organic&utm_campaign=placements" target="_blank" rel="nofollow noopener noreferrer" className="bg-[#7cb983] hover:bg-[#6ba872] text-white font-bold px-8 py-4 rounded-full transition-all transform hover:scale-105 shadow-lg text-base">
+            <a href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_medium=organic&utm_campaign=placements" target="_blank" rel="nofollow noopener noreferrer" className="bg-[#ffde59] hover:bg-[#e6c64d] text-[#032816] font-bold px-8 py-4 rounded-full transition-all transform hover:scale-105 shadow-lg text-base">
               Apply Now — {collegeFacts.currentAdmissionYear}
             </a>
             <Link href="/committee/placement-cell-cdc/" className="bg-white/10 hover:bg-white/20 border border-white/30 text-white font-bold px-8 py-4 rounded-full transition-all transform hover:scale-105 text-base">

@@ -437,11 +437,11 @@ export default function AdmissionPage() {
       {/* ============================================================ */}
       {/*  HERO SECTION                                                */}
       {/* ============================================================ */}
-      <section className="relative bg-gradient-to-br from-[#006837] to-[#7cb983] py-16 sm:py-20 lg:py-24 px-4">
+      <section className="relative bg-gradient-to-br from-[#0b6d41] to-[#0f8f56] py-16 sm:py-20 lg:py-24 px-4">
         <div className="max-w-7xl mx-auto text-center">
           {/* AI Campus + Year Badges */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-6">
-            <span className="inline-flex items-center gap-2 bg-[#7cb983]/20 backdrop-blur-sm text-[#7cb983] px-4 py-2 rounded-full text-sm font-bold border border-[#7cb983]/30">
+            <span className="inline-flex items-center gap-2 bg-[#0f8f56]/20 backdrop-blur-sm text-[#ffde59] px-4 py-2 rounded-full text-sm font-bold border border-[#0f8f56]/30">
               <Cpu className="w-4 h-4" />
               AI-Integrated Dental Campus
             </span>
@@ -453,7 +453,7 @@ export default function AdmissionPage() {
 
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
             Admission Open for{' '}
-            <span className="text-[#7cb983]">BDS & MDS</span>
+            <span className="text-[#ffde59]">BDS & MDS</span>
           </h1>
 
           <p className="hero-description text-lg md:text-xl text-gray-200 max-w-3xl mx-auto mb-8">
@@ -472,7 +472,7 @@ export default function AdmissionPage() {
               { number: `${collegeFacts.collegeAge}+`, label: 'Years of Excellence' },
             ].map((stat) => (
               <div key={stat.label} className="text-center">
-                <div className="text-3xl sm:text-4xl font-bold text-[#7cb983]">
+                <div className="text-3xl sm:text-4xl font-bold text-[#ffde59]">
                   {stat.number}
                 </div>
                 <div className="text-sm text-gray-200 mt-1">{stat.label}</div>
@@ -486,7 +486,7 @@ export default function AdmissionPage() {
               href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_medium=organic&utm_campaign=admissions"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-[#7cb983] hover:bg-[#6ba872] text-white font-bold py-3.5 px-8 rounded-full transition-all duration-300 min-h-[44px] flex items-center justify-center gap-2 hover:scale-105 active:scale-95 text-lg"
+              className="bg-[#ffde59] hover:bg-[#e6c64d] text-[#032816] font-bold py-3.5 px-8 rounded-full transition-all duration-300 min-h-[44px] flex items-center justify-center gap-2 hover:scale-105 active:scale-95 text-lg"
             >
               Apply Now <ArrowRight className="w-5 h-5" />
             </a>
@@ -505,11 +505,11 @@ export default function AdmissionPage() {
                 key={badge.label}
                 className="flex items-center gap-3 bg-[#FBFBEE] rounded-xl px-4 py-3 border border-gray-100"
               >
-                <div className="bg-[#006837] text-white w-10 h-10 rounded-lg flex items-center justify-center shrink-0">
+                <div className="bg-[#0b6d41] text-white w-10 h-10 rounded-lg flex items-center justify-center shrink-0">
                   <badge.icon className="w-5 h-5" />
                 </div>
                 <div className="min-w-0">
-                  <p className="text-sm font-bold text-[#006837] leading-tight">
+                  <p className="text-sm font-bold text-[#0b6d41] leading-tight">
                     {badge.label}
                   </p>
                   <p className="text-xs text-gray-500 leading-tight truncate">
@@ -528,7 +528,7 @@ export default function AdmissionPage() {
       <section className="py-16 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#006837] mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0b6d41] mb-4">
               Programs Offered
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
@@ -544,11 +544,11 @@ export default function AdmissionPage() {
                 className="bg-[#FBFBEE] rounded-2xl p-8 border border-gray-100 hover:shadow-xl transition-shadow duration-300"
               >
                 <div className="flex items-center gap-4 mb-6">
-                  <div className="bg-[#006837] text-white w-14 h-14 rounded-xl flex items-center justify-center">
+                  <div className="bg-[#0b6d41] text-white w-14 h-14 rounded-xl flex items-center justify-center">
                     <prog.icon className="w-7 h-7" />
                   </div>
                   <div>
-                    <h3 className="text-2xl font-bold text-[#006837]">
+                    <h3 className="text-2xl font-bold text-[#0b6d41]">
                       {prog.program}
                     </h3>
                     <p className="text-gray-600 text-sm">{prog.fullName}</p>
@@ -557,29 +557,29 @@ export default function AdmissionPage() {
 
                 <div className="space-y-3">
                   <div className="flex items-center gap-3 text-gray-700">
-                    <Clock className="w-5 h-5 text-[#7cb983] shrink-0" />
+                    <Clock className="w-5 h-5 text-[#0b6d41] shrink-0" />
                     <span>Duration: {prog.duration}</span>
                   </div>
                   <div className="flex items-center gap-3 text-gray-700">
-                    <Users className="w-5 h-5 text-[#7cb983] shrink-0" />
+                    <Users className="w-5 h-5 text-[#0b6d41] shrink-0" />
                     <span>Seats: {prog.seats}</span>
                   </div>
                   <div className="flex items-center gap-3 text-gray-700">
-                    <ClipboardList className="w-5 h-5 text-[#7cb983] shrink-0" />
+                    <ClipboardList className="w-5 h-5 text-[#0b6d41] shrink-0" />
                     <span>Eligibility: {prog.eligibility}</span>
                   </div>
                 </div>
 
                 {prog.program === 'MDS' && (
                   <div className="mt-6 pt-6 border-t border-gray-200">
-                    <p className="text-sm font-semibold text-[#006837] mb-3">
+                    <p className="text-sm font-semibold text-[#0b6d41] mb-3">
                       Specializations:
                     </p>
                     <div className="flex flex-wrap gap-2">
                       {collegeFacts.mdsSpecialisationsList.map((spec) => (
                         <span
                           key={spec.name}
-                          className="bg-[#7cb983]/15 text-[#006837] px-3 py-1 rounded-full text-xs font-medium"
+                          className="bg-[#0f8f56]/15 text-[#0b6d41] px-3 py-1 rounded-full text-xs font-medium"
                         >
                           {spec.name} ({spec.seats})
                         </span>
@@ -596,7 +596,7 @@ export default function AdmissionPage() {
       {/* ============================================================ */}
       {/*  CLINICAL EXPOSURE STATS                                     */}
       {/* ============================================================ */}
-      <section className="py-16 px-4 bg-gradient-to-br from-[#006837] to-[#002309]">
+      <section className="py-16 px-4 bg-gradient-to-br from-[#0b6d41] to-[#032816]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
@@ -614,7 +614,7 @@ export default function AdmissionPage() {
                 key={stat.label}
                 className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 text-center border border-white/10"
               >
-                <stat.icon className="w-8 h-8 text-[#7cb983] mx-auto mb-3" />
+                <stat.icon className="w-8 h-8 text-[#ffde59] mx-auto mb-3" />
                 <div className="text-3xl sm:text-4xl font-bold text-white mb-1">
                   {stat.number}
                 </div>
@@ -633,7 +633,7 @@ export default function AdmissionPage() {
                 key={point}
                 className="flex items-start gap-3 bg-white/5 rounded-xl p-4 border border-white/10"
               >
-                <CheckCircle className="w-5 h-5 text-[#7cb983] mt-0.5 shrink-0" />
+                <CheckCircle className="w-5 h-5 text-[#ffde59] mt-0.5 shrink-0" />
                 <p className="text-sm text-gray-200">{point}</p>
               </div>
             ))}
@@ -647,7 +647,7 @@ export default function AdmissionPage() {
       <section className="py-16 px-4 bg-[#FBFBEE]">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#006837] mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0b6d41] mb-4">
               Admission Process
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
@@ -659,11 +659,11 @@ export default function AdmissionPage() {
             {admissionSteps.map((item) => (
               <div key={item.step} className="relative text-center">
                 <div className="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-shadow duration-300 h-full">
-                  <div className="bg-[#006837] text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 text-lg font-bold">
+                  <div className="bg-[#0b6d41] text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 text-lg font-bold">
                     {item.step}
                   </div>
-                  <item.icon className="w-8 h-8 text-[#7cb983] mx-auto mb-3" />
-                  <h3 className="text-base font-bold text-[#006837] mb-2">
+                  <item.icon className="w-8 h-8 text-[#0b6d41] mx-auto mb-3" />
+                  <h3 className="text-base font-bold text-[#0b6d41] mb-2">
                     {item.title}
                   </h3>
                   <p className="text-gray-600 text-sm">{item.description}</p>
@@ -680,7 +680,7 @@ export default function AdmissionPage() {
       <section className="py-16 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#006837] mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0b6d41] mb-4">
               Admission Resources
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
@@ -697,18 +697,18 @@ export default function AdmissionPage() {
                   href={page.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group bg-[#FBFBEE] rounded-2xl p-6 hover:shadow-xl hover:border-[#7cb983] border border-transparent transition-all duration-300"
+                  className="group bg-[#FBFBEE] rounded-2xl p-6 hover:shadow-xl hover:border-[#0f8f56] border border-transparent transition-all duration-300"
                 >
                   <div className="flex items-center gap-4 mb-4">
-                    <div className="bg-[#7cb983] text-white w-12 h-12 rounded-xl flex items-center justify-center group-hover:bg-[#006837] transition-colors duration-300">
+                    <div className="bg-[#ffde59] text-[#032816] w-12 h-12 rounded-xl flex items-center justify-center group-hover:bg-[#0b6d41] transition-colors duration-300">
                       <page.icon className="w-6 h-6" />
                     </div>
-                    <h3 className="text-lg font-bold text-[#006837]">
+                    <h3 className="text-lg font-bold text-[#0b6d41]">
                       {page.title}
                     </h3>
                   </div>
                   <p className="text-gray-600 text-sm mb-4">{page.description}</p>
-                  <span className="text-[#7cb983] text-sm font-semibold inline-flex items-center gap-1 group-hover:translate-x-2 transition-transform duration-300">
+                  <span className="text-[#0b6d41] text-sm font-semibold inline-flex items-center gap-1 group-hover:translate-x-2 transition-transform duration-300">
                     Learn More <ArrowRight className="w-4 h-4" />
                   </span>
                 </a>
@@ -716,18 +716,18 @@ export default function AdmissionPage() {
               <Link
                 key={page.href}
                 href={page.href}
-                className="group bg-[#FBFBEE] rounded-2xl p-6 hover:shadow-xl hover:border-[#7cb983] border border-transparent transition-all duration-300"
+                className="group bg-[#FBFBEE] rounded-2xl p-6 hover:shadow-xl hover:border-[#0f8f56] border border-transparent transition-all duration-300"
               >
                 <div className="flex items-center gap-4 mb-4">
-                  <div className="bg-[#7cb983] text-white w-12 h-12 rounded-xl flex items-center justify-center group-hover:bg-[#006837] transition-colors duration-300">
+                  <div className="bg-[#ffde59] text-[#032816] w-12 h-12 rounded-xl flex items-center justify-center group-hover:bg-[#0b6d41] transition-colors duration-300">
                     <page.icon className="w-6 h-6" />
                   </div>
-                  <h3 className="text-lg font-bold text-[#006837]">
+                  <h3 className="text-lg font-bold text-[#0b6d41]">
                     {page.title}
                   </h3>
                 </div>
                 <p className="text-gray-600 text-sm mb-4">{page.description}</p>
-                <span className="text-[#7cb983] text-sm font-semibold inline-flex items-center gap-1 group-hover:translate-x-2 transition-transform duration-300">
+                <span className="text-[#0b6d41] text-sm font-semibold inline-flex items-center gap-1 group-hover:translate-x-2 transition-transform duration-300">
                   Learn More <ArrowRight className="w-4 h-4" />
                 </span>
               </Link>
@@ -742,7 +742,7 @@ export default function AdmissionPage() {
       <section className="py-16 px-4 bg-[#FBFBEE]">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#006837] mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0b6d41] mb-4">
               Career Paths After BDS & MDS
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
@@ -757,10 +757,10 @@ export default function AdmissionPage() {
                 key={career.title}
                 className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-100"
               >
-                <div className="bg-[#7cb983]/15 w-12 h-12 rounded-xl flex items-center justify-center mb-4">
-                  <career.icon className="w-6 h-6 text-[#006837]" />
+                <div className="bg-[#0f8f56]/15 w-12 h-12 rounded-xl flex items-center justify-center mb-4">
+                  <career.icon className="w-6 h-6 text-[#0b6d41]" />
                 </div>
-                <h3 className="text-lg font-bold text-[#006837] mb-2">
+                <h3 className="text-lg font-bold text-[#0b6d41] mb-2">
                   {career.title}
                 </h3>
                 <p className="text-gray-600 text-sm">{career.description}</p>
@@ -776,7 +776,7 @@ export default function AdmissionPage() {
       <section className="py-16 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#006837] mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0b6d41] mb-4">
               Why Choose JKKN Dental College?
             </h2>
           </div>
@@ -787,7 +787,7 @@ export default function AdmissionPage() {
                 key={reason.text}
                 className="bg-[#FBFBEE] rounded-xl p-6 flex items-start gap-4 shadow-sm hover:shadow-md transition-shadow duration-300"
               >
-                <reason.icon className="w-6 h-6 text-[#7cb983] mt-0.5 shrink-0" />
+                <reason.icon className="w-6 h-6 text-[#0b6d41] mt-0.5 shrink-0" />
                 <p className="text-gray-700 font-medium">{reason.text}</p>
               </div>
             ))}
@@ -798,7 +798,7 @@ export default function AdmissionPage() {
       {/* ============================================================ */}
       {/*  CTA SECTION — Apply Now + WhatsApp                         */}
       {/* ============================================================ */}
-      <section className="py-16 px-4 bg-gradient-to-r from-[#006837] to-[#7cb983]">
+      <section className="py-16 px-4 bg-gradient-to-r from-[#0b6d41] to-[#0f8f56]">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Ready to Start Your Dental Career?
@@ -814,13 +814,13 @@ export default function AdmissionPage() {
               href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_medium=organic&utm_campaign=admissions"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-[#7cb983] hover:bg-[#6ba872] text-[#006837] font-bold px-8 py-4 rounded-full transition-all duration-300 min-h-[44px] flex items-center justify-center gap-2 hover:scale-105 active:scale-95 text-lg"
+              className="bg-[#ffde59] hover:bg-[#e6c64d] text-[#0b6d41] font-bold px-8 py-4 rounded-full transition-all duration-300 min-h-[44px] flex items-center justify-center gap-2 hover:scale-105 active:scale-95 text-lg"
             >
               Apply Now <ArrowRight className="w-5 h-5" />
             </a>
             <a
               href="tel:+919345855001"
-              className="border-2 border-white hover:bg-white hover:text-[#006837] text-white font-bold px-8 py-4 rounded-full transition-all duration-300 min-h-[44px] flex items-center justify-center gap-2"
+              className="border-2 border-white hover:bg-white hover:text-[#0b6d41] text-white font-bold px-8 py-4 rounded-full transition-all duration-300 min-h-[44px] flex items-center justify-center gap-2"
             >
               <Phone className="w-5 h-5" /> Call Us
             </a>
@@ -858,7 +858,7 @@ export default function AdmissionPage() {
       {/* ============================================================ */}
       <section className="py-16 px-4 bg-[#FBFBEE]">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#006837] text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#0b6d41] text-center mb-12">
             Frequently Asked Questions
           </h2>
 
@@ -890,10 +890,10 @@ export default function AdmissionPage() {
                 className="group bg-white rounded-xl overflow-hidden shadow-sm"
               >
                 <summary className="flex items-center justify-between p-6 cursor-pointer hover:bg-gray-50 transition-colors duration-200">
-                  <h3 className="text-base md:text-lg font-semibold text-[#006837] pr-4">
+                  <h3 className="text-base md:text-lg font-semibold text-[#0b6d41] pr-4">
                     {faq.q}
                   </h3>
-                  <ArrowRight className="w-5 h-5 text-[#7cb983] shrink-0 transition-transform duration-300 group-open:rotate-90" />
+                  <ArrowRight className="w-5 h-5 text-[#0b6d41] shrink-0 transition-transform duration-300 group-open:rotate-90" />
                 </summary>
                 <div className="px-6 pb-6">
                   <p className="text-gray-700 leading-relaxed">{faq.a}</p>

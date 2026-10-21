@@ -50,13 +50,13 @@ export default function MdsSeatsInTamilNadu() {
       showSpecialities
     >
       <div className="mt-10">
-        <h2 className="text-xl sm:text-2xl font-bold text-[#006837] mb-4">
+        <h2 className="text-xl sm:text-2xl font-bold text-[#0b6d41] mb-4">
           How the 435 seats split across the nine specialities
         </h2>
         <div className="overflow-x-auto rounded-xl border border-gray-200 shadow-sm bg-white">
           <table className="min-w-full text-sm">
             <thead>
-              <tr className="bg-[#006837] text-white text-left">
+              <tr className="bg-[#0b6d41] text-white text-left">
                 <th scope="col" className="px-4 py-3 font-semibold">
                   Speciality
                 </th>
@@ -74,7 +74,7 @@ export default function MdsSeatsInTamilNadu() {
                   <th scope="row" className="px-4 py-2.5 text-left font-medium text-gray-900">
                     {s.label}
                   </th>
-                  <td className="px-4 py-2.5 text-right tabular-nums font-semibold text-[#006837]">
+                  <td className="px-4 py-2.5 text-right tabular-nums font-semibold text-[#0b6d41]">
                     {s.seats}
                   </td>
                   <td className="px-4 py-2.5 text-right tabular-nums text-gray-600">
