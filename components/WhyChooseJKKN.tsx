@@ -16,7 +16,7 @@ export default function WhyChooseJKKN() {
           <ol className="space-y-5 sm:space-y-6 list-none p-0 m-0">
             <li className="flex gap-3 sm:gap-4">
               <div className="flex-shrink-0">
-                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#ffde59] rounded-full flex items-center justify-center font-bold text-sm sm:text-lg">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#ffde59] rounded-full flex items-center justify-center font-bold text-sm sm:text-lg text-[#032816]">
                   01
                 </div>
               </div>
@@ -30,7 +30,7 @@ export default function WhyChooseJKKN() {
 
             <li className="flex gap-3 sm:gap-4">
               <div className="flex-shrink-0">
-                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#ffde59] rounded-full flex items-center justify-center font-bold text-sm sm:text-lg">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#ffde59] rounded-full flex items-center justify-center font-bold text-sm sm:text-lg text-[#032816]">
                   02
                 </div>
               </div>
@@ -46,7 +46,7 @@ export default function WhyChooseJKKN() {
           <ol className="space-y-5 sm:space-y-6 list-none p-0 m-0">
             <li className="flex gap-3 sm:gap-4">
               <div className="flex-shrink-0">
-                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#ffde59] rounded-full flex items-center justify-center font-bold text-sm sm:text-lg">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#ffde59] rounded-full flex items-center justify-center font-bold text-sm sm:text-lg text-[#032816]">
                   03
                 </div>
               </div>
@@ -60,7 +60,7 @@ export default function WhyChooseJKKN() {
 
             <li className="flex gap-3 sm:gap-4">
               <div className="flex-shrink-0">
-                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#ffde59] rounded-full flex items-center justify-center font-bold text-sm sm:text-lg">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#ffde59] rounded-full flex items-center justify-center font-bold text-sm sm:text-lg text-[#032816]">
                   04
                 </div>
               </div>

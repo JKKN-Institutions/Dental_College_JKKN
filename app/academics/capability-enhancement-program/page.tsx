@@ -138,7 +138,7 @@ export default function CapabilityEnhancementProgram() {
               href="/pdf/Capability-Enhancement-Program-ViewDocument.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-[#0b6d41] hover:bg-[#005a2f] text-white font-semibold py-3 px-12 rounded-xl transition-colors duration-200 shadow-sm"
+              className="inline-block bg-[#0b6d41] hover:bg-[#085032] text-white font-semibold py-3 px-12 rounded-xl transition-colors duration-200 shadow-sm"
             >
               View Document
             </a>

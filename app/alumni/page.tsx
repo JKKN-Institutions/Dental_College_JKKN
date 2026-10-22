@@ -387,13 +387,13 @@ export default function Alumni() {
           <div className="flex flex-col sm:flex-row gap-4 mb-12">
             <a
               href="/alumni-association-activities"
-              className="bg-[#5CB85C] hover:bg-[#4CAF50] text-white font-bold py-3 px-8 rounded transition-colors duration-300 text-base md:text-lg text-center"
+              className="bg-[#ffde59] hover:bg-[#e6c64d] text-[#032816] font-bold py-3 px-8 rounded transition-colors duration-300 text-base md:text-lg text-center"
             >
               ALUMNI ASSOCIATION ACTIVITIES
             </a>
             <a
               href="/alumni-registration-certificate"
-              className="bg-[#5CB85C] hover:bg-[#4CAF50] text-white font-bold py-3 px-8 rounded transition-colors duration-300 text-base md:text-lg text-center"
+              className="bg-[#ffde59] hover:bg-[#e6c64d] text-[#032816] font-bold py-3 px-8 rounded transition-colors duration-300 text-base md:text-lg text-center"
             >
               ALUMNI REGISTRATION CERTIFICATE
             </a>

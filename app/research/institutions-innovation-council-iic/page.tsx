@@ -101,7 +101,7 @@ export default function InstitutionsInnovationCouncilIIC() {
 
           {/* Certificate Image */}
           <div className="flex justify-center">
-            <div className="w-full max-w-3xl bg-white border-4 border-[#D4A574] p-6 rounded-2xl shadow-md">
+            <div className="w-full max-w-3xl bg-white border-4 border-[#e6c64d] p-6 rounded-2xl shadow-md">
               <img
                 src="/images/INSTITUTIONS-INNOVATION-COUNCIL.png"
                 alt="IIC Certificate of Establishment"

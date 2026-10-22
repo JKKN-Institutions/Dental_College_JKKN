@@ -138,7 +138,7 @@ export default async function BlogPreviewPage({
           {isAdmin && (
             <Link
               href={`/admin/blogs/${post.id}`}
-              className="text-sm font-semibold text-[#0b6d41] underline underline-offset-2 hover:text-[#005a2e] ml-auto"
+              className="text-sm font-semibold text-[#0b6d41] underline underline-offset-2 hover:text-[#085032] ml-auto"
             >
               Edit this post →
             </Link>

@@ -161,7 +161,7 @@ export default function AdmissionProcess() {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
               Admission <span className="text-[#ffde59]">Process</span>
             </h1>
-            <p className="text-lg text-gray-200 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-lg text-gray-100 max-w-3xl mx-auto leading-relaxed">
               Your complete step-by-step guide to joining JKKN Dental College. Follow these simple steps to begin your journey in dental education.
             </p>
           </div>
@@ -403,7 +403,7 @@ export default function AdmissionProcess() {
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
             Have Questions About Admissions?
           </h2>
-          <p className="text-lg text-gray-200 mb-10">
+          <p className="text-lg text-gray-100 mb-10">
             Our admission counselors are here to help you through every step of the process.
           </p>
 
@@ -413,7 +413,7 @@ export default function AdmissionProcess() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
               </svg>
               <h3 className="text-white font-bold mb-2">Call Us</h3>
-              <p className="text-gray-200">+91 93458 55001</p>
+              <p className="text-gray-100">+91 93458 55001</p>
             </div>
 
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
@@ -421,7 +421,7 @@ export default function AdmissionProcess() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
               </svg>
               <h3 className="text-white font-bold mb-2">Email Us</h3>
-              <p className="text-gray-200">dental@jkkn.ac.in</p>
+              <p className="text-gray-100">dental@jkkn.ac.in</p>
             </div>
 
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
@@ -430,7 +430,7 @@ export default function AdmissionProcess() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
               </svg>
               <h3 className="text-white font-bold mb-2">Visit Us</h3>
-              <p className="text-gray-200">Komarapalayam, Tamil Nadu</p>
+              <p className="text-gray-100">Komarapalayam, Tamil Nadu</p>
             </div>
           </div>
 

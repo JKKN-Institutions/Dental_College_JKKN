@@ -43,7 +43,7 @@ export default function SEDGCell() {
       <Header />
 
       {/* Hero Banner */}
-      <section className="bg-gradient-to-br from-[#0b6d41] via-[#00572e] to-[#003d20] py-16 px-4">
+      <section className="bg-gradient-to-br from-[#0b6d41] via-[#085032] to-[#032816] py-16 px-4">
         <div className="max-w-6xl mx-auto">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
             SEDG CELL
@@ -223,7 +223,7 @@ export default function SEDGCell() {
       </section>
 
       {/* Contact Us */}
-      <section className="bg-gradient-to-br from-[#0b6d41] via-[#00572e] to-[#003d20] py-14 px-4">
+      <section className="bg-gradient-to-br from-[#0b6d41] via-[#085032] to-[#032816] py-14 px-4">
         <div className="max-w-6xl mx-auto">
           <h3 className="text-xl md:text-2xl font-bold text-white mb-6 flex items-center gap-3">
             <Phone className="w-6 h-6" /> Contact Us

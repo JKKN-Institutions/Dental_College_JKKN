@@ -109,8 +109,8 @@ export default function InstitutionalDevelopmentPlan() {
 
           {/* Institutional Documents card */}
           <div className="bg-white rounded-2xl shadow-sm overflow-hidden">
-            <div className="bg-[#ffde59] px-8 py-4">
-              <h3 className="text-lg md:text-xl font-bold text-white">Institutional Documents</h3>
+            <div className="bg-[#ffde59] px-8 py-4 text-[#032816]">
+              <h3 className="text-lg md:text-xl font-bold text-[#032816]">Institutional Documents</h3>
             </div>
             <div className="px-8 py-8 space-y-6">
               <p className="text-gray-700 leading-relaxed">
@@ -120,14 +120,14 @@ export default function InstitutionalDevelopmentPlan() {
                 <a
                   href="/pdf/Download-UGC-IDP-Guidelines.pdf"
                   download
-                  className="bg-[#0b6d41] hover:bg-[#005a2f] text-white font-bold py-3 px-8 rounded-lg transition-all duration-300 text-center uppercase text-sm"
+                  className="bg-[#0b6d41] hover:bg-[#085032] text-white font-bold py-3 px-8 rounded-lg transition-all duration-300 text-center uppercase text-sm"
                 >
                   DOWNLOAD UGC IDP GUIDELINES
                 </a>
                 <a
                   href="/pdf/Download-JKKN-IDP-Document.pdf"
                   download
-                  className="bg-[#0b6d41] hover:bg-[#005a2f] text-white font-bold py-3 px-8 rounded-lg transition-all duration-300 text-center uppercase text-sm"
+                  className="bg-[#0b6d41] hover:bg-[#085032] text-white font-bold py-3 px-8 rounded-lg transition-all duration-300 text-center uppercase text-sm"
                 >
                   DOWNLOAD JKKN IDP DOCUMENT
                 </a>
@@ -166,8 +166,8 @@ export default function InstitutionalDevelopmentPlan() {
 
           {/* In Alignment With card */}
           <div className="bg-white rounded-2xl shadow-sm overflow-hidden">
-            <div className="bg-[#ffde59] px-8 py-4">
-              <h3 className="text-lg md:text-xl font-bold text-white">In Alignment With</h3>
+            <div className="bg-[#ffde59] px-8 py-4 text-[#032816]">
+              <h3 className="text-lg md:text-xl font-bold text-[#032816]">In Alignment With</h3>
             </div>
             <ul className="px-8 py-8 space-y-3">
               <li className="flex gap-3 text-gray-700">

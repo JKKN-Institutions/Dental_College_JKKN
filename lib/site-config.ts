@@ -41,7 +41,7 @@ export const siteConfig = {
 
   /** Hover shade for buttons */
   primaryHover:
-    process.env.NEXT_PUBLIC_PRIMARY_HOVER ?? '#005a2e',
+    process.env.NEXT_PUBLIC_PRIMARY_HOVER ?? '#085032',
 
   /** Contact */
   phone: process.env.NEXT_PUBLIC_COLLEGE_PHONE ?? '+919345855001',

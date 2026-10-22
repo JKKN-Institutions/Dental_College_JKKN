@@ -66,8 +66,8 @@ export default function NAAC() {
                     onClick={() => setActiveSection(item.id)}
                     className={`w-full text-left px-6 py-4 font-bold transition-all duration-300 ${
                       activeSection === item.id
-                        ? 'bg-gray-400 text-white'
-                        : 'bg-[#89B54C] text-white hover:bg-[#7aa03d]'
+                        ? 'bg-[#ffde59] text-[#032816]'
+                        : 'bg-[#0b6d41] text-white hover:bg-[#085032]'
                     }`}
                   >
                     {item.label}
@@ -4463,7 +4463,7 @@ export default function NAAC() {
                     SSR
                   </h2>
                   <div>
-                    <button className="bg-[#89B54C] hover:bg-[#7aa03d] text-white font-bold py-3 px-8 rounded transition-all duration-300">
+                    <button className="bg-[#ffde59] hover:bg-[#e6c64d] text-[#032816] font-bold py-3 px-8 rounded transition-all duration-300">
                       Pre Qualified SSR
                     </button>
                   </div>
@@ -4475,7 +4475,7 @@ export default function NAAC() {
       </div>
 
       {/* Floating Send Button */}
-      <button className="fixed bottom-8 right-8 bg-[#89B54C] hover:bg-[#7aa03d] text-white p-4 rounded-full shadow-lg transition-all duration-300 z-50">
+      <button className="fixed bottom-8 right-8 bg-[#0b6d41] hover:bg-[#085032] text-white p-4 rounded-full shadow-lg transition-all duration-300 z-50">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="h-6 w-6"

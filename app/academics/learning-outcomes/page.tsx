@@ -250,7 +250,7 @@ export default function LearningOutcomes() {
                 </div>
                 <div className="px-5 py-5 bg-[#FBFBEE]">
                   <h3 className="text-sm font-bold text-[#0b6d41] uppercase tracking-wide mb-3 flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-[#ffde59] inline-block"></span>
+                    <span className="w-2 h-2 rounded-full bg-[#ffde59] inline-block text-[#032816]"></span>
                     Skills
                   </h3>
                   <ul className="space-y-2">
@@ -303,7 +303,7 @@ export default function LearningOutcomes() {
                 </div>
                 <div className="px-5 py-5 bg-[#FBFBEE]">
                   <h3 className="text-sm font-bold text-[#0b6d41] uppercase tracking-wide mb-3 flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-[#ffde59] inline-block"></span>
+                    <span className="w-2 h-2 rounded-full bg-[#ffde59] inline-block text-[#032816]"></span>
                     Skills
                   </h3>
                   <ul className="space-y-2">
@@ -358,7 +358,7 @@ export default function LearningOutcomes() {
                 </div>
                 <div className="px-5 py-5 bg-[#FBFBEE]">
                   <h3 className="text-sm font-bold text-[#0b6d41] uppercase tracking-wide mb-3 flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-[#ffde59] inline-block"></span>
+                    <span className="w-2 h-2 rounded-full bg-[#ffde59] inline-block text-[#032816]"></span>
                     Skills
                   </h3>
                   <ul className="space-y-2">
@@ -417,7 +417,7 @@ export default function LearningOutcomes() {
                 </div>
                 <div className="px-5 py-5 bg-[#FBFBEE]">
                   <h3 className="text-sm font-bold text-[#0b6d41] uppercase tracking-wide mb-3 flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-[#ffde59] inline-block"></span>
+                    <span className="w-2 h-2 rounded-full bg-[#ffde59] inline-block text-[#032816]"></span>
                     Skills
                   </h3>
                   <ul className="space-y-2">
@@ -481,7 +481,7 @@ export default function LearningOutcomes() {
                 </div>
                 <div className="px-5 py-5 bg-[#FBFBEE]">
                   <h3 className="text-sm font-bold text-[#0b6d41] uppercase tracking-wide mb-3 flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-[#ffde59] inline-block"></span>
+                    <span className="w-2 h-2 rounded-full bg-[#ffde59] inline-block text-[#032816]"></span>
                     Skills
                   </h3>
                   <ul className="space-y-2">
@@ -539,7 +539,7 @@ export default function LearningOutcomes() {
                 </div>
                 <div className="px-5 py-5 bg-[#FBFBEE]">
                   <h3 className="text-sm font-bold text-[#0b6d41] uppercase tracking-wide mb-3 flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-[#ffde59] inline-block"></span>
+                    <span className="w-2 h-2 rounded-full bg-[#ffde59] inline-block text-[#032816]"></span>
                     Skills
                   </h3>
                   <ul className="space-y-2">
@@ -600,7 +600,7 @@ export default function LearningOutcomes() {
                 </div>
                 <div className="px-5 py-5 bg-[#FBFBEE]">
                   <h3 className="text-sm font-bold text-[#0b6d41] uppercase tracking-wide mb-3 flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-[#ffde59] inline-block"></span>
+                    <span className="w-2 h-2 rounded-full bg-[#ffde59] inline-block text-[#032816]"></span>
                     Skills
                   </h3>
                   <ul className="space-y-2">
@@ -669,7 +669,7 @@ export default function LearningOutcomes() {
                 </div>
                 <div className="px-5 py-5 bg-[#FBFBEE]">
                   <h3 className="text-sm font-bold text-[#0b6d41] uppercase tracking-wide mb-3 flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-[#ffde59] inline-block"></span>
+                    <span className="w-2 h-2 rounded-full bg-[#ffde59] inline-block text-[#032816]"></span>
                     Skills
                   </h3>
                   <ul className="space-y-2">
@@ -721,7 +721,7 @@ export default function LearningOutcomes() {
                 </div>
                 <div className="px-5 py-5 bg-[#FBFBEE]">
                   <h3 className="text-sm font-bold text-[#0b6d41] uppercase tracking-wide mb-3 flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-[#ffde59] inline-block"></span>
+                    <span className="w-2 h-2 rounded-full bg-[#ffde59] inline-block text-[#032816]"></span>
                     Skills
                   </h3>
                   <ul className="space-y-2">
@@ -775,7 +775,7 @@ export default function LearningOutcomes() {
                 </div>
                 <div className="px-5 py-5 bg-[#FBFBEE]">
                   <h3 className="text-sm font-bold text-[#0b6d41] uppercase tracking-wide mb-3 flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-[#ffde59] inline-block"></span>
+                    <span className="w-2 h-2 rounded-full bg-[#ffde59] inline-block text-[#032816]"></span>
                     Skills
                   </h3>
                   <ul className="space-y-2">
@@ -829,7 +829,7 @@ export default function LearningOutcomes() {
                 </div>
                 <div className="px-5 py-5 bg-[#FBFBEE]">
                   <h3 className="text-sm font-bold text-[#0b6d41] uppercase tracking-wide mb-3 flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-[#ffde59] inline-block"></span>
+                    <span className="w-2 h-2 rounded-full bg-[#ffde59] inline-block text-[#032816]"></span>
                     Skill
                   </h3>
                   <ul className="space-y-2">
@@ -884,7 +884,7 @@ export default function LearningOutcomes() {
                 </div>
                 <div className="px-5 py-5 bg-[#FBFBEE]">
                   <h3 className="text-sm font-bold text-[#0b6d41] uppercase tracking-wide mb-3 flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-[#ffde59] inline-block"></span>
+                    <span className="w-2 h-2 rounded-full bg-[#ffde59] inline-block text-[#032816]"></span>
                     Skills
                   </h3>
                   <ul className="space-y-2">
@@ -937,7 +937,7 @@ export default function LearningOutcomes() {
                 </div>
                 <div className="px-5 py-5 bg-[#FBFBEE]">
                   <h3 className="text-sm font-bold text-[#0b6d41] uppercase tracking-wide mb-3 flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-[#ffde59] inline-block"></span>
+                    <span className="w-2 h-2 rounded-full bg-[#ffde59] inline-block text-[#032816]"></span>
                     Skills
                   </h3>
                   <ul className="space-y-2">
@@ -991,7 +991,7 @@ export default function LearningOutcomes() {
                 </div>
                 <div className="px-5 py-5 bg-[#FBFBEE]">
                   <h3 className="text-sm font-bold text-[#0b6d41] uppercase tracking-wide mb-3 flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-[#ffde59] inline-block"></span>
+                    <span className="w-2 h-2 rounded-full bg-[#ffde59] inline-block text-[#032816]"></span>
                     Skills
                   </h3>
                   <ul className="space-y-2">
@@ -1044,7 +1044,7 @@ export default function LearningOutcomes() {
                 </div>
                 <div className="px-5 py-5 bg-[#FBFBEE]">
                   <h3 className="text-sm font-bold text-[#0b6d41] uppercase tracking-wide mb-3 flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-[#ffde59] inline-block"></span>
+                    <span className="w-2 h-2 rounded-full bg-[#ffde59] inline-block text-[#032816]"></span>
                     Skill
                   </h3>
                   <ul className="space-y-2">
@@ -1101,7 +1101,7 @@ export default function LearningOutcomes() {
                 </div>
                 <div className="px-5 py-5 bg-[#FBFBEE]">
                   <h3 className="text-sm font-bold text-[#0b6d41] uppercase tracking-wide mb-3 flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-[#ffde59] inline-block"></span>
+                    <span className="w-2 h-2 rounded-full bg-[#ffde59] inline-block text-[#032816]"></span>
                     Skills
                   </h3>
                   <ul className="space-y-2">
@@ -1160,7 +1160,7 @@ export default function LearningOutcomes() {
                 </div>
                 <div className="px-5 py-5 bg-[#FBFBEE]">
                   <h3 className="text-sm font-bold text-[#0b6d41] uppercase tracking-wide mb-3 flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-[#ffde59] inline-block"></span>
+                    <span className="w-2 h-2 rounded-full bg-[#ffde59] inline-block text-[#032816]"></span>
                     Skills
                   </h3>
                   <ul className="space-y-2">
@@ -1215,7 +1215,7 @@ export default function LearningOutcomes() {
                 </div>
                 <div className="px-5 py-5 bg-[#FBFBEE]">
                   <h3 className="text-sm font-bold text-[#0b6d41] uppercase tracking-wide mb-3 flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-[#ffde59] inline-block"></span>
+                    <span className="w-2 h-2 rounded-full bg-[#ffde59] inline-block text-[#032816]"></span>
                     Skill
                   </h3>
                   <ul className="space-y-2">
@@ -1273,7 +1273,7 @@ export default function LearningOutcomes() {
                 </div>
                 <div className="px-5 py-5 bg-[#FBFBEE]">
                   <h3 className="text-sm font-bold text-[#0b6d41] uppercase tracking-wide mb-3 flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-[#ffde59] inline-block"></span>
+                    <span className="w-2 h-2 rounded-full bg-[#ffde59] inline-block text-[#032816]"></span>
                     Skills
                   </h3>
                   <ul className="space-y-2">
@@ -1333,7 +1333,7 @@ export default function LearningOutcomes() {
                 </div>
                 <div className="px-5 py-5 bg-[#FBFBEE]">
                   <h3 className="text-sm font-bold text-[#0b6d41] uppercase tracking-wide mb-3 flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-[#ffde59] inline-block"></span>
+                    <span className="w-2 h-2 rounded-full bg-[#ffde59] inline-block text-[#032816]"></span>
                     Skills
                   </h3>
                   <ul className="space-y-2">
@@ -1393,7 +1393,7 @@ export default function LearningOutcomes() {
                 </div>
                 <div className="px-5 py-5 bg-[#FBFBEE]">
                   <h3 className="text-sm font-bold text-[#0b6d41] uppercase tracking-wide mb-3 flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-[#ffde59] inline-block"></span>
+                    <span className="w-2 h-2 rounded-full bg-[#ffde59] inline-block text-[#032816]"></span>
                     Skills
                   </h3>
                   <ul className="space-y-2">
@@ -1463,7 +1463,7 @@ export default function LearningOutcomes() {
                 {/* Skills */}
                 <div className="px-6 py-5 bg-[#FBFBEE]">
                   <h3 className="text-sm font-bold uppercase tracking-wide mb-3 flex items-center gap-2 text-[#0b6d41]">
-                    <span className="w-3 h-3 rounded-sm bg-[#ffde59] inline-block"></span>
+                    <span className="w-3 h-3 rounded-sm bg-[#ffde59] inline-block text-[#032816]"></span>
                     Skills
                   </h3>
                   <ul className="space-y-2">
@@ -1542,7 +1542,7 @@ export default function LearningOutcomes() {
                 </div>
                 <div className="px-6 py-5 bg-[#FBFBEE]">
                   <h3 className="text-sm font-bold uppercase tracking-wide mb-3 flex items-center gap-2 text-[#0b6d41]">
-                    <span className="w-3 h-3 rounded-sm bg-[#ffde59] inline-block"></span>
+                    <span className="w-3 h-3 rounded-sm bg-[#ffde59] inline-block text-[#032816]"></span>
                     Skills
                   </h3>
                   <ul className="space-y-2">
@@ -1628,7 +1628,7 @@ export default function LearningOutcomes() {
                 </div>
                 <div className="px-6 py-5 bg-[#FBFBEE]">
                   <h3 className="text-sm font-bold uppercase tracking-wide mb-3 flex items-center gap-2 text-[#0b6d41]">
-                    <span className="w-3 h-3 rounded-sm bg-[#ffde59] inline-block"></span>
+                    <span className="w-3 h-3 rounded-sm bg-[#ffde59] inline-block text-[#032816]"></span>
                     Skills
                   </h3>
                   <ul className="space-y-2">
@@ -1704,7 +1704,7 @@ export default function LearningOutcomes() {
                 </div>
                 <div className="px-6 py-5 bg-[#FBFBEE]">
                   <h3 className="text-sm font-bold uppercase tracking-wide mb-3 flex items-center gap-2 text-[#0b6d41]">
-                    <span className="w-3 h-3 rounded-sm bg-[#ffde59] inline-block"></span>
+                    <span className="w-3 h-3 rounded-sm bg-[#ffde59] inline-block text-[#032816]"></span>
                     Skills
                   </h3>
                   <ul className="space-y-2">

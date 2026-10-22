@@ -47,7 +47,7 @@ export default function ScholarshipsPage() {
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
             Scholarship <span className="text-[#ffde59]">Details</span>
           </h1>
-          <p className="text-lg text-gray-200 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg text-gray-100 max-w-3xl mx-auto leading-relaxed">
             Government and institutional scholarships available for eligible BDS learners at JKKN Dental College &amp; Hospital.
           </p>
         </div>
@@ -165,17 +165,17 @@ export default function ScholarshipsPage() {
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
             Have Questions About Scholarships?
           </h2>
-          <p className="text-lg text-gray-200 mb-10">
+          <p className="text-lg text-gray-100 mb-10">
             Contact our admission office for eligibility details and application process.
           </p>
           <div className="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto">
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
               <h3 className="text-white font-bold mb-2">Call Us</h3>
-              <p className="text-gray-200">+91 93458 55001</p>
+              <p className="text-gray-100">+91 93458 55001</p>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
               <h3 className="text-white font-bold mb-2">Email Us</h3>
-              <p className="text-gray-200">dental@jkkn.ac.in</p>
+              <p className="text-gray-100">dental@jkkn.ac.in</p>
             </div>
           </div>
         </div>

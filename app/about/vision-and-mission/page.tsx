@@ -159,8 +159,8 @@ export default function VisionAndMission() {
           {/* Mission Card */}
           <div className="bg-white rounded-2xl shadow-sm overflow-hidden">
             {/* Card header bar */}
-            <div className="bg-[#ffde59] px-8 py-4">
-              <h2 className="text-xl md:text-2xl font-bold text-white uppercase tracking-widest">
+            <div className="bg-[#ffde59] px-8 py-4 text-[#032816]">
+              <h2 className="text-xl md:text-2xl font-bold text-[#032816] uppercase tracking-widest">
                 OUR MISSION
               </h2>
             </div>

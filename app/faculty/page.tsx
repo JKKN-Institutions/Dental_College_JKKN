@@ -84,7 +84,7 @@ export default async function FacultyPage() {
               JKKN Dental College &amp; Hospital
             </p>
             <h1 className="text-3xl sm:text-4xl font-bold text-white">Our Senior Learners</h1>
-            <p className="text-[#0b6d41] mt-3 text-sm sm:text-base max-w-xl mx-auto">
+            <p className="text-[#d4f1e4] mt-3 text-sm sm:text-base max-w-xl mx-auto">
               Experienced specialists guiding the next generation of dental professionals.
             </p>
           </div>

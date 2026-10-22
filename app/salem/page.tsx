@@ -108,7 +108,7 @@ export default function SalemPage() {
             <span className="w-2 h-2 bg-[#0f8f56] rounded-full inline-block" />
             Admissions Open 2026-27
           </span>
-          <a href="tel:+919345855001" className="bg-[#0b6d41] hover:bg-[#005a30] text-white text-sm font-semibold px-4 py-1.5 rounded-full border border-white/20 transition-colors">
+          <a href="tel:+919345855001" className="bg-[#0b6d41] hover:bg-[#085032] text-white text-sm font-semibold px-4 py-1.5 rounded-full border border-white/20 transition-colors">
             Call Us
           </a>
         </div>

@@ -217,7 +217,7 @@ export default function BDSProgram() {
               </p>
 
               {/* Description — Gap #4, #5: Keywords + content expansion */}
-              <p className="hero-description text-base md:text-lg text-gray-200 mb-8 leading-relaxed">
+              <p className="hero-description text-base md:text-lg text-gray-100 mb-8 leading-relaxed">
                 JKKN Dental College & Hospital, established in 1987, is a <strong className="text-white">NDC-approved BDS college in Tamil Nadu</strong> with 100 BDS seats, a 5-year programme, 200+ dental chairs, around 500 patients a day, and 93.9% placed or in higher studies (2024-25 batch: 93 of 99 - NIRF 2026 filing). Located on NH-544, Komarapalayam, Namakkal — well-connected to Erode, Salem, and Coimbatore.
               </p>
 
@@ -225,15 +225,15 @@ export default function BDSProgram() {
               <div className="grid grid-cols-3 gap-2 sm:gap-4 mb-8">
                 <div>
                   <div className="text-2xl sm:text-4xl md:text-5xl font-bold text-[#ffde59] mb-2">5</div>
-                  <div className="text-[10px] sm:text-sm text-gray-200">Years Duration</div>
+                  <div className="text-[10px] sm:text-sm text-gray-100">Years Duration</div>
                 </div>
                 <div>
                   <div className="text-2xl sm:text-4xl md:text-5xl font-bold text-[#ffde59] mb-2">100</div>
-                  <div className="text-[10px] sm:text-sm text-gray-200">BDS Seats</div>
+                  <div className="text-[10px] sm:text-sm text-gray-100">BDS Seats</div>
                 </div>
                 <div>
                   <div className="text-2xl sm:text-4xl md:text-5xl font-bold text-[#ffde59] mb-2">93.9%</div>
-                  <div className="text-[10px] sm:text-sm text-gray-200">Placed or in higher studies 2024-25</div>
+                  <div className="text-[10px] sm:text-sm text-gray-100">Placed or in higher studies 2024-25</div>
                 </div>
               </div>
 
@@ -271,8 +271,8 @@ export default function BDSProgram() {
 
               {/* NAAC + Last Updated Badge */}
               <div className="absolute bottom-2 right-2 sm:bottom-8 sm:right-4 bg-white rounded-lg sm:rounded-xl shadow-2xl p-2 sm:p-4 flex items-center gap-2 sm:gap-3 scale-75 sm:scale-100 origin-bottom-right">
-                <div className="bg-[#ffde59] rounded-lg p-2 sm:p-3">
-                  <svg className="w-4 h-4 sm:w-6 sm:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="bg-[#ffde59] rounded-lg p-2 sm:p-3 text-[#032816]">
+                  <svg className="w-4 h-4 sm:w-6 sm:h-6 text-[#032816]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                   </svg>
                 </div>
@@ -497,7 +497,7 @@ export default function BDSProgram() {
           <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-4">
             Hospital & Clinical Infrastructure
           </h2>
-          <p className="text-gray-200 text-center mb-12 max-w-3xl mx-auto">
+          <p className="text-gray-100 text-center mb-12 max-w-3xl mx-auto">
             One of a 200+ chair teaching hospital seeing 500+ patients a day, giving BDS learners clinical exposure from the first year
           </p>
 
@@ -511,13 +511,13 @@ export default function BDSProgram() {
               { value: '25+', label: 'Partnerships', icon: 'M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9' },
             ].map((stat, idx) => (
               <div key={idx} className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 text-center hover:bg-white/20 transition-all duration-300">
-                <div className="w-12 h-12 mx-auto mb-3 bg-[#ffde59] rounded-full flex items-center justify-center">
-                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="w-12 h-12 mx-auto mb-3 bg-[#ffde59] rounded-full flex items-center justify-center text-[#032816]">
+                  <svg className="w-6 h-6 text-[#032816]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={stat.icon} />
                   </svg>
                 </div>
                 <div className="text-3xl font-bold text-[#ffde59] mb-1">{stat.value}</div>
-                <div className="text-sm text-gray-200">{stat.label}</div>
+                <div className="text-sm text-gray-100">{stat.label}</div>
               </div>
             ))}
           </div>
@@ -537,7 +537,7 @@ export default function BDSProgram() {
                 'Oral Pathology and Microbiology',
                 'Public Health Dentistry',
               ].map((dept, idx) => (
-                <div key={idx} className="flex items-center gap-2 text-gray-200">
+                <div key={idx} className="flex items-center gap-2 text-gray-100">
                   <svg className="w-4 h-4 text-[#ffde59] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
@@ -644,8 +644,8 @@ export default function BDSProgram() {
             {/* Eligibility Criteria */}
             <div className="bg-[#FBFBEE] rounded-2xl p-8 shadow-lg">
               <div className="flex items-center gap-3 mb-6">
-                <div className="bg-[#ffde59] p-3 rounded-lg">
-                  <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                <div className="bg-[#ffde59] p-3 rounded-lg text-[#032816]">
+                  <svg className="w-6 h-6 text-[#032816]" fill="currentColor" viewBox="0 0 20 20">
                     <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z" />
                     <path fillRule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z" clipRule="evenodd" />
                   </svg>
@@ -675,8 +675,8 @@ export default function BDSProgram() {
             {/* Admission Process */}
             <div className="bg-[#FBFBEE] rounded-2xl p-8 shadow-lg">
               <div className="flex items-center gap-3 mb-6">
-                <div className="bg-[#ffde59] p-3 rounded-lg">
-                  <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                <div className="bg-[#ffde59] p-3 rounded-lg text-[#032816]">
+                  <svg className="w-6 h-6 text-[#032816]" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd" />
                   </svg>
                 </div>
@@ -876,7 +876,7 @@ export default function BDSProgram() {
           <h2 id="curriculum" className="text-3xl md:text-4xl font-bold text-white text-center mb-4">
             Comprehensive BDS Learning Framework — NDC Approved Learning Pathway
           </h2>
-          <p className="text-gray-200 text-center mb-12 max-w-3xl mx-auto">
+          <p className="text-gray-100 text-center mb-12 max-w-3xl mx-auto">
             A well-structured 5-year program covering all aspects of dental science and clinical practice as per <a href="/academics/" className="text-[#ffde59] underline hover:text-[#ffde59]">NDC learning framework guidelines</a>
           </p>
 
@@ -889,7 +889,7 @@ export default function BDSProgram() {
                 className={`px-6 py-3 rounded-lg font-semibold transition-all duration-300 ${
                   activeYear === year
                     ? 'bg-[#ffde59] text-[#032816] shadow-lg'
-                    : 'bg-white/10 text-gray-300 hover:bg-white/20 hover:text-white'
+                    : 'bg-white/10 text-gray-100 hover:bg-white/20 hover:text-white'
                 }`}
               >
                 {year === 'first' ? 'First Year' : year === 'second' ? 'Second Year' : year === 'third' ? 'Third Year' : year === 'final' ? 'Final Year' : 'Internship'}
@@ -912,11 +912,11 @@ export default function BDSProgram() {
               ].map((course, idx) => (
                 <div key={idx} className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 hover:bg-white/20 transition-all duration-300">
                   <div className="flex items-start gap-3 mb-4">
-                    <div className="w-2 h-2 bg-[#ffde59] rounded-full mt-2"></div>
+                    <div className="w-2 h-2 bg-[#ffde59] rounded-full mt-2 text-[#032816]"></div>
                     <h3 className="text-xl font-bold text-white">{course.title}</h3>
                   </div>
                   <p className="text-gray-300 mb-4 leading-relaxed">{course.desc}</p>
-                  <span className="inline-block bg-[#22D3EE]/20 text-[#22D3EE] px-3 py-1 rounded-md text-sm font-medium">{course.tag}</span>
+                  <span className="inline-block bg-[#ffde59]/20 text-[#ffde59] px-3 py-1 rounded-md text-sm font-medium">{course.tag}</span>
                 </div>
               ))}
             </div>
@@ -935,11 +935,11 @@ export default function BDSProgram() {
               ].map((course, idx) => (
                 <div key={idx} className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 hover:bg-white/20 transition-all duration-300">
                   <div className="flex items-start gap-3 mb-4">
-                    <div className="w-2 h-2 bg-[#ffde59] rounded-full mt-2"></div>
+                    <div className="w-2 h-2 bg-[#ffde59] rounded-full mt-2 text-[#032816]"></div>
                     <h3 className="text-xl font-bold text-white">{course.title}</h3>
                   </div>
                   <p className="text-gray-300 mb-4 leading-relaxed">{course.desc}</p>
-                  <span className="inline-block bg-[#22D3EE]/20 text-[#22D3EE] px-3 py-1 rounded-md text-sm font-medium">{course.tag}</span>
+                  <span className="inline-block bg-[#ffde59]/20 text-[#ffde59] px-3 py-1 rounded-md text-sm font-medium">{course.tag}</span>
                 </div>
               ))}
             </div>
@@ -958,11 +958,11 @@ export default function BDSProgram() {
               ].map((course, idx) => (
                 <div key={idx} className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 hover:bg-white/20 transition-all duration-300">
                   <div className="flex items-start gap-3 mb-4">
-                    <div className="w-2 h-2 bg-[#ffde59] rounded-full mt-2"></div>
+                    <div className="w-2 h-2 bg-[#ffde59] rounded-full mt-2 text-[#032816]"></div>
                     <h3 className="text-xl font-bold text-white">{course.title}</h3>
                   </div>
                   <p className="text-gray-300 mb-4 leading-relaxed">{course.desc}</p>
-                  <span className="inline-block bg-[#22D3EE]/20 text-[#22D3EE] px-3 py-1 rounded-md text-sm font-medium">{course.tag}</span>
+                  <span className="inline-block bg-[#ffde59]/20 text-[#ffde59] px-3 py-1 rounded-md text-sm font-medium">{course.tag}</span>
                 </div>
               ))}
             </div>
@@ -981,11 +981,11 @@ export default function BDSProgram() {
               ].map((course, idx) => (
                 <div key={idx} className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 hover:bg-white/20 transition-all duration-300">
                   <div className="flex items-start gap-3 mb-4">
-                    <div className="w-2 h-2 bg-[#ffde59] rounded-full mt-2"></div>
+                    <div className="w-2 h-2 bg-[#ffde59] rounded-full mt-2 text-[#032816]"></div>
                     <h3 className="text-xl font-bold text-white">{course.title}</h3>
                   </div>
                   <p className="text-gray-300 mb-4 leading-relaxed">{course.desc}</p>
-                  <span className={`inline-block px-3 py-1 rounded-md text-sm font-medium ${course.tag === 'Specialized' ? 'bg-[#A78BFA]/20 text-[#A78BFA]' : 'bg-[#22D3EE]/20 text-[#22D3EE]'}`}>{course.tag}</span>
+                  <span className={`inline-block px-3 py-1 rounded-md text-sm font-medium ${course.tag === 'Specialized' ? 'bg-[#d4f1e4]/20 text-[#d4f1e4]' : 'bg-[#ffde59]/20 text-[#ffde59]'}`}>{course.tag}</span>
                 </div>
               ))}
             </div>
@@ -995,16 +995,16 @@ export default function BDSProgram() {
           <div className={activeYear === 'internship' ? 'block' : 'hidden'}>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
-                { title: 'Comprehensive Clinical Training', desc: 'Rotational posting across all dental departments with supervised patient care.', tag: '12 Months', tagColor: 'bg-[#22D3EE]/20 text-[#22D3EE]' },
-                { title: 'Community Dental Camps', desc: 'Rural and urban outreach programs for community oral health promotion.', tag: 'Outreach', tagColor: 'bg-[#22D3EE]/20 text-[#22D3EE]' },
-                { title: 'Emergency Dental Care', desc: 'Training in dental emergencies, trauma management, and acute pain relief.', tag: 'Essential', tagColor: 'bg-[#22D3EE]/20 text-[#22D3EE]' },
+                { title: 'Comprehensive Clinical Training', desc: 'Rotational posting across all dental departments with supervised patient care.', tag: '12 Months', tagColor: 'bg-[#ffde59]/20 text-[#ffde59]' },
+                { title: 'Community Dental Camps', desc: 'Rural and urban outreach programs for community oral health promotion.', tag: 'Outreach', tagColor: 'bg-[#ffde59]/20 text-[#ffde59]' },
+                { title: 'Emergency Dental Care', desc: 'Training in dental emergencies, trauma management, and acute pain relief.', tag: 'Essential', tagColor: 'bg-[#ffde59]/20 text-[#ffde59]' },
                 { title: 'Research Methodology', desc: 'Introduction to dental research, evidence-based dentistry, and scientific writing.', tag: 'Academic', tagColor: 'bg-[#FCD34D]/20 text-[#FCD34D]' },
-                { title: 'Practice Management', desc: 'Clinic setup, patient management, ethics, and professional development.', tag: 'Professional', tagColor: 'bg-[#22D3EE]/20 text-[#22D3EE]' },
-                { title: 'Case Documentation', desc: 'Maintaining complete case records, treatment planning, and follow-up protocols.', tag: 'Administrative', tagColor: 'bg-[#FB7185]/20 text-[#FB7185]' },
+                { title: 'Practice Management', desc: 'Clinic setup, patient management, ethics, and professional development.', tag: 'Professional', tagColor: 'bg-[#ffde59]/20 text-[#ffde59]' },
+                { title: 'Case Documentation', desc: 'Maintaining complete case records, treatment planning, and follow-up protocols.', tag: 'Administrative', tagColor: 'bg-[#ffea9a]/20 text-[#ffea9a]' },
               ].map((course, idx) => (
                 <div key={idx} className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 hover:bg-white/20 transition-all duration-300">
                   <div className="flex items-start gap-3 mb-4">
-                    <div className="w-2 h-2 bg-[#ffde59] rounded-full mt-2"></div>
+                    <div className="w-2 h-2 bg-[#ffde59] rounded-full mt-2 text-[#032816]"></div>
                     <h3 className="text-xl font-bold text-white">{course.title}</h3>
                   </div>
                   <p className="text-gray-300 mb-4 leading-relaxed">{course.desc}</p>
@@ -1049,7 +1049,7 @@ export default function BDSProgram() {
               <div key={idx} className={`bg-gradient-to-br ${facility.gradient} rounded-2xl p-8 text-white relative overflow-hidden group hover:shadow-2xl transition-shadow duration-300`}>
                 <h3 className="text-3xl font-bold mb-2">{facility.title}</h3>
                 <h4 className="text-lg font-semibold mb-3 text-gray-100">{facility.subtitle}</h4>
-                <p className={facility.gradient.includes('0b6d41') ? 'text-gray-200' : 'text-gray-100'}>{facility.desc}</p>
+                <p className={facility.gradient.includes('0b6d41') ? 'text-gray-100' : 'text-gray-100'}>{facility.desc}</p>
               </div>
             ))}
           </div>
@@ -1093,7 +1093,7 @@ export default function BDSProgram() {
             </p>
             <a
               href="/faculty/"
-              className="inline-block bg-[#0b6d41] hover:bg-[#00522b] text-white font-semibold px-8 py-3 rounded-full transition-colors text-sm"
+              className="inline-block bg-[#0b6d41] hover:bg-[#085032] text-white font-semibold px-8 py-3 rounded-full transition-colors text-sm"
             >
               View all 46 faculty profiles
             </a>
@@ -1136,19 +1136,19 @@ export default function BDSProgram() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               <div className="text-center bg-white/10 rounded-xl py-5 px-3">
                 <div className="text-4xl font-bold text-[#ffde59] mb-1">93.9%</div>
-                <div className="text-xs text-gray-200 font-semibold leading-snug">Placed or in higher studies 2024-25</div>
+                <div className="text-xs text-gray-100 font-semibold leading-snug">Placed or in higher studies 2024-25</div>
               </div>
               <div className="text-center bg-white/10 rounded-xl py-5 px-3">
                 <div className="text-4xl font-bold text-[#ffde59] mb-1">3,000+</div>
-                <div className="text-xs text-gray-200 font-semibold leading-snug">Alumni Network</div>
+                <div className="text-xs text-gray-100 font-semibold leading-snug">Alumni Network</div>
               </div>
               <div className="text-center bg-white/10 rounded-xl py-5 px-3">
                 <div className="text-4xl font-bold text-[#ffde59] mb-1">40+</div>
-                <div className="text-xs text-gray-200 font-semibold leading-snug">Domestic Recruiters</div>
+                <div className="text-xs text-gray-100 font-semibold leading-snug">Domestic Recruiters</div>
               </div>
               <div className="text-center bg-white/10 rounded-xl py-5 px-3">
                 <div className="text-3xl font-bold text-[#ffde59] mb-1">UK, UAE, SG</div>
-                <div className="text-xs text-gray-200 font-semibold leading-snug">International Placements</div>
+                <div className="text-xs text-gray-100 font-semibold leading-snug">International Placements</div>
               </div>
             </div>
           </div>
@@ -1264,8 +1264,8 @@ export default function BDSProgram() {
             </div>
 
             <div className="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-shadow duration-300">
-              <div className="w-12 h-12 bg-[#ffde59] rounded-lg flex items-center justify-center mb-4">
-                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="w-12 h-12 bg-[#ffde59] rounded-lg flex items-center justify-center mb-4 text-[#032816]">
+                <svg className="w-6 h-6 text-[#032816]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
                 </svg>
               </div>
@@ -1377,7 +1377,7 @@ export default function BDSProgram() {
           <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-4">
             What Our BDS Learners Say
           </h2>
-          <p className="text-gray-200 text-center mb-12 max-w-3xl mx-auto">
+          <p className="text-gray-100 text-center mb-12 max-w-3xl mx-auto">
             Hear from learners and alumni about their experience at JKKN Dental College
           </p>
 
@@ -1387,7 +1387,7 @@ export default function BDSProgram() {
                 <svg className="w-8 h-8 text-[#0b6d41] mb-4" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
                 </svg>
-                <p className="text-gray-200 text-sm leading-relaxed mb-6">{testimonial.quote}</p>
+                <p className="text-gray-100 text-sm leading-relaxed mb-6">{testimonial.quote}</p>
                 <div>
                   <p className="text-white font-semibold">{testimonial.name}</p>
                   <p className="text-[#0b6d41] text-sm">{testimonial.batch}</p>
@@ -1451,7 +1451,7 @@ export default function BDSProgram() {
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Begin Your Journey at a NDC-Approved, NAAC A Grade BDS College
           </h2>
-          <p className="text-lg text-gray-200 mb-10 leading-relaxed max-w-3xl mx-auto">
+          <p className="text-lg text-gray-100 mb-10 leading-relaxed max-w-3xl mx-auto">
             Join JKKN Dental College & Hospital — NDC Approved, NAAC Accredited, 200+ dental chairs, 500+ daily patients, 93.9% placed or in higher studies (2024-25 batch), and a 74+ year trust legacy. Your career in dentistry starts here.
           </p>
 
@@ -1464,7 +1464,7 @@ export default function BDSProgram() {
             </a>
           </div>
 
-          <p className="text-sm text-gray-200 mt-8">
+          <p className="text-sm text-gray-100 mt-8">
             <a href="/admission-process/" className="underline hover:text-white">Admission Process</a> &nbsp;|&nbsp;
             <a href="/fees-structure/" className="underline hover:text-white">Fee Structure</a> &nbsp;|&nbsp;
             <a href="/facilities/hostel/" className="underline hover:text-white">Hostel Facilities</a> &nbsp;|&nbsp;

@@ -44,7 +44,7 @@ export default function FoodCourt() {
       <Header />
 
       {/* Hero Banner */}
-      <section className="bg-gradient-to-br from-[#0b6d41] via-[#00572e] to-[#003d20] py-16 px-4">
+      <section className="bg-gradient-to-br from-[#0b6d41] via-[#085032] to-[#032816] py-16 px-4">
         <div className="max-w-6xl mx-auto">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white">
             Food Court

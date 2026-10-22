@@ -39,7 +39,7 @@ export default function Collaboration() {
       <Header />
 
       {/* Hero Banner */}
-      <section className="bg-gradient-to-br from-[#0b6d41] via-[#00572e] to-[#003d20] py-16 px-4">
+      <section className="bg-gradient-to-br from-[#0b6d41] via-[#085032] to-[#032816] py-16 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="mb-4 text-sm text-[#d4f1e4]">
             <span>Home</span>

@@ -97,7 +97,7 @@ export default function EquitableOpportunityForSEDGGroup() {
               className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden"
             >
               <div className="flex items-center gap-4 bg-[#0b6d41] px-6 py-4">
-                <div className="flex-shrink-0 w-9 h-9 rounded-full bg-white/20 flex items-center justify-center font-bold text-white text-base">
+                <div className="flex-shrink-0 w-9 h-9 rounded-full bg-white/10 flex items-center justify-center font-bold text-white text-base">
                   {section.number}
                 </div>
                 <h2 className="text-white font-bold text-base md:text-lg">
@@ -128,7 +128,7 @@ export default function EquitableOpportunityForSEDGGroup() {
               href="/pdf/Equitable-Opportunity-for-SEDG.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-[#0b6d41] hover:bg-[#005a2f] text-white font-bold py-3 px-10 rounded-xl transition-colors duration-200 uppercase text-sm text-center shadow-sm"
+              className="inline-block bg-[#0b6d41] hover:bg-[#085032] text-white font-bold py-3 px-10 rounded-xl transition-colors duration-200 uppercase text-sm text-center shadow-sm"
             >
               EQUITABLE OPPORTUNITY FOR SEDGs
             </a>
