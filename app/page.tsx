@@ -9,7 +9,6 @@ import { homeFaqItems } from '@/data/homeFaqs';
 
 import FloatingWhatsApp from '@/components/FloatingWhatsAppClient';
 import AdmissionPopup from '@/components/AdmissionPopup';
-import { EnquiryModalProvider } from '@/components/lead/EnquiryModal';
 const AboutInstitution = dynamic(() => import('@/components/AboutInstitution'));
 const AcademicPrograms = dynamic(() => import('@/components/AcademicPrograms'));
 const Infrastructure = dynamic(() => import('@/components/Infrastructure'));
@@ -273,7 +272,6 @@ export default function Home() {
   };
 
   return (
-    <EnquiryModalProvider>
     <main className="overflow-x-hidden w-full">
       <AdmissionPopup />
       <StructuredData data={websiteSchema} />
@@ -305,6 +303,5 @@ export default function Home() {
       <Footer />
       <FloatingWhatsApp />
     </main>
-    </EnquiryModalProvider>
   );
 }

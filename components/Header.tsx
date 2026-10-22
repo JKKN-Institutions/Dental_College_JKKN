@@ -2,12 +2,14 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import Image from "next/image";
 import { topMenuItems, bottomMenuItems, navigationMenu, type SubmenuItem, type NavItem } from "@/data/siteData";
 import EnquiryButton from "@/components/lead/EnquiryButton";
 
-// Homepage only (fix D3, 2026-10-12 audit): "Enquire Now" opens the 3-box form in place.
-// Every other page has no modal provider, so EnquiryButton renders the old "Apply Now" link.
+// "Enquire Now" opens the 3-box form in place - on the homepage since fix D3 (2026-10-12 audit),
+// on every page since 2026-10-21 (user's choice; the modal provider now wraps all pages). The
+// jkkn.ai link below is only the fallback for a page rendered without that provider.
 const APPLY_HREF = "https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_medium=organic&utm_campaign=components-header";
 
 const isExternalOrPdf = (href: string) =>
@@ -15,6 +17,9 @@ const isExternalOrPdf = (href: string) =>
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  // Homepage header leads keep their old CRM tag (dental-home-header) so the before / after
+  // comparison still works; every other page is tagged dental-header.
+  const headerSource = usePathname() === "/" ? "home-header" : "header";
   const [activeSubmenu, setActiveSubmenu] = useState<string | null>(null);
   const [activeNestedSubmenu, setActiveNestedSubmenu] = useState<string | null>(null);
   const [activeThirdLevelSubmenu, setActiveThirdLevelSubmenu] = useState<string | null>(null);
@@ -244,7 +249,7 @@ export default function Header() {
               {/* Apply Now Button - Right Side (spans both rows) */}
               <div className="flex items-center flex-shrink-0">
                 <EnquiryButton
-                  sourcePage="home-header"
+                  sourcePage={headerSource}
                   fallbackHref={APPLY_HREF}
                   fallbackLabel="Apply Now"
                   className="bg-primary text-white px-3 xl:px-4 2xl:px-6 py-1.5 xl:py-2 2xl:py-2.5 rounded-md font-semibold hover:opacity-90 transition-opacity min-h-[44px] flex items-center justify-center text-sm xl:text-sm 2xl:text-base whitespace-nowrap"
@@ -274,7 +279,7 @@ export default function Header() {
 
           {/* Apply Now Button */}
           <EnquiryButton
-            sourcePage="home-header"
+            sourcePage={headerSource}
             fallbackHref={APPLY_HREF}
             fallbackLabel="Apply Now"
             className="bg-primary text-white px-3 xs:px-4 sm:px-6 py-1.5 xs:py-2 sm:py-2.5 rounded-md font-semibold hover:opacity-90 transition-opacity min-h-[44px] flex items-center justify-center touch-manipulation text-xs xs:text-sm sm:text-base"
@@ -448,7 +453,7 @@ export default function Header() {
 
             {/* Mobile Apply Now Button */}
             <EnquiryButton
-              sourcePage="home-header"
+              sourcePage={headerSource}
               fallbackHref={APPLY_HREF}
               fallbackLabel="Apply Now"
               className="w-full mt-3 sm:mt-4 py-2.5 xs:py-3 px-2.5 xs:px-3 xs:px-4 bg-primary text-white font-semibold rounded-lg flex items-center justify-center gap-2 sm:gap-3 min-h-[44px] touch-manipulation hover:opacity-90 transition-opacity text-xs xs:text-sm sm:text-base"

@@ -8,14 +8,29 @@
 // enquiry modal with the poster inside it; the lead is tagged dental-home-popup in the CRM.
 //
 // Once a visitor has submitted the enquiry form anywhere on this site, the popup stops.
-// Without the modal provider (any page other than the homepage) the old poster is the fallback.
+// Without the modal provider the old poster is the fallback.
+//
+// WHEN IT OPENS (user's choice 2026-10-21). Until then it opened on page load and covered the
+// whole 390 px screen before the visitor had read a line. Now: after 25 seconds or once the
+// visitor has scrolled half the page, whichever comes first, and at most once a day per visitor.
+// The content is the same poster + form chosen on 2026-10-16. It also waits while the visitor is
+// typing in another form or already has the enquiry dialog open, so it never replaces their input.
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { X } from "lucide-react";
 import { useEnquiryModal } from "@/components/lead/EnquiryModal";
-import { ENQUIRY_DONE_KEY, readStore } from "@/lib/enquiry-store";
+import { ENQUIRY_DONE_KEY, POPUP_SHOWN_KEY, readStore, writeStore } from "@/lib/enquiry-store";
 import { sendGaEvent } from "@/lib/ga-event";
+
+const OPEN_AFTER_MS = 25_000;
+const OPEN_AT_SCROLL = 0.5;
+const RETRY_WHEN_BUSY_MS = 10_000;
+
+const isTypingInAField = () => {
+  const el = document.activeElement;
+  return !!el && ["INPUT", "SELECT", "TEXTAREA"].includes(el.tagName);
+};
 
 export default function AdmissionPopup() {
   const modal = useEnquiryModal();
@@ -23,13 +38,39 @@ export default function AdmissionPopup() {
 
   useEffect(() => {
     if (readStore(ENQUIRY_DONE_KEY)) return;
+    const today = new Date().toLocaleDateString("en-CA"); // local YYYY-MM-DD
+    if (readStore(POPUP_SHOWN_KEY) === today) return;
 
-    const variant = modal ? "poster_form" : "poster";
-    sendGaEvent("popup_view", { popup_variant: variant, page_path: window.location.pathname });
+    let timer = 0;
+    let done = false;
+    const stop = () => {
+      window.clearTimeout(timer);
+      window.removeEventListener("scroll", onScroll);
+    };
+    const show = () => {
+      if (done) return;
+      if (modal?.isOpen() || isTypingInAField()) {
+        window.clearTimeout(timer);
+        timer = window.setTimeout(show, RETRY_WHEN_BUSY_MS);
+        return;
+      }
+      done = true;
+      stop();
+      writeStore(POPUP_SHOWN_KEY, today);
+      const variant = modal ? "poster_form" : "poster";
+      sendGaEvent("popup_view", { popup_variant: variant, page_path: window.location.pathname });
+      if (modal) modal.openEnquiry("home-popup", { withPoster: true });
+      else setShowPoster(true);
+    };
+    function onScroll() {
+      const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+      if (scrollable > 0 && window.scrollY / scrollable >= OPEN_AT_SCROLL) show();
+    }
 
-    if (modal) modal.openEnquiry("home-popup", { withPoster: true });
-    else setShowPoster(true);
-    // Runs once per page load, like the poster did. `modal` is stable for the page's lifetime.
+    timer = window.setTimeout(show, OPEN_AFTER_MS);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return stop;
+    // Runs once per page load. `modal` is stable for the page's lifetime.
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
