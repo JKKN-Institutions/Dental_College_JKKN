@@ -63,9 +63,10 @@ export default function AdmissionsSection() {
             </div>
 
             {/* Fix D5 (2026-10-12 audit): the 3-box form right where eligibility is read */}
-            <div className="bg-[#0b6d41] rounded-xl sm:rounded-2xl p-5 sm:p-6 mb-6 sm:mb-8">
-              <h4 className="text-xl sm:text-2xl font-bold text-white leading-snug">Check your eligibility with our admission team</h4>
-              <p className="mt-1 mb-5 text-sm sm:text-base text-white/80">Fill 3 details. Our admission team will call you within 24 hours.</p>
+            {/* The form is its own white card now (mockup #7, 2026-10-22) and its 3-step strip says
+                what the old sub-line said; the green box stays as the frame on the cream section. */}
+            <div className="bg-[#0b6d41] rounded-xl sm:rounded-2xl p-3 sm:p-6 mb-6 sm:mb-8">
+              <h4 className="mb-3 px-1 sm:px-0 sm:mb-4 text-xl sm:text-2xl font-bold text-white leading-snug">Check your eligibility with our admission team</h4>
               <DentalEnquiryForm sourcePage="home-admissions" compact />
             </div>
 
