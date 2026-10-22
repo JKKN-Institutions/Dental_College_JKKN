@@ -5,6 +5,7 @@ import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import StructuredData from '@/components/StructuredData';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
+import EnquirySection from '@/components/lead/EnquirySection';
 
 export const metadata: Metadata = {
   title: 'Student Testimonials | JKKN Dental College & Hospital',
@@ -135,6 +136,13 @@ export default function TestimonialsPage() {
             </div>
           </div>
         </section>
+
+        {/* Enquiry form (marketing audit L3, 2026-10-21). */}
+        <EnquirySection
+          sourcePage="testimonials"
+          heading="Talk to Our Admission Team"
+          subheading="Ask anything about BDS / MDS, fees or hostel. We call you back within 24 hours."
+        />
       </main>
 
       <Footer />

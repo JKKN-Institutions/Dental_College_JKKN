@@ -23,7 +23,7 @@ export default function AffiliationMDS() {
   return (
     <>
       <StructuredData data={breadcrumbSchema} />
-      <PdfRedirect pdfUrl="/pdf/university-provisional-affiliation-letters-mds.pdf" />
+      <PdfRedirect pdfUrl="/pdf/university-provisional-affiliation-letters-mds.pdf" heading="MDS Affiliation Letters — The Tamil Nadu Dr. M.G.R. Medical University" />
     </>
   );
 }

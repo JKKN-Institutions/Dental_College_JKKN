@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     siteName: 'JKKN Dental College & Hospital',
     images: [
       {
-        url: 'https://dental.jkkn.ac.in/images/BDS-hero-image.webp',
+        url: 'https://dental.jkkn.ac.in/images/og-jkkn-dental-clinical-training.jpg',
         width: 1200,
         height: 630,
         alt: 'JKKN Dental College & Hospital — Dental College near Hosur, Tamil Nadu'
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Dental College near Hosur | JKKN Dental College & Hospital',
     description: 'No dental college in Hosur-Krishnagiri belt? JKKN Dental College, Komarapalayam is a direct NH-44 ride via Salem. NDC approved. BDS 100 seats, MDS.',
-    images: ['https://dental.jkkn.ac.in/images/BDS-hero-image.webp'],
+    images: ['https://dental.jkkn.ac.in/images/og-jkkn-dental-clinical-training.jpg'],
     site: '@jaborejkkn',
   },
 };

@@ -1,4 +1,4 @@
-// A button that opens the homepage enquiry modal, or — on any page without the modal — renders
+// A button that opens the site-wide enquiry modal, or — on any page without the modal — renders
 // the original jkkn.ai link unchanged. One component so Header, Hero and CTASection cannot drift.
 
 "use client"
@@ -17,9 +17,11 @@ type Props = {
   fallbackLabel: ReactNode
   /** Extra work on click, e.g. closing the mobile menu. */
   onClick?: () => void
+  /** Pre-selects the programme in the form, e.g. the MDS speciality of the page. */
+  programmeId?: string
 }
 
-export default function EnquiryButton({ sourcePage, className, children, fallbackHref, fallbackLabel, onClick }: Props) {
+export default function EnquiryButton({ sourcePage, className, children, fallbackHref, fallbackLabel, onClick, programmeId }: Props) {
   const modal = useEnquiryModal()
 
   if (!modal) {
@@ -36,7 +38,7 @@ export default function EnquiryButton({ sourcePage, className, children, fallbac
       className={className}
       onClick={() => {
         onClick?.()
-        modal.openEnquiry(sourcePage)
+        modal.openEnquiry(sourcePage, { programmeId })
       }}
     >
       {children}

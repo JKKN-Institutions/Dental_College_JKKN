@@ -48,12 +48,21 @@ export function PdfRedirect({ pdfUrl, heading }: PdfRedirectProps) {
     window.location.replace(pdfUrl);
   }, [pdfUrl, router]);
 
-  // Return a loading page with H1 for SEO while redirecting
+  // Return a loading page with H1 for SEO while redirecting.
+  // The visible link is the fallback (marketing audit T6, 2026-10-21): where a browser downloads the
+  // PDF instead of showing it - many Android phones, and headless browsers - the page used to sit on
+  // "Loading document..." with nothing to tap. The link is in the server HTML, so it works before
+  // and without JavaScript too.
   return (
-    <div className="min-h-screen flex items-center justify-center bg-[#fbfbee]">
+    <div className="min-h-screen flex items-center justify-center bg-[#fbfbee] px-4">
       <div className="text-center">
         {heading && <h1 className="text-3xl md:text-4xl font-bold text-black mb-4">{heading}</h1>}
         <p className="text-gray-600">Loading document...</p>
+        <p className="mt-4">
+          <a href={pdfUrl} className="inline-block rounded-full bg-[#0b6d41] px-6 py-3 font-semibold text-white">
+            Open the document (PDF)
+          </a>
+        </p>
       </div>
     </div>
   );

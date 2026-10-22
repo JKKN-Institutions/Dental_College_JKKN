@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     siteName: 'JKKN Dental College & Hospital',
     images: [
       {
-        url: '/images/BDS-hero-image.webp',
+        url: '/images/og-jkkn-dental-clinical-training.jpg',
         width: 1200,
         height: 630,
         alt: 'Dental colleges in Tamil Nadu 2025-26 — sanctioned BDS intake',
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     title: 'Dental Colleges in Tamil Nadu — 22 BDS Colleges and 2,100 Seats',
     description:
       '22 affiliated dental colleges, 2,100 sanctioned BDS seats for 2025-26, college by college.',
-    images: ['/images/BDS-hero-image.webp'],
+    images: ['/images/og-jkkn-dental-clinical-training.jpg'],
   },
 };
 

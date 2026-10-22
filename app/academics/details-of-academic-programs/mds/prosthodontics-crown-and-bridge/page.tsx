@@ -3,6 +3,9 @@
 import Image from 'next/image';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import DentalEnquiryForm from "@/components/lead/DentalEnquiryForm";
+import EnquiryButton from "@/components/lead/EnquiryButton";
+import { DEFAULT_PROGRAMME_BY_PAGE } from "@/lib/dental-programmes";
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import StructuredData from '@/components/StructuredData';
 import Breadcrumb from '@/components/Breadcrumb';
@@ -129,7 +132,7 @@ export default function MDSProsthodontics() {
                 <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
-                <span className="text-white font-semibold text-sm">NDC Approved | NAAC Accredited</span>
+                <span className="text-white font-semibold text-sm">NDC (formerly DCI) Approved | NAAC A Grade</span>
               </div>
 
               {/* Heading */}
@@ -142,11 +145,25 @@ export default function MDSProsthodontics() {
                 Transform your dental career with our advanced 3-year postgraduate program. Master complete dentures, fixed prosthodontics, implantology, and maxillofacial prosthetics at one of Tamil Nadu&apos;s premier dental institutions.
               </p>
 
+              {/* MDS proof, above the fold (marketing audit M3, 2026-10-21). Placement: JKKN's NIRF 2026
+                  filing. Tuition: the site's published management-quota fee, the same for every
+                  speciality (/fees-structure/); 3 x 8,50,000 = 25,50,000. */}
+              <div className="mb-8 rounded-xl border border-white/20 bg-white/10 p-4 text-sm sm:text-base text-gray-100 space-y-2">
+                <p><strong className="text-[#ffde59]">7 of 7 MDS graduates placed</strong> in each of the last three years, median salary Rs 6.0 lakh (JKKN&apos;s NIRF 2026 filing).</p>
+                <p><strong className="text-[#ffde59]">Management quota tuition:</strong> Rs 8,50,000 a year &mdash; Rs 25,50,000 for the 3 years (tuition only; hostel and university fees are separate).</p>
+              </div>
+
               {/* Buttons */}
               <div className="flex flex-wrap gap-4">
-                <a href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_medium=organic&utm_campaign=academics-details-of-academic-programs-mds-prosthodontics-crown-and-bridge" target="_blank" rel="noopener noreferrer" className="bg-[#ffde59] hover:bg-[#e6c64d] text-[#032816] font-bold px-8 py-4 rounded-lg text-lg transition-all duration-300 shadow-lg inline-block">
-                  Apply Now
-                </a>
+                <EnquiryButton
+                  sourcePage="mds-prosthodontics-hero-btn"
+                  programmeId={DEFAULT_PROGRAMME_BY_PAGE["mds-prosthodontics"]}
+                  fallbackHref="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_medium=organic&utm_campaign=academics-details-of-academic-programs-mds-prosthodontics-crown-and-bridge"
+                  fallbackLabel="Apply Now"
+                  className="bg-[#ffde59] hover:bg-[#e6c64d] text-[#032816] font-bold px-8 py-4 rounded-lg text-lg transition-all duration-300 shadow-lg inline-block"
+                >
+                  Get Fee &amp; Seat Details
+                </EnquiryButton>
                 <button
                   onClick={() => document.getElementById('curriculum')?.scrollIntoView({ behavior: 'smooth' })}
                   className="bg-white/10 backdrop-blur-sm border-2 border-white text-white hover:bg-white hover:text-[#0b6d41] font-bold px-8 py-4 rounded-lg text-lg transition-all duration-300"
@@ -160,8 +177,8 @@ export default function MDSProsthodontics() {
             <div className="relative">
               <div className="bg-gradient-to-br from-[#0b6d41] to-[#032816] rounded-2xl border-4 border-white/20 overflow-hidden relative min-h-[400px] md:min-h-[450px]">
                 <Image
-                  src="/images/MDS-Prosthodontics-&-Crown-and-Bridge-banner-image.webp"
-                  alt="Prosthodontics Lab"
+                  src="/images/JKKN-Dental-Clinical-Training.webp"
+                  alt="Clinical training in the JKKN dental hospital, Komarapalayam"
                   fill
                   className="object-cover"
                   sizes="(max-width: 768px) 100vw, 50vw"
@@ -279,8 +296,8 @@ export default function MDSProsthodontics() {
               {/* Image */}
               <div className="relative flex-1 min-h-[300px]">
                 <Image
-                  src="/images/MDS-Prosthodontics-&-Crown-and-Bridge-clinical training.webp"
-                  alt="Clinical Training"
+                  src="/images/lab-3.webp"
+                  alt="Clinical teaching at the JKKN dental hospital"
                   fill
                   className="object-cover"
                   sizes="(max-width: 768px) 100vw, 50vw"
@@ -1217,7 +1234,7 @@ export default function MDSProsthodontics() {
           </p>
 
           {/* Accreditation Cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-8">
             {/* NDC */}
             <div className="bg-[#FBFBEE] rounded-2xl p-4 sm:p-8 shadow-lg border border-gray-200 text-center">
               <div className="bg-gradient-to-br from-[#0b6d41] to-[#032816] rounded-xl p-4 sm:p-6 mb-4 sm:mb-6 flex items-center justify-center mx-auto w-20 h-20 sm:w-24 sm:h-24">
@@ -1242,13 +1259,6 @@ export default function MDSProsthodontics() {
               <h3 className="text-base sm:text-lg font-bold text-gray-900">TN Dr. MGR Medical University</h3>
             </div>
 
-            {/* IDA */}
-            <div className="bg-[#FBFBEE] rounded-2xl p-4 sm:p-8 shadow-lg border border-gray-200 text-center">
-              <div className="bg-gradient-to-br from-[#0b6d41] to-[#032816] rounded-xl p-4 sm:p-6 mb-4 sm:mb-6 flex items-center justify-center mx-auto w-20 h-20 sm:w-24 sm:h-24">
-                <span className="text-2xl sm:text-4xl font-bold text-white">IDA</span>
-              </div>
-              <h3 className="text-base sm:text-lg font-bold text-gray-900">Indian Dental Association</h3>
-            </div>
           </div>
         </div>
       </section>
@@ -1265,13 +1275,20 @@ export default function MDSProsthodontics() {
           </p>
 
           <div className="flex flex-wrap justify-center gap-4">
-            <a href="/pdf/brochure.pdf" download className="bg-white text-[#0b6d41] hover:bg-gray-100 font-bold px-8 py-4 rounded-lg text-lg transition-all duration-300 shadow-lg">
-              Download Prospectus
-            </a>
             <a href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_medium=organic&utm_campaign=academics-details-of-academic-programs-mds-prosthodontics-crown-and-bridge" target="_blank" rel="noopener noreferrer" className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#0b6d41] font-bold px-8 py-4 rounded-lg text-lg transition-all duration-300">
               Apply Online
             </a>
           </div>
+        </div>
+      </section>
+
+      {/* Enquiry form with this speciality pre-selected (marketing audit L3, 2026-10-21). Until then
+          the speciality pages had no form, no phone number and no WhatsApp link - only jkkn.ai. */}
+      <section className="bg-gradient-to-br from-[#0b6d41] to-[#0f8f56] py-16">
+        <div className="max-w-3xl mx-auto px-4">
+          <h2 className="text-white text-2xl md:text-3xl font-bold text-center mb-2">Get MDS Prosthodontics Fee &amp; Seat Details</h2>
+          <p className="text-white/80 text-center text-sm mb-8">Leave your details and our admission team will contact you within 24 hours.</p>
+          <DentalEnquiryForm sourcePage="mds-prosthodontics" defaultProgrammeId={DEFAULT_PROGRAMME_BY_PAGE["mds-prosthodontics"]} />
         </div>
       </section>
 

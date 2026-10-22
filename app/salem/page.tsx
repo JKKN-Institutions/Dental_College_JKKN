@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import EnquirySection from '@/components/lead/EnquirySection';
 import { Hospital, Stethoscope, Microscope, TrendingUp, Users, Bus, Route, Train, Plane, Home, MapPin, BookOpen, Award, Wifi, GraduationCap, Target, Sparkles, Shield, CheckCircle } from 'lucide-react';
 import { ScrollToTop } from '@/components/ScrollToTop';
 import { faqs } from './faqs';
@@ -10,7 +11,7 @@ export default function SalemPage() {
 
   const whyFeatures = [
     { icon: <Hospital className="w-6 h-6 text-[#0b6d41]" />, title: 'Own Hospital', desc: 'NDC-approved dental college with attached hospital for hands-on clinical training' },
-    { icon: <Stethoscope className="w-6 h-6 text-[#0b6d41]" />, title: 'Real Patient Exposure', desc: 'Own dental hospital on campus — learners get real patient exposure from Year 1' },
+    { icon: <Stethoscope className="w-6 h-6 text-[#0b6d41]" />, title: 'Real Patient Exposure', desc: 'Own dental hospital on campus — learners get real patient exposure in the college hospital' },
     { icon: <Microscope className="w-6 h-6 text-[#0b6d41]" />, title: 'Advanced Learning Labs', desc: 'Advanced dental learning labs, simulation equipment, and digital dentistry training' },
     { icon: <TrendingUp className="w-6 h-6 text-[#0b6d41]" />, title: 'NEET MDS Results', desc: 'Strong track record in NEET MDS results and higher education' },
     { icon: <Users className="w-6 h-6 text-[#0b6d41]" />, title: 'Community Service', desc: 'Hospital serves the community — builds trust and clinical experience' },
@@ -106,7 +107,7 @@ export default function SalemPage() {
         <div className="max-w-7xl mx-auto flex items-center justify-center gap-3 sm:gap-6 flex-wrap">
           <span className="flex items-center gap-2 text-sm font-medium">
             <span className="w-2 h-2 bg-[#0f8f56] rounded-full inline-block" />
-            Admissions Open 2026-27
+            BDS &amp; MDS Admission Enquiry
           </span>
           <a href="tel:+919345855001" className="bg-[#0b6d41] hover:bg-[#085032] text-white text-sm font-semibold px-4 py-1.5 rounded-full border border-white/20 transition-colors">
             Call Us
@@ -120,7 +121,7 @@ export default function SalemPage() {
         style={{ background: 'linear-gradient(135deg, #0b6d41 0%, #032816 100%)', minHeight: '88vh' }}
       >
         <div className="mb-6 inline-flex items-center gap-2 bg-white/10 backdrop-blur border border-white/20 text-white text-sm font-medium px-5 py-2 rounded-full">
-          <Shield className="w-4 h-4" /> NDC, NAAC Approved • Admissions Open
+          <Shield className="w-4 h-4" /> NDC Approved • NAAC A Grade
         </div>
         <h1 className="text-white font-extrabold leading-tight mb-3 max-w-4xl" style={{ fontSize: 'clamp(2rem, 5vw + 0.5rem, 3.5rem)' }}>
           Dental Colleges in <span className="text-[#ffde59]">Salem</span>
@@ -275,7 +276,7 @@ export default function SalemPage() {
           {/* E-E-A-T paragraph */}
           <div className="bg-white rounded-xl p-5 max-w-3xl mx-auto mb-8 text-left border border-gray-100">
             <p className="text-gray-600 text-sm leading-relaxed">
-              JKKN Dental College &amp; Hospital is a National Dental Commission (NDC) approved institution located at Natarajapuram, NH-544 (Salem-Coimbatore Highway), Komarapalayam, Namakkal District, Tamil Nadu 638183. Established in 1987 as part of JKKN Institutions (a trust legacy since 1952), JKKN is affiliated to TN Dr. MGR Medical University, Chennai. The college operates a 200-chair dental hospital receiving 500+ patients daily. JKKN offers BDS (100 seats) and MDS in 5 specializations. The institution reports 93.9% placed or in higher studies (2024-25 batch). Salem learners can reach JKKN Dental College &amp; Hospital in approximately 60 km via NH-544. Learn more about our <Link href="/accreditation/" className="text-[#0b6d41] hover:underline">NAAC accreditation</Link>.
+              JKKN Dental College &amp; Hospital is a National Dental Commission (NDC) approved institution located at Natarajapuram, NH-544 (Salem-Coimbatore Highway), Komarapalayam, Namakkal District, Tamil Nadu 638183. Established in 1987 as part of JKKN Institutions (a trust legacy since 1952), JKKN is affiliated to TN Dr. MGR Medical University, Chennai. The college operates a 200-chair dental hospital receiving 500+ patients daily. JKKN offers BDS (100 seats) and MDS in 5 specializations. The institution reports 93.9% placed or in higher studies (2024-25 batch). Salem learners can reach JKKN Dental College &amp; Hospital in approximately 60 km via NH-544. Learn more about our <Link href="/accreditation/naac/" className="text-[#0b6d41] hover:underline">NAAC accreditation</Link>.
             </p>
           </div>
           <div className="w-14 h-1 bg-[#ffde59] rounded mx-auto mb-12" />
@@ -555,6 +556,9 @@ export default function SalemPage() {
         </div>
       </section>
 
+
+      {/* Enquiry form (marketing audit L3, 2026-10-21): the city pages had none. */}
+      <EnquirySection sourcePage="city-salem" />
 
       <ScrollToTop />
 

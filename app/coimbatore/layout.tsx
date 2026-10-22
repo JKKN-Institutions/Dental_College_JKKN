@@ -7,7 +7,7 @@ import { faqs } from './faqs';
 
 export const metadata: Metadata = {
   title: { absolute: 'Best Dental College Near Coimbatore | JKKN Dental College' },
-  description: 'JKKN Dental — 108 km from Coimbatore via NH-544. 93.9% placed or in higher studies (2024-25 batch), 200+ dental chairs, BDS & MDS. NDC approved. Admissions open 2026.',
+  description: 'JKKN Dental — 108 km from Coimbatore via NH-544. 93.9% placed or in higher studies (2024-25 batch), 200+ dental chairs, BDS & MDS. NDC approved, NAAC A Grade.',
   keywords: 'best dental college near coimbatore, dental colleges in coimbatore, private dental colleges in coimbatore, top dental colleges in coimbatore, bds college coimbatore, jkkn dental coimbatore, dental college 108 km coimbatore',
   robots: {
     index: true,
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     siteName: 'JKKN Dental College & Hospital',
     images: [
       {
-        url: 'https://dental.jkkn.ac.in/images/BDS-hero-image.webp',
+        url: 'https://dental.jkkn.ac.in/images/og-jkkn-dental-clinical-training.jpg',
         width: 1200,
         height: 630,
         alt: 'Best Dental College Near Coimbatore - JKKN Dental College'
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Best Dental College Near Coimbatore | JKKN Dental College',
     description: 'JKKN Dental College & Hospital — 108 km from Coimbatore on NH-544. 93.9% placed or in higher studies (2024-25 batch), 200+ dental chairs, BDS & MDS. NDC approved.',
-    images: ['https://dental.jkkn.ac.in/images/BDS-hero-image.webp'],
+    images: ['https://dental.jkkn.ac.in/images/og-jkkn-dental-clinical-training.jpg'],
     site: '@jaborejkkn',
   },
 };

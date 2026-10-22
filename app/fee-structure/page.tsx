@@ -115,7 +115,7 @@ const faqSchema = {
       "name": "Are there any hidden charges beyond the tuition fee at JKKN Dental College?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No hidden charges are applicable at JKKN Dental College. Beyond tuition fees, the standard fee components include library fee, lab and clinical fee, university examination fee (as per university norms), and caution/library/lab deposits (all refundable upon course completion). Hostel charges are separate and optional. All applicable fees are communicated transparently at the time of admission."
+        "text": "Beyond tuition, the fee components are library fee, lab and clinical fee, university examination fee (as per university norms), and caution/library/lab deposits (all refundable upon course completion). Hostel charges are separate and optional. Ask the admissions office for the current amount of each component before admission."
       }
     },
     {
@@ -197,11 +197,11 @@ export default function FeesStructure() {
             </svg>
             <div>
               <p className="text-sm md:text-base text-gray-800 font-semibold mb-1">
-                <AlertTriangle className="w-5 h-5 inline-block mr-2" /> Important: Fee Verification Required
+                <AlertTriangle className="w-5 h-5 inline-block mr-2" /> Before you pay
               </p>
               <p className="text-sm text-gray-700">
-                *Fee amounts shown are approximate ranges and subject to change based on government regulations, fee fixation committee decisions, and annual revisions.
-                Contact the admissions office for exact, current fee details at <a href="tel:+919345855001" className="text-[#0b6d41] font-semibold hover:underline">+91 93458 55001</a> or
+                These are the 2026-27 fees published by JKKN Dental College. Government-quota fees are fixed by the
+                Tamil Nadu Fee Committee and can change. Confirm the final amount with the admissions office at <a href="tel:+919345855001" className="text-[#0b6d41] font-semibold hover:underline">+91 93458 55001</a> or
                 email <a href="mailto:dental@jkkn.ac.in" className="text-[#0b6d41] font-semibold hover:underline">dental@jkkn.ac.in</a>.
               </p>
             </div>
@@ -344,6 +344,8 @@ export default function FeesStructure() {
               </tbody>
             </table>
             <p className="text-xs text-gray-500 px-6 py-3">* Fees are per year. GQ = Government Quota &nbsp;|&nbsp; MQ = Management Quota</p>
+            {/* Three-year total (marketing audit T8, 2026-10-21): 3 x the published MQ tuition. */}
+            <p className="text-sm text-gray-800 font-semibold px-6 pb-4">MQ tuition for the full 3 years: &#8377;25,50,000 for every specialisation (tuition only; deposits, university and hostel fees are separate).</p>
           </div>
 
           {/* MDS Additional Components */}
@@ -390,6 +392,17 @@ export default function FeesStructure() {
             </ul>
           </div>
         </div>
+      </section>
+
+      {/* Moved up 2026-10-21 (marketing audit L4): the form sits right under the fee tables. */}
+      {/* DEP-34 - enquiry form. Posts to the CRM from the server; a browser cannot POST there */}
+      {/* directly - the endpoint sends no Access-Control-Allow-Origin header. */}
+      <section className="bg-gradient-to-br from-[#0b6d41] to-[#0f8f56] py-16">
+          <div className="max-w-3xl mx-auto px-4">
+              <h2 className="text-white text-2xl md:text-3xl font-bold text-center mb-2">Want the full cost for your quota?</h2>
+              <p className="text-white/80 text-center text-sm mb-8">Leave your number. Our admission team calls you back within 24 hours with the year-by-year cost.</p>
+              <DentalEnquiryForm sourcePage="fees-structure" />
+          </div>
       </section>
 
       {/* Payment Information */}
@@ -464,7 +477,7 @@ export default function FeesStructure() {
                   <svg className="w-5 h-5 text-[#0b6d41] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
-                  <span>No hidden charges or processing fees</span>
+                  <span>Every fee component is listed on this page; deposits are refundable</span>
                 </li>
               </ul>
             </div>
@@ -551,16 +564,6 @@ export default function FeesStructure() {
             </Link>
           </div>
         </div>
-      </section>
-
-      {/* DEP-34 - enquiry form. Posts to the CRM from the server; a browser cannot POST there */}
-      {/* directly - the endpoint sends no Access-Control-Allow-Origin header. */}
-      <section className="bg-gradient-to-br from-[#0b6d41] to-[#0f8f56] py-16">
-          <div className="max-w-3xl mx-auto px-4">
-              <h2 className="text-white text-2xl md:text-3xl font-bold text-center mb-2">Get a Call Back</h2>
-              <p className="text-white/80 text-center text-sm mb-8">Leave your details and our admission team will contact you within 24 hours.</p>
-              <DentalEnquiryForm sourcePage="fees-structure" />
-          </div>
       </section>
 
       <Footer />

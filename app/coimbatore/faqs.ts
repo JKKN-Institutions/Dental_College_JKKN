@@ -44,7 +44,7 @@ export const faqs: FaqItem[] = [
   },
   {
     q: 'What clinical exposure does JKKN Dental College provide?',
-    a: 'JKKN Dental College & Hospital operates a dedicated teaching hospital with 200+ dental chairs, 100+ hospital beds, and 500+ daily patients. Clinical training begins from Year 1 of the BDS program. The college also conducts community dental camps, providing exposure to rural and urban patient populations.',
+    a: 'JKKN Dental College & Hospital operates a dedicated teaching hospital with 200+ dental chairs, 100+ hospital beds, and 500+ daily patients. Clinical training takes place in the college hospital. The college also conducts community dental camps, providing exposure to rural and urban patient populations.',
   },
   {
     q: 'Is JKKN Dental College better than colleges in Coimbatore?',

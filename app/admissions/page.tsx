@@ -4,6 +4,8 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FaqAccordion from '@/components/FaqAccordion';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+import DentalEnquiryForm from '@/components/lead/DentalEnquiryForm';
+import EnquiryButton from '@/components/lead/EnquiryButton';
 import StructuredData from '@/components/StructuredData';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 import { generateSpeakableWebPageSchema } from '@/lib/metadata';
@@ -13,7 +15,6 @@ import {
   ClipboardList,
   IndianRupee,
   Award,
-  FileText,
   Users,
   Phone,
   Mail,
@@ -53,7 +54,7 @@ export const metadata: Metadata = {
     siteName: 'JKKN Dental College & Hospital',
     images: [
       {
-        url: '/images/BDS-hero-image.webp',
+        url: '/images/og-jkkn-dental-clinical-training.jpg',
         width: 1200,
         height: 630,
         alt: 'JKKN Dental College Admission 2026-27',
@@ -65,7 +66,7 @@ export const metadata: Metadata = {
     title: 'Admission 2026-27 | BDS & MDS | JKKN Dental College',
     description:
       'Apply for BDS & MDS admission at JKKN Dental College. NEET-based, 100 BDS + 18 MDS seats, scholarships available.',
-    images: ['/images/BDS-hero-image.webp'],
+    images: ['/images/og-jkkn-dental-clinical-training.jpg'],
   },
   alternates: {
     // Must be the plural /admissions/ — /admission/ 301-redirects here
@@ -317,12 +318,6 @@ const admissionPages = [
     icon: IndianRupee,
   },
   {
-    title: 'Prospectus',
-    description: 'Download the official admission prospectus with complete program and campus details.',
-    href: '/pdf/brochure.pdf',
-    icon: FileText,
-  },
-  {
     title: 'SEDG Equitable Opportunity',
     description: 'Inclusive admission policies for socio-economically disadvantaged groups per UGC 2024.',
     href: '/admissions/equitable-opportunity-for-sedg-group/',
@@ -354,7 +349,7 @@ const whyChooseReasons = [
   { text: `${collegeFacts.dentalChairs}+ dental chairs & ${collegeFacts.hospitalBeds}+ hospital beds`, icon: Stethoscope },
   { text: 'NDC approved & NAAC A grade accredited', icon: Award },
   { text: 'Affiliated to TN Dr. MGR Medical University', icon: GraduationCap },
-  { text: `${collegeFacts.totalDepartments} departments with expert senior learners`, icon: Users },
+  { text: `${collegeFacts.totalDepartments} departments with expert faculty (Senior Learners)`, icon: Users },
   { text: 'NH-544 location — accessible from Salem, Erode & Coimbatore', icon: MapPin },
 ];
 
@@ -452,14 +447,14 @@ export default function AdmissionPage() {
           </div>
 
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-            Admission Open for{' '}
+            Admissions for{' '}
             <span className="text-[#ffde59]">BDS & MDS</span>
           </h1>
 
           <p className="hero-description text-lg md:text-xl text-gray-200 max-w-3xl mx-auto mb-8">
             Begin your dental career at JKKN Dental College & Hospital — NDC
-            approved, NAAC A grade accredited, with {collegeFacts.quickStats.totalSeats} seats
-            across {collegeFacts.mdsSpecialisations} MDS specializations. NEET-based admission
+            approved, NAAC A grade accredited, with {collegeFacts.bdsSeatCount} BDS seats and
+            {' '}{collegeFacts.mdsSeatCount} MDS seats in {collegeFacts.mdsSpecialisations} specialities. NEET-based admission
             with scholarships and placement support.
           </p>
 
@@ -482,14 +477,14 @@ export default function AdmissionPage() {
 
           {/* Hero Dual CTA */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_medium=organic&utm_campaign=admissions"
-              target="_blank"
-              rel="noopener noreferrer"
+            <EnquiryButton
+              sourcePage="admissions-hero-btn"
+              fallbackHref="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_medium=organic&utm_campaign=admissions"
+              fallbackLabel="Apply Now"
               className="bg-[#ffde59] hover:bg-[#e6c64d] text-[#032816] font-bold py-3.5 px-8 rounded-full transition-all duration-300 min-h-[44px] flex items-center justify-center gap-2 hover:scale-105 active:scale-95 text-lg"
             >
-              Apply Now <ArrowRight className="w-5 h-5" />
-            </a>
+              Get Fee &amp; Admission Details <ArrowRight className="w-5 h-5" />
+            </EnquiryButton>
           </div>
         </div>
       </section>
@@ -600,11 +595,11 @@ export default function AdmissionPage() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              Clinical Exposure from Year 1
+              Clinical Training in Our Own Hospital
             </h2>
             <p className="text-gray-200 max-w-2xl mx-auto">
               Train in our attached dental hospital with real patient exposure
-              from Year 1, across all nine departments.
+              across all nine departments.
             </p>
           </div>
 
@@ -625,7 +620,7 @@ export default function AdmissionPage() {
 
           <div className="grid sm:grid-cols-3 gap-4 max-w-4xl mx-auto">
             {[
-              'Clinical training from Year 1 — not just final year',
+              'Hands-on clinical training in the college hospital',
               'Exposure to all dental specialties including oral surgery',
               'Advanced equipment — digital X-ray, CAD/CAM, laser dentistry',
             ].map((point) => (
@@ -804,7 +799,7 @@ export default function AdmissionPage() {
             Ready to Start Your Dental Career?
           </h2>
           <p className="text-lg text-gray-200 mb-8 max-w-2xl mx-auto">
-            Join {collegeFacts.quickStats.totalSeats} learners admitted every year at a National Dental Commission
+            Join the {collegeFacts.bdsSeatCount} BDS and {collegeFacts.mdsSeatCount} MDS learners admitted every year at a National Dental Commission
             approved dental college in Tamil Nadu. Apply now or reach out to
             our admission team for guidance.
           </p>
@@ -901,6 +896,15 @@ export default function AdmissionPage() {
               </details>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Enquiry form (marketing audit L3, 2026-10-21): the admissions hub had none. */}
+      <section className="bg-gradient-to-br from-[#0b6d41] to-[#0f8f56] py-16">
+        <div className="max-w-3xl mx-auto px-4">
+          <h2 className="text-white text-2xl md:text-3xl font-bold text-center mb-2">Get BDS / MDS Fee &amp; Admission Details</h2>
+          <p className="text-white/80 text-center text-sm mb-8">Leave your details and our admission team will contact you within 24 hours.</p>
+          <DentalEnquiryForm sourcePage="admissions" />
         </div>
       </section>
 

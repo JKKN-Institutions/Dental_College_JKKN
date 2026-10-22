@@ -31,7 +31,7 @@ const faqSchema = {
       "name": "What lab facilities are available at JKKN Dental College?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "JKKN Dental College has world-class dental laboratories equipped with cutting-edge technologies. Available labs include: Anatomy, Histology, Radiology and Imaging Labs; Preclinical Simulation and Digital Dentistry Labs (with CAD/CAM technology and lifelike mannequins); Prosthodontics, Restorative, Orthodontics and Endodontics Labs; Periodontics and Oral Surgery Labs; and interdisciplinary collaboration spaces. All labs are NDC approved and designed to provide hands-on clinical training from the first year of the BDS program."
+        "text": "JKKN Dental College has world-class dental laboratories equipped with cutting-edge technologies. Available labs include: Anatomy, Histology, Radiology and Imaging Labs; Preclinical Simulation and Digital Dentistry Labs (with CAD/CAM technology and lifelike mannequins); Prosthodontics, Restorative, Orthodontics and Endodontics Labs; Periodontics and Oral Surgery Labs; and interdisciplinary collaboration spaces. All labs are NDC approved and designed to provide hands-on clinical training through the BDS program."
       }
     },
     {
@@ -44,10 +44,10 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      "name": "Do students get hands-on clinical training from Year 1 at JKKN Dental College?",
+      "name": "Do students get hands-on clinical training at JKKN Dental College?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, JKKN Dental College provides clinical exposure from the first year of the BDS program. Students begin with preclinical lab training using simulation mannequins and advanced equipment, progressing to real patient care under faculty supervision in the attached teaching hospital. This early clinical exposure ensures students develop confidence and competence in dental procedures throughout their 5-year BDS program."
+        "text": "Yes, JKKN Dental College provides clinical exposure through the BDS program. Students begin with preclinical lab training using simulation mannequins and advanced equipment, progressing to real patient care under faculty supervision in the attached teaching hospital. This early clinical exposure ensures students develop confidence and competence in dental procedures throughout their 5-year BDS program."
       }
     },
     {

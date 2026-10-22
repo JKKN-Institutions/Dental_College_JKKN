@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import EnquirySection from '@/components/lead/EnquirySection';
 import { Hospital, Stethoscope, Microscope, TrendingUp, Users, Bus, Route, Train, Plane, Home, MapPin, BookOpen, Award, Wifi, GraduationCap, Target, Sparkles, Shield } from 'lucide-react';
 import { ScrollToTop } from '@/components/ScrollToTop';
 import { faqs } from './faqs';
@@ -10,7 +11,7 @@ export default function ErodePage() {
 
   const whyFeatures = [
     { icon: <Hospital className="w-6 h-6 text-[#0b6d41]" />, title: 'Own Hospital', desc: 'NDC-approved dental college with attached hospital for hands-on clinical training' },
-    { icon: <Stethoscope className="w-6 h-6 text-[#0b6d41]" />, title: 'Real Patient Exposure', desc: 'Own dental hospital on campus — learners get real patient exposure from Year 1' },
+    { icon: <Stethoscope className="w-6 h-6 text-[#0b6d41]" />, title: 'Real Patient Exposure', desc: 'Own dental hospital on campus — learners get real patient exposure in the college hospital' },
     { icon: <Microscope className="w-6 h-6 text-[#0b6d41]" />, title: 'Advanced Learning Labs', desc: 'Advanced dental learning labs, simulation equipment, and digital dentistry training' },
     { icon: <TrendingUp className="w-6 h-6 text-[#0b6d41]" />, title: 'NEET MDS Results', desc: 'Strong track record in NEET MDS results and higher education' },
     { icon: <Users className="w-6 h-6 text-[#0b6d41]" />, title: 'Community Service', desc: 'Hospital serves the community — builds trust and clinical experience' },
@@ -78,7 +79,7 @@ export default function ErodePage() {
         <div className="max-w-7xl mx-auto flex items-center justify-center gap-3 sm:gap-6 flex-wrap">
           <span className="flex items-center gap-2 text-sm font-medium">
             <span className="w-2 h-2 bg-[#0f8f56] rounded-full inline-block" />
-            Admissions Open 2026-27
+            BDS &amp; MDS Admission Enquiry
           </span>
           <a href="tel:+919345855001" className="bg-[#0b6d41] hover:bg-[#085032] text-white text-sm font-semibold px-4 py-1.5 rounded-full border border-white/20 transition-colors">
             Call Us
@@ -92,7 +93,7 @@ export default function ErodePage() {
         style={{ background: 'linear-gradient(135deg, #0b6d41 0%, #032816 100%)', minHeight: '88vh' }}
       >
         <div className="mb-6 inline-flex items-center gap-2 bg-white/10 backdrop-blur border border-white/20 text-white text-sm font-medium px-5 py-2 rounded-full">
-          <Shield className="w-4 h-4" /> NDC, NAAC Approved • Admissions Open
+          <Shield className="w-4 h-4" /> NDC Approved • NAAC A Grade
         </div>
         <h1 className="text-white font-extrabold leading-tight mb-3 max-w-4xl" style={{ fontSize: 'clamp(2rem, 5vw + 0.5rem, 3.5rem)' }}>
           Dental College in <span className="text-[#ffde59]">Erode</span>
@@ -516,6 +517,9 @@ export default function ErodePage() {
         </div>
       </section>
 
+
+      {/* Enquiry form (marketing audit L3, 2026-10-21): the city pages had none. */}
+      <EnquirySection sourcePage="city-erode" />
 
       <ScrollToTop />
 

@@ -91,7 +91,10 @@ export const collegeFacts = {
   // Use placementOutcomeRate only with the words "placed or in higher studies".
   placementRate: 75.8,
   placementOutcomeRate: 93.9,
-  alumniCount: 3000, // Total alumni worldwide
+  // SOURCE: the college's own /alumni/ table, "TOTAL ALUMNI PASSED OUT" = 2,240 (BDS, seats x years,
+  // read 2026-10-21). The earlier 3000 had no source and contradicted that table, so the site now
+  // says the safe "2,000+" until the principal confirms an exact count.
+  alumniCount: 2000,
   publications: 50, // Research publications
   partnerships: 25, // Industry & academic partnerships
 
@@ -153,7 +156,7 @@ export const collegeFacts = {
     dailyPatients: 500,
     placementRate: 75.8,
     placementOutcomeRate: 93.9,
-    alumniCount: 3000,
+    alumniCount: 2000,
     publications: 50,
     partnerships: 25
   }

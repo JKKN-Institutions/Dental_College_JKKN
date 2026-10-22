@@ -51,8 +51,27 @@ export default function NAAC() {
         {/* Page Title */}
         <div className="max-w-7xl mx-auto mb-6">
           <h1 className="text-3xl md:text-4xl font-bold text-[#0b6d41]">
-            OVER VIEW
+            NAAC Accreditation — JKKN Dental College &amp; Hospital
           </h1>
+          {/* The grade itself, first (marketing audit T5, 2026-10-21). Until then the page opened on
+              "OVER VIEW" and a history of NAAC, and never said the grade. Figures: the NAAC certificate,
+              as recorded in data/collegeFacts.ts (naacGrade / naacScore / naacValidTo, read 2026-09-12). */}
+          <div className="mt-4 rounded-xl border border-[#0b6d41]/20 bg-[#fbfbee] p-5">
+            <p className="text-lg md:text-xl font-bold text-[#0b6d41]">
+              NAAC &lsquo;A&rsquo; Grade &middot; CGPA 3.01 &middot; valid up to 26 February 2030
+            </p>
+            <p className="mt-1 text-sm text-gray-700">
+              Certificate issued to J K K Nattraja Dental College and Hospital.{' '}
+              <a
+                href="https://ahs.jkkn.ac.in/pdfs/NAAC-certificate.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-semibold text-[#0b6d41] underline"
+              >
+                View the NAAC certificate (PDF)
+              </a>
+            </p>
+          </div>
         </div>
 
         <div className="max-w-7xl mx-auto">

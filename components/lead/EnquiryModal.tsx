@@ -10,25 +10,32 @@
 // WHY NOT AN IFRAME OF THE jkkn.ai PAGE. jkkn.ai answers with X-Frame-Options: SAMEORIGIN
 // (checked 2026-10-16), so the browser refuses to show it inside this site.
 //
-// SCOPE. The provider is mounted on the homepage only. Outside it, useEnquiryModal() returns
-// null and every EnquiryButton falls back to its normal jkkn.ai link — the other ~40 pages
-// that share the Header keep behaving exactly as before.
+// SCOPE. Since 2026-10-21 the provider wraps every page (ClientLayoutWrapper), user's choice:
+// the header "Enquire Now" opens this form on all pages. Outside a provider useEnquiryModal()
+// still returns null and EnquiryButton falls back to its jkkn.ai link, so a page rendered
+// without the wrapper degrades to the old behaviour instead of breaking.
 
 "use client"
 
-import { createContext, useCallback, useContext, useEffect, useMemo, useState, type ReactNode } from "react"
+import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState, type ReactNode } from "react"
 import Image from "next/image"
 import { X } from "lucide-react"
 import DentalEnquiryForm from "@/components/lead/DentalEnquiryForm"
 import { sendGaEvent } from "@/lib/ga-event"
 
-type OpenOptions = { withPoster?: boolean }
-type EnquiryModalApi = { openEnquiry: (sourcePage: string, options?: OpenOptions) => void }
-type OpenState = { sourcePage: string; withPoster: boolean }
+const APPLY_HREF = "https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_medium=organic"
+
+type OpenOptions = { withPoster?: boolean; programmeId?: string }
+type EnquiryModalApi = {
+  openEnquiry: (sourcePage: string, options?: OpenOptions) => void
+  /** True while the dialog is showing - the timed popup must not replace a half-typed form. */
+  isOpen: () => boolean
+}
+type OpenState = { sourcePage: string; withPoster: boolean; programmeId?: string }
 
 const EnquiryModalContext = createContext<EnquiryModalApi | null>(null)
 
-/** null outside the homepage — callers must fall back to their ordinary link. */
+/** null outside the provider — callers must fall back to their ordinary link. */
 export function useEnquiryModal() {
   return useContext(EnquiryModalContext)
 }
@@ -39,11 +46,16 @@ export function EnquiryModalProvider({ children }: { children: ReactNode }) {
   const openEnquiry = useCallback((source: string, options?: OpenOptions) => {
     // Only where the modal was opened from — no name, no phone.
     sendGaEvent("enquiry_open", { source_page: source, page_path: window.location.pathname })
-    setOpen({ sourcePage: source, withPoster: !!options?.withPoster })
+    setOpen({ sourcePage: source, withPoster: !!options?.withPoster, programmeId: options?.programmeId })
   }, [])
 
   const close = useCallback(() => setOpen(null), [])
-  const api = useMemo(() => ({ openEnquiry }), [openEnquiry])
+  const openRef = useRef(false)
+  useEffect(() => {
+    openRef.current = !!open
+  }, [open])
+  const isOpen = useCallback(() => openRef.current, [])
+  const api = useMemo(() => ({ openEnquiry, isOpen }), [openEnquiry, isOpen])
 
   useEffect(() => {
     if (!open) return
@@ -57,7 +69,14 @@ export function EnquiryModalProvider({ children }: { children: ReactNode }) {
   return (
     <EnquiryModalContext.Provider value={api}>
       {children}
-      {open && <EnquiryDialog sourcePage={open.sourcePage} withPoster={open.withPoster} onClose={close} />}
+      {open && (
+        <EnquiryDialog
+          sourcePage={open.sourcePage}
+          withPoster={open.withPoster}
+          programmeId={open.programmeId}
+          onClose={close}
+        />
+      )}
     </EnquiryModalContext.Provider>
   )
 }
@@ -73,10 +92,12 @@ export function EnquiryModalProvider({ children }: { children: ReactNode }) {
 function EnquiryDialog({
   sourcePage,
   withPoster,
+  programmeId,
   onClose,
 }: {
   sourcePage: string
   withPoster: boolean
+  programmeId?: string
   onClose: () => void
 }) {
   const focusForm = (e: React.MouseEvent<HTMLButtonElement>) => {
@@ -138,7 +159,20 @@ function EnquiryDialog({
           </div>
 
           <div className={withPoster ? "col-span-2 md:col-span-1 md:col-start-2 md:row-start-2 md:self-start" : ""}>
-            <DentalEnquiryForm sourcePage={sourcePage} compact />
+            <DentalEnquiryForm sourcePage={sourcePage} defaultProgrammeId={programmeId} compact />
+            {/* The full jkkn.ai application stays one tap away for people ready to apply now
+                (user's choice 2026-10-21: the header opens this form, jkkn.ai becomes a small link). */}
+            <p className="mt-3 text-center text-xs text-white/70">
+              Ready to apply now?{" "}
+              <a
+                href={`${APPLY_HREF}&utm_campaign=dental-${sourcePage}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white underline"
+              >
+                Fill the full application form
+              </a>
+            </p>
           </div>
         </div>
       </div>

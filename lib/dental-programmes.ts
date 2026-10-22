@@ -36,4 +36,10 @@ export const VALID_DENTAL_PROGRAMME_IDS: ReadonlySet<string> = new Set(
 // five M.Sc rows and pharmacy's six M.Pharm rows.
 export const DEFAULT_PROGRAMME_BY_PAGE: Readonly<Record<string, string>> = {
   bds: "aea1e367-65ad-442d-9b11-ab0277d93a83",
+  // A speciality page DOES have one correct default - its own speciality (added 2026-10-21).
+  "mds-periodontics": "628081aa-6b5a-422c-bf09-f99d8720f816",
+  "mds-prosthodontics": "22e425e7-f159-4b89-8d59-901dc32f96c6",
+  "mds-orthodontics": "d3d87793-fb87-4be3-8a37-93b2d02fd0e7",
+  "mds-conservative": "2806fbc8-9848-4a96-b57e-dfeac11768ca",
+  "mds-oral-medicine": "3805d017-1f0e-458d-a384-3721e0a9db54",
 }

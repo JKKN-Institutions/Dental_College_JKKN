@@ -137,7 +137,7 @@ export function generatePageMetadata({
   canonicalPath,
   datePublished,
   dateModified,
-  ogImage = "/images/BDS-hero-image.webp"
+  ogImage = "/images/og-jkkn-dental-clinical-training.jpg"
 }: {
   title: string;
   description: string;

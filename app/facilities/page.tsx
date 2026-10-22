@@ -1,6 +1,11 @@
 import type { Metadata } from 'next';
 import StructuredData from '@/components/StructuredData';
 import { generateSpeakableWebPageSchema } from '@/lib/metadata';
+import Link from 'next/link';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+import EnquirySection from '@/components/lead/EnquirySection';
+import collegeFacts from '@/data/collegeFacts';
 
 export const metadata: Metadata = {
   alternates: { canonical: '/facilities/' },
@@ -37,6 +42,79 @@ export default function FacilitiesPage() {
     <>
       <StructuredData data={facilitiesBreadcrumbSchema} />
       <StructuredData data={speakableSchema} />
+      <Header />
+      <main className="min-h-screen bg-[#fbfbee]">
+        {/* Until 2026-10-21 this page rendered nothing but schema - a blank screen from the main menu
+            (marketing audit L7). Hospital figures: data/collegeFacts.ts (college office, 2026-09-18). */}
+        <section className="bg-[#0b6d41] py-12 px-4">
+          <div className="max-w-5xl mx-auto">
+            <p className="text-[#ffde59] text-xs font-semibold tracking-widest uppercase mb-2">Campus &amp; Hospital</p>
+            <h1 className="text-3xl sm:text-4xl font-bold text-white">Facilities at JKKN Dental College &amp; Hospital</h1>
+            <p className="hero-description text-gray-100 mt-4 text-base sm:text-lg leading-relaxed max-w-3xl">
+              Learners train in the college&apos;s own dental hospital &mdash; {collegeFacts.dentalChairs}+ dental chairs,
+              {' '}{collegeFacts.hospitalBeds}+ beds and about {collegeFacts.dailyPatients} patients a day across
+              {' '}{collegeFacts.totalDepartments}{' '}departments &mdash; on the JKKN campus at Komarapalayam on NH-544.
+            </p>
+          </div>
+        </section>
+
+        <article className="max-w-5xl mx-auto px-4 py-12 space-y-10">
+          {groups.map((g) => (
+            <section key={g.title}>
+              <h2 className="text-2xl font-bold text-[#0b6d41] mb-4">{g.title}</h2>
+              <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 list-none p-0 m-0">
+                {g.items.map((i) => (
+                  <li key={i.href}>
+                    <Link
+                      href={i.href}
+                      className="block h-full rounded-xl bg-white border border-gray-100 p-4 shadow-sm hover:border-[#0b6d41] transition-colors"
+                    >
+                      <span className="block font-semibold text-[#0b6d41]">{i.label}</span>
+                      <span className="block mt-1 text-sm text-gray-600">{i.desc}</span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          ))}
+        </article>
+
+        <EnquirySection sourcePage="facilities" />
+      </main>
+      <Footer />
     </>
   );
 }
+
+const groups = [
+  {
+    title: 'Clinical training and learning',
+    items: [
+      { href: '/facilities/labs/', label: 'Dental Labs', desc: 'Pre-clinical and clinical laboratories.' },
+      { href: '/facilities/digital-class-room/', label: 'Digital Classrooms', desc: 'Smart classrooms for lectures and case discussion.' },
+      { href: '/facilities/library/', label: 'Library', desc: 'Dental textbooks, journals and e-resources.' },
+      { href: '/facilities/seminar-hall/', label: 'Seminar Hall', desc: 'Seminars, CDE programmes and presentations.' },
+      { href: '/facilities/auditorium/', label: 'Auditorium', desc: 'Lectures, conferences and cultural events.' },
+    ],
+  },
+  {
+    title: 'Living on campus',
+    items: [
+      { href: '/facilities/hostel/', label: 'Hostels', desc: 'Separate boys and girls hostels with mess.' },
+      { href: '/facilities/food-court/', label: 'Food Court', desc: 'Meals and snacks on campus.' },
+      { href: '/facilities/transport/', label: 'Transport', desc: 'College buses for day scholars.' },
+      { href: '/facilities/wi-fi-campus/', label: 'Wi-Fi Campus', desc: 'Internet across the campus.' },
+      { href: '/facilities/bank-and-post-office/', label: 'Bank & Post Office', desc: 'ATM, banking and post office on campus.' },
+      { href: '/facilities/sports-club/', label: 'Sports', desc: 'Grounds, indoor stadium and gym.' },
+    ],
+  },
+  {
+    title: 'Health, safety and access',
+    items: [
+      { href: '/facilities/health-facilities/', label: 'Health Facilities', desc: 'Medical care for learners and staff.' },
+      { href: '/facilities/ambulance-services/', label: 'Ambulance', desc: 'Emergency transport.' },
+      { href: '/facilities/accessibility-and-inclusion-at-jkkndch/', label: 'Accessibility & Inclusion', desc: 'Access for learners, patients and visitors with disabilities.' },
+      { href: '/facilities/barrier-free-environment/', label: 'Barrier-Free Campus', desc: 'The barrier-free environment policy.' },
+    ],
+  },
+];

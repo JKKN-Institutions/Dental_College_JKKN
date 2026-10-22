@@ -7,6 +7,7 @@ import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import StructuredData from '@/components/StructuredData';
 import { generateBreadcrumbSchema, generateWebPageSchema } from '@/lib/metadata';
 import { ShieldCheck, Wifi, Utensils, Home as HomeIcon } from 'lucide-react';
+import EnquirySection from '@/components/lead/EnquirySection';
 
 export const metadata: Metadata = {
   title: 'Hostel Facilities - JKKN Dental College',
@@ -151,6 +152,13 @@ export default function HostelFacilities() {
           </div>
         </div>
       </section>
+
+      {/* Enquiry form (marketing audit L3, 2026-10-21). */}
+      <EnquirySection
+        sourcePage="hostel"
+        heading="Ask About Hostel, Mess and Fees"
+        subheading="Leave your details and our admission team will call you back within 24 hours."
+      />
 
       <Footer />
       <FloatingWhatsApp />

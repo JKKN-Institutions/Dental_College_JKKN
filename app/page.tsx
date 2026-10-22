@@ -9,7 +9,6 @@ import { homeFaqItems } from '@/data/homeFaqs';
 
 import FloatingWhatsApp from '@/components/FloatingWhatsAppClient';
 import AdmissionPopup from '@/components/AdmissionPopup';
-import { EnquiryModalProvider } from '@/components/lead/EnquiryModal';
 const AboutInstitution = dynamic(() => import('@/components/AboutInstitution'));
 const AcademicPrograms = dynamic(() => import('@/components/AcademicPrograms'));
 const Infrastructure = dynamic(() => import('@/components/Infrastructure'));
@@ -31,7 +30,7 @@ export const metadata: Metadata = {
     siteName: 'JKKN Dental College & Hospital',
     images: [
       {
-        url: 'https://dental.jkkn.ac.in/images/BDS-hero-image.webp',
+        url: 'https://dental.jkkn.ac.in/images/og-jkkn-dental-clinical-training.jpg',
         width: 1200,
         height: 630,
         alt: 'JKKN Dental College & Hospital campus at Komarapalayam, Namakkal District, Tamil Nadu'
@@ -44,7 +43,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'JKKN Dental College & Hospital (JKK Nattraja), Komarapalayam',
     description: 'JKKN Dental College & Hospital (JKK Nattraja), Komarapalayam. NDC approved, NAAC A Grade. BDS 100 & MDS 18 seats, fees, 93.9% placed or in higher studies (2024-25 batch). Apply 2026-27.',
-    images: ['https://dental.jkkn.ac.in/images/BDS-hero-image.webp'],
+    images: ['https://dental.jkkn.ac.in/images/og-jkkn-dental-clinical-training.jpg'],
   },
   alternates: {
     canonical: 'https://dental.jkkn.ac.in/',
@@ -273,7 +272,6 @@ export default function Home() {
   };
 
   return (
-    <EnquiryModalProvider>
     <main className="overflow-x-hidden w-full">
       <AdmissionPopup />
       <StructuredData data={websiteSchema} />
@@ -305,6 +303,5 @@ export default function Home() {
       <Footer />
       <FloatingWhatsApp />
     </main>
-    </EnquiryModalProvider>
   );
 }

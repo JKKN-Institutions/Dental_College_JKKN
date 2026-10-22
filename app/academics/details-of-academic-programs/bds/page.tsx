@@ -10,6 +10,7 @@ import { generateSpeakableWebPageSchema } from '@/lib/metadata';
 import { faqPageSchema } from '@/lib/faq';
 import { useState } from 'react';
 import DentalEnquiryForm from "@/components/lead/DentalEnquiryForm";
+import EnquiryButton from "@/components/lead/EnquiryButton";
 import { DEFAULT_PROGRAMME_BY_PAGE } from "@/lib/dental-programmes";
 import { jkknSameAsUrls } from '@/lib/metadata';
 import { TN_BDS_FEES } from '@/data/tnBdsFees';
@@ -58,7 +59,7 @@ export default function BDSProgram() {
               },
               {
                 q: 'What is the placement record of JKKN Dental College?',
-                a: 'JKKN maintains a 93.9% placed-or-higher-studies rate (2024-25 batch). Top domestic recruiters include Apollo Hospitals, Sun Pharma, Clove Dental, Dental Planet, Manipal Hospitals, and Dr. Agarwal\'s Healthcare. International placements are available through NHS UK, Cleveland Clinic Abu Dhabi, and dental practices in Singapore and UAE. The alumni network spans 3,000+ graduates worldwide.'
+                a: 'JKKN maintains a 93.9% placed-or-higher-studies rate (2024-25 batch). Of 99 BDS graduates, 75 were placed and 18 went on to higher studies, at a median salary of Rs 3.6 lakh; all 7 MDS graduates were placed, median Rs 6.0 lakh. These are the figures JKKN filed in its NIRF 2026 submission. The alumni network has 2,000+ BDS graduates.'
               },
               {
                 q: 'Where is JKKN Dental College located?',
@@ -70,7 +71,7 @@ export default function BDSProgram() {
               },
               {
                 q: 'How many dental chairs does JKKN Dental Hospital have?',
-                a: 'JKKN Dental Hospital has 200+ dental chairs and 100 hospital beds. The hospital serves 500+ patients daily across 9 departments, providing extensive clinical exposure to BDS learners from Year 1.'
+                a: 'JKKN Dental Hospital has 200+ dental chairs and 100 hospital beds. The hospital serves 500+ patients daily across 9 departments, giving BDS learners hands-on clinical training in their own college hospital.'
               },
               {
                 q: 'Can international learners apply for BDS at JKKN?',
@@ -140,7 +141,7 @@ export default function BDSProgram() {
 
   const speakableSchema = generateSpeakableWebPageSchema({
     title: 'BDS at JKKN Dental College — Admission 2026-27 in Tamil Nadu',
-    description: 'JKKN Dental College, Namakkal offers NDC-approved BDS with 200+ dental chairs, 500+ daily patients, 93.9% placed or in higher studies (2024-25 batch), NAAC Accredited. Admission 2026-27 open.',
+    description: 'JKKN Dental College, Namakkal offers NDC-approved BDS with 200+ dental chairs, 500+ daily patients, 93.9% placed or in higher studies (2024-25 batch), NAAC A Grade.',
     url: 'https://dental.jkkn.ac.in/academics/details-of-academic-programs/bds/',
     dateModified: '2026-04-08',
     speakableCssSelectors: ['h1', '.hero-description', '.answer-capsule', 'article p'],
@@ -189,21 +190,9 @@ export default function BDSProgram() {
                   <span className="text-[#ffde59] font-semibold text-sm">NAAC Accredited</span>
                 </div>
                 <div className="inline-flex items-center gap-2 bg-[#0f8f56]/20 backdrop-blur-sm border border-[#0f8f56]/40 rounded-full px-4 py-2">
-                  <span className="text-white font-semibold text-sm">Admission 2026-27 Open</span>
+                  <span className="text-white font-semibold text-sm">BDS Admission Enquiry</span>
                 </div>
               </div>
-
-              {/* A-04: the BDS hub hands the Tamil-Nadu-wide list query to its own child.
-                  A child page with no parent link is the defect this estate keeps repeating -
-                  GL6-25 on /bds/, GL6-75 on the MDS children. */}
-              <p className="mb-4">
-                <a
-                  href="/academics/details-of-academic-programs/bds/colleges-in-tamil-nadu/"
-                  className="inline-flex items-center gap-2 text-[#ffde59] font-semibold underline hover:no-underline"
-                >
-                  All 22 BDS colleges in Tamilnadu, their 2,100 seats and the official fees &rarr;
-                </a>
-              </p>
 
               {/* H1 — Gap #3 Fixed: Keyword-rich H1 */}
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
@@ -239,9 +228,15 @@ export default function BDSProgram() {
 
               {/* CTA Buttons */}
               <div className="flex flex-wrap gap-4">
-                <a href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_medium=organic&utm_campaign=academics-details-of-academic-programs-bds" target="_blank" rel="noopener noreferrer" className="bg-[#ffde59] hover:bg-[#e6c64d] text-[#032816] font-semibold px-8 py-3 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl inline-block">
-                  Apply Now — Admission 2026-27
-                </a>
+                <EnquiryButton
+                  sourcePage="bds-hero-btn"
+                  programmeId={DEFAULT_PROGRAMME_BY_PAGE["bds"]}
+                  fallbackHref="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_medium=organic&utm_campaign=academics-details-of-academic-programs-bds"
+                  fallbackLabel="Apply Now"
+                  className="bg-[#ffde59] hover:bg-[#e6c64d] text-[#032816] font-semibold px-8 py-3 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl inline-block"
+                >
+                  Get BDS Fee & Admission Details
+                </EnquiryButton>
                 <button
                   onClick={(e) => {
                     e.preventDefault();
@@ -293,7 +288,7 @@ export default function BDSProgram() {
         <div className="max-w-4xl mx-auto">
           <div className="answer-capsule bg-white border-l-4 border-[#0f8f56] rounded-r-xl p-6 shadow-sm">
             <p className="text-gray-700 leading-relaxed text-base md:text-lg">
-              <strong className="text-[#0b6d41]">JKKN Dental College & Hospital</strong>, established in 1987 under the J.K.K. Nattraja Educational Institutions (since 1952), is a NDC-approved and <a href="/accreditation/" className="text-[#0b6d41] underline hover:text-[#0b6d41]">NAAC Accredited</a> dental institution located on NH-544, Komarapalayam, Namakkal District, Tamil Nadu 638183. It offers <strong>100 BDS seats</strong> and <strong>18 MDS seats</strong> across 5 specializations, affiliated to the <a href="https://www.tnmgrmu.ac.in/" target="_blank" rel="noopener noreferrer" className="text-[#0b6d41] underline hover:text-[#0b6d41]">Tamil Nadu Dr. M.G.R. Medical University</a>, Chennai. With 200+ dental chairs, 100+ hospital beds, and 500+ daily patient footfall across 9 departments, JKKN gives BDS learners daily clinical exposure from the first year, alongside <a href="/research/" className="text-[#0b6d41] underline hover:text-[#0b6d41]">research excellence</a> with 50+ publications and 25+ MoU partners. The college provides 93.9% placed or in higher studies (2024-25 batch) including international opportunities.
+              <strong className="text-[#0b6d41]">JKKN Dental College & Hospital</strong>, established in 1987 under the J.K.K. Nattraja Educational Institutions (since 1952), is a NDC-approved and <a href="/accreditation/naac/" className="text-[#0b6d41] underline hover:text-[#0b6d41]">NAAC Accredited</a> dental institution located on NH-544, Komarapalayam, Namakkal District, Tamil Nadu 638183. It offers <strong>100 BDS seats</strong> and <strong>18 MDS seats</strong> across 5 specializations, affiliated to the <a href="https://www.tnmgrmu.ac.in/" target="_blank" rel="noopener noreferrer" className="text-[#0b6d41] underline hover:text-[#0b6d41]">Tamil Nadu Dr. M.G.R. Medical University</a>, Chennai. With 200+ dental chairs, 100+ hospital beds, and 500+ daily patient footfall across 9 departments, JKKN gives BDS learners daily clinical exposure in the college hospital, alongside <a href="/research/research-development-rd-cell/" className="text-[#0b6d41] underline hover:text-[#0b6d41]">research excellence</a> with 50+ publications and 25+ MoU partners. The college provides 93.9% placed or in higher studies (2024-25 batch) including international opportunities.
             </p>
           </div>
         </div>
@@ -324,7 +319,7 @@ export default function BDSProgram() {
             {[
               { num: 1, title: 'NDC Approved & NAAC Accredited', desc: 'Fully approved by the National Dental Commission and accredited by NAAC, ensuring nationally recognized standards of dental education and patient care.' },
               { num: 2, title: '200+ Dental Chairs', desc: 'A large dental clinical facility in the Namakkal-Erode-Salem corridor with 200+ operational dental chairs and 100+ hospital beds for comprehensive training.' },
-              { num: 3, title: '500+ Daily Patients — Clinical Exposure from Year 1', desc: 'Learners receive hands-on clinical training from Year 1 with 500+ patients visiting daily across 9 specialized departments.' },
+              { num: 3, title: '500+ Daily Patients — Clinical Training in Our Own Hospital', desc: 'Learners receive hands-on clinical training in the college hospital, where 500+ patients visit daily across 9 specialized departments.' },
               { num: 4, title: '93.9% Placed or in Higher Studies (2024-25)', desc: 'Of 99 BDS graduates in 2024-25, 75 were placed and 18 went on to higher studies, at a median salary of Rs 3,60,000, as filed in the NIRF 2026 submission.' },
               { num: 5, title: '5 MDS Specializations — Seamless UG to PG Pathway', desc: 'Pursue MDS in Periodontics, Orthodontics, Prosthodontics, Conservative & Endodontics, or Oral Medicine & Radiology — 18 PG seats available right on campus.' },
               { num: 6, title: '74+ Years of Trust Legacy (Since 1952)', desc: 'Part of J.K.K. Nattraja Educational Institutions, one of the oldest educational trusts in Tamil Nadu with a legacy spanning 74+ years across 9 institutions.' },
@@ -376,11 +371,11 @@ export default function BDSProgram() {
                 </p>
 
                 <p className="text-gray-600 mb-6 leading-relaxed">
-                  With 200+ dental chairs and 500+ daily patients across 9 departments, JKKN gives BDS learners hands-on clinical experience from the very first year. Learners benefit from an <a href="/ai-dental-campus/" className="text-[#0b6d41] underline hover:text-[#0b6d41]">AI-integrated campus</a>, advanced simulation learning labs, and digital radiology infrastructure. The college is established in 1987 under the J.K.K. Nattraja Educational Institutions trust (since 1952), carrying forward a legacy of 74+ years of educational excellence.
+                  With 200+ dental chairs and 500+ daily patients across 9 departments, JKKN gives BDS learners hands-on clinical experience in their own college hospital. Learners benefit from an <a href="/ai-dental-campus/" className="text-[#0b6d41] underline hover:text-[#0b6d41]">AI-integrated campus</a>, advanced simulation learning labs, and digital radiology infrastructure. The college is established in 1987 under the J.K.K. Nattraja Educational Institutions trust (since 1952), carrying forward a legacy of 74+ years of educational excellence.
                 </p>
 
                 <p className="text-gray-600 mb-8 leading-relaxed">
-                  Learners searching for the best BDS colleges near <a href="/erode/" className="text-[#0b6d41] underline hover:text-[#0b6d41]">Erode</a>, <a href="/salem/" className="text-[#0b6d41] underline hover:text-[#0b6d41]">Salem</a>, <a href="/namakkal/" className="text-[#0b6d41] underline hover:text-[#0b6d41]">Namakkal</a>, or <a href="/coimbatore/" className="text-[#0b6d41] underline hover:text-[#0b6d41]">Coimbatore</a> will find JKKN strategically located on NH-544, offering world-class dental education with 93.9% placed or in higher studies (2024-25 batch) and a strong <a href="/alumni/" className="text-[#0b6d41] underline hover:text-[#0b6d41]">alumni network</a> of 3,000+ graduates.
+                  Learners searching for the best BDS colleges near <a href="/erode/" className="text-[#0b6d41] underline hover:text-[#0b6d41]">Erode</a>, <a href="/salem/" className="text-[#0b6d41] underline hover:text-[#0b6d41]">Salem</a>, <a href="/namakkal/" className="text-[#0b6d41] underline hover:text-[#0b6d41]">Namakkal</a>, or <a href="/coimbatore/" className="text-[#0b6d41] underline hover:text-[#0b6d41]">Coimbatore</a> will find JKKN strategically located on NH-544, offering world-class dental education with 93.9% placed or in higher studies (2024-25 batch) and a strong <a href="/alumni/" className="text-[#0b6d41] underline hover:text-[#0b6d41]">alumni network</a> of 2,000+ graduates.
                 </p>
               </article>
 
@@ -391,21 +386,21 @@ export default function BDSProgram() {
               <div className="col-span-2 relative rounded-2xl h-64 overflow-hidden shadow-lg">
                 {/* Gap #15: Fixed alt text */}
                 <Image
-                  src="/images/BDS-Modern-Dental-Lab.webp"
-                  alt="Advanced dental simulation laboratory with 200+ dental chairs at JKKN Dental College, Namakkal"
+                  src="/images/lab-1.webp"
+                  alt="BDS learners in the pre-clinical laboratory at JKKN Dental College, Komarapalayam"
                   fill
                   className="object-cover"
                   sizes="(max-width: 768px) 100vw, 50vw"
                   quality={80}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end justify-center pb-6">
-                  <h3 className="text-2xl md:text-4xl font-bold text-white">Modern Dental Learning Lab</h3>
+                  <h3 className="text-2xl md:text-4xl font-bold text-white">Pre-clinical Lab</h3>
                 </div>
               </div>
               <div className="relative rounded-2xl h-48 overflow-hidden shadow-lg">
                 {/* Gap #15: Fixed alt text */}
                 <Image
-                  src="/images/BDS-Clinical-Training.webp"
+                  src="/images/lab-3.webp"
                   alt="Hands-on clinical training for BDS students at JKKN Dental Hospital, Tamil Nadu"
                   fill
                   className="object-cover"
@@ -419,15 +414,15 @@ export default function BDSProgram() {
               <div className="relative rounded-2xl h-48 overflow-hidden shadow-lg">
                 {/* Gap #15: Fixed alt text */}
                 <Image
-                  src="/images/BDS-Campus-Life.webp"
-                  alt="JKKN Dental College campus life and facilities on NH-544, Komarapalayam, Tamil Nadu"
+                  src="/images/JKKN-Dental-College-Building.webp"
+                  alt="JKKN Dental College &amp; Hospital building on NH-544, Komarapalayam, Tamil Nadu"
                   fill
                   className="object-cover"
                   sizes="(max-width: 768px) 50vw, 25vw"
                   quality={80}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end justify-center pb-4">
-                  <h3 className="text-2xl font-bold text-white text-center">Campus Life</h3>
+                  <h3 className="text-2xl font-bold text-white text-center">Our Campus</h3>
                 </div>
               </div>
               <div className="flex items-start gap-3">
@@ -460,8 +455,8 @@ export default function BDSProgram() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="font-bold text-[#0b6d41] mb-1 text-base">Expert Senior Learners</h3>
-                  <p className="text-sm text-gray-600">Highly qualified and experienced teaching senior learners across 9 departments</p>
+                  <h3 className="font-bold text-[#0b6d41] mb-1 text-base">Expert Faculty (Senior Learners)</h3>
+                  <p className="text-sm text-gray-600">Highly qualified and experienced faculty across 9 departments</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
@@ -498,7 +493,7 @@ export default function BDSProgram() {
             Hospital & Clinical Infrastructure
           </h2>
           <p className="text-gray-100 text-center mb-12 max-w-3xl mx-auto">
-            One of a 200+ chair teaching hospital seeing 500+ patients a day, giving BDS learners clinical exposure from the first year
+            A 200+ chair teaching hospital seeing about 500 patients a day, giving BDS learners hands-on clinical exposure
           </p>
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
@@ -745,13 +740,6 @@ export default function BDSProgram() {
               </thead>
               <tbody className="divide-y divide-gray-100">
                 {[
-                  { year: '2026', category: 'OC', open: '452', close: '448' },
-                  { year: '2026', category: 'BC', open: '468', close: '273' },
-                  { year: '2026', category: 'BCM', open: '429', close: '299' },
-                  { year: '2026', category: 'MBC', open: '474', close: '320' },
-                  { year: '2026', category: 'SC', open: '385', close: '320' },
-                  { year: '2026', category: 'SCA', open: '350', close: '319' },
-                  { year: '2026', category: 'ST', open: '337', close: '247' },
                   { year: '2025', category: 'OC', open: '452', close: '448' },
                   { year: '2025', category: 'BC', open: '468', close: '273' },
                   { year: '2025', category: 'BCM', open: '429', close: '299' },
@@ -1067,12 +1055,12 @@ export default function BDSProgram() {
               <svg className="w-5 h-5 text-[#0b6d41]" fill="currentColor" viewBox="0 0 20 20">
                 <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z" />
               </svg>
-              <span className="text-[#0b6d41] font-semibold text-sm">OUR SENIOR LEARNERS</span>
+              <span className="text-[#0b6d41] font-semibold text-sm">OUR FACULTY (SENIOR LEARNERS)</span>
             </div>
           </div>
 
           <h2 className="text-3xl md:text-4xl font-bold text-[#0b6d41] text-center mb-4">
-            Distinguished Senior Learners — Experts in Dental Sciences
+            Our Faculty (Senior Learners) — Experts in Dental Sciences
           </h2>
           <p className="text-gray-600 text-center mb-10 max-w-3xl mx-auto">
             JKKN Dental College is taught by 46 faculty members across all 9 departments,
@@ -1127,7 +1115,7 @@ export default function BDSProgram() {
             Career Opportunities & Placement Assistance
           </h2>
           <p className="text-gray-600 text-center mb-12 max-w-4xl mx-auto leading-relaxed">
-            JKKN Dental College provides 93.9% placed or in higher studies (2024-25 batch) with a strong network of domestic and international recruiters. Our 3,000+ <a href="/alumni/" className="text-[#0b6d41] underline hover:text-[#0b6d41]">alumni</a> are placed across leading healthcare institutions in India, UK, UAE, and Singapore.
+            Of the 99 BDS graduates of 2024-25, 75 were placed and 18 went on to higher studies (93.9%), at a median salary of Rs 3.6 lakh, as filed in JKKN&apos;s NIRF 2026 submission. Our 2,000+ <a href="/alumni/" className="text-[#0b6d41] underline hover:text-[#0b6d41]">alumni</a> work in practice, hospitals, teaching and research.
           </p>
 
           {/* Placement Highlights — Horizontal Stats Strip */}
@@ -1139,16 +1127,16 @@ export default function BDSProgram() {
                 <div className="text-xs text-gray-100 font-semibold leading-snug">Placed or in higher studies 2024-25</div>
               </div>
               <div className="text-center bg-white/10 rounded-xl py-5 px-3">
-                <div className="text-4xl font-bold text-[#ffde59] mb-1">3,000+</div>
-                <div className="text-xs text-gray-100 font-semibold leading-snug">Alumni Network</div>
+                <div className="text-4xl font-bold text-[#ffde59] mb-1">75 of 99</div>
+                <div className="text-xs text-gray-100 font-semibold leading-snug">BDS graduates placed 2024-25</div>
               </div>
               <div className="text-center bg-white/10 rounded-xl py-5 px-3">
-                <div className="text-4xl font-bold text-[#ffde59] mb-1">40+</div>
-                <div className="text-xs text-gray-100 font-semibold leading-snug">Domestic Recruiters</div>
+                <div className="text-4xl font-bold text-[#ffde59] mb-1">Rs 3.6L</div>
+                <div className="text-xs text-gray-100 font-semibold leading-snug">BDS median salary 2024-25</div>
               </div>
               <div className="text-center bg-white/10 rounded-xl py-5 px-3">
-                <div className="text-3xl font-bold text-[#ffde59] mb-1">UK, UAE, SG</div>
-                <div className="text-xs text-gray-100 font-semibold leading-snug">International Placements</div>
+                <div className="text-4xl font-bold text-[#ffde59] mb-1">7 of 7</div>
+                <div className="text-xs text-gray-100 font-semibold leading-snug">MDS graduates placed</div>
               </div>
             </div>
           </div>
@@ -1183,49 +1171,21 @@ export default function BDSProgram() {
               </div>
             </div>
 
-            {/* Right: Recruiters + International */}
+            {/* Right: the NIRF-filed outcome. The recruiter and "international partner" names that
+                stood here had no document behind them and were removed on 2026-10-21 (user's choice:
+                remove what cannot be proved, add it back with proof). */}
             <div className="space-y-6">
-
-              {/* Top Recruiters Domestic */}
               <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
                 <div className="flex items-center gap-3 mb-5">
                   <div className="w-1 h-8 bg-[#ffde59] rounded-full flex-shrink-0" />
-                  <h3 className="text-lg font-bold text-[#0b6d41]">Top Recruiters — Domestic</h3>
+                  <h3 className="text-lg font-bold text-[#0b6d41]">Placement Figures Filed with NIRF 2026</h3>
                 </div>
-                <div className="flex flex-wrap gap-3">
-                  {['Apollo Hospitals', 'Sun Pharma', 'Clove Dental', 'Dental Planet', 'Manipal Hospitals', "Dr. Agarwal's Healthcare"].map((company, idx) => (
-                    <span key={idx} className="bg-[#0b6d41]/5 border border-[#0b6d41]/20 px-4 py-2 rounded-full text-sm font-semibold text-[#0b6d41] hover:bg-[#0b6d41]/10 transition-colors duration-200">
-                      {company}
-                    </span>
-                  ))}
-                </div>
+                <ul className="space-y-3 text-sm text-gray-700 list-none p-0 m-0">
+                  <li><strong className="text-[#0b6d41]">BDS 2024-25:</strong> 99 graduated, 75 placed, 18 in higher studies, median salary Rs 3.6 lakh</li>
+                  <li><strong className="text-[#0b6d41]">MDS 2024-25:</strong> 7 graduated, 7 placed, median salary Rs 6.0 lakh</li>
+                </ul>
+                <a href="/placements/" className="inline-block mt-5 text-sm font-semibold text-[#0b6d41] underline">See the year-wise placement figures &rarr;</a>
               </div>
-
-              {/* International Placement Partners */}
-              <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
-                <div className="flex items-center gap-3 mb-5">
-                  <div className="w-1 h-8 bg-[#ffde59] rounded-full flex-shrink-0" />
-                  <h3 className="text-lg font-bold text-[#0b6d41]">International Placement Partners</h3>
-                </div>
-                <div className="grid sm:grid-cols-2 gap-4">
-                  {[
-                    { name: 'NHS UK', region: 'United Kingdom', desc: 'National Health Service dental positions' },
-                    { name: 'Cleveland Clinic Abu Dhabi', region: 'UAE', desc: 'Premium healthcare institution' },
-                    { name: 'Dental Practices — UAE', region: 'United Arab Emirates', desc: 'Private dental clinics across Dubai, Abu Dhabi' },
-                    { name: 'Singapore Dental Groups', region: 'Singapore', desc: 'Multi-specialty dental groups' },
-                  ].map((partner, idx) => (
-                    <div key={idx} className="bg-[#FBFBEE] rounded-xl p-4 border border-gray-100 hover:border-[#0f8f56]/40 hover:shadow-sm transition-all duration-200">
-                      <div className="flex items-center gap-2 mb-2">
-                        <div className="w-2 h-2 rounded-full bg-[#ffde59] flex-shrink-0" />
-                        <span className="font-bold text-gray-800 text-sm">{partner.name}</span>
-                      </div>
-                      <span className="inline-block text-xs text-[#0b6d41] font-semibold bg-[#0b6d41]/10 px-2 py-0.5 rounded-full mb-2">{partner.region}</span>
-                      <p className="text-xs text-gray-500">{partner.desc}</p>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
             </div>
           </div>
         </div>
@@ -1445,7 +1405,7 @@ export default function BDSProgram() {
       <section className="bg-gradient-to-br from-[#0b6d41] to-[#032816] py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <div className="inline-flex items-center gap-2 bg-[#0f8f56]/20 backdrop-blur-sm border border-[#0f8f56]/40 rounded-full px-4 py-2 mb-6">
-            <span className="text-white font-semibold text-sm">BDS Admission 2026-27 Now Open</span>
+            <span className="text-white font-semibold text-sm">BDS Admission Enquiry</span>
           </div>
 
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
@@ -1457,7 +1417,7 @@ export default function BDSProgram() {
 
           <div className="flex flex-wrap justify-center gap-6">
             <a href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_medium=organic&utm_campaign=academics-details-of-academic-programs-bds" target="_blank" rel="noopener noreferrer" className="bg-[#ffde59] hover:bg-[#e6c64d] text-[#032816] font-semibold px-10 py-4 rounded-lg text-lg transition-all duration-300 shadow-lg hover:shadow-xl inline-block">
-              Apply for BDS Admission 2026-27
+              Apply for BDS Admission
             </a>
             <a href="tel:+919345855001" className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#0b6d41] font-semibold px-10 py-4 rounded-lg text-lg transition-all duration-300 inline-block">
               Call: +91 93458 55001
@@ -1482,6 +1442,16 @@ export default function BDSProgram() {
               <h2 className="text-white text-2xl md:text-3xl font-bold text-center mb-2">Get a Call Back</h2>
               <p className="text-white/80 text-center text-sm mb-8">Leave your details and our admission team will contact you within 24 hours.</p>
               <DentalEnquiryForm sourcePage="bds" defaultProgrammeId={DEFAULT_PROGRAMME_BY_PAGE["bds"]} />
+              {/* A-04: the BDS hub still hands the Tamil-Nadu-wide list query to its own child page -
+                  moved here from above the H1 on 2026-10-21 (user's choice: rival lists below the form). */}
+              <p className="mt-8 text-center">
+                <a
+                  href="/academics/details-of-academic-programs/bds/colleges-in-tamil-nadu/"
+                  className="text-white/90 text-sm font-semibold underline hover:no-underline"
+                >
+                  All 22 BDS colleges in Tamilnadu, their 2,100 seats and the official fees &rarr;
+                </a>
+              </p>
           </div>
       </section>
 

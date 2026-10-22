@@ -35,6 +35,7 @@ import {
   IdCard,
 } from 'lucide-react';
 import DentalEnquiryForm from "@/components/lead/DentalEnquiryForm";
+import EnquiryButton from "@/components/lead/EnquiryButton";
 import { DEFAULT_PROGRAMME_BY_PAGE } from "@/lib/dental-programmes";
 import { jkknSameAsUrls } from '@/lib/metadata';
 
@@ -57,7 +58,7 @@ export const metadata: Metadata = {
     siteName: 'JKKN Dental College & Hospital',
     images: [
       {
-        url: '/images/BDS-hero-image.webp',
+        url: '/images/og-jkkn-dental-clinical-training.jpg',
         width: 1200,
         height: 630,
         alt: 'BDS Admission 2026-27 at JKKN Dental College',
@@ -69,7 +70,7 @@ export const metadata: Metadata = {
     title: 'BDS Admission 2026-27 | JKKN Dental College',
     description:
       'NEET-based BDS admission at JKKN Dental College. 100 seats, NDC approved, NAAC A grade, scholarships available.',
-    images: ['/images/BDS-hero-image.webp'],
+    images: ['/images/og-jkkn-dental-clinical-training.jpg'],
   },
   alternates: {
     canonical: 'https://dental.jkkn.ac.in/admissions/bds/',
@@ -300,15 +301,6 @@ const feeBreakdown = [
   },
 ];
 
-const importantDates = [
-  { event: 'NEET-UG 2026 Examination', date: 'May 2026 (tentative)' },
-  { event: 'NEET-UG 2026 Results', date: 'June 2026 (tentative)' },
-  { event: 'JKKN Online Application Opens', date: 'March 2026' },
-  { event: 'TN State Counselling', date: 'July – August 2026' },
-  { event: 'Management Quota Admission', date: 'July – August 2026' },
-  { event: 'Academic Session Begins', date: 'September 2026' },
-];
-
 const careerPaths = [
   {
     title: 'Private Dental Practice',
@@ -355,11 +347,11 @@ const careerPaths = [
 const whyJKKN = [
   { text: `${collegeFacts.collegeAge}+ years of dental education excellence (since 1987)`, icon: Building2 },
   { text: `${collegeFacts.dentalChairs}+ dental chairs & ${collegeFacts.hospitalBeds}+ hospital beds for clinical exposure`, icon: Stethoscope },
-  { text: `${collegeFacts.dailyPatients}+ daily patients — hands-on training from Year 1`, icon: HeartPulse },
+  { text: `${collegeFacts.dailyPatients}+ daily patients — hands-on training in our own hospital`, icon: HeartPulse },
   { text: 'NDC approved, NAAC A grade accredited institution', icon: Award },
   { text: 'AI-Integrated Dental Campus', icon: Cpu },
-  { text: '93.9% placed or in higher studies (2024-25 batch) with national & international tie-ups', icon: Briefcase },
-  { text: '9 specialised dental departments with expert senior learners', icon: Users },
+  { text: '93.9% placed or in higher studies (2024-25 batch: 93 of 99, NIRF 2026 filing)', icon: Briefcase },
+  { text: '9 specialised dental departments with expert faculty (Senior Learners)', icon: Users },
   { text: 'NH-544 location — accessible from Salem, Erode, Coimbatore, Tiruppur', icon: MapPin },
 ];
 
@@ -469,12 +461,12 @@ export default function BDSAdmissionPage() {
             </span>
             <span className="inline-flex items-center gap-2 bg-white/15 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm font-medium">
               <GraduationCap className="w-4 h-4" />
-              BDS Admission {collegeFacts.currentAdmissionYear}
+              BDS Admission Enquiry
             </span>
           </div>
 
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-            BDS Admission Open — <span className="text-[#ffde59]">2026-27</span>
+            BDS Admission — <span className="text-[#ffde59]">JKKN Dental College, Tamil Nadu</span>
           </h1>
 
           <p className="hero-description text-lg md:text-xl text-gray-200 max-w-3xl mx-auto mb-8">
@@ -493,14 +485,15 @@ export default function BDSAdmissionPage() {
           </div>
 
           <div className="flex justify-center">
-            <a
-              href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_medium=organic&utm_campaign=admissions-bds"
-              target="_blank"
-              rel="noopener noreferrer"
+            <EnquiryButton
+              sourcePage="admissions-bds-hero-btn"
+              programmeId={DEFAULT_PROGRAMME_BY_PAGE["bds"]}
+              fallbackHref="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_medium=organic&utm_campaign=admissions-bds"
+              fallbackLabel="Apply Now"
               className="bg-[#ffde59] hover:bg-[#e6c64d] text-[#032816] font-bold py-3.5 px-10 rounded-full transition-all duration-300 min-h-[44px] flex items-center justify-center gap-2 hover:scale-105 active:scale-95 text-lg"
             >
-              Apply Now <ArrowRight className="w-5 h-5" />
-            </a>
+              Get BDS Fee & Admission Details <ArrowRight className="w-5 h-5" />
+            </EnquiryButton>
           </div>
         </div>
       </section>
@@ -521,6 +514,79 @@ export default function BDSAdmissionPage() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Order changed 2026-10-21 (marketing audit M6): why JKKN, fees and the form come first. */}
+      {/* WHY JKKN */}
+      <section className="py-16 px-4 bg-[#FBFBEE]">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0b6d41] mb-4">Why Choose JKKN for BDS?</h2>
+          </div>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {whyJKKN.map((item) => (
+              <div key={item.text} className="bg-white rounded-xl p-5 flex items-start gap-3 shadow-sm hover:shadow-md transition-shadow">
+                <item.icon className="w-5 h-5 text-[#0b6d41] mt-0.5 shrink-0" />
+                <p className="text-gray-700 text-sm font-medium">{item.text}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FEE STRUCTURE */}
+      <section className="py-16 px-4 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0b6d41] mb-4">BDS Fee Structure 2026-27</h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              Transparent fee structure across Government Quota and Management Quota seats.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-6">
+            {feeBreakdown.map((fee) => (
+              <div key={fee.quota} className="bg-[#FBFBEE] rounded-2xl p-6 border border-gray-100 hover:shadow-lg transition-shadow">
+                <div className="flex items-center gap-3 mb-3">
+                  <IndianRupee className="w-6 h-6 text-[#0b6d41]" />
+                  <h3 className="text-lg font-bold text-[#0b6d41]">{fee.quota}</h3>
+                </div>
+                <p className="text-2xl font-bold text-[#032816] mb-2">{fee.tuition}</p>
+                <p className="text-sm text-gray-600">{fee.note}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-8 bg-[#0f8f56]/10 border border-[#0f8f56]/30 rounded-2xl p-6 text-center">
+            <p className="text-[#0b6d41] font-medium">
+              Installment payment options and scholarships are available. For the complete
+              fee structure including exam fees, hostel & mess, visit{' '}
+              <Link href="/fees-structure/" className="underline font-bold">fee structure page</Link>.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* DEP-34 - enquiry form. Posts to the CRM from the server; a browser cannot POST there */}
+      {/* directly - the endpoint sends no Access-Control-Allow-Origin header. */}
+      <section className="bg-gradient-to-br from-[#0b6d41] to-[#0f8f56] py-16">
+          <div className="max-w-3xl mx-auto px-4">
+              <h2 className="text-white text-2xl md:text-3xl font-bold text-center mb-2">Want the full 5-year cost for your quota?</h2>
+              <p className="text-white/80 text-center text-sm mb-8">Leave your number. Our admission team calls you back within 24 hours.</p>
+              <DentalEnquiryForm sourcePage="admissions-bds" defaultProgrammeId={DEFAULT_PROGRAMME_BY_PAGE["bds"]} />
+          </div>
+      </section>
+
+      {/* NEET UG 2027 (replaces the 2026-27 dates table, all of which had passed by October 2026). */}
+      <section className="py-10 px-4 bg-gradient-to-br from-[#0b6d41] to-[#032816]">
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 className="text-2xl md:text-3xl font-bold text-white mb-3">Planning for 2027?</h2>
+          <p className="text-gray-200">
+            NEET UG 2027 dates will be added here when NTA announces them. Leave your number above and our
+            admission team will call you with the counselling steps and fees.
+          </p>
         </div>
       </section>
 
@@ -627,68 +693,6 @@ export default function BDSAdmissionPage() {
         </div>
       </section>
 
-      {/* FEE STRUCTURE */}
-      <section className="py-16 px-4 bg-white">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0b6d41] mb-4">BDS Fee Structure 2026-27</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              Transparent fee structure across Government Quota and Management Quota seats.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-6">
-            {feeBreakdown.map((fee) => (
-              <div key={fee.quota} className="bg-[#FBFBEE] rounded-2xl p-6 border border-gray-100 hover:shadow-lg transition-shadow">
-                <div className="flex items-center gap-3 mb-3">
-                  <IndianRupee className="w-6 h-6 text-[#0b6d41]" />
-                  <h3 className="text-lg font-bold text-[#0b6d41]">{fee.quota}</h3>
-                </div>
-                <p className="text-2xl font-bold text-[#032816] mb-2">{fee.tuition}</p>
-                <p className="text-sm text-gray-600">{fee.note}</p>
-              </div>
-            ))}
-          </div>
-
-          <div className="mt-8 bg-[#0f8f56]/10 border border-[#0f8f56]/30 rounded-2xl p-6 text-center">
-            <p className="text-[#0b6d41] font-medium">
-              Installment payment options and scholarships are available. For the complete
-              fee structure including exam fees, hostel & mess, visit{' '}
-              <Link href="/fees-structure/" className="underline font-bold">fee structure page</Link>.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* IMPORTANT DATES */}
-      <section className="py-16 px-4 bg-gradient-to-br from-[#0b6d41] to-[#032816]">
-        <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">BDS Admission Important Dates</h2>
-            <p className="text-gray-200 max-w-2xl mx-auto">
-              Key timelines for the BDS 2026-27 admission cycle (subject to NMC/NDC/TN counselling notifications).
-            </p>
-          </div>
-
-          <div className="bg-white/10 backdrop-blur-sm rounded-2xl border border-white/10 overflow-hidden">
-            {importantDates.map((item, i) => (
-              <div
-                key={item.event}
-                className={`flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 px-6 py-4 ${
-                  i !== importantDates.length - 1 ? 'border-b border-white/10' : ''
-                }`}
-              >
-                <div className="flex items-center gap-3">
-                  <CalendarDays className="w-5 h-5 text-[#ffde59] shrink-0" />
-                  <p className="text-white font-medium">{item.event}</p>
-                </div>
-                <p className="text-[#ffde59] font-semibold text-sm sm:text-base">{item.date}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* CAREER PATHS */}
       <section className="py-16 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
@@ -708,24 +712,6 @@ export default function BDSAdmissionPage() {
                 </div>
                 <h3 className="text-base font-bold text-[#0b6d41] mb-2">{career.title}</h3>
                 <p className="text-gray-600 text-sm">{career.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* WHY JKKN */}
-      <section className="py-16 px-4 bg-[#FBFBEE]">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0b6d41] mb-4">Why Choose JKKN for BDS?</h2>
-          </div>
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            {whyJKKN.map((item) => (
-              <div key={item.text} className="bg-white rounded-xl p-5 flex items-start gap-3 shadow-sm hover:shadow-md transition-shadow">
-                <item.icon className="w-5 h-5 text-[#0b6d41] mt-0.5 shrink-0" />
-                <p className="text-gray-700 text-sm font-medium">{item.text}</p>
               </div>
             ))}
           </div>
@@ -791,16 +777,6 @@ export default function BDSAdmissionPage() {
             </div>
           </div>
         </div>
-      </section>
-
-      {/* DEP-34 - enquiry form. Posts to the CRM from the server; a browser cannot POST there */}
-      {/* directly - the endpoint sends no Access-Control-Allow-Origin header. */}
-      <section className="bg-gradient-to-br from-[#0b6d41] to-[#0f8f56] py-16">
-          <div className="max-w-3xl mx-auto px-4">
-              <h2 className="text-white text-2xl md:text-3xl font-bold text-center mb-2">Get a Call Back</h2>
-              <p className="text-white/80 text-center text-sm mb-8">Leave your details and our admission team will contact you within 24 hours.</p>
-              <DentalEnquiryForm sourcePage="admissions-bds" defaultProgrammeId={DEFAULT_PROGRAMME_BY_PAGE["bds"]} />
-          </div>
       </section>
 
       <Footer />

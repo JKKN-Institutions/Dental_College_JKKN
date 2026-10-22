@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     siteName: 'JKKN Dental College & Hospital',
     images: [
       {
-        url: '/images/BDS-hero-image.webp',
+        url: '/images/og-jkkn-dental-clinical-training.jpg',
         width: 1200,
         height: 630,
         alt: 'MDS Prosthodontics at JKKN Dental College, Tamil Nadu'
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'MDS Prosthodontics in Tamil Nadu — 3 Seats, Fees & Eligibility 2026-27 | JKKN Dental',
     description: 'MDS Prosthodontics, Crown & Bridge at JKKN Dental College — 3 NDC-approved seats, 3 years full-time, affiliated to The Tamil Nadu Dr. M.G.R. Medical University.',
-    images: ['/images/BDS-hero-image.webp'],
+    images: ['/images/og-jkkn-dental-clinical-training.jpg'],
   },
 };
 

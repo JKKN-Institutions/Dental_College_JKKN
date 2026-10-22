@@ -28,13 +28,14 @@ export default function Hero() {
             {/* Badge */}
             <div className="inline-flex items-center gap-2 sm:gap-2.5 bg-[#032816] px-3 sm:px-4 py-2 sm:py-2.5 rounded-full">
               <Trophy className="w-5 h-5 sm:w-6 sm:h-6 text-yellow-400" />
-              <span className="text-white text-xs sm:text-sm font-semibold">NDC Approved | NAAC Accredited</span>
+              <span className="text-white text-xs sm:text-sm font-semibold">NDC (formerly DCI) Approved | NAAC A Grade</span>
             </div>
 
-            {/* Main Heading */}
+            {/* Main Heading — user's choice 2026-10-21: lead with the NIRF-filed outcome, keep "Tamil Nadu" */}
             <h1 className="text-2xl xs:text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight">
-              JKKN Dental College & Hospital —{' '}
-              <span className="text-[#ffde59]">NDC-Approved Dental College in Tamil Nadu</span>
+              JKKN Dental College & Hospital, Tamil Nadu —{' '}
+              <span className="text-[#ffde59]">93 of 99 BDS graduates placed or in higher studies</span>
+              <span className="block text-sm sm:text-base lg:text-lg font-semibold text-gray-200 mt-2">2024-25 batch, from JKKN&apos;s NIRF 2026 filing</span>
             </h1>
 
             {/* Description */}
@@ -53,8 +54,8 @@ export default function Hero() {
                 <div className="text-xs sm:text-sm text-gray-200 uppercase mt-1">Dental Chairs</div>
               </div>
               <div className="text-center sm:text-left">
-                <div className="text-2xl xs:text-3xl sm:text-4xl lg:text-5xl font-bold text-[#ffde59]">93.9%</div>
-                <div className="text-xs sm:text-sm text-gray-200 uppercase mt-1">Placed or higher studies 2024-25</div>
+                <div className="text-2xl xs:text-3xl sm:text-4xl lg:text-5xl font-bold text-[#ffde59]">500+</div>
+                <div className="text-xs sm:text-sm text-gray-200 uppercase mt-1">Patients a Day</div>
               </div>
             </div>
 
@@ -111,16 +112,6 @@ export default function Hero() {
             <Image
               src="/images/Dental_Council_of_India_logo.webp"
               alt="National Dental Commission (formerly Dental Council of India)"
-              width={120}
-              height={64}
-              className="h-10 xs:h-12 sm:h-14 md:h-16 w-auto grayscale hover:grayscale-0 transition-all duration-300"
-              style={{ width: "auto" }}
-              loading="lazy"
-              sizes="(max-width: 768px) 64px, 80px"
-            />
-            <Image
-              src="/images/National_Medical_Commission_logo.jpg"
-              alt="National Medical Commission"
               width={120}
               height={64}
               className="h-10 xs:h-12 sm:h-14 md:h-16 w-auto grayscale hover:grayscale-0 transition-all duration-300"

@@ -142,7 +142,7 @@ export default function OurManagement() {
                 {/* Description */}
                 <div className="space-y-4">
                   <p className="text-sm md:text-base text-gray-700 leading-relaxed text-justify">
-                    I extend my heartfelt congratulations to the college for its fervent and focused dedication to shaping future engineers of distinction. At JKKN, we are committed to innovative education methodologies that enable quality learning, foster independent thinking, and facilitate the development of well-rounded personalities. Our mission empowers learners to contribute their best to society and the nation.
+                    I extend my heartfelt congratulations to the college for its fervent and focused dedication to shaping skilled, caring dental surgeons and specialists of distinction. At JKKN, we are committed to innovative education methodologies that enable quality learning, foster independent thinking, and facilitate the development of well-rounded personalities. Our mission empowers learners to contribute their best to society and the nation.
                   </p>
                   <p className="text-sm md:text-base text-gray-700 leading-relaxed text-justify">
                     Together, we strive to make JKKN a premier temple of learning, guiding and inspiring learners in their unique paths. Our aim is to cultivate top-notch professionals who excel in their fields, with their flags of success flying high in this vibrant world of competition.

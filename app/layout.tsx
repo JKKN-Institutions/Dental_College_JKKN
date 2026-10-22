@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     siteName: "JKKN Dental College & Hospital",
     images: [
       {
-        url: "/images/BDS-hero-image.webp",
+        url: "/images/og-jkkn-dental-clinical-training.jpg",
         width: 1200,
         height: 630,
         alt: "JKKN Dental College & Hospital, Komarapalayam - NDC approved, NAAC A Grade"
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "JKKN Dental College & Hospital | NDC Approved",
     description: "JKKN Dental College & Hospital, Komarapalayam — NDC approved, NAAC A accredited. BDS & MDS programs with 200+ chair hospital training. Since 1987.",
-    images: ["/images/BDS-hero-image.webp"],
+    images: ["/images/og-jkkn-dental-clinical-training.jpg"],
   },
   robots: {
     index: true,

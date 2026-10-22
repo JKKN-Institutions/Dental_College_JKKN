@@ -4,6 +4,9 @@
 /** Set after a CRM-accepted submit, so the homepage popup stops interrupting this visitor. */
 export const ENQUIRY_DONE_KEY = "dental_enquiry_done"
 
+/** Local date (YYYY-MM-DD) the homepage popup last opened: it opens at most once a day per visitor. */
+export const POPUP_SHOWN_KEY = "dental_popup_shown_on"
+
 // localStorage throws in some private windows and when site data is blocked. A popup rule must
 // never take the page down with it, so every access is wrapped.
 export function readStore(key: string): string | null {

@@ -50,7 +50,7 @@ const faqSchema = {
       name: 'What is the placement rate for dental graduates from JKKN?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'JKKN Dental College maintains a 93.9% placed-or-higher-studies rate (2024-25 batch) across all programs. Graduates are placed in leading hospitals, dental clinics, and healthcare organizations in India and internationally, including opportunities in the UK (NHS), UAE, and Saudi Arabia.',
+        text: 'JKKN Dental College maintains a 93.9% placed-or-higher-studies rate (2024-25 batch) across all programs. Of 99 BDS graduates in 2024-25, 75 were placed and 18 went on to higher studies, per the JKKN NIRF 2026 filing.',
       },
     },
   ],

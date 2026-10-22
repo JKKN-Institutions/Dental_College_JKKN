@@ -6,6 +6,7 @@ import { createClient } from '@/lib/supabase/server';
 import GalleryCarousel, { GalleryImage } from '@/components/GalleryCarousel';
 import StructuredData from '@/components/StructuredData';
 import { generateSpeakableWebPageSchema } from '@/lib/metadata';
+import EnquirySection from '@/components/lead/EnquirySection';
 
 export const dynamic = 'force-dynamic';
 
@@ -22,6 +23,26 @@ export const metadata: Metadata = {
     siteName: 'JKKN Dental College & Hospital',
   },
 };
+
+// ── Campus & hospital photos, always shown (marketing audit T4, 2026-10-21) ──
+// The live gallery showed only event albums (Pongal, Farewell Day, Founders Day 2022) - not one
+// picture of the clinic, labs or hostels the other pages talk about. These are the site's own
+// photos, already used on the facility pages; captions name the facility page each comes from.
+// Only real photographs: three AI-generated images in public/images (BDS-Clinical-Training,
+// BDS-Modern-Dental-Lab, MDS-Oral-Medicine-&-Radiology-diagonic-lab) are deliberately left out.
+const CAMPUS_IMAGES: GalleryImage[] = [
+  { src: '/images/JKKN-Dental-College-Building.webp', alt: 'JKKN Dental College building', caption: 'College building' },
+  { src: '/images/JKKN-Dental-Clinical-Training.webp', alt: 'Clinical training in the JKKN dental hospital', caption: 'Clinical training' },
+  { src: '/images/lab-1.webp', alt: 'Laboratory at JKKN Dental College', caption: 'Labs' },
+  { src: '/images/lab-2.webp', alt: 'Laboratory at JKKN Dental College', caption: 'Labs' },
+  { src: '/images/library-1.webp', alt: 'JKKN Dental College library', caption: 'Library' },
+  { src: '/images/library-2.webp', alt: 'JKKN Dental College library', caption: 'Library' },
+  { src: '/images/boys-hostel-1.jpg', alt: 'Boys hostel at JKKN', caption: 'Boys hostel' },
+  { src: '/images/girls-hostel-1.jpg', alt: 'Girls hostel at JKKN', caption: 'Girls hostel' },
+  { src: '/images/foodcourt-1.webp', alt: 'Food court on the JKKN campus', caption: 'Food court' },
+  { src: '/images/transport-1.webp', alt: 'JKKN college transport', caption: 'Transport' },
+  { src: '/images/Auditorium-1.webp', alt: 'JKKN auditorium', caption: 'Auditorium' },
+];
 
 // ── Hardcoded images (used when no admin albums exist) ──────────────────────
 const HARDCODED_IMAGES: GalleryImage[] = [
@@ -97,6 +118,10 @@ export default async function Gallery() {
             GALLERY
           </h1>
 
+          <div className="mb-10 sm:mb-12">
+            <GalleryCarousel title="Campus & Hospital" images={CAMPUS_IMAGES} />
+          </div>
+
           {/* ── Admin albums ── */}
           {hasAdminAlbums && (
             <div className="space-y-10 sm:space-y-12">
@@ -124,6 +149,9 @@ export default async function Gallery() {
           )}
         </div>
       </div>
+
+      {/* Enquiry form (marketing audit L3, 2026-10-21). */}
+      <EnquirySection sourcePage="gallery" />
 
       <Footer />
       <FloatingWhatsApp />

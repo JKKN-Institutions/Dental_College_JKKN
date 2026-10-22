@@ -23,7 +23,7 @@ export default function AffiliationBDS() {
   return (
     <>
       <StructuredData data={breadcrumbSchema} />
-      <PdfRedirect pdfUrl="/pdf/university-provisional-affiliation-letters-bds.pdf" />
+      <PdfRedirect pdfUrl="/pdf/university-provisional-affiliation-letters-bds.pdf" heading="BDS Affiliation Letters — The Tamil Nadu Dr. M.G.R. Medical University" />
     </>
   );
 }

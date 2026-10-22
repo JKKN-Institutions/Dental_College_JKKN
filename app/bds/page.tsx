@@ -96,7 +96,7 @@ const bdsFaqSchema = {
       "name": "Is JKKN Dental College NDC approved?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "JKKN Dental College and Hospital holds National Dental Commission and National Medical Commission approvals, National Assessment and Accreditation Council A Grade, and Tamil Nadu Dr. M.G.R. Medical University affiliation."
+        "text": "JKKN Dental College and Hospital is approved by the National Dental Commission (formerly the Dental Council of India), holds National Assessment and Accreditation Council A Grade, and Tamil Nadu Dr. M.G.R. Medical University affiliation."
       }
     },
     {

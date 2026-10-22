@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     siteName: 'JKKN Dental College & Hospital',
     images: [
       {
-        url: '/images/BDS-hero-image.webp',
+        url: '/images/og-jkkn-dental-clinical-training.jpg',
         width: 1200,
         height: 630,
         alt: 'MDS seat matrix for Tamil Nadu 2025-26',
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     title: 'MDS Seats in Tamil Nadu 2025-26 — All 435 Seats, College-wise',
     description:
       '435 sanctioned MDS seats across 19 affiliated dental colleges and 9 specialities. Official seat matrix.',
-    images: ['/images/BDS-hero-image.webp'],
+    images: ['/images/og-jkkn-dental-clinical-training.jpg'],
   },
 };
 
