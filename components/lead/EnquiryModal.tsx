@@ -66,6 +66,25 @@ export function EnquiryModalProvider({ children }: { children: ReactNode }) {
     return () => document.removeEventListener("keydown", onKey)
   }, [open, close])
 
+  // Every jkkn.ai/apply link on the site opens this form instead (user's choice 2026-10-22: the
+  // in-page "Apply Now" buttons open the 3-box form; the full application stays one tap away inside
+  // the dialog). One listener here rather than dozens of edited links: the links stay real
+  // <a href>s, so without JavaScript, or on a Ctrl / Shift / middle click, they still open jkkn.ai
+  // as before. A link marked data-full-application (the small one in the dialog) is never caught.
+  // The link's own onClick still runs, so the old apply_click GA event now counts dialog opens.
+  useEffect(() => {
+    const onClick = (e: MouseEvent) => {
+      if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return
+      const link = (e.target as Element | null)?.closest?.('a[href*="jkkn.ai/apply"]')
+      if (!link || link.hasAttribute("data-full-application")) return
+      e.preventDefault()
+      const path = window.location.pathname.replace(/\/+$/, "").replace(/\//g, "-") || "-home"
+      openEnquiry(`apply-link${path}`.slice(0, 60))
+    }
+    document.addEventListener("click", onClick, true)
+    return () => document.removeEventListener("click", onClick, true)
+  }, [openEnquiry])
+
   return (
     <EnquiryModalContext.Provider value={api}>
       {children}
@@ -167,6 +186,7 @@ function EnquiryDialog({
                 href={`${APPLY_HREF}&utm_campaign=dental-${sourcePage}`}
                 target="_blank"
                 rel="noopener noreferrer"
+                data-full-application
                 className="text-[#0b6d41] font-semibold underline"
               >
                 Fill the full application form
