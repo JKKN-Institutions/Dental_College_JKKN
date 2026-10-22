@@ -71,7 +71,7 @@ export default function CommitteeHub() {
       <div className="bg-white py-12 px-4">
         <div className="max-w-7xl mx-auto">
 
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#0D5E2E] mb-6">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#0b6d41] mb-6">
             COMMITTEES
           </h1>
 
@@ -88,14 +88,14 @@ export default function CommitteeHub() {
                     href={item.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="block h-full border border-gray-200 rounded p-5 text-gray-800 font-semibold hover:border-[#0D5E2E] hover:text-[#0D5E2E] transition-all duration-300"
+                    className="block h-full border border-gray-200 rounded p-5 text-gray-800 font-semibold hover:border-[#0b6d41] hover:text-[#0b6d41] transition-all duration-300"
                   >
                     {item.label}
                   </a>
                 ) : (
                   <Link
                     href={item.href}
-                    className="block h-full border border-gray-200 rounded p-5 text-gray-800 font-semibold hover:border-[#0D5E2E] hover:text-[#0D5E2E] transition-all duration-300"
+                    className="block h-full border border-gray-200 rounded p-5 text-gray-800 font-semibold hover:border-[#0b6d41] hover:text-[#0b6d41] transition-all duration-300"
                   >
                     {item.label}
                   </Link>

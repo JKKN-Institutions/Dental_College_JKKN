@@ -309,7 +309,7 @@ export default function CampusBlogContent({
                 <button
                   type="submit"
                   disabled={submitting}
-                  className="flex items-center gap-2 bg-[#0b6d41] hover:bg-[#005a2e] text-white text-sm font-bold px-6 py-3 rounded-xl transition disabled:opacity-50"
+                  className="flex items-center gap-2 bg-[#0b6d41] hover:bg-[#085032] text-white text-sm font-bold px-6 py-3 rounded-xl transition disabled:opacity-50"
                 >
                   {submitting ? <Loader2 className="w-4 h-4 animate-spin" /> : <Send className="w-4 h-4" />}
                   Post Comment
@@ -341,7 +341,7 @@ export default function CampusBlogContent({
                       className="w-full h-44 object-cover"
                     />
                   ) : (
-                    <div className="w-full h-44 bg-gradient-to-br from-[#c8d9a0] via-[#8fa87a] to-[#3d5a30]" />
+                    <div className="w-full h-44 bg-gradient-to-br from-[#d4f1e4] via-[#0f8f56] to-[#085032]" />
                   )}
                   <div className="p-4">
                     {rp.category && (
@@ -373,8 +373,8 @@ export default function CampusBlogContent({
         .blog-content pre code { background: none; color: inherit; padding: 0; }
         .blog-content hr { border: none; border-top: 1px solid #e5e7eb; margin: 2rem 0; }
         .blog-content mark { background: #fef08a; border-radius: 2px; padding: 0 2px; }
-        .blog-content a { color: #2563eb; text-decoration: underline; }
-        .blog-content a:hover { color: #1d4ed8; }
+        .blog-content a { color: #0b6d41; text-decoration: underline; }
+        .blog-content a:hover { color: #085032; }
         .blog-content img { max-width: 100%; height: auto; border-radius: 0.75rem; margin: 1.25rem 0; }
         .blog-content strong { font-weight: 700; color: #111827; }
         .blog-content em { font-style: italic; }

@@ -89,7 +89,7 @@ export default async function BlogPage() {
             JKKN Dental College &amp; Hospital
           </p>
           <h1 className="text-3xl sm:text-4xl font-bold text-white">Our Blog</h1>
-          <p className="text-[#0b6d41] mt-3 text-sm sm:text-base max-w-xl mx-auto">
+          <p className="text-[#d4f1e4] mt-3 text-sm sm:text-base max-w-xl mx-auto">
             Latest articles, insights and updates on dental education, campus life, and careers.
           </p>
         </div>
@@ -163,7 +163,7 @@ export default async function BlogPage() {
                         </div>
                       )}
                       {/* Category badge */}
-                      <span className="absolute top-3 left-3 bg-[#3B82F6] text-white text-xs font-semibold px-3 py-1 rounded-full">
+                      <span className="absolute top-3 left-3 bg-[#0b6d41] text-white text-xs font-semibold px-3 py-1 rounded-full">
                         {cat}
                       </span>
                     </div>

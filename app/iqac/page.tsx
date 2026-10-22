@@ -52,7 +52,7 @@ export default function IQAC() {
           </h1>
 
           {/* About IQAC Section */}
-          <h2 className="text-2xl md:text-3xl font-bold text-[#0D7C66] mb-6">
+          <h2 className="text-2xl md:text-3xl font-bold text-[#0b6d41] mb-6">
             About IQAC
           </h2>
 
@@ -65,7 +65,7 @@ export default function IQAC() {
           </p>
 
           {/* Objectives of IQAC */}
-          <h3 className="text-xl md:text-2xl font-bold text-[#0D7C66] mb-4 flex items-center">
+          <h3 className="text-xl md:text-2xl font-bold text-[#0b6d41] mb-4 flex items-center">
             <Target className="w-6 h-6 mr-3 inline-block" /> Objectives of IQAC
           </h3>
 
@@ -97,7 +97,7 @@ export default function IQAC() {
           </ul>
 
           {/* Functions of IQAC */}
-          <h3 className="text-xl md:text-2xl font-bold text-[#0D7C66] mb-4 flex items-center">
+          <h3 className="text-xl md:text-2xl font-bold text-[#0b6d41] mb-4 flex items-center">
             <Cog className="w-6 h-6 mr-3 inline-block" /> Functions of IQAC
           </h3>
 
@@ -129,7 +129,7 @@ export default function IQAC() {
           </ul>
 
           {/* IQAC Composition */}
-          <h3 className="text-xl md:text-2xl font-bold text-[#0D7C66] mb-4 flex items-center">
+          <h3 className="text-xl md:text-2xl font-bold text-[#0b6d41] mb-4 flex items-center">
             <span className="text-2xl mr-3">👥</span> IQAC Composition
           </h3>
 
@@ -162,14 +162,14 @@ export default function IQAC() {
           <div className="mb-12">
             <a
               href="/pdf/IQAC.pdf"
-              className="inline-block bg-[#0D5E2E] hover:bg-[#0A4A23] text-white font-bold py-3 px-8 rounded transition-all duration-300 text-sm uppercase"
+              className="inline-block bg-[#0b6d41] hover:bg-[#085032] text-white font-bold py-3 px-8 rounded transition-all duration-300 text-sm uppercase"
             >
               VIEW IQAC DOCUMENT
             </a>
           </div>
 
           {/* IQAC Activities */}
-          <h3 className="text-xl md:text-2xl font-bold text-[#0D7C66] mb-4 flex items-center">
+          <h3 className="text-xl md:text-2xl font-bold text-[#0b6d41] mb-4 flex items-center">
             <span className="text-2xl mr-3">📋</span> Key Activities
           </h3>
 
@@ -201,7 +201,7 @@ export default function IQAC() {
           </ul>
 
           {/* Quality Initiatives */}
-          <h3 className="text-xl md:text-2xl font-bold text-[#0D7C66] mb-4 flex items-center">
+          <h3 className="text-xl md:text-2xl font-bold text-[#0b6d41] mb-4 flex items-center">
             <span className="text-2xl mr-3">🌟</span> Quality Initiatives
           </h3>
 

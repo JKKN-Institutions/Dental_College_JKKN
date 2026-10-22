@@ -146,7 +146,7 @@ export default function MDSPeriodontics() {
               </h1>
 
               {/* Description */}
-              <p className="text-lg text-gray-200 mb-8 leading-relaxed">
+              <p className="text-lg text-gray-100 mb-8 leading-relaxed">
                 Advance your dental career with our comprehensive 3-year postgraduate program. Master periodontal surgery, dental implantology, regenerative therapy, and gum disease management at one of Tamil Nadu's premier dental institutions.
               </p>
 
@@ -182,13 +182,13 @@ export default function MDSPeriodontics() {
 
                   {/* Stats Badges */}
                   <div className="flex flex-wrap justify-center gap-2">
-                    <span className="bg-white/20 backdrop-blur-sm text-white text-xs sm:text-sm font-semibold px-3 py-1.5 rounded-full">
+                    <span className="bg-white/10 backdrop-blur-sm text-white text-xs sm:text-sm font-semibold px-3 py-1.5 rounded-full">
                       3 Years
                     </span>
-                    <span className="bg-white/20 backdrop-blur-sm text-white text-xs sm:text-sm font-semibold px-3 py-1.5 rounded-full">
+                    <span className="bg-white/10 backdrop-blur-sm text-white text-xs sm:text-sm font-semibold px-3 py-1.5 rounded-full">
                       2 Seats
                     </span>
-                    <span className="bg-white/20 backdrop-blur-sm text-white text-xs sm:text-sm font-semibold px-3 py-1.5 rounded-full">
+                    <span className="bg-white/10 backdrop-blur-sm text-white text-xs sm:text-sm font-semibold px-3 py-1.5 rounded-full">
                       100% MDS Placement (2024-25)
                     </span>
                   </div>
@@ -205,8 +205,8 @@ export default function MDSPeriodontics() {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
             {/* Duration */}
             <div className="flex items-center gap-4">
-              <div className="bg-[#ffde59] rounded-lg p-4 flex-shrink-0">
-                <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+              <div className="bg-[#ffde59] rounded-lg p-4 flex-shrink-0 text-[#032816]">
+                <svg className="w-8 h-8 text-[#032816]" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd" />
                 </svg>
               </div>
@@ -218,8 +218,8 @@ export default function MDSPeriodontics() {
 
             {/* University */}
             <div className="flex items-center gap-4">
-              <div className="bg-[#ffde59] rounded-lg p-4 flex-shrink-0">
-                <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+              <div className="bg-[#ffde59] rounded-lg p-4 flex-shrink-0 text-[#032816]">
+                <svg className="w-8 h-8 text-[#032816]" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z" />
                 </svg>
               </div>
@@ -231,8 +231,8 @@ export default function MDSPeriodontics() {
 
             {/* Admission */}
             <div className="flex items-center gap-4">
-              <div className="bg-[#ffde59] rounded-lg p-4 flex-shrink-0">
-                <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+              <div className="bg-[#ffde59] rounded-lg p-4 flex-shrink-0 text-[#032816]">
+                <svg className="w-8 h-8 text-[#032816]" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z" />
                   <path fillRule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm9.707 5.707a1 1 0 00-1.414-1.414L9 12.586l-1.293-1.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
@@ -245,8 +245,8 @@ export default function MDSPeriodontics() {
 
             {/* Location */}
             <div className="flex items-center gap-4">
-              <div className="bg-[#ffde59] rounded-lg p-4 flex-shrink-0">
-                <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+              <div className="bg-[#ffde59] rounded-lg p-4 flex-shrink-0 text-[#032816]">
+                <svg className="w-8 h-8 text-[#032816]" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
                 </svg>
               </div>
@@ -281,8 +281,8 @@ export default function MDSPeriodontics() {
               {/* Features Grid */}
               <div className="grid grid-cols-2 gap-4">
                 <div className="flex items-start gap-3">
-                  <div className="bg-[#ffde59] rounded-full p-1 mt-1">
-                    <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                  <div className="bg-[#ffde59] rounded-full p-1 mt-1 text-[#032816]">
+                    <svg className="w-4 h-4 text-[#032816]" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
                   </div>
@@ -290,8 +290,8 @@ export default function MDSPeriodontics() {
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <div className="bg-[#ffde59] rounded-full p-1 mt-1">
-                    <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                  <div className="bg-[#ffde59] rounded-full p-1 mt-1 text-[#032816]">
+                    <svg className="w-4 h-4 text-[#032816]" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
                   </div>
@@ -299,8 +299,8 @@ export default function MDSPeriodontics() {
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <div className="bg-[#ffde59] rounded-full p-1 mt-1">
-                    <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                  <div className="bg-[#ffde59] rounded-full p-1 mt-1 text-[#032816]">
+                    <svg className="w-4 h-4 text-[#032816]" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
                   </div>
@@ -308,8 +308,8 @@ export default function MDSPeriodontics() {
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <div className="bg-[#ffde59] rounded-full p-1 mt-1">
-                    <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                  <div className="bg-[#ffde59] rounded-full p-1 mt-1 text-[#032816]">
+                    <svg className="w-4 h-4 text-[#032816]" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
                   </div>
@@ -317,8 +317,8 @@ export default function MDSPeriodontics() {
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <div className="bg-[#ffde59] rounded-full p-1 mt-1">
-                    <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                  <div className="bg-[#ffde59] rounded-full p-1 mt-1 text-[#032816]">
+                    <svg className="w-4 h-4 text-[#032816]" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
                   </div>
@@ -326,8 +326,8 @@ export default function MDSPeriodontics() {
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <div className="bg-[#ffde59] rounded-full p-1 mt-1">
-                    <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                  <div className="bg-[#ffde59] rounded-full p-1 mt-1 text-[#032816]">
+                    <svg className="w-4 h-4 text-[#032816]" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
                   </div>
@@ -372,50 +372,50 @@ export default function MDSPeriodontics() {
             {/* Year 1 */}
             <div className="bg-gradient-to-br from-[#0b6d41] to-[#032816] rounded-2xl overflow-hidden">
               <div className="p-8">
-                <div className="inline-block bg-white/20 backdrop-blur-sm rounded-full px-4 py-2 mb-6">
+                <div className="inline-block bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 mb-6">
                   <span className="text-white font-semibold">Year 1</span>
                 </div>
                 <h3 className="text-3xl font-bold text-white mb-8">Foundation</h3>
                 <ul className="space-y-4">
                   <li className="flex items-start gap-3">
-                    <div className="bg-[#ffde59] rounded-full p-1 mt-1 flex-shrink-0">
-                      <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <div className="bg-[#ffde59] rounded-full p-1 mt-1 flex-shrink-0 text-[#032816]">
+                      <svg className="w-3 h-3 text-[#032816]" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                       </svg>
                     </div>
-                    <span className="text-gray-200">Periodontal Anatomy & Histology</span>
+                    <span className="text-gray-100">Periodontal Anatomy & Histology</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <div className="bg-[#ffde59] rounded-full p-1 mt-1 flex-shrink-0">
-                      <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <div className="bg-[#ffde59] rounded-full p-1 mt-1 flex-shrink-0 text-[#032816]">
+                      <svg className="w-3 h-3 text-[#032816]" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                       </svg>
                     </div>
-                    <span className="text-gray-200">Microbiology & Immunology</span>
+                    <span className="text-gray-100">Microbiology & Immunology</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <div className="bg-[#ffde59] rounded-full p-1 mt-1 flex-shrink-0">
-                      <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <div className="bg-[#ffde59] rounded-full p-1 mt-1 flex-shrink-0 text-[#032816]">
+                      <svg className="w-3 h-3 text-[#032816]" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                       </svg>
                     </div>
-                    <span className="text-gray-200">Etiology of Periodontal Diseases</span>
+                    <span className="text-gray-100">Etiology of Periodontal Diseases</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <div className="bg-[#ffde59] rounded-full p-1 mt-1 flex-shrink-0">
-                      <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <div className="bg-[#ffde59] rounded-full p-1 mt-1 flex-shrink-0 text-[#032816]">
+                      <svg className="w-3 h-3 text-[#032816]" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                       </svg>
                     </div>
-                    <span className="text-gray-200">Research Methodology</span>
+                    <span className="text-gray-100">Research Methodology</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <div className="bg-[#ffde59] rounded-full p-1 mt-1 flex-shrink-0">
-                      <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <div className="bg-[#ffde59] rounded-full p-1 mt-1 flex-shrink-0 text-[#032816]">
+                      <svg className="w-3 h-3 text-[#032816]" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                       </svg>
                     </div>
-                    <span className="text-gray-200">Non-Surgical Periodontal Therapy</span>
+                    <span className="text-gray-100">Non-Surgical Periodontal Therapy</span>
                   </li>
                 </ul>
               </div>
@@ -424,7 +424,7 @@ export default function MDSPeriodontics() {
             {/* Year 2 */}
             <div className="bg-gradient-to-br from-[#0f8f56] to-[#0f8f56] rounded-2xl overflow-hidden">
               <div className="p-8">
-                <div className="inline-block bg-white/20 backdrop-blur-sm rounded-full px-4 py-2 mb-6">
+                <div className="inline-block bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 mb-6">
                   <span className="text-white font-semibold">Year 2</span>
                 </div>
                 <h3 className="text-3xl font-bold text-white mb-8">Advanced Clinical</h3>
@@ -476,7 +476,7 @@ export default function MDSPeriodontics() {
             {/* Year 3 */}
             <div className="bg-gradient-to-br from-[#0f8f56] to-[#0f8f56] rounded-2xl overflow-hidden">
               <div className="p-8">
-                <div className="inline-block bg-white/20 backdrop-blur-sm rounded-full px-4 py-2 mb-6">
+                <div className="inline-block bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 mb-6">
                   <span className="text-white font-semibold">Year 3</span>
                 </div>
                 <h3 className="text-3xl font-bold text-white mb-8">Specialization</h3>
@@ -645,8 +645,8 @@ export default function MDSPeriodontics() {
             {/* Eligibility Requirements */}
             <div className="bg-white rounded-2xl p-8 border-2 border-gray-200">
               <div className="flex items-center gap-3 mb-6">
-                <div className="bg-[#ffde59] rounded-full p-2">
-                  <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                <div className="bg-[#ffde59] rounded-full p-2 text-[#032816]">
+                  <svg className="w-6 h-6 text-[#032816]" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
                 </div>
@@ -694,8 +694,8 @@ export default function MDSPeriodontics() {
             {/* Required Documents */}
             <div className="bg-white rounded-2xl p-8 border-2 border-gray-200">
               <div className="flex items-center gap-3 mb-6">
-                <div className="bg-[#ffde59] rounded-full p-2">
-                  <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                <div className="bg-[#ffde59] rounded-full p-2 text-[#032816]">
+                  <svg className="w-6 h-6 text-[#032816]" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4z" clipRule="evenodd" />
                   </svg>
                 </div>
@@ -908,7 +908,7 @@ export default function MDSPeriodontics() {
           <div className="text-center mb-12">
             <p className="text-[#ffde59] font-semibold text-sm uppercase tracking-wide mb-2">YOUR FUTURE</p>
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">Career Opportunities</h2>
-            <p className="text-lg text-gray-200 max-w-4xl mx-auto">
+            <p className="text-lg text-gray-100 max-w-4xl mx-auto">
               An MDS in Periodontics opens diverse career pathways in clinical practice, implantology, academia, and research.
             </p>
           </div>
@@ -917,78 +917,78 @@ export default function MDSPeriodontics() {
           <div className="grid md:grid-cols-3 gap-6">
             {/* Private Practice */}
             <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-8 hover:bg-white/15 transition-all duration-300">
-              <div className="bg-[#ffde59] rounded-2xl w-16 h-16 flex items-center justify-center mb-6">
-                <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+              <div className="bg-[#ffde59] rounded-2xl w-16 h-16 flex items-center justify-center mb-6 text-[#032816]">
+                <svg className="w-8 h-8 text-[#032816]" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a1 1 0 110 2h-3a1 1 0 01-1-1v-2a1 1 0 00-1-1H9a1 1 0 00-1 1v2a1 1 0 01-1 1H4a1 1 0 110-2V4zm3 1h2v2H7V5zm2 4H7v2h2V9zm2-4h2v2h-2V5zm2 4h-2v2h2V9z" clipRule="evenodd" />
                 </svg>
               </div>
               <h3 className="text-2xl font-bold text-white mb-4">Private Practice</h3>
-              <p className="text-gray-200">
+              <p className="text-gray-100">
                 Establish your own periodontics and implant specialty clinic or join established dental practices.
               </p>
             </div>
 
             {/* Academic Career */}
             <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-8 hover:bg-white/15 transition-all duration-300">
-              <div className="bg-[#ffde59] rounded-2xl w-16 h-16 flex items-center justify-center mb-6">
-                <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+              <div className="bg-[#ffde59] rounded-2xl w-16 h-16 flex items-center justify-center mb-6 text-[#032816]">
+                <svg className="w-8 h-8 text-[#032816]" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z" />
                 </svg>
               </div>
               <h3 className="text-2xl font-bold text-white mb-4">Academic Career</h3>
-              <p className="text-gray-200">
+              <p className="text-gray-100">
                 Join dental colleges as Learning Facilitator and shape future periodontists and implantologists.
               </p>
             </div>
 
             {/* Research Scientist */}
             <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-8 hover:bg-white/15 transition-all duration-300">
-              <div className="bg-[#ffde59] rounded-2xl w-16 h-16 flex items-center justify-center mb-6">
-                <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+              <div className="bg-[#ffde59] rounded-2xl w-16 h-16 flex items-center justify-center mb-6 text-[#032816]">
+                <svg className="w-8 h-8 text-[#032816]" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M7 2a1 1 0 00-.707 1.707L7 4.414v3.758a1 1 0 01-.293.707l-4 4C.817 14.769 2.156 18 4.828 18h10.343c2.673 0 4.012-3.231 2.122-5.121l-4-4A1 1 0 0113 8.172V4.414l.707-.707A1 1 0 0013 2H7zm2 6.172V4h2v4.172a3 3 0 00.879 2.12l1.027 1.028a4 4 0 00-2.171.102l-.47.156a4 4 0 01-2.53 0l-.563-.187a1.993 1.993 0 00-.114-.035l1.063-1.063A3 3 0 009 8.172z" clipRule="evenodd" />
                 </svg>
               </div>
               <h3 className="text-2xl font-bold text-white mb-4">Research Scientist</h3>
-              <p className="text-gray-200">
+              <p className="text-gray-100">
                 Contribute to periodontal science through research in regeneration, biomaterials, and implantology.
               </p>
             </div>
 
             {/* Hospital Consultant */}
             <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-8 hover:bg-white/15 transition-all duration-300">
-              <div className="bg-[#ffde59] rounded-2xl w-16 h-16 flex items-center justify-center mb-6">
-                <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+              <div className="bg-[#ffde59] rounded-2xl w-16 h-16 flex items-center justify-center mb-6 text-[#032816]">
+                <svg className="w-8 h-8 text-[#032816]" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
                 </svg>
               </div>
               <h3 className="text-2xl font-bold text-white mb-4">Hospital Consultant</h3>
-              <p className="text-gray-200">
+              <p className="text-gray-100">
                 Work as specialist consultant in multi-specialty hospitals and dental implant centers.
               </p>
             </div>
 
             {/* Global Opportunities */}
             <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-8 hover:bg-white/15 transition-all duration-300">
-              <div className="bg-[#ffde59] rounded-2xl w-16 h-16 flex items-center justify-center mb-6">
-                <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+              <div className="bg-[#ffde59] rounded-2xl w-16 h-16 flex items-center justify-center mb-6 text-[#032816]">
+                <svg className="w-8 h-8 text-[#032816]" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
               </div>
               <h3 className="text-2xl font-bold text-white mb-4">Global Opportunities</h3>
-              <p className="text-gray-200">
+              <p className="text-gray-100">
                 Practice internationally with globally recognized MDS qualification from India.
               </p>
             </div>
 
             {/* Armed Forces */}
             <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-8 hover:bg-white/15 transition-all duration-300">
-              <div className="bg-[#ffde59] rounded-2xl w-16 h-16 flex items-center justify-center mb-6">
-                <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+              <div className="bg-[#ffde59] rounded-2xl w-16 h-16 flex items-center justify-center mb-6 text-[#032816]">
+                <svg className="w-8 h-8 text-[#032816]" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
               </div>
               <h3 className="text-2xl font-bold text-white mb-4">Armed Forces</h3>
-              <p className="text-gray-200">
+              <p className="text-gray-100">
                 Join Indian Armed Forces dental corps as specialist officer with prestigious career.
               </p>
             </div>
@@ -1209,16 +1209,16 @@ export default function MDSPeriodontics() {
 
             {/* NAAC */}
             <div className="bg-white rounded-2xl p-4 sm:p-8 border-2 border-gray-200 hover:border-[#0f8f56] transition-all duration-300 text-center">
-              <div className="bg-[#ffde59] rounded-2xl w-20 h-20 sm:w-24 sm:h-24 flex items-center justify-center mx-auto mb-4 sm:mb-6">
-                <span className="text-2xl sm:text-3xl font-bold text-white">NAAC</span>
+              <div className="bg-[#ffde59] rounded-2xl w-20 h-20 sm:w-24 sm:h-24 flex items-center justify-center mx-auto mb-4 sm:mb-6 text-[#032816]">
+                <span className="text-2xl sm:text-3xl font-bold text-[#032816]">NAAC</span>
               </div>
               <h3 className="text-base sm:text-lg font-bold text-gray-900">NAAC Accredited</h3>
             </div>
 
             {/* MGR */}
             <div className="bg-white rounded-2xl p-4 sm:p-8 border-2 border-gray-200 hover:border-[#0f8f56] transition-all duration-300 text-center">
-              <div className="bg-[#ffde59] rounded-2xl w-20 h-20 sm:w-24 sm:h-24 flex items-center justify-center mx-auto mb-4 sm:mb-6">
-                <span className="text-2xl sm:text-3xl font-bold text-white">MGR</span>
+              <div className="bg-[#ffde59] rounded-2xl w-20 h-20 sm:w-24 sm:h-24 flex items-center justify-center mx-auto mb-4 sm:mb-6 text-[#032816]">
+                <span className="text-2xl sm:text-3xl font-bold text-[#032816]">MGR</span>
               </div>
               <h3 className="text-base sm:text-lg font-bold text-gray-900">TN Dr. MGR Medical University</h3>
             </div>

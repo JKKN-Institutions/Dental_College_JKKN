@@ -171,7 +171,7 @@ export default function ScholarshipPolicy() {
           {/* Section 1: Purpose */}
           <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
             <div className="flex items-center gap-4 bg-[#0b6d41] px-6 py-4">
-              <div className="flex-shrink-0 w-9 h-9 rounded-full bg-white/20 flex items-center justify-center font-bold text-white text-base">1</div>
+              <div className="flex-shrink-0 w-9 h-9 rounded-full bg-white/10 flex items-center justify-center font-bold text-white text-base">1</div>
               <h2 className="text-white font-bold text-base md:text-lg">Purpose:</h2>
             </div>
             <div className="px-6 py-5">
@@ -184,7 +184,7 @@ export default function ScholarshipPolicy() {
           {/* Section 2: Academic Achievement Scholarships */}
           <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
             <div className="flex items-center gap-4 bg-[#0b6d41] px-6 py-4">
-              <div className="flex-shrink-0 w-9 h-9 rounded-full bg-white/20 flex items-center justify-center font-bold text-white text-base">2</div>
+              <div className="flex-shrink-0 w-9 h-9 rounded-full bg-white/10 flex items-center justify-center font-bold text-white text-base">2</div>
               <h2 className="text-white font-bold text-base md:text-lg">Academic Achievement Scholarships:</h2>
             </div>
             <div className="px-6 py-5">
@@ -197,7 +197,7 @@ export default function ScholarshipPolicy() {
           {/* Section 3: Sports Quota Scholarships */}
           <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
             <div className="flex items-center gap-4 bg-[#0b6d41] px-6 py-4">
-              <div className="flex-shrink-0 w-9 h-9 rounded-full bg-white/20 flex items-center justify-center font-bold text-white text-base">3</div>
+              <div className="flex-shrink-0 w-9 h-9 rounded-full bg-white/10 flex items-center justify-center font-bold text-white text-base">3</div>
               <h2 className="text-white font-bold text-base md:text-lg">Sports Quota Scholarships:</h2>
             </div>
             <div className="px-6 py-5 space-y-4">
@@ -222,7 +222,7 @@ export default function ScholarshipPolicy() {
           {/* Section 4: Other Scholarships */}
           <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
             <div className="flex items-center gap-4 bg-[#0b6d41] px-6 py-4">
-              <div className="flex-shrink-0 w-9 h-9 rounded-full bg-white/20 flex items-center justify-center font-bold text-white text-base">4</div>
+              <div className="flex-shrink-0 w-9 h-9 rounded-full bg-white/10 flex items-center justify-center font-bold text-white text-base">4</div>
               <h2 className="text-white font-bold text-base md:text-lg">Other Scholarships:</h2>
             </div>
             <ul className="px-6 py-5 space-y-3">
@@ -238,7 +238,7 @@ export default function ScholarshipPolicy() {
           {/* Section 5: Government Scholarships */}
           <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
             <div className="flex items-center gap-4 bg-[#0b6d41] px-6 py-4">
-              <div className="flex-shrink-0 w-9 h-9 rounded-full bg-white/20 flex items-center justify-center font-bold text-white text-base">5</div>
+              <div className="flex-shrink-0 w-9 h-9 rounded-full bg-white/10 flex items-center justify-center font-bold text-white text-base">5</div>
               <h2 className="text-white font-bold text-base md:text-lg">Government scholarships:</h2>
             </div>
             <div className="px-6 pt-5 pb-2">
@@ -250,10 +250,10 @@ export default function ScholarshipPolicy() {
               <table className="w-full text-sm text-gray-700 border border-gray-200 rounded-xl overflow-hidden">
                 <thead className="bg-[#0b6d41] text-white">
                   <tr>
-                    <th className="border border-[#005a2f] px-4 py-3 text-left font-bold">Category</th>
-                    <th className="border border-[#005a2f] px-4 py-3 text-left font-bold">Scholarship</th>
-                    <th className="border border-[#005a2f] px-4 py-3 text-center font-bold">GQ</th>
-                    <th className="border border-[#005a2f] px-4 py-3 text-center font-bold">MQ</th>
+                    <th className="border border-[#085032] px-4 py-3 text-left font-bold">Category</th>
+                    <th className="border border-[#085032] px-4 py-3 text-left font-bold">Scholarship</th>
+                    <th className="border border-[#085032] px-4 py-3 text-center font-bold">GQ</th>
+                    <th className="border border-[#085032] px-4 py-3 text-center font-bold">MQ</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -300,7 +300,7 @@ export default function ScholarshipPolicy() {
           {/* Section 6: Application Process */}
           <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
             <div className="flex items-center gap-4 bg-[#0b6d41] px-6 py-4">
-              <div className="flex-shrink-0 w-9 h-9 rounded-full bg-white/20 flex items-center justify-center font-bold text-white text-base">6</div>
+              <div className="flex-shrink-0 w-9 h-9 rounded-full bg-white/10 flex items-center justify-center font-bold text-white text-base">6</div>
               <h2 className="text-white font-bold text-base md:text-lg">Application Process:</h2>
             </div>
             <ul className="px-6 py-5 space-y-3">
@@ -316,7 +316,7 @@ export default function ScholarshipPolicy() {
           {/* Section 7: Award Details */}
           <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
             <div className="flex items-center gap-4 bg-[#0b6d41] px-6 py-4">
-              <div className="flex-shrink-0 w-9 h-9 rounded-full bg-white/20 flex items-center justify-center font-bold text-white text-base">7</div>
+              <div className="flex-shrink-0 w-9 h-9 rounded-full bg-white/10 flex items-center justify-center font-bold text-white text-base">7</div>
               <h2 className="text-white font-bold text-base md:text-lg">Award Details:</h2>
             </div>
             <ul className="px-6 py-5 space-y-3">
@@ -332,7 +332,7 @@ export default function ScholarshipPolicy() {
           {/* Section 8: Renewal and Compliance */}
           <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
             <div className="flex items-center gap-4 bg-[#0b6d41] px-6 py-4">
-              <div className="flex-shrink-0 w-9 h-9 rounded-full bg-white/20 flex items-center justify-center font-bold text-white text-base">8</div>
+              <div className="flex-shrink-0 w-9 h-9 rounded-full bg-white/10 flex items-center justify-center font-bold text-white text-base">8</div>
               <h2 className="text-white font-bold text-base md:text-lg">Renewal and Compliance:</h2>
             </div>
             <ul className="px-6 py-5 space-y-3">
@@ -348,7 +348,7 @@ export default function ScholarshipPolicy() {
           {/* Section 9: Policy Review */}
           <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
             <div className="flex items-center gap-4 bg-[#0b6d41] px-6 py-4">
-              <div className="flex-shrink-0 w-9 h-9 rounded-full bg-white/20 flex items-center justify-center font-bold text-white text-base">9</div>
+              <div className="flex-shrink-0 w-9 h-9 rounded-full bg-white/10 flex items-center justify-center font-bold text-white text-base">9</div>
               <h2 className="text-white font-bold text-base md:text-lg">Policy Review:</h2>
             </div>
             <div className="px-6 py-5">

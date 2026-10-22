@@ -279,7 +279,7 @@ export default function RightToInformation() {
               href="/pdf/RTI-guide-for-cpio.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-[#0b6d41] hover:bg-[#005a2f] text-white font-bold py-3 px-10 rounded-xl transition-colors duration-200 shadow-sm uppercase text-sm tracking-wide"
+              className="bg-[#0b6d41] hover:bg-[#085032] text-white font-bold py-3 px-10 rounded-xl transition-colors duration-200 shadow-sm uppercase text-sm tracking-wide"
             >
               RTI-guide-for-cpio
             </a>
@@ -287,7 +287,7 @@ export default function RightToInformation() {
               href="/pdf/RTI-Act-2005-Amended-English-Version.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-[#0b6d41] hover:bg-[#005a2f] text-white font-bold py-3 px-10 rounded-xl transition-colors duration-200 shadow-sm uppercase text-sm tracking-wide"
+              className="bg-[#0b6d41] hover:bg-[#085032] text-white font-bold py-3 px-10 rounded-xl transition-colors duration-200 shadow-sm uppercase text-sm tracking-wide"
             >
               RTI Act, 2005 (Amended)-English Version
             </a>

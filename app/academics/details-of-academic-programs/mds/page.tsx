@@ -213,8 +213,8 @@ export default function MDSProgram() {
 
               {/* NDC Recognized Badge */}
               <div className="absolute bottom-2 right-2 sm:bottom-8 sm:right-4 lg:-right-4 bg-white rounded-lg sm:rounded-xl shadow-2xl p-2 sm:p-4 flex items-center gap-2 sm:gap-3 scale-75 sm:scale-100 origin-bottom-right">
-                <div className="bg-[#ffde59] rounded-lg p-2 sm:p-3">
-                  <svg className="w-4 h-4 sm:w-6 sm:h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                <div className="bg-[#ffde59] rounded-lg p-2 sm:p-3 text-[#032816]">
+                  <svg className="w-4 h-4 sm:w-6 sm:h-6 text-[#032816]" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
                 </div>
@@ -237,8 +237,8 @@ export default function MDSProgram() {
         <div className="max-w-7xl mx-auto relative">
           {/* Badge */}
           <div className="flex justify-center mb-10">
-            <div className="inline-flex items-center gap-2 bg-[#ffde59] rounded-full px-6 py-2 shadow-sm">
-              <span className="text-white font-semibold text-sm uppercase">About MDS</span>
+            <div className="inline-flex items-center gap-2 bg-[#ffde59] rounded-full px-6 py-2 shadow-sm text-[#032816]">
+              <span className="text-[#032816] font-semibold text-sm uppercase">About MDS</span>
             </div>
           </div>
 
@@ -318,8 +318,8 @@ export default function MDSProgram() {
         <div className="max-w-7xl mx-auto">
           {/* Badge */}
           <div className="flex justify-center mb-6">
-            <div className="inline-flex items-center gap-2 bg-[#ffde59] rounded-full px-6 py-2">
-              <span className="text-white font-semibold text-sm uppercase">Our Specializations</span>
+            <div className="inline-flex items-center gap-2 bg-[#ffde59] rounded-full px-6 py-2 text-[#032816]">
+              <span className="text-[#032816] font-semibold text-sm uppercase">Our Specializations</span>
             </div>
           </div>
 
@@ -598,8 +598,8 @@ export default function MDSProgram() {
         <div className="max-w-7xl mx-auto">
           {/* Badge */}
           <div className="flex justify-center mb-6">
-            <div className="inline-flex items-center gap-2 bg-[#ffde59] rounded-full px-6 py-2">
-              <span className="text-white font-semibold text-sm uppercase">Infrastructure</span>
+            <div className="inline-flex items-center gap-2 bg-[#ffde59] rounded-full px-6 py-2 text-[#032816]">
+              <span className="text-[#032816] font-semibold text-sm uppercase">Infrastructure</span>
             </div>
           </div>
 
@@ -673,8 +673,8 @@ export default function MDSProgram() {
         <div className="max-w-7xl mx-auto">
           {/* Badge */}
           <div className="flex justify-center mb-6">
-            <div className="inline-flex items-center gap-2 bg-[#ffde59] rounded-full px-6 py-2">
-              <span className="text-white font-semibold text-sm uppercase">Join Us</span>
+            <div className="inline-flex items-center gap-2 bg-[#ffde59] rounded-full px-6 py-2 text-[#032816]">
+              <span className="text-[#032816] font-semibold text-sm uppercase">Join Us</span>
             </div>
           </div>
 
@@ -689,8 +689,8 @@ export default function MDSProgram() {
             {/* Eligibility Criteria */}
             <div className="bg-[#FBFBEE] rounded-2xl p-8">
               <div className="flex items-center gap-3 mb-6 pb-6 border-b-4 border-[#0f8f56]">
-                <div className="bg-[#ffde59] p-3 rounded-lg">
-                  <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                <div className="bg-[#ffde59] p-3 rounded-lg text-[#032816]">
+                  <svg className="w-6 h-6 text-[#032816]" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
                 </div>
@@ -738,8 +738,8 @@ export default function MDSProgram() {
             {/* Admission Process */}
             <div className="bg-[#FBFBEE] rounded-2xl p-8">
               <div className="flex items-center gap-3 mb-6 pb-6 border-b-4 border-[#0f8f56]">
-                <div className="bg-[#ffde59] p-3 rounded-lg">
-                  <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                <div className="bg-[#ffde59] p-3 rounded-lg text-[#032816]">
+                  <svg className="w-6 h-6 text-[#032816]" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd" />
                   </svg>
                 </div>
@@ -830,7 +830,7 @@ export default function MDSProgram() {
             </a>
           </div>
           <a href="/pdf/TN-MDS-Seat-Matrix-2025-26.pdf" download
-             className="inline-flex items-center gap-2 mt-6 bg-[#0b6d41] hover:bg-[#00552d] text-white font-semibold px-5 py-3 rounded-full text-sm sm:text-base transition-colors">
+             className="inline-flex items-center gap-2 mt-6 bg-[#0b6d41] hover:bg-[#085032] text-white font-semibold px-5 py-3 rounded-full text-sm sm:text-base transition-colors">
             Download the Tamil Nadu MDS seat matrix 2025-26 (PDF)
           </a>
         </div>
@@ -843,8 +843,8 @@ export default function MDSProgram() {
         <div className="max-w-4xl mx-auto">
           {/* Badge */}
           <div className="flex justify-center mb-6">
-            <div className="inline-flex items-center gap-2 bg-[#ffde59] rounded-full px-6 py-2">
-              <span className="text-white font-semibold text-sm uppercase">FAQs</span>
+            <div className="inline-flex items-center gap-2 bg-[#ffde59] rounded-full px-6 py-2 text-[#032816]">
+              <span className="text-[#032816] font-semibold text-sm uppercase">FAQs</span>
             </div>
           </div>
 
@@ -890,8 +890,8 @@ export default function MDSProgram() {
         <div className="max-w-7xl mx-auto">
           {/* Badge */}
           <div className="flex justify-center mb-6">
-            <div className="inline-flex items-center gap-2 bg-[#ffde59] rounded-full px-6 py-2">
-              <span className="text-white font-semibold text-sm uppercase">Recognition</span>
+            <div className="inline-flex items-center gap-2 bg-[#ffde59] rounded-full px-6 py-2 text-[#032816]">
+              <span className="text-[#032816] font-semibold text-sm uppercase">Recognition</span>
             </div>
           </div>
 

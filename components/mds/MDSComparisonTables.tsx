@@ -24,8 +24,8 @@ export default function MDSComparisonTables() {
       <div className="max-w-7xl mx-auto">
         {/* Badge */}
         <div className="flex justify-center mb-6">
-          <div className="inline-flex items-center gap-2 bg-[#ffde59] rounded-full px-6 py-2">
-            <span className="text-white font-semibold text-sm uppercase">MDS Tamil Nadu Data</span>
+          <div className="inline-flex items-center gap-2 bg-[#ffde59] rounded-full px-6 py-2 text-[#032816]">
+            <span className="text-[#032816] font-semibold text-sm uppercase">MDS Tamil Nadu Data</span>
           </div>
         </div>
 

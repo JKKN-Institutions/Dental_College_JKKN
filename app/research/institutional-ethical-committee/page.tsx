@@ -147,7 +147,7 @@ export default function InstitutionalEthicalCommittee() {
               href="/pdf/INSTITUTIONAL-ETHICS-COMMITTEE-Provisional-Certificate.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-[#0b6d41] hover:bg-[#005a2f] text-white font-bold py-3 px-12 rounded-xl transition-colors duration-200 uppercase text-sm shadow-sm"
+              className="inline-block bg-[#0b6d41] hover:bg-[#085032] text-white font-bold py-3 px-12 rounded-xl transition-colors duration-200 uppercase text-sm shadow-sm"
             >
               PROVISIONAL CERTIFICATE
             </a>

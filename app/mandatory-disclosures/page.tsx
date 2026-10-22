@@ -50,7 +50,7 @@ export default function MandatoryDisclosuresHub() {
   });
 
   const cardClass =
-    'block h-full border border-gray-200 rounded p-5 text-gray-800 font-semibold hover:border-[#0D5E2E] hover:text-[#0D5E2E] transition-all duration-300';
+    'block h-full border border-gray-200 rounded p-5 text-gray-800 font-semibold hover:border-[#0b6d41] hover:text-[#0b6d41] transition-all duration-300';
 
   return (
     <main>
@@ -62,7 +62,7 @@ export default function MandatoryDisclosuresHub() {
       <div className="bg-white py-12 px-4">
         <div className="max-w-7xl mx-auto">
 
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#0D5E2E] mb-6">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#0b6d41] mb-6">
             MANDATORY DISCLOSURES
           </h1>
 
@@ -81,7 +81,7 @@ export default function MandatoryDisclosuresHub() {
             ))}
           </ul>
 
-          <h2 className="text-2xl md:text-3xl font-bold text-[#0D5E2E] mb-6">
+          <h2 className="text-2xl md:text-3xl font-bold text-[#0b6d41] mb-6">
             Related institutional documents
           </h2>
 

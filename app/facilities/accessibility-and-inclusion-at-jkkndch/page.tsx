@@ -43,7 +43,7 @@ export default function AccessibilityInclusion() {
       <Header />
 
       {/* Hero Banner */}
-      <section className="bg-gradient-to-br from-[#0b6d41] via-[#00572e] to-[#003d20] py-16 px-4">
+      <section className="bg-gradient-to-br from-[#0b6d41] via-[#085032] to-[#032816] py-16 px-4">
         <div className="max-w-6xl mx-auto">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
             ACCESSIBILITY &amp; INCLUSION AT JKKNDCH
@@ -86,7 +86,7 @@ export default function AccessibilityInclusion() {
       <section className="bg-white py-14 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="flex items-center gap-3 mb-8">
-            <div className="w-9 h-9 bg-[#5CB85C] rounded flex items-center justify-center flex-shrink-0">
+            <div className="w-9 h-9 bg-[#0b6d41] rounded flex items-center justify-center flex-shrink-0">
               <Check className="w-5 h-5 text-white" />
             </div>
             <h3 className="text-xl md:text-2xl font-bold text-[#0b6d41]">
@@ -230,7 +230,7 @@ export default function AccessibilityInclusion() {
       </section>
 
       {/* Contact for Accessibility Support */}
-      <section className="bg-gradient-to-br from-[#0b6d41] via-[#00572e] to-[#003d20] py-14 px-4">
+      <section className="bg-gradient-to-br from-[#0b6d41] via-[#085032] to-[#032816] py-14 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="flex items-center gap-3 mb-6">
             <div className="w-9 h-9 bg-white/20 rounded-lg flex items-center justify-center flex-shrink-0">

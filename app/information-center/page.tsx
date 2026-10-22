@@ -61,7 +61,7 @@ export default function InformationCenterHub() {
   });
 
   const cardClass =
-    'block h-full border border-gray-200 rounded p-6 hover:border-[#0D5E2E] transition-all duration-300';
+    'block h-full border border-gray-200 rounded p-6 hover:border-[#0b6d41] transition-all duration-300';
 
   return (
     <main>
@@ -73,7 +73,7 @@ export default function InformationCenterHub() {
       <div className="bg-white py-12 px-4">
         <div className="max-w-7xl mx-auto">
 
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#0D5E2E] mb-6">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#0b6d41] mb-6">
             INFORMATION CENTER
           </h1>
 
@@ -87,12 +87,12 @@ export default function InformationCenterHub() {
               <li key={item.href} className="w-full">
                 {item.external ? (
                   <a href={item.href} target="_blank" rel="noopener noreferrer" className={cardClass}>
-                    <span className="block text-lg font-bold text-[#0D5E2E] mb-2">{item.label}</span>
+                    <span className="block text-lg font-bold text-[#0b6d41] mb-2">{item.label}</span>
                     <span className="block text-sm text-gray-700">{item.description}</span>
                   </a>
                 ) : (
                   <Link href={item.href} className={cardClass}>
-                    <span className="block text-lg font-bold text-[#0D5E2E] mb-2">{item.label}</span>
+                    <span className="block text-lg font-bold text-[#0b6d41] mb-2">{item.label}</span>
                     <span className="block text-sm text-gray-700">{item.description}</span>
                   </Link>
                 )}

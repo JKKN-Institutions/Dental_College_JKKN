@@ -46,7 +46,7 @@ export default function StudentCouncil() {
         <div className="max-w-7xl mx-auto">
 
           {/* Page Title */}
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#0D5E2E] mb-8">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#0b6d41] mb-8">
             LEARNER COUNCIL
           </h1>
 

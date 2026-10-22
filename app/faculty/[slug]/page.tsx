@@ -247,7 +247,7 @@ export default async function FacultyProfilePage({
           <div className="max-w-4xl mx-auto">
             <Link
               href="/faculty/"
-              className="inline-flex items-center gap-1.5 text-[#0b6d41] hover:text-white text-sm mb-6 transition"
+              className="inline-flex items-center gap-1.5 text-[#d4f1e4] hover:text-white text-sm mb-6 transition"
             >
               <ArrowLeft className="w-4 h-4" />
               Back to Faculty
@@ -268,7 +268,7 @@ export default async function FacultyProfilePage({
                   JKKN DENTAL COLLEGE &amp; HOSPITAL
                 </p>
                 <h1 className="text-3xl sm:text-4xl font-bold text-white">{m.name}</h1>
-                <p className="text-[#0b6d41] mt-1">
+                <p className="text-[#d4f1e4] mt-1">
                   {m.designation}{m.department ? ` — ${m.department}` : ''}
                 </p>
 

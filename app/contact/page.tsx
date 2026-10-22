@@ -131,9 +131,9 @@ export default function Contact() {
             </div>
 
             {/* Admissions Office */}
-            <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 border-l-4 border-[#5FA866]">
+            <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 border-l-4 border-[#0f8f56]">
               <div className="flex items-center gap-3 mb-4">
-                <svg className="w-8 h-8 text-[#5FA866]" fill="currentColor" viewBox="0 0 24 24">
+                <svg className="w-8 h-8 text-[#0b6d41]" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z"/>
                 </svg>
                 <h3 className="text-lg sm:text-xl font-bold text-gray-800">Admissions</h3>
@@ -182,7 +182,7 @@ export default function Contact() {
                 {/* Visiting Hours */}
                 <div className="border-t border-gray-200 pt-6">
                   <h3 className="text-lg font-bold text-gray-800 mb-3 flex items-center gap-2">
-                    <svg className="w-6 h-6 text-[#5FA866]" fill="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-6 h-6 text-[#0b6d41]" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
                     </svg>
                     Visiting Hours
@@ -287,25 +287,25 @@ export default function Contact() {
               <div className="bg-white p-6 rounded-xl shadow-md mt-6">
                 <ul className="space-y-3 text-sm sm:text-base text-gray-700">
                   <li className="flex items-start gap-3">
-                    <svg className="w-5 h-5 text-[#5FA866] flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                    <svg className="w-5 h-5 text-[#0b6d41] flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
                     </svg>
                     <span><span className="font-semibold">Ample Parking:</span> Spacious parking available for cars, two-wheelers, and buses</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <svg className="w-5 h-5 text-[#5FA866] flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                    <svg className="w-5 h-5 text-[#0b6d41] flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
                     </svg>
                     <span><span className="font-semibold">Security:</span> 24/7 campus security with visitor registration at main gate</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <svg className="w-5 h-5 text-[#5FA866] flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                    <svg className="w-5 h-5 text-[#0b6d41] flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
                     </svg>
                     <span><span className="font-semibold">Accessibility:</span> Wheelchair accessible campus with ramps and elevators</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <svg className="w-5 h-5 text-[#5FA866] flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                    <svg className="w-5 h-5 text-[#0b6d41] flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
                     </svg>
                     <span><span className="font-semibold">Campus Tours:</span> Guided tours available on weekdays (prior appointment recommended)</span>

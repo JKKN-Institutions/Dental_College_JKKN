@@ -156,7 +156,7 @@ export default function MdsClusterPage({
             </p>
             <a
               href="/pdf/TN-MDS-Seat-Matrix-2025-26.pdf"
-              className="inline-flex items-center gap-2 bg-[#0b6d41] hover:bg-[#00552d] text-white font-semibold px-5 py-3 rounded-full text-sm sm:text-base transition-colors"
+              className="inline-flex items-center gap-2 bg-[#0b6d41] hover:bg-[#085032] text-white font-semibold px-5 py-3 rounded-full text-sm sm:text-base transition-colors"
               download
             >
               Tamil Nadu MDS seat matrix 2025-26 (PDF)

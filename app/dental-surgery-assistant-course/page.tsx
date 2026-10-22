@@ -376,7 +376,7 @@ export default function DSACoursePage() {
               {/* Badge */}
               <div className="inline-flex items-center gap-1.5 bg-yellow-500/15 border border-yellow-500/30 text-yellow-400 px-[18px] py-2 rounded-full text-[13px] font-bold uppercase tracking-wider mb-6 backdrop-blur-sm">
                 <span
-                  className="w-[7px] h-[7px] bg-[#ffde59] rounded-full"
+                  className="w-[7px] h-[7px] bg-[#ffde59] rounded-full text-[#032816]"
                   style={{ animation: "dsa-blink 1.5s infinite" }}
                 />
                 Admission Open 2026
@@ -594,7 +594,7 @@ export default function DSACoursePage() {
                       {item.month}
                     </div>
                     <div className="flex-1 bg-white border border-gray-200 rounded-xl py-[22px] px-[26px] transition-all hover:border-[#0f8f56] hover:shadow-sm">
-                      <div className="text-[11px] font-bold uppercase tracking-wider text-[#4CAF50] mb-1">
+                      <div className="text-[11px] font-bold uppercase tracking-wider text-[#0b6d41] mb-1">
                         {item.label}
                       </div>
                       <h3 className="text-base font-bold text-gray-800 mb-1">
@@ -835,7 +835,7 @@ export default function DSACoursePage() {
                 <h3 className="text-xl text-[#032816] font-extrabold mb-2">
                   Want to Talk to Our Past Learners?
                 </h3>
-                <p className="text-gray-500 text-[15px] mb-4">
+                <p className="text-gray-600 text-[15px] mb-4">
                   We&apos;ll connect you with our alumni who completed similar
                   programs. Hear their experience directly &mdash; no filters,
                   no scripts.
@@ -860,7 +860,7 @@ export default function DSACoursePage() {
               }}
             />
             <div className="relative z-[2] max-w-[1180px] mx-auto px-6">
-              <p className="text-[13px] font-bold uppercase tracking-[1.5px] text-white/40 mb-2">
+              <p className="text-[13px] font-bold uppercase tracking-[1.5px] text-white/70 mb-2">
                 Starting Monthly Salary
               </p>
               <div
@@ -877,7 +877,7 @@ export default function DSACoursePage() {
                   {"\u20B9"}8,000 &ndash; {"\u20B9"}12,000
                 </span>
               </div>
-              <p className="text-[17px] text-white/60 max-w-[500px] mx-auto">
+              <p className="text-[17px] text-white/80 max-w-[500px] mx-auto">
                 Salary grows with experience and performance. Build a stable,
                 rewarding career in the growing dental healthcare sector.
               </p>
@@ -967,7 +967,7 @@ export default function DSACoursePage() {
               <br />
               Dental Career?
             </h2>
-            <p className="text-[17px] text-white/60 mb-8 max-w-[500px] mx-auto">
+            <p className="text-[17px] text-white/80 mb-8 max-w-[500px] mx-auto">
               Talk to our Program Coordinator for admission guidance, fee
               details, and any questions you have.
             </p>
@@ -983,7 +983,7 @@ export default function DSACoursePage() {
                 Call Dr. Aishwarya &mdash; {PHONE}
               </a>
             </div>
-            <p className="text-sm text-white/50">
+            <p className="text-sm text-white/90">
               Email:{" "}
               <a
                 href="mailto:aishwarya@jkkn.ac.in"

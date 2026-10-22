@@ -75,7 +75,7 @@ export default function FeeRefundPolicy() {
           </h2>
           <div className="bg-white/10 rounded-2xl p-6 max-w-3xl">
             <p className="text-sm font-bold text-[#ffde59] uppercase tracking-wide mb-2">Introduction</p>
-            <p className="hero-description text-white/85 text-base leading-relaxed">
+            <p className="hero-description text-white text-base leading-relaxed">
               At JKKN Dental College &amp; Hospital, we are committed to upholding transparency and fairness in financial transactions. In accordance with the University Grants Commission (UGC) Fee Refund Policy, we have established a structured refund policy to ensure a smooth process for learners who wish to withdraw their admission.
             </p>
           </div>
@@ -93,7 +93,7 @@ export default function FeeRefundPolicy() {
           {/* 1. Full Refund */}
           <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
             <div className="flex items-center gap-4 bg-[#0b6d41] px-6 py-4">
-              <div className="flex-shrink-0 w-9 h-9 rounded-full bg-white/20 flex items-center justify-center font-bold text-white text-base">
+              <div className="flex-shrink-0 w-9 h-9 rounded-full bg-white/10 flex items-center justify-center font-bold text-white text-base">
                 1
               </div>
               <h4 className="text-white font-bold text-base md:text-lg">Full Refund:</h4>
@@ -108,7 +108,7 @@ export default function FeeRefundPolicy() {
           {/* 2. Partial Refunds */}
           <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
             <div className="flex items-center gap-4 bg-[#0b6d41] px-6 py-4">
-              <div className="flex-shrink-0 w-9 h-9 rounded-full bg-white/20 flex items-center justify-center font-bold text-white text-base">
+              <div className="flex-shrink-0 w-9 h-9 rounded-full bg-white/10 flex items-center justify-center font-bold text-white text-base">
                 2
               </div>
               <h4 className="text-white font-bold text-base md:text-lg">Partial Refunds (Based on Withdrawal Date):</h4>
@@ -147,7 +147,7 @@ export default function FeeRefundPolicy() {
           {/* 3. Applicability */}
           <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
             <div className="flex items-center gap-4 bg-[#0b6d41] px-6 py-4">
-              <div className="flex-shrink-0 w-9 h-9 rounded-full bg-white/20 flex items-center justify-center font-bold text-white text-base">
+              <div className="flex-shrink-0 w-9 h-9 rounded-full bg-white/10 flex items-center justify-center font-bold text-white text-base">
                 3
               </div>
               <h4 className="text-white font-bold text-base md:text-lg">Applicability of the Policy:</h4>
@@ -195,7 +195,7 @@ export default function FeeRefundPolicy() {
               href="/pdf/UGC-Fee-Refund-Policy.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-[#0b6d41] hover:bg-[#005a2f] text-white font-bold py-3 px-12 rounded-xl transition-colors duration-200 shadow-sm uppercase text-sm tracking-wide"
+              className="inline-block bg-[#0b6d41] hover:bg-[#085032] text-white font-bold py-3 px-12 rounded-xl transition-colors duration-200 shadow-sm uppercase text-sm tracking-wide"
             >
               UGC FEE REFUND POLICY
             </a>

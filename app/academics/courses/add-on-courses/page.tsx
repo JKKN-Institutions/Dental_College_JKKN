@@ -115,8 +115,8 @@ export default function AddOnCourses() {
 
             <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 md:p-8">
               <div className="flex items-start gap-3 mb-4">
-                <div className="flex-shrink-0 w-7 h-7 rounded-full bg-[#ffde59] flex items-center justify-center mt-0.5">
-                  <Check className="w-4 h-4 text-white" />
+                <div className="flex-shrink-0 w-7 h-7 rounded-full bg-[#ffde59] flex items-center justify-center mt-0.5 text-[#032816]">
+                  <Check className="w-4 h-4 text-[#032816]" />
                 </div>
                 <p className="text-base font-semibold text-[#032816]">
                   Workshop on Laser Aesthetics (Successfully Conducted – December 2024)
@@ -144,7 +144,7 @@ export default function AddOnCourses() {
             <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden mb-6">
               {/* Course Header */}
               <div className="bg-[#0b6d41] px-6 py-4 flex items-start gap-4">
-                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-white/20 flex items-center justify-center font-bold text-white text-lg">
+                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-white/10 flex items-center justify-center font-bold text-white text-lg">
                   1
                 </div>
                 <div>
@@ -181,8 +181,8 @@ export default function AddOnCourses() {
                   <ul className="space-y-2">
                     {keyHighlights.map((item, i) => (
                       <li key={i} className="flex items-start gap-2 text-sm md:text-base text-gray-700">
-                        <div className="flex-shrink-0 w-5 h-5 rounded-full bg-[#ffde59] flex items-center justify-center mt-0.5">
-                          <Check className="w-3 h-3 text-white" />
+                        <div className="flex-shrink-0 w-5 h-5 rounded-full bg-[#ffde59] flex items-center justify-center mt-0.5 text-[#032816]">
+                          <Check className="w-3 h-3 text-[#032816]" />
                         </div>
                         {item}
                       </li>
@@ -212,7 +212,7 @@ export default function AddOnCourses() {
             <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden mb-8">
               {/* Course Header */}
               <div className="bg-[#0b6d41] px-6 py-4 flex items-start gap-4">
-                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-white/20 flex items-center justify-center font-bold text-white text-lg">
+                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-white/10 flex items-center justify-center font-bold text-white text-lg">
                   2
                 </div>
                 <div>
@@ -248,8 +248,8 @@ export default function AddOnCourses() {
                 {/* Overall Expected Outcomes */}
                 <div className="mb-6">
                   <div className="flex items-center gap-2 mb-3">
-                    <div className="w-6 h-6 rounded-full bg-[#ffde59] flex items-center justify-center flex-shrink-0">
-                      <Check className="w-3.5 h-3.5 text-white" />
+                    <div className="w-6 h-6 rounded-full bg-[#ffde59] flex items-center justify-center flex-shrink-0 text-[#032816]">
+                      <Check className="w-3.5 h-3.5 text-[#032816]" />
                     </div>
                     <p className="font-bold text-[#0b6d41] text-sm md:text-base">Overall Expected Outcomes:</p>
                   </div>
@@ -326,7 +326,7 @@ export default function AddOnCourses() {
               href="/pdf/Add-on-Course-Implant-program-2025.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-[#0b6d41] hover:bg-[#005a2f] text-white font-bold py-3 px-8 rounded-xl transition-colors duration-200 shadow-sm"
+              className="inline-block bg-[#0b6d41] hover:bg-[#085032] text-white font-bold py-3 px-8 rounded-xl transition-colors duration-200 shadow-sm"
             >
               Implant program-2025
             </a>
