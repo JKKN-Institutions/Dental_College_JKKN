@@ -53,7 +53,7 @@ export default function FacilitiesPage() {
             <p className="hero-description text-gray-100 mt-4 text-base sm:text-lg leading-relaxed max-w-3xl">
               Learners train in the college&apos;s own dental hospital &mdash; {collegeFacts.dentalChairs}+ dental chairs,
               {' '}{collegeFacts.hospitalBeds}+ beds and about {collegeFacts.dailyPatients} patients a day across
-              {' '}{collegeFacts.totalDepartments} departments &mdash; on the JKKN campus at Komarapalayam on NH-544.
+              {' '}{collegeFacts.totalDepartments}{' '}departments &mdash; on the JKKN campus at Komarapalayam on NH-544.
             </p>
           </div>
         </section>

@@ -98,7 +98,7 @@ export default function PlacementsPage() {
           BDS &amp; MDS Placements at <span className="text-[#ffde59]">JKKN Dental College</span>
         </h1>
         <p className="hero-description text-white/80 max-w-2xl mb-10 leading-relaxed" style={{ fontSize: 'clamp(0.9rem, 1vw + 0.5rem, 1.1rem)' }}>
-          With {collegeFacts.placementBds.placed} of {collegeFacts.placementBds.graduated} BDS graduates placed and {collegeFacts.placementBds.higherStudies} in higher studies in {collegeFacts.placementBds.batch}, and all {collegeFacts.placementMds.graduated} MDS graduates placed,
+          With {collegeFacts.placementBds.placed} of {collegeFacts.placementBds.graduated} BDS graduates placed and {collegeFacts.placementBds.higherStudies} in higher studies in {collegeFacts.placementBds.batch}, and all {collegeFacts.placementMds.graduated}{' '}MDS graduates placed,
           as filed in JKKN&apos;s NIRF 2026 submission. The Career Development Centre helps every graduate with jobs and higher-study seats.
         </p>
         <ul className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 mb-10 w-full max-w-2xl list-none p-0 m-0">

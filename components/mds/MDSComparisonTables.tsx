@@ -130,7 +130,7 @@ export default function MDSComparisonTables() {
           </h3>
           <p className="text-gray-600 mb-4">
             Tamil Nadu&rsquo;s MDS admission prospectuses set exactly one tuition
-            amount &mdash; {TN_MDS_FEES[0].tuitionPerYear} a year for Government
+            amount &mdash; {TN_MDS_FEES[0].tuitionPerYear}{' '}a year for Government
             Institutions. For every self-financing seat, government quota and
             management or NRI alike, both prospectuses say the tuition is
             &ldquo;as prescribed by the {TN_MDS_FEE_SOURCE.committee}&rdquo; and
