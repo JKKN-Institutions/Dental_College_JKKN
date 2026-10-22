@@ -386,21 +386,21 @@ export default function BDSProgram() {
               <div className="col-span-2 relative rounded-2xl h-64 overflow-hidden shadow-lg">
                 {/* Gap #15: Fixed alt text */}
                 <Image
-                  src="/images/BDS-Modern-Dental-Lab.webp"
-                  alt="Advanced dental simulation laboratory with 200+ dental chairs at JKKN Dental College, Namakkal"
+                  src="/images/lab-1.webp"
+                  alt="BDS learners in the pre-clinical laboratory at JKKN Dental College, Komarapalayam"
                   fill
                   className="object-cover"
                   sizes="(max-width: 768px) 100vw, 50vw"
                   quality={80}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end justify-center pb-6">
-                  <h3 className="text-2xl md:text-4xl font-bold text-white">Modern Dental Learning Lab</h3>
+                  <h3 className="text-2xl md:text-4xl font-bold text-white">Pre-clinical Lab</h3>
                 </div>
               </div>
               <div className="relative rounded-2xl h-48 overflow-hidden shadow-lg">
                 {/* Gap #15: Fixed alt text */}
                 <Image
-                  src="/images/BDS-Clinical-Training.webp"
+                  src="/images/lab-3.webp"
                   alt="Hands-on clinical training for BDS students at JKKN Dental Hospital, Tamil Nadu"
                   fill
                   className="object-cover"
@@ -414,15 +414,15 @@ export default function BDSProgram() {
               <div className="relative rounded-2xl h-48 overflow-hidden shadow-lg">
                 {/* Gap #15: Fixed alt text */}
                 <Image
-                  src="/images/BDS-Campus-Life.webp"
-                  alt="JKKN Dental College campus life and facilities on NH-544, Komarapalayam, Tamil Nadu"
+                  src="/images/JKKN-Dental-College-Building.webp"
+                  alt="JKKN Dental College &amp; Hospital building on NH-544, Komarapalayam, Tamil Nadu"
                   fill
                   className="object-cover"
                   sizes="(max-width: 768px) 50vw, 25vw"
                   quality={80}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end justify-center pb-4">
-                  <h3 className="text-2xl font-bold text-white text-center">Campus Life</h3>
+                  <h3 className="text-2xl font-bold text-white text-center">Our Campus</h3>
                 </div>
               </div>
               <div className="flex items-start gap-3">

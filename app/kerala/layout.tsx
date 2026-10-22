@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     siteName: 'JKKN Dental College & Hospital',
     images: [
       {
-        url: 'https://dental.jkkn.ac.in/images/BDS-hero-image.webp',
+        url: 'https://dental.jkkn.ac.in/images/og-jkkn-dental-clinical-training.jpg',
         width: 1200,
         height: 630,
         alt: 'JKKN Dental College & Hospital — Dental College for Kerala students'
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Dental College for Kerala Students | JKKN Dental College',
     description: 'Kerala students: JKKN Dental College, Tamil Nadu offers BDS/MDS via Management Quota with NEET. On the Kerala-Chennai rail line, ~165 km from Palakkad.',
-    images: ['https://dental.jkkn.ac.in/images/BDS-hero-image.webp'],
+    images: ['https://dental.jkkn.ac.in/images/og-jkkn-dental-clinical-training.jpg'],
     site: '@jaborejkkn',
   },
 };

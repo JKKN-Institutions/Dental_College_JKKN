@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     siteName: 'JKKN Dental College & Hospital',
     images: [
       {
-        url: '/images/BDS-hero-image.webp',
+        url: '/images/og-jkkn-dental-clinical-training.jpg',
         width: 1200,
         height: 630,
         alt: 'B.Ed Admission 2026 Tamil Nadu Guide - JKKN College of Education',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'B.Ed Admission 2026 Tamil Nadu: Eligibility, Process & Dates',
     description: 'Complete guide to B.Ed admission 2026 in Tamil Nadu — eligibility, TNTEU counseling, key dates, fee structure and career prospects.',
-    images: ['/images/BDS-hero-image.webp'],
+    images: ['/images/og-jkkn-dental-clinical-training.jpg'],
   },
 };
 

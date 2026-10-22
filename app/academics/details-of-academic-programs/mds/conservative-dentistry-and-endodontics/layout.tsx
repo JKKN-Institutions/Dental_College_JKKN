@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     siteName: 'JKKN Dental College & Hospital',
     images: [
       {
-        url: '/images/BDS-hero-image.webp',
+        url: '/images/og-jkkn-dental-clinical-training.jpg',
         width: 1200,
         height: 630,
         alt: 'Endodontic Courses in Coimbatore Region - JKKN Dental'
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Endodontic Courses in Coimbatore Region | JKKN Dental',
     description: 'Join MDS Conservative Dentistry & Endodontics at JKKN Dental, near Coimbatore. NDC-approved programme with root canal training, microscopy & advanced labs.',
-    images: ['/images/BDS-hero-image.webp'],
+    images: ['/images/og-jkkn-dental-clinical-training.jpg'],
   },
 };
 

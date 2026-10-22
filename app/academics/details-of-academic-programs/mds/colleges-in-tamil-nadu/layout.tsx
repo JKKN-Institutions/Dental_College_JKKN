@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     siteName: 'JKKN Dental College & Hospital',
     images: [
       {
-        url: '/images/BDS-hero-image.webp',
+        url: '/images/og-jkkn-dental-clinical-training.jpg',
         width: 1200,
         height: 630,
         alt: 'MDS colleges in Tamil Nadu 2025-26',
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'MDS Colleges in Tamil Nadu — All 19 Affiliated Colleges, Seats & NIRF Top Ranks 2025-26',
     description: '19 affiliated MDS colleges, 435 seats, location and speciality-wise intake.',
-    images: ['/images/BDS-hero-image.webp'],
+    images: ['/images/og-jkkn-dental-clinical-training.jpg'],
   },
 };
 

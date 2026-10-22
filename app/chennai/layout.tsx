@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     siteName: 'JKKN Dental College & Hospital',
     images: [
       {
-        url: 'https://dental.jkkn.ac.in/images/BDS-hero-image.webp',
+        url: 'https://dental.jkkn.ac.in/images/og-jkkn-dental-clinical-training.jpg',
         width: 1200,
         height: 630,
         alt: 'JKKN Dental College & Hospital — Dental College for Chennai students'
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Dental College for Chennai Students | JKKN Dental College',
     description: 'Chennai students: JKKN Dental College, Komarapalayam offers BDS/MDS with a 200+ chair hospital, residential campus & direct trains to Erode Junction.',
-    images: ['https://dental.jkkn.ac.in/images/BDS-hero-image.webp'],
+    images: ['https://dental.jkkn.ac.in/images/og-jkkn-dental-clinical-training.jpg'],
     site: '@jaborejkkn',
   },
 };

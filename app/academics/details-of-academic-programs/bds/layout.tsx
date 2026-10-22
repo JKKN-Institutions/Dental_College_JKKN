@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     siteName: 'JKKN Dental College & Hospital',
     images: [
       {
-        url: '/images/BDS-hero-image.webp',
+        url: '/images/og-jkkn-dental-clinical-training.jpg',
         width: 1200,
         height: 630,
         alt: 'Best BDS Colleges in Tamilnadu - JKKN Dental College'
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'BDS Admission 2026-27 in Tamil Nadu — Fees & Seats | JKKN',
     description: 'NDC-approved BDS at JKKN Dental College, Namakkal. 100 seats, NEET admission 2026-27, management quota fee Rs 4.5-5.5 lakh/yr, scholarships & hostel.',
-    images: ['/images/BDS-hero-image.webp'],
+    images: ['/images/og-jkkn-dental-clinical-training.jpg'],
   },
 };
 

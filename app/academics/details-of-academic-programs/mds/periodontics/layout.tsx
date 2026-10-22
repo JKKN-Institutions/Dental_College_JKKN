@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     siteName: 'JKKN Dental College & Hospital',
     images: [
       {
-        url: '/images/MDS-Periodontics-hero.webp',
+        url: '/images/og-jkkn-dental-clinical-training.jpg',
         width: 1200,
         height: 630,
         alt: 'MDS Periodontics at JKKN Dental College'
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'MDS Periodontics | JKKN Dental',
     description: 'MDS in Periodontics. 3-year postgraduate program in gum disease treatment, dental implants, and periodontal surgery.',
-    images: ['/images/MDS-Periodontics-hero.webp'],
+    images: ['/images/og-jkkn-dental-clinical-training.jpg'],
   },
 };
 

@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     siteName: 'JKKN Dental College & Hospital',
     images: [
       {
-        url: '/images/MDS-Othodontics-hero.webp',
+        url: '/images/og-jkkn-dental-clinical-training.jpg',
         width: 1200,
         height: 630,
         alt: 'Orthodontic Courses in India - JKKN Dental College'
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Orthodontic Courses in India | JKKN Dental College',
     description: 'JKKN Dental College offers top orthodontic courses in India. NDC-approved MDS in Orthodontics & Dentofacial Orthopaedics with advanced clinical training.',
-    images: ['/images/MDS-Othodontics-hero.webp'],
+    images: ['/images/og-jkkn-dental-clinical-training.jpg'],
   },
 };
 

@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     siteName: 'JKKN Dental College & Hospital',
     images: [
       {
-        url: '/images/BDS-hero-image.webp',
+        url: '/images/og-jkkn-dental-clinical-training.jpg',
         width: 1200,
         height: 630,
         alt: 'MDS fees by quota in Tamil Nadu - JKKN Dental College'
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'MDS Fees in Private Colleges, Tamil Nadu 2026-27 | JKKN',
     description: 'MDS fees in Tamil Nadu 2026-27 - government quota, management quota and the three-year total, across the 435 sanctioned seats in 19 affiliated colleges. NDC-approved MDS at JKKN Dental College, Komarapalayam.',
-    images: ['/images/BDS-hero-image.webp'],
+    images: ['/images/og-jkkn-dental-clinical-training.jpg'],
   },
 };
 

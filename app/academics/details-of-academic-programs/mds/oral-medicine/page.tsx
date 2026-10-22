@@ -178,8 +178,8 @@ export default function MDSOralMedicine() {
             <div className="relative">
               <div className="bg-gradient-to-br from-[#0b6d41] to-[#032816] rounded-2xl border-4 border-white/20 overflow-hidden relative min-h-[400px] md:min-h-[450px]">
                 <Image
-                  src="/images/MDS-Oral-Medicine-&-Radiology-banner-Image.webp"
-                  alt="Radiology Lab"
+                  src="/images/JKKN-Dental-Clinical-Training.webp"
+                  alt="Clinical training in the JKKN dental hospital, Komarapalayam"
                   fill
                   className="object-cover object-right"
                   sizes="(max-width: 768px) 100vw, 50vw"
@@ -296,8 +296,8 @@ export default function MDSOralMedicine() {
               {/* Image */}
               <div className="relative flex-1 min-h-[300px]">
                 <Image
-                  src="/images/MDS-Oral-Medicine-&-Radiology-diagonic-lab.webp"
-                  alt="Diagnostic Center"
+                  src="/images/lab-3.webp"
+                  alt="Clinical teaching at the JKKN dental hospital"
                   fill
                   className="object-cover"
                   sizes="(max-width: 768px) 100vw, 50vw"

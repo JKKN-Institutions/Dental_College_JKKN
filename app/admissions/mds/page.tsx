@@ -59,7 +59,7 @@ export const metadata: Metadata = {
     siteName: 'JKKN Dental College & Hospital',
     images: [
       {
-        url: '/images/BDS-hero-image.webp',
+        url: '/images/og-jkkn-dental-clinical-training.jpg',
         width: 1200,
         height: 630,
         alt: 'MDS Admission 2026-27 at JKKN Dental College',
@@ -71,7 +71,7 @@ export const metadata: Metadata = {
     title: 'MDS Admission 2026-27 | JKKN Dental College',
     description:
       'NEET-MDS based admission at JKKN — 18 PG seats across 5 dental specializations.',
-    images: ['/images/BDS-hero-image.webp'],
+    images: ['/images/og-jkkn-dental-clinical-training.jpg'],
   },
   alternates: {
     canonical: 'https://dental.jkkn.ac.in/admissions/mds/',

@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     siteName: 'JKKN Dental College & Hospital',
     images: [
       {
-        url: 'https://dental.jkkn.ac.in/images/BDS-hero-image.webp',
+        url: 'https://dental.jkkn.ac.in/images/og-jkkn-dental-clinical-training.jpg',
         width: 1200,
         height: 630,
         alt: 'JKKN Dental College & Hospital — Dental College near Trichy, Tamil Nadu'
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Dental College near Trichy | JKKN Dental College & Hospital',
     description: 'BDS/MDS from Trichy? JKKN Dental College at Komarapalayam is ~145 km via NH-44. NDC approved, NAAC accredited. BDS 100 seats, MDS 5 specialisations.',
-    images: ['https://dental.jkkn.ac.in/images/BDS-hero-image.webp'],
+    images: ['https://dental.jkkn.ac.in/images/og-jkkn-dental-clinical-training.jpg'],
     site: '@jaborejkkn',
   },
 };

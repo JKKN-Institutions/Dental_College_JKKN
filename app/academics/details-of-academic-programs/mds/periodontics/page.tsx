@@ -357,8 +357,8 @@ export default function MDSPeriodontics() {
             <div className="relative">
               <div className="relative rounded-3xl overflow-hidden min-h-[400px]">
                 <Image
-                  src="/images/MDS-Periodontics-surgery-image.webp"
-                  alt="Periodontal Surgery"
+                  src="/images/lab-3.webp"
+                  alt="Clinical teaching at the JKKN dental hospital"
                   fill
                   className="object-cover"
                   sizes="(max-width: 768px) 100vw, 50vw"

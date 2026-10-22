@@ -78,9 +78,9 @@ export const dentalOrganizationSchema = {
   url: DENTAL_SITE_URL,
   logo: DENTAL_LOGO_URL,
   image: [
-    'https://dental.jkkn.ac.in/images/BDS-hero-image.webp',
+    'https://dental.jkkn.ac.in/images/og-jkkn-dental-clinical-training.jpg',
     'https://dental.jkkn.ac.in/images/BDS-hero-clinical.webp',
-    'https://dental.jkkn.ac.in/images/BDS-Modern-Dental-Lab.webp',
+    'https://dental.jkkn.ac.in/images/lab-1.webp',
   ],
   description:
     'JKKN Dental College & Hospital, Komarapalayam, Namakkal District, Tamil Nadu - a National Dental Commission (formerly DCI) approved, NAAC A grade accredited dental college affiliated to The Tamil Nadu Dr. M.G.R. Medical University, offering BDS and MDS programmes with an AI-integrated campus.',

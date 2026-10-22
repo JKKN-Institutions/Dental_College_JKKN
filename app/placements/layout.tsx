@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     siteName: 'JKKN Dental College & Hospital',
     images: [
       {
-        url: 'https://dental.jkkn.ac.in/images/BDS-hero-image.webp',
+        url: 'https://dental.jkkn.ac.in/images/og-jkkn-dental-clinical-training.jpg',
         width: 1200,
         height: 630,
         alt: 'BDS & MDS Placements at JKKN Dental College'
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'BDS & MDS Placements | JKKN Dental College',
     description: 'JKKN Dental College 2024-25 batch: 75 of 99 BDS graduates placed, 18 in higher studies (93.9%), per NIRF 2026. BDS & MDS career guidance.',
-    images: ['https://dental.jkkn.ac.in/images/BDS-hero-image.webp'],
+    images: ['https://dental.jkkn.ac.in/images/og-jkkn-dental-clinical-training.jpg'],
     site: '@jaborejkkn',
   },
 };

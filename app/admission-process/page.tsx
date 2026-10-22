@@ -69,7 +69,7 @@ export default function AdmissionProcess() {
     "@type": "HowTo",
     "name": "How to Apply for BDS at JKKN Dental College & Hospital",
     "description": "Step-by-step guide for admission to the Bachelor of Dental Surgery (BDS) program at JKKN Dental College & Hospital, Komarapalayam. Covers eligibility verification, NEET-UG, counselling registration, seat allotment, and campus reporting.",
-    "image": "https://dental.jkkn.ac.in/images/BDS-hero-image.webp",
+    "image": "https://dental.jkkn.ac.in/images/og-jkkn-dental-clinical-training.jpg",
     "totalTime": "P90D",
     "supply": [
       { "@type": "HowToSupply", "name": "10+2 Mark Sheet (with Physics, Chemistry, Biology)" },

@@ -177,8 +177,8 @@ export default function MDSOrthodontics() {
             <div className="relative">
               <div className="relative rounded-2xl border-4 border-white/20 overflow-hidden">
                 <Image
-                  src="/images/MDS-Othodontics-hero.webp"
-                  alt="Orthodontics Excellence"
+                  src="/images/JKKN-Dental-Clinical-Training.webp"
+                  alt="Clinical training in the JKKN dental hospital, Komarapalayam"
                   width={600}
                   height={400}
                   className="w-full h-auto object-cover"
@@ -349,8 +349,8 @@ export default function MDSOrthodontics() {
             <div className="relative">
               <div className="relative rounded-2xl overflow-hidden aspect-square shadow-lg">
                 <Image
-                  src="/images/MDS-Othodontics-clinical-image.webp"
-                  alt="Clinical Training"
+                  src="/images/lab-3.webp"
+                  alt="Clinical teaching at the JKKN dental hospital"
                   fill
                   className="object-cover"
                   sizes="(max-width: 768px) 100vw, 50vw"
