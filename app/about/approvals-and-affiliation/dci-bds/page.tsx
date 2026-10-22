@@ -23,7 +23,7 @@ export default function DCIBDS() {
   return (
     <>
       <StructuredData data={breadcrumbSchema} />
-      <PdfRedirect pdfUrl="/pdf/DCI-Permission-letter-bds.pdf" />
+      <PdfRedirect pdfUrl="/pdf/DCI-Permission-letter-bds.pdf" heading="BDS Permission Letter — National Dental Commission (formerly DCI)" />
     </>
   );
 }

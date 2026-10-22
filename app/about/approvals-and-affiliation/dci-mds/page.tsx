@@ -23,7 +23,7 @@ export default function DCIMDS() {
   return (
     <>
       <StructuredData data={breadcrumbSchema} />
-      <PdfRedirect pdfUrl="/pdf/DCI-Permission-letter-mds.pdf" />
+      <PdfRedirect pdfUrl="/pdf/DCI-Permission-letter-mds.pdf" heading="MDS Permission Letter — National Dental Commission (formerly DCI)" />
     </>
   );
 }

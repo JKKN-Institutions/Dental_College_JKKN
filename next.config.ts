@@ -51,6 +51,15 @@ const nextConfig: NextConfig = {
       { source: '/principal-message/', destination: '/our-management', permanent: true },
       { source: '/principal-message', destination: '/our-management', permanent: true },
 
+      // ---- Section roots with no page, measured 2026-10-21 (marketing audit L7) ----
+      // /accreditation/ and /research/ answered 404 while the BDS page, the Salem page and the
+      // breadcrumb schema of every child page linked to them. Temporary on purpose: if a hub page
+      // is ever written for either root, a cached permanent redirect would hide it.
+      { source: '/accreditation/', destination: '/accreditation/naac/', permanent: false },
+      { source: '/accreditation', destination: '/accreditation/naac/', permanent: false },
+      { source: '/research/', destination: '/research/research-development-rd-cell/', permanent: false },
+      { source: '/research', destination: '/research/research-development-rd-cell/', permanent: false },
+
       // ---- Campus-blog route collision, measured 2026-09-07 (sitemap audit) ----
       // /blog/ lists rows from the `blogs` table and links every one of them to
       // /blog/campus/<slug>. These six slugs are NOT campus CMS posts - they are
