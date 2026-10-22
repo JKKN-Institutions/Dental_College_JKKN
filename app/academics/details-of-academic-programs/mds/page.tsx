@@ -14,6 +14,7 @@ import {
   generateHowToSchema,
 } from '@/lib/metadata';
 import DentalEnquiryForm from "@/components/lead/DentalEnquiryForm";
+import EnquiryButton from "@/components/lead/EnquiryButton";
 
 // FAQ data — shared between FAQPage schema and rendered FAQ section
 const mdsFAQs = [
@@ -161,16 +162,18 @@ export default function MDSProgram() {
                 <svg className="w-5 h-5 text-[#0b6d41]" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
-                <span className="text-[#0b6d41] font-semibold text-sm">NDC Approved | NAAC Accredited</span>
+                <span className="text-[#ffde59] font-semibold text-sm">NDC (formerly DCI) Approved | NAAC A Grade</span>
               </div>
 
-              {/* Heading — Primary keyword: "mds colleges in tamilnadu" */}
+              {/* Heading — user's choice 2026-10-21: JKKN first, the fees keyword kept. The old H1
+                  ("MDS Fees in Private Colleges ... and the three-year total") read as a general
+                  article and promised a total the page never showed; the total is now right below. */}
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
-                MDS Fees in Private Colleges,{' '}
+                MDS at JKKN Dental College,{' '}
                 <span className="text-[#ffde59]">Tamil Nadu 2026-27</span>
                 <span className="sr-only"> — </span>
                 <span className="block text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-100 mt-3">
-                  Government quota, management quota and the three-year total
+                  Fees, 18 seats and 5 specialities
                 </span>
               </h1>
 
@@ -184,23 +187,49 @@ export default function MDSProgram() {
                 across 200+ dental chairs and 500+ daily patients.
               </p>
 
+              {/* MDS proof + the three-year total (marketing audit M2 / M3, 2026-10-21). Tuition is the
+                  site's own published management-quota fee, Rs 8,50,000 a year for every speciality
+                  (/fees-structure/); 3 x 8,50,000 = 25,50,000. Placement: JKKN's NIRF 2026 filing. */}
+              <div className="mb-8 rounded-xl border border-white/20 bg-white/10 p-4 sm:p-5 text-sm sm:text-base text-gray-100 space-y-2">
+                <p>
+                  <strong className="text-[#ffde59]">7 of 7 MDS graduates placed</strong> in each of the last three
+                  years, median salary Rs 6.0 lakh (JKKN&apos;s NIRF 2026 filing).
+                </p>
+                <p>
+                  <strong className="text-[#ffde59]">Management quota tuition:</strong> Rs 8,50,000 a year, the same for
+                  all 5 specialities &mdash; Rs 25,50,000 for the full 3 years (tuition only; hostel, mess and
+                  university fees are separate). Government quota: as fixed by the Tamil Nadu Fee Committee.
+                </p>
+              </div>
+
+              <div className="mb-8">
+                <EnquiryButton
+                  sourcePage="mds-hero-btn"
+                  fallbackHref="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_medium=organic&utm_campaign=academics-details-of-academic-programs-mds"
+                  fallbackLabel="Apply Now"
+                  className="bg-[#ffde59] hover:bg-[#e6c64d] text-[#032816] font-semibold px-8 py-3 rounded-lg transition-all duration-300 shadow-lg inline-block"
+                >
+                  Get MDS Fee & Seat Details
+                </EnquiryButton>
+              </div>
+
               {/* Stats Grid */}
               <div className="grid grid-cols-2 gap-2 sm:gap-4 mb-8">
                 <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-3 sm:p-6">
-                  <div className="text-2xl sm:text-4xl md:text-5xl font-bold text-[#0b6d41] mb-2">5</div>
+                  <div className="text-2xl sm:text-4xl md:text-5xl font-bold text-[#ffde59] mb-2">5</div>
                   <div className="text-[10px] sm:text-sm text-gray-200 uppercase">Specializations</div>
                 </div>
                 <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-3 sm:p-6">
-                  <div className="text-2xl sm:text-4xl md:text-5xl font-bold text-[#0b6d41] mb-2">3</div>
+                  <div className="text-2xl sm:text-4xl md:text-5xl font-bold text-[#ffde59] mb-2">3</div>
                   <div className="text-[10px] sm:text-sm text-gray-200 uppercase">Years Duration</div>
                 </div>
                 <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-3 sm:p-6">
-                  <div className="text-2xl sm:text-4xl md:text-5xl font-bold text-[#0b6d41] mb-2">18</div>
+                  <div className="text-2xl sm:text-4xl md:text-5xl font-bold text-[#ffde59] mb-2">18</div>
                   <div className="text-[10px] sm:text-sm text-gray-200 uppercase">Total Seats</div>
                 </div>
                 <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-3 sm:p-6">
-                  <div className="text-2xl sm:text-4xl md:text-5xl font-bold text-[#0b6d41] mb-2">100%</div>
-                  <div className="text-[10px] sm:text-sm text-gray-200 uppercase">Clinical Training</div>
+                  <div className="text-2xl sm:text-4xl md:text-5xl font-bold text-[#ffde59] mb-2">7 of 7</div>
+                  <div className="text-[10px] sm:text-sm text-gray-200 uppercase">MDS placed (NIRF 2026)</div>
                 </div>
               </div>
             </div>
@@ -531,7 +560,7 @@ export default function MDSProgram() {
                   <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z" />
                 </svg>
               </div>
-              <div className="text-4xl md:text-5xl font-bold text-[#0b6d41] mb-3">46</div>
+              <div className="text-4xl md:text-5xl font-bold text-[#ffde59] mb-3">46</div>
               <div className="text-sm text-white uppercase">Faculty Members</div>
             </div>
 
@@ -542,7 +571,7 @@ export default function MDSProgram() {
                   <path fillRule="evenodd" d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a1 1 0 110 2h-3a1 1 0 01-1-1v-2a1 1 0 00-1-1H9a1 1 0 00-1 1v2a1 1 0 01-1 1H4a1 1 0 110-2V4zm3 1h2v2H7V5zm2 4H7v2h2V9zm2-4h2v2h-2V5zm2 4h-2v2h2V9z" clipRule="evenodd" />
                 </svg>
               </div>
-              <div className="text-4xl md:text-5xl font-bold text-[#0b6d41] mb-3">200+</div>
+              <div className="text-4xl md:text-5xl font-bold text-[#ffde59] mb-3">200+</div>
               <div className="text-sm text-white uppercase">Dental Chairs</div>
             </div>
 
@@ -553,7 +582,7 @@ export default function MDSProgram() {
                   <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z" />
                 </svg>
               </div>
-              <div className="text-4xl md:text-5xl font-bold text-[#0b6d41] mb-3">500+</div>
+              <div className="text-4xl md:text-5xl font-bold text-[#ffde59] mb-3">500+</div>
               <div className="text-sm text-white uppercase">Daily Patients</div>
             </div>
 
@@ -564,7 +593,7 @@ export default function MDSProgram() {
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
               </div>
-              <div className="text-4xl md:text-5xl font-bold text-[#0b6d41] mb-3">NDC</div>
+              <div className="text-4xl md:text-5xl font-bold text-[#ffde59] mb-3">NDC</div>
               <div className="text-sm text-white uppercase">Approved</div>
             </div>
 
@@ -575,19 +604,19 @@ export default function MDSProgram() {
                   <path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z" />
                 </svg>
               </div>
-              <div className="text-4xl md:text-5xl font-bold text-[#0b6d41] mb-3">50+</div>
+              <div className="text-4xl md:text-5xl font-bold text-[#ffde59] mb-3">50+</div>
               <div className="text-sm text-white uppercase">Publications</div>
             </div>
 
-            {/* Global Recognition */}
+            {/* MDS outcome (was "Global Recognition", a claim with nothing behind it) */}
             <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-8 text-center hover:bg-white/20 transition-all duration-300">
               <div className="bg-[#0f8f56]/20 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6">
                 <svg className="w-8 h-8 text-[#0b6d41]" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM4.332 8.027a6.012 6.012 0 011.912-2.706C6.512 5.73 6.974 6 7.5 6A1.5 1.5 0 019 7.5V8a2 2 0 004 0 2 2 0 011.523-1.943A5.977 5.977 0 0116 10c0 .34-.028.675-.083 1H15a2 2 0 00-2 2v2.197A5.973 5.973 0 0110 16v-2a2 2 0 00-2-2 2 2 0 01-2-2 2 2 0 00-1.668-1.973z" clipRule="evenodd" />
                 </svg>
               </div>
-              <div className="text-4xl md:text-5xl font-bold text-[#0b6d41] mb-3">Global</div>
-              <div className="text-sm text-white uppercase">Recognition</div>
+              <div className="text-4xl md:text-5xl font-bold text-[#ffde59] mb-3">7 of 7</div>
+              <div className="text-sm text-white uppercase">MDS Graduates Placed</div>
             </div>
           </div>
         </div>
@@ -793,49 +822,6 @@ export default function MDSProgram() {
       </section>
 
       {/* MDS Comparison Tables — SEO + AEO snippet bait */}
-      {/* MDS cluster - the hub keeps the fees question and hands the other three to pages
-          that answer only that question. Without these links the children have no internal
-          signal at all, which is what left /bds/ weak on the homepage side (GL6-25). */}
-      <section className="py-16 px-4 bg-white">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-2xl sm:text-3xl font-bold text-[#0b6d41] mb-3">
-            MDS seats and specialities in Tamil Nadu
-          </h2>
-          <p className="text-gray-700 text-sm sm:text-base leading-relaxed mb-8 max-w-3xl">
-            The figures below come from the sanctioned-intake matrix published by The Tamil Nadu
-            Dr. M.G.R. Medical University for 2025-26: 435 MDS seats across 19 affiliated
-            colleges and nine specialities. Each page answers one question in full.
-          </p>
-          <div className="grid sm:grid-cols-3 gap-4">
-            <a href="/academics/details-of-academic-programs/mds/seats-in-tamil-nadu/"
-               className="block rounded-xl border border-gray-200 p-5 hover:border-[#0b6d41] hover:shadow-sm transition-all">
-              <span className="block font-semibold text-[#0b6d41]">MDS seats in Tamil Nadu</span>
-              <span className="block mt-1.5 text-sm text-gray-600 leading-relaxed">
-                All 435 sanctioned seats, college by college and speciality by speciality.
-              </span>
-            </a>
-            <a href="/academics/details-of-academic-programs/mds/colleges-in-tamil-nadu/"
-               className="block rounded-xl border border-gray-200 p-5 hover:border-[#0b6d41] hover:shadow-sm transition-all">
-              <span className="block font-semibold text-[#0b6d41]">All 19 MDS colleges in Tamilnadu</span>
-              <span className="block mt-1.5 text-sm text-gray-600 leading-relaxed">
-                Every one of the 19 affiliated colleges, where it is and what it holds.
-              </span>
-            </a>
-            <a href="/academics/details-of-academic-programs/mds/specialities-in-tamil-nadu/"
-               className="block rounded-xl border border-gray-200 p-5 hover:border-[#0b6d41] hover:shadow-sm transition-all">
-              <span className="block font-semibold text-[#0b6d41]">MDS courses and specialities</span>
-              <span className="block mt-1.5 text-sm text-gray-600 leading-relaxed">
-                All nine branches and how the 435 seats split between them.
-              </span>
-            </a>
-          </div>
-          <a href="/pdf/TN-MDS-Seat-Matrix-2025-26.pdf" download
-             className="inline-flex items-center gap-2 mt-6 bg-[#0b6d41] hover:bg-[#085032] text-white font-semibold px-5 py-3 rounded-full text-sm sm:text-base transition-colors">
-            Download the Tamil Nadu MDS seat matrix 2025-26 (PDF)
-          </a>
-        </div>
-      </section>
-
       <MDSComparisonTables />
 
       {/* FAQ Section */}
@@ -903,7 +889,7 @@ export default function MDSProgram() {
           </p>
 
           {/* Logos Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-6 max-w-5xl mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-3 sm:gap-6 max-w-5xl mx-auto">
             {/* NDC */}
             <div className="bg-white border border-gray-200 rounded-2xl p-4 sm:p-8 hover:shadow-xl transition-shadow duration-300">
               <div className="bg-[#0b6d41] rounded-lg p-4 sm:p-6 mb-4 flex items-center justify-center h-24 sm:h-32">
@@ -925,16 +911,9 @@ export default function MDSProgram() {
               <div className="bg-[#0b6d41] rounded-lg p-4 sm:p-6 mb-4 flex items-center justify-center h-24 sm:h-32">
                 <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white">NAAC</h3>
               </div>
-              <p className="text-center text-xs sm:text-sm font-semibold text-gray-600 uppercase">NAAC Accredited</p>
+              <p className="text-center text-xs sm:text-sm font-semibold text-gray-600 uppercase">NAAC A Grade</p>
             </div>
 
-            {/* IDA */}
-            <div className="bg-white border border-gray-200 rounded-2xl p-4 sm:p-8 hover:shadow-xl transition-shadow duration-300">
-              <div className="bg-[#0b6d41] rounded-lg p-4 sm:p-6 mb-4 flex items-center justify-center h-24 sm:h-32">
-                <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white">IDA</h3>
-              </div>
-              <p className="text-center text-xs sm:text-sm font-semibold text-gray-600 uppercase">IDA Member</p>
-            </div>
           </div>
         </div>
       </section>
@@ -956,12 +935,6 @@ export default function MDSProgram() {
                 <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
               </svg>
             </a>
-            <a href="/pdf/brochure.pdf" download className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#0b6d41] font-bold px-10 py-4 rounded-lg text-lg transition-all duration-300 flex items-center gap-2 inline-block">
-              Download Brochure
-              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V7.414A2 2 0 0015.414 6L12 2.586A2 2 0 0010.586 2H6zm5 6a1 1 0 10-2 0v3.586l-1.293-1.293a1 1 0 10-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 11.586V8z" clipRule="evenodd" />
-              </svg>
-            </a>
           </div>
         </div>
       </section>
@@ -974,6 +947,50 @@ export default function MDSProgram() {
               <p className="text-white/80 text-center text-sm mb-8">Leave your details and our admission team will contact you within 24 hours.</p>
               <DentalEnquiryForm sourcePage="mds" />
           </div>
+      </section>
+
+      {/* Moved below the enquiry form on 2026-10-21 (user's choice: rival lists after the form). */}
+      {/* MDS cluster - the hub keeps the fees question and hands the other three to pages
+          that answer only that question. Without these links the children have no internal
+          signal at all, which is what left /bds/ weak on the homepage side (GL6-25). */}
+      <section className="py-16 px-4 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-2xl sm:text-3xl font-bold text-[#0b6d41] mb-3">
+            MDS seats and specialities in Tamil Nadu
+          </h2>
+          <p className="text-gray-700 text-sm sm:text-base leading-relaxed mb-8 max-w-3xl">
+            The figures below come from the sanctioned-intake matrix published by The Tamil Nadu
+            Dr. M.G.R. Medical University for 2025-26: 435 MDS seats across 19 affiliated
+            colleges and nine specialities. Each page answers one question in full.
+          </p>
+          <div className="grid sm:grid-cols-3 gap-4">
+            <a href="/academics/details-of-academic-programs/mds/seats-in-tamil-nadu/"
+               className="block rounded-xl border border-gray-200 p-5 hover:border-[#0b6d41] hover:shadow-sm transition-all">
+              <span className="block font-semibold text-[#0b6d41]">MDS seats in Tamil Nadu</span>
+              <span className="block mt-1.5 text-sm text-gray-600 leading-relaxed">
+                All 435 sanctioned seats, college by college and speciality by speciality.
+              </span>
+            </a>
+            <a href="/academics/details-of-academic-programs/mds/colleges-in-tamil-nadu/"
+               className="block rounded-xl border border-gray-200 p-5 hover:border-[#0b6d41] hover:shadow-sm transition-all">
+              <span className="block font-semibold text-[#0b6d41]">All 19 MDS colleges in Tamilnadu</span>
+              <span className="block mt-1.5 text-sm text-gray-600 leading-relaxed">
+                Every one of the 19 affiliated colleges, where it is and what it holds.
+              </span>
+            </a>
+            <a href="/academics/details-of-academic-programs/mds/specialities-in-tamil-nadu/"
+               className="block rounded-xl border border-gray-200 p-5 hover:border-[#0b6d41] hover:shadow-sm transition-all">
+              <span className="block font-semibold text-[#0b6d41]">MDS courses and specialities</span>
+              <span className="block mt-1.5 text-sm text-gray-600 leading-relaxed">
+                All nine branches and how the 435 seats split between them.
+              </span>
+            </a>
+          </div>
+          <a href="/pdf/TN-MDS-Seat-Matrix-2025-26.pdf" download
+             className="inline-flex items-center gap-2 mt-6 bg-[#0b6d41] hover:bg-[#085032] text-white font-semibold px-5 py-3 rounded-full text-sm sm:text-base transition-colors">
+            Download the Tamil Nadu MDS seat matrix 2025-26 (PDF)
+          </a>
+        </div>
       </section>
 
       <Footer />

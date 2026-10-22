@@ -3,6 +3,7 @@ import { GraduationCap, Briefcase, Hospital, Globe, Microscope, Users, Phone, Ma
 import { ScrollToTop } from '@/components/ScrollToTop';
 import { collegeFacts } from '@/data/collegeFacts';
 import { faqs } from './faqs';
+import EnquirySection from '@/components/lead/EnquirySection';
 
 export default function PlacementsPage() {
 
@@ -15,7 +16,7 @@ export default function PlacementsPage() {
 
   const highlightStats = [
     { value: `${collegeFacts.placementOutcomeRate}%`, label: 'PLACED OR IN HIGHER STUDIES 2024-25', desc: `${collegeFacts.placementBds.placed} placed and ${collegeFacts.placementBds.higherStudies} in higher studies out of ${collegeFacts.placementBds.graduated} BDS graduates - NIRF 2026 filing` },
-    { value: `${collegeFacts.alumniCount.toLocaleString()}+`, label: 'ALUMNI WORLDWIDE', desc: 'Graduates serving across India and internationally' },
+    { value: `${collegeFacts.alumniCount.toLocaleString()}+`, label: 'BDS ALUMNI', desc: 'BDS graduates since 1987, from the college alumni table' },
     { value: `${collegeFacts.partnerships}+`, label: 'RECRUITING PARTNERS', desc: 'Corporate chains, hospitals, and government institutions' },
     { value: 'Rs 6.0L', label: 'MDS MEDIAN SALARY', desc: '7 of 7 MDS graduates placed in each of the last three years - NIRF 2026 filing' },
   ];
@@ -25,40 +26,30 @@ export default function PlacementsPage() {
     { step: 2, title: 'Resume Workshop & Skill Development', desc: 'CDC conducts resume writing workshops, soft skills training, and professional development sessions to prepare learners for the job market.' },
     { step: 3, title: 'Company Connect & Campus Drives', desc: 'CDC organises campus recruitment drives, industry interactions, and connects learners with 25+ recruiting partners including corporate dental chains and hospitals.' },
     { step: 4, title: 'Interview Preparation & Mock Sessions', desc: 'Dedicated interview preparation with mock interviews, group discussions, and clinical case presentations to build confidence and readiness.' },
-    { step: 5, title: 'Offer Facilitation & Joining Support', desc: 'CDC facilitates offer letters, salary negotiations, and provides joining support including relocation guidance for outstation and international placements.' },
+    { step: 5, title: 'Offer Facilitation & Joining Support', desc: 'CDC facilitates offer letters, salary negotiations, and provides joining support including relocation guidance for outstation jobs.' },
   ];
 
-  const nationalRecruiters = [
-    { name: 'Apollo Dental', sector: 'Corporate Dental Chain' },
-    { name: 'Clove Dental', sector: 'Corporate Dental Chain' },
-    { name: 'Sabka Dentist', sector: 'Corporate Dental Chain' },
-    { name: 'MyDentist', sector: 'Corporate Dental Chain' },
-    { name: 'Govt. PHCs', sector: 'Government Healthcare' },
-    { name: 'District Hospitals', sector: 'Government Healthcare' },
-    { name: 'Manipal Hospitals', sector: 'Multi-Specialty Hospital' },
-    { name: 'Fortis Healthcare', sector: 'Multi-Specialty Hospital' },
-    { name: 'Apollo Hospitals', sector: 'Multi-Specialty Hospital' },
-    { name: 'ESIC Hospitals', sector: 'Government Healthcare' },
-  ];
-
-  const internationalRecruiters = [
-    { name: 'NHS UK', sector: 'National Health Service, United Kingdom' },
-    { name: 'Cleveland Clinic Abu Dhabi', sector: 'Multi-Specialty Hospital, UAE' },
-    { name: 'Saudi Ministry of Health', sector: 'Government Healthcare, Saudi Arabia' },
-    { name: 'Singapore Dental Clinics', sector: 'Private Practice, Singapore' },
+  // Employer names (Apollo, Clove, NHS UK, Cleveland Clinic ...) were listed here with no offer letter,
+  // alumni record or consent behind them, and were removed on 2026-10-21. Add a name back only with one.
+  const graduateDestinations = [
+    { name: 'Government dental posts', sector: 'PHCs, district hospitals and other government services' },
+    { name: 'Corporate dental chains', sector: 'Multi-clinic dental groups' },
+    { name: 'Hospital dentistry', sector: 'Dental departments of multi-specialty hospitals' },
+    { name: 'Private practice', sector: 'Own clinic or an established practice' },
+    { name: 'Higher studies', sector: 'MDS and other postgraduate courses' },
   ];
 
   const trendData = [
-    { batch: '2022-23', rate: '53.4%', recruiters: 'Apollo Dental, Clove Dental, Govt. PHCs', international: 'Not published', higherStudies: '38 of 88 in higher studies' },
-    { batch: '2023-24', rate: '63.9%', recruiters: 'Apollo, Fortis, Sabka Dentist, ESIC', international: 'Not published', higherStudies: '40 of 97 in higher studies' },
-    { batch: '2024-25', rate: '93.9%', recruiters: 'Clove Dental, Manipal, District Hospitals', international: 'Not published', higherStudies: '18 of 99 in higher studies' },
+    { batch: '2022-23', rate: '53.4%', higherStudies: '38 of 88 in higher studies' },
+    { batch: '2023-24', rate: '63.9%', higherStudies: '40 of 97 in higher studies' },
+    { batch: '2024-25', rate: '93.9%', higherStudies: '18 of 99 in higher studies' },
   ];
 
   const careerPathways = [
     { icon: <Briefcase className="w-7 h-7 text-[#0b6d41]" />, title: 'Private Practice', desc: 'Start your own dental clinic or join an established practice. JKKN alumni run successful clinics across Tamil Nadu and beyond.' },
     { icon: <Hospital className="w-7 h-7 text-[#0b6d41]" />, title: 'Hospital Dentistry', desc: 'Work in multi-specialty hospitals, corporate dental chains, or government hospitals as a dental surgeon or specialist.' },
     { icon: <GraduationCap className="w-7 h-7 text-[#0b6d41]" />, title: 'Higher Studies (MDS)', desc: 'Pursue MDS in 5 specialisations at JKKN or other top institutions. Strong NEET MDS coaching support provided.' },
-    { icon: <Globe className="w-7 h-7 text-[#0b6d41]" />, title: 'International Opportunities', desc: 'Work in the UK (NHS), UAE, Saudi Arabia, or Singapore. CDC assists with licensing exam preparation and placement.' },
+    { icon: <Globe className="w-7 h-7 text-[#0b6d41]" />, title: 'International Opportunities', desc: 'Practise abroad after clearing that country\'s dental licensing exam (for example the UK, UAE or Saudi Arabia). The CDC guides you on the exams.' },
     { icon: <Microscope className="w-7 h-7 text-[#0b6d41]" />, title: 'Research & Academia', desc: 'Join dental research institutions or teaching colleges. 50+ senior learner publications provide a strong research foundation.' },
     { icon: <Users className="w-7 h-7 text-[#0b6d41]" />, title: 'Public Health Dentistry', desc: 'Serve communities through government PHCs, public health programmes, and dental outreach initiatives across India.' },
   ];
@@ -87,7 +78,7 @@ export default function PlacementsPage() {
         <div className="max-w-7xl mx-auto flex items-center justify-center gap-3 sm:gap-6 flex-wrap">
           <span className="flex items-center gap-2 text-sm font-medium">
             <span className="w-2 h-2 bg-[#0f8f56] rounded-full inline-block" />
-            Admissions Open {collegeFacts.currentAdmissionYear}
+            BDS &amp; MDS Admission Enquiry
           </span>
           <a href="tel:+919345855001" className="bg-[#0b6d41] hover:bg-[#085032] text-white text-sm font-semibold px-4 py-1.5 rounded-full border border-white/20 transition-colors">
             Call Us
@@ -108,7 +99,7 @@ export default function PlacementsPage() {
         </h1>
         <p className="hero-description text-white/80 max-w-2xl mb-10 leading-relaxed" style={{ fontSize: 'clamp(0.9rem, 1vw + 0.5rem, 1.1rem)' }}>
           With {collegeFacts.placementBds.placed} of {collegeFacts.placementBds.graduated} BDS graduates placed and {collegeFacts.placementBds.higherStudies} in higher studies in {collegeFacts.placementBds.batch}, and all {collegeFacts.placementMds.graduated} MDS graduates placed,
-          JKKN Dental College&apos;s Career Development Centre connects graduates with leading dental healthcare organisations across India and internationally.
+          as filed in JKKN&apos;s NIRF 2026 submission. The Career Development Centre helps every graduate with jobs and higher-study seats.
         </p>
         <ul className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 mb-10 w-full max-w-2xl list-none p-0 m-0">
           {heroStats.map((stat) => (
@@ -159,7 +150,7 @@ export default function PlacementsPage() {
           </div>
           <p className="text-gray-500 max-w-3xl mx-auto text-sm leading-relaxed">
             The Career Development Centre (CDC) at JKKN Dental College provides end-to-end placement support — from resume building and interview coaching
-            to campus drives and international placement facilitation. Our {collegeFacts.partnerships}+ recruiting partners ensure diverse career opportunities for every graduate.
+            to campus drives and joining support.
           </p>
         </div>
       </section>
@@ -187,46 +178,23 @@ export default function PlacementsPage() {
         </div>
       </section>
 
-      {/* -- Top Recruiters -- */}
+      {/* -- Where graduates go (was "Top Recruiters"; see the note at graduateDestinations) -- */}
       <section className="bg-white py-16 px-4">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="font-extrabold text-gray-900 mb-3" style={{ fontSize: 'clamp(1.6rem, 3vw + 0.5rem, 2.4rem)' }}>
-            Top Recruiters &amp; Hiring Partners
+            Where Our Graduates Go
           </h2>
-          <p className="text-gray-500 text-base mb-4">Leading dental healthcare organisations that hire from JKKN</p>
+          <p className="text-gray-500 text-base mb-4">Employer names will be shown here once each one is backed by an offer letter or an alumni record</p>
           <div className="w-14 h-1 bg-[#ffde59] rounded mx-auto mb-12" />
-
-          {/* National Recruiters */}
-          <h3 className="text-lg font-bold text-gray-900 mb-6 flex items-center justify-center gap-2">
-            <Building2 className="w-5 h-5 text-[#0b6d41]" /> National Recruiters
-          </h3>
-          <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-12 list-none p-0 m-0">
-            {nationalRecruiters.map((company) => (
-              <li key={company.name} className="bg-[#FBFBEE] rounded-2xl p-4 flex items-center gap-4 text-left">
-                <div className="w-10 h-10 rounded-xl bg-[#0b6d41] text-white flex items-center justify-center font-bold text-lg flex-shrink-0">
-                  {company.name.charAt(0)}
-                </div>
-                <div>
-                  <p className="font-bold text-gray-900 text-sm">{company.name}</p>
-                  <p className="text-gray-400 text-xs mt-0.5">{company.sector}</p>
-                </div>
-              </li>
-            ))}
-          </ul>
-
-          {/* International Recruiters */}
-          <h3 className="text-lg font-bold text-gray-900 mb-6 flex items-center justify-center gap-2">
-            <Globe className="w-5 h-5 text-[#0b6d41]" /> International Opportunities
-          </h3>
           <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 list-none p-0 m-0">
-            {internationalRecruiters.map((company) => (
-              <li key={company.name} className="bg-[#FBFBEE] rounded-2xl p-4 flex items-center gap-4 text-left">
-                <div className="w-10 h-10 rounded-xl bg-[#0b6d41] text-white flex items-center justify-center font-bold text-lg flex-shrink-0">
-                  {company.name.charAt(0)}
+            {graduateDestinations.map((d) => (
+              <li key={d.name} className="bg-[#FBFBEE] rounded-2xl p-4 flex items-center gap-4 text-left">
+                <div className="w-10 h-10 rounded-xl bg-[#0b6d41] text-white flex items-center justify-center flex-shrink-0">
+                  <Building2 className="w-5 h-5" />
                 </div>
                 <div>
-                  <p className="font-bold text-gray-900 text-sm">{company.name}</p>
-                  <p className="text-gray-400 text-xs mt-0.5">{company.sector}</p>
+                  <p className="font-bold text-gray-900 text-sm">{d.name}</p>
+                  <p className="text-gray-400 text-xs mt-0.5">{d.sector}</p>
                 </div>
               </li>
             ))}
@@ -248,8 +216,6 @@ export default function PlacementsPage() {
                 <tr className="bg-[#0b6d41] text-white">
                   <th className="px-4 py-3 font-semibold rounded-tl-xl">Batch Year</th>
                   <th className="px-4 py-3 font-semibold">Placed or in Higher Studies (NIRF)</th>
-                  <th className="px-4 py-3 font-semibold">Key Recruiters</th>
-                  <th className="px-4 py-3 font-semibold">International</th>
                   <th className="px-4 py-3 font-semibold rounded-tr-xl">Higher Studies</th>
                 </tr>
               </thead>
@@ -258,8 +224,6 @@ export default function PlacementsPage() {
                   <tr key={row.batch} className={i % 2 === 0 ? 'bg-white' : 'bg-[#FBFBEE]'}>
                     <td className="px-4 py-3 font-semibold text-gray-900">{row.batch}</td>
                     <td className="px-4 py-3 text-[#0b6d41] font-bold">{row.rate}</td>
-                    <td className="px-4 py-3 text-gray-600">{row.recruiters}</td>
-                    <td className="px-4 py-3 text-gray-600">{row.international}</td>
                     <td className="px-4 py-3 text-gray-600">{row.higherStudies}</td>
                   </tr>
                 ))}
@@ -377,6 +341,9 @@ export default function PlacementsPage() {
           </div>
         </div>
       </section>
+
+      {/* Enquiry form (marketing audit L3, 2026-10-21). */}
+      <EnquirySection sourcePage="placements" />
 
       <ScrollToTop />
 

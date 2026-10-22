@@ -42,7 +42,7 @@ export const homeFaqs: HomeFaq[] = [
   },
   {
     question: 'What is the placement record?',
-    answer: `JKKN Dental College & Hospital reports ${collegeFacts.placementOutcomeRate}% placed or in higher studies (${collegeFacts.placementBds.batch} batch). Alumni work at Apollo Dental, Clove Dental, Sabka Dentist, government hospitals, and private practices. Many pursue higher studies abroad or establish their own clinics.`,
+    answer: `JKKN Dental College & Hospital reports ${collegeFacts.placementOutcomeRate}% placed or in higher studies (${collegeFacts.placementBds.batch} batch): of ${collegeFacts.placementBds.graduated} BDS graduates, ${collegeFacts.placementBds.placed} were placed and ${collegeFacts.placementBds.higherStudies} went on to higher studies. All ${collegeFacts.placementMds.graduated} MDS graduates were placed. These are the figures JKKN filed in its NIRF 2026 submission.`,
   },
   {
     question: 'What makes JKKN different from other dental colleges?',
@@ -50,12 +50,12 @@ export const homeFaqs: HomeFaq[] = [
   },
   {
     question: 'Which is the best dental college in Tamil Nadu?',
-    answer: `JKKN Dental College & Hospital is approved by the National Dental Commission, accredited by NAAC with an ${collegeFacts.naacGrade} Grade, and affiliated to The Tamil Nadu Dr. M.G.R. Medical University. Established in ${collegeFacts.foundedYear}, it is sanctioned ${collegeFacts.bdsSeatCount} BDS seats and ${collegeFacts.mdsSeatCount} MDS seats across ${collegeFacts.mdsSpecialisations} specialities, runs an AI-integrated dental campus, and reports ${collegeFacts.placementOutcomeRate}% placed or in higher studies (${collegeFacts.placementBds.batch} batch). Tamil Nadu publishes no official merit ranking of its dental colleges; the only published ranking is NIRF, whose 2025 dental list places nine Tamil Nadu institutions in the national top 40 and does not include JKKN. Compare colleges on approval, accreditation, sanctioned intake and clinical exposure - the full NIRF list and all 22 affiliated colleges with their seats are on our Dental Colleges in Tamil Nadu page.`,
+    answer: `JKKN Dental College & Hospital is approved by the National Dental Commission, accredited by NAAC with an ${collegeFacts.naacGrade} Grade, and affiliated to The Tamil Nadu Dr. M.G.R. Medical University. Established in ${collegeFacts.foundedYear}, it is sanctioned ${collegeFacts.bdsSeatCount} BDS seats and ${collegeFacts.mdsSeatCount} MDS seats across ${collegeFacts.mdsSpecialisations} specialities, runs an AI-integrated dental campus, and reports ${collegeFacts.placementOutcomeRate}% placed or in higher studies (${collegeFacts.placementBds.batch} batch). Tamil Nadu publishes no official merit ranking of its dental colleges, so compare colleges on approval, accreditation, sanctioned intake and clinical exposure.`,
   },
   {
     question: 'How does JKKN integrate AI in dental education?',
     answer:
-      'JKKN integrates AI across BDS and MDS curriculum with AI-powered diagnostic imaging (CBCT, OPG), CAD/CAM digital prosthetics, ChatGPT-assisted research, and data analytics — making it an AI-integrated dental campus.',
+      'JKKN uses digital dentistry across BDS and MDS: digital imaging (CBCT, OPG), CAD/CAM digital prosthetics, and AI tools for research, learning and data analysis.',
   },
   {
     question: 'What is the fee structure for BDS at JKKN Dental College?',
@@ -77,21 +77,18 @@ export const homeFaqs: HomeFaq[] = [
   {
     question: 'What is the NEET cutoff for JKKN Dental College?',
     answer:
-      'NEET cutoff for BDS admission at JKKN Dental College varies annually based on counseling rounds. Approximate cutoff ranges from 350 to 450 marks depending on admission quota category — government or management. Students must register for Tamil Nadu state counseling or All India Quota counseling with valid NEET-UG qualification.',
+      'The closing NEET score for BDS at JKKN changes every year with the counselling round and the quota (government or management), so there is no fixed cutoff. Students must qualify NEET-UG and register for Tamil Nadu state counselling or All India Quota counselling. Our admission team can tell you the latest closing scores.',
   },
   {
     question: 'How many dental colleges are there in Tamil Nadu?',
     answer:
-      'Tamil Nadu has approximately 32 to 35 dental colleges approved by the National Dental Commission. This includes 3 government dental colleges and 28-32 private dental colleges across Chennai, Coimbatore, Salem, Namakkal, and other districts. JKKN Dental College is the prominent institution in Namakkal District on the Salem-Coimbatore corridor.',
+      'Tamil Nadu has two kinds of dental colleges: those affiliated to The Tamil Nadu Dr. M.G.R. Medical University, and deemed-to-be universities that award their own degrees. JKKN Dental College & Hospital, in Komarapalayam, Namakkal District, is affiliated to the university.',
+    link: { href: '/academics/details-of-academic-programs/bds/colleges-in-tamil-nadu/', label: 'See the affiliated colleges with seats and fees' },
   },
   {
     question: 'Which dental college in Tamil Nadu has the best placements?',
-    answer: `JKKN Dental College and Hospital reports ${collegeFacts.placementOutcomeRate}% placed or in higher studies (${collegeFacts.placementBds.batch} batch) with graduates employed at Apollo Dental, Clove Dental, Sabka Dentist, government hospitals, and international healthcare institutions including NHS United Kingdom. The placement portal at placements.jkkn.ac.in provides verified placement data and recruiter details.`,
-  },
-  {
-    question: 'What is the NIRF ranking of dental colleges in Tamil Nadu?',
-    answer:
-      'Nine Tamil Nadu dental colleges appear in NIRF 2025 rankings: SIMATS Saveetha (#2), SRM Dental Ramapuram (#8), Sri Ramachandra (#13), Amrita Coimbatore (#14), MAHER Chennai (#16), Sree Balaji (#27), Dr. MGR University (#30), Chettinad (#32), and SRM Kattankulathur (#39). JKKN Dental College is not NIRF-ranked but holds NDC approval and NAAC A Grade accreditation.',
+    answer: `JKKN Dental College and Hospital reports ${collegeFacts.placementOutcomeRate}% placed or in higher studies (${collegeFacts.placementBds.batch} batch), median salary Rs 3.6 lakh, and all ${collegeFacts.placementMds.graduated} MDS graduates placed with a median of Rs 6.0 lakh, as filed in its NIRF 2026 submission. Ask each college for the same NIRF figures to compare.`,
+    link: { href: '/placements/', label: 'See the placement figures' },
   },
 ];
 

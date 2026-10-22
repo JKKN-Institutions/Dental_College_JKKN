@@ -3,6 +3,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Metadata } from 'next';
 import { UserCircle2 } from 'lucide-react';
+import DentalEnquiryForm from '@/components/lead/DentalEnquiryForm';
 import StructuredData from '@/components/StructuredData';
 import { generateBreadcrumbSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
 
@@ -11,7 +12,7 @@ export const dynamic = 'force-dynamic';
 // Measured 2026-09-18: /faculty/ shipped zero JSON-LD. Same two nodes every other hub page carries.
 const facultyBreadcrumbSchema = generateBreadcrumbSchema('/faculty/');
 const facultyWebPageSchema = generateSpeakableWebPageSchema({
-  title: 'Senior Learners | JKKN Dental College & Hospital',
+  title: 'Faculty (Senior Learners) | JKKN Dental College & Hospital',
   description:
     'Meet the experienced senior learners of JKKN Dental College & Hospital, Komarapalayam. Qualified senior learners and specialists in BDS and MDS programmes.',
   url: 'https://dental.jkkn.ac.in/faculty/',
@@ -19,12 +20,12 @@ const facultyWebPageSchema = generateSpeakableWebPageSchema({
 });
 
 export const metadata: Metadata = {
-  title: 'Senior Learners | JKKN Dental College & Hospital',
+  title: 'Faculty (Senior Learners) | JKKN Dental College & Hospital',
   description:
     'Meet the experienced senior learners of JKKN Dental College & Hospital, Komarapalayam. Qualified senior learners and specialists in BDS and MDS programmes.',
   alternates: { canonical: '/faculty/' },
   openGraph: {
-    title: 'Senior Learners | JKKN Dental College & Hospital',
+    title: 'Faculty (Senior Learners) | JKKN Dental College & Hospital',
     description:
       'Meet the experienced senior learners of JKKN Dental College & Hospital, Komarapalayam.',
     url: 'https://dental.jkkn.ac.in/faculty/',
@@ -34,7 +35,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Senior Learners | JKKN Dental College & Hospital',
+    title: 'Faculty (Senior Learners) | JKKN Dental College & Hospital',
     description:
       'Meet the experienced senior learners of JKKN Dental College & Hospital, Komarapalayam.',
   },
@@ -45,6 +46,19 @@ function toSlug(name: string) {
 }
 
 const VALID_SLUG_RE = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
+
+// Seniority first (marketing audit T9, 2026-10-21): the list was A-Z, so card 2 was a first-year
+// lecturer and the five professors were scattered. Rank by designation; A-Z stays inside a rank.
+function designationRank(designation: string | null): number {
+  const d = (designation ?? '').toLowerCase();
+  if (/vice[\s-]*principal/.test(d)) return 1;
+  if (/principal|dean/.test(d)) return 0;
+  if (/associate professor|reader/.test(d)) return 3;
+  if (/assistant professor|senior lecturer/.test(d)) return 4;
+  if (/professor/.test(d)) return 2;
+  if (/lecturer|tutor/.test(d)) return 5;
+  return 6;
+}
 
 export default async function FacultyPage() {
   const supabase = await createClient();
@@ -70,6 +84,8 @@ export default async function FacultyPage() {
     seen.add(key);
     return true;
   });
+  // Array.prototype.sort is stable, so the database order (display_order, name) holds within a rank.
+  members.sort((a, b) => designationRank(a.designation) - designationRank(b.designation));
 
   return (
     <>
@@ -83,7 +99,7 @@ export default async function FacultyPage() {
             <p className="text-[#ffde59] text-xs font-semibold tracking-widest uppercase mb-2">
               JKKN Dental College &amp; Hospital
             </p>
-            <h1 className="text-3xl sm:text-4xl font-bold text-white">Our Senior Learners</h1>
+            <h1 className="text-3xl sm:text-4xl font-bold text-white">Our Faculty (Senior Learners)</h1>
             <p className="text-[#d4f1e4] mt-3 text-sm sm:text-base max-w-xl mx-auto">
               Experienced specialists guiding the next generation of dental professionals.
             </p>
@@ -160,9 +176,18 @@ export default async function FacultyPage() {
               <div className="w-16 h-16 bg-gray-100 rounded-2xl flex items-center justify-center mb-4">
                 <UserCircle2 className="w-8 h-8 text-gray-300" />
               </div>
-              <p className="text-gray-500 font-medium">No senior learners found.</p>
+              <p className="text-gray-500 font-medium">No faculty found.</p>
             </div>
           )}
+        </section>
+
+        {/* Enquiry form (marketing audit L3, 2026-10-21): 255 views in 60 days and no form. */}
+        <section className="bg-gradient-to-br from-[#0b6d41] to-[#0f8f56] py-16">
+          <div className="max-w-3xl mx-auto px-4">
+            <h2 className="text-white text-2xl md:text-3xl font-bold text-center mb-2">Talk to Our Admission Team</h2>
+            <p className="text-white/80 text-center text-sm mb-8">Ask about BDS / MDS fees, seats and guides. We call you back within 24 hours.</p>
+            <DentalEnquiryForm sourcePage="faculty" />
+          </div>
         </section>
       </main>
       <Footer />

@@ -25,7 +25,7 @@ export default function AboutInstitution() {
               A NDC-Approved Dental College in Tamil Nadu Since 1987
             </h2>
             <p className="text-[#0b6d41] text-sm sm:text-base md:text-lg font-semibold mb-4 sm:mb-6">
-              Over Five Decades of Excellence in Progressive Education
+              Part of JKKN Institutions, founded in 1952
             </p>
             <p className="snippet-answer text-gray-600 text-sm sm:text-base md:text-lg mb-4 sm:mb-6 leading-relaxed">
               JKKN Dental College and Hospital, established in 1987 in Komarapalayam, Namakkal District, is a National Dental Commission (formerly Dental Council of India) approved and NAAC A Grade accredited dental college in Tamil Nadu. Affiliated to Tamil Nadu Dr. M.G.R. Medical University, the college offers Bachelor of Dental Surgery and Master of Dental Surgery programs with over two hundred dental chairs, five hundred daily patients, and 93.9% of the 2024-25 batch placed or in higher studies.
@@ -43,11 +43,11 @@ export default function AboutInstitution() {
             <ul className="grid grid-cols-1 xs:grid-cols-2 gap-3 sm:gap-4 mb-6 sm:mb-8 list-none p-0 m-0">
               <li className="flex items-start gap-2 sm:gap-3">
                 <Check className="w-5 h-5 sm:w-6 sm:h-6 text-[#0b6d41] flex-shrink-0" />
-                <span className="text-gray-700 font-medium text-sm sm:text-base">Clinical Exposure from Year 1</span>
+                <span className="text-gray-700 font-medium text-sm sm:text-base">Clinical Training in Our Own 200+ Chair Hospital</span>
               </li>
               <li className="flex items-start gap-2 sm:gap-3">
                 <Check className="w-5 h-5 sm:w-6 sm:h-6 text-[#0b6d41] flex-shrink-0" />
-                <a href="https://placements.jkkn.ac.in/" target="_blank" rel="noopener" className="text-gray-700 font-medium text-sm sm:text-base hover:text-[#0b6d41] hover:underline">International Placements — UK, UAE, Singapore</a>
+                <Link href="/placements/" className="text-gray-700 font-medium text-sm sm:text-base hover:text-[#0b6d41] hover:underline">93 of 99 Placed or in Higher Studies (NIRF 2026)</Link>
               </li>
               <li className="flex items-start gap-2 sm:gap-3">
                 <Check className="w-5 h-5 sm:w-6 sm:h-6 text-[#0b6d41] flex-shrink-0" />

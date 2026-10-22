@@ -155,7 +155,7 @@ export default function AdmissionProcess() {
               <svg className="w-5 h-5 text-[#ffde59]" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
               </svg>
-              <span className="text-[#ffde59] font-semibold text-sm">Admissions Open 2025</span>
+              <span className="text-[#ffde59] font-semibold text-sm">BDS &amp; MDS Admission Enquiry</span>
             </div>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
@@ -359,40 +359,13 @@ export default function AdmissionProcess() {
         </div>
       </section>
 
-      {/* Important Dates & Deadlines */}
+      {/* NEET UG 2027 (replaces the "Important Dates 2025" list, a year out of date by October 2026). */}
       <section className="py-16 px-4 bg-white">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#0b6d41] mb-8 text-center">
-            Important Dates 2025
-          </h2>
-
-          <div className="bg-[#FBFBEE] rounded-xl p-8">
-            <div className="space-y-4">
-              <div className="flex justify-between items-center py-3 border-b border-gray-300">
-                <span className="font-semibold text-gray-700">NEET-UG Examination</span>
-                <span className="text-[#0b6d41] font-bold">May 2025</span>
-              </div>
-              <div className="flex justify-between items-center py-3 border-b border-gray-300">
-                <span className="font-semibold text-gray-700">NEET-UG Result Declaration</span>
-                <span className="text-[#0b6d41] font-bold">June 2025</span>
-              </div>
-              <div className="flex justify-between items-center py-3 border-b border-gray-300">
-                <span className="font-semibold text-gray-700">Counseling Registration Begins</span>
-                <span className="text-[#0b6d41] font-bold">July 2025</span>
-              </div>
-              <div className="flex justify-between items-center py-3 border-b border-gray-300">
-                <span className="font-semibold text-gray-700">Document Verification</span>
-                <span className="text-[#0b6d41] font-bold">July - August 2025</span>
-              </div>
-              <div className="flex justify-between items-center py-3">
-                <span className="font-semibold text-gray-700">Academic Session Begins</span>
-                <span className="text-[#0b6d41] font-bold">August 2025</span>
-              </div>
-            </div>
-          </div>
-
-          <p className="text-center text-gray-600 mt-6 italic">
-            *Dates are tentative and subject to change as per official notifications
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#0b6d41] mb-4">Planning for 2027?</h2>
+          <p className="text-gray-700">
+            NEET UG 2027 and NEET MDS 2027 dates will be added here when NTA and NBEMS announce them. Call
+            +91 93458 55001 or use the Enquire Now button, and our admission team will guide you on each step.
           </p>
         </div>
       </section>

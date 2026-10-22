@@ -521,7 +521,7 @@ Our learning framework emphasizes clinical excellence, research, and community s
         { name: "BDS Admission 2026-27", url: "/academics/details-of-academic-programs/bds/" },
         { name: "MDS Admission 2026-27", url: "/academics/details-of-academic-programs/mds/" },
         { name: "Fee Structure", url: "/fees-structure/" },
-        { name: "Admission Open for BDS & MDS", url: "/admissions/" },
+        { name: "Admissions for BDS & MDS", url: "/admissions/" },
       ],
     },
     contact: {

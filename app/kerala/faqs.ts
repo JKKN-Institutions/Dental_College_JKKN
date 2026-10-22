@@ -32,7 +32,7 @@ export const faqs: FaqItem[] = [
   },
   {
     q: 'Does JKKN Dental have its own hospital?',
-    a: 'Yes, JKKN Dental College & Hospital has a 200+ chair dental hospital and 100+ bed facility right on campus. Learners gain hands-on clinical training from Year 1 of the BDS programme, treating patients who visit from surrounding districts every day.',
+    a: 'Yes, JKKN Dental College & Hospital has a 200+ chair dental hospital and 100+ bed facility right on campus. Learners gain hands-on clinical training in the college hospital, treating patients who visit from surrounding districts every day.',
   },
   {
     q: 'What MDS specialisations are available?',

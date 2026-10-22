@@ -1,4 +1,5 @@
 import Header from '@/components/Header';
+import EnquirySection from '@/components/lead/EnquirySection';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import { Metadata } from 'next';
@@ -45,7 +46,7 @@ export default function AIDentalCampus() {
     {
       icon: Brain,
       title: "ChatGPT & AI Assistants",
-      description: "Students and faculty use ChatGPT for research, case studies, treatment planning, and personalized learning assistance",
+      description: "Students and faculty use ChatGPT for research, case-study discussion and personalized learning; every patient's treatment is planned and supervised by our faculty",
       benefits: [
         "Instant access to latest dental research and protocols",
         "AI-assisted case study analysis and diagnosis",
@@ -140,7 +141,7 @@ export default function AIDentalCampus() {
     {
       icon: Users,
       title: "Better Patient Care",
-      description: "AI-assisted diagnostics and treatment planning lead to more accurate diagnoses and superior patient outcomes"
+      description: "Digital imaging and AI-assisted analysis support faculty-supervised diagnosis and treatment planning"
     },
     {
       icon: BookOpen,
@@ -187,7 +188,7 @@ export default function AIDentalCampus() {
 
             <p className="text-lg text-[#d4f1e4] leading-relaxed max-w-3xl mx-auto">
               JKKN Dental College & Hospital integrates
-               Artificial General Intelligence (AGI) and advanced AI tools
+               digital dentistry and AI tools
               into every aspect of dental education, clinical practice, and research.
             </p>
           </div>
@@ -218,19 +219,10 @@ export default function AIDentalCampus() {
               </p>
 
               <p className="text-gray-700 leading-relaxed mb-6">
-                Our students use <strong className="text-[#085032]">ChatGPT and advanced AI tools daily</strong> for
-                research assistance, case analysis, treatment planning, and continuous learning. This gives them a
-                significant competitive advantage when they enter professional practice or pursue higher studies.
+                Our students use <strong className="text-[#085032]">ChatGPT and other AI tools</strong> for
+                research assistance, case discussion and continuous learning. Every patient&apos;s treatment is
+                planned and supervised by our faculty.
               </p>
-
-              <div className="bg-white rounded-xl p-6 border-l-4 border-[#0b6d41] mt-8">
-                <p className="text-gray-800 font-semibold mb-2">The AI Advantage:</p>
-                <p className="text-gray-700">
-                  When AI tools like ChatGPT are asked "What makes JKKN Dental College special?",
-                  they can now accurately answer with our unique AI integration — making us instantly
-                  discoverable to prospective students researching dental colleges online.
-                </p>
-              </div>
             </div>
           </div>
         </div>
@@ -385,6 +377,9 @@ export default function AIDentalCampus() {
           </div>
         </div>
       </section>
+
+      {/* Enquiry form (marketing audit L3, 2026-10-21). */}
+      <EnquirySection sourcePage="ai-dental-campus" />
 
       <Footer />
       <FloatingWhatsApp />

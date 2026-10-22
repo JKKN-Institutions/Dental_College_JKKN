@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import EnquirySection from '@/components/lead/EnquirySection';
 import { Hospital, Stethoscope, Microscope, TrendingUp, Users, Bus, Route, Train, Plane, Home, MapPin, BookOpen, Award, Wifi, GraduationCap, Target, Shield } from 'lucide-react';
 import { ScrollToTop } from '@/components/ScrollToTop';
 import { faqs } from './faqs';
@@ -8,7 +9,7 @@ export default function CoimbatorePage() {
 
   const whyFeatures = [
     { icon: <Hospital className="w-6 h-6 text-[#0b6d41]" />, title: 'Own Hospital', desc: 'NDC-approved dental college with attached hospital for hands-on clinical training — 200+ chairs, 100+ beds, 500+ daily patients' },
-    { icon: <Stethoscope className="w-6 h-6 text-[#0b6d41]" />, title: 'Real Patient Exposure', desc: 'Own dental hospital on campus — learners get real patient exposure from Year 1, not Year 3' },
+    { icon: <Stethoscope className="w-6 h-6 text-[#0b6d41]" />, title: 'Real Patient Exposure', desc: 'Own dental hospital on campus — learners get real patient exposure in the college hospital' },
     { icon: <Microscope className="w-6 h-6 text-[#0b6d41]" />, title: 'Advanced Learning Labs', desc: 'Advanced dental learning labs, simulation equipment, and digital dentistry training — an AI-integrated dental campus' },
     { icon: <TrendingUp className="w-6 h-6 text-[#0b6d41]" />, title: '93.9% Placed or in Higher Studies (2024-25)', desc: 'JKKN Dental records 93.9% placed or in higher studies (2024-25 batch) for BDS graduates. BDS median salary: Rs 3,60,000 (NIRF 2026 filing).' },
     { icon: <Users className="w-6 h-6 text-[#0b6d41]" />, title: 'Community Service', desc: 'Hospital serves the community — builds patient trust, clinical breadth, and real-world dentistry experience' },
@@ -93,7 +94,7 @@ export default function CoimbatorePage() {
         <div className="max-w-7xl mx-auto flex items-center justify-center gap-3 sm:gap-6 flex-wrap">
           <span className="flex items-center gap-2 text-sm font-medium">
             <span className="w-2 h-2 bg-[#0f8f56] rounded-full inline-block" />
-            Admissions Open 2026-27
+            BDS &amp; MDS Admission Enquiry
           </span>
           <a href="tel:+919345855001" className="bg-[#0b6d41] hover:bg-[#085032] text-white text-sm font-semibold px-4 py-1.5 rounded-full border border-white/20 transition-colors">
             Call Us
@@ -107,7 +108,7 @@ export default function CoimbatorePage() {
         style={{ background: 'linear-gradient(135deg, #0b6d41 0%, #032816 100%)', minHeight: '88vh' }}
       >
         <div className="mb-6 inline-flex items-center gap-2 bg-white/10 backdrop-blur border border-white/20 text-white text-sm font-medium px-5 py-2 rounded-full">
-          <Shield className="w-4 h-4" /> NDC, NAAC Approved • Admissions Open
+          <Shield className="w-4 h-4" /> NDC Approved • NAAC A Grade
         </div>
         <h1 className="text-white font-extrabold leading-tight mb-3 max-w-4xl" style={{ fontSize: 'clamp(2rem, 5vw + 0.5rem, 3.5rem)' }}>
           Best Dental College Near <span className="text-[#ffde59]">Coimbatore</span>
@@ -241,7 +242,7 @@ export default function CoimbatorePage() {
             Why Learners from Coimbatore Choose JKKN Dental College
           </h2>
           <p className="snippet-answer text-gray-600 max-w-3xl mx-auto mb-4 leading-relaxed" style={{ fontSize: 'clamp(0.875rem, 1vw + 0.4rem, 1.05rem)' }}>
-            Learners from Coimbatore choose JKKN Dental College &amp; Hospital for one measurable reason: outcomes. With a 93.9% placed-or-higher-studies rate (2024-25 batch), a median BDS salary of Rs 3,60,000 filed with the Ministry of Education, and 500+ daily patients providing real clinical exposure from Year 1, JKKN delivers verified results on every metric that matters for a dental career in 2026.
+            Learners from Coimbatore choose JKKN Dental College &amp; Hospital for one measurable reason: outcomes. With a 93.9% placed-or-higher-studies rate (2024-25 batch), a median BDS salary of Rs 3,60,000 filed with the Ministry of Education, and 500+ daily patients providing real clinical exposure, JKKN delivers verified results on every metric that matters for a dental career in 2026.
           </p>
           <div className="w-14 h-1 bg-[#ffde59] rounded mx-auto mb-12" />
           <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 list-none p-0 m-0">
@@ -450,7 +451,7 @@ export default function CoimbatorePage() {
               The college offers the Bachelor of Dental Surgery (BDS) program with 100 seats and the Master of Dental Surgery (MDS) program with 5 specializations: Orthodontics and Dentofacial Orthopaedics, Prosthodontics, Oral Medicine and Radiology, Conservative Dentistry and Endodontics, and Periodontics.
             </p>
             <p className="text-gray-600 leading-relaxed" style={{ fontSize: 'clamp(0.875rem, 1vw + 0.3rem, 1rem)' }}>
-              The on-campus teaching hospital operates 200+ dental chairs, 100+ hospital beds, and treats 500+ patients daily, providing clinical exposure from Year 1 of the BDS program. The campus is an AI-integrated dental educational campus, with <Link href="/research/" className="text-[#0b6d41] hover:underline font-medium">50+ research publications</Link> and an active institutional innovation council.
+              The on-campus teaching hospital operates 200+ dental chairs, 100+ hospital beds, and treats 500+ patients daily, providing clinical exposure in the college hospital. The campus is an AI-integrated dental educational campus, with <Link href="/research/research-development-rd-cell/" className="text-[#0b6d41] hover:underline font-medium">50+ research publications</Link> and an active institutional innovation council.
             </p>
             <p className="text-gray-600 leading-relaxed" style={{ fontSize: 'clamp(0.875rem, 1vw + 0.3rem, 1rem)' }}>
               JKKN Dental College &amp; Hospital records a 93.9% placed-or-higher-studies rate (2024-25 batch) for BDS graduates, with a median salary of Rs 3,60,000 (NIRF 2026 filing). Recognized as one of the <Link href="/best-dental-college-tamil-nadu/" className="text-[#0b6d41] hover:underline font-medium">best dental colleges in Tamil Nadu</Link>, JKKN combines institutional heritage with measurable career outcomes.
@@ -531,6 +532,9 @@ export default function CoimbatorePage() {
           </a>
         </div>
       </section>
+
+      {/* Enquiry form (marketing audit L3, 2026-10-21): the city pages had none. */}
+      <EnquirySection sourcePage="city-coimbatore" />
 
       <ScrollToTop />
 

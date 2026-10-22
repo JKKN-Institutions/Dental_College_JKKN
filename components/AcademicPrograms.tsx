@@ -12,7 +12,7 @@ export default function AcademicPrograms() {
             Comprehensive Dental Education Programs
           </h2>
           <p className="text-gray-600 text-sm sm:text-base md:text-lg max-w-3xl mx-auto leading-relaxed">
-            Choose from our undergraduate and postgraduate dental programmes, approved by the National Dental Commission (NDC)s designed to shape competent, compassionate dental professionals.
+            Choose from our undergraduate and postgraduate dental programmes, approved by the National Dental Commission (NDC), designed to shape competent, compassionate dental professionals.
           </p>
         </div>
 
@@ -42,7 +42,7 @@ export default function AcademicPrograms() {
                 </li>
                 <li className="flex items-start gap-3">
                   <Check className="w-5 h-5 sm:w-6 sm:h-6 text-[#0b6d41] flex-shrink-0" />
-                  <span className="text-gray-700 text-sm sm:text-base">Hands-on clinical training from second year</span>
+                  <span className="text-gray-700 text-sm sm:text-base">Hands-on clinical training in our own 200+ chair hospital</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <Check className="w-5 h-5 sm:w-6 sm:h-6 text-[#0b6d41] flex-shrink-0" />

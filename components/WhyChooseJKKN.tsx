@@ -23,7 +23,7 @@ export default function WhyChooseJKKN() {
               <div>
                 <h4 className="text-lg sm:text-xl font-bold mb-1 sm:mb-2">JKKN Group: 74+ Years of Educational Legacy</h4>
                 <p className="text-gray-200 leading-relaxed text-sm sm:text-base">
-                  Part of JKKN Institutions, founded in 1952 with seventy-four years of educational heritage across seven colleges and two schools. JKKN Dental College runs its own 100+ bed dental hospital, on a campus shared with the JKKN Group’s 500-bed multi-specialty teaching hospital.
+                  Part of JKKN Institutions, founded in 1952 with seventy-four years of educational heritage across seven colleges and two schools. JKKN Dental College runs its own dental hospital with 200+ chairs and 100+ beds.
                 </p>
               </div>
             </li>
@@ -35,9 +35,9 @@ export default function WhyChooseJKKN() {
                 </div>
               </div>
               <div>
-                <h4 className="text-lg sm:text-xl font-bold mb-1 sm:mb-2">Clinical Exposure from Year 1</h4>
+                <h4 className="text-lg sm:text-xl font-bold mb-1 sm:mb-2">Clinical Training in Our Own Hospital</h4>
                 <p className="text-gray-200 leading-relaxed text-sm sm:text-base">
-                  Over five hundred patients visit daily across nine clinical departments, providing extensive hands-on training from second year onwards in all dental specialties.
+                  Over five hundred patients visit daily across nine clinical departments, giving learners hands-on clinical training in every dental specialty.
                 </p>
               </div>
             </li>
@@ -67,10 +67,10 @@ export default function WhyChooseJKKN() {
               <div>
                 <h4 className="text-lg sm:text-xl font-bold mb-1 sm:mb-2">93.9% Placed or in Higher Studies (2024-25)</h4>
                 <p className="text-gray-200 leading-relaxed text-sm sm:text-base">
-                  Strong industry connections with Apollo Dental, Clove Dental, Sabka Dentist, government hospitals, and international institutions including NHS United Kingdom.
+                  Of 99 BDS graduates in 2024-25, 75 were placed and 18 went on to higher studies; median salary ₹3.6 lakh. MDS: 7 of 7 placed, median ₹6.0 lakh. Source: JKKN&apos;s NIRF 2026 filing.
                 </p>
-                <a href="https://placements.jkkn.ac.in/" target="_blank" rel="noopener noreferrer" className="text-[#ffde59] hover:underline text-xs sm:text-sm mt-1 inline-block">
-                  View verified placement records →
+                <a href="/placements/" className="text-[#ffde59] hover:underline text-xs sm:text-sm mt-1 inline-block">
+                  See the placement figures →
                 </a>
               </div>
             </li>

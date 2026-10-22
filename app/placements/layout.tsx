@@ -72,33 +72,11 @@ const howToSchema = {
     { "@type": "HowToStep", "position": 2, "name": "Resume Workshop & Skill Development", "text": "CDC conducts resume writing workshops, soft skills training, and professional development sessions to prepare learners for the job market." },
     { "@type": "HowToStep", "position": 3, "name": "Company Connect & Campus Drives", "text": "CDC organises campus recruitment drives, industry interactions, and connects learners with 25+ recruiting partners including corporate dental chains and hospitals." },
     { "@type": "HowToStep", "position": 4, "name": "Interview Preparation & Mock Sessions", "text": "Dedicated interview preparation with mock interviews, group discussions, and clinical case presentations to build confidence and readiness." },
-    { "@type": "HowToStep", "position": 5, "name": "Offer Facilitation & Joining Support", "text": "CDC facilitates offer letters, salary negotiations, and provides joining support including relocation guidance for outstation and international placements." },
+    { "@type": "HowToStep", "position": 5, "name": "Offer Facilitation & Joining Support", "text": "CDC facilitates offer letters, salary negotiations, and provides joining support including relocation guidance for outstation jobs." },
   ]
 };
 
-const itemListSchema = {
-  "@context": "https://schema.org",
-  "@type": "ItemList",
-  "name": "Top Recruiters at JKKN Dental College",
-  "description": "Leading dental healthcare organisations that recruit from JKKN Dental College & Hospital.",
-  "numberOfItems": 14,
-  "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Apollo Dental" },
-    { "@type": "ListItem", "position": 2, "name": "Clove Dental" },
-    { "@type": "ListItem", "position": 3, "name": "Sabka Dentist" },
-    { "@type": "ListItem", "position": 4, "name": "MyDentist" },
-    { "@type": "ListItem", "position": 5, "name": "Apollo Hospitals" },
-    { "@type": "ListItem", "position": 6, "name": "Fortis Healthcare" },
-    { "@type": "ListItem", "position": 7, "name": "Manipal Hospitals" },
-    { "@type": "ListItem", "position": 8, "name": "Government PHCs & District Hospitals" },
-    { "@type": "ListItem", "position": 9, "name": "ESIC Hospitals" },
-    { "@type": "ListItem", "position": 10, "name": "NHS UK" },
-    { "@type": "ListItem", "position": 11, "name": "Cleveland Clinic Abu Dhabi" },
-    { "@type": "ListItem", "position": 12, "name": "Saudi Ministry of Health" },
-    { "@type": "ListItem", "position": 13, "name": "Singapore Dental Clinics" },
-    { "@type": "ListItem", "position": 14, "name": "ESIC Dental Centres" },
-  ]
-};
+// The recruiter ItemList schema was removed on 2026-10-21 with the unproved employer names it listed.
 
 export default function PlacementsLayout({
   children,
@@ -112,7 +90,6 @@ export default function PlacementsLayout({
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
       <Header />
       {children}
       <Footer />

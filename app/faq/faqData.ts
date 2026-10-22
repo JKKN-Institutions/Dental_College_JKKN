@@ -123,7 +123,7 @@ export const faqCategories = [
       {
         question: 'What are the career options after completing BDS?',
         answer:
-          'BDS graduates from JKKN pursue private dental practice, government dental hospitals, corporate dental chains like Clove Dental and Apollo Dental, MDS specialization, research and academics, armed forces dental corps, dental product industry, and public health dentistry. JKKN offers 93.9% placed or in higher studies (2024-25 batch) with recruiters like Apollo Hospitals, Manipal Hospitals, and international placements in NHS UK, Cleveland Clinic Abu Dhabi, and Singapore.',
+          'BDS graduates from JKKN pursue private dental practice, government dental hospitals, corporate dental chains, MDS specialization, research and academics, armed forces dental corps, dental product industry, and public health dentistry. For the 2024-25 batch, 75 of 99 BDS graduates were placed and 18 went on to higher studies (93.9%), per the JKKN NIRF 2026 filing.',
       },
       {
         question: 'Can I pursue MDS after BDS at JKKN Dental College?',
@@ -184,7 +184,7 @@ export const faqCategories = [
       {
         question: 'Are there any hidden charges beyond the tuition fee?',
         answer:
-          'No hidden charges are applicable at JKKN Dental College. Beyond tuition fees, the standard fee components include library fee, lab and clinical fee, university examination fee (as per university norms), and caution/library/lab deposits (all refundable upon course completion). Hostel charges are separate and optional.',
+          'Beyond tuition, the fee components are library fee, lab and clinical fee, university examination fee (as per university norms), and caution/library/lab deposits (all refundable upon course completion). Hostel charges are separate and optional.',
       },
       {
         question: 'Is fee payment available in installments at JKKN Dental College?',
@@ -210,7 +210,7 @@ export const faqCategories = [
       {
         question: 'How many dental chairs does JKKN Dental Hospital have?',
         answer:
-          'JKKN Dental Hospital has 200+ dental chairs and 100 hospital beds. The hospital serves 500+ patients daily across 9 departments, providing extensive hands-on clinical exposure to BDS students from the very first year.',
+          'JKKN Dental Hospital has 200+ dental chairs and 100 hospital beds. The hospital serves 500+ patients daily across 9 departments, providing extensive hands-on clinical exposure to BDS students in the college hospital.',
       },
       {
         question: 'What are the hostel facilities at JKKN Dental College?',
@@ -236,7 +236,7 @@ export const faqCategories = [
       {
         question: 'Which companies hire from JKKN Dental College?',
         answer:
-          'Top recruiters include Apollo Dental, Clove Dental, Sabka Dentist, MyDentist, Apollo Hospitals, Fortis Healthcare, Manipal Hospitals, and government PHCs & district hospitals. International recruiters include NHS UK, Cleveland Clinic Abu Dhabi, and Saudi MOH.',
+          'JKKN does not publish a list of hiring companies yet. Graduates go into government dental posts, corporate dental chains, hospital dentistry and private practice. For the 2024-25 batch, 75 of 99 BDS graduates were placed and 18 went on to higher studies, per the JKKN NIRF 2026 filing.',
       },
       {
         question: 'What is the salary after BDS from JKKN Dental College?',
@@ -246,7 +246,7 @@ export const faqCategories = [
       {
         question: 'Does JKKN Dental College offer international placements?',
         answer:
-          'Yes, JKKN Dental College alumni work internationally at NHS UK, Cleveland Clinic Abu Dhabi, Saudi Ministry of Health, and dental clinics in Singapore. The CDC supports international licensing exam preparation and placement assistance.',
+          'JKKN does not publish international placement figures. A graduate who wants to practise abroad must clear that country\'s dental licensing exam; the CDC guides learners on those exams.',
       },
       {
         question: 'What career options are available after BDS?',
@@ -266,12 +266,12 @@ export const faqCategories = [
       {
         question: 'How many alumni does JKKN Dental College have?',
         answer:
-          'JKKN Dental College has a strong alumni network of 3,000+ graduates spread across India and internationally. Alumni work in leading hospitals, corporate dental chains, government services, and private practice.',
+          'JKKN Dental College has 2,000+ BDS alumni since 1987, per the college\'s alumni table. Alumni work in hospitals, corporate dental chains, government services, and private practice.',
       },
       {
         question: 'Which dental college in Tamil Nadu has the best placements?',
         answer:
-          'JKKN Dental College and Hospital provides 93.9% placed or in higher studies (2024-25 batch) with graduates employed at Apollo Dental, Clove Dental, Sabka Dentist, government hospitals, and international healthcare institutions including NHS United Kingdom.',
+          'JKKN Dental College and Hospital reports 93.9% placed or in higher studies (2024-25 batch, 93 of 99 BDS graduates) and all 7 MDS graduates placed, per its NIRF 2026 filing. Ask each college for the same NIRF figures to compare.',
       },
       {
         question: 'Does JKKN have placement support for MDS students?',

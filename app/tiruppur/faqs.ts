@@ -20,7 +20,7 @@ export const faqs: FaqItem[] = [
   },
   {
     q: 'Does JKKN Dental have its own hospital?',
-    a: 'Yes, JKKN Dental College & Hospital has a 200+ chair dental hospital with 100+ beds right on campus. The hospital serves patients from across western Tamil Nadu including Tiruppur, Erode, and Coimbatore districts — treating 500+ patients daily, ensuring learners get exceptional clinical training from Year 1.',
+    a: 'Yes, JKKN Dental College & Hospital has a 200+ chair dental hospital with 100+ beds right on campus. The hospital serves patients from across western Tamil Nadu including Tiruppur, Erode, and Coimbatore districts — treating 500+ patients daily, ensuring learners get exceptional clinical training in the college hospital.',
   },
   {
     q: 'What MDS specialisations are available?',
