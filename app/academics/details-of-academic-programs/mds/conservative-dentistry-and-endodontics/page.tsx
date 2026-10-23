@@ -1273,7 +1273,7 @@ export default function MDSConservativeDentistry() {
             {/* NAAC */}
             <div className="bg-white rounded-2xl p-4 sm:p-8 border border-gray-200 hover:shadow-2xl transition-shadow duration-300">
               <div className="bg-[#ffde59] w-16 h-16 sm:w-20 sm:h-20 rounded-2xl flex items-center justify-center mx-auto mb-4 sm:mb-6 text-[#032816]">
-                <h3 className="text-2xl sm:text-3xl font-bold text-[#032816]">NAAC</h3>
+                <h3 className="text-xl sm:text-2xl font-bold text-[#032816]">NAAC</h3>
               </div>
               <h4 className="text-center text-gray-800 font-bold text-base sm:text-lg mb-2">NAAC Accredited</h4>
             </div>
