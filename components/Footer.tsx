@@ -36,7 +36,7 @@ export default function Footer() {
                 <li key={index}>
                   <Link
                     href={link.url}
-                    className="text-white hover:text-gray-300 transition-colors block py-1"
+                    className="text-white hover:text-gray-300 transition-colors block py-2.5 md:py-1"
                   >
                     {link.name}
                   </Link>
@@ -119,7 +119,7 @@ export default function Footer() {
               <li key={index}>
                 <Link
                   href={link.url}
-                  className="text-white hover:text-gray-300 transition-colors block py-1"
+                  className="text-white hover:text-gray-300 transition-colors block py-2.5 md:py-1"
                 >
                   {link.name}
                 </Link>
@@ -139,7 +139,7 @@ export default function Footer() {
               <li key={index}>
                 <Link
                   href={link.url}
-                  className="text-white hover:text-gray-300 transition-colors block py-1"
+                  className="text-white hover:text-gray-300 transition-colors block py-2.5 md:py-1"
                 >
                   {link.name}
                 </Link>
