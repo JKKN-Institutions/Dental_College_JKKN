@@ -839,7 +839,7 @@ export default function MDSPeriodontics() {
             {/* Perio Clinic */}
             <div className="bg-gradient-to-br from-[#0b6d41] to-[#032816] rounded-2xl overflow-hidden">
               <div className="p-8 h-64 flex items-center justify-center">
-                <h3 className="text-3xl md:text-5xl font-bold text-white text-center">Perio Clinic</h3>
+                <h3 className="text-3xl lg:text-5xl font-bold text-white text-center">Perio Clinic</h3>
               </div>
               <div className="bg-white p-6">
                 <h4 className="text-xl font-bold text-gray-900 mb-3">Periodontics Clinical Area</h4>
@@ -852,7 +852,7 @@ export default function MDSPeriodontics() {
             {/* Simulation Lab */}
             <div className="bg-gradient-to-br from-[#0f8f56] to-[#0f8f56] rounded-2xl overflow-hidden">
               <div className="p-8 h-64 flex items-center justify-center">
-                <h3 className="text-3xl md:text-5xl font-bold text-white text-center">Simulation Learning Lab</h3>
+                <h3 className="text-3xl lg:text-5xl font-bold text-white text-center">Simulation Learning Lab</h3>
               </div>
               <div className="bg-white p-6">
                 <h4 className="text-xl font-bold text-gray-900 mb-3">Simulation Learning Lab</h4>
@@ -865,7 +865,7 @@ export default function MDSPeriodontics() {
             {/* Research Lab */}
             <div className="bg-gradient-to-br from-[#0f8f56] to-[#0f8f56] rounded-2xl overflow-hidden">
               <div className="p-8 h-64 flex items-center justify-center">
-                <h3 className="text-3xl md:text-5xl font-bold text-white text-center">Research Learning Lab</h3>
+                <h3 className="text-3xl lg:text-5xl font-bold text-white text-center">Research Learning Lab</h3>
               </div>
               <div className="bg-white p-6">
                 <h4 className="text-xl font-bold text-gray-900 mb-3">Research Learning Lab</h4>
