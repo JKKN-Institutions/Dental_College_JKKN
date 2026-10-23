@@ -217,19 +217,19 @@ export default function MDSProgram() {
               <div className="grid grid-cols-2 gap-2 sm:gap-4 mb-8">
                 <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-3 sm:p-6">
                   <div className="text-2xl sm:text-4xl md:text-5xl font-bold text-[#ffde59] mb-2">5</div>
-                  <div className="text-[10px] sm:text-sm text-gray-200 uppercase">Specializations</div>
+                  <div className="text-xs sm:text-sm text-gray-200 uppercase">Specializations</div>
                 </div>
                 <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-3 sm:p-6">
                   <div className="text-2xl sm:text-4xl md:text-5xl font-bold text-[#ffde59] mb-2">3</div>
-                  <div className="text-[10px] sm:text-sm text-gray-200 uppercase">Years Duration</div>
+                  <div className="text-xs sm:text-sm text-gray-200 uppercase">Years Duration</div>
                 </div>
                 <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-3 sm:p-6">
                   <div className="text-2xl sm:text-4xl md:text-5xl font-bold text-[#ffde59] mb-2">18</div>
-                  <div className="text-[10px] sm:text-sm text-gray-200 uppercase">Total Seats</div>
+                  <div className="text-xs sm:text-sm text-gray-200 uppercase">Total Seats</div>
                 </div>
                 <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-3 sm:p-6">
                   <div className="text-2xl sm:text-4xl md:text-5xl font-bold text-[#ffde59] mb-2">7 of 7</div>
-                  <div className="text-[10px] sm:text-sm text-gray-200 uppercase">MDS placed (NIRF 2026)</div>
+                  <div className="text-xs sm:text-sm text-gray-200 uppercase">MDS placed (NIRF 2026)</div>
                 </div>
               </div>
             </div>
