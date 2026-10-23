@@ -391,7 +391,7 @@ export default function MDSProsthodontics() {
                 <div className="inline-block bg-white/10 backdrop-blur-sm rounded-full px-4 py-1 mb-4">
                   <span className="text-white font-bold text-sm">Year 1</span>
                 </div>
-                <h3 className="text-3xl font-bold text-white">Foundation</h3>
+                <h3 className="text-3xl md:text-xl lg:text-3xl font-bold text-white">Foundation</h3>
               </div>
               <div className="p-8">
                 <ul className="space-y-4">
@@ -445,7 +445,7 @@ export default function MDSProsthodontics() {
                 <div className="inline-block bg-white/10 backdrop-blur-sm rounded-full px-4 py-1 mb-4">
                   <span className="text-white font-bold text-sm">Year 2</span>
                 </div>
-                <h3 className="text-3xl font-bold text-white">Advanced Clinical</h3>
+                <h3 className="text-3xl md:text-xl lg:text-3xl font-bold text-white">Advanced Clinical</h3>
               </div>
               <div className="p-8">
                 <ul className="space-y-4">
@@ -499,7 +499,7 @@ export default function MDSProsthodontics() {
                 <div className="inline-block bg-white/10 backdrop-blur-sm rounded-full px-4 py-1 mb-4">
                   <span className="text-white font-bold text-sm">Year 3</span>
                 </div>
-                <h3 className="text-3xl font-bold text-white">Specialization</h3>
+                <h3 className="text-3xl md:text-xl lg:text-3xl font-bold text-white">Specialization</h3>
               </div>
               <div className="p-8">
                 <ul className="space-y-4">

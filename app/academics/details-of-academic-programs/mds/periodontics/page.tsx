@@ -392,7 +392,7 @@ export default function MDSPeriodontics() {
                 <div className="inline-block bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 mb-6">
                   <span className="text-white font-semibold">Year 1</span>
                 </div>
-                <h3 className="text-3xl font-bold text-white mb-8">Foundation</h3>
+                <h3 className="text-3xl md:text-xl lg:text-3xl font-bold text-white mb-8">Foundation</h3>
                 <ul className="space-y-4">
                   <li className="flex items-start gap-3">
                     <div className="bg-[#ffde59] rounded-full p-1 mt-1 flex-shrink-0 text-[#032816]">
@@ -444,7 +444,7 @@ export default function MDSPeriodontics() {
                 <div className="inline-block bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 mb-6">
                   <span className="text-white font-semibold">Year 2</span>
                 </div>
-                <h3 className="text-3xl font-bold text-white mb-8">Advanced Clinical</h3>
+                <h3 className="text-3xl md:text-xl lg:text-3xl font-bold text-white mb-8">Advanced Clinical</h3>
                 <ul className="space-y-4">
                   <li className="flex items-start gap-3">
                     <div className="bg-white rounded-full p-1 mt-1 flex-shrink-0">
@@ -496,7 +496,7 @@ export default function MDSPeriodontics() {
                 <div className="inline-block bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 mb-6">
                   <span className="text-white font-semibold">Year 3</span>
                 </div>
-                <h3 className="text-3xl font-bold text-white mb-8">Specialization</h3>
+                <h3 className="text-3xl md:text-xl lg:text-3xl font-bold text-white mb-8">Specialization</h3>
                 <ul className="space-y-4">
                   <li className="flex items-start gap-3">
                     <div className="bg-white rounded-full p-1 mt-1 flex-shrink-0">

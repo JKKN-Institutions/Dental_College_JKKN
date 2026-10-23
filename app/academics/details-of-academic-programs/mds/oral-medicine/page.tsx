@@ -386,7 +386,7 @@ export default function MDSOralMedicine() {
                 <div className="inline-block bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 mb-4">
                   <span className="text-white font-bold text-sm">Year 1</span>
                 </div>
-                <h3 className="text-3xl font-bold text-white">Foundation</h3>
+                <h3 className="text-3xl md:text-xl lg:text-3xl font-bold text-white">Foundation</h3>
               </div>
               <div className="p-8 space-y-4">
                 <div className="flex items-start gap-3">
@@ -428,7 +428,7 @@ export default function MDSOralMedicine() {
                 <div className="inline-block bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 mb-4">
                   <span className="text-white font-bold text-sm">Year 2</span>
                 </div>
-                <h3 className="text-3xl font-bold text-white">Advanced Clinical</h3>
+                <h3 className="text-3xl md:text-xl lg:text-3xl font-bold text-white">Advanced Clinical</h3>
               </div>
               <div className="p-8 space-y-4">
                 <div className="flex items-start gap-3">
@@ -470,7 +470,7 @@ export default function MDSOralMedicine() {
                 <div className="inline-block bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 mb-4">
                   <span className="text-white font-bold text-sm">Year 3</span>
                 </div>
-                <h3 className="text-3xl font-bold text-white">Specialization</h3>
+                <h3 className="text-3xl md:text-xl lg:text-3xl font-bold text-white">Specialization</h3>
               </div>
               <div className="p-8 space-y-4">
                 <div className="flex items-start gap-3">
