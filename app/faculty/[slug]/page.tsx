@@ -507,9 +507,9 @@ export default async function FacultyProfilePage({
                         <div className="w-8 h-8 rounded-lg bg-[#0b6d41] text-white text-xs font-bold flex items-center justify-center flex-shrink-0">
                           {i + 1}
                         </div>
-                        <div>
-                          <p className="font-semibold text-gray-900 text-sm">{pub.title}</p>
-                          <p className="text-xs text-gray-500 mt-0.5">
+                        <div className="min-w-0">
+                          <p className="font-semibold text-gray-900 text-sm break-words">{pub.title}</p>
+                          <p className="text-xs text-gray-500 mt-0.5 break-words">
                             {pub.authors}{pub.journal ? ` · ${pub.journal}` : ''}{pub.year ? `, ${pub.year}` : ''}
                           </p>
                           <div className="flex gap-3 mt-1.5">
