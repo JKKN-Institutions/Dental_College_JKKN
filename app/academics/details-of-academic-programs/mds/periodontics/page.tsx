@@ -891,29 +891,29 @@ export default function MDSPeriodontics() {
 
           {/* Photo Grid */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <div className="bg-gradient-to-br from-[#0b6d41] to-[#032816] rounded-xl p-6 md:p-12 flex items-center justify-center h-48 md:h-64">
-              <h3 className="text-xl md:text-4xl font-bold text-white text-center">Campus</h3>
+            <div className="bg-gradient-to-br from-[#0b6d41] to-[#032816] rounded-xl p-6 lg:p-12 flex items-center justify-center h-48 md:h-64">
+              <h3 className="text-xl lg:text-4xl font-bold text-white text-center">Campus</h3>
             </div>
-            <div className="bg-gradient-to-br from-[#0f8f56] to-[#0f8f56] rounded-xl p-6 md:p-12 flex items-center justify-center h-48 md:h-64">
-              <h3 className="text-xl md:text-4xl font-bold text-white text-center">Clinic</h3>
+            <div className="bg-gradient-to-br from-[#0f8f56] to-[#0f8f56] rounded-xl p-6 lg:p-12 flex items-center justify-center h-48 md:h-64">
+              <h3 className="text-xl lg:text-4xl font-bold text-white text-center">Clinic</h3>
             </div>
-            <div className="bg-gradient-to-br from-[#0f8f56] to-[#0f8f56] rounded-xl p-6 md:p-12 flex items-center justify-center h-48 md:h-64">
-              <h3 className="text-xl md:text-4xl font-bold text-white text-center">Learning Commons</h3>
+            <div className="bg-gradient-to-br from-[#0f8f56] to-[#0f8f56] rounded-xl p-6 lg:p-12 flex items-center justify-center h-48 md:h-64">
+              <h3 className="text-xl lg:text-4xl font-bold text-white text-center">Learning Commons</h3>
             </div>
-            <div className="bg-gradient-to-br from-[#0b6d41] to-[#032816] rounded-xl p-6 md:p-12 flex items-center justify-center h-48 md:h-64">
-              <h3 className="text-xl md:text-4xl font-bold text-white text-center">Conference</h3>
+            <div className="bg-gradient-to-br from-[#0b6d41] to-[#032816] rounded-xl p-6 lg:p-12 flex items-center justify-center h-48 md:h-64">
+              <h3 className="text-xl lg:text-4xl font-bold text-white text-center">Conference</h3>
             </div>
-            <div className="bg-gradient-to-br from-[#0f8f56] to-[#0f8f56] rounded-xl p-6 md:p-12 flex items-center justify-center h-48 md:h-64">
-              <h3 className="text-xl md:text-4xl font-bold text-white text-center">Hostel</h3>
+            <div className="bg-gradient-to-br from-[#0f8f56] to-[#0f8f56] rounded-xl p-6 lg:p-12 flex items-center justify-center h-48 md:h-64">
+              <h3 className="text-xl lg:text-4xl font-bold text-white text-center">Hostel</h3>
             </div>
-            <div className="bg-gradient-to-br from-[#0f8f56] to-[#0f8f56] rounded-xl p-6 md:p-12 flex items-center justify-center h-48 md:h-64">
-              <h3 className="text-xl md:text-4xl font-bold text-white text-center">Sports</h3>
+            <div className="bg-gradient-to-br from-[#0f8f56] to-[#0f8f56] rounded-xl p-6 lg:p-12 flex items-center justify-center h-48 md:h-64">
+              <h3 className="text-xl lg:text-4xl font-bold text-white text-center">Sports</h3>
             </div>
-            <div className="bg-gradient-to-br from-[#0b6d41] to-[#032816] rounded-xl p-6 md:p-12 flex items-center justify-center h-48 md:h-64">
-              <h3 className="text-xl md:text-4xl font-bold text-white text-center">Surgery</h3>
+            <div className="bg-gradient-to-br from-[#0b6d41] to-[#032816] rounded-xl p-6 lg:p-12 flex items-center justify-center h-48 md:h-64">
+              <h3 className="text-xl lg:text-4xl font-bold text-white text-center">Surgery</h3>
             </div>
-            <div className="bg-gradient-to-br from-[#0f8f56] to-[#0f8f56] rounded-xl p-6 md:p-12 flex items-center justify-center h-48 md:h-64">
-              <h3 className="text-xl md:text-4xl font-bold text-white text-center">Cafeteria</h3>
+            <div className="bg-gradient-to-br from-[#0f8f56] to-[#0f8f56] rounded-xl p-6 lg:p-12 flex items-center justify-center h-48 md:h-64">
+              <h3 className="text-xl lg:text-4xl font-bold text-white text-center">Cafeteria</h3>
             </div>
           </div>
         </div>

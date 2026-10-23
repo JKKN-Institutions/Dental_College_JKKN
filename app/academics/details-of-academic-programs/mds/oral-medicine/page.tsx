@@ -808,43 +808,43 @@ export default function MDSOralMedicine() {
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
             {/* Campus */}
-            <div className="bg-gradient-to-br from-[#0b6d41] to-[#032816] rounded-2xl p-6 md:p-12 flex items-center justify-center h-40 md:h-64 cursor-pointer hover:shadow-xl transition-shadow duration-300">
-              <h3 className="text-xl md:text-4xl font-bold text-white text-center">Campus</h3>
+            <div className="bg-gradient-to-br from-[#0b6d41] to-[#032816] rounded-2xl p-6 lg:p-12 flex items-center justify-center h-40 md:h-64 cursor-pointer hover:shadow-xl transition-shadow duration-300">
+              <h3 className="text-xl lg:text-4xl font-bold text-white text-center">Campus</h3>
             </div>
 
             {/* Radiology */}
-            <div className="bg-gradient-to-br from-[#0f8f56] to-[#0f8f56] rounded-2xl p-6 md:p-12 flex items-center justify-center h-40 md:h-64 cursor-pointer hover:shadow-xl transition-shadow duration-300">
-              <h3 className="text-xl md:text-4xl font-bold text-white text-center">Radiology</h3>
+            <div className="bg-gradient-to-br from-[#0f8f56] to-[#0f8f56] rounded-2xl p-6 lg:p-12 flex items-center justify-center h-40 md:h-64 cursor-pointer hover:shadow-xl transition-shadow duration-300">
+              <h3 className="text-xl lg:text-4xl font-bold text-white text-center">Radiology</h3>
             </div>
 
             {/* Library */}
-            <div className="bg-gradient-to-br from-[#0f8f56] to-[#0b6d41] rounded-2xl p-6 md:p-12 flex items-center justify-center h-40 md:h-64 cursor-pointer hover:shadow-xl transition-shadow duration-300">
-              <h3 className="text-xl md:text-4xl font-bold text-white text-center">Learning Commons</h3>
+            <div className="bg-gradient-to-br from-[#0f8f56] to-[#0b6d41] rounded-2xl p-6 lg:p-12 flex items-center justify-center h-40 md:h-64 cursor-pointer hover:shadow-xl transition-shadow duration-300">
+              <h3 className="text-xl lg:text-4xl font-bold text-white text-center">Learning Commons</h3>
             </div>
 
             {/* Conference */}
-            <div className="bg-gradient-to-br from-[#0b6d41] to-[#032816] rounded-2xl p-6 md:p-12 flex items-center justify-center h-40 md:h-64 cursor-pointer hover:shadow-xl transition-shadow duration-300">
-              <h3 className="text-xl md:text-4xl font-bold text-white text-center">Conference</h3>
+            <div className="bg-gradient-to-br from-[#0b6d41] to-[#032816] rounded-2xl p-6 lg:p-12 flex items-center justify-center h-40 md:h-64 cursor-pointer hover:shadow-xl transition-shadow duration-300">
+              <h3 className="text-xl lg:text-4xl font-bold text-white text-center">Conference</h3>
             </div>
 
             {/* Hostel */}
-            <div className="bg-gradient-to-br from-[#0f8f56] to-[#0f8f56] rounded-2xl p-6 md:p-12 flex items-center justify-center h-40 md:h-64 cursor-pointer hover:shadow-xl transition-shadow duration-300">
-              <h3 className="text-xl md:text-4xl font-bold text-white text-center">Hostel</h3>
+            <div className="bg-gradient-to-br from-[#0f8f56] to-[#0f8f56] rounded-2xl p-6 lg:p-12 flex items-center justify-center h-40 md:h-64 cursor-pointer hover:shadow-xl transition-shadow duration-300">
+              <h3 className="text-xl lg:text-4xl font-bold text-white text-center">Hostel</h3>
             </div>
 
             {/* Sports */}
-            <div className="bg-gradient-to-br from-[#0f8f56] to-[#0b6d41] rounded-2xl p-6 md:p-12 flex items-center justify-center h-40 md:h-64 cursor-pointer hover:shadow-xl transition-shadow duration-300">
-              <h3 className="text-xl md:text-4xl font-bold text-white text-center">Sports</h3>
+            <div className="bg-gradient-to-br from-[#0f8f56] to-[#0b6d41] rounded-2xl p-6 lg:p-12 flex items-center justify-center h-40 md:h-64 cursor-pointer hover:shadow-xl transition-shadow duration-300">
+              <h3 className="text-xl lg:text-4xl font-bold text-white text-center">Sports</h3>
             </div>
 
             {/* Lab */}
-            <div className="bg-gradient-to-br from-[#0b6d41] to-[#032816] rounded-2xl p-6 md:p-12 flex items-center justify-center h-40 md:h-64 cursor-pointer hover:shadow-xl transition-shadow duration-300">
-              <h3 className="text-xl md:text-4xl font-bold text-white text-center">Learning Lab</h3>
+            <div className="bg-gradient-to-br from-[#0b6d41] to-[#032816] rounded-2xl p-6 lg:p-12 flex items-center justify-center h-40 md:h-64 cursor-pointer hover:shadow-xl transition-shadow duration-300">
+              <h3 className="text-xl lg:text-4xl font-bold text-white text-center">Learning Lab</h3>
             </div>
 
             {/* Cafeteria */}
-            <div className="bg-gradient-to-br from-[#0f8f56] to-[#0f8f56] rounded-2xl p-6 md:p-12 flex items-center justify-center h-40 md:h-64 cursor-pointer hover:shadow-xl transition-shadow duration-300">
-              <h3 className="text-xl md:text-4xl font-bold text-white text-center">Cafeteria</h3>
+            <div className="bg-gradient-to-br from-[#0f8f56] to-[#0f8f56] rounded-2xl p-6 lg:p-12 flex items-center justify-center h-40 md:h-64 cursor-pointer hover:shadow-xl transition-shadow duration-300">
+              <h3 className="text-xl lg:text-4xl font-bold text-white text-center">Cafeteria</h3>
             </div>
           </div>
         </div>

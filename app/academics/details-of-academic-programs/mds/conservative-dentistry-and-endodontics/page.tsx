@@ -867,43 +867,43 @@ export default function MDSConservativeDentistry() {
           {/* Gallery Grid */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
             {/* Campus */}
-            <div className="bg-gradient-to-br from-[#0b6d41] to-[#032816] rounded-2xl p-6 md:p-12 flex items-center justify-center aspect-square hover:shadow-2xl transition-shadow duration-300 cursor-pointer">
-              <h3 className="text-xl md:text-4xl font-bold text-white">Campus</h3>
+            <div className="bg-gradient-to-br from-[#0b6d41] to-[#032816] rounded-2xl p-6 lg:p-12 flex items-center justify-center aspect-square hover:shadow-2xl transition-shadow duration-300 cursor-pointer">
+              <h3 className="text-xl lg:text-4xl font-bold text-white">Campus</h3>
             </div>
 
             {/* Clinic */}
-            <div className="bg-gradient-to-br from-[#0f8f56] to-[#0f8f56] rounded-2xl p-6 md:p-12 flex items-center justify-center aspect-square hover:shadow-2xl transition-shadow duration-300 cursor-pointer">
-              <h3 className="text-xl md:text-4xl font-bold text-white">Clinic</h3>
+            <div className="bg-gradient-to-br from-[#0f8f56] to-[#0f8f56] rounded-2xl p-6 lg:p-12 flex items-center justify-center aspect-square hover:shadow-2xl transition-shadow duration-300 cursor-pointer">
+              <h3 className="text-xl lg:text-4xl font-bold text-white">Clinic</h3>
             </div>
 
             {/* Library */}
-            <div className="bg-gradient-to-br from-[#0f8f56] to-[#0f8f56] rounded-2xl p-6 md:p-12 flex items-center justify-center aspect-square hover:shadow-2xl transition-shadow duration-300 cursor-pointer">
-              <h3 className="text-xl md:text-4xl font-bold text-white">Learning Commons</h3>
+            <div className="bg-gradient-to-br from-[#0f8f56] to-[#0f8f56] rounded-2xl p-6 lg:p-12 flex items-center justify-center aspect-square hover:shadow-2xl transition-shadow duration-300 cursor-pointer">
+              <h3 className="text-xl lg:text-4xl font-bold text-white">Learning Commons</h3>
             </div>
 
             {/* Conference */}
-            <div className="bg-gradient-to-br from-[#0b6d41] to-[#032816] rounded-2xl p-6 md:p-12 flex items-center justify-center aspect-square hover:shadow-2xl transition-shadow duration-300 cursor-pointer">
-              <h3 className="text-xl md:text-4xl font-bold text-white">Conference</h3>
+            <div className="bg-gradient-to-br from-[#0b6d41] to-[#032816] rounded-2xl p-6 lg:p-12 flex items-center justify-center aspect-square hover:shadow-2xl transition-shadow duration-300 cursor-pointer">
+              <h3 className="text-xl lg:text-4xl font-bold text-white">Conference</h3>
             </div>
 
             {/* Hostel */}
-            <div className="bg-gradient-to-br from-[#0f8f56] to-[#0f8f56] rounded-2xl p-6 md:p-12 flex items-center justify-center aspect-square hover:shadow-2xl transition-shadow duration-300 cursor-pointer">
-              <h3 className="text-xl md:text-4xl font-bold text-white">Hostel</h3>
+            <div className="bg-gradient-to-br from-[#0f8f56] to-[#0f8f56] rounded-2xl p-6 lg:p-12 flex items-center justify-center aspect-square hover:shadow-2xl transition-shadow duration-300 cursor-pointer">
+              <h3 className="text-xl lg:text-4xl font-bold text-white">Hostel</h3>
             </div>
 
             {/* Sports */}
-            <div className="bg-gradient-to-br from-[#0f8f56] to-[#0f8f56] rounded-2xl p-6 md:p-12 flex items-center justify-center aspect-square hover:shadow-2xl transition-shadow duration-300 cursor-pointer">
-              <h3 className="text-xl md:text-4xl font-bold text-white">Sports</h3>
+            <div className="bg-gradient-to-br from-[#0f8f56] to-[#0f8f56] rounded-2xl p-6 lg:p-12 flex items-center justify-center aspect-square hover:shadow-2xl transition-shadow duration-300 cursor-pointer">
+              <h3 className="text-xl lg:text-4xl font-bold text-white">Sports</h3>
             </div>
 
             {/* Lab */}
-            <div className="bg-gradient-to-br from-[#0b6d41] to-[#032816] rounded-2xl p-6 md:p-12 flex items-center justify-center aspect-square hover:shadow-2xl transition-shadow duration-300 cursor-pointer">
-              <h3 className="text-xl md:text-4xl font-bold text-white">Learning Lab</h3>
+            <div className="bg-gradient-to-br from-[#0b6d41] to-[#032816] rounded-2xl p-6 lg:p-12 flex items-center justify-center aspect-square hover:shadow-2xl transition-shadow duration-300 cursor-pointer">
+              <h3 className="text-xl lg:text-4xl font-bold text-white">Learning Lab</h3>
             </div>
 
             {/* Cafeteria */}
-            <div className="bg-gradient-to-br from-[#0f8f56] to-[#0f8f56] rounded-2xl p-6 md:p-12 flex items-center justify-center aspect-square hover:shadow-2xl transition-shadow duration-300 cursor-pointer">
-              <h3 className="text-xl md:text-4xl font-bold text-white">Cafeteria</h3>
+            <div className="bg-gradient-to-br from-[#0f8f56] to-[#0f8f56] rounded-2xl p-6 lg:p-12 flex items-center justify-center aspect-square hover:shadow-2xl transition-shadow duration-300 cursor-pointer">
+              <h3 className="text-xl lg:text-4xl font-bold text-white">Cafeteria</h3>
             </div>
           </div>
         </div>
