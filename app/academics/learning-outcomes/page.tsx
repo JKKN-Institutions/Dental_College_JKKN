@@ -1763,8 +1763,8 @@ export default function LearningOutcomes() {
                     { label: "Theory IA", value: "10 Marks" },
                     { label: "Practical IA", value: "10 Marks" },
                   ].map((stat, i) => (
-                    <div key={i} className="bg-[#0b6d41] rounded-xl px-4 py-5 text-center">
-                      <p className="text-2xl font-bold text-white">{stat.value}</p>
+                    <div key={i} className="bg-[#0b6d41] rounded-xl px-2 sm:px-4 py-5 text-center">
+                      <p className="text-xl sm:text-2xl font-bold text-white">{stat.value}</p>
                       <p className="text-white/80 text-xs mt-1 font-medium uppercase tracking-wide">{stat.label}</p>
                     </div>
                   ))}
