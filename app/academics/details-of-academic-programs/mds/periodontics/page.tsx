@@ -195,7 +195,7 @@ export default function MDSPeriodontics() {
                   priority
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex flex-col justify-end p-4 sm:p-6">
-                  <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white text-center mb-4">Periodontics Learning Lab</h2>
+                  <h2 className="text-2xl sm:text-3xl md:text-2xl lg:text-4xl font-bold text-white text-center mb-4">Periodontics Learning Lab</h2>
 
                   {/* Stats Badges */}
                   <div className="flex flex-wrap justify-center gap-2">
