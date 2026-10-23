@@ -136,7 +136,7 @@ export default function MDSOralMedicine() {
               </div>
 
               {/* Heading */}
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight md:leading-tight lg:leading-tight">
                 MDS Oral Medicine & <br />
                 <span className="text-[#ffde59]">Radiology</span>
               </h1>

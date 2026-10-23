@@ -144,7 +144,7 @@ export default function MDSConservativeDentistry() {
               </div>
 
               {/* Heading */}
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight md:leading-tight lg:leading-tight">
                 MDS Conservative Dentistry & <span className="text-[#ffde59]">Endodontics</span>
               </h1>
 

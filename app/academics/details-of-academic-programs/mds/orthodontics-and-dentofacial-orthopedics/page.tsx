@@ -136,7 +136,7 @@ export default function MDSOrthodontics() {
               </div>
 
               {/* Heading */}
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight md:leading-tight lg:leading-tight">
                 MDS Orthodontics & <span className="text-[#ffde59]">Dentofacial Orthopaedics</span>
               </h1>
 

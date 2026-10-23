@@ -495,7 +495,7 @@ export default function MDSAdmissionPage() {
             </span>
           </div>
 
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight md:leading-tight lg:leading-tight">
             MDS Admission — <span className="text-[#ffde59]">JKKN Dental College, Tamil Nadu</span>
           </h1>
 

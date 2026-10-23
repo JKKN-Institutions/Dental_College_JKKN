@@ -168,7 +168,7 @@ export default function MDSProgram() {
               {/* Heading — user's choice 2026-10-21: JKKN first, the fees keyword kept. The old H1
                   ("MDS Fees in Private Colleges ... and the three-year total") read as a general
                   article and promised a total the page never showed; the total is now right below. */}
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight md:leading-tight lg:leading-tight">
                 MDS at JKKN Dental College,{' '}
                 <span className="text-[#ffde59]">Tamil Nadu 2026-27</span>
                 <span className="sr-only"> — </span>
