@@ -191,7 +191,7 @@ export default function AcademicPrograms() {
                   <Leaf className="w-5 h-5 sm:w-6 sm:h-6 text-[#0b6d41]" />
                 </div>
                 <div>
-                  <h4 className="text-base sm:text-lg font-bold text-[#0b6d41] mb-1">Periodontics</h4>
+                  <h4 className="text-base sm:text-lg md:text-base lg:text-lg font-bold text-[#0b6d41] mb-1">Periodontics</h4>
                   <p className="text-xs sm:text-sm text-gray-600">Gum disease treatment</p>
                 </div>
               </div>
@@ -204,7 +204,7 @@ export default function AcademicPrograms() {
                   <Circle className="w-5 h-5 sm:w-6 sm:h-6 text-[#0b6d41]" />
                 </div>
                 <div>
-                  <h4 className="text-base sm:text-lg font-bold text-[#0b6d41] mb-1">Orthodontics</h4>
+                  <h4 className="text-base sm:text-lg md:text-base lg:text-lg font-bold text-[#0b6d41] mb-1">Orthodontics</h4>
                   <p className="text-xs sm:text-sm text-gray-600">Teeth alignment & braces</p>
                 </div>
               </div>
@@ -217,7 +217,7 @@ export default function AcademicPrograms() {
                   <Wrench className="w-5 h-5 sm:w-6 sm:h-6 text-[#0b6d41]" />
                 </div>
                 <div>
-                  <h4 className="text-base sm:text-lg font-bold text-[#0b6d41] mb-1">Prosthodontics</h4>
+                  <h4 className="text-base sm:text-lg md:text-base lg:text-lg font-bold text-[#0b6d41] mb-1">Prosthodontics</h4>
                   <p className="text-xs sm:text-sm text-gray-600">Implants & dentures</p>
                 </div>
               </div>
@@ -230,7 +230,7 @@ export default function AcademicPrograms() {
                   <Pill className="w-5 h-5 sm:w-6 sm:h-6 text-[#0b6d41]" />
                 </div>
                 <div>
-                  <h4 className="text-base sm:text-lg font-bold text-[#0b6d41] mb-1">Endodontics</h4>
+                  <h4 className="text-base sm:text-lg md:text-base lg:text-lg font-bold text-[#0b6d41] mb-1">Endodontics</h4>
                   <p className="text-xs sm:text-sm text-gray-600">Root canal therapy</p>
                 </div>
               </div>
@@ -243,7 +243,7 @@ export default function AcademicPrograms() {
                   <Microscope className="w-5 h-5 sm:w-6 sm:h-6 text-[#0b6d41]" />
                 </div>
                 <div>
-                  <h4 className="text-base sm:text-lg font-bold text-[#0b6d41] mb-1">Oral Medicine</h4>
+                  <h4 className="text-base sm:text-lg md:text-base lg:text-lg font-bold text-[#0b6d41] mb-1">Oral Medicine</h4>
                   <p className="text-xs sm:text-sm text-gray-600">Diagnosis & imaging</p>
                 </div>
               </div>
