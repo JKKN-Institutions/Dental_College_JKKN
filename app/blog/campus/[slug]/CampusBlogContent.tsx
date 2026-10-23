@@ -172,7 +172,7 @@ export default function CampusBlogContent({
         {/* Blog content from rich text editor */}
         {processedContent && (
           <div
-            className="blog-content mb-12"
+            className="blog-content mb-12 [&_table]:block [&_table]:overflow-x-auto"
             dangerouslySetInnerHTML={{ __html: processedContent }}
           />
         )}
