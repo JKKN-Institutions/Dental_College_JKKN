@@ -92,7 +92,7 @@ export default function AboutInstitution() {
               {/* JKKN Group Legacy Badge */}
               <div className="absolute bottom-3 right-3 bg-[#ffde59] text-[#032816] rounded-xl p-3 shadow-2xl">
                 <div className="text-2xl font-bold text-center">74+</div>
-                <div className="text-[9px] font-bold uppercase tracking-wide text-center">JKKN Group Legacy</div>
+                <div className="text-[11px] font-bold uppercase tracking-wide text-center">JKKN Group Legacy</div>
               </div>
             </div>
 
