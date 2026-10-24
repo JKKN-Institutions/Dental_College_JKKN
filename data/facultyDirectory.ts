@@ -21,6 +21,8 @@ export interface FacultyDepartment {
   /** Short badge shown on the hub card. */
   code: string;
   name: string;
+  /** Optional wording for the site menus; pages keep using `name`. */
+  menuLabel?: string;
   group: FacultyGroupId;
   members: FacultyMember[];
 }
@@ -43,6 +45,7 @@ export const facultyDepartments: FacultyDepartment[] = [
     slug: "prosthodontics",
     code: "PROS",
     name: "Prosthodontics Including Dental Materials",
+    menuLabel: "MDS - Prosthodontics Including Dental Materials",
     group: "mds",
     members: [
       { name: "Dr. Dhanasekar B", photo: "/images/faculty/dr-dhanasekar-b.webp", designation: "Principal, Professor & HoD", qualification: ["M.D.S."] },

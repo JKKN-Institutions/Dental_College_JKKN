@@ -258,7 +258,7 @@ export function GetDentalCollegePages(pathname: string): MenuGroup[] {
             { href: '/faculty', label: 'All Departments', icon: Users, active: pathname === '/faculty' || pathname === '/faculty/' },
             ...facultyDepartments.map((d) => ({
               href: `/faculty/${d.slug}`,
-              label: d.name,
+              label: d.menuLabel ?? d.name,
               icon: UsersRound,
               active: pathname.startsWith(`/faculty/${d.slug}`),
               section: d.group.toUpperCase()

@@ -158,14 +158,14 @@ export const topMenuItems: NavItem[] = [
         href: "/faculty#mds",
         submenu: facultyDepartments
           .filter((d) => d.group === "mds")
-          .map((d) => ({ label: d.name.toUpperCase(), href: `/faculty/${d.slug}` }))
+          .map((d) => ({ label: (d.menuLabel ?? d.name).toUpperCase(), href: `/faculty/${d.slug}` }))
       },
       {
         label: "BDS",
         href: "/faculty#bds",
         submenu: facultyDepartments
           .filter((d) => d.group === "bds")
-          .map((d) => ({ label: d.name.toUpperCase(), href: `/faculty/${d.slug}` }))
+          .map((d) => ({ label: (d.menuLabel ?? d.name).toUpperCase(), href: `/faculty/${d.slug}` }))
       }
     ]
   },
