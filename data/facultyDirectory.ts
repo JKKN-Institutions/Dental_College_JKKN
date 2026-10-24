@@ -42,7 +42,7 @@ export const facultyDepartments: FacultyDepartment[] = [
   {
     slug: "prosthodontics",
     code: "PROS",
-    name: "Prosthodontics Including Dental Materials",
+    name: "Prosthodontics",
     group: "mds",
     members: [
       { name: "Dr. Dhanasekar B", photo: "/images/faculty/dr-dhanasekar-b.webp", designation: "Principal, Professor & HoD", qualification: ["M.D.S."] },
