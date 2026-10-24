@@ -9,6 +9,8 @@ export type FacultyGroupId = 'mds' | 'bds';
 
 export interface FacultyMember {
   name: string;
+  /** Optional portrait, 224x280 WebP in public/images/faculty/. Falls back to initials. */
+  photo?: string;
   designation: string;
   /** One entry per degree, e.g. "M.D.S." (year of passing is not published). */
   qualification: string[];
@@ -43,16 +45,16 @@ export const facultyDepartments: FacultyDepartment[] = [
     name: "Prosthodontics Including Dental Materials",
     group: "mds",
     members: [
-      { name: "Dr. Dhanasekar B", designation: "Principal, Professor & HoD", qualification: ["M.D.S."] },
-      { name: "Dr. C. Dhinesh Kumar", designation: "Professor", qualification: ["M.D.S."] },
-      { name: "Dr. D. Saisadan", designation: "Professor", qualification: ["M.D.S."] },
-      { name: "Dr. N.Jagadesaan", designation: "Reader", qualification: ["M.D.S."] },
-      { name: "Dr. K.Praveena", designation: "Reader", qualification: ["M.D.S."] },
-      { name: "Dr. S.Preethi Suganya", designation: "Sr. Lecturer", qualification: ["M.D.S."] },
-      { name: "Dr. T.Umamageswari", designation: "Sr. Lecturer", qualification: ["M.D.S."] },
-      { name: "Dr. S.Sundhar", designation: "Sr. Lecturer", qualification: ["M.D.S."] },
-      { name: "Dr. Kishore Kumar", designation: "Sr. Lecturer", qualification: ["M.D.S."] },
-      { name: "Dr. Gowthama Raaj", designation: "Sr. Lecturer", qualification: ["M.D.S."] },
+      { name: "Dr. Dhanasekar B", photo: "/images/faculty/dr-dhanasekar-b.webp", designation: "Principal, Professor & HoD", qualification: ["M.D.S."] },
+      { name: "Dr. C. Dhinesh Kumar", photo: "/images/faculty/dr-c-dhinesh-kumar.webp", designation: "Professor", qualification: ["M.D.S."] },
+      { name: "Dr. D. Saisadan", photo: "/images/faculty/dr-d-saisadan.webp", designation: "Professor", qualification: ["M.D.S."] },
+      { name: "Dr. N.Jagadesaan", photo: "/images/faculty/dr-n-jagadesaan.webp", designation: "Reader", qualification: ["M.D.S."] },
+      { name: "Dr. K.Praveena", photo: "/images/faculty/dr-k-praveena.webp", designation: "Reader", qualification: ["M.D.S."] },
+      { name: "Dr. S.Preethi Suganya", designation: "Senior Lecturer", qualification: ["M.D.S."] },
+      { name: "Dr. T.Umamageswari", designation: "Senior Lecturer", qualification: ["M.D.S."] },
+      { name: "Dr. S.Sundhar", designation: "Senior Lecturer", qualification: ["M.D.S."] },
+      { name: "Dr. Kishore Kumar", designation: "Senior Lecturer", qualification: ["M.D.S."] },
+      { name: "Dr. Gowthama Raaj", designation: "Senior Lecturer", qualification: ["M.D.S."] },
     ],
   },
   {
@@ -61,21 +63,21 @@ export const facultyDepartments: FacultyDepartment[] = [
     name: "Conservative Dentistry and Endodontics",
     group: "mds",
     members: [
-      { name: "Dr. J.V. Karunakaran", designation: "Professor & HoD", qualification: ["M.D.S."] },
-      { name: "Dr. N. Jayaprakash", designation: "Professor", qualification: ["M.D.S."] },
+      { name: "Dr. J.V. Karunakaran", photo: "/images/faculty/dr-j-v-karunakaran.webp", designation: "Professor & HoD", qualification: ["M.D.S."] },
+      { name: "Dr. N. Jayaprakash", photo: "/images/faculty/dr-n-jayaprakash.webp", designation: "Professor", qualification: ["M.D.S."] },
       { name: "Dr. N. Ragavendran", designation: "Reader", qualification: ["M.D.S."] },
-      { name: "Dr. Chris Susan Abraham", designation: "Reader", qualification: ["M.D.S."] },
-      { name: "Dr. S.Mary Vinola Jenifer", designation: "Reader", qualification: ["M.D.S."] },
+      { name: "Dr. Chris Susan Abraham", photo: "/images/faculty/dr-chris-susan-abraham.webp", designation: "Reader", qualification: ["M.D.S."] },
+      { name: "Dr. S.Mary Vinola Jenifer", photo: "/images/faculty/dr-s-mary-vinola-jenifer.webp", designation: "Reader", qualification: ["M.D.S."] },
       { name: "Dr. R.P.Chandrika", designation: "Reader", qualification: ["M.D.S."] },
-      { name: "Dr. M.M.Prem Kumar", designation: "Sr. Lecturer", qualification: ["M.D.S."] },
-      { name: "Dr. T.Ganeshamoorthy", designation: "Sr. Lecturer", qualification: ["M.D.S."] },
-      { name: "Dr. N.Karthikeyan", designation: "Sr. Lecturer", qualification: ["M.D.S."] },
-      { name: "Dr. J.M.Harshavardhan", designation: "Sr. Lecturer", qualification: ["M.D.S."] },
-      { name: "Dr. Nandhini.P", designation: "Sr. Lecturer", qualification: ["M.D.S."] },
-      { name: "Dr. Vijayakumar. J", designation: "Sr. Lecturer", qualification: ["M.D.S."] },
-      { name: "Dr. Jothi Lakshmi R S", designation: "Sr. Lecturer", qualification: ["M.D.S."] },
-      { name: "Dr. Shruthi V", designation: "Sr. Lecturer", qualification: ["M.D.S."] },
-      { name: "Dr. Ravikisshore K N", designation: "Sr. Lecturer", qualification: ["M.D.S."] },
+      { name: "Dr. M.M.Prem Kumar", designation: "Senior Lecturer", qualification: ["M.D.S."] },
+      { name: "Dr. T.Ganeshamoorthy", designation: "Senior Lecturer", qualification: ["M.D.S."] },
+      { name: "Dr. N.Karthikeyan", designation: "Senior Lecturer", qualification: ["M.D.S."] },
+      { name: "Dr. J.M.Harshavardhan", photo: "/images/faculty/dr-j-m-harshavardhan.webp", designation: "Senior Lecturer", qualification: ["M.D.S."] },
+      { name: "Dr. Nandhini.P", photo: "/images/faculty/dr-nandhini-p.webp", designation: "Senior Lecturer", qualification: ["M.D.S."] },
+      { name: "Dr. Vijayakumar. J", designation: "Senior Lecturer", qualification: ["M.D.S."] },
+      { name: "Dr. Jothi Lakshmi R S", photo: "/images/faculty/dr-jothi-lakshmi-r-s.webp", designation: "Senior Lecturer", qualification: ["M.D.S."] },
+      { name: "Dr. Shruthi V", photo: "/images/faculty/dr-shruthi-v.webp", designation: "Senior Lecturer", qualification: ["M.D.S."] },
+      { name: "Dr. Ravikisshore K N", photo: "/images/faculty/dr-ravikisshore-k-n.webp", designation: "Senior Lecturer", qualification: ["M.D.S."] },
     ],
   },
   {
@@ -86,7 +88,7 @@ export const facultyDepartments: FacultyDepartment[] = [
     members: [
       { name: "Dr. T.Maheswaran", designation: "Professor & HoD", qualification: ["M.D.S."] },
       { name: "Dr. S. Maheshwari", designation: "Reader", qualification: ["M.D.S."] },
-      { name: "Dr. J.Swathiraman", designation: "Sr. Lecturer", qualification: ["M.D.S."] },
+      { name: "Dr. J.Swathiraman", designation: "Senior Lecturer", qualification: ["M.D.S."] },
     ],
   },
   {
@@ -95,10 +97,10 @@ export const facultyDepartments: FacultyDepartment[] = [
     name: "Oral Surgery",
     group: "mds",
     members: [
-      { name: "Dr. S.Vinod Thangaswamy", designation: "Professor & HoD", qualification: ["M.D.S."] },
-      { name: "Dr. J.Vijay Thiyagarajan", designation: "Reader", qualification: ["M.D.S."] },
+      { name: "Dr. S.Vinod Thangaswamy", photo: "/images/faculty/dr-s-vinod-thangaswamy.webp", designation: "Professor & HoD", qualification: ["M.D.S."] },
+      { name: "Dr. J.Vijay Thiyagarajan", photo: "/images/faculty/dr-j-vijay-thiyagarajan.webp", designation: "Reader", qualification: ["M.D.S."] },
       { name: "Dr. Hariprasath S", designation: "Reader", qualification: ["M.D.S."] },
-      { name: "Dr. M. Venkatesh Praveen", designation: "Sr. Lecturer", qualification: ["M.D.S."] },
+      { name: "Dr. M. Venkatesh Praveen", photo: "/images/faculty/dr-m-venkatesh-praveen.webp", designation: "Senior Lecturer", qualification: ["M.D.S."] },
     ],
   },
   {
@@ -108,12 +110,12 @@ export const facultyDepartments: FacultyDepartment[] = [
     group: "mds",
     members: [
       { name: "Dr. P.L.Ravishankar", designation: "Professor & HoD", qualification: ["M.D.S."] },
-      { name: "Dr. S. Santhosh", designation: "Reader", qualification: ["M.D.S."] },
-      { name: "Dr. R.Dhivya", designation: "Reader", qualification: ["M.D.S."] },
+      { name: "Dr. S. Santhosh", photo: "/images/faculty/dr-s-santhosh.webp", designation: "Reader", qualification: ["M.D.S."] },
+      { name: "Dr. R.Dhivya", photo: "/images/faculty/dr-r-dhivya.webp", designation: "Reader", qualification: ["M.D.S."] },
       { name: "Dr. D.Syed", designation: "Reader", qualification: ["M.D.S."] },
-      { name: "Dr. M. Nivethitha", designation: "Sr. Lecturer", qualification: ["M.D.S."] },
-      { name: "Dr. J.Jasmine Angel", designation: "Sr. Lecturer", qualification: ["M.D.S."] },
-      { name: "Dr. A.S.Surya", designation: "Sr. Lecturer", qualification: ["M.D.S."] },
+      { name: "Dr. M. Nivethitha", photo: "/images/faculty/dr-m-nivethitha.webp", designation: "Senior Lecturer", qualification: ["M.D.S."] },
+      { name: "Dr. J.Jasmine Angel", designation: "Senior Lecturer", qualification: ["M.D.S."] },
+      { name: "Dr. A.S.Surya", designation: "Senior Lecturer", qualification: ["M.D.S."] },
     ],
   },
   {
@@ -122,12 +124,12 @@ export const facultyDepartments: FacultyDepartment[] = [
     name: "Paedodontics",
     group: "mds",
     members: [
-      { name: "Dr. Yogesh Kumar T D", designation: "Professor & HoD", qualification: ["M.D.S."] },
-      { name: "Dr. K.Saravanakumar", designation: "Reader", qualification: ["M.D.S."] },
+      { name: "Dr. Yogesh Kumar T D", photo: "/images/faculty/dr-yogesh-kumar-t-d.webp", designation: "Professor & HoD", qualification: ["M.D.S."] },
+      { name: "Dr. K.Saravanakumar", photo: "/images/faculty/dr-k-saravanakumar.webp", designation: "Reader", qualification: ["M.D.S."] },
       { name: "Dr. R.Rajkumar", designation: "Reader", qualification: ["M.D.S."] },
-      { name: "Dr. T.Gayathrikumary", designation: "Sr. Lecturer", qualification: ["M.D.S."] },
-      { name: "Dr. B.Kesavaraj", designation: "Sr. Lecturer", qualification: ["M.D.S."] },
-      { name: "Dr. Reshaf Ismael", designation: "Sr. Lecturer", qualification: ["M.D.S."] },
+      { name: "Dr. T.Gayathrikumary", designation: "Senior Lecturer", qualification: ["M.D.S."] },
+      { name: "Dr. B.Kesavaraj", designation: "Senior Lecturer", qualification: ["M.D.S."] },
+      { name: "Dr. Reshaf Ismael", designation: "Senior Lecturer", qualification: ["M.D.S."] },
     ],
   },
   {
@@ -136,16 +138,16 @@ export const facultyDepartments: FacultyDepartment[] = [
     name: "Orthodontics",
     group: "mds",
     members: [
-      { name: "Dr. R.Ramya", designation: "Professor & HoD", qualification: ["M.D.S."] },
+      { name: "Dr. R.Ramya", photo: "/images/faculty/dr-r-ramya.webp", designation: "Professor & HoD", qualification: ["M.D.S."] },
       { name: "Dr. V.Vignesh Kumar", designation: "Professor", qualification: ["M.D.S."] },
-      { name: "Dr. V. Kumaran", designation: "Reader", qualification: ["M.D.S."] },
+      { name: "Dr. V. Kumaran", photo: "/images/faculty/dr-v-kumaran.webp", designation: "Reader", qualification: ["M.D.S."] },
       { name: "Dr. S.M.Vignesh Prasad", designation: "Reader", qualification: ["M.D.S."] },
       { name: "Dr. K.Aishwarya", designation: "Reader", qualification: ["M.D.S."] },
-      { name: "Dr. K.Thankamani Ammal", designation: "Sr. Lecturer", qualification: ["M.D.S."] },
-      { name: "Dr. N.Kalaranjeni", designation: "Sr. Lecturer", qualification: ["M.D.S."] },
-      { name: "Dr. E.R. Deepak", designation: "Sr. Lecturer", qualification: ["M.D.S."] },
-      { name: "Dr. K.S.Sumithra Devi", designation: "Sr. Lecturer", qualification: ["M.D.S."] },
-      { name: "Dr. M.Hariprasaath", designation: "Sr. Lecturer", qualification: ["M.D.S."] },
+      { name: "Dr. K.Thankamani Ammal", photo: "/images/faculty/dr-k-thankamani-ammal.webp", designation: "Senior Lecturer", qualification: ["M.D.S."] },
+      { name: "Dr. N.Kalaranjeni", photo: "/images/faculty/dr-n-kalaranjeni.webp", designation: "Senior Lecturer", qualification: ["M.D.S."] },
+      { name: "Dr. E.R. Deepak", photo: "/images/faculty/dr-e-r-deepak.webp", designation: "Senior Lecturer", qualification: ["M.D.S."] },
+      { name: "Dr. K.S.Sumithra Devi", photo: "/images/faculty/dr-k-s-sumithra-devi.webp", designation: "Senior Lecturer", qualification: ["M.D.S."] },
+      { name: "Dr. M.Hariprasaath", designation: "Senior Lecturer", qualification: ["M.D.S."] },
     ],
   },
   {
@@ -154,12 +156,12 @@ export const facultyDepartments: FacultyDepartment[] = [
     name: "Oral Medicine and Radiology",
     group: "mds",
     members: [
-      { name: "Dr. P.K.Meenapriya", designation: "Professor & HoD", qualification: ["M.D.S."] },
+      { name: "Dr. P.K.Meenapriya", photo: "/images/faculty/dr-p-k-meenapriya.webp", designation: "Professor & HoD", qualification: ["M.D.S."] },
       { name: "Dr. G. Pranavadhyani", designation: "Professor", qualification: ["M.D.S."] },
-      { name: "Dr. S.Gokulapriya", designation: "Sr. Lecturer", qualification: ["M.D.S."] },
-      { name: "Dr. A.V.S.Ezhilarasi", designation: "Sr. Lecturer", qualification: ["M.D.S."] },
-      { name: "Dr. K.N.Keerthana", designation: "Sr. Lecturer", qualification: ["M.D.S."] },
-      { name: "Dr. K.Sharmista Sree", designation: "Sr. Lecturer", qualification: ["M.D.S."] },
+      { name: "Dr. S.Gokulapriya", photo: "/images/faculty/dr-s-gokulapriya.webp", designation: "Senior Lecturer", qualification: ["M.D.S."] },
+      { name: "Dr. A.V.S.Ezhilarasi", photo: "/images/faculty/dr-a-v-s-ezhilarasi.webp", designation: "Senior Lecturer", qualification: ["M.D.S."] },
+      { name: "Dr. K.N.Keerthana", designation: "Senior Lecturer", qualification: ["M.D.S."] },
+      { name: "Dr. K.Sharmista Sree", designation: "Senior Lecturer", qualification: ["M.D.S."] },
     ],
   },
   {
@@ -168,8 +170,8 @@ export const facultyDepartments: FacultyDepartment[] = [
     name: "Public Health Dentistry",
     group: "mds",
     members: [
-      { name: "Dr. C.Selvakumar", designation: "Reader & HoD", qualification: ["M.D.S."] },
-      { name: "Dr. Yoka. T", designation: "Sr. Lecturer", qualification: ["M.D.S."] },
+      { name: "Dr. C.Selvakumar", photo: "/images/faculty/dr-c-selvakumar.webp", designation: "Reader & HoD", qualification: ["M.D.S."] },
+      { name: "Dr. Yoka. T", photo: "/images/faculty/dr-yoka-t.webp", designation: "Senior Lecturer", qualification: ["M.D.S."] },
     ],
   },
   {

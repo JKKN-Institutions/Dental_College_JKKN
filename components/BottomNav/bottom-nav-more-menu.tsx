@@ -1,5 +1,6 @@
 'use client';
 
+import { Fragment } from 'react';
 import { usePathname } from 'next/navigation';
 import { motion } from 'framer-motion';
 import { cn } from '@/lib/utils';
@@ -104,8 +105,13 @@ export function BottomNavMoreMenu({
                         const Icon = item.icon;
 
                         return (
+                          <Fragment key={item.href}>
+                            {item.section && item.section !== group.menus[index - 1]?.section && (
+                      <p className="col-span-3 mt-1 px-1 text-[11px] font-semibold uppercase tracking-wide text-[#006837]">
+                        {item.section}
+                      </p>
+                    )}
                           <motion.button
-                            key={item.href}
                             initial={{ opacity: 0, scale: 0.95 }}
                             animate={{
                               opacity: 1,
@@ -136,6 +142,7 @@ export function BottomNavMoreMenu({
                               {item.label}
                             </span>
                           </motion.button>
+                          </Fragment>
                         );
                       })}
                     </div>

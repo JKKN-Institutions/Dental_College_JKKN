@@ -34,6 +34,7 @@ const GROUP_ICONS: Record<string, LucideIcon> = {
   'About': Building,
   'Administration': Users,
   'Academics': GraduationCap,
+  'Faculty': UsersRound,
   'Accreditation': Award,
   'Admission': FileText,
   'Research': BookOpen,
@@ -55,7 +56,7 @@ function flattenMenuItems(
     label: string;
     icon: LucideIcon;
     active: boolean;
-    submenus: Array<{ href: string; label: string; icon: LucideIcon; active: boolean }>;
+    submenus: Array<{ href: string; label: string; icon: LucideIcon; active: boolean; section?: string }>;
   }>
 ): FlatMenuItem[] {
   const seenHrefs = new Set<string>();
@@ -81,7 +82,8 @@ function flattenMenuItems(
             href: sub.href,
             label: sub.label,
             icon: sub.icon,
-            active: sub.active
+            active: sub.active,
+            section: sub.section
           });
         }
       });

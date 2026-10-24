@@ -1,5 +1,6 @@
 'use client';
 
+import { Fragment } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { cn } from '@/lib/utils';
 import { BottomNavSubmenuProps } from './types';
@@ -63,8 +64,13 @@ export function BottomNavSubmenu({
                 const Icon = item.icon;
 
                 return (
+                  <Fragment key={item.href}>
+                    {item.section && item.section !== items[index - 1]?.section && (
+                      <p className="col-span-3 mt-1 px-1 text-[11px] font-semibold uppercase tracking-wide text-[#006837]">
+                        {item.section}
+                      </p>
+                    )}
                   <motion.button
-                    key={item.href}
                     initial={{ opacity: 0, scale: 0.9, y: 8 }}
                     animate={{
                       opacity: 1,
@@ -114,6 +120,7 @@ export function BottomNavSubmenu({
                       </span>
                     )}
                   </motion.button>
+                  </Fragment>
                 );
               })}
             </div>

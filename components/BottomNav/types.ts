@@ -5,6 +5,8 @@ export interface FlatMenuItem {
   label: string;
   icon: LucideIcon;
   parentLabel?: string;
+  /** Optional heading; consecutive items sharing one are listed under it. */
+  section?: string;
   active?: boolean;
 }
 
