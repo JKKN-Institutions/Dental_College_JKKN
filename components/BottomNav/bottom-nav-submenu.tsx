@@ -87,7 +87,9 @@ export function BottomNavSubmenu({
                     whileHover={{ scale: 1.02, backgroundColor: 'var(--accent)' }}
                     onClick={() => onItemClick(item.href)}
                     className={cn(
-                      'flex flex-col items-center justify-center p-3 rounded-xl',
+                      item.section
+                        ? 'col-span-3 flex flex-row items-center justify-start gap-3 p-3 text-left rounded-xl'
+                        : 'flex flex-col items-center justify-center p-3 rounded-xl',
                       'transition-colors duration-100',
                       isActive
                         ? 'bg-primary/15 text-primary'
@@ -102,13 +104,15 @@ export function BottomNavSubmenu({
                       transition={{ duration: 0.2 }}
                     >
                       <Icon
-                        className="h-5 w-5 mb-1"
+                        className={cn('h-5 w-5 shrink-0', !item.section && 'mb-1')}
                         strokeWidth={isActive ? 2.5 : 2}
                       />
                     </motion.div>
                     <span
                       className={cn(
-                        'text-[10px] text-center leading-tight line-clamp-2',
+                        item.section
+                          ? 'text-xs leading-snug'
+                          : 'text-[10px] text-center leading-tight line-clamp-2',
                         isActive && 'font-semibold'
                       )}
                     >

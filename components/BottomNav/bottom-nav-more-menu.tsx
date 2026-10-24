@@ -121,7 +121,9 @@ export function BottomNavMoreMenu({
                             whileTap={{ scale: 0.95 }}
                             onClick={() => handleItemClick(item.href)}
                             className={cn(
-                              'flex flex-col items-center justify-center p-3 rounded-lg',
+                              item.section
+                        ? 'col-span-3 flex flex-row items-center justify-start gap-3 p-3 text-left rounded-lg'
+                        : 'flex flex-col items-center justify-center p-3 rounded-lg',
                               'transition-colors duration-200',
                               'active:bg-accent',
                               isActive
@@ -130,12 +132,14 @@ export function BottomNavMoreMenu({
                             )}
                           >
                             <Icon
-                              className="h-5 w-5 mb-1"
+                              className={cn('h-5 w-5 shrink-0', !item.section && 'mb-1')}
                               strokeWidth={isActive ? 2.5 : 2}
                             />
                             <span
                               className={cn(
-                                'text-[10px] text-center leading-tight line-clamp-2',
+                                item.section
+                          ? 'text-xs leading-snug'
+                          : 'text-[10px] text-center leading-tight line-clamp-2',
                                 isActive && 'font-semibold'
                               )}
                             >
