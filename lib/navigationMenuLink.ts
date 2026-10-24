@@ -121,7 +121,7 @@ import {
   FileHeart,
   Megaphone
 } from 'lucide-react';
-import { facultyDepartments, facultyGroups } from '@/data/facultyDirectory';
+import { facultyDepartments } from '@/data/facultyDirectory';
 
 export interface SubmenuItem {
   href: string;
@@ -261,7 +261,7 @@ export function GetDentalCollegePages(pathname: string): MenuGroup[] {
               label: d.name,
               icon: UsersRound,
               active: pathname.startsWith(`/faculty/${d.slug}`),
-              section: facultyGroups.find((g) => g.id === d.group)?.label
+              section: d.group.toUpperCase()
             }))
           ]
         }

@@ -154,14 +154,14 @@ export const topMenuItems: NavItem[] = [
     submenu: [
       { label: "ALL DEPARTMENTS", href: "/faculty" },
       {
-        label: "MDS DEPARTMENTS",
+        label: "MDS",
         href: "/faculty#mds",
         submenu: facultyDepartments
           .filter((d) => d.group === "mds")
           .map((d) => ({ label: d.name.toUpperCase(), href: `/faculty/${d.slug}` }))
       },
       {
-        label: "BDS DEPARTMENTS",
+        label: "BDS",
         href: "/faculty#bds",
         submenu: facultyDepartments
           .filter((d) => d.group === "bds")
