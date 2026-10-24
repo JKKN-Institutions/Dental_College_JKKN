@@ -63,16 +63,17 @@ export async function generateMetadata({
     data = all?.find((f) => toSlug(f.name) === normalized) ?? null;
   }
 
-  if (!data) return { title: 'Faculty | JKKN Dental College & Hospital' };
+  if (!data) return { title: 'Faculty | JKKN Dental College & Hospital', robots: { index: false, follow: false } };
 
   const title = `${data.name} — ${data.designation} | JKKN Dental College & Hospital`;
   const description = `Learn about ${data.name}, ${data.designation}${data.department ? ` in the ${data.department}` : ''} at JKKN Dental College & Hospital, Komarapalayam.`;
 
   return {
+    robots: { index: false, follow: false },
     title,
     description,
-    alternates: { canonical: `/faculty/${slug}/` },
-    openGraph: { title, description, url: `https://dental.jkkn.ac.in/faculty/${slug}/`, siteName: 'JKKN Dental College & Hospital', type: 'website', locale: 'en_IN' },
+    alternates: { canonical: `/senior-learners/${slug}/` },
+    openGraph: { title, description, url: `https://dental.jkkn.ac.in/senior-learners/${slug}/`, siteName: 'JKKN Dental College & Hospital', type: 'website', locale: 'en_IN' },
     twitter: { card: 'summary_large_image', title, description },
   };
 }
@@ -192,7 +193,7 @@ export default async function FacultyProfilePage({
   // Measured 2026-09-18: all 46 live faculty profiles shipped ZERO JSON-LD. A profile is the one
   // page type where a Person node is unambiguous. Only fields the page renders are used - the
   // email column is fetched for the page but not shown, so it is deliberately left out.
-  const profileUrl = `https://dental.jkkn.ac.in/faculty/${slug}/`;
+  const profileUrl = `https://dental.jkkn.ac.in/senior-learners/${slug}/`;
   const scholarLinks = [m.google_scholar_url, m.researchgate_url, m.orcid_url].filter(
     (u: unknown): u is string => typeof u === 'string' && u.startsWith('http')
   );
@@ -228,7 +229,7 @@ export default async function FacultyProfilePage({
     "@type": "BreadcrumbList",
     "itemListElement": [
       { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://dental.jkkn.ac.in/" },
-      { "@type": "ListItem", "position": 2, "name": "Faculty", "item": "https://dental.jkkn.ac.in/faculty/" },
+      { "@type": "ListItem", "position": 2, "name": "Faculty", "item": "https://dental.jkkn.ac.in/senior-learners/" },
       { "@type": "ListItem", "position": 3, "name": m.name, "item": profileUrl },
     ],
   };
@@ -246,7 +247,7 @@ export default async function FacultyProfilePage({
         <section className="bg-[#0b6d41] px-4 py-10">
           <div className="max-w-4xl mx-auto">
             <Link
-              href="/faculty/"
+              href="/senior-learners/"
               className="inline-flex items-center gap-1.5 text-[#d4f1e4] hover:text-white text-sm mb-6 transition"
             >
               <ArrowLeft className="w-4 h-4" />

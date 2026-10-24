@@ -237,7 +237,7 @@ export default function FacultyTable({
           const VALID_SLUG_RE = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
           const hasValidSlug = !!m.slug && VALID_SLUG_RE.test(m.slug);
           const publicHref = m.is_active
-            ? `/faculty/${hasValidSlug ? m.slug : m.name.toLowerCase().replace(/[^a-z0-9\s-]/g, '').trim().replace(/\s+/g, '-')}/`
+            ? `/senior-learners/${hasValidSlug ? m.slug : m.name.toLowerCase().replace(/[^a-z0-9\s-]/g, '').trim().replace(/\s+/g, '-')}/`
             : null;
 
           let hiddenReason: string | null = null;

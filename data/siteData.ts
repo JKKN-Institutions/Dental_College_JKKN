@@ -1,3 +1,5 @@
+import { facultyDepartments } from "./facultyDirectory";
+
 // TypeScript interfaces for navigation structure
 export interface SubmenuItem {
   label: string;
@@ -144,6 +146,27 @@ export const topMenuItems: NavItem[] = [
       { label: "CAPABILITY ENHANCEMENT PROGRAM", href: "/academics/capability-enhancement-program" },
       { label: "PLACEMENTS", href: "/placements" },
       { label: "LEARNING FRAMEWORK FEEDBACK", href: "https://form.jotform.com/240432334247045" }
+    ]
+  },
+  {
+    label: "FACULTY",
+    href: "/faculty",
+    submenu: [
+      { label: "ALL DEPARTMENTS", href: "/faculty" },
+      {
+        label: "MDS DEPARTMENTS",
+        href: "/faculty#mds",
+        submenu: facultyDepartments
+          .filter((d) => d.group === "mds")
+          .map((d) => ({ label: d.name.toUpperCase(), href: `/faculty/${d.slug}` }))
+      },
+      {
+        label: "BDS DEPARTMENTS",
+        href: "/faculty#bds",
+        submenu: facultyDepartments
+          .filter((d) => d.group === "bds")
+          .map((d) => ({ label: d.name.toUpperCase(), href: `/faculty/${d.slug}` }))
+      }
     ]
   },
   {
@@ -295,7 +318,6 @@ export const bottomMenuItems: NavItem[] = [
     label: "OTHERS",
     href: "/others",
     submenu: [
-      { label: "SENIOR LEARNERS", href: "/faculty" },
       { label: "CAREERS", href: "/careers/" },
       { label: "PATIENT SAFETY MANUAL", href: "/pdf/PATIENT-SAFETY-MANUAL.pdf" },
       { label: "OUTREACH", href: "https://outreach.dental.jkkn.ac.in/" }

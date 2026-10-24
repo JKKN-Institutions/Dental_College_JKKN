@@ -5,6 +5,7 @@ import { createClient } from '@/lib/supabase/server'
 import { siteConfig } from '@/lib/site-config'
 import lastModManifest from '@/lastmod-manifest.json'
 import { getDentalJobs } from '@/lib/careers/api'
+import { facultyDepartments } from '@/data/facultyDirectory'
 
 // Build a single map of file -> last-commit-date.
 //
@@ -174,7 +175,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         const VALID_SLUG_RE = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
         const toSlug = (n: string) => n.toLowerCase().replace(/[^a-z0-9\s-]/g, '').trim().replace(/\s+/g, '-');
         facultyUrls = faculty.map(f => ({
-          url: `${baseUrl}/faculty/${f.slug && VALID_SLUG_RE.test(f.slug) ? f.slug : toSlug(f.name)}/`,
+          url: `${baseUrl}/senior-learners/${f.slug && VALID_SLUG_RE.test(f.slug) ? f.slug : toSlug(f.name)}/`,
           lastModified: f.updated_at ? new Date(f.updated_at) : now,
           changeFrequency: 'monthly' as const,
           priority: 0.6,
@@ -213,7 +214,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${baseUrl}/fees-structure/`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/placements/`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/scholarships/`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${baseUrl}/faculty/`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${baseUrl}/faculty/`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
+    ...facultyDepartments.map((d) => ({
+      url: `${baseUrl}/faculty/${d.slug}/`,
+      lastModified: now,
+      changeFrequency: 'monthly' as const,
+      priority: 0.7,
+    })),
     { url: `${baseUrl}/faq/`, lastModified: now, changeFrequency: 'monthly', priority: 0.6 },
     { url: `${baseUrl}/testimonials/`, lastModified: now, changeFrequency: 'monthly', priority: 0.6 },
 
@@ -489,7 +496,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...staticPagesWithGitDates,
     ...blogUrls,
     ...campusBlogUrls,
-    ...facultyUrls,
+    // Senior Learners profiles hidden (noindex) while the new department-wise faculty pages are built.
     ...eventUrls,
     ...careerUrls,
   ]

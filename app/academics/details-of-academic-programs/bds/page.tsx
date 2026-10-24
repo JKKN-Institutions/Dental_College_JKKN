@@ -1083,7 +1083,7 @@ export default function BDSProgram() {
               href="/faculty/"
               className="inline-block bg-[#0b6d41] hover:bg-[#085032] text-white font-semibold px-8 py-3 rounded-full transition-colors text-sm"
             >
-              View all 46 faculty profiles
+              View faculty by department
             </a>
           </div>
         </div>

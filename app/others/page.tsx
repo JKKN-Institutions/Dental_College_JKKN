@@ -10,11 +10,6 @@ type HubLink = { label: string; href: string; description: string; external?: bo
 
 const otherLinks: HubLink[] = [
   {
-    label: 'Senior Learners',
-    href: '/faculty',
-    description: 'Faculty and senior learners of JKKN Dental College and Hospital.',
-  },
-  {
     label: 'Careers',
     href: 'https://jobs.cvviz.com/jkkn_institutions',
     description: 'Current openings across JKKN Institutions.',

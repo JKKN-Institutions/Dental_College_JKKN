@@ -121,6 +121,7 @@ import {
   FileHeart,
   Megaphone
 } from 'lucide-react';
+import { facultyDepartments } from '@/data/facultyDirectory';
 
 export interface SubmenuItem {
   href: string;
@@ -240,6 +241,26 @@ export function GetDentalCollegePages(pathname: string): MenuGroup[] {
             { href: '/academics/statutes-pertaining-to-academic-departments/mds-orthodontics-syllabus', label: 'Syllabus of Orthodontics', icon: FileSignature, active: pathname.includes('/mds-orthodontics-syllabus') },
             { href: '/academics/statutes-pertaining-to-academic-departments/mds-oral-medicine-and-radiology-syllabus', label: 'Syllabus of Oral Medicine', icon: FileSignature, active: pathname.includes('/mds-oral-medicine-and-radiology-syllabus') },
             { href: '/academics/statutes-pertaining-to-academic-departments/mds-conservative-dentistry-and-endodontics-syllabus', label: 'Syllabus of Conservative', icon: FileSignature, active: pathname.includes('/mds-conservative-dentistry-and-endodontics-syllabus') }
+          ]
+        }
+      ]
+    },
+    {
+      groupLabel: 'Faculty',
+      menus: [
+        {
+          href: '/faculty',
+          label: 'Faculty',
+          icon: Users,
+          active: pathname.startsWith('/faculty'),
+          submenus: [
+            { href: '/faculty', label: 'All Departments', icon: Users, active: pathname === '/faculty' || pathname === '/faculty/' },
+            ...facultyDepartments.map((d) => ({
+              href: `/faculty/${d.slug}`,
+              label: d.name,
+              icon: UsersRound,
+              active: pathname.startsWith(`/faculty/${d.slug}`)
+            }))
           ]
         }
       ]
@@ -425,9 +446,8 @@ export function GetDentalCollegePages(pathname: string): MenuGroup[] {
           href: '/others',
           label: 'Others',
           icon: MoreHorizontal,
-          active: pathname.startsWith('/others') || pathname.startsWith('/faculty'),
+          active: pathname.startsWith('/others'),
           submenus: [
-            { href: '/faculty', label: 'Senior Learners', icon: Users, active: pathname.startsWith('/faculty') },
             { href: '/careers/', label: 'Careers', icon: Briefcase, active: pathname.startsWith('/careers') },
             { href: '/others/digital-campus', label: 'Digital Campus', icon: Laptop, active: pathname === '/others/digital-campus' },
             { href: '/others/patient-safety-manual', label: 'Patient Safety Manual', icon: FileHeart, active: pathname.includes('/patient-safety') },
