@@ -11,7 +11,7 @@ export default function NamakkalPage() {
     { icon: <Hospital className="w-6 h-6 text-[#0b6d41]" />, title: 'Own Hospital', desc: '200+ chair NDC-approved teaching hospital on campus, treating 500+ patients a day' },
     { icon: <Stethoscope className="w-6 h-6 text-[#0b6d41]" />, title: 'Real Patient Exposure', desc: '500+ patients treated daily — learners get hands-on clinical exposure from their very first year of BDS' },
     { icon: <Microscope className="w-6 h-6 text-[#0b6d41]" />, title: 'Advanced Learning Labs', desc: 'Advanced dental learning labs, simulation equipment, and an AI-integrated dental campus' },
-    { icon: <TrendingUp className="w-6 h-6 text-[#0b6d41]" />, title: 'NEET MDS Results', desc: 'Strong track record in NEET MDS results and higher education placements year after year' },
+    { icon: <TrendingUp className="w-6 h-6 text-[#0b6d41]" />, title: 'MDS Outcomes', desc: '7 of 7 MDS graduates placed in 2024-25, median salary Rs 6.0 lakh (NIRF 2026)' },
     { icon: <Users className="w-6 h-6 text-[#0b6d41]" />, title: 'Established 1987', desc: 'Part of JKKN Institutions (est. 1952), with continuous dental education in Namakkal district since 1987' },
     { icon: <Bus className="w-6 h-6 text-[#0b6d41]" />, title: 'District Location', desc: 'Located IN Namakkal district at Komarapalayam on NH-544. ~65 km from Namakkal town via Tiruchengode. Hostel available.' },
   ];
@@ -61,7 +61,7 @@ export default function NamakkalPage() {
     { label: 'Location', value: 'Komarapalayam, Namakkal District, Tamil Nadu 638183' },
     { label: 'Established', value: '1987 — part of JKKN Institutions (est. 1952)' },
     { label: 'Approval', value: 'National Dental Commission (NDC) approved' },
-    { label: 'Accreditation', value: 'NAAC accredited' },
+    { label: 'Accreditation', value: 'NAAC accredited (A)' },
     { label: 'Affiliation', value: 'Tamil Nadu Dr. M.G.R. Medical University, Chennai' },
     { label: 'BDS Seats', value: '100 seats per year' },
     { label: 'MDS', value: '5 specializations' },
@@ -112,7 +112,7 @@ export default function NamakkalPage() {
         style={{ background: 'linear-gradient(135deg, #0b6d41 0%, #032816 100%)', minHeight: '88vh' }}
       >
         <div className="mb-6 inline-flex items-center gap-2 bg-white/10 backdrop-blur border border-white/20 text-white text-sm font-medium px-5 py-2 rounded-full">
-          <Shield className="w-4 h-4" /> NDC Approved • NAAC A Grade
+          <Shield className="w-4 h-4" /> NAAC Accredited (A) · NDC Approved
         </div>
         <h1 className="text-white font-extrabold leading-tight mb-3 max-w-4xl" style={{ fontSize: 'clamp(2rem, 5vw + 0.5rem, 3.5rem)' }}>
           <span className="text-[#ffde59]">Namakkal</span> Dental College
@@ -160,9 +160,9 @@ export default function NamakkalPage() {
       {/* ── Trust Bar ── */}
       <div className="bg-white border-b border-gray-100 py-4 px-4">
         <div className="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8">
-          <div className="flex items-center gap-3">
-            <span className="flex items-center gap-1.5 bg-[#FBFBEE] border border-[#0f8f56] text-[#0b6d41] text-sm font-semibold px-3 py-1.5 rounded-full">✓ NDC</span>
-            <span className="flex items-center gap-1.5 bg-[#FBFBEE] border border-[#0f8f56] text-[#0b6d41] text-sm font-semibold px-3 py-1.5 rounded-full">✓ NAAC</span>
+          <div className="flex flex-wrap items-center justify-center gap-3">
+            <span className="flex items-center gap-1.5 bg-[#FBFBEE] border border-[#0f8f56] text-[#0b6d41] text-sm font-semibold px-3 py-1.5 rounded-full whitespace-nowrap">✓ NAAC Accredited (A)</span>
+            <span className="flex items-center gap-1.5 bg-[#FBFBEE] border border-[#0f8f56] text-[#0b6d41] text-sm font-semibold px-3 py-1.5 rounded-full whitespace-nowrap">✓ NDC Approved</span>
             <span className="flex items-center gap-1.5 bg-[#FBFBEE] border border-[#0f8f56] text-[#0b6d41] text-sm font-semibold px-3 py-1.5 rounded-full">✓ In Namakkal Dist.</span>
           </div>
           <span className="hidden sm:block text-gray-300">|</span>
@@ -177,7 +177,7 @@ export default function NamakkalPage() {
             Is There a Dental College in Namakkal?
           </h2>
           <p className="snippet-answer text-gray-700 text-base leading-relaxed mb-4">
-            Yes. Namakkal district has three NDC-approved dental colleges; JKKN Dental College &amp; Hospital is the one at Komarapalayam on NH-544 (Salem–Coimbatore Highway). It is NDC approved, NAAC accredited, and affiliated to Tamil Nadu Dr. M.G.R. Medical University, Chennai. Established in 1987 as part of JKKN Institutions, it offers BDS (100 seats) and MDS (5 specializations). The 200-chair teaching hospital treats 500+ patients daily.
+            Yes. Namakkal district has three NDC-approved dental colleges; JKKN Dental College &amp; Hospital is the one at Komarapalayam on NH-544 (Salem–Coimbatore Highway). It is NDC approved, NAAC accredited (A), and affiliated to Tamil Nadu Dr. M.G.R. Medical University, Chennai. Established in 1987 as part of JKKN Institutions, it offers BDS (100 seats) and MDS (5 specializations). The 200-chair teaching hospital treats 500+ patients daily.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 mt-2">
             <Link href="/about/" className="text-[#0b6d41] hover:underline text-sm font-medium">
@@ -298,7 +298,7 @@ export default function NamakkalPage() {
             <p className="text-gray-500 text-xs mt-2">All three are affiliated to The Tamil Nadu Dr. M.G.R. Medical University and admit through NEET counselling. Details for the other two colleges are from their own official websites (checked September 2026); JKKN figures are from this college's published records.</p>
           </div>
           <p className="text-gray-600 max-w-3xl mx-auto mb-8 leading-relaxed text-sm">
-            <strong className="text-gray-800">E-E-A-T Note:</strong> JKKN Dental College &amp; Hospital is NDC approved (National Dental Commission), NAAC accredited (National Assessment and Accreditation Council), and affiliated to Tamil Nadu Dr. M.G.R. Medical University, Chennai. All programmes are regulated by Tamil Nadu DME (Directorate of Medical Education). Clinical training is conducted at the on-campus 200-chair dental hospital under qualified senior learners with 50+ publications.
+            <strong className="text-gray-800">E-E-A-T Note:</strong> JKKN Dental College &amp; Hospital is NDC approved (National Dental Commission), NAAC accredited with an A grade (National Assessment and Accreditation Council), and affiliated to Tamil Nadu Dr. M.G.R. Medical University, Chennai. All programmes are regulated by Tamil Nadu DME (Directorate of Medical Education). Clinical training is conducted at the on-campus 200-chair dental hospital under qualified senior learners with 50+ publications.
           </p>
           <div className="w-14 h-1 bg-[#ffde59] rounded mx-auto mb-12" />
           <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 list-none">

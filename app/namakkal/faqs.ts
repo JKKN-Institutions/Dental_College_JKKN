@@ -12,7 +12,7 @@ export const faqs: FaqItem[] = [
   },
   {
     q: 'Which is the best dental college in Namakkal district?',
-    a: 'JKKN Dental College & Hospital is a National Dental Commission approved dental college in Namakkal district. Located at Komarapalayam on NH-544, it is NDC approved, NAAC accredited, and a NDC-approved dental college in Namakkal district. It runs a 200+ chair teaching hospital on an AI-integrated campus and has offered dental education since 1987; Namakkal district has three NDC-approved dental colleges in all.',
+    a: 'JKKN Dental College & Hospital is a National Dental Commission approved dental college in Namakkal district. Located at Komarapalayam on NH-544, it is NDC approved, NAAC accredited (A), and a NDC-approved dental college in Namakkal district. It runs a 200+ chair teaching hospital on an AI-integrated campus and has offered dental education since 1987; Namakkal district has three NDC-approved dental colleges in all.',
   },
   {
     q: 'How far is JKKN Dental College from Namakkal city?',

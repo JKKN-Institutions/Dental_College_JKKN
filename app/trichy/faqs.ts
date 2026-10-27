@@ -12,7 +12,7 @@ export const faqs: FaqItem[] = [
   },
   {
     q: 'Which is the best dental college near Trichy?',
-    a: 'JKKN Dental College & Hospital at Komarapalayam is one of the most established NDC-approved dental colleges accessible from Trichy. Founded in 1987, NAAC accredited and affiliated to The Tamil Nadu Dr. M.G.R. Medical University, it operates a 200+ chair teaching hospital treating 500+ patients daily.',
+    a: 'JKKN Dental College & Hospital at Komarapalayam is one of the most established NDC-approved dental colleges accessible from Trichy. Founded in 1987, NAAC accredited (A) and affiliated to The Tamil Nadu Dr. M.G.R. Medical University, it operates a 200+ chair teaching hospital treating 500+ patients daily.',
   },
   {
     q: 'How far is JKKN Dental College from Trichy?',

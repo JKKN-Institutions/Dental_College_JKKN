@@ -395,7 +395,7 @@ const careerOutcomes = [
 
 const trustBadges = [
   { label: 'NDC Approved', sublabel: 'National Dental Commission', icon: Shield },
-  { label: 'NAAC A Grade', sublabel: 'Accredited Institution', icon: Award },
+  { label: 'NAAC Accredited (A)', sublabel: 'Accredited Institution', icon: Award },
   { label: 'TN Dr. MGR Medical University', sublabel: 'Affiliated University', icon: GraduationCap },
   { label: 'Govt. of Tamil Nadu', sublabel: 'Approved Institution', icon: Building2 },
 ];

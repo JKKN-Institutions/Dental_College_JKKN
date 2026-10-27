@@ -187,7 +187,7 @@ const heroStats = [
 
 const trustBadges = [
   { label: 'NDC Approved', sublabel: 'National Dental Commission (formerly Dental Council of India)', icon: Shield },
-  { label: 'NAAC A Grade', sublabel: 'Accredited Institution', icon: Award },
+  { label: 'NAAC Accredited (A)', sublabel: 'Accredited Institution', icon: Award },
   { label: 'TN Dr. MGR University', sublabel: 'Affiliated', icon: GraduationCap },
   { label: 'Govt. of Tamil Nadu', sublabel: 'Approved', icon: Building2 },
 ];

@@ -31,7 +31,7 @@ export default function BDSProgram() {
               },
               {
                 q: 'Is the BDS program at JKKN Dental College & Hospital NDC approved?',
-                a: 'Yes, the BDS program at JKKN Dental College is fully approved by the National Dental Commission (NDC), formerly the Dental Council of India. The college is recognized by the Government of Tamil Nadu and affiliated with the Tamil Nadu Dr. M.G.R. Medical University, Chennai. JKKN is also NAAC Accredited, ensuring quality standards in dental education.'
+                a: 'Yes, the BDS program at JKKN Dental College is fully approved by the National Dental Commission (NDC), formerly the Dental Council of India. The college is recognized by the Government of Tamil Nadu and affiliated with the Tamil Nadu Dr. M.G.R. Medical University, Chennai. JKKN is also NAAC Accredited (A), ensuring quality standards in dental education.'
               },
               {
                 q: 'What are the career opportunities after completing BDS?',
@@ -97,7 +97,7 @@ export default function BDSProgram() {
     "@id": "https://dental.jkkn.ac.in/academics/details-of-academic-programs/bds/#course",
     "url": "https://dental.jkkn.ac.in/academics/details-of-academic-programs/bds/",
     "name": "Bachelor of Dental Surgery (BDS)",
-    "description": "JKKN Dental College & Hospital, established in 1987, offers a 5-year NDC-approved BDS program with 100 seats, 200+ dental chairs, 500+ daily patients, and 93.9% placed or in higher studies (2024-25 batch). Affiliated to TN Dr. MGR Medical University, NAAC Accredited, located on NH-544, Komarapalayam, Namakkal, Tamil Nadu.",
+    "description": "JKKN Dental College & Hospital, established in 1987, offers a 5-year NDC-approved BDS program with 100 seats, 200+ dental chairs, 500+ daily patients, and 93.9% placed or in higher studies (2024-25 batch). Affiliated to TN Dr. MGR Medical University, NAAC Accredited (A), located on NH-544, Komarapalayam, Namakkal, Tamil Nadu.",
     "provider": {
       "@type": "CollegeOrUniversity",
       "@id": "https://dental.jkkn.ac.in/#organization",
@@ -187,7 +187,7 @@ export default function BDSProgram() {
                   <svg className="w-5 h-5 text-[#ffde59]" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
-                  <span className="text-[#ffde59] font-semibold text-sm">NAAC Accredited</span>
+                  <span className="text-[#ffde59] font-semibold text-sm">NAAC Accredited (A)</span>
                 </div>
                 <div className="inline-flex items-center gap-2 bg-[#0f8f56]/20 backdrop-blur-sm border border-[#0f8f56]/40 rounded-full px-4 py-2">
                   <span className="text-white font-semibold text-sm">BDS Admission Enquiry</span>
@@ -202,7 +202,7 @@ export default function BDSProgram() {
 
               {/* Subtitle with schema keywords */}
               <p className="text-lg md:text-xl text-[#ffde59] font-semibold mb-4">
-                Bachelor of Dental Surgery (BDS) Program | NDC Approved | NAAC Accredited
+                Bachelor of Dental Surgery (BDS) Program | NDC Approved | NAAC Accredited (A)
               </p>
 
               {/* Description — Gap #4, #5: Keywords + content expansion */}
@@ -272,7 +272,7 @@ export default function BDSProgram() {
                   </svg>
                 </div>
                 <div>
-                  <div className="font-bold text-gray-800 text-xs sm:text-base">NAAC Accredited</div>
+                  <div className="font-bold text-gray-800 text-xs sm:text-base">NAAC Accredited (A)</div>
                   <div className="text-[10px] sm:text-sm text-gray-600">Updated: April 2026</div>
                 </div>
               </div>
@@ -288,7 +288,7 @@ export default function BDSProgram() {
         <div className="max-w-4xl mx-auto">
           <div className="answer-capsule bg-white border-l-4 border-[#0f8f56] rounded-r-xl p-6 shadow-sm">
             <p className="text-gray-700 leading-relaxed text-base md:text-lg">
-              <strong className="text-[#0b6d41]">JKKN Dental College & Hospital</strong>, established in 1987 under the J.K.K. Nattraja Educational Institutions (since 1952), is a NDC-approved and <a href="/accreditation/naac/" className="text-[#0b6d41] underline hover:text-[#0b6d41]">NAAC Accredited</a> dental institution located on NH-544, Komarapalayam, Namakkal District, Tamil Nadu 638183. It offers <strong>100 BDS seats</strong> and <strong>18 MDS seats</strong> across 5 specializations, affiliated to the <a href="https://www.tnmgrmu.ac.in/" target="_blank" rel="noopener noreferrer" className="text-[#0b6d41] underline hover:text-[#0b6d41]">Tamil Nadu Dr. M.G.R. Medical University</a>, Chennai. With 200+ dental chairs, 100+ hospital beds, and 500+ daily patient footfall across 9 departments, JKKN gives BDS learners daily clinical exposure in the college hospital, alongside <a href="/research/research-development-rd-cell/" className="text-[#0b6d41] underline hover:text-[#0b6d41]">research excellence</a> with 50+ publications and 25+ MoU partners. The college provides 93.9% placed or in higher studies (2024-25 batch) including international opportunities.
+              <strong className="text-[#0b6d41]">JKKN Dental College & Hospital</strong>, established in 1987 under the J.K.K. Nattraja Educational Institutions (since 1952), is a NDC-approved and <a href="/accreditation/naac/" className="text-[#0b6d41] underline hover:text-[#0b6d41]">NAAC Accredited (A)</a> dental institution located on NH-544, Komarapalayam, Namakkal District, Tamil Nadu 638183. It offers <strong>100 BDS seats</strong> and <strong>18 MDS seats</strong> across 5 specializations, affiliated to the <a href="https://www.tnmgrmu.ac.in/" target="_blank" rel="noopener noreferrer" className="text-[#0b6d41] underline hover:text-[#0b6d41]">Tamil Nadu Dr. M.G.R. Medical University</a>, Chennai. With 200+ dental chairs, 100+ hospital beds, and 500+ daily patient footfall across 9 departments, JKKN gives BDS learners daily clinical exposure in the college hospital, alongside <a href="/research/research-development-rd-cell/" className="text-[#0b6d41] underline hover:text-[#0b6d41]">research excellence</a> with 50+ publications and 25+ MoU partners. The college provides 93.9% placed or in higher studies (2024-25 batch) including international opportunities.
             </p>
           </div>
         </div>
@@ -317,7 +317,7 @@ export default function BDSProgram() {
 
           <div className="grid md:grid-cols-2 gap-6">
             {[
-              { num: 1, title: 'NDC Approved & NAAC Accredited', desc: 'Fully approved by the National Dental Commission and accredited by NAAC, ensuring nationally recognized standards of dental education and patient care.' },
+              { num: 1, title: 'NDC Approved & NAAC Accredited (A)', desc: 'Fully approved by the National Dental Commission and accredited by NAAC (A), ensuring nationally recognized standards of dental education and patient care.' },
               { num: 2, title: '200+ Dental Chairs', desc: 'A large dental clinical facility in the Namakkal-Erode-Salem corridor with 200+ operational dental chairs and 100+ hospital beds for comprehensive training.' },
               { num: 3, title: '500+ Daily Patients — Clinical Training in Our Own Hospital', desc: 'Learners receive hands-on clinical training in the college hospital, where 500+ patients visit daily across 9 specialized departments.' },
               { num: 4, title: '93.9% Placed or in Higher Studies (2024-25)', desc: 'Of 99 BDS graduates in 2024-25, 75 were placed and 18 went on to higher studies, at a median salary of Rs 3,60,000, as filed in the NIRF 2026 submission.' },
@@ -607,7 +607,7 @@ export default function BDSProgram() {
                 </svg>
               </div>
               <h3 className="text-sm font-bold text-gray-800 mb-3">Accreditation</h3>
-              <div className="text-xl font-bold text-[#0b6d41] mb-2">NDC & NAAC</div>
+              <div className="text-xl font-bold text-[#0b6d41] mb-2">NAAC (A) & NDC</div>
               <p className="text-sm text-gray-600">Nationally Recognized Standards</p>
             </div>
           </div>
@@ -1412,7 +1412,7 @@ export default function BDSProgram() {
             Begin Your Journey at a NDC-Approved, NAAC A Grade BDS College
           </h2>
           <p className="text-lg text-gray-100 mb-10 leading-relaxed max-w-3xl mx-auto">
-            Join JKKN Dental College & Hospital — NDC Approved, NAAC Accredited, 200+ dental chairs, 500+ daily patients, 93.9% placed or in higher studies (2024-25 batch), and a 74+ year trust legacy. Your career in dentistry starts here.
+            Join JKKN Dental College & Hospital — NDC Approved, NAAC Accredited (A), 200+ dental chairs, 500+ daily patients, 93.9% placed or in higher studies (2024-25 batch), and a 74+ year trust legacy. Your career in dentistry starts here.
           </p>
 
           <div className="flex flex-wrap justify-center gap-6">

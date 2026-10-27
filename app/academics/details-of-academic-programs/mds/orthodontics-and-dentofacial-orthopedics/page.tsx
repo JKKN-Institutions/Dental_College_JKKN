@@ -132,7 +132,7 @@ export default function MDSOrthodontics() {
                 <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
-                <span className="text-white font-semibold text-sm">NDC (formerly DCI) Approved | NAAC A Grade</span>
+                <span className="text-white font-semibold text-sm">NAAC Accredited (A) · NDC (formerly DCI) Approved</span>
               </div>
 
               {/* Heading */}
@@ -1286,7 +1286,7 @@ export default function MDSOrthodontics() {
               <div className="bg-[#ffde59] rounded-xl w-20 h-20 sm:w-24 sm:h-24 flex items-center justify-center mb-4 shadow-lg text-[#032816]">
                 <span className="text-2xl sm:text-3xl font-bold text-[#032816]">NAAC</span>
               </div>
-              <h3 className="text-center font-bold text-gray-900 text-sm sm:text-base">NAAC Accredited</h3>
+              <h3 className="text-center font-bold text-gray-900 text-sm sm:text-base">NAAC Accredited (A)</h3>
             </div>
 
             {/* MGR */}

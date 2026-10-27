@@ -41,7 +41,7 @@ const mdsFAQs = [
   {
     question: "Is JKKN Dental College MDS program recognized?",
     answer:
-      "Yes, all MDS programs at JKKN Dental College are fully recognized and approved by the National Dental Commission (NDC), formerly the Dental Council of India. The college is affiliated with The Tamil Nadu Dr. M.G.R. Medical University and maintains NAAC accreditation, ensuring national recognition for all graduates.",
+      "Yes, all MDS programs at JKKN Dental College are fully recognized and approved by the National Dental Commission (NDC), formerly the Dental Council of India. The college is affiliated with The Tamil Nadu Dr. M.G.R. Medical University and maintains NAAC accreditation (A), ensuring national recognition for all graduates.",
   },
   {
     question: "How many MDS seats are there in Tamil Nadu?",
@@ -122,7 +122,7 @@ export default function MDSProgram() {
     title:
       'MDS Fees in Private Colleges, Tamil Nadu 2026-27 | JKKN Dental College & Hospital',
     description:
-      '3-year postgraduate MDS program with 18 seats across 5 NDC-approved specializations at JKKN Dental College & Hospital, Tamil Nadu. NAAC-accredited, affiliated to TN Dr. MGR Medical University.',
+      '3-year postgraduate MDS program with 18 seats across 5 NDC-approved specializations at JKKN Dental College & Hospital, Tamil Nadu. NAAC-accredited (A), affiliated to TN Dr. MGR Medical University.',
     url: 'https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/',
     speakableCssSelectors: [
       'h1',
@@ -162,7 +162,7 @@ export default function MDSProgram() {
                 <svg className="w-5 h-5 text-[#0b6d41]" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
-                <span className="text-[#ffde59] font-semibold text-sm">NDC (formerly DCI) Approved | NAAC A Grade</span>
+                <span className="text-[#ffde59] font-semibold text-sm">NAAC Accredited (A) · NDC (formerly DCI) Approved</span>
               </div>
 
               {/* Heading — user's choice 2026-10-21: JKKN first, the fees keyword kept. The old H1
@@ -181,7 +181,7 @@ export default function MDSProgram() {
               <p className="hero-description text-lg text-gray-200 mb-8 leading-relaxed">
                 JKKN Dental College &amp; Hospital, Komarapalayam, is one of the
                 19 MDS colleges affiliated to The Tamil Nadu Dr. M.G.R. Medical University,
-                with 18 seats across 5 NDC-approved specializations. NAAC-accredited and affiliated to The Tamil
+                with 18 seats across 5 NDC-approved specializations. NAAC-accredited (A) and affiliated to The Tamil
                 Nadu Dr. M.G.R. Medical University, our 3-year postgraduate MDS
                 program combines rigorous academics with clinical exposure
                 across 200+ dental chairs and 500+ daily patients.

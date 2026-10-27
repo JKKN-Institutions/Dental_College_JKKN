@@ -7,7 +7,7 @@ import { faqs } from './faqs';
 
 export const metadata: Metadata = {
   title: { absolute: 'Namakkal Dental College | JKKN Dental College & Hospital' },
-  description: 'Namakkal Dental College — JKKN Dental College & Hospital, Komarapalayam, NH-544. NDC approved, NAAC accredited. BDS 100 seats, MDS. Apply 2026.',
+  description: 'Namakkal Dental College — JKKN Dental College & Hospital, Komarapalayam, NH-544. NAAC Accredited (A), NDC approved. BDS 100 seats, MDS. Apply 2026.',
   keywords: 'namakkal dental college, dental college in namakkal district, namakkal bds college, dental college namakkal, mds college namakkal, jkkn dental namakkal, dental college komarapalayam, namakkal district dental college',
   robots: {
     index: true,
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Namakkal Dental College | JKKN Dental College & Hospital',
-    description: 'Namakkal Dental College — JKKN Dental College & Hospital, Komarapalayam, NH-544. NDC approved, NAAC accredited. BDS 100 seats, MDS. Apply 2026.',
+    description: 'Namakkal Dental College — JKKN Dental College & Hospital, Komarapalayam, NH-544. NAAC Accredited (A), NDC approved. BDS 100 seats, MDS. Apply 2026.',
     url: 'https://dental.jkkn.ac.in/namakkal/',
     siteName: 'JKKN Dental College & Hospital',
     images: [
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Namakkal Dental College | JKKN Dental College & Hospital',
-    description: 'Namakkal Dental College — JKKN Dental College & Hospital, Komarapalayam, NH-544. NDC approved, NAAC accredited. BDS 100 seats, MDS. Apply 2026.',
+    description: 'Namakkal Dental College — JKKN Dental College & Hospital, Komarapalayam, NH-544. NAAC Accredited (A), NDC approved. BDS 100 seats, MDS. Apply 2026.',
     images: ['https://dental.jkkn.ac.in/images/og-jkkn-dental-clinical-training.jpg'],
     site: '@jaborejkkn',
   },

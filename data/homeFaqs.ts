@@ -28,7 +28,7 @@ export const homeFaqs: HomeFaq[] = [
   {
     question: 'Is JKKN Dental College & Hospital NDC approved?',
     answer:
-      'Yes, JKKN Dental College & Hospital is fully approved by the National Dental Commission (NDC), formerly the Dental Council of India. The college is affiliated with The Tamil Nadu Dr. M.G.R. Medical University and NAAC accredited.',
+      'Yes, JKKN Dental College & Hospital is fully approved by the National Dental Commission (NDC), formerly the Dental Council of India. The college is affiliated with The Tamil Nadu Dr. M.G.R. Medical University and NAAC accredited (A).',
   },
   {
     question: 'What is the admission process for BDS?',

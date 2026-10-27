@@ -7,7 +7,7 @@ import { faqs } from './faqs';
 
 export const metadata: Metadata = {
   title: { absolute: 'Dental Colleges in Tiruppur | JKKN Dental College' },
-  description: 'No dental college in Tiruppur? JKKN Dental College is 67 km away on NH-544. NDC approved, NAAC accredited. BDS 100 seats, MDS. Apply 2026.',
+  description: 'No dental college in Tiruppur? JKKN Dental College is 67 km away on NH-544. NAAC Accredited (A), NDC approved. BDS 100 seats, MDS. Apply 2026.',
   keywords: 'dental colleges in tiruppur, top dental colleges, bds colleges in tiruppur, dental college tiruppur, mds college tiruppur, jkkn dental tiruppur',
   robots: {
     index: true,
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Dental Colleges in Tiruppur | JKKN Dental College',
-    description: 'No dental college in Tiruppur? JKKN Dental College is 67 km away on NH-544. NDC approved, NAAC accredited. BDS 100 seats, MDS. Apply 2026.',
+    description: 'No dental college in Tiruppur? JKKN Dental College is 67 km away on NH-544. NAAC Accredited (A), NDC approved. BDS 100 seats, MDS. Apply 2026.',
     url: 'https://dental.jkkn.ac.in/tiruppur/',
     siteName: 'JKKN Dental College & Hospital',
     images: [
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Dental Colleges in Tiruppur | JKKN Dental College',
-    description: 'No dental college in Tiruppur? JKKN Dental College is 67 km away on NH-544. NDC approved, NAAC accredited. BDS 100 seats, MDS. Apply 2026.',
+    description: 'No dental college in Tiruppur? JKKN Dental College is 67 km away on NH-544. NAAC Accredited (A), NDC approved. BDS 100 seats, MDS. Apply 2026.',
     images: ['https://dental.jkkn.ac.in/images/og-jkkn-dental-clinical-training.jpg'],
     site: '@jaborejkkn',
   },

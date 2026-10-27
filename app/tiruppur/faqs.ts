@@ -8,7 +8,7 @@ import type { FaqItem } from '@/lib/faq';
 export const faqs: FaqItem[] = [
   {
     q: 'Which are the best dental colleges in Tiruppur?',
-    a: 'JKKN Dental College & Hospital at Komarapalayam, about 67 km from Tiruppur via NH-544, offers both BDS (100 seats) and MDS (18 seats, 5 specialisations). Established 1987, NDC approved, NAAC accredited and affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai, it runs a 200+ chair teaching hospital; 93.9% of the 2024-25 batch were placed or in higher studies.',
+    a: 'JKKN Dental College & Hospital at Komarapalayam, about 67 km from Tiruppur via NH-544, offers both BDS (100 seats) and MDS (18 seats, 5 specialisations). Established 1987, NDC approved, NAAC accredited (A) and affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai, it runs a 200+ chair teaching hospital; 93.9% of the 2024-25 batch were placed or in higher studies.',
   },
   {
     q: 'How far is JKKN Dental from Tiruppur?',

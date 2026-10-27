@@ -7,7 +7,7 @@ import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
   title: { absolute: 'Dental College near Trichy | JKKN Dental College & Hospital' },
-  description: 'BDS/MDS from Trichy? JKKN Dental College at Komarapalayam is ~145 km via NH-44. NDC approved, NAAC accredited. BDS 100 seats, MDS 5 specialisations.',
+  description: 'BDS/MDS from Trichy? JKKN Dental College at Komarapalayam is ~145 km via NH-44. NAAC Accredited (A), NDC approved. BDS 100 seats, MDS 5 specialisations.',
   keywords: 'dental college in trichy, dental college near trichy, bds colleges in trichy, trichy dental college, mds college trichy, jkkn dental trichy',
   robots: {
     index: true,
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Dental College near Trichy | JKKN Dental College & Hospital',
-    description: 'BDS/MDS from Trichy? JKKN Dental College at Komarapalayam is ~145 km via NH-44. NDC approved, NAAC accredited. BDS 100 seats, MDS 5 specialisations.',
+    description: 'BDS/MDS from Trichy? JKKN Dental College at Komarapalayam is ~145 km via NH-44. NAAC Accredited (A), NDC approved. BDS 100 seats, MDS 5 specialisations.',
     url: 'https://dental.jkkn.ac.in/trichy/',
     siteName: 'JKKN Dental College & Hospital',
     images: [
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Dental College near Trichy | JKKN Dental College & Hospital',
-    description: 'BDS/MDS from Trichy? JKKN Dental College at Komarapalayam is ~145 km via NH-44. NDC approved, NAAC accredited. BDS 100 seats, MDS 5 specialisations.',
+    description: 'BDS/MDS from Trichy? JKKN Dental College at Komarapalayam is ~145 km via NH-44. NAAC Accredited (A), NDC approved. BDS 100 seats, MDS 5 specialisations.',
     images: ['https://dental.jkkn.ac.in/images/og-jkkn-dental-clinical-training.jpg'],
     site: '@jaborejkkn',
   },

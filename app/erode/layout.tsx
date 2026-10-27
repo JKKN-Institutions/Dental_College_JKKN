@@ -7,7 +7,7 @@ import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
   title: { absolute: 'Dental College in Erode | JKKN Dental College & Hospital' },
-  description: 'Dental College in Erode? JKKN Dental College is just 18 km away at Komarapalayam. NDC approved, NAAC accredited. BDS 100 seats, MDS. Apply 2026.',
+  description: 'Dental College in Erode? JKKN Dental College is just 18 km away at Komarapalayam. NAAC Accredited (A), NDC approved. BDS 100 seats, MDS. Apply 2026.',
   keywords: 'dental college in erode, top dental colleges, bds colleges in erode, erode dental college, mds college erode, jkkn dental erode',
   robots: {
     index: true,
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Dental College in Erode | JKKN Dental College & Hospital',
-    description: 'Dental College in Erode? JKKN Dental College is just 18 km away at Komarapalayam. NDC approved, NAAC accredited. BDS 100 seats, MDS. Apply 2026.',
+    description: 'Dental College in Erode? JKKN Dental College is just 18 km away at Komarapalayam. NAAC Accredited (A), NDC approved. BDS 100 seats, MDS. Apply 2026.',
     url: 'https://dental.jkkn.ac.in/erode/',
     siteName: 'JKKN Dental College & Hospital',
     images: [
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Dental College in Erode | JKKN Dental College & Hospital',
-    description: 'Dental College in Erode? JKKN Dental College is just 18 km away at Komarapalayam. NDC approved, NAAC accredited. BDS 100 seats, MDS. Apply 2026.',
+    description: 'Dental College in Erode? JKKN Dental College is just 18 km away at Komarapalayam. NAAC Accredited (A), NDC approved. BDS 100 seats, MDS. Apply 2026.',
     images: ['https://dental.jkkn.ac.in/images/og-jkkn-dental-clinical-training.jpg'],
     site: '@jaborejkkn',
   },

@@ -11,7 +11,7 @@ export const faqCategories = [
       {
         question: 'Is JKKN Dental College & Hospital NDC approved?',
         answer:
-          'Yes, JKKN Dental College & Hospital is fully approved by the National Dental Commission (NDC), formerly the Dental Council of India. The college is affiliated with The Tamil Nadu Dr. M.G.R. Medical University and NAAC accredited.',
+          'Yes, JKKN Dental College & Hospital is fully approved by the National Dental Commission (NDC), formerly the Dental Council of India. The college is affiliated with The Tamil Nadu Dr. M.G.R. Medical University and NAAC accredited (A).',
       },
       {
         question: 'What makes JKKN different from other dental colleges?',
@@ -148,7 +148,7 @@ export const faqCategories = [
       {
         question: 'Is the JKKN MDS program recognized by NDC?',
         answer:
-          'Yes, all MDS programs at JKKN Dental College are fully recognized and approved by the National Dental Commission (NDC). The college is affiliated with The Tamil Nadu Dr. M.G.R. Medical University and maintains NAAC accreditation, ensuring national recognition for all graduates.',
+          'Yes, all MDS programs at JKKN Dental College are fully recognized and approved by the National Dental Commission (NDC). The college is affiliated with The Tamil Nadu Dr. M.G.R. Medical University and maintains NAAC accreditation (A), ensuring national recognition for all graduates.',
       },
       {
         question: 'How many MDS seats are there in Tamil Nadu?',

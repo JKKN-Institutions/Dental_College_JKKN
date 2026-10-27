@@ -28,7 +28,7 @@ export default function Hero() {
             {/* Badge */}
             <div className="inline-flex items-center gap-2 sm:gap-2.5 bg-[#032816] px-3 sm:px-4 py-2 sm:py-2.5 rounded-full">
               <Trophy className="w-5 h-5 sm:w-6 sm:h-6 text-yellow-400" />
-              <span className="text-white text-xs sm:text-sm font-semibold">NDC (formerly DCI) Approved | NAAC A Grade</span>
+              <span className="text-white text-xs sm:text-sm font-semibold">NAAC Accredited (A) · NDC (formerly DCI) Approved</span>
             </div>
 
             {/* Main Heading — user's choice 2026-10-21: lead with the NIRF-filed outcome, keep "Tamil Nadu" */}
