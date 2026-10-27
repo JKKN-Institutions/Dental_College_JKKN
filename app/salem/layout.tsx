@@ -7,7 +7,7 @@ import { faqs } from './faqs';
 
 export const metadata: Metadata = {
   title: { absolute: 'Dental Colleges in Salem | JKKN Dental College' },
-  description: 'Dental Colleges in Salem? JKKN Dental College is 60 km away at Komarapalayam via NH-544. NDC approved, NAAC accredited. BDS 100 seats, MDS. Apply 2026.',
+  description: 'Dental Colleges in Salem? JKKN Dental College is 60 km away at Komarapalayam via NH-544. NAAC Accredited (A), NDC approved. BDS 100 seats, MDS. Apply 2026.',
   keywords: 'dental colleges in salem, top dental colleges, bds colleges in salem, dental college salem, mds college salem, jkkn dental salem',
   robots: {
     index: true,
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Dental Colleges in Salem | JKKN Dental College',
-    description: 'Dental Colleges in Salem? JKKN Dental College is 60 km away at Komarapalayam via NH-544. NDC approved, NAAC accredited. BDS 100 seats, MDS. Apply 2026.',
+    description: 'Dental Colleges in Salem? JKKN Dental College is 60 km away at Komarapalayam via NH-544. NAAC Accredited (A), NDC approved. BDS 100 seats, MDS. Apply 2026.',
     url: 'https://dental.jkkn.ac.in/salem/',
     siteName: 'JKKN Dental College & Hospital',
     images: [
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Dental Colleges in Salem | JKKN Dental College',
-    description: 'Dental Colleges in Salem? JKKN Dental College is 60 km away at Komarapalayam via NH-544. NDC approved, NAAC accredited. BDS 100 seats, MDS. Apply 2026.',
+    description: 'Dental Colleges in Salem? JKKN Dental College is 60 km away at Komarapalayam via NH-544. NAAC Accredited (A), NDC approved. BDS 100 seats, MDS. Apply 2026.',
     images: ['https://dental.jkkn.ac.in/images/og-jkkn-dental-clinical-training.jpg'],
     site: '@jaborejkkn',
   },
@@ -64,7 +64,7 @@ const courseSchema = [
       "category": "Tuition",
       "priceCurrency": "INR",
       
-      "description": "Government Quota fee — as per Govt Norms. Management Quota: INR 450000/year (Dayscholar with Instruments) or INR 550000/year (With Hostel and Instruments)."
+      "description": "Government Quota: INR 250000/year (Fee Committee, DME prospectus 2025-26). Management Quota: INR 450000/year (Dayscholar with Instruments) or INR 550000/year (With Hostel and Instruments)."
     }
   },
   {

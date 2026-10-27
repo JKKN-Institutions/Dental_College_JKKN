@@ -13,7 +13,7 @@ export default function SalemPage() {
     { icon: <Hospital className="w-6 h-6 text-[#0b6d41]" />, title: 'Own Hospital', desc: 'NDC-approved dental college with attached hospital for hands-on clinical training' },
     { icon: <Stethoscope className="w-6 h-6 text-[#0b6d41]" />, title: 'Real Patient Exposure', desc: 'Own dental hospital on campus — learners get real patient exposure in the college hospital' },
     { icon: <Microscope className="w-6 h-6 text-[#0b6d41]" />, title: 'Advanced Learning Labs', desc: 'Advanced dental learning labs, simulation equipment, and digital dentistry training' },
-    { icon: <TrendingUp className="w-6 h-6 text-[#0b6d41]" />, title: 'NEET MDS Results', desc: 'Strong track record in NEET MDS results and higher education' },
+    { icon: <TrendingUp className="w-6 h-6 text-[#0b6d41]" />, title: 'MDS Outcomes', desc: '7 of 7 MDS graduates placed in 2024-25, median salary Rs 6.0 lakh (NIRF 2026)' },
     { icon: <Users className="w-6 h-6 text-[#0b6d41]" />, title: 'Community Service', desc: 'Hospital serves the community — builds trust and clinical experience' },
     { icon: <Bus className="w-6 h-6 text-[#0b6d41]" />, title: 'Easy Commute', desc: 'Approximately 60 km from Salem via NH-544. Daily commute or comfortable hostel — your choice.' },
   ];
@@ -48,8 +48,8 @@ export default function SalemPage() {
   const transportRows = [
     { icon: <Route className="w-6 h-6 text-[#0b6d41]" />, label: 'ROUTE', text: 'NH-544 (Salem-Coimbatore Highway) — direct route, approximately 60 km' },
     { icon: <Bus className="w-6 h-6 text-[#0b6d41]" />, label: 'BY BUS', text: 'From Salem New Bus Stand, take any Salem-Coimbatore route bus via NH-544 and alight at Komarapalayam bus stand. JKKN Dental College & Hospital is approximately 1–2 km from the bus stand. Direct buses to Komarapalayam operate regularly. Travel time: approximately 60 minutes.' },
-    { icon: <Train className="w-6 h-6 text-[#0b6d41]" />, label: 'NEAREST RAILWAY STATION', text: 'Salem Junction (~60 km from campus) — from Salem Junction, direct buses or taxis are available to Komarapalayam. Erode Junction (~18 km from campus) is another convenient option for rail travellers coming from the south.' },
-    { icon: <Plane className="w-6 h-6 text-[#0b6d41]" />, label: 'NEAREST AIRPORT', text: 'Salem Airport (~75 km, limited flights) / Coimbatore International Airport (~108 km)' },
+    { icon: <Train className="w-6 h-6 text-[#0b6d41]" />, label: 'NEAREST RAILWAY STATION', text: 'Salem Junction (~55 km by road) — from Salem Junction, direct buses or taxis are available to Komarapalayam. Erode Junction (~21 km from campus) is another convenient option for rail travellers coming from the south.' },
+    { icon: <Plane className="w-6 h-6 text-[#0b6d41]" />, label: 'NEAREST AIRPORT', text: 'Salem Airport (limited flights) / Coimbatore International Airport (~108 km)' },
     { icon: <MapPin className="w-6 h-6 text-[#0b6d41]" />, label: 'CAMPUS ADDRESS', text: 'JKKN Institutions, Natarajapuram, NH-544, Komarapalayam (TK), Namakkal (DT), Tamil Nadu - 638183' },
   ];
 
@@ -77,10 +77,12 @@ export default function SalemPage() {
     { label: 'Distance from Salem', value: '~60 km via NH-544' },
     { label: 'Travel Time', value: '~1 hour by road' },
     { label: 'Approval', value: 'NDC Approved' },
-    { label: 'Accreditation', value: 'NAAC Accredited' },
+    { label: 'Accreditation', value: 'NAAC Accredited (A), CGPA 3.01, valid to 26 Feb 2030' },
     { label: 'Affiliation', value: 'TN Dr. MGR Medical University' },
     { label: 'BDS Seats', value: '100 seats (NEET required)' },
-    { label: 'MDS Specializations', value: '5 specializations' },
+    { label: 'BDS Seat Split', value: '50:50 Government / Management Quota (minority institution)' },
+    { label: 'BDS Tuition a Year', value: 'GQ Rs 2,50,000 · MQ Rs 4,50,000 (day scholar) or Rs 5,50,000 (with hostel)' },
+    { label: 'MDS Seats', value: '18 seats in 5 specialisations' },
     { label: 'Dental Chairs', value: '200+ chairs' },
     { label: 'Daily Patients', value: '500+ patients' },
     { label: 'Placed or in higher studies 2024-25', value: '93.9%' },
@@ -121,7 +123,7 @@ export default function SalemPage() {
         style={{ background: 'linear-gradient(135deg, #0b6d41 0%, #032816 100%)', minHeight: '88vh' }}
       >
         <div className="mb-6 inline-flex items-center gap-2 bg-white/10 backdrop-blur border border-white/20 text-white text-sm font-medium px-5 py-2 rounded-full">
-          <Shield className="w-4 h-4" /> NDC Approved • NAAC A Grade
+          <Shield className="w-4 h-4" /> NAAC Accredited (A) · NDC Approved
         </div>
         <h1 className="text-white font-extrabold leading-tight mb-3 max-w-4xl" style={{ fontSize: 'clamp(2rem, 5vw + 0.5rem, 3.5rem)' }}>
           Dental Colleges in <span className="text-[#ffde59]">Salem</span>
@@ -130,8 +132,9 @@ export default function SalemPage() {
           NDC-Approved Dental College near Salem — JKKN Dental College &amp; Hospital, Komarapalayam
         </p>
         <p className="text-white/80 max-w-2xl mb-10 leading-relaxed" style={{ fontSize: 'clamp(0.9rem, 1vw + 0.5rem, 1.1rem)' }}>
-          Approximately 60 km from Salem on NH-544. JKKN Dental College &amp; Hospital offers BDS and MDS programmes, with
-          93.9% placed or in higher studies (2024-25 batch).
+          JKKN Dental College &amp; Hospital, about 60 km from Salem at Komarapalayam, is affiliated to The Tamil Nadu
+          Dr. M.G.R. Medical University, so all its BDS seats are filled through Tamil Nadu NEET counselling. It is NAAC
+          Accredited (A, CGPA 3.01), offers BDS (100 seats) and MDS (18 seats), and was established in 1987.
         </p>
         <ul className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 mb-10 w-full max-w-2xl list-none p-0 m-0">
           {[
@@ -158,8 +161,8 @@ export default function SalemPage() {
       <div className="bg-white border-b border-gray-100 py-4 px-4">
         <div className="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8">
           <div className="flex items-center gap-3">
-            <span className="flex items-center gap-1.5 bg-[#FBFBEE] border border-[#0f8f56] text-[#0b6d41] text-sm font-semibold px-3 py-1.5 rounded-full">✓ NDC</span>
-            <span className="flex items-center gap-1.5 bg-[#FBFBEE] border border-[#0f8f56] text-[#0b6d41] text-sm font-semibold px-3 py-1.5 rounded-full">✓ NAAC</span>
+            <span className="flex items-center gap-1.5 bg-[#FBFBEE] border border-[#0f8f56] text-[#0b6d41] text-sm font-semibold px-3 py-1.5 rounded-full">✓ NAAC Accredited (A)</span>
+            <span className="flex items-center gap-1.5 bg-[#FBFBEE] border border-[#0f8f56] text-[#0b6d41] text-sm font-semibold px-3 py-1.5 rounded-full">✓ NDC Approved</span>
           </div>
           <span className="hidden sm:block text-gray-300">|</span>
           <p className="text-gray-500 text-sm text-center">Affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai</p>
@@ -173,7 +176,7 @@ export default function SalemPage() {
             Are There Any Dental Colleges in Salem?
           </h2>
           <p className="snippet-answer text-gray-700 leading-relaxed mb-6 bg-white p-5 rounded-xl border border-[#0f8f56]/30" style={{ fontSize: 'clamp(0.9rem, 1vw + 0.4rem, 1.05rem)' }}>
-            Salem district has one dental college of its own, Vinayaka Mission&apos;s Sankarachariyar Dental College at Ariyanur. Outside the district, JKKN Dental College &amp; Hospital at Komarapalayam on NH-544 (Salem-Coimbatore Highway), about 60 km from Salem, offers both BDS and MDS: approved by the National Dental Commission (formerly Dental Council of India), NAAC accredited and affiliated to TN Dr. MGR Medical University, with BDS (100 seats), MDS (18 seats, 5 specialisations) and 93.9% of the 2024-25 batch placed or in higher studies.
+            Salem district has one dental college of its own, Vinayaka Mission&apos;s Sankarachariyar Dental College at Ariyanur. Outside the district, JKKN Dental College &amp; Hospital at Komarapalayam on NH-544 (Salem-Coimbatore Highway), about 60 km from Salem, offers both BDS and MDS: approved by the National Dental Commission (formerly Dental Council of India), NAAC Accredited (A, CGPA 3.01) and affiliated to TN Dr. MGR Medical University, with BDS (100 seats), MDS (18 seats, 5 specialisations) and 93.9% of the 2024-25 batch placed or in higher studies.
           </p>
           <p id="voice-answer" className="voice-answer text-gray-700 leading-relaxed" style={{ borderLeft: '3px solid #0f8f56', paddingLeft: '1rem', fontSize: 'clamp(0.875rem, 1vw + 0.3rem, 1rem)' }}>
             JKKN Dental College &amp; Hospital, located sixty kilometres from Salem on NH-544 (Salem-Coimbatore Highway), is NDC-approved with two hundred plus dental chairs, five hundred plus daily patients, and 93.9% of the 2024-25 batch placed or in higher studies.
