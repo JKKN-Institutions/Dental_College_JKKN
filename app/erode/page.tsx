@@ -34,7 +34,7 @@ export default function ErodePage() {
   const transportRows = [
     { icon: <Route className="w-6 h-6 text-[#0b6d41]" />, label: 'ROUTE', text: 'NH-544 — direct highway connectivity from Erode to Komarapalayam (~18 km)' },
     { icon: <Bus className="w-6 h-6 text-[#0b6d41]" />, label: 'BY BUS', text: 'Regular government and private buses from Erode Central Bus Stand to Komarapalayam available throughout the day' },
-    { icon: <Train className="w-6 h-6 text-[#0b6d41]" />, label: 'NEAREST RAILWAY STATION', text: 'Erode Junction (~18 km from campus) — well connected to Chennai, Coimbatore, Salem, and Bangalore' },
+    { icon: <Train className="w-6 h-6 text-[#0b6d41]" />, label: 'NEAREST RAILWAY STATION', text: 'Erode Junction (~21 km from campus) — well connected to Chennai, Coimbatore, Salem, and Bangalore' },
     { icon: <Plane className="w-6 h-6 text-[#0b6d41]" />, label: 'NEAREST AIRPORT', text: 'Coimbatore International Airport (Code: CJB) (~108 km)' },
     { icon: <MapPin className="w-6 h-6 text-[#0b6d41]" />, label: 'CAMPUS ADDRESS', text: 'JKKN Institutions, Natarajapuram, NH-544, Komarapalayam (TK), Namakkal (DT), Tamil Nadu - 638183' },
   ];
@@ -100,8 +100,7 @@ export default function ErodePage() {
         </h1>
         <p className="text-white/60 text-sm font-medium tracking-wide mb-6">NDC-Approved Dental College 18 km from Erode — JKKN Dental College &amp; Hospital, Komarapalayam</p>
         <p className="text-white/80 max-w-2xl mb-10 leading-relaxed" style={{ fontSize: 'clamp(0.9rem, 1vw + 0.5rem, 1.1rem)' }}>
-          Erode to JKKN — a short, smooth ride on NH-544. JKKN Dental College &amp; Hospital offers top-tier dental programmes with
-          93.9% placed or in higher studies (2024-25 batch) — just 18 km from Erode with excellent highway connectivity.
+          JKKN Dental College &amp; Hospital, established in 1987, is about 18 km from Erode at Komarapalayam, Namakkal district, on NH-544. It is the longest-established of the four BDS colleges within about 30 km of Erode, holds NAAC &apos;A&apos; grade (CGPA 3.01) and offers BDS (100 seats) and MDS (18 seats).
         </p>
         <ul className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 mb-10 w-full max-w-2xl list-none p-0 m-0">
           {[
@@ -431,10 +430,10 @@ export default function ErodePage() {
               { label: 'Distance from Erode', value: 'Approximately 18 km via NH-544 — 35–40 minutes by road' },
               { label: 'Founded', value: '1987 (part of JKKN Institutions, est. 1952)' },
               { label: 'Programmes', value: 'BDS (100 seats) + MDS (5 specialisations)' },
-              { label: 'Hospital', value: '200+ dental chairs, 100+ beds, 500+ patients daily' },
+              { label: 'Hospital', value: '200+ dental chairs, 100+ beds, 500+ patients daily (confirmed by the college office, 2026)' },
               { label: 'Approval', value: 'National Dental Commission (NDC)' },
               { label: 'Affiliation', value: 'TN Dr. MGR Medical University, Chennai' },
-              { label: 'Contact', value: '+91 9345855001 | info@jkkn.ac.in' },
+              { label: 'Contact', value: '+91 9345855001 | dental@jkkn.ac.in' },
             ].map((item) => (
               <div key={item.label} className="bg-[#FBFBEE] rounded-xl p-4 border border-gray-100">
                 <dt className="text-xs font-semibold tracking-widest text-[#0b6d41] uppercase mb-1">{item.label}</dt>
@@ -467,6 +466,7 @@ export default function ErodePage() {
                 </summary>
                 <div className="px-5 pb-5 pt-2 text-gray-500 text-sm leading-relaxed border-t border-[#0f8f56]/20 bg-white">
                   {faq.a}
+                  {faq.voice && <p className="mt-2 text-xs text-[#0b6d41]">Also asked: {faq.voice}</p>}
                 </div>
               </details>
             ))}

@@ -5,7 +5,8 @@
  */
 import type { FaqItem } from '@/lib/faq';
 
-export const faqs: FaqItem[] = [
+// voice = the spoken Tanglish form, printed under the answer as "Also asked"; it is not part of the JSON-LD.
+export const faqs: (FaqItem & { voice?: string })[] = [
   {
     q: 'Are there any dental colleges in Erode?',
     a: 'Erode district has limited dental college options. JKKN Dental College & Hospital, an NDC-approved dental college, is located 18 km from Erode at Komarapalayam, Namakkal, on NH-544. It offers BDS with 100 seats and MDS in 5 specializations, affiliated to TN Dr. MGR Medical University, Chennai.',
@@ -36,7 +37,12 @@ export const faqs: FaqItem[] = [
   },
   {
     q: 'Does JKKN Dental have its own hospital?',
-    a: 'Yes, JKKN Dental College & Hospital has a 200+ chair dental hospital and 100+ bed facility right on campus. Learners from Erode benefit from treating 500+ patients daily who visit from surrounding districts, gaining hands-on clinical training in the college hospital.',
+    a: 'Yes, JKKN Dental College & Hospital has a 200+ chair dental hospital and 100+ bed facility right on campus. Learners from Erode benefit from treating 500+ patients daily who visit from surrounding districts, gaining hands-on clinical training in the college hospital. (confirmed by the college office, 2026)',
+  },
+  {
+    q: "What were the placements for JKKN Dental College's 2024-25 batch?",
+    a: 'In its NIRF 2026 submission, JKKN Dental College & Hospital reported that of 99 BDS graduates in the 2024-25 batch, 75 were placed and 18 went on to higher studies, 93.9% in all, at a median salary of Rs 3,60,000. All 7 MDS graduates were placed at a median of Rs 6,00,000.',
+    voice: 'JKKN Dental placement eppadi?',
   },
   {
     q: 'What MDS specialisations are available?',
