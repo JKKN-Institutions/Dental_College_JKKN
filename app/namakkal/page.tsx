@@ -184,7 +184,7 @@ export default function NamakkalPage() {
               Learn about JKKN&apos;s history →
             </Link>
             <span className="hidden sm:block text-gray-300">|</span>
-            <Link href="/about/approvals-accreditations/" className="text-[#0b6d41] hover:underline text-sm font-medium">
+            <Link href="/about/approvals-and-affiliation/dci-bds/" className="text-[#0b6d41] hover:underline text-sm font-medium">
               View NDC approval documents →
             </Link>
           </div>
