@@ -288,7 +288,7 @@ export default function BDSProgram() {
         <div className="max-w-4xl mx-auto">
           <div className="answer-capsule bg-white border-l-4 border-[#0f8f56] rounded-r-xl p-6 shadow-sm">
             <p className="text-gray-700 leading-relaxed text-base md:text-lg">
-              <strong className="text-[#0b6d41]">JKKN Dental College & Hospital</strong>, established in 1987 under the J.K.K. Nattraja Educational Institutions (since 1952), is a NDC-approved and <a href="/accreditation/naac/" className="text-[#0b6d41] underline hover:text-[#0b6d41]">NAAC Accredited (A)</a> dental institution located on NH-544, Komarapalayam, Namakkal District, Tamil Nadu 638183. It offers <strong>100 BDS seats</strong> and <strong>18 MDS seats</strong> across 5 specializations, affiliated to the <a href="https://www.tnmgrmu.ac.in/" target="_blank" rel="noopener noreferrer" className="text-[#0b6d41] underline hover:text-[#0b6d41]">Tamil Nadu Dr. M.G.R. Medical University</a>, Chennai. With 200+ dental chairs, 100+ hospital beds, and 500+ daily patient footfall across 9 departments, JKKN gives BDS learners daily clinical exposure in the college hospital, alongside <a href="/research/research-development-rd-cell/" className="text-[#0b6d41] underline hover:text-[#0b6d41]">research excellence</a> with 50+ publications and 25+ MoU partners. The college provides 93.9% placed or in higher studies (2024-25 batch) including international opportunities.
+              <strong className="text-[#0b6d41]">JKKN Dental College & Hospital</strong>, established in 1987 under the J.K.K. Nattraja Educational Institutions (since 1952), is a NDC-approved and <a href="/accreditation/naac/" className="text-[#0b6d41] underline hover:text-[#0b6d41]">NAAC Accredited (A)</a> dental institution located on NH-544, Komarapalayam, Namakkal District, Tamil Nadu 638183. It offers <strong>100 BDS seats</strong> and <strong>18 MDS seats</strong> across 5 specializations, affiliated to the <a href="https://www.tnmgrmu.ac.in/" target="_blank" rel="noopener noreferrer" className="text-[#0b6d41] underline hover:text-[#0b6d41]">Tamil Nadu Dr. M.G.R. Medical University</a>, Chennai. With 200+ dental chairs, 100+ hospital beds, and 500+ daily patient footfall across 9 departments, JKKN gives BDS learners daily clinical exposure in the college hospital, alongside <a href="/research/research-development-rd-cell/" className="text-[#0b6d41] underline hover:text-[#0b6d41]">research excellence</a>; faculty papers are listed on the <a href="/research/publication/" className="text-[#0b6d41] underline hover:text-[#0b6d41]">Research Publications</a> page and the signed MoUs on the <a href="/research/mou-memorandum-of-understanding/" className="text-[#0b6d41] underline hover:text-[#0b6d41]">MoU</a> page. The college provides 93.9% placed or in higher studies (2024-25 batch) including international opportunities.
             </p>
           </div>
         </div>
@@ -325,7 +325,7 @@ export default function BDSProgram() {
               { num: 6, title: '74+ Years of Trust Legacy (Since 1952)', desc: 'Part of J.K.K. Nattraja Educational Institutions, one of the oldest educational trusts in Tamil Nadu with a legacy spanning 74+ years across 9 institutions.' },
               { num: 7, title: 'Strategic NH-544 Location — Well-Connected', desc: 'Located on the Salem-Coimbatore National Highway, easily accessible from Erode (~18 km), Salem (~60 km), Namakkal town (~65 km), and Coimbatore (~105 km).' },
               { num: 8, title: 'AI-Integrated Campus', desc: 'An AI-integrated dental campus, blending traditional clinical excellence with cutting-edge artificial intelligence tools for diagnostics and education.' },
-              { num: 9, title: '50+ Research Publications — Strong Research Culture', desc: 'Active research ecosystem with 50+ published research papers, 25+ MoU partners, ethical committee approvals, and dedicated R&D facilities.' },
+              { num: 9, title: 'Research Culture — Published Faculty Papers', desc: 'Faculty papers listed on the Research Publications page, signed MoUs on the MoU page, ethical committee approvals, and dedicated R&D facilities.' },
               { num: 10, title: 'Affordable Fee Structure with Scholarships', desc: 'Government-regulated fee structure with scholarship options for meritorious learners and economically weaker sections (BC/MBC/SC/ST categories).' },
             ].map((item) => (
               <div key={item.num} className="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-shadow duration-300">
@@ -1030,7 +1030,7 @@ export default function BDSProgram() {
               { title: 'Dental Hospital', subtitle: '200+ Chairs & 100+ Beds', desc: 'Fully equipped multi-specialty dental hospital for comprehensive clinical training with 500+ daily patients', gradient: 'from-[#0b6d41] to-[#032816]', iconBg: 'bg-[#0b6d41]' },
               { title: 'Simulation Learning Lab', subtitle: 'Phantom Head Units', desc: 'Advanced simulation learning lab for pre-clinical skill development and practice before patient contact', gradient: 'from-[#0f8f56] to-[#0f8f56]', iconBg: 'bg-white/20' },
               { title: 'Digital Radiology', subtitle: 'OPG, CBCT & Digital X-Ray', desc: 'Latest digital radiology equipment for accurate diagnosis and treatment planning', gradient: 'from-[#0f8f56] to-[#0f8f56]', iconBg: 'bg-white/20' },
-              { title: 'Research Center', subtitle: 'R&D Facilities', desc: 'Dedicated research infrastructure supporting 50+ publications and evidence-based dentistry', gradient: 'from-[#0b6d41] to-[#032816]', iconBg: 'bg-[#0b6d41]' },
+              { title: 'Research Center', subtitle: 'R&D Facilities', desc: 'Dedicated research infrastructure for faculty publications and evidence-based dentistry', gradient: 'from-[#0b6d41] to-[#032816]', iconBg: 'bg-[#0b6d41]' },
               { title: 'Digital Learning Commons', subtitle: 'Books, Journals & E-Resources', desc: 'Central learning commons with extensive collection of dental textbooks, international journals, and online databases', gradient: 'from-[#0f8f56] to-[#0f8f56]', iconBg: 'bg-white/20' },
               { title: 'AI-Integrated Campus', subtitle: 'AI-Integrated', desc: 'Cutting-edge AI tools integrated into dental education, diagnostics, and patient management systems', gradient: 'from-[#0b6d41] to-[#032816]', iconBg: 'bg-[#0b6d41]' },
             ].map((facility, idx) => (
@@ -1064,7 +1064,7 @@ export default function BDSProgram() {
           </h2>
           <p className="text-gray-600 text-center mb-10 max-w-3xl mx-auto">
             JKKN Dental College is taught by 46 faculty members across all 9 departments,
-            contributing to 50+ research publications and mentoring the next generation of
+            contributing to research publications and mentoring the next generation of
             dental professionals.
           </p>
 

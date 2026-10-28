@@ -67,7 +67,7 @@ const trustItems = [
   { emoji: "\uD83D\uDC65", text: "500+ Daily Patients" },
   { emoji: "\uD83D\uDCBC", text: "Placement Support" },
   { emoji: "\uD83C\uDFE5", text: "100+ Hospital Beds" },
-  { emoji: "\uD83D\uDCDA", text: "50+ Publications" },
+  { emoji: "\uD83D\uDCDA", text: "Faculty Research Publications" },
 ];
 
 const bentoCards = [
