@@ -61,10 +61,10 @@ export default function NamakkalPage() {
     { label: 'Location', value: 'Komarapalayam, Namakkal District, Tamil Nadu 638183' },
     { label: 'Established', value: '1987 — part of JKKN Institutions (est. 1952)' },
     { label: 'Approval', value: 'National Dental Commission (NDC) approved' },
-    { label: 'Accreditation', value: 'NAAC accredited (A)' },
+    { label: 'Accreditation', value: "NAAC 'A' grade, CGPA 3.01, valid up to 26 February 2030" },
     { label: 'Affiliation', value: 'Tamil Nadu Dr. M.G.R. Medical University, Chennai' },
     { label: 'BDS Seats', value: '100 seats per year' },
-    { label: 'MDS', value: '5 specializations' },
+    { label: 'MDS', value: '18 seats in 5 specializations' },
     { label: 'Hospital', value: '200-chair teaching hospital, 500+ patients/day' },
     { label: 'Placements', value: '93.9% placed or in higher studies (2024-25 batch)' },
     { label: 'Campus', value: 'an AI-integrated dental campus' },
@@ -123,7 +123,7 @@ export default function NamakkalPage() {
 
         {/* Snippet Answer Block — AEO optimized */}
         <p className="snippet-answer text-white/80 max-w-2xl mb-6 leading-relaxed" style={{ fontSize: 'clamp(0.9rem, 1vw + 0.5rem, 1.05rem)', color: 'rgba(255,255,255,0.8)' }}>
-          JKKN Dental College &amp; Hospital is one of the three NDC-approved dental colleges in Namakkal district, located at Komarapalayam on National Highway 544 (Salem–Coimbatore Highway). Approved by the National Dental Commission and affiliated to Tamil Nadu Dr. MGR Medical University, it offers BDS (100 seats) and MDS (5 specializations). The 200-chair teaching hospital treats 500+ patients daily. Established in 1987.
+          JKKN Dental College &amp; Hospital, established in 1987 at Komarapalayam, is one of three NDC-approved dental colleges in Namakkal district. It holds NAAC &apos;A&apos; grade (CGPA 3.01, valid to February 2030), offers BDS (100 seats) and MDS (18 seats, five specialities), and reported 93.9% of its 2024-25 BDS batch placed or in higher studies (NIRF 2026).
         </p>
 
         {/* Voice Answer Block — speakable */}
@@ -298,7 +298,7 @@ export default function NamakkalPage() {
             <p className="text-gray-500 text-xs mt-2">All three are affiliated to The Tamil Nadu Dr. M.G.R. Medical University and admit through NEET counselling. Details for the other two colleges are from their own official websites (checked September 2026); JKKN figures are from this college's published records.</p>
           </div>
           <p className="text-gray-600 max-w-3xl mx-auto mb-8 leading-relaxed text-sm">
-            <strong className="text-gray-800">E-E-A-T Note:</strong> JKKN Dental College &amp; Hospital is NDC approved (National Dental Commission), NAAC accredited with an A grade (National Assessment and Accreditation Council), and affiliated to Tamil Nadu Dr. M.G.R. Medical University, Chennai. All programmes are regulated by Tamil Nadu DME (Directorate of Medical Education). Clinical training is conducted at the on-campus 200-chair dental hospital under qualified senior learners with 50+ publications.
+            <strong className="text-gray-800">E-E-A-T Note:</strong> JKKN Dental College &amp; Hospital is NDC approved (National Dental Commission), NAAC accredited with an A grade (National Assessment and Accreditation Council), and affiliated to Tamil Nadu Dr. M.G.R. Medical University, Chennai. All programmes are regulated by Tamil Nadu DME (Directorate of Medical Education). Clinical training is conducted at the on-campus 200-chair dental hospital under qualified senior learners; their papers are listed on the <Link href="/research/publication/" className="text-[#0b6d41] hover:underline font-medium">Research Publications</Link> page.
           </p>
           <div className="w-14 h-1 bg-[#ffde59] rounded mx-auto mb-12" />
           <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 list-none">
@@ -378,13 +378,13 @@ export default function NamakkalPage() {
                     <td className="px-5 py-4 font-semibold text-gray-900">BDS</td>
                     <td className="px-5 py-4 text-gray-600">5 years (4 + 1 internship)</td>
                     <td className="px-5 py-4 text-gray-600">100</td>
-                    <td className="px-5 py-4 text-gray-600">As per Tamil Nadu DME regulations. <Link href="/fees-structure/" className="text-[#0b6d41] hover:underline font-medium">View official fee structure →</Link></td>
+                    <td className="px-5 py-4 text-gray-600">Management quota: Rs 4,50,000 a year (day scholar) or Rs 5,50,000 (with hostel), instruments included. Government quota: as per government norms. <Link href="/fees-structure/" className="text-[#0b6d41] hover:underline font-medium">View official fee structure →</Link></td>
                   </tr>
                   <tr className="bg-[#FBFBEE]">
                     <td className="px-5 py-4 font-semibold text-gray-900">MDS</td>
                     <td className="px-5 py-4 text-gray-600">3 years</td>
-                    <td className="px-5 py-4 text-gray-600">30</td>
-                    <td className="px-5 py-4 text-gray-600">As per Tamil Nadu DOGE regulations. <Link href="/fees-structure/" className="text-[#0b6d41] hover:underline font-medium">View official fee structure →</Link></td>
+                    <td className="px-5 py-4 text-gray-600">18</td>
+                    <td className="px-5 py-4 text-gray-600">Management quota: Rs 8,50,000 a year. Government quota: as per government norms. <Link href="/fees-structure/" className="text-[#0b6d41] hover:underline font-medium">View official fee structure →</Link></td>
                   </tr>
                 </tbody>
               </table>
@@ -528,6 +528,7 @@ export default function NamakkalPage() {
                 </summary>
                 <div className="px-5 pb-5 pt-2 text-gray-500 text-sm leading-relaxed border-t border-[#0f8f56]/20 bg-white">
                   {faq.a}
+                  {faq.voice && <p className="mt-2 text-xs text-[#0b6d41]">Also asked: {faq.voice}</p>}
                 </div>
               </details>
             ))}

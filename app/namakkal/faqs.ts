@@ -5,7 +5,8 @@
  */
 import type { FaqItem } from '@/lib/faq';
 
-export const faqs: FaqItem[] = [
+// voice = the spoken Tanglish form, printed under the answer as "Also asked"; it is not part of the JSON-LD.
+export const faqs: (FaqItem & { voice?: string })[] = [
   {
     q: 'Is there a dental college in Namakkal?',
     a: 'Yes. JKKN Dental College & Hospital is a National Dental Commission approved dental college in Namakkal district, located at Komarapalayam on NH-544. Approved by the National Dental Commission (NDC), formerly the Dental Council of India and affiliated to Tamil Nadu Dr. M.G.R. Medical University, Chennai, it offers BDS (100 seats) and MDS (5 specializations) with a 200-chair teaching hospital treating 500+ patients daily.',
@@ -40,10 +41,20 @@ export const faqs: FaqItem[] = [
   },
   {
     q: 'What is the fee structure for BDS at JKKN Dental College?',
-    a: 'BDS fee structure at JKKN Dental College & Hospital, Namakkal district, varies by quota (Government/Management). For official and current fee details, visit dental.jkkn.ac.in/fees-structure/ or call +91 9345855001. Fees are regulated by Tamil Nadu DME and are subject to change per government guidelines.',
+    a: 'Management-quota BDS tuition at JKKN Dental College & Hospital for 2026-27 is Rs 4,50,000 a year for day scholars and Rs 5,50,000 with hostel, instruments included; government-quota fees follow government norms. Management-quota MDS tuition is Rs 8,50,000 a year. Full details: dental.jkkn.ac.in/fee-structure/ or +91 9345855001.',
   },
   {
     q: 'What are the placements from JKKN Dental College?',
     a: 'JKKN Dental College & Hospital, Namakkal district, reports 93.9% placed or in higher studies (2024-25 batch): of 99 BDS graduates, 75 were placed and 18 went on to higher studies, with a median salary of Rs 3,60,000, as filed in its NIRF 2026 submission.',
+  },
+  {
+    q: 'What is the NAAC grade of JKKN Dental College & Hospital?',
+    a: "JKKN Dental College & Hospital holds NAAC 'A' grade with a CGPA of 3.01, valid up to 26 February 2030, as published on its NAAC accreditation page. It is also approved by the National Dental Commission and affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai.",
+    voice: 'JKKN Dental NAAC grade enna?',
+  },
+  {
+    q: 'How many MDS seats does JKKN Dental College have in each speciality?',
+    a: "JKKN Dental College & Hospital holds 18 MDS seats in the university's 2025-26 matrix: Conservative Dentistry and Endodontics 5, Orthodontics and Dentofacial Orthopaedics 5, Prosthodontics and Crown & Bridge 3, Oral Medicine & Radiology 3, and Periodontology 2. Management-quota MDS tuition is Rs 8,50,000 a year.",
+    voice: 'JKKN Dental la MDS seats evlo?',
   },
 ];
