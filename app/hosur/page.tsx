@@ -383,7 +383,7 @@ export default function HosurPage() {
               { label: 'Distance from Hosur', value: 'Approximately 245 km via NH-44 — 4.5–5 hours by road' },
               { label: 'Founded', value: '1987 (part of JKKN Institutions, est. 1952)' },
               { label: 'Programmes', value: 'BDS (100 seats) + MDS (5 specialisations)' },
-              { label: 'Hospital', value: '200+ dental chairs, 100+ beds, 500+ patients daily' },
+              { label: 'Hospital', value: '200+ dental chairs, 100+ beds, 500+ patients daily (confirmed by the college office, 2026)' },
               { label: 'Approval', value: 'National Dental Commission (NDC)' },
               { label: 'Affiliation', value: 'TN Dr. MGR Medical University, Chennai' },
               { label: 'Contact', value: '+91 9345855001 | info@jkkn.ac.in' },

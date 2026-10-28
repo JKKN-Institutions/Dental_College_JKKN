@@ -71,7 +71,7 @@ export default function BDSProgram() {
               },
               {
                 q: 'How many dental chairs does JKKN Dental Hospital have?',
-                a: 'JKKN Dental Hospital has 200+ dental chairs and 100 hospital beds. The hospital serves 500+ patients daily across 9 departments, giving BDS learners hands-on clinical training in their own college hospital.'
+                a: 'JKKN Dental Hospital has 200+ dental chairs and 100 hospital beds. The hospital serves 500+ patients daily across 9 departments, giving BDS learners hands-on clinical training in their own college hospital. (confirmed by the college office, 2026)'
               },
               {
                 q: 'Can international learners apply for BDS at JKKN?',

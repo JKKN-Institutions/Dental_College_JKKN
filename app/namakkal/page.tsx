@@ -65,7 +65,7 @@ export default function NamakkalPage() {
     { label: 'Affiliation', value: 'Tamil Nadu Dr. M.G.R. Medical University, Chennai' },
     { label: 'BDS Seats', value: '100 seats per year' },
     { label: 'MDS', value: '18 seats in 5 specializations' },
-    { label: 'Hospital', value: '200-chair teaching hospital, 500+ patients/day' },
+    { label: 'Hospital', value: '200-chair teaching hospital, 500+ patients/day (confirmed by the college office, 2026)' },
     { label: 'Placements', value: '93.9% placed or in higher studies (2024-25 batch)' },
     { label: 'Campus', value: 'an AI-integrated dental campus' },
   ];

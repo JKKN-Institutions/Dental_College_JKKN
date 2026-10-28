@@ -107,7 +107,7 @@ const facts = [
   { label: 'University', value: collegeFacts.affiliatedUniversity },
   { label: 'Accreditation', value: `NAAC '${collegeFacts.naacGrade}' Grade, CGPA ${collegeFacts.naacScore}, valid up to 26 February 2030` },
   { label: 'Seats', value: `${collegeFacts.bdsSeatCount} BDS · ${collegeFacts.mdsSeatCount} MDS in ${collegeFacts.mdsSpecialisations} specialities` },
-  { label: 'Hospital', value: `${collegeFacts.dentalChairs}+ dental chairs, ${collegeFacts.hospitalBeds}+ beds, about ${collegeFacts.dailyPatients} patients a day` },
+  { label: 'Hospital', value: `${collegeFacts.dentalChairs}+ dental chairs, ${collegeFacts.hospitalBeds}+ beds, about ${collegeFacts.dailyPatients} patients a day (confirmed by the college office, 2026)` },
   { label: 'BDS outcome 2024-25', value: `${collegeFacts.placementBds.placed} placed and ${collegeFacts.placementBds.higherStudies} in higher studies of ${collegeFacts.placementBds.graduated} (NIRF 2026 filing)` },
   { label: 'MDS outcome 2024-25', value: `${collegeFacts.placementMds.placed} of ${collegeFacts.placementMds.graduated} placed (NIRF 2026 filing)` },
 ];

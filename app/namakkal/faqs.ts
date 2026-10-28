@@ -25,7 +25,7 @@ export const faqs: (FaqItem & { voice?: string })[] = [
   },
   {
     q: 'Does JKKN Dental have its own hospital?',
-    a: 'Yes. JKKN Dental College & Hospital has a fully equipped 200-chair dental hospital with 100+ inpatient beds on the same campus in Namakkal district. Being in Namakkal district, the hospital draws a large patient base from the local community — learners treat 500+ patients daily and gain extensive clinical skills from their very first year.',
+    a: 'Yes. JKKN Dental College & Hospital has a fully equipped 200-chair dental hospital with 100+ inpatient beds on the same campus in Namakkal district. Being in Namakkal district, the hospital draws a large patient base from the local community — learners treat 500+ patients daily and gain extensive clinical skills from their very first year. (confirmed by the college office, 2026)',
   },
   {
     q: 'What MDS specialisations are available?',

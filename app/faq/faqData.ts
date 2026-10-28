@@ -210,7 +210,7 @@ export const faqCategories = [
       {
         question: 'How many dental chairs does JKKN Dental Hospital have?',
         answer:
-          'JKKN Dental Hospital has 200+ dental chairs and 100 hospital beds. The hospital serves 500+ patients daily across 9 departments, providing extensive hands-on clinical exposure to BDS students in the college hospital.',
+          'JKKN Dental Hospital has 200+ dental chairs and 100 hospital beds. The hospital serves 500+ patients daily across 9 departments, providing extensive hands-on clinical exposure to BDS students in the college hospital. (confirmed by the college office, 2026)',
       },
       {
         question: 'What are the hostel facilities at JKKN Dental College?',

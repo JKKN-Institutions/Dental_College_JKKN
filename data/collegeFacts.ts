@@ -73,6 +73,8 @@ export const collegeFacts = {
   dentalChairs: 200, // 200+ published; confirmed by the college office 2026-09-18
   hospitalBeds: 100, // Beds and chairs are different things - do not merge them
   dailyPatients: 500, // 500+ published; confirmed by the college office 2026-09-18
+  // RECONFIRMED 2026-10-28: the user checked with the college office - 200 chairs and 500+ patients a day.
+  // The pages now say "(confirmed by the college office, 2026)" in Key Facts and the hospital FAQs.
   // NOT A CONTRADICTION WITH NIRF. The NIRF form asks one patient question and fixes its
   // year: "Average OPD attendance in the calendar year 2022" = 437, and that 2022 is the
   // form's wording, not a stale entry. 437 OPD in 2022 and 500+ daily today are different
