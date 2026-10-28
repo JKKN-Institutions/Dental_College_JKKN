@@ -88,12 +88,12 @@ export default function WhyChooseJKKN() {
             <div className="text-gray-200 text-xs sm:text-sm">Alumni Network</div>
           </div>
           <div className="bg-[#032816] rounded-xl sm:rounded-2xl p-4 sm:p-6 text-center">
-            <div className="text-2xl xs:text-3xl sm:text-4xl font-bold text-[#ffde59] mb-1 sm:mb-2">50+</div>
-            <div className="text-gray-200 text-xs sm:text-sm">Publications</div>
+            <div className="text-2xl xs:text-3xl sm:text-4xl font-bold text-[#ffde59] mb-1 sm:mb-2">A</div>
+            <div className="text-gray-200 text-xs sm:text-sm">NAAC Grade (CGPA 3.01)</div>
           </div>
           <div className="bg-[#032816] rounded-xl sm:rounded-2xl p-4 sm:p-6 text-center">
-            <div className="text-2xl xs:text-3xl sm:text-4xl font-bold text-[#ffde59] mb-1 sm:mb-2">25+</div>
-            <div className="text-gray-200 text-xs sm:text-sm">Partnerships</div>
+            <div className="text-2xl xs:text-3xl sm:text-4xl font-bold text-[#ffde59] mb-1 sm:mb-2">4</div>
+            <div className="text-gray-200 text-xs sm:text-sm">MoUs on Record</div>
           </div>
         </div>
       </div>

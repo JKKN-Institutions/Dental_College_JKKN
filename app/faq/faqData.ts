@@ -276,7 +276,7 @@ export const faqCategories = [
       {
         question: 'Does JKKN have placement support for MDS students?',
         answer:
-          'Yes, MDS graduates from JKKN receive dedicated placement support. With advanced clinical training across 5 specializations and 50+ faculty publications, MDS graduates are placed in teaching institutions, specialty hospitals, and research organisations.',
+          'Yes, MDS graduates from JKKN receive dedicated placement support. With advanced clinical training across 5 specializations, MDS graduates are placed in teaching institutions, specialty hospitals, and research organisations.',
       },
       {
         question: 'Is JKKN Dental College good for higher studies after BDS?',

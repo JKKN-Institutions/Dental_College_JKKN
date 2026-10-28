@@ -50,7 +50,7 @@ export default function PlacementsPage() {
     { icon: <Hospital className="w-7 h-7 text-[#0b6d41]" />, title: 'Hospital Dentistry', desc: 'Work in multi-specialty hospitals, corporate dental chains, or government hospitals as a dental surgeon or specialist.' },
     { icon: <GraduationCap className="w-7 h-7 text-[#0b6d41]" />, title: 'Higher Studies (MDS)', desc: 'Pursue MDS in 5 specialisations at JKKN or other top institutions. Strong NEET MDS coaching support provided.' },
     { icon: <Globe className="w-7 h-7 text-[#0b6d41]" />, title: 'International Opportunities', desc: 'Practise abroad after clearing that country\'s dental licensing exam (for example the UK, UAE or Saudi Arabia). The CDC guides you on the exams.' },
-    { icon: <Microscope className="w-7 h-7 text-[#0b6d41]" />, title: 'Research & Academia', desc: 'Join dental research institutions or teaching colleges. 50+ senior learner publications provide a strong research foundation.' },
+    { icon: <Microscope className="w-7 h-7 text-[#0b6d41]" />, title: 'Research & Academia', desc: 'Join dental research institutions or teaching colleges. Faculty papers are listed on the Research Publications page.' },
     { icon: <Users className="w-7 h-7 text-[#0b6d41]" />, title: 'Public Health Dentistry', desc: 'Serve communities through government PHCs, public health programmes, and dental outreach initiatives across India.' },
   ];
 
