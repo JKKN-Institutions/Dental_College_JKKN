@@ -58,18 +58,25 @@ export default function NAAC() {
               as recorded in data/collegeFacts.ts (naacGrade / naacScore / naacValidTo, read 2026-09-12). */}
           <div className="mt-4 rounded-xl border border-[#0b6d41]/20 bg-[#fbfbee] p-5">
             <p className="text-lg md:text-xl font-bold text-[#0b6d41]">
-              NAAC &lsquo;A&rsquo; Grade &middot; CGPA 3.01 &middot; valid up to 26 February 2030
+              NAAC &lsquo;A&rsquo; Grade &middot; CGPA 3.01 &middot; first cycle &middot; declared 27 February 2025 &middot; valid up to 26 February 2030
             </p>
             <p className="mt-1 text-sm text-gray-700">
               Certificate issued to J K K Nattraja Dental College and Hospital.{' '}
               <a
-                href="https://ahs.jkkn.ac.in/pdfs/NAAC-certificate.pdf"
+                href="/pdf/NAAC.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="font-semibold text-[#0b6d41] underline"
               >
                 View the NAAC certificate (PDF)
               </a>
+            </p>
+            <p className="mt-2 text-xs text-gray-600">
+              Source: NAAC,{' '}
+              <a href="https://naac.gov.in/index.php/en/2-uncategorised/32-accreditation-status" target="_blank" rel="noopener noreferrer" className="underline">
+                institutions with valid accreditation as on 14-08-2025
+              </a>{' '}
+              (grade, CGPA, cycle, date declared), read 29-10-2026. Validity date: the NAAC certificate.
             </p>
           </div>
         </div>

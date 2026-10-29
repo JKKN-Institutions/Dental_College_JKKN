@@ -107,10 +107,8 @@ export const collegeFacts = {
   // === AFFILIATIONS ===
   affiliatedUniversity: "The Tamil Nadu Dr. M.G.R. Medical University, Chennai",
   recognizedBy: "National Dental Commission (NDC), formerly the Dental Council of India (DCI)",
-  // The NDC was dissolved w.e.f. 19 March 2026 and the NDC took effect the same date.
-  // NDC naming stays valid as an interim arrangement - the regulator says so itself.
-  // Source: dciindia.gov.in public notice, read 2026-09-16. NDC has no website yet.
-  regulatorSuccessionDate: "2026-03-19",
+  // No date for the DCI -> NDC change is quoted anywhere on the site: no official page read on
+  // 2026-10-29 shows one (dciindia.gov.in now carries the title "National Dental Commission").
   regulatorSuccessionSource: "https://dciindia.gov.in/",
   approvedBy: "Government of Tamil Nadu",
 
@@ -127,7 +125,7 @@ export const collegeFacts = {
   },
 
   // === ACCREDITATION ===
-  // SOURCE: the NAAC certificate itself, https://ahs.jkkn.ac.in/pdfs/NAAC-certificate.pdf
+  // SOURCE: the NAAC certificate itself, https://dental.jkkn.ac.in/pdf/NAAC.pdf (same file as the copy on ahs.jkkn.ac.in)
   // It is addressed to "J K K Nattraja Dental College and Hospital" and declares a CGPA of
   // 3.01 at 'A' grade, valid up to 26 February 2030. Read 2026-09-12; the PDF has no text
   // layer, so the figures come from the embedded certificate images.
@@ -135,7 +133,7 @@ export const collegeFacts = {
   naacGrade: 'A',
   naacScore: 3.01,
   naacValidTo: '2030-02-26',
-  naacCertificateUrl: 'https://ahs.jkkn.ac.in/pdfs/NAAC-certificate.pdf',
+  naacCertificateUrl: 'https://dental.jkkn.ac.in/pdf/NAAC.pdf',
 
   // === CAMPUS ===
   campusArea: '', // e.g., "25 acres" - verify from documents

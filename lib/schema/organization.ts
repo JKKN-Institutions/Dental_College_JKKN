@@ -135,7 +135,7 @@ export const dentalOrganizationSchema = {
       recognizedBy: {
         '@type': 'Organization',
         name: 'National Dental Commission',
-        alternateName: ['NDC', 'Dental Council of India (until 19 March 2026)'],
+        alternateName: ['NDC', 'formerly the Dental Council of India (DCI)'],
         url: collegeFacts.regulatorSuccessionSource,
       },
     },

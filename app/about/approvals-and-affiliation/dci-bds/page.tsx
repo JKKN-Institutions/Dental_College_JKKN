@@ -6,11 +6,11 @@ import { generateBreadcrumbSchema } from '@/lib/metadata';
 export const metadata: Metadata = {
   alternates: { canonical: '/about/approvals-and-affiliation/dci-bds/' },
   title: 'BDS Permission Letter | NDC (formerly DCI) Approval',
-  description: 'Download the JKKN Dental College permission letter for the BDS programme, 100 seats. The Dental Council of India that issued it was dissolved on 19 March 2026 and the National Dental Commission succeeded it; the approval is unaffected.',
+  description: 'Download the JKKN Dental College BDS permission letter (Dental Council of India, 1987) and the BDS recognition order. The regulator is now the NDC.',
   keywords: 'NDC approval, National Dental Commission, DCI approval, dental council India, BDS permission, regulatory approval',
   openGraph: {
     title: 'BDS Permission Letter | NDC (formerly DCI) Approval',
-    description: 'Download the JKKN Dental College permission letter for the BDS programme, 100 seats. The Dental Council of India that issued it was dissolved on 19 March 2026 and the National Dental Commission succeeded it; the approval is unaffected.',
+    description: 'Download the JKKN Dental College BDS permission letter (Dental Council of India, 1987) and the BDS recognition order. The regulator is now the NDC.',
     url: 'https://dental.jkkn.ac.in/about/approvals-and-affiliation/dci-bds/',
     type: 'website',
     siteName: 'JKKN Dental College & Hospital',
