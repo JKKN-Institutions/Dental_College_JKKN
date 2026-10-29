@@ -4,12 +4,12 @@ import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
 export const metadata: Metadata = {
   alternates: { canonical: '/accreditation/nirf/nirf-2025/sdg-institution/' },
-  title: 'NIRF SDG Ranking 2025 | JKKN Dental College',
-  description: 'View JKKN Dental College NIRF 2025 SDG institutions ranking. Check our sustainable development goals performance score. Download SDG report.',
-  keywords: 'NIRF SDG 2025, sustainable development goals, SDG ranking, sustainability score, NIRF SDG institutions',
+  title: 'NIRF 2025 Data - SDG Institutions',
+  description: 'NIRF 2025 SDG Institutions data PDF of JKKN Dental College & Hospital, Komarapalayam, as submitted by the college. Download the official PDF.',
+  keywords: 'NIRF 2025, NIRF SDG institutions, NIRF data, JKKN Dental College NIRF',
   openGraph: {
-    title: 'NIRF SDG Ranking 2025 | JKKN Dental College',
-    description: 'View JKKN Dental College NIRF 2025 SDG institutions ranking. Check our sustainable development goals performance score. Download SDG report.',
+    title: 'NIRF 2025 Data - SDG Institutions | JKKN Dental College',
+    description: 'NIRF 2025 SDG Institutions data PDF of JKKN Dental College & Hospital, Komarapalayam, as submitted by the college. Download the official PDF.',
     url: 'https://dental.jkkn.ac.in/accreditation/nirf/nirf-2025/sdg-institution/',
     type: 'website',
     siteName: 'JKKN Dental College & Hospital',
@@ -26,7 +26,7 @@ export default function SDGInstitution() {
         { name: 'NIRF 2025', url: 'https://dental.jkkn.ac.in/accreditation/nirf/nirf-2025/' },
         { name: 'SDG Institution', url: 'https://dental.jkkn.ac.in/accreditation/nirf/nirf-2025/sdg-institution/' },
       ]} />
-      <PdfRedirect pdfUrl="/pdf/NIRF-2025-SDG-INSTITUTIONS.pdf" />
+      <PdfRedirect pdfUrl="/pdf/NIRF-2025-SDG-INSTITUTIONS.pdf" heading="NIRF 2025 Data - SDG Institutions | JKKN Dental College & Hospital" />
     </>
   );
 }

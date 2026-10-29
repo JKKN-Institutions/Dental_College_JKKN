@@ -4,12 +4,12 @@ import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
 export const metadata: Metadata = {
   alternates: { canonical: '/accreditation/nirf/nirf-2025/innovation/' },
-  title: 'NIRF Innovation Ranking 2025 | JKKN Dental',
-  description: 'View JKKN Dental College NIRF 2025 innovation ranking. Check our innovation & entrepreneurship score in national ranking. Download NIRF innovation report.',
-  keywords: 'NIRF innovation 2025, innovation ranking, entrepreneurship score, NIRF 2025, innovation framework',
+  title: 'NIRF 2025 Data - Innovation',
+  description: 'NIRF 2025 Innovation data PDF of JKKN Dental College & Hospital, Komarapalayam, as submitted by the college. Download the official PDF.',
+  keywords: 'NIRF 2025, NIRF innovation, NIRF data, JKKN Dental College NIRF',
   openGraph: {
-    title: 'NIRF Innovation Ranking 2025 | JKKN Dental',
-    description: 'View JKKN Dental College NIRF 2025 innovation ranking. Check our innovation & entrepreneurship score in national ranking. Download NIRF innovation report.',
+    title: 'NIRF 2025 Data - Innovation | JKKN Dental College',
+    description: 'NIRF 2025 Innovation data PDF of JKKN Dental College & Hospital, Komarapalayam, as submitted by the college. Download the official PDF.',
     url: 'https://dental.jkkn.ac.in/accreditation/nirf/nirf-2025/innovation/',
     type: 'website',
     siteName: 'JKKN Dental College & Hospital',
@@ -26,7 +26,7 @@ export default function NIRF2025Innovation() {
         { name: 'NIRF 2025', url: 'https://dental.jkkn.ac.in/accreditation/nirf/nirf-2025/' },
         { name: 'Innovation', url: 'https://dental.jkkn.ac.in/accreditation/nirf/nirf-2025/innovation/' },
       ]} />
-      <PdfRedirect pdfUrl="/pdf/NIRF-2025-Innovation.pdf" />
+      <PdfRedirect pdfUrl="/pdf/NIRF-2025-Innovation.pdf" heading="NIRF 2025 Data - Innovation | JKKN Dental College & Hospital" />
     </>
   );
 }

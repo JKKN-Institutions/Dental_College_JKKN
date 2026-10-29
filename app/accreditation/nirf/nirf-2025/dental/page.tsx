@@ -4,12 +4,12 @@ import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
 export const metadata: Metadata = {
   alternates: { canonical: '/accreditation/nirf/nirf-2025/dental/' },
-  title: 'NIRF Ranking 2025 Dental | JKKN Dental College Ranking',
-  description: 'JKKN Dental College NIRF 2025 dental ranking. View national ranking, performance metrics, and quality indicators per NIRF framework.',
-  keywords: 'NIRF ranking, dental college ranking, national ranking, NIRF 2025, JKKN ranking',
+  title: 'NIRF 2025 Data - Dental',
+  description: 'JKKN Dental College & Hospital took part in NIRF India Rankings 2025, Dental category. Download the data the college submitted to NIRF.',
+  keywords: 'NIRF 2025, NIRF data, NIRF dental, JKKN Dental College NIRF',
   openGraph: {
-    title: 'NIRF Ranking 2025 Dental | JKKN Dental College Ranking',
-    description: 'JKKN Dental College NIRF 2025 dental ranking. View national ranking, performance metrics, and quality indicators per NIRF framework.',
+    title: 'NIRF 2025 Data - Dental | JKKN Dental College & Hospital',
+    description: 'JKKN Dental College & Hospital took part in NIRF India Rankings 2025, Dental category. Download the data the college submitted to NIRF.',
     url: 'https://dental.jkkn.ac.in/accreditation/nirf/nirf-2025/dental/',
     type: 'website',
     siteName: 'JKKN Dental College & Hospital',
@@ -26,7 +26,7 @@ export default function NIRF2025Dental() {
         { name: 'NIRF 2025', url: 'https://dental.jkkn.ac.in/accreditation/nirf/nirf-2025/' },
         { name: 'Dental', url: 'https://dental.jkkn.ac.in/accreditation/nirf/nirf-2025/dental/' },
       ]} />
-      <PdfRedirect pdfUrl="/pdf/NIRF-2025-Dental.pdf" />
+      <PdfRedirect pdfUrl="/pdf/NIRF-2025-Dental.pdf" heading="NIRF 2025 Data - Dental | JKKN Dental College & Hospital" />
     </>
   );
 }
