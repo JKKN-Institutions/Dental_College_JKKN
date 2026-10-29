@@ -121,7 +121,7 @@ The college has 9 academic departments providing undergraduate teaching and clin
 8. Oral Pathology and Microbiology
 9. Public Health Dentistry
 
-> Note: Of these 9, only the first 5 currently offer NDC/NDC-approved MDS programs. The remaining 4 are BDS-level departments with clinical and didactic teaching.
+> Note: Of these 9, only the first 5 currently offer MDS programmes permitted by the NDC. The remaining 4 are BDS-level departments with clinical and didactic teaching.
 
 ## Hospital & Clinical Infrastructure
 
@@ -144,7 +144,7 @@ The college has 9 academic departments providing undergraduate teaching and clin
 ### BDS Admission Process
 
 1. Qualify NEET-UG with required cutoff score
-2. Register for Tamil Nadu state counselling (TN MCC) or All India Quota counselling (MCC India)
+2. Register for Tamil Nadu state counselling (Selection Committee, DME&R - tnmedicalselection.net) or All India Quota counselling (MCC India)
 3. Choice filling — list JKKN Dental College in preferences
 4. Seat allotment based on rank and reservation
 5. Document verification at allotted college
@@ -257,16 +257,16 @@ JKKN Dental College serves dental education aspirants and dental healthcare pati
 ## Frequently Asked Questions (Reference Answers)
 
 **Q: Is JKKN Dental College NDC approved?**
-A: Yes. JKKN Dental College & Hospital is approved by the National Dental Commission (NDC) - formerly the National Dental Commission (NDC) - for both BDS (100 seats) and MDS (18 seats across 5 specializations) programs. The National Dental Commission was dissolved with effect from 19 March 2026 and the National Dental Commission took effect the same date; NDC naming remains valid as an interim arrangement, so both names refer to the same regulator (source: dciindia.gov.in public notice, read 2026-09-16).
+A: Yes. JKKN Dental College & Hospital is listed by the National Dental Commission (NDC), formerly the Dental Council of India (DCI), with 100 BDS seats and 18 MDS seats (5 specialities) permitted for 2026-27 (source: NDC college search, dciindia.gov.in, read 2026-10-29).
 
 **Q: What is the NAAC grade of JKKN Dental College?**
-A: NAAC A Grade, CGPA 3.01, valid to 26 February 2030. Certificate: https://ahs.jkkn.ac.in/pdfs/NAAC-certificate.pdf
+A: NAAC A Grade, CGPA 3.01, valid to 26 February 2030. Certificate: https://dental.jkkn.ac.in/pdf/NAAC.pdf
 
 **Q: How many BDS seats are available at JKKN Dental College?**
 A: 100 BDS seats per academic year, admitted through NEET-UG counselling.
 
 **Q: How many MDS seats and specializations does JKKN Dental College offer?**
-A: 18 MDS seats across 5 NDC/NDC-approved specializations: Periodontics (2), Orthodontics (5), Prosthodontics (3), Conservative Dentistry & Endodontics (5), and Oral Medicine & Radiology (3).
+A: 18 MDS seats across 5 specialities permitted by the NDC for 2026-27: Periodontics (2), Orthodontics (5), Prosthodontics (3), Conservative Dentistry & Endodontics (5), and Oral Medicine & Radiology (3).
 
 **Q: Where is JKKN Dental College located?**
 A: Natarajapuram, NH-544 (Salem-Coimbatore National Highway), Komarapalayam, Namakkal District, Tamil Nadu, India - 638183.
