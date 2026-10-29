@@ -81,7 +81,7 @@ export default function SalemPage() {
     { label: 'Affiliation', value: 'TN Dr. MGR Medical University' },
     { label: 'BDS Seats', value: '100 seats (NEET required)' },
     { label: 'BDS Seat Split', value: '50:50 Government / Management Quota (minority institution)' },
-    { label: 'BDS Tuition a Year', value: 'GQ Rs 2,50,000 · MQ Rs 4,50,000 (day scholar) or Rs 5,50,000 (with hostel)' },
+    { label: 'BDS Tuition a Year', value: 'MQ Rs 4,50,000 (day scholar) or Rs 5,50,000 (with hostel) · GQ as per government norms' },
     { label: 'MDS Seats', value: '18 seats in 5 specialisations' },
     { label: 'Dental Chairs', value: '200+ chairs' },
     { label: 'Daily Patients', value: '500+ patients' },

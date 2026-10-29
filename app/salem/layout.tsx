@@ -64,7 +64,7 @@ const courseSchema = [
       "category": "Tuition",
       "priceCurrency": "INR",
       
-      "description": "Government Quota: INR 250000/year (Fee Committee, DME prospectus 2025-26). Management Quota: INR 450000/year (Dayscholar with Instruments) or INR 550000/year (With Hostel and Instruments)."
+      "description": "Government Quota: as per government norms (Tamil Nadu Fee Committee). Management Quota: INR 450000/year (Dayscholar with Instruments) or INR 550000/year (With Hostel and Instruments)."
     }
   },
   {

@@ -13,7 +13,6 @@ import DentalEnquiryForm from "@/components/lead/DentalEnquiryForm";
 import EnquiryButton from "@/components/lead/EnquiryButton";
 import { DEFAULT_PROGRAMME_BY_PAGE } from "@/lib/dental-programmes";
 import { jkknSameAsUrls } from '@/lib/metadata';
-import { TN_BDS_FEES } from '@/data/tnBdsFees';
 
 export default function BDSProgram() {
 
@@ -47,7 +46,7 @@ export default function BDSProgram() {
               },
               {
                 q: 'What is the BDS course fee at JKKN Dental College?',
-                a: 'Government Quota: Rs. 2,50,000 a year, the fee the Fee Committee fixes for every self-financing dental college in Tamil Nadu (DME Selection Committee prospectus 2025-26). Management Quota for 2026-27: Rs. 4,50,000 a year (day scholar, with instruments) or Rs. 5,50,000 a year (with hostel and instruments). As a minority institution, JKKN fills its BDS seats 50:50 between the two quotas. For the latest figures call +91 93458 55001. Scholarships are available for meritorious and economically weaker learners.'
+                a: 'Government Quota: as per government norms (the Tamil Nadu Fee Committee fixes it for every self-financing dental college). Management Quota for 2026-27: Rs. 4,50,000 a year (day scholar, with instruments) or Rs. 5,50,000 a year (with hostel and instruments). As a minority institution, JKKN fills its BDS seats 50:50 between the two quotas. For the latest figures call +91 93458 55001. Scholarships are available for meritorious and economically weaker learners.'
               },
               {
                 q: 'What is the NEET cutoff for BDS admission at JKKN?',
@@ -806,8 +805,8 @@ export default function BDSProgram() {
               <tbody className="divide-y divide-gray-100">
                 <tr className="bg-white">
                   <td className="px-6 py-4 text-sm font-semibold text-gray-800">Government Quota</td>
-                  <td className="px-6 py-4 text-sm text-center text-gray-600">₹2,50,000/year</td>
-                  <td className="px-6 py-4 text-sm text-gray-600">Fixed by the Fee Committee for every self-financing dental college in Tamil Nadu (<a href={TN_BDS_FEES.source.url} target="_blank" rel="noopener noreferrer" className="underline">DME prospectus {TN_BDS_FEES.source.session}</a>)</td>
+                  <td className="px-6 py-4 text-sm text-center text-gray-600">As per government norms</td>
+                  <td className="px-6 py-4 text-sm text-gray-600">Fixed by the Tamil Nadu Fee Committee for every self-financing dental college; confirmed at counselling</td>
                 </tr>
                 <tr className="bg-green-50/50">
                   <td className="px-6 py-4 text-sm font-semibold text-gray-800">Management Quota (With Hostel & Instruments)</td>
