@@ -77,6 +77,11 @@ export default function AboutPage() {
               </div>
             ))}
           </dl>
+          <p className="mt-4 text-xs text-gray-600">
+            Sources: National Dental Commission college record, the university&rsquo;s seat matrix 2025-26, NAAC list as on
+            14-08-2025 and the AISHE directory, read 29-10-2026. Links on the{' '}
+            <Link href="/about/approvals-and-affiliation/" className="underline text-[#0b6d41]">Approvals &amp; Official Data</Link> page.
+          </p>
 
           <h2 className="text-2xl font-bold text-[#0b6d41] mt-12 mb-6">Explore</h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 list-none p-0 m-0">
@@ -105,7 +110,10 @@ const facts = [
   { label: 'Established', value: `${collegeFacts.foundedYear}, Komarapalayam, Namakkal District (NH-544)` },
   { label: 'Approval', value: 'National Dental Commission (formerly Dental Council of India)' },
   { label: 'University', value: collegeFacts.affiliatedUniversity },
-  { label: 'Accreditation', value: `NAAC '${collegeFacts.naacGrade}' Grade, CGPA ${collegeFacts.naacScore}, valid up to 26 February 2030` },
+  { label: 'Accreditation', value: `NAAC '${collegeFacts.naacGrade}' Grade, CGPA ${collegeFacts.naacScore}, first cycle (declared 27 February 2025), valid up to 26 February 2030` },
+  { label: 'Name on the NDC record', value: 'JKK Nattraja Dental College & Hospital' },
+  { label: 'University code', value: '022 (The Tamil Nadu Dr. M.G.R. Medical University)' },
+  { label: 'AISHE code', value: 'C-45823' },
   { label: 'Seats', value: `${collegeFacts.bdsSeatCount} BDS · ${collegeFacts.mdsSeatCount} MDS in ${collegeFacts.mdsSpecialisations} specialities` },
   { label: 'Hospital', value: `${collegeFacts.dentalChairs}+ dental chairs, ${collegeFacts.hospitalBeds}+ beds, about ${collegeFacts.dailyPatients} patients a day (confirmed by the college office, 2026)` },
   { label: 'BDS outcome 2024-25', value: `${collegeFacts.placementBds.placed} placed and ${collegeFacts.placementBds.higherStudies} in higher studies of ${collegeFacts.placementBds.graduated} (NIRF 2026 filing)` },
@@ -118,6 +126,7 @@ const links = [
   { href: '/principals-message/', label: "Principal's Message", desc: 'From the Principal of the college.' },
   { href: '/our-trust/', label: 'Our Trust', desc: 'J.K.K. Nattraja Educational Institutions.' },
   { href: '/governing-body/', label: 'Governing Body', desc: 'Members of the governing body.' },
+  { href: '/about/approvals-and-affiliation/', label: 'Approvals & Official Data', desc: 'NDC seats, university, NAAC, AISHE and NIRF, each with its official source.' },
   { href: '/about/approvals-and-affiliation/dci-bds/', label: 'BDS Permission Letter', desc: 'National Dental Commission (formerly DCI) letter, PDF.' },
   { href: '/about/approvals-and-affiliation/dci-mds/', label: 'MDS Permission Letter', desc: 'National Dental Commission (formerly DCI) letter, PDF.' },
   { href: '/about/approvals-and-affiliation/affiliation-bds/', label: 'University Affiliation', desc: 'The Tamil Nadu Dr. M.G.R. Medical University letters, PDF.' },

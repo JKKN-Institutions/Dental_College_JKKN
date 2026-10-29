@@ -315,6 +315,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${baseUrl}/about/our-institutions/`, lastModified: now, changeFrequency: 'yearly', priority: 0.6 },
     { url: `${baseUrl}/our-management/`, lastModified: now, changeFrequency: 'yearly', priority: 0.6 },
     { url: `${baseUrl}/our-trust/`, lastModified: now, changeFrequency: 'yearly', priority: 0.6 },
+    { url: `${baseUrl}/about/approvals-and-affiliation/`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${baseUrl}/about/approvals-and-affiliation/dci-bds/`, lastModified: now, changeFrequency: 'yearly', priority: 0.6 },
     { url: `${baseUrl}/about/approvals-and-affiliation/dci-mds/`, lastModified: now, changeFrequency: 'yearly', priority: 0.6 },
     { url: `${baseUrl}/about/approvals-and-affiliation/affiliation-bds/`, lastModified: now, changeFrequency: 'yearly', priority: 0.5 },
