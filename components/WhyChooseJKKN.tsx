@@ -84,8 +84,8 @@ export default function WhyChooseJKKN() {
             <div className="text-gray-200 text-xs sm:text-sm">Dental College Est. 1987</div>
           </div>
           <div className="bg-[#032816] rounded-xl sm:rounded-2xl p-4 sm:p-6 text-center">
-            <div className="text-2xl xs:text-3xl sm:text-4xl font-bold text-[#ffde59] mb-1 sm:mb-2">3000+</div>
-            <div className="text-gray-200 text-xs sm:text-sm">Alumni Network</div>
+            <div className="text-2xl xs:text-3xl sm:text-4xl font-bold text-[#ffde59] mb-1 sm:mb-2">93.9%</div>
+            <div className="text-gray-200 text-xs sm:text-sm">Placed or Higher Studies, 2024-25 (NIRF)</div>
           </div>
           <div className="bg-[#032816] rounded-xl sm:rounded-2xl p-4 sm:p-6 text-center">
             <div className="text-2xl xs:text-3xl sm:text-4xl font-bold text-[#ffde59] mb-1 sm:mb-2">A</div>

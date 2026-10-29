@@ -535,7 +535,7 @@ export default function BdsGuideClient({ faqs }: { faqs: FAQ[] }) {
                   ['Strategic location:', 'on NH-544 between Salem and Coimbatore — easy access from Erode, Namakkal, Tiruppur'],
                   ['Hostel & transport:', 'separate boys/girls hostels, fleet of college buses across 5+ districts'],
                   ['Placement support:', '~93.9% placed or in higher studies (2024-25 batch) across clinics, hospitals and Indian dental chains'],
-                  ['39+ years of legacy:', '3,000+ alumni practising across India, Middle East, UK, Australia and USA'],
+                  ['39+ years of legacy:', 'BDS since 1987 (Dental Council of India permission, 27 May 1987); 354 BDS graduates in the last four batches, 2021-22 to 2024-25 (NIRF)'],
                 ].map(([k, v]) => (
                   <li key={k as string} className="flex items-start gap-2.5 text-gray-600 text-sm">
                     <span className="w-2 h-2 rounded-full bg-[#0b6d41] mt-1.5 flex-shrink-0" />
