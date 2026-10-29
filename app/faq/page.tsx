@@ -7,7 +7,7 @@ import { faqSchema } from './faqData';
 const PAGE_URL = 'https://dental.jkkn.ac.in/faq/';
 const PAGE_TITLE = 'FAQ | JKKN Dental College & Hospital';
 const PAGE_DESCRIPTION =
-  'Find answers to frequently asked questions about JKKN Dental College — BDS & MDS admissions, NEET cutoff, fee structure, scholarships, placements, hostel, and campus facilities.';
+  'Answers to common questions about JKKN Dental College: BDS & MDS admissions, NEET cutoff, fees, scholarships, placements, hostel and campus facilities.';
 
 export const metadata: Metadata = {
   title: PAGE_TITLE,

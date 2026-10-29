@@ -22,10 +22,10 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'JKKN Dental College & Hospital (JKK Nattraja), Komarapalayam',
-  description: 'JKKN Dental College & Hospital (JKK Nattraja), Komarapalayam. NDC approved, NAAC A Grade. BDS 100 & MDS 18 seats, fees, 93.9% placed or in higher studies (2024-25 batch). Apply 2026-27.',
+  description: 'JKKN Dental College & Hospital (JKK Nattraja), Komarapalayam: NAAC A, BDS 100 & MDS 18 seats, fees, 93.9% placed or in higher studies (2024-25). Apply 2026-27.',
   openGraph: {
     title: 'JKKN Dental College & Hospital (JKK Nattraja), Komarapalayam',
-    description: 'JKKN Dental College & Hospital (JKK Nattraja), Komarapalayam. NDC approved, NAAC A Grade. BDS 100 & MDS 18 seats, fees, 93.9% placed or in higher studies (2024-25 batch). Apply 2026-27.',
+    description: 'JKKN Dental College & Hospital (JKK Nattraja), Komarapalayam: NAAC A, BDS 100 & MDS 18 seats, fees, 93.9% placed or in higher studies (2024-25). Apply 2026-27.',
     url: 'https://dental.jkkn.ac.in/',
     siteName: 'JKKN Dental College & Hospital',
     images: [
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'JKKN Dental College & Hospital (JKK Nattraja), Komarapalayam',
-    description: 'JKKN Dental College & Hospital (JKK Nattraja), Komarapalayam. NDC approved, NAAC A Grade. BDS 100 & MDS 18 seats, fees, 93.9% placed or in higher studies (2024-25 batch). Apply 2026-27.',
+    description: 'JKKN Dental College & Hospital (JKK Nattraja), Komarapalayam: NAAC A, BDS 100 & MDS 18 seats, fees, 93.9% placed or in higher studies (2024-25). Apply 2026-27.',
     images: ['https://dental.jkkn.ac.in/images/og-jkkn-dental-clinical-training.jpg'],
   },
   alternates: {
