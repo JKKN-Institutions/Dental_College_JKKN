@@ -386,7 +386,7 @@ export default function TrichyPage() {
               { label: 'Hospital', value: '200+ dental chairs, 100+ beds, 500+ patients daily (confirmed by the college office, 2026)' },
               { label: 'Approval', value: 'National Dental Commission (NDC)' },
               { label: 'Affiliation', value: 'TN Dr. MGR Medical University, Chennai' },
-              { label: 'Contact', value: '+91 9345855001 | info@jkkn.ac.in' },
+              { label: 'Contact', value: '+91 9345855001 | dental@jkkn.ac.in' },
             ].map((item) => (
               <div key={item.label} className="bg-[#FBFBEE] rounded-xl p-4 border border-gray-100">
                 <dt className="text-xs font-semibold tracking-widest text-[#0b6d41] uppercase mb-1">{item.label}</dt>

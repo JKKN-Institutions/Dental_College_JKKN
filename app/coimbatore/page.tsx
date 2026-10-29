@@ -331,7 +331,7 @@ export default function CoimbatorePage() {
           </ol>
           <div className="bg-[#0b6d41] text-white rounded-xl p-5 text-center">
             <p className="font-semibold mb-2">For immediate admission queries:</p>
-            <p className="text-white/90 text-sm">Call <a href="tel:+919345855001" className="underline font-bold">+91 9345855001</a> or email <a href="mailto:info@jkkn.ac.in" className="underline">info@jkkn.ac.in</a></p>
+            <p className="text-white/90 text-sm">Call <a href="tel:+919345855001" className="underline font-bold">+91 9345855001</a> or email <a href="mailto:dental@jkkn.ac.in" className="underline">dental@jkkn.ac.in</a></p>
           </div>
         </div>
       </section>
@@ -457,7 +457,7 @@ export default function CoimbatorePage() {
               JKKN Dental College &amp; Hospital records a 93.9% placed-or-higher-studies rate (2024-25 batch) for BDS graduates, with a median salary of Rs 3,60,000 (NIRF 2026 filing). Recognized as one of the <Link href="/best-dental-college-tamil-nadu/" className="text-[#0b6d41] hover:underline font-medium">best dental colleges in Tamil Nadu</Link>, JKKN combines institutional heritage with measurable career outcomes.
             </p>
             <p className="text-gray-600 leading-relaxed" style={{ fontSize: 'clamp(0.875rem, 1vw + 0.3rem, 1rem)' }}>
-              Learners from Coimbatore access the campus via a 108-km drive on NH-544 (approximately 1.5 hours) or through college-operated transport services. Contact: +91 9345855001 | info@jkkn.ac.in
+              Learners from Coimbatore access the campus via a 108-km drive on NH-544 (approximately 1.5 hours) or through college-operated transport services. Contact: +91 9345855001 | dental@jkkn.ac.in
             </p>
           </div>
         </div>
