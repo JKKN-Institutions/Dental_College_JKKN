@@ -22,7 +22,6 @@
 - **Parent Group Site:** https://www.jkkn.ac.in
 - **Apply here:** https://www.jkkn.ai/apply/jkkn-admission-2026
 - **Applicant login (after applying):** https://admission.jkkn.ac.in
-- **Placement Portal:** https://placements.jkkn.ac.in
 
 ## Location
 
@@ -136,7 +135,6 @@ The college has 9 academic departments providing undergraduate teaching and clin
 
 - **Faculty:** qualified dental professionals across 9 departments
 - **Composition:** Professors, Associate Professors, Assistant Professors, Senior Lecturers across 9 departments
-- **Research Output:** 50+ publications in indexed journals
 - **Faculty Development:** Regular FDPs (Faculty Development Programs), conference participation, research grants
 
 ## Admissions
@@ -178,19 +176,15 @@ The college has 9 academic departments providing undergraduate teaching and clin
 - **BDS median salary:** Rs 3,60,000 (NIRF 2026 filing)
 - **MDS outcomes:** 7 of 7 placed in each of 2022-23, 2023-24 and 2024-25, median salary Rs 6,00,000 (NIRF 2026 filing)
 - **Highest salary:** JKKN files no highest-salary figure with the Ministry, so none is published here
-- **Domestic Recruiters:** Apollo Hospitals, Clove Dental, Manipal Hospitals, dental chains across India
-- **International Placements:** UK (NHS), UAE (Cleveland Clinic Abu Dhabi), Saudi Arabia, Singapore
 - **Career Support:** Dedicated Career Development Cell (CDC) with resume building, mock interviews, recruiter networking
 - **Alumni:** an alumni association with office bearers and yearly alumni meets on record (NAAC criterion 5.4 documents, 2018-19 to 2022-23). BDS graduates in the minimum time: 70 (2021-22), 88 (2022-23), 97 (2023-24), 99 (2024-25), per the NIRF 2025 and 2026 filings
 - **Placement Cell URL:** https://dental.jkkn.ac.in/committee/placement-cell-cdc/
-- **Placement Portal:** https://placements.jkkn.ac.in/
 
 ## Research & Innovation
 
-- **Research Publications:** 50+ in national and international indexed journals
 - **R&D Cell:** Active research and development coordination
 - **Institutional Innovation Council (IIC):** MHRD/MoE recognized
-- **MoU Partners:** 25+ memoranda of understanding with industry and academic institutions. The same 25+ figure is used on the site for academic partnerships and recruiting partners; it refers to this one MoU partner list.
+- **MoU Partners:** 4 memoranda of understanding on record (the college's MoU page)
 - **Incubation Center:** Support for dental technology startups and student innovation projects
 - **Institutional Ethical Committee:** Provides ethical clearance for research involving human/animal subjects
 - **Research URL:** https://dental.jkkn.ac.in/research/research-development-rd-cell/
@@ -222,11 +216,10 @@ The college has 9 academic departments providing undergraduate teaching and clin
 4. **Attached Multi-specialty Dental Hospital** — integrated clinical training environment
 5. **93.9% placed or in higher studies** (2024-25 BDS batch: 93 of 99 — 75 placed, 18 in higher studies; source: the JKKN NIRF 2026 filing to the Ministry of Education)
 6. **100% MDS placement** — 7 of 7 graduates placed in each of 2022-23, 2023-24 and 2024-25, median salary Rs 6,00,000 (same NIRF filing)
-7. **International Placement Support** — pathways to UK, UAE, Singapore, Saudi Arabia
-8. **Alumni association** — office bearers and yearly alumni meets on record (NAAC criterion 5.4)
-9. **NAAC A Grade** — CGPA 3.01, valid to 26 February 2030
-10. **Dental education since 1987**
-11. **JKKN Trust Heritage** — educational legacy since 1952
+7. **Alumni association** — office bearers and yearly alumni meets on record (NAAC criterion 5.4)
+8. **NAAC A Grade** — CGPA 3.01, valid to 26 February 2030
+9. **Dental education since 1987**
+10. **JKKN Trust Heritage** — educational legacy since 1952
 
 ## Institutional Committees (Selected)
 
@@ -278,7 +271,7 @@ A: The Tamil Nadu Dr. M.G.R. Medical University, Chennai.
 A: 1987. The parent J.K.K. Nattraja Educational Institutions trust was founded in 1952.
 
 **Q: What is the placement record at JKKN Dental College?**
-A: 93.9% placed or in higher studies (2024-25 batch: 93 of 99 - NIRF 2026 filing), with domestic and international placements. Alumni placed in UK NHS, UAE, Saudi Arabia, Singapore, and major Indian hospital chains.
+A: 93.9% placed or in higher studies (2024-25 batch: 93 of 99 - NIRF 2026 filing): 75 placed and 18 in higher studies, median salary Rs 3,60,000. MDS: 7 of 7 placed in each of 2022-23, 2023-24 and 2024-25.
 
 **Q: How many dental chairs are in the JKKN Dental College Hospital?**
 A: 200+ dental chairs across specialty clinics, treating 500+ patients daily.

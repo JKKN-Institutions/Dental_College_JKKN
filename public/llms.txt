@@ -72,7 +72,6 @@ The college has 9 academic departments providing teaching and clinical training 
 - Hospital Beds: 100
 - Daily Patient Footfall: 500+
 - Departments: 9 clinical departments
-- Research Publications: 50+
 - BDS graduates in the minimum time (NIRF 2025 and 2026 filings): 70 in 2021-22, 88 in 2022-23, 97 in 2023-24, 99 in 2024-25; MDS 7 a year
 - Alumni association: office bearers and yearly alumni meets on record (NAAC criterion 5.4 documents)
 
@@ -84,7 +83,6 @@ The college has 9 academic departments providing teaching and clinical training 
 - Attached multi-specialty dental hospital
 - BDS placement: 93.9% placed or in higher studies (2024-25 batch, 93 of 99), median Rs 3,60,000 (NIRF 2026 filing)
 - MDS placement: 7 of 7 graduates placed in each of 2022-23, 2023-24 and 2024-25, median Rs 6,00,000 (NIRF 2026 filing)
-- International placement support (UK NHS, UAE, Singapore, Saudi Arabia)
 
 ## Location & Accessibility
 
@@ -98,7 +96,6 @@ The college has 9 academic departments providing teaching and clinical training 
 
 - Apply here: https://www.jkkn.ai/apply/jkkn-admission-2026
 - Applicant login (after applying): https://admission.jkkn.ac.in
-- Placement Portal: https://placements.jkkn.ac.in
 - BDS Admission: Through NEET-UG counselling (State / All India Quota)
 - MDS Admission: Through NEET-MDS counselling
 
@@ -123,14 +120,10 @@ The college has 9 academic departments providing teaching and clinical training 
 - BDS placed alone: 75 of 99 (75.8%); 18 went on to higher studies
 - BDS median salary: Rs 3,60,000 (NIRF 2026 filing)
 - MDS median salary: Rs 6,00,000, 7 of 7 placed (NIRF 2026 filing)
-- International Placements: UK (NHS), UAE (Cleveland Clinic Abu Dhabi), Saudi Arabia, Singapore
-- Domestic Recruiters: Apollo Hospitals, Clove Dental, Manipal Hospitals, dental chains across India
 - Career Support: Dedicated Placement Cell (CDC) with resume building, interview preparation, and recruiter networking
-- Placement Portal: https://placements.jkkn.ac.in/
 
 ## Research & Innovation
 
-- Research Publications: 50+ in national and international indexed journals
 - Research & Development Cell: Active R&D cell coordinating research activities
 - Institutional Innovation Council (IIC): MHRD-recognized innovation council
 - MoUs: Collaborative research agreements with industry and academic institutions
