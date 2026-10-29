@@ -46,7 +46,7 @@ const faqs = [
   {
     question: 'How many MDS Orthodontics seats are available at JKKN?',
     answer:
-      'JKKN Dental College & Hospital is approved by the NDC for 4 MDS seats per year in Orthodontics and Dentofacial Orthopedics. Out of total 18 MDS seats across 5 specialisations, Orthodontics is one of the most competitive — typically filled in the early rounds of Tamil Nadu PG counselling.',
+      'JKKN Dental College & Hospital is permitted by the NDC to admit 5 MDS students a year (2026-27) in Orthodontics and Dentofacial Orthopedics. Out of total 18 MDS seats across 5 specialisations, Orthodontics is one of the most competitive — typically filled in the early rounds of Tamil Nadu PG counselling.',
   },
   {
     question: 'What is the career scope after MDS Orthodontics in 2026?',

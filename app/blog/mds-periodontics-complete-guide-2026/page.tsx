@@ -42,7 +42,7 @@ const faqs = [
   {
     question: 'How many MDS Periodontics seats are at JKKN Dental College?',
     answer:
-      'JKKN Dental College & Hospital is approved by NDC for 4 MDS Periodontics seats per year. Admission is conducted through Tamil Nadu PG dental counselling based on NEET-MDS ranks, with Government, Management and NRI Quotas.',
+      'JKKN Dental College & Hospital is permitted by the NDC to admit 2 MDS Periodontics students a year (2026-27). Admission is conducted through Tamil Nadu PG dental counselling based on NEET-MDS ranks, with Government, Management and NRI Quotas.',
   },
   {
     question: 'What is the career scope after MDS Periodontics in 2026?',

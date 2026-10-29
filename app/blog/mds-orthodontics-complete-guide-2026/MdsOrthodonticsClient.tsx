@@ -194,7 +194,7 @@ export default function MdsOrthodonticsClient({ faqs }: { faqs: FAQ[] }) {
                 of malocclusion, misaligned teeth and dentofacial deformities using braces, clear
                 aligners, functional appliances and orthognathic-surgery coordination. Eligibility:
                 BDS + completed internship + valid <strong>NEET-MDS</strong> score. JKKN Dental
-                College offers <strong>4 NDC-approved MDS Ortho seats</strong> annually, affiliated
+                College offers <strong>5 NDC-permitted MDS Ortho seats</strong> a year (2026-27), affiliated
                 to <strong>TN Dr. MGR Medical University</strong>. Among all dental
                 specialisations, MDS Ortho is consistently the highest-paying and most-in-demand
                 career in 2026.
@@ -491,7 +491,7 @@ export default function MdsOrthodonticsClient({ faqs }: { faqs: FAQ[] }) {
               </p>
               <ul className="space-y-2.5 mb-6">
                 {[
-                  ['NDC-approved 4 PG seats:', 'in Orthodontics & Dentofacial Orthopedics, affiliated to TN Dr. MGR Medical University'],
+                  ['NDC-permitted 5 PG seats (2026-27):', 'in Orthodontics & Dentofacial Orthopedics, affiliated to TN Dr. MGR Medical University'],
                   ['High-volume clinical exposure:', '200+ dental chairs, 500+ daily patients — strong ortho-case pipeline including paediatric, adolescent and adult cases'],
                   ['Multi-disciplinary integration:', 'rotation with Maxillofacial Surgery, Prosthodontics, Periodontics for surgical ortho and full-mouth rehabilitation cases'],
                   ['Modern technology:', 'CBCT, OPG, lateral cephalogram, digital model scanner, indirect bonding setup, aligner workflow training'],
@@ -513,7 +513,7 @@ export default function MdsOrthodonticsClient({ faqs }: { faqs: FAQ[] }) {
                   Apply for MDS Orthodontics 2026
                 </h3>
                 <p className="text-white/80 text-sm mb-6 relative z-10">
-                  4 NDC-approved seats. NEET-MDS based through TN Selection Committee. Speak to our
+                  5 NDC-permitted seats (2026-27). NEET-MDS based through TN Selection Committee. Speak to our
                   PG admissions team for category-wise eligibility, fee categories and dissertation
                   ecosystem.
                 </p>
@@ -624,7 +624,7 @@ export default function MdsOrthodonticsClient({ faqs }: { faqs: FAQ[] }) {
                   <span className="text-[#0b6d41] text-xs font-bold uppercase tracking-wide">Open</span>
                 </div>
                 <h4 className="font-bold text-gray-900 text-sm mb-1">MDS Orthodontics 2026</h4>
-                <p className="text-gray-500 text-xs mb-4">4 NDC-approved PG seats — TN Govt. norm fees at JKKN Dental College</p>
+                <p className="text-gray-500 text-xs mb-4">5 NDC-permitted PG seats — TN Govt. norm fees at JKKN Dental College</p>
                 <a href="/admissions/mds/" className="block w-full bg-[#0b6d41] text-white font-semibold text-sm py-2.5 rounded-lg hover:bg-[#085032] transition-colors text-center">
                   Apply / Enquire →
                 </a>

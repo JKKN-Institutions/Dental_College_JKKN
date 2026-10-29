@@ -329,7 +329,7 @@ export default function BdsGuideClient({ faqs }: { faqs: FAQ[] }) {
               <div className="bg-[#FBFBEE] border-l-4 border-[#0b6d41] rounded-r-xl p-4">
                 <p className="text-sm text-gray-700">
                   Apart from State Quota, JKKN also has Management Quota and NRI Quota seats. These
-                  are filled through the institution&apos;s direct application process. Parents are
+                  are also allotted through the Tamil Nadu Selection Committee counselling. Parents are
                   encouraged to call the admissions office at <strong>+91 93458 55001</strong> for
                   category-wise eligibility and current vacancy status.
                 </p>
@@ -551,7 +551,7 @@ export default function BdsGuideClient({ faqs }: { faqs: FAQ[] }) {
                   Ready to Apply for BDS 2026?
                 </h3>
                 <p className="text-white/80 text-sm mb-6 relative z-10">
-                  100 NDC-approved BDS seats. Govt. norm fees. NEET-UG ranks accepted through Tamil
+                  100 NDC-recognised BDS seats. Govt. norm fees. NEET-UG ranks accepted through Tamil
                   Nadu state counselling. Speak to our admissions team for personalised guidance.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3 justify-center relative z-10">
@@ -664,7 +664,7 @@ export default function BdsGuideClient({ faqs }: { faqs: FAQ[] }) {
                   <span className="text-[#0b6d41] text-xs font-bold uppercase tracking-wide">Open</span>
                 </div>
                 <h4 className="font-bold text-gray-900 text-sm mb-1">BDS Admission 2026</h4>
-                <p className="text-gray-500 text-xs mb-4">100 NDC-approved Seats — Govt. norm fees at JKKN Dental College, Komarapalayam</p>
+                <p className="text-gray-500 text-xs mb-4">100 NDC-recognised Seats — Govt. norm fees at JKKN Dental College, Komarapalayam</p>
                 <a href="/admissions/bds/" className="block w-full bg-[#0b6d41] text-white font-semibold text-sm py-2.5 rounded-lg hover:bg-[#085032] transition-colors text-center">
                   Apply / Enquire →
                 </a>

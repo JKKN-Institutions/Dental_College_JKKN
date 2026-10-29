@@ -135,7 +135,7 @@ export default function MdsPeriodonticsClient({ faqs }: { faqs: FAQ[] }) {
                 <strong>MDS Periodontics</strong> is a 3-year PG dental specialisation focused on
                 gum diseases, periodontal regeneration and dental implant surgery. Eligibility:
                 BDS + completed internship + valid <strong>NEET-MDS</strong> score. JKKN Dental
-                College offers <strong>4 seats approved by the National Dental Commission (NDC)</strong> per year. Career drivers in
+                College offers <strong>2 seats permitted by the National Dental Commission (NDC)</strong> per year (2026-27). Career drivers in
                 2026: dental implant boom, laser periodontics, regenerative therapy (GTR, PRF,
                 PRP), peri-implantitis management and aesthetic gum-line procedures.
               </p>
@@ -338,7 +338,7 @@ export default function MdsPeriodonticsClient({ faqs }: { faqs: FAQ[] }) {
               <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">Why Choose JKKN for MDS Periodontics</h2>
               <ul className="space-y-2.5 mb-6">
                 {[
-                  ['NDC-approved 4 PG seats:', 'Periodontics MDS affiliated to TN Dr. MGR Medical University'],
+                  ['NDC-permitted 2 PG seats (2026-27):', 'Periodontics MDS affiliated to TN Dr. MGR Medical University'],
                   ['High clinical case mix:', '200+ dental chairs, 500+ daily patients with strong perio + implant case pipeline'],
                   ['Implant placement training:', 'in-house implant workflow + multi-disciplinary collaboration with Prosthodontics & Oral Surgery'],
                   ['Regenerative & laser exposure:', 'GTR, bone grafting, PRF/PRP techniques + laser periodontics where applicable'],
@@ -355,7 +355,7 @@ export default function MdsPeriodonticsClient({ faqs }: { faqs: FAQ[] }) {
                 <div className="absolute top-3 right-6 w-20 h-20 rounded-full bg-white/10 pointer-events-none" />
                 <div className="absolute bottom-3 left-4 w-12 h-12 rounded-full bg-white/10 pointer-events-none" />
                 <h3 className="text-xl font-bold text-white mb-2 relative z-10">Apply for MDS Periodontics 2026</h3>
-                <p className="text-white/80 text-sm mb-6 relative z-10">4 NDC-approved seats. NEET-MDS through TN counselling.</p>
+                <p className="text-white/80 text-sm mb-6 relative z-10">2 NDC-permitted seats (2026-27). NEET-MDS through TN counselling.</p>
                 <div className="flex flex-col sm:flex-row gap-3 justify-center relative z-10">
                   <a href="/admissions/mds/" className="bg-white text-[#0b6d41] font-semibold px-6 py-2.5 rounded-lg text-sm hover:bg-gray-100 transition-colors">MDS Admission Page →</a>
                   <a href="tel:+919345855001" className="border border-white/50 text-white font-semibold px-6 py-2.5 rounded-lg text-sm hover:bg-white/10 transition-colors">Call +91 93458 55001</a>
@@ -419,7 +419,7 @@ export default function MdsPeriodonticsClient({ faqs }: { faqs: FAQ[] }) {
               <div className="bg-[#FBFBEE] border border-[#0f8f56]/40 rounded-xl p-5">
                 <div className="flex items-center gap-1.5 mb-2"><span className="w-2 h-2 rounded-full bg-[#0f8f56]" /><span className="text-[#0b6d41] text-xs font-bold uppercase tracking-wide">Open</span></div>
                 <h4 className="font-bold text-gray-900 text-sm mb-1">MDS Periodontics 2026</h4>
-                <p className="text-gray-500 text-xs mb-4">4 NDC-approved PG seats at JKKN Dental College</p>
+                <p className="text-gray-500 text-xs mb-4">2 NDC-permitted PG seats at JKKN Dental College</p>
                 <a href="/admissions/mds/" className="block w-full bg-[#0b6d41] text-white font-semibold text-sm py-2.5 rounded-lg hover:bg-[#085032] transition-colors text-center">Apply / Enquire →</a>
                 <a href="tel:+919345855001" className="block text-center text-[#0b6d41] text-xs font-medium mt-3">+91 93458 55001</a>
               </div>

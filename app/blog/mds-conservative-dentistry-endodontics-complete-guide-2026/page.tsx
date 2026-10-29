@@ -42,7 +42,7 @@ const faqs = [
   {
     question: 'How many MDS Conservative Dentistry seats are at JKKN Dental College?',
     answer:
-      'JKKN Dental College & Hospital is approved by NDC for 3 MDS seats per year in Conservative Dentistry and Endodontics. Admission is through Tamil Nadu state PG dental counselling based on NEET-MDS All-India ranks, across Government, Management and NRI Quotas.',
+      'JKKN Dental College & Hospital is permitted by the NDC to admit 5 MDS students a year (2026-27) in Conservative Dentistry and Endodontics. Admission is through Tamil Nadu state PG dental counselling based on NEET-MDS All-India ranks, across Government, Management and NRI Quotas.',
   },
   {
     question: 'What is the career scope after MDS Endodontics in 2026?',

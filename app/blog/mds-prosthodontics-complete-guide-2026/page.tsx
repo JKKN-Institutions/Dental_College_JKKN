@@ -42,7 +42,7 @@ const faqs = [
   {
     question: 'How many MDS Prosthodontics seats are at JKKN Dental College?',
     answer:
-      'JKKN Dental College & Hospital is approved by NDC for 4 MDS seats per year in Prosthodontics, Crown and Bridge. Admission is through Tamil Nadu state PG dental counselling based on NEET-MDS All-India ranks. Government Quota, Management Quota and NRI Quota categories are available.',
+      'JKKN Dental College & Hospital is permitted by the NDC to admit 3 MDS students a year (2026-27) in Prosthodontics, Crown and Bridge. Admission is through Tamil Nadu state PG dental counselling based on NEET-MDS All-India ranks. Government Quota, Management Quota and NRI Quota categories are available.',
   },
   {
     question: 'What is the career scope after MDS Prosthodontics?',
