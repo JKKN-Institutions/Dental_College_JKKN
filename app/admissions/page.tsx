@@ -96,7 +96,7 @@ const faqSchema = {
       name: 'How many seats are available for BDS and MDS at JKKN Dental College?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'JKKN Dental College offers one hundred BDS seats and eighteen MDS seats across five postgraduate specializations approved by the National Dental Commission (formerly Dental Council of India).',
+        text: 'JKKN Dental College offers one hundred BDS seats and eighteen MDS seats across five postgraduate specializations permitted by the National Dental Commission (formerly Dental Council of India).',
       },
     },
     {
@@ -250,7 +250,7 @@ const mdsSchema = {
       maxPrice: '850000',
       unitText: 'per year',
       description:
-        'Management Quota annual tuition, academic year 2026-27: Rs 8,50,000, the same across all five NDC-approved MDS specialisations. Government Quota as per the Tamil Nadu Fee Fixation Committee norms.',
+        'Management Quota annual tuition, academic year 2026-27: Rs 8,50,000, the same across all five MDS specialisations. Government Quota as per the Tamil Nadu Fee Fixation Committee norms.',
     },
   },
 };
@@ -865,7 +865,7 @@ export default function AdmissionPage() {
               },
               {
                 q: 'How many seats are available for BDS and MDS?',
-                a: `JKKN Dental College offers ${collegeFacts.bdsSeatCount} BDS seats and ${collegeFacts.mdsSeatCount} MDS seats across ${collegeFacts.mdsSpecialisations} postgraduate specializations, all approved by the National Dental Commission.`,
+                a: `JKKN Dental College offers ${collegeFacts.bdsSeatCount} BDS seats and ${collegeFacts.mdsSeatCount} MDS seats across ${collegeFacts.mdsSpecialisations} postgraduate specializations, all permitted by the National Dental Commission.`,
               },
               {
                 q: 'What is the admission process?',

@@ -138,7 +138,7 @@ export const faqCategories = [
       {
         question: 'What MDS specializations are available at JKKN?',
         answer:
-          'JKKN Dental College offers 5 NDC-approved MDS specializations: Conservative Dentistry & Endodontics (5 seats), Prosthodontics Crown & Bridge (3 seats), Periodontics & Oral Implantology (2 seats), Oral Medicine & Radiology (3 seats), and Orthodontics & Dentofacial Orthopedics (5 seats) — 18 seats in total annually.',
+          'JKKN Dental College offers 5 NDC-permitted MDS specializations: Conservative Dentistry & Endodontics (5 seats), Prosthodontics Crown & Bridge (3 seats), Periodontics & Oral Implantology (2 seats), Oral Medicine & Radiology (3 seats), and Orthodontics & Dentofacial Orthopedics (5 seats) — 18 seats in total annually.',
       },
       {
         question: 'What are the career opportunities after MDS?',
@@ -148,7 +148,7 @@ export const faqCategories = [
       {
         question: 'Is the JKKN MDS program recognized by NDC?',
         answer:
-          'Yes, all MDS programs at JKKN Dental College are fully recognized and approved by the National Dental Commission (NDC). The college is affiliated with The Tamil Nadu Dr. M.G.R. Medical University and maintains NAAC accreditation (A), ensuring national recognition for all graduates.',
+          'Yes. All five MDS specialities at JKKN Dental College are permitted by the National Dental Commission (NDC) for 2026-27: 18 seats, of which 7 are recognised and 11 approved. The college is affiliated with The Tamil Nadu Dr. M.G.R. Medical University and maintains NAAC accreditation (A), ensuring national recognition for all graduates.',
       },
       {
         question: 'How many MDS seats are there in Tamil Nadu?',

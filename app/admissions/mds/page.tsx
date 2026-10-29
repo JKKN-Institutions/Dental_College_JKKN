@@ -47,7 +47,7 @@ import { jkknSameAsUrls } from '@/lib/metadata';
 export const metadata: Metadata = {
   title: 'MDS Admission 2026-27 | JKKN Dental College Komarapalayam',
   description:
-    'Apply for MDS admission at JKKN Dental College — 18 NDC-approved seats across 5 specializations. NEET-MDS based, scholarships and hostel support available.',
+    'Apply for MDS admission at JKKN Dental College — 18 NDC-permitted seats across 5 specialities. NEET-MDS based, scholarships and hostel support available.',
   keywords:
     'MDS admission 2026, MDS admission Tamil Nadu, JKKN MDS admission, NEET MDS counselling, MDS orthodontics, MDS prosthodontics, MDS periodontics, MDS specialization Namakkal',
   openGraph: {
@@ -88,7 +88,7 @@ const mdsCourseSchema = {
   '@id': 'https://dental.jkkn.ac.in/admissions/mds/#course',
   name: 'Master of Dental Surgery (MDS) — Admission 2026-27',
   description:
-    '3-year NDC-approved MDS postgraduate program at JKKN Dental College & Hospital, Komarapalayam. 18 seats across 5 specializations — Periodontics, Orthodontics, Prosthodontics, Conservative Dentistry, and Oral Medicine. NEET-MDS based admission.',
+    '3-year NDC-permitted MDS postgraduate program at JKKN Dental College & Hospital, Komarapalayam. 18 seats across 5 specializations — Periodontics, Orthodontics, Prosthodontics, Conservative Dentistry, and Oral Medicine. NEET-MDS based admission.',
   provider: {
     '@type': 'CollegeOrUniversity',
     name: 'JKKN Dental College & Hospital',
@@ -160,7 +160,7 @@ const mdsHowToSchema = {
       '@type': 'HowToStep',
       position: 3,
       name: 'Counselling & Specialization Choice',
-      text: 'Participate in MCC/TN state counselling for Govt Quota or apply directly for Management Quota. Choose your preferred specialization based on seat availability.',
+      text: 'Register with the Tamil Nadu Selection Committee (DME&R) and take part in its online counselling for Government Quota or Management Quota (including NRI) seats. Choose your preferred specialization based on seat availability.',
     },
     {
       '@type': 'HowToStep',
@@ -273,7 +273,7 @@ const admissionSteps = [
     step: 3,
     title: 'Counselling',
     description:
-      'Participate in MCC/TN state counselling for Govt Quota seats or apply directly for Management Quota.',
+      'Government-quota and management-quota MDS seats (including NRI) are allotted through the Tamil Nadu Selection Committee online counselling. Apply on tnmedicalselection.net for the quota you want.',
     icon: Users,
   },
   {
@@ -313,7 +313,7 @@ const feeBreakdown = [
   {
     quota: 'Government Quota',
     tuition: 'As per TN Govt Norms',
-    note: 'Allotted through MCC/TN state counselling based on NEET-MDS rank.',
+    note: 'Allotted through the Tamil Nadu Selection Committee (DME&R) counselling based on NEET-MDS rank.',
   },
   {
     quota: 'Management Quota',
@@ -398,11 +398,11 @@ const mdsFaqs = [
   },
   {
     q: 'What is the MDS course fee at JKKN?',
-    a: 'Management Quota fee is ₹8,50,000 per year, the same across all five NDC-approved specialisations. Government Quota fee is as per Tamil Nadu state norms. Contact admissions for specialization-wise figures.',
+    a: 'Management Quota fee is ₹8,50,000 per year, the same across all five specialisations. Government Quota fee is as per Tamil Nadu state norms.',
   },
   {
     q: 'What is the MDS admission process?',
-    a: 'NEET-MDS based: Qualify NEET-MDS 2026 → Apply online → MCC/TN state counselling (Govt Quota) or direct application (Management Quota) → Document verification → Fee payment & enrolment.',
+    a: 'NEET-MDS based: Qualify NEET-MDS 2026 → Apply online → Tamil Nadu Selection Committee counselling (Government or Management Quota) → Document verification → Fee payment & enrolment.',
   },
   {
     q: 'How long is the MDS programme?',
@@ -410,7 +410,7 @@ const mdsFaqs = [
   },
   {
     q: 'Which MDS specializations does JKKN offer?',
-    a: 'Periodontics, Orthodontics & Dentofacial Orthopedics, Prosthodontics Crown & Bridge, Conservative Dentistry & Endodontics, and Oral Medicine & Radiology — all NDC approved.',
+    a: 'Periodontics, Orthodontics & Dentofacial Orthopedics, Prosthodontics Crown & Bridge, Conservative Dentistry & Endodontics, and Oral Medicine & Radiology — all five permitted by the National Dental Commission for 2026-27 (18 seats).',
   },
   {
     q: 'What documents are required?',
@@ -443,7 +443,7 @@ export default function MDSAdmissionPage() {
   const speakableSchema = generateSpeakableWebPageSchema({
     title: 'MDS Admission 2026-27 | JKKN Dental College',
     description:
-      'Apply for MDS admission at JKKN Dental College, Komarapalayam. 18 NDC-approved seats across 5 specializations. NEET-MDS based admission.',
+      'Apply for MDS admission at JKKN Dental College, Komarapalayam. 18 NDC-permitted seats across 5 specializations. NEET-MDS based admission.',
     url: 'https://dental.jkkn.ac.in/admissions/mds/',
     speakableCssSelectors: ['h1', '.hero-description', 'article p'],
   });
@@ -501,7 +501,7 @@ export default function MDSAdmissionPage() {
 
           <p className="hero-description text-lg md:text-xl text-gray-200 max-w-3xl mx-auto mb-8">
             Postgraduate dental specialisation at JKKN Dental College & Hospital,
-            Komarapalayam — {collegeFacts.mdsSeatCount} NDC-approved seats across {collegeFacts.mdsSpecialisations} specializations, with
+            Komarapalayam — {collegeFacts.mdsSeatCount} MDS seats in {collegeFacts.mdsSpecialisations} specialities, permitted by the National Dental Commission for 2026-27, with
             advanced equipment, dissertation support, and a 200+ dental chair
             teaching hospital.
           </p>
@@ -591,7 +591,7 @@ export default function MDSAdmissionPage() {
 
           <div className="mt-8 bg-[#0f8f56]/10 border border-[#0f8f56]/30 rounded-2xl p-6 text-center">
             <p className="text-[#0b6d41] font-medium">
-              MDS fees vary by specialization. For the complete specialization-wise fee
+              The tuition is the same for all five specialities. For the full fee
               structure and stipend details, visit{' '}
               <Link href="/fees-structure/" className="underline font-bold">fee structure page</Link>{' '}
               or call <a href="tel:+919345855001" className="underline font-bold">+91 93458 55001</a>.
@@ -629,7 +629,7 @@ export default function MDSAdmissionPage() {
             <p className="text-gray-600 max-w-3xl mx-auto">
               The Master of Dental Surgery (MDS) at JKKN is a 3-year postgraduate
               programme designed to produce specialist dental surgeons with deep
-              clinical, research, and academic expertise across five NDC-approved
+              clinical, research, and academic expertise across five NDC-permitted
               specializations.
             </p>
           </div>
@@ -659,7 +659,7 @@ export default function MDSAdmissionPage() {
               MDS Specializations at JKKN
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Choose from 5 NDC-approved postgraduate specializations — each with
+              Choose from 5 NDC-permitted postgraduate specializations — each with
               expert faculty (Senior Learners), dedicated departments and research opportunities.
             </p>
           </div>
@@ -811,7 +811,7 @@ export default function MDSAdmissionPage() {
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Ready to Specialise at JKKN?</h2>
           <p className="text-lg text-gray-200 mb-8 max-w-2xl mx-auto">
             Join {collegeFacts.mdsSeatCount} MDS postgraduates admitted every year at JKKN Dental College
-            & Hospital across {collegeFacts.mdsSpecialisations} NDC-approved specializations.
+            & Hospital across {collegeFacts.mdsSpecialisations} NDC-permitted specializations.
           </p>
 
           <div className="flex justify-center mb-10">

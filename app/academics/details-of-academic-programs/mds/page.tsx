@@ -26,7 +26,7 @@ const mdsFAQs = [
   {
     question: "What MDS specializations are available at JKKN?",
     answer:
-      "JKKN Dental College offers 5 NDC-approved MDS specializations: Endodontics (Conservative Dentistry), Prosthodontics (Crown & Bridge), Periodontics (Oral Implantology), Oral Medicine & Radiology, and Orthodontics (Dentofacial Orthopedics). A total of 18 seats are available annually across all specializations.",
+      "JKKN Dental College offers 5 NDC-permitted MDS specializations: Endodontics (Conservative Dentistry), Prosthodontics (Crown & Bridge), Periodontics (Oral Implantology), Oral Medicine & Radiology, and Orthodontics (Dentofacial Orthopedics). A total of 18 seats are available annually across all specializations.",
   },
   {
     question: "What is the eligibility for MDS admission?",
@@ -41,7 +41,7 @@ const mdsFAQs = [
   {
     question: "Is JKKN Dental College MDS program recognized?",
     answer:
-      "Yes, all MDS programs at JKKN Dental College are fully recognized and approved by the National Dental Commission (NDC), formerly the Dental Council of India. The college is affiliated with The Tamil Nadu Dr. M.G.R. Medical University and maintains NAAC accreditation (A), ensuring national recognition for all graduates.",
+      "Yes. All five MDS specialities at JKKN Dental College are permitted by the National Dental Commission (NDC), formerly the Dental Council of India, for 2026-27: 18 seats, of which 7 are recognised and 11 approved. The college is affiliated with The Tamil Nadu Dr. M.G.R. Medical University and maintains NAAC accreditation (A), ensuring national recognition for all graduates.",
   },
   {
     question: "How many MDS seats are there in Tamil Nadu?",
@@ -80,7 +80,7 @@ const mdsAdmissionSteps = [
   },
   {
     name: "Apply for Counselling",
-    text: "Apply for Tamil Nadu state counselling or all-India counselling (MCC) based on your preferred category. Submit required documents and pay the counselling fee.",
+    text: "Register with the Tamil Nadu Selection Committee (DME&R) for government-quota or management-quota counselling. Submit required documents and pay the counselling fee.",
   },
   {
     name: "Participate in Seat Allotment",
@@ -122,7 +122,7 @@ export default function MDSProgram() {
     title:
       'MDS Fees in Private Colleges, Tamil Nadu 2026-27 | JKKN Dental College & Hospital',
     description:
-      '3-year postgraduate MDS program with 18 seats across 5 NDC-approved specializations at JKKN Dental College & Hospital, Tamil Nadu. NAAC-accredited (A), affiliated to TN Dr. MGR Medical University.',
+      '3-year postgraduate MDS program with 18 seats across 5 NDC-permitted specializations at JKKN Dental College & Hospital, Tamil Nadu. NAAC-accredited (A), affiliated to TN Dr. MGR Medical University.',
     url: 'https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/',
     speakableCssSelectors: [
       'h1',
@@ -181,7 +181,7 @@ export default function MDSProgram() {
               <p className="hero-description text-lg text-gray-200 mb-8 leading-relaxed">
                 JKKN Dental College &amp; Hospital, Komarapalayam, is one of the
                 19 MDS colleges affiliated to The Tamil Nadu Dr. M.G.R. Medical University,
-                with 18 seats across 5 NDC-approved specializations. NAAC-accredited (A) and affiliated to The Tamil
+                with 18 seats across 5 NDC-permitted specializations. NAAC-accredited (A) and affiliated to The Tamil
                 Nadu Dr. M.G.R. Medical University, our 3-year postgraduate MDS
                 program combines rigorous academics with clinical exposure
                 across 200+ dental chairs and 500+ daily patients.
@@ -356,7 +356,7 @@ export default function MDSProgram() {
             Choose Your Path to Excellence
           </h2>
           <p className="text-gray-600 text-center mb-12 max-w-4xl mx-auto leading-relaxed">
-            Explore our five NDC-approved MDS specializations. Each program offers comprehensive training, advanced facilities, and expert guidance to help you become a leader in your chosen field.
+            Explore our five NDC-permitted MDS specializations. Each program offers comprehensive training, advanced facilities, and expert guidance to help you become a leader in your chosen field.
           </p>
 
           {/* Specializations Grid */}
@@ -791,8 +791,8 @@ export default function MDSProgram() {
                     2
                   </div>
                   <div>
-                    <h4 className="font-bold text-gray-800 mb-2 text-lg">State/All-India Counselling</h4>
-                    <p className="text-gray-600">Participate in counselling based on your category</p>
+                    <h4 className="font-bold text-gray-800 mb-2 text-lg">Tamil Nadu Selection Committee Counselling</h4>
+                    <p className="text-gray-600">Take part in the Selection Committee (DME&amp;R) counselling for government-quota or management-quota seats</p>
                   </div>
                 </div>
 

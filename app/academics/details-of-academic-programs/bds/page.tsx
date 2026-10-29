@@ -699,7 +699,7 @@ export default function BDSProgram() {
 
               <div className="mt-8 bg-[#0b6d41]/10 rounded-lg p-4">
                 <p className="text-sm text-[#0b6d41] font-semibold">
-                  For direct admission enquiries and management quota: <a href="tel:+919345855001" className="underline">+91 93458 55001</a> | <a href="mailto:dental@jkkn.ac.in" className="underline">dental@jkkn.ac.in</a> | <a href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_medium=organic&utm_campaign=academics-details-of-academic-programs-bds" target="_blank" rel="noopener noreferrer" className="underline">www.jkkn.ai/apply/jkkn-admission-2026</a>
+                  For admission and management-quota counselling enquiries: <a href="tel:+919345855001" className="underline">+91 93458 55001</a> | <a href="mailto:dental@jkkn.ac.in" className="underline">dental@jkkn.ac.in</a> | <a href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_medium=organic&utm_campaign=academics-details-of-academic-programs-bds" target="_blank" rel="noopener noreferrer" className="underline">www.jkkn.ai/apply/jkkn-admission-2026</a>
                 </p>
               </div>
             </div>

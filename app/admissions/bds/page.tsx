@@ -46,7 +46,7 @@ import { jkknSameAsUrls } from '@/lib/metadata';
 export const metadata: Metadata = {
   title: 'BDS Admission 2026-27 | JKKN Dental College Komarapalayam',
   description:
-    'Apply for BDS admission at JKKN Dental College, Komarapalayam. NEET-UG based, 100 NDC-approved seats, scholarships, hostel & 93.9% placed or in higher studies (2024-25 batch).',
+    'Apply for BDS admission at JKKN Dental College, Komarapalayam. NEET-UG based, 100 NDC-recognised seats, scholarships, hostel & 93.9% placed or in higher studies (2024-25 batch).',
   keywords:
     'BDS admission 2026, BDS admission Tamil Nadu, JKKN BDS admission, NEET BDS counselling, BDS seats Namakkal, dental college admission Komarapalayam, BDS fees Tamil Nadu',
   openGraph: {
@@ -157,7 +157,7 @@ const bdsHowToSchema = {
       '@type': 'HowToStep',
       position: 3,
       name: 'Counselling & Allotment',
-      text: 'Participate in Tamil Nadu state counselling for Government Quota seats, or apply directly to JKKN for Management Quota seats.',
+      text: 'Register with the Tamil Nadu Selection Committee (DME&R) and take part in its online counselling. Government-quota and management-quota seats, including minority and NRI seats, are allotted through it.',
     },
     {
       '@type': 'HowToStep',
@@ -244,7 +244,7 @@ const admissionSteps = [
     step: 3,
     title: 'Counselling',
     description:
-      'Participate in Tamil Nadu state counselling (Govt Quota) or apply directly to JKKN (Management Quota).',
+      'Government-quota and management-quota seats (including minority and NRI seats) are allotted through the online counselling of the Selection Committee, Directorate of Medical Education and Research, Government of Tamil Nadu. Register on tnmedicalselection.net for the quota you want.',
     icon: Users,
   },
   {
@@ -370,7 +370,7 @@ const bdsFaqs = [
   },
   {
     q: 'What is the BDS admission process?',
-    a: 'BDS admission is NEET-UG based. Qualify NEET-UG 2026 → Apply online → Participate in TN state counselling (Govt Quota) or apply directly (Management Quota) → Document verification → Fee payment and enrolment.',
+    a: 'BDS admission is NEET-UG based. Qualify NEET-UG, register with the Tamil Nadu Selection Committee for government or management quota, attend online counselling, then report to JKKN with original documents and pay the fee to confirm the seat.',
   },
   {
     q: 'What documents are required?',
@@ -411,7 +411,7 @@ export default function BDSAdmissionPage() {
   const speakableSchema = generateSpeakableWebPageSchema({
     title: 'BDS Admission 2026-27 | JKKN Dental College',
     description:
-      'Apply for BDS admission at JKKN Dental College, Komarapalayam. NEET-UG based, 100 NDC-approved seats, scholarships and hostel available.',
+      'Apply for BDS admission at JKKN Dental College, Komarapalayam. NEET-UG based, 100 NDC-recognised seats, scholarships and hostel available.',
     url: 'https://dental.jkkn.ac.in/admissions/bds/',
     speakableCssSelectors: ['h1', '.hero-description', 'article p'],
   });

@@ -147,7 +147,7 @@ export default function Academics() {
                   </div>
                 </div>
                 <p className="text-sm text-gray-700 mb-6 leading-relaxed">
-                  5 NDC-approved MDS specializations with 18 total seats. Advanced postgraduate training in specialized fields with research, dissertation, and comprehensive clinical practice.
+                  5 NDC-permitted MDS specializations with 18 total seats. Advanced postgraduate training in specialized fields with research, dissertation, and comprehensive clinical practice.
                 </p>
                 <div className="flex items-center text-sm text-[#0b6d41] font-semibold group-hover:translate-x-2 transition-transform">
                   Explore Specializations →

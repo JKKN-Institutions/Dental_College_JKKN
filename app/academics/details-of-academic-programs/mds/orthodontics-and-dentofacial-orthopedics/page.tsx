@@ -95,7 +95,7 @@ export default function MDSOrthodontics() {
 
   const speakableSchema = generateSpeakableWebPageSchema({
     title: 'Orthodontic Courses in India | JKKN Dental College',
-    description: 'JKKN Dental College offers top orthodontic courses in India. NDC-approved MDS in Orthodontics & Dentofacial Orthopaedics with advanced clinical training.',
+    description: 'JKKN Dental College offers top orthodontic courses in India. NDC-permitted MDS in Orthodontics & Dentofacial Orthopaedics with advanced clinical training.',
     url: 'https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/orthodontics-and-dentofacial-orthopedics/',
     speakableCssSelectors: ['h1', '.hero-description', 'article p'],
   });

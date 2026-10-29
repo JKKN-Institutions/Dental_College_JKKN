@@ -95,7 +95,7 @@ export default function MDSProsthodontics() {
 
   const speakableSchema = generateSpeakableWebPageSchema({
     title: 'MDS Prosthodontics in Tamil Nadu — 3 Seats, Fees & Eligibility 2026-27 | JKKN Dental',
-    description: 'MDS Prosthodontics, Crown & Bridge at JKKN Dental College — 3 NDC-approved seats, 3 years full-time, affiliated to The Tamil Nadu Dr. M.G.R. Medical University.',
+    description: 'MDS Prosthodontics, Crown & Bridge at JKKN Dental College — 3 NDC-permitted seats, 3 years full-time, affiliated to The Tamil Nadu Dr. M.G.R. Medical University.',
     url: 'https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/prosthodontics-crown-and-bridge/',
     speakableCssSelectors: ['h1', '.hero-description', 'article p'],
   });

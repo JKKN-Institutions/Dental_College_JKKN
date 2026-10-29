@@ -678,7 +678,7 @@ export function generateMDSCourseSchema() {
     "url": DENTAL_COURSE_URLS.mds,
     "name": "Master of Dental Surgery (MDS) — JKKN Dental College, Tamil Nadu",
     "alternateName": "MDS at JKKN Dental College",
-    "description": `3-year postgraduate Master of Dental Surgery (MDS) program at JKKN Dental College & Hospital, Tamil Nadu. Offers ${collegeFacts.mdsSeatCount} seats across ${collegeFacts.mdsSpecialisations} NDC-approved specializations with ${collegeFacts.dentalChairs}+ dental chairs, ${collegeFacts.dailyPatients}+ daily patients, and expert Learning Facilitators. Affiliated to TN Dr. MGR Medical University, NAAC accredited.`,
+    "description": `3-year postgraduate Master of Dental Surgery (MDS) program at JKKN Dental College & Hospital, Tamil Nadu. Offers ${collegeFacts.mdsSeatCount} seats across ${collegeFacts.mdsSpecialisations} NDC-permitted specializations with ${collegeFacts.dentalChairs}+ dental chairs, ${collegeFacts.dailyPatients}+ daily patients, and expert Learning Facilitators. Affiliated to TN Dr. MGR Medical University, NAAC accredited.`,
     "courseCode": "MDS-JKKN",
     "educationalLevel": "Postgraduate",
     "educationalCredentialAwarded": {

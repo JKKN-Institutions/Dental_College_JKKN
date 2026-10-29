@@ -103,7 +103,7 @@ export default function MDSConservativeDentistry() {
 
   const speakableSchema = generateSpeakableWebPageSchema({
     title: 'Endodontic Courses in Coimbatore Region | JKKN Dental',
-    description: 'Join MDS Conservative Dentistry & Endodontics at JKKN Dental, near Coimbatore. NDC-approved programme with root canal training, microscopy & advanced labs.',
+    description: 'Join MDS Conservative Dentistry & Endodontics at JKKN Dental, near Coimbatore. NDC-permitted programme with root canal training, microscopy & advanced labs.',
     url: 'https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/conservative-dentistry-and-endodontics/',
     speakableCssSelectors: ['h1', '.hero-description', 'article p'],
   });

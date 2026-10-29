@@ -319,7 +319,7 @@ export default function CoimbatorePage() {
             {[
               'Qualify NEET UG 2026 with a minimum score of 50th percentile for general category candidates.',
               'Register for Tamil Nadu MBBS/BDS state counseling at tnmedicalselection.net after NEET results are declared.',
-              'For management quota seats, apply directly at www.jkkn.ai/apply/jkkn-admission-2026 — applications open March to August 2026.',
+              'Management-quota seats, including minority and NRI seats, are also filled through the Selection Committee counselling - register for the quota you want. For guidance, enquire at www.jkkn.ai/apply/jkkn-admission-2026.',
               'Submit documents: NEET scorecard, Class 10 and 12 mark sheets, transfer certificate, and category certificate (if applicable).',
               'Attend counseling, receive allotment, and complete fee payment to confirm the seat.',
             ].map((step, i) => (

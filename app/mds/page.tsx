@@ -319,7 +319,7 @@ const mdsFaqSchema = {
       "name": "What is the MDS admission process at JKKN Dental College?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Master of Dental Surgery admission at JKKN requires NEET-MDS qualification, state or All India Quota counseling, specialization selection, document verification, and campus enrollment at JKKN Dental College."
+        "text": "Master of Dental Surgery admission at JKKN requires NEET-MDS qualification, Tamil Nadu Selection Committee counselling (government or management quota), specialization selection, document verification, and campus enrollment at JKKN Dental College."
       }
     },
     {

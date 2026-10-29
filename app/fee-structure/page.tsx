@@ -71,7 +71,7 @@ const structuredData = {
     {
       "@type": "Course",
       "name": "Master of Dental Surgery (MDS)",
-      "description": "3-year postgraduate dental specialization programs at JKKN Dental College & Hospital, NDC approved",
+      "description": "3-year postgraduate dental specialization programs at JKKN Dental College & Hospital, permitted by the National Dental Commission",
       "provider": {
         "@type": "EducationalOrganization",
         "name": "JKKN Dental College & Hospital"
@@ -385,7 +385,7 @@ export default function FeesStructure() {
               <li>Duration: 3 years full-time postgraduate program</li>
               <li>Admission: Through NEET-MDS and state counseling</li>
               <li>Eligibility: BDS degree + 1 year internship completion required</li>
-              <li>All specializations are NDC approved</li>
+              <li>All five specialities are permitted by the National Dental Commission for 2026-27 (18 seats)</li>
               <li>Stipend may be provided to MDS students as per norms</li>
               <li>Excellent clinical exposure with 200+ dental chairs</li>
               <li>Research facilities and dissertation support available</li>
