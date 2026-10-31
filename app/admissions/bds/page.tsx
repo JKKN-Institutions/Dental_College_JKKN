@@ -488,7 +488,7 @@ export default function BDSAdmissionPage() {
             <EnquiryButton
               sourcePage="admissions-bds-hero-btn"
               programmeId={DEFAULT_PROGRAMME_BY_PAGE["bds"]}
-              fallbackHref="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_medium=organic&utm_campaign=admissions-bds"
+              fallbackHref="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_campaign=admissions-bds"
               fallbackLabel="Apply Now"
               className="bg-[#ffde59] hover:bg-[#e6c64d] text-[#032816] font-bold py-3.5 px-10 rounded-full transition-all duration-300 min-h-[44px] flex items-center justify-center gap-2 hover:scale-105 active:scale-95 text-lg"
             >
@@ -753,7 +753,7 @@ export default function BDSAdmissionPage() {
 
           <div className="flex justify-center mb-10">
             <a
-              href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_medium=organic&utm_campaign=admissions-bds"
+              href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_campaign=admissions-bds"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white hover:bg-[#FBFBEE] text-[#0b6d41] font-bold px-10 py-4 rounded-full transition-all duration-300 min-h-[44px] flex items-center justify-center gap-2 hover:scale-105 active:scale-95 text-lg"

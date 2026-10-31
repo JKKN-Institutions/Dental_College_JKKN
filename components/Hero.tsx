@@ -66,7 +66,7 @@ export default function Hero() {
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
               <EnquiryButton
                 sourcePage="home-hero-btn"
-                fallbackHref="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_medium=organic&utm_campaign=components-hero"
+                fallbackHref="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_campaign=components-hero"
                 fallbackLabel="Start Your Application →"
                 className="md:hidden bg-[#ffde59] hover:bg-[#e6c64d] active:bg-[#e6c64d] text-[#032816] font-bold py-3 sm:py-3.5 px-6 sm:px-8 rounded-full transition-all duration-300 text-center text-sm sm:text-base min-h-[44px] flex items-center justify-center touch-manipulation transform hover:scale-105 active:scale-95"
               >

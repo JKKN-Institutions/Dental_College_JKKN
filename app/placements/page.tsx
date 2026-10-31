@@ -110,7 +110,7 @@ export default function PlacementsPage() {
           ))}
         </ul>
         <div className="flex flex-col sm:flex-row gap-4 items-center">
-          <a href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_medium=organic&utm_campaign=placements" target="_blank" rel="nofollow noopener noreferrer" className="bg-[#ffde59] hover:bg-[#e6c64d] text-[#032816] font-bold px-8 py-4 rounded-full transition-all transform hover:scale-105 shadow-lg text-base">
+          <a href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_campaign=placements" target="_blank" rel="nofollow noopener noreferrer" className="bg-[#ffde59] hover:bg-[#e6c64d] text-[#032816] font-bold px-8 py-4 rounded-full transition-all transform hover:scale-105 shadow-lg text-base">
             Enquire About Placements
           </a>
           <a href="tel:+919345855001" className="bg-[#0b6d41] hover:bg-[#032816] text-white font-bold px-8 py-4 rounded-full transition-all transform hover:scale-105 shadow-lg text-base">
@@ -332,7 +332,7 @@ export default function PlacementsPage() {
             </a>
           </div>
           <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">
-            <a href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_medium=organic&utm_campaign=placements" target="_blank" rel="nofollow noopener noreferrer" className="bg-[#ffde59] hover:bg-[#e6c64d] text-[#032816] font-bold px-8 py-4 rounded-full transition-all transform hover:scale-105 shadow-lg text-base">
+            <a href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_campaign=placements" target="_blank" rel="nofollow noopener noreferrer" className="bg-[#ffde59] hover:bg-[#e6c64d] text-[#032816] font-bold px-8 py-4 rounded-full transition-all transform hover:scale-105 shadow-lg text-base">
               Apply Now — {collegeFacts.currentAdmissionYear}
             </a>
             <Link href="/committee/placement-cell-cdc/" className="bg-white/10 hover:bg-white/20 border border-white/30 text-white font-bold px-8 py-4 rounded-full transition-all transform hover:scale-105 text-base">

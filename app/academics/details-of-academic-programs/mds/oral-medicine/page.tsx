@@ -159,7 +159,7 @@ export default function MDSOralMedicine() {
                 <EnquiryButton
                   sourcePage="mds-oral-medicine-hero-btn"
                   programmeId={DEFAULT_PROGRAMME_BY_PAGE["mds-oral-medicine"]}
-                  fallbackHref="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_medium=organic&utm_campaign=academics-details-of-academic-programs-mds-oral-medicine"
+                  fallbackHref="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_campaign=academics-details-of-academic-programs-mds-oral-medicine"
                   fallbackLabel="Apply Now"
                   className="bg-[#ffde59] hover:bg-[#e6c64d] text-[#032816] font-bold px-8 py-4 rounded-lg text-lg transition-all duration-300 shadow-lg inline-block"
                 >
@@ -1180,7 +1180,7 @@ export default function MDSOralMedicine() {
             Join our prestigious MDS program and transform your career with world-class training at J.K.K. Nattraja Dental College.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <a href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_medium=organic&utm_campaign=academics-details-of-academic-programs-mds-oral-medicine" target="_blank" rel="noopener noreferrer" className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#0b6d41] font-bold px-10 py-4 rounded-lg text-lg transition-all duration-300">
+            <a href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_campaign=academics-details-of-academic-programs-mds-oral-medicine" target="_blank" rel="noopener noreferrer" className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#0b6d41] font-bold px-10 py-4 rounded-lg text-lg transition-all duration-300">
               Apply Online
             </a>
           </div>

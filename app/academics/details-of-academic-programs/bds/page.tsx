@@ -230,7 +230,7 @@ export default function BDSProgram() {
                 <EnquiryButton
                   sourcePage="bds-hero-btn"
                   programmeId={DEFAULT_PROGRAMME_BY_PAGE["bds"]}
-                  fallbackHref="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_medium=organic&utm_campaign=academics-details-of-academic-programs-bds"
+                  fallbackHref="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_campaign=academics-details-of-academic-programs-bds"
                   fallbackLabel="Apply Now"
                   className="bg-[#ffde59] hover:bg-[#e6c64d] text-[#032816] font-semibold px-8 py-3 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl inline-block"
                 >
@@ -698,7 +698,7 @@ export default function BDSProgram() {
 
               <div className="mt-8 bg-[#0b6d41]/10 rounded-lg p-4">
                 <p className="text-sm text-[#0b6d41] font-semibold">
-                  For admission and management-quota counselling enquiries: <a href="tel:+919345855001" className="underline">+91 93458 55001</a> | <a href="mailto:dental@jkkn.ac.in" className="underline">dental@jkkn.ac.in</a> | <a href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_medium=organic&utm_campaign=academics-details-of-academic-programs-bds" target="_blank" rel="noopener noreferrer" className="underline">www.jkkn.ai/apply/jkkn-admission-2026</a>
+                  For admission and management-quota counselling enquiries: <a href="tel:+919345855001" className="underline">+91 93458 55001</a> | <a href="mailto:dental@jkkn.ac.in" className="underline">dental@jkkn.ac.in</a> | <a href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_campaign=academics-details-of-academic-programs-bds" target="_blank" rel="noopener noreferrer" className="underline">www.jkkn.ai/apply/jkkn-admission-2026</a>
                 </p>
               </div>
             </div>
@@ -1415,7 +1415,7 @@ export default function BDSProgram() {
           </p>
 
           <div className="flex flex-wrap justify-center gap-6">
-            <a href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_medium=organic&utm_campaign=academics-details-of-academic-programs-bds" target="_blank" rel="noopener noreferrer" className="bg-[#ffde59] hover:bg-[#e6c64d] text-[#032816] font-semibold px-10 py-4 rounded-lg text-lg transition-all duration-300 shadow-lg hover:shadow-xl inline-block">
+            <a href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_campaign=academics-details-of-academic-programs-bds" target="_blank" rel="noopener noreferrer" className="bg-[#ffde59] hover:bg-[#e6c64d] text-[#032816] font-semibold px-10 py-4 rounded-lg text-lg transition-all duration-300 shadow-lg hover:shadow-xl inline-block">
               Apply for BDS Admission
             </a>
             <a href="tel:+919345855001" className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#0b6d41] font-semibold px-10 py-4 rounded-lg text-lg transition-all duration-300 inline-block">

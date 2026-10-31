@@ -479,7 +479,7 @@ export default function AdmissionPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <EnquiryButton
               sourcePage="admissions-hero-btn"
-              fallbackHref="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_medium=organic&utm_campaign=admissions"
+              fallbackHref="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_campaign=admissions"
               fallbackLabel="Apply Now"
               className="bg-[#ffde59] hover:bg-[#e6c64d] text-[#032816] font-bold py-3.5 px-8 rounded-full transition-all duration-300 min-h-[44px] flex items-center justify-center gap-2 hover:scale-105 active:scale-95 text-lg"
             >
@@ -806,7 +806,7 @@ export default function AdmissionPage() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10">
             <a
-              href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_medium=organic&utm_campaign=admissions"
+              href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_campaign=admissions"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-[#ffde59] hover:bg-[#e6c64d] text-[#0b6d41] font-bold px-8 py-4 rounded-full transition-all duration-300 min-h-[44px] flex items-center justify-center gap-2 hover:scale-105 active:scale-95 text-lg"

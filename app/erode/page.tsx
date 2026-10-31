@@ -116,7 +116,7 @@ export default function ErodePage() {
           ))}
         </ul>
         <div className="flex flex-col sm:flex-row gap-4 items-center">
-          <a href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_medium=organic&utm_campaign=erode" target="_blank" rel="nofollow noopener noreferrer" className="bg-[#ffde59] hover:bg-[#e6c64d] text-[#032816] font-bold px-8 py-4 rounded-full transition-all transform hover:scale-105 shadow-lg text-base">
+          <a href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_campaign=erode" target="_blank" rel="nofollow noopener noreferrer" className="bg-[#ffde59] hover:bg-[#e6c64d] text-[#032816] font-bold px-8 py-4 rounded-full transition-all transform hover:scale-105 shadow-lg text-base">
             Apply Now — 2026-27
           </a>
           <a href="tel:+919345855001" className="bg-[#0b6d41] hover:bg-[#032816] text-white font-bold px-8 py-4 rounded-full transition-all transform hover:scale-105 shadow-lg text-base">Call Us</a>
@@ -328,7 +328,7 @@ export default function ErodePage() {
             ))}
           </ol>
           <div className="mt-8 text-center">
-            <a href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_medium=organic&utm_campaign=erode" target="_blank" rel="nofollow noopener noreferrer" className="inline-block bg-[#ffde59] hover:bg-[#e6c64d] text-[#032816] font-bold px-8 py-4 rounded-full transition-all transform hover:scale-105 shadow-lg text-sm">
+            <a href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_campaign=erode" target="_blank" rel="nofollow noopener noreferrer" className="inline-block bg-[#ffde59] hover:bg-[#e6c64d] text-[#032816] font-bold px-8 py-4 rounded-full transition-all transform hover:scale-105 shadow-lg text-sm">
               Apply Now — BDS/MDS 2026-27
             </a>
           </div>
