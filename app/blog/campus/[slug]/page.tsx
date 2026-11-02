@@ -9,6 +9,7 @@ import StructuredData from '@/components/StructuredData';
 import { generateSpeakableWebPageSchema } from '@/lib/metadata';
 import { dentalOrgRef, DENTAL_LOGO_URL } from '@/lib/schema/organization';
 import { renderBlogBody } from '@/lib/blog-render';
+import { inlineCtaFor } from '@/lib/blog-inline-cta';
 
 export const dynamic = 'force-dynamic';
 
@@ -147,6 +148,8 @@ export default async function CampusBlogPost({
 
   // Structured posts (new format with sections JSONB) skip HTML processing
   const { processedHtml, tocItems, words, readTime } = renderBlogBody(post);
+  // Enquiry box inside the post - only for slugs listed in lib/blog-inline-cta.ts (null for the rest).
+  const inlineCta = inlineCtaFor(post.slug, processedHtml);
 
   // BlogPosting was MISSING on every CMS post (48 of 48 live, measured 2026-09-18) - the posts
   // shipped only a breadcrumb and a WebPage, so nothing told Google or an AI engine that this
@@ -194,6 +197,7 @@ export default async function CampusBlogPost({
         popularPosts={popularPosts ?? []}
         relatedPosts={relatedPosts ?? []}
         initialComments={initialComments ?? []}
+        inlineCta={inlineCta}
       />
       <Footer />
       <ScrollToTop />

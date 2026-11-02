@@ -3,6 +3,8 @@
 import { useState } from 'react';
 import { Clock, Calendar, Tag, MessageSquare, Send, Check, Loader2, ChevronUp, ChevronDown } from 'lucide-react';
 import { createClient } from '@/lib/supabase/client';
+import BlogEnquiryBox from '@/components/lead/BlogEnquiryBox';
+import type { InlineCta } from '@/lib/blog-inline-cta';
 
 // ── Types ──────────────────────────────────────────────────────────────────
 interface Post {
@@ -51,6 +53,8 @@ interface Props {
   popularPosts: SidePost[];
   relatedPosts: SidePost[];
   initialComments: CommentItem[];
+  /** Enquiry box inside the post (lib/blog-inline-cta.ts); null for every post not configured there. */
+  inlineCta?: InlineCta | null;
 }
 
 // ── Helpers ────────────────────────────────────────────────────────────────
@@ -78,6 +82,7 @@ export default function CampusBlogContent({
   processedContent,
   relatedPosts,
   initialComments,
+  inlineCta = null,
 }: Props) {
   const supabase = createClient();
   const [comments] = useState<CommentItem[]>(initialComments);
@@ -169,12 +174,31 @@ export default function CampusBlogContent({
           </div>
         )}
 
-        {/* Blog content from rich text editor */}
-        {processedContent && (
-          <div
-            className="blog-content mb-12 [&_table]:block [&_table]:overflow-x-auto"
-            dangerouslySetInnerHTML={{ __html: processedContent }}
-          />
+        {/* Blog content from rich text editor. A post listed in lib/blog-inline-cta.ts is cut before
+            one of its <h2>s and the enquiry box sits in the gap; when the cut is unsafe the box goes
+            after the post instead. Every other post renders exactly as before. */}
+        {processedContent && inlineCta?.before && inlineCta.after ? (
+          <>
+            <div
+              className="blog-content [&_table]:block [&_table]:overflow-x-auto"
+              dangerouslySetInnerHTML={{ __html: inlineCta.before }}
+            />
+            <BlogEnquiryBox sourcePage={inlineCta.sourcePage} />
+            <div
+              className="blog-content mb-12 [&_table]:block [&_table]:overflow-x-auto"
+              dangerouslySetInnerHTML={{ __html: inlineCta.after }}
+            />
+          </>
+        ) : (
+          processedContent && (
+            <div
+              className="blog-content mb-12 [&_table]:block [&_table]:overflow-x-auto"
+              dangerouslySetInnerHTML={{ __html: processedContent }}
+            />
+          )
+        )}
+        {inlineCta && !(inlineCta.before && inlineCta.after) && (
+          <BlogEnquiryBox sourcePage={inlineCta.sourcePage} />
         )}
 
         {/* Tags */}
