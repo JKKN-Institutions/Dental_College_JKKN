@@ -1,9 +1,14 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: { absolute: 'Dental Colleges in Tamil Nadu — 22 BDS Colleges, Seats, Private List & NIRF Top Ranks | JKKN' },
+  // 2026-11-02 (Dental Step 3 of the 10,300-lead plan): Google shows THIS page, not the homepage, for
+  // "dental colleges in tamilnadu" (organic #4, desktop, Komarapalayam, 2026-11-02), but the old title was
+  // 95 characters and the description about 300, so both were cut in the result. "Affiliated" stays in
+  // the title: deemed universities are not in this list (see the page), so "22 dental colleges" alone
+  // would read as the whole state.
+  title: { absolute: 'Dental Colleges in Tamil Nadu: 22 Affiliated BDS Colleges' },
   description:
-    'Dental colleges in Tamil Nadu (Tamilnadu) affiliated to the TN Dr M.G.R. Medical University — 22 BDS colleges and 2,100 sanctioned seats for 2025-26, the 19 private self-financing colleges, plus the 9 Tamil Nadu institutions in the NIRF 2025 dental top 40; location, minority status and intake per college.',
+    '22 dental colleges in Tamilnadu affiliated to TN Dr M.G.R. Medical University: 2,100 BDS seats for 2025-26, the 19 private colleges and NIRF 2025 ranks.',
   keywords:
     'dental colleges in tamilnadu, dental college in tamil nadu, list of dental colleges in tamilnadu, bds colleges in tamilnadu, private dental colleges in tamilnadu, government dental colleges in tamilnadu, top dental colleges in tamilnadu, best dental colleges in tamilnadu',
   alternates: {
