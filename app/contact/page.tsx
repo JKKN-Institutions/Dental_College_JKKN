@@ -116,6 +116,15 @@ export default function Contact() {
             Have questions about admissions, courses, or campus facilities? We're here to help! JKKN Dental College & Hospital welcomes prospective learners, learning partners, and visitors. Reach out to us through any of the contact methods below or visit our campus in Komarapalayam, Tamil Nadu.
           </p>
 
+          {/* Short form in the first screen (Step 1 of the 10,300-lead plan, 2026-11-02). Measured live
+              before: the only form sat 5.1 phone screens down, and 90% of this page's Google clicks are
+              phones (GSC 2026-08-01..10-30). Same white card + compact form as the homepage hero; the
+              full form at the bottom stays, tagged "contact", so the two can be compared. */}
+          <div className="max-w-xl mb-10 sm:mb-12 rounded-[20px] bg-white shadow-[0_18px_40px_rgba(3,40,22,0.35)] p-5 sm:p-6 lg:p-7">
+            <h2 className="mb-4 text-xl lg:text-2xl font-bold text-[#032816] leading-snug">Get BDS / MDS fee and admission details</h2>
+            <DentalEnquiryForm sourcePage="contact-top" compact bare />
+          </div>
+
           {/* Contact Cards Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-10 sm:mb-12 md:mb-16">
             {/* Main Office */}
