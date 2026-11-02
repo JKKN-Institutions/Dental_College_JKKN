@@ -259,6 +259,15 @@ export default function FeesStructure() {
             </p>
           </div>
 
+          {/* Short form right under the BDS fee table (Step 1 of the 10,300-lead plan, 2026-11-02): the fee
+              first, then the form. Measured live before: the only form sat 5.4 phone screens down, and 87% of
+              this page's Google clicks are phones (GSC 2026-08-01..10-30). Same white card + compact form as
+              the homepage hero; the full form below the MDS table stays, tagged "fees-structure". */}
+          <div className="mt-8 max-w-xl mx-auto rounded-[20px] bg-white border border-[#d4f1e4] shadow-[0_18px_40px_rgba(3,40,22,0.35)] p-5 sm:p-6 lg:p-7">
+            <h2 className="mb-4 text-xl lg:text-2xl font-bold text-[#032816] leading-snug">Want the full BDS / MDS cost for your quota?</h2>
+            <DentalEnquiryForm sourcePage="fees-top" compact bare />
+          </div>
+
           {/* BDS Additional Information */}
           <div className="mt-8 bg-[#fbfbee] border-l-4 border-[#0f8f56] p-6 rounded-r-lg">
             <h3 className="font-bold text-gray-800 mb-3 flex items-center gap-2">
