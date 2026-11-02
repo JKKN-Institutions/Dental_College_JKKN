@@ -256,6 +256,18 @@ export default function MDSProgram() {
         </div>
       </section>
 
+      {/* Short form right after the hero and its fee block (Dental Step 4 of the 10,300-lead plan,
+          2026-11-02). Measured live before: the fee block sat 1.2 phone screens down but the only inline
+          form was at 20.5 of 25.4, and 89% of this page's Google clicks are phones (GSC 2026-08-01..10-30).
+          Same white card + compact form as the contact / fee pages; no speciality pre-selected (5 to pick
+          from). The full form near the bottom stays, tagged "mds". */}
+      <section className="bg-[#fbfbee] py-10 px-4">
+        <div className="max-w-xl mx-auto rounded-[20px] bg-white border border-[#d4f1e4] shadow-[0_18px_40px_rgba(3,40,22,0.35)] p-5 sm:p-6 lg:p-7">
+          <h2 className="mb-4 text-xl lg:text-2xl font-bold text-[#032816] leading-snug">Get the MDS fee and seat details</h2>
+          <DentalEnquiryForm sourcePage="mds-top" compact bare />
+        </div>
+      </section>
+
       {/* About MDS Section */}
       <section className="py-20 px-4 bg-white relative overflow-hidden">
         {/* Top accent border */}
