@@ -7,6 +7,11 @@ import { GAPageTracker } from "@/components/GAPageTracker";
 import { ConversionTracking } from "@/components/analytics/ConversionTracking";
 import { GoogleAnalytics } from "@next/third-parties/google";
 
+// ANALYTICS_OFF=1 at build time is for a LOCAL test build only (the 2026-11-03 phone test of the
+// Call / WhatsApp gate ran `next start` on the office Wi-Fi). Vercel never sets it.
+const IS_PRODUCTION_BUILD =
+  process.env.NODE_ENV === "production" && process.env.ANALYTICS_OFF !== "1";
+
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
@@ -108,7 +113,10 @@ export default function RootLayout({
         >
           Skip to main content
         </a>
-        <MetaPixel />
+        {/* Analytics load only in a real production build (2026-11-03): a local test - the Call /
+            WhatsApp gate phone test included - must not write test taps into the live GA4 property
+            or the Meta pixel. Vercel production and preview builds are unaffected. */}
+        {IS_PRODUCTION_BUILD && <MetaPixel />}
         <GAPageTracker />
         <ConversionTracking />
         <ClientLayoutWrapper>
@@ -117,7 +125,7 @@ export default function RootLayout({
           </div>
         </ClientLayoutWrapper>
       </body>
-      <GoogleAnalytics gaId="G-RWVNW1RWMG" />
+      {IS_PRODUCTION_BUILD && <GoogleAnalytics gaId="G-RWVNW1RWMG" />}
     </html>
   );
 }
