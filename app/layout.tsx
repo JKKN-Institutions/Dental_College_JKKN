@@ -39,6 +39,10 @@ export const metadata: Metadata = {
     icon: "/images/dental-logo.png",
     apple: "/images/dental-logo.png",
   },
+  // iPhone Safari turns any phone number in plain text into a dial link of its own, which skipped
+  // the Call / WhatsApp form gate (user's choice 2026-11-04: those taps must also go form -> dialer).
+  // Off here; EnquiryModal's plain-number tap listener takes those taps instead.
+  formatDetection: { telephone: false },
   openGraph: {
     title: "JKKN Dental College & Hospital | NDC Approved",
     description: "JKKN Dental College & Hospital, Komarapalayam — NDC approved, NAAC A accredited. BDS & MDS programs with 200+ chair hospital training. Since 1987.",

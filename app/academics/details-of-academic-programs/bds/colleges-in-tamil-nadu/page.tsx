@@ -499,7 +499,7 @@ export default function DentalCollegesInTamilNadu() {
           <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-6">
             JKKN holds {jkkn.intake} of the {TN_BDS_TOTALS.seats.toLocaleString('en-IN')} sanctioned
             BDS seats in the university&rsquo;s matrix, at Komarapalayam in Namakkal district. Send
-            an enquiry and the admissions office will call back with the current fee structure and
+            an enquiry, then call or WhatsApp the admissions office for the current fee structure and
             counselling dates.
           </p>
           <DentalEnquiryForm sourcePage="bds-colleges-in-tamil-nadu" />

@@ -24,7 +24,35 @@ import DentalEnquiryForm from "@/components/lead/DentalEnquiryForm"
 import { sendGaEvent } from "@/lib/ga-event"
 import { campaignTagsSnapshot, parseCampaignTags, tagApplyHref } from "@/lib/campaign-tags"
 import { ENQUIRY_DONE_KEY, readStore } from "@/lib/enquiry-store"
-import { gateIntentForHref, isUngatedPath, pageTag, programmeForPath, type GateIntent } from "@/lib/call-gate"
+import {
+  gateIntentForHref,
+  isGateNumber,
+  isUngatedPath,
+  numberAtOffset,
+  pageTag,
+  programmeForPath,
+  telUrlFor,
+  type GateIntent,
+} from "@/lib/call-gate"
+
+/** The text node + character offset under a tap, in Chrome / Safari (caretRangeFromPoint) and
+ *  Firefox (caretPositionFromPoint). null when the browser has neither. */
+function textAtPoint(x: number, y: number): { text: string; offset: number } | null {
+  const d = document as Document & {
+    caretRangeFromPoint?: (x: number, y: number) => Range | null
+    caretPositionFromPoint?: (x: number, y: number) => { offsetNode: Node; offset: number } | null
+  }
+  if (typeof d.caretPositionFromPoint === "function") {
+    const pos = d.caretPositionFromPoint(x, y)
+    if (pos && pos.offsetNode.nodeType === Node.TEXT_NODE) return { text: pos.offsetNode.textContent ?? "", offset: pos.offset }
+  }
+  if (typeof d.caretRangeFromPoint === "function") {
+    const range = d.caretRangeFromPoint(x, y)
+    if (range && range.startContainer.nodeType === Node.TEXT_NODE)
+      return { text: range.startContainer.textContent ?? "", offset: range.startOffset }
+  }
+  return null
+}
 
 const APPLY_HREF = "https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in"
 const SITE_HOST = "dental.jkkn.ac.in"
@@ -125,6 +153,44 @@ export function EnquiryModalProvider({ children }: { children: ReactNode }) {
       e.preventDefault()
       const source = `${intent === "call" ? "call-gate" : "wa-gate"}${pageTag(pathname)}`.slice(0, 60)
       openEnquiry(source, { intent, programmeId: programmeForPath(pathname) })
+    }
+    document.addEventListener("click", onClick, true)
+    return () => document.removeEventListener("click", onClick, true)
+  }, [openEnquiry])
+
+  // A tap on a phone number written as PLAIN TEXT (FAQ answers, page copy - about 100 places), user's
+  // choice 2026-11-04: it goes the same way as a Call button. The layout switches iPhone's own
+  // number detection off (it dialled outside the gate), so this listener is now the only thing that
+  // makes such a number tappable - on Android too, where it never was. Nothing in the page changes:
+  // the tap position is read with caretRangeFromPoint, no text is wrapped or rewritten.
+  // The admission number opens the call gate (or dials, on careers / DSA pages and for a visitor
+  // who already enquired); any other mobile (hospital 55002, finance officer) dials directly, as
+  // iPhone did before.
+  useEffect(() => {
+    const onClick = (e: MouseEvent) => {
+      if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return
+      const target = e.target as Element | null
+      if (!target || target.closest("a, button, input, select, textarea, label, [role=dialog]")) return
+      if (window.getSelection()?.toString()) return // the visitor is selecting text, not tapping
+      const hit = textAtPoint(e.clientX, e.clientY)
+      if (!hit) return
+      const digits = numberAtOffset(hit.text, hit.offset)
+      if (!digits) return
+      const pathname = window.location.pathname
+      if (!isGateNumber(digits) || isUngatedPath(pathname)) {
+        window.location.href = telUrlFor(digits)
+        return
+      }
+      if (readStore(ENQUIRY_DONE_KEY)) {
+        sendGaEvent("gate_call_bypass", { reason: "already_enquired", page_path: pathname })
+        window.location.href = telUrlFor(digits)
+        return
+      }
+      e.preventDefault()
+      openEnquiry(`call-gate-text${pageTag(pathname)}`.slice(0, 60), {
+        intent: "call",
+        programmeId: programmeForPath(pathname),
+      })
     }
     document.addEventListener("click", onClick, true)
     return () => document.removeEventListener("click", onClick, true)

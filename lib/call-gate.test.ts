@@ -1,5 +1,33 @@
 import { describe, expect, it } from "vitest"
-import { gateIntentForHref, isUngatedPath, pageTag, programmeForPath, whatsappGateUrl } from "@/lib/call-gate"
+import {
+  gateIntentForHref,
+  isGateNumber,
+  isUngatedPath,
+  numberAtOffset,
+  pageTag,
+  programmeForPath,
+  telUrlFor,
+  whatsappGateUrl,
+} from "@/lib/call-gate"
+
+describe("numberAtOffset (plain-text numbers)", () => {
+  const text = "For admission call +91 93458 55001 or the hospital on 93458 55002 today."
+  it("finds the number a tap lands on, in any of its written forms", () => {
+    expect(numberAtOffset(text, text.indexOf("93458 55001") + 3)).toBe("9345855001")
+    expect(numberAtOffset(text, text.indexOf("+91"))).toBe("9345855001")
+    expect(numberAtOffset(text, text.indexOf("55002"))).toBe("9345855002")
+    expect(numberAtOffset("Call 9345855001 now", 7)).toBe("9345855001")
+  })
+  it("returns null off the number, and for years or short numbers", () => {
+    expect(numberAtOffset(text, 2)).toBeNull()
+    expect(numberAtOffset("Established in 1987, 100 BDS seats", 16)).toBeNull()
+  })
+  it("only the admission number is gated", () => {
+    expect(isGateNumber("9345855001")).toBe(true)
+    expect(isGateNumber("9345855002")).toBe(false)
+    expect(telUrlFor("9345855002")).toBe("tel:+919345855002")
+  })
+})
 
 describe("gateIntentForHref", () => {
   it("gates every way the site writes the admission number", () => {

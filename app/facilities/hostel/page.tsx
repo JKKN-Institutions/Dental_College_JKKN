@@ -157,7 +157,7 @@ export default function HostelFacilities() {
       <EnquirySection
         sourcePage="hostel"
         heading="Ask About Hostel, Mess and Fees"
-        subheading="Leave your details and our admission team will call you back within 24 hours."
+        subheading="Fill your details, then call or WhatsApp our admission team right away."
       />
 
       <Footer />

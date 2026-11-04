@@ -186,7 +186,7 @@ export default async function FacultyPage() {
         <section className="bg-gradient-to-br from-[#0b6d41] to-[#0f8f56] py-16">
           <div className="max-w-3xl mx-auto px-4">
             <h2 className="text-white text-2xl md:text-3xl font-bold text-center mb-2">Talk to Our Admission Team</h2>
-            <p className="text-white/80 text-center text-sm mb-8">Ask about BDS / MDS fees, seats and guides. We call you back within 24 hours.</p>
+            <p className="text-white/80 text-center text-sm mb-8">Ask about BDS / MDS fees, seats and guides. Call or WhatsApp us right after the form.</p>
             <DentalEnquiryForm sourcePage="faculty" />
           </div>
         </section>

@@ -574,7 +574,7 @@ export default function BDSAdmissionPage() {
       <section className="bg-gradient-to-br from-[#0b6d41] to-[#0f8f56] py-16">
           <div className="max-w-3xl mx-auto px-4">
               <h2 className="text-white text-2xl md:text-3xl font-bold text-center mb-2">Want the full 5-year cost for your quota?</h2>
-              <p className="text-white/80 text-center text-sm mb-8">Leave your number. Our admission team calls you back within 24 hours.</p>
+              <p className="text-white/80 text-center text-sm mb-8">Leave your number, then call or WhatsApp our admission team right away.</p>
               <DentalEnquiryForm sourcePage="admissions-bds" defaultProgrammeId={DEFAULT_PROGRAMME_BY_PAGE["bds"]} />
           </div>
       </section>

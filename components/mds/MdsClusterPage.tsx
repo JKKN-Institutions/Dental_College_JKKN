@@ -219,7 +219,7 @@ export default function MdsClusterPage({
           <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-6">
             JKKN holds 18 of the {TN_MDS_TOTALS.seats} sanctioned MDS seats in the university&rsquo;s
             matrix, across five specialities, at Komarapalayam in Namakkal district. Send an
-            enquiry and the admissions office will call back with the current fee structure and
+            enquiry, then call or WhatsApp the admissions office for the current fee structure and
             counselling dates.
           </p>
           <DentalEnquiryForm sourcePage={`mds-${slug || 'fees'}`} />

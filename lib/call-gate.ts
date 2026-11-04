@@ -88,3 +88,27 @@ export function whatsappGateUrl(programmeId: string, pathname: string): string {
 }
 
 export const telGateUrl = `tel:${GATE_PHONE}`
+
+// Plain-text numbers (2026-11-04). The site prints the number as plain text in about 100 places (FAQ
+// answers, page copy); iPhone used to turn those into dial links of its own, outside the gate. The
+// layout now switches that off, and EnquiryModal reads a tap on such a number with numberAtOffset().
+// Indian mobiles only, as a visitor reads them: "+91 93458 55001", "93458 55001", "9345855001".
+const PLAIN_MOBILE = /(?:\+?91[\s-]?)?[6-9]\d{4}[\s-]?\d{5}/g
+
+/** The 10-digit mobile number that a character offset of a text falls inside, or null. */
+export function numberAtOffset(text: string, offset: number): string | null {
+  for (const m of text.matchAll(PLAIN_MOBILE)) {
+    const start = m.index ?? 0
+    if (offset >= start && offset <= start + m[0].length) return m[0].replace(/\D/g, "").slice(-10)
+  }
+  return null
+}
+
+/** True for the admission number - the one number the gate applies to. */
+export function isGateNumber(digits: string): boolean {
+  return digits === GATE_DIGITS
+}
+
+export function telUrlFor(digits: string): string {
+  return `tel:+91${digits}`
+}

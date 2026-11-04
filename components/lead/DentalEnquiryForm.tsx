@@ -49,19 +49,20 @@ type Props = {
   compact?: boolean
   /** No white card of its own — for a host that already is the white card (homepage hero, popup). */
   bare?: boolean
-  /** Call / WhatsApp gate (lib/call-gate.ts): the button reads "Call Counsellor" / "Chat on
-   *  WhatsApp" and ONE tap sends the lead and opens the dialer / WhatsApp. Set by EnquiryModal only. */
+  /** Call / WhatsApp gate (lib/call-gate.ts): ONE button, "Call Counsellor" or "Chat on WhatsApp".
+   *  Left out (every page form and the Enquire Now popup, user's choice 2026-11-04): TWO buttons,
+   *  "Call Counsellor" + "Chat on WhatsApp". Either way ONE tap sends the lead and opens the app. */
   gate?: GateIntent
 }
 
 type GatePhase =
   | { step: "form" }
-  | { step: "opened"; result: "waiting" | "saved" | "failed"; programmeId: string }
+  | { step: "opened"; result: "waiting" | "saved" | "failed"; programmeId: string; intent: GateIntent }
 
 export default function DentalEnquiryForm({
   sourcePage,
   defaultProgrammeId,
-  heading = "Get a Call Back",
+  heading = "Call or WhatsApp our admission team",
   compact = false,
   bare = false,
   gate,
@@ -110,13 +111,16 @@ export default function DentalEnquiryForm({
     : "bg-white rounded-[20px] shadow-[0_18px_40px_rgba(3,40,22,0.35)] p-4 sm:p-6"
 
   const [gatePhase, setGatePhase] = useState<GatePhase>({ step: "form" })
-  const gateEvent = gate === "call" ? "gate_call" : "gate_wa"
+  // Which of the two buttons was pressed. Read from SubmitEvent.submitter where the browser has it;
+  // this ref (set on the button's own click) covers the rest. Enter in a box = the first button, Call.
+  const chosen = useRef<GateIntent>(gate ?? "call")
+  const eventFor = (intent: GateIntent) => (intent === "call" ? "gate_call" : "gate_wa")
 
   // Opens the dialer / WhatsApp. Called inside the visitor's tap (the browser allows another app
   // only then), and again from the fallback button if the phone ignored the first try.
-  const openApp = (programmeId: string) => {
-    if (gate === "call") {
-      window.location.href = telGateUrl
+  const openApp = (programmeId: string, intent: GateIntent) => {
+    if (intent === "call") {
+      window.location.assign(telGateUrl)
       return
     }
     const url = whatsappGateUrl(programmeId, window.location.pathname)
@@ -124,13 +128,19 @@ export default function DentalEnquiryForm({
     // to the same tab, where keepalive still lets the request finish.
     const tab = window.open(url, "_blank")
     if (tab) tab.opener = null
-    else window.location.href = url
+    else window.location.assign(url)
   }
 
   // ONE tap: check the 3 boxes, send the lead without waiting, open the app at once.
   const onGateSubmit = (e: FormEvent<HTMLFormElement>) => {
+    // preventDefault also stops React's form action (it skips a prevented submit), so the server
+    // action runs only when JavaScript is off - the progressive-enhancement path stays intact.
     e.preventDefault()
     const form = e.currentTarget
+    const submitter = (e.nativeEvent as SubmitEvent).submitter as HTMLButtonElement | null
+    const fromButton = submitter?.value === "whatsapp" || submitter?.value === "call" ? submitter.value : null
+    const intent: GateIntent = gate ?? (fromButton as GateIntent | null) ?? chosen.current
+    const gateEvent = eventFor(intent)
     const nameBox = form.elements.namedItem("name") as HTMLInputElement | null
     if (nameBox) nameBox.setCustomValidity(nameBox.value.trim().length < 2 ? "Please enter your full name." : "")
     // Same three rules as the server (name, 10-digit mobile from 6-9, a programme). Checked here
@@ -146,8 +156,8 @@ export default function DentalEnquiryForm({
     const request = fetch("/api/enquiry/", { method: "POST", body, keepalive: true })
 
     sendGaEvent(`${gateEvent}_launch`, { source_page: sourcePage, page_path: window.location.pathname })
-    openApp(programmeId)
-    setGatePhase({ step: "opened", result: "waiting", programmeId })
+    openApp(programmeId, intent)
+    setGatePhase({ step: "opened", result: "waiting", programmeId, intent })
 
     request
       .then((res) => res.json() as Promise<DentalEnquiryState>)
@@ -176,8 +186,9 @@ export default function DentalEnquiryForm({
       })
   }
 
-  if (gate && gatePhase.step === "opened") {
-    const isCall = gate === "call"
+  if (gatePhase.step === "opened") {
+    const isCall = gatePhase.intent === "call"
+    const gateEvent = eventFor(gatePhase.intent)
     return (
       <div className={`${surface} space-y-4 text-center`} role="status" aria-live="polite">
         <p className="text-[#032816] text-lg font-semibold">
@@ -194,7 +205,7 @@ export default function DentalEnquiryForm({
           type="button"
           onClick={() => {
             sendGaEvent(`${gateEvent}_fallback`, { source_page: sourcePage, page_path: window.location.pathname })
-            openApp(gatePhase.programmeId)
+            openApp(gatePhase.programmeId, gatePhase.intent)
           }}
           className={
             isCall
@@ -247,18 +258,19 @@ export default function DentalEnquiryForm({
     "w-full bg-white border-[1.5px] border-[#75867e] rounded-xl px-4 py-3 text-base text-[#1f2a24] placeholder:text-[#5f6b66] focus:outline-none focus:border-[#0b6d41] focus:ring-[3px] focus:ring-[#0b6d41]/20"
   const labelCls = "block text-[#032816] text-sm font-semibold mb-1.5"
   const errCls = "text-[#b42318] text-xs mt-1"
-  // No-break space keeps "24 hrs" on one line: at 375 px the strip box broke it as "24 / hrs".
+  // The 3-step strip says what the buttons do (the old "We call in 24 hrs" step went with the
+  // 24-hour callback, 2026-11-04).
   const steps =
     gate === "call"
       ? ["Fill 3 details", "Tap Call Counsellor", "Talk to us now"]
       : gate === "whatsapp"
         ? ["Fill 3 details", "Tap Chat on WhatsApp", "Send the message"]
-        : [compact ? "Fill 3 details" : "Fill your details", "We call in 24 hrs", "Get fee and admission details"]
+        : [compact ? "Fill 3 details" : "Fill your details", "Tap Call or WhatsApp", "Talk to us now"]
 
   return (
     <form
-      action={gate ? undefined : formAction}
-      onSubmit={gate ? onGateSubmit : undefined}
+      action={formAction}
+      onSubmit={onGateSubmit}
       className={`${surface} space-y-4 text-left`}
     >
       <input type="hidden" name="source_page" value={sourcePage} />
@@ -276,7 +288,11 @@ export default function DentalEnquiryForm({
       />
 
       <h2 className="sr-only">
-        {gate === "call" ? "Call our admission counsellor" : gate === "whatsapp" ? "Chat with us on WhatsApp" : heading}
+        {gate === "call"
+          ? "Call our admission counsellor"
+          : gate === "whatsapp"
+            ? "Chat with us on WhatsApp"
+            : heading}
       </h2>
 
       <ol aria-label="What happens next" className="grid grid-cols-3 gap-1.5">
@@ -397,25 +413,27 @@ export default function DentalEnquiryForm({
       </div>
       )}
 
-      <button
-        type="submit"
-        disabled={isPending}
-        className={
-          gate === "whatsapp"
-            ? "w-full bg-[#25d366] hover:bg-[#1ebe5a] disabled:opacity-60 text-[#032816] font-bold py-4 rounded-full text-base transition-colors"
-            : "w-full bg-[#0b6d41] hover:bg-[#095a36] disabled:opacity-60 text-white font-bold py-4 rounded-full text-base transition-colors"
-        }
-      >
-        {gate === "call"
-          ? "Call Counsellor"
-          : gate === "whatsapp"
-            ? "Chat on WhatsApp"
-            : isPending
-              ? "Submitting…"
-              : compact
-                ? "Get a Call Back"
-                : "Submit Enquiry — Get a Call Back"}
-      </button>
+      {/* One tap = lead + app. Two buttons on every page form and the Enquire Now popup (user's choice
+          2026-11-04: the old "Get a Call Back" ended on a 24-hour thank-you screen); one in a gate. */}
+      {(gate ? [gate] : (["call", "whatsapp"] as GateIntent[])).map((intent) => (
+        <button
+          key={intent}
+          type="submit"
+          name="cta"
+          value={intent}
+          disabled={isPending}
+          onClick={() => {
+            chosen.current = intent
+          }}
+          className={
+            intent === "whatsapp"
+              ? "w-full bg-[#25d366] hover:bg-[#1ebe5a] disabled:opacity-60 text-[#032816] font-bold py-4 rounded-full text-base transition-colors"
+              : "w-full bg-[#0b6d41] hover:bg-[#095a36] disabled:opacity-60 text-white font-bold py-4 rounded-full text-base transition-colors"
+          }
+        >
+          {isPending ? "Submitting…" : intent === "call" ? "Call Counsellor" : "Chat on WhatsApp"}
+        </button>
+      ))}
 
       {state && !state.success && state.error && (
         <p className="text-[#b42318] text-sm text-center" role="alert">
@@ -434,26 +452,6 @@ export default function DentalEnquiryForm({
           </li>
         ))}
       </ul>
-
-      {/* Not inside a Call / WhatsApp gate: the form is a must there (user's choice 2026-11-03), and
-          these two links would be a way round it. */}
-      {!gate && (
-      <p className="text-center text-[#4b5563] text-sm">
-        Or call us directly:{" "}
-        <a href={`tel:${ADMISSION_PHONE}`} className="text-[#0b6d41] font-semibold underline">
-          {ADMISSION_PHONE_DISPLAY}
-        </a>{" "}
-        •{" "}
-        <a
-          href={`https://wa.me/${ADMISSION_PHONE.replace("+", "")}`}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-[#0b6d41] font-semibold underline"
-        >
-          WhatsApp
-        </a>
-      </p>
-      )}
 
       {compact && (
         <p className="text-center text-[#5f6b66] text-xs">

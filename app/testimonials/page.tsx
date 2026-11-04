@@ -141,7 +141,7 @@ export default function TestimonialsPage() {
         <EnquirySection
           sourcePage="testimonials"
           heading="Talk to Our Admission Team"
-          subheading="Ask anything about BDS / MDS, fees or hostel. We call you back within 24 hours."
+          subheading="Ask anything about BDS / MDS, fees or hostel. Call or WhatsApp us right after the form."
         />
       </main>
 

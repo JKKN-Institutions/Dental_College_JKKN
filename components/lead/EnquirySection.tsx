@@ -17,7 +17,7 @@ type Props = {
 export default function EnquirySection({
   sourcePage,
   heading = "Get BDS / MDS Fee & Admission Details",
-  subheading = "Leave your details and our admission team will contact you within 24 hours.",
+  subheading = "Fill your details, then call or WhatsApp our admission team right away.",
   programmeId,
 }: Props) {
   return (
