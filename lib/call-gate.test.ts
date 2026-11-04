@@ -58,6 +58,8 @@ describe("isUngatedPath", () => {
     expect(isUngatedPath("/contact/")).toBe(false)
     expect(isUngatedPath("/")).toBe(false)
     expect(isUngatedPath("/careers-fair-2026/")).toBe(false)
+    expect(isUngatedPath("/admin/blogs/edit/42/")).toBe(true)
+    expect(isUngatedPath("/administration/")).toBe(false)
   })
 })
 

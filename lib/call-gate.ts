@@ -24,7 +24,8 @@ export const GATE_PHONE_DISPLAY = "+91 93458 55001"
 const GATE_DIGITS = "9345855001"
 
 /** Paths where a tap must reach the number directly. */
-const UNGATED_PATH_PREFIXES = ["/careers", "/dental-surgery-assistant-course"]
+// /admin (2026-11-04): the CMS panel - a link or number there is content being edited, not a visitor.
+const UNGATED_PATH_PREFIXES = ["/careers", "/dental-surgery-assistant-course", "/admin"]
 
 export function isUngatedPath(pathname: string): boolean {
   const p = pathname.toLowerCase()

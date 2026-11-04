@@ -171,6 +171,10 @@ export function EnquiryModalProvider({ children }: { children: ReactNode }) {
       if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return
       const target = e.target as Element | null
       if (!target || target.closest("a, button, input, select, textarea, label, [role=dialog]")) return
+      // Editing a blog post in the CMS (2026-11-04, found while porting to Pharmacy): a click on a
+      // number there must neither dial nor open the gate.
+      if ((target as HTMLElement).isContentEditable || target.closest("[contenteditable]")) return
+      if (window.location.pathname === "/admin" || window.location.pathname.startsWith("/admin/")) return
       if (window.getSelection()?.toString()) return // the visitor is selecting text, not tapping
       const hit = textAtPoint(e.clientX, e.clientY)
       if (!hit) return
