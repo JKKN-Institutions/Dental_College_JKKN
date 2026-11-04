@@ -7,7 +7,8 @@ import EnquiryButton from '@/components/lead/EnquiryButton';
 import DentalEnquiryForm from '@/components/lead/DentalEnquiryForm';
 
 // Fix D2 of the 2026-10-12 homepage form audit: an action inside the first screen.
-// Phones: the photo moves below the text, so heading + "Get a Call Back" sit in the first screen
+// Phones: the photo moves below the text, so heading + the call button sit in the first screen
+// (renamed "Get a Call Back" -> "Call Counsellor" 2026-11-04: it is now a call gate, form then dialer)
 // (mock-up: button at y=654 of an 812 px screen; before, the photo pushed it to y=879).
 // md and up: the photo's column becomes the 3-box enquiry card (mock-up: button bottom y=680 of 768).
 
@@ -61,16 +62,18 @@ export default function Hero() {
 
             {/* Buttons — the call-back button is for phones; md and up has the card on the right */}
             <p className="md:hidden text-gray-200 text-sm sm:text-base">
-              Fill 3 details. Our admission team will call you within 24 hours.
+              Fill 3 details, then talk to our admission counsellor right away.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
+              {/* Call gate (user's choice 2026-11-04): form, then the dialer opens in the same tap. */}
               <EnquiryButton
-                sourcePage="home-hero-btn"
+                sourcePage="call-gate-home-hero"
+                intent="call"
                 fallbackHref="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_campaign=components-hero"
                 fallbackLabel="Start Your Application →"
                 className="md:hidden bg-[#ffde59] hover:bg-[#e6c64d] active:bg-[#e6c64d] text-[#032816] font-bold py-3 sm:py-3.5 px-6 sm:px-8 rounded-full transition-all duration-300 text-center text-sm sm:text-base min-h-[44px] flex items-center justify-center touch-manipulation transform hover:scale-105 active:scale-95"
               >
-                Get a Call Back
+                Call Counsellor
               </EnquiryButton>
               <Link
                 href="#academic-programs"

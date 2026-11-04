@@ -5,6 +5,9 @@
 
 import type { ReactNode } from "react"
 import { useEnquiryModal } from "@/components/lead/EnquiryModal"
+import { ENQUIRY_DONE_KEY, readStore } from "@/lib/enquiry-store"
+import { sendGaEvent } from "@/lib/ga-event"
+import { telGateUrl, type GateIntent } from "@/lib/call-gate"
 
 type Props = {
   /** Tags the lead in the CRM as utm_campaign dental-<sourcePage>. */
@@ -19,9 +22,13 @@ type Props = {
   onClick?: () => void
   /** Pre-selects the programme in the form, e.g. the MDS speciality of the page. */
   programmeId?: string
+  /** "call" = the Call / WhatsApp gate (lib/call-gate.ts): the form's button reads "Call Counsellor"
+   *  and one tap sends the lead and opens the dialer. User's choice 2026-11-04 for the homepage
+   *  "Get a Call Back" buttons, after a live test ended on the 24-hour thank-you screen instead. */
+  intent?: GateIntent
 }
 
-export default function EnquiryButton({ sourcePage, className, children, fallbackHref, fallbackLabel, onClick, programmeId }: Props) {
+export default function EnquiryButton({ sourcePage, className, children, fallbackHref, fallbackLabel, onClick, programmeId, intent }: Props) {
   const modal = useEnquiryModal()
 
   if (!modal) {
@@ -38,7 +45,14 @@ export default function EnquiryButton({ sourcePage, className, children, fallbac
       className={className}
       onClick={() => {
         onClick?.()
-        modal.openEnquiry(sourcePage, { programmeId })
+        // Same rule as a gated tel: link: a visitor the CRM already accepted on this browser is a
+        // lead already, so the tap dials straight away (inside the tap, so the phone allows it).
+        if (intent === "call" && readStore(ENQUIRY_DONE_KEY)) {
+          sendGaEvent("gate_call_bypass", { reason: "already_enquired", page_path: window.location.pathname })
+          window.location.href = telGateUrl
+          return
+        }
+        modal.openEnquiry(sourcePage, { programmeId, intent })
       }}
     >
       {children}

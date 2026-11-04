@@ -17,13 +17,15 @@ export default function CTASection() {
 
         {/* Buttons */}
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center">
+          {/* Call gate (user's choice 2026-11-04): form, then the dialer opens in the same tap. */}
           <EnquiryButton
-            sourcePage="home-cta"
+            sourcePage="call-gate-home-cta"
+            intent="call"
             fallbackHref="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=dental.jkkn.ac.in&utm_campaign=components-ctasection"
             fallbackLabel="Apply Now →"
             className="w-full sm:w-auto bg-white hover:bg-gray-100 active:bg-gray-200 text-[#0b6d41] font-bold py-3 sm:py-3.5 px-6 sm:px-8 rounded-full transition-all duration-300 text-center shadow-lg min-h-[44px] flex items-center justify-center touch-manipulation text-sm sm:text-base"
           >
-            Get a Call Back
+            Call Counsellor
           </EnquiryButton>
           <a
             href="tel:+919345855001"
