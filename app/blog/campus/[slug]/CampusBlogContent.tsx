@@ -176,14 +176,14 @@ export default function CampusBlogContent({
 
         {/* Blog content from rich text editor. A post listed in lib/blog-inline-cta.ts is cut before
             one of its <h2>s and the enquiry box sits in the gap; when the cut is unsafe the box goes
-            after the post instead. Every other post renders exactly as before. */}
+            after the post instead. Since 2026-11-05 every post gets the box (default: before its 2nd <h2>). */}
         {processedContent && inlineCta?.before && inlineCta.after ? (
           <>
             <div
               className="blog-content [&_table]:block [&_table]:overflow-x-auto"
               dangerouslySetInnerHTML={{ __html: inlineCta.before }}
             />
-            <BlogEnquiryBox sourcePage={inlineCta.sourcePage} />
+            <BlogEnquiryBox sourcePage={inlineCta.sourcePage} variant={inlineCta.variant} programmeKey={inlineCta.programmeKey} />
             <div
               className="blog-content mb-12 [&_table]:block [&_table]:overflow-x-auto"
               dangerouslySetInnerHTML={{ __html: inlineCta.after }}
@@ -198,7 +198,7 @@ export default function CampusBlogContent({
           )
         )}
         {inlineCta && !(inlineCta.before && inlineCta.after) && (
-          <BlogEnquiryBox sourcePage={inlineCta.sourcePage} />
+          <BlogEnquiryBox sourcePage={inlineCta.sourcePage} variant={inlineCta.variant} programmeKey={inlineCta.programmeKey} />
         )}
 
         {/* Tags */}

@@ -4,6 +4,7 @@ import { useState, useEffect, useRef } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { ScrollToTop } from '@/components/ScrollToTop';
+import BlogEnquiryBox from '@/components/lead/BlogEnquiryBox';
 import { Clock, ScanLine, ChevronUp, Mail, TrendingUp, AlignLeft } from 'lucide-react';
 
 const tocItems = [
@@ -169,6 +170,9 @@ export default function MdsOralMedicineClient({ faqs }: { faqs: FAQ[] }) {
                 dental practice further expands the radiology scope of this specialisation.
               </p>
             </section>
+
+            {/* Lead option 2 (2026-11-05): enquiry box after the first answer section. */}
+            <BlogEnquiryBox sourcePage="blog-mds-omr-guide" variant="mds" programmeKey="mds-oral-medicine" />
 
             <section id="eligibility" className="mb-12 scroll-mt-20">
               <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">Eligibility &amp; NEET-MDS Cutoff 2026</h2>

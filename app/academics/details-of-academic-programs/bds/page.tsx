@@ -11,6 +11,7 @@ import { faqPageSchema } from '@/lib/faq';
 import { useState } from 'react';
 import DentalEnquiryForm from "@/components/lead/DentalEnquiryForm";
 import EnquiryButton from "@/components/lead/EnquiryButton";
+import BlogEnquiryBox from "@/components/lead/BlogEnquiryBox";
 import { DEFAULT_PROGRAMME_BY_PAGE } from "@/lib/dental-programmes";
 import { jkknSameAsUrls } from '@/lib/metadata';
 
@@ -291,6 +292,12 @@ export default function BDSProgram() {
             </p>
           </div>
         </div>
+      </section>
+
+      {/* Lead option 1 (2026-11-05): the enquiry form near the top. Before this the only form on the
+          page sat at the very bottom, 33.8 phone screens down (live 375 px scan, 2026-11-05). */}
+      <section className="px-4 bg-[#FBFBEE]">
+        <BlogEnquiryBox sourcePage="bds-top" variant="bds" programmeKey="bds" />
       </section>
 
       {/* ============================== */}

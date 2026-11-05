@@ -148,7 +148,7 @@ export default async function CampusBlogPost({
 
   // Structured posts (new format with sections JSONB) skip HTML processing
   const { processedHtml, tocItems, words, readTime } = renderBlogBody(post);
-  // Enquiry box inside the post - only for slugs listed in lib/blog-inline-cta.ts (null for the rest).
+  // Enquiry box inside the post - every post since 2026-11-05; course + place from lib/blog-inline-cta.ts.
   const inlineCta = inlineCtaFor(post.slug, processedHtml);
 
   // BlogPosting was MISSING on every CMS post (48 of 48 live, measured 2026-09-18) - the posts

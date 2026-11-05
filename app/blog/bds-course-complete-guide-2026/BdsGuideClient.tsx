@@ -4,6 +4,7 @@ import { useState, useEffect, useRef } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { ScrollToTop } from '@/components/ScrollToTop';
+import BlogEnquiryBox from '@/components/lead/BlogEnquiryBox';
 import {
   Clock,
   GraduationCap,
@@ -232,6 +233,9 @@ export default function BdsGuideClient({ faqs }: { faqs: FAQ[] }) {
             </section>
 
             {/* Section 2: Eligibility */}
+            {/* Lead option 2 (2026-11-05): enquiry box after the first answer section. */}
+            <BlogEnquiryBox sourcePage="blog-bds-guide" variant="bds" programmeKey="bds" />
+
             <section id="eligibility" className="mb-12 scroll-mt-20">
               <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
                 BDS Eligibility &amp; NEET-UG Cutoff 2026

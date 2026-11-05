@@ -4,6 +4,7 @@ import { useState, useEffect, useRef } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { ScrollToTop } from '@/components/ScrollToTop';
+import BlogEnquiryBox from '@/components/lead/BlogEnquiryBox';
 import {
   Clock,
   Smile,
@@ -228,6 +229,9 @@ export default function MdsOrthodonticsClient({ faqs }: { faqs: FAQ[] }) {
                 2026.
               </p>
             </section>
+
+            {/* Lead option 2 (2026-11-05): enquiry box after the first answer section. */}
+            <BlogEnquiryBox sourcePage="blog-mds-ortho-guide" variant="mds" programmeKey="mds-orthodontics" />
 
             <section id="eligibility" className="mb-12 scroll-mt-20">
               <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
