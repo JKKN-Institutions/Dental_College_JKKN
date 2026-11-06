@@ -16,7 +16,7 @@
 // a later CMS edit that wraps the body in a <div> can never produce broken markup.
 
 /** Which copy the box shows (components/lead/BlogEnquiryBox.tsx). */
-export type BoxVariant = 'neet-bds' | 'bds' | 'mds' | 'general';
+export type BoxVariant = 'neet-bds' | 'bds' | 'mds' | 'general' | 'counselling';
 
 /** Posts with their own wording / place. Every other post gets the default below. */
 export const BLOG_INLINE_CTA: Readonly<Record<string, { beforeH2: number; sourcePage: string; variant: BoxVariant }>> = {

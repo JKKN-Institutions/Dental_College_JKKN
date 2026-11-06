@@ -8,6 +8,7 @@ import StructuredData from '@/components/StructuredData';
 import Breadcrumb from '@/components/Breadcrumb';
 import TnMdsSeatMatrixTable from '@/components/mds/TnMdsSeatMatrixTable';
 import DentalEnquiryForm from '@/components/lead/DentalEnquiryForm';
+import BlogEnquiryBox from '@/components/lead/BlogEnquiryBox';
 import { generateFAQSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
 import { TN_MDS_SOURCE, TN_MDS_TOTALS } from '@/data/tnMdsSeatMatrix';
 
@@ -144,6 +145,11 @@ export default function MdsClusterPage({
           </p>
 
           <TnMdsSeatMatrixTable showSpecialities={showSpecialities} />
+
+          {/* Enquiry box right after the seat table (lead options round 2, 2026-11-06): the page's own
+              form sat about 8 phone screens down. No course pre-selected - MDS has several
+              specialities, the parent picks. */}
+          <BlogEnquiryBox sourcePage={`mds-${slug || 'fees'}-table`} variant="counselling" programmeKey={null} />
 
           <div className="mt-8 rounded-xl border border-[#0b6d41]/20 bg-white p-5 sm:p-6">
             <h2 className="text-lg sm:text-xl font-bold text-[#0b6d41] mb-2">

@@ -7,6 +7,11 @@
 // 2026-11-05 (lead options 1 + 2): one box for every blog post, the static guides and the top of the
 // BDS page. `variant` picks the wording; `programmeKey` the pre-selected course (null = reader picks).
 // With no props beyond sourcePage it renders exactly what the NEET cutoff post showed before.
+//
+// 2026-11-06 (lead options round 2, #5 + #11): the "counselling" wording, placed right after the
+// college / seat tables on the BDS and MDS list pages (their only form sat 7.8-12.8 phone screens
+// down). It invites a counselling or cut-off question and promises nothing: no "we will send you the
+// dates" line, because no one has agreed to send alerts.
 
 import Link from "next/link"
 import DentalEnquiryForm from "@/components/lead/DentalEnquiryForm"
@@ -37,6 +42,13 @@ const COPY: Record<BoxVariant, { label: string; title: string; text: string; lin
     label: "BDS and MDS admission enquiry",
     title: "Get BDS / MDS Fee & Admission Details",
     text: "Fill your details, then call or WhatsApp our admission team right away.",
+    link: "See the fee table",
+  },
+  counselling: {
+    label: "Counselling and admission enquiry",
+    title: "Counselling or cut-off doubt?",
+    text:
+      "Ask our admission team on call or WhatsApp about JKKN Dental College: the fee, the seats and the counselling steps.",
     link: "See the fee table",
   },
 }

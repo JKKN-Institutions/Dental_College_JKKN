@@ -8,6 +8,7 @@ import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import StructuredData from '@/components/StructuredData';
 import Breadcrumb from '@/components/Breadcrumb';
 import DentalEnquiryForm from '@/components/lead/DentalEnquiryForm';
+import BlogEnquiryBox from '@/components/lead/BlogEnquiryBox';
 import { generateFAQSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
 import {
   TN_BDS_COLLEGES,
@@ -298,6 +299,11 @@ export default function DentalCollegesInTamilNadu() {
             </a>
             . Retrieved {TN_BDS_SOURCE.retrieved}. {TN_BDS_SOURCE.scopeNote}
           </p>
+
+          {/* Enquiry box right after the list (lead options round 2, 2026-11-06). Not above the table:
+              a parent who searched for the list gets the list first. Before this the page's only form
+              sat 12.8 phone screens down, after the FAQ. */}
+          <BlogEnquiryBox sourcePage="bds-colleges-in-tamil-nadu-table" variant="counselling" programmeKey="bds" />
 
           {/* The deemed universities. They are NOT in the university's matrix, so no seat count
               is published for them here - inventing one to look complete is the exact failure

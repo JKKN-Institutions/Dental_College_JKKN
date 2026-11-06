@@ -29,6 +29,9 @@ export type DentalEnquiryState = {
   error?: string
   // echoed back so the client can fire the GA4 event with no PII in it
   tracking?: { source_page: string; programme_id: string }
+  // true only for the 409 branch: this phone was already in the CRM. The parent still sees a success screen, but
+  // the Meta Lead event is not sent for it (lib/meta-lead.ts).
+  duplicate?: boolean
   fieldErrors?: Partial<Record<"name" | "phone" | "programme", string>>
 }
 
@@ -113,6 +116,7 @@ export async function submitDentalEnquiry(
       // they are in the system — so it must not read like an error.
       return {
         success: true,
+        duplicate: true,
         message:
           "You have already enquired with this number. Our admission team will call you — no need to submit again.",
         tracking: { source_page: sourcePage, programme_id: programme },

@@ -24,6 +24,7 @@ import { collegeFacts } from "@/data/collegeFacts"
 import { DENTAL_PROGRAMMES } from "@/lib/dental-programmes"
 import { ENQUIRY_DONE_KEY, writeStore } from "@/lib/enquiry-store"
 import { sendGaEvent } from "@/lib/ga-event"
+import { sendMetaLead } from "@/lib/meta-lead"
 import { GATE_PHONE_DISPLAY, telGateUrl, whatsappGateUrl, type GateIntent } from "@/lib/call-gate"
 
 const ADMISSION_PHONE = "+919345855001"
@@ -91,6 +92,7 @@ export default function DentalEnquiryForm({
         page_path: window.location.pathname,
       })
     }
+    if (!state.duplicate) sendMetaLead(sourcePage)
   }, [state, sourcePage])
 
   // A form that silently fails and a form nobody used both read 0. This is what separates them.
@@ -173,6 +175,7 @@ export default function DentalEnquiryForm({
           page_path: window.location.pathname,
         })
         sendGaEvent(`${gateEvent}_lead`, { source_page: sourcePage, page_path: window.location.pathname })
+        if (!result.duplicate) sendMetaLead(sourcePage)
         setGatePhase((p) => (p.step === "opened" ? { ...p, result: "saved" } : p))
       })
       .catch(() => {
