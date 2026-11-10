@@ -20,6 +20,26 @@ function toSlug(name: string) {
 // Branch on shape so the lookup is reliable for both URL forms.
 const UUID_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
 
+// Publication links come from the faculty CMS as typed text. Values like "DOI:10.4103/...", "10.7759/cureus.58717",
+// "0000-0001-9062-1780", "NA", "nil" or "Scopus" were rendered as RELATIVE hrefs, so they resolved to
+// /faculty/<name>/<text> and answered 404 (Link Guard run 2026-11-09: 13 such links). Turn the recognisable ones into
+// their real absolute URL and render nothing for the rest - never guess a link. The same rule covers the
+// Academic profiles buttons (Scholar id "7YIMvqAAAAAJ", ResearchGate "60402022" and an ORCID with a digit
+// missing were relative hrefs too).
+const DOI_RE = /10\.\d{4,9}\/[^\s"<>]+/;
+function pubHref(raw: string | null | undefined, kind: 'doi' | 'pubmed' | 'profile'): string | null {
+  const v = (raw ?? '').trim();
+  if (!v || /^(na|n\/a|nil|none|-|scopus)$/i.test(v)) return null;
+  if (/^https?:\/\/[^\s]+\.[^\s]+/i.test(v)) return v;
+  if (/^www\.[^\s/]+\.[a-z]{2,}/i.test(v)) return `https://${v}`;
+  if (kind === 'pubmed' && /^\d{5,9}$/.test(v)) return `https://pubmed.ncbi.nlm.nih.gov/${v}/`;
+  const doi = v.match(DOI_RE);
+  if (doi) return `https://doi.org/${doi[0]}`;
+  if (/^\d{4}-\d{4}-\d{4}-\d{3}[\dX]$/i.test(v)) return `https://orcid.org/${v}`;
+  if (/^[A-Za-z0-9_-]{7}AAAAJ$/.test(v)) return `https://scholar.google.com/citations?user=${v}`;
+  return null;
+}
+
 // ─── Types ────────────────────────────────────────────────────────────────────
 
 type AcademicQualification = { degree: string; specialisation: string; university: string; year: string };
@@ -473,7 +493,7 @@ export default async function FacultyProfilePage({
           )}
 
           {/* Research & Publications */}
-          {(researchFocus.length > 0 || publications.length > 0 || fundedResearch.length > 0 || m.google_scholar_url || m.researchgate_url || m.orcid_url) && (
+          {(researchFocus.length > 0 || publications.length > 0 || fundedResearch.length > 0 || pubHref(m.google_scholar_url, 'profile') || pubHref(m.researchgate_url, 'profile') || pubHref(m.orcid_url, 'profile')) && (
             <div className={sectionCard}>
               <h2 className={sectionTitle}>
                 <span className={`${iconBox} bg-[#fbfbee]`}>📖</span>
@@ -514,13 +534,13 @@ export default async function FacultyProfilePage({
                             {pub.authors}{pub.journal ? ` · ${pub.journal}` : ''}{pub.year ? `, ${pub.year}` : ''}
                           </p>
                           <div className="flex gap-3 mt-1.5">
-                            {pub.doi_url && (
-                              <a href={pub.doi_url} target="_blank" rel="noopener noreferrer" className="text-xs font-semibold text-[#0b6d41] hover:underline flex items-center gap-0.5">
+                            {pubHref(pub.doi_url, 'doi') && (
+                              <a href={pubHref(pub.doi_url, 'doi')!} target="_blank" rel="noopener noreferrer" className="text-xs font-semibold text-[#0b6d41] hover:underline flex items-center gap-0.5">
                                 DOI <ExternalLink className="w-3 h-3" />
                               </a>
                             )}
-                            {pub.pubmed_url && (
-                              <a href={pub.pubmed_url} target="_blank" rel="noopener noreferrer" className="text-xs font-semibold text-[#0b6d41] hover:underline flex items-center gap-0.5">
+                            {pubHref(pub.pubmed_url, 'pubmed') && (
+                              <a href={pubHref(pub.pubmed_url, 'pubmed')!} target="_blank" rel="noopener noreferrer" className="text-xs font-semibold text-[#0b6d41] hover:underline flex items-center gap-0.5">
                                 PUBMED <ExternalLink className="w-3 h-3" />
                               </a>
                             )}
@@ -608,27 +628,27 @@ export default async function FacultyProfilePage({
               )}
 
               {/* Academic Profiles */}
-              {(m.google_scholar_url || m.researchgate_url || m.orcid_url) && (
+              {(pubHref(m.google_scholar_url, 'profile') || pubHref(m.researchgate_url, 'profile') || pubHref(m.orcid_url, 'profile')) && (
                 <div>
                   <p className="text-xs font-semibold text-gray-400 tracking-widest uppercase mb-2 flex items-center gap-2">
                     <span className="w-4 h-px bg-[#0b6d41] inline-block" />
                     ACADEMIC PROFILES
                   </p>
                   <div className="flex flex-wrap gap-2">
-                    {m.google_scholar_url && (
-                      <a href={m.google_scholar_url} target="_blank" rel="noopener noreferrer"
+                    {pubHref(m.google_scholar_url, 'profile') && (
+                      <a href={pubHref(m.google_scholar_url, 'profile')!} target="_blank" rel="noopener noreferrer"
                         className="flex items-center gap-1.5 text-sm px-4 py-2 rounded-lg border border-gray-200 text-gray-700 hover:border-[#0b6d41] hover:text-[#0b6d41] transition">
                         Google Scholar
                       </a>
                     )}
-                    {m.researchgate_url && (
-                      <a href={m.researchgate_url} target="_blank" rel="noopener noreferrer"
+                    {pubHref(m.researchgate_url, 'profile') && (
+                      <a href={pubHref(m.researchgate_url, 'profile')!} target="_blank" rel="noopener noreferrer"
                         className="flex items-center gap-1.5 text-sm px-4 py-2 rounded-lg border border-gray-200 text-gray-700 hover:border-[#0b6d41] hover:text-[#0b6d41] transition">
                         ResearchGate
                       </a>
                     )}
-                    {m.orcid_url && (
-                      <a href={m.orcid_url} target="_blank" rel="noopener noreferrer"
+                    {pubHref(m.orcid_url, 'profile') && (
+                      <a href={pubHref(m.orcid_url, 'profile')!} target="_blank" rel="noopener noreferrer"
                         className="flex items-center gap-1.5 text-sm px-4 py-2 rounded-lg border border-gray-200 text-gray-700 hover:border-[#0b6d41] hover:text-[#0b6d41] transition">
                         ORCID
                       </a>
