@@ -45,6 +45,13 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     const rules: RedirectRule[] = [
+      // ── Broken internal links (Link Guard run 2026-11-09, fixed 2026-11-10) ─────────────
+      // Internal links pointed at these dead URLs. Each destination answered HTTP 200 on 2026-11-10
+      // (live check). Both slash forms listed; Next's own trailing-slash 308 answers one of them first.
+      { source: '/academics/bds', destination: '/academics/details-of-academic-programs/bds/', permanent: true },
+      { source: '/academics/bds/', destination: '/academics/details-of-academic-programs/bds/', permanent: true },
+      { source: '/academics/mds', destination: '/academics/details-of-academic-programs/mds/', permanent: true },
+      { source: '/academics/mds/', destination: '/academics/details-of-academic-programs/mds/', permanent: true },
       // Old WordPress URLs → New Next.js URLs
       { source: '/contact-us/', destination: '/contact', permanent: true },
       { source: '/contact-us', destination: '/contact', permanent: true },
