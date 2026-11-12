@@ -30,6 +30,17 @@ import { GATE_PHONE_DISPLAY, telGateUrl, whatsappGateUrl, type GateIntent } from
 const ADMISSION_PHONE = "+919345855001"
 const ADMISSION_PHONE_DISPLAY = "+91 93458 55001"
 
+// Browser autofill (autoComplete on the name + phone boxes) can bring a saved number as
+// "+91 98765 43210" or "098765 43210". The box and the server both accept exactly 10 digits
+// from 6-9, so keep digits only and drop a leading 91 / 0 - otherwise a one-tap fill would fail
+// the pattern check and the visitor would have to retype it.
+export function toTenDigitMobile(raw: string): string {
+  const digits = raw.replace(/\D/g, "")
+  if (digits.length === 12 && digits.startsWith("91")) return digits.slice(2)
+  if (digits.length === 11 && digits.startsWith("0")) return digits.slice(1)
+  return digits
+}
+
 // Read from collegeFacts, which carries the source document for each value (NAAC certificate,
 // founding year), so this line cannot drift from the rest of the site.
 const TRUST = [
@@ -324,6 +335,7 @@ export default function DentalEnquiryForm({
             id={fid("name")}
             type="text"
             name="name"
+            autoComplete="name"
             required
             minLength={2}
             placeholder="Enter your full name"
@@ -340,6 +352,12 @@ export default function DentalEnquiryForm({
             id={fid("phone")}
             type="tel"
             name="phone"
+            autoComplete="tel-national"
+            onInput={(e) => {
+              const box = e.currentTarget
+              const tenDigits = toTenDigitMobile(box.value)
+              if (tenDigits !== box.value) box.value = tenDigits
+            }}
             required
             inputMode="numeric"
             pattern="[6-9][0-9]{9}"
