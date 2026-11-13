@@ -14,11 +14,14 @@
 
 "use server"
 
+import { cookies } from "next/headers"
+import { after } from "next/server"
 import {
   DENTAL_INSTITUTION_ID,
   VALID_DENTAL_PROGRAMME_IDS,
 } from "@/lib/dental-programmes"
 import { crmCampaign } from "@/lib/campaign-tags"
+import { sendServerLeadEvent, type ServerLeadEvent } from "@/lib/ga4-server-event"
 
 const CRM_SLUG = "jkkn-admission-2026"
 const CRM_SUBMIT = `https://www.jkkn.ai/api/public/forms/${CRM_SLUG}/submit`
@@ -45,6 +48,24 @@ function validate(name: string, phone: string, programme: string) {
   if (!VALID_DENTAL_PROGRAMME_IDS.has(programme))
     fieldErrors.programme = "Please choose a programme."
   return fieldErrors
+}
+
+// DEP-100 (2026-11-13). Tells GA4, from this server, what the CRM did with the lead - see
+// lib/ga4-server-event.ts. after() runs it once the parent already has the answer, so it can never slow
+// or break a submit, and it does nothing until GA4_MP_API_SECRET is set. No name, no phone.
+async function scheduleServerLeadEvent(name: ServerLeadEvent, sourcePage: string, programme: string) {
+  try {
+    const gaCookie = (await cookies()).get("_ga")?.value ?? null
+    after(() =>
+      sendServerLeadEvent({
+        name,
+        gaCookie,
+        params: { form_name: "dental_enquiry", source_page: sourcePage, programme },
+      })
+    )
+  } catch {
+    // Outside a request (a unit test, a script): tracking must never touch the lead.
+  }
 }
 
 export async function submitDentalEnquiry(
@@ -114,6 +135,7 @@ export async function submitDentalEnquiry(
     if (res.status === 409) {
       // 409 means this phone has already applied. That is not a failure for the parent —
       // they are in the system — so it must not read like an error.
+      if (!honeypot) await scheduleServerLeadEvent("lead_crm_duplicate", sourcePage, programme)
       return {
         success: true,
         duplicate: true,
@@ -133,6 +155,8 @@ export async function submitDentalEnquiry(
       }
     }
 
+    // A filled honeypot means the CRM scores this as a bot - it is not a lead, so GA4 is not told one.
+    if (!honeypot) await scheduleServerLeadEvent("lead_crm_accepted", sourcePage, programme)
     return {
       success: true,
       message:
