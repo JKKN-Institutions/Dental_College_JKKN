@@ -3,7 +3,6 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Metadata } from 'next';
 import { UserCircle2 } from 'lucide-react';
-import DentalEnquiryForm from '@/components/lead/DentalEnquiryForm';
 import StructuredData from '@/components/StructuredData';
 import { generateBreadcrumbSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
 
@@ -181,15 +180,8 @@ export default async function FacultyPage() {
             </div>
           )}
         </section>
-
-        {/* Enquiry form (marketing audit L3, 2026-10-21): 255 views in 60 days and no form. */}
-        <section className="bg-gradient-to-br from-[#0b6d41] to-[#0f8f56] py-16">
-          <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-white text-2xl md:text-3xl font-bold text-center mb-2">Talk to Our Admission Team</h2>
-            <p className="text-white/80 text-center text-sm mb-8">Ask about BDS / MDS fees, seats and guides. Call or WhatsApp us right after the form.</p>
-            <DentalEnquiryForm sourcePage="faculty" />
-          </div>
-        </section>
+        {/* No page form here (user's call 2026-11-13): a faculty list, hidden since 2026-10-24. The
+            header "Enquire Now" button still opens the form. */}
       </main>
       <Footer />
     </>

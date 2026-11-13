@@ -1,5 +1,4 @@
 import Header from '@/components/Header';
-import EnquirySection from '@/components/lead/EnquirySection';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import { Metadata } from 'next';
@@ -378,8 +377,8 @@ export default function AIDentalCampus() {
         </div>
       </section>
 
-      {/* Enquiry form (marketing audit L3, 2026-10-21). */}
-      <EnquirySection sourcePage="ai-dental-campus" />
+      {/* No page form here (user's call 2026-11-13): a showcase page, not an admission page. The
+          "Contact Admissions" link above and the header "Enquire Now" button stay. */}
 
       <Footer />
       <FloatingWhatsApp />

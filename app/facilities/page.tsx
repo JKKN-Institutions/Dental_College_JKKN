@@ -4,7 +4,6 @@ import { generateSpeakableWebPageSchema } from '@/lib/metadata';
 import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import EnquirySection from '@/components/lead/EnquirySection';
 import collegeFacts from '@/data/collegeFacts';
 
 export const metadata: Metadata = {
@@ -78,8 +77,8 @@ export default function FacilitiesPage() {
             </section>
           ))}
         </article>
-
-        <EnquirySection sourcePage="facilities" />
+        {/* No page form here (user's call 2026-11-13): a facility list, not an admission page. The
+            header "Enquire Now" button still opens the form. */}
       </main>
       <Footer />
     </>

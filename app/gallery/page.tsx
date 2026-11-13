@@ -6,7 +6,6 @@ import { createClient } from '@/lib/supabase/server';
 import GalleryCarousel, { GalleryImage } from '@/components/GalleryCarousel';
 import StructuredData from '@/components/StructuredData';
 import { generateSpeakableWebPageSchema } from '@/lib/metadata';
-import EnquirySection from '@/components/lead/EnquirySection';
 
 export const dynamic = 'force-dynamic';
 
@@ -150,8 +149,8 @@ export default async function Gallery() {
         </div>
       </div>
 
-      {/* Enquiry form (marketing audit L3, 2026-10-21). */}
-      <EnquirySection sourcePage="gallery" />
+      {/* No page form here (user's call 2026-11-13): a photo page, not an admission page. The header
+          "Enquire Now" button still opens the form. GA4: 0 submits from this form 2026-10-22..11-11. */}
 
       <Footer />
       <FloatingWhatsApp />
