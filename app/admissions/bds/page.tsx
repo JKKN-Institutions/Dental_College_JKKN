@@ -126,7 +126,7 @@ const bdsCourseSchema = {
       maxPrice: '550000',
       unitText: 'per year',
       description:
-        'Management Quota tuition fee range. Government Quota fee as per TN state norms.',
+        'Management Quota tuition fee range. Government Quota fee: As Per Government Norm.',
     },
   },
 };
@@ -281,7 +281,7 @@ const requiredDocs = [
 const feeBreakdown = [
   {
     quota: 'Government Quota',
-    tuition: 'As per TN Govt Norms',
+    tuition: 'As Per Government Norm',
     note: 'Allotted through TN state counselling based on NEET rank.',
   },
   {
@@ -366,7 +366,7 @@ const bdsFaqs = [
   },
   {
     q: 'What is the BDS course fee at JKKN?',
-    a: 'BDS Management Quota tuition fee is ₹4,50,000/year (Dayscholar with Instruments) or ₹5,50,000/year (with Hostel and Instruments). Government Quota fee is as per Tamil Nadu state norms.',
+    a: 'BDS Management Quota tuition fee is ₹4,50,000/year (Dayscholar with Instruments) or ₹5,50,000/year (with Hostel and Instruments). Government Quota fee is As Per Government Norm.',
   },
   {
     q: 'What is the BDS admission process?',
@@ -382,7 +382,7 @@ const bdsFaqs = [
   },
   {
     q: 'Are scholarships available?',
-    a: 'Yes — merit, sports, single parent, and government scholarships: PMSS (₹2.5L–6L/year for SC/SCA/ST/BC-CC), First Graduate (₹40K/year), Community Scholarship (₹5K–10K/year), Naan Mudhalvan (₹1,000/month for Tamil medium students).',
+    a: 'Yes — merit, sports, single parent, and government scholarships: PMSS (GQ: As Per Government Norm, MQ: ₹6L/year, for SC/SCA/ST/BC-CC), First Graduate (₹40K/year), Community Scholarship (₹5K–10K/year), Naan Mudhalvan (₹1,000/month for Tamil medium students).',
   },
   {
     q: 'What is the NEET cutoff for BDS at JKKN Dental College?',

@@ -60,7 +60,7 @@ export const homeFaqs: HomeFaq[] = [
   {
     question: 'What is the fee structure for BDS at JKKN Dental College?',
     answer:
-      'BDS fees at JKKN Dental College vary by admission quota. Management Quota annual tuition for 2026-27 is Rs 4,50,000 (dayscholar with instruments) or Rs 5,50,000 (with hostel and instruments); Government Quota fees are as per Tamil Nadu Fee Fixation Committee norms.',
+      'BDS fees at JKKN Dental College vary by admission quota. Management Quota annual tuition for 2026-27 is Rs 4,50,000 (dayscholar with instruments) or Rs 5,50,000 (with hostel and instruments); Government Quota fees are As Per Government Norm.',
     link: { href: '/fees-structure/', label: 'See detailed fee structure' },
   },
   {

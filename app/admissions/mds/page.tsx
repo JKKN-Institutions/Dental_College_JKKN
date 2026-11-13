@@ -129,7 +129,7 @@ const mdsCourseSchema = {
       maxPrice: '850000',
       unitText: 'per year',
       description:
-        'Management Quota annual tuition 2026-27: Rs 8,50,000, the same across all five MDS specialisations. Government Quota as per TN Fee Fixation Committee norms.',
+        'Management Quota annual tuition 2026-27: Rs 8,50,000, the same across all five MDS specialisations. Government Quota: As Per Government Norm.',
     },
   },
 };
@@ -312,7 +312,7 @@ const requiredDocs = [
 const feeBreakdown = [
   {
     quota: 'Government Quota',
-    tuition: 'As per TN Govt Norms',
+    tuition: 'As Per Government Norm',
     note: 'Allotted through the Tamil Nadu Selection Committee (DME&R) counselling based on NEET-MDS rank.',
   },
   {
@@ -398,7 +398,7 @@ const mdsFaqs = [
   },
   {
     q: 'What is the MDS course fee at JKKN?',
-    a: 'Management Quota fee is ₹8,50,000 per year, the same across all five specialisations. Government Quota fee is as per Tamil Nadu state norms.',
+    a: 'Management Quota fee is ₹8,50,000 per year, the same across all five specialisations. Government Quota fee is As Per Government Norm.',
   },
   {
     q: 'What is the MDS admission process?',

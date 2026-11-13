@@ -102,7 +102,7 @@ export const faqCategories = [
       {
         question: 'Are scholarships available at JKKN Dental College?',
         answer:
-          'JKKN Dental College offers merit-based scholarships, sports quota scholarships, single parent scholarships, and government scholarships: SC/SCA/ST/BC-CC — PMSS (GQ: ₹2.5L/Yr, MQ: ₹6L/Yr), Maintenance Scholarship (₹5K–10K/Yr); BC/MBC/DNC/BCM — First Graduate (₹40K/Yr), Community Scholarship (₹5K–10K/Yr); All Community Tamil Medium — Naan Mudhalvan ₹1,000/month.',
+          'JKKN Dental College offers merit-based scholarships, sports quota scholarships, single parent scholarships, and government scholarships: SC/SCA/ST/BC-CC — PMSS (GQ: As Per Government Norm, MQ: ₹6L/Yr), Maintenance Scholarship (₹5K–10K/Yr); BC/MBC/DNC/BCM — First Graduate (₹40K/Yr), Community Scholarship (₹5K–10K/Yr); All Community Tamil Medium — Naan Mudhalvan ₹1,000/month.',
       },
       {
         question: 'Can international students apply for BDS at JKKN?',
@@ -169,17 +169,17 @@ export const faqCategories = [
       {
         question: 'What is the BDS fee structure at JKKN Dental College?',
         answer:
-          'The BDS (Bachelor of Dental Surgery) tuition fee at JKKN Dental College is ₹4,50,000 per year (Dayscholar with Instruments) or ₹5,50,000 per year (With Hostel & Instruments) under Management Quota. Government Quota fee is as per Govt Norms. Additional fees include library fee, lab and clinical fee, caution deposit (refundable), and university examination fees.',
+          'The BDS (Bachelor of Dental Surgery) tuition fee at JKKN Dental College is ₹4,50,000 per year (Dayscholar with Instruments) or ₹5,50,000 per year (With Hostel & Instruments) under Management Quota. Government Quota fee is As Per Government Norm. Additional fees include library fee, lab and clinical fee, caution deposit (refundable), and university examination fees.',
       },
       {
         question: 'What is the MDS fee structure at JKKN Dental College?',
         answer:
-          'The MDS (Master of Dental Surgery) annual tuition fee at JKKN Dental College is ₹8,50,000 per year under Management Quota across all 5 specializations. Government Quota fee is as per Govt Norms. Additional one-time fees include admission fee, caution deposit, library deposit, and lab deposit — all refundable upon course completion.',
+          'The MDS (Master of Dental Surgery) annual tuition fee at JKKN Dental College is ₹8,50,000 per year under Management Quota across all 5 specializations. Government Quota fee is As Per Government Norm. Additional one-time fees include admission fee, caution deposit, library deposit, and lab deposit — all refundable upon course completion.',
       },
       {
         question: 'What is the MDS course fee range in Tamil Nadu?',
         answer:
-          'Tamil Nadu’s MDS prospectuses for 2026-27 set exactly one tuition amount: ₹30,000 a year for Government Institutions. For self-financing colleges, on government-quota and management or NRI seats alike, the prospectuses state the tuition is fixed by the Committee on Fixation of Fees in respect of Self-Financing Professional Colleges and publish no figure, so no reliable private-college range can be quoted. Security deposits are published: ₹30,000 for government colleges, ₹1,00,000 for government-quota seats in self-financing colleges and ₹2,00,000 for management quota. Source: Selection Committee, Directorate of Medical Education and Research, MDS Prospectus 2026-2027.',
+          'Tamil Nadu’s MDS prospectuses for 2026-27 set exactly one tuition amount: ₹30,000 a year for Government Institutions. For self-financing colleges, on government-quota and management or NRI seats alike, the prospectuses state the tuition is fixed by the Committee on Fixation of Fees in respect of Self-Financing Professional Colleges and publish no figure, so no reliable private-college range can be quoted. Security deposits are published: ₹30,000 for government colleges, As Per Government Norm for government-quota seats in self-financing colleges and ₹2,00,000 for management quota. Source: Selection Committee, Directorate of Medical Education and Research, MDS Prospectus 2026-2027.',
       },
       {
         question: 'Are there any hidden charges beyond the tuition fee?',

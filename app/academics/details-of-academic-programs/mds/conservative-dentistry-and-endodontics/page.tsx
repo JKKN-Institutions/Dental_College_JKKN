@@ -87,7 +87,7 @@ export default function MDSConservativeDentistry() {
         "name": "Are there any scholarships available for MDS Learners?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Government scholarships available: SC/SCA/ST/BC-CC — PMSS (GQ: 2.5L/Yr, MQ: 6L/Yr), Maintenance Scholarship (GQ: 5K–10K/Yr); BC/MBC/DNC/BCM — First Graduate (40K/Yr), Community Scholarship (5K–10K/Yr); All Community Tamil Medium (Govt School 6–12 Std) — Naan Mudhalvan Scholarship (₹1,000/month). Merit-based scholarships and education loans from nationalized banks are also available."
+          "text": "Government scholarships available: SC/SCA/ST/BC-CC — PMSS (GQ: As Per Government Norm, MQ: 6L/Yr), Maintenance Scholarship (GQ: 5K–10K/Yr); BC/MBC/DNC/BCM — First Graduate (40K/Yr), Community Scholarship (5K–10K/Yr); All Community Tamil Medium (Govt School 6–12 Std) — Naan Mudhalvan Scholarship (₹1,000/month). Merit-based scholarships and education loans from nationalized banks are also available."
         }
       },
       {
@@ -1054,7 +1054,7 @@ export default function MDSConservativeDentistry() {
                     <p className="text-gray-700 font-medium text-sm md:text-base">Tuition Fee (Per Annum)</p>
                   </div>
                   <div className="p-4 md:p-6 border-r border-gray-200">
-                    <p className="text-gray-800 font-bold text-base md:text-lg">As Per Govt Norms</p>
+                    <p className="text-gray-800 font-bold text-base md:text-lg">As Per Government Norm</p>
                   </div>
                   <div className="p-4 md:p-6 border-r border-gray-200">
                     <p className="text-gray-800 font-bold text-base md:text-lg">₹8,50,000</p>
@@ -1070,7 +1070,7 @@ export default function MDSConservativeDentistry() {
                     <p className="text-gray-700 font-medium text-sm md:text-base">Admission Fee (One-time)</p>
                   </div>
                   <div className="p-4 md:p-6 border-r border-gray-200">
-                    <p className="text-gray-800 font-bold text-base md:text-lg">₹50,000</p>
+                    <p className="text-gray-800 font-bold text-base md:text-lg">As Per Government Norm</p>
                   </div>
                   <div className="p-4 md:p-6 border-r border-gray-200">
                     <p className="text-gray-800 font-bold text-base md:text-lg">₹1,00,000</p>
@@ -1086,7 +1086,7 @@ export default function MDSConservativeDentistry() {
                     <p className="text-gray-700 font-medium text-sm md:text-base">Caution Deposit (Refundable)</p>
                   </div>
                   <div className="p-4 md:p-6 border-r border-gray-200">
-                    <p className="text-gray-800 font-bold text-base md:text-lg">₹25,000</p>
+                    <p className="text-gray-800 font-bold text-base md:text-lg">As Per Government Norm</p>
                   </div>
                   <div className="p-4 md:p-6 border-r border-gray-200">
                     <p className="text-gray-800 font-bold text-base md:text-lg">₹25,000</p>
@@ -1223,7 +1223,7 @@ export default function MDSConservativeDentistry() {
                 </svg>
               </summary>
               <div className="px-6 pb-6 text-gray-600 leading-relaxed">
-                Government scholarships available: SC/SCA/ST/BC-CC — PMSS (GQ: 2.5L/Yr, MQ: 6L/Yr), Maintenance Scholarship (GQ: 5K–10K/Yr); BC/MBC/DNC/BCM — First Graduate (40K/Yr), Community Scholarship (5K–10K/Yr); All Community Tamil Medium (Govt School 6–12 Std) — Naan Mudhalvan Scholarship (₹1,000/month). Merit-based scholarships and education loans from nationalized banks are also available.
+                Government scholarships available: SC/SCA/ST/BC-CC — PMSS (GQ: As Per Government Norm, MQ: 6L/Yr), Maintenance Scholarship (GQ: 5K–10K/Yr); BC/MBC/DNC/BCM — First Graduate (40K/Yr), Community Scholarship (5K–10K/Yr); All Community Tamil Medium (Govt School 6–12 Std) — Naan Mudhalvan Scholarship (₹1,000/month). Merit-based scholarships and education loans from nationalized banks are also available.
               </div>
             </details>
 

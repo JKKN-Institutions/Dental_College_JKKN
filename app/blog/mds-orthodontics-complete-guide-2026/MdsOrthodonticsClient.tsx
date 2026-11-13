@@ -386,7 +386,7 @@ export default function MdsOrthodonticsClient({ faqs }: { faqs: FAQ[] }) {
               </p>
               <ul className="space-y-2.5 mb-5">
                 {[
-                  ['Government Quota:', 'most affordable; allotted through TN PG dental counselling — top-rank candidates'],
+                  ['Government Quota:', 'As Per Government Norm; allotted through TN PG dental counselling — top-rank candidates'],
                   ['Management Quota:', 'self-financing seats; fee fixed by institution within NDC/state regulatory cap'],
                   ['NRI Quota:', 'Non-Resident Indian seats — separate fee category as per NDC'],
                 ].map(([k, v]) => (

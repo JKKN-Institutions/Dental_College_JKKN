@@ -378,13 +378,13 @@ export default function NamakkalPage() {
                     <td className="px-5 py-4 font-semibold text-gray-900">BDS</td>
                     <td className="px-5 py-4 text-gray-600">5 years (4 + 1 internship)</td>
                     <td className="px-5 py-4 text-gray-600">100</td>
-                    <td className="px-5 py-4 text-gray-600">Management quota: Rs 4,50,000 a year (day scholar) or Rs 5,50,000 (with hostel), instruments included. Government quota: as per government norms. <Link href="/fees-structure/" className="text-[#0b6d41] hover:underline font-medium">View official fee structure →</Link></td>
+                    <td className="px-5 py-4 text-gray-600">Management quota: Rs 4,50,000 a year (day scholar) or Rs 5,50,000 (with hostel), instruments included. Government quota: As Per Government Norm. <Link href="/fees-structure/" className="text-[#0b6d41] hover:underline font-medium">View official fee structure →</Link></td>
                   </tr>
                   <tr className="bg-[#FBFBEE]">
                     <td className="px-5 py-4 font-semibold text-gray-900">MDS</td>
                     <td className="px-5 py-4 text-gray-600">3 years</td>
                     <td className="px-5 py-4 text-gray-600">18</td>
-                    <td className="px-5 py-4 text-gray-600">Management quota: Rs 8,50,000 a year. Government quota: as per government norms. <Link href="/fees-structure/" className="text-[#0b6d41] hover:underline font-medium">View official fee structure →</Link></td>
+                    <td className="px-5 py-4 text-gray-600">Management quota: Rs 8,50,000 a year. Government quota: As Per Government Norm. <Link href="/fees-structure/" className="text-[#0b6d41] hover:underline font-medium">View official fee structure →</Link></td>
                   </tr>
                 </tbody>
               </table>

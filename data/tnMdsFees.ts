@@ -29,7 +29,8 @@ export interface TnMdsFeeRow {
   tuitionIsOfficial: boolean;
   securityDeposit: string;
   applicationFee: string;
-  registrationFee: string;
+  /** Left out where the row shows "As Per Government Norm" (self-financing Government Quota, user 2026-11-13). */
+  registrationFee?: string;
   clause: string;
 }
 
@@ -67,11 +68,10 @@ export const TN_MDS_FEES: TnMdsFeeRow[] = [
     id: 'sf-government-quota',
     category: 'Self-Financing — Government Quota',
     seatCategory: 'Merit (NEET MDS), state counselling',
-    tuitionPerYear: 'As prescribed by the Committee on Fixation of Fees',
+    tuitionPerYear: 'As Per Government Norm',
     tuitionIsOfficial: false,
-    securityDeposit: '₹1,00,000',
-    applicationFee: '₹3,000',
-    registrationFee: '₹1000',
+    securityDeposit: 'As Per Government Norm',
+    applicationFee: 'As Per Government Norm',
     clause: 'GQ prospectus, clauses 35(b)(i), 3(ii) and 2',
   },
   {

@@ -418,7 +418,7 @@ export default function BdsGuideClient({ faqs }: { faqs: FAQ[] }) {
               </p>
               <ul className="space-y-2.5 mb-5">
                 {[
-                  ['Government Quota:', 'As per Govt. of Tamil Nadu fee fixation committee (most affordable category)'],
+                  ['Government Quota:', 'As Per Government Norm'],
                   ['Management Quota:', 'Self-financing seats with fee fixed by the institution under regulatory cap'],
                   ['NRI Quota:', 'For Non-Resident Indian candidates as per NDC/state norms'],
                 ].map(([k, v]) => (

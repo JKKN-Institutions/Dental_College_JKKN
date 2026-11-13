@@ -294,7 +294,7 @@ export default function MdsProsthodonticsClient({ faqs }: { faqs: FAQ[] }) {
               </p>
               <ul className="space-y-2.5 mb-5">
                 {[
-                  ['Government Quota:', 'most affordable; allotted through TN PG counselling'],
+                  ['Government Quota:', 'As Per Government Norm; allotted through TN PG counselling'],
                   ['Management Quota:', 'self-financing seats under regulatory cap'],
                   ['NRI Quota:', 'Non-Resident Indian seats — separate category'],
                 ].map(([k, v]) => (

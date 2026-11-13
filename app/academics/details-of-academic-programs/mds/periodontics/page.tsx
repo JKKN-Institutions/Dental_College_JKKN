@@ -1040,19 +1040,19 @@ export default function MDSPeriodontics() {
                 <tbody className="divide-y divide-gray-200">
                   <tr className="bg-white hover:bg-gray-50">
                     <td className="px-4 md:px-6 py-4 text-gray-700 font-medium text-sm md:text-base">Tuition Fee (Per Annum)</td>
-                    <td className="px-4 md:px-6 py-4 text-gray-900 font-bold text-sm md:text-base">As Per Govt Norms</td>
+                    <td className="px-4 md:px-6 py-4 text-gray-900 font-bold text-sm md:text-base">As Per Government Norm</td>
                     <td className="px-4 md:px-6 py-4 text-gray-900 font-bold text-sm md:text-base">₹8,50,000</td>
                     <td className="px-4 md:px-6 py-4 text-gray-900 font-bold text-sm md:text-base">$15,000</td>
                   </tr>
                   <tr className="bg-gray-50 hover:bg-gray-100">
                     <td className="px-4 md:px-6 py-4 text-gray-700 font-medium text-sm md:text-base">Admission Fee (One-time)</td>
-                    <td className="px-4 md:px-6 py-4 text-gray-900 font-bold text-sm md:text-base">₹50,000</td>
+                    <td className="px-4 md:px-6 py-4 text-gray-900 font-bold text-sm md:text-base">As Per Government Norm</td>
                     <td className="px-4 md:px-6 py-4 text-gray-900 font-bold text-sm md:text-base">₹1,00,000</td>
                     <td className="px-4 md:px-6 py-4 text-gray-900 font-bold text-sm md:text-base">$2,000</td>
                   </tr>
                   <tr className="bg-white hover:bg-gray-50">
                     <td className="px-4 md:px-6 py-4 text-gray-700 font-medium text-sm md:text-base">Caution Deposit (Refundable)</td>
-                    <td className="px-4 md:px-6 py-4 text-gray-900 font-bold text-sm md:text-base">₹25,000</td>
+                    <td className="px-4 md:px-6 py-4 text-gray-900 font-bold text-sm md:text-base">As Per Government Norm</td>
                     <td className="px-4 md:px-6 py-4 text-gray-900 font-bold text-sm md:text-base">₹25,000</td>
                     <td className="px-4 md:px-6 py-4 text-gray-900 font-bold text-sm md:text-base">$500</td>
                   </tr>

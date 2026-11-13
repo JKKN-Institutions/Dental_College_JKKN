@@ -41,7 +41,7 @@ export const faqs: (FaqItem & { voice?: string })[] = [
   },
   {
     q: 'What is the fee structure for BDS at JKKN Dental College?',
-    a: 'Management-quota BDS tuition at JKKN Dental College & Hospital for 2026-27 is Rs 4,50,000 a year for day scholars and Rs 5,50,000 with hostel, instruments included; government-quota fees follow government norms. Management-quota MDS tuition is Rs 8,50,000 a year. Full details: dental.jkkn.ac.in/fee-structure/ or +91 9345855001.',
+    a: 'Management-quota BDS tuition at JKKN Dental College & Hospital for 2026-27 is Rs 4,50,000 a year for day scholars and Rs 5,50,000 with hostel, instruments included; government-quota fees are As Per Government Norm. Management-quota MDS tuition is Rs 8,50,000 a year. Full details: dental.jkkn.ac.in/fee-structure/ or +91 9345855001.',
   },
   {
     q: 'What are the placements from JKKN Dental College?',

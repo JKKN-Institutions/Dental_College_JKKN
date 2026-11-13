@@ -151,7 +151,7 @@ export default function HosurPage() {
           <h3 className="font-bold text-gray-900 mb-3 text-lg">Why Stay in Tamil Nadu Instead of Crossing to Bangalore?</h3>
           <ul className="list-disc list-inside space-y-2 text-gray-700 mb-4" style={{ fontSize: 'clamp(0.9rem, 1vw + 0.4rem, 1.05rem)' }}>
             <li><strong>State quota stays intact</strong> — 85% of BDS seats in TN colleges are filled through DME Tamil Nadu counselling for TN students</li>
-            <li><strong>TN fee structure</strong> — Government Quota fees follow Tamil Nadu government norms</li>
+            <li><strong>TN fee structure</strong> — Government Quota fees: As Per Government Norm</li>
             <li><strong>One university system</strong> — TN Dr. MGR Medical University degree, recognised across the state&apos;s government recruitment</li>
           </ul>
           <p className="text-gray-500 text-sm">All NDC-approved dental colleges in Tamil Nadu admit students through NEET UG counselling conducted by DME Tamil Nadu.</p>

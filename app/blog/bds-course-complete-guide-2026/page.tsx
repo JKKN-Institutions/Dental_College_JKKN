@@ -46,7 +46,7 @@ const faqs = [
   {
     question: 'What is the BDS fee structure at JKKN Dental College for 2026?',
     answer:
-      'BDS fees at JKKN Dental College are charged as per Government of Tamil Nadu norms (Government Quota fee). Management Quota and NRI Quota fees are higher and revised annually. The official fee structure is published at dental.jkkn.ac.in/fee-structure and covers tuition, lab fee and university charges.',
+      'The BDS Government Quota fee at JKKN Dental College is As Per Government Norm. Management Quota and NRI Quota fees are higher and revised annually. The official fee structure is published at dental.jkkn.ac.in/fee-structure and covers tuition, lab fee and university charges.',
   },
   {
     question: 'Is BDS a good career choice in 2026?',

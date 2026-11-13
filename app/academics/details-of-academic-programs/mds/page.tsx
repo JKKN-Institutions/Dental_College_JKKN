@@ -51,7 +51,7 @@ const mdsFAQs = [
   {
     question: "What is the MDS course fees in Tamil Nadu?",
     answer:
-      "Tamil Nadu’s MDS prospectuses for 2026-27 set exactly one tuition amount: ₹30,000 a year for Government Institutions. For self-financing colleges, on government-quota and management or NRI seats alike, the prospectuses state the tuition is fixed by the Committee on Fixation of Fees in respect of Self-Financing Professional Colleges and publish no figure, so no reliable private-college range can be quoted. Security deposits are published: ₹30,000 for government colleges, ₹1,00,000 for government-quota seats in self-financing colleges and ₹2,00,000 for management quota. Source: Selection Committee, Directorate of Medical Education and Research, MDS Prospectus 2026-2027.",
+      "Tamil Nadu’s MDS prospectuses for 2026-27 set exactly one tuition amount: ₹30,000 a year for Government Institutions. For self-financing colleges, on government-quota and management or NRI seats alike, the prospectuses state the tuition is fixed by the Committee on Fixation of Fees in respect of Self-Financing Professional Colleges and publish no figure, so no reliable private-college range can be quoted. Security deposits are published: ₹30,000 for government colleges, As Per Government Norm for government-quota seats in self-financing colleges and ₹2,00,000 for management quota. Source: Selection Committee, Directorate of Medical Education and Research, MDS Prospectus 2026-2027.",
   },
   {
     question: "Which are the top MDS dental colleges in Tamil Nadu?",
@@ -198,7 +198,7 @@ export default function MDSProgram() {
                 <p>
                   <strong className="text-[#ffde59]">Management quota tuition:</strong> Rs 8,50,000 a year, the same for
                   all 5 specialities &mdash; Rs 25,50,000 for the full 3 years (tuition only; hostel, mess and
-                  university fees are separate). Government quota: as fixed by the Tamil Nadu Fee Committee.
+                  university fees are separate). Government quota: As Per Government Norm.
                 </p>
               </div>
 

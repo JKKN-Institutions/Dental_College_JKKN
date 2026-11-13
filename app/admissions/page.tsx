@@ -112,7 +112,7 @@ const faqSchema = {
       name: 'Are scholarships available at JKKN Dental College?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'JKKN Dental College offers merit-based scholarships, sports quota scholarships, single parent scholarships, and government scholarships: SC/SCA/ST/BC-CC — PMSS (GQ: 2.5L/Yr, MQ: 6L/Yr), Maintenance Scholarship (5K–10K/Yr); BC/MBC/DNC/BCM — First Graduate (40K/Yr), Community Scholarship (5K–10K/Yr); All Community Tamil Medium — Naan Mudhalvan ₹1,000/month.',
+        text: 'JKKN Dental College offers merit-based scholarships, sports quota scholarships, single parent scholarships, and government scholarships: SC/SCA/ST/BC-CC — PMSS (GQ: As Per Government Norm, MQ: 6L/Yr), Maintenance Scholarship (5K–10K/Yr); BC/MBC/DNC/BCM — First Graduate (40K/Yr), Community Scholarship (5K–10K/Yr); All Community Tamil Medium — Naan Mudhalvan ₹1,000/month.',
       },
     },
     {
@@ -120,7 +120,7 @@ const faqSchema = {
       name: 'What is the fee structure for BDS at JKKN Dental College?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'BDS tuition fee at JKKN Dental College is four lakh fifty thousand rupees per year (Dayscholar with Instruments) or five lakh fifty thousand rupees per year (With Hostel and Instruments) under Management Quota. Government Quota fee is as per Govt Norms. Installment payment options and scholarship fee reductions are available.',
+        text: 'BDS tuition fee at JKKN Dental College is four lakh fifty thousand rupees per year (Dayscholar with Instruments) or five lakh fifty thousand rupees per year (With Hostel and Instruments) under Management Quota. Government Quota fee is As Per Government Norm. Installment payment options and scholarship fee reductions are available.',
       },
     },
   ],
@@ -210,7 +210,7 @@ const bdsSchema = {
       maxPrice: '550000',
       unitText: 'per year',
       description:
-        'Management Quota annual tuition, academic year 2026-27: Rs 4,50,000 dayscholar with instruments, Rs 5,50,000 with hostel and instruments. Government Quota as per the Tamil Nadu Fee Fixation Committee norms.',
+        'Management Quota annual tuition, academic year 2026-27: Rs 4,50,000 dayscholar with instruments, Rs 5,50,000 with hostel and instruments. Government Quota: As Per Government Norm.',
     },
   },
 };
@@ -250,7 +250,7 @@ const mdsSchema = {
       maxPrice: '850000',
       unitText: 'per year',
       description:
-        'Management Quota annual tuition, academic year 2026-27: Rs 8,50,000, the same across all five MDS specialisations. Government Quota as per the Tamil Nadu Fee Fixation Committee norms.',
+        'Management Quota annual tuition, academic year 2026-27: Rs 8,50,000, the same across all five MDS specialisations. Government Quota: As Per Government Norm.',
     },
   },
 };
@@ -873,11 +873,11 @@ export default function AdmissionPage() {
               },
               {
                 q: 'Are scholarships available?',
-                a: 'Yes. JKKN offers merit-based scholarships, sports quota scholarships (wrestling, volleyball, basketball, etc.), single parent scholarships, and government scholarships: SC/SCA/ST/BC-CC — PMSS (GQ: 2.5L/Yr, MQ: 6L/Yr), Maintenance Scholarship (5K–10K/Yr); BC/MBC/DNC/BCM — First Graduate (40K/Yr), Community Scholarship (5K–10K/Yr); All Community Tamil Medium — Naan Mudhalvan ₹1,000/month.',
+                a: 'Yes. JKKN offers merit-based scholarships, sports quota scholarships (wrestling, volleyball, basketball, etc.), single parent scholarships, and government scholarships: SC/SCA/ST/BC-CC — PMSS (GQ: As Per Government Norm, MQ: 6L/Yr), Maintenance Scholarship (5K–10K/Yr); BC/MBC/DNC/BCM — First Graduate (40K/Yr), Community Scholarship (5K–10K/Yr); All Community Tamil Medium — Naan Mudhalvan ₹1,000/month.',
               },
               {
                 q: 'What is the fee structure for BDS?',
-                a: `BDS tuition fee is ₹4,50,000/year (Dayscholar with Instruments) or ₹5,50,000/year (With Hostel & Instruments) under Management Quota. Government Quota fee is as per Govt Norms. Installment payment options are available. Visit the fee structure page for a complete breakdown.`,
+                a: `BDS tuition fee is ₹4,50,000/year (Dayscholar with Instruments) or ₹5,50,000/year (With Hostel & Instruments) under Management Quota. Government Quota fee is As Per Government Norm. Installment payment options are available. Visit the fee structure page for a complete breakdown.`,
               },
             ].map((faq) => (
               <details

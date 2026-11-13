@@ -5,7 +5,7 @@
 // G.O.(D) No.601, Health and Family Welfare Department, dated 05-06-2025. Read 2026-09-30.
 //   p.53  - Government Quota fee, all self-financing dental colleges, "as fixed by the Fee Committee".
 //           The figure is NOT published on this site: user's choice 2026-10-29, the site says
-//           "as per government norms" for the Government Quota fee everywhere.
+//           "As Per Government Norm" for the Government Quota fee everywhere (wording: user, 2026-11-13).
 //   p.53  - Government dental colleges, amount paid at allotment: Rs 16,073 (OC/BC/BCM/MBC),
 //           Rs 12,073 (SC/SCA/ST).
 //   p.146 - Seat split in self-financing colleges: non-minority 65:35, minority 50:50

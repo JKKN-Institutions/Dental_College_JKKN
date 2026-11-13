@@ -93,7 +93,7 @@ export default function Home() {
         "minPrice": "450000",
         "maxPrice": "550000",
         "unitText": "per year",
-        "description": "Management Quota annual tuition, academic year 2026-27: Rs 4,50,000 dayscholar with instruments, Rs 5,50,000 with hostel and instruments. Government Quota as per the Tamil Nadu Fee Fixation Committee norms."
+        "description": "Management Quota annual tuition, academic year 2026-27: Rs 4,50,000 dayscholar with instruments, Rs 5,50,000 with hostel and instruments. Government Quota: As Per Government Norm."
       }
     }
   };
@@ -134,7 +134,7 @@ export default function Home() {
         "minPrice": "850000",
         "maxPrice": "850000",
         "unitText": "per year",
-        "description": "Management Quota annual tuition, academic year 2026-27: Rs 8,50,000, the same across all five MDS specialisations. Government Quota as per the Tamil Nadu Fee Fixation Committee norms."
+        "description": "Management Quota annual tuition, academic year 2026-27: Rs 8,50,000, the same across all five MDS specialisations. Government Quota: As Per Government Norm."
       }
     }
   };

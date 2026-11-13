@@ -261,7 +261,7 @@ export default function ScholarshipPolicy() {
                   <tr className="bg-[#FBFBEE]/60">
                     <td className="border border-gray-200 px-4 py-3 font-semibold text-[#032816]" rowSpan={2}>SC / SCA / ST / BC-CC</td>
                     <td className="border border-gray-200 px-4 py-3">PMSS (Community Scholarship)</td>
-                    <td className="border border-gray-200 px-4 py-3 text-center font-semibold text-[#0b6d41]">2.5L / Yr</td>
+                    <td className="border border-gray-200 px-4 py-3 text-center font-semibold text-[#0b6d41]">As Per Government Norm</td>
                     <td className="border border-gray-200 px-4 py-3 text-center font-semibold text-[#0b6d41]">6L / Yr</td>
                   </tr>
                   <tr className="bg-[#FBFBEE]/60">

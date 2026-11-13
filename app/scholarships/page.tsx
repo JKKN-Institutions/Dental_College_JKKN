@@ -77,7 +77,7 @@ export default function ScholarshipsPage() {
                   <tr className="hover:bg-white transition-colors">
                     <td className="px-6 py-4 font-semibold text-gray-800">PMSS (Community Scholarship)</td>
                     <td className="px-6 py-4 text-gray-700">BDS</td>
-                    <td className="px-6 py-4 text-right text-gray-800">&#8377;2.5L / Yr</td>
+                    <td className="px-6 py-4 text-right text-gray-800">As Per Government Norm</td>
                     <td className="px-6 py-4 text-right text-gray-800">&#8377;6L / Yr</td>
                   </tr>
                   <tr className="hover:bg-white transition-colors">

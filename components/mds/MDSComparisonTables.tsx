@@ -174,9 +174,11 @@ export default function MDSComparisonTables() {
                     <td className="p-4">{r.securityDeposit}</td>
                     <td className="p-4">
                       {r.applicationFee}
-                      <span className="block mt-0.5 text-xs text-gray-500">
-                        plus {r.registrationFee} at counselling registration
-                      </span>
+                      {r.registrationFee && (
+                        <span className="block mt-0.5 text-xs text-gray-500">
+                          plus {r.registrationFee} at counselling registration
+                        </span>
+                      )}
                     </td>
                   </tr>
                 ))}
@@ -197,7 +199,7 @@ export default function MDSComparisonTables() {
             fixes it for each year. JKKN&rsquo;s own Management Quota MDS tuition for
             2026-27 is &#8377;8,50,000 a year, the same in all five specialities, as published
             on its <a href="/fees-structure/" className="underline text-[#0b6d41]">fee structure page</a>;
-            its Government Quota fee is the one the committee fixes. Questions: +91 9345855001
+            its Government Quota fee is As Per Government Norm. Questions: +91 9345855001
             or dental@jkkn.ac.in.
           </p>
         </div>

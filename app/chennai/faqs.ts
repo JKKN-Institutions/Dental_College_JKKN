@@ -40,6 +40,6 @@ export const faqs: FaqItem[] = [
   },
   {
     q: 'What is the BDS fee at JKKN Dental College?',
-    a: 'At JKKN Dental College & Hospital, BDS tuition fee is Rs. 4,50,000/year (Dayscholar with Instruments) or Rs. 5,50,000/year (With Hostel & Instruments) under Management Quota; the Government Quota fee is as per government norms (fixed by the Tamil Nadu Fee Committee). Contact +91 9345855001 for the latest 2026-27 fee structure.',
+    a: 'At JKKN Dental College & Hospital, BDS tuition fee is Rs. 4,50,000/year (Dayscholar with Instruments) or Rs. 5,50,000/year (With Hostel & Instruments) under Management Quota; the Government Quota fee is As Per Government Norm. Contact +91 9345855001 for the latest 2026-27 fee structure.',
   },
 ];
