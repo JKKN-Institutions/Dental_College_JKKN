@@ -63,7 +63,7 @@ const structuredData = {
             "minPrice": "450000",
             "maxPrice": "550000",
             "unitText": "per year",
-            "description": "GQ: as per government norms (Tamil Nadu Fee Committee). MQ: ₹4,50,000–₹5,50,000/year. Varies by hostel/dayscholar option."
+            "description": "GQ: As Per Government Norm. MQ: ₹4,50,000–₹5,50,000/year. Varies by hostel/dayscholar option."
           }
         }
       }
@@ -90,7 +90,7 @@ const structuredData = {
             "minPrice": "850000",
             "maxPrice": "850000",
             "unitText": "per year",
-            "description": "GQ: As per Govt. Norms. MQ: ₹8,50,000/year. Applicable across all 5 MDS specializations."
+            "description": "GQ: As Per Government Norm. MQ: ₹8,50,000/year. Applicable across all 5 MDS specializations."
           }
         }
       }
@@ -107,7 +107,7 @@ const faqSchema = {
       "name": "What is the BDS fee structure at JKKN Dental College?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The BDS (Bachelor of Dental Surgery) tuition fee at JKKN Dental College is: Government Quota (GQ) – as per government norms, fixed by the Tamil Nadu Fee Committee for every self-financing dental college. Management Quota (MQ) – ₹5,50,000/year (With Hostel & Instruments) or ₹4,50,000/year (Dayscholar with Instruments). Additional fees include library fee, lab and clinical fee, caution deposit (refundable), and university examination fees. Contact the admissions office at +91 9345855001 or dental@jkkn.ac.in for complete fee details."
+        "text": "The BDS (Bachelor of Dental Surgery) tuition fee at JKKN Dental College is: Government Quota (GQ) – As Per Government Norm. Management Quota (MQ) – ₹5,50,000/year (With Hostel & Instruments) or ₹4,50,000/year (Dayscholar with Instruments). Additional fees include library fee, lab and clinical fee, caution deposit (refundable), and university examination fees. Contact the admissions office at +91 9345855001 or dental@jkkn.ac.in for complete fee details."
       }
     },
     {
@@ -131,7 +131,7 @@ const faqSchema = {
       "name": "What is the MDS fee structure at JKKN Dental College?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The MDS (Master of Dental Surgery) annual tuition fee at JKKN Dental College is As per Govt. Norms (Government Quota) and ₹8,50,000 per year (Management Quota) across all 5 specializations. MDS programs available include Periodontics (2 seats), Orthodontics (5 seats), Prosthodontics (3 seats), Endodontics (5 seats), and Oral Medicine (3 seats). Additional one-time fees include admission fee, caution deposit, library deposit, and lab deposit (all refundable). Contact admissions for complete fee details."
+        "text": "The MDS (Master of Dental Surgery) annual tuition fee at JKKN Dental College is As Per Government Norm (Government Quota) and ₹8,50,000 per year (Management Quota) across all 5 specializations. MDS programs available include Periodontics (2 seats), Orthodontics (5 seats), Prosthodontics (3 seats), Endodontics (5 seats), and Oral Medicine (3 seats). Additional one-time fees include admission fee, caution deposit, library deposit, and lab deposit (all refundable). Contact admissions for complete fee details."
       }
     }
   ]
@@ -200,8 +200,8 @@ export default function FeesStructure() {
                 <AlertTriangle className="w-5 h-5 inline-block mr-2" /> Before you pay
               </p>
               <p className="text-sm text-gray-700">
-                These are the 2026-27 fees published by JKKN Dental College. Government-quota fees are fixed by the
-                Tamil Nadu Fee Committee and can change. Confirm the final amount with the admissions office at <a href="tel:+919345855001" className="text-[#0b6d41] font-semibold hover:underline">+91 93458 55001</a> or
+                These are the 2026-27 fees published by JKKN Dental College. Government-quota fees: As Per Government Norm.
+                Confirm the final amount with the admissions office at <a href="tel:+919345855001" className="text-[#0b6d41] font-semibold hover:underline">+91 93458 55001</a> or
                 email <a href="mailto:dental@jkkn.ac.in" className="text-[#0b6d41] font-semibold hover:underline">dental@jkkn.ac.in</a>.
               </p>
             </div>
@@ -235,13 +235,13 @@ export default function FeesStructure() {
               <tbody className="divide-y divide-gray-300">
                 <tr className="hover:bg-white transition-colors">
                   <td className="px-6 py-4 font-semibold text-gray-800">BDS</td>
-                  <td className="px-6 py-4 text-left text-gray-600">As per government norms*</td>
+                  <td className="px-6 py-4 text-left text-gray-600">As Per Government Norm*</td>
                   <td className="px-6 py-4 text-right text-gray-800">&#8377;5,50,000</td>
                   <td className="px-6 py-4 text-gray-600">With Hostel &amp; Instruments</td>
                 </tr>
                 <tr className="hover:bg-white transition-colors">
                   <td className="px-6 py-4 font-semibold text-gray-800">BDS</td>
-                  <td className="px-6 py-4 text-left text-gray-600">As per government norms*</td>
+                  <td className="px-6 py-4 text-left text-gray-600">As Per Government Norm*</td>
                   <td className="px-6 py-4 text-right text-gray-800">&#8377;4,50,000</td>
                   <td className="px-6 py-4 text-gray-600">Dayscholar with Instruments</td>
                 </tr>
@@ -249,7 +249,7 @@ export default function FeesStructure() {
             </table>
             <p className="text-xs text-gray-500 px-6 py-3">* Fees are per year. GQ = Government Quota &nbsp;|&nbsp; MQ = Management Quota</p>
             <p className="text-xs text-gray-600 px-6 pb-4 leading-relaxed">
-              * Government Quota: as per government norms. The Tamil Nadu Fee Committee fixes this fee for every
+              * Government Quota: As Per Government Norm. The Tamil Nadu Fee Committee fixes this fee for every
               self-financing dental college, and it is confirmed at counselling. JKKN is a minority institution, so
               its BDS seats are split {TN_BDS_FEES.seatSplit.minority} between Government Quota and Management Quota
               (seat split as printed in the{' '}
@@ -316,31 +316,31 @@ export default function FeesStructure() {
                 <tr className="hover:bg-[#FBFBEE] transition-colors">
                   <td className="px-6 py-4 font-semibold text-gray-800">Orthodontics</td>
                   <td className="px-6 py-4 text-center text-gray-800">5</td>
-                  <td className="px-6 py-4 text-left text-gray-600 italic">As per Govt. Norms</td>
+                  <td className="px-6 py-4 text-left text-gray-600 italic">As Per Government Norm</td>
                   <td className="px-6 py-4 text-right text-gray-800">&#8377;8,50,000</td>
                 </tr>
                 <tr className="hover:bg-[#FBFBEE] transition-colors">
                   <td className="px-6 py-4 font-semibold text-gray-800">Endodontics</td>
                   <td className="px-6 py-4 text-center text-gray-800">5</td>
-                  <td className="px-6 py-4 text-left text-gray-600 italic">As per Govt. Norms</td>
+                  <td className="px-6 py-4 text-left text-gray-600 italic">As Per Government Norm</td>
                   <td className="px-6 py-4 text-right text-gray-800">&#8377;8,50,000</td>
                 </tr>
                 <tr className="hover:bg-[#FBFBEE] transition-colors">
                   <td className="px-6 py-4 font-semibold text-gray-800">Prosthodontics</td>
                   <td className="px-6 py-4 text-center text-gray-800">3</td>
-                  <td className="px-6 py-4 text-left text-gray-600 italic">As per Govt. Norms</td>
+                  <td className="px-6 py-4 text-left text-gray-600 italic">As Per Government Norm</td>
                   <td className="px-6 py-4 text-right text-gray-800">&#8377;8,50,000</td>
                 </tr>
                 <tr className="hover:bg-[#FBFBEE] transition-colors">
                   <td className="px-6 py-4 font-semibold text-gray-800">Periodontics</td>
                   <td className="px-6 py-4 text-center text-gray-800">2</td>
-                  <td className="px-6 py-4 text-left text-gray-600 italic">As per Govt. Norms</td>
+                  <td className="px-6 py-4 text-left text-gray-600 italic">As Per Government Norm</td>
                   <td className="px-6 py-4 text-right text-gray-800">&#8377;8,50,000</td>
                 </tr>
                 <tr className="hover:bg-[#FBFBEE] transition-colors">
                   <td className="px-6 py-4 font-semibold text-gray-800">Oral Medicine</td>
                   <td className="px-6 py-4 text-center text-gray-800">3</td>
-                  <td className="px-6 py-4 text-left text-gray-600 italic">As per Govt. Norms</td>
+                  <td className="px-6 py-4 text-left text-gray-600 italic">As Per Government Norm</td>
                   <td className="px-6 py-4 text-right text-gray-800">&#8377;8,50,000</td>
                 </tr>
                 <tr className="bg-[#0b6d41] text-white font-bold">
