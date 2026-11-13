@@ -36,7 +36,7 @@ export default function AboutInstitution() {
             </div>
 
             <p className="text-gray-600 text-sm sm:text-base md:text-lg mb-6 sm:mb-8 leading-relaxed">
-              Founded on the vision of J.K.K. Nattraja Chettiar (1895–1995), JKKN Dental College is a premier institution under JKKN Institutions. Located on NH-544 in Komarapalayam, Namakkal District — about 18 km from <Link href="/erode/" className="text-[#0b6d41] hover:underline">Erode</Link> — the college provides an ideal environment for focused learning on an AI-integrated dental campus.
+              Founded on the vision of J.K.K. Nattraja Chettiar (1895–1995), JKKN Dental College is part of JKKN Institutions. Located on NH-544 in Komarapalayam, Namakkal District — about 18 km from <Link href="/erode/" className="text-[#0b6d41] hover:underline">Erode</Link> — the college provides an ideal environment for focused learning on an AI-integrated dental campus.
             </p>
 
             {/* Why Choose JKKN — Unique value propositions */}

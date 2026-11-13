@@ -35,7 +35,7 @@ export default function BDSProgram() {
               },
               {
                 q: 'What are the career opportunities after completing BDS?',
-                a: 'BDS graduates from JKKN have diverse career paths including private dental practice, government dental hospitals, corporate dental chains like Clove Dental and Dental Planet, MDS specialization (5 options available at JKKN), research and academics, armed forces dental corps, dental product industry, and public health dentistry. JKKN offers 93.9% placed or in higher studies (2024-25 batch) with domestic and international opportunities.'
+                a: 'BDS graduates from JKKN have diverse career paths including private dental practice, government dental hospitals, corporate dental chains like Clove Dental and Dental Planet, MDS specialization (5 options available at JKKN), research and academics, armed forces dental corps, dental product industry, and public health dentistry. In the 2024-25 batch, 93 of 99 graduates were placed or in higher studies (JKKN NIRF 2026 data). Practising abroad needs the dental licensing exam of that country.'
               },
               {
                 q: 'What facilities are available for BDS learners?',
@@ -288,7 +288,7 @@ export default function BDSProgram() {
         <div className="max-w-4xl mx-auto">
           <div className="answer-capsule bg-white border-l-4 border-[#0f8f56] rounded-r-xl p-6 shadow-sm">
             <p className="text-gray-700 leading-relaxed text-base md:text-lg">
-              <strong className="text-[#0b6d41]">JKKN Dental College & Hospital</strong>, established in 1987 under the J.K.K. Nattraja Educational Institutions (since 1952), is a NDC-approved and <a href="/accreditation/naac/" className="text-[#0b6d41] underline hover:text-[#0b6d41]">NAAC Accredited (A)</a> dental institution located on NH-544, Komarapalayam, Namakkal District, Tamil Nadu 638183. It offers <strong>100 BDS seats</strong> and <strong>18 MDS seats</strong> across 5 specializations, affiliated to the <a href="https://www.tnmgrmu.ac.in/" target="_blank" rel="noopener noreferrer" className="text-[#0b6d41] underline hover:text-[#0b6d41]">Tamil Nadu Dr. M.G.R. Medical University</a>, Chennai. With 200+ dental chairs, 100+ hospital beds, and 500+ daily patient footfall across 9 departments, JKKN gives BDS learners daily clinical exposure in the college hospital, alongside <a href="/research/research-development-rd-cell/" className="text-[#0b6d41] underline hover:text-[#0b6d41]">research excellence</a>; faculty papers are listed on the <a href="/research/publication/" className="text-[#0b6d41] underline hover:text-[#0b6d41]">Research Publications</a> page and the signed MoUs on the <a href="/research/mou-memorandum-of-understanding/" className="text-[#0b6d41] underline hover:text-[#0b6d41]">MoU</a> page. The college provides 93.9% placed or in higher studies (2024-25 batch) including international opportunities.
+              <strong className="text-[#0b6d41]">JKKN Dental College & Hospital</strong>, established in 1987 under the J.K.K. Nattraja Educational Institutions (since 1952), is a NDC-approved and <a href="/accreditation/naac/" className="text-[#0b6d41] underline hover:text-[#0b6d41]">NAAC Accredited (A)</a> dental institution located on NH-544, Komarapalayam, Namakkal District, Tamil Nadu 638183. It offers <strong>100 BDS seats</strong> and <strong>18 MDS seats</strong> across 5 specializations, affiliated to the <a href="https://www.tnmgrmu.ac.in/" target="_blank" rel="noopener noreferrer" className="text-[#0b6d41] underline hover:text-[#0b6d41]">Tamil Nadu Dr. M.G.R. Medical University</a>, Chennai. With 200+ dental chairs, 100+ hospital beds, and 500+ daily patient footfall across 9 departments, JKKN gives BDS learners daily clinical exposure in the college hospital, alongside <a href="/research/research-development-rd-cell/" className="text-[#0b6d41] underline hover:text-[#0b6d41]">research excellence</a>; faculty papers are listed on the <a href="/research/publication/" className="text-[#0b6d41] underline hover:text-[#0b6d41]">Research Publications</a> page and the signed MoUs on the <a href="/research/mou-memorandum-of-understanding/" className="text-[#0b6d41] underline hover:text-[#0b6d41]">MoU</a> page. In the 2024-25 batch, 93 of 99 BDS graduates were placed or in higher studies (JKKN&apos;s NIRF 2026 data).
             </p>
           </div>
         </div>
@@ -838,7 +838,7 @@ export default function BDSProgram() {
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-[#0b6d41] mt-1">&#8226;</span>
-                Hostel is included only in the Management Quota &ldquo;With Hostel &amp; Instruments&rdquo; fee; for other seats, and for examination and other charges, ask the admissions office
+                Hostel is included in the &ldquo;With Hostel &amp; Instruments&rdquo; fee; for mess, examination and other charges, ask the admissions office
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-[#0b6d41] mt-1">&#8226;</span>

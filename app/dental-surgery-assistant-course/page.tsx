@@ -181,8 +181,6 @@ const whyCards = [
 ];
 
 const alumniStats = [
-  { value: 3000, suffix: "+", label: "Alumni Network Across India" },
-  { value: 92, suffix: "%", label: "Placement Assistance Rate 2024-25" },
   { value: 39, suffix: "+", label: "Years of Dental College Excellence" },
 ];
 
@@ -809,7 +807,7 @@ export default function DSACoursePage() {
               </p>
             </RevealOnScroll>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-5 max-w-[900px] mx-auto mb-8">
+            <div className="grid grid-cols-1 gap-5 max-w-[320px] mx-auto mb-8">
               {alumniStats.map((stat, i) => (
                 <ScaleOnScroll key={i} delay={i * 0.15}>
                   <div className="bg-white border border-gray-200 rounded-xl py-[30px] px-5 text-center transition-all hover:border-[#0f8f56] hover:shadow-md hover:-translate-y-[3px]">

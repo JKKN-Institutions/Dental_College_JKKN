@@ -174,7 +174,7 @@ export default function AIDentalCampus() {
           <div className="max-w-4xl mx-auto text-center">
             <div className="inline-flex items-center gap-2 bg-[#085032]/50 backdrop-blur-sm px-6 py-3 rounded-full text-sm font-semibold mb-6 border border-[#0f8f56]/30">
               <Sparkles className="w-5 h-5 text-yellow-300" />
-              <span>PIONEERING INNOVATION IN DENTAL EDUCATION</span>
+              <span>INNOVATION IN DENTAL EDUCATION</span>
             </div>
 
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">

@@ -292,7 +292,7 @@ const feeBreakdown = [
   {
     quota: 'Management Quota — With Hostel',
     tuition: '₹ 5,50,000 / year',
-    note: 'Includes tuition, instruments, hostel and mess.',
+    note: 'Includes tuition, instruments and hostel. Mess charges: confirm with the admission office.',
   },
   {
     quota: 'NRI / Foreign National',
@@ -390,7 +390,7 @@ const bdsFaqs = [
   },
   {
     q: 'Is hostel accommodation available for BDS learners?',
-    a: 'Yes. JKKN provides separate boys and girls hostels with 24/7 security, Wi-Fi, mess facilities, and learning commons. Hostel charges are included in the ₹5,50,000/year Management Quota package.',
+    a: 'Yes. JKKN provides separate boys and girls hostels with 24/7 security, Wi-Fi, mess facilities, and learning commons. Hostel is included in the ₹5,50,000/year Management Quota package; mess charges are confirmed by the admission office.',
   },
   {
     q: 'What career options are available after BDS from JKKN?',

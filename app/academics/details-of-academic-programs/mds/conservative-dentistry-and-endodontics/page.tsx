@@ -20,7 +20,7 @@ export default function MDSConservativeDentistry() {
     "@id": "https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/conservative-dentistry-and-endodontics/#course",
     "url": "https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/conservative-dentistry-and-endodontics/",
     "name": "MDS Conservative Dentistry & Endodontics",
-    "description": "Transform your dental career with our advanced 3-year postgraduate program. Master root canal therapy, restorative dentistry, and dental trauma management at one of Tamil Nadu's premier dental institutions.",
+    "description": "Transform your dental career with our advanced 3-year postgraduate program. Master root canal therapy, restorative dentistry, and dental trauma management at JKKN Dental College & Hospital, Komarapalayam.",
     "provider": {
       "@type": "CollegeOrUniversity",
       "@id": "https://dental.jkkn.ac.in/#organization",
@@ -150,7 +150,7 @@ export default function MDSConservativeDentistry() {
 
               {/* Description */}
               <p className="text-lg text-gray-200 mb-8 leading-relaxed">
-                Transform your dental career with our advanced 3-year postgraduate program. Master root canal therapy, restorative dentistry, and dental trauma management at one of Tamil Nadu's premier dental institutions.
+                Transform your dental career with our advanced 3-year postgraduate program. Master root canal therapy, restorative dentistry, and dental trauma management at JKKN Dental College & Hospital, Komarapalayam.
               </p>
 
               {/* MDS proof, above the fold (marketing audit M3, 2026-10-21). Placement: JKKN's NIRF 2026

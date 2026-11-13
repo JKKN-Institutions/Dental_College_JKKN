@@ -9,11 +9,11 @@ import { generateSpeakableWebPageSchema } from '@/lib/metadata';
 export const metadata: Metadata = {
   alternates: { canonical: '/research/incubation-center/' },
   title: 'Nattraja Incubation Forum (NIF) | JKKN Dental College',
-  description: 'India\'s pioneering bioconvergence incubation center fostering healthcare innovation, startups, and research excellence at JKKN.',
+  description: 'A bioconvergence incubation center fostering healthcare innovation, startups and research at JKKN.',
   keywords: 'Nattraja Incubation Forum, NIF, bioconvergence incubation, healthcare innovation, startup incubation, dental technology, JKKN research',
   openGraph: {
     title: 'Nattraja Incubation Forum (NIF) | JKKN Dental College',
-    description: 'India\'s pioneering bioconvergence incubation center fostering healthcare innovation, startups, and research excellence at JKKN.',
+    description: 'A bioconvergence incubation center fostering healthcare innovation, startups and research at JKKN.',
     url: 'https://dental.jkkn.ac.in/research/incubation-center/',
     type: 'website',
     siteName: 'JKKN Dental College & Hospital',
@@ -31,7 +31,7 @@ const nifOutcomes = [
 export default function IncubationCenter() {
   const speakableSchema = generateSpeakableWebPageSchema({
     title: "Nattraja Incubation Forum (NIF) | JKKN Dental College",
-    description: "India's pioneering bioconvergence incubation center fostering healthcare innovation, startups, and research excellence at JKKN.",
+    description: "A bioconvergence incubation center fostering healthcare innovation, startups and research at JKKN.",
     url: 'https://dental.jkkn.ac.in/research/incubation-center/',
     speakableCssSelectors: ['h1', '.hero-description', 'article p'],
   });
@@ -60,7 +60,7 @@ export default function IncubationCenter() {
           </p>
           <div className="w-20 h-1 bg-[#ffde59] mb-6 rounded-full" />
           <p className="hero-description text-white/85 text-base leading-relaxed max-w-3xl">
-            Nattraja Incubation Forum (NIF), also known as NLB Nattraja Launchpad for Bioconvergence, is India&apos;s pioneering incubation center dedicated to the field of bioconvergence. Affectionately referred to as the NLB Nattraja Launchpad, NIF, within the esteemed JKKN Group Institution, is the nation&apos;s first incubation center committed to healthcare innovation. Thriving on transformation and innovation, NIF is a dynamic space where minds unite to push boundaries in healthcare and technology. It sets an unparalleled precedent, catalyzing groundbreaking advancements in healthcare. More than a physical space, NIF is a crucible of ideas, a sanctuary for pioneers, and a haven for those who dream beyond boundaries. As the dawn of bioconvergence unfolds, Nattraja Incubation Forum stands as India&apos;s commitment to shaping the future of healthcare through innovation.
+            Nattraja Incubation Forum (NIF), also known as NLB Nattraja Launchpad for Bioconvergence, is an incubation center at JKKN dedicated to the field of bioconvergence. Affectionately referred to as the NLB Nattraja Launchpad, NIF, within the esteemed JKKN Group Institution, is an incubation center committed to healthcare innovation. Thriving on transformation and innovation, NIF is a dynamic space where minds unite to push boundaries in healthcare and technology. More than a physical space, NIF is a crucible of ideas, a sanctuary for pioneers, and a haven for those who dream beyond boundaries. As the dawn of bioconvergence unfolds, Nattraja Incubation Forum stands as India&apos;s commitment to shaping the future of healthcare through innovation.
           </p>
         </div>
       </section>
@@ -87,7 +87,7 @@ export default function IncubationCenter() {
             </div>
             <div className="px-6 py-5">
               <p className="text-gray-700 leading-relaxed text-sm md:text-base">
-                Nurturing Tomorrow&apos;s Leaders in Bioconvergence NIF, also known as NLB Nattraja Launchpad for Bioconvergence, is India&apos;s premier incubation center exclusively dedicated to the exciting and emerging realm of bioconvergence. Our vision is ambitious, yet firmly rooted in our commitment to shaping the future of healthcare and technology.
+                Nurturing Tomorrow&apos;s Leaders in Bioconvergence NIF, also known as NLB Nattraja Launchpad for Bioconvergence, is an incubation center dedicated to the exciting and emerging realm of bioconvergence. Our vision is ambitious, yet firmly rooted in our commitment to shaping the future of healthcare and technology.
               </p>
             </div>
           </div>

@@ -64,7 +64,7 @@ The nearest town is Komarapalayam, about 3 km away.
 - **Eligibility:** 10+2 with Physics, Chemistry, Biology (PCB), minimum 50% aggregate (40% for reserved categories), NEET-UG qualified
 - **Admission Mode:** TN State Quota & All India Quota through NEET-UG counselling
 - **Awarded Degree:** Bachelor of Dental Surgery, recognized by the National Dental Commission (NDC, formerly the Dental Council of India) and TN Dr. MGR Medical University
-- **Career Pathways:** Dental practice, MDS specialization, government dental services, hospital dentistry, dental research, dental academia, international dental practice (UK, UAE, Singapore, Saudi Arabia subject to local equivalence)
+- **Career Pathways:** Dental practice, MDS specialization, government dental services, hospital dentistry, dental research, dental academia, practice abroad after clearing that country's dental licensing exam
 
 ### Master of Dental Surgery (MDS) — Postgraduate
 
@@ -210,7 +210,7 @@ The college has 9 academic departments providing undergraduate teaching and clin
 
 ## Key Differentiators (Unique Selling Points)
 
-1. **AI-Integrated Dental Education Campus** — pioneering AI integration in dental curriculum (https://dental.jkkn.ac.in/ai-dental-campus/)
+1. **AI-Integrated Dental Education Campus** — AI tools used in dental training (https://dental.jkkn.ac.in/ai-dental-campus/)
 2. **200+ Dental Chairs** — hands-on training capacity in the attached hospital
 3. **Year 1 Clinical Exposure** — early patient interaction starting from first year
 4. **Attached Multi-specialty Dental Hospital** — integrated clinical training environment

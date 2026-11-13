@@ -107,7 +107,7 @@ const faqSchema = {
       "name": "What is the BDS fee structure at JKKN Dental College?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The BDS (Bachelor of Dental Surgery) tuition fee at JKKN Dental College is: Government Quota (GQ) – As Per Government Norm. Management Quota (MQ) – ₹5,50,000/year (With Hostel & Instruments) or ₹4,50,000/year (Dayscholar with Instruments). Additional fees include library fee, lab and clinical fee, caution deposit (refundable), and university examination fees. Contact the admissions office at +91 9345855001 or dental@jkkn.ac.in for complete fee details."
+        "text": "The BDS (Bachelor of Dental Surgery) tuition fee at JKKN Dental College is: Government Quota (GQ) – As Per Government Norm. Management Quota (MQ) – ₹5,50,000/year (With Hostel & Instruments) or ₹4,50,000/year (Dayscholar with Instruments). The ₹5,50,000 fee includes hostel and instruments and the ₹4,50,000 day-scholar fee includes instruments; mess charges and university examination fees are confirmed in writing by the admission office. Contact the admissions office at +91 9345855001 or dental@jkkn.ac.in for complete fee details."
       }
     },
     {
@@ -115,7 +115,7 @@ const faqSchema = {
       "name": "Are there any hidden charges beyond the tuition fee at JKKN Dental College?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Beyond tuition, the fee components are library fee, lab and clinical fee, university examination fee (as per university norms), and caution/library/lab deposits (all refundable upon course completion). Hostel charges are separate and optional. Ask the admissions office for the current amount of each component before admission."
+        "text": "The BDS Management Quota fee of ₹5,50,000 a year includes hostel and instruments, and the day-scholar fee of ₹4,50,000 a year includes instruments. Mess charges and university registration and examination fees (as per university norms) are confirmed in writing by the admission office. Ask the admissions office for the current amount of each component before admission."
       }
     },
     {
@@ -131,7 +131,7 @@ const faqSchema = {
       "name": "What is the MDS fee structure at JKKN Dental College?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The MDS (Master of Dental Surgery) annual tuition fee at JKKN Dental College is As Per Government Norm (Government Quota) and ₹8,50,000 per year (Management Quota) across all 5 specializations. MDS programs available include Periodontics (2 seats), Orthodontics (5 seats), Prosthodontics (3 seats), Endodontics (5 seats), and Oral Medicine (3 seats). Additional one-time fees include admission fee, caution deposit, library deposit, and lab deposit (all refundable). Contact admissions for complete fee details."
+        "text": "The MDS (Master of Dental Surgery) annual tuition fee at JKKN Dental College is As Per Government Norm (Government Quota) and ₹8,50,000 per year (Management Quota) across all 5 specializations. MDS programs available include Periodontics (2 seats), Orthodontics (5 seats), Prosthodontics (3 seats), Endodontics (5 seats), and Oral Medicine (3 seats). The ₹8,50,000 is tuition only; hostel, mess and university fees are separate and are confirmed in writing by the admission office. Contact admissions for complete fee details."
       }
     }
   ]
@@ -280,7 +280,7 @@ export default function FeesStructure() {
               <li>Duration: 4 years academic program + 1 year compulsory rotating internship</li>
               <li>Total Seats: 100 seats per year (subject to National Dental Commission (NDC) approval)</li>
               <li>Admission: Through NEET-UG and state counseling</li>
-              <li>Hostel facility available for boys and girls (charges separate)</li>
+              <li>Hostel: the ₹5,50,000 a year fee includes hostel and instruments; the day-scholar fee of ₹4,50,000 a year includes instruments. Mess charges: confirm with the admission office.</li>
               <li>Fees are regulated by fee fixation committee and may change annually</li>
               <li>Payment can be made in installments (contact admission office for details)</li>
               <li>Scholarships available for eligible students (merit-based and need-based)</li>
@@ -353,32 +353,14 @@ export default function FeesStructure() {
             </table>
             <p className="text-xs text-gray-500 px-6 py-3">* Fees are per year. GQ = Government Quota &nbsp;|&nbsp; MQ = Management Quota</p>
             {/* Three-year total (marketing audit T8, 2026-10-21): 3 x the published MQ tuition. */}
-            <p className="text-sm text-gray-800 font-semibold px-6 pb-4">MQ tuition for the full 3 years: &#8377;25,50,000 for every specialisation (tuition only; deposits, university and hostel fees are separate).</p>
+            <p className="text-sm text-gray-800 font-semibold px-6 pb-4">MQ tuition for the full 3 years: &#8377;25,50,000 for every specialisation (tuition only; hostel, mess and university fees are separate and are confirmed in writing by the admission office).</p>
           </div>
 
-          {/* MDS Additional Components */}
-          <div className="mt-8 bg-white rounded-xl p-8 shadow-md">
-            <h3 className="text-xl font-bold text-[#0b6d41] mb-4">Additional Fee Components (MDS)</h3>
-            <div className="grid md:grid-cols-2 gap-6">
-              <div>
-                <h4 className="font-semibold text-gray-800 mb-3">One-Time Fees:</h4>
-                <ul className="space-y-2 text-sm text-gray-700 list-disc ml-5">
-                  <li>Admission Fee</li>
-                  <li>Caution Deposit (Refundable)</li>
-                  <li>Library Deposit (Refundable)</li>
-                  <li>Lab Deposit (Refundable)</li>
-                </ul>
-              </div>
-              <div>
-                <h4 className="font-semibold text-gray-800 mb-3">Annual/Recurring Fees:</h4>
-                <ul className="space-y-2 text-sm text-gray-700 list-disc ml-5">
-                  <li>Library Fee</li>
-                  <li>Lab & Clinical Fee</li>
-                  <li>University Exam Fee (as applicable)</li>
-                  <li>Hostel Fee (if availing)</li>
-                </ul>
-              </div>
-            </div>
+          {/* Other charges (user's choice 2026-11-13, perception audit): the old list named fees
+              with no amounts; one clear line instead. */}
+          <div className="mt-8 bg-white rounded-xl p-6 shadow-md">
+            <h3 className="text-xl font-bold text-[#0b6d41] mb-2">Other charges (MDS)</h3>
+            <p className="text-sm text-gray-700">University registration and examination fees are as per The Tamil Nadu Dr. M.G.R. Medical University norms. Hostel and mess are optional and charged separately. The admission office gives every other charge in writing before you pay.</p>
           </div>
 
           {/* MDS Additional Information */}

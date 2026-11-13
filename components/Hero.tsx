@@ -83,6 +83,29 @@ export default function Hero() {
                 Explore Programs
               </Link>
             </div>
+
+            {/* BDS outcome by batch (user's choice 2026-11-13, perception audit): the H1 shows the
+                2024-25 batch; this strip shows all three years from the same NIRF 2026 filing.
+                Placed below the buttons so the phone call button stays in the first screen. */}
+            <div className="rounded-xl bg-[#032816]/60 border border-white/15 p-4 text-sm">
+              <p className="font-semibold text-white mb-2">BDS graduates placed or in higher studies, by batch</p>
+              <table className="w-full text-left text-gray-200">
+                <thead>
+                  <tr className="text-xs uppercase text-gray-300">
+                    <th className="py-1 pr-3 font-semibold">Batch</th>
+                    <th className="py-1 font-semibold">Placed + higher studies</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="border-t border-white/10"><td className="py-1 pr-3">2022-23</td><td className="py-1">47 of 88 (9 placed, 38 higher studies)</td></tr>
+                  <tr className="border-t border-white/10"><td className="py-1 pr-3">2023-24</td><td className="py-1">62 of 97 (22 placed, 40 higher studies)</td></tr>
+                  <tr className="border-t border-white/10"><td className="py-1 pr-3 font-semibold text-[#ffde59]">2024-25</td><td className="py-1 font-semibold text-[#ffde59]">93 of 99 (75 placed, 18 higher studies)</td></tr>
+                </tbody>
+              </table>
+              <p className="mt-2 text-xs text-gray-300">
+                Source: <a href="/pdf/NIRF-2026-Dental.pdf" className="underline hover:text-white">JKKN&apos;s NIRF 2026 data submission (PDF)</a>
+              </p>
+            </div>
           </div>
 
           {/* Right: photo on phones (below the text), enquiry card from md up */}

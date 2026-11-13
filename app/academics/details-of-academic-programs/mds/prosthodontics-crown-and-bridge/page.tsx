@@ -20,7 +20,7 @@ export default function MDSProsthodontics() {
     "@id": "https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/prosthodontics-crown-and-bridge/#course",
     "url": "https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/prosthodontics-crown-and-bridge/",
     "name": "MDS Prosthodontics & Crown and Bridge",
-    "description": "Transform your dental career with our advanced 3-year postgraduate program. Master complete dentures, fixed prosthodontics, implantology, and maxillofacial prosthetics at one of Tamil Nadu's premier dental institutions.",
+    "description": "Transform your dental career with our advanced 3-year postgraduate program. Master complete dentures, fixed prosthodontics, implantology, and maxillofacial prosthetics at JKKN Dental College & Hospital, Komarapalayam.",
     "provider": {
       "@type": "CollegeOrUniversity",
       "@id": "https://dental.jkkn.ac.in/#organization",
@@ -142,7 +142,7 @@ export default function MDSProsthodontics() {
 
               {/* Description */}
               <p className="text-lg text-gray-100 mb-8 leading-relaxed">
-                Transform your dental career with our advanced 3-year postgraduate program. Master complete dentures, fixed prosthodontics, implantology, and maxillofacial prosthetics at one of Tamil Nadu&apos;s premier dental institutions.
+                Transform your dental career with our advanced 3-year postgraduate program. Master complete dentures, fixed prosthodontics, implantology, and maxillofacial prosthetics at JKKN Dental College &amp; Hospital, Komarapalayam.
               </p>
 
               {/* MDS proof, above the fold (marketing audit M3, 2026-10-21). Placement: JKKN's NIRF 2026

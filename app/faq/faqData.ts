@@ -143,7 +143,7 @@ export const faqCategories = [
       {
         question: 'What are the career opportunities after MDS?',
         answer:
-          'MDS graduates can establish specialty private practices, join multi-specialty clinics and hospitals, pursue academic careers, work in corporate dental chains or government hospitals, and explore international opportunities. Many also become consultants for dental product companies or pursue research careers.',
+          'MDS graduates can establish specialty private practices, join multi-specialty clinics and hospitals, pursue academic careers, work in corporate dental chains or government hospitals, or practise abroad after clearing the dental licensing exam of that country. Many also become consultants for dental product companies or pursue research careers.',
       },
       {
         question: 'Is the JKKN MDS program recognized by NDC?',
@@ -169,12 +169,12 @@ export const faqCategories = [
       {
         question: 'What is the BDS fee structure at JKKN Dental College?',
         answer:
-          'The BDS (Bachelor of Dental Surgery) tuition fee at JKKN Dental College is ₹4,50,000 per year (Dayscholar with Instruments) or ₹5,50,000 per year (With Hostel & Instruments) under Management Quota. Government Quota fee is As Per Government Norm. Additional fees include library fee, lab and clinical fee, caution deposit (refundable), and university examination fees.',
+          'The BDS (Bachelor of Dental Surgery) tuition fee at JKKN Dental College is ₹4,50,000 per year (Dayscholar with Instruments) or ₹5,50,000 per year (With Hostel & Instruments) under Management Quota. Government Quota fee is As Per Government Norm. The ₹5,50,000 fee includes hostel and instruments and the ₹4,50,000 day-scholar fee includes instruments; mess charges and university examination fees are confirmed in writing by the admission office.',
       },
       {
         question: 'What is the MDS fee structure at JKKN Dental College?',
         answer:
-          'The MDS (Master of Dental Surgery) annual tuition fee at JKKN Dental College is ₹8,50,000 per year under Management Quota across all 5 specializations. Government Quota fee is As Per Government Norm. Additional one-time fees include admission fee, caution deposit, library deposit, and lab deposit — all refundable upon course completion.',
+          'The MDS (Master of Dental Surgery) annual tuition fee at JKKN Dental College is ₹8,50,000 per year under Management Quota across all 5 specializations. Government Quota fee is As Per Government Norm. The ₹8,50,000 is tuition only; hostel, mess and university fees are separate and are confirmed in writing by the admission office.',
       },
       {
         question: 'What is the MDS course fee range in Tamil Nadu?',
@@ -184,7 +184,7 @@ export const faqCategories = [
       {
         question: 'Are there any hidden charges beyond the tuition fee?',
         answer:
-          'Beyond tuition, the fee components are library fee, lab and clinical fee, university examination fee (as per university norms), and caution/library/lab deposits (all refundable upon course completion). Hostel charges are separate and optional.',
+          'The BDS Management Quota fee of ₹5,50,000 a year includes hostel and instruments, and the day-scholar fee of ₹4,50,000 a year includes instruments. Mess charges and university registration and examination fees (as per university norms) are confirmed in writing by the admission office.',
       },
       {
         question: 'Is fee payment available in installments at JKKN Dental College?',
@@ -251,7 +251,7 @@ export const faqCategories = [
       {
         question: 'What career options are available after BDS?',
         answer:
-          'After BDS from JKKN, graduates can pursue private practice, hospital dentistry, higher studies (MDS), international opportunities, dental research, or public health dentistry. The CDC provides guidance for all career pathways.',
+          'After BDS from JKKN, graduates can pursue private practice, hospital dentistry, higher studies (MDS), practice abroad after clearing the licensing exam of that country, dental research, or public health dentistry. The CDC provides guidance for all career pathways.',
       },
       {
         question: 'What is the highest package from JKKN Dental College?',

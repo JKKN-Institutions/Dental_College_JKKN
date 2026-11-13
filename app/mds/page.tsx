@@ -327,7 +327,7 @@ const mdsFaqSchema = {
       "name": "What are the career opportunities after completing MDS?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Master of Dental Surgery graduates from JKKN pursue specialist private practice, faculty positions, hospital consultant roles, research programs, and international opportunities across United Kingdom and Middle East."
+        "text": "Master of Dental Surgery graduates from JKKN pursue specialist private practice, faculty positions, hospital consultant roles, research programs, and practice abroad after clearing the dental licensing exam of that country."
       }
     },
     {

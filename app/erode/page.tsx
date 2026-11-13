@@ -238,8 +238,8 @@ export default function ErodePage() {
             Erode&apos;s strong industrial base means families value quality education with good placement outcomes. JKKN is about 18 km away, a 35-40 minute drive on NH-544. The excellent NH-544 connectivity makes daily commute comfortable and quick.
           </p>
           <p className="text-gray-400 max-w-3xl mx-auto mb-4 text-sm leading-relaxed">
-            Founded in 1987, JKKN Dental College &amp; Hospital brings nearly four decades of dental education excellence, backed by the JKKN Institutions legacy since 1952. Approved by the National Dental Commission (NDC), formerly the Dental Council of India and affiliated to TN Dr. MGR Medical University, Chennai, the institution operates a 200+ chair teaching hospital treating 500+ patients daily. Learn more about being the{' '}
-            <Link href="/best-dental-college-tamil-nadu/" className="text-[#0b6d41] hover:underline">best dental college in Tamil Nadu</Link>.
+            Founded in 1987, JKKN Dental College &amp; Hospital brings nearly four decades of dental education excellence, backed by the JKKN Institutions legacy since 1952. Approved by the National Dental Commission (NDC), formerly the Dental Council of India and affiliated to TN Dr. MGR Medical University, Chennai, the institution operates a 200+ chair teaching hospital treating 500+ patients daily. See how{' '}
+            <Link href="/academics/details-of-academic-programs/bds/colleges-in-tamil-nadu/" className="text-[#0b6d41] hover:underline">dental colleges in Tamil Nadu compare (NIRF 2025)</Link>.
           </p>
           <div className="w-14 h-1 bg-[#ffde59] rounded mx-auto mb-12" />
           <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 list-none p-0 m-0">

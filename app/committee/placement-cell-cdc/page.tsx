@@ -4,7 +4,7 @@ import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import StructuredData from '@/components/StructuredData';
 import { generateBreadcrumbSchema, generateWebPageSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
-import { FileText, Mail, Phone, Globe } from 'lucide-react';
+import { FileText, Mail, Phone } from 'lucide-react';
 
 export const metadata: Metadata = {
   alternates: { canonical: '/committee/placement-cell-cdc/' },
@@ -350,17 +350,6 @@ export default function PlacementCellCDC() {
                   <Phone className="w-4 h-4 text-[#0b6d41]" />
                 </div>
                 <p className="text-gray-700 text-sm">Mobile : Mr. Robert +91 98948 53480</p>
-              </div>
-              <div className="flex items-center gap-3">
-                <div className="w-8 h-8 bg-[#d4f1e4] rounded-lg flex items-center justify-center flex-shrink-0">
-                  <Globe className="w-4 h-4 text-[#0b6d41]" />
-                </div>
-                <p className="text-gray-700 text-sm">
-                  Website:{' '}
-                  <a href="https://placements.jkkn.ac.in/" target="_blank" rel="noopener noreferrer" className="text-[#0b6d41] hover:underline">
-                    https://placements.jkkn.ac.in/
-                  </a>
-                </p>
               </div>
             </div>
           </div>

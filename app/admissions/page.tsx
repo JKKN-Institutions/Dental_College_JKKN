@@ -383,7 +383,7 @@ const careerOutcomes = [
   },
   {
     title: 'International Opportunities',
-    description: 'Practice abroad — UK (NHS), UAE, Singapore, Saudi Arabia, and Australia.',
+    description: 'Practise abroad after clearing the dental licensing exam of that country. The CDC guides you on the exams.',
     icon: Globe,
   },
   {

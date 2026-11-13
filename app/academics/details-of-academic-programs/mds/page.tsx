@@ -36,7 +36,7 @@ const mdsFAQs = [
   {
     question: "What are the career opportunities after MDS?",
     answer:
-      "MDS graduates can establish specialty private practices, join multi-specialty clinics and hospitals, pursue academic careers as Learning Facilitators, work in corporate dental chains or government hospitals, and explore international opportunities. Many also become consultants for dental product companies or pursue research careers.",
+      "MDS graduates can establish specialty private practices, join multi-specialty clinics and hospitals, pursue academic careers as Learning Facilitators, work in corporate dental chains or government hospitals, or practise abroad after clearing that country's dental licensing exam. Many also become consultants for dental product companies or pursue research careers.",
   },
   {
     question: "Is JKKN Dental College MDS program recognized?",
@@ -240,7 +240,7 @@ export default function MDSProgram() {
                 <h2 className="text-4xl md:text-5xl font-bold text-white text-center px-6">MDS Clinical Excellence</h2>
               </div>
 
-              {/* NDC Recognized Badge */}
+              {/* NDC-permitted badge (NDC portal 2026-27: 7 recognised + 11 approved seats) */}
               <div className="absolute bottom-2 right-2 sm:bottom-8 sm:right-4 lg:-right-4 bg-white rounded-lg sm:rounded-xl shadow-2xl p-2 sm:p-4 flex items-center gap-2 sm:gap-3 scale-75 sm:scale-100 origin-bottom-right">
                 <div className="bg-[#ffde59] rounded-lg p-2 sm:p-3 text-[#032816]">
                   <svg className="w-4 h-4 sm:w-6 sm:h-6 text-[#032816]" fill="currentColor" viewBox="0 0 20 20">
@@ -248,7 +248,7 @@ export default function MDSProgram() {
                   </svg>
                 </div>
                 <div>
-                  <div className="font-bold text-gray-800 text-xs sm:text-base">NDC Recognized Programs</div>
+                  <div className="font-bold text-gray-800 text-xs sm:text-base">NDC-permitted specialities (2026-27)</div>
                 </div>
               </div>
             </div>

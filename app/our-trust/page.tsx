@@ -108,7 +108,7 @@ export default function OurTrust() {
             </p>
 
             <p className="text-base md:text-lg text-gray-700 leading-relaxed text-justify">
-              The Trust actively engages in various social service activities, including health-oriented services like free dental camps, treatments, surgeries, blood donation drives, and motivational and entrepreneurship awareness camps. It also extends its charitable efforts to provide medical support to the impoverished, assist the destitute, offer natural calamity support, grant educational scholarships to underprivileged students, and foster cultural enrichment. A pioneering establishment of the region since its inception, the Trust&apos;s grand service to society remains immense, not only in terms of education but also in community welfare.
+              The Trust actively engages in various social service activities, including health-oriented services like free dental camps, treatments, surgeries, blood donation drives, and motivational and entrepreneurship awareness camps. It also extends its charitable efforts to provide medical support to the impoverished, assist the destitute, offer natural calamity support, grant educational scholarships to underprivileged students, and foster cultural enrichment. Since its inception, the Trust&apos;s service to society has covered both education and community welfare.
             </p>
           </article>
         </div>

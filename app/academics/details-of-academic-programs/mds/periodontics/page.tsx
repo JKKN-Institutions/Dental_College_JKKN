@@ -20,7 +20,7 @@ export default function MDSPeriodontics() {
     "@id": "https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/periodontics/#course",
     "url": "https://dental.jkkn.ac.in/academics/details-of-academic-programs/mds/periodontics/",
     "name": "MDS Periodontics",
-    "description": "Advance your dental career with our comprehensive 3-year postgraduate program. Master periodontal surgery, dental implantology, regenerative therapy, and gum disease management at one of Tamil Nadu's premier dental institutions.",
+    "description": "Advance your dental career with our comprehensive 3-year postgraduate program. Master periodontal surgery, dental implantology, regenerative therapy, and gum disease management at JKKN Dental College & Hospital, Komarapalayam.",
     "provider": {
       "@type": "CollegeOrUniversity",
       "@id": "https://dental.jkkn.ac.in/#organization",
@@ -150,7 +150,7 @@ export default function MDSPeriodontics() {
 
               {/* Description */}
               <p className="text-lg text-gray-100 mb-8 leading-relaxed">
-                Advance your dental career with our comprehensive 3-year postgraduate program. Master periodontal surgery, dental implantology, regenerative therapy, and gum disease management at one of Tamil Nadu's premier dental institutions.
+                Advance your dental career with our comprehensive 3-year postgraduate program. Master periodontal surgery, dental implantology, regenerative therapy, and gum disease management at JKKN Dental College & Hospital, Komarapalayam.
               </p>
 
               {/* MDS proof, above the fold (marketing audit M3, 2026-10-21). Placement: JKKN's NIRF 2026
