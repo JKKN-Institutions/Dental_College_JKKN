@@ -2,6 +2,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FaqAccordion from '@/components/FaqAccordion';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+import EnquirySection from '@/components/lead/EnquirySection';
 import Link from 'next/link';
 import { Metadata } from 'next';
 import StructuredData from '@/components/StructuredData';
@@ -417,6 +418,10 @@ export default function AdmissionProcess() {
           </div>
         </div>
       </section>
+
+      {/* Enquiry form (user's call 2026-11-13): the page had only jkkn.ai Apply links, which leave the
+          site (30 India views 2026-05-12..11-11, GA4). */}
+      <EnquirySection sourcePage="admission-process" />
 
       <FaqAccordion schema={faqSchema} />
       <Footer />

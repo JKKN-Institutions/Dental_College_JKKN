@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+import EnquirySection from '@/components/lead/EnquirySection';
 import { faqCategories } from './faqData';
 
 function CategoryAccordion({ category }: { category: (typeof faqCategories)[0] }) {
@@ -140,6 +141,9 @@ export default function FAQClient() {
 
         </div>
       </section>
+
+      {/* Enquiry form (user's call 2026-11-13): a parent who read the FAQ and still has a question. */}
+      <EnquirySection sourcePage="faq" />
 
       <Footer />
       <FloatingWhatsApp />

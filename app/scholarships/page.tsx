@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+import EnquirySection from '@/components/lead/EnquirySection';
 import StructuredData from '@/components/StructuredData';
 import { generateBreadcrumbSchema, generateWebPageSchema } from '@/lib/metadata';
 
@@ -180,6 +181,10 @@ export default function ScholarshipsPage() {
           </div>
         </div>
       </section>
+
+      {/* Enquiry form (user's call 2026-11-13): scholarship readers are fee-minded parents and the page
+          had no form. */}
+      <EnquirySection sourcePage="scholarships" heading="Ask About Scholarships and Fees" />
 
       <Footer />
       <FloatingWhatsApp />

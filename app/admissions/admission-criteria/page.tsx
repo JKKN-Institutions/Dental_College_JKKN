@@ -2,6 +2,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FaqAccordion from '@/components/FaqAccordion';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+import EnquirySection from '@/components/lead/EnquirySection';
 import { Metadata } from 'next';
 import StructuredData from '@/components/StructuredData';
 import { generateBreadcrumbSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
@@ -167,6 +168,9 @@ export default function AdmissionCriteria() {
 
         </div>
       </div>
+
+      {/* Enquiry form (user's call 2026-11-13): eligibility readers are deciding, and the page had no form. */}
+      <EnquirySection sourcePage="admission-criteria" />
 
       <FaqAccordion schema={faqSchema} />
       <Footer />

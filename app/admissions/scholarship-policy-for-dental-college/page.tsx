@@ -3,6 +3,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FaqAccordion from '@/components/FaqAccordion';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+import EnquirySection from '@/components/lead/EnquirySection';
 import StructuredData from '@/components/StructuredData';
 import { generateBreadcrumbSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
 
@@ -360,6 +361,10 @@ export default function ScholarshipPolicy() {
 
         </div>
       </div>
+
+      {/* Enquiry form (user's call 2026-11-13): a parent reading the scholarship policy is close to
+          applying, and this page had no form (75 India views 2026-05-12..11-11, GA4). */}
+      <EnquirySection sourcePage="scholarship-policy" heading="Ask About Scholarships and Fees" />
 
       <FaqAccordion schema={faqSchema} />
       <Footer />

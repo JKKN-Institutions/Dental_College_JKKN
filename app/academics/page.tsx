@@ -4,6 +4,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FaqAccordion from '@/components/FaqAccordion';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+import EnquirySection from '@/components/lead/EnquirySection';
 import { BookOpen, Target, Calendar, Trophy, Handshake, Plus, Gem, MessageCircle, LucideIcon } from 'lucide-react';
 import { generateSpeakableWebPageSchema } from '@/lib/metadata';
 import StructuredData from '@/components/StructuredData';
@@ -317,6 +318,10 @@ export default function Academics() {
           </div>
         </div>
       </section>
+
+      {/* Enquiry form (user's call 2026-11-13): the course hub had only jkkn.ai Apply links, which
+          leave the site (70 India views 2026-05-12..11-11, GA4). */}
+      <EnquirySection sourcePage="academics" />
 
       <FaqAccordion schema={faqSchema} />
       <Footer />
