@@ -110,7 +110,7 @@ export default function DentalCollegesInTamilNadu() {
     {
       question: 'What is the BDS fee structure in private colleges in Tamilnadu?',
       answer:
-        'In every self-financing (private) dental college in Tamil Nadu, the Government Quota fee is As Per Government Norm: one fee for all of them, fixed by the Fee Committee and confirmed at counselling. In government dental colleges the total fee is Rs. 16,073 (Rs. 12,073 for SC, SCA and ST candidates). Management Quota fees are also fixed by the Fee Committee but differ by college; at JKKN Dental College they are Rs. 4,50,000 a year for day scholars and Rs. 5,50,000 a year with hostel for 2026-27. Source: DME Selection Committee prospectus 2025-26 (G.O.(D) No.601, 05-06-2025).',
+        'In every self-financing (private) dental college in Tamil Nadu, the Government Quota fee is As Per Government Norm: one fee for all of them, fixed by the Fee Committee and confirmed at counselling. In government dental colleges the fee is As Per Government Norm. Management Quota fees are also fixed by the Fee Committee but differ by college; at JKKN Dental College they are Rs. 4,50,000 a year for day scholars and Rs. 5,50,000 a year with hostel for 2026-27. Source: DME Selection Committee prospectus 2025-26 (G.O.(D) No.601, 05-06-2025).',
     },
     {
       question: 'Which are the best or top dental colleges in Tamil Nadu?',
