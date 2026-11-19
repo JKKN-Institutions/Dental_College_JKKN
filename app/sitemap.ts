@@ -6,6 +6,7 @@ import { siteConfig } from '@/lib/site-config'
 import lastModManifest from '@/lastmod-manifest.json'
 import { getDentalJobs } from '@/lib/careers/api'
 import { facultyDepartments } from '@/data/facultyDirectory'
+import { blogFromMyJkkn, listAllPosts } from '@/lib/blog/myjkkn'
 
 // Build a single map of file -> last-commit-date.
 //
@@ -148,7 +149,17 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     }
 
     // Campus blogs live in a separate `blogs` table (rendered at /blog/campus/[slug]/)
-    if (collegeId) {
+    // BLOG_SOURCE=myjkkn: the published posts come from MyJKKN (never throws; empty on an outage).
+    if (blogFromMyJkkn()) {
+      campusBlogUrls = (await listAllPosts())
+        .filter(post => !post.seo.noindex)
+        .map(post => ({
+          url: `${baseUrl}/blog/campus/${post.slug}/`,
+          lastModified: new Date(post.updated_at),
+          changeFrequency: 'monthly' as const,
+          priority: 0.6,
+        }))
+    } else if (collegeId) {
       const { data: campusPosts } = await supabase
         .from('blogs')
         .select('slug, updated_at')

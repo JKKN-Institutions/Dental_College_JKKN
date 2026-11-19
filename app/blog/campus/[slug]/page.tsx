@@ -10,15 +10,66 @@ import { generateSpeakableWebPageSchema } from '@/lib/metadata';
 import { dentalOrgRef, DENTAL_LOGO_URL } from '@/lib/schema/organization';
 import { renderBlogBody } from '@/lib/blog-render';
 import { inlineCtaFor } from '@/lib/blog-inline-cta';
+import { blogFromMyJkkn, blogSiteKey, getPost, listPosts } from '@/lib/blog/myjkkn';
+import { MYJKKN_URL } from '@/lib/careers/config';
 
 export const dynamic = 'force-dynamic';
 
-export async function generateMetadata({
-  params,
-}: {
+type PageProps = {
   params: Promise<{ slug: string }>;
-}): Promise<Metadata> {
+  /** ?preview=<token>: the Preview link in MyJKKN opens a draft (BLOG_SOURCE=myjkkn only). */
+  searchParams: Promise<{ preview?: string }>;
+};
+
+export async function generateMetadata({ params, searchParams }: PageProps): Promise<Metadata> {
   const { slug } = await params;
+
+  if (blogFromMyJkkn()) {
+    const { preview } = await searchParams;
+    const detail = await getPost(slug, preview);
+    if (!detail) return { title: 'Blog Post Not Found | JKKN Dental College' };
+    const { post } = detail;
+    const url = `https://dental.jkkn.ac.in/blog/campus/${post.slug}/`;
+    // The SEO fields are filled in MyJKKN; where the writer left one empty, MyJKKN has
+    // already fallen back to the title, excerpt, featured image and the post's own address.
+    const description =
+      post.seo.description || `Read ${post.title} on the JKKN Dental College campus blog.`;
+    // MyJKKN gives the post's own address without the last slash; this site serves it with
+    // one (trailingSlash). A canonical the writer pointed somewhere else is used as written.
+    const canonical =
+      post.seo.canonical_url.replace(/\/+$/, '') === url.replace(/\/+$/, '') ? url : post.seo.canonical_url;
+    return {
+      // absolute: a written SEO title is the whole title, so the layout's suffix is not added to it.
+      title:
+        post.seo.title === post.title
+          ? `${post.title} | JKKN Dental College Blog`
+          : { absolute: post.seo.title },
+      description,
+      ...(post.seo.keywords.length > 0 && { keywords: post.seo.keywords }),
+      alternates: { canonical },
+      openGraph: {
+        title: post.seo.title,
+        description,
+        url,
+        siteName: 'JKKN Dental College & Hospital',
+        type: 'article',
+        locale: 'en_IN',
+        ...(post.seo.og_image && {
+          images: [{ url: post.seo.og_image, width: 1200, height: 630, alt: post.title }],
+        }),
+      },
+      twitter: {
+        card: 'summary_large_image',
+        title: post.seo.title,
+        description,
+        ...(post.seo.og_image && { images: [post.seo.og_image] }),
+      },
+      ...((detail.preview || post.seo.noindex) && {
+        robots: { index: false, follow: !detail.preview },
+      }),
+    };
+  }
+
   const supabase = await createClient();
   const collegeId = process.env.NEXT_PUBLIC_COLLEGE_ID!;
 
@@ -69,12 +120,106 @@ export async function generateMetadata({
   };
 }
 
-export default async function CampusBlogPost({
-  params,
-}: {
-  params: Promise<{ slug: string }>;
-}) {
+/** The post page when posts come from MyJKKN (BLOG_SOURCE=myjkkn). Same markup and schema as below. */
+async function MyJkknBlogPost({ slug, previewToken }: { slug: string; previewToken?: string }) {
+  const detail = await getPost(slug, previewToken);
+  if (!detail) notFound();
+  const { post, related, comments, preview } = detail;
+
+  const postUrl = `https://dental.jkkn.ac.in/blog/campus/${post.slug}/`;
+  const popularPosts = (await listPosts(4)).posts.filter((p) => p.slug !== post.slug).slice(0, 3);
+  const { processedHtml, tocItems, words, readTime } = renderBlogBody(post);
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://dental.jkkn.ac.in/" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://dental.jkkn.ac.in/blog/" },
+      { "@type": "ListItem", "position": 3, "name": post.title, "item": postUrl },
+    ],
+  };
+
+  const speakableSchema = generateSpeakableWebPageSchema({
+    title: post.title,
+    description: post.excerpt ?? post.title,
+    url: postUrl,
+    datePublished: post.published_at ?? post.created_at,
+    dateModified: post.updated_at,
+    speakableCssSelectors: ['h1', '.hero-description', 'article p'],
+  });
+
+  // Same BlogPosting as the page below; every value is a field written in MyJKKN.
+  const blogPostingSchema = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "@id": `${postUrl}#article`,
+    "mainEntityOfPage": { "@type": "WebPage", "@id": `${postUrl}#webpage` },
+    "url": postUrl,
+    "headline": post.title,
+    ...(post.excerpt && { "description": post.excerpt }),
+    ...(post.cover_image_url && { "image": post.cover_image_url }),
+    "datePublished": post.published_at ?? post.created_at,
+    "dateModified": post.updated_at,
+    "author": post.author_name
+      ? { "@type": "Person", "name": post.author_name, "worksFor": dentalOrgRef }
+      : { "@type": "Organization", "name": "JKKN Dental College Editorial Team", "url": "https://dental.jkkn.ac.in/" },
+    "publisher": {
+      ...dentalOrgRef,
+      "logo": { "@type": "ImageObject", "url": DENTAL_LOGO_URL },
+    },
+    ...(post.category && { "articleSection": post.category }),
+    ...(post.tags && { "keywords": post.tags }),
+    ...(words > 0 && { "wordCount": words }),
+    "inLanguage": "en-IN",
+    "isPartOf": { "@type": "Blog", "@id": "https://dental.jkkn.ac.in/blog/#blog", "name": "JKKN Dental College Blog", "url": "https://dental.jkkn.ac.in/blog/" },
+  };
+
+  return (
+    <div className="min-h-screen bg-white">
+      {/* A draft preview carries no structured data: it is not published and not indexed. */}
+      {!preview && (
+        <>
+          <StructuredData data={breadcrumbSchema} />
+          <StructuredData data={speakableSchema} />
+          <StructuredData data={blogPostingSchema} />
+        </>
+      )}
+      <Header />
+      {preview && (
+        <div className="bg-[#ffde59] border-b border-amber-300">
+          <p className="max-w-5xl mx-auto px-4 sm:px-6 py-2.5 text-sm font-semibold text-[#032816]">
+            Draft Preview — this post is not published yet and is hidden from search engines.
+          </p>
+        </div>
+      )}
+      <CampusBlogContent
+        post={post}
+        processedContent={processedHtml}
+        tocItems={tocItems}
+        readTime={readTime}
+        wordCount={words}
+        popularPosts={popularPosts}
+        relatedPosts={related}
+        initialComments={comments}
+        commentsVia={{ api: `${MYJKKN_URL}/api/public/blog/comments`, site: blogSiteKey() }}
+        commentFormOpen={post.allow_comments && !preview}
+        inlineCta={preview ? null : inlineCtaFor(post.slug, processedHtml)}
+      />
+      <Footer />
+      <ScrollToTop />
+    </div>
+  );
+}
+
+export default async function CampusBlogPost({ params, searchParams }: PageProps) {
   const { slug } = await params;
+
+  if (blogFromMyJkkn()) {
+    const { preview } = await searchParams;
+    return <MyJkknBlogPost slug={slug} previewToken={preview} />;
+  }
+
   const supabase = await createClient();
 
   const collegeId = process.env.NEXT_PUBLIC_COLLEGE_ID!;
