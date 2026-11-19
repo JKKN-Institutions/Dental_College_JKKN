@@ -5,6 +5,7 @@ import { createClient } from '@/lib/supabase/server';
 import { Metadata } from 'next';
 import StructuredData from '@/components/StructuredData';
 import { generateWebPageSchema, generateSpeakableWebPageSchema } from '@/lib/metadata';
+import { blogFromMyJkkn, listAllPosts } from '@/lib/blog/myjkkn';
 
 export const metadata: Metadata = {
   title: 'Blog | JKKN Dental College & Hospital',
@@ -53,19 +54,42 @@ const blogSpeakableSchema = generateSpeakableWebPageSchema({
   speakableCssSelectors: ['h1', '.hero-description', 'article p'],
 });
 
-export default async function BlogPage() {
-  // Fetch admin-created posts from Supabase
-  const supabase = await createClient();
-  const collegeId = process.env.NEXT_PUBLIC_COLLEGE_ID!;
-  const { data: campusPosts } = await supabase
-    .from('blogs')
-    .select('id, title, slug, excerpt, author_name, category, cover_image_url, published_at, created_at, read_time')
-    .eq('college_id', collegeId)
-    .eq('is_published', true)
-    .order('created_at', { ascending: false })
-    .limit(100);
+/** What a blog card needs; both sources give this shape. */
+interface CardPost {
+  id: string;
+  title: string;
+  slug: string;
+  excerpt: string | null;
+  author_name: string | null;
+  category: string | null;
+  cover_image_url: string | null;
+  published_at: string | null;
+  created_at: string;
+  read_time: string | null;
+}
 
-  const hasCampusPosts = campusPosts && campusPosts.length > 0;
+export default async function BlogPage() {
+  // BLOG_SOURCE=myjkkn: posts are written in MyJKKN (Website Blog) and read from its API.
+  // Otherwise: this site's own `blogs` table, as before.
+  let campusPosts: CardPost[];
+  if (blogFromMyJkkn()) {
+    // Same count as below. The API gives at most 50 a call, so the pages are joined.
+    campusPosts = (await listAllPosts()).slice(0, 100);
+  } else {
+    // Fetch admin-created posts from Supabase
+    const supabase = await createClient();
+    const collegeId = process.env.NEXT_PUBLIC_COLLEGE_ID!;
+    const { data } = await supabase
+      .from('blogs')
+      .select('id, title, slug, excerpt, author_name, category, cover_image_url, published_at, created_at, read_time')
+      .eq('college_id', collegeId)
+      .eq('is_published', true)
+      .order('created_at', { ascending: false })
+      .limit(100);
+    campusPosts = data ?? [];
+  }
+
+  const hasCampusPosts = campusPosts.length > 0;
 
   function formatDate(d: string) {
     return new Date(d).toLocaleDateString('en-IN', {
